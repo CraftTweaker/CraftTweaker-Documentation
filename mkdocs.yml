@@ -4,9 +4,10 @@ pages:
   - Getting Started:
     - Getting Started With Scripts: 'Getting_Started.md'
   - Commands:
-    - Commands: 'Commands.md'
+    - Commands: 'Vanilla/Commands.md'
   - Recipes:
-    - Crafting Table Recipes: 'Recipes_Crafting_Table.md'
+    - Crafting Table Recipes: 'Vanilla/Recipes_Crafting_Table.md'
+    - Furnace Recipes: 'Vanilla/Recipes_Furnace.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
