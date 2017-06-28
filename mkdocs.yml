@@ -6,8 +6,9 @@ pages:
   - Commands:
     - Commands: 'Vanilla/Commands.md'
   - Recipes:
-    - Crafting Table Recipes: 'Vanilla/Recipes_Crafting_Table.md'
-    - Furnace Recipes: 'Vanilla/Recipes_Furnace.md'
+    - Vanilla:
+      - Crafting Table Recipes: 'Vanilla/Recipes_Crafting_Table.md'
+      - Furnace Recipes: 'Vanilla/Recipes_Furnace.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
