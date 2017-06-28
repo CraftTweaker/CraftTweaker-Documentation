@@ -1,8 +1,11 @@
 # Furnace
 
-Crafttweaker allows you to `Add` and `Remove` Furnace recipes.
+Crafttweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
-## Removal
+
+## Recipes
+
+### Removal
 
 There are 2 ways to remove Furnace recipes, being:
 
@@ -20,7 +23,7 @@ The first syntax is more flexible with the recipes that are removed and will rem
 
 The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
 
-## Addition
+### Addition
 
 There are 2 commands for adding furnace recipes:
 
@@ -37,6 +40,21 @@ furnace.add(output, input, xp);
 The first syntax will add a Furnace recipe that will give 0 xp on smelt.
 
 The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
+
+
+## Fuel
+
+### Set
+
+The command for setting fuel values is:
+
+```
+furnace.setFuel(input, burnTime);
+```
+
+This will set the burn value of `input` to `burnTime`.
+ 
+Setting the `burnTime` to `0` will stop the `input` from being a fuel item. 
 
 ## Examples
 
@@ -66,4 +84,12 @@ This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` w
 
 ```
 furnace.add(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
+```
+
+### Fuel
+
+This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+
+```
+furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
