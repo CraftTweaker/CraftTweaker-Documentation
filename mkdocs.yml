@@ -1,0 +1,17 @@
+# If you add a page, you must add it to the index here
+pages:
+  - Home: 'index.md'
+  - Getting Started:
+    - Getting Started With Scripts: 'Getting_Started.md'
+  - Commands:
+    - Commands: 'Commands.md'
+
+# Do not edit in PRs below here
+site_name: Crafttweaker Documentation
+
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+
+theme: readthedocs
