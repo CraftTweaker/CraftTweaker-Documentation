@@ -44,7 +44,7 @@ if(test == 0){//false
 
 ## Things to check for
 Supported Calculations are +,-,*,/,mod,concatenation(~)
-Supported Operands are OR(|), AND(&&), XOR(^)
+Supported Operands are OR(|), AND(&), XOR(^)
 ```
 //You can check for:
 
@@ -75,6 +75,6 @@ if(d=="Hello" ^ e == "Hello"){print("XOR1!");}		//true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}		//false
 
 //&&(AND) means, both criteria need to be met, otherwise it evaluates to false
-if(d=="Hello" && e == "Hello"){print("AND1!");}		//false
-if(d=="Hello" && e == "World"){print("AND2!");}		//true
+if(d=="Hello" & e == "Hello"){print("AND1!");}		//false
+if(d=="Hello" & e == "World"){print("AND2!");}		//true
 ```
