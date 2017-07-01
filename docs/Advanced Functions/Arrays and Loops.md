@@ -95,4 +95,9 @@ for i, item in IArray {
 	//Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
 	recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
+
+for i in 0 to 10 {
+	//defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+    print(i);
+}
 ```
