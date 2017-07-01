@@ -1,9 +1,9 @@
-#Conditional Statements
+# Conditional Statements
 
 You might want to include code that will only be executed if certain criteria are met (or if they are not).
 That's what you need conditional Statements for.
 
-##If
+## If
 
 An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed.
 Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
@@ -16,7 +16,7 @@ if(test == 0){ //true
 }
 ```
 
-##Else
+## Else
 
 An Else-Statement can be added to the end of a conditional Statment to declare what will be executed when the if-condition equals to false.
 
