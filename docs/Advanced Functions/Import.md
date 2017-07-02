@@ -9,17 +9,17 @@ Imports have to be declared at the top of a Script. You will have to declare imp
 Be careful not to import two functions with the same name, use the AS function for that
 
 ```
-//This will import the removeRecipe from the Botania Apothecary
-import mods.botania.Apothecary.removeRecipe;
+//This will import the hide function from JEI
+import mods.jei.JEI.removeAndHide;
 
-//And this will import the ElvenTrade package
-import mods.botania.ElvenTrade;
+//And this will import the JEI package
+import mods.jei.JEI;
 
-//removeRecipe is a function, so we can just use it
-removeRecipe(<minecraft:dirt>);
+//removeAndHide is a function, so we can just use it
+removeAndHide(<minecraft:dirt>);
 
-//ElvenTrade is a package, so we need to specify what function we want to use
-ElvenTrade.removeRecipe(<minecraft:diamond>);
+//JEI is a package, so we need to specify what function of it we want to use
+JEI.hide(<minecraft:diamond>);
 ```
 
 ## Import as
@@ -28,13 +28,13 @@ Sometimes you want to import two functions with the same name or just want to ke
 When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
 
 ```
-//This will import the removeRecipe from the Botania Apothecary
-import mods.botania.Apothecary.removeRecipe AS apoRemove;
+//This will import the hide function from JEI and make it available under the name "h"
+import mods.jei.JEI.hide as h;
 
-//And this will import the removeRecipe from the ElvenTrade
-import mods.botania.ElvenTrade.removeRecipe AS elvenRemove;
+//And this will import the removeAndHide function from JEI and make it available under the name "rh"
+import mods.jei.JEI.removeAndHide as rh;
 
-apoRemove(<minecraft:dirt>);
-elvenRemove(<minecraft:diamond>);
+h(<minecraft:dirt>);
+rh(<minecraft:diamond>);
 ```
 
