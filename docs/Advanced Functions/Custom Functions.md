@@ -46,7 +46,7 @@ function realTens(a as string){
 ## Return functions
 
 You can also specify a value that should be returned by a function. 
-It is recommended using the as keyword to define the return type.
+It is recommended using the ```as``` keyword to define the return type.
 
 ```
 //calls add function with 1 and 99 as parameters
