@@ -14,6 +14,12 @@ pages:
       - Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
         - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+  - Advanced Functions:
+    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Contional Statements: 'AdvancedFunctions/Conditional_Statements.md'
+    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
+    - Import: 'AdvancedFunctions/Import.md'
+    - Variable Types: 'AdvancedFunctions/Variable_Types.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
