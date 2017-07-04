@@ -78,3 +78,7 @@ if(d=="Hello" ^ e == "World"){print("XOR2!");}		//false
 if(d=="Hello" & e == "Hello"){print("AND1!");}		//false
 if(d=="Hello" & e == "World"){print("AND2!");}		//true
 ```
+
+## The ? Operator
+Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition.
+That's why the `?` operator was implemented.
