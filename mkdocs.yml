@@ -18,6 +18,7 @@ pages:
     - Ore Dictionary: 'Vanilla/OreDic.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Calculations: 'AdvancedFunctions/Calculations.md'
     - Contional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
