@@ -121,3 +121,30 @@ All the examples given evaluate to true.
 | XOR              	| `^`         	| Checks if either the value before or after is true, false if both or none is true   		| true ^ false       	|
 | AND              	| `&`		 	| Checks whether both, value before and after are true, false if one or both are false 		| true & true     	 	|
 | OR               	| `|`		 	| Checks if the value before or after is true. True, is both are true                   	| true | true       	|
+
+
+## The in Operator
+
+The `in` operator checks if something is in something.  
+First you need the list you want to check in, then the `in` then the value you want to check for
+
+### in loadedMods
+
+You can check, if a mod is loaded by checking if it's in the loadedMods list
+```
+if(loadedMods in "mcp"){
+	print("Minecraft Coder Pack loaded");
+}
+```
+
+### in IIngredient
+
+You can also check if an item matches a definition by comparing two IIngredients.
+
+```
+if(<ore:ingotIron> in <minecraft:iron_ingot>){
+	print("Iron ingots are in the right oreDic");
+}
+```
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.
