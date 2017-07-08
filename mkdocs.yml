@@ -7,6 +7,8 @@ pages:
     - Commands: 'Vanilla/Commands.md'
   - Brackets:
     - Bracket Handlers: 'Brackets/Brackets.md'
+  - Item States:
+    - Item Conditions: 'Vanilla/Item_Conditions.md'
   - Recipes:
     - Vanilla:
       - Brackets:
