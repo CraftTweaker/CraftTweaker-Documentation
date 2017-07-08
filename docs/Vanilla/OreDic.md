@@ -120,6 +120,19 @@ if(!OD.empty){
 }
 ```
 
+## Check if an oreDic contains an item
+
+Usually, you can just use NEI/JEI, but if you ever need CT to check if a oreDictionary contains a specific item, you can use the `in` function.  
+Remember, first the oreDic, then the item you want to check for.  
+This will return a boolean.
+
+```
+
+if(<ore:ingotIron> in <minecraft:iron_ingot>){
+	print("Iron is in the oreDic!");
+}
+```
+
 ## Get an oreDics name
 
 If you ever need to get an oreDics name, you can use the `oreDic.name` function. This will return the name as String.  
@@ -129,3 +142,13 @@ val OD = <ore:ingotIron>;
 
 //prints "ingotIron"
 print(OD.name);
+
+## Get the first item of an oreDic
+
+I have no idea why you would ever need this, but here you go
+the firstItem function returns an IItemStack
+
+```
+val fI = <ore:ingotIton>.firstItem;
+print(fI.name);
+```
