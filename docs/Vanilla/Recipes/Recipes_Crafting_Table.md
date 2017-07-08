@@ -71,13 +71,18 @@ All other functionalities stay the same. Remember that `name` needs to be unique
 
 ### addShaped
 ```
+//pre-1.12
 recipes.addShaped(output,inputs,function,action);
+
+//1.12
+recipes.addShaped(name,output,inputs,function,action);
 ```
 
 This creates a shaped recipe for `output` using `inputs` as Ingredients.  
 If a `function` is added as third parameter, you can also use a function to determinate the output.  
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
+`name` is a string and needs to be unique
 `output` is an IItemStack  
 `inputs` is an IIngredient[][] (see below)  
 `function` is a IRecipeFunction. Please refer to the respecting wiki entry for more information on functions.  
@@ -98,7 +103,11 @@ recipes.add(leggins,
 
 ### addShapedMirrored
 ```
+//pre-1.12
 recipes.addShapedMirrored(output,inputs,function,action);
+
+//1.12
+recipes.addShapedMirrored(name,output,inputs,function,action);
 ```
 
 Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
@@ -106,13 +115,18 @@ Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
 
 ### addShapeless
 ```
+//pre-1.12
 recipes.addShapeless(output,inputs,function,action)
+
+//1.12
+recipes.addShapeless(name,output,inputs,function,action)
 ```
 
 This creates a shapeless recipe for `output` using `inputs` as Ingredients.
 If a `function` is added as third parameter, you can also use a function to determinate the output.
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
+`name` is a string and needs to be unique
 `output` is an IItemStack  
 `inputs` is an IIngredient[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
 `function` is a IRecipeFunction. Please refer to the respecting wiki entry for more information on functions. This is optional.  
