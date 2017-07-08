@@ -119,5 +119,5 @@ All the examples given evaluate to true.
 | Fewer as         	| `>`         	| Checks if the value before is fewer than after                                        	| 2 > 1             	|
 | Fewer or Equal   	| `>=`        	| Checks if the value before is fewer than or equal with after                          	| 1 >= 1            	|
 | XOR              	| `^`         	| Checks if either the value before or after is true, false if both or none is true   		| true ^ false       	|
-| AND              	| `&` or `&&` 	| Checks whether both, value before and after are true, false if one or both are false 		| true & true     	 	|
-| OR               	| `|` or `||` 	| Checks if the value before or after is true. True, is both are true                   	| true | true       	|
+| AND              	| `&`		 	| Checks whether both, value before and after are true, false if one or both are false 		| true & true     	 	|
+| OR               	| `|`		 	| Checks if the value before or after is true. True, is both are true                   	| true | true       	|
