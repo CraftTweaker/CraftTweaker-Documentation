@@ -17,6 +17,7 @@ pages:
       - Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
         - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+        - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Ore Dictionary:
     - Ore Dictionary: 'Vanilla/OreDic.md'
   - Advanced Functions:
