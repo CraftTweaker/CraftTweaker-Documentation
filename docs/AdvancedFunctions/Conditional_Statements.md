@@ -78,3 +78,73 @@ if(d=="Hello" ^ e == "World"){print("XOR2!");}		//false
 if(d=="Hello" & e == "Hello"){print("AND1!");}		//false
 if(d=="Hello" & e == "World"){print("AND2!");}		//true
 ```
+
+## The ? Operator
+Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition.
+That's why the `?` operator was implemented.
+It follows the same logic as an if/else statement, it only is by far less code required.
+Syntax: `boolean ? if : else`
+
+```
+val switchy = false;
+
+//prints switchy state
+print("Switchy is "~switchy);
+
+//if switchy is true, vInt = 1, otherwise vInt = 2
+val vInt = switchy ? 1 : 2;
+print(vInt);
+
+//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+print(switchy ? "Hello" : "Bye");
+
+//Prints "Bye" if switchy is stue, otherwise prints "Hello"
+switchy ? print("Bye") : print("Hello");
+
+```
+
+## Operators
+
+You can use these operators.
+All the examples given evaluate to true.
+
+
+| Name             	| token       	| Explanation                                                                           	| Example           	|
+|------------------	|-------------	|---------------------------------------------------------------------------------------	|-------------------	|
+| Not              	| `!`         	| Inverts a boolean                                                                     	| !false			 	|
+| Not Equal        	| `!=`        	| Checks if the value before and after are not equal                                    	| 1 != 2            	|
+| Equal            	| `==`        	| Checks if the value before and after are equal                                        	| 1 == 1            	|
+| Greater as       	| `>`         	| Checks if the value before is greater than after                                      	| 1 < 2             	|
+| Greater or Equal 	| `>=`        	| Checks if the value before is greater than or equal with after                        	| 1 <= 1            	|
+| Fewer as         	| `>`         	| Checks if the value before is fewer than after                                        	| 2 > 1             	|
+| Fewer or Equal   	| `>=`        	| Checks if the value before is fewer than or equal with after                          	| 1 >= 1            	|
+| XOR              	| `^`         	| Checks if either the value before or after is true, false if both or none is true   		| true ^ false       	|
+| AND              	| `&`		 	| Checks whether both, value before and after are true, false if one or both are false 		| true & true     	 	|
+| OR               	| `|`		 	| Checks if the value before or after is true. True, is both are true                   	| true | true       	|
+
+
+## The in Operator
+
+The `in` operator checks if something is in something.  
+First you need the list you want to check in, then the `in` then the value you want to check for
+
+### in loadedMods
+
+You can check, if a mod is loaded by checking if it's in the loadedMods list
+```
+if(loadedMods in "mcp"){
+	print("Minecraft Coder Pack loaded");
+}
+```
+
+### in IIngredient
+
+You can also check if an item matches a definition by comparing two IIngredients.
+
+```
+if(<ore:ingotIron> in <minecraft:iron_ingot>){
+	print("Iron ingots are in the right oreDic");
+}
+```
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.

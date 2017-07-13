@@ -54,7 +54,17 @@ furnace.setFuel(input, burnTime);
 
 This will set the burn value of `input` to `burnTime`.
  
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item. 
+Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+
+### Get
+
+The command for retrieving an item's fuel value is:
+
+```
+furnace.getFuel(item); 
+```
+
+This will return the burn value as an integer
 
 ## Examples
 

@@ -7,6 +7,9 @@ pages:
     - Commands: 'Vanilla/Commands.md'
   - Brackets:
     - Bracket Handlers: 'Brackets/Brackets.md'
+  - Item States:
+    - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
+    - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips'
   - Recipes:
     - Vanilla:
       - Brackets:
@@ -14,8 +17,12 @@ pages:
       - Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
         - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+        - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+  - Ore Dictionary:
+    - Ore Dictionary: 'Vanilla/OreDic.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Calculations: 'AdvancedFunctions/Calculations.md'
     - Contional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
