@@ -9,7 +9,7 @@ pages:
     - Bracket Handlers: 'Brackets/Brackets.md'
   - Item States:
     - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
-    - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips'
+    - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
   - Recipes:
     - Vanilla:
       - Brackets:
