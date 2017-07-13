@@ -1,7 +1,9 @@
 # Item Conditions
 
 Sometimes normal items won't cut it:  
-Sometimes we want to be able to specify recipes that only work when the input item fullfills some conditions.  
+
+Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.  
+
 Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
 
 ## Input Conditions

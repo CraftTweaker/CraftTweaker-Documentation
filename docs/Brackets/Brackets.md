@@ -4,7 +4,7 @@ ZenScript uses Brackets to reference game objects such as Items, Entities and Or
 
 ## How to use Bracket Handlers
 
-Brackets in Zenscript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
 
 An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
 

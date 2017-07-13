@@ -1,6 +1,7 @@
 # Renaming
 
 Always reading 'chest' is annoying, isn't it?  
+
 That's why there's the possibility to rename stuff.
 
 ## Changing the display name
@@ -57,7 +58,7 @@ item.addShiftTooltip(tT);
 
 # Markup
 The world is colorful, and so should be all of our tooltips.
-You can also nest these options, should you with to (if you wanted a green text, that is striked through)
+You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
 
 ## Coloring a String
 

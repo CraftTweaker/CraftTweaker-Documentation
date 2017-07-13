@@ -5,7 +5,7 @@ There are several types of recipes:
 
 ### Shaped Recipes
 Shaped Recipes are recipes, where it matters, which item goes into which slot.
-For example, you can't just arrange 7 iron ingots in any order to create iron leggins. The shape matters, thus it is a shaped recipe.
+For example, you can't just arrange 7 iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
 
 ### Mirrored Recipe
 Mirrored Recipes are shaped recipes. Only difference is that the recipe can be mirrored along the horizontal or vertical axes.
@@ -51,7 +51,7 @@ recipes.removeShapeless(output, inputs, wildcard);
 ```
 
 This one is more strict on which recipes to remove and will only remove shapeless recipes that craft `output` with `input`.  
-If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, lapis as ingredient).
+If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, Lapis as ingredient).
 
 `output` is an IIngredient  
 `inputs` is an IIngredient[]  
@@ -66,7 +66,7 @@ Furthermore, `inputs` is optional. If omitted, the function will do the same as 
 On 1.12, each added recipe requires a UNIQUE identifier, because the forge dev team wanted it that way.  
 This means, all add functions now require an additional parameter `name` at the start (which cannot be omitted).  
 This means `recipe.addShaped(output,input);` now is `recipe.addShaped(name,output,input);`  
-All other functionalities stay the same. Remember that `name` needs to be unique!  
+All other functionality stay the same. Remember that `name` needs to be unique!  
 `name` is a string.
 
 ### addShaped

@@ -7,7 +7,7 @@ Remember that you can use more than two numbers at one, `1+1+1+1` would work fin
 
 When unexpected results happen in a calculation, it is very well possible that you used two different types.  
 For example `13 % 6.5` returns 1, even though the correct result is 0. Why?
-Zenscript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one.
+ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one.
 In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an integer).
 
 Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
@@ -30,7 +30,7 @@ Puts one thing at the and of the other
 
 ```
 //prints "Hello World"
-print("Hello"~" "~"World");
+print("Hello" ~ " " ~ "World");
 ```
 
 ## Calculation results
@@ -60,7 +60,7 @@ test -= 2;
 Option 1 and 2 assign the return variable using the `=` token.  
 This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
 
-Option 3 assigns the variable before the `-=` with the result of a normal substraction.  
+Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
 All Operators on on this page have their respective assign tokens, check the table above.
 
 ### Using the result otherwise

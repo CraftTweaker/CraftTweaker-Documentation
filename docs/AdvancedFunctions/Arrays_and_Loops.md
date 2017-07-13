@@ -5,6 +5,7 @@ An array is a List containing several items of the same kind.
 
 ## Declaring Arrays
 It is declared using ```[``` and ```]```.
+
 ```
 //Array containing "Hello" and "World"
 val stringArray = ["Hello", "World"];
@@ -49,13 +50,13 @@ print(stringArray[0]);
 //Nested Arrays
 val stringArray1 = ["Hello","World"];
 val stringArray2 = ["I","am"];
-val stringArray3 = ["a","beatuful"];
+val stringArray3 = ["a","beautiful"];
 val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]];
 
 /*
 stringArrayAll[0] is ["Hello","World"]
 stringArrayAll[1] is ["I","am"]
-stringArrayAll[2] is ["a","beatuful"]
+stringArrayAll[2] is ["a","beautiful"]
 stringArrayAll[3] is ["Butterfly","!"]
 
 stringArrayAll[0][0] is "Hello"
@@ -73,6 +74,7 @@ A loop is a function that repeats itself. You can use loops to apply an action t
 
 ## For Loop
 The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.
+
 ```
 val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>];
 val JArray = [<minecraft:grass>,<minecraft:wood>,<minecraft:gold_ingot>];

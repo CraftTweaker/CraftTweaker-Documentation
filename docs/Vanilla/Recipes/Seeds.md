@@ -3,7 +3,8 @@ Seeds are things you get from punching tall grass.
 
 ## Print all seeds to the log
 
-This command will print all registeres seeds to the log.
+This command will print all registered seeds to the log.
+
 Needs to be performed by a player or console, cannot be written in a zs-file.
 ```
 1.12

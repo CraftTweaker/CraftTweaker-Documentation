@@ -19,7 +19,7 @@ pages:
         - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
         - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Ore Dictionary:
-    - Ore Dictionary: 'Vanilla/OreDic.md'
+    - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'

@@ -2,23 +2,26 @@
 
 Sometimes the functions supplied by CT and addons just won't do it.
 Here's how to write your own functions!
-You can even nest functions in funnctions
+You can even nest functions in functions
 
 ## Basic Syntax
 Generally, you declare a function using:
+
 ```
 function NAME ([arguments[as type]]) [as returnType]{
 	[Statements]
 	[return VALUE;]
 }
 ```
+
 The things in brackets are optional, depending on what you want to achieve.
-Let's take a closer look at specific funtions.
+Let's take a closer look at specific functions.
 
 
 ## Void functions
 
 Void functions are functions that will not return any value.
+
 ```
 //calls the function tens() without arguments
 tens();
@@ -56,7 +59,7 @@ print(result);
 //you can place the add function inside the print function as well
 print(add(2,64));
 
-//defines function add() with a and b as parameters (both set to be integers!) and sets the return type to integer
+//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
 function add(a as int,b as int) as int{
 	//returns the sum of a and b
 	return a+b;

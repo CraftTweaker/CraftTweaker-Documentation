@@ -18,7 +18,7 @@ if(test == 0){ //true
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statment to declare what will be executed when the if-condition equals to false.
+An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
 
 ```
 var test = 0;
@@ -43,8 +43,10 @@ if(test == 0){//false
 ```
 
 ## Things to check for
-Supported Calculations are +,-,*,/,mod,concatenation(~)
-Supported Operands are OR(|), AND(&), XOR(^)
+Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+
+Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+
 ```
 //You can check for:
 
@@ -89,7 +91,7 @@ Syntax: `boolean ? if : else`
 val switchy = false;
 
 //prints switchy state
-print("Switchy is "~switchy);
+print("Switchy is " ~ switchy);
 
 //if switchy is true, vInt = 1, otherwise vInt = 2
 val vInt = switchy ? 1 : 2;
@@ -131,6 +133,7 @@ First you need the list you want to check in, then the `in` then the value you w
 ### in loadedMods
 
 You can check, if a mod is loaded by checking if it's in the loadedMods list
+
 ```
 if(loadedMods in "mcp"){
 	print("Minecraft Coder Pack loaded");
@@ -146,5 +149,6 @@ if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("Iron ingots are in the right oreDic");
 }
 ```
+
 With this one you need to be a bit careful as not to confuse the two entries:  
 This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.
