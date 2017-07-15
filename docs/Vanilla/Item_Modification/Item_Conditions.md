@@ -12,7 +12,7 @@ These will affect the items that you can use to craft the resulting item.
 Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
 ```
 <minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
-
+```
 ### Damage
 
 #### anyDamage
