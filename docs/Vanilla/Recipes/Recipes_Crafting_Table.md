@@ -82,14 +82,14 @@ This creates a shaped recipe for `output` using `inputs` as Ingredients.
 If a `function` is added as third parameter, you can also use a function to determinate the output.  
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
-`name` is a string and needs to be unique
+`name` is a string and needs to be unique but is also optional
 `output` is an IItemStack  
 `inputs` is an IIngredient[][] (see below)  
 `function` is a IRecipeFunction. Please refer to the respecting wiki entry for more information on functions.  
 `action` is a IRecipeAction. Please refer to the respecting wiki entry for more information on actions.  
 
-`inputs` is a 2Dimensional IIngredient Array.  
-So the recipe for iron leggins would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
+`inputs` is a 2 Dimensional IIngredient Array.  
+So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
 If that looks to confusing, try splitting the arrays up into one array per line
 ```
 val iron = <minecraft:iron_ingot>;
@@ -103,10 +103,10 @@ recipes.add(leggins,
 
 ### addShapedMirrored
 ```
-//pre-1.12
+//Normal pre 1.12 syntax
 recipes.addShapedMirrored(output,inputs,function,action);
 
-//1.12
+//Recommended 1.12 syntax
 recipes.addShapedMirrored(name,output,inputs,function,action);
 ```
 
@@ -115,10 +115,10 @@ Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
 
 ### addShapeless
 ```
-//pre-1.12
+//Normal pre 1.12 syntax
 recipes.addShapeless(output,inputs,function,action)
 
-//1.12
+//Recommended 1.12 syntax
 recipes.addShapeless(name,output,inputs,function,action)
 ```
 
