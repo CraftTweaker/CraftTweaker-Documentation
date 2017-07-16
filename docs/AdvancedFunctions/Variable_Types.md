@@ -26,7 +26,7 @@ How can we fix this issue? By casting the variable test to ```IItemStack```, whi
 Unfortunately, some types need to be imported first, and this is one of those.
 
 ```
-import minetweaker.item.IItemStack;
+import crafttweaker.item.IItemStack;
 var test as IItemStack;
 
 test = <minecraft:dirt>;

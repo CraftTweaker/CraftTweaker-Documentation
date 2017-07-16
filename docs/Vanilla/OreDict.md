@@ -39,7 +39,7 @@ iron.remove(<minecraft:iron_ingot>);
 You can use the addItems or removeItems functions to add/remove all items of an array to/from an oreDictionary
 PS: Yes, I know this script down there is kinda useless, but it's just for demonstration ☺
 ```
-import minetweaker.item.IItemStack;
+import crafttweaker.item.IItemStack;
 
 val array = [<minecraft:iron_ingot>,<minecraft:dirt>,<minecraft:gold_ingot>] as IItemStack[];
 val array2 = [<minecraft:iron_ingot>,<minecraft:dirt>] as IItemStack[];
