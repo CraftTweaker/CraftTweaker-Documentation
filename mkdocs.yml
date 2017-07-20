@@ -30,6 +30,12 @@ pages:
     - Modtweaker:
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
 
 
 # Do not edit in PRs below here
