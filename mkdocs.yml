@@ -28,6 +28,7 @@ pages:
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Mods:
     - Modtweaker:
+      - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
