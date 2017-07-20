@@ -10,14 +10,13 @@ pages:
   - Item States:
     - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
     - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
-  - Recipes:
-    - Vanilla:
-      - Brackets:
-        - Items: 'Vanilla/Brackets/Bracket_Item.md'
-      - Recipes:
-        - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
-        - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
-        - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+  - Vanilla:
+    - Brackets:
+      - Items: 'Vanilla/Brackets/Bracket_Item.md'
+    - Recipes:
+      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
+      - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Ore Dictionary:
     - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
