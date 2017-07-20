@@ -13,13 +13,17 @@ Storage
 ### Addition
 
 ```
-mods.thermalexpansion.Compactor.addMintRecipe(output, input, energy);
+mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
+
+mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
 ### Removal
 
 ```
-mods.thermalexpansion.Compactor.removeMintRecipe(input);
+mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
+
+mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
 ## Press
@@ -27,13 +31,17 @@ mods.thermalexpansion.Compactor.removeMintRecipe(input);
 ### Addition
 
 ```
-mods.thermalexpansion.Compactor.addPressRecipe(output, input, energy);
+mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
+
+mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
 ### Removal
 
 ```
-mods.thermalexpansion.Compactor.removePressRecipe(input);
+mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
+
+mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
 ## Storage
@@ -41,11 +49,15 @@ mods.thermalexpansion.Compactor.removePressRecipe(input);
 ### Addition
 
 ```
-mods.thermalexpansion.Compactor.addStorageRecipe(output, input, energy);
+mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
+
+mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
 ### Removal
 
 ```
-mods.thermalexpansion.Compactor.removeStorageRecipe(input);
+mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
+
+mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
