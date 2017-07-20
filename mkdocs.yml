@@ -10,13 +10,6 @@ pages:
   - Item States:
     - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
     - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
-  - Vanilla:
-    - Brackets:
-      - Items: 'Vanilla/Brackets/Bracket_Item.md'
-    - Recipes:
-      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
-      - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Ore Dictionary:
     - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
@@ -26,6 +19,18 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Variable Types: 'AdvancedFunctions/Variable_Types.md'
+  - Vanilla:
+    - Brackets:
+      - Items: 'Vanilla/Brackets/Bracket_Item.md'
+    - Recipes:
+      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
+      - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+  - Mods:
+    - Modtweaker:
+      - Thermal Expansion:
+        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
