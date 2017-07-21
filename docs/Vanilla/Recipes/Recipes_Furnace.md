@@ -28,13 +28,13 @@ The second syntax is more strict with the recipes that are removed and will remo
 There are 2 commands for adding furnace recipes:
 
 ```
-furnace.add(output, input);
+furnace.addRecipe(output, input);
 ```
 
 And
 
 ```
-furnace.add(output, input, xp);
+furnace.addRecipe(output, input, xp);
 ```
 
 The first syntax will add a Furnace recipe that will give 0 xp on smelt.
@@ -87,13 +87,13 @@ furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 
 ```
-furnace.add(<minecraft:golden_apple>, <minecraft:apple>);
+furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
 This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
 
 ```
-furnace.add(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
+furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
 ### Fuel

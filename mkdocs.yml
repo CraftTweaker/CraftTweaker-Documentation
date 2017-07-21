@@ -10,14 +10,6 @@ pages:
   - Item States:
     - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
     - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
-  - Recipes:
-    - Vanilla:
-      - Brackets:
-        - Items: 'Vanilla/Brackets/Bracket_Item.md'
-      - Recipes:
-        - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
-        - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
-        - Seed Drops: 'Vanilla/Recipes/Seeds.md'
   - Ore Dictionary:
     - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
@@ -27,6 +19,25 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Variable Types: 'AdvancedFunctions/Variable_Types.md'
+  - Vanilla:
+    - Brackets:
+      - Items: 'Vanilla/Brackets/Bracket_Item.md'
+    - Recipes:
+      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
+      - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+  - Mods:
+    - Modtweaker:
+      - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
+      - Thermal Expansion:
+        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
