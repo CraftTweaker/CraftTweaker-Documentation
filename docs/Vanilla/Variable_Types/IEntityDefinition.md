@@ -17,6 +17,7 @@ What can we do with it, now that we created that thing?
 
 Returns the ID as string
 ```
+//returns "net.minecraft.entity.passive.EntitySheep"
 <entity:sheep>.id;
 ```
 
@@ -24,6 +25,7 @@ Returns the ID as string
 
 Returns the name as string
 ```
+//returns "Sheep"
 <entity:sheep>.name;
 ```
 

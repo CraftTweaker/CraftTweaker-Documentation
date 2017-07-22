@@ -10,7 +10,7 @@ Entities are referenced in the Entity handler this way:
 <entity:sheep>
 ```
 
-If the mob/entity is found, thiw will return an IEntityDefinition Object.
+If the mob/entity is found, this will return an IEntityDefinition Object.
 Please refer to the respective Wiki entry for further information on what you can do with these.
 
 # Getting all Registered Entities
