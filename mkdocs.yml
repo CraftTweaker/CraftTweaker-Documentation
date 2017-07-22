@@ -18,14 +18,17 @@ pages:
     - Contional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
-    - Variable Types: 'AdvancedFunctions/Variable_Types.md'
   - Vanilla:
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
+      - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+    - Variable Types:
+      - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
+      - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
