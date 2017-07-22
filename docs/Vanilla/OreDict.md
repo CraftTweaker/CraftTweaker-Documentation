@@ -98,7 +98,7 @@ recipes.add(<minecraft:dirt>,[[iron,iron,iron],[iron,iron,null],[iron,iron,iron]
 
 ## Iterating through an OreDictionary
 
-You can iterate through an oreDictionary by making it to an array and iterating through that one.
+You can iterate through an oreDictionary by making it to a list and iterating through that one.
 This can be done using the function items.
 
 ```

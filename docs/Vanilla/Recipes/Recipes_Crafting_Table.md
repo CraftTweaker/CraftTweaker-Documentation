@@ -93,9 +93,9 @@ So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,nul
 If that looks to confusing, try splitting the arrays up into one array per line
 ```
 val iron = <minecraft:iron_ingot>;
-val leggins = <minecraft:iron_leggins>;
+val leggings = <minecraft:iron_leggings>;
 
-recipes.add(leggins,
+recipes.addShaped(leggings,
  [[iron,iron,iron],
   [iron,null,iron],
   [iron,null,iron]]);
