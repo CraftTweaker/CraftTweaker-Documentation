@@ -29,6 +29,7 @@ pages:
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
+      - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
