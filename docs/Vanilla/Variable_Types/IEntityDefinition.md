@@ -1,6 +1,6 @@
 # IEntityDefinition
 
-This sounds scary, wo what does it mean?
+This sounds scary, so what does it mean?
 Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
 
 ```
