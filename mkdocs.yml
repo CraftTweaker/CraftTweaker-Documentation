@@ -43,14 +43,15 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
+        - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
         - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
-        - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
+        - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
-        - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
+
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
