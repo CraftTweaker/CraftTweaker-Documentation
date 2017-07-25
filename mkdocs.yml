@@ -33,14 +33,13 @@ pages:
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
-      - Thermal Expansion:
-        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
-        - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
-        - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
-        - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
-        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
-        - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
-        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+      - Actually Additions:
+        - AtomicReconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
+        - BallOfFur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
+        - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
+        - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
+        - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
+        - TreasureChest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
@@ -51,6 +50,15 @@ pages:
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+      - Thermal Expansion:
+        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+
 
 
 # Do not edit in PRs below here
