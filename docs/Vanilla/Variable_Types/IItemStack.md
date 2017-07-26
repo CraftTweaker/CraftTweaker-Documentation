@@ -97,7 +97,7 @@ val pick = <minecraft:diamond_pickaxe>;
 //prints 1561
 print(pick.maxDamage);
 
-//sets grass Hardness to 256
+//sets the max damage of the Diamond Pickaxe to 256
 pick.maxDamage = 256;
 
 //prints 256
