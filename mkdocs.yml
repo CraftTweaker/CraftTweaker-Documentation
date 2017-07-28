@@ -32,6 +32,7 @@ pages:
       - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
+      - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
