@@ -25,6 +25,7 @@ pages:
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
     - Game:
       - IGame: 'Vanilla/Game/IGame.md'
+      - Mods: 'Vanilla/Game/Mods.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
