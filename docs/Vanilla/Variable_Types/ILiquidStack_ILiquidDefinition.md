@@ -18,7 +18,7 @@ val lavaWithAmount = <liquid:lava> * 1000;
 ```
 
 ## Get fluid properties
-As an ILiquidStack represents a liquid, here surely must also be a way of retrieving the fluid's properties.  
+As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
 | Zengetter   | What is this?                                             | Return Type       | Example                             |
@@ -59,6 +59,9 @@ Check the table below for further information.
 
 Like in the table above, you set the Zengetter/Setter at the end of the ILiquidDefinition.
 Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
+
+Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world.
+In most cases you will not need them.
 
 ```
 val definition = <liquid:lava>.definition;
