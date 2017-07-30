@@ -10,6 +10,7 @@ The Server class is a globally registered Symbol, so you won't need to import an
 
 #### Add Commands
 Check the Commands entry in the AdvancedFunctions section for further information on how to add commands.
+These also only work on CraftTweaker versions prior to Minecraft 1.12 due to a change of code.
 
 ```
 //normal command (/name or /alias)
@@ -27,6 +28,8 @@ addMineTweakerCommand(String name, String[] usage, ICommandFunction function);
 
 ### Handle Login/Logout Events
 Check the events entry in the AdvancedFunctions section  for further information on how to use Event handlers.
+These also only work on CraftTweaker versions prior to Minecraft 1.12 due to a change of code.
+
 ```
 //player logs in
 server.onPlayerLoggedIn(function(player){
