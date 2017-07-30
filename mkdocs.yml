@@ -25,7 +25,9 @@ pages:
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
     - Game:
+      - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
+      - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
