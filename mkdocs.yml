@@ -40,6 +40,7 @@ pages:
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
+      - IPlayer: 'Vanilla/Variable_Types/IPlayer.md'
       - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
     - Modtweaker:
