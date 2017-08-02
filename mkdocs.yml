@@ -16,7 +16,6 @@ pages:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Custom Commands: 'AdvancedFunctions/Commands.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Event Listeners: 'AdvancedFunctions/Evnets.md'
     - Import: 'AdvancedFunctions/Import.md'
