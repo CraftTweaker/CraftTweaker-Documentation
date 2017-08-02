@@ -194,6 +194,7 @@ Returns an IItemStack with the given Damage.
 Returns a List of IOreDictEntries referring to this item.
 ```
 <minecraft:apple>.ores;
+```
 
 ### As IBlock
 You can cast an IItemStack to an IBlock, as long as you are referring to a block, otherwise the cast results in null.
