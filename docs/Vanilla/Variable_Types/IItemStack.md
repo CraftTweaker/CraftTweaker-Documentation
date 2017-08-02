@@ -11,6 +11,10 @@ Usually, the bracket handler returns an IItemStack Object, unless told not to do
 ## Functions
 So what can we do with that now?
 
+### IIngredient
+A bit of Java jargon here: IItemStack is an interface and extends IIngredient. That means that all functions useable for IIngredients also work for IItemStacks, only that they will then return an IIngredient.
+Please read the IIngredient page for further information on IIngredients.
+
 ### Definition
 Returns the item definition as IItemDefinition Object. Refer to the specific page for further information.
 ```
@@ -190,6 +194,7 @@ Returns an IItemStack with the given Damage.
 Returns a List of IOreDictEntries referring to this item.
 ```
 <minecraft:apple>.ores;
+```
 
 ### As IBlock
 You can cast an IItemStack to an IBlock, as long as you are referring to a block, otherwise the cast results in null.

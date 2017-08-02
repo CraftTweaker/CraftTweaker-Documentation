@@ -7,7 +7,7 @@ You can even nest functions in functions
 ## Basic Syntax
 Generally, you declare a function using:
 
-```
+```Java
 function NAME ([arguments[as type]]) [as returnType]{
 	[Statements]
 	[return VALUE;]
@@ -22,7 +22,7 @@ Let's take a closer look at specific functions.
 
 Void functions are functions that will not return any value.
 
-```
+```Java
 //calls the function tens() without arguments
 tens();
 
@@ -49,9 +49,9 @@ function realTens(a as string){
 ## Return functions
 
 You can also specify a value that should be returned by a function. 
-It is recommended using the ```as``` keyword to define the return type.
+It is recommended using the `as` keyword to define the return type.
 
-```
+```Java
 //calls add function with 1 and 99 as parameters
 val result = add(1,99);
 print(result);
@@ -73,7 +73,7 @@ After declaring a recipe's output and inputs, you can add a function as third pa
 
 To show this, we're gonna create a recipe that repairs your precious diamond Pickaxe using diamonds:
 
-```
+```Java
 val diaPick = <minecraft:diamond_pickaxe>;
 
 //we start normal, by writing the output

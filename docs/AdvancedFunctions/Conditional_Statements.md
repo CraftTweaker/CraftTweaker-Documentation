@@ -8,7 +8,7 @@ That's what you need conditional Statements for.
 An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed.
 Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
 
-```
+```Java
 val test = 0;
 
 if(test == 0){ //true
@@ -20,7 +20,7 @@ if(test == 0){ //true
 
 An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
 
-```
+```Java
 var test = 0;
 
 if(test == 0){//true
@@ -47,7 +47,7 @@ Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
 Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
 
-```
+```Java
 //You can check for:
 
 
@@ -87,7 +87,7 @@ That's why the `?` operator was implemented.
 It follows the same logic as an if/else statement, it only is by far less code required.
 Syntax: `boolean ? if : else`
 
-```
+```Java
 val switchy = false;
 
 //prints switchy state
@@ -134,7 +134,7 @@ First you need the list you want to check in, then the `in` then the value you w
 
 You can check, if a mod is loaded by checking if it's in the loadedMods list
 
-```
+```Java
 if(loadedMods in "mcp"){
 	print("Minecraft Coder Pack loaded");
 }
@@ -144,7 +144,7 @@ if(loadedMods in "mcp"){
 
 You can also check if an item matches a definition by comparing two IIngredients.
 
-```
+```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("Iron ingots are in the right oreDic");
 }

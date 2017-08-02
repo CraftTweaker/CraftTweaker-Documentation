@@ -18,10 +18,18 @@ pages:
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
+    - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
   - Vanilla:
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
+      - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
+      - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
+    - Game:
+      - IClient: 'Vanilla/Game/IClient.md'
+      - IGame: 'Vanilla/Game/IGame.md'
+      - IServer: 'Vanilla/Game/IServer.md'
+      - Mods: 'Vanilla/Game/Mods.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
@@ -29,7 +37,9 @@ pages:
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
+      - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
+      - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'

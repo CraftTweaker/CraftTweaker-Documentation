@@ -20,7 +20,7 @@ There are several ways of removing recipes.
 
 
 ### remove
-```
+```Java
 recipes.remove(output, NBTMatch);
 ```
 
@@ -32,7 +32,7 @@ If `NBTMatch`  is true, it will only remove recipes that result in items with th
 
 
 ### removeShaped
-```
+```Java
 recipes.removeShaped(output, inputs);
 ```
 
@@ -46,7 +46,7 @@ Furthermore, `inputs` is optional. If omitted, the function will do the same as 
 
 
 ### removeShapeless
-```
+```Java
 recipes.removeShapeless(output, inputs, wildcard);
 ```
 
@@ -70,7 +70,7 @@ All other functionality stay the same. Remember that `name` needs to be unique!
 `name` is a string.
 
 ### addShaped
-```
+```Java
 //pre-1.12
 recipes.addShaped(output,inputs,function,action);
 
@@ -91,7 +91,7 @@ If an `action` function is added as forth parameter, you can also determine, wha
 `inputs` is a 2 Dimensional IIngredient Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
 If that looks to confusing, try splitting the arrays up into one array per line
-```
+```Java
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
 
@@ -102,7 +102,7 @@ recipes.addShaped(leggings,
 ```
 
 ### addShapedMirrored
-```
+```Java
 //Normal pre 1.12 syntax
 recipes.addShapedMirrored(output,inputs,function,action);
 
@@ -114,7 +114,7 @@ Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
 
 
 ### addShapeless
-```
+```Java
 //Normal pre 1.12 syntax
 recipes.addShapeless(output,inputs,function,action)
 
