@@ -75,5 +75,5 @@ print(3+1);
 recipes.remove(array[3+1]);
 
 //
-if(3+1 == 22) {print("Used a calculation!")}
+if(3+1 == 2*2) {print("Used a calculation!")}
 ```
