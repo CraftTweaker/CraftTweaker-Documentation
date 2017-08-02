@@ -5,20 +5,42 @@ If you want to refer to all entries that share the same oreDictionary entry, you
 
 ## How to refer to oreDictionaries
 
+### Using the oreDictionary Bracket Handler
 You refer to oreDictionaries the same way as you refer to items, using Brackets.
 An example of the OreDict Bracket Handler would be:
 
 ```
 <ore:ingotIron>
 ```
-
 This will give you access to the OreDict for `ingotIron`.
+
+
+### Using the oreDict Keyword
+You can also refer to oreDictionaries using the oreDict Keyword.
+
+```java
+oreDict.ingotIron
+```
+
+Be careful though, as you cannot create an oreDictionary named `entries` that way. Why, you ask?  
+
+```java
+//the entries member is for retrieving all registered oreDictionary entries!
+val allEntries = oreDict.entries;
+
+for oreDictEntry in allEntries{
+	print(oreDictEntry.name);
+}
+
+```
+
 
 
 ## How to add/remove an oreDic entry
 
 You can use the add or remove function to add or remove an item's ore Dictionary entry.
-```
+
+```java
 //This will add dirt to the iron Ingot ore Dictionary
 <ore:ingotIron>.add(<minecraft:dirt>);
 
@@ -27,7 +49,8 @@ You can use the add or remove function to add or remove an item's ore Dictionary
 ```
 
 You can also use variables/values
-```
+
+```java
 var copper = <ore:ingotCopper>;
 val iron = <ore:ingotIron>;
 copper.add(<minecraft:dirt>);
@@ -38,7 +61,8 @@ iron.remove(<minecraft:iron_ingot>);
 
 You can use the addItems or removeItems functions to add/remove all items of an array to/from an oreDictionary
 PS: Yes, I know this script down there is kinda useless, but it's just for demonstration ☺
-```
+
+```java
 import crafttweaker.item.IItemStack;
 
 val array = [<minecraft:iron_ingot>,<minecraft:dirt>,<minecraft:gold_ingot>] as IItemStack[];
@@ -59,7 +83,7 @@ copper.removeItems(array2);
 If you want to create a new oreDictionary, you just refer to it as if it would already be present.
 If CraftTweaker can't find an oreDictionary, it will create a new, empty one.
 
-```
+```java
 //Create oreDic called test
 val myEntry = <ore:test>;
 
@@ -73,7 +97,7 @@ myEntry.add(<minecraft:iron_ingot>);
 If you have two oreDictionaries that are essentially the same (such as ironBlock and blockIron), you may want to unify them.
 This can be done using the addAll and mirror function.
 
-```
+```java
 //make iron and copper equivalent
 val iron = <ore:ingotIron>;
 val copper = <ore:ingotCopper>;
@@ -90,7 +114,7 @@ iron2.mirror(iron);
 ## Using oreDics in recipes
 
 If you want to refer to all items in an oreDictionary, you can just use that entry where you'd normally put the single item.
-```
+```java
 val iron = <ore:ingotIron>;
 
 recipes.add(<minecraft:dirt>,[[iron,iron,iron],[iron,iron,null],[iron,iron,iron]]);
@@ -101,7 +125,7 @@ recipes.add(<minecraft:dirt>,[[iron,iron,iron],[iron,iron,null],[iron,iron,iron]
 You can iterate through an oreDictionary by making it to a list and iterating through that one.
 This can be done using the function items.
 
-```
+```java
 val iron = <ore:ingotIron>;
 
 for item in iron.items{
@@ -126,8 +150,7 @@ Usually, you can just use NEI/JEI, but if you ever need CT to check if a oreDict
 Remember, first the oreDic, then the item you want to check for.  
 This will return a boolean.
 
-```
-
+```java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("Iron is in the oreDic!");
 }
@@ -137,7 +160,8 @@ if(<ore:ingotIron> in <minecraft:iron_ingot>){
 
 If you ever need to get an oreDics name, you can use the `oreDic.name` function. This will return the name as String.  
 The oreDic name is the part after the `:` in `<ore:name>`
-```
+
+```java
 val OD = <ore:ingotIron>;
 
 //prints "ingotIron"
@@ -149,7 +173,7 @@ print(OD.name);
 I have no idea why you would ever need this, but here you go.  
 The firstItem function returns an IItemStack
 
-```
+```java
 val fI = <ore:ingotIton>.firstItem;
 print(fI.name);
 ```
