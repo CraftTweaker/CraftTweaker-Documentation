@@ -5,8 +5,9 @@ The liquid Bracket Handler gives you access to the liquids in the game. It is on
 Liquids are referenced in the Liquid Bracket Handler by like so:
 
 ```
-<liquid:liquidname>
-<liquid:lava>
+<liquid:liquidname> OR <fluid:liquidname>
+
+<liquid:lava> OR <fluid:lava>
 ```
 
 If the liquid is found, this will return an ILiquidStack Object.
