@@ -17,7 +17,6 @@ pages:
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Event Listeners: 'AdvancedFunctions/Evnets.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
   - Vanilla:
