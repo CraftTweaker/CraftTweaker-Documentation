@@ -142,11 +142,12 @@ val OD = <ore:ingotIron>;
 
 //prints "ingotIron"
 print(OD.name);
+```
 
 ## Get the first item of an oreDic
 
-I have no idea why you would ever need this, but here you go
-the firstItem function returns an IItemStack
+I have no idea why you would ever need this, but here you go.  
+The firstItem function returns an IItemStack
 
 ```
 val fI = <ore:ingotIton>.firstItem;
