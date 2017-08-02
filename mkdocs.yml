@@ -25,6 +25,7 @@ pages:
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
+      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
