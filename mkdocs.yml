@@ -72,6 +72,8 @@ pages:
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
    - Tipps and Tricks:
+      -  Items:
+        - Using IItemDefinitions for meta ranges: 'Tipps_Tricks/Items/IItemDefinition_Metas.md'    
 
 
 
