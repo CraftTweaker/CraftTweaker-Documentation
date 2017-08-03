@@ -5,7 +5,7 @@ We all have seen it: Scripts with more than 500 lines where it sais 500 times `r
 Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
 
 ## Solution
-My rule of fist:
+My rule of thumb:
 When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
 So, instead of always typing out the functions, I declare one array containing all items. and iterate through that one.
