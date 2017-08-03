@@ -72,8 +72,11 @@ pages:
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
    - Tipps and Tricks:
-      -  Items:
-        - Using IItemDefinitions for meta ranges: 'Tipps_Tricks/Items/IItemDefinition_Metas.md'    
+    - Foreword: 'Tipps_Tricks/Foreword.md'
+    - Items:
+      - Using IItemDefinitions for meta ranges: 'Tipps_Tricks/Items/IItemDefinition_Metas.md'
+    - General Tips:
+      - Use Loops to make your scripts easier to read: 'Tipps_Tricks/General/Loops_Readability.md'    
 
 
 
