@@ -23,7 +23,7 @@ pages:
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
+      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Game:
