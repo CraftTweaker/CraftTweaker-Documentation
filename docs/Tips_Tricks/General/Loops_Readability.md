@@ -1,7 +1,7 @@
 # Use Loops to make your script look better
 
 ## Problem
-We all have seen it: Scripts with more than 500 lines where it sais 500 times `recipes.remove(item1);recipes.remove(item2),...`  
+We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
 Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
 
 ## Solution

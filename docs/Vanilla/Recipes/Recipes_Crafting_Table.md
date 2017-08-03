@@ -60,10 +60,10 @@ If `wildcard` is true, it will remove shapeless recipes that craft `output` with
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
 
 ### removeAll
-Rempves all crafting recipes in the game.  
+Removes all crafting recipes in the game.  
 A bit overkill, don't you think?
 ```java
-recipes.removeAll`
+recipes.removeAll()`
 ```
 
 ### Remove by name

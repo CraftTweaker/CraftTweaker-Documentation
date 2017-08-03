@@ -9,7 +9,7 @@ It is a good idea to split your script into multiple files
 ## What we know/need to know
 - CraftTweaker can load files from multiple script files.
 - CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files.
+- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
 
 ## Solution
 - Split your large scripts into multiple smaller ones.

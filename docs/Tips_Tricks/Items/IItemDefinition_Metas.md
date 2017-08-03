@@ -2,7 +2,7 @@
 
 ## Problem
 Let's say we want to remove the recipes of some specific colors of wool.  
-White wool has the metadata 0, all colors range from meta 1 to meta 16.
+White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
 
 We want to remove the wools with meta 3 to 12. What do we do?  
 We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  

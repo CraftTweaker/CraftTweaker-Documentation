@@ -1,6 +1,6 @@
 # Foreword
 
-This section will contain Tipps and Tricks from experienced Tweakers.  
+This section will contain Tips and Tricks from experienced Tweakers.  
 Remember that these are really individual and some can also hinder you from achieving your aims instead of facilitating it.
 
 ## What this section is for
