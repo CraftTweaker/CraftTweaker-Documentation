@@ -12,6 +12,7 @@ Can be accessed using `game`
 | entities  | Returns all registered entities as list | List<IEntitiyDefinition> | `game.entities` |
 | items     | Returns all registered items as list    | List<IItemDefinition>    | `game.items`    |
 | liquids   | Returns all registered liquids as list  | List<ILiquidDefinition>  | `game.liquids`  |
+| potions   | Returns all registered potions as list  | List<IPotion>            | `game.potions`  |
 
 ## Methods
 
