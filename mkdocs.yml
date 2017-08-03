@@ -38,6 +38,7 @@ pages:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
+      - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
       - IPlayer: 'Vanilla/Variable_Types/IPlayer.md'
