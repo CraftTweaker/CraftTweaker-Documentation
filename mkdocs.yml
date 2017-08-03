@@ -76,6 +76,7 @@ pages:
     - Items:
       - Using IItemDefinitions for meta ranges: 'Tipps_Tricks/Items/IItemDefinition_Metas.md'
     - General Tips:
+      - Split your scripts into multiple files: 'Tipps_Tricks/General/Split_Files.md'
       - Use Loops to make your scripts easier to read: 'Tipps_Tricks/General/Loops_Readability.md'    
 
 
