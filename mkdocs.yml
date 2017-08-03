@@ -36,6 +36,7 @@ pages:
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
+      - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
@@ -48,7 +49,6 @@ pages:
       - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
-      - IPlayer: 'Vanilla/Variable_Types/IPlayer.md'
       - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
     - Modtweaker:
