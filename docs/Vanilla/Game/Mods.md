@@ -4,11 +4,17 @@ You can use the keyword `loadedMods` to access all currently loaded mods.
 
 ## Check if a mod is loaded
 
-Use the `in`function to check if a mod is loaded:
+Use the `in` function to check if a mod is loaded;  
+Also you can use the `contains` method:
 ```
 //if MinecraftCoderPack is loaded
 if(loadedMods in "mcp"){
 	print("success!");
+}
+
+//if MinecraftCoderPack is loaded
+if(loadedMods.contains("mcp")){
+	print("success!!!");
 }
 ```
 
