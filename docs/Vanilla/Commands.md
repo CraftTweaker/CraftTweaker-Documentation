@@ -226,6 +226,19 @@ Description:
 
 Outputs a list of all the items in the seed registry to the crafttweaker.log file.
 
+## Syntax
+
+Usage:
+
+`/craftweaker syntax`
+
+`/ct syntax`
+
+Description:
+
+Reads through all your scripts and will output all errors it finds in your syntaxes.
+Note that this won't apply your script changes, you need to restart your game to see them in effect.
+
 ## Wiki
 
 Usage:
