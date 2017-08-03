@@ -19,6 +19,13 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
+  - Tips and Tricks:
+      - Foreword: 'Tips_Tricks/Foreword.md'
+      - Items:
+        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+      - General Tips:
+        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
+        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
   - Vanilla:
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
@@ -71,13 +78,6 @@ pages:
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-   - Tips and Tricks:
-    - Foreword: 'Tips_Tricks/Foreword.md'
-    - Items:
-      - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-    - General Tips:
-      - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-      - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'    
 
 
 
