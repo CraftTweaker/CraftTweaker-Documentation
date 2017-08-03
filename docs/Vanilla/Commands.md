@@ -165,6 +165,19 @@ Outputs a list of all the OreDict entries in the game to the crafttweaker.log fi
 
 If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
 
+## Potions
+
+Usage:
+
+`/craftweaker potions`
+
+`/ct potions`
+
+Description:
+
+Outputs a list of all the potions in the game to the crafttweaker.log file.
+
+
 ## Recipes
 
 Usage:
@@ -212,6 +225,19 @@ Usage:
 Description:
 
 Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+
+## Syntax
+
+Usage:
+
+`/craftweaker syntax`
+
+`/ct syntax`
+
+Description:
+
+Reads through all your scripts and will output all errors it finds in your syntaxes.
+Note that this won't apply your script changes, you need to restart your game to see them in effect.
 
 ## Wiki
 

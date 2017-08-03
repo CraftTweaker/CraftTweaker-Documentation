@@ -23,12 +23,12 @@ pages:
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid'
+      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
+      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
-      - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
@@ -38,8 +38,11 @@ pages:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
+      - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
+      - IPlayer: 'Vanilla/Variable_Types/IPlayer.md'
+      - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
@@ -68,6 +71,13 @@ pages:
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+   - Tips and Tricks:
+    - Foreword: 'Tips_Tricks/Foreword.md'
+    - Items:
+      - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+    - General Tips:
+      - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
+      - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'    
 
 
 

@@ -7,12 +7,12 @@ Can be accessed using `game`
 
 | Zengetter | What does it do?                        | Return Type              | Usage           |
 |-----------|-----------------------------------------|--------------------------|-----------------|
-| items     | Returns all registered items as list    | List<IItemDefinition>    | `game.items`    |
-| blocks    | Returns all registered blocks as list   | List<IBlockDefinition>   | `game.blocks`   |
-| liquids   | Returns all registered liquids as list  | List<ILiquidDefinition>  | `game.liquids`  |
 | biomes    | Returns all registered biomes as list   | List<IBiomes>            | `game.biomes`   |
+| blocks    | Returns all registered blocks as list   | List<IBlockDefinition>   | `game.blocks`   |
 | entities  | Returns all registered entities as list | List<IEntitiyDefinition> | `game.entities` |
-| locked    | Retrurns if the skript is locked or not | boolean                  | `game.locked`   |
+| items     | Returns all registered items as list    | List<IItemDefinition>    | `game.items`    |
+| liquids   | Returns all registered liquids as list  | List<ILiquidDefinition>  | `game.liquids`  |
+| potions   | Returns all registered potions as list  | List<IPotion>            | `game.potions`  |
 
 ## Methods
 
@@ -37,7 +37,3 @@ All parameters are strings.
 Returns a localized String  
 `game.localize(key)`  
 `game.localize(key, lang)`
-
-### Lock
-Locks the game, so skripts can no longer be reloaded.  
-Only applicable prior to CT 1.12 as CT 1.12 does no longer support reloads.

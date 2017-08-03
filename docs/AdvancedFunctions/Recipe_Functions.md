@@ -70,26 +70,6 @@ The IcraftingInfo object contains all kinds of information on the crafting proce
 `cInfo.player` returns the player conducting the crafting as an IPlayer object  
 `cInfo.dimension` returns the dimension the crafting process is performed in as an IDimension object
 
-# IPlayer
-
-The IPlayer object contains all kinds of information on a player, in this case on the player conducting the crafting.
-
-`player.id` returns the player's id as string.  
-`player.name` returns the player's name as string.  
-`player.data` returns the player's data as IData.  
-`player.xp` returns the player's experience level as int. Can also be used to set a player's experience level.  
-`player.hotbarSize` returns the player's hotbar size as int.  
-`player.inventorySize` returns the player's inventory size as int.  
-`player.currentItem` returns the item the player is currently holding as IItemStack.  
-`player.creative` returns if the player is currently in creative mode (a.k.a gamemode 1) as bool.  
-`player.adventure` returns if the player is currently in adventure mode (a.k.a gamemode 2) as bool.  
-
-`player.removeXP(XPtoRemove)` removes the given experience levels from the player. XPtoRemove is an int.  
-`player.update(IData)` updates the playerdata to the provided IData.  
-`player.sendChat(Message)` sends the player a Chat Message. Message can be either a string or a IChatMessage object.  
-`player.getHotbarStack(index)` returns the item at the given index within the player's inventory. Index is an int.  
-`player.give(item)` give the player the provided item. Item is an IItemStack.
-
 # IDimension
 
 The IDimension object contains information on a Dimension within the game, in this case the dimension the crafting is performed in.

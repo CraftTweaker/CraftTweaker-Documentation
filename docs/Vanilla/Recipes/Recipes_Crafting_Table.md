@@ -59,6 +59,23 @@ If `wildcard` is true, it will remove shapeless recipes that craft `output` with
 
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
 
+### removeAll
+Removes all crafting recipes in the game.  
+A bit overkill, don't you think?
+```java
+recipes.removeAll()`
+```
+
+### Remove by name
+As 1.12 introduces naming recipes, you can also remove recipes once you know their name.
+You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
+
+```java
+recipes.removeByRegex("name[1-9]");
+recipes.removeByRecipeName("name123");
+```
+
+
 ## Add Recipes
 
 ### Notes On 1.12
@@ -95,7 +112,7 @@ If that looks to confusing, try splitting the arrays up into one array per line
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
 
-recipes.addShaped(leggings,
+recipes.addShaped("CTLeggings", leggings,
  [[iron,iron,iron],
   [iron,null,iron],
   [iron,null,iron]]);
