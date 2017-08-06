@@ -70,6 +70,8 @@ pages:
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+      - JEI:
+        - JEI: 'Mods/JEI/JEI.md'
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
