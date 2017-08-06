@@ -33,8 +33,14 @@ game.setLocalization(tile.chest.name,"StorageBox Deluxe")
 
 # Tooltips
 
-Adding a tooltip is really easy:  
-All you need is an item (or oreDict or similar).
+Adding or removing a tooltip is really easy:  
+All you need is an item (or oreDict or similar), in other words, an IIngredient.
+
+## Clearing tooltips
+This removes ALL tooltips from the `item`
+```
+item.clearTooltip();
+```
 
 ## Normal Tooltips
 This adds `tT` as tooltip to `item`.
