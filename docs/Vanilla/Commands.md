@@ -7,6 +7,9 @@ The prefix for commands are:
 or
 `/ct`
 
+You can also use one of these aliases:
+`/minetweaker` or `/mt`
+
 All the commands can be found ingame by doing:
 
 `/crafttweaker help`
