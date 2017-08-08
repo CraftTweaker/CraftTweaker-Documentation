@@ -39,6 +39,8 @@ pages:
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
+      - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
+      - IItemStack: 'Vanilla/Items/IItemStack.md'
       - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
@@ -49,8 +51,6 @@ pages:
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-      - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
-      - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
       - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
