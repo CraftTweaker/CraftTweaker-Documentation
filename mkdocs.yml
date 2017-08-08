@@ -42,6 +42,7 @@ pages:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
       - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
+      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
     - Liquids:

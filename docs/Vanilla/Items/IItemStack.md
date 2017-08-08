@@ -198,3 +198,6 @@ Returns a List of IOreDictEntries referring to this item.
 
 ### As IBlock
 You can cast an IItemStack to an IBlock, as long as you are referring to a block, otherwise the cast results in null.
+
+## ItemTransformers and ItemConditions
+You can find how to use these either in the IIngredient page or in their respecive entries in this wiki category `vanilla/Items/Item Transformers`
