@@ -39,19 +39,27 @@ This adds a normal drop, a drop that can occur whenever the mob is killed by wha
 ```
 val entity = <entity:sheep>;
 
-//addDrop(item,min,max);
+//addDrop(item,min,max,chance);
 entity.addDrop(<minecraft:apple>);
+
+//addDrop(weightedItem, min, max);
+entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`item` is the item to be added as drop and an IItemStack.  
+`item` is the item to be added as drop and an IItemStack or a WeightedItemStack.  
 `min` is the minimum amount that is dropped and an Integer. This is optional.  
 `max` is the maximum amount that is dropped and an Integer. This is optional.
+`chance` is the drop chance. This is optional. Not needed if you use a weightedItemStack instead as `item`
 
 ### Add playeronly drop
 
 Same as normal drops, but only if the entity was killed by a player.
 ```
+//addPlayerOnlyDrop(item,min,max,chance);
 entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
+
+//addPlayerOnlyDrop(weightedItem, min, max);
+entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```
 
 ### Remove
