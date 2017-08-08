@@ -7,9 +7,6 @@ pages:
     - Commands: 'Vanilla/Commands.md'
   - Brackets:
     - Bracket Handlers: 'Brackets/Brackets.md'
-  - Item States:
-    - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
-    - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
   - Ore Dictionary:
     - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
@@ -41,6 +38,10 @@ pages:
       - IGame: 'Vanilla/Game/IGame.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
+    - Items:
+      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
+      - Tooltips: 'Vanilla/Items/Tooltips.md'
+      - Renaming: 'Vanilla/Items/Renaming.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
