@@ -64,3 +64,14 @@ val entity = <entity:sheep>;
 entity.remove(<minecraft:wool>);
 ```
 `item` is the item to be removed from being a drop and an IItemStack.
+
+
+### Get
+
+This returns all drops that were added via CT as list
+```
+val entity = <entity:sheep>;
+
+//getDrops();
+val dropList = entity.getDrops();
+```

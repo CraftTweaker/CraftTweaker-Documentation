@@ -33,6 +33,9 @@ pages:
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Entities:
+      - IEntityDefinition: 'Vanilla/Entites/IEntityDefinition.md'
+      - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
@@ -44,7 +47,6 @@ pages:
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
-      - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
       - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
       - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
