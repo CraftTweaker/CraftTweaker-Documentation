@@ -44,6 +44,9 @@ pages:
       - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
+    - Liquids:
+      - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
+      - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
@@ -51,7 +54,6 @@ pages:
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-      - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
       - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
     - Modtweaker:
