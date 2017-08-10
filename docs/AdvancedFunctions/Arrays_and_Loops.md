@@ -107,4 +107,9 @@ for i in 10 .. 20 {
 	//defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
     print(i);
 }
+
+for item in loadedMods["minecraft"].items {
+	defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+	recipes.remove(item);
+}
 ```
