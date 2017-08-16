@@ -56,6 +56,19 @@ apple.displayName = "Tomato";
 print(apple.displayName);
 ```
 
+You can also use this to add a display name to the item, even if it already has NBT. Supports color codes with `§`.
+```JAVA
+<minecraft:coal>.withDisplayName("Black Gold");
+```
+
+### Lore
+
+You can add lore to the item, even if it already has NBT. Supports color codes with `§`.
+```JAVA
+<minecraft:coal>.withLore(["This function","requires a","string[]"]);
+```
+
+
 ### Maximum Stack Size
 The maximum Stack Size is how many items fit in one Stack, for example, wool's Stack size is 64 and Buckets' only 16.
 The Stack Size can either be retrieved or set, depending on what you are trying to accomplish.
