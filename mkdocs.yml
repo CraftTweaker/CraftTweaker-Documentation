@@ -36,6 +36,7 @@ pages:
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
+      - IItemUtils : 'Vanilla/Game/IItemUtils'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
