@@ -6,7 +6,7 @@ An IPotion object refers a potion in the game.
 You can get such an object through the use of the Potion Bracket handler
 
 ```Java
-<potion:strength>;
+<potion:minecraft:strength>;
 ```
 
 ## Zengetters
