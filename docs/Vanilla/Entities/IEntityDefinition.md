@@ -4,8 +4,9 @@ This sounds scary, so what does it mean?
 Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
 
 ```
-//This returns an IEntityDefinition Object
-val test = <entity:sheep>;
+//These return an IEntityDefinition Object
+val test = <entity:minecraft:sheep>;
+val test2 = game.getEntity("sheep");
 
 ```
 
@@ -18,7 +19,7 @@ What can we do with it, now that we created that thing?
 Returns the ID as string
 ```
 //returns "net.minecraft.entity.passive.EntitySheep"
-<entity:sheep>.id;
+<entity:minecraft:sheep>.id;
 ```
 
 ### name
@@ -26,7 +27,7 @@ Returns the ID as string
 Returns the name as string
 ```
 //returns "Sheep"
-<entity:sheep>.name;
+<entity:minecraft:sheep>.name;
 ```
 
 ## Drops
@@ -37,7 +38,7 @@ We can even add and/or remove mob drops, isn't that great?
 
 This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
 ```
-val entity = <entity:sheep>;
+val entity = <entity:minecraft:sheep>;
 
 //addDrop(item,min,max,chance);
 entity.addDrop(<minecraft:apple>);
@@ -66,7 +67,7 @@ entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 
 This removes a drop.
 ```
-val entity = <entity:sheep>;
+val entity = <entity:minecraft:sheep>;
 
 //remove(item);
 entity.remove(<minecraft:wool>);
@@ -78,7 +79,7 @@ entity.remove(<minecraft:wool>);
 
 This returns all drops that were added via CT as list
 ```
-val entity = <entity:sheep>;
+val entity = <entity:minecraft:sheep>;
 
 //getDrops();
 val dropList = entity.getDrops();
