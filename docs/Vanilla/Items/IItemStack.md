@@ -41,7 +41,8 @@ Returns the unlocalized item name.
 
 ### Display Name
 
-The display name can either be retrieved or set, depending on what you are trying to accomplish.
+#### Globally
+An item's standart display name can either be retrieved or set, depending on what you are trying to accomplish.
 
 ```
 val apple = <minecraft:apple>;
@@ -56,7 +57,10 @@ apple.displayName = "Tomato";
 print(apple.displayName);
 ```
 
-You can also use this to add a display name to the item, even if it already has NBT. Supports color codes with `§`.
+#### Locally
+
+You can also use this to add a display name to the item, even if it already has NBT. Supports color codes with `§`.  
+Note that this does works on a per-item basis, so it does not change the standart item name.
 ```JAVA
 <minecraft:coal>.withDisplayName("Black Gold");
 ```
