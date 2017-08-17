@@ -16,6 +16,10 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
+    - Preprocessors:
+      - On Preprocessors: 'AdvancedFunctions/On_Preprocessors.md'
+      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
