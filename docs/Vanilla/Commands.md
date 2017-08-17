@@ -146,13 +146,29 @@ Outputs a list of all the mods and their versions in the game to the crafttweake
 
 Usage:
 
-`/craftweaker names`
+`/craftweaker names [category]`
 
-`/ct names`
+`/ct names [category]`
 
 Description:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.
+Outputs a list of all the items in the game to the crafttweaker.log file.  
+The `category` argument is optional and will extend the list with the according information:
+
+* creativetabs
+* damageable
+* display
+* maxdamage
+* maxstack
+* maxuse
+* modid
+* rarity
+* repairable
+* repaircost
+* unloc
+
+You can also see all the available parameters using the TAB-Key autocompletion feature.
+
 
 ## OreDict
 
