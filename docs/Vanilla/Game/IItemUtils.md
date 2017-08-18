@@ -14,7 +14,7 @@ val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 
 ## Get Items by name
 These two functions both return an IItemStack[] containing all matching items.  
-The first item checks against the registry name, the 2nd the unlocalized name.
+The first checks against the items' registry names, the 2nd uses the unlocalized names.
 
 ```Java
 //getItemsByRegexRegistryName(String Regex)

@@ -1,19 +1,14 @@
 # JEI
 
 CraftTweaker comes with support for JustEnoughItems (JEI).
-Currently all you can do is hide items from JEI.
+You can add or hide items in JEI or add a Descriptions page for them.
 
 ## Remove
 You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
-Careful with Wildcard characters though: Using one for the meta-value does not work!
 
 ```
 //hide(IItemStack item);
 mods.jei.JEI.hide(<minecraft:diamond>);
-
-//hides leaves with the metatag 1 to 3
-//hide(IItemStack Item, @optional int fromMeta, @optional int toMeta);
-mods.jei.JEI.hide(<minecraft:leaves>, 1, 3);
 
 
 //removeAndHide(IIngredient output, @optional boolean NBT-Match)

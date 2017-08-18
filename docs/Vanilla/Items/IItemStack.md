@@ -15,7 +15,7 @@ There are several methods that return an IItemStack
 If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
 
 * Using the `items` method on an IIngredient returns a IItemStack List: `<ore:ingotGold>.items`
-* Using the `itemArray` method on an IIngredient returns a IItemStack[]: `<ore:ingotGold>.items`
+* Using the `itemArray` method on an IIngredient returns a IItemStack[]: `<ore:ingotGold>.itemArray`
 * Using the `items` method on a IMod object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
 
