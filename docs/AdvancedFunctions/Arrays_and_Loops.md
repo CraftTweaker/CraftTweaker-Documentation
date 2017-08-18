@@ -109,7 +109,7 @@ for i in 10 .. 20 {
 }
 
 for item in loadedMods["minecraft"].items {
-	defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+	//defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
 	recipes.remove(item);
 }
 ```
