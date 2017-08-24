@@ -4,8 +4,19 @@ An IItemStack Object consists of an item definition, a meta/damage value and NBT
 In other words, it refers an item or a block.
 
 ## Calling an IItemStack
-Usually, the bracket handler returns an IItemStack Object, unless told not to do so.  
-`<minecraft:apple>` returns an IItemStack.
+There are several methods that return an IItemStack
+
+* Using the bracket Handler `<minecraft:apple>`
+* Using the `makeStack()` method on a IItemDefinition object `<minecraft:stone>.definition.makeStack(0)`
+* Using the `stack` getter on a IEntityDrop object
+* Using the `firstItem` getter on a ore Dictionary entry
+
+## Calling an IItemStack[] or a IItemStack List
+If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
+
+* Using the `items` method on an IIngredient returns a IItemStack List: `<ore:ingotGold>.items`
+* Using the `itemArray` method on an IIngredient returns a IItemStack[]: `<ore:ingotGold>.itemArray`
+* Using the `items` method on a IMod object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
 
 ## Functions
@@ -30,7 +41,8 @@ Returns the unlocalized item name.
 
 ### Display Name
 
-The display name can either be retrieved or set, depending on what you are trying to accomplish.
+#### Globally
+An item's standard display name can either be retrieved or set, depending on what you are trying to accomplish.
 
 ```
 val apple = <minecraft:apple>;
@@ -44,6 +56,22 @@ apple.displayName = "Tomato";
 //prints "Tomato"
 print(apple.displayName);
 ```
+
+#### Locally
+
+You can also use this to add a display name to the item, even if it already has NBT. Supports color codes with `§`.  
+Note that this does works on a per-item basis, so it does not change the standard item name.
+```JAVA
+<minecraft:coal>.withDisplayName("Black Gold");
+```
+
+### Lore
+
+You can add lore to the item, even if it already has NBT. Supports color codes with `§`.
+```JAVA
+<minecraft:coal>.withLore(["This function","requires a","string[]"]);
+```
+
 
 ### Maximum Stack Size
 The maximum Stack Size is how many items fit in one Stack, for example, wool's Stack size is 64 and Buckets' only 16.
@@ -198,3 +226,6 @@ Returns a List of IOreDictEntries referring to this item.
 
 ### As IBlock
 You can cast an IItemStack to an IBlock, as long as you are referring to a block, otherwise the cast results in null.
+
+## ItemTransformers and ItemConditions
+You can find how to use these either in the IIngredient page or in their respecive entries in this wiki category `vanilla/Items/Item Transformers`

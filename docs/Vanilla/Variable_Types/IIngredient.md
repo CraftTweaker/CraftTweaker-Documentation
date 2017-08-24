@@ -59,7 +59,9 @@ Using the OR methods is not adviced, as JEI does not display these recipes and s
 
 Sometimes an IIngredient represents more than one item, for example if you are using an OreDictEntry or if you OR-ed two Ingredients.  
 You can get all possible items for this IIngredient in an IItemStack List using the first function.  
-Same goes for liquids in the second function, only they return an ILiquidStack List.
+The second function does the same as the first function but returns a IItemStack[] instead of a list.
+Same goes for liquids in the third function, only they return an ILiquidStack List.
+
 
 ```
 //Returns an IItemStack List
@@ -73,6 +75,11 @@ val liquidsIngredient = <liquid:lava> | <liquid:water>;
 
 
 for item in itemsIngredient.items{
+	//Prints each possible item's Display name
+	print(item.displayName);
+}
+
+for item in itemsIngredient.itemArray{
 	//Prints each possible item's Display name
 	print(item.displayName);
 }
