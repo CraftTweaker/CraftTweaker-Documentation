@@ -68,17 +68,18 @@ Description:
 
 Opens your browser with the GitHub bug tracker.
 
-## Entities
+
+## Conflict
 
 Usage:
 
-`/craftweaker entities`
+`/craftweaker conflict`
 
-`/ct entities`
+`/ct conflict`
 
 Description:
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+Outputs a list of all conflicting crafting recipes to the crafttweaker.log file.
 
 ## Discord
 
@@ -91,6 +92,20 @@ Usage:
 Description:
 
 Opens your browser with a link to the Discord server.
+
+
+## Entities
+
+Usage:
+
+`/craftweaker entities`
+
+`/ct entities`
+
+Description:
+
+Outputs a list of all the entities in the game to the crafttweaker.log file.
+
 
 ## Hand
 
