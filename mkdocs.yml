@@ -51,6 +51,9 @@ pages:
       - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
       - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
+    - ContentTweaker:
+      - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
+      - WalkThrough: 'Mods/ContentTweaker/WalkThough'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
