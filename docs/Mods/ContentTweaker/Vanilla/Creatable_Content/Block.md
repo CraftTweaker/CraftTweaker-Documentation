@@ -26,8 +26,6 @@ All Fields can be set via set<field_name> e.g. `block.setUnlocalizedName("name")
 |BlockLayer|BlockRenderLayer|No|"SOLID"|See [[Models|Models]] for info|
 
 ## Examples
-
-# Sample Block
 ```
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
