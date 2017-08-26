@@ -8,12 +8,12 @@ that it needs.
 ## Important Folders
 ContentTweaker should create two folders in your minecraft directory: "cot-scripts" and "resources". "cot-scripts"
 should be the location of all scripts related to ContentTweaker, as in most cases CraftTweaker scripts run too late for
-ContentTweaker to properly generate the objects. "resources" will be where all models, textures, and language files will
+ContentTweaker to properly generate the content. "resources" will be where all models, textures, and language files will
 be found. More on this folder will be explained later.
 
 ## First Block
-So for the best example of how ContentTweaker's Objects works, I'll be showing you one of the basic objects you will be 
-creating, a block. There are other objects that can be created, but I won't be including them in this 
+So for the best example of how ContentTweaker's content works, I'll be showing you one of the basic content pieces you 
+will be creating, a block. There is other content that can be created, but I won't be including them in this 
 walk-through. So first up, here is the script for the block I will using as example. Explanation of these methods can
 be found at the Blocks Page.
 ```
