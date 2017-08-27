@@ -79,7 +79,8 @@ Usage:
 
 Description:
 
-Outputs a list of all conflicting crafting recipes to the crafttweaker.log file.
+Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
+Note that this only works on a CLIENT with JEI installed!
 
 ## Discord
 
