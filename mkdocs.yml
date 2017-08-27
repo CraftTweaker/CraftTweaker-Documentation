@@ -31,6 +31,7 @@ pages:
     - Blocks:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
+      - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'

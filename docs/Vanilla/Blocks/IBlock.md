@@ -17,3 +17,14 @@ There are multiple ways thet return an IBlock object:
 | definition | Returns the Block's definition | IBlockDefinition |
 | meta       | Returns the Block's metadata   | int              |
 | data       | Returns the Block's tileData   | IData            |
+
+
+
+# IBlockPattern
+
+IBlocks extend IBlockPattern Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+
+* Use the `blocks` ZenGetter
+* OR'ing
+* Matching using the `in` keyword
+* Use the `displayName` ZenGetter
