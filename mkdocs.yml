@@ -38,12 +38,12 @@ pages:
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Entities:
-      - IEntityDefinition: 'Vanilla/Entites/IEntityDefinition.md'
+      - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
-      - IItemUtils : 'Vanilla/Game/IItemUtils'
+      - IItemUtils : 'Vanilla/Game/IItemUtils.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
@@ -57,7 +57,7 @@ pages:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
     - Potions:
-      - IPotion: 'Vanilla/Variable_Types/IPotion.md'
+      - IPotion: 'Vanilla/Potions/IPotion.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
