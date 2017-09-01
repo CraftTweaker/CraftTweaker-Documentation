@@ -94,6 +94,21 @@ Description:
 
 Opens your browser with a link to the Discord server.
 
+## DumpZs
+
+Usage:
+
+`/craftweaker dumpzs`
+
+`/ct dumpzs`
+
+
+Description:
+
+Outputs a ZenScript dump to the crafttweaker.log file.  
+This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
+Note that not all of these can be used from within the scripts!
+
 
 ## Entities
 
