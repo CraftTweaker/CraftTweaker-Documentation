@@ -23,6 +23,7 @@ pages:
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
