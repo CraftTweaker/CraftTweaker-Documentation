@@ -20,6 +20,7 @@ pages:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
