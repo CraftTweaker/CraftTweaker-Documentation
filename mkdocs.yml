@@ -21,6 +21,7 @@ pages:
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
+      - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
