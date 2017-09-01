@@ -1,1 +1,1 @@
-mkdocs-windmill
+mkdocs==0.16.3
