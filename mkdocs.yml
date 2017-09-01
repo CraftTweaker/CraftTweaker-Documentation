@@ -1,14 +1,10 @@
 # If you add a page, you must add it to the index here
 pages:
   - Home: 'index.md'
-  - Getting Started:
-    - Getting Started With Scripts: 'Getting_Started.md'
-  - Commands:
-    - Commands: 'Vanilla/Commands.md'
-  - Brackets:
-    - Bracket Handlers: 'Brackets/Brackets.md'
-  - Ore Dictionary:
-    - Ore Dictionary: 'Vanilla/OreDict.md'
+  - Getting Started With Scripts: 'Getting_Started.md'
+  - Commands: 'Vanilla/Commands.md'
+  - Bracket Handlers: 'Brackets/Brackets.md'
+  - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'
