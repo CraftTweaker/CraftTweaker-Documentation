@@ -70,7 +70,7 @@ pages:
   - Mods:
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThough'
+      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
