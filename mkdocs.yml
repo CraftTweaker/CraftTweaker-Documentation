@@ -71,6 +71,9 @@ pages:
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
+      - Vanilla:
+        - Brackets:
+          - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
