@@ -23,6 +23,9 @@ Usually you will never need this, unless dealing with several custom bracket han
 You can also use a wildcard `*` to address all meta values.  
 Also optional: If left out it will be 0.
 
+Normally, this will return an IItemStack Object.  
+Please refer to [the respective wiki entry](../Items/IItemStack) for further information.
+
 ## Examples
 
 An example of the Item Bracket Handler would be:
