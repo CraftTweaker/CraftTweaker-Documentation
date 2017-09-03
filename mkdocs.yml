@@ -54,6 +54,7 @@ pages:
       - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
+      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
