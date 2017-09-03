@@ -11,7 +11,7 @@ Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 
 Returns an IOreDictEntry.
 If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that.
-Please reger to the [Ore Dictionary](../OreDict) Entry for further information on what to do with them.
+Please reger to the [Ore Dictionary](/Vanilla/OreDict) Entry for further information on what to do with them.
 
 
 # Getting all Registered ore Dictionaries

@@ -102,8 +102,8 @@ If an `action` function is added as forth parameter, you can also determine, wha
 `name` is a string and needs to be unique but is also optional
 `output` is an [IItemStack](/Vanilla/Items/IItemStack)  
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (see below)  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions.  
+`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions.  
+`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions.  
 
 `inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient) Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
@@ -145,6 +145,6 @@ If an `action` function is added as forth parameter, you can also determine, wha
 
 `name` is a string and needs to be unique
 `output` is an [IItemStack](/Vanilla/Items/IItemStack)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions. This is optional.  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
+`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions. This is optional.  
+`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions. This is optional.  
