@@ -3,6 +3,7 @@
 This sounds scary, so what does it mean?
 Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
 
+## Calling an IEntityDefinition Object
 ```
 //These return an IEntityDefinition Object
 val test = <entity:minecraft:sheep>;
@@ -77,7 +78,7 @@ entity.remove(<minecraft:wool>);
 
 ### Get
 
-This returns all drops that were added via CT as list
+This returns all drops that were added via CT as list of [IEntityDrop](IEntityDrop) Objects.
 ```
 val entity = <entity:minecraft:sheep>;
 

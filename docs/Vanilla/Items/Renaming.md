@@ -14,7 +14,7 @@ item.displayName = newName;
 //Example
 <minecraft:chest>.displayName = "Storage Box Deluxe";
 ```
-`item` is an IItemStack.
+`item` is an [IItemStack](/Vanilla/Items/IItemStack).  
 `newName` is a String.
 
 ## Changing the localization

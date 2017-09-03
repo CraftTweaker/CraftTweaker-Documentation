@@ -12,7 +12,7 @@ Needs to be performed by a player or console, cannot be written in a zs-file.
 
 pre-1.12
 /mt seeds
-````
+```
 
 ## Add a seed drop
 
@@ -21,7 +21,7 @@ Adds `item` as seed drop.
 vanilla.seeds.addSeed(item);
 ```
 
-`item` is a weightedItemStack.
+`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack).
 What does that mean? It simply means that you need to give it a percentage like this:
 
 ```
@@ -36,4 +36,4 @@ Stops `item` from being a seed drop.
 ```
 vanilla.seeds.removeSeed(item);
 ```
-`item` is an IIngredient.
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient).

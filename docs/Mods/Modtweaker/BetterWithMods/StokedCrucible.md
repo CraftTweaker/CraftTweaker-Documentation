@@ -14,7 +14,9 @@ mods.betterwithmods.StokedCrucible.add(<minecraft:dirt>,[<minecraft:stone>]);
 ## Removal
 
 ``` 
-mods.betterwithmods.StokedCrucible.remove(IItemStack input, @Optional IIngredient[] inputs);
+mods.betterwithmods.StokedCrucible.remove(IItemStack output, @Optional IIngredient[] inputs);
+
+mods.betterwithmods.StokedCrucible.remove(IItemStack output, @Optional IItemStack secondaryOutput);
 
 mods.betterwithmods.StokedCrucible.remove(<minecraft:dirt>,[<minecraft:stone>]);
 

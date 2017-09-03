@@ -6,34 +6,34 @@ In other words, it refers an item or a block.
 ## Calling an IItemStack
 There are several methods that return an IItemStack
 
-* Using the bracket Handler `<minecraft:apple>`
-* Using the `makeStack()` method on a IItemDefinition object `<minecraft:stone>.definition.makeStack(0)`
-* Using the `stack` getter on a IEntityDrop object
-* Using the `firstItem` getter on a ore Dictionary entry
+* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item) `<minecraft:apple>`
+* Using the `makeStack()` method on a [IItemDefinition](IItemDefinition) object `<minecraft:stone>.definition.makeStack(0)`
+* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop) object
+* Using the `firstItem` getter on a [ore Dictionary entry](/Vanilla/OreDict)
 
 ## Calling an IItemStack[] or a IItemStack List
 If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
 
-* Using the `items` method on an IIngredient returns a IItemStack List: `<ore:ingotGold>.items`
-* Using the `itemArray` method on an IIngredient returns a IItemStack[]: `<ore:ingotGold>.itemArray`
-* Using the `items` method on a IMod object returns a IItemStack[]: `loadedMods["minecraft"].items`
+* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient) returns a IItemStack List: `<ore:ingotGold>.items`
+* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
+* Using the `items` method on a [IMod](/Vanilla/Game/Mods#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
 
 ## Functions
 So what can we do with that now?
 
 ### IIngredient
-A bit of Java jargon here: IItemStack is an interface and extends IIngredient. That means that all functions useable for IIngredients also work for IItemStacks, only that they will then return an IIngredient.
+A bit of Java jargon here: IItemStack is an interface and extends IIngredient. That means that all functions useable for [IIngredient](/Vanilla/Variable_Types/IIngredient) also work for IItemStacks, only that they will then return an IIngredient.
 Please read the IIngredient page for further information on IIngredients.
 
 ### Definition
-Returns the item definition as IItemDefinition Object. Refer to the specific page for further information.
+Returns the item definition as [IItemDefinition](IItemDefinition) Object.
 ```
 <minecraft:apple>.definition;
 ```
 
 ### Name
-Returns the unlocalized item name.
+Returns the unlocalized item name as string.
 
 ```
 <minecraft:apple>.name;
@@ -162,7 +162,7 @@ item.removeTag(tag);
 
 ### Liquid
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.
-Returns an ILiquidStack Object or null.
+Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) Object or null.
 
 ```
 val lav = <minecraft:lava_bucket>;
@@ -192,7 +192,7 @@ val evenMoreApples = <minecraft:apple> * 3;
 ```
 
 ### Weight
-Returns a weightedItemStack with the provided percentage
+Returns a [weightedItemStack](weightedItemStack) with the provided percentage
 
 ```
 val apple = <minecraft:apple>;
@@ -200,7 +200,7 @@ val apple = <minecraft:apple>;
 //Creates a weightedItemStack with 100 percent chance
 var applePercentage = apple % 100;
 
-//Does the same as te above
+//Does the same as the above
 applePercentage = apple.weight(1.0);
 ```
 
@@ -219,13 +219,15 @@ Returns an IItemStack with the given Damage.
 ```
 
 ### Ores
-Returns a List of IOreDictEntries referring to this item.
+Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
 ```
 <minecraft:apple>.ores;
 ```
 
 ### As IBlock
-You can cast an IItemStack to an IBlock, as long as you are referring to a block, otherwise the cast results in null.
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
 
 ## ItemTransformers and ItemConditions
-You can find how to use these either in the IIngredient page or in their respecive entries in this wiki category `vanilla/Items/Item Transformers`
+You can find how to use these either in the IIngredient page or in their respecive entries:  
+[Item Conditions](Item_Conditions)  
+[Item Transformers](Item_Transformers)

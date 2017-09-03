@@ -17,18 +17,21 @@ Strings provide some functionality
 
 ## Integers
 Integers provide some functionality
-`+-*/%` Basic mathematic operators (check the variable Types page). You can also use the operatorAssign tokens  
+
+`+-*/%` Basic mathematic operators (check the [variable Types](Variable_Types) page). You can also use the operatorAssign tokens  
 `0 to 10` Returns an integer Range ranging from 0 to 10.  
 `1~10` Concatenates the integers (returns "110").  
 
 
 ## Booleans
 Booleans provide some functionality
+
 `true ~ false` Concatenates the booleans (returns "truefalse").  
 `& | ^` Boolean operators (and/or/xor).  
 
 ## Arrays/ArrayLists
 Arrays and ArrayLists provide common functions
+
 `array[1]` returns the item at the given index.  
 `array[1] = "Hello"` Sets the item at the given index.  
 `array.length` returns the arrays length

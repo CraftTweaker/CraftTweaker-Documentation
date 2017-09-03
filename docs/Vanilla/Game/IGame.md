@@ -5,14 +5,14 @@ Can be accessed using `game`
 
 ## Zengetters
 
-| Zengetter | What does it do?                        | Return Type              | Usage           |
-|-----------|-----------------------------------------|--------------------------|-----------------|
-| biomes    | Returns all registered biomes as list   | List<IBiomes>            | `game.biomes`   |
-| blocks    | Returns all registered blocks as list   | List<IBlockDefinition>   | `game.blocks`   |
-| entities  | Returns all registered entities as list | List<IEntitiyDefinition> | `game.entities` |
-| items     | Returns all registered items as list    | List<IItemDefinition>    | `game.items`    |
-| liquids   | Returns all registered liquids as list  | List<ILiquidDefinition>  | `game.liquids`  |
-| potions   | Returns all registered potions as list  | List<IPotion>            | `game.potions`  |
+| Zengetter | What does it do?                        | Return Type                                                    | Usage           |
+|-----------|-----------------------------------------|----------------------------------------------------------------|-----------------|
+| biomes    | Returns all registered biomes as list   | List<`IBiomes`>                                                | `game.biomes`   |
+| blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition)>     | `game.blocks`   |
+| entities  | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition)> | `game.entities` |
+| items     | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition)>        | `game.items`    |
+| liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition)>  | `game.liquids`  |
+| potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion)>                      | `game.potions`  |
 
 ## Methods
 
