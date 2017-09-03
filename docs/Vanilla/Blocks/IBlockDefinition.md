@@ -4,7 +4,7 @@ The IBlockDefinition objects provide additional information on blocks.
 
 ## Calling an IBlockDefinition object
 
-* Using the `definition` ZenGetter on an IBlock object.
+* Using the `definition` ZenGetter on an [IBlock](IBlock) object.
 
 ## Calling an IBlockDefinition List
 

@@ -6,9 +6,9 @@ It refers to a block in the game.
 
 There are multiple ways thet return an IBlock object:
 
-* Casting a IItemStack as IBlock (using the `AS` keyword)
+* Casting a [IItemStack](/Vanilla/Items/IItemStack) as IBlock (using the `AS` keyword)
 * Using the getBlock(x,y,z) on an IBlockGroup or an IDimension Object
-* Using ContentTweaker's Block bracket handler
+* Using ContentTweaker's [Block bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks)
 
 ## Zengetters
 
@@ -22,7 +22,7 @@ There are multiple ways thet return an IBlock object:
 
 # IBlockPattern
 
-IBlocks extend IBlockPattern Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlocks extend [IBlockPattern](IBlockPattern) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
 
 * Use the `blocks` ZenGetter
 * OR'ing

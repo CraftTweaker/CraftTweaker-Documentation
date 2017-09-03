@@ -6,7 +6,7 @@ It is comparable to what the IIngredient Interface is to IItemStacks.
 
 ## Calling an IBlockPattern Object
 
-Technically, each time you call an IBlock object, you call an IBlockPattern object.  
+Technically, each time you call an [IBlock](IBlock) object, you call an IBlockPattern object.  
 But there are cases when you explicitly get an IBlockPattern Object as return.  
 
 * OR two IBlocks
@@ -15,7 +15,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 
 | ZenGetter   | What does it do                                | Return Type  |
 |-------------|------------------------------------------------|--------------|
-| blocks      | Lists all possible blocks for this object      | List<IBlock> |
+| blocks      | Lists all possible blocks for this object      | List<[IBlock](IBlock)> |
 | displayName | Returns the displayNames of the fitting blocks | String       |
 
 ## OR
