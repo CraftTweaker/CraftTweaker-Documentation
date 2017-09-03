@@ -16,7 +16,7 @@ item.addTooltip(tT);
 
 <minecraft:chest>.addTooltip("Storage, what can I say more?");
 ```
-`item` is a IIngredient
+`item` is a [IIngredient](/Vanilla/Variable_Types/IIngredient)  
 `tT` is a string
 
 ## Shift Tooltips
@@ -26,7 +26,7 @@ item.addShiftTooltip(tT);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
 ```
-`item` is a IIngredient
+`item` is a [IIngredient](/Vanilla/Variable_Types/IIngredient)  
 `tT` is a string
 
 # Markup

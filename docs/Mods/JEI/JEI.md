@@ -17,14 +17,14 @@ mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ```
 
 ## Add Item
-You can also add an IItemStack to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
+You can also add an [IItemStack](/Vanilla/Items/IItemStack) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
 ```JAVA
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
 
 ## Add Description
-You can add a JEI Description to an IItemStack. This is an extra page shown when looking up the item's recipe.
+You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack). This is an extra page shown when looking up the item's recipe.
 If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.
 
 ```Java

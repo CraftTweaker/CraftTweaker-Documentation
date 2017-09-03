@@ -3,7 +3,7 @@
 An IPotion object refers a potion in the game.
 
 ## Getting an IPotion object
-You can get such an object through the use of the Potion Bracket handler
+You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion)
 
 ```Java
 <potion:minecraft:strength>;

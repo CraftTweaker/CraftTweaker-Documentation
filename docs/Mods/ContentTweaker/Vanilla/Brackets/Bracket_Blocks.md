@@ -10,5 +10,5 @@ Entities are referenced in the Block handler this way:
 <block:minecraft:dirt>
 ```
 
-If the block is found, this will return an IBlock Object.
-Please refer to the [respective Wiki entry](../../../../Vanilla/Blocks/IBlock.md) for further information on what you can do with these.
+If the block is found, this will return an [IBlock](/Vanilla/Blocks/IBlock) Object.  
+Please refer to the [respective Wiki entry](/Vanilla/Blocks/IBlock) for further information on what you can do with these.

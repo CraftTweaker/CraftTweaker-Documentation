@@ -27,7 +27,7 @@ recipes.remove(output, NBTMatch);
 This will crafting table recipes for the given `output`.  
 If `NBTMatch`  is true, it will only remove recipes that result in items with the same NTB-Data as provided
 
-`Output` is an IIngredient.  
+`Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient).  
 `NBTMatch` is a boolan and optional (Will be the same as false if not specified).
 
 
@@ -38,8 +38,8 @@ recipes.removeShaped(output, inputs);
 
 This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
 
-`output` is an IIngredient  
-`inputs` is an IIngredient[][] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
+`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
 
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
 `inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
@@ -53,8 +53,8 @@ recipes.removeShapeless(output, inputs, wildcard);
 This one is more strict on which recipes to remove and will only remove shapeless recipes that craft `output` with `input`.  
 If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, Lapis as ingredient).
 
-`output` is an IIngredient  
-`inputs` is an IIngredient[]  
+`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[]  
 `wildcard` is a boolan and optional (Will be the same as false if not specified)
 
 Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
@@ -100,12 +100,12 @@ If a `function` is added as third parameter, you can also use a function to dete
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
 `name` is a string and needs to be unique but is also optional
-`output` is an IItemStack  
-`inputs` is an IIngredient[][] (see below)  
-`function` is a IRecipeFunction. Please refer to the respecting wiki entry for more information on functions.  
-`action` is a IRecipeAction. Please refer to the respecting wiki entry for more information on actions.  
+`output` is an [IItemStack](/Vanilla/Items/IItemStack)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (see below)  
+`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions.  
+`action` is a IRecipeAction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions.  
 
-`inputs` is a 2 Dimensional IIngredient Array.  
+`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient) Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
 If that looks to confusing, try splitting the arrays up into one array per line
 ```Java
@@ -144,7 +144,7 @@ If a `function` is added as third parameter, you can also use a function to dete
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
 `name` is a string and needs to be unique
-`output` is an IItemStack  
-`inputs` is an IIngredient[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the respecting wiki entry for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the respecting wiki entry for more information on actions. This is optional.  
+`output` is an [IItemStack](/Vanilla/Items/IItemStack)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
+`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipefunction) for more information on functions. This is optional.  
+`action` is a IRecipeAction. Please refer to the [respecting wiki entry](../../AdvancedFunctions/Recipe_Functions#irecipeaction) for more information on actions. This is optional.  
