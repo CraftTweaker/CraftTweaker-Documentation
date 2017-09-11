@@ -17,28 +17,3 @@ The `ItemWeight` is a number that represents the chance of an item to get select
 | Dirt  | 1      | 33%      |
 
 ItemChance% = (ItemWeight/TotalWeight)*100
-
-### Bioreactor
-```
-import mods.industrialforegoing.BioReactor;
-   
-BioReactor.add(<minecraft:diamond>);
-BioReactor.remove(<minecraft:diamond>);
-```
-
-### Laser Drill
-```
-import mods.industrialforegoing.LaserDrill;
-  
-LaserDrill.add(1, <minecraft:stone>, 10); // Arguments: (LaserItemMetadata, ItemStack, ItemWeight)
-LaserDrill.remove(<minecraft:stone>);
-```
-
-### Sludge Refiner
-```
-import mods.industrialforegoing.SludgeRefiner;
-  
-SludgeRefiner.add(<minecraft:wheat_seeds>, 10); //Arguments: (ItemStack, ItemWeight)
-SludgeRefiner.remove(<minecraft:wheat_seeds>);
-
-```
