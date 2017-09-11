@@ -105,7 +105,11 @@ pages:
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-
+    - Industrial Foregoing:
+      - Industrial Foregoing: 'Mods/IndustrialForegoing/IndustrialForegoing.md'
+        - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
+        - Laser Drill: 'Mods/IndustrialForegoing/LaserDrill.md'
+        - Sludge Refiner: 'Mods/IndustrialForegoing/SludgeRefiner.md'
 
 
 # Do not edit in PRs below here
