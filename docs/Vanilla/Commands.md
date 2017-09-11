@@ -7,6 +7,9 @@ The prefix for commands are:
 or
 `/ct`
 
+You can also use one of these aliases:
+`/minetweaker` or `/mt`
+
 All the commands can be found ingame by doing:
 
 `/crafttweaker help`
@@ -65,17 +68,19 @@ Description:
 
 Opens your browser with the GitHub bug tracker.
 
-## Entities
+
+## Conflict
 
 Usage:
 
-`/craftweaker entities`
+`/craftweaker conflict`
 
-`/ct entities`
+`/ct conflict`
 
 Description:
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
+Note that this only works on a CLIENT with JEI installed!
 
 ## Discord
 
@@ -88,6 +93,35 @@ Usage:
 Description:
 
 Opens your browser with a link to the Discord server.
+
+## DumpZs
+
+Usage:
+
+`/craftweaker dumpzs`
+
+`/ct dumpzs`
+
+
+Description:
+
+Outputs a ZenScript dump to the crafttweaker.log file.  
+This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
+Note that not all of these can be used from within the scripts!
+
+
+## Entities
+
+Usage:
+
+`/craftweaker entities`
+
+`/ct entities`
+
+Description:
+
+Outputs a list of all the entities in the game to the crafttweaker.log file.
+
 
 ## Hand
 
@@ -143,13 +177,29 @@ Outputs a list of all the mods and their versions in the game to the crafttweake
 
 Usage:
 
-`/craftweaker names`
+`/craftweaker names [category]`
 
-`/ct names`
+`/ct names [category]`
 
 Description:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.
+Outputs a list of all the items in the game to the crafttweaker.log file.  
+The `category` argument is optional and will extend the list with the according information:
+
+* creativetabs
+* damageable
+* display
+* maxdamage
+* maxstack
+* maxuse
+* modid
+* rarity
+* repairable
+* repaircost
+* unloc
+
+You can also see all the available parameters using the TAB-Key autocompletion feature.
+
 
 ## OreDict
 

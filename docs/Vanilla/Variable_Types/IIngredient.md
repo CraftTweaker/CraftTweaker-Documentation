@@ -5,7 +5,7 @@ This could be an item, an ore dictionary entry, a liquid and much more.
 
 ## Importing the IIngredient package
 
-Usually, you won't need this, but in some cases recipes won't work until you import the IIngredient package.  
+Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import) the IIngredient package.  
 You can do this using the following import:
 ```
 import crafttweaker.item.IIngredient;
@@ -16,7 +16,7 @@ So, what can we do with this?
 
 ### Mark
 
-You can mark an IIngredient so you can later use it in crafting functions.
+You can mark an IIngredient so you can later use it in [crafting functions](/AdvancedFunctions/Recipe_Functions).
 You can also retrieve the mark applied earlier.
 
 ```
@@ -57,9 +57,11 @@ Using the OR methods is not adviced, as JEI does not display these recipes and s
 
 ### Get Possible Items or Liquids
 
-Sometimes an IIngredient represents more than one item, for example if you are using an OreDictEntry or if you OR-ed two Ingredients.  
-You can get all possible items for this IIngredient in an IItemStack List using the first function.  
-Same goes for liquids in the second function, only they return an ILiquidStack List.
+Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict) or if you OR-ed two Ingredients.  
+You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack)> List using the first function.  
+The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack)[] instead of a list.
+Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) List.
+
 
 ```
 //Returns an IItemStack List
@@ -73,6 +75,11 @@ val liquidsIngredient = <liquid:lava> | <liquid:water>;
 
 
 for item in itemsIngredient.items{
+	//Prints each possible item's Display name
+	print(item.displayName);
+}
+
+for item in itemsIngredient.itemArray{
 	//Prints each possible item's Display name
 	print(item.displayName);
 }

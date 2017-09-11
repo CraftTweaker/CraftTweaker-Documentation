@@ -1,17 +1,10 @@
 # If you add a page, you must add it to the index here
 pages:
   - Home: 'index.md'
-  - Getting Started:
-    - Getting Started With Scripts: 'Getting_Started.md'
-  - Commands:
-    - Commands: 'Vanilla/Commands.md'
-  - Brackets:
-    - Bracket Handlers: 'Brackets/Brackets.md'
-  - Item States:
-    - Item Conditions: 'Vanilla/Item_Modification/Item_Conditions.md'
-    - Renaming items and setting tooltips: 'Vanilla/Item_Modification/Renaming_Tooltips.md'
-  - Ore Dictionary:
-    - Ore Dictionary: 'Vanilla/OreDict.md'
+  - Getting Started With Scripts: 'Getting_Started.md'
+  - Commands: 'Vanilla/Commands.md'
+  - Bracket Handlers: 'Brackets/Brackets.md'
+  - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'
@@ -19,6 +12,14 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
+    - Preprocessors:
+      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
+      - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
+      - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
@@ -27,30 +28,53 @@ pages:
         - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
         - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
   - Vanilla:
+    - Blocks:
+      - IBlock: 'Vanilla/Blocks/IBlock.md'
+      - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
+      - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Entities:
+      - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
+      - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
+      - IItemUtils : 'Vanilla/Game/IItemUtils.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
+    - Items:
+      - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
+      - IItemStack: 'Vanilla/Items/IItemStack.md'
+      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
+      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
+      - Tooltips: 'Vanilla/Items/Tooltips.md'
+      - Renaming: 'Vanilla/Items/Renaming.md'
+      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
+    - Liquids:
+      - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
+      - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
+    - Potions:
+      - IPotion: 'Vanilla/Potions/IPotion.md'
     - Recipes:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
-      - IEntityDefinition: 'Vanilla/Variable_Types/IEntityDefinition.md'
+      - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-      - IItemDefinition: 'Vanilla/Variable_Types/IItemDefinition.md'
-      - IItemStack: 'Vanilla/Variable_Types/IItemStack.md'
-      - ILiquidStack and ILiquidDefinition: 'Vanilla/Variable_Types/ILiquidStack_ILiquidDefinition.md'
-      - IPotion: 'Vanilla/Variable_Types/IPotion.md'
   - Mods:
+    - ContentTweaker:
+      - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
+      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
+      - Vanilla:
+        - Brackets:
+          - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
@@ -70,6 +94,9 @@ pages:
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
+      - JEI:
+        - JEI: 'Mods/JEI/JEI.md'
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
@@ -78,7 +105,11 @@ pages:
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-
+    - Industrial Foregoing:
+      - Industrial Foregoing: 'Mods/IndustrialForegoing/IndustrialForegoing.md'
+      - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
+      - Laser Drill: 'Mods/IndustrialForegoing/LaserDrill.md'
+      - Sludge Refiner: 'Mods/IndustrialForegoing/SludgeRefiner.md'
 
 
 # Do not edit in PRs below here
@@ -89,4 +120,11 @@ markdown_extensions:
   - smarty
   - sane_lists
 
-theme: readthedocs
+theme_dir: 'mkdocs_windmill'
+
+extra:
+  logo: 'assets/logo.png'
+  #version: 0.0
+  #article_nav_top: true
+  #artivle_nav_bottom: true
+  #history_buttons: false

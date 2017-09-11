@@ -5,13 +5,13 @@ The Potion Bracket Handler gives you access to the Potions in the game. It is on
 Potions are referenced in the Potion Bracket Handler like so:
 
 ```
-<potion:potionname>
+<potion:modname:potionname>
 
-<potion:strength>
+<potion:minecraft:strength>
 ```
 
 If the Potion is found, this will return an IPotion Object.
-Please refer to the respective Wiki entry for further information on what you can do with these.
+Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion) for further information on what you can do with these.
 
 # Getting all Registered Potions
 

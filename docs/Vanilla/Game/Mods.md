@@ -29,10 +29,10 @@ val mod = loadedMods["mcp"];
 # IMod
 The IMod Interface provides you with some general information on a specific mod
 
-| Zengetter   | What does it do                    | Return Type  | Usage             |
-|-------------|------------------------------------|--------------|-------------------|
-| id          | Returns the mod's id               | string       | `mod.id`          |
-| name        | Returns the mod's internal name    | string       | `mod.name`        |
-| version     | Returns the mod's version          | string       | `mod.version`     |
-| description | Returns the mod description        | string       | `mod.description` |
-| items       | Returns all items added by the mod | IItemStack[] | `mod.items`       |
+| Zengetter   | What does it do                    | Return Type                               | Usage             |
+|-------------|------------------------------------|-------------------------------------------|-------------------|
+| id          | Returns the mod's id               | string                                    | `mod.id`          |
+| name        | Returns the mod's internal name    | string                                    | `mod.name`        |
+| version     | Returns the mod's version          | string                                    | `mod.version`     |
+| description | Returns the mod description        | string                                    | `mod.description` |
+| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack)[] | `mod.items`       |

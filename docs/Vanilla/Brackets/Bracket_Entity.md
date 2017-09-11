@@ -5,13 +5,13 @@ The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ent
 Entities are referenced in the Entity handler this way:
 
 ```
-<entity:entityName>
+<entity:modID:entityName>
 
-<entity:sheep>
+<entity:minecraft:sheep>
 ```
 
 If the mob/entity is found, this will return an IEntityDefinition Object.
-Please refer to the respective Wiki entry for further information on what you can do with these.
+Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition) for further information on what you can do with these.
 
 # Getting all Registered Entities
 
