@@ -4,15 +4,16 @@
 Infusion Type String
 ------
 Both addition and removal of recipes require an "infusion type" string. Default examples from Mekanism are:
-| Infuse Type   | Added by |
-| :------------ | :------- |
-| "CARBON"      | Mekanism |
-| "TIN"         | Mekanism |
-| "DIAMOND"     | Mekanism |
-| "REDSTONE"    | Mekanism |
-| "FUNGI"       | Mekanism |
-| "BIO"         | Mekanism |
-| "OBSIDIAN"    | Mekanism |
+
+| Infuse Type | Added by |
+| ----------- | -------- |
+| "CARBON"    | Mekanism |
+| "TIN"       | Mekanism |
+| "DIAMOND"   | Mekanism |
+| "REDSTONE"  | Mekanism |
+| "FUNGI"     | Mekanism |
+| "BIO"       | Mekanism |
+| "OBSIDIAN"  | Mekanism |
 
 If any other mod registers a new infusion type, that type can be used in CraftTweaker as well as long as the registered type's name is specified exactly. NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
 
