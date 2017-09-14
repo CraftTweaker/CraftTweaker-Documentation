@@ -8,44 +8,37 @@ Mekanism adds bracket-handler support to define **gas** -- a special material st
 <gas:oxygen>
 <gas:water> *
 ```
-*Noting that <gas:water> is different from <liquid:water>
+*Noting that `<gas:water>` is different from `<liquid:water>`
 
 
 Example
 ------
 ```java
-import mod.mekanism.gas.IGasStack as IGasStack;
+import mod.mekanism.gas.IGasStack;
 
 var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
+var oxygen2 = <gas:oxygen> * 500;
 ```
 
-Other features
+ZenGetters
 ------
-```java
-mod.mekanism.gas.IGasStack.definition
+
+Like LiquidStacks, IGasStacks also support some special ZenGetters.  
+You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
+
+| ZenGetter   | Description                             | Return Type    |
+|-------------|-----------------------------------------|----------------|
+| definition  | Returns the gas' definition             | IGasDefinition |
+| NAME        | Returns the gas' name                   | String         |
+| displayName | Returns the gas' displayName            | String         |
+| amount      | Returns the gas' amount in millibuckets | int            |
+
+
+Setting the Object's Amount
+------
+
+You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
+```JAVA
+var gas_amount_multiply = <gas:water> * 500;
+var gas_amount_zenMethod = <gas:water>.withAmount(500);
 ```
-Returns an "IGasDefinition" object
-
-
-```java
-mod.mekanism.gas.IGasStack.NAME
-```
-Returns a string of the gas' registry name
-
-
-```java
-mod.mekanism.gas.IGasStack.displayName
-```
-Returns a string of the gas' display name
-
-
-```java
-mod.mekanism.gas.IGasStack.amount
-```
-Returns an integer value of how much quantity is defined in the referenced IGasStack object
-
-
-```java
-mod.mekanism.gas.IGasStack.withAmount(int amount)
-```
-Returns an IGasStack of the specified gas with a specified quantity (similar to how fluid stacks millibuckets amount works) 
