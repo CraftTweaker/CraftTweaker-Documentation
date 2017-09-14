@@ -3,7 +3,7 @@
 Addition
 ------
 ```java
-mods.mekanism.reactionaddRecipe(IItemStack itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration)
+mods.mekanism.reaction.addRecipe(IItemStack itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration)
 
 mods.mekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:ethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
 ```
