@@ -1,4 +1,4 @@
-# BallOfFur
+# Ball of Fur
 
 ## Addition
 

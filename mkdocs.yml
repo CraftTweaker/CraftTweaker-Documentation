@@ -78,12 +78,12 @@ pages:
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
-        - AtomicReconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
-        - BallOfFur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
+        - Atomic Reconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
+        - Ball of Fur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
         - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
         - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
         - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
-        - TreasureChest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
+        - Treasure Chest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
