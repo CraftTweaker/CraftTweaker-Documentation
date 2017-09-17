@@ -97,6 +97,11 @@ pages:
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
       - JEI:
         - JEI: 'Mods/JEI/JEI.md'
+      - Tinkers' Construct:
+        - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
+        - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
+        - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
