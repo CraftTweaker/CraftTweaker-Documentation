@@ -11,9 +11,9 @@ Some recipes require an altar level:
 
 |Altar Level | Level Name             |
 |------------|------------------------|
-|1           |Luminous Crafting Table |
-|2           |Starlight Crafting Altar|
-|3           |Celestial Altar         |
+|0           |Luminous Crafting Table |
+|1           |Starlight Crafting Altar|
+|2           |Celestial Altar         |
 
 
 ## Remove Altar Recipes
