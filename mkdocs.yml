@@ -73,7 +73,10 @@ pages:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
+        - Light-Well: 'Mods/Astral_Sorcery/Well.md'
+        - Ritual Mineralis: 'Mods/Astral_Sorcery/Ritual_Mineralis.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
+        - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'

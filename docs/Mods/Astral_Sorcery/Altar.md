@@ -11,9 +11,9 @@ Some recipes require an altar level:
 
 |Altar Level | Level Name             |
 |------------|------------------------|
-|0           |Luminous Crafting Table |
-|1           |Starlight Crafting Altar|
-|2           |Celestial Altar         |
+|1           |Luminous Crafting Table |
+|2           |Starlight Crafting Altar|
+|3           |Celestial Altar         |
 
 
 ## Remove Altar Recipes
@@ -60,6 +60,9 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe(<minecraft:dirt>, 200, 200, [
 
 
 ### Attunement
+
+Adds a recipe to the Starlight Crafting Table (T2)
+
 `inputs` length *has to be* 13
 
 `inputs` Order:
@@ -81,6 +84,9 @@ mods.astralsorcery.Altar.addAttunmentAltarRecipe(<minecraft:dirt>, 500, 300, [
 
 
 ### Constellation
+
+Adds a recipe to the Celestial Altar (T3)
+
 `inputs` length *has to be* 21
 
 `inputs` Order:
