@@ -106,6 +106,14 @@ pages:
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
+      - Forestry:
+        - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
+        - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
+        - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
+        - Moistener: 'Mods/Modtweaker/Forestry/Moistener.md'
+        - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
+        - Still: 'Mods/Modtweaker/Forestry/Still.md'
+        - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - JEI:
         - JEI: 'Mods/JEI/JEI.md'
       - Tinkers' Construct:
