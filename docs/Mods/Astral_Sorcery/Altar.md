@@ -23,7 +23,7 @@ If there are multiple recipes that return the provided output, you need to call 
 
 ```JAVA
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
-mods.astralsorcery.Altar.removeAltarRecipe(<minecraft:dirt>, 0);
+mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
 
@@ -44,12 +44,8 @@ These recipes cannot be shapeless!
 ### Discovery
 `inputs` length *has to be* 9
 
-`inputs` Order:
-```
-[ 0] [ 1] [ 2]  
-[ 3] [ 4] [ 5]  
-[ 6] [ 7] [ 8]  
-```
+`inputs` Order:  
+![Inputs Order](Assets/guialtar1.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe(<minecraft:dirt>, 200, 200, [
@@ -65,14 +61,8 @@ Adds a recipe to the Starlight Crafting Table (T2)
 
 `inputs` length *has to be* 13
 
-`inputs` Order:
-```
-[ 9]                [10]  
-     [ 0] [ 1] [ 2]  
-     [ 3] [ 4] [ 5]  
-     [ 6] [ 7] [ 8] 
-[11]                [12]  
-```
+`inputs` Order:  
+![Inputs Order](Assets/guialtar2.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(<minecraft:dirt>, 500, 300, [
@@ -89,14 +79,8 @@ Adds a recipe to the Celestial Altar (T3)
 
 `inputs` length *has to be* 21
 
-`inputs` Order:
-```
-[ 9] [13]      [14] [10] 
-[15] [ 0] [ 1] [ 2] [16] 
-     [ 3] [ 4] [ 5] 
-[17] [ 6] [ 7] [ 8] [18] 
-[11] [19]      [20] [12] 
-```
+`inputs` Order:  
+![Inputs Order](Assets/guialtar3.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addConstellationAltarRecipe(<astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
