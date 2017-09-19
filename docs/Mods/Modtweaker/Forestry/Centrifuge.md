@@ -9,7 +9,7 @@ You can call the  package using `mods.forestry.Centrifuge`
 
 ```JAVA
 //mods.forestry.Centrifuge.removeRecipe(IIngredient input);
-mods.forestry.Centrifuge.removeRecipe(<Forestry:beeCombs:*>);
+mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 

@@ -9,9 +9,8 @@ You can call the  package using `mods.forestry.Fermenter`
 
 ```JAVA
 //mods.forestry.Fermenter.removeRecipe(IIngredient input);
-mods.forestry.Fermenter.removeRecipe();
-
-
+mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
+mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 ```
 
 
@@ -19,7 +18,7 @@ mods.forestry.Fermenter.removeRecipe();
 
 ```JAVA
 //mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
-mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
+mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
 ```
 Amount of fluid output: fermentationValue * fluidOutputModifier
 
@@ -36,7 +35,7 @@ Amount of fluid output: fermentationValue * fluidOutputModifier
 
 ```JAVA
 //mods.forestry.Fermenter.removeFuel(IIngredient fermenterItem);
-mods.forestry.Fermenter.removeFuel(<Forestry:>);
+mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 
 ```
 
