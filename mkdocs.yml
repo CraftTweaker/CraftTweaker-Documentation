@@ -134,6 +134,10 @@ pages:
       - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
       - Laser Drill: 'Mods/IndustrialForegoing/LaserDrill.md'
       - Sludge Refiner: 'Mods/IndustrialForegoing/SludgeRefiner.md'
+    - PackMode:
+      - PackMode: 'Mods/Pack_Mode/PackMode.md'
+      - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
+      - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
 
 
 # Do not edit in PRs below here
