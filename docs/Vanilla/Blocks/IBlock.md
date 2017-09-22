@@ -1,5 +1,5 @@
 # IBlock
-An IBlock Object consists of a IBlockDefinition, a metadata and a TileData.  
+An IBlock Object consists of a [IBlockDefinition](IBlockDefinition), a metadata and a TileData.  
 It refers to a block in the game.
 
 ## Calling an IBlock Object
@@ -7,16 +7,16 @@ It refers to a block in the game.
 There are multiple ways thet return an IBlock object:
 
 * Casting a [IItemStack](/Vanilla/Items/IItemStack) as IBlock (using the `AS` keyword)
-* Using the getBlock(x,y,z) on an IBlockGroup or an IDimension Object
+* Using the getBlock(x,y,z) on an IBlockGroup or an [IDimension](/AdvancedFunctions/Recipe_Functions/#idimension) Object
 * Using ContentTweaker's [Block bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks)
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type      |
-|------------|--------------------------------|------------------|
-| definition | Returns the Block's definition | IBlockDefinition |
-| meta       | Returns the Block's metadata   | int              |
-| data       | Returns the Block's tileData   | IData            |
+| Getter     | What does it do                | Return Type                            |
+|------------|--------------------------------|----------------------------------------|
+| definition | Returns the Block's definition | [IBlockDefinition](IBlockDefinition)   |
+| meta       | Returns the Block's metadata   | int                                    |
+| data       | Returns the Block's tileData   | IData                                  |
 
 
 

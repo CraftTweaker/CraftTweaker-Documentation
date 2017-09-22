@@ -7,7 +7,7 @@ Can be accessed using `game`
 
 | Zengetter | What does it do?                        | Return Type                                                    | Usage           |
 |-----------|-----------------------------------------|----------------------------------------------------------------|-----------------|
-| biomes    | Returns all registered biomes as list   | List<`IBiomes`>                                                | `game.biomes`   |
+| biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome)>                        | `game.biomes`   |
 | blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition)>     | `game.blocks`   |
 | entities  | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition)> | `game.entities` |
 | items     | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition)>        | `game.items`    |

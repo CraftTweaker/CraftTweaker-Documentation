@@ -171,7 +171,7 @@ print(OD.name);
 ## Get the first item of an oreDic
 
 I have no idea why you would ever need this, but here you go.  
-The firstItem function returns an IItemStack
+The firstItem function returns an [IItemStack](/Vanilla/Items/IItemStack)
 
 ```java
 val fI = <ore:ingotIton>.firstItem;

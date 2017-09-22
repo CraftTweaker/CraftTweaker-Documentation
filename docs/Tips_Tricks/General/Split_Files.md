@@ -36,5 +36,5 @@ scripts
 - People checking your script files can easier orient themselves
 
 ## Disadvantages
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it).
+- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor.md) if your script loading order is a problem
 - There are many ways to categorize your scripts after and yours may be confusing for outsiders.

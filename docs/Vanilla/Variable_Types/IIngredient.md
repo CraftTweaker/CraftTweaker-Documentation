@@ -1,7 +1,7 @@
 # IIngredient
 
 An IIngredient is an ingredient for recipes.  
-This could be an item, an ore dictionary entry, a liquid and much more.
+This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
 
 ## Importing the IIngredient package
 

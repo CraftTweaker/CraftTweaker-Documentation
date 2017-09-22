@@ -48,10 +48,10 @@ entity.addDrop(<minecraft:apple>);
 entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`item` is the item to be added as drop and an IItemStack or a WeightedItemStack.  
+`item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack).  
 `min` is the minimum amount that is dropped and an Integer. This is optional.  
-`max` is the maximum amount that is dropped and an Integer. This is optional.
-`chance` is the drop chance. This is optional. Not needed if you use a weightedItemStack instead as `item`
+`max` is the maximum amount that is dropped and an Integer. This is optional.  
+`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack) instead as `item`
 
 ### Add playeronly drop
 
@@ -73,7 +73,7 @@ val entity = <entity:minecraft:sheep>;
 //remove(item);
 entity.remove(<minecraft:wool>);
 ```
-`item` is the item to be removed from being a drop and an IItemStack.
+`item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack).
 
 
 ### Get

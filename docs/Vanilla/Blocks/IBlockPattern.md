@@ -1,7 +1,7 @@
 # IBlockPattern
 
 An IBlockPattern is an interface that allows for combining several blocks into one object.  
-It is comparable to what the IIngredient Interface is to IItemStacks.
+It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient) Interface is to [IItemStacks](/Vanilla/Items/IItemStack).
 
 
 ## Calling an IBlockPattern Object
@@ -9,14 +9,14 @@ It is comparable to what the IIngredient Interface is to IItemStacks.
 Technically, each time you call an [IBlock](IBlock) object, you call an IBlockPattern object.  
 But there are cases when you explicitly get an IBlockPattern Object as return.  
 
-* OR two IBlocks
+* OR two [IBlocks](IBlock)
 
 ## ZenGetters
 
-| ZenGetter   | What does it do                                | Return Type  |
-|-------------|------------------------------------------------|--------------|
+| ZenGetter   | What does it do                                | Return Type            |
+|-------------|------------------------------------------------|------------------------|
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](IBlock)> |
-| displayName | Returns the displayNames of the fitting blocks | String       |
+| displayName | Returns the displayNames of the fitting blocks | String                 |
 
 ## OR
 
