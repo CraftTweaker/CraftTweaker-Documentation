@@ -8,7 +8,7 @@ You can call the  package using `mods.forestry.Squeezer`
 ## Recipe Removal
 
 ```JAVA
-//mods.forestry.Squeezer.removeRecipe(IIngredient liquid, @Optional IIngredient[] ingredients);
+//mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
 mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
 ```

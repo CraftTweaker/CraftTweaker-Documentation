@@ -8,7 +8,7 @@ You can call the  package using `mods.forestry.Still`
 ## Recipe Removal
 
 ```JAVA
-//mods.forestry.Still.removeRecipe(IIngredient output, @Optional ILiquidStack fluidInput);
+//mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
 mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
 mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
 ```
