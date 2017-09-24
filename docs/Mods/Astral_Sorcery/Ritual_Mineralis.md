@@ -1,7 +1,7 @@
 # Ritual Mineralis
 
 You can add and remove ores that can be spawned with the mineralis ritual.  
-Already registerd oreDict entries can be found [here](https://github.com/HellFirePvP/AstralSorcery/blob/master/src/main/java/hellfirepvp/astralsorcery/common/base/OreTypes.java#L35-L58).
+Already registered oreDict entries can be found [here](https://github.com/HellFirePvP/AstralSorcery/blob/master/src/main/java/hellfirepvp/astralsorcery/common/base/OreTypes.java#L35-L58).
 
 
 ## Calling

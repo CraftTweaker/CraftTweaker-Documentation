@@ -1,6 +1,6 @@
 # Resonator
 
-ModTweaker allows you to add or remove ExtUtils2 Resonator Recipes
+ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
 
 ## Calling
 You can call the Resonator package using `mods.extrautils2.Resonator`

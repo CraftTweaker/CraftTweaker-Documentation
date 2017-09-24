@@ -1,6 +1,6 @@
 # Crusher
 
-ModTweaker allows you to add or remove ExtUtils2 Crusher Recipes
+ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
 ## Calling
 You can call the Crusher package using `mods.extrautils2.Crusher`
