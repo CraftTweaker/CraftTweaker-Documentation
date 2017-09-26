@@ -2,7 +2,7 @@
 
 Crafttweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarions` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere i na script, however it will not be accessible to the lines above the `Variable` declaration.
+ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarions` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
 
 
 ## Introduction
@@ -13,7 +13,7 @@ In addition to the core functionality provided to support Vanilla minecraft, mod
 
 ## Scripts
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround.
+Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
 
 Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
 
