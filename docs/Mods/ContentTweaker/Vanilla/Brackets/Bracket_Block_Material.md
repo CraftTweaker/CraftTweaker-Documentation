@@ -42,7 +42,7 @@ Currently the only Block Materials supported are:
 	</ul>
 </details>
 
-Block Materials are referenced in the Block handler this way:
+Block Materials are referenced in the Material Bracket handler this way:
 
 ```
 <material:name>

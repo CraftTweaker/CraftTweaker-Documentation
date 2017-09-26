@@ -8,7 +8,7 @@ There are multiple ways thet return an IBlock object:
 
 * Casting a [IItemStack](/Vanilla/Items/IItemStack) as IBlock (using the `AS` keyword)
 * Using the getBlock(x,y,z) on an IBlockGroup or an [IDimension](/AdvancedFunctions/Recipe_Functions/#idimension) Object
-* Using ContentTweaker's [Block bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks)
+* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState)
 
 ## Zengetters
 

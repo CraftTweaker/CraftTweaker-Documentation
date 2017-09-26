@@ -15,9 +15,9 @@ mods.contenttweaker.VanillaFactory.createBlock(String unlocalizedName, IMaterial
 Parameters:  
 
 - String unlocalizedName: The Block's unlocalized name.
-- IMaterialDefinition material: The base material the block is made of.
+- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition) material: The base material the block is made of.
 
-Returns a BlockRepresentation object. Check the [Block page](Block) for further information and an example script!
+Returns a [BlockRepresentation](Block) object. Check the [Block page](Block) for further information and an example script!
 
 
 ### Create Items
@@ -29,7 +29,7 @@ Parameters:
 
 - String unlocalizedName: The item's unlocalized name.
 
-Returns an ItemRepresentation object. Check the [Item page](Item) for further information and an example script!
+Returns an [ItemRepresentation](Item) object. Check the [Item page](Item) for further information and an example script!
 
 
 ### Create Creative Tabs

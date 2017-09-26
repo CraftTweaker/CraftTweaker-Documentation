@@ -22,7 +22,7 @@ Currently the only soundTypes supported are:
 	</ul>
 </details>
 
-SoundTypes are referenced in the Block handler this way:
+SoundTypes are referenced in the SoundType Bracket handler this way:
 
 ```
 <soundtype:name>

@@ -15,7 +15,7 @@ The String is in each of the three methods the same: It's the unlocalized name t
 The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").
 
 ## Calling an existing ICreativeTab object
-You can also call an existing creative tab, though you cannot change any of it's properties.   
+You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab) tab, though you cannot change any of it's properties.   
 Why would you need this, you ask?  
 You will need this if you want to add a newly created block or item to an existing tab!
 
@@ -25,12 +25,12 @@ You will need this if you want to add a newly created block or item to an existi
 You can call and set all these properties using the normal ZenGetters and ZenSetters  
 `tab.unlocalizedName = "hh";`  
 Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
-Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the Bracket handler)!
+Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab))!
 
-| Property Name   | Type       | Required | Default Value | Description/Notes       |
-|-----------------|------------|----------|---------------|-------------------------|
-| unlocalizedName | String     | YES      |               | The Creative Tab's name |
-| iconStack       | IItemStack | YES      |               | The Creative Tab's icon |
+| Property Name   | Type                                    | Required | Default Value | Description/Notes       |
+|-----------------|-----------------------------------------|----------|---------------|-------------------------|
+| unlocalizedName | String                                  | YES      |               | The Creative Tab's name |
+| iconStack       | [IItemStack](/Vanilla/Items/IItemStack) | YES      |               | The Creative Tab's icon |
 
 ## Registering the creative tab
 You need to call this method to register the creative Tab in the game!  
