@@ -10,9 +10,9 @@ It might be required for you to import the package if you encounter any issues, 
 ## Parameters
 The IBlockAction is a function with the following parameters:
 
-- IWorld world → The world the block is in
-- IBlockPos → The Block's position
-- ICTBlockState → ? 
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world the block is in
+- [IBlockPos](/mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) position → The Block's position
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState) state → Contains information on the block, such as the Block itself and its metadata
 
 
 The function doesn't have a return value!

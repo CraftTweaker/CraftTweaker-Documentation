@@ -86,7 +86,10 @@ pages:
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
         - Brackets:
+          - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
+          - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
+          - SoundEvent: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
         - Creatable Content:
           - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
           - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
@@ -96,6 +99,16 @@ pages:
           - Functions: 
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+        - Types:
+          - Block:
+            - ICTBlockState: 'Mods/Contenttweaker/Vanilla/Types/Block/ICTBlockState.md'
+            - IBlockPos: 'Mods/Contenttweaker/Vanilla/Types/Block/IBlockPos.md'
+            - IMaterialDefinition: 'Mods/Contenttweaker/Vanilla/Types/Block/IMaterialDefinition.md'
+          - Sound:
+            - ISoundTypeDefinition: 'Mods/Contenttweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
+            - ISoundEventDefinition: 'Mods/Contenttweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
+          - World:
+            - IWorld: 'Mods/Contenttweaker/Vanilla/Types/World/IWorld.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - Modtweaker:

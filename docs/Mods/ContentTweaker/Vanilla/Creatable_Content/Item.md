@@ -27,12 +27,14 @@ item.setMaxStackSize(64);
 |-----------------|------------------------------|----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | unlocalizedName | String                       | Yes      |               | Name, should be all lowercase                                                                                                                             |
 | maxStackSize    | int                          | No       | 64            | Maximum items allowed in a Stack                                                                                                                          |
-| rarity          | EnumRarity                   | No       | COMMON        | How rare an item is, determines ToolTip color                                                                                                             |
+| rarity          | EnumRarity                   | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC")                                                                      |
 | creativeTab     | [ICreativeTab](Creative_Tab) | No       | Misc          | The Creative tab the item will be put in                                                                                                                  |
 | toolClass       | String                       | No       |               | What block types the tool can break                                                                                                                       |
 | toolLevel       | int                          | No       | -1            | The level of blocks can be broken                                                                                                                         |
 | beaconPayment   | boolean                      | No       | false         | Can be given to a beacon to enable bonuses                                                                                                                |
 | itemRightClick  | IItemRightClick              | No       |               | Called when the player right clicks with the item. See the [function page](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick) |
+| itemUseAction   | EnumUseAction                | No       | "NONE"        | What animation the item use will have ("NONE", "EAT", "DRINK", "BLOCK", "BOW")                                                                            |
+| glowing         | boolean                      | No       | false         | Can be used to give your item the glowing effect (as if it were enchanted).                                                                               |
 
 
 ## Registering the item
