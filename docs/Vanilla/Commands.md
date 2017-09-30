@@ -99,13 +99,16 @@ Opens your browser with a link to the Discord server.
 Usage:
 
 `/craftweaker dumpzs`
+`/craftweaker dumpzs PATH`
 
 `/ct dumpzs`
+`/ct dumpzs PATH`
 
 
 Description:
 
-Outputs a ZenScript dump to the crafttweaker.log file.  
+Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
+Alternatively, you can provide a filepath to tell CT where to generate the dump. The Path can either be absolute or relative to your Minecraft root folder.  
 This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
 Note that not all of these can be used from within the scripts!
 
