@@ -1,7 +1,7 @@
 # IItemDefinition
 
 An IItemDefinition object is the direct reference to an item.  
-It is different from an IItemStack as this only refers to the item, it does not include any meta-information or NBT-values!
+It is different from an [IItemStack](IItemStack) as this only refers to the item, it does not include any meta-information or NBT-values!
 
 ## How to get one
 The easiest way is from an [IItemStack](IItemStack), but you can also get a list of all registered IItemDefinitions in the game and do something with that.

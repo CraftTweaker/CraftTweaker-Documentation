@@ -21,19 +21,19 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 | x             | returns the player's current X position in the world                                       | double                                   | `player.x`             |
 | y             | returns the player's current y position in the world                                       | double                                   | `player.y`             |
 | z             | returns the player's current z position in the world                                       | double                                   | `player.z`             |
-
+| position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f)  | `player.position`      |
 
 
 ##ZenMethods
 
 Zenmethods are for doing things with other things, in this case with a player.
 
-| ZenMethod                | Parameter Type(s)                       | What does it do                                                    | Example                                  |
-|-----------------------   |-----------------------------------------|--------------------------------------------------------------------|------------------------------------------|
-| removeXP(XPtoRemove)     | int                                     | Removes the given experience levels from the player.               | `player.removeXP(1)`                     |
-| update(IData)            | Idata                                   | Updates the playerdata to the provided IData.                      |                                          |
-| sendChat(Message)        | string OR IChatMessage                  | Sends the player a Chat Message.                                   | `player.sendChat("Hello my old friend")` |
-| getHotbarStack(index)    | int                                     | Returns the item at the given index within the player's hotbar.    | `player.getHotbarStack(3)`               |
-| getInventoryStack(index) | int                                     | Returns the item at the given index within the player's inventory. | `player.getInventoryStack(3)`            |
-| give(item)               | [IItemStack](/Vanilla/Items/IItemStack) | Give the player the provided item. Item is an IItemStack.          | `player.give(<minecraft:gold_ingot>)`    | 
-
+| ZenMethod                | Parameter Type(s)                       | What does it do                                                     | Example                                  |
+|-----------------------   |-----------------------------------------|-------------------------------------------------------------------- |------------------------------------------|
+| removeXP(XPtoRemove)     | int                                     | Removes the given experience levels from the player.                | `player.removeXP(1)`                     |
+| update(IData)            | IData                                   | Updates the playerdata to the provided IData.                       |                                          |
+| sendChat(Message)        | string OR IChatMessage                  | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")` |
+| getHotbarStack(index)    | int                                     | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`               |
+| getInventoryStack(index) | int                                     | Returns the item at the given index within the player's inventory.  | `player.getInventoryStack(3)`            |
+| give(item)               | [IItemStack](/Vanilla/Items/IItemStack) | Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)`    | 
+| teleport(position)       | [Position3f](/Vanilla/Utils/Position3f) | Teleports the player to the provided position in the same dimension | `player.teleport(position)`              |

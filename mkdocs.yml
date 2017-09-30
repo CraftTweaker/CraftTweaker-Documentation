@@ -28,6 +28,8 @@ pages:
         - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
         - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
   - Vanilla:
+    - Biomes:
+      - IBiome: 'Vanilla/Biomes/IBiome.md'
     - Blocks:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
@@ -44,7 +46,6 @@ pages:
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
-      - IItemUtils : 'Vanilla/Game/IItemUtils.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
@@ -64,26 +65,63 @@ pages:
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+    - Utils:
+      - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
+      - Position3f: 'Vanilla/Utils/Position3f.md'
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
   - Mods:
+    - Astral Sorcery:
+      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - Crafting:
+        - Altar: 'Mods/Astral_Sorcery/Altar.md'
+        - Light-Well: 'Mods/Astral_Sorcery/Well.md'
+        - Ritual Mineralis: 'Mods/Astral_Sorcery/Ritual_Mineralis.md'
+        - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
+        - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
         - Brackets:
+          - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
+          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
+          - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
+          - SoundEvent: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
+        - Creatable Content:
+          - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
+          - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
+          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
+          - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
+        - Advanced Functionality: 
+          - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - Functions: 
+            - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+        - Types:
+          - Block:
+            - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
+            - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
+            - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
+          - Sound:
+            - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
+            - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
+          - World:
+            - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
+    - JEI:
+      - JEI: 'Mods/JEI/JEI.md'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
       - Actually Additions:
-        - AtomicReconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
-        - BallOfFur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
+        - Atomic Reconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
+        - Ball of Fur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
         - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
         - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
         - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
-        - TreasureChest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
+        - Treasure Chest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
@@ -95,8 +133,22 @@ pages:
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
-      - JEI:
-        - JEI: 'Mods/JEI/JEI.md'
+      - Extra Utilities 2:
+        - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
+        - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
+      - Forestry:
+        - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
+        - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
+        - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
+        - Moistener: 'Mods/Modtweaker/Forestry/Moistener.md'
+        - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
+        - Still: 'Mods/Modtweaker/Forestry/Still.md'
+        - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - Tinkers' Construct:
+        - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
+        - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
+        - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
       - Thermal Expansion:
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
@@ -110,6 +162,10 @@ pages:
       - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
       - Laser Drill: 'Mods/IndustrialForegoing/LaserDrill.md'
       - Sludge Refiner: 'Mods/IndustrialForegoing/SludgeRefiner.md'
+    - PackMode:
+      - PackMode: 'Mods/Pack_Mode/Packmode.md'
+      - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
+      - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
 
 
 # Do not edit in PRs below here

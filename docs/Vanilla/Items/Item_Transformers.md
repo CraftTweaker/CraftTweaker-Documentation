@@ -7,10 +7,7 @@ This can range from damaging the item up to returning a completely different ite
 
 val item = <minecraft:apple>;
 
-//Item won't be consumed and stays in the crafting slot.
-var transformedItem = item.reuse();
-
-//Item won't be consumed but will be placed in your inventory upon crafting.
+//Item won't be consumed and will be placed in your inventory upon crafting.
 transformedItem = item.giveBack();
 
 //item will be consumed but will return the specified item to your inventory upon crafting.

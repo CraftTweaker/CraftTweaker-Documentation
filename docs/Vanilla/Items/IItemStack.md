@@ -1,6 +1,6 @@
 # IItemStack
 
-An IItemStack Object consists of an item definition, a meta/damage value and NBT data.  
+An IItemStack Object consists of an [item definition](IItemDefinition), a meta/damage value and NBT data.  
 In other words, it refers an item or a block.
 
 ## Calling an IItemStack
@@ -207,7 +207,7 @@ applePercentage = apple.weight(1.0);
 ### Damage
 
 #### AnyDamage
-Returns an IIngredient with wildcard damage. Only useful for items used as crafting ingredients.
+Returns an [IIngredient](/Vanilla/Variable_Types/IIngredient) with wildcard damage. Only useful for items used as crafting ingredients.
 ```
 <minecraft:iron_pickaxe>.anyDamage();
 ```
@@ -228,6 +228,6 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
 
 ## ItemTransformers and ItemConditions
-You can find how to use these either in the IIngredient page or in their respecive entries:  
+You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
 [Item Conditions](Item_Conditions)  
 [Item Transformers](Item_Transformers)

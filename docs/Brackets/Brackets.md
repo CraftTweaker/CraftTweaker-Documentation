@@ -10,18 +10,18 @@ An example of a Bracket Handler would be the Item Bracket Handler, which gives y
 
 ## Examples
 
-An example of the Item Bracket Handler would be:
+An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item) would be:
 
 ```
 <minecraft:apple>
 ```
 
-This will give you access to the `Apple` item.
+This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack).
 
-An example of the OreDict Bracket Handler would be:
+An example of the [OreDict Bracket Handler](/Vanilla/Brackets/Bracket_Ore) would be:
 
 ```
 <ore:ingotIron>
 ```
 
-This will give you access to the OreDict for `ingotIron`.
+This will give you access to the [OreDict](/Vanilla/OreDict) for `ingotIron`.

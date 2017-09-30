@@ -3,7 +3,7 @@ A Weighted Item Stack is like a normal [IItemStack](IItemStack) but has a percen
 You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
 ## Calling a weightedItemStack
-You can derive a weightedItemStack from an IItemStack by either using the modulo operator or the weight function on it.
+You can derive a weightedItemStack from an [IItemStack](IItemStack) by either using the modulo operator or the weight function on it.
 
 ```
 val itemStack = <minecraft:dirt>;
