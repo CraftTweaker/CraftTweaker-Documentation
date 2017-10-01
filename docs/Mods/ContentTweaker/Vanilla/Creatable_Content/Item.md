@@ -9,6 +9,10 @@ This is where the [VanillaFactory](VanillaFactory) comes in:
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
+## Import the representation Package
+It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+`import mods.contenttweaker.Item;` 
+
 ## ZenProperties
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
