@@ -112,6 +112,12 @@ pages:
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
+      - Material System:
+        - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
+        - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
+        - Materials:
+          - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
+          - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - Modtweaker:
