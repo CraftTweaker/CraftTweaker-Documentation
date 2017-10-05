@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Material;` 
 
 ## Retrieving such an object
-You can either retrieve an existing Material using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/MaterialBuilder)
+You can either retrieve an existing Material using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder)
 
 ## Fields
 You can retrieve the following information from a Material:

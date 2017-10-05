@@ -37,6 +37,7 @@ This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material) O
 
 ## Example Script
 ```JAVA
+import mods.contentTweaker.MaterialSystem;
 
 var builder = MaterialSystem.getMaterialBuilder();
 builder.setName("Urubuntu");
