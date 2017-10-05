@@ -8,5 +8,5 @@ There are 5 Terms that are important:
 - [PartType](/Mods/ContentTweaker/Materials/Parts/PartType): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
 - [Part](/Mods/ContentTweaker/Materials/Parts/Part): The item's form (e.g. Gear, Rod, Ingot, etc)
 - [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack) later on.
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Parts/MaterialPartData): Some configurations → Varies by part type, check the wiki page for further information.
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData): Some configurations → Varies by part type, check the wiki page for further information.
 
