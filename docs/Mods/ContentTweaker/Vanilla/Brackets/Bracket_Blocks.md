@@ -2,7 +2,7 @@
 
 The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
 
-Entities are referenced in the Block Bracket handler this way:
+Blocks are referenced in the Block Bracket handler this way:
 
 ```
 <block:modID:blockName>

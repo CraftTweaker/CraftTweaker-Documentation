@@ -6,19 +6,19 @@ An IWorld object represents the world the player is currently in.
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.World;` 
 
-## ZenMethods without parameters
+## ZenMethods without parameters and ZenGetters
 
-|ZenMethod          |Return type |Description                                                                                                                                                                             |
-|-------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|isRemote()         |boolean     |True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-|isRaining()        |boolean     |Returns true if it is currently raining                                                                                                                                                 |
-|isThundering()     |boolean     |Returns true if it is currently thundering                                                                                                                                              |
-|getMoonPhase()     |int         |Returns the current moon phase                                                                                                                                                          |
-|isDayTime()        |boolean     |Checks if it is daytime                                                                                                                                                                 |
-|getWorldTime()     |long        |Returns the world's time                                                                                                                                                                |
-|getDimension()     |int         |Returns the world's dimension                                                                                                                                                           |
-|isSurfaceWorld()   |boolean     |Returns whether you are in a surface world or not                                                                                                                                       |
-|getDimensionType() |String      |Returns the dimension's type name                                                                                                                                                       |
+|ZenMethod          |ZenGetter     |Return type |Description                                                                                                                                                                             |
+|-------------------|--------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|isRemote()         |remote        |boolean     |True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
+|isRaining()        |raining       |boolean     |Returns true if it is currently raining                                                                                                                                                 |
+|isThundering()     |thundering    |boolean     |Returns true if it is currently thundering                                                                                                                                              |
+|getMoonPhase()     |moonPhase     |int         |Returns the current moon phase                                                                                                                                                          |
+|isDayTime()        |dayTime       |boolean     |Checks if it is daytime                                                                                                                                                                 |
+|getWorldTime()     |time          |long        |Returns the world's time                                                                                                                                                                |
+|getDimension()     |dimension     |int         |Returns the world's dimension                                                                                                                                                           |
+|isSurfaceWorld()   |surfaceWorld  |boolean     |Returns whether you are in a surface world or not                                                                                                                                       |
+|getDimensionType() |dimensionType |String      |Returns the dimension's type name                                                                                                                                                       |
 
 ## ZenMethods with parameters
 

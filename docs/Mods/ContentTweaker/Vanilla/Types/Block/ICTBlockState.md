@@ -11,8 +11,8 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 
 `<block:minecraft:dirt>`
 
-## ZenMethods
-|ZenMethod  | Return Type                      | Description                          |
-|-----------|----------------------------------|--------------------------------------|
-|getBlock() | [IBlock](/Vanilla/Blocks/IBlock) | Returns the refered block            |
-|getMeta()  | int                              | Returns the refered block's metadata |
+## ZenMethods and ZenGetters
+|ZenMethod  |ZenGetter | Return Type                      | Description                          |
+|-----------|----------|----------------------------------|--------------------------------------|
+|getBlock() |block     | [IBlock](/Vanilla/Blocks/IBlock) | Returns the refered block            |
+|getMeta()  |meta      | int                              | Returns the refered block's metadata |

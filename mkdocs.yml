@@ -83,6 +83,7 @@ pages:
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
+      - Commands: 'Mods/ContentTweaker/Commands.md'
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
         - Brackets:
@@ -107,6 +108,7 @@ pages:
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
+            - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
@@ -115,6 +117,8 @@ pages:
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
+        - Brackets:
+          - Material Part Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
