@@ -1,5 +1,5 @@
 # ILiquidDefinition
-The ILiquidDefinition defines the liquid an ILiquidStack consists of.
+The ILiquidDefinition defines the liquid an [ILiquidStack](ILiquidStack) consists of.
 Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
 ## Methods

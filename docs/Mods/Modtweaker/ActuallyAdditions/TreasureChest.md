@@ -1,4 +1,4 @@
-# TreasureChest
+# Treasure Chest
 
 ## Addition
 

@@ -8,7 +8,7 @@ Not only is this a pain to write, but it is possible that you spend hours debugg
 My rule of thumb:
 When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
 
-So, instead of always typing out the functions, I declare one array containing all items. and iterate through that one.
+So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
 
 ```
 import crafttweaker.item.IIngredient;
