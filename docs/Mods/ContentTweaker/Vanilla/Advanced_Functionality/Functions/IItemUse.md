@@ -1,4 +1,4 @@
-# IItemUse Function
+# IItemUse Function (NYI)
 An itemUseFunction is called whenever the associated [item](/mods/ContentTweaker/Vanilla/Creatable_Content/Item) is used on a block.
 
 
@@ -15,8 +15,8 @@ The IItemRightClickFunction is a function with the following parameters (In this
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Position of the block the item is used on
 - [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand) hand → The used Hand (main or off)
 - [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing) facing → The side of the block the item is used on
-- float hitX → The 's X coordinate
-- float hitY → The 's Y coordinate
-- float hitZ → The 's Z coordinate
+- float hitX → The block's relative X coordinate → Always between 0 and 1
+- float hitY → The block's relative Y coordinate → Always between 0 and 1
+- float hitZ → The block's relative Z coordinate → Always between 0 and 1
 
 The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/ActionResult) object.
