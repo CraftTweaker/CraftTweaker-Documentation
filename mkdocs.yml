@@ -127,6 +127,8 @@ pages:
         - Parts:
           - Part: 'Mods/ContentTweaker/Materials/Parts/Part.md'
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
+          - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
+          - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - Modtweaker:

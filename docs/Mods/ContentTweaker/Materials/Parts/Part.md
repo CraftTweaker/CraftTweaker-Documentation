@@ -41,4 +41,4 @@ You can retrieve the following information from a Part:
 | getPartType()        | [IPartType](IPartType)                 |
 | getPartTypeName()    | String                                 |
 | getOreDictPrefix()   | String                                 |
-| getData()            | List<[IPartDataPiece](IPartDataPiece)> |
+| getData()            | List<[IPartDataPiece](PartDataPiece)> |

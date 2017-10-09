@@ -30,7 +30,7 @@ For a list of all available part types check [the part type page](PartType).
 
 ## [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material)
 ### Create
-Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/MaterialBuilder) for info on what exactly to do with these.
+Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/Material_Builder) for info on what exactly to do with these.
 ```JAVA
 val MB MaterialSystem.getMaterialBuilder();
 MB.setName("Urubuntium");

@@ -1,4 +1,4 @@
-# Material_Builder
+# Material Builder
 
 If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material), you will need a Material Builder!  
 Doesn't sound that hard, does it?
