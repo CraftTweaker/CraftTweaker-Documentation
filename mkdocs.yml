@@ -101,14 +101,19 @@ pages:
         - Advanced Functionality: 
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - Functions: 
+            - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
         - Types:
           - Block:
+            - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+          - Player:
+            - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
