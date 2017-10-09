@@ -26,10 +26,10 @@ Below you will find a list for CoT's basic Part Types:
 			<th>Name</th><th>Value</th><th>Required?</th></tr>
 		</thead>
 		<tbody>
-			<tr><td>enchantability</td><td>An "integer" (e.g. "10")</td><td>No</td></tr>
 			<tr><td>durability</td><td>An "integer" (e.g. "10")</td><td>No</td></tr>
-			<tr><td>reduction</td><td>A "float" (e.g. "2.4")</td><td>No</td></tr>
-			<tr><td>toughness</td><td>Four "integers" (e.g. "2,3,4,5)</td><td>No</td></tr>
+			<tr><td>enchantability</td><td>An "integer" (e.g. "10")</td><td>No</td></tr>
+			<tr><td>reduction</td><td>Four "integers" (e.g. "2,3,4,5")</td><td>No</td></tr>
+			<tr><td>toughness</td><td>A "float" (e.g. "2.4")</td><td>No</td></tr>
 		</tbody>
 	</table>
 </details>
