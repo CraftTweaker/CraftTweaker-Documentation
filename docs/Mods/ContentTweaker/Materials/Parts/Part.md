@@ -10,25 +10,38 @@ It might be required for you to import the package if you encounter any issues, 
 You can either retrieve an existing Part using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
 
 <details>
-	<summary>Following types are pre-registered:</summary>
-	<ul>
-		<li>Ingot</li>
-		<li>Beam</li>
-		<li>Gear</li>
-		<li>Bolt</li>
-		<li>Dust</li>
-		<li>Nugget</li>
-		<li>Rod</li>
-		<li>Plate</li>
-		<li>Dense Plate</li>
-		<li>Casing</li>
-		<li>Block</li>
-		<li>Ore</li>
-		<li>Poor Ore</li>
-		<li>Dense Ore</li>
-		<li>Molten</li>
-		<li>Armor</li>
-	</ul>
+	<summary>Following types are pre-registered (Headlines are the [Part Types](PartType)):</summary>
+	<h4>Items:</h4>
+		<ul>
+			<li>Beam</li>
+			<li>Bolt</li>
+			<li>Casing</li>
+			<li>Dense Plate</li>
+			<li>Dust</li>
+			<li>Gear</li>
+			<li>Ingot</li>
+			<li>Nugget</li>
+			<li>Plate</li>
+			<li>Rod</li>
+		</ul>
+	<h4>Blocks:</h4>
+		<ul>
+			<li>Block</li>
+		</ul>
+	<h4>Ores:</h4>
+		<ul>
+			<li>Ore</li>
+			<li>Dense Ore</li>
+			<li>Poor Ore</li>
+		</ul>
+	<h4>Fluids:</h4>
+		<ul>
+			<li>Molten</li>
+		</ul>	
+	<h4>Armor:</h4>
+		<ul>
+			<li>Armor</li>
+		</ul>
 </details>
 
 ## Fields
@@ -41,4 +54,4 @@ You can retrieve the following information from a Part:
 | getPartType()        | [IPartType](IPartType)                 |
 | getPartTypeName()    | String                                 |
 | getOreDictPrefix()   | String                                 |
-| getData()            | List<[IPartDataPiece](PartDataPiece)> |
+| getData()            | List<[IPartDataPiece](PartDataPiece)>  |
