@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.ActionResult;` 
 
 ## Enumerations
-Facing can be of those two values:
+Facing can be of those three values:
 
 - fail
 - pass

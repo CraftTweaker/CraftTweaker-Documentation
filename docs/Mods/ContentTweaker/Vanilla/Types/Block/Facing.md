@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Facing;` 
 
 ## Enumerations
-Facing can be of those two values:
+Facing can be of those six values:
 
 - north
 - east
