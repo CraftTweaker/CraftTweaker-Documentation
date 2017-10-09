@@ -55,3 +55,12 @@ You can retrieve the following information from a Part:
 | getPartTypeName()    | String                                 |
 | getOreDictPrefix()   | String                                 |
 | getData()            | List<[IPartDataPiece](PartDataPiece)>  |
+
+## Register to Material(s)
+You can use this to register one or several Materials to this part
+```
+part.registerToMaterial(Material material);
+part.registerToMaterials(Material[] materials);
+```
+
+The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart) object or a List of them, depending on whether you registered one or multiple materials at once.

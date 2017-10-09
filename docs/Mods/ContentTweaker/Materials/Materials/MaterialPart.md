@@ -13,11 +13,13 @@ Single Object:
 
 - Using the [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart)
 - Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material) registerPart Method
+- Using a [Part's](Mods/ContentTweaker/Materials/Parts/Part) registerToMaterial Method
 
 List:
 
 - Using [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem) registerPartsForMaterial Method
 - Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material) registerParts Method
+- Using a [Part's](Mods/ContentTweaker/Materials/Parts/Part) registerToMaterials Method
 
 ## Fields
 
