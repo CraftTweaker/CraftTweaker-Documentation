@@ -37,10 +37,10 @@ item.setMaxStackSize(64);
 | toolClass       | String                                                                                           | No       |               | What block types the tool can break                                                  |
 | toolLevel       | int                                                                                              | No       | -1            | The level of blocks can be broken                                                    |
 | beaconPayment   | boolean                                                                                          | No       | false         | Can be given to a beacon to enable bonuses                                           |
-| itemRightClick  | [IItemRightClick](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick) | No       |               | Called when the player right clicks with the item                                    |
+| itemRightClick  | [IItemRightClick](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick) | No       |               | Called when the player right clicks with the item                                    |
 | itemUseAction   | EnumUseAction                                                                                    | No       | "NONE"        | What animation the item use will have ("NONE", "EAT", "DRINK", "BLOCK", "BOW")       |
 | glowing         | boolean                                                                                          | No       | false         | Can be used to give your item the glowing effect (as if it were enchanted).          |
-| onItemUse       | [IItemUse](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IItemUse)               | No       | null          | Called when the player right click on a block with the item                          |
+| onItemUse       | [IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse)               | No       | null          | Called when the player right click on a block with the item                          |
 
 
 ## Registering the item

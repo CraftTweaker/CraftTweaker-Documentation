@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.PartType;` 
 
 ## Retrieving such an object
-You can use the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) to either retrieve an existing PartType object or create an entirely new one.  
+You can use the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) to either retrieve an existing PartType object or create an entirely new one.  
 Check out below entry to learn how to create a new PartType.
 
 <details>
@@ -40,7 +40,7 @@ You can set the following information on a PartType:
 If you, for whatever reason would ever need to register a new PartType, you will need to know two things:
 
 - What name the new partType will have
-- How [MaterialParts](/Mods/Contenttweaker/Materials/Materials/MaterialPart) created from [Parts](Part) that are of this type will be registered
+- How [MaterialParts](/Mods/ContentTweaker/Materials/Materials/MaterialPart) created from [Parts](Part) that are of this type will be registered
 
 The first is simple, it's a string.  
 The second is a bit trickier, it's a function that takes a MaterialPart as input:

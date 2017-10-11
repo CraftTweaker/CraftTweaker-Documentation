@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 The IItemRightClickFunction is a function with the following parameters:
 
 - [IItemStack](/Vanilla/Items/IItemStack) itemStack → The item that is right-clicked
-- [IWorld](/Mods/Contenttweaker/Vanilla/Types/World/IWorld) world → The world the player is in
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world the player is in
 - [IPlayer](/Vanilla/Game/IPlayer) player → The player doing the right-click
 - String hand → Either "OFF_HAND" or "MAIN_HAND"
 

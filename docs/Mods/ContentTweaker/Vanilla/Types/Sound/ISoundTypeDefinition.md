@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.SoundType;` 
 
 ## Calling an ISoundTypeDefinition object
-You can get such an object using the [Sound Type Bracket Handler](/Mods/Contenttweaker/Vanilla/Brackets/Bracket_Sound_Type):  
+You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type):  
 `<soundtype:wood>`
 
 ##ZenMethods without parameters

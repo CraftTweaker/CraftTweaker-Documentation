@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.SoundEvent;` 
 
 ## Calling an ISoundEventDefinition object
-You can get such an object using the [Sound Event Bracket Handler](/Mods/Contenttweaker/Vanilla/Brackets/Bracket_Sound_Event):  
+You can get such an object using the [Sound Event Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event):  
 `<soundevent:ambient.cave>`
 
 ## ZenMethods without parameters

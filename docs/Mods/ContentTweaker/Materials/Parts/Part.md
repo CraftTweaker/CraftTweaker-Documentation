@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Part;` 
 
 ## Retrieving such an object
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
+You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
 
 <details>
 	<summary>Following types are pre-registered (Headlines are the [Part Types](PartType)):</summary>
