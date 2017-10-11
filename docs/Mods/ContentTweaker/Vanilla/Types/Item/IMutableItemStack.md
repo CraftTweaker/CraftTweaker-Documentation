@@ -17,3 +17,11 @@ A Stack's count is the number of items in that stack!
 | setCount(count) | int            | Sets the stack's count to the `count` provided      |
 | grow(count)     | int            | Increases the stack's count by the `count` provided |
 | shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+
+### Damage
+`damage(int amount, ICTPlayer player)`
+
+Parameters:
+
+- int amound → The amount of Damage points to give the item
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer) player → the player/Entity damaging the item
