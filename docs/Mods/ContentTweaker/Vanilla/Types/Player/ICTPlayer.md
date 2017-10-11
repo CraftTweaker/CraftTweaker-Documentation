@@ -1,7 +1,7 @@
 # ICTPlayer
 
 An ICTPlayer is ContentTweaker's special [IPlayer](/Vanilla/Game/IPlayer) object.  
-However, most of the functions (in fact, all) that IPlayer offers don't work here!
+That means all of [IPlayer's](/Vanilla/Game/IPlayer) methods are also available on this object!
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
