@@ -1,4 +1,4 @@
-# ActionResult (NYI)
+# ActionResult
 
 An ActionResult is an enumeration of a [IItemUse Function's](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse) possible results.
 

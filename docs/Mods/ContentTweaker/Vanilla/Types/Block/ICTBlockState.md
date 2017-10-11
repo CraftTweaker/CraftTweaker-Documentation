@@ -16,3 +16,12 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 |-----------|----------|----------------------------------|--------------------------------------|
 |getBlock() |block     | [IBlock](/Vanilla/Blocks/IBlock) | Returns the refered block            |
 |getMeta()  |meta      | int                              | Returns the refered block's metadata |
+
+## ZenMethods
+`boolean isReplaceable(IWorld world, IBlockPos pos);`  
+Parameters:
+
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Block's position
+
+Returns a boolean that sais whether the block can be replaced or not.
