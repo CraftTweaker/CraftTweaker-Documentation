@@ -24,3 +24,4 @@ It might be required for you to import the package if you encounter any issues, 
 
 - [IBiome](/Vanilla/Biomes/IBiome) getBiome([IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) blockPos);
 - boolean setBlockState([ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState) blockState, [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) blockPos);
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState) getBlockState([IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) blockPos);
