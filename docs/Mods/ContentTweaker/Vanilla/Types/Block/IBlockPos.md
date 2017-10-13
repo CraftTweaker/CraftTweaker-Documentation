@@ -8,11 +8,11 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods without parameters
 
-| ZenMethod | Return Type | Description                    |
-|-----------|-------------|--------------------------------|
-| getX()    | int         | Returns the position's X value |
-| getY()    | int         | Returns the position's Y value |
-| getZ()    | int         | Returns the position's Z value |
+| ZenMethod |ZenGetter | Return Type | Description                    |
+|-----------|----------|-------------|--------------------------------|
+| getX()    | x        | int         | Returns the position's X value |
+| getY()    | y        | int         | Returns the position's Y value |
+| getZ()    | z        | int         | Returns the position's Z value |
 
 ## ZenMethods with parameters
 

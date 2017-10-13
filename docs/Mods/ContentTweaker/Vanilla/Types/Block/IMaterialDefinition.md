@@ -8,4 +8,4 @@ Currently this class is not a ZenClass, so there is no way for you to import any
 
 ## Calling an IMaterialDefinition object
 You can get such an object using the [Block Material Bracket Handler](/Mods/Contenttweaker/Vanilla/Brackets/Bracket_Block_Material):  
-`<material:wood>`
+`<blockmaterial:wood>`

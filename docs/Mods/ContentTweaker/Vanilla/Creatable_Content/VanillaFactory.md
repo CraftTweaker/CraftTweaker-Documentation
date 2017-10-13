@@ -43,4 +43,15 @@ Parameters:
 - String unlocalizedName: The Tab's unlocalized Name.
 - Item or Block representation: The Item/Block to be displayed as the Tab's symbol.
 
-Returns a ICreativeTab object. Check the [Creative Tab page](Creative_Tab) for further information and an example script!
+Returns a [ICreativeTab](Creative_Tab) object. Check the [Creative Tab page](Creative_Tab) for further information and an example script!
+
+### Create Fluids
+```JAVA
+mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
+```
+Parameters:
+
+- String unlocalizedName: The Fluid's unlocalized name.
+- int color: The fluid's color-code.
+
+Returns a [FluidRepresentation](Fluid) object. Check the [Fluid page](Fluid) for further information and an example script.

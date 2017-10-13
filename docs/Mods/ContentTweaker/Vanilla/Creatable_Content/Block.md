@@ -3,7 +3,7 @@
 ## Fields 
 Required Fields will never have a default value, empty defaults means null.
 
-All Fields can be set via set<field_name> e.g. `block.setUnlocalizedName("name");` and gotten via get<field_name>;
+All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and gotten via get`Name`;
 
 |Name                |Type                                                                                       |Required |Default Value                 |Notes                                                                                    |
 |--------------------|-------------------------------------------------------------------------------------------|---------|------------------------------|-----------------------------------------------------------------------------------------|
@@ -23,7 +23,10 @@ All Fields can be set via set<field_name> e.g. `block.setUnlocalizedName("name")
 |Slipperiness        |float                                                                                      |No       |0.6f                          |Ice blocks are 0.98f                                                                     |
 |OnBlockPlace        |[IBlockAction](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction) |No       |                              |Called when Block is placed.                                                             |
 |OnBlockBreak        |[IBlockAction](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction) |No       |                              |Called when Block is broken.                                                             |
+|onUpdateTick        |[IBlockAction](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction) |No       |                              |Called when Block receives a block update.                                               |
+|onRandomTick        |[IBlockAction](/Mods/Contenttweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction) |No       |                              |Called on a random tick event.                                                           |
 |BlockLayer          |String                                                                                     |No       |"SOLID"                       |"SOLID", "CUTOUT_MIPPED", "CUTOUT", "TRANSLUCENT"                                        |
+|axisAlignedBB       |[MCAxisAlignedBB](/Mods/Contenttweaker/Vanilla/Types/Block/MCAxisAlignedBB)                |No       |Full Block                    |Lets you set the block's bounding box                                                    |
 
 ## Examples
 ```

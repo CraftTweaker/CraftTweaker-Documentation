@@ -45,9 +45,9 @@ Currently the only Block Materials supported are:
 Block Materials are referenced in the Material Bracket handler this way:
 
 ```
-<material:name>
+<blockmaterial:name>
 
-<material:wood>
+<blockmaterial:wood>
 ```
 
 If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition) Object.  
