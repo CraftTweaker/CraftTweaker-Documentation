@@ -20,6 +20,18 @@ Now, what to put in as name or value?
 Well, that depends on the parttype of the tool you are using.  
 Below you will find a list for CoT's basic Part Types:
 
+<details><summary>Items</summary>
+	<table>
+		<thead>
+			<th>Name</th><th>Value</th><th>Required?</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>burn</td><td>An "integer" (e.g. "100")</td><td>No</td></tr>
+		</tbody>
+	</table>
+</details>
+
+
 <details><summary>Armor</summary>
 	<table>
 		<thead>

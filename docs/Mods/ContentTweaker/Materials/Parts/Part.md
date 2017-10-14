@@ -16,6 +16,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 			<li>Beam</li>
 			<li>Bolt</li>
 			<li>Casing</li>
+			<li>Crystal</li>
 			<li>Dense Plate</li>
 			<li>Dust</li>
 			<li>Gear</li>
