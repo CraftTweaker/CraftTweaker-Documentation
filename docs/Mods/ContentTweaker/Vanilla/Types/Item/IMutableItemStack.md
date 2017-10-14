@@ -23,5 +23,5 @@ A Stack's count is the number of items in that stack!
 
 Parameters:
 
-- int amound → The amount of Damage points to give the item
+- int amount → The amount of Damage points to give the item
 - [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer) player → the player/Entity damaging the item
