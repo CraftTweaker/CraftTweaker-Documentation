@@ -3,6 +3,7 @@ pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Commands: 'Vanilla/Commands.md'
+  - CTGUI: 'Vanilla/CTGUI.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
   - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
