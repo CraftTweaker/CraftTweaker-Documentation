@@ -197,11 +197,15 @@ pages:
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
       - Thermal Expansion:
+        - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
+        - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
         - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
         - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Industrial Foregoing:
