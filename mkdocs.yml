@@ -168,6 +168,8 @@ pages:
         - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
         - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
         - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
+        - Mining Lens: 'Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md'
+        - Oil Generator: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
         - Treasure Chest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
