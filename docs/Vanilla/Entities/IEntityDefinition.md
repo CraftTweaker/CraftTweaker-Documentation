@@ -3,6 +3,10 @@
 This sounds scary, so what does it mean?
 Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntity;`
+
 ## Calling an IEntityDefinition Object
 ```
 //These return an IEntityDefinition Object

@@ -1,6 +1,10 @@
 # IEntityDrop
 
-An IEntityDrop refers to a drop from an Entity.
+An IEntityDrop refers to a drop from an [Entity](IEntityDefinition).
+
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.entity.IEntityDrop;`
 
 ## ZenGetters
 

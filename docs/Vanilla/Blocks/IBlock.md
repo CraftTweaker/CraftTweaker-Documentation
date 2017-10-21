@@ -2,6 +2,10 @@
 An IBlock Object consists of a [IBlockDefinition](IBlockDefinition), a metadata and a TileData.  
 It refers to a block in the game.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.block.IBlock;`
+
 ## Calling an IBlock Object
 
 There are multiple ways thet return an IBlock object:

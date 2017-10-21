@@ -2,6 +2,10 @@
 The ILiquidDefinition defines the liquid an [ILiquidStack](ILiquidStack) consists of.
 Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.liquid.ILiquidDefinition;`
+
 ## Methods
 So, what can we do with it?
 
