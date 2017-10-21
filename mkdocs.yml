@@ -204,7 +204,12 @@ pages:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-
+    - GameStages:
+      - DimensionStages 'Mods/GameStages/DimensionStages/DimensionStages.md'
+      - ItemStages 'Mods/GameStages/ItemStages/ItemStages.md'
+      - MobStages 'Mods/GameStages/MobStages/MobStages.md'
+      - TinkerStages 'Mods/GameStages/TinkerStages/TinkerStages.md'
+      - WailaStages 'Mods/GameStages/WailaStages/WailaStages.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
