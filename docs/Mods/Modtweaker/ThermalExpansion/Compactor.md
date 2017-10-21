@@ -1,5 +1,8 @@
 # Compactor
 
+## Package
+`mods.thermalexpansion.Compactor`
+
 The compactor supports 3 types of mods:
 
 ```
