@@ -8,24 +8,35 @@ It is declared using ```[``` and ```]```.
 
 ```
 //Array containing "Hello" and "World"
-val stringArray = ["Hello", "World"];
+val stringArray = ["Hello", "World"] as string[];
 
 //Array containing 1-3
-val intArray = [1,2,3];
+val intArray = [1,2,3] as int[];
 ```
 
 If you now think "wait, haven't I seen these brackets before?", you have.
 Remember ```recipes.add(out,[[],[],[]]);```?
 This uses three arrays with each containing up to three entries to define a crafting table recipe.
 
+## Casting Arrays
+You surely have noticed that all arrays here have the `as` statement appended.  
+Why you ask?
+This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Better be safe than sorry and cast the Arrays to their correct types!  
+Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import) the corresponding package:  
+```
+import crafttweaker.item.IItemStack;
+val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
+```
+
 ## Nested Arrays
 You can place Arrays in Arrays.
 
 ```
-val stringArray1 = ["Hello","World"];
-val stringArray2 = ["I","am"];
-val stringArray3 = ["a","beatuful"];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]];
+val stringArray1 = ["Hello","World"] as string[];
+val stringArray2 = ["I","am"] as string[];
+val stringArray3 = ["a","beatuful"] as string[];
+val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
 ```
 
 ## Reffering to items in an Array
@@ -41,17 +52,17 @@ stringArray[1] is "World"
 stringArray[2] is "I"
 stringArray[3] is "am"
 */
-val stringArray = ["Hello","World","I","am"];
+val stringArray = ["Hello","World","I","am"] as string[];
 
 //prints "Hello"
 print(stringArray[0]);
 
 
 //Nested Arrays
-val stringArray1 = ["Hello","World"];
-val stringArray2 = ["I","am"];
-val stringArray3 = ["a","beautiful"];
-val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]];
+val stringArray1 = ["Hello","World"] as string[];
+val stringArray2 = ["I","am"] as string[];
+val stringArray3 = ["a","beautiful"] as string[];
+val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
 
 /*
 stringArrayAll[0] is ["Hello","World"]
