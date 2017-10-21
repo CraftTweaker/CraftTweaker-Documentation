@@ -30,7 +30,14 @@ Removing Recipes is also possible for Casting Tables and Basins:
 //mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
 mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>);
 
+//mods.tconstruct.Casting.removeTableRecipe(IItemStack output, ILiquidStack input);
+mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>, <liquid:molten_iron>);
+
+
 
 //mods.tconstruct.Casting.removeBasinRecipe(IItemStack output);
 mods.tconstruct.Casting.removeBasinRecipe(<minecraft:gold_block>);
+
+//mods.tconstruct.Casting.removeBasinRecipe(IItemStack output, ILiquidStack input);
+mods.tconstruct.Casting.removeBasinRecipe(<minecraft:gold_block>, <liquid:molten_gold>);
 ```
