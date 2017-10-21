@@ -1,3 +1,4 @@
+
 # Part
 
 A Part is the form an item is in, for example a gear or an ore.
@@ -9,21 +10,22 @@ It might be required for you to import the package if you encounter any issues, 
 ## Retrieving such an object
 You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
 
+
 <details>
 	<summary>Following types are pre-registered (Headlines are the [Part Types](PartType)):</summary>
 	<h4>Items:</h4>
 		<ul>
-			<li>Beam</li>
-			<li>Bolt</li>
-			<li>Casing</li>
-			<li>Crystal</li>
-			<li>Dense Plate</li>
-			<li>Dust</li>
-			<li>Gear</li>
-			<li>Ingot</li>
-			<li>Nugget</li>
-			<li>Plate</li>
-			<li>Rod</li>
+			<li>Beam ![beam icon](assets/beam.png)</li>
+			<li>Bolt ![Bolt icon](assets/Bolt.png)</li>
+			<li>Casing ![Casing icon](assets/Casing.png)</li>
+			<li>Crystal ![Crystal icon](assets/Crystal.png)</li>
+			<li>Dense Plate ![Dense Plate icon](assets/dense_plate.png)</li>
+			<li>Dust ![Dust icon](assets/Dust.png)</li>
+			<li>Gear ![Gear icon](assets/Gear.png)</li>
+			<li>Ingot ![Ingot icon](assets/Ingot.png)</li>
+			<li>Nugget ![Nugget icon](assets/Nugget.png)</li>
+			<li>Plate ![Plate icon](assets/Plate.png)</li>
+			<li>Rod ![Rod icon](assets/Rod.png)</li>
 		</ul>
 	<h4>Blocks:</h4>
 		<ul>
@@ -41,7 +43,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 		</ul>	
 	<h4>Armor:</h4>
 		<ul>
-			<li>Armor</li>
+			<li>Armor ![Helmet Icon](assets/armor_head.png)![Chest Plate Icon](assets/armor_chest.png)![Leggins Icon](assets/armor_legs.png)![Boots Icon](assets/armor_feet.png)</li>
 		</ul>
 </details>
 
