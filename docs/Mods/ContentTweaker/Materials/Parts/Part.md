@@ -16,16 +16,16 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 	<h4>Items:</h4>
 		<ul>
 			<li>Beam ![beam icon](Assets/beam.png)</li>
-			<li>Bolt ![Bolt icon](Assets/Bolt.png)</li>
-			<li>Casing ![Casing icon](Assets/Casing.png)</li>
-			<li>Crystal ![Crystal icon](Assets/Crystal.png)</li>
+			<li>Bolt ![Bolt icon](Assets/bolt.png)</li>
+			<li>Casing ![Casing icon](Assets/casing.png)</li>
+			<li>Crystal ![Crystal icon](Assets/crystal.png)</li>
 			<li>Dense Plate ![Dense Plate icon](Assets/dense_plate.png)</li>
-			<li>Dust ![Dust icon](Assets/Dust.png)</li>
-			<li>Gear ![Gear icon](Assets/Gear.png)</li>
-			<li>Ingot ![Ingot icon](Assets/Ingot.png)</li>
-			<li>Nugget ![Nugget icon](Assets/Nugget.png)</li>
-			<li>Plate ![Plate icon](Assets/Plate.png)</li>
-			<li>Rod ![Rod icon](Assets/Rod.png)</li>
+			<li>Dust ![Dust icon](Assets/dust.png)</li>
+			<li>Gear ![Gear icon](Assets/gear.png)</li>
+			<li>Ingot ![Ingot icon](Assets/ingot.png)</li>
+			<li>Nugget ![Nugget icon](Assets/nugget.png)</li>
+			<li>Plate ![Plate icon](Assets/plate.png)</li>
+			<li>Rod ![Rod icon](Assets/rod.png)</li>
 		</ul>
 	<h4>Blocks:</h4>
 		<ul>
