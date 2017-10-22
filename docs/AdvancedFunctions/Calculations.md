@@ -8,7 +8,7 @@ Remember that you can use more than two numbers at one, `1+1+1+1` would work fin
 When unexpected results happen in a calculation, it is very well possible that you used two different types.  
 For example `13 % 6.5` returns 1, even though the correct result is 0. Why?
 ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one.
-In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an integer).
+In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
 
 Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
 

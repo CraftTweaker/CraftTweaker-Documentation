@@ -1,6 +1,6 @@
 # Basic variable functionality
 
-The most basic variable types of ZenScript are Strings, integers and booleans.
+The most basic variable types of ZenScript are Strings, Integers and booleans.
 
 ## Most single types
 `true == true` You can check if two values are the same.  
@@ -19,8 +19,8 @@ Strings provide some functionality
 Integers provide some functionality
 
 `+-*/%` Basic mathematic operators (check the [variable Types](Variable_Types) page). You can also use the operatorAssign tokens  
-`0 to 10` Returns an integer Range ranging from 0 to 10.  
-`1~10` Concatenates the integers (returns "110").  
+`0 to 10` Returns an Integer Range ranging from 0 to 10.  
+`1~10` Concatenates the Integers (returns "110").  
 
 
 ## Booleans

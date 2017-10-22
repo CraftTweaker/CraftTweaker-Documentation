@@ -19,7 +19,7 @@ As you've seen above: Optional.
 Usually you will never need this, unless dealing with several custom bracket handlers.  
 `modid` is the modid of the mod that the Item belongs to.  
 `itemname` is the name of the item, use /ct hand to get the correct name.  
-`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an integer.  
+`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
 You can also use a wildcard `*` to address all meta values.  
 Also optional: If left out it will be 0.
 

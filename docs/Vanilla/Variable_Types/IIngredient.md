@@ -35,7 +35,7 @@ print(markedPick.mark);
 ### Amount
 
 If you want to use more than one of a given item, you can set an amount to an IIngredient.  
-This is as easy as multiplying the IIngredient with an integer.  
+This is as easy as multiplying the IIngredient with an Integer.  
 Retrieveing the amount is also possible.
 ```
 val multipleApples = <minecraft:apple> * 3;

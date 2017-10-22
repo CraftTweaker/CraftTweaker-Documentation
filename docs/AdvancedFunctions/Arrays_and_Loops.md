@@ -92,7 +92,7 @@ val JArray = [<minecraft:grass>,<minecraft:wood>,<minecraft:gold_ingot>];
 val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>];
 
 
-//for [integerName, ] elementName in IArray {code}
+//for [IntegerName, ] elementName in IArray {code}
 
 for item in IArray {
 	//defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
