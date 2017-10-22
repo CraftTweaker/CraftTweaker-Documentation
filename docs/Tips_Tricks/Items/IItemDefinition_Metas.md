@@ -16,7 +16,7 @@ While in this example this would totally work, in large scale this becomes prett
 
 ## Solution
 
-We use [IItemDefinitions](/Vanilla/Items/IItemDefinition) and an integer Range and iterate through latter.  
+We use [IItemDefinitions](/Vanilla/Items/IItemDefinition) and an Integer Range and iterate through latter.  
 If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
 You can also use this to Except some items from being used.
 

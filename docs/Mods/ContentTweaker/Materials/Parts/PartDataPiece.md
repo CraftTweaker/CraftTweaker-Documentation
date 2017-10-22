@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can get a List of a [Parts](Part) DataPieces using `getData()` on a [Part](Part).
 
-Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem):
+Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem):
 
 ```JAVA
 mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)

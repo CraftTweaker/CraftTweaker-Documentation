@@ -2,6 +2,10 @@
 
 A LiquidStack consists of a [Liquid Definition](ILiquidDefinition) as well as an optional tag and an optional amount value.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.liquid.ILiquidStack;`
+
 ## Creating an ILiquidStack
 An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Brackets/Bracket_Liquid)
 

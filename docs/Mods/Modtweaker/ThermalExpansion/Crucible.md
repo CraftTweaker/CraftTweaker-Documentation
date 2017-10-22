@@ -1,5 +1,8 @@
 # Crucible
 
+## Package
+`mods.thermalexpansion.Crucible`
+
 ## Addition
 
 ```

@@ -233,10 +233,24 @@ body {
 .wm-toc-lev1 > .wm-toc-text { padding-left: 14px; }
 .wm-toc-lev2 > .wm-toc-text { padding-left: 28px; }
 .wm-toc-lev3 > .wm-toc-text { padding-left: 42px; }
+.wm-toc-lev4 > .wm-toc-text { padding-left: 56px; }
+.wm-toc-lev5 > .wm-toc-text { padding-left: 70px; }
+.wm-toc-lev6 > .wm-toc-text { padding-left: 84px; }
+.wm-toc-lev7 > .wm-toc-text { padding-left: 98px; }
+.wm-toc-lev8 > .wm-toc-text { padding-left: 112px; }
+.wm-toc-lev9 > .wm-toc-text { padding-left: 126px; }
+.wm-toc-lev10 > .wm-toc-text { padding-left: 140px; }
 
 .wm-toc-lev1 + .wm-page-toc { margin-left: 14px; }
 .wm-toc-lev2 + .wm-page-toc { margin-left: 28px; }
 .wm-toc-lev3 + .wm-page-toc { margin-left: 42px; }
+.wm-toc-lev4 + .wm-page-toc { margin-left: 56px; }
+.wm-toc-lev5 + .wm-page-toc { margin-left: 70px; }
+.wm-toc-lev6 + .wm-page-toc { margin-left: 84px; }
+.wm-toc-lev7 + .wm-page-toc { margin-left: 98px; }
+.wm-toc-lev8 + .wm-page-toc { margin-left: 112px; }
+.wm-toc-lev9 + .wm-page-toc { margin-left: 126px; }
+.wm-toc-lev10 + .wm-page-toc { margin-left: 140px; }
 
 .wm-toc-li-nested {
   padding: 0px;

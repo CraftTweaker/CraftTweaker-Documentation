@@ -3,6 +3,10 @@
 An IItemStack Object consists of an [item definition](IItemDefinition), a meta/damage value and NBT data.  
 In other words, it refers an item or a block.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.item.IItemStack;`
+
 ## Calling an IItemStack
 There are several methods that return an IItemStack
 

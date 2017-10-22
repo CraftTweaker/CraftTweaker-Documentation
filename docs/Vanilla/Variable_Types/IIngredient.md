@@ -3,6 +3,10 @@
 An IIngredient is an ingredient for recipes.  
 This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.item.IIngredient;`
+
 ## Importing the IIngredient package
 
 Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import) the IIngredient package.  
@@ -31,7 +35,7 @@ print(markedPick.mark);
 ### Amount
 
 If you want to use more than one of a given item, you can set an amount to an IIngredient.  
-This is as easy as multiplying the IIngredient with an integer.  
+This is as easy as multiplying the IIngredient with an Integer.  
 Retrieveing the amount is also possible.
 ```
 val multipleApples = <minecraft:apple> * 3;

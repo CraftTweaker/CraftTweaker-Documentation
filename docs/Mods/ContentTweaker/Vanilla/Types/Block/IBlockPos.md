@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## ZenMethods with parameters
 
 ### Get Offset
-Returns a new IBlockPos that is `offset` blocks into the `directionName` direction.
+Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
 
 `IBlockPos getOffset(String directionName, int offset);`
 
@@ -29,3 +29,9 @@ Returns a new IBlockPos that is `offset` blocks into the `directionName` directi
 - "south"
 - "east"
 - "west"
+
+`IBlockPos getOffset(Facing facing, int offset)`
+Parameters:
+
+- [Facing](facing) facing → The direction
+- int offset → how many blocks in that direction?

@@ -17,4 +17,7 @@ mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 1
 ```
 //mods.tconstruct.Drying.removeRecipe(IItemStack output);
 mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
+
+//mods.tconstruct.Drying.removeRecipe(IItemStack output, IItemStack input);
+mods.tconstruct.Drying.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```

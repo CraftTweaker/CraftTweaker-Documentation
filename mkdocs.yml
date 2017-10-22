@@ -3,6 +3,7 @@ pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Commands: 'Vanilla/Commands.md'
+  - CTGUI: 'Vanilla/CTGUI.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
   - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
@@ -101,14 +102,22 @@ pages:
         - Advanced Functionality: 
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - Functions: 
+            - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
         - Types:
           - Block:
+            - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+          - Item:
+            - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
+          - Player:
+            - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
+            - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
@@ -159,6 +168,8 @@ pages:
         - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
         - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
         - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
+        - Mining Lens: 'Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md'
+        - Oil Generator: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
         - Treasure Chest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
@@ -187,12 +198,17 @@ pages:
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
+        - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:
+        - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
+        - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
         - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
         - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Industrial Foregoing:

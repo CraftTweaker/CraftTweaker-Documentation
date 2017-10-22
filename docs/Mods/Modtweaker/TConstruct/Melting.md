@@ -18,4 +18,7 @@ mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ing
 ```JAVA
 //mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
 mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
+
+//mods.tconstruct.Melting.removeRecipe(ILiquidStack output, IItemStack input);
+mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>, <minecraft:iron_ingot>);
 ```

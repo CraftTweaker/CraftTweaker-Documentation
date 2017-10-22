@@ -1,5 +1,8 @@
 # Pulverizer
 
+## Package
+`mods.thermalexpansion.Pulverizer`
+
 ## Addition
 
 ```

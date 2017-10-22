@@ -3,6 +3,10 @@
 A Position in Minecraft consists of 3 values: x, y and z.  
 A Position3f Object stores a position using those three values.
 
+## Importing the package
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+`import crafttweaker.util.Position3f;`
+
 ## Getting a Position3f object
 You can get such an object using:
 

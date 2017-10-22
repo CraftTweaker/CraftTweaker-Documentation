@@ -1,3 +1,4 @@
+
 # Part
 
 A Part is the form an item is in, for example a gear or an ore.
@@ -7,22 +8,24 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Part;` 
 
 ## Retrieving such an object
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/Contenttweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
+You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
+
 
 <details>
 	<summary>Following types are pre-registered (Headlines are the [Part Types](PartType)):</summary>
 	<h4>Items:</h4>
 		<ul>
-			<li>Beam</li>
-			<li>Bolt</li>
-			<li>Casing</li>
-			<li>Dense Plate</li>
-			<li>Dust</li>
-			<li>Gear</li>
-			<li>Ingot</li>
-			<li>Nugget</li>
-			<li>Plate</li>
-			<li>Rod</li>
+			<li>Beam ![beam icon](Assets/beam.png)</li>
+			<li>Bolt ![Bolt icon](Assets/bolt.png)</li>
+			<li>Casing ![Casing icon](Assets/casing.png)</li>
+			<li>Crystal ![Crystal icon](Assets/crystal.png)</li>
+			<li>Dense Plate ![Dense Plate icon](Assets/dense_plate.png)</li>
+			<li>Dust ![Dust icon](Assets/dust.png)</li>
+			<li>Gear ![Gear icon](Assets/gear.png)</li>
+			<li>Ingot ![Ingot icon](Assets/ingot.png)</li>
+			<li>Nugget ![Nugget icon](Assets/nugget.png)</li>
+			<li>Plate ![Plate icon](Assets/plate.png)</li>
+			<li>Rod ![Rod icon](Assets/rod.png)</li>
 		</ul>
 	<h4>Blocks:</h4>
 		<ul>
@@ -40,7 +43,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 		</ul>	
 	<h4>Armor:</h4>
 		<ul>
-			<li>Armor</li>
+			<li>Armor ![Helmet Icon](Assets/armor_head.png)![Chest Plate Icon](Assets/armor_chest.png)![Leggins Icon](Assets/armor_legs.png)![Boots Icon](Assets/armor_feet.png)</li>
 		</ul>
 </details>
 
@@ -55,3 +58,12 @@ You can retrieve the following information from a Part:
 | getPartTypeName()    | String                                 |
 | getOreDictPrefix()   | String                                 |
 | getData()            | List<[IPartDataPiece](PartDataPiece)>  |
+
+## Register to Material(s)
+You can use this to register one or several Materials to this part
+```
+part.registerToMaterial(Material material);
+part.registerToMaterials(Material[] materials);
+```
+
+The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart) object or a List of them, depending on whether you registered one or multiple materials at once.

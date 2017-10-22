@@ -69,7 +69,7 @@ The command for retrieving an item's fuel value is:
 furnace.getFuel(item); 
 ```
 
-This will return the burn value as an integer
+This will return the burn value as an Integer
 
 ## Examples
 
