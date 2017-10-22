@@ -211,8 +211,8 @@ pages:
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-	- LootTableTweaker:
-	  - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
+    - LootTableTweaker:
+      - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
