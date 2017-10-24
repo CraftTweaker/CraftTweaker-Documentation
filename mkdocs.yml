@@ -225,6 +225,7 @@ pages:
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
+      - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
     - LootTableTweaker:

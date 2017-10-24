@@ -39,7 +39,7 @@ A calculation usually ends up with a result. So what to do with that?
 
 ### Assigning a variable
 
-There are rwo ways of assigning a value to a variable:
+There are two ways of assigning a value to a variable:
 
 ```
 var test = 0;
@@ -54,7 +54,7 @@ test = test + 2;
 
 //Option 3:
 //assigns test with 2 (5-3)
-test -= 2;
+test -= 3;
 ```
 
 Option 1 and 2 assign the return variable using the `=` token.  
