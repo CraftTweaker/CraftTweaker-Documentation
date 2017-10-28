@@ -29,7 +29,7 @@ Like in the table above, you set the Zengetter/Setter at the end of the ILiquidD
 Some ZenGetters have no according ZenSetter, you will need to rely on other means to alter these properties.
 
 Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world.
-In most cases you will not need them.
+You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel).
 
 ```
 val definition = <liquid:lava>.definition;
