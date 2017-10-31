@@ -24,7 +24,9 @@ function(out, ins, cInfo){
 	
 	//now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
 	return ins.mark.withDamage(max(0,ins.mark.damage - 10));
-});
+}, 
+//We don't need a recipeAction here so just set it to null
+null);
 ```
 
 ## How to set up an IRecipeFunction
