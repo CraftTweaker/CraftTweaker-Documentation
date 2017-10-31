@@ -12,7 +12,7 @@ This is a so-called IRecipeFunction.
 val diaPick = <minecraft:diamond_pickaxe>;
 
 //we start normal, by writing the output
-recipes.addShapeless(diaPick,
+recipes.addShapeless("pickrepair",diaPick,
 
 //followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
 [diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
@@ -45,7 +45,7 @@ An IRecipeAction object comes after an IRecipeFunction!
 ```
 val stone = <minecraft:stone>;
 
-recipes.addShapeless(stone,[stone,stone,stone,stone],
+recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],
 //IrecipeFunction, just return the output, it doesn't interest us this time.
 function(out,ins,cInfo){
 	return out;
