@@ -41,6 +41,9 @@ pages:
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Data:
+      - IData: 'Vanilla/Data/IData.md'
+      - DataMap: 'Vanilla/Data/DataMap.md'
     - Entities:
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
