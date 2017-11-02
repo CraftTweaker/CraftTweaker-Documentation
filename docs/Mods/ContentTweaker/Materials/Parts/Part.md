@@ -19,7 +19,8 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 			<li>Bolt ![Bolt icon](Assets/bolt.png)</li>
 			<li>Casing ![Casing icon](Assets/casing.png)</li>
 			<li>Crystal ![Crystal icon](Assets/crystal.png)</li>
-			<li>Dense Plate ![Dense Plate icon](Assets/dense_plate.png)</li>
+			<li>Crushed Ore (crushed_ore) ![Crushed Ore icon](Assets/crushed_ore.png)</li>
+			<li>Dense Plate (dense_plate) ![Dense Plate icon](Assets/dense_plate.png)</li>
 			<li>Dust ![Dust icon](Assets/dust.png)</li>
 			<li>Gear ![Gear icon](Assets/gear.png)</li>
 			<li>Ingot ![Ingot icon](Assets/ingot.png)</li>
@@ -34,8 +35,8 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 	<h4>Ores:</h4>
 		<ul>
 			<li>Ore</li>
-			<li>Dense Ore</li>
-			<li>Poor Ore</li>
+			<li>Dense Ore (dense_ore)</li>
+			<li>Poor Ore(poor_ore)</li>
 		</ul>
 	<h4>Fluids:</h4>
 		<ul>
