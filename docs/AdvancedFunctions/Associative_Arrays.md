@@ -14,7 +14,7 @@ val myAssocArray = {
 
 Let's break this down, shall we?  
 
-- `vay myAssocArray =` standard variable declaration
+- `val myAssocArray =` standard variable declaration
 - `{` this is an Associative Array, Sir!
 - `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
 - `,` wait, there's more to come
@@ -98,7 +98,6 @@ There are two Iterators that allow you to iterate over an Associative Array:
 - The key-Iterator: Iterates over the keys, uses one variable → __Recommended one__
 - The key-value-Iterator: Iterates over the keys and values, uses two variables → known to do strange stuff...
 
-As long as the key-value iterator doesn't work as intended it won't be covered here, so let's check the key-Iterator instead:  
 Let's add an Associative Array that stores crafting recipes to be iterated over:  
 
 - Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack)
@@ -123,3 +122,25 @@ for key in recipeMapShaped {
 	recipes.addShaped(key, recipeMapShaped[key]);
 }
 ```
+
+
+<details>
+<summary>Debugging Map Iterators</summary>
+You need to be careful with the Iterators: You __cannot iterate over ZenNatives__ (strings, ints, Nested Arrays). So check that you are not using any of these. You can however assign the variable with the values you just cannot use it, so this would work as long as you leave the reference to key commented out (key is an Array - A ZenNative):
+	
+	val ttt = {
+    [<minecraft:dirt>] : <minecraft:gold_ingot>,
+    [<minecraft:grass>] : <minecraft:iron_ingot>
+	} as IItemStack[IItemStack[]];
+
+
+	for key, value in ttt {
+    print("KV");
+    //print(key[0].name);
+    print(value.name);
+	}
+
+You can, however, use the __indexGet__ functionality to retrieve a ZenNative if it has not-ZenNative key.  
+That is what we did in the iterator-Example with the recipes!
+	
+</details>
