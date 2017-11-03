@@ -154,14 +154,14 @@ You can also create items with a specific or empty tag using:
 //creates apple with an emtpy tag
 <minecraft:apple>.withEmptyTag();
 ```
-`tag` is an IData Object.
+`tag` is an [IData](/Vanilla/Data/IData) Object.
 
 #### Remove Tags
 You can also remove tags
 ```
 item.removeTag(tag);
 ```
-`tag` is an IData Object.
+`tag` is an [IData](/Vanilla/Data/IData) Object.
 
 
 ### Liquid

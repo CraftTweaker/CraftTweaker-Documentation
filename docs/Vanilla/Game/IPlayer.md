@@ -15,7 +15,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 |---------------|--------------------------------------------------------------------------------------------|------------------------------------------|------------------------|
 | id            | returns the player's id                                                                    | string                                   | `player.id`            |
 | name          | returns the player's name                                                                  | string                                   | `player.name`          |
-| data          | returns the player's data                                                                  | IData                                    | `player.data`          |
+| data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData)             | `player.data`          |
 | xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                      | `player.xp`            |
 | hotbarSize    | returns the player's hotbar size                                                           | int                                      | `player.hotbarSize`    |
 | inventorySize | returns the player's inventory size                                                        | int                                      | `player.inventorySize` |
@@ -35,7 +35,7 @@ Zenmethods are for doing things with other things, in this case with a player.
 | ZenMethod                | Parameter Type(s)                       | What does it do                                                     | Example                                  |
 |-----------------------   |-----------------------------------------|-------------------------------------------------------------------- |------------------------------------------|
 | removeXP(XPtoRemove)     | int                                     | Removes the given experience levels from the player.                | `player.removeXP(1)`                     |
-| update(IData)            | IData                                   | Updates the playerdata to the provided IData.                       |                                          |
+| update(IData)            | [IData](/Vanilla/Data/IData)            | Updates the playerdata to the provided IData.                       |                                          |
 | sendChat(Message)        | string OR IChatMessage                  | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")` |
 | getHotbarStack(index)    | int                                     | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`               |
 | getInventoryStack(index) | int                                     | Returns the item at the given index within the player's inventory.  | `player.getInventoryStack(3)`            |

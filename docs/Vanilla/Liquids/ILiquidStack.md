@@ -35,7 +35,7 @@ Check the table to see what you can retrieve from the ILiquidStack Object using 
 | temperature | This returns the temperature of the referred liquid       | int                                     | `test = <liquid:lava>.temperature;` |
 | viscosity   | This returns the viscosity of the referred liquid         | int                                     | `test = <liquid:lava>.viscosity;`   |
 | gaseous     | This returns whether the referred liquid is gaseous       | boolean                                 | `test = <liquid:lava>.gaseous;`     |
-| tag         | This returns the ILiquidObject's tag                      | IData                                   | `test = <liquid:lava>.tag;`         |
+| tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData)            | `test = <liquid:lava>.tag;`         |
 | definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](ILiquidDefinition) | `test = <liquid:lava>.definition;`  |
 
 # IIngredient Implementaion
