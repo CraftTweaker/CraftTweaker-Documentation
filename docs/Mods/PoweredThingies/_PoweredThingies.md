@@ -1,9 +1,10 @@
 # Powered Thingies
 Powered Thingies's non-farming machines Crafttweaker support.
 
-### Mod Info
-Curseforge: https://minecraft.curseforge.com/projects/powered-thingies
-Github: https://github.com/faceofcat/Tesla-Powered-Thingies
+### Mod Info    
+Curseforge: <https://minecraft.curseforge.com/projects/powered-thingies>
+
+Github: <https://github.com/faceofcat/Tesla-Powered-Thingies>
 
 Website: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies)
 
