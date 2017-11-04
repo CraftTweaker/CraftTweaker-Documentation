@@ -231,6 +231,18 @@ pages:
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
     - LootTableTweaker:
       - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
+    - Powered Thingies:
+      - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
+      - Tweaker Static Class: 'Mods/PoweredThingies/_TweakerClass.md'
+      - Compound Maker: 'Mods/PoweredThingies/CompoundMakerTweaker.md'
+      - Fluid Burner Coolant: 'Mods/PoweredThingies/FluidBurnerCoolantTweaker.md'
+      - Fluid Burner Fuel: 'Mods/PoweredThingies/FluidBurnerFuelTweaker.md'
+      - Fluid Compound Producer: 'Mods/PoweredThingies/FluidCompoundProducerTweaker.md'
+      - Incinerator: 'Mods/PoweredThingies/IncineratorTweaker.md'
+      - Item Compound Producer: 'Mods/PoweredThingies/ItemCompoundProducerTweaker.md'
+      - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
+      - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
+      - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
