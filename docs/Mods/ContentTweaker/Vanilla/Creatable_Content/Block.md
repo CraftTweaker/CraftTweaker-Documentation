@@ -46,3 +46,7 @@ antiIceBlock.setBlockSoundType(<soundtype:snow>);
 antiIceBlock.setSlipperiness(0.3);
 antiIceBlock.register();
 ```
+
+## Localising the block
+You will need to add `tile.contenttweaker.blockName = Localized Name` to the responding language files.  
+Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame), though it's recommended using the language files!
