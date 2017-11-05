@@ -20,7 +20,7 @@ There are multiple ways thet return an IBlock object:
 |------------|--------------------------------|----------------------------------------|
 | definition | Returns the Block's definition | [IBlockDefinition](IBlockDefinition)   |
 | meta       | Returns the Block's metadata   | int                                    |
-| data       | Returns the Block's tileData   | IData                                  |
+| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData)           |
 
 
 

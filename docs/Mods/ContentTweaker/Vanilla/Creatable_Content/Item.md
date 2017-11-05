@@ -74,3 +74,7 @@ zsItem.itemRightClick = function(stack, world, player, hand) {
 };
 zsItem.register();
 ```
+
+## Localising the item
+You will need to add `item.contenttweaker.itemName = Localized Name` to the responding language files.  
+Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame), though it's recommended using the language files!

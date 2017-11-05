@@ -12,7 +12,7 @@ This is a so-called IRecipeFunction.
 val diaPick = <minecraft:diamond_pickaxe>;
 
 //we start normal, by writing the output
-recipes.addShapeless(diaPick,
+recipes.addShapeless("pickrepair",diaPick,
 
 //followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
 [diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
@@ -24,7 +24,9 @@ function(out, ins, cInfo){
 	
 	//now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
 	return ins.mark.withDamage(max(0,ins.mark.damage - 10));
-});
+}, 
+//We don't need a recipeAction here so just set it to null
+null);
 ```
 
 ## How to set up an IRecipeFunction
@@ -45,7 +47,7 @@ An IRecipeAction object comes after an IRecipeFunction!
 ```
 val stone = <minecraft:stone>;
 
-recipes.addShapeless(stone,[stone,stone,stone,stone],
+recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],
 //IrecipeFunction, just return the output, it doesn't interest us this time.
 function(out,ins,cInfo){
 	return out;
