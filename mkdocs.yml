@@ -198,9 +198,14 @@ pages:
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - Tinkers' Construct:
+        - Brackets: 
+          - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - Materials:
+          - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
+          - IMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/IMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:
