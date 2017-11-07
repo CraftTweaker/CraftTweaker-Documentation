@@ -230,6 +230,9 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
 
 ### As IBlock
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
+```
+<minecraft:dirt>.asBlock();
+```
 
 ## ItemTransformers and ItemConditions
 You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
