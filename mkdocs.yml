@@ -198,6 +198,7 @@ pages:
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - Tinkers' Construct:
+        - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
         - Brackets: 
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
