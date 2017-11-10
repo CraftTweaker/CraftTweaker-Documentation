@@ -70,6 +70,7 @@ Below you will find a list for CoT's basic Part Types:
 		<tbody>
 			<tr><td>temperature</td><td>An "Integer" (e.g. "300")</td><td>No</td></tr>
 			<tr><td>density</td><td>An "Integer" (e.g. "1000")</td><td>No</td></tr>
+			<tr><td>luminosity</td><td>An "Integer" (e.g. "0")</td><td>No</td></tr>
 			<tr><td>viscosity</td><td>An "Integer" (e.g. "100")</td><td>No</td></tr>
 			<tr><td>vaporize</td><td>A "boolean" (e.g. "true")</td><td>No</td></tr>
 		</tbody>
