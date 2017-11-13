@@ -87,9 +87,11 @@ A loop is a function that repeats itself. You can use loops to apply an action t
 The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.
 
 ```
-val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>];
-val JArray = [<minecraft:grass>,<minecraft:wood>,<minecraft:gold_ingot>];
-val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>];
+import crafttweaker.item.IItemStack;
+
+val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
+val JArray = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] as IItemStack[];
+val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
 
 
 //for [IntegerName, ] elementName in IArray {code}
