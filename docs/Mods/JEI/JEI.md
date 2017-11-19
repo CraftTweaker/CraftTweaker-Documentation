@@ -24,15 +24,25 @@ mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["W
 ```
 
 ## Add Description
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack). This is an extra page shown when looking up the item's recipe.
-If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.
+A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
+You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack), an [IItemStack](/Vanilla/Items/IItemStack)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) or an [IOreDictEntry](/Vanilla/OreDict). 
+
+If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
+Each string parameter will have at least one line and wrap around the end of the window if too long.  
 
 ```Java
-//addDescription(IItemStack item, string desc);
+//addDescription(IItemStack item, string... desc);
 mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 
 
-//addDescription(IItemStack item, string[] desc);
-//each string inside the array will have it's own line(s)
-mods.jei.JEI.addDescription(<minecraft:music_disc>,["Never","Gonna","Give","You","Up","Never","Gonna","Let","You","Down"]);
+//addDescription(IItemStack[] item, string... desc);
+mods.jei.JEI.addDescription([<minecraft:music_disc>, <minecraft:music_disc>],["Never","Gonna","Give","You","Up","Never","Gonna","Let","You","Down"]);
+
+//addDescription(IOreDictEntry dict, string... desc);
+mods.jei.JEI.addDescription(<ore:ingotIron>, "You can use these to create things", "", "things like Armor","","","Yes...","That as well...");
+
+//addDescription(ILiquidStack stack, string... desc);
+mods.jei.JEI.addDescription(<liquid:lava>, ["LAVA"]);
 ```
+
+The `desc` parameter is a varArg, which means you can either give one string[] containing all description strings or many single strings, whatever you prefer. Just don't mix them!
