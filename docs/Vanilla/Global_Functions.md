@@ -58,3 +58,11 @@ Returns an int
 min(10, 11);
 ```
 Returns an int
+
+## pow
+
+```java
+//pow(double number1, double number2);
+pow(2.0, 4.0);
+```
+Returns a double
