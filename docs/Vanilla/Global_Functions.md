@@ -66,3 +66,23 @@ Returns an int
 pow(2.0, 4.0);
 ```
 Returns a double
+
+
+
+## Global Fields
+
+| Field      | Description                                                                                   |
+|------------|-----------------------------------------------------------------------------------------------|
+| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand)                        |
+| client     | Accesses [client Methods](/Vanilla/Game/IClient)                                              |
+| events     | Accesses the Event Handler (NYI!)                                                             |
+| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter)                                  |
+| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Recipes_Furnace)                              |
+| game       | Accesses [Game functions](/Vanilla/Game/IGame)                                                |
+| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils)                                   |
+| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods)                                           |
+| logger     | Accesses the [logger](/Vanilla/Utils/Logger)                                                  |
+| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict)                                        |
+| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Recipes_Crafting_Table)                        |
+| server     | Accesses [server Methods](/Vanilla/Game/IServer)                                              |
+| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds) available) |

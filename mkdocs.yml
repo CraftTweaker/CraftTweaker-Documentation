@@ -61,6 +61,7 @@ pages:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
+      - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
@@ -76,11 +77,15 @@ pages:
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
     - Recipes:
+      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Utils:
+      - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
+      - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
+      - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
