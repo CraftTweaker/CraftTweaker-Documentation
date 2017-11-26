@@ -47,8 +47,16 @@ pages:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - Entities:
+      - Attributes:
+        - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
+        - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
+        - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
+      - IEntity: 'Vanilla/Entities/IEntity.md'
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
+      - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
+      - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
+      - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
