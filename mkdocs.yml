@@ -247,6 +247,14 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - 'PneumaticCraft: Repressurized':
+      - 'About PneumaticCraft: Repressurized': 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+      - Crafting:
+        - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+        - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
+        - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
+        - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
+        - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
