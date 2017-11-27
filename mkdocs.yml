@@ -13,6 +13,7 @@ pages:
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
+    - Global Variables: 'AdvancedFunctions/Global_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
     - Preprocessors:
