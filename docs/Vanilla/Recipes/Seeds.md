@@ -16,7 +16,9 @@ pre-1.12
 
 ## Add a seed drop
 
-Adds `item` as seed drop.
+Adds `item` as seed drop.  
+**Weights are relative to grass seed, which has a weight of 10 (≙ 1000%)!**
+
 ```
 vanilla.seeds.addSeed(item);
 ```
@@ -37,3 +39,16 @@ Stops `item` from being a seed drop.
 vanilla.seeds.removeSeed(item);
 ```
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient).
+
+
+
+## Retrieve all registered Seeds
+
+Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack) List.
+```
+val seedList = vanilla.seeds.seeds;
+
+for item in seedList {
+	print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
+}
+```

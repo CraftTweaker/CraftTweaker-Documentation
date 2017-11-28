@@ -1,0 +1,109 @@
+# Tokens
+
+These are internal tokens only listed so I have a place to list them somewhere for devs to point to...
+
+
+| Token Value | TokenName     | Token String                                              |
+|-------------|---------------|-----------------------------------------------------------|
+| 1           | T_ID          | `[a-zA-Z_][a-zA-Z_0-9]*`                                  |
+| 2           | T_INTVALUE    | `\\-?(0|[1-9][0-9]*) `                                    |
+| 3           | T_FLOATVALUE  | `\\-?(0|[1-9][0-9]*)\\.[0-9]+([eE][\\+\\-]?[0-9]+)?`      |
+| 4           | T_STRINGVALUE | `\'([^\'\\\\]|\\\\([\'\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))*\'` |
+| 4           | T_STRINGVALUE | `\"([^\"\\\\]|\\\\([\'\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))*\"` |
+| 5           | T_AOPEN       | `{`                                                       |
+| 6           | T_ACLOSE      | `}`                                                       |
+| 7           | T_SQBROPEN    | `[`                                                       |
+| 8           | T_SQBRCLOSE   | `]`                                                       |
+| 9           | T_DOT2        | `..`                                                      |
+| 10          | T_DOT         | `.`                                                       |
+| 11          | T_COMMA       | `,`                                                       |
+| 12          | T_PLUSASSIGN  | `+=`                                                      |
+| 13          | T_PLUS        | `+`                                                       |
+| 14          | T_MINUSASSIGN | `-=`                                                      |
+| 15          | T_MINUS       | `-`                                                       |
+| 16          | T_MULASSIGN   | `*=`                                                      |
+| 17          | T_MUL         | `*`                                                       |
+| 18          | T_DIVASSIGN   | `/=`                                                      |
+| 19          | T_DIV         | `/`                                                       |
+| 20          | T_MODASSIGN   | `&=`                                                      |
+| 21          | T_MOD         | `%`                                                       |
+| 22          | T_ORASSIGN    | `|=`                                                      |
+| 23          | T_OR          | `|`                                                       |
+| 40          | T_OR2         | `||`                                                      |
+| 24          | T_ANDASSIGN   | `&=`                                                      |
+| 41          | T_AND2        | `&&`                                                      |
+| 25          | T_AND         | `&`                                                       |
+| 26          | T_XORASSIGN   | `^=`                                                      |
+| 27          | T_XOR         | `^`                                                       |
+| 28          | T_QUEST       | `?`                                                       |
+| 29          | T_COLON       | `:`                                                       |
+| 30          | T_BROPEN      | `(`                                                       |
+| 31          | T_BRCLOSE     | `)`                                                       |
+| 45          | T_TILDEASSIGN | `~=`                                                      |
+| 32          | T_TILDE       | `~`                                                       |
+| 33          | T_SEMICOLON   | `;`                                                       |
+| 34          | T_LTEQ        | `<=`                                                      |
+| 35          | T_LT          | `<`                                                       |
+| 36          | T_GTEQ        | `>=`                                                      |
+| 37          | T_GT          | `>`                                                       |
+| 38          | T_EQ          | `==`                                                      |
+| 39          | T_ASSIGN      | `=`                                                       |
+| 42          | T_NOTEQ       | `!=`                                                      |
+| 43          | T_NOT         | `!`                                                       |
+| 44          | T_DOLLAR      | `$`                                                       |
+| 99          | T_ANY         | `any`                                                     |
+| 100         | T_BOOL        | `bool`                                                    |
+| 101         | T_BYTE        | `byte`                                                    |
+| 102         | T_SHORT       | `short`                                                   |
+| 103         | T_INT         | `int`                                                     |
+| 104         | T_LONG        | `long`                                                    |
+| 105         | T_FLOAT       | `float`                                                   |
+| 106         | T_DOUBLE      | `double`                                                  |
+| 107         | T_STRING      | `string`                                                  |
+| 108         | T_FUNCTION    | `function`                                                |
+| 109         | T_IN          | `in`                                                      |
+| 110         | T_VOID        | `void`                                                    |
+| 120         | T_AS          | `as`                                                      |
+| 121         | T_VERSION     | `version`                                                 |
+| 122         | T_IF          | `if`                                                      |
+| 123         | T_ELSE        | `else`                                                    |
+| 124         | T_FOR         | `for`                                                     |
+| 125         | T_RETURN      | `return`                                                  |
+| 126         | T_VAR         | `var`                                                     |
+| 127         | T_VAL         | `val`                                                     |
+| 140         | T_NULL        | `null`                                                    |
+| 141         | T_TRUE        | `true`                                                    |
+| 142         | T_FALSE       | `false`                                                   |
+| 160         | T_IMPORT      | `import`                                                  |
+| 666         | T_GLOBAL      | `global`                                                  |
+
+
+
+
+
+
+# ZenOperators
+
+`@ZenOperator` Annotation
+
+| ZenOperator  | Associated Token            | TokenAssign / Alternate Token/AdditionalInfo   |
+|--------------|-----------------------------|------------------------------------------------|
+| ADD          | `+`                         | `+=`                                           |
+| SUB          | `-`                         | `-=`                                           |
+| MUL          | `*`                         | `*=`                                           |
+| DIV          | `/`                         | `/=`                                           |
+| MOD          | `%`                         | `%=`                                           |
+| CAT          | `~`                         | `~=`                                           |
+| OR           | `|`                         | `|=`                                           |
+| AND          | `&`                         | `&=`                                           |
+| XOR          | `^`                         | `^=`                                           |
+| NEG          | `-`                         |                                                |
+| NOT          | `!`                         |                                                |
+| INDEXSET     | `[i] = v`                   |                                                |
+| INDEXGET     | `[i]`                       |                                                |
+| RANGE        | `i .. v`                    | `i to v`                                       |
+| CONTAINS     | `in`                        |                                                |
+| COMPARE      | `==` `<` `>` `<=` `>=` `!=` | Annotated Method should return an int!         |
+| MEMBERGETTER | `.member`                   |                                                |
+| MEMBERSETTER | `.member = v`               |                                                |
+| EQUALS       | `=`                         |                                                |
