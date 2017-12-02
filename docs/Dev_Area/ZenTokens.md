@@ -1,4 +1,4 @@
-# Tokens
+# ZenTokens
 
 These are internal tokens only listed so I have a place to list them somewhere for devs to point to...
 
@@ -76,34 +76,3 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 142         | T_FALSE       | `false`                                                   |
 | 160         | T_IMPORT      | `import`                                                  |
 | 666         | T_GLOBAL      | `global`                                                  |
-
-
-
-
-
-
-# ZenOperators
-
-`@ZenOperator` Annotation
-
-| ZenOperator  | Associated Token            | TokenAssign / Alternate Token/AdditionalInfo   |
-|--------------|-----------------------------|------------------------------------------------|
-| ADD          | `+`                         | `+=`                                           |
-| SUB          | `-`                         | `-=`                                           |
-| MUL          | `*`                         | `*=`                                           |
-| DIV          | `/`                         | `/=`                                           |
-| MOD          | `%`                         | `%=`                                           |
-| CAT          | `~`                         | `~=`                                           |
-| OR           | `|`                         | `|=`                                           |
-| AND          | `&`                         | `&=`                                           |
-| XOR          | `^`                         | `^=`                                           |
-| NEG          | `-`                         |                                                |
-| NOT          | `!`                         |                                                |
-| INDEXSET     | `[i] = v`                   |                                                |
-| INDEXGET     | `[i]`                       |                                                |
-| RANGE        | `i .. v`                    | `i to v`                                       |
-| CONTAINS     | `in`                        |                                                |
-| COMPARE      | `==` `<` `>` `<=` `>=` `!=` | Annotated Method should return an int!         |
-| MEMBERGETTER | `.member`                   |                                                |
-| MEMBERSETTER | `.member = v`               |                                                |
-| EQUALS       | `=`                         |                                                |
