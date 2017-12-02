@@ -52,3 +52,38 @@ print(k1.asString());
 var k2 = mySecondMap.memberGet("key2") as IData;
 print(k2.asString());
 ```
+
+## Modifying maps
+
+You can add or substract maps from each other to get a new map with changed values.  
+This even works for nested maps!
+
+```
+val map1 as IData = {
+	key1 : "hello"
+	key3 : "test"
+};
+
+val map2 as IData = {
+	key2 : "bye"
+	key3 : "override"
+};
+
+print((map1 + map2).asString()); //Prints {key1 : "hello", key2 : "bye", key3 : "override"}
+
+
+
+val map3 as IData = {
+	key1 : "two",
+	key2 : "two",
+	key3 : "three"
+};
+
+print((map3 - "key1").asString()); //Prints {key2 : "two", key3 : "three"}
+
+val map4 as IData = {
+	key3 : "anything"
+};
+
+print((map3 - map4).asString()); //Prints {key1 : "two", key2 : "two"}
+```
