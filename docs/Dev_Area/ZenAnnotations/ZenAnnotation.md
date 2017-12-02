@@ -20,22 +20,31 @@ These annotations can be given to ZenClasses
 
 These annotations can be given to Method Parameters
 
-| Annotation   | Target    | Information                                                                                   |
-|--------------|-----------|-----------------------------------------------------------------------------------------------|
-| `@NotNull`   | Parameter | Does nothing (NYI)                                                                            |
-| `@Optional`  | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
+| Annotation                         | Target    | Information                                                                                   |
+|------------------------------------|-----------|-----------------------------------------------------------------------------------------------|
+| `@NotNull`                         | Parameter | Does nothing (NYI)                                                                            |
+| [`@Optional`](Annotation_Optional) | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
 
 
 ## Method annotations
 
 These annotations can be given to Methods (both static and nonstatic)
 
-| Annotation         | Value                                                                    | Target |
-|--------------------|--------------------------------------------------------------------------|--------|
-| `@ZenCaster`       |                                                                          | Method |
-| `@ZenOperator`     | [OperatorType](/Dev_Area/ZenOperators)                                   | Method |
-| `@ZenGetter`       | getter name (e.g. "name") if omited, method name without () will be used | Method |
-| `@ZenSetter`       | setter name (e.g. "name") if omited, method name without () will be used | Method |
-| `@ZenMemberGetter` |                                                                          | Method |
-| `@ZenMemberSetter` |                                                                          | Method |
-| `@ZenMethod`       |                                                                          | Method |
+| Annotation                                                        | Value                                                                    | Target |
+|-------------------------------------------------------------------|--------------------------------------------------------------------------|--------|
+| `@ZenCaster`                                                      |                                                                          | Method |
+| [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator) | [OperatorType](/Dev_Area/ZenOperators)                                   | Method |
+| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMember)                | getter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMember)                | setter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
+| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
+| `@ZenMethod`                                                      |                                                                          | Method |
+
+
+## Field annotations
+
+These annotations can be given to public fields (both static and nonstatic)
+
+| Annotation                                           | Target | Information                            |
+|------------------------------------------------------|--------|----------------------------------------|
+| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMember) | Field  | Combines `@ZenSetter` and `@ZenGetter` |

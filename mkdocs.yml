@@ -276,6 +276,8 @@ pages:
       - ZenClass: 'Dev_Area/ZenAnnotations/Annotation_ZenClass.md'
       - ZenExpansion: 'Dev_Area/ZenAnnotations/Annotation_ZenExpansion.md'
       - ZenRegister: 'Dev_Area/ZenAnnotations/Annotation_ZenRegister.md'
+      - ZenMember: 'Dev_Area/ZenAnnotations/ZenMembers.md'
+      - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
 
