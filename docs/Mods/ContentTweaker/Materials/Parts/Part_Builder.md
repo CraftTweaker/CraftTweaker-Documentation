@@ -19,10 +19,11 @@ var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 
 You can set these Properties
 
-| ZenMethod             | Parameter                     |
-|-----------------------|-------------------------------|
-| setName(name)         | String name                   |
-| setPartType(partType) | [PartType](PartType) partType |
+| ZenMethod              | Parameter                     |
+|------------------------|-------------------------------|
+| setName(name)          | String name                   |
+| setPartType(partType)  | [PartType](PartType) partType |
+| setOreDictName(prefix) | String prefix                 |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
 You can see in the example scripts below what this means.
@@ -40,9 +41,9 @@ This returns an [Part](Part) Object.
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));
-
 var denseGearPart = pBuilder.build();
-var denseIngot = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").getPartType("item");
+
+var denseIngotPart = mods.contenttweaker.MaterialSystem.getPartBuilder().setName("dense_ingot").setPartType(mods.contenttweaker.MaterialSystem.getPartType("item")).setOreDictName("superIngot").build();
 ```
 
 ## Noteworthy information

@@ -45,6 +45,7 @@ Parameters:
 
 Returns a [ICreativeTab](Creative_Tab) object. Check the [Creative Tab page](Creative_Tab) for further information and an example script!
 
+
 ### Create Fluids
 ```JAVA
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
@@ -55,3 +56,15 @@ Parameters:
 - int color: The fluid's color-code.
 
 Returns a [FluidRepresentation](Fluid) object. Check the [Fluid page](Fluid) for further information and an example script.
+
+
+### Create Food Items
+```JAVA
+mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
+```
+Parameters:
+
+- String unlocalizedName: The item's unlocalized Name.
+- int healAmount: The Food Value
+
+Returns an [ItemFoodRepresentation](ItemFood) object. Check out the [Food page](ItemFood) for further information and an example script.
