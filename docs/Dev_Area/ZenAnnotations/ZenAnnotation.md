@@ -32,13 +32,13 @@ These annotations can be given to Methods (both static and nonstatic)
 
 | Annotation                                                        | Value                                                                    | Target |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------|--------|
-| `@ZenCaster`                                                      |                                                                          | Method |
+| [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster)     |                                                                          | Method |
 | [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator) | [OperatorType](/Dev_Area/ZenOperators)                                   | Method |
 | [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMember)                | getter name (e.g. "name") if omited, method name without () will be used | Method |
 | [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMember)                | setter name (e.g. "name") if omited, method name without () will be used | Method |
 | [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
 | [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
-| `@ZenMethod`                                                      |                                                                          | Method |
+| [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod)     |                                                                          | Method |
 
 
 ## Field annotations
