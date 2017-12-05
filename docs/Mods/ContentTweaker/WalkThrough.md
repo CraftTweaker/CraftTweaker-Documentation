@@ -42,7 +42,7 @@ createBlock, which in this case is 'anti_ice'. If you are planning on using a de
 ContentTweaker will generate the model jsons needed for it to function correctly.
 
 The other part for this will be the language file. ContentTweaker will have already generated the en_us.lang file you 
-will need to a line that will look like `tile.contenttweaker.<block_name>=Block name` or in our case with the AntiIce it 
-will be `tile.contenttweaker.anti_ice=Anti Ice`. With both lang and texture filed in, you should be able to load up the 
+will need to a line that will look like `tile.contenttweaker.<block_name>.name=Block name` or in our case with the AntiIce it 
+will be `tile.contenttweaker.anti_ice.name=Anti Ice`. With both lang and texture filed in, you should be able to load up the 
 game and see your block which will have a model, texture, and name.
 
