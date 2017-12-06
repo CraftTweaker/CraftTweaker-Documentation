@@ -94,6 +94,20 @@ Below you will find a list for CoT's basic Part Types:
 	</table>
 </details>
 
+
+<details><summary>Minecart</summary>
+	<table>
+		<thead>
+			<tr><th>Name</th><th>Value</th><th>Required?</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>maxSpeed</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
+			<tr><td>drag</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
+			<tr><td>riddenDrag</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
+		</tbody>
+	</table>
+</details>
+
 ## Example
 
 ```JAVA

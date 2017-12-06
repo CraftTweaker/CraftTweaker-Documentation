@@ -11,9 +11,14 @@ This is the only thing you can do with the Commands package.
 
 ```JAVA
 call(String command, IPlayer player, IWorld world)
+call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
 ```
 Parameters:
 
 - String command → The command to be executed
 - [IPlayer](/Vanilla/Game/IPlayer) player → The Player executing the command
 - [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands) world → The world the command is executed in
+- boolean logToChat → Should the command output appear in the MC chat?
+- boolean overridePermissions should the command be executed regardless of the required permission level?
+
+The two booleans either both need to be added or omitted. If you call the command without them, they will be true.

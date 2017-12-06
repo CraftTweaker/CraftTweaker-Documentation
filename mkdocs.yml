@@ -222,7 +222,7 @@ pages:
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
         - Materials:
           - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
-          - IMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/IMaterialDefinition.md'
+          - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:

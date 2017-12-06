@@ -46,6 +46,10 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 		<ul>
 			<li>Armor ![Helmet Icon](Assets/armor_head.png)![Chest Plate Icon](Assets/armor_chest.png)![Leggins Icon](Assets/armor_legs.png)![Boots Icon](Assets/armor_feet.png)</li>
 		</ul>
+	<h4>Minecart</h4>
+		<ul>
+			<li>Minecart</li>
+		</ul>
 </details>
 
 ## Fields
