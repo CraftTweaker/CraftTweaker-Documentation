@@ -282,15 +282,18 @@ pages:
     - ZenOperators: 'Dev_Area/ZenOperators.md'
     - ZenAnnotations:
       - ZenAnnotations Overview: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
+      - BracketHandler: 'Dev_Area/ZenAnnotations/Annotation_BracketHandler.md'
       - ZenCaster: 'Dev_Area/ZenAnnotations/Annotation_ZenCaster.md'
       - ZenClass: 'Dev_Area/ZenAnnotations/Annotation_ZenClass.md'
       - ZenExpansion: 'Dev_Area/ZenAnnotations/Annotation_ZenExpansion.md'
       - ZenRegister: 'Dev_Area/ZenAnnotations/Annotation_ZenRegister.md'
       - ZenMember: 'Dev_Area/ZenAnnotations/ZenMembers.md'
+      - ModOnly: 'Dev_Area/ZenAnnotations/Annotation_ModOnly.md'
       - ZenMethod: 'Dev_Area/ZenAnnotations/Annotation_ZenMethod.md'
       - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
+      - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation

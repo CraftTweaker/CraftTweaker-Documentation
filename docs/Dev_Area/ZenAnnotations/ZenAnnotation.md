@@ -6,14 +6,16 @@ A ZenAnnotation can be given to a Class or its Methods to expose it to ZenScript
 
 These annotations can be given to ZenClasses
 
-| Annotation                                 | Value                                                                                            | Target | Information                                                       |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------|
-| [`@ZenClass`](Annotation_ZenClass)         | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from method formal name          | Class  | Name has to be unique                                             |
-| [`@ZenExpansion`](Annotation_ZenExpansion) | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Class  | Name has to exist already (you cant extend something nonexistant) |
-| [`@ZenRegister`](Annotation_ZenRegister)   |                                                                                                  | Class  | Used to Automatically register the class or expansion             |
-| [`@IterableList`](Annotation_Iterable)     | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Method needs to be assignable to Iterable<Type>                   |
-| [`@IterableMap`](Annotation_Iterable)      | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Class  | Method needs to be assignable to List<Type>                       |
-| [`@IterableSimple`](Annotation_Iterable)   | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Method needs to be assignable to Map<KeyType, ValueType>          |
+| Annotation                                     | Value                                                                                            | Target | Information                                                       |
+|------------------------------------------------|--------------------------------------------------------------------------------------------------|--------|-------------------------------------------------------------------|
+| [`@ZenClass`](Annotation_ZenClass)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from method formal name          | Class  | Name has to be unique                                             |
+| [`@ZenExpansion`](Annotation_ZenExpansion)     | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Class  | Name has to exist already (you cant extend something nonexistant) |
+| [`@ZenRegister`](Annotation_ZenRegister)       |                                                                                                  | Class  | Used to Automatically register the class or expansion             |
+| [`@IterableList`](Annotation_Iterable)         | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Iterable<Type>`                  |
+| [`@IterableMap`](Annotation_Iterable)          | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Class  | Class needs to be assignable to `List<Type>`                      |
+| [`@IterableSimple`](Annotation_Iterable)       | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Map<KeyType, ValueType>`         |
+| [`@BracketHandler`](Annotation_BracketHandler) | Bracket Handler Priority (e.g. `priority = 19`)                                                  | Class  | Class needs to be assignable to `IBracketHandler`                 |
+| [`@ModOnly`](Annotation_ModOnly)               | Required mod's name (`isModLoaded(annotation.getValue())` needs to eval to true)                 | Class  | Used in combination with [`@ZenRegister`](Annotation_ZenRegister) |
 
 
 ## Parameter annotations
@@ -39,6 +41,7 @@ These annotations can be given to Methods (both static and nonstatic)
 | [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
 | [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMember)          |                                                                          | Method |
 | [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod)     |                                                                          | Method |
+| [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc)           | The Additional Method info for `dumpZS`                                  | Method |
 
 
 ## Field annotations
