@@ -6,10 +6,10 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | Token Value | TokenName     | Token String                                              |
 |-------------|---------------|-----------------------------------------------------------|
 | 1           | T_ID          | `[a-zA-Z_][a-zA-Z_0-9]*`                                  |
-| 2           | T_INTVALUE    | `\\-?(0|[1-9][0-9]*) `                                    |
-| 3           | T_FLOATVALUE  | `\\-?(0|[1-9][0-9]*)\\.[0-9]+([eE][\\+\\-]?[0-9]+)?`      |
-| 4           | T_STRINGVALUE | `\'([^\'\\\\]|\\\\([\'\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))*\'` |
-| 4           | T_STRINGVALUE | `\"([^\"\\\\]|\\\\([\'\"\\\\/bfnrt]|u[0-9a-fA-F]{4}))*\"` |
+| 2           | T_INTVALUE    | `-?(0|[1-9][0-9]*) `                                      |
+| 3           | T_FLOATVALUE  | `-?(0|[1-9][0-9]*)\.[0-9]+([eE][\+\-]?[0-9]+)?`           |
+| 4           | T_STRINGVALUE | `'([^'\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*'`            |
+| 4           | T_STRINGVALUE | `"([^"\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*"`            |
 | 5           | T_AOPEN       | `{`                                                       |
 | 6           | T_ACLOSE      | `}`                                                       |
 | 7           | T_SQBROPEN    | `[`                                                       |

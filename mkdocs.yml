@@ -278,6 +278,7 @@ pages:
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
   - Developer Area:
+    - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
     - ZenOperators: 'Dev_Area/ZenOperators.md'
     - ZenAnnotations:
