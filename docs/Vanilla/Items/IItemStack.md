@@ -163,6 +163,14 @@ item.removeTag(tag);
 ```
 `tag` is an [IData](/Vanilla/Data/IData) Object.
 
+#### Update Tag
+You can also update existing tags. This means if the tag provided already exists, it is overwritten, if it does not, it will be created, all other tags remain the same.
+```
+item.updateTag(tag);
+```
+`tag` is an [IData](/Vanilla/Data/IData) Object.
+
+
 
 ### Liquid
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.

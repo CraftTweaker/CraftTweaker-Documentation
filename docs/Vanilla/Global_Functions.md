@@ -42,6 +42,8 @@ Doesn't work on primitives!
 isNull(<minecraft:dirt>);
 ```
 Returns a boolean
+Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+
 
 ## max
 
