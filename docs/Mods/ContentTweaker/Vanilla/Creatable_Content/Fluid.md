@@ -7,6 +7,7 @@ Before you can add the fluid, you need to create a Fluid Representation which wi
 This is where the [VanillaFactory](VanillaFactory) comes in:
 ```JAVA
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
+mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
 
 ## Import the representation Package

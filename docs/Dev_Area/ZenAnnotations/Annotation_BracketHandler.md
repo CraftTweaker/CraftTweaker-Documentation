@@ -6,7 +6,7 @@ The annotated class simply need to implement [IBracketHandler](https://github.co
 
 ## Example:
 
-[CraftTweaker Test Project Bracket Handler](https://github.com/kindlich/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
+[CraftTweaker Test Project Bracket Handler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 ```
 @BracketHandler(priority = 34)
 @ZenRegister

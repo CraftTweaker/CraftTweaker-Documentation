@@ -49,11 +49,13 @@ Returns a [ICreativeTab](Creative_Tab) object. Check the [Creative Tab page](Cre
 ### Create Fluids
 ```JAVA
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
+mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
 Parameters:
 
 - String unlocalizedName: The Fluid's unlocalized name.
 - int color: The fluid's color-code.
+- [CTColor](/Mods/ContentTweaker/Vanilly/Types/Color/Color) color: The fluid's color as color-Object.
 
 Returns a [FluidRepresentation](Fluid) object. Check the [Fluid page](Fluid) for further information and an example script.
 

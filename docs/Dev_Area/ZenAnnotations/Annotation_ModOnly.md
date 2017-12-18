@@ -5,7 +5,7 @@ It only registers a ZenClass if the provided mod is loaded.
 
 ## Example
 
-[Crafttweaker Test Project ModOnly](https://github.com/kindlich/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[Crafttweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 ```
 @ModOnly(value = "mcp")
 @ZenClass(value = "crafttweaker.tests.modOnly")

@@ -236,6 +236,12 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
 <minecraft:apple>.ores;
 ```
 
+### Owner
+Returns a string containing the modid of the mod that adds the item.
+```
+<minecraft:apple>.owner;
+```
+
 ### As IBlock
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
 ```

@@ -32,3 +32,14 @@ transformedItem = item.noReturn();
 //Causes multiple items to be consumed.
 transformedItem = item.transformConsume(3);
 ```
+
+
+## Registering own item Transformers
+
+You can also add your own itemTransformers. These are special functions that accept two parameters: The [item](IItemStack) itself and the [player](/Vanilla/Game/IPlayer) performing the crafting.
+
+```
+transformedItem = item.transform(function(item, player) {return item;});
+```
+
+The function needs to return an [IItemStack](IItemStack)

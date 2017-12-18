@@ -19,11 +19,12 @@ var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 
 You can set these Properties
 
-| ZenMethod              | Parameter                     |
-|------------------------|-------------------------------|
-| setName(name)          | String name                   |
-| setPartType(partType)  | [PartType](PartType) partType |
-| setOreDictName(prefix) | String prefix                 |
+| ZenMethod                           | Parameter                      |
+|-------------------------------------|--------------------------------|
+| setName(name)                       | String name                    |
+| setPartType(partType)               | [PartType](PartType) partType  |
+| setOreDictName(prefix)              | String prefix                  |
+| setAdditionalOreDictNames(prefixes) | String... prefixes             |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
 You can see in the example scripts below what this means.
