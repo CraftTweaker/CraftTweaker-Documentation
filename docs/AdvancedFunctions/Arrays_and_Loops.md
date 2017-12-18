@@ -126,3 +126,22 @@ for item in loadedMods["minecraft"].items {
 	recipes.remove(item);
 }
 ```
+
+# Adding items to an Array
+
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You cannot add nested Arrays or primitive Arrays.  
+You use the `+` operator for array Addition:
+
+```java
+import crafttweaker.item.IItemStack;
+
+val iron = <minecraft:iron_ingot>;
+var array as IItemStack[] = [iron, iron, iron];
+
+array += iron;
+for item in array {
+	print(item.displayName);
+}
+```
