@@ -18,7 +18,7 @@
 | INDEXSET     | `[i] = v`                   |                                                                   |
 | INDEXGET     | `[i]`                       |                                                                   |
 | RANGE        | `i .. v`                    | `i to v`                                                          |
-| CONTAINS     | `in`                        |                                                                   |
+| CONTAINS     | `in`                        | `has`                                                             |
 | COMPARE      | `==` `<` `>` `<=` `>=` `!=` | Annotated Method should return an int! (Same as Integer.compare)  |
 | MEMBERGETTER | `.member`                   | Same as [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers) |
 | MEMBERSETTER | `.member = v`               |                                                                   |

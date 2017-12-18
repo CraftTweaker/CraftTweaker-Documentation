@@ -62,6 +62,7 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 107         | T_STRING      | `string`                                                  |
 | 108         | T_FUNCTION    | `function`                                                |
 | 109         | T_IN          | `in`                                                      |
+| 109         | T_IN          | `has`                                                     |
 | 110         | T_VOID        | `void`                                                    |
 | 120         | T_AS          | `as`                                                      |
 | 121         | T_VERSION     | `version`                                                 |
