@@ -205,6 +205,8 @@ pages:
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
+      - Botania:
+        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
