@@ -5,9 +5,19 @@ It can be accessed using the `items` keyword.
 
 ## Creating Potions
 The createPotions function allows you to create custom potions.  
-Returns the potion as [IItemStack](/Vanilla/Items/IItemStack).
+Returns the potion as [IItemStack](/Vanilla/Items/IItemStack).  
+As the Parameter for this function is a vararg, you can either provide one Object[][] or many Object[].  
+In both cases each Object[] needs to contain
+
+1. An [IPotion](/Vanilla/Potions/IPotion)
+2. An int describing the effect amplifier/strength
+3. An int describing the effect duration.  
+
+If an Object[] is not of this length or not in this order, it will be ignored.
 
 ```JAVA
+//createPotion(Object[]...);
+//createPotion([effect,strength,duration],[effect2, strength2,duration2],...);
 //createPotion([[effect,strength,duration],[effect2, strength2,duration2],...]);
 val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 ```

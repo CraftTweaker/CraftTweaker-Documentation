@@ -87,9 +87,11 @@ A loop is a function that repeats itself. You can use loops to apply an action t
 The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.
 
 ```
-val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>];
-val JArray = [<minecraft:grass>,<minecraft:wood>,<minecraft:gold_ingot>];
-val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>];
+import crafttweaker.item.IItemStack;
+
+val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
+val JArray = [<minecraft:grass>,<minecraft:log>,<minecraft:gold_ingot>] as IItemStack[];
+val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
 
 
 //for [IntegerName, ] elementName in IArray {code}
@@ -122,5 +124,24 @@ for i in 10 .. 20 {
 for item in loadedMods["minecraft"].items {
 	//defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
 	recipes.remove(item);
+}
+```
+
+# Adding items to an Array
+
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You cannot add nested Arrays or primitive Arrays.  
+You use the `+` operator for array Addition:
+
+```java
+import crafttweaker.item.IItemStack;
+
+val iron = <minecraft:iron_ingot>;
+var array as IItemStack[] = [iron, iron, iron];
+
+array += iron;
+for item in array {
+	print(item.displayName);
 }
 ```

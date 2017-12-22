@@ -102,9 +102,6 @@ This is what item Transformers are there for.
 
 val item = <minecraft:apple>;
 
-//Item won't be consumed and stays in the crafting slot.
-var transformedItem = item.reuse();
-
 //Item won't be consumed but will be placed in your inventory upon crafting.
 transformedItem = item.giveBack();
 

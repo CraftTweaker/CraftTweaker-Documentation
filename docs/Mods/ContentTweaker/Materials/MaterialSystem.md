@@ -86,3 +86,14 @@ Required Parameters:
 
 - [Material](/Mods/ContentTweaker/Materials/Materials/Material) material: The material that the registered parts should be made of
 - String[] partNames: The names of the parts that should be registered → e.g. ["gear", "ingot"]
+
+## Retrieve already registered things:
+
+You can use these methods to retrieve a map using strings as keys and the object as values:
+
+| Method Name        | Return Type                                                                           |
+|--------------------|---------------------------------------------------------------------------------------|
+| getMaterialParts() | [`Map<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart) |
+| getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material)         |
+| getParts()         | [`Map<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part)                     |
+| getPartType()      | [`Map<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType)             |

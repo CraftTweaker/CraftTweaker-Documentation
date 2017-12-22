@@ -70,6 +70,7 @@ Below you will find a list for CoT's basic Part Types:
 		<tbody>
 			<tr><td>temperature</td><td>An "Integer" (e.g. "300")</td><td>No</td></tr>
 			<tr><td>density</td><td>An "Integer" (e.g. "1000")</td><td>No</td></tr>
+			<tr><td>luminosity</td><td>An "Integer" (e.g. "0")</td><td>No</td></tr>
 			<tr><td>viscosity</td><td>An "Integer" (e.g. "100")</td><td>No</td></tr>
 			<tr><td>vaporize</td><td>A "boolean" (e.g. "true")</td><td>No</td></tr>
 		</tbody>
@@ -89,6 +90,20 @@ Below you will find a list for CoT's basic Part Types:
 			<tr><td>resistance</td><td>An "Integer list" (e.g. "15,15")</td><td>No</td></tr>
 			<tr><td>harvestLevel</td><td>An "Integer list" (e.g. "1,1")</td><td>No</td></tr>
 			<tr><td>harvestTool</td><td>A "toolList" (e.g. "pickaxe,pickaxe")</td><td>No</td></tr>
+		</tbody>
+	</table>
+</details>
+
+
+<details><summary>Minecart</summary>
+	<table>
+		<thead>
+			<tr><th>Name</th><th>Value</th><th>Required?</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>maxSpeed</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
+			<tr><td>drag</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
+			<tr><td>riddenDrag</td><td>A "float" (e.g. "1.0")</td><td>No</td></tr>
 		</tbody>
 	</table>
 </details>

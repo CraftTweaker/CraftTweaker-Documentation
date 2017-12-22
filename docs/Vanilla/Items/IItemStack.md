@@ -163,6 +163,14 @@ item.removeTag(tag);
 ```
 `tag` is an [IData](/Vanilla/Data/IData) Object.
 
+#### Update Tag
+You can also update existing tags. This means if the tag provided already exists, it is overwritten, if it does not, it will be created, all other tags remain the same.
+```
+item.updateTag(tag);
+```
+`tag` is an [IData](/Vanilla/Data/IData) Object.
+
+
 
 ### Liquid
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.
@@ -228,8 +236,17 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
 <minecraft:apple>.ores;
 ```
 
+### Owner
+Returns a string containing the modid of the mod that adds the item.
+```
+<minecraft:apple>.owner;
+```
+
 ### As IBlock
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
+```
+<minecraft:dirt>.asBlock();
+```
 
 ## ItemTransformers and ItemConditions
 You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  

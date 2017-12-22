@@ -55,13 +55,8 @@ item.onlyDamageBetween(value1, value2);
 
 ### Get Items back or explicitly forbid an item's reusability
 Sometimes you need a recipe where you get some of your input items back.  
-By applying `reuse()` or `transformDamage(int)` you can create such recipes.
+By applying `transformDamage(int)` you can create such recipes.
 
-#### reuse
-The input item won't lose any durability when you craft and you get it back.
-```
-item.reuse();
-```
 
 #### transformDamage
 The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
@@ -102,3 +97,14 @@ item.withTag(NBTTag);
 
 <minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
 ```
+
+
+## Registering own item Conditions
+
+You can also add your own itemConditions. These are special functions that accept the [item](IItemStack) itself as single parameter.
+
+```
+transformedItem = item.transform(function(item) {return true;});
+```
+
+The function needs to return a bool that is true if the item matches the condition.

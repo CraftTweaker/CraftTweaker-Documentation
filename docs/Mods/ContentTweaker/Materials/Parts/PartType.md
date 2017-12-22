@@ -18,6 +18,7 @@ Check out below entry to learn how to create a new PartType.
 		<li>ore</li>
 		<li>fluid</li>
 		<li>armor</li>
+		<li>minecart</li>
 	</ul>
 </details>
 

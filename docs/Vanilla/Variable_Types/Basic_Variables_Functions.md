@@ -11,9 +11,21 @@ Strings provide some functionality
 
 `"Hello".length` Returns the string's length as int.  
 `"Hello"[1]` Returns the character at the string's given index as another string.  
-`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean.  
+`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
 `"Hel" ~ "lo " + "World"` You also can add/concatenate strings.
 `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
+
+Aside from these, all parameterless methods that are available to java Strings are also available to ZenScript strings!  
+This includes: 
+
+- toLowerCase
+- toUpperCase
+- getBytes
+- hashCode
+- intern
+- isEmpty
+- toCharArray
+- trim
 
 ## Integers
 Integers provide some functionality

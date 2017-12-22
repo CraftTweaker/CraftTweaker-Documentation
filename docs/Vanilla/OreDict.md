@@ -1,6 +1,11 @@
-# Ore Dictionary  Entries
+# Ore Dictionary Entries
 
-If you want to refer to all entries that share the same oreDictionary entry, you can use its oreDictionary tag in recipes.
+If you want to refer to all entries that share the same oreDictionary entry, you can use its oreDictionary tag in recipes.  
+An ore dictionary entry is an IOreDictEntry object and its class can be [imported](/AdvancedFunctions/Import) using `import crafttweaker.oreDict.IOredictEntry;` if needed.  
+There also is a second class which you won't need as often called IOreDict (`import crafttweaker.oreDict.IOreDict`). This class is the whole OreDictionary and can be used to retrieve oreDictEntries.  
+
+Think of the oreDictionary as a lexicon:  
+The whole book is the IOreDict and each of its chapters are IOreDictEntries describing several items.
 
 
 ## How to refer to oreDictionaries
@@ -16,13 +21,16 @@ This will give you access to the OreDict for `ingotIron`.
 
 
 ### Using the oreDict Keyword
-You can also refer to oreDictionaries using the oreDict Keyword.
+You can also refer to oreDictionaries using the oreDict Keyword.  
+This keyword, like `print`, is a [global Keyword](/Vanilla/Global_Functions) and can be used without the need to import anything.
 
 ```java
-oreDict.ingotIron
+oreDict.ingotIron;
+oreDict.get("ingotIron");
+oreDict["ingotIron"];
 ```
 
-Be careful though, as you cannot create an oreDictionary named `entries` that way. Why, you ask?  
+Be careful though, as you cannot create an oreDictionary named `entries` using the first way. Why, you ask?  
 
 ```java
 //the entries member is for retrieving all registered oreDictionary entries!
@@ -32,8 +40,27 @@ for oreDictEntry in allEntries{
 	print(oreDictEntry.name);
 }
 
+//Alternatively, you can just iterate through oreDict
+for entry in oreDict {
+	print(entry.name);
+}
+
 ```
 
+## How to check if an oreDic entry exists
+
+You can use the `in` operator to check if an oreDict already exists:
+```
+if (oreDict in "ingotIron") {
+	print("ingotIron exists!");
+}
+
+
+//Alternatively use the contains function:
+if(oreDict.contains "ingotIron") {
+	print("ingotIron exists!");	
+}
+```
 
 
 ## How to add/remove an oreDic entry

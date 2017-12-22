@@ -19,11 +19,12 @@ var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 
 You can set these Properties
 
-| ZenMethod               | Parameter         |
-|-------------------------|-------------------|
-| setName(name)           | String name       |
-| setColor(color)         | int color         |
-| setHasEffect(hasEffect) | boolean hasEffect |
+| ZenMethod               | Parameter                                                       |
+|-------------------------|-----------------------------------------------------------------|
+| setName(name)           | String name                                                     |
+| setColor(color)         | int color                                                       |
+| setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilly/Types/Color/Color) color |
+| setHasEffect(hasEffect) | boolean hasEffect                                               |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
 You can see in the example scripts below what this means.

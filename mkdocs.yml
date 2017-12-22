@@ -4,6 +4,7 @@ pages:
   - Getting Started With Scripts: 'Getting_Started.md'
   - Commands: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
+  - Global functions: 'Vanilla/Global_Functions.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
   - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
@@ -12,6 +13,7 @@ pages:
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
+    - Global Variables: 'AdvancedFunctions/Global_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
     - Preprocessors:
@@ -46,12 +48,21 @@ pages:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
     - Entities:
+      - Attributes:
+        - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
+        - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
+        - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
+      - IEntity: 'Vanilla/Entities/IEntity.md'
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
+      - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
+      - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
+      - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IPlayer: 'Vanilla/Game/IPlayer.md'
+      - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
@@ -67,11 +78,15 @@ pages:
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
     - Recipes:
+      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Utils:
+      - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
+      - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
+      - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
     - Variable Types:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
@@ -82,8 +97,8 @@ pages:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
+        - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
-        - Ritual Mineralis: 'Mods/Astral_Sorcery/Ritual_Mineralis.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
@@ -103,11 +118,13 @@ pages:
           - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
+          - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
         - Advanced Functionality: 
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
         - Types:
@@ -117,6 +134,8 @@ pages:
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+          - Color:
+            - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
           - Item:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
           - Player:
@@ -183,9 +202,22 @@ pages:
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
+        - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
+      - Botania:
+        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
+        - Recipes: 
+          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
+          - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
+          - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
+          - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
+          - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
+          - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
+          - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
+          - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
@@ -198,9 +230,15 @@ pages:
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - Tinkers' Construct:
+        - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
+        - Brackets: 
+          - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - Materials:
+          - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
+          - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:
@@ -256,6 +294,24 @@ pages:
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
         - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+  - Developer Area:
+    - Using IIngredients: 'Dev_Area/Ingredients.md'
+    - ZenTokens: 'Dev_Area/ZenTokens.md'
+    - ZenOperators: 'Dev_Area/ZenOperators.md'
+    - ZenAnnotations:
+      - ZenAnnotations Overview: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
+      - BracketHandler: 'Dev_Area/ZenAnnotations/Annotation_BracketHandler.md'
+      - ZenCaster: 'Dev_Area/ZenAnnotations/Annotation_ZenCaster.md'
+      - ZenClass: 'Dev_Area/ZenAnnotations/Annotation_ZenClass.md'
+      - ZenExpansion: 'Dev_Area/ZenAnnotations/Annotation_ZenExpansion.md'
+      - ZenRegister: 'Dev_Area/ZenAnnotations/Annotation_ZenRegister.md'
+      - ZenMember: 'Dev_Area/ZenAnnotations/ZenMembers.md'
+      - ModOnly: 'Dev_Area/ZenAnnotations/Annotation_ModOnly.md'
+      - ZenMethod: 'Dev_Area/ZenAnnotations/Annotation_ZenMethod.md'
+      - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
+      - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
+      - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
+      - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation

@@ -6,3 +6,7 @@ Astral Sorcery is a magic mod focused around harnessing the powers of starlight 
 
 Astral Sorcery comes with NATIVE crafttweaker integration.  
 This means that issues with the added methods should be discussed at the [Astral sorcery issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues).
+
+## Removed Crafttweaker methods
+
+- Astras Sorcery's Crafttweaker integration once featured a Mineralis Ritual. This is now handled by a config option!

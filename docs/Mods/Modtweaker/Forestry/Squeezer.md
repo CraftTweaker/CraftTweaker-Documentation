@@ -7,6 +7,8 @@ You can call the  package using `mods.forestry.Squeezer`
 
 ## Recipe Removal
 
+Beware, you cannot remove the recipes that fill or drain fluid containers, such as forestry cans!
+
 ```JAVA
 //mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
 mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
