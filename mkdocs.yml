@@ -208,6 +208,15 @@ pages:
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Recipes: 
+          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
+          - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
+          - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
+          - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
+          - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
+          - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
+          - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
+          - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'

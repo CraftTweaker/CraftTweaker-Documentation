@@ -50,4 +50,3 @@ definition.luminosity = 0;
 | temperature | temperature | This returns/sets the temperature of the referred liquid | int                                           |
 | viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int                                           |
 | gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean                                       |
-| containers  |             | This returns all Containers for the referred liquid      | List<[IItemStack](/Vanilla/Items/IItemStack)> |
