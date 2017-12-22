@@ -208,6 +208,7 @@ pages:
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
         - Recipes: 
           - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
