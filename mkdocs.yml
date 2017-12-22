@@ -293,6 +293,7 @@ pages:
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
+        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
