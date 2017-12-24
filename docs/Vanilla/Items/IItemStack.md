@@ -243,9 +243,11 @@ Returns a string containing the modid of the mod that adds the item.
 ```
 
 ### As IBlock
-You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast will throw an exception.
 ```
 <minecraft:dirt>.asBlock();
+
+<minecraft:dirt> as IBlock;
 ```
 
 ## ItemTransformers and ItemConditions
