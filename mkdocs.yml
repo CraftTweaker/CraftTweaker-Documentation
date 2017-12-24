@@ -253,6 +253,23 @@ pages:
         - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+    - Immersive Engineering:
+      - About IE: 'Mods/ImmersiveEngineering/ImmersiveEngineering.md'
+      - Recipes:
+        - Alloy Smelter : 'Mods/ImmersiveEngineering/Recipes/AlloySmelter.md'
+        - Arc Furnace : 'Mods/ImmersiveEngineering/Recipes/ArcFurnace.md'
+        - Blast Furnace : 'Mods/ImmersiveEngineering/Recipes/BlastFurnace.md'
+        - Blueprint : 'Mods/ImmersiveEngineering/Recipes/Blueprint.md'
+        - Bottling Machine : 'Mods/ImmersiveEngineering/Recipes/BottlingMachine.md'
+        - Coke Oven : 'Mods/ImmersiveEngineering/Recipes/CokeOven.md'
+        - Crusher : 'Mods/ImmersiveEngineering/Recipes/Crusher.md'
+        - Diesel Handler : 'Mods/ImmersiveEngineering/Recipes/DieselHandler.md'
+        - Excavator : 'Mods/ImmersiveEngineering/Recipes/Excavator.md'
+        - Fermenter : 'Mods/ImmersiveEngineering/Recipes/Fermenter.md'
+        - Metal Press : 'Mods/ImmersiveEngineering/Recipes/MetalPress.md'
+        - Mixer : 'Mods/ImmersiveEngineering/Recipes/Mixer.md'
+        - Refinery : 'Mods/ImmersiveEngineering/Recipes/Refinery.md'
+        - Squeezer : 'Mods/ImmersiveEngineering/Recipes/Squeezer.md'
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/IndustrialForegoing/IndustrialForegoing.md'
       - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
