@@ -68,14 +68,18 @@ item.transformDamage(value);
 ### NBT-Tags
 Sometimes you want your ingredients to need a specific NBT-Tag.
 The recipe doesn't care if your item has NBT-Tags other than the ones specified, 
-So a pickaxe with a speciic lore may also be enchanted and would still work!  
+So a pickaxe with a specific lore may also be enchanted!  
+
+If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
 
 Here's how you do it:
 `NBTTag` is your NBT Data
 ```
+item.withTag(NBTData);
 item.onlyWithTag(NBTTag);
 
 <minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
+<minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
 ```
 
 ## Output modifiers

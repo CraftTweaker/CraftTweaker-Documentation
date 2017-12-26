@@ -144,7 +144,12 @@ conditionedItem = item.onlyDamageAtMost(100);
 conditionedItem = item.onlyDamageBetween(10,100);
 
 //Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+//If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
 conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
+
+//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will shot the tags in the recipe!
+conditionedItem = item.withTag({display: {Name: "Tomato"}});
 
 //Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
 //Note that if you only add this, you will still require only one item per craft.
