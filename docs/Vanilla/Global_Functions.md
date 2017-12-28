@@ -85,6 +85,6 @@ Returns a double
 | loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods)                                           |
 | logger     | Accesses the [logger](/Vanilla/Utils/Logger)                                                  |
 | oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Recipes_Crafting_Table)                        |
+| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table)               |
 | server     | Accesses [server Methods](/Vanilla/Game/IServer)                                              |
 | vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds) available) |

@@ -14,7 +14,6 @@ pages:
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Global Variables: 'AdvancedFunctions/Global_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
-    - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
     - Preprocessors:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
@@ -81,7 +80,13 @@ pages:
       - IPotion: 'Vanilla/Potions/IPotion.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
+      - Crafting Table Recipes: 
+        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+        - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
+        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
+        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
+        - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
       - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Utils:
