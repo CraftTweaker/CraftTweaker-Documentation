@@ -18,19 +18,22 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 			<li>Beam ![beam icon](Assets/beam.png)</li>
 			<li>Bolt ![Bolt icon](Assets/bolt.png)</li>
 			<li>Casing ![Casing icon](Assets/casing.png)</li>
+			<li>Clump ![Clump icon](Assets/clump.png)</li>
 			<li>Crystal ![Crystal icon](Assets/crystal.png)</li>
 			<li>Crushed Ore (crushed_ore) ![Crushed Ore icon](Assets/crushed_ore.png)</li>
 			<li>Dense Plate (dense_plate) ![Dense Plate icon](Assets/dense_plate.png)</li>
+			<li>Dirty Dust (dirty_dust) ![Dirty Dust icon](Assets/dirty_dust.png)</li>
 			<li>Dust ![Dust icon](Assets/dust.png)</li>
 			<li>Gear ![Gear icon](Assets/gear.png)</li>
 			<li>Ingot ![Ingot icon](Assets/ingot.png)</li>
 			<li>Nugget ![Nugget icon](Assets/nugget.png)</li>
 			<li>Plate ![Plate icon](Assets/plate.png)</li>
 			<li>Rod ![Rod icon](Assets/rod.png)</li>
+			<li>Shard ![Shard icon](Assets/shard.png)</li>
 		</ul>
 	<h4>Blocks:</h4>
 		<ul>
-			<li>Block</li>
+			<li>Block ![Block icon](Assets/block.png)</li>
 		</ul>
 	<h4>Ores:</h4>
 		<ul>
