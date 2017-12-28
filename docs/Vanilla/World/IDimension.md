@@ -12,5 +12,6 @@ The `dimension` getter is useless though since it only returns this object.
 
 
 ## Methods/Getters
-`dimension.isDay` returns if it is currently day or not in the dimension as bool.  
-`dimension.getBrightness(x,y,z)` returns the brightness at the given location as int. X,y and z are ints.  
+
+- `dimension.isDay` returns if it is currently day or not in the dimension as bool.  
+- `dimension.getBrightness(x,y,z)` returns the brightness at the given location as int. X,y and z are ints.  

@@ -42,9 +42,13 @@ pages:
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Container: 
+      - IContainer: 'Vanilla/Container/IContainer.md'
     - Data:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
+    - Damage:
+      - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
     - Entities:
       - Attributes:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
