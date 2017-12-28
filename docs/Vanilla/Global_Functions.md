@@ -77,7 +77,7 @@ Returns a double
 |------------|-----------------------------------------------------------------------------------------------|
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient)                                              |
-| events     | Accesses the Event Handler (NYI!)                                                             |
+| events     | Accesses the [Event Handler](/AdvancedFunctions/Events/IEventManager)                         |
 | format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter)                                  |
 | furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Recipes_Furnace)                              |
 | game       | Accesses [Game functions](/Vanilla/Game/IGame)                                                |
