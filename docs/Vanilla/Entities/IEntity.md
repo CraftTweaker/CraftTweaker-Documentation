@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | GetterName   | GetterMethod      | Return Type                             |
 |--------------|-------------------|-----------------------------------------|
-| dimension    |                   | IDimension                              |
+| dimension    |                   | [IDimension](/Vanilla/World/IDimension) |
 | x            | getX()            | double                                  |
 | y            | getY()            | double                                  |
 | z            | getZ()            | double                                  |
@@ -20,7 +20,7 @@ It might be required for you to import the package if you encounter any issues (
 | wet          | isWet()           | boolean                                 |
 | passengers   | getPassengers()   | `List<IEntity>`                         |
 | alive        | isAlive()         | boolean                                 |
-| ridingEntity | getRidingEntity() | Entity                                  |
+| ridingEntity | getRidingEntity() | IEntity                                 |
 | customName   | getCustomName()   | String                                  |
 | immuneToFire | isImmuneToFire()  | boolean                                 |
 | air          | getAir()          | int                                     |

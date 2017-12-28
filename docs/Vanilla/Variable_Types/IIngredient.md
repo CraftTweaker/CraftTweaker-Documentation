@@ -20,7 +20,7 @@ So, what can we do with this?
 
 ### Mark
 
-You can mark an IIngredient so you can later use it in [crafting functions](/AdvancedFunctions/Recipe_Functions).
+You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions).
 You can also retrieve the mark applied earlier.
 
 ```
