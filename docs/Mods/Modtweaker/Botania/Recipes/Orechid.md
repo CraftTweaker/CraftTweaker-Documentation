@@ -10,7 +10,7 @@ You can find all registered ElvenTrade recipes using [`/ct botorechid`](/Mods/Mo
 
 ## Recipe addition
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict) as output parameter, or the name of said oreDictEntry as string.
+You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) as output parameter, or the name of said oreDictEntry as string.
 
 ```
 //mods.botania.Orechid.addRecipe(IOreDictEntry oreDict, int weight);
@@ -22,7 +22,7 @@ mods.botania.Orechid.addRecipe("logWood", 500);
 
 ## Recipe removal
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict) as output parameter, or the name of said oreDictEntry as string.
+You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) as output parameter, or the name of said oreDictEntry as string.
 
 ```
 //mods.botania.Orechid.removeRecipe(IOreDictEntry oreDict);

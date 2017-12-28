@@ -25,7 +25,7 @@ mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["W
 
 ## Add Description
 A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack), an [IItemStack](/Vanilla/Items/IItemStack)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) or an [IOreDictEntry](/Vanilla/OreDict). 
+You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack), an [IItemStack](/Vanilla/Items/IItemStack)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry). 
 
 If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
 Each string parameter will have at least one line and wrap around the end of the window if too long.  

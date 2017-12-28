@@ -1,7 +1,7 @@
 # IIngredient
 
 An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
+This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
@@ -61,7 +61,7 @@ Using the OR methods is not adviced, as JEI does not display these recipes and s
 
 ### Get Possible Items or Liquids
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict) or if you OR-ed two Ingredients.  
+Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry) or if you OR-ed two Ingredients.  
 You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack)> List using the first function.  
 The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack)[] instead of a list.
 Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) List.

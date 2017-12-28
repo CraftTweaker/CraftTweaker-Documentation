@@ -22,11 +22,11 @@ val itemDefinitionList = game.items;
 
 ### ZenGetters
 
-| ZenGetter | What does it do                                                                                      | Return Type                             | Usage      |
-|-----------|------------------------------------------------------------------------------------------------------|-----------------------------------------|------------|
-| id        | Returns the item ID                                                                                  | String                                  | `def.id`   |
-| name      | Returns the unlocalized item Name                                                                    | String                                  | `def.name` |
-| ores      | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | List<[IOreDictEntry](/Vanilla/OreDict)> | `def.ores` |
+| ZenGetter | What does it do                                                                                      | Return Type                                             | Usage      |
+|-----------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|------------|
+| id        | Returns the item ID                                                                                  | String                                                  | `def.id`   |
+| name      | Returns the unlocalized item Name                                                                    | String                                                  | `def.name` |
+| ores      | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` | `def.ores` |
 
 
 ### ZenMethods

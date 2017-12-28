@@ -9,9 +9,9 @@ Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>`
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>`
 If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that.
-Please refer to the [Ore Dictionary](/Vanilla/OreDict) Entry for further information on what to do with them.
+Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry) Entry for further information on what to do with them.
 
 
 # Getting all Registered ore Dictionaries

@@ -13,7 +13,7 @@ There are several methods that return an IItemStack
 * Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item) `<minecraft:apple>`
 * Using the `makeStack()` method on a [IItemDefinition](IItemDefinition) object `<minecraft:stone>.definition.makeStack(0)`
 * Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop) object
-* Using the `firstItem` getter on a [ore Dictionary entry](/Vanilla/OreDict)
+* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)
 
 ## Calling an IItemStack[] or a IItemStack List
 If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
@@ -231,7 +231,7 @@ Returns an IItemStack with the given Damage.
 ```
 
 ### Ores
-Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
+Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) referring to this item.
 ```
 <minecraft:apple>.ores;
 ```

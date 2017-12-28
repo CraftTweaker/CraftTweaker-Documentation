@@ -36,7 +36,7 @@ int `craftingTickTime`,
 [IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs`
 
 The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
-You can use [IItemStacks](/Vanilla/Items/IItemStack), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack), [IOreDictEntries](/Vanilla/OreDict) or `null` as the array's members
+You can use [IItemStacks](/Vanilla/Items/IItemStack), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) or `null` as the array's members
 
 These recipes cannot be shapeless!
 
