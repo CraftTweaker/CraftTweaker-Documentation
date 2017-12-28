@@ -232,6 +232,9 @@ pages:
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - Refined Storage:
+        - Recipes:
+          - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
         - Brackets: 
