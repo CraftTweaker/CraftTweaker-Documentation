@@ -248,6 +248,8 @@ pages:
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:
+        - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
+        - Arcane Ensorcellator: 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
         - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
