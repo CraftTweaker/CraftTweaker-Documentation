@@ -284,6 +284,11 @@ pages:
           - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
+      - Tinkers' Complement:
+        - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
+        - Handlers:
+          - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
+          - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
       - Thermal Expansion:
         - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
         - Arcane Ensorcellator: 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
