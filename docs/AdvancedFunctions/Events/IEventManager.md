@@ -33,23 +33,23 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 
 | ZenMethod                | Event Class                                                                     | Already Implemented? |
 |--------------------------|---------------------------------------------------------------------------------|----------------------|
-| onPlayerLoggedIn         | [crafttweaker.event.PlayerLoggedInEvent](events/PlayerLoggedIn)                 | ✔                    |
-| onPlayerLoggedOut        | [crafttweaker.event.PlayerLoggedOutEvent](events/PlayerLoggedOut)               | ✔                    |
-| onPlayerCrafted          | [crafttweaker.event.PlayerCraftedEvent](events/PlayerCrafted)                   | ✔                    |
-| onPlayerSmelted          | [crafttweaker.event.PlayerSmeltedEvent](events/PlayerSmelted)                   | ✔                    |
-| onPlayerChangedDimension | [crafttweaker.event.PlayerChangedDimensionEvent](events/PlayerChangedDimension) | ✘                    |
-| onPlayerRespawn          | [crafttweaker.event.PlayerRespawnEvent](events/PlayerRespawn)                   | ✘                    |
-| onPlayerAttackEntity     | [crafttweaker.event.PlayerAttackEntityEvent](events/PlayerAttackEntity)         | ✘                    |
-| onPlayerBonemeal         | [crafttweaker.event.PlayerBonemealEvent](events/PlayerBonemeal)                 | ✘                    |
-| onPlayerInteractEntity   | [crafttweaker.event.PlayerInteractEntityEvent](events/PlayerInteractEntity)     | ✘                    |
-| onPlayerPickup           | [crafttweaker.event.PlayerPickupEvent](events/PlayerPickup)                     | ✘                    |
-| onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](events/PlayerPickupItem)             | ✘                    |
-| onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](events/PlayerFillBucket)             | ✘                    |
-| onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](events/PlayerDeathDrops)             | ✘                    |
-| onPlayerInteract         | [crafttweaker.event.PlayerInteractEvent](events/PlayerInteract)                 | ✘                    |
-| onPlayerOpenContainer    | [crafttweaker.event.PlayerOpenContainerEvent](events/PlayerOpenContainer)       | ✘                    |
-| onPlayerPickupXp         | [crafttweaker.event.PlayerPickupXpEvent](events/PlayerPickupXp)                 | ✘                    |
-| onPlayerSleepInBed       | [crafttweaker.event.PlayerSleepInBedEvent](events/PlayerSleepInBed)             | ✘                    |
-| onPlayerUseHoe           | [crafttweaker.event.PlayerUseHoeEvent](events/PlayerUseHoe)                     | ✘                    |
-| onPlayerUseItemStart     | [crafttweaker.event.PlayerUseItemStartEvent](events/PlayerUseItemStart)         | ✘                    |
-| onPlayerUseItemTick      | [crafttweaker.event.PlayerUseItemTickEvent](events/PlayerUseItemTick)           | ✘                    |
+| onPlayerLoggedIn         | [crafttweaker.Event.PlayerLoggedInEvent](events/PlayerLoggedIn)                 | ✔                    |
+| onPlayerLoggedOut        | [crafttweaker.Event.PlayerLoggedOutEvent](events/PlayerLoggedOut)               | ✔                    |
+| onPlayerCrafted          | [crafttweaker.Event.PlayerCraftedEvent](events/PlayerCrafted)                   | ✔                    |
+| onPlayerSmelted          | [crafttweaker.Event.PlayerSmeltedEvent](events/PlayerSmelted)                   | ✔                    |
+| onPlayerChangedDimension | [crafttweaker.Event.PlayerChangedDimensionEvent](events/PlayerChangedDimension) | ✘                    |
+| onPlayerRespawn          | [crafttweaker.Event.PlayerRespawnEvent](events/PlayerRespawn)                   | ✘                    |
+| onPlayerAttackEntity     | [crafttweaker.Event.PlayerAttackEntityEvent](events/PlayerAttackEntity)         | ✘                    |
+| onPlayerBonemeal         | [crafttweaker.Event.PlayerBonemealEvent](events/PlayerBonemeal)                 | ✘                    |
+| onPlayerInteractEntity   | [crafttweaker.Event.PlayerInteractEntityEvent](events/PlayerInteractEntity)     | ✘                    |
+| onPlayerPickup           | [crafttweaker.Event.PlayerPickupEvent](events/PlayerPickup)                     | ✘                    |
+| onPlayerPickupItem       | [crafttweaker.Event.PlayerPickupItemEvent](events/PlayerPickupItem)             | ✘                    |
+| onPlayerFillBucket       | [crafttweaker.Event.PlayerFillBucketEvent](events/PlayerFillBucket)             | ✘                    |
+| onPlayerDeathDrops       | [crafttweaker.Event.PlayerDeathDropsEvent](events/PlayerDeathDrops)             | ✘                    |
+| onPlayerInteract         | [crafttweaker.Event.PlayerInteractEvent](events/PlayerInteract)                 | ✘                    |
+| onPlayerOpenContainer    | [crafttweaker.Event.PlayerOpenContainerEvent](events/PlayerOpenContainer)       | ✘                    |
+| onPlayerPickupXp         | [crafttweaker.Event.PlayerPickupXpEvent](events/PlayerPickupXp)                 | ✘                    |
+| onPlayerSleepInBed       | [crafttweaker.Event.PlayerSleepInBedEvent](events/PlayerSleepInBed)             | ✘                    |
+| onPlayerUseHoe           | [crafttweaker.Event.PlayerUseHoeEvent](events/PlayerUseHoe)                     | ✘                    |
+| onPlayerUseItemStart     | [crafttweaker.Event.PlayerUseItemStartEvent](events/PlayerUseItemStart)         | ✘                    |
+| onPlayerUseItemTick      | [crafttweaker.Event.PlayerUseItemTickEvent](events/PlayerUseItemTick)           | ✘                    |
