@@ -1,10 +1,10 @@
-# PlayerCraftedIn
+# PlayerCrafted
 
-The PlayerCraftedIn Event is fired whenever a player crafts something.
+The PlayerCrafted Event is fired whenever a player crafts something.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerCraftedInEvent`  
+`crafttweaker.event.PlayerCraftedEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
 
 
