@@ -38,12 +38,12 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerCrafted          | [crafttweaker.event.PlayerCraftedEvent](Events/PlayerCrafted)                   | ✔                    |
 | onPlayerSmelted          | [crafttweaker.event.PlayerSmeltedEvent](Events/PlayerSmelted)                   | ✔                    |
 | onPlayerChangedDimension | [crafttweaker.event.PlayerChangedDimensionEvent](Events/PlayerChangedDimension) | ✘                    |
-| onPlayerRespawn          | [crafttweaker.event.PlayerRespawnEvent](Events/PlayerRespawn)                   | ✘                    |
+| onPlayerRespawn          | [crafttweaker.event.PlayerRespawnEvent](Events/PlayerRespawn)                   | ✔                    |
 | onPlayerAttackEntity     | [crafttweaker.event.PlayerAttackEntityEvent](Events/PlayerAttackEntity)         | ✘                    |
 | onPlayerBonemeal         | [crafttweaker.event.PlayerBonemealEvent](Events/PlayerBonemeal)                 | ✘                    |
 | onPlayerInteractEntity   | [crafttweaker.event.PlayerInteractEntityEvent](Events/PlayerInteractEntity)     | ✘                    |
 | onPlayerPickup           | [crafttweaker.event.PlayerPickupEvent](Events/PlayerPickup)                     | ✘                    |
-| onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](Events/PlayerPickupItem)             | ✘                    |
+| onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](Events/PlayerPickupItem)             | ✔                    |
 | onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](Events/PlayerFillBucket)             | ✘                    |
 | onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](Events/PlayerDeathDrops)             | ✘                    |
 | onPlayerInteract         | [crafttweaker.event.PlayerInteractEvent](Events/PlayerInteract)                 | ✘                    |
