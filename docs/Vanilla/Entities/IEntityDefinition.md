@@ -68,6 +68,17 @@ entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
 entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```
 
+### Add drop Function
+
+A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
+You will need an [IEntityDropFunction](IEntityDropFunction):
+```
+<entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
+	return <minecraft:iron_ingot> * 10;
+	});
+```
+
+
 ### Remove
 
 This removes a drop.

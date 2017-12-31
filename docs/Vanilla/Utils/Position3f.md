@@ -13,12 +13,11 @@ You can get such an object using:
 - The `position` ZenGetter on a [IPlayer](/Vanilla/Game/IPlayer) object
 - The Position3f constructors below
 
-## Position3f constructors
-You can create a Position3f object yourself by using one of the following methods:
+## Position3f constructor
+You can create a Position3f object yourself by using the following method:
 
 ```JAVA
 crafttweaker.util.Position3f.create(float x, float y, float z);
-crafttweaker.util.Position3f.randomBetween(float xMin, float xMax, float yMin, float yMax, float zMin, float zMax);
 ```
 
 The First method allows you to create a position at the given coordinates.  

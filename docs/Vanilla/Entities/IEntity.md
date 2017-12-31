@@ -12,6 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | GetterName   | GetterMethod      | Return Type                             |
 |--------------|-------------------|-----------------------------------------|
+| world        |                   | [IWorld](/Vanilla/World/IWorld)         |
 | dimension    |                   | [IDimension](/Vanilla/World/IDimension) |
 | x            | getX()            | double                                  |
 | y            | getY()            | double                                  |
@@ -24,6 +25,7 @@ It might be required for you to import the package if you encounter any issues (
 | customName   | getCustomName()   | String                                  |
 | immuneToFire | isImmuneToFire()  | boolean                                 |
 | air          | getAir()          | int                                     |
+| blockPos     | getBlockPos()     | [IBlockPos](/Vanilla/World/IBlockPos)   |
 
 
 ## ZenSetters

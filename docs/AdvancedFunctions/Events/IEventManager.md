@@ -46,7 +46,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](Events/PlayerPickupItem)             | ✔                    |
 | onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](Events/PlayerFillBucket)             | ✘                    |
 | onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](Events/PlayerDeathDrops)             | ✘                    |
-| onPlayerInteract         | [crafttweaker.event.PlayerInteractEvent](Events/PlayerInteract)                 | ✘                    |
+| onPlayerInteract         | [crafttweaker.event.PlayerInteractEvent](Events/PlayerInteract)                 | ✔                    |
 | onPlayerOpenContainer    | [crafttweaker.event.PlayerOpenContainerEvent](Events/PlayerOpenContainer)       | ✘                    |
 | onPlayerPickupXp         | [crafttweaker.event.PlayerPickupXpEvent](Events/PlayerPickupXp)                 | ✘                    |
 | onPlayerSleepInBed       | [crafttweaker.event.PlayerSleepInBedEvent](Events/PlayerSleepInBed)             | ✘                    |
