@@ -20,3 +20,22 @@ crafttweaker.world.Facing.up()
 
 crafttweaker.world.Facing.fromString(String name);
 ```
+
+## ZenGetters/ZenMethods without parameters
+| ZenGetter  | ZenMethod  | Return Type |
+|------------|------------|-------------|
+| name       | getName()  | string      |
+| rotateY    | rotateY()  | IFacing     |
+| opposite   | opposite() | IFacing     |
+
+## Other methods
+### Comparing two Facings
+You can compare two facings using the standart comparing Operators `== != < > <= >=`  
+Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+```
+//Returns true or false
+facingOne == facingTwo;
+
+//Returns 0 if they are equal
+facingOne.compare(facingTwo);
+```
