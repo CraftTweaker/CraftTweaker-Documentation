@@ -10,6 +10,14 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 IDimension extends [IBlockGroup](IBlockGroup). That means all methods available to IBlockGroups are also available for IDimensions.  
 The `dimension` getter is useless though since it only returns this object.
 
+## Casting as IWorld
+You can use these ways of casting your IDimension to [IWorld](IWorld):  
+Of course, you can import the class to shorten the casting name.
+```
+dimObj.asWorld();
+dimObj as crafttweaker.world.IWorld;
+```
+
 
 ## Methods/Getters
 

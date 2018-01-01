@@ -60,6 +60,7 @@ pages:
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
       - IBlockState: 'Vanilla/Blocks/IBlockState.md'
+      - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - MobilityFlag: 'Vanilla/Blocks/MobilityFlag.md'
     - Brackets:
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
@@ -132,13 +133,14 @@ pages:
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
     - World:
-      - Facing: 'Vanilla/World/Facing.md'
       - IBlockGroup: 'Vanilla/World/IBlockGroup.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IDimension: 'Vanilla/World/IDimension.md'
+      - IFacing: 'Vanilla/World/IFacing.md'
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
+      - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
   - Mods:
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
@@ -383,6 +385,7 @@ pages:
       - ZenMember: 'Dev_Area/ZenAnnotations/ZenMembers.md'
       - ModOnly: 'Dev_Area/ZenAnnotations/Annotation_ModOnly.md'
       - ZenMethod: 'Dev_Area/ZenAnnotations/Annotation_ZenMethod.md'
+      - ZenMethodStatic: 'Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic.md'
       - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'

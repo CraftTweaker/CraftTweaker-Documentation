@@ -18,20 +18,11 @@ It might be required for you to import the package if you encounter any issues, 
 ## ZenMethods with parameters
 
 ### Get Offset
-Returns a new IBlockPos that is `offset` blocks into the `directionName` or `facing` direction.
+Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 
-`IBlockPos getOffset(String directionName, int offset);`
+`IBlockPos getOffset(IFacing direction, int offset);`
 
-`directionName` can take these values:
+Alternatively you can directly get the [IFacing](Facing) objects using the static methods provided there.
 
-- "down"
-- "up"
-- "north"
-- "south"
-- "east"
-- "west"
-
-Alternatively you can directly get the direction Strings using the methods privided in the [Facing](Facing) interface.
-
-- String direction → The direction
+- [IFacing](IFacing) direction → The direction
 - int offset → how many blocks in that direction?

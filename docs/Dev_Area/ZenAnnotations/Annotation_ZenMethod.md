@@ -11,6 +11,7 @@ The ZenMethod annotation can stand alongside other [Annotations](ZenAnnotation),
 
 - You can annotate all methods, static and nonstatic. 
 - Annotated Methods need one additional parameter when in a [ZenExpansion](Annotation_ZenExpansion). That parameter is the expanded class' instance
+- When annotating a static Method in a [ZenExpansion](Annotation_ZenExpansion) (for example a factory method) you will need to use [ZenMethodStatic](ZenMethodStatic) instead.
 
 ## Example Class
 
