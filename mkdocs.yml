@@ -63,6 +63,7 @@ pages:
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - MobilityFlag: 'Vanilla/Blocks/MobilityFlag.md'
     - Brackets:
+      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
@@ -70,6 +71,8 @@ pages:
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Container: 
       - IContainer: 'Vanilla/Container/IContainer.md'
+    - Creative Tabs:
+      - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
     - Data:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
