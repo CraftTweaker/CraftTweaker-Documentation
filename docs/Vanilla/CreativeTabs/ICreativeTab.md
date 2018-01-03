@@ -11,31 +11,28 @@ You can retrieve an ICreativeTab from the [Creative tab Brracket Handler](/Vanil
 
 ## ZenGetters and ZenMethods without parameters
 
-| ZenGetter             | ZenMethod                   | Return Type                             |
-|-----------------------|-----------------------------|-----------------------------------------|
-| drawInForegroundOfTab | drawInForegroundOfTab()     | bool                                    |
-| backgroundImageName   | getBackgroundImageName()    | string                                  |
-| iconItemStack         | getIconItemStack()          | [IItemStack](/Vanilla/Items/IItemStack) |
-| searchBarWidth        | getSearchBarWidth()         | int                                     |
-| tabColumn             | getTabColumn()              | int                                     |
-| tabIconItem           | getTabIconItem()            | [IItemStack](/Vanilla/Items/IItemStack) |
-| tabIndex              | getTabIndex()               | int                                     |
-| tabLabel              | getTabLabel()               | string                                  |
-| tabPage               | getTabPage()                | int                                     |
-| translatedTabLabel    | getTranslatedTabLabel()     | string                                  |
-| searchBar             | hasSearchBar()              | bool                                    |
-| alignedRight          | isAlighnedRight()           | bool                                    |
-| tabInFirstRow         | isTabInFirstRow()           | bool                                    |
-| hidePlayerInventory   | shouldHidePlayerInventory() | bool                                    |
-|                       | setNoScrollBar()            | void (nothing)                          |
-|                       | setNoTitle()                | void (nothing)                          |
+| ZenGetter/ZenMethod   | Return Type                             |
+|-----------------------|-----------------------------------------|
+| drawInForegroundOfTab | bool                                    |
+| backgroundImageName   | string                                  |
+| iconItemStack         | [IItemStack](/Vanilla/Items/IItemStack) |
+| searchBarWidth        | int                                     |
+| tabColumn             | int                                     |
+| tabIconItem           | [IItemStack](/Vanilla/Items/IItemStack) |
+| tabIndex              | int                                     |
+| tabLabel              | string                                  |
+| tabPage               | int                                     |
+| translatedTabLabel    | string                                  |
+| searchBar             | bool                                    |
+| alignedRight          | bool                                    |
+| tabInFirstRow         | bool                                    |
+| hidePlayerInventory   | bool                                    |
+| setNoScrollBar()      | void (nothing)                          |
+| setNoTitle()          | void (nothing)                          |
 
 
-## ZenMethods with parameters
-### Setting the tab's background image
+## ZenSetters
 
-Uses a string.  
-Returns the modified ICreativeTab.
-```
-tabObj.setBackgroundImageName(String backgroundImage);
-```
+| ZenSetter           | Parameter Type |
+|---------------------|----------------|
+| backgroundImageName | string         |
