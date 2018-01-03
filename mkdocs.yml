@@ -116,6 +116,7 @@ pages:
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
+      - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes: 
