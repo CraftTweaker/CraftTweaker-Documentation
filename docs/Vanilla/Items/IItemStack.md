@@ -29,6 +29,26 @@ So what can we do with that now?
 ### Extending IIngredient
 IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient).  
 That means all functionality that is available to  [IIngredient](/Vanilla/Variable_Types/IIngredient) objects also is applicable to IItemStacks.
+<details><summary>Derived Methods</summary>
+	<ul>
+		<li>stack.mark</li>
+		<li>stack.amount</li>
+		<li>stack.items</li>
+		<li>stack.itemArray</li>
+		<li>stack.liquids</li>
+		<li>stack | otherIngredient</li>
+		<li>stack.or(otherIngredient)</li>
+		<li>stack.transform([transformer](Item_Transformers))</li>
+		<li>stack.only([condition](Item_Conditions))</li>
+		<li>stack.marked(mark)</li>
+		<li>stack.matches(item)</li>
+		<li>stack.matchesExact(item)</li>
+		<li>stack.matches(liquid)</li>
+		<li>stack has ingredient</li>
+		<li>stack.applyTransform(stack,player)</li>
+		<li>stack.hasTransformers()</li>
+	</ul>
+</details>
 
 
 ### ZenGetters/ZenSetters
@@ -70,12 +90,13 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 
 #### Amount
 
-| Method call                    | Returns                                    | ParameterTypes |
-|--------------------------------|--------------------------------------------|----------------|
-| `stack.anyAmount()`            | A new IItemStack with the changed property |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property | int            |
-| `stack.splitStack(int amount)` | A new IItemStack with the changed property | int            |
+| Method call                    | Returns                                                        | ParameterTypes |
+|--------------------------------|----------------------------------------------------------------|----------------|
+| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
+| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
+| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
+| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
+| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
 
 
 #### Weight
