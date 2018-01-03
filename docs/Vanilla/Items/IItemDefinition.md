@@ -20,15 +20,30 @@ val itemDefinitionList = game.items;
 
 ## What to do with it
 
-### ZenGetters
+### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | What does it do                                                                                      | Return Type                                             | Usage      |
-|-----------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|------------|
-| id        | Returns the item ID                                                                                  | String                                                  | `def.id`   |
-| name      | Returns the unlocalized item Name                                                                    | String                                                  | `def.name` |
-| ores      | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` | `def.ores` |
+| ZenGetter          | ZenMethod               | What does it do                                                                                      | Return Type                                             |
+|--------------------|-------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| id                 | getOwner()              | Returns the item ID                                                                                  | String                                                  |
+| name               | getName()               | Returns the unlocalized item Name                                                                    | String                                                  |
+| ores               | getOres()               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` |
+| owner              | getOwner()              | Returns the mod name that this item belongs to.                                                      | String                                                  |
+| defaultInstance    | getDefaultInstance()    |                                                                                                      | [IItemStack](IItemStack)                                |
+| creativeTab        | getCreativeTab()        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)      |
+| creativeTabs       | getCreativeTabs()       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab)    |
+| canItemEditBlocks  | canItemEditBlocks()     |                                                                                                      | bool                                                    |
+| itemEnchantability | getItemEnchantability() |                                                                                                      | int                                                     |
 
+
+### ZenSetters and other void-Methods
+
+| ZenSetter   | ZenMethod                               | Parameter Type                                     |
+|-------------|-----------------------------------------|----------------------------------------------------|
+| creativeTab | setCreativeTab(ICreativeTab tab)        | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab) |
+|             | setNoRepair()                           | none                                               |
+|             | setContainerItem(IItemDefinition item)  | IItemDefinition                                    |
 
 ### ZenMethods
 
 `def.makeStack(meta);` Creates an [IItemStack](IItemStack) with the given metadata. Metadata is an int and OPTIONAL.
+`def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level

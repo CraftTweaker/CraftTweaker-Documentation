@@ -27,8 +27,8 @@ You can retrieve an ICreativeTab from the [Creative tab Brracket Handler](/Vanil
 | alignedRight          | isAlighnedRight()           | bool                                    |
 | tabInFirstRow         | isTabInFirstRow()           | bool                                    |
 | hidePlayerInventory   | shouldHidePlayerInventory() | bool                                    |
-|                       | setNoScrollBar()            | ICreativeTab                            |
-|                       | setNoTitle()                | ICreativeTab                            |
+|                       | setNoScrollBar()            | void (nothing)                          |
+|                       | setNoTitle()                | void (nothing)                          |
 
 
 ## ZenMethods with parameters
