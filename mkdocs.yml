@@ -74,6 +74,9 @@ pages:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Creative Tabs:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
+    - Enchantments:
+      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Data:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
