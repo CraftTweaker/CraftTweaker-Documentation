@@ -53,6 +53,8 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 
 ### ZenGetters/ZenSetters
 
+Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
+
 | ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                   |
 |---------------------|---------------------|--------------------------------------------------------|
 | definition          |                     | [IItemDefinition](IItemDefinition)                     |
@@ -77,6 +79,7 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 | isDamaged           |                     | bool                                                   |
 | isDamageable        |                     | bool                                                   |
 | isStackable         |                     | bool                                                   |
+| isBeaconPayment     |                     | bool                                                   |
 | hasEffect           |                     | bool                                                   |
 | hasDisplayName      |                     | bool                                                   |
 | metadata            |                     | int                                                    |
@@ -136,11 +139,11 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                            |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string   (supports color codes with "Â§") |
-| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "Â§") |
-| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                           |
+| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------|
+| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string   (supports color codes with "§") |
+| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
+| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
 
 
 #### canItem...
@@ -151,3 +154,176 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 | `stack.canDestroy(IBlockPos pos)`              | A bool that tells if the item can destroy the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
 | `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
 | `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos) |
+
+
+## ItemTransformers and ItemConditions
+You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
+[Item Conditions](Item_Conditions)  
+[Item Transformers](Item_Transformers)
+
+
+
+## Examples
+
+#### DisplayName 
+
+Globally (translates the item to the new name).
+```
+val apple = <minecraft:apple>;
+
+//prints "Apple"
+print(apple.displayName);
+
+//Sets apples Display Name to "Tomato"
+apple.displayName = "Tomato";
+
+//prints "Tomato"
+print(apple.displayName);
+```
+
+Locally (only this single item).
+```
+<minecraft:coal>.withDisplayName("Black Gold");
+```
+
+#### Lore
+`<minecraft:coal>.withLore(["This function","requires a","string[]"]);`
+
+#### Maximum Stack Size
+The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
+```
+val apple = <minecraft:apple>;
+val bucket = <minecraft:bucket>;
+
+//prints 64
+print(apple.maxStackSize);
+
+//sets apples Max Stack size to 32
+apple.maxStackSize = 32;
+
+//prints 32
+print(apple.maxStackSize);
+
+//sets apples Max Stack size to Bucket's Max Stack size
+apple.maxStackSize = bucket.maxStackSize;
+
+//prints 16
+print(apple.maxStackSize);
+```
+
+#### Hardness
+The Hardness is how long it takes to break the referred block. Only works if the object refers to a block. 
+```
+val grass = <minecraft:grass>;
+
+//prints 1.0
+print(grass.hardness);
+
+//sets grass Hardness to 10.0
+grass.hardness = 10.0;
+
+//prints 10.0
+print(grass.hardness);
+```
+
+#### Damage
+The damage for items that cannot be damaged is 0.
+
+```
+val pick = <minecraft:diamond_pickaxe>;
+
+//prints 1561
+print(pick.maxDamage);
+
+//sets the max damage of the Diamond Pickaxe to 256
+pick.maxDamage = 256;
+
+//prints 256
+print(pick.maxDamage);
+
+
+
+//Damage doesn't matter, used in recipes
+<minecraft:iron_pickaxe>.anyDamage();
+
+//With the given damage
+<minecraft:iron_pickaxe>.withDamage(122);
+```
+
+#### Tag
+
+The tag is an [IData](/Vanilla/Data/IData) object.  
+If the item does not contain a tag, it will return an empty tag, never null.  
+
+```
+//creates apple with the given tag
+//Removes existing tags
+<minecraft:apple>.withTag({Unbreakable: 1});
+
+//creates apple with an emtpy tag
+<minecraft:apple>.withEmptyTag();
+
+//removes a tag by its name
+item.removeTag("tagName");
+
+//update the existing tag
+//If the tag doesn't override an existing tag, they will stay constant.
+item.updateTag({Unbreakable: 1});
+```
+
+#### Liquid
+
+Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
+Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) Object or null.
+```
+val lav = <minecraft:lava_bucket>;
+print(lav.liquid.name);
+```
+
+#### Amount
+
+How many apples are there?
+```
+<minecraft:apple>.anyAmount();
+
+//1 Apple
+val apple = <minecraft:apple>;
+
+//2 Apples
+val moreApples = apple * 2;
+
+//3 Apples
+val evenMoreApples = <minecraft:apple> * 3;
+```
+
+#### Weight
+
+Returns a [weightedItemStack](weightedItemStack) with the provided percentage.
+```
+val apple = <minecraft:apple>;
+
+//Creates a weightedItemStack with 100 percent chance
+var applePercentage = apple % 100;
+
+//Does the same as the above
+applePercentage = apple.weight(1.0);
+```
+
+#### Ores
+Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) referring to this item.
+```
+<minecraft:apple>.ores;
+```
+
+#### Owner
+Returns a string containing the modid of the mod that adds the item.
+```
+<minecraft:apple>.owner;
+```
+
+#### Casting to IBlock
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast will throw an exception.
+```
+<minecraft:dirt>.asBlock();
+<minecraft:dirt> as crafttweaker.block.IBlock;
+```

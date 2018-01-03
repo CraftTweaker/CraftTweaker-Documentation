@@ -2,6 +2,7 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
+  - Using this wiki: 'UsingThisWiki.md'
   - Commands: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
   - Global functions: 'Vanilla/Global_Functions.md'
