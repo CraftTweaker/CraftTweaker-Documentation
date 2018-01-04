@@ -13,26 +13,17 @@ You can retrieve an ICreativeTab from the [Creative tab Brracket Handler](/Vanil
 
 | ZenGetter/ZenMethod   | Return Type                             |
 |-----------------------|-----------------------------------------|
-| drawInForegroundOfTab | bool                                    |
-| backgroundImageName   | string                                  |
-| iconItemStack         | [IItemStack](/Vanilla/Items/IItemStack) |
 | searchBarWidth        | int                                     |
-| tabColumn             | int                                     |
-| tabIconItem           | [IItemStack](/Vanilla/Items/IItemStack) |
-| tabIndex              | int                                     |
 | tabLabel              | string                                  |
-| tabPage               | int                                     |
-| translatedTabLabel    | string                                  |
-| searchBar             | bool                                    |
-| alignedRight          | bool                                    |
-| tabInFirstRow         | bool                                    |
-| hidePlayerInventory   | bool                                    |
 | setNoScrollBar()      | void (nothing)                          |
 | setNoTitle()          | void (nothing)                          |
 
 
-## ZenSetters
+## ZenMethod
+#### Set Background image Name
+Uses a string (e.g. `"item_search.png"`).  
+Returns void (nothing).
 
-| ZenSetter           | Parameter Type |
-|---------------------|----------------|
-| backgroundImageName | string         |
+```
+tab.setBackgroundImageName(String backgroundImage);
+```
