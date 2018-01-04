@@ -1,7 +1,7 @@
 # IEntityLivingBase
 
 A living Entity is one that has health and that can die.  
-That means Monsters, Animals but also [IPlayers](/Vanilla/Game/IPlayer).
+That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer).
 
 
 ## Importing the package

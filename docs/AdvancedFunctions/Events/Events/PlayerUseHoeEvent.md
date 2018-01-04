@@ -18,7 +18,7 @@ The following information can be retrieved from the event:
 | `x`         | int                                       |
 | `y`         | int                                       |
 | `z`         | int                                       |
-| `player`    | [IPlayer](/Vanilla/Game/IPlayer)          |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |
 | `blocks`    | [IBlockGroup](/Vanilla/World/IBlockGroup) |
 | `block`     | [IBlock](/Vanilla/Block/IBlock)           |
 | `dimension` | [IDimension](/Vanilla/World/IDimension)   |

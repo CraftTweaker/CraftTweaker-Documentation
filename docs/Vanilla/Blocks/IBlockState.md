@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods and ZenGetters
 |ZenMethod                       |ZenGetter                  | Return Type                                                          | Description                                             |
-|--------------------------------|----------------           |----------------------------------------------------------------------|---------------------------------------------------------|
+|--------------------------------|---------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
 |getBlock()                      |block                      | [IBlock](/Vanilla/Blocks/IBlock)                                     | Returns the refered block                               |
 |getMeta()                       |meta                       | int                                                                  | Returns the refered block's metadata                    |
 |canProvidePower()               |canProvidePower            | bool                                                                 | Returns if the refered block can provide Redstone Power |
@@ -128,9 +128,9 @@ Returns an int.
 blockState.getPackedLightMapCoords(IWorld world, IBlockPos pos);
 ```
 
-### Get a playerÄs Relative Block Harness
+### Get a player's Relative Block Harness
 
-Use an [IPlayer](/Vanilla/Game/IPlayer), an [IWorld](/Vanilla/World/IWorld) and an [IBlockPos](/Vanilla/World/IBlockPos).  
+Use an [IPlayer](/Vanilla/Players/IPlayer), an [IWorld](/Vanilla/World/IWorld) and an [IBlockPos](/Vanilla/World/IBlockPos).  
 Returns a float.
 ```
 blockState.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);

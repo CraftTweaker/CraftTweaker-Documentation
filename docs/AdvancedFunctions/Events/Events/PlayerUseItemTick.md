@@ -14,7 +14,7 @@ The following information can be retrieved from the event:
 | ZenGetter   | Return Type                            |
 |-------------|----------------------------------------|
 | `canceled`  | boolean                                |
-| `player`    | [IPlayer](/Vanilla/Game/IPlayer)       |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)    |
 | `item`      | [IItemStack](/Vanilla/Item/IItemStack) |
 | `duration`  | int                                    |
 

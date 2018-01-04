@@ -13,6 +13,6 @@ The following information can be retrieved from the event:
 
 | ZenGetter | Return Type                             |
 |-----------|-----------------------------------------|
-| `player`  | [IPlayer](/Vanilla/Game/IPlayer)        |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer)     |
 | `from`    | [IDimension](/Vanilla/World/IDimension) |
 | `to`      | [IDimension](/Vanilla/World/IDimension) |

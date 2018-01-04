@@ -62,7 +62,7 @@ worldProvObj.getMoonPhase(long time);
 
 ### get Respawn Dimension for a specific player
 
-Use an [IPlayer](/Vanilla/Game/IPlayer) object.  
+Use an [IPlayer](/Vanilla/Players/IPlayer) object.  
 Returns a new IWorldProvider object.
 ```
 worldProvObj.getRespawnDimension(IPlayer player);

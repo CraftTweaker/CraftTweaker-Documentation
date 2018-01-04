@@ -97,7 +97,6 @@ pages:
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
-      - IPlayer: 'Vanilla/Game/IPlayer.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
@@ -114,6 +113,9 @@ pages:
     - Ore Dictionary: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
+    - Players:
+      - IPlayer: 'Vanilla/Players/IPlayer.md'
+      - IFoodStats: 'Vanilla/Players/IFoodStats.md'
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'

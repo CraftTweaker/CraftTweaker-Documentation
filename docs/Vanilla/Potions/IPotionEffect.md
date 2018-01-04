@@ -31,7 +31,7 @@ isCurativeItem(IItemStack item);
 
 ### Perform Effect on an Entity
 
-Uses an [IEntity](/Vanilla/Entities/IEntity) or any of its subclasses (e.g. [IPlayer](/Vanilla/Game/IPlayer)).  
+Uses an [IEntity](/Vanilla/Entities/IEntity) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer)).  
 Returns void (nothing).
 ```
 performEffect(IEntity Entity);

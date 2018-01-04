@@ -37,7 +37,7 @@ rec.hasTransformers();
 
 ### ApplyTransformers
 
-Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vanilla/Game/IPlayer).
+Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vanilla/Players/IPlayer).
 ```
 rec.applyTransformers(ICraftingInventory inventory, IPlayer byPlayer);
 ```

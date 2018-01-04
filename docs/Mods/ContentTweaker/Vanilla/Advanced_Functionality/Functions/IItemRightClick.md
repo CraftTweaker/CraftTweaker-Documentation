@@ -12,7 +12,7 @@ The IItemRightClickFunction is a function with the following parameters:
 
 - [IItemStack](/Vanilla/Items/IItemStack) itemStack → The item that is right-clicked
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world the player is in
-- [IPlayer](/Vanilla/Game/IPlayer) player → The player doing the right-click
+- [IPlayer](/Vanilla/Players/IPlayer) player → The player doing the right-click
 - String hand → Either "OFF_HAND" or "MAIN_HAND"
 
 The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`

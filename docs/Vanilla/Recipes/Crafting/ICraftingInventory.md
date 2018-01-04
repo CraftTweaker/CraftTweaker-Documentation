@@ -8,13 +8,13 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 
 
 ## ZenGetters
-| ZenGetter    | Return type                      | Description                                          |
-|--------------|----------------------------------|------------------------------------------------------|
-| `player`     | [IPlayer](/Vanilla/Game/IPlayer) | the player owning this inventory                     |
-| `size`       | int                              | the inventory's size                                 |
-| `width`      | int                              | the inventory's width                                |
-| `height`     | int                              | the inventory's height                               |
-| `stackCount` | int                              | the the number of stacks that are actually filled in |
+| ZenGetter    | Return type                         | Description                                          |
+|--------------|-------------------------------------|------------------------------------------------------|
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer) | the player owning this inventory                     |
+| `size`       | int                                 | the inventory's size                                 |
+| `width`      | int                                 | the inventory's width                                |
+| `height`     | int                                 | the inventory's height                               |
+| `stackCount` | int                                 | the the number of stacks that are actually filled in |
 
 ## ZenMethods
 

@@ -17,7 +17,7 @@ You can access the Formatting Handler using the `logger` [global keyword](/Vanil
 ## Accessible, but useless Methods
 
 - logError(String message, Throwable exception);
-- logPlayer([IPlayer](/Vanilla/Game/IPlayer) player);
+- logPlayer([IPlayer](/Vanilla/Players/IPlayer) player);
 
 You can not use Java's throwables so the first Method is useless.  
 The second Method does absolutely nothing. Literally, the implementation is empty!

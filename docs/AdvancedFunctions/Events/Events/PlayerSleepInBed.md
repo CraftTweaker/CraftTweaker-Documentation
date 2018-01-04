@@ -16,4 +16,4 @@ The following information can be retrieved from the event:
 | `x`         | int                                       |
 | `y`         | int                                       |
 | `z`         | int                                       |
-| `player`    | [IPlayer](/Vanilla/Game/IPlayer)          |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |

@@ -11,12 +11,12 @@ You can, of course, also [import](/AdvancedFunctions/Import) the class before an
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                        |
-|-------------|------------------------------------|
-| `canceled`  | boolean                            |
-| `processed` | boolean                            |
-| `player`    | [IPlayer](/Vanilla/Game/IPlayer)   |
-| `entity`    | [IEntity](/Vanilla/Entity/IEntity) |
+| ZenGetter   | Return Type                         |
+|-------------|-------------------------------------|
+| `canceled`  | boolean                             |
+| `processed` | boolean                             |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer) |
+| `entity`    | [IEntity](/Vanilla/Entity/IEntity)  |
 
 ## ZenMethods
 

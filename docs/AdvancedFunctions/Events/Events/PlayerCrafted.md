@@ -13,6 +13,6 @@ The following information can be retrieved from the event:
 
 | ZenGetter   | Return Type                                                        |
 |-------------|--------------------------------------------------------------------|
-| `player`    | [IPlayer](/Vanilla/Game/IPlayer)                                   |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)                                |
 | `output`    | [IItemStack](/Vanilla/Item/IItemStack)                             |
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory) |

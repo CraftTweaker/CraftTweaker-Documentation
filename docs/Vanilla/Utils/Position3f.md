@@ -10,7 +10,7 @@ It might be required for you to [import](/AdvancedFunctions/Import) the package 
 ## Getting a Position3f object
 You can get such an object using:
 
-- The `position` ZenGetter on a [IPlayer](/Vanilla/Game/IPlayer) object
+- The `position` ZenGetter on a [IPlayer](/Vanilla/Players/IPlayer) object
 - The Position3f constructor below
 - The [IBlockPos](/Vanilla/World/IBlockPos) Position3f caster.
 
