@@ -7,6 +7,10 @@ Mostly used in Event Handlers and Recipe Functions.
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IPlayer;`
 
+## Extending IEntityLivingBase and IUser
+IPlayer extends [IEntityLivingBase](IEntityLivingBase). That means all functions available to [IEntityLivingBase](IEntityLivingBase) Objects also are available to IPlayer Objects.  
+IPlayer also extends [IUser](IUser). That means all functions available to [IUser](IUser) Objects also are available to IPlayer Objects.  
+
 ##Zengetters
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.

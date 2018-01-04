@@ -70,6 +70,8 @@ pages:
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Commands:
+      - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
     - Container: 
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Creative Tabs:
@@ -114,8 +116,9 @@ pages:
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
     - Players:
-      - IPlayer: 'Vanilla/Players/IPlayer.md'
       - IFoodStats: 'Vanilla/Players/IFoodStats.md'
+      - IPlayer: 'Vanilla/Players/IPlayer.md'
+      - IUser: 'Vanilla/Players/IUser.md'
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
