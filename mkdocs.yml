@@ -62,7 +62,7 @@ pages:
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
       - IBlockState: 'Vanilla/Blocks/IBlockState.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
-      - MobilityFlag: 'Vanilla/Blocks/MobilityFlag.md'
+      - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
       - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
@@ -325,6 +325,11 @@ pages:
         - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
         - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+    - Modular Machinery:
+      - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
+      - Recipes: 
+        - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
+        - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - Immersive Engineering:
       - About IE: 'Mods/ImmersiveEngineering/ImmersiveEngineering.md'
       - Recipes:

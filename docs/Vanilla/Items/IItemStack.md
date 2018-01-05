@@ -177,7 +177,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 #### DisplayName 
 
 Globally (translates the item to the new name).
-```lisp
+```kotlin
 val apple = <minecraft:apple>;
 
 //prints "Apple"
@@ -200,7 +200,7 @@ Locally (only this single item).
 
 #### Maximum Stack Size
 The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
-```lisp
+```kotlin
 val apple = <minecraft:apple>;
 val bucket = <minecraft:bucket>;
 
@@ -222,7 +222,7 @@ print(apple.maxStackSize);
 
 #### Hardness
 The Hardness is how long it takes to break the referred block. Only works if the object refers to a block. 
-```lisp
+```kotlin
 val grass = <minecraft:grass>;
 
 //prints 1.0
@@ -238,7 +238,7 @@ print(grass.hardness);
 #### Damage
 The damage for items that cannot be damaged is 0.
 
-```lisp
+```kotlin
 val pick = <minecraft:diamond_pickaxe>;
 
 //prints 1561
@@ -264,7 +264,7 @@ print(pick.maxDamage);
 The tag is an [IData](/Vanilla/Data/IData) object.  
 If the item does not contain a tag, it will return an empty tag, never null.  
 
-```
+```kotlin
 //creates apple with the given tag
 //Removes existing tags
 <minecraft:apple>.withTag({Unbreakable: 1});
@@ -284,7 +284,7 @@ item.updateTag({Unbreakable: 1});
 
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
 Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) Object or null.
-```lisp
+```kotlin
 val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
@@ -292,7 +292,7 @@ print(lav.liquid.name);
 #### Amount
 
 How many apples are there?
-```
+```kotlin
 <minecraft:apple>.anyAmount();
 
 //1 Apple
@@ -308,7 +308,7 @@ val evenMoreApples = <minecraft:apple> * 3;
 #### Weight
 
 Returns a [weightedItemStack](weightedItemStack) with the provided percentage.
-```lisp
+```kotlin
 val apple = <minecraft:apple>;
 
 //Creates a weightedItemStack with 100 percent chance
