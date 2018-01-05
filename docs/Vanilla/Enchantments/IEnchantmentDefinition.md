@@ -48,7 +48,7 @@ ench.getTranslatedName(int level);
 ```
 
 ### make Enchantment
-By giving an EnchantmentDefinition a level you can make an [IEnchantment's](IEnchantment) out of it:
+By giving an EnchantmentDefinition a level you can make an [IEnchantment](IEnchantment) out of it:
 ```objectivec
 ench.makeEnchantment(int level);
 ench * level;
