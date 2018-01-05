@@ -65,6 +65,7 @@ pages:
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
       - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'

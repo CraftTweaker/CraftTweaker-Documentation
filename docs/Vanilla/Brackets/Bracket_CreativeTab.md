@@ -5,10 +5,10 @@ The Creative Tab Bracket Handler gives you access to the creative Tabs in the ga
 They are referenced in the Creative Tab handler this way:
 
 ```
-<creativeTab:name>
+<creativetab:name>
 
-<creativeTab:misc>
+<creativetab:misc>
 ```
 
 If the Creative Tab is found, this will return an ICreativeTab Object.
-Please refer to the [respective Wiki entry](/Vanilla/creativeTabs/ICreativeTab) for further information on what you can do with these.
+Please refer to the [respective Wiki entry](/Vanilla/CreativeTabs/ICreativeTab) for further information on what you can do with these.

@@ -19,6 +19,6 @@ It might be required for you to import the package if you encounter any issues (
 You might want to get the Enchantment's NBT-Tag.  
 You can either cast it as [IData](/Vanilla/Data/IData) or use the method: 
 ```
-ench.makeNBT();
+ench.makeTag();
 ench as crafttweaker.data.IData;
 ```
