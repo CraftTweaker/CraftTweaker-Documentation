@@ -10,7 +10,7 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 Usage:
 
-`/craftweaker blockmaterial`
+`/crafttweaker blockmaterial`
 
 `/ct blockmaterial`
 
@@ -23,7 +23,7 @@ Outputs a list of all the block materials in the game to the crafttweaker.log fi
 
 Usage:
 
-`/craftweaker creativetab`
+`/crafttweaker creativetab`
 
 `/ct creativetab`
 
@@ -36,7 +36,7 @@ Outputs a list of all the creative tabs in the game to the crafttweaker.log file
 
 Usage:
 
-`/craftweaker soundevent`
+`/crafttweaker soundevent`
 
 `/ct soundevent`
 
@@ -49,7 +49,7 @@ Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker soundtype`
+`/crafttweaker soundtype`
 
 `/ct soundtype`
 

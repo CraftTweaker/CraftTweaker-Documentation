@@ -11,7 +11,7 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 Usage:
 
-`/craftweaker botbrews`
+`/crafttweaker botbrews`
 
 `/ct botbrews`
 
@@ -24,7 +24,7 @@ Outputs a list of all registered Botania Brews to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker botorechid`
+`/crafttweaker botorechid`
 
 `/ct botorechid`
 
@@ -37,7 +37,7 @@ Outputs a list of all registered Orechid ores as well as their generation chance
 
 Usage:
 
-`/craftweaker botania apothecary`
+`/crafttweaker botania apothecary`
 
 `/ct botania apothecary`
 
@@ -50,7 +50,7 @@ Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker botania brews`
+`/crafttweaker botania brews`
 
 `/ct botania brews`
 
@@ -63,7 +63,7 @@ Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker botania trades`
+`/crafttweaker botania trades`
 
 `/ct botania trades`
 
@@ -76,7 +76,7 @@ Outputs a list of all registerd elven trade recipes to the crafttweaker.log file
 
 Usage:
 
-`/craftweaker botania infusions`
+`/crafttweaker botania infusions`
 
 `/ct botania infusions`
 
@@ -89,7 +89,7 @@ Outputs a list of all registerd mana infusion recipes to the crafttweaker.log fi
 
 Usage:
 
-`/craftweaker botania daisy`
+`/crafttweaker botania daisy`
 
 `/ct botania daisy`
 
@@ -102,7 +102,7 @@ Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker botania altar`
+`/crafttweaker botania altar`
 
 `/ct botania altar`
 
@@ -116,7 +116,7 @@ Outputs a list of all registerd botania altar recipes to the crafttweaker.log fi
 
 Usage:
 
-`/craftweaker botlexcats`
+`/crafttweaker botlexcats`
 
 `/ct botlexcats`
 
@@ -129,7 +129,7 @@ Outputs a list of all registerd botania lexicon categories to the crafttweaker.l
 
 Usage:
 
-`/craftweaker botlexentries`
+`/crafttweaker botlexentries`
 
 `/ct botlexentries`
 
@@ -142,7 +142,7 @@ Outputs a list of all registerd botania lexicon entries to the crafttweaker.log 
 
 Usage:
 
-`/craftweaker botlextypes`
+`/crafttweaker botlextypes`
 
 `/ct botlextypes`
 
@@ -155,7 +155,7 @@ Outputs a list of all registerd botania lexicon knowledge types to the crafttwea
 
 Usage:
 
-`/craftweaker botlexpages`
+`/crafttweaker botlexpages`
 
 `/ct botlexpages`
 

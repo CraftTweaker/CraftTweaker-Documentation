@@ -49,13 +49,16 @@ IEntityLivingBase extends [IEntity](IEntity). That means all functions available
 
 - boolean attackEntityFrom(IDamageSource source, float amount) → Does something...
 - boolean canEntityBeSeen([IEntity](IEntity) other);
+- boolean hasItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot) slot);
 - boolean isPotionActive([IPotion](Vanilla/Porions/IPotion) potion) → Returns true if the goven potion is active
 - boolean isPotionEffectApplicable([IPotionEffect](/Vanilla/Potions/IPotionEffect) potionEffect);
 - heal(float amount) → Heals the entity by the amount given
 - [IEntityAttributeInstance](/Vanilla/Entities/Attributes/IEntityAttributeInstance) getAttribute(String name) → Returns the given [Attribute](/Vanilla/Entities/Attributes/IEntityAttributeInstance)
+- [IItemStack](/Vanilla/Items/IItemStack) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot) slot);
 - [IPotionEffect](/Vanilla/Potions/IPotionEffect) getActivePotionEffect(IPotion potion);
 - void addPotionEffect([IPotionEffect](/Vanilla/Porions/IPotionEffect) potionEffect);
 - void clearActivePotions() → Removes all active [potions](Vanilla/Porions/IPotion) from the Entity
 - void knockBack([IEntity](IEntity) entity, float one, double two, double three);
 - void onDeath();
 - void onLivingUpdate();
+- void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot) slot, [IItemStack](/Vanilla/Items/IItemStack) itemStack);

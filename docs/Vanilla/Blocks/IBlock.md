@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 There are multiple ways thet return an IBlock object:
 
 * Casting a [IItemStack](/Vanilla/Items/IItemStack) as IBlock (using the `AS` keyword, or the `asBlock()` method)
-* Using the getBlock(x,y,z) on an [IBlockGroup](/Vanilla/World/IBlockGroup) or an [IDimension](/Vanilla/World/IDimension) Object
+* Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState)
 
 ## Zengetters

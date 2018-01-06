@@ -9,7 +9,7 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 Usage:
 
-`/craftweaker ticmat`
+`/crafttweaker ticmat`
 
 `/ct ticmat`
 

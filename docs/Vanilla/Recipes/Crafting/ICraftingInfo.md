@@ -12,4 +12,4 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 |-------------|--------------------------------------------------------------------|----------------------------------------------------|
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory) | The inventory the crafting is performed in         |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer)                                | The player conducting the crafting                 |
-| `dimension` | [IDimension](/Vanilla/World/IDimension)                            | The dimension the crafting process is performed in |
+| `dimension` | int                                                                | The dimension the crafting process is performed in |
