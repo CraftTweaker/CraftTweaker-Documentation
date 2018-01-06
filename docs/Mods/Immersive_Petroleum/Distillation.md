@@ -17,7 +17,7 @@ The Distillation "addRecipe" method consists of:
 Each ItemStack Entry is Linked to the corresponding "Chance" array entry.
 
 Example:
-```JAVA
+```
 [<minecraft:diamond>, <minecraft:leather> * 2]
 [1, 1]
 ```
