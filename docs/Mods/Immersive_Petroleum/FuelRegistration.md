@@ -1,8 +1,8 @@
-#Fuel Registration
+# Fuel Registration
 
-##Motorboat
+## Motorboat
 
-###registerMotorboatFuel
+### registerMotorboatFuel
 
 |Type               |Data Type       |
 |------------------|-----------------|
@@ -10,7 +10,7 @@
 |Usage/t            |Integer         |
 
 
-####Code Example:
+#### Code Example:
 ```JAVA
 mods.immersivepetroleum.Motorboat.registerMotorboatFuel(ILiquidStack fuelEntry, int mbPerTick);
 mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
@@ -18,9 +18,9 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 
 
 
-##Portable Generator
+## Portable Generator
 
-###registerPortableGenFuel
+### registerPortableGenFuel
 
 |Type               |Data Type       |
 |------------------|-----------------|
@@ -29,7 +29,7 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 |Usage/t            |Integer         |
 
 
-####Code Example:
+#### Code Example:
 ```JAVA
 mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(ILiquidStack fuelEntry, int fluxPerTick, int mbPerTick);
 mods.immersivepetroleum.PortableGenerator.registerPortableGenFuel(<liquid:water>, 2048, 50);
