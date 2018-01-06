@@ -22,6 +22,17 @@ Example:
 [1, 1]
 ```
 
+The Chance "Float" value should be between 0 and 1.
+Since it converts it from a float value to a procentage value between 0% and 100%
+Ie:
+```
+0.5     = 50%
+0.22374 = 22.374%
+1       = 100%
+```
+
+While you can submit a float higher than 1.
+It'll never yield a value over 100%
 
 ###Code Example:
 ```JAVA
