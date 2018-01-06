@@ -1,6 +1,6 @@
 # Distillation
 
-##addRecipe
+## addRecipe
 
 The Distillation "addRecipe" method consists of:
 
@@ -14,7 +14,7 @@ The Distillation "addRecipe" method consists of:
 |Chance            |Float Array []    |
 
 
-###Preface:
+### Preface:
 Each ItemStack Entry is Linked to the corresponding "Chance" array entry.
 
 Example:
@@ -35,7 +35,7 @@ Ie:
 While you can submit a float higher than 1.
 It'll never yield a value over 100%
 
-###Code Example:
+### Code Example:
 ```JAVA
 //mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
 
