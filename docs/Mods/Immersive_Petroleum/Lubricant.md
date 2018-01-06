@@ -1,6 +1,7 @@
 #Lubricant Registration
 
 ##registerLubricant
+
 |Type                   |Data Type       |
 |-----------------------|----------------|
 |Input                  |Fluidstack      |

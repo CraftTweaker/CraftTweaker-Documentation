@@ -3,6 +3,7 @@
 ##addRecipe
 
 The Distillation "addRecipe" method consists of:
+
 |Type              |Data Type         |
 |------------------|------------------|
 |Output            |FluidStack Array[]|

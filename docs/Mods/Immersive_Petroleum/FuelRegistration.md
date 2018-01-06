@@ -3,6 +3,7 @@
 ##Motorboat
 
 ###registerMotorboatFuel
+
 |Type               |Data Type       |
 |------------------|-----------------|
 |Input              |Fluidstack      |
@@ -20,6 +21,7 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 ##Portable Generator
 
 ###registerPortableGenFuel
+
 |Type               |Data Type       |
 |------------------|-----------------|
 |Input              |Fluidstack      |
