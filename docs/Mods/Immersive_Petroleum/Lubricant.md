@@ -1,10 +1,10 @@
 #Lubricant Registration
 
 ##registerLubricant
-|Type               |Data Type       |
-|------------------|-----------------|
-|Input              |Fluidstack      |
-|Usage/t            |Integer         |
+|Type                   |Data Type       |
+|-----------------------|----------------|
+|Input                  |Fluidstack      |
+|Usage/4tick            |Integer         |
 
 
 ###Code Example:
