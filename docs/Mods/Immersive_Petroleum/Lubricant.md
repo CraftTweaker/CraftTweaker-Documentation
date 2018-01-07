@@ -5,7 +5,7 @@
 |Type                   |Data Type                                      |
 |-----------------------|-----------------------------------------------|
 |Input                  |[Fluidstack](/Vanilla/Liquids/ILiquidStack)    |
-|mb/4tick            |Integer                                        |
+|mB/4tick            |Integer                                        |
 
 
 ### Code Example:
