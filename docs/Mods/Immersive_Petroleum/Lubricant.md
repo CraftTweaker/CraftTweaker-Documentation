@@ -1,6 +1,6 @@
-#Lubricant Registration
+# Lubricant Registration
 
-##registerLubricant
+## registerLubricant
 
 |Type                   |Data Type                                      |
 |-----------------------|-----------------------------------------------|
@@ -8,7 +8,7 @@
 |Usage/4tick            |Integer                                        |
 
 
-###Code Example:
+### Code Example:
 ```JAVA
 mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);
 mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:lava>, 500);
