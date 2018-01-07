@@ -2,14 +2,14 @@
 
 ##registerReservoir
 
-|Type              |Data Type       |
-|------------------|----------------|
-|Name Identifier   |String          |
-|Fluid             |FluidStack      |
-|Minimum Size      |Integer         |
-|Maximum Size      |Integer         |
-|Replenish Rate    |Integer         |
-|Weight            |Integer         |
+|Type              |Data Type                                  |
+|------------------|-------------------------------------------|
+|Name Identifier   |String                                     |
+|Fluid             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)|
+|Minimum Size      |Integer                                    |
+|Maximum Size      |Integer                                    |
+|Replenish Rate    |Integer                                    |
+|Weight            |Integer                                    |
 
 ###Weight
 Weight is the Weighted Chance of a chunk containing that specific fluid reservoir.

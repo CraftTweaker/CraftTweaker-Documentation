@@ -2,10 +2,10 @@
 
 ##registerLubricant
 
-|Type                   |Data Type       |
-|-----------------------|----------------|
-|Input                  |Fluidstack      |
-|Usage/4tick            |Integer         |
+|Type                   |Data Type                                      |
+|-----------------------|-----------------------------------------------|
+|Input                  |[Fluidstack](/Vanilla/Liquids/ILiquidStack)    |
+|Usage/4tick            |Integer                                        |
 
 
 ###Code Example:
