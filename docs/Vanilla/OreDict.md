@@ -1,7 +1,7 @@
 # Ore Dictionary Entries
 
 If you want to refer to all entries that share the same oreDictionary entry, you can use its oreDictionary tag in recipes.  
-An ore dictionary entry is an IOreDictEntry object and its class can be [imported](/AdvancedFunctions/Import) using `import crafttweaker.oreDict.IOredictEntry;` if needed.  
+An ore dictionary entry is an IOreDictEntry object and its class can be [imported](/AdvancedFunctions/Import) using `import crafttweaker.oreDict.IOreDictEntry;` if needed.  
 There also is a second class which you won't need as often called IOreDict (`import crafttweaker.oreDict.IOreDict`). This class is the whole OreDictionary and can be used to retrieve oreDictEntries.  
 
 Think of the oreDictionary as a lexicon:  
