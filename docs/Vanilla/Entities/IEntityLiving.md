@@ -66,10 +66,12 @@ ebtLiv.enablePersistence();
 ```
 
 #### Lashes
-First method requires two booleans and returns nothing.  
-Second method requires an [IPlayer](/Vanilla/Players/IPlayer) object and returns a bool.
+First method requires an [IEntity](IEntity) object, a boolean and returns nothing.
+Second method requires two booleans and returns nothing.  
+Third method requires an [IPlayer](/Vanilla/Players/IPlayer) object and returns a bool.
 
 ```
-ebtLiv.clearLeashed(boolean something, boolean dropLead);
+ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
+ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
 ebtLiv.canBeLeashedTo(IPlayer player);
 ```
