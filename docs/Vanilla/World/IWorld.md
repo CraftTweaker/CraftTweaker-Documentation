@@ -6,6 +6,9 @@ The IWorld object contains information on a Dimension within the game.
 It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
 `import crafttweaker.world.IWorld`
 
+## Extending IBlockProperties
+IBlockState extends [IBlockAccess](IBlockAccess). That means that all methods that are available to [IBlockAccess](IBlockAccess) objects are also available to IBlockState objects.
+
 ## Creating an IWorld object
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
