@@ -324,12 +324,6 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) referring to
 <minecraft:apple>.ores;
 ```
 
-#### Owner
-Returns a string containing the modid of the mod that adds the item.
-```kotlin
-<minecraft:apple>.owner;
-```
-
 #### Casting to IBlock
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast will throw an exception.
 ```kotlin
