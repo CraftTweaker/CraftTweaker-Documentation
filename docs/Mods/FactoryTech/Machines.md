@@ -16,8 +16,8 @@ Centrifuge: First argument is input, all others are outputs. Logs an error if mo
 mods.factorytech.Centrifuge.addRecipe(<minecraft:soul_sand>, <minecraft:blaze_powder>, <minecraft:sand.0>, <minecraft:coal.0>);
 mods.factorytech.Centrifuge.removeRecipe(<minecraft:soul_sand>, <minecraft:blaze_powder>, <minecraft:sand.0>, <minecraft:coal.0>);
 
-Compression Chamber: (Output item, input item, input fluid) to add; (output item) to remove.
-mods.factorytech.CompressionChamber.addRecipe(<minecraft:lava_bucket>, <minecraft:bucket>, <liquid:lava> * 1000);
+Compression Chamber: (Input item, output item, input fluid) to add; (output item) to remove.
+mods.factorytech.CompressionChamber.addRecipe(<minecraft:bucket>, <minecraft:lava_bucket>, <liquid:lava> * 1000);
 mods.factorytech.CompressionChamber.removeRecipe(<minecraft:lava_bucket>);
 
 Crucible: (Output fluid, input item) to add; (output fluid) to remove.
