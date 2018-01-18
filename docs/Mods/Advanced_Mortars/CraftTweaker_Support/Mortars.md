@@ -13,7 +13,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
 |Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient|[<ore:logWood>, <ore:plankWood>]		|
 
 ### Example:
-```
+```JAVA
 ///// "Crushing"
 Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:15> * 4, 8, [<minecraft:bone>]);
 Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <plants2:generic:4> * 2, 8, [<botania:flower>]);

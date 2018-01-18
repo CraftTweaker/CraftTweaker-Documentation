@@ -13,7 +13,7 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 |----------|---------------------|-----------|
 |Required  |Name                 |String     |
 
-```
+```JAVA
 //Example:
 Excavator.getMineral(String Name);
 
@@ -30,7 +30,7 @@ var Iron = Excavator.getMineral("Iron_Ore");
 |Required  |Chance               |Double     |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Excavator.addOre(String ore, Double chance);
 
@@ -46,7 +46,7 @@ mods.immersiveengineering.Excavator.addOre("minecraft:iron_ore", 0.5);
 |Required  |Ore                  |String     |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Excavator.removeOre(String ore);
 
@@ -58,7 +58,7 @@ mods.immersiveengineering.Excavator.removeOre("minecraft:iron_ore");
 ##Fail Chance Getter/Setter
 
 ### Example:
-```
+```JAVA
 //Getter
 MineralMixObject.failchance;
 
@@ -69,7 +69,7 @@ MineralMixObject.failchance = 0.5;
 
 
 ## Full Example:
-```
+```JAVA
 //Example:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;

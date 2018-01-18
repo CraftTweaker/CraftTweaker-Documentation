@@ -2,7 +2,7 @@
 Here's a Quick To Scale Example:
 
 ## Example
-```
+```JAVA
 var planks = <ore:plankWood>;
 
 var stairs = [<minecraft:oak_stairs>,

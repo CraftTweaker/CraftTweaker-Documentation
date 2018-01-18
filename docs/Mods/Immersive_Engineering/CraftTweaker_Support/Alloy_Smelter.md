@@ -15,7 +15,7 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 
 
 ###Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
@@ -31,7 +31,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 
 ###Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);

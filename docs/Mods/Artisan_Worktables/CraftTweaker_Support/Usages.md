@@ -14,7 +14,7 @@
 |Optional  |GameStage: |Exclude GameStage(s) |.excludeGameStages				|String[] stages															|																 |
 |Required  |Creation:  |Create               |.create();						|Empty																		|																 |
 
-```
+```JAVA
 //Example from Old Wiki:
 Worktable.createRecipeBuilder("carpenter")
     .setShaped([

@@ -18,7 +18,7 @@ You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`
 
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
@@ -38,7 +38,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack output);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>);

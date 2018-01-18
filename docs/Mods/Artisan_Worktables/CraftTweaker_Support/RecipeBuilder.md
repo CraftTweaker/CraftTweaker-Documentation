@@ -2,13 +2,13 @@
 
 ## Calling The Packages
 You can call the RecipeBuilder using:
-```
+```JAVA
 import mods.artisanworktables.Worktable;
 import mods.artisanworktables.IRecipeBuilder;
 ```
 
 ### Example:
-```
+```JAVA
 //Bare Minimum Example
 var CarpenterRecipe = Worktable.createRecipeBuilder("carpenter");
 

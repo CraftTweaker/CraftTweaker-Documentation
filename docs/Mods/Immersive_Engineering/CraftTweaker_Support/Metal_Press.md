@@ -17,7 +17,7 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 |Required  |Input Size        |Integer                                            |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
 
@@ -34,7 +34,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
 
@@ -50,7 +50,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
 

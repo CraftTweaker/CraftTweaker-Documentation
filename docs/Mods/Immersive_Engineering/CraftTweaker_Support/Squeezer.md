@@ -14,7 +14,7 @@ You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 |Required  |Energy                 |Integer																					|
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 
@@ -30,7 +30,7 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Squeezer.removeFluidRecipe(ILiquidStack fluid);
 
@@ -46,7 +46,7 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Squeezer.removeItemRecipe(IItemStack stack);
 
@@ -62,7 +62,7 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
 ### Example:
-```
+```JAVA
 //Example:
 mods.immersiveengineering.Squeezer.removeByInput(IItemStack stack);
 
