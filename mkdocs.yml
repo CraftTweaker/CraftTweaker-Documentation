@@ -93,6 +93,9 @@ pages:
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
   - Mods:
+    - Advanced Mortars:
+      - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
+      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
       - RecipeBuilder: 
         - RecipeBuilder: 'Mods/Artisan_WorkTables/CraftTweaker_Support/RecipeBuilder.md'
