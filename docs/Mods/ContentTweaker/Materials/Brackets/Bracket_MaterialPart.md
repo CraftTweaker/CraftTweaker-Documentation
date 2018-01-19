@@ -10,5 +10,5 @@ Material Parts are referenced in the Material Part Bracket handler this way:
 <materialpart:platinum:gear>
 ```
 
-If the Material Part is found, this will return an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart) Object.  
-Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Materials/Materials/MaterialPart) for further information on what you can do with these.
+If the Material Part is found, this will return a MaterialPartDefinition Object.  
+This is an object that acts as both, an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart) as well as an [IItemStack](/Vanilla/Items/IItemStack) object, so methods of both interfaces will work on the returned definition.
