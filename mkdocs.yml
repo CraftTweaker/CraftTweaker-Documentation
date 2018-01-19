@@ -178,7 +178,7 @@ pages:
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
     - Immersive Engineering: 
-      - Immersive Engineering: 'Immersive_Engineering.md'
+      - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
         - Arc Furnace:
           - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
