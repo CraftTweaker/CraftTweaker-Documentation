@@ -64,21 +64,3 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
-
-## Gear
-
-### Addition
-
-```
-mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
-
-mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
-```
-
-### Removal
-
-```
-mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
-
-mods.thermalexpansion.Compactor.removeGearRecipe(<thermalfoundation:material:167>);
-```
