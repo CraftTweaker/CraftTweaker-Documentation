@@ -1,7 +1,7 @@
 # Categories
 
 ## Information:
-The Blueprint has an Non-Optional String parameter called "Category".
+The Blueprint has a Required String parameter called "Category".
 This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
 If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint.

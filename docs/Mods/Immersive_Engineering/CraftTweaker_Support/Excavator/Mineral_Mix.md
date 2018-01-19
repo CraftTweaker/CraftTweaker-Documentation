@@ -29,15 +29,9 @@ var Iron = Excavator.getMineral("Iron_Ore");
 |Required  |Ore                  |String     |
 |Required  |Chance               |Double     |
 
-### Example:
-```JAVA
-//Example:
-mods.immersiveengineering.Excavator.addOre(String ore, Double chance);
-
-mods.immersiveengineering.Excavator.addOre("minecraft:iron_ore", 0.5);
 ```
-
-
+mineralMixObject.addOre("minecraft:iron_ore", 0.5);
+```
 
 ## Remove Ore
 
@@ -45,25 +39,19 @@ mods.immersiveengineering.Excavator.addOre("minecraft:iron_ore", 0.5);
 |----------|---------------------|-----------|
 |Required  |Ore                  |String     |
 
-### Example:
-```JAVA
-//Example:
-mods.immersiveengineering.Excavator.removeOre(String ore);
-
-mods.immersiveengineering.Excavator.removeOre("minecraft:iron_ore");
 ```
-
-
+mineralMixObject.removeOre("minecraft:iron_ore");
+```
 
 ##Fail Chance Getter/Setter
 
 ### Example:
 ```JAVA
 //Getter
-MineralMixObject.failchance;
+mineralMixObject.failchance;
 
 //Setter
-MineralMixObject.failchance = 0.5;
+mineralMixObject.failchance = 0.5;
 ```
 
 

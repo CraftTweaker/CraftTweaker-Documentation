@@ -22,4 +22,4 @@ CarpenterRecipe.addOutput(<minecraft:planks>)
 CarpenterRecipe.create();
 ```
 
-For more features see [Usages](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md)
+For more features see [Usages](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages)

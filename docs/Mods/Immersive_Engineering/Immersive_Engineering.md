@@ -14,7 +14,7 @@ The mod features Power Generation in forms of waterwheels, windmills, biodiesel 
 
 
 ## CraftTweaker Related Information:
-Most if not all of the machines as well as some of the non-machine related features are all configurable through ZenScript.
+Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
 
 
 ## Bug Reports:

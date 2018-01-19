@@ -1,6 +1,8 @@
 # Refinery
+The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
 
 ## Calling The Package:
+You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## Add Recipe
 

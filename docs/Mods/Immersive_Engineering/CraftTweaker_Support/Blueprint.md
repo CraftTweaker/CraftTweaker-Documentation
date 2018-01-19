@@ -4,7 +4,7 @@ The Blueprint crafting package can be used to add/remove recipes to/from the Imm
 ## PSA:
 The [Category](/Mods/Immersive_Engineering/Variables/Categories.md) String is quite special.
 For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint for.
-This means that if you'd like a Blueprint Category called "Banana Pancakes" that provides "Food Recipes".
+This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes"
 After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
 
 

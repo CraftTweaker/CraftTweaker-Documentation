@@ -1,4 +1,4 @@
-# Enchanter
+# Arcane Ensorcellator (a.k.a Enchanter)
 
 ## Package
 `mods.thermalexpansion.Enchanter`

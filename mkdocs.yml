@@ -177,12 +177,13 @@ pages:
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-    - Immersive Engineering: 'Immersive_Engineering.md'
+    - Immersive Engineering: 
+      - Immersive Engineering: 'Immersive_Engineering.md'
       - IE Variables:
         - Arc Furnace:
           - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
         - Blueprint:
-          - Categories: 'Mods/Immersive_Engineering/Variables/Categories'
+          - Categories: 'Mods/Immersive_Engineering/Variables/Categories.md'
       - CraftTweaker Support:
         - Alloy Smelter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
         - Arc Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
@@ -313,8 +314,8 @@ pages:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-    - PneumaticCraft Repressurized:
-      - About PneumaticCraft: Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+    - PneumaticCraft&#58; Repressurized:
+      - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - Crafting:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'

@@ -34,4 +34,4 @@ Worktable.createRecipeBuilder("carpenter")
     .create();
 ```
 
-Also see: [To Scale Example](/Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md)
+Also see: [To Scale Example](/Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example)

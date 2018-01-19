@@ -1,4 +1,4 @@
-# InductionSmelter
+# Alchemical Imbuer
 
 ## Package
 `mods.thermalexpansion.Imbuer`
