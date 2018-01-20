@@ -12,3 +12,5 @@ The IItemDestroySpeed is a function with the following parameters:
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack) mutableItemStack → The item.
 - [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState) blockState → The state of the block that is being mined.
+
+The function needs to return a float value.
