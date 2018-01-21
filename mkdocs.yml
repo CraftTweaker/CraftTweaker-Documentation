@@ -191,11 +191,14 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
+            - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
             - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
           - Block:
             - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
@@ -210,6 +213,8 @@ pages:
           - Player:
             - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
             - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
+          - Resources:
+            - CTResourceLocation: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'

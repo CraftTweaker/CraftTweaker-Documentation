@@ -58,14 +58,15 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 ## Fields
 You can retrieve the following information from a Part:
 
-| ZenMethod            | Return Type                            |
-|----------------------|----------------------------------------|
-| getName()            | String                                 |
-| getUnlocalizedName() | String                                 |
-| getPartType()        | [IPartType](IPartType)                 |
-| getPartTypeName()    | String                                 |
-| getOreDictPrefix()   | String                                 |
-| getData()            | List<[IPartDataPiece](PartDataPiece)>  |
+| ZenMethod                 | Return Type                            |
+|---------------------------|----------------------------------------|
+| getName()                 | String                                 |
+| getUnlocalizedName()      | String                                 |
+| getShortUnlocalizedName() | String                                 |
+| getPartType()             | [IPartType](IPartType)                 |
+| getPartTypeName()         | String                                 |
+| getOreDictPrefix()        | String                                 |
+| getData()                 | List<[IPartDataPiece](PartDataPiece)\> |
 
 ## Register to Material(s)
 You can use this to register one or several Materials to this part

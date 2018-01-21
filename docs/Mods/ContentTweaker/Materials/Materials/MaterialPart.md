@@ -34,6 +34,7 @@ You can retrieve the following information from a MaterialPart:
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack)                                        |
 | getTextureLocation() | String                                                                         |
+| getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color)                        |
 | getColor()           | int                                                                            |
 | isColorized()        | boolean                                                                        |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData) |
