@@ -7,7 +7,7 @@ import mods.artisanworktables.Worktable;
 import mods.artisanworktables.IRecipeBuilder;
 ```
 
-### Example:
+### Example
 ```JAVA
 //Bare Minimum Example
 var CarpenterRecipe = Worktable.createRecipeBuilder("carpenter");

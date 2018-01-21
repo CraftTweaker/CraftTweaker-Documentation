@@ -1,4 +1,4 @@
-# To Scale Example:
+# To Scale Example
 Here's a Quick To Scale Example:
 
 ## Example
@@ -40,10 +40,10 @@ StairsRecipe.addOutput(stairs[4] * 10, 50);
 // Adds a Output for 10 Dark Oak Stairs at a Weight of 60 in 210
 StairsRecipe.addOutput(stairs[5] * 10, 60);
 
-StairsRecipe.setExtraOutputOne(<minecraft:dye> * 5, 0.12)
-StairsRecipe.setExtraOutputTwo(<minecraft:dye:1> * 5, 0.24)
-StairsRecipe.setExtraOutputThree(<minecraft:dye:2> * 5, 0.36)
-StairsRecipe.requireGameStages("ANY", ["one"])
-StairsRecipe.excludeGameStages(["two"])
+StairsRecipe.setExtraOutputOne(<minecraft:dye> * 5, 0.12);
+StairsRecipe.setExtraOutputTwo(<minecraft:dye:1> * 5, 0.24);
+StairsRecipe.setExtraOutputThree(<minecraft:dye:2> * 5, 0.36);
+StairsRecipe.requireGameStages("ANY", ["one"]);
+StairsRecipe.excludeGameStages(["two"]);
 StairsRecipe.create();
 ```

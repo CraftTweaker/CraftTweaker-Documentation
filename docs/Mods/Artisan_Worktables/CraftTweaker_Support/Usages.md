@@ -4,8 +4,8 @@
 
 |Required: |Type:      |Name:                |Implementation:                   |Parameters: 																|Additional Information: 										 |
 |----------|-----------|---------------------|----------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------|
-|Required  |Recipe:    |Shaped Recipe:       |.setShaped:     				 	|[IIngredient](/Vanilla/Variable_Types/IIngredient) [][] ingredients		|						 										 |
-|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless   				 	|[IIngredient](/Vanilla/Variable_Types/IIngredient) [] ingredients		    |																 |
+|Required  |Recipe:    |Shaped Recipe:       |.setShaped:     				 	|[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients		    |						 										 |
+|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless   				 	|[IIngredient[](/Vanilla/Variable_Types/IIngredient) ingredients		    |																 |
 |Optional  |Recipe:    |Mirrored:            |.setMirrored    				 	|Empty																		|																 |
 |Required  |Tool:      |Tool:                |.setTool        				 	|[IIngredient](/Vanilla/Variable_Types/IIngredient) tool + Integer damage	|																 |
 |Required  |Output:    |Output:              |.addOutput      				 	|[IItemstack](/Vanilla/Items/IItemStack) output, @Optional int weight		|Can be called multiple times to provide several weighted outputs|

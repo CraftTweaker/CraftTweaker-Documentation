@@ -5,7 +5,7 @@ The Blueprint has a Required String parameter called "Category".
 This String allows you to "Categorise" your recipes to a specific Blueprint Category.
 
 If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint.
-If it finds an existing Category it'll add the recipe to said Category
+If it finds an existing Category it'll add the recipe to said Category.
 
 ### Existing Categories:
 
