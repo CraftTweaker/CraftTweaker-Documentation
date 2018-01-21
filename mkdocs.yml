@@ -93,6 +93,14 @@ pages:
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
   - Mods:
+    - Advanced Mortars:
+      - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
+      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - Artisan Worktables:
+      - RecipeBuilder: 
+        - RecipeBuilder: 'Mods/Artisan_WorkTables/CraftTweaker_Support/RecipeBuilder.md'
+        - Usages: 'Mods/Artisan_WorkTables/CraftTweaker_Support/Usages.md'
+        - To Scale Example: 'Mods/Artisan_WorkTables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
@@ -161,14 +169,55 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
-    - ImmersivePetroleum:
+    - GameStages:
+      - Introduction: 'Mods/GameStages/GameStages.md'
+      - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
+      - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
+      - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
+      - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
+      - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
+      - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
+    - Immersive Engineering: 
+      - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
+      - IE Variables:
+        - Arc Furnace:
+          - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
+        - Blueprint:
+          - Categories: 'Mods/Immersive_Engineering/Variables/Categories.md'
+      - CraftTweaker Support:
+        - Alloy Smelter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
+        - Arc Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
+        - Blast Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blast_Furnace.md'
+        - Blueprint: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blueprint.md'
+        - Bottling Machine: 'Mods/Immersive_Engineering/CraftTweaker_Support/Bottling_Machine.md'
+        - Coke Oven: 'Mods/Immersive_Engineering/CraftTweaker_Support/Coke_Oven.md'
+        - Crusher: 'Mods/Immersive_Engineering/CraftTweaker_Support/Crusher.md'
+        - Diesel Helper: 'Mods/Immersive_Engineering/CraftTweaker_Support/Diesel_Helper.md'
+        - Excavator:
+          - Excavator: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Excavator.md'
+          - Mineral Mix: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Mineral_Mix.md'
+        - Fermenter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
+        - Metal Press: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
+        - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
+        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md' 
+        - Squeezer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
+    - Immersive Petroleum:
       - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
-      - Distillation: 'Mods/Immersive_Petroleum/Distillation.md'
-      - Fuel Registration: 'Mods/Immersive_Petroleum/FuelRegistration.md'
-      - Lubricant: 'Mods/Immersive_Petroleum/Lubricant.md'
-      - Reservoir: 'Mods/Immersive_Petroleum/Reservoir.md'
+      - CraftTweaker Support:
+        - Distillation: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
+        - Fuel Registration: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - Lubricant: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
+        - Reservoir: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
+    - Industrial Foregoing:
+      - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
+      - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
+      - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
+      - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
+      - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
+    - LootTableTweaker:
+      - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
     - Mekanism:
       - Chemical Crystallizer: 'Mods/Mekanism/Chemical_Crystallizer.md'
       - Chemical Dissolution Chamber: 'Mods/Mekanism/Chemical_Dissolution_Chamber.md'
@@ -204,24 +253,24 @@ pages:
         - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
-        - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
+        - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
+        - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
+        - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
-        - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
         - Recipes: 
-          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
           - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
           - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
+          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
       - Extra Utilities 2:
@@ -248,37 +297,32 @@ pages:
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Thermal Expansion:
+        - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
+        - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
         - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
-        - Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
         - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
         - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
-        - InductionSmelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
-        - Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
-        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Fractionating Still (Refinery): 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Induction Smelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - Magma Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
         - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
-        - Refinery: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Phytogenic Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-    - Industrial Foregoing:
-      - Industrial Foregoing: 'Mods/IndustrialForegoing/IndustrialForegoing.md'
-      - BioReactor: 'Mods/IndustrialForegoing/BioReactor.md'
-      - Laser Drill: 'Mods/IndustrialForegoing/LaserDrill.md'
-      - Sludge Refiner: 'Mods/IndustrialForegoing/SludgeRefiner.md'
-      - Protein Reactor: 'Mods/IndustrialForegoing/ProteinReactor.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-    - GameStages:
-      - Introduction: 'Mods/GameStages/GameStages.md'
-      - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
-      - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
-      - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
-      - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
-      - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
-      - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-    - LootTableTweaker:
-      - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
+    - PneumaticCraft&#58; Repressurized:
+      - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+      - Crafting:
+        - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+        - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
+        - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
+        - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
+        - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
+        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
       - Tweaker Static Class: 'Mods/PoweredThingies/_TweakerClass.md'
@@ -291,15 +335,6 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
-    - 'PneumaticCraft: Repressurized':
-      - 'About PneumaticCraft: Repressurized': 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
-        - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
-        - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
-        - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
-        - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
-        - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
-        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
