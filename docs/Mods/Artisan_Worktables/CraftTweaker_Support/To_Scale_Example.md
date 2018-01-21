@@ -12,7 +12,7 @@ var stairs = [<minecraft:oak_stairs>,
 			  <minecraft:acacia_stairs>,
 			  <minecraft:dark_oak_stairs>] as IItemstack[];
 
-var StairsRecipe = Worktable.createRecipeBuilder("carpenter")
+var StairsRecipe = Worktable.createRecipeBuilder("carpenter");
 
 StairsRecipe.setShaped([
         [planks, null, null],
