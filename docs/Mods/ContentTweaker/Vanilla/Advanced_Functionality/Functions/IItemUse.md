@@ -33,7 +33,7 @@ item.maxDamage = 50;
 item.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     var firePos = pos.getOffset(facing, 1);
     if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
-        world.setBlockState(<block:minecraft:fire>, firePos));
+        world.setBlockState(<block:minecraft:fire>, firePos);
         player.getHeldItem(hand).damageItem(1, player);
         return ActionResult.success();
     }
