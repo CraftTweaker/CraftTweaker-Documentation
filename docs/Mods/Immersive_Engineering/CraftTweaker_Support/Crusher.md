@@ -1,7 +1,7 @@
 # Crusher
 The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
 
-## Calling The Package:
+## Calling The Package
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 ## Add Recipe
@@ -14,7 +14,7 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 |Optional  |Secondary Output      |[IItemStack](/Vanilla/Items/IItemStack)													|
 |Optional  |Secondary Chance      |Double																					|
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
@@ -32,7 +32,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);

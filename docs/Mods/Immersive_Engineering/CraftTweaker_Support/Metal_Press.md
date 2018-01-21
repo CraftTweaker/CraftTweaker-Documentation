@@ -2,7 +2,7 @@
 The Metal Press package can be used to add/remove recipes to/from the Immersive Engineering Metal Press.
 
 
-## Calling The Package:
+## Calling The Package
 You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
 
@@ -16,7 +16,7 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 |Required  |Energy            |Integer                                            |
 |Required  |Input Size        |Integer                                            |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
@@ -33,7 +33,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
@@ -49,7 +49,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);

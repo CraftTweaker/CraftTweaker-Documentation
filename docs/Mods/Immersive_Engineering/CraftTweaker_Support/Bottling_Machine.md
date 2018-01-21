@@ -1,6 +1,6 @@
 # Bottling Machine
 
-## Calling The Package:
+## Calling The Package
 You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
 
 ## Add Recipe
@@ -10,7 +10,7 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 |Required  |Input    |[IIngredient](/Vanilla/Variable_Types/IIngredient)  |
 |Required  |Fluid    |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  		  |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
@@ -18,12 +18,12 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 ```
 
 
-## Remove Recipe:
+## Remove Recipe
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);

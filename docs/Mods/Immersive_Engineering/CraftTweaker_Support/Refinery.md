@@ -1,7 +1,7 @@
 # Refinery
 The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
 
-## Calling The Package:
+## Calling The Package
 You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## Add Recipe
@@ -13,7 +13,7 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 |Required  |Input 2             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
 |Required  |Energy              |Integer                                            |
 
-### Example:
+### Example
 ```JAVA
 //Example
 mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
@@ -28,7 +28,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 |------------------|---------------------------------------------------|
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
 
-### Example:
+### Example
 ```JAVA
 //Example
 mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);

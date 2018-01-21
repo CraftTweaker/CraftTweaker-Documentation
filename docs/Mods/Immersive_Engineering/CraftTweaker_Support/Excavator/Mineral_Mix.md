@@ -45,7 +45,7 @@ mineralMixObject.removeOre("minecraft:iron_ore");
 
 ##Fail Chance Getter/Setter
 
-### Example:
+### Example
 ```JAVA
 //Getter
 mineralMixObject.failchance;
@@ -56,7 +56,7 @@ mineralMixObject.failchance = 0.5;
 
 
 
-## Full Example:
+## Full Example
 ```JAVA
 //Example:
 import mods.immersiveengineering.Excavator;

@@ -1,6 +1,6 @@
 # Coke Oven
 
-## Calling The Package:
+## Calling The Package
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
 ## Add Recipe
@@ -11,7 +11,7 @@ You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 |Required  |Input    	|[IIngredient](/Vanilla/Variable_Types/IIngredient)  |
 |Required  |Time    	|Integer  			 							 	 |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
@@ -19,7 +19,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 ```
 
 
-## Remove Recipe:
+## Remove Recipe
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |

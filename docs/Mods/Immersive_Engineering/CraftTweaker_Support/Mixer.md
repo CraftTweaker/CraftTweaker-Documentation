@@ -1,7 +1,7 @@
 # Mixer
 The Mixer package can be used to add/remove recipes to/from the Immersive Engineering Mixer.
 
-## Calling The Package:
+## Calling The Package
 You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
 ## Add Recipe
@@ -13,7 +13,7 @@ You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 |Required  |Item Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient) as Array  |
 |Required  |Energy             |Integer                                                      |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
@@ -29,7 +29,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 |------------------|---------------------------------------------------|
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Mixer.removeRecipe(ILiquidStack output);

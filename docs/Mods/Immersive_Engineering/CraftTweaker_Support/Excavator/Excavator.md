@@ -1,6 +1,6 @@
 # Excavator
 
-## Calling The Package:
+## Calling The Package
 You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
@@ -15,7 +15,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 |Optional  |Dimension Whitelist  |Integer[]  |
 |Optional  |Blacklist            |Boolean    |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
@@ -33,7 +33,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 |----------|---------------------|-----------|
 |Required  |Name                 |String     |
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Excavator.removeMineral(String name);

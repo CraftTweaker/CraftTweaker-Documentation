@@ -1,14 +1,14 @@
 # Blueprint
 The Blueprint crafting package can be used to add/remove recipes to/from the Immersive Engineering Blueprint crafting.
 
-## PSA:
+## PSA
 The [Category](/Mods/Immersive_Engineering/Variables/Categories.md) String is quite special.
 For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint.
 This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes".
 After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
 
 
-## Calling The Package:
+## Calling The Package
 You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## Add Recipe
@@ -19,7 +19,7 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 |Required  |Inputs    |[IIngredient](/Vanilla/Variable_Types/IIngredient)  						|
 
 
-### Example:
+### Example
 ```JAVA
 //Example:
 mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
@@ -32,7 +32,7 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 ```
 
 
-## Remove Recipe:
+## Remove Recipe
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
 |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
