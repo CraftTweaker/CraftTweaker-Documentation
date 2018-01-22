@@ -165,9 +165,9 @@ pages:
       - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
       - RecipeBuilder: 
-        - RecipeBuilder: 'Mods/Artisan_WorkTables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_WorkTables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_WorkTables/CraftTweaker_Support/To_Scale_Example.md'
+        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
+        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
