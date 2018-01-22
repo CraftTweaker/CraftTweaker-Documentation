@@ -15,7 +15,7 @@ You can call the Chop Saw package using `mods.factorytech.ChopSaw`
 ### Example
 ```JAVA
 //Example:
-mods.factorytech.ChopSaw.addRecipe(IItemStack output, IIngredient input;
+mods.factorytech.ChopSaw.addRecipe(IItemStack output, IIngredient input);
 mods.factorytech.ChopSaw.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>);
 ```
 
