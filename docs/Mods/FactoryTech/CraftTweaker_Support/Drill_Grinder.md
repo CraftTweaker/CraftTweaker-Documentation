@@ -15,7 +15,7 @@ You can call the Drill Grinder package using `mods.factorytech.ChopSaw`
 ### Example
 ```JAVA
 //Example:
-mods.factorytech.DrillGrinder.addRecipe(IItemStack output, IIngredient input;
+mods.factorytech.DrillGrinder.addRecipe(IItemStack output, IIngredient input);
 mods.factorytech.DrillGrinder.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>);
 ```
 
