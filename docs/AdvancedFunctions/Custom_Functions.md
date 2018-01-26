@@ -5,7 +5,7 @@ Here's how to write your own functions!
 You can even nest functions in functions
 
 ## Basic Syntax
-Generally, you declare a function using:
+Generally, you declare a static using:
 
 ```Java
 function NAME ([arguments[as type]]) [as returnType]{
@@ -18,7 +18,12 @@ The things in brackets are optional, depending on what you want to achieve.
 Let's take a closer look at specific functions.
 
 
-## Void functions
+## Static Functions
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](Cross-Script_Reference).  
+
+
+### Void functions
 
 Void functions are functions that will not return any value.
 
@@ -46,7 +51,7 @@ function realTens(a as string){
 }
 ```
 
-## Return functions
+### Return functions
 
 You can also specify a value that should be returned by a function. 
 It is recommended using the `as` keyword to define the return type.
@@ -66,28 +71,16 @@ function add(a as int,b as int) as int{
 }
 ```
 
-## Recipe functions
 
-CT's shaped and shapeless recipes natively support functions to alter the recipe's outputs
-After declaring a recipe's output and inputs, you can add a function as third parameter, that will require 3 parameters: (output, inputs, craftingInfo)
+## Functions as variables
+You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables) this way.
 
-To show this, we're gonna create a recipe that repairs your precious diamond Pickaxe using diamonds:
+If you need to cast the method (as you do for globals) you can use this:
+```
+global addition as function(int, int)int = function (a as int, b as int) as int {
+	return a + b;
+};
 
-```Java
-val diaPick = <minecraft:diamond_pickaxe>;
-
-//we start normal, by writing the output
-recipes.addShapeless(diaPick,
-
-//followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
-[diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
-
-//now we start declaring the function. 
-//It needs 3 parameters, one for the output, one for the inputs and one for crafting info. 
-//We'll only need the input parameter, though.
-function(out, ins, cInfo){
-	
-	//now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
-	return ins.mark.withDamage(max(0,ins.mark.damage - 10));
-});
+print(addition(1,2));
 ```

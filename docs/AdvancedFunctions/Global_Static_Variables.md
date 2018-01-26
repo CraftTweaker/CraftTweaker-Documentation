@@ -1,10 +1,23 @@
-# Global Variables
+# Global and Static Variables
 
 Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
 "Why is there no way to make them available in every script?" Is what went through your head at such times.  
 
-Be relieved now for there has been added a means of declarung and accessing global values!  
-They cannot be changed however.
+Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
+They cannot be changed, though.
+
+
+## Difference between statics and globals
+Both, statics and globals are scriptbound and instantiate before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](Cross-Script_Reference) to be accessed.  
+
+Globals are created using the `global` keyword.  
+Statics are created using the `static` keyword.
+
+Aside from that, they are identical!
 
 
 ## Declaring a global value
@@ -15,6 +28,7 @@ import crafttweaker.item.IItemStack;
 
 
 global myGlobalValue as IItemStack = <minecraft:dirt>;
+static myStaticValue as IItemStack = <minecraft:sand>;
 ```
 
 Okay, let's break it down, shall we?

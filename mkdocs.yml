@@ -12,8 +12,9 @@ pages:
     - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
+    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global Variables: 'AdvancedFunctions/Global_Variables.md'
+    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
     - Preprocessors:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
