@@ -18,18 +18,20 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter       | ZenSetter           | What does it do                              | Type                                               |
 |-----------------|---------------------|----------------------------------------------|----------------------------------------------------|
-| id              |                     | Returns the block ID                         | string                                             |
-| displayName     |                     | Returns the block's DisplayName              | string                                             |
-| unlocalizedName | unlocalizedName     | Returns/Sets the block's unlocalized Name    | string                                             |
-|                 | lightOpacy          |                                              | int                                                |
-|                 | lightLevel          |                                              | int                                                |
-|                 | resistance          |                                              | int                                                |
-|                 | hardness            |                                              | int                                                |
-| tickRandomly    | tickRandomly        |                                              | bool                                               |
 |                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                               |
 | creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab) |
 | defaultState    |                     |                                              | [IBlockState](IBlockState)                         |
-|                 | defualtSlipperiness |                                              | float                                              |
+|                 | defaultSlipperiness |                                              | float                                              |
+| id              |                     | Returns the block ID                         | string                                             |
+| displayName     |                     | Returns the block's DisplayName              | string                                             |
+|                 | hardness            |                                              | int                                                |
+| harvestLevel    |                     | Returns the block's harvest level            | int                                                |
+| harvestTool     |                     | Returns the block's harvest tool             | string                                             |
+|                 | lightOpacy          |                                              | int                                                |
+|                 | lightLevel          |                                              | int                                                |
+|                 | resistance          |                                              | int                                                |
+| unlocalizedName | unlocalizedName     | Returns/Sets the block's unlocalized Name    | string                                             |
+| tickRandomly    | tickRandomly        |                                              | bool                                               |
 
 
 ## ZenMethods
@@ -62,4 +64,11 @@ Uses an [IBlockState](IBlockState), an [IBlockAccess](/Vanilla/World/IBlockAcces
 Returns a float.
 ```
 defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
+```
+
+### Set the block's harvest level
+Uses a string and an int.  
+Returns void (nothing).
+```
+defObj.setHarvestLevel(string toolclass, int level);
 ```
