@@ -37,7 +37,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerLoggedOut        | [crafttweaker.event.PlayerLoggedOutEvent](Events/PlayerLoggedOut)               | ✔                    |
 | onPlayerCrafted          | [crafttweaker.event.PlayerCraftedEvent](Events/PlayerCrafted)                   | ✔                    |
 | onPlayerSmelted          | [crafttweaker.event.PlayerSmeltedEvent](Events/PlayerSmelted)                   | ✔                    |
-| onPlayerChangedDimension | [crafttweaker.event.PlayerChangedDimensionEvent](Events/PlayerChangedDimension) | ✘                    |
+| onPlayerChangedDimension | [crafttweaker.event.PlayerChangedDimensionEvent](Events/PlayerChangedDimension) | ✔                    |
 | onPlayerRespawn          | [crafttweaker.event.PlayerRespawnEvent](Events/PlayerRespawn)                   | ✔                    |
 | onPlayerAttackEntity     | [crafttweaker.event.PlayerAttackEntityEvent](Events/PlayerAttackEntity)         | ✘                    |
 | onPlayerBonemeal         | [crafttweaker.event.PlayerBonemealEvent](Events/PlayerBonemeal)                 | ✘                    |
