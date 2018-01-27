@@ -246,6 +246,7 @@ pages:
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
+      - Player features: 'Mods/GameStages/Player_Stages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
