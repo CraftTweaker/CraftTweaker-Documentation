@@ -8,7 +8,7 @@ They cannot be changed, though.
 
 
 ## Difference between statics and globals
-Both, statics and globals are scriptbound and instantiate before the script is executed.  
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
 Both cannot be changed.  
 The difference is how they are called:  
 Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  

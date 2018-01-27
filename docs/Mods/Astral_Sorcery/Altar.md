@@ -98,7 +98,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(<astralsorcery:itemcrafting
 
 Adds a recipe to the Trait Altar (T4)
 
-`Constellation` the Constellation as unlocalized String. This is an optional parameter.
+`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
 
 `inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
 

@@ -30,7 +30,7 @@ It might be required for you to import the package if you encounter any issues (
 |                 | lightOpacy          |                                              | int                                                |
 |                 | lightLevel          |                                              | int                                                |
 |                 | resistance          |                                              | int                                                |
-| unlocalizedName | unlocalizedName     | Returns/Sets the block's unlocalized Name    | string                                             |
+| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                             |
 | tickRandomly    | tickRandomly        |                                              | bool                                               |
 
 
