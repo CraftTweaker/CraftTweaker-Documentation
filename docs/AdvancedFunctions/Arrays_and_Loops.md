@@ -130,8 +130,7 @@ for item in loadedMods["minecraft"].items {
 # Adding items to an Array
 
 While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You cannot add nested Arrays or primitive Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.   
 You use the `+` operator for array Addition:
 
 ```java

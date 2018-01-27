@@ -10,10 +10,12 @@ It might be required for you to import the package if you encounter any issues, 
 You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](MaterialPart) object.
 
 ## Methods
-All you can do with MaterialPartData is add more Data!  
+All you can do with MaterialPartData is add more Data and retrieve stored data!
 You do that like so:
 ```JAVA
 MPD.addDataValue(String name, String value);
+MPD.getIntValue(String name, int defaultValue);
+MPD.getStringValue(String name, String defaultValue);
 ```
 
 Now, what to put in as name or value?  
@@ -120,4 +122,7 @@ oreData.addDataValue("hardness", "3,3");
 oreData.addDataValue("resistance", "15,15");
 oreData.addDataValue("harvestLevel", "1,1");
 oreData.addDataValue("harvestTool", "pickaxe,shovel");
+
+oreData.addDataValue("test", 1);
+print(oreData.getIntValue("test", -1));
 ```

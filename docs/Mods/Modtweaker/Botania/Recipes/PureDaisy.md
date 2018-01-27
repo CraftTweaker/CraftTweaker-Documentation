@@ -10,6 +10,8 @@ You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods
 
 ## Recipe addition
 
+The time defaults to 150 ticks
+
 ```
 //mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
 mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);

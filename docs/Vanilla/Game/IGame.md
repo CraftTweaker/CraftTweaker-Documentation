@@ -26,7 +26,7 @@ It might be required for you to import the package if you encounter any issues (
 
 //essentially the same
 val sheep = game.getEntity("sheep");
-val sheep1 = <entity:sheep>;
+val sheep1 = <entity:minecraft:sheep>;
 ```
 
 ### SetLocalization

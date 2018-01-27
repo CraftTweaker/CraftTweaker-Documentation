@@ -1,6 +1,6 @@
 # Facing
 
-A Hand is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block) possible directions
+A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block) possible directions
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  

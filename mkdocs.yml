@@ -2,20 +2,20 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
+  - Using this wiki: 'UsingThisWiki.md'
   - Commands: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
   - Global functions: 'Vanilla/Global_Functions.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
-  - Ore Dictionary: 'Vanilla/OreDict.md'
   - Advanced Functions:
     - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
     - Calculations: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
+    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global Variables: 'AdvancedFunctions/Global_Variables.md'
+    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
-    - Recipe Functions: 'AdvancedFunctions/Recipe_Functions.md'
     - Preprocessors:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
@@ -38,30 +38,75 @@ pages:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
+      - IBlockProperties: 'Vanilla/Blocks/IBlockProperties.md'
+      - IBlockState: 'Vanilla/Blocks/IBlockState.md'
+      - IMaterial: 'Vanilla/Blocks/IMaterial.md'
+      - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
+      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Commands:
+      - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
+    - Container: 
+      - IContainer: 'Vanilla/Container/IContainer.md'
+    - Creative Tabs:
+      - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
+    - Enchantments:
+      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
+      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - Data:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
+    - Damage:
+      - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
     - Entities:
       - Attributes:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
       - IEntity: 'Vanilla/Entities/IEntity.md'
+      - IEntityAgeable: 'Vanilla/Entities/IEntityAgeable.md'
+      - IEntityAnimal: 'Vanilla/Entities/IEntityAnimal.md'
+      - IEntityCreature: 'Vanilla/Entities/IEntityCreature.md'
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
+      - IEntityDropFunction: 'Vanilla/Entities/IEntityDropFunction.md'
       - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
+      - IEntityLiving: 'Vanilla/Entities/IEntityLiving.md'
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
+      - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
+    - Events:
+      - Events: 'Vanilla/Events/Events.md'
+      - IEventManager: 'Vanilla/Events/IEventManager.md'
+      - Events:
+        - PlayerAttackEntity: 'Vanilla/Events/Events/PlayerAttackEntity.md'
+        - PlayerBonemeal: 'Vanilla/Events/Events/PlayerBonemeal.md'
+        - PlayerChangedDimension: 'Vanilla/Events/Events/PlayerChangedDimension.md'
+        - PlayerCrafted: 'Vanilla/Events/Events/PlayerCrafted.md'
+        - PlayerDeathDrops: 'Vanilla/Events/Events/PlayerDeathDrops.md'
+        - PlayerFillBucket: 'Vanilla/Events/Events/PlayerFillBucket.md'
+        - PlayerInteract: 'Vanilla/Events/Events/PlayerInteract.md'
+        - PlayerInteractEntity: 'Vanilla/Events/Events/PlayerInteractEntity.md'
+        - PlayerLoggedIn: 'Vanilla/Events/Events/PlayerLoggedIn.md'
+        - PlayerLoggedOut: 'Vanilla/Events/Events/PlayerLoggedOut.md'
+        - PlayerOpenContainer: 'Vanilla/Events/Events/PlayerOpenContainer.md'
+        - PlayerPickupEntity: 'Vanilla/Events/Events/PlayerPickupEntity.md'
+        - PlayerPickupXp: 'Vanilla/Events/Events/PlayerPickupXp.md'
+        - PlayerRespawn: 'Vanilla/Events/Events/PlayerRespawn.md'
+        - PlayerSleepInBed: 'Vanilla/Events/Events/PlayerSleepInBed.md'
+        - PlayerSmelted: 'Vanilla/Events/Events/PlayerSmelted.md'
+        - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoeEvent.md'
+        - PlayerUseItemStart: 'Vanilla/Events/Events/PlayerUseItemStart.md'
+        - PlayerUseItemTick: 'Vanilla/Events/Events/PlayerUseItemTick.md'
     - Game:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
-      - IPlayer: 'Vanilla/Game/IPlayer.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
@@ -75,12 +120,28 @@ pages:
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
+    - Ore Dictionary: 
+      - IOreDict: 'Vanilla/OreDict/IOreDict.md'
+      - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
+    - Players:
+      - IFoodStats: 'Vanilla/Players/IFoodStats.md'
+      - IPlayer: 'Vanilla/Players/IPlayer.md'
+      - IUser: 'Vanilla/Players/IUser.md'
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
+      - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 'Vanilla/Recipes/Recipes_Crafting_Table.md'
-      - Furnace Recipes: 'Vanilla/Recipes/Recipes_Furnace.md'
+      - Crafting Table Recipes: 
+        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+        - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
+        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
+        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
+        - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
+      - Furnace Recipes:
+        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+        - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
     - Utils:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
@@ -92,15 +153,22 @@ pages:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
+    - World:
+      - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
+      - IBlockPos: 'Vanilla/World/IBlockPos.md'
+      - IFacing: 'Vanilla/World/IFacing.md'
+      - IWorld: 'Vanilla/World/IWorld.md'
+      - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
+      - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
   - Mods:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
       - RecipeBuilder: 
-        - RecipeBuilder: 'Mods/Artisan_WorkTables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_WorkTables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_WorkTables/CraftTweaker_Support/To_Scale_Example.md'
+        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
+        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
@@ -132,9 +200,14 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
+            - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
           - Block:
             - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
@@ -149,6 +222,8 @@ pages:
           - Player:
             - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
             - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
+          - Resources:
+            - CTResourceLocation: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
@@ -284,6 +359,9 @@ pages:
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - Refined Storage:
+        - Recipes:
+          - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
         - Brackets: 
@@ -296,6 +374,11 @@ pages:
           - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
+      - Tinkers' Complement:
+        - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
+        - Handlers:
+          - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
+          - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
       - Thermal Expansion:
         - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
         - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
@@ -310,6 +393,11 @@ pages:
         - Phytogenic Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
         - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+    - Modular Machinery:
+      - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
+      - Recipes: 
+        - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
+        - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
@@ -349,6 +437,7 @@ pages:
       - ZenMember: 'Dev_Area/ZenAnnotations/ZenMembers.md'
       - ModOnly: 'Dev_Area/ZenAnnotations/Annotation_ModOnly.md'
       - ZenMethod: 'Dev_Area/ZenAnnotations/Annotation_ZenMethod.md'
+      - ZenMethodStatic: 'Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic.md'
       - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'

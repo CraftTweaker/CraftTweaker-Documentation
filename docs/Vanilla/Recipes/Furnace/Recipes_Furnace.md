@@ -108,3 +108,12 @@ This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
 ```java
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
+
+
+
+## Other Functionality
+### Getting all registered Furnace Recipes
+```
+furnace.all;
+```
+Returns a [`List<IFurnaceRecipe>`](IFurnaceRecipe).

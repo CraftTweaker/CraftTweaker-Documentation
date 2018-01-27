@@ -9,10 +9,12 @@ This is where the [VanillaFactory](VanillaFactory) comes in:
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 
 The String is in each of the three methods the same: It's the unlocalized name the Tab will later have.  
-The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").
+The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").  
+You can decide wheter you want to use an itemRepresentation, an itemStack, a blockrepresentation or an itemStackSupplier function.
 
 ## Calling an existing ICreativeTab object
 You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab) tab, though you cannot change any of it's properties.   
@@ -27,10 +29,11 @@ You can call and set all these properties using the normal ZenGetters and ZenSet
 Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
 Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab))!
 
-| Property Name   | Type                                    | Required | Default Value | Description/Notes       |
-|-----------------|-----------------------------------------|----------|---------------|-------------------------|
-| unlocalizedName | String                                  | YES      |               | The Creative Tab's name |
-| iconStack       | [IItemStack](/Vanilla/Items/IItemStack) | YES      |               | The Creative Tab's icon |
+| Property Name     | Type                                                                                                   | Required | Default Value | Description/Notes       |
+|-------------------|--------------------------------------------------------------------------------------------------------|----------|---------------|-------------------------|
+| unlocalizedName   | String                                                                                                 | YES      |               | The Creative Tab's name |
+| iconStack         | [IItemStack](/Vanilla/Items/IItemStack)                                                                | YES/NO   |               | The Creative Tab's icon |
+| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier) | NO/YES   | null          | Determines something?                                                                |
 
 ## Registering the creative tab
 You need to call this method to register the creative Tab in the game!  

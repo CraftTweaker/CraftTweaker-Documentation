@@ -62,37 +62,4 @@ This gives the player who performs the recipe 1 level each time the crafting is 
 Again, we have a function with 3 Parameters:  
 `out` is the recipe's output and an IItemStack object.  
 `cInfo` is an ICraftingInfo Object  
-`player` is the player performing the recipe and an IPlayer object.
-
-
-# ICraftingInfo
-
-The IcraftingInfo object contains all kinds of information on the crafting process itself:  
-`cInfo.inventory` returns the inventory the crafting is performed in as an ICraftingInventory Object  
-`cInfo.player` returns the player conducting the crafting as an IPlayer object  
-`cInfo.dimension` returns the dimension the crafting process is performed in as an IDimension object
-
-# IDimension
-
-The IDimension object contains information on a Dimension within the game, in this case the dimension the crafting is performed in.
-
-`dimension.isDay` returns if it is currently day or not in the dimension as bool.  
-`dimension.getBrightness(x,y,z)` returns the brightness at the given location as int. X,y and z are ints.  
-
-
-# ICraftingInventory
-
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
-
-`inventory.player` returns the player owning this inventory as IPlayer.  
-`inventory.size` returns the inventory's size as int.  
-`inventory.width` returns the inventory's width as int.  
-`inventory.height` returns the inventory's height as int.  
-`inventory.stackCount` returns the the number of stacks that are actually filled in as int.
-
-`inventory.getStack(index)` returns the stack at the given index as IItemStack or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.    
-
-The top left stack is position (0, 0), x and y are ints.  
-`inventory.getStack(x, y)` returns the stack at the given position as IItemStack or null if no item present.  
-`inventory.setStack(x, y, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.  
+`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer) object.

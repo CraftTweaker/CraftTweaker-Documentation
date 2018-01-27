@@ -36,7 +36,7 @@ int `craftingTickTime`,
 [IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs`
 
 The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
-You can use [IItemStacks](/Vanilla/Items/IItemStack), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack), [IOreDictEntries](/Vanilla/OreDict) or `null` as the array's members
+You can use [IItemStacks](/Vanilla/Items/IItemStack), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) or `null` as the array's members
 
 These recipes cannot be shapeless!
 
@@ -92,4 +92,30 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(<astralsorcery:itemcrafting
 			<minecraft:nether_star>, <minecraft:nether_star>,
 			<minecraft:nether_star>, <minecraft:nether_star>,
 			<ore:blockMarble>, <ore:blockMarble>]);
+```
+
+### Trait
+
+Adds a recipe to the Trait Altar (T4)
+
+`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
+
+`inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+
+`inputs` Order:  
+![Inputs Order](Assets/guialtar4.png)
+
+```JAVA
+//mods.astralsorcery.Altar.addTraitAltarRecipe(IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
+
+mods.astralsorcery.Altar.addTraitAltarRecipe(<minecraft:tnt>, 4500, 100, [
+	<liquid:lava>, <liquid:lava>, <liquid:lava>,<liquid:lava>, <minecraft:gunpowder>, 
+	<liquid:lava>, <liquid:lava>, <liquid:lava>, <liquid:lava>,null, 
+	null, null, null,<ore:blockMarble>, <ore:blockMarble>,
+	<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>,<ore:blockMarble>, 
+	<ore:blockMarble>,<minecraft:redstone>, <minecraft:redstone>,<minecraft:redstone>, <minecraft:redstone>,
+	//Outer Items, indices 25+
+	<minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>
+],
+"astralsorcery.constellation.evorsio");
 ```

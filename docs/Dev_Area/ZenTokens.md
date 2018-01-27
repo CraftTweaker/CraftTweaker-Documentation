@@ -25,7 +25,7 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 17          | T_MUL         | `*`                                                       |
 | 18          | T_DIVASSIGN   | `/=`                                                      |
 | 19          | T_DIV         | `/`                                                       |
-| 20          | T_MODASSIGN   | `&=`                                                      |
+| 20          | T_MODASSIGN   | `%=`                                                      |
 | 21          | T_MOD         | `%`                                                       |
 | 22          | T_ORASSIGN    | `|=`                                                      |
 | 23          | T_OR          | `|`                                                       |

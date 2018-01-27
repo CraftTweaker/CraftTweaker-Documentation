@@ -1,7 +1,7 @@
 # IItemStack
 
 An IItemStack Object consists of an [item definition](IItemDefinition), a meta/damage value and NBT data.  
-In other words, it refers an item or a block.
+In other words, it refers to an item or to a block.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
@@ -13,7 +13,7 @@ There are several methods that return an IItemStack
 * Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item) `<minecraft:apple>`
 * Using the `makeStack()` method on a [IItemDefinition](IItemDefinition) object `<minecraft:stone>.definition.makeStack(0)`
 * Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop) object
-* Using the `firstItem` getter on a [ore Dictionary entry](/Vanilla/OreDict)
+* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)
 
 ## Calling an IItemStack[] or a IItemStack List
 If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
@@ -26,29 +26,158 @@ If you call these functions, you will most likely do so to iterate through the r
 ## Functions
 So what can we do with that now?
 
-### IIngredient
-A bit of Java jargon here: IItemStack is an interface and extends IIngredient. That means that all functions useable for [IIngredient](/Vanilla/Variable_Types/IIngredient) also work for IItemStacks, only that they will then return an IIngredient.
-Please read the IIngredient page for further information on IIngredients.
+### Extending IIngredient
+IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient).  
+That means all functionality that is available to  [IIngredient](/Vanilla/Variable_Types/IIngredient) objects also is applicable to IItemStacks.
+<details><summary>Derived Methods</summary>
+	<ul>
+		<li>stack.mark</li>
+		<li>stack.amount</li>
+		<li>stack.items</li>
+		<li>stack.itemArray</li>
+		<li>stack.liquids</li>
+		<li>stack | otherIngredient</li>
+		<li>stack.or(otherIngredient)</li>
+		<li>stack.transform([transformer](Item_Transformers))</li>
+		<li>stack.only([condition](Item_Conditions))</li>
+		<li>stack.marked(mark)</li>
+		<li>stack.matches(item)</li>
+		<li>stack.matchesExact(item)</li>
+		<li>stack.matches(liquid)</li>
+		<li>stack has ingredient</li>
+		<li>stack.applyTransform(stack,player)</li>
+		<li>stack.hasTransformers()</li>
+	</ul>
+</details>
 
-### Definition
-Returns the item definition as [IItemDefinition](IItemDefinition) Object.
-```
-<minecraft:apple>.definition;
-```
 
-### Name
-Returns the unlocalized item name as string.
+### ZenGetters/ZenSetters
 
-```
-<minecraft:apple>.name;
-```
+Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 
-### Display Name
+| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                     |
+|---------------------|---------------------|----------------------------------------------------------|
+| definition          |                     | [IItemDefinition](IItemDefinition)                       |
+| name                |                     | string                                                   |
+| displayName         | displayName         | string                                                   |
+| maxStackSize        | maxStackSize        | int                                                      |
+| hardness            | hardness            | float                                                    |
+| damage              |                     | int                                                      |
+| maxDamage           | maxDamage           | int                                                      |
+| hasTag              |                     | bool                                                     |
+| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData)                             |
+| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>    |
+| toolClasses         |                     | List<string\>                                            |
+| itemEnchantability  |                     | int                                                      |
+| containerItem       |                     | IItemStack                                               |
+| hasContainerItem    |                     | bool                                                     |
+| repairCost          | repairCost          | int                                                      |
+| canEditBlocks       |                     | bool                                                     |
+| isOnItemFrame       |                     | bool                                                     |
+| isEnchantable       |                     | bool                                                     |
+| isEnchanted         |                     | bool                                                     |
+| isDamaged           |                     | bool                                                     |
+| isDamageable        |                     | bool                                                     |
+| isStackable         |                     | bool                                                     |
+| isBeaconPayment     |                     | bool                                                     |
+| hasEffect           |                     | bool                                                     |
+| hasDisplayName      |                     | bool                                                     |
+| metadata            |                     | int                                                      |
+| hasSubtypes         |                     | bool                                                     |
+| isEmpty             |                     | bool                                                     |
+| burnTime            |                     | int                                                      |
+| showsDurabilityBar  |                     | bool                                                     |
+| hasCustomEntity     |                     | bool                                                     |
+| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment)> |
 
-#### Globally
-An item's standard display name can either be retrieved or set, depending on what you are trying to accomplish.
 
-```
+
+#### Amount
+
+| Method call                    | Returns                                                        | ParameterTypes |
+|--------------------------------|----------------------------------------------------------------|----------------|
+| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
+| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
+| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
+| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
+| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
+
+
+#### Weight
+
+| Method call                    | Returns                                    | ParameterTypes     |
+|--------------------------------|--------------------------------------------|--------------------|
+| `stack.percent(float chance)`  | A [WeightedItemStack](WeightedItemStack)   | float (100 = 100%) |
+| `stack.weight(float chance)`   | A [WeightedItemStack](WeightedItemStack)   | float (1 = 100%)   |
+
+
+#### Damage
+
+| Method call                                    | Returns                                    | ParameterTypes                            |
+|------------------------------------------------|--------------------------------------------|-------------------------------------------|
+| `stack.anyDamage()`                            | A new IItemStack with the changed property |                                           |
+| `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                       |
+| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity) |
+
+
+#### Tags
+
+| Method call                    | Returns                                    | ParameterTypes               |
+|--------------------------------|--------------------------------------------|------------------------------|
+| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                              |
+| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData) |
+| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                       |
+| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData) |
+
+
+#### Block Casting
+
+| Method call           | Returns                                        |
+|-----------------------|------------------------------------------------|
+| `stack.asBlock()`     | A new [IBlock](/Vanilla/Blocks/IBlock) object. |
+| `stack as IBlock`     | A new [IBlock](/Vanilla/Blocks/IBlock) object. |
+
+
+#### Lore/DisplayName
+
+| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------|
+| `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string   (supports color codes with "§") |
+| `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
+| `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
+
+#### Enchantments
+
+| Method call                                                         | Returns        | ParameterTypes                                                         |
+|---------------------------------------------------------------------|----------------|------------------------------------------------------------------------|
+| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition) |
+| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment)                     |
+
+
+
+#### canItem...
+
+| Method call                                    | Returns                                                        | ParameterTypes                        |
+|------------------------------------------------|----------------------------------------------------------------|---------------------------------------|
+| `stack.canPlaceOn(IBlockPos pos)`              | A bool that tells if the item can be placed on the block.      | [IBlockPos](/Vanilla/World/IBlockPos) |
+| `stack.canDestroy(IBlockPos pos)`              | A bool that tells if the item can destroy the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
+| `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
+| `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos) |
+
+
+## ItemTransformers and ItemConditions
+You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
+[Item Conditions](Item_Conditions)  
+[Item Transformers](Item_Transformers)
+
+
+
+## Examples
+
+#### DisplayName 
+
+Globally (translates the item to the new name).
+```kotlin
 val apple = <minecraft:apple>;
 
 //prints "Apple"
@@ -61,27 +190,17 @@ apple.displayName = "Tomato";
 print(apple.displayName);
 ```
 
-#### Locally
-
-You can also use this to add a display name to the item, even if it already has NBT. Supports color codes with `§`.  
-Note that this does works on a per-item basis, so it does not change the standard item name.
-```JAVA
+Locally (only this single item).
+```
 <minecraft:coal>.withDisplayName("Black Gold");
 ```
 
-### Lore
+#### Lore
+`<minecraft:coal>.withLore(["This function","requires a","string[]"]);`
 
-You can add lore to the item, even if it already has NBT. Supports color codes with `§`.
-```JAVA
-<minecraft:coal>.withLore(["This function","requires a","string[]"]);
-```
-
-
-### Maximum Stack Size
-The maximum Stack Size is how many items fit in one Stack, for example, wool's Stack size is 64 and Buckets' only 16.
-The Stack Size can either be retrieved or set, depending on what you are trying to accomplish.
-
-```
+#### Maximum Stack Size
+The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
+```kotlin
 val apple = <minecraft:apple>;
 val bucket = <minecraft:bucket>;
 
@@ -101,11 +220,9 @@ apple.maxStackSize = bucket.maxStackSize;
 print(apple.maxStackSize);
 ```
 
-### Hardness
-The Hardness is how long it takes to break the referred block. Only works if the object refers to a block.
-The Hardness can either be retrieved or set, depending on what you are trying to accomplish.
-
-```
+#### Hardness
+The Hardness is how long it takes to break the referred block. Only works if the object refers to a block. 
+```kotlin
 val grass = <minecraft:grass>;
 
 //prints 1.0
@@ -118,16 +235,10 @@ grass.hardness = 10.0;
 print(grass.hardness);
 ```
 
-### Damage
-Returns the item Damage or 0 if the item cannot be damaged.
-```
-<minecraft:apple>.damage;
-```
+#### Damage
+The damage for items that cannot be damaged is 0.
 
-### Maximum Damage
-The Maximum Damage can either be retrieved or set, depending on what you are trying to accomplish.
-
-```
+```kotlin
 val pick = <minecraft:diamond_pickaxe>;
 
 //prints 1561
@@ -138,61 +249,52 @@ pick.maxDamage = 256;
 
 //prints 256
 print(pick.maxDamage);
+
+
+
+//Damage doesn't matter, used in recipes
+<minecraft:iron_pickaxe>.anyDamage();
+
+//With the given damage
+<minecraft:iron_pickaxe>.withDamage(122);
 ```
 
-### Tag
-Returns the NBT-Data. Empty if no NBT Data contained, never null.
-```
-<minecraft:apple>.tag;
-```
-#### Add Tag
-You can also create items with a specific or empty tag using:
-```
+#### Tag
+
+The tag is an [IData](/Vanilla/Data/IData) object.  
+If the item does not contain a tag, it will return an empty tag, never null.  
+
+```kotlin
 //creates apple with the given tag
-<minecraft:apple>.withTag(tag);
+//Removes existing tags
+<minecraft:apple>.withTag({Unbreakable: 1});
 
 //creates apple with an emtpy tag
 <minecraft:apple>.withEmptyTag();
-```
-`tag` is an [IData](/Vanilla/Data/IData) Object.
 
-#### Remove Tags
-You can also remove tags
-```
-item.removeTag(tag);
-```
-`tag` is an [IData](/Vanilla/Data/IData) Object.
+//removes a tag by its name
+item.removeTag("tagName");
 
-#### Update Tag
-You can also update existing tags. This means if the tag provided already exists, it is overwritten, if it does not, it will be created, all other tags remain the same.
+//update the existing tag
+//If the tag doesn't override an existing tag, they will stay constant.
+item.updateTag({Unbreakable: 1});
 ```
-item.updateTag(tag);
-```
-`tag` is an [IData](/Vanilla/Data/IData) Object.
 
+#### Liquid
 
-
-### Liquid
-Returns the liquid contained in a single item (if multiple) or null if the item is no container.
+Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
 Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) Object or null.
-
-```
+```kotlin
 val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
 
-### Amount
-Returns the same itemStack but with another amount
+#### Amount
 
-#### Any Amount
-
-Returns a wildcard Stack Size
-```
+How many apples are there?
+```kotlin
 <minecraft:apple>.anyAmount();
-```
 
-#### Specific amount
-```
 //1 Apple
 val apple = <minecraft:apple>;
 
@@ -203,10 +305,10 @@ val moreApples = apple * 2;
 val evenMoreApples = <minecraft:apple> * 3;
 ```
 
-### Weight
-Returns a [weightedItemStack](weightedItemStack) with the provided percentage
+#### Weight
 
-```
+Returns a [weightedItemStack](weightedItemStack) with the provided percentage.
+```kotlin
 val apple = <minecraft:apple>;
 
 //Creates a weightedItemStack with 100 percent chance
@@ -216,33 +318,15 @@ var applePercentage = apple % 100;
 applePercentage = apple.weight(1.0);
 ```
 
-### Damage
-
-#### AnyDamage
-Returns an [IIngredient](/Vanilla/Variable_Types/IIngredient) with wildcard damage. Only useful for items used as crafting ingredients.
-```
-<minecraft:iron_pickaxe>.anyDamage();
-```
-
-#### WithDamage
-Returns an IItemStack with the given Damage.
-```
-<minecraft:iron_pickaxe>.withDamage(122);
-```
-
-### Ores
-Returns a List of [IOreDictEntries](/Vanilla/OreDict) referring to this item.
-```
+#### Ores
+Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) referring to this item.
+```kotlin
 <minecraft:apple>.ores;
 ```
 
-### As IBlock
-You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast results in null.
-```
+#### Casting to IBlock
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast will throw an exception.
+```kotlin
 <minecraft:dirt>.asBlock();
+<minecraft:dirt> as crafttweaker.block.IBlock;
 ```
-
-## ItemTransformers and ItemConditions
-You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
-[Item Conditions](Item_Conditions)  
-[Item Transformers](Item_Transformers)

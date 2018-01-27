@@ -24,7 +24,7 @@ or
 
 Usage:
 
-`/craftweaker biomes`
+`/crafttweaker biomes`
 
 `/ct biomes`
 
@@ -36,7 +36,7 @@ Lists all of the biomes that are in the game.
 
 Usage:
 
-`/craftweaker blockinfo`
+`/crafttweaker blockinfo`
 
 `/ct blockinfo`
 
@@ -48,7 +48,7 @@ Activates or deactivates the block reader. In block info mode, right-clicking a 
 
 Usage:
 
-`/craftweaker blocks`
+`/crafttweaker blocks`
 
 `/ct blocks`
 
@@ -60,7 +60,7 @@ Outputs a list of all the blocks in the game to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker bugs`
+`/crafttweaker bugs`
 
 `/ct bugs`
 
@@ -73,7 +73,7 @@ Opens your browser with the GitHub bug tracker.
 
 Usage:
 
-`/craftweaker conflict`
+`/crafttweaker conflict`
 
 `/ct conflict`
 
@@ -86,7 +86,7 @@ Note that this only works on a CLIENT with JEI installed!
 
 Usage:
 
-`/craftweaker discord`
+`/crafttweaker discord`
 
 `/ct discord`
 
@@ -98,8 +98,8 @@ Opens your browser with a link to the Discord server.
 
 Usage:
 
-`/craftweaker dumpzs`
-`/craftweaker dumpzs PATH`
+`/crafttweaker dumpzs`
+`/crafttweaker dumpzs PATH`
 
 `/ct dumpzs`
 `/ct dumpzs PATH`
@@ -117,7 +117,7 @@ Note that not all of these can be used from within the scripts!
 
 Usage:
 
-`/craftweaker entities`
+`/crafttweaker entities`
 
 `/ct entities`
 
@@ -130,7 +130,7 @@ Outputs a list of all the entities in the game to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker hand`
+`/crafttweaker hand`
 
 `/ct hand`
 
@@ -144,7 +144,7 @@ Also copies the name to clipboard and prints oredict entries.
 
 Usage:
 
-`/craftweaker inventory`
+`/crafttweaker inventory`
 
 `/ct inventory`
 
@@ -156,7 +156,7 @@ Outputs a list of all the items in your inventory to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker liquids`
+`/crafttweaker liquids`
 
 `/ct liquids`
 
@@ -168,7 +168,7 @@ Outputs a list of all the liquids in the game to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker mods`
+`/crafttweaker mods`
 
 `/ct mods`
 
@@ -180,7 +180,7 @@ Outputs a list of all the mods and their versions in the game to the crafttweake
 
 Usage:
 
-`/craftweaker names [category]`
+`/crafttweaker names [category]`
 
 `/ct names [category]`
 
@@ -208,7 +208,7 @@ You can also see all the available parameters using the TAB-Key autocompletion f
 
 Usage:
 
-`/craftweaker oredict <name>`
+`/crafttweaker oredict <name>`
 
 `/ct oredict <name>`
 
@@ -222,7 +222,7 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 Usage:
 
-`/craftweaker potions`
+`/crafttweaker potions`
 
 `/ct potions`
 
@@ -235,7 +235,7 @@ Outputs a list of all the potions in the game to the crafttweaker.log file.
 
 Usage:
 
-`/craftweaker recipes`
+`/crafttweaker recipes`
 
 `/ct recipes`
 
@@ -247,7 +247,7 @@ Outputs a list of all the crafting recipes in the game to the crafttweaker.log f
 
 Usage:
 
-`/craftweaker recipes hand`
+`/crafttweaker recipes hand`
 
 `/ct recipes hand`
 
@@ -259,7 +259,7 @@ Outputs a list of all the crafting recipes for the item in the player's hand in 
 
 Usage:
 
-`/craftweaker recipes furnace`
+`/crafttweaker recipes furnace`
 
 `/ct recipes furnace`
 
@@ -271,7 +271,7 @@ Outputs a list of all the furnace recipes in the game to the crafttweaker.log fi
 
 Usage:
 
-`/craftweaker seeds`
+`/crafttweaker seeds`
 
 `/ct seeds`
 
@@ -283,7 +283,7 @@ Outputs a list of all the items in the seed registry to the crafttweaker.log fil
 
 Usage:
 
-`/craftweaker syntax`
+`/crafttweaker syntax`
 
 `/ct syntax`
 
@@ -296,7 +296,7 @@ Note that this won't apply your script changes, you need to restart your game to
 
 Usage:
 
-`/craftweaker wiki`
+`/crafttweaker wiki`
 
 `/ct wiki`
 

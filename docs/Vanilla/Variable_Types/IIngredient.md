@@ -1,7 +1,7 @@
 # IIngredient
 
 An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
+This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
@@ -20,7 +20,7 @@ So, what can we do with this?
 
 ### Mark
 
-You can mark an IIngredient so you can later use it in [crafting functions](/AdvancedFunctions/Recipe_Functions).
+You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions).
 You can also retrieve the mark applied earlier.
 
 ```
@@ -61,7 +61,7 @@ Using the OR methods is not adviced, as JEI does not display these recipes and s
 
 ### Get Possible Items or Liquids
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict) or if you OR-ed two Ingredients.  
+Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry) or if you OR-ed two Ingredients.  
 You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack)> List using the first function.  
 The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack)[] instead of a list.
 Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) List.
@@ -144,7 +144,12 @@ conditionedItem = item.onlyDamageAtMost(100);
 conditionedItem = item.onlyDamageBetween(10,100);
 
 //Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+//If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
 conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
+
+//Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will shot the tags in the recipe!
+conditionedItem = item.withTag({display: {Name: "Tomato"}});
 
 //Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
 //Note that if you only add this, you will still require only one item per craft.

@@ -37,11 +37,12 @@ Returns an [ItemRepresentation](Item) object. Check the [Item page](Item) for fu
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 Parameters:
 
 - String unlocalizedName: The Tab's unlocalized Name.
-- Item or Block representation: The Item/Block to be displayed as the Tab's symbol.
+- Item or Block representation: The Item/Block to be displayed as the Tab's symbol. Alternatively you can use an [IItemStackSupplier function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier).
 
 Returns a [ICreativeTab](Creative_Tab) object. Check the [Creative Tab page](Creative_Tab) for further information and an example script!
 

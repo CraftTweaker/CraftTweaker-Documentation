@@ -18,10 +18,10 @@ An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item) would b
 
 This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack).
 
-An example of the [OreDict Bracket Handler](/Vanilla/Brackets/Bracket_Ore) would be:
+An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore) would be:
 
 ```
 <ore:ingotIron>
 ```
 
-This will give you access to the [OreDict](/Vanilla/OreDict) for `ingotIron`.
+This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) for `ingotIron`.
