@@ -19,4 +19,4 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenMethods
 
-- string formatString(string input); → Formats the input string for the team. Returns the formatted string.
+- `formatString(string input);` → Formats the input string for the team. Returns the formatted string.

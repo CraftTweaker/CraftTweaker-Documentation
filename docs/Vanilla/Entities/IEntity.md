@@ -55,7 +55,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | lowestRidingEntity          |                     | *IEntity*                                    |
 | maxFallHeight               |                     | int                                          |
 | maxInPortalTime             |                     | int                                          |
-| parts                       |                     | *IEntity[]*                                  |
+| parts                       |                     | IEntity[]                                    |
 | passengers                  | getPassengers()     | List<IEntity\>                               |
 | passengersRecursive         |                     | List<IEntity\>                               |
 | portalCooldowne             |                     | int                                          |
@@ -63,7 +63,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | ridingEntity                | getRidingEntity()   | *IEntity*                                    |
 | shouldRiderSit              |                     | boolean                                      |
 | tags                        |                     | List<string\>                                |
-| ream                        |                     | *[ITeam](/Vanilla/Game/ITeam)*               |
+| team                        |                     | *[ITeam](/Vanilla/Game/ITeam)*               |
 | wet                         | isWet()             | boolean                                      |
 | world                       |                     | [IWorld](/Vanilla/World/IWorld)              |
 | x                           | getX()              | double                                       |
