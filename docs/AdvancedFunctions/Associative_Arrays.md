@@ -90,6 +90,20 @@ changingArray[gg] = "and I love it";
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
+## Retrieving an Associative Array's Key and Entrysets
+
+The KeySet is an array containing all the map's keys.  
+The valueSet is an array containing all the map's values.  
+The entrySet is an array containing all the map's entries (see below).
+
+```JAVA
+myAssocArray.keySet   //keySet
+myAssocArray.keys     //keySet
+myAssocArray.values   //valueSet
+myAssocArray.valueSet //valueSet
+myAssocArray.entrySet //entrySet
+```
+
 
 ## Iterating over an Associative Array
 
@@ -128,4 +142,19 @@ for key in recipeMapShaped {
 for key, value in recipeMapShaped {
 	recipes.addShaped(key, value);
 }
+```
+
+# ZenType Entry
+A map Entry consists of a key and a value.  
+Currently the only way to get such an object is via a map's entrySet method.  
+
+You can use the getters to get `key` and `value`
+
+```kotlin
+//Replace map with a reference to an existing map/associative array
+val myEntry = map.entrySet[0];
+
+
+myEntry.key;    //Returns the entry's key.
+myEntry.value;  //Returns the entry's value.
 ```
