@@ -4,7 +4,7 @@ You can use this to retrieve some information on the [ITICMaterial](ITICMaterial
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import modtweaker.materials.ITICMaterialDefinition;`
+`import modtweaker.tconstruct.ITICMaterialDefinition;`
 
 ## Retrieving such an object
 

@@ -38,3 +38,21 @@ Sets the stage of a non staged recipe.
 mods.recipestages.Recipes.setRecipeStage("one", <minecraft:stone_hoe>);
 mods.recipestages.Recipes.setRecipeStage("one", "minecraft:boat");
 ```
+
+Tells RecipeStages to print Container names to chat
+```java
+//mods.recipestages.Recipes.setPrintContainers(boolean printContainers);
+mods.recipestages.Recipes.setPrintContainers(true);
+```
+
+"Stages" a container, allowing it to craft recipes from certain stages
+```java
+//mods.recipestages.Recipes.setContainerStage(String containerPath, String[] stages);
+mods.recipestages.Recipes.setContainerStage("primal_tech.inventory.ContainerWorkStump", "one");
+```
+
+"Stages" a package, allowing all containers in the package to craft recipes from certain stages
+```java
+//mods.recipestages.Recipes.setPackageStage(String packageName, String[] stages);
+mods.recipestages.Recipes.setPackageStage("appeng", allStages);
+```
