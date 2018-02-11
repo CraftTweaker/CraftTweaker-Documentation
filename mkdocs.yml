@@ -108,6 +108,7 @@ pages:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
+      - ITeam: 'Vanilla/Game/ITeam.md'
       - Mods: 'Vanilla/Game/Mods.md'
     - Items:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
