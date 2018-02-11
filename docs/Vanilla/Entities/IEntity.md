@@ -13,7 +13,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 
 ## ZenGetters
 
-| GetterName                  | GetterMethod        | Return Type                                  |
+| GetterName                  | GetterMethod        | Return Type (*can be null*)                  |
 |-----------------------------|---------------------|----------------------------------------------|
 | air                         | getAir()            | int                                          |
 | alive                       | isAlive()           | boolean                                      |
@@ -24,7 +24,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | canBeCollidedWith           |                     | boolean                                      |
 | canPassengerSteer           |                     | boolean                                      |
 | canRiderInteract            |                     | boolean                                      |
-| controllingPassenger        |                     | IEntity                                      |
+| controllingPassenger        |                     | *IEntity*                                    |
 | customName                  | getCustomName()     | String                                       |
 | dimension                   | getDimension()      | int                                          |
 | doesTriggerPressurePlate    |                     | boolean                                      |
@@ -52,17 +52,18 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | isSilent                    |                     | boolean                                      |
 | isSneaking                  |                     | boolean                                      |
 | isSprinting                 |                     | boolean                                      |
-| lowestRidingEntity          |                     | IEntity                                      |
+| lowestRidingEntity          |                     | *IEntity*                                    |
 | maxFallHeight               |                     | int                                          |
 | maxInPortalTime             |                     | int                                          |
-| parts                       |                     | IEntity[]                                    |
+| parts                       |                     | *IEntity[]*                                  |
 | passengers                  | getPassengers()     | List<IEntity\>                               |
 | passengersRecursive         |                     | List<IEntity\>                               |
 | portalCooldowne             |                     | int                                          |
 | position3f                  | getPosition3f()     | [Position3f](/Vanilla/Utils/Position3f)      |
-| ridingEntity                | getRidingEntity()   | IEntity                                      |
+| ridingEntity                | getRidingEntity()   | *IEntity*                                    |
 | shouldRiderSit              |                     | boolean                                      |
 | tags                        |                     | List<string\>                                |
+| ream                        |                     | *[ITeam](/Vanilla/Game/ITeam)*               |
 | wet                         | isWet()             | boolean                                      |
 | world                       |                     | [IWorld](/Vanilla/World/IWorld)              |
 | x                           | getX()              | double                                       |

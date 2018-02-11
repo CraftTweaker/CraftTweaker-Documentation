@@ -13,36 +13,36 @@ IEntityLivingBase extends [IEntity](IEntity). That means all functions available
 
 ## ZenGetters
 
-| ZenGetter                                              | Return Type                                           |
+| ZenGetter                                              | Return Type (*can be null*)                           |
 |--------------------------------------------------------|-------------------------------------------------------|
 | activePotionEffects                                    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect)> |
 | AIMovementSpeed                                        | float                                                 |
 | arrowsInEntity                                         | int                                                   |
-| attackingEntity                                        | IEntityLivingBase                                     |
+| attackingEntity                                        | *IEntityLivingBase*                                   |
 | canBreatheUnderwater                                   | boolean                                               |
 | health                                                 | float                                                 |
 | isChild                                                | boolean                                               |
 | isOnLadder                                             | boolean                                               |
 | isUndead                                               | boolean                                               |
-| lastAttackedEntity                                     | IEntityLivingBase                                     |
+| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
 | lastAttackedEntityTime                                 | int                                                   |
 | lastDamageSource                                       | [IDamageSource](/Vanilla/Damage/IDamageSource)        |
 | mainHandHeldItem                                       | [IItemStack](/Vanilla/Items/IItemStack)               |
 | maxHealth                                              | float                                                 |
 | offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack)               |
-| revengeTarget                                          | IEntityLivingBase                                     |
+| revengeTarget                                          | *IEntityLivingBase*                                   |
 | totalArmorValue                                        | int                                                   |
 
 
 ## ZenSetters
 
-| ZenSetter                                              | Parameter Type                                        |
+| ZenSetter                                              | Parameter Type (*can be null*)                        |
 |--------------------------------------------------------|-------------------------------------------------------|
 | AIMovementSpeed                                        | float                                                 |
 | arrowsInEntity                                         | int                                                   |
 | health                                                 | float                                                 |
-| lastAttackedEntity                                     | IEntityLivingBase                                     |
-| revengeTarget                                          | IEntityLivingBase                                     |
+| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
+| revengeTarget                                          | *IEntityLivingBase*                                   |
 
 
 ## More ZenMethods
