@@ -42,7 +42,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerAttackEntity     | [crafttweaker.event.PlayerAttackEntityEvent](Events/PlayerAttackEntity)         | ✘                    |
 | onPlayerBonemeal         | [crafttweaker.event.PlayerBonemealEvent](Events/PlayerBonemeal)                 | ✘                    |
 | onPlayerInteractEntity   | [crafttweaker.event.PlayerInteractEntityEvent](Events/PlayerInteractEntity)     | ✘                    |
-| onPlayerPickup           | [crafttweaker.event.PlayerPickupEvent](Events/PlayerPickup)                     | ✘                    |
+| onPlayerPickup           | [crafttweaker.event.PlayerPickupEvent](Events/PlayerPickupEntity)               | ✘                    |
 | onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](Events/PlayerPickupItem)             | ✔                    |
 | onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](Events/PlayerFillBucket)             | ✘                    |
 | onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](Events/PlayerDeathDrops)             | ✘                    |

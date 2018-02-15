@@ -97,11 +97,12 @@ pages:
         - PlayerLoggedOut: 'Vanilla/Events/Events/PlayerLoggedOut.md'
         - PlayerOpenContainer: 'Vanilla/Events/Events/PlayerOpenContainer.md'
         - PlayerPickupEntity: 'Vanilla/Events/Events/PlayerPickupEntity.md'
+        - PlayerPickupItem: 'Vanilla/Events/Events/PlayerPickupItem.md'
         - PlayerPickupXp: 'Vanilla/Events/Events/PlayerPickupXp.md'
         - PlayerRespawn: 'Vanilla/Events/Events/PlayerRespawn.md'
         - PlayerSleepInBed: 'Vanilla/Events/Events/PlayerSleepInBed.md'
         - PlayerSmelted: 'Vanilla/Events/Events/PlayerSmelted.md'
-        - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoeEvent.md'
+        - PlayerUseHoe: 'Vanilla/Events/Events/PlayerUseHoe.md'
         - PlayerUseItemStart: 'Vanilla/Events/Events/PlayerUseItemStart.md'
         - PlayerUseItemTick: 'Vanilla/Events/Events/PlayerUseItemTick.md'
     - Game:
