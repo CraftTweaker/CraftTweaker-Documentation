@@ -139,8 +139,8 @@ recipes.addShapeless(output,inputs,function,action)
 recipes.addShapeless(name,output,inputs,function,action)
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients.
-If a `function` is added as third parameter, you can also use a function to determinate the output.
+This creates a shapeless recipe for `output` using `inputs` as Ingredients.  
+If a `function` is added as third parameter, you can also use a function to determinate the output.  
 If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
 `name` is a string and needs to be unique
@@ -148,6 +148,17 @@ If an `action` function is added as forth parameter, you can also determine, wha
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
 `function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipefunction) for more information on functions. This is optional.  
 `action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction) for more information on actions. This is optional.  
+
+### addHidden
+```java
+addHiddenShapeless(String name, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
+addHiddenShaped(String name, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action, @Optional boolean mirrored);
+```
+
+This creates a shapeless recipe for `output` using `inputs` as Ingredients that is named `name`.  
+If a `function` is added as third parameter, you can also use a function to determinate the output.  
+If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.  
+For the shapeless variant you can also set if the recipe is `mirrored`, if omitted, it will not.
 
 
 ## Other Functionality
