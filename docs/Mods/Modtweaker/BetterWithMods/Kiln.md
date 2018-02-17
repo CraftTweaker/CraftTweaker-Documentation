@@ -8,9 +8,9 @@ The Kiln ONLY takes blocks as inputs, all IItemStack input MUST be that of a pla
 mods.betterwithmods.Kiln.add(IItemStack[] output, IItemStack input);
 mods.betterwithmods.Kiln.add(IItemStack[] output, IIngredient input);
  
-mods.betterwithmods.Kiln.add([<minecraft:diamond>,<minecraft:coal>], <minecraft:coal_ore>);
+mods.betterwithmods.Kiln.add([<minecraft:diamond>, <minecraft:coal>], <minecraft:coal_ore>);
 //Only use IIngredients that contain items!
-mods.betterwithmods.Kiln.add([<minecraft:diamond>,<minecraft:coal>], <ore:oreCoal>);
+mods.betterwithmods.Kiln.add([<minecraft:diamond>, <minecraft:coal>], <ore:oreCoal>);
 ```
 
 ## Removal
