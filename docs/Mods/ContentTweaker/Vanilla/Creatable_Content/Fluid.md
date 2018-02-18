@@ -12,7 +12,7 @@ mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor c
 
 ## Import the representation Package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Fluid;` 
+`import mods.contenttweaker.Fluid;`
 
 ## ZenProperties
 
@@ -68,3 +68,7 @@ var zsFluid = VanillaFactory.createFluid("zs_fluid", 0);
 zsFluid.fillSound = <soundevent:block.anvil.place>;
 zsFluid.register();
 ```
+
+## Localizing the fluid
+You will need to add `fluid.fluidName = Localized Name` to the responding language files.
+Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame), though it's recommended using the language files!
