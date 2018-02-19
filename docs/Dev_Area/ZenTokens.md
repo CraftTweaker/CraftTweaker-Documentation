@@ -77,3 +77,5 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 142         | T_FALSE       | `false`                                                   |
 | 160         | T_IMPORT      | `import`                                                  |
 | 666         | T_GLOBAL      | `global`                                                  |
+| 667         | T_STATIC      | `static`                                                  |
+| 668         | T_INSTANCEOF  | `instanceof`                                              |
