@@ -1,4 +1,16 @@
-# If you add a page, you must add it to the index here
+# 站点的基本信息
+site_name: Crafttweaker 简体中文文档
+repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
+copyright: Crafttweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
+theme: readthedocs
+
+# 使用的几个额外组件
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+
+# 如果想要添加新条目，首先记得在这里写上索引
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
@@ -52,7 +64,7 @@ pages:
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Commands:
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Container:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Creative Tabs:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
@@ -120,7 +132,7 @@ pages:
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
-    - Ore Dictionary: 
+    - Ore Dictionary:
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
     - Players:
@@ -132,7 +144,7 @@ pages:
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
+      - Crafting Table Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
         - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
@@ -165,7 +177,7 @@ pages:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
-      - RecipeBuilder: 
+      - RecipeBuilder:
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
         - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
         - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
@@ -195,9 +207,9 @@ pages:
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality: 
+        - Advanced Functionality:
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
-          - Functions: 
+          - Functions:
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
@@ -252,7 +264,7 @@ pages:
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-    - Immersive Engineering: 
+    - Immersive Engineering:
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
         - Arc Furnace:
@@ -274,7 +286,7 @@ pages:
         - Fermenter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
         - Metal Press: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
         - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
-        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md' 
+        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
         - Squeezer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
     - Immersive Petroleum:
       - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
@@ -339,7 +351,7 @@ pages:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes: 
+        - Recipes:
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -364,7 +376,7 @@ pages:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets: 
+        - Brackets:
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -395,7 +407,7 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Recipes:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - PackMode:
@@ -442,20 +454,3 @@ pages:
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
-
-# Do not edit in PRs below here
-site_name: Crafttweaker Documentation
-
-markdown_extensions:
-  - admonition
-  - smarty
-  - sane_lists
-
-theme_dir: 'mkdocs_windmill'
-
-extra:
-  logo: 'assets/logo.png'
-  #version: 0.0
-  #article_nav_top: true
-  #artivle_nav_bottom: true
-  #history_buttons: false
