@@ -12,41 +12,41 @@ markdown_extensions:
 
 # 如果想要添加新条目，首先记得在这里写上索引
 pages:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
-  - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
-    - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
-      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
-      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
-      - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
-      - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
-      - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
+  - 主页: 'index.md'
+  - 脚本入门: 'Getting_Started.md'
+  - wiki 使用: 'UsingThisWiki.md'
+  - 命令: 'Vanilla/Commands.md'
+  - CT GUI: 'Vanilla/CTGUI.md'
+  - 全局函数: 'Vanilla/Global_Functions.md'
+  - Bracket 处理器: 'Brackets/Brackets.md'
+  - 高级函数:
+    - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - 关联数组（Map）: 'AdvancedFunctions/Associative_Arrays.md'
+    - 数学运算: 'AdvancedFunctions/Calculations.md'
+    - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
+    - 跨脚本参考: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - 自定义函数: 'AdvancedFunctions/Custom_Functions.md'
+    - 全局和静态变量: 'AdvancedFunctions/Global_Static_Variables.md'
+    - 导入: 'AdvancedFunctions/Import.md'
+    - 预处理器:
+      - 打开预处理器: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - 调试: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - 忽略 Bracket 错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
+      - Mod 加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
+      - 未执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+  - 提示与技巧:
+      - 前言: 'Tips_Tricks/Foreword.md'
+      - 物品:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
-  - Vanilla:
-    - Biomes:
+      - 常用提示:
+        - 把你的脚本分割成不同的文件: 'Tips_Tricks/General/Split_Files.md'
+        - 使用循环语句使脚本更易阅读: 'Tips_Tricks/General/Loops_Readability.md'
+  - 原版:
+    - 生物群系:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
+    - 方块:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
@@ -55,28 +55,28 @@ pages:
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
-      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
-      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
-      - Items: 'Vanilla/Brackets/Bracket_Item.md'
-      - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
-      - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
-      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
-    - Commands:
+      - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
+      - 物品: 'Vanilla/Brackets/Bracket_Item.md'
+      - 实体: 'Vanilla/Brackets/Bracket_Entity.md'
+      - 流体: 'Vanilla/Brackets/Bracket_Liquid.md'
+      - 矿物: 'Vanilla/Brackets/Bracket_Ore.md'
+      - 药水: 'Vanilla/Brackets/Bracket_Potion.md'
+    - 命令:
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container:
+    - 容器:
       - IContainer: 'Vanilla/Container/IContainer.md'
-    - Creative Tabs:
+    - 创造模式标签页:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantments:
+    - 附魔:
       - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
       - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
-    - Data:
+    - 数据:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
-    - Damage:
+    - 损害值:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
-    - Entities:
+    - 实体:
       - Attributes:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
@@ -93,7 +93,7 @@ pages:
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
+    - 事件:
       - Events: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
       - Events:
@@ -116,12 +116,12 @@ pages:
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoeEvent.md'
         - PlayerUseItemStart: 'Vanilla/Events/Events/PlayerUseItemStart.md'
         - PlayerUseItemTick: 'Vanilla/Events/Events/PlayerUseItemTick.md'
-    - Game:
+    - 游戏:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - Mods: 'Vanilla/Game/Mods.md'
-    - Items:
+    - 物品:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
       - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
@@ -129,20 +129,20 @@ pages:
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
       - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
-    - Liquids:
+    - 流体:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
-    - Ore Dictionary:
+    - 矿物词典:
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
-    - Players:
+    - 玩家:
       - IFoodStats: 'Vanilla/Players/IFoodStats.md'
       - IPlayer: 'Vanilla/Players/IPlayer.md'
       - IUser: 'Vanilla/Players/IUser.md'
-    - Potions:
+    - 药水:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
+    - 合成:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
@@ -155,24 +155,24 @@ pages:
         - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
-    - Utils:
+    - 实用工具:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
       - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
-    - Variable Types:
+    - 变量类型:
       - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-    - World:
+    - 世界:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
-  - Mods:
+  - 模组支持:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
@@ -220,7 +220,7 @@ pages:
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
-        - Types:
+        - 类型:
           - Block:
             - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
@@ -241,7 +241,7 @@ pages:
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
-      - Material System:
+      - 材料系统:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - Brackets:
@@ -256,7 +256,7 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
-    - GameStages:
+    - 游戏阶段:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
@@ -435,7 +435,7 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
-  - Developer Area:
+  - 开发区域:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
     - ZenOperators: 'Dev_Area/ZenOperators.md'
