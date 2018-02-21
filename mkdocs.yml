@@ -21,7 +21,7 @@ pages:
   - Bracket 处理器: 'Brackets/Brackets.md'
   - 高级函数:
     - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - 关联数组（Map）: 'AdvancedFunctions/Associative_Arrays.md'
+    - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
     - 数学运算: 'AdvancedFunctions/Calculations.md'
     - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
     - 跨脚本参考: 'AdvancedFunctions/Cross-Script_Reference.md'
@@ -34,15 +34,15 @@ pages:
       - 忽略 Bracket 错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - Mod 加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
-      - 未执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
       - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - 提示与技巧:
       - 前言: 'Tips_Tricks/Foreword.md'
       - 物品:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+        - 使用 IItemDefinitions 遍历附加值: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - 常用提示:
-        - 把你的脚本分割成不同的文件: 'Tips_Tricks/General/Split_Files.md'
-        - 使用循环语句使脚本更易阅读: 'Tips_Tricks/General/Loops_Readability.md'
+        - 把你的脚本分割成多个文件: 'Tips_Tricks/General/Split_Files.md'
+        - 使用循环语句使脚本更易读: 'Tips_Tricks/General/Loops_Readability.md'
   - 原版:
     - 生物群系:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
@@ -73,11 +73,11 @@ pages:
       - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
     - 数据:
       - IData: 'Vanilla/Data/IData.md'
-      - DataMap: 'Vanilla/Data/DataMap.md'
-    - 损害值:
+      - 数据映射: 'Vanilla/Data/DataMap.md'
+    - 伤害:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
     - 实体:
-      - Attributes:
+      - 属性:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
@@ -94,9 +94,9 @@ pages:
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
     - 事件:
-      - Events: 'Vanilla/Events/Events.md'
+      - 事件: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+      - 事件:
         - PlayerAttackEntity: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemeal: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerChangedDimension: 'Vanilla/Events/Events/PlayerChangedDimension.md'
@@ -124,11 +124,11 @@ pages:
     - 物品:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
-      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
-      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
-      - Tooltips: 'Vanilla/Items/Tooltips.md'
-      - Renaming: 'Vanilla/Items/Renaming.md'
-      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
+      - 物品条件: 'Vanilla/Items/Item_Conditions.md'
+      - 物品转换器: 'Vanilla/Items/Item_Transformers.md'
+      - 提示信息: 'Vanilla/Items/Tooltips.md'
+      - 重命名: 'Vanilla/Items/Renaming.md'
+      - 加权 ItemStack: 'Vanilla/Items/WeightedItemStack.md'
     - 流体:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
@@ -143,18 +143,18 @@ pages:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - 合成:
-      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes:
-        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
-        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+      - 酿造配方: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
+      - 工作台配方:
+        - 工作台配方: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - 配方函数: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
-      - Furnace Recipes:
-        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+      - 熔炉配方:
+        - 熔炉配方: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+      - 种子掉落: 'Vanilla/Recipes/Seeds.md'
     - 实用工具:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
@@ -191,22 +191,22 @@ pages:
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - Commands: 'Mods/ContentTweaker/Commands.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
-      - Vanilla:
+      - 命令: 'Mods/ContentTweaker/Commands.md'
+      - 初试身手: 'Mods/ContentTweaker/WalkThrough.md'
+      - 原版:
         - Brackets:
-          - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
-          - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
-          - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
-          - SoundEvent: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
+          - 方块材料: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
+          - 方块: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
+          - 创造模式物品栏: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
+          - 声音类型: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
+          - 声音事件: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
         - Creatable Content:
           - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
-          - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
-          - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
-          - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
-          - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
+          - 方块: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
+          - 创造模式物品栏: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
+          - 流体: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
+          - 物品: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
+          - 食物: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
         - Advanced Functionality:
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - Functions:
@@ -221,25 +221,25 @@ pages:
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - 类型:
-          - Block:
-            - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
+          - 方块:
+            - 朝向: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
-          - Color:
-            - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
-          - Item:
+          - 颜色:
+            - 颜色: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
+          - 物品:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
-          - Player:
-            - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
+          - 玩家:
+            - 手: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
             - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
-          - Resources:
+          - 资源:
             - CTResourceLocation: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
-          - Sound:
+          - 声音:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
-          - World:
+          - 世界:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
       - 材料系统:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
@@ -256,7 +256,7 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
-    - 游戏阶段:
+    - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
