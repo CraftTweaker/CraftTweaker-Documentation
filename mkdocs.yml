@@ -41,7 +41,7 @@ pages:
       - 物品:
         - 使用 IItemDefinitions 遍历附加值: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - 常用提示:
-        - 把你的脚本分割成多个文件: 'Tips_Tricks/General/Split_Files.md'
+        - 把你的脚本拆分成多个文件: 'Tips_Tricks/General/Split_Files.md'
         - 使用循环语句使脚本更易读: 'Tips_Tricks/General/Loops_Readability.md'
   - 原版:
     - 生物群系:
