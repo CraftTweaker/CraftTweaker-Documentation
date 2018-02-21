@@ -1,24 +1,24 @@
-# Arrays
+# 数组
 
-An array is a List containing several items of the same kind. 
+数组是一个列表，它包含一些相似的条目。
 
 
-## Declaring Arrays
-It is declared using ```[``` and ```]```.
+## 声明数组
+使用 ```[``` 和 ```]``` 来声明数组
 
 ```
-//Array containing "Hello" and "World"
-val stringArray = ["Hello", "World"] as string[];
+//包含“你好”和“世界”的数组
+val stringArray = ["你好", "世界"] as string[];
 
-//Array containing 1-3
+//包含数字 1,2,3 的数组
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have.
-Remember ```recipes.add(out,[[],[],[]]);```?
-This uses three arrays with each containing up to three entries to define a crafting table recipe.
+也许你会说：“等等，我可从未用过这些数组……”，呃……其实你一直在用。
+还记得 ```recipes.add(out,[[],[],[]]);``` 么？
+这一块就用了三个数组，每个数组又包含三个条目，借此来定义工作台上的合成。
 
-## Casting Arrays
+## 构建数组
 You surely have noticed that all arrays here have the `as` statement appended.  
 Why you ask?
 This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
