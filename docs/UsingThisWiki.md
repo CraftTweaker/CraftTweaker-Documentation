@@ -11,7 +11,7 @@
 
 ZenGetter 是一种获取当前对象信息的方法。例如 [IItemStack](/Vanilla/Items/IItemStack) 拥有一个 ZenGetter 方法，名叫“displayName”（显示名称）。
 ZenGetter 方法的使用示例如下：
-```
+``` js
 //object.zenGetter;
 <minecraft:iron_ingot>.displayName;
 ```
@@ -24,8 +24,8 @@ ZenSetter 和 ZenGetter 使用几乎一致，唯一不同之处在于 ZenSetter 
 接下来我们还是用刚刚提到过的 [IItemStack](/Vanilla/Items/IItemStack) 举例子，它同样拥有一个 ZenSetter 方法叫做“displayName”。我们知道这个条目是字符串类型。
 
 我们按照如下格式来使用 ZenSetter 方法：
-```
-//object.zenSetter = newValue;
+``` js
+//object.zenSetter = 新的值;
 <minecraft:iron_ingot>.displayName = "我是铁锭";
 ```
 
@@ -40,7 +40,7 @@ ZenSetter 方法什么也不返回，因为它只是设定数据，而不是返�
 
 来看看它们能够做些什么：
 
-```
+``` js
 //因为同时拥有同名 ZenGetter 和 ZenSetter 方法，下列所有两个语句都是等价的：
 //object.zenSetter += 数据;
 //object.zenSetter = object.zenGetter + 数据;
