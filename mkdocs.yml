@@ -156,7 +156,7 @@ pages:
       - 种子掉落: 'Vanilla/Recipes/Seeds.md'
     - 实用工具:
       - 格式化文本: 'Vanilla/Utils/IFormattedText.md'
-      - 格式化器: 'Vanilla/Utils/IFormatter.md'
+      - 格式化处理器: 'Vanilla/Utils/IFormatter.md'
       - 物品实用工具: 'Vanilla/Utils/IItemUtils.md'
       - 记录器: 'Vanilla/Utils/Logger.md'
       - 浮点型位置: 'Vanilla/Utils/Position3f.md'
