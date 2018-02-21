@@ -55,7 +55,7 @@ pages:
       - 材料: 'Vanilla/Blocks/IMaterial.md'
       - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
-      - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - 创造模式物品栏: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - 物品: 'Vanilla/Brackets/Bracket_Item.md'
       - 实体: 'Vanilla/Brackets/Bracket_Entity.md'
@@ -66,8 +66,8 @@ pages:
       - 命令执行器: 'Vanilla/Commands/ICommandSender.md'
     - 容器:
       - 容器: 'Vanilla/Container/IContainer.md'
-    - 创造模式标签页:
-      - 创造模式标签页: 'Vanilla/CreativeTabs/ICreativeTab.md'
+    - 创造模式物品栏:
+      - 创造模式物品栏: 'Vanilla/CreativeTabs/ICreativeTab.md'
     - 附魔:
       - 附魔: 'Vanilla/Enchantments/IEnchantment.md'
       - 附魔定义: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
@@ -196,7 +196,7 @@ pages:
         - Brackets:
           - 方块材料: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - 方块: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
-          - 创造模式物品栏: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
+          - 创造模式标签页: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
           - 声音类型: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
           - 声音事件: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
         - 可创建内容:
