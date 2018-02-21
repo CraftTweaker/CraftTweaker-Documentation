@@ -41,7 +41,7 @@ enableDebug();
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
-返回一个布尔值。
+返回一个布尔值。  
 注意：如果此函数无效，可以直接创建一个布尔值对象 `<minecraft:dirt> as bool`。
 
 

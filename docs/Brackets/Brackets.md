@@ -1,27 +1,27 @@
-# Bracket Handlers
+# 括弧对象
 
-ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
+ZenScript 使用括弧对象来封装游戏中诸如物品、实体、矿物词典之类的东西。
 
-## How to use Bracket Handlers
+## 如何使用 Bracket 处理器
 
-Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+在 ZenScript 中，在 `<` 和 `>` 字符间的任意字符串均被定义为括弧对象。
 
-An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
+一个经典的括弧对象就是物品括弧对象，它能够访问游戏内的物品。
 
-## Examples
+## 示例
 
-An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item) would be:
+一个[物品括弧对象](/Vanilla/Brackets/Bracket_Item)大致如下：
 
 ```
 <minecraft:apple>
 ```
 
-This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack).
+这给予了你访问游戏中`苹果`[物品](/Vanilla/Items/IItemStack)的能力。
 
-An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore) would be:
+一个[矿物词典括弧对象](/Vanilla/Brackets/Bracket_Ore)大致如下：
 
 ```
 <ore:ingotIron>
 ```
 
-This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) for `ingotIron`.
+这给予了你访问游戏中 `ingotIron` [矿物词典](/Vanilla/OreDict/IOreDictEntry)的能力。
