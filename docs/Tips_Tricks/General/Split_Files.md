@@ -1,21 +1,21 @@
-# Split your scripts into multiple files
+# 把你的脚本拆分成多个文件
 
-It is a good idea to split your script into multiple files
+把你的脚本分割成多个文件是一个好习惯。
 
-## Problem
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+## 问题
+- 当为大型整个包编写脚本时，你的脚本可能会变得复杂冗长；
+- 调试冗长的脚本需要大量时间，尤其是当你得到的错误没有指明所在行的时候。
 
-## What we know/need to know
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+## 我们需要知道的事情
+- CraftTweaker 可以载入多个脚本文件；
+- CraftTweaker 甚至可以载入子目录中的脚本文件；
+- 只要 .zip 文件不需要密码，CraftTweaker 还可以载入其中包含 .zs 脚本。
 
-## Solution
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+## 解决方案
+- 把你的脚本拆分成多个小文件；
+- 例如你可以按模组拆分文件。
 
-## Example
+## 举例
 ```
 scripts
 	thermalExpansion
@@ -30,11 +30,11 @@ scripts
 	oreDict.zs
 ```
 
-## Advantages
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+## 好处
+- 你的脚本更易于调试；
+- 一个错误只会导致某一个部分无法允许，而不是整个脚本；
+- 方便查看你的脚本的人找到语句位置。
 
-## Disadvantages
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor.md) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+## 坏处
+- 你需要关注脚本的加载顺序（尤其是一个脚本需要使用另一个脚本中所添加物品的时候）。参看[优先级处理器](/AdvancedFunctions/Preprocessors/PriorityPreprocessor.md)。
+- 多种归类脚本的方式对于新手或许有点难以理解。
