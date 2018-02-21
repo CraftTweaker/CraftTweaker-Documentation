@@ -1,13 +1,13 @@
-# Global Functions
+# 全局函数
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import).  
+Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import).
 Here's the list:
 
 ## print
 
 Prints the string to the crafttweaker log as information.
 
-```java
+``` js
 //print(String message);
 print("Hello World!");
 ```
@@ -15,7 +15,7 @@ Returns nothing
 
 ## totalActions
 
-```java
+``` js
 //totalActions();
 totalActions();
 ```
@@ -23,10 +23,10 @@ Returns an int that shows how many global functions are registered.
 
 ## enableDebug
 
-Enables Debug mode.  
+Enables Debug mode.
 Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor) is preferred though.
 
-```java
+``` js
 //enableDebug();
 enableDebug();
 ```
@@ -34,10 +34,10 @@ Returns nothing
 
 ## isNull
 
-Checks if a given object is null.  
+Checks if a given object is null.
 Doesn't work on primitives!
 
-```java
+``` js
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
@@ -47,7 +47,7 @@ Note: If this does not work for you, try casting the object to bool `<minecraft:
 
 ## max
 
-```java
+``` js
 //max(int number1, int number2);
 max(10, 11);
 ```
@@ -55,7 +55,7 @@ Returns an int
 
 ## min
 
-```java
+``` js
 //min(int number1, int number2);
 min(10, 11);
 ```
@@ -63,7 +63,7 @@ Returns an int
 
 ## pow
 
-```java
+``` js
 //pow(double number1, double number2);
 pow(2.0, 4.0);
 ```
