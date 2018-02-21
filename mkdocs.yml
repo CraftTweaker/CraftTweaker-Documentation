@@ -151,8 +151,8 @@ pages:
         - 合成物品栏: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - 合成信息: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
       - 熔炉配方:
-        - 熔炉配方: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
-        - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
+        - 烧炼: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+        - 烧炼配方: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - 种子掉落: 'Vanilla/Recipes/Seeds.md'
     - 实用工具:
       - 格式化文本: 'Vanilla/Utils/IFormattedText.md'
