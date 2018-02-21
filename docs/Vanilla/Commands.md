@@ -20,7 +20,7 @@ Crafttweaker 添加了一些便于制作脚本的命令，能够有效的减少�
 
 # 命令列表
 
-## Biomes
+## 生物群系
 
 用法：
 
@@ -32,7 +32,7 @@ Crafttweaker 添加了一些便于制作脚本的命令，能够有效的减少�
 
 列出游戏中所有的生物群系。
 
-## BlockInfo
+## 方块信息
 
 用法：
 
@@ -44,7 +44,7 @@ Crafttweaker 添加了一些便于制作脚本的命令，能够有效的减少�
 
 Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
 
-## Blocks
+## 方块
 
 用法：
 
@@ -69,7 +69,7 @@ Activates or deactivates the block reader. In block info mode, right-clicking a 
 在浏览器中打开 GitHub bug 汇报界面。
 
 
-## Conflict
+## 合成冲突
 
 用法：
 
@@ -113,7 +113,7 @@ This will include all registered Bracket Handlers, ZenTypes, Global Functions, Z
 Note that not all of these can be used from within the scripts!
 
 
-## Entities
+## 实体
 
 用法：
 
@@ -126,7 +126,7 @@ Note that not all of these can be used from within the scripts!
 在 crafttweaker.log 文件中输出游戏中所有实体名称。
 
 
-## Hand
+## 手持物品
 
 用法：
 
@@ -140,7 +140,7 @@ Note that not all of these can be used from within the scripts!
 
 同时还会将物品名称和矿物词典等条目复制进系统的剪贴板。
 
-## Inventory
+## 物品栏
 
 用法：
 
@@ -152,7 +152,7 @@ Note that not all of these can be used from within the scripts!
 
 在 crafttweaker.log 文件中输出游戏中你物品栏中所有的物品名称。
 
-## Liquids
+## 流体
 
 用法：
 
@@ -164,7 +164,7 @@ Note that not all of these can be used from within the scripts!
 
 在 crafttweaker.log 文件中输出游戏中所有流体名称。
 
-## Mods
+## 模组
 
 用法：
 
@@ -176,49 +176,49 @@ Note that not all of these can be used from within the scripts!
 
 在 crafttweaker.log 文件中输出游戏中所有模组名称和版本信息，同时会输出在聊天栏。
 
-## Names
+## 名称
 
 用法：
 
-`/crafttweaker names [category]`
+`/crafttweaker names [类别]`
 
-`/ct names [category]`
+`/ct names [类别]`
 
 简介：
 
 在 crafttweaker.log 文件中输出游戏中所有物品名称。  
-The `category` argument is optional and will extend the list with the according information:
+`类别` 参数是可选的，能够额外显示如下信息：
 
-* creativetabs
-* damageable
-* display
-* maxdamage
-* maxstack
-* maxuse
-* modid
-* rarity
-* repairable
-* repaircost
-* unloc
+* creativetabs（创造模式标签页）
+* damageable（是否有耐久）
+* display（显示名称）
+* maxdamage（最大耐久）
+* maxstack（最大堆叠数）
+* maxuse（最大使用次数）
+* modid（模组id）
+* rarity（稀有度）
+* repairable（是否可修复）
+* repaircost（修复花费）
+* unloc（语言文件 key）
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+使用 Tab 键能够自动补全参数，你能够看到所有可用参数。
 
 
-## OreDict
+## 矿物词典
 
 用法：
 
-`/crafttweaker oredict <name>`
+`/crafttweaker oredict <名称>`
 
-`/ct oredict <name>`
+`/ct oredict <名称>`
 
 简介：
 
-在 crafttweaker.log 文件中输出游戏中所有OreDict entries
+在 crafttweaker.log 文件中输出游戏中所有矿物词典条目
 
-If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
+如果提供了名称，那么这个物品的所有的矿物词典名称会全部输出在 crafttweaker.log 文件中。
 
-## Potions
+## 药水
 
 用法：
 
@@ -228,10 +228,10 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 简介：
 
-在 crafttweaker.log 文件中输出游戏中所有potions
+在 crafttweaker.log 文件中输出游戏中所有药水名称。
 
 
-## Recipes
+## 合成表
 
 用法：
 
@@ -241,9 +241,9 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 简介：
 
-在 crafttweaker.log 文件中输出游戏中所有crafting recipes
+在 crafttweaker.log 文件中输出游戏中所有合成表。
 
-## Recipes (Hand)
+## 合成表（手持物品）
 
 用法：
 
@@ -253,9 +253,9 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 简介：
 
-在 crafttweaker.log 文件中输出游戏中所有crafting recipes for the item in the player's hand
+在 crafttweaker.log 文件中输出游戏中玩家手持物品的所有合成表
 
-## Recipes (Furnace)
+## 合成表（熔炉）
 
 用法：
 
@@ -265,9 +265,9 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 简介：
 
-在 crafttweaker.log 文件中输出游戏中所有furnace recipes
+在 crafttweaker.log 文件中输出游戏中所有熔炉合成表。
 
-## Seeds
+## 种子
 
 用法：
 
@@ -277,9 +277,9 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 简介：
 
-Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+在 crafttweaker.log 中输出所有注册了的打草掉落的种子列表。
 
-## Syntax
+## 语法检查
 
 用法：
 
@@ -289,8 +289,8 @@ Outputs a list of all the items in the seed registry to the crafttweaker.log fil
 
 简介：
 
-Reads through all your scripts and will output all errors it finds in your syntaxes.
-Note that this won't apply your script changes, you need to restart your game to see them in effect.
+全部读取一遍脚本，并输出所有发现的语法错误。  
+谨记这个指令并不能启用修改，你还是需要重启游戏才可以启用修改。
 
 ## Wiki
 
@@ -302,4 +302,4 @@ Note that this won't apply your script changes, you need to restart your game to
 
 简介：
 
-Opens your browser to this wiki page.
+打开浏览器，并跳转到这个 wiki 界面。
