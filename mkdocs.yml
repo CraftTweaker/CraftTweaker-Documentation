@@ -33,7 +33,7 @@ pages:
       - 调试: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - 忽略 Bracket 错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
-      - Mod 加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
+      - 模组加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
       - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - 提示与技巧:
