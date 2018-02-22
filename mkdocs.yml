@@ -18,7 +18,7 @@ pages:
   - 命令: 'Vanilla/Commands.md'
   - CraftTweaker GUI: 'Vanilla/CTGUI.md'
   - 全局函数: 'Vanilla/Global_Functions.md'
-  - 括弧对象: 'Brackets/Brackets.md'
+  - 尖括号引用: 'Brackets/Brackets.md'
   - 高级函数:
     - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
     - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
@@ -31,7 +31,7 @@ pages:
     - 预处理器:
       - 打开预处理器: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - 调试: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - 忽略括弧对象错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - 忽略尖括号引用错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - 模组加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
@@ -244,7 +244,7 @@ pages:
         - 介绍: 'Mods/ContentTweaker/Materials/Introduction.md'
         - 材料系统: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - Brackets:
-          - Material Part括弧对象Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
+          - Material Part Brakets Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
