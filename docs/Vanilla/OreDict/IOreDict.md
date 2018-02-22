@@ -50,7 +50,7 @@ for entry in oreDict {
 你可以使用 `in` 或 `has` 运算符检查[矿物词典条目（IOreDictEntry）](IOreDictEntry)是否存在：
 ```
 if (oreDict in "ingotIron") {
-	print("ingotIron exists!");
+	print("ingotIron 存在！");
 }
 
 if (oreDict has "ingotIron") {
