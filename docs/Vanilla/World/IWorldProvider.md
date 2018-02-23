@@ -1,86 +1,86 @@
-# IWorldProvider
+# 世界供应器
 
-The World Provider interface is used to get even more information out of an [IWorld](IWorld) object.
+IWorldProvider用于从 [IWorld](IWorld) 对象中获取更多信息。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IWorldProvider;` 
+## 导入包
+如果你遇到任何问题，可以尝试通过导入相关包来解决。
+`import crafttweaker.world.IWorldProvider;`
 
-## Create a worldProvider
-Normally, you can just get the worldProvider from an [IWorld](IWorld) object or some functions, though if yo need to create one yourself, here's how you do it:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
+## 创建一个世界供应器
+通常情况下，你可以从 [IWorld](IWorld) 或其他函数来获得世界供应器。不过如果你想自己重新创建一个的话，请遵循以下步骤：  
+请注意，此方法只应在函数内调用，这些函数是在minecraft中运行的，而不是在加载循环中运行。
 ```
 crafttweaker.world.IWorldProvider.create(int id);
 ```
 
 
 
-## ZenMethods without parameters and ZenGetters
+## 没有参数和ZenGetters的ZenMethods
 
-| ZenGetter              | ZenMethod                   |Return Type                       |
+| ZenGetter              | ZenMethod                   |返回类型                       |
 |------------------------|-----------------------------|----------------------------------|
-| actualHeight           | getActualHeight()           | int                              |
-| actualGroundLevel      | getAverageGroundLevel()     | int                              |
-| cloudHeight            | getCloudHeight()            | float                            |
-| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float                            |
-| dimensionID            | getDimensionID()            | int                              |
-| height                 | getHeight()                 | int                              |
-| horizon                | getHorizon()                | double                           |
-| lightBrightnesTable    | getLightBrightnesTable()    | float[]                          |
-| movementFactor         | getMovementFactor()         | double                           |
-| randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](IBlockPos)           |
-| saveFolder             | getSaveFolder()             | String                           |
-| seed                   | getSeed()                   | long                             |
-| spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](IBlockPos)           |
-| spawnPoint             | getSpawnPoint()             | [IBlockPos](IBlockPos)           |
-| voidFogYFactor         | getVoidFogYFactor()         | double                           |
-| worldTime              | getWorldTime()              | long                             |
-| canRespawnHere         | canRespawnHere()            | bool                             |
-| waterVaporize          | doesWaterVaporize()         | bool                             |
-| skylight               | hasSkyLight()               | bool                             |
-| daytime                | isDaytime()                 | bool                             |
-| nether                 | isNether()                  | bool                             |
-| skyColored             | isSkyColored()              | bool                             |
-| surfaceWorld           | isSurfaceWorld()            | bool                             |
+| 实际高度           | getActualHeight()           | 整型                              |
+| 实际水平面      | getAverageGroundLevel()     | 整型                              |
+| 云高            | getCloudHeight()            | 浮点                            |
+| 当前的月相系数 | getCurrentMoonPhaseFactor() | 浮点                            |
+| 维度ID            | getDimensionID()            | 整型                              |
+| 高度                 | getHeight()                 | 整型                              |
+| 视野                | getHorizon()                | 双精度                           |
+| 亮度表    | getLightBrightnesTable()    | 浮点[]                          |
+| 移动系数         | getMovementFactor()         | 双精度                           |
+| 随机生成点   | getRandomizedSpawnPoint()   | [IBlockPos](IBlockPos)           |
+| 保存文件夹             | getSaveFolder()             | 字符串                           |
+| 种子                   | getSeed()                   | 长整型                             |
+| 生成坐标        | getSpawnCoordinate()        | [IBlockPos](IBlockPos)           |
+| 生成点             | getSpawnPoint()             | [IBlockPos](IBlockPos)           |
+| voidFogYFactor         | getVoidFogYFactor()         | 双精度                           |
+| 世界时间              | getWorldTime()              | 长整型                             |
+| 可以在这里重生         | canRespawnHere()            | 布尔值                             |
+| 水蒸发          | doesWaterVaporize()         | 布尔值                             |
+| 天窗               | hasSkyLight()               | 布尔值                             |
+| 白天                | isDaytime()                 | 布尔值                             |
+| 地狱                 | isNether()                  | 布尔值                             |
+| 天空颜色             | isSkyColored()              | 布尔值                             |
+| 地表           | isSurfaceWorld()            | 布尔值                             |
 
-## ZenMethods with parameters
-### get Biome at a certain Position
+## 带参数的ZenMethods
+### 获取特定位置的生物群系
 
-Use either an [IBlockPos](IBlockPos) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome) Object.
+使用一个 [IBlockPos](IBlockPos) 对象。  
+来返回一个 [IBiome](/Vanilla/Biomes/IBiome) 对象。
 ```
 worldProvObj.getBiome(IBlockPos position);
 ```
 
-### get MoonPhase for a specific time
+### 获得特定时间的月相
 
-Use a long.  
-Returns an int.
+使用一个长整型。  
+来返回一个整型。
 ```
 worldProvObj.getMoonPhase(long time);
 ```
 
-### get Respawn Dimension for a specific player
+### 获取特定玩家的重生维度
 
-Use an [IPlayer](/Vanilla/Players/IPlayer) object.  
-Returns a new IWorldProvider object.
+使用一个 [IPlayer](/Vanilla/Players/IPlayer) 对象。  
+来返回一个new IWorldProvider 对象。
 ```
 worldProvObj.getRespawnDimension(IPlayer player);
 ```
 
-### get Brightnes (factor) at a specific 
+### 获取特定的亮度（系数）
 
-Use a float.  
-Returns a float.
+使用一个浮点数。  
+来返回一个浮点数。
 ```
 worldProvObj.getStarBrightness(float something);
 worldProvObj.getSunBrightness(float something);
 worldProvObj.getSunBrightnessFactor(float something);
 ```
 
-### Check if a block has a high humidity
-Use an [IBlockPos](IBlockPos) object.  
-Returns a boolean.
+### 检查一个方块是否有高湿度
+使用一个 [IBlockPos](IBlockPos) 对象。  
+来返回一个布尔值。
 ```
 worldProvObj.isBlockHighHumidity(IBlockPos pos);
 ```
