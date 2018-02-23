@@ -1,6 +1,6 @@
 # 方块访问
 
-方块访问是一组可通过坐标来访问方块的对象。 它们主要作为[IWorld](IWorld)的超级接口，这意味着所有这些功能对[IWorld](IWorld)的对象都有效。
+BlockAccess是一组可通过坐标来访问方块的对象。 它们主要作为[IWorld](IWorld)的超级接口，这意味着所有这些功能对[IWorld](IWorld)的对象都有效。
 
 ## 导入类
 可能需要 [导入](/AdvancedFunctions/Import) 相关类以避免某些错误。  

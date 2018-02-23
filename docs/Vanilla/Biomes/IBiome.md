@@ -1,29 +1,28 @@
-# IBiome
+# 生物群系接口
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+IBiome接口允许你获取一个已注册的生物群群的信息。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入包
+如遇任何问题 (如声明 [数组](/AdvancedFunctions/Arrays_and_Loops))， 可以尝试通过导入相关包来解决。  
 `import crafttweaker.world.IBiome;`
 
-## Calling an IBiome
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame)
-That is currently the only way
+## 调用一个IBiome
+你可以使用 [IGame](/Vanilla/Game/IGame) 的`game.biomes`来获取所有已注册的生物群系的列表
+这是目前唯一的方法
 
 ## ZenGetters
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+目前，你可以用IBiome对象做的就是从中获取以下信息：
 
-| ZenGetter                    | Return Type |
+| ZenGetter                    | 返回类型 |
 |------------------------------|-------------|
-| name                         | String      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
-
+| 名称                         | 字符串      |
+| 可以下雨                      | 布尔值     |
+| 群系下雪                 | 布尔值     |
+| 高湿度                 | 布尔值     |
+| 生成几率               | 浮点       |
+| 海拔高度                   | 浮点       |
+| 高度变化              | 浮点       |
+| 降雨量                     | 浮点       |
+| 水颜色乘子         | 整型         |
+| 忽略玩家重生适用性 | 布尔值     |
+| 温度                  | 浮点       |
