@@ -17,33 +17,34 @@ crafttweaker.world.IWorldProvider.create(int id);
 
 ## 没有参数和ZenGetters的ZenMethods
 
-| ZenGetter              | ZenMethod                   |返回类型                       |
-|------------------------|-----------------------------|----------------------------------|
-| 实际高度           | getActualHeight()           | 整型                              |
-| 实际水平面      | getAverageGroundLevel()     | 整型                              |
-| 云高            | getCloudHeight()            | 浮点                            |
-| 当前的月相系数 | getCurrentMoonPhaseFactor() | 浮点                            |
-| 维度ID            | getDimensionID()            | 整型                              |
-| 高度                 | getHeight()                 | 整型                              |
-| 视野                | getHorizon()                | 双精度                           |
-| 亮度表    | getLightBrightnesTable()    | 浮点[]                          |
-| 移动系数         | getMovementFactor()         | 双精度                           |
-| 随机生成点   | getRandomizedSpawnPoint()   | [IBlockPos](IBlockPos)           |
-| 保存文件夹             | getSaveFolder()             | 字符串                           |
-| 种子                   | getSeed()                   | 长整型                             |
-| 生成坐标        | getSpawnCoordinate()        | [IBlockPos](IBlockPos)           |
-| 生成点             | getSpawnPoint()             | [IBlockPos](IBlockPos)           |
-| voidFogYFactor         | getVoidFogYFactor()         | 双精度                           |
-| 世界时间              | getWorldTime()              | 长整型                             |
-| 可以在这里重生         | canRespawnHere()            | 布尔值                             |
-| 水蒸发          | doesWaterVaporize()         | 布尔值                             |
-| 天窗               | hasSkyLight()               | 布尔值                             |
-| 白天                | isDaytime()                 | 布尔值                             |
-| 地狱                 | isNether()                  | 布尔值                             |
-| 天空颜色             | isSkyColored()              | 布尔值                             |
-| 地表           | isSurfaceWorld()            | 布尔值                             |
+|       ZenGetter        |          ZenMethod          |        返回类型        |      描述      |
+| :--------------------: | :-------------------------: | :--------------------: | :------------: |
+|      actualHeight      |      getActualHeight()      |          整型          |    实际高度    |
+|   actualGroundLevel    |   getAverageGroundLevel()   |          整型          |   实际水平面   |
+|      cloudHeight       |      getCloudHeight()       |          浮点          |      云高      |
+| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() |          浮点          | 当前的月相系数 |
+|      dimensionID       |      getDimensionID()       |          整型          |     维度ID     |
+|         height         |         getHeight()         |          整型          |      高度      |
+|        horizon         |        getHorizon()         |         双精度         |      视野      |
+|  lightBrightnesTable   |  getLightBrightnesTable()   |         浮点[]         |     亮度表     |
+|     movementFactor     |     getMovementFactor()     |         双精度         |    移动系数    |
+|  randomizedSpawnPoint  |  getRandomizedSpawnPoint()  | [IBlockPos](IBlockPos) |   随机生成点   |
+|       saveFolder       |       getSaveFolder()       |         字符串         |   保存文件夹   |
+|          seed          |          getSeed()          |         长整型         |      种子      |
+|    spawnCoordinate     |    getSpawnCoordinate()     | [IBlockPos](IBlockPos) |    生成坐标    |
+|       spawnPoint       |       getSpawnPoint()       | [IBlockPos](IBlockPos) |     生成点     |
+|     voidFogYFactor     |     getVoidFogYFactor()     |         双精度         | voidFogYFactor |
+|       worldTime        |       getWorldTime()        |         长整型         |    世界时间    |
+|     canRespawnHere     |      canRespawnHere()       |         布尔值         | 可以在这里重生 |
+|     waterVaporize      |     doesWaterVaporize()     |         布尔值         |     水蒸发     |
+|        skylight        |        hasSkyLight()        |         布尔值         |      天窗      |
+|        daytime         |         isDaytime()         |         布尔值         |      白天      |
+|         nether         |         isNether()          |         布尔值         |      地狱      |
+|       skyColored       |       isSkyColored()        |         布尔值         |    天空颜色    |
+|      surfaceWorld      |      isSurfaceWorld()       |         布尔值         |      地表      |
 
-## 带参数的ZenMethods
+## 带参数的 ZenMethods
+
 ### 获取特定位置的生物群系
 
 使用一个 [IBlockPos](IBlockPos) 对象。  

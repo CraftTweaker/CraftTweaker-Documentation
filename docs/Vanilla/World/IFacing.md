@@ -22,11 +22,11 @@ crafttweaker.world.Facing.fromString(String name);
 ```
 
 ## ZenGetters/ZenMethods without parameters
-| ZenGetter  | ZenMethod  | 返回类型 |
-|------------|------------|-------------|
-| 名称       | getName()  | 字符串      |
-| 旋转Y轴    | rotateY()  | IFacing     |
-| 相反面   | opposite() | IFacing     |
+| ZenGetter | ZenMethod  | 返回类型 |
+| :-------: | :--------: | :------: |
+|   name    | getName()  |  字符串  |
+|  rotateY  | rotateY()  | IFacing  |
+| opposite  | opposite() | IFacing  |
 
 ## 其他方法
 ### 比较两个朝向

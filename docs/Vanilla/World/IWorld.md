@@ -18,20 +18,20 @@ crafttweaker.world.IWorld.create(int id);
 
 ## 没有参数和ZenGetters的ZenMethods
 
-|ZenMethod          | ZenGetter     |返回类型                      |描述                                                                                                                                                                             |
-|-------------------|---------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|isRemote()         | 远程        |布尔值                          |如果来自“子”客户端的世界设置为True；则当前世界的一切改变都不会被保存或传播。例如，服务端世界将其设为False，客户端世界将其设为True。 |
-|isRaining()        | 下雨       |布尔值                          |如果当前正在下雨则返回true。                                                                                                                                                 |
-|isThundering()     | 打雷    |布尔值                          |如果当前正在打雷，则返回true。                                                                                                                                             |
-|getMoonPhase()     | 月相     |整型                              |返回当前月相。                                                                                                                                                         |
-|isDayTime()        | 白天       |布尔值                          |检查是否是白天。                                                                                                                                                                |
-|getWorldTime()     | 时间          |长整型                             |返回当前世界的时间。                                                                                                                                                               |
-|getDimension()     | 维度     |整型                              |返回当前世界的维度。                                                                                                                                                          |
-|isSurfaceWorld()   | 地表  |布尔值                          |返回你是否在地表。                                                                                                                                      |
-|getDimensionType() | 维度类型 |字符串                           |返回维度的类型名称。                                                                                                                                                      |
-|getWorldType()     | 世界类型     |字符串                           |返回世界类型名称。                                                                                                                                                          |
-|getWorldInfo()     | 世界信息     |[IWorldInfo](IWorldInfo)         |返回世界信息。 以便于检索更多世界上的信息。                                                                                                   |
-|getProvider()      | 世界供应器      |[IWorldProvider](IWorldProvider) |返回世界供应器。以便于检索世界上更多的信息。                                                                                                      |
+|     ZenMethod      |   ZenGetter   |             返回类型             |                             描述                             |
+| :----------------: | :-----------: | :------------------------------: | :----------------------------------------------------------: |
+|     isRemote()     |    remote     |              布尔值              | 如果来自“子”客户端的世界设置为True；则当前世界的一切改变都不会被保存或传播。例如，服务端世界将其设为False，客户端世界将其设为True。 |
+|    isRaining()     |    raining    |              布尔值              |                 如果当前正在下雨则返回true。                 |
+|   isThundering()   |  thundering   |              布尔值              |                如果当前正在打雷，则返回true。                |
+|   getMoonPhase()   |   moonPhase   |               整型               |                        返回当前月相。                        |
+|    isDayTime()     |    dayTime    |              布尔值              |                       检查是否是白天。                       |
+|   getWorldTime()   |     time      |              长整型              |                     返回当前世界的时间。                     |
+|   getDimension()   |   dimension   |               整型               |                     返回当前世界的维度。                     |
+|  isSurfaceWorld()  | surfaceWorld  |              布尔值              |                      返回你是否在地表。                      |
+| getDimensionType() | dimensionType |              字符串              |                     返回维度的类型名称。                     |
+|   getWorldType()   |   worldType   |              字符串              |                      返回世界类型名称。                      |
+|   getWorldInfo()   |   worldInfo   |     [IWorldInfo](IWorldInfo)     |         返回世界信息。 以便于检索更多世界上的信息。          |
+|   getProvider()    |   provider    | [IWorldProvider](IWorldProvider) |         返回世界供应器。以便于检索世界上更多的信息。         |
 
 ## 带参数的ZenMethods
 ### 获取特定位置的生物群系
