@@ -6,7 +6,7 @@
 ## 声明数组
 使用 ```[``` 和 ```]``` 来声明数组
 
-```
+```js
 //包含“你好”和“世界”的数组
 val stringArray = ["你好", "世界"] as string[];
 
@@ -108,33 +108,33 @@ for i, item in IArray {
 	//定义一个变量叫做“item”，遍历 IArray 中的每一个元素（就是类似于 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond> 这样的东西）
 	//然后就能用这些变量了！
 
-	//Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+	//使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（比如泥土由玻璃和木斧合成，木板由木头和金锄头合成，钻石由金锭和绿宝石合成）
 	recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
 
 for i in 0 to 10 {
-	//defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+	//定义一个变量 i 遍历数字 0~9（0,1,2,...,8,9）
     print(i);
 }
 
 for i in 10 .. 20 {
-	//defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+	//定义一个变量 i 遍历数字 10~19（10,11,12,...,18,19）
     print(i);
 }
 
 for item in loadedMods["minecraft"].items {
-	//defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+	//定义一个变量“item”来遍历所有 modID 为“minecraft”的物品，并移除它们的合成
 	recipes.remove(item);
 }
 ```
 
-# Adding items to an Array
+# 向数组中添加元素
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.   
-You use the `+` operator for array Addition:
+虽然很不推荐这么做，但是向数组中添加对象是可行的；  
+每次只能对一个数组添加一个元素，无法同时对多个数组添加元素；  
+使用符号 `+` 来添加为数组添加元素。
 
-```java
+```js
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;
