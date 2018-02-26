@@ -10,13 +10,13 @@ Crafttweaker allows you to `Add` and `Remove` Furnace recipes and change the fue
 There are 2 ways to remove Furnace recipes, being:
 
 ```java
-furnace.remove(output)
+furnace.remove(IIngredient output)
 ```
 
 And
 
 ```java
-furnace.remove(output, input);
+furnace.remove(IIngredient output, IIngredient input);
 ```
 
 The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
@@ -33,13 +33,13 @@ furnace.removeAll();
 There are 2 commands for adding furnace recipes:
 
 ```java
-furnace.addRecipe(output, input);
+furnace.addRecipe(IItemStack output, IIngredient input);
 ```
 
 And
 
 ```java
-furnace.addRecipe(output, input, xp);
+furnace.addRecipe(IItemStack output, IIngredient input, double xp);
 ```
 
 The first syntax will add a Furnace recipe that will give 0 xp on smelt.
@@ -54,7 +54,7 @@ The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
 The command for setting fuel values is:
 
 ```java
-furnace.setFuel(input, burnTime);
+furnace.setFuel(IIngredient input, int burnTime);
 ```
 
 This will set the burn value of `input` to `burnTime`.
@@ -66,7 +66,7 @@ Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
 The command for retrieving an item's fuel value is:
 
 ```java
-furnace.getFuel(item); 
+furnace.getFuel(IItemStack item); 
 ```
 
 This will return the burn value as an Integer
