@@ -1,24 +1,24 @@
-# Using IItemDefinitions to save a lot of time when referring meta-items
+# 使用IItemDefinitions来处理拥有metadata的物品可以节约很多时间
 
-## Problem
-Let's say we want to remove the recipes of some specific colors of wool.  
-White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
+## 案例 
+假设我们准备移除几种颜色的羊毛  
+白色羊毛的metadata是0，其他颜色的metadata从1到15————因此总计有16种羊毛
 
-We want to remove the wools with meta 3 to 12. What do we do?  
-We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  
-While in this example this would totally work, in large scale this becomes pretty annoying!
+如果我们要移除metadata为3至12的羊毛，该怎么做？  
+我们不能只是简单的移除它们（换句话说，使用 `<minecraft:wool:*>`），也不想把同样的东西写十遍  
+虽然在本例中此做法完全可行, 但当需要修改的量变得更加庞大时，这个做法就不怎么有效。
 
-## What do we know/need to know
+## 我们现在已经知道了/还要知道什么
 
-- recipes.remove requires an [IIngredient](/Vanilla/Variable_Types/IIngredient) Object
-- An [IItemStack](/Vanilla/Items/IItemStack) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient) as [IItemstack](/Vanilla/Items/IItemStack) extends [IIngredient](/Vanilla/Variable_Types/IIngredient)
-- We can use [IItemDefinitions](/Vanilla/Items/IItemDefinition) to create [IItemStacks](/Vanilla/Items/IItemStack)
+- recipes.remove 要求了 [IIngredient](/Vanilla/Variable_Types/IIngredient) 对象
+- [IItemStack](/Vanilla/Items/IItemStack) 可被用做 [IIngredient](/Vanilla/Variable_Types/IIngredient) 因为 [IItemstack](/Vanilla/Items/IItemStack) 继承了 [IIngredient](/Vanilla/Variable_Types/IIngredient)
+- 我们可以使用 [IItemDefinitions](/Vanilla/Items/IItemDefinition) 来创建 [IItemStacks](/Vanilla/Items/IItemStack)
 
-## Solution
+## 解例
 
-We use [IItemDefinitions](/Vanilla/Items/IItemDefinition) and an Integer Range and iterate through latter.  
-If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
-You can also use this to Except some items from being used.
+我们使用 [IItemDefinitions](/Vanilla/Items/IItemDefinition) 并定义一个整型范围，之后进行枚举.  
+但我们也可以使用数组来进行这个操作，不过这种情况下，你需要输入每一个数字。
+你也可以使用这一方法来去除正在使用的物品。
 
 ```
 val itemDef = <minecraft:wool>.definition;
