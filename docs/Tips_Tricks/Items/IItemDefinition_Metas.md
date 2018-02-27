@@ -2,7 +2,7 @@
 
 ## 案例 
 假设我们准备移除几种颜色的羊毛  
-白色羊毛的metadata是0，其他颜色的metadata从1到15————因此总计有16种羊毛
+白色羊毛的 metadata 是0，其他颜色的 metadata 从1到15————因此总计有16种羊毛
 
 如果我们要移除metadata为3至12的羊毛，该怎么做？  
 我们不能只是简单的移除它们（换句话说，使用 `<minecraft:wool:*>`），也不想把同样的东西写十遍  
@@ -20,10 +20,10 @@
 但我们也可以使用数组来进行这个操作，不过这种情况下，你需要输入每一个数字。
 你也可以使用这一方法来去除正在使用的物品。
 
-```
+```js
 val itemDef = <minecraft:wool>.definition;
 
-//does this for <minecraft:wool:3> to <minecraft:wool:12>
+//移除自 <minecraft:wool:3> 羊毛到 <minecraft:wool:12> 的羊毛
 for i in 3 to 13{
 	recipes.remove(itemDef.makeStack(i));
 }
@@ -32,12 +32,12 @@ for i in 3 to 13{
 val numArray = [3,4,5,6,7,8,9,10,11,12] as int[];
 
 
-//<minecraft:wool:3> to <minecraft:wool:12>
+//<minecraft:wool:3> 羊毛到 <minecraft:wool:12> 的羊毛
 for i in numArray{
 	itemDef.makeStack(i).addTooltip("Un-Craftable");
 }
 
-//<minecraft:wool:3> to <minecraft:wool:12>, but without 5 and 9
+//<minecraft:wool:3> 羊毛到 <minecraft:wool:12> 的羊毛，不过不包括 5 和 9 
 for i in 3 .. 13{
 	if(i != 5 & i != 9){
 		itemDef.makeStack(i).addShiftTooltip("Help me!");
