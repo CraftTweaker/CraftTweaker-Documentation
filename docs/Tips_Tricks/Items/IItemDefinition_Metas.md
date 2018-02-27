@@ -1,14 +1,14 @@
 # 使用IItemDefinitions来处理拥有metadata的物品可以节约很多时间
 
 ## 案例 
-假设我们准备移除几个颜色的羊毛  
+假设我们准备移除几种颜色的羊毛  
 白色羊毛的metadata是0，其他颜色的metadata从1到15————因此总计有16种羊毛
 
 如果我们要移除metadata为3至12的羊毛，该怎么做？  
-我们不能只是单纯的移除它们（换句话说，使用 `<minecraft:wool:*>`），我们也不想把同样的东西重复写十遍  
-虽然在本例中此做法完全可行, 但当需要修改的量变得更加庞大时，这个做法就会令人厌烦。
+我们不能只是简单的移除它们（换句话说，使用 `<minecraft:wool:*>`），也不想把同样的东西写十遍  
+虽然在本例中此做法完全可行, 但当需要修改的量变得更加庞大时，这个做法就不怎么有效。
 
-## 我们现在已经知道了/要知道什么
+## 我们现在已经知道了/还要知道什么
 
 - recipes.remove 要求了 [IIngredient](/Vanilla/Variable_Types/IIngredient) 对象
 - [IItemStack](/Vanilla/Items/IItemStack) 可被用做 [IIngredient](/Vanilla/Variable_Types/IIngredient) 因为 [IItemstack](/Vanilla/Items/IItemStack) 继承了 [IIngredient](/Vanilla/Variable_Types/IIngredient)
@@ -16,7 +16,7 @@
 
 ## 解例
 
-我们使用 [IItemDefinitions](/Vanilla/Items/IItemDefinition) 并定义一个范围，之后进行枚举.  
+我们使用 [IItemDefinitions](/Vanilla/Items/IItemDefinition) 并定义一个整型范围，之后进行枚举.  
 但我们也可以使用数组来进行这个操作，不过这种情况下，你需要输入每一个数字。
 你也可以使用这一方法来去除正在使用的物品。
 
