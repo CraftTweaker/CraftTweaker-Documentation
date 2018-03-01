@@ -24,7 +24,7 @@ pages:
     - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
     - 数学运算: 'AdvancedFunctions/Calculations.md'
     - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
-    - 跨脚本参考: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - 跨脚本调用: 'AdvancedFunctions/Cross-Script_Reference.md'
     - 自定义函数: 'AdvancedFunctions/Custom_Functions.md'
     - 全局和静态变量: 'AdvancedFunctions/Global_Static_Variables.md'
     - 导入: 'AdvancedFunctions/Import.md'
