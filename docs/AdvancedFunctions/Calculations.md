@@ -1,79 +1,79 @@
-# Calculations
+# 数学运算
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+有时候输入的数字并不能直接用，我们需要对齐进行数学运算。  
+谨记所有的数学运算都是二元的，诸如 `1+1+1+1` 这种就不符合要求。
 
-## A word of advice
+## 一些忠告
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why?
-ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one.
-In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+当数学运算结果发生意外时，很有可能是你使用不同类型的数字。  
+比如 `13 % 6.5` 结果为 1，可是正确结果应该是 0 啊，究竟发生了什么？  
+ZenScript 总是会对运算的两个数据类型进行处理，使其成为相同类型。在上述例子中，它就会将第二个数据转换，用以匹配第一个数据。  
+在上述例子中，计算就会处理成 `13 % 6`，第二个数字（双精度浮点值）就会被强制转换为第一个数字的类型（整型）。
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+要始终检查两个变量类型是否一致，你可以使用 print 函数来将结果打印至日志中来检查数据是否正确。
 
-## Arithmetic Operators
+## 算术运算符
 
-I'm pretty sure all of you know these already, don't you?
+我十分确定你一定熟知这些：
 
-| Token 	| Tokenassign	| Function       	| Example 	|
+| 运算符 	| 自运算	| 名称       	| 举例 	|
 |-------	|-------------	|----------------	|---------	|
-| `+`   	| `+=`        	| Addition       	| 1+2     	|
-| `-`   	| `-=`        	| Substraction   	| 2-1     	|
-| `*`   	| `*=`        	| Multiplication 	| 1*1     	|
-| `/`   	| `/=`        	| Division       	| 2/2     	|
-| `%`   	| `%=`        	| Modulo         	| 13 % 6  	|
+| `+`   	| `+=`        	| 加       	| 1+2     	|
+| `-`   	| `-=`        	| 减   	| 2-1     	|
+| `*`   	| `*=`        	| 乘 	| 1*1     	|
+| `/`   	| `/=`        	| 除       	| 2/2     	|
+| `%`   	| `%=`        	| 求余         	| 13 % 6  	|
 
-## Concatenation
+## 字符串连接
 
-Puts one thing at the and of the other
+将两个字符串连接起来
 
 ```
-//prints "Hello World"
-print("Hello" ~ " " ~ "World");
+//prints "你好世界"
+print("你好" ~ "世界");
 ```
 
-## Calculation results
+## 数学运算结果
 
-A calculation usually ends up with a result. So what to do with that?
+额……数学运算就会直接返回结果？应该不需要再说了吧……
 
-### Assigning a variable
+### 分配变量
 
-There are two ways of assigning a value to a variable:
+有两种方法将值分配给一个变量:
 
 ```
 var test = 0;
 
-//Option 1:
-//assigns test with the value 3 (1+2)
+//方法 1:
+//变量 test 分配数值 3 (1+2)
 test = 1+2;
 
-//Option 2:
-//assigns test with 5 (3+2)
+//方法 2:
+//变量 test 分配数值 5 (3+2)
 test = test + 2;
 
-//Option 3:
-//assigns test with 2 (5-3)
+//方法 3:
+//变量 test 分配数值 2 (5-3)
 test -= 3;
 ```
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+方法 1 和 2 使用了 `=` 来分配给变量数值。  
+这可能是是最简单、也是初学者的分配数值方式。
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+方法 3 则将减法运算的结果返回回 `-=` 符号前的变量中。  
+所有的自运算符合都在先前的表中给出了介绍。  
 
-### Using the result otherwise
+### 其他使用运算结果的地方
 
-You can always use the result of a calculation in a function or a conditional statement:
+你可以在函数中使用运算结果，或者作为条件语句的判定：
 
 ```
-//prints 4
+//打印输出 4
 print(3+1);
 
-//removes the item on array[4]
+//移除数组 array[4]
 recipes.remove(array[3+1]);
 
-//
-if(3+1 == 2*2) {print("Used a calculation!")}
+// 如果 3+1 等于 2×2，打印输出“使用了计算！”
+if(3+1 == 2*2) {print("使用了计算！")}
 ```
