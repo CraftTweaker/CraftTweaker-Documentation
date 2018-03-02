@@ -6,7 +6,7 @@
 ## Addition
 
 ```
-//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack catalyst, IItemStack output, @Optional string textureLocation);
+//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack input, IItemStack catalyst, IItemStack output, @Optional string textureLocation);
 mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:stick>, <minecraft:grass>, <minecraft:diamond>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:stick>, <minecraft:grass>, <minecraft:diamond>);
 ```
