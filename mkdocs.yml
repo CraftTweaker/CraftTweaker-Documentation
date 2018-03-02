@@ -336,6 +336,11 @@ pages:
         - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+      - Blood Magic:
+        - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
+        - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
+        - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
+        - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
