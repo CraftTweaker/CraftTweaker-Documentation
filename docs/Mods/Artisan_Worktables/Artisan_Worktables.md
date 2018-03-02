@@ -1,11 +1,10 @@
 # Artisan Worktables
 
-## Information:
-Artisan Worktables adds a wide arrangement of custom Crafting Tables that requires "Tools" for the Crafting Process.
-This mod has both JEI and GameStages support, as well as quite robust CraftTweaker Integration!
+Artisan Worktables adds a wide variety of themed crafting tables that can be configured to use recipes that require tools.
+This mod supports both JEI and GameStages, as well as a quite robust CraftTweaker integration!
 
-### For More Information:
-https://minecraft.curseforge.com/projects/advanced-mortars
+## Official Documentation
+[http://artisan-worktables.readthedocs.io/en/latest/](http://artisan-worktables.readthedocs.io/en/latest/)
 
-### Bug Reports:
-https://github.com/codetaylor/advancedmortars/issues
+## Bug Reports
+[https://github.com/codetaylor/artisan-worktables/issues](https://github.com/codetaylor/artisan-worktables/issues)
