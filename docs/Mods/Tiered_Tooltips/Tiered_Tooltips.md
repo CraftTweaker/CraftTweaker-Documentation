@@ -1,5 +1,5 @@
 # Tiered Tooltips
-This mod is a vanity addon to [ItemStages](https://minecraft.curseforge.com/projects/item-stages). Tiered Tooltips uses the new RenderTooltipEvent in Forge along with some clever logic to allow the end-user to change the tooltip colour of an item, based on which stage said item is restricted to.
+This mod is a vanity addon to [ItemStages](https://minecraft.curseforge.com/projects/item-stages). Tiered Tooltips uses the new RenderTooltipEvent in Forge along with some clever logic to allow the end-user to change the tooltip colour of an item, based on which stage said item is restricted to. More info on the mod can be found [here](https://minecraft.curseforge.com/projects/tiered-tooltips).
 
 ```java
 mods.TieredTooltips.colourStage(String stageName, String background, String borderStart, String borderEnd);
