@@ -428,6 +428,8 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - Tiered Tooltips:
+      - Tiered Tooltips: 'Mods/Tiered_Tooltips/Tiered_Tooltips.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
