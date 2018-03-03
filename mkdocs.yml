@@ -428,6 +428,10 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - Rocky Core:
+      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
+      - Anvil: 'Mods/RockyCore/Anvil.md'
+      - Merchant: 'Mods/RockyCore/Merchant.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
