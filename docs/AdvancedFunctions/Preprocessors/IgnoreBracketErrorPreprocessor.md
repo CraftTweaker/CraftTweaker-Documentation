@@ -1,12 +1,12 @@
-# Ignore Bracket Errors Preprocessor
+# 忽略尖括号引用错误
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+这个预处理器能够忽略脚本中的所有尖括号引用错误。  
+不过这个处理器**不会**以任何方式来纠正脚本错误！只是忽略错误日志而已。
 
-## Call
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+## 开启方式
+通过添加以 `#ignoreBracketErrors` 开头的注释，来开启预处理器忽略尖括号引用模式  
+这个预处理器不是全局的，这意味着只对当前脚本有效，而不会影响到其他脚本。
 
-## What it does
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+## 有什么用
+当在脚本中开启这个预处理器，所有的尖括号引用会被忽略。   
+不过这个处理器**不会**以任何方式来纠正脚本错误！只是忽略错误日志而已。

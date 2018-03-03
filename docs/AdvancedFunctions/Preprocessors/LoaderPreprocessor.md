@@ -1,12 +1,12 @@
-# LoaderPreprocessor
+# 加载器
 
-The loader preprocessor will set the script's loader.
+预处理器加载器模式能够设定脚本的加载器。
 
-## Call
-You call the loader Preprocessor by adding `#loader loaderName` to your script file with `loaderName` being the name of the loader you want to assign the script to.  
-Example: `#loader contenttweaker`
+## 如何开启
+只需要在脚本中书写以 `#loader loaderName` 开头的注释，即可开启预处理器加载器模式， `loaderName` 为就你想要调用的加载器名称。  
+示例：`#loader contenttweaker`
 
-## What it does
-Scripts with the loader Preprocessor will only be loaded by the loader specified.  
-In the example above, crafttweaker's loader won't touch the file, instead the loader called "contentTweaker" will execute that script.  
-If you don't specify that preprocessor, it will default to being "crafttweaker".
+## 有什么用
+开启了预处理器加载模式的的脚本，只会使用指定的加载器来加载脚本。  
+在先前的例子中， crafttweaker 的加载器不会触及这个文件，而是使用 "contentTweaker" 来执行脚本。  
+如果不指定特殊的预处理器，默认使用 "crafttweaker" 来执行。

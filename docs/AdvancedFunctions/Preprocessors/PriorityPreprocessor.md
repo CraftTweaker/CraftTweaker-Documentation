@@ -1,10 +1,10 @@
-# PriorityPreprocessor
+# 优先级
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+优先级处理器能够管控脚本加载优先级。
 
-## Call
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+## 如何开启
+在脚本中添加 `#priority number` 即可设定优先级，`number` 即为逆向设定的优先级。
 
-## What it does
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+## 有什么用
+优先级越高的脚本，越早能够被加载。  
+优先级相同的脚本将按路径名的字母顺序排序，再次决定优先级。
