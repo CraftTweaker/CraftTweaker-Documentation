@@ -1,45 +1,45 @@
-# Import Function
+# 函数导入
 
-Instead of typing the whole function name all the time, you can just import a function to serve your needs.
-Useful when using mod functions.
+与其一遍遍输入整个函数名称，你可以试试依据需求导入对应的函数；  
+当使用 mod 函数的时候会非常有用。
 
-## Note on pre 1.12 imports
-With CraftTweaker 1.12, a lot of code has changed.  
-Before, all internal functions were called using `minetweaker.package.function`.
-Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+## 1.12 之前版本需要注意的导入事项
+CraftTweaker 1.12 版本，很多代码都发生了变化。  
+在此之前，所有的内部函数都使用 `minetweaker.package.function` 名称；  
+不过现在， `minetweaker` 名称被 `crafttweaker` 所取代，所以现在一律使用 `crafttweaker.name.function` 名称！
 
-Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
+所以接下来 wiki 演示的案例中如果出现了问题，先检查下你的 MC 版本是不是1.12 以后的。
 
 
-## Basic Import
+## 基本导入方式
 
-Imports have to be declared at the top of a Script. You will have to declare imports for each scripts separately.
-Be careful not to import two functions with the same name, use the AS function for that
+导入部分需要优先在脚本顶部声明，每条声明是相互独立的；  
+注意不要导入两个相同名称的函数，使用 AS 函数来处理它：
 
-```
-//This will import the hide function from JEI
+```js
+//这个语句会导入 JEI 的隐藏函数
 import mods.jei.JEI.removeAndHide;
 
-//And this will import the JEI package
+//这一条会导入 JEI 包
 import mods.jei.JEI;
 
-//removeAndHide is a function, so we can just use it
+//removeAndHide（移除并隐藏）是一个函数，我们可以直接调用它
 removeAndHide(<minecraft:dirt>);
 
-//JEI is a package, so we need to specify what function of it we want to use
+//JEI 是一个包，所以我们需要特别指明我们相用哪个函数
 JEI.hide(<minecraft:diamond>);
 ```
 
-## Import as
+## Import as 方法
 
-Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names.
-When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
+有时候你想要导入两个同名函数，或者想要给导入的函数一个自定义名称；
+只需要添加 AS 关键词在 import 语句的末尾即可，你可以随意定义自定义名称。
 
-```
-//This will import the hide function from JEI and make it available under the name "h"
+```js
+//这个语句能够导入 JEI 的 hide 函数，并赋予器别名 "h"
 import mods.jei.JEI.hide as h;
 
-//And this will import the removeAndHide function from JEI and make it available under the name "rh"
+//这个语句能够导入 JEI 的 removeAndHide 函数，并赋予别名 "rh"
 import mods.jei.JEI.removeAndHide as rh;
 
 h(<minecraft:dirt>);
