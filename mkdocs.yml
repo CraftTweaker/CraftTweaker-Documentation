@@ -1,3 +1,17 @@
+# 站点的基本信息
+site_name: Crafttweaker 简体中文文档
+repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
+copyright: Crafttweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
+theme: readthedocs
+
+# 使用的几个额外组件
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+
+# 如果想要添加新条目，首先记得在这里写上索引
+- pages:
   - 主页: 'index.md'
   - 脚本入门: 'Getting_Started.md'
   - wiki 使用: 'UsingThisWiki.md'
