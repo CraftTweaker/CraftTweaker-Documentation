@@ -430,6 +430,10 @@ pages:
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
     - Tiered Tooltips:
       - Tiered Tooltips: 'Mods/Tiered_Tooltips/Tiered_Tooltips.md'
+    - Rocky Core:
+      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
+      - Anvil: 'Mods/RockyCore/Anvil.md'
+      - Merchant: 'Mods/RockyCore/Merchant.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
