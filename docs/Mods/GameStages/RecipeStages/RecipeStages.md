@@ -39,6 +39,23 @@ mods.recipestages.Recipes.setRecipeStage("one", <minecraft:stone_hoe>);
 mods.recipestages.Recipes.setRecipeStage("one", "minecraft:boat");
 ```
 
+Sets the stage of all recipes based on a regex check against their name.
+```java
+//mods.recipestages.Recipes.setRecipeStageByRegex(String name, String recipeName);
+
+mods.recipestages.Recipes.setRecipeStageByRegex("one", "minecraft");
+```
+
+Sets the stage of all recipes that make items from a certain mod.
+```java
+//mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
+//This sets the stage of all recipes who's name only contains numbers to stage "one"
+
+mods.recipestages.Recipes.setRecipeStageByMod("one", "^[0-9]*$");
+```
+
+
+
 Tells RecipeStages to print Container names to chat
 ```java
 //mods.recipestages.Recipes.setPrintContainers(boolean printContainers);
