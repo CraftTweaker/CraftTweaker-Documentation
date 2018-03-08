@@ -39,6 +39,7 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 		<li>stack | otherIngredient</li>
 		<li>stack.or(otherIngredient)</li>
 		<li>stack.transform([transformer](Item_Transformers))</li>
+		<li>stack.transformNew([transformer](Item_Transformers))</li>
 		<li>stack.only([condition](Item_Conditions))</li>
 		<li>stack.marked(mark)</li>
 		<li>stack.matches(item)</li>
