@@ -26,7 +26,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 
 
-## Remove Recipe
+## Remove Recipe by Output
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
@@ -38,4 +38,18 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
+```
+
+## Remove Recipe By Input
+
+|Type              |Data Type                                          |
+|------------------|---------------------------------------------------|
+|Input             |[IItemstack](/Vanilla/Items/IItemStack)            |
+
+### Example
+```JAVA
+//Example:
+mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
+
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>);
 ```
