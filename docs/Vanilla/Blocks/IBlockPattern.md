@@ -13,7 +13,7 @@
 实际上，你每次调用[方块](IBlock)对象的时候，你就调用了方块模式对象。   
 不过某些情况下，你可能需要明确的返回一个方块模式对象。
 
-* OR two [方块](IBlock)对象。
+* 或者两个[方块](IBlock)对象。
 
 ## ZenGetters
 
@@ -22,10 +22,10 @@
 |   blocks    | 这个对象的所有可能方块列表 | List<[IBlock](IBlock)> |
 | displayName | 返回符合条件方块的显示名称 |         String         |
 
-## OR
+## 或
 
-You can OR two IBlockPattern Objects using the OR `|` Operator
+你可以用或 `|` 运算符连接两个方块模式。
 
-## Matching
-You can check if an IBlockPatternObject contains another using the `in` keyword.  
-For example, you could check if a Block is in an IBlockPattern.
+## 匹配
+你可以用 `in` 关键字检测一个方块模式中是否包含另一个方块模式。
+例如你可以检测一个方块是否在一个方块模式中。
