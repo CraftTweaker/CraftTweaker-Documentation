@@ -11,7 +11,7 @@
 |canProvidePower            | bool                                                                 | 方块是否能发出红石信号                                     |
 |mobilityFlag               | string                                                               | 返回 [mobility flag](MobilityFlag) as string             |
 |material                   | [IMaterial](IMaterial)                                               | 返回方块的[材料](IMaterial)                               |
-|causesSuffocation          | bool                                                                 | 方块能否能是实体受到窒息伤害                               |
+|causesSuffocation          | bool                                                                 | 方块能否能使实体受到窒息伤害                               |
 |hasCustomBreakingProgress  | bool                                                                 |                                                         |
 |blockNormalCube            | bool                                                                 |                                                         |
 |fullBlock                  | bool                                                                 |                                                         |
@@ -51,7 +51,7 @@ Returns a boolean that sais whether the block can be replaced or not.
 
 - [方块访问](/Vanilla/World/IBlockAccess) world → 检测的世界
 - [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
-- [Facing](/Vanilla/World/Facing) facing → 检测此朝向此方向的方块面
+- [Facing](/Vanilla/World/Facing) facing → 检测此朝向的方块面
 
 返回方块在此面上的红石信号强度的整形数字。
 
@@ -99,7 +99,7 @@ blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
-### Get a player’s Relative Block Harness
+### Get a player's Relative Block Harness
 
 需要传入[玩家](/Vanilla/Players/IPlayer)对象,一个[世界](/Vanilla/World/IWorld)对象以及一个[方块位置](/Vanilla/World/IBlockPos)对象。  
 返回浮点数。
@@ -107,7 +107,7 @@ blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
 ```
 
-### Check if a side of the block is solid
+### 检测方块的一个面是否是实心方块面
 
 需要传入[方块访问](/Vanilla/World/IBlockAccess)对象,一个[方块位置](/Vanilla/World/IBlockPos)对象以及一个[朝向](/Vanilla/World/IFacing) 对象。 
 返回布尔值。
