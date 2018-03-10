@@ -1,15 +1,15 @@
-# IEntityAttributeModifier
+# 实体属性修饰器
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.entity.AttributeModifier;`
 
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | Return Type |
+| ZenGetter | GetterMethod   | 返回类型     |
 |-----------|----------------|-------------|
-| uuid      | getUUID()      | String      |
-| name      | getName()      | String      |
-| operation | getOperation() | int         |
-| amount    | getAmount()    | double      |
+| uuid      | getUUID()      | 字符串       |
+| name      | getName()      | 字符串       |
+| operation | getOperation() | 整数         |
+| amount    | getAmount()    | 双精度型     |
