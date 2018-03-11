@@ -27,7 +27,7 @@ ZenScript 有时候并不能预测数组中物品属于何种类型，这就会�
 ```js
 // 下面的例子就演示了最推荐的数组构建方式
 import crafttweaker.item.IItemStack;  // 首先是导入包，这个一定要放在脚本的最顶上
-val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];  // 使用 as 附加声明，指定其为 IItemStack 类型
+val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];  // 使用 as 附加声明，指定其为 IItemStack（物品堆）类型
 ```
 
 ## 数组嵌套
@@ -73,10 +73,10 @@ stringArrayAll[3] is ["蝴蝶","！"]
 
 stringArrayAll[0][0] is "你好"
 stringArrayAll[0][1] is "世界"
-etc.
+以此类推
 */
 
-//打印输出“你好”
+//打印输出“世界”
 print(stringArrayAll[0][1]);
 ```
 
@@ -108,7 +108,7 @@ for i, item in IArray {
 	//定义一个变量叫做“item”，遍历 IArray 中的每一个元素（就是类似于 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond> 这样的东西）
 	//然后就能用这些变量了！
 
-	//使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（比如泥土由玻璃和木斧合成，木板由木头和金锄头合成，钻石由金锭和绿宝石合成）
+	//使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（比如泥土由玻璃和木斧合成，木板由木头和金锄合成，钻石由金锭和绿宝石合成）
 	recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
 
