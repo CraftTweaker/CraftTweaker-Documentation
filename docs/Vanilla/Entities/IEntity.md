@@ -7,7 +7,7 @@
 为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.entity.IEntity;`
 
-## Extending ICommandSender
+## 命令发送者对象的扩展
 实体对象是 [命令发送者](/Vanilla/Commands/ICommandSender)的扩展。这说明适用于[命令发送者](/Vanilla/Commands/ICommandSender)的对象也适用于实体对象!
 
 
