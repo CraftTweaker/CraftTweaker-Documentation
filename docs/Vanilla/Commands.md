@@ -42,7 +42,7 @@ Crafttweaker 添加了一些便于制作脚本的命令，能够有效的减少�
 
 简介：
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+启动或关闭方块阅读器。在此模式下，右击一个方块会告诉你它的名称，元数据和方块实体值（如果存在）。
 
 ## 方块
 
@@ -107,10 +107,10 @@ Activates or deactivates the block reader. In block info mode, right-clicking a 
 
 简介：
 
-Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-Alternatively, you can provide a filepath to tell CT where to generate the dump. The Path can either be absolute or relative to your Minecraft root folder.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+在minecraft目录的crafttweaker_dump文件夹内输出一个ZenScrcit的HTML文件.
+另外，你也可以自己给CT提供一个路径。路径可以是绝对路径或以Minecraft为根目录的相对路径。
+这将包括所有注册过的尖括号引用、ZenType、全局函数、ZenExpansion和所有注册过的相关包和方法。
+注意以上内容只有部分可以用在脚本中!
 
 
 ## 实体
