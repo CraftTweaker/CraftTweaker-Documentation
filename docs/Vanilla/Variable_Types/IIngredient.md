@@ -18,6 +18,16 @@ import crafttweaker.item.IIngredient;
 ## Functions
 So, what can we do with this?
 
+### Command String
+The command string is how you would call this item in ZS.  
+This can be a bracket handler or something similar.  
+```
+val item = <minecraft:iron_ingot>;
+
+//prints "<minecraft:iron_ingot>"
+print(item.commandString);
+```
+
 ### Mark
 
 You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions).

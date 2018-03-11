@@ -16,6 +16,14 @@ rec.ingredients1D
 rec.ingredients2D
 ```
 
+### Get standart output
+
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack). Careful, can be null!
+
+```
+rec.output
+```
+
 ### Check for conditions
 Returns a boolean
 ```

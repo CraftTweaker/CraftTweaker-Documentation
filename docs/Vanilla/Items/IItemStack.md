@@ -36,6 +36,7 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 		<li>stack.items</li>
 		<li>stack.itemArray</li>
 		<li>stack.liquids</li>
+		<li>stack.commandString</li>
 		<li>stack | otherIngredient</li>
 		<li>stack.or(otherIngredient)</li>
 		<li>stack.transform([transformer](Item_Transformers))</li>
