@@ -150,5 +150,5 @@ if(<ore:ingotIron> in <minecraft:iron_ingot>){
 }
 ```
 
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.
+请注意分清左右两个参数：
+只有当所有在 `in` 之后的IIngredient能够在 `in` 之前的IIngredient被找到时，结果才为真。
