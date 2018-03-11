@@ -1,16 +1,16 @@
-# Mortars
+# 臼
 
-## Importing The Package
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+## 导入相关包
+你可以使用`mods.advancedmortars.Mortar`以导入相关包。
 
-## Add Recipe
+## 添加合成表
 
-|Type          |Data Type                                		  |Examples                              |
+|类型          |数据类型                               		  |举例                              |
 |--------------|--------------------------------------------------|--------------------------------------|
-|Mortar Types  |String[] 		   								  |["wooden", "stone", "iron", "diamond"]|
-|Output        |[IItemstack](/Vanilla/Items/IItemStack)			  |<minecraft:diamond\>					 |
-|Duration      |Integer											  |2000									 |
-|Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient)|[<ore:logWood\>, <ore:plankWood\>]	 |
+|臼种类  |String[] 		   								  |["wooden", "stone", "iron", "diamond"]|
+|产物        |[IItemstack](/Vanilla/Items/IItemStack)			  |<minecraft:diamond\>					 |
+|Duration      |Integer											  |2000									 |
+|原材料        |[IIngredient](/Vanilla/Variable_Types/IIngredient)|[<ore:logWood\>, <ore:plankWood\>]	 |
 
 ### Example
 ```JAVA
