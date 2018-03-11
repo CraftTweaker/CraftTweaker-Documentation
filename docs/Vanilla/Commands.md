@@ -109,7 +109,7 @@ Crafttweaker 添加了一些便于制作脚本的命令，能够有效的减少�
 
 在minecraft目录的crafttweaker_dump文件夹内输出一个ZenScrcit的HTML文件.
 另外，你也可以自己给CT提供一个路径。路径可以是绝对路径或以Minecraft为根目录的相对路径。
-这将包括所有注册过的尖括号引用、ZenType、全局函数、ZenExpansion和所有注册过的相关包和methods。
+这将包括所有注册过的尖括号引用、ZenType、全局函数、ZenExpansion和所有注册过的相关包和方法。
 注意以上内容只有部分可以用在脚本中!
 
 
