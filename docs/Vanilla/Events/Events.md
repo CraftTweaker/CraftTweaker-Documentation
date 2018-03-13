@@ -1,4 +1,4 @@
-# Events
+# 事件
 
-Events are small announcements sent through minecraft whenever something happens (e.g. when a player crafted something).  
-You can use the [Event Manager](IEventManager) to hook into these and let Crafttweaker execute code upon them.
+事件是当某些事发生时在minecraft中发送的信息（例：当玩家合成物品时）。 
+你何以使用[事件管理器](IEventManager)与事件挂钩并且当事件发生时让Crafttweaker触发代码。
