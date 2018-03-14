@@ -39,7 +39,7 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 
 ## Getting an IDamageSource Object
 
-You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/IDamageSource).
+You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource).
 
 
 ```kotlin
