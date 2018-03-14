@@ -14,5 +14,5 @@ The following information can be retrieved from the event:
 | ZenGetter   | Return Type                                                        |
 |-------------|--------------------------------------------------------------------|
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer)                                |
-| `output`    | [IItemStack](/Vanilla/Item/IItemStack)                             |
+| `output`    | [IItemStack](/Vanilla/Items/IItemStack)                            |
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory) |

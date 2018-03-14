@@ -15,7 +15,7 @@ The following information can be retrieved from the event:
 |-------------|-------------------------------------------|
 | `canceled`  | boolean                                   |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |
-| `item`      | [IItemStack](/Vanilla/Item/IItemStack)    |
+| `item`      | [IItemStack](/Vanilla/Items/IItemStack)   |
 
 ## ZenMethods
 

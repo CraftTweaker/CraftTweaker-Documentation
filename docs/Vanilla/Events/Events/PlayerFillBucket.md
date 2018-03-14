@@ -15,12 +15,12 @@ The following information can be retrieved from the event:
 |-------------|-------------------------------------------|
 | `canceled`  | boolean                                   |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |
-| `result`    | [IItemStack](/Vanilla/Item/IItemStack)    |
+| `result`    | [IItemStack](/Vanilla/Items/IItemStack)   |
 | `x`         | int                                       |
 | `y`         | int                                       |
 | `z`         | int                                       |
 | `world`     | [IWorld](/Vanilla/World/IWorld)           |
-| `block`     | [IBlock](/Vanilla/Block/IBlock)           |
+| `block`     | [IBlock](/Vanilla/Blocks/IBlock)          |
 | `dimension` | int                                       |
 
 ## ZenMethods

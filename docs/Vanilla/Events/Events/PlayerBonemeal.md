@@ -11,17 +11,19 @@ You can, of course, also [import](/AdvancedFunctions/Import) the class before an
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                               |
-|-------------|-------------------------------------------|
-| `canceled`  | boolean                                   |
-| `processed` | boolean                                   |
-| `x`         | int                                       |
-| `y`         | int                                       |
-| `z`         | int                                       |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |
-| `world`     | [IWorld](/Vanilla/World/IWorld)           |
-| `block`     | [IBlock](/Vanilla/Block/IBlock)           |
-| `dimension` | int                                       |
+| ZenGetter   | Return Type                                |
+|-------------|--------------------------------------------|
+| `canceled`  | boolean                                    |
+| `processed` | boolean                                    |
+| `x`         | int                                        |
+| `y`         | int                                        |
+| `z`         | int                                        |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)        |
+| `world`     | [IWorld](/Vanilla/World/IWorld)            |
+| `block`     | [IBlock](/Vanilla/Blocks/IBlock)           |
+| `blockState`| [IBlockState](/Vanilla/Blocks/IBlockState) |
+| `blockPos`  | [IBlockPos](/Vanilla/World/IBlockPos)      |
+| `dimension` | int                                        |
 
 ## ZenMethods
 
