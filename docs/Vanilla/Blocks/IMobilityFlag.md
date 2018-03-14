@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods
 #### Matches
-You can chek if two IMobilityFlag objects are equal:  
+You can check if two IMobilityFlag objects are equal:  
 Returns a bool.
 ```
 flagOne.matches(other);
