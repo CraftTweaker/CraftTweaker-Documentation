@@ -1,6 +1,6 @@
-# PlayerAttackEntity
+# 玩家攻击实体
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+这个事件在玩家攻击任意一个实体时候触发。
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
