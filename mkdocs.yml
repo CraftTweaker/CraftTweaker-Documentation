@@ -255,6 +255,7 @@ pages:
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
+      - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
@@ -431,6 +432,21 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - Sky Resources 2:
+      - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
+      - Recipes:
+        - Alchemical Fusion: 'Mods/Sky_Resources_2/Alchemical_Fusion.md'
+        - Alchemical Fusion Catalysts: 'Mods/Sky_Resources_2/Alchemical_Fusion_Catalysts.md'
+        - Cauldron Cleaning: 'Mods/Sky_Resources_2/Cauldron_Cleaning.md'
+        - Combustion: 'Mods/Sky_Resources_2/Combustion.md'
+        - Condenser: 'Mods/Sky_Resources_2/Condenser.md'
+        - Crucible: 'Mods/Sky_Resources_2/Crucible.md'
+        - Cutting Knife: 'Mods/Sky_Resources_2/Cutting_Knife.md'
+        - Freezer: 'Mods/Sky_Resources_2/Freezer.md'
+        - Heat Sources: 'Mods/Sky_Resources_2/Heat_Sources.md'
+        - Life Infusion: 'Mods/Sky_Resources_2/Life_Infusion.md'
+        - Rock Grinder: 'Mods/Sky_Resources_2/Rock_Grinder.md'
+        - Water Extractor: 'Mods/Sky_Resources_2/Water_Extractor.md'
     - Rocky Core:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
