@@ -55,7 +55,7 @@ pages:
       - 材料: 'Vanilla/Blocks/IMaterial.md'
       - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
-      - 创造模式物品栏: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - 物品: 'Vanilla/Brackets/Bracket_Item.md'
       - 实体: 'Vanilla/Brackets/Bracket_Entity.md'
@@ -174,18 +174,18 @@ pages:
   - 模组支持:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
       - RecipeBuilder:
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
         - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
         - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
-    - Astral Sorcery:
-      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
-      - Crafting:
-        - Altar: 'Mods/Astral_Sorcery/Altar.md'
-        - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
-        - Light-Well: 'Mods/Astral_Sorcery/Well.md'
+    - 星辉魔法:
+      - 关于星辉魔法: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - 合成:
+        - 祭坛: 'Mods/Astral_Sorcery/Altar.md'
+        - 砂轮: 'Mods/Astral_Sorcery/Grindstone.md'
+        - 聚星缸: 'Mods/Astral_Sorcery/Well.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
     - ContentTweaker:
@@ -256,15 +256,15 @@ pages:
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
     - GameStages:
-      - Introduction: 'Mods/GameStages/GameStages.md'
+      - 介绍: 'Mods/GameStages/GameStages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-    - Immersive Engineering:
-      - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
+    - 沉浸工程:
+      - 沉浸工程: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
         - Arc Furnace:
           - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
