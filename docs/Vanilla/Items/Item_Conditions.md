@@ -108,7 +108,7 @@ item.withTag(NBTTag);
 You can also add your own itemConditions. These are special functions that accept the [item](IItemStack) itself as single parameter.
 
 ```
-transformedItem = item.transform(function(item) {return true;});
+conditionedItem = item.only(function(item) {return true;});
 ```
 
 The function needs to return a bool that is true if the item matches the condition.
