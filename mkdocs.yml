@@ -206,19 +206,19 @@ pages:
           - 流体: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - 物品: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - 食物: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality:
-          - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
-          - Functions:
-            - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
-            - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
-            - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
-            - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
-            - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
-            - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
-            - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
-            - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
-            - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
+        - 高级功能:
+          - 命令: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - 功能:
+            - 行为结果: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
+            - 方块行为: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - 颜色提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
+            - 物品破坏方块: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
+            - 物品破坏速度: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - 获取容器物品: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
+            - 物品右击: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - 物品堆提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
+            - 物品使用: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - 资源位置提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - 类型:
           - 方块:
             - 朝向: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
@@ -267,11 +267,11 @@ pages:
       - 沉浸工程: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - 沉浸工程变量:
         - 电弧炉:
-          - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
+          - 特殊合成类型: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
         - 蓝图:
-          - Categories: 'Mods/Immersive_Engineering/Variables/Categories.md'
+          - 类别: 'Mods/Immersive_Engineering/Variables/Categories.md'
       - CraftTweaker 支持:
-        - Alloy Smelter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
+        - 合金窑: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
         - 电弧炉: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
         - 高炉: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blast_Furnace.md'
         - 蓝图: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blueprint.md'
@@ -287,19 +287,19 @@ pages:
         - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
         - 炼油厂: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
         - 挤压机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
-    - Immersive Petroleum:
-      - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
+    - 沉浸原油:
+      - 沉浸原油: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
       - CraftTweaker 支持:
         - 精馏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
-        - Fuel Registration: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - 燃料注册: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
         - 润滑油: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
-        - Reservoir: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
+        - 油藏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
-      - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
-      - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
-      - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
-      - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
+      - 生物质炉: 'Mods/Industrial_Foregoing/BioReactor.md'
+      - 镭射钻: 'Mods/Industrial_Foregoing/LaserDrill.md'
+      - 污泥精炼机: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
+      - 蛋白质反应器: 'Mods/Industrial_Foregoing/ProteinReactor.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -336,17 +336,17 @@ pages:
         - 原油发电机: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
         - 藏宝箱: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
-        - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
+        - 钢砧: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
-        - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - 釜锅: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
+        - 坩埚: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
-        - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
-        - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
-        - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
-        - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
-        - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
-        - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - 窑: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
+        - 磨石: 'Mods/Modtweaker/BetterWithMods/Mill.md'
+        - 锯: 'Mods/Modtweaker/BetterWithMods/Saw.md'
+        - 釜锅猛火: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
+        - 坩埚猛火: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
+        - 螺杆旋转台: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
       - 植物魔法:
         - 命令: 'Mods/Modtweaker/Botania/Commands.md'
         - 植物魔法辞典: 'Mods/Modtweaker/Botania/Lexicon.md'
@@ -359,7 +359,7 @@ pages:
           - 花瓣炼制: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - 白雏菊: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - 符文祭坛: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
-      - 更多使用设备 2:
+      - 更多实用设备 2:
         - 破碎机: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - 共振仪: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
       - 林业:
@@ -370,12 +370,12 @@ pages:
         - 榨汁机: 'Mods/Modtweaker/Forestry/Squeezer.md'
         - 蒸馏器: 'Mods/Modtweaker/Forestry/Still.md'
         - 热电子加工台: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
-      - Refined Storage精致存储:
+      - 精致存储（Refined Storage）:
         - 合成表:
           - 压印器: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - 匠魂:
         - 命令: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets:
+        - 尖括弧引用:
           - 材料: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - 合金: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - 浇铸: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -387,17 +387,17 @@ pages:
         - 冶炼炉燃料: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
-        - Handlers:
-          - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
-          - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
-      - Thermal Expansion:
+        - 处理器:
+          - 黑名单: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
+          - 重载: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+      - 热力膨胀:
         - 药水酿造机: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
-        - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
-        - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
+        - 附魔器: 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
+        - 离心机: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - 压缩机: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
         - 能量灌注机: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
         - 流体转置机: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
-        - 流体混合机(Refinery): 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - 流体精炼机: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - 感应炉: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
         - 熔岩炉: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
         - 红石炉: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
@@ -413,10 +413,10 @@ pages:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-    - PneumaticCraft&#58; Repressurized（气动工艺）:
-      - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
-        - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+    - PneumaticCraft Repressurized（气动工艺）:
+      - 气动工艺简介: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+      - 合成:
+        - 装配系统: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
