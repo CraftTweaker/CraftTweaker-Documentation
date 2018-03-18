@@ -27,8 +27,8 @@ val myAssocArray = {
 
 - 你可以使用 Zenscript 中的所有类型来作为键或值。
 - 你不能使用数组作为键，来遍历一个关联数组。
-- You cannot use the 2-Variable Iterator when iterating over an Array that uses Arrays as values.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- 你不能使用2个变量的遍历方法遍历使用数组作为值的数组。
+- 你不可以用变量作为声明数组的键（使用`{}`的那个），因为纯文本将会被解释成字符串！
 
 
 ## 在关联数组中访问元素。
