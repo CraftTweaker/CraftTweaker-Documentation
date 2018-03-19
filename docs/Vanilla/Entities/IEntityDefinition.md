@@ -1,61 +1,61 @@
-# IEntityDefinition
+# 实体定义
 
-This sounds scary, so what does it mean?
-Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
+这听上去有点可怕，它到底是什么意思呢？
+基本上，他引用了一个在游戏中注册了的实体。所以可以说它引用游戏了中的一个生物。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明 [数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.entity.IEntityDefinition;`
 
-## Calling an IEntityDefinition Object
+## 获取实体定义对象
 ```
-//These return an IEntityDefinition Object
+//这些将返回实体定义对象
 val test = <entity:minecraft:sheep>;
 val test2 = game.getEntity("sheep");
 
 ```
 
-## Functions
-So, this is where it gets interesting:
-What can we do with it, now that we created that thing?
+## 函数
+事情从这里开始变得有趣了:
+既然我们已经获取了这个对象，我们能用它来干些什么?
 
 ### id
 
-Returns the ID as string
+以字符串形式返回ID
 ```
-//returns "net.minecraft.entity.passive.EntitySheep"
+//返回 "net.minecraft.entity.passive.EntitySheep"
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### 名称
 
-Returns the name as string
+以字符串形式返回名称
 ```
-//returns "Sheep"
+//返回 "Sheep"
 <entity:minecraft:sheep>.name;
 ```
 
-## Drops
+## 掉落物
 
-We can even add and/or remove mob drops, isn't that great?
+我们甚至可以增加和/或移除生物的掉落物。这不是很棒吗？
 
-### Add normal Drop
+### 常见掉落物
 
-This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
+以下方法将加入常见掉落物。常见掉落物是指无论用何种方法杀死这个生物都有可能掉落这种物品。T
 ```
 val entity = <entity:minecraft:sheep>;
 
-//addDrop(item,min,max,chance);
+//addDrop(物品,最小,最大,几率);
 entity.addDrop(<minecraft:apple>);
 
-//addDrop(weightedItem, min, max);
+//addDrop(加权物品堆,最小,最大);
 entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack).  
-`min` is the minimum amount that is dropped and an Integer. This is optional.  
-`max` is the maximum amount that is dropped and an Integer. This is optional.  
-`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack) instead as `item`
+`物品` 是被加入作为掉落物的物品，类型为[物品堆](/Vanilla/Items/IItemStack)或者[加权物品堆](/Vanilla/Items/WeightedItemStack).  
+`最小` 是最少掉落物品的数量，类型为整数。它是可选参数。
+`最大` 是最多掉落物品的数量，类型为整数。它是可选参数。
+`几率` 是掉落物品的概率。它是可选参数。如果使用[加权物品堆](/Vanilla/Items/WeightedItemStack)而不是`物品`则不需要这个变量
 
 ### Add playeronly drop
 
