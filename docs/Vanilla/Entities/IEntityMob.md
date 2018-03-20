@@ -1,19 +1,19 @@
-# IEntityMod
+# 怪物
 
-A Mod.
+就是游戏中的怪物。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明 [数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。  
 `import crafttweaker.entity.IEntityMob;`
 
-## Extending [IEntityCreature](IEntityCreature)
-IEntityMob extends [IEntityCreature](IEntityCreature). That means all functions available to [IEntityCreature](IEntityCreature) objects also are available to IEntityMob.
+## 继承自[生物](IEntityCreature)
+怪物继承自[生物](IEntityCreature)。这意味着所有[生物](IEntityCreature)对象函数，均可在怪物对象上使用。
 
-## Methods
+## 方法
 ### ZenMethods
-#### Check if the mob is preventing a player's sleep
-The Method requires an [IPlayer](/Vanilla/Players/IPlayer) object.  
-Returns a bool.
+#### 检查这个怪物是否会禁止玩家睡觉
+这个方法需要传入一个[玩家](/Vanilla/Players/IPlayer)对象。   
+返回一个布尔值。
 ```
 entMobObj.isPreventingPlayerRest(IPlayer player);
 ```
