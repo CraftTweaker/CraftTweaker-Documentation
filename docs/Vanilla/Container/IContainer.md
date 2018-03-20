@@ -7,6 +7,7 @@ An IContainer is an item container that is able to hold several itemStacks such 
 - `container.containerSize` returns the container size as int
 - `container.getStack(int index)` returns the [IItemStack](/Vanilla/Items/IItemStack) at the given index.
 - `container.setStack(int index, IItemStack stack)` sets the [IItemStack](/Vanilla/Items/IItemStack) at the given index.
+- `container.asString()` `container as string` executes `toString` on the container object.
 
 ## Iterable<IItemStack\>
 

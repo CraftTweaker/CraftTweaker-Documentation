@@ -166,6 +166,12 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 | `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
 | `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos) |
 
+#### create IEntityItem
+| Method call                                                  | Returns                                                                                                    | Parameter Types                                                        |
+|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), int, int, int                         |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), [IBlockPos](/Vanilla/World/IBlockPos) |
+
 
 ## ItemTransformers and ItemConditions
 You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  

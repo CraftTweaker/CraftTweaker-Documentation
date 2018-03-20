@@ -49,3 +49,4 @@ val itemDefinitionList = game.items;
 - `def.makeStack(meta);` Creates an [IItemStack](IItemStack) with the given metadata. Metadata is an int and OPTIONAL.
 - `def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level
 - `def.getSubItems(creativeTab);` Returns a List<[IItemStack](IItemStack)\> with all subitems for the given [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab).
+- `def.getItemBurntime(item);` Returns an int representing either -1 (Vanilla logic will apply), 0 (Not smeltable) or the items burntime

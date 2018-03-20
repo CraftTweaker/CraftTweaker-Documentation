@@ -86,6 +86,10 @@ pages:
       - Events: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
       - Events:
+        - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
+        - IEventPositionable: 'Vanilla/Events/Events/IEventPositionable.md'
+        - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
+        - IProcessableEvent: 'Vanilla/Events/Events/IProcessableEvent.md'
         - PlayerAttackEntity: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemeal: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerChangedDimension: 'Vanilla/Events/Events/PlayerChangedDimension.md'
@@ -160,6 +164,7 @@ pages:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
+      - IRayTraceResult: 'Vanilla/World/IRayTraceResult.md'
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'

@@ -44,12 +44,12 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerInteractEntity   | [crafttweaker.event.PlayerInteractEntityEvent](Events/PlayerInteractEntity)     | ✘                    |
 | onPlayerPickup           | [crafttweaker.event.PlayerPickupEvent](Events/PlayerPickupEntity)               | ✘                    |
 | onPlayerPickupItem       | [crafttweaker.event.PlayerPickupItemEvent](Events/PlayerPickupItem)             | ✔                    |
-| onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](Events/PlayerFillBucket)             | ✘                    |
-| onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](Events/PlayerDeathDrops)             | ✘                    |
+| onPlayerFillBucket       | [crafttweaker.event.PlayerFillBucketEvent](Events/PlayerFillBucket)             | ✔                    |
+| onPlayerDeathDrops       | [crafttweaker.event.PlayerDeathDropsEvent](Events/PlayerDeathDrops)             | ✔                    |
 | onPlayerInteract         | [crafttweaker.event.PlayerInteractEvent](Events/PlayerInteract)                 | ✔                    |
-| onPlayerOpenContainer    | [crafttweaker.event.PlayerOpenContainerEvent](Events/PlayerOpenContainer)       | ✘                    |
+| onPlayerOpenContainer    | [crafttweaker.event.PlayerOpenContainerEvent](Events/PlayerOpenContainer)       | ✔                    |
 | onPlayerPickupXp         | [crafttweaker.event.PlayerPickupXpEvent](Events/PlayerPickupXp)                 | ✘                    |
-| onPlayerSleepInBed       | [crafttweaker.event.PlayerSleepInBedEvent](Events/PlayerSleepInBed)             | ✘                    |
-| onPlayerUseHoe           | [crafttweaker.event.PlayerUseHoeEvent](Events/PlayerUseHoe)                     | ✘                    |
+| onPlayerSleepInBed       | [crafttweaker.event.PlayerSleepInBedEvent](Events/PlayerSleepInBed)             | ✔                    |
+| onPlayerUseHoe           | [crafttweaker.event.PlayerUseHoeEvent](Events/PlayerUseHoe)                     | ✔                    |
 | onPlayerUseItemStart     | [crafttweaker.event.PlayerUseItemStartEvent](Events/PlayerUseItemStart)         | ✘                    |
 | onPlayerUseItemTick      | [crafttweaker.event.PlayerUseItemTickEvent](Events/PlayerUseItemTick)           | ✘                    |
