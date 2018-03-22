@@ -2,12 +2,12 @@
 
 ## Information
 
-From The Ground Up adds a research tree to the game. It has built in support to allow either stages to but unlocked once you complete
-a research or have a research unavailable until a certain stage is achived!
+From The Ground Up adds a research tree to the game. It has built in support to allow either stages to be unlocked once you complete
+a research or have a research unavailable until a certain stage is achieved!
 
 ## Research Locked Until Stage Achieved
 
-To check if a stage is achieve you simply need to add "stage": "gamestageName".
+To check if a stage is achieve you simply need to add ""stage": "gamestageName"".
 
 ```
 {
@@ -35,7 +35,7 @@ To check if a stage is achieve you simply need to add "stage": "gamestageName".
 
 ## Unlock Stage with Research
 
-Inside the JSON you need to declare "type": "gamestages:stage". Then "stage": "name of the stage you want to unlock", and optionally a message.
+Inside the JSON you need to declare ""type": "gamestages:stage"". Then ""stage": "name of the stage you want to unlock"", and optionally a message.
 
 ```
 "unlock": [
