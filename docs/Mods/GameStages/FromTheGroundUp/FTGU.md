@@ -37,7 +37,8 @@ To check if a stage is achieve you simply need to add "stage": "gamestageName".
 
 Inside the JSON you need to declare "type": "gamestages:stage". Then "stage": "name of the stage you want to unlock", and optionally a message.
 
-```"unlock": [
+```
+"unlock": [
 	{ 
 		"type": "gamestages:stage", 
 		"stage": "stageName", 
