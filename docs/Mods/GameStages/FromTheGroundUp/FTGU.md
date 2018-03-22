@@ -43,4 +43,5 @@ Inside the JSON you need to declare "type": "gamestages:stage". Then "stage": "n
 		"stage": "stageName", 
 		"message": "custom message when the tech is researched (OPTIONAL)" 
 	}
-]```
+]
+```
