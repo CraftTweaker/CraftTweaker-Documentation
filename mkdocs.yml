@@ -445,7 +445,7 @@ pages:
         - Life Infusion: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
         - Rock Grinder: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
-    - Survivalist
+    - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - Rocky Core:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
