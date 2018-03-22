@@ -7,7 +7,7 @@ a research or have a research unavailable until a certain stage is achieved!
 
 ## Research Locked Until Stage Achieved
 
-To check if a stage is achieve you simply need to add ""stage": "gamestageName"".
+To check if a stage is achieve you simply need to add "`"stage": "gamestageName"`".
 
 ```
 {
@@ -35,7 +35,7 @@ To check if a stage is achieve you simply need to add ""stage": "gamestageName""
 
 ## Unlock Stage with Research
 
-Inside the JSON you need to declare ""type": "gamestages:stage"". Then ""stage": "name of the stage you want to unlock"", and optionally a message.
+Inside the JSON you need to declare "`"type": "gamestages:stage"`". Then "`"stage": "name of the stage you want to unlock"`", and optionally a message.
 
 ```
 "unlock": [
