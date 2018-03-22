@@ -246,6 +246,7 @@ pages:
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
+      - From The Ground Up: 'Mods/GameStages/FromTheGroundUp/FTGU.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
@@ -444,6 +445,8 @@ pages:
         - Life Infusion: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
         - Rock Grinder: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
+    - Survivalist:
+      - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - Rocky Core:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
