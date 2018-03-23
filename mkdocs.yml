@@ -120,7 +120,7 @@ pages:
       - 客户端: 'Vanilla/Game/IClient.md'
       - 游戏: 'Vanilla/Game/IGame.md'
       - 服务端: 'Vanilla/Game/IServer.md'
-      - 模组: 'Vanilla/Game/Mods.md'
+      - 加载的模组: 'Vanilla/Game/Mods.md'
     - 物品:
       - 物品定义: 'Vanilla/Items/IItemDefinition.md'
       - 物品堆: 'Vanilla/Items/IItemStack.md'
