@@ -1,38 +1,38 @@
-# LoadedMods
+# 加载的模组
 
-You can use the [global keyword](/Vanilla/Global_Functions) `loadedMods` to access all currently loaded mods.  
-If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
+你可以使用[全局函数](/Vanilla/Global_Functions) `loadedMods` 以访问所有现在加载的模组。
+使用`import crafttweaker.mods.ILoadedMods;`以导入相关包
 
-## Check if a mod is loaded
+## 检测一个模组是否被加载
 
-Use the `in` function to check if a mod is loaded;  
-You can also use the `contains` method:
+使用`in`函数以检测一个模组是否被加载 ;  
+你也可以使用`contains`方法:
 ```
-//if MinecraftCoderPack is loaded
+//如果MinecraftCoderPack被加载
 if(loadedMods in "mcp"){
 	print("success!");
 }
 
-//if MinecraftCoderPack is loaded
+//如果MinecraftCoderPack被加载
 if(loadedMods.contains("mcp")){
 	print("success!!!");
 }
 ```
 
-## Retrieve a specific mod
-You can retrieve a specific mod as IMod as long as you have it's ID
+## 检索指定的模组
+只要你有模组的ID，你可以检索一个指定的模组，将返回IMod对象。
 
 ```
-//retrieves the minecraftCoderPack mod
+//检索minecraftCoderPack模组
 val mod = loadedMods["mcp"];
 ```
 
-## Iterate through the modList
-You can iterate through the lost of loaded mods like this:
+## 遍历模组列表
+你可以用以下方法遍历所有加载的模组：
 
 ```
-//prints all registred item definitions, not recommended in larger packs!
-//the mod variable will be an IMod type
+//打印所有注册的实体定义，不推荐在大型模组整合包里使用！
+//mod变量是IMod类型的
 for mod in loadedMods {
 	print(mod.name ~ ":");
 	for item in mod.items {
@@ -44,13 +44,13 @@ for mod in loadedMods {
 
 
 # IMod
-The IMod Interface provides you with some general information on a specific mod.  
-If needed, it can be imported using `import crafttweaker.mods.IMod;`
+IMod接口给你提供了一些关于模组的基本信息。 
+如果需要，使用`import crafttweaker.mods.IMod;`导入相关包
 
-| Zengetter   | What does it do                    | Return Type                               | Usage             |
+| Zengetter   | 它的作用                            | 返回值类型                                 | 用法              |
 |-------------|------------------------------------|-------------------------------------------|-------------------|
-| id          | Returns the mod's id               | string                                    | `mod.id`          |
-| name        | Returns the mod's internal name    | string                                    | `mod.name`        |
-| version     | Returns the mod's version          | string                                    | `mod.version`     |
-| description | Returns the mod description        | string                                    | `mod.description` |
-| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack)[] | `mod.items`       |
+| id          | 返回模组ID                          | 字符串                                    | `mod.id`          |
+| name        | 返回模组的内置名称                   | 字符串                                    | `mod.name`        |
+| version     | 返回模组的版本                      | 字符串                                    | `mod.version`     |
+| description | 返回模组简介                        | 字符串                                    | `mod.description` |
+| items       | 返回这个模组添加的所有物品           | [物品堆](/Vanilla/Items/IItemStack)        | `mod.items`       |
