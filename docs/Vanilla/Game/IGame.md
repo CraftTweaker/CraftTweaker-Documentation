@@ -34,11 +34,11 @@ val sheep1 = <entity:minecraft:sheep>;
 
 设置本地化。 
 参数均为字符串。
-`game.setLocalization(key, 值);`  
-`game.setLocalization(语言, key, 值);`
+`game.setLocalization(key, value);`  
+`game.setLocalization(lang, key, value);`
 
 ### 本地化
 
 返回本地化的字符串。
 `game.localize(key)`  
-`game.localize(key, 语言)`
+`game.localize(key, lang)`
