@@ -7,8 +7,11 @@ That means you can use the getter below to access the player.
 It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
 `import crafttweaker.event.IPlayerEvent;`
 
+## Extending ILivingEvent
+This interface extends [ILivingEvent](ILivingEvent), which means that all functionality that ILivingEvent offers is also present in IPlayerEvent
+
 ## ZenGetters
 
 | name   | type                                     |
 |--------|------------------------------------------|
-| player | [IPlayer](/Crafttweaker/Players/IPlayer) |
+| player | [IPlayer](/Vanilla/Players/IPlayer)      |

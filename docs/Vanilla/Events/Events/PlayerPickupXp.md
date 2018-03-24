@@ -21,7 +21,7 @@ The following information can be retrieved from the event:
 |-------------|-------------------------------------------|
 | `canceled`  | boolean                                   |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer)       |
-| `entity`    | [IEntityXp](/Vanilla/Entities/IEntityXp)  |
+| `entityXp`  | [IEntityXp](/Vanilla/Entities/IEntityXp)  |
 | `xp`        | float                                     |
 
 ## ZenMethods

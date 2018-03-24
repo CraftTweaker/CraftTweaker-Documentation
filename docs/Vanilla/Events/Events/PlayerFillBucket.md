@@ -29,6 +29,7 @@ The following information can be retrieved from the event:
 | `y`              | int                                                 |
 | `z`              | int                                                 |
 | `world`          | [IWorld](/Vanilla/World/IWorld)                     |
+| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState)          |
 | `block`          | [IBlock](/Vanilla/Blocks/IBlock)                    |
 | `dimension`      | int                                                 |
 | `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult)   |

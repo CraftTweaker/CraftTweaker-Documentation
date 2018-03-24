@@ -11,6 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import) the class before an
 PlayerInteractEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](IEventCancelable)
+- [PlayerInteract](PlayerInteract)
 - [IPlayerEvent](IPlayerEvent)
 
 
