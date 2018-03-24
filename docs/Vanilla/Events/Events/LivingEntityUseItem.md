@@ -7,7 +7,7 @@ Since that would be called far too often, there are 4 subEvents that are only ca
 It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
 ```
 //Base Event
-import crafttweaker.event.LivingEntityUseItemEvent;
+import crafttweaker.event.LivingEntityUseItemEvent.All;
 
 //Specific Events
 import crafttweaker.event.LivingEntityUseItemEvent.Start;
