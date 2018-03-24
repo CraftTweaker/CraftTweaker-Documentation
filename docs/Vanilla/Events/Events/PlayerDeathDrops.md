@@ -1,6 +1,6 @@
 # PlayerDeathDrops
 
-The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to his/her death.
+The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
