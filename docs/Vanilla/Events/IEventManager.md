@@ -40,11 +40,11 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityLivingFall              | [`crafttweaker.event.EntityLivingFallEvent`](/Vanilla/Events/Events/EntityLivingFall)                     |
 | onEntityLivingHurt              | [`crafttweaker.event.EntityLivingHurtEvent`](/Vanilla/Events/Events/EntityLivingHurt)                     |
 | onEntityLivingJump              | [`crafttweaker.event.EntityLivingJumpEvent`](/Vanilla/Events/Events/EntityLivingJump)                     |
-| onEntityLivingUseItem           | [`crafttweaker.event.LivingEntityUseItemEvent`](/Vanilla/Events/Events/LivingEntityUseItem)               |
-| onEntityLivingUseItemFinish     | [`crafttweaker.event.LivingEntityUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem)        |
-| onEntityLivingUseItemStart      | [`crafttweaker.event.LivingEntityUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem)         |
-| onEntityLivingUseItemStop       | [`crafttweaker.event.LivingEntityUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem)          |
-| onEntityLivingUseItemTick       | [`crafttweaker.event.LivingEntityUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem)          |
+| onEntityLivingUseItem           | [`crafttweaker.event.EntityLivingUseItemEvent.All`](/Vanilla/Events/Events/LivingEntityUseItem)           |
+| onEntityLivingUseItemFinish     | [`crafttweaker.event.EntityLivingUseItemEvent.Finish`](/Vanilla/Events/Events/LivingEntityUseItem)        |
+| onEntityLivingUseItemStart      | [`crafttweaker.event.EntityLivingUseItemEvent.Start`](/Vanilla/Events/Events/LivingEntityUseItem)         |
+| onEntityLivingUseItemStop       | [`crafttweaker.event.EntityLivingUseItemEvent.Stop`](/Vanilla/Events/Events/LivingEntityUseItem)          |
+| onEntityLivingUseItemTick       | [`crafttweaker.event.EntityLivingUseItemEvent.Tick`](/Vanilla/Events/Events/LivingEntityUseItem)          |
 | onEntityStruckByLightning       | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning)       |
 | onItemExpire                    | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire)                                 |
 | onItemToss                      | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss)                                     |
