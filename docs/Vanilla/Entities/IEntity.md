@@ -69,6 +69,15 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | x                           | getX()              | double                                       |
 | y                           | getY()              | double                                       |
 | z                           | getZ()              | double                                       |
+| motionX                     |                     | double                                       |
+| motionY                     |                     | double                                       |
+| motionZ                     |                     | double                                       |
+| posX                        |                     | double                                       |
+| posY                        |                     | double                                       |
+| posZ                        |                     | double                                       |
+| rotationYaw                 |                     | float                                        |
+| rotationPitch               |                     | float                                        |
+| lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d)        |
 
 
 ## ZenSetters
@@ -89,6 +98,14 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | isSneaking                  |                     | boolean                                      |
 | isSprinting                 |                     | boolean                                      |
 | position                    | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos)        |
+| rotationYaw                 |                     | float                                        |
+| rotationPitch               |                     | float                                        |
+| motionX                     |                     | double                                       |
+| motionY                     |                     | double                                       |
+| motionZ                     |                     | double                                       |
+| posX                        |                     | double                                       |
+| posY                        |                     | double                                       |
+| posZ                        |                     | double                                       |
 
 
 ## More ZenMethods

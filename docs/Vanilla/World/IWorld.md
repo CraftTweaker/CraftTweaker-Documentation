@@ -68,3 +68,10 @@ Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState), setter a bool.
 worldObj.getBlockState(IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IBlockPos pos);
 ```
+
+### Spawn entity
+Use an [IEntity](/Vanilla/Entities/IEntity) object.  
+Returns a bool that states if the spawn was successful.
+```
+worldObj.spawnEntity(IEntity entity);
+```

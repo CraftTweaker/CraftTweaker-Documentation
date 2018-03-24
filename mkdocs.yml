@@ -52,6 +52,8 @@ pages:
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
       - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
     - Commands:
+      - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
+      - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
     - Container: 
       - IContainer: 'Vanilla/Container/IContainer.md'
@@ -177,6 +179,7 @@ pages:
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
       - IRayTraceResult: 'Vanilla/World/IRayTraceResult.md'
+      - IVector3d: 'Vanilla/World/IVector3d.md'
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
