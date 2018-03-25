@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 |ZenGetter                  | Return Type                                                          | Description                                             |
 |---------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
 |canProvidePower            | bool                                                                 | Returns if the refered block can provide Redstone Power |
-|mobilityFlag               | string                                                               | Returns the [mobility flag](MobilityFlag) as string     |
+|mobilityFlag               | string                                                               | Returns the [mobility flag](IMobilityFlag) as string    |
 |material                   | [IMaterial](IMaterial)                                               | Returns the block's [material](IMaterial)               |
 |causesSuffocation          | bool                                                                 | Returns whether the block can choke you.                |
 |hasCustomBreakingProgress  | bool                                                                 |                                                         |

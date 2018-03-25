@@ -33,6 +33,8 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 
 | ZenMethod                       | Event Class                                                                                               |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------|
+| onBlockBreak                    | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak)                                      |
+| onBlockHarvestDrops             | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops)                        |
 | onEnderTeleport                 | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport)                           |
 | onEntityLivingAttacked          | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked)             |
 | onEntityLivingDeath             | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath)                   |
@@ -48,11 +50,15 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityStruckByLightning       | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning)       |
 | onItemExpire                    | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire)                                 |
 | onItemToss                      | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss)                                     |
+| onPlayerAnvilRepair             | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair)                        |
 | onPlayerAttackEntity            | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity)                 |
 | onPlayerBonemeal                | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal)                         |
+| onPlayerBreakSpeed              | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed)                          |
+| onPlayerBrewedPotion            | [`crafttweaker.event.PlayerBrewedPotion`](/Vanilla/Events/Events/PlayerBrewedPotion)                      |
 | onPlayerChangedDimension        | [`crafttweaker.event.PlayerChangedDimensionEvent`](/Vanilla/Events/Events/PlayerChangedDimension)         |
 | onPlayerCrafted                 | [`crafttweaker.event.PlayerCraftedEvent`](/Vanilla/Events/Events/PlayerCrafted)                           |
 | onPlayerDeathDrops              | [`crafttweaker.event.PlayerDeathDropsEvent`](/Vanilla/Events/Events/PlayerDeathDrops)                     |
+| onPlayerDestroyItem             | [`crafttweaker.event.PlayerDestroyItem`](/Vanilla/Events/Events/PlayerDestroyItem)                        |
 | onPlayerFillBucket              | [`crafttweaker.event.PlayerFillBucketEvent`](/Vanilla/Events/Events/PlayerFillBucket)                     |
 | onPlayerInteract                | [`crafttweaker.event.PlayerInteractEvent`](/Vanilla/Events/Events/PlayerInteract)                         |
 | onPlayerInteractEntity          | [`crafttweaker.event.PlayerInteractEntityEvent`](/Vanilla/Events/Events/PlayerInteractEntity)             |
@@ -62,8 +68,15 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerPickupItem              | [`crafttweaker.event.PlayerPickupItemEvent`](/Vanilla/Events/Events/PlayerPickupItem)                     |
 | onPlayerPickupXp                | [`crafttweaker.event.PlayerPickupXpEvent`](/Vanilla/Events/Events/PlayerPickupXp)                         |
 | onPlayerRespawn                 | [`crafttweaker.event.PlayerRespawnEvent`](/Vanilla/Events/Events/PlayerRespawn)                           |
+| onPlayerRightClickBlock         | [`crafttweaker.event.PlayerRightClickBlock`](/Vanilla/Events/Events/PlayerRightClickBlock)                |
+| onPlayerSetSpawn                | [`crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn)                              |
 | onPlayerSleepInBed              | [`crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed)                     |
 | onPlayerSmelted                 | [`crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted)                           |
+| onPlayerTick                    | [`crafttweaker.event.PlayerTick`](/Vanilla/Events/Events/PlayerTick)                                      |
 | onPlayerUseHoe                  | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe)                             |
 
 
+## Clear all event handlers
+```
+events.clear();
+```
