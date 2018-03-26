@@ -6,8 +6,9 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | Token Value | TokenName     | Token String                                              |
 |-------------|---------------|-----------------------------------------------------------|
 | 1           | T_ID          | `[a-zA-Z_][a-zA-Z_0-9]*`                                  |
-| 2           | T_INTVALUE    | `-?(0|[1-9][0-9]*) `                                      |
-| 3           | T_FLOATVALUE  | `-?(0|[1-9][0-9]*)\.[0-9]+([eE][\+\-]?[0-9]+)?`           |
+| 2           | T_INTVALUE    | `\-?(0|[1-9][0-9]*)`                                      |
+| 2           | T_INTVALUE    | `0x[a-fA-F0-9]*)`                                         |
+| 3           | T_FLOATVALUE  | `\-?(0|[1-9][0-9]*)\.[0-9]+([eE][\+\-]?[0-9]+)?[fFdD]?`   |
 | 4           | T_STRINGVALUE | `'([^'\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*'`            |
 | 4           | T_STRINGVALUE | `"([^"\\]|\\(['"\\/bfnrt]|u[0-9a-fA-F]{4}))*"`            |
 | 5           | T_AOPEN       | `{`                                                       |
@@ -72,6 +73,8 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 125         | T_RETURN      | `return`                                                  |
 | 126         | T_VAR         | `var`                                                     |
 | 127         | T_VAL         | `val`                                                     |
+| 127         | T_WHILE       | `while`                                                   |
+| 127         | T_BREAK       | `break`                                                   |
 | 140         | T_NULL        | `null`                                                    |
 | 141         | T_TRUE        | `true`                                                    |
 | 142         | T_FALSE       | `false`                                                   |
