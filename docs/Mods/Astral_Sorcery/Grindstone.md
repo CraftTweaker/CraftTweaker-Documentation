@@ -4,7 +4,7 @@
 
 
 ## 导入
-使用`mods.astralsorcery.Grindstone`以导入相关包。
+使用`mods.astralsorcery.Grindstone`以导入砂轮相关包。
 
 ## 移除
 这个方法移除第一个`输出`为传入的[物品堆](/Vanilla/Items/IItemStack)的合成。 
