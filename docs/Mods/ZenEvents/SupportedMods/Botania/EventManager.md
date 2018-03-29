@@ -12,4 +12,4 @@ None of these events returns anything (they all are void functions).
 
 | EventCall                        | EventType                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------|
-| onBotaniaManaDiscount            | [`mods.botanua.ManaDiscountEvent`](Events/ManaDiscountEvent)                   |
+| onBotaniaManaDiscount            | [`mods.botania.ManaDiscountEvent`](Events/ManaDiscountEvent)                   |

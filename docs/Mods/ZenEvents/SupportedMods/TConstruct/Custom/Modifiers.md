@@ -16,7 +16,7 @@ val myModifier = mods.tconstruct.modifiers.custom.create("kindlich_test", 0xffaa
 ```
 
 For the color, it is suggested that you use the hexadecimal notation as shown above.  
-`maxLevel` is the maximum level the modifier can become, and will default to 0.
+`maxLevel` is the maximum level the modifier can become, and will default to 0.  
 `countPerLevel` is how many sublevels the modifier can have (like Redstone which has 50).
 
 

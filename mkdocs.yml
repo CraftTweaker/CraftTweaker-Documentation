@@ -464,6 +464,10 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - Rocky Core:
+      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
+      - Anvil: 'Mods/RockyCore/Anvil.md'
+      - Merchant: 'Mods/RockyCore/Merchant.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
       - Recipes:
@@ -481,10 +485,6 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-    - Rocky Core:
-      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
-      - Anvil: 'Mods/RockyCore/Anvil.md'
-      - Merchant: 'Mods/RockyCore/Merchant.md'
     - ZenEvents: 
       - ZenEvents: 'Mods/ZenEvents/ZenEvents.md'
       - BloodMagic:
@@ -507,6 +507,11 @@ pages:
       - TConstruct: 
         - Custom:
           - Custom Modifiers: 'Mods/ZenEvents/SupportedMods/TConstruct/Custom/Modifiers.md'
+        - EventManager: 'Mods/ZenEvents/SupportedMods/TConstruct/EventManager.md'
+        - Events: 
+          - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'
+          - ProjectileLauchEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileLaunchEvent.md'
+          - TinkerCraftingEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerEvent.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
