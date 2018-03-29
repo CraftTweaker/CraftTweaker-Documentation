@@ -17,3 +17,6 @@ server.isOP(player);
 
 ## Get the command manager
 You can use this to get the [ICommandManager](/Vanilla/Commands/ICommandManager)
+```
+server.commandManager;
+```
