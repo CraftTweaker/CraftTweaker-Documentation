@@ -22,7 +22,9 @@
 如果有多个合成表可以合成传入的物品，你需要多次使用这个方法。
 
 ```JAVA
-//mods.astralsorcery.Altar.removeAltarRecipe(物品堆 输出, 整数 祭坛等级);
+//mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
+//output：输出物品
+//altarLevel：祭坛等级
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
@@ -30,10 +32,10 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ## 添加祭坛合成
 
 所有添加合成表的的方法都需要以下参数：
-[物品堆](/Vanilla/Items/IItemStack) `输出`,  
-整数 `需要的星光`,  
-整数 `合成时间（刻）`,  
-[材料](/Vanilla/Variable_Types/IIngredient)[] `输入`
+[-[IItemStack](/Vanilla/Items/IItemStack) `output`,  
+-int `starlightRequired`,  
+-int `craftingTickTime`,  
+-[IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs`
 
 不像工作台合成配方，`输入`参数是一维数组。
 你可以使用[物品堆](/Vanilla/Items/IItemStack), [流体堆](/Vanilla/Liquids/ILiquidStack), [矿物词典条目](/Vanilla/OreDict/IOreDictEntry) 或者 `null` 作为数组的条目。
@@ -106,7 +108,11 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(<astralsorcery:itemcrafting
 ![Inputs Order](Assets/guialtar4.png)
 
 ```JAVA
-//mods.astralsorcery.Altar.addTraitAltarRecipe(物品堆 输出,整数 星光,整数 合成所需时间（刻,材料[] 输入, @optional 字符串 需要的星座名称);
+//mods.astralsorcery.Altar.addTraitAltarRecipe(IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
+//output：输出物品
+//starlight：所需星能
+//craftTickTime：合成时间
+//iRequiredConstellationFocusName：可选参数，需要的星座名称
 
 mods.astralsorcery.Altar.addTraitAltarRecipe(<minecraft:tnt>, 4500, 100, [
 	<liquid:lava>, <liquid:lava>, <liquid:lava>,<liquid:lava>, <minecraft:gunpowder>, 
