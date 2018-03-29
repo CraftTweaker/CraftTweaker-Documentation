@@ -11,12 +11,15 @@
 如果有多个合成表可以合成传入的物品，你需要多次使用这个方法！
 
 ```JAVA
-//mods.astralsorcery.Grindstone.removeRecipe(物品堆 输出);
+//mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);
+//output：输出物品
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```
 
 ## 添加
 ```JAVA
-//mods.astralsorcery.Grindstone.addRecipe(物品堆 输入,物品堆 输出);
+//mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);
+//input：输入物品
+//output：输出物品
 mods.astralsorcery.Grindstone.addRecipe(<minecraft:stone>, <minecraft:gravel>);
 ```
