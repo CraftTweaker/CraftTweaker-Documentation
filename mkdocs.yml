@@ -485,6 +485,25 @@ pages:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
       - Merchant: 'Mods/RockyCore/Merchant.md'
+    - ZenEvents: 
+      - ZenEvents: 'Mods/ZenEvents/ZenEvents.md'
+      - BloodMagic:
+        - EventManager: 'Mods/ZenEvents/SupportedMods/BloodMagic/EventManager.md'
+        - Events: 
+          - AltarCraftedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/AltarCraftedEvent.md'
+          - BoundToolChargeEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolChargeEvent.md'
+          - BoundToolReleaseEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolReleaseEvent.md'
+          - ItemBindEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/ItemBindEvent.md'
+          - RitualEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/RitualEvent.md'
+          - SacrificialKnifeUsedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/SacrificialKnifeUsedEvent.md'
+          - TeleposeEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/TeleposeEvent.md'
+        - Special Types:
+          - MasterRitualStone: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/MasterRitualStone.md'
+          - Ritual: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual.md'
+      - Botania:
+        - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
+        - Events: 
+          - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
