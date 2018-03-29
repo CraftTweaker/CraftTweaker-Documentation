@@ -504,6 +504,9 @@ pages:
         - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
         - Events: 
           - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
+      - TConstruct: 
+        - Custom:
+          - Custom Modifiers: 'Mods/ZenEvents/SupportedMods/TConstruct/Custom/Modifiers.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
