@@ -3,7 +3,7 @@
 
 
 ## 导入
-使用`mods.astralsorcery.Altar`以导入相关包
+使用`mods.astralsorcery.Altar`以导入祭坛相关包
 
 
 ## 祭坛等级
@@ -35,10 +35,10 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 整数 `合成时间（刻）`,  
 [材料](/Vanilla/Variable_Types/IIngredient)[] `输入`
 
-不像工作台合成配方，`输入`参数是一个一维数组。
+不像工作台合成配方，`输入`参数是一维数组。
 你可以使用[物品堆](/Vanilla/Items/IItemStack), [流体堆](/Vanilla/Liquids/ILiquidStack), [矿物词典条目](/Vanilla/OreDict/IOreDictEntry) 或者 `null` 作为数组的条目。
 
-这些合成都不会是有序合成！
+这些合成都不会是无序合成！
 
 
 ### 探索
