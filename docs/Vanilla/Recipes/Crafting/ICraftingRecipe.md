@@ -42,6 +42,28 @@ Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vani
 rec.applyTransformers(ICraftingInventory inventory, IPlayer byPlayer);
 ```
 
+### resourceDomain
+
+Basically, the modid of the mod that added the recipe.
+```
+rec.resourceDomain;
+```
+
+### Ingredients
+
+Returns the ingredients list as [IIngredient](IIngredient)\[] or [IIngredient](IIngredient)\[]\[] respectively.
+```
+rec.ingredients1D;
+rec.ingredients2D;
+```
+
+### Output
+
+The [IItemStack](IItemStack) output of the recipe.
+```
+rec.output;
+```
+
 ### To String
 ```
 rec.commandString;
