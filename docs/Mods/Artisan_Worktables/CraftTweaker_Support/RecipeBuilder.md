@@ -15,7 +15,7 @@ RecipeBuilder.get("carpenter")
         [<minecraft:planks>],
         [<minecraft:planks>]
         ])
-  .setTool(<ore:carpenters_hammer>, 3)
+  .addTool(<ore:carpenters_hammer>, 3)
   .addOutput(<minecraft:planks>)
   .create();
 ```
