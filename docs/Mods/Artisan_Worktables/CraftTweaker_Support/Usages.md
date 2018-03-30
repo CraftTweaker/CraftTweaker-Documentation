@@ -4,7 +4,7 @@
 
 |Required: |Type:      |Name:                |Implementation:                   |Parameters: 																|Additional Information: 										 |
 |----------|-----------|---------------------|----------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------|
-|Required  |Recipe:    |Shaped Recipe:       |.setShaped:     				 	|[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients		    |						 										 |
+|Required  |Recipe:    |Shaped Recipe:       |.setShaped     				 	|[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients		    |						 										 |
 |Required  |Recipe:    |Shapeless Recipe:    |.setShapeless   				 	|[IIngredient[](/Vanilla/Variable_Types/IIngredient) ingredients		    |																 |
 |Optional  |Recipe:    |Mirrored:            |.setMirrored    				 	|Empty																		|																 |
 |Required  |Tool:      |Tool:                |.setTool        				 	|[IIngredient](/Vanilla/Variable_Types/IIngredient) tool + Integer damage	|																 |
@@ -16,12 +16,12 @@
 
 ```JAVA
 //Example from Old Wiki:
-Worktable.createRecipeBuilder("carpenter")
+RecipeBuilder.get("carpenter")
     .setShaped([
         [<minecraft:planks>],
         [<minecraft:planks>],
         [<minecraft:planks>]])
-    .setTool(<ore:carpenters_hammer>, 3)
+    .addTool(<ore:carpenters_hammer>, 3)
     .addOutput(<minecraft:planks> * 10, 10)
     .addOutput(<minecraft:planks:1> * 20, 10)
     .addOutput(<minecraft:planks:2> * 30, 20)
