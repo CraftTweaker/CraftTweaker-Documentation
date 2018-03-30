@@ -1,15 +1,15 @@
 # Recipe Builder
 
-## Calling The Packages
-You can call the RecipeBuilder using:
+## 导入相关包
+使用以下方法导入合成构建器相关包：
 ```JAVA
 import mods.artisanworktables.Worktable;
 import mods.artisanworktables.IRecipeBuilder;
 ```
 
-### Example
+### 例子
 ```JAVA
-//Bare Minimum Example
+//最简例子
 var CarpenterRecipe = Worktable.createRecipeBuilder("carpenter");
 
 CarpenterRecipe.setShaped([
@@ -22,4 +22,4 @@ CarpenterRecipe.addOutput(<minecraft:planks>)
 CarpenterRecipe.create();
 ```
 
-For more features see [Usages](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages)
+更多信息请浏览[用法](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages)
