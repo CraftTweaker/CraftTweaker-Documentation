@@ -26,6 +26,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | canRiderInteract            |                     | boolean                                      |
 | controllingPassenger        |                     | *IEntity*                                    |
 | customName                  | getCustomName()     | String                                       |
+| definition                  |                     | *[IEntityDefinition](IEntityDefinition)*     |
 | dimension                   | getDimension()      | int                                          |
 | doesTriggerPressurePlate    |                     | boolean                                      |
 | equipmentAndArmor           |                     | List<[IItemStack](/Vanilla/Items/IItemStack) |
