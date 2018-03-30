@@ -18,7 +18,7 @@ RecipeBuilder.get("carpenter")
         [planks, planks, null],
         [planks, planks, planks]
         ])
-  .setTool(<ore:carpenters_hammer>, 3)
+  .addTool(<ore:carpenters_hammer>, 3)
 
 // Adds a Output for 10 Oak Stairs at a Weight of 10 in 210
   .addOutput(stairs[0] * 10, 10)
