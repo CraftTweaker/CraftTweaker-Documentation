@@ -1,6 +1,6 @@
 # BoundToolReleaseEvent
 
-The BoundToolReleaseEvent is fired whenever abount tool's charge is about to be released.  
+The BoundToolReleaseEvent is fired whenever a bound tool's charge is about to be released.  
 It can be canceled, which will result in the charge not being released.
 
 ## Implementing EventClasses

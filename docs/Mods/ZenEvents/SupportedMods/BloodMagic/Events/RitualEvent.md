@@ -16,7 +16,7 @@ The RitualEvents implements following EventClasses and thus are able to use all 
 
 
 ## Event Class
-You will need to cast the event in the function header as this class:  
+You will need to cast the event in the function header as one of these classes:  
 ```
 //Superclass, all ritual Events are this class.
 mods.bloodmagic.RitualEvent

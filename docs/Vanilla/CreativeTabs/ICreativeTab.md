@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import crafttweaker.creativetabs.ICreativeTab;` 
 
 ## Getting such an Object
-You can retrieve an ICreativeTab from the [Creative tab Brracket Handler](/Vanilla/Brackets/Bracket_CreativeTab).
+You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab).
 
 ## ZenGetters and ZenMethods without parameters
 

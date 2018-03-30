@@ -1,10 +1,10 @@
 # TinkerToolEvent
 
-The TinkerToolEvent is fired whenever a TiCon tool does something special.  
+The TinkerToolEvent is fired whenever a Tinkers' Construct tool does something special.  
 Now, since there are many types of special things tools can do, there are multiple Events and thus multiple event handlers as well.
 
 ## Implementing EventClasses
-The TinkerToolEvents all implement the following EventClasses and thus are able to use all functionality they provide as well: 
+The TinkerToolEvents implement the following EventClasses and thus are able to use all functionality they provide as well: 
 
 | Class                                                       | ExtraBlockBreak | MattockHoe | ShovelPath | ScytheHarvest | BowShoot | Repair |
 |-------------------------------------------------------------|:---------------:|:----------:|:----------:|:-------------:|:--------:|:------:|
@@ -19,7 +19,8 @@ You will need to cast the event in the function header as this class:
 //Superclass, probably not needed
 mods.tconstruct.TinkerToolEvent
 
-//Subclases
+//Specific subclasses. 
+//In most cases you won't need the superclass but only those:
 mods.tconstruct.ToolExtraBlockBreakEvent
 mods.tconstruct.ToolRepairEvent
 mods.tconstruct.ToolMattockHoeEvent

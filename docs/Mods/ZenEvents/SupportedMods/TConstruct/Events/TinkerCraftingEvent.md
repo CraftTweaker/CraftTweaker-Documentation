@@ -9,12 +9,13 @@ The TinkerCraftingEvents all implement the following EventClasses and thus are a
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable)
 
 ## Event Class
-You will need to cast the event in the function header as this class:  
+You will need to cast the event in the function header as one of these classes:  
 ```
-//Superclass, probably not needed
+//Superclass, all TinkerCrafting Events are this class.
 mods.tconstruct.TinkerCraftingEvent
 
-//Subclases
+//Specific subclasses.
+//In most cases you won't need the superclass but only those:
 mods.tconstruct.ToolCraftingEvent
 mods.tconstruct.ToolModifyEvent
 mods.tconstruct.ToolPartReplaceEvent
@@ -36,7 +37,7 @@ Empty table fields mean that the getter/setter does not exist!
 
 ## ZenMethod
 
-`event.setCanceled(String localizedName)` Cancels the event and sets the given message to the player.
+`event.setCanceled(String localizedName)` Cancels the event and sets the given message as error message for the player.
 
 ## SubEvent Getters
 

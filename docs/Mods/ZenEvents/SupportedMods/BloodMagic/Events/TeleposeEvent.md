@@ -1,6 +1,6 @@
 # TeleposeEvent
 
-The TeleposeEvent is fired whenever a bloodmagic Telepose teleposes blocks or entities.  
+The TeleposeEvent is fired whenever a bloodmagic teleposer teleposes blocks or entities.  
 It can be canceled, which will result in the transposition not taking place.
 
 ## Implementing EventClasses

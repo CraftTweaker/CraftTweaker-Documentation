@@ -1,6 +1,6 @@
 # MasterRitualStone
 
-A master ritual stone is where all magic that flows through a ritual is centered.  
+A master ritual stone is where all magic that flows through a [ritual](Ritual) is centered.  
 As such you are able to receive some information on your ritual from them.
 
 ## Importing the class

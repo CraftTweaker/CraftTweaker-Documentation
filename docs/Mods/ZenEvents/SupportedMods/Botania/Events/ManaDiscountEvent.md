@@ -1,7 +1,8 @@
 # ManaDiscountEvent
 
 The ManaDiscountEvent is fired whenever an item tries to take mana from your mana tablet.  
-It cannot be canceled, but you can change the discount.
+It cannot be canceled, but you can change the discount.  
+Note that not all mana consumers call this event!
 
 ## Implementing EventClasses
 The ManaDiscountEvent implements following EventClasses and thus is able to use all functionality they provide as well: 

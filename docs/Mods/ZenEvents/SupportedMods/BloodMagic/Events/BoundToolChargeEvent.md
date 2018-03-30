@@ -1,6 +1,6 @@
 # BoundToolChargeEvent
 
-The BoundToolChargeEvent is fired whenever abount tool is being charged up.  
+The BoundToolChargeEvent is fired whenever a bound tool is being charged up.  
 It can be canceled, which will result in the charging being canceled.
 
 ## Implementing EventClasses
