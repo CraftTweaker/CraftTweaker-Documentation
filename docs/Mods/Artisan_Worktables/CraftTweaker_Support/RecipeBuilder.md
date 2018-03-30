@@ -1,7 +1,7 @@
 # Recipe Builder
 
 ## 导入相关包
-使用以下方法导入合成构建器相关包：
+使用以下方法导入合成构造器相关包：
 ```JAVA
 import mods.artisanworktables.Worktable;
 import mods.artisanworktables.IRecipeBuilder;
