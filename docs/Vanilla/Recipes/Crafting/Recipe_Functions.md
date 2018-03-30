@@ -38,6 +38,10 @@ You don't have to call them this way, they can have any name.
 `ins` is a map with the marks as keys and the marked inputs as values.  
 `cInfo` is an ICraftingInfo Object
 
+The function must return the IItemStack that the recipe should output.
+You can invalidate a recipe by returning `null` so it can't be crafted under certain conditions.
+Modifying the `ins` here is a bad idea, this function triggers for each change in the crafting grid, not when actually pulling out the result.
+
 # IRecipeAction
 
 But CraftTweaker goes beyond simply calculating your outputs using functions.  
