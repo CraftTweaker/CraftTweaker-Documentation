@@ -28,10 +28,11 @@ The first checks against the items' registry names, the 2nd uses the unlocalized
 
 ```Java
 //getItemsByRegexRegistryName(String Regex)
-itemUtils.getItemsByRegexRegistryName("*");
+itemUtils.getItemsByRegexRegistryName(".*sword.*"); // all things that have sword in the name
+itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/foundation/dynamics items
 
 //getItemsByRegexUnlocalizedName(String Regex)
-itemUtils.getItemsByRegexUnlocalizedName("*");
+itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
 ## Create Spawn egg
