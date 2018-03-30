@@ -63,7 +63,7 @@ Furthermore, `inputs` is optional. If omitted, the function will do the same as 
 Removes all crafting recipes in the game.  
 A bit overkill, don't you think?
 ```java
-recipes.removeAll()`
+recipes.removeAll();
 ```
 
 ### Remove by name
@@ -72,7 +72,7 @@ You can also use regex to remove multiple recipes at once. And no, if you don't 
 
 ```java
 recipes.removeByRegex("name[1-9]");
-recipes.removeByRecipeName("name123");
+recipes.removeByRecipeName("modid:recipename");
 ```
 
 
