@@ -511,7 +511,8 @@ pages:
         - Events: 
           - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'
           - ProjectileLauchEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileLaunchEvent.md'
-          - TinkerCraftingEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerEvent.md'
+          - TinkerCraftingEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerCraftingEvent.md'
+          - TinkerToolEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerToolEvent.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'

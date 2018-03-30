@@ -7,7 +7,7 @@ events.eventName(function(event as eventType){
 });
 ```
 
-Below you will find all currently added events that bloodmagic should fire.  
+Below you will find all currently added events that botania should fire.  
 None of these events returns anything (they all are void functions).
 
 | EventCall                        | EventType                                                                      |
