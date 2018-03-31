@@ -120,7 +120,7 @@ mods.astralsorcery.Altar.addTraitAltarRecipe(<minecraft:tnt>, 4500, 100, [
 	null, null, null,<ore:blockMarble>, <ore:blockMarble>,
 	<astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>,<ore:blockMarble>, 
 	<ore:blockMarble>,<minecraft:redstone>, <minecraft:redstone>,<minecraft:redstone>, <minecraft:redstone>,
-	//Outer Items, indices 25+
+	//外部物品,即序号25以上的
 	<minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>
 ],
 "astralsorcery.constellation.evorsio");
