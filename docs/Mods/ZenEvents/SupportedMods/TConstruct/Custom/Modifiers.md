@@ -25,8 +25,8 @@ For the color, it is suggested that you use the hexadecimal notation as shown ab
 If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the modifer.  
 ```
 //myModifier.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
-myModifier.addItem(<minecraft:iron_pickaxe>);
-myModifier.addItem(<minecraft:iron_block>, 4, 2);
+myModifier.addModifierItem(<minecraft:iron_pickaxe>);
+myModifier.addModifierItem(<minecraft:iron_block>, 4, 2);
 ```
 
 - `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions) but no Transformers or anything else.  
