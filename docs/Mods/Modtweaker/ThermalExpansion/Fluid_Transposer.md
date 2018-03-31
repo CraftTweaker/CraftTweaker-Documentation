@@ -23,9 +23,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:
 
 ```
 //mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack input);
-mods.thermalexpansion.Transposer.removeRecipe(<minecraft:gold_ore>);
+mods.thermalexpansion.Transposer.removeExtractRecipe(<minecraft:gold_ore>);
 
 
 //mods.thermalexpansion.Transposer.removeFillRecipe(IItemStack input, ILiquidStack fluid);
-mods.thermalexpansion.Transposer.removeRecipe(<minecraft:bucket>, <liquid:water>);
+mods.thermalexpansion.Transposer.removeFillRecipe(<minecraft:bucket>, <liquid:water>);
 ```

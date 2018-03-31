@@ -246,12 +246,14 @@ pages:
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
+      - From The Ground Up: 'Mods/GameStages/FromTheGroundUp/FTGU.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
+      - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
@@ -336,6 +338,11 @@ pages:
         - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+      - Blood Magic:
+        - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
+        - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
+        - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
+        - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
@@ -423,6 +430,27 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - Sky Resources 2:
+      - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
+      - Recipes:
+        - Alchemical Fusion: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion.md'
+        - Alchemical Fusion Catalysts: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion_Catalysts.md'
+        - Cauldron Cleaning: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'
+        - Combustion: 'Mods/Sky_Resources_2/Recipes/Combustion.md'
+        - Condenser: 'Mods/Sky_Resources_2/Recipes/Condenser.md'
+        - Crucible: 'Mods/Sky_Resources_2/Recipes/Crucible.md'
+        - Cutting Knife: 'Mods/Sky_Resources_2/Recipes/Cutting_Knife.md'
+        - Freezer: 'Mods/Sky_Resources_2/Recipes/Freezer.md'
+        - Heat Sources: 'Mods/Sky_Resources_2/Recipes/Heat_Sources.md'
+        - Life Infusion: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
+        - Rock Grinder: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
+        - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
+    - Survivalist:
+      - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Rocky Core:
+      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
+      - Anvil: 'Mods/RockyCore/Anvil.md'
+      - Merchant: 'Mods/RockyCore/Merchant.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
