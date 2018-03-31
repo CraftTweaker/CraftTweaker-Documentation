@@ -2,7 +2,7 @@
 
 ## 方法列表
 
-|Required: |类型:      |名称:                |实现:                             |参数: 	    												      		|Additional Information: 										 |
+|必要性     |类型:      |名称:                |实现:                             |参数: 	    												      		|Additional Information: 										 |
 |----------|-----------|---------------------|----------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------|
 |需要      |Recipe:（合成）|Shaped Recipe:（有序合成）|.setShaped:     				 |[材料[][]](/Vanilla/Variable_Types/IIngredient) 材料		               |						 									     |
 |需要      |Recipe:（合成）|Shapeless Recipe:（无序合成）|.setShapeless   			 |[材料[](/Vanilla/Variable_Types/IIngredient) 材料		                 |																   |
