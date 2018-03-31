@@ -1,7 +1,7 @@
-# To Scale Example
-Here's a Quick To Scale Example:
+# 实例
+这里有一个简单的实例:
 
-## Example
+## 例子
 ```JAVA
 var planks = <ore:plankWood>;
 
@@ -22,22 +22,22 @@ StairsRecipe.setShaped([
 
 StairsRecipe.setTool(<ore:carpenters_hammer>, 3);
 
-// Adds a Output for 10 Oak Stairs at a Weight of 10 in 210
+// 添加了输出10个橡木楼梯且其权值为10（总权值为210）的合成
 StairsRecipe.addOutput(stairs[0] * 10, 10);
 
-// Adds a Output for 10 Birch Stairs at a Weight of 20 in 210
+// 添加了输出10个桦木楼梯且其权值为20（总权值为210）的合成
 StairsRecipe.addOutput(stairs[1] * 10, 20);
 
-// Adds a Output for 10 Spruce Stairs at a Weight of 30 in 210
+// 添加了输出10个云杉木楼梯且其权值为30（总权值为210）的合成
 StairsRecipe.addOutput(stairs[2] * 10, 30);
 
-// Adds a Output for 10 Jungle Stairs at a Weight of 40 in 210
+// 添加了输出10个丛林木楼梯且其权值为40（总权值为210）的合成
 StairsRecipe.addOutput(stairs[3] * 10, 40);
 
-// Adds a Output for 10 Acacia Stairs at a Weight of 50 in 210
+// 添加了输出10个金合欢木楼梯且其权值为50（总权值为210）的合成
 StairsRecipe.addOutput(stairs[4] * 10, 50);
 
-// Adds a Output for 10 Dark Oak Stairs at a Weight of 60 in 210
+// 添加了输出10个深色橡木楼梯且其权值为60（总权值为210）的合成
 StairsRecipe.addOutput(stairs[5] * 10, 60);
 
 StairsRecipe.setExtraOutputOne(<minecraft:dye> * 5, 0.12);
