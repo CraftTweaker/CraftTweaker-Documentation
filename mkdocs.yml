@@ -176,10 +176,10 @@ pages:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
-      - RecipeBuilder:
-        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+      - 合成构建器:
+        - 合成构建器: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
+        - 用法: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - 实例: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - 星辉魔法:
       - 关于星辉魔法: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - 合成:
