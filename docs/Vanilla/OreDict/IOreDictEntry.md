@@ -54,16 +54,16 @@ oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 
 
 ### Check if an IOreDictEntry contains an item
-You can check if aan IOreDictEntry contains an item using either the `in` or `has` keywords:
+You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
 ```
 val oreDictEnt = <ore:ingotIron>;
 
 if(oreDictEnt in <minecraft:iron_ingot>){
-	print("Iron is in the oreDic!");
+	print("Iron is in the oreDict!");
 }
 
 if(oreDictEnt has <minecraft:iron_ingot>){
-	print("Iron still is in the oreDic!");
+	print("Iron still is in the oreDict!");
 }
 ```
 

@@ -25,13 +25,36 @@ rec.output
 ```
 
 ### Check for conditions
-Returns a boolean
+Each of these returns a boolean
 ```
-rec.hasTransformers
-rec.hasRecipeAction
-rec.hasRecipeFunction
-rec.hidden
-rec.shaped
+rec.hasTransformers;
+rec.hasRecipeAction;
+rec.hasRecipeFunction;
+rec.hidden;
+rec.shaped;
+```
+
+### resourceDomain
+
+Basically, the modid of the mod that added the recipe.
+```
+rec.resourceDomain;
+rec.fullResourceDomain;
+```
+
+### Ingredients
+
+Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient)\[]\[] respectively.
+```
+rec.ingredients1D;
+rec.ingredients2D;
+```
+
+### Output
+
+The [IItemStack](/Vanilla/Variable_Types/IItemStack) output of the recipe.
+```
+rec.output;
 ```
 
 ### To String
@@ -41,7 +64,4 @@ rec.toCommandString();
 
 rec.name;
 rec.getName();
-
-rec.fullResourceDomain
-rec.resourceDomain
 ```

@@ -57,7 +57,7 @@ The command for setting fuel values is:
 furnace.setFuel(IIngredient input, int burnTime);
 ```
 
-This will set the burn value of `input` to `burnTime`.
+This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
  
 Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
 
