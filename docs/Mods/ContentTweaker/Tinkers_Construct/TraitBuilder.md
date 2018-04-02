@@ -1,50 +1,95 @@
-# Custom Modifiers
+# Custom Traits
 
-Using this package you can create custom modifiers that you can then put on your tools!
+Using this package you can create trait that you can then put on your tools!
 
 ## Importing the class
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
-`import mods.tconstruct.modifiers.custom;`
+`import mods.contenttweaker.tconstruct.TraitBuilder;`
 
-## Creating a modifier
+## Creating a trait
 
-First and foremost, you will need to create a custom modifier.  
+First and foremost, you will need to create a trait builder.  
 This can be done using the static function:
 ```
 //create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
-val myModifier = mods.tconstruct.modifiers.custom.create("kindlich_test", 0xffaadd, 100, 20);
+val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
 ```
 
-For the color, it is suggested that you use the hexadecimal notation as shown above.  
-`maxLevel` is the maximum level the modifier can become, and will default to 0.  
-`countPerLevel` is how many sublevels the modifier can have (like Redstone which has 50).
+The `identifier` has to be unique!  
+For the `color`, it is suggested that you use the hexadecimal notation as shown above.  
+`maxLevel` is the maximum level the trait can become, and will default to 0.  
+`countPerLevel` is how many sublevels the trait can have (like Redstone which has 50).
 
-
-## Adding modifier items
-
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the modifer.  
+After you've finished all modifications below, you will need to register your trait.  
+This can be done using the `register` method, which will return a [Representation](Trait) of the new trait.
 ```
-//myModifier.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
-myModifier.addModifierItem(<minecraft:iron_pickaxe>);
-myModifier.addModifierItem(<minecraft:iron_block>, 4, 2);
+myTrait.register();
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions) but no Transformers or anything else.  
+After registering, you can still modify the builder, the trait itself can no longer be modified.  
+That way you can create multiple similar traits easily.
+
+
+## Modifier Items
+
+If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.  
+```
+//myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+myTrait.addItem(<item:minecraft:iron_pickaxe>);
+myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
+
+//myTrait.removeItem(IItemStack stack);
+myTrait.removeItem(<item:minecraft:iron_pickaxe>);
+```
+
+- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions) but no Transformers.  
 - `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of modifier points added per `amountNeeded`. In the example above four iron blocks give two modifier points. Defaults to 1.
+- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+
+## Properties
+
+You can set and get these properties using the names given:
+
+| Name                 | Type    |
+|----------------------|---------|
+| color                | int     |
+| countPerLevel        | int     |
+| hidden               | bool    |
+| identifier           | string  |
+| localizedDescription | string  |
+| localizedName        | string  |
+| maxLevel             | int     |
+
+
+## Calculated Properties
+
+Some properties will need to be calculated.  
+You can set the given property functions: 
+
+### CanApplyTogether
+
+Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition).
+```
+myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
+myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){....};
+```
+
+### Extra info
+
+The returned String[] will be displayed as extra information in the tool station.  
+```
+myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
+```
+
 
 ## Adding Functionality
 
-First, you can decide if you want to make the modifier hidden, they are shown by default.
-```
-myModifier.hidden = true;
-```
+Now that you have created a trait you need to make it modify something, don't you?  
+That's what the trait event handlers are for:  
+They are called whenever a user does something with the tool containing the trait.
 
-Now that you have created a modifier you need to make it modify something, don't you?  
-That's what the modifier event handlers are for:  
-They are called whenever a user does something with the tool containing the modifier.
-
-Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myModifier` with your own variable name.  
+Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myTrait` with your own variable name.  
 Also, you only have to use the handlers that you need, you don't need empty handlers only so that you have filled everything.
 
 <details>
@@ -72,6 +117,7 @@ Also, you only have to use the handlers that you need, you don't need empty hand
 Called each tick by the tool is loaded (that means in the player's inventory).  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IWorld](/Vanilla/World/IWorld) representing the `world`
 - An [IEntity](/Vanilla/Entities/IEntity) representing the `owner`
@@ -82,7 +128,7 @@ __Returns nothing.__
 
 Created using:
 ```
-myModifier.getMiningSpeed = function(tool, world, owner, itemSlot, isSelected) {
+myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
 	//CODE
 };
 ``` 
@@ -93,6 +139,7 @@ Called when a block is mined.
 Be careful as this event is also be caught by vanilla blockBreak handlers.  
 Parameters: 
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed)
 
@@ -100,7 +147,7 @@ __Returns nothing.__
 
 Created using:
 ```
-myModifier.getMiningSpeed = function(tool, event) {
+myTrait.getMiningSpeed = function(trait, tool, event) {
 	//CODE
 };
 ``` 
@@ -111,6 +158,7 @@ Called just before a block is broken.
 Be careful as this event is also be caught by vanilla blockBreak handlers.  
 Parameters: 
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak)
 
@@ -118,7 +166,7 @@ __Returns nothing.__
 
 Created using:
 ```
-myModifier.beforeBlockBreak = function(tool, event) {
+myTrait.beforeBlockBreak = function(trait, tool, event) {
 	//CODE
 };
 ```
@@ -127,6 +175,7 @@ myModifier.beforeBlockBreak = function(tool, event) {
 Called after the block has been destroyed.  
 Parameters: 
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IWorld](/Vanilla/World/IWorld) representing the `world`
 - An [IBlockState](/Vanilla/Blocks/IBlockState) representing the broken `block`
@@ -137,7 +186,7 @@ __Returns nothing.__
 
 Created using:
 ```
-myModifier.afterBlockBreak = function(tool, world, blockstate, miner, wasEffective) {
+myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
 	//CODE
 };
 ```
@@ -148,6 +197,7 @@ Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.
 Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops)
 
@@ -155,7 +205,7 @@ __Returns nothing__
 
 Created using:
 ```
-myModifier.onBlockHarvestDrops = function(tool, event) {
+myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 	//CODE
 };
 ```
@@ -165,6 +215,7 @@ Called before the damage done to the entity is calculated to determine whether i
 Returning `false` will not stop a hit that is already a crit from being so.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
@@ -173,7 +224,7 @@ __Returns a bool__ that is `true` if the hit should crit, false whenever else.
 
 Created using:
 ```
-myModifier.calcCrit = function(tool, attacker, target) {
+myTrait.calcCrit = function(trait, tool, attacker, target) {
 	//CODE
 	return true; //or false
 };
@@ -184,18 +235,19 @@ Called when an entity is hit, but still before the damage is dealt and before th
 The crit damage will be calculated off the result of this.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
 - A float representing the tool's `originalDamage` (unmodified tool damage)
-- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other modifiers).
+- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
 - A boolean that represents if the hit `isCritical`
 
 __Returns a float__ representing the new damage. Otherwise return `newDamage`
 
 Created using
 ```
-myModifier.calcDamage = function(tool, attacker, target, originalDamage, newDamage, isCritical) {
+myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
 	//CODE
 	return newDamage; //Or your modified value
 };
@@ -206,6 +258,7 @@ Called when an entity is hit, just before the damage is dealt.
 All damage calculation has already been done at this point.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
@@ -216,7 +269,7 @@ __Returns nothing__
 
 Created using
 ```
-myModifier.onHit = function(tool, attacker, target, damage, isCritical) {
+myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 	//CODE
 };
 ```
@@ -225,19 +278,20 @@ myModifier.onHit = function(tool, attacker, target, damage, isCritical) {
 Called after an entity is hit to modify the applied knockback.    
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
 - A float representing the tool's `damage` (including crit)
 - A float representing the tool's `originalKnockback` (unmodified tool knockback)
-- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other modifiers).
+- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
 - A boolean that represents if the hit `isCritical`
 
 __Returns a float__ representing the new damage. Otherwise return `newDamage`
 
 Created using
 ```
-myModifier.calcDamage = function(tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
+myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
 	//CODE
 	return newDamage; //Or your modified value
 };
@@ -247,6 +301,7 @@ myModifier.calcDamage = function(tool, attacker, target, damage, originalKnockBa
 Called after an entity is hit and after the damage is dealt.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
@@ -258,7 +313,7 @@ __Returns nothing__
 
 Created using
 ```
-mytrait.afterHit = function(tool, attacker, target, damageDealt, wasCritical, wasHit) {
+mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
 	//CODE
 };
 ```
@@ -268,6 +323,7 @@ Called when the player holding the tool blocks the attack.
 Otherwise `onHit` will be called.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IPlayer](/Vanilla/Players/IPlayer) representing the `player`
 - An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt)
@@ -276,7 +332,7 @@ __Returns nothing__
 
 Created using
 ```
-myModifier.onBlock = function(tool, player, event) {
+myTrait.onBlock = function(trait, tool, player, event) {
 	//CODE
 };
 ```
@@ -286,6 +342,7 @@ Called when the player holding the tool DID NOT BLOCK the attack.
 Otherwise `onBlock` will be called.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An [IPlayer](/Vanilla/Players/IPlayer) representing the `player`
 - An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
@@ -295,7 +352,7 @@ __Returns nothing__
 
 Created using
 ```
-myModifier.onPlayerHurt = function(tool, player, event) {
+myTrait.onPlayerHurt = function(trait, tool, player, event) {
 	//CODE
 };
 ```
@@ -305,6 +362,7 @@ myModifier.onPlayerHurt = function(tool, player, event) {
 Called before the tools durability is getting decreased.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An int representing the `unmodifiedAmount` of durability to be reduced.
 - An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
@@ -314,7 +372,7 @@ __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
 Created using
 ```
-myModifier.onToolDamage = function(tool, unmodifiedAmount, newAmount, holder) {
+myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
 	//CODE
 	return newAmount; //Or your modified value
 };
@@ -325,6 +383,7 @@ myModifier.onToolDamage = function(tool, unmodifiedAmount, newAmount, holder) {
 Called before the tools durability is getting increased.  
 Parameters:
 
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
 - An int representing the `unmodifiedAmount` of durability to be increased.
 - An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
@@ -334,7 +393,7 @@ __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
 Created using
 ```
-myModifier.onToolHeal = function(tool, unmodifiedAmount, newAmount, holder) {
+myTrait.onToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
 	//CODE
 	return newAmount; //Or your modified value
 };
@@ -346,6 +405,8 @@ Called before the tool is getting repaired with tis repair material.
 Not to be confused with `onToolHeal` which is called afterwards.  
 Will be called multiple times if multiple items are used at once.  
 Parameters: 
+
+- A [Trait Representation](/Trait) representing the currently used `trait`.
 - An [IItemStack](/Vanilla/Items/IItemStack) representing the `tool` to be repaired
 - An int representing the `amount` of durability to be increased.
 
@@ -353,7 +414,28 @@ __Returns nothing__
 
 Created using
 ```
-myModifier.onToolRepair = function(tool, amount) {
+myTrait.onToolRepair = function(trait, tool, amount) {
 	//CODE
 };
+```
+
+
+
+## Example
+```
+#loader contenttweaker
+#modloaded tconstruct
+
+val testTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test");
+testTrait.color = 0xffaadd;
+testTrait.maxLevel = 100;
+testTrait.countPerLevel = 20;
+testTrait.addItem(<item:minecraft:iron_pickaxe>);
+testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
+testTrait.localizedName = "Whooooooooo";
+testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
+testTrait.afterHit = function(tool, attacker, target, damageDealt, wasCrit, wasHit) {
+	attacker.heal(damageDealt);
+};
+testTrait.register();
 ```

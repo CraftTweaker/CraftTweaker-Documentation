@@ -6,6 +6,7 @@ Note that not all mana consumers call this event!
 
 ## Implementing EventClasses
 The ManaDiscountEvent implements following EventClasses and thus is able to use all functionality they provide as well: 
+
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent)
 
 ## Event Class

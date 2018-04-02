@@ -225,6 +225,7 @@ pages:
           - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
           - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
           - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
+          - Enchantments: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
@@ -277,6 +278,14 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
+      - Tinkers' Construct:
+        - Brackets:
+          - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
+          - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
+        - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
+        - Material Builder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
+        - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
+        - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
@@ -504,9 +513,11 @@ pages:
         - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
         - Events: 
           - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
+      - GameStages:
+        - EventManager: 'Mods/ZenEvents/SupportedMods/GameStages/EventManager.md'
+        - Events: 
+          - GameStageEvent: 'Mods/ZenEvents/SupportedMods/GameStages/Events/GameStageEvent.md'
       - TConstruct: 
-        - Custom:
-          - Custom Modifiers: 'Mods/ZenEvents/SupportedMods/TConstruct/Custom/Modifiers.md'
         - EventManager: 'Mods/ZenEvents/SupportedMods/TConstruct/EventManager.md'
         - Events: 
           - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'
