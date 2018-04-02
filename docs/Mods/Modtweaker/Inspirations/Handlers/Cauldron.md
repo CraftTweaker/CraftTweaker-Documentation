@@ -7,7 +7,7 @@ You can call the Cauldron package using `mods.inspirations.Cauldron`
 
 ## Fluids
 
-Inspirations features two types of recipes using fluids: ones to transform an item using a fluid and ones to transform a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
+Inspirations features three types of recipes using fluids: ones to transform an item using a fluid, ones to transform a fluid using an item, and ones to add fill with a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
 
 ### Fluid adding
 
@@ -51,6 +51,30 @@ Removes an existing fluid transform recipe from the cauldron. Output is `IIngred
 ```
 //mods.inspirations.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
 mods.inspirations.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
+```
+
+### Fill recipe adding
+
+Adds a recipe filling the cauldron with the provided fluid..
+
+* Input item supports stack sizes to require the held stack to be a certain size.
+* Levels determines how much the recipe fills the cauldron by. Defaults to 1 if not provided.
+* Container determines the item returned after performing this recipe. If none is provided defaults to returning nothing.
+
+```
+//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
+mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
+mods.inspirations.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
+```
+
+### Fill recipe removal
+
+Removes an existing fill recipe from the cauldron.
+
+```
+//mods.inspirations.Cauldron.removeFillRecipe(IIngredient input, @Optional ILiquidStack fluid);
+mods.inspirations.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
+mods.inspirations.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
 ```
 
 ## Brewing and Potions
