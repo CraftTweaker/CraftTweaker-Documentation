@@ -331,6 +331,7 @@ pages:
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'

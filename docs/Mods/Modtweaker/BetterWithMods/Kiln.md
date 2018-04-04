@@ -1,26 +1,48 @@
 # Kiln
 
-The Kiln ONLY takes blocks as inputs, all IItemStack input MUST be that of a place-able block.
+## Basic Recipe
 
-## Addition
-
-``` 
-mods.betterwithmods.Kiln.add(IItemStack[] output, IItemStack input);
-mods.betterwithmods.Kiln.add(IItemStack[] output, IIngredient input);
- 
-mods.betterwithmods.Kiln.add([<minecraft:diamond>,<minecraft:coal>], <minecraft:coal_ore>);
-//Only use IIngredients that contain items!
-mods.betterwithmods.Kiln.add([<minecraft:diamond>,<minecraft:coal>], <ore:oreCoal>);
+* Adds Kiln Recipe - inputs *MUST* have a block associated with them.
+  
+```
+mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
+//Examples
+mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
 ## Removal
 
-``` 
-mods.betterwithmods.Kiln.remove(IItemStack input);
- 
-mods.betterwithmods.Kiln.remove(<minecraft:cobblestone>);
-```
+* Remove a Kiln recipe based on the output
+```mods.betterwithmods.Kiln.remove(IItemStack[] outputs);```
 
+* Remove all Kiln recipes
+```mods.betterwithmods.Kiln.removeAll();```
+
+
+## Builder 
+
+The Kiln has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+
+* To create a new Kiln builder.
+`mods.betterwithmods.Kiln.builder()`
+
+* Kiln methods
+     * Sets up the inputs and outputs of the recipe  
+       ```buildRecipe(IIngredient[] inputs, IItemStack[] outputs)```
+     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron.
+       Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](HeatRegistry.md).  
+       ```setHeat(int heat)```      
+     * Finalize the recipe and add it to the game  
+       ```build()```
+       
+### Example builder usage
+```
+mods.betterwithmods.Kiln.builder()
+.buildRecipe([<ore:iron>], [<minecraft:iron_ingot>*2])
+.setHeat(2)
+.build();
+```
+    
 ## Structure Block
 
 The Kiln is a multiblock based on the block it is made of; This allows registering a block that can be used to create the structure.
