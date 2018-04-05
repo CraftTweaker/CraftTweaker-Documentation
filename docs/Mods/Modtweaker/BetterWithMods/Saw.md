@@ -1,22 +1,42 @@
 # Saw
 
-The Saw ONLY takes _Blocks_ as inputs, all IItemStack input MUST be that of a place-able _Block_.
 
-## Addition
+## Basic Recipe
 
-``` 
-mods.betterwithmods.Saw.add(IItemStack[] output, IItemStack input);
-mods.betterwithmods.Saw.add(IItemStack[] output, IIngredient input);
- 
-mods.betterwithmods.Saw.add([<minecraft:stick>,<minecraft:stick>], <minecraft:fence>);
-//Only use Ingredients that contain items!
-mods.betterwithmods.Saw.add([<minecraft:stick>,<minecraft:stick>], <ore:plankWood>);
+* Adds Saw Recipe - inputs *MUST* have a block associated with them.
+  
+```
+mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
+//Examples
+mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
 ## Removal
 
-``` 
-mods.betterwithmods.Saw.remove(IItemStack input);
- 
-mods.betterwithmods.Saw.remove(<minecraft:oak_plank>);
+* Remove a Saw recipe based on the output
+```mods.betterwithmods.Saw.remove(IItemStack[] outputs);```
+
+* Remove all Saw recipes
+```mods.betterwithmods.Saw.removeAll();```
+
+
+## Builder 
+
+The Saw has a recipe builder. Due to the nature of the saw it currently has no special builder methods, I will document it none-the-less.
+
+* To create a new Saw builder.
+`mods.betterwithmods.Saw.builder()`
+
+* Saw methods
+     * Sets up the inputs and outputs of the recipe  
+       ```buildRecipe(IIngredient[] inputs, IItemStack[] outputs)```
+     * Finalize the recipe and add it to the game  
+       ```build()```
+       
+### Example builder usage
 ```
+mods.betterwithmods.Saw.builder()
+.buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])
+.build();
+```
+    

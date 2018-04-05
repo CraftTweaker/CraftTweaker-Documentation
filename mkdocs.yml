@@ -331,6 +331,7 @@ pages:
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
@@ -338,6 +339,7 @@ pages:
         - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
       - Blood Magic:
         - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
         - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
