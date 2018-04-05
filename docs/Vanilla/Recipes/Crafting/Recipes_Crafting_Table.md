@@ -68,13 +68,15 @@ recipes.removeShapeless(output, inputs, wildcard);
 recipes.removeAll()`
 ```
 
-### Remove by name
-As 1.12 introduces naming recipes, you can also remove recipes once you know their name.
-You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
+### Remove by name（使用名称移除）
+由于1.12可以给合成命名，如果你知道了合成的名称也可以通过它以移除合成。
+你也可以用正则表达式一次移除多个合成。就算你不懂普通表达式的话，我也不会在这里解释！
 
 ```java
 recipes.removeByRegex("name[1-9]");
+//使用通配符移除合成
 recipes.removeByRecipeName("name123");
+//使用合成名称移除合成
 ```
 
 
