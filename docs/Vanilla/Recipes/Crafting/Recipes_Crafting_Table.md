@@ -1,18 +1,18 @@
-# Recipes
+# 工作台配方
 
-## Recipe Types
-There are several types of recipes:
+## 配方类型
+有以下几种配方类型:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot.
-For example, you can't just arrange 7 iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### 有序合成
+有序合成是指一个物品需要放在特定槽的合成。
+例：你不能随意放置7个铁锭以合成铁护腿。由于摆放位置对被合成的物品有影响，因此这是一个有序合成。
 
 ### Mirrored Recipe
-Mirrored Recipes are shaped recipes. Only difference is that the recipe can be mirrored along the horizontal or vertical axes.
+Mirrored Recipes是一种有序合成。唯一的区别是合成表可以沿水平轴或垂直轴翻折。
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance.
-For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### 无序合成
+无序合成是指只有放入合成槽的物品影响合成的物品的合成。摆放的位置并不重要。
+For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.例：蓝色染料和黄色染料可以合成绿色染料。这个配方不需要将物品放在特定的位置。
 
 
 ## Remove Recipes
