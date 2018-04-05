@@ -36,14 +36,14 @@ recipes.remove(output, NBTMatch);
 recipes.removeShaped(output, inputs);
 
 ```
-注：inputs为输入的物品的排列方式，本段简称输入
-这个方法比上一个方法对所移除的物品有更严格的要求。它只会移除用`input（输入）`合成`output（输出）`的有序合成配方
+
+这个方法比上一个方法对所移除的物品有更严格的要求。它只会移除用`input`合成`output`的有序合成配方
 
 `output（输出）` 类型为 [IIngredient](/Vanilla/Variable_Types/IIngredient)  
 `inputs（输入）` 类型为 [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (例：[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
 
-此外`inputs（输入）`是可选参数。如果省略此参数，它除了只会移除有序合成的配方以外和`recipe.remove`功能相同。
-`inputs（输入）`可以包含通配符。例如 `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]`表示一个只要每一个槽有物品，而不论物品种类就可以用于合成的配方。 
+此外`inputs`是可选参数。如果省略此参数，它除了只会移除有序合成的配方以外和`recipe.remove`功能相同。
+`inputs`可以包含通配符。例如 `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]`表示一个只要每一个槽有物品，而不论物品种类就可以用于合成的配方。 
 
 
 ### removeShapeless（移除无序合成配方）
@@ -51,15 +51,15 @@ recipes.removeShaped(output, inputs);
 recipes.removeShapeless(output, inputs, wildcard);
 ```
 
-注：inputs为所有输入的物品，本段简称输入
-这个方法比第一方法对所移除的物品有更严格的要求。它只会移除用`input（输入）`合成`output（输出）`的无序序合成配方
-如果`wildcard（通配符）`设置为true，将会移除使用`input（输入）`与其他未指明物品合成`output（输出）`的无序合成配方（例：你可以移除所有需要使用青金石的无序合成配方）
+
+这个方法比第一方法对所移除的物品有更严格的要求。它只会移除用`input`合成`output`的无序序合成配方
+如果`wildcard`设置为true，将会移除使用`input`与其他未指明物品以合成`output`的无序合成配方（例：你可以移除所有需要使用青金石的无序合成配方）
 
 `output（输出）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)  
 `inputs（输入）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)[]  
 `wildcard（通配符）`类型为布尔值且为可选参数（为指明则为false）
 
-此外`inputs（输入）`是可选参数。如果省略此参数，它除了只会移除无序合成的配方以外和`recipe.remove`功能相同。
+此外`inputs`是可选参数。如果省略此参数，它除了只会移除无序合成的配方以外和`recipe.remove`功能相同。
 
 ### removeAll（移除全部）
 移除游戏中所有的配方。
@@ -70,7 +70,7 @@ recipes.removeAll()`
 
 ### Remove by name（使用名称移除）
 由于1.12可以给合成命名，如果你知道了合成的名称也可以通过它以移除合成。
-你也可以用正则表达式一次移除多个合成。就算你不懂普通表达式的话，我也不会在这里解释！
+你也可以用正则表达式一次移除多个合成。就算你不懂普通表达式，我也不会在这里解释！
 
 ```java
 recipes.removeByRegex("name[1-9]");
@@ -80,38 +80,37 @@ recipes.removeByRecipeName("name123");
 ```
 
 
-## Add Recipes
+## 添加合成
+### 1.12 提醒
 
-### Notes On 1.12
+1.12版本中，每一个添加的合成都有一个独特的编号，只是因为forge开发团队希望这样。
+也就是说现在所有添加配方的函数在开头需要有一个不可省略的参数`name`。
+因此`recipe.addShaped(output,input);`会变为`recipe.addShaped(name,output,input);`  
+其他函数都保持一致。谨记`name`要求是独特的。
+`name` 的类型为字符串。
 
-On 1.12, each added recipe requires a UNIQUE identifier, because the forge dev team wanted it that way.  
-This means, all add functions now require an additional parameter `name` at the start (which cannot be omitted).  
-This means `recipe.addShaped(output,input);` now is `recipe.addShaped(name,output,input);`  
-All other functionality stay the same. Remember that `name` needs to be unique!  
-`name` is a string.
-
-### addShaped
+### addShaped（添加有序合成）
 ```Java
-//pre-1.12
+//1.12之前
 recipes.addShaped(output,inputs,function,action);
 
 //1.12
 recipes.addShaped(name,output,inputs,function,action);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
+此方法将添加使用`input`合成`output`的有序合成配方
+如果`function`作为第三个被添加的参数，你还可以使用函数以判定产物。
+如果`action`函数作为第四个被添加的参数，你还可以决定当物品被合成时触发的事件。
 
-`name` is a string and needs to be unique but is also optional
-`output` is an [IItemStack](/Vanilla/Items/IItemStack)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (see below)  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipefunction) for more information on functions.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction) for more information on actions.  
+`name（名称）` 类型为字符串且需要是独特的，但又是一个可选参数。
+`output（输出）`类型为[IItemStack](/Vanilla/Items/IItemStack)  
+`inputs（输入）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (见下)  
+`function（函数）`类型为IRecipeFunction。更多关于function的信息请参考[对应的wiki页面](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipefunction)。
+`action（功能）`类型为IRecipeAction。更多关于action的信息请参考[对应的wiki页面](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction)。
 
-`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+`inputs`是一个二维[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient)数组。  
+因此铁护腿的配方会被写成`[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
+如果它看着就太复杂，可以将数组分裂，使得每一行都有一个数组。
 ```Java
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
@@ -122,36 +121,37 @@ recipes.addShaped("CTLeggings", leggings,
   [iron,null,iron]]);
 ```
 
-### addShapedMirrored
+### addShapedMirrored（添加镜像合成）
 ```Java
-//Normal pre 1.12 syntax
+//常规格式（1.12之前）
 recipes.addShapedMirrored(output,inputs,function,action);
 
-//Recommended 1.12 syntax
+//推荐在1.12使用的格式
 recipes.addShapedMirrored(name,output,inputs,function,action);
 ```
 
-Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
+处理创建的配方是镜像合成以外，和`addShaped`没有区别。
 
 
-### addShapeless
+### addShapeless（添加无序合成）
 ```Java
-//Normal pre 1.12 syntax
+//常规格式（1.12之前）
 recipes.addShapeless(output,inputs,function,action)
 
-//Recommended 1.12 syntax
+//推荐在1.12使用的格式
 recipes.addShapeless(name,output,inputs,function,action)
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients.
-If a `function` is added as third parameter, you can also use a function to determinate the output.
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
 
-`name` is a string and needs to be unique
-`output` is an [IItemStack](/Vanilla/Items/IItemStack)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipefunction) for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction) for more information on actions. This is optional.  
+此方法将添加一个使用`input`合成`output`的无序合成配方
+如果`function`作为第三个被添加的参数，你还可以使用函数以判定产物。
+如果`action`函数作为第四个被添加的参数，你还可以决定当物品被合成时触发的事件。
+
+`name（名称）` 类型为字符串且需要是独特的
+`output（输出）`类型为[IItemStack](/Vanilla/Items/IItemStack)  
+`inputs（输入）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)[] (例 [<minecraft:dye:1>,<minecraft:dye:2>])  
+`function（函数）`类型为IRecipeFunction。更多关于function的信息请参考[对应的wiki页面](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipefunction)。它是可选参数。
+`action（功能）`类型为IRecipeAction。更多关于action的信息请参考[对应的wiki页面](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction)。它是可选参数。
 
 
 ## Other Functionality
