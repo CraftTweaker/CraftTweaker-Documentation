@@ -12,56 +12,58 @@ Mirrored Recipes是一种有序合成。唯一的区别是合成表可以沿水�
 
 ### 无序合成
 无序合成是指只有放入合成槽的物品影响合成的物品的合成。摆放的位置并不重要。
-For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.例：蓝色染料和黄色染料可以合成绿色染料。这个配方不需要将物品放在特定的位置。
+例：青金石和骨粉可以合成淡蓝色染料。这个配方不需要将物品放在特定的位置。
 
 
-## Remove Recipes
-There are several ways of removing recipes.
+## 移除合成
+有多种方式可以移除合成。
 
 
-### remove
+### remove（移除配方）
 ```Java
 recipes.remove(output, NBTMatch);
 ```
 
-This will crafting table recipes for the given `output`.  
-If `NBTMatch`  is true, it will only remove recipes that result in items with the same NTB-Data as provided
+移除以此物品为`output（输出）`的合成。
+如果`NBTMatch（匹配NBT数据）`设置为true，则仅移除输出为与传入的NBT数据相同的物品的配方
 
-`Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient).  
-`NBTMatch` is a boolan and optional (Will be the same as false if not specified).
+`Output（输出）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)。 
+`NBTMatch（匹配NBT数据）` 类型为布尔值。它是可选参数（没有指明则默认为False)。
 
 
-### removeShaped
+### removeShaped（移除有序合成配方）
 ```Java
 recipes.removeShaped(output, inputs);
+
 ```
+注：inputs为输入的物品的排列方式，本段简称输入
+这个方法比上一个方法对所移除的物品有更严格的要求。它只会移除用`input（输入）`合成`output（输出）`的有序合成配方
 
-This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
+`output（输出）` 类型为 [IIngredient](/Vanilla/Variable_Types/IIngredient)  
+`inputs（输入）` 类型为 [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (例：[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
 
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
-
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
-`inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
+此外`inputs（输入）`是可选参数。如果省略此参数，它除了只会移除有序合成的配方以外和`recipe.remove`功能相同。
+`inputs（输入）`可以包含通配符。例如 `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]`表示一个只要每一个槽有物品，而不论物品种类就可以用于合成的配方。 
 
 
-### removeShapeless
+### removeShapeless（移除无序合成配方）
 ```Java
 recipes.removeShapeless(output, inputs, wildcard);
 ```
 
-This one is more strict on which recipes to remove and will only remove shapeless recipes that craft `output` with `input`.  
-If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, Lapis as ingredient).
+注：inputs为所有输入的物品，本段简称输入
+这个方法比第一方法对所移除的物品有更严格的要求。它只会移除用`input（输入）`合成`output（输出）`的无序序合成配方
+如果`wildcard（通配符）`设置为true，将会移除使用`input（输入）`与其他未指明物品合成`output（输出）`的无序合成配方（例：你可以移除所有需要使用青金石的无序合成配方）
 
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient)[]  
-`wildcard` is a boolan and optional (Will be the same as false if not specified)
+`output（输出）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)  
+`inputs（输入）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)[]  
+`wildcard（通配符）`类型为布尔值且为可选参数（为指明则为false）
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
+此外`inputs（输入）`是可选参数。如果省略此参数，它除了只会移除无序合成的配方以外和`recipe.remove`功能相同。
 
-### removeAll
-Removes all crafting recipes in the game.  
-A bit overkill, don't you think?
+### removeAll（移除全部）
+移除游戏中所有的配方。
+是不是有点赶尽杀绝的意味？
 ```java
 recipes.removeAll()`
 ```
