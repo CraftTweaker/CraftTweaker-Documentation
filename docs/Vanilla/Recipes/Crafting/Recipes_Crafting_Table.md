@@ -154,23 +154,23 @@ recipes.addShapeless(name,output,inputs,function,action)
 `action（功能）`类型为IRecipeAction。更多关于action的信息请参考[对应的wiki页面](/Vanilla/Recipes/Crafting/Recipe_Functions#irecipeaction)。它是可选参数。
 
 
-## Other Functionality
+## 其他功能
 
-### Get all registered Crafting recipes.
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe) that contains ALL registered crafting recipes.  
+### 获取所有注册的配方
+你可以使用以下方法获取一个包含所有注册的配方[`<ICraftingRecipe>列表`](/Vanilla/Recipes/Crafting/ICraftingRecipe)
 ```
 recipes.all;
 ```
 
-### Get all recipes for a given IIngredient
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe) that contains ALL registered crafting recipes for the given [IIngredient](/Vanilla/Variable_Types/IIngredient).  
+### 获取所有以传入物品为材料的配方
+你可以使用以下方法获取一个[`<ICraftingRecipe>列表`](/Vanilla/Recipes/Crafting/ICraftingRecipe)，它包含所有以传入物品为[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient)的配方。 
 ```
 //recipes.getRecipesFor(IIngredient ingredient);
 recipes.getRecipesFor(<minecraft:iron_ingot>);
 ```
 
-### Craft
-You can even craft from inside `recipes`! The function will return an [IItemStack](Vanilla/Items/IItemStack) or `null` depending if a recipe is found or not.
+### 合成
+你甚至可以在`配方`里合成！这个函数会返回一个[IItemStack（物品堆）](Vanilla/Items/IItemStack)或`null`，返回结果取决于一个配方是否被找到。
 
 ```
 //recipes.craft(IItemStack[][]content);
