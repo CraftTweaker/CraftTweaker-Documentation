@@ -83,7 +83,7 @@ recipes.removeByRecipeName("name123");
 ## 添加合成
 ### 1.12 提醒
 
-1.12版本中，每一个添加的合成都有一个独特的编号，只是因为forge开发团队希望这样。
+1.12版本中，每一个添加的合成都有一个独特的编号，因为forge开发团队希望这样。
 也就是说现在所有添加配方的函数在开头需要有一个不可省略的参数`name`。
 因此`recipe.addShaped(output,input);`会变为`recipe.addShaped(name,output,input);`  
 其他函数都保持一致。谨记`name`要求是独特的。
