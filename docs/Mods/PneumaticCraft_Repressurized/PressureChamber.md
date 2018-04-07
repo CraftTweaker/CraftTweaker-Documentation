@@ -8,12 +8,12 @@ You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurecha
 
 ## Removing
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `output`:
+This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Variable_Types/IItemStack) `output` array:
 
 ```
-mods.pneumaticcraft.pressurechamber.removeRecipe(IIngredient output);
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] output);
 // Example
-mods.pneumaticcraft.pressurechamber.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
+mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
 This function removes *all* Pressure Chamber recipes:
