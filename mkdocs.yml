@@ -356,6 +356,8 @@ pages:
           - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
+      - Chisel:
+        - Carving: 'Mods/Modtweaker/Chisel/Carving.md'
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
