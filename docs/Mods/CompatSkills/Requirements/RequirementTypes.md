@@ -1,7 +1,7 @@
 # Requirement Types
 
 
-##Advancements:
+## Advancements:
 
 Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more relyable for gating.
 The Advancement Syntax is as followS:
@@ -17,7 +17,7 @@ This works for any and all Advancements even those added by other mods than mine
 
 
 
-##GameStages:
+## GameStages:
 
 GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages.
 The GameStage Syntax is as follows:
@@ -31,7 +31,7 @@ stage|test
 
 
 
-##Skills:
+## Skills:
 
 Skills alongside Advancements was one of the original lock types added my Skillable and has since then been refined to support other mods adding more Skills.
 The Skill Syntax is as follows:
@@ -50,7 +50,7 @@ You can find the Skill's ResourceLocations under:
 
 
 
-##Traits:
+## Traits:
 
 Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait.
 Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability.

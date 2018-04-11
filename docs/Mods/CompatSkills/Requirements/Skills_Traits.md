@@ -1,7 +1,7 @@
-#Skills & Traits
+# Skills & Traits
 
 
-##Skills List:
+## Skills List:
 
 | Skills              | ResourceLocation    |
 |:--------------------|:--------------------|
@@ -16,7 +16,7 @@
 
 
 
-##Traits List:
+## Traits List:
 
 | Parent Skill |       Trait        |      ResourceLocation      |
 |:------------:|:------------------:|:---------------------------|

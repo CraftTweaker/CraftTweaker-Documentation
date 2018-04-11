@@ -1,7 +1,7 @@
 # Official Compat Addon for Reskillable
 
 
-##Currently adds Compatibility for:
+## Currently adds Compatibility for:
 - Blood Magic
 - CraftTweaker
 - GameStages
