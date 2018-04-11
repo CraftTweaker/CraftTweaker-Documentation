@@ -1,35 +1,37 @@
-# ICraftingRecipe
+# 合成配方
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.  
+ICraftingRecipe是Zenscript所看到的工作台配方。
 
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+可能需要[导入](/AdvancedFunctions/Import)相关包以避免错误。 
 `import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
-### Check if a inventory contains the recipe
+### 检测一个物品栏是否包含配方
 
-If the [ICraftingInventory](ICraftingInventory) contains the recipe, returns `true`.
+如果[ICraftingInventory（合成物品栏）](ICraftingInventory)包含这个配方，返回`true`
 ```
 rec.matches(inventory);
+//inventory 物品栏
 
 rec in inventory;
 rec has inventory;
 ```
 
-### Check the result of an Inventory craft
+### 检测物品栏配方合成的物品
 
-Returns the item that crafting the items in the [ICraftingInventory](ICraftingInventory) would yield.
+返回在[ICraftingInventory（合成物品栏）](ICraftingInventory)中合成所得到的物品。
 
 ```
 rec.getCraftingResult(inventory);
+//inventory 物品栏
 ```
 
 
 ### Check for transformers
-Returns a boolean
+返回布尔值
 ```
 rec.transformers;
 rec.hasTransformers();
@@ -37,7 +39,7 @@ rec.hasTransformers();
 
 ### ApplyTransformers
 
-Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vanilla/Players/IPlayer).
+参数类型分别是[ICraftingInventory（合成物品栏）](ICraftingInventory)和[IPlayer（玩家）](/Vanilla/Players/IPlayer)。
 ```
 rec.applyTransformers(ICraftingInventory inventory, IPlayer byPlayer);
 ```
