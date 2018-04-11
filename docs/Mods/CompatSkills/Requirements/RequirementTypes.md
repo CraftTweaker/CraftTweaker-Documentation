@@ -33,7 +33,7 @@ stage|test
 
 ## Skills:
 
-Skills alongside Advancements was one of the original lock types added my Skillable and has since then been refined to support other mods adding more Skills.
+Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills.
 The Skill Syntax is as follows:
 ```
 Example:

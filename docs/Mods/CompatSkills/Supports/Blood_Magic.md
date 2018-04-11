@@ -2,6 +2,7 @@
 
 **This Support is WIP**
 **If Something Breaks, please open an issue on the issue tracker!**
+[Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
 
 ## Binding:
 This will cancel the Item Binding in Blood Magic for said specific item if the player doesn't meet the requirements.
