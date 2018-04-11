@@ -1,54 +1,54 @@
-# Recipe Functions
+# 配方函数
 
 
-# IRecipeFunction
-Some recipes support custom functions to programmatically determine their output.  
-This can be especially useful if you need some of the input item's information, like the damage value.  
-This is a so-called IRecipeFunction.
+# IRecipeFunction（合成函数）
+一些配方支持通过编程决定输出的自定义函数。
+当你需要一些输入物品的信息时，例如耐久值，显得尤为重要。
+这就是所谓的IRecipeFunction。
 
-## Example for repairing a pickaxe
+## 修复镐的例子
 
 ```
 val diaPick = <minecraft:diamond_pickaxe>;
 
-//we start normal, by writing the output
+//我们同样先写出输出
 recipes.addShapeless("pickrepair",diaPick,
 
-//followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
+//接着是输入函数，其中有一处变化——我们标记了钻石镐，这样可以在接下来的函数中使用
 [diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
 
-//now we start declaring the function. 
-//It needs 3 parameters, one for the output, one for the inputs and one for crafting info. 
-//We'll only need the input parameter, though.
+//现在我们开始声明这个函数。
+//它需要3个参数，一个是输出，一个是输入，还有一个是合成信息。
+//但我们只需要输出参数。
 function(out, ins, cInfo){
 	
-	//now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
+	//接下来我们返回一个耐久为0或者现有耐久-10（取两个耐久值中的最大值）的镐子。这是用来防止负的耐久值。
 	return ins.mark.withDamage(max(0,ins.mark.damage - 10));
 }, 
-//We don't need a recipeAction here so just set it to null
+//我们不需要recipeAction，所以将它设置为null（空）
 null);
 ```
 
-## How to set up an IRecipeFunction
+## 如何创建IRecipeFunction
 
-As you might have seen in the example above, there is a function with 3 Parameters:  
-You don't have to call them this way, they can have any name.
+正如你在上面的例子中所看到的，它是一个有3个参数的函数： 
+你不一定要这样称呼它们，你可以随便命名。
 
-`out` is the recipe's output and an IItemStack object.  
-`ins` is a map with the marks as keys and the marked inputs as values.  
-`cInfo` is an ICraftingInfo Object
+`out` 类型为IItemStack，是合成的输出。  
+`ins` 是一个映射。它使用键作为标记，标记的输入作为为值。 
+`cInfo` 类型为ICraftingInfo
 
-# IRecipeAction
+# IRecipeAction（合成功能）
 
-But CraftTweaker goes beyond simply calculating your outputs using functions.  
-With an IRecipeAction Function, you can also determine what should happen when a user crafts the item.  
-An IRecipeAction object comes after an IRecipeFunction!
+然而CraftTweaker所能做到的已经超过了简单地使用函数计算你的输出。
+使用IRecipeAction函数，你还可以决定当玩家合成物品是会发生的事。
+IRecipeAction对象在IRecipeFunction之后！
 
 ```
 val stone = <minecraft:stone>;
 
 recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],
-//IrecipeFunction, just return the output, it doesn't interest us this time.
+//IrecipeFunction仅仅返回输出，我们现在对它不感兴趣
 function(out,ins,cInfo){
 	return out;
 },
@@ -58,8 +58,8 @@ function(out,cInfo,player){
 });
 ```
 
-This gives the player who performs the recipe 1 level each time the crafting is completed.
-Again, we have a function with 3 Parameters:  
-`out` is the recipe's output and an IItemStack object.  
-`cInfo` is an ICraftingInfo Object  
-`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer) object.
+这会每一此给合成这个配方的玩家一级经验
+又是一个有三个参数的函数
+`out` 类型为IItemStack，是合成的输出。
+`cInfo` 类型为ICraftingInfo对象
+`player` 类型为[IPlayer](/Vanilla/Players/IPlayer)对象，指的是执行这次合成的玩家。
