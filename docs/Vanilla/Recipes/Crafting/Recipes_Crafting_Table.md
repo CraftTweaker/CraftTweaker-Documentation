@@ -130,7 +130,7 @@ recipes.addShapedMirrored(output,inputs,function,action);
 recipes.addShapedMirrored(name,output,inputs,function,action);
 ```
 
-处理创建的配方是镜像合成以外，和`addShaped`没有区别。
+除了创建的配方是镜像合成以外，和`addShaped`没有区别。
 
 
 ### addShapeless（添加无序合成）
