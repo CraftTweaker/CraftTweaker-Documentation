@@ -1,15 +1,15 @@
-# ICraftingInfo
+# 合成信息
 
-The IcraftingInfo object contains all kinds of information on the crafting process itself:  
+IcraftingInfo（合成信息）对象包含所有合成过程中的信息:  
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+可能需要[导入](/AdvancedFunctions/Import)相关包以避免错误。 
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
 | ZenGetter   |                                                                    |                                                    |
 |-------------|--------------------------------------------------------------------|----------------------------------------------------|
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory) | The inventory the crafting is performed in         |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer)                                | The player conducting the crafting                 |
-| `dimension` | int                                                                | The dimension the crafting process is performed in |
+| `inventory（物品栏）` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory) | 合成所使用的物品栏                          |
+| `player（玩家）`| [IPlayer](/Vanilla/Players/IPlayer)                             | 合成的玩家                                          |
+| `dimension（维度）` | int                                                         | 合成所在的维度                                      |
