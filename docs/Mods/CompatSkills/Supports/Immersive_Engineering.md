@@ -1,7 +1,7 @@
 # Immersive Engineering
 
 ## Credits:
-Credits goes out to @Skysom for helping guide me through this and for allowing me to rework some of his code from MultiblockStages!
+Credits goes out to Skysom for helping guide me through this and for allowing me to rework some of his code from MultiblockStages!
 
 
 ## Explaination:
