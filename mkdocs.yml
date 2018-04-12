@@ -177,6 +177,18 @@ pages:
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
+    - CompatSkills:
+        - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
+          - Requirements:
+            - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
+            - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
+            - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+          - Supports: 
+            - Blood Magic: 'Mods/CompatSkills/Supports/Blood_Magic.md'
+            - CraftTweaker: 'Mods/CompatSkills/Supports/CraftTweaker.md'
+            - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
+            - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
+            - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'
