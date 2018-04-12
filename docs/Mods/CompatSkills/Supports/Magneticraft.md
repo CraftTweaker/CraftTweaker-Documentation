@@ -1,4 +1,4 @@
-# Immersive Engineering
+# Magneticraft
 
 ## Explaination:
 Magneticraft Support currently consists of:
