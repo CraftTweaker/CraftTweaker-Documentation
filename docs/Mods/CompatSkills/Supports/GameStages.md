@@ -22,6 +22,11 @@ There are a few ways around this:
 - Use ResourceLoader by Lumien.
 
 Localization is pretty straight forward.
+```
+assets/compatskills/lang/en_us.lang
+
+en_us.lang = English Translation
+```
 However the texture path for the trait icon is as follows:
 ```
 assets/compatskills/textures/unlockables/name.png
