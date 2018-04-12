@@ -1,6 +1,6 @@
 # GameStages
 
-## Explaination:
+## Explanation:
 So the GameStage Support exists in two form:
 - Using GameStages as Requirements
 - Creating "Dummy Traits" that once unlocked, unlocks a GameStage.
