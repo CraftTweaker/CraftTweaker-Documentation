@@ -1,50 +1,55 @@
-# Furnace
+# 烧炼
 
-Crafttweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+Crafttweaker允许你`添加`和`移除`烧炼配方，以及改变物品的燃料值。
 
 
-## Recipes
+## 配方
 
-### Removal
+### 移除
 
-There are 2 ways to remove Furnace recipes, being:
+一共有两种方法移除烧炼配方，分别是:
 
 ```java
 furnace.remove(output)
 ```
 
-And
+和
 
 ```java
 furnace.remove(output, input);
 ```
 
-The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
-The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
+第一个方法对移除的配方要求较低，它会移除所有输出为传入的`output`的烧炼配方。 
+第二个方法对移除的配方要求更严格，会移除所有输入为传入的`input`且输出为传入的`output`的烧炼配方。
 
-There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
+这里还有第三种移除烧炼配方的方法，然而它会移除所有游戏中注册的烧炼配方。
 
 ```java
 furnace.removeAll();
 ```
 
-### Addition
+### 添加
 
-There are 2 commands for adding furnace recipes:
+添加烧炼配方一共有两个命令:
 
 ```java
 furnace.addRecipe(output, input);
+//output 输出
+//input 输入
 ```
 
-And
+和
 
 ```java
 furnace.addRecipe(output, input, xp);
+//output 输出
+//input 输入
+//xp 经验数
 ```
 
-The first syntax will add a Furnace recipe that will give 0 xp on smelt.
+第一个方法会添加一个不给予任何经验的烧炼配方。
 
-The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
+第二个方法会添加一个给予`xp`数量经验的烧炼配方。
 
 
 ## Fuel
