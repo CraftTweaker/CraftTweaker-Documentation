@@ -210,6 +210,18 @@ pages:
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
+    - CompatSkills:
+      - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
+      - Requirements:
+        - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
+        - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+      - Supports:
+        - Blood Magic: 'Mods/CompatSkills/Supports/Blood_Magic.md'
+        - CraftTweaker: 'Mods/CompatSkills/Supports/CraftTweaker.md'
+        - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
+        - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
+        - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'
@@ -290,7 +302,6 @@ pages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
-      - From The Ground Up: 'Mods/GameStages/FromTheGroundUp/FTGU.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
@@ -374,6 +385,7 @@ pages:
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
@@ -381,6 +393,7 @@ pages:
         - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
         - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
       - Blood Magic:
         - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
         - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
@@ -398,6 +411,8 @@ pages:
           - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
+      - Chisel:
+        - Carving: 'Mods/Modtweaker/Chisel/Carving.md'
       - Extra Utilities 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
