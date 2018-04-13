@@ -52,63 +52,64 @@ furnace.addRecipe(output, input, xp);
 第二个方法会添加一个给予`xp`数量经验的烧炼配方。
 
 
-## Fuel
+## 燃料
 
-### Set
+### 设置
 
-The command for setting fuel values is:
+设置燃料燃烧值的指令是:
 
 ```java
 furnace.setFuel(input, burnTime);
 ```
 
-This will set the burn value of `input` to `burnTime`.
+它将会把`input（输入）`物品的燃烧值设为`burntime（燃烧时间）`。
  
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+将`burntime`设置为`0`会使`input`不能作为燃料。
 
-### Get
+### 获取
 
-The command for retrieving an item's fuel value is:
+检索物品燃烧值的指令是:
 
 ```java
 furnace.getFuel(item); 
+//item 物品
 ```
 
-This will return the burn value as an Integer
+将以整数形式返回燃烧值
 
-## Examples
+## 例子
 
-### Removal
+### 移除
 
-This will remove all Furnace recipes that outputs `<minecraft:glass>`.
+这将移除所有输入为`<minecraft:glass>`的烧炼配方
 
 ```java
 furnace.remove(<minecraft:glass>);
 ```
 
-This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
+这将移除所有输入为`<minecraft:quartz_ore>`且输出为`<minecraft:quartz>`的烧炼配方。
 
 ```java
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### 添加
 
-This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
+这会添加当`<minecraft:apple>`被熔炼后输出`<minecraft:golden_apple>`的熔炼配方。 
 
 ```java
 furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
+这会添加当`<minecraft:melon>`被熔炼后输出`<minecraft:speckled_melon>`且给予1500点经验的烧炼配方。
 
 ```java
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
-### Fuel
+### 燃料
 
-This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+这会将`<minecraft:rotten_flesh>`的燃料值设置为`100`.
 
 ```java
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
@@ -116,9 +117,9 @@ furnace.setFuel(<minecraft:rotten_flesh>, 100);
 
 
 
-## Other Functionality
-### Getting all registered Furnace Recipes
+## 其他功能
+### 获取所有注册的烧炼配方
 ```
 furnace.all;
 ```
-Returns a [`List<IFurnaceRecipe>`](IFurnaceRecipe).
+返回一个[`<IFurnaceRecipe>列表`](IFurnaceRecipe)。
