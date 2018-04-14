@@ -16,7 +16,7 @@
 
 ### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
@@ -32,7 +32,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 ### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
 ```
