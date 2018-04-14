@@ -1,7 +1,7 @@
 # 合金窑
 合金窑相关包可以被用于为沉浸工程的合金窑添加或移除配方。
 
-## 相关包
+## 导入相关包
 使用`mods.immersiveengineering.AlloySmelter`以导入合金窑相关包。
 
 ## 添加配方
