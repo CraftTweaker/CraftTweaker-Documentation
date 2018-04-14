@@ -1,20 +1,20 @@
-# Alloy Smelter
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+# 合金窑
+合金窑相关包包可以被用于为沉浸工程的合金窑添加或移除配方。
 
-## Calling The Package
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+## 相关包
+使用`mods.immersiveengineering.AlloySmelter`以导入合金窑相关包。
 
-## Add Recipe
+## 添加配方
 
-|Required  |Type              |Data Type                                          |
+|是否必要   |类型              |数据类型                                            |
 |----------|------------------|---------------------------------------------------|
-|Required  |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
-|Required  |Input 1           |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
-|Required  |Input 2           |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
-|Required  |Time              |Integer                                            |
+|必要       |Output（输出）   |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)            |
+|必要       |Input 1 （输入1）|[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient) |
+|必要       |Input 2 （输入2）|[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient) |
+|必要       |Time （时间）    |整数                                            |
 
 
-### Example
+### 例子
 ```JAVA
 //Example:
 mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
@@ -23,14 +23,14 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 
 
-## Remove Recipe
+## 移除配方
 
-|Type              |Data Type                                          |
-|------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|类型         |数据类型                                         |
+|-------------|------------------------------------------------|
+|Output（输出）|[IItemstack（物品堆）](/Vanilla/Items/IItemStack)|
 
 
-### Example
+### 例子
 ```JAVA
 //Example:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
