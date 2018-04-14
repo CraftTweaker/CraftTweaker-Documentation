@@ -281,10 +281,10 @@ pages:
         - Diesel Helper: 'Mods/Immersive_Engineering/CraftTweaker_Support/Diesel_Helper.md'
         - 斗轮式挖掘机:
           - 斗轮式挖掘机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Excavator.md'
-          - Mineral Mix: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Mineral_Mix.md'
+          - 矿床: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Mineral_Mix.md'
         - 发酵机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
         - 金属冲压机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
-        - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
+        - 混合器: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
         - 炼油厂: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
         - 挤压机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
     - 沉浸原油:
