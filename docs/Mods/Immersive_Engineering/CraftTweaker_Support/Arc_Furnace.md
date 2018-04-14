@@ -1,25 +1,25 @@
-# Arc Furnace
-The Arc Furnace package can be used to add/remove recipes to/from the Immersive Engineering Arc Furnace.
+# 电弧炉
+电弧炉相关包可以被用于为沉浸工程的电弧炉添加或移除配方。
 
-## Calling The Package
-You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
+## 导入相关包
+使用`mods.immersiveengineering.ArcFurnace`以导入电弧炉相关包。
 
-## Add Recipe
+## 添加配方
 
-|Required  |Type                 |Data Type                                          										|
-|----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[IItemStack](/Vanilla/Items/IItemStack) 													|
-|Required  |Input                |[IIngredient](/Vanilla/Variable_Types/IIngredient)      									|
-|Required  |Slag                 |[IItemStack](/Vanilla/Items/IItemStack)													|
-|Required  |Time                 |Integer																					|
-|Required  |Energy Per Tick      |Integer																					|
-|Optional  |Additives            |[IIngredient](/Vanilla/Variable_Types/IIngredient) Array[]								|
-|Optional  |Special Recipe Type  |String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md)  |
+|是否必要 |类型                             |数据类型                                        										|
+|--------|---------------------------------|------------------------------------------------------------------------------------------|
+|必要    |Output（输出）                    |[IItemStack（物品堆）](/Vanilla/Items/IItemStack) 													|
+|必要    |Input（输入）                     |[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient)      									|
+|必要    |Slag（副产物）                    |[IItemStack（物品堆）](/Vanilla/Items/IItemStack)													|
+|必要    |Time（时间）                      |整数																					|
+|必要    |Energy Per Tick（每刻消耗的能量）  |整数																					|
+|可选    |Additives（添加物）               |[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient) 数组[]								|
+|可选    |Special Recipe Type（特殊合成种类）|字符串[specialRecipeTypes（特殊合成类型）](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md)  |
 
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
 mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
@@ -30,16 +30,16 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 
 
-## Remove Recipe
+## 移除配方
 
-|Type              |Data Type                                          |
+|类型              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|输出              |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)   |
 
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack output);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>);
 ```
