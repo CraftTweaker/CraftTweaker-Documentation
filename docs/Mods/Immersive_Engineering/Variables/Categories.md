@@ -1,18 +1,18 @@
-# Categories
+# 类别
 
-## Information
-The Blueprint has a Required String parameter called "Category".
-This String allows you to "Categorise" your recipes to a specific Blueprint Category.
+## 信息
+蓝图有一个必要的参数，它叫做"Category（类别）".
+这个字符串允许你将配方分类到一个特定的蓝图类别。
 
-If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint.
-If it finds an existing Category it'll add the recipe to said Category.
+如果这个字符串的内容是一个不存在的类别，将会创建这个类别和一个合适的蓝图。
+如果这个字符串的内容是一个现有的类别，将会把这个配方加入此类别。
 
-### Existing Categories
+### 现有类别
 
-|Category:   |Name:         |Localized Name:            |
-|------------|--------------|---------------------------|
-|Category    |components    |Crafting Components 		|
-|Category    |molds			|Metal Press Molds 			|
-|Category    |bullet 		|Common Projectiles			|
-|Category    |specialBullet |Specialized Projectiles	|
-|Category    |electrode		|Arc Furnace Electrodes		|
+|类别:        |名称:         |本地化名称:                        |
+|------------|--------------|----------------------------------|
+|Category    |components    |Crafting Components（制作组件） 		|
+|Category    |molds			    |Metal Press Molds（金属冲压模具）  |
+|Category    |bullet 		    |Common Projectiles（普通子弹）			|
+|Category    |specialBullet |Specialized Projectiles（特种子弹）|
+|Category    |electrode	   	|Arc Furnace Electrodes（电弧炉电极）|
