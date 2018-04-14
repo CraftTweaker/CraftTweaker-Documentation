@@ -17,5 +17,5 @@
 绝大多数机器以及一些与机器不相关的特性都可以使用Zenscript配置。
 
 
-## Bug报告
+## Bug反馈
 https://github.com/BluSunrize/ImmersiveEngineering/issues
