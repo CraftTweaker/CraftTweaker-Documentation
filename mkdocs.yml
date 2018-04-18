@@ -299,10 +299,10 @@ pages:
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
       - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
+      - Fluid Dictionary: 'Mods/Industrial_Foregoing/FluidDictionary.md'
       - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
       - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
       - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
-      - Fluid Dictionary: 'Mods/Industrial_Foregoing/FluidDictionary.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
