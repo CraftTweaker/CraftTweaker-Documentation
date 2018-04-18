@@ -189,6 +189,12 @@ pages:
             - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
             - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
             - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
+            - Reskillable: 'Mods/CompatSkills/Supports/Reskillable.md'
+          - PlayerExpansion: 
+            - PlayerExpansion: 'Mods/CompatSkills/Supports/PlayerExpansion/PlayerExpansion.md'
+            - Wrapper:
+              - CTPlayerData: 'Mods/CompatSkills/Supports/PlayerExpansion/Wrapper/CTPlayerData.md'
+              - CTPlayerSkillInfo: 'Mods/CompatSkills/Supports/PlayerExpansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'
