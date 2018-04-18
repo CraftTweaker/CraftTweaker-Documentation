@@ -63,8 +63,9 @@ fluid.register();
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;
+import mods.contenttweaker.Color;
 
-var zsFluid = VanillaFactory.createFluid("zs_fluid", 0);
+var zsFluid = VanillaFactory.createFluid("zs_fluid", Color.fromHex("FF69B4"));
 zsFluid.fillSound = <soundevent:block.anvil.place>;
 zsFluid.register();
 ```
