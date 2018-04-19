@@ -27,6 +27,6 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 ### 例子
 ```JAVA
 //例:
-:mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
+mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```
