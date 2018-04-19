@@ -1,13 +1,13 @@
-# Special Recipe Types
+# 特殊合成类型
 
-## Information
-The Arc-Furnace has an Optional String parameter called "specialRecipeType".
-This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type.
-This does not alter behavior in any way, it just assigns it to a Sub-Tag.
+## 信息
+电弧炉有一个叫"specialRecipeType（特殊合成类型）"的可选参数。
+这个字符串允许你给一个配方添加一个特定合成类型的“子标签”。
+它不会改变其他任何行为，只会将它归类为于一个子标签。
 
-### Existing Types
+### 现有类型
 
-|Recipe Types:      |Value      |
-|-------------------|-----------|
-|Alloying           |"Alloying"	|
-|Ores               |"Ores"   	|
+|合成类型: |值         |
+|---------|-----------|
+|合金     |"Alloying"	|
+|矿物     |"Ores"   	|
