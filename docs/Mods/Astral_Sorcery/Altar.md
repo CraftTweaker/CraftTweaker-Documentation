@@ -96,7 +96,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe(<astralsorcery:itemcrafting
 			<ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Trait
+### 光辉
 
 添加五彩祭坛（T4）的合成
 
