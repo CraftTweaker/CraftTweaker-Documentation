@@ -11,8 +11,8 @@
 
 |类别:        |名称:         |本地化名称:                        |
 |------------|--------------|----------------------------------|
-|Category    |components    |Crafting Components（制作组件） 		|
-|Category    |molds			    |Metal Press Molds（金属冲压模具）  |
-|Category    |bullet 		    |Common Projectiles（普通子弹）			|
-|Category    |specialBullet |Specialized Projectiles（特种子弹）|
-|Category    |electrode	   	|Arc Furnace Electrodes（电弧炉电极）|
+|Category    |components    |制作组件 		|
+|Category    |molds			    |金属冲压模具  |
+|Category    |bullet 		    |普通子弹			|
+|Category    |specialBullet |特种子弹|
+|Category    |electrode	   	|电弧炉电极|
