@@ -1,34 +1,34 @@
-# Diesel Helper
-The Diesel Handler package can be used to change IE fuels.
+# 柴油助手
+柴油助手相关包可以被用于改变沉浸工程的燃料。
 
-## Calling The Package
-You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
+## 导入相关包
+使用`mods.immersiveengineering.DieselHandler`以导入柴油助手相关包。
 
-## Add Fuel
+## 添加燃料
 
-|Required  |Type                 |Data Type                                          										|
+|是否必要  |类型                  |数据类型                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)   											|
-|Required  |Input                |Integer      																				|
+|必要      |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)   											|
+|必要      |Input                |Integer      																				|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 ```
 
 
-## Remove Fuel
+## 移除燃料
 
-|Required  |Type                 |Data Type                                          										|
+|是否必要  |类型                  |数据类型                                         										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|必要     |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)  												|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
@@ -36,30 +36,30 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 
 
-## Add Drill Fuel
+## 添加采矿机械钻燃料
 
-|Required  |Type                 |Data Type                                          										|
+|是否必要   |类型                 |数据类型                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|必要      |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)  												|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 ```
 
 
-## Remove Drill Fuel
+## 移除采矿机械钻燃料
 
-|Required  |Type                 |Data Type                                          										|
+|是否必要  |类型                 |数据类型                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|Required  |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)  												|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>);
