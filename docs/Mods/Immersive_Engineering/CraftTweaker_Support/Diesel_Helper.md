@@ -55,7 +55,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 |是否必要  |类型                 |数据类型                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)  												|
+|必要      |Output               |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)  												|
 
 ### 例子
 ```JAVA
