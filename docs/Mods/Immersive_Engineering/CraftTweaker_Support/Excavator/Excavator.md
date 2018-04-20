@@ -11,7 +11,7 @@
 |必要      |Mineral Weight（矿物权重）        |整数      |
 |必要      |Fail Chance（失败几率）           |双精度型   |
 |必要      |Ores（矿物）                     |字符串[]   |
-|必要      |Chances（几率）                  |双精度型[]   |
+|必要      |Chances（概率）                  |双精度型[]   |
 |可选      |Dimension Whitelist（维度白名单）|整数[]  |
 |可选      |Blacklist（设为维度黑名单）       |布尔值    |
 
