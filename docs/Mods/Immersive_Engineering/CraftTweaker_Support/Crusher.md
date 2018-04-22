@@ -1,22 +1,22 @@
-# Crusher
-The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
+# 粉碎机
+粉碎机相关包可以被用于为沉浸工程的添加添加或移除配方。
 
-## Calling The Package
-You can call the Crusher package using `mods.immersiveengineering.Crusher`.
+## 导入相关包
+使用`mods.immersiveengineering.Crusher`以导入粉碎机相关包。
 
-## Add Recipe
+## 添加配方
 
-|Required  |Type                  |Data Type                                          										|
+|是否必要   |类型                  |数据类型                                           										|
 |----------|----------------------|-----------------------------------------------------------------------------------------|
-|Required  |Output                |[IItemStack](/Vanilla/Items/IItemStack) 													|
-|Required  |Input                 |[IIngredient](/Vanilla/Variable_Types/IIngredient)      									|
-|Required  |Energy                |Integer																					|
-|Optional  |Secondary Output      |[IItemStack](/Vanilla/Items/IItemStack)													|
-|Optional  |Secondary Chance      |Double																					|
+|必要      |Output（输出）               |[IItemStack（物品堆）](/Vanilla/Items/IItemStack) 													|
+|必要      |Input（输入）                |[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient)      									|
+|必要      |Energy（能量）               |整数																					|
+|可选      |Secondary Output（副产物）   |[IItemStack（物品堆）](/Vanilla/Items/IItemStack)													|
+|可选      |Secondary Chance（副产物概率）|双精度型																					|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
@@ -26,15 +26,15 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 
 
-## Remove Recipe
+## 移除配方
 
-|Type              |Data Type                                          |
+|类型               |数据类型                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output（输出）     |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)            |
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
