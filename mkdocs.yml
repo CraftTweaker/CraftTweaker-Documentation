@@ -311,9 +311,9 @@ pages:
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
       - MobStages: 'Mods/GameStages/MobStages/MobStages.md'
       - RecipeStages: 'Mods/GameStages/RecipeStages/RecipeStages.md'
+      - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-      - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:

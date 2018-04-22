@@ -40,11 +40,6 @@ mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 mods.botania.Lexicon.removeEntry(String entry);
 ```
 
-### Set
-```
-mods.botania.Lexicon.setEntryKnowledgeType(String entry, String knowledgeType);
-```
-
 
 ## Categories
 ### Addition
