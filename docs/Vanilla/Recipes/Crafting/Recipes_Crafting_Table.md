@@ -176,6 +176,13 @@ You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/IC
 recipes.getRecipesFor(<minecraft:iron_ingot>);
 ```
 
+### Replace all item ingredients with another one
+You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient) in a recipe with another one, for example all sticks with stones.
+```
+//recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith);
+recipes.replaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
+```
+
 ### Craft
 You can even craft from inside `recipes`! The function will return an [IItemStack](Vanilla/Items/IItemStack) or `null` depending if a recipe is found or not.
 
