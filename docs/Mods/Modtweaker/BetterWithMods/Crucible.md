@@ -1,6 +1,5 @@
 # Crucible
 
-
 ## Basic Recipe
 
 * Adds a Unstoked Crucible Recipe  

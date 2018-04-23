@@ -13,7 +13,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 
 ## ZenGetters
 
-| GetterName                  | GetterMethod        | Return Type                                  |
+| GetterName                  | GetterMethod        | Return Type (*can be null*)                  |
 |-----------------------------|---------------------|----------------------------------------------|
 | air                         | getAir()            | int                                          |
 | alive                       | isAlive()           | boolean                                      |
@@ -24,8 +24,9 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | canBeCollidedWith           |                     | boolean                                      |
 | canPassengerSteer           |                     | boolean                                      |
 | canRiderInteract            |                     | boolean                                      |
-| controllingPassenger        |                     | IEntity                                      |
+| controllingPassenger        |                     | *IEntity*                                    |
 | customName                  | getCustomName()     | String                                       |
+| definition                  |                     | *[IEntityDefinition](IEntityDefinition)*     |
 | dimension                   | getDimension()      | int                                          |
 | doesTriggerPressurePlate    |                     | boolean                                      |
 | equipmentAndArmor           |                     | List<[IItemStack](/Vanilla/Items/IItemStack) |
@@ -52,7 +53,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | isSilent                    |                     | boolean                                      |
 | isSneaking                  |                     | boolean                                      |
 | isSprinting                 |                     | boolean                                      |
-| lowestRidingEntity          |                     | IEntity                                      |
+| lowestRidingEntity          |                     | *IEntity*                                    |
 | maxFallHeight               |                     | int                                          |
 | maxInPortalTime             |                     | int                                          |
 | parts                       |                     | IEntity[]                                    |
@@ -60,14 +61,24 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | passengersRecursive         |                     | List<IEntity\>                               |
 | portalCooldowne             |                     | int                                          |
 | position3f                  | getPosition3f()     | [Position3f](/Vanilla/Utils/Position3f)      |
-| ridingEntity                | getRidingEntity()   | IEntity                                      |
+| ridingEntity                | getRidingEntity()   | *IEntity*                                    |
 | shouldRiderSit              |                     | boolean                                      |
 | tags                        |                     | List<string\>                                |
+| team                        |                     | *[ITeam](/Vanilla/Game/ITeam)*               |
 | wet                         | isWet()             | boolean                                      |
 | world                       |                     | [IWorld](/Vanilla/World/IWorld)              |
 | x                           | getX()              | double                                       |
 | y                           | getY()              | double                                       |
 | z                           | getZ()              | double                                       |
+| motionX                     |                     | double                                       |
+| motionY                     |                     | double                                       |
+| motionZ                     |                     | double                                       |
+| posX                        |                     | double                                       |
+| posY                        |                     | double                                       |
+| posZ                        |                     | double                                       |
+| rotationYaw                 |                     | float                                        |
+| rotationPitch               |                     | float                                        |
+| lookingDirection            |                     | [IVector3d](/Vanilla/World/IVector3d)        |
 
 
 ## ZenSetters
@@ -88,6 +99,14 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender). That means t
 | isSneaking                  |                     | boolean                                      |
 | isSprinting                 |                     | boolean                                      |
 | position                    | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos)        |
+| rotationYaw                 |                     | float                                        |
+| rotationPitch               |                     | float                                        |
+| motionX                     |                     | double                                       |
+| motionY                     |                     | double                                       |
+| motionZ                     |                     | double                                       |
+| posX                        |                     | double                                       |
+| posY                        |                     | double                                       |
+| posZ                        |                     | double                                       |
 
 
 ## More ZenMethods

@@ -7,6 +7,13 @@ You will need to cast the event in the function header as this class:
 `crafttweaker.event.PlayerInteractEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
 
+## Event interface extensions
+PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+
+- [IEventCancelable](IEventCancelable)
+- [IPlayerEvent](IPlayerEvent)
+- [IEventPositionable](IEventPositionable)
+
 
 ## ZenGetters
 The following information can be retrieved from the event:
@@ -21,7 +28,7 @@ The following information can be retrieved from the event:
 | `z`          | int                                       |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer)       |
 | `world`      | [IWorld](/Vanilla/World/IWorld)           |
-| `block`      | [IBlock](/Vanilla/Block/IBlock)           |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock)          |
 | `dimension`  | int                                       |
 
 ## ZenMethods

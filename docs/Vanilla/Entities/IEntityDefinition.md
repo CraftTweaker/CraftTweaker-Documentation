@@ -35,6 +35,18 @@ Returns the name as string
 <entity:minecraft:sheep>.name;
 ```
 
+### create entity
+The first method only creates an entity on the given location.  
+The second one also spawns it.
+```
+<enity:minecraft:sheep>.createEntity(world);
+<enity:minecraft:sheep>.spawnEntity(world, blockPos);
+```
+
+`world` is an [IWorld](/Vanilla/World/IWorld) object.  
+`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos) object.
+
+
 ## Drops
 
 We can even add and/or remove mob drops, isn't that great?

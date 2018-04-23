@@ -7,7 +7,9 @@ You can call the Apothecary package using `mods.botania.Apothecary`
 
 ## Recipe addition
 
-You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
+You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
+Remember one thing though:  
+The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
 
 ```
 //mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);

@@ -13,3 +13,10 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 rec.commandString;
 rec.toCommandString();
 ```
+
+### Other getters
+```
+rec.input;
+rec.output;
+rec.xp;
+```

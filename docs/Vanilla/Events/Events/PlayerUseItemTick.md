@@ -7,16 +7,22 @@ You will need to cast the event in the function header as this class:
 `crafttweaker.event.PlayerUseItemTick`  
 You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
 
+## Event interface extensions
+PlayerUseItemTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+
+- [IEventCancelable](IEventCancelable)
+- [IPlayerEvent](IPlayerEvent)
+
 
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                            |
-|-------------|----------------------------------------|
-| `canceled`  | boolean                                |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer)    |
-| `item`      | [IItemStack](/Vanilla/Item/IItemStack) |
-| `duration`  | int                                    |
+| ZenGetter   | Return Type                             |
+|-------------|-----------------------------------------|
+| `canceled`  | boolean                                 |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer)     |
+| `item`      | [IItemStack](/Vanilla/Items/IItemStack) |
+| `duration`  | int                                     |
 
 ## ZenMethods
 

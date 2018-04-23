@@ -1,7 +1,6 @@
 # Kiln
 
 ## Basic Recipe
-
 * Adds Kiln Recipe - inputs *MUST* have a block associated with them.
   
 ```

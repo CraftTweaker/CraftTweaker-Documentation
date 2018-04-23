@@ -84,7 +84,8 @@ print(stringArrayAll[0][1]);
 A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
 ## For Loop
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.
+The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+You can use the `break` keyword to break the loop prematurely.
 
 ```
 import crafttweaker.item.IItemStack;
@@ -124,6 +125,40 @@ for i in 10 .. 20 {
 for item in loadedMods["minecraft"].items {
 	//defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
 	recipes.remove(item);
+}
+```
+
+## While Loop
+The while loop executes the given code as long as the given condition evaluates to `true`.  
+Alternatively, you can stop it using the `break` keyword.
+
+```
+var i = 0; 
+
+//Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+while i < 10 {
+	print(i); 
+	i += 1;
+} 
+
+print("After loop: " + i);
+
+
+//Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+while (i > 0) {
+	if i == 5
+		break;
+	print(i);
+	i -= 1;
+}
+
+print("After loop 2: " + i);
+
+
+for k in 1 .. 10 {
+	if (k == 5)
+	    break;
+	print(k);
 }
 ```
 
