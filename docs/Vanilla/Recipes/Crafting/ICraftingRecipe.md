@@ -9,24 +9,20 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 
 ## ZenMethods/Getters
 
-### Check if a inventory contains the recipe
-
-If the [ICraftingInventory](ICraftingInventory) contains the recipe, returns `true`.
+### Get Ingredients
+Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][]
 ```
-rec.matches(inventory);
-
-rec in inventory;
-rec has inventory;
+rec.ingredients1D
+rec.ingredients2D
 ```
 
-### Check the result of an Inventory craft
+### Get standart output
 
-Returns the item that crafting the items in the [ICraftingInventory](ICraftingInventory) would yield.
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack). Careful, can be null!
 
 ```
-rec.getCraftingResult(inventory);
+rec.output
 ```
-
 
 ### Check for conditions
 Each of these returns a boolean
@@ -36,13 +32,6 @@ rec.hasRecipeAction;
 rec.hasRecipeFunction;
 rec.hidden;
 rec.shaped;
-```
-
-### ApplyTransformers
-
-Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vanilla/Players/IPlayer).
-```
-rec.applyTransformers(ICraftingInventory inventory, IPlayer byPlayer);
 ```
 
 ### resourceDomain

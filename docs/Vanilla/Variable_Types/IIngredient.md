@@ -18,6 +18,16 @@ import crafttweaker.item.IIngredient;
 ## Functions
 So, what can we do with this?
 
+### Command String
+The command string is how you would call this item in ZS.  
+This can be a bracket handler or something similar.  
+```
+val item = <minecraft:iron_ingot>;
+
+//prints "<minecraft:iron_ingot>"
+print(item.commandString);
+```
+
 ### Mark
 
 You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions).
@@ -54,9 +64,6 @@ val item2 = <minecraft:carrot>;
 val either = item1 | item2;
 val either2 = item1.or(item2);
 ```
-
-One word of advice though:
-Using the OR methods is not adviced, as JEI does not display these recipes and sometimes the inputs won't even be consumed!
 
 
 ### Get Possible Items or Liquids
@@ -102,10 +109,13 @@ This is what item Transformers are there for.
 
 val item = <minecraft:apple>;
 
-//Item won't be consumed but will be placed in your inventory upon crafting.
+//Item won't be consumed and will stay in the grid
+transformedItem = item.reuse();
+
+//Item won't be consumed and the whole stack will be given back to you (does /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will return the specified item to your inventory upon crafting.
+//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
 transformedItem = item.giveBack(<minecraft:potato>);
 
 //item will be replaced with the specified item, which will instead go to the crafting slot
@@ -148,11 +158,11 @@ conditionedItem = item.onlyDamageBetween(10,100);
 conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
 
 //Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
-//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will shot the tags in the recipe!
+//Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will show the tags in the recipe!
 conditionedItem = item.withTag({display: {Name: "Tomato"}});
 
 //Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
-//Note that if you only add this, you will still require only one item per craft.
+//Note that if you only add this, it will still consume only one item per craft.
 conditionedItem = item.onlyStack(32);
 ```
 

@@ -39,7 +39,8 @@ This Annotation can have these arguments:
     - If `null`, it will not register a ZenSetter
 
 
-**The important thing with ZenProperties is, that you still need to declare setter/getter Methods, you just don't have to give them `@ZenProperty`**
+You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
+If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
 
 
 
