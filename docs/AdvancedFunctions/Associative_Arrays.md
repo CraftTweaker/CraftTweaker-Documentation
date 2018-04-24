@@ -1,42 +1,42 @@
-# Associative Arrays
+# 关联数组
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+关联数组（有的地方也叫映射或者字典）和普通的[数组](Arrays_and_Loops)极为相似，也能够存储多条数据。但和[数组](Arrays_and_Loops)不同之处在于，数组的下标（在这里一般叫做“键”）可以随意定义！
 
-## Declaring an Associative Array
+## 声明一个关联数组
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`  
-```JAVA
+你可以使用花括号 `{}` 和冒号 `:` 来声明关联数组  
+```Js
 val myAssocArray = {
 	dirt : <minecraft:dirt>,
 	gold : <minecraft:gold_ingot>
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?  
+让我们对其进行拆分分析：  
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
-
-
-Okay, so what do I need to think of when using these?  
-
-- You can use about every type available to Zenscript as either key or value.
-- You cannot iterate over an Associative Array that uses Arrays as keys.
-- You cannot use the 2-Variable Iterator when iterating over an Array that uses Arrays as values.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- `val myAssocArray =` 标准变量声明
+- `{` 告诉程序，这是一个关联数组！
+- `dirt : <minecraft:dirt>` 使用字符串 `dirt` 来关联 `<minecraft:dirt>`  
+- `,` 告诉程序，后面还有数据
+- `gold : <minecraft:gold_ingot>` 使用字符串 `gold` 来关联 `<minecraft:gold_ingot>`
+- `}` 告诉程序，关联数组写完了
+- `as IItemStack[string];` 向程序说明这是一个关联数组，使用字符串作为键，使用 IItemStacks 作为值。
 
 
-## Refering to Items inside an Associative Array.
+好的，当我使用这个数据类型的时候，应该注意些什么？  
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops):  
+- 你可以使用 Zenscript 中的所有类型来作为键或值。
+- 你不能使用数组作为键，来遍历一个关联数组。
+- 你不能使用2个变量的遍历方法遍历使用数组作为值的数组。
+- 你不可以用变量作为声明数组的键（使用`{}`的那个），因为纯文本将会被解释成字符串！
+
+
+## 在关联数组中访问元素。
+
+你可以像访问[数组](Arrays_and_Loops)那样访问一个关联数组中的元素：  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!  
-```JAVA
+唯一不同之处在于，不再通过整型数下标来访问数组，而是通过你之前预先申明的 key 来访问！  
+```js
 
 val dirt = <minecraft:dirt>;
 val assocArray = {
@@ -46,48 +46,48 @@ val assocArray = {
 //array[index]
 print(assocArray[<minecraft:dirt>]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//你也可以使用变量，只要类型匹配即可。
 print(assocArray[dirt]);
 ```
 
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:  
-```JAVA
+有一种特殊情况，当你使用字符串作为 key 的时候：  
+这时候你可以直接这样做来调用元素：  
+```js
 val assocWithStrings = {
-	//you can use "" if you want
+	//你可以使用 "" 符号来包裹字符串
 	"one" : "1",
 
-	//but you don't have to
+	//当然这不是强制性的
 	two : "2"
 } as string[string];
 
-//You can either use the memberGetter
+//你就可以直接进行访问
 print(assocWithStrings.one);
 
-//Or the standard index Getter
+//或者用标准的 key 来进行访问
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## 在关联数组中修改元素
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+在数组中，你可以通过 `array[index] = newValue` 方法来修改数组中的元素。  
+关联数组有个不同之处：  
+数组是长度是固定的，但是映射（关联数组）却不是。这意味着你随时可以向数组中添加先前并不包含的 key 来添加新条目！
 
-```JAVA
+```js
 val changingArray = {
-	<minecraft:dirt> : "this is me",
-	<minecraft:gold_ingot> : "and I hate it"
+	<minecraft:dirt> : "这是我",
+	<minecraft:gold_ingot> : "我讨厌他"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//覆盖 gold_ingot 的 value
+changingArray[gg] = "我喜欢他";
 
-//adds a new entry
-changingArray[<minecraft:grass>] = "Power!";
+//添加一个新的条目
+changingArray[<minecraft:grass>] = "力量！";
 ```
 
 ## Retrieving an Associative Array's Key and Entrysets
@@ -105,22 +105,22 @@ myAssocArray.entrySet //entrySet
 ```
 
 
-## Iterating over an Associative Array
+## 遍历一个关联数组
 
-There are two Iterators that allow you to iterate over an Associative Array:  
+这里提供了两种遍历方法来遍历关联数组：
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- key 遍历法：遍历 key，只需要传入一个参数
+- key-value 遍历法：同时遍历 keys 和 values，需要传入两个参数
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:  
+让我们来声明一个关联数组，并存储合成表，而后进行迭代：  
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- Keys 作为合成的输出结果，以 [IItemStack](/Vanilla/Items/IItemStack) 类型存储
+- Values 作为合成的输入材料，以 [IIngredient](/Vanilla/Variable_Types/IIngredient) 类型存储
+- 我们通过 key 遍历法来遍历数组，像这样：`for key in assocArray {doSth;}`
+- 我们还要通过 key-value 遍历法来遍历数组，像这样：`for key, value in assocArray {doSth;}`
 
 
-```JAVA
+```js
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -132,13 +132,13 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//key 是 grass, goldIngot, dirt
 for key in recipeMapShaped {
 	recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//keys 是 grass, goldIngot, dirt, values 是它们的合成表
 for key, value in recipeMapShaped {
 	recipes.addShaped(key, value);
 }

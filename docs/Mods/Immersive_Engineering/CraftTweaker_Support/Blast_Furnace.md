@@ -1,64 +1,64 @@
-# Arc Furnace
-The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
+# 高炉
+高炉相关包可以被用于为沉浸工程的高炉添加或移除配方。
 
 
-## Calling The Package
-You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
+## 导入相关包
+使用`mods.immersiveengineering.BlastFurnace`以导入高炉相关包。
 
 
-## Add Recipe:
-|Required  |Type    |Data Type                                			 |
-|----------|--------|----------------------------------------------------|
-|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack)  			 |
-|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient)  |
-|Required  |Time    |Integer  											 |
-|Optional  |Slag    |[IItemstack](/Vanilla/Items/IItemStack)  			 |
+## 添加配方:
+|是否必要   |类型           |数据类型                                			 |
+|----------|---------------|----------------------------------------------------|
+|必要      |Output（输出）  |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)  			 |
+|必要      |Input（输入）   |[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient)  |
+|必要      |Time（时间）    |整数 											 |
+|可选      |Slag（炉渣）    |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)  			 |
 
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Remove Recipe
-|Type              |Data Type                                          |
+## 移除配方
+|类型              |数据类型                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|输出              |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)            |
 
-### Example:
+### 例子:
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
 
 
-## Add Fuel
-|Required  |Type    |Data Type                                			|
-|----------|--------|---------------------------------------------------|
-|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
-|Required  |Time    |Integer  											|
+## 添加燃料
+|是否必要   |类型         |数据类型                                			|
+|----------|------------|---------------------------------------------------|
+|必要      |Input（输入）|[IIngredient（材料）](/Vanilla/Variable_Types/IIngredient) |
+|必要      |Time （时间）|整数 											|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
 mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
 
-## Remove Fuel
-|Required  |Type    |Data Type                                			 |
-|----------|--------|----------------------------------------------------|
-|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack)  			 |
+## 移除燃料
+|是否必要   |类型           |数据类型                                			 |
+|----------|---------------|------------------------------------------------|
+|必要      |Output（输出）  |[IItemstack（物品堆）](/Vanilla/Items/IItemStack)|
 
-### Example
+### 例子
 ```JAVA
-//Example:
+//例:
 mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```

@@ -1,47 +1,59 @@
-# If you add a page, you must add it to the index here
+# 站点的基本信息
+site_name: Crafttweaker 简体中文文档
+repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
+copyright: Crafttweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
+theme: readthedocs
+
+# 使用的几个额外组件
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+
+# 如果想要添加新条目，首先记得在这里写上索引
 pages:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
-  - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
-    - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
-      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
-      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
-      - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
-      - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
-      - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
-  - Vanilla:
-    - Biomes:
-      - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
-      - IBlock: 'Vanilla/Blocks/IBlock.md'
-      - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
-      - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
-      - IBlockProperties: 'Vanilla/Blocks/IBlockProperties.md'
-      - IBlockState: 'Vanilla/Blocks/IBlockState.md'
-      - IMaterial: 'Vanilla/Blocks/IMaterial.md'
-      - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
+  - 主页: 'index.md'
+  - 脚本入门: 'Getting_Started.md'
+  - wiki 使用: 'UsingThisWiki.md'
+  - 命令: 'Vanilla/Commands.md'
+  - CraftTweaker GUI: 'Vanilla/CTGUI.md'
+  - 全局函数: 'Vanilla/Global_Functions.md'
+  - 尖括号引用: 'Brackets/Brackets.md'
+  - 高级函数:
+    - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
+    - 数学运算: 'AdvancedFunctions/Calculations.md'
+    - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
+    - 跨脚本调用: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - 自定义函数: 'AdvancedFunctions/Custom_Functions.md'
+    - 全局和静态变量: 'AdvancedFunctions/Global_Static_Variables.md'
+    - 导入: 'AdvancedFunctions/Import.md'
+    - 预处理器:
+      - 打开预处理器: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - 调试: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - 忽略尖括号引用错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
+      - 模组加载器: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
+      - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+  - 提示与技巧:
+      - 前言: 'Tips_Tricks/Foreword.md'
+      - 物品:
+        - 使用 IItemDefinitions 遍历附加值: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+      - 常用提示:
+        - 把你的脚本拆分成多个文件: 'Tips_Tricks/General/Split_Files.md'
+        - 使用循环语句使脚本更易读: 'Tips_Tricks/General/Loops_Readability.md'
+  - 原版:
+    - 生物群系:
+      - 生物群系: 'Vanilla/Biomes/IBiome.md'
+    - 方块:
+      - 方块: 'Vanilla/Blocks/IBlock.md'
+      - 方块定义: 'Vanilla/Blocks/IBlockDefinition.md'
+      - 方块模式: 'Vanilla/Blocks/IBlockPattern.md'
+      - 方块特性: 'Vanilla/Blocks/IBlockProperties.md'
+      - 方块状态: 'Vanilla/Blocks/IBlockState.md'
+      - 材料: 'Vanilla/Blocks/IMaterial.md'
+      - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
       - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
@@ -55,7 +67,7 @@ pages:
       - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
       - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Container:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Creative Tabs:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
@@ -151,7 +163,7 @@ pages:
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
-    - Ore Dictionary: 
+    - Ore Dictionary:
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
     - Players:
@@ -163,7 +175,7 @@ pages:
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
+      - Crafting Table Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
         - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
@@ -196,9 +208,9 @@ pages:
   - Mods:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
-      - RecipeBuilder: 
+      - RecipeBuilder:
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
         - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
         - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
@@ -223,16 +235,16 @@ pages:
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Reskillable: 'Mods/CompatSkills/Supports/Reskillable.md'
-      - PlayerExpansion: 
+      - PlayerExpansion:
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
           - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - Commands: 'Mods/ContentTweaker/Commands.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
-      - Vanilla:
+      - 命令: 'Mods/ContentTweaker/Commands.md'
+      - 初试身手: 'Mods/ContentTweaker/WalkThrough.md'
+      - 原版:
         - Brackets:
           - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
@@ -247,9 +259,9 @@ pages:
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality: 
+        - Advanced Functionality:
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
-          - Functions: 
+          - Functions:
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
@@ -285,7 +297,7 @@ pages:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - Brackets:
-          - Material Part Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
+          - Material Part Brakets Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
@@ -314,37 +326,37 @@ pages:
       - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
-    - Immersive Engineering: 
-      - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
-      - IE Variables:
-        - Arc Furnace:
-          - SpecialRecipeTypes: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
-        - Blueprint:
-          - Categories: 'Mods/Immersive_Engineering/Variables/Categories.md'
-      - CraftTweaker Support:
-        - Alloy Smelter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
-        - Arc Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
-        - Blast Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blast_Furnace.md'
-        - Blueprint: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blueprint.md'
-        - Bottling Machine: 'Mods/Immersive_Engineering/CraftTweaker_Support/Bottling_Machine.md'
-        - Coke Oven: 'Mods/Immersive_Engineering/CraftTweaker_Support/Coke_Oven.md'
-        - Crusher: 'Mods/Immersive_Engineering/CraftTweaker_Support/Crusher.md'
-        - Diesel Helper: 'Mods/Immersive_Engineering/CraftTweaker_Support/Diesel_Helper.md'
-        - Excavator:
-          - Excavator: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Excavator.md'
-          - Mineral Mix: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Mineral_Mix.md'
-        - Fermenter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
-        - Metal Press: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
-        - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
-        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md' 
-        - Squeezer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
-    - Immersive Petroleum:
-      - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
-      - CraftTweaker Support:
-        - Distillation: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
-        - Fuel Registration: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
-        - Lubricant: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
-        - Reservoir: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
+    - 沉浸工程:
+      - 沉浸工程: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
+      - 沉浸工程变量:
+        - 电弧炉:
+          - 特殊合成类型: 'Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md'
+        - 蓝图:
+          - 类别: 'Mods/Immersive_Engineering/Variables/Categories.md'
+      - CraftTweaker 支持:
+        - 合金窑: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
+        - 电弧炉: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
+        - 高炉: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blast_Furnace.md'
+        - 蓝图: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blueprint.md'
+        - 灌装机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Bottling_Machine.md'
+        - 焦炉: 'Mods/Immersive_Engineering/CraftTweaker_Support/Coke_Oven.md'
+        - 粉碎机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Crusher.md'
+        - 柴油助手: 'Mods/Immersive_Engineering/CraftTweaker_Support/Diesel_Helper.md'
+        - 斗轮式挖掘机:
+          - 斗轮式挖掘机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Excavator.md'
+          - 矿床: 'Mods/Immersive_Engineering/CraftTweaker_Support/Excavator/Mineral_Mix.md'
+        - 发酵机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
+        - 金属冲压机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
+        - 混合器: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
+        - 炼油厂: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
+        - 挤压机: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
+    - 沉浸原油:
+      - 沉浸原油: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
+      - CraftTweaker 支持:
+        - 精馏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
+        - 燃料注册: 'Mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - 润滑油: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
+        - 油藏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
       - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
@@ -356,39 +368,39 @@ pages:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
       - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
-    - Mekanism:
-      - Chemical Crystallizer: 'Mods/Mekanism/Chemical_Crystallizer.md'
-      - Chemical Dissolution Chamber: 'Mods/Mekanism/Chemical_Dissolution_Chamber.md'
-      - Chemical Infuser: 'Mods/Mekanism/Chemical_Infuser.md'
-      - Chemical Injection Chamber: 'Mods/Mekanism/Chemical_Injection_Chamber.md'
-      - Chemical Oxidizer: 'Mods/Mekanism/Chemical_Oxidizer.md'
-      - Chemical Washer: 'Mods/Mekanism/Chemical_Washer.md'
-      - Combiner: 'Mods/Mekanism/Combiner.md'
-      - Crusher: 'Mods/Mekanism/Crusher.md'
-      - Electrolytic Separator: 'Mods/Mekanism/Electrolytic_Separator.md'
-      - Energized Smelter: 'Mods/Mekanism/Energized_Smelter.md'
-      - Enrichment Chamber: 'Mods/Mekanism/Enrichment_Chamber.md'
-      - Gas: 'Mods/Mekanism/Gas.md'
-      - Metallurgic Infuser: 'Mods/Mekanism/Metallurgic_Infuser.md'
-      - Osmium Compressor: 'Mods/Mekanism/Osmium_Compressor.md'
-      - Precision Sawmill: 'Mods/Mekanism/Precision_Sawmill.md'
-      - Pressurised Reaction Chamber: 'Mods/Mekanism/Pressurised_Reaction_Chamber.md'
-      - Purification Chamber: 'Mods/Mekanism/Purification_Chamber.md'
-      - Solar Neutron Activator: 'Mods/Mekanism/Solar_Neutron_Activator.md'
-      - Thermal Evaporation: 'Mods/Mekanism/Thermal_Evaporation.md'
+    - 通用机械:
+      - 化学结晶器: 'Mods/Mekanism/Chemical_Crystallizer.md'
+      - 化学溶解室: 'Mods/Mekanism/Chemical_Dissolution_Chamber.md'
+      - 化学灌注器: 'Mods/Mekanism/Chemical_Infuser.md'
+      - 化学压射室: 'Mods/Mekanism/Chemical_Injection_Chamber.md'
+      - 化学氧化机: 'Mods/Mekanism/Chemical_Oxidizer.md'
+      - 化学清洗机: 'Mods/Mekanism/Chemical_Washer.md'
+      - 融合机: 'Mods/Mekanism/Combiner.md'
+      - 粉碎机: 'Mods/Mekanism/Crusher.md'
+      - 电解分离器: 'Mods/Mekanism/Electrolytic_Separator.md'
+      - 充能冶炼炉: 'Mods/Mekanism/Energized_Smelter.md'
+      - 富集仓: 'Mods/Mekanism/Enrichment_Chamber.md'
+      - 气体: 'Mods/Mekanism/Gas.md'
+      - 冶金关注器: 'Mods/Mekanism/Metallurgic_Infuser.md'
+      - 锇压缩机: 'Mods/Mekanism/Osmium_Compressor.md'
+      - 精密锯木机: 'Mods/Mekanism/Precision_Sawmill.md'
+      - 加压反应室: 'Mods/Mekanism/Pressurised_Reaction_Chamber.md'
+      - 净化仓: 'Mods/Mekanism/Purification_Chamber.md'
+      - 太阳能中子活化器: 'Mods/Mekanism/Solar_Neutron_Activator.md'
+      - 热力蒸馏: 'Mods/Mekanism/Thermal_Evaporation.md'
     - Modtweaker:
       - Modtweaker: 'Mods/Modtweaker/Modtweaker.md'
-      - Actually Additions:
-        - Atomic Reconstructor: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
-        - Ball of Fur: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
-        - Compost: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
-        - Crusher: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
-        - Empowerer: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
-        - Mining Lens: 'Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md'
-        - Oil Generator: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
-        - Treasure Chest: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
+      - 实用拓展:
+        - 原子再构机: 'Mods/Modtweaker/ActuallyAdditions/AtomicReconstructor.md'
+        - 毛球: 'Mods/Modtweaker/ActuallyAdditions/BallOfFur.md'
+        - 发酵: 'Mods/Modtweaker/ActuallyAdditions/Compost.md'
+        - 磨粉机: 'Mods/Modtweaker/ActuallyAdditions/Crusher.md'
+        - 充能台: 'Mods/Modtweaker/ActuallyAdditions/Empowerer.md'
+        - 矿工透镜: 'Mods/Modtweaker/ActuallyAdditions/Mining_Lens.md'
+        - 原油发电机: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
+        - 藏宝箱: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
-        - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
+        - 钢砧: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
         - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
         - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
@@ -409,7 +421,7 @@ pages:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes: 
+        - Recipes:
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -436,7 +448,7 @@ pages:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets: 
+        - Brackets:
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -448,36 +460,36 @@ pages:
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
-        - Handlers:
-          - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
-          - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
-      - Thermal Expansion:
-        - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
-        - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
-        - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
-        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
-        - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
-        - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
-        - Fractionating Still (Refinery): 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
-        - Induction Smelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
-        - Magma Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
-        - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
-        - Phytogenic Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
-        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
-        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+        - 处理器:
+          - 黑名单: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
+          - 重载: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+      - 热力膨胀:
+        - 药水酿造机: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
+        - 附魔器: 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
+        - 离心机: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
+        - 压缩机: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - 能量灌注机: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
+        - 流体转置机: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
+        - 流体精炼机: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - 感应炉: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - 熔岩炉: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - 红石炉: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
+        - 有机灌注机: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - 磨粉机: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - 锯木机: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Recipes:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-    - PneumaticCraft&#58; Repressurized:
-      - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
-        - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+    - PneumaticCraft Repressurized（气动工艺）:
+      - 气动工艺简介: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+      - 合成:
+        - 装配系统: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
@@ -516,11 +528,11 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-    - ZenEvents: 
+    - ZenEvents:
       - ZenEvents: 'Mods/ZenEvents/ZenEvents.md'
       - BloodMagic:
         - EventManager: 'Mods/ZenEvents/SupportedMods/BloodMagic/EventManager.md'
-        - Events: 
+        - Events:
           - AltarCraftedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/AltarCraftedEvent.md'
           - BoundToolChargeEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolChargeEvent.md'
           - BoundToolReleaseEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolReleaseEvent.md'
@@ -533,15 +545,15 @@ pages:
           - Ritual: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual.md'
       - Botania:
         - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
-        - Events: 
+        - Events:
           - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
       - GameStages:
         - EventManager: 'Mods/ZenEvents/SupportedMods/GameStages/EventManager.md'
-        - Events: 
+        - Events:
           - GameStageEvent: 'Mods/ZenEvents/SupportedMods/GameStages/Events/GameStageEvent.md'
-      - TConstruct: 
+      - TConstruct:
         - EventManager: 'Mods/ZenEvents/SupportedMods/TConstruct/EventManager.md'
-        - Events: 
+        - Events:
           - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'
           - ProjectileLauchEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileLaunchEvent.md'
           - TinkerCraftingEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerCraftingEvent.md'
@@ -565,20 +577,3 @@ pages:
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
-
-# Do not edit in PRs below here
-site_name: Crafttweaker Documentation
-
-markdown_extensions:
-  - admonition
-  - smarty
-  - sane_lists
-
-theme_dir: 'mkdocs_windmill'
-
-extra:
-  logo: 'assets/logo.png'
-  #version: 0.0
-  #article_nav_top: true
-  #artivle_nav_bottom: true
-  #history_buttons: false

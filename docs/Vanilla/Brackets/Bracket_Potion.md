@@ -1,8 +1,8 @@
-# Potion Bracket Handler
+# 药水处理器
 
-The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
+药水处理器允许你访问游戏中的药水。它只能用于访问注册的药水，所以如果你有访问模组中的药水，增加或者移除此模组时可能会出错。
 
-Potions are referenced in the Potion Bracket Handler like so:
+可以用以下方式引用药水：
 
 ```
 <potion:modname:potionname>
@@ -10,12 +10,12 @@ Potions are referenced in the Potion Bracket Handler like so:
 <potion:minecraft:strength>
 ```
 
-If the Potion is found, this will return an IPotion Object.
-Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion) for further information on what you can do with these.
+如果药水被找到，将返回药水对象。
+更多使用信息请参考[所属的wiki页面](/Vanilla/Potions/IPotion) for further information on what you can do with these.
 
-# Getting all Registered Potions
+# 获取所有注册的药水
 
-You can use the following command to output all registered Potions to the CraftTweaker log
+你可以使用下列命令以在CraftTweak日志中输出所有注册的药水
 ```
 /ct potions
 /crafttweaker potions

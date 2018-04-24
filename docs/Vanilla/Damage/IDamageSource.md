@@ -1,38 +1,38 @@
-# IDamageSource
+# 伤害来源
 
-An IDamageSource object is the source of damage to an entity.  
+An IDamageSource object is the source of damage to an entity.伤害来源对象是实体受到的伤害的来源
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+有时需要[函数导入](/AdvancedFunctions/Import)相关包以避免错误
 `import crafttweaker.damage.IDamage`
 
 
 ## Zengetters and ZenMethods without parameters
 
-| ZenGetter        | ZenMethod                         | Return Type                          |
+| ZenGetter        | ZenMethod                         | 返回类型                              |
 |------------------|-----------------------------------|--------------------------------------|
-| harmInCreative   | canHarmInCreative();              | bool                                 |
-| damageType       | getDamageType();                  | string                               |
-| hunderDamage     | getHungerDamage();                | float                                |
-| immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity) |
-| trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity) |
-| creativePlayer   | isCreativePlayer();               | bool                                 |
-| damageAbsolute   | isDamageAbsolute();               | bool                                 |
-| difficultyScaled | isDifficultyScaled();             | bool                                 |
-| explosion        | isExplosion();                    | bool                                 |
-| fireDamage       | isFireDamage();                   | bool                                 |
-| magicDamage      | isMagicDamage();                  | bool                                 |
-| projectile       | isProjectile();                   | bool                                 |
-|                  | setDamageAllowedInCreativeMode(); | IDamageSource                        |
-|                  | setDamageBypassesArmor();         | IDamageSource                        |
-|                  | setDamageIsAbsolute();            | IDamageSource                        |
-|                  | setDifficultyScaled();            | IDamageSource                        |
-|                  | setExplosion();                   | IDamageSource                        |
-|                  | setFireDamage();                  | IDamageSource                        |
-|                  | setMagicDamage();                 | IDamageSource                        |
-|                  | setProjectile();                  | IDamageSource                        |
+| harmInCreative   | canHarmInCreative();              | 布尔值                                |
+| damageType       | getDamageType();                  | 字符串                                |
+| hunderDamage     | getHungerDamage();                | 浮点数                                |
+| immediateSource  | getImmediateSource();             | [实体](/Vanilla/Entities/IEntity)     |
+| trueSource       | getTrueSource();                  | [实体](/Vanilla/Entities/IEntity)     |
+| creativePlayer   | isCreativePlayer();               | 布尔值                                |
+| damageAbsolute   | isDamageAbsolute();               | 布尔值                                |
+| difficultyScaled | isDifficultyScaled();             | 布尔值                                |
+| explosion        | isExplosion();                    | 布尔值                                |
+| fireDamage       | isFireDamage();                   | 布尔值                                |
+| magicDamage      | isMagicDamage();                  | 布尔值                                |
+| projectile       | isProjectile();                   | 布尔值                                |
+|                  | setDamageAllowedInCreativeMode(); | 伤害来源                              |
+|                  | setDamageBypassesArmor();         | 伤害来源                              |
+|                  | setDamageIsAbsolute();            | 伤害来源                              |
+|                  | setDifficultyScaled();            | 伤害来源                              |
+|                  | setExplosion();                   | 伤害来源                              |
+|                  | setFireDamage();                  | 伤害来源                              |
+|                  | setMagicDamage();                 | 伤害来源                              |
+|                  | setProjectile();                  | 伤害来源                              |
 
-## ZenMethod with Parameters
+## 需要传入数据的ZenMethod
 
 - getDeathMessage([IEntity](/Vanilla/Entities/IEntity) entity); → Returns a string containing the death message for the entity if it dies by this damageSource
 

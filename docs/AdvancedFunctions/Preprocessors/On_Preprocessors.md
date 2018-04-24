@@ -1,15 +1,15 @@
-# On Preprocessors
+# 打开预处理器
 
-## What are preprocessors
-As the name suggests, preprocessors are executed before the script is executed.  
-They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
+## 预处理器是什么？
+正如其名，预处理器能够在脚本被执行前优先执行。   
+它们拥有一些特殊的功能，比如开启调试模式、忽略尖括号引用错误。
 
-## Calling a preprocessor
-A preprocessor can be called using the #comment function.  
-Be careful with the comments though as you might start one with a preprocessor keyword.  
+## 调用预处理器
+预处理器使用注释 `#comment function` 结构进行调用。  
+注意注释开头必须要有预处理器的关键字。
 
-```JAVA
-#debug is my favorite word I like to add it everywhere as a comment
+```js
+#debug 是我最喜欢的词语！我喜欢把它添加到各个地方作为注释
 ```
 
-↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
+↑ 上面的注释就会开启预处理器的调试模式，因为注释是以 `#debug` 开头的，如果你想避免偶然使用了与处理器的调试模式，用 `//` 书写注释即可。

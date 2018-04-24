@@ -1,10 +1,10 @@
-# ICraftingRecipe
+# 合成配方
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.  
+ICraftingRecipe是Zenscript所看到的工作台配方。
 
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+可能需要[导入](/AdvancedFunctions/Import)相关包以避免错误。 
 `import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters

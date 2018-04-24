@@ -1,7 +1,7 @@
-# To Scale Example
-Here's a Quick To Scale Example:
+# 实例
+这里有一个简单的实例:
 
-## Example
+## 例子
 ```JAVA
 import crafttweaker.item.IItemStack;
 

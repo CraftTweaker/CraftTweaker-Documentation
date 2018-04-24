@@ -1,21 +1,21 @@
-# CTGUI
+# CraftTweker GUI
 
-You can run a command and edit recipes from ingame using a GUI.
+你可以输入一个命令来在游戏中通过 GUI 来编辑合成。
 
-<details><summary>Background story</summary>
-Some people don't fancy text editors. Even using templates highlighting their syntax can't satisfy them. They want a GUI (Graphical User Interface).  
-For this matter, Jared, humble servant of Lord Ellpeck of House penguin, rightful heir to the Milkshake Throne, King of the Seven Kingdoms of Germany, the Rhoynar and the First Men, Mother of penguins, the modder of the great frozen plains, the unbroken and breaker of mods, has descended upon us from Maven, the great Library of Forbidden Wisdom and Blasphemy to share his great knowledge with mankind, after being urged by BBoldt, traveller of realms, slayer of the great Unknown, writer of Necrochodu. Unfortunately, we were not yet able to decipher the seemingly random jabbering that came from him, so he decided to instead go for a more simplistic means of help, by giving people who posess the power to manipulate the very laws of the universe (also called `OPs` or `Admins`) to access a magical window from inside the game they liked to play and change the fundaments of this false reality from within. 
+<details><summary>背后的故事</summary>
+有些人不喜欢文本编辑器。即使是用了语法高亮仍旧不能满足他们。他们想要一个带 GUI（图形用户界面）的东西。  
+为此，贾里德、屋企鹅圣主 Ellpeck 的忠实仆人、奶昔宝座的合法继承人、德意志七大王国的国主、洛伊拿第一勇士、屋企鹅的母亲、伟大冻原上的 mod 作者。我们从 Maven 这个伟大的禁忌智慧图书馆，和亵渎神灵中走了出来，分享他贡献给人类的伟大知识，这是在经历了作为 Necrochodu 作家、伟大未知领地的旅行者 BBoldt 的催促下才得以完成的。很不幸，我们还无法破译那看似含糊不清的话语，所以他决定改为提供一种更简单的方式，给予那些有能力操纵宇宙法则的人（也称为服主或管理员），从他们喜欢玩的游戏内访问一个神奇的窗口，并从内部改变这虚拟现实的基础。
 </details>
 
-## Calling the command
-You call the command using 
+## 使用命令启用
+你可以使用这条命令来启用 GUI：
 ```
 /CTGUI id
 ```
 
-These ids are currently implemented:
+目前可用的 id 有：
 
-| ID            | Added by     | Notes |
-|---------------|--------------|-------|
-| craftingtable | CraftTweaker |       |
-| furnace       | CraftTweaker |       |
+| ID            | 提供方       |  备注  |
+|:-------------:|:------------:|:------:|
+| craftingtable | CraftTweaker | 工作台 |
+| furnace       | CraftTweaker | 熔炉   |

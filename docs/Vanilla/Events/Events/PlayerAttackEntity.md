@@ -1,11 +1,11 @@
-# PlayerAttackEntity
+# 玩家攻击实体
 
-The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
+这个事件在玩家攻击任意一个实体时候触发。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAttackEntityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+## 事件类
+你需要使用以下方式作为函数头以创建此类:  
+`crafttweaker.event.PlayerAttackEntityEvent`  
+你当然可以先[导入](/AdvancedFunctions/Import)类然后再使用。
 
 
 ## Event interface extensions
@@ -16,7 +16,7 @@ PlayerAttackEntity Events implement the following interfaces and are able to cal
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+可以从事件中检索以下信息:
 
 | ZenGetter  | Return Type                          |
 |------------|--------------------------------------|
@@ -26,4 +26,4 @@ The following information can be retrieved from the event:
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` 将事件设置为取消。

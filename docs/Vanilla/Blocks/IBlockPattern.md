@@ -1,31 +1,31 @@
-# IBlockPattern
+# 方块模式（IBlockPattern）
 
-An IBlockPattern is an interface that allows for combining several blocks into one object.  
-It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient) Interface is to [IItemStacks](/Vanilla/Items/IItemStack).
+方块模式是一个接口，这个接口能够集合多种方块为一个对象。  
+类似于 [IIngredient](/Vanilla/Variable_Types/IIngredient) 接口和 [IItemStacks](/Vanilla/Items/IItemStack) 对象的关系。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。   
 `import crafttweaker.block.IBlockPattern;`
 
 
-## Calling an IBlockPattern Object
+## 调用方块模式（IBlockPattern）对象
 
-Technically, each time you call an [IBlock](IBlock) object, you call an IBlockPattern object.  
-But there are cases when you explicitly get an IBlockPattern Object as return.  
+实际上，你每次调用[方块](IBlock)对象的时候，你就调用了方块模式对象。   
+不过某些情况下，你可能需要明确的返回一个方块模式对象。
 
-* OR two [IBlocks](IBlock)
+* 或者两个[方块](IBlock)对象。
 
 ## ZenGetters
 
-| ZenGetter   | What does it do                                | Return Type            |
-|-------------|------------------------------------------------|------------------------|
-| blocks      | Lists all possible blocks for this object      | List<[IBlock](IBlock)> |
-| displayName | Returns the displayNames of the fitting blocks | String                 |
+|  ZenGetter  |            介绍            |        返回类型        |
+| :---------: | :------------------------: | :--------------------: |
+|   blocks    | 这个对象的所有可能方块列表 | List<[IBlock](IBlock)> |
+| displayName | 返回符合条件方块的显示名称 |         String         |
 
-## OR
+## 或
 
-You can OR two IBlockPattern Objects using the OR `|` Operator
+你可以用或 `|` 运算符连接两个方块模式。
 
-## Matching
-You can check if an IBlockPatternObject contains another using the `in` keyword.  
-For example, you could check if a Block is in an IBlockPattern.
+## 匹配
+你可以用 `in` 关键字检测一个方块模式中是否包含另一个方块模式。
+例如你可以检测一个方块是否在一个方块模式中。

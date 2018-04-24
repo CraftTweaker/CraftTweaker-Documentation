@@ -1,11 +1,11 @@
-# PlayerChangedDimension
+# 玩家改变维度
 
-The PlayerChangedDimension Event is fired whenever a [player's](/Vanilla/Players/IPlayer) [dimension/world](/Vanilla/World/IWorld) changes, for example upon entering/leaving the nether.
+玩家改变维度事件会在[玩家](/Vanilla/Players/IPlayer)所在的[维度/世界](/Vanilla/World/IWorld)发生改变时触发。比如会在玩家进入/离开下界时触发。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerChangedDimensionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+## 事件类
+你需要使用以下方式作为函数头以创建此类:
+`crafttweaker.event.PlayerChangedDimensionEvent`
+你当然可以先导入类然后再使用。
 
 
 ## Event interface extensions
@@ -16,12 +16,12 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+可以从事件中检索以下信息:
 
-| ZenGetter   | Return Type                             |
+| ZenGetter   | 返回类型                             |
 |-------------|-----------------------------------------|
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer)     |
-| `from`      | int                                     |
-| `fromWorld` | [IWorld](/Vanilla/World/IWorld)         |
-| `to`        | int                                     |
-| `toWorld`   | [IWorld](/Vanilla/World/IWorld)         |
+| `player`（玩家）| [IPlayer](/Vanilla/Players/IPlayer)     |
+| `from`（原来）| int                                     |
+| `fromWorld`（原来的世界）| [IWorld](/Vanilla/World/IWorld)         |
+| `to`（到达）| int                                     |
+| `toWorld`（到达的世界）| [IWorld](/Vanilla/World/IWorld)         |

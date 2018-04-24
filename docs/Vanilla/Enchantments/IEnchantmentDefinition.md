@@ -1,61 +1,61 @@
-# IEnchantmentDefinition
+# 附魔定义
 
-An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.  
+附魔定义对象是附魔效果本身，不包含等级，不过可以用于检索附魔信息。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Retrieving such an object
-You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment) or from an [IEnchantment](IEnchantment) object.
+## 检索附魔定义
+你可以通过[附魔（尖括号引用）](/Vanilla/Brackets/Bracket_Enchantment)或者[附魔](IEnchantment)检索附魔定义。
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
+| ZenGetter             | ZenSetter | 类型     |
 |-----------------------|-----------|---------|
-| id                    |           | string  |
-| name                  | name      | string  |
-| maxLevel              |           | int     |
-| minLevel              |           | int     |
-| isAllowedOnBooks      |           | boolean |
-| isTreasureEnchantment |           | boolean |
-| isCurse               |           | boolean |
+| id                    |           | 字符串   |
+| name                  | name      | 字符串   |
+| maxLevel              |           | 整数     |
+| minLevel              |           | 整数     |
+| isAllowedOnBooks      |           | 布尔值   |
+| isTreasureEnchantment |           | 布尔值   |
+| isCurse               |           | 布尔值   |
 
 ## ZenMethods
-### CanApply
-Checks if the enchantment can be put on the item.  
-First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
-Both return a bool and require an [IItemStack](IItemStack) as input parameter.
+### 可被附魔
+检测一个魔咒是否可以被附在一个物品上  
+第一条检测任意情况，第二条检测该物品是否可以在附魔台上得到这个魔咒
+均返回布尔值，且需要传入[物品堆](IItemStack)。
 ```objectivec
 ench.canApply(IItemStack item);
 ench.canApplyAtEnchantmentTable(IItemStack item);
 ```
 
-### getEnchantability
-Checks what enchantability the item must have for the Enchantment at the given level.  
-Both methods return an int and take the level of the enchantment as int parameter.
+### 获取附魔能力
+检测物品获得指定魔咒的需要的附魔能力。
+均返回整数且需要传入魔咒名称（整数）。
 ```objectivec
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
 
-### TranslatedName
-Returns the translated name (e.g. "smite IV").  
-Returns a string and requires the level of the enchantment as int parameter.  
-Does the same as [IEnchantment's](IEnchantment) `.displayName` ZenGetter!
+### 附魔名称
+返回魔咒名称 (例： "亡灵杀手 IV").  
+返回整数且需要传入魔咒名称（整数）。
+效果与[附魔](IEnchantment) `.displayName` ZenGetter相同!
 ```objectivec
 ench.getTranslatedName(int level);
 ```
 
-### make Enchantment
-By giving an EnchantmentDefinition a level you can make an [IEnchantment](IEnchantment) out of it:
+### 创造附魔对象
+通过魔咒名称创造一个附魔对象
 ```objectivec
 ench.makeEnchantment(int level);
 ench * level;
 ```
 
 
-## Example
+## 例
 ```javascript
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;

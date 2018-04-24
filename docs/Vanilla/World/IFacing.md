@@ -1,14 +1,14 @@
-# IFacing
+# 方块朝向
 
-The IFacing Interface allows you to get an [IBlockPos's](IBlockPos) possible directions.
+IFacing 接口允许你获取一个 [IBlockPos's](IBlockPos) 可能的方向。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IFacing;` 
+## 导入包
+如果你遇到任何问题，可以尝试通过导入相关包来解决。  
+`import crafttweaker.world.IFacing;`
 
-## Enumerations
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+## 枚举
+朝向接口有7种静态方法,每个返回都表示相应的方向。
+最后一个参数为朝向的字符串输入 (例子： `"NORTH"`)
 ```
 crafttweaker.world.Facing.north()
 crafttweaker.world.Facing.east()
@@ -22,16 +22,16 @@ crafttweaker.world.Facing.fromString(String name);
 ```
 
 ## ZenGetters/ZenMethods without parameters
-| ZenGetter  | ZenMethod  | Return Type |
-|------------|------------|-------------|
-| name       | getName()  | string      |
-| rotateY    | rotateY()  | IFacing     |
-| opposite   | opposite() | IFacing     |
+| ZenGetter | ZenMethod  | 返回类型 |
+| :-------: | :--------: | :------: |
+|   name    | getName()  |  字符串  |
+|  rotateY  | rotateY()  | IFacing  |
+| opposite  | opposite() | IFacing  |
 
-## Other methods
-### Comparing two Facings
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+## 其他方法
+### 比较两个朝向
+你可以使用标准比较运算符 `== != < > <= >=`来比较两个面  
+另外，您可以使用这个函数,如果它们是相等的话，函数将返回数值为0的整型。
 ```
 //Returns true or false
 facingOne == facingTwo;

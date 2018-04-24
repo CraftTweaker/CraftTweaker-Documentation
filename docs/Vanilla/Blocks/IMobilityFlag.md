@@ -1,10 +1,10 @@
-# IMobilityFlag
+# 移动性标识
 
-The IMobilityFlag Interface allows you to get an [IBlockState's](IBlockState) possible mobilityFlags.
+移动性标识接口允许你获取[方块状态](IBlockState)中可能存在的移动性标识。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMobilityFlag;` 
+## 导入相关包
+为了避免发生一些不期而遇的问题，最为安全、也是最为推荐的方式就是导入相关的包。  
+`import crafttweaker.block.IMobilityFlag;`
 
 ## ZenMethods
 #### Matches
@@ -14,8 +14,8 @@ Returns a bool.
 flagOne.matches(other);
 ```
 
-## Enumerations
-The MobilityFlag Interface has 5 static Methods, each returning the given IMobilityFlag object.
+## 类型
+移动性标识接口有五个静态方法，均返回被给予移动性标识的物体。
 ```
 crafttweaker.block.MobilityFlag.normal()
 crafttweaker.block.MobilityFlag.destroy()

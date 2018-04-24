@@ -1,15 +1,15 @@
-# IServer
+# 服务端
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.server.IServer;`
 
 ## Access the Server Handler
 You can access the Brewing Handler using the `server` [global keyword](/Vanilla/Global_Functions).  
 Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender).
 
-## Check if a [player](/Vanilla/Players/IPlayer) is OP
-You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer) has the OP permission:
+## 检测一个[玩家](/Vanilla/Players/IPlayer)是否是OP
+使用下方法检测一个[玩家](/Vanilla/Players/IPlayer) 是否有OP权限：
 
 ```
 server.isOP(player);

@@ -1,67 +1,67 @@
-# Getting Started with scripts
+# 脚本入门
 
-Crafttweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
+Crafttweaker 使用一种叫做 `ZenScript` 自定义脚本语言，ZenScript 读取位于 `<游戏主目录>/scripts` 文件夹下的所有带有 `.zs` 后缀的文件。
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarions` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
+ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着 `导入` 必须位于文件的顶部，`变量声明` 也应该在较靠近文件顶部的位置声明。当然这并不是强制性的，`变量` 能够在脚本的各处进行定义，不过这样就无法对 `变量` 之前声明的东西进行访问了。
 
 
-## Introduction
+## 介绍
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+每当开始制作一个整合包，却发现只是堆砌了一堆模组，并没有带来任何综合性的体验？模组的制作都是相对独立的，相比起别的模组，总是有几个显得过于 OP？也许你希望一些物品能够拥有更好的合成，或者你渴望在不移除整个模组的情况下，仅仅是删除其中的一个物品，或者发现一些矿物注册的矿词过多/过少。现在你可以全部做到——只需要一条 MineTweaker 指令。
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+除了核心功能来支持原版 Minecraft 之外，Crafttweaker 也提供了很多模组相关的集成库，模组集成库能够使你进一步自定义其他模组相关的机器合成，甚至修改其他模组的一些行为。
 
-## Scripts
+## 脚本
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+脚本被存放在 `<游戏主目录>/scripts` 文件夹，并在游戏的 `预加载（PreInitialization）` 阶段进行加载，不同于先前版本的 Crafttweaker，脚本无法被热加载，这是因为 Mojang 对 1.12 版本的改动, 目前仍无解决方案。最后，脚本需要**同时在服务端和客户端都拥有**才能启用。
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+所有以 `.zs` 为后缀的脚本文件可以被压缩为 `.zip` 文件，仍旧能够正常读取。
 
-### Writing your first script
+### 书写你的第一个脚本
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+为了能够开始书写脚本，你需要创建一个非常基本的脚本文件，可以起名叫做 `hello.zs`，并放置在 `<游戏主目录>/scripts` 文件夹下。
 
-In `hello.zs` put the following line
+在 `hello.zs` 文件中写入如下条目：
 
-```
-print("Hello world!");
-```
-
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
-
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
-
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
-
-### The crafttweaker.log file
-
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
-
-```
-[LOADERSTAGE][SIDE][TYPE] <message>
+``` js
+print("你好，世界！");
 ```
 
-Using the example above, the output would be:
+接下来，启动你的 Minecraft，并注意 `crafttweaker.log` 文件。
+
+`crafttweaker.log` 文件位于 `<游戏主目录>` 并且能够被任何读取文本文档的软件所打开。
+
+这里推荐使用 Notepad++ 或者 Sublime Text 来编辑脚本文件，当然别的程序也可以。
+
+### crafttweaker.log 文件
+
+`crafttweaker.log` 文件使用特殊的语法来进行输出，基本的语法结构如下：
 
 ```
-[PREINITIALIZATION][CLIENT][INFO] Hello world!
+[LOADERSTAGE][SIDE][TYPE] <信息>
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+使用了先前的示例脚本，输出结果如下：
 
-### Comments
-
-Comments can be used to make your script files more readable and easier to understand!
-
-ZenScript supports 3 types of comments, being:
-
-Single line: `// I'm a single line comment!`
-
-Alternate Single Line: `# I'm also a single line comment!`
-
-Multiline: 
 ```
-/* I'm 
-a
-multiline comment! */
+[PREINITIALIZATION][CLIENT][INFO] 你好，世界！
+```
+
+这个语法是仅仅用于调试，除了命令的输出信息不使用此语法，在这种情况下，它只是打印消息，这样做能够更容易的复制粘贴输出信息。
+
+### 注释
+
+注释能够使得你的脚本更可读，更易理解！
+
+ZenScript 支持三种不同的注释书写，分别是：
+
+单行注释：`// 我是一条单行注释！`
+
+另一种单行注释：`# 我也是一条单行注释！`
+
+多行注释：
+``` js
+/* 我是
+一条
+多行注释！*/
 ```
