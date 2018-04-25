@@ -54,52 +54,52 @@ pages:
       - 方块状态: 'Vanilla/Blocks/IBlockState.md'
       - 材料: 'Vanilla/Blocks/IMaterial.md'
       - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
-    - Brackets:
-      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
-      - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
-      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
-      - Items: 'Vanilla/Brackets/Bracket_Item.md'
-      - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
-      - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
-      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
-    - Commands:
-      - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
-      - ICommand: 'Vanilla/Commands/ICommand.md'
-      - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container:
-      - IContainer: 'Vanilla/Container/IContainer.md'
-    - Creative Tabs:
-      - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantments:
-      - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
-      - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
-    - Data:
-      - IData: 'Vanilla/Data/IData.md'
-      - DataMap: 'Vanilla/Data/DataMap.md'
-    - Damage:
-      - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
-    - Entities:
-      - Attributes:
-        - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
-        - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
-        - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
-      - IEntity: 'Vanilla/Entities/IEntity.md'
-      - IEntityAgeable: 'Vanilla/Entities/IEntityAgeable.md'
-      - IEntityAnimal: 'Vanilla/Entities/IEntityAnimal.md'
-      - IEntityCreature: 'Vanilla/Entities/IEntityCreature.md'
-      - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
-      - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
-      - IEntityDropFunction: 'Vanilla/Entities/IEntityDropFunction.md'
-      - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
-      - IEntityLiving: 'Vanilla/Entities/IEntityLiving.md'
-      - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
-      - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
-      - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
-      - Events: 'Vanilla/Events/Events.md'
-      - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+    - 尖括号引用:
+      - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - 伤害来源: 'Vanilla/Brackets/Bracket_DamageSource.md'
+      - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
+      - 物品: 'Vanilla/Brackets/Bracket_Item.md'
+      - 实体: 'Vanilla/Brackets/Bracket_Entity.md'
+      - 流体: 'Vanilla/Brackets/Bracket_Liquid.md'
+      - 矿物词典: 'Vanilla/Brackets/Bracket_Ore.md'
+      - 药水: 'Vanilla/Brackets/Bracket_Potion.md'
+    - 命令:
+      - 命令管理器: 'Vanilla/Commands/ICommandManager.md'
+      - 命令: 'Vanilla/Commands/ICommand.md'
+      - 命令执行器: 'Vanilla/Commands/ICommandSender.md'
+    - 容器:
+      - 容器: 'Vanilla/Container/IContainer.md'
+    - 创造模式标签页:
+      - 创造模式标签页: 'Vanilla/CreativeTabs/ICreativeTab.md'
+    - 附魔:
+      - 附魔: 'Vanilla/Enchantments/IEnchantment.md'
+      - 附魔定义: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
+    - 数据:
+      - 数据: 'Vanilla/Data/IData.md'
+      - 数据映射: 'Vanilla/Data/DataMap.md'
+    - 伤害:
+      - 伤害来源: 'Vanilla/Damage/IDamageSource.md'
+    - 实体:
+      - 属性:
+        - 实体属性: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
+        - 实体属性实例: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
+        - 实体属性修饰器: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
+      - 实体: 'Vanilla/Entities/IEntity.md'
+      - 带有年龄的实体: 'Vanilla/Entities/IEntityAgeable.md'
+      - 动物: 'Vanilla/Entities/IEntityAnimal.md'
+      - 生物: 'Vanilla/Entities/IEntityCreature.md'
+      - 实体定义: 'Vanilla/Entities/IEntityDefinition.md'
+      - 实体掉落物: 'Vanilla/Entities/IEntityDrop.md'
+      - 实体掉落物函数: 'Vanilla/Entities/IEntityDropFunction.md'
+      - 物品实体: 'Vanilla/Entities/IEntityItem.md'
+      - 有生命实体: 'Vanilla/Entities/IEntityLiving.md'
+      - 有生命实体基础: 'Vanilla/Entities/IEntityLivingBase.md'
+      - 怪物: 'Vanilla/Entities/IEntityMob.md'
+      - 经验球: 'Vanilla/Entities/IEntityXp.md'
+    - 事件:
+      - 事件: 'Vanilla/Events/Events.md'
+      - 事件管理器: 'Vanilla/Events/IEventManager.md'
+      - 事件:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
@@ -123,69 +123,68 @@ pages:
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
         - LivingEntityUseItemEvent: 'Vanilla/Events/Events/LivingEntityUseItem.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
-        - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
-        - PlayerBonemealEvent: 'Vanilla/Events/Events/PlayerBonemeal.md'
+        - 玩家攻击实体: 'Vanilla/Events/Events/PlayerAttackEntity.md'
+        - 玩家使用骨粉: 'Vanilla/Events/Events/PlayerBonemeal.md'
         - PlayerBreakSpeedEvent: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
         - PlayerBrewedPotionEvent: 'Vanilla/Events/Events/PlayerBrewedPotion.md'
-        - PlayerChangedDimensionEvent: 'Vanilla/Events/Events/PlayerChangedDimension.md'
-        - PlayerCraftedEvent: 'Vanilla/Events/Events/PlayerCrafted.md'
-        - PlayerDeathDropsEvent: 'Vanilla/Events/Events/PlayerDeathDrops.md'
+        - 玩家改变维度: 'Vanilla/Events/Events/PlayerChangedDimension.md'
+        - 玩家合成物品: 'Vanilla/Events/Events/PlayerCrafted.md'
+        - 玩家死亡掉落: 'Vanilla/Events/Events/PlayerDeathDrops.md'
         - PlayerDestroyItemEvent: 'Vanilla/Events/Events/PlayerDestroyItem.md'
-        - PlayerFillBucketEvent: 'Vanilla/Events/Events/PlayerFillBucket.md'
-        - PlayerInteractEntityEvent: 'Vanilla/Events/Events/PlayerInteractEntity.md'
-        - PlayerInteractEvent: 'Vanilla/Events/Events/PlayerInteract.md'
-        - PlayerLoggedInEvent: 'Vanilla/Events/Events/PlayerLoggedIn.md'
-        - PlayerLoggedOutEvent: 'Vanilla/Events/Events/PlayerLoggedOut.md'
-        - PlayerOpenContainerEvent: 'Vanilla/Events/Events/PlayerOpenContainer.md'
-        - PlayerPickupItemEvent: 'Vanilla/Events/Events/PlayerPickupItem.md'
-        - PlayerPickupXpEvent: 'Vanilla/Events/Events/PlayerPickupXp.md'
-        - PlayerRespawnEvent: 'Vanilla/Events/Events/PlayerRespawn.md'
+        - 玩家盛装桶: 'Vanilla/Events/Events/PlayerFillBucket.md'
+        - 玩家与实体交互: 'Vanilla/Events/Events/PlayerInteractEntity.md'
+        - 玩家与方块交互: 'Vanilla/Events/Events/PlayerInteract.md'
+        - 玩家登入: 'Vanilla/Events/Events/PlayerLoggedIn.md'
+        - 玩家登出: 'Vanilla/Events/Events/PlayerLoggedOut.md'
+        - 玩家打开容器: 'Vanilla/Events/Events/PlayerOpenContainer.md'
+        - 玩家捡起物品: 'Vanilla/Events/Events/PlayerPickupItem.md'
+        - 玩家吸收经验球: 'Vanilla/Events/Events/PlayerPickupXp.md'
+        - 玩家重生: 'Vanilla/Events/Events/PlayerRespawn.md'
         - PlayerRightClickBlockEvent: 'Vanilla/Events/Events/PlayerRightClickBlock.md'
         - PlayerSetSpawnEvent: 'Vanilla/Events/Events/PlayerSetSpawn.md'
-        - PlayerSleepInBedEvent: 'Vanilla/Events/Events/PlayerSleepInBed.md'
-        - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
+        - 玩家用床睡觉: 'Vanilla/Events/Events/PlayerSleepInBed.md'
+        - 玩家烧炼物品: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
-        - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-    - Game:
-      - IClient: 'Vanilla/Game/IClient.md'
-      - IGame: 'Vanilla/Game/IGame.md'
-      - IServer: 'Vanilla/Game/IServer.md'
+        - 玩家使用锄: 'Vanilla/Events/Events/PlayerUseHoe.md'
+    - 游戏:
+      - 客户端: 'Vanilla/Game/IClient.md'
+      - 游戏: 'Vanilla/Game/IGame.md'
+      - 服务端: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
-      - Mods: 'Vanilla/Game/Mods.md'
-    - Items:
-      - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
-      - IItemStack: 'Vanilla/Items/IItemStack.md'
-      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
-      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
-      - Tooltips: 'Vanilla/Items/Tooltips.md'
-      - Renaming: 'Vanilla/Items/Renaming.md'
-      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
-    - Liquids:
-      - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
-      - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
-    - Ore Dictionary:
-      - IOreDict: 'Vanilla/OreDict/IOreDict.md'
-      - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
-    - Players:
-      - IFoodStats: 'Vanilla/Players/IFoodStats.md'
-      - IPlayer: 'Vanilla/Players/IPlayer.md'
-      - IUser: 'Vanilla/Players/IUser.md'
-    - Potions:
-      - IPotion: 'Vanilla/Potions/IPotion.md'
-      - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
-      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes:
-        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
-        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
-        - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
-        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
-        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
-        - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
-      - Furnace Recipes:
-        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
-        - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+      - 加载的模组: 'Vanilla/Game/Mods.md'
+    - 物品:
+      - 物品定义: 'Vanilla/Items/IItemDefinition.md'
+      - 物品堆: 'Vanilla/Items/IItemStack.md'
+      - 物品条件: 'Vanilla/Items/Item_Conditions.md'
+      - 物品转换器s: 'Vanilla/Items/Item_Transformers.md'
+      - 提示信息: 'Vanilla/Items/Tooltips.md'
+      - 重命名: 'Vanilla/Items/Renaming.md'
+      - 加权物品堆: 'Vanilla/Items/WeightedItemStack.md'
+    - 流体:
+      - 流体堆: 'Vanilla/Liquids/ILiquidStack.md'
+      - 流体定义: 'Vanilla/Liquids/ILiquidDefinition.md'
+    - 矿物词典:
+      - 矿物词典: 'Vanilla/OreDict/IOreDict.md'
+      - 矿物辞典条目: 'Vanilla/OreDict/IOreDictEntry.md'
+    - 玩家:
+      - 食物状态: 'Vanilla/Players/IFoodStats.md'
+      - 玩家: 'Vanilla/Players/IPlayer.md'
+      - 用户: 'Vanilla/Players/IUser.md'
+    - 药水:
+      - 药水: 'Vanilla/Potions/IPotion.md'
+      - 药水效果: 'Vanilla/Potions/IPotionEffect.md'
+    - 配方:
+      - 酿造配方: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
+      - 工作台配方:
+        - 工作台配方: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - 配方函数: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+        - 配方: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
+        - 合成物品栏: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
+        - 合成信息: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
+      - 烧炼配方:
+        - 烧炼: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+        - 烧炼配方: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
+      - 种子掉落: 'Vanilla/Recipes/Seeds.md'
     - Utils:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
