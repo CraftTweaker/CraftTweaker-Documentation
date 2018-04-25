@@ -185,42 +185,42 @@ pages:
         - 烧炼: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - 烧炼配方: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - 种子掉落: 'Vanilla/Recipes/Seeds.md'
-    - Utils:
-      - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
-      - IFormatter: 'Vanilla/Utils/IFormatter.md'
-      - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
-      - Logger: 'Vanilla/Utils/Logger.md'
-      - Position3f: 'Vanilla/Utils/Position3f.md'
-    - Variable Types:
-      - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
-      - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
-      - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-    - World:
-      - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
-      - IBlockPos: 'Vanilla/World/IBlockPos.md'
-      - IFacing: 'Vanilla/World/IFacing.md'
+    - 实用工具:
+      - 格式化文本: 'Vanilla/Utils/IFormattedText.md'
+      - 格式化处理器: 'Vanilla/Utils/IFormatter.md'
+      - 物品实用工具: 'Vanilla/Utils/IItemUtils.md'
+      - 记录器: 'Vanilla/Utils/Logger.md'
+      - 浮点型位置: 'Vanilla/Utils/Position3f.md'
+    - 变量类型:
+      - 类型概述: 'Vanilla/Variable_Types/Variable_Types.md'
+      - 基础变量函数: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
+      - 材料: 'Vanilla/Variable_Types/IIngredient.md'
+    - 世界:
+      - 方块访问: 'Vanilla/World/IBlockAccess.md'
+      - 方块位置: 'Vanilla/World/IBlockPos.md'
+      - 朝向: 'Vanilla/World/IFacing.md'
       - IRayTraceResult: 'Vanilla/World/IRayTraceResult.md'
       - IVector3d: 'Vanilla/World/IVector3d.md'
-      - IWorld: 'Vanilla/World/IWorld.md'
-      - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
-      - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
-  - Mods:
+      - 世界: 'Vanilla/World/IWorld.md'
+      - 世界信息: 'Vanilla/World/IWorldInfo.md'
+      - 世界提供器: 'Vanilla/World/IWorldProvider.md'
+  - 模组支持:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Artisan Worktables:
-      - RecipeBuilder:
-        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
-    - Astral Sorcery:
-      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
-      - Crafting:
-        - Altar: 'Mods/Astral_Sorcery/Altar.md'
-        - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
-        - Light-Well: 'Mods/Astral_Sorcery/Well.md'
-        - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
-        - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
+      - 合成构建器:
+        - 合成构建器: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
+        - 用法: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - 实例: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+    - 星辉魔法:
+      - 关于星辉魔法: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - 合成:
+        - 祭坛: 'Mods/Astral_Sorcery/Altar.md'
+        - 砂轮: 'Mods/Astral_Sorcery/Grindstone.md'
+        - 聚星缸: 'Mods/Astral_Sorcery/Well.md'
+        - 星能聚合: 'Mods/Astral_Sorcery/Infusion.md'
+        - 星辉转化: 'Mods/Astral_Sorcery/Transmutation.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Requirements:
@@ -244,40 +244,40 @@ pages:
       - 命令: 'Mods/ContentTweaker/Commands.md'
       - 初试身手: 'Mods/ContentTweaker/WalkThrough.md'
       - 原版:
-        - Brackets:
-          - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
-          - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
-          - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
-          - SoundEvent: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
-        - Creatable Content:
-          - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
-          - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
+        - 尖括号引用:
+          - 方块材料: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
+          - 方块: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
+          - 创造模式标签页: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
+          - 声音类型: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
+          - 声音事件: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
+        - 可创建内容:
+          - 原版制造厂: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
+          - 方块: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
+          - 创造模式物品栏: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
           - Enchantments: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
-          - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
-          - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
-          - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality:
-          - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
-          - Functions:
-            - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
-            - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
-            - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
-            - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
-            - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
-            - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
-            - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
-            - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
-            - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
-        - Types:
-          - Block:
-            - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
-            - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
-            - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
-            - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
-            - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+          - 流体: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
+          - 物品: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
+          - 食物: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
+        - 高级功能:
+          - 命令: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - 功能:
+            - 行为结果: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
+            - 方块行为: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - 颜色提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
+            - 物品破坏方块: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
+            - 物品破坏方块速度: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - 获取容器物品: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
+            - 物品右击: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
+            - 物品堆提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
+            - 物品使用: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - 资源位置提供器: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
+        - 类型:
+          - 方块:
+            - 朝向: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
+            - 方块状态: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
+            - 方块位置: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
+            - 材料定义: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
+            - 碰撞箱: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
           - Color:
             - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
           - Item:
