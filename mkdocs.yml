@@ -18,7 +18,7 @@ pages:
   - 命令: 'Vanilla/Commands.md'
   - CraftTweaker GUI: 'Vanilla/CTGUI.md'
   - 全局函数: 'Vanilla/Global_Functions.md'
-  - 尖括号引用: 'Brackets/Brackets.md'
+  - 尖括弧引用: 'Brackets/Brackets.md'
   - 高级函数:
     - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
     - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
@@ -54,7 +54,7 @@ pages:
       - 方块状态: 'Vanilla/Blocks/IBlockState.md'
       - 材料: 'Vanilla/Blocks/IMaterial.md'
       - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
-    - 尖括号引用:
+    - 尖括弧引用:
       - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - 伤害来源: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
@@ -244,7 +244,7 @@ pages:
       - 命令: 'Mods/ContentTweaker/Commands.md'
       - 初试身手: 'Mods/ContentTweaker/WalkThrough.md'
       - 原版:
-        - 尖括号引用:
+        - 尖括弧引用:
           - 方块材料: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - 方块: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - 创造模式标签页: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
@@ -278,24 +278,24 @@ pages:
             - 方块位置: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - 材料定义: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - 碰撞箱: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
-          - Color:
-            - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
-          - Item:
-            - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
-          - Player:
-            - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
-            - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
-          - Resources:
-            - CTResourceLocation: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
-          - Sound:
-            - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
-            - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
-          - World:
-            - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
-      - Material System:
-        - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
-        - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
-        - Brackets:
+          - 颜色:
+            - 颜色: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
+          - 物品:
+            - 可变物品堆: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
+          - 玩家:
+            - 手: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
+            - 玩家: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
+          - 资源:
+            - 资源位置: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
+          - 声音:
+            - 声音类型定义: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
+            - 声音事件定义: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
+          - 世界:
+            - 世界: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
+      - 材料系统:
+        - 介绍: 'Mods/ContentTweaker/Materials/Introduction.md'
+        - 材料系统: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
+        - 尖括号引用:
           - Material Part Brakets Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
@@ -307,16 +307,16 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
-      - Tinkers' Construct:
-        - Brackets:
-          - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
+      - 匠魂:
+        - 尖括弧应用:
+          - 材料: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
         - Material Builder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
     - GameStages:
-      - Introduction: 'Mods/GameStages/GameStages.md'
+      - 介绍: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
@@ -358,11 +358,11 @@ pages:
         - 油藏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
-      - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
+      - 生物质炉: 'Mods/Industrial_Foregoing/BioReactor.md'
       - Fluid Dictionary: 'Mods/Industrial_Foregoing/FluidDictionary.md'
-      - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
-      - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
-      - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
+      - 镭射钻: 'Mods/Industrial_Foregoing/LaserDrill.md'
+      - 污泥精炼机: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
+      - 蛋白质反应器: 'Mods/Industrial_Foregoing/ProteinReactor.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -401,39 +401,39 @@ pages:
       - BetterWithMods:
         - 钢砧: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
-        - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - 釜锅: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
+        - 坩埚: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
         - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
-        - Kiln: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
+        - 窑: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
-        - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
-        - Stoked Cauldron: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
-        - Stoked Crucible: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
-        - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - 锯: 'Mods/Modtweaker/BetterWithMods/Saw.md'
+        - 釜锅猛火: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
+        - 坩埚猛火: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
+        - 螺杆旋转台: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
       - Blood Magic:
         - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
         - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
         - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
         - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
-      - Botania:
-        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
-        - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes:
-          - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
-          - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
-          - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
-          - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
-          - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
-          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
-          - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
-          - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
-      - Chisel:
-        - Carving: 'Mods/Modtweaker/Chisel/Carving.md'
-      - Extra Utilities 2:
-        - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
-        - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
+      - 植物魔法:
+        - 指令: 'Mods/Modtweaker/Botania/Commands.md'
+        - 植物魔法辞典: 'Mods/Modtweaker/Botania/Lexicon.md'
+        - 配方:
+          - 酿造: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
+          - 精灵交易: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
+          - 魔力灌注: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
+          - 凝矿兰: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
+          - 炎矿兰: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
+          - 花瓣炼制: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
+          - 白雏菊: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
+          - 符文祭坛: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
+      - 凿子:
+        - 雕刻: 'Mods/Modtweaker/Chisel/Carving.md'
+      - 更多实用设备2:
+        - 破碎机: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
+        - 共振仪: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
       - Forestry:
         - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
         - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
