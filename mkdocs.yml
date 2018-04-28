@@ -434,29 +434,29 @@ pages:
       - 更多实用设备2:
         - 破碎机: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - 共振仪: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
-      - Forestry:
-        - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
-        - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
-        - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
-        - Moistener: 'Mods/Modtweaker/Forestry/Moistener.md'
-        - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
-        - Still: 'Mods/Modtweaker/Forestry/Still.md'
-        - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
-      - Refined Storage:
-        - Recipes:
-          - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
-      - Tinkers' Construct:
-        - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets:
-          - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
-        - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
-        - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
-        - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
-        - Materials:
-          - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
-          - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
-        - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
-        - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
+      - 林业:
+        - 木工机: 'Mods/Modtweaker/Forestry/Carpenter.md'
+        - 离心机: 'Mods/Modtweaker/Forestry/Centrifuge.md'
+        - 发酵机: 'Mods/Modtweaker/Forestry/Fermenter.md'
+        - 加湿器: 'Mods/Modtweaker/Forestry/Moistener.md'
+        - 榨汁机: 'Mods/Modtweaker/Forestry/Squeezer.md'
+        - 蒸馏器: 'Mods/Modtweaker/Forestry/Still.md'
+        - 热电子加工台: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - 精致存储:
+        - 配方:
+          - 压印器: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
+      - 匠魂:
+        - 指令: 'Mods/Modtweaker/TConstruct/Commands.md'
+        - 尖括弧引用:
+          - 材料: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
+        - 合金: 'Mods/Modtweaker/TConstruct/Alloying.md'
+        - 浇铸: 'Mods/Modtweaker/TConstruct/Casting.md'
+        - 晾干: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - 材料:
+          - 匠魂材料: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
+          - 匠魂材料定义: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
+        - 冶炼: 'Mods/Modtweaker/TConstruct/Melting.md'
+        - 冶炼炉燃料: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
         - 处理器:
