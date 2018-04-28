@@ -9,4 +9,4 @@
 
 ## 已移除的Crafttweaker方法
 
-- 星辉魔法的Crafttweaker兼容曾经兼容Mineralis仪式，不过现在要通过配置文件修改！
+- 星辉魔法的Crafttweaker兼容曾经兼容Mineralis（晶金座）仪式，不过现在要通过配置文件修改！
