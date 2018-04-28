@@ -156,7 +156,7 @@ pages:
       - 物品定义: 'Vanilla/Items/IItemDefinition.md'
       - 物品堆: 'Vanilla/Items/IItemStack.md'
       - 物品条件: 'Vanilla/Items/Item_Conditions.md'
-      - 物品转换器s: 'Vanilla/Items/Item_Transformers.md'
+      - 物品转换器: 'Vanilla/Items/Item_Transformers.md'
       - 提示信息: 'Vanilla/Items/Tooltips.md'
       - 重命名: 'Vanilla/Items/Renaming.md'
       - 加权物品堆: 'Vanilla/Items/WeightedItemStack.md'
