@@ -84,10 +84,9 @@ print(stringArrayAll[0][1]);
 # 循环
 循环是一个能够重复执行的函数。你能够通过循环来对一个数组中所有的元素进行一些修改应用。
 
-## For Loop
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
-
+## For 循环
+For循环的主要用途是遍历数组中的每一个元素。遍历指的是对一个数组中的所有元素执行一段代码。
+你可以使用`break`关键字提前结束循环。
 ```js
 import crafttweaker.item.IItemStack;
 
@@ -129,14 +128,14 @@ for item in loadedMods["minecraft"].items {
 }
 ```
 
-## While Loop
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+## While 循环
+While循环只要后面的条件为`true`就会循环执行给定的代码。
+另外，可以使用`break`关键字结束循环。
 
 ```
 var i = 0;
 
-//Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+//会输出 0 - 9 ，因为在下一轮循环中，i等于10，因此 i<10 判断结果为false 
 while i < 10 {
 	print(i);
 	i += 1;
@@ -145,7 +144,7 @@ while i < 10 {
 print("After loop: " + i);
 
 
-//Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+//会输出 10 - 6, 应为在下一轮循环中 i== 5 ,使循环中断
 while (i > 0) {
 	if i == 5
 		break;
@@ -163,7 +162,7 @@ for k in 1 .. 10 {
 }
 ```
 
-# Adding items to an Array
+# 向数组中添加对象
 
 虽然很不推荐这么做，但是向数组中添加对象是可行的；  
 每次只能对一个数组添加一个元素，无法同时对多个数组添加元素；  
