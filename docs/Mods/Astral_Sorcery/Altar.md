@@ -32,15 +32,15 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ## 添加祭坛合成
 
 所有添加合成表的的方法都需要以下参数：
-[-[IItemStack](/Vanilla/Items/IItemStack) `output`,  
--int `starlightRequired`,  
--int `craftingTickTime`,  
--[IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs`
+[-[IItemStack](/Vanilla/Items/IItemStack) `output（输出）`,  
+-int `starlightRequired（需要的星光）`,  
+-int `craftingTickTime（合成需要的刻数）`,  
+-[IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs（输入）`
 
 不像工作台合成配方，`输入`参数是一维数组。
 你可以使用[物品堆](/Vanilla/Items/IItemStack), [流体堆](/Vanilla/Liquids/ILiquidStack), [矿物词典条目](/Vanilla/OreDict/IOreDictEntry) 或者 `null` 作为数组的条目。
 
-这些合成都不会是无序合成！
+这些合成都不是无序合成！
 
 
 ### 探索
