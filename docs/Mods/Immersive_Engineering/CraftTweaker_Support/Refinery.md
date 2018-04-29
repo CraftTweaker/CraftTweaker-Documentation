@@ -1,36 +1,36 @@
-# Refinery
-The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
+# 炼油厂
+炼油厂相关包可以被用于为沉浸工程的炼油厂添加或移除配方。
 
-## Calling The Package
-You can call the Refinery package using `mods.immersiveengineering.Refinery`.
+## 导入相关包
+使用`mods.immersiveengineering.Refinery`以导入炼油厂相关包。
 
-## Add Recipe
+## 添加配方
 
-|Required  |Type                |Data Type                                          |
-|----------|--------------------|---------------------------------------------------|
-|Required  |Output              |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
-|Required  |Input 1             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
-|Required  |Input 2             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
-|Required  |Energy              |Integer                                            |
+|是否必要   |类型                |数据类型                                           |
+|----------|--------------------|----------------------------------------------------|
+|必要      |Output（输出）       |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)|
+|必要      |Input 1（输入1）     |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)|
+|必要      |Input 2（输入2）     |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)|
+|必要      |Energy（能量）       |整数                                                 |
 
-### Example
+### 例子
 ```JAVA
-//Example
+//例
 mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
 
-## Remove Recipe
+## 移除配方
 
-|Type              |Data Type                                          |
-|------------------|---------------------------------------------------|
-|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
+|类型              |数据类型                                             |
+|------------------|----------------------------------------------------|
+|Output（输出）     |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)|
 
-### Example
+### 例子
 ```JAVA
-//Example
+//例
 mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
 
 mods.immersiveengineering.Refinery.removeRecipe(<liquid:iron>);
