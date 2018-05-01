@@ -64,3 +64,21 @@ You can find the Traits's ResourceLocations under:
 
 
 ## Inverted Requirements:
+Inverted Requirements are a 1.4.0 CompatSkills feature only!
+Inverted Requirements are unlocked when you do not have the required component.
+Inverted Skill Requirement is unlocked when you do not have the specified level of the skill or higher.
+The Inverted-Syntaxes are as follows:
+```
+Example:
+!adv|
+!stage|
+!skill|
+!trait|
+
+
+Working Example:
+!adv|minecraft:husbandry/plant_seed
+!stage|test
+!skill|reskillable:building|15
+!trait|reskillable:battle_spirit
+```
