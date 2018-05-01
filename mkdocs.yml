@@ -217,17 +217,31 @@ pages:
         - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - Supports:
-        - Blood Magic: 'Mods/CompatSkills/Supports/Blood_Magic.md'
-        - CraftTweaker: 'Mods/CompatSkills/Supports/CraftTweaker.md'
-        - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
+        - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
+        - Blood Magic:
+          - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
+          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
+          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+        - CraftTweaker:
+          - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
+          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
+          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
+        - GameStages:
+          - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
-        - Reskillable: 'Mods/CompatSkills/Supports/Reskillable.md'
+        - Reskillable:
+          - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
+          - Custom Skills/Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomSkillsTraits.md'
+          - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
           - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
+      - Master Translate List: 'Mods/CompatSkills/MasterTranslateList.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'

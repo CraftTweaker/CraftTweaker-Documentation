@@ -1,32 +1,10 @@
-# Reskillable
+# Custom Skills & Traits
 
 ## Credits:
 Credits goes out to Kindlich for writing most of the Custom Content implementation!
 
 
-## Bracket Handlers
-
-### Skill Bracket Handler:
-```
-## Example:
-<skill:resourcelocation>
-
-## Working Example:
-<skill:reskillable:agility>
-```
-
-### Trait Bracket Handler:
-```
-## Example:
-<trait:resourcelocation>
-
-## Working Example:
-<trait:reskillable:sidestep>
-```
-
-
 ## Custom Skills & Trait
-
 ### Custom Skills:
 ```
 Examples:

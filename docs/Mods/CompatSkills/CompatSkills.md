@@ -2,11 +2,15 @@
 
 
 ## Currently adds Compatibility for:
+- Baubles
 - Blood Magic
 - CraftTweaker
 - GameStages
 - Immersive Engineering
 - Magneticraft
+- Reskillable
+- The One Probe (TOP)
+- Hwyla/Waila
 
 
 ### Important!:

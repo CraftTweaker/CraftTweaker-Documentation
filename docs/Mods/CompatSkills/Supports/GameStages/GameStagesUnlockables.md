@@ -1,10 +1,7 @@
-# GameStages
+# Stage-Unlockables
 
-## Explanation:
-So the GameStage Support exists in two form:
-- Using GameStages as Requirements
-- Creating "Dummy Traits" that once unlocked, unlocks a GameStage.
 
+## Unlockables
 This part of the GameStages support will focus on the later form.
 Aka "Dummy Traits" for unlocking GameStages.
 
@@ -18,7 +15,7 @@ When creating a new dummy trait you'll notice a few things are missing:
 This is due to these things requiring Resources.
 At the current stage CompatSkills does not provide the ability to provide these natively.
 There are a few ways around this:
-- Use BASE which comes with it's own Resource Loader (Only works if ContentTweaker is Present due to how BASE works!).
+- Use BASE which comes with it's own Resource Loader (Only works if ContentTweaker is Present due to how BASE works).
 - Use ResourceLoader by Lumien.
 
 Localization is pretty straight forward.
