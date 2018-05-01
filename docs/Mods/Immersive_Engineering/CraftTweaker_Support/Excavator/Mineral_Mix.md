@@ -63,7 +63,7 @@ import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;
 
 //Get The Mineral Mix
-mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["minecraft:iron_ore", "minecraft:diamond_ore"], [0.005, 0.01], [1, 0, -1]);
+mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 
