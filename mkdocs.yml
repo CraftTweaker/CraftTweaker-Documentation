@@ -232,10 +232,17 @@ pages:
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
+        - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
           - Custom Skills/Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomSkillsTraits.md'
           - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+        - Tinker's Construct: 
+          - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
+          - Material-Locks:
+            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - Modifier-Locks:
+            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
