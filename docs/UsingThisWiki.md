@@ -1,11 +1,11 @@
-# wiki 使用
+# Wiki 使用
 
-这个 wiki 能够给你提供一个 CraftTweaker 的大纲，介绍 CraftTweaker 中存在的类型，以及它们的用途。
+这个 Wiki 能够给你提供一个 CraftTweaker 的大纲，介绍 CraftTweaker 中存在的类型，以及它们的用途。
 同时在某些条目也提供了一些示例，从而能够更好的理解它们。
 
 # 术语说明
 
-在开始之前，我们需要了解一些会用的术语：
+在开始之前，我们需要了解一些会用到的术语：
 
 ## ZenGetter
 

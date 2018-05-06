@@ -90,11 +90,11 @@ changingArray[gg] = "我喜欢他";
 changingArray[<minecraft:grass>] = "力量！";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## 检索关联数组的键集和项集
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+`KeySet`是一个包含了映射（关联数组）中所有键的数组。  
+`valueSet`是一个包含了映射（关联数组）中所有值的数组。  
+`entrySet`是一个包含了映射（关联数组）中所有项的数组（如下文所示）。
 
 ```JAVA
 myAssocArray.keySet   //keySet
