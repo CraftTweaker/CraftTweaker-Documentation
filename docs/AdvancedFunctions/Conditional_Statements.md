@@ -18,7 +18,7 @@ if(test == 0){ //true
 
 ## Else
 
-Else 关键字用来条件语句的后半部分，当 if 语句处条件为 False 时候，就会执行此处的代码块。
+Else 关键字可以作为条件语句的后半部分，当 if 语句处条件为 False 时候，就会执行此处的代码块。
 
 ```Js
 var test = 0;
@@ -34,10 +34,10 @@ if(test == 0){//true
 test = 1
 if(test == 0){//false
 	//当 test 为 0 时候，执行此处语句
-	print("Now, test is zero!");
+	print("现在 test 等于 0！");
 } else {
 	//当 test 不为 0 时候，执行此处语句
-	print("Now, test is NOT zero!");
+	print("现在 test 不等于 0！");
 }
 
 ```

@@ -1,7 +1,7 @@
 # 站点的基本信息
-site_name: Crafttweaker 简体中文文档
+site_name: CraftTweaker 简体中文文档
 repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
-copyright: Crafttweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
+copyright: CraftTweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
 theme: readthedocs
 
 # 使用的几个额外组件
@@ -18,7 +18,7 @@ pages:
   - 命令: 'Vanilla/Commands.md'
   - CraftTweaker GUI: 'Vanilla/CTGUI.md'
   - 全局函数: 'Vanilla/Global_Functions.md'
-  - 尖括弧引用: 'Brackets/Brackets.md'
+  - 尖括号引用: 'Brackets/Brackets.md'
   - 高级函数:
     - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
     - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
@@ -54,7 +54,7 @@ pages:
       - 方块状态: 'Vanilla/Blocks/IBlockState.md'
       - 材料: 'Vanilla/Blocks/IMaterial.md'
       - 移动性标识: 'Vanilla/Blocks/IMobilityFlag.md'
-    - 尖括弧引用:
+    - 尖括号引用:
       - 创造模式标签页: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - 伤害来源: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - 附魔: 'Vanilla/Brackets/Bracket_Enchantment.md'
@@ -244,7 +244,7 @@ pages:
       - 命令: 'Mods/ContentTweaker/Commands.md'
       - 初试身手: 'Mods/ContentTweaker/WalkThrough.md'
       - 原版:
-        - 尖括弧引用:
+        - 尖括号引用:
           - 方块材料: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - 方块: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - 创造模式标签页: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
@@ -308,7 +308,7 @@ pages:
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
       - 匠魂:
-        - 尖括弧应用:
+        - 尖括号应用:
           - 材料: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
@@ -447,7 +447,7 @@ pages:
           - 压印器: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - 匠魂:
         - 指令: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - 尖括弧引用:
+        - 尖括号引用:
           - 材料: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - 合金: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - 浇铸: 'Mods/Modtweaker/TConstruct/Casting.md'

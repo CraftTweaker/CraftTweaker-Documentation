@@ -7,10 +7,11 @@
 示例：`#modloaded minecraft`
 
 你甚至可以提供多个模组 id：  
-比如 `#modloaded minecraft tconstruct` 就只会在 minecraft 和 匠魂同时加载的情况下执行脚本。
+比如 `#modloaded minecraft tconstruct` 就只会在 minecraft 和 匠魂 同时加载的情况下执行脚本。
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded:
-`#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+你也可以反转模组加载器的状态，使得其只在特定模组没有加载时，且特定模组被加载时才执行：  
+比如`#modloaded !tconstruct minecraft` 就只会在 miencraft 被加载且 匠魂 没有被加载时执行。
 
-## What it does
-If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
+## 有什么用
+开启了模组加载器的脚本，仅会在指定 modID 的模组存在时被执行。  
+也就是说，只有在特定模组被加载时才会执行。
