@@ -13,7 +13,7 @@ IBlockState extends [IBlockAccess](IBlockAccess). That means that all methods th
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
 ```
-crafttweaker.world.IWorld.create(int id);
+crafttweaker.world.IWorld.getFromID(int id);
 ```
 
 ## ZenMethods without parameters and ZenGetters
