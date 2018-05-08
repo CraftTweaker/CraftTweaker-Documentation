@@ -24,6 +24,7 @@ mods.compatskills.SkillCreator.createNewSkill("pokemon:throwing", "textures/bloc
 
 ### ZenProperties
 |Reference|Property Name|Implementation|
+|:--------|:------------|--------------|
 |CrTSkill |name         |See Below     |
 
 ```
