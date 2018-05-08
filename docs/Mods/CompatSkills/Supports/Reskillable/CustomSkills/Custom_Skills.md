@@ -47,3 +47,27 @@ banana.name = "Banana"
 |Setter      |setBaseLevelCost     |Takes an Integer                 |
 |Getter      |getBaseLevelCost     |Returns an Integer               |
 |Getter      |getName              |Returns the localized String Name|
+
+
+### Localization & Resource Location References:
+```
+Skill Icons:
+
+Either:
+- mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation);
+	- compatskills:textures/skills/skillname.png
+
+- mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation);
+	- customResourceLocation:/textures/skills/skillname.png
+
+
+Localizations are placed in:
+- compatskills:lang/localeCode.lang
+
+or
+
+- customResourceLocation:lang/localeCode.lang
+```
+
+Go to this link to see all possible Locale-Codes!
+[Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")

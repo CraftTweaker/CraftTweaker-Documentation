@@ -13,6 +13,7 @@ mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSk
 mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, String... requirements)
 mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, String... requirements)
 
+
 "traitName" VS "traitLocation" is the same as in Skills.
 
 "CrTSkill parentSkill" is the Skill Bracket Handler.
@@ -20,7 +21,9 @@ mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y
 
 So a functional Example would be:
 var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+var test1 = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+var test2 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
 ```
 
 ### ZenProperties
@@ -34,11 +37,11 @@ var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskil
 
 // Hard-Sets the name to "Test"
 // Be aware this makes localization through .lang files not possible!
-test.name = "Test"
+trait.name = "Test"
 
 // Hard-Sets the description to "Hello, I'm a Description"
 // Be aware this makes localization through .lang files not possible!
-test.description = "Hello, I'm a Description"
+trait.description = "Hello, I'm a Description"
 ```
 
 
@@ -49,3 +52,27 @@ test.description = "Hello, I'm a Description"
 |Getter      |getEnabled           |Returns a Boolean                                    |
 |Getter      |getName              |Returns the localized String Name of the Trait       | 
 |Getter      |getDescription       |Returns the localized String Description of the Trait|
+
+
+### Localization & Resource Location References:
+```
+Trait Icons:
+
+Either:
+- mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, String... requirements);
+	- compatskills:textures/unlockables/traitname.png
+
+- mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, String... requirements);
+	- customResourceLocation:/textures/unlockables/traitname.png
+
+
+Localizations are placed in:
+- compatskills:lang/localeCode.lang
+
+or
+
+- customResourceLocation:lang/localeCode.lang
+```
+
+Go to this link to see all possible Locale-Codes!
+[Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
