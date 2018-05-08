@@ -235,8 +235,11 @@ pages:
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
-          - Custom Skills/Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomSkillsTraits.md'
           - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+          - Custom Skills:
+            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+          - Custom Traits: 
+            - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
         - Tinker's Construct: 
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
           - Material-Locks:

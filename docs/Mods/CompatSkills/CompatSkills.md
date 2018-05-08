@@ -6,11 +6,14 @@
 - Blood Magic
 - CraftTweaker
 - GameStages
+- Hwyla/Waila
 - Immersive Engineering
 - Magneticraft
+- ProjectE
 - Reskillable
 - The One Probe (TOP)
-- Hwyla/Waila
+- Tinker's Construct
+
 
 
 ### Important!:
