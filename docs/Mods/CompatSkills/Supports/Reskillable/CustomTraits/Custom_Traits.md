@@ -28,6 +28,7 @@ var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<sk
 
 ### ZenProperties
 |Reference|Property Name       |Implementation|
+|:--------|:-------------------|--------------|
 |CrTTrait |name                |See Below     |
 |CrTTrait |description         |See Below     |
 
