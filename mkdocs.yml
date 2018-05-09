@@ -240,6 +240,17 @@ pages:
             - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Events:
+              - Events: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/Events.md'
+              - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
+              - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
+              - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
+              - onEnderTeleport: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onEnderTeleport.md'
+              - onHurt: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onHurt.md'
+              - onKillMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onKillMob.md'
+              - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
+              - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
+              - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
         - Tinker's Construct: 
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
           - Material-Locks:
