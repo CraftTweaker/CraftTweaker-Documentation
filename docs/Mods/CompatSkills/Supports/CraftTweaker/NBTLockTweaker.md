@@ -2,8 +2,8 @@
 
 
 ## NBT-Locking
-The NBT-Locks are specific to CompatSkills 1.4.0 and are by far the currently most powerful feature.
-This means that you will either be able to lock specific NBT-Tags on a per mod-basis or on a overall basis.
+The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature.
+You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
 
 This means that any item found to contain that NBT-tag will have the lock applied to it.
 

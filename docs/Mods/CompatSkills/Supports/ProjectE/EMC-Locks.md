@@ -1,7 +1,7 @@
 # ProjectE
 
 ## EMC-Locks
-CompatSkills as of 1.5.0 now support EMC Locks for items.
+As of 1.5.0 CompatSkills supports EMC Locks for items.
 
 ### Syntax:
 ```

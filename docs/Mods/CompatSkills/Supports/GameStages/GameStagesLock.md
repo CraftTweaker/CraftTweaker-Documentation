@@ -2,8 +2,8 @@
 
 
 ## Stage-Lock
-This part of the GameStages-Support allows you to lock a specific Stage behind a set of Requirements.
-This means that if a player does not match the set requirements for the Stage upon unlocking the Stage, it'll cancel the unlock and post a error message to chat. This chat message isn't server-wide but player-specific.
+This part of the GameStages-support allows you to lock a specific stage behind a set of requirements.
+This means that if a player does not match the set requirements for the stage upon unlocking the stage, it'll cancel the unlock and post an error message to chat. This chat message isn't server-wide but player-specific.
 
 
 ### Syntax:

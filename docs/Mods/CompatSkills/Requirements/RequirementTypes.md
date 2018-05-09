@@ -64,9 +64,9 @@ You can find the Traits's ResourceLocations under:
 
 
 ## Inverted Requirements:
-Inverted Requirements are a 1.4.0 CompatSkills feature only!
-Inverted Requirements are unlocked when you do not have the required component.
-Inverted Skill Requirement is unlocked when you do not have the specified level of the skill or higher.
+Inverted requirements are a 1.4.0+ CompatSkills feature only!
+Inverted requirements are unlocked as long as you do not have the required component.
+An Inverted Skill Requirement is unlocked as long as you do not have the specified level of the skill or higher.
 The Inverted-Syntaxes are as follows:
 ```
 Example:

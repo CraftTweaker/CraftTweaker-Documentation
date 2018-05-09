@@ -22,7 +22,7 @@ mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don'
 
 
 ### Post-1.4.0:
-As of CompatSkills 1.4.0 a few new ZenMethods has been added as well as some changes has been done to the existing syntax.
+As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some changes has been done to the existing syntax.
 We've also fixed an issue that made Ritual Support and Binding Support not work properly!
 
 #### Syntax:
@@ -39,12 +39,12 @@ mods.compatskills.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
 ```
 
 #### Error Message
-As with the Binding-Support, the Error-Message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so ResourcePack Authors can localize and change the strings as they'd like much easier.
+As with the binding support, the error message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so resource pack authors can localize and change the strings as they'd like much easier.
 ```
 compatskills.bloodmagic.ritualError=As the ritual activates, you don't achieve the expected result
 ```
 
-Some other changes are for example that the default Error Message now displays as part of a status chat-message to the player.
+Some other changes are for example that the default error message now displays as part of a status chat message to the player.
 This means that the message is only shown to the player and not printed in chat for everyone to see.
 This also means that it will now display alongside requirements in the chat.
 Which makes it easier for the player to identify what they are missing from the lock.

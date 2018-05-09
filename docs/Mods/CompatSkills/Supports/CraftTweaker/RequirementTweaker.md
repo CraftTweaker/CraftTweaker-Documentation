@@ -2,8 +2,8 @@
 
 
 ## PSA:
-As of 1.2.0 and forward, alot of changes are being done to improve the internals of Reskillable and CompatSkills.
-This will show itself in more and more powerful locking capabilities being added over time.
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkills
+This will allow for more powerful locking mechanisms in the future.
 One of the changes introduced in 1.2.0 was the idea of "Master Locks".
 This has come with some impacts, one of the notable ones that does affect CrT support is the following!
 Config Locks now are "Masters" over CrT Locks, meaning if you have add a non-nbt specific lock to an already established item in the configs.

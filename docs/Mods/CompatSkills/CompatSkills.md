@@ -12,7 +12,7 @@
 - ProjectE
 - Reskillable
 - The One Probe (TOP)
-- Tinker's Construct
+- Tinkers Construct
 
 
 
