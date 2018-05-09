@@ -240,8 +240,8 @@ pages:
             - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/Events.md'
             - Events:
-              - Events: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/Events.md'
               - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
