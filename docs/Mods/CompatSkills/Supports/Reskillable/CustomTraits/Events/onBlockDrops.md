@@ -1,8 +1,8 @@
 ### onBlockDrops
 |Setter/Getter/Method|Method Names                      |Names                          |Input/Output                                             |
 |:-------------------|:---------------------------------|:------------------------------|---------------------------------------------------------|
-|Getter              |getDropChance();                  |dropChance();                  |Returns a Float                                         | 
-|Setter              |setDropChance(float dropChance);  |dropChance(float dropChance);  |Takes an Float                                           |
+|Getter              |getDropChance();                  |dropChance();                  |Returns a Float                                          | 
+|Setter              |setDropChance(float dropChance);  |dropChance(float dropChance);  |Takes a Float                                            |
 |Getter              |getFortuneLevel();                |fortuneLevel();                |Returns an Integer                                       |
 |Getter              |getDrops();                       |drops();                       |Returns a List of [IItemStack](/Vanilla/Items/IItemStack)|
 |Setter              |setDrops(List<IItemStack> drops); |drops(List<IItemStack> drops); |Takes an List of [IItemStack](/Vanilla/Items/IItemStack) |
