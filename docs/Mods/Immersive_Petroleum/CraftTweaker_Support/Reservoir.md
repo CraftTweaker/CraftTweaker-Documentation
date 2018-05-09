@@ -1,24 +1,24 @@
-# Reservoir
+# 油藏
 
-## registerReservoir
+## 注册油藏
 
-|Type              |Data Type                                  |
-|------------------|-------------------------------------------|
-|Name Identifier   |String                                     |
-|Fluid             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)|
-|Minimum Size      |Integer                                    |
-|Maximum Size      |Integer                                    |
-|Replenish Rate    |Integer                                    |
-|Weight            |Integer                                    |
+|类型                      |数据类型                                  |
+|-------------------------|-------------------------------------------|
+|Name Identifier（名称）   |字符串                                     |
+|Fluid（流体）            |[Fluidstack（流体堆）](/Vanilla/Liquids/ILiquidStack)|
+|Minimum Size（最大体积）  |整数                                    |
+|Maximum Size（最小体积）  |整数                                    |
+|Replenish Rate（更新速率）|整数                                    |
+|Weight（权重）            |整数                                    |
 
-### Weight
-Weight is the Weighted Chance of a chunk containing that specific fluid reservoir.
-The weight is counted as in X in Total.
+### 权重
+权重是一个区块包含指定油藏的加权概率。
+权重概率是由权重除以总数计算的。
 
-So if you have 5 Reservoir values at:
+所以如果5种油藏的权值分别如下:
 5, 5, 6, 8, 10
 
-Then each respective entry will have a weighted chance of:
+对应每一个油藏的加权概率就是:
 ```
 5  in 34
 5  in 34
@@ -28,7 +28,7 @@ Then each respective entry will have a weighted chance of:
 ```
 
 
-### Code Example:
+### 代码示例:
 ```JAVA
 mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
 mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
