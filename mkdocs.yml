@@ -431,6 +431,10 @@ pages:
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
         - Still: 'Mods/Modtweaker/Forestry/Still.md'
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - Inspirations:
+        - Inspirations: 'Mods/Modtweaker/Inspirations/Inspirations.md'
+        - Handlers:
+          - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Refined Storage:
         - Recipes:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
