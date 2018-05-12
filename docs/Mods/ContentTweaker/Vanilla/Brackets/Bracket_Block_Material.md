@@ -1,7 +1,7 @@
 # 方块材料
 
 
-`Block Material Bracket Handler(以下称BMBH)` 使你可以定义方块在游戏中的材料,以让游戏知道方块需要发出什么声音
+`Block Material Bracket Handler(以下称BMBH)` 使你可以定义方块在游戏中的材料,以让游戏知道方块需要发出什么声音.
 在Minecraft中,方块材料只有这些:
 
 <details>
