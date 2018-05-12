@@ -5,7 +5,7 @@
 在Minecraft中,方块材料只有这些:
 
 <details>
-	<summary>Click to expand the Material list</summary>
+	<summary>若要查看可用的方块材料列表,请单击</summary>
 	<ul>
 		<li>Air(空气)</li>
 		<li>Grass(草方块)</li>
