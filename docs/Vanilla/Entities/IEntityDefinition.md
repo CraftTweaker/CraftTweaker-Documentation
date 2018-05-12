@@ -97,11 +97,20 @@ This removes a drop.
 ```
 val entity = <entity:minecraft:sheep>;
 
-//remove(item);
-entity.remove(<minecraft:wool>);
+//removeDrop(item);
+entity.removeDrop(<minecraft:wool>);
 ```
 `item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack).
 
+### Clear Drops
+
+This removes all drops.
+```
+val entity = <entity:minecraft:sheep>;
+
+//clearDrops
+entity.clearDrops;
+```
 
 ### Get
 
