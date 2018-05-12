@@ -262,7 +262,6 @@ pages:
         - Wrapper:
           - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
-      - Master Translate List: 'Mods/CompatSkills/MasterTranslateList.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'
