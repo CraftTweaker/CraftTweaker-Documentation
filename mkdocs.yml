@@ -488,6 +488,7 @@ pages:
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
         - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+        - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
       - Tweaker Static Class: 'Mods/PoweredThingies/_TweakerClass.md'

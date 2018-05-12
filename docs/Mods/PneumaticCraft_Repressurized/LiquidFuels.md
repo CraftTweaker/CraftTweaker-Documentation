@@ -32,5 +32,5 @@ The following functions can be used to add fluids to the fuel registry:
 mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 
 // Example: register water as a fuel which produces 16000mL air per bucket.
-mmods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
+mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```
