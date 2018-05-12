@@ -50,4 +50,4 @@
 <blockmaterial:wood>
 ```
 
-如果你引用的方块材料是可用的,这将返回 [自定义材料](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition) 对象
+如果你引用的方块材料是可用的,这将返回 [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition) 对象
