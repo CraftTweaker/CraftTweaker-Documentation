@@ -2,30 +2,8 @@
 
 
 ## PSA:
-As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. This is in an effort to allow for more powerful locking mechanisms in the future.
-
-One of the changes introduced in 1.2.0 was the idea of "Master Locks".
-This has come with some impacts on how locks are implemented, for example one of the notable changes that "Master Locks" implemented was  that Config Locks now are "Masters" over CrT Locks.
-
-This means that if two identical locks exists for the same item, one in config and one in CrT implementation.
-Then the one that will be applied is the Config one since it's a higher "priority" of sorts, than the CrT Lock.
-
-```
-Example:
-Config: 
-minecraft:diamond_pickaxe:*=reskillable:mining|16
-
-VS
-
-Crafttweaker: 
-mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
-
-Then the lock returned for the item will be:
-Mining: 16
-```
-
-So if you want to add a non-NBT lock for an item through CrT that already exists in the Configs.
-**Please remove the config lock and it will work**
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. 
+This is in an effort to allow for more powerful locking mechanisms in the future.
 
 
 ## Requirement-Locking:
