@@ -232,6 +232,10 @@ pages:
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
+        - Minecraft: 
+          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
