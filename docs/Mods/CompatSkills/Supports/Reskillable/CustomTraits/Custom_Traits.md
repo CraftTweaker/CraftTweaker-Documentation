@@ -8,10 +8,10 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
 ### Implementation Syntax:
 ```
 Examples:
-mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, String... requirements)
-mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, String... requirements)
-mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, String... requirements)
-mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, String... requirements)
+mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
+mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
+mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
+mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
 
 
 "traitName" VS "traitLocation" is the same as in Skills.
@@ -60,10 +60,10 @@ trait.description = "Hello, I'm a Description"
 Trait Icons:
 
 Either:
-- mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, String... requirements);
+- mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements);
 	- compatskills:textures/unlockables/traitname.png
 
-- mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, String... requirements);
+- mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements);
 	- customResourceLocation:/textures/unlockables/traitname.png
 
 
