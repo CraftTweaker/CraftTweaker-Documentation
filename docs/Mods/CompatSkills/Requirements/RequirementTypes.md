@@ -16,6 +16,20 @@ This works for any and all Advancements even those added by other mods than mine
 
 
 
+## Dimensions:
+Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
+- Being in a **Specific** dimension.
+- Being in **any** dimension **other than** the one specified.
+```
+Example:
+dim|integer
+
+Working Example:
+dim|0
+```
+
+
+
 ## GameStages:
 GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages.
 The GameStage Syntax is as follows:
@@ -71,6 +85,7 @@ The Inverted-Syntaxes are as follows:
 ```
 Example:
 !adv|
+!dim|
 !stage|
 !skill|
 !trait|
@@ -78,6 +93,7 @@ Example:
 
 Working Example:
 !adv|minecraft:husbandry/plant_seed
+!dim|0
 !stage|test
 !skill|reskillable:building|15
 !trait|reskillable:battle_spirit
