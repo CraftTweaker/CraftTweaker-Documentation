@@ -236,6 +236,7 @@ pages:
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
           - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
