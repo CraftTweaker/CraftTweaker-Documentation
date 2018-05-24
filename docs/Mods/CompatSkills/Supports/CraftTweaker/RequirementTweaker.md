@@ -1,28 +1,12 @@
-# CraftTweaker
+# Requirement Tweaker
+
 
 ## PSA:
-
-**PLEASE DO NOTE!**
-As of 1.2.0 a lot of changes has been done internally to facilitate more powerful NBT support.
-This has come with some changes, one of the notable ones that does affect CrT support is the following!
-Config Locks now are "Masters" over CrT Locks, meaning if you have add a non-nbt specific lock to an already established item in the configs.
-```
-Example:
-Config: minecraft:diamond_pickaxe:*=reskillable:mining|16
-
-VS
-
-Crafttweaker: mods.compatskills.Requirement.addRequirement(<minecraft:diamond_pickaxe:*>, "reskillable:mining|4");
-
-Then the lock returned for the item will be:
-Mining: 16
-```
-
-So if you want to add a non-NBT lock for an item through CrT that already exists in the Configs.
-**Please remove the config lock and it will work**
+As of 1.2.0 and forward, Reskillable is being actively developed to improve on the internals of Reskillable and CompatSkill's Locking Systems. 
+This is in an effort to allow for more powerful locking mechanisms in the future.
 
 
-## Requirement Locking:
+## Requirement-Locking:
 Currently the main CrT support is for Requirement Locking.
 This can also be accomplished through the config system.
 However the Config System does **NOT** support NBT!

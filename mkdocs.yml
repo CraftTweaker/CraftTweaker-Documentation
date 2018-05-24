@@ -217,12 +217,52 @@ pages:
         - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - Supports:
-        - Blood Magic: 'Mods/CompatSkills/Supports/Blood_Magic.md'
-        - CraftTweaker: 'Mods/CompatSkills/Supports/CraftTweaker.md'
-        - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
+        - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
+        - Blood Magic:
+          - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
+          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
+          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+        - CraftTweaker:
+          - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
+          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
+          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
+        - GameStages:
+          - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
-        - Reskillable: 'Mods/CompatSkills/Supports/Reskillable.md'
+        - Minecraft: 
+          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
+          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
+        - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
+        - Reskillable:
+          - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
+          - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+          - Custom Skills:
+            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+          - Custom Traits: 
+            - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
+            - Events:
+              - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
+              - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
+              - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
+              - onEnderTeleport: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onEnderTeleport.md'
+              - onHurt: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onHurt.md'
+              - onKillMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onKillMob.md'
+              - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
+              - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
+              - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
+        - Tinker's Construct: 
+          - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
+          - Material-Locks:
+            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - Modifier-Locks:
+            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
