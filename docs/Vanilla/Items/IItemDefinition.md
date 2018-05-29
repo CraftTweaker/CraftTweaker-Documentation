@@ -31,8 +31,8 @@ val itemDefinitionList = game.items;
 | defaultInstance    |                                                                                                      | [IItemStack](IItemStack)                                |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)      |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab)    |
-| canItemEditBlocks  |                                                                                                      | bool                                                    |
-| itemEnchantability |                                                                                                      | int                                                     |
+| canItemEditBlocks  |                                                                                                      | 布尔值                                                    |
+| itemEnchantability | 返回物品附魔能力                                                                                                     | 整数                                                     |
 | subItems           |                                                                                                      | List<[IItemStack](IItemStack)\>                         |
 
 
