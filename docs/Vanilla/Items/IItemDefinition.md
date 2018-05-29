@@ -1,14 +1,14 @@
-# IItemDefinition
+#  物品定义
 
-An IItemDefinition object is the direct reference to an item.  
-It is different from an [IItemStack](IItemStack) as this only refers to the item, it does not include any meta-information or NBT-values!
+物品定义对象是对物品的直接引用。
+它与[物品堆](IItemStack)对象不同，因为物品定义仅仅引用物品，而不会包含方块实体附加值和NBT标签！
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。 
 `import crafttweaker.item.IItemDefinition;`
 
-## How to get one
-The easiest way is from an [IItemStack](IItemStack), but you can also get a list of all registered IItemDefinitions in the game and do something with that.
+## 如何获取
+最便捷的方法是从[物品堆](IItemStack)中提取，但你也可以获取一个包含所有注册的物品定义对象列表并执行一些操作。
 
 ```
 //IItemStack Zengetter "definition" -> single IItemDefinition
@@ -18,16 +18,16 @@ val itemDefinition = <minecraft:stone>.definition;
 val itemDefinitionList = game.items;
 ```
 
-## What to do with it
+## 使用方法
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters 和无需参数的 ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                             |
+| ZenGetter          | 它会做什么                                                                                      | 返回类型                                             |
 |--------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| id                 | Returns the item ID                                                                                  | String                                                  |
-| name               | Returns the unlocalized item Name                                                                    | String                                                  |
-| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | String                                                  |
+| id                 | 返回物品ID                                                                                  | 字符串                                                  |
+| name               | 返回非本地化的物品名称                                                                    | 字符串                                                  |
+| ores               | 返回此物品包含的矿物词典条目。也包含sub-item的矿物辞典条目。 | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` |
+| owner              | 返回添加此物品的模组名称。                                                      | 字符串                                                  |
 | defaultInstance    |                                                                                                      | [IItemStack](IItemStack)                                |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)      |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab)    |
@@ -36,13 +36,13 @@ val itemDefinitionList = game.items;
 | subItems           |                                                                                                      | List<[IItemStack](IItemStack)\>                         |
 
 
-### ZenSetters and other void-Methods
+### ZenSetters 和其他的 void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                     |
+| ZenSetter/ZenMethod                    | 参数类型                                            |
 |----------------------------------------|----------------------------------------------------|
-| creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab) |
-| setNoRepair()                          | none                                               |
-| setContainerItem(IItemDefinition item) | IItemDefinition                                    |
+| creativeTab                            | [创造模式标签页](/Vanilla/CreativeTabs/ICreativeTab) |
+| setNoRepair()                          | 无                                               |
+| setContainerItem(IItemDefinition item) | IItemDefinition（物品定义）                                    |
 
 ### ZenMethods
 
