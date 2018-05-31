@@ -13,36 +13,36 @@
 
 ## ZenGetters
 
-| ZenGetter                                              | Return Type (*can be null*)                           |
-|--------------------------------------------------------|-------------------------------------------------------|
-| activePotionEffects                                    | List<[药水效果](/Vanilla/Potions/IPotionEffect)> |
-| AIMovementSpeed                                        | float                                                 |
-| arrowsInEntity                                         | int                                                   |
-| attackingEntity                                        | *IEntityLivingBase*                                   |
-| canBreatheUnderwater                                   | boolean                                               |
-| health                                                 | float                                                 |
-| isChild                                                | boolean                                               |
-| isOnLadder                                             | boolean                                               |
-| isUndead                                               | boolean                                               |
-| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
-| lastAttackedEntityTime                                 | int                                                   |
-| lastDamageSource                                       | [伤害来源](/Vanilla/Damage/IDamageSource)             |
-| mainHandHeldItem                                       | [物品堆](/Vanilla/Items/IItemStack)                   |
-| maxHealth                                              | float                                                 |
-| offHandHeldItem                                        | [IItemStack](/Vanilla/Items/IItemStack)               |
-| revengeTarget                                          | *IEntityLivingBase*                                   |
-| totalArmorValue                                        | int                                                   |
+|       ZenGetter        |           Return Type (*can be null*)            |
+| :--------------------: | :----------------------------------------------: |
+|  activePotionEffects   | List<[药水效果](/Vanilla/Potions/IPotionEffect)> |
+|    AIMovementSpeed     |                      float                       |
+|     arrowsInEntity     |                       int                        |
+|    attackingEntity     |               *IEntityLivingBase*                |
+|  canBreatheUnderwater  |                     boolean                      |
+|         health         |                      float                       |
+|        isChild         |                     boolean                      |
+|       isOnLadder       |                     boolean                      |
+|        isUndead        |                     boolean                      |
+|   lastAttackedEntity   |               *IEntityLivingBase*                |
+| lastAttackedEntityTime |                       int                        |
+|    lastDamageSource    |    [伤害来源](/Vanilla/Damage/IDamageSource)     |
+|    mainHandHeldItem    |       [物品堆](/Vanilla/Items/IItemStack)        |
+|       maxHealth        |                      float                       |
+|    offHandHeldItem     |     [IItemStack](/Vanilla/Items/IItemStack)      |
+|     revengeTarget      |               *IEntityLivingBase*                |
+|    totalArmorValue     |                       int                        |
 
 
 ## ZenSetters
 
-| ZenSetter                                              | Parameter Type (*can be null*)                        |
-|--------------------------------------------------------|-------------------------------------------------------|
-| AIMovementSpeed                                        | float                                                 |
-| arrowsInEntity                                         | int                                                   |
-| health                                                 | float                                                 |
-| lastAttackedEntity                                     | *IEntityLivingBase*                                   |
-| revengeTarget                                          | *IEntityLivingBase*                                   |
+|     ZenSetter      | Parameter Type (*can be null*) |
+| :----------------: | :----------------------------: |
+|  AIMovementSpeed   |             float              |
+|   arrowsInEntity   |              int               |
+|       health       |             float              |
+| lastAttackedEntity |      *IEntityLivingBase*       |
+|   revengeTarget    |      *IEntityLivingBase*       |
 
 
 ## 更多 ZenMethods

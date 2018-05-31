@@ -2,11 +2,12 @@
 
 材料对象表示组成方块所使用的材料
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+## 导入相关包
+
+为了避免发生一些不期而遇的问题，最为安全、也是最为推荐的方式就是导入相关的包。  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## 无参数 ZenGetters/ZenMethods
 
 | ZenGetter       | ZenMethod           | 返回值       |
 |-----------------|---------------------|-------------|
@@ -22,7 +23,7 @@ It might be required for you to import the package if you encounter any issues, 
 |                 | setReplaceable()    | 材料         |
 
 
-## ZenMethods with parameters
+## 带有参数的 ZenMethods
 ### 检测两个材料对象是否相同
 传入材料对象。  
 返回布尔值。
@@ -30,8 +31,8 @@ It might be required for you to import the package if you encounter any issues, 
 materialObj.matches(IMaterial other);
 ```
 
-## 获取Minecraft原版材料
-你可以使用以下方法获取Minecraft原版材料
+## 获取 Minecraft 原版材料
+你可以使用以下方法获取 Minecraft 原版材料
 
 ```
 crafttweaker.blocks.IMaterial.air();

@@ -8,11 +8,11 @@
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter   | ZenSetter   | 类型                                             |
-|-------------|-------------|--------------------------------------------------|
-| definition  |             | [附魔定义](IEnchantmentDefinition)               |
-| level       |             | 整数                                             |
-| displayName | displayName | 字符串                                           |
+|  ZenGetter  |  ZenSetter  |                类型                |
+| :---------: | :---------: | :--------------------------------: |
+| definition  |             | [附魔定义](IEnchantmentDefinition) |
+|    level    |             |                整数                |
+| displayName | displayName |               字符串               |
 
 ## ZenMethods
 ### 检索附魔的NBT标签形式

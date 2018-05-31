@@ -10,5 +10,5 @@
 <creativetab:misc>
 ```
 
-如果创造模式标签页被找到，将返回ICreativeTab对象。
-更多使用它的信息可以参考[创造模式物品栏](/Vanilla/CreativeTabs/ICreativeTab)。
+如果创造模式标签页被找到，将返回 ICreativeTab 对象。
+更多使用它的信息可以参考 [创造模式物品栏](/Vanilla/CreativeTabs/ICreativeTab)。

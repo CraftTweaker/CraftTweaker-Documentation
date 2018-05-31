@@ -35,19 +35,19 @@ val test2 = game.getEntity("sheep");
 <entity:minecraft:sheep>.name;
 ```
 
-### create entity
-The first method only creates an entity on the given location.  
-The second one also spawns it.
+### 创建实体
+第一个方法只能在给定位置创建实体。  
+第二个则会生成它。
 ```
 <enity:minecraft:sheep>.createEntity(world);
 <enity:minecraft:sheep>.spawnEntity(world, blockPos);
 ```
 
-`world` is an [IWorld](/Vanilla/World/IWorld) object.  
-`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos) object.
+`world` 是一个 [世界](/Vanilla/World/IWorld) 对象。
+`blockPos` 是一个 [方块坐标](/Vanilla/World/IBlockPos) 对象。
 
 
-## Drops
+## 掉落物
 
 我们甚至可以增加和/或移除生物的掉落物。这不是很棒吗？
 
@@ -102,9 +102,9 @@ entity.removeDrop(<minecraft:wool>);
 ```
 `物品` 就是需要移除的掉落物，是一个[物品堆](/Vanilla/Items/IItemStack)类型。
 
-### Clear Drops
+### 清除掉落物
 
-This removes all drops.
+这将会移除所有的掉落物
 ```
 val entity = <entity:minecraft:sheep>;
 

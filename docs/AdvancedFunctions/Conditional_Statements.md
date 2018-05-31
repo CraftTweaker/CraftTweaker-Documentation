@@ -85,7 +85,7 @@ if(d=="你好" & e == "世界"){print("AND2!");}		//true
 总是不停地输入 if/else 判定结构显得十分的冗余，尤其是只做普通的条件判定时。  
 使用 `?` 操作符即可解决；  
 下面的逻辑和 if/else 完全一致，只不过代码量小了许多。  
-语法结构：`boolean ? if : else` 
+语法结构：`boolean ? if : else`
 
 ```js
 val switchy = false;
@@ -140,15 +140,15 @@ if(loadedMods in "mcp"){
 }
 ```
 
-### in IIngredient 
+### in IIngredient （检查材料）
 
 你也可以通过对比两个 IIngredients 对象，来检查一个物品是否满足定义。
 
-```Java
+```Js
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("铁锭的矿物词典是正确的！");
 }
 ```
 
 请注意分清左右两个参数：
-只有当所有在 `in` 之后的IIngredient能够在 `in` 之前的IIngredient被找到时，结果才为真。
+只有当所有在 `in` 之后的材料对象包含 `in` 之前的材料对象时，结果才为真。

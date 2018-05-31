@@ -11,15 +11,15 @@
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | 类型     |
-|-----------------------|-----------|---------|
-| id                    |           | 字符串   |
-| name                  | name      | 字符串   |
-| maxLevel              |           | 整数     |
-| minLevel              |           | 整数     |
-| isAllowedOnBooks      |           | 布尔值   |
-| isTreasureEnchantment |           | 布尔值   |
-| isCurse               |           | 布尔值   |
+|       ZenGetter       | ZenSetter |  类型  |
+| :-------------------: | :-------: | :----: |
+|          id           |           | 字符串 |
+|         name          |   name    | 字符串 |
+|       maxLevel        |           |  整数  |
+|       minLevel        |           |  整数  |
+|   isAllowedOnBooks    |           | 布尔值 |
+| isTreasureEnchantment |           | 布尔值 |
+|        isCurse        |           | 布尔值 |
 
 ## ZenMethods
 ### 可被附魔
@@ -55,7 +55,7 @@ ench * level;
 ```
 
 
-## 例
+## 示例
 ```javascript
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;

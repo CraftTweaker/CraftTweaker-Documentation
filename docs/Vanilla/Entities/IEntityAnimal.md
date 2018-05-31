@@ -11,10 +11,10 @@
 
 ## Methods
 ### ZenGetters/Setters
-| ZenGetter  | 类型                                                |
-|------------|-----------------------------------------------------|
-| loveCause  | [玩家](/Vanilla/Players/IPlayer)  (可以为空！)        |
-| isInLove   | 布尔值                                               |
+| ZenGetter |                      类型                      |
+| :-------: | :--------------------------------------------: |
+| loveCause | [玩家](/Vanilla/Players/IPlayer)  (可以为空！) |
+| isInLove  |                     布尔值                     |
 
 ### ZenMethods
 #### 检测一个物品是否可以用于繁殖动物

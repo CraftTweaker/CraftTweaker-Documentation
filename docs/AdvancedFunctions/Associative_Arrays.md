@@ -1,6 +1,6 @@
 # 关联数组
 
-关联数组（有的地方也叫映射或者字典）和普通的[数组](Arrays_and_Loops)极为相似，也能够存储多条数据。但和[数组](Arrays_and_Loops)不同之处在于，数组的下标（在这里一般叫做“键”）可以随意定义！
+关联数组（有的地方也叫映射或者字典）和普通的[数组](Arrays_and_Loops)极为相似，也能够存储多条数据。但和[数组](Arrays_and_Loops)不同之处在于，数组的下标（一般叫做 key，翻译过来常叫做“键”）可以随意定义！
 
 ## 声明一个关联数组
 
@@ -92,9 +92,9 @@ changingArray[<minecraft:grass>] = "力量！";
 
 ## 检索关联数组的键集和项集
 
-`KeySet`是一个包含了映射（关联数组）中所有键的数组。  
-`valueSet`是一个包含了映射（关联数组）中所有值的数组。  
-`entrySet`是一个包含了映射（关联数组）中所有项的数组（如下文所示）。
+`KeySet` 是一个包含了映射（关联数组）中所有键的数组。  
+`valueSet` 是一个包含了映射（关联数组）中所有值的数组。  
+`entrySet `是一个包含了映射（关联数组）中所有项的数组（如下文所示）。
 
 ```JAVA
 myAssocArray.keySet   //keySet
@@ -114,8 +114,8 @@ myAssocArray.entrySet //entrySet
 
 让我们来声明一个关联数组，并存储合成表，而后进行迭代：  
 
-- Keys 作为合成的输出结果，以 [IItemStack](/Vanilla/Items/IItemStack) 类型存储
-- Values 作为合成的输入材料，以 [IIngredient](/Vanilla/Variable_Types/IIngredient) 类型存储
+- Keys 作为合成的输出结果，以 [IItemStack（物品堆）](/Vanilla/Items/IItemStack) 类型存储
+- Values 作为合成的输入材料，以 [IIngredient（材料）](/Vanilla/Variable_Types/IIngredient) 类型存储
 - 我们通过 key 遍历法来遍历数组，像这样：`for key in assocArray {doSth;}`
 - 我们还要通过 key-value 遍历法来遍历数组，像这样：`for key, value in assocArray {doSth;}`
 
@@ -144,17 +144,17 @@ for key, value in recipeMapShaped {
 }
 ```
 
-# ZenType Entry
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.  
+# ZenType 条目
+一个映射条目包含一组 key 和 value。  
+目前仅能通过映射的 entrySet 方法获取这个条目。
 
-You can use the getters to get `key` and `value`
+你可以使用 getters 来具体获取其中的 `key` 和 `value`
 
-```kotlin
-//Replace map with a reference to an existing map/associative array
+```js
+// 从已经存在的映射（关联数组）中获取映射条目
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    // 返回该条目的 key
+myEntry.value;  // 返回该条目的 value
 ```

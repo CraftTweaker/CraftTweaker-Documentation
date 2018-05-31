@@ -7,9 +7,9 @@
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | 返回类型     |
-|-----------|----------------|-------------|
-| uuid      | getUUID()      | 字符串       |
-| name      | getName()      | 字符串       |
-| operation | getOperation() | 整数         |
-| amount    | getAmount()    | 双精度型     |
+| ZenGetter |  GetterMethod  | 返回类型 |
+| :-------: | :------------: | :------: |
+|   uuid    |   getUUID()    |  字符串  |
+|   name    |   getName()    |  字符串  |
+| operation | getOperation() |   整数   |
+|  amount   |  getAmount()   | 双精度型 |

@@ -1,4 +1,4 @@
-# 方块特性
+# 方块特性（IBlockProperties）
 
 方块特性使得一个方块区别于其他方块。它主要作为[方块状态](IBlockState)的接口, 这说明所有关于方块特性的函数均可以用于拥有[方块状态](IBlockState) 的物体。
 
@@ -6,31 +6,31 @@
 为了避免发生一些不期而遇的问题, 最为安全、也是最为推荐的方式就是导入相关的包。  
 `import crafttweaker.block.IBlockProperties;`
 
-|ZenGetter                  |类型                                                                  | 说明                                                    |
-|---------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-|canProvidePower            | bool                                                                 | Returns if the refered block can provide Redstone Power |
-|mobilityFlag               | string                                                               | Returns the [mobility flag](IMobilityFlag) as string    |
-|material                   | [IMaterial](IMaterial)                                               | Returns the block's [material](IMaterial)               |
-|causesSuffocation          | bool                                                                 | Returns whether the block can choke you.                |
-|hasCustomBreakingProgress  | bool                                                                 |                                                         |
-|blockNormalCube            | bool                                                                 |                                                         |
-|fullBlock                  | bool                                                                 |                                                         |
-|fullCube                   | bool                                                                 |                                                         |
-|normalCube                 | bool                                                                 |                                                         |
-|opaqueCube                 | bool                                                                 |                                                         |
-|translucent                | bool                                                                 |                                                         |
-|useNeighborBrightness      | bool                                                                 |                                                         |
+|         ZenGetter         |              类型              |                      说明                       |
+| :-----------------------: | :----------------------------: | :---------------------------------------------: |
+|      canProvidePower      |             布尔值             |            方块是否可以提供红石信号             |
+|       mobilityFlag        |             string             | 将 [移动性标识](IMobilityFlag) 以字符串形式返回 |
+|         material          | [IMaterial（材料）](IMaterial) |          返回方块的 [材料](IMaterial)           |
+|     causesSuffocation     |             布尔值             |               方块是否会窒息玩家                |
+| hasCustomBreakingProgress |             布尔值             |                                                 |
+|      blockNormalCube      |             布尔值             |                                                 |
+|         fullBlock         |             布尔值             |                                                 |
+|         fullCube          |             布尔值             |                                                 |
+|        normalCube         |             布尔值             |                                                 |
+|        opaqueCube         |             布尔值             |                                                 |
+|        translucent        |             布尔值             |                                                 |
+|   useNeighborBrightness   |             布尔值             |                                                 |
 
 ## ZenMethods
-### isReplacable
-`boolean isReplaceable(IWorld world, IBlockPos pos);`  
+### 是否可替换
+`boolean isReplaceable(IWorld world, IBlockPos pos);`  
 
 需要传入:
 
 - [世界](/Vanilla/World/IWorld) world → 检测的世界
 - [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+返回布尔值：方块是否可以直接被替换。
 
 
 ### 获取方块亮度
@@ -66,7 +66,7 @@ Returns a boolean that sais whether the block can be replaced or not.
 Returns an int representing the block's redstone comparator input override type.
 
 
-### 检测方块是否可以生成生物
+### 检测方块上是否可以生成生物
 
 需要传入[实体](/Vanilla/Entities/IEntity)对象。  
 返回布尔值。
@@ -99,9 +99,9 @@ blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
-### Get a player's Relative Block Harness
+### 获取玩家相对方块的硬度
 
-需要传入[玩家](/Vanilla/Players/IPlayer)对象,一个[世界](/Vanilla/World/IWorld)对象以及一个[方块位置](/Vanilla/World/IBlockPos)对象。  
+需要传入[玩家](/Vanilla/Players/IPlayer)对象,一个[世界](/Vanilla/World/IWorld)对象以及一个[方块位置](/Vanilla/World/IBlockPos)对象。  
 返回浮点数。
 ```
 blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);

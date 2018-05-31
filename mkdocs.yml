@@ -39,7 +39,7 @@ pages:
   - 提示与技巧:
       - 前言: 'Tips_Tricks/Foreword.md'
       - 物品:
-        - 使用 IItemDefinitions 遍历附加值: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+        - 使用物品定义遍历附加值: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - 常用提示:
         - 把你的脚本拆分成多个文件: 'Tips_Tricks/General/Split_Files.md'
         - 使用循环语句使脚本更易读: 'Tips_Tricks/General/Loops_Readability.md'

@@ -11,13 +11,13 @@
 
 ## Methods
 ### ZenGetters/Setters
-| ZenGetter            | 类型                                                |
-|----------------------|-----------------------------------------------------|
-| hasPath              | 布尔值                                               |
-| isWithinHomeDistance | 布尔值                                               |
-| homePosition         | [方块位置](/Vanilla/World/IBlockPos)                 |
-| maximumHomeDistance  | 浮点数                                               |
-| hasHome              | 布尔值                                               |
+|      ZenGetter       |                 类型                 |
+| :------------------: | :----------------------------------: |
+|       hasPath        |                布尔值                |
+| isWithinHomeDistance |                布尔值                |
+|     homePosition     | [方块位置](/Vanilla/World/IBlockPos) |
+| maximumHomeDistance  |                浮点数                |
+|       hasHome        |                布尔值                |
 
 ### ZenMethods
 #### 播放生物发出的声音

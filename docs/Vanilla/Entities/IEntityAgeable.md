@@ -11,10 +11,10 @@
 
 ## Methods
 ### ZenGetters/Setters
-| ZenGetter  | ZenSetter   | 类型   |
-|------------|-------------|--------|
-| growingAge | growingAge  | 整数   |
-|            | scaleForAge | 布尔值 |
+| ZenGetter  |  ZenSetter  |  类型  |
+| :--------: | :---------: | :----: |
+| growingAge | growingAge  |  整数  |
+|            | scaleForAge | 布尔值 |
 
 ### ZenMethods
 #### 增加年龄

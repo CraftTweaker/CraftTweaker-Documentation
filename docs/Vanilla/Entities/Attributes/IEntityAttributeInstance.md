@@ -6,19 +6,19 @@
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | 返回类型                              |
-|----------------|---------------------|--------------------------------------|
-| attribute      | getAttribute()      | [实体属性](IEntityAttribute) |
-| baseValue      | getBaseValue()      | 双精度型                              |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`     |
-| attributeValue | getAttributeValue() | 双精度型                              |
+|   ZenGetter    |    GetterMethod     |             返回类型             |
+| :------------: | :-----------------: | :------------------------------: |
+|   attribute    |   getAttribute()    |   [实体属性](IEntityAttribute)   |
+|   baseValue    |   getBaseValue()    |             双精度型             |
+|   modifiers    |   getModifiers()    | `List<IEntityAttrubuteModifier>` |
+| attributeValue | getAttributeValue() |             双精度型             |
 
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | 传入类型        |
-|-----------|---------------------|----------------|
-| baseValue | setBaseValue(value) | 双精度型        |
+| ZenSetter |    SetterMethod     | 传入类型 |
+| :-------: | :-----------------: | :------: |
+| baseValue | setBaseValue(value) | 双精度型 |
 
 
 ## Modifier Methods
