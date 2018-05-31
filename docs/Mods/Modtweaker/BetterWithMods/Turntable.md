@@ -21,10 +21,11 @@ mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 * Remove a Turntable recipe based on the output
 ```mods.betterwithmods.Turntable.remove(IItemStack[] outputs);```
 
-* Remove all Turntable recipes
+* Remove all Turntable recipes  
 ```mods.betterwithmods.Turntable.removeAll();```
 
-
+* Remove a Turntable recipe by the productState  
+```mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);```
 ## Builder 
 
 The Turntable  has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
@@ -35,9 +36,9 @@ The Turntable  has a recipe builder that allows more precise control over the re
 * Turntable methods
      * Sets up the inputs and outputs of the recipe  
        ```buildRecipe(IIngredient[] inputs, IItemStack[] outputs)```
-     * Sets the rotations required for the recipe to finish. This defaults to 8.
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
        ```setRotations(int rotations)```
-     * Set the block that is placed when the recipe is finished.
+     * Set the block that is placed when the recipe is finished.  
        ```setProductState(IItemStack productState)```
      * Finalize the recipe and add it to the game  
        ```build()```

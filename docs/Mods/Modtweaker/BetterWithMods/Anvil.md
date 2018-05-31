@@ -55,6 +55,8 @@ mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
+
+mods.betterwithmods.Anvil.removeAll();
 ```
 
 

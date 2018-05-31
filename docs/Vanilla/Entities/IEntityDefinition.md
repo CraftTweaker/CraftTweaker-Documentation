@@ -97,11 +97,20 @@ entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 ```js
 val entity = <entity:minecraft:sheep>;
 
-//remove(物品);
-entity.remove(<minecraft:wool>);
+//removeDrop(item);
+entity.removeDrop(<minecraft:wool>);
 ```
 `物品` 就是需要移除的掉落物，是一个[物品堆](/Vanilla/Items/IItemStack)类型。
 
+### Clear Drops
+
+This removes all drops.
+```
+val entity = <entity:minecraft:sheep>;
+
+//clearDrops
+entity.clearDrops;
+```
 
 ### 获取掉落物列表
 

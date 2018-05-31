@@ -228,12 +228,52 @@ pages:
         - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - Supports:
-        - Blood Magic: 'Mods/CompatSkills/Supports/Blood_Magic.md'
-        - CraftTweaker: 'Mods/CompatSkills/Supports/CraftTweaker.md'
-        - GameStages: 'Mods/CompatSkills/Supports/GameStages.md'
+        - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
+        - Blood Magic:
+          - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
+          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
+          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+        - CraftTweaker:
+          - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
+          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
+          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
+        - GameStages:
+          - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
-        - Reskillable: 'Mods/CompatSkills/Supports/Reskillable.md'
+        - Minecraft:
+          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
+          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
+        - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
+        - Reskillable:
+          - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
+          - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+          - Custom Skills:
+            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+          - Custom Traits:
+            - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
+            - Events:
+              - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
+              - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
+              - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
+              - onEnderTeleport: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onEnderTeleport.md'
+              - onHurt: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onHurt.md'
+              - onKillMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onKillMob.md'
+              - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
+              - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
+              - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
+        - Tinker's Construct:
+          - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
+          - Material-Locks:
+            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - Modifier-Locks:
+            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion:
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
@@ -399,64 +439,69 @@ pages:
         - 原油发电机: 'Mods/Modtweaker/ActuallyAdditions/Oil_Generator.md'
         - 藏宝箱: 'Mods/Modtweaker/ActuallyAdditions/TreasureChest.md'
       - BetterWithMods:
-        - 钢砧: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
+        - Anvil: 'Mods/Modtweaker/BetterWithMods/Anvil.md'
+        - Bellows: 'Mods/Modtweaker/BetterWithMods/Bellows.md'
         - Buoyancy: 'Mods/Modtweaker/BetterWithMods/Buoyancy.md'
-        - 釜锅: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
-        - 坩埚: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - Cauldron: 'Mods/Modtweaker/BetterWithMods/Cauldron.md'
+        - Crucible: 'Mods/Modtweaker/BetterWithMods/Crucible.md'
+        - Filtered Hopper: 'Mods/Modtweaker/BetterWithMods/FilteredHopper.md'
         - HeatRegistry: 'Mods/Modtweaker/BetterWithMods/HeatRegistry.md'
+        - HCFurnace: 'Mods/Modtweaker/BetterWithMods/HCFurnace.md'
         - HCMovement: 'Mods/Modtweaker/BetterWithMods/HCMovement.md'
         - 窑: 'Mods/Modtweaker/BetterWithMods/Kiln.md'
         - Mill: 'Mods/Modtweaker/BetterWithMods/Mill.md'
-        - 锯: 'Mods/Modtweaker/BetterWithMods/Saw.md'
-        - 釜锅猛火: 'Mods/Modtweaker/BetterWithMods/StokedCauldron.md'
-        - 坩埚猛火: 'Mods/Modtweaker/BetterWithMods/StokedCrucible.md'
-        - 螺杆旋转台: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
+        - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
+        - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
       - Blood Magic:
         - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
         - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
         - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
         - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
-      - 植物魔法:
-        - 指令: 'Mods/Modtweaker/Botania/Commands.md'
-        - 植物魔法辞典: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - 配方:
-          - 酿造: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
-          - 精灵交易: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
-          - 魔力灌注: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
-          - 凝矿兰: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
-          - 炎矿兰: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
-          - 花瓣炼制: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
-          - 白雏菊: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
-          - 符文祭坛: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
-      - 凿子:
-        - 雕刻: 'Mods/Modtweaker/Chisel/Carving.md'
-      - 更多实用设备2:
-        - 破碎机: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
-        - 共振仪: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
-      - 林业:
-        - 木工机: 'Mods/Modtweaker/Forestry/Carpenter.md'
-        - 离心机: 'Mods/Modtweaker/Forestry/Centrifuge.md'
-        - 发酵机: 'Mods/Modtweaker/Forestry/Fermenter.md'
-        - 加湿器: 'Mods/Modtweaker/Forestry/Moistener.md'
-        - 榨汁机: 'Mods/Modtweaker/Forestry/Squeezer.md'
-        - 蒸馏器: 'Mods/Modtweaker/Forestry/Still.md'
-        - 热电子加工台: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
-      - 精致存储:
-        - 配方:
-          - 压印器: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
-      - 匠魂:
-        - 指令: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - 尖括号引用:
-          - 材料: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
-        - 合金: 'Mods/Modtweaker/TConstruct/Alloying.md'
-        - 浇铸: 'Mods/Modtweaker/TConstruct/Casting.md'
-        - 晾干: 'Mods/Modtweaker/TConstruct/Drying.md'
-        - 材料:
-          - 匠魂材料: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
-          - 匠魂材料定义: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
-        - 冶炼: 'Mods/Modtweaker/TConstruct/Melting.md'
-        - 冶炼炉燃料: 'Mods/Modtweaker/TConstruct/Fuel.md'
+      - Botania:
+        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
+        - Recipes:
+          - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
+          - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
+          - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
+          - Orechid: 'Mods/Modtweaker/Botania/Recipes/Orechid.md'
+          - Orechid Ignem: 'Mods/Modtweaker/Botania/Recipes/OrechidIgnem.md'
+          - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
+          - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
+          - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
+      - Chisel:
+        - Carving: 'Mods/Modtweaker/Chisel/Carving.md'
+      - Extra Utilities 2:
+        - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
+        - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
+      - Forestry:
+        - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
+        - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
+        - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
+        - Moistener: 'Mods/Modtweaker/Forestry/Moistener.md'
+        - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
+        - Still: 'Mods/Modtweaker/Forestry/Still.md'
+        - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
+      - Inspirations:
+        - Inspirations: 'Mods/Modtweaker/Inspirations/Inspirations.md'
+        - Handlers:
+          - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
+      - Refined Storage:
+        - Recipes:
+          - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
+      - Tinkers' Construct:
+        - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
+        - Brackets:
+          - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
+        - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
+        - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
+        - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
+        - Materials:
+          - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
+          - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
+        - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
+        - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
         - 处理器:
@@ -494,6 +539,7 @@ pages:
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
         - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+        - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
       - Tweaker Static Class: 'Mods/PoweredThingies/_TweakerClass.md'
