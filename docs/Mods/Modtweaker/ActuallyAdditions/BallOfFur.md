@@ -12,7 +12,7 @@
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Removal
+## 移除
 
 ```
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
