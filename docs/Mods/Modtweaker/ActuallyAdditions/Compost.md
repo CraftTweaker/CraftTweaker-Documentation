@@ -14,7 +14,7 @@
 mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
 ```
 
-## Removal
+## 移除
 
 ```
 //mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
