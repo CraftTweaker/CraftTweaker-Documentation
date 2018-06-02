@@ -488,8 +488,8 @@ pages:
         - Handlers:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - 精致存储:
-        - Recipes:
-          - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
+        - 配方:
+          - 压印器: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - 匠魂:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
         - Brackets:
