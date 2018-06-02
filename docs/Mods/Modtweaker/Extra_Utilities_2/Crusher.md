@@ -1,8 +1,8 @@
-# 破碎机
+# 粉碎机
 
-ModTweaker 允许你添加或移除更多实用设备2的破碎机配方
+ModTweaker 允许你添加或移除更多实用设备2的粉碎机配方
 
-使用 `mods.extrautils2.Crusher` 以导入破碎机相关包
+使用 `mods.extrautils2.Crusher` 以导入粉碎机相关包
 
 ## 移除
 
