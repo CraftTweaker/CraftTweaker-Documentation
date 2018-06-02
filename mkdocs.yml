@@ -1,7 +1,7 @@
 # 站点的基本信息
 site_name: CraftTweaker 简体中文文档
 repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
-copyright: CraftTweaker 简体中文文档，翻译自原作者文档，采用相同 MIT 协议
+copyright: CraftTweaker 简体中文文档，翻译自原作者文档。协议：MIT
 theme: readthedocs
 
 # 使用的几个额外组件
@@ -101,36 +101,36 @@ pages:
       - 事件管理器: 'Vanilla/Events/IEventManager.md'
       - 事件:
           #Event superinterfaces/Shared stuff
-        - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
-        - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
-        - IEventPositionable: 'Vanilla/Events/Events/IEventPositionable.md'
-        - IProcessableEvent: 'Vanilla/Events/Events/IProcessableEvent.md'
-        - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
-        - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
-        - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
+        - 方块事件: 'Vanilla/Events/Events/IBlockEvent.md'
+        - 事件可取消: 'Vanilla/Events/Events/IEventCancelable.md'
+        - 事件可获取位置: 'Vanilla/Events/Events/IEventPositionable.md'
+        - 事件可处理: 'Vanilla/Events/Events/IProcessableEvent.md'
+        - 实体事件: 'Vanilla/Events/Events/IEntityEvent.md'
+        - 有生命实体事件: 'Vanilla/Events/Events/ILivingEvent.md'
+        - 玩家事件: 'Vanilla/Events/Events/IPlayerEvent.md'
           #Actual Events below here
-        - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
-        - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
-        - EnderTeleportEvent: 'Vanilla/Events/Events/EnderTeleport.md'
-        - EntityLivingAttackedEvent: 'Vanilla/Events/Events/EntityLivingAttacked.md'
-        - EntityLivingDeathDropsEvent: 'Vanilla/Events/Events/EntityLivingDeathDrops.md'
-        - EntityLivingDeathEvent: 'Vanilla/Events/Events/EntityLivingDeath.md'
-        - EntityLivingFallEvent: 'Vanilla/Events/Events/EntityLivingFall.md'
-        - EntityLivingHurtEvent: 'Vanilla/Events/Events/EntityLivingHurt.md'
-        - EntityLivingJumpEvent: 'Vanilla/Events/Events/EntityLivingJump.md'
-        - EntityStruckByLightningEvent: 'Vanilla/Events/Events/EntityStruckByLightning.md'
-        - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
-        - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
-        - LivingEntityUseItemEvent: 'Vanilla/Events/Events/LivingEntityUseItem.md'
-        - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
+        - 方块破坏事件: 'Vanilla/Events/Events/BlockBreak.md'
+        - 方块采掘掉落事件: 'Vanilla/Events/Events/BlockHarvestDrops.md'
+        - 末影传送事件: 'Vanilla/Events/Events/EnderTeleport.md'
+        - 有生命实体攻击事件: 'Vanilla/Events/Events/EntityLivingAttacked.md'
+        - 有生命实体死亡掉落事件: 'Vanilla/Events/Events/EntityLivingDeathDrops.md'
+        - 有生命实体死亡事件: 'Vanilla/Events/Events/EntityLivingDeath.md'
+        - 有生命实体跌落事件: 'Vanilla/Events/Events/EntityLivingFall.md'
+        - 有生命实体受伤事件: 'Vanilla/Events/Events/EntityLivingHurt.md'
+        - 有生命实体跳跃事件: 'Vanilla/Events/Events/EntityLivingJump.md'
+        - 实体被闪电击中事件: 'Vanilla/Events/Events/EntityStruckByLightning.md'
+        - 物品过期事件: 'Vanilla/Events/Events/ItemExpire.md'
+        - 物品投掷事件: 'Vanilla/Events/Events/ItemToss.md'
+        - 有生命实体使用物品事件: 'Vanilla/Events/Events/LivingEntityUseItem.md'
+        - 玩家铁砧修复事件: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
         - 玩家攻击实体: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - 玩家使用骨粉: 'Vanilla/Events/Events/PlayerBonemeal.md'
-        - PlayerBreakSpeedEvent: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
-        - PlayerBrewedPotionEvent: 'Vanilla/Events/Events/PlayerBrewedPotion.md'
+        - 玩家超速事件: 'Vanilla/Events/Events/PlayerBreakSpeed.md'
+        - 玩家酿造药水事件: 'Vanilla/Events/Events/PlayerBrewedPotion.md'
         - 玩家改变维度: 'Vanilla/Events/Events/PlayerChangedDimension.md'
         - 玩家合成物品: 'Vanilla/Events/Events/PlayerCrafted.md'
         - 玩家死亡掉落: 'Vanilla/Events/Events/PlayerDeathDrops.md'
-        - PlayerDestroyItemEvent: 'Vanilla/Events/Events/PlayerDestroyItem.md'
+        - 玩家摧毁物品事件: 'Vanilla/Events/Events/PlayerDestroyItem.md'
         - 玩家盛装桶: 'Vanilla/Events/Events/PlayerFillBucket.md'
         - 玩家与实体交互: 'Vanilla/Events/Events/PlayerInteractEntity.md'
         - 玩家与方块交互: 'Vanilla/Events/Events/PlayerInteract.md'
@@ -140,11 +140,11 @@ pages:
         - 玩家捡起物品: 'Vanilla/Events/Events/PlayerPickupItem.md'
         - 玩家吸收经验球: 'Vanilla/Events/Events/PlayerPickupXp.md'
         - 玩家重生: 'Vanilla/Events/Events/PlayerRespawn.md'
-        - PlayerRightClickBlockEvent: 'Vanilla/Events/Events/PlayerRightClickBlock.md'
-        - PlayerSetSpawnEvent: 'Vanilla/Events/Events/PlayerSetSpawn.md'
+        - 玩家右击方块事件: 'Vanilla/Events/Events/PlayerRightClickBlock.md'
+        - 玩家设置出生点事件: 'Vanilla/Events/Events/PlayerSetSpawn.md'
         - 玩家用床睡觉: 'Vanilla/Events/Events/PlayerSleepInBed.md'
         - 玩家烧炼物品: 'Vanilla/Events/Events/PlayerSmelted.md'
-        - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
+        - 玩家Tick事件: 'Vanilla/Events/Events/PlayerTick.md'
         - 玩家使用锄: 'Vanilla/Events/Events/PlayerUseHoe.md'
     - 游戏:
       - 客户端: 'Vanilla/Game/IClient.md'
@@ -227,10 +227,10 @@ pages:
         - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
         - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
-      - Supports:
-        - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
-        - Blood Magic:
-          - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
+      - 支持:
+        - 饰品模组: 'Mods/CompatSkills/Supports/Baubles.md'
+        - 血魔法:
+          - 血魔法: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
           - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
           - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - CraftTweaker:
@@ -241,8 +241,8 @@ pages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
           - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
-        - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
-        - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
+        - 沉浸工程: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
+        - 磁力科技: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft:
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
@@ -268,7 +268,7 @@ pages:
               - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
-        - Tinker's Construct:
+        - 匠魂:
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
           - Material-Locks:
             - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
@@ -294,7 +294,7 @@ pages:
           - 原版制造厂: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
           - 方块: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
           - 创造模式物品栏: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
-          - Enchantments: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
+          - 附魔: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
           - 流体: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - 物品: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - 食物: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
@@ -348,7 +348,7 @@ pages:
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
       - 匠魂:
-        - 尖括号应用:
+        - 尖括号引用:
           - 材料: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
@@ -399,7 +399,7 @@ pages:
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
       - 生物质炉: 'Mods/Industrial_Foregoing/BioReactor.md'
-      - Fluid Dictionary: 'Mods/Industrial_Foregoing/FluidDictionary.md'
+      - 流体矿物词典: 'Mods/Industrial_Foregoing/FluidDictionary.md'
       - 镭射钻: 'Mods/Industrial_Foregoing/LaserDrill.md'
       - 污泥精炼机: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
       - 蛋白质反应器: 'Mods/Industrial_Foregoing/ProteinReactor.md'
@@ -453,15 +453,15 @@ pages:
         - Saw: 'Mods/Modtweaker/BetterWithMods/Saw.md'
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
-      - Blood Magic:
+      - 血魔法:
         - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
         - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
         - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
         - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
-      - Botania:
-        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+      - 植物魔法:
+        - 命令: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes:
+        - 合成:
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -470,12 +470,12 @@ pages:
           - Petal Apothecary: 'Mods/Modtweaker/Botania/Recipes/Apothecary.md'
           - Pure Daisy: 'Mods/Modtweaker/Botania/Recipes/PureDaisy.md'
           - Rune Altar: 'Mods/Modtweaker/Botania/Recipes/RuneAltar.md'
-      - Chisel:
+      - 凿子:
         - Carving: 'Mods/Modtweaker/Chisel/Carving.md'
-      - Extra Utilities 2:
+      - 更多实用设备 2:
         - Crusher: 'Mods/Modtweaker/Extra_Utilities_2/Crusher.md'
         - Resonator: 'Mods/Modtweaker/Extra_Utilities_2/Resonator.md'
-      - Forestry:
+      - 林业:
         - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
         - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
         - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
@@ -487,10 +487,10 @@ pages:
         - Inspirations: 'Mods/Modtweaker/Inspirations/Inspirations.md'
         - Handlers:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
-      - Refined Storage:
+      - 精致存储:
         - Recipes:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
-      - Tinkers' Construct:
+      - 匠魂:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
         - Brackets:
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
@@ -521,16 +521,16 @@ pages:
         - 有机灌注机: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
         - 磨粉机: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
         - 锯木机: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-    - Modular Machinery:
-      - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes:
+    - 模块化机械:
+      - 模块化机械: 'Mods/ModularMachinery/ModularMachinery.md'
+      - 合成:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
-    - PneumaticCraft Repressurized（气动工艺）:
+    - 气动工艺:
       - 气动工艺简介: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - 合成:
         - 装配系统: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
@@ -575,7 +575,7 @@ pages:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - ZenEvents:
       - ZenEvents: 'Mods/ZenEvents/ZenEvents.md'
-      - BloodMagic:
+      - 血魔法:
         - EventManager: 'Mods/ZenEvents/SupportedMods/BloodMagic/EventManager.md'
         - Events:
           - AltarCraftedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/AltarCraftedEvent.md'
@@ -588,7 +588,7 @@ pages:
         - Special Types:
           - MasterRitualStone: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/MasterRitualStone.md'
           - Ritual: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual.md'
-      - Botania:
+      - 植物魔法:
         - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
         - Events:
           - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
@@ -596,7 +596,7 @@ pages:
         - EventManager: 'Mods/ZenEvents/SupportedMods/GameStages/EventManager.md'
         - Events:
           - GameStageEvent: 'Mods/ZenEvents/SupportedMods/GameStages/Events/GameStageEvent.md'
-      - TConstruct:
+      - 匠魂:
         - EventManager: 'Mods/ZenEvents/SupportedMods/TConstruct/EventManager.md'
         - Events:
           - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'

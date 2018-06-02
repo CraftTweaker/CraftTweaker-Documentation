@@ -28,10 +28,10 @@ events.onPlayerLoggedIn(function(event) {
 });
 ```
 
-## What events are available?
-The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
+## 有哪些事件可以用？
+ZenMethods 即为 `events` 后调用的方法，而事件类（Event Class）为你需要转换的事件类型。
 
-|          ZenMethod          |                         Event Class                          |
+|          ZenMethod          |                    事件类（Event Class）                     |
 | :-------------------------: | :----------------------------------------------------------: |
 |        onBlockBreak         | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak) |
 |     onBlockHarvestDrops     | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops) |
@@ -76,7 +76,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 |       onPlayerUseHoe        | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe) |
 
 
-## Clear all event handlers
+## 清除所有的事件管理器
 ```
 events.clear();
 ```

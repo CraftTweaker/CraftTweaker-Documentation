@@ -5,9 +5,9 @@
 可以用以下方式引用流体：
 
 ```
-<liquid:liquidname> OR <fluid:liquidname>
+<liquid:liquidname> 或者 <fluid:liquidname>
 
-<liquid:lava> OR <fluid:lava>
+<liquid:lava> 或者 <fluid:lava>
 ```
 
 如果流体被找到，将返回流体堆对象。

@@ -1,6 +1,6 @@
-# 命令发送者（ICommandSender）
+# 命令执行者（ICommandSender）
 
-命令发送者接口是实体的基础类型，也是其他 Crafttweaker 基础类型。 
+命令执行者是实体的一种基础类型，也是其他 Crafttweaker 基础类型。 
 每一个 [IEntity](/Vanilla/Entities/IEntity) 和 [IPlayer](/Vanilla/Players/IPlayer) 都可以继承这个接口！
 
 ## 导入包

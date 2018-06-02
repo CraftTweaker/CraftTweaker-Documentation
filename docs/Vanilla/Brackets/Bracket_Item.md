@@ -14,16 +14,16 @@
 ```
 <item:modid:itemname:meta>
 ```
-`item`作为首项，作用是告诉CraftTweaker它是一个物品。
+`item `作为首项，作用是告诉 CraftTweaker 它是一个物品。
 就像以上所写的，它是可选的。
 基本上你不会用到它，除非你需要处理几个自定义尖括号处理器。
-`modid`是物品所属模组的名称。 
-`itemname`是物品的名称，使用/ct hand获取正确的名称。
-`meta`是物品的附加值（例：损耗的耐久、种类等等）。类型为整数。
+`modid ` 是物品所属模组的名称。 
+`itemname` 是物品的名称，使用 /ct hand 获取正确的名称。
+`meta ` 是物品的附加值（例：损耗的耐久、种类等等）。类型为整数。
 你也可以使用通配符`*`以表示所有附加值。 
 它也是可选的：不填写则为0。
 
-一般的，它会返回IItemStack对象。
+一般的，它会返回 IItemStack 对象。
 更对信息请参考[所属的wiki页面](/Vanilla/Items/IItemStack)。
 
 ## 例子

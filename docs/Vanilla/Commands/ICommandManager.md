@@ -1,4 +1,4 @@
-# 指令管理器（ICommandManager）
+# 命令管理器（ICommandManager）
 
 指令管理器接口用于管理指令，你可以使用它来获取，并执行指令。   
 你可以通过 [服务器（IServer）](/Vanilla/Game/IServer) 对象中获取这个东西。

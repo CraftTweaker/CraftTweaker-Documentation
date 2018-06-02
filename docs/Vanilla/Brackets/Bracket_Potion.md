@@ -11,7 +11,7 @@
 ```
 
 如果药水被找到，将返回药水对象。
-更多使用信息请参考[所属的wiki页面](/Vanilla/Potions/IPotion) for further information on what you can do with these.
+更多使用信息请参考[所属的wiki页面](/Vanilla/Potions/IPotion)。
 
 # 获取所有注册的药水
 

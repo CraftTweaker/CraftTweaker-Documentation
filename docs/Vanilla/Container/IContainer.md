@@ -1,4 +1,4 @@
-# 容器接口（IContainer）
+# 容器（IContainer）
 
 IContainer是一个物品容器，可以像箱子一样容纳若干itemStacks。
 

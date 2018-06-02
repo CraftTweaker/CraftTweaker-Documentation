@@ -22,18 +22,18 @@ val itemDefinitionList = game.items;
 
 ### ZenGetters 和无需参数的 ZenMethods
 
-| ZenGetter          | 它会做什么                                                                                      | 返回类型                                             |
-|--------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| id                 | 返回物品ID                                                                                  | 字符串                                                  |
-| name               | 返回非本地化的物品名称                                                                    | 字符串                                                  |
-| ores               | 返回此物品包含的矿物词典条目。也包含sub-item的矿物辞典条目。 | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` |
-| owner              | 返回添加此物品的模组名称。                                                      | 字符串                                                  |
-| defaultInstance    |                                                                                                      | [IItemStack](IItemStack)                                |
-| creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)      |
-| creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab)    |
-| canItemEditBlocks  |                                                                                                      | 布尔值                                                    |
-| itemEnchantability | 返回物品附魔能力                                                                                                     | 整数                                                     |
-| subItems           |                                                                                                      | List<[IItemStack](IItemStack)\>                         |
+|     ZenGetter      |                          它会做什么                          |                        返回类型                         |
+| :----------------: | :----------------------------------------------------------: | :-----------------------------------------------------: |
+|         id         |                          返回物品ID                          |                         字符串                          |
+|        name        |                    返回非本地化的物品名称                    |                         字符串                          |
+|        ores        | 返回此物品包含的矿物词典条目。也包含sub-item的矿物辞典条目。 | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>` |
+|       owner        |                  返回添加此物品的模组名称。                  |                         字符串                          |
+|  defaultInstance   |                                                              |                [IItemStack](IItemStack)                 |
+|    creativeTab     |                                                              |   [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)    |
+|    creativeTabs    |                                                              |  [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab)   |
+| canItemEditBlocks  |                                                              |                         布尔值                          |
+| itemEnchantability |                       返回物品附魔能力                       |                          整数                           |
+|      subItems      |                                                              |             List<[IItemStack](IItemStack)\>             |
 
 
 ### ZenSetters 和其他的 void-Methods
