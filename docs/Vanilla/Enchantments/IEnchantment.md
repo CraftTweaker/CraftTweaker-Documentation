@@ -1,4 +1,4 @@
-# 附魔
+# 附魔（IEnchantment）
 
 附魔对象基本上就是一个[附魔定义](IEnchantmentDefinition)对象和一个附魔等级.  
 
