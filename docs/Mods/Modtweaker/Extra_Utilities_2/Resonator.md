@@ -23,7 +23,7 @@ mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 //output 输出
 //input 输入
 //energy 能量
-//addOwnerTag 是否添加所有者标签（可选）
+//addOwnerTag 是否设置方块所有者（可选）
 mods.extrautils2.Resonator.add(<minecraft:redstone_block>, <minecraft:gold_block>, 100);
 mods.extrautils2.Resonator.add(<minecraft:gold_block>, <minecraft:iron_block>, 200, false);
 ```
