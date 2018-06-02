@@ -1,14 +1,14 @@
-# 玩家使用骨粉
+# 玩家使用骨粉（PlayerBonemealEvent）
 
-玩家使用骨粉事件在玩家对一个方块使用骨粉是触发。
+玩家使用骨粉事件在玩家对一个方块使用骨粉时触发。
 
 ## 事件类
 你需要使用以下方式作为函数头以创建此类:  
 `crafttweaker.event.PlayerBonemealEvent`  
 你当然可以先[导入](/AdvancedFunctions/Import)类然后再使用。
 
-## Event interface extensions
-PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件接口拓展
+玩家使用骨粉事件实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [IEventCancelable](IEventCancelable)
 - [IPlayerEvent](IPlayerEvent)

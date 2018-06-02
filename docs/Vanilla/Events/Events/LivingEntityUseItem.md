@@ -1,32 +1,32 @@
-# LivingEntityUseItem
+# 有生命实体使用物品（LivingEntityUseItem）
 
-The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
-Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
+有生命实体使用物品事件会在实体准备使用物品，停止使用，使用完毕，以及使用物品时的每一个ticks触发。  
+由于这个调用太过频繁，它们的四个子事件只有在特殊情况下才会触发。
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关类
+最好在使用前 [导入](/AdvancedFunctions/Import) 类来避免错误。   
 ```
-//Base Event
+//基础事件
 import crafttweaker.event.EntityLivingUseItemEvent.All;
 
-//Specific Events
+//特殊事件
 import crafttweaker.event.EntityLivingUseItemEvent.Start;
 import crafttweaker.event.EntityLivingUseItemEvent.Tick;
 import crafttweaker.event.EntityLivingUseItemEvent.Stop;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 ```
 
-## Event interface extensions
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件接口拓展
+有生命实体使用物品事件实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [ILivingEvent](ILivingEvent)
 - [IEventCancelable](IEventCancelable)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+在事件中可以获取/设置如下信息：
 
-| ZenGetter  | Return Type                             |
+| ZenGetter  | 返回类型                             |
 |------------|-----------------------------------------|
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer)     |
 | `isPlayer` | bool                                    |
@@ -34,6 +34,6 @@ The following information can be retrieved/set during the event:
 | `duration` | int                                     |
 
 
-| ZenSetter  | Parameter Type                          |
+| ZenSetter  | 参数类型                          |
 |------------|-----------------------------------------|
 | `duration` | int                                     |

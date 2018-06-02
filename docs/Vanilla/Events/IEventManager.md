@@ -11,7 +11,7 @@
 
 ## 事件是如何工作的？
 你可以通过添加一个函数来描述这个事件，并且决定 CraftTweaker 在此事件发生时做些什么。  
-最为重要的事情就是**构造正确类型的事件！**，否则你将无法访问 ZenGetters。   
+最为重要的事情就是 **构造正确类型的事件！**，否则你将无法访问 ZenGetters。   
 如果你仅仅是想打印什么东西而不需要访问事件本身，下面的例子就够了。
 
 ```js
@@ -76,7 +76,7 @@ ZenMethods 即为 `events` 后调用的方法，而事件类（Event Class）为
 |       onPlayerUseHoe        | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe) |
 
 
-## 清除所有的事件管理器
+## 清除所有的事件处理器
 ```
 events.clear();
 ```
