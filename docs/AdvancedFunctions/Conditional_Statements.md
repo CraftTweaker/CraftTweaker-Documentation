@@ -18,7 +18,7 @@ if(test == 0){ //true
 
 ## Else
 
-Else 关键字用来条件语句的后半部分，当 if 语句处条件为 False 时候，就会执行此处的代码块。
+Else 关键字可以作为条件语句的后半部分，当 if 语句处条件为 False 时候，就会执行此处的代码块。
 
 ```Js
 var test = 0;
@@ -34,10 +34,10 @@ if(test == 0){//true
 test = 1
 if(test == 0){//false
 	//当 test 为 0 时候，执行此处语句
-	print("Now, test is zero!");
+	print("现在 test 等于 0！");
 } else {
 	//当 test 不为 0 时候，执行此处语句
-	print("Now, test is NOT zero!");
+	print("现在 test 不等于 0！");
 }
 
 ```
@@ -85,7 +85,7 @@ if(d=="你好" & e == "世界"){print("AND2!");}		//true
 总是不停地输入 if/else 判定结构显得十分的冗余，尤其是只做普通的条件判定时。  
 使用 `?` 操作符即可解决；  
 下面的逻辑和 if/else 完全一致，只不过代码量小了许多。  
-语法结构：`boolean ? if : else` 
+语法结构：`boolean ? if : else`
 
 ```js
 val switchy = false;
@@ -140,15 +140,15 @@ if(loadedMods in "mcp"){
 }
 ```
 
-### in IIngredient 
+### in IIngredient （检查材料）
 
 你也可以通过对比两个 IIngredients 对象，来检查一个物品是否满足定义。
 
-```Java
+```Js
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("铁锭的矿物词典是正确的！");
 }
 ```
 
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.
+请注意分清左右两个参数：
+只有当所有在 `in` 之后的材料对象包含 `in` 之前的材料对象时，结果才为真。

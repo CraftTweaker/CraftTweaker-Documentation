@@ -42,7 +42,7 @@ Below you will find a list for CoT's basic Part Types:
 		<tbody>
 			<tr><td>durability</td><td>An "Integer" (e.g. "10")</td><td>No</td></tr>
 			<tr><td>enchantability</td><td>An "Integer" (e.g. "10")</td><td>No</td></tr>
-			<tr><td>reduction</td><td>Four "Integers" (e.g. "2,3,4,5")</td><td>No</td></tr>
+			<tr><td>reduction</td><td>Four "Integers" (e.g. "2, 5, 6, 2") <br>Representing Footwear, Leggins, Chestplate, Headslot</td><td>No</td></tr>
 			<tr><td>toughness</td><td>A "float" (e.g. "2.4")</td><td>No</td></tr>
 		</tbody>
 	</table>

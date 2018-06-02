@@ -27,7 +27,7 @@ ZenScript 有时候并不能预测数组中物品属于何种类型，这就会�
 ```js
 // 下面的例子就演示了最推荐的数组构建方式
 import crafttweaker.item.IItemStack;  // 首先是导入包，这个一定要放在脚本的最顶上
-val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];  // 使用 as 附加声明，指定其为 IItemStack 类型
+val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];  // 使用 as 附加声明，指定其为 IItemStack（物品堆）类型
 ```
 
 ## 数组嵌套
@@ -42,7 +42,7 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] a
 
 ## 访问数组中的元素
 你可以通过下标来访问数组中的元素。  
-数组中的第一个元素通过下标 0 来访问，第二个元素通过下标 2 来访问，以此类推。
+数组中的第一个元素通过下标 0 来访问，第二个元素通过下标 1 来访问，以此类推。
 
 如果你想要访问嵌套数组中的元素，则需要指定多个下标来访问。
 
@@ -73,10 +73,10 @@ stringArrayAll[3] is ["蝴蝶","！"]
 
 stringArrayAll[0][0] is "你好"
 stringArrayAll[0][1] is "世界"
-etc.
+以此类推
 */
 
-//打印输出“你好”
+//打印输出“世界”
 print(stringArrayAll[0][1]);
 ```
 
@@ -85,8 +85,8 @@ print(stringArrayAll[0][1]);
 循环是一个能够重复执行的函数。你能够通过循环来对一个数组中所有的元素进行一些修改应用。
 
 ## For 循环
-主要用 For 循环来迭代数组。“迭代”指的是对一个数组中所有的元素进行一些修改应用。
-
+For循环的主要用途是遍历数组中的每一个元素。遍历指的是对一个数组中的所有元素执行一段代码。
+你可以使用`break`关键字提前结束循环。
 ```js
 import crafttweaker.item.IItemStack;
 
@@ -108,7 +108,7 @@ for i, item in IArray {
 	//定义一个变量叫做“item”，遍历 IArray 中的每一个元素（就是类似于 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond> 这样的东西）
 	//然后就能用这些变量了！
 
-	//使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（比如泥土由玻璃和木斧合成，木板由木头和金锄头合成，钻石由金锭和绿宝石合成）
+	//使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（比如泥土由玻璃和木斧合成，木板由木头和金锄合成，钻石由金锭和绿宝石合成）
 	recipes.addShapeless(item,[JArray[i],KArray[i]]);
 }
 
@@ -128,9 +128,43 @@ for item in loadedMods["minecraft"].items {
 }
 ```
 
+## While 循环
+While循环只要后面的条件为`true`就会循环执行给定的代码。
+另外，可以使用`break`关键字结束循环。
+
+```
+var i = 0;
+
+//会输出 0 - 9 ，因为在下一轮循环中，i等于10，因此 i<10 判断结果为false 
+while i < 10 {
+	print(i);
+	i += 1;
+}
+
+print("After loop: " + i);
+
+
+//会输出 10 - 6, 应为在下一轮循环中 i== 5 ,使循环中断
+while (i > 0) {
+	if i == 5
+		break;
+	print(i);
+	i -= 1;
+}
+
+print("After loop 2: " + i);
+
+
+for k in 1 .. 10 {
+	if (k == 5)
+	    break;
+	print(k);
+}
+```
+
 # 向数组中添加元素
 
-虽然很不推荐这么做，但是向数组中添加对象是可行的；  
+虽然很不推荐这么做，但是向数组中添加元素是可行的；  
 每次只能对一个数组添加一个元素，无法同时对多个数组添加元素；  
 使用符号 `+` 来添加为数组添加元素。
 

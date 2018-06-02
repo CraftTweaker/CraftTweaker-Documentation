@@ -36,9 +36,11 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 		<li>stack.items</li>
 		<li>stack.itemArray</li>
 		<li>stack.liquids</li>
+		<li>stack.commandString</li>
 		<li>stack | otherIngredient</li>
 		<li>stack.or(otherIngredient)</li>
 		<li>stack.transform([transformer](Item_Transformers))</li>
+		<li>stack.transformNew([transformer](Item_Transformers))</li>
 		<li>stack.only([condition](Item_Conditions))</li>
 		<li>stack.marked(mark)</li>
 		<li>stack.matches(item)</li>
@@ -163,6 +165,12 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 | `stack.canDestroy(IBlockPos pos)`              | A bool that tells if the item can destroy the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
 | `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
 | `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos) |
+
+#### create IEntityItem
+| Method call                                                  | Returns                                                                                                    | Parameter Types                                                        |
+|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), int, int, int                         |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), [IBlockPos](/Vanilla/World/IBlockPos) |
 
 
 ## ItemTransformers and ItemConditions

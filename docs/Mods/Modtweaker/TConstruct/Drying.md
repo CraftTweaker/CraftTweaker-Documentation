@@ -9,7 +9,7 @@ You can call the Drying package using `mods.tconstruct.Drying`
 
 The time is in ticks
 ```
-//mods.tconstruct.Drying.addRecipe(IItemStack output, IItemStack input, int time);
+//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
 mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
 ```
 

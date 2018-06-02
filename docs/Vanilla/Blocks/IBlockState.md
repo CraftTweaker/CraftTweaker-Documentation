@@ -1,37 +1,37 @@
-# IBlockState
+# 方块状态
 
-An IBlockState object represents a block's current state.
+方块状态对象表示了一个方块现在的状态。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题，最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.block.IBlockState;` 
 
-## Extending IBlockProperties
-IBlockState extends [IBlockProperties](IBlockProperties). That means that all methods that are available to [IBlockProperties](IBlockProperties) objects are also available to IBlockState objects.
+## 方块特性的扩展
+方块状态是[方块特性](IBlockProperties)的扩展。这说明所有关于[方块状态](IBlockProperties)的函数均可以用于拥有[方块特性](IBlockState) 的物体。
 
-## ZenMethods and ZenGetters
-| ZenGetter                  | Return Type                                                          | Description                                             |
+## ZenMethods 和 ZenGetters
+| ZenGetter                  | 返回类型                                                              | 说明                                                    |
 |----------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-| block                      | [IBlock](/Vanilla/Blocks/IBlock)                                     | Returns the refered block                               |
-| meta                       | int                                                                  | Returns the refered block's metadata                    |
+| block                      | [方块](/Vanilla/Blocks/IBlock)                                       | 返回所指的方块                                           |
+| meta                       | 整型数字                                                             | 返回所指方块的附加值                                         |
 
 
 ## ZenMethods
-### isReplacable
-`boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+### 是否可以替换
+`boolean isReplaceable(IWorld world, IBlockPos pos);`  
+需要传入:
 
-- [IWorld](/Vanilla/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
+- [世界](/Vanilla/World/IWorld) world → 检测的世界
+- [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+返回布尔值：方块是否可以被替换。
 
 
-### Comparing two IBlockState objects
+### 比较两个方块特性
 
-You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+你可以使用 `int compare(IBlockState other);` 或者 ZenCompare 字符 `==` `!=`.  
+不过它们的返回值不同
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` 返回整型数字（相同返回0）
+- `state == other` 返回布尔值（相同返回true）
 

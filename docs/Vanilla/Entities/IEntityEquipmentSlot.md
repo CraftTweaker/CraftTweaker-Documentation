@@ -7,11 +7,11 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenGetters/ZenMethods
 
-| Getter    | Type   |
-|-----------|--------|
-| index     | int    |
+|  Getter   | Type   |
+| :-------: | ------ |
+|   index   | int    |
 | slotIndex | int    |
-| name      | string |
+|   name    | string |
 
 ### Compare
 You can check if two IEntityEquipmentSlot objects are equal:  

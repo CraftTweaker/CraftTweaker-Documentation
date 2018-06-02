@@ -1,20 +1,21 @@
-# IEntityDrop
+# 实体掉落物
 
-An IEntityDrop refers to a drop from an [Entity](IEntityDefinition).
+实体掉落物指的就是一个[实体](IEntityDefinition)死亡后的掉落物。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明 [数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。  
 `import crafttweaker.entity.IEntityDrop;`
 
 ## ZenGetters
 
-You can retrieve this information out of them.
+你可以从它们中检索这些信息。
 
-| ZenGetter  | What does it do                                          | Return type                             | Usage             |
-|------------|----------------------------------------------------------|-----------------------------------------|-------------------|
-| chance     | Returns the chance of the drop.                          | float                                   | `drop.chance`     |
-| max        | Returns the maximum Amount of the drop.                  | int                                     | `drop.max`        |
-| min        | Returns the minimum Amount of the drop.                  | int                                     | `drop.min`        |
-| playerOnly | Returns whether the drop is playerOnly.                  | boolean                                 | `drop.playerOnly` |
-| range      | Returns the minimum to maximum Amount range of the drop. | IntegerRange                            | `drop.range`      |
-| stack      | Returns the dropped Item.                                | [IItemStack](/Vanilla/Items/IItemStack) | `drop.stack`      |
+| ZenGetter  |                  作用                  |                返回类型                 |       用法        |
+| :--------: | :------------------------------------: | :-------------------------------------: | :---------------: |
+|   chance   |             返回掉落几率。             |                  float                  |   `drop.chance`   |
+|    max     |           返回最大掉落数量。           |                   int                   |    `drop.max`     |
+|    min     |           返回最小掉落数量。           |                   int                   |    `drop.min`     |
+| playerOnly | 返回这个掉落物是否是仅限玩家杀死掉落。 |                 boolean                 | `drop.playerOnly` |
+|   range    |       返回最小～最大范围掉落数。       |              IntegerRange               |   `drop.range`    |
+|   stack    |             返回掉落物品。             | [IItemStack](/Vanilla/Items/IItemStack) |   `drop.stack`    |
+

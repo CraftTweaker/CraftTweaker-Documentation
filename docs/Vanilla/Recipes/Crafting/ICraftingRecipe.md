@@ -1,45 +1,60 @@
-# ICraftingRecipe
+# 合成配方
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.  
+ICraftingRecipe是Zenscript所看到的工作台配方。
 
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+可能需要[导入](/AdvancedFunctions/Import)相关包以避免错误。 
 `import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
-### Check if a inventory contains the recipe
-
-If the [ICraftingInventory](ICraftingInventory) contains the recipe, returns `true`.
+### Get Ingredients
+Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][]
 ```
-rec.matches(inventory);
-
-rec in inventory;
-rec has inventory;
+rec.ingredients1D
+rec.ingredients2D
 ```
 
-### Check the result of an Inventory craft
+### Get standart output
 
-Returns the item that crafting the items in the [ICraftingInventory](ICraftingInventory) would yield.
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack). Careful, can be null!
 
 ```
-rec.getCraftingResult(inventory);
+rec.output
 ```
 
-
-### Check for transformers
-Returns a boolean
+### Check for conditions
+Each of these returns a boolean
 ```
-rec.transformers;
-rec.hasTransformers();
+rec.hasTransformers;
+rec.hasRecipeAction;
+rec.hasRecipeFunction;
+rec.hidden;
+rec.shaped;
 ```
 
-### ApplyTransformers
+### resourceDomain
 
-Parameter Types are [ICraftingInventory](ICraftingInventory) and [IPlayer](/Vanilla/Players/IPlayer).
+Basically, the modid of the mod that added the recipe.
 ```
-rec.applyTransformers(ICraftingInventory inventory, IPlayer byPlayer);
+rec.resourceDomain;
+rec.fullResourceDomain;
+```
+
+### Ingredients
+
+Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient)\[]\[] respectively.
+```
+rec.ingredients1D;
+rec.ingredients2D;
+```
+
+### Output
+
+The [IItemStack](/Vanilla/Variable_Types/IItemStack) output of the recipe.
+```
+rec.output;
 ```
 
 ### To String

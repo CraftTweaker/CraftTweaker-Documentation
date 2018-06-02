@@ -1,18 +1,18 @@
-# IEntityAttribute
+# 实体属性
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.entity.Attribute;`
 
 ## ZenGetters
 
-| ZenGetter    | GetterMethod      | Return Type      |
-|--------------|-------------------|------------------|
-| name         | getName()         | String           |
-| defaultValue | getDefaultValue() | double           |
-| shouldWatch  | getShouldWatch()  | boolean          |
-| parent       | getParent()       | IEntityAttribute |
+|  ZenGetter   |   GetterMethod    | 返回类型 |
+| :----------: | :---------------: | :------: |
+|     name     |     getName()     |  字符串  |
+| defaultValue | getDefaultValue() | 双精度型 |
+| shouldWatch  | getShouldWatch()  |  布尔值  |
+|    parent    |    getParent()    | 实体属性 |
 
-## More ZenMethods
+## 更多 ZenMethods
 
-- double clampValue(double Value) → Does something...
+- double clampValue(double Value) → 有点作用...

@@ -1,28 +1,28 @@
-# ICreativeTab
+# 创造模式物品栏
 
-An ICreativeTabObject represents a creative inventory tab.
+创造模式物品栏对象代表了创造模式物品栏
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.creativetabs.ICreativeTab;` 
+## 导入相关包
+为了避免发生一些不期而遇的问题，最为安全、也是最为推荐的方式就是导入相关的包。
+`import crafttweaker.creativetabs.ICreativeTab;`
 
-## Getting such an Object
-You can retrieve an ICreativeTab from the [Creative tab Brracket Handler](/Vanilla/Brackets/Bracket_CreativeTab).
+## 获取对象
+你可以从 [创造模式标签页处理器](/Vanilla/Brackets/Bracket_CreativeTab) 中检索得到创造模式物品栏对象。
 
-## ZenGetters and ZenMethods without parameters
+## 无参数 ZenGetters 和 ZenMethods
 
-| ZenGetter/ZenMethod   | Return Type                             |
-|-----------------------|-----------------------------------------|
-| searchBarWidth        | int                                     |
-| tabLabel              | string                                  |
-| setNoScrollBar()      | void (nothing)                          |
-| setNoTitle()          | void (nothing)                          |
+| ZenGetter/ZenMethod | 返回类型 |
+| :-----------------: | :------: |
+|   searchBarWidth    | 整型数字 |
+|      tabLabel       |  字符串  |
+|  setNoScrollBar()   |  不返回  |
+|    setNoTitle()     |  不返回  |
 
 
 ## ZenMethod
-#### Set Background image Name
-Uses a string (e.g. `"item_search.png"`).  
-Returns void (nothing).
+#### 设置背景图片名称
+传入字符串 (例： `"item_search.png"`)。 
+不返回任何数值
 
 ```
 tab.setBackgroundImageName(String backgroundImage);

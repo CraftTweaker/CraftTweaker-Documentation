@@ -5,7 +5,7 @@
 你甚至能够在函数中镶套函数。
 
 ## 基本语法
-一般来说，你可以这样声明一个静态使用：
+一般来说，你可以这样声明一个静态函数：
 
 ```js
 function NAME ([arguments[as type]]) [as returnType]{
@@ -14,7 +14,7 @@ function NAME ([arguments[as type]]) [as returnType]{
 }
 ```
 
-括号中的内容是可选的，取决于你具体的实现的函数；  
+方括号中的内容是可选的，取决于你具体的实现的函数；  
 接下来让我们仔细看看具体的功能。
 
 
@@ -53,7 +53,7 @@ function realTens(a as string){
 
 ### 有返回值函数
 
-你也可以指定一个函数返回的参数。  
+你也可以指定一个函数的返回值。  
 这里极为推荐使用 `as` 关键字来定义返回值类型。
 
 ```js
@@ -72,7 +72,7 @@ function add(a as int,b as int) as int{
 ```
 
 
-## 函数作参数
+## 以函数作为参数
 你当然也可以像使用参数一样使用函数。在这种情况下，他们在单独的一个类中被创建。除此之外和普通的静态函数一模一样，你可以直接使用它们的变量名来调用它们。  
 你甚至可以把它们设定为[全局参数](/AdvancedFunctions/Global_Static_Variables)。
 

@@ -1,9 +1,9 @@
-# IFurnaceRecipe
-An ICraftingRecipe is a furnace table recipe the way ZS sees it.  
+# 烧炼配方
+ICraftingRecipe是Zenscript所看到的烧炼配方。
 
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关包
+可能需要[导入](/AdvancedFunctions/Import)相关包以避免错误。
 `import crafttweaker.recipes.IFurnaceRecipe`
 
 
@@ -12,4 +12,11 @@ It might be required to [import](/AdvancedFunctions/Import) the class to avoid e
 ```
 rec.commandString;
 rec.toCommandString();
+```
+
+### Other getters
+```
+rec.input;
+rec.output;
+rec.xp;
 ```

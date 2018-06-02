@@ -1,20 +1,52 @@
 # Turntable
 
-The Turntable ONLY takes _Blocks_ as inputs, all IItemStack input MUST be that of a place-able _Block_.
+## Basic Recipe
 
-The Turntable transforms one block into another and outputs scraps items on transforming
-## Addition
+* Adds Turntable Recipe - inputs *MUST* have a block associated with them.
+  The product state is the block that will be placed after the recipe finishes
+  
+```
+mods.betterwithmods.Turntable.add(IIngredient input, IItemStack productState, IItemStack[] output);
 
-``` 
-mods.betterwithmods.Turntable.add(IItemStack inputBlock, IItemStack outputBlock, @Optional IItemStack[] scraps);
+mods.betterwithmods.Turntable.add(IIngredient input, IItemStack[] output);
 
-mods.betterwithmods.Turntable.add(<minecraft:gravel>,<minecraft:sand>,[<minecraft:flint>]);
+//Examples
+mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecraft:seed>]);
+
+mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
 ## Removal
 
-``` 
-mods.betterwithmods.Turntable.remove(IItemStack input);
- 
-mods.betterwithmods.Turntable.remove(<minecraft:clay>);
+* Remove a Turntable recipe based on the output
+```mods.betterwithmods.Turntable.remove(IItemStack[] outputs);```
+
+* Remove all Turntable recipes  
+```mods.betterwithmods.Turntable.removeAll();```
+
+* Remove a Turntable recipe by the productState  
+```mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);```
+## Builder 
+
+The Turntable  has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+
+* To create a new Turntable builder.
+`mods.betterwithmods.Turntable.builder()`
+
+* Turntable methods
+     * Sets up the inputs and outputs of the recipe  
+       ```buildRecipe(IIngredient[] inputs, IItemStack[] outputs)```
+     * Sets the rotations required for the recipe to finish. This defaults to 8.  
+       ```setRotations(int rotations)```
+     * Set the block that is placed when the recipe is finished.  
+       ```setProductState(IItemStack productState)```
+     * Finalize the recipe and add it to the game  
+       ```build()```
+       
+### Example builder usage
 ```
+mods.betterwithmods.Turntable.builder()
+.buildRecipe([<minecraft:oak_fence>], [<minecraft:stick>*6])
+.build();
+```
+    

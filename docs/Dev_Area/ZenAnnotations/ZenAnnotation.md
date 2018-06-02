@@ -36,10 +36,10 @@ These annotations can be given to Methods (both static and nonstatic)
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------|--------|
 | [`@ZenCaster`](/Dev_Area/ZenAnnotations/Annotation_ZenCaster)             |                                                                          | Method |
 | [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator)         | [OperatorType](/Dev_Area/ZenOperators)                                   | Method |
-| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMember)                        | getter name (e.g. "name") if omited, method name without () will be used | Method |
-| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMember)                        | setter name (e.g. "name") if omited, method name without () will be used | Method |
-| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMember)                  |                                                                          | Method |
-| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMember)                  |                                                                          | Method |
+| [`@ZenGetter`](/Dev_Area/ZenAnnotations/ZenMembers)                       | getter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenSetter`](/Dev_Area/ZenAnnotations/ZenMembers)                       | setter name (e.g. "name") if omited, method name without () will be used | Method |
+| [`@ZenMemberGetter`](/Dev_Area/ZenAnnotations/ZenMembers)                 |                                                                          | Method |
+| [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers)                 |                                                                          | Method |
 | [`@ZenMethod`](/Dev_Area/ZenAnnotations/Annotation_ZenMethod)             |                                                                          | Method |
 | [`@ZenMethodStatic`](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic) |                                                                          | Method |
 | [`@ZenDoc`](/Dev_Area/ZenAnnotations/Annotation_ZenDoc)                   | The Additional Method info for `dumpZS`                                  | Method |
@@ -49,6 +49,6 @@ These annotations can be given to Methods (both static and nonstatic)
 
 These annotations can be given to public fields (both static and nonstatic)
 
-| Annotation                                           | Target | Information                            |
-|------------------------------------------------------|--------|----------------------------------------|
-| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMember) | Field  | Combines `@ZenSetter` and `@ZenGetter` |
+| Annotation                                            | Target | Information                            |
+|-------------------------------------------------------|--------|----------------------------------------|
+| [`@ZenProperty`](/Dev_Area/ZenAnnotations/ZenMembers) | Field  | Combines `@ZenSetter` and `@ZenGetter` |

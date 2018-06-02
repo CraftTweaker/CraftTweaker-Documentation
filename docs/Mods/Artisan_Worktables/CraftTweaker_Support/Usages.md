@@ -1,27 +1,27 @@
-# Usages
+# 用法
 
-## Method List
+## 方法列表
 
-|Required: |Type:      |Name:                |Implementation:                   |Parameters: 																|Additional Information: 										 |
-|----------|-----------|---------------------|----------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------|
-|Required  |Recipe:    |Shaped Recipe:       |.setShaped:     				 	|[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients		    |						 										 |
-|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless   				 	|[IIngredient[](/Vanilla/Variable_Types/IIngredient) ingredients		    |																 |
-|Optional  |Recipe:    |Mirrored:            |.setMirrored    				 	|Empty																		|																 |
-|Required  |Tool:      |Tool:                |.setTool        				 	|[IIngredient](/Vanilla/Variable_Types/IIngredient) tool + Integer damage	|																 |
-|Required  |Output:    |Output:              |.addOutput      				 	|[IItemstack](/Vanilla/Items/IItemStack) output, @Optional int weight		|Can be called multiple times to provide several weighted outputs|
-|Optional  |Output:    |Extra Outputs:       |.setExtraOutput{One, Two, Three}	|[IItemstack](/Vanilla/Items/IItemStack), float chance						|																 |
-|Optional  |GameStage: |Require GameStage(s) |.requireGameStages                |String require, String[] stages											|require = "ALL" or "ANY"										 |
-|Optional  |GameStage: |Exclude GameStage(s) |.excludeGameStages				|String[] stages															|																 |
-|Required  |Creation:  |Create               |.create();						|Empty																		|																 |
+|Required: |Type:      |Name:                |Implementation:                   |Parameters:                                                                 |Additional Information:                                           |
+|----------|-----------|---------------------|----------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------|
+|Required  |Recipe:    |Shaped Recipe:       |.setShaped                        |[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients          |                                                                  |
+|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless                     |[IIngredient[](/Vanilla/Variable_Types/IIngredient) ingredients             |                                                                  |
+|Optional  |Recipe:    |Mirrored:            |.setMirrored                      |Empty                                                                       |                                                                  |
+|Required  |Tool:      |Tool:                |.addTool                          |[IIngredient](/Vanilla/Variable_Types/IIngredient) tool + Integer damage    |Call multiple times to add up to three tools needed for the craft |
+|Required  |Output:    |Output:              |.addOutput                        |[IItemstack](/Vanilla/Items/IItemStack) output, @Optional int weight        |Can be called multiple times to provide several weighted outputs  |
+|Optional  |Output:    |Extra Outputs:       |.setExtraOutput{One, Two, Three}  |[IItemstack](/Vanilla/Items/IItemStack), float chance                       |                                                                  |
+|Optional  |GameStage: |Require GameStage(s) |.requireGameStages                |String require, String[] stages                                             |require = "ALL" or "ANY"                                          |
+|Optional  |GameStage: |Exclude GameStage(s) |.excludeGameStages                |String[] stages                                                             |                                                                  |
+|Required  |Creation:  |Create               |.create();                        |Empty                                                                       |                                                                  |
 
 ```JAVA
 //Example from Old Wiki:
-Worktable.createRecipeBuilder("carpenter")
+RecipeBuilder.get("carpenter")
     .setShaped([
         [<minecraft:planks>],
         [<minecraft:planks>],
         [<minecraft:planks>]])
-    .setTool(<ore:carpenters_hammer>, 3)
+    .addTool(<ore:carpenters_hammer>, 3)
     .addOutput(<minecraft:planks> * 10, 10)
     .addOutput(<minecraft:planks:1> * 20, 10)
     .addOutput(<minecraft:planks:2> * 30, 20)

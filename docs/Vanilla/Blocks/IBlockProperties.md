@@ -1,112 +1,116 @@
-# IBlockProperties
+# 方块特性（IBlockProperties）
 
-BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](IBlockState), that means all these functions are also available to all [IBlockState](IBlockState) objects.
+方块特性使得一个方块区别于其他方块。它主要作为[方块状态](IBlockState)的接口, 这说明所有关于方块特性的函数均可以用于拥有[方块状态](IBlockState) 的物体。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IBlockProperties;` 
+## 导入相关包
+为了避免发生一些不期而遇的问题, 最为安全、也是最为推荐的方式就是导入相关的包。  
+`import crafttweaker.block.IBlockProperties;`
 
-|ZenGetter                  | Return Type                                                          | Description                                             |
-|---------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-|canProvidePower            | bool                                                                 | Returns if the refered block can provide Redstone Power |
-|mobilityFlag               | string                                                               | Returns the [mobility flag](MobilityFlag) as string     |
-|material                   | [IMaterial](IMaterial)                                               | Returns the block's [material](IMaterial)               |
-|causesSuffocation          | bool                                                                 | Returns whether the block can choke you.                |
-|hasCustomBreakingProgress  | bool                                                                 |                                                         |
-|blockNormalCube            | bool                                                                 |                                                         |
-|fullBlock                  | bool                                                                 |                                                         |
-|fullCube                   | bool                                                                 |                                                         |
-|normalCube                 | bool                                                                 |                                                         |
-|opaqueCube                 | bool                                                                 |                                                         |
-|translucent                | bool                                                                 |                                                         |
-|useNeighborBrightness      | bool                                                                 |                                                         |
+|         ZenGetter         |              类型              |                      说明                       |
+| :-----------------------: | :----------------------------: | :---------------------------------------------: |
+|      canProvidePower      |             布尔值             |            方块是否可以提供红石信号             |
+|       mobilityFlag        |             string             | 将 [移动性标识](IMobilityFlag) 以字符串形式返回 |
+|         material          | [IMaterial（材料）](IMaterial) |          返回方块的 [材料](IMaterial)           |
+|     causesSuffocation     |             布尔值             |               方块是否会窒息玩家                |
+| hasCustomBreakingProgress |             布尔值             |                                                 |
+|      blockNormalCube      |             布尔值             |                                                 |
+|         fullBlock         |             布尔值             |                                                 |
+|         fullCube          |             布尔值             |                                                 |
+|        normalCube         |             布尔值             |                                                 |
+|        opaqueCube         |             布尔值             |                                                 |
+|        translucent        |             布尔值             |                                                 |
+|   useNeighborBrightness   |             布尔值             |                                                 |
 
 ## ZenMethods
-### isReplacable
+### 是否可替换
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
 
-- [IWorld](/Vanilla/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
+需要传入:
 
-Returns a boolean that sais whether the block can be replaced or not.
+- [世界](/Vanilla/World/IWorld) world → 检测的世界
+- [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
+
+返回布尔值：方块是否可以直接被替换。
 
 
-### getLightValue
-`int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+### 获取方块亮度
+`int getLightValue(IWorld world, IBlockPos blockPos);`  
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
+需要传入:
 
-Returns an int representing the current light value at the given location.
+- [方块访问](/Vanilla/World/IBlockAccess) world → 检测的世界
+- [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
 
-### getWeakPower/GetStrongPower
-`int getWeakPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
-`int getStrongPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
-Parameters:
+返回方块亮度的整型数字。
 
-- [IBlockAccess](/Vanilla/World/IBlockAccess) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
-- [Facing](/Vanilla/World/Facing) facing → The side to be checked
-Returns an int representing the current redstone power on this side.
+### 被强充能/被弱充能
+`int getWeakPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
+`int getStrongPower(IBlockAccess world, IBlockPos blockPos, Facing facing);`  
+
+需要传入:
+
+- [方块访问](/Vanilla/World/IBlockAccess) world → 检测的世界
+- [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
+- [Facing](/Vanilla/World/Facing) facing → 检测此朝向的方块面
+
+返回方块在此面上的红石信号强度的整形数字。
 
 ### getComparatorInputOverride
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+需要传入:
 
-- [IWorld](/Vanilla/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
+- [世界](/Vanilla/World/IWorld) world → 检测的世界
+- [方块位置](/Vanilla/World/IBlockPos) pos → 方块的位置
 
 Returns an int representing the block's redstone comparator input override type.
 
 
-### Check if an entity can spawn on the block
+### 检测方块上是否可以生成生物
 
-Use an [IEntity](/Vanilla/Entities/IEntity).  
-Returns a bool.
+需要传入[实体](/Vanilla/Entities/IEntity)对象。  
+返回布尔值。
 ```
 blockProperties.canEntitySpawn(IEntity entity);
 ```
 
-### Get the actual BlockState
+### 获取实际方块状态
 
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess) and an [IBlockPos](/Vanilla/World/IBlockPos).  
-Returns a new IBlockProperties object.
+需要传入[方块访问](/Vanilla/World/IBlockAccess)对象，一个[方块位置](/Vanilla/World/IBlockPos)对象。  
+返回一个新的方块特性对象。
 
 ```
 blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
 ```
 
-### Get a block's hardness
+### 获取方块硬度
 
-Use [IWorld](/Vanilla/World/IWorld) and an [IBlockPos](/Vanilla/World/IBlockPos).  
-Returns a float.
+需要传入[世界](/Vanilla/World/IWorld)对象，一个[方块位置](/Vanilla/World/IBlockPos)对象。  
+返回浮点数。
 ```
 blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 ```
 
-### Get a block's light opacy
+### 获取方块不透明度
 
-Use [IWorld](/Vanilla/World/IWorld) and an [IBlockPos](/Vanilla/World/IBlockPos).  
-Returns an int.
+需要传入[世界](/Vanilla/World/IWorld)对象，一个[方块位置](/Vanilla/World/IBlockPos)对象。
+返回整型数字。
 ```
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
-### Get a player's Relative Block Harness
+### 获取玩家相对方块的硬度
 
-Use an [IPlayer](/Vanilla/Players/IPlayer), an [IWorld](/Vanilla/World/IWorld) and an [IBlockPos](/Vanilla/World/IBlockPos).  
-Returns a float.
+需要传入[玩家](/Vanilla/Players/IPlayer)对象,一个[世界](/Vanilla/World/IWorld)对象以及一个[方块位置](/Vanilla/World/IBlockPos)对象。  
+返回浮点数。
 ```
 blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
 ```
 
-### Check if a side of the block is solid
+### 检测方块的一个面是否是实心方块面
 
-Use an [IBlockAccess](/Vanilla/World/IBlockAccess), an [IBlockPos](/Vanilla/World/IBlockPos) and an [IFacing](/Vanilla/World/IFacing) object.  
-Returns a bool.
+需要传入[方块访问](/Vanilla/World/IBlockAccess)对象,一个[方块位置](/Vanilla/World/IBlockPos)对象以及一个[朝向](/Vanilla/World/IFacing) 对象。 
+返回布尔值。
 ```
 blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
 ```

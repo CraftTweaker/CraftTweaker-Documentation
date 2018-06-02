@@ -24,7 +24,7 @@ You can read what that means on the `game` entry.
 ```
 game.setLocalization(languageCode,unlocalizedName,newName);
 
-game.setLocalization(tile.chest.name,"StorageBox Deluxe")
+game.setLocalization("tile.chest.name","StorageBox Deluxe")
 ```
 `languageCode` is a string and optional. If you omit it, it will apply the localization regardless of the client's set language.  
 `unlocaLizedName` is a string.  

@@ -1,20 +1,19 @@
-# Mineral Mix
+# 矿床
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an Array). 
-So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
+## 导入相关包
+为了避免发生一些不期而遇的问题（比如声明数组），最为安全、也是最为推荐的方式就是导入相关的包。 `import mods.immersiveengineering.MineralMix;`.
 
-## Fail Chance
-You can get and set the failchance for the Mineralmix using the failChance [ZenSetter/Getter] on the object.
+## 失败几率
+在对象上使用[ZenSetter/Getter]以获取或设置矿床矿物失败概率
 
-## Get Mineral
+## 获取矿物
 
-|Required  |Type                 |Data Type  |
+|是否必要   |类型                 |数据类型  |
 |----------|---------------------|-----------|
-|Required  |Name                 |String     |
+|必要      |名称                 |字符串     |
 
 ```JAVA
-//Example:
+//例:
 Excavator.getMineral(String Name);
 
 var Iron = Excavator.getMineral("Iron_Ore");
@@ -22,65 +21,65 @@ var Iron = Excavator.getMineral("Iron_Ore");
 
 
 
-## Add Ore
+## 添加矿物
 
-|Required  |Type                 |Data Type  |
+|是否必要  |类型                 |数据类型  |
 |----------|---------------------|-----------|
-|Required  |Ore                  |String     |
-|Required  |Chance               |Double     |
+|必要      |Ore（矿物）          |字符串     |
+|必要      |Chance（概率）        |双精度型     |
 
 ```
 mineralMixObject.addOre("minecraft:iron_ore", 0.5);
 ```
 
-## Remove Ore
+## 移除矿物
 
-|Required  |Type                 |Data Type  |
+|是否必要   |类型                 |数据类型  |
 |----------|---------------------|-----------|
-|Required  |Ore                  |String     |
+|必要      |Ore（矿物）           |字符串     |
 
 ```
 mineralMixObject.removeOre("minecraft:iron_ore");
 ```
 
-##Fail Chance Getter/Setter
+## 失败几率获取/设置
 
-### Example
+### 例子
 ```JAVA
-//Getter
+//获取
 mineralMixObject.failchance;
 
-//Setter
+//设置
 mineralMixObject.failchance = 0.5;
 ```
 
 
 
-## Full Example
+## 完整例子
 ```JAVA
-//Example:
+//例:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;
 
 //Get The Mineral Mix
-mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["minecraft:iron_ore", "minecraft:diamond_ore"], [0.005, 0.01], [1, 0, -1]);
+mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 
-Iron.addOre("minecraft:iron_ore", 0.5);
+Iron.addOre("oreIron", 0.5);
 
-//Print Initial Fail Chance
+//输出最初的失败概率
 print(Iron.failChance);
 
-//Set The Fail Chance to 25%
+//将失败概率设为25%
 Iron.failChance = 0.25;
 
-//Print Out The Fail Chance
+//输出失败概率
 print(Iron.failChance);
 
-//Set The Fail Chance to 50%
+//将失败概率设为50%
 Iron.failChance = 0.5;
 
-//Print Final Fail Chance
+//输出最后的失败概率
 print(Iron.failChance);
 ```

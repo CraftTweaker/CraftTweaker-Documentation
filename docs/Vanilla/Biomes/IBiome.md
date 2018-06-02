@@ -1,12 +1,12 @@
-# 生物群系接口
+# 生物群系（IBiome）
 
-IBiome接口允许你获取一个已注册的生物群群的信息。
+IBiome 接口允许你获取一个已注册的生物群群的信息。
 
 ## 导入包
 如遇任何问题 (如声明 [数组](/AdvancedFunctions/Arrays_and_Loops))， 可以尝试通过导入相关包来解决。  
 `import crafttweaker.world.IBiome;`
 
-## 调用一个IBiome
+## 调用一个 IBiome
 你可以使用 [IGame](/Vanilla/Game/IGame) 的`game.biomes`来获取所有已注册的生物群系的列表
 这是目前唯一的方法
 
