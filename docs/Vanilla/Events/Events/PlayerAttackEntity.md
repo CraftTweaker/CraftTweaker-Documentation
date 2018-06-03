@@ -1,4 +1,4 @@
-# 玩家攻击实体
+# 玩家攻击实体（PlayerAttackEntityEvent）
 
 这个事件在玩家攻击任意一个实体时候触发。
 
@@ -8,8 +8,8 @@
 你当然可以先[导入](/AdvancedFunctions/Import)类然后再使用。
 
 
-## Event interface extensions
-PlayerAttackEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件接口拓展
+玩家攻击实体事件实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [IEventCancelable](IEventCancelable)
 - [IPlayerEvent](IPlayerEvent)

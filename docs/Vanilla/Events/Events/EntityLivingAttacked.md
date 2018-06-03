@@ -1,22 +1,22 @@
-# EntityLivingAttacked
+# 有生命被实体攻击（EntityLivingAttacked）
 
-The EntityLivingAttacked Event is fired whenever an entity is being attacked.  
-It can be canceled to stop the entity from taking damage.
+有生命被实体攻击事件在实体被攻击时触发。  
+它可以被取消，用来阻止实体收到伤害。  
 
-## Event Class
-You will need to cast the event in the function header as this class:  
+## 事件类
+你需要在函数头进行一次事件的类型转换，转换成如下的事件类：
 `crafttweaker.event.EntityLivingAttackedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+当然，你可以采用更为简洁的 [导入](/AdvancedFunctions/Import) 方法，在文件开头导入相关语句，而后直接通过名称进行调用。
 
-## Event interface extensions
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件接口拓展
+有生命被实体攻击事件实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [ILivingEvent](ILivingEvent)
 - [IEventCancelable](IEventCancelable)
 
 ## ZenGetters
 
-| ZenGetter    | Type                                           |
-|--------------|------------------------------------------------|
+|  ZenGetter   |                      Type                      |
+| :----------: | :--------------------------------------------: |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource) |
-| amount       | float                                          |
+|    amount    |                     float                      |

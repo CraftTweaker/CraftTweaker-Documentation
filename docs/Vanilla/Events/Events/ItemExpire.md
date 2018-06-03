@@ -1,16 +1,16 @@
-# ItemExpire
+# 物品过期（ItemExpire）
 
-The ItemExpire Event is fired whenever an Item expires (reaches its macimum lifespan).  
-It can be canceled to prevent the item from being flagged as dead.  
-If canceled it will add `extralife` to the item's lifetime.
+物品过期事件会在物品过期（也就是掉落物达到它的最大寿命时）触发。  
+可以被取消，用来防止物品被标记为死亡。
+如果取消了，将会添加 `extralife` 到物品的生命时间中。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
+## 事件类
+你需要在函数头进行一次事件的类型转换，转换成如下的事件类：
 `crafttweaker.event.ItemExpireEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+当然，你可以采用更为简洁的 [导入](/AdvancedFunctions/Import) 方法，在文件开头导入相关语句，而后直接通过名称进行调用。
 
-## Event interface extensions
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## 事件接口拓展
+PlayerDeathDrops 实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [IEntityEvent](IEntityEvent)
 - [IEventCancelable](IEventCancelable)

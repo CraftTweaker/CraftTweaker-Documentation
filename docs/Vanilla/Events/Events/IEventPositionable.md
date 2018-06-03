@@ -1,11 +1,11 @@
-# IEventPositionable
+# 事件可获取位置（IEventPositionable）
 
-This interface is extended by all events whose position matters.  
-That means you can use the getters below to access the position details.
+这个接口被所有拥有坐标功能的事件所继承。  
+这也意味着你可以使用 getters 来获取位置信息。
 
 
-## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+## 导入相关类
+最好在使用前 [导入](/AdvancedFunctions/Import) 类来避免错误。   
 `import crafttweaker.event.IEventPositionable;`
 
 

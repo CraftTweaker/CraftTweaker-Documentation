@@ -1,4 +1,4 @@
-# 玩家改变维度
+# 玩家改变维度（PlayerChangedDimensionEvent）
 
 玩家改变维度事件会在[玩家](/Vanilla/Players/IPlayer)所在的[维度/世界](/Vanilla/World/IWorld)发生改变时触发。比如会在玩家进入/离开下界时触发。
 
@@ -9,7 +9,8 @@
 
 
 ## Event interface extensions
-PlayerChandedDimension Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+
+玩家改变维度事件实现了如下接口，能够使用如下所有的 methods，getters 和 setters：
 
 - [IPlayerEvent](IPlayerEvent)
 
