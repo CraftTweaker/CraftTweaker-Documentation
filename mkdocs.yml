@@ -231,8 +231,8 @@ pages:
         - 饰品模组: 'Mods/CompatSkills/Supports/Baubles.md'
         - 血魔法:
           - 血魔法: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
-          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
-          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+          - 炼金矩阵（绑定）支持: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
+          - 仪式支持: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - CraftTweaker:
           - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
           - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
@@ -454,10 +454,10 @@ pages:
         - Turntable: 'Mods/Modtweaker/BetterWithMods/Turntable.md'
         - MiniBlocks: 'Mods/Modtweaker/BetterWithMods/MiniBlocks.md'
       - 血魔法:
-        - Alchemy Array: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
-        - Alchemy Table: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
-        - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
-        - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
+        - 炼金矩阵: 'Mods/Modtweaker/BloodMagic/AlchemyArray.md'
+        - 炼金术桌: 'Mods/Modtweaker/BloodMagic/AlchemyTable.md'
+        - 血之祭坛: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
+        - 狱火熔炉: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
       - 植物魔法:
         - 命令: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
