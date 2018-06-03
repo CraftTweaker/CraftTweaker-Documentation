@@ -19,7 +19,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <
 ## 移除
 
 ```
-inputs has a max size of 6
+inputs 数组中最多只能有6个元素
 //mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 //inputs 输入（数组）
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
