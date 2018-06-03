@@ -11,8 +11,8 @@
 //input 输入
 //minimumTier 最低血之祭坛等级
 //syphon 消耗LP数量
-//consumeRate 
-//drainRate
+//consumeRate 消耗率（吸收）
+//drainRate 消耗率（回退）
 mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
