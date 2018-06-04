@@ -20,8 +20,8 @@
 | :-------------: | :-----------------: | :--------------------: | :------------------------------------------------: |
 |                 |   canSpawnInBlock   | 实体是否能在方块上生成 |                        布尔值                        |
 |   creativeTab   |     creativeTab     |     创造模式标签页     |创造模式标签页对象（[ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)）|
-|  defaultState   |                     |                        |        方块状态[IBlockState](IBlockState)         |
-|                 | defaultSlipperiness |                        |                       浮点                        |
+|  defaultState   |                     |                        |        方块状态（[IBlockState](IBlockState)）         |
+|           0      | defaultSlipperiness |                        |                       浮点                        |
 |       id        |                     |      返回方块 ID       |                       字符串                       |
 |   displayName   |                     |    返回方块显示名称    |                       字符串                       |
 |                 |      hardness       |      设定方块硬度      |                        整型                         |
