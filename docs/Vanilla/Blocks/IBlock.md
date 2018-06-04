@@ -20,7 +20,7 @@
 | :--------: | :-----------------: | :--------------------------------------------------: |
 | definition |   返回方块的定义    | 方块定义对象（[IBlockDefinition](IBlockDefinition)） |
 |    meta    |  返回方块的元数据   |                        整型                         |
-|    data    | 返回方块的 tileData |             [IData](/Vanilla/Data/IData)             |
+|    data    | 返回方块的 tileData |         数据（[IData](/Vanilla/Data/IData)）        |
 
 
 
