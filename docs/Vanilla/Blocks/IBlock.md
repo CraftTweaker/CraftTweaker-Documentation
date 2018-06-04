@@ -19,7 +19,7 @@
 |   Getter   |       返回值        |                       返回类型                       |
 | :--------: | :-----------------: | :--------------------------------------------------: |
 | definition |   返回方块的定义    | 方块定义对象（[IBlockDefinition](IBlockDefinition)） |
-|    meta    |  返回方块的元数据   |                     整型（int）                      |
+|    meta    |  返回方块的元数据   |                        整型                         |
 |    data    | 返回方块的 tileData |             [IData](/Vanilla/Data/IData)             |
 
 
