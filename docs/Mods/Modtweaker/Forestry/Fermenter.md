@@ -1,34 +1,35 @@
-# Fermenter
+# 发酵机
 
-ModTweaker allows you to add or remove forestry Fermenter Recipes
+ModTweaker 允许你添加或移除林业发酵机配方
 
-## Calling
-You can call the  package using `mods.forestry.Fermenter`
+## 导入
+使用 `mods.forestry.Fermenter` 以导入相关包
 
-## Recipe Removal
+## 移除配方
 
 ```JAVA
 //mods.forestry.Fermenter.removeRecipe(IIngredient input);
+//input 输入
 mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 ```
 
 
-## Recipe Addition
+## 添加配方
 
 ```JAVA
 //mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
 mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
 ```
-Amount of fluid output: fermentationValue * fluidOutputModifier
+流体输出数量计算公式: fermentationValue * fluidOutputModifier
 
-| Parameter           | Type                                          | description                                   |
-|---------------------|-----------------------------------------------|-----------------------------------------------|
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) | The Recipe's output                           |
-| resource            | [IItemStack](/Vanilla/Items/IItemStack)       | The Recipe's item input                       |
-| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) | The Recipe's liquid input                     |
-| fermentationValue   | int                                           | Amount of inputFluid on organic item requires |
-| fluidOutputModifier | int                                           | Output multiplier                             |
+| 参数                 | 类型                                                   | 描述                                          |
+|---------------------|--------------------------------------------------------|-----------------------------------------------|
+| fluidOutput         | 流体堆（[ILiquidStack](/Vanilla/Liquids/ILiquidStack)） | 配方的输出                                     |
+| resource            | 物品堆（[IItemStack](/Vanilla/Items/IItemStack)）       | 配方的物品输入                                 |
+| fluidInput          | 流体堆（[ILiquidStack](/Vanilla/Liquids/ILiquidStack) ）| 配方的流体输入                                 |
+| fermentationValue   | 整型                                                   | Amount of inputFluid on organic item requires |
+| fluidOutputModifier | 整型                                                   | Output multiplier                             |
 
 
 ## Fuel Removal
