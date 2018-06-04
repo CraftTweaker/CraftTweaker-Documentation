@@ -19,7 +19,7 @@ mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```JAVA
 //mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
-//output 输出（加权物品堆）
+//output 输出（加权物品堆）（数组）
 //ingredients 材料
 //packagingTime 时间
 mods.forestry.Centrifuge.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
