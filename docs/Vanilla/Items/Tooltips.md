@@ -1,41 +1,41 @@
-# Tooltips
+# 文本提示（Tooltips）
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+添加或者移除文本提示很简单：  
+你只需要指定一个物品（矿物词典也可以），换句话说，指定一个材料。
 
-## Clearing tooltips
-This removes ALL tooltips from the `item`
-```
+## 清除文本提示
+下面语句会清除 `item` 的所有文本提示：
+```js
 item.clearTooltip();
 ```
 
-## Normal Tooltips
-This adds `tT` as tooltip to `item`.
-```
+## 普通文本提示
+下面语句会为 `item` 添加  `tT` 作为文本提示
+```js
 item.addTooltip(tT);
 
 <minecraft:chest>.addTooltip("Storage, what can I say more?");
 ```
-`item` is a [IIngredient](/Vanilla/Variable_Types/IIngredient)  
-`tT` is a string
+`item` 为一个 [材料](/Vanilla/Variable_Types/IIngredient)  类型  
+`tT` 为一个字符串
 
-## Shift Tooltips
-This adds a tooltip, that will only be visible when you hold shift.
-```
+## Shift 显示的问题提示
+添加一个只有在 shift 状态下才会显示的文本提示。
+```js
 item.addShiftTooltip(tT);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
 ```
-`item` is a [IIngredient](/Vanilla/Variable_Types/IIngredient)  
-`tT` is a string
+`item` 为一个 [材料](/Vanilla/Variable_Types/IIngredient)  类型  
+`tT` 为一个字符串
 
-# Markup
-The world is colorful, and so should be all of our tooltips.
-You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+# 样式代码
+世界是五彩斑斓的，文本提示也应当如此。  
+混合镶套样式是可行的（诸如绿色删除线样式）
 
-## Coloring a String
+## 颜色样式
 
-You can apply one of the 16 colors to your string
+你可以为你的字符串指定如下 16 种颜色
 ```
 format.black
 format.darkBlue
@@ -55,12 +55,12 @@ format.yellow
 format.white
 ```
 
-```
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+```js
+<minecraft:stick>.addTooltip(format.green("这是木棍"));
 ```
 
-## Formatting a String
-You can apply different formats to your String should you wish to:
+## 格式代码
+你可以为你的字符串指定不同的格式：
 ```
 format.obfuscated
 format.bold
@@ -69,6 +69,6 @@ format.underline
 format.italic
 ```
 
-```
-<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
+```js
+<minecraft:stick>.addShiftTooltip(format.strikethrough("这还是木棍"));
 ```
