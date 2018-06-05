@@ -1,13 +1,14 @@
-# ILiquidDefinition
-The ILiquidDefinition defines the liquid an [ILiquidStack](ILiquidStack) consists of.
-Unlike the ILiquidStack, this interface allows you to change fluid properties.
+# 流体定义（ILiquidDefinition）
+流体定义，定义着 [流体堆](ILiquidStack) 所包含的流体。  
+不同于流体堆，这个接口能够允许你修改流体属性。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。 
 `import crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
-So, what can we do with it?
+## 方法
+仔细想想我们能做些什么？
 
 ### Multiplication
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](ILiquidStack) with the specified amount in millibuckets

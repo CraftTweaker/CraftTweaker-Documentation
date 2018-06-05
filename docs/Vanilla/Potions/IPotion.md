@@ -1,13 +1,14 @@
-# IPotion
+# 药水（IPotion）
 
-An IPotion object refers a potion in the game.
+药水对象指的真是游戏中的药水。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。  
 `import crafttweaker.potions.IPotion;`
 
-## Getting an IPotion object
-You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion)
+## 获取药水对象
+你可以通过 [药水尖括号引用处理器](/Vanilla/Brackets/Bracket_Potion) 来获取药水对象。
 
 ```Java
 <potion:minecraft:strength>;
@@ -15,25 +16,29 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 
 ## Zengetters
 
-Currently, all you can do with potions is retrieving some information on them.  
-Example `<potion:minecraft:strength>.name`
+你可以通过药水来获取相关信息。  
+比如 `<potion:minecraft:strength>.name`
 
-| Zengetter     | What does it do                                     | Return Type                                   |
-|---------------|-----------------------------------------------------|-----------------------------------------------|
-| name          | Returns the potion's internal name                  | string                                        |
-| badEffect     | Returns if the potion effect is bad                 | bool                                          |
-| liquidColor   | Returns the potion's color                          | int                                           |
-| liquidColour  | Returns the potion's colour                         | int                                           |
+|   Zengetter   |                        用处                         |                   返回类型                    |
+| :-----------: | :-------------------------------------------------: | :-------------------------------------------: |
+|     name      |                  返回药水内部名称                   |                    string                     |
+|   badEffect   |                 药水效果是否为负面                  |                     bool                      |
+|  liquidColor  |                返回药水颜色（美式）                 |                      int                      |
+| liquidColour  |                返回药水颜色（英式）                 |                      int                      |
 | curativeItems | Returns a list of all curative Items for the potion | List<[IItemStack](/Vanilla/Items/IItemStack)> |
-| hasStatusIcon | Returns whether the potion has a status icon        | bool                                          |
-| isBeneficial  | Returns whether the potion is beneficial            | bool                                          |
-| isInstant     | Returns whether the potion is instant               | bool                                          |
+| hasStatusIcon |                 药水效果是否有图标                  |                     bool                      |
+| isBeneficial  |      Returns whether the potion is beneficial       |                     bool                      |
+|   isInstant   |                药水效果是否是即时的                 |                     bool                      |
 
 ## ZenMethods
-### Make PotionEffect
-An [IPotionEffect](IPotionEffect) is a Potion that has a duration and amplifier. You can use these two methods to get one from an IPotion:  
-As one might guess, both return an [IPotionEffect](IPotionEffect) object.
-```
+### 自定义药水效果
+[药水效果](IPotionEffect) 是拥有时长和等级的药水，你可以通过如下两种方法来获取药水：
+两者皆返回 [药水效果](IPotionEffect) 对象。
+```js
+//duration：时长
+//amplifier：等级
+//ambientEffect：是否为环境效果（如果是，则不显示图标）
+//particlessShown：是否显示粒子
 pot.makePotionEffect(int duration, int amplifier);
 pot.makePotionEffect(int duration, int amplifier, boolean ambientEffect, boolean particlesShown);
 ```

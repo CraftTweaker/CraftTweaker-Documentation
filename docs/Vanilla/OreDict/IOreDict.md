@@ -1,4 +1,4 @@
-# IOreDict
+# 矿物词典（IOreDict）
 
 Forge 的矿物词典是用条目形式描述一系列物品的列表。
 当人们谈论矿物词典时，一般指的是[矿物词典条目](IOreDictEntry)而不是词典本身。
@@ -47,7 +47,7 @@ for entry in oreDict {
 
 ## 如果检查矿物词典条目是否存在
 
-你可以使用 `in` 或 `has` 运算符检查[矿物词典条目（IOreDictEntry）](IOreDictEntry)是否存在：
+你可以使用 `in` 或 `has` 运算符检查 [矿物词典条目（IOreDictEntry）](IOreDictEntry) 是否存在：
 ```
 if (oreDict in "ingotIron") {
 	print("ingotIron 存在！");
