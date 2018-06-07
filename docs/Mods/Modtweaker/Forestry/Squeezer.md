@@ -1,22 +1,24 @@
-# Squeezer
+# 榨汁机
 
-ModTweaker allows you to add or remove forestry Squeezer Recipes
+ModTweaker 允许你添加或移除林业榨汁机配方
 
-## Calling
-You can call the  package using `mods.forestry.Squeezer`
+## 导入
+使用 `mods.forestry.Squeezer` 以导入相关包
 
-## Recipe Removal
+## 移除配方
 
-Beware, you cannot remove the recipes that fill or drain fluid containers, such as forestry cans!
+注意：你不能移除填充或清空流体容器（比如林业的罐）的配方
 
 ```JAVA
 //mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
+//liquid 流体
+//ingredients 材料（数组）（可选）
 mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
 ```
 
 
-## Recipe Addition
+## 添加配方
 
 ```JAVA
 //mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
@@ -24,9 +26,9 @@ mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]
 mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <minecraft:redstone> % 20);
 ```
 
-| Parameter           | Type                                                  | description                                   |
+| 参数                 | 类型                                                  | 描述                                          |
 |---------------------|-------------------------------------------------------|-----------------------------------------------|
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)         | The Recipe's output                           |
-| ingredients         | [IItemStack](/Vanilla/Items/IItemStack)[]             | The Recipe's item input(s)                    |
-| timePerItem         | int                                                   | Amount of inputFluid on organic item requires |
-| itemOutput          | [WeightedItemStack](/Vanilla/Items/WeightedItemStack) | Output multiplier                             |
+| fluidOutput         | 流体堆（[ILiquidStack](/Vanilla/Liquids/ILiquidStack)）| 输出                                          |
+| ingredients         | 物品堆（[IItemStack](/Vanilla/Items/IItemStack)）[]    | 输入的物品（数组）                              |
+| timePerItem         | 整型                                                  | Amount of inputFluid on organic item requires |
+| itemOutput          | 加权物品堆（[WeightedItemStack](/Vanilla/Items/WeightedItemStack)）| 副产物和概率                        |
