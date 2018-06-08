@@ -1,43 +1,43 @@
-# Item Transformers
+# 物品转换器（Item Transformers）
 
-Item Transformers transform your crafting inputs upon crafting.  
-This can range from damaging the item up to returning a completely different item.
+物品转换器能够转换在合成时转换输入的物品。  
+既可以修改物品耐久，也可以返回一个完全不同的物品。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入相关包
+
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。   
 `import crafttweaker.item.IItemTransformer;`
 
-```Java
-
+```js
 val item = <minecraft:apple>;
 
-//Item won't be consumed and will stay in the grid
+//物品不会消耗，仍会保留在合成台中
 transformedItem = item.reuse();
 
-//Item won't be consumed and the whole stack will be given back to you (does /give).
+//物品不会消耗，而是整个返回给你（可以理解为此处执行了 give 指令）
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
+//物品会被消耗，但会给你返还指定的物品（合成台格子会清空！）
 transformedItem = item.giveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
+//物品会被替换成指定物品（替换后物品保留在合成台中）
 transformedItem = item.transformReplace(<minecraft:potato>);
 
-//damages the item by 1
+//物品耐久减 1
 transformedItem = item.transformDamage();
 
-//damages the item by the given value
+//物品耐久会变成指定值
 transformedItem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
+//物品会被直接消耗
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
+//消耗多个物品
 transformedItem = item.transformConsume(3);
 ```
 
 
-## Registering own item Transformers
+## 注册自己的物品转换器
 ### Transform
 The old itemTransformer that might cease to exist in 1.13.  
 Thisis a special function that accepts two parameters: The [item](IItemStack) itself and the [player](/Vanilla/Players/IPlayer) performing the crafting.

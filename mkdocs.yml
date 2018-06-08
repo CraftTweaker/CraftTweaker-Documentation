@@ -150,14 +150,14 @@ pages:
       - 客户端: 'Vanilla/Game/IClient.md'
       - 游戏: 'Vanilla/Game/IGame.md'
       - 服务端: 'Vanilla/Game/IServer.md'
-      - ITeam: 'Vanilla/Game/ITeam.md'
+      - 团队: 'Vanilla/Game/ITeam.md'
       - 加载的模组: 'Vanilla/Game/Mods.md'
     - 物品:
       - 物品定义: 'Vanilla/Items/IItemDefinition.md'
       - 物品堆: 'Vanilla/Items/IItemStack.md'
       - 物品条件: 'Vanilla/Items/Item_Conditions.md'
       - 物品转换: 'Vanilla/Items/Item_Transformers.md'
-      - 提示信息: 'Vanilla/Items/Tooltips.md'
+      - 文本提示: 'Vanilla/Items/Tooltips.md'
       - 重命名: 'Vanilla/Items/Renaming.md'
       - 加权物品堆: 'Vanilla/Items/WeightedItemStack.md'
     - 流体:
