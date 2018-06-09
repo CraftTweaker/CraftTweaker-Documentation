@@ -9,8 +9,8 @@
 |         ZenGetter         |              类型              |                      说明                       |
 | :-----------------------: | :----------------------------: | :---------------------------------------------: |
 |      canProvidePower      |             布尔值             |            方块是否可以提供红石信号             |
-|       mobilityFlag        |             string             | 将 [移动性标识](IMobilityFlag) 以字符串形式返回 |
-|         material          | [IMaterial（材料）](IMaterial) |          返回方块的 [材料](IMaterial)           |
+|       mobilityFlag        |             字符串             | 将 移动性标识（[IMobilityFlag](IMobilityFlag)） 以字符串形式返回 |
+|         material          | 材料（[IMaterial](IMaterial)） |          返回方块的 材料（[IMaterial](IMaterial)）           |
 |     causesSuffocation     |             布尔值             |               方块是否会窒息玩家                |
 | hasCustomBreakingProgress |             布尔值             |                                                 |
 |      blockNormalCube      |             布尔值             |                                                 |

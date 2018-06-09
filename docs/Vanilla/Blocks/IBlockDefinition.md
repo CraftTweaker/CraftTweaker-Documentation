@@ -18,20 +18,20 @@
 
 |    ZenGetter    |      ZenSetter      |      返回值/说明       |                        类型                        |
 | :-------------: | :-----------------: | :--------------------: | :------------------------------------------------: |
-|                 |   canSpawnInBlock   | 实体是否能在方块上生成 |                        bool                        |
-|   creativeTab   |     creativeTab     |     创造模式标签页     | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab) |
-|  defaultState   |                     |                        |             [IBlockState](IBlockState)             |
-|                 | defaultSlipperiness |                        |                       float                        |
-|       id        |                     |      返回方块 ID       |                       string                       |
-|   displayName   |                     |    返回方块显示名称    |                       string                       |
-|                 |      hardness       |      设定方块硬度      |                        int                         |
-|  harvestLevel   |                     |    返回方块采掘等级    |                        int                         |
-|   harvestTool   |                     |   返回方块的采掘工具   |                       string                       |
-|                 |     lightOpacy      |     设定方块透光性     |                        int                         |
-|                 |     lightLevel      |      设定方块亮度      |                        int                         |
-|                 |     resistance      |     设定方块抗爆性     |                        int                         |
-| unlocalizedName |                     | 返回方块的语言文件 key |                       string                       |
-|  tickRandomly   |    tickRandomly     |    方块的随机 tick     |                        bool                        |
+|                 |   canSpawnInBlock   | 实体是否能在方块上生成 |                        布尔值                        |
+|   creativeTab   |     creativeTab     |     创造模式标签页     |创造模式标签页对象（[ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab)）|
+|  defaultState   |                     |                        |        方块状态（[IBlockState](IBlockState)）         |
+|           0      | defaultSlipperiness |                        |                       浮点                        |
+|       id        |                     |      返回方块 ID       |                       字符串                       |
+|   displayName   |                     |    返回方块显示名称    |                       字符串                       |
+|                 |      hardness       |      设定方块硬度      |                        整型                         |
+|  harvestLevel   |                     |    返回方块采掘等级    |                        整型                         |
+|   harvestTool   |                     |   返回方块的采掘工具   |                       字符串                       |
+|                 |     lightOpacy      |     设定方块透光性     |                        整型                         |
+|                 |     lightLevel      |      设定方块亮度      |                        整型                         |
+|                 |     resistance      |     设定方块抗爆性     |                        整型                         |
+| unlocalizedName |                     | 返回方块的语言文件 key |                       字符串                       |
+|  tickRandomly   |    tickRandomly     |    方块的随机 tick     |                      布尔值                        |
 
 
 ## ZenMethods
