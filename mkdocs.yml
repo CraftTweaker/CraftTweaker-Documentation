@@ -223,9 +223,9 @@ pages:
         - 星辉转化: 'Mods/Astral_Sorcery/Transmutation.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      - Requirements:
-        - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
+      -  必要条件:
+        - 必要条件: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - 必要条件类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - 支持:
         - 饰品模组: 'Mods/CompatSkills/Supports/Baubles.md'
@@ -244,11 +244,11 @@ pages:
         - 沉浸工程: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - 磁力科技: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft:
-          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
-          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
-          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
-          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
-          - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
+          - 维度锁定: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - 伤害生物锁定: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
+          - 乘骑锁定: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - 驯养锁定: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - 方块实体锁定: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
@@ -269,16 +269,16 @@ pages:
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
         - 匠魂:
-          - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
-          - Material-Locks:
-            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
-          - Modifier-Locks:
-            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
-      - PlayerExpansion:
-        - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
+          - 匠魂: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
+          - 材料锁定:
+            - 材料锁定: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - 强化锁定:
+            - 强化锁定: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
+      - 玩家扩展:
+        - 玩家扩展: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
-          - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
-          - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
+          - CT玩家信息: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
+          - CT玩家技能信息: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - 命令: 'Mods/ContentTweaker/Commands.md'
