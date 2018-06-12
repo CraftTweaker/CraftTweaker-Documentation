@@ -223,10 +223,10 @@ pages:
         - 星辉转化: 'Mods/Astral_Sorcery/Transmutation.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      -  必要条件:
-        - 必要条件: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - 必要条件类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
-        - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+      -  条件:
+        - 条件: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - 条件类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
+        - 技能和属性: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - 支持:
         - 饰品模组: 'Mods/CompatSkills/Supports/Baubles.md'
         - 血魔法:
@@ -234,12 +234,12 @@ pages:
           - 炼金矩阵（绑定）支持: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
           - 仪式支持: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - CraftTweaker:
-          - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
-          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
-          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
-        - GameStages:
-          - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
-          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - 条件调整: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
+          - 模组锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
+          - NBT数据锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
+        - 游戏阶段:
+          -游戏阶段: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - 游戏阶段锁定: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - 沉浸工程: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - 磁力科技: 'Mods/CompatSkills/Supports/Magneticraft.md'
