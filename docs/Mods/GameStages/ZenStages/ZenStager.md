@@ -18,7 +18,7 @@ var TestStage = ZenStager.initStage("test");
 ```
 When you have created your Stage you should then create a static/global file which contains the following so you can then access the Stage on other scripts/classes.
 
-**Note: Do not have the `initStage` and the `static` creation in the same script. Due to limitations and other issues the `initStage` will be called each time you reference a static member. So keep the init and the static creation seperate**
+**Note: Do not have the `initStage` and the `static` creation in the same script. Due to limitations and other issues, the `initStage` will be called each time you reference a static member. So keep the init and the static creation separate**
 ```java
 import mods.zenstages.ZenStager;
 

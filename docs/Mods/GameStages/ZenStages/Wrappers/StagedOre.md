@@ -11,4 +11,4 @@ Staged Ore is a wrapper class used by ZenStages to allow dynamic storage of the 
 |---------------|-------------------------------------------|-----------------------------------------------------|
 | blockToHide   | Returns the stage name                    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | blockToShow   | Gets all staged Ingredients _Can be null_ | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| nonDefaulting | If the Ore Replace is Non Defaulting      | boolean                                             |
+| nonDefaulting | If the Ore Replace is Non-Defaulting      | boolean                                             |

@@ -10,5 +10,5 @@ Staged Type is a wrapper class used by ZenStages to allow dynamic storage of the
 | ZenGetter | What does it do                                | Return Type |
 |-----------|------------------------------------------------|-------------|
 | value     | The value of the Staged Type                   | string      |
-| subValue  | The sub value of the Staged Type _Can be null_ | string      |
+| subValue  | The sub-value of the Staged Type _Can be null_ | string      |
 | typeName  | The name of the staged type                    | string      |
