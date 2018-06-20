@@ -354,6 +354,14 @@ pages:
       - Tiered Tooltips: 'Mods/GameStages/Tiered_Tooltips/Tiered_Tooltips.md'
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
+      - ZenStages:
+        - Introduction: 'Mods/GameStages/ZenStages/ZenStages.md'
+        - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
+        - Stage: 'Mods/GameStages/ZenStages/Stage.md'
+        - Wrappers:
+          - StagedIngredient: 'Mods/GameStages/ZenStages/Wrappers/StagedIngredient.md'
+          - StagedOre: 'Mods/GameStages/ZenStages/Wrappers/StagedOre.md'
+          - StagedType: 'Mods/GameStages/ZenStages/Wrappers/StagedType.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
