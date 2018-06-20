@@ -1,50 +1,53 @@
-# Requirement Types
+# 条件类型（Requirement Types）
 
 
-## Advancements:
-Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more relyable for gating.
-The Advancement Syntax is as followS:
+## 进度:
+在原来的 Skillable 模组中就已支持作为条件类型，而现在在代码上也有所改进，使其比以往更加可靠。
+进度的用法如下:
 ```
-Example:
+例子:
 adv|ResourceLocation
+//ResourceLocation 资源位置（进度位置）
 
-Working Example:
+实例:
 adv|minecraft:husbandry/plant_seed
 ```
 
-This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.
+它兼容所有的进度，包括由其他模组添加的进度，但需要指定正确的资源位置。
 
 
 
-## Dimensions:
-Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
-- Being in a **Specific** dimension.
-- Being in **any** dimension **other than** the one specified.
+## 维度:
+维度是 CompatSkills 引入的条件，有以下两种方法可以将维度作为条件:
+- 在一个 **指定的** 维度。
+- 在 **除了** 指定的维度以外的 **任意** 维度。
 ```
-Example:
+例子:
 dim|integer
+//integer 整型（维度ID）
 
-Working Example:
+实例:
 dim|0
 ```
 
 
 
-## GameStages:
-GameStages is a Requirement introduced by CompatSkills and allows you to gate items behind GameStages.
-The GameStage Syntax is as follows:
+## 游戏阶段:
+游戏阶段是 CompatSkills 引入的条件，允许你将游戏阶段作为条件。
+游戏阶段的用法如下:
 ```
-Example:
+例子:
 stage|stageName
+//stageName 阶段名称
 
-Working Example:
+实例:
 stage|test
 ```
 
 
 
-## Items:
-Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand.
+## 物品:
+Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand.物品是 CompatSkills 引入的条件，允许你将游戏阶段作为条件。通过在主手
 The Item Syntax is as follows:
 ```
 Example:
