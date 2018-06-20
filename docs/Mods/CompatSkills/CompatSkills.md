@@ -25,7 +25,7 @@
 "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed"
 
 
-目前仅有通过Crafttweaker解锁物品的方法**不**支持使用可变长参数。
+目前仅有通过 Crafttweaker 解锁物品的方法**不**支持使用可变长参数。
 这将会在1.2.0更新时修改！
 
 ### CurseForge 页面:
