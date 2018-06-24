@@ -51,38 +51,41 @@ stage|test
 物品的用法如下:
 ```
 例子:
-// Adds the requirement of you holding ANY item from the specified mod.
+// 指定模组的任意物品
 stack|modid
 
-// Adds the requirement of you holding the specified item with Meta 0
+// 方块实体附加值为0的指定物品
 stack|modid:item
 
-// Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
+// 有指定方块实体附加值的指定物品（* = 任意方块实体附加值）
 stack|modid:item:meta
 
-// Adds the requirement of you holding ANY item with the specified NBT-data
+// 指定 NBT 数据的任意物品
 stack||NBT as JSON
 
-// Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
+// 指定 NBT 数据且来自指定模组的任意物品
 stack|modid|NBT as JSON
 
-// Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data
+// 指定 NBT 数据且方块实体附加值为0的指定物品
 stack|modid:item|NBT as JSON
 
-// Adds the requirement of you holding the specified item with the specified Meta and the specified NBT-data
+// 指定 NBT 数据且有指定方块实体附加值的指定物品
 stack|modid:item:meta|NBT as JSON
 
+//modid 模组 id
+//item 物品名称
+//meta 方块实体附加值
+//NBT as JSON JSON 格式的 NBT 数据
 
-
-// Working Examples:
+// 实例:
 stack|minecraft
 stack|minecraft:iron_pickaxe
 stack|minecraft:iron_pickaxe:*
 
-//Needs a silk touch item
+//有精准采集魔咒的物品
 stack||{ench:[{id: 33s}]} 
 
-//fortune tinkers tool
+//时运强化的匠魂物品
 stack|tconstruct|{ench:[{id: 35s}]} 
 
 stack|minecraft:iron_sword|{ench:[{id: 17s}]}
@@ -90,8 +93,8 @@ stack|minecraft:iron_sword:*|{ench:[{id: 17s}]}
 ```
 
 
-## Skills:
-Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills.
+## 技能:
+技能和进度都是在 Skillable 模组中就已经添加的条件类型。Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills.
 The Skill Syntax is as follows:
 ```
 Example:
