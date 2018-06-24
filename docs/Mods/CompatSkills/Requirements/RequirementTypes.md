@@ -2,7 +2,7 @@
 
 
 ## 进度:
-在原来的 Skillable 模组中就已支持作为条件类型，而现在在代码上也有所改进，使其比以往更加可靠。
+在 Skillable 模组（源模组）中就已支持进度作为一种条件类型，现在在代码上也有所改进，使其比以往更加可靠的解锁物品。
 进度的用法如下:
 ```
 例子:
@@ -18,7 +18,7 @@ adv|minecraft:husbandry/plant_seed
 
 
 ## 维度:
-维度是 CompatSkills 引入的条件，有以下两种方法可以将维度作为条件:
+维度是 CompatSkills 加入的条件，有以下两种方法可以将维度作为条件锁定物品:
 - 在一个 **指定的** 维度。
 - 在 **除了** 指定的维度以外的 **任意** 维度。
 ```
@@ -33,7 +33,7 @@ dim|0
 
 
 ## 游戏阶段:
-游戏阶段是 CompatSkills 引入的条件，允许你将游戏阶段作为条件。
+游戏阶段是 CompatSkills 加入的条件，允许你将游戏阶段作为条件锁定物品。
 游戏阶段的用法如下:
 ```
 例子:
@@ -47,10 +47,10 @@ stage|test
 
 
 ## 物品:
-Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand.物品是 CompatSkills 引入的条件，允许你将游戏阶段作为条件。通过在主手
-The Item Syntax is as follows:
+物品是 CompatSkills 加入的条件，允许你用物品作为条件锁定物品。通过在主手或副手持有指定物品或带有 NBT 数据的物品或某个模组的物品解锁物品。
+物品的用法如下:
 ```
-Example:
+例子:
 // Adds the requirement of you holding ANY item from the specified mod.
 stack|modid
 
