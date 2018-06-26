@@ -5,11 +5,11 @@
 - 饰品
 - 血魔法
 - CraftTweaker
-- GameStages
+- 游戏阶段
 - Hwyla/Waila
 - 沉浸工程
 - 磁力科技
-- ProjectE
+- 等价交换
 - Reskillable
 - The One Probe (TOP)
 - 匠魂
