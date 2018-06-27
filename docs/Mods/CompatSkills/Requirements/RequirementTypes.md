@@ -2,7 +2,7 @@
 
 
 ## 进度:
-在 Skillable 模组（源模组）中就已支持进度作为一种条件类型，现在在代码上也有所改进，使其比以往更加可靠的解锁物品。
+在 Skillable 模组（源模组）中就已支持进度作为一种条件类型，现在在代码上也有所改进，使其比以往更加可靠的解锁。
 进度的用法如下:
 ```
 例子:
@@ -18,7 +18,7 @@ adv|minecraft:husbandry/plant_seed
 
 
 ## 维度:
-维度是 CompatSkills 加入的条件，有以下两种方法可以将维度作为条件锁定物品:
+维度是 CompatSkills 加入的条件，有以下两种方法可以将维度作为条件锁定:
 - 在一个 **指定的** 维度。
 - 在 **除了** 指定的维度以外的 **任意** 维度。
 ```
@@ -33,7 +33,7 @@ dim|0
 
 
 ## 游戏阶段:
-游戏阶段是 CompatSkills 加入的条件，允许你将游戏阶段作为条件锁定物品。
+游戏阶段是 CompatSkills 加入的条件，允许你将游戏阶段作为条件锁定。
 游戏阶段的用法如下:
 ```
 例子:
@@ -47,8 +47,8 @@ stage|test
 
 
 ## 物品:
-物品是 CompatSkills 加入的条件，允许你用物品作为条件锁定物品。通过在主手或副手持有指定物品或带有 NBT 数据的物品或某个模组的物品解锁物品。
-物品的用法如下:
+物品是 CompatSkills 加入的条件，允许你用物品作为条件锁定。通过在主手或副手持有指定物品或带有 NBT 数据的物品或某个模组的物品解锁。
+物品的用法如下：
 ```
 例子:
 // 指定模组的任意物品
@@ -95,7 +95,7 @@ stack|minecraft:iron_sword:*|{ench:[{id: 17s}]}
 
 ## 技能:
 技能和进度都是在 Skillable 模组中就已经添加的条件类型，现已支持其他模组添加更多的技能。
-技能用法如下:
+技能用法如下：
 ```
 例子:
 ResourceLocation|Level
@@ -108,34 +108,35 @@ reskillable:building|15
 
 自从 Reskillable 发布以来我们就将技能名称改为资源位置。
 使用资源位置允许来自不同模组却有相同名称的技能。
-在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有技能的资源位置:
+在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有技能的资源位置
 
 
 
 
 ## 特性:
-Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait.
-Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability.
-The Trait Syntax is as follows:
+特性是 Reskillable 添加的条件类型，允许你使用特性锁定。
+和技能一样，我们用资源位置而不是名称指定特性，这样可以更好的扩展内容。
+特性用法如下：
 ```
-Example:
+例子:
 trait|ResourceLocation
+//ResourceLocation 资源位置（模组ID:特性名称）
 
-Working Example:
+实例:
 trait|reskillable:battle_spirit
 ```
 
-You can find the Traits's ResourceLocations under:
-[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)
+在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有特性的资源位置
 
 
-## Inverted Requirements:
-Inverted requirements are a 1.4.0+ CompatSkills feature only!
-Inverted requirements are unlocked as long as you do not have the required component.
-An Inverted Skill Requirement is unlocked as long as you do not have the specified level of the skill or higher.
-The Inverted-Syntaxes are as follows:
+
+##  反转条件:
+反转条件是仅在 CompatSills 1.4.0版本及以后的特性！
+只要不满足需要的条件就可以解锁。
+反转的技能条件会在当玩家小于指定的等级时解锁。
+反转条件的用法如下:
 ```
-Example:
+例子:
 !adv|
 !dim|
 !stage|
@@ -143,7 +144,7 @@ Example:
 !trait|
 
 
-Working Example:
+实例:
 !adv|minecraft:husbandry/plant_seed
 !dim|0
 !stage|test
