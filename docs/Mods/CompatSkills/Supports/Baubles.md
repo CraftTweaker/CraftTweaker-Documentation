@@ -1,5 +1,5 @@
-# Baubles
+# 饰品模组
 
-## Baubles Support
-Baubles-Support is part of the standard ItemStack-Requirement locks.
-This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!
+## 饰品模组支持
+饰品模组是标准物品锁定支持的一部分。
+这意味着任何放入饰品栏但不符合条件的物品会自动弹出饰品栏，同时也会发出一条错误信息！
