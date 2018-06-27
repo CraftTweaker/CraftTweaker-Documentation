@@ -7,13 +7,13 @@
 ```
 例子:
 adv|ResourceLocation
-//ResourceLocation 资源位置（模组名称:标签页名称/进度名称）
+//ResourceLocation （模组名称:标签页名称/进度名称）
 
 实例:
 adv|minecraft:husbandry/plant_seed
 ```
 
-它兼容所有的进度，包括由其他模组添加的进度，但需要指定正确的资源位置。
+它兼容所有的进度，包括由其他模组添加的进度，但需要指定正确的 Resource Location。
 
 
 
@@ -99,34 +99,34 @@ stack|minecraft:iron_sword:*|{ench:[{id: 17s}]}
 ```
 例子:
 ResourceLocation|Level
-//ResourceLocation 资源位置（模组ID：技能名称）
+//ResourceLocation （模组ID：技能名称）
 //Level 技能等级
 
 实例:
 reskillable:building|15
 ```
 
-自从 Reskillable 发布以来我们就将技能名称改为资源位置。
-使用资源位置允许来自不同模组却有相同名称的技能。
-在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有技能的资源位置
+自从 Reskillable 发布以来我们就将技能名称改为 Resource Location。
+使用 Resource Location允许来自不同模组却有相同名称的技能。
+在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有技能的 Resource Location
 
 
 
 
 ## 特性:
 特性是 Reskillable 添加的条件类型，允许你使用特性锁定。
-和技能一样，我们用资源位置而不是名称指定特性，这样可以更好的扩展内容。
+和技能一样，我们用 Resource Location而不是名称指定特性，这样可以更好的扩展内容。
 特性用法如下：
 ```
 例子:
 trait|ResourceLocation
-//ResourceLocation 资源位置（模组ID:特性名称）
+//ResourceLocation （模组ID:特性名称）
 
 实例:
 trait|reskillable:battle_spirit
 ```
 
-在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有特性的资源位置
+在技能和特性（[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)）页面可以找到所有特性的ResourceLocation
 
 
 
