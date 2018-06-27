@@ -226,7 +226,7 @@ pages:
       -  条件:
         - 条件: 'Mods/CompatSkills/Requirements/Requirements.md'
         - 条件类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
-        - 技能和属性: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+        - 技能和特性: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - 支持:
         - 饰品模组: 'Mods/CompatSkills/Supports/Baubles.md'
         - 血魔法:

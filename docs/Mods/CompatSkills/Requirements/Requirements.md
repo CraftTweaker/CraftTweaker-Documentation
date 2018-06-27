@@ -1,14 +1,14 @@
-# Requirements:
+# 条件（Requirements）
 
-Requirements is a concept introduced with Reskillable and is essentially Player-Bound properties to bind items behind.
+条件是由 Reskillable 引入的概念，它与玩家绑定且用于关联物品。
 
-For example by default, Reskillable has Requirement support for the following:
-- Advancements
-- Skills
-- Traits
+以默认设置为例，Reskillable 支持的条件包括以下几种：
+- Advancements（进度）
+- Skills（技能）
+- Traits（属性）
 
-This list can be further expanded upon by addons.
-In-fact CompatSkills adds support for GameStages as a valid Requirement.
+安装插件可以继续扩展这个列表。
+事实上 CompatSkills 已支持将游戏阶段作为一个条件。
 
-The requirement syntax varies from Property to Property on how it's implemented by the addon.
-Under [Requirement Types](/Mods/CompatSkills/Requirements/RequirementTypes.md) you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
+条件的语法会因插件的实现方法的变化而变化。
+（条件类型 [Requirement Types](/Mods/CompatSkills/Requirements/RequirementTypes.md) ）页面包含所有 Reskillable 和 CompatSkills 支持条件的语法。 
