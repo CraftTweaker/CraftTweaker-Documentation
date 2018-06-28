@@ -1,26 +1,33 @@
 # JEI
 
-CraftTweaker comes with support for JustEnoughItems (JEI).
-You can add or hide items or fluids in JEI or add a Descriptions page for them.
+CraftTweaker 自带 JustEnoughItems （JEI） 兼容。
+你既可以在 JEI 中添加或隐藏物品和流体，也可以它们添加一个描述页面。
 
-## Remove
-You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
+## 移除
+你既可以将物品从 JEI 页面中移除，也可以移除此物品和有关于此物品的所有工作台配方。
 
 ```
 //hide(IItemStack item);
+//隐藏物品
+//item 需要隐藏的物品
 mods.jei.JEI.hide(<minecraft:diamond>);
 
 //hide(ILiquidStack item);
+//隐藏流体
+//item 需要隐藏的流体
 mods.jei.JEI.hide(<liquid:water>);
 mods.jei.JEI.hide(<fluid:lava>);
 
 
 //removeAndHide(IIngredient output, @optional boolean NBT-Match)
+//隐藏且移除物品
+//output 需要隐藏的物品
+//NBT-Match 是否匹配 NBT 数据
 mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
 mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ```
 
-## Add Item
+## 添加物品
 You can also add an [IItemStack](/Vanilla/Items/IItemStack) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
 ```JAVA
 //addItem(item);
