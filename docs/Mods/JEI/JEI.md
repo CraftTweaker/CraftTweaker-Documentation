@@ -1,7 +1,7 @@
 # JEI
 
 CraftTweaker 自带 JustEnoughItems （JEI） 兼容。
-你既可以在 JEI 中添加或隐藏物品和流体，也可以它们添加一个描述页面。
+你既可以在 JEI 中添加或隐藏物品和流体，也可以为它们添加一个信息页面。
 
 ## 移除
 你既可以将物品从 JEI 页面中移除，也可以移除此物品和有关于此物品的所有工作台配方。
@@ -28,32 +28,41 @@ mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ```
 
 ## 添加物品
-You can also add an [IItemStack](/Vanilla/Items/IItemStack) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
+你还可以往 JEI 中物品（[IItemStack](/Vanilla/Items/IItemStack)），但仅限于添加 JEI 物品栏中未添加的物品或添加一个带有 NBT标签的物品
 ```JAVA
 //addItem(item);
+//item 物品
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
 
-## Add Description
-A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack), an [IItemStack](/Vanilla/Items/IItemStack)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry). 
+## 添加信息
+JEI 信息是一个在打开材料的配方或用途页面时额外显示的页面，它包含关于这个材料的信息。 
+你可以为物品堆（[IItemStack](/Vanilla/Items/IItemStack)、物品堆数组（[IItemStack](/Vanilla/Items/IItemStack)[]））、流体堆（[ILiquidStack](/Vanilla/Liquids/ILiquidStack)）或者矿物词典条目（[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)）添加 JEI 信息页面
 
-If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
-Each string parameter will have at least one line and wrap around the end of the window if too long.  
+如果字符串长到不能在一行（或一个页面显示），它会自动创建一行（一个页面）.
+每一条字符串参数都至少占有一行，如果太长则会自动换行。
 
 ```Java
 //addDescription(IItemStack item, string... desc);
+//item 物品
+//desc 信息
 mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 
 
 //addDescription(IItemStack[] item, string... desc);
+//item 物品（数组）
+//desc 信息
 mods.jei.JEI.addDescription([<minecraft:music_disc>, <minecraft:music_disc>],["Never","Gonna","Give","You","Up","Never","Gonna","Let","You","Down"]);
 
 //addDescription(IOreDictEntry dict, string... desc);
+//dict 矿物词典条目
+//desc 信息
 mods.jei.JEI.addDescription(<ore:ingotIron>, "You can use these to create things", "", "things like Armor","","","Yes...","That as well...");
 
 //addDescription(ILiquidStack stack, string... desc);
+//stack 流体堆
+//desc 信息
 mods.jei.JEI.addDescription(<liquid:lava>, ["LAVA"]);
 ```
 
-The `desc` parameter is a varArg, which means you can either give one string[] containing all description strings or many single strings, whatever you prefer. Just don't mix them!
+ `desc` 参数是一个可变参数，也就是说你既可以添加一个包含所有信息的字符串，也可以添加多个字符串。只要不要把它们弄混，你喜欢用哪种就用哪种！
