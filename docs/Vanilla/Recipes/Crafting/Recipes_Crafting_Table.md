@@ -8,7 +8,7 @@
 例：你不能随意放置7个铁锭以合成铁护腿。由于摆放位置对被合成的物品有影响，因此这是一个有序合成。
 
 ### Mirrored Recipe
-Mirrored Recipes是一种有序合成。唯一的区别是合成表可以沿水平轴或垂直轴翻折。
+Mirrored Recipes 是一种有序合成。唯一的区别是合成表可以沿水平轴或垂直轴翻折。
 
 ### 无序合成
 无序合成是指只有放入合成槽的物品影响合成的物品的合成。摆放的位置并不重要。
@@ -25,7 +25,7 @@ recipes.remove(output, NBTMatch);
 ```
 
 移除以此物品为`output（输出）`的合成。
-如果`NBTMatch（匹配NBT数据）`设置为true，则仅移除输出为与传入的NBT数据相同的物品的配方
+如果`NBTMatch（匹配NBT数据）`设置为 true ，则仅移除输出为与传入的NBT数据相同的物品的配方
 
 `Output（输出）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)。 
 `NBTMatch（匹配NBT数据）` 类型为布尔值。它是可选参数（没有指明则默认为False)。
@@ -57,7 +57,7 @@ recipes.removeShapeless(output, inputs, wildcard);
 
 `output（输出）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)  
 `inputs（输入）`类型为[IIngredient](/Vanilla/Variable_Types/IIngredient)[]  
-`wildcard（通配符）`类型为布尔值且为可选参数（为指明则为false）
+`wildcard（通配符）`类型为布尔值且为可选参数（未指明则为false）
 
 此外`inputs`是可选参数。如果省略此参数，它除了只会移除无序合成的配方以外和`recipe.remove`功能相同。
 
@@ -140,10 +140,6 @@ recipes.addShapeless(output,inputs,function,action)
 recipes.addShapeless(name,output,inputs,function,action)
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
-
 此方法将添加一个使用`input`合成`output`的无序合成配方
 如果`function`作为第三个被添加的参数，你还可以使用函数以判定产物。
 如果`action`函数作为第四个被添加的参数，你还可以决定当物品被合成时触发的事件。
@@ -164,7 +160,7 @@ For the shapeless variant you can also set if the recipe is `mirrored`, if omitt
 ## 其他功能
 
 ### 获取所有注册的配方
-你可以使用以下方法获取一个包含所有注册的配方[`<ICraftingRecipe>列表`](/Vanilla/Recipes/Crafting/ICraftingRecipe)
+你可以使用以下方法获取一个包含所有注册的配方的[`<ICraftingRecipe>列表`](/Vanilla/Recipes/Crafting/ICraftingRecipe)
 ```
 recipes.all;
 ```
@@ -176,8 +172,8 @@ recipes.all;
 recipes.getRecipesFor(<minecraft:iron_ingot>);
 ```
 
-### Replace all item ingredients with another one
-You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient) in a recipe with another one, for example all sticks with stones.
+### 用另一种物品替换所有材料
+使用以下You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient) in a recipe with another one, for example all sticks with stones.
 ```
 //recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith);
 recipes.replaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
