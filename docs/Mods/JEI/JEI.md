@@ -31,6 +31,7 @@ mods.jei.JEI.removeAndHide(<ore:planks>, false);
 你还可以往 JEI 中物品（[IItemStack](/Vanilla/Items/IItemStack)），但仅限于添加 JEI 物品栏中未添加的物品或添加一个带有 NBT标签的物品
 ```JAVA
 //addItem(item);
+//item 物品
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
 
