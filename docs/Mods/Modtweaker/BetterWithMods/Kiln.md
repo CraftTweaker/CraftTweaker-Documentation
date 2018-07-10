@@ -9,12 +9,19 @@ mods.betterwithmods.Kiln.add(IIngredient input, IItemStack[] output);
 mods.betterwithmods.Kiln.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal
+## Removal by input
 
-* Remove a Kiln recipe based on the output
+* Remove a recipe based on the input ingredient
+```mods.betterwithmods.Kiln.remove(IIngredient input);```
+
+## Removal by output
+
+* Remove a recipe based on the output
 ```mods.betterwithmods.Kiln.remove(IItemStack[] outputs);```
 
-* Remove all Kiln recipes
+## Remove all
+
+* Remove all recipes
 ```mods.betterwithmods.Kiln.removeAll();```
 
 

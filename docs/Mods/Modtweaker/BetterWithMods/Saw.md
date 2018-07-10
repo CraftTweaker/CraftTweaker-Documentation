@@ -11,14 +11,21 @@ mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
 ```
 
-## Removal
 
-* Remove a Saw recipe based on the output
+## Removal by input
+
+* Remove a recipe based on the input ingredient
+```mods.betterwithmods.Saw.remove(IIngredient input);```
+
+## Removal by output
+
+* Remove a recipe based on the output
 ```mods.betterwithmods.Saw.remove(IItemStack[] outputs);```
 
-* Remove all Saw recipes
-```mods.betterwithmods.Saw.removeAll();```
+## Remove all
 
+* Remove all recipes
+```mods.betterwithmods.Saw.removeAll();```
 
 ## Builder 
 
