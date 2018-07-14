@@ -93,24 +93,36 @@ Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStage
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
 var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
-Check if an entry is staged or not.
-```java
-// mods.zenstages.ZenStager.isStaged(IIngredient ingredient);
-// mods.zenstages.ZenStager.isStaged(string stringEntry);
-// mods.zenstages.ZenStager.isStaged(int dimensionId);
+### Check if something is Staged
 
-ZenStager.isStaged(<minecraft:stick>);
-// This is order of where the code checks it's storage.
-ZenStager.isStaged("my.awesome.container"); // Container
-ZenStager.isStaged("minecraft:skeleton"); // Mob
-ZenStager.isStaged("bronze"); // TiC Material
-ZenStager.isStaged("tconstruct:crossbow"); // TiC Tool
-ZenStager.isStaged("minecraft:boat"); // Recipe Name
-ZenStager.isStaged(-1);
+Supported Types:
+
+- container
+- dimension
+- ingredient
+- mob
+- mod
+- mulitblock
+- ore
+- package
+- recipename
+- tinker
+
+```java
+// mods.zenstages.ZenStager.isStaged(string type, string value);
+// mods.zenstages.ZenStager.isStaged(string type, int value);
+// mods.zenstages.ZenStager.isStaged(string type, IIngredient value);
+ZenStager.isStaged("ingredient", <minecraft:stick>);
+ZenStager.isStaged("container", "my.awesome.container");
+ZenStager.isStaged("mob", "minecraft:skeleton");
+ZenStager.isStaged("tinker", "bronze");
+ZenStager.isStaged("tinker", "tconstruct:crossbow");
+ZenStager.isStaged("recipename", "minecraft:boat");
+ZenStager.isStaged("dimension", -1);
 ```
 
 ### Debugging
-Debug method to check for staging entries are duplicated on more than one [Stage](/Mods/GameStages/ZenStages/Stage/). This will then log to the crafttweaker.log about duplicated entries. Ideal to use before pushing a new relase of a modpack.
+Calling this method will make the mod check over the [Stages](/Mods/GameStages/ZenStages/Stage/) you have created and what's staged. To see if you have mistakenly _staged_ something more than once. If any are found they are logged to the `crafttweaker.log` file. Telling you what is duplicated staged and what stages it is in. This is an ideal method/tool to use before releasing updates to a modpack or just general development of a modpack.
 ```java
 // mods.zenstages.ZenStager.checkConflicts();
 ZenStager.checkConflicts();

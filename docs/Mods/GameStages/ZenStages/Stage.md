@@ -9,14 +9,22 @@ Stage is the class you are given when you create a new "Stage" the class contain
 ### ZenGetters and parameterless ZenMethods
 | ZenGetter              | What does it do             | Return Type                                                                                                                        |
 |------------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| name                   | Returns the stage name      | string                                                                                                                             |
-| getStagedIngredients() | Gets all staged Ingredients | Map<[IIngredient](/Vanilla/Variable_Types/IIngredient/), [StagedIngredient](/Mods/GameStages/ZenStages/Wrappers/StagedIngredient)> |
-| getStagedOres()        | Gets all staged Ores        | Map<[IIngredient](/Vanilla/Variable_Types/IIngredient/), [StagedOre](/Mods/GameStages/ZenStages/Wrappers/StagedOre)>               |
-| getStagedTypes()       | Gets all staged Types       | List<[StagedType](/Mods/GameStages/ZenStages/Wrappers/StagedType)>                                                                 |
-| getStagedLiquids()     | Gets all staged Liquids     | List<[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)>                                                                               |
+| stage                  | Returns the stage name      | string                                                                                                                             |
 
 ### Staging Methods
 **Note: All these methods will only work with the Stage class given when you create a Stage using [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) so save these to a static so you can reference from other classes if need be.**
+
+Check to see if a [Custom Type]() has been Staged to this Stage.
+```java
+// isCustomStaged(String slug, String value);
+// isCustomStaged(String slug, String[] values);
+// isCustomStaged(String slug, int value);
+// isCustomStaged(String slug, int[] values);
+// isCustomStaged(String slug, IIngredient value);
+// isCustomStaged(String slug, IIngredient[] values);
+TestStage.isCustomStaged("blockBreak", <minecraft:stone>);
+TestStage.isCustomStaged("container", "com.test");
+```
 
 Add an Ingredient to a stage. Defaulted to true the optional parameter to stage the recipe for said Ingredient.
 ```java
@@ -27,6 +35,21 @@ TestStage.addIngredient(<ore:wool>);
 TestStage.addIngredients([<minecraft:boat>, <minecraft:string>], false);
 ```
 
+Add an Ingredient Override. This is used when your Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
+```java
+// addIngredientOverride(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
+TestStage.addIngredientOverride(<myawesomemod:generator>, true);
+```
+
+Add a ModId to a stage. What this does it stage **all** items from the ModId provided to this stage. You can also provided an array of IIngredients which the items listed won't be staged. (Basically ignored)
+```java
+// addModId(String modId);
+// addModId(String[] modIds);
+// addModId(String modId, IIngredient[] ignoreStaging);
+TestStage.addModId("bloodmagic");
+TestStage.addModId("bloodmagic", [<bloodmagic:someitem>]);
+```
+
 Add an ILiquidStack to a stage.
 ```java
 // addLiquid(ILiquidStack liquidStack);
@@ -35,25 +58,25 @@ TestStage.addLiquid(<liquid:water>);
 TestStage.addLiquids([<minecraft:water>, <minecraft:lava>]);
 ```
 
-Add an dimension to a stage. Requires [DimStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // addDimension(int dimId);
 TestStage.addDimension(-1);
 ```
 
-Add an recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // addRecipeName(string recipeName);
 TestStage.addRecipeName("minecraft:boat");
 ```
 
-Add an recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Add a recipe name to a stage. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // addRecipeName(string recipeName);
 TestStage.addRecipeRegex("crafttweaker:test_.*");
 ```
 
-Add an mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
+Add a mob to a stage. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 ```java
 // addMob(string mobName);
 // addMobs(string[] mobNames);
@@ -65,7 +88,7 @@ TestStage.addMob("minecraft:skeleton", 0);
 TestStage.addMobs(["minecraft:skeleton", "minecraft:skeleton_horse"], 9);
 ```
 
-Add an TiC material name to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
+Add a TiC material name to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 ```java
 // addTiCMaterial(string materialName);
 // addTiCMaterials(string materialNames);
@@ -73,13 +96,13 @@ TestStage.addTiCMaterial("iron");
 TestStage.addTiCMaterials(["bronze", "iron"]);
 ```
 
-Add an TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
+Add a TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 ```java
 // addTiCModifier(string modifierName);
 TestStage.addTiCModifier("mending_moss");
 ```
 
-Add an IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages) to be installed.
+Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages) to be installed.
 ```java
 // addIEMultiBlock(string multiblock);
 // addIEMultiBlocks(string multiblocks);
