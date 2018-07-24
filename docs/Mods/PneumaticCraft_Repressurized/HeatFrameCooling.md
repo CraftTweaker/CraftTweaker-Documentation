@@ -1,35 +1,38 @@
-# Heat Frame Cooling
+# 导热框架冷却（Heat Frame Cooling）
 
-Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
+导热框架冷却能被用于将放入装有导热框架且温度降至 0°C 以下的箱子（通常会使用涡流管）或者其他容器中的物品转换为另一种物品。
 
-## Calling
+## 导入
 
-You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
+使用 `mods.pneumaticcraft.heatframecooling` 以导入导入框架冷却相关包
 
-## Removing
+## 移除
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `output`:
+这个函数会移除第一个 `output (输出)` 为指定[材料（IIngredient）](/Vanilla/Variable_Types/IIngredient)的配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
-// Example
+//output 输出
+//实例
 mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
 ```
 
-This function removes *all* Heat Frame Cooling recipes:
+这个函数会移除*所有的*导入框架冷却配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
-These functions are used to add new recipes for the Heat Frame Cooling system:
+这些函数用于为导入框架冷却系统添加配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);
 mods.pneumaticcraft.heatframecooling.addRecipe(IOreDictEntry input, IItemStack output);
+//input 输入
+//output 输出
 
-// Example
+//实例
 mods.pneumaticcraft.heatframecooling.addRecipe(<minecraft:slime_ball>, <minecraft:snow_ball>);
 ```
