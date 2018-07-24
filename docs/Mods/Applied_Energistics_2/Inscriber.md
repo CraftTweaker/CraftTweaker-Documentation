@@ -9,7 +9,7 @@ import mods.appliedenergistics2.Inscriber;
 ### Adding
 When the `inscribe` boolean is true, the top and bottom inputs are not consumed. 
 ```
-Inscriber.addRecipe(ItemStack output, ItemStack input, boolean inscribe, @Optional ItemStack topInput, @Optional ItemStack bottomInput);
+Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
 
 //turns eggs into Wither Skele spawn eggs, does not consume wither skull
 Inscriber.addRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
@@ -21,7 +21,7 @@ Inscriber.addRecipe(<minecraft:cookie>, <minecraft:minecraft:bread>, false, <min
 ### Removing
 
 ```
-Inscriber.removeRecipe(ItemStack output);
+Inscriber.removeRecipe(IItemStack output);
 
 //removes printed silicon recipe 
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 

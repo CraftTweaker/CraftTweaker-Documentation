@@ -9,7 +9,7 @@ import mods.appliedenergistics2.Grinder;
 ### Adding
 
 ```
-Grinder.addRecipe(ItemStack output, ItemStack input, int turns, @Optional ItemStack secondary1Output, @Optional float secondary1Chance, @Optional ItemStack secondary2Output, @Optional float secondary2Chance);
+Grinder.addRecipe(IItemStack output, IItemStack input, int turns, @Optional IItemStack secondary1Output, @Optional float secondary1Chance, @Optional IItemStack secondary2Output, @Optional float secondary2Chance);
 
 Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling:5>, 0.3);
 ```
@@ -17,7 +17,7 @@ Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling
 ### Removing
 
 ```
-Grinder.removeRecipe(ItemStack input);
+Grinder.removeRecipe(IItemStack input);
 
 Grinder.removeRecipe(<minecraft:quartz_ore>);
 ```
