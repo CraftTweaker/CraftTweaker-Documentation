@@ -6,4 +6,4 @@
 
 气动工艺：再度加压本身兼容 crafttweaker。 也就是说由于所增加的方法而出现的问题应在 [气动工艺：再度加压的 issue tracker](https://github.com/TeamPneumatic/pnc-repressurized/issues) 上提交.
 
-注意以下的所有内容*仅*适用于 PneumaticCraft: Repressurized ；对 MC1.8.9 及以前的 PneumaticCraft 模组均不适用。
+注意以下的所有内容*仅*适用于气动工艺：再度加压模组；对 MC1.8.9 及以前版本的气动工艺模组均不适用。
