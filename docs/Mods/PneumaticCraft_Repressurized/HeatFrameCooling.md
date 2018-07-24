@@ -34,5 +34,5 @@ mods.pneumaticcraft.heatframecooling.addRecipe(IOreDictEntry input, IItemStack o
 //output 输出
 
 //实例
-mods.pneumaticcraft.heatframecooling.addRecipe(<minecraft:slime_ball>, <minecraft:snow_ball>);
+mods.pneumaticcraft.heatframecooling.addRecipe(<minecraft:slime_ball>, <minecraft:snowball>);
 ```
