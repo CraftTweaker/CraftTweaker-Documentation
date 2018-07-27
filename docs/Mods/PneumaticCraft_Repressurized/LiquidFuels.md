@@ -1,6 +1,6 @@
-# Liquid Fuels
+# 液体燃料
 
-Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light.
+液体燃料在气动工艺中的用途包括：在（高级）液体压缩机中产生气压和（可选的）在煤油灯中用作照明。
 By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
 
 ## Calling
