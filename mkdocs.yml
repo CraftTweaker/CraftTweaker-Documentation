@@ -392,6 +392,7 @@ pages:
       - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
       - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
       - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
+      - Tree Fluid Extractor: 'Mods/Industrial_Foregoing/TreeFluidExtractor.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:

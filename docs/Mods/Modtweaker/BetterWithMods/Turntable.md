@@ -16,16 +16,26 @@ mods.betterwithmods.Turntable.add(<minecraft:grass>, <minecraft:dirt>, [<minecra
 mods.betterwithmods.Turntable.add(<minecraft:gravel>, [<minecraft:flint>]);
 ```
 
-## Removal
+## Removal by input
 
-* Remove a Turntable recipe based on the output
+* Remove a recipe based on the input ingredient
+```mods.betterwithmods.Turntable.remove(IIngredient input);```
+
+## Removal by output
+
+* Remove a recipe based on the output
 ```mods.betterwithmods.Turntable.remove(IItemStack[] outputs);```
 
-* Remove all Turntable recipes  
+## Remove all
+
+* Remove all recipes
 ```mods.betterwithmods.Turntable.removeAll();```
 
-* Remove a Turntable recipe by the productState  
+## Remove by product
+
+* Remove a recipe by the productState  
 ```mods.betterwithmods.Turntable.removeRecipe(IItemStack productState);```
+
 ## Builder 
 
 The Turntable  has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
