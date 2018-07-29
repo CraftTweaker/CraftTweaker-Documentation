@@ -9,9 +9,9 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 Usage:
 
-`/crafttweaker ticmat`
+`/crafttweaker thaumcraftDump`
 
-`/ct ticmat`
+`/ct thaumcraftDump`
 
 Description:
 Dumps all the Thaumcraft information to the crafttweaker.log file.
