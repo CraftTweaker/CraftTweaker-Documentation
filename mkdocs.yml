@@ -497,6 +497,22 @@ pages:
         - Handlers:
           - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
           - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+      - Thaumcraft:
+        - Aspects: 
+          - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
+          - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
+          - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
+          - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
+        - Brackets:
+          - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
+        - Handlers:
+          - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
+          - Crucible: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
+          - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
+          - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
+          - Smelting Bonus: 'Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md'
+          - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
+        - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
       - Thermal Expansion:
         - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
         - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
@@ -615,6 +631,10 @@ pages:
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
+site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+
+repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
+repo_name: 'Visit this wiki on GitHub'
 
 markdown_extensions:
   - admonition
@@ -625,7 +645,7 @@ theme_dir: 'mkdocs_windmill'
 
 extra:
   logo: 'assets/logo.png'
-  #version: 0.0
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
+  version: 'CrT v4.1.9'

@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues, 
 Normally, you can just get the worldProvider from an [IWorld](IWorld) object or some functions, though if yo need to create one yourself, here's how you do it:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
 ```
-crafttweaker.world.IWorldProvider.create(int id);
+crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
 
