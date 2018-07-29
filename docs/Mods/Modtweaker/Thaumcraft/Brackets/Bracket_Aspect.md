@@ -1,6 +1,6 @@
 # Aspect Bracket handler
 
-The aspect Bracket Handler allows you to retrieve a Thaumcraft [aspect] in case you need one.  
+The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack) in case you need one.  
 
 Aspects are referenced in the Material Bracket handler this way:
 

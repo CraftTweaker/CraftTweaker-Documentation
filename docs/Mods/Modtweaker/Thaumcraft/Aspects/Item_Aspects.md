@@ -5,6 +5,7 @@ That means that you can use the methods below on any IItemStack object:
 
 ## Set aspects
 
+You can use this to override what aspects an item would normally have.  
 Requires a [CTAspectStack](CTAspect)[] or many [CTAspectStack](CTAspect) objects.
 
 ```
@@ -12,10 +13,11 @@ Requires a [CTAspectStack](CTAspect)[] or many [CTAspectStack](CTAspect) objects
 ```
 
 
-## Get aspects
+## Remove aspects
 
-Returns a [CTAspectStack](CTAspect)[]
+You can use this to prevent certain aspects from being added to an item.  
+Requires a [CTAspectStack](CTAspect)[] or many [CTAspectStack](CTAspect) objects.
 
 ```
-val aspects = <minecraft:stone>.getAspects;
+<minecraft:iron_ore>.removeAspects(<aspect:terra>);
 ```

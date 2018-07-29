@@ -501,6 +501,7 @@ pages:
         - Aspects: 
           - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
           - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
+          - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
           - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
         - Brackets:
           - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
