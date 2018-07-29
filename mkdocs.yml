@@ -629,6 +629,10 @@ pages:
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
+site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+
+repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
+repo_name: 'Visit this wiki on GitHub'
 
 markdown_extensions:
   - admonition
@@ -639,7 +643,7 @@ theme_dir: 'mkdocs_windmill'
 
 extra:
   logo: 'assets/logo.png'
-  #version: 0.0
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
+  version: 'CrT 4.1.9 | MoT 4.0.13'
