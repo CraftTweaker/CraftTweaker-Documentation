@@ -79,6 +79,7 @@ pages:
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
       - IEntityDropFunction: 'Vanilla/Entities/IEntityDropFunction.md'
+      - IEntityEquipmentSlot: 'Vanilla/Entities/IEntityEquipmentSlot.md'
       - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
       - IEntityLiving: 'Vanilla/Entities/IEntityLiving.md'
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
