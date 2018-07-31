@@ -4,7 +4,7 @@
 
 ## 导入
 
-使用 `mods.pneumaticcraft.heatframecooling` 以导入导热框架冷却相关包
+使用 `mods.pneumaticcraft.heatframecooling` 以导入导热框架冷却相关包。
 
 ## 移除
 
