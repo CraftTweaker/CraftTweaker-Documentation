@@ -1,23 +1,25 @@
-#Bioreactor
+# 生物质炉（Bioreactor）
 
-### Importing
+### 导入
 
 ```
 import mods.industrialforegoing.BioReactor;
 ```
 
-### Adding
+### 添加
 
 ```
 BioReactor.add(IItemStack input);
+//input 输入
 
 BioReactor.add(<minecraft:diamond>);
 ```
 
-### Removing
+### 移除
 
 ```
 BioReactor.remove(IItemStack input);
+//input 输入
 
 BioReactor.remove(<minecraft:diamond>);
 ```
