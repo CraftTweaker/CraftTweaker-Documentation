@@ -1,40 +1,45 @@
-# Refinery
+# 精炼厂（Refinery）
 
-The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids.  The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
+精炼厂是一个多方块结构，它使用热量将输入的流体转换为两种或多种输出流体。这个多方块结构由二至四个（包含）精炼厂方块组成，最多的输出流体种类会受到精炼厂方块数量的限制。
 
-Heat value is not part of the recipe; the refinery will start to process fluids at any temperature >= 100°C, but will work faster as the temperature rises.
+热量和配方本身无关；只要温度 >=100°C ，精炼厂会开始处理流体，但更高的温度会加速这一过程。
 
-Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different.  In this case, the recipe producing the most possible outputs (given the number of refinery blocks) will be used.
+注意有相同输入的配方是被允许的，只要输出流体种类的数量不同即可。在这种情况下，精炼厂将会（在精炼厂方块数量的限制下）使用输出流体种类最多的配方。
 
-## Calling
+## 导入
 
-You can call the Refinery package using `mods.pneumaticcraft.refinery`.
+使用 `mods.pneumaticcraft.refinery` 以导入精炼厂相关包。
 
-## Removing
+## 移除
 
-This function removes the first recipe it finds matching all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `outputs`:
+以下函数会移除第一个所有的 `outputs (输出)` 均为指定材料（IIngredient）的配方：
 
 ```java
 mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
+//outputs 所有的输出（数组）
 ```
 
-This function removes the first recipe it finds matching the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `input`:
+以下函数会移除第一个 `input（输入）` 为指定材料（IIngredient）的配方：
 
 ```java
 mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
+//input 输入
 ```
 
-## Adding
+## 添加
 
-This function adds a new recipe to the Refinery:
+以下函数用于添加精炼厂配方：
 
 ```java
 mods.pneumaticcraft.refinery.addRecipe(ILiquidStack input, ILiquidStack[] outputs);
+//input 输入
+//outputs 所有的输出（数组）
 
-// Example
-// Both recipes use water as input
-// First recipe will be used in a 2-block refinery
-// Second recipe will be used in a 3- or 4-block refinery
+
+// 实例
+// 两个配方的输入都是水
+// 第一个配方会被用于一个有两个精炼厂方块的精炼厂
+// 第二个配方会被用于一个有三个或四个精炼厂方块的精炼厂
 mods.pneumaticcraft.refinery.addRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5]);
 mods.pneumaticcraft.refinery.addRecipe(<liquid:water> * 10, [<liquid:lava> * 2, <liquid:oil> * 5, <liquid:lpg> * 2]);
 ```
