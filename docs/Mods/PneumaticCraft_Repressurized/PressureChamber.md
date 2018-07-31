@@ -1,35 +1,40 @@
-# Pressure Chamber
+# 压力室(Pressure Chamber)
 
-The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items.  Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
+压力室是一个多方块结构，它使用压缩空气将一或多个个物品转换为另一个或多个物品。压力室的配方和当前的压力有关，即需要达到一定 bar 的压力才能够发生转换。
 
-## Calling
+## 导入
 
-You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
+使用 `mods.pneumaticcraft.pressurechamber` 以导入压力室相关包。
 
-## Removing
+## 移除
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `output`:
+以下函数会移除第一个 `output（输出）` 为指定[材料(IIngredient)](/Vanilla/Variable_Types/IIngredient)的配方：
 
 ```
 mods.pneumaticcraft.pressurechamber.removeRecipe(IIngredient output);
-// Example
+//output 输出
+
+// 实例
 mods.pneumaticcraft.pressurechamber.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
 ```
 
-This function removes *all* Pressure Chamber recipes:
+以下函数会移除*所有*压力室配方：
 
 ```
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
-This function is used to add new recipes to the Pressure Chamber:
+以下函数用于添加压力室配方：
 
 ```
 mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] input, double pressure, IItemStack[] output);
+//input 输入（数组）
+//pressure 最低气压
+//output 输出（数组）
 
-// Example
+// 实例
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```
 
