@@ -1,23 +1,26 @@
-# Sludge Refiner
+# 污泥精炼机（Sludge Refiner）
 
-### Importing
+### 导入
 
 ```
 import mods.industrialforegoing.SludgeRefiner;
 ```
 
-### Adding
+### 添加
 
 ```
 SludgeRefiner.add(IItemStack output, int ItemWeight);
+//output 输出
+//ItemWeight 物品权重
 
 SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
 ```
 
-### Removing
+### 移除
 
 ```
 SludgeRefiner.remove(IItemStack output);
+//output 输出
 
 SludgeRefiner.remove(<minecraft:wheat_seeds>);
 ```

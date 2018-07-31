@@ -1,19 +1,19 @@
-# Industrial Foregoing
+# 工业先锋（Industrial Foregoing）
 
-Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner Crafttweaker support.
+工业先锋的生物质炉、镭射钻和污泥精炼机均支持 Crafttweaker。
 
-### Item Weight
+### 物品权重
 
-The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
+ `物品权重（ItemWeight）` 是一个表示物品被选中的概率的数字。例如：
 
-| Item  | Weight | Chance % |
-|-------|--------|----------|
-| Stone | 99     | 99%      |
-| Dirt  | 1      | 1%       |
+| 物品 | 权重 | 概率 % |
+| ---- | ---- | ------ |
+| 石头 | 99   | 99%    |
+| 泥土 | 1    | 1%     |
 
-| Item  | Weight | Chance % |
-|-------|--------|----------|
-| Stone | 2      | 66%      |
-| Dirt  | 1      | 33%      |
+| 物品 | 权重 | 概率 % |
+| ---- | ---- | ------ |
+| 石头 | 2    | 66%    |
+| 泥土 | 1    | 33%    |
 
-ItemChance% = (ItemWeight/TotalWeight)*100
+物品获得概率% = (物品权重/总权重)*100%
