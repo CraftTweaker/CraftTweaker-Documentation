@@ -235,7 +235,7 @@ pages:
         - 星辉转化: 'Mods/Astral_Sorcery/Transmutation.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      -  需求:
+      - 需求:
         - 需求: 'Mods/CompatSkills/Requirements/Requirements.md'
         - 需求类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - 技能和特性: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
