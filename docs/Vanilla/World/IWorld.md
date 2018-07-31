@@ -13,7 +13,7 @@ IBlockState 扩展了 [IBlockAccess](IBlockAccess)。这意味着在 [IBlockAcce
 通常情况下，你可以从实体或其他功能来获得这个函数。不过如果你想自己重新创建一个的话，请遵循以下步骤：
 请注意，此方法只应在函数内调用，这些函数是在minecraft中运行的，而不是在加载循环中运行。
 ```
-crafttweaker.world.IWorld.create(int id);
+crafttweaker.world.IWorld.getFromID(int id);
 ```
 
 ## 没有参数和ZenGetters的ZenMethods

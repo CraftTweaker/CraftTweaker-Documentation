@@ -10,7 +10,7 @@ IWorldProvider用于从 [IWorld](IWorld) 对象中获取更多信息。
 通常情况下，你可以从 [IWorld](IWorld) 或其他函数来获得世界供应器。不过如果你想自己重新创建一个的话，请遵循以下步骤：  
 请注意，此方法只应在函数内调用，这些函数是在minecraft中运行的，而不是在加载循环中运行。
 ```
-crafttweaker.world.IWorldProvider.create(int id);
+crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
 

@@ -1,8 +1,13 @@
 # 站点的基本信息
 site_name: CraftTweaker 简体中文文档
+site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 repo_url: https://github.com/CFPAOrg/CraftTweaker-Documentation
+repo_name: '在 GitHub 上查看此 wiki'
 copyright: CraftTweaker 简体中文文档，翻译自原作者文档。协议：MIT
 theme: readthedocs
+extra:
+  logo: 'assets/logo.png'
+  version: 'CrT v4.1.9'
 
 # 使用的几个额外组件
 markdown_extensions:
@@ -207,7 +212,14 @@ pages:
   - 模组支持:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - Applied Energistics 2:
+      - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
+      - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
+      - Grindstone: 'Mods/Applied_Energistics_2/Grindstone.md'
+      - Inscriber: 'Mods/Applied_Energistics_2/Inscriber.md'
+      - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
+      - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
     - Artisan Worktables:
       - 合成构建器:
         - 合成构建器: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
@@ -223,7 +235,7 @@ pages:
         - 星辉转化: 'Mods/Astral_Sorcery/Transmutation.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      -  需求:
+      - 需求:
         - 需求: 'Mods/CompatSkills/Requirements/Requirements.md'
         - 需求类型: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
         - 技能和特性: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
@@ -238,7 +250,7 @@ pages:
           - 模组锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
           - NBT数据锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
         - 游戏阶段:
-          -游戏阶段: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - 游戏阶段: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
           - 游戏阶段锁定: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - 沉浸工程: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
@@ -398,11 +410,12 @@ pages:
         - 油藏: 'Mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
     - Industrial Foregoing:
       - Industrial Foregoing: 'Mods/Industrial_Foregoing/IndustrialForegoing.md'
-      - 生物质炉: 'Mods/Industrial_Foregoing/BioReactor.md'
-      - 流体矿物词典: 'Mods/Industrial_Foregoing/FluidDictionary.md'
-      - 镭射钻: 'Mods/Industrial_Foregoing/LaserDrill.md'
-      - 污泥精炼机: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
-      - 蛋白质反应器: 'Mods/Industrial_Foregoing/ProteinReactor.md'
+      - BioReactor: 'Mods/Industrial_Foregoing/BioReactor.md'
+      - Fluid Dictionary: 'Mods/Industrial_Foregoing/FluidDictionary.md'
+      - Laser Drill: 'Mods/Industrial_Foregoing/LaserDrill.md'
+      - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
+      - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
+      - Tree Fluid Extractor: 'Mods/Industrial_Foregoing/TreeFluidExtractor.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -504,26 +517,42 @@ pages:
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
-        - 处理器:
-          - 黑名单: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
-          - 重载: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
-      - 热力膨胀:
-        - 药水酿造机: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
-        - 附魔器: 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
-        - 离心机: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
-        - 压缩机: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
-        - 能量灌注机: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
-        - 流体转置机: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
-        - 流体精炼机: 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
-        - 感应炉: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
-        - 熔岩炉: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
-        - 红石炉: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
-        - 有机灌注机: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
-        - 磨粉机: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
-        - 锯木机: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
-    - 模块化机械:
-      - 模块化机械: 'Mods/ModularMachinery/ModularMachinery.md'
-      - 合成:
+        - Handlers:
+          - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
+          - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+      - Thaumcraft:
+        - Aspects:
+          - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
+          - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
+          - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
+          - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
+        - Brackets:
+          - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
+        - Handlers:
+          - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
+          - Crucible: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
+          - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
+          - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
+          - Smelting Bonus: 'Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md'
+          - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
+        - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
+      - Thermal Expansion:
+        - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
+        - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
+        - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
+        - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
+        - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
+        - Fractionating Still (Refinery): 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
+        - Induction Smelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
+        - Magma Crucible: 'Mods/Modtweaker/ThermalExpansion/Crucible.md'
+        - Redstone Furnace: 'Mods/Modtweaker/ThermalExpansion/Redstone_Furnace.md'
+        - Phytogenic Insolator: 'Mods/Modtweaker/ThermalExpansion/Insolator.md'
+        - Pulverizer: 'Mods/Modtweaker/ThermalExpansion/Pulverizer.md'
+        - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
+    - Modular Machinery:
+      - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
+      - Recipes:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - PackMode:

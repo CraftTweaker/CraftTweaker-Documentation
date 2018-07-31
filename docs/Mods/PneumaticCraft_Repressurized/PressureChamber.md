@@ -8,14 +8,14 @@
 
 ## 移除
 
-以下函数会移除第一个 `output（输出）` 为指定[材料(IIngredient)](/Vanilla/Variable_Types/IIngredient)的配方：
+以下函数会移除第一个 `outputs（输出）`为指定[材料(IIngredient)](/Vanilla/Variable_Types/IIngredient)数组的配方：
 
 ```
-mods.pneumaticcraft.pressurechamber.removeRecipe(IIngredient output);
-//output 输出
+mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
+//outputs 输出（数组）
 
 // 实例
-mods.pneumaticcraft.pressurechamber.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
+mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
 以下函数会移除*所有*压力室配方：
@@ -29,10 +29,10 @@ mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 以下函数用于添加压力室配方：
 
 ```
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] input, double pressure, IItemStack[] output);
-//input 输入（数组）
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
+//inputs 输入（数组）
 //pressure 最低气压
-//output 输出（数组）
+//outputs 输出（数组）
 
 // 实例
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
