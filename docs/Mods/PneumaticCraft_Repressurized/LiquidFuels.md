@@ -1,36 +1,38 @@
-# Liquid Fuels
+# 液体燃料 (Liquid Fuel)
 
-Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light.
-By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
+液体燃料在气动工艺中的用途包括：在（高级）液体压缩机中产生气压和（可选的）在煤油灯中用作照明。
+默认情况下所有在精炼厂生产的液体和任意温度高于 305K 的流体都被认为是液体燃料。
 
-## Calling
+## 导入
 
-You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
+使用 `mods.pneumaticcraft.liquidfuel` 以导入液体燃料相关包。
 
-## Removing
+## 移除
 
-This function removes the [ILiquidStack](/Vanilla/Variable_Types/ILiquidStack) `fluid` its fuel value:
+以下函数会使 `fluid`（数据类型为[流体堆（ILiquidStack）](/Vanilla/Variable_Types/ILiquidStack)）无法作为液体燃料：
 
 ```
 mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-// Example
+//fluid 流体
+
+// 实例
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-This function removes *all* registered fuels:
+以下函数会移除*所有*注册的燃料：
 
 ```
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## 添加
 
-The following functions can be used to add fluids to the fuel registry:
+以下函数可以使流体注册为液体燃料：
 
 ```java
-// Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
+// 将指定的流体注册为液体燃料。 mlPerBucket 指每一桶燃料可以产生压缩空气的体积。例如在空气压缩机中，一个煤可以产生 16000mL 的压缩空气。
 mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 
-// Example: register water as a fuel which produces 16000mL air per bucket.
+// 实例：将水注册为每桶可以产生 16000mL 的压缩空气的液体燃料。
 mods.pneumaticcraft.liquidfuel.addFuel(<liquid:water>, 16000);
 ```

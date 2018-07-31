@@ -563,12 +563,12 @@ pages:
       - 气动工艺简介: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - 合成:
         - 装配系统: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
-        - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
-        - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
-        - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
-        - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
-        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
-        - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
+        - 导热框架冷却: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
+        - 压力室: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
+        - 精炼厂: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
+        - 热气动加工机: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
+        - 液体燃料: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+        - 液态经验: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
       - Tweaker Static Class: 'Mods/PoweredThingies/_TweakerClass.md'

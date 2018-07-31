@@ -1,9 +1,9 @@
-# PneumaticCraft: Repressurized
+# 气动工艺：再度加压（PneumaticCraft: Repressurized）
 
-PneumaticCraft: Repressurized is a port of MineMaarten's PneumaticCraft mod to Minecraft 1.12.2. It's a tech mod using the concept of pressurized air as a power system, and adds some cool gadgets including a fully-programmable drone automation system.
+气动工艺：再度加压是一个将 MineMaarten 的气动工艺模组的搬运到 Mincraft 1.12.2 的模组。它是一个将压缩空气作为能量系统的科技向模组，也添加了一些有趣的玩意，比如一个的完全可编程的无人机自动化系统。
 
-## CraftTweaker Support
+## CraftTweaker 支持
 
-PneumaticCraft: Repressurized comes with its own native CraftTweaker support.  Therefore, please raise any CraftTweaker-related issues at the [PneumaticCraft: Repressurized issue tracker](https://github.com/TeamPneumatic/pnc-repressurized/issues).
+气动工艺：再度加压本身兼容 crafttweaker。 也就是说由于所增加的方法而出现的问题应在 [气动工艺：再度加压的 issue tracker](https://github.com/TeamPneumatic/pnc-repressurized/issues) 上提交.
 
-Note that the support documented here is for PneumaticCraft: Repressurized *only*; none of this applies to the original PneumaticCraft mod found in MC1.8.9 and earlier.
+注意以下的所有内容*仅*适用于气动工艺：再度加压模组；对 MC1.8.9 及以前版本的气动工艺模组均不适用。
