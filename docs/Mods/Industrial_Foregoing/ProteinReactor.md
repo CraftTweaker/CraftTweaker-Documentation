@@ -1,23 +1,25 @@
-#Protein Reactor
+# 蛋白质反应器（Protein Reactor）
 
-### Importing
+### 导入
 
 ```
 import mods.industrialforegoing.ProteinReactor;
 ```
 
-### Adding
+### 添加
 
 ```
 ProteinReactor.add(IItemStack input);
+//input 输入
 
 ProteinReactor.add(<minecraft:diamond>);
 ```
 
-### Removing
+### 移除
 
 ```
 ProteinReactor.remove(IItemStack input);
+//input 输入
 
 ProteinReactor.remove(<minecraft:diamond>);
 ```
