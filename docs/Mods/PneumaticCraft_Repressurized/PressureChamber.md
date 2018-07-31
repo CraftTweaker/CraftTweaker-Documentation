@@ -1,6 +1,6 @@
 # 压力室(Pressure Chamber)
 
-压力室是一个多方块结构，它使用压缩空气将一或多个个物品转换为另一个或多个物品。压力室的配方和当前的压力有关，即需要达到一定 bar 的压力才能够发生转换。
+压力室是一个多方块结构，它使用压缩空气将一或多个个物品转化为另一个或多个物品。压力室的配方和当前的压力有关，即需要达到一定 bar 的压力才能够发生转化。
 
 ## 导入
 
@@ -37,4 +37,3 @@ mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] input, double pressu
 // 实例
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```
-
