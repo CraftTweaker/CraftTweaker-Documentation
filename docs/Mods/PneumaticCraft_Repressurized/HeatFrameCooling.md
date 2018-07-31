@@ -4,20 +4,21 @@
 
 ## 导入
 
-使用 `mods.pneumaticcraft.heatframecooling` 以导入导入框架冷却相关包
+使用 `mods.pneumaticcraft.heatframecooling` 以导入导热框架冷却相关包
 
 ## 移除
 
-这个函数会移除第一个 `output (输出)` 为指定[材料（IIngredient）](/Vanilla/Variable_Types/IIngredient)的配方：
+以下函数会移除第一个 `output (输出)` 为指定[材料（IIngredient）](/Vanilla/Variable_Types/IIngredient)的配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
 //output 输出
+
 //实例
 mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
 ```
 
-这个函数会移除*所有的*导入框架冷却配方：
+以下函数会移除*所有*导热框架冷却配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
@@ -25,7 +26,7 @@ mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 
 ## 添加
 
-这些函数用于为导入框架冷却系统添加配方：
+以下函数用于添加导热框架冷却系统配方：
 
 ```
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);
