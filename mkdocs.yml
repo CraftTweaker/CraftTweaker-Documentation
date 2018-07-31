@@ -250,7 +250,7 @@ pages:
           - 模组锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
           - NBT数据锁定调整: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
         - 游戏阶段:
-          -游戏阶段: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
+          - 游戏阶段: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
           - 游戏阶段锁定: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - 沉浸工程: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
