@@ -69,11 +69,11 @@ myMaterial.removeItem(<minecraft:iron_block>);
 
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
-Uses a [Trait Representation](Trait), and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Builder](TraitBuilder) or a String with the identifier instead of the Trait representation.
+Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
+Alternatively, you can use a [Trait Representation](Trait), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits).
 Possible values for `dependency` are:
 
-- `null` (default) → All items
+- `null` (default) → All items, unless that dep already has other traits.
 - `"head"`
 - `"handle"`
 - `"extra"`
@@ -84,8 +84,8 @@ Possible values for `dependency` are:
 - `"fletching"`
 
 ```
-myMaterial.addTrait(<ticontrait:fiery>);
-myMaterial.addTrait(<ticontrait:fiery>, "bowstring");
+myMaterial.addTrait("fiery");
+myMaterial.addTrait("fiery", "bowstring");
 ```
 
 You can remove materialTraits as well (which is especially useful when doing batch materials).  
@@ -148,10 +148,25 @@ testMat.liquid = <liquid:lava>;
 testMat.castable = true;
 testMat.addItem(<item:minecraft:comparator>);
 testMat.addItem(<item:minecraft:repeater>, 1, 2);
-testMat.representativeItem = <item:minecraft:comparator>;
+testMat.addItem(<item:minecraft:red_flower:4>);
+testMat.representativeItem = <item:minecraft:red_flower:4>;
 testMat.addHeadMaterialStats(100, 1.5f, 5.5f, 5);
+testMat.addHandleMaterialStats(0.3, 500);
 testMat.addBowStringMaterialStats(0.5f);
-testMat.itemLocalizer = function(thisMat, itemName){return "Cool " + itemName;};
+testMat.addMaterialTrait(<ticontrait:kindlich_test>, "bowstring");
+testMat.addMaterialTrait(<ticontrait:kindlich_test>, "head");
+testMat.addMaterialTrait("blasting", "bowstring");
+testMat.addMaterialTrait("blasting", "head");
+
+//null (or not specifying that parameter at all) means that this is a default trait.
+//Default traits are only queried when no other traits are added to that material type.
+//In this case, the dense trait will only be on toolrods, because bowstrings and heads already have other traits.
+testMat.addMaterialTrait("dense", null);
+
+//Faulty, should error, though only during init, as then the strings will be checked.
+testMat.addMaterialTrait("dance", null);
+
+testMat.itemLocalizer = function(itemName){return "Cool " + itemName;};
 testMat.localizedName = "Wicked";
 testMat.register();
 ```

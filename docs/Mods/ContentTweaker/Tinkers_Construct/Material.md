@@ -33,7 +33,11 @@ myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
-Uses a [Trait Representation](Trait), returns void.
+Uses a [Trait Representation](Trait) or a String with the identifier (recommended), returns void.  
+You can also provide a dependency String, that will cause the trait to only be available for certain part types, like heads, for example. Omitting that parameter will inject null, which will cause the trait to only be on the part type when no other nonnull dependency modifiers are on that part already.
+
+The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
 ```
+myMaterial.addTrait("fiery", "head");
 myMaterial.addTrait(<ticontrait:fiery>);
 ```
