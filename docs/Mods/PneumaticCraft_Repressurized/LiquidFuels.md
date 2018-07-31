@@ -5,7 +5,7 @@
 
 ## 导入
 
-使用 `mods.pneumaticcraft.liquidfuel` 已导入液体燃料相关包。
+使用 `mods.pneumaticcraft.liquidfuel` 以导入液体燃料相关包。
 
 ## 移除
 
