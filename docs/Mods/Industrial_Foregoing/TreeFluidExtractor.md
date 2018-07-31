@@ -10,8 +10,8 @@ import mods.industrialforegoing.Extractor;
 
 ```
 Extractor.add(IItemStack output, ILiquidStack fluid);
-//output 输出
-//fluid 输出流体
+//output 提取的方块
+//fluid 输出的流体
 
 Extractor.add(<minecraft:cobblestone>, <liquid:lava> * 3);
 ```
