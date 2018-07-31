@@ -47,7 +47,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(ILiquidStack liquid
 //output 输出
 
 // 实例：在 3.0 bar 和 473K (200C)的情况下将水和红石转化为红石液体
-mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:water>, <item:redstone>, 3.0, 473, <liquid:redstone> * 250);
+mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:water>, <minecraft:redstone>, 3.0, 473, <liquid:redstone> * 250);
 // 实例：在 3.0 bar 和 473K 的情况下将 10mB 的油转化为 5mB 的岩浆
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(<liquid:oil> * 10, null, 3.0, 473, <liquid:lava> * 5);
 // 实例：在 1.5 bar 和 573K 的情况下将 1 块地狱岩转化为 50mB 的岩浆
