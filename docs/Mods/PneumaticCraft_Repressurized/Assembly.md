@@ -10,7 +10,7 @@
 
 ## 移除
 
-以下函数会移除找到的第一个 `output` 为指定[物品堆 （IItemStack）](/Vanilla/Items/IItemStack) 为`output（输出）`的配方：
+以下函数会移除第一个 `output（输出）` 为指定[物品堆（IItemStack）](/Vanilla/Items/IItemStack)的配方：
 
 ```java
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
@@ -39,7 +39,7 @@ mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
 
 ## 添加
 
-以下函数可以为装配线添加配方：
+以下函数用于添加装配线配方：
 
 ```java
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)
