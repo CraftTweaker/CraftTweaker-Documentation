@@ -9,7 +9,7 @@
 
 ## 移除
 
-这个函数会使 `fluid`（数据类型为[流体堆（ILiquidStack）](/Vanilla/Variable_Types/ILiquidStack)）无法作为液体燃料：
+以下函数会使 `fluid`（数据类型为[流体堆（ILiquidStack）](/Vanilla/Variable_Types/ILiquidStack)）无法作为液体燃料：
 
 ```
 mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
@@ -19,7 +19,7 @@ mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
 
-这个函数会移除*所有*注册的燃料：
+以下函数会移除*所有*注册的燃料：
 
 ```
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
@@ -27,7 +27,7 @@ mods.pneumaticcraft.liquidfuel.removeAllFuels();
 
 ## 添加
 
-以下方法可以使流体注册为液体燃料：
+以下函数可以使流体注册为液体燃料：
 
 ```java
 // 将指定的流体注册为液体燃料。 mlPerBucket 指每一桶燃料可以产生压缩空气的体积。例如在空气压缩机中，一个煤可以产生 16000mL 的压缩空气。
