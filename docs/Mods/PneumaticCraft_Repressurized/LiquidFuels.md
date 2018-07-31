@@ -14,6 +14,7 @@
 ```
 mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
 //fluid 流体
+
 // 实例
 mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
 ```
