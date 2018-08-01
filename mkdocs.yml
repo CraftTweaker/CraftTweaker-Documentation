@@ -340,6 +340,8 @@ pages:
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
           - Material Part: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
           - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
+          - Functions:
+            - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
         - Parts:
           - Part: 'Mods/ContentTweaker/Materials/Parts/Part.md'
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'

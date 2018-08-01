@@ -15,7 +15,7 @@ createPartType(String name, IRegisterMaterialPart registerMaterialPart)
 Required Parameters:
 
 - String name: The part type's name → e.g. "dense_gear"
-- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Advanced_Functionality/functions/registerMaterialPart/) registerMaterialPart → A function that handles how the Material parts will be created.
+- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → A function that handles how the Material parts will be created.
 
 ### Retrieve 
 ```JAVA
