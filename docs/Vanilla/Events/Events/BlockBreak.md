@@ -12,7 +12,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IBlockEvent](IBlockEvent)
+- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters

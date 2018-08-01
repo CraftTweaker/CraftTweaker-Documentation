@@ -1,6 +1,6 @@
 # IFacing
 
-The IFacing Interface allows you to get an [IBlockPos's](IBlockPos/) possible directions.
+The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  

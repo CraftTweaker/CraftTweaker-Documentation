@@ -11,7 +11,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Event interface extensions
 BlockHarvestDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IBlockEvent](IBlockEvent)
+- [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters

@@ -19,7 +19,7 @@ You can get/set the following fields:
 | ZenGetter         | ZenSetter         | Return/Setter Type                         | Description                                                       |
 |-------------------|-------------------|--------------------------------------------|-------------------------------------------------------------------|
 | getName           |                   | String                                     | The Material's Name                                               |
-| definition        |                   | [IMaterialDefinition](IMaterialDefinition) | The Material's Definition                                         |
+| definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/IMaterialDefinition/) | The Material's Definition                                         |
 | durabilityHead    | durabilityHead    | int                                        | A Toolhead made from this material has this durability            |
 | miningSpeedHead   | miningSpeedHead   | float                                      | A Toolhead made from this material has this mining speed          |
 | attackHead        | attackHead        | float                                      | A Toolhead made from this material has this attack Damage         |

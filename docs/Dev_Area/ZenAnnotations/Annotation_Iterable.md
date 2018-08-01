@@ -52,4 +52,4 @@ for oreDictEntry in oreDict {
 
 ## What Classes can be annotated || Additional Info
 You can annotate all classes that implement the required interface.  
-You need to provide a String value that refers to the Iterated [ZenScript's class name](ZenClass).
+You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dec_Area(ZenAnnotations/ZenClass/).

@@ -9,7 +9,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenMethods
 ### Get or Set a blockState at a specific Position
-Use an [IBlockPos](IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
 Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
 ```
@@ -17,14 +17,14 @@ accObj.getBlockState(IBlockPos pos);
 ```
 
 ### Check if a block is an air block.
-Use an [IBlockPos](IBlockPos/) object.  
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a bool.
 ```
 accObj.isAirBlock(IBlockPos pos);
 ```
 
 ### Get strong Power at a block's side
-Use an [IBlockPos](IBlockPos/) object and an [IFacing](IFacing/) object.  
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns an int.
 ```
 accObj.getStrongPower(BlockPos var1, EnumFacing var2);
