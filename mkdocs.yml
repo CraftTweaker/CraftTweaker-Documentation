@@ -307,6 +307,7 @@ pages:
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
           - Block:
