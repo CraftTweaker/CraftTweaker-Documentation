@@ -650,9 +650,7 @@ markdown_extensions:
   - smarty
   - sane_lists
 
-theme:
-  custom_dir: 'mkdocs_windmill'
-  name: null
+theme_dir: 'mkdocs_windmill'
 
 extra:
   logo: 'assets/logo.png'
