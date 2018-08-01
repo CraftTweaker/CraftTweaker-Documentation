@@ -133,4 +133,5 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean isInvulnerableTo([IDamageSource](/Vanilla/Damage/IDamageSource/) source);
 - boolean shouldRiderDismountInWater(IEntity rider)
 - boolean boolean isPassenger(IEntity entity);
-- isRidingSameEntity(IEntity other);
+- boolean isRidingSameEntity(IEntity other);
+- [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks);
