@@ -16,8 +16,8 @@ call(String command, IPlayer player, IWorld world, boolean logToChat, boolean ov
 Parameters:
 
 - String command → The command to be executed
-- [IPlayer](/Vanilla/Players/IPlayer) player → The Player executing the command
-- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands) world → The world the command is executed in
+- [IPlayer](/Vanilla/Players/IPlayer/) player → The Player executing the command
+- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → The world the command is executed in
 - boolean logToChat → Should the command output appear in the MC chat?
 - boolean overridePermissions should the command be executed regardless of the required permission level?
 

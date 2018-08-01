@@ -5,7 +5,7 @@ The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
 
 ## Importing the package
 
-You can [import](/Vanilla/Advanced_Functionality/Import) the package and its methods to facilitate the retrival of the methods.  
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.  
 ```
 import mods.thaumcraft.SmeltingBonus;
 ```

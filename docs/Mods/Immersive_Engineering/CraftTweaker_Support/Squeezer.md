@@ -8,9 +8,9 @@ You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
 |Required  |Type                   |Data Type                                          										|
 |----------|-----------------------|----------------------------------------------------------------------------------------|
-|Required  |Output                 |[IItemStack](/Vanilla/Items/IItemStack) 												|
-|Required  |Fluid                  |[Fluidstack](/Vanilla/Liquids/ILiquidStack)     										|
-|Required  |Input                  |[IIngredient](/Vanilla/Variable_Types/IIngredient) 										|
+|Required  |Output                 |[IItemStack](/Vanilla/Items/IItemStack/) 												|
+|Required  |Fluid                  |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)     										|
+|Required  |Input                  |[IIngredient](/Vanilla/Variable_Types/IIngredient/) 										|
 |Required  |Energy                 |Integer																					|
 
 ### Example
@@ -27,7 +27,7 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
+|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
 ### Example
 ```JAVA
@@ -43,7 +43,7 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA
@@ -59,7 +59,7 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA

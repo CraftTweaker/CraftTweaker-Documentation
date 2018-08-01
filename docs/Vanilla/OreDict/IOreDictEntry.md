@@ -1,19 +1,19 @@
 # IOreDictEntry
 
-When the [IOreDict](IOreDict) is the lexicon, the IOreDictEntries are the lexicon's entries.  
+When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
 They consist of a name (OreDictionary name) and an explanation (all matching items).
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDictEntry;`
 
 ## Retrieving such an Object.
 There are multiple ways of getting an IOreDictEntry Object:
 If you refer to an oreDict that does not yet exist, it will be created.
 
-- Using the [IOreDict](IOreDict) class.
-- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore).
-- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition).
+- Using the [IOreDict](/Vanilla/OreDict/IOreDict/) class.
+- Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
+- Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
 
 ## ZenGetters
 You can use these getters to retrieve some information on the oredict:
@@ -22,7 +22,7 @@ You can use these getters to retrieve some information on the oredict:
 |-----------|------------------------------------------|-----------------------------------------|
 | name      | Returns the oreDict's name               | string                                  |
 | empty     | Returns if the oreDict is empty          | bool                                    |
-| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack) |
+| firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
 ## ZenMethods
 You can use these methos on an IOreDictEntry Object:
@@ -87,7 +87,7 @@ copper.mirror(iron);
 
 
 ## IIngredient implementation
-IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient) are also available to IOreDictEntries.
+IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This means that all methods available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) are also available to IOreDictEntries.
 It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
 
 ### Iterating through an oreDictEntry's items

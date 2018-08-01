@@ -4,7 +4,7 @@ A Vector3d object is a vector that uses three doubles for the directions.
 They have several utility methods and getters.
 
 ## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IVector3d`
 
 ## ZenGetters

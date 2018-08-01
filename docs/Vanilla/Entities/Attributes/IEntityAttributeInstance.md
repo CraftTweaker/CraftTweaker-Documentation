@@ -2,14 +2,14 @@
 
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
 | ZenGetter      | GetterMethod        | Return Type                          |
 |----------------|---------------------|--------------------------------------|
-| attribute      | getAttribute()      | [IEntityAttribute](IEntityAttribute) |
+| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/IEntityAttribute/) |
 | baseValue      | getBaseValue()      | double                               |
 | modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`     |
 | attributeValue | getAttributeValue() | double                               |
@@ -25,9 +25,9 @@ It might be required for you to import the package if you encounter any issues (
 ## Modifier Methods
 
 - `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
-- boolean hasModifier([IEntityAttributeModifier](IEntityAttributeModifier) modifier)
-- [IEntityAttributeModifier](IEntityAttributeModifier) getModifier(String uuid);
-- void applyModifier([IEntityAttributeModifier](IEntityAttributeModifier) modifier);
-- void removeModifier([IEntityAttributeModifier](IEntityAttributeModifier) modifier);
+- boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier)
+- [IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) getModifier(String uuid);
+- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier);
+- void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier);
 - void removeModifier(String uuid);
 - void removeAllModifiers();

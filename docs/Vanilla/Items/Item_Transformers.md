@@ -4,7 +4,7 @@ Item Transformers transform your crafting inputs upon crafting.
 This can range from damaging the item up to returning a completely different item.
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemTransformer;`
 
 ```Java
@@ -40,13 +40,13 @@ transformedItem = item.transformConsume(3);
 ## Registering own item Transformers
 ### Transform
 The old itemTransformer that might cease to exist in 1.13.  
-Thisis a special function that accepts two parameters: The [item](IItemStack) itself and the [player](/Vanilla/Players/IPlayer) performing the crafting.
+Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
 
 ```
 transformedItem = item.transform(function(item, player) {return item;});
 ```
 
-The function needs to return an [IItemStack](IItemStack).  
+The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
 This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
 
 ### TransformNew
@@ -56,7 +56,7 @@ With the new internal recipe system there was a need for a new ItemTransformer. 
 transformedItem = item.transformNew(function(item){return item;});
 ```
 
-The function needs to return an [IItemStack](IItemStack).  
+The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
 Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
 In other words if you return `null` here, one item will be consumed, any other item that is returned will either be placed in the crafting slot, if possible, or given back to you, same as when dealing with buckets.  
 If you don't really need the player variable, this is the transformer to go for!

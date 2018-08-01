@@ -1,6 +1,6 @@
 # DamageSource Bracket Handler
 
-The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource) in the game.
+The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
 
 If the Damage source is not one of the predefined ones, this will create a new one with the given name.
 

@@ -1,9 +1,9 @@
 # Player Stages
 
-The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer) functionality to allow you to check and modify a player's stages.
+The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
 
 ## Calling the methods
-As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer) object, or any of it's subtypes.
+As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
 
 ## Methods
 

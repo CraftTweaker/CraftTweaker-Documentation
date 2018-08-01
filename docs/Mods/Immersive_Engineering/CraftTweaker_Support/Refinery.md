@@ -8,9 +8,9 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 |Required  |Type                |Data Type                                          |
 |----------|--------------------|---------------------------------------------------|
-|Required  |Output              |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
-|Required  |Input 1             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
-|Required  |Input 2             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
+|Required  |Output              |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+|Required  |Input 1             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+|Required  |Input 2             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 |Required  |Energy              |Integer                                            |
 
 ### Example
@@ -26,7 +26,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
+|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
 ### Example
 ```JAVA

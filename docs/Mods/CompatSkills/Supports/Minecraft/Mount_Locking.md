@@ -4,7 +4,7 @@
 This feature allows you to add a requirement lock to Mounting specific entities!
 
 ### Syntax
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
 ```
 # Blank Example:

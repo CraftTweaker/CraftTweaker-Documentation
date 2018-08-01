@@ -4,12 +4,12 @@
 
 |Required: |Type:      |Name:                |Implementation:                   |Parameters:                                                                 |Additional Information:                                           |
 |----------|-----------|---------------------|----------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------|
-|Required  |Recipe:    |Shaped Recipe:       |.setShaped                        |[IIngredient[][]](/Vanilla/Variable_Types/IIngredient) ingredients          |                                                                  |
-|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless                     |[IIngredient[](/Vanilla/Variable_Types/IIngredient) ingredients             |                                                                  |
+|Required  |Recipe:    |Shaped Recipe:       |.setShaped                        |[IIngredient[][]](/Vanilla/Variable_Types/IIngredient/) ingredients          |                                                                  |
+|Required  |Recipe:    |Shapeless Recipe:    |.setShapeless                     |[IIngredient[](/Vanilla/Variable_Types/IIngredient/) ingredients             |                                                                  |
 |Optional  |Recipe:    |Mirrored:            |.setMirrored                      |Empty                                                                       |                                                                  |
-|Required  |Tool:      |Tool:                |.addTool                          |[IIngredient](/Vanilla/Variable_Types/IIngredient) tool + Integer damage    |Call multiple times to add up to three tools needed for the craft |
-|Required  |Output:    |Output:              |.addOutput                        |[IItemstack](/Vanilla/Items/IItemStack) output, @Optional int weight        |Can be called multiple times to provide several weighted outputs  |
-|Optional  |Output:    |Extra Outputs:       |.setExtraOutput{One, Two, Three}  |[IItemstack](/Vanilla/Items/IItemStack), float chance                       |                                                                  |
+|Required  |Tool:      |Tool:                |.addTool                          |[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool + Integer damage    |Call multiple times to add up to three tools needed for the craft |
+|Required  |Output:    |Output:              |.addOutput                        |[IItemstack](/Vanilla/Items/IItemStack/) output, @Optional int weight        |Can be called multiple times to provide several weighted outputs  |
+|Optional  |Output:    |Extra Outputs:       |.setExtraOutput{One, Two, Three}  |[IItemstack](/Vanilla/Items/IItemStack/), float chance                       |                                                                  |
 |Optional  |GameStage: |Require GameStage(s) |.requireGameStages                |String require, String[] stages                                             |require = "ALL" or "ANY"                                          |
 |Optional  |GameStage: |Exclude GameStage(s) |.excludeGameStages                |String[] stages                                                             |                                                                  |
 |Required  |Creation:  |Create               |.create();                        |Empty                                                                       |                                                                  |
@@ -34,4 +34,4 @@ RecipeBuilder.get("carpenter")
     .create();
 ```
 
-Also see: [To Scale Example](/Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example)
+Also see: [To Scale Example](/Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example/)

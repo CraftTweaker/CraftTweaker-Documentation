@@ -28,11 +28,11 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 | horizon                | getHorizon()                | double                           |
 | lightBrightnesTable    | getLightBrightnesTable()    | float[]                          |
 | movementFactor         | getMovementFactor()         | double                           |
-| randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](IBlockPos)           |
+| randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](IBlockPos/)           |
 | saveFolder             | getSaveFolder()             | String                           |
 | seed                   | getSeed()                   | long                             |
-| spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](IBlockPos)           |
-| spawnPoint             | getSpawnPoint()             | [IBlockPos](IBlockPos)           |
+| spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](IBlockPos/)           |
+| spawnPoint             | getSpawnPoint()             | [IBlockPos](IBlockPos/)           |
 | voidFogYFactor         | getVoidFogYFactor()         | double                           |
 | worldTime              | getWorldTime()              | long                             |
 | canRespawnHere         | canRespawnHere()            | bool                             |
@@ -46,8 +46,8 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 ## ZenMethods with parameters
 ### get Biome at a certain Position
 
-Use either an [IBlockPos](IBlockPos) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome) Object.
+Use either an [IBlockPos](IBlockPos/) object.  
+Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
 ```
 worldProvObj.getBiome(IBlockPos position);
 ```
@@ -62,7 +62,7 @@ worldProvObj.getMoonPhase(long time);
 
 ### get Respawn Dimension for a specific player
 
-Use an [IPlayer](/Vanilla/Players/IPlayer) object.  
+Use an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a new IWorldProvider object.
 ```
 worldProvObj.getRespawnDimension(IPlayer player);
@@ -79,7 +79,7 @@ worldProvObj.getSunBrightnessFactor(float something);
 ```
 
 ### Check if a block has a high humidity
-Use an [IBlockPos](IBlockPos) object.  
+Use an [IBlockPos](IBlockPos/) object.  
 Returns a boolean.
 ```
 worldProvObj.isBlockHighHumidity(IBlockPos pos);

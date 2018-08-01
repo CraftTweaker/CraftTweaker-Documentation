@@ -4,7 +4,7 @@ This package allows you to add and remove recipes to/from the Crucible.
 
 ## Importing the package
 
-You can [import](/Vanilla/Advanced_Functionality/Import) the package and its methods to facilitate the retrival of the methods.  
+You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.  
 ```
 import mods.thaumcraft.Crucible;
 ```

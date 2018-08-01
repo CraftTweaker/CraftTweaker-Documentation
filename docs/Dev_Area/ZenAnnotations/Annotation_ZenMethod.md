@@ -2,16 +2,16 @@
 
 A ZenMethod is a java method that has been exposed to ZenScript.  
 
-Static Methods can be accessed using the [ZenClass' Name](Annotation_ZenClass), nonstatics use `object.methodName(arguments,..);`.  
-The ZenMethod annotation can stand alongside other [Annotations](ZenAnnotation), like the [ZenOperator Annotation](Annotation_ZenOperator).
+Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
+The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
 
 
 ## What methods can be annotated || Additional Info
 
 - You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](Annotation_ZenExpansion). That parameter is the expanded class' instance
-- When annotating a static Method in a [ZenExpansion](Annotation_ZenExpansion) (for example a factory method) you will need to use [ZenMethodStatic](ZenMethodStatic) instead.
+- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
+- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/ZenMethodStatic/) instead.
 
 ## Example Class
 

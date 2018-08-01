@@ -12,13 +12,13 @@ You can call the Refinery package using `mods.pneumaticcraft.refinery`.
 
 ## Removing
 
-This function removes the first recipe it finds matching all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `outputs`:
+This function removes the first recipe it finds matching all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
 
 ```java
 mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
 ```
 
-This function removes the first recipe it finds matching the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `input`:
+This function removes the first recipe it finds matching the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
 
 ```java
 mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);

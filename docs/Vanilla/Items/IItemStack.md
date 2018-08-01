@@ -1,34 +1,34 @@
 # IItemStack
 
-An IItemStack Object consists of an [item definition](IItemDefinition), a meta/damage value and NBT data.  
+An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
 
 ## Calling an IItemStack
 There are several methods that return an IItemStack
 
-* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item) `<minecraft:apple>`
-* Using the `makeStack()` method on a [IItemDefinition](IItemDefinition) object `<minecraft:stone>.definition.makeStack(0)`
-* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop) object
-* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)
+* Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
+* Using the `makeStack()` method on a [IItemDefinition](/Vanilla/Items/IItemDefinition/) object `<minecraft:stone>.definition.makeStack(0)`
+* Using the `stack` getter on a [IEntityDrop](/Vanilla/Entities/IEntityDrop/) object
+* Using the `firstItem` getter on a [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
 
 ## Calling an IItemStack[] or a IItemStack List
 If you call these functions, you will most likely do so to iterate through the resulting lists/Arrays
 
-* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient) returns a IItemStack List: `<ore:ingotGold>.items`
-* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
-* Using the `items` method on a [IMod](/Vanilla/Game/Mods#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
+* Using the `items` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack List: `<ore:ingotGold>.items`
+* Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
+* Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
 
 ## Functions
 So what can we do with that now?
 
 ### Extending IIngredient
-IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient).  
-That means all functionality that is available to  [IIngredient](/Vanilla/Variable_Types/IIngredient) objects also is applicable to IItemStacks.
+IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
+That means all functionality that is available to  [IIngredient](/Vanilla/Variable_Types/IIngredient/) objects also is applicable to IItemStacks.
 <details><summary>Derived Methods</summary>
 	<ul>
 		<li>stack.mark</li>
@@ -39,9 +39,9 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 		<li>stack.commandString</li>
 		<li>stack | otherIngredient</li>
 		<li>stack.or(otherIngredient)</li>
-		<li>stack.transform([transformer](Item_Transformers))</li>
-		<li>stack.transformNew([transformer](Item_Transformers))</li>
-		<li>stack.only([condition](Item_Conditions))</li>
+		<li>stack.transform([transformer](/Vanilla/Items/Item_Transformers/))</li>
+		<li>stack.transformNew([transformer](/Vanilla/Items/Item_Transformers/))</li>
+		<li>stack.only([condition](/Vanilla/Items/Item_Conditions/))</li>
 		<li>stack.marked(mark)</li>
 		<li>stack.matches(item)</li>
 		<li>stack.matchesExact(item)</li>
@@ -55,11 +55,11 @@ That means all functionality that is available to  [IIngredient](/Vanilla/Variab
 
 ### ZenGetters/ZenSetters
 
-Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
+Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
 | ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                     |
 |---------------------|---------------------|----------------------------------------------------------|
-| definition          |                     | [IItemDefinition](IItemDefinition)                       |
+| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)                       |
 | name                |                     | string                                                   |
 | displayName         | displayName         | string                                                   |
 | maxStackSize        | maxStackSize        | int                                                      |
@@ -67,8 +67,8 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 | damage              |                     | int                                                      |
 | maxDamage           | maxDamage           | int                                                      |
 | hasTag              |                     | bool                                                     |
-| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData)                             |
-| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry)>    |
+| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                             |
+| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>    |
 | toolClasses         |                     | List<string\>                                            |
 | itemEnchantability  |                     | int                                                      |
 | containerItem       |                     | IItemStack                                               |
@@ -90,7 +90,7 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 | burnTime            |                     | int                                                      |
 | showsDurabilityBar  |                     | bool                                                     |
 | hasCustomEntity     |                     | bool                                                     |
-| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment)> |
+| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)> |
 
 
 
@@ -109,8 +109,8 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 
 | Method call                    | Returns                                    | ParameterTypes     |
 |--------------------------------|--------------------------------------------|--------------------|
-| `stack.percent(float chance)`  | A [WeightedItemStack](WeightedItemStack)   | float (100 = 100%) |
-| `stack.weight(float chance)`   | A [WeightedItemStack](WeightedItemStack)   | float (1 = 100%)   |
+| `stack.percent(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/)   | float (100 = 100%) |
+| `stack.weight(float chance)`   | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/)   | float (1 = 100%)   |
 
 
 #### Damage
@@ -119,7 +119,7 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 |------------------------------------------------|--------------------------------------------|-------------------------------------------|
 | `stack.anyDamage()`                            | A new IItemStack with the changed property |                                           |
 | `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                       |
-| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity) |
+| `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
 
 #### Tags
@@ -127,17 +127,17 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 | Method call                    | Returns                                    | ParameterTypes               |
 |--------------------------------|--------------------------------------------|------------------------------|
 | `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                              |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData) |
+| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
 | `stack.removeTag(String name)` | A new IItemStack with the changed property | string                       |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData) |
+| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
 
 
 #### Block Casting
 
 | Method call           | Returns                                        |
 |-----------------------|------------------------------------------------|
-| `stack.asBlock()`     | A new [IBlock](/Vanilla/Blocks/IBlock) object. |
-| `stack as IBlock`     | A new [IBlock](/Vanilla/Blocks/IBlock) object. |
+| `stack.asBlock()`     | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
+| `stack as IBlock`     | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 
 
 #### Lore/DisplayName
@@ -152,8 +152,8 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 
 | Method call                                                         | Returns        | ParameterTypes                                                         |
 |---------------------------------------------------------------------|----------------|------------------------------------------------------------------------|
-| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition) |
-| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment)                     |
+| `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
 
 
 
@@ -161,22 +161,22 @@ Read how to use them [here](/UsingThisWiki). Also, check out the examples below.
 
 | Method call                                    | Returns                                                        | ParameterTypes                        |
 |------------------------------------------------|----------------------------------------------------------------|---------------------------------------|
-| `stack.canPlaceOn(IBlockPos pos)`              | A bool that tells if the item can be placed on the block.      | [IBlockPos](/Vanilla/World/IBlockPos) |
-| `stack.canDestroy(IBlockPos pos)`              | A bool that tells if the item can destroy the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
-| `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos) |
-| `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos) |
+| `stack.canPlaceOn(IBlockPos pos)`              | A bool that tells if the item can be placed on the block.      | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| `stack.canDestroy(IBlockPos pos)`              | A bool that tells if the item can destroy the block.           | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| `stack.canHarvestBlock(IBlockPos pos)`         | A bool that tells if the item can harvest the block.           | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| `stack.getStrengthAgainstBlock(IBlockPos pos)` | A float that represents the item's strength against the block. | [IBlockPos](/Vanilla/World/IBlockPos/) |
 
 #### create IEntityItem
 | Method call                                                  | Returns                                                                                                    | Parameter Types                                                        |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), int, int, int                         |
-| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld), [IBlockPos](/Vanilla/World/IBlockPos) |
+| `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                         |
+| `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
 
 
 ## ItemTransformers and ItemConditions
-You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient) page or in their respecive entries:  
-[Item Conditions](Item_Conditions)  
-[Item Transformers](Item_Transformers)
+You can find how to use these either in the [IIngredient](/Vanilla/Variable_Types/IIngredient/) page or in their respecive entries:  
+[Item Conditions](/Vanilla/Items/Item_Conditions/)  
+[Item Transformers](/Vanilla/Items/Item_Transformers/)
 
 
 
@@ -269,7 +269,7 @@ print(pick.maxDamage);
 
 #### Tag
 
-The tag is an [IData](/Vanilla/Data/IData) object.  
+The tag is an [IData](/Vanilla/Data/IData/) object.  
 If the item does not contain a tag, it will return an empty tag, never null.  
 
 ```kotlin
@@ -291,7 +291,7 @@ item.updateTag({Unbreakable: 1});
 #### Liquid
 
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
-Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) Object or null.
+Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Object or null.
 ```kotlin
 val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
@@ -315,7 +315,7 @@ val evenMoreApples = <minecraft:apple> * 3;
 
 #### Weight
 
-Returns a [weightedItemStack](weightedItemStack) with the provided percentage.
+Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
 ```kotlin
 val apple = <minecraft:apple>;
 
@@ -327,13 +327,13 @@ applePercentage = apple.weight(1.0);
 ```
 
 #### Ores
-Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) referring to this item.
+Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring to this item.
 ```kotlin
 <minecraft:apple>.ores;
 ```
 
 #### Casting to IBlock
-You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock), as long as you are referring to a block, otherwise the cast will throw an exception.
+You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as you are referring to a block, otherwise the cast will throw an exception.
 ```kotlin
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;

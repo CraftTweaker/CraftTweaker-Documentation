@@ -1,9 +1,9 @@
 # RecipePrimer
 
-A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](RecipeBuilder) and use its methods to actually give the recipe ins and outs and stuff.  
+A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.  
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.modularmachinery.RecipePrimer;`
 
 ## ZenMethods
@@ -27,7 +27,7 @@ addFuelItemInout(int requiredTotalBurnTime);
 ```
 
 ### Adding inputs
-You can add [IItemStacks](/Vanilla/Items/IItemStack), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack) as input.
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
 ```sml
 addItemInput(IItemStack stack);
@@ -40,7 +40,7 @@ addFluidInput(ILiquidStack stack);
 ```
 
 ### Adding outputs
-You can add [IItemStacks](/Vanilla/Items/IItemStack), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack) as output.
+You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 ```sml
 addItemOutput(IItemStack stack);
 

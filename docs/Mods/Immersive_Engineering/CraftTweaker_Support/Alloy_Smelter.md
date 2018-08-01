@@ -8,9 +8,9 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 
 |Required  |Type              |Data Type                                          |
 |----------|------------------|---------------------------------------------------|
-|Required  |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
-|Required  |Input 1           |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
-|Required  |Input 2           |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
+|Required  |Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
+|Required  |Input 1           |[IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+|Required  |Input 2           |[IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 |Required  |Time              |Integer                                            |
 
 
@@ -27,7 +27,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 
 ### Example

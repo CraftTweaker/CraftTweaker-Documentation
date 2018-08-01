@@ -4,7 +4,7 @@
 This feature allows for you to add requirement locks to taming specific entities.
 
 ### Syntax
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
 ```
 # Blank Example:

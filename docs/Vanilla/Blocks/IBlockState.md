@@ -7,12 +7,12 @@ It might be required for you to import the package if you encounter any issues, 
 `import crafttweaker.block.IBlockState;` 
 
 ## Extending IBlockProperties
-IBlockState extends [IBlockProperties](IBlockProperties). That means that all methods that are available to [IBlockProperties](IBlockProperties) objects are also available to IBlockState objects.
+IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That means that all methods that are available to [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) objects are also available to IBlockState objects.
 
 ## ZenMethods and ZenGetters
 | ZenGetter                  | Return Type                                                          | Description                                             |
 |----------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-| block                      | [IBlock](/Vanilla/Blocks/IBlock)                                     | Returns the refered block                               |
+| block                      | [IBlock](/Vanilla/Blocks/IBlock/)                                     | Returns the refered block                               |
 | meta                       | int                                                                  | Returns the refered block's metadata                    |
 
 
@@ -21,8 +21,8 @@ IBlockState extends [IBlockProperties](IBlockProperties). That means that all me
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
 Parameters:
 
-- [IWorld](/Vanilla/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Vanilla/World/IBlockPos) pos → The Block's position
+- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
 Returns a boolean that sais whether the block can be replaced or not.
 

@@ -68,4 +68,4 @@ This gives the player who performs the recipe 1 level each time the crafting is 
 Again, we have a function with 3 Parameters:  
 `out` is the recipe's output and an IItemStack object.  
 `cInfo` is an ICraftingInfo Object  
-`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer) object.
+`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object.

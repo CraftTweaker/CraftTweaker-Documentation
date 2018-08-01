@@ -1,5 +1,5 @@
 # Part Builder
-If you want to build a [Part](Part), you will need a Part Builder!  
+If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
 Doesn't sound that hard, does it?
 
 ## Importing the package
@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 
 ## Retrieving such an object
-You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```JAVA
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
@@ -22,7 +22,7 @@ You can set these Properties
 | ZenMethod                           | Parameter                      |
 |-------------------------------------|--------------------------------|
 | setName(name)                       | String name                    |
-| setPartType(partType)               | [PartType](PartType) partType  |
+| setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType  |
 | setOreDictName(prefix)              | String prefix                  |
 | setAdditionalOreDictNames(prefixes) | String... prefixes             |
 
@@ -35,7 +35,7 @@ Before you can build your material, you need to build it:
 pBuilder.build();
 ```
 
-This returns an [Part](Part) Object.
+This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
 ## Example Script
 ```JAVA

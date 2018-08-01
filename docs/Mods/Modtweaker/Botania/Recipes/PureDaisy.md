@@ -6,7 +6,7 @@ The PureDaisy package is used for adding or removing recipes to/from the Botania
 You can call the PureDaisy package using `mods.botania.PureDaisy`
 
 ## Find all registered Recipes
-You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands).
+You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

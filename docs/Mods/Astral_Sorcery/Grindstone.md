@@ -7,7 +7,7 @@ You can use CrT to add or remove recipes form the AS grindstone.
 You can call the InfusionRecipe package using `mods.astralsorcery.Grindstone`.
 
 ## Removing
-This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack) `output`.  
+This will remove the first grinding recipe it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 ```JAVA
 //mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);

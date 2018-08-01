@@ -1,6 +1,6 @@
 # MCAxisAlignedBB
 
-A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block) Boundary borders to a given cuboid shape.
+A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
 
 ## Importing the package
@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.AxisAlignedBB;` 
 
 ## Calling an MCAxisAlignedBB object
-You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block) `axisAlignedBB` Property.  
+You can get such an object using a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) `axisAlignedBB` Property.  
 Alternatively, you can use this package to create a new MCAxisAlignedBB object:
 ```JAVA
 AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double maxY, double maxZ);

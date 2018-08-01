@@ -24,5 +24,5 @@ public class ZenDocWiki {
 ## What methods can be annotated || Additional Info
 
 - You can annotate all methods, static and nonstatic.
-- Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands).
+- Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands/).
 - This annotation takes one String as value that is the additional information that should be printed.

@@ -20,4 +20,4 @@ The actual implementation does not need to be annotated.
 
 - You can annotate all Java Classes
 - You should give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This will be the ZS internal name for the class.
-- After declaring a class a ZenClass, you still need to register it. It is recommended that you use [`@ZenRegister`](Annotation_ZenRegister) for that
+- After declaring a class a ZenClass, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that

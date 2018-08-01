@@ -21,7 +21,7 @@ mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ```
 
 ## Add Item
-You can also add an [IItemStack](/Vanilla/Items/IItemStack) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
+You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
 ```JAVA
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
@@ -29,7 +29,7 @@ mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["W
 
 ## Add Description
 A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack), an [IItemStack](/Vanilla/Items/IItemStack)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry). 
+You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack/), an [IItemStack](/Vanilla/Items/IItemStack/)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/). 
 
 If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
 Each string parameter will have at least one line and wrap around the end of the window if too long.  

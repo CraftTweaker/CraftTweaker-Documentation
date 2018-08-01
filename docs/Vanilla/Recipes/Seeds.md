@@ -23,7 +23,7 @@ Adds `item` as seed drop.
 vanilla.seeds.addSeed(item);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack).
+`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/).
 What does that mean? It simply means that you need to give it a percentage like this:
 
 ```
@@ -38,13 +38,13 @@ Stops `item` from being a seed drop.
 ```
 vanilla.seeds.removeSeed(item);
 ```
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient).
+`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
 
 
 ## Retrieve all registered Seeds
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack) List.
+Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
 ```
 val seedList = vanilla.seeds.seeds;
 

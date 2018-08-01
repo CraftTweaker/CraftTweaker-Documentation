@@ -20,4 +20,4 @@ RecipeBuilder.get("carpenter")
   .create();
 ```
 
-For more features see [Usages](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages)
+For more features see [Usages](/Mods/Artisan_Worktables/CraftTweaker_Support/Usages/)

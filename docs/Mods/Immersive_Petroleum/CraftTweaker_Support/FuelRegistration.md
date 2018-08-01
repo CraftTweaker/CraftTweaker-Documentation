@@ -6,7 +6,7 @@
 
 |Type               |Data Type                                        |
 |------------------|--------------------------------------------------|
-|Input              |[Fluidstack](/Vanilla/Liquids/ILiquidStack)      |
+|Input              |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)      |
 |mB/t            |Integer                                          |
 
 
@@ -24,7 +24,7 @@ mods.immersivepetroleum.Motorboat.registerMotorboatFuel(<liquid:water>, 5);
 
 |Type               |Data Type                                        |
 |-------------------|-------------------------------------------------|
-|Input              |[Fluidstack](/Vanilla/Liquids/ILiquidStack)      |
+|Input              |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)      |
 |Flux/t             |Integer                                          |
 |mB/t               |Integer                                          |
 

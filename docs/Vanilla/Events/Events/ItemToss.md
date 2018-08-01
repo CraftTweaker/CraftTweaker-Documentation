@@ -6,17 +6,17 @@ Canceling this event will prevent the item from entering the world, thus causing
 ## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ItemTossEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
 PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEntityEvent](IEntityEvent)
-- [IEventCancelable](IEventCancelable)
+- [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/)
+- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetter/ZenSetter
 
 | ZenGetter | Type                                         |
 |-----------|----------------------------------------------|
-| item      | [IEntityItem](/Vanilla/Entities/IEntityItem) |
-| player    | [IPlayer](/Vanilla/Players/IPlayer)          |
+| item      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| player    | [IPlayer](/Vanilla/Players/IPlayer/)          |

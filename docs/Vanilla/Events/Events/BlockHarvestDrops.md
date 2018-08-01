@@ -6,7 +6,7 @@ You can modify the block list as well as the overall drop chance. Set latter to 
 ## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockHarvestDropsEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
 BlockHarvestDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
@@ -19,11 +19,11 @@ The following information can be retrieved from the event:
 
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer)                                |
+| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                                |
 | `isPlayer`       |               | bool                                                               |
 | `silkTouch`      |               | bool                                                               |
 | `fortuneLevel`   |               | int                                                                |
-| `drops`          | `drops`       | List<[IItemStack](/Vanilla/Items/IItemStack)\>                     |
+| `drops`          | `drops`       | List<[IItemStack](/Vanilla/Items/IItemStack/)\>                     |
 | `dropChance`     | `dropChance`  | float                                                              |
 
 

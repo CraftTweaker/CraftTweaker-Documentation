@@ -24,9 +24,9 @@ Amount of fluid output: fermentationValue * fluidOutputModifier
 
 | Parameter           | Type                                          | description                                   |
 |---------------------|-----------------------------------------------|-----------------------------------------------|
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) | The Recipe's output                           |
-| resource            | [IItemStack](/Vanilla/Items/IItemStack)       | The Recipe's item input                       |
-| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) | The Recipe's liquid input                     |
+| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
+| resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
+| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's liquid input                     |
 | fermentationValue   | int                                           | Amount of inputFluid on organic item requires |
 | fluidOutputModifier | int                                           | Output multiplier                             |
 
@@ -49,6 +49,6 @@ mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 
 |Parameter       | Type                                   | Description                                                                        |
 |----------------|----------------------------------------|------------------------------------------------------------------------------------|
-|item            |[IItemStack](/Vanilla/Items/IItemStack) |Item to become a valid fuel for the fermenter                                       |
+|item            |[IItemStack](/Vanilla/Items/IItemStack/) |Item to become a valid fuel for the fermenter                                       |
 |fermentPerCycle |int                                     |How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
 |burnDuration    |int                                     |Amount of work cycles a single item of this fuel lasts before expiring.             |

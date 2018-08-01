@@ -3,7 +3,7 @@ An ICraftingRecipe is a furnace table recipe the way ZS sees it.
 
 
 ## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.IFurnaceRecipe`
 
 

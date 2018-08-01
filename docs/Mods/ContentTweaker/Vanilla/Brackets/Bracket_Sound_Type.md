@@ -30,4 +30,4 @@ SoundTypes are referenced in the SoundType Bracket handler this way:
 <soundtype:wood>
 ```
 
-If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition) Object.  
+If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.  

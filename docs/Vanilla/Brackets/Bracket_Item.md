@@ -24,7 +24,7 @@ You can also use a wildcard `*` to address all meta values.
 Also optional: If left out it will be 0.
 
 Normally, this will return an IItemStack Object.  
-Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack) for further information.
+Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
 
 ## Examples
 

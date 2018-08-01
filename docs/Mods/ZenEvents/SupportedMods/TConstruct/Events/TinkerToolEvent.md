@@ -8,10 +8,10 @@ The TinkerToolEvents implement the following EventClasses and thus are able to u
 
 | Class                                                       | ExtraBlockBreak | MattockHoe | ShovelPath | ScytheHarvest | BowShoot | Repair |
 |-------------------------------------------------------------|:---------------:|:----------:|:----------:|:-------------:|:--------:|:------:|
-| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent)         | ✔               | ✔          | ✔          | ✔             | ✔        |        |
-| [IEventPositionable](/Vanilla/Events/IEventPositionable)    |                 | ✔          | ✔          | ✔             |          |        |
-| [IBlockEvent](/Vanilla/Events/Events/IBlockEvent)           |                 |            |            | ✔             |          |        |
-| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable) | ✔               |            |            | ✔             |          |        |
+| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)         | ✔               | ✔          | ✔          | ✔             | ✔        |        |
+| [IEventPositionable](/Vanilla/Events/IEventPositionable/)    |                 | ✔          | ✔          | ✔             |          |        |
+| [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)           |                 |            |            | ✔             |          |        |
+| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/) | ✔               |            |            | ✔             |          |        |
 
 ## Event Class
 You will need to cast the event in the function header as this class:  
@@ -28,7 +28,7 @@ mods.tconstruct.ToolShovelMakePathEvent
 mods.tconstruct.ToolScytheHarvestEvent
 mods.tconstruct.ToolBowShootEvent
 ```  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## ZenSetter/Getter
 
@@ -37,16 +37,16 @@ Empty table fields mean that the getter/setter does not exist!
 
 | ZenGetter Name   | ZenSetter Name   | Type                                                                       |
 |------------------|------------------|----------------------------------------------------------------------------|
-| item             |                  | [IItemStack](/Vanilla/Items/IItemStack) (can return null)                  |
+| item             |                  | [IItemStack](/Vanilla/Items/IItemStack/) (can return null)                  |
 
 ## SubEvent Getters/Setters
 
 | Name                              | Getter | Setter | Type                                           | ExtraBlockBreak | MattockHoe | ShovelPath | ScytheHarvest | BowShoot | Repair |
 |-----------------------------------|:------:|:------:|------------------------------------------------|:---------------:|:----------:|:----------:|:-------------:|:--------:|:------:|
-| blockState                        | ✔      |        | [IBlockState](/Vanilla/Blocks/IBlockState)     | ✔               |            |            | ✔             |          |        |
-| player                            | ✔      |        | [IPlayer](/Vanilla/Players/IPlayer)            | ✔               | ✔          | ✔          | ✔             | ✔        |        |
-| position                          | ✔      |        | [IBlockPos](/Vanilla/World/IBlockPos)          |                 | ✔          | ✔          | ✔             |          |        |
-| world                             | ✔      |        | [IWorld](/Vanilla/World/IWorld)                |                 | ✔          | ✔          | ✔             |          |        |
+| blockState                        | ✔      |        | [IBlockState](/Vanilla/Blocks/IBlockState/)     | ✔               |            |            | ✔             |          |        |
+| player                            | ✔      |        | [IPlayer](/Vanilla/Players/IPlayer/)            | ✔               | ✔          | ✔          | ✔             | ✔        |        |
+| position                          | ✔      |        | [IBlockPos](/Vanilla/World/IBlockPos/)          |                 | ✔          | ✔          | ✔             |          |        |
+| world                             | ✔      |        | [IWorld](/Vanilla/World/IWorld/)                |                 | ✔          | ✔          | ✔             |          |        |
 | canceled                          | ✔      | ✔      | boolean                                        | ✔               |            |            | ✔             |          |        |
 | height                            | ✔      | ✔      | int                                            | ✔               |            |            |               |          |        |
 | width                             | ✔      | ✔      | int                                            | ✔               |            |            |               |          |        |
@@ -54,7 +54,7 @@ Empty table fields mean that the getter/setter does not exist!
 | distance                          | ✔      | ✔      | int                                            | ✔               |            |            |               |          |        |
 | harvestable                       | ✔      |        | boolean                                        |                 |            |            | ✔             |          |        |
 | repairAmount                      | ✔      |        | int                                            |                 |            |            |               |          | ✔      |
-| ammoItem                          | ✔      |        | [IItemStack](Vanilla/Items/IItemStack)         |                 |            |            |               | ✔        |        |
+| ammoItem                          | ✔      |        | [IItemStack](/Vanilla/Items/IItemStack/)         |                 |            |            |               | ✔        |        |
 | useTime                           | ✔      |        | int                                            |                 |            |            |               | ✔        |        |
 | baseInaccuracy                    | ✔      | ✔      | float                                          |                 |            |            |               | ✔        |        |
 | bonusInaccuracy                   | ✔      | ✔      | float                                          |                 |            |            |               | ✔        |        |

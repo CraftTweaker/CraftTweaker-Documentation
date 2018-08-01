@@ -22,6 +22,6 @@ public interface IData {
 
 ## What methods can be annotated || Additional Info
 
-- You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators).
+- You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators/).
 - Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
-- You should give the annotation a [ZenOperator value](/Dev_Area/ZenOperators) (e.g. `OperatorType.ADD`). You can find a list of all possible OperatorTypes [here](/Dev_Area/ZenOperators).
+- You should give the annotation a [ZenOperator value](/Dev_Area/ZenOperators/) (e.g. `OperatorType.ADD`). You can find a list of all possible OperatorTypes [here](/Dev_Area/ZenOperators/).

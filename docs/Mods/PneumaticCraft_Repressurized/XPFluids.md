@@ -17,7 +17,7 @@ You can call the XP Fluids package using `mods.pneumaticcraft.xpfluid`.
 
 ## Removing
 
-This function deregisters the [ILiquidStack](/Vanilla/Variable_Types/ILiquidStack) `fluid`:
+This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
 
 ```
 mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack fluid);

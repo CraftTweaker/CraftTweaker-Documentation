@@ -9,7 +9,7 @@ You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
 ## Removing
 
-This function removes the [ILiquidStack](/Vanilla/Variable_Types/ILiquidStack) `fluid` its fuel value:
+This function removes the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` its fuel value:
 
 ```
 mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);

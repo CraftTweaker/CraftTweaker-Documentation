@@ -6,7 +6,7 @@ The ElvenTrade package is used for adding or removing recipes to/from the Botani
 You can call the ElvenTrade package using `mods.botania.ElvenTrade`
 
 ## Find all registered Recipes
-You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands).
+You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

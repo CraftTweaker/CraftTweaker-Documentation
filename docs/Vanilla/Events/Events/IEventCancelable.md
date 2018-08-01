@@ -7,7 +7,7 @@ Note that events that have been canceled before CrT receives them will not be ch
 Also, if you register multiple handlers, and one of them cancels the event, the other CrT handlers will still receive it!
 
 ## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventCancelable;`
 
 ## What can be done with them?

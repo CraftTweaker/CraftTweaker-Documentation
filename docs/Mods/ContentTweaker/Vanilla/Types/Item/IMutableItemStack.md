@@ -1,7 +1,7 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient)!
+A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
+That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
@@ -24,4 +24,4 @@ A Stack's count is the number of items in that stack!
 Parameters:
 
 - int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer) player → the player/Entity damaging the item
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item

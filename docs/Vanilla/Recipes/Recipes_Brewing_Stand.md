@@ -1,7 +1,7 @@
 # Brewing Recipe Handler
 
 ## Access the Brewing Handler
-You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions).
+You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
 
 ## Recipe Methods
 

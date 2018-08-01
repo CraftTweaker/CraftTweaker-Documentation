@@ -101,7 +101,7 @@ reskillable:building|15
 Since the release of Reskillable we've moved from a skill name system to a resource location name system.
 This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location.
 You can find the Skill's ResourceLocations under:
-[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)
+[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
 
 
 
@@ -118,7 +118,7 @@ trait|reskillable:battle_spirit
 ```
 
 You can find the Traits's ResourceLocations under:
-[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits)
+[Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
 
 
 ## Inverted Requirements:

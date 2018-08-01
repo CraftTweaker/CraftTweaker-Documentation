@@ -3,7 +3,7 @@
 Using this package you can create materials that you can then create tools with!
 
 ## Importing the class
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.MaterialBuilder;`
 
 ## Creating a Material
@@ -17,7 +17,7 @@ val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat"
 ```
 
 Remember, that you will need to register the material after you've done your changes.  
-This can be done with the `register` method which will return a [Material Representation](Material) of the new Material.
+This can be done with the `register` method which will return a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of the new Material.
 ```
 myMat.register();
 ```
@@ -31,19 +31,19 @@ You can set and get these properties using `myMaterial.name`.
 | identifier          | string                                                             | Unique name                                                  |
 | color               | int                                                                |                                                              |
 | hidden              | bool                                                               |                                                              |
-| liquid              | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)                      | Smeltery output                                              |
+| liquid              | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)                     | Smeltery output                                              |
 | craftable           | bool                                                               | Can be created in the part builder                           |
 | castable            | bool                                                               | Can be created using casts. Requires liquid to be set!       |
-| representativeItem  | [IItemStack](/Vanilla/Items/IItemStack)                            | Shown item in the tinkers' manual                            |
-| representativeOre   | [IOreDictEnty](/Vanilla/OreDict/IOreDictEnty)                      | Shown if representativeItem is null                          |
-| shard               | [IItemStack](/Vanilla/Items/IItemStack)                            | Used instead of the tinker's shard item in the part builder. |
+| representativeItem  | [IItemStack](/Vanilla/Items/IItemStack/)                           | Shown item in the tinkers' manual                            |
+| representativeOre   | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)                   | Shown if representativeItem is null                          |
+| shard               | [IItemStack](/Vanilla/Items/IItemStack/)                           | Used instead of the tinker's shard item in the part builder. |
 | localizedName       | string                                                             | The shown name                                               |
 
 
 ## Calculated Properties
 ### ItemLocalizer
 You can use this function to calculate the material names if you need that to be the case.  
-Uses a [Material Representation](Material) of this material and the name of the tool that's being renamed (e.g. "Mattock")
+Uses a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of this material and the name of the tool that's being renamed (e.g. "Mattock")
 ```
 myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 ```
@@ -59,7 +59,7 @@ myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
 myMaterial.removeItem(<minecraft:iron_block>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions) but no Transformers.  
+- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers.  
 - `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the second example above, you need 4 iron blocks per addition. Defaults to 1.
 - `amountMatched` is the amount of material points added per `amountNeeded`. In the second example above four iron blocks give two material points. Defaults to 144 (one ingot/one Material value).
 - If you use the `remove function`, it will remove all trait ingredients that match for the item.
@@ -70,7 +70,7 @@ myMaterial.removeItem(<minecraft:iron_block>);
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
 Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Representation](Trait), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits).
+Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/rait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits).
 Possible values for `dependency` are:
 
 - `null` (default) → All items, unless that dep already has other traits.

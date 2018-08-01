@@ -1,7 +1,7 @@
 # IFormatter
 
 ## Accessing the text formatting Handler
-You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions).
+You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions/).
 
 ## Formatting a text
 

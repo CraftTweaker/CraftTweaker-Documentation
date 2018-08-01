@@ -3,12 +3,12 @@ Mekanism
 
 Mekanism CraftTweaker support has been integrated directly into Mekanism now ([link](https://github.com/aidancbrady/Mekanism/tree/master/src/main/java/mekanism/common/integration/crafttweaker))
 
-Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack)
+Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack/)
 ```
 <gas:oxygen>
 <gas:water> *
 ```
-*Noting that `<gas:water>` is different from `<liquid:water>`
+*Noting that `<gas:water>` is different from `<liquid:water>`*
 
 
 Example

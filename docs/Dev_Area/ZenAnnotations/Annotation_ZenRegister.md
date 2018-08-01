@@ -1,6 +1,6 @@
 # ZenRegister
 
-The ZenRegister Annotation is used to register a class that also has either the [`@ZenClass`](Annotation_ZenClass) or the [`@ZenExpansion`](Annotation_ZenExpansion) annotation.  
+The ZenRegister Annotation is used to register a class that also has either the [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) or the [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) annotation.  
 This is the preferred way of registering Classes in ZenScript.
 
 ## Example 

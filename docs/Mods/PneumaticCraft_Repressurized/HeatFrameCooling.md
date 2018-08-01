@@ -8,7 +8,7 @@ You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframe
 
 ## Removing
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `output`:
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);

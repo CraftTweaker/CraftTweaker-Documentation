@@ -6,19 +6,19 @@ It can be canceled to prevent further processing.
 ## Event Class
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSetSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Event interface extensions
 PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IPlayerEvent](IPlayerEvent)
-- [IEventCancelable](IEventCancelable)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 The following information can be retrieved from the event:
 
 | ZenGetter  | Return Type                           |
 |------------|---------------------------------------|
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer)   |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
 | `isForced` | bool                                  |
-| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos) |
+| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |

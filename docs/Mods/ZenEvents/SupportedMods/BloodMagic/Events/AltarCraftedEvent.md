@@ -11,7 +11,7 @@ The AltarCraftedEvent implements following EventClasses and thus is able to use 
 ## Event Class
 You will need to cast the event in the function header as this class:  
 `mods.bloodmagic.AltarCraftedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## ZenSetter/Getter
 
@@ -19,4 +19,4 @@ Empty table fields mean that the getter/setter does not exist!
 
 | ZenGetter Name | ZenSetter Name | Type                                   |
 |----------------|----------------|----------------------------------------|
-| output         | output         |[IItemStack](/Vanilla/Items/IItemStack) |
+| output         | output         |[IItemStack](/Vanilla/Items/IItemStack/) |
