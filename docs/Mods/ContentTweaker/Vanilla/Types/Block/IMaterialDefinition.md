@@ -13,17 +13,17 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type                                                           |
-|-----------------|---------------------|-----------------------------------------------------------------------|
-| blocksLight     | blocksLight()       | bool                                                                  |
-| blocksMovement  | blocksMovement()    | bool                                                                  |
-| canBurn         | getCanBurn()        | bool                                                                  |
-| mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction) |
-| liquid          | isLiquid()          | bool                                                                  |
-| opaque          | isOpaque()          | bool                                                                  |
-| replaceable     | isReplaceable()     | bool                                                                  |
-| solid           | isSolid()           | bool                                                                  |
-| toolNotRequired | isToolNotRequired() | bool                                                                  |
+| ZenGetter       | ZenMethod           | Return Type                                                            |
+|-----------------|---------------------|------------------------------------------------------------------------|
+| blocksLight     | blocksLight()       | bool                                                                   |
+| blocksMovement  | blocksMovement()    | bool                                                                   |
+| canBurn         | getCanBurn()        | bool                                                                   |
+| mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
+| liquid          | isLiquid()          | bool                                                                   |
+| opaque          | isOpaque()          | bool                                                                   |
+| replaceable     | isReplaceable()     | bool                                                                   |
+| solid           | isSolid()           | bool                                                                   |
+| toolNotRequired | isToolNotRequired() | bool                                                                   |
 
 
 

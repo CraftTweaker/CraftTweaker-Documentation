@@ -315,6 +315,7 @@ pages:
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+            - PushReaction: 'Mods/ContentTweaker/Vanilla/Types/Block/PushReaction.md'
           - Color:
             - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
           - Item:
