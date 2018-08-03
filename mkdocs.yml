@@ -300,6 +300,7 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IBlockDropHandler: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler.md'
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
@@ -320,6 +321,8 @@ pages:
             - PushReaction: 'Mods/ContentTweaker/Vanilla/Types/Block/PushReaction.md'
           - Color:
             - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
+          - Drops:
+            - ICTItemList: 'Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList.md'
           - Item:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
           - Player:
