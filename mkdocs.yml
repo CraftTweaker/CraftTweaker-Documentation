@@ -332,6 +332,7 @@ pages:
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
+            - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
