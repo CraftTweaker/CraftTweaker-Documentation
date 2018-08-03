@@ -300,7 +300,7 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
+            - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
             - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
@@ -308,6 +308,7 @@ pages:
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
             - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
+            - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
           - Block:
@@ -343,6 +344,8 @@ pages:
           - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
           - Functions:
             - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
+            - MaterialPartColorSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartColorSupplier.md'
+            - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartLocalizedNameSupplier.md'
         - Parts:
           - Part: 'Mods/ContentTweaker/Materials/Parts/Part.md'
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'

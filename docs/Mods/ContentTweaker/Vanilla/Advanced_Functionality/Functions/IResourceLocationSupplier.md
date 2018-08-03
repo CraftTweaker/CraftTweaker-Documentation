@@ -8,8 +8,5 @@ It might be required for you to import the package if you encounter any issues, 
 
 
 ## Parameters
-The IResourceLocationSupplier Function is a function with following parameters.  
-
-- string identifier → what the location is used for, for example "model"
-
+The IResourceLocationSupplier Function is a function with no parameters.  
 The function needs to return an [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/).
