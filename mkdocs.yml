@@ -297,6 +297,7 @@ pages:
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
         - Advanced Functionality: 
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - Map: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
