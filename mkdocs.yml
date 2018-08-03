@@ -352,6 +352,9 @@ pages:
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
+      - Chickens:
+        - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
+        - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
         - Brackets:
           - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
