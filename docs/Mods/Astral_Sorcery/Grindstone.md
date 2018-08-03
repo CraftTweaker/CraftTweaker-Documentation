@@ -18,4 +18,7 @@ mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 ```JAVA
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);
 mods.astralsorcery.Grindstone.addRecipe(<minecraft:stone>, <minecraft:gravel>);
+
+//mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output, float doubleChance);
+mods.astralsorcery.Grindstone.addRecipe(<minecraft:cobblestone>, <minecraft:gravel>, 0.5f);
 ```

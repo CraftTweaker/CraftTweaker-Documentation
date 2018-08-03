@@ -216,8 +216,10 @@ pages:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
+        - Liquid Interaction: 'Mods/Astral_Sorcery/LiquidInteraction.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
+        - Util: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Requirements:
