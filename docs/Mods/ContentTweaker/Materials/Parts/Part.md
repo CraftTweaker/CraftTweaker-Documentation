@@ -60,6 +60,7 @@ You can retrieve the following information from a Part:
 
 | ZenMethod                 | Return Type                            |
 |---------------------------|----------------------------------------|
+| hasOverlay()              | boolean                                |
 | getName()                 | String                                 |
 | getUnlocalizedName()      | String                                 |
 | getShortUnlocalizedName() | String                                 |

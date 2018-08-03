@@ -25,18 +25,19 @@ List:
 
 You can retrieve the following information from a MaterialPart:
 
-| ZenMethod            | Return Type                                                                    |
-|----------------------|--------------------------------------------------------------------------------|
-| getName()            | String                                                                         |
-| getLocalizedName()   | String                                                                         |
-| hasEffect()          | boolean                                                                        |
+| ZenMethod            | Return Type                                                                     |
+|----------------------|---------------------------------------------------------------------------------|
+| getName()            | String                                                                          |
+| getLocalizedName()   | String                                                                          |
+| hasEffect()          | boolean                                                                         |
+| hasOverlay()         | boolean                                                                         |
 | getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
-| getTextureLocation() | String                                                                         |
+| getTextureLocation() | String                                                                          |
 | getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
-| getColor()           | int                                                                            |
-| isColorized()        | boolean                                                                        |
+| getColor()           | int                                                                             |
+| isColorized()        | boolean                                                                         |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
 You can also set the following information of a MaterialPart:
