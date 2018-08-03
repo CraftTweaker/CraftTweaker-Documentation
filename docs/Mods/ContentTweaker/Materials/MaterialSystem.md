@@ -97,3 +97,11 @@ You can use these methods to retrieve a map using strings as keys and the object
 | getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
 | getParts()         | [`Map<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part/)                     |
 | getPartType()      | [`Map<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType/)             |
+
+```
+import mods.contenttweaker.MaterialPart;
+
+val part = MaterialSystem.getMaterialPart("name"); //as MaterialPart
+
+val partMap = MaterialSystem.getMaterialPartsByRegex(".*"); //as MaterialPart[string]
+```
