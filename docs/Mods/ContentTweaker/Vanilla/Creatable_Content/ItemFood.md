@@ -34,7 +34,7 @@ item.setHealAmount(64);
 | Property       | Type  | Required | Default Value | Description/Notes                                           |
 |----------------|-------|----------|---------------|-------------------------------------------------------------|
 | healAmount     | int   | Yes      |               | How many food points are restored when eaten?               |
-| alwaysEditable | bool  | No       | false         | Can the food still be eaten if the user's food bar is full? |
+| alwaysEdible   | bool  | No       | false         | Can the food still be eaten if the user's food bar is full? |
 | wolfFood       | bool  | No       | false         | Can the food be used to tame woves?                         |
 | saturation     | float | No       | 0.6           | The food's Saturation Value                                 |
 
