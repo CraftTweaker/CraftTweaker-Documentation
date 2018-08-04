@@ -1,6 +1,6 @@
 # Vanilla Factory
 
-The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
+The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
 
 ## Calling
 You can find the package at `mods.contenttweaker.VanillaFactory`
@@ -17,7 +17,7 @@ Parameters:
 - String unlocalizedName: The Block's unlocalized name.
 - [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material: The base material the block is made of.
 
-Returns a [BlockRepresentation](/Mods/ContentTweaker/Creatable_Content/Block/) object. Check the [Block page](/Mods/ContentTweaker/Creatable_Content/Block/) for further information and an example script!
+Returns a [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) object. Check the [Block page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) for further information and an example script!
 
 
 ### Create Items
@@ -29,7 +29,7 @@ Parameters:
 
 - String unlocalizedName: The item's unlocalized name.
 
-Returns an [ItemRepresentation](/Mods/ContentTweaker/Creatable_Content/Item/) object. Check the [Item page](/Mods/ContentTweaker/Creatable_Content/Item/) for further information and an example script!
+Returns an [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) object. Check the [Item page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) for further information and an example script!
 
 
 ### Create Creative Tabs

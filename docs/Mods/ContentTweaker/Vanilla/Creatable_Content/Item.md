@@ -4,7 +4,7 @@ This allows you to add items to the game!
 
 ## Create the Item Representation
 Before you can add the item, you need to create an Item Representation which will allow you to set the properties of the item you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Creatable_Content/VanillaFactory/) comes in:
+This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 ```JAVA
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
