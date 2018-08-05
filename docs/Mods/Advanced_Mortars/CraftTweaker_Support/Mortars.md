@@ -1,19 +1,21 @@
 # 研钵
 
 ## 导入相关包
-你可以使用`mods.advancedmortars.Mortar`以导入相关包。
 
-## 添加合成表
+使用`mods.advancedmortars.Mortar`以导入相关包。
 
-|类型          |数据类型                               		  |举例                              |
-|----------------------|--------------------------------------------------|--------------------------------------|
-|研钵种类  |String[] 		   								  |["wooden", "stone", "iron", "diamond"]|
-|产物        |[IItemstack](/Vanilla/Items/IItemStack)			  |<minecraft:diamond\>					 |
-|合成一份所需要的单击次数|Integer											  |2000									 |
-|原材料        |[IIngredient](/Vanilla/Variable_Types/IIngredient)|[<ore:logWood\>, <ore:plankWood\>]	 |
+## 添加配方
+
+| 类型                     | 数据类型                                                   | 例子                                   |
+| ------------------------ | ---------------------------------------------------------- | -------------------------------------- |
+| 可以使用研钵种类         | 字符串（数组)                                              | ["wooden", "stone", "iron", "diamond"] |
+| 输出                     | [物品堆（IItemstack）](/Vanilla/Items/IItemStack)          | <minecraft:diamond\>                   |
+| 合成一份所需要的单击次数 | 整型                                                       | 2000                                   |
+| 输入                     | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient) | [<ore:logWood\>, <ore:plankWood\>]     |
 
 ### 例子
-```JAVA
+
+```java
 ///// "研磨"
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:15> * 4, 8, [<minecraft:bone>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <plants2:generic:4> * 2, 8, [<botania:flower>]);
