@@ -25,6 +25,7 @@ Grinder.addRecipe(<minecraft:sapling>, <minecraft:leaves>, 4, <minecraft:sapling
 
 ```
 Grinder.removeRecipe(IItemStack input);
+//input 输入
 
 Grinder.removeRecipe(<minecraft:quartz_ore>);
 ```
