@@ -15,24 +15,24 @@ These methods allow for creation and modification of a drop table. All builder m
 | addItem()          | Adds the specified item to the current slot of the drop table.                   |
 | enableFortune()    | Enables the current slot to benefit from the fortune enchant.                    |
 
-###Usage:
-####`newSlot()`
+### Usage:
+#### `newSlot()`
 
 DropTableBuilder.newSlot() will create a new builder.
 \<builder\>.newSlot() will finalize the current slot and start a new one.
 
-####`addItem(String itemStr[, int weight[, int count]])`
+#### `addItem(String itemStr[, int weight[, int count]])`
 
 `itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty.
 `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>. Defaults to 1 if omitted.
 `count` is how many of the item drop if selected. Defaults to 1 if omitted.
 
-####`enableFortune()`
+#### `enableFortune()`
 
 Slots that have fortune enabled will select a number of additional items from the slot up to the level of fortune used. Matches vanilla fortune behavior on slots that have only 1 item.
 
 ## Examples using the Builder 
-###Creating a drop table
+### Creating a drop table
 
 ```
 var complextable = DropTableBuilder.newSlot()
@@ -58,7 +58,7 @@ var lapistable = DropTableBuilder.newSlot()
 ```
 This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from fortune.
 
-###Using a drop table
+### Using a drop table
 Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
 ```
 var lapisData = MaterialSystem.getMaterialBuilder()
