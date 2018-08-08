@@ -218,7 +218,7 @@ pages:
       - 物质炮: 'Mods/Applied_Energistics_2/Cannon.md'
       - 石英磨具: 'Mods/Applied_Energistics_2/Grindstone.md'
       - 压印器: 'Mods/Applied_Energistics_2/Inscriber.md'
-      - P2P 连接: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
+      - P2P 链接: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - 空间 IO 端口: 'Mods/Applied_Energistics_2/Spatial.md'
     - Artisan Worktables:
       - 合成构建器:
