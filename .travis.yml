@@ -1,0 +1,9 @@
+language: python
+sudo: false
+
+install:
+  - pip install mkdocs==0.16.3
+
+
+script:
+  - mkdocs build --clean
