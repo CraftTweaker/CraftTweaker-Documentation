@@ -659,7 +659,7 @@ pages:
       - ZenOperator: 'Dev_Area/ZenAnnotations/Annotation_ZenOperator.md'
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
-      - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_Zenoc.md'
+      - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
 # Do not edit in PRs below here
