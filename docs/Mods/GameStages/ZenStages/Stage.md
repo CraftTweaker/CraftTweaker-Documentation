@@ -35,13 +35,13 @@ TestStage.addIngredient(<ore:wool>);
 TestStage.addIngredients([<minecraft:boat>, <minecraft:string>], false);
 ```
 
-Add an Ingredient Override. This is used when your Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
+Add an Ingredient Override. This is used when you're Staging an entire mod via the ModId but you need to re-stage some items from the mod to another [Stage](/Mods/GameStages/ZenStages/Stage/), so this allows you to re-stage items.
 ```java
 // addIngredientOverride(IIngredient ingredient, @Optional(valueBoolean = true) boolean recipeStage);
 TestStage.addIngredientOverride(<myawesomemod:generator>, true);
 ```
 
-Add a ModId to a stage. What this does it stage **all** items from the ModId provided to this stage. You can also provided an array of IIngredients which the items listed won't be staged. (Basically ignored)
+Add a ModId to a stage. This will stage all the items found which are registered by the modId provided to the Stage. You can also provide an array of IIngredients which the provided items won't be staged.
 ```java
 // addModId(String modId);
 // addModId(String[] modIds);
@@ -58,7 +58,7 @@ TestStage.addLiquid(<liquid:water>);
 TestStage.addLiquids([<minecraft:water>, <minecraft:lava>]);
 ```
 
-Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Add a dimension to a stage. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 ```java
 // addDimension(int dimId);
 TestStage.addDimension(-1);
@@ -102,7 +102,7 @@ Add a TiC modifier to a stage. Requires [TinkerStages](/Mods/GameStages/TinkerSt
 TestStage.addTiCModifier("mending_moss");
 ```
 
-Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages) to be installed.
+Add a IE Multiblock to a stage. Requires [Multi Block Stages](https://github.com/The-Acronym-Coders/MultiBlock-Stages/) to be installed.
 ```java
 // addIEMultiBlock(string multiblock);
 // addIEMultiBlocks(string multiblocks);

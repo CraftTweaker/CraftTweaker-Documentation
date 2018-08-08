@@ -1,5 +1,5 @@
 # ZenStager
-This class is the main handler for creating new [Stages](/Mods/GameStages/ZenStages/Stage), which then you can build to tell the game to start staging what you have told it. It comes pre-loaded with methods to allow easy integration with other mods using the [GameStages API](https://minecraft.curseforge.com/projects/game-stages) along with some custom tweaks to make modpack makers lives that little bit easier.
+This class is the main handler for creating new [Stages](/Mods/GameStages/ZenStages/Stage), which then you can build to tell the game to start staging what you've staged. It comes pre-loaded with methods to allow easy integration with other mods using the [GameStages API](https://minecraft.curseforge.com/projects/game-stages) along with some custom tweaks to make modpack makers lives that little bit easier.
 
 You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
@@ -53,42 +53,42 @@ Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/R
 // mods.zenstages.ZenStager.addContainer(string packageName, Stage[] stages);
 ZenStager.addContainer("my.awesome.container", [TestStage]);
 ```
-Get the ingredient stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found.
+Get the ingredient stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 ```java
 // mods.zenstages.ZenStager.getIngredientStage(IIngredient ingredient);
 var StickStage as Stage = ZenStager.getIngredientStage(<minecraft:stick>);
 ```
-Get the liquid stack stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found.
+Get the liquid stack stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 ```java
 // mods.zenstages.ZenStager.getLiquidStage(ILiquidStack liquidStack);
 var StickStage as Stage = ZenStager.getLiquidStage(<liquid:water>);
 ```
-Get the recipe name stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Get the recipe name stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getRecipeNameStage(string recipeName);
 var RecipeNameStage as Stage = ZenStager.getRecipeNameStage("minecraft:boat");
 ```
-Get the container stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Get the container stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getContainerStages(string containerName);
 var ContainerStage as Stage = ZenStager.getContainerStages("my.awesome.container");
 ```
-Get the package stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
+Get the package stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getPackageStages(string packageName);
 var PackageStage as Stage = ZenStager.getPackageStages("appeng");
 ```
-Get the dimension stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
+Get the dimension stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getDimensionStage(int dimId);
 var DimStage as Stage = ZenStager.getDimensionStage(-1);
 ```
-Get the mob stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
+Get the mob stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getMobStage(string mobName);
 var MobStage as Stage = ZenStager.getMobStage("minecraft:skeleton");
 ```
-Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) class or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
+Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 ```java
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
 var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
