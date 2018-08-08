@@ -33,5 +33,5 @@ Returns a new IBlockPos that is `offset` blocks into the `directionName` or `fac
 `IBlockPos getOffset(Facing facing, int offset)`
 Parameters:
 
-- [Facing](facing) facing → The direction
+- [Facing](/Vanilla/World/IFacing/) facing → The direction
 - int offset → how many blocks in that direction?

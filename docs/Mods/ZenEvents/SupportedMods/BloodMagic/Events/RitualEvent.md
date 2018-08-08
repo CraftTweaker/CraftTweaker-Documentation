@@ -11,8 +11,8 @@ The RitualEvents implements following EventClasses and thus are able to use all 
 
 | Class                                                       | RitualActivated | RitualRun | RitualStop |
 |-------------------------------------------------------------|-----------------|-----------|------------|
-| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable) | ✔               |      ✔    |            |
-| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent)         | ✔               |           |            |
+| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/) | ✔               |      ✔    |            |
+| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)         | ✔               |           |            |
 
 
 ## Event Class
@@ -26,7 +26,7 @@ mods.bloodmagic.RitualActivatedEvent
 mods.bloodmagic.RitualRunEvent
 mods.bloodmagic.RitualStopEvent
 ```  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 
 ## ZenSetter/Getter
@@ -35,9 +35,9 @@ Empty table fields mean that the getter/setter does not exist!
 
 | ZenGetter Name    | ZenSetter Name | Type                                                                                    | Activated | Run | Stop |
 |-------------------|----------------|-----------------------------------------------------------------------------------------|-----------|-----|------|
-| masterRitualStone |                | [MasterRitualStone](/Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/MasterRitualStone) | ✔          | ✔    | ✔     |
-| ritual            |                | [Ritual](/Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual)                       | ✔          | ✔    | ✔     |
-| activationCrystal |                | [IItemStack](/Vanilla/Items/IItemStack)                                                 | ✔          |     |      |
+| masterRitualStone |                | [MasterRitualStone](/Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/MasterRitualStone/) | ✔          | ✔    | ✔     |
+| ritual            |                | [Ritual](/Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual/)                       | ✔          | ✔    | ✔     |
+| activationCrystal |                | [IItemStack](/Vanilla/Items/IItemStack/)                                                 | ✔          |     |      |
 | crystalTier       |                | int                                                                                     | ✔          |     |      |
 | canceled          | canceled       | bool                                                                                    | ✔          | ✔    |      |
-| player            |                | [IPlayer](/Vanilla/Players/IPlayer)                                                     | ✔          |     |      |
+| player            |                | [IPlayer](/Vanilla/Players/IPlayer/)                                                     | ✔          |     |      |

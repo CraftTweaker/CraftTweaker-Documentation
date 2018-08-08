@@ -1,13 +1,13 @@
 # Cross-Script Reference
 
-All scripts that have [static variables](/Advanced_Functions/Global_Static_Variables) or [custom functions](/Advanced_Functions/Custom_Functions) are registered to the cross-script reference.  
+All scripts that have [static variables](/Advanced_Functions/Global_Static_Variables/) or [custom functions](/Advanced_Functions/Custom_Functions/) are registered to the cross-script reference.  
 This allows you to access these fields/functions using the dot-notation.
 
 ## Specifications
 
 - Cross-script references start with `scripts.`
 - You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/Advanced_Functions/Import) should you choose to do so.
+- You can use the dot-notation in an [import statement](/Advanced_Functions/Import/) should you choose to do so.
 - ZS first checks for matching directories then for matching files or values.
 
 

@@ -1,6 +1,6 @@
 # Associative Arrays
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## Declaring an Associative Array
 
@@ -33,7 +33,7 @@ Okay, so what do I need to think of when using these?
 
 ## Refering to Items inside an Associative Array.
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops):  
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!  
 ```JAVA
@@ -114,8 +114,8 @@ There are two Iterators that allow you to iterate over an Associative Array:
 
 Let's add an Associative Array that stores crafting recipes to be iterated over:  
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient)
+- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
+- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
 - We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
 - We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 

@@ -4,7 +4,7 @@
 This feature allows you to lock the ability to attack/damage specific entities.
 
 ### Syntax:
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition)
+[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
 ```
 # Blank Example:

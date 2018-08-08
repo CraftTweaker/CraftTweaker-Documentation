@@ -26,7 +26,7 @@ mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <mi
 
 | Parameter           | Type                                                  | description                                   |
 |---------------------|-------------------------------------------------------|-----------------------------------------------|
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)         | The Recipe's output                           |
-| ingredients         | [IItemStack](/Vanilla/Items/IItemStack)[]             | The Recipe's item input(s)                    |
+| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)         | The Recipe's output                           |
+| ingredients         | [IItemStack](/Vanilla/Items/IItemStack/)[]             | The Recipe's item input(s)                    |
 | timePerItem         | int                                                   | Amount of inputFluid on organic item requires |
-| itemOutput          | [WeightedItemStack](/Vanilla/Items/WeightedItemStack) | Output multiplier                             |
+| itemOutput          | [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | Output multiplier                             |

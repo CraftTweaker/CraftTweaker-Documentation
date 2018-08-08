@@ -8,13 +8,13 @@ You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`
 
 |Required  |Type                 |Data Type                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[IItemStack](/Vanilla/Items/IItemStack) 													|
-|Required  |Input                |[IIngredient](/Vanilla/Variable_Types/IIngredient)      									|
-|Required  |Slag                 |[IItemStack](/Vanilla/Items/IItemStack)													|
+|Required  |Output               |[IItemStack](/Vanilla/Items/IItemStack/) 													|
+|Required  |Input                |[IIngredient](/Vanilla/Variable_Types/IIngredient/)      									|
+|Required  |Slag                 |[IItemStack](/Vanilla/Items/IItemStack/)													|
 |Required  |Time                 |Integer																					|
 |Required  |Energy Per Tick      |Integer																					|
-|Optional  |Additives            |[IIngredient](/Vanilla/Variable_Types/IIngredient) Array[]								|
-|Optional  |Special Recipe Type  |String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes.md)  |
+|Optional  |Additives            |[IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]								|
+|Optional  |Special Recipe Type  |String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/)  |
 
 
 ### Example
@@ -34,7 +34,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 
 ### Example

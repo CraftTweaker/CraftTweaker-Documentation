@@ -18,7 +18,7 @@ Some recipes require an altar level:
 
 ## Remove Altar Recipes
 
-This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack) `output` and uses the provided altar level.  
+This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses the provided altar level.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
 ```JAVA
@@ -30,13 +30,13 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ## Add Altar Recipes
 
 All recipe addition methods require these parameters:  
-[IItemStack](/Vanilla/Items/IItemStack) `output`,  
+[IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
 int `craftingTickTime`,  
-[IIngredient](/Vanilla/Variable_Types/IIngredient)[] `inputs`
+[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] `inputs`
 
 The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
-You can use [IItemStacks](/Vanilla/Items/IItemStack), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry) or `null` as the array's members
+You can use [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or `null` as the array's members
 
 These recipes cannot be shapeless!
 

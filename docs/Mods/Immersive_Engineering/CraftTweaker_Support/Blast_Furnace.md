@@ -9,10 +9,10 @@ You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurn
 ## Add Recipe:
 |Required  |Type    |Data Type                                			 |
 |----------|--------|----------------------------------------------------|
-|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack)  			 |
-|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient)  |
+|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack/)  			 |
+|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient/)  |
 |Required  |Time    |Integer  											 |
-|Optional  |Slag    |[IItemstack](/Vanilla/Items/IItemStack)  			 |
+|Optional  |Slag    |[IItemstack](/Vanilla/Items/IItemStack/)  			 |
 
 
 ### Example
@@ -26,7 +26,7 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 ## Remove Recipe
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example:
 ```JAVA
@@ -40,7 +40,7 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ## Add Fuel
 |Required  |Type    |Data Type                                			|
 |----------|--------|---------------------------------------------------|
-|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
+|Required  |Input   |[IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 |Required  |Time    |Integer  											|
 
 ### Example
@@ -54,7 +54,7 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ## Remove Fuel
 |Required  |Type    |Data Type                                			 |
 |----------|--------|----------------------------------------------------|
-|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack)  			 |
+|Required  |Output  |[IItemstack](/Vanilla/Items/IItemStack/)  			 |
 
 ### Example
 ```JAVA

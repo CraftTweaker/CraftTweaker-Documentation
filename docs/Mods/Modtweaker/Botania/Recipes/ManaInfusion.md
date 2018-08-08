@@ -6,7 +6,7 @@ The ManaInfusion package is used for adding or removing recipes to/from the Bota
 You can call the ManaInfusion package using `mods.botania.ManaInfusion`
 
 ## Find all registered Recipes
-You can find all registered ManaInfusion recipes using [`/ct botania infusions`](/Mods/Modtweaker/Botania/Commands).
+You can find all registered ManaInfusion recipes using [`/ct botania infusions`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

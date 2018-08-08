@@ -6,11 +6,11 @@ The Orechid package is used for adding or removing generated ores to/from the Bo
 You can call the Orechid package using `mods.botania.Orechid`
 
 ## Find all registered Recipes
-You can find all registered ElvenTrade recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands).
+You can find all registered ElvenTrade recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) as output parameter, or the name of said oreDictEntry as string.
+You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
 ```
 //mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
@@ -22,7 +22,7 @@ mods.botania.Orechid.addOre("logWood", 500);
 
 ## Recipe removal
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) as output parameter, or the name of said oreDictEntry as string.
+You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
 ```
 //mods.botania.Orechid.removeOre(IOreDictEntry oreDict);

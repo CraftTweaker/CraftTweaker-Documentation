@@ -116,4 +116,4 @@ furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 furnace.all;
 ```
-Returns a [`List<IFurnaceRecipe>`](IFurnaceRecipe).
+Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).

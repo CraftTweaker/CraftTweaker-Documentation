@@ -42,7 +42,7 @@ All previous methods are simply short cuts to using the builder.
      * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
        ```setPriority(int priority)```
      * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible.
-       Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](HeatRegistry.md).  
+       Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
        ```setHeat(int heat)```  
      * Set the recipe to ignore the heat value and craft anyways  
        ```setIgnoreHeat(boolean ignoreHeat)```

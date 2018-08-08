@@ -30,5 +30,5 @@ val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
 ## What methods can be annotated || Additional Info
 
 - You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
-- Annotated Methods need one parameter when in a [ZenExpansion](Annotation_ZenExpansion), none if they are in a [ZenClass](Annotation_ZenClass).
-- Don't rely on ZenCasters in [ZenClasses](Annotation_ZenClass), they only work reliably in [ZenExpansions](Annotation_ZenExpansion).
+- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).

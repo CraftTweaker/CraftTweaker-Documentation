@@ -10,7 +10,7 @@ You can call the TPP package using `mods.pneumaticcraft.thermopneumaticprocessin
 
 ## Removing
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient) `output`:
+This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
 ```
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(IIngredient output);

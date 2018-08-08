@@ -1,6 +1,6 @@
 # LoadedMods
 
-You can use the [global keyword](/Vanilla/Global_Functions) `loadedMods` to access all currently loaded mods.  
+You can use the [global keyword](/Vanilla/Global_Functions/) `loadedMods` to access all currently loaded mods.  
 If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
 
 ## Check if a mod is loaded
@@ -53,4 +53,4 @@ If needed, it can be imported using `import crafttweaker.mods.IMod;`
 | name        | Returns the mod's internal name    | string                                    | `mod.name`        |
 | version     | Returns the mod's version          | string                                    | `mod.version`     |
 | description | Returns the mod description        | string                                    | `mod.description` |
-| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack)[] | `mod.items`       |
+| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |

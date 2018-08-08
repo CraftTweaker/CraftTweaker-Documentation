@@ -10,9 +10,9 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 
 |Required  |Type              |Data Type                                          |
 |----------|------------------|---------------------------------------------------|
-|Required  |Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
-|Required  |Input             |[IIngredient](/Vanilla/Variable_Types/IIngredient) |
-|Required  |Mold              |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Required  |Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
+|Required  |Input             |[IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+|Required  |Mold              |[IItemstack](/Vanilla/Items/IItemStack/)            |
 |Required  |Energy            |Integer                                            |
 |Required  |Input Size        |Integer                                            |
 
@@ -31,7 +31,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA
@@ -47,7 +47,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA

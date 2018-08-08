@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## Parameters
 The IEntityDropFunction is a function with the following parameters:
 
-- [IEntity](IEntity) entity → The entity that just died.
-- [IDamageSource](/Vanilla/Damage/IDamageSource) dmgSourve → The source of the entitie's death.
+- [IEntity](/Vanilla/Entities/IEntity/) entity → The entity that just died.
+- [IDamageSource](/Vanilla/Damage/IDamageSource/) dmgSourve → The source of the entitie's death.
 
-The Function needs to return an [IItemStack](/Vanilla/Items/IItemStack), or `null`.
+The Function needs to return an [IItemStack](/Vanilla/Items/IItemStack/), or `null`.

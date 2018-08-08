@@ -1,6 +1,6 @@
 # IWorldInfo
 
-The World Info interface is used to get even more information out of an [IWorld](IWorld) object.
+The World Info interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  

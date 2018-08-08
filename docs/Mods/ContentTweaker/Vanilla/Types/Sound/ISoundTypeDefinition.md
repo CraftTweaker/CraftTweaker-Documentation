@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.SoundType;` 
 
 ## Calling an ISoundTypeDefinition object
-You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type):  
+You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
 `<soundtype:wood>`
 
 ##ZenMethods without parameters
@@ -15,9 +15,9 @@ You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentT
 |----------------|-----------------------------------------------|-------------------------------------------------------------------|
 |getVolume()     |float                                          |Returns the type's volume                                          |
 |getPitch()      |float                                          |Returns the type's pitch                                           |
-|getBreakSound() |[ISoundEventDefinition](ISoundEventDefinition) |Returns the sound that occurs when the related block is broken     |
-|getStepSound()  |[ISoundEventDefinition](ISoundEventDefinition) |Returns the sound that occurs when the related block is stepped on |
-|getPlaceSound() |[ISoundEventDefinition](ISoundEventDefinition) |Returns the sound that occurs when the related block is placed     |
-|getHitSound()   |[ISoundEventDefinition](ISoundEventDefinition) |Returns the sound that occurs when the related block is hit        |
-|getFallSound()  |[ISoundEventDefinition](ISoundEventDefinition) |Returns the sound that occurs when the related block is falling    |
+|getBreakSound() |[ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) |Returns the sound that occurs when the related block is broken     |
+|getStepSound()  |[ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) |Returns the sound that occurs when the related block is stepped on |
+|getPlaceSound() |[ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) |Returns the sound that occurs when the related block is placed     |
+|getHitSound()   |[ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) |Returns the sound that occurs when the related block is hit        |
+|getFallSound()  |[ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) |Returns the sound that occurs when the related block is falling    |
 

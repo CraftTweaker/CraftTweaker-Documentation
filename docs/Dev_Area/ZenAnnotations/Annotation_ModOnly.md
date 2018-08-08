@@ -21,5 +21,5 @@ public class ModOnlyWiki {
 
 ## What classes can be annotated || Additional Info
 
-- You can annotate all Java Classes that also have the [`@ZenRegister` Annotation](Annotation_ZenRegister). Technically, you can register all classes, but only there it will have an impact.
+- You can annotate all Java Classes that also have the [`@ZenRegister` Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Technically, you can register all classes, but only there it will have an impact.
 - The Annotation requires a String value that represents the modName (`isModLoaded(annotation.getValue())` has to return true of the mod is loaded)

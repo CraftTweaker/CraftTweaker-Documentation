@@ -6,7 +6,7 @@ Now, since there are many types of toolcrafting, there are multiple Events and t
 ## Implementing EventClasses
 The TinkerCraftingEvents all implement the following EventClasses and thus are able to use all functionality they provide as well: 
 
-- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable)
+- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## Event Class
 You will need to cast the event in the function header as one of these classes:  
@@ -21,7 +21,7 @@ mods.tconstruct.ToolModifyEvent
 mods.tconstruct.ToolPartReplaceEvent
 mods.tconstruct.ToolPartCraftingEvent
 ```  
-You can, of course, also [import](/AdvancedFunctions/Import) the class before and use that name then.
+You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## ZenSetter/Getter
 
@@ -30,9 +30,9 @@ Empty table fields mean that the getter/setter does not exist!
 
 | ZenGetter Name   | ZenSetter Name   | Type                                                                       |
 |------------------|------------------|----------------------------------------------------------------------------|
-| player           |                  | [IPlayer](/Vanilla/Players/IPlayer)                                        |
-| item             |                  | [IItemStack](/Vanilla/Items/IItemStack) (can return null)                  |
-| message          |                  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) (can return null) |
+| player           |                  | [IPlayer](/Vanilla/Players/IPlayer/)                                        |
+| item             |                  | [IItemStack](/Vanilla/Items/IItemStack/) (can return null)                  |
+| message          |                  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) (can return null) |
 | canceled         | canceled         | bool                                                                       |
 
 ## ZenMethod
@@ -43,6 +43,6 @@ Empty table fields mean that the getter/setter does not exist!
 
 | ZenGetter Name         | Type                                           | Crafting | Modify | PartReplace | PartCrafting |
 |------------------------|------------------------------------------------|:--------:|:------:|:-----------:|:------------:|
-| toolParts              | List<[IItemStack](/Vanilla/Items/IItemStack)\> | ✔        |        | ✔           |              |
-| toolBeforeModification | [IItemStack](/Vanilla/Items/IItemStack)        |          | ✔      |             |              |
-| toolBeforeModification | [IItemStack](/Vanilla/Items/IItemStack)        |          |        |             |              |
+| toolParts              | List<[IItemStack](/Vanilla/Items/IItemStack/)\> | ✔        |        | ✔           |              |
+| toolBeforeModification | [IItemStack](/Vanilla/Items/IItemStack/)        |          | ✔      |             |              |
+| toolBeforeModification | [IItemStack](/Vanilla/Items/IItemStack/)        |          |        |             |              |

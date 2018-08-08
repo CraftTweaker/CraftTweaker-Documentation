@@ -8,7 +8,7 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 
 |Required  |Type                 |Data Type                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)   											|
+|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)   											|
 |Required  |Input                |Integer      																				|
 
 ### Example
@@ -24,7 +24,7 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 
 |Required  |Type                 |Data Type                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)  												|
 
 ### Example
 ```JAVA
@@ -40,7 +40,7 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 |Required  |Type                 |Data Type                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)  												|
 
 ### Example
 ```JAVA
@@ -55,7 +55,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 |Required  |Type                 |Data Type                                          										|
 |----------|---------------------|------------------------------------------------------------------------------------------|
-|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack)  												|
+|Required  |Output               |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)  												|
 
 ### Example
 ```JAVA

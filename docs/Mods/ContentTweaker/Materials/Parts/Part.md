@@ -8,11 +8,11 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Part;` 
 
 ## Retrieving such an object
-You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder)
+You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 
 <details>
-	<summary>Following types are pre-registered (Headlines are the [Part Types](PartType)):</summary>
+	<summary>Following types are pre-registered (Headlines are the [Part Types](/Mods/ContentTweaker/Materials/Parts/PartType/)):</summary>
 	<h4>Items:</h4>
 		<ul>
 			<li>Beam ![beam icon](Assets/beam.png)</li>
@@ -60,13 +60,14 @@ You can retrieve the following information from a Part:
 
 | ZenMethod                 | Return Type                            |
 |---------------------------|----------------------------------------|
+| hasOverlay()              | boolean                                |
 | getName()                 | String                                 |
 | getUnlocalizedName()      | String                                 |
 | getShortUnlocalizedName() | String                                 |
-| getPartType()             | [IPartType](IPartType)                 |
+| getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                 |
 | getPartTypeName()         | String                                 |
 | getOreDictPrefix()        | String                                 |
-| getData()                 | List<[IPartDataPiece](PartDataPiece)\> |
+| getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
 ## Register to Material(s)
 You can use this to register one or several Materials to this part
@@ -75,4 +76,4 @@ part.registerToMaterial(Material material);
 part.registerToMaterials(Material[] materials);
 ```
 
-The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart) object or a List of them, depending on whether you registered one or multiple materials at once.
+The function will either return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object or a List of them, depending on whether you registered one or multiple materials at once.

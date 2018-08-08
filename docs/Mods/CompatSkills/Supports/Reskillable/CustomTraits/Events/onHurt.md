@@ -1,7 +1,7 @@
 ### onHurt
 |Setter/Getter/Method|Method Names                      |Names                          |Input/Output                                             |
 |:-------------------|:---------------------------------|:------------------------------|---------------------------------------------------------|
-|Getter              |getDamageSource();                |damageSource();                |Returns an [IDamageSource](/Vanilla/Damage/IDamageSource)|
+|Getter              |getDamageSource();                |damageSource();                |Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/)|
 |Getter              |getAmount();                      |amount();                      |Returns an Float                                         |
 
 

@@ -1,6 +1,6 @@
 # Global Functions
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import).  
+Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
 Here's the list:
 
 ## print
@@ -24,7 +24,7 @@ Returns an int that shows how many global functions are registered.
 ## enableDebug
 
 Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor) is preferred though.
+Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
 
 ```java
 //enableDebug();
@@ -75,16 +75,16 @@ Returns a double
 
 | Field      | Description                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------|
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient)                                              |
-| events     | Accesses the [Event Handler](/AdvancedFunctions/Events/IEventManager)                         |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Recipes_Furnace)                              |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds) available) |
+| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
+| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
+| events     | Accesses the [Event Handler](/AdvancedFunctions/Events/IEventManager/)                         |
+| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
+| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Recipes_Furnace/)                              |
+| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
+| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
+| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
+| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
+| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
+| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
+| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
+| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |

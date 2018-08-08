@@ -6,7 +6,7 @@ Bear in mind that they still can!
 
 
 ## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPlayerEvent;`
 
 ## What can be done with these

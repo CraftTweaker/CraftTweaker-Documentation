@@ -5,7 +5,7 @@ You can add and remove crafting infusions.
 You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
 
 ## Removing
-This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack) `output`.  
+This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 ```JAVA
 //mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);

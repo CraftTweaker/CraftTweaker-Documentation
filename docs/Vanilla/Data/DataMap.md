@@ -2,10 +2,10 @@
 
 A Map, sometimes also called an Associative Array is a data structure that allows you to store multiple items.  
 Unlike an Array however, you can also give each of these item a key to call upon.  
-The DataMap expands [IData](IData), so each DataMap is IData, you might need this info later.
+The DataMap expands [IData](/Vanilla/data/IData/), so each DataMap is IData, you might need this info later.
 
 ## Creating a map:
-A Map is a special kind of [IData](IData), so at the very last you'll need to import that interface:  
+A Map is a special kind of [IData](/Vanilla/data/IData/), so at the very last you'll need to import that interface:  
 `import crafttweaker.data.IData;`
 
 You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
@@ -22,7 +22,7 @@ val myFirstMap = {key1: "value1",
 The thing to remember is:  
 Maps are handled as `Map<String,IData>`!  
 That means your keys should not contain characters that normal CT strings can't handle.  
-It also means that while the key is a string, the value is another [IData](IData) object.  
+It also means that while the key is a string, the value is another [IData](/Vanilla/data/IData/) object.  
 You can even nest maps inside maps (that's what a lot of NBT-Data do):  
 
 ```JAVA

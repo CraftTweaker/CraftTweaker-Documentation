@@ -8,10 +8,10 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 |Required  |Type                  |Data Type                                          										|
 |----------|----------------------|-----------------------------------------------------------------------------------------|
-|Required  |Output                |[IItemStack](/Vanilla/Items/IItemStack) 													|
-|Required  |Input                 |[IIngredient](/Vanilla/Variable_Types/IIngredient)      									|
+|Required  |Output                |[IItemStack](/Vanilla/Items/IItemStack/) 													|
+|Required  |Input                 |[IIngredient](/Vanilla/Variable_Types/IIngredient/)      									|
 |Required  |Energy                |Integer																					|
-|Optional  |Secondary Output      |[IItemStack](/Vanilla/Items/IItemStack)													|
+|Optional  |Secondary Output      |[IItemStack](/Vanilla/Items/IItemStack/)													|
 |Optional  |Secondary Chance      |Double																					|
 
 ### Example
@@ -30,7 +30,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA
@@ -44,7 +44,7 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Input             |[IItemstack](/Vanilla/Items/IItemStack)            |
+|Input             |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
 ```JAVA

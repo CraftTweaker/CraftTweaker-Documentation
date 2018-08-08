@@ -8,7 +8,7 @@ You can call the Brew package using `mods.botania.Brew`
 ## Brew Names
 
 To use this Package, you need to know botania's registered Brew Names.  
-You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands).
+You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

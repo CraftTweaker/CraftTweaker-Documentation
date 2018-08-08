@@ -1,6 +1,6 @@
 # Material Builder
 
-If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material), you will need a Material Builder!  
+If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
 Doesn't sound that hard, does it?
 
 
@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.MaterialBuilder;` 
 
 ## Retrieving such an object
-You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem):
+You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
 ```JAVA
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
@@ -23,7 +23,7 @@ You can set these Properties
 |-------------------------|-----------------------------------------------------------------|
 | setName(name)           | String name                                                     |
 | setColor(color)         | int color                                                       |
-| setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilly/Types/Color/Color) color |
+| setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | setHasEffect(hasEffect) | boolean hasEffect                                               |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
@@ -34,7 +34,7 @@ Before you can build your material, you need to build it:
 ```JAVA
 mBuilder.build();
 ```
-This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material) Object.
+This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
 
 ## Example Script
 ```JAVA

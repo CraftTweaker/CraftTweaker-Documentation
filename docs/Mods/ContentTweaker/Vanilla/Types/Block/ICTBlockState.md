@@ -7,17 +7,17 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.BlockState;` 
 
 ## Calling an ICTBlockState
-You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks)
+You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
 
 `<block:minecraft:dirt>`
 
 ## ZenMethods and ZenGetters
 |ZenMethod         |ZenGetter | Return Type                                                          | Description                                             |
 |------------------|----------|----------------------------------------------------------------------|---------------------------------------------------------|
-|getBlock()        |block     | [IBlock](/Vanilla/Blocks/IBlock)                                     | Returns the refered block                               |
+|getBlock()        |block     | [IBlock](/Vanilla/Blocks/IBlock/)                                     | Returns the refered block                               |
 |getMeta()         |meta      | int                                                                  | Returns the refered block's metadata                    |
 |canProvidePower() |          | boolean                                                              | Returns if the refered block can provide Redstone Power |
-|getMobilityFlag() |          |[PushReaction](/Mods/ContantTweaker/Vanilla/Types/Block/PushReaction) | Returns the push reaction flag                          |
+|getMobilityFlag() |          |[PushReaction](/Mods/ContantTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
 
 
 ## ZenMethods
@@ -25,8 +25,8 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
 Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
 Returns a boolean that sais whether the block can be replaced or not.
 
@@ -35,8 +35,8 @@ Returns a boolean that sais whether the block can be replaced or not.
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
 Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
 Returns an int representing the current light value at the given location.
 
@@ -44,9 +44,9 @@ Returns an int representing the current light value at the given location.
 `int getWeakPower(IWorld world, IBlockPos blockPos, Facing facing);`  
 Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Block's position
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing) facing → The side to be checked
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side to be checked
 
 Returns an int representing the current redstone power on this side.
 
@@ -55,8 +55,8 @@ Returns an int representing the current redstone power on this side.
 
 Parameters:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos) pos → The Block's position
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
 
 Returns an int representing the block's redstone comparator input override type.
 

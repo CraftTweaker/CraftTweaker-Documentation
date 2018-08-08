@@ -1,13 +1,13 @@
 # MaterialPartData
 
-Material Part Data is data that can be added to a [MaterialPart](MaterialPart) to give it some more properties.
+Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPartData;`
 
 ## Retrieving such an object
-You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](MaterialPart) object.
+You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
 
 ## Methods
 All you can do with MaterialPartData is add more Data and retrieve stored data!

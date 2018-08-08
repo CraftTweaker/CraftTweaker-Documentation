@@ -1,15 +1,15 @@
 # IIngredient
 
 An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry), [a liquid](/Vanilla/Liquids/ILiquidStack) and much more.
+This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IIngredient;`
 
 ## Importing the IIngredient package
 
-Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import) the IIngredient package.  
+Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import/) the IIngredient package.  
 You can do this using the following import:
 ```
 import crafttweaker.item.IIngredient;
@@ -30,7 +30,7 @@ print(item.commandString);
 
 ### Mark
 
-You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions).
+You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/).
 You can also retrieve the mark applied earlier.
 
 ```
@@ -68,10 +68,10 @@ val either2 = item1.or(item2);
 
 ### Get Possible Items or Liquids
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry) or if you OR-ed two Ingredients.  
-You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack)> List using the first function.  
-The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack)[] instead of a list.
-Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack) List.
+Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry/) or if you OR-ed two Ingredients.  
+You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack/)> List using the first function.  
+The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack/)[] instead of a list.
+Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) List.
 
 
 ```

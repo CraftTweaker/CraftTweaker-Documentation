@@ -3,11 +3,11 @@
 An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.  
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
 ## Retrieving such an object
-You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment) or from an [IEnchantment](IEnchantment) object.
+You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
 ## ZenGetters/ZenSetters
 
@@ -25,7 +25,7 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 ### CanApply
 Checks if the enchantment can be put on the item.  
 First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
-Both return a bool and require an [IItemStack](IItemStack) as input parameter.
+Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
 ```objectivec
 ench.canApply(IItemStack item);
 ench.canApplyAtEnchantmentTable(IItemStack item);
@@ -42,13 +42,13 @@ ench.getMaxEnchantability(int level);
 ### TranslatedName
 Returns the translated name (e.g. "smite IV").  
 Returns a string and requires the level of the enchantment as int parameter.  
-Does the same as [IEnchantment's](IEnchantment) `.displayName` ZenGetter!
+Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
 ```objectivec
 ench.getTranslatedName(int level);
 ```
 
 ### make Enchantment
-By giving an EnchantmentDefinition a level you can make an [IEnchantment](IEnchantment) out of it:
+By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
 ```objectivec
 ench.makeEnchantment(int level);
 ench * level;

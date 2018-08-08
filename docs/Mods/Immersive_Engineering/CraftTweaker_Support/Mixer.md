@@ -8,9 +8,9 @@ You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
 |Required  |Type               |Data Type                                                    |
 |----------|-------------------|-------------------------------------------------------------|
-|Required  |Fluid Output       |[Fluidstack](/Vanilla/Liquids/ILiquidStack)                  |
-|Required  |Fluid Input        |[Fluidstack](/Vanilla/Liquids/ILiquidStack)                  |
-|Required  |Item Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient) as Array  |
+|Required  |Fluid Output       |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)                  |
+|Required  |Fluid Input        |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)                  |
+|Required  |Item Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array  |
 |Required  |Energy             |Integer                                                      |
 
 ### Example
@@ -27,7 +27,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 
 |Type              |Data Type                                          |
 |------------------|---------------------------------------------------|
-|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack)        |
+|Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
 ### Example
 ```JAVA

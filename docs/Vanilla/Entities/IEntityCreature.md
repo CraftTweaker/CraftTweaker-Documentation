@@ -3,11 +3,11 @@
 A Creature.
 
 ## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityCreature;`
 
-## Extending [IEntityLiving](IEntityLiving)
-IEntityCreature extends [IEntityLiving](IEntityLiving). That means all functions available to [IEntityLiving](IEntityLiving) objects also are available to IEntityCreature.
+## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
 ## Methods
 ### ZenGetters/Setters
@@ -15,7 +15,7 @@ IEntityCreature extends [IEntityLiving](IEntityLiving). That means all functions
 |----------------------|-----------------------------------------------------|
 | hasPath              | bool                                                |
 | isWithinHomeDistance | bool                                                |
-| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos)               |
+| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/)               |
 | maximumHomeDistance  | float                                               |
 | hasHome              | bool                                                |
 
@@ -29,7 +29,7 @@ entCreObj.playLivingSound();
 ```
 
 #### Set or detach home
-First method expects an [IBlockPos](/Vanilla/World/IBlockPos) object and an int.  
+First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
 Second method expects nothing.  
 Both methods return nothing.
 
@@ -39,7 +39,7 @@ entAnObj.detachHome();
 ```
 
 #### Check if a position is within the home distance
-Method expects an [IBlockPos](/Vanilla/World/IBlockPos) object.  
+Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a bool.
 
 ```

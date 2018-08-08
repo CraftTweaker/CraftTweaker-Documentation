@@ -8,9 +8,9 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
 |Type          |Data Type                                		  |Examples                              |
 |--------------|--------------------------------------------------|--------------------------------------|
 |Mortar Types  |String[] 		   								  |["wooden", "stone", "iron", "diamond"]|
-|Output        |[IItemstack](/Vanilla/Items/IItemStack)			  |<minecraft:diamond\>					 |
+|Output        |[IItemstack](/Vanilla/Items/IItemStack/)			  |<minecraft:diamond\>					 |
 |Duration      |Integer											  |2000									 |
-|Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient)|[<ore:logWood\>, <ore:plankWood\>]	 |
+|Inputs        |[IIngredient](/Vanilla/Variable_Types/IIngredient/)|[<ore:logWood\>, <ore:plankWood\>]	 |
 
 ### Example
 ```JAVA

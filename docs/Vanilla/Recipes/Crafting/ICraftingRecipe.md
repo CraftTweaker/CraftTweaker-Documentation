@@ -4,13 +4,13 @@ An ICraftingRecipe is a crafting table recipe the way ZS sees it.
 
 
 ## Importing the class
-It might be required to [import](/AdvancedFunctions/Import) the class to avoid errors.  
+It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
 ### Get Ingredients
-Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient)[][]
+Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
 ```
 rec.ingredients1D
 rec.ingredients2D
@@ -18,7 +18,7 @@ rec.ingredients2D
 
 ### Get standart output
 
-Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack). Careful, can be null!
+Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
 
 ```
 rec.output
@@ -44,7 +44,7 @@ rec.fullResourceDomain;
 
 ### Ingredients
 
-Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient)\[]\[] respectively.
+Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
 ```
 rec.ingredients1D;
 rec.ingredients2D;
@@ -52,7 +52,7 @@ rec.ingredients2D;
 
 ### Output
 
-The [IItemStack](/Vanilla/Variable_Types/IItemStack) output of the recipe.
+The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
 ```
 rec.output;
 ```

@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import mods.contenttweaker.Material;` 
 
 ## Retrieving such an object
-You can either retrieve an existing Material using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder)
+You can either retrieve an existing Material using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Material Builder](/Mods/ContentTweaker/Materials/Materials/Material_Builder/)
 
 ## Fields
 You can retrieve the following information from a Material:
@@ -19,9 +19,9 @@ You can retrieve the following information from a Material:
 | isHasEffect()        | boolean     | Returns if the material has the glowing effect |
 | getUnlocalizedName() | String      | Returns the Material's unlocalized name        |
 
-## Register [Material Parts](MaterialPart)
+## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 
-You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part) or it's name string.  
+You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part/) or it's name string.  
 You can also either register a single part or multiple at once.  
 So you got 4 options in total:
 ```JAVA
@@ -33,5 +33,5 @@ registerPart(String partName);
 registerPart(IPart part);
 ```
 
-The registerPart Methods return a single [MaterialPart](MaterialPart) object.  
-The registerParts Methods return a [MaterialPart](MaterialPart) list.
+The registerPart Methods return a single [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.  
+The registerParts Methods return a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) list.

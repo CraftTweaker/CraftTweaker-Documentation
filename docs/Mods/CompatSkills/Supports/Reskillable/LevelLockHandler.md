@@ -12,7 +12,7 @@ This feature is entirely for those sadistic enough to implement it!
 This gates the progression to the set level not the "going from" that level!
 
 
-CTSkill = [Skill-Bracket Handler](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md) 
+CTSkill = [Skill-Bracket Handler](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/) 
 
 ### Syntax:
 ```

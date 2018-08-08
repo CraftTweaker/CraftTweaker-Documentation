@@ -3,7 +3,7 @@
 Using this package you can create trait that you can then put on your tools!
 
 ## Importing the class
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitBuilder;`
 
 ## Creating a trait
@@ -21,7 +21,7 @@ For the `color`, it is suggested that you use the hexadecimal notation as shown 
 `countPerLevel` is how many sublevels the trait can have (like Redstone which has 50).
 
 After you've finished all modifications below, you will need to register your trait.  
-This can be done using the `register` method, which will return a [Representation](Trait) of the new trait.
+This can be done using the `register` method, which will return a [Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) of the new trait.
 ```
 myTrait.register();
 ```
@@ -42,7 +42,7 @@ myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions) but no Transformers.  
+- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers.  
 - `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
 - `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
 - If you use the `remove function`, it will remove all trait ingredients that match for the item.
@@ -69,7 +69,7 @@ You can set the given property functions:
 
 ### CanApplyTogether
 
-Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition).
+Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
 ```
 myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
 myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){....};
@@ -117,10 +117,10 @@ Also, you only have to use the handlers that you need, you don't need empty hand
 Called each tick by the tool is loaded (that means in the player's inventory).  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld) representing the `world`
-- An [IEntity](/Vanilla/Entities/IEntity) representing the `owner`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
+- An [IEntity](/Vanilla/Entities/IEntity/) representing the `owner`
 - An int representing the `itemSlot`
 - A boolean that describes if the tool currently `isSelected`
 
@@ -139,9 +139,9 @@ Called when a block is mined.
 Be careful as this event is also be caught by vanilla blockBreak handlers.  
 Parameters: 
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed)
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
 
 __Returns nothing.__
 
@@ -158,9 +158,9 @@ Called just before a block is broken.
 Be careful as this event is also be caught by vanilla blockBreak handlers.  
 Parameters: 
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak)
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
 
 __Returns nothing.__
 
@@ -175,11 +175,11 @@ myTrait.beforeBlockBreak = function(trait, tool, event) {
 Called after the block has been destroyed.  
 Parameters: 
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld) representing the `world`
-- An [IBlockState](/Vanilla/Blocks/IBlockState) representing the broken `block`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `miner`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
+- An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
 - A bool representing if the mining `wasEffective`
 
 __Returns nothing.__
@@ -197,9 +197,9 @@ Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.
 Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops)
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
 
 __Returns nothing__
 
@@ -215,10 +215,10 @@ Called before the damage done to the entity is calculated to determine whether i
 Returning `false` will not stop a hit that is already a crit from being so.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
 
 __Returns a bool__ that is `true` if the hit should crit, false whenever else.
 
@@ -235,10 +235,10 @@ Called when an entity is hit, but still before the damage is dealt and before th
 The crit damage will be calculated off the result of this.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
 - A float representing the tool's `originalDamage` (unmodified tool damage)
 - A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
 - A boolean that represents if the hit `isCritical`
@@ -258,10 +258,10 @@ Called when an entity is hit, just before the damage is dealt.
 All damage calculation has already been done at this point.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
 - A float representing the tool's `damage` (includung critdamage)
 - A boolean that represents if the hit `isCritical`
 
@@ -278,10 +278,10 @@ myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 Called after an entity is hit to modify the applied knockback.    
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
 - A float representing the tool's `damage` (including crit)
 - A float representing the tool's `originalKnockback` (unmodified tool knockback)
 - A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
@@ -301,10 +301,10 @@ myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKno
 Called after an entity is hit and after the damage is dealt.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `target`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
 - A float representing the tool's `dealtDamage`
 - A bool representing if the hit `wasCritical`
 - A bool representing if the entity `wasHit`. Can be false if the entity was invulnerable or had some other ways of exacing the damage.
@@ -323,10 +323,10 @@ Called when the player holding the tool blocks the attack.
 Otherwise `onHit` will be called.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer) representing the `player`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt)
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
+- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
 __Returns nothing__
 
@@ -342,11 +342,11 @@ Called when the player holding the tool DID NOT BLOCK the attack.
 Otherwise `onBlock` will be called.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer) representing the `player`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the `attacker`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt)
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
+- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
+- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
 __Returns nothing__
 
@@ -362,11 +362,11 @@ myTrait.onPlayerHurt = function(trait, tool, player, event) {
 Called before the tools durability is getting decreased.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
 - An int representing the `unmodifiedAmount` of durability to be reduced.
 - An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the current tool `holder`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
 
 __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
@@ -383,11 +383,11 @@ myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder
 Called before the tools durability is getting increased.  
 Parameters:
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the used `tool`
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
 - An int representing the `unmodifiedAmount` of durability to be increased.
 - An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase) representing the current tool `holder`
+- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
 
 __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
@@ -406,8 +406,8 @@ Not to be confused with `onToolHeal` which is called afterwards.
 Will be called multiple times if multiple items are used at once.  
 Parameters: 
 
-- A [Trait Representation](/Trait) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack) representing the `tool` to be repaired
+- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Contruct/Trait/) representing the currently used `trait`.
+- An [IItemStack](/Vanilla/Items/IItemStack/) representing the `tool` to be repaired
 - An int representing the `amount` of durability to be increased.
 
 __Returns nothing__

@@ -6,7 +6,7 @@ The RuneAltar package is used for adding or removing recipes to/from the Botania
 You can call the RuneAltar package using `mods.botania.RuneAltar`
 
 ## Find all registered Recipes
-You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands).
+You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

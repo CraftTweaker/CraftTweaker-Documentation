@@ -11,7 +11,7 @@ Liquids are referenced in the Liquid Bracket Handler by like so:
 ```
 
 If the liquid is found, this will return an ILiquidStack Object.
-Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack) for further information on what you can do with these.
+Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack/) for further information on what you can do with these.
 
 # Getting all Registered liquids
 

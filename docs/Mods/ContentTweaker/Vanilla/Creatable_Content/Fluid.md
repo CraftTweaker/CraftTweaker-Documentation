@@ -4,7 +4,7 @@ This allows you to add fluids to the game!
 
 ## Create the Fluid Representation
 Before you can add the fluid, you need to create a Fluid Representation which will allow you to set the properties of the fluid you want to add.  
-This is where the [VanillaFactory](VanillaFactory) comes in:
+This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 ```JAVA
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
@@ -39,12 +39,12 @@ fluid.setDensity(1000);
 | colorize        | boolean                                                                                 | No       | true                             | Is the fluid's color-code applied?                                                   |
 | rarity          | String                                                                                  | No       | COMMON                           | How rare a fluid is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
 | viscosity       | int                                                                                     | No       | 1000                             | How quickly the fluid spreads                                                        |
-| fillSound       | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition) | No       | ITEM_BUCKET_FILL                 | The sound played when the fluid is picked up with a Bucket                           |
-| emptySound      | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition) | No       | ITEM_BUCKET_EMPTY                | The sound played when the fluid is placed                                            |
+| fillSound       | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_FILL                 | The sound played when the fluid is picked up with a Bucket                           |
+| emptySound      | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_EMPTY                | The sound played when the fluid is placed                                            |
 | vaporize        | boolean                                                                                 | No       | false                            | Does vaporize when placed in the Nether?                                             |
 | stillLocation   | String                                                                                  | No       | contenttweaker:fluids/fluid      | The Location where to find the texture for the still fluid                           |
 | flowingLocation | String                                                                                  | No       | contenttweaker:fluids/fluid_flow | The Location where to find the texture for the flowing fluid                         |
-| material        | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition)     | No       | WATER                            | The Material the fluid is made of                                                    |
+| material        | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)     | No       | WATER                            | The Material the fluid is made of                                                    |
 
 
 
@@ -72,4 +72,4 @@ zsFluid.register();
 
 ## Localizing the fluid
 You will need to add `fluid.fluidName = Localized Name` to the responding language files.
-Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame), though it's recommended using the language files!
+Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!

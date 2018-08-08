@@ -5,7 +5,7 @@
 |Type              |Data Type                                  |
 |------------------|-------------------------------------------|
 |Name Identifier   |String                                     |
-|Fluid             |[Fluidstack](/Vanilla/Liquids/ILiquidStack)|
+|Fluid             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)|
 |Minimum Size      |Integer                                    |
 |Maximum Size      |Integer                                    |
 |Replenish Rate    |Integer                                    |

@@ -79,6 +79,7 @@ pages:
       - IEntityDefinition: 'Vanilla/Entities/IEntityDefinition.md'
       - IEntityDrop: 'Vanilla/Entities/IEntityDrop.md'
       - IEntityDropFunction: 'Vanilla/Entities/IEntityDropFunction.md'
+      - IEntityEquipmentSlot: 'Vanilla/Entities/IEntityEquipmentSlot.md'
       - IEntityItem: 'Vanilla/Entities/IEntityItem.md'
       - IEntityLiving: 'Vanilla/Entities/IEntityLiving.md'
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
@@ -120,6 +121,7 @@ pages:
         - PlayerDeathDropsEvent: 'Vanilla/Events/Events/PlayerDeathDrops.md'
         - PlayerDestroyItemEvent: 'Vanilla/Events/Events/PlayerDestroyItem.md'
         - PlayerFillBucketEvent: 'Vanilla/Events/Events/PlayerFillBucket.md'
+        - PlayerInteractBlockEvent: 'Vanilla/Events/Events/PlayerInteractBlock.md'
         - PlayerInteractEntityEvent: 'Vanilla/Events/Events/PlayerInteractEntity.md'
         - PlayerInteractEvent: 'Vanilla/Events/Events/PlayerInteract.md'
         - PlayerLoggedInEvent: 'Vanilla/Events/Events/PlayerLoggedIn.md'
@@ -128,7 +130,6 @@ pages:
         - PlayerPickupItemEvent: 'Vanilla/Events/Events/PlayerPickupItem.md'
         - PlayerPickupXpEvent: 'Vanilla/Events/Events/PlayerPickupXp.md'
         - PlayerRespawnEvent: 'Vanilla/Events/Events/PlayerRespawn.md'
-        - PlayerRightClickBlockEvent: 'Vanilla/Events/Events/PlayerRightClickBlock.md'
         - PlayerSetSpawnEvent: 'Vanilla/Events/Events/PlayerSetSpawn.md'
         - PlayerSleepInBedEvent: 'Vanilla/Events/Events/PlayerSleepInBed.md'
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
@@ -215,8 +216,10 @@ pages:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
+        - Liquid Interaction: 'Mods/Astral_Sorcery/LiquidInteraction.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
+        - Util: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Requirements:
@@ -296,16 +299,20 @@ pages:
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
         - Advanced Functionality: 
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - Map: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
-            - IColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IColorSupplier.md'
+            - IBlockDropHandler: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler.md'
+            - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
             - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
+            - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
           - Block:
@@ -314,8 +321,11 @@ pages:
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
+            - PushReaction: 'Mods/ContentTweaker/Vanilla/Types/Block/PushReaction.md'
           - Color:
             - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
+          - Drops:
+            - ICTItemList: 'Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList.md'
           - Item:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
           - Player:
@@ -328,6 +338,7 @@ pages:
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
+            - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
@@ -339,11 +350,18 @@ pages:
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
           - Material Part: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
           - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
+          - Functions:
+            - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
+            - MaterialPartColorSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartColorSupplier.md'
+            - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartLocalizedNameSupplier.md'
         - Parts:
           - Part: 'Mods/ContentTweaker/Materials/Parts/Part.md'
           - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
+      - Chickens:
+        - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
+        - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
         - Brackets:
           - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
@@ -352,6 +370,7 @@ pages:
         - Material Builder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
+        - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
@@ -641,6 +660,7 @@ pages:
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
+    - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
@@ -661,4 +681,4 @@ extra:
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
-  version: 'CrT v4.1.9'
+  version: 'CrT v4.1.10'

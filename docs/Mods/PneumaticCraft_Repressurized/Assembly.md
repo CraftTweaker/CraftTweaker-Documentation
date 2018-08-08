@@ -10,7 +10,7 @@ You can call the Assembly package using `mods.pneumaticcraft.assembly`.
 
 ## Removing
 
-These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack) `output`:
+These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
 ```java
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
