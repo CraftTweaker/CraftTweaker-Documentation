@@ -210,16 +210,16 @@ pages:
       - 世界信息: 'Vanilla/World/IWorldInfo.md'
       - 世界提供器: 'Vanilla/World/IWorldProvider.md'
   - 模组支持:
-    - Advanced Mortars:
-      - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
-    - Applied Energistics 2:
-      - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
-      - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
-      - Grindstone: 'Mods/Applied_Energistics_2/Grindstone.md'
-      - Inscriber: 'Mods/Applied_Energistics_2/Inscriber.md'
-      - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
-      - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
+    - 更好的研钵:
+      - 更好的研钵: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
+      - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - 应用能源 2:
+      - 应用能源 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
+      - 物质炮: 'Mods/Applied_Energistics_2/Cannon.md'
+      - 石英磨具: 'Mods/Applied_Energistics_2/Grindstone.md'
+      - 压印器: 'Mods/Applied_Energistics_2/Inscriber.md'
+      - P2P 链接: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
+      - 空间 IO: 'Mods/Applied_Energistics_2/Spatial.md'
     - Artisan Worktables:
       - 合成构建器:
         - 合成构建器: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
