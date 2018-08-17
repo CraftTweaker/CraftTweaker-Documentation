@@ -4,7 +4,7 @@
 它与[物品堆](IItemStack)对象不同，因为物品定义仅仅引用物品，而不会包含方块实体附加值和NBT标签！
 
 ## 导入相关包
-为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。 
+为了避免发生一些不期而遇的问题（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)），最为安全、也是最为推荐的方式就是导入相关的包。
 `import crafttweaker.item.IItemDefinition;`
 
 ## 如何获取

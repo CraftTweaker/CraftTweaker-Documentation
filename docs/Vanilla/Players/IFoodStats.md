@@ -1,9 +1,11 @@
-# IFoodStats
+# 食物状态（IFoodStats）
 
-The IPlayer interface allows you to view certain information on a player's food Stats.
+`IPlayer`接口允许你查看一个玩家的某些食物状态信息。
 
-## Importing the package
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops)), so better be safe than sorry and add the import.  
+## 导入包
+
+如果你的脚本遇到问题，请检查是否导入了相关的包。（比如声明[数组](/AdvancedFunctions/Arrays_and_Loops)。）所以保险起见，请在一开始写脚本的时候就确保导入了可能用到的包。
+
 `import crafttweaker.player.IFoodStats;`
 
 ## ZenGetter/ZenSetters
@@ -14,30 +16,37 @@ It might be required for you to import the package if you encounter any issues (
 | saturationLevel | saturationLevel | float   |
 | needFood        |                 | boolean |
 
-
 ## ZenMethods
 
-#### Adding Stats
-Void Function. Takes an int and a float as intput parameters.
+#### 增加状态
+
+无返回值函数。接受一个整型参数和一个浮点型参数作为输入。
+
 ```
 stats.addStats(int foodValue, float saturationLevel);
 ```
 
 #### onUpdate
-Void Function. Takes an [IPlayer](IPlayer) object as input parameter.
+
+无返回值函数。接受一个[IPlayer](IPlayer)对象作为输入参数。
+
 ```
 stats.onUpdate(IPlayer player);
 ```
 
 #### asNBT
-Returns an IData Object representing the foodStats.
+
+返回一个`IData`对象用于表示食物状态。
+
 ```
 stats.asNBT();
 stats as crafttweaker.data.IData;
 ```
 
-#### Add Exhaustion
-Void Funtion. takes a float as input parameter.
+#### 增加衰竭
+
+无返回值函数，接受一个浮点型参数作为输入。
+
 ```
 stats.addExhaustion(float exhaustion);
 ```
