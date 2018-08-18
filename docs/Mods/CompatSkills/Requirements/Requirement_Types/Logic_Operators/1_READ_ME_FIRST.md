@@ -5,13 +5,16 @@ Now that you know what logic gates are I can describe the syntax implemented int
 In all the below syntaxes `requirement` is the string representation of any other supported requirement (including ones added by CompatSkills or other addons).
 
 ---
+## Unary requirement gates
 ### NOT Requirement
 The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a **NOT** gate and the syntax for it is `not|requirement`. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified `requirement` is not met.
 
 ---
+## Binary requirement gates
 The other logic requirements are slightly more complex as they take two *input* requirements. As the logic gates are relatively simple the order of the requirements does not actually matter, however I will be referring to them as <code>requirement<sub>1</sub></code> and <code>requirement<sub>2</sub></code> as to differentiate which one is which.
 
-They also share the syntax: <code>gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]</code>. With the gate being either `and`, `nand`, `or`, `nor`, `xor`, or `xnor`. *Note*: The brackets around <code>requirement<sub>1</sub></code> and <code>requirement<sub>2</sub></code> are needed.
+They also share the syntax: <code>gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]</code>. With the gate being either `and`, `nand`, `or`, `nor`, `xor`, or `xnor`.  
+**Note**: The brackets around <code>requirement<sub>1</sub></code> and <code>requirement<sub>2</sub></code> are needed.
 
 ---
 ### AND Requirement
