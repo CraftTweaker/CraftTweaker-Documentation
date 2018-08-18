@@ -1,5 +1,5 @@
 # Tool Harvest-Level
-This requires the player to be holding an itemTool with a Harvest Level of an Equal or Higher Harvest Level than Specified.
+This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
 
 ```
 Example:
