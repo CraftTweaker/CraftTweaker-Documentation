@@ -250,7 +250,7 @@ pages:
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
           - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
-          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'          
+          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - GameStages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
           - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'

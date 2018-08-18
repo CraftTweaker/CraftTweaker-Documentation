@@ -9,5 +9,5 @@ Blank Example:
 mods.compatskills.VisibilityLock.addVisibilityLock(CTSkill skill, String... Default Requirements);
 
 Working Example:
-mods.compatskills.VisibilityLock.addVisibilityLock(<reskillable:attack>, "dim|1");
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:reskillable:attack>, "dim|1");
 ```
