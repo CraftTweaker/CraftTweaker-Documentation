@@ -224,18 +224,33 @@ pages:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Requirements:
         - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 'Mods/CompatSkills/Requirements/RequirementTypes.md'
+        - Requirement Types: 
+          - Advancements: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
+          - Dimensions: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
+          - Dynamic Sword Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
+          - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
+          - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
+          - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
+          - Logic Operators: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators.md'
+            - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
+            - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
+            - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
+            - NOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
+            - NOT-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOT-Gate.md'
+            - OR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/OR-Gate.md'
+            - XNOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
+            - XOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
+          - Ore Dictionary: 'Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary.md'
+          - Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Skills.md'
+          - Tool Harvest-Level: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
+          - Traits: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
       - Supports:
         - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
           - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
-          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
-        - CraftTweaker:
-          - Requirement Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/RequirementTweaker.md'
-          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/ModLockTweaker.md'
-          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/CraftTweaker/NBTLockTweaker.md'
+          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'          
         - GameStages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
           - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
@@ -243,6 +258,7 @@ pages:
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft: 
+          - Armor-Value Locking: ''
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
           - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
@@ -252,8 +268,7 @@ pages:
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
           - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
-          - Custom Skills:
-            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+          - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
@@ -267,6 +282,17 @@ pages:
               - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
+          - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
+          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
+          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
+          - Transmutation: 
+            - Default Transmutations: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
+            - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
+            - Removals: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
+            - Clear: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
+        - Thaumcraft:
+            - Knowledge Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
+            - Research Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
         - Tinker's Construct: 
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
           - Material-Locks:
