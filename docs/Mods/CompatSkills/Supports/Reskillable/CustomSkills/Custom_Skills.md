@@ -38,16 +38,20 @@ banana.name = "Banana"
 
 
 ### ZenSetters/ZenGetters
-|Method Type |Method Name          |Values                           |
-|:-----------|:--------------------|---------------------------------|
-|Setter      |setLevelCap          |Takes an Integer                 |
-|Getter      |getLevelCap          |Returns an Integer               |
-|Setter      |setEnabled           |Takes an Boolean                 |
-|Getter      |getEnabled           |Returns an Boolean               |
-|Setter      |setSkillPointInterval|Takes an Integer                 |
-|Setter      |setBaseLevelCost     |Takes an Integer                 |
-|Getter      |getBaseLevelCost     |Returns an Integer               |
-|Getter      |getName              |Returns the localized String Name|
+|Method Type |Method Name          |Values                                  |
+|:-----------|:--------------------|----------------------------------------|
+|Setter      |setLevelCap          |Takes an Integer                        |
+|Getter      |getLevelCap          |Returns an Integer                      |
+|Setter      |setEnabled           |Takes an Boolean                        |
+|Getter      |getEnabled           |Returns an Boolean                      |
+|Setter      |setSkillPointInterval|Takes an Integer                        |
+|Setter      |setBaseLevelCost     |Takes an Integer                        |
+|Getter      |getBaseLevelCost     |Returns an Integer                      |
+|Getter      |getName              |Returns the localized String Name       |
+|Setter      |setLevelStaggering   |Takes a String[], See Config for Example|
+|Getter      |getLevelStaggering   |Returns a String[]                      |
+|Setter      |setHidden            |Takes a Boolean                         |
+|Getter      |isHidden             |Returns a Boolean                       |
 
 
 ### Localization & Resource Location References:
