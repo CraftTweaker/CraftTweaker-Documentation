@@ -231,7 +231,7 @@ pages:
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
           - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
           - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
-          - Logic Operators: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators.md'
+          - Logic Operators: 
             - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
             - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
             - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
@@ -258,7 +258,7 @@ pages:
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft: 
-          - Armor-Value Locking: ''
+          - Armor-Value Locking: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
           - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
