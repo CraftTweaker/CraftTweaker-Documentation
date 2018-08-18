@@ -11,4 +11,4 @@ This list can be further expanded upon by addons.
 In-fact CompatSkills adds support for GameStages as a valid Requirement.
 
 The requirement syntax varies from Property to Property on how it's implemented by the addon.
-Under [Requirement Types](/Mods/CompatSkills/Requirements/RequirementTypes/) you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
+Under [Requirement Types](/Mods/CompatSkills/Requirements/Requirement_Types/) you'll be able to see the syntax for all Requirements added by Reskillable and CompatSkills.
