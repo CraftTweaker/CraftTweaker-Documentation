@@ -1,5 +1,7 @@
 # Knowledge Locking
 
+## Feature:
+This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
 
 ## Knowledge Types:
 Current knowledge types are O for Observation and T for Theory.
