@@ -282,9 +282,11 @@ pages:
               - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
-          - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
           - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
           - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
+          - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
+          - Skill Change Tweaker: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
+          - Skill Hiding: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
           - Transmutation: 
             - Default Transmutations: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
             - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
