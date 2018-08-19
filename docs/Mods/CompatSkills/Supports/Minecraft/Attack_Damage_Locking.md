@@ -6,7 +6,7 @@ This means like in the example below, any weapon with Attack Damage 0.75 or grea
 
 For reference: 
 1 Damage = 0.5 Hearts
-You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage)
+You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage#Dealing_damage)
 
 ## Syntax:
 ```
