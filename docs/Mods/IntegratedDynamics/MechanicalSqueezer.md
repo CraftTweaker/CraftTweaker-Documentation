@@ -19,10 +19,10 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 
 
 //addRecipe(IItemStack inputStack, 
-    @Optional IItemStack outputStack1, @Optional float outputStackChance1,
-    @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-    @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-    @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 //TODO
 ```
 
@@ -34,10 +34,10 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 //TODO
 
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack,
-    @Optional IItemStack outputStack1, @Optional float outputStackChance1,
-    @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-    @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-    @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+//  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 //TODO
 
 
@@ -46,8 +46,8 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 //TODO
 
 //MechanicalSqueezer.removeRecipesWithOutput(@Optional IItemStack outputStack1, @Optional float outputStackChance1,
-    @Optional IItemStack outputStack2, @Optional float outputStackChance2,
-    @Optional IItemStack outputStack3, @Optional float outputStackChance3,
-    @Optional ILiquidStack outputFluid);
+//  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
+//  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
+//  @Optional ILiquidStack outputFluid);
 //TODO
 ```

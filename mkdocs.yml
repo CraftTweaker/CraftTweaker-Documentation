@@ -425,6 +425,11 @@ pages:
       - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
       - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
       - Tree Fluid Extractor: 'Mods/Industrial_Foregoing/TreeFluidExtractor.md'
+    - Integrated Dynamics:
+      - DryingBasin: 'Mods/IntegratedDynamics/DryingBasin.md'
+      - MechanicalDryingBasin: 'Mods/IntegratedDynamics/MechanicalDryingBasin.md'
+      - Squeezer: 'Mods/IntegratedDynamics/Squeezer.md'
+      - MechanicalSqueezer: 'Mods/IntegratedDynamics/MechanicalSqueezer.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
