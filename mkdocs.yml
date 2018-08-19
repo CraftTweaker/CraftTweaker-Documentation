@@ -259,6 +259,7 @@ pages:
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft: 
           - Armor-Value Locking: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
+          - Attack-Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
           - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
