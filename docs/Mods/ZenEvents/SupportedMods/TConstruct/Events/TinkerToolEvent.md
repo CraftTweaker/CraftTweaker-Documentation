@@ -6,12 +6,12 @@ Now, since there are many types of special things tools can do, there are multip
 ## Implementing EventClasses
 The TinkerToolEvents implement the following EventClasses and thus are able to use all functionality they provide as well: 
 
-| Class                                                       | ExtraBlockBreak | MattockHoe | ShovelPath | ScytheHarvest | BowShoot | Repair |
-|-------------------------------------------------------------|:---------------:|:----------:|:----------:|:-------------:|:--------:|:------:|
-| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)         | ✔               | ✔          | ✔          | ✔             | ✔        |        |
-| [IEventPositionable](/Vanilla/Events/IEventPositionable/)    |                 | ✔          | ✔          | ✔             |          |        |
-| [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)           |                 |            |            | ✔             |          |        |
-| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/) | ✔               |            |            | ✔             |          |        |
+| Class                                                               | ExtraBlockBreak | MattockHoe | ShovelPath | ScytheHarvest | BowShoot | Repair |
+|---------------------------------------------------------------------|:---------------:|:----------:|:----------:|:-------------:|:--------:|:------:|
+| [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)                | ✔               | ✔          | ✔          | ✔             | ✔        |        |
+| [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)    |                 | ✔          | ✔          | ✔             |          |        |
+| [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)                  |                 |            |            | ✔             |          |        |
+| [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)        | ✔               |            |            | ✔             |          |        |
 
 ## Event Class
 You will need to cast the event in the function header as this class:  

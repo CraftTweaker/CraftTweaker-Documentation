@@ -1,6 +1,6 @@
 # EntityLivingDeathDrops
 
-The EntityLivingDeathDrops Event is fired whenver an Enity's death causes dropped items to appear.  
+The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
 It can be canceled to stop the entity from dropping anything.
 
 ## Event Class

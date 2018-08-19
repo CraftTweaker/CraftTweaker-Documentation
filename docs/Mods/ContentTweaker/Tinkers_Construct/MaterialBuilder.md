@@ -70,7 +70,7 @@ myMaterial.removeItem(<minecraft:iron_block>);
 You can add a trait to the material.  
 All items made from this material will then have this trait.  
 Uses a String with the identifier of the trait, and an optional `dependency` string which will tell you which itemTypes should be affected by the trait.  
-Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/rait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits).
+Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/), though that only works if the trait is already initialized by the time CoT runs (so most likely only for custom traits).
 Possible values for `dependency` are:
 
 - `null` (default) → All items, unless that dep already has other traits.

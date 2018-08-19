@@ -17,7 +17,7 @@ The IItemRightClickFunction is a function with the following parameters (In this
 - [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side of the block the item is used on
 - [Position3f](/Vanilla/Utils/Position3f/) blockHit → The block's relative X,Y and Z coordinate → All three are between 0 and 1
 
-The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/ActionResult/) object.
+The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) object.
 
 ## Example
 ```JAVA

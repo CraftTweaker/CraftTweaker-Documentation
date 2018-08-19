@@ -48,7 +48,7 @@ Parameters:
 
 - [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
-- [Facing](/Vanilla/World/Facing/) facing → The side to be checked
+- [Facing](/Vanilla/World/IFacing/) facing → The side to be checked
 Returns an int representing the current redstone power on this side.
 
 ### getComparatorInputOverride

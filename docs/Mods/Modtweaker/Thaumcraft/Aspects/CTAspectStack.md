@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 `import thaumcraft.aspect.CTAspectStack;` 
 
 ## Retrieving such an object
-You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/ModTweaker/Thaumcraft/Brackets/Bracket_Aspects/) object:
+You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 ```
 val aspect = <aspect:ignis>;
 ```
