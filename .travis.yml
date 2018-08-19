@@ -9,3 +9,5 @@ install:
 script:
   - mkdocs build --clean --site-dir site
   - linkchecker site/index.html --ignore-url="search\.html"
+
+cache: pip
