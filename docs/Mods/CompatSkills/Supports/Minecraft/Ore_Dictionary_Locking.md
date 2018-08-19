@@ -1,9 +1,9 @@
 # OreDictionary Locking
 
 ## Feature:
-This locks adds the ability to lock any and all items that are under a certain Ore Dictionary Tag.
-This means that if you lock the Ore Dictionary Entry of "oreIron" and item/block with the tag "oreIron" would be locked behind the set requirements.
-This type of lock also supports a [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
+This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag.
+This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements.
+This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
 
 ## Syntax:
 ```
