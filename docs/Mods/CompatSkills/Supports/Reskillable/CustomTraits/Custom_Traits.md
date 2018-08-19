@@ -53,6 +53,8 @@ trait.description = "Hello, I'm a Description"
 |Getter      |getEnabled           |Returns a Boolean                                    |
 |Getter      |getName              |Returns the localized String Name of the Trait       | 
 |Getter      |getDescription       |Returns the localized String Description of the Trait|
+|Getter      |retrieveIcon         |Returns an Resource Location                         |
+|Setter      |changeIcon           |Takes an Resource Location String                    |
 
 
 ### Localization & Resource Location References:
