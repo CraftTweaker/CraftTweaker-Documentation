@@ -39,8 +39,8 @@ Returns the name as string
 The first method only creates an entity on the given location.  
 The second one also spawns it.
 ```
-<Entity:minecraft:sheep>.createEntity(world);
-<Entity:minecraft:sheep>.spawnEntity(world, blockPos);
+<entity:minecraft:sheep>.createEntity(world);
+<entity:minecraft:sheep>.spawnEntity(world, blockPos);
 ```
 
 `world` is an [IWorld](/Vanilla/World/IWorld/) object.  
