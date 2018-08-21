@@ -269,7 +269,9 @@ pages:
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
           - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
-          - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+          - Custom Skills: 
+            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+            - Full-Scale example: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
