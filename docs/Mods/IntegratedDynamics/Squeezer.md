@@ -18,12 +18,18 @@ Squeezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
 
 
 
-//addRecipe(IItemStack inputStack, 
+//Squeezer.addRecipe(IItemStack inputStack, 
 //  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid);
-//TODO
+
+
+Squeezer.addRecipe(<minecraft:pumpkin>, 
+	<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100);
 ```
 
 
@@ -38,16 +44,25 @@ Squeezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid);
-//TODO
+
+Squeezer.removeRecipe(<minecraft:pumpkin>, 
+	<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100);
 
 
 
 //Squeezer.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
-//TODO
+Squeezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, <liquid:water>);
 
 //Squeezer.removeRecipesWithOutput(@Optional IItemStack outputStack1, @Optional float outputStackChance1,
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid);
-//TODO
+
+Squeezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100);
 ```

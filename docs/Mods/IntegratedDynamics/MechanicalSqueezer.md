@@ -18,12 +18,17 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 
 
 
-//addRecipe(IItemStack inputStack, 
+//MechanicalSqueezer.addRecipe(IItemStack inputStack, 
 //  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-//TODO
+
+MechanicalSqueezer.addRecipe(<minecraft:pumpkin>, 
+	<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100, 20);
 ```
 
 
@@ -31,14 +36,19 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 
 ```
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-//TODO
+MechanicalSqueezer.removeRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
 
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack,
 //  @Optional IItemStack outputStack1, @Optional float outputStackChance1,
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-//TODO
+
+MechanicalSqueezer.removeRecipe(<minecraft:pumpkin>, 
+	<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100, 20)
 
 
 
@@ -49,5 +59,9 @@ MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water
 //  @Optional IItemStack outputStack2, @Optional float outputStackChance2,
 //  @Optional IItemStack outputStack3, @Optional float outputStackChance3,
 //  @Optional ILiquidStack outputFluid);
-//TODO
+
+MechanicalSqueezer.removeRecipesWithOutput(<minecraft:pumpkin_seeds>, 0.2,
+	<minecraft:iron_nugget>, 0.01,
+	<minecraft:cactus>, 0.5,
+	<liquid:water> * 100, 20);
 ```
