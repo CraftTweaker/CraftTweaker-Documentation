@@ -17,7 +17,7 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 |getBlock()        |block     | [IBlock](/Vanilla/Blocks/IBlock/)                                     | Returns the refered block                               |
 |getMeta()         |meta      | int                                                                  | Returns the refered block's metadata                    |
 |canProvidePower() |          | boolean                                                              | Returns if the refered block can provide Redstone Power |
-|getMobilityFlag() |          |[PushReaction](/Mods/ContantTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
+|getMobilityFlag() |          |[PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
 
 
 ## ZenMethods

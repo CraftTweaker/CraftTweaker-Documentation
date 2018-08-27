@@ -6,8 +6,8 @@ An Animal.
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAnimal;`
 
-## Extending [IEntiyAgeable](/Vanilla/Entities/IEntiyAgeable/)
-IEntityAnimal extends [IEntiyAgeable](/Vanilla/Entities/IEntiyAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntiyAgeable/) also are available to IEntityAnimal.
+## Extending [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/)
+IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
 
 ## Methods
 ### ZenGetters/Setters

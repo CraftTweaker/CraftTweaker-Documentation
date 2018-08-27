@@ -7,12 +7,12 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | Return Type                          |
-|----------------|---------------------|--------------------------------------|
-| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/IEntityAttribute/) |
-| baseValue      | getBaseValue()      | double                               |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`     |
-| attributeValue | getAttributeValue() | double                               |
+| ZenGetter      | GetterMethod        | Return Type                                                        |
+|----------------|---------------------|--------------------------------------------------------------------|
+| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| baseValue      | getBaseValue()      | double                                                             |
+| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                                   |
+| attributeValue | getAttributeValue() | double                                                             |
 
 
 ## ZenSetters
@@ -25,9 +25,9 @@ It might be required for you to import the package if you encounter any issues (
 ## Modifier Methods
 
 - `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
-- boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier)
-- [IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) getModifier(String uuid);
-- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier);
-- void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/IEntityAttributeModifier/) modifier);
+- boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
+- [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
+- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
+- void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier(String uuid);
 - void removeAllModifiers();

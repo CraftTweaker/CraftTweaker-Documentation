@@ -456,6 +456,11 @@ pages:
       - Sludge Refiner: 'Mods/Industrial_Foregoing/SludgeRefiner.md'
       - Protein Reactor: 'Mods/Industrial_Foregoing/ProteinReactor.md'
       - Tree Fluid Extractor: 'Mods/Industrial_Foregoing/TreeFluidExtractor.md'
+    - Integrated Dynamics:
+      - DryingBasin: 'Mods/IntegratedDynamics/DryingBasin.md'
+      - MechanicalDryingBasin: 'Mods/IntegratedDynamics/MechanicalDryingBasin.md'
+      - Squeezer: 'Mods/IntegratedDynamics/Squeezer.md'
+      - MechanicalSqueezer: 'Mods/IntegratedDynamics/MechanicalSqueezer.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -642,36 +647,6 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-    - ZenEvents: 
-      - ZenEvents: 'Mods/ZenEvents/ZenEvents.md'
-      - BloodMagic:
-        - EventManager: 'Mods/ZenEvents/SupportedMods/BloodMagic/EventManager.md'
-        - Events: 
-          - AltarCraftedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/AltarCraftedEvent.md'
-          - BoundToolChargeEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolChargeEvent.md'
-          - BoundToolReleaseEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/BoundToolReleaseEvent.md'
-          - ItemBindEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/ItemBindEvent.md'
-          - RitualEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/RitualEvent.md'
-          - SacrificialKnifeUsedEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/SacrificialKnifeUsedEvent.md'
-          - TeleposeEvent: 'Mods/ZenEvents/SupportedMods/BloodMagic/Events/TeleposeEvent.md'
-        - Special Types:
-          - MasterRitualStone: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/MasterRitualStone.md'
-          - Ritual: 'Mods/ZenEvents/SupportedMods/BloodMagic/Wrapper/Ritual.md'
-      - Botania:
-        - EventManager: 'Mods/ZenEvents/SupportedMods/Botania/EventManager.md'
-        - Events: 
-          - ManaDiscountEvent: 'Mods/ZenEvents/SupportedMods/Botania/Events/ManaDiscountEvent.md'
-      - GameStages:
-        - EventManager: 'Mods/ZenEvents/SupportedMods/GameStages/EventManager.md'
-        - Events: 
-          - GameStageEvent: 'Mods/ZenEvents/SupportedMods/GameStages/Events/GameStageEvent.md'
-      - TConstruct: 
-        - EventManager: 'Mods/ZenEvents/SupportedMods/TConstruct/EventManager.md'
-        - Events: 
-          - ProjectileHitBlockEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileHitBlockEvent.md'
-          - ProjectileLauchEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/ProjectileLaunchEvent.md'
-          - TinkerCraftingEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerCraftingEvent.md'
-          - TinkerToolEvent: 'Mods/ZenEvents/SupportedMods/TConstruct/Events/TinkerToolEvent.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'

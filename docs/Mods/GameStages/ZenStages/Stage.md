@@ -14,7 +14,7 @@ Stage is the class you are given when you create a new "Stage" the class contain
 ### Staging Methods
 **Note: All these methods will only work with the Stage class given when you create a Stage using [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) so save these to a static so you can reference from other classes if need be.**
 
-Check to see if a [Custom Type](CustomTypes/) has been Staged to this Stage.
+Check to see if a [Custom Type](/Mods/GameStages/ZenStages/CustomType/) has been Staged to this Stage.
 ```java
 // isCustomStaged(String slug, String value);
 // isCustomStaged(String slug, String[] values);

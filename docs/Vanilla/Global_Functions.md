@@ -73,13 +73,13 @@ Returns a double
 
 ## Global Fields
 
-| Field      | Description                                                                                   |
-|------------|-----------------------------------------------------------------------------------------------|
+| Field      | Description                                                                                    |
+|------------|------------------------------------------------------------------------------------------------|
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/AdvancedFunctions/Events/IEventManager/)                         |
+| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
 | format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Recipes_Furnace/)                              |
+| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
 | game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
 | itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
 | loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |

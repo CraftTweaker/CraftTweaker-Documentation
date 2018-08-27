@@ -1,7 +1,7 @@
 # Material Representation
 
 A Material representation represents a Tinkers' Construct Material.  
-You can get such an object either from the [Material Builder](/Mods/ContentTweaker/TInkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
+You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
 
 ## Importing the class
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  

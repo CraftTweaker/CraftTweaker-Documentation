@@ -9,28 +9,28 @@ It might be required for you to import the package if you encounter any issues, 
 ## Retrieving such an object
 You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
 ```java
-val stone = <material:stone>;
+val stone = <ticmat:stone>;
 ```
 
 ## Fields
 
 You can get/set the following fields:
 
-| ZenGetter         | ZenSetter         | Return/Setter Type                         | Description                                                       |
-|-------------------|-------------------|--------------------------------------------|-------------------------------------------------------------------|
-| getName           |                   | String                                     | The Material's Name                                               |
-| definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/IMaterialDefinition/) | The Material's Definition                                         |
-| durabilityHead    | durabilityHead    | int                                        | A Toolhead made from this material has this durability            |
-| miningSpeedHead   | miningSpeedHead   | float                                      | A Toolhead made from this material has this mining speed          |
-| attackHead        | attackHead        | float                                      | A Toolhead made from this material has this attack Damage         |
-| harvestLevelHead  | harvestLevelHead  | int                                        | A Toolhead made from this material has this harvest level         |
-| durabilityHandle  | durabilityHandle  | int                                        | A Toolhandle made from this material has this durability          |
-| modifierHandle    | modifierHandle    | float                                      | A Toolhandle made from this material has this durability modifier |
-| durabilityExtra   | durabilityExtra   | int                                        | Extra toolparts made from this material have this base durability |
-| arrowModifier     | arrowModifier     | float                                      | Arrows made from this material have this durability modifier      |
-| arrowBonusAmmo    | arrowBonusAmmo    | int                                        | Arrow made from this material have this addiotional ammonition    |
-| fletchingModifier | fletchingModifier | float                                      | Fletchungs made from this material have this durability modifier  |
-| fletchingAccuracy | fletchingAccuracy | float                                      | Fletchungs made from this material provide this accuracy          |
+| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
+|-------------------|-------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| getName           |                   | String                                                                               | The Material's Name                                               |
+| definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
+| durabilityHead    | durabilityHead    | int                                                                                  | A Toolhead made from this material has this durability            |
+| miningSpeedHead   | miningSpeedHead   | float                                                                                | A Toolhead made from this material has this mining speed          |
+| attackHead        | attackHead        | float                                                                                | A Toolhead made from this material has this attack Damage         |
+| harvestLevelHead  | harvestLevelHead  | int                                                                                  | A Toolhead made from this material has this harvest level         |
+| durabilityHandle  | durabilityHandle  | int                                                                                  | A Toolhandle made from this material has this durability          |
+| modifierHandle    | modifierHandle    | float                                                                                | A Toolhandle made from this material has this durability modifier |
+| durabilityExtra   | durabilityExtra   | int                                                                                  | Extra toolparts made from this material have this base durability |
+| arrowModifier     | arrowModifier     | float                                                                                | Arrows made from this material have this durability modifier      |
+| arrowBonusAmmo    | arrowBonusAmmo    | int                                                                                  | Arrow made from this material have this addiotional ammonition    |
+| fletchingModifier | fletchingModifier | float                                                                                | Fletchungs made from this material have this durability modifier  |
+| fletchingAccuracy | fletchingAccuracy | float                                                                                | Fletchungs made from this material provide this accuracy          |
 
 ## Methods
 
