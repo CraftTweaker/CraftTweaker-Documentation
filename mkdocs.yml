@@ -169,7 +169,6 @@ pages:
         - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
-        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
       - Furnace Recipes:
         - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
