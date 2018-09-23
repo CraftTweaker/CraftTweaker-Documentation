@@ -109,7 +109,7 @@ This removes all drops.
 val entity = <entity:minecraft:sheep>;
 
 //clearDrops
-entity.clearDrops;
+entity.clearDrops();
 ```
 
 ### Get
