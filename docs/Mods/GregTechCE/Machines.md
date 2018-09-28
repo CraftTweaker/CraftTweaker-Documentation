@@ -155,5 +155,7 @@ Example:
 
 ```java
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
+
+// findRecipe(long voltage, IItemHandlerModifiable inputs, IMultipleTankHandler/List<FluidStack> fluidInputs)
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 ```
