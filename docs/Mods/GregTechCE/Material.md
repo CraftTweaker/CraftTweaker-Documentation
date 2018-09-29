@@ -44,7 +44,7 @@ Methods:
 
 ### FluidMaterial
 
-`FluidMaterial` is a material which contains fluid features. Its superclass is `Material` so you can use all members in `Material`.
+`FluidMaterial` is a material which contains fluid features. Its superclass is `Material` so all members in `Material` is still available.
 
 Properties:
 
@@ -64,7 +64,7 @@ Getters:
 
 ### DustMaterial
 
-`DustMaterial` is a material which contains dust features. Its superclass is `FluidMaterial` so you can use all members in `FluidMaterial`.
+`DustMaterial` is a material which contains dust features. Its superclass is `FluidMaterial` so all members in `FluidMaterial` is still available.
 
 Properties:
 
@@ -87,7 +87,7 @@ Getters:
 
 ### SolidMaterial
 
-`SolidMaterial` is a material which contains solid features. Its superclass is `DustMaterial` so you can use all members in `DustMaterial`.
+`SolidMaterial` is a material which contains solid features. Its superclass is `DustMaterial` so all members in `DustMaterial` is still available.
 
 Properties:
 
@@ -104,9 +104,33 @@ Getters:
 | toolDurability   | int                   | Durability of tools made from this material, 0 for materials that can't be used for tools |
 | toolEnchantments | List<EnchantmentData> | Enchantment to be applied to tools made from this material                                |
 
+### IngotMaterial
+
+`IngotMaterial` is a mterial which contains ingot features. Its superclass is `SolidMaterial` so all members in `SolidMaterial` is still available.
+
+Ingot materials can be used as wire, cable and fluid pipe. Those properties can be set by `setCableProperties(long voltage, int baseAmperage, int lossPerBlock)` and `setFluidPipeProperties(int throughput, int maxTemperature, boolean gasProof)`.
+
+For example:
+
+```java
+var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
+ingotMaterial.setCableProperties(128L, 4, 1); // 128EU/t 4A 1 loss/block
+```
+
 ## Enchantment data
 
-`gregtech.mods.EnchantmentData` instance creation are current in development.
+`gregtech.mods.EnchantmentData` can be found in `SolidMaterial#toolEnchantments`, they are an internal storage of a enchantment with levels.
+
+They can be casted into `crafttweaker.enchantments.IEnchantmentDefinition` by calling `enchantment` getter, and level is available with `level` getter.
+
+To add a enchantment for tools in `SolidMaterial`, simply calling `addToolEnchantment(IEnchantment enchantment)`, to add a CraftTweaker enchantment data type.
+
+Example for a Fortune I material:
+
+```java
+var material = MaterialRegistry.get("iron"); // Modify iron material
+material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a enchantment object and add it
+```
 
 ## Material generation flags
 
@@ -196,13 +220,15 @@ var material = MaterialRegistry.get(materialName);
 // List all materials registered
 var materialList = MaterialRegistry.getAllMaterials();
 
+// Set toolDurability to 0 if ingot cannot be used as tool
+// Note that an @Optional parameter can be left out, and it's replaced by default 0.
+// Means Gem and Ingot material cannot be used as tool by default.
 MaterialRegistry.createFluidMaterial(int metaItemSubId, String name, int color, String iconSet, @Optional MaterialStack[] materialComponents);
 
 MaterialRegistry.createDustMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents);
 
 MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability);
 
-// set toolDurability to 0 if ingot cannot be used as tool
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
