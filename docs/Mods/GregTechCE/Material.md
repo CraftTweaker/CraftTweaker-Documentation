@@ -114,7 +114,7 @@ For example:
 
 ```java
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
-ingotMaterial.setCableProperties(128L, 4, 1); // 128EU/t 4A 1 loss/block
+ingotMaterial.setCableProperties(128, 4, 1); // 128EU/t 4A 1 loss/block
 ```
 
 ## Enchantment data
