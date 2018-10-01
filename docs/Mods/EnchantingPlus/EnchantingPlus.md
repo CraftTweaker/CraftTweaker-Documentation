@@ -16,6 +16,6 @@ mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 Prevents a specific enchantment from being applied at the advanced enchanting table.
 
 ```java
-// mods.eplus.Eplus.blacklistEnchantment(IEnchantment enchantment);
+// mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
 mods.eplus.Eplus.blacklistEnchantment(<enchantment:minecraft:protection>);
 ```
