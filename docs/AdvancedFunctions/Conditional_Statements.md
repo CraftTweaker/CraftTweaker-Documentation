@@ -125,22 +125,29 @@ All the examples given evaluate to true.
 | XOR               | `^`          | Checks if either the value before or after is true, false if both or none is true         | true ^ false       |
 
 
-## The in Operator
+## The in/has Operator
 
-The `in` operator checks if something is in something.  
-First you need the list you want to check in, then the `in` then the value you want to check for
+The `in` and the `has` operator check if something is in something.  
+First you need the list you want to check in, then the `in`/`has` then the value you want to check for.
+`in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
-### in loadedMods
+### in/has loadedMods
 
 You can check, if a mod is loaded by checking if it's in the loadedMods list
 
 ```Java
+//While contains checks can use in
 if(loadedMods in "mcp"){
+	print("Minecraft Coder Pack loaded");
+}
+
+//Most people prefer using has
+if(loadedMods has "mcp"){
 	print("Minecraft Coder Pack loaded");
 }
 ```
 
-### in IIngredient
+### in/has IIngredient
 
 You can also check if an item matches a definition by comparing two IIngredients.
 
@@ -148,7 +155,27 @@ You can also check if an item matches a definition by comparing two IIngredients
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("Iron ingots are in the right oreDic");
 }
+
+if(<ore:ingotIron> has <minecraft:iron_ingot>){
+	print("Iron ingots are in the right oreDic");
+}
 ```
 
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only then true, when ALL matching items from the IIngredient AFTER the `in` can also be found in the IIngredient BEFORE `in`.
+This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`:
+Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+```java
+val redstone = <minecraft:redstone>;
+val glowstone = <minecraft:glowstone>
+val allDusts = <ore:dustAll>;
+allDusts.add(redstone, glowstone);
+
+//True as redstone is a part of alldusts
+if(allDusts has redstone) {
+
+}
+
+//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+if(redstone has allDusts) {
+
+}
+```
