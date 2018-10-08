@@ -177,10 +177,25 @@ recipes.getRecipesFor(<minecraft:iron_ingot>);
 ```
 
 ### Replace all item ingredients with another one
-You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient/) in a recipe with another one, for example all sticks with stones.
+You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient/) in a recipe with another one, for example all sticks with stones. It also accepts an optional third parameter that matches agains the recipe outputs. If the recipe 
 ```
-//recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith);
+//recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith, @Optional IIngredient forOutput);
+
+//replaces every stick with stone
 recipes.replaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
+
+//Explicitly uses any output, replaces gold ingots with gold blocks
+recipes.replaceAllOccurences(<ore:ingotGold>, <ore:blockGold>, <*>);
+
+
+//Only replaces in recipes with a diamond_sword as output
+recipes.replaceAllOccurences(<ore:gemDiamond>, <ore:blockDiamond>, <minecraft:diamond_sword>);
+
+
+//conditions work as well -> replaces in recipes for any recipe output except tnt
+recipes.replaceAllOccurences(<ore:gunpowder>, <minecraft:tnt>, <*>.only(function(item) {
+    return !isNull(item) & !<minecraft:tnt>.matches(item);
+}));
 ```
 
 ### Craft
