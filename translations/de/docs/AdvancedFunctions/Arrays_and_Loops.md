@@ -4,7 +4,7 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 ## Ein Array erstellen
 
-Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```92034277erstellt.
+Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```39886720erstellt.
 
     //Array containing "Hello" and "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -13,7 +13,7 @@ Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```92034277er
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, das hast du. Erinnerst du dich an ```recipes.add(out,[[],[],[]]);```? Dies nutzt drei Arrays mit jeweils bis zu drei Einträgen, um ein Crafting Rezept zu definieren.
 
 ## Casting Arrays
 
