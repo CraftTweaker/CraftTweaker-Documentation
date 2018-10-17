@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building wiki files'
+                sh 'chmod +x ./build.sh'
 				sh './build.sh'
             }
         }
