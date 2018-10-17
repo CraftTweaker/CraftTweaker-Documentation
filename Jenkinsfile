@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building wiki files'
-                sh 'sh ./build.sh'
+                sh 'bash ./build.sh'
             }
         }
         stage('Test') {
@@ -24,7 +24,7 @@ pipeline {
     post {
         success {
             echo 'Success, now moving to web server'
-            sh 'sh ./move_to_webDir.sh'
+            sh 'bash ./move_to_webDir.sh'
         }
     }
 }

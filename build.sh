@@ -4,7 +4,7 @@ echo "start"
 echo "Building english site"
 mkdocs build --clean --site-dir ./build/en
 
-if not exist ./translations mkdir ./translations
+if not exist ./translations mkdir -p ./translations
 cd ./translations
 
 TRANS=./*
