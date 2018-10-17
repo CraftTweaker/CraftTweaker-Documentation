@@ -13,7 +13,8 @@ pipeline {
             steps {
                 echo 'Building wiki files'
                 sh 'chmod +x build.sh'
-                sh 'build.sh'
+                sh 'ls'
+                sh './build.sh'
             }
         }
         stage('Test') {
