@@ -4,7 +4,7 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 ## Ein Array erstellen
 
-Ein Array wird mithilfe von eckigen Klammern, also ```[``` und ```]```39886720erstellt.
+Ein Array wird mithilfe von eckigen Klammern erstellt, also mit ```[``` und ```]```.
 
     //Array containing "Hello" and "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -26,7 +26,7 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## Verschachtelte Arrays
 
 You can place Arrays in Arrays.
 
