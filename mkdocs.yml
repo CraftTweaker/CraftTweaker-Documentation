@@ -684,8 +684,6 @@ markdown_extensions:
   - smarty
   - sane_lists
 
-theme_dir: 'mkdocs_windmill'
-
 extra:
   logo: 'assets/logo.png'
   #article_nav_top: true

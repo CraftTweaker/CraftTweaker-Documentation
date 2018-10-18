@@ -1346,7 +1346,6 @@ markdown_extensions:
   - admonition
   - smarty
   - sane_lists
-theme_dir: 'mkdocs_windmill'
 extra:
   logo: 'assets/logo.png'
   version: 'CrT v4.1.10'
