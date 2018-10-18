@@ -1,1 +1,2 @@
-cp -r -f build/* $webDir
+#!/bin/bash
+cp -fRv build/* $webDir
