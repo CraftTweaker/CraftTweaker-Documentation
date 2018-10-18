@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building wiki files'
+                sh 'chmod +x build.sh'
                 sh 'bash ./build.sh'
             }
         }
@@ -24,6 +25,7 @@ pipeline {
     post {
         success {
             echo 'Success, now moving to web server'
+            sh 'chmod +x move_to_webDir.sh'
             sh 'bash ./move_to_webDir.sh'
         }
     }
