@@ -402,7 +402,7 @@ pages:
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
-    - Enchanting Plus
+    - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
