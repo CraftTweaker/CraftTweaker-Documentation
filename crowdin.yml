@@ -1,14 +1,9 @@
-"commit_message": "[ci skip]"
-
-"files": [
-  {
-    "source": "/docs/**/*.*",
-    "ignore": ['*.sh'],
-    "translation": /translations/%two_letters_code%/%original_path%/%original_file_name%
-  },
-  {
-    "source": "/mkdocs.yml",
-    "translation": /translations/%two_letters_code%/%original_path%/%original_file_name%,
-    "type": "txt"
-  }
-]
+commit_message: '[ci skip]'
+files:
+  - source: /docs/**/*.*
+    ignore:
+      - '*.sh'
+    translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
+  - source: /mkdocs.yml
+    translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
+    type: txt
