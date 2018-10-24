@@ -8,5 +8,6 @@ files:
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
     type: txt
   - source: /mkdocs
-    translation: /translations/%two_letters_code%/%original_path%/%original_file_name%_2.yml
+    translation: >-
+      /translations/%two_letters_code%/%original_path%/%original_file_name%_2.yml
     type: txt
