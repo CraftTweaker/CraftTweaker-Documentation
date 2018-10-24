@@ -1,11 +1,7 @@
 files:
-  - source: /**/*.*
+  - source: /docs/**/*.*
     ignore:
-      - /translations
-      - /mkdocs_windmill
-      - .gitignore
-      - .travis.yml
       - '*.sh'
-      - requirements.txt
-      - README.md
+    translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
+  - source: /mkdocs.yml
     translation: /translations/%two_letters_code%/%original_path%/%original_file_name%
