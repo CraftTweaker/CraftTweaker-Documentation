@@ -1,44 +1,44 @@
-# Arrays
+# 数组（Arrays）
 
-An array is a List containing several items of the same kind.
+数组是一个包含多个相同类型项的列表。
 
-## Declaring Arrays
+## 声明数组
 
-It is declared using ```[``` and ```]```.
+使用 ```[``` 和 ```]以声明数组```.
 
-    //Array containing "Hello" and "World"
-    val stringArray = ["Hello", "World"] as string[];
+    //包含"你好"和"世界"的数组
+    val stringArray = ["你好", "世界"] as string[];
     
-    //Array containing 1-3
+    //包含数字 1,2,和3 的数组
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+也许你会说：“等等，我以前好想见过这些数组……”你确实见过。 还记得 ```recipes.add(out,[[],[],[]]);吗？```? 这一块就用了三个数组，每个数组又包含三个条目，以此来定义工作台配方。
 
-## Casting Arrays
+## 创建数组
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+您肯定注意到这里的所有数组都有 ` as ` 语句。  
+为什么？ 这是因为 ZenScript 有时无法预测数组中项的类型。 这就会导致游戏中会出现类型转换错误！  
+为此，最安全的方法就是在构建数组的时候就指定正确的类型！  
+还有一点，如果你构建了一个非基本类型（即字符串，整型类似的类型之外的其他类型）数组，请确保你[导入](Import/)了对应的包，并将它放在脚本的最顶上：
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## 嵌套数组
 
-You can place Arrays in Arrays.
+数组中可以嵌套数组。
 
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beatuful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["你好","世界"] as string[];
+    val stringArray2 = ["我","是"] as string[];
+    val stringArray3 = ["一只","漂亮的"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["蝴蝶","！"]] as string[][];
     
 
-## Reffering to items in an Array
+## 访问数组中的元素
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+你可以通过这个元素在数组中的位置以访问这个元素。 数组中的第一项是0号， 第二项是1号，以此类推。
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
