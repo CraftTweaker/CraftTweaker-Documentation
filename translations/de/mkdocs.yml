@@ -8,9 +8,9 @@ pages:
   - Global functions: 'Vanilla/Global_Functions.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
   - Advanced Functions:
-    -Arrays und Schleifen: "AdvancedFunctions/Arrays_and_Loops.md"
-    -Assoziative Arrays (Maps): "AdvancedFunctions/Associative_Arrays.md"
-    -Berechnungen: "AdvancedFunctions/Calculations.md"
+    - Arrays und Schleifen: "AdvancedFunctions/Arrays_and_Loops.md"
+    - Assoziative Arrays (Maps): "AdvancedFunctions/Associative_Arrays.md"
+    - Berechnungen: "AdvancedFunctions/Calculations.md"
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
