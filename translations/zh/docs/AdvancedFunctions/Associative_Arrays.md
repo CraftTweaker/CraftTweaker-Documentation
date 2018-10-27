@@ -1,10 +1,10 @@
-# Associative Arrays
+# 关联数组
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+关联数组 (有时也称为映射或字典) 类似于普通的 [ 数组 ](Arrays_and_Loops/)：它们都存储多个条目。 但是与 [ 数组 ](Arrays_and_Loops/) 不同的是，您可以选择要索引或者键（也称为映射）的类型！
 
-## Declaring an Associative Array
+## 声明关联数组
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+使用大括号 ` {} ` 和冒号 `: ` 来声明关联数组
 
 ```JAVA
 val myAssocArray = {
@@ -13,83 +13,81 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+让我们对其进行拆分分析：
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- ` val myAssocArray = ` 标准变量声明
+- ` {` 先生，这是一个关联数组！
+- `dirt : <minecraft:dirt>` 使用 `dirt` 字符串映射 `<minecraft:dirt>`
+- `, ` 等下，这还没完
+- `gold : <minecraft:gold_ingot>` 使用 `gold` 字符串映射 `<minecraft:gold_ingot>`
+- `} ` 长官，数组已经写完了！
+- ` as IItemStack[string]; `说明这是使用字符串作为索引、 IItemStacks 作为值的关联数组。
 
-Okay, so what do I need to think of when using these?
+好的，那么我在使用它们时需要注意些什么呢？
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot iterate over an Associative Array that uses Arrays as keys.
-- You cannot use the 2-Variable Iterator when iterating over an Array that uses Arrays as values.
+- Zenscript 中绝大部分数据类型都可以作为键或值。
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
-## Refering to Items inside an Associative Array.
+## 引用关联数组中的项
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
-`Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+你可以像访问[数组](Arrays_and_Loops/)中的项一样访问一个关联数组中的项：  
+`数组名[索引]`  
+唯一不同之处在于，现在不必通过整数序号来访问数组，而是通过你之前预先声明的索引来访问！
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    &lt;minecraft:dirt&gt; : "这是我"
 } as string[IItemStack];
 
-//array[index]
+//数组名[索引]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//只要类型匹配，这里也可以使用变量
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+有一种特殊情况，当索引为字符串的时：  
+使用memberGetter方法（见下）就可以直接引用项：
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
+    //你可以使用 ""
     "one" : "1",
 
-    //but you don't have to
+    //但这不是强制的
     two : "2"
 } as string[string];
 
-//You can either use the memberGetter
+//你既可以使用 memberGetter
 print(assocWithStrings.one);
 
-//Or the standard index Getter
+//也可以使用传统的索引
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## 修改关联数组中的项
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+与数组一样，可以使用 ` 数组名[索引] = 新的值 ` 来修改关联数组中的项.   
+但有一个主要的区别：   
+数组有固定长度，但索引没有。 这意味着你随时可以通过向数组中添加先前并不包含的索引来添加新的项！
 
 ```JAVA
 val changingArray = {
-    <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
+    <minecraft:dirt> : "这是我",
+    <minecraft:gold_ingot> : "我讨厌它"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//覆盖 gold_ingot 的值
+changingArray[gg] = "我爱它";
 
-//adds a new entry
-changingArray[<minecraft:grass>] = "Power!";
+//添加新条目
+changingArray[<minecraft:grass>] = "能量！";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## 检索关联数组的索引集和项集
 
 The KeySet is an array containing all the map's keys.  
 The valueSet is an array containing all the map's values.  

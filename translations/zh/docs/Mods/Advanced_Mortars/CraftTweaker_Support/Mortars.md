@@ -1,33 +1,33 @@
-# Mortars
+# 研钵（Mortars）
 
-## Importing The Package
+## 导入相关包
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+使用 `mods.advancedmortars.Mortar`以导入相关包。
 
-## Add Recipe
+## 添加配方
 
 <table>
   <tr>
     <th>
-      Type
+      类型
     </th>
     
     <th>
-      Data Type
+      数据类型
     </th>
     
     <th>
-      Examples
+      例子
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      研钵类型
     </td>
     
     <td>
-      String[]
+      字符串（数组）
     </td>
     
     <td>
@@ -37,11 +37,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Output
+      输出
     </td>
     
     <td>
-      <a href="/Vanilla/Items/IItemStack/">IItemstack</a>
+      <a href="/Vanilla/Items/IItemStack/">物品堆（IItemstack）</a>
     </td>
     
     <td>
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      时长
     </td>
     
     <td>
-      Integer
+      整型
     </td>
     
     <td>
@@ -65,11 +65,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Inputs
+      输入
     </td>
     
     <td>
-      <a href="/Vanilla/Variable_Types/IIngredient/">IIngredient</a>
+      <a href="/Vanilla/Variable_Types/IIngredient/">材料（IIngredient）</a>
     </td>
     
     <td>
@@ -78,10 +78,10 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### 例子
 
 ```JAVA
-///// "Crushing"
+///// "粉碎"
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:15> * 4, 8, [<minecraft:bone>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <plants2:generic:4> * 2, 8, [<botania:flower>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:10> * 2, 8, [<botania:flower:5>]);
@@ -92,7 +92,7 @@ mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <min
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:8> * 2, 8, [<botania:flower:7>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:6> * 2, 8, [<botania:flower:9>]);
 
-///// "Mixing"
+///// "混合"
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:7> * 2, 4, [<ore:dyeBlack>, <ore:dyeWhite>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:8> * 2, 4, [<ore:dyeBlack>, <ore:dyeWhite> * 2]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:12> * 2, 4, [<ore:dyeBlue>, <ore:dyeWhite>]);

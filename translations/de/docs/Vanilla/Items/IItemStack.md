@@ -94,13 +94,13 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Amount
 
-| Method call                    | Returns                                                        | ParameterTypes |
-| ------------------------------ | -------------------------------------------------------------- | -------------- |
-| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
-| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
-| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
+| Methodenaufruf                 | Rückgabewert                                                   | Parameter Typen |
+| ------------------------------ | -------------------------------------------------------------- | --------------- |
+| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                 |
+| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int             |
+| `stack.withAmount(int amount)` | Einen neuen IItemStack mit der angegebenen Größe               | int             |
+| `stack *  amount`              | Einen neuen IItemStack mit der angegebenen Größe               | int             |
+| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int             |
 
 #### Weight
 

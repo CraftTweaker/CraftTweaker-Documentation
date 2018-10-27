@@ -26,8 +26,6 @@ Let's break this down, shall we?
 Okay, so what do I need to think of when using these?
 
 - You can use about every type available to Zenscript as either key or value.
-- You cannot iterate over an Associative Array that uses Arrays as keys.
-- You cannot use the 2-Variable Iterator when iterating over an Array that uses Arrays as values.
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
 ## Refering to Items inside an Associative Array.

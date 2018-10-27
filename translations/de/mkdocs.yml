@@ -651,7 +651,7 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-  - Developer Area:
+  - Entwicklerbereich:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
     - ZenOperators: 'Dev_Area/ZenOperators.md'
@@ -689,4 +689,4 @@ extra:
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
-  version: 'CrT v4.1.10'
+  version: 'CrT v4.1.11'

@@ -1,22 +1,22 @@
-# Getting Started with scripts
+# 脚本入门
 
-Crafttweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
+Crafttweaker 使用一种称为 `ZenScript` 的自定义脚本语言。ZenScript 读取于 `<游戏主目录>/scripts` 文件夹下的所有带有 `.zs` 后缀的文件。
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarions` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
+ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`导入`需要位于文件的顶部，`变量声明`也应该出现在较靠近文件顶部的位置。当然这不是强制性的，`变量`虽能够在脚本的各处定义，但`变量`声明之前的所有行都无法访问这个变量。
 
-## Introduction
+## 介绍
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+你有过这样的经历吗？你做了一个整合包，却发现自己只是堆砌了一堆模组，却并没有带来任何综合性的体验？ 模组的制作都是相对独立的，相比起别的模组，总是有几个显得过于 OP。 也许你认为一些物品有更好的配方， 也许你渴望在不移除整个模组的情况下，仅仅删除其中的一个物品， 也许你发现一些矿物词典包含过多或过少的物品…… 现在你可以全部做到——只需要一条 MineTweaker 指令。
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+除了支持原版 Minecraft 的主要功能之外，Crafttweaker 也提供了兼容其他模组的库，允许你进一步自定义其他模组相关的机器配方，甚至修改其他模组的一些行为。
 
-## Scripts
+## 脚本
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+脚本被存放在`<游戏主目录>/scripts` 文件夹，并在游戏的`预加载（PreInitialization）`阶段加载。不同于先前版本的 Crafttweaker，脚本无法被重新加载。这是因为 Mojang 对 1.12 版本的改动，目前仍无解决方案。 最后，脚本需要**同时在服务端和客户端上**才能启用。
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+所有以 `.zs` 为后缀的脚本文件可以被压缩为 `.zip` 文件，且压缩后仍旧能够正常读取。
 
-### Writing your first script
+### 书写您的第一个脚本
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
 
