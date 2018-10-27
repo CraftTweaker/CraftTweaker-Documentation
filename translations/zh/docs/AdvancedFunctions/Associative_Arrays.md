@@ -1,6 +1,6 @@
 # 关联数组
 
-关联数组 (有时也称为映射或字典) 类似于普通的 [ 数组 ](Arrays_and_Loops/)：它们都存储多个条目。 但是与 [ 数组 ](Arrays_and_Loops/) 不同的是，您可以选择要索引或者键（也称为映射）的类型！
+关联数组 (有时也称为映射或字典) 类似于普通的[数组](Arrays_and_Loops/)：它们都存储多个条目。 但是与[数组](Arrays_and_Loops/)不同的是，您可以选择要索引或者键（也称为映射）的类型！
 
 ## 声明关联数组
 
@@ -21,12 +21,12 @@ val myAssocArray = {
 - `, ` 等下，这还没完
 - `gold : <minecraft:gold_ingot>` 使用 `gold` 字符串映射 `<minecraft:gold_ingot>`
 - `} ` 长官，数组已经写完了！
-- ` as IItemStack[string]; `说明这是使用字符串作为索引、 IItemStacks 作为值的关联数组。
+- ` as IItemStack[string]; `说明这是使用字符串作为键、 IItemStacks 作为值的关联数组。
 
 好的，那么我在使用它们时需要注意些什么呢？
 
 - Zenscript 中绝大部分数据类型都可以作为键或值。
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- 你无法用变量作为声明数组的键（使用`{}`的那个），因为这些文本将会被解释成字符串！
 
 ## 引用关联数组中的项
 
@@ -87,18 +87,18 @@ changingArray[gg] = "我爱它";
 changingArray[<minecraft:grass>] = "能量！";
 ```
 
-## 检索关联数组的索引集和项集
+## 检索关联数组的键集和项集
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+键集（KeySet）是一个包含了所有映射的键的数组。  
+项集（valueSet）是一个包含了所有映射的项的数组。  
+条目集（entrySet）是一个包含了所有映射条目的数组（见下）。
 
 ```JAVA
-myAssocArray.keySet   //keySet
-myAssocArray.keys     //keySet
-myAssocArray.values   //valueSet
-myAssocArray.valueSet //valueSet
-myAssocArray.entrySet //entrySet
+myAssocArray.keySet   //键集
+myAssocArray.keys     //键集
+myAssocArray.values   //项集
+myAssocArray.valueSet //项集
+myAssocArray.entrySet //条目集
 ```
 
 ## Iterating over an Associative Array

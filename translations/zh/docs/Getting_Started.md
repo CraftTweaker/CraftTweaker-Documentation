@@ -18,45 +18,45 @@ ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`
 
 ### 书写您的第一个脚本
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+如果你想开始书写一个脚本，你需要创建一个非常基本的脚本文件，这个文件可以起名叫做 `hello.zs`，并放置在 `<游戏主目录>/scripts` 文件夹下。
 
-In `hello.zs` put the following line
+在 `hello.zs` 文件中写入以下内容：
 
-    print("Hello world!");
+    print("你好，世界！");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+接着启动 Minecraft 并查看 `crafttweaker.log` 文件。
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+`crafttweaker.log` 文件位于 <0><游戏主目录></0> 下，它能够被任何读取文本文档的软件打开。
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+这里推荐使用 Notepad++ 或者 Sublime Text 来编辑脚本文件，当然别的程序也可以。
 
-### The crafttweaker.log file
+### crafttweaker.log 文件
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+` crafttweaker.log ` 文件的输出会使用一种特殊的语法，基本的语法结构如下：
 
-    [LOADERSTAGE][SIDE][TYPE] <message>
+    [Forge 加载阶段（LOADERSTAGE）][端（SIDE）][类型（TYPE）] <信息>
     
 
-Using the example above, the output would be:
+先前脚本的输出如下：
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] 你好，世界
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+这个语法用于调试，也只有命令的输出信息不使用此语法，在这种情况下，它只是打印消息，这样做能够更容易的复制粘贴输出信息。
 
-### Comments
+### 注释
 
-Comments can be used to make your script files more readable and easier to understand!
+注释可以用来使您的脚本文件更易于阅读，更容易理解!
 
-ZenScript supports 3 types of comments, being:
+ZenScript 支持三种不同的注释书写方法，它们分别是：
 
-Single line: `// I'm a single line comment!`
+单行注释： `// 我是一条单行注释！`
 
-Alternate Single Line: `# I'm also a single line comment!`
+另一种单行注释 `# 我也是一条单行注释！`
 
-Multiline:
+多行注释：
 
-    /* I'm 
-    a
-    multiline comment! */
+    /* 我是
+    一条
+    多行注释！ */

@@ -100,9 +100,9 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //定义变量 “i" ，它会遍历 IArray 中的所有序号（例如 0,1,2,...)
+        //定义变量 ”item" ，它会遍历 IArray 中的每一项（例如 <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>）
+        //然后就可以使用这些变量了！
     
         //使用 JArry 数组的物品和 KArray 数组的物品来合成 IArray 数组中的物品（例如用木斧和草方块合成泥土，用木板和木头合成金铲，用金锭和绿宝石合成钻石）
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
@@ -114,12 +114,12 @@ For 循环的主要用途是遍历数组中的每一个项。 遍历指对数组
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //定义变量 “i" ，它会遍历 10 至 19 的每一个整数（例如 10,11,12,...18,19）
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //定义变量 "item" ，它会遍历所有模组 ID 为 ”minecraft“ 的物品并移除它们的合成配方
         recipes.remove(item);
     }
     
