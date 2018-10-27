@@ -44,7 +44,7 @@ You can get those locations by hovering over the recipe output in JEI or the Ast
 
 
 All recipe addition methods require these parameters:  
-string `recipeLocation`,
+string `recipeLocation`,  
 [IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
 int `craftingTickTime`,  
