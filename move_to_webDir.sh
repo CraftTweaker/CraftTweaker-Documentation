@@ -1,3 +1,3 @@
 #!/bin/bash
 echo $webDir
-cp -fR build/* $webDir
+cp -fRv build/* $webDir
