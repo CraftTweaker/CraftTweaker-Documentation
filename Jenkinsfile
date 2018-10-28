@@ -3,10 +3,11 @@
 pipeline {
     agent any
     stages {
-        stage('Setup') {
+        stage('Cleanup') {
             steps {
-                echo 'Setting up pip dependencies'
-                //pip install mkdocs==0.16.3
+                echo 'Cleaning up'
+                sh 'chmod +x cleanup.sh'
+                sh 'bash ./cleanup.sh'
             }
         }
         stage('Build') {
@@ -19,8 +20,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-
-                sh 'cat ./docs/Mods/ContentTweaker/Materials/Parts/Part.md'
                 }
             }
         }
