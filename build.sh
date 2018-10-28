@@ -3,7 +3,7 @@
 echo "start";
 
 echo "Removing previous builds";
-rm -frv ./build/*;
+rm -fr ./build/*;
 
 
 echo "Building english site";
