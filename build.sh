@@ -6,8 +6,12 @@ echo "Removing previous builds";
 rm -fr ./build/*;
 
 
-echo "Building english site";
-mkdocs build --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en;
+#echo "Building english site";
+#mkdocs build --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en;
+
+cp ./docs ./translations/en/;
+cp ./mkdocs.yml ./translations/en/;
+
 
 cd ./translations
 
