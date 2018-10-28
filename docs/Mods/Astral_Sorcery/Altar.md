@@ -20,14 +20,17 @@ mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/
 
 
 <details><summary>Pre v1.10 handler</summary>
-This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses the provided altar level.  
+
+
+This function removes the first recipe it finds that returns provided <a href="../../../Vanilla/Items/IItemStack/">IItemStack</a> `output` and uses the provided altar level.<br>
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
-|Altar Level | Level Name             |
-|------------|------------------------|
-|0           |Luminous Crafting Table |
-|1           |Starlight Crafting Altar|
-|2           |Celestial Altar         |
+<table>
+	<tr><th>Altar Level</th><th>Level name</th></tr>
+	<tr><td>0</td><td>Luminous Crafting Table</td></tr>
+	<tr><td>1</td><td>Starlight Crafting Altar</td></tr>
+	<tr><td>2</td><td>Celestial Altar</td></tr>
+</table>
 
 ```JAVA
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
