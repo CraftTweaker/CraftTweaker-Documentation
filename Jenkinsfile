@@ -19,6 +19,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
+
+                cat ./docs/Mods/ContentTweaker/Materials/Parts/Part.md
                 }
             }
         }

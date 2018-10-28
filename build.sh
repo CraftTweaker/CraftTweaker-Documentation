@@ -4,7 +4,6 @@ echo "start";
 
 echo "Removing previous builds";
 rm -frv ./build/*;
-git reset --hard;
 
 
 echo "Building english site";
