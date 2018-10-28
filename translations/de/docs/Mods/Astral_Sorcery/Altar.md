@@ -39,7 +39,8 @@ Unlike vanilla recipe names, they are not optional and you will encounter errors
 You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
 
 All recipe addition methods require these parameters:  
-string `recipeLocation`, [IItemStack](/Vanilla/Items/IItemStack/) `output`,  
+string `recipeLocation`,  
+[IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
 int `craftingTickTime`,  
 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] `inputs`
@@ -54,7 +55,7 @@ These recipes cannot be shapeless!
 `inputs` length *has to be* 9
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar1.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
@@ -70,7 +71,7 @@ Adds a recipe to the Starlight Crafting Table (T2)
 `inputs` length *has to be* 13
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar2.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
@@ -87,7 +88,7 @@ Adds a recipe to the Celestial Altar (T3)
 `inputs` length *has to be* 21
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar3.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
@@ -110,7 +111,7 @@ Adds a recipe to the Trait Altar (T4)
 `inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar4.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
 ```JAVA
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);

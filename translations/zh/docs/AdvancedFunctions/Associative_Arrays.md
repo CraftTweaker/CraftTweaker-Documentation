@@ -101,19 +101,19 @@ myAssocArray.valueSet //项集
 myAssocArray.entrySet //条目集
 ```
 
-## Iterating over an Associative Array
+## 遍历一个关联数组
 
-There are two Iterators that allow you to iterate over an Associative Array:
+这里提供了两种遍历方法来遍历关联数组：
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- 键遍历法：遍历所有的键，只需要传入一个参数
+- 键-值遍历法：同时遍历键和值，需要传入两个参数
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+让我们来遍历一个存储了工作台配方的关联数组：
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- 键作为的配方的输出，类型为 [物品堆（IItemStack）](/Vanilla/Items/IItemStack/)
+- 值作为配方的输入，类型为 [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/)
+- 我们将使用如下所示的键迭代器: ` for key in assocArray {代码;}`
+- 我们也可以使用如下所示的键-值迭代器: ` for key, value in assocArray {代码;}`
 
 ```JAVA
 import crafttweaker.item.IItemStack;
@@ -127,30 +127,30 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//键是 草（grass）、金锭（goldIngot）和泥土（dirt）
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//键是 草（grass）、金锭（goldIngot）和泥土（dirt），值是 他们各自的配方
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
 ```
 
-# ZenType Entry
+# ZenType 条目
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+一个映射条目包含一组键和值。  
+目前仅能通过映射的 entrySet 方法获取这个条目。
 
-You can use the getters to get `key` and `value`
+你可以使用 getters 来具体获取其中的 `键` 和 `值`
 
 ```kotlin
-//Replace map with a reference to an existing map/associative array
+//从已有的映射/关联数组获取映射条目
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //返回条目的键。
+myEntry.value;  //返回该条目的值。
 ```
