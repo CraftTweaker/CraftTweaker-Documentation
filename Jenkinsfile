@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Testing...'
 
-                cat ./docs/Mods/ContentTweaker/Materials/Parts/Part.md
+                sh 'cat ./docs/Mods/ContentTweaker/Materials/Parts/Part.md'
                 }
             }
         }
