@@ -10,6 +10,7 @@ git clean -df;
 #echo "Building english site";
 #mkdocs build --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en;
 
+mkdir -p ./translations/en/docs;
 cp -fr ./docs ./translations/en/docs;
 cp ./mkdocs.yml ./translations/en/;
 
