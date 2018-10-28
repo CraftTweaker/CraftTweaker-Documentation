@@ -2,7 +2,7 @@
 
 echo "start"
 echo "Building english site"
-mkdocs build --verbose --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en
+mkdocs build --verbose --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en;
 
 cd ./translations
 
