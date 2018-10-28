@@ -11,6 +11,12 @@ It might be required for you to import the package if you encounter any issues, 
 You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 
+Beam ![beam icon](/Mods/ContentTweaker/Materials/Parts/Assets/beam.png)
+
+
+TTT
+Beam ![beam icon](../Assets/beam.png)
+
 <details>
 	<summary>Following types are pre-registered (Headlines are the [Part Types](/Mods/ContentTweaker/Materials/Parts/PartType/)):</summary>
 	<h4>Items:</h4>
