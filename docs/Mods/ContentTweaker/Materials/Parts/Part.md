@@ -15,25 +15,25 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 	<summary>Following types are pre-registered (Headlines are the [Part Types](/Mods/ContentTweaker/Materials/Parts/PartType/)):</summary>
 	<h4>Items:</h4>
 		<ul>
-			<li>Beam ![beam icon](Assets/beam.png)</li>
-			<li>Bolt ![Bolt icon](Assets/bolt.png)</li>
-			<li>Casing ![Casing icon](Assets/casing.png)</li>
-			<li>Clump ![Clump icon](Assets/clump.png)</li>
-			<li>Crystal ![Crystal icon](Assets/crystal.png)</li>
-			<li>Crushed Ore (crushed_ore) ![Crushed Ore icon](Assets/crushed_ore.png)</li>
-			<li>Dense Plate (dense_plate) ![Dense Plate icon](Assets/dense_plate.png)</li>
-			<li>Dirty Dust (dirty_dust) ![Dirty Dust icon](Assets/dirty_dust.png)</li>
-			<li>Dust ![Dust icon](Assets/dust.png)</li>
-			<li>Gear ![Gear icon](Assets/gear.png)</li>
-			<li>Ingot ![Ingot icon](Assets/ingot.png)</li>
-			<li>Nugget ![Nugget icon](Assets/nugget.png)</li>
-			<li>Plate ![Plate icon](Assets/plate.png)</li>
-			<li>Rod ![Rod icon](Assets/rod.png)</li>
-			<li>Shard ![Shard icon](Assets/shard.png)</li>
+			<li>Beam ![beam icon](/Mods/ContentTweaker/Materials/Parts/Assets/beam.png)</li>
+			<li>Bolt ![Bolt icon](/Mods/ContentTweaker/Materials/Parts/Assets/bolt.png)</li>
+			<li>Casing ![Casing icon](/Mods/ContentTweaker/Materials/Parts/Assets/casing.png)</li>
+			<li>Clump ![Clump icon](/Mods/ContentTweaker/Materials/Parts/Assets/clump.png)</li>
+			<li>Crystal ![Crystal icon](/Mods/ContentTweaker/Materials/Parts/Assets/crystal.png)</li>
+			<li>Crushed Ore (crushed_ore) ![Crushed Ore icon](/Mods/ContentTweaker/Materials/Parts/Assets/crushed_ore.png)</li>
+			<li>Dense Plate (dense_plate) ![Dense Plate icon](/Mods/ContentTweaker/Materials/Parts/Assets/dense_plate.png)</li>
+			<li>Dirty Dust (dirty_dust) ![Dirty Dust icon](/Mods/ContentTweaker/Materials/Parts/Assets/dirty_dust.png)</li>
+			<li>Dust ![Dust icon](/Mods/ContentTweaker/Materials/Parts/Assets/dust.png)</li>
+			<li>Gear ![Gear icon](/Mods/ContentTweaker/Materials/Parts/Assets/gear.png)</li>
+			<li>Ingot ![Ingot icon](/Mods/ContentTweaker/Materials/Parts/Assets/ingot.png)</li>
+			<li>Nugget ![Nugget icon](/Mods/ContentTweaker/Materials/Parts/Assets/nugget.png)</li>
+			<li>Plate ![Plate icon](/Mods/ContentTweaker/Materials/Parts/Assets/plate.png)</li>
+			<li>Rod ![Rod icon](/Mods/ContentTweaker/Materials/Parts/Assets/rod.png)</li>
+			<li>Shard ![Shard icon](/Mods/ContentTweaker/Materials/Parts/Assets/shard.png)</li>
 		</ul>
 	<h4>Blocks:</h4>
 		<ul>
-			<li>Block ![Block icon](Assets/block.png)</li>
+			<li>Block ![Block icon](/Mods/ContentTweaker/Materials/Parts/Assets/block.png)</li>
 		</ul>
 	<h4>Ores:</h4>
 		<ul>
@@ -47,7 +47,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 		</ul>	
 	<h4>Armor:</h4>
 		<ul>
-			<li>Armor ![Helmet Icon](Assets/armor_head.png)![Chest Plate Icon](Assets/armor_chest.png)![Leggins Icon](Assets/armor_legs.png)![Boots Icon](Assets/armor_feet.png)</li>
+			<li>Armor ![Helmet Icon](/Mods/ContentTweaker/Materials/Parts/Assets/armor_head.png)![Chest Plate Icon](/Mods/ContentTweaker/Materials/Parts/Assets/armor_chest.png)![Leggins Icon](/Mods/ContentTweaker/Materials/Parts/Assets/armor_legs.png)![Boots Icon](/Mods/ContentTweaker/Materials/Parts/Assets/armor_feet.png)</li>
 		</ul>
 	<h4>Minecart</h4>
 		<ul>

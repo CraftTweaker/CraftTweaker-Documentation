@@ -60,7 +60,7 @@ These recipes cannot be shapeless!
 `inputs` length *has to be* 9
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar1.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
@@ -77,7 +77,7 @@ Adds a recipe to the Starlight Crafting Table (T2)
 `inputs` length *has to be* 13
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar2.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
@@ -95,7 +95,7 @@ Adds a recipe to the Celestial Altar (T3)
 `inputs` length *has to be* 21
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar3.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
@@ -118,7 +118,7 @@ Adds a recipe to the Trait Altar (T4)
 `inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
 
 `inputs` Order:  
-![Inputs Order](Assets/guialtar4.png)
+![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
 ```JAVA
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
