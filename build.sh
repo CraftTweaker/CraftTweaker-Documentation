@@ -4,17 +4,18 @@ echo "start";
 
 echo "Removing previous builds";
 rm -fr ./build/*;
+git clean -df;
 
 
 #echo "Building english site";
 #mkdocs build --clean --theme-dir ./mkdocs_windmill --site-dir ./build/en;
 
-cp -fr ./docs ./translations/en/;
+cp -fr ./docs ./translations/en/docs;
 cp ./mkdocs.yml ./translations/en/;
 
 
-cd ./translations
+cd ./translations;
 
-TRANS=./*
+TRANS=./*;
 
 for f in $TRANS; do cd $f echo "Processing folder $f"; SITEDIR="../../build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --theme-dir "../../mkdocs_windmill" --site-dir $SITEDIR; cd ..; done
