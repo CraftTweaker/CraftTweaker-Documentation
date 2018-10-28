@@ -1,4 +1,7 @@
 #!/bin/bash
 echo $webDir
+
+ls $webDir
+
 rm -fRv $webDir/*
-cp -fRv build/* $webDir./2/
+#cp -fRv build/* $webDir
