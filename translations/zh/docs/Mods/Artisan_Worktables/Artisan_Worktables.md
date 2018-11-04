@@ -1,6 +1,6 @@
 # Artisan Worktables
 
-## Information:
+## 信息:
 
 Artisan Worktables adds a wide arrangement of custom Crafting Tables that requires "Tools" for the Crafting Process. This mod has both JEI and GameStages support, as well as quite robust CraftTweaker Integration!
 

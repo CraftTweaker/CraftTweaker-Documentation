@@ -12,28 +12,28 @@ It might be required for you to import the package if you encounter any issues, 
 You can either retrieve an existing Part using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/) or create an entirely new one using the [Part Builder](/Mods/ContentTweaker/Materials/Parts/Part_Builder/)
 
 <details>
-    <summary>Following types are pre-registered (Headlines are the <a href="/Mods/ContentTweaker/Materials/Parts/PartType/">Part Types</a>):</summary>
+    <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
     <h4>Items:</h4>
         <ul>
-            <li>Beam <img src="/Mods/ContentTweaker/Materials/Parts/Assets/beam.png" alt="beam icon" /></li>
-            <li>Bolt <img src="/Mods/ContentTweaker/Materials/Parts/Assets/bolt.png" alt="Bolt icon" /></li>
-            <li>Casing <img src="/Mods/ContentTweaker/Materials/Parts/Assets/casing.png" alt="Casing icon" /></li>
-            <li>Clump <img src="/Mods/ContentTweaker/Materials/Parts/Assets/clump.png" alt="Clump icon" /></li>
-            <li>Crystal <img src="/Mods/ContentTweaker/Materials/Parts/Assets/crystal.png" alt="Crystal icon" /></li>
-            <li>Crushed Ore (crushed_ore) <img src="/Mods/ContentTweaker/Materials/Parts/Assets/crushed_ore.png" alt="Crushed Ore icon" /></li>
-            <li>Dense Plate (dense_plate) <img src="/Mods/ContentTweaker/Materials/Parts/Assets/dense_plate.png" alt="Dense Plate icon" /></li>
-            <li>Dirty Dust (dirty_dust) <img src="/Mods/ContentTweaker/Materials/Parts/Assets/dirty_dust.png" alt="Dirty Dust icon" /></li>
-            <li>Dust <img src="/Mods/ContentTweaker/Materials/Parts/Assets/dust.png" alt="Dust icon" /></li>
-            <li>Gear <img src="/Mods/ContentTweaker/Materials/Parts/Assets/gear.png" alt="Gear icon" /></li>
-            <li>Ingot <img src="/Mods/ContentTweaker/Materials/Parts/Assets/ingot.png" alt="Ingot icon" /></li>
-            <li>Nugget <img src="/Mods/ContentTweaker/Materials/Parts/Assets/nugget.png" alt="Nugget icon" /></li>
-            <li>Plate <img src="/Mods/ContentTweaker/Materials/Parts/Assets/plate.png" alt="Plate icon" /></li>
-            <li>Rod <img src="/Mods/ContentTweaker/Materials/Parts/Assets/rod.png" alt="Rod icon" /></li>
-            <li>Shard <img src="/Mods/ContentTweaker/Materials/Parts/Assets/shard.png" alt="Shard icon" /></li>
+            <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
+            <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
+            <li>Casing<img src="../Assets/casing.png" alt="icon"></li>
+            <li>Clump<img src="../Assets/clump.png" alt="icon"></li>
+            <li>Crystal Crystal<img src="../Assets/crystal.png" alt="icon"></li>
+            <li>Crushed Ore (crushed_ore)<img src="../Assets/crushed_ore.png" alt="icon"></li>
+            <li>Dense Plate (dense_plate)<img src="../Assets/dense_plate.png" alt="icon"></li>
+            <li>Dirty Dust (dirty_dust)<img src="../Assets/dirty_dust.png" alt="icon"></li>
+            <li>Dust<img src="../Assets/dust.png" alt="icon"></li>
+            <li>Gear<img src="../Assets/gear.png" alt="icon"></li>
+            <li>Ingot<img src="../Assets/ingot.png" alt="icon"></li>
+            <li>Nugget<img src="../Assets/nugget.png" alt="icon"></li>
+            <li>Plate<img src="../Assets/plate.png" alt="icon"></li>
+            <li>Rod<img src="../Assets/rod.png" alt="icon"></li>
+            <li>Shard<img src="../Assets/shard.png" alt="icon"></li>
         </ul>
     <h4>Blocks:</h4>
         <ul>
-            <li>Block <img src="/Mods/ContentTweaker/Materials/Parts/Assets/block.png" alt="Block icon" /></li>
+            <li>Block<img src="../Assets/block.png" alt="icon"></li>
         </ul>
     <h4>Ores:</h4>
         <ul>
@@ -47,7 +47,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
         </ul><br />
     <h4>Armor:</h4>
         <ul>
-            <li>Armor <img src="/Mods/ContentTweaker/Materials/Parts/Assets/armor_head.png" alt="Helmet Icon" /><img src="/Mods/ContentTweaker/Materials/Parts/Assets/armor_chest.png" alt="Chest Plate Icon" /><img src="/Mods/ContentTweaker/Materials/Parts/Assets/armor_legs.png" alt="Leggins Icon" /><img src="/Mods/ContentTweaker/Materials/Parts/Assets/armor_feet.png" alt="Boots Icon" /></li>
+            <li>Armor <img src="../Assets/armor_head.png" alt="head icon"><img src="../Assets/armor_chest.png" alt="chest icon"><img src="../Assets/armor_legs.png" alt="legs icon"><img src="../Assets/armor_feet.png" alt="feet icon"></li>
         </ul>
     <h4>Minecart</h4>
         <ul>

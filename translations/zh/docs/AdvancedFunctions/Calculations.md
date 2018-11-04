@@ -20,7 +20,7 @@
 | `-` | `-=` | 减  | 2-1    |
 | `*` | `*=` | 乘  | 1*1    |
 | `/` | `/=` | 除  | 2/2    |
-| `%` | `%=` | 求余 | 13 % 6 |
+| `%` | `%=` | 求模 | 13 % 6 |
 
 ## 连接
 
@@ -53,21 +53,21 @@
     test -= 3;
     
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+方法 1 和 2 使用了`=`来给变量赋值。  
+这应该是最适合初学者使用，也是唯一一种给不在运算中使用的变量赋值的赋值方式。
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+方法 3 则将减法运算的结果返回到`-=`符号前的变量中。  
+本页所有的运算符都有自运算符，且都在先前的表中给出了介绍。
 
-### Using the result otherwise
+### 其他使用运算结果的地方
 
-You can always use the result of a calculation in a function or a conditional statement:
+你可以将运算结果用在在函数中，或者作为条件语句的判定：
 
-    //prints 4
+    //打印 4
     print(3+1);
     
-    //removes the item on array[4]
+    //移除数组[4]中物品的合成配方
     recipes.remove(array[3+1]);
     
     //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+    if(3+1 == 2*2) {print("使用了计算！")}
