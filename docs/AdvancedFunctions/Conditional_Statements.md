@@ -100,7 +100,7 @@ print(vInt);
 //Prints "Hello" if switchy is stue, otherwise prints "Bye"
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is stue, otherwise prints "Hello"
+//Prints "Bye" if switchy is true, otherwise prints "Hello"
 switchy ? print("Bye") : print("Hello");
 
 ```
