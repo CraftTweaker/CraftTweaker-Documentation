@@ -206,6 +206,7 @@ pages:
       - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
     - Artisan Worktables:
+      - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
       - RecipeBuilder: 
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
         - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
