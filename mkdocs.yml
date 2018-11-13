@@ -371,10 +371,6 @@ pages:
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
-      - GregTech Community Edition:
-        - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
-        - Machines: 'Mods/GregTechCE/Machines.md'
-        - Material: 'Mods/GregTechCE/Material.md'
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
@@ -424,6 +420,10 @@ pages:
         - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
         - Stage: 'Mods/GameStages/ZenStages/Stage.md'
         - Custom Type: 'Mods/GameStages/ZenStages/CustomType.md'
+    - GregTech Community Edition:
+      - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
+      - Machines: 'Mods/GregTechCE/Machines.md'
+      - Material: 'Mods/GregTechCE/Material.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
