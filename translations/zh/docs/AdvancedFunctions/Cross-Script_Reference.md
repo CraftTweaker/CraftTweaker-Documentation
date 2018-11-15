@@ -1,4 +1,4 @@
-# Cross-Script Reference
+# 跨脚本调用
 
 All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
 This allows you to access these fields/functions using the dot-notation.

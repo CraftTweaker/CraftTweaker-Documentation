@@ -97,7 +97,7 @@ print(vInt);
 //Prints "Hello" if switchy is stue, otherwise prints "Bye"
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is stue, otherwise prints "Hello"
+//Prints "Bye" if switchy is true, otherwise prints "Hello"
 switchy ? print("Bye") : print("Hello");
 
 ```
@@ -142,7 +142,10 @@ if(loadedMods has "mcp"){
 
 ### in/has IIngredient
 
-You can also check if an item matches a definition by comparing two IIngredients.
+You can also check if an item matches a definition by comparing two IIngredients.  
+With this one you need to be a bit careful as not to confuse the two entries:  
+This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
+In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){

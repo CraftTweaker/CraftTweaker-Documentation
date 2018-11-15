@@ -8,7 +8,7 @@ You can call the Orechid package using `mods.botania.Orechid`
 
 ## Find all registered Recipes
 
-You can find all registered ElvenTrade recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
+You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 

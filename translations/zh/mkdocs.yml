@@ -1,17 +1,17 @@
-# If you add a page, you must add it to the index here
+# 如果你需要添加新页面，别忘了将其添加到此处的索引中
 pages:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
+  - 首页: 'index.md'
+  - 脚本入门: 'Getting_Started.md'
+  - Wiki 使用: 'UsingThisWiki.md'
   - Commands: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
   - Global functions: 'Vanilla/Global_Functions.md'
   - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
+  - 高级函数:
+    - 数组与循环: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
+    - 数学运算: 'AdvancedFunctions/Calculations.md'
+    - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
     - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
     - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
@@ -195,9 +195,9 @@ pages:
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
   - Mods:
-    - Advanced Mortars:
-      - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - 更好的研钵:
+      - 更好的研钵: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
+      - CraftTweaker 支持: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -206,10 +206,11 @@ pages:
       - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
     - Artisan Worktables:
-      - RecipeBuilder: 
-        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+      - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
+      - 配方构建器: 
+        - 配方构建器: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
+        - 用法: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - 实例: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
@@ -370,10 +371,6 @@ pages:
           - World:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
-      - GregTech Community Edition:
-        - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
-        - Machines: 'Mods/GregTechCE/Machines.md'
-        - Material: 'Mods/GregTechCE/Material.md'
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
@@ -406,6 +403,8 @@ pages:
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
+    - Enchanting Plus:
+        - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
@@ -421,6 +420,10 @@ pages:
         - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
         - Stage: 'Mods/GameStages/ZenStages/Stage.md'
         - Custom Type: 'Mods/GameStages/ZenStages/CustomType.md'
+    - GregTech Community Edition:
+      - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
+      - Machines: 'Mods/GregTechCE/Machines.md'
+      - Material: 'Mods/GregTechCE/Material.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:

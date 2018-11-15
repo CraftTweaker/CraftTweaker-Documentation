@@ -1,8 +1,8 @@
-# To Scale Example
+# 实例
 
-Here's a Quick To Scale Example:
+下面快速看一个示例：
 
-## Example
+## 例
 
 ```JAVA
 import crafttweaker.item.IItemStack;
@@ -24,22 +24,22 @@ RecipeBuilder.get("carpenter")
         ])
   .addTool(<ore:carpenters_hammer>, 3)
 
-// Adds a Output for 10 Oak Stairs at a Weight of 10 in 210
+// 添加合成 10 个橡木楼梯的配方，权重占 210 中的 10
   .addOutput(stairs[0] * 10, 10)
 
-// Adds a Output for 10 Birch Stairs at a Weight of 20 in 210
+// 添加合成 10 个桦木楼梯的配方，权重占 210 中的 20
   .addOutput(stairs[1] * 10, 20)
 
-// Adds a Output for 10 Spruce Stairs at a Weight of 30 in 210
+// 添加合成 10 个云杉木楼梯的配方，权重占 210 中的 30
   .addOutput(stairs[2] * 10, 30)
 
-// Adds a Output for 10 Jungle Stairs at a Weight of 40 in 210
+// 添加合成 10 个丛林木楼梯的配方，权重占 210 中的 40
   .addOutput(stairs[3] * 10, 40)
 
-// Adds a Output for 10 Acacia Stairs at a Weight of 50 in 210
+// 添加合成 10 个金合欢木楼梯的配方，权重占 210 中的 50
   .addOutput(stairs[4] * 10, 50)
 
-// Adds a Output for 10 Dark Oak Stairs at a Weight of 60 in 210
+// 添加合成 10 个深色橡木楼梯的配方，权重占 210 中的 60
   .addOutput(stairs[5] * 10, 60)
 
   .setExtraOutputOne(<minecraft:dye> * 5, 0.12)

@@ -1,13 +1,13 @@
-# Artisan Worktables
+# Artisan Worktables（工匠工作台）
 
 ## 信息:
 
-Artisan Worktables adds a wide arrangement of custom Crafting Tables that requires "Tools" for the Crafting Process. This mod has both JEI and GameStages support, as well as quite robust CraftTweaker Integration!
+Artisan Worktables 添加了多种自定义工作台和需要 "工具" 的合成过程。 此模组兼容 JEI 、 GameStages 以及 robust CraftTweaker Integration!
 
-### For More Information:
+### 如需更多信息：
 
 https://minecraft.curseforge.com/projects/advanced-mortars
 
-### Bug Reports:
+### Bug 反馈:
 
 https://github.com/codetaylor/advancedmortars/issues

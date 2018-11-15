@@ -27,11 +27,11 @@
     </td>
     
     <td>
-      字符串（数组）
+      字符串[]
     </td>
     
     <td>
-      ["wooden", "stone", "iron", "diamond"]
+      ["wooden", "stone", "iron", "diamond"] (分别是木，石，铁，钻石）
     </td>
   </tr>
   

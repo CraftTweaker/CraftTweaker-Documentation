@@ -90,14 +90,14 @@ val switchy = false;
 //打印 switchy 的值
 print("Switchy is " ~ switchy);
 
-//如果 switchy 的值为true，那么 vInt = 1，反之 vInt = 2
+//如果 switchy 的值为 true，那么 vInt = 1，反之 vInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//如果 switchy 的值为true，那么打印 “你好”，反之打印“再见”
+//如果 switchy 的值为 true 则打印"你好"，反之打印"再见"
 print(switchy ? "你好" : "再见");
 
-//如果 switchy 的值为true，那么打印 “再见”，反之打印“你好”
+//如果 switchy 的值为 true 则打印"再见"，反之打印"你好"
 switchy ? print("再见") : print("你好");
 
 ```
@@ -142,7 +142,10 @@ if(loadedMods has "mcp"){
 
 ### in/has IIngredient（检测材料）
 
-你也可以通过对比两个 IIngredients 对象，来检测一个物品是否满足定义。
+你也可以通过对比两个 IIngredients 对象，来检查一个物品是否满足定义。  
+注意不要混淆两个条目：  
+只有在` in `之后的条件语句对象包含于` in `时，判断结果才为真。  
+在大部分情况下你会使用` has `关键字，因为 has 比 in 更容易理解且功能完全相同。
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
