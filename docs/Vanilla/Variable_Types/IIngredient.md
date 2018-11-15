@@ -178,13 +178,13 @@ You can also match two IIngredient Objects, in which case you'd need to use the 
 
 ```
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
-val goldOre = <ore:ingotIron>;
+val oreIngot = <ore:ingotIron>;
 val ingotGold = <minecraft:gold_ingot>;
 
 
-//true as the gold ingot is in the ingots Ingredient
-ingots in ingotGold;
+//true as the ingots Ingredient has <minecraft:gold_ingot>
+ingots has ingotGold;
 
 //false as <minecraft:iron_ingot> cannot be found in <ore:ingotGold>
-goldOre in ingots;
+oreIngot has ingots;
 ```

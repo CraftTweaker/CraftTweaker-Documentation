@@ -5,26 +5,26 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 
 Creates a new gloabl entry for the mob. Only one global entry can exist per mob.
 ```java
-// mod.MobStages.addStage(String stage, String entityId);
-mod.MobStages.addStage("one", "minecraft:zombie");
+// mods.MobStages.addStage(String stage, String entityId);
+mods.MobStages.addStage("one", "minecraft:zombie");
 ```
 
 Adds a replacement for the mob. If the mob fails to spawn because there are no valid players nearby, the replacement mob will be spawned in it's place. 
 ```java
-// mod.MobStages.addReplacement(String entityId, String replacementId);
-mod.MobStages.addReplacement("minecraft:zombie, "minecraft:slime);
+// mods.MobStages.addReplacement(String entityId, String replacementId);
+mods.MobStages.addReplacement("minecraft:zombie", "minecraft:slime");
 ```
 
 Sets the range to search for valid players. The default range is 512 blocks, so this is optional. 
 ```java
-// mod.MobStages.addRange(String entityId, int range);
-mod.MobStages.addRange("minecraft:zombie", 32);
+// mods.MobStages.addRange(String entityId, int range);
+mods.MobStages.addRange("minecraft:zombie", 32);
 ```
 
 Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
 ```java
-// mod.MobStages.toggleSpawners(String entityId, boolean allow);
-mod.MobStages.toggleSpawners("minecraft:zombie", true);
+// mods.MobStages.toggleSpawners(String entityId, boolean allow);
+mods.MobStages.toggleSpawners("minecraft:zombie", true);
 ```
 
 ## Dimension Specific Options
