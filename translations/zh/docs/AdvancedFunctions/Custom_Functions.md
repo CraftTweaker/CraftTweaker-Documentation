@@ -1,4 +1,4 @@
-# Custom Functions
+# 自定义函数
 
 Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
 
