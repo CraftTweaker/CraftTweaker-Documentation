@@ -1,10 +1,10 @@
 # 自定义函数
 
-Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
+有时 Craft Tweaker 本身以及它的附属提供的函数根本不够用。 接下来我们将会讲解如何构建自定义函数！ 您甚至可以在函数中嵌套函数
 
-## Basic Syntax
+## 基本语法
 
-Generally, you declare a static using:
+一般来说，你可以这样声明一个静态函数：
 
 ```Java
 function NAME ([arguments[as type]]) [as returnType]{
