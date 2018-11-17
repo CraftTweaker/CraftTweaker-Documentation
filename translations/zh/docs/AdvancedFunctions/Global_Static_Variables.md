@@ -1,25 +1,25 @@
-# Global and Static Variables
+# 全局和静态变量
 
-Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
-"Why is there no way to make them available in every script?" Is what went through your head at such times.
+相信你一定遇到了这样的情景：在每个脚本中一遍又一遍的重复声明相同的变量  
+“就没什么方法能够在每个脚本中都能够调用？”你脑海里一定无数次重复了这个问题。
 
-Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
-They cannot be changed, though.
+值得欣慰的是，现在已经能够有办法声明并访问全局/静态的值了！  
+当然，它们一旦声明就无法被改变。
 
-## Difference between statics and globals
+## 静态和全局变量的区别
 
-Both, statics and globals are scriptbound and instantiated before the script is executed.  
-Both cannot be changed.  
-The difference is how they are called:  
-Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](Cross-Script_Reference/) to be accessed.
+静态和全局变量都可以跨脚本调用，并且在脚本执行前就被实例化了。  
+两者都无法再次被修改。  
+不同之处在于两者如何被调用：  
+全局变量可以在脚本的任意处，简单的使用变量名来进行调用。除非本地脚本中有同名变量覆盖了它。  
+静态变量则需要通过[跨脚本调用](Cross-Script_Reference/)方式才能访问。
 
-Globals are created using the `global` keyword.  
-Statics are created using the `static` keyword.
+全局变量创建需要使用 `global` 关键字；  
+静态变量创建需要 `static` 关键字。
 
-Aside from that, they are identical!
+除此之外，他们是相同的！
 
-## Declaring a global value
+## 声明全局变量
 
 Declaring a global value is as simple as declaring a local value:
 
