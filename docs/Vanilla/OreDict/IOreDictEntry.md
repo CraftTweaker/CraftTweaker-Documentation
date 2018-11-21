@@ -58,10 +58,12 @@ You can check if an IOreDictEntry contains an item using either the `in` or `has
 ```
 val oreDictEnt = <ore:ingotIron>;
 
+//While using in is possible
 if(oreDictEnt in <minecraft:iron_ingot>){
 	print("Iron is in the oreDict!");
 }
 
+//many prefer using has as it might make more sense grammar-wise
 if(oreDictEnt has <minecraft:iron_ingot>){
 	print("Iron still is in the oreDict!");
 }

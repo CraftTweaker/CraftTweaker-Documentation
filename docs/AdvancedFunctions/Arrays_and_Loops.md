@@ -104,7 +104,7 @@ for item in IArray {
 }
 
 for i, item in IArray {
-	//defines the variavle "i" with each element Number of IArray (i.e. 0,1,2,...)
+	//defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
 	//defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
 	//Just use these variables now!
 
@@ -123,7 +123,7 @@ for i in 10 .. 20 {
 }
 
 for item in loadedMods["minecraft"].items {
-	//defines the varaible "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+	//defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
 	recipes.remove(item);
 }
 ```

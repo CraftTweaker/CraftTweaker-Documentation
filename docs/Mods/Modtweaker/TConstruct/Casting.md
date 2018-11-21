@@ -5,7 +5,7 @@ The `Casting` package allows you to add or remove Casting recipes.
 ## Calling
 You can call the Casting package using `mods.tconstruct.Casting`
 
-## Add Alloy Recipes
+## Add Casting Recipes
 
 You can add recipes for both, casting tables and basins:
 The methods are equal in their parameters, varying only in their names.
@@ -24,7 +24,7 @@ mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_i
 ```
 
 
-## Removing Alloy Recipes
+## Removing Casting Recipes
 
 Removing Recipes is also possible for Casting Tables and Basins:
 
