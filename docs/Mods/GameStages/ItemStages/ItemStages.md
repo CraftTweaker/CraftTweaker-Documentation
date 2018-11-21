@@ -6,8 +6,9 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 //mods.ItemStages.addItemStage(stage, IIngredient);
 mods.ItemStages.addItemStage("one", <minecraft:stone>);
 
-//Note: Partial NBT will not hide items in JEI. Those need to be done separately. 
-mods.ItemStages.addItemStage("one", <minecraft:iron_chestplate>);
+//Hides an item with partial NBT. For example this hides all LV 5 enchantment books.
+//Note: Partial NBT will not hide items in JEI. Those need to be done separately. (JEI limitation)
+mods.ItemStages.addItemStage("one", <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short}]}));
 
 //Restricts access to all dyes in the ore dictionary.
 mods.ItemStages.addItemStage("one", <ore:dye>);
