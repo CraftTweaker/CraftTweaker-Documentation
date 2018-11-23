@@ -654,6 +654,11 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+  - How to contribute: 
+    - How to fork the project: 'Contribute/SetupGithub.md'
+    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
+    - How to create files online: 'Contribute/OnlineEditor_Create.md'
+    - How to file a Pull Request: 'Contribute/PullRequest.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
