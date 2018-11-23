@@ -33,7 +33,7 @@ After you have successfully located the file, click on it to open it in the GitH
 Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.  
 
 Click on the little pen icon to open the editor:
-![Edit Button](/Contribute/Assets/OnlineEditor_EditButton.png)
+![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
 
 The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:  
 
@@ -51,7 +51,7 @@ That's what the commit box below your Editor is for:
 You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
 
 By default it looks roughly like this:  
-![Commit Box Default](/Contribute/Assets/OnlineEditor_CommitBox_Default.png)
+![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
 In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md` because GitHub cannot know what your actual changes where it tries something as generic as this.
 
@@ -62,7 +62,7 @@ If you have multiple e-mail addresses registered for your GitHub account, you ca
 You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
 
 A filled out example might look like this:
-![Commit Box Filled](/Contribute/Assets/OnlineEditor_CommitBox_Filled.png)
+![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
 
 ## What to do next

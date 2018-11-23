@@ -17,7 +17,7 @@ This bar tells you how your fork version differs from the original one.
 
 For example, the picture below has three commits that have not yet been applied to the CrT-wiki whereas three other commits have been created in the original one that have not been applied to the fork.
 
-![Pull Request Button](/Contribute/Assets/PullRequest_Compare_PullRequestButton.png)
+![Pull Request Button](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
 
 If you click on the "Pull Request" button a new view will open, the Compare View.  
@@ -31,7 +31,7 @@ Now all you need is provide a descriptive title and a description that will tell
 Also notice the `Allow edits from mainainers` checkbox.  
 This checkbox allows people with write-access to the CrT-Repo (e.g. Members of the CraftTweaker organization) to modify files of your PR in order to resolve merge conflicts, for example.
 
-![New PR Tool](/Contribute/Assets/PullRequest_Create.png)
+![New PR Tool](/Contribute/assets/PullRequest_Create.png)
 
 At the bottom you can verify that all your changes will be included in the PR.
 

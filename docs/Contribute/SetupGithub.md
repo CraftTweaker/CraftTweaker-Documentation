@@ -10,7 +10,7 @@ The wiki repository can be found at <https://github.com/CraftTweaker/CraftTweake
 In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
 This action is called forking.  
 You can fork the repository by clicking on the "fork" button in the wiki's GH page:
-![Inputs Order](/Contribute/Assets/SetupGitHub_ForkButton.png)
+![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
 
 In case you are in a Github organization you might need to specify where you want to fork the repository to.  
 

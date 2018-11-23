@@ -28,7 +28,7 @@ Don't worry if it does not exist, you can still create the file.
 
 Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
 Find the path in GitHub and click `Create new file`
-![Create File Button](/Contribute/Assets/OnlineEditor_CreateFileButton.png)
+![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
 You are now presented with the new File editor page.  
 First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki used markdown.  
@@ -65,7 +65,7 @@ That's what the commit box below your Editor is for:
 You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
 
 By default it looks roughly like this:  
-![Commit Box Default](/Contribute/Assets/OnlineEditor_CommitBox_Default.png)
+![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
 In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md` because GitHub cannot know what your actual changes where it tries something as generic as this.
 
@@ -76,7 +76,7 @@ If you have multiple e-mail addresses registered for your GitHub account, you ca
 You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
 
 A filled out example might look like this:
-![Commit box Filled](/Contribute/Assets/OnlineEditor_CommitBox_Filled.png)
+![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
 
 ## What to do next
