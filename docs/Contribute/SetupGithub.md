@@ -21,4 +21,4 @@ Alternatively, you can go to `github.com/yourUserName/CraftTweaker-Documentation
 
 
 ## How to continue
-Now that you have successfully forked the Crafttweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor) or clone to your computer and edit locally.
+Now that you have successfully forked the Crafttweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor_Edit) or clone to your computer and edit locally.

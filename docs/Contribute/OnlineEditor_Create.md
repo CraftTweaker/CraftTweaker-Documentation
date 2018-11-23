@@ -6,7 +6,7 @@ You will need to have created a GitHub account and [forked the wiki to your acco
 
 ## Introduction
 GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalInstance) but you don't need to worry about setting up git and all.
+It may not be as versatile as using a local copy but you don't need to worry about setting up git and all.
 
 This guide will show you how to create a new wiki file using github's online editor.  
 Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).  
@@ -37,7 +37,7 @@ If you want the file to be created in a (possible nonexisting) subfolder, or eve
 
 The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
 
-If the syntax of the files is new for you, check the [Help on Markdown](/Contribute/Markdown) page.  
+If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google.  
 
 ## Add the file to the index
 After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.  

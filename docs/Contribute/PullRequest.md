@@ -1,7 +1,7 @@
 # Filing a PullRequest
 
 ## Prerequisites
-You need to have [created](/Contribute/OnlineEditor/Create) and/or [modified](/Contribute/OnlineEditor/Edit) files in your fork of the wiki.
+You need to have [created](/Contribute/OnlineEditor_Create) and/or [modified](/Contribute/OnlineEditor_Edit) files in your fork of the wiki.
 
 ## Introduction
 After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  

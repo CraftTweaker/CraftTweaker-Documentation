@@ -6,7 +6,7 @@ You will need to have created a GitHub account and [forked the wiki to your acco
 
 ## Introduction
 GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalInstance) but you don't need to worry about setting up git and all.
+It may not be as versatile as using a local copy but you don't need to worry about setting up git and all.
 
 This guide will show you how to edit an already existing file using github's online editor.  
 You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).  
@@ -42,7 +42,7 @@ The Editor allows you to change your file as you like, and also to directly view
 - Red: This section was present on this page before but was removed.
 - None: This section was untouched.
 
-If the syntax of the files is new for you, check the [Help on Markdown](/Contribute/Markdown) page.  
+If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google.  
 
 ## Save/Commit the changes
 After you have changed the file you need to let GitHub know that you want to save your changes.  
