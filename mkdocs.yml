@@ -152,6 +152,7 @@ pages:
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
+      - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
     - Ore Dictionary: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
