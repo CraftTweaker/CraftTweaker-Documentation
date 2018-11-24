@@ -408,6 +408,7 @@ pages:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Extra Utilities 2:
       - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
+      - InterModCommsHandler: 'Mods/ExtraUtilities2/InterModCommsHandler.md'
       - Custom Machines:
         - IMachine: 'Mods/ExtraUtilities2/CustomMachines/IMachine.md'
         - IMachineRegistry: 'Mods/ExtraUtilities2/CustomMachines/IMachineRegistry.md'
