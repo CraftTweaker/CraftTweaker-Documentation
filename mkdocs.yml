@@ -406,6 +406,12 @@ pages:
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
+    - Extra Utilities 2:
+      - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
+      - Custom Machines:
+        - IMachine: 'Mods/ExtraUtilities2/CustomMachines/IMachine.md'
+        - IMachineRegistry: 'Mods/ExtraUtilities2/CustomMachines/IMachineRegistry.md'
+        - IMachineSlot: 'Mods/ExtraUtilities2/CustomMachines/IMachineSlot.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
