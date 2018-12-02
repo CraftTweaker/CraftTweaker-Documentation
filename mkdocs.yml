@@ -607,6 +607,20 @@ pages:
       - Recipes: 
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
+    - MrCrayfish's Furniture Mod:
+      - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
+      - Crafting:
+        - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
+        - Chopping Board: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
+        - Dishwasher: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
+        - Freezer: 'Mods/MrCrayfish_s_Furniture_Mod/Freezer.md'
+        - Grill: 'Mods/MrCrayfish_s_Furniture_Mod/Grill.md'
+        - Microwave: 'Mods/MrCrayfish_s_Furniture_Mod/Microwave.md'
+        - Mine Bay: 'Mods/MrCrayfish_s_Furniture_Mod/MineBay.md'
+        - Oven: 'Mods/MrCrayfish_s_Furniture_Mod/Oven.md'
+        - Printer: 'Mods/MrCrayfish_s_Furniture_Mod/Printer.md'
+        - Toaster: 'Mods/MrCrayfish_s_Furniture_Mod/Toaster.md'
+        - Washing Machine: 'Mods/MrCrayfish_s_Furniture_Mod/WashingMachine.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
