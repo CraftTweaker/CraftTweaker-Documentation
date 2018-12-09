@@ -476,6 +476,10 @@ pages:
       - MechanicalDryingBasin: 'Mods/IntegratedDynamics/MechanicalDryingBasin.md'
       - Squeezer: 'Mods/IntegratedDynamics/Squeezer.md'
       - MechanicalSqueezer: 'Mods/IntegratedDynamics/MechanicalSqueezer.md'
+    - JAOPCA:
+      - JAOPCA: 'Mods/JAOPCA/JAOPCA.md'
+      - OreEntry: 'Mods/JAOPCA/OreEntry.md'
+      - Pre-Registered Entries: 'Mods/JAOPCA/RegisteredEntries.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
