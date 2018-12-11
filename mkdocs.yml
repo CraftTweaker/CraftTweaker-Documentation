@@ -335,6 +335,7 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IBlockColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
             - IBlockDropHandler: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler.md'
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
