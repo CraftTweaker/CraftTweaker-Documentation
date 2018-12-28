@@ -7,7 +7,7 @@
 一般来说，你可以这样声明一个静态函数：
 
 ```Java
-function NAME ([arguments[as type]]) [as returnType]{
+function 函数名称 ([传入参数名称[as 数据类型]]) [as 返回值数据类型]{
     [Statements]
     [return VALUE;]
 }
