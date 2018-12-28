@@ -74,10 +74,10 @@ function add(a as int,b as int) as int{
 
 ## 作为参数的函数
 
-你还可以使用函数作为参数。 In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
-You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
+你还可以使用函数作为参数。 在这种情况下，他们在单独的一个类中被创建。 除此之外和普通的静态函数一模一样，你可以直接使用它们的变量名来调用它们。  
+你甚至可以把它们设定为[全局变量](/AdvancedFunctions/Global_Static_Variables/)。
 
-If you need to cast the method (as you do for globals) you can use this:
+如果你想要创建一个函数作参数（并且还是全局参数）的函数，你可以这么做：
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;
