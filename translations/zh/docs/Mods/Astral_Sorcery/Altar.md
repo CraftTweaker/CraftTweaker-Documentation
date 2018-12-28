@@ -8,11 +8,13 @@
 
 ## 移除祭坛配方
 
-This function removes the recipe with the given resource location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
-Prints a warning if the recipe does not exist.
+这个方法移除传入的 resource location 的配方。  
+你可以用以下方法获取它的 resource location ：在开启 F3 屏幕的情况下鼠标悬浮在 JEI 或星空日记中的物品图标上。  
+如果配方不存在则打印错误信息。
 
     //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
+    //resourceLocation resource location
+    
     mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
     
 
