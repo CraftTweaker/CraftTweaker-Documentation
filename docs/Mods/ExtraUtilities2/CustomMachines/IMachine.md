@@ -88,3 +88,14 @@ You can also retrieve some information on the machine using the following method
 - `getInputSlots()`: Returns all input slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
 - `getOutputSlots()`: Returns all output slots as a List of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot).
 - `getSlot()`: Returns the [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot) matching the name.
+
+
+## Naming the machine
+So far, all our machines will be named `machine.crafttweaker:your_machine_name` where `your_machine_name` is whatever name you used to create the machine.
+
+If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file, though latter is preferred since there are some issues with CrT's way of doing the localization.
+
+So if your machine name was `time_machine`, you would need to add this to a lang file
+```
+machine.crafttweaker:time_machine=Space Time distorter (Time machine)
+```
