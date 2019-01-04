@@ -28,7 +28,7 @@ It might be required for you to import the package if you encounter any issues (
 |                 | hardness            |                                              | int                                                 |
 | harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
 | harvestTool     |                     | Returns the block's harvest tool             | string                                              |
-|                 | lightOpacy          |                                              | int                                                 |
+|                 | lightOpacity        |                                              | int                                                 |
 |                 | lightLevel          |                                              | int                                                 |
 |                 | resistance          |                                              | int                                                 |
 | unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
