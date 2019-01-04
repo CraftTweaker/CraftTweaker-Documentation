@@ -23,7 +23,7 @@ In most cases you can find the file by checking its Wiki Url.
 Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.  
 
 For example, the file creating  
-<http://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/>  
+<https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/>  
 can be found in  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 

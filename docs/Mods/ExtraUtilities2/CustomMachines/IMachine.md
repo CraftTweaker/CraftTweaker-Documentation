@@ -95,9 +95,14 @@ You can also retrieve some information on the machine using the following method
 ## Naming the machine
 So far, all our machines will be named `machine.crafttweaker:your_machine_name` where `your_machine_name` is whatever name you used to create the machine.
 
-If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file, though latter is preferred since there are some issues with CrT's way of doing the localization.
+If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file.
 
-So if your machine name was `time_machine`, you would need to add this to a lang file
+So if your machine name was `time_machine`, you would need to either call this in a script:
+```
+game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (Time machine)");
+```
+
+Or add this to a lang file:  
 ```
 machine.crafttweaker:time_machine=Space Time distorter (Time machine)
 ```

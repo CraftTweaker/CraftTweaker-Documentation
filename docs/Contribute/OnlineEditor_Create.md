@@ -23,7 +23,7 @@ Theoretically, it doesn't matter where you put your file, but please try to fit 
 
 
 ## Create the file
-After you have successfully located your future file's path, locate to the folder that will contain the file in GitHub, if it exists.  
+After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
 Don't worry if it does not exist, you can still create the file.
 
 Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
@@ -54,10 +54,10 @@ The format is pretty straight-forward:
 - If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
 - If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add an own example here.
+For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
 
 ## Save/Commit the changes
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with an own version if needed*
+*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
 
 After you have created the file content you need to let GitHub know that you want to save your changes.  
 
