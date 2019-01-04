@@ -4,6 +4,9 @@
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.server.IServer;`
 
+## Extending ICommandSender
+IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all methods that are available for an [ICommandSender](/Vanilla/Commands/ICommandSender) object are also available for an IServer object.
+
 ## Access the Server Handler
 You can access the Brewing Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
 Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender/).
