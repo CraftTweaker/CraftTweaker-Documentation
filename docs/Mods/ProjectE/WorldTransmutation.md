@@ -6,6 +6,7 @@ Adds a Philosopher Stone world transmutation, with an optional sneak click trans
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 ```
+#If the IItemStack's do not have a coresponding block, air is used instead.
 mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
 #Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking 
@@ -28,6 +29,7 @@ Removes the Philosopher Stone world transmutations that have the same input, out
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 ```
+#If the IItemStack's do not have a coresponding block, air is used instead.
 mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
 #Removes the recipe allowing cobblestone to be changed into stone/grass
