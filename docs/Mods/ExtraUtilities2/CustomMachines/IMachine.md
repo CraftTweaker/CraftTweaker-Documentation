@@ -3,7 +3,8 @@
 An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
 ## Importing the package
-It might be required for you to [import](/AdvancedFunctions/Import) the 
+It might be required for you to [import](/AdvancedFunctions/Import) the class.  
+You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
 ```
 import extrautilities2.Tweaker.IMachine;
 ```
@@ -35,7 +36,8 @@ This method uses the following parameters:
 
 ### Using only the outputs map
 
-You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.
+You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.  
+Remember, that adding anything other than those two or [IIngredient](/Vanilla/Variable_Types/IIngredient) as mapped value, will have no effect.
 
 ```
 myMachine.addRecipe(inputs, outputs, energy, time);

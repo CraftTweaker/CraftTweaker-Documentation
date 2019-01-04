@@ -42,7 +42,7 @@ The Editor allows you to change your file as you like, and also to directly view
 - Red: This section was present on this page before but was removed.
 - None: This section was untouched.
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google.  
+If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).  
 
 ## Save/Commit the changes
 After you have changed the file you need to let GitHub know that you want to save your changes.  
@@ -53,7 +53,7 @@ You cannot simply save the file, you need to provide a summary of what you did (
 By default it looks roughly like this:  
 ![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md` because GitHub cannot know what your actual changes where it tries something as generic as this.
+In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
 
 You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
 
