@@ -19,6 +19,16 @@ You can either just remove the item from JEI or remove it and all of it's crafti
     mods.jei.JEI.removeAndHide(<ore:planks>, false);
     
 
+## Hide Categories
+
+You can use this to hide entire JEI Categories (e.g. crafting recipes, furnace recipes, machine X recipes, ...).  
+It accepts the category as string, you can get all registered categories by running `/ct jeiCategories` ingame.
+
+```Java
+//hideCategory(category)
+mods.jei.JEI.hideCategory("minecraft.smelting");
+```
+
 ## Add Item
 
 You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI

@@ -1,25 +1,27 @@
-# Altar Crafting
+# 祭坛合成（Altar Crafting）
 
-You can add and remove crafting recipes from the AS Altar.
+你可以为星辉魔法的祭坛添加或移除配方。
 
-## Calling
+## 导入
 
-You can call the AltarRecipe package using `mods.astralsorcery.Altar`.
+使用`mods.astralsorcery.Altar`以导入祭坛配方相关包。 
 
-## Remove Altar Recipes
+## 移除祭坛配方
 
-This function removes the recipe with the given resource location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
-Prints a warning if the recipe does not exist.
+这个方法移除传入的 resource location 的配方。  
+你可以用以下方法获取它的 resource location ：在开启 F3 屏幕的情况下鼠标悬浮在 JEI 或星空日记中的物品图标上。  
+如果配方不存在则打印错误信息。
 
     //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
+    //resourceLocation resource location
+    
     mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
     
 
 <details><summary>Pre v1.10 handler</summary>
 
-This function removes the first recipe it finds that returns provided [IItemStack](../../../Vanilla/Items/IItemStack/) `output` and uses the provided altar level.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+这个方法移除第一个在传入的祭坛等级下`输出`为传入的物品堆[（IItemStack）](../../../Vanilla/Items/IItemStack/)的配方。   
+如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
 <table>
     <tr><th>Altar Level</th><th>Level name</th></tr>

@@ -152,6 +152,7 @@ pages:
     - Liquids:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
+      - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
     - Ore Dictionary: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
@@ -335,6 +336,7 @@ pages:
           - Functions: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
+            - IBlockColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
             - IBlockDropHandler: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler.md'
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
@@ -405,6 +407,13 @@ pages:
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
+    - Extra Utilities 2:
+      - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
+      - InterModCommsHandler: 'Mods/ExtraUtilities2/InterModCommsHandler.md'
+      - Custom Machines:
+        - IMachine: 'Mods/ExtraUtilities2/CustomMachines/IMachine.md'
+        - IMachineRegistry: 'Mods/ExtraUtilities2/CustomMachines/IMachineRegistry.md'
+        - IMachineSlot: 'Mods/ExtraUtilities2/CustomMachines/IMachineSlot.md'
     - GameStages:
       - Introduction: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
@@ -468,6 +477,10 @@ pages:
       - MechanicalDryingBasin: 'Mods/IntegratedDynamics/MechanicalDryingBasin.md'
       - Squeezer: 'Mods/IntegratedDynamics/Squeezer.md'
       - MechanicalSqueezer: 'Mods/IntegratedDynamics/MechanicalSqueezer.md'
+    - JAOPCA:
+      - JAOPCA: 'Mods/JAOPCA/JAOPCA.md'
+      - OreEntry: 'Mods/JAOPCA/OreEntry.md'
+      - Pre-Registered Entries: 'Mods/JAOPCA/RegisteredEntries.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -607,6 +620,20 @@ pages:
       - Recipes: 
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
+    - MrCrayfish's Furniture Mod:
+      - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
+      - Crafting:
+        - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
+        - Chopping Board: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
+        - Dishwasher: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
+        - Freezer: 'Mods/MrCrayfish_s_Furniture_Mod/Freezer.md'
+        - Grill: 'Mods/MrCrayfish_s_Furniture_Mod/Grill.md'
+        - Microwave: 'Mods/MrCrayfish_s_Furniture_Mod/Microwave.md'
+        - Mine Bay: 'Mods/MrCrayfish_s_Furniture_Mod/MineBay.md'
+        - Oven: 'Mods/MrCrayfish_s_Furniture_Mod/Oven.md'
+        - Printer: 'Mods/MrCrayfish_s_Furniture_Mod/Printer.md'
+        - Toaster: 'Mods/MrCrayfish_s_Furniture_Mod/Toaster.md'
+        - Washing Machine: 'Mods/MrCrayfish_s_Furniture_Mod/WashingMachine.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
@@ -619,6 +646,7 @@ pages:
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
+        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
         - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
@@ -654,6 +682,11 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+  - How to contribute: 
+    - How to fork the project: 'Contribute/SetupGithub.md'
+    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
+    - How to create files online: 'Contribute/OnlineEditor_Create.md'
+    - How to file a Pull Request: 'Contribute/PullRequest.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'

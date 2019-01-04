@@ -8,14 +8,14 @@ You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
 ## Removing
 
-This function removes the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` its fuel value:
+This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
     mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
     // Example
     mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
     
 
-This function removes *all* registered fuels:
+This function deregisters *all* registered fuels:
 
     mods.pneumaticcraft.liquidfuel.removeAllFuels();
     
