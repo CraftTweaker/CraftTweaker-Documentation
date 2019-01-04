@@ -646,6 +646,7 @@ pages:
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
+        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
         - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
