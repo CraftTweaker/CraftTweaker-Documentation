@@ -21,21 +21,23 @@
 
 ## 声明全局变量
 
-Declaring a global value is as simple as declaring a local value:
+声明全局值和声明本地值一样简单： 
 
     import crafttweaker.item.IItemStack;
     
     
-    global myGlobalValue as IItemStack = <minecraft:dirt>;
-    static myStaticValue as IItemStack = <minecraft:sand>;
+    global myGlobalValue as IItemStack = &lt;minecraft:dirt&gt;;
+    static myStaticValue as IItemStack = &lt;minecraft:sand&gt;;
+     
+    Context | Request Context
     
 
-Okay, let's break it down, shall we?
+好吧，我们可以把它分析了吗？
 
-1. `global` keyword that indicates the declaration of a global value
-2. `myGlobalValue` the name of the value
-3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global<0>     表示全局值声明的关键字 </li>
+<li><code>myGlobalValue`值的名称
+2. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
+3. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
 
 ## Words of advice
 
