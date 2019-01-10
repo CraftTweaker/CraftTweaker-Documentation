@@ -85,6 +85,6 @@ zsItem.register();
 
 ## Localising the item
 You will need to add `item.contenttweaker.itemName.name=Localized Name` to the responding language files.
-Example in en_us.lang file 'item.contenttweaker.zsItem.name=Your itemName Here`. This will show `Your itemName Here` in the game.
+Example in en_us.lang file 'item.contenttweaker.zsItem.name=Your itemName Here` This will show `Your itemName Here` in the game.
 
 Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
