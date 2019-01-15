@@ -257,9 +257,11 @@ Description:
 Outputs a list of all the items in the game to the crafttweaker.log file.  
 The `category` argument is optional and will extend the list with the according information:
 
+* burntime
 * creativetabs
 * damageable
 * display
+* enchantability
 * maxdamage
 * maxstack
 * maxuse
