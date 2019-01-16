@@ -1,11 +1,11 @@
-# Import Function
+# 导入函数
 
-Instead of typing the whole function name all the time, you can just import a function to serve your needs. Useful when using mod functions.
+你可以只导入你需要的函数，而不是每次都输入整个函数名称。 当使用模组函数时很有用。
 
-## Note on pre 1.12 imports
+## 关于1.12前导入的说明
 
-With CraftTweaker 1.12, a lot of code has changed.  
-Before, all internal functions were called using `minetweaker.package.function`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+CraftTweaker 1.12 有很多代码都被修改了。  
+以前，所有的内部函数都是使用的 `minetweaker.package.function`。 Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
 
 Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
 
