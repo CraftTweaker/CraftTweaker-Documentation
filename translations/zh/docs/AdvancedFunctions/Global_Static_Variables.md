@@ -14,8 +14,8 @@
 全局变量可以在脚本的任意处，简单的使用变量名来进行调用。除非本地脚本中有同名变量覆盖了它。  
 静态变量则需要通过[跨脚本调用](Cross-Script_Reference/)方式才能访问。
 
-全局变量创建需要使用 `global` 关键字；  
-静态变量创建需要 `static` 关键字。
+创建全局变量使用 `global` 关键字；  
+创建静态变量使用 `static` 关键字。
 
 除此之外，他们是相同的！
 
@@ -34,14 +34,14 @@
 
 好吧，我们可以把它分析了吗？
 
-1. `global<0>     表示全局值声明的关键字 </li>
-<li><code>myGlobalValue`值的名称
-2. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
-3. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global` 关键字表示全局值的声明
+2. `myGlobalValue` 表示值的名称
+3. `as IItemStack` 表示值的类型（推荐在转换变量之前[导入](Import/)这个类型）
+4. `= <minecraft:dirt>;` 表示值的初始化。 由于全局值是最终的，因此你需要在声明它们的同时初始化！
 
-## Words of advice
+## 一些忠告
 
-- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
+- 你只能访问已经被声明的全局变量。 使用[优先级预处理器](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/)来确认有全局变量的脚本先被执行。
+- 全局变量不能被子目录里的脚本定义！ It will compile but you will be left with a huge FieldNotFound Exception.
 - While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
 - Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!
