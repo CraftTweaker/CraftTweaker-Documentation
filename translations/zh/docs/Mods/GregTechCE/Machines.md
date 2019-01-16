@@ -29,11 +29,11 @@
 - 流体加热器： `fluid_heater`
 - 蒸馏室： `distillery`
 - Fermenter: `fermenter`
-- Fluid solidifier: `fluid_solidifier`
-- Fluid extractor: `fluid_extractor`
-- Centrifuge: `centrifuge`
-- Electrolyzer: `electrolyzer`
-- Blast furnace: `blast_furnace`
+- 流体固化器： `fluid_solidifier`
+- 流体加热器： `fluid_extractor`
+- 离心机： `centrifuge`
+- 电解槽： `electrolyzer`
+- 高炉： `blast_furnace`
 - Implo compressor: `implosion_compressor`
 - Vac freezer: `vacuum_freezer`
 - Chemical reactor: `chemical reactor`
