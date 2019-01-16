@@ -28,32 +28,32 @@
 - 酿造器： `brewer`
 - 流体加热器： `fluid_heater`
 - 蒸馏室： `distillery`
-- Fermenter: `fermenter`
+- 发酵槽： `fermenter`
 - 流体固化器： `fluid_solidifier`
 - 流体加热器： `fluid_extractor`
 - 离心机： `centrifuge`
 - 电解槽： `electrolyzer`
 - 高炉： `blast_furnace`
-- Implo compressor: `implosion_compressor`
-- Vac freezer: `vacuum_freezer`
-- Chemical reactor: `chemical reactor`
-- Disti tower: `distillation tower`
-- Cracker unit: `cracker`
-- Pyrolyse oven: `pyro`
-- Wiremill: `wiremill`
-- Metal bender: `metal_bender`
-- Alloy smelter: `alloy_smelter`
-- Canning machine: `canner`
-- Lathe: `lathe`
-- Block cutting machine: `cutting_saw`
-- Extruder: `extruder`
-- Forge hammer: `forge_hammer`
-- Packaging machine: `packer`
-- Unpackaging machine: `unpacker`
-- Diesel gen: `diesel_generator`
-- Gas turbine: `gas_turbine`
-- Steam turbine: `steam_turbine`
-- Plasma generator: `plasma_generator`
+- 聚爆压缩机： `implosion_compressor`
+- 真空冷冻机： `vacuum_freezer`
+- 化学反应器： `chemical reactor`
+- 蒸馏塔： `distillation tower`
+- 石油裂化机： `cracker`
+- 热解炉： `pyro`
+- 线材轧机： `wiremill`
+- 卷板机： `metal_bender`
+- 合金炉： `alloy_smelter`
+- 装罐机： `canner`
+- 车床： `lathe`
+- 板材切割机： `cutting_saw`
+- 压模器： `extruder`
+- 锻造锤： `forge_hammer`
+- 打包机： `packer`
+- 解包机： `unpacker`
+- 柴油发电机： `diesel_generator`
+- 燃气轮机： `gas_turbine`
+- 蒸汽轮机： `steam_turbine`
+- 等离子发电机： `plasma_generator`
 
 **尚未实现：**
 
