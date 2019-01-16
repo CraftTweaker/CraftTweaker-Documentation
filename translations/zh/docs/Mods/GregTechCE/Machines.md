@@ -142,19 +142,19 @@ blast_furnace.recipeBuilder()
 .duration() // 单位是tick
 .notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
 .hidden() // 这个合成表是否在 JEI 里隐藏
-.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 一些机器使用那一个。 The most notable one is macerator
-.EUt() // EU per tick
+.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 一些机器使用那一个。 最不能的一台是打粉机
+.EUt() // 每tick的EU消耗
 ```
 
-## Removing
+## 移除
 
-Removing a recipe is done by recipe instance itself, so you have to find a recipe first.
+移除一个合成表是由这个合成表的实例自身完成的，所以你需要先找到这个合成表。
 
-Example:
+例子：
 
 ```java
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-// findRecipe(long voltage, IItemHandlerModifiable inputs, IMultipleTankHandler/List<FluidStack> fluidInputs)
-compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
+// findRecipe(long 电压, IItemHandlerModifiable 输入, IMultipleTankHandler/List&lt;FluidStack&gt; 流体输入)
+compressor.findRecipe(2, [&lt;minecraft:redstone&gt;], null).remove();
 ```
