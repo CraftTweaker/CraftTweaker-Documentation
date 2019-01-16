@@ -109,40 +109,40 @@ blast_furnace.recipeBuilder()
     .buildAndRegister();
 ```
 
-Some of properties assignable to `.property()` method:
+一些参数可以用 `.property()` 方法来指定:
 
-| Name        | Description                                                        |
-| ----------- | ------------------------------------------------------------------ |
-| explosives  | Implosion Compressor, amount of explosives                         |
-| circuit     | Integrated Circuit-configurable machines. Configuration of circuit |
-| temperature | Blast Furnace. Minimum temperature requirement.                    |
+| 名称          | 说明                  |
+| ----------- | ------------------- |
+| explosives  | 聚爆压缩机，炸药的数量         |
+| circuit     | 可配置集成电路的机器。 集成电路的配置 |
+| temperature | 高炉。 最低需要的温度。        |
 
-These ones are **NOT IMPLEMENTED YET:**
+这些参数**尚未实现：**
 
-| Name          | Description                                     |
-| ------------- | ----------------------------------------------- |
-| amplifier     | UU Amplifier. Amount of UU Amplifier outputted. |
-| eu_to_start | Fusion Reactor, EU to start fusion              |
+| 名称            | 说明                        |
+| ------------- | ------------------------- |
+| amplifier     | UU物质增殖液生产机。 输出UU物质增殖液的数量。 |
+| eu_to_start | 聚变反应堆，开始聚变的 EU 数量         |
 
-You use it just like the "temperature":
+你可以像使用 “temperature” 一样使用它们
 
 ```java
-.property("circuit", X)//, where X is the integrated circuit configuration
-.property("explosives", Y)//, where Y is the amount of explosives required to make a recipe work
+.property("circuit", X)//，X 是集成电路的配置
+.property("explosives", Y)//，Y 是使合成表工作的炸药数量
 ```
 
-More useful methods:
+更多有用的方法：
 
 ```java
 .inputs()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
-.duration() // in ticks
-.notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
-.hidden() // if the recipe is hidden from the JEI
-.chancedOutput(<itemstack>, 0-10000) (10000 is 100%) // not valid for every machine. some of them use that method. The most notable one is macerator
+.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%)
+.duration() // 单位是tick
+.notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
+.hidden() // 这个合成表是否在 JEI 里隐藏
+.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 一些机器使用那一个。 The most notable one is macerator
 .EUt() // EU per tick
 ```
 
