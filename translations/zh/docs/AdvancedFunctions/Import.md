@@ -5,13 +5,13 @@
 ## 关于1.12前导入的说明
 
 CraftTweaker 1.12 有很多代码都被修改了。  
-以前，所有的内部函数都是使用的 `minetweaker.package.function`。 Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+以前，所有的内部函数都是使用的 `minetweaker.package.function`。 现在， `crafttweaker` 取代了 `minetweaker` ，所以现在它是 `crafttweaker.name.function` 了！
 
-Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
+如果你遇到任何来自此 Wiki 的脚本导入问题，你可能需要检查你的 MC 版本是否低于1.12。
 
-## Basic Import
+## 基本导入
 
-Imports have to be declared at the top of a Script. You will have to declare imports for each scripts separately. Be careful not to import two functions with the same name, use the AS function for that
+导入必须在脚本开头被声明。 You will have to declare imports for each scripts separately. Be careful not to import two functions with the same name, use the AS function for that
 
     //This will import the hide function from JEI
     import mods.jei.JEI.removeAndHide;
