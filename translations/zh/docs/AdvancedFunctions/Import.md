@@ -11,24 +11,24 @@ CraftTweaker 1.12 有很多代码都被修改了。
 
 ## 基本导入
 
-导入必须在脚本开头被声明。 You will have to declare imports for each scripts separately. Be careful not to import two functions with the same name, use the AS function for that
+导入必须在脚本开头被声明。 你必须分别声明每个脚本的导入。 注意不要导入两个同名的函数，如果要导入，请使用 as 函数。
 
-    //This will import the hide function from JEI
+    //这将会从 JEI 里导入隐藏函数
     import mods.jei.JEI.removeAndHide;
     
-    //And this will import the JEI package
+    //然后这将导入 JEI 包
     import mods.jei.JEI;
     
-    //removeAndHide is a function, so we can just use it
+    //removeAndHide 是一个函数，所以我们可以直接使用它
     removeAndHide(<minecraft:dirt>);
     
-    //JEI is a package, so we need to specify what function of it we want to use
+    //JEI 是一个包，所以我们需要指定所用的函数
     JEI.hide(<minecraft:diamond>);
     
 
-## Import as
+## 导入为
 
-Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names. When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
+有时你想要导入两个同名的函数或者只是想要用自定义名称来让你的脚本看起来更好。 当在 import 末尾添加 as 语句时，你可以指定 import 导入的名称。
 
     //This will import the hide function from JEI and make it available under the name "h"
     import mods.jei.JEI.hide as h;
