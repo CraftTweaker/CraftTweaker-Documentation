@@ -1,26 +1,26 @@
-# Machines
+# 机器
 
-格雷科技社区版在 `RecipeMap` 里存储所有的合成表。 To get them, you need import `mods.gregtech.recipe.RecipeMap` to your code.
+格雷科技社区版在 `RecipeMap` 里存储所有的合成表。 为了得到它们，你需要向你的代码导入 `mods.gregtech.recipe.RecipeMap`。
 
-Recipes are categorized into their machines, call `RecipeMap.getByName(machineName)` to get specific recipes and builder.
+合成表被分类在对应的机器里，调用 `RecipeMap.getByName(机器名称)` 来获取特定的合成表和构建器。
 
-## List of available machines
+## 可用机器列表
 
-- Compressor: `compressor`
-- Extractor: `extractor`
-- Macerator: `macerator`
-- Ore washing plant: `orewasher`
-- Thermal centrifuge: `thermal_centrifuge`
-- Furnace: `furnace`
-- Microwave: `microwave`
-- Assembling machine: `assembler`
+- 压缩机： `compressor`
+- 提取机： `extractor`
+- 打粉机： `macerator`
+- 洗矿厂： `orewasher`
+- 热力离心机： `thermal_centrifuge`
+- 电炉： `furnace`
+- 微波炉： `microwave`
+- 组装机： `assembler`
 - Forming press: `forming_press`
-- Fluid canner: `fluid_canner`
-- Plasma arc furnace: `plasma_arc_furnace`
-- Arc furnace: `arc_furnace`
+- 流体装罐机： `fluid_canner`
+- 等离子电弧炉： `plasma_arc_furnace`
+- 电弧炉： `arc_furnace`
 - Sifting machine: `sifter`
 - Precision laser engraver: `laser_engraver`
-- Mixing machine: `mixer`
+- 搅拌机： `mixer`
 - Autoclave: `autoclave`
 - Electromagnetic separator: `electromagnetic_separator`
 - Polarizer: `polarizer`
@@ -55,14 +55,14 @@ Recipes are categorized into their machines, call `RecipeMap.getByName(machineNa
 - Steam turbine: `steam_turbine`
 - Plasma generator: `plasma_generator`
 
-**Not yet implemented:**
+**尚未实现：**
 
-- Uu-mater producer: `uuamplifier`
-- Thermal generator: `thermal_generator`
-- Semi-fluid generator: `semi_fluid_generator`
-- Fusion reactor: `fusion_reactor`
+- UU物质生成机： `uuamplifier`
+- 热力发电机： `thermal_generator`
+- 半流质发电机： `semi_fluid_generator`
+- 聚变反应堆： `fusion_reactor`
 
-**Primitive Blast Furnace** *uses different syntax from normal recipes.* For example:
+**防火砖高炉** *使用了和普通的合成表不同的语法。* 例子：
 
 ```java
 import mods.gregtech.recipe.PBFRecipeBuilder;
