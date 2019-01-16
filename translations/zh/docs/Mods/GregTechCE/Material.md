@@ -35,12 +35,12 @@
 
 方法：
 
-| Name (Parameters)             | Description           |
-| ----------------------------- | --------------------- |
-| addFlags(String... flagNames) | Add generation flags  |
-| hasFlag(String flagName)      | Has a generation flag |
+| 名称（参数）                   | 说明      |
+| ------------------------ | ------- |
+| addFlags(String... 标志名称) | 添加生成标志  |
+| hasFlag(String 标志名称)     | 是否有生成标志 |
 
-`MaterialStack` can be created by `material * number`, same as [Amount of Ingredient](/Vanilla/Variable_Types/IIngredient.md) or FluidStack.
+`MaterialStack` 可以由 `材料 * 数字`，与[材料的数量](/Vanilla/Variable_Types/IIngredient.md)或 FiuldStack 一样。
 
 ### FluidMaterial
 
