@@ -14,20 +14,20 @@
 - 电炉： `furnace`
 - 微波炉： `microwave`
 - 组装机： `assembler`
-- Forming press: `forming_press`
+- 冲压机床： `forming_press`
 - 流体装罐机： `fluid_canner`
 - 等离子电弧炉： `plasma_arc_furnace`
 - 电弧炉： `arc_furnace`
-- Sifting machine: `sifter`
-- Precision laser engraver: `laser_engraver`
+- 筛选机： `sifter`
+- 精密激光蚀刻机： `laser_engraver`
 - 搅拌机： `mixer`
-- Autoclave: `autoclave`
-- Electromagnetic separator: `electromagnetic_separator`
-- Polarizer: `polarizer`
-- Chemi bath: `chemical_bath`
-- Brewing machine: `brewer`
-- Fluid heater: `fluid_heater`
-- Distillery: `distillery`
+- 高压釜： `autoclave`
+- 电磁离析机： `electromagnetic_separator`
+- 两极磁化机： `polarizer`
+- 化学浸洗器： `chemical_bath`
+- 酿造器： `brewer`
+- 流体加热器： `fluid_heater`
+- 蒸馏室： `distillery`
 - Fermenter: `fermenter`
 - Fluid solidifier: `fluid_solidifier`
 - Fluid extractor: `fluid_extractor`
@@ -67,42 +67,42 @@
 ```java
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
-//Primitive Blast Furnace
+//防火砖高炉
 PBFRecipeBuilder.start()
-    .input(<ore:ingotCompressedWroughtIron> * 1)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    .input(&lt;ore:ingotCompressedWroughtIron&gt; * 1)
+    .output(&lt;ore:ingotSteel&gt;.firstItem * 1)
     .duration(250)
     .fuelAmount(2)
     .buildAndRegister();
 
-//Remove recipes from PBF
+//从防火砖高炉移除合成表
 import mods.gregtech.recipe.RecipeMaps;
 
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
     recipe.remove();
 ```
 
-## Builder information
+## 构建器信息
 
-After getting a instance of `RecipeMap`, you can define recipes by using their builder.
+在获得 `RecipeMap` 的一个实例后，你可以使用它的构建器定义合成表
 
-Builder method calling:
+调用构建器方法：
 
 ```java
 recipeMap.recipeBuilder()
 ```
 
-It is a bit like `Stream<T>` in Java, with fully functionally to control your recipe's behaviour.
+这有点像 Java 的 `Stream&lt;T&gt;` ，有齐全的功能来控制你的合成表的行为。
 
-Example for EBF:
+一个电力高炉的例子：
 
 ```java
-// Electric Blast Furnace
+//电力高炉
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 blast_furnace.recipeBuilder()
-    .inputs(<ore:ingotCompressedWroughtIron> * 1)
-    .fluidInputs([<liquid:oxygen> * 500])
-    .outputs(<ore:ingotSteel>.firstItem * 1)
+    .inputs(&lt;ore:ingotCompressedWroughtIron&gt; * 1)
+    .fluidInputs([&lt;liquid:oxygen&gt; * 500])
+    .outputs(&lt;ore:ingotSteel&gt;.firstItem * 1)
     .property("temperature", 1000) //this is a minimal temperature at which the item will be smelted
     .duration(40)
     .EUt(120)
