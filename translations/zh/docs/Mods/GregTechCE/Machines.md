@@ -1,6 +1,6 @@
 # Machines
 
-GTCE stores all recipes in a `RecipeMap`. To get them, you need import `mods.gregtech.recipe.RecipeMap` to your code.
+格雷科技社区版在 `RecipeMap` 里存储所有的合成表。 To get them, you need import `mods.gregtech.recipe.RecipeMap` to your code.
 
 Recipes are categorized into their machines, call `RecipeMap.getByName(machineName)` to get specific recipes and builder.
 
