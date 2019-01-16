@@ -1,12 +1,12 @@
-# DebugPreprocessor
+# 调试预处理器
 
-The debugPreprocessor enables debug mode.
+调试预处理器将会启用调试模式。
 
-## Call
+## 调用
 
-You call the debug Preprocessor by adding `#debug` to your script file.
+你可以添加 `#debug` 到你的脚本来调用调试预处理器。
 
-## What it does
+## 它干什么
 
-It globally enables debug mode. This mode outputs the parsed script files.  
-You most likely will never need them.
+它启用全局的调试模式。 这个模式输出解析的脚本文件。  
+你大多数情况从不会需要它们。

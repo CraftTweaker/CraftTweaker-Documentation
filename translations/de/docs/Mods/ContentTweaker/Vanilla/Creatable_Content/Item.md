@@ -87,5 +87,7 @@ After you have called this function, you cannot un-register the item or change a
 
 ## Localising the item
 
-You will need to add `item.contenttweaker.itemName = Localized Name` to the responding language files.  
+You will need to add `item.contenttweaker.itemName.name=Localized Name` to the responding language files.  
+Example in en_us.lang file `item.contenttweaker.zsItem.name=Your itemName Here` will show `Your itemName Here` in the game.
+
 Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
