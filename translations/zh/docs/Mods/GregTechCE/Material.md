@@ -1,39 +1,39 @@
-# Material
+# 材料
 
-## Calling the package
+## 调用这个包
 
-The `mods.gregtech.material` package contains all classes you will need to deal with materials.
+`mods.gregtech.material` 包含了所有用来处理材料的类。
 
-## Material Object
+## 材料对象
 
-An object of `mods.gregtech.material.Material` represents a material in GregTech, with some useful members you can deal with.
+一个 `mods.gregtech.material.Material` 的对象代表着格雷科技里的一种材料，并且有一些有用的方法。
 
-Properties:
+参数：
 
-| Name               | Type                         | Description                                      |
-| ------------------ | ---------------------------- | ------------------------------------------------ |
-| color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | String                       | Chemical formula of this material                |
-| iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
-| components         | ImmutableList<materialstack> | List of this material component                  |
-| generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
-| element            | Element                      | Element of this material consist of              |
+| 名称                 | 类型                           | 说明                  |
+| ------------------ | ---------------------------- | ------------------- |
+| color              | int                          | 材料的 RGB 格式颜色        |
+| chemicalFormula    | String                       | 材料的化学式              |
+| iconSet            | MaterialIconSet              | 生成元数据物品的图标集         |
+| components         | ImmutableList<materialstack> | 这个材料的组成             |
+| generationFlagsRaw | long                         | 这个材料的生成标志（详见材料生成标志） |
+| element            | Element                      | 这个材料的组成元素           |
 
-Getters:
+取值器：
 
-| Name            | Type   | Description                          |
-| --------------- | ------ | ------------------------------------ |
-| radioactive     | bool   | True if this material is radioactive |
-| protons         | long   |                                      |
-| neutrons        | long   |                                      |
-| mass            | long   |                                      |
-| density         | long   |                                      |
-| camelCaseString | String |                                      |
-| unlocalizedName | String |                                      |
-| localizedName   | String | Client-side only                     |
-| name            | String | Name in the Material registry        |
+| 名称              | 类型     | 说明               |
+| --------------- | ------ | ---------------- |
+| radioactive     | bool   | 如果这个材料有放射性则为True |
+| protons         | long   |                  |
+| neutrons        | long   |                  |
+| mass            | long   |                  |
+| density         | long   |                  |
+| camelCaseString | String |                  |
+| unlocalizedName | String |                  |
+| localizedName   | String | 仅限客户端            |
+| name            | String | 材料注册的名称          |
 
-Methods:
+方法：
 
 | Name (Parameters)             | Description           |
 | ----------------------------- | --------------------- |
