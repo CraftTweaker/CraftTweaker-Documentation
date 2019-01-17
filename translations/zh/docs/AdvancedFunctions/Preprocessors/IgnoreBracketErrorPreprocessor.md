@@ -5,10 +5,10 @@
 
 ## 调用
 
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+你可以将 `#ignoreBracketErrors` 放在脚本文件中来调用忽略括号错误预处理器。  
+这个预处理器是文件特定的，所以在一个文件中调用这个预处理器不会影响其他的（至少是这个预处理器所涉及的）。
 
-## What it does
+## 它的作用
 
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+当在一个文件里调用这个预处理器，所有关于括号错误的错误日志都会被禁用。  
+这不会以任何方式改变受影响的行，而仅仅是让你的日志不包含受影响的行。
