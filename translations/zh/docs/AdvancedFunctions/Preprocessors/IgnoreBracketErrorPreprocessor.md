@@ -1,9 +1,9 @@
-# Ignore Bracket Errors Preprocessor
+# 忽略括号错误预处理器
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+这个预处理器将你的脚本设置为忽略括号错误。  
+这个预处理器不会以任何方式神奇地更正你的脚本，它只是禁用错误日志。
 
-## Call
+## 调用
 
 You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
 This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
