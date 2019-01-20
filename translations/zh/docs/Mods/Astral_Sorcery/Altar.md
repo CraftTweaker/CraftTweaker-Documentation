@@ -39,7 +39,7 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 
 </details>
 
-## Add Altar Recipes
+## 添加祭坛配方
 
 Since v1.10 all recipes require a resource location as first parameter.  
 Unlike vanilla recipe names, they are not optional and you will encounter errors if you do not provide it. If you want to override an existing recipe, you can just add a new recipe with the same location.  
