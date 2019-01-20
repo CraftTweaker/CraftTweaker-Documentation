@@ -13,25 +13,27 @@
 如果配方不存在则打印错误信息。
 
     //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-    //resourceLocation resource location
+    //resourceLocation 指的是 resource location
     
     mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
     
 
-<details><summary>Pre v1.10 handler</summary>
+<details><summary>1.10 版本之前的处理器</summary>
 
 这个方法移除第一个在传入的祭坛等级下`输出`为传入的物品堆[（IItemStack）](../../../Vanilla/Items/IItemStack/)的配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
 <table>
-    <tr><th>Altar Level</th><th>Level name</th></tr>
-    <tr><td>0</td><td>Luminous Crafting Table</td></tr>
-    <tr><td>1</td><td>Starlight Crafting Altar</td></tr>
-    <tr><td>2</td><td>Celestial Altar</td></tr>
+    <tr><th>祭坛等级</th><th>等级名称</th></tr>
+    <tr><td>0</td><td>星辉合成台</td></tr>
+    <tr><td>1</td><td>星辉祭坛</td></tr>
+    <tr><td>2</td><td>天辉祭坛</td></tr>
 </table>
 
 ```JAVA
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
+//output 输出
+//altarLevel 祭坛等级
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
