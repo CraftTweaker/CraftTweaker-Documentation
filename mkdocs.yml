@@ -682,6 +682,8 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Tree Tweaker:
+      - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
   - How to contribute: 
     - How to fork the project: 'Contribute/SetupGithub.md'
     - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
