@@ -41,11 +41,11 @@ mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 
 ## 添加祭坛配方
 
-Since v1.10 all recipes require a resource location as first parameter.  
-Unlike vanilla recipe names, they are not optional and you will encounter errors if you do not provide it. If you want to override an existing recipe, you can just add a new recipe with the same location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
+1.10 版本之后所有配方都需要 resource location 作为第一个参数。  
+与原版配方不同的是，这个参数不是可选参数，意味着如果你不提供这些参数会出现错误。 如果你想覆盖之前的配方，你可以直接添加一个与原来的 resource location 相同的配方。  
+你可以通过在 F3 菜单开启时将鼠标悬浮在 JEI 或 星空日志 的输出槽获取 resource location。
 
-All recipe addition methods require these parameters:  
+所有添加配方的方法都需要这些参数：  
 string `recipeLocation`,  
 [IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
