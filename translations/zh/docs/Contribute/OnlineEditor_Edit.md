@@ -34,18 +34,18 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 点击小笔图标打开编辑器: ![编辑按钮](/Contribute/assets/OnlineEditor_EditButton.png)
 
-The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
+这个编辑器允许你如你所愿的修改这个文件，也提供编译后的预览版本。 此预览左侧有彩色条形图，它们分别指示:
 
-- Green: This Section was not present on this page before.
-- Yellow: This Section was present on this page before but was changed, e.g. a typo was corrected, or additional information was provided.
-- Red: This section was present on this page before but was removed.
-- None: This section was untouched.
+- 绿色：此部分以前不在此页上。
+- 黄色: 此部分以前存在于此页上，但已更改，例如更正了拼写错误，或提供了其他信息。
+- 红色: 此部分以前存在于此页上，但已被删除。
+- 无：此部分未被更改。
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+如果你不熟悉文件的语法， wiki 使用的是 Markdown 语法。 谷歌上应该有很多教程（如果你想的话，也可以在这个 wiki 上添加教程页面）。
 
-## Save/Commit the changes
+## 保存/提交变更
 
-After you have changed the file you need to let GitHub know that you want to save your changes.
+更改文件后，你需要让 GitHub 知道你要保存所做的更改。
 
 That's what the commit box below your Editor is for:  
 You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
