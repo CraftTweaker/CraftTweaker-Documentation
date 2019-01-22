@@ -682,9 +682,9 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-  - How to contribute: 
-    - How to fork the project: 'Contribute/SetupGithub.md'
-    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
+  - 如何参与贡献: 
+    - 如何复制这个项目: 'Contribute/SetupGithub.md'
+    - 如何在线编辑文档: 'Contribute/OnlineEditor_Edit.md'
     - How to create files online: 'Contribute/OnlineEditor_Create.md'
     - How to file a Pull Request: 'Contribute/PullRequest.md'
   - Developer Area:
@@ -708,7 +708,7 @@ pages:
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
-# Do not edit in PRs below here
+# 不得在提交的 Pull Request 中修改以下的内容
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
