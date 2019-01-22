@@ -32,7 +32,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 成功找到文件后，单击它会在 github 的文件视图中打开这个文件。  
 这里您可以看到 wiki 条目的大致内容，但它不包含没有导航栏，因为这只是条目内容。
 
-Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
+点击小笔图标打开编辑器: ![编辑按钮](/Contribute/assets/OnlineEditor_EditButton.png)
 
 The Editor allows you to change your file as you like, and also to directly view a preview with the compiled formatting. This preview will have colored bars on the lefthandside indicating that:
 
