@@ -23,7 +23,7 @@ pages:
       - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - 模组加载: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+      - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
