@@ -61,8 +61,8 @@ int `craftingTickTime`,
 
 `inputs（输入）`数组的长度*必须为* 9
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
@@ -71,9 +71,9 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
             <liquid:astralsorcery.liquidstarlight>, null, <ore:treeLeaves>]);
 ```
 
-### Attunement
+### 共振
 
-Adds a recipe to the Starlight Crafting Table (T2)
+为星辉合成台（2级）添加配方
 
 `inputs` length *has to be* 13
 
