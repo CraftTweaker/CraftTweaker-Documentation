@@ -2,35 +2,35 @@
 
 ## 需求
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+您需要有一个 github 帐户，并[将 wiki 复制到您的帐户中](/Contribute/SetupGithub)。
 
-## Introduction
+## 介绍
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as using a local copy but you don't need to worry about setting up git and all.
+GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建文档。  
+虽然这种方法实现的功能不如在本地编辑多，但你不需要考虑包括设置 git 等诸多操作。
 
-This guide will show you how to edit an already existing file using github's online editor.  
-You may want to edit the page because you have found a typo or want to include a better example, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+这篇指南将会向你展示如何使用 GitHub 的在线编辑器编辑现有的文档。  
+你可能会出于改正拼写错误，提交一个更好的例子等理由编辑一个页面。这里欢迎大家做出更改并最终 [提交 Pull Request”](/Contribute/PullRequest)。
 
-However, remember that you can only edit the English version, translations are handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/).
+但请记住，你只能编辑英文版文档，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理。
 
-## Locate the file
+## 找到该文件
 
-If you want to edit an existing file, you first need to locate it.
+如果要编辑现有文件，首先需要找到该文件。
 
-In most cases you can find the file by checking its Wiki Url.
+在大多数情况下，你可以通过它的 Wiki Url 找到该文件。
 
-Rule of thumb: The `#` is the docs folder, everything after that are nested folders and eventually the file.
+经验法则： ` # ` 指的是文档文件夹，之后的所有内容都是嵌套文件夹，最后的一个是文件。
 
-For example, the file creating  
+例如，Url 为以下地址的文件  
 [https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
-can be found in  
+可以在以下位置被找到  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## Edit the file
+## 编辑此文件
 
-After you have successfully located the file, click on it to open it in the GitHub file view.  
-Here you can see how the wiki entry will roughly look like, though no navigation bar is present as this is only the entry content.
+成功找到文件后，单击它会在 github 的文件视图中打开这个文件。  
+这里您可以看到 wiki 条目的大致内容，但它不包含没有导航栏，因为这只是条目内容。
 
 Click on the little pen icon to open the editor: ![Edit Button](/Contribute/assets/OnlineEditor_EditButton.png)
 
