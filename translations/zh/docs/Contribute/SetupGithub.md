@@ -1,25 +1,25 @@
-# Setting up GitHub
+# 设置 Github
 
-In order to start, you need a free Account for [Github](https://github.com).  
-Follow the registration steps if you have none already.
+首先，你需要一个免费的 [Github](https://github.com) 账户。  
+如果您还没有注册，请按照步骤注册。
 
-## Locating the repository
+## 找到仓库
 
-The wiki repository can be found at <https://github.com/CraftTweaker/CraftTweaker-Documentation>
+这个wiki 的仓库位于 <https://github.com/CraftTweaker/CraftTweaker-Documentation>
 
-## Forking the wiki
+## 复制这个 wiki
 
-In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
-This action is called forking.  
-You can fork the repository by clicking on the "fork" button in the wiki's GH page: ![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
+为了更改其中的任何内容，你需要将整个 CrT-Wiki（就是这个 wiki） 仓库复制到你的账号下。  
+这个过程就叫复制（Fork）。  
+通过点击这个 wiki GitHub 页面上的 “fork” 按钮，你就可以复制这个仓库。 ![Inputs Order](/Contribute/assets/SetupGitHub_ForkButton.png)
 
-In case you are in a Github organization you might need to specify where you want to fork the repository to.
+如果你在一个 Github 组织中，就可能需要将仓库复制到指定的位置。
 
-## Locating your fork
+## 找到你的复制品
 
-You can now find a new repository called "CraftTweaker-Documentation" when checking your profile page/repositories.  
-Alternatively, you can go to `github.com/yourUserName/CraftTweaker-Documentation`.
+查看你的 profile page/repositories ，你可以找到一个叫做 “CraftTweaker-Documentation”的仓库  
+你也可以直接前往`github.com/yourUserName/CraftTweaker-Documentation`（yourUserName 指你的用户名称）。
 
-## How to continue
+## 下一步是什么
 
 Now that you have successfully forked the Crafttweaker-Documentation repository to your own GitHub account, you can [use the online Editor](/Contribute/OnlineEditor_Edit) or clone to your computer and edit locally.
