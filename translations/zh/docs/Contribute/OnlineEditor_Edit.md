@@ -1,6 +1,6 @@
-# Edit Files using GitHub's online editor
+# 使用 GitHub 的在线编辑器编辑文档。
 
-## Requirements
+## 需求
 
 You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
 
