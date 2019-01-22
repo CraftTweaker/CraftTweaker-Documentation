@@ -75,10 +75,10 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
 
 为星辉合成台（2级）添加配方
 
-`inputs` length *has to be* 13
+`inputs（输入）`数组的长度*必须为* 13
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
@@ -88,14 +88,14 @@ mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/alta
             <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Constellation
+### 星宿
 
-Adds a recipe to the Celestial Altar (T3)
+为天辉祭坛（3级）添加配方
 
-`inputs` length *has to be* 21
+`inputs（输入）`数组的长度*必须为* 21
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
@@ -109,13 +109,13 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
             <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Trait
+### 光辉
 
-Adds a recipe to the Trait Altar (T4)
+为五彩祭坛（4级）添加配方
 
-`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
+`Constellation（星座）` 未翻译的星座名称（类型为字符串）。 这是一个可选参数。
 
-`inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+`inputs（输入）`数组的长度*必须为* 25或更高。 Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
