@@ -55,11 +55,11 @@ int `craftingTickTime`,
 与工作台配方不同的是，`inputs（输入）`参数是一个一维数组。   
 数组中的数据类型可以是[IItemStacks（物品堆）](/Vanilla/Items/IItemStack/)，[ILiquidStacks（流体堆）](/Vanilla/Liquids/ILiquidStack/)，[IOreDictEntries（矿物词典条目）](/Vanilla/OreDict/IOreDictEntry/)和 `null（空）`。
 
-These recipes cannot be shapeless!
+这些配方都是有序合成！
 
-### Discovery
+### 发现
 
-`inputs` length *has to be* 9
+`inputs（输入）`数组的长度*必须为* 9
 
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
