@@ -685,8 +685,8 @@ pages:
   - 如何参与贡献: 
     - 如何复制这个项目: 'Contribute/SetupGithub.md'
     - 如何在线编辑文档: 'Contribute/OnlineEditor_Edit.md'
-    - How to create files online: 'Contribute/OnlineEditor_Create.md'
-    - How to file a Pull Request: 'Contribute/PullRequest.md'
+    - 如何在线创建文档: 'Contribute/OnlineEditor_Edit.md'
+    - 如何提交 Pull Request: 'Contribute/PullRequest.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
