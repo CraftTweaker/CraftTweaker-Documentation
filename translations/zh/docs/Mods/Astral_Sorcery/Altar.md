@@ -115,13 +115,20 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 
 `Constellation（星座）` 未翻译的星座名称（类型为字符串）。 这是一个可选参数。
 
-`inputs（输入）`数组的长度*必须为* 25或更高。 Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+`inputs（输入）`数组的长度*必须为* 25或更高。 序号25以后的物品会被认为是“外围物品”，它们需要被放置在祭坛周围以参与合成。
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
 ```JAVA
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
+
+//recipeLocation recipe location
+//output 输出
+//starlight 所需星光
+//craftTickTime 合成时间（单位：刻）
+//inputs 输入（数组）
+//iRequiredConstellationFocusName 星座名称
 
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <minecraft:tnt>, 4500, 100, [
     <liquid:lava>, <liquid:lava>, <liquid:lava>,<liquid:lava>, <minecraft:gunpowder>, 
