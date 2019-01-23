@@ -53,9 +53,9 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 默认情况下，它大致如下图所示:  
 ![提交框的默认值](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub 不知道你做了什么更改，所以它会生成这段通用的描述。
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+您可能需要添加其他标题或说明，这虽然不是必要的，但这可以让人更加轻松的查看你之后提交的 Pull Request。
 
 If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
 You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
