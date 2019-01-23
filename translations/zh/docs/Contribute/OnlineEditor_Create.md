@@ -22,7 +22,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 - 文件结构应与导航栏相匹配。 例：在 wiki 的导航栏中, `ICraftingRecipe` 可以通过路径 `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe` 中找到。 ICraftingRecipe 文档可以通过 `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md` 路径找到。 正如您所看到的。这些路径并不完全匹配，但它们足以找到这个文件。
 - 一个模组的所有信息都应保存在一个组/文件夹下。
 
-## Create the file
+## 创建文件
 
 After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
 Don't worry if it does not exist, you can still create the file.
