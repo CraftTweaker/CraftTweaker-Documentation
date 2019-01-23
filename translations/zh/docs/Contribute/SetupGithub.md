@@ -20,6 +20,6 @@
 查看你的 profile page/repositories ，你可以找到一个叫做 “CraftTweaker-Documentation”的仓库  
 你也可以直接前往`github.com/yourUserName/CraftTweaker-Documentation`（yourUserName 指你的用户名称）。
 
-## 下一步是什么
+## 下一步该做什么
 
 现在，你已成功地将 Crafttweaker-Documentation 仓库复制到您自己的 github 帐户，你可以 [使用在线编辑器 ](/Contribute/OnlineEditor_Edit) 或复制到您的计算机并在本地进行编辑。
