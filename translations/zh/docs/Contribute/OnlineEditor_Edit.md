@@ -1,4 +1,4 @@
-# 使用 GitHub 的在线编辑器编辑文档。
+# 使用 GitHub 的在线编辑器编辑文档
 
 ## 需求
 
@@ -10,7 +10,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 虽然这种方法实现的功能不如在本地编辑多，但你不需要考虑包括设置 git 等诸多操作。
 
 这篇指南将会向你展示如何使用 GitHub 的在线编辑器编辑现有的文档。  
-你可能会出于改正拼写错误，提交一个更好的例子等理由编辑一个页面。这里欢迎大家做出更改并最终 [提交 Pull Request”](/Contribute/PullRequest)。
+你可能会出于改正拼写错误，提交一个更好的例子等理由编辑一个页面。这里欢迎大家做出更改并最终 [提交 Pull Request](/Contribute/PullRequest)。
 
 但请记住，你只能编辑英文版文档，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理。
 
@@ -43,7 +43,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 如果你不熟悉文件的语法， wiki 使用的是 Markdown 语法。 谷歌上应该有很多教程（如果你想的话，也可以在这个 wiki 上添加教程页面）。
 
-## 保存/提交变更
+## 保存/提交更改
 
 更改文件后，你需要让 GitHub 知道你要保存所做的更改。
 
@@ -51,7 +51,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 你不能简单的直接存储这个文件，你需要提供你所做变更的概述（提交标题）和一段（可选的）描述用以添加额外的信息，例如你为什么作出此更改或者具体被更改了哪些内容。
 
 默认情况下，它大致如下图所示:  
-![提交框的默认值](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+![默认的提交框](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
 在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub 不知道你做了什么更改，所以它会生成这段通用的描述。
 
@@ -60,9 +60,9 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 如果你的 GitHub 帐户关联了多个电子邮件地址，你可以选择你做出修改的电子邮件地址。 这不会对做出的贡献产生任何的影响。  
 你还可以决定是直接提交到 master branch（主分支），还是创建一个新 branch（分支）并提交到新分支上 。 在大多数情况下，你只需要提交到 master branch 上即可。
 
-A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+填写完毕的示例类似于下图所示： ![填充完的提交框](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## 下一步该做什么
 
-After you have committed your changes, you can go on and edit or [Create](/Contribute/OnlineEditor_Create) more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+在作出更改后，你可以使用在线编辑器继续编辑或者[创建](/Contribute/OnlineEditor_Create)更多文档。  
+当你做完了所有个更改，你就可以[提交 Pull Request](/Contribute/PullRequest)。
