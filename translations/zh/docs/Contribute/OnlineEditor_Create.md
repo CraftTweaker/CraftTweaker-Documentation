@@ -1,26 +1,26 @@
-# 使用 Github 的在线编辑器编辑文件
+# 使用 Github 的在线编辑器创建文件
 
-## Requirements
+## 需求
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+您需要有一个 github 帐户，并[将 wiki 复制到您的帐户中](/Contribute/SetupGithub)。
 
-## Introduction
+## 介绍
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as using a local copy but you don't need to worry about setting up git and all.
+GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建文档。  
+虽然这种方法实现的功能不如在本地编辑多，但你不需要考虑包括设置 git 等诸多操作。
 
-This guide will show you how to create a new wiki file using github's online editor.  
-Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+这篇指南将会向你展示如何使用 GitHub 的在线编辑器创建新的文档。  
+添加新页面的主要原因可能是补充缺失的信息，但也可能是给模组处理程序添加一个示例条目。无论出于何种原因这里欢迎大家做出更改并最终[提交 Pull Request](/Contribute/PullRequest)。
 
-However, remember that you need to create the English version, translations are then handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (but only after the PR has been merged).
+但请记住，你只能创建英文版文档，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理（但需要等到英文页面合并之后才能翻译）。
 
-## Where to create the file
+## 文档创建的位置
 
-Theoretically, it doesn't matter where you put your file, but please try to fit the current scheme:
+从理论上讲，文件放在哪里并不重要，但还是希望任何人符合当前的规范：
 
-- All files need to be in the `docs` folder.
-- The File structure should match the navigation bar crumbs. Example: When using the navigation bar in the wiki, `ICraftingRecipe` can be found in `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe`. The file for ICraftingRecipe can be found at `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. As you can see, the paths don't exactly match but they are sufficient to find the file.
-- All information for one mod should remain in one group/folder.
+- 所有文件都需要放在 `docs` 文件夹中。
+- 文件结构应与导航栏相匹配。 例：在 wiki 的导航栏中, `ICraftingRecipe` 可以通过路径 `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe` 中找到。 ICraftingRecipe 文档可以通过 `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md` 路径找到。 正如您所看到的。这些路径并不完全匹配，但它们足以找到这个文件。
+- 一个模组的所有信息都应保存在一个组/文件夹下。
 
 ## Create the file
 
