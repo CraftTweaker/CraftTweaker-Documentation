@@ -22,7 +22,8 @@ set which type of tree shape to generate as. Accepts OAK, SPRUCE, JUNGLE, BIRCH,
 register tree to add to worldgen.  
 `newtree.register();`
 
-##Optional Syntaxes
+## Optional Syntaxes
+
 #### string.setLog("string:string:int");
 set what log to use  
 `newtree.setLog("minecraft:wool:3");`
@@ -54,8 +55,9 @@ set the responce of the trees thickness.
 set the biome of spawning    
 `newtree.setGenBiome("minecraft:plains")`
 
-// **string.setGenBiomeByTag("STRING");** sets the biomes grouping, accepts any of Forges biome tags.
-newtree.setGenBiomeByTag("HOT");
+####string.setGenBiomeByTag("STRING");
+sets the biomes grouping, accepts any of Forges biome tags.
+`newtree.setGenBiomeByTag("HOT");`
 
 ####string.setBaseBlock("string:string")** 
 set the block the tree sits on  
