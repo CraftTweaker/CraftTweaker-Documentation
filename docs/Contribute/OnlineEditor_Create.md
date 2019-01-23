@@ -1,4 +1,4 @@
-# Edit Files using GitHub's online editor
+# Create Files using GitHub's online editor
 
 ## Requirements
 You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).  
