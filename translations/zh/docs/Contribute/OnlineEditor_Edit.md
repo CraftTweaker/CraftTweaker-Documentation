@@ -57,8 +57,8 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 您可能需要添加其他标题或说明，这虽然不是必要的，但这可以让人更加轻松的查看你之后提交的 Pull Request。
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+如果你的 GitHub 帐户关联了多个电子邮件地址，你可以选择你做出修改的电子邮件地址。 这不会对做出的贡献产生任何的影响。  
+您还可以决定是直接提交到 master branch（主分支），还是创建一个新 branch（分支）并提交到新分支上 。 在大多数情况下，你只需要提交到 master branch 上即可。
 
 A filled out example might look like this: ![Commit Box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
