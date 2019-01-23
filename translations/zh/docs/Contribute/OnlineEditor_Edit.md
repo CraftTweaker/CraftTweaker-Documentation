@@ -48,12 +48,12 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 更改文件后，你需要让 GitHub 知道你要保存所做的更改。
 
 这就是提交区的功能：  
-你不能简单的直接存储这个文件，你需要提供你所做变更的概述（标题）和一段（可选的）描述用以添加额外的信息，例如你为什么作出此更改或者具体被更改了哪些内容。
+你不能简单的直接存储这个文件，你需要提供你所做变更的概述（提交标题）和一段（可选的）描述用以添加额外的信息，例如你为什么作出此更改或者具体被更改了哪些内容。
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+默认情况下，它大致如下图所示:  
+![提交框的默认值](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
 
 You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
 
