@@ -33,25 +33,25 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 你会进入一个新的文件编辑器页面。  
 首先，在最顶端是文件的路径。 如果我们希望在显示的路径中创建文件，则只需提供文件的标题和扩展名。 请记住，所有 wiki 条目文件的扩展名一律为 `.md` ，因为此 wiki 使用 markdown。
 
-If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
+如果希望在（可能不存在的) 子文件夹中创建文件，甚至在该路径下创建多个文件夹，则需要使用 `/` 来分隔文件夹的名称 （就像您已经可以在现有路径中看到的那样）。
 
-The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
+这个编辑器允许你如你所愿的创建文件，也提供编译后的预览版本。
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+如果你不熟悉文件的语法， wiki 使用的是 Markdown 语法。 谷歌上应该有很多教程（如果你想的话，也可以在这个 wiki 上添加教程页面）。
 
-## Add the file to the index
+## 将文件添加到索引中
 
-After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.
+创建并提交文件后（见下），你还需要将该文件添加到索引中，以便以后可以在导航栏中显示该文件。
 
-This index is the `mkdocs.yml` file.
+索引指 `mkdocs.yml` 文件。
 
-This file contains everything that is needed to create the wiki, and you need to make sure not to break it (though we will tell you if your PR breaks a build should it come to that)!
+此文件包含创建 wiki 所需的所有内容, 您需要确保不要破坏它 （尽管出现了这种情况，系统也会告诉你你的 PR 中断了 wiki 的创建）！
 
-All you need to do is add your file and categories to the `pages` list.  
-The format is pretty straight-forward:
+您只需将文件和类别添加到 `pages` 列表。   
+格式也很简单明了：
 
-- Entries start with a `-`
-- Then comes the (shown, English) name for the group or entry, followed by a `:`
+- 条目都以后面的这个符号开始 `-`
+- 然后是条目或者类别的 （显示的英语）名称，后面再接上 `: `
 - If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
 - If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
 
