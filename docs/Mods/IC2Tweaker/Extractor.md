@@ -3,6 +3,10 @@
 ## Package
 `import mods.ic2.Extractor`
 
+## Methods
+- **IItemStack output**
+- **IIngredient input**
+
 ## Addition
 
 ```
