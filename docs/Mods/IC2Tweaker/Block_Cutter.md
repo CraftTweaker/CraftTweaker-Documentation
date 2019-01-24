@@ -3,6 +3,12 @@
 ## Package
 `import mods.ic2.BlockCutter`
 
+## Methods
+
+- **IItemStack output**
+- **IIngredient input**
+- **@Optional int hardness** Minimum hardness requirement for blade.
+
 ## Addition
 
 ```
