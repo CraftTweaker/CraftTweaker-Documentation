@@ -8,7 +8,7 @@
 ```
 mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness);
 
-mods.ic2.BlockCutter.addRecipe(<item:minecraft:diamond>, <item:minecraft:dirt>);
+mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
 ## Removal
