@@ -4,8 +4,11 @@
 
 ## Methods
 **- IEnchantmentDefinition output** The output enchantment.
+
 **- IIngredient input** The item that it used to make this enchantment.
+
 **- int amountPerLevel** The number of input items per level of enchantment.
+
 **- double costMultiplier** Used to modify how expensive the recipe is.
 
 ## Addition
