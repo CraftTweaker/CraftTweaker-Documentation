@@ -3,8 +3,11 @@
 ## Package
 `import mods.ic2.Macerator`
 
-## Add Fluid Cool Down
+## Methods
+- **IItemStack output**
+- **IIngredient input**
 
+## Addition
 ```
 mods.ic2.Macerator.addRecipe(IItemStack output, IItemStack input);
 
