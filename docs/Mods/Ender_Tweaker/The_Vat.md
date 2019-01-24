@@ -18,15 +18,12 @@
 **int energyCost** - How much FE the recipe uses. Defaults to 5000.
 ```
 mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
-```
 
-**Someone Else Please do This**
-```
-mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
+mods.enderio.Vat.addRecipe(<minecraft:lava>, <minecraft:water>, <mineraft:glowstone_dust>, 5, <minecraft:fire_charge>, 10);
 ```
 ## Removal
 ```
-mods.enderio.Vat.removeRecipe(<item>);
+mods.enderio.Vat.removeRecipe(ILiquidStack output);
 
-mods.enderio.Vat.removeRecipe(<item>);
+mods.enderio.Vat.removeRecipe(<enderio:ender_distillation>);
 ```
