@@ -2,18 +2,20 @@
 ## Package
 `mods.enderio.SoulBinder`
 
+## Method
+- **IItemStack output** The result of the recipe.
+- **IIngredient input** The main (non-soul vial) ingredient.
+- **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
+- **int energyCost** How much FE the recipe uses. Defaults to 5000.
 ## Addition
-**Ingredient input** The main (non-soul vial) ingredient.
-
-**String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
 ```
 mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
 
-mods.enderio.SoulBinder.addRecipe(minecraft:nether_star>, <bone>, skeleton, 50, 50000);
+mods.enderio.SoulBinder.addRecipe(minecraft:nether_star>, <minecraft:bone>, <minecraft:skeleton>, 50, 50000);
 ```
 ## Removal
 ```
 mods.enderio.SoulBinder.removeRecipe(IItemStack output);
 
-mods.enderio.SoulBinder.removeRecipe(<some item that i have to fill in>);
+mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:19>);
 ```
