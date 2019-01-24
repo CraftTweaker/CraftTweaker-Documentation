@@ -13,4 +13,4 @@ mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 
 ## Removal
 
-For now simply remove the corresponding line in `config/ic2/blast_furnace.ini`.
+For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
