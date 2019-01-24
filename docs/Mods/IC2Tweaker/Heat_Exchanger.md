@@ -3,6 +3,9 @@
 ## Package
 `import mods.ic2.HeatExchanger`
 
+## Methods
+- **ILiquidStack**
+
 ## Add Fluid Cool Down
 
 ```
