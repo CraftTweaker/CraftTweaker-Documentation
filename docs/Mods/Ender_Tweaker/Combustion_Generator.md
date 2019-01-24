@@ -2,6 +2,13 @@
 ## Package
 `import mods.enderio.CombustionGen`
 
+## Methods
+- **ILiquidStack fuel** The fluid fuel to add.
+- **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
+- **int totalBurnTime** Total burn time of one bucket of fuel.
+- **ILiquidStack coolant** The fluid coolant to add.
+- **float degreesCoolingPerMB** How much heat can one mB of the coolant absorb until it heats up by 1 K?
+
 ## Add Fuel
 ```
 mods.enderio.CombustionGen.addFuel(ILiquidStack fluid fuel, int RF per tick, int totalBurnTime);
