@@ -3,6 +3,10 @@
 ## Package
 `import mods.ic2.Compressor`
 
+## Methods
+- **IItemStack output**
+- **IIngredient input**
+
 ## Addition
 
 ```
