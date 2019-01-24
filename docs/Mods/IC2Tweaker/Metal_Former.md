@@ -3,6 +3,10 @@
 ## Package
 `import mods.ic2.MetalFormer`
 
+## Methods
+- **IItemStack output**
+- **IIngredient input**
+
 ## Add Cutting Recipe
 ```
 mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IItemStack input);
