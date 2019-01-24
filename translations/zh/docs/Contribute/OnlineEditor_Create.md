@@ -53,11 +53,11 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 - 条目都以后面的这个符号开始 `-`
 - 然后是条目或者类别的 （显示的英语）名称，后面再接上 `: `
 - 如果你创建了一个类别（例：`原版`或`模组`），就可以直接换行，下一行文字在与上一行对齐后在文字前面添加两个空格。
-- 如果这个索引指的是一个页面，在同一行的后面加上`:`，补上一个空格，然后再添加地址。 Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- 如果这个索引指的是一个页面，在同一行的后面加上`:`，补上一个空格，然后再添加路径。 记得在路径两段加上单引号`'`，使得系统能够识别。 路径是与`docs`文件夹的相对位置，所以 `docs/Vanilla/Commands.md` 需要写成 `Vanilla/Commands.md`。
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
+具体例子请查看 [当前 github 上的 mkdocs.yml 文件](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml)。 或者，你也可以编辑这个页面并补充一个例子。
 
-## Save/Commit the changes
+## 保存/提交更改
 
 *Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
 
