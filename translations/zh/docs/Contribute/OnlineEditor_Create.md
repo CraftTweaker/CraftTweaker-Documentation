@@ -30,8 +30,8 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 例如你需要在 `docs/AdvancedFunctions` 文件夹下创建一个名为 `Secret_Information.md` 的文件：  
 在 GitHub 中找到它的路径，并点击 `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
-You are now presented with the new File editor page.  
-First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
+你会进入一个新的文件编辑器页面。  
+首先，在最顶端是文件的路径。 如果我们希望在显示的路径中创建文件，则只需提供文件的标题和扩展名。 请记住，所有 wiki 条目文件的扩展名一律为 `.md` ，因为此 wiki 使用 markdown。
 
 If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
 
