@@ -24,11 +24,11 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 ## 创建文件
 
-After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
-Don't worry if it does not exist, you can still create the file.
+成功确定文件的路径后，你需要前往包含这个文件的现有文件夹。  
+如果它不存在也不必担心，你仍然可以创建这个文件。
 
-Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
-Find the path in GitHub and click `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+例如你需要在 `docs/AdvancedFunctions` 文件夹下创建一个名为 `Secret_Information.md` 的文件：  
+在 GitHub 中找到它的路径，并点击 `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
 You are now presented with the new File editor page.  
 First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
