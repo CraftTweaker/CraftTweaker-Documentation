@@ -52,8 +52,8 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 - 条目都以后面的这个符号开始 `-`
 - 然后是条目或者类别的 （显示的英语）名称，后面再接上 `: `
-- If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
-- If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- 如果你创建了一个类别（例：`原版`或`模组`），就可以直接换行，下一行文字在与上一行对齐后在文字前面添加两个空格。
+- 如果这个索引指的是一个页面，在同一行的后面加上`:`，补上一个空格，然后再添加地址。 Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
 
 For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
 
