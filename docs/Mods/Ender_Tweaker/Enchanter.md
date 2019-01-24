@@ -15,11 +15,11 @@
 ```
 mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
 
-mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:haste>, <minecraft:redstone>, 32, 60);
+mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 ## Removal
 ```
 mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
 
-mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:haste>);
+mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:sharpness>);
 ```
