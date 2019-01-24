@@ -6,8 +6,7 @@
 ## Methods
  - **IItemStack[] outputs**
  - **IIngredient input**
- - **int totalFluidCost** Per-tick IC2 liquefied air cost, measured in mB/tick
- - **int time** Total time cost, measured in ticks
+ - **@Optional int water**  Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
 ## Addition
 ```
