@@ -1,4 +1,4 @@
-# 使用 GitHub 的在线编辑器编辑文档
+# 使用 GitHub 的在线编辑器编辑文件
 
 ## 需求
 
@@ -6,13 +6,13 @@
 
 ## 介绍
 
-GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建文档。  
+GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建文件。  
 虽然这种方法实现的功能不如在本地编辑多，但你不需要考虑包括设置 git 等诸多操作。
 
-这篇指南将会向你展示如何使用 GitHub 的在线编辑器编辑现有的文档。  
-你可能会出于改正拼写错误，提交一个更好的例子等理由编辑一个页面。这里欢迎大家做出更改并最终 [提交 Pull Request](/Contribute/PullRequest)。
+这篇指南将会向你展示如何使用 GitHub 的在线编辑器编辑现有的文件。  
+你可能会出于改正拼写错误，提交一个更好的例子等理由编辑一个页面。无论出于何种原因，这里欢迎大家做出更改并最终 [提交 Pull Request](/Contribute/PullRequest)。
 
-但请记住，你只能编辑英文版文档，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理。
+但请记住，你只能编辑英文版文件，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理。
 
 ## 找到该文件
 
@@ -20,14 +20,14 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 在大多数情况下，你可以通过它的 Wiki Url 找到该文件。
 
-经验法则： ` # ` 指的是文档文件夹，之后的所有内容都是嵌套文件夹，最后的一个是文件。
+经验法则： ` # ` 指的是文档文件夹，之后的所有内容都是嵌套文件夹，最后才是文件。
 
 例如，Url 为以下地址的文件  
 [https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/](https://docs.blamejared.com/en/#AdvancedFunctions/Arrays_and_Loops/)  
 可以在以下位置被找到  
 `docs/AdvancedFunctions/Arrays_and_Loops.md`
 
-## 编辑此文件
+## 编辑该文件
 
 成功找到文件后，单击它会在 github 的文件视图中打开这个文件。  
 这里您可以看到 wiki 条目的大致内容，但它不包含没有导航栏，因为这只是条目内容。
