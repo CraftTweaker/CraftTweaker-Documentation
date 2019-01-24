@@ -28,7 +28,7 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 如果它不存在也不必担心，你仍然可以创建这个文件。
 
 例如你需要在 `docs/AdvancedFunctions` 文件夹下创建一个名为 `Secret_Information.md` 的文件：  
-在 GitHub 中找到它的路径，并点击 `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+在 GitHub 中找到它的路径，并点击 `Create new file` ![创建文档按钮](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
 你会进入一个新的文件编辑器页面。  
 首先，在最顶端是文件的路径。 如果我们希望在显示的路径中创建文件，则只需提供文件的标题和扩展名。 请记住，所有 wiki 条目文件的扩展名一律为 `.md` ，因为此 wiki 使用 markdown。
@@ -59,26 +59,26 @@ GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建�
 
 ## 保存/提交更改
 
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
+*注：这段描述源自编辑文件页面，但内容是相通的。如果你认为有必要替换这一部分，也欢迎作出更改*
 
-After you have created the file content you need to let GitHub know that you want to save your changes.
+创建文件后，你需要让 GitHub 知道你要保存所做的更改。
 
-That's what the commit box below your editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+这就是提交区的功能：  
+你不能简单的直接存储这个文件，你需要提供你所做变更的概述（提交标题）和一段（可选的）描述用以添加额外的信息，例如你为什么作出此更改或者具体被更改了哪些内容。
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+默认情况下，它大致如下图所示:  
+![默认的提交框](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub 不知道你做了什么更改，所以它会生成这段通用的描述。
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+您可能需要添加其他标题或说明，这虽然不是必要的，但这可以让人更加轻松的查看你之后提交的 Pull Request。
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+如果你的 GitHub 帐户关联了多个电子邮件地址，你可以选择你做出修改的电子邮件地址。 这不会对做出的贡献产生任何的影响。  
+你还可以决定是直接提交到 master branch（主分支），还是创建一个新 branch（分支）并提交到新分支上 。 在大多数情况下，你只需要提交到 master branch 上即可。
 
-A filled out example might look like this: ![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+填写完毕的示例类似于下图所示： ![填写完的提交框](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## 下一步该做什么
 
-After you have committed your changes, you can go on and [edit](/Contribute/OnlineEditor_Edit) or create more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+在作出更改后，你可以使用在线编辑器继续[编辑](/Contribute/OnlineEditor_Edit)或者创建更多文档。  
+当你做完了所有个更改，你就可以[提交 Pull Request](/Contribute/PullRequest)。
