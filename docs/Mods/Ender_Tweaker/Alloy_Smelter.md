@@ -22,5 +22,5 @@ mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <
 ```
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output)
 
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot_soularium>)
+mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>)
 ```
