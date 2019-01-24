@@ -10,7 +10,7 @@ Tree Tweaker issues hould be discussed at the [Tree Tweaker issue tracker](https
 `import mods.treetweaker.TreeFactory`
 
 ## Script Requirments
-#### var **string = TreeFatory.createtree("string");** 
+#### var **string = TreeFatory.createTree("string");** 
 create a new tree fluke_tree.
 `var newtree = TreeFactory.createTree("fluke_tree"); `
 
