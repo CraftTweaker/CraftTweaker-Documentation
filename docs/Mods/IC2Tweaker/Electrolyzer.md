@@ -1,7 +1,7 @@
 # Electrolyzer
 
 ## Package
-`iimport mods.ic2.Electrolyzer`
+`import mods.ic2.Electrolyzer`
 
 ## Addition
 
