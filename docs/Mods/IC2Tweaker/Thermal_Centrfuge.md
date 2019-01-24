@@ -3,6 +3,11 @@
 ## Package
 `import mods.ic2.ThermalCentrifuge`
 
+## Methods
+- **IItemStack[] outputs**
+- **IIngredient input**
+- **@Optional int minHeat**
+
 ## Addition
 ```
 mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat default );
