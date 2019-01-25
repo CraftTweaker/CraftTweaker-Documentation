@@ -1,7 +1,7 @@
 # Alloy Smelter
 
 ## Package
-`import mods.enderio.AlloySmelter`
+`import mods.enderio.AlloySmelter;`
 
 ## Methods
 
