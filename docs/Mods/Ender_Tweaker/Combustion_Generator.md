@@ -1,6 +1,6 @@
 # Combustion Generator
 ## Package
-`import mods.enderio.CombustionGen`
+`import mods.enderio.CombustionGen;`
 
 ## Methods
 - **ILiquidStack fuel** The fluid fuel to add.
