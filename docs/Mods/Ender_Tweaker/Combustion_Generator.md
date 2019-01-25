@@ -19,15 +19,15 @@ mods.enderio.CombustionGen.addFuel(<minecraft:lava>, 25, 40>]);
 ## Add Coolant
 
 ```
-mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB)
+mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB);
 
-mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100)
+mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
 ```
 ## Remove Fuel
 ```
 mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
 
-mods.enderio.CombustionGen.removeFuel(enderio:fire_water;
+mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
 ```
 
 ## Remove Coolant
