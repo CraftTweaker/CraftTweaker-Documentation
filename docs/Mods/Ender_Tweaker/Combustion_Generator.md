@@ -3,7 +3,7 @@
 `import mods.enderio.CombustionGen;`
 
 ## Methods
-- **ILiquidStack fuel** The fluid fuel to add.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel** The fluid fuel to add.
 - **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
 - **int totalBurnTime** Total burn time of one bucket of fuel.
 - **ILiquidStack coolant** The fluid coolant to add.
