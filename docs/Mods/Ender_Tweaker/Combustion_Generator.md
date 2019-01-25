@@ -7,7 +7,7 @@
 - **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
 - **int totalBurnTime** Total burn time of one bucket of fuel.
 - **ILiquidStack coolant** The fluid coolant to add.
-- **float degreesCoolingPerMB** How much heat can one mB of the coolant absorb until it heats up by 1 K?
+- **float degreesCoolingPerMB** How much heat in the generator can one mB of the added coolant absorb until it heats up all the way?
 
 ## Add Fuel
 ```
