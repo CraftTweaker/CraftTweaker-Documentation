@@ -20,7 +20,7 @@ mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <
 ## Removal
 
 ```
-mods.enderio.AlloySmelter.removeRecipe(IItemStack output)
+mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
 
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>)
 ```
