@@ -1,7 +1,7 @@
 # Semi-Fluid Generator
 
 ## Package
-`import mods.ic2.SemiFluidGenerator`
+`import mods.ic2.SemiFluidGenerator;`
 
 ## Methods
  - **ILiquidStack liquid** The liquid which can be used as fuel in semi-fluid generator
