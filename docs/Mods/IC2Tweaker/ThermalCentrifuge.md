@@ -1,7 +1,7 @@
 # Thermal Centrifuge
 
 ## Package
-`import mods.ic2.ThermalCentrifuge`
+`import mods.ic2.ThermalCentrifuge;`
 
 ## Methods
 - **IItemStack[] outputs**
