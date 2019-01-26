@@ -1,7 +1,7 @@
 # Metal Former
 
 ## Package
-`import mods.ic2.MetalFormer`
+`import mods.ic2.MetalFormer;`
 
 ## Methods
 - **IItemStack output**
