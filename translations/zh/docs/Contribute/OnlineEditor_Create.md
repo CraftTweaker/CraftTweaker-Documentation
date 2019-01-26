@@ -1,84 +1,84 @@
-# Edit Files using GitHub's online editor
+# 使用 GitHub 的在线编辑器创建文件
 
-## Requirements
+## 需求
 
-You will need to have created a GitHub account and [forked the wiki to your account](/Contribute/SetupGithub).
+您需要有一个 github 帐户，并[将 wiki 复制到您的帐户中](/Contribute/SetupGithub)。
 
-## Introduction
+## 介绍
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as using a local copy but you don't need to worry about setting up git and all.
+GitHub 的在线编辑器允许你在只有浏览器的情况下修改和创建文档。  
+虽然这种方法实现的功能不如在本地编辑多，但你不需要考虑包括设置 git 等诸多操作。
 
-This guide will show you how to create a new wiki file using github's online editor.  
-Your main reason for adding new pages is most likely to fill in missing information, but maybe you also want to add an example wiki entry for a given mod handler, whatever the reason, feel free to commit changes and eventually [file a Pull Request](/Contribute/PullRequest).
+这篇指南将会向你展示如何使用 GitHub 的在线编辑器创建新的文档。  
+添加新页面的主要原因可能是补充缺失的信息，但也可能是给模组处理程序添加一个示例条目。无论出于何种原因这里欢迎大家做出更改并最终[提交 Pull Request](/Contribute/PullRequest)。
 
-However, remember that you need to create the English version, translations are then handled via [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) (but only after the PR has been merged).
+但请记住，你只能创建英文版文档，翻译将通过 [CrowdIn](https://crowdin.com/project/crafttweaker-documentation/) 处理（但需要等到英文页面合并之后才能翻译）。
 
-## Where to create the file
+## 文档创建的位置
 
-Theoretically, it doesn't matter where you put your file, but please try to fit the current scheme:
+从理论上讲，文件放在哪里并不重要，但还是希望任何人符合当前的规范：
 
-- All files need to be in the `docs` folder.
-- The File structure should match the navigation bar crumbs. Example: When using the navigation bar in the wiki, `ICraftingRecipe` can be found in `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe`. The file for ICraftingRecipe can be found at `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md`. As you can see, the paths don't exactly match but they are sufficient to find the file.
-- All information for one mod should remain in one group/folder.
+- 所有文件都需要放在 `docs` 文件夹中。
+- 文件结构应与导航栏相匹配。 例：在 wiki 的导航栏中, `ICraftingRecipe` 可以通过路径 `Vanilla/Recipes/Crafting Table Recipes/ICraftingRecipe` 中找到。 ICraftingRecipe 文档可以通过 `docs/Vanilla/Recipes/Crafting/ICraftingRecipe.md` 路径找到。 正如您所看到的。这些路径并不完全匹配，但它们足以找到这个文件。
+- 一个模组的所有信息都应保存在一个组/文件夹下。
 
-## Create the file
+## 创建文件
 
-After you have successfully located your future file's path, navigate to the folder that will contain the file in GitHub, if it exists.  
-Don't worry if it does not exist, you can still create the file.
+成功确定文件的路径后，你需要前往包含这个文件的现有文件夹。  
+如果它不存在也不必担心，你仍然可以创建这个文件。
 
-Say you want to create a file called `Secret_Information.md` in `docs/AdvancedFunctions`:  
-Find the path in GitHub and click `Create new file` ![Create File Button](/Contribute/assets/OnlineEditor_CreateFileButton.png)
+例如你需要在 `docs/AdvancedFunctions` 文件夹下创建一个名为 `Secret_Information.md` 的文件：  
+在 GitHub 中找到它的路径，并点击 `Create new file` ![创建文档按钮](/Contribute/assets/OnlineEditor_CreateFileButton.png)
 
-You are now presented with the new File editor page.  
-First, on the top you can see the path of the file that will be created. If we want the file to be created in exactly the directory that is shown in the path, we only need to provide a file title and extension. Remember, all wiki entry files should have the `.md` extension, since this wiki uses markdown.
+你会进入一个新的文件编辑器页面。  
+首先，在最顶端是文件的路径。 如果我们希望在显示的路径中创建文件，则只需提供文件的标题和扩展名。 请记住，所有 wiki 条目文件的扩展名一律为 `.md` ，因为此 wiki 使用 markdown。
 
-If you want the file to be created in a (possibly nonexisting) subfolder, or even multiple folders down the path, you can use `/` to separate folder names (like you can already see in the given path).
+如果希望在（可能不存在的) 子文件夹中创建文件，甚至在该路径下创建多个文件夹，则需要使用 `/` 来分隔文件夹的名称 （就像您已经可以在现有路径中看到的那样）。
 
-The Editor allows you to create the file as you like, and also to directly view a preview of the compiled formatting.
+这个编辑器允许你如你所愿的创建文件，也提供编译后的预览版本。
 
-If the syntax of the files is new for you, the wiki uses MarkDown. There should be many tutorials to find using google (or you could add one right here to this wiki if you like).
+如果你不熟悉文件的语法， wiki 使用的是 Markdown 语法。 谷歌上应该有很多教程（如果你想的话，也可以在这个 wiki 上添加教程页面）。
 
-## Add the file to the index
+## 将文件添加到索引中
 
-After you have created the file and commited the creation (see below) you will need to add the file to the index as well, so that it can be shown in the navigation bar later.
+创建并提交文件后（见下），你还需要将该文件添加到索引中，以便以后可以在导航栏中显示该文件。
 
-This index is the `mkdocs.yml` file.
+索引指 `mkdocs.yml` 文件。
 
-This file contains everything that is needed to create the wiki, and you need to make sure not to break it (though we will tell you if your PR breaks a build should it come to that)!
+此文件包含创建 wiki 所需的所有内容, 您需要确保不要破坏它 （尽管出现了这种情况，系统也会告诉你你的 PR 中断了 wiki 的创建）！
 
-All you need to do is add your file and categories to the `pages` list.  
-The format is pretty straight-forward:
+您只需将文件和类别添加到 `pages` 列表。   
+格式也很简单明了：
 
-- Entries start with a `-`
-- Then comes the (shown, English) name for the group or entry, followed by a `:`
-- If you are creating a grouping (e.g. `Vanilla` or `Mods`) proceed on the next line, with two spaces inlined.
-- If you are creating an actual reference to a page file, add it on the same line, after the `:` and a space. Make sure to wrap it in single quotes `'` to ensure that the build works as expected. The path is relative to the `docs` folder, so `docs/Vanilla/Commands.md` becomes `Vanilla/Commands.md`.
+- 条目都以后面的这个符号开始 `-`
+- 然后是条目或者类别的 （显示的英语）名称，后面再接上 `: `
+- 如果你创建了一个类别（例：`原版`或`模组`），就可以直接换行，下一行文字在与上一行对齐后在文字前面添加两个空格。
+- 如果这个索引指的是一个页面，在同一行的后面加上`:`，补上一个空格，然后再添加路径。 记得在路径两段加上单引号`'`，使得系统能够识别。 路径是与`docs`文件夹的相对位置，所以 `docs/Vanilla/Commands.md` 需要写成 `Vanilla/Commands.md`。
 
-For examples check the [current mkdocs.yml file on github](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml). Alternatively, edit this file and add your own example here.
+具体例子请查看 [当前 github 上的 mkdocs.yml 文件](https://github.com/CraftTweaker/CraftTweaker-Documentation/blob/master/mkdocs.yml)。 或者，你也可以编辑这个页面并补充一个例子。
 
-## Save/Commit the changes
+## 保存/提交更改
 
-*Note: This description originates from the edit files guide but the same principles apply, feel free to substitute with your own version if needed*
+*注：这段描述源自编辑文件页面，但内容是相通的。如果你认为有必要替换这一部分，也欢迎作出更改*
 
-After you have created the file content you need to let GitHub know that you want to save your changes.
+创建文件后，你需要让 GitHub 知道你要保存所做的更改。
 
-That's what the commit box below your editor is for:  
-You cannot simply save the file, you need to provide a summary of what you did (commit title) and optionally a short description where you can put additional information like why you did the changes or what exactly was changed.
+这就是提交区的功能：  
+你不能简单的直接存储这个文件，你需要提供你所做变更的概述（提交标题）和一段（可选的）描述用以添加额外的信息，例如你为什么作出此更改或者具体被更改了哪些内容。
 
-By default it looks roughly like this:  
-![Commit Box Default](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
+默认情况下，它大致如下图所示:  
+![默认的提交框](/Contribute/assets/OnlineEditor_CommitBox_Default.png)
 
-In this example, the Commit title (or edit summary) is `Update Arrays_and_Loops.md`. GitHub cannot know what your actual changes were supposed to do, so it tries something as generic as this.
+在此示例中，提交标题 (或编辑摘要) 为 `Update Arrays_and_Loops.md`。 GitHub 不知道你做了什么更改，所以它会生成这段通用的描述。
 
-You might want to add an additional title or description, but it is not neccessary, though it makes reviewing your Pull request later on easier.
+您可能需要添加其他标题或说明，这虽然不是必要的，但这可以让人更加轻松的查看你之后提交的 Pull Request。
 
-If you have multiple e-mail addresses registered for your GitHub account, you can choose as which one you will create the commit. This will not have any real impact for contributing, though.  
-You can also decide whether you want to commit directly to your master branch or rather create a new branch for your commit. In most cases committing to your master branch works just fine.
+如果你的 GitHub 帐户关联了多个电子邮件地址，你可以选择你做出修改的电子邮件地址。 这不会对做出的贡献产生任何的影响。  
+你还可以决定是直接提交到 master branch（主分支），还是创建一个新 branch（分支）并提交到新分支上 。 在大多数情况下，你只需要提交到 master branch 上即可。
 
-A filled out example might look like this: ![Commit box Filled](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
+填写完毕的示例类似于下图所示： ![填写完的提交框](/Contribute/assets/OnlineEditor_CommitBox_Filled.png)
 
-## What to do next
+## 下一步该做什么
 
-After you have committed your changes, you can go on and [edit](/Contribute/OnlineEditor_Edit) or create more files using the online editor.  
-After you have done all your changes, you can [file a Pull Request](/Contribute/PullRequest).
+在作出更改后，你可以使用在线编辑器继续[编辑](/Contribute/OnlineEditor_Edit)或者创建更多文档。  
+当你做完了所有个更改，你就可以[提交 Pull Request](/Contribute/PullRequest)。

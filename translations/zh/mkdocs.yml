@@ -12,18 +12,18 @@ pages:
     - 关联数组（映射）: 'AdvancedFunctions/Associative_Arrays.md'
     - 数学运算: 'AdvancedFunctions/Calculations.md'
     - 条件语句: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
-    - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
-      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
-      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
-      - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
-      - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
-      - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+    - 跨脚本调用: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - 自定义函数: 'AdvancedFunctions/Custom_Functions.md'
+    - 全局和静态变量: 'AdvancedFunctions/Global_Static_Variables.md'
+    - 导入: 'AdvancedFunctions/Import.md'
+    - 预处理器:
+      - 关于预处理器: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - 调试: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - 忽略括号错误: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - 加载器: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
+      - 模组加载: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
+      - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
+      - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
   - Tips and Tricks:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
@@ -682,11 +682,11 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
-  - How to contribute: 
-    - How to fork the project: 'Contribute/SetupGithub.md'
-    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
-    - How to create files online: 'Contribute/OnlineEditor_Create.md'
-    - How to file a Pull Request: 'Contribute/PullRequest.md'
+  - 如何参与贡献: 
+    - 如何复制这个项目: 'Contribute/SetupGithub.md'
+    - 如何在线编辑文档: 'Contribute/OnlineEditor_Edit.md'
+    - 如何在线创建文档: 'Contribute/OnlineEditor_Edit.md'
+    - 如何提交 Pull Request: 'Contribute/PullRequest.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
@@ -708,7 +708,7 @@ pages:
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
-# Do not edit in PRs below here
+# 不得在提交的 Pull Request 中修改以下的内容
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
