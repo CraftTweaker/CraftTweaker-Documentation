@@ -1,7 +1,7 @@
 # Compressor
 
 ## Package
-`import mods.ic2.Compressor`
+`import mods.ic2.Compressor;`
 
 ## Methods
 - **IItemStack output**
