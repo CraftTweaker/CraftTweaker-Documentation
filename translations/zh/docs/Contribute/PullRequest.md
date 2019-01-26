@@ -1,10 +1,10 @@
 # 提交 Pull Request
 
-## Prerequisites
+## 需求
 
-You need to have [created](/Contribute/OnlineEditor_Create) and/or [modified](/Contribute/OnlineEditor_Edit) files in your fork of the wiki.
+你已经在你复制的仓库中 [创建](/Contribute/OnlineEditor_Create) 或[修改](/Contribute/OnlineEditor_Edit) 了 wiki 的文件。
 
-## Introduction
+## 介绍
 
 After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  
 This guide will show you how to create a PR to apply your changes to the actual wiki.
