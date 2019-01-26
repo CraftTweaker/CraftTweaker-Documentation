@@ -1,7 +1,7 @@
 # Scrap Box
 
 ## Package
-`import mods.ic2.ScrapBox`
+`import mods.ic2.ScrapBox;`
 
 ## Methods
 - **WeightedItemStack weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
