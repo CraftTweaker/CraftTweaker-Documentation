@@ -5,7 +5,7 @@
 
 ## Methods
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **IIngredient input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ## Addition
 
