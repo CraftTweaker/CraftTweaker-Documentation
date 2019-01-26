@@ -5,7 +5,7 @@
 
 ## Methods
 
-- **IItemStack[] outputs**
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **IIngredient input**
 - **int totalFluidCost**   Per-tick IC2 liquefied air cost, measured in mB/tick
 - **int time**             Total time cost, measured in ticks
