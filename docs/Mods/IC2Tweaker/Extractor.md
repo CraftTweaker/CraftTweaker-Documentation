@@ -1,7 +1,7 @@
 # Extractor
 
 ## Package
-`import mods.ic2.Extractor`
+`import mods.ic2.Extractor;`
 
 ## Methods
 - **IItemStack output**
