@@ -9,7 +9,7 @@
 
 ## Add Fluid
 ```
-mods.ic2.SemiFluidGenerator.addFluid(WeightedItemStack, double powerOutput;
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
 ```
