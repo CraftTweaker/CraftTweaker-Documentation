@@ -1,17 +1,17 @@
-# ModLoaderPreprocessor
+# 模组加载预处理器
 
-The modLoaded Preprocessor only executes a script, if a certain mod is present.
+模组加载预处理器只会在有特定模组时执行这个脚本。
 
-## Call
+## 调用
 
-You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
-Example: `#modloaded minecraft`
+你可以添加 `#modloaded modID` 到你的脚本来调用模组加载预处理器，`modID（模组ID）`将会是你想要检查的模组ID：  
+例子：`#modloaded minecraft`
 
-You can also provide multiple modID's:  
-`#modloaded minecraft tconstruct` will only be executed if minecraft AND tconstruct are loaded.
+你也可以提供多个模组ID：  
+`#modloaded minecraft tconstruct` 将只在 minecraft 和 tconstruct 都被加载后才会被执行。
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+你也可以反转一个模组的条件来达到只有某个模组已加载而另一个模组未加载： `#modloaded !tconstruct minecraft` 将只在有 minecraft 但 没有 tconstruct 时被执行
 
-## What it does
+## 它的作用
 
-If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
+如果你添加这个预处理器到一个脚本里，它只会在存在提供的模组ID，换个说法，如果这个模组被加载了时才会被执行。

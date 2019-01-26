@@ -13,54 +13,56 @@
 如果配方不存在则打印错误信息。
 
     //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-    //resourceLocation resource location
+    //resourceLocation 指的是 resource location
     
     mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
     
 
-<details><summary>Pre v1.10 handler</summary>
+<details><summary>1.10 版本之前的处理器</summary>
 
 这个方法移除第一个在传入的祭坛等级下`输出`为传入的物品堆[（IItemStack）](../../../Vanilla/Items/IItemStack/)的配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
 <table>
-    <tr><th>Altar Level</th><th>Level name</th></tr>
-    <tr><td>0</td><td>Luminous Crafting Table</td></tr>
-    <tr><td>1</td><td>Starlight Crafting Altar</td></tr>
-    <tr><td>2</td><td>Celestial Altar</td></tr>
+    <tr><th>祭坛等级</th><th>等级名称</th></tr>
+    <tr><td>0</td><td>星辉合成台</td></tr>
+    <tr><td>1</td><td>星辉祭坛</td></tr>
+    <tr><td>2</td><td>天辉祭坛</td></tr>
 </table>
 
 ```JAVA
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
+//output 输出
+//altarLevel 祭坛等级
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
 
 </details>
 
-## Add Altar Recipes
+## 添加祭坛配方
 
-Since v1.10 all recipes require a resource location as first parameter.  
-Unlike vanilla recipe names, they are not optional and you will encounter errors if you do not provide it. If you want to override an existing recipe, you can just add a new recipe with the same location.  
-You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.
+1.10 版本之后所有配方都需要 resource location 作为第一个参数。  
+与原版配方不同的是，这个参数不是可选参数，意味着如果你不提供这些参数会出现错误。 如果你想覆盖之前的配方，你可以直接添加一个与原来的 resource location 相同的配方。  
+你可以通过在 F3 菜单开启时将鼠标悬浮在 JEI 或 星空日志 的输出槽获取 resource location。
 
-All recipe addition methods require these parameters:  
+所有添加配方的方法都需要这些参数：  
 string `recipeLocation`,  
 [IItemStack](/Vanilla/Items/IItemStack/) `output`,  
 int `starlightRequired`,  
 int `craftingTickTime`,  
 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] `inputs`
 
-The `inputs` parameter is, unlike in Crafting Table recipes only a 1 Dimensional Array.  
-You can use [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or `null` as the array's members
+与工作台配方不同的是，`inputs（输入）`参数是一个一维数组。   
+数组中的数据类型可以是[IItemStacks（物品堆）](/Vanilla/Items/IItemStack/)，[ILiquidStacks（流体堆）](/Vanilla/Liquids/ILiquidStack/)，[IOreDictEntries（矿物词典条目）](/Vanilla/OreDict/IOreDictEntry/)和 `null（空）`。
 
-These recipes cannot be shapeless!
+这些配方都是有序合成！
 
-### Discovery
+### 发现
 
-`inputs` length *has to be* 9
+`inputs（输入）`数组的长度*必须为* 9
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
@@ -69,14 +71,14 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
             <liquid:astralsorcery.liquidstarlight>, null, <ore:treeLeaves>]);
 ```
 
-### Attunement
+### 共振
 
-Adds a recipe to the Starlight Crafting Table (T2)
+为星辉合成台（2级）添加配方
 
-`inputs` length *has to be* 13
+`inputs（输入）`数组的长度*必须为* 13
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
@@ -86,14 +88,14 @@ mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/alta
             <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Constellation
+### 星宿
 
-Adds a recipe to the Celestial Altar (T3)
+为天辉祭坛（3级）添加配方
 
-`inputs` length *has to be* 21
+`inputs（输入）`数组的长度*必须为* 21
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
 ```JAVA
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
@@ -107,19 +109,26 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
             <ore:blockMarble>, <ore:blockMarble>]);
 ```
 
-### Trait
+### 光辉
 
-Adds a recipe to the Trait Altar (T4)
+为五彩祭坛（4级）添加配方
 
-`Constellation` the Constellation as an unlocalized String. This is an optional parameter.
+`Constellation（星座）` 未翻译的星座名称（类型为字符串）。 这是一个可选参数。
 
-`inputs` length *has to be* 25 or higher. Items at index 25 or higher will be considered as "outer items" that need to be put on relays around the altar.
+`inputs（输入）`数组的长度*必须为* 25或更高。 序号25以后的物品会被认为是“外围物品”，它们需要被放置在祭坛周围以参与合成。
 
-`inputs` Order:  
-![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
+`inputs（输入）` 顺序：  
+![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
 ```JAVA
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
+
+//recipeLocation recipe location
+//output 输出
+//starlight 所需星光
+//craftTickTime 合成时间（单位：刻）
+//inputs 输入（数组）
+//iRequiredConstellationFocusName 星座名称
 
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <minecraft:tnt>, 4500, 100, [
     <liquid:lava>, <liquid:lava>, <liquid:lava>,<liquid:lava>, <minecraft:gunpowder>, 

@@ -1,12 +1,12 @@
-# NoRun Preprocessor
+# 不执行预处理器
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+不执行预处理器会完全禁止脚本的加载。
 
-## Call
+## 调用
 
-You call the NoRun Preprocessor by adding `#norun` to your script file.
+你可以添加 `#norun` 到你的脚本来调用不执行预处理器。
 
-## What it does
+## 它的作用
 
-It completely disables the script it's added to from being loaded into the game.  
-Though `/ct syntax` will still show script issues in that file!
+它会完全禁止添加了这个预处理器的脚本加载到游戏里。  
+尽管 `/ct syntax` 依然会显示这个脚本的错误！
