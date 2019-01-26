@@ -4,7 +4,7 @@
 `import mods.ic2.Extractor;`
 
 ## Methods
-- **IItemStack output**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output**
 - **IIngredient input**
 
 ## Addition
