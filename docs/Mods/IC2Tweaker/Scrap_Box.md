@@ -18,6 +18,6 @@ mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore> % 10);
 ## Add Drop (IItemStack, float)
 
 ```
-mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem, float weight;
+mods.ic2.ScrapBox.addDrop(WeightedItemStack weightedItem, float weight);
 mods.ic2.ScrapBox.addDrop(<minecraft:diamond_ore>, 0.1F);
 ```
