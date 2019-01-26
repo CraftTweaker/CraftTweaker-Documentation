@@ -11,7 +11,7 @@ IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all metho
 
 ## Access the Server Handler
 
-You can access the Brewing Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
+You can access the Server Handler using the `server` [global keyword](/Vanilla/Global_Functions/).  
 Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands/ICommandSender/).
 
 ## Check if a [player](/Vanilla/Players/IPlayer/) is OP
