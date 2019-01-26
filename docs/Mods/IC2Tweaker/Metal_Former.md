@@ -4,7 +4,7 @@
 `import mods.ic2.MetalFormer;`
 
 ## Methods
-- **IItemStack output**
+- **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **IIngredient input**
 
 ## Add Cutting Recipe
