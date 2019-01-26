@@ -6,7 +6,7 @@
 ## Methods
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **IIngredient input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int hardness** Minimum hardness requirement for blade.
 
 ## Addition
