@@ -1,7 +1,7 @@
 # Fermenter
 
 ## Package
-`import mods.ic2.Fermenter`
+`import mods.ic2.Fermenter;`
 
 ## Methods
 - **ILiquidStack output** The fermented fluid
