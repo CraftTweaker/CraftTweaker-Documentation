@@ -26,11 +26,11 @@ register tree to add to worldgen. Make sure to call this method last.
 
 ## Optional Syntaxes
 
-#### newtree.setLog("modid:id:int");
+#### newtree.setLog("modid:itemid");
 set what log to use  
 `newtree.setLog("minecraft:wool:3");`
 
-#### newtree.setLeaf("modid:id:int");
+#### newtree.setLeaf("modid:itemid");
 set what leaf to use  
 `newtree.setLeaf("minecraft:melon_block");`
 
@@ -39,19 +39,19 @@ set the minimum height of the tree.
 `newtree.setMinHeight(5);`
 
 #### newtree.setExtraHeight(INT);
-set the max height of the tree.  
+Extra height randomly added when tree generates
 `treename.setExtraHeight(5);`
 
 #### newtree.setGenFrequency(INT); 
-set the frequency of tree spawn  
+Used to control how often a tree generates, successfully spawning at a rate of 1 in N attempts
 `newtree.setGenFrequency(5)`
 
 #### newtree.setGenAttempts(INT); 
-set the attempts of tree spawn  
+How many trees should try to spawn during a successful generation attempt. Can be used to make clusters of trees
 `newtree.setGenAttempts(1)`
 
 #### newtree.extraThick=boolean;
-set the responce of the trees thickness.  
+Makes tree trunk generate as 2x2 thick. Only valid on LARGE_OAK, PINE, CANOPY, and SPRUCE trees
 `newtree.extraThick=true;`
 
 #### newtree.setGenBiome("string:string"); 
@@ -59,13 +59,13 @@ set the biome of spawning
 `newtree.setGenBiome("minecraft:plains")`
 
 #### newtree.setGenBiomeByTag("STRING");
-sets the biomes grouping, accepts any of Forges biome tags.
+Biome tag tree can generate in (HOT, SWAMP, SNOWY...), ignoring typical biome tree rules . Will not function unless spawnBiome is null.
 `newtree.setGenBiomeByTag("HOT");`
 
-#### newtree.setBaseBlock("modid:id")
-set the block the tree sits on  
+#### newtree.setBaseBlock("modid:itemid")
+What block the tree should generate on top of. If not set, will default to blocks valid for vanilla trees (grass, dirt, farmland)
 `newtree.setBaseBlock("minecraft:dirt");`
 
 #### newtree.setDimWhitelist(INT); 
-sets a whitelist for spawning. Can either be a INT or an array of integers through brackets.  
+Either single int or array of ints listing dimension IDs the tree may generate in. If null, may generate in any dimension
 `newtree.setDimWhitelist(0);`
