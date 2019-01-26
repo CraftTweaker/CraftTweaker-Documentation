@@ -1,7 +1,7 @@
 # Canner
 
 ## Package
-`import mods.ic2.Canner`
+`import mods.ic2.Canner;`
 
 ## Methods
 - **IItemStack output** The product
