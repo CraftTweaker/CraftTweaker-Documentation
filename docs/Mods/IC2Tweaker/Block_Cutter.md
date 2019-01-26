@@ -1,7 +1,7 @@
 # Block Cutter
 
 ## Package
-`import mods.ic2.BlockCutter`
+`import mods.ic2.BlockCutter;`
 
 ## Methods
 
