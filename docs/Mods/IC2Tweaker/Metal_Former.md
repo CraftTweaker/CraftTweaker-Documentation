@@ -9,7 +9,7 @@
 
 ## Add Cutting Recipe
 ```
-mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IItemStack input);
+mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addCuttingRecipe(<minecraft:diamond>, <minecraft:dirt> * 64);
 ```
