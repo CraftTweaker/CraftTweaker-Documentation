@@ -4,7 +4,7 @@
 `import mods.ic2.Macerator;`
 
 ## Methods
-- **IItemStack output**
+- **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **IIngredient input**
 
 ## Addition
