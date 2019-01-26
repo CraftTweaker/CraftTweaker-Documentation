@@ -19,7 +19,7 @@ Pull Request（简称 PR）允许你将更改应用与原始的代码库中。
 
 例如下图中的这个仓库，它有 3 个更改没有应用于源仓库，而源仓库有3个更改没有应用于主仓库。
 
-![Pull Request Button](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
+![Pull Request 按钮](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
 点击“Pull Request” 按钮后会打开一个新的页面，对比页面。  
 大多数情况下，你所做更改的提交位置会自动设置为原来的 Crafttweaker/Crafttweaker-Documentation 仓库的主分支上。
@@ -32,12 +32,12 @@ Github 还将验证你的更改与当前的 wiki 之间没有冲突。
 与此同时，请注意 `Allow edits from maintainers` 勾选框。  
 点击这个勾选框将允许有编写 CrT 仓库的人（例如 CraftTweaker 组织的成员）修改你的内容以达到例如解决冲突的目的。
 
-![New PR Tool](/Contribute/assets/PullRequest_Create.png)
+![新 PR 工具](/Contribute/assets/PullRequest_Create.png)
 
 在底部，你可以可以确认所有的更改是否都将包含在 PR 中。
 
 ## 下一步
 
-Next, someone from the CrT-Organization or any contributor can look over your PR and leave general feedback or suggestions.  
-If someone from the CrT-Organization does a PR Review, you will be notified of all comments and whether or not you need to change something before it will be merged.  
-After all suggestions have been resolved, someone will merge the PR.
+接着，CrT 组织的成员或者任何的做出贡献的将会查看你的 PR 并提出建议或者反馈。  
+如果有人查看了你的仓库，你就会得到提醒。提醒的事项包括所有的评论与在该 PR 合并前你还需要做出的更改。  
+当所有的反馈都得到解决后，有人会合并你的 PR。
