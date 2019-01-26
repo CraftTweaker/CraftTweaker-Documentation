@@ -50,6 +50,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onEntityStruckByLightning       | [`crafttweaker.event.EntityStruckByLightningEvent`](/Vanilla/Events/Events/EntityStruckByLightning/)       |
 | onItemExpire                    | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                                 |
 | onItemToss                      | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                     |
+| onPlayerAdvancement             | [`crafttweaker.event.PlayerAdvancement`](/Vanilla/Events/Events/PlayerAdvancement/)                        |
 | onPlayerAnvilRepair             | [`crafttweaker.event.PlayerAnvilRepair`](/Vanilla/Events/Events/PlayerAnvilRepair/)                        |
 | onPlayerAttackEntity            | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)                 |
 | onPlayerBonemeal                | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                         |

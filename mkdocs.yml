@@ -111,6 +111,7 @@ pages:
         - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
         - LivingEntityUseItemEvent: 'Vanilla/Events/Events/LivingEntityUseItem.md'
+        - PlayerAdvancementEvent: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
         - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent: 'Vanilla/Events/Events/PlayerBonemeal.md'

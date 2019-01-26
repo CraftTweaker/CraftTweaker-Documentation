@@ -262,6 +262,7 @@ The `category` argument is optional and will extend the list with the according 
 * damageable
 * display
 * enchantability
+* foodvalue
 * maxdamage
 * maxstack
 * maxuse
@@ -269,6 +270,7 @@ The `category` argument is optional and will extend the list with the according 
 * rarity
 * repairable
 * repaircost
+* saturationvalue
 * unloc
 
 You can also see all the available parameters using the TAB-Key autocompletion feature.
