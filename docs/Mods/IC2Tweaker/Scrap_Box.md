@@ -4,7 +4,7 @@
 `import mods.ic2.ScrapBox;`
 
 ## Methods
-- **WeightedItemStack weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
+- **[WeightedItemStack](/Vanilla/Items/WeightedItemStack/) weightedItem** The new entry of scrap box drop pool. Percentage weight will be divided by 100.
 - **float weight** The weight of this new entry
 
 ## Add Drop (WeightedItemStack)
