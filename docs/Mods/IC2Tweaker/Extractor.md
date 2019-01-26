@@ -5,7 +5,7 @@
 
 ## Methods
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output**
-- **IIngredient input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ## Addition
 
