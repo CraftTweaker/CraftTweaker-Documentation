@@ -1,7 +1,7 @@
 # Heat Exchanger
 
 ## Package
-`import mods.ic2.HeatExchanger`
+`import mods.ic2.HeatExchanger;`
 
 ## Methods
 - **ILiquidStack**
