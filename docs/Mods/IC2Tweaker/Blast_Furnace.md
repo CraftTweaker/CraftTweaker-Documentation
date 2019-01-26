@@ -1,7 +1,7 @@
 # Blast Furnace
 
 ## Package
-`import mods.ic2.BlastFurnace`
+`import mods.ic2.BlastFurnace;`
 
 ## Methods
 
