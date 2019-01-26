@@ -1,7 +1,7 @@
 # Ore Washer
 
 ## Package
-`import mods.ic2.OreWasher`
+`import mods.ic2.OreWasher;`
 
 ## Methods
  - **IItemStack[] outputs**
