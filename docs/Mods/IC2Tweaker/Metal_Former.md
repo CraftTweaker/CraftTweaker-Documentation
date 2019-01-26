@@ -21,7 +21,7 @@ To remove an existed recipe, simply remove the corresponding line in  `config/ic
 
 ## Add Extruding Recipe
 ```
-mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IItemStack input);
+mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
@@ -31,7 +31,7 @@ To remove an existed recipe, simply remove the corresponding line in  `config/ic
 
 ## Add Rolling Recipe
 ```
-mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IItemStack input);
+mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addRollingRecipe(<minecraft:diamond>, <minecraft:dirt> * 32);
 ```
