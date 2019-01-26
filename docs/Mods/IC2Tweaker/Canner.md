@@ -4,7 +4,7 @@
 `import mods.ic2.Canner;`
 
 ## Methods
-- **IItemStack output** The product
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
 - **IIngredient container** The ingredient to be "filled"
 - **IIngredient filler** The ingredient with which is filled into the container
 
