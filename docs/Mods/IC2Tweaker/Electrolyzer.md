@@ -1,7 +1,7 @@
 # Electrolyzer
 
 ## Package
-`import mods.ic2.Electrolyzer`
+`import mods.ic2.Electrolyzer;`
 
 ## Methods
  - **ILiquidStack[] outputs** Array of all outputs. Each slot corresponds to Down-Up-North-South-West-East direction. Tailing null may be omitted.
