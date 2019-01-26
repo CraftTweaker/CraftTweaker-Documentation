@@ -4,7 +4,7 @@
 `import mods.ic2.OreWasher;`
 
 ## Methods
- - **IItemStack[] outputs**
+ - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
  - **IIngredient input**
  - **@Optional int water**  Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
