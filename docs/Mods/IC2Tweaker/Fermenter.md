@@ -4,7 +4,7 @@
 `import mods.ic2.Fermenter;`
 
 ## Methods
-- **ILiquidStack output** The fermented fluid
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The fermented fluid
 - ***ILiquidStack input**  The input fluid
 - **int heat** The amount of heat required for fermentation
 
