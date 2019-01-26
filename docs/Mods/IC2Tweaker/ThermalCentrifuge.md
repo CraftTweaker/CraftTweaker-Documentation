@@ -5,7 +5,7 @@
 
 ## Methods
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **IIngredient input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int minHeat**
 
 ## Addition
