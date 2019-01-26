@@ -687,6 +687,11 @@ pages:
     - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
     - How to create files online: 'Contribute/OnlineEditor_Create.md'
     - How to file a Pull Request: 'Contribute/PullRequest.md'
+    - Using a local version: 
+      - How to install git: 'Contribute/LocalClone/InstallingGit.md'
+      - How to clone: 'Contribute/LocalClone/Clone.md'
+      - How to commit: 'Contribute/LocalClone/CreateCommit.md'
+      - How to push: 'Contribute/LocalClone/Push.md'
   - Developer Area:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
