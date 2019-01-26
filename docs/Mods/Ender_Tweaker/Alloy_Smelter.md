@@ -5,7 +5,7 @@
 
 ## Methods
 
-- **IItemStack output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 - **float xp** The xp is granted from this recipe. May not be negative.
