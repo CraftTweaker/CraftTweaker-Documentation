@@ -1,7 +1,7 @@
 
 # Tree Tweaker
 
-Tree Tweaker is a CraftTweaker add on that allows you to add custom trees to world generation. The shape, height, leaves, logs, frequency, biome, and more can all be customized through zen script. Trees can use modded blocks and be set to generate in modded biomes. 
+Tree Tweaker is a CraftTweaker addon that allows you to add custom trees to world generation. The shape, height, leaves, logs, frequency, biome, and more can all be customized through zenscript. Trees can use modded blocks and be set to generate in modded biomes. 
 
 ## Crafttweaker Integration
 
