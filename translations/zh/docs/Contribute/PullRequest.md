@@ -6,16 +6,16 @@
 
 ## 介绍
 
-After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  
-This guide will show you how to create a PR to apply your changes to the actual wiki.
+创建或修改完了所有内容后,，你需要将修改后的内容提交到原仓库。  
+本指南将向你展示如何创建 PR 以将你的更改应用于实际的 wiki。
 
-A Pull Request (or PR for short) allows you to apply your commits to the original codebase.  
-In other words, it allows you to make your changes visible to everyone visiting the wiki.
+Pull Request（简称 PR）允许你将更改应用与原始的代码库中。  
+换句话说，它允许任何浏览此 wiki 的人看到你的更改。
 
-## Opening the Pull Request
+## 提交 Pull Request
 
-When you head back to your fork's GitHub page, you will notice the branch info bar.  
-This bar tells you how your fork version differs from the original one.
+当你完成更改并返回复制的仓库页面时，你会看到你的分支信息栏。  
+此栏将告诉你你复制的仓库与原仓库的区别。
 
 For example, the picture below has three commits that have not yet been applied to the CrT-wiki whereas three other commits have been created in the original one that have not been applied to the fork.
 
