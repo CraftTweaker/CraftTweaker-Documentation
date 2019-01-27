@@ -5,8 +5,8 @@
 ## Crafttweaker 兼容
 
 星辉魔法自带 crafttweaker 兼容。  
-这意味着这些函数的问题应在[星辉魔法的 issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues)上提交。
+这意味着这些方法的问题应在[星辉魔法的 issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues)上提交。
 
-## Removed Crafttweaker methods
+## 已移除的 Crafttweaker 方法
 
-- Astras Sorcery's Crafttweaker integration once featured a Mineralis Ritual. This is now handled by a config option!
+- 星辉魔法的Crafttweaker兼容曾经兼容Mineralis（晶金座）仪式。 不过现在要通过配置文件修改！
