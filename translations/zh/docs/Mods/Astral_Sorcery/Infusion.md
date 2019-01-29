@@ -25,6 +25,6 @@ mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 //output 输出
 //comsumeMultiple 是否消耗多格星能液
 //consumptionChance 消耗星能液的概率
-//craftingTickTime 合成
+//craftingTickTime 合成所需时间（刻）
 mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
 ```
