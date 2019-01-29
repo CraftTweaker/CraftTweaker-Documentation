@@ -8,7 +8,7 @@
 
 ## 移除配方
 
-这个方法移除第一个`输出`为传入的物品堆[（IItemStack）](/Vanilla/Items/IItemStack/)的砂轮配方。   
+此方法将移除第一个`输出`为传入的物品堆[（IItemStack）](/Vanilla/Items/IItemStack/)的砂轮配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
 ```JAVA
