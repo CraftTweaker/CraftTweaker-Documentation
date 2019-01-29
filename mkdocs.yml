@@ -661,6 +661,9 @@ pages:
       - Item Liquefier: 'Mods/PoweredThingies/ItemLiquefierTweaker.md'
       - Powder Maker: 'Mods/PoweredThingies/PowderMakerTweaker.md'
       - Powered Kiln: 'Mods/PoweredThingies/PoweredKilnTweaker.md'
+    - ProjectE:
+      - Entity Randomizer: 'Mods/ProjectE/EntityRandomizer.md'
+      - World Transmutation: 'Mods/ProjectE/WorldTransmutation.md'
     - Rocky Core:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
