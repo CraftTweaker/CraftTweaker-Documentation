@@ -8,8 +8,8 @@
 
 ## 移除祭坛配方
 
-这个方法移除传入的 resource location 的配方。  
-你可以用以下方法获取它的 resource location ：在开启 F3 屏幕的情况下鼠标悬浮在 JEI 或星空日记中的物品图标上。  
+此方法将移除 resource location 为指定 resource location 的配方。  
+你可以用以下方法获取配方的 resource location ：在开启 F3 屏幕的情况下鼠标悬浮在 JEI 或星空日记中的物品图标上。  
 如果配方不存在则打印错误信息。
 
     //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
@@ -20,7 +20,7 @@
 
 <details><summary>1.10 版本之前的处理器</summary>
 
-这个方法移除第一个在传入的祭坛等级下`输出`为传入的物品堆[（IItemStack）](../../../Vanilla/Items/IItemStack/)的配方。   
+这个方法将移除第一个在传入的祭坛等级下`输出`为传入的物品堆[（IItemStack）](../../../Vanilla/Items/IItemStack/)的配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
 <table>
