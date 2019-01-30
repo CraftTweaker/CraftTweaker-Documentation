@@ -13,7 +13,7 @@
 ```
 mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
 
-mods.enderio.CombustionGen.addFuel(<minecraft:lava>, 25, 40>]);
+mods.enderio.CombustionGen.addFuel(<liquid:lava>, 25, 40);
 ```
 
 ## Add Coolant
