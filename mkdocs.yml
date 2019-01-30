@@ -408,7 +408,7 @@ pages:
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
-        - Alloy Smelter  'Mods/Ender_Tweaker/Alloy_Smelter.md'
+        - Alloy Smelter:  'Mods/Ender_Tweaker/Alloy_Smelter.md'
         - Combustion Generator 'Mods/Ender_Tweaker/Combustion_Generator.md'
         - Enchanter  'Mods/Ender_Tweaker/Enchanter.md'
         - SAG Mill 'Mods/Ender_Tweaker/SAG_Mill.md'
