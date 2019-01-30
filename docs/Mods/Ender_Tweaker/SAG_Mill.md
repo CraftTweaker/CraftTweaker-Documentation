@@ -14,7 +14,7 @@
 ```
 mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 
-mods.enderio.SagMill.addRecipe([<minecraft:planks> * 5, <minecraft:stick> * 2], [100, 25], <minecraft:log>, NONE, 200, 0);
+mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 ## Removal
 ```
