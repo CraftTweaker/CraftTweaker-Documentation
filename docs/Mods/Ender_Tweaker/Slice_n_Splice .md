@@ -5,7 +5,7 @@
 ## Methods
 **- IItemStack output** The result of the recipe.
 
-**- IIngredient[] input** The ingredients. Must be between 1 and 6 ingredients.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
 
 **- int energyCost** How much FE the recipe uses. Defaults to 5000.
 
