@@ -409,12 +409,12 @@ pages:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
         - Alloy Smelter:  'Mods/Ender_Tweaker/Alloy_Smelter.md'
-        - Combustion Generator 'Mods/Ender_Tweaker/Combustion_Generator.md'
+        - Combustion Generator: 'Mods/Ender_Tweaker/Combustion_Generator.md'
         - Enchanter:  'Mods/Ender_Tweaker/Enchanter.md'
         - SAG Mill: 'Mods/Ender_Tweaker/SAG_Mill.md'
-        - Slice n Spice 'Mods/Ender_Tweaker/Slice_n_Splice .md'
-        - Soul Binder  'Mods/Ender_Tweaker/Soul_Binder.md'
-        - The Vat 'Mods/Ender_Tweaker/The_Vat.md'
+        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice .md'
+        - Soul Binder:  'Mods/Ender_Tweaker/Soul_Binder.md'
+        - The Vat: 'Mods/Ender_Tweaker/The_Vat.md'
     - Extra Utilities 2:
       - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
       - InterModCommsHandler: 'Mods/ExtraUtilities2/InterModCommsHandler.md'
