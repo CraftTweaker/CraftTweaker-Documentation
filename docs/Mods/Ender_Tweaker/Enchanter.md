@@ -1,6 +1,6 @@
 # Enchanter
 ## Package
-`mods.enderio.Enchanter`
+`import mods.enderio.Enchanter;`
 
 ## Methods
 **- IEnchantmentDefinition output** The output enchantment.
