@@ -6,7 +6,7 @@
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel** The fluid fuel to add.
 - **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
 - **int totalBurnTime** Total burn time of one bucket of fuel.
-- **ILiquidStack coolant** The fluid coolant to add.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) coolant** The fluid coolant to add.
 - **float degreesCoolingPerMB** How much heat in the generator can one mB of the added coolant absorb until it heats up all the way?
 
 ## Add Fuel
