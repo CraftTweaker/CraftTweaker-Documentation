@@ -1,6 +1,6 @@
 # Soul Binder
 ## Package
-`mods.enderio.SoulBinder`
+`import mods.enderio.SoulBinder;`
 
 ## Method
 - **IItemStack output** The result of the recipe.
