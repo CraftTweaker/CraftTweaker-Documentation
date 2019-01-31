@@ -7,7 +7,7 @@
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input fluid (left tank).
 
-**IIngredient[] slot1Solids** - Items that can go in slot 1.
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot1Solids** - Items that can go in slot 1.
 
 **float[] slot1Mults** - The multipliers for the items in slot 1. Must be the same length as slot1Solids.
 
