@@ -5,7 +5,7 @@
 ## Methods
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
-**- IIngredient input** The item that it used to make this enchantment.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
 
 **- int amountPerLevel** The number of input items per level of enchantment.
 
