@@ -35,5 +35,5 @@ mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
 ```
 mods.enderio.AlloySmelter.removeCoolant(ILiquidStack coolant);
 
-mods.enderio.AlloySmelter.removeCoolant(minecraft:water);
+mods.enderio.AlloySmelter.removeCoolant(<liquid:water>);
 ```
