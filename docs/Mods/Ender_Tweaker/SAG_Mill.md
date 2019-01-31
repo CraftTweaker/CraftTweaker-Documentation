@@ -1,6 +1,6 @@
 # SAG Mill
 ## Package
-`mods.enderio.SagMill`
+`import mods.enderio.SagMill;`
 
 ## Methods
 - **IItemStack[] output** The results of the recipe.
