@@ -3,7 +3,7 @@
 `import mods.enderio.SagMill;`
 
 ## Methods
-- **IItemStack[] output** The results of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
 - **float[] chances** The chance that this item appears. Must have the same length as output.
 - **IIngredient input** The input.
 - **String bonusType** This impacts how Grinding Balls work. May be NONE (no bonus), MULTIPLY_OUTPUT (can increase chance > 1.0), and CHANCE_ONLY (caps chance at 1.0).
