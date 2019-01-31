@@ -5,7 +5,7 @@
 ## Method
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
-**ILiquidStack input** - The input fluid (left tank).
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input fluid (left tank).
 
 **IIngredient[] slot1Solids** - Items that can go in slot 1.
 
