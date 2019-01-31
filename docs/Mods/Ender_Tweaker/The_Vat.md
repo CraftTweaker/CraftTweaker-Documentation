@@ -11,7 +11,7 @@
 
 **float[] slot1Mults** - The multipliers for the items in slot 1. Must be the same length as slot1Solids.
 
-**IIngredient[] slot2Solids** - Items that can go in slot 2.
+**[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] slot2Solids** - Items that can go in slot 2.
 
 **float[] slot2Mults** - The multipliers for the items in slot 2. Must be the same length as slot2Solids.
 
