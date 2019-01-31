@@ -26,9 +26,9 @@
 
 往圣杯交互配方中添加一个流体交互配方
 
-[FluidStack](/Vanilla/Liquids/ILiquidStack/) amounts count as the amount of liquid that will be consumed if an interaction occurs.  
-chance1 and chance2 define the chances the input fluids input1 and input2 are consumed respectively.  
-weight determines how likely this is to be selected in comparison to the other liquid interactions registered for a given pair of fluid-inputs
+[流体堆](/Vanilla/Liquids/ILiquidStack/)的数量表示每次交互消耗的流体数量。  
+chance1 和 chance2 分别表示两种输入的流体 liquidln1 和 liquidln2 消耗的概率  
+weight（权重）决定了在输入的两种流体相同的情况时交互得到此物品的概率
 
     //LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight, IItemStack output);
     LiquidInteraction.addInteraction(<liquid:lava> * 10, 0.1, <liquid:water> * 90, 0.2, 400, <minecraft:diamond>);
