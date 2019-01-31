@@ -3,7 +3,7 @@
 `mods.enderio.Vat`
 
 ## Method
-**ILiquidStack output** - The output fluid (right tank).
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
 **ILiquidStack input** - The input fluid (left tank).
 
