@@ -3,7 +3,7 @@
 `import mods.enderio.SoulBinder;`
 
 ## Method
-- **IItemStack output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **IIngredient input** The main (non-soul vial) ingredient.
 - **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
 - **int 
