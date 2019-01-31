@@ -3,7 +3,7 @@
 `import mods.enderio.Enchanter;`
 
 ## Methods
-**- IEnchantmentDefinition output** The output enchantment.
+**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
 **- IIngredient input** The item that it used to make this enchantment.
 
