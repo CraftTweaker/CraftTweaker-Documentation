@@ -1,6 +1,6 @@
-# ZenClasses
+# Zen类（ZenClasses）
 
-I am putting this here so only those who want to know at least some things on ZS will find it.
+我把这些放在这里，所以那些想用 ZenScript 使用它们的人可以找到。
 
 A ZenClass is essentially a java class but you can define it from within ZS.  
 If you think 'That does not really fit the theme of a scripting language' you are right.  
