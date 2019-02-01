@@ -24,7 +24,7 @@ pages:
       - 模组加载: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - 不执行: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
       - 优先级: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
+  - 提示与技巧:
       - Foreword: 'Tips_Tricks/Foreword.md'
       - Items:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
