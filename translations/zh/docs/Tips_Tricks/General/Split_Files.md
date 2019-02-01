@@ -1,39 +1,39 @@
-# Split your scripts into multiple files
+# 把你的脚本拆分成多个文件
 
-It is a good idea to split your script into multiple files
+把你的脚本拆分成多个文件是一个好习惯。
 
-## Problem
+## 问题
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- 当为编写大型整合包的脚本时，你的脚本可能会变得复杂而又冗长
+- 调试冗长的脚本需要大量时间，尤其是当你得到没有指明所在行的错误信息时。
 
-## What we know/need to know
+## 我们需要/应该知道的事情
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweaker 可以载入多个脚本文件
+- CraftTweaker 甚至可以载入子目录中的脚本文件
+- 另外，只要 .zip 文件没有设定密码，CraftTweaker 还可以载入其中包含的 .zs 脚本。
 
-## Solution
+## 解决方法
 
-- Split your large scripts into multiple smaller ones.
+- 把你的大脚本拆分成多个小脚本。
 - You could for example create one script for each mod, or each mod handler.
 
-## Example
+## 例子
 
     scripts
-        thermalExpansion
-            Compactor.zs
-            Crucible.zs
-        Vanilla
-            Recipes
-                Remove.zs
-                Shaped.zs
-                Shapeless.zs
-            Seeds.zs
-        oreDict.zs
+        热力膨胀
+            压缩机.zs
+            熔岩炉.zs
+        原版
+            合成
+                移除配方.zs
+                有序配方.zs
+                无序配方.zs
+            种子掉落.zs
+        矿物词典.zs
     
 
-## Advantages
+## 优点
 
 - Your script files become easier to debug.
 - An error won't stop your whole script from working but instead only a small part of it.
