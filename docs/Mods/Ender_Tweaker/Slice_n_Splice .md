@@ -1,6 +1,6 @@
 # Slice 'n' Splice
 ## Package
-`mods.enderio.SliceNSplice`
+`import mods.enderio.SliceNSplice;`
 
 ## Methods
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.

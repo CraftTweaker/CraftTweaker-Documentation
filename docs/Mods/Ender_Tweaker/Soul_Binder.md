@@ -8,6 +8,7 @@
 - **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
 - **int xp** The Experience cost for this recipe
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
+
 ## Addition
 ```
 mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);

@@ -1,6 +1,6 @@
 # The Vat
 ## Package
-`mods.enderio.Vat`
+`import mods.enderio.Vat;`
 
 ## Method
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
