@@ -6,7 +6,7 @@
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
 - **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
-- **int 
+- **int xp** The Experience cost for this recipe
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 ## Addition
 ```
