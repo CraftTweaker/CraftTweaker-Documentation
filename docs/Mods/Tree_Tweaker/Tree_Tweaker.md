@@ -55,7 +55,8 @@ Makes tree trunk generate as 2x2 thick. Only valid on LARGE_OAK, PINE, CANOPY, a
 `newtree.extraThick=true;`
 
 #### newtree.setGenBiome("string:string"); 
-set the biome of spawning    
+Set the biome of spawning, ignoring typical biome rules.  
+If not set, the tree will generate in all biomes that normally contain trees.  
 `newtree.setGenBiome("minecraft:plains")`
 
 #### newtree.setGenBiomeByTag("STRING");
