@@ -11,7 +11,7 @@
  
 ## Addition
 ```
-mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] outputs, ILiquidStack input, ILiquidStack input, int power, @Optional int time;
+mods.ic2.Electrolyzer.addRecipe(ILiquidStack[] outputs, ILiquidStack input, int power, @Optional int time);
 
 mods.ic2.Electrolyzer.addRecipe([<liquid:lava> * 1000, <liquid:water> * 500, null, null, null, null], <liquid:water> * 1000, 30);
 ```

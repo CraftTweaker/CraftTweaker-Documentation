@@ -4,13 +4,13 @@
 `import mods.ic2.Extractor;`
 
 ## Methods
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output**
+- **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ## Addition
 
 ```
-mods.ic2.Extractor.addRecipe(IItemStack output, IItemStack input);
+mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.Extractor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```

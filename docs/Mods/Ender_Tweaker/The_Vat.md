@@ -27,5 +27,5 @@ mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_
 ```
 mods.enderio.Vat.removeRecipe(ILiquidStack output);
 
-mods.enderio.Vat.removeRecipe(<enderio:ender_distillation>);
+mods.enderio.Vat.removeRecipe(<liquid:ender_distillation>);
 ```
