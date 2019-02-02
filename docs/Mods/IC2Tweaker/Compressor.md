@@ -10,7 +10,7 @@
 ## Addition
 
 ```
-mods.ic2.Compressor.addRecipe(IItemStack output, IItemStack input);
+mods.ic2.Compressor.addRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.Compressor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 ```
