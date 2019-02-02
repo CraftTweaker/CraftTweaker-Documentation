@@ -407,6 +407,14 @@ pages:
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
+    - Ender Tweaker:
+        - Alloy Smelter:  'Mods/Ender_Tweaker/Alloy_Smelter.md'
+        - Combustion Generator: 'Mods/Ender_Tweaker/Combustion_Generator.md'
+        - Enchanter:  'Mods/Ender_Tweaker/Enchanter.md'
+        - SAG Mill: 'Mods/Ender_Tweaker/SAG_Mill.md'
+        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice .md'
+        - Soul Binder:  'Mods/Ender_Tweaker/Soul_Binder.md'
+        - The Vat: 'Mods/Ender_Tweaker/The_Vat.md'
     - Extra Utilities 2:
       - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
       - InterModCommsHandler: 'Mods/ExtraUtilities2/InterModCommsHandler.md'
@@ -433,6 +441,22 @@ pages:
       - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
       - Machines: 'Mods/GregTechCE/Machines.md'
       - Material: 'Mods/GregTechCE/Material.md'
+    - IC2 Tweaker:
+      - Blast Furnace: 'Mods/IC2Tweaker/Blast_Furnace.md'
+      - Block Cutter: 'Mods/IC2Tweaker/Block_Cutter.md'
+      - Canner: 'Mods/IC2Tweaker/Canner.md'
+      - Compressor: 'Mods/IC2Tweaker/Compressor.md'
+      - Electrolyzer: 'Mods/IC2Tweaker/Electrolyzer.md'
+      - Extractor: 'Mods/IC2Tweaker/Extractor.md'
+      - Fermenter: 'Mods/IC2Tweaker/Fermenter.md'
+      - Heat Exchanger: 'Mods/IC2Tweaker/Heat_Exchanger.md'
+      - Macerator: 'Mods/IC2Tweaker/Macerator.md'
+      - Metal Former: 'Mods/IC2Tweaker/Metal_Former.md'
+      - Ore Washer: 'Mods/IC2Tweaker/Ore_Washer.md'
+      - Recycler: 'Mods/IC2Tweaker/Recycler.md'
+      - Scrap Box: 'Mods/IC2Tweaker/Scrap_Box.md'
+      - Semi-Fluid Generator: 'Mods/IC2Tweaker/Semi-Fluid_Generator.md'
+      - Thermal Centrifuge: 'Mods/IC2Tweaker/ThermalCentrifuge.md'
     - Immersive Engineering: 
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
@@ -685,6 +709,8 @@ pages:
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Tree Tweaker:
+      - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
   - 如何参与贡献: 
     - 如何复制这个项目: 'Contribute/SetupGithub.md'
     - 如何在线编辑文档: 'Contribute/OnlineEditor_Edit.md'
