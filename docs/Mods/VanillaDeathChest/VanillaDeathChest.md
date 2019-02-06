@@ -15,3 +15,7 @@ and CraftTweaker to make accessing death chests more difficult for players as th
 If any properties are not set via CraftTweaker, the values set in the global configuration are
 used. Game stages should be defined in order. Calling any of the VanillaDeathChest functions
 causes the specified stage to be defined if it has not been already.
+
+Any messages that take arguments, such as the unlock failed chat message, follow
+[this](https://dzone.com/articles/java-string-format-examples) format. For example,
+`%2$s` refers to the second argument.

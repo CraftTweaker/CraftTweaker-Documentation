@@ -6,9 +6,9 @@
 ## Unlocker item
 ```
 //DeathChestDefense.setUnlocker(string stage, IItemStack unlocker);
-DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe>);
+DeathChestDefense.setUnlocker("example_stage", <minecraft:diamond_axe> * 1000);
 ```
-A consumption/damage amount can also be set.
+A consumption/damage amount can be set by specifying a stack size like above.
 
 ## Damage the unlocker item rather than consuming it
 ```
@@ -19,7 +19,7 @@ DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ## Unlock failed chat message
 ```
 //DeathChestDefense.setUnlockFailedChatMessage(string stage, string message);
-DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$ to unlock your chest!");
+DeathChestDefense.setUnlockFailedChatMessage("example_stage", "You need to get a %2$s to unlock your chest!");
 ```
 The string takes two arguments: the amount and display name of the required items.
 
