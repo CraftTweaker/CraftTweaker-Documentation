@@ -12,7 +12,7 @@ A consumption/damage amount can be set by specifying a stack size like above.
 
 ## Damage the unlocker item rather than consuming it
 ```
-DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
+//DeathChestDefense.setDamageUnlockerInsteadOfConsume(string stage, bool flag);
 DeathChestDefense.setDamageUnlockerInsteadOfConsume("example_stage", true);
 ```
 
