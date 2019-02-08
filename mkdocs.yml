@@ -629,12 +629,12 @@ pages:
         - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
       - Thermal Expansion:
         - Dynamos:
-          - Compression Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/CompressionDynamo.md'
-          - Enervation Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/EnervationDynamo.md'
-          - Magmatic Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/MagmaticDynamo.md'
-          - Numistic Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/NumisticDynamo.md'
-          - Reactant Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/ReactantDynamo.md'
-          - Steam Dynamo: 'Mods/ModTweaker/ThermalExpansion/Dynamos/SteamDynamo.md'
+          - Compression Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/CompressionDynamo.md'
+          - Enervation Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/EnervationDynamo.md'
+          - Magmatic Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/MagmaticDynamo.md'
+          - Numistic Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/NumisticDynamo.md'
+          - Reactant Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/ReactantDynamo.md'
+          - Steam Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/SteamDynamo.md'
         - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
         - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
         - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
