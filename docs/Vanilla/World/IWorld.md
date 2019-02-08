@@ -75,3 +75,14 @@ Returns a bool that states if the spawn was successful.
 ```
 worldObj.spawnEntity(IEntity entity);
 ```
+
+### Get a raytrace result  
+Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
+**Can be null**
+
+The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
+Only the last parameter is true by default.
+
+```
+worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```
