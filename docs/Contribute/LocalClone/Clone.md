@@ -7,7 +7,7 @@ This page shows you how to clone your forked repository to your local computer.
 
 ## Prerequisites
 
-You should have [Forked the CrT-wiki repository](/Contribute/SetupGithub/) and you need to have [Git installed](/Constribute/LocalClone/InstallingGit/).
+You should have [Forked the CrT-wiki repository](/Contribute/SetupGithub/) and you need to have [Git installed](/Contribute/LocalClone/InstallingGit/).
 
 ## First steps
 
