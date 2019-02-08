@@ -30,8 +30,9 @@ var Iron = Excavator.getMineral("Iron_Ore");
 |Required  |Chance               |Double     |
 
 ```
-mineralMixObject.addOre("minecraft:iron_ore", 0.5);
+mineralMixObject.addOre("oreIron", 0.5);
 ```
+You will need to use the oredict names.
 
 ## Remove Ore
 
@@ -40,7 +41,7 @@ mineralMixObject.addOre("minecraft:iron_ore", 0.5);
 |Required  |Ore                  |String     |
 
 ```
-mineralMixObject.removeOre("minecraft:iron_ore");
+mineralMixObject.removeOre("oreIron");
 ```
 
 ##Fail Chance Getter/Setter
