@@ -42,4 +42,4 @@
 ## 缺点
 
 - 你需要注意脚本的加载顺序（尤其是一个脚本需要使用另一个脚本中所添加物品的时候）。 如果遇到加载顺序问题，请参考[优先级预处理器](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/)
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- 有很多方法可以对脚本进行分类，因而你的脚本可能会让外人感到困惑。
