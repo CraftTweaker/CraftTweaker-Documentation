@@ -35,9 +35,9 @@
 
 ## 优点
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+- 脚本文件变得更易于调试。
+- 一个错误无法阻止整个脚本工作，而仅仅会影响一小部分。
+- 查看你的脚本的用户能够快捷找到特定语句的位置。
 
 ## Disadvantages
 
