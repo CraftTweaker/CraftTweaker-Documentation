@@ -36,10 +36,10 @@
 ## 优点
 
 - 脚本文件变得更易于调试。
-- 一个错误无法阻止整个脚本工作，而仅仅会影响一小部分。
-- 查看你的脚本的用户能够快捷找到特定语句的位置。
+- 一个错误只会导致某一个部分无法加载，不会影响到整个脚本。
+- 查看你的脚本的用户能够快捷找到特定语句的位置
 
-## Disadvantages
+## 缺点
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
+- 你需要注意脚本的加载顺序（尤其是一个脚本需要使用另一个脚本中所添加物品的时候）。 如果遇到加载顺序问题，请参考[优先级预处理器](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/)
 - There are many ways to categorize your scripts after and yours may be confusing for outsiders.
