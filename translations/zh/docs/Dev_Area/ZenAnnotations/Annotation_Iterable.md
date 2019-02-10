@@ -7,7 +7,7 @@ There are three kinds of IterableAnnotations:
 - `@IterableList` (needs to implement `List`)
 - `@IterableMap` (needs to implement `Map`)
 
-## Example
+## 比如：
 
 [CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
