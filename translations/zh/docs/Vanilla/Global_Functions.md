@@ -1,18 +1,18 @@
 # 全局函数
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
-Here's the list:
+全局函数是可以不使用[imported](/AdvancedFunctions/Import/)关键字的情况下调用的函数.  
+列表如下
 
 ## print
 
-Prints the string to the crafttweaker log as information.
+将字符串信息打印到CraftTweaker的日志中。
 
 ```java
 //print(String message);
 print("Hello World!");
 ```
 
-Returns nothing
+不返回任何内容
 
 ## totalActions
 
@@ -21,7 +21,7 @@ Returns nothing
 totalActions();
 ```
 
-Returns an int that shows how many global functions are registered.
+返回一个int，显示注册了多少个全局函数。
 
 ## enableDebug
 
