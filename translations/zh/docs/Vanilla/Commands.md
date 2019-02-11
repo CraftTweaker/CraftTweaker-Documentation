@@ -182,8 +182,8 @@ Description:
 * creativetabs 创造模式中物品所在的列表
 * damageable 是否有耐久
 * display 显示所有的物品的信息
-* maxdamage
-* maxstack
+* maxdamage 最大耐久
+* maxstack 最大堆叠
 * maxuse
 * modid
 * rarity
