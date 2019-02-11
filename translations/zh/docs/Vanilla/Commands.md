@@ -38,19 +38,19 @@ Crafttweaker添加了一些命令, 这些命令将帮助您创建脚本, 这些�
 
 说明:
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+启用或禁用方块读取。 在启用方块信息模式下，右键点击方块，将输出方块的名称、元数据和Tile实体数据。
 
-## Blocks
+## 所有的方块信息
 
-Usage:
+用法：
 
 `/crafttweaker blocks`
 
 `/ct blocks`
 
-Description:
+说明:
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+将游戏中所有的方块名称输出到crafttweaker.log文件中
 
 ## Bugs
 
