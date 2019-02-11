@@ -1,4 +1,4 @@
-# Global Functions
+# 全局函数
 
 Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
 Here's the list:
