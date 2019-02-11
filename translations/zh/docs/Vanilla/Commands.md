@@ -277,7 +277,7 @@ Usage:
 
 Description:
 
-读取所有脚本，并输出在语法中发现的所有错误。 Note that this won't apply your script changes, you need to restart your game to see them in effect.
+读取所有脚本，并输出在语法中发现的所有错误。 请注意，这不会应用您的脚本更改，您需要重新启动游戏才能看到它们生效。
 
 ## Wiki
 
