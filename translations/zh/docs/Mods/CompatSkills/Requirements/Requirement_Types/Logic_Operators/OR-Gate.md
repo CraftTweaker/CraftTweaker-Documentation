@@ -1,10 +1,10 @@
-# OR Operator
+# 或运算符
 
-An **OR** gate combines two inputs and returns `TRUE` if at least one of the inputs is also `TRUE`.
+**OR** 门, 只要两个输入中有一个输入为`TRUE`，输出就为`TRUE`
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      1 |
+| 输入1 | 输入2 | 输出 |
+| --- | --- | --:|
+| 0   | 0   |  0 |
+| 0   | 1   |  1 |
+| 1   | 0   |  1 |
+| 1   | 1   |  1 |
