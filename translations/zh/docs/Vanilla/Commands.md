@@ -176,12 +176,12 @@ Usage:
 
 Description:
 
-将游戏中所有项目的列表输出到craftweaker.log文件。  
+将游戏中所有物品按照category参数输出到craftweaker.log文件。  
 `category`参数是可选的，将使用相应的信息扩展列表：
 
-* creativetabs创造模式中物品所在的列表
-* damageable
-* display
+* creativetabs 创造模式中物品所在的列表
+* damageable 是否有耐久
+* display 显示所有的物品的信息
 * maxdamage
 * maxstack
 * maxuse
@@ -191,7 +191,7 @@ Description:
 * repaircost
 * unloc
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+您也可以通过TAB按键自动匹配功能查看所有可用的参数。
 
 ## OreDict
 
