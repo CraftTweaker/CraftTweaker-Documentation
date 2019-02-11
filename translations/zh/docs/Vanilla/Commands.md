@@ -1,42 +1,42 @@
-# Commands
+# 命令
 
-Crafttweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+Crafttweaker添加了一些命令, 这些命令将帮助您创建脚本, 这些命令旨在帮助减少编写脚本的开发时间。
 
-The prefix for commands are: `/crafttweaker` or `/ct`
+命令的前缀是： `/crafteraker` 或 `/ct`
 
-You can also use one of these aliases: `/minetweaker` or `/mt`
+您也可以使用这些别名： `/mineraker` 或 `/mt`
 
-All the commands can be found ingame by doing:
+游戏中的所有命令都可以通过以下方式找到:
 
 `/crafttweaker help`
 
-or
+或者
 
 `/ct help`
 
-# List of commands
+# 命令列表
 
-## Biomes
+## 生物群落
 
-Usage:
+用法：
 
 `/crafttweaker biomes`
 
 `/ct biomes`
 
-Description:
+说明:
 
-Lists all of the biomes that are in the game.
+列出游戏中的所有生物群落。
 
 ## BlockInfo
 
-Usage:
+用法：
 
 `/crafttweaker blockinfo`
 
 `/ct blockinfo`
 
-Description:
+说明:
 
 Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
 
