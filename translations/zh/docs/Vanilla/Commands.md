@@ -126,11 +126,11 @@ Usage:
 
 Description:
 
-Prints the name of the item in your hand to the chat.
+将手中的物品信息输出到聊天栏中。
 
-Also copies the name to clipboard and prints oredict entries.
+也可以将物品名称复制到剪切板，并且输出物品的矿物词典条目.
 
-## Inventory
+## 物品栏
 
 Usage:
 
@@ -140,9 +140,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+将玩家背包中所有的物品信息输出到crafttweaker.log文件中。包括身上的装备栏。
 
-## Liquids
+## 液体:
 
 Usage:
 
@@ -152,7 +152,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+将游戏中所有的液体信息输出到crafttweaker.log文件中
 
 ## Mods
 
@@ -164,7 +164,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+将所有模组的列表及其游戏中的版本输出到crafttweaker.log文件和聊天栏中。
 
 ## Names
 
@@ -176,10 +176,10 @@ Usage:
 
 Description:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+将游戏中所有项目的列表输出到craftweaker.log文件。  
+`category`参数是可选的，将使用相应的信息扩展列表：
 
-* creativetabs
+* creativetabs创造模式中物品所在的列表
 * damageable
 * display
 * maxdamage
