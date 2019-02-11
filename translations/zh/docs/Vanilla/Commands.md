@@ -186,8 +186,8 @@ Description:
 * maxstack 最大堆叠
 * maxuse
 * modid
-* rarity
-* repairable
+* rarity 稀有度
+* repairable 是否可修复
 * repaircost
 * unloc
 
