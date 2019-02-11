@@ -25,15 +25,15 @@ totalActions();
 
 ## enableDebug
 
-Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
+启用调试模式。  
+推荐使用[Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/)
 
 ```java
 //enableDebug();
 enableDebug();
 ```
 
-Returns nothing
+不返回任何内容
 
 ## isNull
 
@@ -72,7 +72,7 @@ Returns an int
 pow(2.0, 4.0);
 ```
 
-Returns a double
+返回double型数据
 
 ## Global Fields
 
