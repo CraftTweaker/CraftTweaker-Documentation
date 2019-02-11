@@ -229,7 +229,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+将游戏中所有的合成表信息输出到crafttweaker.log文件中
 
 ## Recipes (Hand)
 
@@ -241,7 +241,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+输出游戏中玩家手上物品的所有制作配方列表到crafttweaker.log文件和聊天栏中
 
 ## Recipes (Furnace)
 
@@ -253,7 +253,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+将游戏中所有熔炉配方的列表输出到craftweaker.log文件。
 
 ## Seeds
 
@@ -277,7 +277,7 @@ Usage:
 
 Description:
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+读取所有脚本，并输出在语法中发现的所有错误。 Note that this won't apply your script changes, you need to restart your game to see them in effect.
 
 ## Wiki
 
