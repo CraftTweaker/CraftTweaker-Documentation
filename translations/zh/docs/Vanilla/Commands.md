@@ -64,7 +64,7 @@ Description:
 
 Opens your browser with the GitHub bug tracker.
 
-## Conflict
+## 合成表冲突
 
 Usage:
 
@@ -74,8 +74,8 @@ Usage:
 
 Description:
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+将所有相互冲突的合成表配方的列表输出crafttweaker.log文件中   
+请注意, 这只适用于安装了 jei 的客户端!
 
 ## Discord
 
@@ -100,11 +100,11 @@ Usage:
 Description:
 
 Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-Alternatively, you can provide a filepath to tell CT where to generate the dump. The Path can either be absolute or relative to your Minecraft root folder.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+Alternatively, you can provide a filepath to tell CT where to generate the dump. 路径可能是绝对的，或者相对于您的 Minecraft 根目录。  
+将包括所有注册的 Bratcket Handers, ZenType, 全局函数, Zennexands 和所有已注册的包，包括它们的方法。  
+注意，并非所有这些都可以在脚本中使用！
 
-## Entities
+## 实体
 
 Usage:
 
