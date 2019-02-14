@@ -54,7 +54,7 @@ Crafttweaker添加了一些命令, 这些命令将帮助您创建脚本, 这些�
 
 ## Bugs
 
-Usage:
+用法：
 
 `/crafttweaker bugs`
 
@@ -66,7 +66,7 @@ Opens your browser with the GitHub bug tracker.
 
 ## 合成表冲突
 
-Usage:
+用法：
 
 `/crafttweaker conflict`
 
@@ -79,7 +79,7 @@ Description:
 
 ## Discord
 
-Usage:
+用法：
 
 `/crafttweaker discord`
 
@@ -243,7 +243,7 @@ Description:
 
 输出游戏中玩家手上物品的所有制作配方列表到crafttweaker.log文件和聊天栏中
 
-## Recipes (Furnace)
+## 配方（熔炉）
 
 Usage:
 
@@ -281,7 +281,7 @@ Description:
 
 ## Wiki
 
-Usage:
+用法：
 
 `/crafttweaker wiki`
 
