@@ -1,12 +1,12 @@
 # 括号处理器
 
-A bracket handler is used to resolve [ZenTokens](/Dev_Area/ZenTokens/) inside `<tokens>`.  
-In order to do that, ZS will add all tokens inside the brackets to a list and go through all registered bracket handlers to find one that does not return `null`.  
-The annotated class simply need to implement [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
+括号处理器是用于解决 `<tokens>` 内部的 [ZenTokens](/Dev_Area/ZenTokens/)。  
+为此，ZS 会将所有括号中的标记加入到一个列表中并将其经过所有已注册的括号处理器来寻找一个不返回 `null` 的处理器。  
+带注解的类只需要实现[IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java)。
 
 ## 比如：
 
-[CraftTweaker Test Project Bracket Handler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
+[CraftTweaker 测试项目括号处理器](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 
     @BracketHandler(priority = 34)
     @ZenRegister
@@ -41,7 +41,7 @@ The annotated class simply need to implement [IBracketHandler](https://github.co
     }
     
 
-## What classes can be annotated || Additional Info
+## 什么类可以被注解 || 额外信息
 
 - You can annotate all Java Classes that are an instance of [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
 - You can give the annotation a priority value (e.g. `priority = 100`). The higher the prio the earlier that specific bracket handler is checked: CrT Bracket Handlers normally have a priority of 100.
