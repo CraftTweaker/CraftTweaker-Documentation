@@ -20,5 +20,5 @@
 
 ## 什么类可以被注解 || 额外信息
 
-- 你可以注解所有的有 [`@ZenRegister` 的 Java 类。](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) Technically, you can register all classes, but only there it will have an impact.
-- The Annotation requires a String value that represents the modName (`isModLoaded(annotation.getValue())` has to return true of the mod is loaded)
+- 你可以注解所有的有 [`@ZenRegister` 的 Java 类。](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 技术上，你可以注册所有的类，但只有在那里它才能产生影响。
+- 注解需要一个表示 mod 名的字符串值(`isModLoaded(annotation.getValue())`当 mod 加载时返回 true)
