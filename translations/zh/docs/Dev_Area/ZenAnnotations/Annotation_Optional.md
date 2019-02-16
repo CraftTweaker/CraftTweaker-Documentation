@@ -28,11 +28,11 @@
     furnace.remove(output, input);
     
 
-## What values are inserted for omited parameters?
+## 省略的参数被插入了什么值？
 
-### Using only the annotation
+### 仅使用注解
 
-Inserted is either `0`, `false` or `null`, depending on the annotated Type:
+根据注解类型，被插入的是 `0`, `false` 或 `null`
 
 Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
 All Objects will be `null`
