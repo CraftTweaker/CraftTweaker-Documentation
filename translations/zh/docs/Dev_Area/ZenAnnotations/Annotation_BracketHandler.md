@@ -44,6 +44,6 @@
 ## 什么类可以被注解 || 额外信息
 
 - You can annotate all Java Classes that are an instance of [IBracketHandler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/IBracketHandler.java).
-- 你可以给注解传入优先级值(例: `priority = 100`)。 The higher the prio the earlier that specific bracket handler is checked: CrT Bracket Handlers normally have a priority of 100.
+- 你可以给注解传入优先级值(例: `priority = 100`)。 优先级越高检查特定括号处理器越早：CrT 括号处理器一般拥有100的优先级。
 - After declaring a class a ZenBracketHandler, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
 - If your bracket Handler cannot resolve the brackets or is not meant to resolve the bracket, you should return `null`
