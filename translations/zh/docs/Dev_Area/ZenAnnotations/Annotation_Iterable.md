@@ -52,5 +52,5 @@
 
 ## 什么类可以被注解 || 额外信息
 
-You can annotate all classes that implement the required interface.  
-You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+你可以注解所有实现了对应接口的类。  
+你需要提供一个字符串值以引用被遍历的[ZenScript的类名](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
