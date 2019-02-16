@@ -34,12 +34,12 @@
 
 根据注解类型，被插入的是 `0`, `false` 或 `null`
 
-Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
-All Objects will be `null`
+基本类型会是 `0` (除了布尔值，它会是 false，所以技术上 0 是最好的)  
+所有的对象都会是 `null`。
 
-### Using annotation members
+### 使用注解成员
 
-| Member      | Type            | Default value    |
+| 成员          | 类型              | 默认值              |
 | ----------- | --------------- | ---------------- |
 | value       | String          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
