@@ -1,4 +1,4 @@
-# BracketHandler
+# 括号处理器
 
 A bracket handler is used to resolve [ZenTokens](/Dev_Area/ZenTokens/) inside `<tokens>`.  
 In order to do that, ZS will add all tokens inside the brackets to a list and go through all registered bracket handlers to find one that does not return `null`.  
