@@ -1,60 +1,60 @@
-# Commands
+# 命令
 
-Crafttweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+Crafttweaker添加了一些命令, 这些命令将帮助您创建脚本, 这些命令旨在帮助减少编写脚本的开发时间。
 
-The prefix for commands are: `/crafttweaker` or `/ct`
+命令的前缀是： `/crafteraker` 或 `/ct`
 
-You can also use one of these aliases: `/minetweaker` or `/mt`
+您也可以使用这些别名： `/mineraker` 或 `/mt`
 
-All the commands can be found ingame by doing:
+游戏中的所有命令都可以通过以下方式找到:
 
 `/crafttweaker help`
 
-or
+或者
 
 `/ct help`
 
-# List of commands
+# 命令列表
 
-## Biomes
+## 生物群落
 
-Usage:
+用法：
 
 `/crafttweaker biomes`
 
 `/ct biomes`
 
-Description:
+说明:
 
-Lists all of the biomes that are in the game.
+列出游戏中的所有生物群落。
 
-## BlockInfo
+## 方块信息
 
-Usage:
+用法：
 
 `/crafttweaker blockinfo`
 
 `/ct blockinfo`
 
-Description:
+说明:
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+启用或禁用方块读取。 在启用方块信息模式下，右键点击方块，将输出方块的名称、元数据和Tile实体数据。
 
-## Blocks
+## 所有的方块信息
 
-Usage:
+用法：
 
 `/crafttweaker blocks`
 
 `/ct blocks`
 
-Description:
+说明:
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+将游戏中所有的方块名称输出到crafttweaker.log文件中
 
 ## Bugs
 
-Usage:
+用法：
 
 `/crafttweaker bugs`
 
@@ -64,9 +64,9 @@ Description:
 
 Opens your browser with the GitHub bug tracker.
 
-## Conflict
+## 合成表冲突
 
-Usage:
+用法：
 
 `/crafttweaker conflict`
 
@@ -74,12 +74,12 @@ Usage:
 
 Description:
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+将所有相互冲突的合成表配方的列表输出crafttweaker.log文件中   
+请注意, 这只适用于安装了 jei 的客户端!
 
 ## Discord
 
-Usage:
+用法：
 
 `/crafttweaker discord`
 
@@ -100,11 +100,11 @@ Usage:
 Description:
 
 Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-Alternatively, you can provide a filepath to tell CT where to generate the dump. The Path can either be absolute or relative to your Minecraft root folder.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+Alternatively, you can provide a filepath to tell CT where to generate the dump. 路径可能是绝对的，或者相对于您的 Minecraft 根目录。  
+将包括所有注册的 Bratcket Handers, ZenType, 全局函数, Zennexands 和所有已注册的包，包括它们的方法。  
+注意，并非所有这些都可以在脚本中使用！
 
-## Entities
+## 实体
 
 Usage:
 
@@ -126,11 +126,11 @@ Usage:
 
 Description:
 
-Prints the name of the item in your hand to the chat.
+将手中的物品信息输出到聊天栏中。
 
-Also copies the name to clipboard and prints oredict entries.
+也可以将物品名称复制到剪切板，并且输出物品的矿物词典条目.
 
-## Inventory
+## 物品栏
 
 Usage:
 
@@ -140,9 +140,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+将玩家背包中所有的物品信息输出到crafttweaker.log文件中。包括身上的装备栏。
 
-## Liquids
+## 液体:
 
 Usage:
 
@@ -152,7 +152,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+将游戏中所有的液体信息输出到crafttweaker.log文件中
 
 ## Mods
 
@@ -164,7 +164,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+将所有模组的列表及其游戏中的版本输出到crafttweaker.log文件和聊天栏中。
 
 ## Names
 
@@ -176,22 +176,22 @@ Usage:
 
 Description:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+将游戏中所有物品按照category参数输出到craftweaker.log文件。  
+`category`参数是可选的，将使用相应的信息扩展列表：
 
-* creativetabs
-* damageable
-* display
-* maxdamage
-* maxstack
+* creativetabs 创造模式中物品所在的列表
+* damageable 是否有耐久
+* display 显示所有的物品的信息
+* maxdamage 最大耐久
+* maxstack 最大堆叠
 * maxuse
 * modid
-* rarity
-* repairable
+* rarity 稀有度
+* repairable 是否可修复
 * repaircost
 * unloc
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+您也可以通过TAB按键自动匹配功能查看所有可用的参数。
 
 ## OreDict
 
@@ -229,7 +229,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+将游戏中所有的合成表信息输出到crafttweaker.log文件中
 
 ## Recipes (Hand)
 
@@ -241,9 +241,9 @@ Usage:
 
 Description:
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+输出游戏中玩家手上物品的所有制作配方列表到crafttweaker.log文件和聊天栏中
 
-## Recipes (Furnace)
+## 配方（熔炉）
 
 Usage:
 
@@ -253,7 +253,7 @@ Usage:
 
 Description:
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+将游戏中所有熔炉配方的列表输出到craftweaker.log文件。
 
 ## Seeds
 
@@ -277,11 +277,11 @@ Usage:
 
 Description:
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+读取所有脚本，并输出在语法中发现的所有错误。 请注意，这不会应用您的脚本更改，您需要重新启动游戏才能看到它们生效。
 
 ## Wiki
 
-Usage:
+用法：
 
 `/crafttweaker wiki`
 

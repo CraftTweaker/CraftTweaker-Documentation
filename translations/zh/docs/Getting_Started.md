@@ -2,7 +2,7 @@
 
 Crafttweaker 使用一种称为 `ZenScript` 的自定义脚本语言。ZenScript 读取于 `<游戏主目录>/scripts` 文件夹下的所有带有 `.zs` 后缀的文件。
 
-ZenScript 是一种“自上向下”顺序读取的脚本语言，这意味着`导入`需要位于文件的顶部，`变量声明`也应该出现在较靠近文件顶部的位置。当然这不是强制性的，`变量`虽能够在脚本的各处定义，但`变量`声明之前的所有行都无法访问这个变量。
+ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
 
 ## 介绍
 

@@ -1,11 +1,11 @@
-# ModOnly
+# 仅 Mod
 
-The `@ModOnly` annotation is as simple as the name suggests:  
-It only registers a ZenClass if the provided mod is loaded.
+`@ModOnly` 注解和名称一样简单:  
+它只在加载 mod 时注册ZenClass。
 
-## Example
+## 例子
 
-[Crafttweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[Crafttweaker 测试项目仅 Mod](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
     @ModOnly(value = "mcp")
     @ZenClass(value = "crafttweaker.tests.modOnly")
@@ -18,7 +18,7 @@ It only registers a ZenClass if the provided mod is loaded.
     }
     
 
-## What classes can be annotated || Additional Info
+## 什么类可以被注解 || 额外信息
 
-- You can annotate all Java Classes that also have the [`@ZenRegister` Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Technically, you can register all classes, but only there it will have an impact.
-- The Annotation requires a String value that represents the modName (`isModLoaded(annotation.getValue())` has to return true of the mod is loaded)
+- 你可以注解所有的有 [`@ZenRegister` 的 Java 类。](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 技术上，你可以注册所有的类，但只有在那里它才能产生影响。
+- 注解需要一个表示 mod 名的字符串值(`isModLoaded(annotation.getValue())`当 mod 加载时返回 true)
