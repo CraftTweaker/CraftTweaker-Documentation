@@ -1,7 +1,7 @@
-# Optional
+# 可选
 
-`@Optional` can be given to a Method parameter to declare it as being optional.  
-Optional Parameters can be omitted when calling the method:
+`@Optional` 可以被传入一个方法参数以声明它是可选的。  
+调用方法时可选参数可被省略：
 
 ## Example
 
