@@ -1,9 +1,9 @@
-# Iterable
+# 遍历
 
-The IterableAnnotation can be applied to a class to allow ZS Iterating over it.  
-There are three kinds of IterableAnnotations:
+遍历注解可被应用于允许 ZS 遍历的类。  
 
-- `@IterableSimple` (needs to implement `Iterable`)
+
+- `@IterableSimple` (需要实现 `Iterable`)
 - `@IterableList` (needs to implement `List`)
 - `@IterableMap` (needs to implement `Map`)
 
