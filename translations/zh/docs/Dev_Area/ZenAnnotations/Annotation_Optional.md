@@ -5,13 +5,13 @@
 
 ## 例子
 
-[CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
+[CraftTweaker 的 IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
         @ZenMethod
         void remove(IIngredient output, @Optional IIngredient input);
     
 
-[MCFurnaceManager (Implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
+[MCFurnaceManager (实现)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
         @Override
         public void remove(IIngredient output, @Optional IIngredient input) {
@@ -22,7 +22,7 @@
         }
     
 
-Technically, you don't need the `@Optional` in the implementation but you can add it if you want to be sure. You can now call this method using either one:
+技术上，在实现中你不需要 `@Optional`，但如果你确定的话你也可以加上它。 你现在可以使用以下任意方式调用这个方法：
 
     furnace.remove(output); //Input will be set to null
     furnace.remove(output, input);
