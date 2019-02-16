@@ -3,7 +3,7 @@
 `@Optional` 可以被传入一个方法参数以声明它是可选的。  
 调用方法时可选参数可被省略：
 
-## Example
+## 例子
 
 [CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
