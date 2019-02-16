@@ -43,14 +43,14 @@
         }
     
 
-## How would that be useable in ZS?
+## 在 ZS 中如何使用？
 
     for oreDictEntry in oreDict {
         print(oreDictEntry.name);
     }
     
 
-## What Classes can be annotated || Additional Info
+## 什么类可以被注解 || 额外信息
 
 You can annotate all classes that implement the required interface.  
 You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
