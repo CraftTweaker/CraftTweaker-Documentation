@@ -17,7 +17,7 @@ pre-1.12
 ## Add a seed drop
 
 Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 1000%)!**
+**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
 
 ```
 vanilla.seeds.addSeed(item);
@@ -28,7 +28,7 @@ What does that mean? It simply means that you need to give it a percentage like 
 
 ```
 //adds carrots with a weight of 1
-vanilla.seeds.addSeed(<minecraft:carrot> % 100);
+vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
 
