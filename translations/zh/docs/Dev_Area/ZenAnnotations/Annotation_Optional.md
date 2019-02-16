@@ -62,7 +62,7 @@
     }
     
 
-If you want a default object or a default primitive that is not a compiletime constant (all annotation members need to be compiletime constants!), you can set the other two members: This will replace the parameter with a call to the given (static) method `methodClass.methodName(value)`. If no such method is found, will error and insert null.
+如果您想要一个不是编译时实例的默认对象或默认基本类型（所有注解成员都需要编译时实例！），你可以设置其他两个成员：这会调用传入的（静态）方法 `methodClass.methodName(value)` 以替换参数。 If no such method is found, will error and insert null.
 
     @ZenMethod
     public static void print2(@Optional(value = "minecraft:iron_ingot", methodClass = Optionals.class, methodName = "getFromString") IItemStack value) {
