@@ -18,7 +18,7 @@ Needs to be performed by a player or console, cannot be written in a zs-file.
 ## Add a seed drop
 
 Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 1000%)!**
+**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
 
     vanilla.seeds.addSeed(item);
     
@@ -26,7 +26,7 @@ Adds `item` as seed drop.
 `item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
 
     //adds carrots with a weight of 1
-    vanilla.seeds.addSeed(<minecraft:carrot> % 100);
+    vanilla.seeds.addSeed(<minecraft:carrot> % 1);
     
 
 ## Remove a seed drop
