@@ -45,10 +45,10 @@
 | methodClass | java.lang.Class | `Optional.class` |
 | methodName  | String          | `"getValue"`     |
 
-The Optional annotation also supports default values.  
-If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.
+可选参数也支持默认值。  
+如果您想提供默认值，您可以通过传入 `value` 成员代表参数的字符串来实现这一点。
 
-If you only want a default primitive, then you are set.
+如果您只想要基本类型，则您已设置。
 
     @ZenMethod
     public static void print(@Optional("heyho") String value) {
