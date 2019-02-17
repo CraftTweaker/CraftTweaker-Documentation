@@ -20,8 +20,8 @@
     }
     
 
-## What methods can be annotated || Additional Info
+## 什么方法可以被注解 || 额外信息
 
-- You can annotate all methods, static and nonstatic.
-- Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands/).
-- This annotation takes one String as value that is the additional information that should be printed.
+- 你可以注解所有的方法，包括静态的和非静态的。
+- 目前，这只会在运行 [`/ct dumpzs`](/Vanilla/Commands/) 命令时影响生成的 HTML。
+- 这个注解将一个字符串值作为应显示的额外信息。
