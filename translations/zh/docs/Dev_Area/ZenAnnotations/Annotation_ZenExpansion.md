@@ -25,7 +25,7 @@
 
 ## 什么类可以被注解 || 额外信息
 
-- 所有方法都需要以一个表示扩展 Class 实例的参数开始。 Also, all Methods inside the expansion must be static (... and public).
+- 所有方法都需要以一个表示扩展 Class 实例的参数开始。 此外，在扩展中的所有方法都必须是静态的（... 和公开的）。
 - You can annotate all Java Classes
 - You must give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This String value must represent an already existing ZenClass' name.
 - After declaring a class a ZenExpansion, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
