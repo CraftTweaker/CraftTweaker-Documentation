@@ -27,6 +27,6 @@ ZenCaster 可用于将一种类型转换为另一种（如[String 转 IData](htt
 
 ## 什么方法可以被注解 || 额外信息
 
-- You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
-- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+- 你可以注解所有的非静态方法（除非它在 ZenExpansion 中，因为它们仅有静态组成）
+- 当被注解的方法在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中时需要一个参数，如果它在 [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) 中则不需要。
 - Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
