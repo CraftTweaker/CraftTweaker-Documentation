@@ -1,6 +1,6 @@
 # ZenMethod
 
-A ZenMethod is a java method that has been exposed to ZenScript.
+ZenMethod 是暴露给 ZenScript 的 Java 方法。
 
 Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
 The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
