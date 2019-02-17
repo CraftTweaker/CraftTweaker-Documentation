@@ -1,13 +1,13 @@
 # ZenDoc
 
-The `@ZenDoc` annotation allows developers to provide additional information to the `/ct dumpZS` command.  
-More specifically, it will look like this:
+`@ZenDoc` 注解允许开发者向 `/ct dumpZS` 命令提供额外信息。  
+更具体的说，它将看起来像这样：
 
 ![img](assets/zenDoc.png)
 
-## Example
+## 例子
 
-[Crafttweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
+[Crafttweaker 测试项目 ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
     @ZenClass(value = "crafttweaker.tests.zenDoc")
     @ZenRegister
