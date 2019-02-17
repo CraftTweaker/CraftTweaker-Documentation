@@ -62,7 +62,7 @@
     }
     
 
-如果您想要一个不是编译时实例的默认对象或默认基本类型（所有注解成员都需要编译时实例！），你可以设置其他两个成员：这会调用传入的（静态）方法 `methodClass.methodName(value)` 以替换参数。 If no such method is found, will error and insert null.
+如果您想要一个不是编译时实例的默认对象或默认基本类型（所有注解成员都需要编译时实例！），你可以设置其他两个成员：这会调用传入的（静态）方法 `methodClass.methodName(value)` 以替换参数。 如果找不到对应方法，将报错并插入 null。
 
     @ZenMethod
     public static void print2(@Optional(value = "minecraft:iron_ingot", methodClass = Optionals.class, methodName = "getFromString") IItemStack value) {
@@ -75,11 +75,11 @@
     }
     
 
-## What parameters can be annotated?
+## 什么参数可以被注解？
 
-All parameters can be annotated, but you need to remember that annotated parameters need to be at the end, so while this would technically work, method calls would fail:
+所有的参数都可以被注解，但你需要记住注解的参数需要在末尾，因此技术上虽然可行，但调用方法将会失败：
 
     myMethod(@Optional String name, int number)
     
 
-Calling this method with only an int will always fail!
+只使用一个 int 参数调用此方法时将始终失败！
