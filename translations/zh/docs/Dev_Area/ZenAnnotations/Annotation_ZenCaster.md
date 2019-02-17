@@ -29,4 +29,4 @@ ZenCaster 可用于将一种类型转换为另一种（如[String 转 IData](htt
 
 - 你可以注解所有的非静态方法（除非它在 ZenExpansion 中，因为它们仅有静态组成）
 - 当被注解的方法在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中时需要一个参数，如果它在 [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) 中则不需要。
-- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
+- 不要在 [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) 中依赖 ZenCasters，它们只能在 [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中可靠地工作。
