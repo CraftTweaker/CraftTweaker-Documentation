@@ -30,7 +30,8 @@ mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>
 
 ## Potion removal
 
+Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
+
 ```
-any removal is considered as a potion if it does not match a recipe. if there is an additional alchemy table recipe using identical ingredients that isn't a potion, you may need to remove twice. basically put, if you try to remove a potion just by listing the ingredients, it should Just Work.
 //mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
