@@ -723,6 +723,10 @@ pages:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
+    - VanillaDeathChest:
+      - Death Chest Defense: 'Mods/VanillaDeathChest/Death_Chest_Defense.md'
+      - Death Chest Spawning: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
+      - VanillaDeathChest: 'Mods/VanillaDeathChest/VanillaDeathChest.md'
   - How to contribute: 
     - How to fork the project: 'Contribute/SetupGithub.md'
     - How to edit files online: 'Contribute/OnlineEditor_Edit.md'

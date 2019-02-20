@@ -1,17 +1,17 @@
-# Foreword
+# 前言
 
-This section will contain Tips and Tricks from experienced Tweakers.  
-Remember that these are really individual and some can also hinder you from achieving your aims instead of facilitating it.
+接下来的篇章会囊括来自于有经验的整合包作者的提示与技巧。  
+当然，这些都是很个人的观点，有些建议也许会适得其反。
 
-## What this section is for
+## 本部分的目的
 
-- Show you strategies on how to minimize your scripts.
-- Show you strategies on how to save time writing the scripts.
-- Show you strategies on how to make your scripts easier to read.
-- Show you strategies on how to make your scripts easier to debug.
-- Show you some often occuring mistakes, so you can spot them more easily in your scripts.
+- 向你展示如何最小化脚本的代码量。
+- 向你展示如何高效的书写脚本。
+- 向你展示如何使脚本更易读。
+- 向你展示如何更高效的调试脚本。
+- 向你展示一些易错点，从而避免重蹈覆辙。
 
-## What this section is NOT for
+## 不适宜人群
 
-- This section is not to be understood as kind of Tutorial for the novice Tweaker.
-- These tips are just tips, you don't need to implement them in your scripts and some might even be inappropriate for what you are trying to achieve.
+- 这部分内容并不适合新人理解。
+- 这些提示与技巧都是建议性的，一些内容并不是强制的，还有一些内容也许会适得其反。

@@ -1,17 +1,17 @@
-# Optional
+# 可选
 
-`@Optional` can be given to a Method parameter to declare it as being optional.  
-Optional Parameters can be omitted when calling the method:
+`@Optional` 可以被传入一个方法参数以声明它是可选的。  
+调用方法时可选参数可被省略：
 
-## Example
+## 例子
 
-[CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
+[CraftTweaker 的 IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
         @ZenMethod
         void remove(IIngredient output, @Optional IIngredient input);
     
 
-[MCFurnaceManager (Implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
+[MCFurnaceManager (实现)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
         @Override
         public void remove(IIngredient output, @Optional IIngredient input) {
@@ -22,24 +22,24 @@ Optional Parameters can be omitted when calling the method:
         }
     
 
-Technically, you don't need the `@Optional` in the implementation but you can add it if you want to be sure. You can now call this method using either one:
+技术上，在实现中你不需要 `@Optional`，但如果你确定的话你也可以加上它。 你现在可以使用以下任意方式调用这个方法：
 
     furnace.remove(output); //Input will be set to null
     furnace.remove(output, input);
     
 
-## What values are inserted for omited parameters?
+## 省略的参数被插入了什么值？
 
-### Using only the annotation
+### 仅使用注解
 
-Inserted is either `0`, `false` or `null`, depending on the annotated Type:
+根据注解类型，被插入的是 `0`, `false` 或 `null`
 
-Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
-All Objects will be `null`
+基本类型会是 `0` (除了布尔值，它会是 false，所以技术上 0 是最好的)  
+所有的对象都会是 `null`。
 
-### Using annotation members
+### 使用注解成员
 
-| Member      | Type            | Default value    |
+| 成员          | 类型              | 默认值              |
 | ----------- | --------------- | ---------------- |
 | value       | String          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |

@@ -1,12 +1,12 @@
-# ZenClasses
+# Zen类（ZenClasses）
 
-I am putting this here so only those who want to know at least some things on ZS will find it.
+我把这些放在这里，所以那些想用 ZenScript 使用它们的人可以找到。
 
-A ZenClass is essentially a java class but you can define it from within ZS.  
-If you think 'That does not really fit the theme of a scripting language' you are right.  
-That's why only those who are able to mess with it should ever find this.
+Zen 类本质上就是一个 java 类，但你也可以用 ZenScript 来定义。  
+如果你觉得 “这一点像都不脚本语言” 那么你说对了。  
+这就是为什么只有那些能够操纵它的人才可能找到这个页面。
 
-## Keywords
+## 关键字
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 

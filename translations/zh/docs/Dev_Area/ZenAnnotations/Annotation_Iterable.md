@@ -1,15 +1,15 @@
-# Iterable
+# 遍历
 
-The IterableAnnotation can be applied to a class to allow ZS Iterating over it.  
-There are three kinds of IterableAnnotations:
+遍历注解可被应用于允许 ZS 遍历的类。  
 
-- `@IterableSimple` (needs to implement `Iterable`)
-- `@IterableList` (needs to implement `List`)
-- `@IterableMap` (needs to implement `Map`)
 
-## Example
+- `@IterableSimple` (需要实现 `Iterable`)
+- `@IterableList` (需要实现 `List`)
+- `@IterableMap` (需要实现 `Map`)
 
-[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+## 比如：
+
+[CraftTweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
     @IterableSimple("crafttweaker.oredict.IOreDictEntry")
@@ -31,7 +31,7 @@ There are three kinds of IterableAnnotations:
     }
     
 
-[MCOreDict (implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
+[MCOreDict (实现)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
 
         @Override
         public Iterator<IOreDictEntry> iterator() {
@@ -43,14 +43,14 @@ There are three kinds of IterableAnnotations:
         }
     
 
-## How would that be useable in ZS?
+## 在 ZS 中如何使用？
 
     for oreDictEntry in oreDict {
         print(oreDictEntry.name);
     }
     
 
-## What Classes can be annotated || Additional Info
+## 什么类可以被注解 || 额外信息
 
-You can annotate all classes that implement the required interface.  
-You need to provide a String value that refers to the Iterated [ZenScript's class name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+你可以注解所有实现了对应接口的类。  
+你需要提供一个字符串值以引用被遍历的[ZenScript的类名](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).

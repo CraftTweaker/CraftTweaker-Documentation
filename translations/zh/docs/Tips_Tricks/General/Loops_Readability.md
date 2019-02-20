@@ -1,15 +1,15 @@
-# Use Loops to make your script look better
+# 使用循环语句使脚本更易读
 
-## Problem
+## 问题
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+我们都会遇到这样的问题：500多行的脚本仅仅是将`recipes.remove(item1);recipes.remove(item2)`重复了500遍。  
+不仅如此，还有可能花了几个小时来调试，最后发现问题出自一个小笔误，而你仅有的线索是`error in recipes.zs: null`
 
-## Solution
+## 解决方法
 
-My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
+我的经验是： 在编写超过10行命令基本相同，只有一个参数需要修改的语句时，我会使用循环代替。
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+这样，我仅需输入代码以遍历一个物品数组的所有物品，而不必重复输入所有函数。
 
     import crafttweaker.item.IIngredient;
     
@@ -26,15 +26,15 @@ So, instead of always typing out the functions, I declare one array containing a
     }
     
 
-## Advantages
+## 优点
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- （对我而言）使你的脚本更易读
+- 你可以更清楚地知道错误发生在哪个位置
+- 更易修改，因为你只需增删数组中的某个物品。
 
-## Disadvantages
+## 缺点
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- 仅对需要修改少数参数的情况有效
+- 更容易出现难以察觉的问题，例如数组声明错误
+- 单个数组中的错误会导致整个循环失效
+- 如果数组创建出错，得到的错误信息不清晰。
