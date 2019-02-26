@@ -15,7 +15,7 @@ Strings provide some functionality
 `"Hel" ~ "lo " + "World"` You also can add/concatenate strings.
 `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
 
-Aside from these, all parameterless methods that are available to java Strings are also available to ZenScript strings!  
+Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
 This includes: 
 
 - toLowerCase
@@ -26,6 +26,7 @@ This includes:
 - isEmpty
 - toCharArray
 - trim
+- split
 
 ## Integers
 Integers provide some functionality
