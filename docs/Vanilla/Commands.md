@@ -150,6 +150,21 @@ Description:
 Outputs a list of all the entities in the game to the crafttweaker.log file.
 
 
+## Give Item
+
+Usage:
+
+`/crafttweaker give <minecraft:bedrock>`
+
+`/ct give <minecraft:bedrock>`
+
+Description:
+
+Gives the player the item using CrT's Bracket handler syntax.  
+You can also apply tags by appending a `.withTag()` call.  
+Note that this is a pretty simple parser and may not work for every case!
+
+
 ## Hand
 
 Usage:
