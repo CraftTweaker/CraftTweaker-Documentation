@@ -107,6 +107,7 @@ pages:
         - EntityLivingFallEvent: 'Vanilla/Events/Events/EntityLivingFall.md'
         - EntityLivingHurtEvent: 'Vanilla/Events/Events/EntityLivingHurt.md'
         - EntityLivingJumpEvent: 'Vanilla/Events/Events/EntityLivingJump.md'
+        - EntityLivingSpawnEvent: 'Vanilla/Events/Events/EntityLivingSpawn.md'
         - EntityStruckByLightningEvent: 'Vanilla/Events/Events/EntityStruckByLightning.md'
         - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
@@ -177,6 +178,8 @@ pages:
         - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+    - Tile-Entity:
+      - IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
     - Utils:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'

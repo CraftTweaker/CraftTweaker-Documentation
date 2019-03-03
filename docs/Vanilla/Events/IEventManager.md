@@ -33,8 +33,10 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 
 | ZenMethod                       | Event Class                                                                                                |
 |---------------------------------|------------------------------------------------------------------------------------------------------------|
+| onAllowDespawn                  | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                   |
 | onBlockBreak                    | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                      |
 | onBlockHarvestDrops             | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                        |
+| onCheckSpawn                    | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)           |
 | onEnderTeleport                 | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                           |
 | onEntityLivingAttacked          | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)             |
 | onEntityLivingDeath             | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                   |
@@ -75,6 +77,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerSmelted                 | [`crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                           |
 | onPlayerTick                    | [`crafttweaker.event.PlayerTick`](/Vanilla/Events/Events/PlayerTick/)                                      |
 | onPlayerUseHoe                  | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                             |
+| onSpecialSpawn                  | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)           |
 
 
 ## Clear all event handlers
