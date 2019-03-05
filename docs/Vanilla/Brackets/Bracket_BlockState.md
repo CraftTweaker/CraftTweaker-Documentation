@@ -22,7 +22,7 @@ This will return an IBlockState Object.
 Please refer to [the respective wiki entry](/Vanilla/Blocks/IBlockState/) for further information.
 
 Note that this bracket handler will create a reference to one specific blockstate.
-If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry].
+If you would like to be able to match against multiple blockstates, please refer to [the IBlockStateMatcher wiki entry](/Vanilla/Blocks/IBlockStateMatcher).
 
 ## Examples
 

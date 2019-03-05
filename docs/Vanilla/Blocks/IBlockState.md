@@ -35,10 +35,11 @@ IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That 
 IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
 
 ## ZenMethods and ZenGetters
-| ZenGetter                  | Return Type                                                          | Description                                             |
-|----------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-| block                      | [IBlock](/Vanilla/Blocks/IBlock/)                                     | Returns the refered block                               |
-| meta                       | int                                                                  | Returns the refered block's metadata                    |
+| ZenGetter                  | Return Type                                                          | Description                                                                                  |
+|----------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| block                      | [IBlock](/Vanilla/Blocks/IBlock/)                                    | Returns the refered block                                                                    |
+| meta                       | int                                                                  | Returns the refered block's metadata                                                         |
+| commandString              | String                                                               | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state   |
 
 
 ## ZenMethods
@@ -52,6 +53,21 @@ Parameters:
 Returns a boolean that sais whether the block can be replaced or not.
 
 
+### Getting or changing Properties
+
+You can get a list of all registered properties, either as list with all property names or as map that maps the properties to their value.  
+You can also check which values are possible for a given property name.  
+You can also use `withProperty` to create a new IBlockState object with that property changed.
+
+```
+List<String> getPropertyNames();
+String getPropertyValue(String name);
+List<String> getAllowedValuesForProperty(String name);
+
+IBlockState withProperty(String name, String value);
+```
+
+
 ### Comparing two IBlockState objects
 
 You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
@@ -60,3 +76,9 @@ The return different types though:
 - `state.compare(other)` returns an int that is 0 if they are equal
 - `state == other` returns a bool that is true of they are equal
 
+### Getting an explicit Blockstate Matcher
+
+Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
+```
+IBlockStateMatcher matchBlock();
+```
