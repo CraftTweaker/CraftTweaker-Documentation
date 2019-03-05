@@ -2,7 +2,7 @@
 Creates lava by dropping 4x of any logWood into cryotheum.  
 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
 ***
-Creates Treated Wood by dropping 4 pieces of Birch Planks in Creosote.
+Creates Treated Wood by dropping some Birch Planks in Creosote.
 `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
 ***
 Creates a Water Bottle by dropping a Glass Bottle in Water, consumes the Water sourceblock.  
