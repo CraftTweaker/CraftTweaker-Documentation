@@ -1,17 +1,17 @@
 # ZenMethod
 
-A ZenMethod is a java method that has been exposed to ZenScript.
+ZenMethod 是暴露给 ZenScript 的 Java 方法。
 
-Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
-The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
+静态方法可以被通过 [ZenClass 类名](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)使用，非静态的方法使用 `object.methodName(arguments,..);`。  
+ZenMethod 注解可以与其他[注解](/Dev_Area/ZenAnnotations/ZenAnnotation/)同时存在，例如 [ZenOperator 注解](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/)。
 
-## What methods can be annotated || Additional Info
+## 什么方法可以被注解 || 额外信息
 
-- You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
-- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
+- 你可以注解所有的方法，包括静态的和非静态的。 
+- 在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中注解的方法需要一个额外参数。 该参数是此扩展类 Class 实例
+- 注解在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中的静态方法（例如工厂方法）时你需要使用 [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/)。
 
-## Example Class
+## 实例类
 
     @ZenClass(value = "crafttweaker.tests.devWikiTest")
     @ZenRegister
@@ -60,7 +60,7 @@ The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAn
     }
     
 
-ZS Script
+ZS 脚本
 
     val instance = crafttweaker.tests.devWikiTest.staticMethod(10);
     crafttweaker.tests.devWikiTest.staticMethod2();
