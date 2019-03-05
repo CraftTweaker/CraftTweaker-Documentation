@@ -61,12 +61,13 @@ worldObj.getBlock(IBlockPos position);
 ```
 
 ### Get or Set a blockState at a specific Position
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set.
 Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
 
 ```
 worldObj.getBlockState(IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IBlockPos pos);
+worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
 ### Spawn entity

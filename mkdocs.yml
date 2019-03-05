@@ -40,6 +40,7 @@ pages:
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
       - IBlockProperties: 'Vanilla/Blocks/IBlockProperties.md'
       - IBlockState: 'Vanilla/Blocks/IBlockState.md'
+      - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
@@ -47,6 +48,7 @@ pages:
       - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
+      - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
