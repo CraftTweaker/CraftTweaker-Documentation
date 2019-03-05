@@ -629,7 +629,6 @@ pages:
           - Crucible: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
           - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
           - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
-          - Salis Mundus: 'Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md'
           - Smelting Bonus: 'Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md'
           - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
         - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
