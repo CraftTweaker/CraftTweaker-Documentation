@@ -11,7 +11,7 @@ import mods.contenttweaker.RegisterMaterialPart;
 ## Syntax
 
 We have a void function, that takes a [Material Part](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as input.  
-This is the materialPArt that should be registered.  
+This is the materialPart that should be registered.  
 You could for example call the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) at this point, but how proceed form this point is really up to you.
 
 ```
