@@ -1,0 +1,1 @@
+LootTweaker's documentation is hosted separately [here](https://loottweaker-docs.readthedocs.io/en/latest/).

@@ -412,7 +412,7 @@ pages:
         - Combustion Generator: 'Mods/Ender_Tweaker/Combustion_Generator.md'
         - Enchanter:  'Mods/Ender_Tweaker/Enchanter.md'
         - SAG Mill: 'Mods/Ender_Tweaker/SAG_Mill.md'
-        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice .md'
+        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice.md'
         - Soul Binder:  'Mods/Ender_Tweaker/Soul_Binder.md'
         - The Vat: 'Mods/Ender_Tweaker/The_Vat.md'
     - Extra Utilities 2:
@@ -511,6 +511,8 @@ pages:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
       - LootTableTweaker: 'Mods/LootTableTweaker/LootTableTweaker.md'
+    - LootTweaker:
+        - LootTweaker: 'Mods/LootTweaker/LootTweaker.md'
     - Mekanism:
       - Chemical Crystallizer: 'Mods/Mekanism/Chemical_Crystallizer.md'
       - Chemical Dissolution Chamber: 'Mods/Mekanism/Chemical_Dissolution_Chamber.md'
