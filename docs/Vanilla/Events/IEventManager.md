@@ -72,7 +72,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerSetSpawn                | [`crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn/)                              |
 | onPlayerSleepInBed              | [`crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                     |
 | onPlayerSmelted                 | [`crafttweaker.event.PlayerSmeltedEvent`](/Vanilla/Events/Events/PlayerSmelted/)                           |
-| onPlayerTick                    | [`crafttweaker.event.PlayerTick`](/Vanilla/Events/Events/PlayerTick/)                                      |
+| onPlayerTick                    | [`crafttweaker.event.PlayerTickEvent`](/Vanilla/Events/Events/PlayerTick/)                                      |
 | onPlayerUseHoe                  | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                             |
 
 
