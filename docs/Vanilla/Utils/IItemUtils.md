@@ -35,6 +35,18 @@ itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/f
 itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
+## Imitate the Item Bracket Handler
+This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
+Unlike the BH though, you need to provide the meta as optional parameter.  
+If you want to use the wildcard meta, use `32767`.
+```
+//getItem(location, @Optional meta);
+getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
+```
+
+
 ## Create Spawn egg
 The createSpawnEgg function allows you to create custom mod spawn eggs.  
 The customNBT is OPTIONAL and can override the entity tag.  

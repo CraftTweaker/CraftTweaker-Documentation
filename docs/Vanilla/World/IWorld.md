@@ -61,12 +61,13 @@ worldObj.getBlock(IBlockPos position);
 ```
 
 ### Get or Set a blockState at a specific Position
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
+Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set.
 Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
 
 ```
 worldObj.getBlockState(IBlockPos pos);
 worldObj.setBlockState(IBlockState state, IBlockPos pos);
+worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
 ```
 
 ### Spawn entity
@@ -74,4 +75,15 @@ Use an [IEntity](/Vanilla/Entities/IEntity/) object.
 Returns a bool that states if the spawn was successful.
 ```
 worldObj.spawnEntity(IEntity entity);
+```
+
+### Get a raytrace result  
+Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to get an [IRayTraceResult](/Vanilla/World/IRayTraceResult/).  
+**Can be null**
+
+The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
+Only the last parameter is true by default.
+
+```
+worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```

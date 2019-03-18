@@ -99,6 +99,12 @@ for liquid in liquidsIngredient.liquids{
 	//Prints each possible liquid's Display name
 	print(liquid.displayName);
 }
+
+for liquid in <minecraft:water_bucket>.liquids {
+	//Prints the contained liquid, i.e. water.
+	//May not work for every item, though.
+	print(liquid.displayName);
+}
 ```
 
 ### Transform an IIngredient upon crafting
