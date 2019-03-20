@@ -6,9 +6,9 @@
 ## Addition
 
 ```
-//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack input, IItemStack catalyst, IItemStack output, @Optional string textureLocation);
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:stick>, <minecraft:grass>, <minecraft:diamond>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:stick>, <minecraft:grass>, <minecraft:diamond>);
+//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack catalyst, IItemStack input, @Optional string textureLocation);
+mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:grass>, <minecraft:stick>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:grass>, <minecraft:stick>);
 ```
 
 ## Removal
