@@ -27,7 +27,7 @@ brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapi
 
 ### Remove Brewing Recipes
 
-Still doesn't work with JEI!!
+Only works with JEI version 4.15.0.275 or higher.
 
 ```
 //brewing.removeRecipe(IItemStack input, IItemStack ingredient);
