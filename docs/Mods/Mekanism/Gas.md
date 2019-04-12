@@ -13,7 +13,7 @@ Mekanism adds bracket-handler support to define **gas** -- a special material st
 
 Example
 ------
-```java
+```
 import mod.mekanism.gas.IGasStack;
 
 var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
@@ -38,7 +38,7 @@ Setting the Object's Amount
 ------
 
 You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
-```JAVA
+```
 var gas_amount_multiply = <gas:water> * 500;
 var gas_amount_zenMethod = <gas:water>.withAmount(500);
 ```
@@ -56,7 +56,7 @@ You can get such an object using `gasStack.definition` (check the table above)
 | displayName | Returns the referred gas' display name  | String         |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
-```JAVA
+```
 var gas_definition = <gas:water>.definition;
 var gas_bucket = gas_definition * 1000;
 ```
