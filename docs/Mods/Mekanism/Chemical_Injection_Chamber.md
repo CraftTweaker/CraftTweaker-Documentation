@@ -1,5 +1,7 @@
-
 # Chemical Injection Chamber
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Injection Chamber through the command `/ct mekrecipes injection`
+
 Addition
 ------
 ```

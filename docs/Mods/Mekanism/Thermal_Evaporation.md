@@ -1,5 +1,7 @@
-
 # Thermal Evaporation
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Thermal Evaporation through the command `/ct mekrecipes thermalevaporation`
+
 Addition
 ------
 ```

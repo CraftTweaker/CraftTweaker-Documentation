@@ -10,6 +10,7 @@ Mekanism adds bracket-handler support to define **gas** -- a special material st
 ```
 *Noting that `<gas:water>` is different from `<liquid:water>`*
 
+As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
 
 Example
 ------

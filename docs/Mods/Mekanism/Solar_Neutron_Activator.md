@@ -1,5 +1,7 @@
+# Solar Neutron Activator
 
-# Solar Neutron Activator 
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Solar Neutron Activator through the command `/ct mekrecipes solarneutronactivator`
+ 
 Addition
 ------
 ```

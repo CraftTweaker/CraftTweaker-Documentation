@@ -1,5 +1,7 @@
-
 # Chemical Dissolution Chamber
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Dissolution Chamber through the command `/ct mekrecipes dissolution`
+
 Addition
 ------
 ```

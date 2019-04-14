@@ -1,5 +1,7 @@
-
 # Chemical Crystallizer
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Crystallizer through the command `/ct mekrecipes crystallizer`
+
 Addition
 ------
 ```

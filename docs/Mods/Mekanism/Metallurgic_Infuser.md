@@ -1,5 +1,6 @@
-
 # Metallurgic Infuser
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Metallurgic Infuser through the command `/ct mekrecipes metallurgicInfuser`
 
 Infusion Type String
 ------
@@ -17,6 +18,7 @@ Both addition and removal of recipes require an "infusion type" string. Default 
 
 If any other mod registers a new infusion type, that type can be used in CraftTweaker as well as long as the registered type's name is specified exactly. NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
 
+As of Mekanism 9.7.0 it is now possible to view all registered infusions (including those from other mods) via the command `/ct infuseTypes`
 
 Addition
 ------

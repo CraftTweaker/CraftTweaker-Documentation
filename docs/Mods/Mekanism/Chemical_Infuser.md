@@ -1,5 +1,7 @@
-
 # Chemical Infuser
+
+As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Infuser through the command `/ct mekrecipes chemicalInfuser`
+
 Addition
 ------
 ```
