@@ -6,8 +6,9 @@ Addition
 mods.mekanism.purification.addRecipe(IItemStack itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
 
 mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>, <minecraft:wool>);
-mods.mekanism.purification.addRecipe(<minecraft:charcoal>, <minecraft:coal>);
+mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
 ```
+As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
 
 
 Removal

@@ -5,7 +5,7 @@ Addition
 ```
 mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas);
 
-mods.mekanism.chemical.washer.addRecipe(<gas:steam>, <gas:water>);
+mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
 ```
 
 Removal

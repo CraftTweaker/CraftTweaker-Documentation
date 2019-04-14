@@ -14,7 +14,7 @@ Removal
 mods.mekanism.chemical.oxidizer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
 
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:brine>, <mekanism:salt>);
-mods.mekanism.chemical.oxidizer.removeRecipe(<gas:brine>);
+mods.mekanism.chemical.oxidizer.removeRecipe(<gas:lithium>);
 ```
 Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 

@@ -13,7 +13,7 @@ Removal
 ```
 mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
 
-mods.mekanism.smelter.removeRecipe(<minecraft:sand>, <minecraft:glass>);
+mods.mekanism.smelter.removeRecipe(<minecraft:sand:*>, <minecraft:glass>);
 mods.mekanism.smelter.removeRecipe(<minecraft:cobblestone>);
 ```
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.

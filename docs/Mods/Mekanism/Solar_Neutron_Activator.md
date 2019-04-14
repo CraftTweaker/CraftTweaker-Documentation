@@ -5,7 +5,7 @@ Addition
 ```
 mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasOutput);
 
-mods.mekanism.solarneutronactivator.addRecipe(<gas:liquidOsmium>, <gas:liquidStone>);
+mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
 ```
 
 Removal

@@ -15,7 +15,7 @@ Removal
 mods.mekanism.sawmill.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack, @Optional IIngredient bonusOutput);
 
 mods.mekanism.sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecraft:wool>);
-mods.mekanism.sawmill.removeRecipe(<minecraft:planks>);
+mods.mekanism.sawmill.removeRecipe(<minecraft:planks:*>);
 ```
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
