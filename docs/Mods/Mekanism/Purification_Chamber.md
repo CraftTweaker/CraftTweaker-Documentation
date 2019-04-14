@@ -3,13 +3,16 @@
 Addition
 ------
 ```
-mods.mekanism.purification.addRecipe(IItemStack itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
+mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
 
 mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>, <minecraft:wool>);
 mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
 ```
 As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
 
+Also as of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
+
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
 Removal
 ------

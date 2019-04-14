@@ -3,11 +3,14 @@
 Addition
 ------
 ```
-mods.mekanism.combiner.addRecipe(IItemStack itemInput, @Optional IItemStack extraInput, IItemStack itemOutput);
+mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, IItemStack itemOutput);
 
 mods.mekanism.combiner.addRecipe(<minecraft:stone> * 4, <minecraft:cobblestone>, <minecraft:stonebrick>);
 mods.mekanism.combiner.addRecipe(<minecraft:torch> * 4, <minecraft:stick>);
 ```
+As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput and extraInput instead of only IItemStacks.
+
+Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
 
 Removal
 ------
