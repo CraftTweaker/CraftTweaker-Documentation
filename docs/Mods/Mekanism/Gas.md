@@ -12,6 +12,8 @@ Mekanism adds bracket-handler support to define **gas** -- a special material st
 
 As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
 
+It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
+
 Example
 ------
 ```
