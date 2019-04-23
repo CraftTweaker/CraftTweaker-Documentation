@@ -3,7 +3,7 @@
 An IIngredient is an ingredient for recipes.  
 This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IIngredient;`
@@ -94,6 +94,12 @@ The second function does the same as the first function but returns a [IItemStac
     
     for liquid in liquidsIngredient.liquids{
         //Prints each possible liquid's Display name
+        print(liquid.displayName);
+    }
+    
+    for liquid in <minecraft:water_bucket>.liquids {
+        //Prints the contained liquid, i.e. water.
+        //May not work for every item, though.
         print(liquid.displayName);
     }
     
