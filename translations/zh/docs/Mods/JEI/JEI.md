@@ -1,10 +1,10 @@
 # JEI
 
-CraftTweaker comes with support for JustEnoughItems (JEI). You can add or hide items or fluids in JEI or add a Descriptions page for them.
+CraftTweaker 支持 JustEnoughItems (JEI)。 你可以在 JEI 中添加或隐藏物品/流体，或者为其添加描述页。
 
-## Remove
+## 移除
 
-You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
+你可以从JEI中移除物品，也可以移除所有它参与的合成表。
 
     //hide(IItemStack item);
     mods.jei.JEI.hide(<minecraft:diamond>);
@@ -19,32 +19,32 @@ You can either just remove the item from JEI or remove it and all of it's crafti
     mods.jei.JEI.removeAndHide(<ore:planks>, false);
     
 
-## Hide Categories
+## 隐藏分类
 
-You can use this to hide entire JEI Categories (e.g. crafting recipes, furnace recipes, machine X recipes, ...).  
-It accepts the category as string, you can get all registered categories by running `/ct jeiCategories` ingame.
+你可以用它来隐藏全部 JEI 分类（例如：建造合成表，熔炉合成表，某个机器的合成表等等）。  
+分类以字符串类型传入，你可以在游戏中使用 `/ct jeiCategories` 命令获取所有已注册的分类。
 
 ```Java
 //hideCategory(category)
 mods.jei.JEI.hideCategory("minecraft.smelting");
 ```
 
-## Add Item
+## 添加物品
 
-You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
+你也可以添加一个 [IItemStack](/Vanilla/Items/IItemStack/) 到 JEI 来添加一个未添加的物品，或者添加一个带有 NBT-Tag 的物品到 JEI
 
 ```JAVA
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
 
-## Add Description
+## 添加描述
 
-A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack/), an [IItemStack](/Vanilla/Items/IItemStack/)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).
+JEI 描述指查看材料的配方/用途的额外页面， JEI 需包含关于此材料的信息。  
+你可以向 [IItemStack](/Vanilla/Items/IItemStack/)， [IItemStack](/Vanilla/Items/IItemStack/)[]，[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 或 [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) 添加描述。
 
-If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
-Each string parameter will have at least one line and wrap around the end of the window if too long.
+如果你的字符串太长, 无法写入一行 (或一页), 它将自动创建行/页面中断。  
+每个字符串参数将至少有一行, 并且如果太长将在窗口的末尾换行。
 
 ```Java
 //addDescription(IItemStack item, string... desc);
@@ -61,4 +61,4 @@ mods.jei.JEI.addDescription(<ore:ingotIron>, "You can use these to create things
 mods.jei.JEI.addDescription(<liquid:lava>, ["LAVA"]);
 ```
 
-The `desc` parameter is a varArg, which means you can either give one string[] containing all description strings or many single strings, whatever you prefer. Just don't mix them!
+`desc` 属性是一个变长参数，也就是说你既可以用一个字符串数组中传递所有描述，又可以用多个字符串来传递，随你喜欢。 只是别把它们弄混了！
