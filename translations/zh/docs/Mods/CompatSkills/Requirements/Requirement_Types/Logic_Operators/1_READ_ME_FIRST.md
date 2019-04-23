@@ -1,37 +1,37 @@
-# Logic Requirement Syntax
+# 逻辑请求语句
 
-Now that you know what logic gates are I can describe the syntax implemented into Reskillable that allows them to be used. There will be more detailed examples in a later section.
+既然你已经明白什么是逻辑门，我可以向你解释在 Reskillable 中允许逻辑门发挥作用的语句。 下一节会有更详细的例子。
 
-In all the below syntaxes `requirement` is the string representation of any other supported requirement (including ones added by CompatSkills or other addons).
-
-* * *
-
-## Unary requirement gates
-
-### NOT Requirement
-
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a **NOT** gate and the syntax for it is `not|requirement`. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified `requirement` is not met.
+在下面的所有语句中， `requirement` 字符串代表任意支持的请求（包括CompatSkills或其它附属添加的请求）。
 
 * * *
 
-## Binary requirement gates
+## 单一逻辑请求
 
-The other logic requirements are slightly more complex as they take two *input* requirements. As the logic gates are relatively simple the order of the requirements does not actually matter, however I will be referring to them as `requirement<sub>1</sub>` and `requirement<sub>2</sub>` as to differentiate which one is which.
+### “非”请求
 
-They also share the syntax: `gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]`. With the gate being either `and`, `nand`, `or`, `nor`, `xor`, or `xnor`.  
-**Note**: The brackets around `requirement<sub>1</sub>` and `requirement<sub>2</sub>` are needed.
+The simplest logic requirement that Reskillable supports is the ability to invert a requirement. 它通过一个 **NOT** 门来实现这个请求，语句是 `not|requirement` 。 根据在逻辑门部分的解释，只有在不满足特定的 `requirement` 的条件下，这个“非”逻辑请求才会被满足。
 
 * * *
 
-### AND Requirement
+## 双重逻辑请求
+
+另一种逻辑请求稍显复杂，因为它们需要两个 *input* （输入）请求。 因为这些逻辑门相对简单，所以两个请求的顺序实际上并不重要，但我会用 `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 来区分这两个请求。
+
+它们使用相同的语句： `gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]</0 > 。 其中 gate 是 <code>and`, `nand`, `or`, `nor`, `xor` 和 `xnor`  
+中的一种。 **注意**： `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 两边的方括号不能省略。
+
+* * *
+
+### “与”请求
 
 The **AND** requirement unlike the other logic requirements is mainly useful for nested logic requirements (more on this lower down), as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
-## Examples
+## 例子
 
-All the examples below are going to be shown using the syntax from CompatSkill's CraftTweaker support as it is easier to read. The logic requirements work just fine from the config as well.
+下面所有的例子都将使用 CompatSkill's CraftTweaker 帮助中的语句以易于阅读。 The logic requirements work just fine from the config as well.
 
-All the example script CrT script entries below use the import statement: `import mods.compatskills.Requirement.addRequirement;` this is mainly to reduce the lengths of the other lines and make them more readable. (So if you are copying any of the examples you will need to include it at the top of your script file.) A couple of the examples below that directly start with `mods.compatskills.` are locks that are specific to CompatSkills and that I came up with decent logic requirement examples for.
+以下所有的示例脚本 CraftTweaker 脚本条目都使用 import （导入包）语句： `import mods.compatskills.Requirement.addRequirement;` 这主要是为了缩短每行的长度，让文本更具可读性。 (So if you are copying any of the examples you will need to include it at the top of your script file.) A couple of the examples below that directly start with `mods.compatskills.` are locks that are specific to CompatSkills and that I came up with decent logic requirement examples for.
 
 * * *
 
@@ -65,7 +65,7 @@ It was hard to come up with an example for **XNOR**, however this is an example 
 
 Only allow a player to level defense to level 5 if they have not put any points into attack yet or if they are at attack level 32: `mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:defense>, 5, "xnor|[reskillable:attack|2]~[reskillable:attack|32]");`
 
-### Nested Logic Requirements
+### 嵌套逻辑请求
 
 Nested logic requirements are when you are using a logic requirement as one of the `requirement` parameters in another logic requirement. Pay special attention to bracket placement in nested requirements.
 
