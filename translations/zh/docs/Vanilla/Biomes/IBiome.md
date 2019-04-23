@@ -1,30 +1,30 @@
 # IBiome
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+IBiome 接口允许你获取注册的生物群系的信息。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+如果你遇到问题 (例如创建 [数组](/AdvancedFunctions/Arrays_and_Loops/))，你可能需要导入相关包，为此，最安全的方法就是进行导入。  
 `import crafttweaker.world.IBiome;`
 
-## Calling an IBiome
+## 调用 IBiome
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
+你可以通过 [IGame](/Vanilla/Game/IGame/) 提供的 `game.biomes` 获取所有注册的生物群系的列表，这是目前唯一的方式。
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+现在，IBiome 对象唯一的作用就是获取其中的信息。
 
-| ZenGetter                    | Return Type |
-| ---------------------------- | ----------- |
-| name                         | String      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                    | 返回值类型   |
+| ---------------------------- | ------- |
+| name                         | String  |
+| canRain                      | boolean |
+| isSnowyBiome                 | boolean |
+| highHumidity                 | boolean |
+| spawningChance               | float   |
+| baseHeight                   | float   |
+| heightVariation              | float   |
+| rainfall                     | float   |
+| waterColorMultiplier         | int     |
+| ignorePlayerSpawnSuitability | boolean |
+| temperature                  | float   |
