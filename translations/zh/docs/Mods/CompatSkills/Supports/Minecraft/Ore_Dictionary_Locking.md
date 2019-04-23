@@ -1,10 +1,10 @@
-# OreDictionary Locking
+# 矿物字典锁定
 
-## Feature:
+## 功能：
 
-This lock adds the ability to lock any and all items that are under a certain Ore Dictionary Tag. This means that if you lock the Ore Dictionary Entry of "oreIron" any item/block with the tag "oreIron" would be locked behind the set requirements. This type of lock also supports an [IData](/Vanilla/Data/IData/) Parameter which means that it only affects things under the Ore-Dict tag IF they have a matching IDATA tag to the one provided to the lock.
+这个锁定可以锁定特定矿物字典下的所有物品。 就是说，如果你锁定了矿物字典条目 "oreIron" ，所有带有 "oreIron" 标签的物品/方块都会在设定条件之外被锁定。 这个锁定还支持[IData](/Vanilla/Data/IData/) 参数，就是说，这只作用于这个矿物词典标签下匹配了提供给锁的 IDATA 标签的东西。
 
-## Syntax:
+## 语法：
 
     mods.compatskills.OreDictLock.addOreDictLock(IOreDictEntry entry, String... locked);
     mods.compatskills.OreDictLock.addNBTOreDictLock(IOreDictEntry entry, IData tag, String... locked);
