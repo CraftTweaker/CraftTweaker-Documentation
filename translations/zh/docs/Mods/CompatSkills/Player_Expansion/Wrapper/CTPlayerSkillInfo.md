@@ -1,66 +1,66 @@
-# CTPlayerSkillInfo
+# CraftTweaker玩家技能信息
 
-## Methods
+## 方法
 
 ### getLevel()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel();
     
-    This returns the level of the Skill.
+    这将返回指定技能的等级。
     
 
 ### getSkillPoints()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkillPoints();
     
-    This return the number of Skill Points available to spend for that Skill.
+    这将返回玩家在指定技能上可以使用的技能点。
     
 
 ### getLevelUpCost()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevelUpCost();
     
-    This returns the Level-Up Cost for the Skill.
+    这将返回指定技能的升级花费。
     
 
 ### getRank()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getRank();
     
-    This returns the current Rank String for the Skill.
+    这将以字符串形式返回指定技能的等级。
     
 
 ### getSkill()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkill();
     
-    This returns the Skill you're currently getting info from.
+    这将返回你当前正在获取信息的技能。
     
 
 ### levelUp()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).levelUp();
     
-    This levels up the Skill for the player.
+    这将为玩家升级指定技能。
     
 
 ### respec()
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).respec();
     
-    This "un-purchases" all traits in this specific Skill and refunds all Skill Points.
+    这将重置所有属性并返还技能点。
     
 
 ### unlock(CTUnlockable ctUnlockable, IPlayer player)
 
-    Example:
+    例：
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).unlock(<trait:reskillable:sidestep>, event.player);
     
-    This unlocks the provided trait if available under the skill to the provided player.
+    这将为指定玩家解锁技能下的指定属性（如果当前为可解锁状态）。
