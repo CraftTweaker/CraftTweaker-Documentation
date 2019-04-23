@@ -1,10 +1,10 @@
-# Tool Harvest-Level Locking
+# 工具挖掘等级锁定
 
-## Feature:
+## 功能：
 
-This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
+这个锁定允许整合作者通过挖掘等级锁定所有或者 "types" 类型的工具。 就是说，你可以通过条件锁定所有挖掘等级 3 的镐。 或者通过条件锁定所有挖掘等级为 3 的工具。
 
-## Syntax:
+## 语法：
 
     mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
     mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
