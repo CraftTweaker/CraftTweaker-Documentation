@@ -1,14 +1,14 @@
-# ChickenFactory
+# 小鸡工坊（ChickenFactory）
 
-The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) to the game.  
-Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
+小鸡工坊允许你往游戏中添加自定义的[鸡](/Mods/ContentTweaker/Chickens/ChickenRepresentation/)。  
+注：这个模块是[setycz编写的chickens](https://minecraft.curseforge.com/projects/chickens)模组的功能，因而使用此功能需要加载了这个模组。
 
-## Importing the package
+## 导入相关包
 
     import mods.contenttweaker.ChickenFactory;
     
 
-## Creating chickens
+## 创建鸡
 
 First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
 This is essentially an empty template of what your chicken will become.  
