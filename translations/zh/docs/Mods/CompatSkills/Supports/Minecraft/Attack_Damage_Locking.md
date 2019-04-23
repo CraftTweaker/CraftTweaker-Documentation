@@ -1,12 +1,12 @@
-# Attack Damage Locking
+# 攻击伤害锁定
 
-## Feature:
+## 功能：
 
-This feature locks the ability for the player to use a weapon/tool with an attack damage value equal to or greater than the set amount. This means like in the example below, any weapon with Attack Damage 0.75 or greater will only be useable in the end.
+这个特性锁定了玩家使用攻击伤害大于等于设定值的武器/工具的能力。 就是说，在下面的例子中，任何攻击伤害大于等于0.75的武器只能在末地使用。
 
-For reference: 1 Damage = 0.5 Hearts You can see a quick reference guide to damage under [This Link](https://minecraft.gamepedia.com/Damage#Dealing_damage)
+注： 1 攻击伤害 = 0.5 颗心 你可以[点这里](https://minecraft.gamepedia.com/Damage#Dealing_damage)查看有关伤害的页面。
 
-## Syntax:
+## 语法：
 
     mods.compatskills.DamageLock.addDamageLock(double damage, String... requirements);
     
