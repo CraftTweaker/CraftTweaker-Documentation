@@ -342,3 +342,14 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
 ```
+
+#### Food Properties
+
+You can check if an IItemStack is a food item and what food properties it has.  
+May not work for every modded food item!
+
+```kotlin
+<minecraft:apple>.isFood; //true
+<minecraft:apple>.saturation; //0.3
+<minecraft:apple>.healAmount; //4
+```
