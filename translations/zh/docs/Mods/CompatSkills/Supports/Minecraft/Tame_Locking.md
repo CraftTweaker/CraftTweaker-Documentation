@@ -1,15 +1,15 @@
-# Taming Locking
+# 驯服锁定
 
-## Animal-Tame Locking
+## 动物驯服锁定
 
-This feature allows for you to add requirement locks to taming specific entities.
+这个功能允许你添加驯服特定实体的条件锁定。
 
-### Syntax
+### 语法
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[连接到 IENtityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # 原型：
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Working Example:
+    # 示例：
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
