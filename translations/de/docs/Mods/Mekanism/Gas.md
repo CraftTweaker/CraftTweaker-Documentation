@@ -10,14 +10,17 @@ Mekanism adds bracket-handler support to define **gas** -- a special material st
 
 *Noting that `<gas:water>` is different from `<liquid:water>`*
 
+As of Mekanism 9.7.0 it is now possible to view all registered gases (including those from other mods) via the command `/ct gases`
+
+It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
+
 ## Example
 
-```java
-import mod.mekanism.gas.IGasStack;
-
-var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
-var oxygen2 = <gas:oxygen> * 500;
-```
+    import mod.mekanism.gas.IGasStack;
+    
+    var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
+    var oxygen2 = <gas:oxygen> * 500;
+    
 
 ## ZenGetters
 
@@ -35,10 +38,9 @@ You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
 You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
 
-```JAVA
-var gas_amount_multiply = <gas:water> * 500;
-var gas_amount_zenMethod = <gas:water>.withAmount(500);
-```
+    var gas_amount_multiply = <gas:water> * 500;
+    var gas_amount_zenMethod = <gas:water>.withAmount(500);
+    
 
 ## IGasDefinition
 
@@ -52,7 +54,5 @@ You can get such an object using `gasStack.definition` (check the table above)
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 
-```JAVA
-var gas_definition = <gas:water>.definition;
-var gas_bucket = gas_definition * 1000;
-```
+    var gas_definition = <gas:water>.definition;
+    var gas_bucket = gas_definition * 1000;
