@@ -1,15 +1,15 @@
-# Entity Damage Locking
+# 实体伤害锁定
 
-## Entity-Damage Lock
+## 实体伤害锁定
 
-This feature allows you to lock the ability to attack/damage specific entities.
+这个功能允许你锁定玩家攻击/伤害特定实体的能力。
 
-### Syntax:
+### 语法：
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[连接到 IENtityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # 原型：
     mods.compatskills.EntityDamageLock.addEntityLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Working Example:
+    # 示例：
     mods.compatskills.EntityDamageLock.addEntityLock(<entity:minecraft:zombie>, "reskillable:mining|5", "reskillable:magic|7");
