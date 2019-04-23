@@ -11,7 +11,7 @@ ZenMethod 注解可以与其他[注解](/Dev_Area/ZenAnnotations/ZenAnnotation/)
 - 在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中注解的方法需要一个额外参数。 该参数是此扩展类 Class 实例
 - 注解在 [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 中的静态方法（例如工厂方法）时你需要使用 [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/)。
 
-## 实例类
+## 例类
 
     @ZenClass(value = "crafttweaker.tests.devWikiTest")
     @ZenRegister
