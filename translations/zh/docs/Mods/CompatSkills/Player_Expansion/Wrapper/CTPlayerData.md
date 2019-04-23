@@ -1,18 +1,18 @@
-# CTPlayerData
+# CraftTweaker玩家数据
 
-## Methods
+## 方法
 
 ### getHasAnyAbilities()
 
-    Example:
+    例：
     event.player.skillData.getHasAnyAbilities;
     
-    This returns a Boolean based on if the player has any abilties which are a type of Unlockables.
+    这将根据玩家是否拥有“可解锁”类型的技能返回布尔值。
     
 
-### getSkillInfo(CTSkill skill)
+### getSkillInfo（ skill 为 CTSkill 类型）
 
-    Example:
-    event.player.skillData.getSkillInfo(<skill:reskillable:agility>);
+    例：
+    event.player.skillData.getSkillInfo(<skill:reskillable:agility>); 
     
-    This returns the PlayerSkillInfo for that specific skill!
+    这将返回指定技能的 "PlayerSkillInfo" （玩家技能信息） ！
