@@ -58,7 +58,7 @@ Required Parameters:
 
 ### Create
 
-Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the \[Part entry\](IPart](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
+Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the [Part entry](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
 
 ```JAVA
 val PB = MaterialSystem.getPartBuilder();
