@@ -97,6 +97,12 @@ The second function does the same as the first function but returns a [IItemStac
         print(liquid.displayName);
     }
     
+    for liquid in <minecraft:water_bucket>.liquids {
+        //Prints the contained liquid, i.e. water.
+        //May not work for every item, though.
+        print(liquid.displayName);
+    }
+    
 
 ### Transform an IIngredient upon crafting
 
