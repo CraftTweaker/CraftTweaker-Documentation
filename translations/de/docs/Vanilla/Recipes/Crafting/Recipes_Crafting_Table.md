@@ -79,6 +79,15 @@ recipes.removeByRegex("name[1-9]");
 recipes.removeByRecipeName("modid:recipename");
 ```
 
+### Remove by mod
+
+You can also remove all recipes that were added by the mod specified.  
+You need to provide the mod's modid as string.
+
+```java
+recipes.removeByMod("modularmachinery");
+```
+
 ## Add Recipes
 
 ### Notes On 1.12
