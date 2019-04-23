@@ -1,15 +1,15 @@
-# Mount Locking
+# 骑乘锁定
 
-## Mount Locks
+## 骑乘锁定
 
-This feature allows you to add a requirement lock to Mounting specific entities!
+这个功能添加骑乘特定实体的条件锁定。
 
-### Syntax
+### 语法
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[连接到 IENtityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # 原型：
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
     
-    # Working Example:
+    # 示例：
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")
