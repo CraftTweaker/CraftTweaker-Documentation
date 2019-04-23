@@ -1,10 +1,10 @@
-# Block Harvest-Level Locking
+# 方块挖掘等级锁定
 
-## Feature:
+## 功能：
 
-This lock makes it so the player can't break a block with the set Harvest-Level unless a set of Requirements are met. For example below, you can see that Blocks with a Harvest-Level of 3 can only be broken in the End. This example is not really that great in practice, but it does show what this type of lock is capable of doing.
+这个锁定使玩家不能破坏特定挖掘等级的方块，除非满足条件。 在下面的例子中，你只能在末地破坏挖掘等级为 3 的方块。 这个例子实际上不太好，但它确实显示了这种锁定能做的事。
 
-## Syntax:
+## 语法：
 
     mods.compatskills.HarvestLock.addBlockLevelLock(int level, String... requirements);
     
