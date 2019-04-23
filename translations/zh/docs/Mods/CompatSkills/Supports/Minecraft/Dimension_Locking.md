@@ -1,13 +1,13 @@
-# Dimension Locking
+# 维度锁定
 
-## Dimension Locking
+## 维度锁定
 
-This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
+这个功能锁定了玩家进入特定维度的能力，除非满足条件！
 
-### Syntax
+### 语法
 
-    Blank Example:
+    原型：
     mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Working Example:
+    示例：
     mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");
