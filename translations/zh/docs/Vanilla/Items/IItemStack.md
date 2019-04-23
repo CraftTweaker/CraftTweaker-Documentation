@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -341,4 +341,15 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 ```kotlin
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
+```
+
+#### Food Properties
+
+You can check if an IItemStack is a food item and what food properties it has.  
+May not work for every modded food item!
+
+```kotlin
+<minecraft:apple>.isFood; //true
+<minecraft:apple>.saturation; //0.3
+<minecraft:apple>.healAmount; //4
 ```
