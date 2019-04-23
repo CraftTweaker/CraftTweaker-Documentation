@@ -1,15 +1,15 @@
 # IDamageSource
 
-An IDamageSource object is the source of damage to an entity.
+IDamageSource 对象是实体受伤的来源。
 
-## Importing the class
+## 导入类
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+可能需要 [导入](/AdvancedFunctions/Import/) 类来避免错误。  
 `import crafttweaker.damage.IDamage`
 
-## Zengetters and ZenMethods without parameters
+## Zengetters 和无参数的 ZenMethods
 
-| ZenGetter        | ZenMethod                         | Return Type                           |
+| ZenGetter        | ZenMethod                         | 返回值类型                                 |
 | ---------------- | --------------------------------- | ------------------------------------- |
 | harmInCreative   | canHarmInCreative();              | bool                                  |
 | damageType       | getDamageType();                  | string                                |
@@ -32,13 +32,13 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 |                  | setMagicDamage();                 | IDamageSource                         |
 |                  | setProjectile();                  | IDamageSource                         |
 
-## ZenMethod with Parameters
+## 带参数的ZenMethod
 
-- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → Returns a string containing the death message for the entity if it dies by this damageSource
+- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → 如果实体死于这个伤害源（damageSource），返回一个包含死亡信息的字符串
 
-## Getting an IDamageSource Object
+## 获取 IDamageSource 对象
 
-You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/).
+你也可以使用这些方法或 [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/)。
 
 ```kotlin
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
