@@ -26,7 +26,7 @@ A Brewing Recipe consists of 3 Parts:
 
 ### Remove Brewing Recipes
 
-Still doesn't work with JEI!!
+Only works with JEI version 4.15.0.275 or higher.
 
     //brewing.removeRecipe(IItemStack input, IItemStack ingredient);
     brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);

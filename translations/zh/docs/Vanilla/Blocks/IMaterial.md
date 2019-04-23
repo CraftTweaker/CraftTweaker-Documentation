@@ -1,40 +1,40 @@
 # IMaterial
 
-An IMaterial object represents the material a block is made of.
+IMaterial 对象代表制作方块的材料。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMaterial;`
+如果你遇到问题 ，你可能需要导入相关包，为此，最安全的方法就是进行导入。  
+`import crafttweaker.block.IBlockPattern;`
 
-## ZenGetters/ZenMethods without parameters
+## 不带参数的 ZenGetters/ZenMethods
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter       | ZenMethod           | 返回值类型     |
+| --------------- | ------------------- | --------- |
+| blocksLight     | blocksLight()       | bool      |
+| blocksMovement  | blocksMovement()    | bool      |
+| canBurn         | getCanBurn()        | bool      |
+| mobilityFlag    | getMobilityFlag()   | string    |
+| liquid          | isLiquid()          | bool      |
+| opaque          | isOpaque()          | bool      |
+| replaceable     | isReplaceable()     | bool      |
+| solid           | isSolid()           | bool      |
+| toolNotRequired | isToolNotRequired() | bool      |
+|                 | setReplaceable()    | IMaterial |
 
-## ZenMethods with parameters
+## 带参数的 ZenMethods
 
-### Check if two IMaterials match
+### 检查两个 IMaterials 是否匹配
 
-Uses an IMaterial.  
-Returns a bool.
+接受一个 IMaterial。  
+返回一个 bool。
 
     materialObj.matches(IMaterial other);
     
 
-## Getting Vanilla Minecraft Materials
+## 获取原版 Minecraft 的材料
 
-You can use these methods to get the vanilla minecraft materials
+你可以使用这些方法来获取原版 Minecraft 的材料
 
     crafttweaker.blocks.IMaterial.air();
     crafttweaker.blocks.IMaterial.anvil();

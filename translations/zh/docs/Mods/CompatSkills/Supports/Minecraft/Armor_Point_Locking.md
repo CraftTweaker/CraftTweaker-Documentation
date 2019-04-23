@@ -1,10 +1,10 @@
-# Armor-Value Locking
+# 护甲值锁定
 
-## Feature:
+## 功能：
 
-This type of lock, locks the ability to use armor that provides a certain amount of Armor Points behind a set of requirements. This means that if an armor provides 0.75 armor point, as in the example below, you can lock it behind only being useable in the End (Aka Dim 1)!
+这类锁定，通过条件锁定了使用提供特定护甲值的装备的能力。 就是说，如果一个装备提供0.75护甲值，在下面的例子中，你可以使它仅用于末地(Dim 1)！
 
-## Syntax:
+## 语法：
 
     mods.compatskills.ArmorLock.addArmorLock(double armor, String... requirements);
     

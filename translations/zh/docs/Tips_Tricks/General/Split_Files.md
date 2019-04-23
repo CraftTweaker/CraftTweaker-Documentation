@@ -16,7 +16,7 @@
 ## 解决方法
 
 - 把你的大脚本拆分成多个小脚本。
-- You could for example create one script for each mod, or each mod handler.
+- 你也可以为每个模组或者每个模组处理程序写一个脚本。
 
 ## 例子
 

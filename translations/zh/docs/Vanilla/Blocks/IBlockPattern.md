@@ -1,32 +1,32 @@
 # IBlockPattern
 
-An IBlockPattern is an interface that allows for combining several blocks into one object.  
-It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
+IBlockPattern 接口允许你将几个方块绑定到一个对象。  
+这和 [IIngredient](/Vanilla/Variable_Types/IIngredient/) 接口与 [IItemStacks](/Vanilla/Items/IItemStack/) 的关系相似。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+如果你遇到问题 (例如创建 [数组](/AdvancedFunctions/Arrays_and_Loops/))，你可能需要导入相关包，为此，最安全的方法就是进行导入。  
 `import crafttweaker.block.IBlockPattern;`
 
-## Calling an IBlockPattern Object
+## 调用 IBlockPattern 对象
 
-Technically, each time you call an [IBlock](/Vanilla/Blocks/IBlock/) object, you call an IBlockPattern object.  
-But there are cases when you explicitly get an IBlockPattern Object as return.
+技术上，每当你调用 [IBlock](/Vanilla/Blocks/IBlock/) 对象时，你都会调用到 IBlockPattern 对象。  
+但也有一些情况会明确地返回 IBlockPattern 对象。
 
-* OR two [IBlocks](/Vanilla/Blocks/IBlock/)
+* 对两个 [IBlocks](/Vanilla/Blocks/IBlock/) 执行 OR 运算
 
 ## ZenGetters
 
-| ZenGetter   | What does it do                                | Return Type                             |
-| ----------- | ---------------------------------------------- | --------------------------------------- |
-| blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | Returns the displayNames of the fitting blocks | String                                  |
+| ZenGetter   | 功能          | 返回值类型                                   |
+| ----------- | ----------- | --------------------------------------- |
+| blocks      | 返回所有可能方块的列表 | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
+| displayName | 返回恰当方块的显示名称 | String                                  |
 
-## OR
+## OR 运算
 
-You can OR two IBlockPattern Objects using the OR `|` Operator
+你可以用 OR 运算符 `|` 对两个 IBlockPattern 对象执行 OR 运算
 
-## Matching
+## 匹配
 
-You can check if an IBlockPatternObject contains another using the `in` keyword.  
-For example, you could check if a Block is in an IBlockPattern.
+你可以用 `in` 关键字检查一个 IBlockPattern 对象是否包含另一个。  
+例如，你可以检查一个 Block 是否被一个 IBlockPattern 包含。

@@ -40,6 +40,7 @@ pages:
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
       - IBlockProperties: 'Vanilla/Blocks/IBlockProperties.md'
       - IBlockState: 'Vanilla/Blocks/IBlockState.md'
+      - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
     - Brackets:
@@ -47,6 +48,7 @@ pages:
       - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Items: 'Vanilla/Brackets/Bracket_Item.md'
+      - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
       - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
       - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
@@ -107,10 +109,12 @@ pages:
         - EntityLivingFallEvent: 'Vanilla/Events/Events/EntityLivingFall.md'
         - EntityLivingHurtEvent: 'Vanilla/Events/Events/EntityLivingHurt.md'
         - EntityLivingJumpEvent: 'Vanilla/Events/Events/EntityLivingJump.md'
+        - EntityLivingSpawnEvent: 'Vanilla/Events/Events/EntityLivingSpawn.md'
         - EntityStruckByLightningEvent: 'Vanilla/Events/Events/EntityStruckByLightning.md'
         - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
         - LivingEntityUseItemEvent: 'Vanilla/Events/Events/LivingEntityUseItem.md'
+        - PlayerAdvancementEvent: 'Vanilla/Events/Events/PlayerAdvancement.md'
         - PlayerAnvilRepairEvent: 'Vanilla/Events/Events/PlayerAnvilRepair.md'
         - PlayerAttackEntityEvent: 'Vanilla/Events/Events/PlayerAttackEntity.md'
         - PlayerBonemealEvent: 'Vanilla/Events/Events/PlayerBonemeal.md'
@@ -176,6 +180,8 @@ pages:
         - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
       - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+    - Tile-Entity:
+      - IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
     - Utils:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
@@ -412,7 +418,7 @@ pages:
         - Combustion Generator: 'Mods/Ender_Tweaker/Combustion_Generator.md'
         - Enchanter:  'Mods/Ender_Tweaker/Enchanter.md'
         - SAG Mill: 'Mods/Ender_Tweaker/SAG_Mill.md'
-        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice .md'
+        - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice.md'
         - Soul Binder:  'Mods/Ender_Tweaker/Soul_Binder.md'
         - The Vat: 'Mods/Ender_Tweaker/The_Vat.md'
     - Extra Utilities 2:
@@ -501,6 +507,8 @@ pages:
       - MechanicalDryingBasin: 'Mods/IntegratedDynamics/MechanicalDryingBasin.md'
       - Squeezer: 'Mods/IntegratedDynamics/Squeezer.md'
       - MechanicalSqueezer: 'Mods/IntegratedDynamics/MechanicalSqueezer.md'
+    - InWorldCrafting:
+      - InWorldCrafting: 'Mods/InWorldCrafting/InWorldCrafting.md'
     - JAOPCA:
       - JAOPCA: 'Mods/JAOPCA/JAOPCA.md'
       - OreEntry: 'Mods/JAOPCA/OreEntry.md'
@@ -580,6 +588,7 @@ pages:
       - Forestry:
         - Carpenter: 'Mods/Modtweaker/Forestry/Carpenter.md'
         - Centrifuge: 'Mods/Modtweaker/Forestry/Centrifuge.md'
+        - Charcoal Pile: 'Mods/Modtweaker/Forestry/Charcoal_Pile.md'
         - Fermenter: 'Mods/Modtweaker/Forestry/Fermenter.md'
         - Moistener: 'Mods/Modtweaker/Forestry/Moistener.md'
         - Squeezer: 'Mods/Modtweaker/Forestry/Squeezer.md'
@@ -626,11 +635,20 @@ pages:
           - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
         - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
       - Thermal Expansion:
+        - Dynamos:
+          - Compression Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/CompressionDynamo.md'
+          - Enervation Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/EnervationDynamo.md'
+          - Magmatic Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/MagmaticDynamo.md'
+          - Numistic Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/NumisticDynamo.md'
+          - Reactant Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/ReactantDynamo.md'
+          - Steam Dynamo: 'Mods/Modtweaker/ThermalExpansion/Dynamos/SteamDynamo.md'
         - Alchemical Imbuer: 'Mods/Modtweaker/ThermalExpansion/Imbuer.md'
         - Arcane Ensorcellator (Enchanter): 'Mods/Modtweaker/ThermalExpansion/Enchanter.md'
         - Centrifugal Seperator: 'Mods/Modtweaker/ThermalExpansion/Centrifugal_Seperator.md'
         - Compactor: 'Mods/Modtweaker/ThermalExpansion/Compactor.md'
+        - Coolant: 'Mods/Modtweaker/ThermalExpansion/Coolant.md'
         - Energetic Infuser: 'Mods/Modtweaker/ThermalExpansion/Energetic_Infuser.md'
+        - Factorizer: 'Mods/Modtweaker/ThermalExpansion/Factorizer.md'
         - Fluid Transposer: 'Mods/Modtweaker/ThermalExpansion/Fluid_Transposer.md'
         - Fractionating Still (Refinery): 'Mods/Modtweaker/ThermalExpansion/Refinery.md'
         - Induction Smelter: 'Mods/Modtweaker/ThermalExpansion/InductionSmelter.md'
@@ -720,6 +738,11 @@ pages:
     - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
     - How to create files online: 'Contribute/OnlineEditor_Create.md'
     - How to file a Pull Request: 'Contribute/PullRequest.md'
+    - Using a local version: 
+      - How to install git: 'Contribute/LocalClone/InstallingGit.md'
+      - How to clone: 'Contribute/LocalClone/Clone.md'
+      - How to commit: 'Contribute/LocalClone/CreateCommit.md'
+      - How to push: 'Contribute/LocalClone/Push.md'
   - Entwicklerbereich:
     - Using IIngredients: 'Dev_Area/Ingredients.md'
     - ZenTokens: 'Dev_Area/ZenTokens.md'
@@ -760,4 +783,4 @@ extra:
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
-  version: 'CrT v4.1.11'
+  version: 'CrT v4.1.15'

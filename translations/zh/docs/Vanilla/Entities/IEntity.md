@@ -3,7 +3,7 @@
 Entity Interface. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
@@ -133,4 +133,5 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 - boolean shouldRiderDismountInWater(IEntity rider)
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
-- [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks);
+- [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
+- void update([IData](/Vanilla/Data/IData/) data);

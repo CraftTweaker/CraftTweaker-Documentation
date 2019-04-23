@@ -1,13 +1,13 @@
-# Death Chest Spawning
+# 死亡箱生成
 
 ## 导入相关包
 
 `import mods.vanilladeathchest.DeathChestSpawning;`
 
-## Chat message
+## 聊天信息
 
     //DeathChestSpawning.setChatMessage(string stage, string message);
     DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, %s]!");
     
 
-The string takes three arguments: the X, Y and Z coordinates of the death chest.
+字符串包括三个参数：死亡箱的 X，Y，Z 坐标。

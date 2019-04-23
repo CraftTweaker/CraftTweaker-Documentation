@@ -1,11 +1,11 @@
-# PlayerExpansion
+# 对于玩家的扩展语句
 
 ## getSkillData
 
-getSkillData is a ZenGetter that is not directly used. But rather you access it by doing:
+getSkillData 是一个无法直接调用的 ZenGetter 方法。 但你可以这样调用它：
 
-    Example:
+    例：
     event.player.skillData
     
 
-This provides you with the "CTPlayerData" which is used to progress deeper into the Skill Data.
+这将返回能用于深入使用技能的数据：“CraftTweaker玩家数据”。
