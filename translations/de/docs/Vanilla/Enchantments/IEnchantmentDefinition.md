@@ -15,13 +15,14 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 
 | ZenGetter             | ZenSetter | Type    |
 | --------------------- | --------- | ------- |
-| id                    |           | string  |
+| id                    |           | int     |
 | name                  | name      | string  |
 | maxLevel              |           | int     |
 | minLevel              |           | int     |
 | isAllowedOnBooks      |           | boolean |
 | isTreasureEnchantment |           | boolean |
 | isCurse               |           | boolean |
+| registryName          |           | string  |
 
 ## ZenMethods
 
@@ -63,6 +64,16 @@ By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanil
 ```objectivec
 ench.makeEnchantment(int level);
 ench * level;
+```
+
+### Compare with other IEnchantmentDefinition objects
+
+You can use the `==` operator to check if two enchantments are the same.  
+This means if they have the same id.
+
+```objectivec
+if(enchA == enchB)
+    print("Same!");
 ```
 
 ## Example
