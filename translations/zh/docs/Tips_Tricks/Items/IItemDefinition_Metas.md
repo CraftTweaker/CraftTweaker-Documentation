@@ -1,6 +1,6 @@
-# Using IItemDefinitions to save a lot of time when referring meta-items
+# 使用 IItemDefinition 以节省引用方块实体附加值的时间
 
-## Problem
+## 问题
 
 Let's say we want to remove the recipes of some specific colors of wool.  
 White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
