@@ -12,11 +12,11 @@ pages:
     - Ассоциативные массивы (карты): 'AdvancedFunctions/Associative_Arrays.md'
     - Вычисления: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - Связь между скриптами: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
-    - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
+    - Глобальные и статические переменные: 'AdvancedFunctions/Global_Static_Variables.md'
+    - Импорт: 'AdvancedFunctions/Import.md'
+    - Препроцессоры:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
@@ -24,9 +24,9 @@ pages:
       - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
       - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
+  - Советы и подсказки:
+      - Предисловие: 'Tips_Tricks/Foreword.md'
+      - Предметы:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - General Tips:
         - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
