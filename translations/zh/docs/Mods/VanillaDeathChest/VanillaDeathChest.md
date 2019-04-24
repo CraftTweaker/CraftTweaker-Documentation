@@ -6,6 +6,6 @@
 
 原版死亡箱子可以配合 [游戏阶段](https://minecraft.curseforge.com/projects/game-stages) 和 CraftTweaker 来让死亡箱的使用随着玩家发展越来越困难。
 
-如果有属性没用CraftTweaker设置的话，将会使用全局配置中的设置。 Game stages should be defined in order. Calling any of the VanillaDeathChest functions causes the specified stage to be defined if it has not been already.
+如果有属性没用CraftTweaker设置的话，将会使用全局配置中的设置。 游戏阶段要按顺序定义 调用任何原版死亡箱子函数，如果还未定义指定阶段的话，将自动定义此阶段。
 
 Any messages that take arguments, such as the unlock failed chat message, follow [this](https://dzone.com/articles/java-string-format-examples) format. For example, `%2$s` refers to the second argument.
