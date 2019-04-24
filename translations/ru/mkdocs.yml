@@ -1,16 +1,16 @@
-# If you add a page, you must add it to the index here
+# Если добавляете страницу, вы должны добавить ее в это оглавление
 pages:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
+  - Главная: 'index.md'
+  - Начало работы со скриптами: 'Getting_Started.md'
+  - Использование этой вики: 'UsingThisWiki.md'
+  - Команды: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
+  - Глобальные функции: 'Vanilla/Global_Functions.md'
+  - Обработчики скобок: 'Brackets/Brackets.md'
+  - Расширенные функции:
+    - Массивы и циклы: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Ассоциативные массивы (карты): 'AdvancedFunctions/Associative_Arrays.md'
+    - Вычисления: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
@@ -764,7 +764,7 @@ pages:
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
-# Do not edit in PRs below here
+# Не меняйте в PRs то, что ниже
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
