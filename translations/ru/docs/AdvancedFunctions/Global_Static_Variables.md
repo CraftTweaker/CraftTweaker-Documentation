@@ -1,12 +1,12 @@
-# Global and Static Variables
+# Глобальные и статические переменные
 
-Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
-"Why is there no way to make them available in every script?" Is what went through your head at such times.
+Наверно вы были в ситуации, когда объявляли одну и ту же переменную в каждом скрипте снова и снова.  
+"Почему нет другого способа сделать их доступными в каждом скрипте?" — что-то такое приходило вам в голову каждый раз.
 
-Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
-They cannot be changed, though.
+Почувствуйте облегчение — для этого есть способ объявить доступное глобально либо привязанное к скрипту (статическое) значение.  
+Изменить их, однако, нельзя.
 
-## Difference between statics and globals
+## Разница между статическими и глобальными
 
 Both, statics and globals are scriptbound and instantiated before the script is executed.  
 Both cannot be changed.  
