@@ -4,7 +4,7 @@ IBiome 接口允许你获取注册的生物群系的信息。
 
 ## 导入相关包
 
-如果你遇到问题 (例如创建 [数组](/AdvancedFunctions/Arrays_and_Loops/))，你可能需要导入相关包，为此，最安全的方法就是进行导入。  
+如果你遇到问题（例如创建 [数组](/AdvancedFunctions/Arrays_and_Loops/)），你可能需要导入相关包，为此，最安全的方法就是进行导入。  
 `import crafttweaker.world.IBiome;`
 
 ## 调用 IBiome
