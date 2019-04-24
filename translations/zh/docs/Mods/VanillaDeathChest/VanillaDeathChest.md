@@ -8,4 +8,4 @@
 
 如果有属性没用CraftTweaker设置的话，将会使用全局配置中的设置。 游戏阶段要按顺序定义 调用任何原版死亡箱子函数，如果还未定义指定阶段的话，将自动定义此阶段。
 
-Any messages that take arguments, such as the unlock failed chat message, follow [this](https://dzone.com/articles/java-string-format-examples) format. For example, `%2$s` refers to the second argument.
+任何带参数的消息，比如解锁失败的聊天信息，用 [这个](https://dzone.com/articles/java-string-format-examples) 格式。 比如，`%2$s` 指第二个参数。
