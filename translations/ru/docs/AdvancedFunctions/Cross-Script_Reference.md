@@ -6,18 +6,18 @@
 ## Характеристики
 
 - Ссылки между скриптами начинаются с `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Вы можете указать относительный путь в папке scripts (например `scripts.мояПодпапка.a.zs`)
+- Вы можете использовать обращение через точку в [операторе импорта](/AdvancedFunctions/Import/), если хотите.
+- ZS сначала проверяет подходящие папки, а затем подходящие файлы или значения.
 
-## Example
+## Пример
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Допустим, у нас есть два скрипта `a.zs` и `b.zs`.
 
 a.zs:
 
 ```kotlin
-static myVal as string = "myVal";
+static myVal as string = "мое значение";
 
 function makeLine() {
     print("---------------");
