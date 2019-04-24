@@ -1,11 +1,11 @@
-# Cross-Script Reference
+# Связь между скриптами
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Все скрипты, которые имеют[статические переменные](/AdvancedFunctions/Global_Static_Variables/) или [пользовательские функции](/AdvancedFunctions/Custom_Functions/) доступны для связи между скриптами.  
+Это позволяет вам иметь доступ к этим полям/функциями через обращением с помощью точек.
 
-## Specifications
+## Характеристики
 
-- Cross-script references start with `scripts.`
+- Ссылки между скриптами начинаются с `scripts.`
 - You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
 - You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
 - ZS first checks for matching directories then for matching files or values.
