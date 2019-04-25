@@ -1,9 +1,9 @@
-# Ignore Bracket Errors Preprocessor
+# Препроцессор игнорирования ошибок в скобках
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+Этот препроцессор настраивает ваш скрипт, чтобы игнорировать ошибки в скобках.  
+Это НИ В КОЕМ СЛУЧАЕ не исправляет магически ваш скрипт, а просто подавляет сообщения об ошибках.
 
-## Call
+## Вызов
 
 You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
 This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
