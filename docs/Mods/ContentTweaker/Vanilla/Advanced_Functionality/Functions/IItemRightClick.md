@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 
 ## Parameters
-The IItemRightClickFunction is a function with the following parameters:
+The IItemRightClick function is a function with the following parameters:
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is right-clicked
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
