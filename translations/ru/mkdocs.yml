@@ -70,7 +70,7 @@ pages:
     - Урон:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
     - Сущности:
-      - Attributes:
+      - Атрибуты:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
@@ -659,7 +659,7 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Рецепты: 
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
