@@ -6,26 +6,26 @@ ZenScript — язык сценариев «сверху вниз». Это зн
 
 ## Введение
 
-Делая модпак, вы обнаружили, что накидав несколько модов, вы не получили ощущения связанности? Так как моды разрабатываются независимо друг от друга, один может быть невообразимо мощным в сравнении с другим. Либо же вы считаете, что для некоторых предметов рецепт можно было бы сделать и получше. Или возможно вы хотите удалить предмет из игры, не удаляя мод целиком. Ну или вы обнаружили, что некоторые записи словаря руд содержат слишком много или слишком мало предметов. Now you can do all of that - each with just a single instruction to MineTweaker.
+Делая модпак, вы обнаружили, что накидав несколько модов, вы не получили ощущения связанности? Так как моды разрабатываются независимо друг от друга, один может быть невообразимо мощным в сравнении с другим. Либо же вы считаете, что для некоторых предметов рецепт можно было бы сделать и получше. Или возможно вы хотите удалить предмет из игры, не удаляя мод целиком. Ну или вы обнаружили, что некоторые записи словаря руд содержат слишком много или слишком мало предметов. Теперь вы можете сделать все это одной инструкцией MineTweaker.
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+Помимо основных функций, чтобы расширить Minecraft, есть также библиотеки для интеграции с модами, чтобы менять не только рецепты в верстаке, но и рецепты в механизмах из модов или поведение модов.
 
-## Scripts
+## Скрипты
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+Скрипты содержатся в `<minecraftdir>/scripts` и загружаются в фазе `пре-инициализации` Minecraft. В отличие от предыдущих версий Crafttweaker, скрипты не могут быть перезагружены из-за изменений, сделанных Mojang в 1.12. Возможности обойти их нет. Кроме того, скрипты должны быть **ОДНОВРЕМЕННО и на сервере, и на клиенте**, чтобы работать.
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+Файлы скриптов используют расширение `.zs` и могут быть сжаты в `.zip`, сохраняя возможность чтения.
 
-### Writing your first script
+### Написание вашего первого скрипта
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+Чтобы начать работать со скриптами, можете создать простой файл, названный `hello.zs` в папке `<minecraftdir>/scripts`.
 
-In `hello.zs` put the following line
+В `hello.zs` вставьте следующую строку
 
-    print("Hello world!");
+    print("Привет, мир!");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+Теперь загрузите Minecraft и обратите внимание на файл `crafttweaker.log`.
 
 The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
 
