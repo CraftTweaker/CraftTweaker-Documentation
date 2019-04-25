@@ -352,6 +352,7 @@ pages:
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IItemUseFinish: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish.md'
             - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
             - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
