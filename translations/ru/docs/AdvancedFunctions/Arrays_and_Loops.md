@@ -36,9 +36,9 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
     val stringArrayAll = [stringArray1,stringArray2,stringArray3,["бабочка","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## Обращение к элементам массива
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Вы можете ссылаться на элемент в массиве, используя его место в списке. Первый элемент массива — номер 0, второй — номер 1 и так далее.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
