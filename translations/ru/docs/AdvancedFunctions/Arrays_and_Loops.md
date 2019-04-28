@@ -26,14 +26,14 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## Вложенные массивы
 
-You can place Arrays in Arrays.
+Вы можете разместить массивы в массивах.
 
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beatuful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["Привет", "мир"] as string[];
+    val stringArray2 = ["Я"," — "] as string[];
+    val stringArray3 = ["очень","красивая"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["бабочка","!"]] as string[][];
     
 
 ## Reffering to items in an Array
