@@ -1,16 +1,16 @@
-# 모드로더사전처리기
+# ModLoaderPreprocessor
 
-모드로더사전처리기는 특정 모드가 있는 경우에만 스크립트를 실행한다.
+ModLoaderPreprocessor는 특정 모드가 있는 경우에만 스크립트를 실행합니다.
 
 ## 호출
 
-`#수정된 모드를 추가하여 모드로더 사전처리기를 호출하는 경우<code>모드를 사용하여 스크립트 파일에 대한 Id `Id </code>은 확인하고자 하는 모드ID가 되는 경우:   
-예: `#modloaded minecraft `
+`#수정된 모드ID`를 추가하여 ModLoaderPreprocessor를 호출하는 경우`모드를 사용하여 스크립트 파일에 대한 `Id </code>은 확인하고자 하는 모드ID가 되는 경우:   
+예: `#modloaded minecraft </0></p>
 
-여러 모드를 제공할 수도 있다. 아이디:  
-`#modloaded market construct `은 마인크래프트와 팅커스 컨스트럭트가 로드된 경우에만 실행된다.
+<p>여러 모드를 제공할 수도 있습니다. 모드아이디들:<br />
+<code>#modloaded market construct `은 마인크래프트와 팅커스 컨스트럭트(tconstruct) 가 로드된 경우에만 실행됩니다.
 
-또한 모드가 로드되지 않은 경우에만 로드되도록 모드 조건을 반전시킬 수 있다. `#modloaded !tconstruct mintcraft `은 마인크래프트가 존재하고 텅커스 컨스트럭트가 없는 경우에만 실행된다.
+또한 모드가 로드되지 않은 경우에만 로드되도록 모드 조건을 반전시킬 수 있습니다. `#modloaded !tconstruct mintcraft `은 마인크래프트가 존재하고 텅커스 컨스트럭트(tconstruct)가 없는 경우에만 실행됩니다.
 
 ## 그것이 하는 일
 
