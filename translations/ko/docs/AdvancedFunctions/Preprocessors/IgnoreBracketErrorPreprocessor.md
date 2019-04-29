@@ -1,7 +1,7 @@
 # Ignore Bracket Errors Preprocessor
 
-이 Preprocessor에서는 백셋 오류무시( ignore backet errors) 를하도록 스크립트를 설정하십시오.  
-이것은 당신의 스크립트를 어떤 식으로든, 모양을 만들거나 또는 마법처럼 수정하지 않습니다. 그것은 오류 로그를 압축합니다.
+이 Preprocessor는 대괄호 오류(bracket errors) 를 무시하도록 설정합니다.  
+이는 스크립트를 마법처럼 수정하거나 변경하지 않고, 오류 로그를 숨기는 역할을 합니다.
 
 ## 호출
 
