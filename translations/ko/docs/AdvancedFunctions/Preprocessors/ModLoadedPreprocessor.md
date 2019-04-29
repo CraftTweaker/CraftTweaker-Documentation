@@ -8,10 +8,10 @@
 예: `#modloaded minecraft `
 
 여러 모드를 제공할 수도 있다. 아이디:  
-`#modloaded market construct `은 마인크래프트와 T컨스트럭트가 적재된 경우에만 실행된다.
+`#modloaded market construct `은 마인크래프트와 팅커스 컨스트럭트가 적재된 경우에만 실행된다.
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+또한 모드가 로드되지 않은 경우에만 로드되도록 모드 조건을 반전시킬 수 있다. `#modloaded !tconstruct mintcraft `은 마인크래프트가 존재하고 텅커스 컨스트럭트가 없는 경우에만 실행된다.
 
-## What it does
+## 그것이 하는 일
 
 If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
