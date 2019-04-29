@@ -1,10 +1,10 @@
-# 디버그 프리프로세서
+# DebugPreprocessor
 
-디버그 프리프로세서는 디버그 모드를 활성화합니다.
+DebugPreprocessor는 디버그 모드를 활성화합니다.
 
 ## 호출
 
-스크립트 파일에 `#debug `을 추가하여 DebugPreprocessor를 동작시킵니다.
+스크립트 파일에 `#debug `을 추가하여 DebugPreprocessor를 호출하십시오.
 
 ## 역할
 
