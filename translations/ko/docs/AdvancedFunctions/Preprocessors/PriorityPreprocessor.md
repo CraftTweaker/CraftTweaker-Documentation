@@ -4,9 +4,9 @@
 
 ## 호출
 
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+스크립트에 `#priority number`을(를) 추가하여 우선 순위 사전 처리기를 호출하고, 설정하려는 우선 순위 번호는 `숫자`번으로 설정하십시오.
 
-## What it does
+## 그것이 하는 일
 
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+스크립트의 우선순위가 높을수록 더 빨리 실행된다.  
+우선순위가 같은 스크립트는 경로 이름을 사용하여 알파벳순으로 정렬된다.
