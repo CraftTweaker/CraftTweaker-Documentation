@@ -5,10 +5,10 @@
 
 ## 호출
 
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+스크립트 파일 안에 `#ignoreBracketErrors `을 넣어 브래킷 오류 사전 프로세서 무시를 호출할 수 있다.  
+이 프리프로세서는 파일마다 다르기 때문에 한 파일에 호출하는 것은 다른 파일에는 영향을 미치지 않는다.
 
-## What it does
+## 그것이 하는 일
 
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+파일에 프리프로세서가 호출되면 브래킷 오류에 대한 모든 오류 로그가 압축된다.  
+이것은 어떤 식으로든 영향을 받는 선을 바꾸지 않는다. 대신, 유일한 변화는 당신의 로그에 관련된 줄이 포함되어 있지 않다는 것이다.
