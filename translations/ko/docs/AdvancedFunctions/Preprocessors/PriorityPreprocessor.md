@@ -1,8 +1,8 @@
-# PriorityPreprocessor
+# 우선 순위 사전처리기
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+우선 순위 사전처리기를 사용하면 스크립트 로드에 우선 순위를 부여할 수 있다.
 
-## Call
+## 호출
 
 You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
 
