@@ -43,20 +43,20 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
     [PREINITIALIZATION][CLIENT][INFO] Hello world!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+이 구문은 디버그 목적으로 사용되며 구문을 사용하지 않는 부분은 덤프 명령으로인한 메시지 출력 부분입니다. 이 덤프를 복사-붙혀넣기를 하여 이용하면 쉽습니다.
 
-### Comments
+### 주석
 
-Comments can be used to make your script files more readable and easier to understand!
+주석은 스크립트 파일을 더 읽기 쉽고 이해하기 쉽게 만드는데 도움을 줍니다.
 
-ZenScript supports 3 types of comments, being:
+ZenScript는 다음과 같은 세 가지 유형의 주석을 지원합니다.
 
-Single line: `// I'm a single line comment!`
+한 라인: `// 한 줄 주석입니다.`
 
-Alternate Single Line: `# I'm also a single line comment!`
+또 다른 한 라인: `# 이것 또한 한줄 주석입니다.`
 
-Multiline:
+복수 라인:
 
-    /* I'm 
-    a
-    multiline comment! */
+    /* 이건
+    복수 라인의
+    주석입니다. */
