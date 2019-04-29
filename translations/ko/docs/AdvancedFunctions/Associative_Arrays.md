@@ -4,7 +4,7 @@
 
 ## Declaring an Associative Array
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+당신은 중괄호 `{}`및 콜론 `:`을 사용하여 연관 배열을(를) 선언한다.
 
 ```JAVA
 val myAssocArray = {
@@ -13,10 +13,10 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+이걸 분해해 볼까요, 응?
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
+- `val myAssocArray =` 표준 변수 선언
+- `{` 이것은 Associative Array입니다. 선생님!
 - `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
 - `,` wait, there's more to come
 - `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
