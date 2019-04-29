@@ -19,7 +19,7 @@
 
 여기 있는 모든 배열에는 `as`이라는 문구가 추가되어 있는 것을 분명히 알아차렸을 것입니다.  
 왜 물어보십니까? 왜냐하면 ZenScript는 배열의 항목이 어떤 유형인지 예측하지 못하는 경우가 있기 때문입니다. 이것은 이상한 변환 오류 로그의 원인이 될 수 있습니다!  
-후회하는 것보다 안전한 게 낫고, 올바른 유형으로 집합체를 주조하는 게 낫습니다!  
+후회하는 것보다 안전한 게 낫고, 올바른 유형으로 배열를 주조하는 게 낫습니다!  
 또한 비기본 유형( 문자열, ints 등을 제외한 모든 항목) 에 주조한 경우, 해당 패키지는 [불러오기](Import/)을 확실히 하고 스크립트의 정상에서 다음을 수행하십시오.
 
     import crafttweaker.item.IItemStack;
@@ -28,7 +28,7 @@
 
 ## Nested Arrays
 
-당신은 집합체를 집합체에 배치할 수 있습니다.
+당신은 배열을 배열에 배치할 수 있습니다.
 
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
@@ -38,9 +38,9 @@
 
 ## Reffering to items in an Array
 
-목록에서 배치 위치를 사용하여 배열 내의 요소를 참조할 수 있습니다. The first item in an Array is No. 0, the 2nd No.1 and so on.
+목록에서 배치 위치를 사용하여 배열 내의 요소를 참조할 수 있습니다. 배열의 첫 번째 항목은 아니오입니다. 0, 2번 1번 등.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+중첩된 배열의 항목을 참조하려면 각각 목록의 한 레이어를 제거하기 때문에 두 개 이상의 참조자가 필요합니다.
 
     /*
     stringArray[0] is "Hello"
@@ -77,12 +77,12 @@ If you want to refer to an item in a nested Array, you need two or more referers
 
 # Loops
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+루프는 스스로를 반복하는 기능입니다. 루프를 사용하여 배열의 모든 요소에 작업 적용할수있습니다.
 
 ## For Loop
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+루프의 주된 용도는 배열을 통한 반복입니다. 반복은 배열의 모든 요소에 대해 작업을 수행하는 것을 의미합니다.  
+`break` 단어를 사용하여 루프를 조기에 끊을 수 있습니다.
 
     import crafttweaker.item.IItemStack;
     
