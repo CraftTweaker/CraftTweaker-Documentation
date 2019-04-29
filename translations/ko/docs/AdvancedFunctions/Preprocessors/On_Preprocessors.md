@@ -11,7 +11,7 @@
 사전처리기 키워드로 시작할 수 있으므로 주의하십시오.
 
 ```JAVA
-#debug is my favorite word I like to add it everywhere as a comment
+#debug 는 내가 가장 좋아하는 단어다. 나는 그것을 주석으로 어디에나 덧붙이고 싶다.
 ```
 
-↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
+↑` modedebug `이 발견되면 디버그 모드를 활성화할 것이다. 이런 희귀한 사례가 발생하지 않도록 하려면, 코멘트는 `//`을 사용하십시오.
