@@ -17,8 +17,8 @@
 
 ## Casting Arrays
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+여기 있는 모든 배열에는 `as`이라는 문구가 추가되어 있는 것을 분명히 알아차렸을 것입니다.  
+왜 물어보십니까? 왜냐하면 ZenScript는 배열의 항목이 어떤 유형인지 예측하지 못하는 경우가 있기 때문입니다. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
