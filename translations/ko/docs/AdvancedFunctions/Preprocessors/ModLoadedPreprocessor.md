@@ -1,17 +1,17 @@
-# ModLoaderPreprocessor
+# 모드로더사전처리기
 
-The modLoaded Preprocessor only executes a script, if a certain mod is present.
+모드로더사전처리기는 특정 모드가 있는 경우에만 스크립트를 실행한다.
 
-## Call
+## 호출
 
-You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
-Example: `#modloaded minecraft`
+`#수정된 모드를 추가하여 모드로더 사전처리기를 호출하는 경우<code>모드를 사용하여 스크립트 파일에 대한 Id `Id </code>은 확인하고자 하는 모드ID가 되는 경우:   
+예: `#modloaded minecraft `
 
-You can also provide multiple modID's:  
-`#modloaded minecraft tconstruct` will only be executed if minecraft AND tconstruct are loaded.
+여러 모드를 제공할 수도 있다. 아이디:  
+`#modloaded market construct `은 마인크래프트와 팅커스 컨스트럭트가 로드된 경우에만 실행된다.
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+또한 모드가 로드되지 않은 경우에만 로드되도록 모드 조건을 반전시킬 수 있다. `#modloaded !tconstruct mintcraft `은 마인크래프트가 존재하고 텅커스 컨스트럭트가 없는 경우에만 실행된다.
 
-## What it does
+## 그것이 하는 일
 
-If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
+이 사전 처리기를 스크립트에 추가한 경우 제공된 모드가 실행될 때만 모드ID가 존재하며, 다시 말해서 종속된 모드들이 로드된 경우.
