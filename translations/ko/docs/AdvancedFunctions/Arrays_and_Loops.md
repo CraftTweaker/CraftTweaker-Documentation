@@ -13,7 +13,7 @@
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+"잠깐, 내가 전에 이 괄호들을 본 적이 없어?"라고 생각한다면, 여러분은 본 적이 있습니다. 기억하세요. ```recipes.add(out,[[],[],[]]);```? 이것은 각각 최대 3개의 항목이 포함된 3개의 배열로 제작 테이블 레시피를 정의합니다.
 
 ## Casting Arrays
 
