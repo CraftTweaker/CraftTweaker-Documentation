@@ -6,7 +6,7 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 ## 소개
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+이제까지 모드팩을 만들면서 그냥 여러 모드들을 던져 넣고 통합시켰던 경험이 없습니까? 각 모드들은 상대적으로 독립적으로 개발되기 때문에 특정 모드와 비교했을 때 강력함을 느낄 수도 있습니다. 또는 일부 아이템들에 대해서 더 괜찮은 제조법이 있다고 생각할 수 있겠죠. 또는 모드를 제거하지 않고 특정 아이템만 제거하고 싶은 경우도 있을 수 있습니다. 또는 일부 광석사전 항목이 너무 많거나 너무 적은 경우를 발견할 수도 있습니다. Now you can do all of that - each with just a single instruction to MineTweaker.
 
 In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
 
