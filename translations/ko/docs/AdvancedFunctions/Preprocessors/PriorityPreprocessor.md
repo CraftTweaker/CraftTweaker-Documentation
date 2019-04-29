@@ -4,7 +4,7 @@ PriorityPreprocessor를 사용하면 스크립트 로드에 우선 순위를 부
 
 ## 호출
 
-스크립트에 `#priority number`을(를) 추가하여 PriorityPreprocessor를 호출하고, 설정하려는 우선 순위 번호는 `숫자`번으로 설정하십시오.
+스크립트에 `#priority number`를 추가하여 PriorityPreprocessor를 호출하고, 설정하려는 우선 순위 번호는 `number`로 설정하십시오.
 
 ## 역할
 
