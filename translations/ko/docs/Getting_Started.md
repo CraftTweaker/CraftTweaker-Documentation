@@ -16,18 +16,18 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 스크립트 파일은 확장자가 `.zs`이며 `.zip`으로 압축시켜도 읽을 수 있습니다.
 
-### Writing your first script
+### 첫 번째 스크립트 작성
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+시작은 `<minecraftdir>/scripts` 폴더에 `hello.zs`라는 아주 기본적인 파일을 만드는 것입니다.
 
-In `hello.zs` put the following line
+`hello.zs` 파일에 다음 코드를 입력하세요.
 
     print("Hello world!");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+이제 마인크래프트를 로드하고 `crafttweaker.log`파일을 확인하세요.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+`crafttweaker.log` 파일은 `<minecraftdir>`에 위치하고 있고 일반 텍스트 파일을 읽을 수 있는 모든 프로그램에서 읽을 수 있습니다.
 
 It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
 
