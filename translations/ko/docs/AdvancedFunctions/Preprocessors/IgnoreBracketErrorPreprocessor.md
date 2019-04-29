@@ -1,4 +1,4 @@
-# Ignore Bracket Errors Preprocessor
+# Bracket Errors Preprocessor 무시하기
 
 이 Preprocessor는 대괄호 오류(bracket errors) 를 무시하도록 설정합니다.  
 이는 스크립트를 마법처럼 수정하거나 변경하지 않고, 오류 로그를 숨기는 역할을 합니다.
