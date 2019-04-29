@@ -18,9 +18,9 @@
 ## Casting Arrays
 
 여기 있는 모든 배열에는 `as`이라는 문구가 추가되어 있는 것을 분명히 알아차렸을 것입니다.  
-왜 물어보십니까? 왜냐하면 ZenScript는 배열의 항목이 어떤 유형인지 예측하지 못하는 경우가 있기 때문입니다. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+왜 물어보십니까? 왜냐하면 ZenScript는 배열의 항목이 어떤 유형인지 예측하지 못하는 경우가 있기 때문입니다. 이것은 이상한 변환 오류 로그의 원인이 될 수 있습니다!  
+후회하는 것보다 안전한 게 낫고, 올바른 유형으로 집합체를 주조하는 게 낫습니다!  
+또한 비기본 유형( 문자열, ints 등을 제외한 모든 항목) 에 주조한 경우, 해당 패키지는 [불러오기](Import/)을 확실히 하고 스크립트의 정상에서 다음을 수행하십시오.
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
@@ -28,7 +28,7 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
 
 ## Nested Arrays
 
-You can place Arrays in Arrays.
+당신은 집합체를 집합체에 배치할 수 있습니다.
 
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
@@ -38,7 +38,7 @@ You can place Arrays in Arrays.
 
 ## Reffering to items in an Array
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+목록에서 배치 위치를 사용하여 배열 내의 요소를 참조할 수 있습니다. The first item in an Array is No. 0, the 2nd No.1 and so on.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
