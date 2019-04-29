@@ -1,22 +1,22 @@
-# If you add a page, you must add it to the index here
+# Если добавляете страницу, вы должны добавить ее в это оглавление
 pages:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
+  - Оглавление: 'index.md'
+  - Начало работы со скриптами: 'Getting_Started.md'
+  - Использование этой вики: 'UsingThisWiki.md'
+  - Команды: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
-    - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
+  - Глобальные функции: 'Vanilla/Global_Functions.md'
+  - Обработчики скобок: 'Brackets/Brackets.md'
+  - Расширенные функции:
+    - Массивы и циклы: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Ассоциативные массивы (карты): 'AdvancedFunctions/Associative_Arrays.md'
+    - Вычисления: 'AdvancedFunctions/Calculations.md'
+    - Условные выражения: 'AdvancedFunctions/Conditional_Statements.md'
+    - Связь между скриптами: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - Пользовательские функции: 'AdvancedFunctions/Custom_Functions.md'
+    - Глобальные и статические переменные: 'AdvancedFunctions/Global_Static_Variables.md'
+    - Импорт: 'AdvancedFunctions/Import.md'
+    - Препроцессоры:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
@@ -24,17 +24,17 @@ pages:
       - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
       - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
+  - Советы и подсказки:
+      - Предисловие: 'Tips_Tricks/Foreword.md'
+      - Предметы:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - General Tips:
         - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
         - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
-  - Vanilla:
-    - Biomes:
+  - Обычная игра:
+    - Биомы:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
+    - Блоки:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
@@ -43,34 +43,34 @@ pages:
       - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
-    - Brackets:
-      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
-      - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
-      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
-      - Items: 'Vanilla/Brackets/Bracket_Item.md'
+    - Скобки:
+      - Вкладки творческого режима: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - Источники урона: 'Vanilla/Brackets/Bracket_DamageSource.md'
+      - Зачарования: 'Vanilla/Brackets/Bracket_Enchantment.md'
+      - Предметы: 'Vanilla/Brackets/Bracket_Item.md'
       - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
-      - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
-      - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
-      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
-    - Commands:
+      - Сущности: 'Vanilla/Brackets/Bracket_Entity.md'
+      - Жидкости: 'Vanilla/Brackets/Bracket_Liquid.md'
+      - Руды: 'Vanilla/Brackets/Bracket_Ore.md'
+      - Зелья: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Команды:
       - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
       - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Контейнеры: 
       - IContainer: 'Vanilla/Container/IContainer.md'
-    - Creative Tabs:
+    - Вкладки творческого режима:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantments:
+    - Чары:
       - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
       - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
-    - Data:
+    - Данные:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
-    - Damage:
+    - Урон:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
-    - Entities:
-      - Attributes:
+    - Сущности:
+      - Атрибуты:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
@@ -659,7 +659,7 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Рецепты: 
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
@@ -764,7 +764,7 @@ pages:
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
 
-# Do not edit in PRs below here
+# Не меняйте в PRs то, что ниже
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
