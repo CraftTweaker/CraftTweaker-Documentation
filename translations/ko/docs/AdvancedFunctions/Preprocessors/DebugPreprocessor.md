@@ -1,12 +1,12 @@
-# DebugPreprocessor
+# 디버그프리프로세서
 
-The debugPreprocessor enables debug mode.
+디버그프리프로세서는 디버그 모드를 활성화한다.
 
-## Call
+## 호출
 
-You call the debug Preprocessor by adding `#debug` to your script file.
+스크립트 파일에 `#debug `을 추가하여 디버그 프리프로세서를 호출하십시오.
 
-## What it does
+## 그것이 하는 일
 
-It globally enables debug mode. This mode outputs the parsed script files.  
-You most likely will never need them.
+디버그 모드를 전체적으로 활성화한다. 이 모드는 구문 분석된 스크립트 파일을 출력한다.  
+너는 아마 그것들이 필요 없을 것이다.
