@@ -111,9 +111,7 @@
     for i in 0 to 10 {
         //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
         print(i);
-    }
-    
-    for i in 10 .. 20 {
+    } 20 {
         //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
         print(i);
     }
@@ -126,8 +124,8 @@
 
 ## While Loop
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+그 동안 루프 한 주어진 조건`true`.  
+로 지정된 코드를 시행하고 있습니다. 또는 당신은`break`단어를 사용하는 그것을 멈출 수 있습니다.
 
     var i = 0; 
     
@@ -160,9 +158,9 @@ Alternatively, you can stop it using the `break` keyword.
 
 # Adding items to an Array
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+권장되지는 않지만, 어레이에 일부 개체를 추가할 수 있습니다.  
+배열에 단일 개체만 추가할 수 있으며, 어레이 두 개를 추가할 수 없음  
+어레이 추가에 대해 `+` 연산자를 사용하는 경우:
 
 ```java
 import crafttweaker.item.IItemStack;
