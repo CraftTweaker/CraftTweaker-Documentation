@@ -1,10 +1,10 @@
 # Arrays
 
-An array is a List containing several items of the same kind.
+배열은 같은 종류의 여러 항목을 포함하는 목록입니다.
 
 ## Declaring Arrays
 
-It is declared using ```[``` and ```]```.
+을 사용하여 선언합니다. ```[``` 그리고 ```]```.
 
     //Array containing "Hello" and "World"
     val stringArray = ["Hello", "World"] as string[];
