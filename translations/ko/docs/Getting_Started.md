@@ -33,12 +33,12 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 ### craftweaker.log 파일
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+`crafttweaker.log` 파일의 출력내용에는 다음과 같은 특정 구문을 사용합니다.
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
 
-Using the example above, the output would be:
+위이 구문을 이용한 예제의 출력은 다음과 같습니다.
 
     [PREINITIALIZATION][CLIENT][INFO] Hello world!
     
