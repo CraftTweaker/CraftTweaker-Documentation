@@ -1,7 +1,7 @@
 # 위키 사용하기
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+이 위키는 어떤 타입이 crafttweaker에 있고 그 용도가 무엇인지에 대한 개요를 제공합니다.  
+특정 항목에서는 더 명확하게 하기 위해서 몇가지 예를 제공합니다.
 
 # 용어
 
@@ -19,17 +19,17 @@ ZenGetter는 항상 결과를 반환합니다. 여기의 경우에는 아이템�
 
 ## ZenSetter
 
-ZenSetter는 ZenGetter와 거의 같은 방식으로 작동하지만 ZenSetter는 값을 설정하고 ZenGetter는 값을 가져옵니다.</0> "displayName"이라는 ZenSetter를 가지고 있는 [IItemStack](/Vanilla/Items/IItemStack/)을 사용해봅시다. We know from the entry that it is of type string.
+ZenSetter는 ZenGetter와 거의 같은 방식으로 작동하지만 ZenSetter는 값을 설정하고 ZenGetter는 값을 가져옵니다.</0> "displayName"이라는 ZenSetter를 가지고 있는 [IItemStack](/Vanilla/Items/IItemStack/)을 사용해봅시다. 딱 봐도 문자열 유형인걸 알수 있습니다.
 
-We use the ZenSetter like this:
+ZenSetter는 다음과 같이 사용합니다.
 
     //object.zenSetter = newValue;
     <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
     
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+ZenSetter는 get이 아니기 때문에 아무것도 반환을 하지 않습니다.
 
-## Assign operators
+## 대입 연산자
 
 If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
 
