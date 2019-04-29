@@ -1,4 +1,4 @@
-# DebugPreprocessor
+# 디버그프리프로세서
 
 DebugPreprocessor는 디버그 모드를 활성화합니다.
 
