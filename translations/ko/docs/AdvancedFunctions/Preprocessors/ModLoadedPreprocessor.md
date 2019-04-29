@@ -1,8 +1,8 @@
-# ModLoaderPreprocessor
+# 모드로더프리프로세서
 
-The modLoaded Preprocessor only executes a script, if a certain mod is present.
+모드로더 프리프로세서는 특정 모드가 있는 경우에만 스크립트를 실행한다.
 
-## Call
+## 호출
 
 You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
 Example: `#modloaded minecraft`
