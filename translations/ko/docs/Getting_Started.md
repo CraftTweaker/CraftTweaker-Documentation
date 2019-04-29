@@ -29,9 +29,9 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 `crafttweaker.log` 파일은 `<minecraftdir>`에 위치하고 있고 일반 텍스트 파일을 읽을 수 있는 모든 프로그램에서 읽을 수 있습니다.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+스크립트 파일을 편집하려면 Notepad++ 혹은 Sunlime Text를 사용하는걸 권합니다. 그러나 다른 프로그램으로도 가능합니다.
 
-### The crafttweaker.log file
+### craftweaker.log 파일
 
 The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
 
