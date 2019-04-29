@@ -1,6 +1,6 @@
-# 디버그사전처리기
+# DebugPreprocessor
 
-디버그사전처리기는 디버그 모드를 활성화한다.
+DebugPreprocessor는 디버그 모드를 활성화한다.
 
 ## 호출
 
