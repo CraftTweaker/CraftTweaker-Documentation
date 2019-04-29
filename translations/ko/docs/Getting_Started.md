@@ -6,11 +6,11 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 ## 소개
 
-이제까지 모드팩을 만들면서 그냥 여러 모드들을 던져 넣고 통합시켰던 경험이 없습니까? 각 모드들은 상대적으로 독립적으로 개발되기 때문에 특정 모드와 비교했을 때 강력함을 느낄 수도 있습니다. 또는 일부 아이템들에 대해서 더 괜찮은 제조법이 있다고 생각할 수 있겠죠. 또는 모드를 제거하지 않고 특정 아이템만 제거하고 싶은 경우도 있을 수 있습니다. 또는 일부 광석사전 항목이 너무 많거나 너무 적은 경우를 발견할 수도 있습니다. Now you can do all of that - each with just a single instruction to MineTweaker.
+이제까지 모드팩을 만들면서 그냥 여러 모드들을 던져 넣고 통합시켰던 경험이 없습니까? 각 모드들은 상대적으로 독립적으로 개발되기 때문에 특정 모드와 비교했을 때 강력함을 느낄 수도 있습니다. 또는 일부 아이템들에 대해서 더 괜찮은 제조법이 있다고 생각할 수 있겠죠. 또는 모드를 제거하지 않고 특정 아이템만 제거하고 싶은 경우도 있을 수 있습니다. 또는 일부 광석사전 항목이 너무 많거나 너무 적은 경우를 발견할 수도 있습니다. 이제는 MineWeaker를 이용한 하나의 지시로 모든 작업을 수행 할 수 있습니다.
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+바닐라 마인크래프트를 지원하기 위해 제공되는 핵심 기능 외에도 모드 통합 라이브러리는 모드와 함께 제공됩니다. 이에 바닐라 제조법뿐만 아니라 모드에서 제공하는 제조법 및 모드의 동작을 수정할 수 있습니다.
 
-## Scripts
+## 스크립트
 
 Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
 
