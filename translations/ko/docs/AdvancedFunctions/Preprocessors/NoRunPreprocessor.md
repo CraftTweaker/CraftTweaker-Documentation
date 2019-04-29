@@ -1,10 +1,10 @@
-# NoRun Preprocessor
+# 노런 사전프로세서
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+노런 사전프로세서는 스크립트가 완전히 로드되지 않도록 한다.
 
-## Call
+## 호출
 
-You call the NoRun Preprocessor by adding `#norun` to your script file.
+스크립트 파일에 `#norun `을 추가하여 노런 사전 프로세서를 호출하십시오.
 
 ## What it does
 
