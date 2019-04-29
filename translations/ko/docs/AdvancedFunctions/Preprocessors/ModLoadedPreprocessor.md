@@ -4,11 +4,11 @@
 
 ## 호출
 
-You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
-Example: `#modloaded minecraft`
+`#수정된 모드를 추가하여 모드로더 프리프로세서를 호출하는 경우<code>모드를 사용하여 스크립트 파일에 대한 Id `Id </code>은 확인하고자 하는 모드ID가 되는 경우:   
+예: `#modloaded minecraft `
 
-You can also provide multiple modID's:  
-`#modloaded minecraft tconstruct` will only be executed if minecraft AND tconstruct are loaded.
+여러 모드를 제공할 수도 있다. 아이디:  
+`#modloaded market construct `은 마인크래프트와 T컨스트럭트가 적재된 경우에만 실행된다.
 
 You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
 
