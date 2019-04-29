@@ -1,15 +1,15 @@
-# Using this wiki
+# 위키 사용하기
 
 This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
 There also are some examples in certain entries to provide further clarity.
 
-# Terms
+# 용어
 
-Before we start, there are some terms you might want to get used to:
+시작하기 전에, 여기에는 익숙해져야 할 몇가지 용어들이 있습니다.
 
 ## ZenGetter
 
-A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
+ZenGetter는 특정 개체에서 정보를 얻는 방법입니다. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
 We use the ZenGetter like this:
 
     //object.zenGetter;
