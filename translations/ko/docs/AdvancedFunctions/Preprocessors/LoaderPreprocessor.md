@@ -1,6 +1,6 @@
 # LoaderPreprocessor
 
-Loader Preprocessor가 스크립트의 로더를 설정할 것입니다
+Loader Preprocessor가 스크립트의 로더를 설정합니다.
 
 ## 호출
 
