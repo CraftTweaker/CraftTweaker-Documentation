@@ -131,7 +131,7 @@ switchy ? print("Bye") : print("Hello");
 | OR               | `|`     | 두 논리값 중 하나라도 true일 경우 true를 반환합니다. 물론 둘 다 true여도 true를 반환합니다. | true | true  |
 | XOR              | `^`     | 두 논리값이 서로 다를 경우 true를 반환합니다.                                  | true ^ false |
 
-## The in/has Operator
+## in/has 연산자
 
 The `in` and the `has` operator check if something is in something.  
 First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
