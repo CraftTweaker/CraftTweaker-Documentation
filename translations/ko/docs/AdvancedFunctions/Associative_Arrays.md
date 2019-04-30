@@ -68,9 +68,9 @@ print(assocWithStrings["two"]);
 
 ## Manipulating items inside an Associative Array
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+배열에서와 마찬가지로 Associative Array 내부에서 항목을 조작 할 수 있습니다 `array[index] = newValue`.  
+하나의 큰 차이점이 있습니다:  
+배열은 고정 된 크기이지만 맵은 그렇지 않습니다. 즉, 이전에 설정되지 않은 색인을 설정하여 언제든지 항목을 추가 할 수 있습니다!
 
 ```JAVA
 val changingArray = {
