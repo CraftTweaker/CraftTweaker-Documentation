@@ -36,7 +36,7 @@ ZenSetter는 get이 아니기 때문에 아무것도 반환을 하지 않습니�
 유형에 따라서 다음을 사용할 수 있습니다: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 이것들이 어떻게 동작할지를 봅시다:
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
+    //ZenGetter와 ZenSetter가 동일한 이름이기에 다음 두 결과는 동일합니다.
     //object.zenSetter += value;
     //object.zenSetter = object.zenGetter + value;
     
