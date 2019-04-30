@@ -110,10 +110,10 @@ Associative Array를 통해 반복할 수 있는 두 개의 반복자가 있습�
 
 반복 될 제작 레시피를 저장하는 Associative Array를 추가해 보겠습니다.
 
-- 키는 [IitemStack ](/Vanilla/Items/IItemStack/)과 같은 조합출력물이어야 한다.
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- 키는 [IitemStack ](/Vanilla/Items/IItemStack/)과 같은 조합 출력물이어야 한다.
+- 값은 조합 재료는 [IIngredient](/Vanilla/Variable_Types/IIngredient/)이어야 한다.
+- 다음과 같이 구축 된 키 반복자를 사용합니다. `for key in assocArray {doSth;}`
+- 우리는 또한 이와 같이 구축 된 키 - 값 - 반복자를 사용할 것입니다. `for key, value in assocArray {doSth;}`
 
 ```JAVA
 import crafttweaker.item.IItemStack;
@@ -134,9 +134,6 @@ for key in recipeMapShaped {
 
 
 //keys will be grass, goldIngot, dirt, values will be the recipes for them
-for key, value in recipeMapShaped {
-    recipes.addShaped(key, value);
-}
 ```
 
 # ZenType Entry
