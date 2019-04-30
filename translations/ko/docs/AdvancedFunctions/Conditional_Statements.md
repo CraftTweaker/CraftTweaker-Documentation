@@ -133,8 +133,7 @@ switchy ? print("Bye") : print("Hello");
 
 ## in/has 연산자
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+`in` 연산자와 `has` 연산자는 배열이나 리스트같은 자료에 특정 원소가 있는지 확인합니다. 특정 원소가 들어있는지 확인할 배열이나 리스트를 먼저 쓰고, 그 다음 `in` 또는 `has` 연산자를 쓴 다음 확인할 원소를 넣습니다. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
