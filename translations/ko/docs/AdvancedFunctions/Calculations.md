@@ -60,7 +60,7 @@
 
 <h3>Using the result otherwise</h3>
 
-<p>You can always use the result of a calculation in a function or a conditional statement:</p>
+<p>계산 결과는 항상 함수 또는 조건문에서 사용할 수 있습니다.</p>
 
 <pre><code>//prints 4
 print(3+1);
