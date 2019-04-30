@@ -141,7 +141,7 @@ for key in recipeMapShaped {
 맵 엔트리는 키와 값으로 구성됩니다.  
 현재 이러한 개체를 얻을 수 있는 유일한 방법은 지도 엔트리 셋 메서드를 통해서입니다.
 
-You can use the getters to get `key` and `value`
+`키`과 `값`을 얻기 위해 게터를 사용할 수 있다.
 
 ```kotlin
 //Replace map with a reference to an existing map/associative array
