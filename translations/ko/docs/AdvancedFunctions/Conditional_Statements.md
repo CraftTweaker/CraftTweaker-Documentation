@@ -118,18 +118,18 @@ switchy ? print("Bye") : print("Hello");
 
 아래와 같은 연산자를 사용하실 수 있습니다. 모든 예시는 true의 값을 가집니다.
 
-| 이름               | 토큰      | 설명                                                                                   | 예시           |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| 이름               | 토큰      | 설명                                                            | 예시           |
+| ---------------- | ------- | ------------------------------------------------------------- | ------------ |
+| Not              | `!`     | boolean 타입의 논리값을 반대로 바꿉니다.                                    | !false       |
+| Not Equal        | `!=`    | 두 값이 다른지 확인합니다.                                               | 1 != 2       |
+| Equal            | `==`    | 두 값이 같은지 확인합니다.                                               | 1 == 1       |
+| Greater than     | `>`  | 왼쪽이 오른쪽보다 큰지 확인합니다.                                           | 1 > 2        |
+| Greater or Equal | `>=` | 왼쪽이 오른쪽보다 크거나 같은지 확인합니다.                                      | 1 >= 1       |
+| Lesser then      | `<`  | 왼쪽이 오른쪽보다 작은지 확인합니다.                                          | 1 < 2        |
+| Lesser or Equal  | `<=` | 왼쪽이 오른쪽보다 작거나 같은지 확인합니다.                                      | 1 <= 1       |
+| AND              | `&` | 두 논리값이 전부 true일 경우 true를 반환합니다.                               | true & true  |
+| OR               | `|`     | 두 논리값 중 하나라도 true일 경우 true를 반환합니다. 물론 둘 다 true여도 true를 반환합니다. | true | true  |
+| XOR              | `^`     | 두 논리값이 서로 다를 경우 true를 반환합니다.                                  | true ^ false |
 
 ## The in/has Operator
 
