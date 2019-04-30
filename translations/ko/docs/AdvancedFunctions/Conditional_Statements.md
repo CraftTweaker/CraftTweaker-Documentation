@@ -58,26 +58,33 @@ else {
 지원되는 논리 연산자는 AND(`&`), OR(`|`), XOR(`^`)가 있습니다. (비트 연산은 지원되지 않습니다.)
 
 ```Java
-//You can check for:
-
-
-//Number values
+// 정수형(int) 상수 선언
 val a = 0 as int;
-if(a==0){print("NumVal");}
+if (a == 0) {
+    print("NumVal");
+}
 
-//Calculated number values
+// 숫자 연산
 val b = 1;
 val c = 5;
-//All evaluate to true
-if(b+c==6){print("Num1!");}
-if(b*c==5){print("Num2!");}
-if(b/c==0.2){print("Num3!");}
+// 모두 true
+if (b + c == 6) {
+    print("Num1!");
+}
+if (b * c == 5) {
+    print("Num2!");
+}
+if (b / c == 0.2) {
+    print("Num3!");
+}
 
-//OR, XOR, AND
+// 문자열 간 결합 (Concatenation)
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d ~ " " ~ e; // f = "Hello World", 물결표(~)는 두 값을 하나의 문자열로 이어줍니다.
+val g = f ~ a; // g = "Hello World0", 문자열로 변환할 수 있는 값들은 자동으로 변환되어 이어줍니다.
 
+// OR, XOR, AND
 //|(OR) means, as long as one of the criteria is met, it evaluates to true
 if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
 if(d=="Hello" | e == "World"){print("OR2!");}       //true
