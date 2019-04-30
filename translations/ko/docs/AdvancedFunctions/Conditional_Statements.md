@@ -1,6 +1,6 @@
 # 조건문
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+조건문은 특정 상황에서만 동작하는 코드, 즉 스크립트에 분기를 넣고 싶을 때 사용됩니다. That's what you need conditional Statements for.
 
 ## If
 
