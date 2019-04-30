@@ -1,4 +1,4 @@
-# Associative Arrays
+# 연관 배열
 
 연관 배열(지도 또는 사전이라고도 함) 은 여러 항목을 저장할 수 있다는 점에서 일반적인 [Array](Arrays_and_Loops/)과 같습니다. 그러나 [Arrays](Arrays_and_Loops/)과 달리, 색인또는 (지도에서 부르는 대로) 키를 어떤 타입으로 할지 선택할 수 있습니다!
 
@@ -16,14 +16,14 @@ val myAssocArray = {
 이걸 분해해 볼까요, 응?
 
 - `val myAssocArray =` 표준 변수 선언
-- `{` 이것은 Associative Array입니다. Sir!
-- `dirt : <minecraft:dirt>` 우리 `<minecraft:dirt>` 는 문자열 아래에 매핑한다 `dirt`
-- `,`기다려주세요, 앞으로 더 있을 겁니다
-- `gold : <minecraft:gold_ingot>` 우리`<minecraft:gold_ingot>` 는 문자열 아래에 매핑한다 `gold`
-- `}`우리는 배열의 끝에 도달했습니다, Sir!
-- `as IItemStack[string];`문자열을 인덱스로, IitemStacks를 값으로 사용하는 Associative Array 입니다.
+- `{` 이것은 연관 배열입니다.
+- `dirt : <minecraft:dirt>` `dirt` 를 `<minecraft:dirt>`로 매핑.
+- `,`잠시만요, 더 있어요.
+- `gold : <minecraft:gold_ingot>` `gold` 를 `<minecraft:gold_ingot>`로 매핑.
+- `}` 배열의 끝입니다.
+- `as IItemStack[string];` 문자열을 인덱스로, IitemStacks를 값으로 사용하는 Associative Array 입니다.
 
-좋습니다, 그럼 이걸 사용할 때 어떻게 생각해야 합니까?
+그럼 이걸 사용할 때 어떤 점을 유의해야 할까요?
 
 - Zenscript에서 사용할 수 있는 모든 유형을 키 또는 값으로 사용할 수 있습니다.
 - 초기 선언에서 핵심 선언에 변수를 사용할 수 없음(`{}`을 사용하는 변수) 은 명확한 텍스트가 문자열로 해석됩니다.
