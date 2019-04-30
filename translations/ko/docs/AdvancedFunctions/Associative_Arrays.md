@@ -106,11 +106,11 @@ myAssocArray.entrySet //entrySet
 Associative Array를 통해 반복할 수 있는 두 개의 반복자가 있습니다.
 
 - Ker-lterator: 키 위에 반복, 하나의 변수 사용합니다
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- Key-value-Iterator: 키와 값을 반복하고, 두 개의 변수를 사용합니다.
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+반복 될 제작 레시피를 저장하는 Associative Array를 추가해 보겠습니다.
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
+- 키는 [IitemStack ](/Vanilla/Items/IItemStack/)과 같은 조합출력물이어야 한다.
 - Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
 - We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
 - We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
