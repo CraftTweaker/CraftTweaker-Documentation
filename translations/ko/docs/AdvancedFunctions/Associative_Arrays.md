@@ -16,11 +16,11 @@ val myAssocArray = {
 이걸 분해해 볼까요, 응?
 
 - `val myAssocArray =` 표준 변수 선언
-- `{` 이것은 Associative Array입니다. 선생님!
+- `{` 이것은 Associative Array입니다. Sir!
 - `dirt : <minecraft:dirt>` 우리 `<minecraft:dirt>` 는 문자열 아래에 매핑한다 `dirt`
 - `,`기다려주세요, 앞으로 더 있을 겁니다
 - `gold : <minecraft:gold_ingot>` 우리`<minecraft:gold_ingot>` 는 문자열 아래에 매핑한다 `gold`
-- `}`우리는 배열의 끝에 도달했습니다, 선생님!
+- `}`우리는 배열의 끝에 도달했습니다, Sir!
 - `as IItemStack[string];`문자열을 인덱스로, IitemStacks를 값으로 사용하는 Associative Array 입니다.
 
 좋습니다, 그럼 이걸 사용할 때 어떻게 생각해야 합니까?
@@ -47,8 +47,8 @@ print(assocArray[&lt;minecraft:dirt&gt;]);
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+한 가지 특별한 경우가 있는데, 그것은 문자열을 부속품으로 사용할 때:   
+이 경우 다음과 같이 memberGetter를 사용할 수도 있습니다.
 
 ```JAVA
 val assocWithStrings = {
