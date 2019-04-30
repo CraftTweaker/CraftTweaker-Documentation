@@ -4,7 +4,7 @@
 
 ## 배열 선언
 
-다음의 ```[``` 과 ```]```�하여 정의합니다.82389634을 이용하여 정의합니다.
+다음의 ```[``` 과 ```]```�하여 정의합니다.77617041을 이용하여 정의합니다.
 
     //배열은 "Hello" 와 "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -135,10 +135,10 @@ While 루프는 주어진 조건이 `true`인 동안에 해당 코드를 실행�
         i += 1;
     } 
     
-    print("After loop: " + i);
+    print("루프가 끝나고 난 뒤의 i값: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //i > 0의 조건하에 i가 5가 되는 순간 루프를 빠져나가므로 10 ~ 6까지를 출력
     while (i &gt; 0) {
         if i == 5
             break;
@@ -146,7 +146,7 @@ While 루프는 주어진 조건이 `true`인 동안에 해당 코드를 실행�
         i -= 1;
     }
     
-    print("After loop 2: " + i);
+    print("루프가 끝나고 난 뒤의 i값: " + i);
     
     
     for k in 1 .. 10 {
@@ -156,11 +156,11 @@ While 루프는 주어진 조건이 `true`인 동안에 해당 코드를 실행�
     }
     
 
-# Adding items to an Array
+# 배열에 아이템 추가하기
 
-권장되지는 않지만, 어레이에 일부 개체를 추가할 수 있습니다.  
-배열에 단일 개체만 추가할 수 있으며, 어레이 두 개를 추가할 수 없음  
-어레이 추가에 대해 `+` 연산자를 사용하는 경우:
+권장하지는 않지만, 배열에 일부 개체를 추가할 수 있습니다.  
+배열에 단일 개체만 추가할 수 있으며, 어레이 두 개를 추가할 수 없습니다.  
+배열 추가에 대해 `+` 연산자를 사용하는 경우:
 
 ```java
 import crafttweaker.item.IItemStack;
