@@ -1,10 +1,10 @@
 # 조건문
 
-만약 특정 상황에서만 동작할 수 있는 코드, 즉 분기를 넣고 싶다면 That's what you need conditional Statements for.
+만약 특정 상황에서만 동작할 수 있는 코드, 즉 분기를 넣고 싶다면 그럴 때 사용되는 것이 조건문입니다.
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+if문은 조건문의 첫 파트입니다. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
 
 ```Java
 val test = 0;
