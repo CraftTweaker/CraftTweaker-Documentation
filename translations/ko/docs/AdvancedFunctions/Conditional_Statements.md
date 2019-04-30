@@ -4,7 +4,7 @@
 
 ## If
 
-An If-Statement is the first part of a conditional statement. 값이 true여야 if문 내의 코드가 수행되는 조건이 선언됩니다. 두 값이 같은지 비교하기 위해선 '==' 연산자를 사용하는 것을 조심해주세요! (=이 한 개인 '=' 연산자는 값을 선언할 때 쓰는 대입 연산자입니다!)
+if문은 조건문의 첫 파트입니다. 값이 true여야 if문 내의 코드가 수행되는 조건이 선언됩니다. 두 값이 같은지 비교하기 위해선 '==' 연산자를 사용하는 것을 조심해주세요! (=이 한 개인 '=' 연산자는 값을 선언할 때 쓰는 대입 연산자입니다!)
 
 ```Java
 val test = 0;
@@ -16,35 +16,46 @@ if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+else문은 조건문의 끝에 붙일 수 있습니다. if문의 모든 조건이 false일 경우 수행될 코드가 옵니다.
 
 ```Java
 var test = 0;
 
-if(test == 0){//true
-    //will be executed when test is equal to 0
+if (test == 0) { // true
+    // test의 값이 true일 때 실행
     print("Test is zero!");
-} else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+}
+else if (test >= 0) { // false
+    // test의 값이 *0이 아닌* 양수일 때 실행
+     print("Test is positive!");
+}
+else {
+    // 모든 조건이 false, 즉 test가 음수일 때 실행
+    print("Test is negative!");
 }
 
-test = 1
-if(test == 0){//false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
-} else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+test = -1;
+if (test == 0) { // false
+    // test의 값이 true일 때 실행
+    print("Test is zero!");
 }
+else if (test >= 0) { // false
+    // test의 값이 *0이 아닌* 양수일 때 실행
+     print("Test is positive!");
+}
+else { 
+    // 모든 조건이 false, 즉 test가 음수일 때 실행
+    print("Test is negative!");
+}
+
 
 ```
 
-## Things to check for
+## 짚고 가야 할 것
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+지원되는 산술 연산자는 덧셈(`+`), 뺄셈(`-`), 곱셈(`*`), 나눗셈(`/`), 나머지(`mod`), 문자열 간 결합(`~`) 이 있습니다.
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+지원되는 논리 연산자는 AND(`&`), OR(`|`), XOR(`^`)가 있습니다. (비트 연산은 지원되지 않습니다.)
 
 ```Java
 //You can check for:
