@@ -4,7 +4,7 @@
 
 ## 배열 선언
 
-다음의 ```[``` 과 ```]```�하여 정의합니다.30533986을 이용하여 정의합니다.
+다음의 ```[``` 과 ```]```�하여 정의합니다.82389634을 이용하여 정의합니다.
 
     //배열은 "Hello" 와 "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -124,13 +124,13 @@
 
 ## While Loop
 
-그 동안 루프 한 주어진 조건`true`.  
-로 지정된 코드를 시행하고 있습니다. 또는 당신은`break`단어를 사용하는 그것을 멈출 수 있습니다.
+While 루프는 주어진 조건이 `true`인 동안에 해당 코드를 실행합니다.  
+또는 `break` 키워드를 사용하여 루프를 빠져 나올 수 있습니다.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
-    while i < 10 {
+    //i < 10 의 조건이 i가 10이 될때까지는 false이기 때문에 0 ~ 9까지를 출력
+    while i &lt; 10 {
         print(i); 
         i += 1;
     } 
@@ -139,7 +139,7 @@
     
     
     //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
-    while (i > 0) {
+    while (i &gt; 0) {
         if i == 5
             break;
         print(i);
