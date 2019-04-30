@@ -30,9 +30,9 @@ val myAssocArray = {
 
 ## 연관 배열에서의 요소 참조
 
-일반 [Array](Arrays_and_Loops/):  
-에서 항목을 참조하는 것과 동일한 방법으로 Associative Array 내의 항목을 참조하는 경우 `Array[index]`  
-차이점만 있다면 이번에는 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다, 어레이를 어떤 유형으로 선언했든 간에 말입니다!
+일반 [배열](Arrays_and_Loops/)에서 요소를 참조하는 것과 동일한 방식:  
+`Array[index]`  
+차이점은 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다. 다만 배열을 어떤 타입을 선언했는지에 맞춰서 참조하면 됩니다.
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
@@ -43,7 +43,7 @@ val assocArray = {
 //array[index]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//동일한 타입의 변수 사용 가능. 
 print(assocArray[dirt]);
 ```
 
