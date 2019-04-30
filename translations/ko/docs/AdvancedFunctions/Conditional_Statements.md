@@ -1,6 +1,6 @@
 # 조건문
 
-조건문은 특정 상황에서만 동작하는 코드, 즉 스크립트에 분기를 넣고 싶을 때 사용됩니다. That's what you need conditional Statements for.
+만약 특정 상황에서만 동작할 수 있는 코드, 즉 분기를 넣고 싶다면 That's what you need conditional Statements for.
 
 ## If
 
