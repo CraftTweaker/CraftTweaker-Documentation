@@ -1,8 +1,8 @@
 # 연관 배열
 
-연관 배열(지도 또는 사전이라고도 함) 은 여러 항목을 저장할 수 있다는 점에서 일반적인 [Array](Arrays_and_Loops/)과 같습니다. 그러나 [Arrays](Arrays_and_Loops/)과 달리, 색인또는 (지도에서 부르는 대로) 키를 어떤 타입으로 할지 선택할 수 있습니다!
+연관 배열(지도 또는 사전이라고도 함) 은 여러 항목을 저장할 수 있다는 점에서 일반적인 [배열](Arrays_and_Loops/)과 같습니다. 그러나 [배열](Arrays_and_Loops/)과는 달리, 인덱스 또는 키를 어떤 타입으로 할지 선택할 수 있습니다!
 
-## Declaring an Associative Array
+## 연관 배열의 선언
 
 당신은 중괄호 `{}`및 콜론 `:`을 사용하여 연관 배열을(를) 선언한다.
 
@@ -21,14 +21,14 @@ val myAssocArray = {
 - `,`잠시만요, 더 있어요.
 - `gold : <minecraft:gold_ingot>` `gold` 를 `<minecraft:gold_ingot>`로 매핑.
 - `}` 배열의 끝입니다.
-- `as IItemStack[string];` 문자열을 인덱스로, IitemStacks를 값으로 사용하는 Associative Array 입니다.
+- `as IItemStack[string];` 문자열을 인덱스로, IitemStacks를 값으로 사용하는 연관 배열입니다.
 
 그럼 이걸 사용할 때 어떤 점을 유의해야 할까요?
 
 - Zenscript에서 사용할 수 있는 모든 유형을 키 또는 값으로 사용할 수 있습니다.
 - 초기 선언에서 핵심 선언에 변수를 사용할 수 없음(`{}`을 사용하는 변수) 은 명확한 텍스트가 문자열로 해석됩니다.
 
-## Refering to Items inside an Associative Array.
+## 연관 배열에서의 요소 참조
 
 일반 [Array](Arrays_and_Loops/):  
 에서 항목을 참조하는 것과 동일한 방법으로 Associative Array 내의 항목을 참조하는 경우 `Array[index]`  
