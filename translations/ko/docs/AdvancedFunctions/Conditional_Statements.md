@@ -94,7 +94,7 @@ if (d=="Hello" & e == "World") { print("AND2!"); }      //true
 
 ## 삼항(? :) 연산자
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+매번 if문을 사용하기 번거로운 분들에게 권해드리는 연산자입니다. 특히 조건이나 경우가 단순할 수록 이 `?` 연산자가 왜 구현됐는지 알 수 있습니다. 본질적으로 if/else문과 사용 방식이 비슷하지만, 더 짧게 표현할 수 있습니다. Syntax: `boolean ? if : else`
 
 ```Java
 val switchy = false;
