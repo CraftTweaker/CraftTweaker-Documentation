@@ -138,8 +138,8 @@ for key in recipeMapShaped {
 
 # ZenType Entry
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+맵 엔트리는 키와 값으로 구성됩니다.  
+현재 이러한 개체를 얻을 수 있는 유일한 방법은 지도 엔트리 셋 메서드를 통해서입니다.
 
 You can use the getters to get `key` and `value`
 
