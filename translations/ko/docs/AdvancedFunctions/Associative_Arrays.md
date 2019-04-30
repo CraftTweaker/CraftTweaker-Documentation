@@ -21,18 +21,18 @@ val myAssocArray = {
 - `,`기다려주세요, 앞으로 더 있을 겁니다
 - `gold : <minecraft:gold_ingot>` 우리`<minecraft:gold_ingot>` 는 문자열 아래에 매핑한다 `gold`
 - `}`우리는 배열의 끝에 도달했습니다, 선생님!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `as IItemStack[string];`문자열을 인덱스로, IitemStacks를 값으로 사용하는 Associative Array 입니다.
 
-Okay, so what do I need to think of when using these?
+좋습니다, 그럼 이걸 사용할 때 어떻게 생각해야 합니까?
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Zenscript에서 사용할 수 있는 모든 유형을 키 또는 값으로 사용할 수 있습니다.
+- 초기 선언에서 핵심 선언에 변수를 사용할 수 없음(`{}`을 사용하는 변수) 은 명확한 텍스트가 문자열로 해석됩니다.
 
 ## Refering to Items inside an Associative Array.
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
-`Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+일반 [Array](Arrays_and_Loops/):  
+에서 항목을 참조하는 것과 동일한 방법으로 Associative Array 내의 항목을 참조하는 경우 `Array[index]`  
+차이점만 있다면 이번에는 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다, 어레이를 어떤 유형으로 선언했든 간에 말입니다!
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
