@@ -16,38 +16,27 @@ if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
 
 ## Else
 
-else문은 조건문의 끝에 붙일 수 있습니다. if문의 모든 조건이 false일 경우 수행될 코드가 옵니다.
+Else문은 조건문의 끝에 붙일 수 있습니다. if문의 조건이 false일 경우 수행될 코드가 옵니다.
 
 ```Java
 var test = 0;
 
 if (test == 0) { // true
-    // test의 값이 true일 때 실행
+    // test의 값이 0일때 실행
     print("Test is zero!");
-}
-else if (test >= 0) { // false
-    // test의 값이 *0이 아닌* 양수일 때 실행
-     print("Test is positive!");
-}
-else {
-    // 모든 조건이 false, 즉 test가 음수일 때 실행
-    print("Test is negative!");
+} else {
+    // test의 값이 0이 아닐때 실행
+    print("Test is NOT zero!");
 }
 
 test = -1;
 if (test == 0) { // false
-    // test의 값이 true일 때 실행
-    print("Test is zero!");
+    // test의 값이 0일때 실행
+    print("Now, test is zero!");
+} else { 
+    // test의 값이 0이 아닐때 실행
+    print("Now, test is NOT zero!");
 }
-else if (test >= 0) { // false
-    // test의 값이 *0이 아닌* 양수일 때 실행
-     print("Test is positive!");
-}
-else { 
-    // 모든 조건이 false, 즉 test가 음수일 때 실행
-    print("Test is negative!");
-}
-
 
 ```
 
