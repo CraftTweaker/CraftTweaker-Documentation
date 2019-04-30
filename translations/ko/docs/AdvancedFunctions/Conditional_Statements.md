@@ -4,13 +4,13 @@
 
 ## If
 
-if문은 조건문의 첫 파트입니다. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+An If-Statement is the first part of a conditional statement. 값이 true여야 if문 내의 코드가 수행되는 조건이 선언됩니다. 두 값이 같은지 비교하기 위해선 '==' 연산자를 사용하는 것을 조심해주세요! (=이 한 개인 '=' 연산자는 값을 선언할 때 쓰는 대입 연산자입니다!)
 
 ```Java
 val test = 0;
 
-if(test == 0){ //true
-    print("Test is zero!");
+if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
+     print("Test is zero!");
 }
 ```
 
