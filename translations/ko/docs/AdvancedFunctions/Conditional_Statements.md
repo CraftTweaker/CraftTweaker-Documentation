@@ -68,15 +68,9 @@ if (a == 0) {
 val b = 1;
 val c = 5;
 // 모두 true
-if (b + c == 6) {
-    print("Num1!");
-}
-if (b * c == 5) {
-    print("Num2!");
-}
-if (b / c == 0.2) {
-    print("Num3!");
-}
+if (b + c == 6) { print("Num1!"); }
+if (b * c == 5) { print("Num2!"); }
+if (b / c == 0.2) { print("Num3!"); }
 
 // 문자열 간 결합 (Concatenation)
 val d = "Hello";
@@ -85,20 +79,20 @@ val f = d ~ " " ~ e; // f = "Hello World", 물결표(~)는 두 값을 하나의 
 val g = f ~ a; // g = "Hello World0", 문자열로 변환할 수 있는 값들은 자동으로 변환되어 이어줍니다.
 
 // OR, XOR, AND
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
-if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
-if(d=="Hello" | e == "World"){print("OR2!");}       //true
+// |(OR)는 둘 중 하나라도 조건을 만족하면 true입니다.
+if (d=="Hello" | e == "Hello") { print("OR1!"); }       //true
+if (d=="Hello" | e == "World") { print("OR2!"); }       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
-if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
-if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
+// ^(XOR)는 두 조건의 상태가 서로 달라야만 true입니다.
+if (d=="Hello" ^ e == "Hello") { print("XOR1!"); }      //true
+if (d=="Hello" ^ e == "World") { print("XOR2!"); }      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
-if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
-if(d=="Hello" & e == "World"){print("AND2!");}      //true
+// &(AND)는 두 조건을 모두 만족해야 true입니다.
+if (d=="Hello" & e == "Hello") { print("AND1!"); }      //false
+if (d=="Hello" & e == "World") { print("AND2!"); }      //true
 ```
 
-## The ? Operator
+## 삼항(? :) 연산자
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
