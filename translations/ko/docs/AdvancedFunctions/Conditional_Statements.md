@@ -145,7 +145,7 @@ if(loadedMods in "mcp"){
     print("Minecraft Coder Pack loaded");
 }
 
-// 하지만 has가 더 사용하기에 자연스럽습니다.
+// 하지만 has가 사용하기에 더 자연스럽습니다.
 if(loadedMods has "mcp"){
     print("Minecraft Coder Pack loaded");
 }
