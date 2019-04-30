@@ -89,9 +89,9 @@ changingArray[<minecraft:grass>] = "Power!";
 
 ## Retrieving an Associative Array's Key and Entrysets
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+KeySet은 지도의 모든 키를 포함하는 배열입니다.  
+valueSet은 지도의 값을 모두 포함하는 배열입니다.  
+entrySet은 지도의 모든 항목을 포함하는 배열입니다(아래 참조).
 
 ```JAVA
 myAssocArray.keySet   //keySet
@@ -103,7 +103,7 @@ myAssocArray.entrySet //entrySet
 
 ## Iterating over an Associative Array
 
-There are two Iterators that allow you to iterate over an Associative Array:
+Associative Array를 통해 반복할 수 있는 두 개의 도관이 있습니다.
 
 - The key-Iterator: Iterates over the keys, uses one variable
 - The key-value-Iterator: Iterates over the keys and values, uses two variables
