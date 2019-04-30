@@ -4,7 +4,7 @@
 
 ## 배열 선언
 
-다음의 ```[``` 과 ```]```�하여 정의합니다.18568166을 이용하여 정의합니다.
+다음의 ```[``` 과 ```]```�하여 정의합니다.78542458을 이용하여 정의합니다.
 
     //배열은 "Hello" 와 "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -40,7 +40,7 @@
 
 목록 안에 위치를 사용하여 배열 내의 요소를 참조할 수 있습니다. 배열의 첫 번째 항목은 0번째 요소입니다. 그리고 두번째 항목은 1번째 요소입니다.
 
-중첩된 배열의 항목을 참조하려면 각각 목록의 한 레이어를 제거하기 때문에 두 개 이상의 참조자가 필요합니다.
+중첩된 배열의 항목을 참조하려면 각각 목록의 참조할 수 있도록 두 개 이상의 참조자가 필요합니다.
 
     /*
     stringArray[0] is "Hello"
@@ -75,11 +75,11 @@
     print(stringArrayAll[0][1]);
     
 
-# 반복
+# Loops
 
-루프는 스스로를 반복하는 기능입니다. 루프를 사용하여 배열의 모든 요소에 작업 적용할수있습니다.
+루프는 스스로를 반복하는 기능입니다. 루프를 사용하여 배열의 모든 요소에 액션을 취할 수 있습니다.
 
-## For 반복
+## For Loop
 
 루프의 주된 용도는 배열을 통한 반복입니다. 반복은 배열의 모든 요소에 대해 작업을 수행하는 것을 의미합니다.  
 `break` 단어를 사용하여 루프를 조기에 끊을 수 있습니다.
@@ -94,15 +94,15 @@
     //for [IntegerName, ] elementName in IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //IArray의 각각의 요소를 "item" 변수로 정의 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //그리고 이 변수를 사용!
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //IArray의 각 요소넘버로 변수 "i"를 정의 (i.e. 0,1,2,...)
+        //IArray의 각 요소를 변수 "item"을 정의 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //그리고 이 번수들을 사용!
     
         //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
