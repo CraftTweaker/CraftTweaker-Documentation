@@ -103,9 +103,9 @@ myAssocArray.entrySet //entrySet
 
 ## Iterating over an Associative Array
 
-Associative Array를 통해 반복할 수 있는 두 개의 도관이 있습니다.
+Associative Array를 통해 반복할 수 있는 두 개의 반복자가 있습니다.
 
-- The key-Iterator: Iterates over the keys, uses one variable
+- Ker-lterator: 키 위에 반복, 하나의 변수 사용합니다
 - The key-value-Iterator: Iterates over the keys and values, uses two variables
 
 Let's add an Associative Array that stores crafting recipes to be iterated over:
