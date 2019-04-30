@@ -151,7 +151,7 @@ if(loadedMods has "mcp"){
 }
 ```
 
-### in/has IIngredient
+### IIngredient에서의 in/has 사용
 
 You can also check if an item matches a definition by comparing two IIngredients.  
 With this one you need to be a bit careful as not to confuse the two entries:  
