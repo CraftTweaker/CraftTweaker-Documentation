@@ -4,7 +4,7 @@
 
 ## 배열 선언
 
-다음의 ```[``` 과 ```]```�하여 정의합니다.78542458을 이용하여 정의합니다.
+다음의 ```[``` 과 ```]```�하여 정의합니다.30533986을 이용하여 정의합니다.
 
     //배열은 "Hello" 와 "World"
     val stringArray = ["Hello", "World"] as string[];
@@ -104,20 +104,20 @@
         //IArray의 각 요소를 변수 "item"을 정의 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
         //그리고 이 번수들을 사용!
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //JArray와 KArray의 아이템으로 IArray의 아이템을 제조  (i.e. 흙을 잔디와 나무 도끼로, 판자를 나무와 금삽으로, 다이아몬드를 금괴와 에메랄드로)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //0 ~ 9 까지의 숫자를 변수 "i"로 지정 (i.e. 0,1,2,...,8,9)
         print(i);
     } 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //10 ~ 19까지의 숫자를 변수 "i"로 지정 (i.e. 10,11,12,...,18,19)
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //"minecraft"라는 modID를 가진 모드에 의해 추가된 각 아이템을 변수 "item"으로 지정하고 그 아이템의 제작법을 제거
         recipes.remove(item);
     }
     
