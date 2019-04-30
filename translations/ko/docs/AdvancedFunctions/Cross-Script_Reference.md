@@ -1,11 +1,10 @@
-# Cross-Script Reference
+# 스크립트 간 참조
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+[전역 변수](/AdvancedFunctions/Global_Static_Variables/)나 [사용자 정의 함수](/AdvancedFunctions/Custom_Functions/)를 가지는 모든 스크립트는 스크립트 간 참조 목록에 등록됩니다.
 
-## Specifications
+## 설명
 
-- Cross-script references start with `scripts.`
+- 스크립트 간 참조는 `scripts` 경로서부터 시작됩니다.
 - You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
 - You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
 - ZS first checks for matching directories then for matching files or values.
