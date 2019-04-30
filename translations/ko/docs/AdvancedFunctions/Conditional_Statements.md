@@ -153,10 +153,9 @@ if(loadedMods has "mcp"){
 
 ### IIngredient에서의 in/has 사용
 
-You can also check if an item matches a definition by comparing two IIngredients.  
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
-In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
+in/has 연산자로 아이템이 특정 IIngredients(보통 Ore Dictionary)의 포함되는지 확인할 수도 있습니다.   
+이때 혼동하지 말아야 할 것은 `in` 연산자는 '원소 in 컬렉션'이 언뜻 맞아 보이지만 반드시 컬렉션이 연산자의 앞에 위치해야 합니다. 즉 '컬렉션 in 원소'가 적합한 표현입니다.   
+대신에 `has` 연산자를 사용하는 것을 권장드립니다. '컬렉션 has 원소'와 같은 형태로 사용하면 훨씬 더 자연스러운 코드를 작성하실 수 있습니다.
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
@@ -168,7 +167,8 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 }
 ```
 
-This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+단일 원소가 아닌 IIngredients도 컬렉션에 포함되는지 확인할 수 있습니다. 이 경우엔 오른쪽에 올 IIngredients의 모든 원소가 왼쪽의 컬렉션에 포함된다면 true를 반환합니다. 물론 이 경우에도 컬렉션은 왼쪽, 들어있는지 확인할 원소는 오른쪽에 위치해야 합니다.   
+아래의 예제에서 `allDusts`가 레드스톤이나 발광석 등의 가루 아이템을 모두 포함한다고 가정해봅시다.
 
 ```java
 val redstone = <minecraft:redstone>;
@@ -176,12 +176,12 @@ val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-//True as redstone is a part of alldusts
+// 레드스톤이 allDusts에 포함되면 true를 반환합니다.
 if(allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+// allDusts의 모든 원소가 레드스톤으로 구성되어 있으면 true를 반환하지만, 이 경우에선 발광석이 있으므로 false를 반환합니다.
 if(redstone has allDusts) {
 
 }
