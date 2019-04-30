@@ -133,19 +133,19 @@ switchy ? print("Bye") : print("Hello");
 
 ## in/has 연산자
 
-`in` 연산자와 `has` 연산자는 배열이나 리스트같은 자료에 특정 원소가 있는지 확인합니다. 특정 원소가 들어있는지 확인할 배열이나 리스트를 먼저 쓰고, 그 다음 `in` 또는 `has` 연산자를 쓴 다음 확인할 원소를 넣습니다. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+`in` 연산자와 `has` 연산자는 배열이나 리스트같은 컬렉션 자료에 특정 원소가 있는지 확인합니다. 특정 원소가 들어있는지 확인할 컬렉션을 먼저 쓰고, 그 다음 `in` 또는 `has` 연산자를 쓴 다음 확인할 원소를 작성합니다. `in`과 `has`은 ZenScript에서 동일한 키워드지만, 대부분 영문법에 따라 if문의 조건에서 사용할 때는 `has`를 선호하고, for 반복문 안에 사용할 때는 `in`을 선호합니다. 
 
-### in/has loadedMods
+### loadedMods 리스트
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+`in` 연산자와 `has` 연산자를 통해 loadedMods 리스트에서 어떤 모드가 로드되었는지 확인할 수 있습니다.
 
 ```Java
-//While contains checks can use in
+// in도 사용할 수 있습니다.
 if(loadedMods in "mcp"){
     print("Minecraft Coder Pack loaded");
 }
 
-//Most people prefer using has
+// 하지만 has가 더 사용하기에 자연스럽습니다.
 if(loadedMods has "mcp"){
     print("Minecraft Coder Pack loaded");
 }
