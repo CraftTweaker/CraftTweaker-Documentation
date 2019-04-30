@@ -17,10 +17,10 @@ val myAssocArray = {
 
 - `val myAssocArray =` 표준 변수 선언
 - `{` 이것은 Associative Array입니다. 선생님!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
+- `dirt : <minecraft:dirt>` 우리 `<minecraft:dirt>` 는 문자열 아래에 매핑한다 `dirt`
+- `,`기다려주세요, 앞으로 더 있을 겁니다
+- `gold : <minecraft:gold_ingot>` 우리`<minecraft:gold_ingot>` 는 문자열 아래에 매핑한다 `gold`
+- `}`우리는 배열의 끝에 도달했습니다, 선생님!
 - `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
 Okay, so what do I need to think of when using these?
