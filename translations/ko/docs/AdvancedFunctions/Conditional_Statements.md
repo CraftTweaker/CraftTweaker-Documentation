@@ -80,45 +80,45 @@ val g = f ~ a; // g = "Hello World0", 문자열로 변환할 수 있는 값들�
 
 // OR, XOR, AND
 // |(OR)는 둘 중 하나라도 조건을 만족하면 true입니다.
-if (d=="Hello" | e == "Hello") { print("OR1!"); }       //true
-if (d=="Hello" | e == "World") { print("OR2!"); }       //true
+if (d == "Hello" | e == "Hello") { print("OR1!"); }       //true
+if (d == "Hello" | e == "World") { print("OR2!"); }       //true
 
 // ^(XOR)는 두 조건의 상태가 서로 달라야만 true입니다.
-if (d=="Hello" ^ e == "Hello") { print("XOR1!"); }      //true
-if (d=="Hello" ^ e == "World") { print("XOR2!"); }      //false
+if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }      //true
+if (d == "Hello" ^ e == "World") { print("XOR2!"); }      //false
 
 // &(AND)는 두 조건을 모두 만족해야 true입니다.
-if (d=="Hello" & e == "Hello") { print("AND1!"); }      //false
-if (d=="Hello" & e == "World") { print("AND2!"); }      //true
+if (d == "Hello" & e == "Hello") { print("AND1!"); }      //false
+if (d == "Hello" & e == "World") { print("AND2!"); }      //true
 ```
 
 ## 삼항(? :) 연산자
 
-매번 if문을 사용하기 번거로운 분들에게 권해드리는 연산자입니다. 특히 조건이나 경우가 단순할 수록 이 `?` 연산자가 왜 구현됐는지 알 수 있습니다. 본질적으로 if/else문과 사용 방식이 비슷하지만, 더 짧게 표현할 수 있습니다. Syntax: `boolean ? if : else`
+매번 if문을 사용하기 번거로운 분들에게 권해드리는 연산자입니다. 특히 조건이나 경우가 단순할 수록 이 `?` 연산자가 왜 구현됐는지 알 수 있습니다. 본질적으로 if/else문과 사용 방식이 비슷하지만, 더 짧게 표현할 수 있습니다. 문법은 &lt;boolean&gt; ? if : else</code>와 같은 형태로 사용하실 수 있습니다.
 
 ```Java
 val switchy = false;
 
-//prints switchy state
+// switchy의 상태를 출력합니다.
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+// switchy가 true일 경우 1, 그렇지 않으면 2를 vint에 저장합니다.
 val vInt = switchy ? 1 : 2;
-print(vInt);
+print(vInt);   // 2
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+// switchy가 true면 Hello를, 그렇지 않으면 Bye를 출력합니다.
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
+// switchy가 true면 Bye를, 그렇지 않으면 Hello를 출력합니다.
 switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## 연산자
 
-You can use these operators. All the examples given evaluate to true.
+아래와 같은 연산자를 사용하실 수 있습니다. 모든 예제는 true의 값을 가집니다.
 
-| Name             | token   | Explanation                                                                          | Example      |
+| 이름               | 토큰      | Explanation                                                                          | Example      |
 | ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
 | Not              | `!`     | Inverts a boolean                                                                    | !false       |
 | Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
