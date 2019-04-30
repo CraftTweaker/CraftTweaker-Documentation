@@ -1,12 +1,11 @@
 # Calculations
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+때로는 숫자를 입력해도 그것을 자르지 않습니다. 때로는 계산이 필요합니다. 하나에서 두 개 이상의 숫자를 사용할 수 있다는 점을 기억하십시오 `1+1+1+1`. 잘 작동 할 것입니다.
 
 ## A word of advice
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+계산에서 예상치 못한 결과가 발생할 경우, 두 가지 다른 유형을 사용했을 가능성이 매우 높습니다.  
+예를 들어 `13 % 6.5 `은 정확한 결과가 0임에도 불구하고 1을 반환합니다. 왜? ZenScript는 항상 동일한 유형의 두 변수를 사용하여 계산을 수행합니다. ZenScript는 항상 동일한 유형의 두 변수를 사용하여 계산을 수행합니다. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
 
 Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
 
