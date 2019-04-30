@@ -1,4 +1,4 @@
-# Conditional Statements
+# 조건문
 
 You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
 
