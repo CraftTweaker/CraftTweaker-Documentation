@@ -1,20 +1,20 @@
 # Solderer
 
-The Solderer package is used for adding or removing recipes to/from the Refined Storage Solderer.
+Solderer包用于添加/删除精致存储的配方
 
-## Calling
+## 导入
 
-You can call the Solderer package using `mods.refinedstorage.Solderer`
+你可以通过`mods.refinedstorage.Solderer`调用这个包
 
-## Recipe addition
+## 添加配方
 
-The Rows array **must** have a length of three! Use `null` if you need empty stacks.
+数组长度**必须**为3！ 使用 `null`来表示空物品
 
     //mods.refinedstorage.Solderer.addRecipe(IItemStack output, int time, IItemStack[] rows);
     mods.refinedstorage.Solderer.addRecipe(<minecraft:gold_ingot>, 100, [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]);
     
 
-## Recipe removal
+## 删除配方
 
     //mods.refinedstorage.Solderer.removeRecipe(IItemStack output);
     mods.refinedstorage.Solderer.removeRecipe(<minecraft:iron_ingot>);
