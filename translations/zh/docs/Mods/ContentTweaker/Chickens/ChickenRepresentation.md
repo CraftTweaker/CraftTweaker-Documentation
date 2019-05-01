@@ -28,15 +28,15 @@
     print(chickenRep.getLayItem().displayName);
     
 
-| 名称                    | 类型                                                                                     |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| name（名称）              | string                                                                                 |
-| layItem（生下的物品）        | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                                          |
-| dropItem（掉落物）         | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                                          |
-| backgroundColor（背景颜色） | [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                       |
-| foregroundColor（前景色）  | [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                       |
-| textureLocation（材质位置） | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| spawnType             | string                                                                                 |
-| layCoefficient        | float                                                                                  |
-| parentOne             | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
-| parentTwo             | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| 名称                     | 类型                                                                                     |
+| ---------------------- | -------------------------------------------------------------------------------------- |
+| name（名称）               | string                                                                                 |
+| layItem（生下的物品）         | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                                          |
+| dropItem（掉落物）          | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)                                          |
+| backgroundColor（背景颜色）  | [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                       |
+| foregroundColor（前景色）   | [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                       |
+| textureLocation（材质位置）  | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| 生成类型（spawnType）        | string                                                                                 |
+| 下蛋频率系数（layCoefficient） | float                                                                                  |
+| 父本（parentOne）          | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
+| 母本（parentTwo）          | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) |
