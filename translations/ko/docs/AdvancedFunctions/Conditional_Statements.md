@@ -163,7 +163,7 @@ val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-// 레드스톤이 allDusts에 포함되면 true를 반환합니다.
+// allDusts가 레드스톤을 포함하고 있다면 true를 반환합니다.
 if(allDusts has redstone) {
 
 }
