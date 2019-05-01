@@ -48,7 +48,7 @@ function realTens(a as string){
 
 ### 함수의 반환
 
-함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 타입는 `as` 키워드를 사용하여 정의할 수 있습니다.
+함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 타입는 `as` 키워드를 사용하는 것을 추천합니다.
 
 ```Java
 //calls add function with 1 and 99 as parameters
