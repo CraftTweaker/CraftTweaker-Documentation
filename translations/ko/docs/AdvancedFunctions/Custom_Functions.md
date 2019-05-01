@@ -4,7 +4,7 @@
 
 ## 기본 구문
 
-일반적으로 다음을 사용하여 정적을 선언합니다.
+일반적으로 다음과 같이 함수를 정의합니다.
 
 ```Java
 function NAME ([arguments[as type]]) [as returnType]{
@@ -17,8 +17,8 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 ## 정적 함수
 
-정적 기능은 스크립트를 실행하기 전에 생성되며 스크립트의 어느 곳에서나 액세스할 수 있습니다.  
-[cross-script reference](Cross-Script_Reference)을 사용하여 스크립트 외부에 선언된 기능에 액세스할 수도 있습니다.
+정적 함수는 스크립트를 실행하기 전에 생성되며 스크립트의 어느 곳에서나 액세스할 수 있습니다.  
+[cross-script reference](Cross-Script_Reference)를 사용하여 스크립트 외부에 선언된 함수를 액세스할 수도 있습니다.
 
 ### 보이드 함수
 
