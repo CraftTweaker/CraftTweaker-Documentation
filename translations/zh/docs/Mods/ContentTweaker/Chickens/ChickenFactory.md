@@ -10,11 +10,11 @@
 
 ## 创建鸡
 
-First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
-This is essentially an empty template of what your chicken will become.  
-This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, by taking the following parameters:
+首先，你需要创建一个[小鸡表示法](/Mods/ContentTweaker/Chickens/ChickenRepresentation/)。  
+它本质上是一个小鸡的模板。  
+此方法会使用下方罗列的参数，返回[小鸡表示法](/Mods/ContentTweaker/Chickens/ChickenRepresentation/)对象：
 
-- String name: the entity name of the chicken, used for models and the entity registry.
+- String 名称：鸡的实体名称，用于模型和实体注册
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
 - [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
 
