@@ -50,7 +50,7 @@ function realTens(a as string){
 
 ### 반환 기능
 
-함수로 반환해야 하는 값을 지정할 수도 있습니다. It is recommended using the `as` keyword to define the return type.
+함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 유형을 정의하려면 `as` 키워드를 사용하는 것이 좋습니다.
 
 ```Java
 //calls add function with 1 and 99 as parameters
@@ -67,12 +67,12 @@ function add(a as int,b as int) as int{
 }
 ```
 
-## Functions as variables
+## 변수로서의 기능
 
-You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
-You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
+변수와 같은 기능을 사용할 수도 있습니다. 이 경우 이러한 클래스는 별도의 클래스로 생성됩니다. 그 외에 정적 기능과 거의 동일한 기능을 합니다. 변수 이름으로 부릅니다.  
+이런 식으로 [global variables](/AdvancedFunctions/Global_Static_Variables/)로도 사용할 수 있습니다.
 
-If you need to cast the method (as you do for globals) you can use this:
+(구체의 경우처럼) 메소드를 캐스팅해야 하는 경우 다음을 사용할 수 있습니다.
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;
