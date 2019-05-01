@@ -50,35 +50,33 @@ if (test == 0) { // false
 // 정수형(int) 상수 선언
 val a = 0 as int;
 if (a == 0) {
-    print("NumVal");
-}
+    print("NumVal");}
 
 // 숫자 연산
 val b = 1;
 val c = 5;
 // 모두 true
-if (b + c == 6) { print("Num1!"); }
-if (b * c == 5) { print("Num2!"); }
-if (b / c == 0.2) { print("Num3!"); }
+if (b + c == 6) { print("Num1!");}
+if (b * c == 5) { print("Num2!");}
+if (b / c == 0.2) { print("Num3!");}
 
 // 문자열 간 결합 (Concatenation)
 val d = "Hello";
 val e = "World";
-val f = d ~ " " ~ e; // f = "Hello World", 물결표(~)는 두 값을 하나의 문자열로 이어줍니다.
-val g = f ~ a; // g = "Hello World0", 문자열로 변환할 수 있는 값들은 자동으로 변환되어 이어줍니다.
+val f = d ~ e; // f = "HelloWorld", 물결표(~) 는 두 값을 하나의 문자열로 이어줍니다.
 
 // OR, XOR, AND
-// |(OR)는 둘 중 하나라도 조건을 만족하면 true입니다.
-if (d == "Hello" | e == "Hello") { print("OR1!"); }       //true
-if (d == "Hello" | e == "World") { print("OR2!"); }       //true
+// |(OR) 는 둘 중 하나라도 조건을 만족하면 true입니다.
+if (d == "Hello" | e == "Hello") { print("OR1!");}       //true
+if (d == "Hello" | e == "World") { print("OR2!");}       //true
 
-// ^(XOR)는 두 조건의 상태가 서로 달라야만 true입니다.
-if (d == "Hello" ^ e == "Hello") { print("XOR1!"); }      //true
-if (d == "Hello" ^ e == "World") { print("XOR2!"); }      //false
+// ^(XOR) 는 두 조건의 상태가 서로 달라야만 true입니다.
+if (d == "Hello" ^ e == "Hello") { print("XOR1!");}      //true
+if (d == "Hello" ^ e == "World") { print("XOR2!");}      //false
 
-// &(AND)는 두 조건을 모두 만족해야 true입니다.
-if (d == "Hello" & e == "Hello") { print("AND1!"); }      //false
-if (d == "Hello" & e == "World") { print("AND2!"); }      //true
+// &(AND) 는 두 조건을 모두 만족해야 true입니다.
+if (d == "Hello" & e == "Hello") { print("AND1!");}      //false
+if (d == "Hello" & e == "World") { print("AND2!");}      //true
 ```
 
 ## 삼항(? :) 연산자
