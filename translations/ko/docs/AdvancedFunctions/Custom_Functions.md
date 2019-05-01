@@ -25,32 +25,30 @@ function NAME ([arguments[as type]]) [as returnType]{
 보이드 함수는 값을 반환하지 않는 함수입니다.
 
 ```Java
-//calls the function tens() without arguments
+// 인자없이 tens함수를 호출
 tens();
 
-//calls the function realTens() with the String "Hello World!" as argument
+// "Hello World!" 문자열을 인자로 넣어서 realTens함수를 호출
 realTens("Hello World!");
 
-
-//crates function tens() with no required arguments
+// 인자가 없는 tens함수를 생성
 function tens(){
-    //Calls function realTens() with "" as argument
+    // "" 인자를 넣어서 realTens함수를 호출
     realTens("");
 }
 
-
-//creates function realTens() with one string required as argument
+// 한개의 문자열 인자를 갖는 realTens함수를 생성
 function realTens(a as string){
-    //prints the argument 10 times
+    // 넘겨받은 인자를 10번 출력
     for i in 1 to 11{
         print(a);
     }
 }
 ```
 
-### 반환 기능
+### 함수의 반환
 
-함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 유형을 정의하려면 `as` 키워드를 사용하는 것이 좋습니다.
+함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 타입는 `as` 키워드를 사용하여 정의할 수 있습니다.
 
 ```Java
 //calls add function with 1 and 99 as parameters
