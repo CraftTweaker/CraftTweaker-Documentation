@@ -22,7 +22,7 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 ### 보이드 함수
 
-보이드 기능은 값을 반환하지 않는 기능입니다.
+보이드 함수는 값을 반환하지 않는 함수입니다.
 
 ```Java
 //calls the function tens() without arguments
