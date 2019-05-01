@@ -37,7 +37,7 @@ function tens(){
     realTens("");
 }
 
-// 한개의 문자열 인자를 갖는 realTens함수를 생성
+// 한개의 문자열 매개변수를 갖는 realTens함수를 생성
 function realTens(a as string){
     // 넘겨받은 인자를 10번 출력
     for i in 1 to 11{
@@ -51,23 +51,23 @@ function realTens(a as string){
 함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 타입는 `as` 키워드를 사용하는 것을 추천합니다.
 
 ```Java
-//calls add function with 1 and 99 as parameters
+// 1과 99를 인자로 넣어 add함수를 요청
 val result = add(1,99);
 print(result);
 
-//you can place the add function inside the print function as well
+// add함수의 호출을 print함수 안에 넣을 수 있습니다. 
 print(add(2,64));
 
-//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
+// a와 b의 정수형 매개변수를 갖고 정수형값을 반환하는 add함수를 정의
 function add(a as int,b as int) as int{
-    //returns the sum of a and b
+    // a와 b의 합계를 반환
     return a+b;
 }
 ```
 
-## 변수로서의 기능
+## 함수의 변수화
 
-변수와 같은 기능을 사용할 수도 있습니다. 이 경우 이러한 클래스는 별도의 클래스로 생성됩니다. 그 외에 정적 기능과 거의 동일한 기능을 합니다. 변수 이름으로 부릅니다.  
+함수를 변수처럼 사용할 수 있습니다. 이 경우 이러한 클래스는 별도의 클래스로 생성됩니다. 그 외에 정적 기능과 거의 동일한 기능을 합니다. 변수 이름으로 부릅니다.  
 이런 식으로 [global variables](/AdvancedFunctions/Global_Static_Variables/)로도 사용할 수 있습니다.
 
 (구체의 경우처럼) 메소드를 캐스팅해야 하는 경우 다음을 사용할 수 있습니다.
