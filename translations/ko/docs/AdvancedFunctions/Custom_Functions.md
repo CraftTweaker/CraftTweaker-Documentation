@@ -67,10 +67,10 @@ function add(a as int,b as int) as int{
 
 ## 함수의 변수화
 
-함수를 변수처럼 사용할 수 있습니다. 이 경우 이러한 클래스는 별도의 클래스로 생성됩니다. 그 외에 정적 기능과 거의 동일한 기능을 합니다. 변수 이름으로 부릅니다.  
-이런 식으로 [global variables](/AdvancedFunctions/Global_Static_Variables/)로도 사용할 수 있습니다.
+함수를 변수처럼 사용할 수 있습니다. 이 경우에는 별도의 클래스와 같이 생성을 합니다. 그 외에는 일반 함수와 거의 동일합니다. 호출시 지정한 변수명으로 호출합니다.  
+다음과 같이 [전역 변수](/AdvancedFunctions/Global_Static_Variables/)로도 사용할 수 있습니다.
 
-(구체의 경우처럼) 메소드를 캐스팅해야 하는 경우 다음을 사용할 수 있습니다.
+(글로벌로) 메소드를 캐스팅해야 하는 경우 다음과 같이 사용합니다.
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;
