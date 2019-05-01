@@ -15,14 +15,14 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 괄호 안에 있는 것들은 여러분이 성공하고 싶은 것에 따라 선택적입니다. 구체적인 기능들을 자세히 살펴보겠습니다.
 
-## 정적 기능
+## 정적 함수
 
 정적 기능은 스크립트를 실행하기 전에 생성되며 스크립트의 어느 곳에서나 액세스할 수 있습니다.  
 [cross-script reference](Cross-Script_Reference)을 사용하여 스크립트 외부에 선언된 기능에 액세스할 수도 있습니다.
 
-### Void functions
+### 보이드 함수
 
-Void functions are functions that will not return any value.
+보이드 기능은 값을 반환하지 않는 기능입니다.
 
 ```Java
 //calls the function tens() without arguments
@@ -48,9 +48,9 @@ function realTens(a as string){
 }
 ```
 
-### Return functions
+### 반환 기능
 
-You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
+함수로 반환해야 하는 값을 지정할 수도 있습니다. It is recommended using the `as` keyword to define the return type.
 
 ```Java
 //calls add function with 1 and 99 as parameters
