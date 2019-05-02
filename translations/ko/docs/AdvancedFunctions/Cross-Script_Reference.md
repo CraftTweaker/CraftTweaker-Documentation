@@ -1,6 +1,6 @@
 # 스크립트 간 참조
 
-[전역 변수](/AdvancedFunctions/Global_Static_Variables/)나 [사용자 정의 함수](/AdvancedFunctions/Custom_Functions/)를 가지는 모든 스크립트는 스크립트 간 참조 목록에 등록됩니다.
+[전역 변수](/AdvancedFunctions/Global_Static_Variables/)나 [사용자 정의 함수](/AdvancedFunctions/Custom_Functions/)를 가지는 모든 스크립트는 스크립트 간 참조 목록에 등록됩니다.</2> dot-notaion을 사용하여 이 필드나 함수를 액세스 할수 있습니다. 
 
 ## 설명
 
@@ -11,7 +11,7 @@
 
 ## 예제
 
-`scripts` 폴더에 `a.zs`와 `b.zs` 두 스크립트 파일이 있다고 가정해봅시다.
+`a.zs`와 `b.zs` 두 스크립트 파일이 있다고 가정해봅시다.
 
 a.zs:
 
