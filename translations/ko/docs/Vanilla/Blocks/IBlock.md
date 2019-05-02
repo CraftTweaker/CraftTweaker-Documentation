@@ -9,7 +9,7 @@ IBlock 개체는 IBlockDefinition</ 0>, 메타 데이터 및 TileData로 구성�
 
 ## IBlock객체 호출
 
-There are multiple ways thet return an IBlock object:
+IBlock 객체를 반환하는 방법은 여러가지입니다. 
 
 * Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
