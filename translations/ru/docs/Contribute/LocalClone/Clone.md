@@ -1,14 +1,14 @@
-# Clone
+# Клонирование
 
-## Summary
+## Краткое описание
 
 This page shows you how to clone your forked repository to your local computer.
 
-## Prerequisites
+## Требования
 
 You should have [Forked the CrT-wiki repository](/Contribute/SetupGithub/) and you need to have [Git installed](/Contribute/LocalClone/InstallingGit/).
 
-## First steps
+## Первые шаги
 
 First you need to create a folder on your local computer where you want the wiki to be cloned to.  
 Then you need to open either your command prompt or git bash in that folder.  
@@ -36,6 +36,6 @@ Let's navigate to it and issue a `git status`:
 
 ![Change directory and issue git status](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
 
-## How to continue
+## Как продолжить
 
 Now that you have a local clone of the wiki you can start creating and editing files and eventually [create a commit](/Contribute/LocalClone/CreateCommit/).
