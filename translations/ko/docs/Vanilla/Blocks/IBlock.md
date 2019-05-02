@@ -1,9 +1,8 @@
 # IBlock
 
-An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
-It refers to a block in the game.
+IBlock 개체는 IBlockDefinition</ 0>, 메타 데이터 및 TileData로 구성됩니다. <1 /> 게임내에서는 블록을 나타냅니다.</p> 
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlock;`
