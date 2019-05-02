@@ -14,14 +14,14 @@
 它本质上是一个小鸡的模板。  
 此方法会使用下方罗列的参数，返回[小鸡表示法](/Mods/ContentTweaker/Chickens/ChickenRepresentation/)对象：
 
-- String 名称：鸡的实体名称，用于模型和实体注册
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
-- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
+- String 名称：鸡的实体名称，用于模型和实体注册。
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) 颜色：鸡的颜色。
+- [IItemestack](/Vanilla/Items/IItemStack/) 生下的物品：鸡会生下的物品。
 
     ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
     
 
-## Example Script
+## 示例脚本
 
     #loader contenttweaker
     #modloaded chickens
