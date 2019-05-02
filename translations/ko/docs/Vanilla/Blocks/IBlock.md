@@ -11,7 +11,7 @@ IBlock 개체는 IBlockDefinition</ 0>, 메타 데이터 및 TileData로 구성�
 
 IBlock 객체를 반환하는 방법은 여러가지입니다. 
 
-* Casting a [IItemStack](/Vanilla/Items/IItemStack/) as IBlock (using the `AS` keyword, or the `asBlock()` method)
+* [ItemStack](/Vanilla/Items/IItemStack/)을 IBlock으로 캐스팅(`as` 키워드를 사용하거나 `asBlock()` 메소드를 사용)
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
 * Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
 
