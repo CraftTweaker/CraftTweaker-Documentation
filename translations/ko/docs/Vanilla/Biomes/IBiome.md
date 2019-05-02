@@ -9,7 +9,7 @@ IBiome 인터페이스를 사용하여 등록되어 있는 바이옴에 대한 �
 
 ## IBiome 호출
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
+[IGame](/Vanilla/Game/IGame/)의 `game.biomes`을 사용하면 등록되어 있는 모든 바이옴의 목록을 얻을 수 있고 현재 유일한 방법이기도 합니다. 
 
 ## ZenGetters
 
