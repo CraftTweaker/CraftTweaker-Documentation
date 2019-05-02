@@ -13,18 +13,18 @@ IBiome 인터페이스를 사용하여 등록되어 있는 바이옴에 대한 �
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+IBiome 객체로 수행할 수 있는 작업은 정보를 가져오는 일입니다. 
 
-| ZenGetter                    | Return Type |
-| ---------------------------- | ----------- |
-| name                         | String      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                    | 반환 타입   |
+| ---------------------------- | ------- |
+| name                         | String  |
+| canRain                      | boolean |
+| isSnowyBiome                 | boolean |
+| highHumidity                 | boolean |
+| spawningChance               | float   |
+| baseHeight                   | float   |
+| heightVariation              | float   |
+| rainfall                     | float   |
+| waterColorMultiplier         | int     |
+| ignorePlayerSpawnSuitability | boolean |
+| temperature                  | float   |
