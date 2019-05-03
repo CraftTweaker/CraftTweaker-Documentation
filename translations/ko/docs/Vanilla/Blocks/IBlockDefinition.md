@@ -1,10 +1,10 @@
 # IBlockDefinition
 
-The IBlockDefinition objects provide additional information on blocks.
+IBlockDefinition 객체는 블럭의 추가정보를 제공합니다. 
 
-## Importing the package
+## 패키지 임포트하기
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+예를 들어 [Array](/AdvancedFunctions/Arrays_and_Loops/)의 캐스팅하려면 관련된 패키지를 임포트해야만 합니다. 안전을 위해서도 말입니다.   
 `import crafttweaker.block.IBlockDefinition;`
 
 ## Calling an IBlockDefinition object
