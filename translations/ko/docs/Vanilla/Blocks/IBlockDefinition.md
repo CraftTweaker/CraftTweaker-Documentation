@@ -43,10 +43,9 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
     defObj.setUnbreakable();
     
 
-### Get tickrate in a specific world
+### 특정 월드의 틱 속도 얻기
 
-Uses an [IWorld](/Vanilla/World/IWorld/) object.  
-Returns an int.
+</a>IWorld</0> 객체를 사용하며, </1> 정수를 반환합니다.
 
     defObj.getTickRate(IWorld world);
     
