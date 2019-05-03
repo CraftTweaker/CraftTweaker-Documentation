@@ -13,15 +13,15 @@ IBlock 객체를 반환하는 방법은 여러가지입니다.
 
 * [ItemStack](/Vanilla/Items/IItemStack/)을 IBlock으로 캐스팅(`as` 키워드를 사용하거나 `asBlock()` 메소드를 사용)
 * Using the getBlock(x,y,z) on an [IWorld](/Vanilla/World/IWorld/).
-* Using getBlock() on ContentTweaker's [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)
+* ContentTweaker의 [ICTBlockStat](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/)에 getBlock()을 사용
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
-| ---------- | ------------------------------ | ----------------------------------------------------- |
-| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Returns the Block's metadata   | int                                                   |
-| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
+| Getter     | 기능               | 반환 타입                                                 |
+| ---------- | ---------------- | ----------------------------------------------------- |
+| definition | 블럭의 정의를 반환       | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| meta       | 블럭의 메타정보를 반환     | int                                                   |
+| data       | 블럭의 tileData를 반환 | [IData](/Vanilla/Data/IData/)                         |
 
 # IBlockPattern
 
