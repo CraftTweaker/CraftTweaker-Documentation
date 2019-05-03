@@ -58,15 +58,15 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
     defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
     
 
-### Get the block's slipperiness
+### 블럭의 미끄러움 정도를 얻기
 
-Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
-Returns a float.
+[IBlockState](/Vanilla/Blocks/IBlockState/), [IBlockAccess](/Vanilla/World/IBlockAccess/), [IBlockPos](/Vanilla/World/IBlockPos/) 및 선택적 [IEntity](/Vanilla/Entities/IEntity/) 객체를 사용하며,   
+float타입의 결과를 반환합니다.
 
     defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
     
 
-### Set the block's harvest level
+### 블럭의 하베스트 레벨을 설정
 
 Uses a string and an int.  
 Returns void (nothing).
