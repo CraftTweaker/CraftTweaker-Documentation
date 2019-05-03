@@ -45,15 +45,14 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 ### 특정 월드의 틱 속도 얻기
 
-</a>IWorld</0> 객체를 사용하며, </1> 정수를 반환합니다.
+</a>IWorld</0> 객체를 사용하며, </1> int형의 값을 반환합니다.
 
     defObj.getTickRate(IWorld world);
     
 
-### Check if the block can be placed on another block
+### 블럭을 다른 블럭위에 위치할 수 있는지를 체크
 
-Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
-Returns a bool.
+어떤 메소드를 사용하는지에 다르겠지만 [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/), [IFacing](/Vanilla/World/IFacing/) 객체를 사용하면 되며, bool타입의 값을 반환합니다.
 
     defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
     defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
