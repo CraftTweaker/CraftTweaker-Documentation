@@ -17,22 +17,22 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | 기능                                   | 타입                                                  |
-| --------------- | ------------------- | ------------------------------------ | --------------------------------------------------- |
-|                 | canSpawnInBlock     | 만약 엔티티가 이 블럭에 스폰이 가능한지의 여부를 반환       | bool                                                |
-| creativeTab     | creativeTab         |                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                      | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                      | float                                               |
-| id              |                     | 블럭 ID를 반환                            | string                                              |
-| displayName     |                     | 블럭의 표시명을 반환                          | string                                              |
-|                 | hardness            |                                      | int                                                 |
-| harvestLevel    |                     | 블럭의 하베스트 레벨을 반환                      | int                                                 |
-| harvestTool     |                     | 블럭의 하베스트 가능 툴을 반환                    | string                                              |
-|                 | lightOpacity        |                                      | int                                                 |
-|                 | lightLevel          |                                      | int                                                 |
-|                 | resistance          |                                      | int                                                 |
-| unlocalizedName |                     | Returns the block's unlocalized Name | string                                              |
-| tickRandomly    | tickRandomly        |                                      | bool                                                |
+| ZenGetter       | ZenSetter           | 기능                             | 타입                                                  |
+| --------------- | ------------------- | ------------------------------ | --------------------------------------------------- |
+|                 | canSpawnInBlock     | 만약 엔티티가 이 블럭에 스폰이 가능한지의 여부를 반환 | bool                                                |
+| creativeTab     | creativeTab         |                                | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                | float                                               |
+| id              |                     | 블럭 ID를 반환                      | string                                              |
+| displayName     |                     | 블럭의 표시명을 반환                    | string                                              |
+|                 | hardness            |                                | int                                                 |
+| harvestLevel    |                     | 블럭의 하베스트 레벨을 반환                | int                                                 |
+| harvestTool     |                     | 블럭의 하베스트 가능 툴을 반환              | string                                              |
+|                 | lightOpacity        |                                | int                                                 |
+|                 | lightLevel          |                                | int                                                 |
+|                 | resistance          |                                | int                                                 |
+| unlocalizedName |                     | 번역되지 않은 블럭의 이름을 반환             | string                                              |
+| tickRandomly    | tickRandomly        |                                | bool                                                |
 
 ## ZenMethods
 
