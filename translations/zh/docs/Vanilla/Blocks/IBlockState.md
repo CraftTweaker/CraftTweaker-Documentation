@@ -7,12 +7,12 @@ IBlockState 对象代表一个方块的当前状态。
 如果你遇到问题 ，你可能需要导入相关包，为此，最安全的方法就是进行导入。  
 `import crafttweaker.block.IBlockPattern;`
 
-## Calling an IBlockState
+## 调用 IBlockState 对象
 
-There are several methods that return an IBlockState
+有很多方法可以返回一个 IBlockState 对象。
 
-- Using the [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
-- Using the `IBlockState.getBlockState()` static method. (See below for more information)
+- 使用 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
+- 使用静态方法 `IBlockState.getBlockState()` （详情见下文）
 - Using the `getMatchingBlockStates()` method on an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) object to retrieve an array of IBlockStates.
 - Using the `withProperty()` method on another IBlockState object.
 
