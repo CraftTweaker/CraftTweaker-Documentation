@@ -17,15 +17,15 @@ IBlock 객체를 반환하는 방법은 여러가지입니다.
 
 ## Zengetters
 
-| Getter     | 기능               | 반환 타입                                                 |
-| ---------- | ---------------- | ----------------------------------------------------- |
-| definition | 블럭의 정의를 반환       | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | 블럭의 메타정보를 반환     | int                                                   |
-| data       | 블럭의 tileData를 반환 | [IData](/Vanilla/Data/IData/)                         |
+| Getter     | 기능            | 반환 타입                                                 |
+| ---------- | ------------- | ----------------------------------------------------- |
+| definition | 블럭의 정의를 반환    | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| meta       | 블럭의 메타정보를 반환  | int                                                   |
+| data       | 블럭의 타일 정보를 반환 | [IData](/Vanilla/Data/IData/)                         |
 
 # IBlockPattern
 
-IBlocks extend [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) Objects. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlock은 [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) 객체를 확장합니다. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
 
 * Use the `blocks` ZenGetter
 * OR'ing
