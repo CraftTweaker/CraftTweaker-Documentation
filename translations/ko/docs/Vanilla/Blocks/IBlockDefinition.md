@@ -68,7 +68,7 @@ float타입의 결과를 반환합니다.
 
 ### 블럭의 하베스트 레벨을 설정
 
-Uses a string and an int.  
-Returns void (nothing).
+string타입의 인수와 int타입의 인수를 지정하며  
+반환값은 없습니다. 
 
     defObj.setHarvestLevel(string toolclass, int level);
