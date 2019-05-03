@@ -26,8 +26,8 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 | id              |                     | 블럭 ID를 반환                            | string                                              |
 | displayName     |                     | 블럭의 표시명을 반환                          | string                                              |
 |                 | hardness            |                                      | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level    | int                                                 |
-| harvestTool     |                     | Returns the block's harvest tool     | string                                              |
+| harvestLevel    |                     | 블럭의 하베스트 레벨을 반환                      | int                                                 |
+| harvestTool     |                     | 블럭의 하베스트 가능 툴을 반환                    | string                                              |
 |                 | lightOpacity        |                                      | int                                                 |
 |                 | lightLevel          |                                      | int                                                 |
 |                 | resistance          |                                      | int                                                 |
