@@ -25,9 +25,9 @@ IBlock 객체를 반환하는 방법은 여러가지입니다.
 
 # IBlockPattern
 
-IBlock은 [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) 객체를 확장합니다. That means, all functions that are available to IBlockPattern objects can also be used for IBlock objects:
+IBlock은 [IBlockPattern](/Vanilla/Blocks/IBlockPattern/) 객체를 확장합니다. 즉, IBlockPattern 객체에서 사용할 수있는 모든 함수를 IBlock 객체에서도 사용할 수 있습니다.
 
-* Use the `blocks` ZenGetter
+* `blocks` ZenGetter를 사용
 * OR'ing
-* Matching using the `in` keyword
-* Use the `displayName` ZenGetter
+* `in`키워드 사용에 의한 매칭
+* `displayName` ZenGetter를 사용
