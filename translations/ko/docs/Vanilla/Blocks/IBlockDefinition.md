@@ -11,7 +11,7 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 * [IBlock](/Vanilla/Blocks/IBlock/) 객체의 `definition` ZenGetter를 이용
 
-## Calling an IBlockDefinition List
+## IBlockDefinition 객체 호출
 
 * Using `game.blocks` to get a list of all block definition in the game.
 
