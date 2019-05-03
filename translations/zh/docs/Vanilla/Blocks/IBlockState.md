@@ -13,10 +13,10 @@ IBlockState 对象代表一个方块的当前状态。
 
 - 使用 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
 - 使用静态方法 `IBlockState.getBlockState()` （详情见下文）
-- Using the `getMatchingBlockStates()` method on an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) object to retrieve an array of IBlockStates.
-- Using the `withProperty()` method on another IBlockState object.
+- 使用 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) 对象的 `getMatchingBlockStates()` 方法检索一个 IBlockStates 数组。
+- 使用另一个 IBlockState 对象的 `withProperty()` 方法。
 
-## Resolving an IBlockState At Runtime
+## 运行时解析 IBlockState
 
 There may be times at which your script may rely on interaction with a block from a mod that has not been loaded yet, such as inside block events in ContentTweaker or another pre-init script loader. If you attempt to use a [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for a block that has not yet been registered, the handler will fail to resolve and your script will not work.
 
