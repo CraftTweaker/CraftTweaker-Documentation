@@ -13,26 +13,26 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 ## IBlockDefinition 객체 호출
 
-* Using `game.blocks` to get a list of all block definition in the game.
+* `Game.blocks`을 사용하여 게임의 모든 블럭 정의 목록을 획득
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
-| --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
-| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                              | float                                               |
-| id              |                     | Returns the block ID                         | string                                              |
-| displayName     |                     | Returns the block's DisplayName              | string                                              |
-|                 | hardness            |                                              | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
-| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
-|                 | lightOpacity        |                                              | int                                                 |
-|                 | lightLevel          |                                              | int                                                 |
-|                 | resistance          |                                              | int                                                 |
-| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
-| tickRandomly    | tickRandomly        |                                              | bool                                                |
+| ZenGetter       | ZenSetter           | 기능                                   | 타입                                                  |
+| --------------- | ------------------- | ------------------------------------ | --------------------------------------------------- |
+|                 | canSpawnInBlock     | 만약 엔티티가 이 블럭에 스폰이 가능한지의 여부를 반환       | bool                                                |
+| creativeTab     | creativeTab         |                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                      | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                      | float                                               |
+| id              |                     | 블럭 ID를 반환                            | string                                              |
+| displayName     |                     | 블럭의 표시명을 반환                          | string                                              |
+|                 | hardness            |                                      | int                                                 |
+| harvestLevel    |                     | Returns the block's harvest level    | int                                                 |
+| harvestTool     |                     | Returns the block's harvest tool     | string                                              |
+|                 | lightOpacity        |                                      | int                                                 |
+|                 | lightLevel          |                                      | int                                                 |
+|                 | resistance          |                                      | int                                                 |
+| unlocalizedName |                     | Returns the block's unlocalized Name | string                                              |
+| tickRandomly    | tickRandomly        |                                      | bool                                                |
 
 ## ZenMethods
 
