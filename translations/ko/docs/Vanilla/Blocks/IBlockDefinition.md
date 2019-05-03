@@ -7,7 +7,7 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 예를 들어 [Array](/AdvancedFunctions/Arrays_and_Loops/)의 캐스팅하려면 관련된 패키지를 임포트해야만 합니다. 안전을 위해서도 말입니다.   
 `import crafttweaker.block.IBlockDefinition;`
 
-## Calling an IBlockDefinition object
+## IBlockDefinition 객체 호출
 
 * Using the `definition` ZenGetter on an [IBlock](/Vanilla/Blocks/IBlock/) object.
 
