@@ -36,11 +36,9 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 ## ZenMethods
 
-### Set Block unbreakable
+### 블럭을 부수지 못하게 설정
 
-Uses no paramaeters.  
-Returns nothing.  
-Does the same as `hardness = -1;`
+인수 없고, </0> 반환 없고, </0> hardness = -1과 동일한 결과입니다.
 
     defObj.setUnbreakable();
     
