@@ -1,18 +1,17 @@
-# Cross-Script Reference
+# 스크립트 간 참조
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+[전역 변수](/AdvancedFunctions/Global_Static_Variables/)나 [사용자 정의 함수](/AdvancedFunctions/Custom_Functions/)를 가지는 모든 스크립트는 스크립트 간 참조 목록에 등록됩니다.</2> dot-notaion을 사용하여 이 필드나 함수를 액세스 할수 있습니다. 
 
-## Specifications
+## 설명
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- 스크립트 간 참조는 `scripts` 경로서부터 시작됩니다.
+- `scripts.mySubfolder.a.zs`와 같이 스크립트 디렉토리를 기준으로 경로를 지칭할 수 있습니다.
+- [import 선언](/AdvancedFunctions/Import/)과 같은 표기법을 사용하여 참조할 스크립트를 고를 수 있습니다.
+- ZenScript에서 먼저 매칭되는 디렉토리를 먼저 확인한 후 파일이나 값을 확인합니다.
 
-## Example
+## 예제
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+`a.zs`와 `b.zs` 두 스크립트 파일이 있다고 가정해봅시다.
 
 a.zs:
 

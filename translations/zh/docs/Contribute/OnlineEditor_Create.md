@@ -6,8 +6,8 @@
 
 ## 介绍
 
-GitHub's online editor allows you to change and create files using nothing but your browser.  
-It may not be as versatile as [using a local copy](/Contribute/LocalClone/CreateCommit/) but you don't need to worry about [setting up git](/Contribute/LocalClone/InstallingGit/) and all.
+GitHub 的在线编辑器允许你在只有浏览器的情况下创建和编辑文件。  
+虽然它的功能不如[使用本地副本](/Contribute/LocalClone/CreateCommit/)强大，但你也因此免去了[设置 git ](/Contribute/LocalClone/InstallingGit/)会产生的相关问题。
 
 这篇指南将会向你展示如何使用 GitHub 的在线编辑器创建新的文档。  
 添加新页面的主要原因可能是补充缺失的信息，但也可能是给模组处理程序添加一个示例条目。无论出于何种原因这里欢迎大家做出更改并最终[提交 Pull Request](/Contribute/PullRequest)。

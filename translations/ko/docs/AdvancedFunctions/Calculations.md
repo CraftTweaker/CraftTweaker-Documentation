@@ -1,73 +1,73 @@
-# Calculations
+# 계산
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+때로는 숫자를 입력해도 그것을 자르지 않습니다. 때로는 계산이 필요합니다. 하나에서 두 개 이상의 숫자를 사용할 수 있다는 점을 기억하십시오 `1+1+1+1`. 잘 작동 할 것입니다.
 
-## A word of advice
+## 충고 한마디
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+계산에서 예상치 못한 결과가 발생할 경우, 두 가지 다른 유형을 사용했을 가능성이 매우 높습니다.  
+예를 들어 `13 % 6.5 `은 정확한 결과가 0임에도 불구하고 1을 반환합니다. 왜일까요? ZenScript는 항상 동일한 유형의 두 변수를 사용하여 계산을 수행합니다. 여기에서는 두번째 숫자의 타입을 첫번째와 동일하게 변환을 합니다. 이 예에서 두 번째 숫자(실수)가 첫 번째 숫자(정수)와 일치하도록 변환되었기 때문에 수행된 계산은 `13 % 6`입니다.
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+항상 양쪽 변수의 타입에 주의해야 하며, 확실하지 않을 경우 print 함수를 사용하여 결과를 로그에 출력하여 확인하십시오.
 
-## Arithmetic Operators
+## 산술 연산자
 
-I'm pretty sure all of you know these already, don't you?
+다음 내용들은 이미 다 알고 있을거라고 생각합니다.
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| 토큰  | 복합대입 토큰 | 함수             | 예제     |
+| --- | ------- | -------------- | ------ |
+| `+` | `+=`    | Addition       | 1+2    |
+| `-` | `-=`    | Substraction   | 2-1    |
+| `*` | `*=`    | Multiplication | 1*1    |
+| `/` | `/=`    | Division       | 2/2    |
+| `%` | `%=`    | Modulo         | 13 % 6 |
 
-## Concatenation
+## 연결
 
-Puts one thing at the and of the other
+한 가지를 다른쪽에 둡니다.
 
-    //prints "Hello World"
+    //"Hello World" 출력
     print("Hello" ~ " " ~ "World");
     
 
-## Calculation results
+## 계산 결과
 
-A calculation usually ends up with a result. So what to do with that?
+계산은 보통 결과로 끝납니다. 그럼 어떻게해야할까요?
 
-### Assigning a variable
+### 변수에 할당
 
-There are two ways of assigning a value to a variable:
+변수에 값을 할당하는 두 가지 방법은 다음과 같습니다.
 
     var test = 0;
     
     //Option 1:
-    //assigns test with the value 3 (1+2)
+    //3 (1+2) 을 test에 할당
     test = 1+2;
     
     //Option 2:
-    //assigns test with 5 (3+2)
+    //5 (3+2) 를 test에 할당
     test = test + 2;
     
     //Option 3:
-    //assigns test with 2 (5-3)
+    //2 (5-3) 를 test에 할당
     test -= 3;
     
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+옵션 1과 2는 `=` 토큰을 사용하여 반환 변수를 할당합니다.  
+계산에 사용되지 않는 변수를 할당하려는 경우 이 방법이 초보자에게 가장 쉬운 방법일 수 있습니다.
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+옵션 3은 정상 감산 결과로 `->/0 앞에 변수를 할당합니다.<br />
+이 페이지의 모든 연산자는 각각의 할당 토큰을 가지고 있습니다. 위의 표를 확인하십시오.</p>
 
-### Using the result otherwise
+<h3>결과의 사용</h3>
 
-You can always use the result of a calculation in a function or a conditional statement:
+<p>계산 결과는 항상 함수 또는 조건문에서 사용할 수 있습니다.</p>
 
-    //prints 4
-    print(3+1);
-    
-    //removes the item on array[4]
-    recipes.remove(array[3+1]);
-    
-    //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+<pre><code>// 4
+print(3+1);
+
+//array[4] 요소를 제거
+recipes.remove(array[3+1]);
+
+//
+if(3+1 == 2*2) {print("Used a calculation!")}
+`</pre>

@@ -1,4 +1,4 @@
-# Global and Static Variables
+# 전역 및 정적 변수
 
 Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
 "Why is there no way to make them available in every script?" Is what went through your head at such times.
