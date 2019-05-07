@@ -18,3 +18,4 @@ The following information can be retrieved from the event:
 | ZenGetter | Return Type                         |
 |-----------|-------------------------------------|
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `phase`  | String |
