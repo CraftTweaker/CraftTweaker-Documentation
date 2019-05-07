@@ -18,5 +18,5 @@ The following information can be retrieved from the event:
 
 | ZenGetter   | Return Type                            |
 |-------------|----------------------------------------|
-| `item`      | [IItemStack](/Vanilla/Items/IItemStack/)| 
+| `item`      | [IEntityItem](/Vanilla/Entities/IEntityItem/)| 
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)    |
