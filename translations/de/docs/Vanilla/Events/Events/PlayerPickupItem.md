@@ -18,7 +18,7 @@ PlayerPickupItem Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                              |
-| --------- | ---------------------------------------- |
-| `item`    | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| ZenGetter | Return Type                                   |
+| --------- | --------------------------------------------- |
+| `item`    | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)          |
