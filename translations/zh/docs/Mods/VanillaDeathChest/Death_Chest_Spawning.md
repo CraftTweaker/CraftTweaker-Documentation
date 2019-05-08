@@ -11,3 +11,8 @@
     
 
 字符串包括三个参数：死亡箱的 X，Y，Z 坐标。
+
+## Container display name
+
+    //DeathChestSpawning.setContainerDisplayName(string stage, string name);
+    DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
