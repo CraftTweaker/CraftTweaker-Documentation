@@ -1,8 +1,8 @@
-# Import Function
+# 함수 import하기
 
-Instead of typing the whole function name all the time, you can just import a function to serve your needs. Useful when using mod functions.
+매번 함수의 풀네임을 작성하는 것보다는 import를 사용하는 것이 더 나을지도 모릅니다. 특히 모드 지원 함수를 사용할 때 유용합니다.
 
-## Note on pre 1.12 imports
+## 1.12 버전 이전에서 사용시 유의사항
 
 With CraftTweaker 1.12, a lot of code has changed.  
 Before, all internal functions were called using `minetweaker.package.function`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
