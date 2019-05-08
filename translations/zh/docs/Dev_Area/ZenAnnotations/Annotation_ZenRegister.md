@@ -1,11 +1,11 @@
 # ZenRegister
 
-The ZenRegister Annotation is used to register a class that also has either the [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) or the [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) annotation.  
-This is the preferred way of registering Classes in ZenScript.
+ZenRegister 注解用于注册一个带有 [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) 或 [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) 的类。  
+这是在 ZenScript 中注册类的首选方式。
 
-## Example
+## 例子
 
-[Crafttweaker's IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
+[Crafttweaker 的 IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
 
     @ZenClass("crafttweaker.item.IIngredient")
     @ZenRegister
