@@ -1,19 +1,19 @@
-# Arrays
+# Tablice
 
-An array is a List containing several items of the same kind.
+Tablica to lista zawierająca wiele przedmiotów jednego typu.
 
-## Declaring Arrays
+## Tworzenie Tablic
 
-It is declared using ```[``` and ```]```.
+Tworzy się ją za pomocą ```[``` i ```]```.
 
-    //Array containing "Hello" and "World"
+    //Tablica zawierająca "Hello" i "World"
     val stringArray = ["Hello", "World"] as string[];
     
-    //Array containing 1-3
+    //Tablica zawierająca cyfry 1-3
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Jeżeli myślisz sobie "czekaj, czy ja nie widziałem przypadkiem tych nawiasów wcześniej?", widziałeś je. Pamiętasz ```recipes.add(out,[[],[],[]]);```? Ta formuła używa trzech tablic, gdzie każda z nich zawiera do trzech wartości by zdefiniować recepturę w stole rzemieślniczym.
 
 ## Casting Arrays
 
