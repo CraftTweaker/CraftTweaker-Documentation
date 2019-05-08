@@ -18,6 +18,7 @@ PlayerTick Events implement the following interfaces and are able to call all of
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | 返回值类型                                |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `phase`   | String                               |
