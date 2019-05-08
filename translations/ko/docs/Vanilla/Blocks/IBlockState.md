@@ -1,18 +1,18 @@
 # IBlockState
 
-An IBlockState object represents a block's current state.
+IBlockState 객체는 블럭 하나의 현재 상태를 나타냅니다. 
 
-## Importing the package
+## 패키지 임포트하기
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+후회없이 사용하고 이슈없이 진행을 하기 위해서는 패키지를 임포트해야만 합니다.  
 `import crafttweaker.block.IBlockState;`
 
-## Calling an IBlockState
+## IBlockState객체 호출
 
-There are several methods that return an IBlockState
+몇몇 메소드들이 IBlockState를 반환합니다.
 
-- Using the [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
-- Using the `IBlockState.getBlockState()` static method. (See below for more information)
+- [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/)`<blockstate:minecraft:log:variant=spruce>`를 사용
+- 정적 메소드 `IBlockState.getBlockState()`를 사용 (자세한 내용은 이후 내용을 확인하세요)
 - Using the `getMatchingBlockStates()` method on an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) object to retrieve an array of IBlockStates.
 - Using the `withProperty()` method on another IBlockState object.
 
