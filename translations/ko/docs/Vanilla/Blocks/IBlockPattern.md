@@ -3,12 +3,12 @@
 An IBlockPattern is an interface that allows for combining several blocks into one object.  
 It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
 
-## Importing the package
+## 패키지 임포트하기
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+예를 들어 [Array](/AdvancedFunctions/Arrays_and_Loops/)를 캐스팅하려면 관련된 패키지를 임포트해야만 합니다. 안전을 위해서도 말입니다.   
 `import crafttweaker.block.IBlockPattern;`
 
-## Calling an IBlockPattern Object
+## IBlockDefinition 객체 호출
 
 Technically, each time you call an [IBlock](/Vanilla/Blocks/IBlock/) object, you call an IBlockPattern object.  
 But there are cases when you explicitly get an IBlockPattern Object as return.
