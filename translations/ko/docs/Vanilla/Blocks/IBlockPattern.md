@@ -10,8 +10,8 @@ It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/)
 
 ## IBlockDefinition 객체 호출
 
-Technically, each time you call an [IBlock](/Vanilla/Blocks/IBlock/) object, you call an IBlockPattern object.  
-But there are cases when you explicitly get an IBlockPattern Object as return.
+사실 내부적으로는 매번 [IBlock](/Vanilla/Blocks/IBlock/) 객체를 호출할때 IBlockPattern 객체를 호출합니다.  
+몇몇의 경우에는 반환 타입으로 IBlockPattern 객체를 받겠다고 명시하는 경우도 있습니다.
 
 * OR two [IBlocks](/Vanilla/Blocks/IBlock/)
 
