@@ -3,25 +3,25 @@
 我把这些放在这里，所以那些想用 ZenScript 使用它们的人可以找到。
 
 Zen 类本质上就是一个 java 类，但你也可以用 ZenScript 来定义。  
-如果你觉得 “这一点像都不脚本语言” 那么你说对了。  
+如果你觉得 “这一点都不像脚本语言” 那么你说对了。  
 这就是为什么只有那些能够操纵它的人才可能找到这个页面。
 
 ## 关键字
 
-These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
+这些关键字可以在类定义体中找到，它们将启动某些动作，例如向类添加一个成员。
 
-| Name           | Descrition                                                                                                                             |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
-| var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
-| static         | Creates a class (static) variable. They can't be final.                                                                                |
-| zenConstructor | Creates a constructor for the class.                                                                                                   |
-| function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
-| this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
+| 名称             | 说明                                         |
+| -------------- | ------------------------------------------ |
+| zenClass       | 开始一个新类，需要在后面加上名称。                          |
+| var/val        | 创建一个实例变量，val 关键字使用了 final。                 |
+| static         | 创建一个类（静态）变量。 它们不能是 final 的。                |
+| zenConstructor | 为类创建构造器。                                   |
+| function       | 创建一个实例方法。 无法创建静态方法，因为你也可以在类外使用。            |
+| this           | 引用向目前正在进行的对象。 仅可在方法和构造器中使用。 例如在参数中隐藏了一个字段。 |
 
-## Example
+## 例子
 
-A commented example:
+反面例子：
 
     <br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
     
