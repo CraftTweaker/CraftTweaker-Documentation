@@ -11,41 +11,41 @@ IBlockState 对象代表一个方块的当前状态。
 
 有很多方法可以返回一个 IBlockState 对象。
 
-- 使用 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
+- 使用[尖括号引用](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
 - 使用静态方法 `IBlockState.getBlockState()` （详情见下文）
 - 使用 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) 对象的 `getMatchingBlockStates()` 方法检索一个 IBlockStates 数组。
 - 使用另一个 IBlockState 对象的 `withProperty()` 方法。
 
 ## 运行时解析 IBlockState
 
-There may be times at which your script may rely on interaction with a block from a mod that has not been loaded yet, such as inside block events in ContentTweaker or another pre-init script loader. If you attempt to use a [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for a block that has not yet been registered, the handler will fail to resolve and your script will not work.
+有可能你的脚本会依赖于一个还没有加载的 mod 的方块交互，例如 ContentTweaker 或是其他的 pre-init 阶段的脚本加载器的 inside block 事件。 如果你尝试在一个还没有注册的方块上使用[尖括号引用](/Vanilla/Brackets/Bracket_BlockState/)，这个引用的解析会失败，你的脚本就会失效。
 
-To avoid this, you can use the static `IBlockState.getBlockState()` method to resolve an IBlockState at runtime.
+你可以使用静态方法 `IBlockState.getBlockState()` 在运行时解析一个 IBlockState 来避免这种情况。
 
-### static getBlockState
+### 静态方法 getBlockState
 
-`static IBlockState getBlockState(String blockname, String... properties)` Parameters:
+`static IBlockState getBlockState(String blockname, String... properties)` 参数：
 
-- String blockname → A string in the format "modid:blockname" as it would appear in the [BlockState Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/)
-- String... properties → Zero or more strings of `"name=value"` pairs of properties to apply to this blockstate. Any unspecified properties will use the same value as in the default blockstate for the specified block name.
+- String blockname → 一个和 [BlockState 尖括号引用](/Vanilla/Brackets/Bracket_BlockState/)中一样的字符串，例如 "modid:blockname"
+- String... properties → 一些可选的字符串，表示应用于这个方块状态的属性对，例如 `"name=value"`。 没有指定的属性会使用这个方块的默认属性。
 
-Returns an IBlockState of the specified `blockname` with the specified `properties`, or the default blockstate if no properties are specified.
+返回指定 `blockname` 的 IBlockState 对象，存在 `properties` 时会带着指定的属性。
 
-## Extending IBlockProperties
+## 继承自 IBlockProperties
 
-IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That means that all methods that are available to [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) objects are also available to IBlockState objects.
+IBlockState 继承自 [IBlockProperties](/Vanilla/Blocks/IBlockProperties/)。 就是说 [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) 对象的所有方法都可以用于 IBlockState 对象。
 
-## Extending IBlockStateMatcher
+## 继承自 IBlockStateMatcher
 
-IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
+IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)。 就是说 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) 对象的所有方法都可以用于 IBlockState 对象。
 
-## ZenMethods and ZenGetters
+## ZenMethods 和 ZenGetters
 
-| ZenGetter     | 返回值类型                             | 描述                                                                                         |
-| ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | 返回引用的方块                                                                                    |
-| meta          | int                               | 返回引用的方块的元数据                                                                                |
-| commandString | String                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| ZenGetter     | 返回值类型                             | 描述                                                                      |
+| ------------- | --------------------------------- | ----------------------------------------------------------------------- |
+| block         | [IBlock](/Vanilla/Blocks/IBlock/) | 返回引用的方块                                                                 |
+| meta          | int                               | 返回引用的方块的元数据                                                             |
+| commandString | String                            | 返回这个方块状态的一个可能的 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) |
 
 ## ZenMethods
 
