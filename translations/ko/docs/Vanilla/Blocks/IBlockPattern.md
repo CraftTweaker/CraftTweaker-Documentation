@@ -1,7 +1,7 @@
 # IBlockPattern
 
-An IBlockPattern is an interface that allows for combining several blocks into one object.  
-It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
+IBlockPattern은 복수의 블록을 하나의 객체로 표현하기 위한 인터페이스입니다.  
+[IIngredient](/Vanilla/Variable_Types/IIngredient/) 인터페이스와 그에 속하는 [IItemStack](/Vanilla/Items/IItemStack/) 간의 관계와 유사합니다.
 
 ## 패키지 임포트하기
 
