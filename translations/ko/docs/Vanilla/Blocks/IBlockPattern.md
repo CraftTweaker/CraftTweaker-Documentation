@@ -24,9 +24,9 @@ IBlockPattern은 복수의 블록을 하나의 객체로 표현하기 위한 인
 
 ## OR 연산
 
-You can OR two IBlockPattern Objects using the OR `|` Operator
+두 IBlockPattern 객체를 OR(`|`) 연산자로 합쳐 새로운 IBlockPattern 객체를 만들 수 있습니다.
 
-## Matching
+## 블록 매칭하기
 
-You can check if an IBlockPatternObject contains another using the `in` keyword.  
-For example, you could check if a Block is in an IBlockPattern.
+IBlockPattern 객체는 일종의 IBlock 컬렉션이므로, `in`이나 `has` 연산자를 사용하여 찾고자 하는 블록이 포함되어 있는지 확인할 수 있습니다.  
+예로 `<IBlockPattern> has <IBlock>`와 같은 형태로 사용할 수 있습니다.
