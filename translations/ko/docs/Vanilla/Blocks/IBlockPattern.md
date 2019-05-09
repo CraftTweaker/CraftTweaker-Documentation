@@ -5,7 +5,7 @@ IBlockPattern은 복수의 블록을 하나의 객체로 표현하기 위한 인
 
 ## 패키지 임포트하기
 
-예를 들어 [Array](/AdvancedFunctions/Arrays_and_Loops/)를 캐스팅하려면 관련된 패키지를 임포트해야만 합니다. 안전을 위해서도 말입니다.   
+만일의 사태를 대비하여 사용 전엔 아래와 같이 import를 선언해줘야 합니다. (마치 [Array](/AdvancedFunctions/Arrays_and_Loops/)를 캐스팅하는 것처럼요.) 안전을 위해서도 말입니다.   
 `import crafttweaker.block.IBlockPattern;`
 
 ## IBlockPattern 객체 호출
@@ -17,10 +17,10 @@ IBlockPattern은 복수의 블록을 하나의 객체로 표현하기 위한 인
 
 ## ZenGetters
 
-| ZenGetter   | 역할                                                                                                                                           | 반환 타입                                   |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| blocks      | 이 객체에 속하는 모든 블록의 리스트를 반환합니다.                                                                                                                 | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | 해당 객체에 속하는 블록들의 게임 상에서의 이름들을 반환합니다. 예를 들어, 게임 상에서의 이름이 각각 "A"와 "B"인 BlockA와 BlockB가 있다면 이 둘을 포함하는 IBlockPattern의 displayName은 "A | B"와 같습니다. | String                                  |
+| ZenGetter   | 역할                                                                                                                                       | 반환 타입                                   |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| blocks      | 이 객체에 속하는 모든 블록의 리스트를 반환합니다.                                                                                                             | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
+| displayName | 해당 객체에 속하는 블록들의 게임 내 이름들을 반환합니다. 예를 들어, 게임상에서의 이름이 각각 "A"와 "B"인 BlockA와 BlockB가 있다면 이 둘을 포함하는 IBlockPattern의 displayName은 "A | B"와 같습니다. | String                                  |
 
 ## OR 연산
 
