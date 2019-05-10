@@ -17,7 +17,7 @@ Extractor.add(<minecraft:cobblestone>, <liquid:lava> * 3);
 ### Removing
 
 ```
-Extractor.remove(IItemStack output);
+Extractor.remove(IItemStack input);
 
 Extractor.remove(<minecraft:cobblestone>);
 ```
