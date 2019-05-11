@@ -52,18 +52,18 @@ IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)�
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+参数：
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
+- [IWorld](/Vanilla/World/IWorld/) world → 方块所处的世界
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → 方块的位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+返回一个 boolean 值，代表方块能否被放置
 
-### Getting or changing Properties
+### 获取或改变属性
 
-You can get a list of all registered properties, either as list with all property names or as map that maps the properties to their value.  
-You can also check which values are possible for a given property name.  
-You can also use `withProperty` to create a new IBlockState object with that property changed.
+你可以获取一个包含所有注册的属性的表，可以是包含所有属性名的列表，也可以是包含了属性到属性值的映射。  
+你还可以检查对于一个给定的属性名，有哪一个属性值是可能的。  
+你还可以使用 `withProperty` 来创建一个修改了属性值的新的 IBlockState 对象。
 
     List<String> getPropertyNames();
     String getPropertyValue(String name);
@@ -72,7 +72,7 @@ You can also use `withProperty` to create a new IBlockState object with that pro
     IBlockState withProperty(String name, String value);
     
 
-### Comparing two IBlockState objects
+### 比较两个 IBlockState 对象
 
 You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
 The return different types though:
