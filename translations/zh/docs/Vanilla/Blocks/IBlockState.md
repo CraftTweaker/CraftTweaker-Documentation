@@ -74,11 +74,11 @@ IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)�
 
 ### 比较两个 IBlockState 对象
 
-You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+你可以使用 `int compare(IBlockState other);` 或者 Zen 比较运算符 `==` 和 `!=`。  
+他们的返回值类型不同：
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` 返回 int 值，0 代表他们相等
+- `state == other` 返回 bool 值，true代表他们相等
 
 ### Getting an explicit Blockstate Matcher
 
