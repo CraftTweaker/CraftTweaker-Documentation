@@ -2,7 +2,7 @@
 
 Using this package you can create trait that you can then put on your tools!
 
-## Importing the class
+## 导入类
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitBuilder;`
@@ -51,7 +51,7 @@ If you combine the given ingredient together with a tool in a tinker's tool forg
 
 You can set and get these properties using the names given:
 
-| Name                 | Type   |
+| 名称                   | 类型     |
 | -------------------- | ------ |
 | color                | int    |
 | countPerLevel        | int    |
@@ -386,7 +386,7 @@ Created using
     };
     
 
-### onToolHeal
+### calcToolHeal
 
 Called before the tools durability is getting increased.  
 Parameters:
@@ -401,7 +401,7 @@ Parameters:
 
 Created using
 
-    myTrait.onToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
+    myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
         //CODE
         return newAmount; //Or your modified value
     };
