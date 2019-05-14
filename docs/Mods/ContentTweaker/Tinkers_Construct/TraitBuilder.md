@@ -379,7 +379,7 @@ myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder
 ```
 
 
-### onToolHeal
+### calcToolHeal
 Called before the tools durability is getting increased.  
 Parameters:
 
@@ -393,7 +393,7 @@ __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
 Created using
 ```
-myTrait.onToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
+myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
 	//CODE
 	return newAmount; //Or your modified value
 };
