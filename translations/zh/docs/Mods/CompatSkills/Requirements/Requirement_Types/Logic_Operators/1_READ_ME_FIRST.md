@@ -10,13 +10,13 @@
 
 ### “非”请求
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. 它通过一个 **NOT** 门来实现这个请求，语句是 `not|requirement` 。 根据在逻辑门部分的解释，只有在不满足特定的 `requirement` 的条件下，这个“非”逻辑请求才会被满足。
+Reskillable支持的最简单的逻辑请求是反转一个请求。 它通过一个 **NOT** 门来实现这个请求，语句是 `not|requirement` 。 根据在逻辑门部分的解释，只有在不满足特定的 `requirement` 的条件下，这个“非”逻辑请求才会被满足。
 
 * * *
 
 ## 双重逻辑请求
 
-另一种逻辑请求稍显复杂，因为它们需要两个 *input* （输入）请求。 因为这些逻辑门相对简单，所以两个请求的顺序实际上并不重要，但我会用 `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 来区分这两个请求。
+另外一些逻辑请求稍显复杂，因为它们需要两个 *input* （输入）请求。 因为这些逻辑门相对简单，所以两个请求的顺序实际上并不重要，但我会用 `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 来区分这两个请求。
 
 它们使用相同的语句： `gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]</0 > 。 其中 gate 是 <code>and`, `nand`, `or`, `nor`, `xor` 和 `xnor`  
 中的一种。 **注意**： `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 两边的方括号不能省略。
