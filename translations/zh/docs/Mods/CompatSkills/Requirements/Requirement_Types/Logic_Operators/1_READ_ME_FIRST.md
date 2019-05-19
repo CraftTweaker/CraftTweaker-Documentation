@@ -25,7 +25,7 @@ Reskillable支持的最简单的逻辑条件语句具有反转一个条件的能
 
 ### “与”条件
 
-与其它逻辑条件语句不太一样，“**与**”条件主要在嵌套式逻辑条件语句中发挥作用（关于嵌套式逻辑条件语句见下文），如同时使用多个条件锁定一个物品或其它对象，并把达成给定的所有条件作为解锁条件。 This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+与其它逻辑条件语句不太一样，“**与**”条件主要在嵌套式逻辑条件语句中发挥作用（关于嵌套式逻辑条件语句见下文），如同时使用多个条件锁定一个物品或其它对象，并把达成给定的所有条件作为解锁条件。 这和“**与**”功能相同，应尽可能地使用它，因为它会让提示以易于阅读的方式显示。
 
 ## 例子
 
