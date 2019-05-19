@@ -1,15 +1,15 @@
-# AND Operator
+# 与运算符
 
-An **AND** gate combines two inputs and returns `TRUE` only if both inputs are also `TRUE`.
+当且仅当两个输入皆为 `TRUE` 时，**与**门输出 `TRUE` 。
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      1 |
+| 输入1 | 输入2 | 输出 |
+| --- | --- | --:|
+| 0   | 0   |  0 |
+| 0   | 1   |  0 |
+| 1   | 0   |  0 |
+| 1   | 1   |  1 |
 
-The AND requirement unlike the other logic requirements is mainly useful for nested logic requirements, as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+与其它逻辑条件语句不太一样，“与”条件主要在嵌套式逻辑条件语句中发挥作用，如同时使用多个条件锁定一个物品或其它对象，并把达成给定的所有条件作为解锁条件。 This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
     Empty Example:
     AND|[]~[]
