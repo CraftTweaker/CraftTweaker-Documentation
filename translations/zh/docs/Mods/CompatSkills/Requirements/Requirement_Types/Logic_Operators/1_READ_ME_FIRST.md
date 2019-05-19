@@ -1,35 +1,35 @@
-# 逻辑请求语句
+# 逻辑条件语句
 
 既然你已经明白什么是逻辑门，我可以向你解释在 Reskillable 中允许逻辑门发挥作用的语句。 下一节会有更详细的例子。
 
-在下面的所有语句中， `requirement` 字符串代表任意支持的请求（包括CompatSkills或其它附属添加的请求）。
+在下面的所有语句中， `requirement` 字符串代表任意支持的条件（包括CompatSkills或其它附属添加的条件）。
 
 * * *
 
-## 单一逻辑请求
+## 单一逻辑条件
 
-### “非”请求
+### “非”条件
 
-Reskillable支持的最简单的逻辑请求是反转一个请求。 它通过一个 **NOT** 门来实现这个请求，语句是 `not|requirement` 。 根据在逻辑门部分的解释，只有在不满足特定的 `requirement` 的条件下，这个“非”逻辑请求才会被满足。
+Reskillable支持的最简单的逻辑条件语句具有反转一个条件的能力。 它通过一个 **NOT** 门来实现这个请求，语句是 `not|requirement` 。 根据在逻辑门部分的解释，只有在不满足特定的 `requirement` 的情形下，这个“非”逻辑条件才会被满足。
 
 * * *
 
-## 双重逻辑请求
+## 双重逻辑条件
 
-另外一些逻辑请求稍显复杂，因为它们需要两个 *input* （输入）请求。 因为这些逻辑门相对简单，所以两个请求的顺序实际上并不重要，但我会用 `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 来区分这两个请求。
+另外一些逻辑条件语句稍显复杂，因为它们需要两个 *input* （输入）条件。 因为这些逻辑门相对简单，所以两个请求的顺序实际上并不重要，但我会用 `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 来区分这两个条件。
 
 它们使用相同的语句： `gate|[requirement<sub>1</sub>]~[requirement<sub>2</sub>]</0 > 。 其中 gate 是 <code>and`, `nand`, `or`, `nor`, `xor` 和 `xnor`  
 中的一种。 **注意**： `requirement<sub>1</sub>` 和 `requirement<sub>2</sub>` 两边的方括号不能省略。
 
 * * *
 
-### “与”请求
+### “与”条件
 
-The **AND** requirement unlike the other logic requirements is mainly useful for nested logic requirements (more on this lower down), as locking an item or other object with multiple requirements requires all of the given requirements to be met. This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+与其它逻辑条件语句不太一样，“**与**”条件主要在嵌套式逻辑条件语句中发挥作用（关于嵌套式逻辑条件语句见下文），如同时使用多个条件锁定一个物品或其它对象，并把达成给定的所有条件作为解锁条件。 This is the same as the **AND** functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
 
 ## 例子
 
-下面所有的例子都将使用 CompatSkill's CraftTweaker 帮助中的语句以易于阅读。 The logic requirements work just fine from the config as well.
+下面所有的例子都将使用 CompatSkill's CraftTweaker 帮助中的语句以方便阅读。 The logic requirements work just fine from the config as well.
 
 以下所有的示例脚本 CraftTweaker 脚本条目都使用 import （导入包）语句： `import mods.compatskills.Requirement.addRequirement;` 这主要是为了缩短每行的长度，让文本更具可读性。 (So if you are copying any of the examples you will need to include it at the top of your script file.) A couple of the examples below that directly start with `mods.compatskills.` are locks that are specific to CompatSkills and that I came up with decent logic requirement examples for.
 
