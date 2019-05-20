@@ -38,10 +38,10 @@ The following functions can be used to add recipes to the TPP:
 mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack liquid, IItemStack stack, int temperature);
 
 // Add a recipe allowing solidification only
-mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack liquidInput, IItemStack itemOutput);
+mods.pneumaticcraft.plasticmixer.addSolidifyOnlyRecipe(ILiquidStack liquidInput, IItemStack itemOutput);
 
 // Add a recipe allowing melting only (temperature in Kelvin)
-mods.pneumaticcraft.plasticmixer.addRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
+mods.pneumaticcraft.plasticmixer.addMeltOnlyRecipe(IItemStack itemInput, ILiquidStack fluidOutput, int temperature);
 
 // Example: convert 100mB Lava to/from Concrete (melt at 573K)
 mods.pneumaticcraft.plasticmixer.addRecipe(<liquid:lava> * 100, <minecraft:concrete>, 573);
