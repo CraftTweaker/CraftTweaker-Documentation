@@ -145,7 +145,7 @@ pages:
       - IServer: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
       - Mods: 'Vanilla/Game/Mods.md'
-    - Items:
+    - Предметы:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
       - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
@@ -167,7 +167,7 @@ pages:
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
+    - Рецепты:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes: 
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
@@ -321,8 +321,8 @@ pages:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
       - Commands: 'Mods/ContentTweaker/Commands.md'
       - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
-      - Vanilla:
-        - Brackets:
+      - Обычная игра:
+        - Скобки:
           - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
@@ -383,7 +383,7 @@ pages:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - DropTableBuilder: 'Mods/ContentTweaker/Materials/DropTableBuilder.md'
-        - Brackets:
+        - Скобки:
           - Material Part Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
@@ -403,7 +403,7 @@ pages:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
-        - Brackets:
+        - Скобки:
           - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
@@ -530,6 +530,7 @@ pages:
       - Energized Smelter: 'Mods/Mekanism/Energized_Smelter.md'
       - Enrichment Chamber: 'Mods/Mekanism/Enrichment_Chamber.md'
       - Gas: 'Mods/Mekanism/Gas.md'
+      - Gas Conversion: 'Mods/Mekanism/Gas_Conversion.md'
       - Metallurgic Infuser: 'Mods/Mekanism/Metallurgic_Infuser.md'
       - Osmium Compressor: 'Mods/Mekanism/Osmium_Compressor.md'
       - Precision Sawmill: 'Mods/Mekanism/Precision_Sawmill.md'
@@ -571,7 +572,7 @@ pages:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes: 
+        - Рецепты: 
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -599,11 +600,11 @@ pages:
         - Handlers:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Refined Storage:
-        - Recipes:
+        - Рецепты:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets: 
+        - Скобки: 
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -624,7 +625,7 @@ pages:
           - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
           - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
           - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
-        - Brackets:
+        - Скобки:
           - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
         - Handlers:
           - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
@@ -684,12 +685,13 @@ pages:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - Crafting:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
+        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+        - Plastic Mixer: 'Mods/PneumaticCraft_Repressurized/PlasticMixer.md'
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
-        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
-        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
         - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'
@@ -712,7 +714,7 @@ pages:
       - Merchant: 'Mods/RockyCore/Merchant.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
-      - Recipes:
+      - Рецепты:
         - Alchemical Fusion: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion.md'
         - Alchemical Fusion Catalysts: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion_Catalysts.md'
         - Cauldron Cleaning: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'
