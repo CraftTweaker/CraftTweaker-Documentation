@@ -1,8 +1,8 @@
-# GameStages
+# GameStage（游戏阶段）:
 
 ## Special Thanks
 
-Special Thanks goes out to Darkhax for the wonderful changes done in GameStages 2.0.0 !
+特别感谢 Darkhax 在GameStage 2.0.0 方面所做的卓越变化！
 
 ## Explanation:
 
