@@ -1,25 +1,25 @@
-# Crafting Ingredients
+# Crafting 组件
 
-CraftTweaker introduces [IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java) as ingredient interface.  
-Interfaces extending this super interface include:
+CraftTweaker 引入 [IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java) 作为组件接口。  
+继承此超接口的接口包括：
 
 - [IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 - [ILiquidStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/liquid/ILiquidStack.java)
 - [IOreDictEntry](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDictEntry.java)
 
-## Which to choose
+## 选择哪一个
 
-Preferably, you always use IIngredient. Why?  
-Because a lot of users expect all recipes that accept an IItemStack to also accept an IOreDictEntry, that's why.  
-Also, some functions like IngredientConditions return an IIngredient (e.g. `<mincraft:grass>.onlyDamaged()` or `iron_ingot | gold_ingot`).
+最好总是使用 IIngredient。 为什么？  
+因为许多用户期望所有的接受 IItemStack 的配方也接受 IOreDictEntry，这就是原因。  
+例如 IngredientConditions，一些方法返回 IIngredient（如 `<mincraft:grass>.onlyDamaged()` 或 `iron_ingot | gold_ingot`）。
 
-## How to get the items/fluids from the ingredient?
+## 如何从 ingredient 中获取物品/流体？
 
-There are many ways to retrieve your wanted type:  
-You can use `ingredient.getItems()` to get all matching items as `List<IItemStack>`. This means however, that the item would lose its Conditions, if it had any! For fluids, you can use `ingredients.getFluids()` to get all matching fluids as `List<ILiquidStack>`. This means however, that the fluid would lose its Conditions, if it had any!
+有许多方式可以检索您想要的类型：  
+您可以使用 `ingredient.getItems()` 来获取所有匹配的物品为 `List<IItemStack>`。 但是，这意味着，如果物品有任何条件，这些条件就会丢失！ 对于液体，你可以使用 `ingredients.getFluids()` 来获取所有匹配的液体为 `List<ILiquidStack>`。 但是，这意味着，如果液体有任何条件，这些条件就会丢失！
 
-## How to get the actual ItemStack/FluidStack?
+## 如何获得实际的 ItemStack/FluidStack？
 
-Depends: You could use [CraftTweakerMC](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/api/minecraft/CraftTweakerMC.java).  
-Alternatively, if you depend on MTLib, you can use its [input helper](https://github.com/jaredlll08/MTLib/blob/1.12/src/main/java/com/blamejared/mtlib/helpers/InputHelper.java).  
-If you need to rely on ItemConditions, you can always use the `ingredient.matches(IItemStack other)` method.
+依赖：你可以使用[CraftTweakerMC](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/api/minecraft/CraftTweakerMC.java)。  
+另外，如果你依赖 MTLib，你可以使用它的 [input helper](https://github.com/jaredlll08/MTLib/blob/1.12/src/main/java/com/blamejared/mtlib/helpers/InputHelper.java)。  
+如果你需要依赖 ItemConditions，你始终可以使用 `ingredient.matches(IItemStack other)` 方法。

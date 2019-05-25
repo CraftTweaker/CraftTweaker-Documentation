@@ -530,6 +530,7 @@ pages:
       - Energized Smelter: 'Mods/Mekanism/Energized_Smelter.md'
       - Enrichment Chamber: 'Mods/Mekanism/Enrichment_Chamber.md'
       - Gas: 'Mods/Mekanism/Gas.md'
+      - Gas Conversion: 'Mods/Mekanism/Gas_Conversion.md'
       - Metallurgic Infuser: 'Mods/Mekanism/Metallurgic_Infuser.md'
       - Osmium Compressor: 'Mods/Mekanism/Osmium_Compressor.md'
       - Precision Sawmill: 'Mods/Mekanism/Precision_Sawmill.md'
@@ -684,12 +685,13 @@ pages:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - Crafting:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
+        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
+        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
+        - Plastic Mixer: 'Mods/PneumaticCraft_Repressurized/PlasticMixer.md'
         - Pressure Chamber: 'Mods/PneumaticCraft_Repressurized/PressureChamber.md'
         - Refinery: 'Mods/PneumaticCraft_Repressurized/Refinery.md'
         - Thermopneumatic Processing: 'Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant.md'
-        - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
-        - Liquid Fuels: 'Mods/PneumaticCraft_Repressurized/LiquidFuels.md'
         - XP Fluids: 'Mods/PneumaticCraft_Repressurized/XPFluids.md'
     - Powered Thingies:
       - Powered Thingies: 'Mods/PoweredThingies/_PoweredThingies.md'

@@ -11,59 +11,59 @@ IBlockState 对象代表一个方块的当前状态。
 
 有很多方法可以返回一个 IBlockState 对象。
 
-- 使用 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
+- 使用[尖括号引用](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
 - 使用静态方法 `IBlockState.getBlockState()` （详情见下文）
 - 使用 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) 对象的 `getMatchingBlockStates()` 方法检索一个 IBlockStates 数组。
 - 使用另一个 IBlockState 对象的 `withProperty()` 方法。
 
 ## 运行时解析 IBlockState
 
-There may be times at which your script may rely on interaction with a block from a mod that has not been loaded yet, such as inside block events in ContentTweaker or another pre-init script loader. If you attempt to use a [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for a block that has not yet been registered, the handler will fail to resolve and your script will not work.
+有可能你的脚本会依赖于一个还没有加载的 mod 的方块交互，例如 ContentTweaker 或是其他的 pre-init 阶段的脚本加载器的 inside block 事件。 如果你尝试在一个还没有注册的方块上使用[尖括号引用](/Vanilla/Brackets/Bracket_BlockState/)，这个引用的解析会失败，你的脚本就会失效。
 
-To avoid this, you can use the static `IBlockState.getBlockState()` method to resolve an IBlockState at runtime.
+你可以使用静态方法 `IBlockState.getBlockState()` 在运行时解析一个 IBlockState 来避免这种情况。
 
-### static getBlockState
+### 静态方法 getBlockState
 
-`static IBlockState getBlockState(String blockname, String... properties)` Parameters:
+`static IBlockState getBlockState(String blockname, String... properties)` 参数：
 
-- String blockname → A string in the format "modid:blockname" as it would appear in the [BlockState Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/)
-- String... properties → Zero or more strings of `"name=value"` pairs of properties to apply to this blockstate. Any unspecified properties will use the same value as in the default blockstate for the specified block name.
+- String blockname → 一个和 [BlockState 尖括号引用](/Vanilla/Brackets/Bracket_BlockState/)中一样的字符串，例如 "modid:blockname"
+- String... properties → 一些可选的字符串，表示应用于这个方块状态的属性对，例如 `"name=value"`。 没有指定的属性会使用这个方块的默认属性。
 
-Returns an IBlockState of the specified `blockname` with the specified `properties`, or the default blockstate if no properties are specified.
+返回指定 `blockname` 的 IBlockState 对象，存在 `properties` 时会带着指定的属性。
 
-## Extending IBlockProperties
+## 继承自 IBlockProperties
 
-IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That means that all methods that are available to [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) objects are also available to IBlockState objects.
+IBlockState 继承自 [IBlockProperties](/Vanilla/Blocks/IBlockProperties/)。 就是说 [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) 对象的所有方法都可以用于 IBlockState 对象。
 
-## Extending IBlockStateMatcher
+## 继承自 IBlockStateMatcher
 
-IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
+IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)。 就是说 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) 对象的所有方法都可以用于 IBlockState 对象。
 
-## ZenMethods and ZenGetters
+## ZenMethods 和 ZenGetters
 
-| ZenGetter     | 返回值类型                             | 描述                                                                                         |
-| ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | 返回引用的方块                                                                                    |
-| meta          | int                               | 返回引用的方块的元数据                                                                                |
-| commandString | String                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| ZenGetter     | 返回值类型                             | 描述                                                                      |
+| ------------- | --------------------------------- | ----------------------------------------------------------------------- |
+| block         | [IBlock](/Vanilla/Blocks/IBlock/) | 返回引用的方块                                                                 |
+| meta          | int                               | 返回引用的方块的元数据                                                             |
+| commandString | String                            | 返回这个方块状态的一个可能的 [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) |
 
 ## ZenMethods
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+参数：
 
-- [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
+- [IWorld](/Vanilla/World/IWorld/) world → 方块所处的世界
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → 方块的位置
 
-Returns a boolean that sais whether the block can be replaced or not.
+返回一个 boolean 值，代表方块能否被放置
 
-### Getting or changing Properties
+### 获取或改变属性
 
-You can get a list of all registered properties, either as list with all property names or as map that maps the properties to their value.  
-You can also check which values are possible for a given property name.  
-You can also use `withProperty` to create a new IBlockState object with that property changed.
+你可以获取一个包含所有注册的属性的表，可以是包含所有属性名的列表，也可以是包含了属性到属性值的映射。  
+你还可以检查对于一个给定的属性名，有哪一个属性值是可能的。  
+你还可以使用 `withProperty` 来创建一个修改了属性值的新的 IBlockState 对象。
 
     List<String> getPropertyNames();
     String getPropertyValue(String name);
@@ -72,13 +72,13 @@ You can also use `withProperty` to create a new IBlockState object with that pro
     IBlockState withProperty(String name, String value);
     
 
-### Comparing two IBlockState objects
+### 比较两个 IBlockState 对象
 
-You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+你可以使用 `int compare(IBlockState other);` 或者 Zen 比较运算符 `==` 和 `!=`。  
+他们的返回值类型不同：
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` 返回 int 值，0 代表他们相等
+- `state == other` 返回 bool 值，true代表他们相等
 
 ### Getting an explicit Blockstate Matcher
 

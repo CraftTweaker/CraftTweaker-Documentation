@@ -14,6 +14,6 @@
 
 ### Removing
 
-    Extractor.remove(IItemStack output);
+    Extractor.remove(IItemStack input);
     
     Extractor.remove(<minecraft:cobblestone>);

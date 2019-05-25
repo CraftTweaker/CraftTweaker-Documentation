@@ -1,48 +1,48 @@
-# ZenMembers and ZenProperties
+# ZenMembers 和 ZenProperties
 
-ZenMembers are a ZenObject's members.  
-They can be accesses using `object.member`. Members can be settable, gettable or both.
+ZenMembers 是 ZenObject 的成员。  
+它们可以使用 `object.member` 进行访问。 成员可以是能被设置、获得的或两者都是。
 
-## Getters and Setters
+## Getters 和 Setters
 
-There are two Types of ZenGetters: ZenGetters and ZenMemberGetters.  
-So what's the difference?
+ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。  
+那么，区别是什么？
 
-Normally you use `@ZenGetter(value)`, unless you have something which has either many members that return the same type or if you don't know the exact members yourself.  
-In that case you can use `@ZenMemberGetter`.  
-So what's the difference?
+通常您使用 `@ZenGetter(value)`，除非您拥有许多返回相同类型的成员或是您不知道自己确切的成员。  
+在这种情况下你可以使用 `@ZenMemberGetter`。  
+那么，区别是什么？
 
-- A Method annotated with a `@ZenGetter(value)` does not need any parameters, while a Method annotated with `@ZenMemberGetter` needs a String argument that is the member's name.
-- MemberGetters are only executed if no other getter is found.
-- If you only need one small Property, you should use `@ZenGetter(value)`
+- 带有 `@ZenGetter(value)` 注解的方法不需要任何参数，而带有 `@ZenMemberGetter` 注解的方法需要一个表示成员名称的字符串参数。
+- MemberGetter 只在没有找到其他 getter 时才会被执行。
+- 如果您只需要获得一个小的属性，您应该使用 `@ZendGetter(value)`
 
-The same applies for ZenSetters/ZenMemberSetters.
+这同样适用于 ZenSetters/ZenMemberSetters。
 
 ## ZenProperty
 
-The `@ZenProperty` combines both, `@ZenGetter(value)` and `@ZenSetter` in one annotation.  
-This annotation can only be applied to public fields (e.g. `public String name`).
+`@ZenProperty` 注解是 `@ZenGetter(value)` 和 `@ZenSetter` 的结合。  
+此注解只能应用于公开字段（如 `public String name`）。
 
-This Annotation can have these arguments:
+此注解可以有这些参数：
 
-- `String value`: the property name (in ZS you call object.value). If omitted, the field name is used.
-- `String getter`: the name of the corresponding Getter Method (which may not have a ZenGetter Annotation). 
+- `String value`：属性名称（在 ZS 中你调用 object.value）。 当忽略时，则使用字段名。
+- `String getter`：对应 getter 方法的名称（它可能不带有 ZenGetter 注解）。 
     - If not set or `""`, it will use use 
-        - `get + value` if the annotated field is not a boolean
-        - `is + value` if annotated field is boolean or Boolean
-    - if `null`, it will not register a ZenSetter
-- `String setter`: the name of the corresponding Setter Method (which may not have a ZenSetter Annotation). 
-    - If not set or `""`, it will use `set + value`
-    - If `null`, it will not register a ZenSetter
+        - 当被注解的字段不是 boolean 类型时为 `get + value`
+        - 当被注解的字段是 boolean 类型或 Boolean 类型时为 `is + value`
+    - 当为 `null` 时，将不会注册 ZenGetter
+- `String setter`：对应 setter 方法的名称（它可能不带有 ZenSetter 注解）。 
+    - 如果未设置或为 `""`，将会使用 `set + value`
+    - 当为 `null` 时，将不会注册 ZenSetter
 
-You can even omit the getter/setter method alltogether if you use `@ZenProperty`.  
-If you do use those methods, however, you will need to add `@ZenMethod` should you want this functionality, if you omit the methods, they will be generated automatically.
+如果您使用 `@ZenProperty` 您甚至可以同时忽略 getter/setter 方法。  
+如果您使用这些方法，您仍然需要添加 `@ZenMethod`。当您忽略这个方法时它会自动被生成。
 
-## Examples
+## 例子
 
-### ZenGetters Example
+### ZenGetters 的例子
 
-[Crafttweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[Crafttweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
     @IterableSimple("crafttweaker.oredict.IOreDictEntry")
@@ -64,9 +64,9 @@ If you do use those methods, however, you will need to add `@ZenMethod` should y
     }
     
 
-### ZenProperties Example
+### ZenProperties 的例子
 
-[ContentTweaker's MCAxisAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
+[ContentTweaker 的 MCAxisAlignedBB](https://github.com/The-Acronym-Coders/ContentTweaker/blob/develop/1.12/src/main/java/com/teamacronymcoders/contenttweaker/api/ctobjects/aabb/MCAxisAlignedBB.java)
 
     @ZenRegister
     @ZenClass("mods.contenttweaker.AxisAlignedBB")

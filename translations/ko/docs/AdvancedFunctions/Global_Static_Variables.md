@@ -1,27 +1,25 @@
-# 전역 및 정적 변수
+# 전역 상수와 정적 상수
 
-Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
-"Why is there no way to make them available in every script?" Is what went through your head at such times.
+스크립트를 작성하다보면 같은 변수를 스크립트마다 돌려가며 계속 써야 할 상황이 올 때가 있습니다.  
+이 작업을 계속 붙여넣기로 구현하면 굉장히 비효율적일 겁니다. 그러면 이러한 것을 가능케 할 기능이 없을까요?
 
-Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
-They cannot be changed, though.
+이러한 생각을 가진 분들을 위해 모든 스크립트에서 참조 가능한 전역 상수와 스크립트 파일 안에서 참조 가능한 정적 상수를 제공합니다.  
+이 값들은 한 번 선언되면 값을 변경할 수 없습니다.
 
-## Difference between statics and globals
+## 전역과 정적의 차이
 
-Both, statics and globals are scriptbound and instantiated before the script is executed.  
-Both cannot be changed.  
-The difference is how they are called:  
-Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](Cross-Script_Reference/) to be accessed.
+공통점은 둘 다 스크립트가 실행되기 전에 초기화되고, 스크립트 내에서 사용 가능합니다. 그리고 둘 다 한 번 초기화되면 값을 변경할 수 없습니다.  
+차이점은 어떻게 호출하는가에 있습니다.  
+global 상수는 모든 곳에서 그 식별자로 호출이 가능한 상수입니다. 단, 동일한 이름의 지역 변수가 있을 경우 지역 변수가 더 우선시됩니다. (다시 말해 지역 변수는 global 상수를 숨깁니다.)  
+static 상수는 호출하기 위해선 [스크립트 간 참조](Cross-Script_Reference/)에 나와있는 방식을 따라야합니다.
 
-Globals are created using the `global` keyword.  
-Statics are created using the `static` keyword.
+global 상수는 `global` 키워드로, static 상수는 `static` 키워드로 선언할 수 있습니다.
 
-Aside from that, they are identical!
+그걸 제외하면 이 둘은 동일합니다.
 
-## Declaring a global value
+## 전역 상수의 사용
 
-Declaring a global value is as simple as declaring a local value:
+전역 상수의 선언은 지역 상수 선언과 마찬가지로 간단합니다.
 
     import crafttweaker.item.IItemStack;
     
@@ -30,16 +28,16 @@ Declaring a global value is as simple as declaring a local value:
     static myStaticValue as IItemStack = <minecraft:sand>;
     
 
-Okay, let's break it down, shall we?
+자, 위 예제를 살펴볼까요?
 
-1. `global` keyword that indicates the declaration of a global value
-2. `myGlobalValue` the name of the value
-3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global` 키워드는 global 상수의 선언을 가리킵니다.
+2. `myGlobalValue`는 현재 선언된 global 상수의 식별자입니다.
+3. `as IItemStack`는 초기화할 값의 자료형입니다. (특정 자료형으로 캐스팅하기 전엔 꼭 자료형을 먼저 [import](Import/)하는 것을 권장합니다.)
+4. `= <minecraft:dirt>;`는 초기화할 값입니다. 전역 상수는 전부 선언 당시에 딱 한 번만 값이 할당되기에 선언하기 위해선 반드시 값을 초기화해야 합니다!
 
-## Words of advice
+## 조언
 
-- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
-- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
-- Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!
+- 먼저 선언된 전역 상수만이 참조 가능합니다. [우선순위 전처리기](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/)를 통해 전역 상수를 사용하기 전에 전역 상수가 선언된 스크립트가 불러올 수 있도록 합시다.
+- global 상수는 반드시 scripts 폴더 안의 스크립트에서만 선언되어야 합니다. 만약 그 하위 폴더 안에서 global 상수를 선언할 경우 컴파일은 되지만, FileNotFound 예외가 떠 참조가 불가능하게 됩니다.
+- `IAny` 자료형의 인터페이스는 아직 불완전합니다. 따라서 `as`를 생략할 수도 있지만, 가급적 자료형을 분명하게 하기 위해 생략하지 않는 것을 추천드립니다. 더욱이 생략하지 않는 편이 더 코드 읽기가 수월해지고, 디버깅이 쉬워집니다!
+- 지역 변수/상수는 전역 상수를 숨길 수 있습니다. 이 말은 즉슨 만약 전역 상수와 지역 변수가 동일한 이름의 식별자를 가질 경우 가장 내부에 있는 스코프의 식별자가 가리키는 값을 우선적으로 선정하게 됩니다.

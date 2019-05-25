@@ -51,7 +51,7 @@ If you combine the given ingredient together with a tool in a tinker's tool forg
 
 You can set and get these properties using the names given:
 
-| Name                 | Type   |
+| 이름                   | Type   |
 | -------------------- | ------ |
 | color                | int    |
 | countPerLevel        | int    |
@@ -386,7 +386,7 @@ Created using
     };
     
 
-### onToolHeal
+### calcToolHeal
 
 Called before the tools durability is getting increased.  
 Parameters:
@@ -401,7 +401,7 @@ Parameters:
 
 Created using
 
-    myTrait.onToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
+    myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
         //CODE
         return newAmount; //Or your modified value
     };
