@@ -21,7 +21,7 @@ The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
 ## Example
 ```JAVA
 zsItem.onItemUseFinish = function(stack, world, player) {
-    stack.transformDamage();
+    stack.damage(1, player);
     return stack;
 };
 ```
