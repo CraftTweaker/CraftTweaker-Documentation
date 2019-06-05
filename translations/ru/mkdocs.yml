@@ -28,9 +28,9 @@ pages:
       - Предисловие: 'Tips_Tricks/Foreword.md'
       - Предметы:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
+      - Общие советы:
+        - Разделяйте ваши скрипты на несколько файлов: 'Tips_Tricks/General/Split_Files.md'
+        - Используйте циклы, чтобы облегчить чтение ваших скриптов: 'Tips_Tricks/General/Loops_Readability.md'
   - Обычная игра:
     - Биомы:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
@@ -87,10 +87,10 @@ pages:
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
-      - Events: 'Vanilla/Events/Events.md'
+    - События:
+      - События: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+      - События:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
@@ -99,7 +99,7 @@ pages:
         - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
         - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
         - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
-          #Actual Events below here
+          #Настоящие события ниже
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
         - EnderTeleportEvent: 'Vanilla/Events/Events/EnderTeleport.md'
@@ -139,12 +139,12 @@ pages:
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-    - Game:
+    - Игра:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
-      - Mods: 'Vanilla/Game/Mods.md'
+      - Моды: 'Vanilla/Game/Mods.md'
     - Предметы:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
