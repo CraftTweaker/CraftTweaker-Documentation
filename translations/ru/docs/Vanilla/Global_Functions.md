@@ -5,14 +5,14 @@ Here's the list:
 
 ## print
 
-Prints the string to the crafttweaker log as information.
+Записывает строчку в лог CraftTweaker как информацию.
 
 ```java
-//print(String message);
-print("Hello World!");
+//print(String сообщение);
+print("Привет, мир!");
 ```
 
-Returns nothing
+Ничего не возвращает.
 
 ## totalActions
 
@@ -33,7 +33,7 @@ Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocess
 enableDebug();
 ```
 
-Returns nothing
+Ничего не возвращает.
 
 ## isNull
 
@@ -54,7 +54,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 max(10, 11);
 ```
 
-Returns an int
+Возвращает целое число.
 
 ## min
 
@@ -63,20 +63,20 @@ Returns an int
 min(10, 11);
 ```
 
-Returns an int
+Возвращает целое число.
 
 ## pow
 
 ```java
-//pow(double number1, double number2);
+//pow(double основаниеСтепени, double показательСтепени);
 pow(2.0, 4.0);
 ```
 
-Returns a double
+Возвращает число с двойной точностью.
 
-## Global Fields
+## Глобальные поля
 
-| Field      | Description                                                                                    |
+| Поле       | Описание                                                                                       |
 | ---------- | ---------------------------------------------------------------------------------------------- |
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
