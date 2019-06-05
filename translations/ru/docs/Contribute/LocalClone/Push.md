@@ -6,9 +6,9 @@ You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) a
 
 ## Что мы сделаем
 
-We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
+Мы используем зафиксированный нами коммит (например, тот, из [страницы про создание коммитов](/Contribute/LocalClone/CreateCommit/)), чтобы отправить наши изменения на GitHub.
 
-## Проверить текущий статус
+## Проверка текущего статуса
 
 Если вы запускаете `git status`, вы узнаете, насколько ваша локальная копия отстает или опережает вашу ветвь.
 
@@ -23,9 +23,9 @@ We will use the commit(s) we have created (e.g. the example in [create Commits](
 
 ![Диалог учетных данных](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
 
-To verify that the commit is actually on the fork, you can check the commit list that should now have the commit in there: ![Список коммитов, где коммит](/Contribute/LocalClone/assets/Example1_CommitList.png)
+Чтобы провеить, что коммит действительно в вашей ветке, вы можете проверить список коммитов, который теперь должен содержать новый коммит: ![Список коммитов, где коммит](/Contribute/LocalClone/assets/Example1_CommitList.png)
 
 ## Как продолжить
 
-Now that you have pushed your changes to your fork, you can use GH to [create a Pull request](/Contribute/PullRequest/).  
-This is the same procedure as if you were using the online editor to edit files.
+Теперь, когда вы отправили свои изменения на ваш форк, вы можете использовать GH, чтобы [создать запрос на объединение](/Contribute/PullRequest/).  
+Процедура такая же, как если бы мы использовали онлайн-редактор для редактирования файлов.
