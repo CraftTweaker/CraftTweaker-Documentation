@@ -75,14 +75,14 @@ If you want to refer to an item in a nested Array, you need two or more referers
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# Циклы
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Цикл — это функция, которая повторяется. Вы можете использовать циклы, чтобы применить какое-то действие ко всем элементам массива.
 
-## For Loop
+## Цикл for
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Основное использование цикла for — проход через массив. Проход через массив означает, что действие применяется ко всем элементам массива.  
+Вы можете использовать ключевое слово `break`, чтобы прервать выполнение цикла досрочно.
 
     import crafttweaker.item.IItemStack;
     
@@ -124,14 +124,14 @@ You can use the `break` keyword to break the loop prematurely.
     }
     
 
-## While Loop
+## Цикл while
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Цикл while выполняет данный код пока некоторое условие возвращает `true`.  
+В качестве альтернативы, вы можете остановить его с помощью ключевого слова `break`.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //Будет выводить числа от 0 до 9, потому что i < 10 &mdash; ложь, когда i уже достигает 10.
     while i < 10 {
         print(i); 
         i += 1;
@@ -158,11 +158,11 @@ Alternatively, you can stop it using the `break` keyword.
     }
     
 
-# Adding items to an Array
+# Добавление элементов к массиву
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Пока что это не очень рекомендуется, но можно добавляет объекты к массивам.  
+Вы можете добавлять объекты к массиву только по одному, нельзя соединить два массива.  
+Оператор для добавления элементов к массиву &mdash; `&plus;`:
 
 ```java
 import crafttweaker.item.IItemStack;
