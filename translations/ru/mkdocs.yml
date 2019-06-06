@@ -283,7 +283,7 @@ pages:
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
-            - Events:
+            - События:
               - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
@@ -347,10 +347,12 @@ pages:
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - IItemFoodEaten: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten.md'
             - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IItemUseFinish: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish.md'
             - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
             - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
@@ -376,7 +378,7 @@ pages:
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
-          - World:
+          - Мир:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
       - Material System:
@@ -390,7 +392,7 @@ pages:
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
           - Material Part: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
           - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
-          - Functions:
+          - Функции:
             - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
             - MaterialPartColorSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartColorSupplier.md'
             - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartLocalizedNameSupplier.md'
@@ -665,7 +667,7 @@ pages:
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
       - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
-      - Crafting:
+      - Крафт:
         - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
         - Chopping Board: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
         - Dishwasher: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
@@ -683,7 +685,7 @@ pages:
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - PneumaticCraft&#58; Repressurized:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
+      - Крафт:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
