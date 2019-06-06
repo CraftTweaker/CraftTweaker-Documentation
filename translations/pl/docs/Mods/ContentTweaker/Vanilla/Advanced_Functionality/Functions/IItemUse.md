@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## Parameters
 
-The IItemRightClickFunction is a function with the following parameters (In this order):
+The IItemUse function is a function with the following parameters (In this order):
 
 - [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
