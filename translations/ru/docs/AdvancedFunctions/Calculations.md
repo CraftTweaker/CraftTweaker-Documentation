@@ -24,15 +24,15 @@ Always be careful about what two variable types you use and when in doubt, just 
 
 ## Конкатенация
 
-Puts one thing at the and of the other
+Приклеивает одно к другому.
 
     //prints "Hello World"
     print("Hello" ~ " " ~ "World");
     
 
-## Calculation results
+## Результаты вычисления
 
-A calculation usually ends up with a result. So what to do with that?
+Обычно вычисление выдает какой-то результат. Что с ним делать?
 
 ### Присваивание переменной
 
@@ -59,7 +59,7 @@ This is probably the easiest way for beginners and the only way if you want to a
 Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
 All Operators on on this page have their respective assign tokens, check the table above.
 
-### Использование результата
+### Использование результата по-другому
 
 Вы всегда можете использовать результат вычисления в функции или условном выражении:
 
