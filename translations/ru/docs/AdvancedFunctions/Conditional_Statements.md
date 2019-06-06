@@ -1,22 +1,22 @@
-# Conditional Statements
+# Условные выражения
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Вы можете включать код, который будет выполняться, только если соблюдено некоторое условие (или наоборот, если не соблюдено). Вот для чего нужны условные выражения.
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+Выражение if &mdash; первая часть условного выражения. Оно объявляет условие, которое должно быть истинным, чтобы последующий код был выполнен. Будьте осторожны, для сравнения значений вы должны ставить ДВА ЗНАКА РАВЕНСТВА (потому что единичный нужен для объявления значений!).
 
 ```Java
 val test = 0;
 
 if(test == 0){ //true
-    print("Test is zero!");
+    print("Переменная test равна нулю!");
 }
 ```
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Выражение else может быть добавлено после условного выражения, чтобы объявить, что должно быть выполнено, если выражение из if ложно.
 
 ```Java
 var test = 0;
@@ -102,9 +102,9 @@ switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## Операторы
 
-You can use these operators. All the examples given evaluate to true.
+Вы можете использовать следующие операторы. Все приведенные примеры истинны.
 
 | Name             | token   | Explanation                                                                          | Example      |
 | ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
