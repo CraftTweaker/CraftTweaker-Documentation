@@ -17,8 +17,8 @@
 
 ## Приведение к типу массива
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Вы точно заметили, что все массивы имеют дополнительное указание`as`.  
+Почему, вы спросите. Это потому что ZenScript иногда не может предсказать, предметы какого типа хранятся в массиве. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
