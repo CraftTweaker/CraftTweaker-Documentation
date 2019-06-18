@@ -6,8 +6,8 @@ Artisan Worktables adds a wide arrangement of custom Crafting Tables that requir
 
 ### For More Information:
 
-https://minecraft.curseforge.com/projects/advanced-mortars
+https://minecraft.curseforge.com/projects/artisan-worktables
 
 ### Bug Reports:
 
-https://github.com/codetaylor/advancedmortars/issues
+https://github.com/codetaylor/artisan-worktables/issues
