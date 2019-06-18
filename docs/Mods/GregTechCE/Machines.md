@@ -36,8 +36,8 @@ Recipes are categorized into their machines, call `RecipeMap.getByName(machineNa
 -   Blast furnace: `blast_furnace`
 -   Implo compressor: `implosion_compressor`
 -   Vac freezer: `vacuum_freezer`
--   Chemical reactor: `chemical reactor`
--   Disti tower: `distillation tower`
+-   Chemical reactor: `chemical_reactor`
+-   Disti tower: `distillation_tower`
 -   Cracker unit: `cracker`
 -   Pyrolyse oven: `pyro`
 -   Wiremill: `wiremill`
