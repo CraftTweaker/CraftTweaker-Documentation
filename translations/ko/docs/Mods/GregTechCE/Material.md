@@ -10,7 +10,7 @@ An object of `mods.gregtech.material.Material` represents a material in GregTech
 
 Properties:
 
-| Name               | Type                         | Description                                      |
+| 이름                 | Type                         | Description                                      |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
 | color              | int                          | Color of material in RGB format                  |
 | chemicalFormula    | String                       | Chemical formula of this material                |
@@ -292,4 +292,11 @@ import mods.gregtech.material.MaterialRegistry;
 
 val dustMaterial = MaterialRegistry.createDustMaterial(700, "test", 0xFFAA33, "dull", 2);
 dustMaterial.addFlags(["GENERATE_ORE", "GENERATE_PLATE"]);
+
+//Creates a gem-material with a tooltip showing the chemical formula
+//This automatically generates an electrolyzer recipe to split this material into its constituent parts.
+val gemFancy = MaterialRegistry.createGemMaterial(701, "some_fancy_gemstone", 0x0F3E4E2, "gem_horizontal", 1, [<material:beryllium>*4, <material:silicon>*2, <material:oxygen>*9, <material:hydrogen>*2], 1.0, 0);
+
+//Any previouly registered material can be used- including custom ones.
+val ingotComplex = MaterialRegistry.createIngotMaterial(702, "complex_alloy", 0xF6872E, "shiny", 1, [<material:copper>*3, <material:electrum>*1, <material:redstone>*9, <material:some_fancy_gemstone>*2], 3.5, 0);
 ```
