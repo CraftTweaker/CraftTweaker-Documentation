@@ -40,21 +40,21 @@ Możesz umieszczać tablice w tablicach.
 
 Możesz odnieść się do elementu wewnątrz tablicy poprzez użycie jego miejsca na liście. Pierwsza wartość w tablicy to nr 0 druga to nr 2 itd.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujesz 2 lub więcej odnośników, ponieważ każdy z nich usuwa jedną warstwę z list.
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] to "Hello"
+    stringArray[1] to "World"
+    stringArray[2] to "I"
+    stringArray[3] to "am"
     */
     val stringArray = ["Hello","World","I","am"] as string[];
     
-    //prints "Hello"
+    //Wysyła "Hello"
     print(stringArray[0]);
     
     
-    //Nested Arrays
+    //Zagnieżdżone Tablice
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
     val stringArray3 = ["a","beautiful"] as string[];
@@ -66,16 +66,16 @@ If you want to refer to an item in a nested Array, you need two or more referers
     stringArrayAll[2] is ["a","beautiful"]
     stringArrayAll[3] is ["Butterfly","!"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
-    etc.
+    stringArrayAll[0][0] to "Hello"
+    stringArrayAll[0][1] to "World"
+    itd.
     */
     
-    //prints "World"
+    //Wysyła "World"
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# Pętle
 
 A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
