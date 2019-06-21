@@ -18,17 +18,17 @@ Jeżeli myślisz sobie "czekaj, czy ja nie widziałem przypadkiem tych nawiasów
 ## Oznaczanie Tablic
 
 Na pewno zauważyłes już, że każda tablica ma przyłączone do niej wyrażenie ` as `.   
-Dlaczego jest to ważne? ZenScript czasem nie potrafi przewidzieć, jakiego typu zawartość jest w danej tablicy. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+Dlaczego jest to ważne? ZenScript czasem nie potrafi przewidzieć, jakiego typu zawartość jest w danej tablicy. Brak tego wyrażenia może spowodować dziwne logi błędów konwersji!  
+Lepiej się ubezpieczyć i oznaczyć tablice poprawnymi typami!  
+Pamiętaj także, aby przy używaniu nie prymitywnych typów (wszystkiego poza string, int, itp.) [zaimportować](Import/) odpowiedni pakiet i zrobić to na POCZĄTKU danego skryptu:
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## Zagnieżdżone Tablice
 
-You can place Arrays in Arrays.
+Możesz umieszczać tablice w tablicach.
 
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
@@ -36,9 +36,9 @@ You can place Arrays in Arrays.
     val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## Odnoszenie się do zawartości tablicy
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Możesz odnieść się do elementu wewnątrz tablicy poprzez użycie jego miejsca na liście. Pierwsza wartość w tablicy to nr 0 druga to nr 2 itd.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
