@@ -15,10 +15,10 @@ Tworzy się ją za pomocą ```[``` i ```]```.
 
 Jeżeli myślisz sobie "czekaj, czy ja nie widziałem przypadkiem tych nawiasów wcześniej?", widziałeś je. Pamiętasz ```recipes.add(out,[[],[],[]]);```? Ta formuła używa trzech tablic, gdzie każda z nich zawiera do trzech wartości by zdefiniować recepturę w stole rzemieślniczym.
 
-## Casting Arrays
+## Oznaczanie Tablic
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Na pewno zauważyłes już, że każda tablica ma przyłączone do niej wyrażenie ` as `.   
+Dlaczego jest to ważne? ZenScript czasem nie potrafi przewidzieć, jakiego typu zawartość jest w danej tablicy. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
