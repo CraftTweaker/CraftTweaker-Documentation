@@ -1,8 +1,8 @@
 # GameStage（游戏阶段）:
 
-## Special Thanks
+## 特别鸣谢
 
-特别感谢 Darkhax 在GameStage 2.0.0 方面所做的卓越变化！
+特别感谢Darkhax在GameStage 2.0.0方面所做的卓越改变！
 
 ## Explanation:
 

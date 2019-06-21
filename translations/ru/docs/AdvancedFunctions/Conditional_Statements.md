@@ -1,22 +1,22 @@
-# Conditional Statements
+# Условные выражения
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Вы можете включать код, который будет выполняться, только если соблюдено некоторое условие (или наоборот, если не соблюдено). Вот для чего нужны условные выражения.
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+Выражение if &mdash; первая часть условного выражения. Оно объявляет условие, которое должно быть истинным, чтобы последующий код был выполнен. Будьте осторожны, для сравнения значений вы должны ставить ДВА ЗНАКА РАВЕНСТВА (потому что единичный нужен для объявления значений!).
 
 ```Java
 val test = 0;
 
 if(test == 0){ //true
-    print("Test is zero!");
+    print("Переменная test равна нулю!");
 }
 ```
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Выражение else может быть добавлено после условного выражения, чтобы объявить, что должно быть выполнено, если выражение из if ложно.
 
 ```Java
 var test = 0;
@@ -102,22 +102,22 @@ switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## Операторы
 
-You can use these operators. All the examples given evaluate to true.
+Вы можете использовать следующие операторы. Все приведенные примеры истинны.
 
-| Name             | token   | Explanation                                                                          | Example      |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| Название         | символ  | Объяснение                                                                                                          | Пример       |
+| ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Не               | `!`     | Инвертирует логическое значение                                                                                     | !false       |
+| Не равно         | `!=`    | Проверяет, что значение перед знаком и после него не равны                                                          | ! != 2       |
+| Равно            | `==`    | Проверяет, что значение перед знаком и после равны                                                                  | 1 == 1       |
+| Больше           | `>`  | Проверят, что значение перед знаком больше, чем то, что после                                                       | 1 > 2        |
+| Больше или равно | `>=` | Проверят, что значение перед знаком больше или равно тому, что после                                                | 1 >= 1       |
+| Меньше           | `<`  | Проверяет, что значение перед знаком меньше, чем то, что после                                                      | 1 < 2        |
+| Меньше или равно | `<=` | Проверяет, что значение перед знаком меньше или равно тому, что после                                               | 1 <= 1       |
+| И                | `&` | Проверяет, что выражения и перед знаком, и после него истинны                                                       | true & true  |
+| ИЛИ              | `|`     | Проверят, что истинно либо значение перед знаком, либо значение после знака. Если верны оба, то все выражение верно | true | true  |
+| ИЛИ-ИСКЛ         | `^`     | Проверяет, что ровно одно значение либо перед, либо после знака верно                                               | true ^ false |
 
 ## The in/has Operator
 

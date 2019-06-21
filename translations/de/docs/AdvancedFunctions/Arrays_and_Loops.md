@@ -18,7 +18,7 @@ Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, da
 ## Casting Arrays
 
 You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Why you ask? Das ist der Fall, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 

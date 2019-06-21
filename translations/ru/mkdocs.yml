@@ -28,9 +28,9 @@ pages:
       - Предисловие: 'Tips_Tricks/Foreword.md'
       - Предметы:
         - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
+      - Общие советы:
+        - Разделяйте ваши скрипты на несколько файлов: 'Tips_Tricks/General/Split_Files.md'
+        - Используйте циклы, чтобы облегчить чтение ваших скриптов: 'Tips_Tricks/General/Loops_Readability.md'
   - Обычная игра:
     - Биомы:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
@@ -87,10 +87,10 @@ pages:
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
-      - Events: 'Vanilla/Events/Events.md'
+    - События:
+      - События: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+      - События:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
@@ -99,7 +99,7 @@ pages:
         - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
         - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
         - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
-          #Actual Events below here
+          #Настоящие события ниже
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
         - EnderTeleportEvent: 'Vanilla/Events/Events/EnderTeleport.md'
@@ -139,60 +139,60 @@ pages:
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-    - Game:
+    - Игра:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
-      - Mods: 'Vanilla/Game/Mods.md'
+      - Моды: 'Vanilla/Game/Mods.md'
     - Предметы:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
-      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
-      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
-      - Tooltips: 'Vanilla/Items/Tooltips.md'
-      - Renaming: 'Vanilla/Items/Renaming.md'
-      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
-    - Liquids:
+      - Свойства предметов: 'Vanilla/Items/Item_Conditions.md'
+      - Преобразование предметов: 'Vanilla/Items/Item_Transformers.md'
+      - Подсказки: 'Vanilla/Items/Tooltips.md'
+      - Переименование: 'Vanilla/Items/Renaming.md'
+      - WeightedItemStack: 'Vanilla/Items/WeightedItemStack.md'
+    - Жидкости:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
       - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
-    - Ore Dictionary: 
+    - Словарь руд: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
-    - Players:
+    - Игроки:
       - IFoodStats: 'Vanilla/Players/IFoodStats.md'
       - IPlayer: 'Vanilla/Players/IPlayer.md'
       - IUser: 'Vanilla/Players/IUser.md'
-    - Potions:
+    - Зелья:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Рецепты:
-      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
-        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
-        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+      - Рецепты варки: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
+      - Рецепты верстака: 
+        - Рецепты верстака: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - Функции рецептов: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
-      - Furnace Recipes:
-        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+      - Рецепты печи:
+        - Рецепты печи: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
-    - Tile-Entity:
+      - Дроп семян: 'Vanilla/Recipes/Seeds.md'
+    - Блоки-сущности:
       - IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
-    - Utils:
+    - Утилиты:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
-      - Logger: 'Vanilla/Utils/Logger.md'
+      - Логгер: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
-    - Variable Types:
-      - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
+    - Типы данных переменных:
+      - Обзор типов: 'Vanilla/Variable_Types/Variable_Types.md'
       - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-    - World:
+    - Мир:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
@@ -201,10 +201,10 @@ pages:
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
-  - Mods:
+  - Моды:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - Поддержка CraftTweaker: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -220,7 +220,7 @@ pages:
         - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
-      - Crafting:
+      - Крафт:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
@@ -230,11 +230,11 @@ pages:
         - Util: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      - Requirements:
-        - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 
-          - Advancements: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
-          - Dimensions: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
+      - Требования:
+        - Требования: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - Типы требований: 
+          - Достижения: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
+          - Измерения: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
           - Dynamic Sword Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
           - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
@@ -253,7 +253,7 @@ pages:
           - Tool Harvest-Level: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
           - Traits: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
         - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
-      - Supports:
+      - Поддержка:
         - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
@@ -283,7 +283,7 @@ pages:
           - Custom Traits: 
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
-            - Events:
+            - События:
               - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
@@ -319,27 +319,27 @@ pages:
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - Commands: 'Mods/ContentTweaker/Commands.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
+      - Команды: 'Mods/ContentTweaker/Commands.md'
+      - Обзор: 'Mods/ContentTweaker/WalkThrough.md'
       - Обычная игра:
         - Скобки:
           - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
-          - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
+          - Блоки: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
+          - Вкладки творческого режима: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
           - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
           - SoundEvent: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Event.md'
-        - Creatable Content:
-          - Vanilla Factory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
-          - Block: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
-          - Creative Tab: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
-          - Enchantments: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
-          - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
-          - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
-          - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality: 
-          - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
-          - Map: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
-          - Functions: 
+        - Создаваемый контент:
+          - VanillaFactory: 'Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory.md'
+          - Блок: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Block.md'
+          - Вкладка творческого режима: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab.md'
+          - Чары: 'Mods/ContentTweaker/Vanilla/Enchantments/EnchantmentBuilder.md'
+          - Жидкость: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
+          - Предмет: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
+          - Еда: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
+        - Расширенные возможности: 
+          - Команды: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
+          - Карты: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
+          - Функции: 
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IBlockColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
@@ -347,28 +347,30 @@ pages:
             - IItemColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier.md'
             - IItemDestroyedBlock: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock.md'
             - IItemDestroySpeed: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed.md'
+            - IItemFoodEaten: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten.md'
             - IItemGetContainerItem: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem.md'
             - IItemRightClick: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick.md'
             - IItemStackSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier.md'
             - IItemUse: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse.md'
+            - IItemUseFinish: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish.md'
             - IItemUpdate: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate.md'
             - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
-        - Types:
-          - Block:
+        - Типы:
+          - Блок:
             - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
             - MCAxisAlignedBB: 'Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB.md'
             - PushReaction: 'Mods/ContentTweaker/Vanilla/Types/Block/PushReaction.md'
-          - Color:
-            - Color: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
-          - Drops:
+          - Цвет:
+            - Цвет: 'Mods/ContentTweaker/Vanilla/Types/Color/Color.md'
+          - Дроп:
             - ICTItemList: 'Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList.md'
-          - Item:
+          - Предмет:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
-          - Player:
+          - Игрок:
             - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
             - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
           - Resources:
@@ -376,7 +378,7 @@ pages:
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
-          - World:
+          - Мир:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
       - Material System:
@@ -390,7 +392,7 @@ pages:
           - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
           - Material Part: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
           - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
-          - Functions:
+          - Функции:
             - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
             - MaterialPartColorSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartColorSupplier.md'
             - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartLocalizedNameSupplier.md'
@@ -665,7 +667,7 @@ pages:
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
       - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
-      - Crafting:
+      - Крафт:
         - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
         - Chopping Board: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
         - Dishwasher: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
@@ -683,7 +685,7 @@ pages:
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - PneumaticCraft&#58; Repressurized:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
+      - Крафт:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'

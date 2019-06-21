@@ -1,31 +1,31 @@
-# Push
+# Отправка
 
-## Prerequisites
+## Требования
 
 You need to know how to [create Commits](/Contribute/LocalClone/CreateCommit/) and you need to have created at least one of them.
 
-## What will we do
+## Что мы сделаем
 
-We will use the commit(s) we have created (e.g. the example in [create Commits](/Contribute/LocalClone/CreateCommit/)) and push the changes to GitHub.
+Мы используем зафиксированный нами коммит (например, тот, из [страницы про создание коммитов](/Contribute/LocalClone/CreateCommit/)), чтобы отправить наши изменения на GitHub.
 
-## Check the current status
+## Проверка текущего статуса
 
-If you run `git status` you can see how many commits your local clone is ahead/behind your fork.
+Если вы запускаете `git status`, вы узнаете, насколько ваша локальная копия отстает или опережает вашу ветвь.
 
-In this case we are ahead by 1 commit:  
-![git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
+В данном случае мы опережаем на 1 коммит:  
+![Вызов git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus3.png)
 
 ## Git push
 
-Now we run `git push` to push our changes to the remote branch.  
-You might be asked for your GH username and password.  
-**Careful:** When you use TwoFactor Authorization (2FA) you need to create and use a *Personal Access Token* instead of your GH password!
+Теперь мы запускаем `git push`, чтобы отправить наши изменения на удаленную ветвь.  
+У вас могут запросить ваш логин и пароль GH.  
+**Важно:** когда вы используете двухфакторную аутентификацию (2FA), вам может понадобиться создать и использовать *персональный ключ доступа* вместо пароля GH!
 
-![Credentials dialog](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
+![Диалог учетных данных](/Contribute/LocalClone/assets/Example1_Bash_GitPush_Credentials.png)
 
-To verify that the commit is actually on the fork, you can check the commit list that should now have the commit in there: ![Commit List with commit](/Contribute/LocalClone/assets/Example1_CommitList.png)
+Чтобы провеить, что коммит действительно в вашей ветке, вы можете проверить список коммитов, который теперь должен содержать новый коммит: ![Список коммитов, где коммит](/Contribute/LocalClone/assets/Example1_CommitList.png)
 
-## How to continue
+## Как продолжить
 
-Now that you have pushed your changes to your fork, you can use GH to [create a Pull request](/Contribute/PullRequest/).  
-This is the same procedure as if you were using the online editor to edit files.
+Теперь, когда вы отправили свои изменения на ваш форк, вы можете использовать GH, чтобы [создать запрос на объединение](/Contribute/PullRequest/).  
+Процедура такая же, как если бы мы использовали онлайн-редактор для редактирования файлов.

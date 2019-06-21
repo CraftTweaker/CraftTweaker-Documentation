@@ -6,8 +6,8 @@ Artisan Worktables 添加了多种自定义工作台和需要 "工具" 的合成
 
 ### 如需更多信息：
 
-https://minecraft.curseforge.com/projects/advanced-mortars
+https://minecraft.curseforge.com/projects/artisan-worktables
 
 ### Bug 反馈:
 
-https://github.com/codetaylor/advancedmortars/issues
+https://github.com/codetaylor/artisan-worktables/issues

@@ -36,8 +36,8 @@
 - 高炉： `blast_furnace`
 - 聚爆压缩机： `implosion_compressor`
 - 真空冷冻机： `vacuum_freezer`
-- 化学反应器： `chemical reactor`
-- 蒸馏塔： `distillation tower`
+- Chemical reactor: `chemical_reactor`
+- Disti tower: `distillation_tower`
 - 石油裂化机： `cracker`
 - 热解炉： `pyro`
 - 线材轧机： `wiremill`

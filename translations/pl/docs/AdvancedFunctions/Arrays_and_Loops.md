@@ -15,20 +15,20 @@ Tworzy się ją za pomocą ```[``` i ```]```.
 
 Jeżeli myślisz sobie "czekaj, czy ja nie widziałem przypadkiem tych nawiasów wcześniej?", widziałeś je. Pamiętasz ```recipes.add(out,[[],[],[]]);```? Ta formuła używa trzech tablic, gdzie każda z nich zawiera do trzech wartości by zdefiniować recepturę w stole rzemieślniczym.
 
-## Casting Arrays
+## Oznaczanie Tablic
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+Na pewno zauważyłes już, że każda tablica ma przyłączone do niej wyrażenie ` as `.   
+Dlaczego jest to ważne? ZenScript czasem nie potrafi przewidzieć, jakiego typu zawartość jest w danej tablicy. Brak tego wyrażenia może spowodować dziwne logi błędów konwersji!  
+Lepiej się ubezpieczyć i oznaczyć tablice poprawnymi typami!  
+Pamiętaj także, aby przy używaniu nie prymitywnych typów (wszystkiego poza string, int, itp.) [zaimportować](Import/) odpowiedni pakiet i zrobić to na POCZĄTKU danego skryptu:
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## Zagnieżdżone Tablice
 
-You can place Arrays in Arrays.
+Możesz umieszczać tablice w tablicach.
 
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
@@ -36,25 +36,25 @@ You can place Arrays in Arrays.
     val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## Odnoszenie się do zawartości tablicy
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Możesz odnieść się do elementu wewnątrz tablicy poprzez użycie jego miejsca na liście. Pierwsza wartość w tablicy to nr 0 druga to nr 2 itd.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujesz 2 lub więcej odnośników, ponieważ każdy z nich usuwa jedną warstwę z list.
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] to "Hello"
+    stringArray[1] to "World"
+    stringArray[2] to "I"
+    stringArray[3] to "am"
     */
     val stringArray = ["Hello","World","I","am"] as string[];
     
-    //prints "Hello"
+    //Wysyła "Hello"
     print(stringArray[0]);
     
     
-    //Nested Arrays
+    //Zagnieżdżone Tablice
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
     val stringArray3 = ["a","beautiful"] as string[];
@@ -66,16 +66,16 @@ If you want to refer to an item in a nested Array, you need two or more referers
     stringArrayAll[2] is ["a","beautiful"]
     stringArrayAll[3] is ["Butterfly","!"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
-    etc.
+    stringArrayAll[0][0] to "Hello"
+    stringArrayAll[0][1] to "World"
+    itd.
     */
     
-    //prints "World"
+    //Wysyła "World"
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# Pętle
 
 A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
