@@ -81,8 +81,8 @@ Pętla to funkcja która się sama powtarza. Pętli mozeżesz używać aby wyko
 
 ## Pętla For
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Głównym zastosowaniem pętli for jest iteracja po tablicy. Iteracja oznacza wykonywanie akcji dla wszystkich elementów Tablicy.   
+Używając hasła `break` możesz zatrzymać pętlę przedwcześnie.
 
     import crafttweaker.item.IItemStack;
     
@@ -91,18 +91,18 @@ You can use the `break` keyword to break the loop prematurely.
     val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
     
     
-    //for [IntegerName, ] elementName in IArray {code}
+    //Dla [nazwaInteger, ] nazwaElementu w IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //definiuje zmienną "item" jako każdy element IArray (czyli <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Teraz po prostu użyj tej zmiennej!
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //definiuje zmienną "i" jako każdy numer elementu IArray (tj. 0,1,2,...)
+        //definiuje zmienną "item" jako każdy element IArray  (tj. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Teraz po prostu użyj tych zmiennych!
     
         //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
