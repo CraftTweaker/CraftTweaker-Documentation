@@ -300,18 +300,18 @@ pages:
           - Chowanie umiejętności: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
           - Transmutacja: 
             - Domyślne transmutacje: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
-            - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
-            - Removals: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
-            - Clear: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
+            - Dodatki: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
+            - Usuwanie: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
+            - Czyszczenie: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
         - Thaumcraft:
-            - Knowledge Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
-            - Research Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
+            - Blokowanie wiedzy: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
+            - Blokowanie odkryć: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
         - Tinker's Construct: 
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
-          - Material-Locks:
-            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
-          - Modifier-Locks:
-            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
+          - Blokowanie materiałów:
+            - Blokowanie materiałów: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - Blokowanie modyfikatorów:
+            - Blokowanie modyfikatorów: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
@@ -319,10 +319,10 @@ pages:
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - Commands: 'Mods/ContentTweaker/Commands.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
+      - Komendy: 'Mods/ContentTweaker/Commands.md'
+      - Podstawy: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
-        - Brackets:
+        - Nawiasy:
           - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
