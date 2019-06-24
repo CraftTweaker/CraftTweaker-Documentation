@@ -53,24 +53,24 @@ pages:
       - Ciecze: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Rudy: 'Vanilla/Brackets/Bracket_Ore.md'
       - Mikstury: 'Vanilla/Brackets/Bracket_Potion.md'
-    - Commands:
+    - Komendy:
       - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
       - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Pojemnik: 
       - IContainer: 'Vanilla/Container/IContainer.md'
-    - Creative Tabs:
+    - Zakładki w trybie kreatywnym:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantments:
+    - Zaklęcia:
       - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
       - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
-    - Data:
+    - Dane:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
-    - Damage:
+    - Obrażenia:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
-    - Entities:
-      - Attributes:
+    - Entity:
+      - Atrybuty:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
@@ -87,10 +87,10 @@ pages:
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
-      - Events: 'Vanilla/Events/Events.md'
+    - Eventy:
+      - Eventy: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+      - Eventy:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
