@@ -2,39 +2,39 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
+  - Korzystanie z tej wiki: 'UsingThisWiki.md'
+  - Komendy: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
+  - Funkcje Globalne: 'Vanilla/Global_Functions.md'
+  - Obsługa Nawiasów: 'Brackets/Brackets.md'
+  - Zaawansowane Funkcje:
+    - Tablice i Pętle: 'AdvancedFunctions/Arrays_and_Loops.md'
+    - Tablice Asocacyjne (Mapy): 'AdvancedFunctions/Associative_Arrays.md'
+    - Obliczenia: 'AdvancedFunctions/Calculations.md'
+    - Wyrażenia warunkowe: 'AdvancedFunctions/Conditional_Statements.md'
+    - Odnoszenie się pomiędzy skryptami: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - Własne Funkcje: 'AdvancedFunctions/Custom_Functions.md'
+    - Globalne i statyczne zmienne: 'AdvancedFunctions/Global_Static_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
+    - Preprocesory:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
-      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - Debugowanie: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - Ignorowanie błędów nawiasów: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
+      - Priorytet: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+  - Wskazówki i sztuczki:
+      - Przedmowa: 'Tips_Tricks/Foreword.md'
+      - Przedmioty:
+        - Używanie IItemDefinition do zakresów met: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+      - Ogólne wskazówki:
+        - Podziel swoje skrypty na wiele plików: 'Tips_Tricks/General/Split_Files.md'
+        - Używaj pętli aby twoje skrypty były bardziej czytelne: 'Tips_Tricks/General/Loops_Readability.md'
   - Vanilla:
-    - Biomes:
+    - Biomy:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
+    - Bloki:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
@@ -43,34 +43,34 @@ pages:
       - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
-    - Brackets:
-      - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
-      - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
-      - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
-      - Items: 'Vanilla/Brackets/Bracket_Item.md'
-      - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
-      - Entities: 'Vanilla/Brackets/Bracket_Entity.md'
-      - Liquids: 'Vanilla/Brackets/Bracket_Liquid.md'
-      - Ores: 'Vanilla/Brackets/Bracket_Ore.md'
-      - Potions: 'Vanilla/Brackets/Bracket_Potion.md'
-    - Commands:
+    - Nawiasy:
+      - Zakładki w trybie kreatywnym: 'Vanilla/Brackets/Bracket_CreativeTab.md'
+      - Źródło obrażeń: 'Vanilla/Brackets/Bracket_DamageSource.md'
+      - Zaklęcia: 'Vanilla/Brackets/Bracket_Enchantment.md'
+      - Przedmioty: 'Vanilla/Brackets/Bracket_Item.md'
+      - BlockState: 'Vanilla/Brackets/Bracket_BlockState.md'
+      - Entity: 'Vanilla/Brackets/Bracket_Entity.md'
+      - Ciecze: 'Vanilla/Brackets/Bracket_Liquid.md'
+      - Rudy: 'Vanilla/Brackets/Bracket_Ore.md'
+      - Mikstury: 'Vanilla/Brackets/Bracket_Potion.md'
+    - Komendy:
       - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
       - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Pojemnik: 
       - IContainer: 'Vanilla/Container/IContainer.md'
-    - Creative Tabs:
+    - Zakładki w trybie kreatywnym:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
-    - Enchantments:
+    - Zaklęcia:
       - IEnchantment: 'Vanilla/Enchantments/IEnchantment.md'
       - IEnchantmentDefinition: 'Vanilla/Enchantments/IEnchantmentDefinition.md'
-    - Data:
+    - Dane:
       - IData: 'Vanilla/Data/IData.md'
       - DataMap: 'Vanilla/Data/DataMap.md'
-    - Damage:
+    - Obrażenia:
       - IDamageSource: 'Vanilla/Damage/IDamageSource.md'
-    - Entities:
-      - Attributes:
+    - Entity:
+      - Atrybuty:
         - IEntityAttribute: 'Vanilla/Entities/Attributes/IEntityAttribute.md'
         - IEntityAttributeInstance: 'Vanilla/Entities/Attributes/IEntityAttributeInstance.md'
         - IEntityAttributeModifier: 'Vanilla/Entities/Attributes/IEntityAttributeModifier.md'
@@ -87,10 +87,10 @@ pages:
       - IEntityLivingBase: 'Vanilla/Entities/IEntityLivingBase.md'
       - IEntityMob: 'Vanilla/Entities/IEntityMob.md'
       - IEntityXp: 'Vanilla/Entities/IEntityXp.md'
-    - Events:
-      - Events: 'Vanilla/Events/Events.md'
+    - Eventy:
+      - Eventy: 'Vanilla/Events/Events.md'
       - IEventManager: 'Vanilla/Events/IEventManager.md'
-      - Events:
+      - Eventy:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
@@ -139,60 +139,60 @@ pages:
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-    - Game:
+    - Gra:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
       - Mods: 'Vanilla/Game/Mods.md'
-    - Items:
+    - Przednioty:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
-      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
-      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
-      - Tooltips: 'Vanilla/Items/Tooltips.md'
-      - Renaming: 'Vanilla/Items/Renaming.md'
-      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
-    - Liquids:
+      - Stany przedmiotów: 'Vanilla/Items/Item_Conditions.md'
+      - Transformatory przedmiotów: 'Vanilla/Items/Item_Transformers.md'
+      - Tooltip: 'Vanilla/Items/Tooltips.md'
+      - Zmiana nazwy: 'Vanilla/Items/Renaming.md'
+      - WeightedItemStack: 'Vanilla/Items/WeightedItemStack.md'
+    - Ciecze:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
       - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
     - Ore Dictionary: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
-    - Players:
+    - Gracze:
       - IFoodStats: 'Vanilla/Players/IFoodStats.md'
       - IPlayer: 'Vanilla/Players/IPlayer.md'
       - IUser: 'Vanilla/Players/IUser.md'
-    - Potions:
+    - Mikstury:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
-      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
-        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
-        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+    - Przepisy:
+      - Przepisy Alchemiczne: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
+      - Przepisy stołu rzemieślniczego: 
+        - Przepisy stoły rzemieślniczego: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - Funkcje przepisów: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
-      - Furnace Recipes:
-        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+      - Przepisy piecy:
+        - Przepisy piecy: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+      - Wypadanie nasion: 'Vanilla/Recipes/Seeds.md'
     - Tile-Entity:
       - IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
-    - Utils:
+    - Narzędzia:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
       - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
-    - Variable Types:
-      - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
-      - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
+    - Typy zmiennych:
+      - Przegląd typów: 'Vanilla/Variable_Types/Variable_Types.md'
+      - Podstawowe funkcje zmiennych: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-    - World:
+    - Świat:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
@@ -201,10 +201,10 @@ pages:
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
-  - Mods:
+  - Modyfikacje:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - Wsparcie dla CraftTweakera: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -216,11 +216,11 @@ pages:
       - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
       - RecipeBuilder: 
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+        - Użycie: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - Przykłady dla skali: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
-      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
-      - Crafting:
+      - O Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - Wytwarzanie:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
@@ -230,60 +230,60 @@ pages:
         - Util: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      - Requirements:
-        - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 
+      - Wymagania:
+        - Wymagania: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - Typy wymagań: 
           - Advancements: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
-          - Dimensions: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
+          - Wymiary: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
           - Dynamic Sword Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
-          - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
-          - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
-          - Logic Operators: 
-            - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
-            - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
-            - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
-            - NOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
-            - NOT-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOT-Gate.md'
-            - OR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/OR-Gate.md'
-            - XNOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
-            - XOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
+          - Odwrócone wymagania: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
+          - Przedmioty: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
+          - Operatory logiczne: 
+            - WAŻNA NOTATKA: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
+            - Bramka AND: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
+            - Bramka NAND: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
+            - Bramka NOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
+            - Bramka NOT: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOT-Gate.md'
+            - Bramka OR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/OR-Gate.md'
+            - Bramka XNOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
+            - Bramka XOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
           - Ore Dictionary: 'Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary.md'
-          - Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Skills.md'
-          - Tool Harvest-Level: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
-          - Traits: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
-        - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
-      - Supports:
+          - Umiejętności: 'Mods/CompatSkills/Requirements/Requirement_Types/Skills.md'
+          - Poziom zbierania narzędzia: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
+          - Cechy: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
+        - Umiejętności i cechy: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+      - Wsparcia:
         - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
-          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
-          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+          - Wsparcie wiązania: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
+          - Wsparcie rytuałów: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - GameStages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
-          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
-          - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
+          - Blokady GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - Odblokowywanie w GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft: 
-          - Armor-Value Locking: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
-          - Attack-Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
-          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
-          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
-          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
-          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
-          - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
+          - Blockowanie wartości pancerza: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
+          - Blokowanie zadawanych obrażeń: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
+          - Blockowanie Wymiarów: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - Blokowanie obrażeń Entity: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
+          - Blokowanie ujeżdżania: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - Blokowanie oswajania: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - Blokowanie Tile-Entity: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
-          - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
-          - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
-          - Custom Skills: 
-            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
-            - Full-Scale example: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
-          - Custom Traits: 
-            - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
-            - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
-            - Events:
+          - Obsługa nawiasów: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
+          - Wsparcie blokowania poziomami: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+          - Własne umiejętności: 
+            - Własne umiejętności: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+            - Przykład o pełnej skali: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
+          - Własne cechy: 
+            - Własne cechy: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Informacje o Eventach: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
+            - Eventy:
               - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
@@ -293,25 +293,25 @@ pages:
               - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
-          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
-          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
-          - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
-          - Skill Change Tweaker: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
-          - Skill Hiding: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
-          - Transmutation: 
-            - Default Transmutations: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
-            - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
-            - Removals: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
-            - Clear: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
+          - Blokowanie modyfikacjami: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
+          - Blokowanie NBT: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
+          - Zmienianie wymagań: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
+          - Zmiana umiejętności: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
+          - Chowanie umiejętności: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
+          - Transmutacja: 
+            - Domyślne transmutacje: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
+            - Dodatki: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
+            - Usuwanie: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
+            - Czyszczenie: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
         - Thaumcraft:
-            - Knowledge Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
-            - Research Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
+            - Blokowanie wiedzy: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
+            - Blokowanie odkryć: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
         - Tinker's Construct: 
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
-          - Material-Locks:
-            - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
-          - Modifier-Locks:
-            - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
+          - Blokowanie materiałów:
+            - Blokowanie materiałów: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
+          - Blokowanie modyfikatorów:
+            - Blokowanie modyfikatorów: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
@@ -319,10 +319,10 @@ pages:
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
       - ContentTweaker: 'Mods/ContentTweaker/ContentTweaker.md'
-      - Commands: 'Mods/ContentTweaker/Commands.md'
-      - WalkThrough: 'Mods/ContentTweaker/WalkThrough.md'
+      - Komendy: 'Mods/ContentTweaker/Commands.md'
+      - Podstawy: 'Mods/ContentTweaker/WalkThrough.md'
       - Vanilla:
-        - Brackets:
+        - Nawiasy:
           - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Blocks: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - Creative Tab: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'

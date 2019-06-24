@@ -50,7 +50,7 @@ Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujes
     */
     val stringArray = ["Hello","World","I","am"] as string[];
     
-    //Wysyła "Hello"
+    //Drukuje "Hello"
     print(stringArray[0]);
     
     
@@ -71,18 +71,18 @@ Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujes
     itd.
     */
     
-    //Wysyła "World"
+    //Drukuje "World"
     print(stringArrayAll[0][1]);
     
 
 # Pętle
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Pętla to funkcja która się sama powtarza. Pętli mozeżesz używać aby wykonać daną akcję dla wszystkich elementów tablicy
 
-## For Loop
+## Pętla For
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Głównym zastosowaniem pętli for jest iteracja po tablicy. Iteracja oznacza wykonywanie akcji dla wszystkich elementów Tablicy.   
+Używając hasła `break` możesz zatrzymać pętlę przedwcześnie.
 
     import crafttweaker.item.IItemStack;
     
@@ -91,47 +91,47 @@ You can use the `break` keyword to break the loop prematurely.
     val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emerald>] as IItemStack[];
     
     
-    //for [IntegerName, ] elementName in IArray {code}
+    //Dla [nazwaInteger, ] nazwaElementu w IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //definiuje zmienną "item" jako każdy element IArray (czyli <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Teraz po prostu użyj tej zmiennej!
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //definiuje zmienną "i" jako każdy numer elementu IArray (tj. 0,1,2,...)
+        //definiuje zmienną "item" jako każdy element IArray  (tj. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Teraz po prostu użyj tych zmiennych!
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //Tworzy przedmioty z IArray używając przedmiotów z JArray oraz KArray (tj. Ziema z trawą i drewnianą siekierą, deski z drewnem i złotą łopatą, diament ze sztabką złota i szmaragdem)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //definiuje zmienną "i" jako numery od 0 do 9 (tj. 0,1,2,...,8,9)
         print(i);
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //definiuje zmienną "i" jako każdy numer od 10 do 19 (tj. 10,11,12,...,18,19)
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //definiuje zmienną "item" jako każdy przedmiot dodany przez modyfikacje z modID "minecraft" i usuwa jego receptury wytwarzania
         recipes.remove(item);
     }
     
 
-## While Loop
+## Pętla While
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Pętla while wykonuje dany kod tak długo, jak dany warunek jest równy `true`.  
+Alternatywnie, pętle można zatrzymać hasłem `break`.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //Wydrukuje 0 - 9, ponieważ iteracje dalej i < 10 będzie fałszem, iż i będzie równe 10.
     while i < 10 {
         print(i); 
         i += 1;
@@ -140,7 +140,7 @@ Alternatively, you can stop it using the `break` keyword.
     print("After loop: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //Wydrukuje 10 - 6, ponieważ iterację dalej i == 5 przez co pętla wykona polecenie break.
     while (i > 0) {
         if i == 5
             break;
@@ -158,11 +158,11 @@ Alternatively, you can stop it using the `break` keyword.
     }
     
 
-# Adding items to an Array
+# Dodawanie zmiennych do tablic
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Chociaż nie jest to rekomendowane, to dodawanie zmiennych do tablic jest możliwe.  
+Dodawać możesz tylko pojedyncze obiekty. Nie możesz dodać do siebie dwóch tablic.  
+Żeby dodać obiekt do tablicy należy użyć operatora `+`:
 
 ```java
 import crafttweaker.item.IItemStack;
