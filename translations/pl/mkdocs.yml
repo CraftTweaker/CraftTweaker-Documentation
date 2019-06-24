@@ -272,11 +272,11 @@ pages:
           - Blokowanie obrażeń Entity: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
           - Blokowanie ujeżdżania: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
           - Blokowanie oswajania: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
-          - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
+          - Blokowanie Tile-Entity: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
-          - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
-          - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
+          - Obsługa nawiasów: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
+          - Wsparcie blokowania poziomami: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
           - Custom Skills: 
             - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
             - Full-Scale example: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
