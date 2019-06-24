@@ -149,50 +149,50 @@ pages:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
       - Stany przedmiotów: 'Vanilla/Items/Item_Conditions.md'
-      - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
-      - Tooltips: 'Vanilla/Items/Tooltips.md'
-      - Renaming: 'Vanilla/Items/Renaming.md'
-      - Weighted ItemStack: 'Vanilla/Items/WeightedItemStack.md'
-    - Liquids:
+      - Transformatory przedmiotów: 'Vanilla/Items/Item_Transformers.md'
+      - Tooltip: 'Vanilla/Items/Tooltips.md'
+      - Zmiana nazwy: 'Vanilla/Items/Renaming.md'
+      - WeightedItemStack: 'Vanilla/Items/WeightedItemStack.md'
+    - Ciecze:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
       - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
     - Ore Dictionary: 
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
-    - Players:
+    - Gracze:
       - IFoodStats: 'Vanilla/Players/IFoodStats.md'
       - IPlayer: 'Vanilla/Players/IPlayer.md'
       - IUser: 'Vanilla/Players/IUser.md'
-    - Potions:
+    - Mikstury:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
-      - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
-        - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
-        - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
+    - Przepisy:
+      - Przepisy Alchemiczne: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
+      - Przepisy stołu rzemieślniczego: 
+        - Przepisy stoły rzemieślniczego: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
+        - Funkcje przepisów: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
-      - Furnace Recipes:
-        - Furnace Recipes: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
+      - Przepisy piecy:
+        - Przepisy piecy: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
         - IFurnaceRecipe: 'Vanilla/Recipes/Furnace/IFurnaceRecipe.md'
-      - Seed Drops: 'Vanilla/Recipes/Seeds.md'
+      - Wypadanie nasion: 'Vanilla/Recipes/Seeds.md'
     - Tile-Entity:
       - IMobSpawnerBaseLogic: 'Vanilla/TileEntity/IMobSpawnerBaseLogic.md'
-    - Utils:
+    - Narzędzia:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
       - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
-    - Variable Types:
-      - Types Overview: 'Vanilla/Variable_Types/Variable_Types.md'
-      - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
+    - Typy zmiennych:
+      - Przegląd typów: 'Vanilla/Variable_Types/Variable_Types.md'
+      - Podstawowe funkcje zmiennych: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
-    - World:
+    - Świat:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
       - IBlockPos: 'Vanilla/World/IBlockPos.md'
       - IFacing: 'Vanilla/World/IFacing.md'
@@ -201,10 +201,10 @@ pages:
       - IWorld: 'Vanilla/World/IWorld.md'
       - IWorldInfo: 'Vanilla/World/IWorldInfo.md'
       - IWorldProvider: 'Vanilla/World/IWorldProvider.md'
-  - Mods:
+  - Modyfikacje:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
-      - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+      - Wsparcie dla CraftTweakera: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -216,11 +216,11 @@ pages:
       - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
       - RecipeBuilder: 
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+        - Użycie: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - Przykłady dla skali: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
-      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
-      - Crafting:
+      - O Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - Wytwarzanie:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
         - Light-Well: 'Mods/Astral_Sorcery/Well.md'
@@ -230,48 +230,48 @@ pages:
         - Util: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
-      - Requirements:
-        - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 
+      - Wymagania:
+        - Wymagania: 'Mods/CompatSkills/Requirements/Requirements.md'
+        - Typy wymagań: 
           - Advancements: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
-          - Dimensions: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
+          - Wymiary: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
           - Dynamic Sword Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
-          - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
-          - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
-          - Logic Operators: 
-            - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
-            - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
-            - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
-            - NOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
-            - NOT-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOT-Gate.md'
-            - OR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/OR-Gate.md'
-            - XNOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
-            - XOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
+          - Odwrócone wymagania: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
+          - Przedmioty: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
+          - Operatory logiczne: 
+            - WAŻNA NOTATKA: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
+            - Bramka AND: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
+            - Bramka NAND: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
+            - Bramka NOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
+            - Bramka NOT: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOT-Gate.md'
+            - Bramka OR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/OR-Gate.md'
+            - Bramka XNOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XNOR-Gate.md'
+            - Bramka XOR: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/XOR-Gate.md'
           - Ore Dictionary: 'Mods/CompatSkills/Requirements/Requirement_Types/Ore_Dictionary.md'
-          - Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Skills.md'
-          - Tool Harvest-Level: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
-          - Traits: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
-        - Skill & Traits: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
-      - Supports:
+          - Umiejętności: 'Mods/CompatSkills/Requirements/Requirement_Types/Skills.md'
+          - Poziom zbierania narzędzia: 'Mods/CompatSkills/Requirements/Requirement_Types/Tool_Harvest-Level.md'
+          - Cechy: 'Mods/CompatSkills/Requirements/Requirement_Types/Traits.md'
+        - Umiejętności i cechy: 'Mods/CompatSkills/Requirements/Skills_Traits.md'
+      - Wsparcia:
         - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
-          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
-          - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
+          - Wsparcie wiązania: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
+          - Wsparcie rytuałów: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - GameStages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
-          - GameStages Locks: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
-          - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
+          - Blokady GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStagesLock.md'
+          - Odblokowywanie w GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
         - Minecraft: 
-          - Armor-Value Locking: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
-          - Attack-Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
-          - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
-          - Entity Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
-          - Mounting Locking: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
-          - Tame Locking: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
+          - Blockowanie wartości pancerza: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
+          - Blokowanie zadawanych obrażeń: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
+          - Blockowanie Wymiarów: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
+          - Blokowanie obrażeń Entity: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
+          - Blokowanie ujeżdżania: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
+          - Blokowanie oswajania: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
           - Tile-Entity Locking: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
         - Reskillable:
