@@ -50,7 +50,7 @@ Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujes
     */
     val stringArray = ["Hello","World","I","am"] as string[];
     
-    //Wysyła "Hello"
+    //Drukuje "Hello"
     print(stringArray[0]);
     
     
@@ -71,7 +71,7 @@ Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujes
     itd.
     */
     
-    //Wysyła "World"
+    //Drukuje "World"
     print(stringArrayAll[0][1]);
     
 
@@ -126,12 +126,12 @@ Używając hasła `break` możesz zatrzymać pętlę przedwcześnie.
 
 ## Pętla While
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Pętla while wykonuje dany kod tak długo, jak dany warunek jest równy `true`.  
+Alternatywnie, pętle można zatrzymać hasłem `break`.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //Wydrukuje 0 - 9, ponieważ iteracje dalej i < 10 będzie fałszem, iż i będzie równe 10.
     while i < 10 {
         print(i); 
         i += 1;
@@ -140,7 +140,7 @@ Alternatively, you can stop it using the `break` keyword.
     print("After loop: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //Wydrukuje 10 - 6, ponieważ iterację dalej i == 5 przez co pętla wykona polecenie break.
     while (i > 0) {
         if i == 5
             break;
@@ -158,7 +158,7 @@ Alternatively, you can stop it using the `break` keyword.
     }
     
 
-# Adding items to an Array
+# Dodawanie zmiennych do tablic
 
 While it is not recommended to do so, it is possible to add some Objects to Arrays.  
 You can only add single Objects to an array, you cannot add two arrays.  
