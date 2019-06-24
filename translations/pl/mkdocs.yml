@@ -2,15 +2,15 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
-  - Using this wiki: 'UsingThisWiki.md'
-  - Commands: 'Vanilla/Commands.md'
+  - Korzystanie z tej wiki: 'UsingThisWiki.md'
+  - Komendy: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
-  - Global functions: 'Vanilla/Global_Functions.md'
-  - Bracket Handlers: 'Brackets/Brackets.md'
-  - Advanced Functions:
-    - Arrays and Loops: 'AdvancedFunctions/Arrays_and_Loops.md'
+  - Funkcje Globalne: 'Vanilla/Global_Functions.md'
+  - Obsługa Nawiasów: 'Brackets/Brackets.md'
+  - Zaawansowane Funkcje:
+    - Tablice i Pętle: 'AdvancedFunctions/Arrays_and_Loops.md'
     - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
-    - Calculations: 'AdvancedFunctions/Calculations.md'
+    - Obliczenia: 'AdvancedFunctions/Calculations.md'
     - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
     - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
     - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
