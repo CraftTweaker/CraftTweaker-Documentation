@@ -139,16 +139,16 @@ pages:
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-    - Game:
+    - Gra:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
       - IServer: 'Vanilla/Game/IServer.md'
       - ITeam: 'Vanilla/Game/ITeam.md'
       - Mods: 'Vanilla/Game/Mods.md'
-    - Items:
+    - Przednioty:
       - IItemDefinition: 'Vanilla/Items/IItemDefinition.md'
       - IItemStack: 'Vanilla/Items/IItemStack.md'
-      - Item Conditions: 'Vanilla/Items/Item_Conditions.md'
+      - Stany przedmiotów: 'Vanilla/Items/Item_Conditions.md'
       - Item Transformers: 'Vanilla/Items/Item_Transformers.md'
       - Tooltips: 'Vanilla/Items/Tooltips.md'
       - Renaming: 'Vanilla/Items/Renaming.md'
