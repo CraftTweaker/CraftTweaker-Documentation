@@ -9,32 +9,32 @@ pages:
   - Obsługa Nawiasów: 'Brackets/Brackets.md'
   - Zaawansowane Funkcje:
     - Tablice i Pętle: 'AdvancedFunctions/Arrays_and_Loops.md'
-    - Associative Arrays (Maps): 'AdvancedFunctions/Associative_Arrays.md'
+    - Tablice Asocacyjne (Mapy): 'AdvancedFunctions/Associative_Arrays.md'
     - Obliczenia: 'AdvancedFunctions/Calculations.md'
-    - Conditional Statements: 'AdvancedFunctions/Conditional_Statements.md'
-    - Cross-Script Reference: 'AdvancedFunctions/Cross-Script_Reference.md'
-    - Custom Functions: 'AdvancedFunctions/Custom_Functions.md'
-    - Global and Static Variables: 'AdvancedFunctions/Global_Static_Variables.md'
+    - Wyrażenia warunkowe: 'AdvancedFunctions/Conditional_Statements.md'
+    - Odnoszenie się pomiędzy skryptami: 'AdvancedFunctions/Cross-Script_Reference.md'
+    - Własne Funkcje: 'AdvancedFunctions/Custom_Functions.md'
+    - Globalne i statyczne zmienne: 'AdvancedFunctions/Global_Static_Variables.md'
     - Import: 'AdvancedFunctions/Import.md'
-    - Preprocessors:
+    - Preprocesory:
       - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
-      - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
-      - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
+      - Debugowanie: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
+      - Ignorowanie błędów nawiasów: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
       - Mod Loaded: 'AdvancedFunctions/Preprocessors/ModLoadedPreprocessor.md'
       - No Run: 'AdvancedFunctions/Preprocessors/NoRunPreprocessor.md'
-      - Priority: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
-  - Tips and Tricks:
-      - Foreword: 'Tips_Tricks/Foreword.md'
-      - Items:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
-      - General Tips:
-        - Split your scripts into multiple files: 'Tips_Tricks/General/Split_Files.md'
-        - Use Loops to make your scripts easier to read: 'Tips_Tricks/General/Loops_Readability.md'
+      - Priorytet: 'AdvancedFunctions/Preprocessors/PriorityPreprocessor.md'
+  - Wskazówki i sztuczki:
+      - Przedmowa: 'Tips_Tricks/Foreword.md'
+      - Przedmioty:
+        - Używanie IItemDefinition do zakresów met: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+      - Ogólne wskazówki:
+        - Podziel swoje skrypty na wiele plików: 'Tips_Tricks/General/Split_Files.md'
+        - Używaj pętli aby twoje skrypty były bardziej czytelne: 'Tips_Tricks/General/Loops_Readability.md'
   - Vanilla:
-    - Biomes:
+    - Biomy:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
+    - Bloki:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
@@ -43,7 +43,7 @@ pages:
       - IBlockStateMatcher: 'Vanilla/Blocks/IBlockStateMatcher.md'
       - IMaterial: 'Vanilla/Blocks/IMaterial.md'
       - IMobilityFlag: 'Vanilla/Blocks/IMobilityFlag.md'
-    - Brackets:
+    - Nawiasy:
       - Creative Tabs: 'Vanilla/Brackets/Bracket_CreativeTab.md'
       - Damage Source: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Enchantments: 'Vanilla/Brackets/Bracket_Enchantment.md'
