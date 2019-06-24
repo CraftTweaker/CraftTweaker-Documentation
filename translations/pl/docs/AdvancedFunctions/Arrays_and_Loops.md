@@ -104,27 +104,27 @@ Używając hasła `break` możesz zatrzymać pętlę przedwcześnie.
         //definiuje zmienną "item" jako każdy element IArray  (tj. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
         //Teraz po prostu użyj tych zmiennych!
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //Tworzy przedmioty z IArray używając przedmiotów z JArray oraz KArray (tj. Ziema z trawą i drewnianą siekierą, deski z drewnem i złotą łopatą, diament ze sztabką złota i szmaragdem)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //definiuje zmienną "i" jako numery od 0 do 9 (tj. 0,1,2,...,8,9)
         print(i);
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //definiuje zmienną "i" jako każdy numer od 10 do 19 (tj. 10,11,12,...,18,19)
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //definiuje zmienną "item" jako każdy przedmiot dodany przez modyfikacje z modID "minecraft" i usuwa jego receptury wytwarzania
         recipes.remove(item);
     }
     
 
-## While Loop
+## Pętla While
 
 The while loop executes the given code as long as the given condition evaluates to `true`.  
 Alternatively, you can stop it using the `break` keyword.
