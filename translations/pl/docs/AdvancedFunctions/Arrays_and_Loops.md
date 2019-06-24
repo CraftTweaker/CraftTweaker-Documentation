@@ -160,9 +160,9 @@ Alternatywnie, pętle można zatrzymać hasłem `break`.
 
 # Dodawanie zmiennych do tablic
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Chociaż nie jest to rekomendowane, to dodawanie zmiennych do tablic jest możliwe.  
+Dodawać możesz tylko pojedyncze obiekty. Nie możesz dodać do siebie dwóch tablic.  
+Żeby dodać obiekt do tablicy należy użyć operatora `+`:
 
 ```java
 import crafttweaker.item.IItemStack;
