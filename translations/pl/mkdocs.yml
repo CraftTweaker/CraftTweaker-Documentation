@@ -277,13 +277,13 @@ pages:
         - Reskillable:
           - Obsługa nawiasów: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
           - Wsparcie blokowania poziomami: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
-          - Custom Skills: 
-            - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
-            - Full-Scale example: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
-          - Custom Traits: 
-            - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
-            - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
-            - Events:
+          - Własne umiejętności: 
+            - Własne umiejętności: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
+            - Przykład o pełnej skali: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
+          - Własne cechy: 
+            - Własne cechy: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
+            - Informacje o Eventach: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
+            - Eventy:
               - onAttackMob: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onAttackMob.md'
               - onBlockDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBlockDrops.md'
               - onBreakSpeed: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onBreakSpeed.md'
@@ -293,13 +293,13 @@ pages:
               - onMobDrops: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onMobDrops.md'
               - onPlayerTick: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onPlayerTick.md'
               - onRightClickBlock: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events/onRightClickBlock.md'
-          - Mod-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
-          - NBT-Lock Tweaker: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
-          - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
-          - Skill Change Tweaker: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
-          - Skill Hiding: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
-          - Transmutation: 
-            - Default Transmutations: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
+          - Blokowanie modyfikacjami: 'Mods/CompatSkills/Supports/Reskillable/ModLockTweaker.md'
+          - Blokowanie NBT: 'Mods/CompatSkills/Supports/Reskillable/NBTLockTweaker.md'
+          - Zmienianie wymagań: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
+          - Zmiana umiejętności: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
+          - Chowanie umiejętności: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
+          - Transmutacja: 
+            - Domyślne transmutacje: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
             - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
             - Removals: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
             - Clear: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Clear_Tweaker.md'
