@@ -77,9 +77,9 @@ Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujes
 
 # Pętle
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Pętla to funkcja która się sama powtarza. Pętli mozeżesz używać aby wykonać daną akcję dla wszystkich elementów tablicy
 
-## For Loop
+## Pętla For
 
 The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
 You can use the `break` keyword to break the loop prematurely.
