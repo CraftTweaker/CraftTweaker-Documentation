@@ -1,6 +1,6 @@
-# Calculations
+# Obliczenia
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
+Czasami zwykłe wpisanie liczb po prostu nie wystarcza. Sometimes you need some calculation.  
 Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
 
 ## A word of advice
