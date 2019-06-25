@@ -1,7 +1,7 @@
 # Obliczenia
 
-Czasami zwykłe wpisanie liczb po prostu nie wystarcza. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Czasami zwykłe wpisanie liczb po prostu nie wystarcza. Czasem musisz coś obliczyć  
+Pamiętaj, że zawsze możesz użyć więcej niż 2 liczb na raz; `1+1+1+1` będzie działać bez problemów.
 
 ## A word of advice
 
