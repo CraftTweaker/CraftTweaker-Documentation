@@ -1,8 +1,8 @@
-# Split your scripts into multiple files
+# Разделяйте свои скрипты на несколько файлов
 
-It is a good idea to split your script into multiple files
+Это хорошая идея &mdash; делить свои скрипты на несколько файлов
 
-## Problem
+## Проблема
 
 - When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
 - Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
@@ -13,12 +13,12 @@ It is a good idea to split your script into multiple files
 - CraftTweaker can even load files in subfolders.
 - Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
 
-## Solution
+## Решение
 
 - Split your large scripts into multiple smaller ones.
 - You could for example create one script for each mod, or each mod handler.
 
-## Example
+## Пример
 
     scripts
         thermalExpansion
