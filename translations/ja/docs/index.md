@@ -1,0 +1,7 @@
+# Crafttweaker-2
+
+Crafttweaker 2は、MineTwekaer 3の新しいMinecraftのバージョンにおける公式アップデートです。
+
+Crafttweaker 2は、MineTweakerのために作られたスクリプト言語、「ZenScript」を用いてレシピを追加できます。
+
+ZenScriptは初心者向けに設計され、それでいて熟練者がより高度な機能をも取り扱える柔軟性も持ち合わせています。
