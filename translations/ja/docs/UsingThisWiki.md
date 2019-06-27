@@ -1,7 +1,7 @@
-# Using this wiki
+# 当Wikiについて
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+当WikiはCraftTweakerが用意した「型」やそれらの用途に付いての情報の提供を意図しています。  
+より詳細な情報は、それぞれのページに例を交えて説明してあります。
 
 # Terms
 
