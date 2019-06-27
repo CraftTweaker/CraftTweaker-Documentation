@@ -2,7 +2,7 @@
 pages:
   - ホーム: 'index.md'
   - スクリプト入門: 'Getting_Started.md'
-  - Wikiの使い方: 'UsingThisWiki.md'
+  - 当Wikiについて: 'UsingThisWiki.md'
   - コマンド: 'Vanilla/Commands.md'
   - CTGUI: 'Vanilla/CTGUI.md'
   - グローバル関数: 'Vanilla/Global_Functions.md'
