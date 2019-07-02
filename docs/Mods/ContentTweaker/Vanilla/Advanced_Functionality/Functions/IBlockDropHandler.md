@@ -26,8 +26,8 @@ Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 ```
 block.setDropHandler(function(drops, world, position, state) {
 	
-	drops.add(<minecraft:bedrock>);
-	drops.add(<minecraft:carrot> % 50);
+	drops.add(<item:minecraft:bedrock>);
+	drops.add(<item:minecraft:carrot> % 50);
 
 	return;
 });
