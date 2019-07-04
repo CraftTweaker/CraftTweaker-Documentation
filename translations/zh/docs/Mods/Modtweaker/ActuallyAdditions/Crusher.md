@@ -1,16 +1,16 @@
-# Crusher
+# 磨粉机
 
-## Package
+## 所属包名
 
-`mods.actuallyadditions.Crusher`
+`mods.actingllyadditions.Crsher`
 
-## Addition
+## 添加配方
 
-    //mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
+    //mods.actuallyadditions.Crusher.addRecipe(物品输出, 物品输入, 副产物, 输出副产物的几率);
     mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
     
 
-## Removal
+## 删除配方
 
-    //mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);
+    //mods.actuallyadditions.Crusher.removeRecipe(删除该物品的该合成来源);
     mods.actuallyadditions.Crusher.removeRecipe(<minecraft:gold_ore>);
