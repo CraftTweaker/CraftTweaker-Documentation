@@ -1,11 +1,12 @@
 # 矿物词典
 
-Ore Dictionary Requirements are fairly new and requires the player to be holding either in their main-hand or in their off-hand an item with the matching ore-dictionary value.
+矿石词典要求是新的，要求玩家在其主手或副手有一个矿物词典相匹配的物品。
 
-    Example:
-    ore|string
+    错误示例：
+    矿|线
     
-    Working Example:
-    ore|nuggetIron
-    ore|ingotIron
-    ore|oreIron
+    
+    工作示例:
+    矿|铁粒
+    矿|铁锭
+    矿|铁块
