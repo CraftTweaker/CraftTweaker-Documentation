@@ -1,87 +1,87 @@
 # IWorldProvider
 
-The World Provider interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
+World Provider Interfaceは[IWorld](/Vanilla/World/IWorld/)オブジェクトからより多くの情報を取得するために使います。
 
-## Importing the package
+## パッケージをインポートする
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、インポートを追加する必要があります。しかし、問題が発生していなくてもインポートすることをお勧めします。  
 `import crafttweaker.world.IWorldProvider;`
 
-## Create a worldProvider
+## WorldProviderを作る
 
-Normally, you can just get the worldProvider from an [IWorld](/Vanilla/World/IWorld/) object or some functions, though if yo need to create one yourself, here's how you do it:  
-Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
+通常は、[IWorld](/Vanilla/World/IWorld/)オブジェクトまたはいくつかの関数から、worldProviderを習得できますが、自分で作成する場合、以下のようにします。:  
+このメゾットはMinecraft内部で実行されることを意図した関数内で呼び出されるべきで、ロード中には呼び出されないことに注意が必要です。
 
     crafttweaker.world.IWorldProvider.getFromID(int id);
     
 
-## ZenMethods without parameters and ZenGetters
+## パラメータなしのZenMethodsとZenGetters
 
 | ZenGetter              | ZenMethod                   | Return Type                            |
 | ---------------------- | --------------------------- | -------------------------------------- |
-| actualHeight           | getActualHeight()           | int                                    |
-| actualGroundLevel      | getAverageGroundLevel()     | int                                    |
-| cloudHeight            | getCloudHeight()            | float                                  |
-| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float                                  |
-| dimensionID            | getDimensionID()            | int                                    |
-| height                 | getHeight()                 | int                                    |
-| horizon                | getHorizon()                | double                                 |
-| lightBrightnesTable    | getLightBrightnesTable()    | float[]                                |
-| movementFactor         | getMovementFactor()         | double                                 |
+| actualHeight           | getActualHeight()           | int型                                   |
+| actualGroundLevel      | getAverageGroundLevel()     | int型                                   |
+| cloudHeight            | getCloudHeight()            | float型                                 |
+| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float型                                 |
+| dimensionID            | getDimensionID()            | int型                                   |
+| height                 | getHeight()                 | int型                                   |
+| horizon                | getHorizon()                | double型                                |
+| lightBrightnesTable    | getLightBrightnesTable()    | float型[]                               |
+| movementFactor         | getMovementFactor()         | double型                                |
 | randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | String                                 |
-| seed                   | getSeed()                   | long                                   |
+| saveFolder             | getSaveFolder()             | 文字列                                    |
+| seed                   | getSeed()                   | long型                                  |
 | spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| voidFogYFactor         | getVoidFogYFactor()         | double                                 |
-| worldTime              | getWorldTime()              | long                                   |
-| canRespawnHere         | canRespawnHere()            | bool                                   |
-| waterVaporize          | doesWaterVaporize()         | bool                                   |
-| skylight               | hasSkyLight()               | bool                                   |
-| daytime                | isDaytime()                 | bool                                   |
-| nether                 | isNether()                  | bool                                   |
-| skyColored             | isSkyColored()              | bool                                   |
-| surfaceWorld           | isSurfaceWorld()            | bool                                   |
+| voidFogYFactor         | getVoidFogYFactor()         | double型                                |
+| worldTime              | getWorldTime()              | long型                                  |
+| canRespawnHere         | canRespawnHere()            | bool型                                  |
+| waterVaporize          | doesWaterVaporize()         | bool型                                  |
+| skylight               | hasSkyLight()               | bool型                                  |
+| daytime                | isDaytime()                 | bool型                                  |
+| nether                 | isNether()                  | bool型                                  |
+| skyColored             | isSkyColored()              | bool型                                  |
+| surfaceWorld           | issurfaceWorld()            | bool型                                  |
 
-## ZenMethods with parameters
+## パラメータ付きのZenMethods
 
-### get Biome at a certain Position
+### 特定の位置のバイオームを取得
 
-Use either an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
+[IBlockPos](/Vanilla/World/IBlockPos/)オブジェクトを使ってください。  
+[IBiome](/Vanilla/Biomes/IBiome/)オブジェクトを返します。
 
     worldProvObj.getBiome(IBlockPos position);
     
 
-### get MoonPhase for a specific time
+### 特定の時間のMoonPhaseを取得
 
-Use a long.  
-Returns an int.
+Long型を使ってください。  
+int型を返します。
 
     worldProvObj.getMoonPhase(long time);
     
 
-### get Respawn Dimension for a specific player
+### 特定のプレイヤーのRespawn Dimensionを取得する
 
-Use an [IPlayer](/Vanilla/Players/IPlayer/) object.  
-Returns a new IWorldProvider object.
+[IPlayer](/Vanilla/Players/IPlayer/)オブジェクトを使ってください。  
+新しいIWorldProviderオブジェクトで返されます。
 
     worldProvObj.getRespawnDimension(IPlayer player);
     
 
-### get Brightnes (factor) at a specific
+### 特定のBrightnes(factor) を取得
 
-Use a float.  
-Returns a float.
+Float型を使ってください。  
+float型で返されます。
 
     worldProvObj.getStarBrightness(float something);
     worldProvObj.getSunBrightness(float something);
     worldProvObj.getSunBrightnessFactor(float something);
     
 
-### Check if a block has a high humidity
+### ブロックの湿度が高いかを確認する
 
-Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns a boolean.
+[IBlockPos](/Vanilla/World/IBlockPos/)オブジェクトを使ってください。  
+boolean型で返されます。
 
     worldProvObj.isBlockHighHumidity(IBlockPos pos);
