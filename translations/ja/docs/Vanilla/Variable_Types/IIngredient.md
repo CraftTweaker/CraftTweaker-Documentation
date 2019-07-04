@@ -1,29 +1,29 @@
 # IIngredient
 
-An IIngredient is an ingredient for recipes.  
-This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
+IIngredientは、レシピの素材です。  
+これは、[アイテム](/Vanilla/Items/IItemStack/)、[鉱石辞書](/Vanilla/OreDict/IOreDictEntry/)、[液体](/Vanilla/Liquids/ILiquidStack/)が含まれます。
 
-## Importing the package
+## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+問題が発生した場合は、インポートを追加する必要があります(例えば[Array型](/AdvancedFunctions/Arrays_and_Loops/)にキャストする)。しかし、問題が発生していなくてもインポートすることをお勧めします。  
 `import crafttweaker.item.IIngredient;`
 
-## Importing the IIngredient package
+## IIngredientパッケージをインポートする
 
-Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import/) the IIngredient package.  
-You can do this using the following import:
+普段必要ではないですが、場合によってはIIngredientパッケージを[インポート](/AdvancedFunctions/Import/)するまでレシピが機能しない場合があります。  
+インポートするには、次の文を使います。
 
     import crafttweaker.item.IIngredient;
     
 
-## Functions
+## 関数
 
-So, what can we do with this?
+では、これで何が出来るのでしょうか。
 
-### Command String
+### コマンド文字列
 
-The command string is how you would call this item in ZS.  
-This can be a bracket handler or something similar.
+コマンド文字列は、ZSでこのアイテムを呼び出す方法です。  
+それは、ブラケット構文と似たようなものです。
 
     val item = <minecraft:iron_ingot>;
     
@@ -31,9 +31,9 @@ This can be a bracket handler or something similar.
     print(item.commandString);
     
 
-### Mark
+### マーク
 
-You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/). You can also retrieve the mark applied earlier.
+IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/)において使用できるようにできます。 以前に適応されたMarkを取得することもできます。
 
     //Marks the pick with the String Picky
     //item.marked(name) <-- Name is a string!
@@ -43,11 +43,11 @@ You can mark an IIngredient so you can later use it in [crafting functions](/Van
     print(markedPick.mark);
     
 
-### Amount
+### 個数
 
-If you want to use more than one of a given item, you can set an amount to an IIngredient.  
-This is as easy as multiplying the IIngredient with an Integer.  
-Retrieveing the amount is also possible.
+あるアイテムを複数個として使用する場合、IIngredientに個数を指定します。  
+これはとても簡単で、IIngredient型に整数型を掛けてあげればできます。  
+個数を取得することもできます。
 
     val multipleApples = <minecraft:apple> * 3;
     
@@ -55,9 +55,9 @@ Retrieveing the amount is also possible.
     print(multipleApples.amount);
     
 
-### OR-ing an IIngredient
+### IIgredientのユニオン化
 
-Sometimes you want either IIngredient X or Y, but don't want to create a recipe for each possibility? That's why there's the OR Method for IIngredients:
+時折、IIngredientのXとYの両方が使えるレシピを作りたいと思ったことはありませんか? そのことが、IIngredientにORメソッドが用意されている理由です。
 
     val item1 = <minecraft:apple>;
     val item2 = <minecraft:carrot>;
@@ -66,11 +66,11 @@ Sometimes you want either IIngredient X or Y, but don't want to create a recipe 
     val either2 = item1.or(item2);
     
 
-### Get Possible Items or Liquids
+### 取得可能なアイテム・液体の取得
 
-Sometimes an IIngredient represents more than one item, for example if you are using an [OreDictEntry](/Vanilla/OreDict/IOreDictEntry/) or if you OR-ed two Ingredients.  
-You can get all possible items for this IIngredient as a List<[IItemStack](/Vanilla/Items/IItemStack/)> List using the first function.  
-The second function does the same as the first function but returns a [IItemStack](/Vanilla/Items/IItemStack/)[] instead of a list. Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) List.
+往々にしてIIngredientは複数のアイテムを表すことがあり、例えば、あなたが[OreDictEntry](/Vanilla/OreDict/IOreDictEntry/)を使用したり、2つのアイテムをユニオン化した場合が該当します。  
+全ての入手可能なIIngredientは、最初に提示された関数を通してList&lt;[IItemStack](/Vanilla/Items/IItemStack/)&gt;という形のリストとして取得できます。  
+2番めに提示された関数は最初に提示された関数と似た働きをしますが、Listの代わりに[IItemStack](/Vanilla/Items/IItemStack/)[]を返します。 3番めに提示された液体に関する関数にも同じことが言えますが、これは[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)のリストを返します。
 
     //Returns an IItemStack List
     //possible items: All iron ingots and the gold ingot from MC
@@ -104,35 +104,35 @@ The second function does the same as the first function but returns a [IItemStac
     }
     
 
-### Transform an IIngredient upon crafting
+### クラフト時のIIngredientの変換
 
-Sometimes you want an item not to be consumed upon crafting but instead receive damaged or give back a completely different item.  
-This is what item Transformers are there for.
+クラフトにおいて、アイテムを消費する代わりに、ダメージ値が変動したり別のアイテムに変わるようにしたいときがあなたにもあると思います。  
+そのときには、Transformerを使いましょう。
 
     <br />val item = &lt;minecraft:apple&gt;;
     
-    //Item won't be consumed and will stay in the grid
+    //アイテムはクラフティンググリッド上に残ります
     transformedItem = item.reuse();
     
-    //Item won't be consumed and the whole stack will be given back to you (does /give).
+    //アイテムは消費されず、プレイヤーの手元に返ります
     transformedItem = item.giveBack();
     
-    //item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
+    //アイテムを消費し、指定したアイテムをプレイヤーに与えます(クラフティンググリッドはクリアされます)
     transformedItem = item.giveBack(&lt;minecraft:potato&gt;);
     
-    //item will be replaced with the specified item, which will instead go to the crafting slot
+    //クラフティンググリッド上にて、アイテムを指定したアイテムに置き換えます
     transformedItem = item.transformReplace(&lt;minecraft:potato&gt;);
     
-    //damages the item by 1
+    //アイテムにダメージを1与えます
     transformedItem = item.transformDamage();
     
-    //damages the item by the given value
+    //アイテムにダメージを指定した量与えます
     transformedItem = item.transformDamage(3);
     
-    //item will be consumed, no matter what.
+    //アイテムは消費されます。それ以外は起きません
     transformedItem = item.noReturn();
     
-    //Causes multiple items to be consumed.
+    //複数のアイテムが消費されます
     transformedItem = item.transformConsume(3);
     
 
