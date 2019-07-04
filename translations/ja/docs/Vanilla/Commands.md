@@ -1,263 +1,263 @@
-# Commands
+# コマンド
 
-Crafttweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+CraftTwealerはスクリプト作成を手助けするコマンドを追加します。これらのコマンドはスクリプトの開発時間を短くするために提供されています。
 
-The prefix for commands are: `/crafttweaker` or `/ct`
+コマンドは次のものが最初に付きます。 `/crafttweaker` または `/ct`
 
-You can also use one of these aliases: `/minetweaker` or `/mt`
+別名として、次のコマンドも使えます。 `/minetweaker` または `/mt`
 
-All the commands can be found ingame by doing:
+次のコマンドは、全てのCraftTweakerコマンドを探すことができます。
 
 `/crafttweaker help`
 
-or
+もしくは
 
 `/ct help`
 
-# List of commands
+# コマンド一覧
 
 ## Biomes
 
-Usage:
+使い方:
 
 `/crafttweaker biomes`
 
 `/ct biomes`
 
-Description:
+説明:
 
-Lists all of the biomes that are in the game.
+ゲーム内の全てのバイオームをリストアップします。
 
 ## BiomeTypes
 
-Usage:
+使い方:
 
 `/crafttweaker biomeTypes`
 
 `/ct biomeTypes`
 
-Description:
+説明:
 
-Lists all of the biomeTypes that are in the game.
+ゲーム内の全てのバイオームタイプをリストアップします。
 
 ## BlockInfo
 
-Usage:
+使い方:
 
 `/crafttweaker blockinfo`
 
 `/ct blockinfo`
 
-Description:
+説明:
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+ブロック情報の読み取りを有効化・無効化します。 ブロック情報の読み取りモードでは、ブロックを右クリックすると名前を、また、取得できればメタデータやタイルエンティティデータも表示します。
 
 ## Blocks
 
-Usage:
+使い方:
 
 `/crafttweaker blocks`
 
 `/ct blocks`
 
-Description:
+説明:
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+ゲーム内の全てのブロックのリストをcrafttweaker.logファイルへ出力します。
 
 ## Bugs
 
-Usage:
+使い方:
 
 `/crafttweaker bugs`
 
 `/ct bugs`
 
-Description:
+説明:
 
-Opens your browser with the GitHub bug tracker.
+GitHubのバグトラッカーを規定のブラウザで開きます。
 
 ## Conflict
 
-Usage:
+使い方:
 
 `/crafttweaker conflict`
 
 `/ct conflict`
 
-Description:
+説明:
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+重複した作業台のレシピをcrafttweaker.logファイルに出力します。  
+JEIが導入されたクライアントでしか動作しません。
 
 ## Discord
 
-Usage:
+使い方:
 
 `/crafttweaker discord`
 
 `/ct discord`
 
-Description:
+説明:
 
-Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
+あなたのブラウザで[Discordのサーバーリンク](https://www.discord.blamejared.com)を開きます
 
 ## Docs
 
-Usage:
+使い方:
 
 `/crafttweaker docs`
 
 `/ct docs`
 
-Description:
+説明:
 
-Opens your browser to this docs page (same as `/ct wiki`).
+このWikiを規定のブラウザで開きます(`/ct wiki`でもできます)。
 
 ## DumpZs
 
-Usage:
+使い方:
 
 `/crafttweaker dumpzs`
 
 `/ct dumpzs`
 
-Description:
+説明:
 
-Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
-The targets can be found using auto-complete (tab key).  
-By default `log`, `html` and `json` are registered as targets.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+Minecraftのディレクトリ下のcrafttweaker_dumpフォルダにZenscriptダンプをHTMLの形式で出力します  
+連続してダンプする対象を1つ以上指定できます(2つ対象を指定すると、2回ダンプが実行されます)。  
+ダンプする対象は自動補完で選ぶことができます(タブキーを使用)。  
+デフォルトでは`log`と`html`、そして`json`がターゲットとして指定されています。  
+全ての登録済みブラケット構文、ZenType、グローバル関数、ZenExpansionsとそれらのメソッドを含む全ての登録されたパッケージがそれに含まれます。  
+スクリプト内でこれら全てが使用できるわけではないことに注意してください。
 
 ## Entities
 
-Usage:
+使い方:
 
 `/crafttweaker entities`
 
 `/ct entities`
 
-Description:
+説明:
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+ゲーム内の全てのエンティティのリストをcrafttweaker.logファイルへ出力します。
 
 ## Give Item
 
-Usage:
+使い方:
 
 `/crafttweaker give <minecraft:bedrock>`
 
 `/ct give <minecraft:bedrock>`
 
-Description:
+説明:
 
-Gives the player the item using CrT's Bracket handler syntax.  
-You can also apply tags by appending a `.withTag()` call.  
-Note that this is a pretty simple parser and may not work for every case!
+Crafttweakerのブラケット構文を利用し、プレイヤーにアイテムを渡すことができます。  
+`.withTag()`を呼び出してタグに適応することもできます。  
+これはかなり単純で、すべての場合にうまくいくとは限らないので注意してください。
 
 ## Hand
 
-Usage:
+使い方:
 
 `/crafttweaker hand`
 
 `/ct hand`
 
-Description:
+説明:
 
-Prints the name of the item in your hand to the chat.
+手に持っているアイテムの名前をチャットに表示します。
 
-Also copies the name to clipboard and prints oredict entries.
+また、名前をコピーしたり、鉱石辞書を出力できます。
 
 ## Inventory
 
-Usage:
+使い方:
 
 `/crafttweaker inventory`
 
 `/ct inventory`
 
-Description:
+説明:
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+インベントリの中の全てのアイテムのリストをcrafttweaker.logファイルへ出力します。
 
 ## JeiCategories
 
-Usage:
+使い方:
 
 `/crafttweaker jeiCategories`
 
 `/ct jeiCategories`
 
-Description:
+説明:
 
-Outputs a list of all registered jei categories to the crafttweaker.log file.  
-Requires JEI to be installed (surprise)!
+ゲーム内の全てのJEIカテゴリをcrafttweaker.logへ出力します。  
+JEIがインストールされている必要があります。
 
 ## Json
 
-Usage:
+使い方:
 
 `/crafttweaker json` `/crafttweaker json escaped`
 
 `/ct json` `/ct json escaped`
 
-Description:
+説明:
 
-Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting Crafttweaker uses.  
-You can click it to be copied to your clipboard.  
-You can also privide the `escaped` argumetn to automatically escape the resulting string.
+手に持っているアイテムのNBT情報をゲーム内チャット欄にJSONフォーマットで出力します。  
+このフォーマットはCrafttweakerのIDataのフォーマットとは違うことに注意してください。  
+クリックするとクリップボードへコピーできます。  
+`escaped`を引数に渡せば、自動で文字列をエスケープ処理してくれます。
 
 ## Liquids
 
-Usage:
+使い方:
 
 `/crafttweaker liquids`
 
 `/ct liquids`
 
-Description:
+説明:
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+ゲーム内の全ての液体のリストをcrafttweaker.logファイルに出力します。
 
 ## Log
 
-Usage:
+使い方:
 
 `/crafttweaker log`
 
 `/ct log`
 
-Description:
+説明:
 
-Sends a clickable link to open the crafttweaker.log.
+クリックできるcrafttweaker.logを開くリンクを出力します。
 
 ## Mods
 
-Usage:
+使い方:
 
 `/crafttweaker mods`
 
 `/ct mods`
 
-Description:
+説明:
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+インストールされている全てのModとそのバージョンのリストをcrafttweaker.logとゲーム内チャット欄に出力します。
 
 ## Names
 
-Usage:
+使い方:
 
 `/crafttweaker names [category]`
 
 `/ct names [category]`
 
-Description:
+説明:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+ゲーム内の全てのアイテムのリストをcrafttweaker.logファイルへ出力します。  
+任意の引数`category`に以下の値を指定することで、対応する情報でリストを拡張します。
 
 * burntime
 * creativetabs
@@ -275,49 +275,49 @@ The `category` argument is optional and will extend the list with the according 
 * saturationvalue
 * unloc
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+TABキーでの自動補完機能にて、利用可能な全てのパラメータを確認することもできます。
 
 ## Nbt
 
-Usage:
+使い方:
 
 `/crafttweaker nbt`
 
 `/ct nbt`
 
-Description:
+説明:
 
-Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
+手に持ったアイテムか、フォーカスしているブロックのNBTデータをcrafttweaker.logファイルへ出力します。
 
 ## OreDict
 
-Usage:
+使い方:
 
 `/crafttweaker oredict <name>`
 
 `/ct oredict <name>`
 
-Description:
+説明:
 
-Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
+ゲーム内の全ての鉱石辞書の項目のリストをcrafttweaker.logファイルへ出力します。
 
-If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
+&lt;name&gt;に値が渡された場合、その鉱石辞書名に対応するアイテムを全てcrafttweaker.logファイルへ出力します。
 
 ## Potions
 
-Usage:
+使い方:
 
 `/crafttweaker potions`
 
 `/ct potions`
 
-Description:
+説明:
 
-Outputs a list of all the potions in the game to the crafttweaker.log file.
+ゲーム内の全てのポーションのリストをcrafttweaker.logファイルへ出力します。
 
 ## RecipeNames
 
-Usage:
+使い方:
 
 `/crafttweaker recipeNames`  
 `/crafttweaker recipeNames [modid]`
@@ -325,104 +325,104 @@ Usage:
 `/ct recipeNames`  
 `/ct recipeNames [modid]`
 
-Description:
+説明:
 
-Outputs a list of all recipe names in the game to the crafttweaker.log file.  
-A modid can be provided to filter results.
+ゲーム内の全てのレシピ名をcrafttweaker.logファイルへ出力します。  
+引数&lt;modid&gt;で結果をフィルタリングできます。
 
 ## Recipes
 
-Usage:
+使い方:
 
 `/crafttweaker recipes`
 
 `/ct recipes`
 
-Description:
+説明:
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+ゲーム内の全てのクラフトレシピのリストをcrafttweaker.logファイルへ出力します。
 
-## Recipes (Hand)
+## Recipes (手持ちのアイテム)
 
-Usage:
+使い方:
 
 `/crafttweaker recipes hand`
 
 `/ct recipes hand`
 
-Description:
+説明:
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+プレイヤーが手に持っているアイテムの全てのクラフトレシピのリストをcrafttweaker.logファイルへ出力します。
 
-## Recipes (Furnace)
+## Recipes (かまど)
 
-Usage:
+使い方:
 
 `/crafttweaker recipes furnace`
 
 `/ct recipes furnace`
 
-Description:
+説明:
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+ゲーム内の全てのかまどレシピのリストをcrafttweaker.logファイルへ出力します。
 
 ## Scripts
 
-Usage:
+使い方:
 
 `/crafttweaker scripts`
 
 `/ct scripts`
 
-Description:
+説明:
 
-Sends a clickable link to open the scripts directory.  
-Can also be executed from a command line which instead prints the absolute path to the directory to the log.
+スクリプトがあるディレクトリへのクリック可能なリンクを出力します。  
+コマンドラインから、ディレクトリの絶対パスのログへの出力も可能です。
 
 ## Seeds
 
-Usage:
+使い方:
 
 `/crafttweaker seeds`
 
 `/ct seeds`
 
-Description:
+説明:
 
-Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+インベントリの中の全ての種のリストをcrafttweaker.logファイルへ出力します。
 
 ## Syntax
 
-Usage:
+使い方:
 
 `/crafttweaker syntax`
 
 `/ct syntax`
 
-Description:
+説明:
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+すべてのスクリプトを読み、見つけたすべてのエラーを出力します。 このコマンドではスクリプトの変更は適応されません。ゲームを再起動しなければ効果は適応されません。
 
 ## Wiki
 
-Usage:
+使い方:
 
 `/crafttweaker wiki`
 
 `/ct wiki`
 
-Description:
+説明:
 
-Opens your browser to this wiki page (same as `/ct docs`).
+あなたのブラウザでこのWikiを開きます(`/ct docs`でもできます)
 
 ## ZsLint
 
-Usage:
+使い方:
 
 `/crafttweaker zslint`
 
 `/ct zslint`
 
-Description:
+説明:
 
-Starts the zslint socket.
+zslintのソケットを開始します。
