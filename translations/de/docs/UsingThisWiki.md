@@ -10,7 +10,7 @@ Bevor wir beginnen, hier sind ein paar wichtige Begriffe, die man kennen sollte:
 ## ZenGetter
 
 Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat einen ZenGetter mit dem Namen "displayName".   
-Ein ZenGetter wird so benutzt:
+So verwendet man einen ZenGetter:
 
     //objekt.zenGetter;
     <minecraft:iron_ingot>.displayName;
@@ -20,18 +20,18 @@ Ein ZenGetter wird immer etwas zurückliefern, in diesem Fall eine Zeichenkette 
 
 ## ZenSetter
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+Der "ZenSetter" ist sozusagen das Gegenstück des ZenGetters, mit dem ZenSetter kann man die Daten verschiedener Objekte verändern.  
+Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat auch einen ZenSetter namens "displayName". Dieser ZenSetter ist auch wieder eine Zeichenkette.
 
-We use the ZenSetter like this:
+So verwendet man einen ZenSetter:
 
-    //object.zenSetter = newValue;
-    <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
+    //objekt.zenSetter = neuerWert;
+    <minecraft:iron_ingot>.displayName = "Irgendein Barren";
     
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+Ein ZenSetter liefert nichts zurück, er verändert nur das gegebene Objekt.
 
-## Assign operators
+## Zuweisungsoperatoren
 
 If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
 
