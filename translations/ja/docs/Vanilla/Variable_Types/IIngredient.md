@@ -136,34 +136,34 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
     transformedItem = item.transformConsume(3);
     
 
-### Ingredient Conditions
+### 素材の状態設定
 
-あなたは時折アイテムに指定したタグがあったり、ダメージ値が設定されている(いない)場合にのみ動作するようにしたいと思うでしょう。 こういった条件は、次の構文を用いてアイテムに追加することができます。
+あなたは時折素材に指定したタグがあったり、ダメージ値が設定されている(いない)場合にのみ動作するようにしたいと思うでしょう。 こういった条件は、次の構文を用いて素材に追加することができます。
 
     val item = <minecraft:apple>;
     
-    //最低1以上のダメージ値を有するアイテムにのみ有効
+    //最低1以上のダメージ値を有する素材にのみ有効
     var conditionedItem = item.onlyDamaged();
     
-    //指定した値以上のダメージ値を有するアイテムにのみ有効
+    //指定した値以上のダメージ値を有する素材にのみ有効
     conditionedItem = item.onlyDamageAtLeast(10);
     
-    //指定した値以下のダメージ値を有するアイテムにのみ有効
+    //指定した値以下のダメージ値を有する素材にのみ有効
     conditionedItem = item.onlyDamageAtMost(100);
     
-    //それぞれ最初の値 ≦ x ≦ 2番めの値となるダメージ値を有するアイテムのみ有効
+    //それぞれ最初の値 ≦ x ≦ 2番めの値となるダメージ値を有する素材のみ有効
     conditionedItem = item.onlyDamageBetween(10,100);
     
-    //指定したタグを有するアイテムにのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
+    //指定したタグを有する素材にのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
     //JEIのレシピ画面にタグを表示させたい場合、"withTag(tag)"を使用してタグを追加する必要があります。
     conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
     
-    //指定したタグを有するアイテムにのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
+    //指定したタグを有する素材にのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
     //注意: アイテムを表すものではうまくいきますが、それ以外で確実に動くわけではありません JEIがレシピ上にタグを表示することが、これを用いる上での長所です
     conditionedItem = item.withTag({display: {Name: "Tomato"}});
     
-    //Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
-    //Note that if you only add this, it will still consume only one item per craft.
+    //指定した量の素材のみ有効 主にTransformerと組み合わせて使用されます
+    //注意: これを追加するだけでは、依然として1回のクラフト時つき1つのアイテムしか消費されません
     conditionedItem = item.onlyStack(32);
     
 
