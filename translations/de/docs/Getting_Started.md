@@ -12,13 +12,13 @@ Zusätzlich zur Hauptfunktionalität, welche den Support für Minecraft Vanilla 
 
 ## Skripte
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+Skripte werden im Ordner `<minecraftdir>/scripts` gespeichert und werden in der `PreInitialization`-Phase von Minecraft geladen. Leider können seit Minecraft Version 1.12 Skripte nicht mehr neu geladen werden, wie es bei früheren Versionen von CraftTweaker möglich war. Außerdem müssen Skripte **sowohl auf dem Server, als auch auf dem Client** vorhanden sein, damit diese Funktionieren!
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+Skriptdateien haben die Endung `.zs` und können auch in eine `.zip`-Datei gepackt werden.
 
-### Writing your first script
+### Dein allererstes Skript
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+Für einen schnellen Einstieg, kannst du eine simple Datei mit dem Namen `hallo.zs` im Ordner `<minecraftdir>/scripts>` erstellen.
 
 In `hello.zs` put the following line
 
