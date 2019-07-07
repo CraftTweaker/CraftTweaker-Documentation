@@ -154,11 +154,11 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
     //それぞれ最初の値 ≦ x ≦ 2番めの値となるダメージ値を有するアイテムのみ有効
     conditionedItem = item.onlyDamageBetween(10,100);
     
-    //指定したタグを有するアイテムにのみ有効 指定したものより多かったり別のタグを有していても、同じく扱われます
-    //If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
+    //指定したタグを有するアイテムにのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
+    //JEIのレシピ画面にタグを表示させたい場合、"withTag(tag)"を使用してタグを追加する必要があります。
     conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
     
-    //Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+    //指定したタグを有するアイテムにのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
     //Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will show the tags in the recipe!
     conditionedItem = item.withTag({display: {Name: "Tomato"}});
     
