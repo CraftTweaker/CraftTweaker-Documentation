@@ -1,4 +1,4 @@
-# Dieses Wiki nutzen
+# Inhalt dieses Wikis
 
 This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
 There also are some examples in certain entries to provide further clarity.
