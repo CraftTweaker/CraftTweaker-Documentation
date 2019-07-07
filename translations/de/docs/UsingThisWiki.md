@@ -35,12 +35,12 @@ Ein ZenSetter liefert nichts zurück, er verändert nur das gegebene Objekt.
 
 Wenn ein Item sowohl einen ZenGetter als auch einen ZenSetter mit dem gleichen Namen hat (wie [IItemStack](/Vanilla/Items/IItemStack/) mit "displayName"), kann man auch andere Operatoren als `=` verwenden.
 
-Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
-Let's see what they do:
+Je nach Fall, kann man einen dieser Operatoren nutzen: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
+Schauen wir, was die jeweiligen Operatoren bedeuten:
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
+    //Da wir einen ZenSetter und einen ZenGetter mit dem gleichen Namen haben, verhalten sich die beiden folgenden Zeilen identisch:
+    //objekt.zenSetter += wert;
+    //objekt.zenSetter = objekt.zenGetter + wert;
     
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+    <minecraft:iron_ingot>.displayName += " des Todes";
+    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " des Todes";
