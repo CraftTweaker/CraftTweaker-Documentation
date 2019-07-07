@@ -1,22 +1,22 @@
 # Inhalt dieses Wikis
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+Dieses Wiki soll einen kleinen Überblick darüber geben, wie man die verschiedenen Funktionen von CraftTweaker nutzt.  
+Um alles möglichst anschaulich darzustellen, sind oft kleinere Beispiele vorhanden.
 
-# Terms
+# Begriffe
 
-Before we start, there are some terms you might want to get used to:
+Bevor wir beginnen, hier sind ein paar wichtige Begriffe, die man kennen sollte:
 
 ## ZenGetter
 
-A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
-We use the ZenGetter like this:
+Mit einem "ZenGetter" kannst du von bestimmten Objekten verschiedene Informationen abrufen. Beispiel: [IItemStack](/Vanilla/Items/IItemStack/) hat einen ZenGetter mit dem Namen "displayName".   
+Ein ZenGetter wird so benutzt:
 
-    //object.zenGetter;
+    //objekt.zenGetter;
     <minecraft:iron_ingot>.displayName;
     
 
-A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
+Ein ZenGetter wird immer etwas zurückliefern, in diesem Fall eine Zeichenkette ("String"), welche den Namen des Items enthält ("Iron Ingot").
 
 ## ZenSetter
 
