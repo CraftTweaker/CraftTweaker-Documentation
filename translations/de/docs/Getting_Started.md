@@ -20,43 +20,43 @@ Skriptdateien haben die Endung `.zs` und können auch in eine `.zip`-Datei gepac
 
 Für einen schnellen Einstieg, kannst du eine simple Datei mit dem Namen `hallo.zs` im Ordner `<minecraftdir>/scripts>` erstellen.
 
-In `hello.zs` put the following line
+In diese Datei packst du die folgende Zeile:
 
-    print("Hello world!");
+    print("Hallo Welt!");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+Nun kannst du Minecraft starten und dir die Datei `crafttweaker.log` anschauen.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+Die Datei `crafttweaker.log` findest du in `<minecraftdir>` und kann von jedem Texteditor gelesen werden.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Zum bearbeiten der Skripte empfehlen wir die Texteditoren Notepad++ oder Sublime Text, wobei jeder Texteditor funktionieren sollte.
 
-### The crafttweaker.log file
+### Die crafttweaker.log-Datei
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Die `crafttweaker.log` verwendet eine bestimmte Syntax, welche ungefähr so aussieht:
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
 
-Using the example above, the output would be:
+Im Falle des vorherigen Beispiels, wird dort folgendes stehen:
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] Hallo Welt!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+Die Syntax wird zu Debugging-Zwecken genutzt und wird in der Regel auch überall verwendet.
 
-### Comments
+### Kommentare
 
-Comments can be used to make your script files more readable and easier to understand!
+Mit Kommentaren kannst du deine Skripte besser lesbarer und verständlicher machen!
 
-ZenScript supports 3 types of comments, being:
+ZenScript unterstütz drei verschiedene Arten von Kommentaren:
 
-Single line: `// I'm a single line comment!`
+Einzeilig: `// Ich bin ein einzeiliger Kommentar!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Alternativ einzeilig: `# Ich bin auch ein einzeiliger Kommentar!`
 
-Multiline:
+Mehrzeilig:
 
-    /* I'm 
-    a
-    multiline comment! */
+    /* Ich bin
+    ein mehrzeiliger
+    Kommentar! */
