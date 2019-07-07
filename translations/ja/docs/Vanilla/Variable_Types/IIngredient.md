@@ -159,7 +159,7 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
     conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
     
     //指定したタグを有するアイテムにのみ有効 指定したものより多いタグ、別のタグは無視してチェックされます
-    //Note: This may not work with all ingredients, but it will work for Items. Pro side to using this is that JEI will show the tags in the recipe!
+    //注意: アイテムを表すものではうまくいきますが、それ以外で確実に動くわけではありません JEIがレシピ上にタグを表示することが、これを用いる上での長所です
     conditionedItem = item.withTag({display: {Name: "Tomato"}});
     
     //Item will only be accepted if in a Stack of at least the specified amount. Mostly used in combination with the consume transformer.
