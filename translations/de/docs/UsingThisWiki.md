@@ -33,7 +33,7 @@ Ein ZenSetter liefert nichts zurück, er verändert nur das gegebene Objekt.
 
 ## Zuweisungsoperatoren
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+Wenn ein Item sowohl einen ZenGetter als auch einen ZenSetter mit dem gleichen Namen hat (wie [IItemStack](/Vanilla/Items/IItemStack/) mit "displayName"), kann man auch andere Operatoren als `=` verwenden.
 
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
