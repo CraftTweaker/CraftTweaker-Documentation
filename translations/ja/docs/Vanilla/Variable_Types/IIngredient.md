@@ -1,11 +1,11 @@
 # IIngredient
 
 IIngredientは、レシピの素材です。  
-これは、[アイテム](/Vanilla/Items/IItemStack/)、[鉱石辞書](/Vanilla/OreDict/IOreDictEntry/)、[液体](/Vanilla/Liquids/ILiquidStack/)が含まれます。
+これ一つで、[アイテム](/Vanilla/Items/IItemStack/)、[鉱石辞書](/Vanilla/OreDict/IOreDictEntry/)、[液体](/Vanilla/Liquids/ILiquidStack/)を扱えます。
 
 ## パッケージのインポート
 
-問題が発生した場合は、インポートを追加する必要があります(例えば[Array型](/AdvancedFunctions/Arrays_and_Loops/)にキャストする)。しかし、問題が発生していなくてもインポートすることをお勧めします。  
+何らかの問題が発生した場合([配列](/AdvancedFunctions/Arrays_and_Loops/)へのキャストなど)には、インポート必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。  
 `import crafttweaker.item.IIngredient;`
 
 ## IIngredientパッケージをインポートする
@@ -138,7 +138,7 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
 
 ### Ingredient Conditions
 
-Sometimes you want your ingredient to have a specific tag or to only work if (not) damaged. These Conditions can be added to your Ingredients using the following:
+あなたは時折アイテムに指定したタグがあったり、ダメージ値が設定されている(いない)場合にのみ動作するようにしたいと思うでしょう。 こういった条件は、次の構文を用いてアイテムに追加することができます。
 
     val item = <minecraft:apple>;
     
