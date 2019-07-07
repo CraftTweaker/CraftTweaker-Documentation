@@ -142,19 +142,19 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
 
     val item = <minecraft:apple>;
     
-    //Item will only be accepted with at least 1 point damage
+    //最低1以上のダメージ値を有するアイテムにのみ有効
     var conditionedItem = item.onlyDamaged();
     
-    //Item will only be accepted with at least the specified damage points
+    //指定した値以上のダメージ値を有するアイテムにのみ有効
     conditionedItem = item.onlyDamageAtLeast(10);
     
-    //Item will only be accepted with at most the specified damage points
+    //指定した値以下のダメージ値を有するアイテムにのみ有効
     conditionedItem = item.onlyDamageAtMost(100);
     
-    //Item will only be accepted with damage points greater or equal as the first and lesser or equal as the 2nd Integer.
+    //それぞれ最初の値 ≦ x ≦ 2番めの値となるダメージ値を有するアイテムのみ有効
     conditionedItem = item.onlyDamageBetween(10,100);
     
-    //Item will only be accepted with the specified Tag. The item may have more/other tags than specified, those are ignored when checked.
+    //指定したタグを有するアイテムにのみ有効 指定したものより多かったり別のタグを有していても、同じく扱われます
     //If you want JEI to show the tag in the recipe screen, you'll need to add a tag using "withTag(tag)"
     conditionedItem = item.onlyWithTag({display: {Name: "Tomato"}});
     
