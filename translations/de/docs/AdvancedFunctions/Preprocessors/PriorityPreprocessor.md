@@ -1,8 +1,8 @@
-# PriorityPreprocessor
+# Prioritäts-Preprozessor
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+Mit diesem Präprozessor kannst du deinen Skripten verschiedene Prioritäten zuweisen.
 
-## Call
+## Einbinden
 
 You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
 
