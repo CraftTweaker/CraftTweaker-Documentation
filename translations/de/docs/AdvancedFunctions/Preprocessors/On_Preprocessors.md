@@ -1,6 +1,6 @@
-# On Preprocessors
+# Über Präprozessoren
 
-## What are preprocessors
+## Was sind Präprozessoren?
 
 As the name suggests, preprocessors are executed before the script is executed.  
 They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
