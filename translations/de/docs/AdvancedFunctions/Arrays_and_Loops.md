@@ -158,11 +158,11 @@ Alternativ kannst du die While-Schleife auch mit dem `break`-Schlüsselwort vorz
     }
     
 
-# Adding items to an Array
+# Elemente in ein Array hinzufügen
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Auch wenn es nicht empfehlenswert ist, kann man nachträglich Elemente an ein Array anhängen.  
+Man kann nur einzelne Elemente an ein Array anhängen, zwei Arrays addieren ist nicht möglich.  
+Dazu kannst du den Operator `+` verwenden:
 
 ```java
 import crafttweaker.item.IItemStack;
