@@ -1,17 +1,17 @@
-# ModLoaderPreprocessor
+# Modbasierter Präprozessor
 
-The modLoaded Preprocessor only executes a script, if a certain mod is present.
+Dieser Präprozessor führt ein Skript nur aus, wenn eine bestimmte Mod geladen wurde.
 
-## Call
+## Einbinden
 
-You call the modLoaded Preprocessor by adding `#modloaded modID` to your script file, with `modID` being the modId you want to check for:  
-Example: `#modloaded minecraft`
+Du bindest diesen Präprozessor ein, indem du `#modloaded modID` in dein Skript schreibst, wobei `modID` für die jeweilige Mod-ID steht, auf welche du prüfen möchtest.  
+Beispiel: `#modloaded minecraft`
 
-You can also provide multiple modID's:  
-`#modloaded minecraft tconstruct` will only be executed if minecraft AND tconstruct are loaded.
+Du kannst auch mehrere Mod-IDs gleichzeitig prüfen:  
+`#modloaded minecraft tconstruct` wird nur ausgeführt, wenn Minecraft und Tinkers Construct geladen sind.
 
-You can also invert a mod condition so that the mod is only loaded if the mod is NOT loaded: `#modloaded !tconstruct minecraft` will only be executed if minecraft is present and tconstruct is NOT present
+Das ganze geht auch anders herum, dass man auf eine Mod prüft, welche NICHT geladen ist: `#modloaded !tconstruct minecraft` wird nur ausgeführt, wenn Minecraft geladen und Tinkers Construct NICHT geladen ist.
 
-## What it does
+## Was er tut
 
-If you added this preprocessor to a script, it will only be executed if the provided modID's are present, in other words if the respecting mods are loaded.
+Wenn man diesen Präprozessor zu einem Skript hinzufügt, wird dieses Skript nur ausgeführt, wenn die spezifizierten Mods vorhanden und geladen sind.
