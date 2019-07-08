@@ -4,9 +4,9 @@ Mit diesem Präprozessor kannst du deinen Skripten verschiedene Prioritäten zuw
 
 ## Einbinden
 
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+Du bindest diesen Präprozessor ein, in dem zu `#priority nummer` in dein Skript schreibst, wobei `nummer` die jeweilige Priorität darstellt.
 
-## What it does
+## Was er tut
 
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+Je höher die Priorität eines Skriptes ist, desto früher wird dieses ausgeführt.  
+Skripte mit der gleichen Priorität werden alphabetisch sortiert ausgeführt.
