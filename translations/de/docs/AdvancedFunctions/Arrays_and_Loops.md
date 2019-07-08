@@ -114,33 +114,33 @@ Mit dem `break`-Schlüsselwort kannst du das komplette durchlaufen des Arrays vo
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //definiert "i" mit jeder Nummer von 10 bis 19 (z.B. 10,11,12,...,18,19)
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //definiert "item" mit jedem Item, welches von der Mod mit der Mod-ID "minecraft" stammt und löscht das Craftingrezept
         recipes.remove(item);
     }
     
 
-## While Loop
+## While-Schleife
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Die While-Schleife wird so lange ausgeführt, bis die gegebene Bedingung nicht mehr `true` (wahr) ist.  
+Alternativ kannst du die While-Schleife auch mit dem `break`-Schlüsselwort vorzeitig stoppen.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //Wird die Ziffern 0 - 9 ausgeben, denn in der folgenden Iteration ist i < 10 falsch, da i den Wert 10 besitzt.
     while i < 10 {
         print(i); 
         i += 1;
     } 
     
-    print("After loop: " + i);
+    print("Nach der Schleife: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //Wird die Zahlen 10 - 6 ausgeben, da in der folgenden Iteration i == 5 ist und abgebrochen wird.
     while (i > 0) {
         if i == 5
             break;
@@ -148,7 +148,7 @@ Alternatively, you can stop it using the `break` keyword.
         i -= 1;
     }
     
-    print("After loop 2: " + i);
+    print("Nach der zweiten Schleife: " + i);
     
     
     for k in 1 .. 10 {
