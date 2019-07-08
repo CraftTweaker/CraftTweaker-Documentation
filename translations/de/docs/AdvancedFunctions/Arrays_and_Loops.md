@@ -17,10 +17,10 @@ Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, da
 
 ## Arrays casten
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? Das ist der Fall, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+Vielleicht hast du gemerkt, dass hinter den Arrays oben immer ein `as` stand.  
+Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. Das kann manchmal komische Fehler verursachen!  
+Geh lieber den sicheren Weg und weise deinen Arrays die richtigen Typen zu!  
+Darüber hinaus, wenn du zu nicht-primitiven Typen (also, alles außer strings, ints usw.) casten willst, denk dran, dass du die jeweiligen dazu passenden Pakete am Beginn des Skriptes importieren musst:
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
@@ -28,17 +28,17 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
 
 ## Verschachtelte Arrays
 
-You can place Arrays in Arrays.
+Man kann auch Arrays innerhalb Arrays platzieren.
 
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beatuful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["Hallo","Welt"] as string[];
+    val stringArray2 = ["ich","bin"] as string[];
+    val stringArray3 = ["ein","schöner"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## Auf Elemente innerhalb eines Arrays zugreifen
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Man greift auf die Elemente eines Arrays zu, in dem man den jeweiligen Platz des Elements in der Liste nimmt. Das erste Element eines Arrays ist die Nummer 0, the 2nd No.1 and so on.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
