@@ -6,16 +6,16 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 Ein Array wird mithilfe von eckigen Klammern erstellt, also mit ```[``` und ```]```.
 
-    //Array containing "Hello" and "World"
+    //Ein Array mit "Hello" und "World"
     val stringArray = ["Hello", "World"] as string[];
     
-    //Array containing 1-3
+    //Array mit den Zahlen 1-3
     val intArray = [1,2,3] as int[];
     
 
 Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, das hast du. Erinnerst du dich an ```recipes.add(out,[[],[],[]]);```? Dies nutzt drei Arrays mit jeweils bis zu drei Einträgen, um ein Crafting Rezept zu definieren.
 
-## Casting Arrays
+## Arrays casten
 
 You surely have noticed that all arrays here have the `as` statement appended.  
 Why you ask? Das ist der Fall, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. This can be the cause of strange conversion error logs!  
