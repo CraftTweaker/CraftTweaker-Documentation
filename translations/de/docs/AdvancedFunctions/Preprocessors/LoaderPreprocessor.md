@@ -4,11 +4,11 @@ Dieser Präprozessor definiert den "Loader" für das Skript.
 
 ## Einbinden
 
-You call the loader Preprocessor by adding `#loader loaderName` to your script file with `loaderName` being the name of the loader you want to assign the script to.  
-Example: `#loader contenttweaker`
+Du bindest diesen Präprozessor ein, in dem zu `#loader loaderName` in dein Skript schreibst, wobei `loaderName` der jeweilige Loader ist, welchen du zu diesem Skript zuweisen möchtest.  
+Beispiel: `#loader contenttweaker`
 
-## What it does
+## Was er tut
 
-Scripts with the loader Preprocessor will only be loaded by the loader specified.  
-In the example above, crafttweaker's loader won't touch the file, instead the loader called "contentTweaker" will execute that script.  
-If you don't specify that preprocessor, it will default to being "crafttweaker".
+Skripte mit diesem Präprozessor werden nur mit dem spezifizierten Loader geladen.  
+Im Beispiel oben wird der Loader von CraftTweaker nichts mit dieser Datei anfangen, dafür wird diese aber vom ContentTweaker-Loader geladen.  
+Wenn man diesen Präprozessor nicht spezifiziert, wird standardmäßig der Loader von CraftTweaker verwendet.
