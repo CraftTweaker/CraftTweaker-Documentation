@@ -38,51 +38,51 @@ Man kann auch Arrays innerhalb Arrays platzieren.
 
 ## Auf Elemente innerhalb eines Arrays zugreifen
 
-Man greift auf die Elemente eines Arrays zu, in dem man den jeweiligen Platz des Elements in der Liste nimmt. Das erste Element eines Arrays ist die Nummer 0, the 2nd No.1 and so on.
+Man greift auf die Elemente eines Arrays zu, in dem man den jeweiligen Platz des Elements in der Liste nimmt. Das erste Element eines Arrays ist die Nummer 0, das zweite die Nummer 1 und so weiter.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Wenn du auf ein Element in einem verschachtelten Array zugeifen willst, musst du dementsprechend immer zwei oder mehr der Listenplätze angeben.
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] ist "Hallo"
+    stringArray[1] ist "Welt"
+    stringArray[2] ist "ich"
+    stringArray[3] ist "bin"
     */
-    val stringArray = ["Hello","World","I","am"] as string[];
+    val stringArray = ["Hallo","Welt","ich","bin"] as string[];
     
-    //prints "Hello"
+    //gibt "Hallo" aus
     print(stringArray[0]);
     
     
-    //Nested Arrays
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beautiful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    //Verschachtelte Arrays
+    val stringArray1 = ["Hallo","Welt"] as string[];
+    val stringArray2 = ["ich","bin"] as string[];
+    val stringArray3 = ["ein","schöner"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!"]] as string[][];
     
     /*
-    stringArrayAll[0] is ["Hello","World"]
-    stringArrayAll[1] is ["I","am"]
-    stringArrayAll[2] is ["a","beautiful"]
-    stringArrayAll[3] is ["Butterfly","!"]
+    stringArrayAll[0] ist ["Hallo","Welt"]
+    stringArrayAll[1] ist ["ich","bin"]
+    stringArrayAll[2] ist ["ein","schöner"]
+    stringArrayAll[3] ist ["Schmetterling","!"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
-    etc.
+    stringArrayAll[0][0] ist "Hallo"
+    stringArrayAll[0][1] ist "Welt"
+    usw.
     */
     
-    //prints "World"
+    //gibt "Welt" aus
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# Schleifen
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Eine Schleife ist eine Funktion, die sich wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente in einem Array anzuwenden.
 
-## For Loop
+## For-Schleifen
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Die For-Schleife wird meistens dazu verwendet, um durch alle Elemente eines Arrays zu "iterieren". Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
+Mit dem `break`-Schlüsselwort kannst du das komplette durchlaufen des Arrays vorzeitig beenden.
 
     import crafttweaker.item.IItemStack;
     
@@ -94,8 +94,8 @@ You can use the `break` keyword to break the loop prematurely.
     //for [IntegerName, ] elementName in IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //definiert die Variable "item" nacheinander mit jedem Element aus IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Man kann diese Variable nun problemlos verwenden!
         recipes.remove(item);
     }
     
