@@ -1,9 +1,9 @@
-# Ignore Bracket Errors Preprocessor
+# Klammerfehler-ignorierender Präprozessor
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+Dieser Präprozessor sorgt dafür, dass Klammerfehler im Skript ignoriert werden.  
+Das heißt NICHT, dass dein Skript danach fehlerfrei funktioniert, es werden nur keine Fehlermeldungen mehr ausgegeben.
 
-## Call
+## Einbinden
 
 You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
 This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
