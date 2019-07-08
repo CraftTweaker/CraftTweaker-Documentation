@@ -1,6 +1,6 @@
-# NoRun Preprocessor
+# NoRun-Präprozessor
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+Dieser Präprozessor sorgt dafür, dass das gegebene Skript gar nicht erst geladen wird.
 
 ## Call
 
