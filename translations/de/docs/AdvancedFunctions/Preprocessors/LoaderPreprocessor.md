@@ -1,8 +1,8 @@
-# LoaderPreprocessor
+# Lade-Präprozessor
 
-The loader preprocessor will set the script's loader.
+Dieser Präprozessor definiert den "Loader" für das Skript.
 
-## Call
+## Einbinden
 
 You call the loader Preprocessor by adding `#loader loaderName` to your script file with `loaderName` being the name of the loader you want to assign the script to.  
 Example: `#loader contenttweaker`
