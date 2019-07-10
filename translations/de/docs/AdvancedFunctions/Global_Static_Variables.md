@@ -18,9 +18,9 @@ Statische werden mit dem `static`-Schlüsselwort erstellt.
 
 Ansonsten sind beide Varianten identisch!
 
-## Declaring a global value
+## Globale Variablen deklarieren
 
-Declaring a global value is as simple as declaring a local value:
+Einen globalen Wert zu deklarieren ist genau so leicht, wie einen lokalen Wert zu deklarieren:
 
     import crafttweaker.item.IItemStack;
     
@@ -29,16 +29,16 @@ Declaring a global value is as simple as declaring a local value:
     static myStaticValue as IItemStack = <minecraft:sand>;
     
 
-Okay, let's break it down, shall we?
+Okay, hier nun die Erklärung:
 
-1. `global` keyword that indicates the declaration of a global value
-2. `myGlobalValue` the name of the value
-3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global` Das Schlüsselwort zeigt, dass es ein global verfügbarer Wert wird
+2. `myGlobalValue` der Name der Variable
+3. `as IItemStack` der Typ der Variable (wichtig ist, dass dieser Typ vorher [importiert](Import/) wurde)
+4. `= <minecraft:dirt>;` Zuweisung des Wertes. Da globale Variablen "final" (fest) sind, müssen diese sofort bei der Deklaration initialisiert werden!
 
-## Words of advice
+## Hinweise
 
-- You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
-- Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.
-- While it is technically possible to omit the `as` part, it is recommended leaving it in, as the IAny interface is not fully functional yet. Also, it makes your declaration more clear for people reading/debugging your script!
+- Du kannst nur auf globale Werte zugreifen, wenn diese schon deklariert wurden. Nutze den [prioritätsbasierten Präprozessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/), um sicher zu gehen, dass alle globalen Variablen vor der Benutzung deklariert wurden.
+- Globale Variablen können nicht in Skripten definiert werden, welche sich in Unterordnern befinden! Die Skripte lassen sich zwar kompilieren, allerdings wird das später noch Fehler ergeben.
+- Technisch gesehen ist es möglich, den `as`-Teil wegzulassen, allerdings empfehlen wir dringend, diesen drin zu lassen. Also, it makes your declaration more clear for people reading/debugging your script!
 - Local variables/values CAN overshadow global variables. The script will always search the innermost scope for variables and go outwards until it hits global when searching for keywords!
