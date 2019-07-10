@@ -12,44 +12,44 @@ Sei bei solchen Berechnungen immer vorsichtig und lass dir die Ergebnisse auch m
 
 ## Artihmetische Operatoren
 
-I'm pretty sure all of you know these already, don't you?
+Ich hoffe mal, dass ihr alle die folgenden Sachen schon irgendwoher kennt.
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| Zeichen | Zuweisezeichen | Funktion          | Beispiel |
+| ------- | -------------- | ----------------- | -------- |
+| `+`     | `+=`           | Addition          | 1+2      |
+| `-`     | `-=`           | Subtraktion       | 2-1      |
+| `*`     | `*=`           | Multiplikation    | 1*1      |
+| `/`     | `/=`           | Division          | 2/2      |
+| `%`     | `%=`           | Modulo (Teilrest) | 13 % 6   |
 
-## Concatenation
+## Verkettung
 
-Puts one thing at the and of the other
+Hängt etwas an etwas anderes dran:
 
-    //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
+    //gibt "Hallo Welt" aus
+    print("Hallo" ~ " " ~ "Welt");
     
 
-## Calculation results
+## Ergebnisse von Berechnungen
 
-A calculation usually ends up with a result. So what to do with that?
+Naja, Berechnungen spucken ja Ergebnisse aus. Was macht man nun damit?
 
-### Assigning a variable
+### Einer Variable zuweisen
 
-There are two ways of assigning a value to a variable:
+Es gibt mehrere Arten, wie man einen Wert einer Variable zuweist:
 
     var test = 0;
     
     //Option 1:
-    //assigns test with the value 3 (1+2)
+    //weist test den Wert 3 (1+2) zu
     test = 1+2;
     
     //Option 2:
-    //assigns test with 5 (3+2)
+    //weist test den Wert 5 (3+2) zu
     test = test + 2;
     
     //Option 3:
-    //assigns test with 2 (5-3)
+    //weist test den Wert 2 (5-3) zu
     test -= 3;
     
 
