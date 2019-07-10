@@ -1,7 +1,6 @@
 # Globale und statische Variablen
 
-Sure you have been in the situation where you declared the same variable in each and every script over and over again.  
-"Why is there no way to make them available in every script?" Is what went through your head at such times.
+Bestimmt hast du dich schon mal darüber geärgert, dass du manche Variablen in vielen Skripten wieder und wieder deklarieren musst.
 
 Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
 They cannot be changed, though.
