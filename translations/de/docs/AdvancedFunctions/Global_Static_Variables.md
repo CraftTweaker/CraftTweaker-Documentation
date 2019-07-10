@@ -2,21 +2,21 @@
 
 Bestimmt hast du dich schon mal darüber geärgert, dass du manche Variablen in vielen Skripten wieder und wieder deklarieren musst.
 
-Be relieved now for there has been added a means of declaring and accessing global and scriptbound (static) values!  
-They cannot be changed, though.
+Aber du kannst zufrieden sein, inwzischen ist dies dank globaler und statischer Variablen möglich!  
+Wenn diese allerdings ein mal deklariert sind, können diese nicht mehr geändert werden.
 
-## Difference between statics and globals
+## Unterschied zwischen globalen und statischen Variablen
 
-Both, statics and globals are scriptbound and instantiated before the script is executed.  
-Both cannot be changed.  
-The difference is how they are called:  
-Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](Cross-Script_Reference/) to be accessed.
+Beide sind an das Skript gebunden und werden intialisiert, bevor das Skript ausgeführt wird.  
+Beide können nicht verändert werden.  
+Der Unterschied liegt darin, wie man sie aufruft:  
+Globale Variablen können von überall mit ihrem Namen aufgerufen werden, außer man hat im Skript schon eine Variable mit dem gleichen Namen.  
+Statische Variablen müssen über [den Namen ihres Skriptes](Cross-Script_Reference/) ausgeführt werden.
 
-Globals are created using the `global` keyword.  
-Statics are created using the `static` keyword.
+Globale Variablen werden mit dem `global`-Schlüsselwort erstellt.  
+Statische werden mit dem `static`-Schlüsselwort erstellt.
 
-Aside from that, they are identical!
+Ansonsten sind beide Varianten identisch!
 
 ## Declaring a global value
 
