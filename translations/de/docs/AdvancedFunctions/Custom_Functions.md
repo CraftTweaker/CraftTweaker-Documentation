@@ -7,15 +7,15 @@ Manchmal reichen die Funktionen von CraftTweaker und dessen Addons einfach nicht
 Normalerweise definiert man eine Funktion in etwa so:
 
 ```Java
-function NAME ([arguments[as type]]) [as returnType]{
+function NAME ([argumente[as typ]]) [as returnTyp]{
     [Statements]
-    [return VALUE;]
+    [return WERT;]
 }
 ```
 
-The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
+Die Dinge in den eckigen Klammern sind optional. Schauen wir uns ein paar bestimmte Funktionen an:
 
-## Static Functions
+## Statische Funktionen
 
 Static functions are created before the script is run and can be accessed from anywhere in the script.  
 You can even access functions declared outside the script using the [cross-script reference](Cross-Script_Reference).
