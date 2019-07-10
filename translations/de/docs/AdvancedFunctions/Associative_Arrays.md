@@ -1,10 +1,10 @@
-# Associative Arrays
+# Assoziatives Array
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ein Assoziatives Array (wird manchmal auch als "Map" oder "Dictionary" bezeichnet) ist ähnlich wie ein normales [Array](Arrays_and_Loops/) und kann mehrere Objekte in sich speichern. Der Unterschied zu normalen [Arrays](Arrays_and_Loops/) hier ist allerdings, dass man sich den Typ des Index (hier wird er auch als "Schlüssel" oder "Key" bezeichnet) aussuchen kann!
 
-## Declaring an Associative Array
+## Ein Assoziatives Array deklarieren
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Ein assoziatives Array deklariert man mit Hilfe von geschweiften Klammern `{}` und Doppelpunkten `:`
 
 ```JAVA
 val myAssocArray = {
@@ -13,20 +13,20 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Hier nun die Erklärung:
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `val myAssocArray =` eine ganz normale Deklaration
+- `{` Anzeichen für ein assoziatives Array!
+- `dirt : <minecraft:dirt>` wir weisen `<minecraft:dirt>` die Zeichenkette `dirt` zu
+- `,` Wir sind noch nicht ganz fertig!
+- `gold: <minecraft:gold_ingot>` wir weisen `<minecraft:gold_ingot>` die Zeichenkette `gold` zu
+- `}` Wir haben das Ende des Arrays erreicht!
+- `as IItemStack[string];` Wir haben nun ein assoziatives Array, welches Zeichenketten zur Indexierung von IItemStack-Objekten verwendet.
 
-Okay, so what do I need to think of when using these?
+Okay, und was sollte ich denn noch beachten?
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Du kannst jeden Datentyp, den du in ZenScript verwenden kannst, sowohl als Schlüssel, als auch Wert verwenden.
+- In der ersten Deklaration des Arrays kannst du für den Schlüssel keine bestehenden Variablen verwenden, da frei stehender Text als Zeichenkette interpretiert wird!
 
 ## Refering to Items inside an Associative Array.
 
