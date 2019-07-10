@@ -156,7 +156,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 }
 ```
 
-This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+Es ergibt nur true, wenn alle passenden Items vom IIngredient NACH dem `has` auch im IIngredient VOR dem `has` zu finden sind. Angenommen, wir haben ein IIngredient, welches alle "Dusts" enthält (Redstone, Glowstone Dust...):
 
 ```java
 val redstone = <minecraft:redstone>;
@@ -164,12 +164,12 @@ val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-//True as redstone is a part of alldusts
+//True, da Redstone ein Teil von allDusts ist
 if(allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+//False, da allDusts aus Redstone und Glowstone Dust besteht, redstone allerdings nur aus Redstone.
 if(redstone has allDusts) {
 
 }
