@@ -28,22 +28,22 @@ Okay, und was sollte ich denn noch beachten?
 - Du kannst jeden Datentyp, den du in ZenScript verwenden kannst, sowohl als Schlüssel, als auch Wert verwenden.
 - In der ersten Deklaration des Arrays kannst du für den Schlüssel keine bestehenden Variablen verwenden, da frei stehender Text als Zeichenkette interpretiert wird!
 
-## Refering to Items inside an Associative Array.
+## Auf Elemente innerhalb eines assoziativen Arrays zugreifen
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
+Man greift auf assoziative Arrays genau so zu, wie man es auch bei normalen [Arrays](Arrays_and_Loops/) macht:  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+Der einzige Unterschied ist eben, dass man nun nicht unbedingt einen Integer braucht, sondern etwas, was dem davor spezifizierten Typ entspricht!
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    &lt;minecraft:dirt&gt; : "Das bin ich"
 } as string[IItemStack];
 
 //array[index]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//Du kannst hier auch Variablen verwenden, solange diese den richtigen Typ besitzen
 print(assocArray[dirt]);
 ```
 
