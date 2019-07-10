@@ -6,13 +6,13 @@ Mit der Punkt-Notation kann man auf die Datenfelder/Funktionen anderer Skripte z
 ## Spezifiktationen
 
 - Eine Referenz auf ein anderes Skript beginnt immer mit `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Danach nimmst du den Pfad relativ zum "scripts"-Ordner (z.B. `scripts.meinUnterordner.a`)
+- Wenn du willst, kannst du die Punkt-Notation auch in einem [Import-Statement](/AdvancedFunctions/Import/) verwenden
+- ZenScript sucht erst nach passenden Ordnern und danach nach passenden Dateien oder Werten
 
-## Example
+## Beispiel
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Angenommen, wir haben zwei Skripte: `a.zs` und `b.zs`.
 
 a.zs:
 
