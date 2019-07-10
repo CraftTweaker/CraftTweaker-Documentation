@@ -1,16 +1,16 @@
 # Calculations
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Leider kann man nicht immer einfach nur Zahlen eingeben. Manchmal muss man auch mal was berechnen.  
+Denk dran: Man kann in Berechnungen auch mehr als zwei Zahlen gleichzeitig benutzen: `1+1+1+1`
 
-## A word of advice
+## Ein kleiner Tipp
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+Wenn du bei Berechnungen komische Ergebnisse bekommst, ist es gut möglich, dass du zwei verschiedene Datentypen verwendet hast.  
+Beispiel: `13 % 6.5` gibt 1 zurück, obwohl eigentlich 0 richtig wäre. Wieso? Weil ZenScript seine Berechnungen immer mit zwei Variablen des selben Typs durchführt. In diesem Fall gleicht er den Typ der zweiten Zahl dem Typ der ersten an. In diesem Fall wurde das Ergebnis von `13 % 6` berechnet, da die zweite Nummer vom Datentyp Double (Kommazahl) in Integer (Ganzzahl) umgewandelt wurde.
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+Sei bei solchen Berechnungen immer vorsichtig und lass dir die Ergebnisse auch mal durch die print-Funktion ausgeben, damit du die Richtigkeit bestätigen kannst.
 
-## Arithmetic Operators
+## Artihmetische Operatoren
 
 I'm pretty sure all of you know these already, don't you?
 
