@@ -122,11 +122,11 @@ Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 ## Der in/has-Operator
 
 Der `in` und `has`-Operator prüfen, ob etwan in etwas bestimmten ist.  
-Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und zu guter letzt der Wert, nach welchem du prüfen möchtest. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und zu guter letzt der Wert, nach welchem du prüfen möchtest. `in` und `has` sind für ZenScript zwar das gleiche, allerdings wird `has` öfter verwendet, weil das eher zur englischen Grammatik passt.
 
-### in/has loadedMods
+### in/has loadedMods (Geladene Mods)
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+Eine Mod geladen ist, wenn sich diese in der Liste befindet:
 
 ```Java
 //While contains checks can use in
