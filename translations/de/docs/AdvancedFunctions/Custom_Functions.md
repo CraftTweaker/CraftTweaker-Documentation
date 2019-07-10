@@ -1,10 +1,10 @@
-# Custom Functions
+# Eigene Funktionen
 
-Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
+Manchmal reichen die Funktionen von CraftTweaker und dessen Addons einfach nicht aus. Deswegen kannst du auch eigene Funktionen schreiben! Du kannst sogar Funktionen in Funktionen verschachteln.
 
-## Basic Syntax
+## Standard-Syntax
 
-Generally, you declare a static using:
+Normalerweise definiert man eine Funktion in etwa so:
 
 ```Java
 function NAME ([arguments[as type]]) [as returnType]{
