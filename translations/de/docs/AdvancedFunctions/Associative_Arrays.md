@@ -47,47 +47,47 @@ print(assocArray[&lt;minecraft:dirt&gt;]);
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+Es gibt eine Ausnahme, wenn du Zeichenketten als Indexwerte verwendest:  
+In diesem Fall kannst du auch den "memberGetter" verwenden:
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
-    "one" : "1",
+    //Man kann den Schlüssel auch in "" setzen
+    "eins" : "1",
 
-    //but you don't have to
-    two : "2"
+    //muss man allerdings nicht
+    zwei : "2"
 } as string[string];
 
-//You can either use the memberGetter
-print(assocWithStrings.one);
+//Man kann entweder den memberGetter verwenden
+print(assocWithStrings.eins);
 
-//Or the standard index Getter
-print(assocWithStrings["two"]);
+//Oder den normalen Index-Getter
+print(assocWithStrings["zwei"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Elemente in einem assoziativen Array bearbeiten
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+Wie in einem Array, kannst du durch `array[index] = neuerWert` die Werte auswechseln.  
+Es gibt allerdings einen Unterschied:  
+Arrays haben eine feste Größe, Maps nicht. Das heißt, dass du jederzeit neue Elemente an eine Map hängen kannst, solang du einen Schlüssel verwendest, der noch nicht verwendet wurde!
 
 ```JAVA
 val changingArray = {
-    <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
+    <minecraft:dirt> : "das bin ich",
+    <minecraft:gold_ingot> : "und ich mag es nicht"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//Überschreibt den Wert von gold_ingot
+changingArray[gg] = "und ich liebe es";
 
-//adds a new entry
+//fügt ein neues Element hinzu
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## Schlüssel und EntrySets aus einem assoziativen Array holen
 
 The KeySet is an array containing all the map's keys.  
 The valueSet is an array containing all the map's values.  
