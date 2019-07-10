@@ -127,30 +127,30 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//Schlüssel sind grass, goldIngot, dirt
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//Schlüssel sind grass, goldIngot, dirt, die Werte sind die Rezepte dazu
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
 ```
 
-# ZenType Entry
+# ZenType "Entry"
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+Ein Map-Eintrag (Entry) besteht immer aus einem Schlüssel und einem Wert.  
+Ein Entry-Objekt bekommt man mit Hilfe der entrySet-Methode.
 
-You can use the getters to get `key` and `value`
+Mit Hilfe von Gettern bekommt man die Werte für `key` und `value`
 
 ```kotlin
-//Replace map with a reference to an existing map/associative array
+//Den ersten Eintrag aus einer beliebigen Map holen
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //Gibt den Schlüssel des Eintrags aus
+myEntry.value;  //Gibt den Wert des Eintrags aus
 ```
