@@ -89,9 +89,9 @@ changingArray[<minecraft:grass>] = "Power!";
 
 ## Schlüssel und EntrySets aus einem assoziativen Array holen
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+Ein KeySet ist ein Array, welche alle Schlüssel einer Map enthält.  
+Ein ValueSet ist ein Array, welches alle Werte einer Map enthält.  
+Ein EntrySet ist ein Array, welches alle Einträge einer Map enthält (siehe unten).
 
 ```JAVA
 myAssocArray.keySet   //keySet
@@ -101,12 +101,12 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## Über ein assoziatives Array iterieren
 
-There are two Iterators that allow you to iterate over an Associative Array:
+Es gibt für diesen Zweck zwei verschiedene Iteratoren:
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- Der Schlüssel-Iterator: Iteriert über die Schlüssel, nutzt dazu eine Variable
+- Der Schlüssel-Wert-Iterator: Iteriert über die Schlüssel und die Werte, nutzt zwei Variablen
 
 Let's add an Associative Array that stores crafting recipes to be iterated over:
 
