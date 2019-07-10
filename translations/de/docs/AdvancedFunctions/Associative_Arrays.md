@@ -108,12 +108,12 @@ Es gibt für diesen Zweck zwei verschiedene Iteratoren:
 - Der Schlüssel-Iterator: Iteriert über die Schlüssel, nutzt dazu eine Variable
 - Der Schlüssel-Wert-Iterator: Iteriert über die Schlüssel und die Werte, nutzt zwei Variablen
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+Wir erstellen nun ein assoziatives Array, welches Crafting-Rezepte speichert:
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- Die Schlüssel sind der Crafting-Output als [IItemStack](/Vanilla/Items/IItemStack/)
+- Die Werte sind der Crafting-Input als [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- Wir nutzen den Schlüssel-Iterator wie folgt: `for key in assocArray {doSth;} //soSth = machIrgendwas`
+- Wir können auch den Schlüssel-Wert-Iterator wie folgt verwenden: `for key, value in assocArray {doSth;}`
 
 ```JAVA
 import crafttweaker.item.IItemStack;
