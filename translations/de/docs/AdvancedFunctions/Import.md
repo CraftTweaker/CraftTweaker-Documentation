@@ -1,6 +1,6 @@
-# Import Function
+# Import-Funktion
 
-Instead of typing the whole function name all the time, you can just import a function to serve your needs. Useful when using mod functions.
+Bevor man einen kompletten Funktionsnamen immer und immer wieder eintippen muss, kann man diese Funktion einfach importieren. Das ist praktisch, wenn man Funktionen von Mods nutzt.
 
 ## Note on pre 1.12 imports
 
