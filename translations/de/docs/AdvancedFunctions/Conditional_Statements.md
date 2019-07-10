@@ -129,31 +129,30 @@ Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und
 Eine Mod geladen ist, wenn sich diese in der Liste befindet:
 
 ```Java
-//While contains checks can use in
 if(loadedMods in "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("Minecraft Coder Pack geladen");
 }
 
-//Most people prefer using has
+//Die meisten nutzen diese Variante
 if(loadedMods has "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("Minecraft Coder Pack geladen");
 }
 ```
 
 ### in/has IIngredient
 
-You can also check if an item matches a definition by comparing two IIngredients.  
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
-In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
+Du kannst auch mit Hilfe von zwei IIngredients prüfen, ob ein Item einer bestimmten definition entspricht.  
+In diesem Fall darfst du aber nicht die beiden Einträge verwechseln:  
+Das hier ergibt nur true, wenn der Eintrag NACH `in` in der Gruppe VOR dem `in` zu finden ist.  
+In den meisten Fällen sollte man also lieber das `has`-Schlüsselwort verwenden, weil das meistens einen viel klareren Eindruck macht.
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("Eisenbarren befinden sich in der richtigen Gruppe");
 }
 
 if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("Eisenbarren befinden sich in der richtigen Gruppe");
 }
 ```
 
