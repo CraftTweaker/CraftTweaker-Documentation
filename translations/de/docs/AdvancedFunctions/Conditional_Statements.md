@@ -10,54 +10,54 @@ Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das g
 val test = 0;
 
 if(test == 0){ //true
-    print("Test is zero!");
+    print("Test ist null!");
 }
 ```
 
-## Else
+## Else (Ansonsten)
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Ein Else-Statement kann an eine If-Abfrage angehängt werden und wird ausgeführt, falls die Abfrage nicht true (false) ergibt.
 
 ```Java
 var test = 0;
 
 if(test == 0){//true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+    //wird ausgeführt, wenn test gleich 0
+    print("Test ist null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //wird ausgeführt, wenn test nicht gleich 0
+    print("Test ist NICHT null!");
 }
 
 test = 1
 if(test == 0){//false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+    //wird ausgeführt, wenn test gleich 0
+    print("Und nun, test ist null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //wird ausgeführt, wenn test nicht gleich 0
+    print("Und nun, test ist NICHT null!");
 }
 
 ```
 
-## Things to check for
+## Dinge, die man überprüfen kann
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+Berechnungen: `+`,`-`,`*`,`/`,`mod`,`verkettung(~)`
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+Operanden: `OR(|)`, `AND(&)`, `XOR(^)`
 
 ```Java
-//You can check for:
+//Was man alles prüfen kann:
 
 
-//Number values
+//Zahlen
 val a = 0 as int;
 if(a==0){print("NumVal");}
 
-//Calculated number values
+//Berechnete Zahlen
 val b = 1;
 val c = 5;
-//All evaluate to true
+//Alles ergibt true
 if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
 if(b/c==0.2){print("Num3!");}
@@ -65,46 +65,46 @@ if(b/c==0.2){print("Num3!");}
 //OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d~e; //f = "HelloWorld", die Tilde verkettet die beiden Zeicheketten
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
+//|(OR) So lange eines der Kriterien stimmt, ergibt die Abfrage true
 if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
 if(d=="Hello" | e == "World"){print("OR2!");}       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+//^(XOR) Es darf nur genau ein Kriterium stimmen, ansonsten false
 if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+//&(AND) Es müssen beide Kriterien stimmen, ansonsten false
 if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## Der ? Operator
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+Die ganze Zeit überall If/Else schreiben zu müssen kann schnell nervig werden. Besonders wenn du nur kleinere entweder/oder-Bedingungen benötigst. Für solche Fälle wurde der `?`-Operator implementiert. Er funktioniert genau wie ein If/Else-Statement, für welches man weniger Code benötigt. Syntax: `boolean ? if : else`
 
 ```Java
 val switchy = false;
 
-//prints switchy state
+//gibt den Status aus
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+//wenn switchy true ergibt, vInt = 1, ansonsten vInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
-print(switchy ? "Hello" : "Bye");
+//Gibt "Hallo" aus, wenn switchy true ist, ansonsten "Tschüss"
+print(switchy ? "Hallo" : "Tschüss");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
-switchy ? print("Bye") : print("Hello");
+//Gibt "Tschüss" aus, wenn switchy true ergibt, ansonsten "Hallo"
+switchy ? print("Tschüss") : print("Hallo");
 
 ```
 
-## Operators
+## Operatoren
 
-You can use these operators. All the examples given evaluate to true.
+Du kannst folgende Operatoren verwenden. All the examples given evaluate to true.
 
 | Name             | token   | Explanation                                                                          | Example      |
 | ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
