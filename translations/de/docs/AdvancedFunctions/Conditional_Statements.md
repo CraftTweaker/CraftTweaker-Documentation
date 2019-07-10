@@ -104,25 +104,25 @@ switchy ? print("Tschüss") : print("Hallo");
 
 ## Operatoren
 
-Du kannst folgende Operatoren verwenden. All the examples given evaluate to true.
+Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 
-| Name             | token   | Explanation                                                                          | Example      |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| Name                | Zeichen | Erklärung                                                                                                | Beispiel     |
+| ------------------- | ------- | -------------------------------------------------------------------------------------------------------- | ------------ |
+| Nicht               | `!`     | Invertiert ein Boolean (true/false)                                                                      | !false       |
+| Nicht gleich        | `!=`    | Prüft, ob der Wert davor und danach nicht gleich ist                                                     | 1 != 2       |
+| Gleich              | `==`    | Prüft, ob der Wert davor und danach gleich ist                                                           | 1 == 1       |
+| Größer als          | `>`  | Prüft, ob der Wert davor größer ist als der Wert danach                                                  | 2 > 1        |
+| Größer oder gleich  | `>=` | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                 | 1 >= 1       |
+| Kleiner als         | `<`  | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                 | 1 < 2        |
+| Kleiner oder gleich | `<=` | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                               | 1 <= 1       |
+| AND (UND)           | `&` | Prüft, ob der Wert davor und danach gleich ist                                                           | true & true  |
+| OR (ODER)           | `|`     | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | true | true  |
+| XOR (Exklusiv-ODER) | `^`     | Prüft, ob genau einer der beiden Werte wahr ist. Wenn keiner oder beide Werte wahr sind, ergibt es false | true ^ false |
 
-## The in/has Operator
+## Der in/has-Operator
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+Der `in` und `has`-Operator prüfen, ob etwan in etwas bestimmten ist.  
+Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und zu guter letzt der Wert, nach welchem du prüfen möchtest. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
