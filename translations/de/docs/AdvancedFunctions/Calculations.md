@@ -53,21 +53,21 @@ Es gibt mehrere Arten, wie man einen Wert einer Variable zuweist:
     test -= 3;
     
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Option 1 und 2 weisen der Variable mittels `=` einen neuen Wert zu.  
+Für Anfänger wird das wohl der etwas einfachere Weg sein.
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+Option 3 zweist der Variable vor dem `-=` das Ergebnis einer normalen Subtraktion zu.  
+Alle Operatoren besitzen ihre eigenen Zeichen, welche oben in der Tabelle vorhanden sind.
 
-### Using the result otherwise
+### Das Ergebnis irgendwo anders verwenden
 
-You can always use the result of a calculation in a function or a conditional statement:
+Du kannst Ergebnisse auch direkt in einer Funktion oder in einer Abfrage verwenden:
 
-    //prints 4
+    //gibt 4 aus
     print(3+1);
     
-    //removes the item on array[4]
+    //entfernt das Element in array[4]
     recipes.remove(array[3+1]);
     
     //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+    if(3+1 == 2*2) {print("Ich habe etwas berechnet!")}
