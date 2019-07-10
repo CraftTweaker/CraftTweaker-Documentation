@@ -69,10 +69,10 @@ function add(a as int,b as int) as int{
 
 ## Funktionen als Variablen
 
-Du kannst Funktionen auch wie Variablen verwenden. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
-You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
+Du kannst Funktionen auch wie Variablen verwenden. In diesem Fall werden diese als eine separate Klasse erstellt. Darüber hinaus funktionieren diese dann ähnlich wie statische Funktionen, man ruft sie mit dem Namen ihrer Variable auf.  
+Man kann sie somit wie [globale Variablen](/AdvancedFunctions/Global_Static_Variables/) verwenden.
 
-If you need to cast the method (as you do for globals) you can use this:
+Wenn man die Funktion also "casten" muss (wie es bei globalen Werten der Fall ist) kann man das so machen:
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;
