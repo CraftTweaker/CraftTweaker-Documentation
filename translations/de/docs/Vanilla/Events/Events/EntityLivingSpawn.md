@@ -3,14 +3,14 @@
 The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
 It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingSpawnEvent`  
 `crafttweaker.event.EntityLivingExtendedSpawnEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -29,7 +29,7 @@ The following information can be retrieved from the event:
 |                           |                                                                  |
 | `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Event-Funktionen
 
 The despawn event also offers three functions to change the event outcome:
 
