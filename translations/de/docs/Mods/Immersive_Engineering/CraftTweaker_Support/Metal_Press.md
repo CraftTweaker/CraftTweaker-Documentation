@@ -6,7 +6,7 @@ The Metal Press package can be used to add/remove recipes to/from the Immersive 
 
 You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type       | Data Type                                           |
 | -------- | ---------- | --------------------------------------------------- |
