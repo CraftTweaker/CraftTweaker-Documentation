@@ -2,7 +2,7 @@
 
 A ZenClass is a java class that has been exposed to ZenScript.
 
-## Example
+## Beispiel
 
 [Crafttweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
