@@ -6,7 +6,7 @@ The Alloy Smelter package can be used to add/remove recipes to/from the Immersiv
 
 You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type    | Data Type                                           |
 | -------- | ------- | --------------------------------------------------- |
