@@ -3,7 +3,7 @@
 The BlockHarvestDrops Event is fired whenever a block is about to drop its items.  
 You can modify the block list as well as the overall drop chance. Set latter to 1 if you do all chance handling beforehand.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockHarvestDropsEvent`  
