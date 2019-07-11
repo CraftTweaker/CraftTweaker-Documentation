@@ -15,7 +15,7 @@ You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 | Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
 | Required | Energy       | Integer                                                      |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -30,7 +30,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
