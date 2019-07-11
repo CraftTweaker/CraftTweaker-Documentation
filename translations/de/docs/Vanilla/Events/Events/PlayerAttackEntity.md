@@ -2,7 +2,7 @@
 
 The PlayerAttackEntity Event is fired whenever a player attacks an Entity.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAttackEntityEvent`  
