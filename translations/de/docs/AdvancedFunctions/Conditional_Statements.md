@@ -1,63 +1,63 @@
-# Conditional Statements
+# Bedingte Anweisungen
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+Manche Codezeilen sollten nur ausgeführt werden, wenn bestimmte Kriterien erfüllt werden (oder auch nicht). Für sowas gibt es bedingte Anweisungen.
 
-## If
+## If (Wenn)
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. Aber Achtung: Man benötigt ZWEI Gleich-Zeichen, um Werte zu vergleichen!
 
 ```Java
 val test = 0;
 
 if(test == 0){ //true
-    print("Test is zero!");
+    print("Test ist null!");
 }
 ```
 
-## Else
+## Else (Ansonsten)
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Ein Else-Statement kann an eine If-Abfrage angehängt werden und wird ausgeführt, falls die Abfrage nicht true (false) ergibt.
 
 ```Java
 var test = 0;
 
 if(test == 0){//true
-    //will be executed when test is equal to 0
-    print("Test is zero!");
+    //wird ausgeführt, wenn test gleich 0
+    print("Test ist null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Test is NOT zero!");
+    //wird ausgeführt, wenn test nicht gleich 0
+    print("Test ist NICHT null!");
 }
 
 test = 1
 if(test == 0){//false
-    //will be executed when test is equal to 0
-    print("Now, test is zero!");
+    //wird ausgeführt, wenn test gleich 0
+    print("Und nun, test ist null!");
 } else {
-    //will be executed when test is not equal to 0
-    print("Now, test is NOT zero!");
+    //wird ausgeführt, wenn test nicht gleich 0
+    print("Und nun, test ist NICHT null!");
 }
 
 ```
 
-## Things to check for
+## Dinge, die man überprüfen kann
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+Berechnungen: `+`,`-`,`*`,`/`,`mod`,`verkettung(~)`
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+Operanden: `OR(|)`, `AND(&)`, `XOR(^)`
 
 ```Java
-//You can check for:
+//Was man alles prüfen kann:
 
 
-//Number values
+//Zahlen
 val a = 0 as int;
 if(a==0){print("NumVal");}
 
-//Calculated number values
+//Berechnete Zahlen
 val b = 1;
 val c = 5;
-//All evaluate to true
+//Alles ergibt true
 if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
 if(b/c==0.2){print("Num3!");}
@@ -65,99 +65,98 @@ if(b/c==0.2){print("Num3!");}
 //OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d~e; //f = "HelloWorld", die Tilde verkettet die beiden Zeicheketten
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
+//|(OR) So lange eines der Kriterien stimmt, ergibt die Abfrage true
 if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
 if(d=="Hello" | e == "World"){print("OR2!");}       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+//^(XOR) Es darf nur genau ein Kriterium stimmen, ansonsten false
 if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+//&(AND) Es müssen beide Kriterien stimmen, ansonsten false
 if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## Der ? Operator
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+Die ganze Zeit überall If/Else schreiben zu müssen kann schnell nervig werden. Besonders wenn du nur kleinere entweder/oder-Bedingungen benötigst. Für solche Fälle wurde der `?`-Operator implementiert. Er funktioniert genau wie ein If/Else-Statement, für welches man weniger Code benötigt. Syntax: `boolean ? if : else`
 
 ```Java
 val switchy = false;
 
-//prints switchy state
+//gibt den Status aus
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+//wenn switchy true ergibt, vInt = 1, ansonsten vInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
-print(switchy ? "Hello" : "Bye");
+//Gibt "Hallo" aus, wenn switchy true ist, ansonsten "Tschüss"
+print(switchy ? "Hallo" : "Tschüss");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
-switchy ? print("Bye") : print("Hello");
+//Gibt "Tschüss" aus, wenn switchy true ergibt, ansonsten "Hallo"
+switchy ? print("Tschüss") : print("Hallo");
 
 ```
 
-## Operators
+## Operatoren
 
-You can use these operators. All the examples given evaluate to true.
+Du kannst folgende Operatoren verwenden. Alle gegebenen Beispiele ergeben true.
 
-| Name             | token   | Explanation                                                                          | Example      |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| Name                | Zeichen | Erklärung                                                                                                | Beispiel     |
+| ------------------- | ------- | -------------------------------------------------------------------------------------------------------- | ------------ |
+| Nicht               | `!`     | Invertiert ein Boolean (true/false)                                                                      | !false       |
+| Nicht gleich        | `!=`    | Prüft, ob der Wert davor und danach nicht gleich ist                                                     | 1 != 2       |
+| Gleich              | `==`    | Prüft, ob der Wert davor und danach gleich ist                                                           | 1 == 1       |
+| Größer als          | `>`  | Prüft, ob der Wert davor größer ist als der Wert danach                                                  | 2 > 1        |
+| Größer oder gleich  | `>=` | Prüft, ob der Wert davor größer oder gleich groß wie der Wert danach ist                                 | 1 >= 1       |
+| Kleiner als         | `<`  | Prüft, ob der Wert davor kleiner ist als der Wert danach                                                 | 1 < 2        |
+| Kleiner oder gleich | `<=` | Prüft, ob der Wert davor kleiner oder gleich klein wie der Wert danach ist                               | 1 <= 1       |
+| AND (UND)           | `&` | Prüft, ob der Wert davor und danach gleich ist                                                           | true & true  |
+| OR (ODER)           | `|`     | Prüft, ob mindestens einer der beiden Werte wahr ist. Ergibt true, wenn beide wahr sind                  | true | true  |
+| XOR (Exklusiv-ODER) | `^`     | Prüft, ob genau einer der beiden Werte wahr ist. Wenn keiner oder beide Werte wahr sind, ergibt es false | true ^ false |
 
-## The in/has Operator
+## Der in/has-Operator
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+Der `in` und `has`-Operator prüfen, ob etwan in etwas bestimmten ist.  
+Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und zu guter letzt der Wert, nach welchem du prüfen möchtest. `in` und `has` sind für ZenScript zwar das gleiche, allerdings wird `has` öfter verwendet, weil das eher zur englischen Grammatik passt.
 
-### in/has loadedMods
+### in/has loadedMods (Geladene Mods)
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+Eine Mod geladen ist, wenn sich diese in der Liste befindet:
 
 ```Java
-//While contains checks can use in
 if(loadedMods in "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("Minecraft Coder Pack geladen");
 }
 
-//Most people prefer using has
+//Die meisten nutzen diese Variante
 if(loadedMods has "mcp"){
-    print("Minecraft Coder Pack loaded");
+    print("Minecraft Coder Pack geladen");
 }
 ```
 
 ### in/has IIngredient
 
-You can also check if an item matches a definition by comparing two IIngredients.  
-With this one you need to be a bit careful as not to confuse the two entries:  
-This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
-In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
+Du kannst auch mit Hilfe von zwei IIngredients prüfen, ob ein Item einer bestimmten definition entspricht.  
+In diesem Fall darfst du aber nicht die beiden Einträge verwechseln:  
+Das hier ergibt nur true, wenn der Eintrag NACH `in` in der Gruppe VOR dem `in` zu finden ist.  
+In den meisten Fällen sollte man also lieber das `has`-Schlüsselwort verwenden, weil das meistens einen viel klareren Eindruck macht.
 
 ```Java
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("Eisenbarren befinden sich in der richtigen Gruppe");
 }
 
 if(<ore:ingotIron> has <minecraft:iron_ingot>){
-    print("Iron ingots are in the right oreDic");
+    print("Eisenbarren befinden sich in der richtigen Gruppe");
 }
 ```
 
-This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
+Es ergibt nur true, wenn alle passenden Items vom IIngredient NACH dem `has` auch im IIngredient VOR dem `has` zu finden sind. Angenommen, wir haben ein IIngredient, welches alle "Dusts" enthält (Redstone, Glowstone Dust...):
 
 ```java
 val redstone = <minecraft:redstone>;
@@ -165,12 +164,12 @@ val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
 allDusts.add(redstone, glowstone);
 
-//True as redstone is a part of alldusts
+//True, da Redstone ein Teil von allDusts ist
 if(allDusts has redstone) {
 
 }
 
-//False as allDusts consists of redstone and glowstone, and redstone only consists of redstone.
+//False, da allDusts aus Redstone und Glowstone Dust besteht, redstone allerdings nur aus Redstone.
 if(redstone has allDusts) {
 
 }

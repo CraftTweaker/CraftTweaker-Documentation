@@ -1,73 +1,73 @@
-# Calculations
+# Berechnungen
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Leider kann man nicht immer einfach nur Zahlen eingeben. Manchmal muss man auch mal was berechnen.  
+Denk dran: Man kann in Berechnungen auch mehr als zwei Zahlen gleichzeitig benutzen: `1+1+1+1`
 
-## A word of advice
+## Ein kleiner Tipp
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+Wenn du bei Berechnungen komische Ergebnisse bekommst, ist es gut möglich, dass du zwei verschiedene Datentypen verwendet hast.  
+Beispiel: `13 % 6.5` gibt 1 zurück, obwohl eigentlich 0 richtig wäre. Wieso? Weil ZenScript seine Berechnungen immer mit zwei Variablen des selben Typs durchführt. In diesem Fall gleicht er den Typ der zweiten Zahl dem Typ der ersten an. In diesem Fall wurde das Ergebnis von `13 % 6` berechnet, da die zweite Nummer vom Datentyp Double (Kommazahl) in Integer (Ganzzahl) umgewandelt wurde.
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+Sei bei solchen Berechnungen immer vorsichtig und lass dir die Ergebnisse auch mal durch die print-Funktion ausgeben, damit du die Richtigkeit bestätigen kannst.
 
-## Arithmetic Operators
+## Artihmetische Operatoren
 
-I'm pretty sure all of you know these already, don't you?
+Ich hoffe mal, dass ihr alle die folgenden Sachen schon irgendwoher kennt.
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| Zeichen | Zuweisezeichen | Funktion          | Beispiel |
+| ------- | -------------- | ----------------- | -------- |
+| `+`     | `+=`           | Addition          | 1+2      |
+| `-`     | `-=`           | Subtraktion       | 2-1      |
+| `*`     | `*=`           | Multiplikation    | 1*1      |
+| `/`     | `/=`           | Division          | 2/2      |
+| `%`     | `%=`           | Modulo (Teilrest) | 13 % 6   |
 
-## Concatenation
+## Verkettung
 
-Puts one thing at the and of the other
+Hängt etwas an etwas anderes dran:
 
-    //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
+    //gibt "Hallo Welt" aus
+    print("Hallo" ~ " " ~ "Welt");
     
 
-## Calculation results
+## Ergebnisse von Berechnungen
 
-A calculation usually ends up with a result. So what to do with that?
+Naja, Berechnungen spucken ja Ergebnisse aus. Was macht man nun damit?
 
-### Assigning a variable
+### Einer Variable zuweisen
 
-There are two ways of assigning a value to a variable:
+Es gibt mehrere Arten, wie man einen Wert einer Variable zuweist:
 
     var test = 0;
     
     //Option 1:
-    //assigns test with the value 3 (1+2)
+    //weist test den Wert 3 (1+2) zu
     test = 1+2;
     
     //Option 2:
-    //assigns test with 5 (3+2)
+    //weist test den Wert 5 (3+2) zu
     test = test + 2;
     
     //Option 3:
-    //assigns test with 2 (5-3)
+    //weist test den Wert 2 (5-3) zu
     test -= 3;
     
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Option 1 und 2 weisen der Variable mittels `=` einen neuen Wert zu.  
+Für Anfänger wird das wohl der etwas einfachere Weg sein.
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+Option 3 zweist der Variable vor dem `-=` das Ergebnis einer normalen Subtraktion zu.  
+Alle Operatoren besitzen ihre eigenen Zeichen, welche oben in der Tabelle vorhanden sind.
 
-### Using the result otherwise
+### Das Ergebnis irgendwo anders verwenden
 
-You can always use the result of a calculation in a function or a conditional statement:
+Du kannst Ergebnisse auch direkt in einer Funktion oder in einer Abfrage verwenden:
 
-    //prints 4
+    //gibt 4 aus
     print(3+1);
     
-    //removes the item on array[4]
+    //entfernt das Element in array[4]
     recipes.remove(array[3+1]);
     
     //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+    if(3+1 == 2*2) {print("Ich habe etwas berechnet!")}

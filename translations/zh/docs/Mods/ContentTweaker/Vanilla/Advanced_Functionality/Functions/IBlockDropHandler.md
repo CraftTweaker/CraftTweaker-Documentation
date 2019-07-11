@@ -2,9 +2,9 @@
 
 The IBlockDropHandler function is used to allow for advanced block drop handling for [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) created with the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
 
-## Importing the class
+## 导入类
 
-You want to import the class? Here you go:
+You want to import the class? 你要这么做：
 
     import mods.contenttweaker.DropHandler;
     
@@ -26,8 +26,8 @@ Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
     block.setDropHandler(function(drops, world, position, state) {
     
-        drops.add(<minecraft:bedrock>);
-        drops.add(<minecraft:carrot> % 50);
+        drops.add(<item:minecraft:bedrock>);
+        drops.add(<item:minecraft:carrot> % 50);
     
         return;
     });

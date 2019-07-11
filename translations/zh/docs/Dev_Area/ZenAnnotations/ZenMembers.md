@@ -8,13 +8,13 @@ ZenMembers 是 ZenObject 的成员。
 ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。  
 那么，区别是什么？
 
-通常您使用 `@ZenGetter(value)`，除非您拥有许多返回相同类型的成员或是您不知道自己确切的成员。  
+通常你使用 `@ZenGetter(value)`，除非你拥有许多返回相同类型的成员或是你不知道自己确切的成员。  
 在这种情况下你可以使用 `@ZenMemberGetter`。  
 那么，区别是什么？
 
 - 带有 `@ZenGetter(value)` 注解的方法不需要任何参数，而带有 `@ZenMemberGetter` 注解的方法需要一个表示成员名称的字符串参数。
 - MemberGetter 只在没有找到其他 getter 时才会被执行。
-- 如果您只需要获得一个小的属性，您应该使用 `@ZendGetter(value)`
+- 如果你只需要获得一个小的属性，你应该使用 `@ZendGetter(value)`
 
 这同样适用于 ZenSetters/ZenMemberSetters。
 
@@ -35,8 +35,8 @@ ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。
     - 如果未设置或为 `""`，将会使用 `set + value`
     - 当为 `null` 时，将不会注册 ZenSetter
 
-如果您使用 `@ZenProperty` 您甚至可以同时忽略 getter/setter 方法。  
-如果您使用这些方法，您仍然需要添加 `@ZenMethod`。当您忽略这个方法时它会自动被生成。
+如果你使用 `@ZenProperty` 你甚至可以同时忽略 getter/setter 方法。  
+如果你使用这些方法，你仍然需要添加 `@ZenMethod`。当你忽略这个方法时它会自动被生成。
 
 ## 例子
 

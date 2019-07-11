@@ -1,10 +1,10 @@
-# Associative Arrays
+# Assoziatives Array
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ein Assoziatives Array (wird manchmal auch als "Map" oder "Dictionary" bezeichnet) ist ähnlich wie ein normales [Array](Arrays_and_Loops/) und kann mehrere Objekte in sich speichern. Der Unterschied zu normalen [Arrays](Arrays_and_Loops/) hier ist allerdings, dass man sich den Typ des Index (hier wird er auch als "Schlüssel" oder "Key" bezeichnet) aussuchen kann!
 
-## Declaring an Associative Array
+## Ein Assoziatives Array deklarieren
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Ein assoziatives Array deklariert man mit Hilfe von geschweiften Klammern `{}` und Doppelpunkten `:`
 
 ```JAVA
 val myAssocArray = {
@@ -13,85 +13,85 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Hier nun die Erklärung:
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `val myAssocArray =` eine ganz normale Deklaration
+- `{` Anzeichen für ein assoziatives Array!
+- `dirt : <minecraft:dirt>` wir weisen `<minecraft:dirt>` die Zeichenkette `dirt` zu
+- `,` Wir sind noch nicht ganz fertig!
+- `gold: <minecraft:gold_ingot>` wir weisen `<minecraft:gold_ingot>` die Zeichenkette `gold` zu
+- `}` Wir haben das Ende des Arrays erreicht!
+- `as IItemStack[string];` Wir haben nun ein assoziatives Array, welches Zeichenketten zur Indexierung von IItemStack-Objekten verwendet.
 
-Okay, so what do I need to think of when using these?
+Okay, und was sollte ich denn noch beachten?
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Du kannst jeden Datentyp, den du in ZenScript verwenden kannst, sowohl als Schlüssel, als auch Wert verwenden.
+- In der ersten Deklaration des Arrays kannst du für den Schlüssel keine bestehenden Variablen verwenden, da frei stehender Text als Zeichenkette interpretiert wird!
 
-## Refering to Items inside an Associative Array.
+## Auf Elemente innerhalb eines assoziativen Arrays zugreifen
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
+Man greift auf assoziative Arrays genau so zu, wie man es auch bei normalen [Arrays](Arrays_and_Loops/) macht:  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+Der einzige Unterschied ist eben, dass man nun nicht unbedingt einen Integer braucht, sondern etwas, was dem davor spezifizierten Typ entspricht!
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    &lt;minecraft:dirt&gt; : "Das bin ich"
 } as string[IItemStack];
 
 //array[index]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//Du kannst hier auch Variablen verwenden, solange diese den richtigen Typ besitzen
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+Es gibt eine Ausnahme, wenn du Zeichenketten als Indexwerte verwendest:  
+In diesem Fall kannst du auch den "memberGetter" verwenden:
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
-    "one" : "1",
+    //Man kann den Schlüssel auch in "" setzen
+    "eins" : "1",
 
-    //but you don't have to
-    two : "2"
+    //muss man allerdings nicht
+    zwei : "2"
 } as string[string];
 
-//You can either use the memberGetter
-print(assocWithStrings.one);
+//Man kann entweder den memberGetter verwenden
+print(assocWithStrings.eins);
 
-//Or the standard index Getter
-print(assocWithStrings["two"]);
+//Oder den normalen Index-Getter
+print(assocWithStrings["zwei"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Elemente in einem assoziativen Array bearbeiten
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+Wie in einem Array, kannst du durch `array[index] = neuerWert` die Werte auswechseln.  
+Es gibt allerdings einen Unterschied:  
+Arrays haben eine feste Größe, Maps nicht. Das heißt, dass du jederzeit neue Elemente an eine Map hängen kannst, solang du einen Schlüssel verwendest, der noch nicht verwendet wurde!
 
 ```JAVA
 val changingArray = {
-    <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
+    <minecraft:dirt> : "das bin ich",
+    <minecraft:gold_ingot> : "und ich mag es nicht"
 } as string[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//Überschreibt den Wert von gold_ingot
+changingArray[gg] = "und ich liebe es";
 
-//adds a new entry
+//fügt ein neues Element hinzu
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## Schlüssel und EntrySets aus einem assoziativen Array holen
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+Ein KeySet ist ein Array, welche alle Schlüssel einer Map enthält.  
+Ein ValueSet ist ein Array, welches alle Werte einer Map enthält.  
+Ein EntrySet ist ein Array, welches alle Einträge einer Map enthält (siehe unten).
 
 ```JAVA
 myAssocArray.keySet   //keySet
@@ -101,19 +101,19 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## Über ein assoziatives Array iterieren
 
-There are two Iterators that allow you to iterate over an Associative Array:
+Es gibt für diesen Zweck zwei verschiedene Iteratoren:
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- Der Schlüssel-Iterator: Iteriert über die Schlüssel, nutzt dazu eine Variable
+- Der Schlüssel-Wert-Iterator: Iteriert über die Schlüssel und die Werte, nutzt zwei Variablen
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+Wir erstellen nun ein assoziatives Array, welches Crafting-Rezepte speichert:
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- Die Schlüssel sind der Crafting-Output als [IItemStack](/Vanilla/Items/IItemStack/)
+- Die Werte sind der Crafting-Input als [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- Wir nutzen den Schlüssel-Iterator wie folgt: `for key in assocArray {doSth;} //soSth = machIrgendwas`
+- Wir können auch den Schlüssel-Wert-Iterator wie folgt verwenden: `for key, value in assocArray {doSth;}`
 
 ```JAVA
 import crafttweaker.item.IItemStack;
@@ -127,30 +127,30 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//Schlüssel sind grass, goldIngot, dirt
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//Schlüssel sind grass, goldIngot, dirt, die Werte sind die Rezepte dazu
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
 ```
 
-# ZenType Entry
+# ZenType "Entry"
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+Ein Map-Eintrag (Entry) besteht immer aus einem Schlüssel und einem Wert.  
+Ein Entry-Objekt bekommt man mit Hilfe der entrySet-Methode.
 
-You can use the getters to get `key` and `value`
+Mit Hilfe von Gettern bekommt man die Werte für `key` und `value`
 
 ```kotlin
-//Replace map with a reference to an existing map/associative array
+//Den ersten Eintrag aus einer beliebigen Map holen
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //Gibt den Schlüssel des Eintrags aus
+myEntry.value;  //Gibt den Wert des Eintrags aus
 ```

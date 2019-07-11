@@ -28,4 +28,4 @@
 - 所有方法都需要以一个表示扩展 Class 实例的参数开始。 此外，在扩展中的所有方法都必须是静态的（... 和公开的）。
 - 你可以注解所有的 Java 类
 - 你必须给注解传入一个 String 值（如 `crafttweaker.item.IItemStack`） 此 String 值必须表示已存在的 ZenClass 类名。
-- 在定义一个 ZenExpansion 类后，你仍然需要注册它。 建议您使用 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 来注册它。
+- 在定义一个 ZenExpansion 类后，你仍然需要注册它。 建议你使用 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 来注册它。

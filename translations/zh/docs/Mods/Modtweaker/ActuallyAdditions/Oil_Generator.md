@@ -1,21 +1,21 @@
-# Oil Generator
+# 原油发电机
 
-## Package
+## 所属包名
 
 `mods.actuallyadditions.OilGen`
 
-## Addition
+## 添加配方
 
-`genTime` defaults to 100 if omitted
+`genTime`燃烧时间默认为100？（没有单位）
 
-    //mods.actuallyadditions.OilGen.addRecipe(ILiquidStack fluid, int genAmount);
-    //mods.actuallyadditions.OilGen.addRecipe(ILiquidStack fluid, int genAmount, int genTime);
+    //mods.actuallyadditions.OilGen.addRecipe(流体名, 产出能量);
+    //mods.actuallyadditions.OilGen.addRecipe(流体名, 产出能量, 燃烧时间);
     
     mods.actuallyadditions.OilGen.addRecipe(<liquid:water>, 100);
     mods.actuallyadditions.OilGen.addRecipe(<liquid:lava>, 1000, 10);
     
 
-## Removal
+## 删除配方
 
-    //mods.actuallyadditions.OilGen.removeRecipe(ILiquidStack output);
+    //mods.actuallyadditions.OilGen.removeRecipe(移除该流体的发电配方);
     mods.actuallyadditions.OilGen.removeRecipe(<liquid:water>);

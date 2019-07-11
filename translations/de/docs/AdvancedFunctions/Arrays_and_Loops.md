@@ -6,21 +6,21 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 Ein Array wird mithilfe von eckigen Klammern erstellt, also mit ```[``` und ```]```.
 
-    //Array containing "Hello" and "World"
+    //Ein Array mit "Hello" und "World"
     val stringArray = ["Hello", "World"] as string[];
     
-    //Array containing 1-3
+    //Array mit den Zahlen 1-3
     val intArray = [1,2,3] as int[];
     
 
 Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, das hast du. Erinnerst du dich an ```recipes.add(out,[[],[],[]]);```? Dies nutzt drei Arrays mit jeweils bis zu drei Einträgen, um ein Crafting Rezept zu definieren.
 
-## Casting Arrays
+## Arrays casten
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? Das ist der Fall, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+Vielleicht hast du gemerkt, dass hinter den Arrays oben immer ein `as` stand.  
+Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. Das kann manchmal komische Fehler verursachen!  
+Geh lieber den sicheren Weg und weise deinen Arrays die richtigen Typen zu!  
+Darüber hinaus, wenn du zu nicht-primitiven Typen (also, alles außer strings, ints usw.) casten willst, denk dran, dass du die jeweiligen dazu passenden Pakete am Beginn des Skriptes importieren musst:
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
@@ -28,61 +28,61 @@ Also, if you cast to non-primitive types (everything except strings, ints and th
 
 ## Verschachtelte Arrays
 
-You can place Arrays in Arrays.
+Man kann auch Arrays innerhalb Arrays platzieren.
 
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beatuful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    val stringArray1 = ["Hallo","Welt"] as string[];
+    val stringArray2 = ["ich","bin"] as string[];
+    val stringArray3 = ["ein","schöner"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## Auf Elemente innerhalb eines Arrays zugreifen
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+Man greift auf die Elemente eines Arrays zu, in dem man den jeweiligen Platz des Elements in der Liste nimmt. Das erste Element eines Arrays ist die Nummer 0, das zweite die Nummer 1 und so weiter.
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+Wenn du auf ein Element in einem verschachtelten Array zugeifen willst, musst du dementsprechend immer zwei oder mehr der Listenplätze angeben.
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] ist "Hallo"
+    stringArray[1] ist "Welt"
+    stringArray[2] ist "ich"
+    stringArray[3] ist "bin"
     */
-    val stringArray = ["Hello","World","I","am"] as string[];
+    val stringArray = ["Hallo","Welt","ich","bin"] as string[];
     
-    //prints "Hello"
+    //gibt "Hallo" aus
     print(stringArray[0]);
     
     
-    //Nested Arrays
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beautiful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    //Verschachtelte Arrays
+    val stringArray1 = ["Hallo","Welt"] as string[];
+    val stringArray2 = ["ich","bin"] as string[];
+    val stringArray3 = ["ein","schöner"] as string[];
+    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!"]] as string[][];
     
     /*
-    stringArrayAll[0] is ["Hello","World"]
-    stringArrayAll[1] is ["I","am"]
-    stringArrayAll[2] is ["a","beautiful"]
-    stringArrayAll[3] is ["Butterfly","!"]
+    stringArrayAll[0] ist ["Hallo","Welt"]
+    stringArrayAll[1] ist ["ich","bin"]
+    stringArrayAll[2] ist ["ein","schöner"]
+    stringArrayAll[3] ist ["Schmetterling","!"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
-    etc.
+    stringArrayAll[0][0] ist "Hallo"
+    stringArrayAll[0][1] ist "Welt"
+    usw.
     */
     
-    //prints "World"
+    //gibt "Welt" aus
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# Schleifen
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+Eine Schleife ist eine Funktion, die sich wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente in einem Array anzuwenden.
 
-## For Loop
+## For-Schleifen
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+Die For-Schleife wird meistens dazu verwendet, um durch alle Elemente eines Arrays zu "iterieren". Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
+Mit dem `break`-Schlüsselwort kannst du das komplette durchlaufen des Arrays vorzeitig beenden.
 
     import crafttweaker.item.IItemStack;
     
@@ -94,53 +94,53 @@ You can use the `break` keyword to break the loop prematurely.
     //for [IntegerName, ] elementName in IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //definiert die Variable "item" nacheinander mit jedem Element aus IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Man kann diese Variable nun problemlos verwenden!
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //definiert "i" mit jeder Elementenummer von IArray (z.B. 0,1,2,...)
+        //definiert "item" mit jedem Element von IArray (z.B. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
+        //Man kann diese Variablen nun problemlos verwenden!
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //Erstellt Craftingrezepte für IArray aus den Items aus JArray und KArray (z.B. Dirt aus Gras und einer Holzaxt, Holzplanken aus Holz und einer Goldschaufel, Diamanten aus Eisenbarren und Smaragden)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //definiert "i" mit jeder Nummer von 0 bis 9 (z.B. 0,1,2,...,8,9)
         print(i);
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //definiert "i" mit jeder Nummer von 10 bis 19 (z.B. 10,11,12,...,18,19)
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //definiert "item" mit jedem Item, welches von der Mod mit der Mod-ID "minecraft" stammt und löscht das Craftingrezept
         recipes.remove(item);
     }
     
 
-## While Loop
+## While-Schleife
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+Die While-Schleife wird so lange ausgeführt, bis die gegebene Bedingung nicht mehr `true` (wahr) ist.  
+Alternativ kannst du die While-Schleife auch mit dem `break`-Schlüsselwort vorzeitig stoppen.
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //Wird die Ziffern 0 - 9 ausgeben, denn in der folgenden Iteration ist i < 10 falsch, da i den Wert 10 besitzt.
     while i < 10 {
         print(i); 
         i += 1;
     } 
     
-    print("After loop: " + i);
+    print("Nach der Schleife: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //Wird die Zahlen 10 - 6 ausgeben, da in der folgenden Iteration i == 5 ist und abgebrochen wird.
     while (i > 0) {
         if i == 5
             break;
@@ -148,7 +148,7 @@ Alternatively, you can stop it using the `break` keyword.
         i -= 1;
     }
     
-    print("After loop 2: " + i);
+    print("Nach der zweiten Schleife: " + i);
     
     
     for k in 1 .. 10 {
@@ -158,11 +158,11 @@ Alternatively, you can stop it using the `break` keyword.
     }
     
 
-# Adding items to an Array
+# Elemente in ein Array hinzufügen
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+Auch wenn es nicht empfehlenswert ist, kann man nachträglich Elemente an ein Array anhängen.  
+Man kann nur einzelne Elemente an ein Array anhängen, zwei Arrays addieren ist nicht möglich.  
+Dazu kannst du den Operator `+` verwenden:
 
 ```java
 import crafttweaker.item.IItemStack;

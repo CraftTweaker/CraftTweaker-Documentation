@@ -22,4 +22,4 @@ ZenScript 使用尖括号引用游戏中诸如物品、实体、矿物词典之�
     <ore:ingotIron>
     
 
-这将使您可以访问[矿物词典条目](/Vanilla/OreDict/IOreDictEntry/)中的 `ingotIron`条目。
+这将使你可以访问[矿物词典条目](/Vanilla/OreDict/IOreDictEntry/)中的 `ingotIron`条目。

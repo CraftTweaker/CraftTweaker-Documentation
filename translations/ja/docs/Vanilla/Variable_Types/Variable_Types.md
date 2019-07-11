@@ -1,12 +1,12 @@
-# Variable Types
+# 変数のタイプ
 
-As you surely already messed a bit with variables and values, you must've wondered, how CraftTweaker knows whether it's dealing with an Integer, an Item or an oreDic entry?
+もしかしたら変数と値とで混乱しているかもしれません。CraftTweakerが整数、アイテムあるいは鉱石辞書エントリをどの様に扱っているのか疑問に思いませんでしたか?
 
-The easiest way of declaring a variable is using ```var name = value;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
+変数を宣言する最も簡潔な構文は次のとおりです。 ```var name = value;``` これによって変数が作成され、文脈にて最適と考えられる型へとキャストされます。
 
-## Casting a variable to a specific type
+## 指定した型への変数のキャスト
 
-More complex scripts might require you to cast a variable as a specific type. For example, this would fail:
+より複雑なスクリプトを書こうとすると、変数を指定した型へキャストする必要が出てくると思います。 例えば、次のスクリプトはうまく動きません。
 
     var test;
     
@@ -14,9 +14,9 @@ More complex scripts might require you to cast a variable as a specific type. Fo
     recipes.remove(test);
     
 
-So why does this fail? This is because CT casts variables that aren't given a start value to the IAny Type. That type was made to facilitate some recipe handlers, though never really implemented, so it sometimes does more harm than good. It was originally intended as a type that can take the form of most other types so you don't need to change variables all the time, but the interface never got implemented.
+何故でしょう? なぜなら、CraftTweakerは値が定まっていない変数をIAnyという型にキャストするためです。 実装は実際には無いですが、この型はいくつかのレシピハンドラを簡単にするために用意されました。しかし、これは時折不都合だったりします。 元はほぼすべての型を扱える型として意図されていたため、変数を変更する必要は無いですが、インターフェースは何も実装されていません。
 
-Back to the topic: How can we fix this issue? By casting the variable test to ```IItemStack```, which is the type used for items. Unfortunately, some types need to be imported first, and this is one of those.
+閑話休題、この問題をどうやって解決するでしょうか? 変数testを ```IItemStack```にキャストすると解決できます。この型はアイテムを扱う型です。 残念なことに、いくつかの型を使うには最初にインポートしなければなりません。これはその一例です。
 
     import crafttweaker.item.IItemStack;
     var test as IItemStack;
@@ -25,23 +25,23 @@ Back to the topic: How can we fix this issue? By casting the variable test to ``
     recipes.remove(test);
     
 
-## List of Variable Types
+## 変数の型の一覧
 
-Here's an (incomplete) List of most variable types
+変数の型の(不完全な)一覧です。
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Example                                              | Import                                    |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
-| Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
-| [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |
-| [IIngredient](/Vanilla/Variable_Types/IIngredient/) | Single or Multiple Items (e.g. `<minecraft:dirt>`, `<ore:ingotIron>`,...)                 | `var test = <minecraft:dirt> as IIngredient;`  | import crafttweaker.item.IIngredient;     |
-| [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)    | Multiple Items from an OreDict (e.g. `<ore:ingotIron>`, `<ore:ingotGold>`,...)            | `var test = <ore:ingotIron> as IOreDictEntry;` | import crafttweaker.oredict.IOreDictEntry |
-| Boolean (bool)                                      | Booleans are either true or false.                                                                    | `var test = false as bool;`                          |                                           |
-| Byte (byte)                                         | Bytes values are whole numbers from 0 to 255 ()                                                       | `var test = 125 as byte;`                            |                                           |
-| Floating Point (float)                              | Decimals                                                                                              | `var test = 1.25 as float;`                          |                                           |
-| Double Precision (double)                           | Like Floating Points, just more precise and with a higher number range                                | `var test = 1.25 as double;`                         |                                           |
-| Long (long)                                         | Like Integer, but with a higher number range (usually int is just fine)                               | `var test = 30 as long;`                             |                                           |
-| Null (null)                                         | Null, nothing, nada. Not really a type but still useful                                               | `var test = null;`                                   |                                           |
-| Short (short)                                       | Like Integer, but with a smaller number Range                                                         | `var test = 16 as short;`                            |                                           |
-| String (string)                                     | A string is a text. Here you usually won't need the "as" as anything in "s is automatically a string. | `var test = "Hello World!" as string;`               |                                           |
-| Void (void)                                         | Even less than null. You will probably only need the void type when dealing with functions            | `var test as void;`                                  |                                           |
-| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)      | Same as IItemStack, only for liquids                                                                  | `var test = <liquid:water> as ILiquidStack;`   | import crafttweaker.liquid.ILiquidStack;  |
+| 名前(CraftTweaker)                                    | 説明                                                                                | 例                                                    | Import                                    |
+| --------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
+| Integer型(int)                                       | Integer型は、文字通り整数を表します(1, 2, 3...など)。但し、上限は2,147,483,647までです。                      | `var test = 10 as int;`                              |                                           |
+| [IItemStack](/Vanilla/Items/IItemStack/)            | 1つのアイテムです。                                                                        | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |
+| [IIngredient](/Vanilla/Variable_Types/IIngredient/) | 1つ以上のアイテムを表します(例: `<minecraft:dirt>`, `<ore:ingotIron>`,...)。         | `var test = <minecraft:dirt> as IIngredient;`  | import crafttweaker.item.IIngredient;     |
+| [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)    | 指定した鉱石辞書名に対応する複数のアイテムです(例: `<ore:ingotIron>`, `<ore:ingotGold>`,...)。 | `var test = <ore:ingotIron> as IOreDictEntry;` | import crafttweaker.oredict.IOreDictEntry |
+| Boolean型(bool)                                      | Boolean型はtrueかfalseの値を持ちます。                                                       | `var test = false as bool;`                          |                                           |
+| Byte型(byte)                                         | Byte型は0から255までの整数を表します。                                                           | `var test = 125 as byte;`                            |                                           |
+| 単精度浮動小数点数(float)                                    | 10進法の小数点を表します。                                                                    | `var test = 1.25 as float;`                          |                                           |
+| 倍精度浮動小数点数(double)                                   | 単精度浮動小数点数と似ていますが、より精度が高く、より広い範囲の値を表せます。                                           | `var test = 1.25 as double;`                         |                                           |
+| Long型(long)                                         | Integer型と似ていますが、より広い範囲の値を表せます。普通はintで十分です。                                        | `var test = 30 as long;`                             |                                           |
+| Null (null)                                         | Null、無いこと、無。 厳密には型ではないですが、便利です。                                                   | `var test = null;`                                   |                                           |
+| Short型(short)                                       | Integer型と似ていますが、表せる値の範囲が狭いです。                                                     | `var test = 16 as short;`                            |                                           |
+| 文字列型(string)                                        | 文字列型とはテキストです。 ダブルクォーテーション「"」で括られたものは自動的に文字列型として解釈されます。なので、普通"as"でキャストする必要はありません。  | `var test = "Hello World!" as string;`               |                                           |
+| Void (void)                                         | nullより更に小さいです。 おそらく、関数に対してはvoidだけ必要になるでしょう。                                       | `var test as void;`                                  |                                           |
+| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)      | IItemStackと同じ様に、液体に対して使います。                                                       | `var test = <liquid:water> as ILiquidStack;`   | import crafttweaker.liquid.ILiquidStack;  |

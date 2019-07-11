@@ -1,61 +1,61 @@
-# Getting Started with scripts
+# スクリプト入門
 
-Crafttweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
+Crafttweakerは独自のプログラミング言語`Zenscript`を使用します。Zenscriptは`.zs`ファイルから読まれ、それらは`<gamedir>/script`に保存します。
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
+Zenscriptは"トップダウン型"のプログラミング言語です。つまり、`Import`をファイルの一番上に書かなければいけません。また、`変数の宣言`も書く必要があります。しかし、それには制限がありません。`変数の宣言`はどこの行でも書くことができますが、その行の前までの行では`変数`にアクセスすることはできません。
 
-## Introduction
+## 導入
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+今までの中でModpackを作ったとき、Modをそのままインストールしただけではまとまりのあるプレイができなかった覚えはありませんか? Modはほとんどがそれぞれほぼ独自に開発されているので、他のものと比べて充実しすぎているものもあるかもしれません。 また、アイテムの作成に際してより良いレシピを思いつくかもしれません。 もしくは、あるModの特定のアイテムだけを、ModPackから除外したいと思うでしょう。 あるいは、鉱石辞書において登録されたアイテムが多すぎたり少なすぎたりする項目を見つけたりするでしょう。 CraftTweakerはこれらの思いを全て実現できます。
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+バニラのMinecraftをサポートするコア機能に加え、Mod固有のレシピや動作をも変更できる総合ライブラリも提供しています。
 
-## Scripts
+## スクリプト
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of Crafttweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+スクリプトは`<minecraftdir>/scripts`に保存され、Minecraftの起動中での`PreInitialization`の段階で読み込まれます。過去のCrafttweakerのバージョンとは違い、ゲーム中にスクリプトをリロードすることはできません。Mojangが1.12で行った改変によるもので、回避策はありません。 また、スクリプトは**サーバーとクライアントの両方**に導入する必要があります。
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+スクリプトは`.zs`の拡張子で保存されます。また、`.zip`に圧縮してもスクリプトをロードすることができます。
 
-### Writing your first script
+### あなたの最初のスクリプトを書こう
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+スクリプトを書き始めるには、基本的な、`hello.zs`ファイルを`<minecraftdir>/scripts>`に作ります。
 
-In `hello.zs` put the following line
+`hello.zs`の中には次の文を書いてください。
 
     print("Hello world!");
     
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+そして、Minecraftを起動して、`crafttweaker.log`ファイルを見てください。
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+`crafttweaker.log`は`<minecraftdir>`にあり、プレーンテキストを読めるソフトウェアで読むことができます。
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+スクリプトファイルを編集する際は、Notepad++もしくはSublime Textを使うのをお勧めしますが、どのソフトウェアでも読むことができます。
 
-### The crafttweaker.log file
+### crafttweaker.log ファイル
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+`crafttweaker.log`ファイルは、ログの出力に下のような構文が使われます。
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
 
-Using the example above, the output would be:
+上記に書いた例を使うと、以下のように出力されます。
 
     [PREINITIALIZATION][CLIENT][INFO] Hello world!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+以上の構文はデバッグの際にのみ使われ、コマンドダンプの時には使われません。その場合、メッセージのみが書かれます。これによって、ダンプされたテキストのコピーペーストが簡単にできます。
 
-### Comments
+### コメント
 
-Comments can be used to make your script files more readable and easier to understand!
+コメントは、あなたのスクリプトを読みやすく、よりわかりやすくするために使います。
 
-ZenScript supports 3 types of comments, being:
+ZenScriptでは3つの種類のコメントの書き方ができます。
 
-Single line: `// I'm a single line comment!`
+1行コメント: `// I'm a single line comment!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+一行コメントの別の方法 : `# I'm also a single line comment!`
 
-Multiline:
+複数行のコメント: 
 
     /* I'm 
     a

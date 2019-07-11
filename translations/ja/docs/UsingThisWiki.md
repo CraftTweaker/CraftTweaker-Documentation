@@ -3,42 +3,42 @@
 当WikiはCraftTweakerが用意した「型」やそれらの用途に付いての情報の提供を意図しています。  
 より詳細な情報は、それぞれのページに例を交えて説明してあります。
 
-# Terms
+# 用語
 
-Before we start, there are some terms you might want to get used to:
+触る前に慣れると良い用語がいくつかあります。
 
 ## ZenGetter
 
-A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
-We use the ZenGetter like this:
+ZenGetterとは、指定したオブジェクトから情報を得るための手段です。 例えば、[IItemStack](/Vanilla/Items/IItemStack/)は"displayName"というZenGetterを持っています。  
+ZenGetterは次のように使用します。
 
     //object.zenGetter;
     <minecraft:iron_ingot>.displayName;
     
 
-A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
+ZenGetterは常に何かの値を返します。この例では、アイテムの名前「Iron Ingot」の文字列が返ります。
 
 ## ZenSetter
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+ZenSetterはZenGetterと似た挙動をとります。但し唯一の違いとして、ZenGetterは値の取得、ZenSetterは値の設定を担当します。  
+[IItemStack](/Vanilla/Items/IItemStack/)には同名の"displayName"というZenSetterも用意されているので、例はそのままにしましょう。 エントリから、これが文字列だということがわかりましたね。
 
-We use the ZenSetter like this:
+ZenSetterは次のように使用します。
 
     //object.zenSetter = newValue;
     <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
     
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+ZenSetterは値を返しません。なので、これは専ら値を設定するためのものであり、取得するものではありません。
 
-## Assign operators
+## 代入演算子
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+ZenGetterとZenSetterとで同じ名前で用意されている場合(例: [IItemStack](/Vanilla/Items/IItemStack/)の"displayName")、`=`以外の代入演算子が使用可能になります。
 
-Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
-Let's see what they do:
+対象の変数型によって次の代入演算子が使用できます: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
+では、これらの使われ方を見てみましょう。
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
+    //同じ名前のZenGetterとZenSetterが有るので、最初の例とその次の例は同じ動作をします。
     //object.zenSetter += value;
     //object.zenSetter = object.zenGetter + value;
     

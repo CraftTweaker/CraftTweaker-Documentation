@@ -1,16 +1,16 @@
-# Ball of Fur
+# 毛球
 
-## Package
+## 所属包名
 
 `mods.actuallyadditions.BallOfFur`
 
-## Addition
+## 添加配方
 
-    //mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
+    //mods.actuallyadditions.BallOfFur.addReturn(物品输出, 几率);
     mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
     
 
-## Removal
+## 删除配方
 
-    //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
+    //mods.actuallyadditions.BallOfFur.removeReturn(被禁止输出的物品);
     mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);

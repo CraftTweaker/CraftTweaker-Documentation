@@ -1,18 +1,18 @@
-# Global Functions
+# グローバル関数
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
-Here's the list:
+グローバル関数とは、[インポート](/AdvancedFunctions/Import/)なしで呼び出せる関数のことです。  
+定義されているものは次のとおりです。
 
 ## print
 
-Prints the string to the crafttweaker log as information.
+Crafttweakerのログに文字列を出力します。
 
 ```java
 //print(String message);
 print("Hello World!");
 ```
 
-Returns nothing
+返り値なし
 
 ## totalActions
 
@@ -21,31 +21,31 @@ Returns nothing
 totalActions();
 ```
 
-Returns an int that shows how many global functions are registered.
+返り値はint型、登録されたグローバル関数の個数を表します。
 
 ## enableDebug
 
-Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
+デバッグモードを有効にします。  
+但し、[デバッグプリプロセッサ](/AdvancedFunctions/Preprocessors/DebugPreprocessor/)の使用を推奨します。
 
 ```java
 //enableDebug();
 enableDebug();
 ```
 
-Returns nothing
+返り値なし
 
 ## isNull
 
-Checks if a given object is null.  
-Doesn't work on primitives!
+渡されたオブジェクトがnullかをチェックします。  
+プリミティブ型に対しては動作しません。
 
 ```java
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
 
-Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+返り値は真偽値型です。 注意: 思ったとおりに動かない場合、次の方法で真偽値型にキャストしてみてください。`<minecraft:dirt>as bool`
 
 ## max
 
@@ -54,7 +54,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 max(10, 11);
 ```
 
-Returns an int
+戻り値はint型です。
 
 ## min
 
@@ -63,7 +63,7 @@ Returns an int
 min(10, 11);
 ```
 
-Returns an int
+戻り値はint型です。
 
 ## pow
 
@@ -72,22 +72,22 @@ Returns an int
 pow(2.0, 4.0);
 ```
 
-Returns a double
+戻り値はdouble型です。
 
-## Global Fields
+## グローバルフィールド
 
-| Field      | Description                                                                                    |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |
+| フィールド      | 説明                                                                                      |
+| ---------- | --------------------------------------------------------------------------------------- |
+| brewing    | [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)にアクセスするために使います                |
+| client     | [client Methods](/Vanilla/Game/IClient/)にアクセスするために使います                                  |
+| events     | [Event Handler](/Vanilla/Events/IEventManager/)にアクセスするために使います。                          |
+| format     | [Formatting Handler](/Vanilla/Utils/IFormatter/)にアクセスするために使います                          |
+| furnace    | [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)にアクセスするために使います。             |
+| game       | [Game functions](/Vanilla/Game/IGame/)にアクセスするために使います。                                   |
+| itemUtils  | [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)にアクセスするために使います。                          |
+| loadedMods | [loaded Mods list](/Vanilla/Game/Mods/)にアクセスするために使います。                                  |
+| logger     | [logger](/Vanilla/Utils/Logger/)にアクセスするために使います。                                         |
+| oreDict    | [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)にアクセスするために使います。                      |
+| recipes    | [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)にアクセスするために使います。      |
+| server     | [server Methods](/Vanilla/Game/IServer/)にアクセスするために使います。                                 |
+| vanilla    | Vanilla Functionsにアクセスするために使います。(現在は [vanilla.seeds](/Vanilla/Recipes/Seeds/)のみしか使えません) |

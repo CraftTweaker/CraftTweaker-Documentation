@@ -46,9 +46,9 @@
 | methodName  | String          | `"getValue"`     |
 
 可选参数也支持默认值。  
-如果您想提供默认值，您可以通过传入 `value` 成员代表参数的字符串来实现这一点。
+如果你想提供默认值，你可以通过传入 `value` 成员代表参数的字符串来实现这一点。
 
-如果您只想要基本类型，则您已设置。
+如果你只想要基本类型，则你已设置。
 
     @ZenMethod
     public static void print(@Optional("heyho") String value) {
@@ -62,7 +62,7 @@
     }
     
 
-如果您想要一个不是编译时实例的默认对象或默认基本类型（所有注解成员都需要编译时实例！），你可以设置其他两个成员：这会调用传入的（静态）方法 `methodClass.methodName(value)` 以替换参数。 如果找不到对应方法，将报错并插入 null。
+如果你想要一个不是编译时实例的默认对象或默认基本类型（所有注解成员都需要编译时实例！），你可以设置其他两个成员：这会调用传入的（静态）方法 `methodClass.methodName(value)` 以替换参数。 如果找不到对应方法，将报错并插入 null。
 
     @ZenMethod
     public static void print2(@Optional(value = "minecraft:iron_ingot", methodClass = Optionals.class, methodName = "getFromString") IItemStack value) {

@@ -1,78 +1,78 @@
-# Custom Functions
+# Eigene Funktionen
 
-Sometimes the functions supplied by CT and addons just won't do it. Here's how to write your own functions! You can even nest functions in functions
+Manchmal reichen die Funktionen von CraftTweaker und dessen Addons einfach nicht aus. Deswegen kannst du auch eigene Funktionen schreiben! Du kannst sogar Funktionen in Funktionen verschachteln.
 
-## Basic Syntax
+## Standard-Syntax
 
-Generally, you declare a static using:
+Normalerweise definiert man eine Funktion in etwa so:
 
 ```Java
-function NAME ([arguments[as type]]) [as returnType]{
+function NAME ([argumente[as typ]]) [as returnTyp]{
     [Statements]
-    [return VALUE;]
+    [return WERT;]
 }
 ```
 
-The things in brackets are optional, depending on what you want to achieve. Let's take a closer look at specific functions.
+Die Dinge in den eckigen Klammern sind optional. Schauen wir uns ein paar bestimmte Funktionen an:
 
-## Static Functions
+## Statische Funktionen
 
-Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](Cross-Script_Reference).
+Statische Funktionen werden bereitgestellt, bevor das Skript gestartet wird und es kann von überall drauf zugegriffen werden.  
+Du kannst sogar auch auf Funktionen zugreifen, welche [außerhalb des Skriptes definiert](Cross-Script_Reference) wurden.
 
-### Void functions
+### Funktion ohne Rückgabewert
 
-Void functions are functions that will not return any value.
+Funktionen ohne Rückgabewert geben, wie der Name es sagt, keinen Wert zurück.
 
 ```Java
-//calls the function tens() without arguments
+//ruft die Funktion tens() ohne Parameter auf
 tens();
 
-//calls the function realTens() with the String "Hello World!" as argument
+//ruft die Funktion realTens() mit der Zeichenkette "Hello World!" als Parameter auf
 realTens("Hello World!");
 
 
-//crates function tens() with no required arguments
+//erstellt die Funktion tens() ohne Parameter
 function tens(){
-    //Calls function realTens() with "" as argument
+    //Ruft die Funktion realTens() auf mit "" als Parameter
     realTens("");
 }
 
 
-//creates function realTens() with one string required as argument
+//erstellt die Funktion realTens() mit einer benötigten Zeichenkette als Parameter
 function realTens(a as string){
-    //prints the argument 10 times
+    //gibt den Parameter 10 mal aus
     for i in 1 to 11{
         print(a);
     }
 }
 ```
 
-### Return functions
+### Funktion mit Rückgabewert
 
-You can also specify a value that should be returned by a function. It is recommended using the `as` keyword to define the return type.
+Du kannst auch einen Rückgabewert definieren, welcher beim ausführen der Funktion zurückgegeben wird. Wir empfehlen dir dazu mit dem Schlüsselwort `as` den Rückgabetyp zu definieren.
 
 ```Java
-//calls add function with 1 and 99 as parameters
+//ruft die Funktion add mit 1 und 99 als Parameter auf
 val result = add(1,99);
 print(result);
 
-//you can place the add function inside the print function as well
+//du kannst die add-Funktion auch in die print-Funktion setzen
 print(add(2,64));
 
-//defines function add() with a and b as parameters (both set to be Integers!) and sets the return type to Integer
+//definiert die Funktion add() mit a und b als Parameter vom Typ Integer und setzt den Typ des Rückgabewerts auf Integer
 function add(a as int,b as int) as int{
-    //returns the sum of a and b
+    //gebe die summe von a und b zurück
     return a+b;
 }
 ```
 
-## Functions as variables
+## Funktionen als Variablen
 
-You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
-You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
+Du kannst Funktionen auch wie Variablen verwenden. In diesem Fall werden diese als eine separate Klasse erstellt. Darüber hinaus funktionieren diese dann ähnlich wie statische Funktionen, man ruft sie mit dem Namen ihrer Variable auf.  
+Man kann sie somit wie [globale Variablen](/AdvancedFunctions/Global_Static_Variables/) verwenden.
 
-If you need to cast the method (as you do for globals) you can use this:
+Wenn man die Funktion also "casten" muss (wie es bei globalen Werten der Fall ist) kann man das so machen:
 
     global addition as function(int, int)int = function (a as int, b as int) as int {
         return a + b;

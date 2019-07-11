@@ -1,18 +1,18 @@
-# Cross-Script Reference
+# Referenzen auf andere Skripte
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Auf alle Skripte mit [statischen Variablen](/AdvancedFunctions/Global_Static_Variables/) oder [eigenen Funktionen](/AdvancedFunctions/Custom_Functions/) kann von anderen Skripten aus zugegriffen werden.  
+Mit der Punkt-Notation kann man auf die Datenfelder/Funktionen anderer Skripte zugreifen.
 
-## Specifications
+## Spezifiktationen
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- Eine Referenz auf ein anderes Skript beginnt immer mit `scripts.`
+- Danach nimmst du den Pfad relativ zum "scripts"-Ordner (z.B. `scripts.meinUnterordner.a`)
+- Wenn du willst, kannst du die Punkt-Notation auch in einem [Import-Statement](/AdvancedFunctions/Import/) verwenden
+- ZenScript sucht erst nach passenden Ordnern und danach nach passenden Dateien oder Werten
 
-## Example
+## Beispiel
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Angenommen, wir haben zwei Skripte: `a.zs` und `b.zs`.
 
 a.zs:
 
