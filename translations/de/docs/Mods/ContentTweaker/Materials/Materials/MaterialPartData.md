@@ -165,7 +165,7 @@ Below you will find a list for CoT's basic Part Types:
 | drag       | A "float" (e.g. "1.0") | No        |
 | riddenDrag | A "float" (e.g. "1.0") | No        |</details>
 
-## Example
+## Beispiel
 
 ```JAVA
 import mods.contenttweaker.MaterialSystem;
