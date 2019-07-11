@@ -6,7 +6,7 @@ The Crusher package can be used to add/remove recipes to/from the Immersive Engi
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type             | Data Type                                           |
 | -------- | ---------------- | --------------------------------------------------- |
