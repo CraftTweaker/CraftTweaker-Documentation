@@ -3,7 +3,7 @@
 The ItemToss Event is fired whenever an Item is being tossed from a player's inventory.  
 Canceling this event will prevent the item from entering the world, thus causing the item to be deleted.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ItemTossEvent`  
