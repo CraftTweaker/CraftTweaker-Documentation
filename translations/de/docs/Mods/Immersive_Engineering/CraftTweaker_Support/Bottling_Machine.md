@@ -4,7 +4,7 @@
 
 You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type   | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
