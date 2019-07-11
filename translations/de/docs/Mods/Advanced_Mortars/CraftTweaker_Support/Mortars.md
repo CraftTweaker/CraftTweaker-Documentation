@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### Beispiel
 
 ```JAVA
 ///// "Crushing"
