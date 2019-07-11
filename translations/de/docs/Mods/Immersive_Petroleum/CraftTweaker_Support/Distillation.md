@@ -4,7 +4,7 @@
 
 The Distillation "addRecipe" method consists of:
 
-| Type          | Data Type                                            |
+| Type          | Datentyp                                             |
 | ------------- | ---------------------------------------------------- |
 | Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
 | Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
