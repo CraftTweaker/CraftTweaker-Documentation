@@ -27,7 +27,7 @@ It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by s
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
-| ZenGetter   | Description                             | Return Type    |
+| ZenGetter   | Beschreibung                            | Return Type    |
 | ----------- | --------------------------------------- | -------------- |
 | definition  | Returns the gas' definition             | IGasDefinition |
 | NAME        | Returns the gas' name                   | String         |
@@ -47,7 +47,7 @@ You can set the Object's amount (gas volume in Millibuckets) in two ways, which 
 An IGasDefinition object contains information on a gas.  
 You can get such an object using `gasStack.definition` (check the table above)
 
-| ZenGetter   | Description                            | Return Type |
+| ZenGetter   | Beschreibung                           | Return Type |
 | ----------- | -------------------------------------- | ----------- |
 | NAME        | Returns the referred gas' name         | String      |
 | displayName | Returns the referred gas' display name | String      |
