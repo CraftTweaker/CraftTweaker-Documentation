@@ -15,7 +15,7 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 | Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Energy  | Integer                                      |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example
@@ -30,7 +30,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example
