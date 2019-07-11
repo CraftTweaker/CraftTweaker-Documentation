@@ -13,7 +13,7 @@ You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 | Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time        | Integer                                             |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
