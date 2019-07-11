@@ -9,7 +9,7 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
     import mods.thermalexpansion.Factorizer;
     
 
-## Add Recipes
+## Rezepte hinzufügen
 
 You can add oneway split/combine recipes or two-way bindings.
 
