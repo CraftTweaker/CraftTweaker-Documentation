@@ -3,7 +3,7 @@
 The EntityLivingDeath event is fired whenever an Entity is about to die.  
 It can be canceled to let the entity live.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingDeathEvent`  
