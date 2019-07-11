@@ -4,7 +4,7 @@
 
 You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 <table>
   <tr>
