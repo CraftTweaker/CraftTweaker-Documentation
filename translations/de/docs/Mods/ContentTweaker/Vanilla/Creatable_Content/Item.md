@@ -63,7 +63,7 @@ After you have called this function, you cannot un-register the item or change a
     item.register();
     
 
-## Example Script
+## Skript-Beispiel
 
     #loader contenttweaker
     import mods.contenttweaker.VanillaFactory;
