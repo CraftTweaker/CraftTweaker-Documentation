@@ -28,7 +28,7 @@ The First method allows you to create a position at the given coordinates.
 
 ## ZenGetters and ZenSetters
 
-| ZenGetter | ZenSetter | Description                    |
+| ZenGetter | ZenSetter | Beschreibung                   |
 | --------- | --------- | ------------------------------ |
 | x         | x         | Returns the position's x value |
 | y         | y         | Returns the position's y value |
