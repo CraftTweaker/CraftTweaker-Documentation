@@ -18,7 +18,7 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 | Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
 | Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
