@@ -4,7 +4,7 @@
 
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type        | Data Type                                           |
 | -------- | ----------- | --------------------------------------------------- |
