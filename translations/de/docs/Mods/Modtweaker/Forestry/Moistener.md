@@ -35,7 +35,7 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```
 
-| Parameter      | Type                                     | Description                                                                                  |
+| Parameter      | Type                                     | Beschreibung                                                                                 |
 | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
 | item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
 | product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |
