@@ -21,7 +21,7 @@ You can set these Properties
 
 | ZenMethod               | Parameter                                                       |
 |-------------------------|-----------------------------------------------------------------|
-| setName(name)           | String name                                                     |
+| setName(name)           | string name                                                     |
 | setColor(color)         | int color                                                       |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | setHasEffect(hasEffect) | boolean hasEffect                                               |

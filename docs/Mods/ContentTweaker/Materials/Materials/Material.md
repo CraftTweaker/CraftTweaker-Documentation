@@ -14,10 +14,10 @@ You can retrieve the following information from a Material:
 
 | ZenMethod            | Return Type | Description                                    |
 |----------------------|-------------|------------------------------------------------|
-| getName()            | String      | Returns the Material's name                    |
+| getName()            | string      | Returns the Material's name                    |
 | getColor()           | int         | Returns the Material's color                   |
 | isHasEffect()        | boolean     | Returns if the material has the glowing effect |
-| getUnlocalizedName() | String      | Returns the Material's unlocalized name        |
+| getUnlocalizedName() | string      | Returns the Material's unlocalized name        |
 
 ## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 

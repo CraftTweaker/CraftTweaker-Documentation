@@ -25,7 +25,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | canPassengerSteer           |                     | boolean                                      |
 | canRiderInteract            |                     | boolean                                      |
 | controllingPassenger        |                     | *IEntity*                                    |
-| customName                  | getCustomName()     | String                                       |
+| customName                  | getCustomName()     | string                                       |
 | definition                  |                     | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)*     |
 | dimension                   | getDimension()      | int                                          |
 | doesTriggerPressurePlate    |                     | boolean                                      |
@@ -87,7 +87,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 |-----------------------------|---------------------|----------------------------------------------|
 | air                         | setAir(seconds)     | int                                          |
 | alwaysRenderNameTag         |                     | boolean                                      |
-| customName                  | setCustomName(name) | String                                       |
+| customName                  | setCustomName(name) | string                                       |
 | dimension                   | setDimension(id)    | int                                          |
 | fire                        | setFire(seconds)    | int                                          |
 | hasNoGravity                |                     | boolean                                      |

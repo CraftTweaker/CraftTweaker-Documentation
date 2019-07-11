@@ -41,9 +41,9 @@ All Objects will be `null`
 
 | Member      | Type            | Default value    |
 |-------------|-----------------|------------------|
-| value       | String          | `""`             |
+| value       | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
-| methodName  | String          | `"getValue"`     |
+| methodName  | string          | `"getValue"`     |
 
 The Optional annotation also supports default values.  
 If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.  
