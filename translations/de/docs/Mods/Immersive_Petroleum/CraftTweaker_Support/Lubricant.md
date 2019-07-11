@@ -7,7 +7,7 @@
 | Input    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | mB/4tick | Integer                                      |
 
-### Code Example:
+### Beispielcode:
 
 ```JAVA
 mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);
