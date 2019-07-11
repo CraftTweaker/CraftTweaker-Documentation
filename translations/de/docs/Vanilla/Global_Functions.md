@@ -76,7 +76,7 @@ Returns a double
 
 ## Global Fields
 
-| Field      | Description                                                                                    |
+| Field      | Beschreibung                                                                                   |
 | ---------- | ---------------------------------------------------------------------------------------------- |
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
