@@ -10,7 +10,7 @@ You usually only need to import a class when directly using the name, such as in
     import extrautilities2.Tweaker.IMachine;
     
 
-## Add Recipes
+## Rezepte hinzufügen
 
 There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
 Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  
