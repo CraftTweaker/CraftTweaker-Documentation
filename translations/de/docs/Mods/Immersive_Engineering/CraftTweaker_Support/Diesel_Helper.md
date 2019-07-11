@@ -8,7 +8,7 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 
 ## Add Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input  | Integer                                      |
@@ -24,7 +24,7 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 
 ## Remove Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
@@ -39,7 +39,7 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 ## Add Drill Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
@@ -54,7 +54,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 ## Remove Drill Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
