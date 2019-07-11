@@ -20,7 +20,7 @@ Be careful though, as any changes done to this template after the the registerin
 
 You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`
 
-Example:
+Beispiel:
 
     chickenRep.layItem = <minecraft:iron_ingot>;
     print(chickenRep.layItem.displayName);
