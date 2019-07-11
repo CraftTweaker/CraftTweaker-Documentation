@@ -22,7 +22,7 @@ ilt().clear()
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
