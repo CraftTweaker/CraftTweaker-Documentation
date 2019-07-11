@@ -40,7 +40,7 @@ mBuilder.build();
 
 This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
 
-## Example Script
+## Skript-Beispiel
 
 ```JAVA
 import mods.contentTweaker.MaterialSystem;
