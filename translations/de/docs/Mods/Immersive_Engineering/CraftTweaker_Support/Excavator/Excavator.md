@@ -6,7 +6,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Data Type |
+| Required | Type                | Datentyp  |
 | -------- | ------------------- | --------- |
 | Required | Name                | String    |
 | Required | Mineral Weight      | Integer   |
@@ -29,9 +29,9 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ## Remove Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Required | Type | Datentyp |
+| -------- | ---- | -------- |
+| Required | Name | String   |
 
 ### Example
 
