@@ -10,7 +10,7 @@ An object of `mods.gregtech.material.Material` represents a material in GregTech
 
 Properties:
 
-| Name               | Type                         | Description                                      |
+| Name               | Type                         | Beschreibung                                     |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
 | color              | int                          | Color of material in RGB format                  |
 | chemicalFormula    | String                       | Chemical formula of this material                |
@@ -21,7 +21,7 @@ Properties:
 
 Getters:
 
-| Name            | Type   | Description                          |
+| Name            | Type   | Beschreibung                         |
 | --------------- | ------ | ------------------------------------ |
 | radioactive     | bool   | True if this material is radioactive |
 | protons         | long   |                                      |
@@ -35,7 +35,7 @@ Getters:
 
 Methods:
 
-| Name (Parameters)             | Description           |
+| Name (Parameters)             | Beschreibung          |
 | ----------------------------- | --------------------- |
 | addFlags(String... flagNames) | Add generation flags  |
 | hasFlag(String flagName)      | Has a generation flag |
@@ -48,13 +48,13 @@ Methods:
 
 Properties:
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| fluidTemperature | int  |             |
+| Name             | Type | Beschreibung |
+| ---------------- | ---- | ------------ |
+| fluidTemperature | int  |              |
 
 Getters:
 
-| Name      | Type                                                       | Description           |
+| Name      | Type                                                       | Beschreibung          |
 | --------- | ---------------------------------------------------------- | --------------------- |
 | hasFluid  | bool                                                       |                       |
 | hasPlasma | bool                                                       |                       |
@@ -68,7 +68,7 @@ Getters:
 
 Properties:
 
-| Name                | Type          | Description                                                                                                                                  |
+| Name                | Type          | Beschreibung                                                                                                                                 |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
 | byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
@@ -80,7 +80,7 @@ Properties:
 
 Getters:
 
-| Name          | Type                | Description                                         |
+| Name          | Type                | Beschreibung                                        |
 | ------------- | ------------------- | --------------------------------------------------- |
 | oreByProducts | List<fluidmaterial> | List of ore by products                             |
 | harvestLevel  | int                 | Tool level needed to harvest block of this material |
@@ -91,7 +91,7 @@ Getters:
 
 Properties:
 
-| Name           | Type          | Description                                                                                          |
+| Name           | Type          | Beschreibung                                                                                         |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
@@ -109,7 +109,7 @@ Getters:
     </th>
     
     <th>
-      Description
+      Beschreibung
     </th>
   </tr>
   
@@ -188,7 +188,7 @@ material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a en
 
 These flags are applicable to materials.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
+| Name (case-insensitive)           | Beschreibung                                                                                                                                                                                                                                        |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
 | DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
