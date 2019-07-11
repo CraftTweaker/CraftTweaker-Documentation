@@ -12,7 +12,7 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## Rezept hinzufügen
 
-| Required | Type     | Data Type                                                            |
+| Required | Type     | Datentyp                                                             |
 | -------- | -------- | -------------------------------------------------------------------- |
 | Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
 | Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
@@ -33,7 +33,7 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
