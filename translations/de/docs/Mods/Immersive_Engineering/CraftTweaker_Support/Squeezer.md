@@ -6,7 +6,7 @@ The Squeezer package can be used to add/remove recipes to/from the Immersive Eng
 
 You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type   | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
