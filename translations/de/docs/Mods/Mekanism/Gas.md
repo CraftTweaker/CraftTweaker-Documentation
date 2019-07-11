@@ -14,7 +14,7 @@ As of Mekanism 9.7.0 it is now possible to view all registered gases (including 
 
 It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## Beispiel
 
     import mod.mekanism.gas.IGasStack;
     
