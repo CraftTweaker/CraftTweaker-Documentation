@@ -21,7 +21,7 @@ This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chicken
     ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
     
 
-## Example Script
+## Skript-Beispiel
 
     #loader contenttweaker
     #modloaded chickens
