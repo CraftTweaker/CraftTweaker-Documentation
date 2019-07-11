@@ -17,7 +17,7 @@ The IItemRightClickFunction is a function with the following parameters:
 
 The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
 
-## Example
+## Beispiel
 
 ```JAVA
 zsItem.onItemUseFinish = function(stack, world, player) {
