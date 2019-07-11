@@ -8,7 +8,7 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 
 ## Rezept hinzufügen
 
-| Required | Type    | Data Type                                           |
+| Required | Type    | Datentyp                                            |
 | -------- | ------- | --------------------------------------------------- |
 | Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
@@ -25,7 +25,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
