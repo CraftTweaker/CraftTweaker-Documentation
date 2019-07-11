@@ -14,7 +14,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 A Stack's count is the number of items in that stack!
 
-| ZenMethod       | Parameter Type | Description                                         |
+| ZenMethod       | Parameter Type | Beschreibung                                        |
 | --------------- | -------------- | --------------------------------------------------- |
 | setCount(count) | int            | Sets the stack's count to the `count` provided      |
 | grow(count)     | int            | Increases the stack's count by the `count` provided |
