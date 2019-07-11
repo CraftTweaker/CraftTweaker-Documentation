@@ -41,7 +41,7 @@ pBuilder.build();
 
 This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
-## Example Script
+## Skript-Beispiel
 
 ```JAVA
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
