@@ -46,7 +46,7 @@ After you have called this function, you cannot un-register the tab or change an
     tab.register();
     
 
-## Example Script
+## Skript-Beispiel
 
 ```JAVA
 #loader contenttweaker
