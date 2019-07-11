@@ -3,7 +3,7 @@
 A ZenCaster denotes a method that can be called using the `as` token.  
 ZenCasters can be used to convert one type into another (e.g. [Strings to IData](https://github.com/jaredlll08/CraftTweaker/blob/30793645d58adeed12dfff50f31206a63a50d8de/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/expand/ExpandString.java#L30-L33)).
 
-## Example
+## Beispiel
 
     @ZenExpansion("crafttweaker.item.IItemStack")
     @ZenRegister
