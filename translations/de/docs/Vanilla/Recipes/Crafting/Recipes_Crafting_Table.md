@@ -88,7 +88,7 @@ You need to provide the mod's modid as string.
 recipes.removeByMod("modularmachinery");
 ```
 
-## Add Recipes
+## Rezepte hinzufügen
 
 ### Notes On 1.12
 
