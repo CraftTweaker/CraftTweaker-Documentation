@@ -65,7 +65,7 @@ After you have done your changes above, you need to build the recipe so that it 
 build();
 ```
 
-## Example
+## Beispiel
 
 You can either call each method on its own, or play codegolf:
 
