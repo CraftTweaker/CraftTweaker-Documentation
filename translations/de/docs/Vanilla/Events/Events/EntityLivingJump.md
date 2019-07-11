@@ -2,7 +2,7 @@
 
 The EntityLivingJump Event is fired whenver an entity jumps.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingJumpEvent`  
