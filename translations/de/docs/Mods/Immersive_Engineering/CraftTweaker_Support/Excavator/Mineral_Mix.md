@@ -10,9 +10,9 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 ## Get Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Required | Type | Datentyp |
+| -------- | ---- | -------- |
+| Required | Name | String   |
 
 ```JAVA
 //Example:
@@ -23,10 +23,10 @@ var Iron = Excavator.getMineral("Iron_Ore");
 
 ## Add Ore
 
-| Required | Type   | Data Type |
-| -------- | ------ | --------- |
-| Required | Ore    | String    |
-| Required | Chance | Double    |
+| Required | Type   | Datentyp |
+| -------- | ------ | -------- |
+| Required | Ore    | String   |
+| Required | Chance | Double   |
 
     mineralMixObject.addOre("oreIron", 0.5);
     
@@ -35,9 +35,9 @@ You will need to use the oredict names.
 
 ## Remove Ore
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Ore  | String    |
+| Required | Type | Datentyp |
+| -------- | ---- | -------- |
+| Required | Ore  | String   |
 
     mineralMixObject.removeOre("oreIron");
     
