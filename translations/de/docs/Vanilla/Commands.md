@@ -252,7 +252,7 @@ Usage:
 
 `/crafttweaker names [category]`
 
-`/ct names [category]`
+`/ct names [kategorie]`
 
 Description:
 
