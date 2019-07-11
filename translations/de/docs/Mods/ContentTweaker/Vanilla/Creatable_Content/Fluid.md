@@ -31,7 +31,7 @@ To get/set the properties you can either use the respecting ZenGetters/Setters o
     fluid.setDensity(1000);
     
 
-| Property Name   | Type                                                                                     | Required | Default Value                    | Description/Notes                                                                    |
+| Property Name   | Type                                                                                     | Required | Standardwert                     | Description/Notes                                                                    |
 | --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
 | unlocalizedName | String                                                                                   | Yes      |                                  | Name, should be all lowercase                                                        |
 | density         | int                                                                                      | No       | 1000                             | How fast you can walk in the fluid                                                   |
