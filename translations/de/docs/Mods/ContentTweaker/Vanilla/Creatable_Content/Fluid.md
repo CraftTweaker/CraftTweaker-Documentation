@@ -58,7 +58,7 @@ After you have called this function, you cannot un-register the fluid or change 
     fluid.register();
     
 
-## Example Script
+## Skript-Beispiel
 
     #loader contenttweaker
     import mods.contenttweaker.VanillaFactory;
