@@ -3,7 +3,7 @@
 The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
 You can change the chance that the anvil is damaged.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAnvilRepairEvent`  
