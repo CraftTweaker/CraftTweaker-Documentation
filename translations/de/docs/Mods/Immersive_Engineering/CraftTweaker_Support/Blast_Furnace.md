@@ -15,7 +15,7 @@ You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurn
 | Required | Time   | Integer                                             |
 | Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -45,7 +45,7 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 | Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time  | Integer                                             |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -59,7 +59,7 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 | -------- | ------ | ---------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
