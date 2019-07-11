@@ -44,7 +44,7 @@ You will need to use the oredict names.
 
 ## Fail Chance Getter/Setter
 
-### Example
+### Beispiel
 
 ```JAVA
 //Getter
