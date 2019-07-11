@@ -34,7 +34,7 @@ If you simply want to print something where you don't need to access the event, 
 
 The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethod                   | Event Class                                                                                          |
+| ZenMethod                   | Event-Klasse                                                                                         |
 | --------------------------- | ---------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)             |
 | onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                |
