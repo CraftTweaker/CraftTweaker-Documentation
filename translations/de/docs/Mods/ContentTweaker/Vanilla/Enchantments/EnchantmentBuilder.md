@@ -82,7 +82,7 @@ Use these methods to be instantly notified if you made a typo.
     myChant.setTypeWearable()
     
 
-## Example
+## Beispiel
 
     #loader contenttweaker
     val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
