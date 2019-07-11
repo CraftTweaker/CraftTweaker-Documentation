@@ -8,7 +8,7 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
 ## Rezept hinzufügen
 
-| Required | Type    | Data Type                                    |
+| Required | Type    | Datentyp                                     |
 | -------- | ------- | -------------------------------------------- |
 | Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
@@ -26,7 +26,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
