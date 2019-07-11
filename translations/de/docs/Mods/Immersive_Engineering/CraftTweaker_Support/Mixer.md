@@ -8,7 +8,7 @@ You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
 ## Rezept hinzufügen
 
-| Required | Type         | Data Type                                                    |
+| Required | Type         | Datentyp                                                     |
 | -------- | ------------ | ------------------------------------------------------------ |
 | Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
@@ -26,7 +26,7 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
