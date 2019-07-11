@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## Beispiel
 
 ```javascript
 import crafttweaker.enchantments.IEnchantmentDefinition;
