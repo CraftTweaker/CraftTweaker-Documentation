@@ -13,7 +13,7 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input  | Integer                                      |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -28,7 +28,7 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -43,7 +43,7 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -58,7 +58,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
