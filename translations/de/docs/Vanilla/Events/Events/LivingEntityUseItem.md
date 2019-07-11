@@ -17,7 +17,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
     import crafttweaker.event.EntityLivingUseItemEvent.Finish;
     
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
