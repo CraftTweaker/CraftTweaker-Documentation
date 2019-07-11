@@ -1,6 +1,6 @@
 # Furnace
 
-Crafttweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
 
 ## Recipes

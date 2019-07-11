@@ -1,5 +1,5 @@
 # Powered Thingies
-Powered Thingies's non-farming machines Crafttweaker support.
+Powered Thingies's non-farming machines CraftTweaker support.
 
 ### Mod Info    
 Curseforge: <https://minecraft.curseforge.com/projects/powered-thingies>
