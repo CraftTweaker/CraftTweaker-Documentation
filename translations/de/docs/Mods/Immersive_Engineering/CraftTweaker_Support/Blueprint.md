@@ -10,7 +10,7 @@ The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quit
 
 You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type     | Data Type                                                            |
 | -------- | -------- | -------------------------------------------------------------------- |
