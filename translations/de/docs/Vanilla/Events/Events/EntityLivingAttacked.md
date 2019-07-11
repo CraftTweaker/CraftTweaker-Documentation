@@ -3,7 +3,7 @@
 The EntityLivingAttacked Event is fired whenever an entity is being attacked.  
 It can be canceled to stop the entity from taking damage.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingAttackedEvent`  
