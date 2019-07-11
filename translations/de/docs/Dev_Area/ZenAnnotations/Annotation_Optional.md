@@ -3,7 +3,7 @@
 `@Optional` can be given to a Method parameter to declare it as being optional.  
 Optional Parameters can be omitted when calling the method:
 
-## Example
+## Beispiel
 
 [CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
