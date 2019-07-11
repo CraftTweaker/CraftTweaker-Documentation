@@ -16,7 +16,7 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 | Required | Energy     | Integer                                             |
 | Required | Input Size | Integer                                             |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -32,7 +32,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -47,7 +47,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
