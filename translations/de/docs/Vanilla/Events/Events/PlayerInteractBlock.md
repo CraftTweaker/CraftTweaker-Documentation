@@ -3,13 +3,13 @@
 The PlayerInteractBlock Event is fired whenever a player right clicks a block.  
 It can be canceled to prevent any other events from taking place.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerInteractBlockEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 PlayerInteractBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
