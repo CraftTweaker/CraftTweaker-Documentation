@@ -8,7 +8,7 @@ You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
 
 ## Rezept hinzufügen
 
-| Required | Type   | Data Type                                           |
+| Required | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
@@ -24,7 +24,7 @@ mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water
 
 ## Remove Fluid Recipe
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
@@ -37,7 +37,7 @@ mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 
 ## Remove Item Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
@@ -50,7 +50,7 @@ mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 
 ## Remove By Input
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
