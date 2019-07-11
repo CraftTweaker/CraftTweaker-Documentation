@@ -2,7 +2,7 @@
 
 The EntityStruckByLightning event is fired whenever a lightning bolt is about to hit an entity.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityStruckByLightningEvent`  
