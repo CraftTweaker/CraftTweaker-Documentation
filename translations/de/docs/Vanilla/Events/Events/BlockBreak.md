@@ -3,7 +3,7 @@
 The BlockBreak Event is fired whenever a block is being broken.  
 You can cancel the event to prevent the block from being broken.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockBreakEvent`  
