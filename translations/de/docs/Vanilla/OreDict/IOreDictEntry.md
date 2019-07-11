@@ -20,7 +20,7 @@ There are multiple ways of getting an IOreDictEntry Object: If you refer to an o
 
 You can use these getters to retrieve some information on the oredict:
 
-| name      | Description                              | Return type                              |
+| name      | Beschreibung                             | Return type                              |
 | --------- | ---------------------------------------- | ---------------------------------------- |
 | name      | Returns the oreDict's name               | string                                   |
 | empty     | Returns if the oreDict is empty          | bool                                     |
