@@ -427,7 +427,7 @@ Created using
     };
     
 
-## Example
+## Beispiel
 
     #loader contenttweaker
     #modloaded tconstruct
