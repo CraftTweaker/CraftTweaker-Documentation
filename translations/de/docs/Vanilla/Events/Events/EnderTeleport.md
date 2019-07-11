@@ -3,7 +3,7 @@
 The EnderTeleport event is fired whenever an enderman or shulker teleport.  
 It is also fired whenever a player teleports using an enderpearl (it is possible that other mods fire this event as well.)
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EnderTeleportEvent`  
