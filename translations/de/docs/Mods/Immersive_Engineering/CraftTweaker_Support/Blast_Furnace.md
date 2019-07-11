@@ -6,7 +6,7 @@ The Blast Furnace package can be used to add/remove recipes/fuels to/from the Im
 
 You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
-## Add Recipe:
+## Rezept hinzufügen:
 
 | Required | Type   | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
