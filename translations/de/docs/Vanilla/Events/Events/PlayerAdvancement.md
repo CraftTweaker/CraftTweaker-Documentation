@@ -3,13 +3,13 @@
 The PlayerAdvancement Event is fired whenever a player crafts something in the anvil.  
 You can change the chance that the anvil is damaged.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAdvancementEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
