@@ -133,7 +133,7 @@ Only tooltypes whose stat has been added will be built!
     myMat.removeProjectileMaterialStats();
     
 
-## Example
+## Beispiel
 
     #loader contenttweaker
     #modloaded tconstruct
