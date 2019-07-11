@@ -1,8 +1,8 @@
-# Bracket Handlers
+# Klammern
 
-ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
+ZenScript nutzt Klammern, um auf verschiedene Ingame-Objekte wie Items, Entities und OreDicts zuzugreifen.
 
-## How to use Bracket Handlers
+## Wie man diese Klammern verwendet
 
 Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
 
