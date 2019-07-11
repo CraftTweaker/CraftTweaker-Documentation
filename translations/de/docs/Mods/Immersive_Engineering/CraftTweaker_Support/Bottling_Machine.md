@@ -6,7 +6,7 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 
 ## Rezept hinzufügen
 
-| Required | Type   | Data Type                                           |
+| Required | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
@@ -22,7 +22,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
