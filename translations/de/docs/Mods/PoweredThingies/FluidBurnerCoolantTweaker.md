@@ -24,7 +24,7 @@ addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 
 `timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 
-##### Example
+##### Beispiel
 
 ```kotlin
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
