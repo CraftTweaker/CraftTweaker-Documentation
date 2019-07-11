@@ -15,7 +15,7 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 
 ## ZenMethods and ZenGetters
 
-| ZenMethod         | ZenGetter | Return Type                                                            | Description                                             |
+| ZenMethod         | ZenGetter | Return Type                                                            | Beschreibung                                            |
 | ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
 | getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
 | getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |
