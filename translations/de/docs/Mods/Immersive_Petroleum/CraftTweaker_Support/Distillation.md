@@ -32,7 +32,7 @@ The Chance "Float" value should be between 0 and 1. Since it converts it from a 
 
 While you can submit a float higher than 1, it'll never yield a value over 100%
 
-### Code Example:
+### Beispielcode:
 
 ```JAVA
 //mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
