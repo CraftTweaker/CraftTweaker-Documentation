@@ -19,7 +19,7 @@ val stone = <ticmat:stone>;
 
 You can get/set the following fields:
 
-| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
+| ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Beschreibung                                                      |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | getName           |                   | String                                                                               | The Material's Name                                               |
 | definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
