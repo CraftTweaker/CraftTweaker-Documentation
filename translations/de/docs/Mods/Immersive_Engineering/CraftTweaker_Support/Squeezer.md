@@ -8,7 +8,7 @@ You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
 ## Rezept hinzufügen
 
-| Required | Type   | Data Type                                           |
+| Required | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
