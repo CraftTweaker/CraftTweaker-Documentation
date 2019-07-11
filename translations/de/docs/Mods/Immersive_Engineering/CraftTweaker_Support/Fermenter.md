@@ -6,7 +6,7 @@ The Fermenter package can be used to add/remove recipes to/from the Immersive En
 
 You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type   | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
