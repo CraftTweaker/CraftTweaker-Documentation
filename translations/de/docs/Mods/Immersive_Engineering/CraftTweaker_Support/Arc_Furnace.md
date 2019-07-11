@@ -6,7 +6,7 @@ The Arc Furnace package can be used to add/remove recipes to/from the Immersive 
 
 You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 | Required | Type                | Data Type                                                                              |
 | -------- | ------------------- | -------------------------------------------------------------------------------------- |
