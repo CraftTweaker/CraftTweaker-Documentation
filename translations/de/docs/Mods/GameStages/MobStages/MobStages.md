@@ -36,7 +36,7 @@ mods.MobStages.toggleSpawners("minecraft:zombie", true);
 
 Dimension specific options are nearly the same as the global options, however they have another argument added to the end, which is the Integer dimension id. Dimension specific entries will override the global entry in that dimension. You can only have one entry per mob, per dimension.
 
-## Example Script
+## Skript-Beispiel
 
 ```java
 // Creepers require stage one to spawn
