@@ -39,7 +39,7 @@ All Objects will be `null`
 
 ### Using annotation members
 
-| Member      | Type            | Default value    |
+| Member      | Type            | Standardwert     |
 | ----------- | --------------- | ---------------- |
 | value       | String          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
