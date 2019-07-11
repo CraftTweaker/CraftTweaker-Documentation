@@ -55,7 +55,7 @@ Prevents a specific modifier from being applied to a tool or used.
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```
 
-## Example Script
+## Skript-Beispiel
 
 ```java
 //GENERAL RESTRICTIONS
