@@ -3,7 +3,7 @@
 The EntityLivingHurt Event is fired whenever an Entity is about to get hurt.  
 It can be canceled to stop the entity from being hurt.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingHurtEvent`  
