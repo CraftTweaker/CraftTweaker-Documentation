@@ -3,7 +3,7 @@
 The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
 It can be canceled to stop the entity from dropping anything.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingDeathDropsEvent`  
