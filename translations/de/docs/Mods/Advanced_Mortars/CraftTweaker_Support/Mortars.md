@@ -13,7 +13,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Data Type
+      Datentyp
     </th>
     
     <th>
