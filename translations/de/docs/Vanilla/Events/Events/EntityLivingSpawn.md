@@ -33,7 +33,7 @@ The following information can be retrieved from the event:
 
 The despawn event also offers three functions to change the event outcome:
 
-| ZenMethod | Description                                |
+| ZenMethod | Beschreibung                               |
 | --------- | ------------------------------------------ |
 | `allow`   | Forces the entity to (de)spawn             |
 | `deny`    | Forces the entity not to (de)spawn         |
