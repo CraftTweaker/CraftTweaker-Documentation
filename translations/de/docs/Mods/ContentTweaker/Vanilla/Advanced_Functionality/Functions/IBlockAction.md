@@ -17,7 +17,7 @@ The IBlockAction is a function with the following parameters:
 
 The function doesn't have a return value!
 
-## Example
+## Beispiel
 
     zsBlock.onBlockBreak = function(world, blockPos, blockState){
         print("I WAS PLACED!!!");
