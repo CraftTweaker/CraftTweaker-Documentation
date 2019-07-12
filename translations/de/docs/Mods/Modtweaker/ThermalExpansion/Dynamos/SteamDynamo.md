@@ -1,6 +1,6 @@
 # Steam Dynamo
 
-## Import the package
+## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
