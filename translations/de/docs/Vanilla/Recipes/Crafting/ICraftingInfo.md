@@ -7,7 +7,7 @@ The IcraftingInfo object contains all kinds of information on the crafting proce
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter   |                                                                     |                                                    |
 | ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |
