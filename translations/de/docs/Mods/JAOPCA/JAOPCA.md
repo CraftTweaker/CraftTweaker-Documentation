@@ -2,7 +2,7 @@
 
 [JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Ore Processing Compatibility Attempt) is a mod that aims to add ore processing compatibilty to many mods.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to shorten your method calls, you can import the package.  
 You can do so using
