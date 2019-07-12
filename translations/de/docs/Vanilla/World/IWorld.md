@@ -21,7 +21,7 @@ Note that this method should only be called inside functions that are meant to b
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenMethod          | ZenGetter     | Return type                       | Beschreibung                                                                                                                                                                            |
+| ZenMethod          | ZenGetter     | Rückgabetyp                       | Beschreibung                                                                                                                                                                            |
 | ------------------ | ------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isRemote()         | remote        | boolean                           | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
 | isRaining()        | raining       | boolean                           | Returns true if it is currently raining.                                                                                                                                                |
