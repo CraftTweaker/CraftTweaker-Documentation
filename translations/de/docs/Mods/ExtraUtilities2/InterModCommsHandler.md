@@ -3,7 +3,7 @@
 InterModComms are small messages sent between mods to allow for additional content.  
 For example ModA sends a message to Tinkers' Construct to tell TiCon to create additional materials for the smeltery.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
