@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetter
 
-| ZenGetter   | Return Type                            |
+| ZenGetter   | Rückgabetyp                            |
 | ----------- | -------------------------------------- |
 | displayName | string                                 |
 | position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
