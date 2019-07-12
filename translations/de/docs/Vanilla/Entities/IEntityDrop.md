@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can retrieve this information out of them.
 
-| ZenGetter  | What does it do                                          | Return type                              | Usage             |
+| ZenGetter  | What does it do                                          | Rückgabetyp                              | Usage             |
 | ---------- | -------------------------------------------------------- | ---------------------------------------- | ----------------- |
 | chance     | Returns the chance of the drop.                          | float                                    | `drop.chance`     |
 | max        | Returns the maximum Amount of the drop.                  | int                                      | `drop.max`        |
