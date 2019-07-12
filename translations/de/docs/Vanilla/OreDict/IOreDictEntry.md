@@ -16,7 +16,7 @@ There are multiple ways of getting an IOreDictEntry Object: If you refer to an o
 - Using the [ore Bracket Handler](/Vanilla/Brackets/Bracket_Ore/).
 - Using an [IItemDefinition's `ores` getter](/Vanilla/Items/IItemDefinition/).
 
-## ZenGetters
+## ZenGetter
 
 You can use these getters to retrieve some information on the oredict:
 
