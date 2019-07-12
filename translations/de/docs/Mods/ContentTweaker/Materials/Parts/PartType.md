@@ -28,7 +28,7 @@ Check out below entry to learn how to create a new PartType.
 
 You can retrieve the following information from a PartType:
 
-| ZenMethod | Return Type |
+| ZenMethod | Rückgabetyp |
 | --------- | ----------- |
 | getName() | String      |
 
