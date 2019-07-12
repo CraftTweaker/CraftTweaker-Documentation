@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
 
-## Methods
+## Methoden
 
 All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
 
