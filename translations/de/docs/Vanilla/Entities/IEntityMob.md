@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntityCreature](/Vanilla/Entities/IEntityCreature/) objects also are available to IEntityMob.
 
-## Methods
+## Methoden
 
 ### ZenMethods
 
