@@ -1,6 +1,6 @@
 ### onHurt
 
-| Setter/Getter/Method | Method Names       | Names           | Input/Output                                               |
+| Setter/Getter/Method | Methodennamen      | Names           | Input/Output                                               |
 |:-------------------- |:------------------ |:--------------- | ---------------------------------------------------------- |
 | Getter               | getDamageSource(); | damageSource(); | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/) |
 | Getter               | getAmount();       | amount();       | Returns an Float                                           |
