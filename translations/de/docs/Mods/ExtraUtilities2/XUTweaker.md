@@ -2,7 +2,7 @@
 
 The XUTweaker package adds several static utility methods.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to shorten method calls or encounter any issues you might need to import the package.  
 You can do so using
