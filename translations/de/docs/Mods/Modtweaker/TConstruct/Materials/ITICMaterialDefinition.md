@@ -17,7 +17,7 @@ You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtwe
 
 ## ZenGetters
 
-| ZenGetter   | Return Type | Beschreibung                  |
+| ZenGetter   | Rückgabetyp | Beschreibung                  |
 | ----------- | ----------- | ----------------------------- |
 | name        | string      | The material's internal name  |
 | displayName | string      | The material's localized name |
