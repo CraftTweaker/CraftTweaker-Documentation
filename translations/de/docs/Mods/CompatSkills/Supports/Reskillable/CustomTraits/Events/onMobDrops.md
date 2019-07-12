@@ -1,10 +1,10 @@
 ### onMobDrops
 
-| Setter/Getter/Method | Method Names                     | Names                            | Input/Output                                                       |
+| Setter/Getter/Method | Methodennamen                    | Names                            | Input/Output                                                       |
 |:-------------------- |:-------------------------------- |:-------------------------------- | ------------------------------------------------------------------ |
 | Getter               | getDamageSource();               | damageSource                     | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/)         |
-| Method               | addItem(IItemStack item);        | addItem(IItemStack item);        | Takes an [IItemStack](/Vanilla/Items/IItemStack/)                  |
-| Method               | addItem(IEntityItem entityItem); | addItem(IEntityItem entityItem); | Takes an [IEntityItem](/Vanilla/Entities/IEntityItem/)             |
+| Methode              | addItem(IItemStack item);        | addItem(IItemStack item);        | Takes an [IItemStack](/Vanilla/Items/IItemStack/)                  |
+| Methode              | addItem(IEntityItem entityItem); | addItem(IEntityItem entityItem); | Takes an [IEntityItem](/Vanilla/Entities/IEntityItem/)             |
 | Getter               | getLootingLevel();               | lootingLevel                     | Returns an Integer                                                 |
 | Getter               | getIsRecentlyHit();              | isRecentlyHit                    | Returns an Boolean                                                 |
 | Getter               | getDrops();                      | drops();                         | Returns an List of [IEntityItem's](/Vanilla/Entities/IEntityItem/) |
