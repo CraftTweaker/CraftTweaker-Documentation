@@ -16,7 +16,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter    | Type                                            |
 | ------------ | ----------------------------------------------- |
