@@ -53,7 +53,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 * stack.applyTransform(stack,player)
 * stack.hasTransformers()</details>
 
-### ZenGetters/ZenSetters
+### ZenGetter/ZenSetter
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
