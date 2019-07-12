@@ -15,7 +15,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 
 * OR two [IBlocks](/Vanilla/Blocks/IBlock/)
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter   | What does it do                                | Rückgabetyp                             |
 | ----------- | ---------------------------------------------- | --------------------------------------- |
