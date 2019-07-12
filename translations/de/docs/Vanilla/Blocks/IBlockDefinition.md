@@ -2,7 +2,7 @@
 
 The IBlockDefinition objects provide additional information on blocks.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockDefinition;`
