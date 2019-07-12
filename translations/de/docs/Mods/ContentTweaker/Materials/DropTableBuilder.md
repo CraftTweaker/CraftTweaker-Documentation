@@ -2,7 +2,7 @@
 
 DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.DropTableBuilder;`
