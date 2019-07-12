@@ -23,7 +23,7 @@ Note: Currently all this does is loop over the different possibilities in java w
     mods.mekanism.chemical.injection.removeRecipe(<mekanism:shard:1>);
     
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
 ## Removing all recipes
 
