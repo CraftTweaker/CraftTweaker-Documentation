@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityLivingBase.
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter              | Return Type (*can be null*)                            |
 | ---------------------- | ------------------------------------------------------ |
