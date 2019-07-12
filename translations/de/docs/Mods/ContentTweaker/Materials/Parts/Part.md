@@ -59,7 +59,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 
 You can retrieve the following information from a Part:
 
-| ZenMethod                 | Return Type                                                                   |
+| ZenMethod                 | Rückgabetyp                                                                   |
 | ------------------------- | ----------------------------------------------------------------------------- |
 | hasOverlay()              | boolean                                                                       |
 | getName()                 | String                                                                        |
