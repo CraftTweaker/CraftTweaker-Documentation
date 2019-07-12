@@ -25,7 +25,7 @@ The last one takes the direction as String input (e.g. `"NORTH"`)
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter | ZenMethod  | Return Type |
+| ZenGetter | ZenMethod  | Rückgabetyp |
 | --------- | ---------- | ----------- |
 | name      | getName()  | string      |
 | rotateY   | rotateY()  | IFacing     |
