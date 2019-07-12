@@ -14,6 +14,6 @@ You can get such an object using the [Sound Event Bracket Handler](/Mods/Content
 
 ## ZenMethods without parameters
 
-| ZenMethod      | Return type | Definition                       |
+| ZenMethod      | Rückgabetyp | Definition                       |
 | -------------- | ----------- | -------------------------------- |
 | getSoundName() | String      | Returns the event's sound's name |
