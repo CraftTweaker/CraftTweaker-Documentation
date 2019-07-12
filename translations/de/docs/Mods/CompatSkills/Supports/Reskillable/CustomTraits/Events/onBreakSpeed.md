@@ -1,6 +1,6 @@
 ### onBreakSpeed
 
-| Setter/Getter/Method | Method Names                 | Names                     | Input/Output                                           |
+| Setter/Getter/Method | Methodennamen                | Names                     | Input/Output                                           |
 |:-------------------- |:---------------------------- |:------------------------- | ------------------------------------------------------ |
 | Getter               | getBlockState();             | blockState();             | Returns an [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | Getter               | getBlock();                  | block();                  | Returns an [IBlock](/Vanilla/Blocks/IBlock/)           |
