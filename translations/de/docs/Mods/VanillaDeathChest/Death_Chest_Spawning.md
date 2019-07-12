@@ -1,6 +1,6 @@
 # Death Chest Spawning
 
-## Importing the package
+## Dieses Paket importieren
 
 `import mods.vanilladeathchest.DeathChestSpawning;`
 
