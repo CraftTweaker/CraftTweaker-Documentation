@@ -14,7 +14,7 @@ You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentT
 
 ## ZenMethods without parameters
 
-| ZenMethod       | Return type                                                                             | Definition                                                         |
+| ZenMethod       | Rückgabetyp                                                                             | Definition                                                         |
 | --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | getVolume()     | float                                                                                   | Returns the type's volume                                          |
 | getPitch()      | float                                                                                   | Returns the type's pitch                                           |
