@@ -3,7 +3,7 @@
 A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
 That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MutableItemStack;`
