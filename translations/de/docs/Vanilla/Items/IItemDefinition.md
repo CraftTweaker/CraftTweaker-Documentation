@@ -3,7 +3,7 @@
 An IItemDefinition object is the direct reference to an item.  
 It is different from an [IItemStack](/Vanilla/Items/IItemStack/) as this only refers to the item, it does not include any meta-information or NBT-values!
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemDefinition;`
