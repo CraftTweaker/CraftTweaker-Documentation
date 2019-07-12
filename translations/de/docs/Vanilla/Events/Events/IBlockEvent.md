@@ -11,7 +11,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
 
-## ZenGetters
+## ZenGetter
 
 | name       | type                                        |
 | ---------- | ------------------------------------------- |
