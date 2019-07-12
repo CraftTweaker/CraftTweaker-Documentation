@@ -23,7 +23,7 @@ The easiest way is from an [IItemStack](/Vanilla/Items/IItemStack/), but you can
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | What does it do                                                                                      | Rückgabetyp                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | id                 | Returns the item ID                                                                                  | String                                                         |
 | name               | Returns the unlocalized item Name                                                                    | String                                                         |
