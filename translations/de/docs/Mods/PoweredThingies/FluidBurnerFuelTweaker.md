@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Burner :: Fuel
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
