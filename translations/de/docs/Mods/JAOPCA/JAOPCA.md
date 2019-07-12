@@ -10,7 +10,7 @@ You can do so using
     import mods.jaopca.JAOPCA;
     
 
-## Methods
+## Methoden
 
 This package is your entry point for JAOPCA. It provides a means of checking for and getting [OreEntry](/Mods/JAOPCA/OreEntry/) objects. Check the respective page for further information, but in short they are material names (e.g. "Gold") that can then have entries, like chunks, dusts and all.
 
