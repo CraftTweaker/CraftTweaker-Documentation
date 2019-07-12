@@ -15,7 +15,7 @@ It might be required for you to import the package if you encounter any issues (
 
 * Using `game.blocks` to get a list of all block definition in the game.
 
-## ZenGetters/ZenSetters
+## ZenGetter/ZenSetter
 
 | ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
 | --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
