@@ -2,7 +2,7 @@
 
 The IBlockDropHandler function is used to allow for advanced block drop handling for [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) created with the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
 
-## Importing the class
+## Diese Klasse importieren
 
 You want to import the class? Here you go:
 
