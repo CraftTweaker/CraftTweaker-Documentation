@@ -17,7 +17,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 
 ## ZenGetters
 
-| ZenGetter   | What does it do                                | Return Type                             |
+| ZenGetter   | What does it do                                | Rückgabetyp                             |
 | ----------- | ---------------------------------------------- | --------------------------------------- |
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
 | displayName | Returns the displayNames of the fitting blocks | String                                  |
