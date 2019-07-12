@@ -13,7 +13,7 @@ You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanill
 
 ## ZenGetters and ZenMethods without parameters
 
-| ZenGetter/ZenMethod | Return Type    |
+| ZenGetter/ZenMethod | Rückgabetyp    |
 | ------------------- | -------------- |
 | searchBarWidth      | int            |
 | tabLabel            | string         |
