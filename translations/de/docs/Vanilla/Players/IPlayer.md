@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 IPlayer extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objects also are available to IPlayer Objects.  
 IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions available to [IUser](/Vanilla/Players/IUser/) Objects also are available to IPlayer Objects.
 
-## Zengetters
+## ZenGetter
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
