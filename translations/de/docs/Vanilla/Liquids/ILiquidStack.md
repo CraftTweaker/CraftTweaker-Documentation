@@ -26,7 +26,7 @@ An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Br
 As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | What is this?                                             | Return Type                                               | Beispiel                                  |
+| Zengetter   | What is this?                                             | Rückgabetyp                                               | Beispiel                                  |
 | ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
 | displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
