@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Burner :: Coolant
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
