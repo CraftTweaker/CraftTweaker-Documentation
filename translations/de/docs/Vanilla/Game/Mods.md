@@ -46,7 +46,7 @@ You can iterate through the lost of loaded mods like this:
 The IMod Interface provides you with some general information on a specific mod.  
 If needed, it can be imported using `import crafttweaker.mods.IMod;`
 
-| Zengetter   | What does it do                    | Rückgabetyp                                | Usage             |
+| ZenGetter   | What does it do                    | Rückgabetyp                                | Usage             |
 | ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
 | id          | Returns the mod's id               | string                                     | `mod.id`          |
 | name        | Returns the mod's internal name    | string                                     | `mod.name`        |
