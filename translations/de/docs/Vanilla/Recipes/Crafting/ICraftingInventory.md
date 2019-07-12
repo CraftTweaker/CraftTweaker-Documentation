@@ -7,7 +7,7 @@ The ICraftingInventory contains all kinds of information on the inventory a craf
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter    | Rückgabetyp                                  | Beschreibung                                         |
 | ------------ | -------------------------------------------- | ---------------------------------------------------- |
