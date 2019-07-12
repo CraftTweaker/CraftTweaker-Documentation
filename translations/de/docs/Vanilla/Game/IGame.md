@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Zengetters
 
-| Zengetter | What does it do?                        | Rückgabetyp                                                     | Usage           |
+| ZenGetter | What does it do?                        | Rückgabetyp                                                     | Usage           |
 | --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
 | biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
 | blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
