@@ -13,6 +13,6 @@ IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all function
 
 ## ZenGetters
 
-| ZenGetter | Return Type |
+| ZenGetter | Rückgabetyp |
 | --------- | ----------- |
 | xp        | float       |
