@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| ZenGetter    | GetterMethod      | Return Type      |
+| ZenGetter    | GetterMethod      | Rückgabetyp      |
 | ------------ | ----------------- | ---------------- |
 | name         | getName()         | String           |
 | defaultValue | getDefaultValue() | double           |
