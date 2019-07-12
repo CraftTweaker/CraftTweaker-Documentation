@@ -2,7 +2,7 @@
 
 A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.AxisAlignedBB;`
