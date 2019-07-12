@@ -17,9 +17,9 @@ PlayerSleepInBed Events implement the following interfaces and are able to call 
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | Rückgabetyp                          |
 | --------- | ------------------------------------ |
 | `x`       | int                                  |
 | `y`       | int                                  |
