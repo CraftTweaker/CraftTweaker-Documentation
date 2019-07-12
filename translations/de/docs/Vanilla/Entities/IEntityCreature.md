@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
-## Methods
+## Methoden
 
 ### ZenGetters/Setters
 
