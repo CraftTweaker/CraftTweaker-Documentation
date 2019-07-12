@@ -8,7 +8,7 @@ That means you can use the getters below to access the position details.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventPositionable;`
 
-## ZenGetters
+## ZenGetter
 
 | name     | type                                   |
 | -------- | -------------------------------------- |
