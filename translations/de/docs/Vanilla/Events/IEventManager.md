@@ -2,7 +2,7 @@
 
 The IEventManager is what you're gonna need when dealing with event handlers.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
 `import crafttweaker.events.IEventManager;`
