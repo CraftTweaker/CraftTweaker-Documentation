@@ -2,7 +2,7 @@
 
 The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
