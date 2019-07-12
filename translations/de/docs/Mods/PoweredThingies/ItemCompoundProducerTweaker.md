@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Compound Producer
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
