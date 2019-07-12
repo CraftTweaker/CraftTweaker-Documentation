@@ -2,7 +2,7 @@
 
 The IWorld object contains information on a Dimension within the game.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IWorld`
