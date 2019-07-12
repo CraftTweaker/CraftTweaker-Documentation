@@ -16,7 +16,7 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
