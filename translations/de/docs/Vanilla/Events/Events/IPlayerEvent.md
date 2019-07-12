@@ -12,7 +12,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 This interface extends [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), which means that all functionality that ILivingEvent offers is also present in IPlayerEvent
 
-## ZenGetters
+## ZenGetter
 
 | name   | type                                 |
 | ------ | ------------------------------------ |
