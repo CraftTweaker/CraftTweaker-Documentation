@@ -11,7 +11,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), which means that all functionality that IEntityEvent offers is also present in ILivingEvent
 
-## ZenGetters
+## ZenGetter
 
 | name             | type                                                      |
 | ---------------- | --------------------------------------------------------- |
