@@ -22,7 +22,7 @@ It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by s
     var oxygen2 = <gas:oxygen> * 500;
     
 
-## ZenGetters
+## ZenGetter
 
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
