@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Liquefier
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
