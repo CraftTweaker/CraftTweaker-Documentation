@@ -2,7 +2,7 @@
 
 The liquidInteraction package is used to add Liquid interactions (like lava and liquid starlight) to AS chalices.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to import the package, here you go:
 
