@@ -27,7 +27,7 @@ List:
 
 You can retrieve the following information from a MaterialPart:
 
-| ZenMethod            | Return Type                                                                     |
+| ZenMethod            | Rückgabetyp                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
 | getName()            | String                                                                          |
 | getLocalizedName()   | String                                                                          |
