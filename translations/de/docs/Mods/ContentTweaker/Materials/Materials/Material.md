@@ -15,7 +15,7 @@ You can either retrieve an existing Material using the [MaterialSystem](/Mods/Co
 
 You can retrieve the following information from a Material:
 
-| ZenMethod            | Return Type | Beschreibung                                   |
+| ZenMethod            | Rückgabetyp | Beschreibung                                   |
 | -------------------- | ----------- | ---------------------------------------------- |
 | getName()            | String      | Returns the Material's name                    |
 | getColor()           | int         | Returns the Material's color                   |
