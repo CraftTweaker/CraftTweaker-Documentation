@@ -14,7 +14,7 @@ You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler]
     val aspect = <aspect:ignis>;
     
 
-## ZenGetters
+## ZenGetter
 
 | Name     | Type                                                      |
 | -------- | --------------------------------------------------------- |
