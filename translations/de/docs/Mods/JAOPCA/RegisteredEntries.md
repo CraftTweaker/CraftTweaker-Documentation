@@ -20,14 +20,14 @@ These are base entries, they may be extended by addons or special mod integratio
 | "fence"           | JAOPCA or [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
 | "wall"            | JAOPCA or [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                      |
 |                   |                                                                                                                                                                             |
-| "crystalAbyss"    | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
-| "crystalCluster"  | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
-| "crystalFragment" | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
-| "crystalShard"    | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
+| "crystalAbyss"    | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
+| "crystalCluster"  | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
+| "crystalFragment" | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
+| "crystalShard"    | JAOPCA + [AbyssalCraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                             |
 |                   |                                                                                                                                                                             |
-| "hotMolten"       | JAOPCA + [buildcraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
-| "coolMolten"      | JAOPCA + [buildcraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
-| "searingMolten"   | JAOPCA + [buildcraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
+| "hotMolten"       | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
+| "coolMolten"      | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
+| "searingMolten"   | JAOPCA + [BuildCraft (1.11.2)](https://minecraft.curseforge.com/projects/buildcraft)                                                                                        |
 |                   |                                                                                                                                                                             |
 | "hunk"            | JAOPCA + [Ex Nihilo Creatio](https://minecraft.curseforge.com/projects/ex-nihilo-creatio)                                                                                   |
 | "piece"           | JAOPCA + [Ex Nihilo Creatio](https://minecraft.curseforge.com/projects/ex-nihilo-creatio)                                                                                   |
