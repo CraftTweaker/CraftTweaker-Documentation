@@ -19,7 +19,7 @@ You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILi
     val wLiquidStack2 = liquidStack.weight(0.2);
     
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter | What does it do                                      | Rückgabetyp                                    |
 | --------- | ---------------------------------------------------- | ---------------------------------------------- |
