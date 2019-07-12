@@ -18,7 +18,7 @@ There are multiple ways thet return an IBlock object:
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
+| Getter     | What does it do                | Rückgabetyp                                           |
 | ---------- | ------------------------------ | ----------------------------------------------------- |
 | definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
 | meta       | Returns the Block's metadata   | int                                                   |
