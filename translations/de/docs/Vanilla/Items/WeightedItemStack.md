@@ -19,7 +19,7 @@ You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStac
     val wItemStack2 = itemStack.weight(0.2);
     
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter | What does it do                                      | Rückgabetyp                              |
 | --------- | ---------------------------------------------------- | ---------------------------------------- |
