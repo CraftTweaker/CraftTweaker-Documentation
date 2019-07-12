@@ -20,7 +20,7 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 Currently, all you can do with potions is retrieving some information on them.  
 Example `<potion:minecraft:strength>.name`
 
-| Zengetter     | What does it do                                     | Rückgabetyp                                    |
+| ZenGetter     | What does it do                                     | Rückgabetyp                                    |
 | ------------- | --------------------------------------------------- | ---------------------------------------------- |
 | name          | Returns the potion's internal name                  | string                                         |
 | badEffect     | Returns if the potion effect is bad                 | bool                                           |
