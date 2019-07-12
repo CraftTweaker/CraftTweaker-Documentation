@@ -4,7 +4,7 @@
 
 `import mods.ic2.Compressor;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
