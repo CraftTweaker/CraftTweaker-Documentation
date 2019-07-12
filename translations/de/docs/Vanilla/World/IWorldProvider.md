@@ -17,7 +17,7 @@ Note that this method should only be called inside functions that are meant to b
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter              | ZenMethod                   | Return Type                            |
+| ZenGetter              | ZenMethod                   | Rückgabetyp                            |
 | ---------------------- | --------------------------- | -------------------------------------- |
 | actualHeight           | getActualHeight()           | int                                    |
 | actualGroundLevel      | getAverageGroundLevel()     | int                                    |
