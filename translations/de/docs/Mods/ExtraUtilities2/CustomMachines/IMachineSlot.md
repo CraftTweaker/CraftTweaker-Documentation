@@ -3,7 +3,7 @@
 A Machine slot is a slot that either accepts Items or liquids.  
 You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
