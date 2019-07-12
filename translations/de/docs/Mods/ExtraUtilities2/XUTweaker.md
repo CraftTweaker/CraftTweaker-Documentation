@@ -10,7 +10,7 @@ You can do so using
     import extrautilities2.Tweaker.XUTweaker;
     
 
-## Methods
+## Methoden
 
 ### Allow survival flight
 
