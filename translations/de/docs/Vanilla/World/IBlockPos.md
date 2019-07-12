@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods without parameters
 
-| ZenMethod    | ZenGetter/Caster | Return Type                               | Beschreibung                               |
+| ZenMethod    | ZenGetter/Caster | Rückgabetyp                               | Beschreibung                               |
 | ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
 | getX()       | x                | int                                       | Returns the position's X value             |
 | getY()       | y                | int                                       | Returns the position's Y value             |
