@@ -48,7 +48,7 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name    | Values                                                |
+| Methodentyp | Methodenname   | Values                                                |
 |:----------- |:-------------- | ----------------------------------------------------- |
 | Setter      | setEnabled     | Takes a Boolean                                       |
 | Getter      | getEnabled     | Returns a Boolean                                     |
