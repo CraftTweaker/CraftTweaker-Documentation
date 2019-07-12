@@ -15,7 +15,7 @@ BlockHarvestDrops Events implement the following interfaces and are able to call
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
-## ZenGetters
+## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
