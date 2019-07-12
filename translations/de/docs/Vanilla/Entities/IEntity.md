@@ -3,7 +3,7 @@
 Entity Interface. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
