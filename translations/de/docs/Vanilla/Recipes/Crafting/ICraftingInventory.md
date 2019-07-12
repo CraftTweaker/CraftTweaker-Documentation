@@ -9,7 +9,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Beschreibung                                         |
+| ZenGetter    | Rückgabetyp                                  | Beschreibung                                         |
 | ------------ | -------------------------------------------- | ---------------------------------------------------- |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
 | `size`       | int                                          | the inventory's size                                 |
