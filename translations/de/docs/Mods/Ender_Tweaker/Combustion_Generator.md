@@ -4,7 +4,7 @@
 
 `import mods.enderio.CombustionGen;`
 
-## Methods
+## Methoden
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel** The fluid fuel to add.
 - **int powerPerCycleRF** Amount of energy created per tick in a base-line machine.
