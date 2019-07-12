@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
-## ZenGetters
+## ZenGetter
 
 | GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
