@@ -103,7 +103,7 @@ Required Parameters:
 
 You can use these methods to retrieve a map using strings as keys and the object as values:
 
-| Method Name        | Return Type                                                                                  |
+| Methodenname       | Return Type                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
 | getMaterialParts() | [`Map<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
 | getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
