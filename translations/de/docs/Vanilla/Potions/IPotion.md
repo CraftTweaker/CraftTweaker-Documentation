@@ -15,7 +15,7 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 <potion:minecraft:strength>;
 ```
 
-## Zengetters
+## ZenGetter
 
 Currently, all you can do with potions is retrieving some information on them.  
 Example `<potion:minecraft:strength>.name`
