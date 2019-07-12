@@ -7,7 +7,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | Return Type |
+| ZenGetter | GetterMethod   | Rückgabetyp |
 | --------- | -------------- | ----------- |
 | uuid      | getUUID()      | String      |
 | name      | getName()      | String      |
