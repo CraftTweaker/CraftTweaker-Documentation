@@ -21,7 +21,7 @@ You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStac
 
 ## ZenGetters
 
-| ZenGetter | What does it do                                      | Return Type                              |
+| ZenGetter | What does it do                                      | Rückgabetyp                              |
 | --------- | ---------------------------------------------------- | ---------------------------------------- |
 | stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
 | chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
