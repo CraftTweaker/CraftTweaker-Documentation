@@ -4,7 +4,7 @@
 
 `import mods.ic2.Fermenter;`
 
-## Methods
+## Methoden
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The fermented fluid
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input fluid
