@@ -17,9 +17,9 @@ PlayerAnvilRepair Events implement the following interfaces and are able to call
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter        | ZenSetter     | Return Type                              |
+| ZenGetter        | ZenSetter     | Rückgabetyp                              |
 | ---------------- | ------------- | ---------------------------------------- |
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
