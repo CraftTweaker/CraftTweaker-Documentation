@@ -43,7 +43,7 @@ You can set and get these properties using `myChant.name`.
 
 You can set and get these properties functions.
 
-| name                       | parameters                                                                                                                                                                                                             | Return Type |
+| name                       | parameters                                                                                                                                                                                                             | Rückgabetyp |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | canApply                   | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
 | canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
