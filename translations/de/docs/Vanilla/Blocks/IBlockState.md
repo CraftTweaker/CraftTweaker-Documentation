@@ -41,7 +41,7 @@ IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). T
 
 ## ZenMethods and ZenGetters
 
-| ZenGetter     | Return Type                       | Beschreibung                                                                               |
+| ZenGetter     | Rückgabetyp                       | Beschreibung                                                                               |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
 | meta          | int                               | Returns the refered block's metadata                                                       |
