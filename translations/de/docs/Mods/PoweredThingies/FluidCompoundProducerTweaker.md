@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Compound Producer
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
