@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type |
+| ZenGetter       | ZenMethod           | Rückgabetyp |
 | --------------- | ------------------- | ----------- |
 | blocksLight     | blocksLight()       | bool        |
 | blocksMovement  | blocksMovement()    | bool        |
