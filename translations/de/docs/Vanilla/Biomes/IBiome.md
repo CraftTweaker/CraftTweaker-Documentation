@@ -15,7 +15,7 @@ You can get a list of all registered Biomes using `game.biomes` from [IGame](/Va
 
 Atm, all you can do with an IBiome object is retrieving some information out of it:
 
-| ZenGetter                    | Return Type |
+| ZenGetter                    | Rückgabetyp |
 | ---------------------------- | ----------- |
 | name                         | String      |
 | canRain                      | boolean     |
