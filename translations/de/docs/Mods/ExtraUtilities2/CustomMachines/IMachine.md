@@ -2,7 +2,7 @@
 
 An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to [import](/AdvancedFunctions/Import) the class.  
 You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
