@@ -8,7 +8,7 @@ The result of such a hit is an IRayTraceResult object.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IRayTraceResult`
 
-## ZenGetters
+## ZenGetter
 
 All you can do is retrieve information from these objects, here's which:  
 Be careful though, since all getters that do not return a bool can return `null`!
