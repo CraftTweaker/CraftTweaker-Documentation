@@ -1,6 +1,6 @@
 # Powered Thingies :: Powder Maker
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.powderMakerTweaker as pmt;
