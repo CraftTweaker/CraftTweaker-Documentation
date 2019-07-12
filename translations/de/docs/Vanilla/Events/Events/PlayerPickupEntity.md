@@ -10,9 +10,9 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | Rückgabetyp                           |
 | ----------- | ------------------------------------- |
 | `canceled`  | boolean                               |
 | `processed` | boolean                               |
