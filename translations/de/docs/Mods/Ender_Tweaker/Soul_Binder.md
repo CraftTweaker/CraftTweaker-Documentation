@@ -4,7 +4,7 @@
 
 `import mods.enderio.SoulBinder;`
 
-## Method
+## Methode
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
