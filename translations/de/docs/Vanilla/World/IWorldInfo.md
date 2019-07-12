@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter             | ZenMethod                  | Return Type |
+| ZenGetter             | ZenMethod                  | Rückgabetyp |
 | --------------------- | -------------------------- | ----------- |
 | commandsAllowed       | isCommandsAllowed()        | bool        |
 | borderCenterX         | getBorderCenterX()         | double      |
