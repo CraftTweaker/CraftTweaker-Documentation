@@ -1,6 +1,6 @@
 # Powered Thingies :: Compound Maker
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;
