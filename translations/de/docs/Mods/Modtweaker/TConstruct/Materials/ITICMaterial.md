@@ -35,6 +35,6 @@ You can get/set the following fields:
 | fletchingModifier | fletchingModifier | float                                                                                | Fletchungs made from this material have this durability modifier  |
 | fletchingAccuracy | fletchingAccuracy | float                                                                                | Fletchungs made from this material provide this accuracy          |
 
-## Methods
+## Methoden
 
 - boolean matches(ITICMaterial other); → returns if the given material is equal to `other`
