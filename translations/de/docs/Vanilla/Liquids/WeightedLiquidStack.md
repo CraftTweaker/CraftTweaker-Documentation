@@ -21,7 +21,7 @@ You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILi
 
 ## ZenGetters
 
-| ZenGetter | What does it do                                      | Return Type                                    |
+| ZenGetter | What does it do                                      | Rückgabetyp                                    |
 | --------- | ---------------------------------------------------- | ---------------------------------------------- |
 | stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
 | chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
