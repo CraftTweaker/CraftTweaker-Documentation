@@ -3,7 +3,7 @@
 The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
 Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
 
