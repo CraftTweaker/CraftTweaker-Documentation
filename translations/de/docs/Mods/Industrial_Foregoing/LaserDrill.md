@@ -1,6 +1,6 @@
 # Laser Drill
 
-### Importing
+### Importieren
 
     import mods.industrialforegoing.LaserDrill;
     
