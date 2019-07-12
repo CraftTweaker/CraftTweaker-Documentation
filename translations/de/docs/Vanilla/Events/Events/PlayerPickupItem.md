@@ -14,7 +14,7 @@ PlayerPickupItem Events implement the following interfaces and are able to call 
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
