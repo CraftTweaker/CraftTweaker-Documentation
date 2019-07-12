@@ -39,7 +39,7 @@ Be careful with Zensetters though, they only alter the fluid registry and have n
     definition.luminosity = 0;
     
 
-| ZenGetter   | Zensetter   | What is this?                                            | Return/Set Type |
+| ZenGetter   | ZenSetter   | What is this?                                            | Return/Set Type |
 | ----------- | ----------- | -------------------------------------------------------- | --------------- |
 | name        |             | This returns the unlocalized liquid name                 | string          |
 | displayName |             | This returns the localized liquid name                   | string          |
