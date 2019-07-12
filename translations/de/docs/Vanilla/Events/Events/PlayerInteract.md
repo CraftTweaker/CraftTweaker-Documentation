@@ -16,7 +16,7 @@ PlayerInteract Events implement the following interfaces and are able to call al
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
