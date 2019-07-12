@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityItem.
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter | Rückgabetyp                              |
 | --------- | ---------------------------------------- |
