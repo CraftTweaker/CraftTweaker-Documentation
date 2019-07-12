@@ -10,7 +10,7 @@ Stage is the class you are given when you create a new "Stage" the class contain
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | What does it do        | Return Type |
+| ZenGetter | What does it do        | Rückgabetyp |
 | --------- | ---------------------- | ----------- |
 | stage     | Returns the stage name | string      |
 
