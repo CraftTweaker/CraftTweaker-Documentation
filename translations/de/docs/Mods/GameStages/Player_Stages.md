@@ -6,7 +6,7 @@ The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) f
 
 As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
 
-## Methods
+## Methoden
 
 ### Check for gamestages
 
