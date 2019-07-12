@@ -1,6 +1,6 @@
 # Powered Thingies :: Powered Kiln
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
