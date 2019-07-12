@@ -1,6 +1,6 @@
 # Mortars
 
-## Importing The Package
+## Dieses Paket importieren
 
 You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
