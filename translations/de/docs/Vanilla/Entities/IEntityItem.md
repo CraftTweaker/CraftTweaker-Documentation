@@ -13,6 +13,6 @@ IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functi
 
 ## ZenGetters
 
-| ZenGetter | Return Type                              |
+| ZenGetter | Rückgabetyp                              |
 | --------- | ---------------------------------------- |
 | item      | [IItemStack](/Vanilla/Items/IItemStack/) |
