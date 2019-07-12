@@ -17,7 +17,7 @@ PlayerFillBucket Events implement the following interfaces and are able to call 
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetter
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
