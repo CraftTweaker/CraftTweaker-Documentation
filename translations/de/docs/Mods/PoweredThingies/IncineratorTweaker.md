@@ -1,6 +1,6 @@
 # Powered Thingies :: Incinerator
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;
