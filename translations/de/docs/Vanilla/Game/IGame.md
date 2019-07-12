@@ -18,7 +18,7 @@ It might be required for you to import the package if you encounter any issues (
 | liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
 | potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
 
-## Methods
+## Methoden
 
 ### GetEntity
 
