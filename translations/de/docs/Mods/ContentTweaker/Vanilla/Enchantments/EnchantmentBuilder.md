@@ -2,7 +2,7 @@
 
 Using this package you can create custom enchantments for tools, weapons and probably everything else.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.enchantments.EnchantmentBuilder;`
