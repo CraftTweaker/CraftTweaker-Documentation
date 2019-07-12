@@ -24,7 +24,7 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters/ZenSetters
+## ZenGetter/ZenSetter
 
 The following information can be retrieved/set during the event:
 
