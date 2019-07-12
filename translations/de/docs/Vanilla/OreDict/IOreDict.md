@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can retrieve the OreDictionary using the [`oreDict` global keyword](/Vanilla/Global_Functions/).
 
-## Methods
+## Methoden
 
 So what can be done with the oreDict?
 
