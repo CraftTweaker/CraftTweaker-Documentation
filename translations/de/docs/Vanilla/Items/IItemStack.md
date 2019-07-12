@@ -104,14 +104,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Weight
 
-| Method call                   | Returns                                                  | ParameterTypes     |
+| Methodenaufruf                | Returns                                                  | ParameterTypes     |
 | ----------------------------- | -------------------------------------------------------- | ------------------ |
 | `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
 | `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
 #### Damage
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
+| Methodenaufruf                                 | Returns                                    | ParameterTypes                             |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
 | `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
 | `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
@@ -119,7 +119,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
+| Methodenaufruf                 | Returns                                    | ParameterTypes                |
 | ------------------------------ | ------------------------------------------ | ----------------------------- |
 | `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
 | `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
@@ -128,14 +128,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Block Casting
 
-| Method call       | Returns                                         |
+| Methodenaufruf    | Returns                                         |
 | ----------------- | ----------------------------------------------- |
 | `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 | `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+| Methodenaufruf                       | Returns                                                                                                           | ParameterTypes                           |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
@@ -143,14 +143,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Enchantments
 
-| Method call                                                         | Returns        | ParameterTypes                                                          |
+| Methodenaufruf                                                      | Returns        | ParameterTypes                                                          |
 | ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
 | `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
 | `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
+| Methodenaufruf                                     | Returns                                                        | ParameterTypes                                        |
 | -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 | `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
 | `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
@@ -159,7 +159,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
+| Methodenaufruf                                               | Returns                                                                                                     | Parameter Types                                                          |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
 | `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
