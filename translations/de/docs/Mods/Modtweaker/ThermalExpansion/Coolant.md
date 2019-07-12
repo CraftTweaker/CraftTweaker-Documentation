@@ -3,7 +3,7 @@
 The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
 For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
 
-## Import the package
+## Dieses Paket importieren
 
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
