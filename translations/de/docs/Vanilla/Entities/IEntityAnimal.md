@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
 
-## Methods
+## Methoden
 
 ### ZenGetters/Setters
 
