@@ -2,7 +2,7 @@
 
 Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. It's as simple as that! Once you have added all the entries you need. Don't forget to build the stage!
 
-## Importing the package
+## Dieses Paket importieren
 
 `import mods.zenstages.Stage;`
 
