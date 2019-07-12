@@ -14,7 +14,7 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 
 ## Methoden
 
-### ZenGetters/ZenSetters
+### ZenGetter/ZenSetter
 
 | ZenGetter           | ZenSetter     | Type                                                      |
 | ------------------- | ------------- | --------------------------------------------------------- |
