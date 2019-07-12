@@ -16,7 +16,7 @@ If you ever find yourself in the need of creating a new IVector3d object, you ca
     crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
     
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter  | Type      |
 | ---------- | --------- |
