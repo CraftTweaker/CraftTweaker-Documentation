@@ -12,6 +12,6 @@ It might be required for you to import the package if you encounter any issues (
 
 IUser extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means all functions available to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IUser Objects.
 
-## Methods
+## Methoden
 
 Currently there are no distinct functions for IUser objects.
