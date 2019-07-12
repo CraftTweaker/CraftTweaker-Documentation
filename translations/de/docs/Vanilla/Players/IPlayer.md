@@ -16,7 +16,7 @@ IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions 
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Rückgabetyp                                | Usage                  |
+| ZenGetter     | What does it do                                                                            | Rückgabetyp                                | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
