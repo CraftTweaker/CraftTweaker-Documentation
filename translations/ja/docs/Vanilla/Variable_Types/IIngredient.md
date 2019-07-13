@@ -167,9 +167,9 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
     conditionedItem = item.onlyStack(32);
     
 
-### Matching
+### マッチング
 
-If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
+IItemStackがIIngredientと一致するかどうか確認したい場合、matchメソッドを用いて判別できます。 This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
 
     print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
     print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
