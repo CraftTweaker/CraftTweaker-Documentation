@@ -175,7 +175,7 @@ IItemStackがIIngredientと一致するかどうか確認したい場合、match
     print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
     
 
-You can also match two IIngredient Objects, in which case you'd need to use the in operator:
+2つのIIngredientオブジェクトをマッチングすることもできますが、それにはin演算子を用いる必要があります。
 
     val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
     val oreIngot = <ore:ingotIron>;
