@@ -169,7 +169,7 @@ IIngredientをマークして、後で[crafting functions](/Vanilla/Recipes/Craf
 
 ### マッチング
 
-IItemStackがIIngredientと一致するかどうか確認したい場合、matchメソッドを用いて判別できます。 This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
+IItemStackがIIngredientと一致するかどうか確認したい場合、matchメソッドを用いて判別できます。 これはbooleanを返します。 IIngredientが液体を表す場合は、アイテムがその液体に適した容器なのかを確認します。
 
     print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
     print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
