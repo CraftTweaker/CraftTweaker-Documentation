@@ -729,6 +729,16 @@ pages:
         - Life Infusion: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
         - Rock Grinder: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
+    - SteamAgeRevolution:
+      - Alloy Forge: 'Mods/SteamAgeRevolution/AlloyForge.md'
+      - Casting Block: 'Mods/SteamAgeRevolution/CastingBlock.md'
+      - Crucible: 'Mods/SteamAgeRevolution/Crucible.md'
+      - Distiller: 'Mods/SteamAgeRevolution/Distiller.md'
+      - Grinder: 'Mods/SteamAgeRevolution/Grinder.md'
+      - Steam Furnace: 'Mods/SteamAgeRevolution/SteamFurnace.md'
+      - Steam Hammer: 'Mods/SteamAgeRevolution/SteamHammer.md'
+      - Steelworks: 'Mods/SteamAgeRevolution/Steelworks.md'
+      - Vat: 'Mods/SteamAgeRevolution/Vat.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - Tree Tweaker:
