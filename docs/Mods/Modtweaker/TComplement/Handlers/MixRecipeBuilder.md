@@ -39,16 +39,18 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
  | `getOxidizerChance(IIngredient oxidizer)` | `int` | The chance in percent that the oxidizer is consumed, or `-1` if the oxidizer is not valid |
  | `getReducerChance(IIngredient reducer)` | `int` | The chance in percent that the reducer is consumed, or `-1` if the reducer is not valid |
  | `getOxidizerChance(IIngredient purifier)` | `int` | The chance in percent that the purifier is consumed, or `-1` if the oxidizer is not valid |
- | `addOxidizer(IIngredient oxidizer, int consumeChance)` | | Add the oxidizer with the given consume chance (in percent) |
- | `addReducer(IIngredient reducer, int consumeChance)` | | Add the reducer with the given consume chance (in percent) |
- | `addPurifier(IIngredient purifier, int consumeChance)` | | Add the purifier with the given consume chance (in percent) |
- |  `removeOxidizer(IIngredient oxidizer)` | | Remove the oxidizer if it had been added |
- |  `removeReducer(IIngredient reducer)` | | Remove the reducer if it had been added |
- |  `removePurifier(IIngredient purifier)` | | Remove the purifier if it had been added |
- | `removeAllOxidizer()` | | Remove all oxidizers |
- | `removeAllReducer()` | | Remove all reducers |
- | `removeAllPurifier()` | | Remove all purifiers |
+ | `addOxidizer(IIngredient oxidizer, int consumeChance)` | `MixRecipeBuilder` | Add the oxidizer with the given consume chance (in percent) |
+ | `addReducer(IIngredient reducer, int consumeChance)` | `MixRecipeBuilder` | Add the reducer with the given consume chance (in percent) |
+ | `addPurifier(IIngredient purifier, int consumeChance)` | `MixRecipeBuilder` | Add the purifier with the given consume chance (in percent) |
+ |  `removeOxidizer(IIngredient oxidizer)` | `MixRecipeBuilder` | Remove the oxidizer if it had been added |
+ |  `removeReducer(IIngredient reducer)` | `MixRecipeBuilder` | Remove the reducer if it had been added |
+ |  `removePurifier(IIngredient purifier)` | `MixRecipeBuilder` | Remove the purifier if it had been added |
+ | `removeAllOxidizer()` | `MixRecipeBuilder` | Remove all oxidizers |
+ | `removeAllReducer()` | `MixRecipeBuilder` | Remove all reducers |
+ | `removeAllPurifier()` | `MixRecipeBuilder` | Remove all purifiers |
  | `register()` | | Add a new MixRecipe with the data currently added in the MixRecipeBuilder |
+ 
+ All methods that return a `MixRecipeBuilder` return the same instance they were called on, allowing method chaining.
  
  ## How to use
  Once you have a `MixRecipeBuilder`, add the oxidizers, reducers and purifiers for your new recipe to the builder, then `register()` a recipe. A `MixRecipeBuilder` can be used to register as many recipes as you want: each time you call `register()`, it adds a new recipe with the infos it has at the time you call the function.
