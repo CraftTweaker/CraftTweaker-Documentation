@@ -621,6 +621,9 @@ pages:
         - Handlers:
           - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
           - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+          - High Oven: 'Mods/ModTweaker/TComplement/Handlers/HighOven.md'
+          - MixRecipeBuilder: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md'
+          - MixRecipeManager: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md'
       - Thaumcraft:
         - Aspects: 
           - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
