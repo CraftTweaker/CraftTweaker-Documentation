@@ -29,6 +29,25 @@ HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 + `time` is how long the fuel lasts, in seconds
 + `rate` is the temperature increase of the high oven when that fuel is used, in degrees per second
 
+## Melting Overrides
+You can add and remove melting overrides for the High Oven. Melting overrides, well, override the default melting behavior in the High Oven. Items normally behave the same as in the smeltery, overrides can redefine output fluid and melting temperature (only for the High Oven).
+
+### Removing overrides
+```
+// HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
+HighOven.removeMeltingOverride(<liquid:iron>);
+```
+
+### Adding overrides
+This is more interesting. Overrides specify a new behavior for items in the High Oven
+```
+// HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
+HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
+```
++ `output` the liquid and amount to produce
++ `input` the IIngredient to smelt. Supports transformers, oredict etc.
++ `temp` (Optional) the minimum temperature for the item to start melting in the High Oven, in Kelvin. If undefined, leave the calculation to the High Oven
+
 ## Heat recipes
 Heat recipes transform a fluid into another in the high oven tank, provided the temperature of the high oven is high enough.
 
