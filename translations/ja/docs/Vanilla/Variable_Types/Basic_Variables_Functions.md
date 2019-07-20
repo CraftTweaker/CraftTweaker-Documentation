@@ -2,7 +2,7 @@
 
 ZenScriptにおける最も基本的な型は文字列型、Integer型、そしてBoolean型です。
 
-## Most single types
+## ほとんどの"単一の"型
 
 `true == true` 2つの値が同一かどうかを確認できます。  
 `"Hello" != "World"`2つの値が同一でないかを確認できます。
