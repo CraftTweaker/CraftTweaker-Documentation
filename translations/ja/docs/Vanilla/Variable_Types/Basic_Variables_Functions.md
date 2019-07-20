@@ -46,8 +46,8 @@ Boolean型には次の機能があります。
 
 ## 配列/配列リスト
 
-Arrays and ArrayLists provide common functions
+配列と配列リストは次の基本的な機能があります。
 
-`array[1]` returns the item at the given index.  
-`array[1] = "Hello"` Sets the item at the given index.  
-`array.length` returns the arrays length
+`array[1]` 指定したインデックスの位置に格納されているものを返します。  
+`array[1] = "Hello"` 指定したインデックスの位置にものをセットします。  
+`array.length` 配列の長さを返します。
