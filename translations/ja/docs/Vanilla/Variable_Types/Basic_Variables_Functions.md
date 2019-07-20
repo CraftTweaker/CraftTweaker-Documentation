@@ -4,17 +4,17 @@ ZenScriptにおける最も基本的な型は文字列型、Integer型、そし�
 
 ## Most single types
 
-`true == true` You can check if two values are the same.  
-`"Hello" != "World"` You can also check if two values are unequal.
+`true == true` 2つの値が同一かどうかを確認できます。  
+`"Hello" != "World"`2つの値が同一でないかを確認できます。
 
-## Strings
+## 文字列型
 
-Strings provide some functionality
+文字列型にはいくつかの機能があります。
 
-`"Hello".length` Returns the string's length as int.  
-`"Hello"[1]` Returns the character at the string's given index as another string.  
-`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
-`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
+`"Hello".length` 文字列の長さをint型で返します。  
+`"Hello"[1]` 指定された位置の文字を返します。  
+`"Hello" in "Hell"` `in`演算子の前の文字列が後ろの文字列を含むかどうかをBoolean型で返します。 `in`は`has`に、好みで置き換えることができます。  
+`"Hel" ~ "lo " + "World"` 文字列を追加・連結することもできます。 `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
 
 Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
 This includes:
