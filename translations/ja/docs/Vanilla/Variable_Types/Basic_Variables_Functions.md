@@ -1,6 +1,6 @@
-# Basic variable functionality
+# 基本的な変数の関数
 
-The most basic variable types of ZenScript are Strings, Integers and booleans.
+ZenScriptにおける最も基本的な型は文字列型、Integer型、そしてBoolean型です。
 
 ## Most single types
 
