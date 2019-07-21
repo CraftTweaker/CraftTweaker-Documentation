@@ -1,6 +1,6 @@
 # コマンド
 
-CraftTwealerはスクリプト作成を手助けするコマンドを追加します。これらのコマンドはスクリプトの開発時間を短くするために提供されています。
+CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
 コマンドは次のものが最初に付きます。 `/crafttweaker` または `/ct`
 
@@ -205,10 +205,10 @@ JEIがインストールされている必要があります。
 
 説明:
 
-手に持っているアイテムのNBT情報をゲーム内チャット欄にJSONフォーマットで出力します。  
-このフォーマットはCrafttweakerのIDataのフォーマットとは違うことに注意してください。  
-クリックするとクリップボードへコピーできます。  
-`escaped`を引数に渡せば、自動で文字列をエスケープ処理してくれます。
+Prints the nbt of the item in your hand as JSON to the chat.  
+This format differs from the IData formatting CraftTweaker uses.  
+You can click it to be copied to your clipboard.  
+You can also privide the `escaped` argumetn to automatically escape the resulting string.
 
 ## Liquids
 
