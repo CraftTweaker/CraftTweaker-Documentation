@@ -1,6 +1,6 @@
 # 脚本入门
 
-Crafttweaker 使用一种称为 `ZenScript` 的自定义脚本语言。ZenScript 读取于 `<游戏主目录>/scripts` 文件夹下的所有带有 `.zs` 后缀的文件。
+CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
 ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味着`导入`应该位于文件的顶部，`变量声明`也应该出现在较靠近文件顶部的位置。当然这不是强制性的，`变量`虽能够在脚本的各处定义，但`变量`声明之前的所有行都无法访问这个变量。
 
@@ -12,7 +12,7 @@ ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味�
 
 ## 脚本
 
-脚本被存放在`<游戏主目录>/scripts` 文件夹，并在游戏的`预加载（PreInitialization）`阶段加载。不同于先前版本的 Crafttweaker，脚本无法被重新加载。这是因为 Mojang 对 1.12 版本的改动，目前仍无解决方案。 最后，脚本需要**同时在服务端和客户端上**才能启用。
+Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. 最后，脚本需要**同时在服务端和客户端上**才能启用。
 
 所有以 `.zs` 为后缀的脚本文件可以被压缩为 `.zip` 文件，且压缩后仍旧能够正常读取。
 
