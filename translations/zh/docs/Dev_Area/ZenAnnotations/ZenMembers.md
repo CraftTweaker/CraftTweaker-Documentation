@@ -42,7 +42,7 @@ ZenGetter 有两种类型：ZenGetters 和 ZenMemberGetters。
 
 ### ZenGetters 的例子
 
-[Crafttweaker 的 IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
+[CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
 
     @ZenClass("crafttweaker.oredict.IOreDict")
     @IterableSimple("crafttweaker.oredict.IOreDictEntry")
