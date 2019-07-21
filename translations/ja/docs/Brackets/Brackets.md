@@ -1,4 +1,4 @@
-# Bracket Handlers
+# ブラケット記法
 
 ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
 
