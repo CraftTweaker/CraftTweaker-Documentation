@@ -30,8 +30,8 @@ You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 | ZenGetter   | Description                             | Return Type    |
 | ----------- | --------------------------------------- | -------------- |
 | definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | String         |
-| displayName | Returns the gas' displayName            | String         |
+| NAME        | Returns the gas' name                   | string         |
+| displayName | Returns the gas' displayName            | string         |
 | amount      | Returns the gas' amount in millibuckets | int            |
 
 ## Setting the Object's Amount
@@ -49,8 +49,8 @@ You can get such an object using `gasStack.definition` (check the table above)
 
 | ZenGetter   | Description                            | Return Type |
 | ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | String      |
-| displayName | Returns the referred gas' display name | String      |
+| NAME        | Returns the referred gas' name         | string      |
+| displayName | Returns the referred gas' display name | string      |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 
