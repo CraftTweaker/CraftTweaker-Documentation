@@ -1,19 +1,19 @@
-# Arrays
+# 配列
 
-An array is a List containing several items of the same kind.
+配列とは同じ種類のものをリスト化したものをいいます。
 
-## Declaring Arrays
+## 配列の作り方
 
-It is declared using ```[``` and ```]```.
+配列は、次のものを用いて作成します。 ```[``` ```]```.
 
-    //Array containing "Hello" and "World"
+    //"Hello"と "World"を格納する配列
     val stringArray = ["Hello", "World"] as string[];
     
-    //Array containing 1-3
+    //1から3の数値を格納する配列
     val intArray = [1,2,3] as int[];
     
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+「まって、今までこの括弧を見たことがない」と思いましたか? 前にも見たはずです。 思い出してください。 ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
 
 ## Casting Arrays
 
