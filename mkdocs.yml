@@ -717,6 +717,17 @@ pages:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
       - Merchant: 'Mods/RockyCore/Merchant.md'
+    - Roots 3:
+      - Animal Harvest: 'Mods/Roots_3/animalharvest.md'
+      - Bark: 'Mods/Roots_3/bark.md'
+      - Fey Crafting: 'Mods/Roots_3/fey.md'
+      - Ritual of Flower Growth: 'Mods/Roots_3/flowergrowth.md'
+      - Mortar/Pestle, Spell Modification: 'Mods/Roots_3/mortar.md'
+      - \"Untrue Pacifist\" Advancement: 'Mods/Roots_3/pacifist.md'
+      - Pyre Crafting: 'Mods/Roots_3/pyre.md'
+      - Pyre Ritual Recipes: 'Mods/Roots_3/ritual.md'
+      - Runic Shears: 'Mods/Roots_3/runicshears.md'
+      - Ritual of Transmutation: 'Mods/Roots_3/transmutation.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
       - Recipes:
