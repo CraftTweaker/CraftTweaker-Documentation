@@ -4,7 +4,7 @@
 
 ## 例子
 
-[Crafttweaker 的 IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
+[CraftTweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
 
     @ZenClass("crafttweaker.data.IData")
     @ZenRegister
@@ -20,7 +20,7 @@
     }
     
 
-## What methods can be annotated || Additional Info
+## 什么方法可以被注解 || 额外信息
 
 - 你可以注解所有非静态的方法。 每个[操作符类型](/Dev_Area/ZenOperators/)你只应该注解一个方法。
 - Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
