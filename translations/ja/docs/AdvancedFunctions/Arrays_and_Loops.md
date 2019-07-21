@@ -160,9 +160,9 @@ whileループは、与えられた条件が`true`と評価される限り操作
 
 # 配列への追加
 
-While it is not recommended to do so, it is possible to add some Objects to Arrays.  
-You can only add single Objects to an array, you cannot add two arrays.  
-You use the `+` operator for array Addition:
+あまり推奨できませんが、配列にオブジェクトを追加することができます。  
+配列には単一のオブジェクトを追加することができます。2つの配列を追加することはできません。  
+配列への追加には、演算子`+`を用います。
 
 ```java
 import crafttweaker.item.IItemStack;
