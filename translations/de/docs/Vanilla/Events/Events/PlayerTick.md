@@ -21,4 +21,4 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ZenGetter | Rückgabetyp                          |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`   | String                               |
+| `phase`   | string                               |
