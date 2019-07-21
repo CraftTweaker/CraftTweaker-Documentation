@@ -29,14 +29,14 @@ You can retrieve the following information from a MaterialPart:
 
 | ZenMethod            | Rückgabetyp                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| getName()            | String                                                                          |
-| getLocalizedName()   | String                                                                          |
+| getName()            | string                                                                          |
+| getLocalizedName()   | string                                                                          |
 | hasEffect()          | boolean                                                                         |
 | hasOverlay()         | boolean                                                                         |
 | getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
-| getTextureLocation() | String                                                                          |
+| getTextureLocation() | string                                                                          |
 | getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean                                                                         |
@@ -47,4 +47,4 @@ You can also set the following information of a MaterialPart:
 | ZenMethod                           | Parameter              | Beschreibung                                                                                    |
 | ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
 | setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
-| setTextureLocation(textureLocation) | String textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |
+| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |
