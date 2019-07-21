@@ -1,6 +1,6 @@
 # Industrial Foregoing
 
-Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner Crafttweaker support.
+Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
 
 ### Item Weight
 
