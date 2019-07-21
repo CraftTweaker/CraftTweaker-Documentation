@@ -13,7 +13,7 @@
 | 名称                 | 类型                           | 说明                  |
 | ------------------ | ---------------------------- | ------------------- |
 | color              | int                          | 材料的 RGB 格式颜色        |
-| chemicalFormula    | String                       | 材料的化学式              |
+| chemicalFormula    | string                       | 材料的化学式              |
 | iconSet            | MaterialIconSet              | 生成元数据物品的图标集         |
 | components         | ImmutableList<materialstack> | 这个材料的组成             |
 | generationFlagsRaw | long                         | 这个材料的生成标志（详见材料生成标志） |
@@ -28,10 +28,10 @@
 | neutrons        | long   |                  |
 | mass            | long   |                  |
 | density         | long   |                  |
-| camelCaseString | String |                  |
-| unlocalizedName | String |                  |
-| localizedName   | String | 仅限客户端            |
-| name            | String | 材料注册的名称          |
+| camelCaseString | string |                  |
+| unlocalizedName | string |                  |
+| localizedName   | string | 仅限客户端            |
+| name            | string | 材料注册的名称          |
 
 方法：
 
@@ -200,6 +200,7 @@ These flags are applicable to materials.
 | DISABLE_DECOMPOSITION             | Disables decomposition recipe generation for this material and all materials that has it as component                                                                                                                                               |
 | DECOMPOSITION_REQUIRES_HYDROGEN | Decomposition recipe requires hydrogen as additional input. Amount is equal to input amount                                                                                                                                                         |
 | GENERATE_PLATE                    | Generate a plate for this material, If it's dust material, dust compressor recipe into plate will be generated, If it's metal material, bending machine recipes will be generated, If block is found, cutting machine recipe will be also generated |
+| GENERATE_DENSE                    | Generate a dense plate.                                                                                                                                                                                                                             |
 | NO_WORKING                        | Add to material if it cannot be worked by any other means, than smashing or smelting. This is used for coated Materials.                                                                                                                            |
 | NO_SMASHING                       | Add to material if it cannot be used for regular Metal working techniques since it is not possible to bend it.                                                                                                                                      |
 | NO_SMELTING                       | Add to material if it's impossible to smelt it                                                                                                                                                                                                      |
