@@ -17,7 +17,7 @@ IBiome 객체로 수행할 수 있는 작업은 정보를 가져오는 일입니
 
 | ZenGetter                    | 반환 타입   |
 | ---------------------------- | ------- |
-| name                         | String  |
+| name                         | string  |
 | canRain                      | boolean |
 | isSnowyBiome                 | boolean |
 | highHumidity                 | boolean |
