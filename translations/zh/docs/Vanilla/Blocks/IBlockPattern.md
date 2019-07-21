@@ -20,7 +20,7 @@ IBlockPattern 接口允许你将几个方块绑定到一个对象。
 | ZenGetter   | 功能          | 返回值类型                                   |
 | ----------- | ----------- | --------------------------------------- |
 | blocks      | 返回所有可能方块的列表 | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | 返回恰当方块的显示名称 | String                                  |
+| displayName | 返回恰当方块的显示名称 | string                                  |
 
 ## OR 运算
 
