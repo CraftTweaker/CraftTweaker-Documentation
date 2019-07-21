@@ -17,7 +17,7 @@ Atm, all you can do with an IBiome object is retrieving some information out of 
 
 | ZenGetter                    | Return Type |
 | ---------------------------- | ----------- |
-| name                         | String      |
+| name                         | string      |
 | canRain                      | boolean     |
 | isSnowyBiome                 | boolean     |
 | highHumidity                 | boolean     |
