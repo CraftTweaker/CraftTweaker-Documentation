@@ -26,9 +26,9 @@
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
     
 
-## Nested Arrays
+## 配列のネスト
 
-You can place Arrays in Arrays.
+配列の中に配列を入れることができます。
 
     val stringArray1 = ["Hello","World"] as string[];
     val stringArray2 = ["I","am"] as string[];
@@ -36,9 +36,9 @@ You can place Arrays in Arrays.
     val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
     
 
-## Reffering to items in an Array
+## 配列内要素へのアクセス
 
-You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
+リスト内の場所を利用して、配列の中の要素にアクセスできます。 最初の番号は 0から始まり、2番めは1、というように続きます。
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
