@@ -13,14 +13,14 @@
     val intArray = [1,2,3] as int[];
     
 
-「まって、今までこの括弧を見たことがない」と思いましたか? 前にも見たはずです。 思い出してください。 ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+「まって、今までこの括弧を見たことがない」と思いましたか? 前にも見たはずです。 思い出してください。 ```recipes.add(out,[[],[],[]]);```? これはそれぞれ3つまでの要素を含む3つの配列を使用した、クラフティングテーブル用のレシピです。
 
-## Casting Arrays
+## 配列へのキャスト
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+これまでの配列全てに、`as`という演算子がくっついていることに気づいたでしょう。  
+どうしてでしょう? それは、ZenScriptは配列を構成する要素の型を検出できないことがよくあるからです。 これが変なエラーログの原因になっていることがあります。  
+お手数ですが、正しい型の配列にキャストしてあげてください。  
+また、非プリミティブ型(文字列や整数といったもの以外)の配列にキャストする場合、スクリプトの先頭にてその型に対応するパッケージも[インポート](Import/)してあげてください。
 
     import crafttweaker.item.IItemStack;
     val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
