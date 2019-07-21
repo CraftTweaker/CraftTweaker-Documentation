@@ -77,11 +77,11 @@
 
 # ループ
 
-A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
+ループとは自分自身を反復するための機能です。 ループを用いて何らかの働きかけを配列内要素全てに行うことができます。
 
-## For Loop
+## Forループ構文
 
-The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+forループ構文の主な使い方は配列の反復処理です。 Iterating means doing an action to all elements of an array.  
 You can use the `break` keyword to break the loop prematurely.
 
     import crafttweaker.item.IItemStack;
