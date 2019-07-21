@@ -2,7 +2,7 @@
 
 If you are uncertain on how to create the colour int object, you can use the Color Object instead.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Color;`
@@ -15,7 +15,7 @@ All these Methods return a Color Object.
 | ZenMethod      | Parameter Type |
 | -------------- | -------------- |
 | fromInt(color) | int            |
-| fromHex(color) | String         |
+| fromHex(color) | string         |
 
 ## Nonstatic Methods
 
