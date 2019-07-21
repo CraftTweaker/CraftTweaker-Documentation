@@ -2,7 +2,7 @@
 
 An ICommand Object represents a command ingame.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommand;`
@@ -16,17 +16,17 @@ It might be required for you to import the package if you encounter any issues (
     </th>
     
     <th>
-      Return Type
+      返回值类型
     </th>
   </tr>
   
   <tr>
     <td>
-      name
+      name（名称）
     </td>
     
     <td>
-      String
+      string
     </td>
   </tr>
   
