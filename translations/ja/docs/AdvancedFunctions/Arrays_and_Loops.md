@@ -140,7 +140,7 @@ whileループは、与えられた条件が`true`と評価される限り操作
     print("After loop: " + i);
     
     
-    //Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+    //10から6を出力します。i == 5の時にbreakでループから脱出します。
     while (i > 0) {
         if i == 5
             break;
@@ -158,7 +158,7 @@ whileループは、与えられた条件が`true`と評価される限り操作
     }
     
 
-# Adding items to an Array
+# 配列への追加
 
 While it is not recommended to do so, it is possible to add some Objects to Arrays.  
 You can only add single Objects to an array, you cannot add two arrays.  
