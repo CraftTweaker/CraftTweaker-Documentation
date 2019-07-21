@@ -23,10 +23,10 @@ You can set these Properties
 | ZenMethod                           | Parameter                                                           |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
-| setName(name)                       | String name                                                         |
+| setName(name)                       | string name                                                         |
 | setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
-| setOreDictName(prefix)              | String prefix                                                       |
-| setAdditionalOreDictNames(prefixes) | String... prefixes                                                  |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
 You can see in the example scripts below what this means.
