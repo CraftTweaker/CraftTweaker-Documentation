@@ -28,5 +28,5 @@ You can retrieve the following information from a PartType:
 
 | ZenMethod    | Rückgabetyp |
 | ------------ | ----------- |
-| getName()    | String      |
-| isRequired() | String      |
+| getName()    | string      |
+| isRequired() | string      |
