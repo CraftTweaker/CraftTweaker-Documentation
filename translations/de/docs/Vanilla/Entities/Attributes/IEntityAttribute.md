@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter    | GetterMethod      | Rückgabetyp      |
 | ------------ | ----------------- | ---------------- |
-| name         | getName()         | String           |
+| name         | getName()         | string           |
 | defaultValue | getDefaultValue() | double           |
 | shouldWatch  | getShouldWatch()  | boolean          |
 | parent       | getParent()       | IEntityAttribute |
