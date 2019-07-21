@@ -131,7 +131,7 @@ whileループは、与えられた条件が`true`と評価される限り操作
 
     var i = 0; 
     
-    //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.
+    //0から9を出力します。なぜなら、i以降の繰り返しにおいて、iが10のために i < 10 がfalseと評価されるからです。
     while i < 10 {
         print(i); 
         i += 1;
