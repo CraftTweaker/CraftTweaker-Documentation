@@ -5,7 +5,7 @@
 
 ## 例子
 
-[Crafttweaker 测试项目仅 Mod](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[CraftTweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
     @ModOnly(value = "mcp")
     @ZenClass(value = "crafttweaker.tests.modOnly")
