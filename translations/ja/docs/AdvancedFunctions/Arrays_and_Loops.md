@@ -104,12 +104,12 @@ forループ構文の主な使い方は配列の反復処理です。 反復処�
         //IArrayの各要素 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)は変数"item"に入ります
         //それでこれらは使えるようになります
     
-        //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
+        //JArrayとKArray(i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)のアイテムを用いた、IArrayのアイテムのクラフト
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
     }
     
     for i in 0 to 10 {
-        //defines the variable "i" with each number from 0 to 9 (i.e. 0,1,2,...,8,9)
+        //0から9 (i.e. 0,1,2,...,8,9)の各数値は変数"i"に入る
         print(i);
     }
     
