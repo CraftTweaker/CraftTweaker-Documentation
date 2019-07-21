@@ -94,15 +94,15 @@ forループ構文の主な使い方は配列の反復処理です。 反復処�
     //for [IntegerName, ] elementName in IArray {code}
     
     for item in IArray {
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use this variable now!
+        //IArrayの各要素 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)は変数"item"に入ります
+        //それでこれは使えるようになります
         recipes.remove(item);
     }
     
     for i, item in IArray {
-        //defines the variable "i" with each element Number of IArray (i.e. 0,1,2,...)
-        //defines the variable "item" with each element of IArray (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)
-        //Just use these variables now!
+        //IArrayの各番号 (i.e. 0,1,2,...)は変数"i"に入ります
+        //IArrayの各要素 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)は変数"item"に入ります
+        //それでこれらは使えるようになります
     
         //Crafts Item of IArray using item of JArray and KArray (i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)
         recipes.addShapeless(item,[JArray[i],KArray[i]]);
