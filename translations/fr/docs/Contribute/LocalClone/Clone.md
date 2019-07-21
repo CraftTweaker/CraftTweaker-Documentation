@@ -31,7 +31,7 @@ Now you need to run the command `git clone <repo-Url>`:
 
 ![Clone command](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![Clone command success](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
 
-Now you should have a new folder named `Crafttweaker-Documentation` in your directory.  
+Now you should have a new folder named `CraftTweaker-Documentation` in your directory.  
 Let's navigate to it and issue a `git status`:
 
 ![Change directory and issue git status](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
