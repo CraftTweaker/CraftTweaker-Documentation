@@ -1,6 +1,6 @@
 # Einführung in Skripte
 
-CraftTweaker nutzt eine spezielle Skriptsprache namens `ZenScript`. Die Skripte werden von `.zs`-Dateien gelesen, welche sich im Ordner `<gamedir>/scripts` befinden.
+CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
 ZenScript ist eine "top down"-Skriptsprache, was bedeutet, dass ganz oben im Skript die `Imports` stehen müssen, danach werden die `Variablen` deklariert. `Variablen` können zwar auch weiter unten im Skript stehen, allerdings kann man von den übergeordneten Zeilen aus dann auch nicht auf diese `Variable` zugreifen.
 
@@ -12,7 +12,7 @@ Zusätzlich zur Hauptfunktionalität, welche den Support für Minecraft Vanilla 
 
 ## Skripte
 
-Skripte werden im Ordner `<minecraftdir>/scripts` gespeichert und werden in der `PreInitialization`-Phase von Minecraft geladen. Leider können seit Minecraft Version 1.12 Skripte nicht mehr neu geladen werden, wie es bei früheren Versionen von CraftTweaker möglich war. Außerdem müssen Skripte **sowohl auf dem Server, als auch auf dem Client** vorhanden sein, damit diese Funktionieren!
+Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Außerdem müssen Skripte **sowohl auf dem Server, als auch auf dem Client** vorhanden sein, damit diese Funktionieren!
 
 Skriptdateien haben die Endung `.zs` und können auch in eine `.zip`-Datei gepackt werden.
 
