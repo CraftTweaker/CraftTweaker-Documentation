@@ -114,12 +114,12 @@ forループ構文の主な使い方は配列の反復処理です。 反復処�
     }
     
     for i in 10 .. 20 {
-        //defines the variable "i" with each number from 10 to 19 (i.e. 10,11,12,...,18,19)
+        //10から19 (i.e. 10,11,12,...,18,19)の各数値は変数"i"に入る
         print(i);
     }
     
     for item in loadedMods["minecraft"].items {
-        //defines the variable "item" with each item added by the mod with the modID "minecraft" and removes its crafting recipe
+        //modIDが"minecraft"のアイテムを変数"item"に格納し、そのクラフトレシピを削除する
         recipes.remove(item);
     }
     
