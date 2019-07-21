@@ -2,7 +2,7 @@
 
 The IBiome interface allows you to retrieve information on a registered Biome.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.world.IBiome;`
@@ -17,7 +17,7 @@ Atm, all you can do with an IBiome object is retrieving some information out of 
 
 | ZenGetter                    | Return Type |
 | ---------------------------- | ----------- |
-| name                         | String      |
+| name                         | string      |
 | canRain                      | boolean     |
 | isSnowyBiome                 | boolean     |
 | highHumidity                 | boolean     |
