@@ -40,42 +40,42 @@
 
 リスト内の場所を利用して、配列の中の要素にアクセスできます。 最初の番号は 0から始まり、2番めは1、というように続きます。
 
-If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
+入れ子になった配列の中へアクセスするには、2回参照する必要があります。
 
     /*
-    stringArray[0] is "Hello"
-    stringArray[1] is "World"
-    stringArray[2] is "I"
-    stringArray[3] is "am"
+    stringArray[0] → "Hello"
+    stringArray[1] → "World"
+    stringArray[2] → "I"
+    stringArray[3] → "am"
     */
     val stringArray = ["Hello","World","I","am"] as string[];
     
-    //prints "Hello"
+    //"Hello"を出力
     print(stringArray[0]);
     
     
-    //Nested Arrays
-    val stringArray1 = ["Hello","World"] as string[];
-    val stringArray2 = ["I","am"] as string[];
-    val stringArray3 = ["a","beautiful"] as string[];
-    val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
+    //入れ子になった配列
+    val stringArray1 → ["Hello","World"] as string[];
+    val stringArray2 → ["I","am"] as string[];
+    val stringArray3 → ["a","beautiful"] as string[];
+    val stringArrayAll → [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] as string[][];
     
     /*
-    stringArrayAll[0] is ["Hello","World"]
-    stringArrayAll[1] is ["I","am"]
-    stringArrayAll[2] is ["a","beautiful"]
-    stringArrayAll[3] is ["Butterfly","!"]
+    stringArrayAll[0] → ["Hello","World"]
+    stringArrayAll[1] → ["I","am"]
+    stringArrayAll[2] → ["a","beautiful"]
+    stringArrayAll[3] → ["Butterfly","!"]
     
-    stringArrayAll[0][0] is "Hello"
-    stringArrayAll[0][1] is "World"
+    stringArrayAll[0][0] → "Hello"
+    stringArrayAll[0][1] → "World"
     etc.
     */
     
-    //prints "World"
+    //"World"を出力
     print(stringArrayAll[0][1]);
     
 
-# Loops
+# ループ
 
 A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
