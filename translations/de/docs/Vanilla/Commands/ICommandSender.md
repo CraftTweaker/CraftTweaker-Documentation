@@ -1,6 +1,6 @@
 # ICommandSender
 
-The ICommandSender interface is used the base of each Entity and also some other types in Crafttweaker.  
+The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
 Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
 
 ## Dieses Paket importieren
