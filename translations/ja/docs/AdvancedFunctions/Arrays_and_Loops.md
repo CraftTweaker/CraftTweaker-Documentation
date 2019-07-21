@@ -81,8 +81,8 @@
 
 ## Forループ構文
 
-forループ構文の主な使い方は配列の反復処理です。 Iterating means doing an action to all elements of an array.  
-You can use the `break` keyword to break the loop prematurely.
+forループ構文の主な使い方は配列の反復処理です。 反復処理とは、配列内のすべての要素に処理を行うことです。  
+`break`キーワードでループを早く抜けることができます。
 
     import crafttweaker.item.IItemStack;
     
