@@ -31,8 +31,8 @@
 
 ![克隆命令](/Contribute/LocalClone/assets/GitBash_CloneCommand.png) ![克隆命令成功](/Contribute/LocalClone/assets/GitBash_CloneCommandSuccess.png)
 
-现在你需要创建名为 `Crafttweaker-Documentation` 新的文件夹。  
-浏览并输入 `git status`：
+Now you should have a new folder named `CraftTweaker-Documentation` in your directory.  
+Let's navigate to it and issue a `git status`:
 
 ![更改目录和发布 git 状态](/Contribute/LocalClone/assets/GitBash_Clone_GitStatus.png)
 
