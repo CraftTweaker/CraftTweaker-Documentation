@@ -126,8 +126,8 @@ forループ構文の主な使い方は配列の反復処理です。 反復処�
 
 ## While ループ
 
-The while loop executes the given code as long as the given condition evaluates to `true`.  
-Alternatively, you can stop it using the `break` keyword.
+whileループは、与えられた条件が`true`と評価される限り操作を繰り返します。  
+また、`break`によって停止することもできます。
 
     var i = 0; 
     
