@@ -28,7 +28,7 @@ You can retrieve the following information from a PartType:
 
 | ZenMethod            | Return Type                            |
 |----------------------|----------------------------------------|
-| getName()            | String                                 |
+| getName()            | string                                 |
 
 You can set the following information on a PartType:
 

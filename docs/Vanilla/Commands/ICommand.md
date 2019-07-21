@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter | Return Type   |
 |-----------|---------------|
-| name      | String        |
+| name      | string        |
 | aliases   | List<String\> |
 
 

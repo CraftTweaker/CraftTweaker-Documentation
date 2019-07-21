@@ -6,7 +6,7 @@ This will cancel the activation of a ritual if the specific requirements aren't 
 
 ### Command:
 There is currently an in-game command for dumping all of the Ritual Strings for use by the Ritual Handler.
-The command is: /ct ritualDump and it'll output all of the ritual strings to the "Crafttweaker.log".
+The command is: /ct ritualDump and it'll output all of the ritual strings to the "CraftTweaker.log".
 
 
 ### Pre-1.4.0:

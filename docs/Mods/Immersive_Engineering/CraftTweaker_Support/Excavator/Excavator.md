@@ -7,13 +7,13 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 |Required  |Type                 |Data Type  |
 |----------|---------------------|-----------|
-|Required  |Name                 |String     |
-|Required  |Mineral Weight       |Integer    |
-|Required  |Fail Chance          |Double     |
-|Required  |Ores                 |String[]   |
-|Required  |Chances              |Double[]   |
-|Optional  |Dimension Whitelist  |Integer[]  |
-|Optional  |Blacklist            |Boolean    |
+|Required  |Name                 |string     |
+|Required  |Mineral Weight       |int        |
+|Required  |Fail Chance          |double     |
+|Required  |Ores                 |string[]   |
+|Required  |Chances              |double[]   |
+|Optional  |Dimension Whitelist  |int    []  |
+|Optional  |Blacklist            |boolean    |
 
 ### Example
 ```JAVA

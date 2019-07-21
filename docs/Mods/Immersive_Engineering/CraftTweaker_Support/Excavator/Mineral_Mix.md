@@ -11,7 +11,7 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 |Required  |Type                 |Data Type  |
 |----------|---------------------|-----------|
-|Required  |Name                 |String     |
+|Required  |Name                 |string     |
 
 ```JAVA
 //Example:
@@ -26,8 +26,8 @@ var Iron = Excavator.getMineral("Iron_Ore");
 
 |Required  |Type                 |Data Type  |
 |----------|---------------------|-----------|
-|Required  |Ore                  |String     |
-|Required  |Chance               |Double     |
+|Required  |Ore                  |string     |
+|Required  |Chance               |string     |
 
 ```
 mineralMixObject.addOre("oreIron", 0.5);
@@ -38,7 +38,7 @@ You will need to use the oredict names.
 
 |Required  |Type                 |Data Type  |
 |----------|---------------------|-----------|
-|Required  |Ore                  |String     |
+|Required  |Ore                  |string     |
 
 ```
 mineralMixObject.removeOre("oreIron");

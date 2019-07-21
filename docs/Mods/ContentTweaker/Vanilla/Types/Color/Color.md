@@ -14,7 +14,7 @@ All these Methods return a Color Object.
 | ZenMethod      | Parameter Type |
 |----------------|----------------|
 | fromInt(color) | int            |
-| fromHex(color) | String         |
+| fromHex(color) | string         |
 
 
 ## Nonstatic Methods

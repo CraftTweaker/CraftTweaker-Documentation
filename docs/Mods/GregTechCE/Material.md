@@ -13,7 +13,7 @@ Properties:
 | Name               | Type                         | Description                                      |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
 | color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | String                       | Chemical formula of this material                |
+| chemicalFormula    | string                       | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
 | components         | ImmutableList<MaterialStack> | List of this material component                  |
 | generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
@@ -28,10 +28,10 @@ Getters:
 | neutrons        | long   |                                      |
 | mass            | long   |                                      |
 | density         | long   |                                      |
-| camelCaseString | String |                                      |
-| unlocalizedName | String |                                      |
-| localizedName   | String | Client-side only                     |
-| name            | String | Name in the Material registry        |
+| camelCaseString | string |                                      |
+| unlocalizedName | string |                                      |
+| localizedName   | string | Client-side only                     |
+| name            | string | Name in the Material registry        |
 
 Methods:
 

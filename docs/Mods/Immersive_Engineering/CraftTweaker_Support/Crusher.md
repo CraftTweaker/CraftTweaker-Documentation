@@ -8,11 +8,11 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 |Required  |Type                  |Data Type                                          										|
 |----------|----------------------|-----------------------------------------------------------------------------------------|
-|Required  |Output                |[IItemStack](/Vanilla/Items/IItemStack/) 													|
-|Required  |Input                 |[IIngredient](/Vanilla/Variable_Types/IIngredient/)      									|
-|Required  |Energy                |Integer																					|
+|Required  |Output                |[IItemStack](/Vanilla/Items/IItemStack/) 												|
+|Required  |Input                 |[IIngredient](/Vanilla/Variable_Types/IIngredient/)      								|
+|Required  |Energy                |int				    																	|
 |Optional  |Secondary Output      |[IItemStack](/Vanilla/Items/IItemStack/)													|
-|Optional  |Secondary Chance      |Double																					|
+|Optional  |Secondary Chance      |double																					|
 
 ### Example
 ```JAVA
