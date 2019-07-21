@@ -1,6 +1,6 @@
 # 스크립트로 시작하기
 
-Crafttweaker는 `ZenScript`라는 사용자 지정 스크립팅 언어를 사용합니다. ` 이 스크립트 파일들은 <gamedir>/scripts` 폴더 아래에 `.zs` 확장자를 갖는 파일을 말합니다.
+CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
 ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일의 가장 위에 위치해야 하고, `변수 선언`도 파일의 상단에 위치해야 하지만, 제약은 없고 어디에서나 `변수`를 정의 할 수 있습니다. 그러나, 선언이 이루어지기 전에 해당 `변수`는 액세스 할 수 없습니다.
 
@@ -12,7 +12,7 @@ ZenScript는 "하향식" 스크립팅 언어입니다. 즉, `imports`는 파일�
 
 ## 스크립트
 
-스크립트는 `<minecraftdir>/scripts`에 저장되고 마인크래프트의 `PreInitialization`단계에서 로드됩니다. 이전 버전의 Crafttweaker와 달리 스크립트를 다시 로드 할 수 없습니다. 이는 Mojang이 1.12에서 변경한 스팩이기 때문에 해결 방안의 없습니다. 또한, 스크립트가 정상적으로 동작하려면 **서버와 클라이언트 양쪽에** 다 위치해야 합니다.
+Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. 또한, 스크립트가 정상적으로 동작하려면 **서버와 클라이언트 양쪽에** 다 위치해야 합니다.
 
 스크립트 파일은 확장자가 `.zs`이며 `.zip`으로 압축시켜도 읽을 수 있습니다.
 
