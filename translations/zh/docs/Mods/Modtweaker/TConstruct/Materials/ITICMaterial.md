@@ -2,7 +2,7 @@
 
 A Tinkers' Construct IMaterial (not to be confused with [ContentTweaker's IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)) is what a Tinker's construct tool can be made of.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import modtweaker.tconstruct.ITICMaterial;`
@@ -21,7 +21,7 @@ You can get/set the following fields:
 
 | ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| getName           |                   | String                                                                               | The Material's Name                                               |
+| getName           |                   | string                                                                               | The Material's Name                                               |
 | definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
 | durabilityHead    | durabilityHead    | int                                                                                  | A Toolhead made from this material has this durability            |
 | miningSpeedHead   | miningSpeedHead   | float                                                                                | A Toolhead made from this material has this mining speed          |
