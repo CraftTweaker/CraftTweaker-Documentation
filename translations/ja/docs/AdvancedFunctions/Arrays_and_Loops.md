@@ -124,7 +124,7 @@ forループ構文の主な使い方は配列の反復処理です。 反復処�
     }
     
 
-## While Loop
+## While ループ
 
 The while loop executes the given code as long as the given condition evaluates to `true`.  
 Alternatively, you can stop it using the `break` keyword.
