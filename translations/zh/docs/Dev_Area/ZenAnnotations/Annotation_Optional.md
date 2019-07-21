@@ -41,9 +41,9 @@
 
 | 成员          | 类型              | 默认值              |
 | ----------- | --------------- | ---------------- |
-| value       | String          | `""`             |
+| value       | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
-| methodName  | String          | `"getValue"`     |
+| methodName  | string          | `"getValue"`     |
 
 可选参数也支持默认值。  
 如果你想提供默认值，你可以通过传入 `value` 成员代表参数的字符串来实现这一点。
