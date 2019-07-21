@@ -33,7 +33,7 @@ Also, you can neither set nor get properties from an existing ICreativeTab(one t
 
 | Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
 | ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | String                                                                                                  | YES      |               | The Creative Tab's name |
+| unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
 | iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
 | iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
 
