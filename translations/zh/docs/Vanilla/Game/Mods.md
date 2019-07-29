@@ -1,12 +1,11 @@
-# LoadedMods
+# 已加载模组
 
-You can use the [global keyword](/Vanilla/Global_Functions/) `loadedMods` to access all currently loaded mods.  
-If needed you can import the class using `import crafttweaker.mods.ILoadedMods;`
+你可以使用 [全局关键词](/Vanilla/Global_Functions/)`loadedMods` 访问当前所有加载的模组。  
+如果需要，你可以使用 `import crafttweaker.mods.ILoadedMods;`导入该类
 
-## Check if a mod is loaded
+## 检查一个模组是否被加载
 
-Use the `in` function to check if a mod is loaded;  
-You can also use the `contains` method:
+使用`in`关键字来检查一个模组是否被加载。你也可以使用`contains`方法。
 
     //if MinecraftCoderPack is loaded
     if(loadedMods in "mcp"){
