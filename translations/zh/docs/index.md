@@ -1,6 +1,6 @@
 # CraftTweaker-2
 
-CraftTweaker-2 is the official continuation of MineTweaker-3 for newer Minecraft versions!
+Crafttweaker-2 是 MineTweaker-3 官方版本的延续，专为新版本 Minecraft 设计！
 
 CraftTweaker-2 can be used to add Recipe to Minecraft using ZenScript, A scripting language created for MineTweaker.
 
