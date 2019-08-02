@@ -7,7 +7,7 @@ import mods.arcanearchives.GCT;
 #### Methods
 
 ```java
-static void addRecipe(
+void addRecipe(
   string name,         // the recipe name
   IItemStack output,   // the output as an itemstack
   IIngredient[] inputs // the inputs as an array of ingredients
@@ -19,7 +19,7 @@ static void addRecipe(
 
 
 ```java
-static void removeRecipe(
+void removeRecipe(
   IItemStack output // the output itemstack to be removed (quantity must match)
 );
 ```
@@ -29,7 +29,7 @@ static void removeRecipe(
 
 
 ```java
-static void replaceRecipe(
+void replaceRecipe(
   string name,         // the recipe name (must already exist)
   IItemStack output,   // the output as an itemstack
   IIngredient[] inputs // the inputs as an array of ingredients
