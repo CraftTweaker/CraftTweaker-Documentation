@@ -34,7 +34,7 @@
 
 ## 欠点
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- 変わるパラメータが少ないときでしか有効に機能しません
+- 配列を間違ってキャストした場合、スクリプトが検知できないエラーが発生します
+- 配列での一つのエラーによって配列の宣言自体が失敗し、何も実行されないときがあります
+- 配列の宣言自体が間違った場合、変なエラーメッセージが表示されることがあります
