@@ -1,11 +1,11 @@
 # 进度
 
-Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
+在Skillable （原模组） 中已有对进度这一要求类型的支持，现已在进度类型的代码上进行优化使其在构建逻辑要求时更可靠。 有关进度的语法如下：
 
-    Example:
+    例：
     adv|ResourceLocation
     
-    Working Example:
+    可直接生效的例子：
     adv|minecraft:husbandry/plant_seed
     
 
