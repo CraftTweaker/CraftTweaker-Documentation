@@ -1,11 +1,11 @@
-# Skills & Traits
+# 技能 & 属性 对照表
 
-## Skills List:
+## 技能列表：
 
-| Skills    | ResourceLocation      |
+| 技能        | 资源位置                  |
 |:--------- |:--------------------- |
-| Agility   | reskillable:agility   |
-| Attack    | reskillable:attack    |
+| 敏捷        | reskillable:agility   |
+| 攻击        | reskillable:attack    |
 | Building  | reskillable:building  |
 | Defense   | reskillable:defense   |
 | Farming   | reskillable:farming   |
