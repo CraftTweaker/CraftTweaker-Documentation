@@ -9,4 +9,4 @@
     reskillable:building|15
     
 
-Reskillable 发布后，我们抛弃了技能名系统，转而使用资源位置名系统。 This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Reskillable 发布后，我们抛弃了技能名系统，转而使用资源位置名系统。 这允许为资源位置添加多个有不同模组 id 而有相同内部名称的技能。 你可以在 [技能 & 属性](/Mods/CompatSkills/Requirements/Skills_Traits/) 对照表中找到技能的资源位置。
