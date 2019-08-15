@@ -1,4 +1,4 @@
-# Advancements:
+# 进度
 
 Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
 
