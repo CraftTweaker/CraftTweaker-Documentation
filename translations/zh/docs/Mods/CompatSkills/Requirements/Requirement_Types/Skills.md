@@ -1,12 +1,12 @@
-# Skills:
+# 技能
 
-Skills alongside Advancements was one of the original lock types added by Skillable and has since then been refined to support other mods adding more Skills. The Skill Syntax is as follows:
+技能，与进度一样，是 Skillable 添加的初始锁定类型之一，后被优化以支持其它模组添加更多技能。 与技能有关的语句如下：
 
-    Example:
+    例：
     ResourceLocation|Level
     
-    Working Example:
+    可直接生效的例子：
     reskillable:building|15
     
 
-Since the release of Reskillable we've moved from a skill name system to a resource location name system. This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Reskillable 发布后，我们抛弃了技能名系统，转而使用资源位置名系统。 This allows for several skills to add skills with the same internal name but different mod id's for the Resource Location. You can find the Skill's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
