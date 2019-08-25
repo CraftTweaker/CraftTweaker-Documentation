@@ -13,7 +13,7 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+では、これをばらして見てみましょう。
 
 - `val myAssocArray =` 普通の変数宣言
 - `{` これが、連想配列の宣言です、どうぞ
@@ -21,18 +21,18 @@ Let's break this down, shall we?
 - `,` そして、次に続きます
 - `gold : <minecraft:gold_ingot>` `<minecraft:gold_ingot>`を`gold`にマッピングします
 - `}` これで連想配列の宣言を終了します、どうぞ
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `as IItemStack[string];`インデックスに文字列を使用し、要素にIItemStackを格納する連想配列です
 
-Okay, so what do I need to think of when using these?
+さて、使用する際には、何を考えなければならないでしょう。
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Zenscriptで使用可能な全ての型を、キー及び要素にできます。
+- テキストだと明示されたものは文字列として解釈されるため、連想配列の宣言(`{}`を使用する)でのキーに変数を設定することはできません。
 
-## Refering to Items inside an Associative Array.
+## 連想配列の要素へのアクセス
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
+通常の[配列](Arrays_and_Loops/)の要素へアクセスするのと同じ方法で、連想配列の要素へとアクセスできます。  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
@@ -43,7 +43,7 @@ val assocArray = {
 //array[index]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//変数の型が正しいときに限り、ここで変数を用いることもできます
 print(assocArray[dirt]);
 ```
 
