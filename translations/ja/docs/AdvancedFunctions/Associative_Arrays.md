@@ -47,22 +47,22 @@ print(assocArray[&lt;minecraft:dirt&gt;]);
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+特殊なケースとしては、文字列をインデックスに使用する場合です。  
+この場合は、次のようにmemberGetterを使用することができます。
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
+    //必要であれば「""」が使えます
     "one" : "1",
 
-    //but you don't have to
+    //こうする必要はありません
     two : "2"
 } as string[string];
 
-//You can either use the memberGetter
+//memberGetterを使用できます
 print(assocWithStrings.one);
 
-//Or the standard index Getter
+//index Getterも使用できます
 print(assocWithStrings["two"]);
 ```
 
