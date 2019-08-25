@@ -1,10 +1,10 @@
 # 連想配列
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](Arrays_and_Loops/)と似ています。 [配列](Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
 
-## Declaring an Associative Array
+## 連想配列の作り方
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+中括弧`{}`とコロン`:`を使用して、連想配列を宣言できます。
 
 ```JAVA
 val myAssocArray = {
@@ -15,12 +15,12 @@ val myAssocArray = {
 
 Let's break this down, shall we?
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
+- `val myAssocArray =` 普通の変数宣言
+- `{` これが、連想配列の宣言です、どうぞ
+- `dirt : <minecraft:dirt>` `<minecraft:dirt>`を`dirt`にマッピングします
+- `,` そして、次に続きます
+- `gold : <minecraft:gold_ingot>` `<minecraft:gold_ingot>`を`gold`にマッピングします
+- `}` これで連想配列の宣言を終了します、どうぞ
 - `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
 Okay, so what do I need to think of when using these?
