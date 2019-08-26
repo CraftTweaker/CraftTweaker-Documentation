@@ -21,7 +21,7 @@ Du kannst das paket über mods.immersiveengineering.ArcFurnace aufrufen.
 ### Beispiel
 
 ```JAVA
-//Example:
+//Beispiel:
 mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
 mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:dirt>, 2000, 2048);
