@@ -1,7 +1,6 @@
 # PlayerAdvancement
 
-The PlayerAdvancement Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
 
 ## Event-Klasse
 
@@ -25,7 +24,7 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 ## Id
 
-Apart from the functionality the PE exposes you can get the advancement's ID as string.
+Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
 
 This can for example be a string like
 
