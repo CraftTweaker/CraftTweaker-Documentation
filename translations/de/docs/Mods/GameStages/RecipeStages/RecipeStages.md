@@ -21,7 +21,7 @@ Adds a mirrored shaped recipe that is locked behind a stage.
 //mods.recipestages.Recipes.addShapedMirrored(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
 mods.recipestages.Recipes.addShapedMirrored("two", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:gold_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
-mods.recipestages.Recipes.addShapedMirrored("test", "one", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
+mods.recipestages.Recipes.addShapedMirrored("test_mirrored", "one", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 
 ```
 
@@ -32,7 +32,7 @@ Adds a shapeless recipe that is locked behind a stage.
 //mods.recipestages.Recipes.addShapeless(String name, String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
 mods.recipestages.Recipes.addShapeless("one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
-mods.recipestages.Recipes.addShapeless("shapeless test". "one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
+mods.recipestages.Recipes.addShapeless("shapeless_test". "one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
 ```
 
 Sets the stage of a non staged recipe.
@@ -45,21 +45,22 @@ mods.recipestages.Recipes.setRecipeStage("one", <minecraft:stone_hoe>);
 mods.recipestages.Recipes.setRecipeStage("one", "minecraft:boat");
 ```
 
-Sets the stage of all recipes based on a regex check against their name.
-
-```java
-//mods.recipestages.Recipes.setRecipeStageByRegex(String name, String recipeName);
-
-mods.recipestages.Recipes.setRecipeStageByRegex("one", "minecraft");
-```
-
-Sets the stage of all recipes that make items from a certain mod.
+Sets the stage of all recipes that make items from a certain mod.  
+More specifically, stages all recipes that have the given modid as resource domain.  
+Does NOT work with regex expressions, so using `.*` as argument would do nothing!
 
 ```java
 //mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
+mods.recipestages.Recipes.setRecipeStageByMod("one", "minecraft");
+```
+
+Sets the stage of all recipes based on a regex check against their name.
+
+```java
+//mods.recipestages.Recipes.setRecipeStageByRegex(String name, String modid);
 //This sets the stage of all recipes who's name only contains numbers to stage "one"
 
-mods.recipestages.Recipes.setRecipeStageByMod("one", "^[0-9]*$");
+mods.recipestages.Recipes.setRecipeStageByRegex("one", "^[0-9]*$");
 ```
 
 Tells RecipeStages to print Container names to chat
