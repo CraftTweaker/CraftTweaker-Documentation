@@ -1,10 +1,10 @@
 # Ассоциативные массивы
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ассоциативный массив (иногда также называемый картой или словарем) &mdash; способ хранить несколько значений, равно как и обычный [массив](Arrays_and_Loops/). Однако, в отличие от [массивов](Arrays_and_Loops/), вы можете выбрать тип, который хотите использовать в качестве индекса или (как это называется в картах) ключа!
 
-## Declaring an Associative Array
+## Объявление ассоциативного массива
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Ассоциативные массивы объявляются с помощью фигурных скобок`{}` и двоеточий `:`.
 
 ```JAVA
 val myAssocArray = {
