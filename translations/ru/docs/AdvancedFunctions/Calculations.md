@@ -1,7 +1,7 @@
 # Вычисления
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Иногда недостаточно просто писать числа. Иногда вам нужны вычисления.  
+Помните, что вы можете использовать больше двух чисел одновременно, `1+1+1+1` будет работать, как надо.
 
 ## Совет
 
