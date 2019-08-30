@@ -17,7 +17,7 @@ pages:
     - Глобальные и статические переменные: 'AdvancedFunctions/Global_Static_Variables.md'
     - Импорт: 'AdvancedFunctions/Import.md'
     - Препроцессоры:
-      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - Про препроцессоры: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
@@ -27,7 +27,7 @@ pages:
   - Советы и подсказки:
       - Предисловие: 'Tips_Tricks/Foreword.md'
       - Предметы:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+        - Использование IItemDefinitions для диапазонов метаданных: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - Общие советы:
         - Разделяйте ваши скрипты на несколько файлов: 'Tips_Tricks/General/Split_Files.md'
         - Используйте циклы, чтобы облегчить чтение ваших скриптов: 'Tips_Tricks/General/Loops_Readability.md'
@@ -48,7 +48,7 @@ pages:
       - Источники урона: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Зачарования: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Предметы: 'Vanilla/Brackets/Bracket_Item.md'
-      - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
+      - BlockState: 'Vanilla/Brackets/Bracket_BlockState.md'
       - Сущности: 'Vanilla/Brackets/Bracket_Entity.md'
       - Жидкости: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Руды: 'Vanilla/Brackets/Bracket_Ore.md'
@@ -186,7 +186,7 @@ pages:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
-      - Логгер: 'Vanilla/Utils/Logger.md'
+      - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
     - Типы данных переменных:
       - Обзор типов: 'Vanilla/Variable_Types/Variable_Types.md'
@@ -764,12 +764,12 @@ pages:
       - How to clone: 'Contribute/LocalClone/Clone.md'
       - How to commit: 'Contribute/LocalClone/CreateCommit.md'
       - How to push: 'Contribute/LocalClone/Push.md'
-  - Developer Area:
-    - Using IIngredients: 'Dev_Area/Ingredients.md'
-    - ZenTokens: 'Dev_Area/ZenTokens.md'
-    - ZenOperators: 'Dev_Area/ZenOperators.md'
-    - ZenAnnotations:
-      - ZenAnnotations Overview: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
+  - Раздел для разработчиков:
+    - Использование IIngredient: 'Dev_Area/Ingredients.md'
+    - Токены ZenScript: 'Dev_Area/ZenTokens.md'
+    - Операторы ZenScript: 'Dev_Area/ZenOperators.md'
+    - Аннотации ZenScipt:
+      - Обзор: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
       - BracketHandler: 'Dev_Area/ZenAnnotations/Annotation_BracketHandler.md'
       - ZenCaster: 'Dev_Area/ZenAnnotations/Annotation_ZenCaster.md'
       - ZenClass: 'Dev_Area/ZenAnnotations/Annotation_ZenClass.md'
@@ -783,9 +783,9 @@ pages:
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
-    - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
+    - Пользовательские классы ZenScript: 'Dev_Area/Custom_ZenClasses.md'
 
-# Не меняйте в PRs то, что ниже
+# Не меняйте в PR'ах то, что ниже
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
