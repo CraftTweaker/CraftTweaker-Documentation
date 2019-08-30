@@ -17,7 +17,7 @@ pages:
     - Глобальные и статические переменные: 'AdvancedFunctions/Global_Static_Variables.md'
     - Импорт: 'AdvancedFunctions/Import.md'
     - Препроцессоры:
-      - Про препроцессоры: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - О препроцессорах: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
@@ -755,15 +755,15 @@ pages:
       - Death Chest Spawning: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
       - VanillaDeathChest: 'Mods/VanillaDeathChest/VanillaDeathChest.md'
   - Как внести свой вклад: 
-    - How to fork the project: 'Contribute/SetupGithub.md'
-    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
-    - How to create files online: 'Contribute/OnlineEditor_Create.md'
-    - How to file a Pull Request: 'Contribute/PullRequest.md'
-    - Using a local version: 
-      - How to install git: 'Contribute/LocalClone/InstallingGit.md'
-      - How to clone: 'Contribute/LocalClone/Clone.md'
-      - How to commit: 'Contribute/LocalClone/CreateCommit.md'
-      - How to push: 'Contribute/LocalClone/Push.md'
+    - Как создать ответвление проекта: 'Contribute/SetupGithub.md'
+    - Как редактировать файлы онлайн: 'Contribute/OnlineEditor_Edit.md'
+    - Как создавать файлы онлайн: 'Contribute/OnlineEditor_Create.md'
+    - Как отправить Pull Request: 'Contribute/PullRequest.md'
+    - Использование локальной копии: 
+      - Как установить git: 'Contribute/LocalClone/InstallingGit.md'
+      - Как клонировать: 'Contribute/LocalClone/Clone.md'
+      - Как сделать коммит: 'Contribute/LocalClone/CreateCommit.md'
+      - Как отправить: 'Contribute/LocalClone/Push.md'
   - Раздел для разработчиков:
     - Использование IIngredient: 'Dev_Area/Ingredients.md'
     - Токены ZenScript: 'Dev_Area/ZenTokens.md'
