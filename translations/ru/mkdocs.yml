@@ -408,7 +408,7 @@ pages:
         - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
         - Скобки:
-          - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
+          - Материалы: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
         - Material Builder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
@@ -574,7 +574,7 @@ pages:
         - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
         - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
       - Botania:
-        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Команды: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
         - Рецепты: 
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
