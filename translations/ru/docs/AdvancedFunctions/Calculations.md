@@ -27,7 +27,7 @@ Always be careful about what two variable types you use and when in doubt, just 
 Приклеивает одно к другому.
 
     //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
+    print("Привет," ~ " " ~ "Мир");
     
 
 ## Результаты вычисления
