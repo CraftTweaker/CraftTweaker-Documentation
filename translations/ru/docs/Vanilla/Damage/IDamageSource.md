@@ -1,15 +1,15 @@
 # IDamageSource
 
-An IDamageSource object is the source of damage to an entity.
+Объект IDamageSource является источником урона сущности.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.damage.IDamage`
 
-## Zengetters and ZenMethods without parameters
+## Геттеры и методы ZenScript без параметров
 
-| ZenGetter        | ZenMethod                         | Return Type                           |
+| Геттер           | Метод                             | Возвращаемый тип                      |
 | ---------------- | --------------------------------- | ------------------------------------- |
 | harmInCreative   | canHarmInCreative();              | bool                                  |
 | damageType       | getDamageType();                  | string                                |
@@ -32,13 +32,13 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 |                  | setMagicDamage();                 | IDamageSource                         |
 |                  | setProjectile();                  | IDamageSource                         |
 
-## ZenMethod with Parameters
+## Методы ZenScript с параметрами
 
-- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → Returns a string containing the death message for the entity if it dies by this damageSource
+- getDeathMessage([IEntity](/Vanilla/Entities/IEntity/) entity); → Возвращает строку, содержащую сообщение о смерти сущности, если она умирает из-за этого источника урона.
 
-## Getting an IDamageSource Object
+## Получение объекта IDamageSource
 
-You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/).
+Вы можете воспользоваться методами ниже либо [обработчиком скобок для источника урона](/Vanilla/Brackets/Bracket_DamageSource/).
 
 ```kotlin
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
@@ -50,7 +50,7 @@ crafttweaker.damage.IDamageSource.createThornsDamage(IEntity source)
 crafttweaker.damage.IDamageSource.createExplosionDamage(@Optional IEntityLivingBase entityLivingBaseIn)
 crafttweaker.damage.IDamageSource.createOfType(String type)
 
-//Preregistered Damage Types
+//Предварительно зарегистрированные источники урона
 crafttweaker.damage.IDamageSource.IN_FIRE()
 crafttweaker.damage.IDamageSource.LIGHTNING_BOLT()
 crafttweaker.damage.IDamageSource.ON_FIRE()
