@@ -1,6 +1,6 @@
 # IEntity
 
-Entity Interface. Used to obtain and modify information entities' data.  
+Интерфейс сущности. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
 ## Импорт пакета
@@ -12,9 +12,9 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
-## ZenGetters
+## Геттеры ZenScript
 
-| GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
+| Геттер                   | Метод-геттер      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
 | air                      | getAir()          | int                                                         |
 | alive                    | isAlive()         | boolean                                                     |
