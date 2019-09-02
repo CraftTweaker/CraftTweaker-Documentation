@@ -9,11 +9,11 @@
 
 ## Вызов IBiome
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
+Вы можете получить список всех зарегистрированных биомов с помощью `game.biomes` из [IGame](/Vanilla/Game/IGame/). Пока что это единственный способ.
 
 ## Геттеры ZenScript
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Эмм, все что вы можете сделать с объектом IBiome &mdash; получить некоторую информацию из него:
 
 | Геттер                       | Возвращаемый тип |
 | ---------------------------- | ---------------- |
