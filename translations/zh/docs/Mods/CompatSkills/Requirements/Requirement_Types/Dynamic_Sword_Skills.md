@@ -1,6 +1,6 @@
-# Dynamic Sword Skills
+# 动态剑技
 
-## Syntax
+## 语句
 
     dss|skillname|level
     

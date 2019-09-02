@@ -4,7 +4,7 @@ The ICTItemList is what an [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Adva
 It is a list of items that will be dropped by the given [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/).  
 Depending on other event handlers active it might already contain some items, or it might be empty.
 
-## Importing the class
+## Diese Klasse importieren
 
 If you ever find yourself in need of importing this class, this is how you do it:
 

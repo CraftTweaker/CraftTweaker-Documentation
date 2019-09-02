@@ -2,7 +2,7 @@
 
 You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using

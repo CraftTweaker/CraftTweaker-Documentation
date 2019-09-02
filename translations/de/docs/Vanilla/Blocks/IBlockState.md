@@ -2,7 +2,7 @@
 
 An IBlockState object represents a block's current state.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockState;`
@@ -41,11 +41,11 @@ IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). T
 
 ## ZenMethods and ZenGetters
 
-| ZenGetter     | Return Type                       | Description                                                                                |
+| ZenGetter     | Rückgabetyp                       | Beschreibung                                                                               |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
 | meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | String                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
 
 ## ZenMethods
 

@@ -3,7 +3,7 @@
 An OreEntry is a material like Gold, Diamond, Coal, Redstone and so on.  
 You can use this to get several [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/).
 
-## Methods
+## Methoden
 
 In general, the methods take a string parameter that is a prefix to be used.  
 For example, an OreEntry for `"Gold"`, called with the prefix `"dust"` will return Gold Dust.  

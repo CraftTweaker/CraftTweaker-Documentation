@@ -2,7 +2,7 @@
 
 Using this package you can create custom enchantments for tools, weapons and probably everything else.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.enchantments.EnchantmentBuilder;`
@@ -43,7 +43,7 @@ You can set and get these properties using `myChant.name`.
 
 You can set and get these properties functions.
 
-| name                       | parameters                                                                                                                                                                                                             | Return Type |
+| name                       | parameters                                                                                                                                                                                                             | Rückgabetyp |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | canApply                   | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
 | canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
@@ -82,7 +82,7 @@ Use these methods to be instantly notified if you made a typo.
     myChant.setTypeWearable()
     
 
-## Example
+## Beispiel
 
     #loader contenttweaker
     val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");

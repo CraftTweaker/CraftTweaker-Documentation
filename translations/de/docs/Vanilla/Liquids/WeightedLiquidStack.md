@@ -3,7 +3,7 @@
 A Weighted Liquid Stack is like a normal [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) but has a percentage added to it.  
 You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedLiquidStack;`
@@ -19,9 +19,9 @@ You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILi
     val wLiquidStack2 = liquidStack.weight(0.2);
     
 
-## ZenGetters
+## ZenGetter
 
-| ZenGetter | What does it do                                      | Return Type                                    |
+| ZenGetter | What does it do                                      | Rückgabetyp                                    |
 | --------- | ---------------------------------------------------- | ---------------------------------------------- |
 | stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
 | chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |

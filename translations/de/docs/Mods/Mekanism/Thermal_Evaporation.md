@@ -21,6 +21,6 @@ Specifying an output parameter will only remove the specific recipe that results
 
 ## Removing all recipes
 
-As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
     mods.mekanism.thermalevaporation.removeAllRecipes();

@@ -1,6 +1,6 @@
 # Powered Thingies :: Powder Maker
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.powderMakerTweaker as pmt;
@@ -22,7 +22,7 @@ pmt().clear()
 addRecipe(input: IItemStack, outputs: Array<WeightedItemStack>)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 pmt().addRecipe(<minecraft:bucket>, [<minecraft:iron_ingot> % 100, <minecraft:iron_ingot> % 12, <minecraft:iron_ingot> % 12]);

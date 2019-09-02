@@ -21,10 +21,10 @@ Note: Currently all this does is loop over the different possibilities in java w
     mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
     
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
 ## Removing all recipes
 
-As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
+As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
     mods.mekanism.crusher.removeAllRecipes();

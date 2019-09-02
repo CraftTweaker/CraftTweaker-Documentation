@@ -212,6 +212,8 @@ pages:
       - Inscriber: 'Mods/Applied_Energistics_2/Inscriber.md'
       - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
+    - Arcane Archives:
+      - Gem Cutter's Table: 'Mods/Arcane_Archives/gct.md' 
     - Artisan Worktables:
       - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
       - RecipeBuilder: 
@@ -378,14 +380,14 @@ pages:
           - Sound:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
-          - World:
+          - Świat:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
       - Material System:
         - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - DropTableBuilder: 'Mods/ContentTweaker/Materials/DropTableBuilder.md'
-        - Brackets:
+        - Nawiasy:
           - Material Part Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
         - Materials:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
@@ -405,7 +407,7 @@ pages:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
-        - Brackets:
+        - Nawiasy:
           - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
@@ -574,7 +576,7 @@ pages:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes: 
+        - Przepisy: 
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -602,11 +604,11 @@ pages:
         - Handlers:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Refined Storage:
-        - Recipes:
+        - Przepisy:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets: 
+        - Nawiasy: 
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -621,19 +623,23 @@ pages:
         - Handlers:
           - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
           - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+          - High Oven: 'Mods/Modtweaker/TComplement/Handlers/HighOven.md'
+          - MixRecipeBuilder: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md'
+          - MixRecipeManager: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md'
       - Thaumcraft:
         - Aspects: 
           - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
           - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
           - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
           - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
-        - Brackets:
+        - Nawiasy:
           - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
         - Handlers:
           - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
           - Crucible: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
           - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
           - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
+          - Salis Mundus: 'Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md'
           - Smelting Bonus: 'Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md'
           - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
         - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
@@ -662,12 +668,12 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Przepisy: 
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
       - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
-      - Crafting:
+      - Wytwarzanie:
         - Blender: 'Mods/MrCrayfish_s_Furniture_Mod/Blender.md'
         - Chopping Board: 'Mods/MrCrayfish_s_Furniture_Mod/ChoppingBoard.md'
         - Dishwasher: 'Mods/MrCrayfish_s_Furniture_Mod/Dishwasher.md'
@@ -685,7 +691,7 @@ pages:
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - PneumaticCraft&#58; Repressurized:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
-      - Crafting:
+      - Wytwarzanie:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
         - Heat Frame Cooling: 'Mods/PneumaticCraft_Repressurized/HeatFrameCooling.md'
@@ -714,9 +720,20 @@ pages:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
       - Merchant: 'Mods/RockyCore/Merchant.md'
+    - Roots 3:
+      - Animal Harvest: 'Mods/Roots_3/animalharvest.md'
+      - Bark: 'Mods/Roots_3/bark.md'
+      - Fey Crafting: 'Mods/Roots_3/fey.md'
+      - Ritual of Flower Growth: 'Mods/Roots_3/flowergrowth.md'
+      - Mortar/Pestle, Spell Modification: 'Mods/Roots_3/mortar.md'
+      - \"Untrue Pacifist\" Advancement: 'Mods/Roots_3/pacifist.md'
+      - Pyre Crafting: 'Mods/Roots_3/pyre.md'
+      - Pyre Ritual Recipes: 'Mods/Roots_3/ritual.md'
+      - Runic Shears: 'Mods/Roots_3/runicshears.md'
+      - Ritual of Transmutation: 'Mods/Roots_3/transmutation.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
-      - Recipes:
+      - Przepisy:
         - Alchemical Fusion: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion.md'
         - Alchemical Fusion Catalysts: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion_Catalysts.md'
         - Cauldron Cleaning: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'

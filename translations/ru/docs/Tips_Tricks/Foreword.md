@@ -3,15 +3,15 @@
 Этот раздел будет содержать советы и трюки для опытных пользователей CraftTweaker.  
 Помните, что все предложенное здесь довольно индивидуально и может помешать вам вместо того, чтоб помочь.
 
-## Этот раздел для
+## Этот раздел нужен, чтобы:
 
-- Show you strategies on how to minimize your scripts.
-- Show you strategies on how to save time writing the scripts.
-- Show you strategies on how to make your scripts easier to read.
-- Show you strategies on how to make your scripts easier to debug.
-- Show you some often occuring mistakes, so you can spot them more easily in your scripts.
+- показать, что вы можете сделать, чтобы сократить свои скрипты;
+- показать, что вы можете сделать, чтобы сэкономить время на написание скриптов;
+- показать, что вы можете, сделать, чтобы облегчить чтение ваших скриптов;
+- показать вам способы, как облегчить отладку ваших скриптов;
+- показать вам некоторые часто встречающиеся ошибки, чтобы вам было легче обнаружить их в своих скриптах.
 
-## Этот раздел НЕ для
+## Этот раздел НЕ для:
 
-- This section is not to be understood as kind of Tutorial for the novice Tweaker.
-- These tips are just tips, you don't need to implement them in your scripts and some might even be inappropriate for what you are trying to achieve.
+- того, что бы послужить как учебник для начинающих пользователей.
+- И вообще, эти советы &mdash; только советы, и вы не обязаны реализовывать их в своих скриптах, и они могут даже не приводить к тому, что вы пытаетесь достичь.

@@ -6,16 +6,16 @@ The Blast Furnace package can be used to add/remove recipes/fuels to/from the Im
 
 You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
-## Add Recipe:
+## Rezept hinzufügen:
 
-| Required | Type   | Data Type                                           |
+| Required | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time   | Integer                                             |
 | Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -26,7 +26,7 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
@@ -40,12 +40,12 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 
 ## Add Fuel
 
-| Required | Type  | Data Type                                           |
+| Required | Type  | Datentyp                                            |
 | -------- | ----- | --------------------------------------------------- |
 | Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time  | Integer                                             |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -55,11 +55,11 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 
 ## Remove Fuel
 
-| Required | Type   | Data Type                                |
+| Required | Type   | Datentyp                                 |
 | -------- | ------ | ---------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:

@@ -2,7 +2,7 @@
 
 The ILocalizedNameSupplier function is used to programmatically determine an [Item's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) display name.
 
-## importing the class
+## diese Klasse importieren
 
 If you want to import the function's class, here you go:
 

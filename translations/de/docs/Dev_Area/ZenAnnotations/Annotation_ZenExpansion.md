@@ -3,7 +3,7 @@
 A ZenExpansion is, like [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), used to annotate a Class that should be accessible from within ZS.  
 Unlike ZenClasses however, ZenExpansions are used to expand the functionality of already existing ZenClasses.
 
-## Example
+## Beispiel
 
     @ZenExpansion("crafttweaker.item.IItemStack")
     @ZenRegister

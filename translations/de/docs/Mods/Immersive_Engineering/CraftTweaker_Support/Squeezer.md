@@ -6,16 +6,16 @@ The Squeezer package can be used to add/remove recipes to/from the Immersive Eng
 
 You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
-## Add Recipe
+## Rezept hinzufügen
 
-| Required | Type   | Data Type                                           |
+| Required | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
 | Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Energy | Integer                                             |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>
 
 ## Remove Fluid Recipe
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -41,11 +41,11 @@ mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 
 ## Remove Item Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -56,11 +56,11 @@ mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 
 ## Remove By Input
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:

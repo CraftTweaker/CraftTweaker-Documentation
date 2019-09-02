@@ -4,7 +4,7 @@
 
 `import mods.ic2.ThermalCentrifuge;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**

@@ -1,6 +1,6 @@
 # Powered Thingies :: Incinerator
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;
@@ -24,7 +24,7 @@ addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 
 `power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
-##### Example
+##### Beispiel
 
 ```kotlin
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);

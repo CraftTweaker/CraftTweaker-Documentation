@@ -1,10 +1,10 @@
 # Ассоциативные массивы
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ассоциативный массив (иногда также называемый картой или словарем) &mdash; способ хранить несколько значений, равно как и обычный [массив](Arrays_and_Loops/). Однако, в отличие от [массивов](Arrays_and_Loops/), вы можете выбрать тип, который хотите использовать в качестве индекса или (как это называется в картах) ключа!
 
-## Declaring an Associative Array
+## Объявление ассоциативного массива
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Ассоциативные массивы объявляются с помощью фигурных скобок`{}` и двоеточий `:`.
 
 ```JAVA
 val myAssocArray = {
@@ -13,11 +13,11 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Давайте разберемся с этим, да?
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
+- `val myAssocArray =` — стандартное объявление переменной,
+- `{` — ассоциативный массив, сэр!
+- `dirt : <minecraft:dirt>` — мы присваиваем значение `<minecraft:dirt>` к ключу `dirt`,
 - `,` wait, there's more to come
 - `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
 - `}` we have reached the end of the Array, Sir!
@@ -28,7 +28,7 @@ Okay, so what do I need to think of when using these?
 - You can use about every type available to Zenscript as either key or value.
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
-## Refering to Items inside an Associative Array.
+## Обращение к элементам ассоциативного массива
 
 You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
@@ -66,7 +66,7 @@ print(assocWithStrings.one);
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Манипулирование элементами внутри ассоциативного массива
 
 As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
 There is one major differenc though:  
@@ -101,7 +101,7 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## Перебор ассоциативного массива
 
 There are two Iterators that allow you to iterate over an Associative Array:
 

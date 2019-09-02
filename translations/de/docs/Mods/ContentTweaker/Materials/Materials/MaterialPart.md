@@ -2,7 +2,7 @@
 
 A MaterialPart Object is, as the name suggests a combination of a [Material](/Mods/ContentTweaker/Materials/Materials/Material/) and a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), such as `platinum gear`.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPart;`
@@ -27,16 +27,16 @@ List:
 
 You can retrieve the following information from a MaterialPart:
 
-| ZenMethod            | Return Type                                                                     |
+| ZenMethod            | Rückgabetyp                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
-| getName()            | String                                                                          |
-| getLocalizedName()   | String                                                                          |
+| getName()            | string                                                                          |
+| getLocalizedName()   | string                                                                          |
 | hasEffect()          | boolean                                                                         |
 | hasOverlay()         | boolean                                                                         |
 | getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
-| getTextureLocation() | String                                                                          |
+| getTextureLocation() | string                                                                          |
 | getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean                                                                         |
@@ -44,7 +44,7 @@ You can retrieve the following information from a MaterialPart:
 
 You can also set the following information of a MaterialPart:
 
-| ZenMethod                           | Parameter              | Description                                                                                     |
+| ZenMethod                           | Parameter              | Beschreibung                                                                                    |
 | ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
 | setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
-| setTextureLocation(textureLocation) | String textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |
+| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |

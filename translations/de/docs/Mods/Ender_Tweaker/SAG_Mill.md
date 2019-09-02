@@ -4,7 +4,7 @@
 
 `import mods.enderio.SagMill;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
 - **float[] chances** The chance that this item appears. Must have the same length as output.

@@ -3,7 +3,7 @@
 If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
 Doesn't sound that hard, does it?
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialBuilder;`
@@ -22,7 +22,7 @@ You can set these Properties
 
 | ZenMethod               | Parameter                                                        |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | String name                                                      |
+| setName(name)           | string name                                                      |
 | setColor(color)         | int color                                                        |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | setHasEffect(hasEffect) | boolean hasEffect                                                |

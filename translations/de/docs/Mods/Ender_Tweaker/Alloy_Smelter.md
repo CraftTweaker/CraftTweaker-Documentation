@@ -4,7 +4,7 @@
 
 `import mods.enderio.AlloySmelter;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.

@@ -6,7 +6,7 @@ That means you can cancel them using CrT or check if they have been canceled.
 Note that events that have been canceled before CrT receives them will not be checked by the handlers.  
 Also, if you register multiple handlers, and one of them cancels the event, the other CrT handlers will still receive it!
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventCancelable;`

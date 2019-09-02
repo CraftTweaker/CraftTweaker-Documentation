@@ -2,13 +2,13 @@
 
 The PlayerBonemeal Event is fired whenever a player uses bonemeal on a block.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerBonemealEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 PlayerBonemeal Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -17,11 +17,11 @@ PlayerBonemeal Events implement the following interfaces and are able to call al
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
-## ZenGetters
+## ZenGetter
 
-The following information can be retrieved from the event:
+Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter    | Return Type                                 |
+| ZenGetter    | Rückgabetyp                                 |
 | ------------ | ------------------------------------------- |
 | `canceled`   | boolean                                     |
 | `processed`  | boolean                                     |

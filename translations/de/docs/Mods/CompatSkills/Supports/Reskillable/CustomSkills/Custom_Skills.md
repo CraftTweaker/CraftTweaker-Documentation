@@ -39,7 +39,7 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name           | Values                                   |
+| Methodentyp | Methodenname          | Values                                   |
 |:----------- |:--------------------- | ---------------------------------------- |
 | Setter      | setLevelCap           | Takes an Integer                         |
 | Getter      | getLevelCap           | Returns an Integer                       |

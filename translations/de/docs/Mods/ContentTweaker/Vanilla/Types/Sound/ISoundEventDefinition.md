@@ -2,7 +2,7 @@
 
 An ISoundEventDefinition object represents a sound event in the game. A sound event is triggered when a sound is about to be played.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.SoundEvent;`
@@ -14,6 +14,6 @@ You can get such an object using the [Sound Event Bracket Handler](/Mods/Content
 
 ## ZenMethods without parameters
 
-| ZenMethod      | Return type | Definition                       |
+| ZenMethod      | Rückgabetyp | Definition                       |
 | -------------- | ----------- | -------------------------------- |
 | getSoundName() | String      | Returns the event's sound's name |

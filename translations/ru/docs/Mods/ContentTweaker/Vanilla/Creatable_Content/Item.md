@@ -50,9 +50,9 @@ To get/set the properties you can either use the respecting ZenGetters/Setters o
 | rarity                | EnumRarity                                                                                                      | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
 | smeltingExprerience   | float                                                                                                           | No       | -1            | How much experienve the player earns for smelting that item in a furnace?            |
 | textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
-| toolClass             | String                                                                                                          | No       |               | What block types the tool can break                                                  |
+| toolClass             | string                                                                                                          | No       |               | What block types the tool can break                                                  |
 | toolLevel             | int                                                                                                             | No       | -1            | The level of blocks can be broken                                                    |
-| unlocalizedName       | String                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
+| unlocalizedName       | string                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
 
 ## Registering the item
 

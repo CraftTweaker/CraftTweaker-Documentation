@@ -2,7 +2,7 @@
 
 Using this package you can create materials that you can then create tools with!
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.MaterialBuilder;`
@@ -133,7 +133,7 @@ Only tooltypes whose stat has been added will be built!
     myMat.removeProjectileMaterialStats();
     
 
-## Example
+## Beispiel
 
     #loader contenttweaker
     #modloaded tconstruct

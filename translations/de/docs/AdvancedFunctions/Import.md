@@ -28,12 +28,12 @@ Imports werden immer ganz oben im Skript deklariert. Deklarierte Imports gelten 
 
 ## Import as (Importieren als)
 
-Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names. When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
+Manchmal will man zwei Funktionen mit dem gleichen Namen importieren oder das Skript einfach schöner halten, in dem man seinen Imports eigene Namen gibt. Mit dem AS-Statement hinter dem Import kannst du diesem Import einen eigenen Namen geben.
 
-    //This will import the hide function from JEI and make it available under the name "h"
+    //Dies importiert die "hide"-Funktion von JEI und gibt ihr den Namen "h"
     import mods.jei.JEI.hide as h;
     
-    //And this will import the removeAndHide function from JEI and make it available under the name "rh"
+    //Dies importiert die "removeAndHide"-Funktion von JEI und gibt ihr den Namen "rh"
     import mods.jei.JEI.removeAndHide as rh;
     
     h(<minecraft:dirt>);

@@ -1,6 +1,6 @@
 # Powered Thingies :: Compound Maker
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;
@@ -22,7 +22,7 @@ ct().clear()
 addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);

@@ -5,7 +5,7 @@ ZenRegister 注解用于注册一个带有 [`@ZenClass`](/Dev_Area/ZenAnnotation
 
 ## 例子
 
-[Crafttweaker 的 IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
+[CraftTweaker's IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
 
     @ZenClass("crafttweaker.item.IIngredient")
     @ZenRegister

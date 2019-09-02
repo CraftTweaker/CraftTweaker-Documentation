@@ -2,12 +2,12 @@
 
 BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | Return Type                             | Description                                                           |
+| ZenGetter                 | Rückgabetyp                             | Beschreibung                                                          |
 | ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
 | canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
 | mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |

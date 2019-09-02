@@ -2,7 +2,7 @@
 
 The IRegisterMaterialPart function is a fucntion used to register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) added using a custom [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
-## Importing the package
+## Dieses Paket importieren
 
 If you ever feel the need to import this function's class, here you go:
 

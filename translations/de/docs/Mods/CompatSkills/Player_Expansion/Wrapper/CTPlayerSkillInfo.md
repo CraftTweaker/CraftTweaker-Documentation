@@ -1,6 +1,6 @@
 # CTPlayerSkillInfo
 
-## Methods
+## Methoden
 
 ### getLevel()
 

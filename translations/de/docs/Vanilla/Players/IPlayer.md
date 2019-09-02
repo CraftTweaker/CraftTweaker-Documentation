@@ -2,7 +2,7 @@
 
 The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IPlayer;`
@@ -12,11 +12,11 @@ It might be required for you to import the package if you encounter any issues (
 IPlayer extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objects also are available to IPlayer Objects.  
 IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions available to [IUser](/Vanilla/Players/IUser/) Objects also are available to IPlayer Objects.
 
-## Zengetters
+## ZenGetter
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
+| ZenGetter     | What does it do                                                                            | Rückgabetyp                                | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
@@ -37,7 +37,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 Zenmethods are for doing things with other things, in this case with a player.
 
-| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
+| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Beispiel                                    |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
 | removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
 | update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |

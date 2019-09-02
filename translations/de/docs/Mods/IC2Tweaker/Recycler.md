@@ -4,7 +4,7 @@
 
 `import mods.ic2.Recycler;`
 
-## Methods
+## Methoden
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
 

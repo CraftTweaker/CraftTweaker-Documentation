@@ -2,7 +2,7 @@
 
 An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to [import](/AdvancedFunctions/Import) the class.  
 You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
@@ -10,7 +10,7 @@ You usually only need to import a class when directly using the name, such as in
     import extrautilities2.Tweaker.IMachine;
     
 
-## Add Recipes
+## Rezepte hinzufügen
 
 There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
 Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  

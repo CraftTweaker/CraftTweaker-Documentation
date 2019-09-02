@@ -6,17 +6,17 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Data Type |
+| Required | 类型                  | Data Type |
 | -------- | ------------------- | --------- |
-| Required | Name                | String    |
-| Required | Mineral Weight      | Integer   |
-| Required | Fail Chance         | Double    |
-| Required | Ores                | String[]  |
-| Required | Chances             | Double[]  |
-| Optional | Dimension Whitelist | Integer[] |
-| Optional | Blacklist           | Boolean   |
+| 必要       | Name                | string    |
+| 必要       | Mineral Weight      | int       |
+| Required | Fail Chance         | double    |
+| 必要       | Ores                | string[]  |
+| 必要       | Chances             | double[]  |
+| 可选       | Dimension Whitelist | int []    |
+| 可选       | Blacklist           | boolean   |
 
-### Example
+### 例子
 
 ```JAVA
 //Example:
@@ -29,7 +29,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ## Remove Mineral
 
-| Required | Type | Data Type |
+| Required | 类型   | Data Type |
 | -------- | ---- | --------- |
 | Required | Name | String    |
 

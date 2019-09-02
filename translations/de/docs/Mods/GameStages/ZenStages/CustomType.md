@@ -8,7 +8,7 @@ Note: This is a complete custom type nothing will check against this internally.
 
 Note: It is also a recomended standard that you use unique names for **all** your Custom Types.
 
-## Importing the package
+## Dieses Paket importieren
 
 `import mods.zenstages.type.CustomStageType;`
 

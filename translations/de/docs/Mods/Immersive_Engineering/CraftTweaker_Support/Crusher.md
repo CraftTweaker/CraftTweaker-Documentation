@@ -6,17 +6,17 @@ The Crusher package can be used to add/remove recipes to/from the Immersive Engi
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## Rezept hinzufügen
 
-| Required | Type             | Data Type                                           |
+| Required | Type             | Datentyp                                            |
 | -------- | ---------------- | --------------------------------------------------- |
 | Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | Integer                                             |
+| Required | Energy           | int                                                 |
 | Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | Double                                              |
+| Optional | Secondary Chance | double                                              |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ## Remove Recipe by Output
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -44,11 +44,11 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ## Remove Recipe By Input
 
-| Type  | Data Type                                |
+| Type  | Datentyp                                 |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:

@@ -5,9 +5,9 @@ More specifically, it will look like this:
 
 ![img](assets/zenDoc.png)
 
-## Example
+## Beispiel
 
-[Crafttweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
+[CraftTweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
     @ZenClass(value = "crafttweaker.tests.zenDoc")
     @ZenRegister

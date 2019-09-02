@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Liquefier
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
@@ -22,7 +22,7 @@ ilt().clear()
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);

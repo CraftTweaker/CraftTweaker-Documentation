@@ -30,29 +30,29 @@ To get/set the properties you can either use the respecting ZenGetters/Setters o
     item.setMaxStackSize(64);
     
 
-| Property Name         | Type                                                                                                            | Required | Default Value | Description/Notes                                                                    |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------ |
-| beaconPayment         | boolean                                                                                                         | No       | false         | Can be given to a beacon to enable bonuses                                           |
-| creativeTab           | [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                                    | No       | Misc          | The Creative tab the item will be put in                                             |
-| glowing               | boolean                                                                                                         | No       | false         | Can be used to give your item the glowing effect (as if it were enchanted).          |
-| itemColorSupplier     | [IItemColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier/)         | No       | -1 as color   | The item's color                                                                     |
-| itemDestroyedBlock    | [IItemDestroyedBlock](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock/)       | No       | false         | What happens when the item just destroyed a block?                                   |
-| itemDestroySpeed      | [IItemDestroySpeed](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed/)           | No       | null          | Determines the Item's block breaking speed.                                          |
-| itemGetContainerItem  | [IItemGetContainerItem](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem/)   | No       | null          | What will remain in the crafting grid when this item was used in a recipe?           |
-| itemRightClick        | [IItemRightClick](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick/)               | No       |               | Called when the player right clicks with the item                                    |
-| itemUseAction         | EnumUseAction                                                                                                   | No       | "NONE"        | What animation the item use will have ("NONE", "EAT", "DRINK", "BLOCK", "BOW")       |
-| localizedNameSupplier | [ILocalizedNameSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier/) | No       | null          | Can be used to programmatically determine your item's display name                   |
-| maxDamage             | int                                                                                                             | No       | -1            | How many uses does the item have? Less than 0 means it cannot be damaged             |
-| maxStackSize          | int                                                                                                             | No       | 64            | How many items can fit in one Stack? Less than 0 means standart stack size (64)      |
-| onItemUpdate          | [IItemUpdate](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate/)                       | No       | null          | Called every tick as long as the item is in a player's inventory                     |
-| onItemUse             | [IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)                             | No       | null          | Called when the player right click on a block with the item                          |
-| onItemUseFinish       | [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/)                 | No       | null          | Called when the player finishes using the item                                       |
-| rarity                | EnumRarity                                                                                                      | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
-| smeltingExprerience   | float                                                                                                           | No       | -1            | How much experienve the player earns for smelting that item in a furnace?            |
-| textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
-| toolClass             | String                                                                                                          | No       |               | What block types the tool can break                                                  |
-| toolLevel             | int                                                                                                             | No       | -1            | The level of blocks can be broken                                                    |
-| unlocalizedName       | String                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
+| Property Name         | Type                                                                                                            | Required | Standardwert | Description/Notes                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------ | ------------------------------------------------------------------------------------ |
+| beaconPayment         | boolean                                                                                                         | No       | false        | Can be given to a beacon to enable bonuses                                           |
+| creativeTab           | [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                                    | No       | Misc         | The Creative tab the item will be put in                                             |
+| glowing               | boolean                                                                                                         | No       | false        | Can be used to give your item the glowing effect (as if it were enchanted).          |
+| itemColorSupplier     | [IItemColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemColorSupplier/)         | No       | -1 as color  | The item's color                                                                     |
+| itemDestroyedBlock    | [IItemDestroyedBlock](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroyedBlock/)       | No       | false        | What happens when the item just destroyed a block?                                   |
+| itemDestroySpeed      | [IItemDestroySpeed](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemDestroySpeed/)           | No       | null         | Determines the Item's block breaking speed.                                          |
+| itemGetContainerItem  | [IItemGetContainerItem](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemGetContainerItem/)   | No       | null         | What will remain in the crafting grid when this item was used in a recipe?           |
+| itemRightClick        | [IItemRightClick](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemRightClick/)               | No       |              | Called when the player right clicks with the item                                    |
+| itemUseAction         | EnumUseAction                                                                                                   | No       | "NONE"       | What animation the item use will have ("NONE", "EAT", "DRINK", "BLOCK", "BOW")       |
+| localizedNameSupplier | [ILocalizedNameSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier/) | No       | null         | Can be used to programmatically determine your item's display name                   |
+| maxDamage             | int                                                                                                             | No       | -1           | How many uses does the item have? Less than 0 means it cannot be damaged             |
+| maxStackSize          | int                                                                                                             | No       | 64           | How many items can fit in one Stack? Less than 0 means standart stack size (64)      |
+| onItemUpdate          | [IItemUpdate](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUpdate/)                       | No       | null         | Called every tick as long as the item is in a player's inventory                     |
+| onItemUse             | [IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)                             | No       | null         | Called when the player right click on a block with the item                          |
+| onItemUseFinish       | [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/)                 | No       | null         | Called when the player finishes using the item                                       |
+| rarity                | EnumRarity                                                                                                      | No       | COMMON       | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
+| smeltingExprerience   | float                                                                                                           | No       | -1           | How much experienve the player earns for smelting that item in a furnace?            |
+| textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null         | The item's resource location, used for textures etc.                                 |
+| toolClass             | string                                                                                                          | No       |              | What block types the tool can break                                                  |
+| toolLevel             | int                                                                                                             | No       | -1           | The level of blocks can be broken                                                    |
+| unlocalizedName       | string                                                                                                          | Yes      |              | Name, should be all lowercase                                                        |
 
 ## Registering the item
 
@@ -63,7 +63,7 @@ After you have called this function, you cannot un-register the item or change a
     item.register();
     
 
-## Example Script
+## Skript-Beispiel
 
     #loader contenttweaker
     import mods.contenttweaker.VanillaFactory;

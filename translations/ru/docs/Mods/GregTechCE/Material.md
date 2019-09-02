@@ -13,7 +13,7 @@ Properties:
 | Название           | Type                         | Description                                      |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
 | color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | String                       | Chemical formula of this material                |
+| chemicalFormula    | string                       | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
 | components         | ImmutableList<materialstack> | List of this material component                  |
 | generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
@@ -28,10 +28,10 @@ Getters:
 | neutrons        | long   |                                      |
 | mass            | long   |                                      |
 | density         | long   |                                      |
-| camelCaseString | String |                                      |
-| unlocalizedName | String |                                      |
-| localizedName   | String | Client-side only                     |
-| name            | String | Name in the Material registry        |
+| camelCaseString | string |                                      |
+| unlocalizedName | string |                                      |
+| localizedName   | string | Client-side only                     |
+| name            | string | Name in the Material registry        |
 
 Methods:
 
@@ -200,6 +200,7 @@ These flags are applicable to materials.
 | DISABLE_DECOMPOSITION             | Disables decomposition recipe generation for this material and all materials that has it as component                                                                                                                                               |
 | DECOMPOSITION_REQUIRES_HYDROGEN | Decomposition recipe requires hydrogen as additional input. Amount is equal to input amount                                                                                                                                                         |
 | GENERATE_PLATE                    | Generate a plate for this material, If it's dust material, dust compressor recipe into plate will be generated, If it's metal material, bending machine recipes will be generated, If block is found, cutting machine recipe will be also generated |
+| GENERATE_DENSE                    | Generate a dense plate.                                                                                                                                                                                                                             |
 | NO_WORKING                        | Add to material if it cannot be worked by any other means, than smashing or smelting. This is used for coated Materials.                                                                                                                            |
 | NO_SMASHING                       | Add to material if it cannot be used for regular Metal working techniques since it is not possible to bend it.                                                                                                                                      |
 | NO_SMELTING                       | Add to material if it's impossible to smelt it                                                                                                                                                                                                      |

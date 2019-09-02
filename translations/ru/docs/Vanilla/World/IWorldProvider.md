@@ -2,7 +2,7 @@
 
 The World Provider interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldProvider;`
@@ -29,7 +29,7 @@ Note that this method should only be called inside functions that are meant to b
 | lightBrightnesTable    | getLightBrightnesTable()    | float[]                                |
 | movementFactor         | getMovementFactor()         | double                                 |
 | randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | String                                 |
+| saveFolder             | getSaveFolder()             | string                                 |
 | seed                   | getSeed()                   | long                                   |
 | spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |

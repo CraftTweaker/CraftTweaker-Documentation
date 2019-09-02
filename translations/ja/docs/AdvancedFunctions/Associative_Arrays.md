@@ -1,10 +1,10 @@
-# Associative Arrays
+# 連想配列
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](Arrays_and_Loops/)と似ています。 [配列](Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
 
-## Declaring an Associative Array
+## 連想配列の作り方
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+中括弧`{}`とコロン`:`を使用して、連想配列を宣言できます。
 
 ```JAVA
 val myAssocArray = {
@@ -13,26 +13,26 @@ val myAssocArray = {
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+では、これをばらして見てみましょう。
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `val myAssocArray =` 普通の変数宣言
+- `{` これが、連想配列の宣言です、どうぞ
+- `dirt : <minecraft:dirt>` `<minecraft:dirt>`を`dirt`にマッピングします
+- `,` そして、次に続きます
+- `gold : <minecraft:gold_ingot>` `<minecraft:gold_ingot>`を`gold`にマッピングします
+- `}` これで連想配列の宣言を終了します、どうぞ
+- `as IItemStack[string];`インデックスに文字列を使用し、要素にIItemStackを格納する連想配列です
 
-Okay, so what do I need to think of when using these?
+さて、使用する際には、何を考えなければならないでしょう。
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- Zenscriptで使用可能な全ての型を、キー及び要素にできます。
+- テキストだと明示されたものは文字列として解釈されるため、連想配列の宣言(`{}`を使用する)でのキーに変数を設定することはできません。
 
-## Refering to Items inside an Associative Array.
+## 連想配列の要素へのアクセス
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
+通常の[配列](Arrays_and_Loops/)の要素へアクセスするのと同じ方法で、連想配列の要素へとアクセスできます。  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```JAVA
 <br />val dirt = &lt;minecraft:dirt&gt;;
@@ -43,26 +43,26 @@ val assocArray = {
 //array[index]
 print(assocArray[&lt;minecraft:dirt&gt;]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//変数の型が正しいときに限り、ここで変数を用いることもできます
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+特殊なケースとしては、文字列をインデックスに使用する場合です。  
+この場合は、次のようにmemberGetterを使用することができます。
 
 ```JAVA
 val assocWithStrings = {
-    //you can use "" if you want
+    //必要であれば「""」が使えます
     "one" : "1",
 
-    //but you don't have to
+    //こうする必要はありません
     two : "2"
 } as string[string];
 
-//You can either use the memberGetter
+//memberGetterを使用できます
 print(assocWithStrings.one);
 
-//Or the standard index Getter
+//index Getterも使用できます
 print(assocWithStrings["two"]);
 ```
 

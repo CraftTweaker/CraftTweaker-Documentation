@@ -2,7 +2,7 @@
 
 An ICTBlockState object represents a block's current state.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockState;`
@@ -15,7 +15,7 @@ You can get an ICTBlockState either as a parameter in an [IBlockAction function]
 
 ## ZenMethods and ZenGetters
 
-| ZenMethod         | ZenGetter | Return Type                                                            | Description                                             |
+| ZenMethod         | ZenGetter | Rückgabetyp                                                            | Beschreibung                                            |
 | ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
 | getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
 | getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |

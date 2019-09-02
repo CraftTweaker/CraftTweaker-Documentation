@@ -2,12 +2,12 @@
 
 The IMobSpawnerBaseLogic object contains all kinds of information on how and where to spawn something.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.tileentity.IMobSpawnerBaseLogic;`
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter  | ZenSetter          |                                       |
 | ---------- | ------------------ | ------------------------------------- |

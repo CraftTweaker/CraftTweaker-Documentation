@@ -2,7 +2,7 @@
 
 A Part is the form an item is in, for example a gear or an ore.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Part;`
@@ -62,12 +62,12 @@ You can retrieve the following information from a Part:
 | ZenMethod                 | Return Type                                                                   |
 | ------------------------- | ----------------------------------------------------------------------------- |
 | hasOverlay()              | boolean                                                                       |
-| getName()                 | String                                                                        |
-| getUnlocalizedName()      | String                                                                        |
-| getShortUnlocalizedName() | String                                                                        |
+| getName()                 | string                                                                        |
+| getUnlocalizedName()      | string                                                                        |
+| getShortUnlocalizedName() | string                                                                        |
 | getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | String                                                                        |
-| getOreDictPrefix()        | String                                                                        |
+| getPartTypeName()         | string                                                                        |
+| getOreDictPrefix()        | string                                                                        |
 | getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
 ## Register to Material(s)

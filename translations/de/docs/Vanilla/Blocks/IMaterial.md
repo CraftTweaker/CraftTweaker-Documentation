@@ -2,14 +2,14 @@
 
 An IMaterial object represents the material a block is made of.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IMaterial;`
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type |
+| ZenGetter       | ZenMethod           | Rückgabetyp |
 | --------------- | ------------------- | ----------- |
 | blocksLight     | blocksLight()       | bool        |
 | blocksMovement  | blocksMovement()    | bool        |

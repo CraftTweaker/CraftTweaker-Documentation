@@ -14,7 +14,7 @@ As of Mekanism 9.7.0 it is now possible to view all registered gases (including 
 
 It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## Beispiel
 
     import mod.mekanism.gas.IGasStack;
     
@@ -22,16 +22,16 @@ It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by s
     var oxygen2 = <gas:oxygen> * 500;
     
 
-## ZenGetters
+## ZenGetter
 
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
-| ZenGetter   | Description                             | Return Type    |
+| ZenGetter   | Beschreibung                            | Rückgabetyp    |
 | ----------- | --------------------------------------- | -------------- |
 | definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | String         |
-| displayName | Returns the gas' displayName            | String         |
+| NAME        | Returns the gas' name                   | string         |
+| displayName | Returns the gas' displayName            | string         |
 | amount      | Returns the gas' amount in millibuckets | int            |
 
 ## Setting the Object's Amount
@@ -47,10 +47,10 @@ You can set the Object's amount (gas volume in Millibuckets) in two ways, which 
 An IGasDefinition object contains information on a gas.  
 You can get such an object using `gasStack.definition` (check the table above)
 
-| ZenGetter   | Description                            | Return Type |
+| ZenGetter   | Beschreibung                           | Rückgabetyp |
 | ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | String      |
-| displayName | Returns the referred gas' display name | String      |
+| NAME        | Returns the referred gas' name         | string      |
+| displayName | Returns the referred gas' display name | string      |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 

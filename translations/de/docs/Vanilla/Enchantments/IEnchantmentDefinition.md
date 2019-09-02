@@ -2,7 +2,7 @@
 
 An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
-## ZenGetters/ZenSetters
+## ZenGetter/ZenSetter
 
 | ZenGetter             | ZenSetter | Type    |
 | --------------------- | --------- | ------- |
@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## Beispiel
 
 ```javascript
 import crafttweaker.enchantments.IEnchantmentDefinition;

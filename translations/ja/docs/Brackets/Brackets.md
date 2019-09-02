@@ -1,25 +1,25 @@
-# Bracket Handlers
+# ブラケット記法
 
-ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
+ZenScriptはアイテム、エンティティや鉱石辞書といったゲーム内オブジェクトの参照にブラケット記法を使用します。
 
-## How to use Bracket Handlers
+## ブラケット記法の使い方
 
-Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+ZenScriptにおけるブラケット記法は、`<`と`>`を用いて定義されます。これらの内側に有るものは全てブラケット記法と解釈されます。
 
-An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
+ブラケット記法の一例として、アイテムのブラケット記法があります。これによりゲーム内におけるアイテムを取り扱うことができるようになります。
 
-## Examples
+## 使用例
 
-An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
+[アイテムのブラケット記法](/Vanilla/Brackets/Bracket_Item/)の使い方は次のようになります。
 
     <minecraft:apple>
     
 
-This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack/).
+これは、`りんご`の[アイテム](/Vanilla/Items/IItemStack/)を表します。
 
-An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
+[鉱石辞書のブラケット記法](/Vanilla/Brackets/Bracket_Ore/)の使い方は次のようになります。
 
     <ore:ingotIron>
     
 
-This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.
+これは[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)における`ingotIron`を表します。

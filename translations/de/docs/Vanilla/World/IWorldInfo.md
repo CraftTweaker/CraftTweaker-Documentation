@@ -2,14 +2,14 @@
 
 The World Info interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldInfo;`
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter             | ZenMethod                  | Return Type |
+| ZenGetter             | ZenMethod                  | Rückgabetyp |
 | --------------------- | -------------------------- | ----------- |
 | commandsAllowed       | isCommandsAllowed()        | bool        |
 | borderCenterX         | getBorderCenterX()         | double      |

@@ -10,15 +10,15 @@ The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quit
 
 You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## Add Recipe
+## Rezept hinzufügen
 
-| Required | Type     | Data Type                                                            |
+| Required | Type     | Datentyp                                                             |
 | -------- | -------- | -------------------------------------------------------------------- |
 | Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
 | Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
 | Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -33,7 +33,7 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 

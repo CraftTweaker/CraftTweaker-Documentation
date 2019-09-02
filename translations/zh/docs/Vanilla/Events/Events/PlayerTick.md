@@ -21,4 +21,4 @@ The following information can be retrieved from the event:
 | ZenGetter | 返回值类型                                |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`   | String                               |
+| `phase`   | string                               |

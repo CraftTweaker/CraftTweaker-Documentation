@@ -4,7 +4,7 @@
 
 `import mods.ic2.MetalFormer;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**

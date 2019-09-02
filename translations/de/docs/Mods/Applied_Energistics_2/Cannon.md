@@ -1,6 +1,6 @@
 # Cannon
 
-### Importing
+### Importieren
 
     import mods.appliedenergistics2.Cannon;
     

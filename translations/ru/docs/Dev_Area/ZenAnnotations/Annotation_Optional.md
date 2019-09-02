@@ -3,7 +3,7 @@
 `@Optional` can be given to a Method parameter to declare it as being optional.  
 Optional Parameters can be omitted when calling the method:
 
-## Example
+## Пример
 
 [CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
@@ -41,9 +41,9 @@ All Objects will be `null`
 
 | Member      | Type            | Default value    |
 | ----------- | --------------- | ---------------- |
-| value       | String          | `""`             |
+| value       | string          | `""`             |
 | methodClass | java.lang.Class | `Optional.class` |
-| methodName  | String          | `"getValue"`     |
+| methodName  | string          | `"getValue"`     |
 
 The Optional annotation also supports default values.  
 If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.

@@ -19,7 +19,7 @@ These are keywords that can be found in the class' body and they will initiate a
 | function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
 | this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
 
-## Example
+## Beispiel
 
 A commented example:
 

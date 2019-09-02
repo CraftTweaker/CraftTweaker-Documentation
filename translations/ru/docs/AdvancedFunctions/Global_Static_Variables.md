@@ -19,7 +19,7 @@ Statics are created using the `static` keyword.
 
 Aside from that, they are identical!
 
-## Declaring a global value
+## Объявление глобального значения
 
 Declaring a global value is as simple as declaring a local value:
 
@@ -30,14 +30,14 @@ Declaring a global value is as simple as declaring a local value:
     static myStaticValue as IItemStack = <minecraft:sand>;
     
 
-Okay, let's break it down, shall we?
+Окей, давайте разберемся, да?
 
-1. `global` keyword that indicates the declaration of a global value
-2. `myGlobalValue` the name of the value
+1. `global` — ключевое слово, которое обозначает объявление глобального значения.
+2. `myGlobalValue` — название этого значения.
 3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
 4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
 
-## Words of advice
+## Советы
 
 - You can only access globals that have already been declared. Use the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) to make sure the scripts in which global are declared are executed first.
 - Globals cannot be declared in scripts that are inside subfolders! It will compile but you will be left with a huge FieldNotFound Exception.

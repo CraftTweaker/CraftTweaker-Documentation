@@ -4,7 +4,7 @@ ZenClass 是暴露给 ZenScript 的 Java 类。
 
 ## 例子
 
-[Crafttweaker 的 IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
+[CraftTweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
     @ZenClass("crafttweaker.item.IItemStack")
     @ZenRegister

@@ -2,7 +2,7 @@
 
 The MaterialSystem is used to create new or retrieve existing Materials from within CT.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialSystem;`
@@ -103,7 +103,7 @@ Required Parameters:
 
 You can use these methods to retrieve a map using strings as keys and the object as values:
 
-| Method Name        | Return Type                                                                                  |
+| Methodenname       | Rückgabetyp                                                                                  |
 | ------------------ | -------------------------------------------------------------------------------------------- |
 | getMaterialParts() | [`Map<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
 | getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |

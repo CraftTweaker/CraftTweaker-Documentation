@@ -1,12 +1,12 @@
-# Dimensions:
+# 维度
 
-Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
+维度是 CompatSkills 引入的一个条件，它允许你使用下列两种方式中的任一种创建逻辑条件：
 
-- Being in a **Specific** dimension.
-- Being in **any** dimension **other than** the one specified.
+- 玩家位于**指定**维度。
+- 玩家位于指定维度**外**的**任一**维度。
 
-    Example:
+    例：
     dim|integer
     
-    Working Example:
+    可直接生效的例子：
     dim|0

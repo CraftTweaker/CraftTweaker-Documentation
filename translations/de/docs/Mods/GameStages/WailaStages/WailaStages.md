@@ -2,7 +2,7 @@
 
 This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Waila Stages allows aspects of the Waila/Hwyla hud to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/waila-stages)
 
-## Methods
+## Methoden
 
 Hides the entire hud, unless the player has the stage.
 

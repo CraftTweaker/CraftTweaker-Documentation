@@ -1,6 +1,6 @@
 # Furnace
 
-Crafttweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
 ## Recipes
 
@@ -69,7 +69,7 @@ furnace.getFuel(IItemStack item);
 
 This will return the burn value as an Integer
 
-## Examples
+## 例子
 
 ### Removal
 

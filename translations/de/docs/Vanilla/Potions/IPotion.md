@@ -2,7 +2,7 @@
 
 An IPotion object refers a potion in the game.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.potions.IPotion;`
@@ -15,12 +15,12 @@ You can get such an object through the use of the [Potion Bracket handler](/Vani
 <potion:minecraft:strength>;
 ```
 
-## Zengetters
+## ZenGetter
 
 Currently, all you can do with potions is retrieving some information on them.  
 Example `<potion:minecraft:strength>.name`
 
-| Zengetter     | What does it do                                     | Return Type                                    |
+| ZenGetter     | What does it do                                     | Rückgabetyp                                    |
 | ------------- | --------------------------------------------------- | ---------------------------------------------- |
 | name          | Returns the potion's internal name                  | string                                         |
 | badEffect     | Returns if the potion effect is bad                 | bool                                           |

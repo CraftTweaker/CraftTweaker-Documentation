@@ -2,7 +2,7 @@
 
 Here's a Quick To Scale Example:
 
-## Example
+## Beispiel
 
 ```JAVA
 import crafttweaker.item.IItemStack;

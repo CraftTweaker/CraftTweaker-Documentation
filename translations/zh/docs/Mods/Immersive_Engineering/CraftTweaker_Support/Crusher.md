@@ -1,4 +1,4 @@
-# Crusher
+# 磨粉机
 
 The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
 
@@ -6,17 +6,17 @@ The Crusher package can be used to add/remove recipes to/from the Immersive Engi
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type             | Data Type                                           |
+| Required | 类型               | Data Type                                           |
 | -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | Integer                                             |
+| 必要       | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Energy           | int                                                 |
 | Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | Double                                              |
+| Optional | Secondary Chance | double                                              |
 
-### Example
+### 例子
 
 ```JAVA
 //Example:

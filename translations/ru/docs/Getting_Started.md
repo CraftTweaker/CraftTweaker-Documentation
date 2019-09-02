@@ -1,6 +1,6 @@
 # Начало работы со скриптами
 
-Crafttweaker использует собственный скриптовый язык, который называется `ZenScript`, ZenScript читается из файлов `.zs`, которые хранятся в папке `<gamedir>/scripts`.
+CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
 
 ZenScript — язык сценариев «сверху вниз». Это значит, что `операторы импорта` должны быть сверху файла, `объявления переменных` должны быть недалеко от верха файла, впрочем, ограничения на это нет. `Переменная` может быть объявлена где угодно в скрипте, а доступа к ней не будет выше, чем объявлена.
 
@@ -12,7 +12,7 @@ ZenScript — язык сценариев «сверху вниз». Это зн
 
 ## Скрипты
 
-Скрипты содержатся в `<minecraftdir>/scripts` и загружаются в фазе `пре-инициализации` Minecraft. В отличие от предыдущих версий Crafttweaker, скрипты не могут быть перезагружены из-за изменений, сделанных Mojang в 1.12. Возможности обойти их нет. Кроме того, скрипты должны быть **ОДНОВРЕМЕННО и на сервере, и на клиенте**, чтобы работать.
+Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Кроме того, скрипты должны быть **ОДНОВРЕМЕННО и на сервере, и на клиенте**, чтобы работать.
 
 Файлы скриптов используют расширение `.zs` и могут быть сжаты в `.zip`, сохраняя возможность чтения.
 

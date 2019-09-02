@@ -6,16 +6,16 @@ The Mixer package can be used to add/remove recipes to/from the Immersive Engine
 
 You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
-## Add Recipe
+## Rezept hinzufügen
 
-| Required | Type         | Data Type                                                    |
+| Required | Type         | Datentyp                                                     |
 | -------- | ------------ | ------------------------------------------------------------ |
 | Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
 | Required | Energy       | Integer                                                      |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
 ```JAVA
 //Example:

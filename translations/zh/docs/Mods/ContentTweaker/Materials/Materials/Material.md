@@ -1,8 +1,8 @@
-# Material
+# 材料
 
 A Material is what an item is made of, for example Platinum.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Material;`
@@ -15,12 +15,12 @@ You can either retrieve an existing Material using the [MaterialSystem](/Mods/Co
 
 You can retrieve the following information from a Material:
 
-| ZenMethod            | Return Type | Description                                    |
-| -------------------- | ----------- | ---------------------------------------------- |
-| getName()            | String      | Returns the Material's name                    |
-| getColor()           | int         | Returns the Material's color                   |
-| isHasEffect()        | boolean     | Returns if the material has the glowing effect |
-| getUnlocalizedName() | String      | Returns the Material's unlocalized name        |
+| ZenMethod            | 返回值类型   | 描述                                             |
+| -------------------- | ------- | ---------------------------------------------- |
+| getName()            | string  | Returns the Material's name                    |
+| getColor()           | int     | Returns the Material's color                   |
+| isHasEffect()        | boolean | Returns if the material has the glowing effect |
+| getUnlocalizedName() | string  | Returns the Material's unlocalized name        |
 
 ## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 

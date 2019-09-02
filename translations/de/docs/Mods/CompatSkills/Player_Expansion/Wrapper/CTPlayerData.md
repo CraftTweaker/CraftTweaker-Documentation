@@ -1,6 +1,6 @@
 # CTPlayerData
 
-## Methods
+## Methoden
 
 ### getHasAnyAbilities()
 

@@ -2,7 +2,7 @@
 
 You can create a MaterialPartColorSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
 
-## Importing the class
+## Diese Klasse importieren
 
 Should you need to import he class, here you go:
 

@@ -2,7 +2,7 @@
 
 A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.modularmachinery.RecipePrimer;`
@@ -65,7 +65,7 @@ After you have done your changes above, you need to build the recipe so that it 
 build();
 ```
 
-## Example
+## Beispiel
 
 You can either call each method on its own, or play codegolf:
 

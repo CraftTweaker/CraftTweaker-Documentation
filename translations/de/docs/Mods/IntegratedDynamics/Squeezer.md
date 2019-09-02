@@ -2,7 +2,7 @@
 
 This package allows you to modify recipes for the Squeezer.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you want to import this package, here you go:
 

@@ -3,7 +3,7 @@
 The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) to the game.  
 Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
 
-## Importing the package
+## Dieses Paket importieren
 
     import mods.contenttweaker.ChickenFactory;
     
@@ -21,7 +21,7 @@ This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chicken
     ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
     
 
-## Example Script
+## Skript-Beispiel
 
     #loader contenttweaker
     #modloaded chickens

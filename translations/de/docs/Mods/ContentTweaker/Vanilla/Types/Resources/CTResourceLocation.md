@@ -18,7 +18,7 @@ You can use this method to create a new CTResourceLocation instance:
 var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/myItem");
 ```
 
-### ZenGetters
+### ZenGetter
 
 ZenGetters are called on an object, not on the package itself
 

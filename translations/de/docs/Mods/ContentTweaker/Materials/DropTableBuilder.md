@@ -2,16 +2,16 @@
 
 DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.DropTableBuilder;`
 
-## Methods
+## Methoden
 
 These methods allow for creation and modification of a drop table. All builder methods return the builder they were run on, allowing for chaining methods.
 
-| Method Name     | Description                                                                      |
+| Methodenname    | Beschreibung                                                                     |
 | --------------- | -------------------------------------------------------------------------------- |
 | newSlot()       | Creates a new drop table if run statically or adds a new slot to the drop table. |
 | addItem()       | Adds the specified item to the current slot of the drop table.                   |

@@ -1,6 +1,6 @@
 # Powered Thingies :: Powered Kiln
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
@@ -22,7 +22,7 @@ pkt().clear()
 addRecipe(input: IItemStack, output: IItemStack)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);

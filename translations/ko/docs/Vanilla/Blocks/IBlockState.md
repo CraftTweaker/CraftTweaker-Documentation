@@ -41,11 +41,11 @@ IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). T
 
 ## ZenMethods and ZenGetters
 
-| ZenGetter     | Return Type                       | Description                                                                                |
+| ZenGetter     | 반환 타입                             | Description                                                                                |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
 | meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | String                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
 
 ## ZenMethods
 

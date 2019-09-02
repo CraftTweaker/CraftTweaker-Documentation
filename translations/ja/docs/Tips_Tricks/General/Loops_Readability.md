@@ -1,15 +1,15 @@
-# Use Loops to make your script look better
+# 見通しよくするためのループの使用
 
-## Problem
+## 問題
 
-We all have seen it: Scripts with more than 500 lines where it says 500 times `recipes.remove(item1);recipes.remove(item2),...`  
-Not only is this a pain to write, but it is possible that you spend hours debugging a little typo when the only exception you get is `error in recipes.zs: null`
+私達は、「500回の繰り返し」を記述するために「500行以上同じ処理」が書かれたスクリプトを見てきました。`recipes.remove(item1);recipes.remove(item2),...`  
+これは書くのに根気がいるだけではなく、ちょっと書き間違えて`recipes.zs : null`の例外が発生した場合のデバッグに、何時間も費やされる可能性すらあります。
 
-## Solution
+## 対応
 
-My rule of thumb: When writing the exactly same command more than 10 times, with only 1 Parameter changing, I'll use a loop.
+私の経験則では、パラメータが一つだけ変わる同じコマンドを10回以上記述する場合、ループを使用します。
 
-So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
+つまり、常に関数を書く代わりに、全ての項目を含む配列を一つ宣言し、それを反復処理します。
 
     import crafttweaker.item.IIngredient;
     
@@ -26,15 +26,15 @@ So, instead of always typing out the functions, I declare one array containing a
     }
     
 
-## Advantages
+## 利点
 
-- Your script becomes (in my opinion) easier to read
-- You know exactly where your script screws up
-- Last minute changes are really easy as all you need to do is adding or removing the item from the array.
+- (私見ですが)スクリプトが見やすくなる
+- スクリプトがどこで躓いたか分かる
+- 配列への追加・削除だけのため、直前の変更が非常に簡単に済む
 
-## Disadvantages
+## 欠点
 
-- Only works when there's only a few parameters changing
-- You could screw up your script without knowing it, by say, casting the array wrong
-- One error in the array makes the whole array fail and nothing will be done at all.
-- You might receive cryptic error messages because of the array being created the wrong way.
+- 変わるパラメータが少ないときでしか有効に機能しません
+- 配列を間違ってキャストした場合、スクリプトが検知できないエラーが発生します
+- 配列での一つのエラーによって配列の宣言自体が失敗し、何も実行されないときがあります
+- 配列の宣言自体が間違った場合、変なエラーメッセージが表示されることがあります

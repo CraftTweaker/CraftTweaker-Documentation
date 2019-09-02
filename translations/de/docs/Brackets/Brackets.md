@@ -1,25 +1,25 @@
-# Bracket Handlers
+# Bracket-Handler
 
-ZenScript uses Brackets to reference game objects such as Items, Entities and Oredict.
+ZenScript nutzt sogennante "Brackets", um auf verschiedene Ingame-Objekte wie Items, Entities und OreDicts zuzugreifen.
 
-## How to use Bracket Handlers
+## Wie man Brackets verwendet
 
-Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+In diesem Fall nutzt ZenScript die beiden Zeichen `<` und `>`. Alles was innerhalb der beiden Zeichen steht, wird als Bracket angesehen.
 
-An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
+Ein Beispiel für die Nutzung eines Brackets ist das Referenzieren eines bestimmten Ingame-Items.
 
-## Examples
+## Beispiele
 
-An example of the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/) would be:
+Ein Beispiel für ein [Item-Bracket](/Vanilla/Brackets/Bracket_Item/) wäre:
 
     <minecraft:apple>
     
 
-This will give you access to the `Apple` [item](/Vanilla/Items/IItemStack/).
+Damit kannst du das `Apfel`-[Item](/Vanilla/Items/IItemStack/) referenzieren.
 
-An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
+Ein Beispiel für ein [OreDict-Bracket](/Vanilla/Brackets/Bracket_Ore/) wäre:
 
     <ore:ingotIron>
     
 
-This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.
+Damit kannst du ein [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) für `ingotIron` referenzieren.

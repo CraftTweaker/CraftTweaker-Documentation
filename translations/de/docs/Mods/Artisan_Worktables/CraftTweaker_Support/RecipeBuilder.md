@@ -8,7 +8,7 @@ You can call the RecipeBuilder using:
 import mods.artisanworktables.builder.RecipeBuilder;
 ```
 
-### Example
+### Beispiel
 
 ```JAVA
 //Bare Minimum Example

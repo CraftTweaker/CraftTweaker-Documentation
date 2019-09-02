@@ -2,7 +2,7 @@
 
 The utils package allows you to retrieve a given [IIngredient](/Vanilla/Variable_Types/IIngredient/) from parameters provided.
 
-## Importing the package
+## Dieses Paket importieren
 
 If you ever find yourself needing an import for this, here's your chance:
 

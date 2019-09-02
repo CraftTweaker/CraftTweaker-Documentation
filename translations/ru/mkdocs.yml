@@ -17,7 +17,7 @@ pages:
     - Глобальные и статические переменные: 'AdvancedFunctions/Global_Static_Variables.md'
     - Импорт: 'AdvancedFunctions/Import.md'
     - Препроцессоры:
-      - On Preprocessors: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
+      - О препроцессорах: 'AdvancedFunctions/Preprocessors/On_Preprocessors.md'
       - Debug: 'AdvancedFunctions/Preprocessors/DebugPreprocessor.md'
       - Ignore Bracket Errors: 'AdvancedFunctions/Preprocessors/IgnoreBracketErrorPreprocessor.md'
       - Loader: 'AdvancedFunctions/Preprocessors/LoaderPreprocessor.md'
@@ -27,7 +27,7 @@ pages:
   - Советы и подсказки:
       - Предисловие: 'Tips_Tricks/Foreword.md'
       - Предметы:
-        - Using IItemDefinitions for meta ranges: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
+        - Использование IItemDefinitions для диапазонов метаданных: 'Tips_Tricks/Items/IItemDefinition_Metas.md'
       - Общие советы:
         - Разделяйте ваши скрипты на несколько файлов: 'Tips_Tricks/General/Split_Files.md'
         - Используйте циклы, чтобы облегчить чтение ваших скриптов: 'Tips_Tricks/General/Loops_Readability.md'
@@ -48,7 +48,7 @@ pages:
       - Источники урона: 'Vanilla/Brackets/Bracket_DamageSource.md'
       - Зачарования: 'Vanilla/Brackets/Bracket_Enchantment.md'
       - Предметы: 'Vanilla/Brackets/Bracket_Item.md'
-      - BlockStates: 'Vanilla/Brackets/Bracket_BlockState.md'
+      - BlockState: 'Vanilla/Brackets/Bracket_BlockState.md'
       - Сущности: 'Vanilla/Brackets/Bracket_Entity.md'
       - Жидкости: 'Vanilla/Brackets/Bracket_Liquid.md'
       - Руды: 'Vanilla/Brackets/Bracket_Ore.md'
@@ -186,11 +186,11 @@ pages:
       - IFormattedText: 'Vanilla/Utils/IFormattedText.md'
       - IFormatter: 'Vanilla/Utils/IFormatter.md'
       - ItemUtils: 'Vanilla/Utils/IItemUtils.md'
-      - Логгер: 'Vanilla/Utils/Logger.md'
+      - Logger: 'Vanilla/Utils/Logger.md'
       - Position3f: 'Vanilla/Utils/Position3f.md'
     - Типы данных переменных:
       - Обзор типов: 'Vanilla/Variable_Types/Variable_Types.md'
-      - Basic Variable Functions: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
+      - Основные функции переменных: 'Vanilla/Variable_Types/Basic_Variables_Functions.md'
       - IIngredient: 'Vanilla/Variable_Types/IIngredient.md'
     - Мир:
       - IBlockAccess: 'Vanilla/World/IBlockAccess.md'
@@ -212,14 +212,16 @@ pages:
       - Inscriber: 'Mods/Applied_Energistics_2/Inscriber.md'
       - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
+    - Arcane Archives:
+      - Gem Cutter's Table: 'Mods/Arcane_Archives/gct.md' 
     - Artisan Worktables:
       - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
       - RecipeBuilder: 
         - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
+        - Использование: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
         - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
     - Astral Sorcery:
-      - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
+      - Об Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Крафт:
         - Altar: 'Mods/Astral_Sorcery/Altar.md'
         - Grindstone: 'Mods/Astral_Sorcery/Grindstone.md'
@@ -227,7 +229,7 @@ pages:
         - Liquid Interaction: 'Mods/Astral_Sorcery/LiquidInteraction.md'
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
-        - Util: 'Mods/Astral_Sorcery/Util.md'
+        - Utils: 'Mods/Astral_Sorcery/Util.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Требования:
@@ -239,8 +241,8 @@ pages:
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
           - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
           - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
-          - Logic Operators: 
-            - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
+          - Логические операторы: 
+            - ВАЖНОЕ ПРИМЕЧАНИЕ: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
             - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
             - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
             - NOR-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NOR-Gate.md'
@@ -314,7 +316,7 @@ pages:
             - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
       - PlayerExpansion: 
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
-        - Wrapper:
+        - Обертка:
           - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
           - CTPlayerSkillInfo: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerSkillInfo.md'
     - ContentTweaker:
@@ -323,7 +325,7 @@ pages:
       - Обзор: 'Mods/ContentTweaker/WalkThrough.md'
       - Обычная игра:
         - Скобки:
-          - Block Material: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
+          - Материалы блока: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material.md'
           - Блоки: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks.md'
           - Вкладки творческого режима: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab.md'
           - SoundType: 'Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type.md'
@@ -358,7 +360,7 @@ pages:
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Типы:
           - Блок:
-            - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
+            - Направление: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
             - IMaterialDefinition: 'Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition.md'
@@ -371,50 +373,50 @@ pages:
           - Предмет:
             - IMutableItemStack: 'Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack.md'
           - Игрок:
-            - Hand: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
+            - Рука: 'Mods/ContentTweaker/Vanilla/Types/Player/Hand.md'
             - ICTPlayer: 'Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer.md'
-          - Resources:
+          - Ресурсы:
             - CTResourceLocation: 'Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation.md'
-          - Sound:
+          - Звуки:
             - ISoundTypeDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition.md'
             - ISoundEventDefinition: 'Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition.md'
           - Мир:
             - IWorld: 'Mods/ContentTweaker/Vanilla/Types/World/IWorld.md'
             - CTRandom: 'Mods/ContentTweaker/Vanilla/Types/World/CTRandom.md'
-      - Material System:
-        - Introduction: 'Mods/ContentTweaker/Materials/Introduction.md'
+      - Система материалов:
+        - Введение: 'Mods/ContentTweaker/Materials/Introduction.md'
         - MaterialSystem: 'Mods/ContentTweaker/Materials/MaterialSystem.md'
         - DropTableBuilder: 'Mods/ContentTweaker/Materials/DropTableBuilder.md'
         - Скобки:
-          - Material Part Bracket Handler: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
-        - Materials:
+          - Обработчик скобок для материалов частей: 'Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart.md'
+        - Материалы:
           - Material: 'Mods/ContentTweaker/Materials/Materials/Material.md'
-          - Material Builder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
-          - Material Part: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
-          - Material Part Data: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
+          - MaterialBuilder: 'Mods/ContentTweaker/Materials/Materials/Material_Builder.md'
+          - MaterialPart: 'Mods/ContentTweaker/Materials/Materials/MaterialPart.md'
+          - MaterialPartData: 'Mods/ContentTweaker/Materials/Materials/MaterialPartData.md'
           - Функции:
             - IRegisterMaterialPart: 'Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart.md'
             - MaterialPartColorSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartColorSupplier.md'
             - MaterialPartLocalizedNameSupplier: 'Mods/ContentTweaker/Materials/Materials/Functions/MaterialPartLocalizedNameSupplier.md'
-        - Parts:
+        - Части:
           - Part: 'Mods/ContentTweaker/Materials/Parts/Part.md'
-          - Part Builder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
+          - PartBuilder: 'Mods/ContentTweaker/Materials/Parts/Part_Builder.md'
           - PartType: 'Mods/ContentTweaker/Materials/Parts/PartType.md'
           - PartDataPiece: 'Mods/ContentTweaker/Materials/Parts/PartDataPiece.md'
-      - Chickens:
+      - Курицы:
         - ChickenFactory: 'Mods/ContentTweaker/Chickens/ChickenFactory.md'
         - ChickenRepresentation: 'Mods/ContentTweaker/Chickens/ChickenRepresentation.md'
       - Tinkers' Construct:
         - Скобки:
-          - Materials: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
+          - Материалы: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material.md'
           - Traits: 'Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait.md'
         - Material: 'Mods/ContentTweaker/Tinkers_Construct/Material.md'
-        - Material Builder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
+        - MaterialBuilder: 'Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder.md'
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
     - Enchanting Plus:
-        - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
+        - Функции: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
         - Alloy Smelter:  'Mods/Ender_Tweaker/Alloy_Smelter.md'
         - Combustion Generator: 'Mods/Ender_Tweaker/Combustion_Generator.md'
@@ -431,7 +433,7 @@ pages:
         - IMachineRegistry: 'Mods/ExtraUtilities2/CustomMachines/IMachineRegistry.md'
         - IMachineSlot: 'Mods/ExtraUtilities2/CustomMachines/IMachineSlot.md'
     - GameStages:
-      - Introduction: 'Mods/GameStages/GameStages.md'
+      - Введение: 'Mods/GameStages/GameStages.md'
       - Player features: 'Mods/GameStages/Player_Stages.md'
       - DimensionStages: 'Mods/GameStages/DimensionStages/DimensionStages.md'
       - ItemStages: 'Mods/GameStages/ItemStages/ItemStages.md'
@@ -441,7 +443,7 @@ pages:
       - TinkerStages: 'Mods/GameStages/TinkerStages/TinkerStages.md'
       - WailaStages: 'Mods/GameStages/WailaStages/WailaStages.md'
       - ZenStages:
-        - Introduction: 'Mods/GameStages/ZenStages/ZenStages.md'
+        - Введение: 'Mods/GameStages/ZenStages/ZenStages.md'
         - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
         - Stage: 'Mods/GameStages/ZenStages/Stage.md'
         - Custom Type: 'Mods/GameStages/ZenStages/CustomType.md'
@@ -514,7 +516,7 @@ pages:
     - JAOPCA:
       - JAOPCA: 'Mods/JAOPCA/JAOPCA.md'
       - OreEntry: 'Mods/JAOPCA/OreEntry.md'
-      - Pre-Registered Entries: 'Mods/JAOPCA/RegisteredEntries.md'
+      - Предварительно зарегистрированные сущности: 'Mods/JAOPCA/RegisteredEntries.md'
     - JEI:
       - JEI: 'Mods/JEI/JEI.md'
     - LootTableTweaker:
@@ -572,7 +574,7 @@ pages:
         - Blood Altar: 'Mods/Modtweaker/BloodMagic/BloodAltar.md'
         - Tartaric Forge: 'Mods/Modtweaker/BloodMagic/TartaricForge.md'
       - Botania:
-        - Commands: 'Mods/Modtweaker/Botania/Commands.md'
+        - Команды: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
         - Рецепты: 
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
@@ -621,6 +623,9 @@ pages:
         - Handlers:
           - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
           - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
+          - High Oven: 'Mods/Modtweaker/TComplement/Handlers/HighOven.md'
+          - MixRecipeBuilder: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md'
+          - MixRecipeManager: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md'
       - Thaumcraft:
         - Aspects: 
           - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
@@ -629,11 +634,12 @@ pages:
           - Item Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Item_Aspects.md'
         - Скобки:
           - Aspects: 'Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect.md'
-        - Handlers:
+        - Обработчики:
           - Arcane Workbench: 'Mods/Modtweaker/Thaumcraft/Handlers/ArcaneWorkbench.md'
           - Crucible: 'Mods/Modtweaker/Thaumcraft/Handlers/Crucible.md'
           - Infusion: 'Mods/Modtweaker/Thaumcraft/Handlers/Infusion.md'
           - Loot: 'Mods/Modtweaker/Thaumcraft/Handlers/Loot.md'
+          - Salis Mundus: 'Mods/Modtweaker/Thaumcraft/Handlers/SalisMundus.md'
           - Smelting Bonus: 'Mods/Modtweaker/Thaumcraft/Handlers/SmeltingBonus.md'
           - Warp: 'Mods/Modtweaker/Thaumcraft/Handlers/Warp.md'
         - Commands: 'Mods/Modtweaker/Thaumcraft/Commands.md'
@@ -684,7 +690,7 @@ pages:
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
       - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - PneumaticCraft&#58; Repressurized:
-      - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
+      - О PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - Крафт:
         - Assembly System: 'Mods/PneumaticCraft_Repressurized/Assembly.md'
         - Explosion Crafting: 'Mods/PneumaticCraft_Repressurized/ExplosionCrafting.md'
@@ -714,6 +720,17 @@ pages:
       - Rocky Core: 'Mods/RockyCore/RockyCore.md'
       - Anvil: 'Mods/RockyCore/Anvil.md'
       - Merchant: 'Mods/RockyCore/Merchant.md'
+    - Roots 3:
+      - Animal Harvest: 'Mods/Roots_3/animalharvest.md'
+      - Bark: 'Mods/Roots_3/bark.md'
+      - Fey Crafting: 'Mods/Roots_3/fey.md'
+      - Ritual of Flower Growth: 'Mods/Roots_3/flowergrowth.md'
+      - Mortar/Pestle, Spell Modification: 'Mods/Roots_3/mortar.md'
+      - \"Untrue Pacifist\" Advancement: 'Mods/Roots_3/pacifist.md'
+      - Pyre Crafting: 'Mods/Roots_3/pyre.md'
+      - Pyre Ritual Recipes: 'Mods/Roots_3/ritual.md'
+      - Runic Shears: 'Mods/Roots_3/runicshears.md'
+      - Ritual of Transmutation: 'Mods/Roots_3/transmutation.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
       - Рецепты:
@@ -737,22 +754,22 @@ pages:
       - Death Chest Defense: 'Mods/VanillaDeathChest/Death_Chest_Defense.md'
       - Death Chest Spawning: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
       - VanillaDeathChest: 'Mods/VanillaDeathChest/VanillaDeathChest.md'
-  - How to contribute: 
-    - How to fork the project: 'Contribute/SetupGithub.md'
-    - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
-    - How to create files online: 'Contribute/OnlineEditor_Create.md'
-    - How to file a Pull Request: 'Contribute/PullRequest.md'
-    - Using a local version: 
-      - How to install git: 'Contribute/LocalClone/InstallingGit.md'
-      - How to clone: 'Contribute/LocalClone/Clone.md'
-      - How to commit: 'Contribute/LocalClone/CreateCommit.md'
-      - How to push: 'Contribute/LocalClone/Push.md'
-  - Developer Area:
-    - Using IIngredients: 'Dev_Area/Ingredients.md'
-    - ZenTokens: 'Dev_Area/ZenTokens.md'
-    - ZenOperators: 'Dev_Area/ZenOperators.md'
-    - ZenAnnotations:
-      - ZenAnnotations Overview: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
+  - Как внести свой вклад: 
+    - Как создать ответвление проекта: 'Contribute/SetupGithub.md'
+    - Как редактировать файлы онлайн: 'Contribute/OnlineEditor_Edit.md'
+    - Как создавать файлы онлайн: 'Contribute/OnlineEditor_Create.md'
+    - Как отправить Pull Request: 'Contribute/PullRequest.md'
+    - Использование локальной копии: 
+      - Как установить git: 'Contribute/LocalClone/InstallingGit.md'
+      - Как клонировать: 'Contribute/LocalClone/Clone.md'
+      - Как сделать коммит: 'Contribute/LocalClone/CreateCommit.md'
+      - Как отправить: 'Contribute/LocalClone/Push.md'
+  - Раздел для разработчиков:
+    - Использование IIngredient: 'Dev_Area/Ingredients.md'
+    - Токены ZenScript: 'Dev_Area/ZenTokens.md'
+    - Операторы ZenScript: 'Dev_Area/ZenOperators.md'
+    - Аннотации ZenScipt:
+      - Обзор: 'Dev_Area/ZenAnnotations/ZenAnnotation.md'
       - BracketHandler: 'Dev_Area/ZenAnnotations/Annotation_BracketHandler.md'
       - ZenCaster: 'Dev_Area/ZenAnnotations/Annotation_ZenCaster.md'
       - ZenClass: 'Dev_Area/ZenAnnotations/Annotation_ZenClass.md'
@@ -766,9 +783,9 @@ pages:
       - Optional: 'Dev_Area/ZenAnnotations/Annotation_Optional.md'
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
-    - Custom ZenClasses: 'Dev_Area/Custom_ZenClasses.md'
+    - Пользовательские классы ZenScript: 'Dev_Area/Custom_ZenClasses.md'
 
-# Не меняйте в PRs то, что ниже
+# Не меняйте в PR'ах то, что ниже
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 

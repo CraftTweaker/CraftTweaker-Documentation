@@ -2,7 +2,7 @@
 
 Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPartData;`
@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
 
-## Methods
+## Methoden
 
 All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
 
@@ -165,7 +165,7 @@ Below you will find a list for CoT's basic Part Types:
 | drag       | A "float" (e.g. "1.0") | No        |
 | riddenDrag | A "float" (e.g. "1.0") | No        |</details>
 
-## Example
+## Beispiel
 
 ```JAVA
 import mods.contenttweaker.MaterialSystem;

@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Compound Producer
 
-### Importing
+### Importieren
 
 ```kotlin
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
@@ -22,7 +22,7 @@ fct().clear()
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 ```
 
-##### Example
+##### Beispiel
 
 ```kotlin
 fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);

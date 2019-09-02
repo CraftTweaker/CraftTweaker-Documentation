@@ -2,7 +2,7 @@
 
 A PartType can be seen as a group that several parts fit in, e.g. `items`
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartType;`
@@ -28,9 +28,9 @@ Check out below entry to learn how to create a new PartType.
 
 You can retrieve the following information from a PartType:
 
-| ZenMethod | Return Type |
+| ZenMethod | Rückgabetyp |
 | --------- | ----------- |
-| getName() | String      |
+| getName() | string      |
 
 You can set the following information on a PartType:
 
