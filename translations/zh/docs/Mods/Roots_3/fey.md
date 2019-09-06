@@ -10,9 +10,9 @@ import mods.roots.Fey;
 
 ```java
 static void addRecipe(
-  string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,   // the itemstack produced by this recipe
-  IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
+  string name,         //配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册Mod能正常工作。
+  IItemStack output,   //配方产物的物品id。
+  IIngredient[] inputs // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
 );
 ```
 
@@ -20,10 +20,10 @@ static void addRecipe(
 
 ```java
 static void addRecipe(
-  string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,    // the itemstack produced by this recipe
-  IIngredient[] inputs, // an array of IIngredients that make up the recipe; must contain 5 items
-  int xp                // the amount of xp (in levels) to reward the player for crafting this recipe
+  string name,          // 配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册Mod能正常工作。
+  IItemStack output,    // 配方产物的物品id。
+  IIngredient[] inputs, // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
+  int xp                // 合成后奖励给玩家的经验值(以等级作为单位)。
 );
 ```
 
@@ -31,7 +31,7 @@ static void addRecipe(
 
 ```java
 static void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+  IItemStack output //你希望移除的配方的产物
 );
 ```
 
