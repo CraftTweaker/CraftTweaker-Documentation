@@ -10,8 +10,8 @@ import mods.roots.Mortar;
 
 ```java
 static void addRecipe(
-  IItemStack output,   // the item output of this recipe
-  IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
+  IItemStack output,   //配方产出的物品。
+  IIngredient[] inputs //由配方的成分组成的数组，从1个物品组成到5个物品组成皆可。
 );
 ```
 
@@ -28,13 +28,13 @@ static void changeSpell(
 
 ```java
 static void removeRecipe(
-  IItemStack output // the item stack produced by the recipe
+  IItemStack output //你希望移除的配方的产物。
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```java
 import mods.roots.Mortar;
@@ -45,7 +45,7 @@ import mods.roots.Mortar;
 // the quantity of the output respectively.
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
-// This recipe uses five ingredients to create one bed.
+//这个配方将使用5个相同原料（也就是羊毛）来制成一张床。
 Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
 // This will remove all recipes that have Root's flour as an output
