@@ -1,12 +1,12 @@
-# Modifying Pyre Ritual Recipes
+# 自定义柴堆仪式（Pyre Ritual）配方
 
-### Class
+### 类
 
 ```java
 import mods.roots.Ritual;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void modifyRitual(
