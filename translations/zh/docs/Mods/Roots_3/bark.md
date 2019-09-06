@@ -1,6 +1,6 @@
 # 树皮配方（Bark）
 
-### 类
+### 所属类名
 
 ```java
 import mods.roots.Bark;
