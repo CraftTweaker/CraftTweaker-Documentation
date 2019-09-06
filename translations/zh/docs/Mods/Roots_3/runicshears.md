@@ -22,10 +22,10 @@ static void addRecipe(
 
 ```java
 static void addEntityRecipe(
-  string name,              // the name of the recipe for the shearing
-  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
-  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
-  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
+  string name,              //剪切配方的名字
+  IItemStack outputDrop,    //剪切特定生物掉落的物品。
+  IEntityDefinition entity, //剪切后掉落该掉落物的生物。
+  int cooldown              // 实体经历一次剪切后能够再次被剪切所花的tick 数(秒数*20) 。
 );
 ```
 
@@ -33,13 +33,13 @@ static void addEntityRecipe(
 
 ```java
 static void removeRecipe(
-  IItemStack output // the itemstack output that you wish to remove
+  IItemStack output //你希望移除的配方的产物。
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```java
 import mods.roots.RunicShears;
