@@ -1,16 +1,16 @@
 # 精灵工匠台（Fey）
 
-### 类
+### 所属类名
 
 ```java
 import mods.roots.Fey;
 ```
 
-#### 方法
+#### 可用方法
 
 ```java
 static void addRecipe(
-  string name,         //配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册Mod能正常工作。
+  string name,         //配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
   IItemStack output,   //配方产物的物品id。
   IIngredient[] inputs // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
 );
@@ -20,7 +20,7 @@ static void addRecipe(
 
 ```java
 static void addRecipe(
-  string name,          // 配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册Mod能正常工作。
+  string name,          // 配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
   IItemStack output,    // 配方产物的物品id。
   IIngredient[] inputs, // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
   int xp                // 合成后奖励给玩家的经验值(以等级作为单位)。
@@ -45,7 +45,7 @@ import mods.roots.Fey;
 // 添加用四个火药和一个红色羊毛合成一个TNT的配方
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
 
-//添加与上文提到的那个配方，并且每次合成时给予玩家6级经验 (从0级-6级的所需的经验值) 
+// 添加与上文提到的那个配方，并且每次合成时给予玩家6级经验 (从0级-6级的所需的经验值) 
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
 
 // 移除活镐的合成配方
