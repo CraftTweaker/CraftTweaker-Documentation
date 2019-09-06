@@ -1,4 +1,4 @@
-# 研钵& 研杵& 守门者之杖的配方
+# 研钵& 研杵& 咒术尘的配方
 
 ### 类
 
@@ -48,11 +48,11 @@ Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 //这个配方将使用5个相同原料（也就是羊毛）来制成一张床。
 Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
-// This will remove all recipes that have Root's flour as an output
-// including any multi-ingredient recipes
+// 这条语句将会移除Roots（根源魔法）mod面粉的配方，
+// 包括所有合成它的多原料的配方。
 Mortar.removeRecipe(<roots:flour>);
 
-// This will change the recipe for the grove supplication spell to
-// simply require five pieces of sugar.
+// 这条语句将会更改带有格鲁夫祈愿效果的咒术尘的配方，
+// 使其简化到只需五份糖就能合成
 Mortar.changeSpell("spell_supplication", [<minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>, <minecraft:sugar>]);
 ```
