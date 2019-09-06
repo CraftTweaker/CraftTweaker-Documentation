@@ -1,24 +1,24 @@
-# Bark Recipes
+# 树皮配方
 
-### Class
+### 类
 
 ```java
 import mods.roots.Bark;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addRecipe(
-  string name,        // the name of the recipe
-  IItemStack woodLog, // the itemstack equivalent of the wood log being broken
-  IItemStack bark     // the itemstack of the type of bark this log produces
+  string name,        //配方的名称
+  IItemStack woodLog, //被挖树皮的原木的物品id
+  IItemStack bark     //这个原木出产的树皮的物品id
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```java
 import mods.roots.Bark;
