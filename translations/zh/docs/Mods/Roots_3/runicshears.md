@@ -55,6 +55,6 @@ RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minec
 RunicShears.removeRecipe(<roots:fey_leather>);
 ```
 
-### Notes
+### 注意
 
 Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
