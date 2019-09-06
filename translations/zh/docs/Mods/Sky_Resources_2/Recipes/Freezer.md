@@ -1,18 +1,18 @@
-# Freezer
+# 冰箱(Freezer)
 
-The *freezer* package is used for adding or removing recipes to/from the Freezer.
+*freezer*包用于添加或移除冰箱内的物品配方。
 
-## Calling
+## 导入包
 
-You can call the *freezer* package using `mods.skyresources.freezer`
+导入*freezer*包用`import mods.skyresources.freezer`语句
 
-## Recipe Addition
+## 配方添加
 
-    //mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
-    mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
+    //mods.skyresources.freezer.addRecipe(<产物>, <原料>,tick数);
+    mods.skyresources.freezer.addRecipe(&lt;minecraft:ice&gt;, &lt;minecraft:dirt&gt;, 900);
     
 
-## Recipe Removal
+## 删除配方
 
-    //mods.skyresources.freezer.removeRecipe(IItemStack output);
-    mods.skyresources.freezer.removeRecipe(<minecraft:ice>);
+    //mods.skyresources.freezer.removeRecipe(<产物>);
+    mods.skyresources.freezer.removeRecipe(&lt;minecraft:ice&gt;);
