@@ -1,12 +1,12 @@
-# Pyre Crafting
+# 柴堆仪式（Pyre）配方
 
-### Class
+### 类
 
 ```java
 import mods.roots.Pyre;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addRecipe(
