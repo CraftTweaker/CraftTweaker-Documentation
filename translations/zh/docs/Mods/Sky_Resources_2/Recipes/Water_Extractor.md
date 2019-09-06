@@ -1,12 +1,12 @@
-# Water Extractor
+# 抽水器（Water Extractor）
 
-The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
+*waterextractor*包用于添加或删除抽水器抽取或释放的配方。
 
-## Calling
+## 导入包
 
-You can call the *waterextractor* package using `mods.skyresources.waterextractor`
+导入*infusion* 包用 `mods.skyresources.waterextractor`这条语句。
 
-## Recipe Addition
+## 添加配方
 
     //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
     mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
@@ -15,7 +15,7 @@ You can call the *waterextractor* package using `mods.skyresources.waterextracto
     mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
     
 
-## Recipe Removal
+## 删除配方
 
     //mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
     mods.skyresources.waterextractor.extract.removeRecipe(50, null, <minecraft:snow>);
