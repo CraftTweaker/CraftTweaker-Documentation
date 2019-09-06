@@ -1,16 +1,16 @@
-# "Untrue Pacifist" Advancement Creatures
+# ”不忠的和平主义“进步生物 （让敌对或中立生物成为被动生物）
 
-### Class
+### 类
 
 ```java
 import mods.roots.Pacifist;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addEntity(
-  IEntityDefinition entity // the entity to add to the pacifist list
+  IEntityDefinition entity // 需要改为被动生物的怪物
 );
 ```
 
@@ -18,20 +18,20 @@ static void addEntity(
 
 ```java
 static void removeEntity(
-  IEntityDefinition entity // the entity to remove from the pacifist list
+  IEntityDefinition entity // 需要移出出被动生物列表的生物列表。
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```java
 import mods.roots.Pacifist;
 
-// Adds an enderman as a pacifist creature
+// 将末影人加入被动生物列表。
 Pacifist.addEntity(<entity:minecraft:enderman>);
 
-// Prevents cows from triggering the pacifism effect
+// 将牛移出被动生物列表。
 Pacifist.removeEntity(<entity:minecraft:cow>);
 ```
