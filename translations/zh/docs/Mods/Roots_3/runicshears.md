@@ -1,12 +1,12 @@
-# Runic Shears (Block & Entity)
+# 符文剪刀 (方块 & 实体)
 
-### Class
+### 类
 
 ```java
 import mods.roots.RunicShears;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addRecipe(
