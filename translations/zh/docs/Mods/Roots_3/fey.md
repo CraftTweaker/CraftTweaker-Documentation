@@ -42,16 +42,16 @@ static void removeRecipe(
 ```java
 import mods.roots.Fey;
 
-// Adds a recipe for TNT using 4 gunpowder and red wool
+// 添加用四个火药和一个红色羊毛合成一个TNT的配方
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
 
-// Adds the above recipe but also grants the player 6 levels (from 0-6 relatively) every time it is crafted
+//添加与上文提到的那个配方，并且每次合成时给予玩家6级经验 (从0级-6级的所需的经验值) 
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
 
-// Removes the recipe for the living axe
+// 移除活镐的合成配方
 Fey.removeRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. 默认情况下，所有精灵工匠台的名称与物品的名称相同。
+// 添加新的合成配方，务必保持与原配方同名，以确保它能被Patchouli手册展示出来。 默认情况下，所有精灵工匠台的名称与物品的名称相同。
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
