@@ -1,6 +1,6 @@
 # 生命灌注（Life Infusion）
 
-The *infusion* package is used for adding or removing recipes to/from the Life Infusion process.
+*infusion* 包可用于添加或者移除生命灌注的配方
 
 ## 导入包
 
@@ -8,11 +8,11 @@ The *infusion* package is used for adding or removing recipes to/from the Life I
 
 ## 添加配方
 
-    //mods.skyresources.infusion.addRecipe(IItemStack output, IItemStack inputStack, IItemStack inputBlock, int health);
-    mods.skyresources.infusion.addRecipe(<minecraft:diamond> * 8, <minecraft:nether_star>, <minecraft:dirt>, 14);
+    //mods.skyresources.infusion.addRecipe(<产物>, <原料>, 灌注的方块, 消耗生命数);
+    mods.skyresources.infusion.addRecipe(&lt;minecraft:diamond&gt; * 8, &lt;minecraft:nether_star&gt;, &lt;minecraft:dirt&gt;, 14);
     
 
-## Recipe Removal
+## 删除配方
 
-    //mods.skyresources.infusion.removeRecipe(IItemStack output);
-    mods.skyresources.infusion.removeRecipe(<minecraft:cactus>);
+    //mods.skyresources.infusion.removeRecipe(<产物>);
+    mods.skyresources.infusion.removeRecipe(&lt;minecraft:cactus&gt;);
