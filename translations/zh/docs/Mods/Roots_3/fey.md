@@ -1,12 +1,12 @@
-# Fey Crafter
+# 精灵工匠台
 
-### Class
+### 类
 
 ```java
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addRecipe(
