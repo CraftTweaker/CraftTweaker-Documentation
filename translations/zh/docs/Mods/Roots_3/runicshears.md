@@ -44,17 +44,17 @@ static void removeRecipe(
 ```java
 import mods.roots.RunicShears;
 
-// Creates a recipe that obtains nether wart from red nether bricks
-// and then converts the bricks into normal nether bricks
+//创建一个通过剪切红色地狱砖块获得地狱疣的配方，
+//并且红石地狱砖块将会变回普通的地狱砖块。
 RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
 
-// Creates a recipe that obtains eggs from chickens with a 2 minute cooldown
+//创建一个通过鸡获得鸡蛋的配方，并且这个配方有2分钟的冷却时间。
 RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
 
-// Removes all recipes (both entity & block) that give fey leather
+//移除所有获得精灵皮革的配方 (不管是通过生物还是方块)。 
 RunicShears.removeRecipe(<roots:fey_leather>);
 ```
 
 ### 注意
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+`removeRecipe`方法将会尝试移除所有包含这个产物的配方 (包括剪切生物和剪切方块)。
