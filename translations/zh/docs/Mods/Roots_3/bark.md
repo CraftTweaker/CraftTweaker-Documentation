@@ -1,4 +1,4 @@
-# 树皮配方
+# 树皮配方（Bark）
 
 ### 类
 
@@ -24,7 +24,7 @@ static void addRecipe(
 import mods.roots.Bark;
 
 //注意：当前在该方法中物品的产出数量被忽略，
-//并且物品产出的数量和你的运气有关。
+//并且物品产出的数量和小刀的时运等级有关。
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>);
 ```
 
