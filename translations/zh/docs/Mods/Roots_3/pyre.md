@@ -20,10 +20,10 @@ static void addRecipe(
 
 ```java
 static void addRecipe(
-  string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
-  IItemStack output,    // the output of this recipe
-  IIngredient[] inputs, // a list of five ingredients
-  int xp                // the amount of xp in levels that is granted after crafting
+  string name,          //这个配方的名字，如果它取代了一个已有的配方，请确保当前的名字已被使用。
+  IItemStack output,    // 这个配方的产物。
+  IIngredient[] inputs, //由这个配方所需的5个原料所组成的数组（不能多，也不能少）。
+  int xp                // 完成配方后奖励的经验数（以级为单位）。
 );
 ```
 
@@ -47,7 +47,7 @@ import mods.roots.Pyre;
 Pyre.removeRecipe(<roots:stalicripe>);
 
 // 重新添加另一个没有奖励经验的配方 ，
-// 虽然如此，但是产物是非常可观的。
+// 虽然没有奖励经验，但是产物是非常可观的。
 Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>]);
 
 // 添加一个和上方语句一样的配方，并且奖励 30级的经验(从零级开始算起)。
