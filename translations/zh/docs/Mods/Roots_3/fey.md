@@ -37,7 +37,7 @@ static void removeRecipe(
 
 * * *
 
-### Examples
+### 例子
 
 ```java
 import mods.roots.Fey;
