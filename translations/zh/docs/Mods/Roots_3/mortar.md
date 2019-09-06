@@ -1,12 +1,12 @@
-# Mortar & Pestle & Spell Recipes
+# 研钵& 研杵& 守门者之杖的配方
 
-### Class
+### 类
 
 ```java
 import mods.roots.Mortar;
 ```
 
-#### Methods
+#### 方法
 
 ```java
 static void addRecipe(
