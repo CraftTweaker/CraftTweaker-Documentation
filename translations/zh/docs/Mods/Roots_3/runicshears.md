@@ -10,11 +10,11 @@ import mods.roots.RunicShears;
 
 ```java
 static void addRecipe(
-  string name,                 // the name of the recipe being created
-  IItemStack outputDrop,       // the item output obtained by performing the shearing
-  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
-  IItemStack inputBlock,       // the block that is to be sheared
-  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
+  string name,                 //创建的配方的名称。
+  IItemStack outputDrop,       //通过剪刀剪切获得的产物。
+  IItemStack replacementBlock, //剪切后的替代方块 (以itemstack，也就是物品堆格式) 
+  IItemStack inputBlock,       //被剪刀剪切的方块。
+  IItemStack jeiDisplayItem    //这个配方中被展示在JEI上的物品。
 );
 ```
 
