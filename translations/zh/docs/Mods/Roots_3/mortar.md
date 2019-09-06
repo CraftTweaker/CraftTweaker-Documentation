@@ -1,4 +1,4 @@
-# 研钵& 研杵& 咒术尘的配方
+# 研钵& 研杵& 咒术尘的配方（Mortar & Pestle & Spell）
 
 ### 类
 
@@ -19,8 +19,8 @@ static void addRecipe(
 
 ```java
 static void changeSpell(
-  string spellName,    // the name of the spell as in the spell registry
-  IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
+  string spellName,    // 咒术尘注册表中的咒术尘的名字。
+  IIngredient[] inputs // 由新配方中的5个原料所组成的数组。
 );
 ```
 
@@ -39,10 +39,10 @@ static void removeRecipe(
 ```java
 import mods.roots.Mortar;
 
-// Adds a recipe that makes gunpowder out of flint
-// As the recipe only has one input, it will automatically
-// generate 5 recipes, increasing the number of inputs and
-// the quantity of the output respectively.
+// 添加一个用燧石制成火药的配方。
+// 因为这个配方只有一个原料，
+// 它将自动生成5个配方，
+// 分别增加投入原料和产出产物的数量
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
 //这个配方将使用5个相同原料（也就是羊毛）来制成一张床。
