@@ -1,4 +1,4 @@
-# Sky Resources 2
+# 空岛资源2（Sky Resources 2）
 
 [Sky Resources 2](https://minecraft.curseforge.com/projects/sky-resources) is a skyblock companion mod providing access to all the basic resources needed for vanilla and other mods using machines including combustion heaters, condensers, water extractors, and much more!
 
