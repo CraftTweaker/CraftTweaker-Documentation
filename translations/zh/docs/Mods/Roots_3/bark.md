@@ -23,11 +23,11 @@ static void addRecipe(
 ```java
 import mods.roots.Bark;
 
-// Note that quantities on the output are currently ignored and the
-// number of items produced is relative to your fortune level.
+//注意：当前在该方法中物品的产出数量被忽略，
+//并且物品产出的数量和你的运气有关。
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>);
 ```
 
-### Notes
+### 注意
 
-No functionality exists for removing bark recipes or the knife->bark functionality.
+并没有移除树皮配方以及小刀->树皮的方法存在。
