@@ -14,13 +14,14 @@ Hand can be of those two values:
 - main
 - off
 
-    import mods.contenttweaker.Hand;
-    
-    Hand.off();
-    Hand.main();
-    Hand.fromString("off");
-    Hand.fromString("main");
-    
+```zenscript
+import mods.contenttweaker.Hand;
+
+Hand.off();
+Hand.main();
+Hand.fromString("off");
+Hand.fromString("main");
+```
 
 ## Uses
 
@@ -30,4 +31,6 @@ A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advan
 
 You can compare two Hand objects using the `==` getter.
 
-    Hand.main() == Hand.main()
+```zenscript
+Hand.main() == Hand.main()
+```
