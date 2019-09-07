@@ -2,7 +2,7 @@
 
 The IBlockColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IBlockColorSupplier;`
@@ -18,16 +18,18 @@ The IBlockColorSupplier Function is a function with following parameters.
 
 ## Examples
 
-    #loader contenttweaker
-    
-    import mods.contenttweaker.IBlockColorSupplier;
-    import mods.contenttweaker.BlockState;
-    import mods.contenttweaker.BlockPos;
-    import mods.contenttweaker.Color;
-    
-    import crafttweaker.world.IBlockAccess;
-    
-    function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
-      //Returns a lime color
-        return Color.fromInt(0x00FF00);
-    }
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.IBlockColorSupplier;
+import mods.contenttweaker.BlockState;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.Color;
+
+import crafttweaker.world.IBlockAccess;
+
+function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
+  //Returns a lime color
+    return Color.fromInt(0x00FF00);
+}
+```
