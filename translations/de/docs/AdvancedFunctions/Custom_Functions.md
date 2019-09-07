@@ -6,7 +6,7 @@ Manchmal reichen die Funktionen von CraftTweaker und dessen Addons einfach nicht
 
 Normalerweise definiert man eine Funktion in etwa so:
 
-```Java
+```zenscript
 function NAME ([argumente[as typ]]) [as returnTyp]{
     [Statements]
     [return WERT;]
@@ -24,7 +24,7 @@ Du kannst sogar auch auf Funktionen zugreifen, welche [außerhalb des Skriptes d
 
 Funktionen ohne Rückgabewert geben, wie der Name es sagt, keinen Wert zurück.
 
-```Java
+```zenscript
 //ruft die Funktion tens() ohne Parameter auf
 tens();
 
@@ -52,7 +52,7 @@ function realTens(a as string){
 
 Du kannst auch einen Rückgabewert definieren, welcher beim ausführen der Funktion zurückgegeben wird. Wir empfehlen dir dazu mit dem Schlüsselwort `as` den Rückgabetyp zu definieren.
 
-```Java
+```zenscript
 //ruft die Funktion add mit 1 und 99 als Parameter auf
 val result = add(1,99);
 print(result);
