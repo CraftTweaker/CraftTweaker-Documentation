@@ -30,6 +30,8 @@ If the Damage source is not one of the predefined ones, this will create a new o
     </ul>
 </details>
 
-    <damageSource:type>;
-    
-    <damageSource:IN_FIRE>;
+```zenscript
+<damageSource:type>;
+
+<damageSource:IN_FIRE>;
+```
