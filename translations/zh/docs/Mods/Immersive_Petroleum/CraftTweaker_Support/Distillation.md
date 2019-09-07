@@ -4,10 +4,10 @@
 
 The Distillation "addRecipe" method consists of:
 
-| Type          | Data Type                                            |
+| 类型            | 数据类型                                                 |
 | ------------- | ---------------------------------------------------- |
 | Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
-| Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
+| 输出            | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
 | Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
 | Flux/t        | Integer                                              |
 | Time in Ticks | Integer                                              |
@@ -34,7 +34,7 @@ While you can submit a float higher than 1, it'll never yield a value over 100%
 
 ### Code Example:
 
-```JAVA
+```zenscript
 //mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
 
 mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);
