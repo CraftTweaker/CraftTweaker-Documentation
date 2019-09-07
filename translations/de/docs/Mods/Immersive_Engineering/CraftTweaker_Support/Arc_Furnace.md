@@ -20,7 +20,7 @@ Du kannst das paket über mods.immersiveengineering.ArcFurnace aufrufen.
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Beispiel:
 mods.immersiveengineering.ArcFurnace.addRecipe(IItemStack output, IIngredient input, IItemStack slag, int time, int energyPerTick, @Optional IIngredient[] additives, @Optional String specialRecipeType);
 
@@ -38,7 +38,7 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Beispiele:
 mods.immersiveengineering.ArcFurnace.removeRecipe(IItemstack output);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:diamond>);
