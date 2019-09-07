@@ -1,14 +1,14 @@
 # Powered Thingies :: Powder Maker
 
-### Importing
+### 导入
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.powderMakerTweaker as pmt;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 pmt().logKeys()
 pmt().removeRecipe('minecraft:gravel') // check <logKeys> output for valid keys
 pmt().clear()
@@ -18,13 +18,13 @@ pmt().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(input: IItemStack, outputs: Array<WeightedItemStack>)
 ```
 
 ##### Example
 
-```kotlin
+```zenscript
 pmt().addRecipe(<minecraft:bucket>, [<minecraft:iron_ingot> % 100, <minecraft:iron_ingot> % 12, <minecraft:iron_ingot> % 12]);
 ```
 
