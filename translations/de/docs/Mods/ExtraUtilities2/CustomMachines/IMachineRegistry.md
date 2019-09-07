@@ -7,8 +7,9 @@ You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
 
-    import extrautilities2.Tweaker.IMachineRegistry;
-    
+```zenscript
+import extrautilities2.Tweaker.IMachineRegistry;
+```
 
 ## Create the machine
 
@@ -19,29 +20,30 @@ There are two types of machines:
 
 Machines consume energy, generators emit energy, otherwise they behave almost identically.
 
-    extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
-        name, 
-        energyBufferSize, 
-        energyTransferLimit, 
-        inputSlots, 
-        outputSlots, 
-        frontTexture, 
-        frontTextureActive, 
-        color
-    );
-    
-    
-    extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
-        name,
-        energyBufferSize,
-        energyTransferLimit,
-        inputSlots,
-        outputSlots,
-        frontTexture,
-        frontTextureActive,
-        color
-    );
-    
+```zenscript
+extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
+    name, 
+    energyBufferSize, 
+    energyTransferLimit, 
+    inputSlots, 
+    outputSlots, 
+    frontTexture, 
+    frontTextureActive, 
+    color
+);
+
+
+extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
+    name,
+    energyBufferSize,
+    energyTransferLimit,
+    inputSlots,
+    outputSlots,
+    frontTexture,
+    frontTextureActive,
+    color
+);
+```
 
 As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
 The parameters are:
@@ -66,8 +68,9 @@ Keep this in mind, as you need that object to create recipes later on!
 
 You can get already generated machines using the Registry as well:
 
-    extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
-    
+```zenscript
+extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
+```
 
 This method will return the machine with the given name as [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) or `null`
 
@@ -75,8 +78,9 @@ This method will return the machine with the given name as [IMachine](/Mods/Extr
 
 This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
 
-    extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
-    
+```zenscript
+extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
+```
 
 ### Get XU2 machines
 
