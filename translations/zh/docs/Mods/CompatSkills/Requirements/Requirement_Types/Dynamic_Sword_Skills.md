@@ -2,6 +2,8 @@
 
 ## 语句
 
-    dss|skillname|level
-    
-    dss|
+```zenscript
+dss|skillname|level
+
+dss|
+```
