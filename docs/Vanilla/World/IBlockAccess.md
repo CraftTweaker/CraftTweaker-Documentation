@@ -12,20 +12,20 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and an [IBlockState](/Vanilla/Blocks/IBlockState/) Object.  
 Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
 
-```
+```zenscript
 accObj.getBlockState(IBlockPos pos);
 ```
 
 ### Check if a block is an air block.
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a bool.
-```
+```zenscript
 accObj.isAirBlock(IBlockPos pos);
 ```
 
 ### Get strong Power at a block's side
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) object and an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns an int.
-```
+```zenscript
 accObj.getStrongPower(BlockPos var1, EnumFacing var2);
 ```

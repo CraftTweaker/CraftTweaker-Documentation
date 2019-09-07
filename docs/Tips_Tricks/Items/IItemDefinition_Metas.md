@@ -20,7 +20,7 @@ We use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) and an Integer Range 
 If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
 You can also use this to Except some items from being used.
 
-```
+```zenscript
 val itemDef = <minecraft:wool>.definition;
 
 //does this for <minecraft:wool:3> to <minecraft:wool:12>

@@ -12,7 +12,7 @@ So, what can we do with it?
 ### Multiplication
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 
-```
+```zenscript
 val def = <liquid:lava>.definition;
 
 //essentially the same
@@ -31,7 +31,7 @@ Some ZenGetters have no according ZenSetter, you will need to rely on other mean
 Be careful with Zensetters though, they only alter the fluid registry and have no effect on fluids in the world.
 You will probably only need the temperature setter when messing with [Tinkers' Construct Smeltery fuels](/Mods/Modtweaker/TConstruct/Fuel/).
 
-```
+```zenscript
 val definition = <liquid:lava>.definition;
 
 //Zengetter: luminosity

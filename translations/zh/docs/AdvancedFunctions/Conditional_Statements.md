@@ -6,7 +6,7 @@
 
 if 语句是条件语句的第一部分。 它用于声明接下来的代码块只有在判定条件为 true 才会执行。 注意！两个等号才是比较运算符（一个等号是赋值运算符！）
 
-```Java
+```zenscript
 val test = 0;
 
 if(test == 0){ //结果为 true
@@ -18,7 +18,7 @@ if(test == 0){ //结果为 true
 
 Else 语句需要加在条件语句的后，用于声明当 if 语句的条件为 False 时候执行的代码块。 
 
-```Java
+```zenscript
 var test = 0;
 
 if(test == 0){//结果为true
@@ -46,7 +46,7 @@ if(test == 0){//结果为false
 
 也支持`或(|)`、`与(&)`和`异或(^)`逻辑运算符
 
-```Java
+```zenscript
 //可以判断的类型包括：
 
 
@@ -84,7 +84,7 @@ if(d=="世界" & e == "世界"){print("AND2!");}      //true
 
 总是不停地输入 if/else 判定结构显得十分的冗余， 尤其是当你只需要做普通的条件判定时。 这就是 `?` 运算符存在的意义。 它的逻辑和 if/else 完全一致，只是大大减少了代码量。 语法： `boolean ? if : else`
 
-```Java
+```zenscript
 val switchy = false;
 
 //打印 switchy 的值
@@ -128,7 +128,7 @@ switchy ? print("再见") : print("你好");
 
 你可以检测某个指定模组是否在 loadedMods 列表中
 
-```Java
+```zenscript
 //尽管可以使用 in
 if(loadedMods in "mcp"){
     print("已加载 Minecraft Coder Pack");
@@ -147,7 +147,7 @@ if(loadedMods has "mcp"){
 只有在` in `之后的条件语句对象包含于` in `时，判断结果才为真。  
 在大部分情况下你会使用` has `关键字，因为 has 比 in 更容易理解且功能完全相同。
 
-```Java
+```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
     print("铁锭的矿物词典是正确的");
 }
@@ -159,7 +159,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 
 只有在` has `之前的材料对象包含于`has`之后的材料对象时，结果才为真： 假设有一个包含所有粉状物品的材料对象（包括红石（redstone）和荧石（glowstone））：
 
-```java
+```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;

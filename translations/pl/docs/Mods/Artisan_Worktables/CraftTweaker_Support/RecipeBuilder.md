@@ -4,13 +4,13 @@
 
 You can call the RecipeBuilder using:
 
-```JAVA
+```zenscript
 import mods.artisanworktables.builder.RecipeBuilder;
 ```
 
 ### Example
 
-```JAVA
+```zenscript
 //Bare Minimum Example
 RecipeBuilder.get("carpenter")
   .setShaped([

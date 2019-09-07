@@ -29,7 +29,7 @@ Then each respective entry will have a weighted chance of:
 
 
 ### Code Example:
-```JAVA
+```zenscript
 mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
 mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
 ```

@@ -10,7 +10,7 @@ You call the Packmode Preprocessor by adding `#packmode mode(s)` to your script 
 
 `#packmode normal expert` would enable the script in normal and expert mode
 
-```JAVA
+```zenscript
 #packmode normal
 import crafttweaker.items.IItemStack;
 

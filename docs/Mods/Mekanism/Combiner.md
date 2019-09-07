@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Combin
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.combiner.addRecipe(IIngredient itemInput, @Optional IIngredient extraInput, IItemStack itemOutput);
 
 mods.mekanism.combiner.addRecipe(<minecraft:stone> * 4, <minecraft:cobblestone>, <minecraft:stonebrick>);
@@ -16,7 +16,7 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.combiner.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional IIngredient extraInput);
 
 mods.mekanism.combiner.removeRecipe(<minecraft:gravel>, <minecraft:flint>, <minecraft:cobblestone>);
@@ -27,6 +27,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Combiner recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.combiner.removeAllRecipes();
 ```

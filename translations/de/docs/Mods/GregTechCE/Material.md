@@ -164,7 +164,7 @@ Ingot materials can be used as wire, cable and fluid pipe. Those properties can 
 
 For example:
 
-```java
+```zenscript
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
 ingotMaterial.setCableProperties(128, 4, 1); // 128EU/t 4A 1 loss/block
 ```
@@ -179,7 +179,7 @@ To add a enchantment for tools in `SolidMaterial`, simply calling `addToolEnchan
 
 Example for a Fortune I material:
 
-```java
+```zenscript
 var material = MaterialRegistry.get("iron"); // Modify iron material
 material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a enchantment object and add it
 ```
@@ -263,7 +263,7 @@ You may import the class `mods.gregtech.material.MaterialRegistry`.
 
 ### Usage
 
-```java
+```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
@@ -287,7 +287,7 @@ MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, 
 
 ### Beispiel
 
-```java
+```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 

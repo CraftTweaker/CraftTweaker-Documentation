@@ -15,7 +15,7 @@ Storage
 
 ### Addition
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
@@ -23,7 +23,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick
 
 ### Removal
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
@@ -33,7 +33,7 @@ mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167
 
 ### Addition
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
@@ -41,7 +41,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:appl
 
 ### Removal
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
@@ -51,7 +51,7 @@ mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:16
 
 ### Addition
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
@@ -59,7 +59,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:ar
 
 ### Removal
 
-```
+```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
@@ -68,14 +68,14 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:
 ## Gear
 
 ### Addition
-```
+```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
 
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
 ### Removal
-```
+```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
 
 mods.thermalexpansion.Compactor.removeGearRecipe(<thermalfoundation:material:167>);

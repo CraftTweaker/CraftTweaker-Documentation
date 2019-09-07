@@ -2,13 +2,13 @@
 
 ### Importieren
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 icp().logKeys()
 icp().removeRecipe('minecraft:mossy_cobblestone') // check <logKeys> output for valid keys 
 icp().clear()
@@ -18,13 +18,13 @@ icp().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
 ```
 
 ##### Beispiel
 
-```kotlin
+```zenscript
 icp().addRecipe(<minecraft:cobblestone>, <liquid:water> * 125, <minecraft:mossy_cobblestone>);
 ```
 

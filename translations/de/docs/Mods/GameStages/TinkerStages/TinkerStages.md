@@ -6,28 +6,28 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 
 Restricts tool crafting to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
-```java
+```zenscript
 // mods.TinkerStages.addGeneralCraftingStage(String stage);
 mods.TinkerStages.addGeneralCraftingStage("one");
 ```
 
 Restricts part replacing to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
-```java
+```zenscript
 // mods.TinkerStages.addGeneralPartReplacingStage(String stage);
 mods.TinkerStages.addGeneralPartReplacingStage("one");
 ```
 
 Restricts part building to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
-```java
+```zenscript
 // mods.TinkerStages.addGeneralPartBuildingStage(String stage);
 mods.TinkerStages.addGeneralPartBuildingStage("one");
 ```
 
 Restricts applying modifiers to a stage. If multiple stages are added using this method, the player will need at least one of them.
 
-```java
+```zenscript
 // mods.TinkerStages.addGeneralModifierStage(String stage);
 mods.TinkerStages.addGeneralModifierStage("one");
 ```
@@ -36,28 +36,28 @@ mods.TinkerStages.addGeneralModifierStage("one");
 
 Prevents a specific tool type from being crafted at the tool station. For example, you can restrict the crafting of hammers until a specific stage.
 
-```java
+```zenscript
 // mods.TinkerStages.addToolTypeStage(String stage, String toolId);
 mods.TinkerStages.addToolTypeStage(String "one", "tconstruct:pickaxe");
 ```
 
 Prevents a material from being used by the player. Including crafting, part building, and using the tool.
 
-```java
+```zenscript
 // mods.TinkerStages.addMaterialStage(String stage, String material);
 mods.TinkerStages.addMaterialStage("one", "stone");
 ```
 
 Prevents a specific modifier from being applied to a tool or used.
 
-```java
+```zenscript
 // mods.TinkerStages.addModifierStage(String stage, String modifier);
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```
 
 ## Skript-Beispiel
 
-```java
+```zenscript
 //GENERAL RESTRICTIONS
 //Prevents all tools unless the stage is unlocked.
 mods.TinkerStages.addGeneralCraftingStage("one");

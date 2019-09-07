@@ -23,7 +23,7 @@ Methods expect an int and the second method an optional bool.
 Both methods return nothing.  
 Normally, the second method does the same as the first with false as forced argument, that may differ for mod implementations, though.
 
-```
+```zenscript
 entAgObj.ageUp(int seconds, @Optional boolean forced);
 entAgObj.addGrowth(int seconds);
 ```

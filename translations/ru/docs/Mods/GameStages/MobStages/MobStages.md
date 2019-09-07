@@ -6,28 +6,28 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 
 Creates a new gloabl entry for the mob. Only one global entry can exist per mob.
 
-```java
+```zenscript
 // mods.MobStages.addStage(String stage, String entityId);
 mods.MobStages.addStage("one", "minecraft:zombie");
 ```
 
 Adds a replacement for the mob. If the mob fails to spawn because there are no valid players nearby, the replacement mob will be spawned in it's place.
 
-```java
+```zenscript
 // mods.MobStages.addReplacement(String entityId, String replacementId);
 mods.MobStages.addReplacement("minecraft:zombie", "minecraft:slime");
 ```
 
 Sets the range to search for valid players. The default range is 512 blocks, so this is optional.
 
-```java
+```zenscript
 // mods.MobStages.addRange(String entityId, int range);
 mods.MobStages.addRange("minecraft:zombie", 32);
 ```
 
 Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
 
-```java
+```zenscript
 // mods.MobStages.toggleSpawners(String entityId, boolean allow);
 mods.MobStages.toggleSpawners("minecraft:zombie", true);
 ```
@@ -38,7 +38,7 @@ Dimension specific options are nearly the same as the global options, however th
 
 ## Example Script
 
-```java
+```zenscript
 // Creepers require stage one to spawn
 mods.MobStages.addStage("one", "minecraft:creeper");
 

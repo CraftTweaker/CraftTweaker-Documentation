@@ -21,7 +21,7 @@ So what can be done with the oreDict?
 You can use either of the three ways below to refer to an OreDictEntry, no matter if it already exists or not.  
 If the oreDictEntry does not yet exist, it will be created.
 
-```java
+```zenscript
 oreDict.ingotIron;
 oreDict.get("ingotIron");
 oreDict["ingotIron"];
@@ -29,7 +29,7 @@ oreDict["ingotIron"];
 
 ### Iterating through all registered [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
 
-```java
+```zenscript
 //the entries member is for retrieving all registered oreDictionary entries!
 val allEntries = oreDict.entries;
 

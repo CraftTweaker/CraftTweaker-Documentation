@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.RunicShears;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void addRecipe(
   string name,                 // the name of the recipe being created
   IItemStack outputDrop,       // the item output obtained by performing the shearing
@@ -22,7 +22,7 @@ static void addRecipe(
 ---
 
 
-```java
+```zenscript
 static void addEntityRecipe(
   string name,              // the name of the recipe for the shearing
   IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
@@ -35,7 +35,7 @@ static void addEntityRecipe(
 ---
 
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output // the itemstack output that you wish to remove
 );
@@ -47,7 +47,7 @@ static void removeRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.RunicShears;
 
 // Creates a recipe that obtains nether wart from red nether bricks

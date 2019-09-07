@@ -9,7 +9,7 @@ You can call the  package using `mods.forestry.Squeezer`
 
 Beware, you cannot remove the recipes that fill or drain fluid containers, such as forestry cans!
 
-```JAVA
+```zenscript
 //mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
 mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
@@ -18,7 +18,7 @@ mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]
 
 ## Recipe Addition
 
-```JAVA
+```zenscript
 //mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
 //mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
 mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <minecraft:redstone> % 20);

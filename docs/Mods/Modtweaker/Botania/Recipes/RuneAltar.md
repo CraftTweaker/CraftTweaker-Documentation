@@ -10,14 +10,14 @@ You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods
 
 ## Recipe addition
 
-```
+```zenscript
 //mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
 mods.botania.RuneAltar.addRecipe(<minecraft:planks>,[<minecraft:grass>, <minecraft:dirt>], 200);
 ```
 
 ## Recipe removal
 
-```
+```zenscript
 //mods.botania.RuneAltar.removeRecipe(IIngredient output);
 mods.botania.RuneAltar.removeRecipe(<Botania:rune>);
 ```

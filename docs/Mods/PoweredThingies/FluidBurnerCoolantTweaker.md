@@ -1,12 +1,12 @@
 # Powered Thingies :: Fluid Burner :: Coolant
 
 ### Importing
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
-```kotlin
+```zenscript
 coolant().logKeys()
 coolant().removeRecipe('teslathingies:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
 coolant().clear()
@@ -14,12 +14,12 @@ coolant().clear()
 
 ### Adding Recipe
 ##### Signature
-```kotlin
+```zenscript
 addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 ```
 `timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 ##### Example
-```kotlin
+```zenscript
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 

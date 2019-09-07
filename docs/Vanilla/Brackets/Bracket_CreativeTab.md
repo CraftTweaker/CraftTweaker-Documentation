@@ -4,7 +4,7 @@ The Creative Tab Bracket Handler gives you access to the creative Tabs in the ga
 
 They are referenced in the Creative Tab handler this way:
 
-```
+```zenscript
 <creativetab:name>
 
 <creativetab:misc>

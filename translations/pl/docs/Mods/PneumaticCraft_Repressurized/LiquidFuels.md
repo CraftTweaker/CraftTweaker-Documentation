@@ -24,7 +24,7 @@ This function deregisters *all* registered fuels:
 
 The following functions can be used to add fluids to the fuel registry:
 
-```java
+```zenscript
 // Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
 mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 

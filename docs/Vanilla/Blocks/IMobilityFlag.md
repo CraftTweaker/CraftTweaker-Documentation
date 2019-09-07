@@ -10,13 +10,13 @@ It might be required for you to import the package if you encounter any issues, 
 #### Matches
 You can check if two IMobilityFlag objects are equal:  
 Returns a bool.
-```
+```zenscript
 flagOne.matches(other);
 ```
 
 ## Enumerations
 The MobilityFlag Interface has 5 static Methods, each returning the given IMobilityFlag object.
-```
+```zenscript
 crafttweaker.block.MobilityFlag.normal()
 crafttweaker.block.MobilityFlag.destroy()
 crafttweaker.block.MobilityFlag.block()

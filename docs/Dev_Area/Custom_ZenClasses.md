@@ -24,7 +24,7 @@ These are keywords that can be found in the class' body and they will initiate a
 ## Example
 
 A commented example:
-```
+```zenscript
 
 //Creates a class named 'name', you can also access it using scripts.scriptPath.name
 

@@ -29,7 +29,7 @@ The following information can be retrieved from the event:
 
 ## Adding an item to the list
 You can either addAssign the list or use the method to add an item to the list:
-```
+```zenscript
 event.drops += <minecraft:coal>;
 event.addItem(<minecraft:coal>);
 ```

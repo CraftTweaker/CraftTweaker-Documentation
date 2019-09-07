@@ -17,7 +17,7 @@ You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
 
 ### Beispiel
 
-```JAVA
+```zenscript
 mods.immersiveengineering.Fermenter.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
@@ -30,7 +30,7 @@ mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water
 
 ### Beispiel
 
-```JAVA
+```zenscript
 mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
 mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 ```
@@ -43,7 +43,7 @@ mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 mods.immersiveengineering.Fermenter.removeItemRecipe(IItemstack output);
 mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 ```
@@ -56,7 +56,7 @@ mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 mods.immersiveengineering.Fermenter.removeByInput(IItemstack input);
 mods.immersiveengineering.Fermenter.removeByInput(<minecraft:diamond>);
 ```

@@ -5,14 +5,14 @@ This package allows you to modify recipes for the Mechanical Squeezer.
 
 ## Importing the package
 If you want to import this package, here you go:
-```
+```zenscript
 import mods.integrateddynamics.MechanicalSqueezer;
 ```
 
 
 ## Adding Recipes
 
-```
+```zenscript
 //MechanicalSqueezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 MechanicalSqueezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
 
@@ -34,7 +34,7 @@ MechanicalSqueezer.addRecipe(<minecraft:pumpkin>,
 
 ## Removing Recipes
 
-```
+```zenscript
 //MechanicalSqueezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 MechanicalSqueezer.removeRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100, 10);
 

@@ -11,7 +11,7 @@ There are 5 Terms that are important:
 - [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
 
 ## Example Script
-```java
+```zenscript
 	#loader contenttweaker
 	//////////
 	// Calls

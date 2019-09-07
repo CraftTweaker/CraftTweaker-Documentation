@@ -10,7 +10,7 @@ The Blender combines items together, resulting in a drink that restores food and
 ## Removing Drinks
 Remove matching blended drinks.
 ------
-```java
+```zenscript
 mods.cfm.Blender.remove(@Optional final String name, @Optional final IItemStack[] ingredients, @Optional final Integer food, @Optional final int[] colour);
 
 // Remove drink named "Fruit Crush"
@@ -25,7 +25,7 @@ mods.cfm.Blender.remove();
 Add a blended drink.
 Currently, saturation and food value cannot be set independently.
 ------
-```java
+```zenscript
 mods.cfm.Blender.addDrink(@Nonnull final String name, @Nonnull final IItemStack[] ingredients, final int food, @Nonnull final int[] colour);
 
 // Add a drink named "Watermelon Snow" that is coloured pink and restores 20 food and 20 saturation requiring 8 melon slices and 4 snowballs to craft

@@ -39,21 +39,21 @@ It might be required for you to import the package if you encounter any issues (
 Uses no paramaeters.  
 Returns nothing.  
 Does the same as `hardness = -1;`
-```
+```zenscript
 defObj.setUnbreakable();
 ```
 
 ### Get tickrate in a specific world
 Uses an [IWorld](/Vanilla/World/IWorld/) object.  
 Returns an int.
-```
+```zenscript
 defObj.getTickRate(IWorld world);
 ```
 
 ### Check if the block can be placed on another block
 Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
-```
+```zenscript
 defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
 defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
 ```
@@ -62,13 +62,13 @@ defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
 ### Get the block's slipperiness
 Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a float.
-```
+```zenscript
 defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
 ```
 
 ### Set the block's harvest level
 Uses a string and an int.  
 Returns void (nothing).
-```
+```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```

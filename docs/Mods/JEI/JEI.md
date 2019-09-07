@@ -6,7 +6,7 @@ You can add or hide items or fluids in JEI or add a Descriptions page for them.
 ## Remove
 You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
 
-```
+```zenscript
 //hide(IItemStack item);
 mods.jei.JEI.hide(<minecraft:diamond>);
 
@@ -24,14 +24,14 @@ mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ## Hide Categories
 You can use this to hide entire JEI Categories (e.g. crafting recipes, furnace recipes, machine X recipes, ...).  
 It accepts the category as string, you can get all registered categories by running `/ct jeiCategories` ingame.  
-```Java
+```zenscript
 //hideCategory(category)
 mods.jei.JEI.hideCategory("minecraft.smelting");
 ```
 
 ## Add Item
 You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
-```JAVA
+```zenscript
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
@@ -43,7 +43,7 @@ You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack/), an
 If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
 Each string parameter will have at least one line and wrap around the end of the window if too long.  
 
-```Java
+```zenscript
 //addDescription(IItemStack item, string... desc);
 mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 

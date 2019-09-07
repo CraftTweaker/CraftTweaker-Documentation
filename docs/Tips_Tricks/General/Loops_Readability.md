@@ -10,7 +10,7 @@ When writing the exactly same command more than 10 times, with only 1 Parameter 
 
 So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
 
-```
+```zenscript
 import crafttweaker.item.IIngredient;
 
 val Array = [

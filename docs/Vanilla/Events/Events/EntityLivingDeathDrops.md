@@ -30,7 +30,7 @@ The following information can be retrieved from the event:
 ## Modifying the item drops
 
 You can either add to the droplist or completely substitute it with a new one:
-```kotlin
+```zenscript
 event.items = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);

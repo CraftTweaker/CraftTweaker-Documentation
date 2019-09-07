@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Pyre;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void addRecipe(
   string name,         // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
   IItemStack output,   // the output of this recipe
@@ -18,7 +18,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addRecipe(
   string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
   IItemStack output,    // the output of this recipe
@@ -29,7 +29,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output // the output of the recipe to remove
 );
@@ -39,7 +39,7 @@ static void removeRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Pyre;
 
 // Removes the recipe for stalicripe; note that the quantity is not considered

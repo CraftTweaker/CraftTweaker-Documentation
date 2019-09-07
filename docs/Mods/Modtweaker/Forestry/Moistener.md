@@ -7,7 +7,7 @@ You can call the  package using `mods.forestry.Moistener`
 
 ## Recipe Removal
 
-```JAVA
+```zenscript
 //mods.forestry.Moistener.removeRecipe(IIngredient output);
 mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 ```
@@ -15,13 +15,13 @@ mods.forestry.Moistener.removeRecipe(<minecraft:stonebrick:1>);
 
 ## Addition
 
-```JAVA
+```zenscript
 //mods.forestry.Moistener.addRecipe(IItemStack output, IItemStack input, int packagingTime); 
 mods.forestry.Moistener.addRecipe(<minecraft:mycelium>, <minecraft:grass>, 60); 
 ```
 
 ## Fuel Removal
-```JAVA
+```zenscript
 //mods.forestry.Moistener.removeFuel(IIngredient moistenerItem);
 mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 
@@ -29,7 +29,7 @@ mods.forestry.Moistener.removeFuel(<minecraft:wheat>);
 
 
 ## Fuel Addition
-```JAVA
+```zenscript
 //mods.forestry.Moistener.addFuel(IItemStack item, IItemStack product, int moistenerValue, int stage);
 mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 20, 2);
 ```

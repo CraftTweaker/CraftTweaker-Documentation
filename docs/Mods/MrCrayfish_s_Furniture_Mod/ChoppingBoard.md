@@ -6,7 +6,7 @@ By default only cuts bread into 6 bread slices.
 ## Removing Chopping Recipes
 Remove matching chopping recipes.
 ------
-```java
+```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipe with bread as the input item
@@ -19,7 +19,7 @@ mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 Add a chopping recipe.
 Input requires stack size of 1.
 ------
-```java
+```zenscript
 mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe to chop wheat into 2 sticks

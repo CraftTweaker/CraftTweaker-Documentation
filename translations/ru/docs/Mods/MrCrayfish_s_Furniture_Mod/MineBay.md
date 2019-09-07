@@ -19,7 +19,7 @@ You can trade for items on minebay.
 
 ## Remove matching trades.
 
-```java
+```zenscript
 mods.cfm.MineBay.remove(@Optional IIngredient item);
 
 // Remove trade resulting in the nightvision potion (with any amount)
@@ -34,7 +34,7 @@ Currently only supports removing by trade result.
 
 ## Add a trade.
 
-```java
+```zenscript
 mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
 
 // Add a trade for 42 sticks given 13 diamonds

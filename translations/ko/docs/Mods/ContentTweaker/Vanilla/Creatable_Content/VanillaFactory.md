@@ -10,7 +10,7 @@ You can find the package at `mods.contenttweaker.VanillaFactory`
 
 ### Create Blocks
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createBlock(String unlocalizedName, IMaterialDefinition material);
 ```
 
@@ -23,7 +23,7 @@ Returns a [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/B
 
 ### Create Items
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
@@ -35,7 +35,7 @@ Returns an [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/I
 
 ### Create Creative Tabs
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
@@ -51,7 +51,7 @@ Returns a [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative
 
 ### Create Fluids
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
@@ -66,7 +66,7 @@ Returns a [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/F
 
 ### Create Food Items
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 

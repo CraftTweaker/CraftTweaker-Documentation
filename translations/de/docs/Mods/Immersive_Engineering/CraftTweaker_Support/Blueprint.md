@@ -20,7 +20,7 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
 
@@ -39,7 +39,7 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ### Example:
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
 mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);

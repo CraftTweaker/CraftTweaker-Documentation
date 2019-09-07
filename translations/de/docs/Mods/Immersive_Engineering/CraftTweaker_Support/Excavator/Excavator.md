@@ -18,7 +18,7 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
 
@@ -35,7 +35,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 

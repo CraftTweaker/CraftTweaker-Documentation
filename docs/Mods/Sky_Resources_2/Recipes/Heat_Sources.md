@@ -8,14 +8,14 @@ You can call the *heatsources* package using `mods.skyresources.heatsources`
 
 ## Heat Source Addition
 
-```
+```zenscript
 //mods.skyresources.heatsources.add(IItemStack stack, int heatValue);
 mods.skyresources.heatsources.add(<minecraft:ice>, 3);
 ```
 
 ## Heat Source Removal
 
-```
+```zenscript
 //mods.skyresources.heatsources.remove(IItemStack output);
 mods.skyresources.heatsources.remove(<minecraft:obsidian>);
 ```

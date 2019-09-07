@@ -10,7 +10,7 @@ You can find all registered ManaInfusion recipes using [`/ct botania infusions`]
 
 ## Recipe addition
 
-```
+```zenscript
 //mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
 mods.botania.ManaInfusion.addInfusion(<minecraft:grass>, <ore:stone>, 1000);
 
@@ -23,7 +23,7 @@ mods.botania.ManaInfusion.addConjuration(<minecraft:stone>, <minecraft:stone>, 1
 
 ## Recipe removal
 
-```
+```zenscript
 //mods.botania.ManaInfusion.removeRecipe(IIngredient output);
 mods.botania.ManaInfusion.removeRecipe(<minecraft:leather>);
 mods.botania.ManaInfusion.removeRecipe(<minecraft:redstone> * 2);

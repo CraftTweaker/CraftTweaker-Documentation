@@ -8,13 +8,13 @@ CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fue
 
 There are 2 ways to remove Furnace recipes, being:
 
-```java
+```zenscript
 furnace.remove(IIngredient output)
 ```
 
 And
 
-```java
+```zenscript
 furnace.remove(IIngredient output, IIngredient input);
 ```
 
@@ -23,7 +23,7 @@ The second syntax is more strict with the recipes that are removed and will remo
 
 There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
 
-```java
+```zenscript
 furnace.removeAll();
 ```
 
@@ -31,13 +31,13 @@ furnace.removeAll();
 
 There are 2 commands for adding furnace recipes:
 
-```java
+```zenscript
 furnace.addRecipe(IItemStack output, IIngredient input);
 ```
 
 And
 
-```java
+```zenscript
 furnace.addRecipe(IItemStack output, IIngredient input, double xp);
 ```
 
@@ -51,7 +51,7 @@ The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
 
 The command for setting fuel values is:
 
-```java
+```zenscript
 furnace.setFuel(IIngredient input, int burnTime);
 ```
 
@@ -63,7 +63,7 @@ Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
 
 The command for retrieving an item's fuel value is:
 
-```java
+```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
@@ -75,13 +75,13 @@ This will return the burn value as an Integer
 
 This will remove all Furnace recipes that outputs `<minecraft:glass>`.
 
-```java
+```zenscript
 furnace.remove(<minecraft:glass>);
 ```
 
 This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
 
-```java
+```zenscript
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
@@ -89,13 +89,13 @@ furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 
 This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 
-```java
+```zenscript
 furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
 This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
 
-```java
+```zenscript
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
@@ -103,7 +103,7 @@ furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 
 This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
 
-```java
+```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 

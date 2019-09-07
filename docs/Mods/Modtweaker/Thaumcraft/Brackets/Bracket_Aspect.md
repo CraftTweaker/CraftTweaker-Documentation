@@ -4,7 +4,7 @@ The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/M
 
 Aspects are referenced in the Aspect Bracket handler this way:
 
-```
+```zenscript
 <aspect:name>
 
 <aspect:ignis>

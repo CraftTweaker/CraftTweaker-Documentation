@@ -32,7 +32,7 @@ This function deregisters *all* known XP fluids:
 
 This function can be used to register fluids as XP fluids:
 
-```java
+```zenscript
 // Register a liquid as an XP fluid. xpRatio defines the amount of player XP per millibucket of fluid.
 mods.pneumaticcraft.xpfluid.addXPFluid(ILiquidStack fluid, double ratio);
 

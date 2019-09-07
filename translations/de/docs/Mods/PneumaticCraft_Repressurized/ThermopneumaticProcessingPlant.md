@@ -26,7 +26,7 @@ This function removes *all* TPP recipes:
 
 The following functions can be used to add recipes to the TPP:
 
-```java
+```zenscript
 // Add a recipe converting an input item into an output fluid
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(IItemStack itemInput, double pressure, double temperature, ILiquidStack output);
 

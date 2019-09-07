@@ -7,7 +7,7 @@ This can range from damaging the item up to returning a completely different ite
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemTransformer;`
 
-```Java
+```zenscript
 
 val item = <minecraft:apple>;
 
@@ -42,7 +42,7 @@ transformedItem = item.transformConsume(3);
 The old itemTransformer that might cease to exist in 1.13.  
 Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
 
-```
+```zenscript
 transformedItem = item.transform(function(item, player) {return item;});
 ```
 
@@ -52,7 +52,7 @@ This stack will replace what's in the crafting slot afterwards. Use `null` to cl
 ### TransformNew
 With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
 
-```
+```zenscript
 transformedItem = item.transformNew(function(item){return item;});
 ```
 

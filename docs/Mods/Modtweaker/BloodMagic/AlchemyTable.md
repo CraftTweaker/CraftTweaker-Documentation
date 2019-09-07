@@ -5,7 +5,7 @@
 
 ## Addition
 
-```
+```zenscript
 inputs has a max size of 6
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
 mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
@@ -13,7 +13,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <
 
 ## Potion addition
 
-```
+```zenscript
 inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
 var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
 //mods.bloodmagic.AlchemyTable.addPotionRecipe(IItemStack[] inputs, IPotionEffect effects, int syphon, int ticks, int minTier)
@@ -22,7 +22,7 @@ mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecr
 
 ## Removal
 
-```
+```zenscript
 inputs has a max size of 6
 //mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
@@ -32,6 +32,7 @@ mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>
 
 Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
 
-```
+```zenscript
 //mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
+```

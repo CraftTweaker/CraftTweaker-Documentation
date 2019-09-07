@@ -30,7 +30,7 @@
     <tr><td>2</td><td>天辉祭坛</td></tr>
 </table>
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
 //output 输出
 //altarLevel 祭坛等级
@@ -64,7 +64,7 @@ int `craftingTickTime`,
 `inputs（输入）` 顺序：  
 ![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
             <minecraft:grass>, null, <ore:treeLeaves>,
             null, <minecraft:grass>, null,
@@ -80,7 +80,7 @@ mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/alt
 `inputs（输入）` 顺序：  
 ![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
             null, null, null,
             <ore:treeLeaves>, <astralsorcery:blockmarble:2>, <ore:treeLeaves>,
@@ -97,7 +97,7 @@ mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/alta
 `inputs（输入）` 顺序：  
 ![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
             <ore:blockMarble>, <astralsorcery:blocklens>, <ore:blockMarble>,
             <ore:blockMarble>, <astralsorcery:itemcraftingcomponent:2>, <ore:blockMarble>,
@@ -120,7 +120,7 @@ mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal
 `inputs（输入）` 顺序：  
 ![输入顺序](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
 
 //recipeLocation recipe location

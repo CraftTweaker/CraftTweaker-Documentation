@@ -164,7 +164,7 @@ Chociaż nie jest to rekomendowane, to dodawanie zmiennych do tablic jest możli
 Dodawać możesz tylko pojedyncze obiekty. Nie możesz dodać do siebie dwóch tablic.  
 Żeby dodać obiekt do tablicy należy użyć operatora `+`:
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;

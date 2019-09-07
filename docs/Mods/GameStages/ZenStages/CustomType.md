@@ -13,7 +13,7 @@ Note: It is also a recomended standard that you use unique names for **all** you
 ## How to create them
 Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) using the following method.
 
-```java
+```zenscript
 // initCustomType(string name, string value);
 // initCustomType(string name, string[] values);
 // initCustomType(string name, int value);
@@ -25,7 +25,7 @@ ZenStager.initCustomType("disallowedDimension", 14);
 ```
 
 Once you have created the Custom Type you can now assign that Type to a [Stage](/Mods/GameStages/ZenStages/Stage/). By calling the following.
-```java
+```zenscript
 // setStage(Stage stage);
 MyCustomType.setStage(TestStage);
 ```
@@ -33,7 +33,7 @@ MyCustomType.setStage(TestStage);
 ## How to perform a check to a Custom Type
 
 This method requires that you have set a stage to a type. Using the above method. Otherwise it returns null.
-```java
+```zenscript
 // getCustomStage(string name, string value);
 // getCustomStage(string name, int value);
 // getCustomStage(string name, IIngredient value);
@@ -41,7 +41,7 @@ ZenStager.getCustomStage("blockBreak", [<minecraft:stone>]);
 ```
 
 This method does not require a Custom Type to be _Staged_ to a stage.
-```java
+```zenscript
 // getCustomType(String name);
 ZenStager.getCustomType("blockBreak");
 ```

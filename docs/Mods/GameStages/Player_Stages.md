@@ -10,7 +10,7 @@ As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), 
 ### Check for gamestages
 The methods return booleans.
 
-```java
+```zenscript
 // Checks if the player has the passed stage.
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
@@ -32,7 +32,7 @@ player.hasAllGameStages ("one", "two");
 
 The methods return void (nothing).
 
-```java
+```zenscript
 // Unlocks a stage for a player.
 //addGameStage(String stage);
 addGameStage(String stage);

@@ -11,7 +11,7 @@
 这个方法移除第一个`输出`为传入的的物品堆（[IItemStack](/Vanilla/Items/IItemStack/)）的配方，并且会使用匹配物品堆（` matchStack `）检测是否需要匹配物品附加值。  
 如果有多个配方可以合成传入的物品，你需要多次调用此方法！
 
-```JAVA
+```zenscript
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
 //stackToRemove 需要移除的物品
 //matchMeta 是否匹配物品附加值

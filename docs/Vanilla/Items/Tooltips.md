@@ -5,13 +5,13 @@ All you need is an item (or oreDict or similar), in other words, an IIngredient.
 
 ## Clearing tooltips
 This removes ALL tooltips from the `item`
-```
+```zenscript
 item.clearTooltip();
 ```
 
 ## Normal Tooltips
 This adds `tT` as tooltip to `item`.
-```
+```zenscript
 item.addTooltip(tT);
 
 <minecraft:chest>.addTooltip("Storage, what can I say more?");
@@ -21,7 +21,7 @@ item.addTooltip(tT);
 
 ## Shift Tooltips
 This adds a tooltip, that will only be visible when you hold shift.
-```
+```zenscript
 item.addShiftTooltip(tT);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
@@ -36,7 +36,7 @@ You can also nest these options, should you with to (if you wanted a green text,
 ## Coloring a String
 
 You can apply one of the 16 colors to your string
-```
+```zenscript
 format.black
 format.darkBlue
 format.darkGreen
@@ -55,13 +55,13 @@ format.yellow
 format.white
 ```
 
-```
+```zenscript
 <minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
 ```
 
 ## Formatting a String
 You can apply different formats to your String should you wish to:
-```
+```zenscript
 format.obfuscated
 format.bold
 format.strikethrough
@@ -69,6 +69,6 @@ format.underline
 format.italic
 ```
 
-```
+```zenscript
 <minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
 ```

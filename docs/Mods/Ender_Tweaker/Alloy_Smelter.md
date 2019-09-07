@@ -11,7 +11,7 @@
 - **float xp** The xp is granted from this recipe. May not be negative.
 
 ## Addition
-```
+```zenscript
 mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
 
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <
 
 ## Removal
 
-```
+```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
 
 mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_ingot:7>);

@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrich
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
 
 mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
@@ -15,7 +15,7 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
 
 mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:cobblestone>);
@@ -26,6 +26,6 @@ Specifying an output parameter will only remove the specific recipe that results
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.enrichment.removeAllRecipes();
 ```

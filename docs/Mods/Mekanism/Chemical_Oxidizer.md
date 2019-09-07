@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemic
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.chemical.oxidizer.addRecipe(IIngredient inputStack, IGasStack outputGas);
 
 mods.mekanism.chemical.oxidizer.addRecipe(<mekanism:dust:2>, <gas:cleanOsmium>);
@@ -15,7 +15,7 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.chemical.oxidizer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
 
 mods.mekanism.chemical.oxidizer.removeRecipe(<gas:brine>, <mekanism:salt>);
@@ -26,6 +26,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Chemical Oxidizer recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.chemical.oxidizer.removeAllRecipes();
 ```

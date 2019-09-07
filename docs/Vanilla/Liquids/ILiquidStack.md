@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Brackets/Bracket_Liquid/)
 
 
-```
+```zenscript
 //see The liquid bracket Handler for further information
 val lava = <liquid:lava>;
 

@@ -4,7 +4,7 @@ The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in t
 
 Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
 
-```
+```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```

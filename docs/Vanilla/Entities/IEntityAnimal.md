@@ -21,7 +21,7 @@ IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That 
 Method expects an [IItemStack](/Vanilla/Items/IItemStack/).  
 Returns a bool.
 
-```
+```zenscript
 entAnObj.isBreedingItem(IItemStack itemStack);
 ```
 
@@ -29,7 +29,7 @@ entAnObj.isBreedingItem(IItemStack itemStack);
 First method expects an optional [IPlayer](/Vanilla/Players/IPlayer/) object, second nothing.  
 Returns nothing.
 
-```
+```zenscript
 entAnObj.setInLove(@Optional IPlayer player);
 entAnObj.resetInLove();
 ```
@@ -38,6 +38,6 @@ entAnObj.resetInLove();
 Method expects an IEntityAnimal object.  
 Returns a bool.
 
-```
+```zenscript
 entAnObj.canMateWith(IEntityAnimal other);
 ```

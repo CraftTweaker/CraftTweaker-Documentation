@@ -6,7 +6,7 @@ You can call the *waterextractor* package using `mods.skyresources.waterextracto
 
 ## Recipe Addition
 
-```
+```zenscript
 //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
 mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
 
@@ -16,7 +16,7 @@ mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:c
 
 ## Recipe Removal
 
-```
+```zenscript
 //mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
 mods.skyresources.waterextractor.extract.removeRecipe(50, null, <minecraft:snow>);
 

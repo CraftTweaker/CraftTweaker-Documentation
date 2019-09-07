@@ -10,7 +10,7 @@ You can call the LightTransmutations package using `mods.astralsorcery.LightTran
 This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses `matchStack` to determine whether it should also match Metadata.  
 If there are multiple recipes that return the provided output, you need to call this method multiple times!
 
-```JAVA
+```zenscript
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 ```

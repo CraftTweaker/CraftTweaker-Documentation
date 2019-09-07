@@ -6,7 +6,7 @@ You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
 ## Recipe Addition
 
-```
+```zenscript
 //mods.skyresources.rockgrinder.addRecipe(IItemStack output, IItemStack input);
 mods.skyresources.rockgrinder.addRecipe(<minecraft:diamond>, <minecraft:stone>);
     
@@ -16,7 +16,7 @@ mods.skyresources.rockgrinder.addRecipe(<minecraft:emerald>, <minecraft:stone>, 
 
 ## Recipe Removal
 
-```
+```zenscript
 //mods.skyresources.rockgrinder.removeRecipe(IItemStack output);
 mods.skyresources.rockgrinder.removeRecipe(<minecraft:gravel>);
 ```

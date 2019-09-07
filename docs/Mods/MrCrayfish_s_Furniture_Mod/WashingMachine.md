@@ -6,7 +6,7 @@ By default repairs durability of vanilla armour, including the Elytra.
 ## Removing
 Remove matching washable items.
 ------
-```java
+```zenscript
 mods.cfm.WashingMachine.remove(@Optional final IIngredient item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);
@@ -21,7 +21,7 @@ mods.cfm.WashingMachine.remove();
 ## Adding
 Add a washable item.
 ------
-```java
+```zenscript
 mods.cfm.WashingMachine.add(@Nonnull final IItemStack item);
 
 mods.cfm.WashingMachine.add(<minecraft:elytra>);

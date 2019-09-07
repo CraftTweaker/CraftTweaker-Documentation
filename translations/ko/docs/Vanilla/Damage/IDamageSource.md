@@ -40,7 +40,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 You can either use these methods or the [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/).
 
-```kotlin
+```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
 crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)

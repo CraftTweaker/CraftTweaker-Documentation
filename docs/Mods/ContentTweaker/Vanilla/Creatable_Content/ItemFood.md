@@ -5,7 +5,7 @@ This allows you to add food items to the game!
 ## Create the Food Item Representation
 Before you can add the item, you need to create a food item Representation which will allow you to set the properties of the item you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 

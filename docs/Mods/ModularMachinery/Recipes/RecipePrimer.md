@@ -12,12 +12,12 @@ Each of these methods does two things: First, it modifies the object, then it re
 This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
 
 ### Setting the chance
-```sml
+```zenscript
 setChance(float chance);
 ```
 
 ### Adding Energy and fuel requirements
-```java
+```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
@@ -29,7 +29,7 @@ addFuelItemInout(int requiredTotalBurnTime);
 ### Adding inputs
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
-```sml
+```zenscript
 addItemInput(IItemStack stack);
 
 addItemInput(IOreDictEntry oreDict);
@@ -41,7 +41,7 @@ addFluidInput(ILiquidStack stack);
 
 ### Adding outputs
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
-```sml
+```zenscript
 addItemOutput(IItemStack stack);
 
 addItemOutput(IOreDictEntry oreDict);
@@ -54,7 +54,7 @@ addFluidOutput(ILiquidStack stack);
 
 ### Building the recipe
 After you have done your changes above, you need to build the recipe so that it will actually do something.
-```sml
+```zenscript
 build();
 ```
 

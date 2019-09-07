@@ -16,7 +16,7 @@ It is a good idea to split your script into multiple files
 - You could for example create one script for each mod, or each mod handler.
 
 ## Example
-```
+```zenscript
 scripts
 	thermalExpansion
 		Compactor.zs

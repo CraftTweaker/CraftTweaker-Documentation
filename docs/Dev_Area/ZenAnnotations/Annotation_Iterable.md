@@ -9,7 +9,7 @@ There are three kinds of IterableAnnotations:
 
 ## Example
 [CraftTweaker's IOreDict](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/oredict/IOreDict.java)
-```
+```java
 @ZenClass("crafttweaker.oredict.IOreDict")
 @IterableSimple("crafttweaker.oredict.IOreDictEntry")
 @ZenRegister
@@ -31,7 +31,7 @@ public interface IOreDict extends Iterable<IOreDictEntry> {
 ```
 
 [MCOreDict (implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/oredict/MCOreDict.java)
-```
+```java
     @Override
     public Iterator<IOreDictEntry> iterator() {
         return Arrays.asList(OreDictionary.getOreNames())
@@ -43,7 +43,7 @@ public interface IOreDict extends Iterable<IOreDictEntry> {
 ```
 
 ## How would that be useable in ZS?
-```
+```zenscript
 for oreDictEntry in oreDict {
 	print(oreDictEntry.name);
 }

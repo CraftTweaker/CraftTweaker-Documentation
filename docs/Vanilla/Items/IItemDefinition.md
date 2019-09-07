@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 ## How to get one
 The easiest way is from an [IItemStack](/Vanilla/Items/IItemStack/), but you can also get a list of all registered IItemDefinitions in the game and do something with that.
 
-```
+```zenscript
 //IItemStack Zengetter "definition" -> single IItemDefinition
 val itemDefinition = <minecraft:stone>.definition;
 

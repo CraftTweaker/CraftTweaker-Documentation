@@ -5,7 +5,7 @@
 
 ## Addition
 
-```
+```zenscript
 //mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
 mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
 mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
@@ -14,7 +14,7 @@ mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <
 
 ## Removal
 
-```
+```zenscript
 //mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
 mods.bloodmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
 ```

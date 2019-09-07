@@ -25,7 +25,7 @@ It might be required for you to import the package if you encounter any issues (
 ### Is an item a curative item
 Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
 Returns a bool
-```
+```zenscript
 isCurativeItem(IItemStack item);
 ```
 
@@ -33,6 +33,6 @@ isCurativeItem(IItemStack item);
 
 Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
 Returns void (nothing).
-```
+```zenscript
 performEffect(IEntity Entity);
 ```

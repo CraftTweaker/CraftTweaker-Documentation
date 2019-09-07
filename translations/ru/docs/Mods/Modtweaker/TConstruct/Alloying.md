@@ -8,14 +8,14 @@ You can call the Alloy package using `mods.tconstruct.Alloy`
 
 ## Add Alloy Recipes
 
-```JAVA
+```zenscript
 //mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
 ## Removing Alloy Recipes
 
-```JAVA
+```zenscript
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
 

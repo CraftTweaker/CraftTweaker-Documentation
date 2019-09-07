@@ -8,7 +8,7 @@ This is a so-called IRecipeFunction.
 
 ## Example for repairing a pickaxe
 
-```
+```zenscript
 val diaPick = <minecraft:diamond_pickaxe>;
 
 //we start normal, by writing the output
@@ -50,7 +50,7 @@ But CraftTweaker goes beyond simply calculating your outputs using functions.
 With an IRecipeAction Function, you can also determine what should happen when a user crafts the item.  
 An IRecipeAction object comes after an IRecipeFunction!
 
-```
+```zenscript
 val stone = <minecraft:stone>;
 
 recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],

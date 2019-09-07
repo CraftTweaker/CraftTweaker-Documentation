@@ -5,7 +5,7 @@ The HighOven package allows to add/remove fuels, heat recipes and mix recipes to
 ## Importing the package
 
 Import the package using
-```
+```zenscript
 import mods.tcomplement.highoven.HighOven;
 ```
 
@@ -14,13 +14,13 @@ import mods.tcomplement.highoven.HighOven;
 You can add and remove fuels accepted by the high oven.
 
 ### Removing fuels
-```
+```zenscript
 // HighOven.removeFuel(IIngredient fuel);
 HighOven.removeFuel(<minecraft:coal:1>);
 ```
 
 ### Adding fuels
-```
+```zenscript
 // HighOven.addFuel(IIngredient fuel, int time, int rate);
 HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 ```
@@ -33,14 +33,14 @@ HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 You can add and remove melting overrides for the High Oven. Melting overrides, well, override the default melting behavior in the High Oven. Items normally behave the same as in the smeltery, overrides can redefine output fluid and melting temperature (only for the High Oven).
 
 ### Removing overrides
-```
+```zenscript
 // HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
 HighOven.removeMeltingOverride(<liquid:iron>);
 ```
 
 ### Adding overrides
 This is more interesting. Overrides specify a new behavior for items in the High Oven
-```
+```zenscript
 // HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
 HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
 ```
@@ -52,7 +52,7 @@ HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
 Heat recipes transform a fluid into another in the high oven tank, provided the temperature of the high oven is high enough.
 
 ### Removing heat recipes
-```
+```zenscript
 // HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeHeatRecipe(<liquid:steam>);
 ```
@@ -63,7 +63,7 @@ HighOven.removeHeatRecipe(<liquid:steam>);
 *NOTE*: this method does **not** disable heat recipes added by ModTweaker using the next method.
 
 ### Adding heat recipes
-```
+```zenscript
 // HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
 HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
 ```
@@ -80,7 +80,7 @@ Since those recipes are complicated, adding or tweaking existing ones uses a spe
 
 ### Removing mix recipes
 This is the easy part for mix recipes
-```
+```zenscript
 // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
 HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
 ```
@@ -88,7 +88,7 @@ The arguments are the same as `removeHeatRecipe()` and the matching works the sa
 
 ### Adding mix recipes
 To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
-```
+```zenscript
 import mods.tcomplements.highoven.MixRecipeBuilder;
 
 // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
@@ -100,7 +100,7 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 Once you have a `MixRecipeBuilder`, you should add oxidizers, reducers and purifiers to it, and then register it.
 
-```
+```zenscript
 builder.addOxidizer(<minecraft:redstone>, 95);
 builder.addReducer(<minecraft:glowstone>, 5);
 builder.addPurifier(<ore:dustCoal>, 50);
@@ -116,7 +116,7 @@ NOTE*: Once you have used a `MixRecipeBuilder`, you can keep modifying it and re
 
 ### Tweaking mix recipe
 To change existing mix recipes (**including** those added by ModTweaker), you can use a `MixRecipeManager`:
-```
+```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
 
 // HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
@@ -127,7 +127,7 @@ As usual, not specifying the input (or providing `null`) result in a wildcard be
 
 Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. Removals have priority on additions.
 
-```
+```zenscript
 manager.removeOxidizer(<minecraft:redstone>);
 manager.addPurifier(<minecraft:dirt>, 25);
 ```

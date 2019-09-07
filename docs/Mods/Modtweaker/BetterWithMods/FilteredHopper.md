@@ -7,7 +7,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
 
    * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
 
-    ```
+    ```zenscript
         mods.betterwithmods.FilteredHopper.addFilter(String name, IIngredient item)
     
         mods.betterwithmods.FilteredHopper.addFilter("modtweaker:myFilter", <minecraft:planks>);   
@@ -15,7 +15,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
     
    * Add an allowed item to a Filter by its name.
    
-   ```
+   ```zenscript
         mods.betterwithmods.FilteredHopper.addFilteredItem(String name, IIngredient item)
    
         mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<minecraft:dirt>);
@@ -25,7 +25,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
     * Filtered Recipes - The hopper can process the item attempting to input into specific item outputs, it can either
         * Put into the hopper's inventory (as long as the current filter allows it).
         * Eject the items into the world above the hopper        
-        ```
+        ```zenscript
         mods.betterwithmods.FilteredHopper.addFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , IIngredient[] outsideOutput);
               
         //Will convert a grass block into a flint side the inventory and 9 diamonds outside the inventory
@@ -40,7 +40,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
     
         Additionally, you can add special recipes to the Filtered Hopper that will create Souls Urns from Urns.
         
-        ```
+        ```zenscript
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondary)
            
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
@@ -49,14 +49,14 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
 * Removal
     
     * Remove the allowed items from the specified filter
-    ```
+    ```zenscript
         mods.betterwithmods.FilteredHopper.clearFilter(String name);
         
         mods.betterwithmods.FilteredHopper.clearFilter("betterwithmods:wicker");
     ```
     
     * Remove a Filtered Recipe by input or output
-    ```
+    ```zenscript
         mods.betterwithmods.FilteredHopper.removeRecipe(IIngredient[] insideOutput, IIngredient[] outsideOutput);
     
         mods.betterwithmods.FilteredHopper.removeRecipe([<minecraft:sand>,<minecraft:sand:1>],[<minecraft:flint>]);

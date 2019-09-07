@@ -14,7 +14,7 @@ You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 |Required  |Energy              |Integer                                            |
 
 ### Example
-```JAVA
+```zenscript
 //Example
 mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 
@@ -29,7 +29,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
 ### Example
-```JAVA
+```zenscript
 //Example
 mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
 

@@ -24,7 +24,7 @@ CraftTweaker 支持 JustEnoughItems (JEI)。 你可以在 JEI 中添加或隐藏
 你可以用它来隐藏全部 JEI 分类（例如：建造合成表，熔炉合成表，某个机器的合成表等等）。  
 分类以字符串类型传入，你可以在游戏中使用 `/ct jeiCategories` 命令获取所有已注册的分类。
 
-```Java
+```zenscript
 //hideCategory(category)
 mods.jei.JEI.hideCategory("minecraft.smelting");
 ```
@@ -33,7 +33,7 @@ mods.jei.JEI.hideCategory("minecraft.smelting");
 
 你也可以添加一个 [IItemStack](/Vanilla/Items/IItemStack/) 到 JEI 来添加一个未添加的物品，或者添加一个带有 NBT-Tag 的物品到 JEI
 
-```JAVA
+```zenscript
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
@@ -46,7 +46,7 @@ JEI 描述指查看材料的配方/用途的额外页面， JEI 需包含关于�
 如果你的字符串太长, 无法写入一行 (或一页), 它将自动创建行/页面中断。  
 每个字符串参数将至少有一行, 并且如果太长将在窗口的末尾换行。
 
-```Java
+```zenscript
 //addDescription(IItemStack item, string... desc);
 mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 

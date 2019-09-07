@@ -24,7 +24,7 @@ You can retrieve the following information from a Material:
 You can either register parts using the [part object](/Mods/ContentTweaker/Materials/Parts/Part/) or it's name string.  
 You can also either register a single part or multiple at once.  
 So you got 4 options in total:
-```JAVA
+```zenscript
 registerParts(String[] partNames);
 registerParts(IPart[] parts);
 

@@ -164,7 +164,7 @@ whileループは、与えられた条件が`true`と評価される限り操作
 配列には単一のオブジェクトを追加することができます。2つの配列を追加することはできません。  
 配列への追加には、演算子`+`を用います。
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;

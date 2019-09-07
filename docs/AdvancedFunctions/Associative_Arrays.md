@@ -5,7 +5,7 @@ An Associative Array (sometimes also called a Map or a Dictionary) is like a nor
 ## Declaring an Associative Array
 
 You declare Associative Arrays using curly brackets `{}` and colons `:`  
-```JAVA
+```zenscript
 val myAssocArray = {
 	dirt : <minecraft:dirt>,
 	gold : <minecraft:gold_ingot>
@@ -34,7 +34,7 @@ Okay, so what do I need to think of when using these?
 You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!  
-```JAVA
+```zenscript
 
 val dirt = <minecraft:dirt>;
 val assocArray = {
@@ -51,7 +51,7 @@ print(assocArray[dirt]);
 
 There is one special case, that is when you use strings as indeces:  
 In this case you can also use the memberGetter like this:  
-```JAVA
+```zenscript
 val assocWithStrings = {
 	//you can use "" if you want
 	"one" : "1",
@@ -73,7 +73,7 @@ As in Arrays, you can manipulate items inside an Associative Array using `array[
 There is one major differenc though:  
 While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
 
-```JAVA
+```zenscript
 val changingArray = {
 	<minecraft:dirt> : "this is me",
 	<minecraft:gold_ingot> : "and I hate it"
@@ -94,7 +94,7 @@ The KeySet is an array containing all the map's keys.
 The valueSet is an array containing all the map's values.  
 The entrySet is an array containing all the map's entries (see below).
 
-```JAVA
+```zenscript
 myAssocArray.keySet   //keySet
 myAssocArray.keys     //keySet
 myAssocArray.values   //valueSet
@@ -118,7 +118,7 @@ Let's add an Associative Array that stores crafting recipes to be iterated over:
 - We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -148,7 +148,7 @@ Currently the only way to get such an object is via a map's entrySet method.
 
 You can use the getters to get `key` and `value`
 
-```kotlin
+```zenscript
 //Replace map with a reference to an existing map/associative array
 val myEntry = map.entrySet[0];
 

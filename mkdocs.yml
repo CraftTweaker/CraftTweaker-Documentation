@@ -803,6 +803,9 @@ markdown_extensions:
 theme_dir: 'mkdocs_windmill'
 extra_css:
     - css/styles.css
+extra_javascript:
+    - js/highlightjs-zenscript.js
+    - js/init-zs-highlight.js
     
 extra:
   logo: 'assets/logo.png'

@@ -29,7 +29,7 @@ You can use these methos on an IOreDictEntry Object:
 
 ### Add/Remove items
 
-```
+```zenscript
 val oreDictEnt = <ore:ingotIron>;
 
 //oreDictEnt.add(IItemStack... item_items);
@@ -55,7 +55,7 @@ oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
 
 ### Check if an IOreDictEntry contains an item
 You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
-```
+```zenscript
 val oreDictEnt = <ore:ingotIron>;
 
 //While using in is possible
@@ -72,7 +72,7 @@ if(oreDictEnt has <minecraft:iron_ingot>){
 ### Mirror an IOreDictEntry
 Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
 
-```
+```zenscript
 //make iron and copper equivalent
 val iron = <ore:ingotIron>;
 val copper = <ore:ingotCopper>;
@@ -93,7 +93,7 @@ IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This 
 It also means that you can put IOreDictEntries into IIngredient Arrays (such as the ones in crafting recipe methods).
 
 ### Iterating through an oreDictEntry's items
-```
+```zenscript
 val iron = <ore:ingotIron>;
 
 for item in iron.items{

@@ -9,13 +9,13 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenMethods/Getters
 ### To String
-```
+```zenscript
 rec.commandString;
 rec.toCommandString();
 ```
 
 ### Other getters
-```
+```zenscript
 rec.input;
 rec.output;
 rec.xp;

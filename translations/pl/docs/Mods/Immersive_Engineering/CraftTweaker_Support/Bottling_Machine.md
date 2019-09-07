@@ -14,7 +14,7 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
@@ -28,7 +28,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);

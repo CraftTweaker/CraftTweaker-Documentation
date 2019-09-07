@@ -16,7 +16,7 @@ In both cases each Object[] needs to contain
 
 If an Object[] is not of this length or not in this order, it will be ignored.
 
-```JAVA
+```zenscript
 //createPotion(Object[]...);
 //createPotion([effect,strength,duration],[effect2, strength2,duration2],...);
 //createPotion([[effect,strength,duration],[effect2, strength2,duration2],...]);
@@ -28,7 +28,7 @@ val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 These two functions both return an [IItemStack](/Vanilla/Items/IItemStack/)[] containing all matching items.  
 The first checks against the items' registry names, the 2nd uses the unlocalized names.
 
-```Java
+```zenscript
 //getItemsByRegexRegistryName(String Regex)
 itemUtils.getItemsByRegexRegistryName(".*sword.*"); // all things that have sword in the name
 itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/foundation/dynamics items
@@ -55,7 +55,7 @@ The createSpawnEgg function allows you to create custom mod spawn eggs.
 The customNBT is OPTIONAL and can override the entity tag.  
 Returns the spawn eff as [IItemStack](/Vanilla/Items/IItemStack/).
 
-```JAVA
+```zenscript
 //createSpawnEgg(entity, @optional customNBT)
 //NBT overrides entity (this creates a creeper egg!)
 val egg = itemUtils.createSpawnEgg(<entity:minecraft:sheep>, {EntityTag:{id:"minecraft:creeper",NoAI:1 as byte,PersistenceRequired:1 as byte}});

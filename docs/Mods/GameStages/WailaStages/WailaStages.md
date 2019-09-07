@@ -4,13 +4,13 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 ## Methods
 
 Hides the entire hud, unless the player has the stage.
-```java
+```zenscript
 // mods.WailaStages.addWailaStage(String stage);
 mods.WailaStages.addWailaStage("one");
 ```
 
 Hides a specific line in the waila hud, unless the player has the stage.
-```java
+```zenscript
 // mods.WailaProgression.addRequirement(String stage, String prefix); 
 mods.WailaProgression.addRequirement("one", "Power:"); 
 ```

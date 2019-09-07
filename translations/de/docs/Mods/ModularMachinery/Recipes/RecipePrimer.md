@@ -20,7 +20,7 @@ setChance(float chance);
 
 ### Adding Energy and fuel requirements
 
-```java
+```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 

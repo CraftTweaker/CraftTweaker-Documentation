@@ -10,7 +10,7 @@ You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurecha
 
 This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
 
-```
+```zenscript
 mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
 // Example
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
@@ -18,7 +18,7 @@ mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_com
 
 This function removes *all* Pressure Chamber recipes:
 
-```
+```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
@@ -26,7 +26,7 @@ mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 
 This function is used to add new recipes to the Pressure Chamber:
 
-```
+```zenscript
 mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
 
 // Example

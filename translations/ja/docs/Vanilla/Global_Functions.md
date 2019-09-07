@@ -7,7 +7,7 @@
 
 Crafttweakerのログに文字列を出力します。
 
-```java
+```zenscript
 //print(String message);
 print("Hello World!");
 ```
@@ -16,7 +16,7 @@ print("Hello World!");
 
 ## totalActions
 
-```java
+```zenscript
 //totalActions();
 totalActions();
 ```
@@ -28,7 +28,7 @@ totalActions();
 デバッグモードを有効にします。  
 但し、[デバッグプリプロセッサ](/AdvancedFunctions/Preprocessors/DebugPreprocessor/)の使用を推奨します。
 
-```java
+```zenscript
 //enableDebug();
 enableDebug();
 ```
@@ -40,7 +40,7 @@ enableDebug();
 渡されたオブジェクトがnullかをチェックします。  
 プリミティブ型に対しては動作しません。
 
-```java
+```zenscript
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
@@ -49,7 +49,7 @@ isNull(<minecraft:dirt>);
 
 ## max
 
-```java
+```zenscript
 //max(int number1, int number2);
 max(10, 11);
 ```
@@ -58,7 +58,7 @@ max(10, 11);
 
 ## min
 
-```java
+```zenscript
 //min(int number1, int number2);
 min(10, 11);
 ```
@@ -67,7 +67,7 @@ min(10, 11);
 
 ## pow
 
-```java
+```zenscript
 //pow(double number1, double number2);
 pow(2.0, 4.0);
 ```

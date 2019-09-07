@@ -13,7 +13,7 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 |----------|---------------------|-----------|
 |Required  |Name                 |string     |
 
-```JAVA
+```zenscript
 //Example:
 Excavator.getMineral(String Name);
 
@@ -29,7 +29,7 @@ var Iron = Excavator.getMineral("Iron_Ore");
 |Required  |Ore                  |string     |
 |Required  |Chance               |string     |
 
-```
+```zenscript
 mineralMixObject.addOre("oreIron", 0.5);
 ```
 You will need to use the oredict names.
@@ -40,14 +40,14 @@ You will need to use the oredict names.
 |----------|---------------------|-----------|
 |Required  |Ore                  |string     |
 
-```
+```zenscript
 mineralMixObject.removeOre("oreIron");
 ```
 
 ##Fail Chance Getter/Setter
 
 ### Example
-```JAVA
+```zenscript
 //Getter
 mineralMixObject.failchance;
 
@@ -58,7 +58,7 @@ mineralMixObject.failchance = 0.5;
 
 
 ## Full Example
-```JAVA
+```zenscript
 //Example:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;

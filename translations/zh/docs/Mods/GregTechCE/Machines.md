@@ -64,7 +64,7 @@
 
 **防火砖高炉** *使用了和普通的合成表不同的语法。* 例子：
 
-```java
+```zenscript
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
 //防火砖高炉
@@ -88,7 +88,7 @@ for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
 
 调用构建器方法：
 
-```java
+```zenscript
 recipeMap.recipeBuilder()
 ```
 
@@ -96,7 +96,7 @@ recipeMap.recipeBuilder()
 
 一个电力高炉的例子：
 
-```java
+```zenscript
 //电力高炉
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 blast_furnace.recipeBuilder()
@@ -126,14 +126,14 @@ blast_furnace.recipeBuilder()
 
 你可以像使用 “temperature” 一样使用它们
 
-```java
+```zenscript
 .property("circuit", X)//，X 是集成电路的配置
 .property("explosives", Y)//，Y 是使合成表工作的炸药数量
 ```
 
 更多有用的方法：
 
-```java
+```zenscript
 .inputs()
 .fluidInputs()
 .outputs()
@@ -152,7 +152,7 @@ blast_furnace.recipeBuilder()
 
 例子：
 
-```java
+```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
 // findRecipe(long 电压, IItemHandlerModifiable 输入, IMultipleTankHandler/List&lt;FluidStack&gt; 流体输入)

@@ -24,7 +24,7 @@ IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That 
 Method expects nothing.  
 Returns nothing.
 
-```
+```zenscript
 entCreObj.playLivingSound();
 ```
 
@@ -33,7 +33,7 @@ First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int
 Second method expects nothing.  
 Both methods return nothing.
 
-```
+```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
@@ -42,6 +42,6 @@ entAnObj.detachHome();
 Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a bool.
 
-```
+```zenscript
 entAnObj.isPositionWithinHomeDistance
 ```

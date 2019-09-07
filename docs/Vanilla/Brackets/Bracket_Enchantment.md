@@ -4,7 +4,7 @@ The Enchantment Bracket Handler gives you access to the Enchantment definitions 
 
 They are referenced in the Enchantment handler this way:
 
-```
+```zenscript
 <enchantment:modid:name>
 
 <enchantment:minecraft:protection>

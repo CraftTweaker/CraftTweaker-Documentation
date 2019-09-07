@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 ## Getting an IPotion object
 You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion/)
 
-```Java
+```zenscript
 <potion:minecraft:strength>;
 ```
 
@@ -33,7 +33,7 @@ Example `<potion:minecraft:strength>.name`
 ### Make PotionEffect
 An [IPotionEffect](/Vanilla/Potions/IPotionEffect/) is a Potion that has a duration and amplifier. You can use these two methods to get one from an IPotion:  
 As one might guess, both return an [IPotionEffect](/Vanilla/Potions/IPotionEffect/) object.
-```
+```zenscript
 pot.makePotionEffect(int duration, int amplifier);
 pot.makePotionEffect(int duration, int amplifier, boolean ambientEffect, boolean particlesShown);
 ```

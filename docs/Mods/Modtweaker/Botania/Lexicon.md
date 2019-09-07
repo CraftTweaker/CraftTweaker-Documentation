@@ -8,7 +8,7 @@ You can call the Lexicon package using `mods.botania.Lexicon`
 
 ## Pages
 ### Addition
-```
+```zenscript
 mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
 mods.botania.Lexicon.addCraftingPage(String name, String entry, int page_number, String... recipeNames);
 mods.botania.Lexicon.addElvenPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
@@ -24,42 +24,42 @@ mods.botania.Lexicon.addTextPage(String name, String entry, int page_number);
 ```
 
 ### Removal
-```
+```zenscript
 mods.botania.Lexicon.removePage(String entry, int page_number);
 ```
 
 
 ## Entries
 ### Addition
-```
+```zenscript
 mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 ```
 
 ### Removal
-```
+```zenscript
 mods.botania.Lexicon.removeEntry(String entry);
 ```
 
 
 ## Categories
 ### Addition
-```
+```zenscript
 mods.botania.Lexicon.addCategory(String name);
 ```
 
 ### Removal
-``` 
+``` zenscript
 mods.botania.Lexicon.removeCategory(String name);
 ```
 
 ### Set
-```
+```zenscript
 mods.botania.Lexicon.setCategoryIcon(String name, String icon);
 ```
 
 
 ## Recipe Mapping
-```
+```zenscript
 mods.botania.Lexicon.addRecipeMapping(IItemStack stack, String Entry, int page);
 mods.botania.Lexicon.removeRecipeMapping(IItemStack stack);
 ```

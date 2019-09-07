@@ -8,7 +8,7 @@
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ## Add Cutting Recipe
-```
+```zenscript
 mods.ic2.MetalFormer.addCuttingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addCuttingRecipe(<minecraft:diamond>, <minecraft:dirt> * 64);
@@ -20,7 +20,7 @@ To remove an existed recipe, simply remove the corresponding line in  `config/ic
 
 
 ## Add Extruding Recipe
-```
+```zenscript
 mods.ic2.MetalFormer.addExtrudingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
@@ -30,7 +30,7 @@ mods.ic2.MetalFormer.addExtrudingRecipe(<minecraft:diamond_block>, <minecraft:di
 To remove an existed recipe, simply remove the corresponding line in  `config/ic2/metal_former_extruding.ini`.
 
 ## Add Rolling Recipe
-```
+```zenscript
 mods.ic2.MetalFormer.addRollingRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.MetalFormer.addRollingRecipe(<minecraft:diamond>, <minecraft:dirt> * 32);

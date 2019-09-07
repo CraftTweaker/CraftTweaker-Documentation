@@ -26,14 +26,14 @@ It might be required for you to import the package if you encounter any issues, 
 ### Check if two IMaterials match
 Uses an IMaterial.  
 Returns a bool.
-```
+```zenscript
 materialObj.matches(IMaterial other);
 ```
 
 ## Getting Vanilla Minecraft Materials
 You can use these methods to get the vanilla minecraft materials
 
-```
+```zenscript
 crafttweaker.blocks.IMaterial.air();
 crafttweaker.blocks.IMaterial.anvil();
 crafttweaker.blocks.IMaterial.barrier();

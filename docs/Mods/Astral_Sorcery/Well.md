@@ -12,7 +12,7 @@ If there are multiple recipes that return the provided output, you need to call 
 
 You can set the output to `null` to only search via the input stack 
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Lightwell.removeLiquefaction(IItemStack input, ILiquidStack output);
 mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent:0>, null);
 ```

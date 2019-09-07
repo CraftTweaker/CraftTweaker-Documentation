@@ -17,7 +17,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenMethods
 
-```
+```zenscript
 void updateSpawner();
 
 void setDelayToMin();

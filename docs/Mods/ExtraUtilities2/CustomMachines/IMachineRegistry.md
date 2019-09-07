@@ -6,7 +6,7 @@ You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/
 ## Importing the package
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using  
-```
+```zenscript
 import extrautilities2.Tweaker.IMachineRegistry;
 ```
 
@@ -22,7 +22,7 @@ There are two types of machines:
 
 Machines consume energy, generators emit energy, otherwise they behave almost identically.
 
-```
+```zenscript
 extrautilities2.Tweaker.IMachineRegistry.createNewMachine(
 	name, 
 	energyBufferSize, 
@@ -71,7 +71,7 @@ Keep this in mind, as you need that object to create recipes later on!
 
 ### Get machine by name
 You can get already generated machines using the Registry as well:
-```
+```zenscript
 extrautilities2.Tweaker.IMachineRegistry.getMachine(String name);
 ```
 
@@ -79,7 +79,7 @@ This method will return the machine with the given name as [IMachine](/Mods/Extr
 
 ### Get all registered machines
 This will return all registered machines as list of [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine).
-```
+```zenscript
 extrautilities2.Tweaker.IMachineRegistry.getRegisterdMachineNames();
 ```
 

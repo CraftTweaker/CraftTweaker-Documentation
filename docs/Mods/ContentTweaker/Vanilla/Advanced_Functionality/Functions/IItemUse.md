@@ -20,7 +20,7 @@ The IItemUse function is a function with the following parameters (In this order
 The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) object.
 
 ## Example
-```JAVA
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

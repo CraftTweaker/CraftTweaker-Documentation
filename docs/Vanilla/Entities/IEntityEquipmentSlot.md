@@ -16,13 +16,13 @@ It might be required for you to import the package if you encounter any issues, 
 ### Compare
 You can check if two IEntityEquipmentSlot objects are equal:  
 Returns a bool.
-```
+```zenscript
 slotOne == slotTwo;
 ```
 
 ## Enumerations
 The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
-```
+```zenscript
 crafttweaker.entity.IEntityEquipmentSlot.mainHand();
 crafttweaker.entity.IEntityEquipmentSlot.offhand();
 crafttweaker.entity.IEntityEquipmentSlot.feet();

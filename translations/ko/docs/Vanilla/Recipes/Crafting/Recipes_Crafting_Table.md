@@ -22,7 +22,7 @@ There are several ways of removing recipes.
 
 ### remove
 
-```Java
+```zenscript
 recipes.remove(output, NBTMatch);
 ```
 
@@ -34,7 +34,7 @@ If `NBTMatch` is true, it will only remove recipes that result in items with the
 
 ### removeShaped
 
-```Java
+```zenscript
 recipes.removeShaped(output, inputs);
 ```
 
@@ -48,7 +48,7 @@ Furthermore, `inputs` is optional. If omitted, the function will do the same as 
 
 ### removeShapeless
 
-```Java
+```zenscript
 recipes.removeShapeless(output, inputs, wildcard);
 ```
 
@@ -66,7 +66,7 @@ Furthermore, `inputs` is optional. If omitted, the function will do the same as 
 Removes all crafting recipes in the game.  
 A bit overkill, don't you think?
 
-```java
+```zenscript
 recipes.removeAll();
 ```
 
@@ -74,7 +74,7 @@ recipes.removeAll();
 
 As 1.12 introduces naming recipes, you can also remove recipes once you know their name. You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
 
-```java
+```zenscript
 recipes.removeByRegex("name[1-9]");
 recipes.removeByRecipeName("modid:recipename");
 ```
@@ -84,7 +84,7 @@ recipes.removeByRecipeName("modid:recipename");
 You can also remove all recipes that were added by the mod specified.  
 You need to provide the mod's modid as string.
 
-```java
+```zenscript
 recipes.removeByMod("modularmachinery");
 ```
 
@@ -100,7 +100,7 @@ All other functionality stay the same. Remember that `name` needs to be unique!
 
 ### addShaped
 
-```Java
+```zenscript
 //pre-1.12
 recipes.addShaped(output,inputs,function,action);
 
@@ -121,7 +121,7 @@ If an `action` function is added as forth parameter, you can also determine, wha
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
 If that looks to confusing, try splitting the arrays up into one array per line
 
-```Java
+```zenscript
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
 
@@ -133,7 +133,7 @@ recipes.addShaped("CTLeggings", leggings,
 
 ### addShapedMirrored
 
-```Java
+```zenscript
 //Normal pre 1.12 syntax
 recipes.addShapedMirrored(output,inputs,function,action);
 
@@ -145,7 +145,7 @@ Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
 
 ### addShapeless
 
-```Java
+```zenscript
 //Normal pre 1.12 syntax
 recipes.addShapeless(output,inputs,function,action)
 
@@ -164,7 +164,7 @@ If an `action` function is added as forth parameter, you can also determine, wha
 
 ### addHidden
 
-```java
+```zenscript
 addHiddenShapeless(String name, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 addHiddenShaped(String name, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action, @Optional boolean mirrored);
 ```

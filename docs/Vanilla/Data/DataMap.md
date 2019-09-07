@@ -11,7 +11,7 @@ A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last yo
 You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
 There is:
 
-```JAVA
+```zenscript
 import crafttweaker.data.IData;
 
 val myFirstMap = {key1: "value1",
@@ -25,7 +25,7 @@ That means your keys should not contain characters that normal CT strings can't 
 It also means that while the key is a string, the value is another [IData](/Vanilla/Data/IData/) object.  
 You can even nest maps inside maps (that's what a lot of NBT-Data do):  
 
-```JAVA
+```zenscript
 val nestedMap = { key1: 
 					{
 						key1: "hello"
@@ -39,7 +39,7 @@ val nestedMap = { key1:
 Unfortunately, Maps created as above are immutable, so you cannot change their members.  
 To retrieve a Map's member you need to know its key name. Then you can do this:
 
-```JAVA
+```zenscript
 val mySecondMap = {key1: "value1",
 				   key2: "value2",
 				   key3: 3} as IData;
@@ -58,7 +58,7 @@ print(k2.asString());
 You can add or substract maps from each other to get a new map with changed values.  
 This even works for nested maps!
 
-```
+```zenscript
 val map1 as IData = {
 	key1 : "hello"
 	key3 : "test"

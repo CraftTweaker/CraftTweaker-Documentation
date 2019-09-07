@@ -9,7 +9,7 @@ Before we start, there are some terms you might want to get used to:
 ## ZenGetter
 A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
 We use the ZenGetter like this:
-```
+```zenscript
 //object.zenGetter;
 <minecraft:iron_ingot>.displayName;
 ```
@@ -22,7 +22,7 @@ A ZenSetter works almost the same way as a ZenGetter does, the only difference i
 Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.  
 
 We use the ZenSetter like this:
-```
+```zenscript
 //object.zenSetter = newValue;
 <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
 ```
@@ -36,7 +36,7 @@ If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItem
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
 
-```
+```zenscript
 //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
 //object.zenSetter += value;
 //object.zenSetter = object.zenGetter + value;

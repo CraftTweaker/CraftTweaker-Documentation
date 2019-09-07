@@ -31,7 +31,7 @@ This function removes *all* Plastic Mixer recipes:
 
 The following functions can be used to add recipes to the TPP:
 
-```java
+```zenscript
 // Add a two-way recipe (temperature in Kelvin)
 mods.pneumaticcraft.plasticmixer.addRecipe(ILiquidStack liquid, IItemStack stack, int temperature);
 

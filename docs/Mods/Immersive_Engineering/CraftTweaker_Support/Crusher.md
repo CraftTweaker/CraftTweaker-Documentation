@@ -15,7 +15,7 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 |Optional  |Secondary Chance      |double																					|
 
 ### Example
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
@@ -33,7 +33,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 |Output            |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
@@ -47,7 +47,7 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 |Input             |[IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Example
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 

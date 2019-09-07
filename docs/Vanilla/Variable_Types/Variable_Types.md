@@ -10,7 +10,7 @@ This  creates the variable and casts it to the value it thinks is most fitting f
 More complex scripts might require you to cast a variable as a specific type.
 For example, this would fail:
 
-```
+```zenscript
 var test;
 
 test = <minecraft:dirt>;
@@ -25,7 +25,7 @@ Back to the topic:
 How can we fix this issue? By casting the variable test to ```IItemStack```, which is the type used for items.
 Unfortunately, some types need to be imported first, and this is one of those.
 
-```
+```zenscript
 import crafttweaker.item.IItemStack;
 var test as IItemStack;
 

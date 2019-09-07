@@ -28,7 +28,7 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 You can either add to the droplist or completely substitute it with a new one:
 
-```kotlin
+```zenscript
 event.items = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);

@@ -17,7 +17,7 @@ The IItemFoodEaten is a function with the following parameters (In this order):
 
 ## 例子
 
-```JAVA
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

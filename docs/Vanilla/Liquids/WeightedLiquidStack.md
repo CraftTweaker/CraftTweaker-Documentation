@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 ## Calling a weightedLiquidStack
 You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
 
-```
+```zenscript
 val liquidStack = <liquid:lava>;
 
 //both create a weightedLiquidstack object with a chance of 20%

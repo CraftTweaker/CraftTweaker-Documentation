@@ -12,7 +12,7 @@ Alternatively you can use [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition
 
 ## Add Fluid Cool Down
 
-```
+```zenscript
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidCoolDown(ILiquidDefinition output, ILiquidDefinition input, int heat);
 
@@ -22,7 +22,7 @@ mods.ic2.HeatExchanger.addFluidCoolDown(<liquid:lava>.definition, <liquid:water>
 
 ## Add Fluid Heat Up
 
-```
+```zenscript
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidStack output, ILiquidStack input, int heat);
 mods.ic2.HeatExchanger.addFluidHeatUp(ILiquidDefinition output, ILiquidDefinition input, int heat);
 

@@ -5,7 +5,7 @@ An IMachine is the actual machine object, you can get it from the [IMachineRegis
 ## Importing the package
 It might be required for you to [import](/AdvancedFunctions/Import) the class.  
 You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
-```
+```zenscript
 import extrautilities2.Tweaker.IMachine;
 ```
 
@@ -18,7 +18,7 @@ These strings will be the names of the input/output slots given, which is why yo
 
 ### Using a probability map
 
-```
+```zenscript
 myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 ```
 
@@ -39,7 +39,7 @@ This method uses the following parameters:
 You can also only use the outputs map, then ExtUtils2 will check for any [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects and use their chances.  
 Remember, that adding anything other than those two or [IIngredient](/Vanilla/Variable_Types/IIngredient) as mapped value, will have no effect.
 
-```
+```zenscript
 myMachine.addRecipe(inputs, outputs, energy, time);
 ```
 
@@ -61,7 +61,7 @@ Again, you use [maps](/AdvancedFunctions/Associative_Arrays) with strings as ind
 There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredient) as values, and one that accepts a map with [IItemStack](/Vanilla/Items/IItemStack) and a map with [ILiquidStack](/Vanilla/Liquids/ILiquidStack) values.
 
 ### Using IIngredient
-```
+```zenscript
 myMachine.removeRecipe(inputs);
 ```
 
@@ -72,7 +72,7 @@ myMachine.removeRecipe(inputs);
 
 ### Using separate maps for Items and Liquids
 
-```
+```zenscript
 myMachine.removeRecipe(items, liquids);
 ```
 
@@ -98,7 +98,7 @@ So far, all our machines will be named `machine.crafttweaker:your_machine_name` 
 If you want the machine name localized, use either CrT's [IGame](/Vanilla/Game/IGame) capabilities or a custom lang file.
 
 So if your machine name was `time_machine`, you would need to either call this in a script:
-```
+```zenscript
 game.setLocalization("machine.crafttweaker:time_machine", "Space Time distorter (Time machine)");
 ```
 
