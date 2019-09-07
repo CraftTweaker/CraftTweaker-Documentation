@@ -3,39 +3,41 @@
 A Machine slot is a slot that either accepts Items or liquids.  
 You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
-## Importing the package
+## 导入相关包
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
 
-    import extrautilities2.Tweaker.IMachineSlot;
-    
+```zenscript
+import extrautilities2.Tweaker.IMachineSlot;
+```
 
 ## Creating a new IMachineSlot
 
 The IMachineSlot package offers methods to create new IMachineSlot objects:
 
-    extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
-    extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
-    extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
-    extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
-    extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
-    
-    
-    newFluidSlot(name);
-    newFluidSlot(name, stackCapacity);
-    newFluidSlot(name, stackCapacity, filterLiquidStack);
-    newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
-    newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
-    
+```zenscript
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
+
+
+newFluidSlot(name);
+newFluidSlot(name, stackCapacity);
+newFluidSlot(name, stackCapacity, filterLiquidStack);
+newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
+newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
+```
 
 All these methods will return the new Slot as IMachineSlot object.
 
 The parameters are:
 
-| 名称                | Type                                          |
+| 名称                | 类型                                            |
 | ----------------- | --------------------------------------------- |
-| name              | string                                        |
+| name（名称）          | string                                        |
 | isOptional        | bool                                          |
 | stackCapacity     | int                                           |
 | color             | int                                           |
@@ -56,7 +58,7 @@ What the parameters do:
 You can get basic information from an IMachineSlot as well.  
 Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Name          | Type   |
+| 名称            | 类型     |
 | ------------- | ------ |
 | name          | string |
 | optional      | bool   |
