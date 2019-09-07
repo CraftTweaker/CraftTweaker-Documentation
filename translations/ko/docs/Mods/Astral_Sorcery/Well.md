@@ -12,7 +12,7 @@ This function removes the first recipe it finds that returns the provided [ILiqu
 
 You can set the output to `null` to only search via the input stack
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Lightwell.removeLiquefaction(IItemStack input, ILiquidStack output);
 mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent:0>, null);
 ```
