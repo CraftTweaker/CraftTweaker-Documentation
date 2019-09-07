@@ -2,20 +2,20 @@
 
 The Diesel Handler package can be used to change IE fuels.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
 
 ## Add Fuel
 
-| Required | Type   | Datentyp                                     |
+| Benötigt | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input  | Integer                                      |
+| Benötigt | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Benötigt | Input  | Integer                                      |
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
 
@@ -30,7 +30,7 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
 
@@ -45,7 +45,7 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
 
@@ -60,7 +60,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
 
