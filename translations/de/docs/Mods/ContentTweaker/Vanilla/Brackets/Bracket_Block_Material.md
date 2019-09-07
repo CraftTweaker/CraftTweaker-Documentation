@@ -42,9 +42,10 @@ The Block Material Bracket Handler gives you access to the Block Materials in th
 
 Block Materials are referenced in the Material Bracket handler this way:
 
-    <blockmaterial:name>
-    
-    <blockmaterial:wood>
-    
+```zenscript
+<blockmaterial:name>
+
+<blockmaterial:wood>
+```
 
 If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.
