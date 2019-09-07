@@ -1,14 +1,14 @@
 # Powered Thingies :: Powered Kiln
 
-### Importing
+### 导入
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 pkt().logKeys()
 pkt().removeRecipe('minecraft:planks') // check <logKeys> output for valid keys
 pkt().clear()
@@ -18,13 +18,13 @@ pkt().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(input: IItemStack, output: IItemStack)
 ```
 
 ##### Example
 
-```kotlin
+```zenscript
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);
 ```
 
