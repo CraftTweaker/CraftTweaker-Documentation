@@ -2,13 +2,13 @@
 
 ### 类
 
-```java
+```zenscript
 import mods.roots.Pacifist;
 ```
 
 #### 方法
 
-```java
+```zenscript
 static void addEntity(
   IEntityDefinition entity // 需要改为被动生物的怪物
 );
@@ -16,7 +16,7 @@ static void addEntity(
 
 * * *
 
-```java
+```zenscript
 static void removeEntity(
   IEntityDefinition entity // 需要移出出被动生物列表的生物列表。
 );
@@ -26,7 +26,7 @@ static void removeEntity(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.Pacifist;
 
 // 将末影人加入被动生物列表。
