@@ -14,19 +14,22 @@ You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtw
 
 You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
-    //mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
-    mods.botania.Orechid.addOre(<ore:logWood>, 500);
-    
-    //mods.botania.Orechid.addOre(String oreDict, int weight);
-    mods.botania.Orechid.addOre("logWood", 500);
-    
+```zenscript
+//mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
+mods.botania.Orechid.addOre(<ore:logWood>, 500);
+
+//mods.botania.Orechid.addOre(String oreDict, int weight);
+mods.botania.Orechid.addOre("logWood", 500);
+```
 
 ## Recipe removal
 
 You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
-    //mods.botania.Orechid.removeOre(IOreDictEntry oreDict);
-    mods.botania.Orechid.removeOre(<ore:oreGold>);
-    
-    //mods.botania.Orechid.removeOre(String oreDict);
-    mods.botania.Orechid.removeOre("oreGold");
+```zenscript
+//mods.botania.Orechid.removeOre(IOreDictEntry oreDict);
+mods.botania.Orechid.removeOre(<ore:oreGold>);
+
+//mods.botania.Orechid.removeOre(String oreDict);
+mods.botania.Orechid.removeOre("oreGold");
+```
