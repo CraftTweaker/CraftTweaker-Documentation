@@ -7,16 +7,17 @@
 
 [CraftTweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
-    @ModOnly(value = "mcp")
-    @ZenClass(value = "crafttweaker.tests.modOnly")
-    @ZenRegister
-    public class ModOnlyWiki {
-        @ZenMethod
-        public static void print() {
-            CraftTweakerAPI.logInfo("print issued");
-        }
+```java
+@ModOnly(value = "mcp")
+@ZenClass(value = "crafttweaker.tests.modOnly")
+@ZenRegister
+public class ModOnlyWiki {
+    @ZenMethod
+    public static void print() {
+        CraftTweakerAPI.logInfo("print issued");
     }
-    
+}
+```
 
 ## 什么类可以被注解 || 额外信息
 
