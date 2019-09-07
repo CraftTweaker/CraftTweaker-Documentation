@@ -4,11 +4,12 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Purifi
 
 ## Addition
 
-    mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
-    
-    mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>, <minecraft:wool>);
-    mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
-    
+```zenscript
+mods.mekanism.purification.addRecipe(IIngredient itemInput, @Optional IGasStack gasInput, IItemStack itemOutput);
+
+mods.mekanism.purification.addRecipe(<minecraft:wool:1>, <gas:hydrogenchloride>, <minecraft:wool>);
+mods.mekanism.purification.addRecipe(<minecraft:coal:1>, <minecraft:coal>);
+```
 
 As of Mekanism 9.7.0 inputGas is no longer restricted to only oxygen
 
@@ -18,11 +19,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional IIngredient gasInput);
-    
-    mods.mekanism.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
-    mods.mekanism.purification.removeRecipe(<mekanism:clump:1>);
-    
+```zenscript
+mods.mekanism.purification.removeRecipe(IIngredient itemOutput, @Optional IIngredient itemInput, @Optional IIngredient gasInput);
+
+mods.mekanism.purification.removeRecipe(<mekanism:clump:2>, <mekanism:shard:2>, <gas:oxygen>);
+mods.mekanism.purification.removeRecipe(<mekanism:clump:1>);
+```
 
 Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
@@ -30,4 +32,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 
 As of Mekanism 9.7.0 it is now possible to remove all Purification Chamber recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
-    mods.mekanism.purification.removeAllRecipes();
+```zenscript
+mods.mekanism.purification.removeAllRecipes();
+```
