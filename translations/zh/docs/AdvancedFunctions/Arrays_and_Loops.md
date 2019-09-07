@@ -164,7 +164,7 @@ While 循环会在给定条件为 `true` 时执行循环。
 你只能将单个项添加到数组中，也不能添加两个数组。  
 使用 ` + ` 运算符向数组中添加项：
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;
