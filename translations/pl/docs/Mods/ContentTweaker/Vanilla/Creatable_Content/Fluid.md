@@ -21,15 +21,16 @@ It might be required for you to import the package if you encounter any issues, 
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
-    //property name: density
-    //ZenGetter
-    print(fluid.density);
-    //ZenSetter
-    fluid.density = 500;
-    //ZenMethods
-    fluid.getDensity();
-    fluid.setDensity(1000);
-    
+```zenscript
+//property name: density
+//ZenGetter
+print(fluid.density);
+//ZenSetter
+fluid.density = 500;
+//ZenMethods
+fluid.getDensity();
+fluid.setDensity(1000);
+```
 
 | Property Name   | Type                                                                                     | Required | Default Value                    | Description/Notes                                                                    |
 | --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
@@ -55,20 +56,22 @@ You need to call this method to register the fluid in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the fluid or change any of it's properties!
 
-    fluid.register();
-    
+```zenscript
+fluid.register();
+```
 
 ## Example Script
 
-    #loader contenttweaker
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Fluid;
-    import mods.contenttweaker.Color;
-    
-    var zsFluid = VanillaFactory.createFluid("zs_fluid", Color.fromHex("FF69B4"));
-    zsFluid.fillSound = <soundevent:block.anvil.place>;
-    zsFluid.register();
-    
+```zenscript
+#loader contenttweaker
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Fluid;
+import mods.contenttweaker.Color;
+
+var zsFluid = VanillaFactory.createFluid("zs_fluid", Color.fromHex("FF69B4"));
+zsFluid.fillSound = <soundevent:block.anvil.place>;
+zsFluid.register();
+```
 
 ## Localizing the fluid
 
