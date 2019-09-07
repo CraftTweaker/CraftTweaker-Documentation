@@ -1,17 +1,17 @@
-# On Preprocessors
+# О препроцессорах
 
-## What are preprocessors
+## Что такое препроцессоры
 
-As the name suggests, preprocessors are executed before the script is executed.  
-They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
+Как следует из названия, препроцессоры выполняются перед исполнением скрипта.  
+Они могут выполнять различные действия вроде включения режима отладки или подавления сообщений об ошибках.
 
-## Calling a preprocessor
+## Вызов препроцессора
 
-A preprocessor can be called using the #comment function.  
-Be careful with the comments though as you might start one with a preprocessor keyword.
+Препроцессор можно вызвать, используя #комментарий.  
+Будьте осторожны, так как вы можете начать свой комментарий с ключевого слова препроцессора.
 
 ```JAVA
-#debug is my favorite word I like to add it everywhere as a comment
+#debug &mdash; мое любимое слово, и мне нравится добавлять его везде в качестве комментария
 ```
 
-↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
+↑ Включит режим отладки, так как будет найден препроцессор `#debug`. Если вы действительно хотите удостовериться, что так ни в коем случае не произойдет, используйте `//` для комментариев.
