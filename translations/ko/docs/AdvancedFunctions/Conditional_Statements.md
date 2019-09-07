@@ -6,7 +6,7 @@
 
 if문은 조건문의 첫 파트입니다. 선언된 조건이 true일때 if문 내의 코드가 수행되도록 합니다. 두 값이 같은지 비교하기 위해선 '==' 연산자를 사용하는 것에 유의하세요. (=이 한 개인 '=' 연산자는 값을 선언할 때 쓰는 대입 연산자입니다!)
 
-```Java
+```zenscript
 val test = 0;
 
 if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
@@ -18,7 +18,7 @@ if(test == 0) {    // true여야 수행, 즉 test가 0일 때 수행
 
 Else문은 조건문의 끝에 붙일 수 있습니다. if문의 조건이 false일 경우 수행될 코드가 옵니다.
 
-```Java
+```zenscript
 var test = 0;
 
 if (test == 0) { // true
@@ -46,7 +46,7 @@ if (test == 0) { // false
 
 지원되는 논리 연산자는 AND(`&`), OR(`|`), XOR(`^`)가 있습니다. (비트 연산은 지원되지 않습니다.)
 
-```Java
+```zenscript
 // 정수형(int) 상수 선언
 val a = 0 as int;
 if (a == 0) {
@@ -83,7 +83,7 @@ if (d == "Hello" & e == "World") { print("AND2!");}      //true
 
 매번 if문을 사용하기 번거로운 분들에게 권해드리는 연산자입니다. 특히 조건이나 경우가 단순할 수록 이 `?` 연산자가 왜 구현됐는지 알 수 있습니다. 본질적으로 if/else문과 사용 방식이 비슷하지만, 더 짧게 표현할 수 있습니다. 문법은 &lt;condition&gt; ? if : else</code>와 같은 형태로 사용하실 수 있습니다.
 
-```Java
+```zenscript
 val switchy = false;
 
 // switchy의 상태를 출력합니다.
@@ -126,7 +126,7 @@ switchy ? print("Bye") : print("Hello");
 
 `in` 연산자와 `has` 연산자를 통해 loadedMods 리스트에서 어떤 모드가 로드되었는지 확인할 수 있습니다.
 
-```Java
+```zenscript
 // in도 사용할 수 있습니다.
 if(loadedMods in "mcp"){
     print("Minecraft Coder Pack loaded");
@@ -144,7 +144,7 @@ in/has 연산자로 아이템이 특정 IIngredients(보통 Ore Dictionary)의 �
 이때 혼동하지 말아야 할 것은 `in` 연산자는 '원소 in 컬렉션'이 언뜻 맞아 보이지만 반드시 컬렉션이 연산자의 앞에 위치해야 합니다. 즉 '컬렉션 in 원소'가 적합한 표현입니다.   
 대신에 `has` 연산자를 사용하는 것을 권장합니다. '컬렉션 has 원소'와 같은 형태로 사용하면 훨씬 더 자연스러운 코드를 작성하실 수 있습니다.
 
-```Java
+```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
     print("Iron ingots are in the right oreDic");
 }
@@ -157,7 +157,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 단일 원소가 아닌 IIngredients도 컬렉션에 포함되는지 확인할 수 있습니다. 이 경우엔 오른쪽에 올 IIngredients의 모든 원소가 왼쪽의 컬렉션에 포함된다면 true를 반환합니다. 물론 이 경우에도 컬렉션은 왼쪽, 들어있는지 확인할 원소는 오른쪽에 위치해야 합니다.   
 아래의 예제에서 `allDusts`가 레드스톤이나 발광석 등의 가루 아이템을 모두 포함한다고 가정해봅시다.
 
-```java
+```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
