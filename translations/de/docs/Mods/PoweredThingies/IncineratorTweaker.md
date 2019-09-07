@@ -2,13 +2,13 @@
 
 ### Importieren
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 it().logKeys()
 it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
 it().clear()
@@ -18,7 +18,7 @@ it().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 ```
 
@@ -26,7 +26,7 @@ addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 
 ##### Beispiel
 
-```kotlin
+```zenscript
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
