@@ -20,18 +20,19 @@ It is a good idea to split your script into multiple files
 
 ## Example
 
-    scripts
-        thermalExpansion
-            Compactor.zs
-            Crucible.zs
-        Vanilla
-            Recipes
-                Remove.zs
-                Shaped.zs
-                Shapeless.zs
-            Seeds.zs
-        oreDict.zs
-    
+```zenscript
+scripts
+    thermalExpansion
+        Compactor.zs
+        Crucible.zs
+    Vanilla
+        Recipes
+            Remove.zs
+            Shaped.zs
+            Shapeless.zs
+        Seeds.zs
+    oreDict.zs
+```
 
 ## Advantages
 
