@@ -2,13 +2,13 @@
 
 ### 类
 
-```java
+```zenscript
 import mods.roots.RunicShears;
 ```
 
 #### 方法
 
-```java
+```zenscript
 static void addRecipe(
   string name,                 //创建的配方的名称。
   IItemStack outputDrop,       //通过剪刀剪切获得的产物。
@@ -20,7 +20,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addEntityRecipe(
   string name,              //剪切配方的名字
   IItemStack outputDrop,    //剪切特定生物掉落的物品。
@@ -31,7 +31,7 @@ static void addEntityRecipe(
 
 * * *
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output //你希望移除的配方的产物。
 );
@@ -41,7 +41,7 @@ static void removeRecipe(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.RunicShears;
 
 //创建一个通过剪切红色地狱砖块获得地狱疣的配方，
