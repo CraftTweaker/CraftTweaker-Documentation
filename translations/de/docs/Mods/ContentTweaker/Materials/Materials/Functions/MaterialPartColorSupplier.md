@@ -6,12 +6,15 @@ You can create a MaterialPartColorSupplier form a [MaterialPart](/Mods/ContentTw
 
 Should you need to import he class, here you go:
 
-    import mods.contenttweaker.MaterialPartColorSupplier;
-    
+```zenscript
+import mods.contenttweaker.MaterialPartColorSupplier;
+```
 
 ## Static methods
 
 Static methods can be called upon the package, not upon instances of the class.
 
-    //mods.contenttweaker.MaterialPartColorSupplier.create(IMaterialPart materialPart);
-    mods.contenttweaker.MaterialPartColorSupplier.create(myMaterialPart);
+```zenscript
+//mods.contenttweaker.MaterialPartColorSupplier.create(IMaterialPart materialPart);
+mods.contenttweaker.MaterialPartColorSupplier.create(myMaterialPart);
+```
