@@ -80,7 +80,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
 ### Beispiel
 
-```JAVA
+```zenscript
 ///// "Crushing"
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:15> * 4, 8, [<minecraft:bone>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <plants2:generic:4> * 2, 8, [<botania:flower>]);
