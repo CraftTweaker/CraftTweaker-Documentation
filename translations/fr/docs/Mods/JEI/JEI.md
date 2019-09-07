@@ -6,25 +6,26 @@ CraftTweaker comes with support for JustEnoughItems (JEI). You can add or hide i
 
 You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
 
-    //hide(IItemStack item);
-    mods.jei.JEI.hide(<minecraft:diamond>);
-    
-    //hide(ILiquidStack item);
-    mods.jei.JEI.hide(<liquid:water>);
-    mods.jei.JEI.hide(<fluid:lava>);
-    
-    
-    //removeAndHide(IIngredient output, @optional boolean NBT-Match)
-    mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
-    mods.jei.JEI.removeAndHide(<ore:planks>, false);
-    
+```zenscript
+//hide(IItemStack item);
+mods.jei.JEI.hide(<minecraft:diamond>);
+
+//hide(ILiquidStack item);
+mods.jei.JEI.hide(<liquid:water>);
+mods.jei.JEI.hide(<fluid:lava>);
+
+
+//removeAndHide(IIngredient output, @optional boolean NBT-Match)
+mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
+mods.jei.JEI.removeAndHide(<ore:planks>, false);
+```
 
 ## Hide Categories
 
 You can use this to hide entire JEI Categories (e.g. crafting recipes, furnace recipes, machine X recipes, ...).  
 It accepts the category as string, you can get all registered categories by running `/ct jeiCategories` ingame.
 
-```Java
+```zenscript
 //hideCategory(category)
 mods.jei.JEI.hideCategory("minecraft.smelting");
 ```
@@ -33,7 +34,7 @@ mods.jei.JEI.hideCategory("minecraft.smelting");
 
 You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
 
-```JAVA
+```zenscript
 //addItem(item);
 mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
 ```
@@ -46,7 +47,7 @@ You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack/), an
 If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
 Each string parameter will have at least one line and wrap around the end of the window if too long.
 
-```Java
+```zenscript
 //addDescription(IItemStack item, string... desc);
 mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 
