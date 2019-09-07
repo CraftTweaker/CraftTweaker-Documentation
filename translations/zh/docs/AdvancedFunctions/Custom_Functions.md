@@ -6,7 +6,7 @@
 
 一般来说，你可以这样声明一个静态函数：
 
-```Java
+```zenscript
 function NAME ([arguments[as type]]) [as returnType]{
     [Statements]
     [return VALUE;]
@@ -29,7 +29,7 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 无返回值函数是不会返回任何值的函数。
 
-```Java
+```zenscript
 //调用tens() 函数，但不传入任何参数
 tens();
 
@@ -57,7 +57,7 @@ function realTens(a as string){
 
 你也可以指定一个函数的返回一个值。 这里建议使用 `as` 关键字来定义返回类型。
 
-```Java
+```zenscript
 //调用 add 函数，并传入参数 1 和 99 
 val result = add(1,99);
 print(result);
