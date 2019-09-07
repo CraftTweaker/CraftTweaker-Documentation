@@ -1,14 +1,14 @@
 # Animal Harvest
 
-### Class
+### 所属类名
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
-#### Methods
+#### 可用方法
 
-```java
+```zenscript
 static void addEntity(
   IEntityDefinition entity // the entity to generate drops for
 );
@@ -16,7 +16,7 @@ static void addEntity(
 
 * * *
 
-```java
+```zenscript
 static void removeEntity(
   IEntityDefinition entity // the entity to stop generating drops for
 );
@@ -24,9 +24,9 @@ static void removeEntity(
 
 * * *
 
-### Examples
+### 例子
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 
 // Adds an enderman as a target for the Animal Harvest ritual.
