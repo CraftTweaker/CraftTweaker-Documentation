@@ -1,18 +1,21 @@
 # Tartaric Forge
 
-## Package
+## 所属包名
 
 `mods.bloodmagic.TartaricForge`
 
-## Addition
+## 添加配方
 
-    inputs has a max size of 4
-    //mods.bloodmagic.TartaricForge.addRecipe(IItemStack output, IItemStack[] inputs, double minSouls, double soulDrain);
-    mods.bloodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
-    
+```zenscript
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.addRecipe(IItemStack output, IItemStack[] inputs, double minSouls, double soulDrain);
+mods.bloodmagic.TartaricForge.addRecipe(<minecraft:diamond>,[<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 10,10);
+```
 
-## Removal
+## 删除配方
 
-    inputs has a max size of 4
-    //mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] inputs);
-    mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
+```zenscript
+inputs has a max size of 4
+//mods.bloodmagic.TartaricForge.removeRecipe(IItemStack[] inputs);
+mods.bloodmagic.TartaricForge.removeRecipe([<minecraft:ghast_tear>,<minecraft:feather>, <minecraft:feather>]);
+```
