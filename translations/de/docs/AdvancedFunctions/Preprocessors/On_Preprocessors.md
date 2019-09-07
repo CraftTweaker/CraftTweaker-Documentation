@@ -10,7 +10,7 @@ Damit kann man das Skript beispielsweise in den Debug-Modus versetzen.
 Ein Präprozessor wird wie ein #Kommentar eingebunden.  
 Achte darauf, dass du deine Kommentare ansonsten nicht aus Versehen mit einem Präprozessor-Schlüsselwort startest.
 
-```JAVA
+```zenscript
 #debug ist mein Lieblingswort und ich würde es am allerliebsten überall als Kommentar einfügen
 ```
 
