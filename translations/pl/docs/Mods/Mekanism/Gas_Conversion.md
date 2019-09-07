@@ -6,18 +6,22 @@ If you want to change any of the values of the built in conversions it is recomm
 
 ## Addition
 
-    mods.mekanism.GasConversion.register(IIngredient ingredient, IGasStack gas);
-    
-    mods.mekanism.GasConversion.register(<ore:sand>, <gas:liquidosmium> * 100);
-    
+```zenscript
+mods.mekanism.GasConversion.register(IIngredient ingredient, IGasStack gas);
+
+mods.mekanism.GasConversion.register(<ore:sand>, <gas:liquidosmium> * 100);
+```
 
 ## Removal
 
-    mods.mekanism.GasConversion.unregister(IIngredient ingredient, IGasStack gas);
-    
-    mods.mekanism.GasConversion.unregister(<ore:ingotOsmium>, <gas:liquidosmium>);
-    
+```zenscript
+mods.mekanism.GasConversion.unregister(IIngredient ingredient, IGasStack gas);
+
+mods.mekanism.GasConversion.unregister(<ore:ingotOsmium>, <gas:liquidosmium>);
+```
 
 ## Removing all conversions
 
-    mods.mekanism.GasConversion.unregisterAll();
+```zenscript
+mods.mekanism.GasConversion.unregisterAll();
+```
