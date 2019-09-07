@@ -1,14 +1,14 @@
 # Powered Thingies :: Fluid Burner :: Fuel
 
-### Importing
+### 导入
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 fuel().logKeys()
 fuel().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
 fuel().clear()
@@ -18,7 +18,7 @@ fuel().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addFuel(fluid: ILiquidStack, ticks: Int)
 ```
 
@@ -26,7 +26,7 @@ addFuel(fluid: ILiquidStack, ticks: Int)
 
 ##### Example
 
-```kotlin
+```zenscript
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
