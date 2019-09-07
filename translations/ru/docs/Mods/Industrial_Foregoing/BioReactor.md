@@ -2,18 +2,22 @@
 
 ### Importing
 
-    import mods.industrialforegoing.BioReactor;
-    
+```zenscript
+import mods.industrialforegoing.BioReactor;
+```
 
 ### Adding
 
-    BioReactor.add(IItemStack input);
-    
-    BioReactor.add(<minecraft:diamond>);
-    
+```zenscript
+BioReactor.add(IItemStack input);
+
+BioReactor.add(<minecraft:diamond>);
+```
 
 ### Removing
 
-    BioReactor.remove(IItemStack input);
-    
-    BioReactor.remove(<minecraft:diamond>);
+```zenscript
+BioReactor.remove(IItemStack input);
+
+BioReactor.remove(<minecraft:diamond>);
+```
