@@ -18,7 +18,7 @@ mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcompo
 ```
 
 ## Addition
-```
+```zenscript
 //mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
 mods.astralsorcery.Lightwell.addLiquefaction(<minecraft:dirt>, <liquid:water>, 1, 0.2, 0);
 ```

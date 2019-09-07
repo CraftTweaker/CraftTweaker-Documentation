@@ -6,7 +6,7 @@ An array is a List containing several items of the same kind.
 ## Declaring Arrays
 It is declared using ```[``` and ```]```.
 
-```
+```zenscript
 //Array containing "Hello" and "World"
 val stringArray = ["Hello", "World"] as string[];
 
@@ -24,7 +24,7 @@ Why you ask?
 This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:  
-```
+```zenscript
 import crafttweaker.item.IItemStack;
 val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 ```
@@ -32,7 +32,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 ## Nested Arrays
 You can place Arrays in Arrays.
 
-```
+```zenscript
 val stringArray1 = ["Hello","World"] as string[];
 val stringArray2 = ["I","am"] as string[];
 val stringArray3 = ["a","beatuful"] as string[];
@@ -45,7 +45,7 @@ The first item in an Array is No. 0, the 2nd No.1 and so on.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
-```
+```zenscript
 /*
 stringArray[0] is "Hello"
 stringArray[1] is "World"
@@ -87,7 +87,7 @@ A loop is a function that repeats itself. You can use loops to apply an action t
 The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
 You can use the `break` keyword to break the loop prematurely.
 
-```
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val IArray = [<minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>] as IItemStack[];
@@ -132,7 +132,7 @@ for item in loadedMods["minecraft"].items {
 The while loop executes the given code as long as the given condition evaluates to `true`.  
 Alternatively, you can stop it using the `break` keyword.
 
-```
+```zenscript
 var i = 0; 
 
 //Will print 0 - 9, because in the iteration after that, i < 10 is false since i is 10 then.

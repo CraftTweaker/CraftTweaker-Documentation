@@ -16,7 +16,7 @@ mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>,
 ```
 
 ## Addition
-```
+```zenscript
 //mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
 ```

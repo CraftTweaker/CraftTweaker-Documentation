@@ -19,7 +19,7 @@ The function doesn't have a return value!
 
 
 ## Example
-```
+```zenscript
 zsBlock.onBlockBreak = function(world, blockPos, blockState){
 	print("I WAS PLACED!!!");
 }

@@ -4,7 +4,7 @@ You can create a MaterialPartColorSupplier form a [MaterialPart](/Mods/ContentTw
 
 ## Importing the class
 Should you need to import he class, here you go:
-```
+```zenscript
 import mods.contenttweaker.MaterialPartColorSupplier;
 ```
 
@@ -12,7 +12,7 @@ import mods.contenttweaker.MaterialPartColorSupplier;
 
 Static methods can be called upon the package, not upon instances of the class.
 
-```
+```zenscript
 //mods.contenttweaker.MaterialPartColorSupplier.create(IMaterialPart materialPart);
 mods.contenttweaker.MaterialPartColorSupplier.create(myMaterialPart);
 ```

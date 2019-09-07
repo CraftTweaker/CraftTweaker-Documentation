@@ -4,7 +4,7 @@ The Material Bracket handler's sole purpose is providing you with [Material Repr
 
 You use the trait bracket handler like this:
 
-```
+```zenscript
 <ticonmaterial:identifier>
 
 <ticonmaterial:iron>

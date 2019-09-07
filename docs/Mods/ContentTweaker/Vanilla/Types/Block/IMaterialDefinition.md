@@ -31,7 +31,7 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 You can use the `==` operator to see if two MaterialDefinitions are equal
 
-```
+```zenscript
 if(materialA == materialB)
     print("success!");
 ```

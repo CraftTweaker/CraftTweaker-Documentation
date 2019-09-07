@@ -44,7 +44,7 @@ Currently the only Block Materials supported are:
 
 Block Materials are referenced in the Material Bracket handler this way:
 
-```
+```zenscript
 <blockmaterial:name>
 
 <blockmaterial:wood>

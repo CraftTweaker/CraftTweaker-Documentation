@@ -11,14 +11,14 @@ It might be required for you to import the class if you encounter any issues (li
 First and foremost you will need to create a Material Builder.  
 This can be done using the static create method.
 
-```
+```zenscript
 //mods.contenttweaker.tconstruct.MaterialBuilder.create(String identifier);
 val myMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("kindlich_mat");
 ```
 
 Remember, that you will need to register the material after you've done your changes.  
 This can be done with the `register` method which will return a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of the new Material.
-```
+```zenscript
 myMat.register();
 ```
 
@@ -44,13 +44,13 @@ You can set and get these properties using `myMaterial.name`.
 ### ItemLocalizer
 You can use this function to calculate the material names if you need that to be the case.  
 Uses a [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/) of this material and the name of the tool that's being renamed (e.g. "Mattock")
-```
+```zenscript
 myMAt.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 ```
 
 ## Add Material Items
 If you use the given item in the part builder, you can set how many materialpoints that will give, or how much the item will repair. 
-```
+```zenscript
 //myMaterial.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(144) int amountMatched));
 myMaterial.addItem(<item:minecraft:iron_pickaxe>);
 myMaterial.addItem(<item:minecraft:iron_block>, 4, 288);
@@ -83,7 +83,7 @@ Possible values for `dependency` are:
 - `"shaft"`
 - `"fletching"`
 
-```
+```zenscript
 myMaterial.addTrait("fiery");
 myMaterial.addTrait("fiery", "bowstring");
 ```
@@ -91,7 +91,7 @@ myMaterial.addTrait("fiery", "bowstring");
 You can remove materialTraits as well (which is especially useful when doing batch materials).  
 You remove them using their identifier string and an optional dependency.  
 If you omit the dependency or use `null` all traits with that identifier will be removed.
-```
+```zenscript
 //myMaterial.remove(String identifier, @Optional String dependency);
 myMaterial.remove("cactus");
 myMaterial.remove("cactus", "bowstring");
@@ -101,7 +101,7 @@ myMaterial.remove("cactus", "bowstring");
 
 In order for TiCon to build your materials, it needs to know the material stats.  
 Only tooltypes whose stat has been added will be built!
-```
+```zenscript
 
 myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
 myMat.removeHeadMaterialStats();
@@ -137,7 +137,7 @@ myMat.removeProjectileMaterialStats();
 
 
 ## Example
-```
+```zenscript
 #loader contenttweaker
 #modloaded tconstruct
 

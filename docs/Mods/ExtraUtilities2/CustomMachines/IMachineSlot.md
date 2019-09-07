@@ -6,14 +6,14 @@ You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUt
 ## Importing the package
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using  
-```
+```zenscript
 import extrautilities2.Tweaker.IMachineSlot;
 ```
 
 ## Creating a new IMachineSlot
 
 The IMachineSlot package offers methods to create new IMachineSlot objects:
-```
+```zenscript
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);

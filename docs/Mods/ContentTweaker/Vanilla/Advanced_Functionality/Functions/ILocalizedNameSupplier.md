@@ -4,7 +4,7 @@ The ILocalizedNameSupplier function is used to programmatically determine an [It
 
 ## importing the class
 If you want to import the function's class, here you go:
-```
+```zenscript
 import mods.contenttweaker.LocalizedNameSupplier;
 ```
 
@@ -13,7 +13,7 @@ import mods.contenttweaker.LocalizedNameSupplier;
 The function returns a string and takes an [IItemStack](/Vanilla/Items/IItemStack/) as single input parameter.
 
 
-```
+```zenscript
 item.setLocalizedNameSupplier(function(itemStack) {
 	return "mySuperItem";
 });

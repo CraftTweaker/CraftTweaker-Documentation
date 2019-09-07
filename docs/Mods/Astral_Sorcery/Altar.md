@@ -12,7 +12,7 @@ You can call the AltarRecipe package using `mods.astralsorcery.Altar`.
 This function removes the recipe with the given resource location.  
 You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
 Prints a warning if the recipe does not exist.
-```
+```zenscript
 //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
 mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
 ```

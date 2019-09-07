@@ -17,7 +17,7 @@ var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/
 ### ZenGetters
 ZenGetters are called on an object, not on the package itself
 
-```
+```zenscript
 print(myLocation.domain);
 ```
 

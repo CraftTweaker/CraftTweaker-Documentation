@@ -10,7 +10,7 @@ It might be required for you to import the class if you encounter any issues (li
 
 First and foremost, you will need to create a trait builder.  
 This can be done using the static function:
-```
+```zenscript
 //create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
 val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
 ```
@@ -22,7 +22,7 @@ For the `color`, it is suggested that you use the hexadecimal notation as shown 
 
 After you've finished all modifications below, you will need to register your trait.  
 This can be done using the `register` method, which will return a [Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) of the new trait.
-```
+```zenscript
 myTrait.register();
 ```
 
@@ -33,7 +33,7 @@ That way you can create multiple similar traits easily.
 ## Modifier Items
 
 If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.  
-```
+```zenscript
 //myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
 myTrait.addItem(<item:minecraft:iron_pickaxe>);
 myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
@@ -70,7 +70,7 @@ You can set the given property functions:
 ### CanApplyTogether
 
 Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
-```
+```zenscript
 myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
 myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){....};
 ```
@@ -78,7 +78,7 @@ myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IE
 ### Extra info
 
 The returned String[] will be displayed as extra information in the tool station.  
-```
+```zenscript
 myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
 ```
 
@@ -127,7 +127,7 @@ Parameters:
 __Returns nothing.__
 
 Created using:
-```
+```zenscript
 myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
 	//CODE
 };
@@ -146,7 +146,7 @@ Parameters:
 __Returns nothing.__
 
 Created using:
-```
+```zenscript
 myTrait.getMiningSpeed = function(trait, tool, event) {
 	//CODE
 };
@@ -165,7 +165,7 @@ Parameters:
 __Returns nothing.__
 
 Created using:
-```
+```zenscript
 myTrait.beforeBlockBreak = function(trait, tool, event) {
 	//CODE
 };
@@ -185,7 +185,7 @@ Parameters:
 __Returns nothing.__
 
 Created using:
-```
+```zenscript
 myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
 	//CODE
 };
@@ -204,7 +204,7 @@ Parameters:
 __Returns nothing__
 
 Created using:
-```
+```zenscript
 myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 	//CODE
 };
@@ -223,7 +223,7 @@ Parameters:
 __Returns a bool__ that is `true` if the hit should crit, false whenever else.
 
 Created using:
-```
+```zenscript
 myTrait.calcCrit = function(trait, tool, attacker, target) {
 	//CODE
 	return true; //or false
@@ -246,7 +246,7 @@ Parameters:
 __Returns a float__ representing the new damage. Otherwise return `newDamage`
 
 Created using
-```
+```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
 	//CODE
 	return newDamage; //Or your modified value
@@ -268,7 +268,7 @@ Parameters:
 __Returns nothing__
 
 Created using
-```
+```zenscript
 myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 	//CODE
 };
@@ -290,7 +290,7 @@ Parameters:
 __Returns a float__ representing the new damage. Otherwise return `newDamage`
 
 Created using
-```
+```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
 	//CODE
 	return newDamage; //Or your modified value
@@ -312,7 +312,7 @@ Parameters:
 __Returns nothing__
 
 Created using
-```
+```zenscript
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
 	//CODE
 };
@@ -331,7 +331,7 @@ Parameters:
 __Returns nothing__
 
 Created using
-```
+```zenscript
 myTrait.onBlock = function(trait, tool, player, event) {
 	//CODE
 };
@@ -351,7 +351,7 @@ Parameters:
 __Returns nothing__
 
 Created using
-```
+```zenscript
 myTrait.onPlayerHurt = function(trait, tool, player, event) {
 	//CODE
 };
@@ -371,7 +371,7 @@ Parameters:
 __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
 Created using
-```
+```zenscript
 myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
 	//CODE
 	return newAmount; //Or your modified value
@@ -392,7 +392,7 @@ Parameters:
 __Returns an int__ representing the new amount. Otherwise return `newAmount`
 
 Created using
-```
+```zenscript
 myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
 	//CODE
 	return newAmount; //Or your modified value
@@ -413,7 +413,7 @@ Parameters:
 __Returns nothing__
 
 Created using
-```
+```zenscript
 myTrait.onToolRepair = function(trait, tool, amount) {
 	//CODE
 };
@@ -422,7 +422,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 
 
 ## Example
-```
+```zenscript
 #loader contenttweaker
 #modloaded tconstruct
 

@@ -15,7 +15,7 @@ The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAn
 
 ## Example Class
 
-```
+```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
 @ZenRegister
 public class DevWikiTest {
@@ -64,7 +64,7 @@ public class DevWikiTest {
 ```
 
 ZS Script
-```
+```zenscript
 val instance = crafttweaker.tests.devWikiTest.staticMethod(10);
 crafttweaker.tests.devWikiTest.staticMethod2();
 crafttweaker.tests.devWikiTest.staticMethodVarArg(10);

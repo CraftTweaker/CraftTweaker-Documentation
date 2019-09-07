@@ -18,7 +18,7 @@ It might be required for you to import the class if you encounter any issues (li
 ## Adding trait items
 
 If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.  
-```
+```zenscript
 //myTrait.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
 myTrait.addModifierItem(<item:minecraft:iron_pickaxe>);
 myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2);

@@ -40,7 +40,7 @@ You need to call this method to register the creative Tab in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the tab or change any of it's properties!
 
-```
+```zenscript
 tab.register();
 ```
 

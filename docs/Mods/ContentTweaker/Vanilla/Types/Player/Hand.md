@@ -12,7 +12,7 @@ Hand can be of those two values:
 - main
 - off
 
-```
+```zenscript
 import mods.contenttweaker.Hand;
 
 Hand.off();
@@ -29,6 +29,6 @@ A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advan
 
 You can compare two Hand objects using the `==` getter.
 
-```
+```zenscript
 Hand.main() == Hand.main()
 ```

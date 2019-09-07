@@ -4,7 +4,7 @@ The Material Part Bracket Handler gives you access to the Material Parts in the 
 
 Material Parts are referenced in the Material Part Bracket handler this way:
 
-```
+```zenscript
 <materialpart:material:part>
 
 <materialpart:platinum:gear>

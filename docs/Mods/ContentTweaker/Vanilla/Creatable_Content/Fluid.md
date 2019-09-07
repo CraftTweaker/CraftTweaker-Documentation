@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## ZenProperties
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
-```
+```zenscript
 //property name: density
 //ZenGetter
 print(fluid.density);
@@ -54,12 +54,12 @@ You need to call this method to register the fluid in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the fluid or change any of it's properties!
 
-```
+```zenscript
 fluid.register();
 ```
 
 ## Example Script
-```
+```zenscript
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Fluid;

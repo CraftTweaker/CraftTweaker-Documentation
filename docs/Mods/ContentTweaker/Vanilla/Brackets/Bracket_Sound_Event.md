@@ -7,14 +7,14 @@ Check [this](https://minecraft.gamepedia.com/Sounds.json) for a list of vanilla 
 SoundTypes are referenced in the Sound Event Bracket handler this way:
 
 Vanilla
-```
+```zenscript
 <soundevent:name>
 
 <soundevent:ambient.cave>
 ```
 
 Mod Added
-```
+```zenscript
 <soundevent:modID:name>
 
 <soundevent:minecraft:ambient.cave>
