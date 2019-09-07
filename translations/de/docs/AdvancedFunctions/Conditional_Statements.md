@@ -6,7 +6,7 @@ Manche Codezeilen sollten nur ausgeführt werden, wenn bestimmte Kriterien erfü
 
 Eine bedingte Anweisung beginnt immer mit einer If-Abfrage. Sie prüft, ob das gegebene Statement wahr (true) ist und führt ggf. den folgenden Code in der Klammer aus. Aber Achtung: Man benötigt ZWEI Gleich-Zeichen, um Werte zu vergleichen!
 
-```Java
+```zenscript
 val test = 0;
 
 if(test == 0){ //true
@@ -18,7 +18,7 @@ if(test == 0){ //true
 
 Ein Else-Statement kann an eine If-Abfrage angehängt werden und wird ausgeführt, falls die Abfrage nicht true (false) ergibt.
 
-```Java
+```zenscript
 var test = 0;
 
 if(test == 0){//true
@@ -46,7 +46,7 @@ Berechnungen: `+`,`-`,`*`,`/`,`mod`,`verkettung(~)`
 
 Operanden: `OR(|)`, `AND(&)`, `XOR(^)`
 
-```Java
+```zenscript
 //Was man alles prüfen kann:
 
 
@@ -84,7 +84,7 @@ if(d=="Hello" & e == "World"){print("AND2!");}      //true
 
 Die ganze Zeit überall If/Else schreiben zu müssen kann schnell nervig werden. Besonders wenn du nur kleinere entweder/oder-Bedingungen benötigst. Für solche Fälle wurde der `?`-Operator implementiert. Er funktioniert genau wie ein If/Else-Statement, für welches man weniger Code benötigt. Syntax: `boolean ? if : else`
 
-```Java
+```zenscript
 val switchy = false;
 
 //gibt den Status aus
@@ -128,7 +128,7 @@ Dazu brauchst erst eine Liste, in welcher du prüfen willst, dann `in`/`has` und
 
 Eine Mod geladen ist, wenn sich diese in der Liste befindet:
 
-```Java
+```zenscript
 if(loadedMods in "mcp"){
     print("Minecraft Coder Pack geladen");
 }
@@ -146,7 +146,7 @@ In diesem Fall darfst du aber nicht die beiden Einträge verwechseln:
 Das hier ergibt nur true, wenn der Eintrag NACH `in` in der Gruppe VOR dem `in` zu finden ist.  
 In den meisten Fällen sollte man also lieber das `has`-Schlüsselwort verwenden, weil das meistens einen viel klareren Eindruck macht.
 
-```Java
+```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
     print("Eisenbarren befinden sich in der richtigen Gruppe");
 }
@@ -158,7 +158,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 
 Es ergibt nur true, wenn alle passenden Items vom IIngredient NACH dem `has` auch im IIngredient VOR dem `has` zu finden sind. Angenommen, wir haben ein IIngredient, welches alle "Dusts" enthält (Redstone, Glowstone Dust...):
 
-```java
+```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;
