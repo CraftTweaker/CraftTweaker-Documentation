@@ -10,6 +10,8 @@
 
 ## Add Blacklist
 
-    mods.ic2.Recycler.addBlacklist(IIngredient ingredient);
-    
-    mods.ic2.Recycler.addBlacklist(<minecraft:dirt>);
+```zenscript
+mods.ic2.Recycler.addBlacklist(IIngredient ingredient);
+
+mods.ic2.Recycler.addBlacklist(<minecraft:dirt>);
+```
