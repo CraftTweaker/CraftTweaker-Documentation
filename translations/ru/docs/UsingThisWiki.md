@@ -12,9 +12,10 @@ There also are some examples in certain entries to provide further clarity.
 Геттер ZenScipt — способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
 Мы используем геттер вот так:
 
-    //объект.zenGetter;
-    <minecraft:iron_ingot>.displayName;
-    
+```zenscript
+//объект.zenGetter;
+<minecraft:iron_ingot>.displayName;
+```
 
 Геттер всегда что-нибудь возвращает, в данном случае &mdash; текстовое представление имени предмета ("Iron Ingot").
 
@@ -25,9 +26,10 @@ There also are some examples in certain entries to provide further clarity.
 
 Мы используем сеттеры ZenScipt вот так:
 
-    //объект.сеттер = новоеЗначение;
-    <minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
-    
+```zenscript
+//объект.сеттер = новоеЗначение;
+<minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
+```
 
 Сеттер никогда ничего не возвращает, потому что он предназначен для установки, а не получения данных.
 
@@ -38,9 +40,11 @@ There also are some examples in certain entries to provide further clarity.
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
 
-    //Так как у нас есть геттер и сеттер с одинаковыми именами, первый можно совмещать:
-    //объект.сеттер += значение;
-    //объект.сеттер = объект.геттер + значение;
-    
-    <minecraft:iron_ingot>.displayName += " судьбы";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " судьбы";
+```zenscript
+//Так как у нас есть геттер и сеттер с одинаковыми именами, первый можно совмещать:
+//объект.сеттер += значение;
+//объект.сеттер = объект.геттер + значение;
+
+<minecraft:iron_ingot>.displayName += " судьбы";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " судьбы";
+```
