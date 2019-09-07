@@ -2,7 +2,7 @@
 
 It is a good idea to split your script into multiple files
 
-## Problem
+## 問題
 
 - When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
 - Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
@@ -20,18 +20,19 @@ It is a good idea to split your script into multiple files
 
 ## Example
 
-    scripts
-        thermalExpansion
-            Compactor.zs
-            Crucible.zs
-        Vanilla
-            Recipes
-                Remove.zs
-                Shaped.zs
-                Shapeless.zs
-            Seeds.zs
-        oreDict.zs
-    
+```zenscript
+scripts
+    thermalExpansion
+        Compactor.zs
+        Crucible.zs
+    Vanilla
+        Recipes
+            Remove.zs
+            Shaped.zs
+            Shapeless.zs
+        Seeds.zs
+    oreDict.zs
+```
 
 ## Advantages
 
