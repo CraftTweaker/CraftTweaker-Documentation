@@ -12,14 +12,16 @@ An example of a Bracket Handler would be the Item Bracket Handler, which gives y
 
 Примером [обработчика скобок предмета](/Vanilla/Brackets/Bracket_Item/) был бы:
 
-    <minecraft:apple>
-    
+```zenscript
+<minecraft:apple>
+```
 
 Это даст вам доступ к [предмету](/Vanilla/Items/IItemStack/) `яблока`.
 
 An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
 
-    <ore:ingotIron>
-    
+```zenscript
+<ore:ingotIron>
+```
 
 This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.
