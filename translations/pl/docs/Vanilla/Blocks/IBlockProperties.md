@@ -70,44 +70,51 @@ Returns an int representing the block's redstone comparator input override type.
 Use an [IEntity](/Vanilla/Entities/IEntity/).  
 Returns a bool.
 
-    blockProperties.canEntitySpawn(IEntity entity);
-    
+```zenscript
+blockProperties.canEntitySpawn(IEntity entity);
+```
 
 ### Get the actual BlockState
 
 Use an [IBlockAccess](/Vanilla/World/IBlockAccess/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a new IBlockProperties object.
 
-    blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
+```
 
 ### Get a block's hardness
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
 
-    blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
+```
 
 ### Get a block's light opacy
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns an int.
 
-    blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
+```
 
 ### Get a player's Relative Block Harness
 
 Use an [IPlayer](/Vanilla/Players/IPlayer/), an [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
 
-    blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
+```
 
 ### Check if a side of the block is solid
 
 Use an [IBlockAccess](/Vanilla/World/IBlockAccess/), an [IBlockPos](/Vanilla/World/IBlockPos/) and an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
 
-    blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
+```zenscript
+blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
+```
