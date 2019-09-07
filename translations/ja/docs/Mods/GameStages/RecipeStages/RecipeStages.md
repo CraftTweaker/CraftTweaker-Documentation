@@ -6,7 +6,7 @@ This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/p
 
 Adds a shaped recipe that is locked behind a stage.
 
-```java
+```zenscript
 //mods.recipestages.Recipes.addShaped(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 //mods.recipestages.Recipes.addShaped(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
@@ -16,7 +16,7 @@ mods.recipestages.Recipes.addShaped("test", "one", <minecraft:iron_leggings>,[[<
 
 Adds a mirrored shaped recipe that is locked behind a stage.
 
-```java
+```zenscript
 //mods.recipestages.Recipes.addShapedMirrored(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 //mods.recipestages.Recipes.addShapedMirrored(String name, String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
@@ -27,7 +27,7 @@ mods.recipestages.Recipes.addShapedMirrored("test_mirrored", "one", <minecraft:i
 
 Adds a shapeless recipe that is locked behind a stage.
 
-```java
+```zenscript
 //mods.recipestages.Recipes.addShapeless(String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 //mods.recipestages.Recipes.addShapeless(String name, String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
 
@@ -37,7 +37,7 @@ mods.recipestages.Recipes.addShapeless("shapeless_test". "one", <minecraft:diamo
 
 Sets the stage of a non staged recipe.
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setRecipeStage(String name, IItemStack output);
 //mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
 
@@ -49,14 +49,14 @@ Sets the stage of all recipes that make items from a certain mod.
 More specifically, stages all recipes that have the given modid as resource domain.  
 Does NOT work with regex expressions, so using `.*` as argument would do nothing!
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
 mods.recipestages.Recipes.setRecipeStageByMod("one", "minecraft");
 ```
 
 Sets the stage of all recipes based on a regex check against their name.
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setRecipeStageByRegex(String name, String modid);
 //This sets the stage of all recipes who's name only contains numbers to stage "one"
 
@@ -65,21 +65,21 @@ mods.recipestages.Recipes.setRecipeStageByRegex("one", "^[0-9]*$");
 
 Tells RecipeStages to print Container names to chat
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setPrintContainers(boolean printContainers);
 mods.recipestages.Recipes.setPrintContainers(true);
 ```
 
 "Stages" a container, allowing it to craft recipes from certain stages
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setContainerStage(String containerPath, String[] stages);
 mods.recipestages.Recipes.setContainerStage("primal_tech.inventory.ContainerWorkStump", "one");
 ```
 
 "Stages" a package, allowing all containers in the package to craft recipes from certain stages
 
-```java
+```zenscript
 //mods.recipestages.Recipes.setPackageStage(String packageName, String[] stages);
 mods.recipestages.Recipes.setPackageStage("appeng", allStages);
 ```
