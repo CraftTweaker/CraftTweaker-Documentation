@@ -14,7 +14,7 @@ Website: [https://www.modcrafters.net](https://www.modcrafters.net/?mod=thingies
 
 All machines integrated with CT support these methods:
 
-```kotlin
+```zenscript
 XYZ.clear() // will clear the entire recipe registry
 XYZ.logKeys() // will output all keys in that registry to CT's log
 XYZ.removeRecipe(key: String)) // will remove the recipe with that key from registry
