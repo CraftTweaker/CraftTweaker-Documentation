@@ -2,13 +2,13 @@
 
 ### 类
 
-```java
+```zenscript
 import mods.roots.Mortar;
 ```
 
 #### 方法
 
-```java
+```zenscript
 static void addRecipe(
   IItemStack output,   //配方产出的物品。
   IIngredient[] inputs //由配方的成分组成的数组，从1个物品组成到5个物品组成皆可。
@@ -17,7 +17,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void changeSpell(
   string spellName,    // 咒术尘注册表中的咒术尘的名字。
   IIngredient[] inputs // 由新配方中的5个原料所组成的数组。
@@ -26,7 +26,7 @@ static void changeSpell(
 
 * * *
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output //你希望移除的配方的产物。
 );
@@ -36,7 +36,7 @@ static void removeRecipe(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.Mortar;
 
 // 添加一个用燧石制成火药的配方。
