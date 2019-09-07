@@ -1,27 +1,27 @@
 # Coke Oven
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
 ## Rezept hinzufügen
 
-| Required | Type        | Datentyp                                            |
+| Benötigt | Type        | Datentyp                                            |
 | -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| Benötigt | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Fuel Output | Integer                                             |
+| Benötigt | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Time        | Integer                                             |
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Remove Recipe
+## Rezept entfernen
 
 | Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
@@ -29,7 +29,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 
 ### Example:
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
