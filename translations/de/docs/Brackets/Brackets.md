@@ -12,14 +12,16 @@ Ein Beispiel für die Nutzung eines Brackets ist das Referenzieren eines bestimm
 
 Ein Beispiel für ein [Item-Bracket](/Vanilla/Brackets/Bracket_Item/) wäre:
 
-    <minecraft:apple>
-    
+```zenscript
+<minecraft:apple>
+```
 
 Damit kannst du das `Apfel`-[Item](/Vanilla/Items/IItemStack/) referenzieren.
 
 Ein Beispiel für ein [OreDict-Bracket](/Vanilla/Brackets/Bracket_Ore/) wäre:
 
-    <ore:ingotIron>
-    
+```zenscript
+<ore:ingotIron>
+```
 
 Damit kannst du ein [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) für `ingotIron` referenzieren.
