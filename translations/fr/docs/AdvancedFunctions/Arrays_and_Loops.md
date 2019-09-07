@@ -164,7 +164,7 @@ While it is not recommended to do so, it is possible to add some Objects to Arra
 You can only add single Objects to an array, you cannot add two arrays.  
 You use the `+` operator for array Addition:
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;
