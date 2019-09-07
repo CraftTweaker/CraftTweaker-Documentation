@@ -10,11 +10,11 @@ It requires flipping food to cook both sides.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## 移除配方
 
 ## Remove matching grill recipes.
 
-```java
+```zenscript
 mods.cfm.Grill.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that require Beef
@@ -31,7 +31,7 @@ Add a grill recipe.
 
 ## Only supports inputs of size 1.
 
-```java
+```zenscript
 mods.cfm.Grill.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes a Stick from a Sausage
