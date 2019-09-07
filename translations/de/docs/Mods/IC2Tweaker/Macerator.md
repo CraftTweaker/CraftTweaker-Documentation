@@ -11,10 +11,11 @@
 
 ## Addition
 
-    mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
-    
-    mods.ic2.Macerator.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
-    
+```zenscript
+mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
+
+mods.ic2.Macerator.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
+```
 
 ## Removal
 
