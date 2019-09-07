@@ -9,12 +9,12 @@ All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and
 | Name                | Type                                                                                                      | Required | Default Value                                                                                                  | Notes                                                                                   |
 | ------------------- | --------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | axisAlignedBB       | [MCAxisAlignedBB](/Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB/)                              | No       | Full Block                                                                                                     | Lets you set the block's bounding box                                                   |
-| beaconBase          | boolean                                                                                                   | No       | false                                                                                                          | Can this block be used as part of a beacon's base?                                      |
+| beaconBase          | boolean型                                                                                                  | No       | false                                                                                                          | Can this block be used as part of a beacon's base?                                      |
 | blockColorSupplier  | [IBlockColorSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier/) | No       | -1 as color                                                                                                    | The block's color                                                                       |
 | blockHardness       | float                                                                                                     | No       | 5.0                                                                                                            | How long it takes to break                                                              |
 | blockLayer          | String                                                                                                    | No       | "SOLID"                                                                                                        | "SOLID", "CUTOUT_MIPPED", "CUTOUT", "TRANSLUCENT"                                       |
 | blockMaterial       | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)                      | No       | Iron                                                                                                           | The Block's base material                                                               |
-| blockResistance     | float                                                                                                     | No       | 5.0                                                                                                            | Explosion resistance                                                                    |
+| blockResistance     | float型                                                                                                    | No       | 5.0                                                                                                            | Explosion resistance                                                                    |
 | blockSoundType      | [SoundType](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/)                               | No       | Metal                                                                                                          | The Block's sound type (determines things like the breaking sound)                      |
 | creativeTab         | [CreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/)                               | No       | Misc                                                                                                           | The Creative tab the item will appear in                                                |
 | dropHandler         | [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockDropHandler/)     | No       |                                                                                                                | The Creative tab the item will appear in                                                |
@@ -39,24 +39,25 @@ All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and
 | unlocalizedName     | String                                                                                                    | Yes      |                                                                                                                | Name, should be all lowercase                                                           |
 | witherProof         | boolean                                                                                                   | No       | false                                                                                                          | Can Wither's destroy this block                                                         |
 
-## Examples
+## 使用例
 
-    #loader contenttweaker
-    
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Block;
-    
-    var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
-    antiIceBlock.setLightOpacity(3);
-    antiIceBlock.setLightValue(0);
-    antiIceBlock.setBlockHardness(5.0);
-    antiIceBlock.setBlockResistance(5.0);
-    antiIceBlock.setToolClass("pickaxe");
-    antiIceBlock.setToolLevel(0);
-    antiIceBlock.setBlockSoundType(<soundtype:snow>);
-    antiIceBlock.setSlipperiness(0.3);
-    antiIceBlock.register();
-    
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Block;
+
+var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
+antiIceBlock.setLightOpacity(3);
+antiIceBlock.setLightValue(0);
+antiIceBlock.setBlockHardness(5.0);
+antiIceBlock.setBlockResistance(5.0);
+antiIceBlock.setToolClass("pickaxe");
+antiIceBlock.setToolLevel(0);
+antiIceBlock.setBlockSoundType(<soundtype:snow>);
+antiIceBlock.setSlipperiness(0.3);
+antiIceBlock.register();
+```
 
 ## Localising the block
 
