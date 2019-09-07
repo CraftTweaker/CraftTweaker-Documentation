@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.FlowerGrowth;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void removeRecipe(
   string name // The name of the recipe you wish to remove
 );
@@ -16,7 +16,7 @@ static void removeRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addRecipeBlockState(
   string name,      // The name of the recipe that you're adding
   IBlockState state // The state of the block of the flower
@@ -25,7 +25,7 @@ static void addRecipeBlockState(
 
 * * *
 
-```java
+```zenscript
 static void addRecipeBlock(
   string name,  // The name of the recipe that you're adding
   IBlock block, // The block of the flower to be placed
@@ -37,7 +37,7 @@ static void addRecipeBlock(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.FlowerGrowth;
 
 // Removes the default recipe for dandelion
