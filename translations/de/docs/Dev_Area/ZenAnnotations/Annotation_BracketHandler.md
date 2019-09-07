@@ -8,38 +8,39 @@ The annotated class simply need to implement [IBracketHandler](https://github.co
 
 [CraftTweaker Test Project Bracket Handler](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/BracketWiki.java)
 
-    @BracketHandler(priority = 34)
-    @ZenRegister
-    public class BracketWiki implements IBracketHandler{
-    
-        @Override
-        public IZenSymbol resolve(IEnvironmentGlobal environment, List<Token> tokens) {
-            if ((tokens.size() < 3)) return null; 
-            if (!tokens.get(0).getValue().equalsIgnoreCase("devBracket")) return null;
-            if (!tokens.get(1).getValue().equals(":")) return null;
-    
-            return new devSymbol(tokens);
-        }
-    
-    
-        private class devSymbol implements IZenSymbol {
-    
-            private final String value;
-            public devSymbol(List<Token> tokens) {
-                StringBuilder sB = new StringBuilder();
-                tokens.stream().map(Token::getValue).forEach(sB::append);
-                this.value = sB.toString().replaceAll(":", " ");
-            }
-    
-            @Override
-            public IPartialExpression instance(ZenPosition position) {
-                return new ExpressionString(position, "DevSymbol: ".concat(value));
-            }
-    
-        }
-    
+```java
+@BracketHandler(priority = 34)
+@ZenRegister
+public class BracketWiki implements IBracketHandler{
+
+    @Override
+    public IZenSymbol resolve(IEnvironmentGlobal environment, List<Token> tokens) {
+        if ((tokens.size() < 3)) return null; 
+        if (!tokens.get(0).getValue().equalsIgnoreCase("devBracket")) return null;
+        if (!tokens.get(1).getValue().equals(":")) return null;
+
+        return new devSymbol(tokens);
     }
-    
+
+
+    private class devSymbol implements IZenSymbol {
+
+        private final String value;
+        public devSymbol(List<Token> tokens) {
+            StringBuilder sB = new StringBuilder();
+            tokens.stream().map(Token::getValue).forEach(sB::append);
+            this.value = sB.toString().replaceAll(":", " ");
+        }
+
+        @Override
+        public IPartialExpression instance(ZenPosition position) {
+            return new ExpressionString(position, "DevSymbol: ".concat(value));
+        }
+
+    }
+
+}
+```
 
 ## What classes can be annotated || Additional Info
 
