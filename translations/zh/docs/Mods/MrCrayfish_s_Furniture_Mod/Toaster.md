@@ -8,11 +8,11 @@ The Toaster crips up food to start your day.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## 移除配方
 
 ## Remove matching toaster recipes.
 
-```java
+```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that make Toast from a Bread Slice
@@ -27,7 +27,7 @@ Add a toaster recipe.
 
 ## Only supports inputs of size 1.
 
-```java
+```zenscript
 mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes Bread from Wheat
