@@ -7,7 +7,7 @@ This allows you to add Creative Tabs to the game!
 Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
@@ -48,7 +48,7 @@ After you have called this function, you cannot un-register the tab or change an
 
 ## Skript-Beispiel
 
-```JAVA
+```zenscript
 #loader contenttweaker
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.VanillaFactory;
