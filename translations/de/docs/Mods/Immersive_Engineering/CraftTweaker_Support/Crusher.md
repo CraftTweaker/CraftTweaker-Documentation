@@ -2,23 +2,23 @@
 
 The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 ## Rezept hinzufügen
 
-| Required | Type             | Datentyp                                            |
+| Benötigt | Type             | Datentyp                                            |
 | -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
+| Benötigt | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Energy           | int                                                 |
 | Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
 | Optional | Secondary Chance | double                                              |
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
@@ -35,7 +35,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
@@ -50,7 +50,7 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 
