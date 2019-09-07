@@ -6,7 +6,7 @@ Ein Assoziatives Array (wird manchmal auch als "Map" oder "Dictionary" bezeichne
 
 Ein assoziatives Array deklariert man mit Hilfe von geschweiften Klammern `{}` und Doppelpunkten `:`
 
-```JAVA
+```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
@@ -34,7 +34,7 @@ Man greift auf assoziative Arrays genau so zu, wie man es auch bei normalen [Arr
 `Array[index]`  
 Der einzige Unterschied ist eben, dass man nun nicht unbedingt einen Integer braucht, sondern etwas, was dem davor spezifizierten Typ entspricht!
 
-```JAVA
+```zenscript
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
     &lt;minecraft:dirt&gt; : "Das bin ich"
@@ -50,7 +50,7 @@ print(assocArray[dirt]);
 Es gibt eine Ausnahme, wenn du Zeichenketten als Indexwerte verwendest:  
 In diesem Fall kannst du auch den "memberGetter" verwenden:
 
-```JAVA
+```zenscript
 val assocWithStrings = {
     //Man kann den Schlüssel auch in "" setzen
     "eins" : "1",
@@ -72,7 +72,7 @@ Wie in einem Array, kannst du durch `array[index] = neuerWert` die Werte auswech
 Es gibt allerdings einen Unterschied:  
 Arrays haben eine feste Größe, Maps nicht. Das heißt, dass du jederzeit neue Elemente an eine Map hängen kannst, solang du einen Schlüssel verwendest, der noch nicht verwendet wurde!
 
-```JAVA
+```zenscript
 val changingArray = {
     <minecraft:dirt> : "das bin ich",
     <minecraft:gold_ingot> : "und ich mag es nicht"
@@ -93,7 +93,7 @@ Ein KeySet ist ein Array, welche alle Schlüssel einer Map enthält.
 Ein ValueSet ist ein Array, welches alle Werte einer Map enthält.  
 Ein EntrySet ist ein Array, welches alle Einträge einer Map enthält (siehe unten).
 
-```JAVA
+```zenscript
 myAssocArray.keySet   //keySet
 myAssocArray.keys     //keySet
 myAssocArray.values   //valueSet
@@ -115,7 +115,7 @@ Wir erstellen nun ein assoziatives Array, welches Crafting-Rezepte speichert:
 - Wir nutzen den Schlüssel-Iterator wie folgt: `for key in assocArray {doSth;} //soSth = machIrgendwas`
 - Wir können auch den Schlüssel-Wert-Iterator wie folgt verwenden: `for key, value in assocArray {doSth;}`
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -146,7 +146,7 @@ Ein Entry-Objekt bekommt man mit Hilfe der entrySet-Methode.
 
 Mit Hilfe von Gettern bekommt man die Werte für `key` und `value`
 
-```kotlin
+```zenscript
 //Den ersten Eintrag aus einer beliebigen Map holen
 val myEntry = map.entrySet[0];
 
