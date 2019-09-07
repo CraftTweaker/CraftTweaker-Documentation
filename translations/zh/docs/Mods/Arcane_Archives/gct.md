@@ -1,12 +1,12 @@
-### Class
+### 所属类名
 
-```java
+```zenscript
 import mods.arcanearchives.GCT;
 ```
 
-#### Methods
+#### 可用方法
 
-```java
+```zenscript
 void addRecipe(
   string name,         // the recipe name
   IItemStack output,   // the output as an itemstack
@@ -16,7 +16,7 @@ void addRecipe(
 
 * * *
 
-```java
+```zenscript
 void removeRecipe(
   IItemStack output // the output itemstack to be removed (quantity must match)
 );
@@ -24,7 +24,7 @@ void removeRecipe(
 
 * * *
 
-```java
+```zenscript
 void replaceRecipe(
   string name,         // the recipe name (must already exist)
   IItemStack output,   // the output as an itemstack
@@ -34,9 +34,9 @@ void replaceRecipe(
 
 * * *
 
-### Examples
+### 例子
 
-```java
+```zenscript
 import mods.arcanearchives.GCT;
 
 // Removes the recipe for radiant dust
