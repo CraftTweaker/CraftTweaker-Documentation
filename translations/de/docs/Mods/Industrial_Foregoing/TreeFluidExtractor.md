@@ -2,18 +2,22 @@
 
 ### Importieren
 
-    import mods.industrialforegoing.Extractor;
-    
+```zenscript
+import mods.industrialforegoing.Extractor;
+```
 
 ### Adding
 
-    Extractor.add(IItemStack output, ILiquidStack fluid);
-    
-    Extractor.add(<minecraft:cobblestone>, <liquid:lava> * 3);
-    
+```zenscript
+Extractor.add(IItemStack output, ILiquidStack fluid);
+
+Extractor.add(<minecraft:cobblestone>, <liquid:lava> * 3);
+```
 
 ### Removing
 
-    Extractor.remove(IItemStack input);
-    
-    Extractor.remove(<minecraft:cobblestone>);
+```zenscript
+Extractor.remove(IItemStack input);
+
+Extractor.remove(<minecraft:cobblestone>);
+```
