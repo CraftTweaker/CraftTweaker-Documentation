@@ -11,9 +11,10 @@
 
 ZenGetter는 특정 개체에서 정보를 얻는 방법입니다. 예를 들어 [IItemStack](/Vanilla/Items/IItemStack/)에는 "displayName"이라는 ZenGetter가 있는데, 다음과 같이 사용합니다.
 
-    //object.zenGetter;
-    <minecraft:iron_ingot>.displayName;
-    
+```zenscript
+//object.zenGetter;
+<minecraft:iron_ingot>.displayName;
+```
 
 ZenGetter는 항상 결과를 반환합니다. 여기의 경우에는 아이템이름("Iron Ingot") 을 문자열로 반환합니다.
 
@@ -23,9 +24,10 @@ ZenSetter는 ZenGetter와 거의 같은 방식으로 작동하지만 ZenSetter�
 
 ZenSetter는 다음과 같이 사용합니다.
 
-    //object.zenSetter = newValue;
-    <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
-    
+```zenscript
+//object.zenSetter = newValue;
+<minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
+```
 
 ZenSetter는 get이 아니기 때문에 아무것도 반환을 하지 않습니다.
 
@@ -36,9 +38,11 @@ ZenSetter는 get이 아니기 때문에 아무것도 반환을 하지 않습니�
 유형에 따라서 다음을 사용할 수 있습니다: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 이것들이 어떻게 동작할지를 봅시다:
 
-    //ZenGetter와 ZenSetter가 동일한 이름이기에 다음 두 결과는 동일합니다.
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
-    
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```zenscript
+//ZenGetter와 ZenSetter가 동일한 이름이기에 다음 두 결과는 동일합니다.
+//object.zenSetter += value;
+//object.zenSetter = object.zenGetter + value;
+
+<minecraft:iron_ingot>.displayName += " of Doom";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```
