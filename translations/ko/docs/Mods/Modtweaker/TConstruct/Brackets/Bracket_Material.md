@@ -4,10 +4,11 @@ The Material Part Bracket Handler gives you access to the [Tinkers' Materials](/
 
 Materials are referenced in the Material Bracket handler this way:
 
-    <ticmat:mat>
-    
-    <ticmat:stone>
-    
+```zenscript
+<ticmat:mat>
+
+<ticmat:stone>
+```
 
 If the ITICMaterial is found, this will return an [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) Object.  
 Please refer to the [respective Wiki entry](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) for further information on what you can do with these.
