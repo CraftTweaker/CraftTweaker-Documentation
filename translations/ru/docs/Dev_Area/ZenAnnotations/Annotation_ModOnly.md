@@ -7,16 +7,17 @@
 
 [ModOnly из тестового проекта CraftTweaker:](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
-    @ModOnly(value = "mcp")
-    @ZenClass(value = "crafttweaker.tests.modOnly")
-    @ZenRegister
-    public class ModOnlyWiki {
-        @ZenMethod
-        public static void print() {
-            CraftTweakerAPI.logInfo("вызван print!");
-        }
+```java
+@ModOnly(value = "mcp")
+@ZenClass(value = "crafttweaker.tests.modOnly")
+@ZenRegister
+public class ModOnlyWiki {
+    @ZenMethod
+    public static void print() {
+        CraftTweakerAPI.logInfo("вызван print!");
     }
-    
+}
+```
 
 ## Какие классы должны быть помечены || Дополнительная информация
 
