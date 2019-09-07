@@ -41,7 +41,7 @@ IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). T
 
 ## ZenMethods and ZenGetters
 
-| ZenGetter     | Return Type                       | Description                                                                                |
+| ZenGetter     | Возвращаемый тип                  | Description                                                                                |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
 | meta          | int                               | Returns the refered block's metadata                                                       |
@@ -65,12 +65,13 @@ You can get a list of all registered properties, either as list with all propert
 You can also check which values are possible for a given property name.  
 You can also use `withProperty` to create a new IBlockState object with that property changed.
 
-    List<String> getPropertyNames();
-    String getPropertyValue(String name);
-    List<String> getAllowedValuesForProperty(String name);
-    
-    IBlockState withProperty(String name, String value);
-    
+```zenscript
+List<String> getPropertyNames();
+String getPropertyValue(String name);
+List<String> getAllowedValuesForProperty(String name);
+
+IBlockState withProperty(String name, String value);
+```
 
 ### Comparing two IBlockState objects
 
@@ -84,4 +85,6 @@ The return different types though:
 
 Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
 
-    IBlockStateMatcher matchBlock();
+```zenscript
+IBlockStateMatcher matchBlock();
+```
