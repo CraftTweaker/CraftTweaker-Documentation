@@ -34,7 +34,7 @@ Während du den Float wert über 1 setzen kannst, wird er niemals einen Wert üb
 
 ### Beispielcode:
 
-```JAVA
+```zenscript
 //mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
 
 mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);
