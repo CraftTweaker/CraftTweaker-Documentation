@@ -6,19 +6,19 @@ The Metal Press package can be used to add/remove recipes to/from the Immersive 
 
 You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type       | Data Type                                           |
+| Required | 类型         | Data Type                                           |
 | -------- | ---------- | --------------------------------------------------- |
-| Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Energy     | Integer                                             |
-| Required | Input Size | Integer                                             |
+| 必要       | Energy     | Integer                                             |
+| 必要       | Input Size | Integer                                             |
 
-### Example
+### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
 
@@ -34,7 +34,7 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
 
@@ -49,7 +49,7 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
 
