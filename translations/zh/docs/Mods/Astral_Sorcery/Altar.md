@@ -12,11 +12,12 @@
 你可以用以下方法获取配方的 resource location ：在开启 F3 屏幕的情况下鼠标悬浮在 JEI 或星空日记中的物品图标上。  
 如果配方不存在则打印错误信息。
 
-    //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-    //resourceLocation 指的是 resource location
-    
-    mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
-    
+```zenscript
+//mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
+//resourceLocation 指的是 resource location
+
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
+```
 
 <details><summary>1.10 版本之前的处理器</summary>
 
