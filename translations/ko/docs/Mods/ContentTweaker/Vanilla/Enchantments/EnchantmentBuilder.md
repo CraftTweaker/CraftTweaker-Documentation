@@ -12,15 +12,17 @@ It might be required for you to import the class if you encounter any issues (li
 First and foremost you will need to create a Material Builder.  
 This can be done using the static create method.
 
-    //mods.contenttweaker.enchantments.EnchantmentBuilder.create(String name);
-    val myChant = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
-    
+```zenscript
+//mods.contenttweaker.enchantments.EnchantmentBuilder.create(String name);
+val myChant = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
+```
 
 Remember, that you will need to register the enchantment after you've done your changes.  
 This can be done with the `register` method which will return a [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) of the new enchantment.
 
-    myChant.register();
-    
+```zenscript
+myChant.register();
+```
 
 ## Properties
 
@@ -61,53 +63,56 @@ You can set and get these properties functions.
 
 Use these methods to be instantly notified if you made a typo.
 
-    //Rarities
-    myChant.setRarityCommon()
-    myChant.setRarityUncommon()
-    myChant.setRarityRare()
-    myChant.setRarityVeryRare()
-    
-    //Types
-    myChant.setTypeAll()
-    myChant.setTypeArmor()
-    myChant.setTypeFeed()
-    myChant.setTypeLegs()
-    myChant.setTypeChest()
-    myChant.setTypeHead()
-    myChant.setTypeWeapon()
-    myChant.setTypeDigger()
-    myChant.setTypeFishingRod()
-    myChant.setTypeBreakable()
-    myChant.setTypeBow()
-    myChant.setTypeWearable()
-    
+```zenscript
+//Rarities
+myChant.setRarityCommon()
+myChant.setRarityUncommon()
+myChant.setRarityRare()
+myChant.setRarityVeryRare()
+
+//Types
+myChant.setTypeAll()
+myChant.setTypeArmor()
+myChant.setTypeFeed()
+myChant.setTypeLegs()
+myChant.setTypeChest()
+myChant.setTypeHead()
+myChant.setTypeWeapon()
+myChant.setTypeDigger()
+myChant.setTypeFishingRod()
+myChant.setTypeBreakable()
+myChant.setTypeBow()
+myChant.setTypeWearable()
+```
 
 ## Example
 
-    #loader contenttweaker
-    val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
-    builder.applicableSlots = [mainHand, offhand, feet, legs, chest, head];
-    builder.setTypeAll();
-    builder.setRarityVeryRare();
-    builder.calcModifierDamage = function(thisEnch, level, damageSource){
-        return level;
-    };
-    
-    builder.onUserHurt = function(thisEnch, entity, attacker, level) {
-        entity.health = entity.maxHealth;
-        if(entity instanceof crafttweaker.player.IPlayer) {
-            val player as crafttweaker.player.IPlayer = entity;
-            player.foodStats.addStats(100, 10.0f);
-        }
-    
-    };
-    
-    builder.register();
-    
-    builder.name = "other_chant";
-    builder.domain = "definitely_not_cot";
-    builder.calcModifierDamage = null;
-    builder.onUserHurt = function(thisEnch, player, attacker, level) {
-        player.sendMessage("EARNED IT!");   
-    };
-    builder.register();
+```zenscript
+#loader contenttweaker
+val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
+builder.applicableSlots = [mainHand, offhand, feet, legs, chest, head];
+builder.setTypeAll();
+builder.setRarityVeryRare();
+builder.calcModifierDamage = function(thisEnch, level, damageSource){
+    return level;
+};
+
+builder.onUserHurt = function(thisEnch, entity, attacker, level) {
+    entity.health = entity.maxHealth;
+    if(entity instanceof crafttweaker.player.IPlayer) {
+        val player as crafttweaker.player.IPlayer = entity;
+        player.foodStats.addStats(100, 10.0f);
+    }
+
+};
+
+builder.register();
+
+builder.name = "other_chant";
+builder.domain = "definitely_not_cot";
+builder.calcModifierDamage = null;
+builder.onUserHurt = function(thisEnch, player, attacker, level) {
+    player.sendMessage("EARNED IT!");   
+};
+builder.register();
+```
