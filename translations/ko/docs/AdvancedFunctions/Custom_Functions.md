@@ -6,7 +6,7 @@
 
 일반적으로 다음과 같이 함수를 정의합니다.
 
-```Java
+```zenscript
 function NAME ([arguments[as type]]) [as returnType]{
     [Statements]
     [return VALUE;]
@@ -24,7 +24,7 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 보이드 함수는 값을 반환하지 않는 함수입니다.
 
-```Java
+```zenscript
 // 인자없이 tens함수를 호출
 tens();
 
@@ -50,7 +50,7 @@ function realTens(a as string){
 
 함수로 반환해야 하는 값을 지정할 수도 있습니다. 반환 타입는 `as` 키워드를 사용하는 것을 추천합니다.
 
-```Java
+```zenscript
 // 1과 99를 인자로 넣어 add함수를 요청
 val result = add(1,99);
 print(result);
