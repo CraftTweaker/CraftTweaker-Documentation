@@ -8,7 +8,7 @@ Note: This is a complete custom type nothing will check against this internally.
 
 Note: It is also a recomended standard that you use unique names for **all** your Custom Types.
 
-## Importing the package
+## 패키지 임포트하기
 
 `import mods.zenstages.type.CustomStageType;`
 
@@ -16,7 +16,7 @@ Note: It is also a recomended standard that you use unique names for **all** you
 
 Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) using the following method.
 
-```java
+```zenscript
 // initCustomType(string name, string value);
 // initCustomType(string name, string[] values);
 // initCustomType(string name, int value);
@@ -29,7 +29,7 @@ ZenStager.initCustomType("disallowedDimension", 14);
 
 Once you have created the Custom Type you can now assign that Type to a [Stage](/Mods/GameStages/ZenStages/Stage/). By calling the following.
 
-```java
+```zenscript
 // setStage(Stage stage);
 MyCustomType.setStage(TestStage);
 ```
@@ -38,7 +38,7 @@ MyCustomType.setStage(TestStage);
 
 This method requires that you have set a stage to a type. Using the above method. Otherwise it returns null.
 
-```java
+```zenscript
 // getCustomStage(string name, string value);
 // getCustomStage(string name, int value);
 // getCustomStage(string name, IIngredient value);
@@ -47,7 +47,7 @@ ZenStager.getCustomStage("blockBreak", [<minecraft:stone>]);
 
 This method does not require a Custom Type to be *Staged* to a stage.
 
-```java
+```zenscript
 // getCustomType(String name);
 ZenStager.getCustomType("blockBreak");
 ```
