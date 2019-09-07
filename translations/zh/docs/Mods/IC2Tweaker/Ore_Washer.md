@@ -1,6 +1,6 @@
 # Ore Washer
 
-## Package
+## 所属包名
 
 `import mods.ic2.OreWasher;`
 
@@ -12,10 +12,11 @@
 
 ## 添加配方
 
-    mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
-    
-    mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
-    
+```zenscript
+mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
+
+mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
+```
 
 ## Removal
 
