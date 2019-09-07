@@ -2,7 +2,7 @@
 
 A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.modularmachinery.RecipePrimer;`
@@ -14,13 +14,13 @@ This means you can either call each method on its own, or make one call where yo
 
 ### Setting the chance
 
-```sml
+```zenscript
 setChance(float chance);
 ```
 
 ### Adding Energy and fuel requirements
 
-```java
+```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
@@ -33,7 +33,7 @@ addFuelItemInout(int requiredTotalBurnTime);
 
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
-```sml
+```zenscript
 addItemInput(IItemStack stack);
 
 addItemInput(IOreDictEntry oreDict);
@@ -47,7 +47,7 @@ addFluidInput(ILiquidStack stack);
 
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 
-```sml
+```zenscript
 addItemOutput(IItemStack stack);
 
 addItemOutput(IOreDictEntry oreDict);
@@ -61,7 +61,7 @@ addFluidOutput(ILiquidStack stack);
 
 After you have done your changes above, you need to build the recipe so that it will actually do something.
 
-```sml
+```zenscript
 build();
 ```
 
