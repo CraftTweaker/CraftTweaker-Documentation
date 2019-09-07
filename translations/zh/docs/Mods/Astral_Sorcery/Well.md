@@ -12,7 +12,7 @@
 
 你可以将输出设置为`null`，这样游戏只会在输入的物品堆中寻找符合的配方。
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Lightwell.removeLiquefaction(IItemStack input, ILiquidStack output);
 //input 输入
 //output 输出
