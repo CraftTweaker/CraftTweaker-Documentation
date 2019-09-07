@@ -12,7 +12,7 @@ There are 5 Terms that are important:
 
 ## Skript-Beispiel
 
-```java
+```zenscript
     #loader contenttweaker
     //////////
     // Calls
