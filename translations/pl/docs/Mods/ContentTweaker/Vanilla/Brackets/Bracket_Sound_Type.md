@@ -22,9 +22,10 @@ The SoundType Bracket Handler gives you access to the SoundTypes in the game. Cu
 
 SoundTypes are referenced in the SoundType Bracket handler this way:
 
-    <soundtype:name>
-    
-    <soundtype:wood>
-    
+```zenscript
+<soundtype:name>
+
+<soundtype:wood>
+```
 
 If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.
