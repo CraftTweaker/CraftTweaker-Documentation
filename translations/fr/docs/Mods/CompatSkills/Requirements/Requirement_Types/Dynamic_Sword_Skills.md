@@ -2,6 +2,8 @@
 
 ## Syntax
 
-    dss|skillname|level
-    
-    dss|
+```zenscript
+dss|skillname|level
+
+dss|
+```
