@@ -2,17 +2,20 @@
 
 The *condenser* package is used for adding or removing recipes to/from the Condenser.
 
-## Calling
+## 导入包
 
 You can call the *condenser* package using `mods.skyresources.condenser`
 
-## Recipe Addition
+## 配方添加
 
-    //mods.skyresources.condenser.addRecipe(IItemStack output, int tickTime, IItemStack catalyst, ILiquidStack inputFluid);
-    mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>, <liquid:lava>);
-    
+```zenscript
+//mods.skyresources.condenser.addRecipe(IItemStack output, int tickTime, IItemStack catalyst, ILiquidStack inputFluid);
+mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>, <liquid:lava>);
+```
 
-## Recipe Removal
+## 删除配方
 
-    //mods.skyresources.condenser.removeRecipe(IItemStack output);
-    mods.skyresources.condenser.removeRecipe(<minecraft:iron_ingot>);
+```zenscript
+//mods.skyresources.condenser.removeRecipe(IItemStack output);
+mods.skyresources.condenser.removeRecipe(<minecraft:iron_ingot>);
+```
