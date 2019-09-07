@@ -18,7 +18,7 @@ You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
 ### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
@@ -35,7 +35,7 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
@@ -50,7 +50,7 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 
