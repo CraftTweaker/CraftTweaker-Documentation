@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
@@ -34,7 +34,7 @@ You can see in the example scripts below what this means.
 
 Before you can build your material, you need to build it:
 
-```JAVA
+```zenscript
 mBuilder.build();
 ```
 
@@ -42,7 +42,7 @@ This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) 
 
 ## Skript-Beispiel
 
-```JAVA
+```zenscript
 import mods.contentTweaker.MaterialSystem;
 
 var builder = MaterialSystem.getMaterialBuilder();
