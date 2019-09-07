@@ -1,6 +1,6 @@
 # The Vat
 
-## Package
+## 所属包名
 
 `import mods.enderio.Vat;`
 
@@ -22,13 +22,16 @@
 
 ## 添加配方
 
-    mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
-    
-    mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
-    
+```zenscript
+mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
+
+mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
+```
 
 ## Removal
 
-    mods.enderio.Vat.removeRecipe(ILiquidStack output);
-    
-    mods.enderio.Vat.removeRecipe(<liquid:ender_distillation>);
+```zenscript
+mods.enderio.Vat.removeRecipe(ILiquidStack output);
+
+mods.enderio.Vat.removeRecipe(<liquid:ender_distillation>);
+```
