@@ -2,13 +2,13 @@
 
 ### 所属类名
 
-```java
+```zenscript
 import mods.roots.Bark;
 ```
 
 #### 方法
 
-```java
+```zenscript
 static void addRecipe(
   string name,        //配方的名称
   IItemStack woodLog, //被挖树皮的原木的物品id
@@ -20,7 +20,7 @@ static void addRecipe(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.Bark;
 
 //注意：当前在该方法中物品的产出数量被忽略，
