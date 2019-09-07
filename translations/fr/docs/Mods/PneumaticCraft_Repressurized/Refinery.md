@@ -16,19 +16,19 @@ You can call the Refinery package using `mods.pneumaticcraft.refinery`.
 
 This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
 
-```java
+```zenscript
 mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
 ```
 
 This function removes the first recipe it finds which matches the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `input`:
 
-```java
+```zenscript
 mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
 ```
 
 This function will remove *all* Refinery recipes:
 
-```java
+```zenscript
 mods.pneumaticcraft.refinery.removeAllRecipes();
 ```
 
@@ -36,7 +36,7 @@ mods.pneumaticcraft.refinery.removeAllRecipes();
 
 These functions add a new recipe to the Refinery:
 
-```java
+```zenscript
 // Add a recipe with the default minimum temperature of 373K (100°C)
 mods.pneumaticcraft.refinery.addRecipe(ILiquidStack input, ILiquidStack[] outputs);
 
