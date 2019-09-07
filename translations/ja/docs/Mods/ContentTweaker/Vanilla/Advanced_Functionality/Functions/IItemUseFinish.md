@@ -2,7 +2,7 @@
 
 The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered only when a user finishes using the item (e.g. finishes eating).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemUseFinish;`
@@ -19,7 +19,7 @@ The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
 
 ## Example
 
-```JAVA
+```zenscript
 zsItem.onItemUseFinish = function(stack, world, player) {
     stack.damage(1, player);
     return stack;
