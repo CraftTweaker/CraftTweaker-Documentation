@@ -164,7 +164,7 @@ If you want to refer to an item in a nested Array, you need two or more referers
 Вы можете добавлять объекты к массиву только по одному, нельзя соединить два массива.  
 Оператор для добавления элементов к массиву &mdash; `&plus;`:
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;
