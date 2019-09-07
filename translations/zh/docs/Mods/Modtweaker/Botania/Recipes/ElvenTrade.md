@@ -2,7 +2,7 @@
 
 The ElvenTrade package is used for adding or removing recipes to/from the Botania Portal to Alfheim.
 
-## Calling
+## 导入包
 
 You can call the ElvenTrade package using `mods.botania.ElvenTrade`
 
@@ -10,13 +10,16 @@ You can call the ElvenTrade package using `mods.botania.ElvenTrade`
 
 You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## 添加配方
 
-    //mods.botania.ElvenTrade.addRecipe(IIngredient[] outputs, IIngredient[] input);
-    mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
-    
+```zenscript
+//mods.botania.ElvenTrade.addRecipe(IIngredient[] outputs, IIngredient[] input);
+mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
+```
 
 ## Recipe removal
 
-    //mods.botania.ElvenTrade.removeRecipe(IIngredient output);
-    mods.botania.ElvenTrade.removeRecipe(<Botania:dreamwood>);
+```zenscript
+//mods.botania.ElvenTrade.removeRecipe(IIngredient output);
+mods.botania.ElvenTrade.removeRecipe(<Botania:dreamwood>);
+```
