@@ -6,11 +6,14 @@
 
 ## 添加配方
 
-    //mods.actuallyadditions.BallOfFur.addReturn(物品输出, 几率);
-    mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
-    
+```zenscript
+//mods.actuallyadditions.BallOfFur.addReturn(物品输出, 几率);
+mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
+```
 
 ## 删除配方
 
-    //mods.actuallyadditions.BallOfFur.removeReturn(被禁止输出的物品);
-    mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+```zenscript
+//mods.actuallyadditions.BallOfFur.removeReturn(被禁止输出的物品);
+mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+```
