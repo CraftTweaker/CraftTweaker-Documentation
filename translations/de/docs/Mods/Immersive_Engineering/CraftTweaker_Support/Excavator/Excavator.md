@@ -1,24 +1,24 @@
 # Excavator
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Datentyp |
+| Benötigt | Type                | Datentyp |
 | -------- | ------------------- | -------- |
-| Required | Name                | string   |
-| Required | Mineral Weight      | int      |
-| Required | Fail Chance         | double   |
-| Required | Ores                | string[] |
-| Required | Chances             | double[] |
+| Benötigt | Name                | string   |
+| Benötigt | Mineral Weight      | int      |
+| Benötigt | Fail Chance         | double   |
+| Benötigt | Ores                | string[] |
+| Benötigt | Chances             | double[] |
 | Optional | Dimension Whitelist | int []   |
 | Optional | Blacklist           | boolean  |
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
 
@@ -35,7 +35,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 
