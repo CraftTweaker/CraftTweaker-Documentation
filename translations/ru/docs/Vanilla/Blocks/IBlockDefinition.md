@@ -2,7 +2,7 @@
 
 The IBlockDefinition objects provide additional information on blocks.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockDefinition;`
@@ -42,37 +42,43 @@ Uses no paramaeters.
 Returns nothing.  
 Does the same as `hardness = -1;`
 
-    defObj.setUnbreakable();
-    
+```zenscript
+defObj.setUnbreakable();
+```
 
 ### Get tickrate in a specific world
 
 Uses an [IWorld](/Vanilla/World/IWorld/) object.  
 Returns an int.
 
-    defObj.getTickRate(IWorld world);
-    
+```zenscript
+defObj.getTickRate(IWorld world);
+```
 
 ### Check if the block can be placed on another block
 
 Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
 
-    defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
-    defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
-    
+```zenscript
+defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
+defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
+```
 
 ### Get the block's slipperiness
 
 Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a float.
 
-    defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
-    
+```zenscript
+defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
+```
 
 ### Set the block's harvest level
 
 Uses a string and an int.  
 Returns void (nothing).
 
-    defObj.setHarvestLevel(string toolclass, int level);
+```zenscript
+defObj.setHarvestLevel(string toolclass, int level);
+```
