@@ -6,4 +6,7 @@ Value is a decimal number between 0 and 2, where 1 is the normal speed without H
 
 HCMovement ONLY accepts Blocks as inputs.
 
-    mods.betterwithmods.Movement.set(IItemStack stack, float value);
+```zenscript
+mods.betterwithmods.Movement.set(IItemStack stack, float value);
+
+```
