@@ -23,12 +23,13 @@
 
 声明全局值和声明局部值一样简单：
 
-    import crafttweaker.item.IItemStack;
-    
-    
-    global myGlobalValue as IItemStack = <minecraft:dirt>;
-    static myStaticValue as IItemStack = <minecraft:sand>;
-    
+```zenscript
+import crafttweaker.item.IItemStack;
+
+
+global myGlobalValue as IItemStack = <minecraft:dirt>;
+static myStaticValue as IItemStack = <minecraft:sand>;
+```
 
 好吧，我们可以把它分析了吗？
 
