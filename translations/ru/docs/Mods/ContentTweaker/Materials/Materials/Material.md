@@ -15,12 +15,12 @@ You can either retrieve an existing Material using the [MaterialSystem](/Mods/Co
 
 You can retrieve the following information from a Material:
 
-| ZenMethod            | Return Type | Description                                    |
-| -------------------- | ----------- | ---------------------------------------------- |
-| getName()            | string      | Returns the Material's name                    |
-| getColor()           | int         | Returns the Material's color                   |
-| isHasEffect()        | boolean     | Returns if the material has the glowing effect |
-| getUnlocalizedName() | string      | Returns the Material's unlocalized name        |
+| ZenMethod            | Возвращаемый тип | Description                                    |
+| -------------------- | ---------------- | ---------------------------------------------- |
+| getName()            | string           | Returns the Material's name                    |
+| getColor()           | int              | Returns the Material's color                   |
+| isHasEffect()        | boolean          | Returns if the material has the glowing effect |
+| getUnlocalizedName() | string           | Returns the Material's unlocalized name        |
 
 ## Register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/)
 
@@ -28,7 +28,7 @@ You can either register parts using the [part object](/Mods/ContentTweaker/Mater
 You can also either register a single part or multiple at once.  
 So you got 4 options in total:
 
-```JAVA
+```zenscript
 registerParts(String[] partNames);
 registerParts(IPart[] parts);
 
