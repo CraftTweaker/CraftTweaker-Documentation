@@ -2,13 +2,13 @@
 
 ### 所属类名
 
-```java
+```zenscript
 import mods.roots.Fey;
 ```
 
 #### 可用方法
 
-```java
+```zenscript
 static void addRecipe(
   string name,         //配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
   IItemStack output,   //配方产物的物品id。
@@ -18,7 +18,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addRecipe(
   string name,          // 配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
   IItemStack output,    // 配方产物的物品id。
@@ -29,7 +29,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output //你希望移除的配方的产物
 );
@@ -39,7 +39,7 @@ static void removeRecipe(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.Fey;
 
 // 添加用四个火药和一个红色羊毛合成一个TNT的配方
