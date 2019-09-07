@@ -6,12 +6,13 @@ ZenClass 是暴露给 ZenScript 的 Java 类。
 
 [CraftTweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
-    @ZenClass("crafttweaker.item.IItemStack")
-    @ZenRegister
-    public interface IItemStack extends IIngredient {
-        //Cut out to keep the page short
-    }
-    
+```java
+@ZenClass("crafttweaker.item.IItemStack")
+@ZenRegister
+public interface IItemStack extends IIngredient {
+    //Cut out to keep the page short
+}
+```
 
 实际实现不需要注解。
 
