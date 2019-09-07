@@ -24,15 +24,16 @@ The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweak
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
-    //property name: healAmount
-    //ZenGetter
-    print(item.healAmount);
-    //ZenSetter
-    item.healAmount = 16;
-    //ZenMethods
-    item.getHealAmount();
-    item.setHealAmount(64);
-    
+```zenscript
+//property name: healAmount
+//ZenGetter
+print(item.healAmount);
+//ZenSetter
+item.healAmount = 16;
+//ZenMethods
+item.getHealAmount();
+item.setHealAmount(64);
+```
 
 | Property        | 类型                                                                                              | Required | Default Value | Description/Notes                                           |
 | --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
@@ -48,4 +49,6 @@ You need to call this method to register the item in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the item or change any of it's properties!
 
-    item.register();
+```zenscript
+item.register();
+```
