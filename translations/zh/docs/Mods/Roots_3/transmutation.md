@@ -1,14 +1,14 @@
 # Ritual of Transmutation
 
-### Class
+### 所属类名
 
-```java
+```zenscript
 import mods.roots.Transmutation;
 ```
 
-#### Methods
+#### 可用方法
 
-```java
+```zenscript
 static void removeRecipe(
   string name // the name of the recipe being removed
 );
@@ -16,7 +16,7 @@ static void removeRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addBlockToBlockRecipe(
   string name,        // the name of the recipe being added (must be unique)
   IBlockState state1, // the initial state of the block as defined as a blockstate
@@ -26,7 +26,7 @@ static void addBlockToBlockRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addBlockToItemRecipe(
   string name,       // the name of the recipe being added (must be unique)
   IBlockState state, // the initial state that is looked for when converting (as a block state)
@@ -36,9 +36,9 @@ static void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### 例子
 
-```java
+```zenscript
 import mods.roots.Transmutation;
 
 // Removes the default pumpkin-over-water-to-melon recipe
@@ -51,7 +51,7 @@ Transmutation.addBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:e
 Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
 ```
 
-### Notes
+### 注意
 
 **Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
 
