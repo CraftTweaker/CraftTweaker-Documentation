@@ -12,10 +12,11 @@
 
 ## Addition
 
-    mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
-    
-    mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
-    
+```zenscript
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
+
+mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
+```
 
 ## Removal
 
