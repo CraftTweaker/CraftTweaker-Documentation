@@ -7,25 +7,25 @@ There also are some examples in certain entries to provide further clarity.
 
 Перед тем как начать, вы должны понять некоторые термины:
 
-## ZenGetter
+## Геттер
 
-A ZenGetter is a way of retrieving information from a certain object. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть ZenGetter displayName.  
-Мы используем ZenGetter вот так:
+Геттер ZenScipt — способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
+Мы используем геттер вот так:
 
     //объект.zenGetter;
     <minecraft:iron_ingot>.displayName;
     
 
-ZenGetter всегда что-нибудь возвращает, в данном случае &mdash; текстовое представление имени предмета ("Iron Ingot").
+Геттер всегда что-нибудь возвращает, в данном случае &mdash; текстовое представление имени предмета ("Iron Ingot").
 
-## ZenSetter
+## Сеттер
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+Сеттер работает почти так же, как и геттер, единственное отличие в том, что сеттер устанавливает значение, а геттер &mdash; получает.  
+Давайте снова начнем с [IItemStack](/Vanilla/Items/IItemStack/), у которого также есть сеттер displayName. Мы знаем, что тип этой записи &mdash; строка.
 
-Мы используем ZenSetter'ы вот так:
+Мы используем сеттеры ZenScipt вот так:
 
-    //объект.zenSetter = новоеЗначение;
+    //объект.сеттер = новоеЗначение;
     <minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
     
 
