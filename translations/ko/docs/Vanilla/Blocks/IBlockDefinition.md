@@ -40,35 +40,41 @@ IBlockDefinition 객체는 블럭의 추가정보를 제공합니다.
 
 인수 없고, </0> 반환 없고, </0> hardness = -1과 동일한 결과입니다.
 
-    defObj.setUnbreakable();
-    
+```zenscript
+defObj.setUnbreakable();
+```
 
 ### 특정 월드의 틱 속도 얻기
 
 </a>IWorld</0> 객체를 사용하며, </1> int형의 값을 반환합니다.
 
-    defObj.getTickRate(IWorld world);
-    
+```zenscript
+defObj.getTickRate(IWorld world);
+```
 
 ### 블럭을 다른 블럭위에 위치할 수 있는지를 체크
 
 어떤 메소드를 사용하는지에 다르겠지만 [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/), [IFacing](/Vanilla/World/IFacing/) 객체를 사용하면 되며, bool타입의 값을 반환합니다.
 
-    defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
-    defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
-    
+```zenscript
+defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
+defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
+```
 
 ### 블럭의 미끄러움 정도를 얻기
 
 [IBlockState](/Vanilla/Blocks/IBlockState/), [IBlockAccess](/Vanilla/World/IBlockAccess/), [IBlockPos](/Vanilla/World/IBlockPos/) 및 선택적 [IEntity](/Vanilla/Entities/IEntity/) 객체를 사용하며,   
 float타입의 결과를 반환합니다.
 
-    defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
-    
+```zenscript
+defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
+```
 
 ### 블럭의 하베스트 레벨을 설정
 
 string타입의 인수와 int타입의 인수를 지정하며  
 반환값은 없습니다. 
 
-    defObj.setHarvestLevel(string toolclass, int level);
+```zenscript
+defObj.setHarvestLevel(string toolclass, int level);
+```
