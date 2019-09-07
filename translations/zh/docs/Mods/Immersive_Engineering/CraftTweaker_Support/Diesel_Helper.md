@@ -8,14 +8,14 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 
 ## Add Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | 类型     | Data Type                                    |
 | -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input  | Integer                                      |
+| 必要       | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | Input  | Integer                                      |
 
-### Example
+### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
 
@@ -24,13 +24,13 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 
 ## Remove Fuel
 
-| Required | Type   | Data Type                                    |
+| Required | 类型     | Data Type                                    |
 | -------- | ------ | -------------------------------------------- |
 | Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
 
@@ -45,7 +45,7 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
 
@@ -60,7 +60,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
 
