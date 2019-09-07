@@ -6,8 +6,9 @@ The HighOven package allows to add/remove fuels, heat recipes and mix recipes to
 
 Import the package using
 
-    import mods.tcomplement.highoven.HighOven;
-    
+```zenscript
+import mods.tcomplement.highoven.HighOven;
+```
 
 ## Fuels
 
@@ -15,15 +16,17 @@ You can add and remove fuels accepted by the high oven.
 
 ### Removing fuels
 
-    // HighOven.removeFuel(IIngredient fuel);
-    HighOven.removeFuel(<minecraft:coal:1>);
-    
+```zenscript
+// HighOven.removeFuel(IIngredient fuel);
+HighOven.removeFuel(<minecraft:coal:1>);
+```
 
 ### Adding fuels
 
-    // HighOven.addFuel(IIngredient fuel, int time, int rate);
-    HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
-    
+```zenscript
+// HighOven.addFuel(IIngredient fuel, int time, int rate);
+HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
+```
 
 + `fuel` is the fuel to add (supports transformers, NBT and fluid containers)
 + `time` is how long the fuel lasts, in seconds
@@ -35,17 +38,19 @@ You can add and remove melting overrides for the High Oven. Melting overrides, w
 
 ### Removing overrides
 
-    // HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
-    HighOven.removeMeltingOverride(<liquid:iron>);
-    
+```zenscript
+// HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
+HighOven.removeMeltingOverride(<liquid:iron>);
+```
 
 ### Adding overrides
 
 This is more interesting. Overrides specify a new behavior for items in the High Oven
 
-    // HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
-    HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
-    
+```zenscript
+// HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
+HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
+```
 
 + `output` the liquid and amount to produce
 + `input` the IIngredient to smelt. Supports transformers, oredict etc.
@@ -57,9 +62,10 @@ Heat recipes transform a fluid into another in the high oven tank, provided the 
 
 ### Removing heat recipes
 
-    // HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
-    HighOven.removeHeatRecipe(<liquid:steam>);
-    
+```zenscript
+// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
+HighOven.removeHeatRecipe(<liquid:steam>);
+```
 
 + `output` is the output for which recipes should be disabled
 + `input` is optionally the inputs to filter recipes with. If unspecified (or `null`), all recipes producing the supplied output will be disabled. Otherwise, only the recipe with the given input is disabled.
@@ -68,9 +74,10 @@ Heat recipes transform a fluid into another in the high oven tank, provided the 
 
 ### Adding heat recipes
 
-    // HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
-    HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
-    
+```zenscript
+// HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
+HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
+```
 
 + `output` the liquid to pruduce, and in which quantity
 + `input` the liquid to consume, and in which quantity, to produce the output quantity
@@ -88,9 +95,10 @@ Since those recipes are complicated, adding or tweaking existing ones uses a spe
 
 This is the easy part for mix recipes
 
-    // HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
-    HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
-    
+```zenscript
+// HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
+HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
+```
 
 The arguments are the same as `removeHeatRecipe()` and the matching works the same way. Similarly to `removeHeatRecipe()`, this method will not remove recipes added by ModTweaker.
 
@@ -98,11 +106,12 @@ The arguments are the same as `removeHeatRecipe()` and the matching works the sa
 
 To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
 
-    import mods.tcomplements.highoven.MixRecipeBuilder;
-    
-    // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
-    var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
-    
+```zenscript
+import mods.tcomplements.highoven.MixRecipeBuilder;
+
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
+var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
+```
 
 + `output` is the fluid and quantity to produce
 + `input` is the fluid and quantity to consume
@@ -110,12 +119,13 @@ To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
 
 Once you have a `MixRecipeBuilder`, you should add oxidizers, reducers and purifiers to it, and then register it.
 
-    builder.addOxidizer(<minecraft:redstone>, 95);
-    builder.addReducer(<minecraft:glowstone>, 5);
-    builder.addPurifier(<ore:dustCoal>, 50);
-    builder.addPurifier(<minecraft:nether_star>, 0);
-    builder.register();
-    
+```zenscript
+builder.addOxidizer(<minecraft:redstone>, 95);
+builder.addReducer(<minecraft:glowstone>, 5);
+builder.addPurifier(<ore:dustCoal>, 50);
+builder.addPurifier(<minecraft:nether_star>, 0);
+builder.register();
+```
 
 For a detailed documentation of what you can do with a `MixRecipeBuilder`, see its documentation.
 
@@ -127,19 +137,21 @@ NOTE*: Once you have used a `MixRecipeBuilder`, you can keep modifying it and re
 
 To change existing mix recipes (**including** those added by ModTweaker), you can use a `MixRecipeManager`:
 
-    import mods.tcomplement.highoven.MixRecipeManager;
-    
-    // HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
-    var manager = HighOven.manageMixRecipe(<liquid:steel>);
-    
+```zenscript
+import mods.tcomplement.highoven.MixRecipeManager;
+
+// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
+var manager = HighOven.manageMixRecipe(<liquid:steel>);
+```
 
 As usual, not specifying the input (or providing `null`) result in a wildcard behavior where all input will be accepted.
 
 Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. Removals have priority on additions.
 
-    manager.removeOxidizer(<minecraft:redstone>);
-    manager.addPurifier(<minecraft:dirt>, 25);
-    
+```zenscript
+manager.removeOxidizer(<minecraft:redstone>);
+manager.addPurifier(<minecraft:dirt>, 25);
+```
 
 The behavior might be a little surpring at times. When you disable an additive, any additive addition that would allow what you disable will be canceled. For instance, if you add a bunch of items using a single `OreDictEntry`, then try to remove a specific `IItemStack`, it will prevent the entry from being added.
 
