@@ -14,7 +14,7 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type                                                            |
+| ZenGetter       | ZenMethod           | 반환 타입                                                                  |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
 | blocksLight     | blocksLight()       | bool                                                                   |
 | blocksMovement  | blocksMovement()    | bool                                                                   |
@@ -30,5 +30,7 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 You can use the `==` operator to see if two MaterialDefinitions are equal
 
-    if(materialA == materialB)
-        print("success!");
+```zenscript
+if(materialA == materialB)
+    print("success!");
+```
