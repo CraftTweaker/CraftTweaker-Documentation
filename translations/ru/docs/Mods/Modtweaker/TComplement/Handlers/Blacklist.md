@@ -8,11 +8,14 @@ You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
 ## Blacklist entry addition
 
-    //mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
-    mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
-    
+```zenscript
+//mods.tcomplement.Blacklist.addRecipe(ILiquidStack output, IItemStack input);
+mods.tcomplement.Blacklist.addRecipe(<liquid:seared_stone>, <minecraft:stone>);
+```
 
 ## Blacklist entry removal
 
-    //mods.tcomplement.Blacklist.removeRecipe(IItemStack input);
-    mods.tcomplement.Blacklist.removeRecipe(<minecraft:cobblestone>);
+```zenscript
+//mods.tcomplement.Blacklist.removeRecipe(IItemStack input);
+mods.tcomplement.Blacklist.removeRecipe(<minecraft:cobblestone>);
+```
