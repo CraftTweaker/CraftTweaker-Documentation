@@ -6,8 +6,9 @@ The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/C
 
 If you ever feel the need to import this function's class, here you go:
 
-    import mods.contenttweaker.IItemUpdate;
-    
+```zenscript
+import mods.contenttweaker.IItemUpdate;
+```
 
 ## Syntax
 
@@ -19,7 +20,9 @@ We have a void function that takes the following parameters (in order)
 - An int representing the slot the item currently is in
 - A boolean stating whether or not the item is currently selected.
 
-    item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
-        //CODE GOES HERE!!
-        return;
-    }
+```zenscript
+item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+    //CODE GOES HERE!!
+    return;
+}
+```
