@@ -8,7 +8,7 @@ You can call the Alloy package using `mods.tconstruct.Fuel`
 
 ## Add Fuel Recipes
 
-```JAVA
+```zenscript
 //mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
