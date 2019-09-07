@@ -11,11 +11,11 @@ The following commands are added to retrieve information about the availible mer
 
 `mods.rockycore.Merchant`
 
-## Addition
+## 添加配方
 
 Trades can be added to a specific merchant profession & carrer.
 
-```java
+```zenscript
 // addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
 mods.rockycore.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
