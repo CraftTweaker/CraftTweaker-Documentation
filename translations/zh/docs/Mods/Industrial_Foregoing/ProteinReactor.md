@@ -1,19 +1,23 @@
 # Protein Reactor
 
-### Importing
+### 导入
 
-    import mods.industrialforegoing.ProteinReactor;
-    
+```zenscript
+import mods.industrialforegoing.ProteinReactor;
+```
 
-### Adding
+### 添加配方
 
-    ProteinReactor.add(IItemStack input);
-    
-    ProteinReactor.add(<minecraft:diamond>);
-    
+```zenscript
+ProteinReactor.add(IItemStack input);
 
-### Removing
+ProteinReactor.add(<minecraft:diamond>);
+```
 
-    ProteinReactor.remove(IItemStack input);
-    
-    ProteinReactor.remove(<minecraft:diamond>);
+### 移除配方
+
+```zenscript
+ProteinReactor.remove(IItemStack input);
+
+ProteinReactor.remove(<minecraft:diamond>);
+```
