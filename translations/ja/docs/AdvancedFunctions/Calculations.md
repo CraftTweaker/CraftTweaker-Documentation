@@ -26,9 +26,10 @@ I'm pretty sure all of you know these already, don't you?
 
 Puts one thing at the and of the other
 
-    //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
-    
+```zenscript
+//prints "Hello World"
+print("Hello" ~ " " ~ "World");
+```
 
 ## Calculation results
 
@@ -38,20 +39,21 @@ A calculation usually ends up with a result. So what to do with that?
 
 There are two ways of assigning a value to a variable:
 
-    var test = 0;
-    
-    //Option 1:
-    //assigns test with the value 3 (1+2)
-    test = 1+2;
-    
-    //Option 2:
-    //assigns test with 5 (3+2)
-    test = test + 2;
-    
-    //Option 3:
-    //assigns test with 2 (5-3)
-    test -= 3;
-    
+```zenscript
+var test = 0;
+
+//Option 1:
+//assigns test with the value 3 (1+2)
+test = 1+2;
+
+//Option 2:
+//assigns test with 5 (3+2)
+test = test + 2;
+
+//Option 3:
+//assigns test with 2 (5-3)
+test -= 3;
+```
 
 Option 1 and 2 assign the return variable using the `=` token.  
 This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
@@ -63,11 +65,13 @@ All Operators on on this page have their respective assign tokens, check the tab
 
 You can always use the result of a calculation in a function or a conditional statement:
 
-    //prints 4
-    print(3+1);
-    
-    //removes the item on array[4]
-    recipes.remove(array[3+1]);
-    
-    //
-    if(3+1 == 2*2) {print("Used a calculation!")}
+```zenscript
+//prints 4
+print(3+1);
+
+//removes the item on array[4]
+recipes.remove(array[3+1]);
+
+//
+if(3+1 == 2*2) {print("Used a calculation!")}
+```
