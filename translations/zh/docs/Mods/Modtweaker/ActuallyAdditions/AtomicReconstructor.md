@@ -6,11 +6,14 @@
 
 ## 添加配方
 
-    //mods.actuallyadditions.AtomicReconstructor.addRecipe(物品输入, 物品输出, 使用能量);
-    mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
-    
+```zenscript
+//mods.actuallyadditions.AtomicReconstructor.addRecipe(物品输入, 物品输出, 使用能量);
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
+```
 
 ## 删除配方
 
-    //mods.actuallyadditions.AtomicReconstructor.removeRecipe(删除该物品的该合成来源);
-    mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:coal>);
+```zenscript
+//mods.actuallyadditions.AtomicReconstructor.removeRecipe(删除该物品的该合成来源);
+mods.actuallyadditions.AtomicReconstructor.removeRecipe(<minecraft:coal>);
+```
