@@ -5,25 +5,27 @@ ZenCasters can be used to convert one type into another (e.g. [Strings to IData]
 
 ## Beispiel
 
-    @ZenExpansion("crafttweaker.item.IItemStack")
-    @ZenRegister
-    public class Expansion {
-        @ZenMethod
-        public static void print(IItemStack stack) {
-            CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
-        }
-    
-        @ZenCaster
-        public static IOreDictEntry asOreDict(IItemStack stack) {
-            return stack.getOres().get(0);
-        }
+```java
+@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenRegister
+public class Expansion {
+    @ZenMethod
+    public static void print(IItemStack stack) {
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
     }
-    
+
+    @ZenCaster
+    public static IOreDictEntry asOreDict(IItemStack stack) {
+        return stack.getOres().get(0);
+    }
+}
+```
 
 If someone now would call this, they would get an oreDictEntry:
 
-    val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
-    
+```zenscript
+val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
+```
 
 ## What methods can be annotated || Additional Info
 
