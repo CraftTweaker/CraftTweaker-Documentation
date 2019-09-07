@@ -2,13 +2,13 @@
 
 ### 类
 
-```java
+```zenscript
 import mods.roots.Pyre;
 ```
 
 #### 方法
 
-```java
+```zenscript
 static void addRecipe(
   string name,         // 这个配方的名字，如果它取代了一个已有的配方，请确保当前的名字已被使用。
   IItemStack output,   //这个配方的产物。
@@ -18,7 +18,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void addRecipe(
   string name,          //这个配方的名字，如果它取代了一个已有的配方，请确保当前的名字已被使用。
   IItemStack output,    // 这个配方的产物。
@@ -29,7 +29,7 @@ static void addRecipe(
 
 * * *
 
-```java
+```zenscript
 static void removeRecipe(
   IItemStack output //所移除的配方产物。
 );
@@ -39,7 +39,7 @@ static void removeRecipe(
 
 ### 例子
 
-```java
+```zenscript
 import mods.roots.Pyre;
 
 // 移除合成配方，就像下方语句提到的石笋；
