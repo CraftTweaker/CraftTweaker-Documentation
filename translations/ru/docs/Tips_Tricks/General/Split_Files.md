@@ -20,18 +20,19 @@
 
 ## Пример
 
-    scripts
-        thermalExpansion
-            Compactor.zs
-            Crucible.zs
-        Vanilla
-            Recipes
-                Remove.zs
-                Shaped.zs
-                Shapeless.zs
-            Seeds.zs
-        oreDict.zs
-    
+```zenscript
+scripts
+    thermalExpansion
+        Compactor.zs
+        Crucible.zs
+    Vanilla
+        Recipes
+            Remove.zs
+            Shaped.zs
+            Shapeless.zs
+        Seeds.zs
+    oreDict.zs
+```
 
 ## Advantages
 
