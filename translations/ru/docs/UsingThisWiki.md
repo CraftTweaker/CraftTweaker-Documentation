@@ -29,18 +29,18 @@ There also are some examples in certain entries to provide further clarity.
     <minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
     
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+Сеттер никогда ничего не возвращает, потому что он предназначен для установки, а не получения данных.
 
 ## Операторы присваивания
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+Если у объекта есть и геттер, и сеттер с одинаковым названием (например, [ItemStack.displayName](/Vanilla/Items/IItemStack/)), вы можете использовать другие операторы присваивания помимо `=`:
 
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
+    //Так как у нас есть геттер и сеттер с одинаковыми именами, первый можно совмещать:
+    //объект.сеттер += значение;
+    //объект.сеттер = объект.геттер + значение;
     
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+    <minecraft:iron_ingot>.displayName += " судьбы";
+    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " судьбы";
