@@ -14,13 +14,16 @@
 
 ## Addition
 
-    mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
-    
-    mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
-    
+```zenscript
+mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
+
+mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
+```
 
 ## Removal
 
-    mods.enderio.SoulBinder.removeRecipe(IItemStack output);
-    
-    mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:19>);
+```zenscript
+mods.enderio.SoulBinder.removeRecipe(IItemStack output);
+
+mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:19>);
+```
