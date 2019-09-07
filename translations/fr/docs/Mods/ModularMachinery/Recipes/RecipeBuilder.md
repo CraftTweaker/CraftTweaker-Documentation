@@ -10,12 +10,15 @@ You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
 
 These are the only functions to be found in the class, they both return a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object.
 
-    //mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
-    
-    
-    //mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
-    
-    
-    
+```zenscript
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime);
 
-    var item = <item:minecraft:gold_ingot>;
+
+//mods.modularmachinery.RecipeBuilder.newBuilder(String recipeRegistryName, String associatedMachineRegistryName, int processingTickTime, int sortingPriority);
+
+
+```
+
+```zenscript
+var item = <item:minecraft:gold_ingot>;
+```
