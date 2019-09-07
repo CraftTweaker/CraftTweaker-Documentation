@@ -164,7 +164,7 @@ Auch wenn es nicht empfehlenswert ist, kann man nachträglich Elemente an ein Ar
 Man kann nur einzelne Elemente an ein Array anhängen, zwei Arrays addieren ist nicht möglich.  
 Dazu kannst du den Operator `+` verwenden:
 
-```java
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val iron = <minecraft:iron_ingot>;
