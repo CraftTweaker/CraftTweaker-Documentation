@@ -2,7 +2,7 @@
 
 The `Drying` package allows you to add or remove Drying recipes.
 
-## Calling
+## 导入包
 
 You can call the Drying package using `mods.tconstruct.Drying`
 
@@ -10,14 +10,17 @@ You can call the Drying package using `mods.tconstruct.Drying`
 
 The time is in ticks
 
-    //mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
-    mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
-    
+```zenscript
+//mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
+mods.tconstruct.Drying.addRecipe(<minecraft:leather>,<minecraft:rotten_flesh>, 100);
+```
 
-## Removing
+## 移除
 
-    //mods.tconstruct.Drying.removeRecipe(IItemStack output);
-    mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
-    
-    //mods.tconstruct.Drying.removeRecipe(IItemStack output, IItemStack input);
-    mods.tconstruct.Drying.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+```zenscript
+//mods.tconstruct.Drying.removeRecipe(IItemStack output);
+mods.tconstruct.Drying.removeRecipe(<minecraft:leather>);
+
+//mods.tconstruct.Drying.removeRecipe(IItemStack output, IItemStack input);
+mods.tconstruct.Drying.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
+```
