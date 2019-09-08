@@ -4,7 +4,7 @@ The Material Part Bracket Handler gives you access to the [Tinkers' Materials](/
 
 Materials are referenced in the Material Bracket handler this way:
 
-```
+```zenscript
 <ticmat:mat>
 
 <ticmat:stone>

@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Therma
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStack liquidOutput);
 
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
@@ -12,7 +12,7 @@ mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:la
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
 
 mods.mekanism.thermalevaporation.removeRecipe(<liquid:water>, <liquid:brine>);
@@ -23,6 +23,6 @@ Specifying an output parameter will only remove the specific recipe that results
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.thermalevaporation.removeAllRecipes();
 ```

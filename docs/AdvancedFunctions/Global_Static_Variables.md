@@ -23,7 +23,7 @@ Aside from that, they are identical!
 ## Declaring a global value
 Declaring a global value is as simple as declaring a local value:
 
-```
+```zenscript
 import crafttweaker.item.IItemStack;
 
 

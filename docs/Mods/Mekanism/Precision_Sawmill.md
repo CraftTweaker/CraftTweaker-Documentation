@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Precis
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.sawmill.addRecipe(IIngredient inputStack, IItemStack outputStack, @Optional IItemStack bonusOutput, @Optional double bonusChance);
 
 mods.mekanism.sawmill.addRecipe(<minecraft:bow>, <minecraft:stick> * 3, <minecraft:string> * 3, 0.5);
@@ -17,7 +17,7 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.sawmill.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack, @Optional IIngredient bonusOutput);
 
 mods.mekanism.sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecraft:wool>);
@@ -28,6 +28,6 @@ Specifying an output parameter will only remove the specific recipe that results
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Precision Sawmill recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.sawmill.removeAllRecipes();
 ```

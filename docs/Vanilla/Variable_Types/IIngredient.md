@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 Usually, you won't need this, but in some cases recipes won't work until you [import](/AdvancedFunctions/Import/) the IIngredient package.  
 You can do this using the following import:
-```
+```zenscript
 import crafttweaker.item.IIngredient;
 ```
 
@@ -21,7 +21,7 @@ So, what can we do with this?
 ### Command String
 The command string is how you would call this item in ZS.  
 This can be a bracket handler or something similar.  
-```
+```zenscript
 val item = <minecraft:iron_ingot>;
 
 //prints "<minecraft:iron_ingot>"
@@ -33,7 +33,7 @@ print(item.commandString);
 You can mark an IIngredient so you can later use it in [crafting functions](/Vanilla/Recipes/Crafting/Recipe_Functions/).
 You can also retrieve the mark applied earlier.
 
-```
+```zenscript
 //Marks the pick with the String Picky
 //item.marked(name) <-- Name is a string!
 val markedPick = <minecraft:diamond_pickaxe>.marked("Picky");
@@ -47,7 +47,7 @@ print(markedPick.mark);
 If you want to use more than one of a given item, you can set an amount to an IIngredient.  
 This is as easy as multiplying the IIngredient with an Integer.  
 Retrieveing the amount is also possible.
-```
+```zenscript
 val multipleApples = <minecraft:apple> * 3;
 
 //prints 3
@@ -57,7 +57,7 @@ print(multipleApples.amount);
 ### OR-ing an IIngredient
 Sometimes you want either IIngredient X or Y, but don't want to create a recipe for each possibility?
 That's why there's the OR Method for IIngredients:
-```
+```zenscript
 val item1 = <minecraft:apple>;
 val item2 = <minecraft:carrot>;
 
@@ -74,7 +74,7 @@ The second function does the same as the first function but returns a [IItemStac
 Same goes for liquids in the third function, only they return an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) List.
 
 
-```
+```zenscript
 //Returns an IItemStack List
 //possible items: All iron ingots and the gold ingot from MC
 val itemsIngredient = <ore:ingotIron> | <minecraft:gold_ingot>;
@@ -111,7 +111,7 @@ for liquid in <minecraft:water_bucket>.liquids {
 Sometimes you want an item not to be consumed upon crafting but instead receive damaged or give back a completely different item.  
 This is what item Transformers are there for. 
 
-```
+```zenscript
 
 val item = <minecraft:apple>;
 
@@ -144,7 +144,7 @@ transformedItem = item.transformConsume(3);
 Sometimes you want your ingredient to have a specific tag or to only work if (not) damaged.
 These Conditions can be added to your Ingredients using the following:
 
-```
+```zenscript
 val item = <minecraft:apple>;
 
 //Item will only be accepted with at least 1 point damage
@@ -176,13 +176,12 @@ conditionedItem = item.onlyStack(32);
 If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean.
 If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
 
-```
+```zenscript
 print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 You can also match two IIngredient Objects, in which case you'd need to use the in operator:
 
-```
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
 val oreIngot = <ore:ingotIron>;
 val ingotGold = <minecraft:gold_ingot>;

@@ -5,7 +5,7 @@ ZenCasters can be used to convert one type into another (e.g. [Strings to IData]
 
 ## Example
 
-```
+```java
 @ZenExpansion("crafttweaker.item.IItemStack")
 @ZenRegister
 public class Expansion {
@@ -22,7 +22,7 @@ public class Expansion {
 ```
 
 If someone now would call this, they would get an oreDictEntry:
-```
+```zenscript
 val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
 ```
 

@@ -14,6 +14,6 @@ IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That m
 #### Check if the mob is preventing a player's sleep
 The Method requires an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a bool.
-```
+```zenscript
 entMobObj.isPreventingPlayerRest(IPlayer player);
 ```

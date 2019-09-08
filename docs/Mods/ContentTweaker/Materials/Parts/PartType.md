@@ -46,7 +46,7 @@ If you, for whatever reason would ever need to register a new PartType, you will
 The first is simple, it's a string.  
 The second is a bit trickier, it's a function that takes a MaterialPart as input:
 
-```JAVA
+```zenscript
 #loader contenttweaker
 
 

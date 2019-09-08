@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Electr
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasStack outputGas1, IGasStack outputGas2);
 
 mods.mekanism.separator.addRecipe(<liquid:liquidfusionfuel>, 5000, <gas:deuterium>, <gas:tritium>);
@@ -12,7 +12,7 @@ mods.mekanism.separator.addRecipe(<liquid:liquidfusionfuel>, 5000, <gas:deuteriu
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.separator.removeRecipe(IIngredient inputFluid, @Optional IIngredient outputGas1, @Optional IIngredient outputGas2);
 
 mods.mekanism.separator.removeRecipe(<liquid:heavywater>, <gas:deuterium>, <gas:oxygen>);
@@ -23,6 +23,6 @@ Specifying an output parameter will only remove the specific recipe that results
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Electrolytic Separator recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.separator.removeAllRecipes();
 ```

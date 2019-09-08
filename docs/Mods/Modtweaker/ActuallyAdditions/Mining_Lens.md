@@ -8,7 +8,7 @@
 
 
 
-```
+```zenscript
 //mods.actuallyadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);
 mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
 
@@ -19,7 +19,7 @@ mods.actuallyadditions.MiningLens.addNetherOre(<ore:oreGold>, 5);
 
 ## Removal
 
-```
+```zenscript
 //mods.actuallyadditions.MiningLens.removeStoneOre(IOreDictEntry ore)
 mods.actuallyadditions.MiningLens.removeStoneOre(<ore:oreIron>)
 

@@ -4,13 +4,13 @@ A `MixRecipeManager` is used to modify existing high oven mix recipe, including 
 
 ## Importing the package
 Better be safe than sorry and import the package
-```
+```zenscript
 import mods.tcomplement.highoven.MixRecipeManager;
 ```
 
 ## Getting a `MixRecipeManager`
 The `HighOven` handler can give you a `MixRecipeManager`:
-```
+```zenscript
 // HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
 var manager = HighOven.manageMixRecipe(<liquid:steel>);
 ```

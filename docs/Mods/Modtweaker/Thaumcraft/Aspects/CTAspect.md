@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## Retrieving such an object
 You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
-```
+```zenscript
 val aspect = <aspect:ignis>.internal;
 ```
 

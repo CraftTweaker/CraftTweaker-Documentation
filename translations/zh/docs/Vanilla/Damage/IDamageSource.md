@@ -40,7 +40,7 @@ IDamageSource 对象是实体受伤的来源。
 
 你也可以使用这些方法或 [Damage Source Bracket Handler](/Vanilla/Brackets/Bracket_DamageSource/)。
 
-```kotlin
+```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
 crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)

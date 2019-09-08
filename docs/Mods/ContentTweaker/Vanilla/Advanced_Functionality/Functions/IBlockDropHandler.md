@@ -4,7 +4,7 @@ The IBlockDropHandler function is used to allow for advanced block drop handling
 
 ## Importing the class
 You want to import the class? Here you go:
-```
+```zenscript
 import mods.contenttweaker.DropHandler;
 ```
 
@@ -23,7 +23,7 @@ Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
 ## Example
 
-```
+```zenscript
 block.setDropHandler(function(drops, world, position, state) {
 	
 	drops.add(<item:minecraft:bedrock>);

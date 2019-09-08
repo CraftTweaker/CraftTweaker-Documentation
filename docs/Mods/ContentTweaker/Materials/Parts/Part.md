@@ -71,7 +71,7 @@ You can retrieve the following information from a Part:
 
 ## Register to Material(s)
 You can use this to register one or several Materials to this part
-```
+```zenscript
 part.registerToMaterial(Material material);
 part.registerToMaterials(Material[] materials);
 ```

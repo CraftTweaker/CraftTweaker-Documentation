@@ -78,7 +78,7 @@ if(enchA == enchB)
 
 ## Beispiel
 
-```javascript
+```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;
 

@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Solar 
  
 Addition
 ------
-```
+```zenscript
 mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasOutput);
 
 mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
@@ -12,7 +12,7 @@ mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtr
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
 
 mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
@@ -23,6 +23,6 @@ Specifying an output parameter will only remove the specific recipe that results
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Solar Neutron Activator recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.solarneutronactivator.removeAllRecipes();
 ```

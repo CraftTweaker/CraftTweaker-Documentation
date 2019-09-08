@@ -40,7 +40,7 @@
 
 Вы можете воспользоваться методами ниже либо [обработчиком скобок для источника урона](/Vanilla/Brackets/Bracket_DamageSource/).
 
-```kotlin
+```zenscript
 crafttweaker.damage.IDamageSource.createMobDamage(IEntityLivingBase mob)
 crafttweaker.damage.IDamageSource.createIndirectDamage(IEntity source, IEntityLivingBase indirectEntityIn)
 crafttweaker.damage.IDamageSource.createPlayerDamage(IPlayer player)

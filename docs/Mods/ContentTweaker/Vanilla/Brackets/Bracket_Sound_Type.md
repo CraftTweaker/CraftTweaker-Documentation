@@ -24,7 +24,7 @@ Currently the only soundTypes supported are:
 
 SoundTypes are referenced in the SoundType Bracket handler this way:
 
-```
+```zenscript
 <soundtype:name>
 
 <soundtype:wood>

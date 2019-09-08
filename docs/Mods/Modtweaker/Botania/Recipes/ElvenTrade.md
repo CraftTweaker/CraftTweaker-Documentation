@@ -10,14 +10,14 @@ You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mod
 
 ## Recipe addition
 
-```
+```zenscript
 //mods.botania.ElvenTrade.addRecipe(IIngredient[] outputs, IIngredient[] input);
 mods.botania.ElvenTrade.addRecipe([<minecraft:iron_ingot>], [<minecraft:dirt>,<minecraft:grass>]);
 ```
 
 ## Recipe removal
 
-```
+```zenscript
 //mods.botania.ElvenTrade.removeRecipe(IIngredient output);
 mods.botania.ElvenTrade.removeRecipe(<Botania:dreamwood>);
 ```

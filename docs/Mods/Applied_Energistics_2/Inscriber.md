@@ -2,13 +2,13 @@
 
 ### Importing
 
-```
+```zenscript
 import mods.appliedenergistics2.Inscriber;
 ```
 
 ### Adding
 When the `inscribe` boolean is true, the top and bottom inputs are not consumed. 
-```
+```zenscript
 Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
 
 //turns eggs into Wither Skele spawn eggs, does not consume wither skull
@@ -20,7 +20,7 @@ Inscriber.addRecipe(<minecraft:cookie>, <minecraft:minecraft:bread>, false, <min
 
 ### Removing
 
-```
+```zenscript
 Inscriber.removeRecipe(IItemStack output);
 
 //removes printed silicon recipe 

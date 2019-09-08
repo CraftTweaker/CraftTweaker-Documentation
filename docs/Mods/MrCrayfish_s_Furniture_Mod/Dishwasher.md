@@ -6,7 +6,7 @@ By default repairs durability of vanilla tools and weapons only.
 ## Removing
 Remove matching washable items.
 ------
-```java
+```zenscript
 mods.cfm.Dishwasher.remove(@Optional final IIngredient item);
 
 mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
@@ -17,7 +17,7 @@ mods.cfm.Dishwasher.remove();
 ## Adding
 Add a washable item.
 ------
-```java
+```zenscript
 mods.cfm.Dishwasher.add(@Nonnull final IItemStack item);
 
 mods.cfm.Dishwasher.add(<minecraft:wooden_shovel>);

@@ -8,7 +8,7 @@ That's why there's the possibility to rename stuff.
 
 This is probably the easiest way to achieve a different item or block name.
 You rename `item` to `newName`:
-```
+```zenscript
 item.displayName = newName;
 
 //Example
@@ -21,7 +21,7 @@ item.displayName = newName;
 
 If some modded inventories still show the item's old name instead of the new one, you need to change the localization.
 You can read what that means on the `game` entry.
-```
+```zenscript
 game.setLocalization(languageCode,unlocalizedName,newName);
 
 game.setLocalization("tile.chest.name","StorageBox Deluxe")

@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## [IPartType](/Mods/ContentTweaker/Materials/Parts/PartType/)
 ### Create 
-```JAVA
+```zenscript
 createPartType(String name, IRegisterMaterialPart registerMaterialPart)
 ```
 
@@ -18,7 +18,7 @@ Required Parameters:
 - [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → A function that handles how the Material parts will be created.
 
 ### Retrieve 
-```JAVA
+```zenscript
 getPartType(String name);
 ```
 
@@ -31,7 +31,7 @@ For a list of all available part types check [the part type page](/Mods/ContentT
 ## [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)
 ### Create
 Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) for info on what exactly to do with these.
-```JAVA
+```zenscript
 val MB MaterialSystem.getMaterialBuilder();
 MB.setName("Urubuntium");
 MB.setColor(0);
@@ -40,7 +40,7 @@ var builtMaterial = MB.build();
 ```
 
 ### Retrieve
-```JAVA
+```zenscript
 getMaterial(String name);
 ```
 
@@ -51,12 +51,12 @@ Required Parameters:
 ## [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)
 ### Create
 Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the [Part entry](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
-```JAVA
+```zenscript
 val PB = MaterialSystem.getPartBuilder();
 ```
 
 ### Retrieve
-```JAVA
+```zenscript
 getPart(String name);
 ```
 
@@ -78,7 +78,7 @@ Required Parameters:
 
 ## Register multiple MaterialParts
 Even though you can also do this using the [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) own functionality, this Method allows you to register [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) for a given Material
-```JAVA
+```zenscript
 registerPartsForMaterial(Material material, String[] partNames);
 ```
 

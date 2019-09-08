@@ -5,7 +5,7 @@ Since that would be called far too often, there are 4 subEvents that are only ca
 
 ## Importing the class
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-```
+```zenscript
 //Base Event
 import crafttweaker.event.EntityLivingUseItemEvent.All;
 

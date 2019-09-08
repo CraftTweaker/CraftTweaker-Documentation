@@ -14,34 +14,34 @@ It might be required for you to import the package if you encounter any issues (
 
 These will affect the items that you can use to craft the resulting item.
 Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
-```
+```zenscript
 <minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
 ```
 ### Damage
 
 #### anyDamage
 The input item's damage value does not matter for the recipe
-```
+```zenscript
 item.anyDamage()
 ```
 
 #### onlyDamaged
 The input item needs to be damaged
-```
+```zenscript
 item.onlyDamaged();
 ```
 
 #### Damaged at least
 Input item's damage value needs to be at least the specified `value`  
 `Value` is an int
-```
+```zenscript
 item.onlyDamageAtLeast(value);
 ```
 
 #### Damage at most
 Input item's damage value needs to be at max the specified `value`  
 `Value` is an int
-```
+```zenscript
 item.onlyDamageAtMost(value);
 ```
 
@@ -49,7 +49,7 @@ item.onlyDamageAtMost(value);
 Input item's damage value needs to be between the speciefied `value1` and `value2`  
 `Value1` is an int  
 `Value2` is an int  
-```
+```zenscript
 item.onlyDamageBetween(value1, value2);
 ```
 
@@ -61,7 +61,7 @@ By applying `transformDamage(int)` you can create such recipes.
 #### transformDamage
 The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
 `Value` is an int
-```
+```zenscript
 item.transformDamage(value);
 ```
 
@@ -74,7 +74,7 @@ If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei
 
 Here's how you do it:
 `NBTTag` is your NBT Data
-```
+```zenscript
 item.withTag(NBTData);
 item.onlyWithTag(NBTTag);
 
@@ -89,14 +89,14 @@ If you can specify input conditions, it's not so hard to also define output cond
 ### Damage
 Your output item will have `value` damage points.  
 `Value` is an int.
-```
+```zenscript
 item.withDamage(value);
 ```
 
 ### NBT-Tags
 Your output item will have `NBTTag` as NBT-Tag.  
 `NBTTag` is your NBT Data
-```
+```zenscript
 item.withTag(NBTTag);
 
 <minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
@@ -107,7 +107,7 @@ item.withTag(NBTTag);
 
 You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 
-```
+```zenscript
 conditionedItem = item.only(function(item) {return true;});
 ```
 

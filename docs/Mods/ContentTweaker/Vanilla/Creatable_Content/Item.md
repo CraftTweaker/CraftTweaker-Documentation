@@ -5,7 +5,7 @@ This allows you to add items to the game!
 ## Create the Item Representation
 Before you can add the item, you need to create an Item Representation which will allow you to set the properties of the item you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
@@ -16,7 +16,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## ZenProperties
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
-```
+```zenscript
 //property name: maxStackSize
 //ZenGetter
 print(item.maxStackSize);
@@ -57,12 +57,12 @@ You need to call this method to register the item in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the item or change any of it's properties!
 
-```
+```zenscript
 item.register();
 ```
 
 ## Example Script
-```
+```zenscript
 #loader contenttweaker
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;

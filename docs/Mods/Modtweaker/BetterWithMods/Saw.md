@@ -5,7 +5,7 @@
 
 * Adds Saw Recipe - inputs *MUST* have a block associated with them.
   
-```
+```zenscript
 mods.betterwithmods.Saw.add(IIngredient input, IItemStack[] output);
 //Examples
 mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stick>]);
@@ -15,17 +15,23 @@ mods.betterwithmods.Saw.add(<minecraft:fence>,[<minecraft:stick>,<minecraft:stic
 ## Removal by input
 
 * Remove a recipe based on the input ingredient
-```mods.betterwithmods.Saw.remove(IIngredient input);```
+```zenscript
+mods.betterwithmods.Saw.remove(IIngredient input);
+```
 
 ## Removal by output
 
 * Remove a recipe based on the output
-```mods.betterwithmods.Saw.remove(IItemStack[] outputs);```
+```zenscript
+mods.betterwithmods.Saw.remove(IItemStack[] outputs);
+```
 
 ## Remove all
 
 * Remove all recipes
-```mods.betterwithmods.Saw.removeAll();```
+```zenscript
+mods.betterwithmods.Saw.removeAll();
+```
 
 ## Builder 
 
@@ -36,9 +42,13 @@ The Saw has a recipe builder. Due to the nature of the saw it currently has no s
 
 * Saw methods
      * Sets up the inputs and outputs of the recipe  
-       ```buildRecipe(IIngredient[] inputs, IItemStack[] outputs)```
+       ```zenscript
+       buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+       ```
      * Finalize the recipe and add it to the game  
-       ```build()```
+       ```zenscript
+       build()
+       ```
        
 ### Example builder usage
 ```

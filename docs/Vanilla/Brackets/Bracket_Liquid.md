@@ -4,7 +4,7 @@ The liquid Bracket Handler gives you access to the liquids in the game. It is on
 
 Liquids are referenced in the Liquid Bracket Handler by like so:
 
-```
+```zenscript
 <liquid:liquidname> OR <fluid:liquidname>
 
 <liquid:lava> OR <fluid:lava>

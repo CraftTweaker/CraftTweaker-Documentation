@@ -20,7 +20,7 @@ You can get such an object using:
 
 You can create a Position3f object yourself by using the following method:
 
-```JAVA
+```zenscript
 crafttweaker.util.Position3f.create(float x, float y, float z);
 ```
 

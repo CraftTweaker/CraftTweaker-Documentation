@@ -5,7 +5,7 @@
 ## Importing the package
 If you want to shorten your method calls, you can import the package.  
 You can do so using  
-```
+```zenscript
 import mods.jaopca.JAOPCA;
 ```
 
@@ -20,7 +20,7 @@ This package is your entry point for JAOPCA. It provides a means of checking for
 ### Check if an entry exists
 
 Returns `true` if an entry with the given name exists
-```
+```zenscript
 //mods.jaopca.JAOPCA.containsEntry(entryName);
 mods.jaopca.JAOPCA.containsEntry("nugget");
 ```
@@ -31,7 +31,7 @@ mods.jaopca.JAOPCA.containsEntry("nugget");
 Returns the given [OreEntry](/Mods/JAOPCA/OreEntry/) for the given name, or `null` if it does not exist.
 _Careful: Most materials are Capitalized, and yes, casing matters!_
 
-```
+```zenscript
 //mods.jaopca.JAOPCA.getOre(oreName);
 mods.jaopca.JAOPCA.getOre("Coal");
 ```
@@ -42,7 +42,7 @@ mods.jaopca.JAOPCA.getOre("Coal");
 
 Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that have the given entry registered.
 
-```
+```zenscript
 //mods.jaopca.JAOPCA.getOresForEntry(entryName);
 mods.jaopca.JAOPCA.getOresForEntry("nugget");
 ```
@@ -52,7 +52,7 @@ mods.jaopca.JAOPCA.getOresForEntry("nugget");
 
 Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that are of the given oreType.
 
-```
+```zenscript
 //mods.jaopca.JAOPCA.getOresForType(oreType);
 mods.jaopca.JAOPCA.getOresForType("GEM");
 ```
@@ -62,6 +62,6 @@ mods.jaopca.JAOPCA.getOresForType("GEM");
 
 Returns a list of all registered [OreEntry](/Mods/JAOPCA/OreEntry/) objects.
 
-```
+```zenscript
 mods.jaopca.JAOPCA.getAllOres();
 ```

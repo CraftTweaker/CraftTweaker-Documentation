@@ -4,7 +4,7 @@ A `MixRecipeBuilder` is used to build and add High Oven's Mix Recipe to the game
 
 ## Importing the package
 Better be safe than sorry and import the package
-```
+```zenscript
 import mods.tcomplement.highoven.MixRecipeBuilder;
 ```
 
@@ -12,7 +12,7 @@ import mods.tcomplement.highoven.MixRecipeBuilder;
 
 The `mods.tcomplement.highoven.HighOven` handler can give you a `MixRecipeBuilder`
 
-```
+```zenscript
 // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
 var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
 ```

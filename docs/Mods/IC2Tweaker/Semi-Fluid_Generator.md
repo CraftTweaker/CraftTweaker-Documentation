@@ -8,7 +8,7 @@
  - **double powerOutput**  The power output, measured in EU/tick
 
 ## Add Fluid
-```
+```zenscript
 mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);

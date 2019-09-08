@@ -15,7 +15,7 @@ The IItemFoodEaten is a function with the following parameters (In this order):
 - [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
 
 ## Examples
-```JAVA
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

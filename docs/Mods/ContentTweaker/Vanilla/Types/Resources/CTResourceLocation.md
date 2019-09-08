@@ -10,14 +10,14 @@ If you don't want to type out the package's whole name every time you use a stat
 ### Static methods: Create
 Static methods are those that are called on the package itself, not on any specific object of this instance.  
 You can use this method to create a new CTResourceLocation instance:
-```kotlin
+```zenscript
 var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/myItem");
 ```
 
 ### ZenGetters
 ZenGetters are called on an object, not on the package itself
 
-```
+```zenscript
 print(myLocation.domain);
 ```
 

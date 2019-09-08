@@ -8,7 +8,7 @@ If that result is a block, it will be placed in the world, if not it will be dro
 
 ## Import the package
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:  
-```
+```zenscript
 import mods.thaumcraft.SalisMundus;
 ```
 
@@ -18,7 +18,7 @@ import mods.thaumcraft.SalisMundus;
 You can either specify an [IBlock](/Vanilla/Blocks/IBlock/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
 If you don't specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
 
-```
+```zenscript
 //mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in, IItemStack out, @Optional String research);
 SalisMundus.addSingleConversion(<blockstate:minecraft:dirt>.block, <minecraft:bedrock>);
 
@@ -32,7 +32,7 @@ SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
 You can also remove all recipes that return a matching item.  
 This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient `<*>`.
 
-```
+```zenscript
 mods.thaumcraft.SalisMundus.removeSingleConversion(IIngredient output);
 
 //Removes ALL registered handlers

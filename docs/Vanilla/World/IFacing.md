@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## Enumerations
 The facing Interface has 7 static Methods, each returning the said direction.  
 The last one takes the direction as String input (e.g. `"NORTH"`)
-```
+```zenscript
 crafttweaker.world.Facing.north()
 crafttweaker.world.Facing.east()
 crafttweaker.world.Facing.south()
@@ -32,7 +32,7 @@ crafttweaker.world.Facing.fromString(String name);
 ### Comparing two Facings
 You can compare two facings using the standart comparing Operators `== != < > <= >=`  
 Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
-```
+```zenscript
 //Returns true or false
 facingOne == facingTwo;
 

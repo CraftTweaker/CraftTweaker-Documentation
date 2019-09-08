@@ -2,12 +2,12 @@
 This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
 
 ### Importing
-```
+```zenscript
 import mods.poweredthingies.Tweaker;
 ```
 
 ### Getting Machine Specific Tweakers
-```kotlin
+```zenscript
 var compoundMaker = Tweaker.compoundTweaker();
 var fluidCompound = Tweaker.fluidCompoundTweaker();
 var fluidBurnerFuel = Tweaker.fluidBurnerFuelTweaker();

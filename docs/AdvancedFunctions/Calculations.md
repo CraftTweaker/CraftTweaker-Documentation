@@ -28,7 +28,7 @@ I'm pretty sure all of you know these already, don't you?
 
 Puts one thing at the and of the other
 
-```
+```zenscript
 //prints "Hello World"
 print("Hello" ~ " " ~ "World");
 ```
@@ -41,7 +41,7 @@ A calculation usually ends up with a result. So what to do with that?
 
 There are two ways of assigning a value to a variable:
 
-```
+```zenscript
 var test = 0;
 
 //Option 1:
@@ -67,7 +67,7 @@ All Operators on on this page have their respective assign tokens, check the tab
 
 You can always use the result of a calculation in a function or a conditional statement:
 
-```
+```zenscript
 //prints 4
 print(3+1);
 

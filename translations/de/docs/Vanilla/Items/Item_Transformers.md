@@ -8,7 +8,7 @@ This can range from damaging the item up to returning a completely different ite
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemTransformer;`
 
-```Java
+```zenscript
 <br />val item = &lt;minecraft:apple&gt;;
 
 //Item won't be consumed and will stay in the grid

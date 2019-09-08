@@ -6,7 +6,7 @@ For example ModA sends a message to Tinkers' Construct to tell TiCon to create a
 ## Importing the package
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using  
-```
+```zenscript
 import extrautilities2.Tweaker.InterModCommsHandler;
 ```
 
@@ -16,7 +16,7 @@ import extrautilities2.Tweaker.InterModCommsHandler;
 You can either send the message right away or at runtime.
 You can either send NBT as [IData Map](/Vanilla/Data/IData), a simple string, an [IItemStack](/Vanilla/Items/IItemStack) or a resource location.
 
-```
+```zenscript
 sendMessageNBT(String mod, String key, DataMap dataMap);
 sendMessageString(String mod, String key, String message);
 sendMessageItemStack(String mod, String key, IItemStack stack);

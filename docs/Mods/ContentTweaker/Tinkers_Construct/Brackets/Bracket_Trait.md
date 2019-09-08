@@ -4,7 +4,7 @@ The Trait Bracket handler's sole purpose is providing you with [Trait Representa
 
 You use the trait bracket handler like this:
 
-```
+```zenscript
 <ticontrait:identifier>
 
 <ticontrait:cactus>

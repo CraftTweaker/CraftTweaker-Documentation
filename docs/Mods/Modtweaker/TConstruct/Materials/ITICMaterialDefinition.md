@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## Retrieving such an object
 
 You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
-```
+```zenscript
 val def = <ticmat:stone>.definition;
 ```
 

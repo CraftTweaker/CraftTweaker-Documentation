@@ -4,14 +4,14 @@ The Item Bracket Handler gives you access to the Items in the game. It is only p
 
 Items are referenced in the Item Bracket Handler by like so:
 
-```
+```zenscript
 <modid:itemname>
 ```
 
 With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
 
 Generally it is like this though:
-```
+```zenscript
 <item:modid:itemname:meta>
 ```
 With `item` as first entry, it specifically says "This has to be an item!" to CT.  
@@ -30,7 +30,7 @@ Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for furt
 
 An example of the Item Bracket Handler would be:
 
-```
+```zenscript
 //apple
 <minecraft:apple>
 

@@ -59,7 +59,7 @@ You can get a list of all registered properties, either as list with all propert
 You can also check which values are possible for a given property name.  
 You can also use `withProperty` to create a new IBlockState object with that property changed.
 
-```
+```zenscript
 List<String> getPropertyNames();
 String getPropertyValue(String name);
 List<String> getAllowedValuesForProperty(String name);
@@ -79,6 +79,6 @@ The return different types though:
 ### Getting an explicit Blockstate Matcher
 
 Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
-```
+```zenscript
 IBlockStateMatcher matchBlock();
 ```

@@ -8,7 +8,7 @@ That's what you need conditional Statements for.
 An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed.
 Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
 
-```Java
+```zenscript
 val test = 0;
 
 if(test == 0){ //true
@@ -20,7 +20,7 @@ if(test == 0){ //true
 
 An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
 
-```Java
+```zenscript
 var test = 0;
 
 if(test == 0){//true
@@ -47,7 +47,7 @@ Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
 Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
 
-```Java
+```zenscript
 //You can check for:
 
 
@@ -87,7 +87,7 @@ That's why the `?` operator was implemented.
 It follows the same logic as an if/else statement, it only is by far less code required.
 Syntax: `boolean ? if : else`
 
-```Java
+```zenscript
 val switchy = false;
 
 //prints switchy state
@@ -135,7 +135,7 @@ First you need the list you want to check in, then the `in`/`has` then the value
 
 You can check, if a mod is loaded by checking if it's in the loadedMods list
 
-```Java
+```zenscript
 //While contains checks can use in
 if(loadedMods in "mcp"){
 	print("Minecraft Coder Pack loaded");
@@ -154,7 +154,7 @@ With this one you need to be a bit careful as not to confuse the two entries:
 This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
 In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
-```Java
+```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
 	print("Iron ingots are in the right oreDic");
 }
@@ -166,7 +166,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 
 This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`:
 Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
-```java
+```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;

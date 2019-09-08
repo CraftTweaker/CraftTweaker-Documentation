@@ -34,7 +34,7 @@ Slots that have fortune enabled will select a number of additional items from th
 ## Examples using the Builder 
 ### Creating a drop table
 
-```
+```zenscript
 var complextable = DropTableBuilder.newSlot()
                     .addItem("minecraft:diamond", 1, 2)
                     .addItem("minecraft:coal", 9)
@@ -47,7 +47,7 @@ var complextable = DropTableBuilder.newSlot()
 ```
 This drop table would drop 2 diamonds (10%) or 1 coal (90%) benefiting from fortune, 1 stone (100%), and 1 cobblestone (50%).
 
-```
+```zenscript
 var lapistable = DropTableBuilder.newSlot()
                    .addItem("minecraft:lapis_lazuli", 1, 4)
                    .addItem("minecraft:lapis_lazuli", 1, 5)
@@ -60,7 +60,7 @@ This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from for
 
 ### Using a drop table
 Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
-```
+```zenscript
 var lapisData = MaterialSystem.getMaterialBuilder()
                   .setColor(12345678).setName("Fake Lapis").setColor(12345678).build()
                   .registerPart("ore").getData();

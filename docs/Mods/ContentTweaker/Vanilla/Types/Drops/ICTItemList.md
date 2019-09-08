@@ -6,7 +6,7 @@ Depending on other event handlers active it might already contain some items, or
 
 ## Importing the class
 If you ever find yourself in need of importing this class, this is how you do it:
-```
+```zenscript
 import mods.contenttweaker.ItemList;
 ```
 
@@ -14,7 +14,7 @@ import mods.contenttweaker.ItemList;
 
 You can add [IItemStacks](/Vanilla/Items/IItemStack/) or [WeightedItemStacks](/Vanilla/Items/WeightedItemStack/) to the list using the functions below:
 
-```
+```zenscript
 list.add(<minecraft:carrot>);
 
 list + <minecraft:carrot>;
@@ -27,7 +27,7 @@ list + (<minecraft:seeds> % 10);
 ## Removing items from the list
 
 You can only remove items using the item's index, or you can clear the whole list.
-```
+```zenscript
 list.remove(1);
 
 list.clear();
@@ -36,7 +36,7 @@ list.clear();
 ## Getting items from the list
 
 You can either get an item by its index or you can get the whole list as either an array or a list:
-```
+```zenscript
 import crafttweaker.item.IItemStack;
 
 val itemAt = list.get(0); //as IItemStack
@@ -51,6 +51,6 @@ val itemList = list.getList(); //as [IItemStack]
 
 You can also retreive this information from the list:
 
-```
+```zenscript
 list.getLength();
 ```
