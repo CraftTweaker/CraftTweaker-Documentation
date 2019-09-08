@@ -1,12 +1,12 @@
 # Ritual of Flower Growth
 
-### Class
+### 所属类名
 
 ```zenscript
 import mods.roots.FlowerGrowth;
 ```
 
-#### Methods
+#### 可用方法
 
 ```zenscript
 static void removeRecipe(
@@ -35,7 +35,7 @@ static void addRecipeBlock(
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.FlowerGrowth;
@@ -50,6 +50,6 @@ FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:fl
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Notes
+### 注意
 
 Currently untested with double-tall flowers.

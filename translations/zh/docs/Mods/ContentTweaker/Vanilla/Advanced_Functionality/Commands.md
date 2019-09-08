@@ -1,8 +1,8 @@
-# Commands
+# 命令
 
 You can use this class to send a command, you cannot use this class to create new commands!
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Commands;`

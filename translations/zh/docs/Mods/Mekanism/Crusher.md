@@ -1,13 +1,14 @@
-# Crusher
+# 磨粉机
 
 As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crusher through the command `/ct mekrecipes crusher`
 
 ## Addition
 
-    mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
-    
-    mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
-    
+```zenscript
+mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
+
+mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
+```
 
 As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
@@ -15,11 +16,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
-    
-    mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
-    mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
-    
+```zenscript
+mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
+
+mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
+mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
+```
 
 Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
 
@@ -27,4 +29,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 
 As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
 
-    mods.mekanism.crusher.removeAllRecipes();
+```zenscript
+mods.mekanism.crusher.removeAllRecipes();
+```

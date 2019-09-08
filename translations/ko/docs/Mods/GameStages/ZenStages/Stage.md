@@ -2,7 +2,7 @@
 
 Stage is the class you are given when you create a new "Stage" the class contains all the main method you need to stage an entry to that *Stage*. It's as simple as that! Once you have added all the entries you need. Don't forget to build the stage!
 
-## Importing the package
+## 패키지 임포트하기
 
 `import mods.zenstages.Stage;`
 
@@ -10,9 +10,9 @@ Stage is the class you are given when you create a new "Stage" the class contain
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | What does it do        | Return Type |
-| --------- | ---------------------- | ----------- |
-| stage     | Returns the stage name | string      |
+| ZenGetter | 역할                     | 반환 타입  |
+| --------- | ---------------------- | ------ |
+| stage     | Returns the stage name | string |
 
 ### Staging Methods
 

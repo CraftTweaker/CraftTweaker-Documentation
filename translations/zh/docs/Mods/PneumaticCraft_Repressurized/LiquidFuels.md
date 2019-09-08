@@ -6,19 +6,21 @@ Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid 
 
 You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
-## Removing
+## 移除配方
 
 This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
-    mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-    // Example
-    mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
-    
+```zenscript
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
+// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
+```
 
 This function deregisters *all* registered fuels:
 
-    mods.pneumaticcraft.liquidfuel.removeAllFuels();
-    
+```zenscript
+mods.pneumaticcraft.liquidfuel.removeAllFuels();
+```
 
 ## Adding
 

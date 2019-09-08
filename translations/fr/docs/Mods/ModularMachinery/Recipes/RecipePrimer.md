@@ -14,7 +14,7 @@ This means you can either call each method on its own, or make one call where yo
 
 ### Setting the chance
 
-```sml
+```zenscript
 setChance(float chance);
 ```
 
@@ -33,7 +33,7 @@ addFuelItemInout(int requiredTotalBurnTime);
 
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
 
-```sml
+```zenscript
 addItemInput(IItemStack stack);
 
 addItemInput(IOreDictEntry oreDict);
@@ -47,7 +47,7 @@ addFluidInput(ILiquidStack stack);
 
 You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
 
-```sml
+```zenscript
 addItemOutput(IItemStack stack);
 
 addItemOutput(IOreDictEntry oreDict);
@@ -61,7 +61,7 @@ addFluidOutput(ILiquidStack stack);
 
 After you have done your changes above, you need to build the recipe so that it will actually do something.
 
-```sml
+```zenscript
 build();
 ```
 

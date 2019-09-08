@@ -2,14 +2,17 @@
 
 This package allows you to set items' Warp.
 
-## Importing the package
+## 패키지 임포트하기
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
-    import mods.thaumcraft.Warp;
-    
+```zenscript
+import mods.thaumcraft.Warp;
+```
 
 ## Setting Warp
 
-    //mods.thaumcraft.Warp.setWarp(IItemStack stack, int amount);
-    mods.thaumcraft.Warp.setWarp(<minecraft:dirt>, 500);
+```zenscript
+//mods.thaumcraft.Warp.setWarp(IItemStack stack, int amount);
+mods.thaumcraft.Warp.setWarp(<minecraft:dirt>, 500);
+```

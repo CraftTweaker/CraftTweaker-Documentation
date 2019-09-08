@@ -8,8 +8,9 @@ You can change this behavior to allow for better chickens by modifying the given
 
 Want to import the class? Here you go:
 
-    import mods.contenttweaker.Chicken;
-    
+```zenscript
+import mods.contenttweaker.Chicken;
+```
 
 ## Registering the chicken
 
@@ -22,11 +23,12 @@ You can change or get the current value of the properties either by `object.name
 
 Example:
 
-    chickenRep.layItem = <minecraft:iron_ingot>;
-    print(chickenRep.layItem.displayName);
-    chickenRep.setLayItem(<minecraft:gold_ingot>);
-    print(chickenRep.getLayItem().displayName);
-    
+```zenscript
+chickenRep.layItem = <minecraft:iron_ingot>;
+print(chickenRep.layItem.displayName);
+chickenRep.setLayItem(<minecraft:gold_ingot>);
+print(chickenRep.getLayItem().displayName);
+```
 
 | name            | type                                                                                   |
 | --------------- | -------------------------------------------------------------------------------------- |

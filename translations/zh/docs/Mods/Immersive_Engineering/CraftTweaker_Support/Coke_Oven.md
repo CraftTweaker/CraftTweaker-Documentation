@@ -4,16 +4,16 @@
 
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type        | Data Type                                           |
+| Required | 类型          | Data Type                                           |
 | -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
+| 必要       | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Fuel Output | Integer                                             |
 | Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| 必要       | Time        | Integer                                             |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

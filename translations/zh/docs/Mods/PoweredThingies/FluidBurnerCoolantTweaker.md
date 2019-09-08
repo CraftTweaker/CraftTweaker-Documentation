@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Burner :: Coolant
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;

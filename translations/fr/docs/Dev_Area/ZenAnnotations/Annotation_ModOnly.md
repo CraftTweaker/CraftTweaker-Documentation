@@ -7,16 +7,17 @@ It only registers a ZenClass if the provided mod is loaded.
 
 [CraftTweaker Test Project ModOnly](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
-    @ModOnly(value = "mcp")
-    @ZenClass(value = "crafttweaker.tests.modOnly")
-    @ZenRegister
-    public class ModOnlyWiki {
-        @ZenMethod
-        public static void print() {
-            CraftTweakerAPI.logInfo("print issued");
-        }
+```java
+@ModOnly(value = "mcp")
+@ZenClass(value = "crafttweaker.tests.modOnly")
+@ZenRegister
+public class ModOnlyWiki {
+    @ZenMethod
+    public static void print() {
+        CraftTweakerAPI.logInfo("print issued");
     }
-    
+}
+```
 
 ## What classes can be annotated || Additional Info
 

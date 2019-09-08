@@ -2,7 +2,7 @@
 
 The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
 
-## Calling
+## 导入包
 
 You can find the package at `mods.contenttweaker.VanillaFactory`
 
@@ -56,7 +56,7 @@ mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
 
-Parameters:
+参数：
 
 - String unlocalizedName: The Fluid's unlocalized name.
 - int color: The fluid's color-code.

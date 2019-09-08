@@ -2,7 +2,7 @@
 
 The `Casting` package allows you to add or remove Casting recipes.
 
-## Calling
+## 导入包
 
 You can call the Casting package using `mods.tconstruct.Casting`
 

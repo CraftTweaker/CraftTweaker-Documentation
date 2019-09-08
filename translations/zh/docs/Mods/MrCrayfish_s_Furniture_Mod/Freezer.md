@@ -1,4 +1,4 @@
-# Freezer
+# 冰箱(Freezer)
 
 The Freezer is the bottom compartment of the Fridge.
 
@@ -13,7 +13,7 @@ It can be used to freeze items, but requires Ice to operate.
 - Poisonous Potato -> Potato
 - Rotten Flesh -> Flesh
 
-## Removing
+## 移除配方
 
 ## Remove matching freezer recipes.
 

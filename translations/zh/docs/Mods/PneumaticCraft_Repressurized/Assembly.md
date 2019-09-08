@@ -4,11 +4,11 @@ The Robotic Assembly System is a multiblock consisting of the Assembly Controlle
 
 There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
 
-## Calling
+## 导入包
 
 You can call the Assembly package using `mods.pneumaticcraft.assembly`.
 
-## Removing
+## 移除配方
 
 These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 

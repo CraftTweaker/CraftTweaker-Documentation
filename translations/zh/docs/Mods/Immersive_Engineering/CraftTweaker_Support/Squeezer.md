@@ -6,16 +6,16 @@ The Squeezer package can be used to add/remove recipes to/from the Immersive Eng
 
 You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type   | Data Type                                           |
+| Required | 类型     | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| 必要       | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 | Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy | Integer                                             |
+| 必要       | Energy | Integer                                             |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

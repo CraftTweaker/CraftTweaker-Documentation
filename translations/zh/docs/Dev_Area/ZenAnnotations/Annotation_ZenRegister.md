@@ -7,8 +7,10 @@ ZenRegister 注解用于注册一个带有 [`@ZenClass`](/Dev_Area/ZenAnnotation
 
 [CraftTweaker's IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
 
-    @ZenClass("crafttweaker.item.IIngredient")
-    @ZenRegister
-    public interface IIngredient {
-        ...
-    }
+```java
+@ZenClass("crafttweaker.item.IIngredient")
+@ZenRegister
+public interface IIngredient {
+    ...
+}
+```

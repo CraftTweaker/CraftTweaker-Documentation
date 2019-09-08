@@ -5,8 +5,9 @@ Note that this module is a feature addition to the [Chickens mod by setycz](http
 
 ## Dieses Paket importieren
 
-    import mods.contenttweaker.ChickenFactory;
-    
+```zenscript
+import mods.contenttweaker.ChickenFactory;
+```
 
 ## Creating chickens
 
@@ -18,20 +19,23 @@ This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chicken
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
 - [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
 
-    ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
-    
+```zenscript
+ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
+```
 
 ## Skript-Beispiel
 
-    #loader contenttweaker
-    #modloaded chickens
-    
-    import mods.contenttweaker.ChickenFactory;
-    import mods.contenttweaker.Color;
-    
-    
-    val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
-    
-    chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
-    
-    chickenRepresentation.register();
+```zenscript
+#loader contenttweaker
+#modloaded chickens
+
+import mods.contenttweaker.ChickenFactory;
+import mods.contenttweaker.Color;
+
+
+val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
+
+chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
+
+chickenRepresentation.register();
+```

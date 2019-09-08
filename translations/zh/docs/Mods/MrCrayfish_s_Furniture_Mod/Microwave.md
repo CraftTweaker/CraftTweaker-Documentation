@@ -7,7 +7,7 @@ The Microwave heats up food items.
 - Beef -> Cooked Beef
 - Potato -> Baked Potato
 
-## Removing
+## 移除配方
 
 ## Remove matching microwave recipes.
 

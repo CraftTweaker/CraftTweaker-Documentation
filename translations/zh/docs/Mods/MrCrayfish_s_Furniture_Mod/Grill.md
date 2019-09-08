@@ -10,7 +10,7 @@ It requires flipping food to cook both sides.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## 移除配方
 
 ## Remove matching grill recipes.
 

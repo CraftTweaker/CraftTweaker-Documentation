@@ -4,7 +4,7 @@ This class is the main handler for creating new [Stages](/Mods/GameStages/ZenSta
 
 You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
-## Importing the package
+## 패키지 임포트하기
 
 ZenStager : `import mods.zenstages.ZenStager;`
 

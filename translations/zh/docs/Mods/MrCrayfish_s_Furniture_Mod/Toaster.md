@@ -8,7 +8,7 @@ The Toaster crips up food to start your day.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## 移除配方
 
 ## Remove matching toaster recipes.
 

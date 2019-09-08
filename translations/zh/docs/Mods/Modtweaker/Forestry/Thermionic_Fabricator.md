@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Thermionic Fabricator Recipes
 
-## Calling
+## 导入包
 
 You can call the package using `mods.forestry.ThermionicFabricator`
 

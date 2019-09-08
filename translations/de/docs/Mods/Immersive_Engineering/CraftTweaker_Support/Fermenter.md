@@ -2,18 +2,18 @@
 
 The Fermenter package can be used to add/remove recipes to/from the Immersive Engineering Fermenter.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
 
 ## Rezept hinzufügen
 
-| Required | Type   | Datentyp                                            |
+| Benötigt | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy | Integer                                             |
+| Benötigt | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| Benötigt | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Energy | Integer                                             |
 
 ### Beispiel
 

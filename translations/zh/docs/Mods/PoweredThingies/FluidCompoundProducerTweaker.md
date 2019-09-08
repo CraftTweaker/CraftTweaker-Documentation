@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Compound Producer
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;

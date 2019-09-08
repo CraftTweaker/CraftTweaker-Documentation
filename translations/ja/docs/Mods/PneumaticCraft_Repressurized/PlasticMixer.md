@@ -17,15 +17,17 @@ You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
 
 This function removes the first recipe it finds with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
 
-    mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
-    // Example
-    mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
-    
+```zenscript
+mods.pneumaticcraft.plasticmixer.removeRecipe(ILiquidStack fluid);
+// Example
+mods.pneumaticcraft.plasticmixer.removeRecipe(<liquid:plastic>);
+```
 
 This function removes *all* Plastic Mixer recipes:
 
-    mods.pneumaticcraft.plasticmixer.removeAllRecipes();
-    
+```zenscript
+mods.pneumaticcraft.plasticmixer.removeAllRecipes();
+```
 
 ## Adding
 

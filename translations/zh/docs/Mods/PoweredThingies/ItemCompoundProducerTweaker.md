@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Compound Producer
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;

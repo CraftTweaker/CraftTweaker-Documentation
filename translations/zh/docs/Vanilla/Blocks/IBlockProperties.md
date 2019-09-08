@@ -70,44 +70,51 @@ Returns an int representing the block's redstone comparator input override type.
 接受一个 [IEntity](/Vanilla/Entities/IEntity/).  
 返回一个 bool。
 
-    blockProperties.canEntitySpawn(IEntity entity);
-    
+```zenscript
+blockProperties.canEntitySpawn(IEntity entity);
+```
 
 ### 获取实际方块状态
 
 接受一个 [IBlockAccess](/Vanilla/World/IBlockAccess/) 和一个 [IBlockPos](/Vanilla/World/IBlockPos/)。  
 返回一个新的 IBlockProperties 对象。
 
-    blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
+```
 
 ### 获取方块的硬度
 
 接受一个 [IWorld](/Vanilla/World/IWorld/) 和一个 [IBlockPos](/Vanilla/World/IBlockPos/)。  
 返回一个 float。
 
-    blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
+```
 
 ### 获取方块的透明性
 
 接受一个 [IWorld](/Vanilla/World/IWorld/) 和一个 [IBlockPos](/Vanilla/World/IBlockPos/)。  
 返回一个 int。
 
-    blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
+```
 
 ### 获取玩家关联的方块硬度
 
 接受一个 [IPlayer](/Vanilla/Players/IPlayer/)，一个 [IWorld](/Vanilla/World/IWorld/) 和一个 [IBlockPos](/Vanilla/World/IBlockPos/)。  
 返回一个 float。
 
-    blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
-    
+```zenscript
+blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
+```
 
 ### 检查方块的一个面是否为实心
 
 接受一个 [IBlockAccess](/Vanilla/World/IBlockAccess/)，一个 [IBlockPos](/Vanilla/World/IBlockPos/) 和一个 [IFacing](/Vanilla/World/IFacing/) 。  
 返回一个 bool。
 
-    blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
+```zenscript
+blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
+```

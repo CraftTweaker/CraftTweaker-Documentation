@@ -5,8 +5,9 @@
 
 ## 导入相关包
 
-    import mods.contenttweaker.ChickenFactory;
-    
+```zenscript
+import mods.contenttweaker.ChickenFactory;
+```
 
 ## 创建鸡
 
@@ -18,20 +19,23 @@
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) 颜色：鸡的颜色。
 - [IItemestack](/Vanilla/Items/IItemStack/) 生下的物品：鸡会生下的物品。
 
-    ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
-    
+```zenscript
+ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
+```
 
 ## 示例脚本
 
-    #loader contenttweaker
-    #modloaded chickens
-    
-    import mods.contenttweaker.ChickenFactory;
-    import mods.contenttweaker.Color;
-    
-    
-    val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
-    
-    chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
-    
-    chickenRepresentation.register();
+```zenscript
+#loader contenttweaker
+#modloaded chickens
+
+import mods.contenttweaker.ChickenFactory;
+import mods.contenttweaker.Color;
+
+
+val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
+
+chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
+
+chickenRepresentation.register();
+```

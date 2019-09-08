@@ -65,12 +65,13 @@ IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)�
 你还可以检查对于一个给定的属性名，有哪一个属性值是可能的。  
 你还可以使用 `withProperty` 来创建一个修改了属性值的新的 IBlockState 对象。
 
-    List<String> getPropertyNames();
-    String getPropertyValue(String name);
-    List<String> getAllowedValuesForProperty(String name);
-    
-    IBlockState withProperty(String name, String value);
-    
+```zenscript
+List<String> getPropertyNames();
+String getPropertyValue(String name);
+List<String> getAllowedValuesForProperty(String name);
+
+IBlockState withProperty(String name, String value);
+```
 
 ### 比较两个 IBlockState 对象
 
@@ -84,4 +85,6 @@ IBlockState 继承自 [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/)�
 
 Returns an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) that matches the given block.
 
-    IBlockStateMatcher matchBlock();
+```zenscript
+IBlockStateMatcher matchBlock();
+```

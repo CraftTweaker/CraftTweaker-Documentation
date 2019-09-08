@@ -2,18 +2,18 @@
 
 The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
 
 ## Rezept hinzufügen
 
-| Required | Type    | Datentyp                                            |
+| Benötigt | Type    | Datentyp                                            |
 | -------- | ------- | --------------------------------------------------- |
-| Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time    | Integer                                             |
+| Benötigt | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Time    | Integer                                             |
 
 ### Beispiel
 
@@ -23,7 +23,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient 
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
-## Remove Recipe
+## Rezept entfernen
 
 | Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |

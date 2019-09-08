@@ -6,18 +6,19 @@ CraftTweaker 支持 JustEnoughItems (JEI)。 你可以在 JEI 中添加或隐藏
 
 你可以从JEI中移除物品，也可以移除所有它参与的合成表。
 
-    //hide(IItemStack item);
-    mods.jei.JEI.hide(<minecraft:diamond>);
-    
-    //hide(ILiquidStack item);
-    mods.jei.JEI.hide(<liquid:water>);
-    mods.jei.JEI.hide(<fluid:lava>);
-    
-    
-    //removeAndHide(IIngredient output, @optional boolean NBT-Match)
-    mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
-    mods.jei.JEI.removeAndHide(<ore:planks>, false);
-    
+```zenscript
+//hide(IItemStack item);
+mods.jei.JEI.hide(<minecraft:diamond>);
+
+//hide(ILiquidStack item);
+mods.jei.JEI.hide(<liquid:water>);
+mods.jei.JEI.hide(<fluid:lava>);
+
+
+//removeAndHide(IIngredient output, @optional boolean NBT-Match)
+mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
+mods.jei.JEI.removeAndHide(<ore:planks>, false);
+```
 
 ## 隐藏分类
 

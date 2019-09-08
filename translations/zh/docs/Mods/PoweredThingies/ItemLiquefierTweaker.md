@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Liquefier
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;

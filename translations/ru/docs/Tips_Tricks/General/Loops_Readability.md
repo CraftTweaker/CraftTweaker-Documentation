@@ -12,20 +12,21 @@
 
 Поэтому, вместо набирания этих фунцкий, я объявляю один массив, содержащий все элементы, и перебираю их по одному.
 
-    import crafttweaker.item.IIngredient;
-    
-    val Array = [
-        item1,
-        item2,
-        item3,
-        ...
-    ] as IIngredient[];
-    
-    
-    for item in Array{
-        recipes.remove(item);
-    }
-    
+```zenscript
+import crafttweaker.item.IIngredient;
+
+val Array = [
+    item1,
+    item2,
+    item3,
+    ...
+] as IIngredient[];
+
+
+for item in Array{
+    recipes.remove(item);
+}
+```
 
 ## Преимущества
 

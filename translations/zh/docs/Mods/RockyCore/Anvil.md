@@ -1,10 +1,10 @@
 # Anvil
 
-## Package
+## 所属包名
 
 `mods.rockycore.Anvil`
 
-## Addition
+## 添加配方
 
 ### Single
 
@@ -40,7 +40,7 @@ mods.rockycore.Anvil.addRecipe(<minecraft:book>,
 );
 ```
 
-## Removal
+## 删除配方
 
 The anvil does not use recipes in the normal sense but you are still able to remove/blacklist specific inputs or outputs.
 

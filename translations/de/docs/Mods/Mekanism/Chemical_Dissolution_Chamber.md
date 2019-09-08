@@ -4,10 +4,11 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemic
 
 ## Addition
 
-    mods.mekanism.chemical.dissolution.addRecipe(IIngredient inputStack, IGasStack outputGas);
-    
-    mods.mekanism.chemical.dissolution.addRecipe(<minecraft:ice>, <gas:water>);
-    
+```zenscript
+mods.mekanism.chemical.dissolution.addRecipe(IIngredient inputStack, IGasStack outputGas);
+
+mods.mekanism.chemical.dissolution.addRecipe(<minecraft:ice>, <gas:water>);
+```
 
 As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
@@ -15,11 +16,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.chemical.dissolution.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
-    
-    mods.mekanism.chemical.dissolution.removeRecipe(<gas:osmium>, <mekanism:oreblock>);
-    mods.mekanism.chemical.dissolution.removeRecipe(<gas:tin>);
-    
+```zenscript
+mods.mekanism.chemical.dissolution.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
+
+mods.mekanism.chemical.dissolution.removeRecipe(<gas:osmium>, <mekanism:oreblock>);
+mods.mekanism.chemical.dissolution.removeRecipe(<gas:tin>);
+```
 
 Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
@@ -27,4 +29,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 
 As of Mekanism 9.7.0 it is now possible to remove all Chemical Dissolution Chamber recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
-    mods.mekanism.chemical.dissolution.removeAllRecipes();
+```zenscript
+mods.mekanism.chemical.dissolution.removeAllRecipes();
+```

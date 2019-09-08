@@ -11,7 +11,7 @@ The following commands are added to retrieve information about the availible mer
 
 `mods.rockycore.Merchant`
 
-## Addition
+## 添加配方
 
 Trades can be added to a specific merchant profession & carrer.
 

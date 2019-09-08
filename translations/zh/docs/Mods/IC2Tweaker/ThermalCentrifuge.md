@@ -1,6 +1,6 @@
 # Thermal Centrifuge
 
-## Package
+## 所属包名
 
 `import mods.ic2.ThermalCentrifuge;`
 
@@ -12,10 +12,11 @@
 
 ## 添加配方
 
-    mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
-    
-    mods.ic2.ThermalCentrifuge.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
-    
+```zenscript
+mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
+
+mods.ic2.ThermalCentrifuge.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
+```
 
 ## Removal
 

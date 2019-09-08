@@ -22,8 +22,9 @@ Für einen schnellen Einstieg, kannst du eine simple Datei mit dem Namen `hallo.
 
 In diese Datei packst du die folgende Zeile:
 
-    print("Hallo Welt!");
-    
+```zenscript
+print("Hallo Welt!");
+```
 
 Nun kannst du Minecraft starten und dir die Datei `crafttweaker.log` anschauen.
 

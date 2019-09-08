@@ -2,11 +2,11 @@
 
 ## registerReservoir
 
-| Type            | Data Type                                    |
+| 类型              | 数据类型                                         |
 | --------------- | -------------------------------------------- |
 | Name Identifier | String                                       |
 | Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimum Size    | Integer                                      |
+| Minimum Size    | 整型                                           |
 | Maximum Size    | Integer                                      |
 | Replenish Rate  | Integer                                      |
 | Weight          | Integer                                      |

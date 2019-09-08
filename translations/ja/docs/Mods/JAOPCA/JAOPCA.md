@@ -2,13 +2,14 @@
 
 [JAOPCA](https://minecraft.curseforge.com/projects/jaopca) (Just A Ore Processing Compatibility Attempt) is a mod that aims to add ore processing compatibilty to many mods.
 
-## Importing the package
+## パッケージのインポート
 
 If you want to shorten your method calls, you can import the package.  
 You can do so using
 
-    import mods.jaopca.JAOPCA;
-    
+```zenscript
+import mods.jaopca.JAOPCA;
+```
 
 ## Methods
 
@@ -22,36 +23,42 @@ This package is your entry point for JAOPCA. It provides a means of checking for
 
 Returns `true` if an entry with the given name exists
 
-    //mods.jaopca.JAOPCA.containsEntry(entryName);
-    mods.jaopca.JAOPCA.containsEntry("nugget");
-    
+```zenscript
+//mods.jaopca.JAOPCA.containsEntry(entryName);
+mods.jaopca.JAOPCA.containsEntry("nugget");
+```
 
 ### Get an OreEntry
 
 Returns the given [OreEntry](/Mods/JAOPCA/OreEntry/) for the given name, or `null` if it does not exist. *Careful: Most materials are Capitalized, and yes, casing matters!*
 
-    //mods.jaopca.JAOPCA.getOre(oreName);
-    mods.jaopca.JAOPCA.getOre("Coal");
-    
+```zenscript
+//mods.jaopca.JAOPCA.getOre(oreName);
+mods.jaopca.JAOPCA.getOre("Coal");
+```
 
 ### Get all OreEntries for an entry
 
 Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that have the given entry registered.
 
-    //mods.jaopca.JAOPCA.getOresForEntry(entryName);
-    mods.jaopca.JAOPCA.getOresForEntry("nugget");
-    
+```zenscript
+//mods.jaopca.JAOPCA.getOresForEntry(entryName);
+mods.jaopca.JAOPCA.getOresForEntry("nugget");
+```
 
 ### Get all OreEntries for an entry
 
 Returns a list of all [OreEntry](/Mods/JAOPCA/OreEntry/) objects that are of the given oreType.
 
-    //mods.jaopca.JAOPCA.getOresForType(oreType);
-    mods.jaopca.JAOPCA.getOresForType("GEM");
-    
+```zenscript
+//mods.jaopca.JAOPCA.getOresForType(oreType);
+mods.jaopca.JAOPCA.getOresForType("GEM");
+```
 
 ### Get all registered OreEntries
 
 Returns a list of all registered [OreEntry](/Mods/JAOPCA/OreEntry/) objects.
 
-    mods.jaopca.JAOPCA.getAllOres();
+```zenscript
+mods.jaopca.JAOPCA.getAllOres();
+```

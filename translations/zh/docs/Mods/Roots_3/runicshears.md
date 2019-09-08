@@ -1,20 +1,20 @@
-# Runic Shears (Block & Entity)
+# 符文剪刀 (方块 & 实体)
 
-### Class
+### 类
 
 ```zenscript
 import mods.roots.RunicShears;
 ```
 
-#### Methods
+#### 方法
 
 ```zenscript
 static void addRecipe(
-  string name,                 // the name of the recipe being created
-  IItemStack outputDrop,       // the item output obtained by performing the shearing
-  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
-  IItemStack inputBlock,       // the block that is to be sheared
-  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
+  string name,                 //创建的配方的名称。
+  IItemStack outputDrop,       //通过剪刀剪切获得的产物。
+  IItemStack replacementBlock, //剪切后的替代方块 (以itemstack，也就是物品堆格式) 
+  IItemStack inputBlock,       //被剪刀剪切的方块。
+  IItemStack jeiDisplayItem    //这个配方中被展示在JEI上的物品。
 );
 ```
 
@@ -22,10 +22,10 @@ static void addRecipe(
 
 ```zenscript
 static void addEntityRecipe(
-  string name,              // the name of the recipe for the shearing
-  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
-  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
-  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
+  string name,              //剪切配方的名字
+  IItemStack outputDrop,    //剪切特定生物掉落的物品。
+  IEntityDefinition entity, //剪切后掉落该掉落物的生物。
+  int cooldown              // 实体经历一次剪切后能够再次被剪切所花的tick 数(秒数*20) 。
 );
 ```
 
@@ -33,28 +33,28 @@ static void addEntityRecipe(
 
 ```zenscript
 static void removeRecipe(
-  IItemStack output // the itemstack output that you wish to remove
+  IItemStack output //你希望移除的配方的产物。
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.RunicShears;
 
-// Creates a recipe that obtains nether wart from red nether bricks
-// and then converts the bricks into normal nether bricks
+//创建一个通过剪切红色地狱砖块获得地狱疣的配方，
+//并且红石地狱砖块将会变回普通的地狱砖块。
 RunicShears.addRecipe("nether_wart_block", <minecraft:nether_wart>*2, <minecraft:nether_brick>, <minecraft:red_nether_brick>, <minecraft:red_nether_brick>);
 
-// Creates a recipe that obtains eggs from chickens with a 2 minute cooldown
+//创建一个通过鸡获得鸡蛋的配方，并且这个配方有2分钟的冷却时间。
 RunicShears.addEntityRecipe("egg_from_chicken", <minecraft:egg>*2, <entity:minecraft:chicken>, 120*20);
 
-// Removes all recipes (both entity & block) that give fey leather
+//移除所有获得精灵皮革的配方 (不管是通过生物还是方块)。 
 RunicShears.removeRecipe(<roots:fey_leather>);
 ```
 
-### Notes
+### 注意
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+`removeRecipe`方法将会尝试移除所有包含这个产物的配方 (包括剪切生物和剪切方块)。

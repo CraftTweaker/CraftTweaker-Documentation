@@ -28,8 +28,9 @@ var Iron = Excavator.getMineral("Iron_Ore");
 | Required | Ore    | string    |
 | Required | Chance | string    |
 
-    mineralMixObject.addOre("oreIron", 0.5);
-    
+```zenscript
+mineralMixObject.addOre("oreIron", 0.5);
+```
 
 You will need to use the oredict names.
 
@@ -39,8 +40,9 @@ You will need to use the oredict names.
 | -------- | ---- | --------- |
 | Required | Ore  | string    |
 
-    mineralMixObject.removeOre("oreIron");
-    
+```zenscript
+mineralMixObject.removeOre("oreIron");
+```
 
 ## Fail Chance Getter/Setter
 

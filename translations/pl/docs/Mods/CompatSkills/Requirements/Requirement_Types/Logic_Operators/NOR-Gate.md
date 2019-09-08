@@ -20,4 +20,6 @@ A **NOR** gate is an inverted **OR** gate. This is the same as using the output 
 
 Only allow using a wooden shovel until the player gets mining or gathering level 5:
 
-    addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
+```zenscript
+addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
+```

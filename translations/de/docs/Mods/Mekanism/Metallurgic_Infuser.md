@@ -22,11 +22,12 @@ As of Mekanism 9.7.0 it is now possible to view all registered infusions (includ
 
 ## Addition
 
-    mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, IItemStack outputStack);
-    
-    mods.mekanism.infuser.addRecipe("OBSIDIAN", 20, <minecraft:coal_block>, <minecraft:obsidian>);
-    mods.mekanism.infuser.addRecipe("DIAMOND", 80, <minecraft:glowstone>, <minecraft:nether_star>);
-    
+```zenscript
+mods.mekanism.infuser.addRecipe(String infusionType, int infusionConsumed, IIngredient inputStack, IItemStack outputStack);
+
+mods.mekanism.infuser.addRecipe("OBSIDIAN", 20, <minecraft:coal_block>, <minecraft:obsidian>);
+mods.mekanism.infuser.addRecipe("DIAMOND", 80, <minecraft:glowstone>, <minecraft:nether_star>);
+```
 
 As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
@@ -34,11 +35,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.infuser.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional String infusionType);
-    
-    mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ingot>, "REDSTONE");
-    mods.mekanism.infuser.removeRecipe(<minecraft:mycelium>);
-    
+```zenscript
+mods.mekanism.infuser.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional String infusionType);
+
+mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ingot>, "REDSTONE");
+mods.mekanism.infuser.removeRecipe(<minecraft:mycelium>);
+```
 
 Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
@@ -46,4 +48,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 
 As of Mekanism 9.7.0 it is now possible to remove all Metallurgic Infuser recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
-    mods.mekanism.infuser.removeAllRecipes();
+```zenscript
+mods.mekanism.infuser.removeAllRecipes();
+```

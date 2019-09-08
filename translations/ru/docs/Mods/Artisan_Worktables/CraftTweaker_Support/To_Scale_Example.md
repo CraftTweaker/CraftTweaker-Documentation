@@ -2,7 +2,7 @@
 
 Here's a Quick To Scale Example:
 
-## Example
+## Пример
 
 ```zenscript
 import crafttweaker.item.IItemStack;

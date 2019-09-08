@@ -4,7 +4,7 @@
 
 | Type            | Data Type                                    |
 | --------------- | -------------------------------------------- |
-| Name Identifier | String                                       |
+| Name Identifier | 文字列型                                         |
 | Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Minimum Size    | Integer                                      |
 | Maximum Size    | Integer                                      |

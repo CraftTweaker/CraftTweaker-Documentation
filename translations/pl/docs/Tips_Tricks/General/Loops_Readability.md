@@ -11,20 +11,21 @@ My rule of thumb: When writing the exactly same command more than 10 times, with
 
 So, instead of always typing out the functions, I declare one array containing all items and iterate through that one.
 
-    import crafttweaker.item.IIngredient;
-    
-    val Array = [
-        item1,
-        item2,
-        item3,
-        ...
-    ] as IIngredient[];
-    
-    
-    for item in Array{
-        recipes.remove(item);
-    }
-    
+```zenscript
+import crafttweaker.item.IIngredient;
+
+val Array = [
+    item1,
+    item2,
+    item3,
+    ...
+] as IIngredient[];
+
+
+for item in Array{
+    recipes.remove(item);
+}
+```
 
 ## Advantages
 

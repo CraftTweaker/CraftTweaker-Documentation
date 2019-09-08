@@ -12,11 +12,11 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## Rezept hinzufügen
 
-| Required | Type     | Datentyp                                                             |
+| Benötigt | Type     | Datentyp                                                             |
 | -------- | -------- | -------------------------------------------------------------------- |
-| Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
-| Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
-| Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
+| Benötigt | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| Benötigt | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
+| Benötigt | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
 ### Beispiel
 

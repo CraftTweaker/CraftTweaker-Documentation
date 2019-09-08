@@ -7,16 +7,18 @@ SoundTypes are referenced in the Sound Event Bracket handler this way:
 
 Vanilla
 
-    <soundevent:name>
-    
-    <soundevent:ambient.cave>
-    
+```zenscript
+<soundevent:name>
+
+<soundevent:ambient.cave>
+```
 
 Mod Added
 
-    <soundevent:modID:name>
-    
-    <soundevent:minecraft:ambient.cave>
-    
+```zenscript
+<soundevent:modID:name>
+
+<soundevent:minecraft:ambient.cave>
+```
 
 If the soundType is found, this will return an [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) Object.

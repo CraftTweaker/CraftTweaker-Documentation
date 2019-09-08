@@ -1,23 +1,27 @@
 # Fluid Dictionary
 
-### Importing
+### 导入
 
-    import mods.industrialforegoing.FluidDictionary;
-    
+```zenscript
+import mods.industrialforegoing.FluidDictionary;
+```
 
-### Adding
+### 添加配方
 
 It needs the Fluid Name as an input, the Fluid Name as an output and a conversion rate. The rate is how many mb from the origin will be transformed into the output. (InputMB * rate = OutputMB)
 
-    FluidDictionary.add(String input, String output, double rate);
-    
-    FluidDictionary.add("essence", "xpjuice", 1);
-    
+```zenscript
+FluidDictionary.add(String input, String output, double rate);
 
-### Removing
+FluidDictionary.add("essence", "xpjuice", 1);
+```
+
+### 移除配方
 
 It needs the Fluid Name as an input, the Fluid Name as an output.
 
-    FluidDictionary.remove(String input, String output);
-    
-    FluidDictionary.remove("essence", "xpjuice");
+```zenscript
+FluidDictionary.remove(String input, String output);
+
+FluidDictionary.remove("essence", "xpjuice");
+```

@@ -1,6 +1,6 @@
 # Powered Thingies :: Powered Kiln
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;

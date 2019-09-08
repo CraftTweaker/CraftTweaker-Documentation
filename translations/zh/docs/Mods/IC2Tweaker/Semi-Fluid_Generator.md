@@ -1,6 +1,6 @@
 # Semi-Fluid Generator
 
-## Package
+## 所属包名
 
 `import mods.ic2.SemiFluidGenerator;`
 
@@ -11,6 +11,8 @@
 
 ## Add Fluid
 
-    mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
-    
-    mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
+```zenscript
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
+
+mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
+```

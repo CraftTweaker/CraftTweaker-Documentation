@@ -25,9 +25,10 @@
 
 한 가지를 다른쪽에 둡니다.
 
-    //"Hello World" 출력
-    print("Hello" ~ " " ~ "World");
-    
+```zenscript
+//"Hello World" 출력
+print("Hello" ~ " " ~ "World");
+```
 
 ## 계산 결과
 
@@ -37,20 +38,21 @@
 
 변수에 값을 할당하는 두 가지 방법은 다음과 같습니다.
 
-    var test = 0;
-    
-    //Option 1:
-    //3 (1+2) 을 test에 할당
-    test = 1+2;
-    
-    //Option 2:
-    //5 (3+2) 를 test에 할당
-    test = test + 2;
-    
-    //Option 3:
-    //2 (5-3) 를 test에 할당
-    test -= 3;
-    
+```zenscript
+var test = 0;
+
+//Option 1:
+//3 (1+2) 을 test에 할당
+test = 1+2;
+
+//Option 2:
+//5 (3+2) 를 test에 할당
+test = test + 2;
+
+//Option 3:
+//2 (5-3) 를 test에 할당
+test -= 3;
+```
 
 옵션 1과 2는 `=` 토큰을 사용하여 반환 변수를 할당합니다.  
 계산에 사용되지 않는 변수를 할당하려는 경우 이 방법이 초보자에게 가장 쉬운 방법일 수 있습니다.
@@ -62,7 +64,7 @@
 
 <p>계산 결과는 항상 함수 또는 조건문에서 사용할 수 있습니다.</p>
 
-<pre><code>// 4
+<pre><code class="zenscript">// 4
 print(3+1);
 
 //array[4] 요소를 제거

@@ -5,20 +5,22 @@ Unlike ZenClasses however, ZenExpansions are used to expand the functionality of
 
 ## Example
 
-    @ZenExpansion("crafttweaker.item.IItemStack")
-    @ZenRegister
-    public class Expansion {
-        @ZenMethod
-        public static void print(IItemStack stack) {
-            CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
-        }
+```java
+@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenRegister
+public class Expansion {
+    @ZenMethod
+    public static void print(IItemStack stack) {
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
     }
-    
+}
+```
 
 This would allow people to do
 
-    <minecraft:iron_ingot>.print();
-    
+```zenscript
+<minecraft:iron_ingot>.print();
+```
 
 Since this is an expansion the first parameter is the class' instance!  
 This parameter will not be available in ZS.

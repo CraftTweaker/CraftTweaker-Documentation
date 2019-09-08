@@ -2,18 +2,18 @@
 
 ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
 
-## Calling
+## 导入包
 
 You can call the Resonator package using `mods.extrautils2.Resonator`
 
-## Removing
+## 移除配方
 
 ```zenscript
 //mods.extrautils2.Resonator.remove(IItemStack outout);
 mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## 添加配方
 
 ```zenscript
 <br />//1 GP = 100 energy

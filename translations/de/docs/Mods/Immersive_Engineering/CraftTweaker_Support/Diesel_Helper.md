@@ -2,16 +2,16 @@
 
 The Diesel Handler package can be used to change IE fuels.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
 
 ## Add Fuel
 
-| Required | Type   | Datentyp                                     |
+| Benötigt | Type   | Datentyp                                     |
 | -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input  | Integer                                      |
+| Benötigt | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Benötigt | Input  | Integer                                      |
 
 ### Beispiel
 

@@ -11,8 +11,9 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
-    val aspect = <aspect:ignis>;
-    
+```zenscript
+val aspect = <aspect:ignis>;
+```
 
 ## ZenGetters
 
@@ -23,7 +24,9 @@ You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler]
 
 ## Setting the amount
 
-    //They do the same, both return a new CTAspectStack
-    val aspect = <aspect:ignis> * 10;
-    
-    val aspect1 = <aspect:ignis>.setAmount(10);
+```zenscript
+//They do the same, both return a new CTAspectStack
+val aspect = <aspect:ignis> * 10;
+
+val aspect1 = <aspect:ignis>.setAmount(10);
+```

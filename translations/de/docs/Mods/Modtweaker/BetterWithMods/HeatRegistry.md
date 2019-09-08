@@ -6,7 +6,10 @@ The HeatRegistry allows assigning an integer value to a block that interacts wit
 
 # Adding a Heat Source
 
-    //stack must have an asssociated block state.
-    mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
-    
-    mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);
+```zenscript
+//stack must have an asssociated block state.
+mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
+
+mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);
+
+```

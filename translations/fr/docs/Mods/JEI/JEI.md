@@ -6,18 +6,19 @@ CraftTweaker comes with support for JustEnoughItems (JEI). You can add or hide i
 
 You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
 
-    //hide(IItemStack item);
-    mods.jei.JEI.hide(<minecraft:diamond>);
-    
-    //hide(ILiquidStack item);
-    mods.jei.JEI.hide(<liquid:water>);
-    mods.jei.JEI.hide(<fluid:lava>);
-    
-    
-    //removeAndHide(IIngredient output, @optional boolean NBT-Match)
-    mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
-    mods.jei.JEI.removeAndHide(<ore:planks>, false);
-    
+```zenscript
+//hide(IItemStack item);
+mods.jei.JEI.hide(<minecraft:diamond>);
+
+//hide(ILiquidStack item);
+mods.jei.JEI.hide(<liquid:water>);
+mods.jei.JEI.hide(<fluid:lava>);
+
+
+//removeAndHide(IIngredient output, @optional boolean NBT-Match)
+mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
+mods.jei.JEI.removeAndHide(<ore:planks>, false);
+```
 
 ## Hide Categories
 

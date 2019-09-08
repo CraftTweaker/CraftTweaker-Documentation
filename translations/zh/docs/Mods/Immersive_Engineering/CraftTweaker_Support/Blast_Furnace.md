@@ -8,14 +8,14 @@ You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurn
 
 ## Add Recipe:
 
-| Required | Type   | Data Type                                           |
+| Required | 类型     | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time   | Integer                                             |
 | Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

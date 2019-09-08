@@ -601,7 +601,7 @@ pages:
         - Thermionic Fabricator: 'Mods/Modtweaker/Forestry/Thermionic_Fabricator.md'
       - Inspirations:
         - Inspirations: 'Mods/Modtweaker/Inspirations/Inspirations.md'
-        - Handlers:
+        - Обработчики:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Refined Storage:
         - Рецепты:
@@ -613,14 +613,14 @@ pages:
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
         - Drying: 'Mods/Modtweaker/TConstruct/Drying.md'
-        - Materials:
+        - Материалы:
           - ITICMaterial: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterial.md'
           - ITICMaterialDefinition: 'Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition.md'
         - Melting: 'Mods/Modtweaker/TConstruct/Melting.md'
         - Smeltery Fuel: 'Mods/Modtweaker/TConstruct/Fuel.md'
       - Tinkers' Complement:
         - TComplement: 'Mods/Modtweaker/TComplement/TComplement.md'
-        - Handlers:
+        - Обработчики:
           - Blacklist: 'Mods/Modtweaker/TComplement/Handlers/Blacklist.md'
           - Overrides: 'Mods/Modtweaker/TComplement/Handlers/Overrides.md'
           - High Oven: 'Mods/Modtweaker/TComplement/Handlers/HighOven.md'
@@ -796,9 +796,14 @@ markdown_extensions:
   - admonition
   - smarty
   - sane_lists
+  - toc:
+      anchorlink: True
+      
 
 theme_dir: 'mkdocs_windmill'
-
+extra_css:
+    - css/styles.css
+    
 extra:
   logo: 'assets/logo.png'
   #article_nav_top: true

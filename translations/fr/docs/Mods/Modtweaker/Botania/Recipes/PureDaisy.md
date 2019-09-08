@@ -14,12 +14,15 @@ You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods
 
 The time defaults to 150 ticks
 
-    //mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
-    mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
-    mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
-    
+```zenscript
+//mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
+mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
+mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
+```
 
 ## Recipe removal
 
-    //mods.botania.PureDaisy.removeRecipe(IIngredient output);
-    mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
+```zenscript
+//mods.botania.PureDaisy.removeRecipe(IIngredient output);
+mods.botania.PureDaisy.removeRecipe(<minecraft:obsidian>);
+```

@@ -20,8 +20,10 @@ mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>,
 
 ## 添加配方
 
-    //mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
-    //stackIn 输入
-    //stackOut 输出
-    //cost 消耗
-    mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
+```zenscript
+//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
+//stackIn 输入
+//stackOut 输出
+//cost 消耗
+mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
+```

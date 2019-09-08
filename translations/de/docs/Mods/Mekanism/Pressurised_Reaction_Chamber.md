@@ -4,10 +4,11 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Pressu
 
 ## Addition
 
-    mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);
-    
-    mods.mekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
-    
+```zenscript
+mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);
+
+mods.mekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
+```
 
 As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
 
@@ -15,11 +16,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasOutput, @Optional IIngredient itemInput, @Optional IIngredient liquidInput, @Optional IIngredient gasInput);
-    
-    mods.mekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, <gas:hydrogen>);
-    mods.mekanism.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen>);
-    
+```zenscript
+mods.mekanism.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasOutput, @Optional IIngredient itemInput, @Optional IIngredient liquidInput, @Optional IIngredient gasInput);
+
+mods.mekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, <gas:hydrogen>);
+mods.mekanism.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen>);
+```
 
 Specifying an input parameter will only remove the specific recipe that uses said input. Lässt man den Input-Parameter weg, werden alle Rezepte für das jeweilige Item gelöscht.
 
@@ -27,4 +29,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 
 As of Mekanism 9.7.0 it is now possible to remove all Pressurised Reaction Chamber recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
-    mods.mekanism.reaction.removeAllRecipes();
+```zenscript
+mods.mekanism.reaction.removeAllRecipes();
+```

@@ -20,15 +20,16 @@ It might be required for you to import the package if you encounter any issues, 
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
-    //property name: maxStackSize
-    //ZenGetter
-    print(item.maxStackSize);
-    //ZenSetter
-    item.maxStackSize = 16;
-    //ZenMethods
-    item.getMaxStackSize();
-    item.setMaxStackSize(64);
-    
+```zenscript
+//property name: maxStackSize
+//ZenGetter
+print(item.maxStackSize);
+//ZenSetter
+item.maxStackSize = 16;
+//ZenMethods
+item.getMaxStackSize();
+item.setMaxStackSize(64);
+```
 
 | Property Name         | Type                                                                                                            | Required | Standardwert | Description/Notes                                                                    |
 | --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------ | ------------------------------------------------------------------------------------ |
@@ -60,31 +61,33 @@ You need to call this method to register the item in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the item or change any of it's properties!
 
-    item.register();
-    
+```zenscript
+item.register();
+```
 
 ## Skript-Beispiel
 
-    #loader contenttweaker
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Item;
-    import mods.contenttweaker.IItemRightClick;
-    import mods.contenttweaker.Commands;
-    
-    var zsItem = VanillaFactory.createItem("zs_item");
-    zsItem.maxStackSize = 8;
-    zsItem.rarity = "rare";
-    zsItem.creativeTab = zsCreativeTab;
-    zsItem.smeltingExperience = 10;
-    zsItem.toolClass = "pickaxe";
-    zsItem.toolLevel = 5;
-    zsItem.beaconPayment = true;
-    zsItem.itemRightClick = function(stack, world, player, hand) {
-        Commands.call("scoreboard players set @p name 5", player, world);
-        return "Pass";
-    };
-    zsItem.register();
-    
+```zenscript
+#loader contenttweaker
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.Commands;
+
+var zsItem = VanillaFactory.createItem("zs_item");
+zsItem.maxStackSize = 8;
+zsItem.rarity = "rare";
+zsItem.creativeTab = zsCreativeTab;
+zsItem.smeltingExperience = 10;
+zsItem.toolClass = "pickaxe";
+zsItem.toolLevel = 5;
+zsItem.beaconPayment = true;
+zsItem.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("scoreboard players set @p name 5", player, world);
+    return "Pass";
+};
+zsItem.register();
+```
 
 ## Localising the item
 

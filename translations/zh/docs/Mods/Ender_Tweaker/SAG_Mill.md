@@ -1,6 +1,6 @@
 # SAG Mill
 
-## Package
+## 所属包名
 
 `import mods.enderio.SagMill;`
 
@@ -15,13 +15,16 @@
 
 ## 添加配方
 
-    mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
-    
-    mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
-    
+```zenscript
+mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+
+mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
+```
 
 ## Removal
 
-    mods.enderio.SagMill.removeRecipe(IItemStack input);
-    
-    mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);
+```zenscript
+mods.enderio.SagMill.removeRecipe(IItemStack input);
+
+mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);
+```

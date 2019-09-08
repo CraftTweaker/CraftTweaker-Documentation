@@ -6,16 +6,18 @@ A `MixRecipeManager` is used to modify existing high oven mix recipe, including 
 
 Better be safe than sorry and import the package
 
-    import mods.tcomplement.highoven.MixRecipeManager;
-    
+```zenscript
+import mods.tcomplement.highoven.MixRecipeManager;
+```
 
 ## Getting a `MixRecipeManager`
 
 The `HighOven` handler can give you a `MixRecipeManager`:
 
-    // HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
-    var manager = HighOven.manageMixRecipe(<liquid:steel>);
-    
+```zenscript
+// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
+var manager = HighOven.manageMixRecipe(<liquid:steel>);
+```
 
 + `output` is the output of the mix recipe to modify
 + `input` (Optional) is the input of the mix recipe to modify. If `null` or unspecified, any mix recipe producing the output will be affected

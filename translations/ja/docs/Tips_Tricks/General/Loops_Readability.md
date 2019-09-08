@@ -11,20 +11,21 @@
 
 つまり、常に関数を書く代わりに、全ての項目を含む配列を一つ宣言し、それを反復処理します。
 
-    import crafttweaker.item.IIngredient;
-    
-    val Array = [
-        item1,
-        item2,
-        item3,
-        ...
-    ] as IIngredient[];
-    
-    
-    for item in Array{
-        recipes.remove(item);
-    }
-    
+```zenscript
+import crafttweaker.item.IIngredient;
+
+val Array = [
+    item1,
+    item2,
+    item3,
+    ...
+] as IIngredient[];
+
+
+for item in Array{
+    recipes.remove(item);
+}
+```
 
 ## 利点
 

@@ -12,9 +12,10 @@
 ZenGetterとは、指定したオブジェクトから情報を得るための手段です。 例えば、[IItemStack](/Vanilla/Items/IItemStack/)は"displayName"というZenGetterを持っています。  
 ZenGetterは次のように使用します。
 
-    //object.zenGetter;
-    <minecraft:iron_ingot>.displayName;
-    
+```zenscript
+//object.zenGetter;
+<minecraft:iron_ingot>.displayName;
+```
 
 ZenGetterは常に何かの値を返します。この例では、アイテムの名前「Iron Ingot」の文字列が返ります。
 
@@ -25,9 +26,10 @@ ZenSetterはZenGetterと似た挙動をとります。但し唯一の違いと�
 
 ZenSetterは次のように使用します。
 
-    //object.zenSetter = newValue;
-    <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
-    
+```zenscript
+//object.zenSetter = newValue;
+<minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
+```
 
 ZenSetterは値を返しません。なので、これは専ら値を設定するためのものであり、取得するものではありません。
 
@@ -38,9 +40,11 @@ ZenGetterとZenSetterとで同じ名前で用意されている場合(例: [IIte
 対象の変数型によって次の代入演算子が使用できます: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 では、これらの使われ方を見てみましょう。
 
-    //同じ名前のZenGetterとZenSetterが有るので、最初の例とその次の例は同じ動作をします。
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
-    
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```zenscript
+//同じ名前のZenGetterとZenSetterが有るので、最初の例とその次の例は同じ動作をします。
+//object.zenSetter += value;
+//object.zenSetter = object.zenGetter + value;
+
+<minecraft:iron_ingot>.displayName += " of Doom";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```

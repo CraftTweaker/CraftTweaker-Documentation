@@ -42,37 +42,43 @@ IBlockDefinition 对象提供方块的额外信息。
 不返回值。  
 等价于 `hardness = -1;`
 
-    defObj.setUnbreakable();
-    
+```zenscript
+defObj.setUnbreakable();
+```
 
 ### 获取特定世界的 tickrate
 
 接受一个 [IWorld](/Vanilla/World/IWorld/) 对象。  
 返回一个 int。
 
-    defObj.getTickRate(IWorld world);
-    
+```zenscript
+defObj.getTickRate(IWorld world);
+```
 
 ### 检查方块能否放置在另一个方块上
 
 接受一个 [IWorld](/Vanilla/World/IWorld/) 对象，一个 [IBlockPos](/Vanilla/World/IBlockPos/) 对象，取决于选用的方法，可能还需要一个 [IFacing](/Vanilla/World/IFacing/) 对象。  
 返回一个 bool。
 
-    defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
-    defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
-    
+```zenscript
+defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
+defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
+```
 
 ### 返回方块的光滑度
 
 接受一个 [IBlockState](/Vanilla/Blocks/IBlockState/) 对象， 一个 [IBlockAccess](/Vanilla/World/IBlockAccess/) 对象，一个 [IBlockPos](/Vanilla/World/IBlockPos/) 对象和一个可选的l [IEntity](/Vanilla/Entities/IEntity/) 对象。  
 返回一个float。
 
-    defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
-    
+```zenscript
+defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
+```
 
 ### 设置方块的挖掘等级
 
 接受一个 string 和一个 int。  
 不返回值。
 
-    defObj.setHarvestLevel(string toolclass, int level);
+```zenscript
+defObj.setHarvestLevel(string toolclass, int level);
+```

@@ -5,20 +5,22 @@
 
 ## 例子
 
-    @ZenExpansion("crafttweaker.item.IItemStack")
-    @ZenRegister
-    public class Expansion {
-        @ZenMethod
-        public static void print(IItemStack stack) {
-            CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
-        }
+```java
+@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenRegister
+public class Expansion {
+    @ZenMethod
+    public static void print(IItemStack stack) {
+        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
     }
-    
+}
+```
 
 这将是人们能够这样做
 
-    <minecraft:iron_ingot>.print();
-    
+```zenscript
+<minecraft:iron_ingot>.print();
+```
 
 由于这是一个扩展，第一个参数是 Class 实例！  
 这个参数将在 ZS 中无效。

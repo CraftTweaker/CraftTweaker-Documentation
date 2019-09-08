@@ -9,16 +9,17 @@ More specifically, it will look like this:
 
 [CraftTweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
-    @ZenClass(value = "crafttweaker.tests.zenDoc")
-    @ZenRegister
-    public class ZenDocWiki {
-        @ZenMethod
-        @ZenDoc("This prints a warning")
-        public static void print() {
-            CraftTweakerAPI.logWarning("Print invoked!");
-        }
+```java
+@ZenClass(value = "crafttweaker.tests.zenDoc")
+@ZenRegister
+public class ZenDocWiki {
+    @ZenMethod
+    @ZenDoc("This prints a warning")
+    public static void print() {
+        CraftTweakerAPI.logWarning("Print invoked!");
     }
-    
+}
+```
 
 ## What methods can be annotated || Additional Info
 

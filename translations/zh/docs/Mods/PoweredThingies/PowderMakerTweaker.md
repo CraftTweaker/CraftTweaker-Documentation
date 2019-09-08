@@ -1,6 +1,6 @@
 # Powered Thingies :: Powder Maker
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.powderMakerTweaker as pmt;

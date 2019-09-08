@@ -26,9 +26,10 @@ Ich hoffe mal, dass ihr alle die folgenden Sachen schon irgendwoher kennt.
 
 Hängt etwas an etwas anderes dran:
 
-    //gibt "Hallo Welt" aus
-    print("Hallo" ~ " " ~ "Welt");
-    
+```zenscript
+//gibt "Hallo Welt" aus
+print("Hallo" ~ " " ~ "Welt");
+```
 
 ## Ergebnisse von Berechnungen
 
@@ -38,20 +39,21 @@ Naja, Berechnungen spucken ja Ergebnisse aus. Was macht man nun damit?
 
 Es gibt mehrere Arten, wie man einen Wert einer Variable zuweist:
 
-    var test = 0;
-    
-    //Option 1:
-    //weist test den Wert 3 (1+2) zu
-    test = 1+2;
-    
-    //Option 2:
-    //weist test den Wert 5 (3+2) zu
-    test = test + 2;
-    
-    //Option 3:
-    //weist test den Wert 2 (5-3) zu
-    test -= 3;
-    
+```zenscript
+var test = 0;
+
+//Option 1:
+//weist test den Wert 3 (1+2) zu
+test = 1+2;
+
+//Option 2:
+//weist test den Wert 5 (3+2) zu
+test = test + 2;
+
+//Option 3:
+//weist test den Wert 2 (5-3) zu
+test -= 3;
+```
 
 Option 1 und 2 weisen der Variable mittels `=` einen neuen Wert zu.  
 Für Anfänger wird das wohl der etwas einfachere Weg sein.
@@ -63,11 +65,13 @@ Alle Operatoren besitzen ihre eigenen Zeichen, welche oben in der Tabelle vorhan
 
 Du kannst Ergebnisse auch direkt in einer Funktion oder in einer Abfrage verwenden:
 
-    //gibt 4 aus
-    print(3+1);
-    
-    //entfernt das Element in array[4]
-    recipes.remove(array[3+1]);
-    
-    //
-    if(3+1 == 2*2) {print("Ich habe etwas berechnet!")}
+```zenscript
+//gibt 4 aus
+print(3+1);
+
+//entfernt das Element in array[4]
+recipes.remove(array[3+1]);
+
+//
+if(3+1 == 2*2) {print("Ich habe etwas berechnet!")}
+```

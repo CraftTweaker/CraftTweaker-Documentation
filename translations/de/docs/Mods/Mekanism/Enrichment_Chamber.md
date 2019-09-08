@@ -4,10 +4,11 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrich
 
 ## Addition
 
-    mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
-    
-    mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
-    
+```zenscript
+mods.mekanism.enrichment.addRecipe(IIngredient inputStack, IItemStack outputStack);
+
+mods.mekanism.enrichment.addRecipe(<minecraft:coal_block>, <mekanism:compressedcarbon> * 9);
+```
 
 As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
 
@@ -15,11 +16,12 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 ## Removal
 
-    mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
-    
-    mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:cobblestone>);
-    mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
-    
+```zenscript
+mods.mekanism.enrichment.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
+
+mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:cobblestone>);
+mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
+```
 
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
@@ -27,4 +29,6 @@ Specifying an output parameter will only remove the specific recipe that results
 
 As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
-    mods.mekanism.enrichment.removeAllRecipes();
+```zenscript
+mods.mekanism.enrichment.removeAllRecipes();
+```

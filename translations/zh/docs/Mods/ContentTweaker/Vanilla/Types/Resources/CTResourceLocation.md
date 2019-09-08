@@ -22,10 +22,11 @@ var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/
 
 ZenGetters are called on an object, not on the package itself
 
-    print(myLocation.domain);
-    
+```zenscript
+print(myLocation.domain);
+```
 
-| ZenGetter | Type   |
+| ZenGetter | 类型     |
 | --------- | ------ |
 | domain    | string |
 | path      | string |

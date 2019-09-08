@@ -1,6 +1,6 @@
 # Fermenter
 
-## Package
+## 所属包名
 
 `import mods.ic2.Fermenter;`
 
@@ -12,6 +12,8 @@
 
 ## 添加配方
 
-    mods.ic2.Fermenter.addRecipe(ILiquidStack output, ILiquidStack input, int heat);
-    
-    mods.ic2.Fermenter.addRecipe(<liquid:lava> * 1000, <liquid:water> * 2000, 23333);
+```zenscript
+mods.ic2.Fermenter.addRecipe(ILiquidStack output, ILiquidStack input, int heat);
+
+mods.ic2.Fermenter.addRecipe(<liquid:lava> * 1000, <liquid:water> * 2000, 23333);
+```

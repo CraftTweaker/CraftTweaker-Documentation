@@ -2,7 +2,7 @@
 
 Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPartData;`
@@ -165,7 +165,7 @@ Below you will find a list for CoT's basic Part Types:
 | drag       | A "float" (e.g. "1.0") | No        |
 | riddenDrag | A "float" (e.g. "1.0") | No        |</details>
 
-## Example
+## 例子
 
 ```zenscript
 import mods.contenttweaker.MaterialSystem;

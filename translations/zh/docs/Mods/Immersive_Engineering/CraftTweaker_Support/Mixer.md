@@ -6,16 +6,16 @@ The Mixer package can be used to add/remove recipes to/from the Immersive Engine
 
 You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type         | Data Type                                                    |
+| Required | 类型           | Data Type                                                    |
 | -------- | ------------ | ------------------------------------------------------------ |
-| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| 必要       | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| 必要       | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
 | Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
-| Required | Energy       | Integer                                                      |
+| 必要       | Energy       | Integer                                                      |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

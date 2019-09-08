@@ -796,9 +796,14 @@ markdown_extensions:
   - admonition
   - smarty
   - sane_lists
+  - toc:
+      anchorlink: True
+      
 
 theme_dir: 'mkdocs_windmill'
-
+extra_css:
+    - css/styles.css
+    
 extra:
   logo: 'assets/logo.png'
   #article_nav_top: true

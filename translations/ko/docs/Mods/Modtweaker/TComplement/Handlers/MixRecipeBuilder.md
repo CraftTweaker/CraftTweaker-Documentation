@@ -6,16 +6,18 @@ A `MixRecipeBuilder` is used to build and add High Oven's Mix Recipe to the game
 
 Better be safe than sorry and import the package
 
-    import mods.tcomplement.highoven.MixRecipeBuilder;
-    
+```zenscript
+import mods.tcomplement.highoven.MixRecipeBuilder;
+```
 
 ## Getting a `MixRecipeBuilder`
 
 The `mods.tcomplement.highoven.HighOven` handler can give you a `MixRecipeBuilder`
 
-    // HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
-    var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
-    
+```zenscript
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
+var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
+```
 
 + `output` is the fluid and quantity to produce
 + `input` is the fluid and quantity to consume

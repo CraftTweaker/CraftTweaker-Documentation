@@ -6,16 +6,16 @@ The Refinery package can be used to add/remove recipes to/from the Immersive Eng
 
 You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type    | Data Type                                    |
+| Required | 类型      | Data Type                                    |
 | -------- | ------- | -------------------------------------------- |
-| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要       | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 | Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Energy  | Integer                                      |
+| 必要       | Energy  | Integer                                      |
 
-### Example
+### 例子
 
 ```zenscript
 //Example

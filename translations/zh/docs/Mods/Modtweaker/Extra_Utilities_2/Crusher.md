@@ -1,19 +1,19 @@
-# Crusher
+# 磨粉机
 
 ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
-## Calling
+## 导入包
 
 You can call the Crusher package using `mods.extrautils2.Crusher`
 
-## Removing
+## 移除配方
 
 ```zenscript
 //mods.extrautils2.Crusher.remove(IItemStack outout);
 mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## 添加配方
 
 ```zenscript
 //mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);

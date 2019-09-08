@@ -4,8 +4,9 @@ This is the entry point used to get instances of the individual `Tweaker` classe
 
 ### Importing
 
-    import mods.poweredthingies.Tweaker;
-    
+```zenscript
+import mods.poweredthingies.Tweaker;
+```
 
 ### Getting Machine Specific Tweakers
 

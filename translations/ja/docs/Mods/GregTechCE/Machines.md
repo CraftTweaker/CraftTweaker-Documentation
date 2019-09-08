@@ -111,7 +111,7 @@ blast_furnace.recipeBuilder()
 
 Some of properties assignable to `.property()` method:
 
-| Name        | Description                                                        |
+| Name        | 説明                                                                 |
 | ----------- | ------------------------------------------------------------------ |
 | explosives  | Implosion Compressor, amount of explosives                         |
 | circuit     | Integrated Circuit-configurable machines. Configuration of circuit |

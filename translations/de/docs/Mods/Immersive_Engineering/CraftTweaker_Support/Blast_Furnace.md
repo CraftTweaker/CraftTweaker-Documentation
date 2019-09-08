@@ -2,17 +2,17 @@
 
 The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
 
 ## Rezept hinzufügen:
 
-| Required | Type   | Datentyp                                            |
+| Benötigt | Type   | Datentyp                                            |
 | -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
+| Benötigt | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Benötigt | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Time   | Integer                                             |
 | Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
 
 ### Beispiel
@@ -24,7 +24,7 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Remove Recipe
+## Rezept entfernen
 
 | Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |

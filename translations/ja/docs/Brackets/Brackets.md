@@ -12,14 +12,16 @@ ZenScriptにおけるブラケット記法は、`<`と`>`を用いて定義さ�
 
 [アイテムのブラケット記法](/Vanilla/Brackets/Bracket_Item/)の使い方は次のようになります。
 
-    <minecraft:apple>
-    
+```zenscript
+<minecraft:apple>
+```
 
 これは、`りんご`の[アイテム](/Vanilla/Items/IItemStack/)を表します。
 
 [鉱石辞書のブラケット記法](/Vanilla/Brackets/Bracket_Ore/)の使い方は次のようになります。
 
-    <ore:ingotIron>
-    
+```zenscript
+<ore:ingotIron>
+```
 
 これは[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)における`ingotIron`を表します。

@@ -1,18 +1,18 @@
 # Excavator
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Datentyp |
+| Benötigt | Type                | Datentyp |
 | -------- | ------------------- | -------- |
-| Required | Name                | string   |
-| Required | Mineral Weight      | int      |
-| Required | Fail Chance         | double   |
-| Required | Ores                | string[] |
-| Required | Chances             | double[] |
+| Benötigt | Name                | string   |
+| Benötigt | Mineral Weight      | int      |
+| Benötigt | Fail Chance         | double   |
+| Benötigt | Ores                | string[] |
+| Benötigt | Chances             | double[] |
 | Optional | Dimension Whitelist | int []   |
 | Optional | Blacklist           | boolean  |
 

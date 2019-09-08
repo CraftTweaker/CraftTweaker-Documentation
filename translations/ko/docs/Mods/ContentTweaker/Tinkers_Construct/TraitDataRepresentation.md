@@ -10,7 +10,7 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenGetter and ZenSetter
 
-| Name        | ZenGetter | ZenSetter | Type   |
+| 이름          | ZenGetter | ZenSetter | 타입     |
 | ----------- | --------- | --------- | ------ |
 | color       | ✔         | ✔         | int    |
 | current     | ✔         | ✔         | int    |
@@ -23,8 +23,10 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenMethods
 
-    //Does the same as myTraitData.info;
-    myTraitData.calcInfo();
-    
-    //Does the same as myTraitData.colorString;
-    myTraitData.getColorString();
+```zenscript
+//Does the same as myTraitData.info;
+myTraitData.calcInfo();
+
+//Does the same as myTraitData.colorString;
+myTraitData.getColorString();
+```

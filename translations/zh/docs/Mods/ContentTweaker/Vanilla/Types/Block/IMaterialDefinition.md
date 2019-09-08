@@ -12,9 +12,9 @@ It might be required for you to import the package if you encounter any issues, 
 You can get such an object using the [Block Material Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Block_Material/):  
 `<blockmaterial:wood>`
 
-## ZenGetters/ZenMethods without parameters
+## 不带参数的 ZenGetters/ZenMethods
 
-| ZenGetter       | ZenMethod           | Return Type                                                            |
+| ZenGetter       | ZenMethod           | 返回值类型                                                                  |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
 | blocksLight     | blocksLight()       | bool                                                                   |
 | blocksMovement  | blocksMovement()    | bool                                                                   |
@@ -30,5 +30,7 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 You can use the `==` operator to see if two MaterialDefinitions are equal
 
-    if(materialA == materialB)
-        print("success!");
+```zenscript
+if(materialA == materialB)
+    print("success!");
+```

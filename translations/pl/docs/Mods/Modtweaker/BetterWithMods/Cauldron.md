@@ -4,19 +4,21 @@
 
 * Adds a Unstoked Cauldron Recipe 
 
-    mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-    //Examples
-    mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
-    mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
-    
+```zenscript
+mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
+mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
+mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
+```
 
 * Adds a Stoked Cauldron Recipe 
 
-    mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-    //Examples
-    mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
-    mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
-    
+```zenscript
+mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
+//Examples
+mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
+mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
+```
 
 ## Removal
 
@@ -49,8 +51,10 @@ The Cauldron has a recipe builder that allows more precise control over the reci
 
 ### Example builder usage
 
-    mods.betterwithmods.Cauldron.builder()
-    .buildRecipe([<ore:stone>], [<minecraft:dirt>])
-    .setHeat(2)
-    .setPriority(-1)
-    .build();
+```zenscript
+mods.betterwithmods.Cauldron.builder()
+.buildRecipe([<ore:stone>], [<minecraft:dirt>])
+.setHeat(2)
+.setPriority(-1)
+.build();
+```

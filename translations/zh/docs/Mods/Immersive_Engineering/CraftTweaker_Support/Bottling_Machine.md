@@ -4,15 +4,15 @@
 
 You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type   | Data Type                                           |
+| Required | 类型     | Data Type                                           |
 | -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Example
+### 例子
 
 ```zenscript
 //Example:

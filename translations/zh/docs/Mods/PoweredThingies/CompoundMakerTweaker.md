@@ -1,6 +1,6 @@
 # Powered Thingies :: Compound Maker
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;

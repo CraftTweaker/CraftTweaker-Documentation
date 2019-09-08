@@ -9,4 +9,4 @@ This means that issues with the added methods should be discussed at the [Astral
 
 ## Removed CraftTweaker methods
 
-- Astras Sorcery's CraftTweaker integration once featured a Mineralis Ritual. This is now handled by a config option!
+- Astral Sorcery's CraftTweaker integration once featured a Mineralis Ritual. This is now handled by a config option!

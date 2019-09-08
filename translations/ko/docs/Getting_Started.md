@@ -22,8 +22,9 @@ Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitial
 
 `hello.zs` 파일에 다음 코드를 입력하세요.
 
-    print("Hello world!");
-    
+```zenscript
+print("Hello world!");
+```
 
 이제 마인크래프트를 로드하고 `crafttweaker.log`파일을 확인하세요.
 

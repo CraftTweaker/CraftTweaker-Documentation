@@ -11,8 +11,9 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
 
-    val aspect = <aspect:ignis>.internal;
-    
+```zenscript
+val aspect = <aspect:ignis>.internal;
+```
 
 ## ZenGetters and ZenSetters
 

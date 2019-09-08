@@ -1,6 +1,6 @@
 # Powered Thingies :: Incinerator
 
-### Importing
+### 导入
 
 ```zenscript
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;

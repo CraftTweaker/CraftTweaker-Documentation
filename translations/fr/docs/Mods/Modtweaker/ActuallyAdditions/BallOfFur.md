@@ -6,11 +6,14 @@
 
 ## Addition
 
-    //mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
-    mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
-    
+```zenscript
+//mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
+mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
+```
 
 ## Removal
 
-    //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
-    mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+```zenscript
+//mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
+mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+```

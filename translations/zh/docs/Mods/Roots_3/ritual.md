@@ -1,27 +1,27 @@
-# Modifying Pyre Ritual Recipes
+# 修改柴堆仪式（Pyre Ritual）配方
 
-### Class
+### 类
 
 ```zenscript
 import mods.roots.Ritual;
 ```
 
-#### Methods
+#### 方法
 
 ```zenscript
 static void modifyRitual(
-  string name,         // the name of the ritual whose ingredients you wish to modify
-  IIngredient[] inputs // a list of five ingredients (no more, no less)
+  string name,         // 你希望修改的柴堆仪式的名称。
+  IIngredient[] inputs // 由5种仪式原料构成的数列 (不能多，也不能少)。
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.Ritual;
 
-// Changes the ingredients required to perform the windwall ritual
+// 更改展开仪式：风之墙所需的原料。
 Ritual.modifyRitual("ritual_windwall", [<minecraft:feather>, <minecraft:glass>, <roots:cloud_berry>, <roots:cloud_berry>, <minecraft:web>]);
 ```

@@ -20,7 +20,9 @@ The function needs to return either `"SUCCESS"`, `"PASS"` or `"FAIL"`
 
 ## Example
 
-    zsItem.itemRightClick = function(stack, world, player, hand) {
-        Commands.call("scoreboard players set @p name 5", player, world);
-        return "Pass";
-    };
+```zenscript
+zsItem.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("scoreboard players set @p name 5", player, world);
+    return "Pass";
+};
+```

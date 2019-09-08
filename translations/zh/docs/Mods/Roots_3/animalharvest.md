@@ -1,12 +1,12 @@
 # Animal Harvest
 
-### Class
+### 所属类名
 
 ```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
-#### Methods
+#### 可用方法
 
 ```zenscript
 static void addEntity(
@@ -24,7 +24,7 @@ static void removeEntity(
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.AnimalHarvest;

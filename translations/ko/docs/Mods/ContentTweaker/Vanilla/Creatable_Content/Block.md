@@ -6,7 +6,7 @@ Required Fields will never have a default value, empty defaults means null.
 
 All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and gotten via get`Name`;
 
-| Name                | Type                                                                                                      | Required | Default Value                                                                                                  | Notes                                                                                   |
+| 이름                  | Type                                                                                                      | Required | Default Value                                                                                                  | Notes                                                                                   |
 | ------------------- | --------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | axisAlignedBB       | [MCAxisAlignedBB](/Mods/ContentTweaker/Vanilla/Types/Block/MCAxisAlignedBB/)                              | No       | Full Block                                                                                                     | Lets you set the block's bounding box                                                   |
 | beaconBase          | boolean                                                                                                   | No       | false                                                                                                          | Can this block be used as part of a beacon's base?                                      |
@@ -41,22 +41,23 @@ All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and
 
 ## Examples
 
-    #loader contenttweaker
-    
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Block;
-    
-    var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
-    antiIceBlock.setLightOpacity(3);
-    antiIceBlock.setLightValue(0);
-    antiIceBlock.setBlockHardness(5.0);
-    antiIceBlock.setBlockResistance(5.0);
-    antiIceBlock.setToolClass("pickaxe");
-    antiIceBlock.setToolLevel(0);
-    antiIceBlock.setBlockSoundType(<soundtype:snow>);
-    antiIceBlock.setSlipperiness(0.3);
-    antiIceBlock.register();
-    
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Block;
+
+var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
+antiIceBlock.setLightOpacity(3);
+antiIceBlock.setLightValue(0);
+antiIceBlock.setBlockHardness(5.0);
+antiIceBlock.setBlockResistance(5.0);
+antiIceBlock.setToolClass("pickaxe");
+antiIceBlock.setToolLevel(0);
+antiIceBlock.setBlockSoundType(<soundtype:snow>);
+antiIceBlock.setSlipperiness(0.3);
+antiIceBlock.register();
+```
 
 ## Localising the block
 

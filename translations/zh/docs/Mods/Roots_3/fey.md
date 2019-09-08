@@ -1,18 +1,18 @@
-# Fey Crafter
+# 精灵工匠台（Fey）
 
-### Class
+### 所属类名
 
 ```zenscript
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### 可用方法
 
 ```zenscript
 static void addRecipe(
-  string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,   // the itemstack produced by this recipe
-  IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
+  string name,         //配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
+  IItemStack output,   //配方产物的物品id。
+  IIngredient[] inputs // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
 );
 ```
 
@@ -20,10 +20,10 @@ static void addRecipe(
 
 ```zenscript
 static void addRecipe(
-  string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,    // the itemstack produced by this recipe
-  IIngredient[] inputs, // an array of IIngredients that make up the recipe; must contain 5 items
-  int xp                // the amount of xp (in levels) to reward the player for crafting this recipe
+  string name,          // 配方的名称；如果取代了一个配方， 务必确保它们拥有相同的名称，从而确保Patchouli手册mod能正常工作。
+  IItemStack output,    // 配方产物的物品id。
+  IIngredient[] inputs, // 一个由配方中所有物品组成的数组；这个配方必须拥有5个物品。
+  int xp                // 合成后奖励给玩家的经验值(以等级作为单位)。
 );
 ```
 
@@ -31,30 +31,30 @@ static void addRecipe(
 
 ```zenscript
 static void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+  IItemStack output //你希望移除的配方的产物
 );
 ```
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.Fey;
 
-// Adds a recipe for TNT using 4 gunpowder and red wool
+// 添加用四个火药和一个红色羊毛合成一个TNT的配方
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>]);
 
-// Adds the above recipe but also grants the player 6 levels (from 0-6 relatively) every time it is crafted
+// 添加与上文提到的那个配方，并且每次合成时给予玩家6级经验 (从0级-6级的所需的经验值) 
 Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:gunpowder>, <minecraft:wool:14>], 6);
 
-// Removes the recipe for the living axe
+// 移除活镐的合成配方
 Fey.removeRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
+// 添加新的合成配方，务必保持与原配方同名，以确保它能被Patchouli手册展示出来。 默认情况下，所有精灵工匠台的名称与物品的名称相同。
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
-### Notes
+### 注意
 
-It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.
+Patchouli手册的正常工作很重要，如果你删除一个默认配方 (例如 `living_axe`，也就是活镐)，如果你想要Patchouli手册正确显示新的配方，你必须用另一个配方替换它，并且给配方名称 `"living_axe"` 。

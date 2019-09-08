@@ -19,16 +19,18 @@ Jeder ItemStack Eintrag ist mit dem entsprechenden Array-Eintrag "Chance" verkn�
 
 Beispiel:
 
-    [<minecraft:diamond>, <minecraft:leather> * 2]
-    [1, 1]
-    
+```zenscript
+[<minecraft:diamond>, <minecraft:leather> * 2]
+[1, 1]
+```
 
 Der Float Wert des Typs Chance sollte zwischen 0 und 1 liegen. Da es sich von einen Float-Wert in einen Prozent Wert umrechnet. Das Bedeutet:
 
-    0.5     = 50%
-    0.22374 = 22.374%
-    1       = 100%
-    
+```zenscript
+0.5     = 50%
+0.22374 = 22.374%
+1       = 100%
+```
 
 Während du den Float wert über 1 setzen kannst, wird er niemals einen Wert über 100% erreichen
 

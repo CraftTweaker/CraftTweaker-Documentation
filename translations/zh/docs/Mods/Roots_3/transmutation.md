@@ -1,12 +1,12 @@
 # Ritual of Transmutation
 
-### Class
+### 所属类名
 
 ```zenscript
 import mods.roots.Transmutation;
 ```
 
-#### Methods
+#### 可用方法
 
 ```zenscript
 static void removeRecipe(
@@ -36,7 +36,7 @@ static void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### 例子
 
 ```zenscript
 import mods.roots.Transmutation;
@@ -51,7 +51,7 @@ Transmutation.addBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:e
 Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
 ```
 
-### Notes
+### 注意
 
 **Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
 

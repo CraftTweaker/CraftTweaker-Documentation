@@ -1,20 +1,22 @@
 # Redstone Furnace
 
-## Package
+## 所属包名
 
 `mods.thermalexpansion.RedstoneFurnace`
 
-## Addition
+## 添加配方
 
-    //mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
-    mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
-    
+```zenscript
+//mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
+mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
+```
 
-## Removal
+## 删除配方
 
-    //mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
-    mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
-    
+```zenscript
+//mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
+mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
+```
 
 ## Pyrolitic Augment Addition
 
@@ -22,13 +24,16 @@
 
 Example recipe to turn charcoal into coal coke, producing 250mb of creosote oil in the process.
 
-    //mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
-    mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
-    
+```zenscript
+//mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
+mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:material:802>, <minecraft:coal:1>, 2000, 250);
+```
 
 ## Pyrolitic Augment Removal
 
 Removes the recipe to convert coal into coal coke.
 
-    //mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack input);
-    mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
+```zenscript
+//mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack input);
+mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(<minecraft:coal>);
+```

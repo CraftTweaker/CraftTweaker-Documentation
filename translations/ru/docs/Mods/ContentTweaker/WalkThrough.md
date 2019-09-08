@@ -12,22 +12,23 @@ ContentTweaker should create an extra folder in your minecraft directory: "resou
 
 So for the best example of how ContentTweaker's content works, I'll be showing you one of the basic content pieces you will be creating, a block. There is other content that can be created, but I won't be including them in this walk-through. So first up, here is the script for the block I will using as example. Explanation of these methods can be found at the Blocks Page.
 
-    #loader contenttweaker
-    
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Block;
-    
-    var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
-    antiIceBlock.setLightOpacity(3);
-    antiIceBlock.setLightValue(0);
-    antiIceBlock.setBlockHardness(5.0);
-    antiIceBlock.setBlockResistance(5.0);
-    antiIceBlock.setToolClass("pickaxe");
-    antiIceBlock.setToolLevel(0);
-    antiIceBlock.setBlockSoundType(<soundtype:snow>);
-    antiIceBlock.setSlipperiness(0.3);
-    antiIceBlock.register();
-    
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Block;
+
+var antiIceBlock = VanillaFactory.createBlock("anti_ice", <blockmaterial:ice>);
+antiIceBlock.setLightOpacity(3);
+antiIceBlock.setLightValue(0);
+antiIceBlock.setBlockHardness(5.0);
+antiIceBlock.setBlockResistance(5.0);
+antiIceBlock.setToolClass("pickaxe");
+antiIceBlock.setToolLevel(0);
+antiIceBlock.setBlockSoundType(<soundtype:snow>);
+antiIceBlock.setSlipperiness(0.3);
+antiIceBlock.register();
+```
 
 This will create a Block that looks and acts slightly like Minecraft's Ice Block. You will want to put this script in the 'scripts' folder, following the same rules as in CraftTweaker's scripts.
 

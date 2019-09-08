@@ -12,7 +12,7 @@ Note that it's possible to have two or more recipes with the same input, as long
 
 You can call the Refinery package using `mods.pneumaticcraft.refinery`.
 
-## Removing
+## 移除配方
 
 This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
 

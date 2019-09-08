@@ -4,9 +4,10 @@ Mekanism CraftTweaker support has been integrated directly into Mekanism now ([l
 
 Mekanism adds bracket-handler support to define **gas** -- a special material state differing from forge [**liquids**](/Vanilla/Liquids/ILiquidStack/)
 
-    <gas:oxygen>
-    <gas:water> *
-    
+```zenscript
+<gas:oxygen>
+<gas:water> *
+```
 
 *Noting that `<gas:water>` is different from `<liquid:water>`*
 
@@ -16,31 +17,33 @@ It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by s
 
 ## Пример
 
-    import mod.mekanism.gas.IGasStack;
-    
-    var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
-    var oxygen2 = <gas:oxygen> * 500;
-    
+```zenscript
+import mod.mekanism.gas.IGasStack;
 
-## ZenGetters
+var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
+var oxygen2 = <gas:oxygen> * 500;
+```
+
+## Геттеры ZenScript
 
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
-| ZenGetter   | Описание                                | Return Type    |
-| ----------- | --------------------------------------- | -------------- |
-| definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | string         |
-| displayName | Returns the gas' displayName            | string         |
-| amount      | Returns the gas' amount in millibuckets | int            |
+| ZenGetter   | Описание                                | Возвращаемый тип |
+| ----------- | --------------------------------------- | ---------------- |
+| definition  | Returns the gas' definition             | IGasDefinition   |
+| NAME        | Returns the gas' name                   | string           |
+| displayName | Returns the gas' displayName            | string           |
+| amount      | Returns the gas' amount in millibuckets | int              |
 
 ## Setting the Object's Amount
 
 You can set the Object's amount (gas volume in Millibuckets) in two ways, which both do exactly the same:
 
-    var gas_amount_multiply = <gas:water> * 500;
-    var gas_amount_zenMethod = <gas:water>.withAmount(500);
-    
+```zenscript
+var gas_amount_multiply = <gas:water> * 500;
+var gas_amount_zenMethod = <gas:water>.withAmount(500);
+```
 
 ## IGasDefinition
 
@@ -54,5 +57,7 @@ You can get such an object using `gasStack.definition` (check the table above)
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 
-    var gas_definition = <gas:water>.definition;
-    var gas_bucket = gas_definition * 1000;
+```zenscript
+var gas_definition = <gas:water>.definition;
+var gas_bucket = gas_definition * 1000;
+```

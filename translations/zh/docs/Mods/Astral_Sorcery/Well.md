@@ -21,9 +21,10 @@ mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcompo
 
 ## 添加配方
 
-    //mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
-    mods.astralsorcery.Lightwell.addLiquefaction(<minecraft:dirt>, <liquid:water>, 1, 0.2, 0);
-    
+```zenscript
+//mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
+mods.astralsorcery.Lightwell.addLiquefaction(<minecraft:dirt>, <liquid:water>, 1, 0.2, 0);
+```
 
 | 参数                          | 参数类型                                                | 描述                                                                      |
 | --------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------- |
