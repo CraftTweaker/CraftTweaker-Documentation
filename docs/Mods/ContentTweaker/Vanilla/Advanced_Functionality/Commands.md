@@ -1,6 +1,8 @@
 # Commands
 
 You can use this class to send a command, you cannot use this class to create new commands!
+Look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/) to add new commands.
+You can also use a [ICommandManager](/Vanilla/Commands/ICommandManager/).
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  

@@ -37,6 +37,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onBlockBreak                    | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                      |
 | onBlockHarvestDrops             | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                        |
 | onCheckSpawn                    | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)           |
+| onCommand                       | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                                 |
 | onEnderTeleport                 | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                           |
 | onEntityLivingAttacked          | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)             |
 | onEntityLivingDeath             | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)                   |
