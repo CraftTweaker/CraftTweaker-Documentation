@@ -27,7 +27,7 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 Checks if the enchantment can be put on the item.  
 First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
 Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
-```objectivec
+```zenscript
 ench.canApply(IItemStack item);
 ench.canApplyAtEnchantmentTable(IItemStack item);
 ```
@@ -35,7 +35,7 @@ ench.canApplyAtEnchantmentTable(IItemStack item);
 ### getEnchantability
 Checks what enchantability the item must have for the Enchantment at the given level.  
 Both methods return an int and take the level of the enchantment as int parameter.
-```objectivec
+```zenscript
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
@@ -44,13 +44,13 @@ ench.getMaxEnchantability(int level);
 Returns the translated name (e.g. "smite IV").  
 Returns a string and requires the level of the enchantment as int parameter.  
 Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
-```objectivec
+```objectzenscriptivec
 ench.getTranslatedName(int level);
 ```
 
 ### make Enchantment
 By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
-```objectivec
+```zenscript
 ench.makeEnchantment(int level);
 ench * level;
 ```
@@ -58,14 +58,14 @@ ench * level;
 ### Compare with other IEnchantmentDefinition objects
 You can use the `==` operator to check if two enchantments are the same.  
 This means if they have the same id.
-```objectivec
+```zenscript
 if(enchA == enchB)
     print("Same!");
 ```
 
 
 ## Example
-```javascript
+```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
 import crafttweaker.data.IData;
 

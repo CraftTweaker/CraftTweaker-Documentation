@@ -17,7 +17,7 @@ It can be used to freeze items, but requires Ice to operate.
 
 ## Remove matching freezer recipes.
 
-```java
+```zenscript
 mods.cfm.Freezer.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that result in Ice
@@ -34,7 +34,7 @@ Add a freezer recipe.
 
 ## Only supports inputs of size 1.
 
-```java
+```zenscript
 mods.cfm.Freezer.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes 16 Ice from a Lava Bucket

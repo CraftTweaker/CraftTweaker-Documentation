@@ -2,7 +2,7 @@
 
 An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantment;`
@@ -12,8 +12,8 @@ It might be required for you to import the package if you encounter any issues (
 | ZenGetter   | ZenSetter   | Type                                                                    |
 | ----------- | ----------- | ----------------------------------------------------------------------- |
 | definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| level       |             | int                                                                     |
-| displayName | displayName | String                                                                  |
+| level       |             | int型                                                                    |
+| displayName | displayName | string                                                                  |
 
 ## ZenMethods
 

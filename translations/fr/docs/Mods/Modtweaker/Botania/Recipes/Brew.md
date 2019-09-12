@@ -13,11 +13,14 @@ You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 
 ## Recipe addition
 
-    //mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
-    mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
-    
+```zenscript
+//mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
+mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
+```
 
 ## Recipe removal
 
-    //mods.botania.Brew.removeRecipe(String brewName);
-    mods.botania.Brew.removeRecipe("absorption");
+```zenscript
+//mods.botania.Brew.removeRecipe(String brewName);
+mods.botania.Brew.removeRecipe("absorption");
+```

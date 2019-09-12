@@ -4,7 +4,7 @@ The Potion Bracket Handler gives you access to the Potions in the game. It is on
 
 Potions are referenced in the Potion Bracket Handler like so:
 
-```
+```zenscript
 <potion:modname:potionname>
 
 <potion:minecraft:strength>

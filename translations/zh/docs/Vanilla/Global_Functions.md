@@ -7,7 +7,7 @@
 
 将字符串信息打印到CraftTweaker的日志中。
 
-```java
+```zenscript
 //print(String message);
 print("Hello World!");
 ```
@@ -16,7 +16,7 @@ print("Hello World!");
 
 ## totalActions
 
-```java
+```zenscript
 //totalActions();
 totalActions();
 ```
@@ -28,7 +28,7 @@ totalActions();
 启用调试模式。  
 推荐使用[Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/)
 
-```java
+```zenscript
 //enableDebug();
 enableDebug();
 ```
@@ -40,7 +40,7 @@ enableDebug();
 Checks if a given object is null.  
 Doesn't work on primitives!
 
-```java
+```zenscript
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
@@ -49,7 +49,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 
 ## max
 
-```java
+```zenscript
 //max(int number1, int number2);
 max(10, 11);
 ```
@@ -58,7 +58,7 @@ Returns an int
 
 ## min
 
-```java
+```zenscript
 //min(int number1, int number2);
 min(10, 11);
 ```
@@ -67,7 +67,7 @@ Returns an int
 
 ## pow
 
-```java
+```zenscript
 //pow(double number1, double number2);
 pow(2.0, 4.0);
 ```

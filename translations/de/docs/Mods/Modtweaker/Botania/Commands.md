@@ -15,7 +15,7 @@ Usage:
 
 `/ct botbrews`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registered Botania Brews to the crafttweaker.log file.
 
@@ -27,7 +27,7 @@ Usage:
 
 `/ct botorechid`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
 
@@ -39,7 +39,7 @@ Usage:
 
 `/ct botania apothecary`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
@@ -51,7 +51,7 @@ Usage:
 
 `/ct botania brews`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
 
@@ -63,7 +63,7 @@ Usage:
 
 `/ct botania trades`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
 
@@ -75,7 +75,7 @@ Usage:
 
 `/ct botania infusions`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
 
@@ -87,7 +87,7 @@ Usage:
 
 `/ct botania daisy`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
 
@@ -99,7 +99,7 @@ Usage:
 
 `/ct botania altar`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
 
@@ -113,7 +113,7 @@ Usage:
 
 `/ct botlexcats`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
 
@@ -125,7 +125,7 @@ Usage:
 
 `/ct botlexentries`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
 
@@ -137,7 +137,7 @@ Usage:
 
 `/ct botlextypes`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
 
@@ -149,6 +149,6 @@ Usage:
 
 `/ct botlexpages`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.

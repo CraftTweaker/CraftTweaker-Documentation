@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## Retrieving such an object
 You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
-```
+```zenscript
 val aspect = <aspect:ignis>;
 ```
 
@@ -23,7 +23,7 @@ val aspect = <aspect:ignis>;
 
 ## Setting the amount
 
-```
+```zenscript
 //They do the same, both return a new CTAspectStack
 val aspect = <aspect:ignis> * 10;
 

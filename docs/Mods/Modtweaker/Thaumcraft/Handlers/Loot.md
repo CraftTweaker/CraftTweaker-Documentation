@@ -5,7 +5,7 @@ This package allows you to add and remove items to/from the Loot Bags.
 ## Importing the package
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.  
-```
+```zenscript
 import mods.thaumcraft.LootBag;
 ```
 
@@ -21,7 +21,7 @@ Those determine the type of lootbag to be affected.
 
 Notice: Gold coins have a value of 2000, diamonds are 50.
 
-```
+```zenscript
 //mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
@@ -29,7 +29,7 @@ mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 
 ## Removing items
 
-```
+```zenscript
 //mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```

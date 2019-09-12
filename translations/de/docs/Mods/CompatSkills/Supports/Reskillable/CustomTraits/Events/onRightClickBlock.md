@@ -1,6 +1,6 @@
 ### onRightClickBlock
 
-| Setter/Getter/Method | Method Names                  | Names                      | Input/Output                                     |
+| Setter/Getter/Method | Methodennamen                 | Names                      | Input/Output                                     |
 |:-------------------- |:----------------------------- |:-------------------------- | ------------------------------------------------ |
 | Getter               | getHitVector();               | hitVector();               | Returns a [IVector3d](/Vanilla/World/IVector3d/) |
 | Getter               | getUseBlock();                | useBlock();                | Returns a String                                 |

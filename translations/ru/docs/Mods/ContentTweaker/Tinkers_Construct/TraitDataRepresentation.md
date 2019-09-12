@@ -3,14 +3,14 @@
 A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
 You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
 
-## Importing the class
+## Импорт класса
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitDataRepresentation`
 
 ## ZenGetter and ZenSetter
 
-| Name        | ZenGetter | ZenSetter | Type   |
+| Название    | ZenGetter | ZenSetter | Type   |
 | ----------- | --------- | --------- | ------ |
 | color       | ✔         | ✔         | int    |
 | current     | ✔         | ✔         | int    |
@@ -21,10 +21,12 @@ It might be required for you to import the class if you encounter any issues (li
 | info        | ✔         |           | string |
 | colorString | ✔         |           | string |
 
-## ZenMethods
+## Методы ZenScript
 
-    //Does the same as myTraitData.info;
-    myTraitData.calcInfo();
-    
-    //Does the same as myTraitData.colorString;
-    myTraitData.getColorString();
+```zenscript
+//Does the same as myTraitData.info;
+myTraitData.calcInfo();
+
+//Does the same as myTraitData.colorString;
+myTraitData.getColorString();
+```

@@ -23,8 +23,10 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenMethods
 
-    //Does the same as myTraitData.info;
-    myTraitData.calcInfo();
-    
-    //Does the same as myTraitData.colorString;
-    myTraitData.getColorString();
+```zenscript
+//Does the same as myTraitData.info;
+myTraitData.calcInfo();
+
+//Does the same as myTraitData.colorString;
+myTraitData.getColorString();
+```

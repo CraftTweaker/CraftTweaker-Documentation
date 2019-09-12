@@ -15,7 +15,7 @@ So for the best example of how ContentTweaker's content works, I'll be showing y
 will be creating, a block. There is other content that can be created, but I won't be including them in this 
 walk-through. So first up, here is the script for the block I will using as example. Explanation of these methods can
 be found at the Blocks Page.
-```
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

@@ -2,7 +2,7 @@
 
 Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialPartData;`
@@ -15,7 +15,7 @@ You can get a MaterialPartData object by using the `getData()` Method on a [Mate
 
 All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
 
-```JAVA
+```zenscript
 MPD.addDataValue(String name, String value);
 MPD.getIntValue(String name, int defaultValue);
 MPD.getStringValue(String name, String defaultValue);
@@ -167,7 +167,7 @@ Below you will find a list for CoT's basic Part Types:
 
 ## Example
 
-```JAVA
+```zenscript
 import mods.contenttweaker.MaterialSystem;
 
 val oreData = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build().registerPart("ore").getData();

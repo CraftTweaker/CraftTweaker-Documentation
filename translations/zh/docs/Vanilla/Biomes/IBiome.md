@@ -17,7 +17,7 @@ IBiome 接口允许你获取注册的生物群系的信息。
 
 | ZenGetter                    | 返回值类型   |
 | ---------------------------- | ------- |
-| name                         | String  |
+| name                         | string  |
 | canRain                      | boolean |
 | isSnowyBiome                 | boolean |
 | highHumidity                 | boolean |

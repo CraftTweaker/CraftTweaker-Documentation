@@ -4,7 +4,7 @@ The CTRandom object is only accessible from within CoT [IWorld](/Mods/ContentTwe
 
 ## Importing the class
 If you ever want to import the class, here you go:
-```
+```zenscript
 import mods.contenttweaker.Random;
 ```
 
@@ -12,6 +12,7 @@ import mods.contenttweaker.Random;
 
 The only methods available are for random values, either as boolean or as int.  
 For the latter, you also need to provide an upper bound (the upper bound is exclusive).
-```
+```zenscript
 randomObj.nextBoolean();
 randomObj.nextInt(int upperBound);
+```

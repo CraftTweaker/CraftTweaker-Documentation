@@ -5,7 +5,7 @@ The Factorizer Manager allows you to add recipes to the factorizer.
 
 ## Import the package
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:  
-```
+```zenscript
 import mods.thermalexpansion.Factorizer;
 ```
 
@@ -14,7 +14,7 @@ import mods.thermalexpansion.Factorizer;
 You can add oneway split/combine recipes or two-way bindings.  
 
 
-```
+```zenscript
 //mods.thermalexpansion.Factorizer.addRecipeSplit(IItemStack in, IItemStack out);
 mods.thermalexpansion.Factorizer.addRecipeSplit(<minecraft:dirt>, <minecraft:grass> * 5);
 
@@ -30,7 +30,7 @@ mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minec
 
 You can of course also remove recipes.  
 If you want to remove a two-way binding you'll need tow calls, though.
-```
+```zenscript
 //mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);
 mods.thermalexpansion.Factorizer.removeRecipeSplit(<minecraft:iron_block>);
 

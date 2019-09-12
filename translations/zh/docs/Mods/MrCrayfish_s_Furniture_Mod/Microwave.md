@@ -7,11 +7,11 @@ The Microwave heats up food items.
 - Beef -> Cooked Beef
 - Potato -> Baked Potato
 
-## Removing
+## 移除配方
 
 ## Remove matching microwave recipes.
 
-```java
+```zenscript
 mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that require a Potato
@@ -26,7 +26,7 @@ mods.cfm.Microwave.remove();
 
 ## Add a microwave recipe.
 
-```java
+```zenscript
 mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes a 4 sticks from one sugar cane

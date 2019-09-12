@@ -1,6 +1,6 @@
 ### onEnderTeleport
 
-| Setter/Getter/Method | Method Names                         | Names                             | Input/Output      |
+| Setter/Getter/Method | Methodennamen                        | Names                             | Input/Output      |
 |:-------------------- |:------------------------------------ |:--------------------------------- | ----------------- |
 | Getter               | getTargetX();                        | targetX();                        | Returns an Double |
 | Setter               | setTargetX(double targetX);          | targetX(double targetX);          | Takes an Double   |

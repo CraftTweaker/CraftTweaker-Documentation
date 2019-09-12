@@ -23,7 +23,7 @@ To get started with Scripts, you can create a very basic file, called `hello.zs`
 
 In `hello.zs` put the following line
 
-```
+```zenscript
 print("Hello world!");
 ```
 

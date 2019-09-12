@@ -6,7 +6,7 @@ For example the Enervation Dynamo uses the coolant values, as does the Magmatic 
 
 ## Import the package
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:  
-```
+```zenscript
 import mods.thermalexpansion.Coolant;
 ```
 
@@ -17,7 +17,7 @@ Use this to register a new coolant to the manager.
 CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
 If those ranges are not met, the coolant will not be registered!
 
-```
+```zenscript
 //mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
@@ -32,7 +32,7 @@ mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 Use this to deregister an existing coolant from the manager.  
 
-```
+```zenscript
 //mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
 mods.thermalexpansion.Coolant.removeCoolant(<liquid:water>);
 ```

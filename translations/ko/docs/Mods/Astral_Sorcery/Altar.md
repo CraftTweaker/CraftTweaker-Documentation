@@ -12,9 +12,10 @@ This function removes the recipe with the given resource location.
 You can get those locations by hovering over the recipe output in JEI or the Astral tome while the F3 screen is active.  
 Prints a warning if the recipe does not exist.
 
-    //mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
-    mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
-    
+```zenscript
+//mods.astralsorcery.Altar.removeAltarRecipe(string recipeLocation);
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
+```
 
 <details><summary>Pre v1.10 handler</summary>
 
@@ -28,7 +29,7 @@ If there are multiple recipes that return the provided output, you need to call 
     <tr><td>2</td><td>Celestial Altar</td></tr>
 </table>
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Altar.removeAltarRecipe(IItemStack output, int altarLevel);
 mods.astralsorcery.Altar.removeAltarRecipe(<astralsorcery:blockblackmarble>, 0);
 ```
@@ -60,7 +61,7 @@ These recipes cannot be shapeless!
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar1.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addDiscoveryAltarRecipe("mypackname:shaped/internal/altar/dirtfromstuff", <minecraft:dirt>, 200, 200, [
             <minecraft:grass>, null, <ore:treeLeaves>,
             null, <minecraft:grass>, null,
@@ -76,7 +77,7 @@ Adds a recipe to the Starlight Crafting Table (T2)
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
             null, null, null,
             <ore:treeLeaves>, <astralsorcery:blockmarble:2>, <ore:treeLeaves>,
@@ -93,7 +94,7 @@ Adds a recipe to the Celestial Altar (T3)
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar3.png)
 
-```JAVA
+```zenscript
 mods.astralsorcery.Altar.addConstellationAltarRecipe("mypackname:shaped/internal/altar/thisisveryexpensive", <astralsorcery:itemcraftingcomponent:2>, 2000, 10, [
             <ore:blockMarble>, <astralsorcery:blocklens>, <ore:blockMarble>,
             <ore:blockMarble>, <astralsorcery:itemcraftingcomponent:2>, <ore:blockMarble>,
@@ -116,7 +117,7 @@ Adds a recipe to the Trait Altar (T4)
 `inputs` Order:  
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar4.png)
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Altar.addTraitAltarRecipe(string recipeLocation, IItemStack output, int starlight, int craftTickTime, IIngredient[] inputs, @optional String iRequiredConstellationFocusName);
 
 mods.astralsorcery.Altar.addTraitAltarRecipe("mypackname:shaped/internal/altar/seemsalotforjusttnt", <minecraft:tnt>, 4500, 100, [

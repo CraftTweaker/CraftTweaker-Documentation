@@ -3,7 +3,7 @@
 A Material representation represents a Tinkers' Construct Material.  
 You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
 
-## Importing the class
+## Импорт класса
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.Material`
@@ -37,5 +37,7 @@ You can also provide a dependency String, that will cause the trait to only be a
 
 The string varaint is recommended, since by the time CoT runs, most Traits aren't yet available, and even by the time CrT runs, not all of them have been initialized, but if you use the strings, the addition of the materials is postponed until they are available. Still it's not errorproof and there's no easy way of checking for typos, so beware the error messages telling you which traits haven't been findable.
 
-    myMaterial.addTrait("fiery", "head");
-    myMaterial.addTrait(<ticontrait:fiery>);
+```zenscript
+myMaterial.addTrait("fiery", "head");
+myMaterial.addTrait(<ticontrait:fiery>);
+```

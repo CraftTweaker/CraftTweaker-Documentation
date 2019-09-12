@@ -1,7 +1,7 @@
 # Вычисления
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Иногда недостаточно просто писать числа. Иногда вам нужны вычисления.  
+Помните, что вы можете использовать больше двух чисел одновременно, `1+1+1+1` будет работать, как надо.
 
 ## Совет
 
@@ -26,9 +26,10 @@ Always be careful about what two variable types you use and when in doubt, just 
 
 Приклеивает одно к другому.
 
-    //prints "Hello World"
-    print("Hello" ~ " " ~ "World");
-    
+```zenscript
+//prints "Hello World"
+print("Привет," ~ " " ~ "Мир");
+```
 
 ## Результаты вычисления
 
@@ -38,20 +39,21 @@ Always be careful about what two variable types you use and when in doubt, just 
 
 Есть два способа присвоить значение переменной:
 
-    var test = 0;
-    
-    //Option 1:
-    //assigns test with the value 3 (1+2)
-    test = 1+2;
-    
-    //Option 2:
-    //assigns test with 5 (3+2)
-    test = test + 2;
-    
-    //Option 3:
-    //assigns test with 2 (5-3)
-    test -= 3;
-    
+```zenscript
+var test = 0;
+
+//Option 1:
+//assigns test with the value 3 (1+2)
+test = 1+2;
+
+//Option 2:
+//assigns test with 5 (3+2)
+test = test + 2;
+
+//Option 3:
+//assigns test with 2 (5-3)
+test -= 3;
+```
 
 Option 1 and 2 assign the return variable using the `=` token.  
 This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
@@ -63,11 +65,13 @@ All Operators on on this page have their respective assign tokens, check the tab
 
 Вы всегда можете использовать результат вычисления в функции или условном выражении:
 
-    //выводит 4
-    print(3+1);
-    
-    //удаляет рецепт элемента массива array[4]
-    recipes.remove(array[3+1]);
-    
-    //
-    if(3+1 == 2*2) {print("Используется вычисление!")}
+```zenscript
+//выводит 4
+print(3+1);
+
+//удаляет рецепт элемента массива array[4]
+recipes.remove(array[3+1]);
+
+//
+if(3+1 == 2*2) {print("Используется вычисление!")}
+```

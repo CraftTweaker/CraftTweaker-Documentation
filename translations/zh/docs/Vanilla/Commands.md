@@ -1,6 +1,6 @@
 # 命令
 
-Crafttweaker添加了一些命令, 这些命令将帮助你创建脚本, 这些命令旨在帮助减少编写脚本的开发时间。
+CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
 命令的前缀是： `/crafteraker` 或 `/ct`
 
@@ -206,7 +206,7 @@ Usage:
 Description:
 
 Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting Crafttweaker uses.  
+This format differs from the IData formatting CraftTweaker uses.  
 You can click it to be copied to your clipboard.  
 You can also privide the `escaped` argumetn to automatically escape the resulting string.
 

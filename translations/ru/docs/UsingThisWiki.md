@@ -7,40 +7,44 @@ There also are some examples in certain entries to provide further clarity.
 
 Перед тем как начать, вы должны понять некоторые термины:
 
-## ZenGetter
+## Геттер
 
-A ZenGetter is a way of retrieving information from a certain object. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть ZenGetter displayName.  
-Мы используем ZenGetter вот так:
+Геттер ZenScipt — способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
+Мы используем геттер вот так:
 
-    //объект.zenGetter;
-    <minecraft:iron_ingot>.displayName;
-    
+```zenscript
+//объект.zenGetter;
+<minecraft:iron_ingot>.displayName;
+```
 
-ZenGetter всегда что-нибудь возвращает, в данном случае &mdash; текстовое представление имени предмета ("Iron Ingot").
+Геттер всегда что-нибудь возвращает, в данном случае &mdash; текстовое представление имени предмета ("Iron Ingot").
 
-## ZenSetter
+## Сеттер
 
-A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
-Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
+Сеттер работает почти так же, как и геттер, единственное отличие в том, что сеттер устанавливает значение, а геттер &mdash; получает.  
+Давайте снова начнем с [IItemStack](/Vanilla/Items/IItemStack/), у которого также есть сеттер displayName. Мы знаем, что тип этой записи &mdash; строка.
 
-Мы используем ZenSetter'ы вот так:
+Мы используем сеттеры ZenScipt вот так:
 
-    //объект.zenSetter = новоеЗначение;
-    <minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
-    
+```zenscript
+//объект.сеттер = новоеЗначение;
+<minecraft:iron_ingot>.displayName = "Как ни странно, слиток";
+```
 
-A ZenSetter will never return something, since it is meant to set, not to get.
+Сеттер никогда ничего не возвращает, потому что он предназначен для установки, а не получения данных.
 
 ## Операторы присваивания
 
-If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItemStack's](/Vanilla/Items/IItemStack/) "displayName"), you can use the assign operators other than `=`:
+Если у объекта есть и геттер, и сеттер с одинаковым названием (например, [ItemStack.displayName](/Vanilla/Items/IItemStack/)), вы можете использовать другие операторы присваивания помимо `=`:
 
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
-    
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```zenscript
+//Так как у нас есть геттер и сеттер с одинаковыми именами, первый можно совмещать:
+//объект.сеттер += значение;
+//объект.сеттер = объект.геттер + значение;
+
+<minecraft:iron_ingot>.displayName += " судьбы";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " судьбы";
+```

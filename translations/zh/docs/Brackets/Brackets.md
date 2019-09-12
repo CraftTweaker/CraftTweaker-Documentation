@@ -12,14 +12,16 @@ ZenScript 使用尖括号引用游戏中诸如物品、实体、矿物词典之�
 
 一个[物品尖括号引用](/Vanilla/Brackets/Bracket_Item/)的例子：
 
-    <minecraft:apple>
-    
+```zenscript
+<minecraft:apple>
+```
 
 这将允许你访问游戏中的[物品](/Vanilla/Items/IItemStack/)`苹果`。
 
 一个[矿物词典尖括号引用](/Vanilla/Brackets/Bracket_Ore/)的例子：
 
-    <ore:ingotIron>
-    
+```zenscript
+<ore:ingotIron>
+```
 
 这将使你可以访问[矿物词典条目](/Vanilla/OreDict/IOreDictEntry/)中的 `ingotIron`条目。

@@ -1,23 +1,23 @@
 # Ассоциативные массивы
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Ассоциативный массив (иногда также называемый картой или словарем) &mdash; способ хранить несколько значений, равно как и обычный [массив](Arrays_and_Loops/). Однако, в отличие от [массивов](Arrays_and_Loops/), вы можете выбрать тип, который хотите использовать в качестве индекса или (как это называется в картах) ключа!
 
-## Declaring an Associative Array
+## Объявление ассоциативного массива
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Ассоциативные массивы объявляются с помощью фигурных скобок`{}` и двоеточий `:`.
 
-```JAVA
+```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
 } as IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Давайте разберемся с этим, да?
 
-- `val myAssocArray =` standard variable declaration
-- `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
+- `val myAssocArray =` — стандартное объявление переменной,
+- `{` — ассоциативный массив, сэр!
+- `dirt : <minecraft:dirt>` — мы присваиваем значение `<minecraft:dirt>` к ключу `dirt`,
 - `,` wait, there's more to come
 - `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
 - `}` we have reached the end of the Array, Sir!
@@ -28,13 +28,13 @@ Okay, so what do I need to think of when using these?
 - You can use about every type available to Zenscript as either key or value.
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
 
-## Refering to Items inside an Associative Array.
+## Обращение к элементам ассоциативного массива
 
 You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
-```JAVA
+```zenscript
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
     &lt;minecraft:dirt&gt; : "This is me"
@@ -50,7 +50,7 @@ print(assocArray[dirt]);
 There is one special case, that is when you use strings as indeces:  
 In this case you can also use the memberGetter like this:
 
-```JAVA
+```zenscript
 val assocWithStrings = {
     //you can use "" if you want
     "one" : "1",
@@ -66,13 +66,13 @@ print(assocWithStrings.one);
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Манипулирование элементами внутри ассоциативного массива
 
 As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
 There is one major differenc though:  
 While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
 
-```JAVA
+```zenscript
 val changingArray = {
     <minecraft:dirt> : "this is me",
     <minecraft:gold_ingot> : "and I hate it"
@@ -93,7 +93,7 @@ The KeySet is an array containing all the map's keys.
 The valueSet is an array containing all the map's values.  
 The entrySet is an array containing all the map's entries (see below).
 
-```JAVA
+```zenscript
 myAssocArray.keySet   //keySet
 myAssocArray.keys     //keySet
 myAssocArray.values   //valueSet
@@ -101,7 +101,7 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## Перебор ассоциативного массива
 
 There are two Iterators that allow you to iterate over an Associative Array:
 
@@ -115,7 +115,7 @@ Let's add an Associative Array that stores crafting recipes to be iterated over:
 - We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
 - We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -146,7 +146,7 @@ Currently the only way to get such an object is via a map's entrySet method.
 
 You can use the getters to get `key` and `value`
 
-```kotlin
+```zenscript
 //Replace map with a reference to an existing map/associative array
 val myEntry = map.entrySet[0];
 

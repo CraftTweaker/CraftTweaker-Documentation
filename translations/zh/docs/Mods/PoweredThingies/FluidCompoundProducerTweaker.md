@@ -1,14 +1,14 @@
 # Powered Thingies :: Fluid Compound Producer
 
-### Importing
+### 导入
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 fct().logKeys()
 fct().removeRecipe('liquid:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
 fct().clear()
@@ -18,13 +18,13 @@ fct().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 ```
 
 ##### Example
 
-```kotlin
+```zenscript
 fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);
 ```
 

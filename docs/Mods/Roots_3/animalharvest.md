@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void addEntity(
   IEntityDefinition entity // the entity to generate drops for
 );
@@ -18,7 +18,7 @@ static void addEntity(
 ---
 
 
-```java
+```zenscript
 static void removeEntity(
   IEntityDefinition entity // the entity to stop generating drops for
 );
@@ -30,7 +30,7 @@ static void removeEntity(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 
 // Adds an enderman as a target for the Animal Harvest ritual.

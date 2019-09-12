@@ -14,7 +14,7 @@
 | 可选    | GameStage（游戏阶段）: | 排除的（一个或多个）游戏阶段（Exclude GameStage(s)） | .excludeGameStages             | 字符串 [] 游戏阶段                                                           |                              |
 | 必要    | Creation（创建）:    | 创建                                   | .create();                     | 无                                                                     |                              |
 
-```JAVA
+```zenscript
 //来自旧版 wiki 的例子:
 RecipeBuilder.get("carpenter")
     .setShaped([

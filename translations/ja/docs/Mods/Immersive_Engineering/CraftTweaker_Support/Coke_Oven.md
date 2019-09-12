@@ -15,7 +15,7 @@ You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
@@ -29,7 +29,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 
 ### Example:
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);

@@ -16,7 +16,7 @@ Should you ever experience any importing issues with scripts from this wiki, you
 Imports have to be declared at the top of a Script. You will have to declare imports for each scripts separately.
 Be careful not to import two functions with the same name, use the AS function for that
 
-```
+```zenscript
 //This will import the hide function from JEI
 import mods.jei.JEI.removeAndHide;
 
@@ -35,7 +35,7 @@ JEI.hide(<minecraft:diamond>);
 Sometimes you want to import two functions with the same name or just want to keep your scripts look better by using custom names.
 When adding the AS statement at the end of the import, you can specify the name that the import should listen to.
 
-```
+```zenscript
 //This will import the hide function from JEI and make it available under the name "h"
 import mods.jei.JEI.hide as h;
 

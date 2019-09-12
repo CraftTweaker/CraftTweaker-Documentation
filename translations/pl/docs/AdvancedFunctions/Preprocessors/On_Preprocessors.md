@@ -10,7 +10,7 @@ They can perform various actions like enabling Debug Mode or Supress Bracket Err
 A preprocessor can be called using the #comment function.  
 Be careful with the comments though as you might start one with a preprocessor keyword.
 
-```JAVA
+```zenscript
 #debug is my favorite word I like to add it everywhere as a comment
 ```
 

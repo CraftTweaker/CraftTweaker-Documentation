@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crushe
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
 
 mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
@@ -15,7 +15,7 @@ Note: Currently all this does is loop over the different possibilities in java w
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
 
 mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
@@ -26,6 +26,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.crusher.removeAllRecipes();
 ```

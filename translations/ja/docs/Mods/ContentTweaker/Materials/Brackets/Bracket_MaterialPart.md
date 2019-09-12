@@ -4,10 +4,11 @@ The Material Part Bracket Handler gives you access to the Material Parts in the 
 
 Material Parts are referenced in the Material Part Bracket handler this way:
 
-    <materialpart:material:part>
-    
-    <materialpart:platinum:gear>
-    
+```zenscript
+<materialpart:material:part>
+
+<materialpart:platinum:gear>
+```
 
 If the Material Part is found, this will return a MaterialPartDefinition Object.  
 This is an object that acts as both, an [IMaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as well as an [IItemStack](/Vanilla/Items/IItemStack/) object, so methods of both interfaces will work on the returned definition.

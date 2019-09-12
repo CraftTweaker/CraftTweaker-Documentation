@@ -13,7 +13,7 @@ Usage:
 
 `/ct blockmaterial`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the block materials in the game to the crafttweaker.log file.
 
@@ -25,7 +25,7 @@ Usage:
 
 `/ct creativetab`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the creative tabs in the game to the crafttweaker.log file.
 
@@ -37,7 +37,7 @@ Usage:
 
 `/ct soundevent`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the sound events in the game to the crafttweaker.log file.
 
@@ -49,6 +49,6 @@ Usage:
 
 `/ct soundtype`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the sound types in the game to the crafttweaker.log file.

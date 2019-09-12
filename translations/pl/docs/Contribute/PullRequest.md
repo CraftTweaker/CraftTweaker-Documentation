@@ -22,7 +22,7 @@ For example, the picture below has three commits that have not yet been applied 
 ![Pull Request Button](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
 If you click on the "Pull Request" button a new view will open, the Compare View.  
-In most cases it is already properly defined to use the Original Crafttweaker/Crafttweaker-Documentation master branch as destination and your branch as the changes to be pulled.
+In most cases it is already properly defined to use the Original CraftTweaker/CraftTweaker-Documentation master branch as destination and your branch as the changes to be pulled.
 
 Github will also verify that there are no conflicts between your changes and what the current state of the wiki is.  
 In case it does find any misfits it will alert you, though you can still create the PR and ask for our help to resolve the conflicts.

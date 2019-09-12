@@ -12,7 +12,7 @@ You can get a List of a [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) Data
 
 Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)
 ```
 

@@ -21,8 +21,8 @@ Pull Request（简称 PR）允许你将更改应用与原始的代码库中。
 
 ![Pull Request 按钮](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
-点击“Pull Request” 按钮后会打开一个新的页面，对比页面。  
-大多数情况下，你所做更改的提交位置会自动设置为原来的 Crafttweaker/Crafttweaker-Documentation 仓库的主分支上。
+If you click on the "Pull Request" button a new view will open, the Compare View.  
+In most cases it is already properly defined to use the Original CraftTweaker/CraftTweaker-Documentation master branch as destination and your branch as the changes to be pulled.
 
 Github 还将验证你的更改与当前的 wiki 之间没有冲突。  
 如果它确实发现任何冲突就会提醒你，尽管如此，你仍然可以创建 PR，并请求我们帮助你解决冲突。

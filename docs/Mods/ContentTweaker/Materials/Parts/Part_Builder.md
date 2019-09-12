@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## Retrieving such an object
 You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
@@ -32,14 +32,14 @@ You can see in the example scripts below what this means.
 
 ## Actually build the Material
 Before you can build your material, you need to build it:
-```JAVA
+```zenscript
 pBuilder.build();
 ```
 
 This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
 ## Example Script
-```JAVA
+```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));

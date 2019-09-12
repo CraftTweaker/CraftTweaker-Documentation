@@ -65,7 +65,7 @@ Recipes are categorized into their machines, call `RecipeMap.getByName(machineNa
 **Primitive Blast Furnace** _uses different syntax from normal recipes._
 For example:
 
-```java
+```zenscript
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
 //Primitive Blast Furnace
@@ -89,7 +89,7 @@ After getting a instance of `RecipeMap`, you can define recipes by using their b
 
 Builder method calling:
 
-```java
+```zenscript
 recipeMap.recipeBuilder()
 ```
 
@@ -97,7 +97,7 @@ It is a bit like `Stream<T>` in Java, with fully functionally to control your re
 
 Example for EBF:
 
-```java
+```zenscript
 // Electric Blast Furnace
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
 blast_furnace.recipeBuilder()
@@ -127,14 +127,14 @@ These ones are **NOT IMPLEMENTED YET:**
 
 You use it just like the "temperature":
 
-```java
+```zenscript
 .property("circuit", X)//, where X is the integrated circuit configuration
 .property("explosives", Y)//, where Y is the amount of explosives required to make a recipe work
 ```
 
 More useful methods:
 
-```java
+```zenscript
 .inputs()
 .fluidInputs()
 .outputs()
@@ -153,7 +153,7 @@ Removing a recipe is done by recipe instance itself, so you have to find a recip
 
 Example:
 
-```java
+```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
 // findRecipe(long voltage, IItemHandlerModifiable inputs, IMultipleTankHandler/List<FluidStack> fluidInputs)

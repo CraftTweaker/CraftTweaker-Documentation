@@ -4,7 +4,7 @@ The Block Bracket Handler gives you access to the blocks in the game. It is only
 
 Blocks are referenced in the Block Bracket handler this way:
 
-```
+```zenscript
 <block:modID:blockName>
 
 <block:minecraft:dirt>

@@ -2,7 +2,7 @@
 
 This interface is extended by all Events that can have a central living entity.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IBlockEvent;`
@@ -11,7 +11,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
 
-## ZenGetters
+## ZenGetter
 
 | name       | type                                        |
 | ---------- | ------------------------------------------- |

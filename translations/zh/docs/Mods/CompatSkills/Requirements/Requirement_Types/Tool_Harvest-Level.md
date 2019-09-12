@@ -1,11 +1,11 @@
-# Tool Harvest-Level
+# 工具采掘等级
 
-This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
+工具采掘等级要求玩家持有一个采掘等级不低于指定等级的工具物品。
 
-    Example:
+    例：
     harvest|integer
     
-    Working Example:
+    可直接生效的例子：
     harvest|1
     harvest|2
     harvest|3

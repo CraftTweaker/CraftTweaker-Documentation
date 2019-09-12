@@ -3,7 +3,7 @@
 An IItemDefinition object is the direct reference to an item.  
 It is different from an [IItemStack](/Vanilla/Items/IItemStack/) as this only refers to the item, it does not include any meta-information or NBT-values!
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemDefinition;`
@@ -23,12 +23,12 @@ The easiest way is from an [IItemStack](/Vanilla/Items/IItemStack/), but you can
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | What does it do                                                                                      | Rückgabetyp                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| id                 | Returns the item ID                                                                                  | String                                                         |
-| name               | Returns the unlocalized item Name                                                                    | String                                                         |
+| id                 | Returns the item ID                                                                                  | string                                                         |
+| name               | Returns the unlocalized item Name                                                                    | string                                                         |
 | ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | String                                                         |
+| owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |

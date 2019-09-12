@@ -14,7 +14,7 @@
 | Optional  | GameStage: | Exclude GameStage(s) | .excludeGameStages               | String[] stages                                                           |                                                                   |
 | Required  | Creation:  | Create               | .create();                       | Empty                                                                     |                                                                   |
 
-```JAVA
+```zenscript
 //Example from Old Wiki:
 RecipeBuilder.get("carpenter")
     .setShaped([

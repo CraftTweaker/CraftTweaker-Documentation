@@ -4,18 +4,18 @@
 
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## 添加配方
 
-| Required | Type        | Data Type                                           |
+| Required | 类型          | Data Type                                           |
 | -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
+| 必要       | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Fuel Output | Integer                                             |
 | Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| 必要       | Time        | Integer                                             |
 
-### Example
+### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
@@ -29,7 +29,7 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 
 ### Example:
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);

@@ -22,12 +22,13 @@ Ansonsten sind beide Varianten identisch!
 
 Einen globalen Wert zu deklarieren ist genau so leicht, wie einen lokalen Wert zu deklarieren:
 
-    import crafttweaker.item.IItemStack;
-    
-    
-    global myGlobalValue as IItemStack = <minecraft:dirt>;
-    static myStaticValue as IItemStack = <minecraft:sand>;
-    
+```zenscript
+import crafttweaker.item.IItemStack;
+
+
+global myGlobalValue as IItemStack = <minecraft:dirt>;
+static myStaticValue as IItemStack = <minecraft:sand>;
+```
 
 Okay, hier nun die Erklärung:
 

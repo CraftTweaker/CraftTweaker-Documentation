@@ -4,7 +4,7 @@ This mod is a vanity addon to [ItemStages](https://minecraft.curseforge.com/proj
 
 ### 1.0.4 and later
 
-```java
+```zenscript
 //mods.tieredtooltips.colorStage(String stageName, String background, String borderStart, String borderEnd);
 mods.tieredtooltips.colorStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
 mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values
@@ -12,7 +12,7 @@ mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // AR
 
 ### 1.0.2 and earlier
 
-```java
+```zenscript
 //mods.TieredTooltips.colourStage(String stageName, String background, String borderStart, String borderEnd);
 mods.TieredTooltips.colourStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
 mods.TieredTooltips.colourStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values

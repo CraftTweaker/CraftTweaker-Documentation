@@ -1,24 +1,24 @@
 # Excavator
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Data Type |
-| -------- | ------------------- | --------- |
-| Required | Name                | String    |
-| Required | Mineral Weight      | Integer   |
-| Required | Fail Chance         | Double    |
-| Required | Ores                | String[]  |
-| Required | Chances             | Double[]  |
-| Optional | Dimension Whitelist | Integer[] |
-| Optional | Blacklist           | Boolean   |
+| Benötigt | Type                | Datentyp |
+| -------- | ------------------- | -------- |
+| Benötigt | Name                | string   |
+| Benötigt | Mineral Weight      | int      |
+| Benötigt | Fail Chance         | double   |
+| Benötigt | Ores                | string[] |
+| Benötigt | Chances             | double[] |
+| Optional | Dimension Whitelist | int []   |
+| Optional | Blacklist           | boolean  |
 
-### Example
+### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
 
@@ -29,13 +29,13 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ## Remove Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Required | Type | Datentyp |
+| -------- | ---- | -------- |
+| Required | Name | String   |
 
-### Example
+### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 

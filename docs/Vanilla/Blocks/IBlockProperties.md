@@ -66,7 +66,7 @@ Returns an int representing the block's redstone comparator input override type.
 
 Use an [IEntity](/Vanilla/Entities/IEntity/).  
 Returns a bool.
-```
+```zenscript
 blockProperties.canEntitySpawn(IEntity entity);
 ```
 
@@ -75,7 +75,7 @@ blockProperties.canEntitySpawn(IEntity entity);
 Use an [IBlockAccess](/Vanilla/World/IBlockAccess/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a new IBlockProperties object.
 
-```
+```zenscript
 blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
 ```
 
@@ -83,7 +83,7 @@ blockProperties.getActualState(IBlockAccess world, IBlockPos pos);
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
-```
+```zenscript
 blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 ```
 
@@ -91,7 +91,7 @@ blockProperties.getBlockHardness(IWorld world, IBlockPos pos);
 
 Use [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns an int.
-```
+```zenscript
 blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 ```
 
@@ -99,7 +99,7 @@ blockProperties.getLightOpacy(IWorld world, IBlockPos pos);
 
 Use an [IPlayer](/Vanilla/Players/IPlayer/), an [IWorld](/Vanilla/World/IWorld/) and an [IBlockPos](/Vanilla/World/IBlockPos/).  
 Returns a float.
-```
+```zenscript
 blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBlockPos pos);
 ```
 
@@ -107,6 +107,6 @@ blockProperties.getPlayerRelativeBlockHardness(IPlayer player, IWorld world, IBl
 
 Use an [IBlockAccess](/Vanilla/World/IBlockAccess/), an [IBlockPos](/Vanilla/World/IBlockPos/) and an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
-```
+```zenscript
 blockProperties.isSideSolid(IBlockAccess world, IBlockPos pos, IFacing facing);
 ```

@@ -2,12 +2,12 @@
 
 The IcraftingInfo object contains all kinds of information on the crafting process itself:
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
-## ZenGetters
+## ZenGetter
 
 | ZenGetter   |                                                                     |                                                    |
 | ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |

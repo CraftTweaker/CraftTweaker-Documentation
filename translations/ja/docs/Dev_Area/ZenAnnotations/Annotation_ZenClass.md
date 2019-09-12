@@ -4,14 +4,15 @@ A ZenClass is a java class that has been exposed to ZenScript.
 
 ## Example
 
-[Crafttweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
+[CraftTweaker's IItemStack](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IItemStack.java)
 
-    @ZenClass("crafttweaker.item.IItemStack")
-    @ZenRegister
-    public interface IItemStack extends IIngredient {
-        //Cut out to keep the page short
-    }
-    
+```java
+@ZenClass("crafttweaker.item.IItemStack")
+@ZenRegister
+public interface IItemStack extends IIngredient {
+    //Cut out to keep the page short
+}
+```
 
 The actual implementation does not need to be annotated.
 

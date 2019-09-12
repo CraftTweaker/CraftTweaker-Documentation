@@ -4,13 +4,13 @@ The ItemExpire Event is fired whenever an Item expires (reaches its macimum life
 It can be canceled to prevent the item from being flagged as dead.  
 If canceled it will add `extralife` to the item's lifetime.
 
-## Event Class
+## Event-Klasse
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.ItemExpireEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Erweiterte Event-Schnittellen
 
 PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 

@@ -1,6 +1,6 @@
 # Enchanter
 
-## Package
+## 所属包名
 
 `import mods.enderio.Enchanter;`
 
@@ -16,13 +16,16 @@
 
 ## 添加配方
 
-    mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
-    
-    mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
-    
+```zenscript
+mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
+
+mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
+```
 
 ## Removal
 
-    mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
-    
-    mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:sharpness>);
+```zenscript
+mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
+
+mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:sharpness>);
+```

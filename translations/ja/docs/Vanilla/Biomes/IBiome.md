@@ -17,7 +17,7 @@ IBiomeを使ってできることは、そこから情報を取得すること�
 
 | ZenGetter                    | 戻り値      |
 | ---------------------------- | -------- |
-| name                         | 文字列型     |
+| name                         | string   |
 | canRain                      | boolean型 |
 | isSnowyBiome                 | boolean型 |
 | highHumidity                 | boolean型 |

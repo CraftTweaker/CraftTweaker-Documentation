@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Bark;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void addRecipe(
   string name,        // the name of the recipe
   IItemStack woodLog, // the itemstack equivalent of the wood log being broken
@@ -22,7 +22,7 @@ static void addRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Bark;
 
 // Note that quantities on the output are currently ignored and the

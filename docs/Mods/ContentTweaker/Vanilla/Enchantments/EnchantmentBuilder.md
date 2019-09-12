@@ -10,14 +10,14 @@ It might be required for you to import the class if you encounter any issues (li
 
 First and foremost you will need to create a Material Builder.  
 This can be done using the static create method.
-```
+```zenscript
 //mods.contenttweaker.enchantments.EnchantmentBuilder.create(String name);
 val myChant = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
 ```
 
 Remember, that you will need to register the enchantment after you've done your changes.  
 This can be done with the `register` method which will return a [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) of the new enchantment.
-```
+```zenscript
 myChant.register();
 ```
 
@@ -61,7 +61,7 @@ You can set and get these properties functions.
 
 Use these methods to be instantly notified if you made a typo.
 
-```
+```zenscript
 //Rarities
 myChant.setRarityCommon()
 myChant.setRarityUncommon()
@@ -84,7 +84,7 @@ myChant.setTypeWearable()
 ```
 
 ## Example
-```
+```zenscript
 #loader contenttweaker
 val builder = mods.contenttweaker.enchantments.EnchantmentBuilder.create("kindlich_chant");
 builder.applicableSlots = [mainHand, offhand, feet, legs, chest, head];

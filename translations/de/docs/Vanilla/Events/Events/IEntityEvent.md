@@ -2,7 +2,7 @@
 
 This interface is extended by all Events that can have a central entity.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEntityEvent;`

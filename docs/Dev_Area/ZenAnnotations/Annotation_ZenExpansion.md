@@ -5,7 +5,7 @@ Unlike ZenClasses however, ZenExpansions are used to expand the functionality of
 
 ## Example
 
-```
+```java
 @ZenExpansion("crafttweaker.item.IItemStack")
 @ZenRegister
 public class Expansion {
@@ -17,7 +17,7 @@ public class Expansion {
 ```
 
 This would allow people to do
-```
+```zenscript
 <minecraft:iron_ingot>.print();
 ```
 

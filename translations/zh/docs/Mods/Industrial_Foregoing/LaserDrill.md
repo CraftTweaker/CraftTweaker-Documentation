@@ -1,19 +1,23 @@
 # Laser Drill
 
-### Importing
+### 导入
 
-    import mods.industrialforegoing.LaserDrill;
-    
+```zenscript
+import mods.industrialforegoing.LaserDrill;
+```
 
-### Adding
+### 添加配方
 
-    LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
-    
-    LaserDrill.add(1, <minecraft:stone>, 10);
-    
+```zenscript
+LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 
-### Removing
+LaserDrill.add(1, <minecraft:stone>, 10);
+```
 
-    LaserDrill.remove(IItemStack output);
-    
-    LaserDrill.remove(<minecraft:stone>);
+### 移除配方
+
+```zenscript
+LaserDrill.remove(IItemStack output);
+
+LaserDrill.remove(<minecraft:stone>);
+```

@@ -1,6 +1,6 @@
 # Macerator
 
-## Package
+## 所属包名
 
 `import mods.ic2.Macerator;`
 
@@ -11,10 +11,11 @@
 
 ## 添加配方
 
-    mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
-    
-    mods.ic2.Macerator.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
-    
+```zenscript
+mods.ic2.Macerator.addRecipe(IItemStack output, IIngredient input);
+
+mods.ic2.Macerator.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
+```
 
 ## Removal
 

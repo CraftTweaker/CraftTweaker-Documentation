@@ -13,28 +13,31 @@ Should you ever experience any importing issues with scripts from this wiki, you
 
 Импорт должен быть обозначен в верхней части скрипта. Вам нужно указывать импорт каждого из скриптов отдельно. Будьте осторожны, чтобы не импортировать две функции с одинаковым именем, для этого используйте оператор as
 
-    //Это импортирует функцию removeAndHide из JEI
-    import mods.jei.JEI.removeAndHide;
-    
-    //А это импортирует весь пакет JEI
-    import mods.jei.JEI;
-    
-    //removeAndHide — функция, мы можем просто вызывать ее
-    removeAndHide(<minecraft:dirt>);
-    
-    //JEI — пакет, поэтому мы должны указать, какую функцию оттуда мы хотим использовать
-    JEI.hide(<minecraft:diamond>);
-    
+```zenscript
+//Это импортирует функцию removeAndHide из JEI
+import mods.jei.JEI.removeAndHide;
+
+//А это импортирует весь пакет JEI
+import mods.jei.JEI;
+
+//removeAndHide — функция, мы можем просто вызывать ее
+removeAndHide(<minecraft:dirt>);
+
+//JEI — пакет, поэтому мы должны указать, какую функцию оттуда мы хотим использовать
+JEI.hide(<minecraft:diamond>);
+```
 
 ## Оператор as
 
 Иногда вы хотите импортировать две функции с одинаковыми именами или просто сделать, чтобы ваши скрипты выглядели лучше с помощью произвольных имен. Добавляя оператор as в конце import, вы можете указать имя, под которым должно вызываться импортированное выражение.
 
-    //Это импортирует функцию hide из JEI и сделает ее доступной под именем h
-    import mods.jei.JEI.hide as h;
-    
-    //А это импортирует removeAndHIde функцию из JEI и сделает ее доступной под именем rh
-    import mods.jei.JEI.removeAndHide as rh;
-    
-    h(<minecraft:dirt>);
-    rh(<minecraft:diamond>);
+```zenscript
+//Это импортирует функцию hide из JEI и сделает ее доступной под именем h
+import mods.jei.JEI.hide as h;
+
+//А это импортирует removeAndHIde функцию из JEI и сделает ее доступной под именем rh
+import mods.jei.JEI.removeAndHide as rh;
+
+h(<minecraft:dirt>);
+rh(<minecraft:diamond>);
+```

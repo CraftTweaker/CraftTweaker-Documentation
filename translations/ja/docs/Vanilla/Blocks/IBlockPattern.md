@@ -3,7 +3,7 @@
 An IBlockPattern is an interface that allows for combining several blocks into one object.  
 It is comparable to what the [IIngredient](/Vanilla/Variable_Types/IIngredient/) Interface is to [IItemStacks](/Vanilla/Items/IItemStack/).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockPattern;`
@@ -20,7 +20,7 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 | ZenGetter   | What does it do                                | Return Type                             |
 | ----------- | ---------------------------------------------- | --------------------------------------- |
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | Returns the displayNames of the fitting blocks | String                                  |
+| displayName | Returns the displayNames of the fitting blocks | string                                  |
 
 ## OR
 

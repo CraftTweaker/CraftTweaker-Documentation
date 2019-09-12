@@ -2,7 +2,7 @@
 
 The `Casting` package allows you to add or remove Casting recipes.
 
-## Calling
+## 导入包
 
 You can call the Casting package using `mods.tconstruct.Casting`
 
@@ -10,7 +10,7 @@ You can call the Casting package using `mods.tconstruct.Casting`
 
 You can add recipes for both, casting tables and basins: The methods are equal in their parameters, varying only in their names.
 
-```JAVA
+```zenscript
 //mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:gold_ingot>, <liquid:molten_gold>, 140);
 mods.tconstruct.Casting.addTableRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true);
@@ -27,7 +27,7 @@ mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_i
 
 Removing Recipes is also possible for Casting Tables and Basins:
 
-```JAVA
+```zenscript
 //mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
 mods.tconstruct.Casting.removeTableRecipe(<minecraft:iron_ingot>);
 

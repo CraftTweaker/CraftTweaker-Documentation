@@ -21,4 +21,4 @@ PlayerTick Events implement the following interfaces and are able to call all of
 | ZenGetter | 반환 타입                                |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`   | String                               |
+| `phase`   | string                               |

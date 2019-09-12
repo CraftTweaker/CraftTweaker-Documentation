@@ -4,7 +4,7 @@
 
 `import mods.enderio.SagMill;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
 - **float[] chances** The chance that this item appears. Must have the same length as output.
@@ -15,13 +15,16 @@
 
 ## Addition
 
-    mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
-    
-    mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
-    
+```zenscript
+mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
+
+mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
+```
 
 ## Removal
 
-    mods.enderio.SagMill.removeRecipe(IItemStack input);
-    
-    mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);
+```zenscript
+mods.enderio.SagMill.removeRecipe(IItemStack input);
+
+mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);
+```

@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## Comparing two reactions
 You can see if two reactions are equal by using the `==` operator.
-```
+```zenscript
 if(a == b){}
 ```
 
@@ -16,7 +16,7 @@ if(a == b){}
 
 You can use these methods to get PushReaction Objects:
 
-```
+```zenscript
 mods.contenttweaker.PushReaction.normal();
 mods.contenttweaker.PushReaction.destroy();
 mods.contenttweaker.PushReaction.block();

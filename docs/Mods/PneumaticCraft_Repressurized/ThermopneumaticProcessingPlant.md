@@ -12,7 +12,7 @@ You can call the TPP package using `mods.pneumaticcraft.thermopneumaticprocessin
 
 This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
-```
+```zenscript
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(IIngredient output);
 // Example
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
@@ -20,7 +20,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.removeRecipe(<liquid:lpg>);
 
 This function removes *all* TPP recipes:
 
-```
+```zenscript
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 ```
 
@@ -28,7 +28,7 @@ mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 
 The following functions can be used to add recipes to the TPP:
 
-```java
+```zenscript
 // Add a recipe converting an input item into an output fluid
 mods.pneumaticcraft.thermopneumaticprocessingplant.addRecipe(IItemStack itemInput, double pressure, double temperature, ILiquidStack output);
 

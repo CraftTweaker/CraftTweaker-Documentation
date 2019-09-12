@@ -6,7 +6,7 @@
 
 Выражение if &mdash; первая часть условного выражения. Оно объявляет условие, которое должно быть истинным, чтобы последующий код был выполнен. Будьте осторожны, для сравнения значений вы должны ставить ДВА ЗНАКА РАВЕНСТВА (потому что единичный нужен для объявления значений!).
 
-```Java
+```zenscript
 val test = 0;
 
 if(test == 0){ //true
@@ -18,7 +18,7 @@ if(test == 0){ //true
 
 Выражение else может быть добавлено после условного выражения, чтобы объявить, что должно быть выполнено, если выражение из if ложно.
 
-```Java
+```zenscript
 var test = 0;
 
 if(test == 0){//true
@@ -46,7 +46,7 @@ Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
 Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
 
-```Java
+```zenscript
 //You can check for:
 
 
@@ -84,7 +84,7 @@ if(d=="Hello" & e == "World"){print("AND2!");}      //true
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
-```Java
+```zenscript
 val switchy = false;
 
 //prints switchy state
@@ -128,7 +128,7 @@ First you need the list you want to check in, then the `in`/`has` then the value
 
 You can check, if a mod is loaded by checking if it's in the loadedMods list
 
-```Java
+```zenscript
 //While contains checks can use in
 if(loadedMods in "mcp"){
     print("Minecraft Coder Pack loaded");
@@ -147,7 +147,7 @@ With this one you need to be a bit careful as not to confuse the two entries:
 This is only true when the IIngredeint AFTER the `in` can also be found completely in the one BEFORE the `in`.  
 In most cases you will use the `has` keyword instead as it's intention is more clear and it does exactly the same.
 
-```Java
+```zenscript
 if(<ore:ingotIron> in <minecraft:iron_ingot>){
     print("Iron ingots are in the right oreDic");
 }
@@ -159,7 +159,7 @@ if(<ore:ingotIron> has <minecraft:iron_ingot>){
 
 This is only then true, when ALL matching items from the IIngredient AFTER the `has` can also be found in the IIngredient BEFORE `has`: Say we have an IIngredient that contains all dusts (e.g. redstone and glowstone dust):
 
-```java
+```zenscript
 val redstone = <minecraft:redstone>;
 val glowstone = <minecraft:glowstone>
 val allDusts = <ore:dustAll>;

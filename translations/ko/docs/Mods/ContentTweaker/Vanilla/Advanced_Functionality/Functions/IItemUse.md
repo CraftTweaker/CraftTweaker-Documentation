@@ -22,7 +22,7 @@ The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Adva
 
 ## Example
 
-```JAVA
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

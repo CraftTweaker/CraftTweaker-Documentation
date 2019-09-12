@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ### Create
 
-```JAVA
+```zenscript
 createPartType(String name, IRegisterMaterialPart registerMaterialPart)
 ```
 
@@ -22,7 +22,7 @@ Required Parameters:
 
 ### Retrieve
 
-```JAVA
+```zenscript
 getPartType(String name);
 ```
 
@@ -36,7 +36,7 @@ Required Parameters:
 
 Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) for info on what exactly to do with these.
 
-```JAVA
+```zenscript
 val MB MaterialSystem.getMaterialBuilder();
 MB.setName("Urubuntium");
 MB.setColor(0);
@@ -46,7 +46,7 @@ var builtMaterial = MB.build();
 
 ### Retrieve
 
-```JAVA
+```zenscript
 getMaterial(String name);
 ```
 
@@ -60,13 +60,13 @@ Required Parameters:
 
 Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the [Part entry](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
 
-```JAVA
+```zenscript
 val PB = MaterialSystem.getPartBuilder();
 ```
 
 ### Retrieve
 
-```JAVA
+```zenscript
 getPart(String name);
 ```
 
@@ -90,7 +90,7 @@ Required Parameters:
 
 Even though you can also do this using the [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) own functionality, this Method allows you to register [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) for a given Material
 
-```JAVA
+```zenscript
 registerPartsForMaterial(Material material, String[] partNames);
 ```
 

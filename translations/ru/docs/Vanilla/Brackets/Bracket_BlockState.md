@@ -4,15 +4,17 @@ The BlockState Bracket Handler gives you access to the BlockStates in the game. 
 
 BlockStates are referenced in the BlockState Bracket Handler like so:
 
-    <blockstate:modid:blockname>
-    
+```zenscript
+<blockstate:modid:blockname>
+```
 
 With the `modid` being the modid of the mod that the block is defined in, and `blockname` being the name of the block. This will return the default BlockState for the specified block.
 
 To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
 
-    <blockstate:modid:blockname:properties>
-    
+```zenscript
+<blockstate:modid:blockname:properties>
+```
 
 Where `properties` is a comma-separated set of `name=value` pairs for any properties that you want to specify on the blockstate. Any properties that are not specified are given the same values as in the default blockstate.
 
@@ -24,12 +26,14 @@ Note that this bracket handler will create a reference to one specific blockstat
 
 An example of the BlockState Bracket Handler would be:
 
-    //block of dirt
-    <blockstate:minecraft:dirt>
-    
-    //oak log, vertical
-    <blockstate:minecraft:log>
-    <blockstate:minecraft:log:variant=oak,axis=y>
-    
-    //spruce log, horizontal along the x-axis
-    <blockstate:minecraft:log:variant=spruce,axis=x>
+```zenscript
+//block of dirt
+<blockstate:minecraft:dirt>
+
+//oak log, vertical
+<blockstate:minecraft:log>
+<blockstate:minecraft:log:variant=oak,axis=y>
+
+//spruce log, horizontal along the x-axis
+<blockstate:minecraft:log:variant=spruce,axis=x>
+```

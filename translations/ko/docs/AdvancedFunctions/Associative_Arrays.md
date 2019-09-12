@@ -6,7 +6,7 @@
 
 중괄호 `{}`와 콜론 `:`을 사용하여 연관 배열을 선언합니다.
 
-```JAVA
+```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
@@ -34,7 +34,7 @@ val myAssocArray = {
 `Array[index]`  
 차이점은 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다. 다만 배열을 어떤 타입을 선언했는지에 맞춰서 참조하면 됩니다.
 
-```JAVA
+```zenscript
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
     &lt;minecraft:dirt&gt; : "This is me"
@@ -50,7 +50,7 @@ print(assocArray[dirt]);
 한 가지 특별한 경우가 있는데, 그것은 문자열을 부속품으로 사용할 때:   
 이 경우 다음과 같이 memberGetter를 사용할 수도 있습니다.
 
-```JAVA
+```zenscript
 val assocWithStrings = {
     //you can use "" if you want
     "one" : "1",
@@ -72,7 +72,7 @@ print(assocWithStrings["two"]);
 하나의 큰 차이점이 있습니다:  
 배열은 고정 된 크기이지만 맵은 그렇지 않습니다. 즉, 이전에 설정되지 않은 색인을 설정하여 언제든지 항목을 추가 할 수 있습니다!
 
-```JAVA
+```zenscript
 val changingArray = {
     <minecraft:dirt> : "this is me",
     <minecraft:gold_ingot> : "and I hate it"
@@ -93,7 +93,7 @@ KeySet은 지도의 모든 키를 포함하는 배열입니다.
 valueSet은 지도의 값을 모두 포함하는 배열입니다.  
 entrySet은 지도의 모든 항목을 포함하는 배열입니다(아래 참조).
 
-```JAVA
+```zenscript
 myAssocArray.keySet   //keySet
 myAssocArray.keys     //keySet
 myAssocArray.values   //valueSet
@@ -115,7 +115,7 @@ Associative Array를 통해 반복할 수 있는 두 개의 반복자가 있습�
 - 다음과 같이 구축 된 키 반복자를 사용합니다. `for key in assocArray {doSth;}`
 - 우리는 또한 이와 같이 구축 된 키 - 값 - 반복자를 사용할 것입니다. `for key, value in assocArray {doSth;}`
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -143,7 +143,7 @@ for key in recipeMapShaped {
 
 `키`과 `값`을 얻기 위해 게터를 사용할 수 있다.
 
-```kotlin
+```zenscript
 //Replace map with a reference to an existing map/associative array
 val myEntry = map.entrySet[0];
 

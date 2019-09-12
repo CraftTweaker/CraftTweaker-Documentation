@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -53,7 +53,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 * stack.applyTransform(stack,player)
 * stack.hasTransformers()</details>
 
-### ZenGetters/ZenSetters
+### ZenGetter/ZenSetter
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
@@ -104,14 +104,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Weight
 
-| Method call                   | Returns                                                  | ParameterTypes     |
+| Methodenaufruf                | Returns                                                  | ParameterTypes     |
 | ----------------------------- | -------------------------------------------------------- | ------------------ |
 | `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
 | `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
 #### Damage
 
-| Method call                                    | Returns                                    | ParameterTypes                             |
+| Methodenaufruf                                 | Returns                                    | ParameterTypes                             |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
 | `stack.anyDamage()`                            | A new IItemStack with the changed property |                                            |
 | `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
@@ -119,7 +119,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
+| Methodenaufruf                 | Returns                                    | ParameterTypes                |
 | ------------------------------ | ------------------------------------------ | ----------------------------- |
 | `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
 | `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
@@ -128,14 +128,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Block Casting
 
-| Method call       | Returns                                         |
+| Methodenaufruf    | Returns                                         |
 | ----------------- | ----------------------------------------------- |
 | `stack.asBlock()` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 | `stack as IBlock` | A new [IBlock](/Vanilla/Blocks/IBlock/) object. |
 
 #### Lore/DisplayName
 
-| Method call                          | Returns                                                                                                           | ParameterTypes                           |
+| Methodenaufruf                       | Returns                                                                                                           | ParameterTypes                           |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | `stack.withDisplayName(String name)` | A new IItemStack with the changed property. Unlike the displayName setter, this only applies to this single item. | string (supports color codes with "§")   |
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
@@ -143,14 +143,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Enchantments
 
-| Method call                                                         | Returns        | ParameterTypes                                                          |
+| Methodenaufruf                                                      | Returns        | ParameterTypes                                                          |
 | ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
 | `stack.canApplyAtCraftingTable(IEnchantmentDefinition enchantment)` | A bool.        | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
 | `stack.addEnchantment(IEnchantment enchantment)`                    | void (nothing) | [IEnchantment](/Vanilla/Enchantments/IEnchantment/)                     |
 
 #### canItem...
 
-| Method call                                        | Returns                                                        | ParameterTypes                                        |
+| Methodenaufruf                                     | Returns                                                        | ParameterTypes                                        |
 | -------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
 | `stack.canPlaceOn(IBlockDefinition block)`         | A bool that tells if the item can be placed on the block.      | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
 | `stack.canDestroy(IBlockDefinition block)`         | A bool that tells if the item can destroy the block.           | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
@@ -159,7 +159,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### create IEntityItem
 
-| Method call                                                  | Returns                                                                                                     | Parameter Types                                                          |
+| Methodenaufruf                                               | Returns                                                                                                     | Parameter Types                                                          |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
 | `stack.createEntityItem(IWorld world, int x, int y, int z);` | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), int, int, int                          |
 | `stack.createEntityItem(IWorld world, IBlockPos pos);`       | A new [IEntityItem](/Vanilla/Entities/IEntityItem/) that corresponds to the newly created item in the world | [IWorld](/Vanilla/World/IWorld/), [IBlockPos](/Vanilla/World/IBlockPos/) |
@@ -176,7 +176,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 
 Globally (translates the item to the new name).
 
-```kotlin
+```zenscript
 val apple = <minecraft:apple>;
 
 //prints "Apple"
@@ -202,7 +202,7 @@ Locally (only this single item).
 
 The maximum Stack Size is how many items fit in one Stack, for example, wool’s Stack size is 64 and Buckets’ only 16.
 
-```kotlin
+```zenscript
 val apple = <minecraft:apple>;
 val bucket = <minecraft:bucket>;
 
@@ -226,7 +226,7 @@ print(apple.maxStackSize);
 
 The Hardness is how long it takes to break the referred block. Only works if the object refers to a block.
 
-```kotlin
+```zenscript
 val grass = <minecraft:grass>;
 
 //prints 1.0
@@ -243,7 +243,7 @@ print(grass.hardness);
 
 The damage for items that cannot be damaged is 0.
 
-```kotlin
+```zenscript
 val pick = <minecraft:diamond_pickaxe>;
 
 //prints 1561
@@ -269,7 +269,7 @@ print(pick.maxDamage);
 The tag is an [IData](/Vanilla/Data/IData/) object.  
 If the item does not contain a tag, it will return an empty tag, never null.
 
-```kotlin
+```zenscript
 //creates apple with the given tag
 //Removes existing tags
 <minecraft:apple>.withTag({Unbreakable: 1});
@@ -290,7 +290,7 @@ item.updateTag({Unbreakable: 1});
 Returns the liquid contained in a single item (if multiple) or null if the item is no container.  
 Returns an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) Object or null.
 
-```kotlin
+```zenscript
 val lav = <minecraft:lava_bucket>;
 print(lav.liquid.name);
 ```
@@ -299,7 +299,7 @@ print(lav.liquid.name);
 
 How many apples are there?
 
-```kotlin
+```zenscript
 <minecraft:apple>.anyAmount();
 
 //1 Apple
@@ -316,7 +316,7 @@ val evenMoreApples = <minecraft:apple> * 3;
 
 Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
 
-```kotlin
+```zenscript
 val apple = <minecraft:apple>;
 
 //Creates a weightedItemStack with 100 percent chance
@@ -330,7 +330,7 @@ applePercentage = apple.weight(1.0);
 
 Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring to this item.
 
-```kotlin
+```zenscript
 <minecraft:apple>.ores;
 ```
 
@@ -338,7 +338,7 @@ Returns a List of [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) referring t
 
 You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as you are referring to a block, otherwise the cast will throw an exception.
 
-```kotlin
+```zenscript
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
 ```
@@ -348,7 +348,7 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 You can check if an IItemStack is a food item and what food properties it has.  
 May not work for every modded food item!
 
-```kotlin
+```zenscript
 <minecraft:apple>.isFood; //true
 <minecraft:apple>.saturation; //0.3
 <minecraft:apple>.healAmount; //4

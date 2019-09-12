@@ -5,14 +5,14 @@ This package allows you to modify recipes for the Squeezer.
 
 ## Importing the package
 If you want to import this package, here you go:
-```
+```zenscript
 import mods.integrateddynamics.Squeezer;
 ```
 
 
 ## Adding Recipes
 
-```
+```zenscript
 //Squeezer.addRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 Squeezer.addRecipe(<minecraft:melon>, <minecraft:stick>, <liquid:water> * 100);
 
@@ -35,7 +35,7 @@ Squeezer.addRecipe(<minecraft:pumpkin>,
 
 ## Removing Recipes
 
-```
+```zenscript
 //Squeezer.removeRecipe(IItemStack inputStack, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
 //TODO
 

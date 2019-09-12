@@ -18,21 +18,23 @@ You can call the XP Fluids package using `mods.pneumaticcraft.xpfluid`.
 
 This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
 
-    mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack fluid);
-    // Example
-    mods.pneumaticcraft.xpfluid.removeXPFluid(<liquid:xpjuice>);
-    
+```zenscript
+mods.pneumaticcraft.xpfluid.removeXPFluid(ILiquidStack fluid);
+// Example
+mods.pneumaticcraft.xpfluid.removeXPFluid(<liquid:xpjuice>);
+```
 
 This function deregisters *all* known XP fluids:
 
-    mods.pneumaticcraft.xpfluid.removeAllXPFluids();
-    
+```zenscript
+mods.pneumaticcraft.xpfluid.removeAllXPFluids();
+```
 
 ## Adding
 
 This function can be used to register fluids as XP fluids:
 
-```java
+```zenscript
 // Register a liquid as an XP fluid. xpRatio defines the amount of player XP per millibucket of fluid.
 mods.pneumaticcraft.xpfluid.addXPFluid(ILiquidStack fluid, double ratio);
 

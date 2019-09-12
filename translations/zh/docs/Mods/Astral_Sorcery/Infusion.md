@@ -11,7 +11,7 @@
 此方法将移除第一个`输出`为传入的物品堆[（IItemStack）](/Vanilla/Items/IItemStack/)的星能聚合配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
-```JAVA
+```zenscript
 //mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
 //output 输出
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
@@ -19,7 +19,7 @@ mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 
 ## 添加配方
 
-```JAVA
+```zenscript
 //mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
 //input 输入
 //output 输出

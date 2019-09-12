@@ -8,11 +8,14 @@ You can call the *crucible* package using `mods.skyresources.crucible`
 
 ## Recipe Addition
 
-    //mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
-    mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
-    
+```zenscript
+//mods.skyresources.crucible.addRecipe(ILiquidStack output, IItemStack input);
+mods.skyresources.crucible.addRecipe(<liquid:lava> * 500, <minecraft:cobblestone>);
+```
 
 ## Recipe Removal
 
-    //mods.skyresources.crucible.removeRecipe(ILiquidStack output);
-    mods.skyresources.crucible.removeRecipe(<liquid:lava>);
+```zenscript
+//mods.skyresources.crucible.removeRecipe(ILiquidStack output);
+mods.skyresources.crucible.removeRecipe(<liquid:lava>);
+```

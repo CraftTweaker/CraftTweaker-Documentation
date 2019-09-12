@@ -2,7 +2,7 @@
 
 An ICreativeTabObject represents a creative inventory tab.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.creativetabs.ICreativeTab;`
@@ -13,7 +13,7 @@ You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanill
 
 ## ZenGetters and ZenMethods without parameters
 
-| ZenGetter/ZenMethod | Return Type    |
+| ZenGetter/ZenMethod | Rückgabetyp    |
 | ------------------- | -------------- |
 | searchBarWidth      | int            |
 | tabLabel            | string         |

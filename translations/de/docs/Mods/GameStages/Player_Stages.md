@@ -6,13 +6,13 @@ The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) f
 
 As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
 
-## Methods
+## Methoden
 
 ### Check for gamestages
 
 The methods return booleans.
 
-```java
+```zenscript
 // Checks if the player has the passed stage.
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
@@ -34,7 +34,7 @@ player.hasAllGameStages ("one", "two");
 
 The methods return void (nothing).
 
-```java
+```zenscript
 // Unlocks a stage for a player.
 //addGameStage(String stage);
 addGameStage(String stage);

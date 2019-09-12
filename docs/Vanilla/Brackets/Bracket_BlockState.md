@@ -4,7 +4,7 @@ The BlockState Bracket Handler gives you access to the BlockStates in the game. 
 
 BlockStates are referenced in the BlockState Bracket Handler like so:
 
-```
+```zenscript
 <blockstate:modid:blockname>
 ```
 
@@ -12,7 +12,7 @@ With the `modid` being the modid of the mod that the block is defined in, and `b
 
 To get a specific blockstate with the BlockState Bracket Handler, you can optionally specify its properties like so:
 
-```
+```zenscript
 <blockstate:modid:blockname:properties>
 ```
 
@@ -28,7 +28,7 @@ If you would like to be able to match against multiple blockstates, please refer
 
 An example of the BlockState Bracket Handler would be:
 
-```
+```zenscript
 //block of dirt
 <blockstate:minecraft:dirt>
 

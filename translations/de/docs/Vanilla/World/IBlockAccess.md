@@ -2,7 +2,7 @@
 
 BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](IWorld/), that means all these functions are also available to all [IWorld](IWorld/) objects.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IBlockAccess`

@@ -8,7 +8,7 @@ By default can copy written books and enchanted books.
 
 ## Remove matching copyable items.
 
-```java
+```zenscript
 mods.cfm.Printer.remove(@Optional final IIngredient item);
 
 mods.cfm.Printer.remove(<minecraft:enchanted_book>);
@@ -20,7 +20,7 @@ mods.cfm.Printer.remove();
 
 ## Add a copyable item.
 
-```java
+```zenscript
 mods.cfm.Printer.add(@Nonnull final IItemStack item);
 
 mods.cfm.Printer.add(<minecraft:name_tag>);

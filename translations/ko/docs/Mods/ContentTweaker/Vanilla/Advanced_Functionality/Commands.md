@@ -2,7 +2,7 @@
 
 You can use this class to send a command, you cannot use this class to create new commands!
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Commands;`
@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 This is the only thing you can do with the Commands package.
 
-```JAVA
+```zenscript
 call(String command, IPlayer player, IWorld world)
 call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
 ```

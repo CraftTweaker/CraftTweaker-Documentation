@@ -13,7 +13,7 @@ A Brewing Recipe consists of 3 Parts:
 
 ### Add Brewing Recipes
 
-```
+```zenscript
 //brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
 brewing.addBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
 brewing.addBrew(<ore:ingotGold>, <minecraft:obsidian>, <minecraft:wool:3>, true);
@@ -29,7 +29,7 @@ brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapi
 
 Only works with JEI version 4.15.0.275 or higher.
 
-```
+```zenscript
 //brewing.removeRecipe(IItemStack input, IItemStack ingredient);
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
 ```

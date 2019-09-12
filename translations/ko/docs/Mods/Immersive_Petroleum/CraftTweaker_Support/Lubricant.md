@@ -9,7 +9,7 @@
 
 ### Code Example:
 
-```JAVA
+```zenscript
 mods.immersivepetroleum.Lubricant.registerLubricant(ILiquidStack lubricantEntry, int amount);
 mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:lava>, 500);
 ```

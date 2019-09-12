@@ -4,7 +4,7 @@ As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemic
 
 Addition
 ------
-```
+```zenscript
 mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas);
 
 mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
@@ -12,7 +12,7 @@ mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
 
 Removal
 ------
-```
+```zenscript
 mods.mekanism.chemical.washer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas);
 
 mods.mekanism.chemical.washer.removeRecipe(<gas:cleanLead>, <gas:lead>);
@@ -23,6 +23,6 @@ Specifying an input parameter will only remove the specific recipe that uses sai
 Removing all recipes
 ------
 As of Mekanism 9.7.0 it is now possible to remove all Chemical Washer recipes. (This excludes any recipes added via CraftTweaker)
-```
+```zenscript
 mods.mekanism.chemical.washer.removeAllRecipes();
 ```

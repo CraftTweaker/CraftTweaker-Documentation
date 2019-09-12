@@ -8,7 +8,7 @@ You can call the package using `mods.forestry.CharcoalWall`
 
 ## Recipe Removal
 
-```JAVA
+```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
 mods.forestry.CharcoalWall.removeWall(<minecraft:bedrock>.asBlock());
 
@@ -26,7 +26,7 @@ mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 
 `amount` states the amount of charcoal the wall will provide.
 
-```JAVA
+```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 

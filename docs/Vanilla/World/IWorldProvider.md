@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 ## Create a worldProvider
 Normally, you can just get the worldProvider from an [IWorld](/Vanilla/World/IWorld/) object or some functions, though if yo need to create one yourself, here's how you do it:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
-```
+```zenscript
 crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
@@ -48,7 +48,7 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 
 Use either an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
-```
+```zenscript
 worldProvObj.getBiome(IBlockPos position);
 ```
 
@@ -56,7 +56,7 @@ worldProvObj.getBiome(IBlockPos position);
 
 Use a long.  
 Returns an int.
-```
+```zenscript
 worldProvObj.getMoonPhase(long time);
 ```
 
@@ -64,7 +64,7 @@ worldProvObj.getMoonPhase(long time);
 
 Use an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a new IWorldProvider object.
-```
+```zenscript
 worldProvObj.getRespawnDimension(IPlayer player);
 ```
 
@@ -72,7 +72,7 @@ worldProvObj.getRespawnDimension(IPlayer player);
 
 Use a float.  
 Returns a float.
-```
+```zenscript
 worldProvObj.getStarBrightness(float something);
 worldProvObj.getSunBrightness(float something);
 worldProvObj.getSunBrightnessFactor(float something);
@@ -81,6 +81,6 @@ worldProvObj.getSunBrightnessFactor(float something);
 ### Check if a block has a high humidity
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a boolean.
-```
+```zenscript
 worldProvObj.isBlockHighHumidity(IBlockPos pos);
 ```

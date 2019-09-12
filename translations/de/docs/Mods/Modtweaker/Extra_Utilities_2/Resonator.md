@@ -8,14 +8,14 @@ You can call the Resonator package using `mods.extrautils2.Resonator`
 
 ## Removing
 
-```JAVA
+```zenscript
 //mods.extrautils2.Resonator.remove(IItemStack outout);
 mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 ```
 
 ## Addition
 
-```JAVA
+```zenscript
 <br />//1 GP = 100 energy
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
 mods.extrautils2.Resonator.add(&lt;minecraft:redstone_block&gt;, &lt;minecraft:gold_block&gt;, 100);

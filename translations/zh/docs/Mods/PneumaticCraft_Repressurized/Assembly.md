@@ -4,15 +4,15 @@ The Robotic Assembly System is a multiblock consisting of the Assembly Controlle
 
 There are several functions for adding and removing recipes, depending on whether the recipe requires use of the laser, the drill, or both.
 
-## Calling
+## 导入包
 
 You can call the Assembly package using `mods.pneumaticcraft.assembly`.
 
-## Removing
+## 移除配方
 
 These functions remove the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
-```java
+```zenscript
 mods.pneumaticcraft.assembly.removeLaserRecipe(IItemStack output);
 mods.pneumaticcraft.assembly.removeDrillRecipe(IItemStack output);
 mods.pneumaticcraft.assembly.removeDrillLaserRecipe(IItemStack output);
@@ -24,7 +24,7 @@ mods.pneumaticcraft.assembly.removeDrillRecipe(<pneumaticcraft:pressure_chamber_
 
 These functions remove *all* recipes currently defined for the Assembly System:
 
-```java
+```zenscript
 mods.pneumaticcraft.assembly.removeAllLaserRecipes();
 mods.pneumaticcraft.assembly.removeAllDrillRecipes();
 mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
@@ -34,7 +34,7 @@ mods.pneumaticcraft.assembly.removeAllDrillLaserRecipes();
 
 These functions are used to add new recipes for the assembly system:
 
-```java
+```zenscript
 mods.pneumaticcraft.assembly.addLaserRecipe(IItemStack input, IItemStack output)
 mods.pneumaticcraft.assembly.addDrillRecipe(IItemStack input, IItemStack output)
 mods.pneumaticcraft.assembly.addDrillLaserRecipe(IItemStack input, IItemStack output)

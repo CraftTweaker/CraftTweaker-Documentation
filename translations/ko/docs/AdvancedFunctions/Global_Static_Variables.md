@@ -21,12 +21,13 @@ global 상수는 `global` 키워드로, static 상수는 `static` 키워드로 �
 
 전역 상수의 선언은 지역 상수 선언과 마찬가지로 간단합니다.
 
-    import crafttweaker.item.IItemStack;
-    
-    
-    global myGlobalValue as IItemStack = <minecraft:dirt>;
-    static myStaticValue as IItemStack = <minecraft:sand>;
-    
+```zenscript
+import crafttweaker.item.IItemStack;
+
+
+global myGlobalValue as IItemStack = <minecraft:dirt>;
+static myStaticValue as IItemStack = <minecraft:sand>;
+```
 
 자, 위 예제를 살펴볼까요?
 

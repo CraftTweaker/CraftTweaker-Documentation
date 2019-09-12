@@ -39,7 +39,7 @@ All Fields can be set via set`Name` e.g. `block.setUnlocalizedName("name");` and
 |witherProof         |boolean                                                                                                  |No       |false                                                                                                          |Can Wither's destroy this block                                                          |
 
 ## Examples
-```
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.VanillaFactory;

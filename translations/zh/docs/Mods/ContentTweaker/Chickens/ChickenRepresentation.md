@@ -8,8 +8,9 @@
 
 想要导入？ 你要这么做：
 
-    import mods.contenttweaker.Chicken;
-    
+```zenscript
+import mods.contenttweaker.Chicken;
+```
 
 ## 注册小鸡
 
@@ -22,11 +23,12 @@
 
 例子：
 
-    chickenRep.layItem = <minecraft:iron_ingot>;
-    print(chickenRep.layItem.displayName);
-    chickenRep.setLayItem(<minecraft:gold_ingot>);
-    print(chickenRep.getLayItem().displayName);
-    
+```zenscript
+chickenRep.layItem = <minecraft:iron_ingot>;
+print(chickenRep.layItem.displayName);
+chickenRep.setLayItem(<minecraft:gold_ingot>);
+print(chickenRep.getLayItem().displayName);
+```
 
 | 名称                     | 类型                                                                                     |
 | ---------------------- | -------------------------------------------------------------------------------------- |

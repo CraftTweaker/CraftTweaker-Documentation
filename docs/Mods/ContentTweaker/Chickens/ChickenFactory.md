@@ -4,7 +4,7 @@ The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/C
 Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
 
 ## Importing the package
-```
+```zenscript
 import mods.contenttweaker.ChickenFactory;
 ```
 
@@ -19,12 +19,12 @@ This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chicken
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
 - [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
 
-```
+```zenscript
 ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
 ```
 
 ## Example Script
-```
+```zenscript
 #loader contenttweaker
 #modloaded chickens
 

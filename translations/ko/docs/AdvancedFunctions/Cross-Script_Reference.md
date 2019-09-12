@@ -15,7 +15,7 @@
 
 a.zs:
 
-```kotlin
+```zenscript
 static myVal as string = "myVal";
 
 function makeLine() {
@@ -25,7 +25,7 @@ function makeLine() {
 
 b.zs
 
-```kotlin
+```zenscript
 print(scripts.a.myVal);
 scripts.a.makeLine();
 ```

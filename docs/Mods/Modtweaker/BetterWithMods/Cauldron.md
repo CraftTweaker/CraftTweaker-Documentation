@@ -4,7 +4,7 @@
 ## Basic Recipe
 
 * Adds a Unstoked Cauldron Recipe  
-```
+```zenscript
 mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
 //Examples
 mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
@@ -12,7 +12,7 @@ mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>])
 ```
 
 * Adds a Stoked Cauldron Recipe   
-```
+```zenscript
 mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
 //Examples
 mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
@@ -51,7 +51,7 @@ All previous methods are simply short cuts to using the builder.
        ```build()```
        
 ### Example builder usage
-```
+```zenscript
 mods.betterwithmods.Cauldron.builder()
 .buildRecipe([<ore:stone>], [<minecraft:dirt>])
 .setHeat(2)

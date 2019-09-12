@@ -11,20 +11,21 @@
 
 这样，我仅需输入代码以遍历一个物品数组的所有物品，而不必重复输入所有函数。
 
-    import crafttweaker.item.IIngredient;
-    
-    val Array = [
-        item1,
-        item2,
-        item3,
-        ...
-    ] as IIngredient[];
-    
-    
-    for item in Array{
-        recipes.remove(item);
-    }
-    
+```zenscript
+import crafttweaker.item.IIngredient;
+
+val Array = [
+    item1,
+    item2,
+    item3,
+    ...
+] as IIngredient[];
+
+
+for item in Array{
+    recipes.remove(item);
+}
+```
 
 ## 优点
 

@@ -3,7 +3,7 @@
 This interface is extended by all events that have a player.  
 That means you can use the getter below to access the player.
 
-## Importing the class
+## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPlayerEvent;`
@@ -12,7 +12,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 This interface extends [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), which means that all functionality that ILivingEvent offers is also present in IPlayerEvent
 
-## ZenGetters
+## ZenGetter
 
 | name   | type                                 |
 | ------ | ------------------------------------ |

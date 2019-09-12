@@ -6,18 +6,18 @@ The Alloy Smelter package can be used to add/remove recipes to/from the Immersiv
 
 You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
 
-## Add Recipe
+## 添加配方
 
-| Required | Type    | Data Type                                           |
+| Required | 类型      | Data Type                                           |
 | -------- | ------- | --------------------------------------------------- |
-| Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必要       | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必要       | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time    | Integer                                             |
+| 必要       | Time    | Integer                                             |
 
-### Example
+### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
@@ -31,7 +31,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);

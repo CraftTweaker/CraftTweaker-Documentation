@@ -11,13 +11,13 @@ For example, an OreEntry for `"Gold"`, called with the prefix `"dust"` will retu
 For these examples, we will assume this was declared:  
 The comments after the example calls will state what the method call can return (unless in the extra category).
 
-```
+```zenscript
 val oreEntry = mods.jaopca.JAOPCA.getOre("Gold");
 ```
 
 ### Get entry properties
 You can get these properties:
-```
+```zenscript
 oreEntry.energyModifier; //1.0 as double
 oreEntry.rarity; //1.0 as double
 oreEntry.oreType; //"INGOT" as string
@@ -29,7 +29,7 @@ oreEntry.oreType; //"INGOT" as string
 The ore name is essentialy how it is registered and what you use in a getOre to retrieve it.  
 The ore name synonyms are synonyms that mods or pack authors can register to combine two or more oreEntries (e.g. "Aluminum" and "Aluminium"). Most oreEntries will probably have nothing registered, though. The synonyms getter will return a list containing all the synonyms as strings.
 
-```
+```zenscript
 oreEntry.oreName; //"Gold"
 oreEntry.oreNameSynonyms; //[]
 ```
@@ -38,7 +38,7 @@ oreEntry.oreNameSynonyms; //[]
 ### Get IOreDictEntry
 
 Returns a new [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) with the given prefix.
-```
+```zenscript
 oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
 ```
 
@@ -50,7 +50,7 @@ You can provide an alternate fallback prefix to be used if no matching Item is f
 
 If no matching item is found and no matching item is found using the fallback prefix (if provided), it will return `null`.
 
-```
+```zenscript
 //oreEntry.getItemStack(prefix);
 oreEntry.getItemStack("coin"); //<jaopca:item_coingold>
 oreEntry.getItemStack("invalid"); //null
@@ -68,7 +68,7 @@ You can provide an alternate fallback prefix to be used if no matching Liquid is
 
 If no matching liquid is found and no matching liquid is found using the fallback prefix (if provided), it will return `null`.
 
-```
+```zenscript
 //oreEntry.getLiquidStack(prefix);
 oreEntry.getLiquidStack("molten"); //<liquid:gold>
 oreEntry.getLiquidStack("invalid"); //null
@@ -87,7 +87,7 @@ You can also use the same methods as above (`getOreDictEntry`, `getLiquidStack` 
 
 There are up to 3 extras that can be registered. For the sake of simplicity there won't be examples for the equivalent methods, they will only be stated
 
-```
+```zenscript
 //First extra
 oreEntry.hasExtra; //true or false
 oreEntry.extra; //matching oreEntry or null

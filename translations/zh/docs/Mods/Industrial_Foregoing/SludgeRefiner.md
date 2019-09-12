@@ -1,19 +1,23 @@
 # Sludge Refiner
 
-### Importing
+### 导入
 
-    import mods.industrialforegoing.SludgeRefiner;
-    
+```zenscript
+import mods.industrialforegoing.SludgeRefiner;
+```
 
-### Adding
+### 添加配方
 
-    SludgeRefiner.add(IItemStack output, int ItemWeight);
-    
-    SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
-    
+```zenscript
+SludgeRefiner.add(IItemStack output, int ItemWeight);
 
-### Removing
+SludgeRefiner.add(<minecraft:wheat_seeds>, 10);
+```
 
-    SludgeRefiner.remove(IItemStack output);
-    
-    SludgeRefiner.remove(<minecraft:wheat_seeds>);
+### 移除配方
+
+```zenscript
+SludgeRefiner.remove(IItemStack output);
+
+SludgeRefiner.remove(<minecraft:wheat_seeds>);
+```

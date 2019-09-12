@@ -4,13 +4,13 @@
 
 使用以下代码导入配方构建器：
 
-```JAVA
+```zenscript
 import mods.artisanworktables.builder.RecipeBuilder;
 ```
 
 ### 例子
 
-```JAVA
+```zenscript
 //最简例子
 RecipeBuilder.get("carpenter")
   .setShaped([

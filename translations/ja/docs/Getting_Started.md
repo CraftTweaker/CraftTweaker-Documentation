@@ -22,8 +22,9 @@ Zenscriptは"トップダウン型"のプログラミング言語です。つま
 
 `hello.zs`の中には次の文を書いてください。
 
-    print("Hello world!");
-    
+```zenscript
+print("Hello world!");
+```
 
 そして、Minecraftを起動して、`crafttweaker.log`ファイルを見てください。
 

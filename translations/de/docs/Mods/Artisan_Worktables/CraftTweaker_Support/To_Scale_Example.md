@@ -2,9 +2,9 @@
 
 Here's a Quick To Scale Example:
 
-## Example
+## Beispiel
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 
 var planks = <ore:plankWood>;

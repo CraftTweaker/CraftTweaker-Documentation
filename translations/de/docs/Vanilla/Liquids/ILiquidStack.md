@@ -2,7 +2,7 @@
 
 A LiquidStack consists of a [Liquid Definition](/Vanilla/Liquids/ILiquidDefinition/) as well as an optional tag and an optional amount value.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidStack;`
@@ -26,7 +26,7 @@ An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Br
 As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | What is this?                                             | Return Type                                               | Example                                   |
+| ZenGetter   | What is this?                                             | Rückgabetyp                                               | Beispiel                                  |
 | ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
 | displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |

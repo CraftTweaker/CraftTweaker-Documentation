@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can get such an object through the use of the [Potion Bracket handler](/Vanilla/Brackets/Bracket_Potion/)
 
-```Java
+```zenscript
 <potion:minecraft:strength>;
 ```
 

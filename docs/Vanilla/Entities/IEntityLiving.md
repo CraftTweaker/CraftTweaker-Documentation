@@ -40,28 +40,28 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 #### Play living sound
 Requires no parameters.  
 Returns nothing.
-```
+```zenscript
 ebtLiv.playLivingSound();
 ```
 
 #### Spawn explosion particles
 Requires no parameters.  
 Returns nothing.
-```
+```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
 #### Set the drop chance for an Equipment Slot
 Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
 Returns nothing.
-```
+```zenscript
 ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
 ```
 
 #### Enable Persistence
 Requires no parameters.  
 Returns nothing.
-```
+```zenscript
 ebtLiv.enablePersistence();
 ```
 
@@ -70,7 +70,7 @@ First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean
 Second method requires two booleans and returns nothing.  
 Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
 
-```
+```zenscript
 ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
 ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
 ebtLiv.canBeLeashedTo(IPlayer player);

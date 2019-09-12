@@ -2,13 +2,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Pacifist;
 ```
 
 #### Methods
 
-```java
+```zenscript
 static void addEntity(
   IEntityDefinition entity // the entity to add to the pacifist list
 );
@@ -18,7 +18,7 @@ static void addEntity(
 ---
 
 
-```java
+```zenscript
 static void removeEntity(
   IEntityDefinition entity // the entity to remove from the pacifist list
 );
@@ -30,7 +30,7 @@ static void removeEntity(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Pacifist;
 
 // Adds an enderman as a pacifist creature

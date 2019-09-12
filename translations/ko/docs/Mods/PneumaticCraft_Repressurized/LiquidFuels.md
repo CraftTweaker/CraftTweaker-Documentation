@@ -10,21 +10,23 @@ You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
 This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
-    mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
-    // Example
-    mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
-    
+```zenscript
+mods.pneumaticcraft.liquidfuel.removeFuel(ILiquidStack fluid);
+// Example
+mods.pneumaticcraft.liquidfuel.removeFuel(<liquid:lpg>);
+```
 
 This function deregisters *all* registered fuels:
 
-    mods.pneumaticcraft.liquidfuel.removeAllFuels();
-    
+```zenscript
+mods.pneumaticcraft.liquidfuel.removeAllFuels();
+```
 
 ## Adding
 
 The following functions can be used to add fluids to the fuel registry:
 
-```java
+```zenscript
 // Register a certain liquid as a fuel. mlPerBucket defines the amount of compressed air produced per bucket of fuel. For reference, 16000mL of air is produced from a piece of Coal in an Air Compressor.
 mods.pneumaticcraft.liquidfuel.addFuel(ILiquidStack fluid, double mlPerBucket);
 

@@ -1,14 +1,14 @@
 # Powered Thingies :: Item Liquefier
 
-### Importing
+### Importieren
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 ilt().logKeys()
 ilt().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
 ilt().clear()
@@ -18,13 +18,13 @@ ilt().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Example
+##### Beispiel
 
-```kotlin
+```zenscript
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
 ```
 

@@ -2,13 +2,13 @@
 
 The `Melting` package allows you to add or remove Melting recipes (item->liquid in the smeltery).
 
-## Calling
+## 导入包
 
 You can call the Melting package using `mods.tconstruct.Melting`
 
 ## Add Melting Recipes
 
-```JAVA
+```zenscript
 //mods.tconstruct.Melting.addRecipe(ILiquidStack output, IIngredient input, @Optional int temp);
 mods.tconstruct.Melting.addRecipe(<liquid:molten_gold> * 144,<minecraft:gold_ingot>);
 mods.tconstruct.Melting.addRecipe(<liquid:molten_iron> * 144,<minecraft:iron_ingot>, 500);
@@ -22,7 +22,7 @@ mods.tconstruct.Melting.addEntityMelting(<entity:minecraft:villager>, <liquid:cr
 
 ## Removing Melting Recipes
 
-```JAVA
+```zenscript
 //mods.tconstruct.Melting.removeRecipe(ILiquidStack output);
 mods.tconstruct.Melting.removeRecipe(<liquid:molten_iron>);
 

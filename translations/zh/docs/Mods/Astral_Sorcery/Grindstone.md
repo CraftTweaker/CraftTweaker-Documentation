@@ -11,7 +11,7 @@
 此方法将移除第一个`输出`为传入的物品堆[（IItemStack）](/Vanilla/Items/IItemStack/)的砂轮配方。   
 如果有多个配方可以合成传入的物品，你需要多次使用这个方法。
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Grindstone.removeRecipe(IItemStack output);
 //output 输出
 mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
@@ -19,7 +19,7 @@ mods.astralsorcery.Grindstone.removeRecipe(<minecraft:redstone>);
 
 ## 添加配方
 
-```JAVA
+```zenscript
 //mods.astralsorcery.Grindstone.addRecipe(IItemStack input, IItemStack output);
 //input 输入
 //output 输出

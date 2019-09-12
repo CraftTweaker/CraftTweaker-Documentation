@@ -1,14 +1,14 @@
 # Powered Thingies :: Incinerator
 
-### Importing
+### Importieren
 
-```kotlin
+```zenscript
 import mods.poweredthingies.Tweaker.incineratorTweaker as it;
 ```
 
 ### Listing Keys, Removing Recipes by Key, Clearing
 
-```kotlin
+```zenscript
 it().logKeys()
 it().removeRecipe('minecraft:log') // check <logKeys> output for valid keys
 it().clear()
@@ -18,15 +18,15 @@ it().clear()
 
 ##### Signature
 
-```kotlin
+```zenscript
 addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 ```
 
 `power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
-##### Example
+##### Beispiel
 
-```kotlin
+```zenscript
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 

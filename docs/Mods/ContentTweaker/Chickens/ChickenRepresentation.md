@@ -6,7 +6,7 @@ You can change this behavior to allow for better chickens by modifying the given
 
 ## Importing the class
 Want to import the class? Here you go:
-```
+```zenscript
 import mods.contenttweaker.Chicken;
 ```
 
@@ -20,7 +20,7 @@ Be careful though, as any changes done to this template after the the registerin
 You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`  
 
 Example:
-```
+```zenscript
 chickenRep.layItem = <minecraft:iron_ingot>;
 print(chickenRep.layItem.displayName);
 chickenRep.setLayItem(<minecraft:gold_ingot>);

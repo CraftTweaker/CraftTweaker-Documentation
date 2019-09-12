@@ -12,11 +12,11 @@ The Microwave heats up food items.
 - Salmon -> Cooked Salmon
 - Flesh -> Cooked Flesh
 
-## Removing
+## 移除配方
 
 ## Remove matching oven recipes.
 
-```java
+```zenscript
 mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that result in Cooked Flesh
@@ -31,7 +31,7 @@ mods.cfm.Oven.remove();
 
 ## Add an oven recipe.
 
-```java
+```zenscript
 mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes two apples from one stick

@@ -18,20 +18,21 @@ It is a good idea to split your script into multiple files
 - Split your large scripts into multiple smaller ones.
 - You could for example create one script for each mod, or each mod handler.
 
-## Example
+## Beispiel
 
-    scripts
-        thermalExpansion
-            Compactor.zs
-            Crucible.zs
-        Vanilla
-            Recipes
-                Remove.zs
-                Shaped.zs
-                Shapeless.zs
-            Seeds.zs
-        oreDict.zs
-    
+```zenscript
+scripts
+    thermalExpansion
+        Compactor.zs
+        Crucible.zs
+    Vanilla
+        Recipes
+            Remove.zs
+            Shaped.zs
+            Shapeless.zs
+        Seeds.zs
+    oreDict.zs
+```
 
 ## Advantages
 

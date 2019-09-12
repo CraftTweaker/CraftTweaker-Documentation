@@ -3,7 +3,7 @@
 Entity Interface. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
@@ -16,7 +16,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 
 | GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
-| air                      | getAir()          | int                                                         |
+| air                      | getAir()          | int型                                                        |
 | alive                    | isAlive()         | boolean                                                     |
 | alwaysRenderNameTag      |                   | boolean                                                     |
 | armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
@@ -26,7 +26,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | canPassengerSteer        |                   | boolean                                                     |
 | canRiderInteract         |                   | boolean                                                     |
 | controllingPassenger     |                   | *IEntity*                                                   |
-| customName               | getCustomName()   | String                                                      |
+| customName               | getCustomName()   | string                                                      |
 | definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
 | dimension                | getDimension()    | int                                                         |
 | doesTriggerPressurePlate |                   | boolean                                                     |
@@ -87,7 +87,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | ------------------- | ------------------- | -------------------------------------- |
 | air                 | setAir(seconds)     | int                                    |
 | alwaysRenderNameTag |                     | boolean                                |
-| customName          | setCustomName(name) | String                                 |
+| customName          | setCustomName(name) | string                                 |
 | dimension           | setDimension(id)    | int                                    |
 | fire                | setFire(seconds)    | int                                    |
 | hasNoGravity        |                     | boolean                                |

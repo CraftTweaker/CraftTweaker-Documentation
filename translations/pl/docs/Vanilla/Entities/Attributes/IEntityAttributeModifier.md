@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter | GetterMethod   | Return Type |
 | --------- | -------------- | ----------- |
-| uuid      | getUUID()      | String      |
-| name      | getName()      | String      |
+| uuid      | getUUID()      | string      |
+| name      | getName()      | string      |
 | operation | getOperation() | int         |
 | amount    | getAmount()    | double      |

@@ -7,7 +7,7 @@ This allows you to add food items to the game!
 Before you can add the item, you need to create a food item Representation which will allow you to set the properties of the item you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
@@ -24,23 +24,24 @@ The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweak
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
-    //property name: healAmount
-    //ZenGetter
-    print(item.healAmount);
-    //ZenSetter
-    item.healAmount = 16;
-    //ZenMethods
-    item.getHealAmount();
-    item.setHealAmount(64);
-    
+```zenscript
+//property name: healAmount
+//ZenGetter
+print(item.healAmount);
+//ZenSetter
+item.healAmount = 16;
+//ZenMethods
+item.getHealAmount();
+item.setHealAmount(64);
+```
 
-| Property        | Type                                                                                            | Required | Default Value | Description/Notes                                           |
-| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
-| healAmount      | int                                                                                             | Yes      |               | How many food points are restored when eaten?               |
-| alwaysEdible    | bool                                                                                            | No       | false         | Can the food still be eaten if the user's food bar is full? |
-| wolfFood        | bool                                                                                            | No       | false         | Can the food be used to tame woves?                         |
-| saturation      | float                                                                                           | No       | 0.6           | The food's Saturation Value                                 |
-| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null          | Called when the food item is eaten                          |
+| Property        | Type                                                                                            | Required | Standardwert | Description/Notes                                           |
+| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------ | ----------------------------------------------------------- |
+| healAmount      | int                                                                                             | Yes      |              | How many food points are restored when eaten?               |
+| alwaysEdible    | bool                                                                                            | No       | false        | Can the food still be eaten if the user's food bar is full? |
+| wolfFood        | bool                                                                                            | No       | false        | Can the food be used to tame woves?                         |
+| saturation      | float                                                                                           | No       | 0.6          | The food's Saturation Value                                 |
+| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null         | Called when the food item is eaten                          |
 
 ## Registering the item
 
@@ -48,4 +49,6 @@ You need to call this method to register the item in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the item or change any of it's properties!
 
-    item.register();
+```zenscript
+item.register();
+```

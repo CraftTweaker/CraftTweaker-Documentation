@@ -9,7 +9,7 @@
  - **@Optional int water**  Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
 ## Addition
-```
+```zenscript
 mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
 
 mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);

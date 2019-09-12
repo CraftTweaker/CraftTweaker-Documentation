@@ -12,15 +12,15 @@ You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
 ## Add Recipe
 
-| Required | Type     | Data Type                                                            |
+| Required | 类型       | Data Type                                                            |
 | -------- | -------- | -------------------------------------------------------------------- |
-| Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
-| Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
+| 必要       | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| 必要       | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
 | Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
 
-### Example
+### 例子
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
 
@@ -39,7 +39,7 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ### Example:
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
 mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);

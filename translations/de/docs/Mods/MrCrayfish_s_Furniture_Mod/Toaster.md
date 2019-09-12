@@ -12,7 +12,7 @@ The Toaster crips up food to start your day.
 
 ## Remove matching toaster recipes.
 
-```java
+```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
 // Remove recipes that make Toast from a Bread Slice
@@ -27,7 +27,7 @@ Add a toaster recipe.
 
 ## Only supports inputs of size 1.
 
-```java
+```zenscript
 mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
 
 // Add a recipe that makes Bread from Wheat

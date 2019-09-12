@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
 
-```java
+```zenscript
 val stone = <ticmat:stone>;
 ```
 
@@ -21,7 +21,7 @@ You can get/set the following fields:
 
 | ZenGetter         | ZenSetter         | Return/Setter Type                                                                   | Description                                                       |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| getName           |                   | String                                                                               | The Material's Name                                               |
+| getName           |                   | string                                                                               | The Material's Name                                               |
 | definition        |                   | [IMaterialDefinition](/Mods/Modtweaker/TConstruct/Materials/ITICMaterialDefinition/) | The Material's Definition                                         |
 | durabilityHead    | durabilityHead    | int                                                                                  | A Toolhead made from this material has this durability            |
 | miningSpeedHead   | miningSpeedHead   | float                                                                                | A Toolhead made from this material has this mining speed          |

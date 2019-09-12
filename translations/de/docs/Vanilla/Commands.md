@@ -1,6 +1,6 @@
 # Commands
 
-Crafttweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
 The prefix for commands are: `/crafttweaker` or `/ct`
 
@@ -24,7 +24,7 @@ Usage:
 
 `/ct biomes`
 
-Description:
+Beschreibung:
 
 Lists all of the biomes that are in the game.
 
@@ -36,7 +36,7 @@ Usage:
 
 `/ct biomeTypes`
 
-Description:
+Beschreibung:
 
 Lists all of the biomeTypes that are in the game.
 
@@ -48,7 +48,7 @@ Usage:
 
 `/ct blockinfo`
 
-Description:
+Beschreibung:
 
 Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
 
@@ -60,7 +60,7 @@ Usage:
 
 `/ct blocks`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the blocks in the game to the crafttweaker.log file.
 
@@ -72,7 +72,7 @@ Usage:
 
 `/ct bugs`
 
-Description:
+Beschreibung:
 
 Opens your browser with the GitHub bug tracker.
 
@@ -84,7 +84,7 @@ Usage:
 
 `/ct conflict`
 
-Description:
+Beschreibung:
 
 Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
 Note that this only works on a CLIENT with JEI installed!
@@ -97,7 +97,7 @@ Usage:
 
 `/ct discord`
 
-Description:
+Beschreibung:
 
 Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
 
@@ -109,7 +109,7 @@ Usage:
 
 `/ct docs`
 
-Description:
+Beschreibung:
 
 Opens your browser to this docs page (same as `/ct wiki`).
 
@@ -121,7 +121,7 @@ Usage:
 
 `/ct dumpzs`
 
-Description:
+Beschreibung:
 
 Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
 You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
@@ -138,7 +138,7 @@ Usage:
 
 `/ct entities`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the entities in the game to the crafttweaker.log file.
 
@@ -150,7 +150,7 @@ Usage:
 
 `/ct give <minecraft:bedrock>`
 
-Description:
+Beschreibung:
 
 Gives the player the item using CrT's Bracket handler syntax.  
 You can also apply tags by appending a `.withTag()` call.  
@@ -164,7 +164,7 @@ Usage:
 
 `/ct hand`
 
-Description:
+Beschreibung:
 
 Prints the name of the item in your hand to the chat.
 
@@ -178,7 +178,7 @@ Usage:
 
 `/ct inventory`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the items in your inventory to the crafttweaker.log file.
 
@@ -190,7 +190,7 @@ Usage:
 
 `/ct jeiCategories`
 
-Description:
+Beschreibung:
 
 Outputs a list of all registered jei categories to the crafttweaker.log file.  
 Requires JEI to be installed (surprise)!
@@ -203,10 +203,10 @@ Usage:
 
 `/ct json` `/ct json escaped`
 
-Description:
+Beschreibung:
 
 Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting Crafttweaker uses.  
+This format differs from the IData formatting CraftTweaker uses.  
 You can click it to be copied to your clipboard.  
 You can also privide the `escaped` argumetn to automatically escape the resulting string.
 
@@ -218,7 +218,7 @@ Usage:
 
 `/ct liquids`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the liquids in the game to the crafttweaker.log file.
 
@@ -230,7 +230,7 @@ Usage:
 
 `/ct log`
 
-Description:
+Beschreibung:
 
 Sends a clickable link to open the crafttweaker.log.
 
@@ -242,7 +242,7 @@ Usage:
 
 `/ct mods`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
 
@@ -252,9 +252,9 @@ Usage:
 
 `/crafttweaker names [category]`
 
-`/ct names [category]`
+`/ct names [kategorie]`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the items in the game to the crafttweaker.log file.  
 The `category` argument is optional and will extend the list with the according information:
@@ -285,7 +285,7 @@ Usage:
 
 `/ct nbt`
 
-Description:
+Beschreibung:
 
 Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
 
@@ -297,7 +297,7 @@ Usage:
 
 `/ct oredict <name>`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
 
@@ -311,7 +311,7 @@ Usage:
 
 `/ct potions`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the potions in the game to the crafttweaker.log file.
 
@@ -325,7 +325,7 @@ Usage:
 `/ct recipeNames`  
 `/ct recipeNames [modid]`
 
-Description:
+Beschreibung:
 
 Outputs a list of all recipe names in the game to the crafttweaker.log file.  
 A modid can be provided to filter results.
@@ -338,7 +338,7 @@ Usage:
 
 `/ct recipes`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
 
@@ -350,7 +350,7 @@ Usage:
 
 `/ct recipes hand`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
 
@@ -362,7 +362,7 @@ Usage:
 
 `/ct recipes furnace`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
 
@@ -374,7 +374,7 @@ Usage:
 
 `/ct scripts`
 
-Description:
+Beschreibung:
 
 Sends a clickable link to open the scripts directory.  
 Can also be executed from a command line which instead prints the absolute path to the directory to the log.
@@ -387,7 +387,7 @@ Usage:
 
 `/ct seeds`
 
-Description:
+Beschreibung:
 
 Outputs a list of all the items in the seed registry to the crafttweaker.log file.
 
@@ -399,7 +399,7 @@ Usage:
 
 `/ct syntax`
 
-Description:
+Beschreibung:
 
 Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
 
@@ -411,7 +411,7 @@ Usage:
 
 `/ct wiki`
 
-Description:
+Beschreibung:
 
 Opens your browser to this wiki page (same as `/ct docs`).
 
@@ -423,6 +423,6 @@ Usage:
 
 `/ct zslint`
 
-Description:
+Beschreibung:
 
 Starts the zslint socket.

@@ -3,7 +3,7 @@
 If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
 Doesn't sound that hard, does it?
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MaterialBuilder;`
@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
@@ -22,7 +22,7 @@ You can set these Properties
 
 | ZenMethod               | Parameter                                                        |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | String name                                                      |
+| setName(name)           | string name                                                      |
 | setColor(color)         | int color                                                        |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | setHasEffect(hasEffect) | boolean hasEffect                                                |
@@ -34,7 +34,7 @@ You can see in the example scripts below what this means.
 
 Before you can build your material, you need to build it:
 
-```JAVA
+```zenscript
 mBuilder.build();
 ```
 
@@ -42,7 +42,7 @@ This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) 
 
 ## Example Script
 
-```JAVA
+```zenscript
 import mods.contentTweaker.MaterialSystem;
 
 var builder = MaterialSystem.getMaterialBuilder();

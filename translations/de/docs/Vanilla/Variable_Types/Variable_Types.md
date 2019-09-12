@@ -29,7 +29,7 @@ Back to the topic: How can we fix this issue? By casting the variable test to ``
 
 Here's an (incomplete) List of most variable types
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Example                                              | Import                                    |
+| Name (Name in CT)                                   | Explanation                                                                                           | Beispiel                                             | Import                                    |
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
 | Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
 | [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |

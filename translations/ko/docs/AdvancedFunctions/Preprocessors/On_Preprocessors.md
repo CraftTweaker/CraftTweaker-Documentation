@@ -10,7 +10,7 @@
 Preprocessor는 #comment 기능으로 호출할 수 있습니다.  
 주석으로 Preprocessor 키워드를 사용하게 되는 점에 주의하셔야 합니다.
 
-```JAVA
+```zenscript
 #debug 는 내가 가장 좋아하는 단어이고, 어디에나 주석으로 사용하고 싶습니다.
 ```
 

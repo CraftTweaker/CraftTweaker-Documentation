@@ -8,7 +8,7 @@ It might be required for you to import the package if you encounter any issues (
 `import crafttweaker.entity.IEntityDefinition;`
 
 ## Calling an IEntityDefinition Object
-```
+```zenscript
 //These return an IEntityDefinition Object
 val test = <entity:minecraft:sheep>;
 val test2 = game.getEntity("sheep");
@@ -22,7 +22,7 @@ What can we do with it, now that we created that thing?
 ### id
 
 Returns the ID as string
-```
+```zenscript
 //returns "net.minecraft.entity.passive.EntitySheep"
 <entity:minecraft:sheep>.id;
 ```
@@ -30,7 +30,7 @@ Returns the ID as string
 ### name
 
 Returns the name as string
-```
+```zenscript
 //returns "Sheep"
 <entity:minecraft:sheep>.name;
 ```
@@ -38,7 +38,7 @@ Returns the name as string
 ### create entity
 The first method only creates an entity on the given location.  
 The second one also spawns it.
-```
+```zenscript
 <entity:minecraft:sheep>.createEntity(world);
 <entity:minecraft:sheep>.spawnEntity(world, blockPos);
 ```
@@ -54,7 +54,7 @@ We can even add and/or remove mob drops, isn't that great?
 ### Add normal Drop
 
 This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
-```
+```zenscript
 val entity = <entity:minecraft:sheep>;
 
 //addDrop(item,min,max,chance);
@@ -72,7 +72,7 @@ entity.addDrop(<minecraft:stone> % 20);
 ### Add playeronly drop
 
 Same as normal drops, but only if the entity was killed by a player.
-```
+```zenscript
 //addPlayerOnlyDrop(item,min,max,chance);
 entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
 
@@ -84,7 +84,7 @@ entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
 
 A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
 You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
-```
+```zenscript
 <entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
 	return <minecraft:iron_ingot> * 10;
 	});
@@ -94,7 +94,7 @@ You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
 ### Remove
 
 This removes a drop.
-```
+```zenscript
 val entity = <entity:minecraft:sheep>;
 
 //removeDrop(item);
@@ -105,7 +105,7 @@ entity.removeDrop(<minecraft:wool>);
 ### Clear Drops
 
 This removes all drops.
-```
+```zenscript
 val entity = <entity:minecraft:sheep>;
 
 //clearDrops
@@ -115,7 +115,7 @@ entity.clearDrops();
 ### Get
 
 This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/Entities/IEntityDrop/) Objects.
-```
+```zenscript
 val entity = <entity:minecraft:sheep>;
 
 //getDrops();

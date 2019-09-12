@@ -13,7 +13,7 @@ It might be required for you to import the package if you encounter any issues (
 | ----------- | ----------- | ----------------------------------------------------------------------- |
 | definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
 | level       |             | int                                                                     |
-| displayName | displayName | String                                                                  |
+| displayName | displayName | string                                                                  |
 
 ## ZenMethods
 

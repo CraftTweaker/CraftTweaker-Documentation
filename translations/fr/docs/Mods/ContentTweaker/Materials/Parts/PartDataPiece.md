@@ -13,7 +13,7 @@ You can get a List of a [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) Data
 
 Alternatively, you can register a new PartDataPiece using the [MaterialSystem](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 mods.contenttweaker.MaterialSystem.createPartDataPiece(String name, boolean required)
 ```
 
@@ -28,5 +28,5 @@ You can retrieve the following information from a PartType:
 
 | ZenMethod    | Return Type |
 | ------------ | ----------- |
-| getName()    | String      |
-| isRequired() | String      |
+| getName()    | string      |
+| isRequired() | string      |

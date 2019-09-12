@@ -9,7 +9,7 @@
 
 ## Addition
 
-```
+```zenscript
 mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
 
 mods.ic2.Extractor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);

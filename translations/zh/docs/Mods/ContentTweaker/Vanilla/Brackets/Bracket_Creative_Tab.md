@@ -6,9 +6,10 @@ Creative Tabs are referenced in the creative tabs handler this way:
 
 Vanilla
 
-    <creativetab:name>
-    
-    <creativetab:misc>
-    
+```zenscript
+<creativetab:name>
+
+<creativetab:misc>
+```
 
 If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.

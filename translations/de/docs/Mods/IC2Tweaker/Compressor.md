@@ -4,17 +4,18 @@
 
 `import mods.ic2.Compressor;`
 
-## Methods
+## Methoden
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
 ## Addition
 
-    mods.ic2.Compressor.addRecipe(IItemStack output, IIngredient input);
-    
-    mods.ic2.Compressor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
-    
+```zenscript
+mods.ic2.Compressor.addRecipe(IItemStack output, IIngredient input);
+
+mods.ic2.Compressor.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
+```
 
 ## Removal
 

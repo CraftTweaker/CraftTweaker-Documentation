@@ -2,14 +2,14 @@
 
 The IGame Class is used to obtain general game information. Can be accessed using `game`
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.game.IGame;`
 
-## Zengetters
+## ZenGetter
 
-| Zengetter | What does it do?                        | Return Type                                                     | Usage           |
+| ZenGetter | What does it do?                        | Rückgabetyp                                                     | Usage           |
 | --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
 | biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
 | blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
@@ -18,7 +18,7 @@ It might be required for you to import the package if you encounter any issues (
 | liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
 | potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
 
-## Methods
+## Methoden
 
 ### GetEntity
 

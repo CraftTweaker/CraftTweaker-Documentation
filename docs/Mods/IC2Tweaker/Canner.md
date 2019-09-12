@@ -10,7 +10,7 @@
 
 ## Add Bottle Recipe
 
-```
+```zenscript
 mods.ic2.Canner.addBottleRecipe(IItemStack output, IIngredient container, IIngredient filler);
 
 mods.ic2.Canner.addBottleRecipe(<minecraft:water_bucket>, <minecraft:bucket>, <minecraft:ice>);
@@ -19,7 +19,8 @@ mods.ic2.Canner.addBottleRecipe(<minecraft:water_bucket>, <minecraft:bucket>, <m
 
 ## Add Enrich Recipe
 
-```
+```zenscript
 mods.ic2.Canner.addEnrichRecipe(ILiquidStack output, ILiquidStack input, IIngredient additive);
 
-mods.ic2.Canner.addEnrichRecipe(<liquid:lava> * 1000, <liquid:water> * 1000, <minecraft:redstone>);```
+mods.ic2.Canner.addEnrichRecipe(<liquid:lava> * 1000, <liquid:water> * 1000, <minecraft:redstone>);
+```

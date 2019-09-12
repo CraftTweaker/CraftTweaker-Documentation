@@ -1,19 +1,23 @@
 # Bioreactor
 
-### Importing
+### 导入
 
-    import mods.industrialforegoing.BioReactor;
-    
+```zenscript
+import mods.industrialforegoing.BioReactor;
+```
 
-### Adding
+### 添加配方
 
-    BioReactor.add(IItemStack input);
-    
-    BioReactor.add(<minecraft:diamond>);
-    
+```zenscript
+BioReactor.add(IItemStack input);
 
-### Removing
+BioReactor.add(<minecraft:diamond>);
+```
 
-    BioReactor.remove(IItemStack input);
-    
-    BioReactor.remove(<minecraft:diamond>);
+### 移除配方
+
+```zenscript
+BioReactor.remove(IItemStack input);
+
+BioReactor.remove(<minecraft:diamond>);
+```

@@ -19,6 +19,6 @@ nor|[reskillable:mining|5]~[reskillable:gathering|5]
 
 ## Use-Case
 Only allow using a wooden shovel until the player gets mining or gathering level 5: 
-```
+```zenscript
 addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");
 ```

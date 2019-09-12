@@ -4,7 +4,7 @@ The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ent
 
 Entities are referenced in the Entity handler this way:
 
-```
+```zenscript
 <entity:modID:entityName>
 
 <entity:minecraft:sheep>

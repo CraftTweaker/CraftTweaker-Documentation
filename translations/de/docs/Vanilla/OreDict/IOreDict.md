@@ -3,7 +3,7 @@
 The Forge OreDictionary is like a huge Lexicon in the way that it features many different entries and each entry is described by fitting Items.  
 When talking about ore Dictionarys, people mostly refer to [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) not the whole ore Dictionary.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDict;`
@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 You can retrieve the OreDictionary using the [`oreDict` global keyword](/Vanilla/Global_Functions/).
 
-## Methods
+## Methoden
 
 So what can be done with the oreDict?
 
@@ -21,7 +21,7 @@ So what can be done with the oreDict?
 You can use either of the three ways below to refer to an OreDictEntry, no matter if it already exists or not.  
 If the oreDictEntry does not yet exist, it will be created.
 
-```java
+```zenscript
 oreDict.ingotIron;
 oreDict.get("ingotIron");
 oreDict["ingotIron"];
@@ -29,7 +29,7 @@ oreDict["ingotIron"];
 
 ### Iterating through all registered [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
 
-```java
+```zenscript
 //the entries member is for retrieving all registered oreDictionary entries!
 val allEntries = oreDict.entries;
 

@@ -1,10 +1,10 @@
 # Mortars
 
-## Importing The Package
+## Dieses Paket importieren
 
 You can call the Mortar package using `mods.advancedmortars.Mortar`.
 
-## Add Recipe
+## Rezept hinzufügen
 
 <table>
   <tr>
@@ -13,7 +13,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </th>
     
     <th>
-      Data Type
+      Datentyp
     </th>
     
     <th>
@@ -78,9 +78,9 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### Beispiel
 
-```JAVA
+```zenscript
 ///// "Crushing"
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <minecraft:dye:15> * 4, 8, [<minecraft:bone>]);
 mods.advancedmortars.Mortar.addRecipe(["wood", "stone", "iron", "diamond"], <plants2:generic:4> * 2, 8, [<botania:flower>]);

@@ -14,7 +14,7 @@ You can add a function that represents the event and from there on you can decid
 The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
 If you simply want to print something where you don't need to access the event, then it's fine.
 
-```
+```zenscript
 events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
     print("event".length);
 	print(event.player.name);
@@ -81,6 +81,6 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 
 
 ## Clear all event handlers
-```
+```zenscript
 events.clear();
 ```

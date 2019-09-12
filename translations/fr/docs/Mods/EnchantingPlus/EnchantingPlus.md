@@ -6,7 +6,7 @@ The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus)
 
 Prevents a specific item from entering the advanced enchanting table.
 
-```java
+```zenscript
 // mods.eplus.Eplus.blacklistItem(IItemStack item);
 mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
@@ -15,7 +15,7 @@ mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 
 Prevents a specific enchantment from being applied at the advanced enchanting table.
 
-```java
+```zenscript
 // mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
 mods.eplus.Eplus.blacklistEnchantment(<enchantment:minecraft:protection>);
 ```

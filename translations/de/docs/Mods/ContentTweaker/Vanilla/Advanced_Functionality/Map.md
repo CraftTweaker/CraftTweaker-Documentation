@@ -2,7 +2,7 @@
 
 The Map Package allows you to set a waypoint using BASE's waypoint event handler.
 
-## Importing the package
+## Dieses Paket importieren
 
 You can import the package so that you don't have to retype it everytime.
 

@@ -4,7 +4,7 @@ This class is the main handler for creating new [Stages](/Mods/GameStages/ZenSta
 
 You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
-## Importing the package
+## Импорт пакета
 
 ZenStager : `import mods.zenstages.ZenStager;`
 
@@ -16,7 +16,7 @@ Stage *(Recommended to import also)* : `import mods.zenstages.Stage;`
 
 Create and returns new [Stage](/Mods/GameStages/ZenStages/Stage/)
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.initStage(string stageName);
 var TestStage = ZenStager.initStage("test");
 ```
@@ -25,7 +25,7 @@ When you have created your Stage you should then create a static/global file whi
 
 **Note: Do not have the `initStage` and the `static` creation in the same script. Due to limitations and other issues, the `initStage` will be called each time you reference a static member. So keep the init and the static creation separate**
 
-```java
+```zenscript
 import mods.zenstages.ZenStager;
 
 static TestStage = ZenStager.getStage("test"); // The name being the one you just created.
@@ -35,21 +35,21 @@ static TestStage = ZenStager.getStage("test"); // The name being the one you jus
 
 Get a [Stage](/Mods/GameStages/ZenStages/Stage/) *(Returns null if not found)*
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getStage(string stageName);
 var TestStageGet = ZenStager.getStage("test");
 ```
 
 Get a map of the [Stages](/Mods/GameStages/ZenStages/Stage/) which are created.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getStageMap();
 var StageMap as Stage[string] = ZenStager.getStageMap();
 ```
 
 Get a map of the staged liquids.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getStagedLiquids();
 var LiquidMap as ILiquidStack[][string] = ZenStager.getStagedLiquids();
 ```
@@ -58,70 +58,70 @@ var LiquidMap as ILiquidStack[][string] = ZenStager.getStagedLiquids();
 
 Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.addPackage(string packageName, Stage[] stages);
 ZenStager.addPackage("appeng", [TestStage]);
 ```
 
 Add a package name. This requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed. This follows the same logic as [here](/Mods/GameStages/RecipeStages/RecipeStages/).
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.addContainer(string packageName, Stage[] stages);
 ZenStager.addContainer("my.awesome.container", [TestStage]);
 ```
 
 Get the ingredient stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getIngredientStage(IIngredient ingredient);
 var StickStage as Stage = ZenStager.getIngredientStage(<minecraft:stick>);
 ```
 
 Get the liquid stack stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getLiquidStage(ILiquidStack liquidStack);
 var StickStage as Stage = ZenStager.getLiquidStage(<liquid:water>);
 ```
 
 Get the recipe name stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getRecipeNameStage(string recipeName);
 var RecipeNameStage as Stage = ZenStager.getRecipeNameStage("minecraft:boat");
 ```
 
 Get the container stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getContainerStages(string containerName);
 var ContainerStage as Stage = ZenStager.getContainerStages("my.awesome.container");
 ```
 
 Get the package stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [RecipeStages](/Mods/GameStages/RecipeStages/RecipeStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getPackageStages(string packageName);
 var PackageStage as Stage = ZenStager.getPackageStages("appeng");
 ```
 
 Get the dimension stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [DimStages](/Mods/GameStages/DimensionStages/DimensionStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getDimensionStage(int dimId);
 var DimStage as Stage = ZenStager.getDimensionStage(-1);
 ```
 
 Get the mob stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [MobStages](/Mods/GameStages/MobStages/MobStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getMobStage(string mobName);
 var MobStage as Stage = ZenStager.getMobStage("minecraft:skeleton");
 ```
 
 Get the TiC Material stage, if staged it will return the [Stage](/Mods/GameStages/ZenStages/Stage/) or null if not found. Requires [TinkerStages](/Mods/GameStages/TinkerStages/TinkerStages/) to be installed.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.getTiCMaterialStage(string material);
 var MobStage as Stage = ZenStager.getTiCMaterialStage("bronze");
 ```
@@ -141,7 +141,7 @@ Supported Types:
 - recipename
 - tinker
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.isStaged(string type, string value);
 // mods.zenstages.ZenStager.isStaged(string type, int value);
 // mods.zenstages.ZenStager.isStaged(string type, IIngredient value);
@@ -158,7 +158,7 @@ ZenStager.isStaged("dimension", -1);
 
 Calling this method will make the mod check over the [Stages](/Mods/GameStages/ZenStages/Stage/) you have created and what's staged. To see if you have mistakenly *staged* something more than once. If any are found they are logged to the `crafttweaker.log` file. Telling you what is duplicated staged and what stages it is in. This is an ideal method/tool to use before releasing updates to a modpack or just general development of a modpack.
 
-```java
+```zenscript
 // mods.zenstages.ZenStager.checkConflicts();
 ZenStager.checkConflicts();
 ```
@@ -167,7 +167,7 @@ ZenStager.checkConflicts();
 
 This is **important** to call after you have completed adding entries to your stages. This calls upon all the mods to actually stage said entries. Failing to run this method will result in nothing being staged!
 
-```java
+```zenscript
 // mods.zenstager.ZenStager.buildAll();
 ZenStager.buildAll();
 ```

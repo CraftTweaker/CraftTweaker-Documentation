@@ -12,14 +12,14 @@ The `syphon` value is the amount of Life Essence to syphon from the Blood Altar 
 The `consumeRate` is how quickly the Life Essence is syphoned.  
 The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
 
-```
+```zenscript
 //mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
 mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
 ## Removal
 
-```
+```zenscript
 //mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 ```

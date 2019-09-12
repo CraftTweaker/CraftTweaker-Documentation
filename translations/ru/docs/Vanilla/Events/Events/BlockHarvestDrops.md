@@ -1,25 +1,25 @@
 # BlockHarvestDropsEvent
 
-The BlockHarvestDrops Event is fired whenever a block is about to drop its items.  
-You can modify the block list as well as the overall drop chance. Set latter to 1 if you do all chance handling beforehand.
+Событие BlockHarvestDropsEvent вызывается, когда блок собирается выбросить свои предметы.  
+Вы можете поменять список блоков или поменять шансы дропа. Set latter to 1 if you do all chance handling beforehand.
 
-## Event Class
+## Класс события
 
-You will need to cast the event in the function header as this class:  
+Вам потребуется привести тип события в заголовке функции к этому классу  
 `crafttweaker.event.BlockHarvestDropsEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+И, конечно, вы можете [импортировать](/AdvancedFunctions/Import/) класс перед использованием.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-BlockHarvestDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockHarvestDropsEvent реализует следующие интерфейсы и способно вызвать все их методы/геттеры/сеттеры:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
-## ZenGetters
+## Геттеры ZenScript
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter      | ZenSetter    | Type                                             |
+| Геттер         | Сеттер       | Тип                                              |
 | -------------- | ------------ | ------------------------------------------------ |
 | `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
 | `isPlayer`     |              | bool                                             |
@@ -28,9 +28,9 @@ The following information can be retrieved from the event:
 | `drops`        | `drops`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
 | `dropChance`   | `dropChance` | float                                            |
 
-## Adding an item to the list
+## Добавление предмета в список
 
-You can either addAssign the list or use the method to add an item to the list:
+Вы можете либо использовать оператор `+=`, либо использовать метод, чтобы добавить предмет в список:
 
     event.drops += <minecraft:coal>;
     event.addItem(<minecraft:coal>);

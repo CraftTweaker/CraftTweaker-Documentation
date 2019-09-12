@@ -2,7 +2,7 @@
 
 An IEntityDropFunction is called whenever the associated entity is killed. Leave it up to your imagination what you can do with this:
 
-## Importing the pacakge
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityDropFunction;`

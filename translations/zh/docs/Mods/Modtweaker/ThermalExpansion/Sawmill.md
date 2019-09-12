@@ -1,18 +1,21 @@
 # Sawmill
 
-## Package
+## 所属包名
 
 `mods.thermalexpansion.Sawmill`
 
-## Addition
+## 添加配方
 
-    mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
-    
-    mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
-    
+```zenscript
+mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-## Removal
+mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
+```
 
-    mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
-    
-    mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
+## 删除配方
+
+```zenscript
+mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
+
+mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
+```

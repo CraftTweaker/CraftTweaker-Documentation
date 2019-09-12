@@ -3,7 +3,7 @@
 If you want to build a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), you will need a Part Builder!  
 Doesn't sound that hard, does it?
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.PartBuilder;`
@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
-```JAVA
+```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 ```
 
@@ -23,10 +23,10 @@ You can set these Properties
 | ZenMethod                           | Parameter                                                           |
 | ----------------------------------- | ------------------------------------------------------------------- |
 | setHasOverlay(hasOverlay)           | boolean hasOverlay                                                  |
-| setName(name)                       | String name                                                         |
+| setName(name)                       | string name                                                         |
 | setPartType(partType)               | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/) partType |
-| setOreDictName(prefix)              | String prefix                                                       |
-| setAdditionalOreDictNames(prefixes) | String... prefixes                                                  |
+| setOreDictName(prefix)              | string prefix                                                       |
+| setAdditionalOreDictNames(prefixes) | string... prefixes                                                  |
 
 All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
 You can see in the example scripts below what this means.
@@ -35,7 +35,7 @@ You can see in the example scripts below what this means.
 
 Before you can build your material, you need to build it:
 
-```JAVA
+```zenscript
 pBuilder.build();
 ```
 
@@ -43,7 +43,7 @@ This returns an [Part](/Mods/ContentTweaker/Materials/Parts/Part/) Object.
 
 ## Example Script
 
-```JAVA
+```zenscript
 var pBuilder = mods.contenttweaker.MaterialSystem.getPartBuilder();
 pBuilder.setName("dense_gear");
 pBuilder.setPartType(MaterialSystem.getPartType("item"));

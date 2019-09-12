@@ -1,16 +1,16 @@
 # Anvil
 
-## Package
+## 所属包名
 
 `mods.rockycore.Anvil`
 
-## Addition
+## 添加配方
 
 ### Single
 
 Creates individual anvil recipes that a displayed separately in JEI.
 
-```java
+```zenscript
 // addRecipe(IItemstack input1, IItemstack input2, IItemstack output, int exp-cost);
 mods.rockycore.Anvil.addRecipe(<minecraft:book>, <minecraft:quartz> * 8, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 16 as short}]}), 5);
 ```
@@ -19,7 +19,7 @@ mods.rockycore.Anvil.addRecipe(<minecraft:book>, <minecraft:quartz> * 8, <minecr
 
 Creates multiple anvil recipes that JEI cycles through the possible options.
 
-```java
+```zenscript
 // addRecipe(IItemstack input1, IItemstack[] input2, IItemstack[] output, int[] exp-cost);
 mods.rockycore.Anvil.addRecipe(<minecraft:book>,
   [
@@ -40,11 +40,11 @@ mods.rockycore.Anvil.addRecipe(<minecraft:book>,
 );
 ```
 
-## Removal
+## 删除配方
 
 The anvil does not use recipes in the normal sense but you are still able to remove/blacklist specific inputs or outputs.
 
-```java
+```zenscript
 // remove(IIngredient[] inputs)
 // remove(IIngredient output) - Remove an output
 

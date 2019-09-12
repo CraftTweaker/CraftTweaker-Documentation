@@ -19,7 +19,7 @@ The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
 
 
 ## Example
-```JAVA
+```zenscript
 zsItem.onItemUseFinish = function(stack, world, player) {
     stack.damage(1, player);
     return stack;

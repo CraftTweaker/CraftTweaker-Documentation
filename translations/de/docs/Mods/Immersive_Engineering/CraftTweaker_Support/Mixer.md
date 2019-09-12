@@ -2,37 +2,37 @@
 
 The Mixer package can be used to add/remove recipes to/from the Immersive Engineering Mixer.
 
-## Calling The Package
+## Hinzufügen des Packages
 
 You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
-## Add Recipe
+## Rezept hinzufügen
 
-| Required | Type         | Data Type                                                    |
+| Benötigt | Type         | Datentyp                                                     |
 | -------- | ------------ | ------------------------------------------------------------ |
-| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
-| Required | Energy       | Integer                                                      |
+| Benötigt | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Benötigt | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Benötigt | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
+| Benötigt | Energy       | Integer                                                      |
 
-### Example
+### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Mixer.addRecipe(ILiquidStack output, ILiquidStack fluidInput, IIngredient[] itemInputs, int energy);
 
 mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:logWood>, <minecraft:dirt>], 2048);
 ```
 
-## Remove Recipe
+## Rezept entfernen
 
-| Type   | Data Type                                    |
+| Type   | Datentyp                                     |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Beispiel
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Mixer.removeRecipe(ILiquidStack output);
 

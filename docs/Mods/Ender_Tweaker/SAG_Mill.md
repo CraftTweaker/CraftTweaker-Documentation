@@ -11,13 +11,13 @@
 - **float xp** The xp is granted from this recipe. May not be negative.
 
 ## Addition
-```
+```zenscript
 mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
 
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 ## Removal
-```
+```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);
 
 mods.enderio.SagMill.removeRecipe(<minecraft:cobblestone>);

@@ -19,6 +19,8 @@ The function doesn't have a return value!
 
 ## Example
 
-    zsBlock.onBlockBreak = function(world, blockPos, blockState){
-        print("I WAS PLACED!!!");
-    }
+```zenscript
+zsBlock.onBlockBreak = function(world, blockPos, blockState){
+    print("I WAS PLACED!!!");
+}
+```

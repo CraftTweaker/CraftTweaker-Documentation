@@ -4,7 +4,7 @@
 
 ## 例
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 
 var planks = <ore:plankWood>;

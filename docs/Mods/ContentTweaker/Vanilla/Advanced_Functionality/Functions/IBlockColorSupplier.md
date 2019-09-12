@@ -17,7 +17,7 @@ The IBlockColorSupplier Function is a function with following parameters.
 The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
 ## Examples
-```
+```zenscript
 #loader contenttweaker
 
 import mods.contenttweaker.IBlockColorSupplier;

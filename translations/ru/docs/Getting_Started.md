@@ -1,6 +1,6 @@
 # Начало работы со скриптами
 
-Crafttweaker использует собственный скриптовый язык, который называется `ZenScript`, ZenScript читается из файлов `.zs`, которые хранятся в папке `<gamedir>/scripts`.
+CraftTweaker использует собственный скриптовый язык, который называется `ZenScript`, ZenScript читается из файлов `.zs`, которые хранятся в папке `<папка игры>/scripts`.
 
 ZenScript — язык сценариев «сверху вниз». Это значит, что `операторы импорта` должны быть сверху файла, `объявления переменных` должны быть недалеко от верха файла, впрочем, ограничения на это нет. `Переменная` может быть объявлена где угодно в скрипте, а доступа к ней не будет выше, чем объявлена.
 
@@ -12,7 +12,7 @@ ZenScript — язык сценариев «сверху вниз». Это зн
 
 ## Скрипты
 
-Скрипты содержатся в `<minecraftdir>/scripts` и загружаются в фазе `пре-инициализации` Minecraft. В отличие от предыдущих версий Crafttweaker, скрипты не могут быть перезагружены из-за изменений, сделанных Mojang в 1.12. Возможности обойти их нет. Кроме того, скрипты должны быть **ОДНОВРЕМЕННО и на сервере, и на клиенте**, чтобы работать.
+Скрипты находятся в папке `<папка Minecraft>/scripts` и они загружаются во время фазы `пре-инициализации` Minecraft, в отличие от предыдущих версий CraftTweaker, скрипты не могут быть перезагружены из-за изменений, сделанных Mojang в 1.12, и нет способов это обойти. Кроме того, скрипты должны быть **ОДНОВРЕМЕННО и на сервере, и на клиенте**, чтобы работать.
 
 Файлы скриптов используют расширение `.zs` и могут быть сжаты в `.zip`, сохраняя возможность чтения.
 
@@ -22,8 +22,9 @@ ZenScript — язык сценариев «сверху вниз». Это зн
 
 В `hello.zs` вставьте следующую строку
 
-    print("Привет, мир!");
-    
+```zenscript
+print("Привет, мир!");
+```
 
 Теперь загрузите Minecraft и обратите внимание на файл `crafttweaker.log`.
 
@@ -31,7 +32,7 @@ The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by an
 
 It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
 
-### The crafttweaker.log file
+### Файл crafttweaker.log
 
 The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
 
@@ -45,7 +46,7 @@ Using the example above, the output would be:
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
 
-### Comments
+### Комментарии
 
 Comments can be used to make your script files more readable and easier to understand!
 
@@ -55,8 +56,7 @@ Single line: `// I'm a single line comment!`
 
 Alternate Single Line: `# I'm also a single line comment!`
 
-Multiline:
+Многострочный:
 
-    /* I'm 
-    a
-    multiline comment! */
+    /* Я
+    многострочный комментарий! */

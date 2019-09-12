@@ -5,7 +5,7 @@
 
 ## Addition
 
-```
+```zenscript
 mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time);
 mods.actuallyadditions.Empowerer.addRecipe(IItemStack output, IItemStack input, IItemStack modifier1, IItemStack modifier2, IItemStack modifier3, IItemStack modifier4, int energyPerStand, int time, float[] particleColourArray);
 
@@ -15,7 +15,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:ir
 
 ## Removal
 
-```
+```zenscript
 //mods.actuallyadditions.Empowerer.removeRecipe(IItemStack output);
 mods.actuallyadditions.Empowerer.removeRecipe(<actuallyadditions:item_crystal_empowered:5>);
 ```

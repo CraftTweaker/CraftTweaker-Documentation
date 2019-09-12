@@ -12,9 +12,10 @@ Before we start, there are some terms you might want to get used to:
 A ZenGetter is a way of retrieving information from a certain object. For example [IItemStack](/Vanilla/Items/IItemStack/) has a ZenGetter called "displayName".  
 We use the ZenGetter like this:
 
-    //object.zenGetter;
-    <minecraft:iron_ingot>.displayName;
-    
+```zenscript
+//object.zenGetter;
+<minecraft:iron_ingot>.displayName;
+```
 
 A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
 
@@ -25,9 +26,10 @@ Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has 
 
 We use the ZenSetter like this:
 
-    //object.zenSetter = newValue;
-    <minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
-    
+```zenscript
+//object.zenSetter = newValue;
+<minecraft:iron_ingot>.displayName = "Unsuspecting Ingot";
+```
 
 A ZenSetter will never return something, since it is meant to set, not to get.
 
@@ -38,9 +40,11 @@ If an item has both, a ZenGetter and a ZenSetter with the same name (e.g. [IItem
 Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
 Let's see what they do:
 
-    //Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
-    //object.zenSetter += value;
-    //object.zenSetter = object.zenGetter + value;
-    
-    <minecraft:iron_ingot>.displayName += " of Doom";
-    <minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```zenscript
+//Since we have a ZenGetter and a ZenSetter with the same name, the first does the same as the second:
+//object.zenSetter += value;
+//object.zenSetter = object.zenGetter + value;
+
+<minecraft:iron_ingot>.displayName += " of Doom";
+<minecraft:iron_ingot>.displayName = <minecraft:iron_ingot>.displayName + " of Doom";
+```

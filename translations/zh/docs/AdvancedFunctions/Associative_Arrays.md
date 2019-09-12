@@ -6,7 +6,7 @@
 
 使用大括号 ` {} ` 和冒号 `: ` 来声明关联数组
 
-```JAVA
+```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
@@ -37,7 +37,7 @@ val myAssocArray = {
 `  
 唯一不同之处在于，现在不必通过整数序号来访问数组，而是通过你之前预先声明的索引来访问！
 
-```JAVA
+```zenscript
 <br />val dirt = &lt;minecraft:dirt&gt;;
 val assocArray = {
     &lt;minecraft:dirt&gt; : "这是我"
@@ -53,7 +53,7 @@ print(assocArray[dirt]);
 有一种特殊情况，当索引为字符串的时：  
 使用memberGetter方法（见下）就可以直接引用项：
 
-```JAVA
+```zenscript
 val assocWithStrings = {
     //你可以使用 ""
     "one" : "1",
@@ -75,7 +75,7 @@ print(assocWithStrings["two"]);
 但有一个主要的区别：   
 数组有固定长度，但索引没有。 这意味着你随时可以通过向数组中添加先前并不包含的索引来添加新的项！
 
-```JAVA
+```zenscript
 val changingArray = {
     <minecraft:dirt> : "这是我",
     <minecraft:gold_ingot> : "我讨厌它"
@@ -96,7 +96,7 @@ changingArray[<minecraft:grass>] = "能量！";
 项集（valueSet）是一个包含了所有映射的项的数组。  
 条目集（entrySet）是一个包含了所有映射条目的数组（见下）。
 
-```JAVA
+```zenscript
 myAssocArray.keySet   //键集
 myAssocArray.keys     //键集
 myAssocArray.values   //项集
@@ -118,7 +118,7 @@ myAssocArray.entrySet //条目集
 - 我们将使用如下所示的键迭代器: ` for key in assocArray {代码;}`
 - 我们也可以使用如下所示的键-值迭代器: ` for key, value in assocArray {代码;}`
 
-```JAVA
+```zenscript
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
@@ -149,7 +149,7 @@ for key, value in recipeMapShaped {
 
 你可以使用 getters 来具体获取其中的 `键` 和 `值`
 
-```kotlin
+```zenscript
 //从已有的映射/关联数组获取映射条目
 val myEntry = map.entrySet[0];
 

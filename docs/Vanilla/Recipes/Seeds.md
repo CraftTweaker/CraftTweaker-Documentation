@@ -19,14 +19,14 @@ pre-1.12
 Adds `item` as seed drop.  
 **Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
 
-```
+```zenscript
 vanilla.seeds.addSeed(item);
 ```
 
 `item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/).
 What does that mean? It simply means that you need to give it a percentage like this:
 
-```
+```zenscript
 //adds carrots with a weight of 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
@@ -35,7 +35,7 @@ vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ## Remove a seed drop
 
 Stops `item` from being a seed drop.
-```
+```zenscript
 vanilla.seeds.removeSeed(item);
 ```
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
@@ -45,7 +45,7 @@ vanilla.seeds.removeSeed(item);
 ## Retrieve all registered Seeds
 
 Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
-```
+```zenscript
 val seedList = vanilla.seeds.seeds;
 
 for item in seedList {

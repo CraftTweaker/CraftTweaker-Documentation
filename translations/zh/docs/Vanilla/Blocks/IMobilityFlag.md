@@ -14,15 +14,18 @@ IMobilityFlag 接口允许你获取一个 [IBlockState](/Vanilla/Blocks/IBlockSt
 你可以这样检查两个 IMobilityFlag 对象是否相等。  
 返回一个 bool 值。
 
-    flagOne.matches(other);
-    
+```zenscript
+flagOne.matches(other);
+```
 
 ## 枚举
 
 MobilityFlag 接口有 5 个静态方法，每个静态方法都会返回一个给定的 IMobilityFlag 对象。
 
-    crafttweaker.block.MobilityFlag.normal()
-    crafttweaker.block.MobilityFlag.destroy()
-    crafttweaker.block.MobilityFlag.block()
-    crafttweaker.block.MobilityFlag.ignore()
-    crafttweaker.block.MobilityFlag.pushOnly()
+```zenscript
+crafttweaker.block.MobilityFlag.normal()
+crafttweaker.block.MobilityFlag.destroy()
+crafttweaker.block.MobilityFlag.block()
+crafttweaker.block.MobilityFlag.ignore()
+crafttweaker.block.MobilityFlag.pushOnly()
+```

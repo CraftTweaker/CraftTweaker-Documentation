@@ -2,12 +2,12 @@
 
 The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
-## Importing the package
+## Dieses Paket importieren
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
+## Methoden
 
 So, what can we do with it?
 
@@ -39,7 +39,7 @@ Be careful with Zensetters though, they only alter the fluid registry and have n
     definition.luminosity = 0;
     
 
-| Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
+| ZenGetter   | ZenSetter   | What is this?                                            | Return/Set Type |
 | ----------- | ----------- | -------------------------------------------------------- | --------------- |
 | name        |             | This returns the unlocalized liquid name                 | string          |
 | displayName |             | This returns the localized liquid name                   | string          |

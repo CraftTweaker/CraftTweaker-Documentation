@@ -18,16 +18,18 @@ The IBlockColorSupplier Function is a function with following parameters.
 
 ## Examples
 
-    #loader contenttweaker
-    
-    import mods.contenttweaker.IBlockColorSupplier;
-    import mods.contenttweaker.BlockState;
-    import mods.contenttweaker.BlockPos;
-    import mods.contenttweaker.Color;
-    
-    import crafttweaker.world.IBlockAccess;
-    
-    function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
-      //Returns a lime color
-        return Color.fromInt(0x00FF00);
-    }
+```zenscript
+#loader contenttweaker
+
+import mods.contenttweaker.IBlockColorSupplier;
+import mods.contenttweaker.BlockState;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.Color;
+
+import crafttweaker.world.IBlockAccess;
+
+function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
+  //Returns a lime color
+    return Color.fromInt(0x00FF00);
+}
+```

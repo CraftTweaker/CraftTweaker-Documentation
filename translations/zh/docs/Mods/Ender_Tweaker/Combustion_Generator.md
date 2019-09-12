@@ -1,6 +1,6 @@
 # Combustion Generator
 
-## Package
+## 所属包名
 
 `import mods.enderio.CombustionGen;`
 
@@ -14,27 +14,32 @@
 
 ## Add Fuel
 
-    mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
-    
-    mods.enderio.CombustionGen.addFuel(<liquid:lava>, 25, 40);
-    
+```zenscript
+mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
+
+mods.enderio.CombustionGen.addFuel(<liquid:lava>, 25, 40);
+```
 
 ## Add Coolant
 
-    mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB);
-    
-    mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
-    
+```zenscript
+mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesCoolingPerMB);
+
+mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
+```
 
 ## Remove Fuel
 
-    mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
-    
-    mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
-    
+```zenscript
+mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
+
+mods.enderio.CombustionGen.removeFuel(<liquid:fire_water>);
+```
 
 ## Remove Coolant
 
-    mods.enderio.AlloySmelter.removeCoolant(ILiquidStack coolant);
-    
-    mods.enderio.AlloySmelter.removeCoolant(<liquid:water>);
+```zenscript
+mods.enderio.AlloySmelter.removeCoolant(ILiquidStack coolant);
+
+mods.enderio.AlloySmelter.removeCoolant(<liquid:water>);
+```

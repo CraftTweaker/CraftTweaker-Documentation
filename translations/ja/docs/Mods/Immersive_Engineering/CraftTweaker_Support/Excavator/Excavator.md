@@ -8,17 +8,17 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 | Required | Type                | Data Type |
 | -------- | ------------------- | --------- |
-| Required | Name                | String    |
-| Required | Mineral Weight      | Integer   |
-| Required | Fail Chance         | Double    |
-| Required | Ores                | String[]  |
-| Required | Chances             | Double[]  |
-| Optional | Dimension Whitelist | Integer[] |
-| Optional | Blacklist           | Boolean   |
+| Required | Name                | string    |
+| Required | Mineral Weight      | int型      |
+| Required | Fail Chance         | double    |
+| Required | Ores                | string[]  |
+| Required | Chances             | double[]  |
+| Optional | Dimension Whitelist | int []    |
+| Optional | Blacklist           | boolean   |
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.addMineral(String name, int mineralWeight, double failChance, String[] ores, double[] chances, @Optional int[] dimensionWhitelist, @Optional boolean blacklist);
 
@@ -35,7 +35,7 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["minecraf
 
 ### Example
 
-```JAVA
+```zenscript
 //Example:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 

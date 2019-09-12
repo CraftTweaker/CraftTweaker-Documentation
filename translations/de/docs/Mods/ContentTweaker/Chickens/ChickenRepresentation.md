@@ -4,12 +4,13 @@ The ChickenRepresentation is a template of what your Chicken will do.
 By default, it will only exist and lay the egg you gave it as initial parameter.  
 You can change this behavior to allow for better chickens by modifying the given properties.
 
-## Importing the class
+## Diese Klasse importieren
 
 Want to import the class? Here you go:
 
-    import mods.contenttweaker.Chicken;
-    
+```zenscript
+import mods.contenttweaker.Chicken;
+```
 
 ## Registering the chicken
 
@@ -20,13 +21,14 @@ Be careful though, as any changes done to this template after the the registerin
 
 You can change or get the current value of the properties either by `object.name = newValue` or by using the methods `object.setName(newValue);`
 
-Example:
+Beispiel:
 
-    chickenRep.layItem = <minecraft:iron_ingot>;
-    print(chickenRep.layItem.displayName);
-    chickenRep.setLayItem(<minecraft:gold_ingot>);
-    print(chickenRep.getLayItem().displayName);
-    
+```zenscript
+chickenRep.layItem = <minecraft:iron_ingot>;
+print(chickenRep.layItem.displayName);
+chickenRep.setLayItem(<minecraft:gold_ingot>);
+print(chickenRep.getLayItem().displayName);
+```
 
 | name            | type                                                                                   |
 | --------------- | -------------------------------------------------------------------------------------- |

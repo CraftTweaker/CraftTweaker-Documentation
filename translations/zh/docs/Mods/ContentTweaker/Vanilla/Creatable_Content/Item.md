@@ -7,7 +7,7 @@ This allows you to add items to the game!
 Before you can add the item, you need to create an Item Representation which will allow you to set the properties of the item you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
@@ -20,15 +20,16 @@ It might be required for you to import the package if you encounter any issues, 
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
-    //property name: maxStackSize
-    //ZenGetter
-    print(item.maxStackSize);
-    //ZenSetter
-    item.maxStackSize = 16;
-    //ZenMethods
-    item.getMaxStackSize();
-    item.setMaxStackSize(64);
-    
+```zenscript
+//property name: maxStackSize
+//ZenGetter
+print(item.maxStackSize);
+//ZenSetter
+item.maxStackSize = 16;
+//ZenMethods
+item.getMaxStackSize();
+item.setMaxStackSize(64);
+```
 
 | Property Name         | 类型                                                                                                              | Required | Default Value | Description/Notes                                                                    |
 | --------------------- | --------------------------------------------------------------------------------------------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------ |
@@ -50,9 +51,9 @@ To get/set the properties you can either use the respecting ZenGetters/Setters o
 | rarity                | EnumRarity                                                                                                      | No       | COMMON        | How rare an item is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
 | smeltingExprerience   | float                                                                                                           | No       | -1            | How much experienve the player earns for smelting that item in a furnace?            |
 | textureLocation       | [CTResourceLocation](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)                          | No       | null          | The item's resource location, used for textures etc.                                 |
-| toolClass             | String                                                                                                          | No       |               | What block types the tool can break                                                  |
+| toolClass             | string                                                                                                          | No       |               | What block types the tool can break                                                  |
 | toolLevel             | int                                                                                                             | No       | -1            | The level of blocks can be broken                                                    |
-| unlocalizedName       | String                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
+| unlocalizedName       | string                                                                                                          | Yes      |               | Name, should be all lowercase                                                        |
 
 ## Registering the item
 
@@ -60,31 +61,33 @@ You need to call this method to register the item in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the item or change any of it's properties!
 
-    item.register();
-    
+```zenscript
+item.register();
+```
 
 ## Example Script
 
-    #loader contenttweaker
-    import mods.contenttweaker.VanillaFactory;
-    import mods.contenttweaker.Item;
-    import mods.contenttweaker.IItemRightClick;
-    import mods.contenttweaker.Commands;
-    
-    var zsItem = VanillaFactory.createItem("zs_item");
-    zsItem.maxStackSize = 8;
-    zsItem.rarity = "rare";
-    zsItem.creativeTab = zsCreativeTab;
-    zsItem.smeltingExperience = 10;
-    zsItem.toolClass = "pickaxe";
-    zsItem.toolLevel = 5;
-    zsItem.beaconPayment = true;
-    zsItem.itemRightClick = function(stack, world, player, hand) {
-        Commands.call("scoreboard players set @p name 5", player, world);
-        return "Pass";
-    };
-    zsItem.register();
-    
+```zenscript
+#loader contenttweaker
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.Commands;
+
+var zsItem = VanillaFactory.createItem("zs_item");
+zsItem.maxStackSize = 8;
+zsItem.rarity = "rare";
+zsItem.creativeTab = zsCreativeTab;
+zsItem.smeltingExperience = 10;
+zsItem.toolClass = "pickaxe";
+zsItem.toolLevel = 5;
+zsItem.beaconPayment = true;
+zsItem.itemRightClick = function(stack, world, player, hand) {
+    Commands.call("scoreboard players set @p name 5", player, world);
+    return "Pass";
+};
+zsItem.register();
+```
 
 ## Localising the item
 

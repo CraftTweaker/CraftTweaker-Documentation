@@ -1,6 +1,6 @@
 # Block Cutter
 
-## Package
+## 所属包名
 
 `import mods.ic2.BlockCutter;`
 
@@ -12,10 +12,11 @@
 
 ## 添加配方
 
-    mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
-    
-    mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
-    
+```zenscript
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
+
+mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
+```
 
 ## Removal
 

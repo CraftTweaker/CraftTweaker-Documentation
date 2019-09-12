@@ -2,7 +2,7 @@
 
 ## registerReservoir
 
-| Type            | Data Type                                    |
+| Type            | Datentyp                                     |
 | --------------- | -------------------------------------------- |
 | Name Identifier | String                                       |
 | Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
@@ -26,9 +26,9 @@ Then each respective entry will have a weighted chance of:
     10 in 34
     
 
-### Code Example:
+### Beispielcode:
 
-```JAVA
+```zenscript
 mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
 mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
 ```

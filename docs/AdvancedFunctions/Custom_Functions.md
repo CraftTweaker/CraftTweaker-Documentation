@@ -7,7 +7,7 @@ You can even nest functions in functions
 ## Basic Syntax
 Generally, you declare a static using:
 
-```Java
+```zenscript
 function NAME ([arguments[as type]]) [as returnType]{
 	[Statements]
 	[return VALUE;]
@@ -27,7 +27,7 @@ You can even access functions declared outside the script using the [cross-scrip
 
 Void functions are functions that will not return any value.
 
-```Java
+```zenscript
 //calls the function tens() without arguments
 tens();
 
@@ -56,7 +56,7 @@ function realTens(a as string){
 You can also specify a value that should be returned by a function. 
 It is recommended using the `as` keyword to define the return type.
 
-```Java
+```zenscript
 //calls add function with 1 and 99 as parameters
 val result = add(1,99);
 print(result);

@@ -7,7 +7,7 @@ This allows you to add Creative Tabs to the game!
 Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
 This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
 
-```JAVA
+```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
@@ -31,11 +31,11 @@ You can call and set all these properties using the normal ZenGetters and ZenSet
 Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
 Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | String                                                                                                  | YES      |               | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
+| Property Name     | Type                                                                                                    | Required | Standardwert | Description/Notes       |
+| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------ | ----------------------- |
+| unlocalizedName   | string                                                                                                  | YES      |              | The Creative Tab's name |
+| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |              | The Creative Tab's icon |
+| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null         | Determines something?   |
 
 ## Registering the creative tab
 
@@ -43,12 +43,13 @@ You need to call this method to register the creative Tab in the game!
 Otherwise nothing will happen!  
 After you have called this function, you cannot un-register the tab or change any of it's properties!
 
-    tab.register();
-    
+```zenscript
+tab.register();
+```
 
-## Example Script
+## Skript-Beispiel
 
-```JAVA
+```zenscript
 #loader contenttweaker
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.VanillaFactory;

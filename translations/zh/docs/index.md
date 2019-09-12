@@ -1,4 +1,4 @@
-# Crafttweaker-2
+# CraftTweaker-2
 
 Crafttweaker-2 是 MineTweaker-3 官方版本的延续，专为新版本 Minecraft 设计！
 

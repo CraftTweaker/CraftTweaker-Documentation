@@ -13,7 +13,7 @@
 | 名称                 | 类型                           | 说明                  |
 | ------------------ | ---------------------------- | ------------------- |
 | color              | int                          | 材料的 RGB 格式颜色        |
-| chemicalFormula    | String                       | 材料的化学式              |
+| chemicalFormula    | string                       | 材料的化学式              |
 | iconSet            | MaterialIconSet              | 生成元数据物品的图标集         |
 | components         | ImmutableList<materialstack> | 这个材料的组成             |
 | generationFlagsRaw | long                         | 这个材料的生成标志（详见材料生成标志） |
@@ -28,10 +28,10 @@
 | neutrons        | long   |                  |
 | mass            | long   |                  |
 | density         | long   |                  |
-| camelCaseString | String |                  |
-| unlocalizedName | String |                  |
-| localizedName   | String | 仅限客户端            |
-| name            | String | 材料注册的名称          |
+| camelCaseString | string |                  |
+| unlocalizedName | string |                  |
+| localizedName   | string | 仅限客户端            |
+| name            | string | 材料注册的名称          |
 
 方法：
 
@@ -164,7 +164,7 @@ Ingot materials can be used as wire, cable and fluid pipe. Those properties can 
 
 For example:
 
-```java
+```zenscript
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
 ingotMaterial.setCableProperties(128, 4, 1); // 128EU/t 4A 1 loss/block
 ```
@@ -179,7 +179,7 @@ To add a enchantment for tools in `SolidMaterial`, simply calling `addToolEnchan
 
 Example for a Fortune I material:
 
-```java
+```zenscript
 var material = MaterialRegistry.get("iron"); // Modify iron material
 material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a enchantment object and add it
 ```
@@ -200,6 +200,7 @@ These flags are applicable to materials.
 | DISABLE_DECOMPOSITION             | Disables decomposition recipe generation for this material and all materials that has it as component                                                                                                                                               |
 | DECOMPOSITION_REQUIRES_HYDROGEN | Decomposition recipe requires hydrogen as additional input. Amount is equal to input amount                                                                                                                                                         |
 | GENERATE_PLATE                    | Generate a plate for this material, If it's dust material, dust compressor recipe into plate will be generated, If it's metal material, bending machine recipes will be generated, If block is found, cutting machine recipe will be also generated |
+| GENERATE_DENSE                    | Generate a dense plate.                                                                                                                                                                                                                             |
 | NO_WORKING                        | Add to material if it cannot be worked by any other means, than smashing or smelting. This is used for coated Materials.                                                                                                                            |
 | NO_SMASHING                       | Add to material if it cannot be used for regular Metal working techniques since it is not possible to bend it.                                                                                                                                      |
 | NO_SMELTING                       | Add to material if it's impossible to smelt it                                                                                                                                                                                                      |
@@ -262,7 +263,7 @@ You may import the class `mods.gregtech.material.MaterialRegistry`.
 
 ### Usage
 
-```java
+```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 
@@ -286,7 +287,7 @@ MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, 
 
 ### Example
 
-```java
+```zenscript
 #loader gregtech
 import mods.gregtech.material.MaterialRegistry;
 

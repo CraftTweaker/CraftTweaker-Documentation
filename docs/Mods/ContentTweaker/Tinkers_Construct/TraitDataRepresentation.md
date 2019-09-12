@@ -23,7 +23,7 @@ It might be required for you to import the class if you encounter any issues (li
 
 ##ZenMethods
 
-```
+```zenscript
 //Does the same as myTraitData.info;
 myTraitData.calcInfo();
 

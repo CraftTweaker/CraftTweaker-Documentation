@@ -2,16 +2,16 @@
 
 This interface is extended by all Events that can have a central living entity.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IBlockEvent;`
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
+`import crafttweaker.event.IBlockEvent`
 
-## Extending IEventPositionable
+## Наследование от IEventPositionable
 
-This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
+Этот интерфейс расширяет [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/). Это значит, что весь функционал, который предлагает IEventPositionable, так же доступен в IBlockEvent.
 
-## ZenGetters
+## Геттеры ZenScript
 
 | name       | type                                        |
 | ---------- | ------------------------------------------- |

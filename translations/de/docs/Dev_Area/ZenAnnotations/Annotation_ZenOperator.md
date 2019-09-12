@@ -2,23 +2,24 @@
 
 A Method annotated with `@ZenOperator` cannot be called by instance.method(parameters) but instead uses Tokens like `+`, `!` and the like.
 
-## Example
+## Beispiel
 
-[Crafttweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
+[CraftTweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
 
-    @ZenClass("crafttweaker.data.IData")
-    @ZenRegister
-    public interface IData {
-    
-        @ZenOperator(OperatorType.ADD)
-        IData add(IData other);
-    
-        @ZenOperator(OperatorType.SUB)
-        IData sub(IData other);
-    
-        ...
-    }
-    
+```java
+@ZenClass("crafttweaker.data.IData")
+@ZenRegister
+public interface IData {
+
+    @ZenOperator(OperatorType.ADD)
+    IData add(IData other);
+
+    @ZenOperator(OperatorType.SUB)
+    IData sub(IData other);
+
+    ...
+}
+```
 
 ## What methods can be annotated || Additional Info
 

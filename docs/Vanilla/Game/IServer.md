@@ -14,12 +14,12 @@ Alternatively you can get the server from any [ICommandSender](/Vanilla/Commands
 ## Check if a [player](/Vanilla/Players/IPlayer/) is OP
 You can use this to check if an [IPlayer](/Vanilla/Players/IPlayer/) has the OP permission:
 
-```
+```zenscript
 server.isOP(player);
 ```
 
 ## Get the command manager
 You can use this to get the [ICommandManager](/Vanilla/Commands/ICommandManager/)
-```
+```zenscript
 server.commandManager;
 ```

@@ -10,7 +10,7 @@ You can call the Explosion Crafting package using `mods.pneumaticcraft.explosion
 
 This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
-```
+```zenscript
 mods.pneumaticcraft.explosioncrafting.removeRecipe(IIngredient output);
 // Example
 mods.pneumaticcraft.explosioncrafting.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
@@ -18,7 +18,7 @@ mods.pneumaticcraft.explosioncrafting.removeRecipe(<pneumaticcraft:ingot_iron_co
 
 This function removes *all* Explosion Crafting recipes:
 
-```
+```zenscript
 mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
 ```
 
@@ -26,7 +26,7 @@ mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
 
 These functions are used to add new Explosion Crafting recipes:
 
-```
+```zenscript
 mods.pneumaticcraft.explosioncrafting.addRecipe(IItemStack input, IItemStack output, int loss_rate);
 mods.pneumaticcraft.explosioncrafting.addRecipe(IOreDictEntry input, IItemStack output, int loss_rate);
 

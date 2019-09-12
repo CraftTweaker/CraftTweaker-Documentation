@@ -27,6 +27,6 @@ The following information can be retrieved from the event:
 Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
 
 This can for example be a string like
-```
+```zenscript
 "minecraft:story/mine_diamond"
 ```

@@ -22,8 +22,9 @@ ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味�
 
 在 `hello.zs` 文件中写入以下内容：
 
-    print("你好，世界！");
-    
+```zenscript
+print("你好，世界！");
+```
 
 接着启动 Minecraft 并查看 `crafttweaker.log` 文件。
 
