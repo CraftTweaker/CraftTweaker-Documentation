@@ -102,6 +102,7 @@ pages:
           #Actual Events below here
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
+        - CommandEvent: 'Vanilla/Events/Events/CommandEvent.md'
         - EnderTeleportEvent: 'Vanilla/Events/Events/EnderTeleport.md'
         - EntityLivingAttackedEvent: 'Vanilla/Events/Events/EntityLivingAttacked.md'
         - EntityLivingDeathDropsEvent: 'Vanilla/Events/Events/EntityLivingDeathDrops.md'
