@@ -15,7 +15,7 @@ It might be required for you to import the package if you encounter any issues (
 | level       |             | int                                                                     |
 | displayName | displayName | string                                                                  |
 
-## ZenMethods
+## Методы
 
 ### Retrieve the Enchantment as NBT
 
