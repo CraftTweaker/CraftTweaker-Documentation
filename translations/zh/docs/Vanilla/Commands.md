@@ -2,9 +2,9 @@
 
 CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
-命令的前缀是： `/crafteraker` 或 `/ct`
+命令的前缀是： `/crafttweaker` 或 `/ct`
 
-你也可以使用这些别名： `/mineraker` 或 `/mt`
+你也可以使用这些别名： `/minetweaker` 或 `/mt`
 
 游戏中的所有命令都可以通过以下方式找到:
 
