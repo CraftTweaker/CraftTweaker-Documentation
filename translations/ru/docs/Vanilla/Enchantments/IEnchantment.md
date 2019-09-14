@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Методы
 
-### Retrieve the Enchantment as NBT
+### Получить чары в формате NBT
 
 You might want to get the Enchantment's NBT-Tag.  
 You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
