@@ -1,6 +1,6 @@
 # 命令
 
-CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+CraftTweaker 添加了一些命令，这些命令可以帮助你创建脚本，并减少编写脚本的开发时间。
 
 命令的前缀是： `/crafttweaker` 或 `/ct`
 
@@ -16,7 +16,7 @@ CraftTweaker adds commands that will help you with the creation of scripts, they
 
 # 命令列表
 
-## 生物群落
+## 生物群系
 
 用法：
 
@@ -26,9 +26,9 @@ CraftTweaker adds commands that will help you with the creation of scripts, they
 
 说明:
 
-列出游戏中的所有生物群落。
+列出游戏中的所有生物群系。
 
-## BiomeTypes
+## 生物群系类型
 
 用法：
 
@@ -38,9 +38,9 @@ CraftTweaker adds commands that will help you with the creation of scripts, they
 
 说明:
 
-Lists all of the biomeTypes that are in the game.
+列出游戏中的所有生物群系类型。
 
-## BlockInfo
+## 方块信息
 
 用法：
 
@@ -48,11 +48,11 @@ Lists all of the biomeTypes that are in the game.
 
 `/ct blockinfo`
 
-说明:
+说明：
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+启用或禁用方块信息读取器。 在启用方块信息模式下，右键点击方块，将输出方块的名称、元数据和 TileEntity 数据。
 
-## Blocks
+## 方块
 
 用法：
 
@@ -60,11 +60,11 @@ Activates or deactivates the block reader. In block info mode, right-clicking a 
 
 `/ct blocks`
 
-Description:
+说明：
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+将游戏中所有的方块名称输出到 crafttweaker.log 文件中。
 
-## Bugs
+## 问题追踪
 
 用法：
 
@@ -72,11 +72,11 @@ Outputs a list of all the blocks in the game to the crafttweaker.log file.
 
 `/ct bugs`
 
-Description:
+说明：
 
-Opens your browser with the GitHub bug tracker.
+在浏览器中打开 GitHub 错误跟踪器。
 
-## Conflict
+## 合成表冲突
 
 用法：
 
@@ -84,44 +84,44 @@ Opens your browser with the GitHub bug tracker.
 
 `/ct conflict`
 
-Description:
+说明：
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+将所有冲突的合成表配方输出至 crafttweaker.log 文件中。  
+请注意，这只适用于安装了 JEI 的客户端！
 
 ## Discord
 
-Usage:
+用法：
 
 `/crafttweaker discord`
 
 `/ct discord`
 
-Description:
+说明：
 
-Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
+在浏览器中打开 [Discord 服务器](https://www.discord.blamejared.com)。
 
-## Docs
+## 文档
 
-Usage:
+用法：
 
 `/crafttweaker docs`
 
 `/ct docs`
 
-Description:
+说明：
 
-Opens your browser to this docs page (same as `/ct wiki`).
+在浏览器中打开这个文档页面 (与 `/ct wiki` 相同)。
 
-## DumpZs
+## 导出脚本修改内容
 
-Usage:
+用法：
 
 `/crafttweaker dumpzs`
 
 `/ct dumpzs`
 
-Description:
+说明：
 
 Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
 You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
