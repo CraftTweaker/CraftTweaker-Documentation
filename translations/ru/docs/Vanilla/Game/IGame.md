@@ -1,4 +1,4 @@
-# Game Class
+# IGame
 
 The IGame Class is used to obtain general game information. Can be accessed using `game`
 
