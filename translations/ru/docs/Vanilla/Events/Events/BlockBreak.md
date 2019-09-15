@@ -16,7 +16,7 @@ BlockBreakEvent реализует следующие интерфейсы и с
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
-## Геттеры ZenScript
+## Геттеры
 
 Следующая информация может быть получена от события:
 
