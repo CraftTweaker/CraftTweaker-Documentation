@@ -11,11 +11,11 @@ IEntityDrop представляет дроп [сущности](/Vanilla/Entiti
 
 Вы можете получить эту информацию из него.
 
-| Геттер     | Что он делает                                             | Возвращаемый тип                         | Использование     |
-| ---------- | --------------------------------------------------------- | ---------------------------------------- | ----------------- |
-| chance     | Возвращает шанс дропа.                                    | float                                    | `drop.chance`     |
-| max        | Возвращает максимальное количество выброшенного предмета. | int                                      | `drop.max`        |
-| min        | Returns the minimum Amount of the drop.                   | int                                      | `drop.min`        |
-| playerOnly | Returns whether the drop is playerOnly.                   | boolean                                  | `drop.playerOnly` |
-| range      | Returns the minimum to maximum Amount range of the drop.  | IntegerRange                             | `drop.range`      |
-| stack      | Returns the dropped Item.                                 | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |
+| Геттер     | Что он делает                                                                       | Возвращаемый тип                         | Использование     |
+| ---------- | ----------------------------------------------------------------------------------- | ---------------------------------------- | ----------------- |
+| chance     | Возвращает шанс дропа.                                                              | float                                    | `drop.chance`     |
+| max        | Возвращает максимальное количество выброшенного предмета.                           | int                                      | `drop.max`        |
+| min        | Возвращает минимальное количество выброшенного предмета.                            | int                                      | `drop.min`        |
+| playerOnly | Returns whether the drop is playerOnly.                                             | boolean                                  | `drop.playerOnly` |
+| range      | Возвращает промежуток от минимального до максимального числа выброшенного предмета. | IntegerRange                             | `drop.range`      |
+| stack      | Возвращает выброшенный предмет.                                                     | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |
