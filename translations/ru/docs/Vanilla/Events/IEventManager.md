@@ -1,17 +1,17 @@
 # IEventManager
 
-The IEventManager is what you're gonna need when dealing with event handlers.
+IEventManager &mdash; это то, что вам нужно, чтобы работать с обработчиками событий.
 
 ## Импорт класса
 
-It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс при обнаружении проблем.  
 `import crafttweaker.events.IEventManager;`
 
-## Calling the event manager
+## Вызов менеджера событий
 
-You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
+Вы можете получить доступ к менеджеру событий, используя [глобальное поле `events`](/Vanilla/Global_Functions/).
 
-## How do events work?
+## Как работают события?
 
 You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
 The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
@@ -31,11 +31,11 @@ events.onPlayerLoggedIn(function(event) {
 });
 ```
 
-## What events are available?
+## Какие события доступны?
 
 The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethod                   | Event Class                                                                                          |
+| Метод                       | Класс события                                                                                        |
 | --------------------------- | ---------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)             |
 | onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                |
@@ -84,7 +84,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerUseHoe              | [`crafttweaker.event.PlayerUseHoeEvent`](/Vanilla/Events/Events/PlayerUseHoe/)                       |
 | onSpecialSpawn              | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)     |
 
-## Clear all event handlers
+## Очистить все обработчики событий
 
 ```zenscript
 events.clear();
