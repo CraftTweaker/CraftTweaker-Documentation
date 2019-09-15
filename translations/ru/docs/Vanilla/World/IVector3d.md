@@ -1,14 +1,14 @@
 # IVector3d
 
-A Vector3d object is a vector that uses three doubles for the directions.  
-They have several utility methods and getters.
+Объект IVector3d &mdash; это вектор, который использует три числа с двойной точностью для направлений.  
+У него также есть несколько методов и геттеров.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.world.IVector3d`
 
-## Creating a new IVector3d object
+## Создание нового объекта IVector3d
 
 If you ever find yourself in the need of creating a new IVector3d object, you can use this method:
 
@@ -16,16 +16,16 @@ If you ever find yourself in the need of creating a new IVector3d object, you ca
     crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
     
 
-## ZenGetters
+## Геттеры
 
-| ZenGetter  | Type      |
+| Геттер     | Тип       |
 | ---------- | --------- |
-| x          | double    |
+| х          | double    |
 | y          | double    |
 | z          | double    |
 | normalized | IVector3d |
 
-## ZenMethods
+## Методы
 
 - double dotProduct(IVector3d other);
 - IVector3d crossProduct(IVector3d other);
