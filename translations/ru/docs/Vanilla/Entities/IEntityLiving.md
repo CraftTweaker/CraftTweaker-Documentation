@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLiving;`
@@ -12,11 +12,11 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
-## Methods
+## Методы
 
-### ZenGetters/ZenSetters
+### Геттеры/сеттеры
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| Геттер              | Сеттер        | Тип                                                       |
 | ------------------- | ------------- | --------------------------------------------------------- |
 | attackInterval      |               | int                                                       |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
@@ -36,7 +36,7 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 |                     | moveVertival  | float                                                     |
 | renderSizeModifier  |               | float                                                     |
 
-### ZenMethods
+### Методы
 
 #### Play living sound
 
