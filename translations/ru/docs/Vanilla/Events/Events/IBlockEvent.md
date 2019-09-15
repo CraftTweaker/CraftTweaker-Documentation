@@ -11,7 +11,7 @@ This interface is extended by all Events that can have a central living entity.
 
 Этот интерфейс расширяет [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/). Это значит, что весь функционал, который предлагает IEventPositionable, так же доступен в IBlockEvent.
 
-## Геттеры ZenScript
+## Геттеры
 
 | name       | type                                        |
 | ---------- | ------------------------------------------- |
