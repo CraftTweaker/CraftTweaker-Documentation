@@ -12,7 +12,7 @@
 
 Этот интерфейс расширяет [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/). Это значит, что весь функционал, который предлагает ILivingEvent, так же доступен в IPlayerEvent.
 
-## Геттеры ZenScript
+## Геттеры
 
 | name   | type                                 |
 | ------ | ------------------------------------ |
