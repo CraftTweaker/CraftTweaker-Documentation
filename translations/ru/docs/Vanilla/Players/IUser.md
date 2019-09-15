@@ -10,7 +10,7 @@
 
 ## Наследование от ICommandSender
 
-IUser наследует от [ICommandSender](/Vanilla/Commands/ICommandSender/). That means all functions available to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IUser Objects.
+IUser наследует от [ICommandSender](/Vanilla/Commands/ICommandSender/). Это значит, что все функции объектов [ICommandSender](/Vanilla/Commands/ICommandSender/) также доступны объектам IUser.
 
 ## Методы
 
