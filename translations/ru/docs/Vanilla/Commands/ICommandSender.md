@@ -10,17 +10,19 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetter
 
-| ZenGetter   | Return Type                            |
+| ZenGetter   | Возвращаемый тип                       |
 | ----------- | -------------------------------------- |
 | displayName | string                                 |
 | position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
 
-## ZenMethods
+## Методы
 
 #### Send Message
 
 Takes a String. Returns void (nothing).
 
-    sender.sendMessage(String text);
+```zenscript
+sender.sendMessage(String text);
+```
