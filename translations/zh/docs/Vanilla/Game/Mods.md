@@ -7,45 +7,48 @@
 
 使用`in`关键字来检查一个模组是否被加载。你也可以使用`contains`方法。
 
-    //if MinecraftCoderPack is loaded
-    if(loadedMods in "mcp"){
-        print("success!");
-    }
-    
-    //if MinecraftCoderPack is loaded
-    if(loadedMods.contains("mcp")){
-        print("success!!!");
-    }
-    
+```zenscript
+//if MinecraftCoderPack is loaded
+if(loadedMods in "mcp"){
+    print("success!");
+}
+
+//if MinecraftCoderPack is loaded
+if(loadedMods.contains("mcp")){
+    print("success!!!");
+}
+```
 
 ## Retrieve a specific mod
 
 You can retrieve a specific mod as IMod as long as you have it's ID
 
-    //retrieves the minecraftCoderPack mod
-    val mod = loadedMods["mcp"];
-    
+```zenscript
+//retrieves the minecraftCoderPack mod
+val mod = loadedMods["mcp"];
+```
 
 ## Iterate through the modList
 
 You can iterate through the lost of loaded mods like this:
 
-    //prints all registred item definitions, not recommended in larger packs!
-    //the mod variable will be an IMod type
-    for mod in loadedMods {
-        print(mod.name ~ ":");
-        for item in mod.items {
-            print("\t\t" ~ item.displayName);
-        }
+```zenscript
+//prints all registred item definitions, not recommended in larger packs!
+//the mod variable will be an IMod type
+for mod in loadedMods {
+    print(mod.name ~ ":");
+    for item in mod.items {
+        print("\t\t" ~ item.displayName);
     }
-    
+}
+```
 
 # IMod
 
 The IMod Interface provides you with some general information on a specific mod.  
 If needed, it can be imported using `import crafttweaker.mods.IMod;`
 
-| Zengetter   | What does it do                    | Return Type                                | Usage             |
+| Zengetter   | 功能                                 | 返回值类型                                      | Usage             |
 | ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
 | id          | Returns the mod's id               | string                                     | `mod.id`          |
 | name        | Returns the mod's internal name    | string                                     | `mod.name`        |
