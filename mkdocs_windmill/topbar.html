@@ -35,20 +35,25 @@
     {% endif %}
 
     {# Logo and title #}
-    <a href="{{ name }}" class="wm-top-brand wm-top-link wm-vcenter">
+    <div  class="wm-top-brand wm-top-link wm-vcenter">
+    <a href="{{ name }}">
       {% if config.extra.logo %}
         <img class="wm-top-logo" src="{{ base_url }}/{{ config.extra.logo }}"/>
       {% endif %}
-      <div class="wm-top-title">
-        {{ config.site_name }}<br>
+    </a>
+      <div class="wm-top-link wm-top-title">
+          <a href="{{ name }}" class="wm-top-link">
+        {{ config.site_name }} </a><br>
         <span class="version_text">Version:</span>
         <select class="version_select wm-top-version" id="versionSelect" onchange="swapVersions()">
         </select>
+        <a href="{{ name }}">
         {% if config.extra.version %}
           <span class="wm-top-version">{{ config.extra.version }}</span>
         {% endif %}
-        
+      </a>
       </div>
-    </a>
+    
+  </div>
   </div>
 </nav>
