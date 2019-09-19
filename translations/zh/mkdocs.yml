@@ -1,0 +1,33 @@
+# 如果你需要添加新页面，别忘了将其添加到此处的索引中
+pages:
+  - 首页: 'index.md'
+
+
+# 不得在提交的 Pull Request 中修改以下的内容
+site_name: Crafttweaker Documentation
+site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+
+repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
+repo_name: 'Visit this wiki on GitHub'
+
+markdown_extensions:
+  - admonition
+  - smarty
+  - sane_lists
+  - toc:
+      anchorlink: True
+
+
+theme_dir: 'mkdocs_windmill'
+extra_css:
+    - css/styles.css
+extra_javascript:
+    - js/highlightjs-zenscript.js
+    - js/init-zs-highlight.js
+
+extra:
+  logo: 'assets/logo.png'
+  #article_nav_top: true
+  #artivle_nav_bottom: true
+  #history_buttons: false
+  version: 'CrT v5.0.0'
