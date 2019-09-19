@@ -11,12 +11,15 @@
 
 ### Преобразование в строку
 
-    rec.commandString;
-    rec.toCommandString();
-    
+```zenscript
+rec.commandString;
+rec.toCommandString();
+```
 
 ### Другие геттеры
 
-    rec.input;
-    rec.output;
-    rec.xp;
+```zenscript
+rec.input;
+rec.output;
+rec.xp;
+```
