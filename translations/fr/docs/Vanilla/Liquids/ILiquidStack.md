@@ -11,15 +11,16 @@ It might be required for you to import the package if you encounter any issues (
 
 An ILiquidStack can be created by using the [Liquid Bracket Handler](/Vanilla/Brackets/Bracket_Liquid/)
 
-    //see The liquid bracket Handler for further information
-    val lava = <liquid:lava>;
-    
-    //liquid.withTag(Tag as IData)
-    val lavaWithTag = <liquid:lava>.withTag(DATA);
-    
-    //liquid * amount in millibuckets (-> 1000 = 1 Bucket)
-    val lavaWithAmount = <liquid:lava> * 1000;
-    
+```zenscript
+//see The liquid bracket Handler for further information
+val lava = <liquid:lava>;
+
+//liquid.withTag(Tag as IData)
+val lavaWithTag = <liquid:lava>.withTag(DATA);
+
+//liquid * amount in millibuckets (-> 1000 = 1 Bucket)
+val lavaWithAmount = <liquid:lava> * 1000;
+```
 
 ## Get fluid properties
 
