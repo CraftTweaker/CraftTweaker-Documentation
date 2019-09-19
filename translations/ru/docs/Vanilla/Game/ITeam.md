@@ -18,6 +18,6 @@
 | deathMessageVisibility | string         |
 | collisionRule          | string         |
 
-## ZenMethods
+## Методы
 
 - `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
