@@ -20,16 +20,19 @@ It might be required for you to import the package if you encounter any issues, 
 You can check if two IEntityEquipmentSlot objects are equal:  
 Returns a bool.
 
-    slotOne == slotTwo;
-    
+```zenscript
+slotOne == slotTwo;
+```
 
 ## Enumerations
 
 The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
-    crafttweaker.entity.IEntityEquipmentSlot.mainHand();
-    crafttweaker.entity.IEntityEquipmentSlot.offhand();
-    crafttweaker.entity.IEntityEquipmentSlot.feet();
-    crafttweaker.entity.IEntityEquipmentSlot.legs();
-    crafttweaker.entity.IEntityEquipmentSlot.chest();
-    crafttweaker.entity.IEntityEquipmentSlot.head();
+```zenscript
+crafttweaker.entity.IEntityEquipmentSlot.mainHand();
+crafttweaker.entity.IEntityEquipmentSlot.offhand();
+crafttweaker.entity.IEntityEquipmentSlot.feet();
+crafttweaker.entity.IEntityEquipmentSlot.legs();
+crafttweaker.entity.IEntityEquipmentSlot.chest();
+crafttweaker.entity.IEntityEquipmentSlot.head();
+```
