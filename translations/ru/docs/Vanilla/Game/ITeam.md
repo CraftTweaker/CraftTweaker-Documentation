@@ -20,4 +20,4 @@
 
 ## Методы
 
-- `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
+- `formatString(string input);` → Форматирует входную строку для этой команды. Возвращает отформатированную строку.
