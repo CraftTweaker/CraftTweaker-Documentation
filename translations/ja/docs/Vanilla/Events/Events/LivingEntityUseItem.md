@@ -7,15 +7,16 @@ Since that would be called far too often, there are 4 subEvents that are only ca
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
 
-    //Base Event
-    import crafttweaker.event.EntityLivingUseItemEvent.All;
-    
-    //Specific Events
-    import crafttweaker.event.EntityLivingUseItemEvent.Start;
-    import crafttweaker.event.EntityLivingUseItemEvent.Tick;
-    import crafttweaker.event.EntityLivingUseItemEvent.Stop;
-    import crafttweaker.event.EntityLivingUseItemEvent.Finish;
-    
+```zenscript
+//Base Event
+import crafttweaker.event.EntityLivingUseItemEvent.All;
+
+//Specific Events
+import crafttweaker.event.EntityLivingUseItemEvent.Start;
+import crafttweaker.event.EntityLivingUseItemEvent.Tick;
+import crafttweaker.event.EntityLivingUseItemEvent.Stop;
+import crafttweaker.event.EntityLivingUseItemEvent.Finish;
+```
 
 ## Event interface extensions
 
@@ -28,7 +29,7 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 
 The following information can be retrieved/set during the event:
 
-| ZenGetter  | Return Type                              |
+| ZenGetter  | 戻り値                                      |
 | ---------- | ---------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `isPlayer` | bool                                     |
