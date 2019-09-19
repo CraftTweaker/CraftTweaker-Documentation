@@ -3,7 +3,7 @@
 A Position in Minecraft consists of 3 values: x, y and z.  
 A Position3f Object stores a position using those three values.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to [import](/AdvancedFunctions/Import/) the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.util.Position3f;`
@@ -20,7 +20,7 @@ You can get such an object using:
 
 You can create a Position3f object yourself by using the following method:
 
-```JAVA
+```zenscript
 crafttweaker.util.Position3f.create(float x, float y, float z);
 ```
 
@@ -38,5 +38,7 @@ The First method allows you to create a position at the given coordinates.
 
 You can use the two ways below to cast a Position3f Object to an [IBlockPos](/Vanilla/World/IBlockPos/) Object: Remember, for casting you need to [import](/AdvancedFunctions/Import/) the type you want to cast to unless you use the full name.
 
-    posThree.asBlockPos();
-    posThree as IBlockPos;
+```zenscript
+posThree.asBlockPos();
+posThree as IBlockPos;
+```
