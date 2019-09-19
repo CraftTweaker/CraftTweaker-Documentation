@@ -43,38 +43,44 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 Requires no parameters.  
 Returns nothing.
 
-    ebtLiv.playLivingSound();
-    
+```zenscript
+ebtLiv.playLivingSound();
+```
 
 #### Spawn explosion particles
 
 Requires no parameters.  
 Returns nothing.
 
-    ebtLiv.spawnExplosionParticle();
-    
+```zenscript
+ebtLiv.spawnExplosionParticle();
+```
 
 #### Set the drop chance for an Equipment Slot
 
 Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
 Returns nothing.
 
-    ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
-    
+```zenscript
+ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
+```
 
 #### Enable Persistence
 
 Requires no parameters.  
 Returns nothing.
 
-    ebtLiv.enablePersistence();
-    
+```zenscript
+ebtLiv.enablePersistence();
+```
 
 #### Lashes
 
 First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
 Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
 
-    ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
-    ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
-    ebtLiv.canBeLeashedTo(IPlayer player);
+```zenscript
+ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
+ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
+ebtLiv.canBeLeashedTo(IPlayer player);
+```
