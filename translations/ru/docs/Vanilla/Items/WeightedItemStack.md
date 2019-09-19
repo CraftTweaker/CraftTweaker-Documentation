@@ -3,7 +3,7 @@
 A Weighted Item Stack is like a normal [IItemStack](/Vanilla/Items/IItemStack/) but has a percentage added to it.  
 You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedItemStack;`
@@ -12,16 +12,17 @@ It might be required for you to import the package if you encounter any issues (
 
 You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStack/) by either using the modulo operator or the weight function on it.
 
-    val itemStack = <minecraft:dirt>;
-    
-    //both create a weightedItemstack object with a chance of 20%
-    val wItemStack = itemStack % 20;
-    val wItemStack2 = itemStack.weight(0.2);
-    
+```zenscript
+val itemStack = <minecraft:dirt>;
 
-## ZenGetters
+//both create a weightedItemstack object with a chance of 20%
+val wItemStack = itemStack % 20;
+val wItemStack2 = itemStack.weight(0.2);
+```
 
-| ZenGetter | What does it do                                      | Return Type                              |
+## Геттеры
+
+| ZenGetter | Что он делает                                        | Возвращаемый тип                         |
 | --------- | ---------------------------------------------------- | ---------------------------------------- |
 | stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
 | chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
