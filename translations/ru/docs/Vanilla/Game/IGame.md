@@ -22,12 +22,13 @@
 
 ### getEntity
 
-    //getEntity(EntityName)
-    
-    //essentially the same
-    val sheep = game.getEntity("sheep");
-    val sheep1 = <entity:minecraft:sheep>;
-    
+```zenscript
+//getEntity(EntityName)
+
+//essentially the same
+val sheep = game.getEntity("sheep");
+val sheep1 = <entity:minecraft:sheep>;
+```
 
 ### setLocalization
 
