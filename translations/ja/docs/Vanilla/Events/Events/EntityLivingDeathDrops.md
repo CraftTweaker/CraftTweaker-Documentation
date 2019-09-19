@@ -20,7 +20,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter       | Return Type                                                 |
+| ZenGetter       | 戻り値                                                         |
 | --------------- | ----------------------------------------------------------- |
 | `player`        | [IPlayer](/Vanilla/Players/IPlayer/)                        |
 | `items`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
@@ -32,7 +32,7 @@ The following information can be retrieved from the event:
 
 You can either add to the droplist or completely substitute it with a new one:
 
-```kotlin
+```zenscript
 event.items = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
