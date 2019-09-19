@@ -8,7 +8,7 @@
 
 ### Цвет
 
-You can give an IFormattedText a color using one of the following Colors:
+Вы можете задать цвет IFormattedText, используя один из следующих цветов:
 
 - black
 - darkBlue
@@ -29,7 +29,7 @@ You can give an IFormattedText a color using one of the following Colors:
 
 ### Стиль
 
-You can give an IFormattedText one (or more) of the following formatting styles:
+Вы можете задать стиль IFormattedText, используя один или несколько из следующих стилей форматирования:
 
 - obfuscated
 - bold
