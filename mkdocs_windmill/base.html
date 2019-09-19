@@ -43,7 +43,36 @@
 	
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 	<script src="{{ base_url }}/js/highlightjs-zenscript.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script> 
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+  $(document).ready(function () {
+    $.get("/index.php", function (data, status) {
+        const parsed = JSON.parse(data);
+
+        for (let index in parsed.reverse()) {
+            let dat = parsed[index];
+            if(getVersion() == dat){
+              $("#versionSelect").append("<option selected id=\"option-" +dat + "\">" + dat + "</option>");
+            } else {
+              $("#versionSelect").append("<option id=\"option-" +dat + "\">" + dat + "</option>");
+            }
+          }
+
+    });
+});
+
+  function getVersion(){
+      let url = window.location.pathname;
+      let version = url.split("/")[1].split("/")[0];
+      return version;
+  }
+
+  function swapVersions(){
+    let dat = document.getElementById("versionSelect").value;
+    window.location.href = "/" + dat;
+  }
+    </script>
     {% if is_top %}
       <script src="{{ base_url }}/js/elasticlunr.min.js"></script>
     {% endif %}

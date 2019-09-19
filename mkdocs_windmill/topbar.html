@@ -41,9 +41,13 @@
       {% endif %}
       <div class="wm-top-title">
         {{ config.site_name }}<br>
+        <span class="version_text">Version:</span>
+        <select class="version_select wm-top-version" id="versionSelect" onchange="swapVersions()">
+        </select>
         {% if config.extra.version %}
           <span class="wm-top-version">{{ config.extra.version }}</span>
         {% endif %}
+        
       </div>
     </a>
   </div>
