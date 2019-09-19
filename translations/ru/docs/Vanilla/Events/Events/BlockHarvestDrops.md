@@ -32,5 +32,7 @@ BlockHarvestDropsEvent реализует следующие интерфейс�
 
 Вы можете либо использовать оператор `+=`, либо использовать метод, чтобы добавить предмет в список:
 
-    event.drops += <minecraft:coal>;
-    event.addItem(<minecraft:coal>);
+```zenscript
+event.drops += <minecraft:coal>;
+event.addItem(<minecraft:coal>);
+```
