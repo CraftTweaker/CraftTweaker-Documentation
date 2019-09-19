@@ -1,18 +1,18 @@
 # Optional
 
-`@Optional` can be given to a Method parameter to declare it as being optional.  
-Optional Parameters can be omitted when calling the method:
+Параметр метода может быть помечен как `@Optional`, чтобы объявить его необязательным.  
+Необязательные параметры могут быть опущены при вызове этого метода:
 
 ## Пример
 
-[CraftTweaker's IFurnaceManager](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
+[IFurnaceManager из CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/recipes/IFurnaceManager.java):
 
 ```java
     @ZenMethod
     void remove(IIngredient output, @Optional IIngredient input);
 ```
 
-[MCFurnaceManager (Implementation)](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
+[MCFurnaceManager (реализация):](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-MC1120-Main/src/main/java/crafttweaker/mc1120/furnace/MCFurnaceManager.java)
 
 ```java
     @Override
@@ -24,34 +24,34 @@ Optional Parameters can be omitted when calling the method:
     }
 ```
 
-Technically, you don't need the `@Optional` in the implementation but you can add it if you want to be sure. You can now call this method using either one:
+Технически, вам не нужно добавлять `@Optional` в реализации, но можете добавить, если хотите удостовериться. Теперь вы можете вызвать этот метод еще одним способом:
 
 ```java
-furnace.remove(output); //Input will be set to null
+furnace.remove(output); //в качестве input будет передан null
 furnace.remove(output, input);
 ```
 
-## What values are inserted for omited parameters?
+## Какие значения вставляются для опущенных параметров?
 
-### Using only the annotation
+### При использовании только аннотации
 
-Inserted is either `0`, `false` or `null`, depending on the annotated Type:
+Вставляемое значение может быть `0`, `false` или `null`, в зависимости от помеченного типа:
 
-Primitives will be `0` (except bool, which will be false, so technically 0 as well)  
-All Objects will be `null`
+Примитивы получат значение `0` (за исключением `boolean`, который получит значение `false`, так что технически тоже 0)  
+Все объекты будут `null`.
 
-### Using annotation members
+### Использование параметров аннотации
 
-| Member      | Type            | Default value    |
-| ----------- | --------------- | ---------------- |
-| value       | string          | `""`             |
-| methodClass | java.lang.Class | `Optional.class` |
-| methodName  | string          | `"getValue"`     |
+| Параметр    | Тип             | Значение по умолчанию |
+| ----------- | --------------- | --------------------- |
+| value       | string          | `""`                  |
+| methodClass | java.lang.Class | `Optional.class`      |
+| methodName  | string          | `"getValue"`          |
 
-The Optional annotation also supports default values.  
-If you want to provide a default value, you can do that by giving the `value` member a String representing the parameter.
+Аннотация Optional также поддерживает значения по умолчанию.  
+Если хотите предоставить его, можете сделать это, передав это значение параметру `value` как строку.
 
-If you only want a default primitive, then you are set.
+Если хотите примитив по умолчанию, вы задаете.
 
 ```java
 @ZenMethod
