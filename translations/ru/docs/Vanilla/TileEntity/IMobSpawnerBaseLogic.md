@@ -18,6 +18,8 @@
 
 ## Методы ZenScript
 
-    void updateSpawner();
-    
-    void setDelayToMin();
+```zenscript
+void updateSpawner();
+
+void setDelayToMin();
+```
