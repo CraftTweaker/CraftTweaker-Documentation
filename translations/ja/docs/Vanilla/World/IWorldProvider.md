@@ -12,8 +12,9 @@ World Provider Interfaceは[IWorld](/Vanilla/World/IWorld/)オブジェクトか
 通常は、[IWorld](/Vanilla/World/IWorld/)オブジェクトまたはいくつかの関数から、worldProviderを習得できますが、自分で作成する場合、以下のようにします。:  
 このメゾットはMinecraft内部で実行されることを意図した関数内で呼び出されるべきで、ロード中には呼び出されないことに注意が必要です。
 
-    crafttweaker.world.IWorldProvider.getFromID(int id);
-    
+```zenscript
+crafttweaker.world.IWorldProvider.getFromID(int id);
+```
 
 ## パラメータなしのZenMethodsとZenGetters
 
@@ -50,38 +51,44 @@ World Provider Interfaceは[IWorld](/Vanilla/World/IWorld/)オブジェクトか
 [IBlockPos](/Vanilla/World/IBlockPos/)オブジェクトを使ってください。  
 [IBiome](/Vanilla/Biomes/IBiome/)オブジェクトを返します。
 
-    worldProvObj.getBiome(IBlockPos position);
-    
+```zenscript
+worldProvObj.getBiome(IBlockPos position);
+```
 
 ### 特定の時間のMoonPhaseを取得
 
 Long型を使ってください。  
 int型を返します。
 
-    worldProvObj.getMoonPhase(long time);
-    
+```zenscript
+worldProvObj.getMoonPhase(long time);
+```
 
 ### 特定のプレイヤーのRespawn Dimensionを取得する
 
 [IPlayer](/Vanilla/Players/IPlayer/)オブジェクトを使ってください。  
 新しいIWorldProviderオブジェクトで返されます。
 
-    worldProvObj.getRespawnDimension(IPlayer player);
-    
+```zenscript
+worldProvObj.getRespawnDimension(IPlayer player);
+```
 
 ### 特定のBrightnes(factor) を取得
 
 Float型を使ってください。  
 float型で返されます。
 
-    worldProvObj.getStarBrightness(float something);
-    worldProvObj.getSunBrightness(float something);
-    worldProvObj.getSunBrightnessFactor(float something);
-    
+```zenscript
+worldProvObj.getStarBrightness(float something);
+worldProvObj.getSunBrightness(float something);
+worldProvObj.getSunBrightnessFactor(float something);
+```
 
 ### ブロックの湿度が高いかを確認する
 
 [IBlockPos](/Vanilla/World/IBlockPos/)オブジェクトを使ってください。  
 boolean型で返されます。
 
-    worldProvObj.isBlockHighHumidity(IBlockPos pos);
+```zenscript
+worldProvObj.isBlockHighHumidity(IBlockPos pos);
+```
