@@ -7,7 +7,7 @@ Here's the list:
 
 Записывает строчку в лог CraftTweaker как информацию.
 
-```java
+```zenscript
 //print(String сообщение);
 print("Привет, мир!");
 ```
@@ -16,7 +16,7 @@ print("Привет, мир!");
 
 ## totalActions
 
-```java
+```zenscript
 //totalActions();
 totalActions();
 ```
@@ -28,7 +28,7 @@ Returns an int that shows how many global functions are registered.
 Enables Debug mode.  
 Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
 
-```java
+```zenscript
 //enableDebug();
 enableDebug();
 ```
@@ -40,7 +40,7 @@ enableDebug();
 Checks if a given object is null.  
 Doesn't work on primitives!
 
-```java
+```zenscript
 //isNull(Object o);
 isNull(<minecraft:dirt>);
 ```
@@ -49,7 +49,7 @@ Returns a boolean Note: If this does not work for you, try casting the object to
 
 ## max
 
-```java
+```zenscript
 //max(int number1, int number2);
 max(10, 11);
 ```
@@ -58,7 +58,7 @@ max(10, 11);
 
 ## min
 
-```java
+```zenscript
 //min(int number1, int number2);
 min(10, 11);
 ```
@@ -67,7 +67,7 @@ min(10, 11);
 
 ## pow
 
-```java
+```zenscript
 //pow(double основаниеСтепени, double показательСтепени);
 pow(2.0, 4.0);
 ```
