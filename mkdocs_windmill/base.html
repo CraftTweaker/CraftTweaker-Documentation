@@ -69,8 +69,12 @@
   }
 
   function swapVersions(){
+   
     let dat = document.getElementById("versionSelect").value;
-    window.location.href = "/" + dat;
+    if(getVersion() != dat){
+      window.location.href = "/" + dat;
+    }
+    
   }
     </script>
     {% if is_top %}
