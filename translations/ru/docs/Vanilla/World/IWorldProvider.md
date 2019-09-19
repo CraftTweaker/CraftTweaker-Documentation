@@ -12,12 +12,13 @@ It might be required for you to import the package if you encounter any issues, 
 Normally, you can just get the worldProvider from an [IWorld](/Vanilla/World/IWorld/) object or some functions, though if yo need to create one yourself, here's how you do it:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
 
-    crafttweaker.world.IWorldProvider.getFromID(int id);
-    
+```zenscript
+crafttweaker.world.IWorldProvider.getFromID(int id);
+```
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter              | ZenMethod                   | Return Type                            |
+| ZenGetter              | Метод                       | Возвращаемый тип                       |
 | ---------------------- | --------------------------- | -------------------------------------- |
 | actualHeight           | getActualHeight()           | int                                    |
 | actualGroundLevel      | getAverageGroundLevel()     | int                                    |
@@ -50,38 +51,44 @@ Note that this method should only be called inside functions that are meant to b
 Use either an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
 
-    worldProvObj.getBiome(IBlockPos position);
-    
+```zenscript
+worldProvObj.getBiome(IBlockPos position);
+```
 
 ### get MoonPhase for a specific time
 
 Use a long.  
 Returns an int.
 
-    worldProvObj.getMoonPhase(long time);
-    
+```zenscript
+worldProvObj.getMoonPhase(long time);
+```
 
 ### get Respawn Dimension for a specific player
 
 Use an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a new IWorldProvider object.
 
-    worldProvObj.getRespawnDimension(IPlayer player);
-    
+```zenscript
+worldProvObj.getRespawnDimension(IPlayer player);
+```
 
 ### get Brightnes (factor) at a specific
 
 Use a float.  
 Returns a float.
 
-    worldProvObj.getStarBrightness(float something);
-    worldProvObj.getSunBrightness(float something);
-    worldProvObj.getSunBrightnessFactor(float something);
-    
+```zenscript
+worldProvObj.getStarBrightness(float something);
+worldProvObj.getSunBrightness(float something);
+worldProvObj.getSunBrightnessFactor(float something);
+```
 
 ### Check if a block has a high humidity
 
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a boolean.
 
-    worldProvObj.isBlockHighHumidity(IBlockPos pos);
+```zenscript
+worldProvObj.isBlockHighHumidity(IBlockPos pos);
+```
