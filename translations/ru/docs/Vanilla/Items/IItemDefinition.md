@@ -12,18 +12,19 @@ It might be required for you to import the package if you encounter any issues (
 
 The easiest way is from an [IItemStack](/Vanilla/Items/IItemStack/), but you can also get a list of all registered IItemDefinitions in the game and do something with that.
 
-    //IItemStack Zengetter "definition" -> single IItemDefinition
-    val itemDefinition = <minecraft:stone>.definition;
-    
-    //IGame zengetter "items" -> LIST!
-    val itemDefinitionList = game.items;
-    
+```zenscript
+//IItemStack Zengetter "definition" -> single IItemDefinition
+val itemDefinition = <minecraft:stone>.definition;
+
+//IGame zengetter "items" -> LIST!
+val itemDefinitionList = game.items;
+```
 
 ## What to do with it
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | Что он делает                                                                                        | Возвращаемый тип                                               |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | id                 | Returns the item ID                                                                                  | string                                                         |
 | name               | Returns the unlocalized item Name                                                                    | string                                                         |
