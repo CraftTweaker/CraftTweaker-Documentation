@@ -1,4 +1,4 @@
-# NOT Operator
+# 非运算符
 
 A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
 
