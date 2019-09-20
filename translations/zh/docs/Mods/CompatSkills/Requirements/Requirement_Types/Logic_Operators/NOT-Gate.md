@@ -1,10 +1,10 @@
 # 非运算符
 
-**非运算符**翻转输入的状态 So if the input is `TRUE` then the output will be `FALSE` and vice versa.
+**非运算符**翻转输入的状态 所以如果输入为`真`，那么输出将会为`假`，反之亦然
 
-| Input | Output |
-| ----- | ------:|
-| 0     |      1 |
-| 1     |      0 |
+| 输入 | 输出 |
+| -- | --:|
+| 0  |  1 |
+| 1  |  0 |
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
+Reskillable支持的最简单的逻辑需求是将一个条件翻转的能力 它使用一个 非门 来实现这个，语句是 非|条件（与条件相反） As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
