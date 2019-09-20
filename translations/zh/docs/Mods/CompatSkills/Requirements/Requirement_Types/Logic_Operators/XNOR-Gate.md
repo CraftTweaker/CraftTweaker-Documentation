@@ -1,10 +1,10 @@
-# XNOR Operator
+# 异或非 运算符
 
-An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
+**XNOR**是与**XOR**相反的。 这与把**XOR**的输出作为**NOT**输入是一样的。 这意味着只有两个输入都相同时**XNOR**才会返回`TRUE`。 两者都是`TRUE`或两者都是`FALSE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      1 |
+| 输入1 | 输入2 | 输出 |
+| --- | --- | --:|
+| 0   | 0   |  1 |
+| 0   | 1   |  0 |
+| 1   | 0   |  0 |
+| 1   | 1   |  1 |
