@@ -1,6 +1,6 @@
-# NAND Operator
+# 与非运算符
 
-A **NAND** gate is an inverted **AND** gate. This is the same as using the output of the **AND** gate as the input to the **NOT** gate. This means that the **NAND** gate returns `TRUE` in all cases except for when both inputs are also `TRUE`.
+**NAND**门就是一个翻转的**AND**门 这与把**AND**的输出作为**NOT**的输入是一样的。 这意味着**NAND**门在所有情况下都返回`TRUE`，除了两个输入同时为`TRUE`时
 
 | 输入1 | 输入2 | 输出 |
 | --- | --- | --:|
