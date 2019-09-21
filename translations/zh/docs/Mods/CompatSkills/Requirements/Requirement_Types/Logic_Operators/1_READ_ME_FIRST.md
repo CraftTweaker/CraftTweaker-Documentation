@@ -43,7 +43,7 @@ Allow entering the nether if a player has an attack or defense level of at least
 
 * * *
 
-Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
+当一个玩家的防御等级和灵巧等级都到达了24级后，不允许他们使用皮革护甲
 
     addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
     addRequirement(<minecraft:leather_chestplate:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
