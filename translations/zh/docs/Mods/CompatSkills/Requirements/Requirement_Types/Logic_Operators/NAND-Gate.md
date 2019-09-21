@@ -9,16 +9,16 @@
 | 1   | 0   |  1 |
 | 1   | 1   |  0 |
 
-    Empty Example:
+    空白示例：
     nand|[]~[]
     
-    Filled-In Example:
-    nand|[reskillable:defense|24]~[reskillable:agility|24]
+    举例：
+    nand|[reskillable:defence|24]~[reskillable:agility|24]
     
 
-## Use-Case
+## 使用例
 
-Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
+当一个玩家的防御等级和灵巧等级都到达了24级后，不允许他们使用皮革护甲
 
 ```zenscript
 addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
