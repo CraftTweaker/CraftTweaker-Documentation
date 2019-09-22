@@ -1,17 +1,17 @@
 # IWorld
 
-The IWorld object contains information on a Dimension within the game.
+Объект IWorld содержит информацию об измерении в игре.
 
 ## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.world.IWorld`
 
-## Extending IBlockProperties
+## Наследование от IBlockProperties
 
 IBlockState extends [IBlockAccess](IBlockAccess/). That means that all methods that are available to [IBlockAccess](IBlockAccess/) objects are also available to IBlockState objects.
 
-## Creating an IWorld object
+## Создание объекта IWorld
 
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
@@ -20,9 +20,9 @@ Note that this method should only be called inside functions that are meant to b
 crafttweaker.world.IWorld.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## Методы без параметров и геттеры
 
-| Метод              | ZenGetter     | Возвращаемый тип                  | Description                                                                                                                                                                             |
+| Метод              | Геттер        | Возвращаемый тип                  | Описание                                                                                                                                                                                |
 | ------------------ | ------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isRemote()         | remote        | boolean                           | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
 | isRaining()        | raining       | boolean                           | Returns true if it is currently raining.                                                                                                                                                |
