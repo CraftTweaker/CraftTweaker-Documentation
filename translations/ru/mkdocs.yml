@@ -796,11 +796,11 @@ pages:
     - Пользовательские классы ZenScript: 'Dev_Area/Custom_ZenClasses.md'
 
 # Не меняйте в PR'ах то, что ниже
-site_name: Crafttweaker Documentation
-site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+site_name: Документация Crafttweaker
+site_author: Команда CraftTweaker и участников репозитория CrT Wiki на GitHub
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
-repo_name: 'Visit this wiki on GitHub'
+repo_name: 'Посетите эту вики на GitHub'
 
 markdown_extensions:
   - admonition
