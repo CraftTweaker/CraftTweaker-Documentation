@@ -9,32 +9,32 @@
 вы также можете использовать метод `contains`:
 
 ```zenscript
-//if MinecraftCoderPack is loaded
+//если MinecraftCoderPack загружен
 if(loadedMods in "mcp"){
-    print("success!");
+    print("успех!");
 }
 
-//if MinecraftCoderPack is loaded
+//если MinecraftCoderPack загружен
 if(loadedMods.contains("mcp")){
-    print("success!!!");
+    print("успех!!!");
 }
 ```
 
-## Retrieve a specific mod
+## Получить конкретный мод
 
-You can retrieve a specific mod as IMod as long as you have it's ID
+Вы можете получить конкретный мод как IMod, если у вас есть его ID.
 
 ```zenscript
-//retrieves the minecraftCoderPack mod
+//получает мод MinecraftCoderPack
 val mod = loadedMods["mcp"];
 ```
 
-## Iterate through the modList
+## Перебор списка модов
 
 You can iterate through the lost of loaded mods like this:
 
 ```zenscript
-//prints all registred item definitions, not recommended in larger packs!
+//печатает все зарегистрированные определения предметов, не рекомендуется в больших сборках!
 //the mod variable will be an IMod type
 for mod in loadedMods {
     print(mod.name ~ ":");
