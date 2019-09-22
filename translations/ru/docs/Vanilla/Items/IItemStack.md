@@ -27,9 +27,9 @@ If you call these functions, you will most likely do so to iterate through the r
 
 ## Функции
 
-So what can we do with that now?
+Так что же мы можем сделать с ним сейчас?
 
-### Extending IIngredient
+### Наследование от IIngredient
 
 IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
 That means all functionality that is available to [IIngredient](/Vanilla/Variable_Types/IIngredient/) objects also is applicable to IItemStacks. <details><summary>Derived Methods</summary> 
@@ -53,61 +53,61 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 * stack.applyTransform(stack,player)
 * stack.hasTransformers()</details>
 
-### ZenGetters/ZenSetters
+### Геттеры/сеттеры
 
-Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
+Можете прочитать, как их использовать [здесь](/UsingThisWiki/). Также, можете проверить примеры ниже.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Тип                                                         |
-| ------------------- | ------------------- | ----------------------------------------------------------- |
-| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
-| maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
-| damage              |                     | int                                                         |
-| maxDamage           | maxDamage           | int                                                         |
-| hasTag              |                     | bool                                                        |
-| tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
-| ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
-| toolClasses         |                     | List<string\>                                              |
-| itemEnchantability  |                     | int                                                         |
-| containerItem       |                     | IItemStack                                                  |
-| hasContainerItem    |                     | bool                                                        |
-| repairCost          | repairCost          | int                                                         |
-| canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
-| hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
-| metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
-| burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
-| hasCustomEntity     |                     | bool                                                        |
-| enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| Геттер/метод       | Сеттер/метод | Тип                                                         |
+| ------------------ | ------------ | ----------------------------------------------------------- |
+| definition         |              | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
+| name               |              | string                                                      |
+| displayName        | displayName  | string                                                      |
+| maxStackSize       | maxStackSize | int                                                         |
+| hardness           | hardness     | float                                                       |
+| damage             |              | int                                                         |
+| maxDamage          | maxDamage    | int                                                         |
+| hasTag             |              | bool                                                        |
+| tag                | withTag(tag) | [IData](/Vanilla/Data/IData/)                               |
+| ores               |              | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
+| toolClasses        |              | List<string\>                                              |
+| itemEnchantability |              | int                                                         |
+| containerItem      |              | IItemStack                                                  |
+| hasContainerItem   |              | bool                                                        |
+| repairCost         | repairCost   | int                                                         |
+| canEditBlocks      |              | bool                                                        |
+| isOnItemFrame      |              | bool                                                        |
+| isEnchantable      |              | bool                                                        |
+| isEnchanted        |              | bool                                                        |
+| isDamaged          |              | bool                                                        |
+| isDamageable       |              | bool                                                        |
+| isStackable        |              | bool                                                        |
+| isBeaconPayment    |              | bool                                                        |
+| hasEffect          |              | bool                                                        |
+| hasDisplayName     |              | bool                                                        |
+| metadata           |              | int                                                         |
+| hasSubtypes        |              | bool                                                        |
+| isEmpty            |              | bool                                                        |
+| burnTime           |              | int                                                         |
+| showsDurabilityBar |              | bool                                                        |
+| hasCustomEntity    |              | bool                                                        |
+| enchantments       |              | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 
-#### Amount
+#### Количество
 
-| Method call                    | Returns                                                        | ParameterTypes |
-| ------------------------------ | -------------------------------------------------------------- | -------------- |
-| `stack.anyAmount()`            | A new IItemStack with the changed property                     |                |
-| `stack.amount(int amount)`     | A new IItemStack with the changed property                     | int            |
-| `stack.withAmount(int amount)` | A new IItemStack with the changed property                     | int            |
-| `stack *  amount`              | A new IItemStack with the changed property                     | int            |
-| `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
+| Вызов метода                   | Возвращает                                                  | Типы параметров |
+| ------------------------------ | ----------------------------------------------------------- | --------------- |
+| `stack.anyAmount()`            | Новый IItemStack с измененным свойством                     |                 |
+| `stack.amount(int amount)`     | Новый IItemStack с измененным свойством                     | int             |
+| `stack.withAmount(int amount)` | Новый IItemStack с измененным свойством                     | int             |
+| `stack *  amount`              | Новый IItemStack с измененным свойством                     | int             |
+| `stack.splitStack(int amount)` | Разделяет IItemStack. Старый будет соответственно уменьшен. | int             |
 
-#### Weight
+#### Вес
 
-| Method call                   | Returns                                                  | ParameterTypes     |
-| ----------------------------- | -------------------------------------------------------- | ------------------ |
-| `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
-| `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
+| Вызов метода                  | Возвращает                                             | Типы параметров    |
+| ----------------------------- | ------------------------------------------------------ | ------------------ |
+| `stack.percent(float chance)` | [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
+| `stack.weight(float chance)`  | [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
 #### Damage
 
