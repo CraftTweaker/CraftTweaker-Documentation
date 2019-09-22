@@ -117,7 +117,7 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 | `stack.withDamage(int damage)`                 | A new IItemStack with the changed property | int                                        |
 | `stack.damageItem(int amount, IEntity entity)` | void (nothing)                             | int, [IEntity](/Vanilla/Entities/IEntity/) |
 
-#### Tags
+#### Теги
 
 | Method call                    | Returns                                    | ParameterTypes                |
 | ------------------------------ | ------------------------------------------ | ----------------------------- |
