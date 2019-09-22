@@ -1,7 +1,7 @@
 # Использование этой вики
 
-This wiki is meant to provide you an outline on which Types exist in crafttweaker and what their uses are.  
-There also are some examples in certain entries to provide further clarity.
+Эта вики предназначена, чтобы предоставить описание всех типов, которые существуют в CraftTweaker, и как они используются.  
+В некоторых записях также есть примеры, чтобы обеспечить дополнительную ясность.
 
 # Термины
 
@@ -9,7 +9,7 @@ There also are some examples in certain entries to provide further clarity.
 
 ## Геттер
 
-Геттер ZenScipt — способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
+Геттер ZenScipt &mdash; способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
 Мы используем геттер вот так:
 
 ```zenscript
@@ -37,8 +37,8 @@ There also are some examples in certain entries to provide further clarity.
 
 Если у объекта есть и геттер, и сеттер с одинаковым названием (например, [ItemStack.displayName](/Vanilla/Items/IItemStack/)), вы можете использовать другие операторы присваивания помимо `=`:
 
-Depending on the type you can use these: `&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
-Let's see what they do:
+В зависимости от типа вы можете использовать`&=`, `|=`, `+=`, `-=`, `*=`, `/=`, `%=`, `~=`.  
+Давайте посмотрим, что они делают:
 
 ```zenscript
 //Так как у нас есть геттер и сеттер с одинаковыми именами, первый можно совмещать:
