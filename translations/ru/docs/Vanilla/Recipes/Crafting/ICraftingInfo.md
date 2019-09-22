@@ -1,13 +1,13 @@
 # ICraftingInfo
 
-The IcraftingInfo object contains all kinds of information on the crafting process itself:
+Объект ICraftingInfo содержит все виды информации о процессе крафта.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.recipes.ICraftingInventory`
 
-## ZenGetters
+## Геттеры
 
 | ZenGetter   |                                                                     |                                                    |
 | ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |
