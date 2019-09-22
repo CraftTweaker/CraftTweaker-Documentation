@@ -9,8 +9,8 @@
 
 ## Геттеры
 
-| ZenGetter   |                                                                     |                                                    |
-| ----------- | ------------------------------------------------------------------- | -------------------------------------------------- |
-| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | The inventory the crafting is performed in         |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                | The player conducting the crafting                 |
-| `dimension` | int                                                                 | The dimension the crafting process is performed in |
+| Геттер      |                                                                     |                                        |
+| ----------- | ------------------------------------------------------------------- | -------------------------------------- |
+| `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) | Инвентарь, в котором происходит крафт  |
+| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                | Игрок, проводящий крафт                |
+| `dimension` | int                                                                 | Измерение, в котором совершается крафт |
