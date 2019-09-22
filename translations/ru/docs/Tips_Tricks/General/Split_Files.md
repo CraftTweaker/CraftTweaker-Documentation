@@ -7,16 +7,16 @@
 - When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
 - Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
 
-## What we know/need to know
+## Что мы знаем/должны знать
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweaker может загружать файлы из нескольких файлов скриптов.
+- CraftTweaker может даже загружать файлы из вложенных папок.
+- Также CraftTweaker может загружать .zip-файлы, содержащие скрипты .zs внутри, если архив не защищен паролем.
 
 ## Решение
 
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+- Разделяйте ваши огромные скрипты на меньшие.
+- Например, вы можете создать скрипты для каждого мода или для каждого обработчика из мода.
 
 ## Пример
 
@@ -34,10 +34,10 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## Преимущества
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
+- Ваши скрипты становятся легче для отладки.
+- Ошибка не остановит целый скрипт, а только их часть.
 - People checking your script files can easier orient themselves
 
 ## Disadvantages
