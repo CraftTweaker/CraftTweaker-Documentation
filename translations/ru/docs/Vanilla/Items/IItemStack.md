@@ -1,16 +1,16 @@
 # IItemStack
 
-An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
-In other words, it refers to an item or to a block.
+Объект IItemStack состоит из [определения предмета](/Vanilla/Items/IItemDefinition/), значения метаданных и NBT.  
+Другими словами, он ссылается на предмет или блок.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.item.IItemStack;`
 
-## Calling an IItemStack
+## Вызов IItemStack
 
-There are several methods that return an IItemStack
+Есть несколько методов, как получить IItemStack:
 
 * Using the [bracket Handler](/Vanilla/Brackets/Bracket_Item/) `<minecraft:apple>`
 * Using the `makeStack()` method on a [IItemDefinition](/Vanilla/Items/IItemDefinition/) object `<minecraft:stone>.definition.makeStack(0)`
@@ -25,7 +25,7 @@ If you call these functions, you will most likely do so to iterate through the r
 * Using the `itemArray` method on an [IIngredient](/Vanilla/Variable_Types/IIngredient/) returns a IItemStack[]: `<ore:ingotGold>.itemArray`
 * Using the `items` method on a [IMod](/Vanilla/Game/Mods/#imod) object returns a IItemStack[]: `loadedMods["minecraft"].items`
 
-## Functions
+## Функции
 
 So what can we do with that now?
 
