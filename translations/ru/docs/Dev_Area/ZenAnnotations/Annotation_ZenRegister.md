@@ -5,7 +5,7 @@ This is the preferred way of registering Classes in ZenScript.
 
 ## Пример
 
-[CraftTweaker's IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
+[IIngredient из CraftTweaker](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java)
 
 ```java
 @ZenClass("crafttweaker.item.IIngredient")
