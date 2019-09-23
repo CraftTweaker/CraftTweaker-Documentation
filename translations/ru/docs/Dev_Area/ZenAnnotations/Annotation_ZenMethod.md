@@ -7,8 +7,8 @@ The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAn
 
 ## Какие методы могут быть аннотированы || Дополнительная информация
 
-- You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
+- Вы можете помечать все методы: и статические, и нет. 
+- Помеченные методы должны иметь один дополнительный параметр, если внутри [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). Этот параметр должен принимать экземпляр расширенного класса.
 - When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
 
 ## Пример класса
@@ -61,7 +61,7 @@ public class DevWikiTest {
 }
 ```
 
-ZS Script
+Скрипт ZS
 
 ```zenscript
 val instance = crafttweaker.tests.devWikiTest.staticMethod(10);
