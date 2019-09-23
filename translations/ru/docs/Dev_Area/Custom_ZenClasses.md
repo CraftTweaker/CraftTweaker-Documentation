@@ -1,4 +1,4 @@
-# ZenClasses
+# Классы
 
 I am putting this here so only those who want to know at least some things on ZS will find it.
 
@@ -6,22 +6,22 @@ A ZenClass is essentially a java class but you can define it from within ZS.
 If you think 'That does not really fit the theme of a scripting language' you are right.  
 That's why only those who are able to mess with it should ever find this.
 
-## Keywords
+## Ключевые слова
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| Название       | Descrition                                                                                                                             |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
-| var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
-| static         | Creates a class (static) variable. They can't be final.                                                                                |
-| zenConstructor | Creates a constructor for the class.                                                                                                   |
-| function       | Creates an instance method. There's no way of creating static methods, as you can do that outside the class as well.                   |
-| this           | Reference to the object we are currently in. Only useable in methods and constructors. Used if a parameter hides a field, for example. |
+| Название       | Descrition                                                                                                                                          |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| zenClass       | Создает новый класс, после него нужно указать имя.                                                                                                  |
+| var/val        | Создает поле класса, неизменяемое, если использовано ключевое слово val.                                                                            |
+| static         | Создает переменную класса (статическую). Они не могут быть неизменяемыми.                                                                           |
+| zenConstructor | Создает конструктор класса.                                                                                                                         |
+| function       | Создает метод. Нельзя создавать статические методы, потому что вы можете и так создавать их вне класса.                                             |
+| this           | Ссылка на текущий объект. Может быть использована только в методах и конструкторах. Используется, если параметр передает значение в поле, например. |
 
 ## Пример
 
-A commented example:
+Пример с комментариями:
 
 ```zenscript
 <br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
