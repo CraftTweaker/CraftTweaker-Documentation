@@ -1,16 +1,16 @@
 # IFacing
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+Интерфейс IFacing позволяет получать возможные направление для [IBlockPos](/Vanilla/World/IBlockPos/).
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.world.IFacing;`
 
-## Enumerations
+## Перечисление
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+У этого интерфейса 7 статических методов, каждый возвращает соответствующее направление.  
+Последний принимает направление как строку (например, `NORTH`):
 
 ```zenscript
 crafttweaker.world.Facing.north()
@@ -24,7 +24,7 @@ crafttweaker.world.Facing.up()
 crafttweaker.world.Facing.fromString(String name);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## Геттеры/методы без параметров
 
 | ZenGetter | Метод      | Возвращаемый тип |
 | --------- | ---------- | ---------------- |
@@ -32,9 +32,9 @@ crafttweaker.world.Facing.fromString(String name);
 | rotateY   | rotateY()  | IFacing          |
 | opposite  | opposite() | IFacing          |
 
-## Other methods
+## Другие методы
 
-### Comparing two Facings
+### Сравнение двух направлений
 
 You can compare two facings using the standart comparing Operators `== != < > <= >=`  
 Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
