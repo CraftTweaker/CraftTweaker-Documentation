@@ -24,23 +24,23 @@ These are keywords that can be found in the class' body and they will initiate a
 Пример с комментариями:
 
 ```zenscript
-<br />//Creates a class named 'name', you can also access it using scripts.scriptPath.name
+<br />//Создает класс под названием 'name', вы можете получить к нему доступ с помощью script.<путь к скрипту>.name
 
 
 zenClass name {
 
-    //Each variable needs a type set. 
-    //Variables don't need to be initialized, but if you do, initialization is as in Java.
+    //Тип каждого поля должен быть указан. 
+    //Переменные не требуется обязательно инициализировать, но это возможно так же, как в Java.
 
 
-    //Statics are initialized in &lt;clinit&gt;, i.e. when the class is first defined.
+    //Статические поля инициализируются в &lt;clinit&gt;, то есть во время определения класса.
     static myStatic as string = "value";
     static otherStatic as string = "value";
 
     //If an instance varaible has an initializer, it will be initialized after before the first constructor call.
     val nonStatic as string = "123";
 
-    //If an instance variable has no initializer, you can initialize it in the constructor if necessary, even if final.
+    //Если поле объекта не имеет инициализатора, вы можете присвоить ее в конструкторе, даже если она неизменяемая.
     val nonStaticTwo as string;
 
 
