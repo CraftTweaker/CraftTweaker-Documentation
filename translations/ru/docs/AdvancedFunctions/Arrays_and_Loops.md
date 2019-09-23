@@ -146,7 +146,7 @@ while i < 10 {
 print("After loop: " + i);
 
 
-//Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+//Напечатает от 10 до 6, потому что на итерации, где i == 5, цикл прерывается.
 while (i > 0) {
     if i == 5
         break;
@@ -154,7 +154,7 @@ while (i > 0) {
     i -= 1;
 }
 
-print("After loop 2: " + i);
+print("После цикла 2: " + i);
 
 
 for k in 1 .. 10 {
