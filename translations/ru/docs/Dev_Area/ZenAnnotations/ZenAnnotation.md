@@ -1,32 +1,32 @@
-# ZenAnnotation
+# Аннотации ZenScript
 
-A ZenAnnotation can be given to a Class or its Methods to expose it to ZenScript
+Аннотация ZenScript может быть добавлена для класса или его методов, чтобы отобразить его в ZenScript.
 
-## Class annotations
+## Аннотации классов
 
-These annotations can be given to ZenClasses
+Эти аннотации могут быть добавлены на классы ZenScript.
 
-| Annotation                                                               | Value                                                                                            | Target | Information                                                                                 |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------- |
-| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from method formal name          | Class  | Name has to be unique                                                                       |
-| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Class  | Name has to exist already (you cant extend something nonexistant)                           |
-| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                                  | Class  | Used to Automatically register the class or expansion                                       |
-| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Iterable<Type>`                                      |
-| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Class  | Class needs to be assignable to `List<Type>`                                          |
-| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Class  | Class needs to be assignable to `Map<KeyType, ValueType>`                             |
-| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | Bracket Handler Priority (e.g. `priority = 19`)                                                  | Class  | Class needs to be assignable to `IBracketHandler`                                           |
-| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | Required mod's name (`isModLoaded(annotation.getValue())` needs to eval to true)                 | Class  | Used in combination with [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) |
+| Аннотация                                                                | Параметры                                                                                        | Цель  | Дополнительная информация                                                                   |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ----- | ------------------------------------------------------------------------------------------- |
+| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from method formal name          | Класс | Имя должно быть уникальным                                                                  |
+| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | Expanded ZenType name (e.g. `crafttweaker.item.IItemStack`)                                      | Класс | Имя должно быть уже объявленным (вы не можете расширить что-то несуществующее)              |
+| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                                  | Класс | Used to Automatically register the class or expansion                                       |
+| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Класс | Class needs to be assignable to `Iterable<Type>`                                      |
+| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | ZenClass name of the Iterable key and value Type (e.g. `string`, `crafttweaker.item.IItemStack`) | Класс | Class needs to be assignable to `List<Type>`                                          |
+| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | ZenClass name of the Iterable Type (e.g. `crafttweaker.mods.IMod`)                               | Класс | Class needs to be assignable to `Map<KeyType, ValueType>`                             |
+| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | Приоритет обработчика скобок (например, `priority = 19`)                                         | Класс | Class needs to be assignable to `IBracketHandler`                                           |
+| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | Required mod's name (`isModLoaded(annotation.getValue())` needs to eval to true)                 | Класс | Used in combination with [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) |
 
-## Parameter annotations
+## Аннотации параметров
 
-These annotations can be given to Method Parameters
+Эти аннотации могут быть даны параметрам методов.
 
-| Annotation                                                   | Target    | Information                                                                                   |
-| ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------- |
-| `@NotNull`                                                   | Parameter | Does nothing (NYI)                                                                            |
-| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Parameter | Denotes a Parameter as optional. Optional parameters can be omitted when calling the function |
+| Аннотация                                                    | Цель     | Дополнительная информация                                                                              |
+| ------------------------------------------------------------ | -------- | ------------------------------------------------------------------------------------------------------ |
+| `@NotNull`                                                   | Параметр | Does nothing (NYI)                                                                                     |
+| [`@Optional`](/Dev_Area/ZenAnnotations/Annotation_Optional/) | Параметр | Обозначает параметр как необязательный. Необязательные параметры могут быть опущены при вызове функции |
 
-## Method annotations
+## Аннотации методов
 
 These annotations can be given to Methods (both static and nonstatic)
 
