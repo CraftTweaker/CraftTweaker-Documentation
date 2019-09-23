@@ -44,7 +44,7 @@ zenClass name {
     val nonStaticTwo as string;
 
 
-    //A constructor requires all parameters (explicitly typed)
+    //Конструктор должен принимать все параметры с явно указанными типами
     zenConstructor(parameter as string, parameter2 as string) {
         print("TETETE");
         print(parameter);
@@ -54,13 +54,13 @@ zenClass name {
     }
 
 
-    //You can have several constructors, but there is no way of constructor chaining.
+    //Вы можете объявить несколько конструкторов. Цепи конструкторов не поддерживаются.
     zenConstructor(parameter as string) {
         print("FFFFFF");
     }
 
 
-    //It is recommended that you explicitly state method's return types as well.
+    //Рекомендуется явно указать также возвращаемые типы методов.
     function myMethod(arg as string, arg1 as string) as string {
         return "value" + arg ~ arg1;
     }
@@ -69,20 +69,20 @@ zenClass name {
 
 
 
-//You call a constructor by calling the class type/name
+//Конструкторы вызываются по имени самого класса
 var test = name("NOPE");
 test = name("nope", "noper");
 print(test.myMethod("one", "two"));
 
 print("");
 
-//You can call statics by the use of the class type/name
+//Статические поля и методы вызываются от самого класса
 print(name.myStatic);
 print(name("parameter1", "parameter2").nonStatic);
 
 val ttt = name("t");
 
-//You can also call statics by the use of a class instance.
+//Вы также можете вызывать статические поля и методы от экземпляров класса.
 ttt.myStatic = "1";
 print(ttt.myStatic);
 ```
