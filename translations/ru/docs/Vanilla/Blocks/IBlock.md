@@ -8,7 +8,7 @@ It refers to a block in the game.
 Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.block.IBlock;`
 
-## Calling an IBlock Object
+## Вызов объектов IBlock
 
 Есть несколько способов получить объект IBlock:
 
