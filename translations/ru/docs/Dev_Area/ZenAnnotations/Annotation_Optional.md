@@ -80,12 +80,12 @@ public static IItemStack getFromString(String value) {
 }
 ```
 
-## What parameters can be annotated?
+## Какие параметры можно отметить?
 
-All parameters can be annotated, but you need to remember that annotated parameters need to be at the end, so while this would technically work, method calls would fail:
+Можно пометить все параметры, но нужно помнить, что эти параметры должны быть в конце. Технически такой вызов возможен, но он бесполезен:
 
 ```java
 myMethod(@Optional String name, int number)
 ```
 
-Calling this method with only an int will always fail!
+Вызов этого метода только с целым числом всегда будет провальным!
