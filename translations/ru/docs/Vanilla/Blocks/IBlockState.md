@@ -11,12 +11,12 @@
 
 Есть несколько методов, которые возвращают объекты IBlockState:
 
-- Using the [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
-- Using the `IBlockState.getBlockState()` static method. (See below for more information)
-- Using the `getMatchingBlockStates()` method on an [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) object to retrieve an array of IBlockStates.
-- Using the `withProperty()` method on another IBlockState object.
+- используя [обработчик скобок](/Vanilla/Brackets/Bracket_BlockState/) &mdash; `<blockstate:minecraft:log:variant=spruce>`,
+- используя статический метод `IBlockState.getBlockState()` (см. ниже для получения дополнительной информации),
+- используя метод `getMatchingBlockStates()` от объекта [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/), чтобы получить массив IBlockState,
+- используя метод `withProperty()` от другого объекта IBlockState.
 
-## Resolving an IBlockState At Runtime
+## Разрешение IBlockState во время исполнения
 
 There may be times at which your script may rely on interaction with a block from a mod that has not been loaded yet, such as inside block events in ContentTweaker or another pre-init script loader. If you attempt to use a [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for a block that has not yet been registered, the handler will fail to resolve and your script will not work.
 
@@ -41,13 +41,13 @@ IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). T
 
 ## Методы и геттеры
 
-| ZenGetter     | Возвращаемый тип                  | Описание                                                                                   |
-| ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
-| meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| ZenGetter     | Возвращаемый тип                  | Описание                                                                                            |
+| ------------- | --------------------------------- | --------------------------------------------------------------------------------------------------- |
+| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Возвращает соответствующий блок                                                                     |
+| meta          | int                               | Возвращает текущие метаданные блока                                                                 |
+| commandString | string                            | Возвращает возможный [обработчик скобок](/Vanilla/Brackets/Bracket_BlockState/) для этого состояния |
 
-## ZenMethods
+## Методы
 
 ### isReplacable
 
