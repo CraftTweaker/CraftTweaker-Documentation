@@ -1,31 +1,31 @@
 # ICreativeTab
 
-An ICreativeTabObject represents a creative inventory tab.
+Объект ICreativeTab представляет вкладку творческого режима.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.creativetabs.ICreativeTab;`
 
-## Getting such an Object
+## Получение такого объекта
 
-You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
+Вы можете получить ICreativeTab из [обработчика скобок для вкладок творческого режима](/Vanilla/Brackets/Bracket_CreativeTab/).
 
-## ZenGetters and ZenMethods without parameters
+## Геттеры и методы без параметров
 
-| ZenGetter/ZenMethod | Возвращаемый тип |
-| ------------------- | ---------------- |
-| searchBarWidth      | int              |
-| tabLabel            | string           |
-| setNoScrollBar()    | void (nothing)   |
-| setNoTitle()        | void (nothing)   |
+| Геттер/метод     | Возвращаемый тип |
+| ---------------- | ---------------- |
+| searchBarWidth   | int              |
+| tabLabel         | string           |
+| setNoScrollBar() | void             |
+| setNoTitle()     | void             |
 
-## ZenMethod
+## Метод
 
-#### Set Background image Name
+#### setBackgroundImageName
 
-Uses a string (e.g. `"item_search.png"`).  
-Returns void (nothing).
+Использует строку (например, `"item_search.png"`).  
+Ничего не возвращает.
 
 ```zenscript
 tab.setBackgroundImageName(String backgroundImage);
