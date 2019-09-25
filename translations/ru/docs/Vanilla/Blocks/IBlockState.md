@@ -1,15 +1,15 @@
 # IBlockState
 
-An IBlockState object represents a block's current state.
+Объект IBlockState представляет текущее состояние блока.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.block.IBlockState;`
 
-## Calling an IBlockState
+## Вызов IBlockState
 
-There are several methods that return an IBlockState
+Есть несколько методов, которые возвращают объекты IBlockState:
 
 - Using the [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) `<blockstate:minecraft:log:variant=spruce>`
 - Using the `IBlockState.getBlockState()` static method. (See below for more information)
@@ -31,7 +31,7 @@ To avoid this, you can use the static `IBlockState.getBlockState()` method to re
 
 Returns an IBlockState of the specified `blockname` with the specified `properties`, or the default blockstate if no properties are specified.
 
-## Extending IBlockProperties
+## Наследование от IBlockProperties
 
 IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That means that all methods that are available to [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) objects are also available to IBlockState objects.
 
@@ -39,9 +39,9 @@ IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That 
 
 IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
 
-## ZenMethods and ZenGetters
+## Методы и геттеры
 
-| ZenGetter     | Возвращаемый тип                  | Description                                                                                |
+| ZenGetter     | Возвращаемый тип                  | Описание                                                                                   |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
 | block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
 | meta          | int                               | Returns the refered block's metadata                                                       |
