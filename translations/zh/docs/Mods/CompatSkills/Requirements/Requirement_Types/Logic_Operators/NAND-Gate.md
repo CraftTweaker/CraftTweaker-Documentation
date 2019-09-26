@@ -12,11 +12,11 @@
     空白示例：
     nand|[]~[]
     
-    举例：
+    填写后举例：
     nand|[reskillable:defence|24]~[reskillable:agility|24]
     
 
-## 使用例
+## 案例
 
 当一个玩家的防御等级和灵巧等级都到达了24级后，不允许他们使用皮革护甲
 
