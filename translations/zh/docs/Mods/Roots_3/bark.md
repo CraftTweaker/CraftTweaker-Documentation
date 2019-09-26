@@ -1,6 +1,6 @@
 # 树皮配方（Bark）
 
-### 所属类名
+### 类
 
 ```zenscript
 import mods.roots.Bark;
@@ -30,4 +30,4 @@ Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>);
 
 ### 注意
 
-并没有移除树皮配方以及小刀->树皮的方法存在。
+并非存在移除树皮配方以及小刀->树皮的方法。
