@@ -12,7 +12,7 @@ item.clearTooltip();
 ## Removing specific tooltips
 This function removes all tooltips that match the given regex.
 One tooltip is generally one line of text (unless there are forced linebreaks due to space).
-```
+```zenscript
 item.removeTooltip(regex);
 ```
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
@@ -100,7 +100,7 @@ This means that using a `format` command _does not work_ for these functions, yo
 For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed.
 For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
 
-```css
+```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
 addShiftTooltip(ITooltipFunction fn, @Optional ITooltipFunction infoFn);
 
