@@ -116,7 +116,7 @@ for liquid in <minecraft:water_bucket>.liquids {
 そのときには、Transformerを使いましょう。
 
 ```zenscript
-<br />val item = &lt;minecraft:apple&gt;;
+<br />val item = <minecraft:apple>;
 
 //アイテムはクラフティンググリッド上に残ります
 transformedItem = item.reuse();
@@ -125,10 +125,10 @@ transformedItem = item.reuse();
 transformedItem = item.giveBack();
 
 //アイテムを消費し、指定したアイテムをプレイヤーに与えます(クラフティンググリッドはクリアされます)
-transformedItem = item.giveBack(&lt;minecraft:potato&gt;);
+transformedItem = item.giveBack(<minecraft:potato>);
 
 //クラフティンググリッド上にて、アイテムを指定したアイテムに置き換えます
-transformedItem = item.transformReplace(&lt;minecraft:potato&gt;);
+transformedItem = item.transformReplace(<minecraft:potato>);
 
 //アイテムにダメージを1与えます
 transformedItem = item.transformDamage();
