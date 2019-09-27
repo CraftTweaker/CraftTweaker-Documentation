@@ -116,7 +116,7 @@ Sometimes you want an item not to be consumed upon crafting but instead receive 
 This is what item Transformers are there for.
 
 ```zenscript
-<br />val item = &lt;minecraft:apple&gt;;
+<br />val item = <minecraft:apple>;
 
 //Item won't be consumed and will stay in the grid
 transformedItem = item.reuse();
@@ -125,10 +125,10 @@ transformedItem = item.reuse();
 transformedItem = item.giveBack();
 
 //item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(&lt;minecraft:potato&gt;);
+transformedItem = item.giveBack(<minecraft:potato>);
 
 //item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(&lt;minecraft:potato&gt;);
+transformedItem = item.transformReplace(<minecraft:potato>);
 
 //damages the item by 1
 transformedItem = item.transformDamage();
