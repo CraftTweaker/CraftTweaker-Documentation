@@ -10,12 +10,12 @@
 
 ```zenscript
 //mods.skyresources.infusion.addRecipe(<产物>, <原料>, 灌注的方块, 消耗生命数);
-mods.skyresources.infusion.addRecipe(&lt;minecraft:diamond&gt; * 8, &lt;minecraft:nether_star&gt;, &lt;minecraft:dirt&gt;, 14);
+mods.skyresources.infusion.addRecipe(<minecraft:diamond> * 8, <minecraft:nether_star>, <minecraft:dirt>, 14);
 ```
 
 ## 删除配方
 
 ```zenscript
 //mods.skyresources.infusion.removeRecipe(<产物>);
-mods.skyresources.infusion.removeRecipe(&lt;minecraft:cactus&gt;);
+mods.skyresources.infusion.removeRecipe(<minecraft:cactus>);
 ```
