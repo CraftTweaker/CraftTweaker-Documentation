@@ -1,13 +1,13 @@
 # IMaterial
 
-An IMaterial object represents the material a block is made of.
+Объект IMaterial представляет материал, из которого сделан блок.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## Геттеры/методы без параметров
 
 | ZenGetter       | Метод               | Возвращаемый тип |
 | --------------- | ------------------- | ---------------- |
@@ -33,7 +33,7 @@ Returns a bool.
 materialObj.matches(IMaterial other);
 ```
 
-## Getting Vanilla Minecraft Materials
+## Получение оригинальных материалов из Minecraft
 
 You can use these methods to get the vanilla minecraft materials
 
