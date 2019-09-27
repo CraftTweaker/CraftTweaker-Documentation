@@ -35,13 +35,13 @@ val myAssocArray = {
 違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```zenscript
-<br />val dirt = &lt;minecraft:dirt&gt;;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    <minecraft:dirt> : "This is me"
 } as string[IItemStack];
 
 //array[index]
-print(assocArray[&lt;minecraft:dirt&gt;]);
+print(assocArray[<minecraft:dirt>]);
 
 //変数の型が正しいときに限り、ここで変数を用いることもできます
 print(assocArray[dirt]);
