@@ -35,13 +35,13 @@ Man greift auf assoziative Arrays genau so zu, wie man es auch bei normalen [Arr
 Der einzige Unterschied ist eben, dass man nun nicht unbedingt einen Integer braucht, sondern etwas, was dem davor spezifizierten Typ entspricht!
 
 ```zenscript
-<br />val dirt = &lt;minecraft:dirt&gt;;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "Das bin ich"
+    <minecraft:dirt> : "Das bin ich"
 } as string[IItemStack];
 
 //array[index]
-print(assocArray[&lt;minecraft:dirt&gt;]);
+print(assocArray[<minecraft:dirt>]);
 
 //Du kannst hier auch Variablen verwenden, solange diese den richtigen Typ besitzen
 print(assocArray[dirt]);
