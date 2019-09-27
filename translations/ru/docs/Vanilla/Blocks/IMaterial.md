@@ -9,7 +9,7 @@
 
 ## Геттеры/методы без параметров
 
-| ZenGetter       | Метод               | Возвращаемый тип |
+| Геттер          | Метод               | Возвращаемый тип |
 | --------------- | ------------------- | ---------------- |
 | blocksLight     | blocksLight()       | bool             |
 | blocksMovement  | blocksMovement()    | bool             |
@@ -22,12 +22,12 @@
 | toolNotRequired | isToolNotRequired() | bool             |
 |                 | setReplaceable()    | IMaterial        |
 
-## ZenMethods with parameters
+## Методы с параметрами
 
-### Check if two IMaterials match
+### matches
 
-Uses an IMaterial.  
-Returns a bool.
+Принимает IMaterial.  
+Возвращает булево.
 
 ```zenscript
 materialObj.matches(IMaterial other);
@@ -35,7 +35,7 @@ materialObj.matches(IMaterial other);
 
 ## Получение оригинальных материалов из Minecraft
 
-You can use these methods to get the vanilla minecraft materials
+Вы можете использовать эти методы, чтобы получить материалы из оригинальной игры:
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
