@@ -27,8 +27,8 @@ I won't cover how to add it in detail, all you need to do is add the directory w
 If you for example installed Git to `C:\Program Files\Git` you will need to add `C:\Program Files\Git\cmd` to your path.  
 Afterwards restart your command prompt or your computer.
 
-Technically, this is not required but it makes some commands easier.
+Технически, это не обязательно, но упрощает работу с некоторыми командами.
 
 ## Что дальше
 
-Now that you have installed git you can [clone your forked repository](/Contribute/LocalClone/Clone/).
+Теперь, когда у вас установлен Git, вы можете [клонировать ваш форк репозитория](/Contribute/LocalClone/Clone/).
