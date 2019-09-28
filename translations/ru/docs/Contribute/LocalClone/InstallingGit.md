@@ -1,9 +1,9 @@
-# Installing Git
+# Установка Git
 
-In order for you to [clone your forked repository](/Contribute/LocalClone/Clone/) you will need to install git.  
-Git is a distributed version control system (basically, it's what GitHub, BitBucket and other version control services use).
+Для того чтобы [клонировать ваш форк репозитория](/Contribute/LocalClone/Clone/), вам нужно установить Git.  
+Git &mdash; это распределенная система контроля версий (если проще, это то, что используют GitHub, BitBucket и другие такие сервисы).
 
-## Getting Git
+## Получение Git
 
 You can check if you have git installed by opening the Command Prompt and executing the command `git`.  
 If you get the usage page, then you have it installed and can skip this page.  
