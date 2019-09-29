@@ -1,6 +1,6 @@
-# Create a Commit
+# Создание коммитов
 
-## Prerequisites
+## Требования
 
 You need to have [Cloned the repo to your local disk](/Contribute/LocalClone/Clone).  
 You also need to already have changed something within your local clone.
