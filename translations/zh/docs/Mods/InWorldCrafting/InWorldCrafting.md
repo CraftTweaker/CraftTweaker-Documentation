@@ -8,8 +8,7 @@
 
 * * *
 
-扔一个空水瓶进水中得到一个水瓶(消耗水源方块).  
-`mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);` <0/> 
+扔一个空水瓶进水中得到一个水瓶(消耗水源方块). `mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);`
 
 * * *
 
