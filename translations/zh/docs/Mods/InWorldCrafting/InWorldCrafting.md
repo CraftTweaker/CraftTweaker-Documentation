@@ -1,7 +1,6 @@
 # 例子
 
-Creates lava by dropping 4x of any logWood into cryotheum.  
-`mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
+扔四个任意原木进凛冰液体转换成岩浆 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
 
 * * *
 
