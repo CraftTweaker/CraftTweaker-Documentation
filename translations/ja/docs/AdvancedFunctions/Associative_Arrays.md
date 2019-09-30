@@ -80,18 +80,18 @@ val changingArray = {
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
+//gold_ingotの値を変更します
 changingArray[gg] = "and I love it";
 
-//adds a new entry
+//新しいエントリを追加します
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## 連想配列のキーおよびエントリセットの取得
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+連想配列のすべてのキーを配列に格納したものがkeySet、  
+連想配列のすべての値を配列に格納したものがvalueSet、  
+連想配列のすべてのエントリを配列に格納したものがentrySetです(以下を参照ください)。
 
 ```zenscript
 myAssocArray.keySet   //keySet
@@ -101,11 +101,11 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## 連想配列の反復処理
 
-There are two Iterators that allow you to iterate over an Associative Array:
+連想配列では次の2つのイテレータで反復処理が可能です。
 
-- The key-Iterator: Iterates over the keys, uses one variable
+- キーイテレータ: キーを反復し、1つの変数を使用
 - The key-value-Iterator: Iterates over the keys and values, uses two variables
 
 Let's add an Associative Array that stores crafting recipes to be iterated over:
