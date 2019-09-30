@@ -1,15 +1,15 @@
 # 例子
 
-扔四个任意原木进凛冰液体转换成岩浆 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
+扔四个任意原木进凛冰液体，让凛冰液体转换成岩浆 `mods.inworldcrafting.FluidToFluid.transform(<liquid:lava>, <liquid:cryotheum>, [<ore:logWood> * 4]);`
 
 * * *
 
-Creates Treated Wood by dropping some Birch Planks in Creosote. `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
+扔一些白桦木板进杂酚油，让白桦木板变成被处理过的木头 `mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood>, <liquid:creosote>, [<minecraft:planks:2>]);`
 
 * * *
 
-Creates a Water Bottle by dropping a Glass Bottle in Water, consumes the Water sourceblock.  
-`mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);`
+扔一个空水瓶进水中得到一个水瓶(消耗水源方块).  
+`mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);` <0/> 
 
 * * *
 
