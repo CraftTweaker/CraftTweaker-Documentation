@@ -106,12 +106,12 @@ myAssocArray.entrySet //entrySet
 連想配列では次の2つのイテレータで反復処理が可能です。
 
 - キーイテレータ: キーを反復し、1つの変数を使用
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- キー・値イテレータ: キーと値両方を反復し、2つの変数を使用
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+では、反復処理されるクラフトレシピを保持する連想配列を作ってみましょう。
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
+- キーはクラフト成果で、[IItemStack](/Vanilla/Items/IItemStack/)とする
+- 値はクラフト材料で、[IIngredient](/Vanilla/Variable_Types/IIngredient/)とする
 - We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
 - We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
 
@@ -127,13 +127,13 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//キーはgrass, goldIngot, dirt
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//キーはgrass, goldIngot, dirt、値はそれらのレシピ
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
