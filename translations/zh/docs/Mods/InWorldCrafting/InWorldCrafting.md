@@ -21,11 +21,11 @@
 
 * * *
 
-Create a Block of Charcoal when 4 pieces of logWood has burned for 60 ticks. `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
+焚烧四块原木60秒，烧成木炭块 `mods.inworldcrafting.FireCrafting.addRecipe(<thermalfoundation:storage_resource>, <ore:logWood> * 4, 60);`
 
-# Documentation
+# 文档
 
-## Note on fluidcrafting
+## 关于液体的修改
 
 **Don't add the same ingredient multiple times, use `<ingredient> * count`. It's there for a reason.**  
 The game merges nearby items into stacks so finding multiple ingredients of the same type in one BlockSpace only happens when the first EntityItem gets a full stack of items, so the craft won't happen like you would expect.
@@ -65,18 +65,18 @@ import should be `mods.inworldcrafting.FireCrafting`
 
 The default number of ticks to create the output is `40` (2 seconds)
 
-## Exploding Items/Blocks
+## 炸毁 物品/方块
 
 import should be `mods.inworldcrafting.ExplosionCrafting`
 
-### Exploding items
+### 炸毁物品
 
 **Usage**  
 `ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);`
 
 Survivechance sets the chance for how likely the recipe is to be successful. Default value is `100`%
 
-### Exploding Blocks
+### 炸毁方块
 
 **Usage**  
 `ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);`
