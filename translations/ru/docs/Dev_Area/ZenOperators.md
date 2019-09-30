@@ -1,8 +1,8 @@
-# ZenOperators
+# Операторы ZenScript
 
-[`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/) Annotation
+Аннотация [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
-| ZenOperator  | Associated Token                        | TokenAssign / Alternate Token/Additional Info                      |
+| Оператор     | Соответствующий токен                   | Присваивающий токен/альтернативный токен/дополнительная информация |
 | ------------ | --------------------------------------- | ------------------------------------------------------------------ |
 | ADD          | `+`                                     | `+=`                                                               |
 | SUB          | `-`                                     | `-=`                                                               |
