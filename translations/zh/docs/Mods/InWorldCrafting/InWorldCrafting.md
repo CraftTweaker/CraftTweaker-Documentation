@@ -17,7 +17,7 @@
 
 * * *
 
-Create 8 sticks 75% of the time when Acacia Planks placed in the world is hit by an Explosion. `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
+75%几率把金合欢木板(放置状态) 炸成8根木棍 `mods.inworldcrafting.ExplosionCrafting.explodeBlockRecipe(<minecraft:stick> * 8, <minecraft:planks:4>, 75);`
 
 * * *
 
