@@ -8,11 +8,11 @@
 
 * * *
 
-扔一个空水瓶进水中得到一个水瓶(消耗水源方块). `mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);`
+扔一个空水瓶进水中得到一个水瓶(消耗水源方块). `mods.inworldcrafting.FluidToItem.transform(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <liquid:water>, [<minecraft:glass_bottle>], true);<br />//true表示消耗液体方块，反之为false`
 
 * * *
 
-Create Steel 15% of the time when ingotIron dropped in the world is hit by an Explosion.  
+铁锭(掉落物状态)被炸有15%几率转化为钢锭.  
 `mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<ore:ingotSteel>.firstItem, <ore:ingotIron>, 15);`
 
 * * *
