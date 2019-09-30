@@ -27,7 +27,7 @@
 
 ## 关于液体的修改
 
-**Don't add the same ingredient multiple times, use `<ingredient> * count`. It's there for a reason.**  
+**不要重复加相同的物品, 应该用 `<物品> * 数量`. It's there for a reason.**  
 The game merges nearby items into stacks so finding multiple ingredients of the same type in one BlockSpace only happens when the first EntityItem gets a full stack of items, so the craft won't happen like you would expect.
 
 ### BAAD!
