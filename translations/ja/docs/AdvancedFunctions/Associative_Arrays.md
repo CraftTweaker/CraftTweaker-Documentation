@@ -112,8 +112,8 @@ myAssocArray.entrySet //entrySet
 
 - キーはクラフト成果で、[IItemStack](/Vanilla/Items/IItemStack/)とする
 - 値はクラフト材料で、[IIngredient](/Vanilla/Variable_Types/IIngredient/)とする
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- 次のような構文のキーイテレータを使用: `for key in assocArray {doSth;}`
+- 次のような構文のキー・値イテレータを使用: `for key, value in assocArray {doSth;}`
 
 ```zenscript
 import crafttweaker.item.IItemStack;
