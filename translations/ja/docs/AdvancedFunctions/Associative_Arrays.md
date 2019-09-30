@@ -66,11 +66,11 @@ print(assocWithStrings.one);
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## 連想配列の要素への操作
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+配列と同じく、`array[index] = newValue`を通して連想配列内の要素を操作することができます。  
+ただし、1つ大きな違いがあります。  
+配列は大きさが固定されていますが、連想配列はそうではありません。 すなわち、未使用のインデックスに要素を設定することによって、いつでもエントリを追加できます。
 
 ```zenscript
 val changingArray = {
