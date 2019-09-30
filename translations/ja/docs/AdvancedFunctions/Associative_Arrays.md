@@ -141,16 +141,16 @@ for key, value in recipeMapShaped {
 
 # ZenType Entry
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+連想配列のエントリはキーと値によって成り立っています。  
+現状このオブジェクトは連想配列のentrySetメソッドを用いることによってのみ取得できます。
 
-You can use the getters to get `key` and `value`
+getterとして`key`と`value`が用意されています。
 
 ```zenscript
-//Replace map with a reference to an existing map/associative array
+//マップを既存のマップ/連想配列への参照に置き換えます
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //エントリのキーを返します
+myEntry.value;  //エントリの値を返します
 ```
