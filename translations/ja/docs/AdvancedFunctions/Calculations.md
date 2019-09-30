@@ -1,9 +1,9 @@
-# Calculations
+# 計算
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+数字入力だけでは十分でない場合があります。 ときに計算が必要になる場面があります。  
+1回の計算に3つ以上の数値が利用できることに留意してください。`1+1+1+1`も問題なく計算されます。
 
-## A word of advice
+## アドバイス
 
 When unexpected results happen in a calculation, it is very well possible that you used two different types.  
 For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
