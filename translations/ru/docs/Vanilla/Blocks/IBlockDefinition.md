@@ -74,10 +74,10 @@ Returns a float.
 defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @Optional IEntity entity);
 ```
 
-### Set the block's harvest level
+### setHarvestLevel
 
-Uses a string and an int.  
-Returns void (nothing).
+Принимает строку и целое число.  
+Ничего не возвращает.
 
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
