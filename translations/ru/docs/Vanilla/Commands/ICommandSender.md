@@ -1,7 +1,7 @@
 # ICommandSender
 
-The ICommandSender interface is used the base of each Entity and also some other types in CraftTweaker.  
-Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlayer/) implements this!
+Интерфейс ICommandSender используется в качестве основы для всех сущностей и еще нескольких типов CraftTweaker.  
+Каждый объект [IEntity](/Vanilla/Entities/IEntity/) и [IPlayer](/Vanilla/Players/IPlayer/) реализует этот интерфейс!
 
 ## Импорт пакета
 
@@ -19,9 +19,9 @@ Each [IEntity](/Vanilla/Entities/IEntity/) and [IPlayer](/Vanilla/Players/IPlaye
 
 ## Методы
 
-#### Send Message
+#### sendMessage
 
-Takes a String. Returns void (nothing).
+Принимает строку. Ничего не возвращает.
 
 ```zenscript
 sender.sendMessage(String text);
