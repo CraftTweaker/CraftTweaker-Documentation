@@ -1,61 +1,61 @@
 # IBlockDefinition
 
-The IBlockDefinition objects provide additional information on blocks.
+Объекты IBlockDefinition предоставляют дополнительную информацию о блоках.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.block.IBlockDefinition;`
 
-## Calling an IBlockDefinition object
+## Получение объекта IBlockDefinition
 
-* Using the `definition` ZenGetter on an [IBlock](/Vanilla/Blocks/IBlock/) object.
+* Воспользуйтесь геттером `definition` от объекта [IBlock](/Vanilla/Blocks/IBlock/).
 
-## Calling an IBlockDefinition List
+## Получение списка объектов IBlockDefinition
 
-* Using `game.blocks` to get a list of all block definition in the game.
+* Воспользуйтесь геттером `game.blocks`, чтобы получить все определения блоков в игре.
 
-## ZenGetters/ZenSetters
+## Геттеры/сеттеры
 
-| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
-| --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
-| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                              | float                                               |
-| id              |                     | Returns the block ID                         | string                                              |
-| displayName     |                     | Returns the block's DisplayName              | string                                              |
-|                 | hardness            |                                              | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
-| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
-|                 | lightOpacity        |                                              | int                                                 |
-|                 | lightLevel          |                                              | int                                                 |
-|                 | resistance          |                                              | int                                                 |
-| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
-| tickRandomly    | tickRandomly        |                                              | bool                                                |
+| Геттер          | Сеттер              | Что он делает                                         | Тип                                                 |
+| --------------- | ------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+|                 | canSpawnInBlock     | Возвращает, может ли сущность появиться на этом блоке | bool                                                |
+| creativeTab     | creativeTab         |                                                       | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState    |                     |                                                       | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                 | defaultSlipperiness |                                                       | float                                               |
+| id              |                     | Возвращает ID блока                                   | string                                              |
+| displayName     |                     | Возвращает отображаемое имя блока                     | string                                              |
+|                 | hardness            |                                                       | int                                                 |
+| harvestLevel    |                     | Возвращает уровень добычи блока                       | int                                                 |
+| harvestTool     |                     | Возвращает инструмент для добычи этого блока          | string                                              |
+|                 | lightOpacity        |                                                       | int                                                 |
+|                 | lightLevel          |                                                       | int                                                 |
+|                 | resistance          |                                                       | int                                                 |
+| unlocalizedName |                     | Возвращает нелокализованное имя блока                 | string                                              |
+| tickRandomly    | tickRandomly        |                                                       | bool                                                |
 
-## ZenMethods
+## Методы
 
-### Set Block unbreakable
+### setUnbreakable
 
-Uses no paramaeters.  
-Returns nothing.  
-Does the same as `hardness = -1;`
+Не принимает никаких параметров.  
+Ничего не возвращает.  
+Делает то же, что и `hardness = -1;`
 
 ```zenscript
 defObj.setUnbreakable();
 ```
 
-### Get tickrate in a specific world
+### getTickRate
 
-Uses an [IWorld](/Vanilla/World/IWorld/) object.  
-Returns an int.
+Принимает объект [IWorld](/Vanilla/World/IWorld/).  
+Возвращает целое число.
 
 ```zenscript
 defObj.getTickRate(IWorld world);
 ```
 
-### Check if the block can be placed on another block
+### canPlaceBlockAt, canPlaceBlockOnSide
 
 Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
 Returns a bool.
@@ -65,7 +65,7 @@ defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
 defObj.canPlaceBlockAt(IWorld world, IBlockPos pos);
 ```
 
-### Get the block's slipperiness
+### getSlipperiness
 
 Uses an [IBlockState](/Vanilla/Blocks/IBlockState/), an [IBlockAccess](/Vanilla/World/IBlockAccess/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) and an optional [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a float.
