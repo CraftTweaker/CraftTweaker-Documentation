@@ -9,7 +9,7 @@ We want to remove the wools with meta 3 to 12. What do we do?
 We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  
 While in this example this would totally work, in large scale this becomes pretty annoying!
 
-## What do we know/need to know
+## Что мы знаем/должны знать
 
 - recipes.remove requires an [IIngredient](/Vanilla/Variable_Types/IIngredient/) Object
 - An [IItemStack](/Vanilla/Items/IItemStack/) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient/) as [IItemstack](/Vanilla/Items/IItemStack/) extends [IIngredient](/Vanilla/Variable_Types/IIngredient/)
