@@ -23,7 +23,7 @@ val myAssocArray = {
 - `}` we have reached the end of the Array, Sir!
 - `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
 
-Okay, so what do I need to think of when using these?
+Окей, что мне нужно подумать насчет использования всего этого?
 
 - You can use about every type available to Zenscript as either key or value.
 - You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
