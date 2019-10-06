@@ -10,7 +10,7 @@
 ## Геттер
 
 Геттер ZenScipt &mdash; способ получить информацию о некотором объекте. Например, у [IItemStack](/Vanilla/Items/IItemStack/) есть геттер displayName.  
-Мы используем геттер вот так:
+Мы используем геттеры вот так:
 
 ```zenscript
 //объект.zenGetter;
