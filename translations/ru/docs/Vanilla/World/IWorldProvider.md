@@ -18,7 +18,7 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter              | Метод                       | Возвращаемый тип                       |
+| Геттер                 | Метод                       | Возвращаемый тип                       |
 | ---------------------- | --------------------------- | -------------------------------------- |
 | actualHeight           | getActualHeight()           | int                                    |
 | actualGroundLevel      | getAverageGroundLevel()     | int                                    |
