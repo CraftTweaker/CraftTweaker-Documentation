@@ -22,8 +22,8 @@ val wItemStack2 = itemStack.weight(0.2);
 
 ## Геттеры
 
-| ZenGetter | Что он делает                                        | Возвращаемый тип                         |
-| --------- | ---------------------------------------------------- | ---------------------------------------- |
-| stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float                                    |
+| Геттер  | Что он делает                                        | Возвращаемый тип                         |
+| ------- | ---------------------------------------------------- | ---------------------------------------- |
+| stack   | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| chance  | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
+| percent | Returns the stack's chance as percentage (e.g. 20.0) | float                                    |
