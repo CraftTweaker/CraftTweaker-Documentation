@@ -24,7 +24,7 @@ val itemDefinitionList = game.items;
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | Что он делает                                                                                        | Возвращаемый тип                                               |
+| Геттер             | Что он делает                                                                                        | Возвращаемый тип                                               |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | id                 | Returns the item ID                                                                                  | string                                                         |
 | name               | Returns the unlocalized item Name                                                                    | string                                                         |
