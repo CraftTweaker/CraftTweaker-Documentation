@@ -15,7 +15,7 @@ IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That 
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Тип                                    |
+| Геттер               | Тип                                    |
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
 | isWithinHomeDistance | bool                                   |
