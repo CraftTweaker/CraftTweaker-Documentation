@@ -29,7 +29,7 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 
 The following information can be retrieved/set during the event:
 
-| ZenGetter  | Возвращаемый тип                         |
+| Геттер     | Возвращаемый тип                         |
 | ---------- | ---------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `isPlayer` | bool                                     |
