@@ -15,7 +15,7 @@ IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That 
 
 ### ZenGetters/Setters
 
-| ZenGetter | Тип                                                 |
+| Геттер    | Тип                                                 |
 | --------- | --------------------------------------------------- |
 | loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
 | isInLove  | bool                                                |
