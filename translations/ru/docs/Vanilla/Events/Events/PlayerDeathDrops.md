@@ -18,7 +18,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 Следующая информация может быть получена от события:
 
-| ZenGetter      | Возвращаемый тип                                            |
+| Геттер         | Возвращаемый тип                                            |
 | -------------- | ----------------------------------------------------------- |
 | `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
 | `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
