@@ -18,9 +18,9 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 Следующая информация может быть получена от события:
 
-| ZenGetter | Возвращаемый тип |
-| --------- | ---------------- |
-| `id`      | string           |
+| Геттер | Возвращаемый тип |
+| ------ | ---------------- |
+| `id`   | string           |
 
 ## Id
 
