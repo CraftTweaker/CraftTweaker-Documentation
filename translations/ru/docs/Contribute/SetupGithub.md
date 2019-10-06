@@ -1,13 +1,13 @@
-# Setting up GitHub
+# Настройка GitHub
 
 In order to start, you need a free Account for [Github](https://github.com).  
 Follow the registration steps if you have none already.
 
-## Locating the repository
+## Репозиторий вики
 
-The wiki repository can be found at <https://github.com/CraftTweaker/CraftTweaker-Documentation>
+Репозиторий этой вики можно найти на <https://github.com/CraftTweaker/CraftTweaker-Documentation>.
 
-## Forking the wiki
+## Создание ответвления проекта
 
 In order for you to do any changes, you need to copy the whole CrT-Wiki Repository to your Github Account.  
 This action is called forking.  
