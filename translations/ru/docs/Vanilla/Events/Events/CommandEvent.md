@@ -19,7 +19,7 @@ Command event implements the following interfaces:
 
 The following information ca be retrieved/set during the event:
 
-| ZenGetter       | ZenSetter    | Тип                                                 |
+| Геттер          | ZenSetter    | Тип                                                 |
 | --------------- | ------------ | --------------------------------------------------- |
 | `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
 | `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
