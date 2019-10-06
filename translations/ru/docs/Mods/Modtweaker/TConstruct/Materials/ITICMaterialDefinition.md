@@ -18,7 +18,7 @@ val def = <ticmat:stone>.definition;
 
 ## Геттеры
 
-| ZenGetter   | Возвращаемый тип | Description                   |
+| Геттер      | Возвращаемый тип | Description                   |
 | ----------- | ---------------- | ----------------------------- |
 | name        | string           | The material's internal name  |
 | displayName | string           | The material's localized name |
