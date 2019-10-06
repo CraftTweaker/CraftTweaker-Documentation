@@ -28,11 +28,11 @@ The First method allows you to create a position at the given coordinates.
 
 ## ZenGetters and ZenSetters
 
-| ZenGetter | ZenSetter | Description                    |
-| --------- | --------- | ------------------------------ |
-| х         | x         | Returns the position's x value |
-| y         | y         | Returns the position's y value |
-| z         | z         | Returns the position's z value |
+| Геттер | ZenSetter | Description                    |
+| ------ | --------- | ------------------------------ |
+| х      | x         | Returns the position's x value |
+| y      | y         | Returns the position's y value |
+| z      | z         | Returns the position's z value |
 
 ## Casting as IBlockPos
 
