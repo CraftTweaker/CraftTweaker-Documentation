@@ -15,7 +15,7 @@ IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Th
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | Тип  |
+| Геттер     | ZenSetter   | Тип  |
 | ---------- | ----------- | ---- |
 | growingAge | growingAge  | int  |
 |            | scaleForAge | bool |
