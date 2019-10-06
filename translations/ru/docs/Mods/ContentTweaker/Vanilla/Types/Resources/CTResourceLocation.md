@@ -26,7 +26,7 @@ ZenGetters are called on an object, not on the package itself
 print(myLocation.domain);
 ```
 
-| ZenGetter | Type   |
-| --------- | ------ |
-| domain    | string |
-| path      | string |
+| Геттер | Type   |
+| ------ | ------ |
+| domain | string |
+| path   | string |
