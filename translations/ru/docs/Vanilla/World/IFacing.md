@@ -26,11 +26,11 @@ crafttweaker.world.Facing.fromString(String name);
 
 ## Геттеры/методы без параметров
 
-| ZenGetter | Метод      | Возвращаемый тип |
-| --------- | ---------- | ---------------- |
-| name      | getName()  | string           |
-| rotateY   | rotateY()  | IFacing          |
-| opposite  | opposite() | IFacing          |
+| Геттер   | Метод      | Возвращаемый тип |
+| -------- | ---------- | ---------------- |
+| name     | getName()  | string           |
+| rotateY  | rotateY()  | IFacing          |
+| opposite | opposite() | IFacing          |
 
 ## Другие методы
 
