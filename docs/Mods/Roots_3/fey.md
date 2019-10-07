@@ -1,15 +1,14 @@
-# Fey Crafter
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.Fey;
 ```
 
 #### Methods
 
-```zenscript
-static void addRecipe(
+```java
+void addRecipe(
   string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
   IItemStack output,   // the itemstack produced by this recipe
   IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
@@ -20,8 +19,8 @@ static void addRecipe(
 ---
 
 
-```zenscript
-static void addRecipe(
+```java
+void addRecipe(
   string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
   IItemStack output,    // the itemstack produced by this recipe
   IIngredient[] inputs, // an array of IIngredients that make up the recipe; must contain 5 items
@@ -33,8 +32,8 @@ static void addRecipe(
 ---
 
 
-```zenscript
-static void removeRecipe(
+```java
+void removeRecipe(
   IItemStack output // the item produced by the recipe you wish to remove
 );
 ```
@@ -45,7 +44,7 @@ static void removeRecipe(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.Fey;
 
 // Adds a recipe for TNT using 4 gunpowder and red wool

@@ -1,18 +1,27 @@
-# Bark Recipes
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.Bark;
 ```
 
 #### Methods
 
-```zenscript
-static void addRecipe(
+```java
+void addRecipe(
   string name,        // the name of the recipe
   IItemStack woodLog, // the itemstack equivalent of the wood log being broken
-  IItemStack bark     // the itemstack of the type of bark this log produces
+  IItemStack bark     // the itemstack of the type of bark this log produces (including stack count)
+);
+```
+
+
+---
+
+
+```java
+void removeRecipe(
+  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
 ```
 
@@ -22,14 +31,12 @@ static void addRecipe(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.Bark;
 
-// Note that quantities on the output are currently ignored and the
-// number of items produced is relative to your fortune level.
-Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>);
+// Will produce 2 sand from a melon block broken by a knife.
+Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
+
+// Removes wildwood bark from the default list
+Bark.removeRecipe(<roots:bark_wildwood>);
 ```
-
-### Notes
-
-No functionality exists for removing bark recipes or the knife->bark functionality. 

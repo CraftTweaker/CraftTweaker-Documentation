@@ -1,15 +1,14 @@
-# Ritual of Transmutation
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.Transmutation;
 ```
 
 #### Methods
 
-```zenscript
-static void removeRecipe(
+```java
+void removeRecipe(
   string name // the name of the recipe being removed
 );
 ```
@@ -18,8 +17,8 @@ static void removeRecipe(
 ---
 
 
-```zenscript
-static void addBlockToBlockRecipe(
+```java
+void addBlockToBlockRecipe(
   string name,        // the name of the recipe being added (must be unique)
   IBlockState state1, // the initial state of the block as defined as a blockstate
   IBlockState state2  // the state that the initial state should be converted into
@@ -30,8 +29,8 @@ static void addBlockToBlockRecipe(
 ---
 
 
-```zenscript
-static void addBlockToItemRecipe(
+```java
+void addBlockToItemRecipe(
   string name,       // the name of the recipe being added (must be unique)
   IBlockState state, // the initial state that is looked for when converting (as a block state)
   IItemStack stack   // the item stack that replaces the block state
@@ -44,7 +43,7 @@ static void addBlockToItemRecipe(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.Transmutation;
 
 // Removes the default pumpkin-over-water-to-melon recipe

@@ -1,15 +1,14 @@
-# Modifying Pyre Ritual Recipes
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.Ritual;
 ```
 
 #### Methods
 
-```zenscript
-static void modifyRitual(
+```java
+void modifyRitual(
   string name,         // the name of the ritual whose ingredients you wish to modify
   IIngredient[] inputs // a list of five ingredients (no more, no less)
 );
@@ -21,7 +20,7 @@ static void modifyRitual(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.Ritual;
 
 // Changes the ingredients required to perform the windwall ritual

@@ -1,15 +1,14 @@
-# Ritual of Flower Growth
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.FlowerGrowth;
 ```
 
 #### Methods
 
-```zenscript
-static void removeRecipe(
+```java
+void removeRecipe(
   string name // The name of the recipe you wish to remove
 );
 ```
@@ -18,8 +17,8 @@ static void removeRecipe(
 ---
 
 
-```zenscript
-static void addRecipeBlockState(
+```java
+void addRecipeBlockState(
   string name,      // The name of the recipe that you're adding
   IBlockState state // The state of the block of the flower
 );
@@ -29,8 +28,8 @@ static void addRecipeBlockState(
 ---
 
 
-```zenscript
-static void addRecipeBlock(
+```java
+void addRecipeBlock(
   string name,  // The name of the recipe that you're adding
   IBlock block, // The block of the flower to be placed
   int meta      // The meta of the state of the flower block
@@ -43,7 +42,7 @@ static void addRecipeBlock(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.FlowerGrowth;
 
 // Removes the default recipe for dandelion

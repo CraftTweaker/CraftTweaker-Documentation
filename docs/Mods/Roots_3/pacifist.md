@@ -1,15 +1,14 @@
-# "Untrue Pacifist" Advancement Creatures
 
 ### Class
 
-```zenscript
+```java
 import mods.roots.Pacifist;
 ```
 
 #### Methods
 
-```zenscript
-static void addEntity(
+```java
+void addEntity(
   IEntityDefinition entity // the entity to add to the pacifist list
 );
 ```
@@ -18,8 +17,8 @@ static void addEntity(
 ---
 
 
-```zenscript
-static void removeEntity(
+```java
+void removeEntity(
   IEntityDefinition entity // the entity to remove from the pacifist list
 );
 ```
@@ -30,7 +29,7 @@ static void removeEntity(
 
 ### Examples
 
-```zenscript
+```java
 import mods.roots.Pacifist;
 
 // Adds an enderman as a pacifist creature
