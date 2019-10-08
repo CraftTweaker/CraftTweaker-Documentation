@@ -1,5 +1,3 @@
-# Pyre Crafting
-
 ### Class
 
 ```zenscript
@@ -9,7 +7,7 @@ import mods.roots.Pyre;
 #### Methods
 
 ```zenscript
-static void addRecipe(
+void addRecipe(
   string name,         // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
   IItemStack output,   // the output of this recipe
   IIngredient[] inputs // a list of five ingredients (no more, no less)
@@ -19,7 +17,7 @@ static void addRecipe(
 * * *
 
 ```zenscript
-static void addRecipe(
+void addRecipe(
   string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
   IItemStack output,    // the output of this recipe
   IIngredient[] inputs, // a list of five ingredients
@@ -30,7 +28,7 @@ static void addRecipe(
 * * *
 
 ```zenscript
-static void removeRecipe(
+void removeRecipe(
   IItemStack output // the output of the recipe to remove
 );
 ```
