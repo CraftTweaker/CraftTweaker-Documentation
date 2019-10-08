@@ -8,7 +8,7 @@ Git &mdash; это распределенная система контроля 
 Вы можете проверить, установлен ли у вас Git, открыв командную строку, и введя команду `git`.  
 Если вы получите страницу с документацией, значит, что он у вас установлен, и вы можете пропустить этот этап.  
 Если вы ее не получили, значит, что Git либо не установлен, либо вы не добавили его в PATH (ниже). В этом случае вам нужно или установить Git, или добавить в PATH:  
-![CMD Prompt issueing w git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
+![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
 
 ### Загрузка и установка Git
 
