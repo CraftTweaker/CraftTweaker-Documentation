@@ -30,7 +30,7 @@ val mod = loadedMods["mcp"];
 
 ## Iterate through the modList
 
-You can iterate through the lost of loaded mods like this:
+You can iterate through the list of loaded mods like this:
 
 ```zenscript
 //prints all registred item definitions, not recommended in larger packs!
