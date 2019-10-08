@@ -10,4 +10,4 @@ You can always defer an IFormatted Text from a String (the conversion is automat
 ## Using an IFormattedText Object
 You can add or concatenate two IFormattedText together using the respecting Operators: `+ ~`
 
-Besides that you can use the [IFormatter](IFormatter/) to format an IFormattedText Object.
+Besides that you can use the [IFormatter](/Vanilla/Utils/IFormatter/) to format an IFormattedText Object.
