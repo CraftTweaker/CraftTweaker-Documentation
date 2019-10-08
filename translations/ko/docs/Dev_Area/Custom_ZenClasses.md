@@ -10,7 +10,7 @@ That's why only those who are able to mess with it should ever find this.
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| 이름             | Descrition                                                                                                                             |
+| 이름             | Description                                                                                                                            |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
 | var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
