@@ -1,5 +1,3 @@
-# ”不忠的和平主义“进步生物 （让敌对或中立生物成为被动生物）
-
 ### 类
 
 ```zenscript
@@ -9,16 +7,16 @@ import mods.roots.Pacifist;
 #### 方法
 
 ```zenscript
-static void addEntity(
-  IEntityDefinition entity // 需要改为被动生物的怪物
+void addEntity(
+  IEntityDefinition entity // the entity to add to the pacifist list
 );
 ```
 
 * * *
 
 ```zenscript
-static void removeEntity(
-  IEntityDefinition entity // 需要移出出被动生物列表的生物列表。
+void removeEntity(
+  IEntityDefinition entity // the entity to remove from the pacifist list
 );
 ```
 
