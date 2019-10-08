@@ -10,7 +10,7 @@ That's why only those who are able to mess with it should ever find this.
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| Название       | Descrition                                                                                                                                          |
+| Название       | Описание                                                                                                                                            |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | zenClass       | Создает новый класс, после него нужно указать имя.                                                                                                  |
 | var/val        | Создает поле класса, неизменяемое, если использовано ключевое слово val.                                                                            |
