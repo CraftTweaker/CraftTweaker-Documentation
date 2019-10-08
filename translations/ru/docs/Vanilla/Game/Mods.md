@@ -31,7 +31,7 @@ val mod = loadedMods["mcp"];
 
 ## Перебор списка модов
 
-You can iterate through the lost of loaded mods like this:
+You can iterate through the list of loaded mods like this:
 
 ```zenscript
 //печатает все зарегистрированные определения предметов, не рекомендуется в больших сборках!
