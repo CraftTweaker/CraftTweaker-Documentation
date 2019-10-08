@@ -1,13 +1,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Mortar;
 ```
 
 #### Methods
 
-```java
+```zenscript
 void addRecipe(
   IItemStack output,   // the item output of this recipe
   IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
@@ -18,7 +18,7 @@ void addRecipe(
 ---
 
 
-```java
+```zenscript
 void changeSpell(
   string spellName,    // the name of the spell as in the spell registry
   IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
@@ -29,7 +29,7 @@ void changeSpell(
 ---
 
 
-```java
+```zenscript
 void removeRecipe(
   IItemStack output // the item stack produced by the recipe
 );
@@ -41,7 +41,7 @@ void removeRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Mortar;
 
 // Adds a recipe that makes gunpowder out of flint

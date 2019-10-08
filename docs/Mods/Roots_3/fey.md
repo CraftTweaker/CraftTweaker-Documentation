@@ -1,13 +1,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Fey;
 ```
 
 #### Methods
 
-```java
+```zenscript
 void addRecipe(
   string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
   IItemStack output,   // the itemstack produced by this recipe
@@ -19,7 +19,7 @@ void addRecipe(
 ---
 
 
-```java
+```zenscript
 void addRecipe(
   string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
   IItemStack output,    // the itemstack produced by this recipe
@@ -32,7 +32,7 @@ void addRecipe(
 ---
 
 
-```java
+```zenscript
 void removeRecipe(
   IItemStack output // the item produced by the recipe you wish to remove
 );
@@ -44,7 +44,7 @@ void removeRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Fey;
 
 // Adds a recipe for TNT using 4 gunpowder and red wool

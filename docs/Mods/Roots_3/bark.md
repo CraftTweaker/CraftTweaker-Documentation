@@ -1,13 +1,13 @@
 
 ### Class
 
-```java
+```zenscript
 import mods.roots.Bark;
 ```
 
 #### Methods
 
-```java
+```zenscript
 void addRecipe(
   string name,        // the name of the recipe
   IItemStack woodLog, // the itemstack equivalent of the wood log being broken
@@ -19,7 +19,7 @@ void addRecipe(
 ---
 
 
-```java
+```zenscript
 void removeRecipe(
   IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
 );
@@ -31,7 +31,7 @@ void removeRecipe(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.Bark;
 
 // Will produce 2 sand from a melon block broken by a knife.

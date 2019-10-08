@@ -1,12 +1,12 @@
 ### Class
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
 #### Methods
 
-```java
+```zenscript
 void addEntity(
   IEntityDefinition entity // the entity to generate drops for
 );
@@ -16,7 +16,7 @@ void addEntity(
 ---
 
 
-```java
+```zenscript
 void removeEntity(
   IEntityDefinition entity // the entity to stop generating drops for
 );
@@ -26,7 +26,7 @@ void removeEntity(
 ---
 
 
-```java
+```zenscript
 void addFish(
   string name,     // the name of the type of fish
   IItemStack fish, // the type of fish as an item stack
@@ -38,7 +38,7 @@ void addFish(
 ---
 
 
-```java
+```zenscript
 void removeFish(
   IItemStack fish // the type of fish to remove as an item stack
 );
@@ -50,7 +50,7 @@ void removeFish(
 
 ### Examples
 
-```java
+```zenscript
 import mods.roots.AnimalHarvest;
 
 // Adds an enderman as a target for the Animal Harvest ritual.
