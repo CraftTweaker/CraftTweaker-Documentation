@@ -1,4 +1,3 @@
-# Runic Shears (Block & Entity)
 
 ### Class
 
@@ -9,7 +8,7 @@ import mods.roots.RunicShears;
 #### Methods
 
 ```zenscript
-static void addRecipe(
+void addRecipe(
   string name,                 // the name of the recipe being created
   IItemStack outputDrop,       // the item output obtained by performing the shearing
   IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
@@ -23,7 +22,7 @@ static void addRecipe(
 
 
 ```zenscript
-static void addEntityRecipe(
+void addEntityRecipe(
   string name,              // the name of the recipe for the shearing
   IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
   IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
@@ -36,7 +35,7 @@ static void addEntityRecipe(
 
 
 ```zenscript
-static void removeRecipe(
+void removeRecipe(
   IItemStack output // the itemstack output that you wish to remove
 );
 ```
