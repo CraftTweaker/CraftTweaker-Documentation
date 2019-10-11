@@ -1,10 +1,16 @@
 # Если добавляете страницу, вы должны добавить ее в это оглавление
 pages:
   - Оглавление: 'index.md'
+  - Getting Started With Scripts: 'getting_started.md'
+  - Commands: "commands.md"
+  - Examples: "examples.md"
+  - Рецепты:
+    - Recipe Managers: "recipes/recipe_managers.md"
+    - Crafting Table: "recipes/crafting_table.md"
 
 
 # Не меняйте в PR'ах то, что ниже
-site_name: Документация Crafttweaker
+site_name: CraftTweaker Documentation
 site_author: Команда CraftTweaker и участников репозитория CrT Wiki на GitHub
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
