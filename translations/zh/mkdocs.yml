@@ -1,10 +1,16 @@
 # 如果你需要添加新页面，别忘了将其添加到此处的索引中
 pages:
   - 首页: 'index.md'
+  - Getting Started With Scripts: 'getting_started.md'
+  - Commands: "commands.md"
+  - Examples: "examples.md"
+  - Recipes:
+    - Recipe Managers: "recipes/recipe_managers.md"
+    - Crafting Table: "recipes/crafting_table.md"
 
 
 # 不得在提交的 Pull Request 中修改以下的内容
-site_name: Crafttweaker Documentation
+site_name: CraftTweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
