@@ -1,10 +1,16 @@
 # If you add a page, you must add it to the index here
 pages:
   - ホーム: 'index.md'
+  - Getting Started With Scripts: 'getting_started.md'
+  - Commands: "commands.md"
+  - Examples: "examples.md"
+  - レシピ:
+    - Recipe Managers: "recipes/recipe_managers.md"
+    - Crafting Table: "recipes/crafting_table.md"
 
 
 # Do not edit in PRs below here
-site_name: Crafttweaker Documentation
+site_name: CraftTweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
