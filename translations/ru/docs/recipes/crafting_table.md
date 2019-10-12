@@ -1,4 +1,4 @@
-# Crafting Table
+# Верстак
 
 ### Addition:
 ```zenscript
