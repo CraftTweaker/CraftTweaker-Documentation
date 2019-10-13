@@ -1,5 +1,9 @@
 # Usages
 
+**WARNING: OUTDATED !**
+
+The new documentation is there: https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
+
 ## Method List
 
 |Required: |Type:      |Name:                |Implementation:                   |Parameters:                                                                 |Additional Information:                                           |
