@@ -2,7 +2,7 @@
 
 **WARNING: OUTDATED !**
 
-The new documentation is there: https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
+The new documentation is there: https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted
 
 Here's a Quick To Scale Example:
 
