@@ -1,5 +1,6 @@
 # Recipe Builder
-**WARNING: OUTDATED**
+**WARNING: OUTDATED !**
+
 New documentation is there: https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
 
 ## Calling The Packages
