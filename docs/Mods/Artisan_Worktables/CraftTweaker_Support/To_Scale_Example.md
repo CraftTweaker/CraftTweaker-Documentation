@@ -1,4 +1,9 @@
 # To Scale Example
+
+**WARNING: OUTDATED !**
+
+The new documentation is there: https://artisan-worktables.readthedocs.io/en/latest/recipes/gettingstarted/
+
 Here's a Quick To Scale Example:
 
 ## Example
