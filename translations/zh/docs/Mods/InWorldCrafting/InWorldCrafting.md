@@ -30,22 +30,22 @@
 **不要重复加相同的物品, 应该用 `<物品> * 数量`. 原因如下.**  
 游戏会把附近相同的东西堆叠到一起仅发生于第一个entityitem获取一个整组, 所以不会像你期望那样合成出来.
 
-### BAAD!
+### 错误的示范!
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel>, <ore:ingotSteel>, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
-### Goooood
+### 正确的示范！
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel> * 2, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
 ## 液体转换为物体
 
-import should be `mods.inworldcrafting.FluidToItem`
+输入格式为 `mods.inworldcrafting.FluidToItem`
 
 **用法**  
 `FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
-The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
+默认消耗的值是 `true`, 所以如果你不想 `inputItem` 被消耗, 当转化液体时你不得不设值为 `false` 作为第四个参数.
 
 ## 液体转换为其它液体
 
@@ -78,7 +78,7 @@ Survivechance sets the chance for how likely the recipe is to be successful. Def
 
 ### 炸毁方块
 
-**Usage**  
+**用法**  
 `ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);`
 
 `blockStack` should be a `Block` in its stackform. It will compare against metadata. `itemSpawnChance` sets the chance for how likely the block is to spawn the output when the block is destroyed by an explosion. Default value is `100`%
