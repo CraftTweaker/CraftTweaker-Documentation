@@ -40,7 +40,7 @@
 
 ## 液体转换为物体
 
-输入格式为 `mods.inworldcrafting.FluidToItem`
+输入物品格式为 `mods.inworldcrafting.FluidToItem`
 
 **用法**  
 `FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
@@ -49,36 +49,36 @@
 
 ## 液体转换为其它液体
 
-import should be `mods.inworldcrafting.FluidToFluid`
+输入物品格式为 `mods.inworldcrafting.FluidToFluid`
 
-**Usage**  
+**用法**  
 `FluidToFluid.transform(ILiquidStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
-The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
+默认消耗的值是 `true`, 所以如果你不想 `inputItem` 被消耗, 当转化液体时你不得不设值为 `false` 作为第四个参数.
 
-## Burning Items
+## 燃烧物品
 
-import should be `mods.inworldcrafting.FireCrafting`
+输入物品格式为 `mods.inworldcrafting.FireCrafting`
 
-**Usage**  
+**用法**  
 `FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks);`
 
-The default number of ticks to create the output is `40` (2 seconds)
+默认燃烧秒数为 `40` (2 秒)
 
 ## 炸毁 物品/方块
 
-import should be `mods.inworldcrafting.ExplosionCrafting`
+输入物品格式为 `mods.inworldcrafting.ExplosionCrafting`
 
-### 炸毁物品
+### 炸毁物品合成
 
-**Usage**  
+**用法**  
 `ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);`
 
-Survivechance sets the chance for how likely the recipe is to be successful. Default value is `100`%
+爆炸合成成功的概率. 默认几率为 `100`%
 
-### 炸毁方块
+### 炸毁方块合成
 
 **用法**  
 `ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);`
 
-`blockStack` should be a `Block` in its stackform. It will compare against metadata. `itemSpawnChance` sets the chance for how likely the block is to spawn the output when the block is destroyed by an explosion. Default value is `100`%
+`blockStack` 应该是 `方块` (放置状态). 他将会和元数据比较 `itemSpawnChance` 是每个方块被炸毁掉落物品的概率. 默认概率是 `100`%
