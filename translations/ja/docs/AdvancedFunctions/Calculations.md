@@ -10,7 +10,7 @@
 
 常に、2つの変数の型に気を配り、怪しければprint関数を用いてlogに出力し、結果を確認しましょう。
 
-## Arithmetic Operators
+## 数式演算子
 
 I'm pretty sure all of you know these already, don't you?
 
