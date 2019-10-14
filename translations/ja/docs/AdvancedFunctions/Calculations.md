@@ -12,32 +12,32 @@
 
 ## 数式演算子
 
-I'm pretty sure all of you know these already, don't you?
+これらについては、皆さんはご存知だと思います。
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| 演算子 | 代入演算子 | 機能 | 例      |
+| --- | ----- | -- | ------ |
+| `+` | `+=`  | 加算 | 1+2    |
+| `-` | `-=`  | 減算 | 2-1    |
+| `*` | `*=`  | 乗算 | 1*1    |
+| `/` | `/=`  | 除算 | 2/2    |
+| `%` | `%=`  | 剰余 | 13 % 6 |
 
-## Concatenation
+## 連結
 
-Puts one thing at the and of the other
+あるものを、もう片方にくっつけます。
 
 ```zenscript
-//prints "Hello World"
+//"Hello World" を出力
 print("Hello" ~ " " ~ "World");
 ```
 
-## Calculation results
+## 計算結果
 
-A calculation usually ends up with a result. So what to do with that?
+通常、計算されると計算結果が返ります。 では、それで何をしましょう?
 
-### Assigning a variable
+### 変数割り当て
 
-There are two ways of assigning a value to a variable:
+変数に値を割り当てるのに2種類の方法があります。
 
 ```zenscript
 var test = 0;
