@@ -37,21 +37,21 @@ print("Hello" ~ " " ~ "World");
 
 ### 変数割り当て
 
-変数に値を割り当てるのに2種類の方法があります。
+変数に値を設定するのに、3つの方法があります。
 
 ```zenscript
 var test = 0;
 
 //Option 1:
-//assigns test with the value 3 (1+2)
+//test に 3 (1+2) を設定する
 test = 1+2;
 
 //Option 2:
-//assigns test with 5 (3+2)
+//test に 5 (3+2) を設定する
 test = test + 2;
 
 //Option 3:
-//assigns test with 2 (5-3)
+//test に 2 (5-3) を設定する
 test -= 3;
 ```
 
