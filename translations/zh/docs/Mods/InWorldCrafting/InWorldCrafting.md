@@ -27,8 +27,8 @@
 
 ## 关于液体的修改
 
-**不要重复加相同的物品, 应该用 `<物品> * 数量`. It's there for a reason.**  
-The game merges nearby items into stacks so finding multiple ingredients of the same type in one BlockSpace only happens when the first EntityItem gets a full stack of items, so the craft won't happen like you would expect.
+**不要重复加相同的物品, 应该用 `<物品> * 数量`. 原因如下.**  
+游戏会把附近相同的东西堆叠到一起仅发生于第一个entityitem获取一个整组, 所以不会像你期望那样合成出来.
 
 ### BAAD!
 
@@ -38,16 +38,16 @@ The game merges nearby items into stacks so finding multiple ingredients of the 
 
 `FluidToItem.transform(<minecraft:diamond>, <liquid:blueslime>, [<ore:ingotSteel> * 2, <ore:dustCobalt>, <ore:nuggetEnderpearl>], true);`
 
-## Fluid to Item Transformation
+## 液体转换为物体
 
 import should be `mods.inworldcrafting.FluidToItem`
 
-**Usage**  
+**用法**  
 `FluidToItem.transform(IItemStack output, ILiquidStack inputFluid, IIngredient[] inputItems, @Optional boolean consume);`
 
 The default consume value for this method is `true`, so if you don't want the `inputItem` to be consumed when transforming the liquid you have to pass `false` as the 4th paramater to the method.
 
-## Fluid to Fluid Transformation
+## 液体转换为其它液体
 
 import should be `mods.inworldcrafting.FluidToFluid`
 
