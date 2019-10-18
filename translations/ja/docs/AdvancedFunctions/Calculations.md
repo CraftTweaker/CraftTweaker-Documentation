@@ -55,21 +55,21 @@ test = test + 2;
 test -= 3;
 ```
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Option 1 及び 2 では、`=` トークンによる返り値を変数に割り当てています。  
+おそらく初心者にも優しい簡単な方法で、未使用の変数に割り当てる唯一の方法でもあります。
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+Option 3 では`-=`とその結果である通常の減算の前に変数を割り当てています。  
+このページのすべての演算子にはそれぞれ割当トークンも用意されています。上にある表もご確認ください。
 
-### Using the result otherwise
+### その他の使い方
 
-You can always use the result of a calculation in a function or a conditional statement:
+関数、条件ステートメントにおいても、演算子を用いた計算の結果を扱うことができます。
 
 ```zenscript
-//prints 4
+//4を出力
 print(3+1);
 
-//removes the item on array[4]
+//array[4]の要素を削除
 recipes.remove(array[3+1]);
 
 //
