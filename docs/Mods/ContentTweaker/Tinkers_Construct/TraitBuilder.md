@@ -287,7 +287,7 @@ Parameters:
 - A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
 - A boolean that represents if the hit `isCritical`
 
-__Returns a float__ representing the new damage. Otherwise return `newDamage`
+__Returns a float__ representing the new knockback. Otherwise return `newKnockback`
 
 Created using
 ```zenscript
