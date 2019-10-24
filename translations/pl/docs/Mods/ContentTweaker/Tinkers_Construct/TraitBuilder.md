@@ -305,7 +305,7 @@ Parameters:
 - A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
 - A boolean that represents if the hit `isCritical`
 
-**Returns a float** representing the new damage. Otherwise return `newDamage`
+**Returns a float** representing the new knockback. Otherwise return `newKnockback`
 
 Created using
 
@@ -461,7 +461,7 @@ testTrait.addItem(<item:minecraft:iron_pickaxe>);
 testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 testTrait.localizedName = "Whooooooooo";
 testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
-testTrait.afterHit = function(tool, attacker, target, damageDealt, wasCrit, wasHit) {
+testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
     attacker.heal(damageDealt);
 };
 testTrait.register();
