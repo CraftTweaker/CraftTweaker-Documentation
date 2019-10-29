@@ -23,7 +23,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 | ZenGetter       | 반환 타입                                                       |
 | --------------- | ----------------------------------------------------------- |
 | `player`        | [IPlayer](/Vanilla/Players/IPlayer/)                        |
-| `items`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
 | `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 | `isRecentlyHit` | bool                                                        |
 | `lootingLevel`  | int                                                         |
@@ -33,7 +33,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.items = //reference to IEntityItem list.
+event.drops = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
