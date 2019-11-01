@@ -15,6 +15,7 @@ This needs to be loaded with `#loader alchemistry`
 ## Creation
 ```zenscript
 mods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
+
 mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
 [["vibranium", 1],
  ["sulfur", 3]]);
