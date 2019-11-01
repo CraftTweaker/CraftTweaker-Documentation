@@ -16,14 +16,15 @@ mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
 mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
-## Game Stages Integration
 
-#### New Recipes
+## **Game Stages Integration**
+
+## New Recipes
 ```zenscript
 mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-#### Existing Recipe
+## Existing Recipe
 
 ```zenscript
 mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);
