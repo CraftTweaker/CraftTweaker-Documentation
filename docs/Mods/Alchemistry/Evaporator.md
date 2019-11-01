@@ -1,5 +1,7 @@
 # Evaporator
 
+# Package
+`mods.alchemistry.Evaporator`
 
 ## Methods
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
