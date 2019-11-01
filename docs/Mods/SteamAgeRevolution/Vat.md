@@ -7,7 +7,7 @@ The Vat is a machine that converts input items and fluids into an output fluid.
 
 ## Methods
 
-- **[ILiquidStack](/Vanilla/Liquid/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[ILiquidStack](/Vanilla/Liquid/ILiquidStack/) input** Fluid input of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) inputItema** Items to input of the recipe.
 - **int craftTime** Crafting time for machine to process
