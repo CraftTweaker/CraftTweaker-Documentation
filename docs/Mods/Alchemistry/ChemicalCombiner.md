@@ -17,7 +17,7 @@ mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-## **Game Stages Integration**
+# Game Stages Integration
 
 ## New Recipes
 ```zenscript
