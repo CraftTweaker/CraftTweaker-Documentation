@@ -7,7 +7,7 @@ The Distiller is a machine that converts an input fluid into an output fluid and
 
 ## Methods
 
-- **[ILiquidStack](/Vanilla/Liquid/ILiquidStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
 - **int craftTime** Crafting time for machine to process
