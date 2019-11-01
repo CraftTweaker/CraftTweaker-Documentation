@@ -10,8 +10,7 @@ This needs to be loaded with `#loader alchemistry`
 - **String Abbrebiation** New Elements Abbrebiation
 - **int red** Element red shade, RGB
 - **int green** Element green shade, RGB
-
--**int blue** Element blue shade, RGB
+- **int blue** Element blue shade, RGB
 
 ## Creation
 ```zenscript
