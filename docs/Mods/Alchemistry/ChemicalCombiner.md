@@ -1,5 +1,11 @@
 # Chemical Combiner
 
+## Methods
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+
+
 ## Addition
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
