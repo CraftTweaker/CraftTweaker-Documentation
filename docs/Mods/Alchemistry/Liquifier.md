@@ -1,5 +1,7 @@
 # Liquifier
 
+# Package
+`mods.alchemistry.Liquifier`
 
 ## Methods
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
