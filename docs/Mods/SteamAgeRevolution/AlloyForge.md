@@ -2,34 +2,28 @@
 
 The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## Calling
+## Package
+`mods.steamagerevolution.AlloyForge`
 
-You can call the Alloy Forge package using `mods.steamagerevolution.AlloyForge`.
+## Methods
 
-## Removing
+- **[ILiquidStack](/Vanilla/Liquids/IItemStack/) output** The result of the recipe.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
 
-This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output`:
+## Addition
 
-```java
-mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
-
-// Examples
-mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
-```
-
-This function removes *all* recipes currently defined for the Alloy Forge:
-
-```java
-mods.steamagerevolution.AlloyForge.removeAll();
-```
-
-## Adding
-
-This function are used to add new recipes for the Alloy Forge:
-
-```java
-mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input2, ILiquidStack output, int craftTime);
-
-// Examples
+```zenscript
+mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
 mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*100, <liquid:obsidian>*200, 200);
+```
+
+
+## Removal
+
+```zenscript
+mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
+mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
+
+mods.steamagerevolution.AlloyForge.removeAll();
 ```

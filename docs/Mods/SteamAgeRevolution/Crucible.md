@@ -2,34 +2,28 @@
 
 The Crucible is a machine that converts an input item into an output fluid using steam.
 
-## Calling
+## Package
+`mods.steamagerevolution.Crucible`
 
-You can call the Crucible package using `mods.steamagerevolution.Crucible`.
+## Methods
 
-## Removing
+- **[ILiquidStack](/Vanilla/Liquid/ILiquidStack/) output** The result of the recipe.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
-This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output`:
+## Addition
 
-```java
-mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack output);
-
-// Examples
-mods.steamagerevolution.Crucible.removeRecipe(<liquid:lava>);
-```
-
-This function removes *all* recipes currently defined for the Crucible:
-
-```java
-mods.steamagerevolution.Crucible.removeAll();
-```
-
-## Adding
-
-This function is used to add new recipes for the Crucible:
-
-```java
+```zenscript
 mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);
-
-// Examples
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
+```
+
+## Removal
+
+```zenscript
+mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);
+mods.steamagerevolution.Crucible.removeRecipe(<liquid:lava>);
+
+mods.steamagerevolution.Crucible.removeAll();
 ```

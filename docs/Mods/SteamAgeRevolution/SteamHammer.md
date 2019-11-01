@@ -2,34 +2,29 @@
 
 The Steam Hammer is a machine that converts two input items into an output item using steam.
 
-## Calling
+## Package
+`mods.steamagerevolution.SteamHammer`.
 
-You can call the Steam Hammer package using `mods.steamagerevolution.SteamHammer`.
+## Methods
 
-## Removing
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
+- **int craftTime** Crafting time for machine to process
+- **int steamCost** Cost of Steam for machine to process
 
-This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+## Addition
 
-```java
-mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
-
-// Examples
-mods.steamagerevolution.SteamHammer.removeRecipe(<ore:plateIron>.firstItem);
-```
-
-This function removes *all* recipes currently defined for the Steam Hammer:
-
-```java
-mods.steamagerevolution.SteamHammer.removeAll();
-```
-
-## Adding
-
-This function is used to add new recipes for the Steam Hammer:
-
-```java
-mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
-
-// Examples
+```zenscript
+mods.steamagerevolution.SteamHammer.addRecipe(IIngredient input, IIngredient input, IItemStack output, int craftTime, int steamCost);
 mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, <ore:plateIron>.firstItem, 200, 200);
+```
+
+
+## Removal
+
+```zenscript
+mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
+mods.steamagerevolution.SteamHammer.removeRecipe(<ore:plateIron>.firstItem);
+
+mods.steamagerevolution.SteamHammer.removeAll();
 ```
