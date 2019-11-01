@@ -8,7 +8,7 @@ You can call the Crucible package using `mods.steamagerevolution.Crucible`.
 
 ## Removing
 
-This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Items/ILiquidStack/) `output`:
+This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output`:
 
 ```java
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack output);

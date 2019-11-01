@@ -8,7 +8,7 @@ You can call the Alloy Forge package using `mods.steamagerevolution.AlloyForge`.
 
 ## Removing
 
-This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Items/ILiquidStack/) `output`:
+This function removes the first recipe they find with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output`:
 
 ```java
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);

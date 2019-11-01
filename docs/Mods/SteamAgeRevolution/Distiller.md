@@ -8,7 +8,7 @@ You can call the Distiller package using `mods.steamagerevolution.Distiller`.
 
 ## Removing
 
-This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputStack` and [ILiquidStack](/Vanilla/Items/ILiquidStack/) `output`:
+This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputStack` and [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output`:
 
 ```java
 mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output);
