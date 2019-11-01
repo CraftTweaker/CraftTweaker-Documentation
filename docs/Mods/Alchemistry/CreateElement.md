@@ -1,6 +1,8 @@
 # Create Element
 Custom Element Creation for Alchemistry
 
+# Package
+`mods.alchemistry.Util.createElement`
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
