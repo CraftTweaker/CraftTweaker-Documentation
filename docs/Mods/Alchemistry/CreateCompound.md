@@ -1,6 +1,9 @@
 # Create Compound
 Custom Alchemistry Compound Generation
 
+# Package
+`mods.alchemistry.Util.createCompound`
+
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
