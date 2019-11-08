@@ -20,7 +20,7 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
 
 ## Pyrolitic Augment Addition
 
-**_Note that the energy is multiplied by `1.5`. If you specify `2000` energy, the recipe will actually cost `3000` RF. Likewise if you specify `1500`, it will case `2250` RF._**
+**_Note that the energy is multiplied by `1.5`. If you specify `2000` energy, the recipe will actually cost `3000` RF. Likewise if you specify `1500`, it will cost `2250` RF._**
 
 Example recipe to turn charcoal into coal coke, producing 250mb of creosote oil in the process.
 
