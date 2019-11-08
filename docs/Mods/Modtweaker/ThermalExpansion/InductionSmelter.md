@@ -1,6 +1,7 @@
 # InductionSmelter
 
 ## Package
+
 `mods.thermalexpansion.InductionSmelter`
 
 ## Addition
