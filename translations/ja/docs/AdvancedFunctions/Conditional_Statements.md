@@ -1,10 +1,10 @@
-# Conditional Statements
+# 条件文
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+ある条件を満たす(もしくは満たされない)場合にのみ実行されるコードを書くことができます。 それが、条件分が存在する理由です。
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+If文とは、条件分の最初の要素です。 それに続くコードを実行するのに真と評価されるべき条件を記述します。 値を比較する時には、等号が2つ必要になることに注意してください。等号が一つだけだと、値の宣言文になってしまいます。
 
 ```zenscript
 val test = 0;
