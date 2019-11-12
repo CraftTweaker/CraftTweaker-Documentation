@@ -16,35 +16,35 @@ if(test == 0){ //true
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Else文を条件文に追加すると、If文の条件がfalseと評価された時に実行されるコードを記述できます。
 
 ```zenscript
 var test = 0;
 
 if(test == 0){//true
-    //will be executed when test is equal to 0
+    //testが0のときに実行されます
     print("Test is zero!");
 } else {
-    //will be executed when test is not equal to 0
+    //testが0以外のときに実行されます
     print("Test is NOT zero!");
 }
 
 test = 1
 if(test == 0){//false
-    //will be executed when test is equal to 0
+    //testが0のときに実行されます
     print("Now, test is zero!");
 } else {
-    //will be executed when test is not equal to 0
+    //testが0以外のときに実行されます
     print("Now, test is NOT zero!");
 }
 
 ```
 
-## Things to check for
+## 確認事項
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+使用可能な算術記号は、`+`,`-`,`*`,`/`,`mod`,`concatenation(~)`です。
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+使用可能な論理演算記号は`OR(|)`, `AND(&)`, `XOR(^)`です。
 
 ```zenscript
 //You can check for:
