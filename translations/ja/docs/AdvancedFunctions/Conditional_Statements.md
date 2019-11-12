@@ -47,17 +47,17 @@ if(test == 0){//false
 使用可能な論理演算記号は`OR(|)`, `AND(&)`, `XOR(^)`です。
 
 ```zenscript
-//You can check for:
+//確認事項:
 
 
-//Number values
+//数値
 val a = 0 as int;
 if(a==0){print("NumVal");}
 
-//Calculated number values
+//算術演算
 val b = 1;
 val c = 5;
-//All evaluate to true
+//すべてtrueと評価されます
 if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
 if(b/c==0.2){print("Num3!");}
@@ -65,22 +65,22 @@ if(b/c==0.2){print("Num3!");}
 //OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d~e; //f = "HelloWorld", チルダは連結の演算子です
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
+//|(OR)は式のいずれかがtrueと評価される場合、全体としてtrueと評価されることを意味します。
 if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
 if(d=="Hello" | e == "World"){print("OR2!");}       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+//^(XOR)はたった一つの式だけがtrueと評価されるときのみ全体としてtrueと評価されます。そうでなければfalseと評価されます。
 if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+//&(AND)はどの式もtrueと評価されないと全体としてtrueと評価されません。そうでなければfalseと評価されます。
 if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## 「?」演算子 
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
