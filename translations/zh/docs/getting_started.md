@@ -7,15 +7,15 @@ ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味�
 
 Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
 
-## What are scripts
+## 什么是脚本
 
-Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
+Scripts 存储在 `<gamedir>/脚本` 中，当玩家进入世界时会被加载，就和以前版本的 CraftTweaker(不包括1.12版) 一样 ，脚本可以被重新加载，只需要运行 `/reload`。
 
-Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
+脚本在进入单人游戏世界时会被加载两次，一次在`服务器` 中，一次在`客户端` 中。 如果你的脚本中有一个`println()`, 你将看到它两次，因为它会被运行两次。
 
 This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
 
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+加入服务器时，服务器会将他们的脚本发送给客户端，客户端会运行这些脚本。 这意味着一个没有任何脚本的客户端， 可以加入服务器并获得更改(这个特性很有用，如果您需要在服务器上禁用一个物品，但不想强迫客户端下载额外文件！)
 
 
 ### 书写你的第一个脚本
@@ -30,7 +30,7 @@ println("Hello world!");
 
 Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+`craftweeper.log`文件位于`<gamedir>/logs`文件夹，并且可以通过任何能够读取纯文本的程序阅读。
 
 It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
 
