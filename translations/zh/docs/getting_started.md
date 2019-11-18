@@ -13,7 +13,7 @@ Scripts 存储在 `<gamedir>/脚本` 中，当玩家进入世界时会被加载�
 
 脚本在进入单人游戏世界时会被加载两次，一次在`服务器` 中，一次在`客户端` 中。 如果你的脚本中有一个`println()`, 你将看到它两次，因为它会被运行两次。
 
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
+但这并不意味着更改会被执行两次，脚本造成的更改和运行的位置有关，有些改动， 例如设置本地化，只能在客户端运行，但添加配方只能在服务器端完成。
 
 加入服务器时，服务器会将他们的脚本发送给客户端，客户端会运行这些脚本。 这意味着一个没有任何脚本的客户端， 可以加入服务器并获得更改(这个特性很有用，如果您需要在服务器上禁用一个物品，但不想强迫客户端下载额外文件！)
 
@@ -30,9 +30,9 @@ println("Hello world!");
 
 Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
 
-`craftweeper.log`文件位于`<gamedir>/logs`文件夹，并且可以通过任何能够读取纯文本的程序阅读。
+`craftweaker.log`文件位于`<gamedir>/logs`文件夹，并且可以通过任何能够读取纯文本的程序阅读。
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+推荐使用 Notepad++，Sublime Text或者VSCode来编辑脚本文件，当然别的程序也可以。
 
 When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
 
@@ -46,7 +46,7 @@ The `crafttweaker.log` file uses a specific syntax in it's output, that syntax i
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+在上面的示例中，输出将会是：
 
 ```
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
