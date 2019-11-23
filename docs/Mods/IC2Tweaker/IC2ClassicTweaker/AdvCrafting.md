@@ -19,7 +19,7 @@ For example, blue and yellow dye create green dye. This recipe doesn't care abou
 
 ## Add Recipes
 
-### Add Shaped
+### addShaped
 ```zenscript
 mods.ic2.AdvRecipes.addShaped(output,inputs);
 ```
@@ -42,7 +42,7 @@ AdvRecipes.addShaped(leggings,
   [iron,null,iron]]);
 ```
 
-### Add Shapeless
+### addShapeless
 ```zenscript
 mods.ic2.AdvRecipes.addShapeless(output,inputs)
 ```
@@ -52,7 +52,7 @@ This creates a shapeless stacked recipe for `output` using `inputs` as Ingredien
 `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
 `inputs` is an [IIngredient](https://docs.blamejared.com/1.12/en/#Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
 
-### Add Hidden
+### addHidden
 ```zenscript
 mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
 mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
