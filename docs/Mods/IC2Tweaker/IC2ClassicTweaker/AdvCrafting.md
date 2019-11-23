@@ -19,17 +19,17 @@ For example, blue and yellow dye create green dye. This recipe doesn't care abou
 
 ## Add Recipes
 
-### addShaped
+### Add Shaped
 ```zenscript
-AdvRecipes.addShaped(output,inputs);
+mods.ic2.AdvRecipes.addShaped(output,inputs);
 ```
 
 This creates a shaped recipe for `output` using `inputs` as Ingredients.
 
-`output` is an [IItemStack](Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](Vanilla/Variable_Types/IIngredient/)[][] (see below)
+`output` is an [IItemStack](https://docs.blamejared.com/1.12/en/#Vanilla/Items/IItemStack/)  
+`inputs` is an [IIngredient](https://docs.blamejared.com/1.12/en/#Vanilla/Variable_Types/IIngredient/)[][] (see below)
 
-`inputs` is a 2 Dimensional [IIngredient](Vanilla/Variable_Types/IIngredient/) Array.  
+`inputs` is a 2 Dimensional [IIngredient](https://docs.blamejared.com/1.12/en/#Vanilla/Variable_Types/IIngredient/) Array.  
 So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
 If that looks to confusing, try splitting the arrays up into one array per line
 ```zenscript
@@ -42,20 +42,20 @@ AdvRecipes.addShaped(leggings,
   [iron,null,iron]]);
 ```
 
-### addShapeless
+### Add Shapeless
 ```zenscript
-recipes.addShapeless(output,inputs)
+mods.ic2.AdvRecipes.addShapeless(output,inputs)
 ```
 
 This creates a shapeless stacked recipe for `output` using `inputs` as Ingredients.
 
 `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
+`inputs` is an [IIngredient](https://docs.blamejared.com/1.12/en/#Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
 
-### addHidden
+### Add Hidden
 ```zenscript
-addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
-addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
+mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
+mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
 ```
 
 This creates a shaped or shapeless stacked recipe for `output` using `inputs` as Ingredients that is hidden. 
