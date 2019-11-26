@@ -22,13 +22,13 @@ Scripts 存储在 `<gamedir>/脚本` 中，当玩家进入世界时会被加载�
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+在 `hello.zs` 文件中写入以下内容：
 
 ```zenscript
-println("Hello world!");
+println("Hello, world!");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+现在加载Minecraft并看看`<gamedir>/logs/crafttweaker.org` 文件 (或运行 `/ct log` 在您的默认文本编辑器中打开文件)。
 
 `craftweaker.log`文件位于`<gamedir>/logs`文件夹，并且可以通过任何能够读取纯文本的程序阅读。
 
@@ -40,7 +40,7 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 ### crafttweaker.log 文件
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+` crafttweaker.log ` 文件的输出会使用一种特殊的语法，基本的语法结构如下：
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
@@ -56,15 +56,15 @@ The syntax is used for debug purposes and the only time the syntax is not used, 
 
 ### 注释
 
-Comments can be used to make your script files more readable and easier to understand!
+注释可以用来使你的脚本文件更易于阅读，更容易理解!
 
-ZenScript supports 3 types of comments, being:
+ZenScript 支持三种不同的注释书写方法，它们分别是：
 
-Single line: `// I'm a single line comment!`
+单行注释： `// 我是一条单行注释！`
 
-Alternate Single Line: `# I'm also a single line comment!`
+另一种单行注释 `# 我也是一条单行注释！`
 
-Multiline:
+多行注释：
 ```
 /* 我是
 一条
