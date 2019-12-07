@@ -11,7 +11,7 @@ install:
 
 script:
   - mkdocs build --clean --site-dir site
-  - pylinkvalidate.py --progress site/index.html
+  - pylinkvalidate.py --progress file://$TRAVIS_BUILD_DIR/site/index.html
 
 
 cache: pip
