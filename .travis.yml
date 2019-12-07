@@ -1,7 +1,6 @@
 language: python
 python: 
   - "3.6"
-  - "pypy3"
 
 sudo: false
 
@@ -11,7 +10,7 @@ install:
 
 script:
   - mkdocs build --clean --site-dir site
-  - pylinkvalidate.py --progress file://$TRAVIS_BUILD_DIR/site/index.html
+  - pylinkvalidate.py --progress --verbose file://$TRAVIS_BUILD_DIR/site/index.html 
 
 
 cache: pip
