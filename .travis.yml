@@ -4,6 +4,7 @@ sudo: false
 
 install:
   - pip install mkdocs==1.0.4
+  - pip install mkdocs-git-revision-date-plugin==0.1.5
   - pip install git+https://github.com/linkchecker/linkchecker.git@htmlparser-beautifulsoup
 
 
