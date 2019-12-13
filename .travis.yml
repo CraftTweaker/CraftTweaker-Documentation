@@ -1,10 +1,10 @@
 language: python
-python: 2.7
+python: 3.7
 sudo: false
 
 install:
-  - pip install mkdocs==0.16.3
-  - pip install git+https://github.com/linkchecker/linkchecker.git
+  - pip install mkdocs==1.0.4
+  - pip install git+https://github.com/linkchecker/linkchecker.git@htmlparser-beautifulsoup
 
 
 script:
