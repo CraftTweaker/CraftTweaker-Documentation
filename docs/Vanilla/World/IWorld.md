@@ -7,7 +7,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 `import crafttweaker.world.IWorld`
 
 ## Extending IBlockProperties
-IBlockState extends [IBlockAccess](IBlockAccess/). That means that all methods that are available to [IBlockAccess](IBlockAccess/) objects are also available to IBlockState objects.
+IBlockState extends [IBlockAccess](/Vanilla/World/IBlockAccess/). That means that all methods that are available to [IBlockAccess](/Vanilla/World/IBlockAccess/) objects are also available to IBlockState objects.
 
 ## Creating an IWorld object
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
