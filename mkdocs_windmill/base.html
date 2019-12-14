@@ -172,8 +172,9 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <br>
   {%- endif %}
 </div>
-
+{% if not is_top %}
 <footer class="col-md-12 wm-page-content">
+
 {%- block footer %}
   <p></p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.
@@ -183,10 +184,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   </p>
 {%- endblock %}
 </footer>
-
+{%- endif %}
 </body>
 </html>
-{%- if is_top %}
+{% if is_top %}
 <!--
 MkDocs version : {{ mkdocs_version }}
 Build Date UTC : {{ build_date_utc }}
