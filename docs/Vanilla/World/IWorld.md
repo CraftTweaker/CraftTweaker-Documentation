@@ -30,8 +30,8 @@ crafttweaker.world.IWorld.getFromID(int id);
 |isSurfaceWorld()   | surfaceWorld  |boolean                          |Returns whether you are in a surface world or not.                                                                                                                                      |
 |getDimensionType() | dimensionType |String                           |Returns the dimension's type name.                                                                                                                                                      |
 |getWorldType()     | worldType     |String                           |Returns the world's type name.                                                                                                                                                          |
-|getWorldInfo()     | worldInfo     |[IWorldInfo](IWorldInfo/)         |Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
-|getProvider()      | provider      |[IWorldProvider](IWorldProvider/) |Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+|getWorldInfo()     | worldInfo     |[IWorldInfo](/Vanilla/World/IWorldInfo/)         |Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
+|getProvider()      | provider      |[IWorldProvider](/Vanilla/World/IWorldProvider/) |Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
 
 ## ZenMethods with parameters
 ### Get Biome at specific Position
