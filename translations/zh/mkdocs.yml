@@ -1,5 +1,5 @@
 # 如果你需要添加新页面，别忘了将其添加到此处的索引中
-pages:
+nav:
   - 首页: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
   - Commands: "commands.md"
@@ -24,7 +24,10 @@ markdown_extensions:
       anchorlink: True
 
 
-theme_dir: 'mkdocs_windmill'
+theme:
+  name: 'mkdocs'
+  custom_dir: 'mkdocs_windmill'
+
 extra_css:
     - css/styles.css
 extra_javascript:
@@ -37,3 +40,8 @@ extra:
   #artivle_nav_bottom: true
   #history_buttons: false
   version: 'CrT v5.0.0'
+
+
+plugins:
+  - search
+  - git-revision-date
