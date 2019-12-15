@@ -1,2 +1,2 @@
 mkdocs==1.0.4
-mkdocs-git-revision-date-plugin==0.1.5
+mkdocs-git-revision-date-plugin=0.1.5
