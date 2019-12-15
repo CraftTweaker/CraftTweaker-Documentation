@@ -1,5 +1,5 @@
 # If you add a page, you must add it to the index here
-nav:
+pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
   - Commands: "commands.md"
@@ -24,10 +24,7 @@ markdown_extensions:
       anchorlink: True
 
 
-theme:
-  name: 'mkdocs'
-  custom_dir: 'mkdocs_windmill'
-
+theme_dir: 'mkdocs_windmill'
 extra_css:
     - css/styles.css
 extra_javascript:
@@ -40,8 +37,3 @@ extra:
   #artivle_nav_bottom: true
   #history_buttons: false
   version: 'CrT v5.0.0'
-
-
-plugins:
-  - search
-  - git-revision-date
