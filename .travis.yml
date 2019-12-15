@@ -1,14 +1,16 @@
 language: python
-python: 2.7
+python: 
+  - "3.6"
+
 sudo: false
 
 install:
-  - pip install mkdocs==0.16.3
-  - pip install git+https://github.com/linkchecker/linkchecker.git
+  - pip install -r requirements.txt
 
 
 script:
   - mkdocs build --clean --site-dir site
-  - linkchecker site/index.html --ignore-url="search\.html"
+  - linkchecker file://$TRAVIS_BUILD_DIR/site/index.html --ignore-url="search\.html"
+
 
 cache: pip

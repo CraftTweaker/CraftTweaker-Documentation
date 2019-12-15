@@ -1,6 +1,6 @@
 # IBlockAccess
 
-BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](IWorld/), that means all these functions are also available to all [IWorld](IWorld/) objects.
+BlockAccess objects are a group of blocks accessible via coordinates. They mainly serves as superinterface to [IWorld](/Vanilla/World/IWorld/), that means all these functions are also available to all [IWorld](/Vanilla/World/IWorld/) objects.
 
 ## Importing the class
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
