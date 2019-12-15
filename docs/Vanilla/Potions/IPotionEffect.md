@@ -1,7 +1,7 @@
 # IPotionEffect
 
-An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
-You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
+An IPotionEffect is an [IPotion](IPotion/) that also has a duration and an amplifier (strength) parameter.  
+You can get them from an [IPotion](IPotion/) object.
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 | ZenGetter                              | Type                                         |
 |----------------------------------------|----------------------------------------------|
 | duration                               | int                                          |
-| potion                                 | [IPotion](/Vanilla/Potions/IPotion/)                           |
+| potion                                 | [IPotion](IPotion/)                           |
 | doesShowParticles                      | bool                                         |
 | amplifier                              | int                                          |
 | curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |

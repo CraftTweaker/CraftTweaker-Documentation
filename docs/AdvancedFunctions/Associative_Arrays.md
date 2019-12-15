@@ -1,6 +1,6 @@
 # Associative Arrays
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## Declaring an Associative Array
 
@@ -31,7 +31,7 @@ Okay, so what do I need to think of when using these?
 
 ## Refering to Items inside an Associative Array.
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
 `Array[index]`  
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!  
 ```zenscript

@@ -177,11 +177,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 {%- block footer %}
   <p></p>
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.
-    {% if page and page.meta and page.meta.revision_date %}
-      <small>Page last updated on <i>{{ page.meta.revision_date }}</i></small>
-    {% endif %}
-  </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 {%- endblock %}
 </footer>
 {%- endif %}
