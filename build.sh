@@ -10,5 +10,5 @@ echo "start building...";
 
 TRANS=translations/./*;
 
-for f in $TRANS; do echo "Processing folder ./translations$f"; SITEDIR="build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --site-dir $SITEDIR; done
+for f in $TRANS; do echo "Processing folder ./translations$f"; SITEDIR="build/${f#"translations/./"}"; echo $SITEDIR; mkdocs build --clean --site-dir $SITEDIR; done
 echo "finished building!"
