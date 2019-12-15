@@ -821,7 +821,7 @@ markdown_extensions:
       anchorlink: True
 
 theme:
-  name: 'mkdocs'
+  name: null
   custom_dir: 'mkdocs_windmill'
 
 extra_css:
