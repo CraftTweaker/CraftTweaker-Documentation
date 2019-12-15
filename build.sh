@@ -7,8 +7,9 @@ cp -fr ./docs ./translations/en;
 cp ./mkdocs.yml ./translations/en/;
 
 echo "start building...";
+cd ./translations;
 
-TRANS=translations/./*;
+TRANS=./*;
 
-for f in $TRANS; do echo "Processing folder ./translations$f"; SITEDIR="build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --site-dir $SITEDIR; done
+for f in $TRANS; do cd $f; echo "Processing folder $f"; SITEDIR="../../build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --theme-dir "../../mkdocs_windmill" --site-dir $SITEDIR; cd ..; done
 echo "finished building!"
