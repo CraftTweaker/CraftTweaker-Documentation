@@ -1,5 +1,5 @@
 # If you add a page, you must add it to the index here
-nav:
+pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Korzystanie z tej wiki: 'UsingThisWiki.md'
@@ -132,7 +132,6 @@ nav:
         - PlayerLoggedInEvent: 'Vanilla/Events/Events/PlayerLoggedIn.md'
         - PlayerLoggedOutEvent: 'Vanilla/Events/Events/PlayerLoggedOut.md'
         - PlayerOpenContainerEvent: 'Vanilla/Events/Events/PlayerOpenContainer.md'
-        - PlayerPickupEntityEvent: 'Vanilla/Events/Events/PlayerPickupEntity.md'
         - PlayerPickupItemEvent: 'Vanilla/Events/Events/PlayerPickupItem.md'
         - PlayerPickupXpEvent: 'Vanilla/Events/Events/PlayerPickupXp.md'
         - PlayerRespawnEvent: 'Vanilla/Events/Events/PlayerRespawn.md'
@@ -141,8 +140,6 @@ nav:
         - PlayerSmeltedEvent: 'Vanilla/Events/Events/PlayerSmelted.md'
         - PlayerTickEvent: 'Vanilla/Events/Events/PlayerTick.md'
         - PlayerUseHoeEvent: 'Vanilla/Events/Events/PlayerUseHoe.md'
-        - PlayerUseItemStartEvent: 'Vanilla/Events/Events/PlayerUseItemStart.md'
-        - PlayerUseItemTickEvent: 'Vanilla/Events/Events/PlayerUseItemTick.md'
     - Gra:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
@@ -268,13 +265,9 @@ nav:
         - Minecraft:
           - Blockowanie wartości pancerza: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
           - Blokowanie zadawanych obrażeń: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
-          - Block-Harvestlevel Locking: 'Mods/CompatSkills/Supports/Minecraft/Block_Harvest-Level_Locking.md'
           - Blockowanie Wymiarów: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
           - Blokowanie obrażeń Entity: 'Mods/CompatSkills/Supports/Minecraft/Entity_Damage_Locking.md'
-          - Food Locking: 'Mods/CompatSkills/Supports/Minecraft/Food_Locking.md'
           - Blokowanie ujeżdżania: 'Mods/CompatSkills/Supports/Minecraft/Mount_Locking.md'
-          - Ore Dictionary Locking: 'Mods/CompatSkills/Supports/Minecraft/Ore_Dictionary_Locking.md'
-          - Tool Harvestlevel Locking: 'Mods/CompatSkills/Supports/Minecraft/Tool_Harvest-Level_Locking.md'
           - Blokowanie oswajania: 'Mods/CompatSkills/Supports/Minecraft/Tame_Locking.md'
           - Blokowanie Tile-Entity: 'Mods/CompatSkills/Supports/Minecraft/TileEntity_Locking.md'
         - ProjectE: 'Mods/CompatSkills/Supports/ProjectE/EMC-Locks.md'
@@ -820,10 +813,8 @@ markdown_extensions:
   - toc:
       anchorlink: True
 
-theme:
-  name: null
-  custom_dir: 'mkdocs_windmill'
 
+theme_dir: 'mkdocs_windmill'
 extra_css:
     - css/styles.css
 extra_javascript:
@@ -836,7 +827,3 @@ extra:
   #artivle_nav_bottom: true
   #history_buttons: false
   version: 'CrT v4.1.15'
-
-plugins:
-  - search
-  - git-revision-date
