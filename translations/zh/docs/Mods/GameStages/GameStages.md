@@ -6,6 +6,6 @@
 - /gamestage remove <玩家> <阶段> - 移除玩家的一个已解锁阶段。
 - /gamestage clear <玩家> - 清除玩家解锁的所有阶段。
 - /gamestage check <玩家> <阶段> - 检查玩家是否解锁了某个阶段。 
-- /gamestage info - Shows all stages you have unlocked. 
+- /gamestage info - 显示您已解锁的所有阶段。 
 
-Many addons for GameStages will hook into CraftTweaker for customization. You can learn more about said addons in this section of the docs. For more information, support and file downloads, check [here](https://minecraft.curseforge.com/projects/game-stages)
+使用 GameStages 的许多模组也同时使用 CraftTweaker 以便自定义。 您可以在文档的这一部分了解更多有关这些模组的信息。 欲了解更多信息，支持和文件下载，请点击[这里](https://minecraft.curseforge.com/projects/game-stages)
