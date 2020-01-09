@@ -1,6 +1,6 @@
 # 脚本入门
 
-CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder, if you aren't sure where this folder is, just run `/ct scripts` when in the game and the folder will open.
+CraftTweaker 是由一个叫做 `ZenScript` 的自定义脚本语言编写的，ZenScript 是以 `.zs` 类型文件保存在 `<gamedir>/scripts` 文件夹中的，如果你不确定文件夹在哪，在游戏中运行指令`/ct scripts` 然后文件夹就会打开。
 
 ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味着`导入`应该位于文件的顶部，`变量声明`也应该出现在较靠近文件顶部的位置。当然这不是强制性的，`变量`虽能够在脚本的各处定义，但`变量`声明之前的所有行都无法访问这个变量。
 
@@ -9,13 +9,13 @@ Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
 
 ## 什么是脚本
 
-Scripts 存储在 `<gamedir>/脚本` 中，当玩家进入世界时会被加载，就和以前版本的 CraftTweaker(不包括1.12版) 一样 ，脚本可以被重新加载，只需要运行 `/reload`。
+Scripts 被存储在 `<gamedir>/scripts` 文件夹中，当玩家进入世界时会被加载，就和以前版本的 CraftTweaker(不包括1.12版) 一样 ，脚本可以被重新加载，只需要运行 `/reload`。
 
 脚本在进入单人游戏世界时会被加载两次，一次在`服务器` 中，一次在`客户端` 中。 如果你的脚本中有一个`println()`, 你将看到它两次，因为它会被运行两次。
 
 但这并不意味着更改会被执行两次，脚本造成的更改和运行的位置有关，有些改动， 例如设置本地化，只能在客户端运行，但添加配方只能在服务器端完成。
 
-加入服务器时，服务器会将他们的脚本发送给客户端，客户端会运行这些脚本。 这意味着一个没有任何脚本的客户端， 可以加入服务器并获得更改(这个特性很有用，如果您需要在服务器上禁用一个物品，但不想强迫客户端下载额外文件！)
+加入服务器时，服务器会将它们的脚本发送给客户端，客户端会运行这些脚本。 这意味着一个没有任何脚本的客户端， 可以加入服务器并获得更改(这个特性很有用，如果您需要在服务器上禁用一个物品，但不想强迫客户端下载额外文件！)
 
 
 ### 书写你的第一个脚本
