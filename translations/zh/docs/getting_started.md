@@ -20,7 +20,7 @@ Scripts 被存储在 `<gamedir>/scripts` 文件夹中，当玩家进入世界时
 
 ### 书写你的第一个脚本
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+要开始使用脚本，你可以创建一个很基本的文件，叫做 `hello.zs` 并放在 `<gamedir>/scripts>` 文件夹中；如果你不确定文件夹在哪，只需要运行指令`/ct scripts` 然后文件夹就会打开。
 
 在 `hello.zs` 文件中写入以下内容：
 
