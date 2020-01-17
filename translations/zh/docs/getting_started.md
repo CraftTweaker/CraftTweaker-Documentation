@@ -34,7 +34,7 @@ println("Hello, world!");
 
 推荐使用 Notepad++，Sublime Text或者VSCode来编辑脚本文件，当然别的程序也可以。
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+当使用一个脚本编辑器时，注意查看可用的语法高亮模式，多数脚本编辑器带有ZenScript的语法高亮插件。
 
 
 
