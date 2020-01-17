@@ -1,6 +1,6 @@
 # 命令
 
-Here are the commands that matter:
+重要的指令：
 ```
 /ct hand
 ```
