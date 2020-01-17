@@ -1,6 +1,6 @@
-# 例子
-Script examples can be found here:
+# 示例
+在这里可以找到脚本示例：
 
-[Examples](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
+[示例](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
 
-These are the scripts that have been used to test CraftTweaker in 1.14, they should all work and load just fine, you can use them to get familiarized with the new syntax
+这些脚本可以在我的世界1.14版本中被用于测试CraftTweaker，你可以通过使用这些脚本来掌握新的语法。
