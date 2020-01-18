@@ -1,6 +1,6 @@
 # 机器
 
-格雷科技社区版在 `RecipeMap` 里存储所有的合成表。 为了得到它们，你需要向你的代码导入 `mods.gregtech.recipe.RecipeMap`。
+格雷科技社区版 所有的合成表都保存在 `RecipeMap` 里。 为了得到它们，你需要向你的代码import `mods.gregtech.recipe.RecipeMap`。
 
 合成表被分类在对应的机器里，调用 `RecipeMap.getByName(机器名称)` 来获取特定的合成表和构建器。
 
@@ -36,7 +36,7 @@
 - 高炉： `blast_furnace`
 - 聚爆压缩机： `implosion_compressor`
 - 真空冷冻机： `vacuum_freezer`
-- Chemical reactor: `chemical_reactor`
+- 化学反应釜：`chemical_reactor`
 - Disti tower: `distillation_tower`
 - 石油裂化机： `cracker`
 - 热解炉： `pyro`
