@@ -37,7 +37,7 @@
 - 聚爆压缩机： `implosion_compressor`
 - 真空冷冻机： `vacuum_freezer`
 - 化学反应釜：`chemical_reactor`
-- Disti tower: `distillation_tower`
+- 蒸馏塔： `distillation tower`
 - 石油裂化机： `cracker`
 - 热解炉： `pyro`
 - 线材轧机： `wiremill`
@@ -62,12 +62,12 @@
 - 半流质发电机： `semi_fluid_generator`
 - 聚变反应堆： `fusion_reactor`
 
-**防火砖高炉** *使用了和普通的合成表不同的语法。* 例子：
+**土高炉** *使用了和普通的合成表不同的语法。* 例如：
 
 ```zenscript
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
-//防火砖高炉
+//Primitive Blast Furnace 防火砖高炉
 PBFRecipeBuilder.start()
     .input(&lt;ore:ingotCompressedWroughtIron&gt; * 1)
     .output(&lt;ore:ingotSteel&gt;.firstItem * 1)
@@ -75,7 +75,7 @@ PBFRecipeBuilder.start()
     .fuelAmount(2)
     .buildAndRegister();
 
-//从防火砖高炉移除合成表
+//Remove recipes from PBF 从防火砖高炉移除合成表
 import mods.gregtech.recipe.RecipeMaps;
 
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
@@ -94,7 +94,7 @@ recipeMap.recipeBuilder()
 
 这有点像 Java 的 `Stream&lt;T&gt;` ，有齐全的功能来控制你的合成表的行为。
 
-一个电力高炉的例子：
+用电力高炉举例：
 
 ```zenscript
 //电力高炉
@@ -109,7 +109,7 @@ blast_furnace.recipeBuilder()
     .buildAndRegister();
 ```
 
-一些参数可以用 `.property()` 方法来指定:
+一些参数可以用 `.property()` 语法来指定:
 
 | 名称          | 说明                  |
 | ----------- | ------------------- |
@@ -131,14 +131,14 @@ blast_furnace.recipeBuilder()
 .property("explosives", Y)//，Y 是使合成表工作的炸药数量
 ```
 
-更多有用的方法：
+更多有用的语法：
 
 ```zenscript
 .inputs()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%)
+chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
 .duration() // 单位是tick
 .notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
 .hidden() // 这个合成表是否在 JEI 里隐藏
