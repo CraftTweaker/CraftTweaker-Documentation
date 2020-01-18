@@ -1,8 +1,8 @@
 # IWorldInfo
 
-The World Info interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
+World Infoインタフェースは、[IWorld](/Vanilla/World/IWorld/)オブジェクトからより多くの情報を取得するのに使います。
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldInfo;`
