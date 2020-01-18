@@ -142,11 +142,11 @@ chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
 .duration() // 单位是tick
 .notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
 .hidden() // 这个合成表是否在 JEI 里隐藏
-.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 一些机器使用那一个。 最不能的一台是打粉机
+.chancedOutput(<itemstack>, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 只有部分机器会使用这个语句。 最不可用的一类是打粉机
 .EUt() // 每tick的EU消耗
 ```
 
-## 移除
+## 移除合成表
 
 移除一个合成表是由这个合成表的实例自身完成的，所以你需要先找到这个合成表。
 
@@ -155,6 +155,6 @@ chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
 ```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-// findRecipe(long 电压, IItemHandlerModifiable 输入, IMultipleTankHandler/List&lt;FluidStack&gt; 流体输入)
-compressor.findRecipe(2, [&lt;minecraft:redstone&gt;], null).remove();
+// 找到合成表(电压, 指定的输入物品, 指定的<FluidStack>输入)
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove();<
 ```
