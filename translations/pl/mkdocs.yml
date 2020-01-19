@@ -15,12 +15,12 @@ pages:
         - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
           - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
-      - Blocks:
+      - Bloki:
         - MCBlock: 'vanilla/api/blocks/MCBlock.md'
         - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
-      - Brackets:
+      - Nawiasy:
         - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
-      - Data:
+      - Dane:
         - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
         - ByteData: 'vanilla/api/data/ByteData.md'
         - DoubleData: 'vanilla/api/data/DoubleData.md'
@@ -36,7 +36,7 @@ pages:
         - MapData: 'vanilla/api/data/MapData.md'
         - ShortData: 'vanilla/api/data/ShortData.md'
         - StringData: 'vanilla/api/data/StringData.md'
-      - Entities:
+      - Entity:
         - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
         - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
       - Entity:
@@ -89,7 +89,7 @@ pages:
               - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
       - Food:
         - MCFood: 'vanilla/api/food/MCFood.md'
-      - Items:
+      - Przednioty:
         - IIngredient: 'vanilla/api/items/IIngredient.md'
         - IItemStack: 'vanilla/api/items/IItemStack.md'
       - Logger:
@@ -103,7 +103,7 @@ pages:
         - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
         - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
         - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-      - Potions:
+      - Mikstury:
         - MCPotion: 'vanilla/api/potions/MCPotion.md'
         - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
         - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
@@ -113,7 +113,7 @@ pages:
         - BlockPos: 'vanilla/api/util/BlockPos.md'
         - Direction: 'vanilla/api/util/Direction.md'
         - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
-      - World:
+      - Świat:
         - MCBiome: 'vanilla/api/world/MCBiome.md'
         - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
 
