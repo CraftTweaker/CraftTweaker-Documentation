@@ -7,7 +7,7 @@ pages:
   - レシピ:
     - Recipe Managers: "recipes/recipe_managers.md"
     - Crafting Table: "recipes/crafting_table.md"
-  - Vanilla:
+  - バニラ:
     - How to:
       - How to: 'vanilla/how_to/how_to.md'
     - Api:
@@ -15,12 +15,12 @@ pages:
         - Material:
           - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
           - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
-      - Blocks:
+      - ブロック:
         - MCBlock: 'vanilla/api/blocks/MCBlock.md'
         - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
-      - Brackets:
+      - ブラケット記法:
         - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
-      - Data:
+      - データ:
         - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
         - ByteData: 'vanilla/api/data/ByteData.md'
         - DoubleData: 'vanilla/api/data/DoubleData.md'
@@ -36,7 +36,7 @@ pages:
         - MapData: 'vanilla/api/data/MapData.md'
         - ShortData: 'vanilla/api/data/ShortData.md'
         - StringData: 'vanilla/api/data/StringData.md'
-      - Entities:
+      - エンティティ:
         - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
         - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
       - Entity:
@@ -89,7 +89,7 @@ pages:
               - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
       - Food:
         - MCFood: 'vanilla/api/food/MCFood.md'
-      - Items:
+      - アイテム:
         - IIngredient: 'vanilla/api/items/IIngredient.md'
         - IItemStack: 'vanilla/api/items/IItemStack.md'
       - Logger:
@@ -103,7 +103,7 @@ pages:
         - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
         - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
         - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-      - Potions:
+      - ポーション:
         - MCPotion: 'vanilla/api/potions/MCPotion.md'
         - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
         - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
