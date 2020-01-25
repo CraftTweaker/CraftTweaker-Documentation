@@ -17,7 +17,7 @@ You can do this using the following import:
 import crafttweaker.item.IIngredient;
 ```
 
-## Functions
+## Функции
 
 So, what can we do with this?
 
@@ -184,10 +184,16 @@ print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the in operator:
+You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
 
-val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>; val oreIngot = <ore:ingotiron>; val ingotGold = <minecraft:gold_ingot>;
+```zenscript
+val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
+val oreIngot = <ore:ingotIron>;
+val ingotGold = <minecraft:gold_ingot>;
 
-//true as the ingots Ingredient has <minecraft:gold_ingot> ingots has ingotGold;
+//true as the ingots Ingredient has <minecraft:gold_ingot>
+ingots has ingotGold;
 
-//false as <minecraft:iron_ingot> cannot be found in <ore:ingotgold> oreIngot has ingots; ```
+//false as <minecraft:iron_ingot> cannot be found in <ore:ingotGold>
+oreIngot has ingots;
+```
