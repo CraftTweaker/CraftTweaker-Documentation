@@ -14,7 +14,7 @@ mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 
-## Reipe Addition
+## Recipe Addition
 
 ```zenscript
 //mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
