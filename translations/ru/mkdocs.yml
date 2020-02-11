@@ -803,6 +803,7 @@ pages:
 # Не меняйте в PR'ах то, что ниже
 site_name: Документация Crafttweaker
 site_author: Команда CraftTweaker и участников репозитория CrT Wiki на GitHub
+site_url: "https://docs.blamejared.com/1.12/en/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
 repo_name: 'Посетите эту вики на GitHub'
