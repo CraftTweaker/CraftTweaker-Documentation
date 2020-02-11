@@ -128,6 +128,6 @@ This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/
 ```zenscript
 val entity = <entity:minecraft:sheep>;
 
-//getDrops();
-val dropList = entity.getDrops();
+//drops;
+val dropList = entity.drops;
 ```
