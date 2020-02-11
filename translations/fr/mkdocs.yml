@@ -788,6 +788,7 @@ pages:
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+site_url: "https://docs.blamejared.com/1.12/fr/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
 repo_name: 'Visit this wiki on GitHub'
