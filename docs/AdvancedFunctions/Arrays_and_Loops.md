@@ -6,6 +6,12 @@ An array is a List containing several items of the same kind.
 ## Declaring Arrays
 It is declared using ```[``` and ```]```.
 
+**Imortant**: you *must* initialize arrays to something, even if it's an empty array. 
+
+`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work. 
+
+Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+
 ```zenscript
 //Array containing "Hello" and "World"
 val stringArray = ["Hello", "World"] as string[];
