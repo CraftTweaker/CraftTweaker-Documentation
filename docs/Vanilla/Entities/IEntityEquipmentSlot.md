@@ -3,7 +3,7 @@ An IEntityEquipmentSlot is a slot in a player's inventory. That could for exampl
 
 ## Importing the package
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IEntityEquipmentSlot;` 
+`import crafttweaker.entity.IEntityEquipmentSlot;` 
 
 ## ZenGetters/ZenMethods
 
