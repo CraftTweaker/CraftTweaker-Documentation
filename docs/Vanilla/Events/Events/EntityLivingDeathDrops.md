@@ -21,7 +21,6 @@ The following information can be retrieved from the event:
 
 | ZenGetter       | Return Type                                          |
 |-----------------|------------------------------------------------------|
-| `player`        | [IPlayer](/Vanilla/Players/IPlayer/)                  |
 | `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
 | `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)       |
 | `isRecentlyHit` | bool                                                 |
