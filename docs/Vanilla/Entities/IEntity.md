@@ -13,9 +13,9 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 <details><summary>Derived Methods</summary>
 	<ul>
 		<li>entity.displayName</li>
-		<li>stack.position</li>
-		<li>stack.world</li>
-		<li>stack.server</li>
+		<li>entity.position</li>
+		<li>entity.world</li>
+		<li>entity.server</li>
     <li>stack.server</li>
     <li>sender.sendMessage(String text)</li>
 	</ul>
