@@ -1,6 +1,6 @@
 # CTGUI
 
-You can run a command and edit recipes from ingame using a GUI.
+You can run a command and edit recipes from ingame using a GUI. It will generate a file on your local scripts folder called recipes.zs .
 
 <details><summary>Background story</summary>
 Some people don't fancy text editors. Even using templates highlighting their syntax can't satisfy them. They want a GUI (Graphical User Interface).  
@@ -19,3 +19,5 @@ These ids are currently implemented:
 |---------------|--------------|-------|
 | craftingtable | CraftTweaker |       |
 | furnace       | CraftTweaker |       |
+
+Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.
