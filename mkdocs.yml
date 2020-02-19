@@ -206,6 +206,16 @@ pages:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - CraftTweaker Support: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - Alchemistry:
+      - Atomizer: 'Mods/Alchemistry/Atomizer.md'
+      - Chemical Combiner: 'Mods/Alchemistry/ChemicalCombiner.md'
+      - Chemical Dissolver: 'Mods/Alchemistry/Dissolver.md'
+      - Compound Creation: 'Mods/Alchemistry/CreateCompound.md'
+      - Electrolyzer: 'Mods/Alchemistry/Electrolyzer.md'
+      - Element Creation: 'Mods/Alchemistry/CreateElement.md'
+      - Evaporator: 'Mods/Alchemistry/Evaporator.md'
+      - Liquifier: 'Mods/Alchemistry/Liquifier.md'
+      - Get Metadata: 'Mods/Alchemistry/MetaGet.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
