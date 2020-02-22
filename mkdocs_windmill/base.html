@@ -44,11 +44,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 	<script src="{{ base_url }}/js/highlightjs-zenscript.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
-      window.location.replace("https://docs.blamejared.com" + window.location.pathname.replace("/latest/", "/") + window.location.hash);
-  </script>
-    {% if is_top %}
+     {% if is_top %}
       <script src="{{ base_url }}/js/elasticlunr.min.js"></script>
     {% endif %}
     <base target="_top">
@@ -98,6 +94,9 @@
 </head>
 
 <body>
+<a href="https://docs.blamejared.com" rel="noreferrer" id="autoclick">Link to the new docs</a>
+<script>document.getElementById('autoclick').click();</script>
+
 <script>
 if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </script>
