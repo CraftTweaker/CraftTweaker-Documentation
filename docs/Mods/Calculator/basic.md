@@ -6,9 +6,9 @@
 
 ## Methods
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input1** The block that needs to be broken.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input2** The block that needs to be broken.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input2** The block that needs to be broken.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input1** The first input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input2** The second input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## Addition
 
@@ -21,5 +21,5 @@ basic.addRecipe(<minecraft:dirt>, <minecraft:stone>, <minecraft:diamond>);
 ## Removal 
 
 ```zenscript
-mods.calculator.basic.removeRecipe(IIngredient output);
+basic.removeRecipe(IIngredient output);
 ```
