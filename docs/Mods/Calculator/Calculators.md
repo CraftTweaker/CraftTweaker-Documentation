@@ -1,6 +1,6 @@
 # Calculator Machines
 
-# Methods
+## Methods
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-4]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
