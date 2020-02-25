@@ -8,7 +8,7 @@
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input1** The first input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input2** The second input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input2** The third input.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input3** The third input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
 ## Addition
