@@ -25,7 +25,7 @@ Ore.addRecipe(String,
 
 Ore.addRecipe("Stone",
 	"63452D",
-	<ore:Stone>.firstItem,
+	<ore:stone>.firstItem,
 	{
 	"en_au": "StoneDownUnder"
 	},
