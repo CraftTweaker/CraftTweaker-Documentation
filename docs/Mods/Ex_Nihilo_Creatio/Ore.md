@@ -27,7 +27,7 @@ Ore.addRecipe("Wood",
 	"63452D",
 	null,
 	{
-	"en_au": "RedstoneDownUnder"
+	"en_au": "WoodDownUnder"
 	},
 	"Woody");
 ```
