@@ -10,7 +10,7 @@ Also needs to be in the `#loader preinit` or `#loader contenttweaker`
 
 - **String name** Name the ore chunks/piece/dust/ingot
 - **String color** Color of material in hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** For pre-existing ingots.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** requires an oredict.firstItem or errors out.
 - **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
@@ -23,13 +23,13 @@ Ore.addRecipe(String,
 	@Optional Map<string, String>,
 	@Optional String);
 
-Ore.addRecipe("Wood",
+Ore.addRecipe("Stone",
 	"63452D",
-	null,
+	<ore:Stone>.firstItem,
 	{
-	"en_au": "WoodDownUnder"
+	"en_au": "StoneDownUnder"
 	},
-	"Woody");
+	"Stone");
 ```
 
 ## Removal 
