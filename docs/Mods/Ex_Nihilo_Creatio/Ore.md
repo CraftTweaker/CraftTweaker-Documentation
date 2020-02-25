@@ -3,6 +3,7 @@
 ## Package
 
 `mods.exnihilocreatio.Ore`
+
 Also needs to be in the `#loader preinit` or `#loader contenttweaker`
 
 ## Methods
@@ -10,7 +11,7 @@ Also needs to be in the `#loader preinit` or `#loader contenttweaker`
 - **String name** Name the ore chunks/piece/dust/ingot
 - **String color** Color of material in hex.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** For pre-existing ingots.
-- **Map string[string]** Not sure how it works.
+- **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
 ## Addition
@@ -25,7 +26,9 @@ Ore.addRecipe(String,
 Ore.addRecipe("Wood",
 	"63452D",
 	null,
-	null,
+	{
+	"en_au": "RedstoneDownUnder"
+	},
 	"Woody");
 ```
 
