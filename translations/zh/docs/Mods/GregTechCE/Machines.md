@@ -138,11 +138,11 @@ blast_furnace.recipeBuilder()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
-.duration() // 单位是tick
-.notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
-.hidden() // 这个合成表是否在 JEI 里隐藏
-.chancedOutput(<itemstack>, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 只有部分机器会使用这个语句。 最不可用的一类是打粉机
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // (itemstack, intitial output chance, tier output chance boost
+.duration() // in ticks
+.notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
+.hidden() // if the recipe is hidden from the JEI
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. 只有部分机器会使用这个语句。 最不可用的一类是打粉机
 .EUt() // 每tick的EU消耗
 ```
 
