@@ -139,11 +139,11 @@ More useful methods:
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(<itemstack>, 0-10000) (10000 is 100%)
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // (itemstack, intitial output chance, tier output chance boost
 .duration() // in ticks
 .notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
 .hidden() // if the recipe is hidden from the JEI
-.chancedOutput(<itemstack>, 0-10000) (10000 is 100%) // not valid for every machine. some of them use that method. The most notable one is macerator
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. some of them use that method. The most notable one is macerator
 .EUt() // EU per tick
 ```
 
