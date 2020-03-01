@@ -2,14 +2,14 @@
 
 The IGame Class is used to obtain general game information. Can be accessed using `game`
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.game.IGame;`
 
 ## Zengetters
 
-| Zengetter | What does it do?                        | Return Type                                                     | Usage           |
+| Zengetter | What does it do?                        | 返回值类型                                                           | Usage           |
 | --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
 | biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
 | blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
@@ -22,12 +22,13 @@ It might be required for you to import the package if you encounter any issues (
 
 ### GetEntity
 
-    //getEntity(EntityName)
-    
-    //essentially the same
-    val sheep = game.getEntity("sheep");
-    val sheep1 = <entity:minecraft:sheep>;
-    
+```zenscript
+//getEntity(EntityName)
+
+//essentially the same
+val sheep = game.getEntity("sheep");
+val sheep1 = <entity:minecraft:sheep>;
+```
 
 ### SetLocalization
 
