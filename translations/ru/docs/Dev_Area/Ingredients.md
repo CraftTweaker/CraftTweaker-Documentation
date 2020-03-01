@@ -1,4 +1,4 @@
-# Crafting Ingredients
+# Ингредиенты крафта
 
 CraftTweaker introduces [IIngredient](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/item/IIngredient.java) as ingredient interface.  
 Interfaces extending this super interface include:
