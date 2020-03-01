@@ -3,13 +3,13 @@
 Item Transformers transform your crafting inputs upon crafting.  
 This can range from damaging the item up to returning a completely different item.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemTransformer;`
 
 ```zenscript
-<br />val item = &lt;minecraft:apple&gt;;
+<br />val item = <minecraft:apple>;
 
 //Item won't be consumed and will stay in the grid
 transformedItem = item.reuse();
@@ -18,10 +18,10 @@ transformedItem = item.reuse();
 transformedItem = item.giveBack();
 
 //item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(&lt;minecraft:potato&gt;);
+transformedItem = item.giveBack(<minecraft:potato>);
 
 //item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(&lt;minecraft:potato&gt;);
+transformedItem = item.transformReplace(<minecraft:potato>);
 
 //damages the item by 1
 transformedItem = item.transformDamage();
@@ -43,8 +43,9 @@ transformedItem = item.transformConsume(3);
 The old itemTransformer that might cease to exist in 1.13.  
 Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
 
-    transformedItem = item.transform(function(item, player) {return item;});
-    
+```zenscript
+transformedItem = item.transform(function(item, player) {return item;});
+```
 
 The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
 This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
@@ -53,8 +54,9 @@ This stack will replace what's in the crafting slot afterwards. Use `null` to cl
 
 With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
 
-    transformedItem = item.transformNew(function(item){return item;});
-    
+```zenscript
+transformedItem = item.transformNew(function(item){return item;});
+```
 
 The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
 Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  

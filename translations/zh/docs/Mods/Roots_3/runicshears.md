@@ -1,5 +1,3 @@
-# 符文剪刀 (方块 & 实体)
-
 ### 类
 
 ```zenscript
@@ -9,31 +7,31 @@ import mods.roots.RunicShears;
 #### 方法
 
 ```zenscript
-static void addRecipe(
-  string name,                 //创建的配方的名称。
-  IItemStack outputDrop,       //通过剪刀剪切获得的产物。
-  IItemStack replacementBlock, //剪切后的替代方块 (以itemstack，也就是物品堆格式) 
-  IItemStack inputBlock,       //被剪刀剪切的方块。
-  IItemStack jeiDisplayItem    //这个配方中被展示在JEI上的物品。
+void addRecipe(
+  string name,                 // the name of the recipe being created
+  IItemStack outputDrop,       // the item output obtained by performing the shearing
+  IItemStack replacementBlock, // the block (as an itemstack) that replaces the block being interacted with upon shearing
+  IItemStack inputBlock,       // the block that is to be sheared
+  IItemStack jeiDisplayItem    // the item that should be displayed in JEI for this recipe
 );
 ```
 
 * * *
 
 ```zenscript
-static void addEntityRecipe(
-  string name,              //剪切配方的名字
-  IItemStack outputDrop,    //剪切特定生物掉落的物品。
-  IEntityDefinition entity, //剪切后掉落该掉落物的生物。
-  int cooldown              // 实体经历一次剪切后能够再次被剪切所花的tick 数(秒数*20) 。
+void addEntityRecipe(
+  string name,              // the name of the recipe for the shearing
+  IItemStack outputDrop,    // the item that is dropped upon shearing the specified entity
+  IEntityDefinition entity, // the entity that is to be sheared to obtain the drop
+  int cooldown              // the number of ticks (seconds multiplied by 20) it takes until the entity can be sheared again
 );
 ```
 
 * * *
 
 ```zenscript
-static void removeRecipe(
-  IItemStack output //你希望移除的配方的产物。
+void removeRecipe(
+  IItemStack output // the itemstack output that you wish to remove
 );
 ```
 

@@ -1,5 +1,3 @@
-# 研钵& 研杵& 咒术尘的配方（Mortar & Pestle & Spell）
-
 ### 类
 
 ```zenscript
@@ -9,26 +7,26 @@ import mods.roots.Mortar;
 #### 方法
 
 ```zenscript
-static void addRecipe(
-  IItemStack output,   //配方产出的物品。
-  IIngredient[] inputs //由配方的成分组成的数组，从1个物品组成到5个物品组成皆可。
+void addRecipe(
+  IItemStack output,   // the item output of this recipe
+  IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
 );
 ```
 
 * * *
 
 ```zenscript
-static void changeSpell(
-  string spellName,    // 咒术尘注册表中的咒术尘的名字。
-  IIngredient[] inputs // 由新配方中的5个原料所组成的数组。
+void changeSpell(
+  string spellName,    // the name of the spell as in the spell registry
+  IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
 );
 ```
 
 * * *
 
 ```zenscript
-static void removeRecipe(
-  IItemStack output //你希望移除的配方的产物。
+void removeRecipe(
+  IItemStack output // the item stack produced by the recipe
 );
 ```
 

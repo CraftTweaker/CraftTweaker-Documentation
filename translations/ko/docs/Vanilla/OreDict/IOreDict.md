@@ -48,16 +48,18 @@ for entry in oreDict {
 
 You can use the `in` or `has` operator to check if an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) already exists:
 
-    if (oreDict in "ingotIron") {
-        print("ingotIron exists!");
-    }
-    
-    if (oreDict has "ingotIron") {
-        print("ingotIron exists!");
-    }
-    
-    
-    //Alternatively use the contains function:
-    if(oreDict.contains "ingotIron") {
-        print("ingotIron exists!"); 
-    }
+```zenscript
+if (oreDict in "ingotIron") {
+    print("ingotIron exists!");
+}
+
+if (oreDict has "ingotIron") {
+    print("ingotIron exists!");
+}
+
+
+//Alternatively use the contains function:
+if(oreDict.contains "ingotIron") {
+    print("ingotIron exists!"); 
+}
+```

@@ -76,7 +76,7 @@ pow(2.0, 4.0);
 
 ## Global Fields
 
-| Field      | Description                                                                                    |
+| Field      | 说明                                                                                             |
 | ---------- | ---------------------------------------------------------------------------------------------- |
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |

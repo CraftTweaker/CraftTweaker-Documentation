@@ -5,12 +5,12 @@
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.api.IClient;`
 
 ## Где найти класс клиента?
 
-The Client class is a globally registered Symbol, so you won't need to import anything, you can just use the keyword `client`
+Класс IClient является глобально зарегистрированным значением, поэтому вам не нужно ничего импортировать, вы можете просто применить `client`.
 
 ## Что с ним делать?
 

@@ -17,7 +17,7 @@ BlockHarvestDrops Events implement the following interfaces and are able to call
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+다음 정보들은 이벤트를 통해서 얻을 수 있습니다.
 
 | ZenGetter      | ZenSetter    | Type                                             |
 | -------------- | ------------ | ------------------------------------------------ |
@@ -32,5 +32,7 @@ The following information can be retrieved from the event:
 
 You can either addAssign the list or use the method to add an item to the list:
 
-    event.drops += <minecraft:coal>;
-    event.addItem(<minecraft:coal>);
+```zenscript
+event.drops += <minecraft:coal>;
+event.addItem(<minecraft:coal>);
+```

@@ -1,6 +1,6 @@
 # 机器
 
-格雷科技社区版在 `RecipeMap` 里存储所有的合成表。 为了得到它们，你需要向你的代码导入 `mods.gregtech.recipe.RecipeMap`。
+格雷科技社区版 所有的合成表都保存在 `RecipeMap` 里。 为了得到它们，你需要向你的代码import `mods.gregtech.recipe.RecipeMap`。
 
 合成表被分类在对应的机器里，调用 `RecipeMap.getByName(机器名称)` 来获取特定的合成表和构建器。
 
@@ -36,8 +36,8 @@
 - 高炉： `blast_furnace`
 - 聚爆压缩机： `implosion_compressor`
 - 真空冷冻机： `vacuum_freezer`
-- Chemical reactor: `chemical_reactor`
-- Disti tower: `distillation_tower`
+- 化学反应釜：`chemical_reactor`
+- 蒸馏塔： `distillation tower`
 - 石油裂化机： `cracker`
 - 热解炉： `pyro`
 - 线材轧机： `wiremill`
@@ -62,12 +62,12 @@
 - 半流质发电机： `semi_fluid_generator`
 - 聚变反应堆： `fusion_reactor`
 
-**防火砖高炉** *使用了和普通的合成表不同的语法。* 例子：
+**土高炉** *使用了和普通的合成表不同的语法。* 例如：
 
 ```zenscript
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
-//防火砖高炉
+//Primitive Blast Furnace 防火砖高炉
 PBFRecipeBuilder.start()
     .input(&lt;ore:ingotCompressedWroughtIron&gt; * 1)
     .output(&lt;ore:ingotSteel&gt;.firstItem * 1)
@@ -75,7 +75,7 @@ PBFRecipeBuilder.start()
     .fuelAmount(2)
     .buildAndRegister();
 
-//从防火砖高炉移除合成表
+//Remove recipes from PBF 从防火砖高炉移除合成表
 import mods.gregtech.recipe.RecipeMaps;
 
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
@@ -94,7 +94,7 @@ recipeMap.recipeBuilder()
 
 这有点像 Java 的 `Stream&lt;T&gt;` ，有齐全的功能来控制你的合成表的行为。
 
-一个电力高炉的例子：
+用电力高炉举例：
 
 ```zenscript
 //电力高炉
@@ -109,7 +109,7 @@ blast_furnace.recipeBuilder()
     .buildAndRegister();
 ```
 
-一些参数可以用 `.property()` 方法来指定:
+一些参数可以用 `.property()` 语法来指定:
 
 | 名称          | 说明                  |
 | ----------- | ------------------- |
@@ -131,22 +131,22 @@ blast_furnace.recipeBuilder()
 .property("explosives", Y)//，Y 是使合成表工作的炸药数量
 ```
 
-更多有用的方法：
+更多有用的语法：
 
 ```zenscript
 .inputs()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%)
-.duration() // 单位是tick
-.notConsumable(X) // X 是CraftTweaker的ID。 像 .inputs 一样工作，但是物品不会被消耗
-.hidden() // 这个合成表是否在 JEI 里隐藏
-.chancedOutput(&lt;itemstack&gt;, 0-10000) (10000 is 100%) // 不是每一台机器都有效。 一些机器使用那一个。 最不能的一台是打粉机
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // (itemstack, intitial output chance, tier output chance boost
+.duration() // in ticks
+.notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
+.hidden() // if the recipe is hidden from the JEI
+.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. 只有部分机器会使用这个语句。 最不可用的一类是打粉机
 .EUt() // 每tick的EU消耗
 ```
 
-## 移除
+## 移除合成表
 
 移除一个合成表是由这个合成表的实例自身完成的，所以你需要先找到这个合成表。
 
@@ -155,6 +155,6 @@ blast_furnace.recipeBuilder()
 ```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
 
-// findRecipe(long 电压, IItemHandlerModifiable 输入, IMultipleTankHandler/List&lt;FluidStack&gt; 流体输入)
-compressor.findRecipe(2, [&lt;minecraft:redstone&gt;], null).remove();
+// 找到合成表(电压, 指定的输入物品, 指定的<FluidStack>输入)
+compressor.findRecipe(2, [<minecraft:redstone>], null).remove();<
 ```

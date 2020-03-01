@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -191,8 +191,9 @@ print(apple.displayName);
 
 Locally (only this single item).
 
-    <minecraft:coal>.withDisplayName("Black Gold");
-    
+```zenscript
+<minecraft:coal>.withDisplayName("Black Gold");
+```
 
 #### Lore
 

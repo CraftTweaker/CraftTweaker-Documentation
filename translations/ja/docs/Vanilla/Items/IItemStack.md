@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -64,7 +64,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | displayName         | displayName         | string                                                      |
 | maxStackSize        | maxStackSize        | int                                                         |
 | hardness            | hardness            | float                                                       |
-| damage              |                     | int                                                         |
+| damage              |                     | int型                                                        |
 | maxDamage           | maxDamage           | int                                                         |
 | hasTag              |                     | bool                                                        |
 | tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
@@ -75,13 +75,13 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | hasContainerItem    |                     | bool                                                        |
 | repairCost          | repairCost          | int                                                         |
 | canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
+| isOnItemFrame       |                     | bool型                                                       |
+| isEnchantable       |                     | bool型                                                       |
+| isEnchanted         |                     | bool型                                                       |
+| isDamaged           |                     | bool型                                                       |
+| isDamageable        |                     | bool型                                                       |
+| isStackable         |                     | bool型                                                       |
+| isBeaconPayment     |                     | bool型                                                       |
 | hasEffect           |                     | bool                                                        |
 | hasDisplayName      |                     | bool                                                        |
 | metadata            |                     | int                                                         |
@@ -191,8 +191,9 @@ print(apple.displayName);
 
 Locally (only this single item).
 
-    <minecraft:coal>.withDisplayName("Black Gold");
-    
+```zenscript
+<minecraft:coal>.withDisplayName("Black Gold");
+```
 
 #### Lore
 

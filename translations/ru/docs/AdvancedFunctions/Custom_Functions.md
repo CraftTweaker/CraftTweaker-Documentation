@@ -69,7 +69,7 @@ function add(a as int,b as int) as int{
 
 ## Функции как переменные
 
-You can also use functions like variables. In this case, they will be created as separate classes. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
+Вы также можете использовать функции как переменные. В этом случае, они будут создаваться как отдельные классы. Other than that, they work pretty much the same as static functions, you call them by their variable name.  
 You can even use them as [global variables](/AdvancedFunctions/Global_Static_Variables/) this way.
 
 If you need to cast the method (as you do for globals) you can use this:

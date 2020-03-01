@@ -21,7 +21,7 @@ Aside from that, they are identical!
 
 ## Объявление глобального значения
 
-Declaring a global value is as simple as declaring a local value:
+Объявление глобального значения так же просто, как объявление локального:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -31,12 +31,12 @@ global myGlobalValue as IItemStack = <minecraft:dirt>;
 static myStaticValue as IItemStack = <minecraft:sand>;
 ```
 
-Окей, давайте разберемся, да?
+Окей, давайте разберем этот пример:
 
-1. `global` — ключевое слово, которое обозначает объявление глобального значения.
-2. `myGlobalValue` — название этого значения.
-3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
-4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
+1. `global` &mdash; ключевое слово, которое обозначает объявление глобального значения.
+2. `myGlobalValue` &mdash; название этого значения.
+3. `as IItemStack` &mdash; тип значения (рекомендуется [импортировать](Import/) тип перед тем, как приводить объект к нему).
+4. `= <minecraft:dirt>;` &mdash; инициализация значения. Так как глобальные значения неизменяемые, вы должны инициализировать их во время объявления!
 
 ## Советы
 

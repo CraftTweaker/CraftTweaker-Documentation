@@ -22,7 +22,7 @@ mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Recipe Addition
+## Reipe Addition
 
 `amount` states the amount of charcoal the wall will provide.
 

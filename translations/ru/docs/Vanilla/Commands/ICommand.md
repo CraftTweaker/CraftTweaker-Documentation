@@ -1,22 +1,22 @@
 # ICommand
 
-Объект ICommand представляет собой игровую команду.
+Объект ICommand представляет игровую команду.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.command.ICommand;`
 
-## ZenGetters
+## Геттеры
 
 <table>
   <tr>
     <th>
-      ZenGetter
+      Геттер
     </th>
     
     <th>
-      Return Type
+      Возвращаемый тип
     </th>
   </tr>
   
@@ -41,7 +41,7 @@ It might be required for you to import the package if you encounter any issues (
   </tr>
 </table>
 
-## ZenMethods
+## Методы
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);

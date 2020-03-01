@@ -32,61 +32,64 @@ You can use these methos on an IOreDictEntry Object:
 
 ### Add/Remove items
 
-    val oreDictEnt = <ore:ingotIron>;
-    
-    //oreDictEnt.add(IItemStack... item_items);
-    oreDictEnt.add(<minecraft:grass>);
-    oreDictEnt.add(<minecraft:iron_ore>, <minecraft:dirt>);
-    
-    //oreDictEnt.addItems(IItemStack[] items);
-    oreDictEnt.addItems([<minecraft:redstone>, <minecraft:gold_ore>]);
-    
-    //oreDictEnt.addAll(IOreDictEntry otherEntry);
-    oreDictEnt.addAll(<ore:ingotGold>);
-    
-    
-    
-    //oreDictEnt.remove(IItemStack... item_items);
-    oreDictEnt.remove(<minecraft:grass>);
-    oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
-    
-    //oreDictEnt.removeItems(IItemStack[] items);
-    oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
-    
+```zenscript
+val oreDictEnt = <ore:ingotIron>;
+
+//oreDictEnt.add(IItemStack... item_items);
+oreDictEnt.add(<minecraft:grass>);
+oreDictEnt.add(<minecraft:iron_ore>, <minecraft:dirt>);
+
+//oreDictEnt.addItems(IItemStack[] items);
+oreDictEnt.addItems([<minecraft:redstone>, <minecraft:gold_ore>]);
+
+//oreDictEnt.addAll(IOreDictEntry otherEntry);
+oreDictEnt.addAll(<ore:ingotGold>);
+
+
+
+//oreDictEnt.remove(IItemStack... item_items);
+oreDictEnt.remove(<minecraft:grass>);
+oreDictEnt.remove(<minecraft:iron_ore>, <minecraft:dirt>);
+
+//oreDictEnt.removeItems(IItemStack[] items);
+oreDictEnt.removeItems([<minecraft:redstone>, <minecraft:gold_ore>]);
+```
 
 ### Check if an IOreDictEntry contains an item
 
 You can check if an IOreDictEntry contains an item using either the `in` or `has` keywords:
 
-    val oreDictEnt = <ore:ingotIron>;
-    
-    //While using in is possible
-    if(oreDictEnt in <minecraft:iron_ingot>){
-        print("Iron is in the oreDict!");
-    }
-    
-    //many prefer using has as it might make more sense grammar-wise
-    if(oreDictEnt has <minecraft:iron_ingot>){
-        print("Iron still is in the oreDict!");
-    }
-    
+```zenscript
+val oreDictEnt = <ore:ingotIron>;
+
+//While using in is possible
+if(oreDictEnt in <minecraft:iron_ingot>){
+    print("Iron is in the oreDict!");
+}
+
+//many prefer using has as it might make more sense grammar-wise
+if(oreDictEnt has <minecraft:iron_ingot>){
+    print("Iron still is in the oreDict!");
+}
+```
 
 ### Mirror an IOreDictEntry
 
 Mirroring an IOreDictEntry means that all items in the other oreDictEntry will be replaced by the items in the oreDictEntry the method was executed on:
 
-    //make iron and copper equivalent
-    val iron = <ore:ingotIron>;
-    val copper = <ore:ingotCopper>;
-    
-    //adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
-    iron.addAll(copper); 
-    
-    
-    //mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
-    //In this case that means by all iron and copper oreDictEntries
-    copper.mirror(iron);
-    
+```zenscript
+//make iron and copper equivalent
+val iron = <ore:ingotIron>;
+val copper = <ore:ingotCopper>;
+
+//adds all entries from iron to copper so that Copper contains both, the iron and copper oreDic entries
+iron.addAll(copper); 
+
+
+//mirrors copper to iron, so all items in iron will be replaced by all the ones in copper.
+//In this case that means by all iron and copper oreDictEntries
+copper.mirror(iron);
+```
 
 ## IIngredient implementation
 
@@ -94,8 +97,10 @@ IOreDictEntry extends [IIngredient](/Vanilla/Variable_Types/IIngredient/). This 
 
 ### Iterating through an oreDictEntry's items
 
-    val iron = <ore:ingotIron>;
-    
-    for item in iron.items{
-        recipe.remove(item);
-    }
+```zenscript
+val iron = <ore:ingotIron>;
+
+for item in iron.items{
+    recipe.remove(item);
+}
+```

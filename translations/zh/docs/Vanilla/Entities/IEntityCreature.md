@@ -2,7 +2,7 @@
 
 A Creature.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityCreature;`
@@ -15,7 +15,7 @@ IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That 
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Type                                   |
+| ZenGetter            | 类型                                     |
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
 | isWithinHomeDistance | bool                                   |
@@ -30,8 +30,9 @@ IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That 
 Method expects nothing.  
 Returns nothing.
 
-    entCreObj.playLivingSound();
-    
+```zenscript
+entCreObj.playLivingSound();
+```
 
 #### Set or detach home
 
@@ -39,13 +40,16 @@ First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int
 Second method expects nothing.  
 Both methods return nothing.
 
-    entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
-    entAnObj.detachHome();
-    
+```zenscript
+entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
+entAnObj.detachHome();
+```
 
 #### Check if a position is within the home distance
 
 Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns a bool.
 
-    entAnObj.isPositionWithinHomeDistance
+```zenscript
+entAnObj.isPositionWithinHomeDistance
+```

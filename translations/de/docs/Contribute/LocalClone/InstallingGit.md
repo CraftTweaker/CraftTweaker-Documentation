@@ -8,7 +8,7 @@ Git is a distributed version control system (basically, it's what GitHub, BitBuc
 You can check if you have git installed by opening the Command Prompt and executing the command `git`.  
 If you get the usage page, then you have it installed and can skip this page.  
 If you do not get the usage page then you either have it not installed or you have not added it to your PATH (see below). In a case like this you will need to install git or add it to your path:  
-![CMD Prompt issueing w git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
+![CMD Prompt issuing git command without git being installed](/Contribute/LocalClone/assets/CMD_noGit.png)
 
 ### Downloading and installing Git
 

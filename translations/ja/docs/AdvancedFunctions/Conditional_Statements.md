@@ -1,10 +1,10 @@
-# Conditional Statements
+# 条件文
 
-You might want to include code that will only be executed if certain criteria are met (or if they are not). That's what you need conditional Statements for.
+ある条件を満たす(もしくは満たされない)場合にのみ実行されるコードを書くことができます。 それが、条件分が存在する理由です。
 
 ## If
 
-An If-Statement is the first part of a conditional statement. It declares the condition that must be true for the following code to be executed. Be careful, you need TWO EQUALS when comparing values (that's because one equal is for declaring values!)
+If文とは、条件分の最初の要素です。 それに続くコードを実行するのにtrueと評価されるべき条件を記述します。 値を比較する時には、等号が2つ必要になることに注意してください。等号が一つだけだと、値の宣言文になってしまいます。
 
 ```zenscript
 val test = 0;
@@ -16,48 +16,48 @@ if(test == 0){ //true
 
 ## Else
 
-An Else-Statement can be added to the end of a conditional Statement to declare what will be executed when the if-condition equals to false.
+Else文を条件文に追加すると、If文の条件がfalseと評価された時に実行されるコードを記述できます。
 
 ```zenscript
 var test = 0;
 
 if(test == 0){//true
-    //will be executed when test is equal to 0
+    //testが0のときに実行されます
     print("Test is zero!");
 } else {
-    //will be executed when test is not equal to 0
+    //testが0以外のときに実行されます
     print("Test is NOT zero!");
 }
 
 test = 1
 if(test == 0){//false
-    //will be executed when test is equal to 0
+    //testが0のときに実行されます
     print("Now, test is zero!");
 } else {
-    //will be executed when test is not equal to 0
+    //testが0以外のときに実行されます
     print("Now, test is NOT zero!");
 }
 
 ```
 
-## Things to check for
+## 確認事項
 
-Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
+使用可能な算術記号は、`+`,`-`,`*`,`/`,`mod`,`concatenation(~)`です。
 
-Supported Operands are `OR(|)`, `AND(&)`, `XOR(^)`
+使用可能な論理演算記号は`OR(|)`, `AND(&)`, `XOR(^)`です。
 
 ```zenscript
-//You can check for:
+//確認事項:
 
 
-//Number values
+//数値
 val a = 0 as int;
 if(a==0){print("NumVal");}
 
-//Calculated number values
+//算術演算
 val b = 1;
 val c = 5;
-//All evaluate to true
+//すべてtrueと評価されます
 if(b+c==6){print("Num1!");}
 if(b*c==5){print("Num2!");}
 if(b/c==0.2){print("Num3!");}
@@ -65,22 +65,22 @@ if(b/c==0.2){print("Num3!");}
 //OR, XOR, AND
 val d = "Hello";
 val e = "World";
-val f = d~e; //f = "HelloWorld", the Tilde just concatenates one thing to another
+val f = d~e; //f = "HelloWorld", チルダは連結の演算子です
 
-//|(OR) means, as long as one of the criteria is met, it evaluates to true
+//|(OR)は式のいずれかがtrueと評価される場合、全体としてtrueと評価されることを意味します。
 if(d=="Hello" | e == "Hello"){print("OR1!");}       //true
 if(d=="Hello" | e == "World"){print("OR2!");}       //true
 
-//^(XOR) means, ONLY ONE criteria may be met, otherwise it evaluates to false
+//^(XOR)はたった一つの式だけがtrueと評価されるときのみ全体としてtrueと評価されます。そうでなければfalseと評価されます。
 if(d=="Hello" ^ e == "Hello"){print("XOR1!");}      //true
 if(d=="Hello" ^ e == "World"){print("XOR2!");}      //false
 
-//&(AND) means, both criteria need to be met, otherwise it evaluates to false
+//&(AND)はどの式もtrueと評価されないと全体としてtrueと評価されません。そうでなければfalseと評価されます。
 if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## 「?」演算子 
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 

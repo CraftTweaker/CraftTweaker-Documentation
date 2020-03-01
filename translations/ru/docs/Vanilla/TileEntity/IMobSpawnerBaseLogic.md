@@ -7,7 +7,7 @@
 Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.tileentity.IMobSpawnerBaseLogic`
 
-## Геттеры ZenScript
+## Геттеры
 
 | Геттер     | Сеттер             |                                       |
 | ---------- | ------------------ | ------------------------------------- |
@@ -18,6 +18,8 @@
 
 ## Методы ZenScript
 
-    void updateSpawner();
-    
-    void setDelayToMin();
+```zenscript
+void updateSpawner();
+
+void setDelayToMin();
+```

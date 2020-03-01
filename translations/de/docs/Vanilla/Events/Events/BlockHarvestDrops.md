@@ -32,5 +32,7 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 You can either addAssign the list or use the method to add an item to the list:
 
-    event.drops += <minecraft:coal>;
-    event.addItem(<minecraft:coal>);
+```zenscript
+event.drops += <minecraft:coal>;
+event.addItem(<minecraft:coal>);
+```

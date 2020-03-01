@@ -35,13 +35,13 @@ val myAssocArray = {
 차이점은 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다. 다만 배열을 어떤 타입을 선언했는지에 맞춰서 참조하면 됩니다.
 
 ```zenscript
-<br />val dirt = &lt;minecraft:dirt&gt;;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    <minecraft:dirt> : "This is me"
 } as string[IItemStack];
 
 //array[index]
-print(assocArray[&lt;minecraft:dirt&gt;]);
+print(assocArray[<minecraft:dirt>]);
 
 //동일한 타입의 변수 사용 가능. 
 print(assocArray[dirt]);
