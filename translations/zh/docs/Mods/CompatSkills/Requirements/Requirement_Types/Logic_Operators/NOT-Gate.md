@@ -1,10 +1,10 @@
-# NOT Operator
+# 非运算符
 
-A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
+**非运算符**翻转输入的状态。 所以如果输入为`TRUE`，那么输出将会为`FALSE`，反之亦然
 
-| Input | Output |
-| ----- | ------:|
-| 0     |      1 |
-| 1     |      0 |
+| 输入 | 输出 |
+| -- | --:|
+| 0  |  1 |
+| 1  |  0 |
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
+Reskillable支持的最简单的逻辑需求是将一个条件翻转的能力。 它使用一个 非门 来实现这个，语句是 not|条件。 如上面关于逻辑门的部分所述，只有不满足特定的条件时，这个“非”逻辑条件才会被满足。
