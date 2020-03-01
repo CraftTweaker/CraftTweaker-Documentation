@@ -721,10 +721,10 @@ pages:
     - ProjectE:
       - Entity Randomizer: 'Mods/ProjectE/EntityRandomizer.md'
       - World Transmutation: 'Mods/ProjectE/WorldTransmutation.md'
-    - Rocky Core:
-      - Rocky Core: 'Mods/RockyCore/RockyCore.md'
-      - Anvil: 'Mods/RockyCore/Anvil.md'
-      - Merchant: 'Mods/RockyCore/Merchant.md'
+    - Rocky Tweaks:
+      - Rocky Tweaks: 'Mods/RockyTweaks/RockyTweaks.md'
+      - Anvil: 'Mods/RockyTweaks/Anvil.md'
+      - Merchant: 'Mods/RockyTweaks/Merchant.md'
     - Roots 3:
       - Animal Harvest Ritual: 'Mods/Roots_3/animalharvest.md'
       - Bark Creation: 'Mods/Roots_3/bark.md'
