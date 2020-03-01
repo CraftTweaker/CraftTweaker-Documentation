@@ -18,12 +18,11 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+다음 정보들은 이벤트를 통해서 얻을 수 있습니다.
 
-| ZenGetter       | Return Type                                                 |
+| ZenGetter       | 반환 타입                                                       |
 | --------------- | ----------------------------------------------------------- |
-| `player`        | [IPlayer](/Vanilla/Players/IPlayer/)                        |
-| `items`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
 | `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 | `isRecentlyHit` | bool                                                        |
 | `lootingLevel`  | int                                                         |
@@ -33,7 +32,7 @@ The following information can be retrieved from the event:
 You can either add to the droplist or completely substitute it with a new one:
 
 ```zenscript
-event.items = //reference to IEntityItem list.
+event.drops = //reference to IEntityItem list.
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
