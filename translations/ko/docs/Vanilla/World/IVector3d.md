@@ -12,9 +12,10 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 If you ever find yourself in the need of creating a new IVector3d object, you can use this method:
 
-    //crafttweaker.world.IVector3d.create(double x, double y, double z);
-    crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
-    
+```zenscript
+//crafttweaker.world.IVector3d.create(double x, double y, double z);
+crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
+```
 
 ## ZenGetters
 
