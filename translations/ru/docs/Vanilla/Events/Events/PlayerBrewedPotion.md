@@ -14,7 +14,7 @@ PlayerBrewedPotion Events implement the following interfaces and are able to cal
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## Геттеры
 
 The following information can be retrieved from the event:
 
