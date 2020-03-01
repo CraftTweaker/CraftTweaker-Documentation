@@ -38,13 +38,13 @@ val myAssocArray = {
 唯一不同之处在于，现在不必通过整数序号来访问数组，而是通过你之前预先声明的索引来访问！
 
 ```zenscript
-<br />val dirt = &lt;minecraft:dirt&gt;;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "这是我"
+    <minecraft:dirt> : "这是我"
 } as string[IItemStack];
 
 //数组名[索引]
-print(assocArray[&lt;minecraft:dirt&gt;]);
+print(assocArray[<minecraft:dirt>]);
 
 //只要类型匹配，这里也可以使用变量
 print(assocArray[dirt]);
