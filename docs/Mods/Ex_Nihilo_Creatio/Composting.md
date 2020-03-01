@@ -1,4 +1,4 @@
-# Compost
+# Composting
 
 ## Package
 
@@ -14,6 +14,7 @@
 ## Addition
 
 Does not take arrays in for IIngredient.
+
 ```zenscript
 Compost.addRecipe(IIngredient, Float, String, IItemStack);
 

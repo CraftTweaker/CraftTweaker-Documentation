@@ -1,4 +1,4 @@
-# Crook
+# Crooking
 
 ## Package
 
@@ -14,13 +14,13 @@
 ## Addition
 
 ```zenscript
-Crook.addRecipe(IIngredient, IItemStack, Float, Float);
+mods.exnihilocreation.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 
-Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
+mods.exnihilocreation.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
 ## Removal 
 
 ```zenscript
-Crook.removeAll();
+mods.exnihilocreation.Crook.removeAll();
 ```

@@ -1,10 +1,9 @@
-# Ore
+# Ores
 
 ## Package
-
+```zenscript
 `mods.exnihilocreatio.Ore`
-
-Also needs to be in the `#loader preinit` or `#loader contenttweaker`
+```
 
 ## Methods
 
@@ -17,13 +16,13 @@ Also needs to be in the `#loader preinit` or `#loader contenttweaker`
 ## Addition
 
 ```zenscript
-Ore.addRecipe(String,
+mods.exnihilocreatio.Ore.addRecipe(String,
 	String,
 	@Optional IItemStack,
 	@Optional Map<string, String>,
 	@Optional String);
 
-Ore.addRecipe("Stone",
+mods.exnihilocreatio.Ore.addRecipe("Stone",
 	"63452D",
 	<ore:stone>.firstItem,
 	{
@@ -35,5 +34,5 @@ Ore.addRecipe("Stone",
 ## Removal 
 
 ```zenscript
-Ore.removeAll();
+mods.exnihilocreatio.Ore.removeAll();
 ```
