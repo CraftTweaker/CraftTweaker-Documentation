@@ -1,17 +1,17 @@
 # IData
 
-The IData interface is a generic Interface for handling Data like NBT.  
-You can cast about all primitives (short, double, string, int, ...) as well as certain arrays to IData.  
-Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. DataBool).
+Интерфейс IData &mdash; обобщающий интерфейс для обработки данных вроде NBT.  
+Вы можете приводить его ко всем примитивам (short, double, string, int, ...) так же, как и определенные массивы к IData.  
+Помните, что даже если они предлагают аналогичные функции, IData и его составляющие &mdash; не одно и то же, и поэтому они будут обозначаться как Data<тип> (например, DataBool).
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.data.IData;`
 
-## Overview
+## Обзор
 
-| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
+| Двоичные операторы                | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
 | --------------------------------- | --- | --- | --- | --- | --- | ------- | --- | --- | ---- | ---- | -------------------------- |
 | DataBool                          | ✘   | ✘   | ✘   | ✘   | ✘   | ✔       | ✔   | ✔   | ✔    | ✔    | ✘                          |
 | DataByte                          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
@@ -26,7 +26,7 @@ It might be required for you to import the package if you encounter any issues (
 | DataShort                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataString                        | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 
-| Unary Oparators                   | `-` negate | `!` not |
+| Одиночные операторы               | `-` negate | `!` not |
 | --------------------------------- | ---------- | ------- |
 | DataBool                          | ✘          | ✔       |
 | DataByte                          | ✔          | ✔       |
