@@ -12,12 +12,13 @@ It might be required for you to import the package if you encounter any issues (
 
 You can derive a weightedItemStack from an [IItemStack](/Vanilla/Items/IItemStack/) by either using the modulo operator or the weight function on it.
 
-    val itemStack = <minecraft:dirt>;
-    
-    //both create a weightedItemstack object with a chance of 20%
-    val wItemStack = itemStack % 20;
-    val wItemStack2 = itemStack.weight(0.2);
-    
+```zenscript
+val itemStack = <minecraft:dirt>;
+
+//both create a weightedItemstack object with a chance of 20%
+val wItemStack = itemStack % 20;
+val wItemStack2 = itemStack.weight(0.2);
+```
 
 ## ZenGetters
 
