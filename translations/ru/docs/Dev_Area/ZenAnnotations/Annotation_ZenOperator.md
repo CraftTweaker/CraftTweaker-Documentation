@@ -1,10 +1,10 @@
 # ZenOperator
 
-A Method annotated with `@ZenOperator` cannot be called by instance.method(parameters) but instead uses Tokens like `+`, `!` and the like.
+Метод, отмеченный аннотацией `@ZenOperator` не может быть вызван, как обычно, и вместо этого использует токены вроде `+`, `!` и тому подобные.
 
 ## Пример
 
-[CraftTweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
+[IData из CraftTweaker:](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
 
 ```java
 @ZenClass("crafttweaker.data.IData")
@@ -21,7 +21,7 @@ public interface IData {
 }
 ```
 
-## What methods can be annotated || Additional Info
+## Какие методы могут быть аннотированы || Дополнительная информация
 
 - You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators/).
 - Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
