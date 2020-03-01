@@ -23,4 +23,6 @@ It might be required for you to import the package if you encounter any issues (
 
 Takes a String. Returns void (nothing).
 
-    sender.sendMessage(String text);
+```zenscript
+sender.sendMessage(String text);
+```
