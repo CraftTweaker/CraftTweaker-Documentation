@@ -8,22 +8,24 @@
 
 より複雑なスクリプトを書こうとすると、変数を指定した型へキャストする必要が出てくると思います。 例えば、次のスクリプトはうまく動きません。
 
-    var test;
-    
-    test = <minecraft:dirt>;
-    recipes.remove(test);
-    
+```zenscript
+var test;
+
+test = <minecraft:dirt>;
+recipes.remove(test);
+```
 
 何故でしょう? なぜなら、CraftTweakerは値が定まっていない変数をIAnyという型にキャストするためです。 実装は実際には無いですが、この型はいくつかのレシピハンドラを簡単にするために用意されました。しかし、これは時折不都合だったりします。 元はほぼすべての型を扱える型として意図されていたため、変数を変更する必要は無いですが、インターフェースは何も実装されていません。
 
 閑話休題、この問題をどうやって解決するでしょうか? 変数testを ```IItemStack```にキャストすると解決できます。この型はアイテムを扱う型です。 残念なことに、いくつかの型を使うには最初にインポートしなければなりません。これはその一例です。
 
-    import crafttweaker.item.IItemStack;
-    var test as IItemStack;
-    
-    test = <minecraft:dirt>;
-    recipes.remove(test);
-    
+```zenscript
+import crafttweaker.item.IItemStack;
+var test as IItemStack;
+
+test = <minecraft:dirt>;
+recipes.remove(test);
+```
 
 ## 変数の型の一覧
 
