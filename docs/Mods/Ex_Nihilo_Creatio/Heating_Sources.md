@@ -1,4 +1,4 @@
-# Heat
+# Heating Sources
 
 ## Package
 
@@ -12,13 +12,13 @@
 ## Addition
 
 ```zenscript
-Heat.addRecipe(IItemStack, Int);
+mods.exnihilocreation.Heat.addRecipe(IItemStack, Int);
 
-Heat.addRecipe(<minecraft:log>, 20);
+mods.exnihilocreation.Heat.addRecipe(<minecraft:log>, 20);
 ```
 
 ## Removal 
 
 ```zenscript
-Heat.removeAll();
+mods.exnihilocreation.Heat.removeAll();
 ```
