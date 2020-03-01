@@ -2,10 +2,10 @@
 
 Вместо прописывания полного имени функции каждый раз вы можете просто импортировать функцию, чтобы выполнять свои задачи. Полезно при использовании функций модов.
 
-## Note on pre 1.12 imports
+## Примечание об импорте до 1.12
 
-With CraftTweaker 1.12, a lot of code has changed.  
-Before, all internal functions were called using `minetweaker.package.function`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
+На 1.12 в CraftTweaker многое изменилось.  
+До этой версии все внутренние функции вызывались с помощью `minetweaker.<пакет>.<функция>`. Now, `minetweaker` has been replaced by `crafttweaker`, so now it sais `crafttweaker.name.function`!
 
 Should you ever experience any importing issues with scripts from this wiki, you may want to check if your MC version is below 1.12.
 
