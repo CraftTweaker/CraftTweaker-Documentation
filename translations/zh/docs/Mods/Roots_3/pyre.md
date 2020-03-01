@@ -1,5 +1,3 @@
-# 柴堆仪式（Pyre）配方
-
 ### 类
 
 ```zenscript
@@ -9,29 +7,29 @@ import mods.roots.Pyre;
 #### 方法
 
 ```zenscript
-static void addRecipe(
-  string name,         // 这个配方的名字，如果它取代了一个已有的配方，请确保当前的名字已被使用。
-  IItemStack output,   //这个配方的产物。
-  IIngredient[] inputs //由这个配方所需的5个原料所组成的数组(不能多，也不能少)。
+void addRecipe(
+  string name,         // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
+  IItemStack output,   // the output of this recipe
+  IIngredient[] inputs // a list of five ingredients (no more, no less)
 );
 ```
 
 * * *
 
 ```zenscript
-static void addRecipe(
-  string name,          //这个配方的名字，如果它取代了一个已有的配方，请确保当前的名字已被使用。
-  IItemStack output,    // 这个配方的产物。
-  IIngredient[] inputs, //由这个配方所需的5个原料所组成的数组（不能多，也不能少）。
-  int xp                // 完成配方后奖励的经验数（以级为单位）。
+void addRecipe(
+  string name,          // the name of the recipe being added; if replacing an existing game recipe, ensure the correct name is used
+  IItemStack output,    // the output of this recipe
+  IIngredient[] inputs, // a list of five ingredients
+  int xp                // the amount of xp in levels that is granted after crafting
 );
 ```
 
 * * *
 
 ```zenscript
-static void removeRecipe(
-  IItemStack output //所移除的配方产物。
+void removeRecipe(
+  IItemStack output // the output of the recipe to remove
 );
 ```
 
