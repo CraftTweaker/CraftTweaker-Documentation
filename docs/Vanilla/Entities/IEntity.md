@@ -16,8 +16,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 		<li>entity.position</li>
 		<li>entity.world</li>
 		<li>entity.server</li>
-    <li>stack.server</li>
-    <li>sender.sendMessage(String text)</li>
+    		<li>entity.sendMessage(String text)</li>
 	</ul>
 </details>
 
