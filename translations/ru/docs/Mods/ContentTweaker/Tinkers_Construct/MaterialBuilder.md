@@ -28,7 +28,7 @@ myMat.register();
 
 You can set and get these properties using `myMaterial.name`.
 
-| Property           | Type                                             | Additional notes                                             |
+| Property           | Тип                                              | Additional notes                                             |
 | ------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
 | identifier         | string                                           | Unique name                                                  |
 | color              | int                                              |                                                              |
@@ -171,7 +171,7 @@ testMat.addMaterialTrait("dense", null);
 //Faulty, should error, though only during init, as then the strings will be checked.
 testMat.addMaterialTrait("dance", null);
 
-testMat.itemLocalizer = function(itemName){return "Cool " + itemName;};
+testMat.itemLocalizer = function(thisMaterial, itemName){return "Cool " + itemName;};
 testMat.localizedName = "Wicked";
 testMat.register();
 ```
