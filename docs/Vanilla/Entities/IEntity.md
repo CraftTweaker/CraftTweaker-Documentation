@@ -10,6 +10,16 @@ It might be required for you to import the package if you encounter any issues (
 ## Extending ICommandSender
 IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
+<details><summary>Derived Methods</summary>
+	<ul>
+		<li>entity.displayName</li>
+		<li>entity.position</li>
+		<li>entity.world</li>
+		<li>entity.server</li>
+    		<li>entity.sendMessage(String text)</li>
+	</ul>
+</details>
+
 
 ## ZenGetters
 
@@ -19,7 +29,6 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | alive                       | isAlive()           | boolean                                      |
 | alwaysRenderNameTag         |                     | boolean                                      |
 | armorInventory              |                     | List<[IItemStack](/Vanilla/Items/IItemStack/) |
-| blockPos                    | getBlockPos()       | [IBlockPos](/Vanilla/World/IBlockPos/)        |
 | canBeAttackedWithItem       |                     | boolean                                      |
 | canBeCollidedWith           |                     | boolean                                      |
 | canPassengerSteer           |                     | boolean                                      |
