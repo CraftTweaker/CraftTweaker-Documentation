@@ -80,6 +80,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | isEnchanted         |                     | bool                                                       |
 | isDamaged           |                     | bool                                                       |
 | isDamageable        |                     | bool                                                       |
+| isItemBlock         |                     | bool (if contained item is an itemblock)
 | isStackable         |                     | bool                                                       |
 | isBeaconPayment     |                     | bool                                                       |
 | hasEffect           |                     | bool                                                       |
