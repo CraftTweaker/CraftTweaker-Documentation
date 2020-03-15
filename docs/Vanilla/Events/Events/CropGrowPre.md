@@ -15,6 +15,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
+- [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters

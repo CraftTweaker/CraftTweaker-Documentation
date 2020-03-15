@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Event interface extensions
 AnimalTame Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
+- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
@@ -19,6 +19,6 @@ The following information can be retrieved/set during the event:
 
 | ZenGetter       | ZenSetter       | Type                                              |
 |-----------------|-----------------|---------------------------------------------------|
-| `animal`        |                 | IEntityanimal                                     |
+| `animal`        |                 | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `animal`        |                 | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `player`        |                 | [IPlayer](/Vanilla/Players/IPlayer/)              |
