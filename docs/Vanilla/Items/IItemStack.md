@@ -343,7 +343,7 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 You can also test if an IItemStack contains an ItemBlock and can thus be converted:
 ```zenscript:
 <minecraft:dirt>.isItemBlock; // true
-<minecraft:stick>>.isItemBlock; // false
+<minecraft:stick>.isItemBlock; // false
 ```
 
 #### Food Properties
