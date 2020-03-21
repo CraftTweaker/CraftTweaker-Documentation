@@ -116,6 +116,9 @@ pages:
       - Мир:
         - MCBiome: 'vanilla/api/world/MCBiome.md'
         - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
+  - Моды:
+    - JEITweaker:
+      - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
 
 # Не меняйте в PR'ах то, что ниже
 site_name: CraftTweaker Documentation
