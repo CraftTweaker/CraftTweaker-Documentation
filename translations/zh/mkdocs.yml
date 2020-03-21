@@ -116,6 +116,9 @@ pages:
       - World:
         - MCBiome: 'vanilla/api/world/MCBiome.md'
         - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
+  - Mods:
+    - JEITweaker:
+      - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
 
 # 不得在提交的 Pull Request 中修改以下的内容
 site_name: CraftTweaker Documentation
