@@ -2,7 +2,7 @@
 
 
 
-此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
@@ -18,9 +18,9 @@ ByteArrayData实现了以下接口。 这意味着对这个接口可用的任何
 ```zenscript
 new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| 参数 | 类型   | 描述    |
-| -- | ---- | ----- |
-| 内置 | 字节[] | 未提供说明 |
+| 参数       | 类型     | 描述    |
+| -------- | ------ | ----- |
+| internal | byte[] | 未提供说明 |
 
 
 
@@ -43,10 +43,10 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].add(1, "beautiful");
 ```
 
-| 参数 | 类型                                                     | 描述                   |
-| -- | ------------------------------------------------------ | -------------------- |
-| 索引 | 整数变量                                                   | 要添加的索引。 后续项目将会上移一个索引 |
-| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
+| 参数    | 类型                                                     | 描述                   |
+| ----- | ------------------------------------------------------ | -------------------- |
+| index | 整型                                                     | 要添加的索引。 后续项目将会上移一个索引 |
+| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
 ### clear #清除
@@ -68,9 +68,9 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].get(0);
 ```
 
-| 参数 | 类型   | 描述               |
-| -- | ---- | ---------------- |
-| 索引 | 整数变量 | The index (从0开始) |
+| 参数    | 类型 | 描述               |
+| ----- | -- | ---------------- |
+| index | 整型 | The index (从0开始) |
 
 
 ### remove #移除
@@ -84,9 +84,9 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].remove(0);
 ```
 
-| 参数 | 类型   | 描述               |
-| -- | ---- | ---------------- |
-| 索引 | 整数变量 | The index (从0开始) |
+| 参数    | 类型 | 描述               |
+| ----- | -- | ---------------- |
+| index | 整型 | The index (从0开始) |
 
 
 ### set #设置
@@ -100,16 +100,16 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].set(0, "Bye");
 ```
 
-| 参数 | 类型                                                     | 描述            |
-| -- | ------------------------------------------------------ | ------------- |
-| 索引 | 整数变量                                                   | 要设置的索引 (从0开始) |
-| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
+| 参数    | 类型                                                     | 描述            |
+| ----- | ------------------------------------------------------ | ------------- |
+| index | 整型                                                     | 要设置的索引 (从0开始) |
+| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
 ## 参数
 
-| 名称 | 类型   | 可获得  | 可设置   |
-| -- | ---- | ---- | ----- |
-| 大小 | 整数变量 | true | false |
+| 名称       | 类型 | 可获得  | 可设置   |
+| -------- | -- | ---- | ----- |
+| size #大小 | 整型 | true | false |
 
