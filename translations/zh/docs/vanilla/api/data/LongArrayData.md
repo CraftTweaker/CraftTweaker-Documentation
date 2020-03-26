@@ -154,9 +154,9 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 ### get #获取
 
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+检索存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 
 
@@ -166,23 +166,23 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ```
 
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| 参数    | 返回值类型 | 描述               |
+| ----- | ----- | ---------------- |
+| index | int   | The index (从0开始) |
 
 
 
 
 
-### getId
+### getId #获取id 
 
-Gets the ID of the internal NBT tag.
+获取内部NBT标签的 ID。
 
-Used to determine what NBT type is stored (in a list for example)
+用来确定哪些NBT类型被存储(例如在列表中)
 
-Returns: `ID of the NBT tag that this data represents.`
+返回：`此数据代表的 NBT 标签ID。`
 
-Returns byte
+返回数据
 
 
 
@@ -193,13 +193,13 @@ Returns byte
 
 
 
-### getString
+### getString #获取字符串
 
-Gets the String representation of the internal INBT tag
+getString #获取字符串
 
-Returns: `String that represents the internal INBT of this IData.`
+返回：`表示此 IData 内部INBT 的字符串。`
 
-Returns String
+返回字符串[String]
 
 
 
@@ -210,33 +210,33 @@ Returns String
 
 
 
-### remove
+### remove #移除
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+移除存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 
 
 ```zenscript
-[100000, 800000, 50000].remove(index as int);
+100000, 800000, 50000].remove(index as int);
 [100000, 800000, 50000].remove(0);
 ```
 
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| 参数    | 返回值类型 | 描述               |
+| ----- | ----- | ---------------- |
+| index | int   | The index (从0开始) |
 
 
 
 
 
-### set
+### set #设置
 
-Sets the item at the provided index to the given value
+在给定值的索引处设置项目
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 
 
@@ -246,19 +246,19 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ```
 
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| 参数    | 返回值类型                                                  | 描述            |
+| ----- | ------------------------------------------------------ | ------------- |
+| index | int                                                    | 要设置的索引 (从0开始) |
+| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
 
 
 
-## Properties
+## 参数
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Name（名称） | 返回值类型 | 可获得  | 可设置  |
+| -------- | ----- | ---- | ---- |
+| 大小       | int   | true | true |
 
