@@ -10,19 +10,22 @@ removeRecipe(IItemStack output);
 
 ```zenscript
 removeByName(String name);
-#根据配方名称删除
+#根据配方名称删除配方
 ```
 
 ```zenscript
 removeByModid(String modid);
+#根据模组id删除配方
 ```
 
 ```zenscript
-removeByRegex(String regex);
+removeByName(String name);
+#根据配方名称删除配方(为啥会有重复的)
 ```
 
 ```zenscript
 removeAll();
+#删除所有配方(包括模组内配方)
 ```
 
 
