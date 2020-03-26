@@ -21,23 +21,23 @@ new crafttweaker.api.data.ListData();
 ```zenscript
 new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ```
-| 参数   | 参数                                                           | 描述                      | IsOptional | Default Value |
-| ---- | ------------------------------------------------------------ | ----------------------- | ---------- | ------------- |
-| list | List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No description provided | true       | null          |
+| 参数 | 参数                                                               | 描述    | 可选的  | 默认值  |
+| -- | ---------------------------------------------------------------- | ----- | ---- | ---- |
+| 列表 | 以列表形式列出的<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | 未提供说明 | true | null |
 
 
 
-## Methods
-### add
+## 使用方式
+### add #添加
 
 ```zenscript
 ["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
 ["Hello", "World", "!"].add("today");
 ```
 
-| Parameter | 类型                                                     | 说明                           |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| 参数 | 返回值类型                                                  | 描述       |
+| -- | ------------------------------------------------------ | -------- |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
 
 
@@ -46,79 +46,79 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| 参数 | 返回值类型                                                  | 描述                   |
+| -- | ------------------------------------------------------ | -------------------- |
+| 索引 | 整数变量                                                   | 要添加的索引。 后续项目将会上移一个索引 |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
-### clear
+### clear #清除
 
-Removes every element in the list
+删除列表中的每个元素
 
 ```zenscript
 ["Hello", "World", "!"].clear();
 ```
 
-### get
+### get #获取
 
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+检索存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 ["Hello", "World", "!"].get(index as int);
 ["Hello", "World", "!"].get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| 参数 | 返回值类型 | 描述               |
+| -- | ----- | ---------------- |
+| 索引 | 整数变量  | The index (从0开始) |
 
 
-### remove
+### remove #移除
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+移除存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 ["Hello", "World", "!"].remove(index as int);
 ["Hello", "World", "!"].remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| 参数 | 返回值类型 | 描述               |
+| -- | ----- | ---------------- |
+| 索引 | 整数变量  | The index (从0开始) |
 
 
-### set
+### set #设置
 
-Sets the item at the provided index to the given value
+在给定值的索引处设置项目
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 ["Hello", "World", "!"].set(index as int, value as crafttweaker.api.data.IData);
 ["Hello", "World", "!"].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| 参数 | 返回值类型                                                  | 描述            |
+| -- | ------------------------------------------------------ | ------------- |
+| 索引 | 整数变量                                                   | 要设置的索引 (从0开始) |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
-## Properties
+## 参数
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| 名称 | 返回值类型 | 可获得  | 可设置   |
+| -- | ----- | ---- | ----- |
+| 大小 | 整数变量  | true | false |
 
 ## Casters
 
-| Result type                                                  | Is Implicit |
-| ------------------------------------------------------------ | ----------- |
-| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true        |
+| 结果类型                                                             | 是否隐藏 |
+| ---------------------------------------------------------------- | ---- |
+| 以列表形式列出的<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true |
 
