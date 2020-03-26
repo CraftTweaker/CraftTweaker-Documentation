@@ -1,40 +1,40 @@
-# ByteArrayData
+# ByteArrayData #字节数组数据
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.data.ByteArrayData
 ```
 
-## Implemented Interfaces
-ByteArrayData implements the following interfaces. That means any method available to them can also be used on this class.
+## 已实现的接口
+ByteArrayData实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
 new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| 参数       | 类型     | 描述                      |
-| -------- | ------ | ----------------------- |
-| internal | byte[] | No description provided |
+| 参数 | 类型   | 描述    |
+| -- | ---- | ----- |
+| 内置 | 字节[] | 未提供说明 |
 
 
 
-## Methods
-### add
+## 使用方式
+### 添加
 
 ```zenscript
 [4, 1, 2].add(value as crafttweaker.api.data.IData);
 [4, 1, 2].add("today");
 ```
 
-| Parameter | 类型                                                     | 说明                           |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| 参数 | 类型                                                     | 说明       |
+| -- | ------------------------------------------------------ | -------- |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
 
 
@@ -43,10 +43,10 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| 参数    | 类型                                                     | 描述                                                      |
+| ----- | ------------------------------------------------------ | ------------------------------------------------------- |
+| index | 整数变量                                                   | 要添加的索引。 Subsequent items will be moved one index higher |
+| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                            |
 
 
 ### clear
