@@ -1,4 +1,4 @@
-# MC材料
+# MCMaterial #MC材料
 
 此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -70,21 +70,21 @@ myMCMaterial.isOpaque();
 myMCMaterial.isReplaceable();
 ```
 
-### isSolid
+### isSolid #是否为固体
 
-Returns true if the block is a considered solid. This is true by default.
+判断方块是否为固体 默认情况下返回为true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isSolid();
 ```
 
-### isToolNotRequired
+### isToolNotRequired #是否需要使用工具
 
-Returns true if the material can be harvested without a tool (or with the wrong tool)
+如果材料可以在没有工具(或使用错误工具)的情况下采集，则返回 true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isToolNotRequired();
