@@ -2,7 +2,7 @@
 
 
 
-此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
@@ -18,9 +18,9 @@ IntData实现了以下接口。 这意味着对这个接口可用的任何方法
 ```zenscript
 new crafttweaker.api.data.IntData(internal as int);
 ```
-| 参数   | 返回值类型 | 描述    |
-| ---- | ----- | ----- |
-| 内部设置 | 整数变量  | 未提供说明 |
+| 参数       | 返回值类型 | 描述    |
+| -------- | ----- | ----- |
+| internal | 整型    | 未提供说明 |
 
 
 
@@ -86,9 +86,9 @@ new crafttweaker.api.data.IntData(internal as int);
 ```
 
 
-| 参数 | 返回值类型                                                  | 描述          |
-| -- | ------------------------------------------------------ | ----------- |
-| 数据 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
+| 参数   | 返回值类型                                                  | 描述          |
+| ---- | ------------------------------------------------------ | ----------- |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
 
