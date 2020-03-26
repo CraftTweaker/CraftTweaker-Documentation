@@ -1,8 +1,8 @@
 # IData #数据
 
-IData接口是处理NBT等数据的通用接口。 您可以将所有原始数据（short，double，string，int，...）以及某些数组转换为IData。 请记住，尽管它们提供相似的功能，但IData及其对应的对象却并不相同，这就是为什么将其称为DataType（例如 crafttweaker.api.data.ByteData </ 0>）。</p> 
+IData接口是处理NBT等数据的通用接口。 您可以将所有原始数据 (短数据, 双精度数据, 字符串数据, 整型数据, ...) 以及某些数组转换为IData。 请记住，尽管它们提供相似的功能，但IData及其对应的对象却并不相同，这就是为什么将其称为DataType（例如 crafttweaker.api.data.ByteData </ 0>）。</p> 
 
-此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 
 
