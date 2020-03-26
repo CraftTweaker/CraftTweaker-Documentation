@@ -1,30 +1,52 @@
-# ICollectionData
+# ICollectionData #所收集数据
 
-The ICollection data is used to represent a collection of [crafttweaker.api.data.IData](/vanilla/api/data/IData) like a List<IData>
+ICollection数据用于像列表一样表示
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+ crafttweaker.api.data.IData </ 0>的集合<IData></p> 
+
+这是BEP返回的每个项目的帮助程序界面！ 因此，如果要使用此功能，则需要安装此mod。
+
+
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。  
+
+
 ```zenscript
 crafttweaker.api.data.ICollectionData
 ```
 
-## Implemented Interfaces
-ICollectionData implements the following interfaces. That means any method available to them can also be used on this class.
+
+
+
+## 已实现的接口
+
+ICollectionData实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。  
+
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Methods
-### add
+
+
+## 使用方式
+
+
+### add #添加
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).add("today");
 ```
 
-| 参数    | 类型                                                     | 描述                           |
-| ----- | ------------------------------------------------------ | ---------------------------- |
-| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+
+| 参数 | 类型                                                     | 描述       |
+| -- | ------------------------------------------------------ | -------- |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
+
+
+
 
 
 
@@ -33,165 +55,224 @@ new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-| Parameter | 类型                                                     | 说明                                                                   |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+
+| 参数 | 类型                                                     | 说明                   |
+| -- | ------------------------------------------------------ | -------------------- |
+| 索引 | 整数变量                                                   | 要添加的索引。 后续项目将会上移一个索引 |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
-### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Returns: `null if this IData is not a list.`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+### asList #作为列表
+
+获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
+
+如果IData值不是一个列表的话则返回值null
+
+返回一个列表<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).asList();
 ```
 
-### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+### asMap #作为地图数据
+
+获取此IData的Map <String, IData>表示形式，对 crafttweaker.api.data.MapData </ 1>以外的任何内容返回null。</p> 
+
+如果IData值不是一个地图数据的话则返回值null
+
+返回字符串值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).asMap();
 ```
 
-### asString
 
-Gets the String representation of this IData
 
- Returns: `String that represents this IData (value and type).`
 
-Returns String
+### asString #作为字符串
 
-```zenscript
-new ListData(["Hello", "World"]).asString();
-```
+获取此IData的字符串表示形式
 
-### clear
+返回：`表示此IData（值和类型）的字符串。</ 0></p>
 
-Removes every element in the list
+<p spaces-before="0">返回字符串[String]</p>
+
+<pre><code class="zenscript">new ListData(["Hello", "World"]).asString();
+`</pre> 
+
+
+
+### clear #清除
+
+删除列表中的每个元素
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).clear();
 ```
 
-### contains
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+
+### contains #容器
+
+检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
+
+返回为布尔值
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+
+| 参数 | 类型                                                     | 描述          |
+| -- | ------------------------------------------------------ | ----------- |
+| 数据 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### copy
 
-Makes a copy of this IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
 
- Returns: `a copy of this IData.`
+### copy #复制
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+制作此IData的副本。
+
+IData默认情况下是不可变的，使用它可以创建对象的正确副本。
+
+返回：`此IData的副本`
+
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).copy();
 ```
 
-### get
 
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+### get #获取
+
+检索存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
+
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).get(index as int);
 new ListData(["Hello", "World"]).get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+
+| 参数 | 类型   | 描述               |
+| -- | ---- | ---------------- |
+| 索引 | 整数变量 | The index (从0开始) |
 
 
-### getId
 
-Gets the ID of the internal NBT tag.
 
- Used to determine what NBT type is stored (in a list for example)
 
- Returns: `ID of the NBT tag that this data represents.`
+### getId #获取id 
 
-Returns byte
+获取内部NBT标签的 ID。
+
+用来确定哪些NBT类型被存储(例如在列表中)
+
+返回：`此数据代表的 NBT 标签ID。`
+
+返回数据
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).getId();
 ```
 
-### getString
 
-Gets the String representation of the internal INBT tag
 
- Returns: `String that represents the internal INBT of this IData.`
 
-Returns String
+### getString #获取字符串
+
+获取内部INBT标记的字符串表示形式
+
+返回：`表示此 IData 内部INBT 的字符串。`
+
+返回字符串[String]
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+### remove #移除
+
+移除存储在给定索引中的[craftminstrer.api.data](/vanilla/api/data/IData)。
+
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).remove(index as int);
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+
+| 参数 | 参数   | 描述               |
+| -- | ---- | ---------------- |
+| 索引 | 整数变量 | The index (从0开始) |
 
 
-### set
 
-Sets the item at the provided index to the given value
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+### set #设置
+
+在给定值的索引处设置项目
+
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+
+| 参数 | 参数                                                     | 描述            |
+| -- | ------------------------------------------------------ | ------------- |
+| 索引 | 整数变量                                                   | 要设置的索引 (从0开始) |
+| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
-## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+
+
+## 参数
+
+| 名称 | 返回值类型 | 可获得  | 可设置  |
+| -- | ----- | ---- | ---- |
+| 大小 | 整数变量  | true | true |
 
