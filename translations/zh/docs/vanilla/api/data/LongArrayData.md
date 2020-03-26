@@ -2,7 +2,7 @@
 
 
 
-此类由具有mod-id的mod添加 `crafttweaker`. 此类由具有mod-id的mod添加 `crafttweaker`.
+这个类由mod-id为`crafttweaker`的模组添加. 此类由具有mod-id的mod添加 `crafttweaker`.
 
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
@@ -260,5 +260,5 @@ getString #获取字符串
 
 | Name（名称） | 返回值类型 | 可获得  | 可设置  |
 | -------- | ----- | ---- | ---- |
-| 大小       | int   | true | true |
+| size #大小 | 整型    | true | true |
 
