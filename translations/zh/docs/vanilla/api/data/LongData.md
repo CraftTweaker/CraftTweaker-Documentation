@@ -1,117 +1,146 @@
-# LongData
+# LongData #长数据
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.data.LongData
 ```
 
-## Implemented Interfaces
-LongData implements the following interfaces. That means any method available to them can also be used on this class.
+## 已实现的接口
+LongData实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
 new crafttweaker.api.data.LongData(internal as long);
 ```
-| 参数       | 类型   | 描述                      |
-| -------- | ---- | ----------------------- |
-| internal | long | No description provided |
+| 参数       | 参数   | 描述    |
+| -------- | ---- | ----- |
+| internal | long | 未提供说明 |
 
 
 
-## Methods
-### asList
+## 使用方式
+### asList #作为列表
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
 
- Returns: `null if this IData is not a list.`
+如果IData值不是一个列表的话则返回值null
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+返回一个列表<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+
+
 
 ```zenscript
 800000000.asList();
 ```
 
-### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+### asMap #作为地图数据
+
+获取此IData的Map <String, IData>表示形式，对 crafttweaker.api.data.MapData </ 1>以外的任何内容返回null。</p> 
+
+如果IData值不是一个地图数据的话则返回值null
+
+返回字符串值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 800000000.asMap();
 ```
 
-### asString
 
-Gets the String representation of this IData
 
- Returns: `String that represents this IData (value and type).`
 
-Returns String
+### asString #作为字符串
 
-```zenscript
-800000000.asString();
-```
+获取此IData的字符串表示形式
 
-### contains
+返回：`表示此IData（值和类型）的字符串。</ 0></p>
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+<p spaces-before="0">返回字符串[String]</p>
 
-Returns boolean
+<pre><code class="zenscript">800000000.asString();
+`</pre> 
+
+
+
+### contains #容器
+
+检查这个IData是否包含另一个IData，主要用于[craftminstruer.api.data.ICollectionData](/vanilla/api/data/ICollectionData)的子类，与其他IData类型的同等检查
+
+返回为布尔值
+
+
 
 ```zenscript
 800000000.contains(data as crafttweaker.api.data.IData);
 800000000.contains("Display");
 ```
 
-| Parameter | 类型                                                     | 说明                               |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+
+| 参数   | 返回值类型                                                  | 描述          |
+| ---- | ------------------------------------------------------ | ----------- |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
-### copy
 
-Makes a copy of this IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
 
- Returns: `a copy of this IData.`
+### copy #复制
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+制作此IData的副本。
+
+IData默认情况下是不可变的，使用它可以创建对象的正确副本。
+
+返回：`此IData的副本`
+
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+
 
 ```zenscript
 800000000.copy();
 ```
 
-### getId
 
-Gets the ID of the internal NBT tag.
 
- Used to determine what NBT type is stored (in a list for example)
 
- Returns: `ID of the NBT tag that this data represents.`
+### getId #获取id 
 
-Returns byte
+获取内部NBT标签的 ID。
+
+用来确定哪些NBT类型被存储(例如在列表中)
+
+返回：`此数据代表的 NBT 标签ID。`
+
+返回数据
+
+
 
 ```zenscript
 800000000.getId();
 ```
 
-### getString
 
-Gets the String representation of the internal INBT tag
 
- Returns: `String that represents the internal INBT of this IData.`
 
-Returns String
+### getString #获取字符串
+
+getString #获取字符串
+
+返回：`表示此 IData 内部INBT 的字符串。`
+
+返回字符串[String]
+
+
 
 ```zenscript
 800000000.getString();
