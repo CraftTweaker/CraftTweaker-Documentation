@@ -2,7 +2,7 @@
 
 
 
-此类由具有mod-id的mod添加 `crafttweaker`. 此类由具有mod-id的mod添加 `crafttweaker`.
+这个类由mod-id为`crafttweaker`的模组添加. 此类由具有mod-id的mod添加 `crafttweaker`.
 
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
@@ -96,15 +96,15 @@ new StringData("Hello").contains("Display");
 
 
 
-### copy
+### copy #复制
 
-Makes a copy of this IData.
+制作此IData的副本。
 
-IData is immutable by default, use this to create a proper copy of the object.
+IData默认情况下是不可变的，使用它可以创建对象的正确副本。
 
-Returns: `a copy of this IData.`
+返回：`此IData的副本`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+返回值 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 
 
@@ -115,15 +115,15 @@ new StringData("Hello").copy();
 
 
 
-### getId
+### getId #获取id 
 
-Gets the ID of the internal NBT tag.
+获取内部NBT标签的 ID。
 
-Used to determine what NBT type is stored (in a list for example)
+用来确定哪些NBT类型被存储(例如在列表中)
 
-Returns: `ID of the NBT tag that this data represents.`
+返回：`此数据代表的 NBT 标签ID。`
 
-Returns byte
+返回数据
 
 
 
@@ -134,13 +134,13 @@ new StringData("Hello").getId();
 
 
 
-### getString
+### getString #获取字符串
 
-Gets the String representation of the internal INBT tag
+获取内部INBT标记的字符串表示形式
 
-Returns: `String that represents the internal INBT of this IData.`
+返回：`表示此 IData 内部INBT 的字符串。`
 
-Returns String
+返回字符串[String]
 
 
 
@@ -155,9 +155,9 @@ new StringData("Hello").getString();
 ## 运算符
 
 
-### ADD
+### ADD #添加
 
-Concatenates the two string Datas and returns the result.
+连接两个字符串数据并返回结果。
 
 
 
@@ -167,7 +167,7 @@ new StringData("Hello") + new StringData("World")
 ```
 
 
-| Parameter | Type                                                             | Description              |
-| --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| 参数   | 返回值类型                                                            | 描述       |
+| ---- | ---------------------------------------------------------------- | -------- |
+| data | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | 要附加的其他数据 |
 
