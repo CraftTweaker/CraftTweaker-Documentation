@@ -1,69 +1,70 @@
-# MCMaterial
+# MC材料
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
+#导入方式为 import crafttweaker.api.block.material.MCMaterial
 ```
 
-## Methods
-### blocksMovement
+## 使用方式
+### blocksMovement #是否可移动
 
-Returns if this material is considered solid or not
+判断材料是否为可移动固体(不知道为啥这一行和下面有一行好像)
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.blocksMovement();
 ```
 
-### getColor
+### getColor #获取颜色
 
-Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
+获取方块的颜色索引。 输出与原版地图表示此方块的相同颜色
 
-Returns [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
+返回值 [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
 ```
 
-### isFlammable
+### isFlammable #是否为可燃物
 
-Returns if the block can burn or not.
+判断方块是否为可燃物
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isFlammable();
 ```
 
-### isLiquid
+### isLiquid #是否为液体
 
-Returns if blocks of these materials are liquids.
+判断方块是否为液体
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isLiquid();
 ```
 
-### isOpaque
+### isOpaque #是否为不透明方块
 
-Indicate if the material is opaque
+判断方块是否为不透明方块
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isOpaque();
 ```
 
-### isReplaceable
+### isReplaceable #是否可替换
 
-Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
+返回是否在放置时可以用其他方块替换该材料，例如雪，藤蔓和高草丛
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCMaterial.isReplaceable();
