@@ -1,41 +1,41 @@
-# MCBlock
+# MCBlock #MC方块
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+此类由具有mod-id的mod添加 `crafttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Methods
-### canSpawnInBlock
+## 使用方式
+### canSpawnInBlock 可以在方块内放置
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
 ```
 
-### getDefaultState
+### getDefaultState #获取默认状态
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+返回值 [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
 ```
 
 
-## Properties
+## 参数
 
-| 名称             | 类型     | Has Getter | Has Setter |
-| -------------- | ------ | ---------- | ---------- |
-| lootTable      | String | true       | false      |
-| translationKey | String | true       | false      |
+| 名称    | 类型     | 可获得  | 可设置   |
+| ----- | ------ | ---- | ----- |
+| 掉落物列表 | String | true | false |
+| 转变值   | String | true | false |
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| 结果类型   | 是否隐藏  |
+| ------ | ----- |
+| String | false |
 
