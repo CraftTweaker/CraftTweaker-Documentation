@@ -11,7 +11,7 @@ crafttweaker.api.entity.player.MCPlayerEntity
 ## 使用方式
 ### addExhaustion #增加饥饿值
 
-increases exhaustion level by supplied amount
+通过所提供的数值增加饥饿值
 
 ```zenscript
 myMCPlayerEntity.addExhaustion(exhaustion as float);
@@ -30,144 +30,144 @@ myMCPlayerEntity.addExhaustion(exhaustion as float);
 myMCPlayerEntity.addExperienceLevel(levels as int);
 ```
 
-| Parameter | 类型  | 说明                      |
-| --------- | --- | ----------------------- |
-| levels    | int | No description provided |
+| 参数     | 类型      | 说明    |
+| ------ | ------- | ----- |
+| levels | int #整型 | 未提供说明 |
 
 
-### addItemStackToInventory
+### addItemStackToInventory #在背包中添加物品堆叠
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数            | 返回值类型                                                             | 描述    |
+| ------------- | ----------------------------------------------------------------- | ----- |
+| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
 
 
-### addMovementStat
+### addMovementStat #添加移动统计
 
-Adds a value to a movement statistic field - like run, walk, swin or climb.
+为移动统计添加一个值——如跑步、步行、游泳或攀登。
 
 ```zenscript
 myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
 ```
 
-| Parameter    | Type   | Description             |
-| ------------ | ------ | ----------------------- |
-| p_71000_1_ | double | No description provided |
-| p_71000_3_ | double | No description provided |
-| p_71000_5_ | double | No description provided |
+| 参数           | 返回值类型       | 描述    |
+| ------------ | ----------- | ----- |
+| p_71000_1_ | double #双精度 | 未提供说明 |
+| p_71000_3_ | double #双精度 | 未提供说明 |
+| p_71000_5_ | double #双精度 | 未提供说明 |
 
 
-### addPotionEffect
+### addPotionEffect #添加药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter        | Type                                                                                          | Description             |
-| ---------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数                     | 返回值类型                                                                                         | 描述    |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ----- |
+| effectInstanceIn #效果实例 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 未提供说明 |
 
 
-### addScore
+### addScore #添加分数
 
-Add to player's score
+添加到玩家分数
 
 ```zenscript
 myMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| 参数      | 返回值类型   | 描述    |
+| ------- | ------- | ----- |
+| scoreIn | int #整型 | 未提供说明 |
 
 
-### addTag
+### addTag #添加tag
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| 参数      | 返回值类型       | 描述    |
+| ------- | ----------- | ----- |
+| tag #标签 | 字符串[string] | 未提供说明 |
 
 
-### addVelocity
+### addVelocity #增加速度
 
-Adds to the current velocity of the entity, and sets  to true.
+为实体的当前速度添加一个值,并设置为true
 
 ```zenscript
 myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 返回值类型       | 描述    |
+| -- | ----------- | ----- |
+| x  | double #双精度 | 未提供说明 |
+| y  | double #双精度 | 未提供说明 |
+| z  | double #双精度 | 未提供说明 |
 
 
-### allowLogging
+### allowLogging #允许记录日志
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.allowLogging();
 ```
 
-### attackable
+### attackable #可攻击的
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.attackable();
 ```
 
-### attemptTeleport
+### attemptTeleport #是否尝试传送
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_213373_1_ | double  | No description provided |
-| p_213373_3_ | double  | No description provided |
-| p_213373_5_ | double  | No description provided |
-| p_213373_7_ | boolean | No description provided |
+| 参数            | 返回值类型       | 描述    |
+| ------------- | ----------- | ----- |
+| p_213373_1_ | double #双精度 | 未提供说明 |
+| p_213373_3_ | double #双精度 | 未提供说明 |
+| p_213373_5_ | double #双精度 | 未提供说明 |
+| p_213373_7_ | 布尔值         | 未提供说明 |
 
 
-### baseTick
+### baseTick #基础游戏刻
 
-Gets called every tick from main Entity class
+Gets called every tick from main Entity class #从主要实体类获取所有游戏刻
 
 ```zenscript
 myMCPlayerEntity.baseTick();
 ```
 
-### canAttackPlayer
+### canAttackPlayer #可以攻击玩家
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| other     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| 参数    | 返回值类型                                                                                      | 描述    |
+| ----- | ------------------------------------------------------------------------------------------ | ----- |
+| other | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 未提供说明 |
 
 
 ### canBeAttackedWithItem
