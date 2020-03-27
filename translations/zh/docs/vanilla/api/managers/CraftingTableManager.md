@@ -17,7 +17,7 @@ CraftingTableManager实现了以下接口。 这意味着对这个接口可用�
 ## 使用方式
 ### addJSONRecipe #添加JSON配方
 
-基于提供的IData添加配方 The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+基于提供的IData添加配方 提供的 IData 应该代表一个JSON数据包 ,这有效地允许您注册任何支持 IRecipeType 系统的 DataPack配方。
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
