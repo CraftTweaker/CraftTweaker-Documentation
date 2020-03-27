@@ -19,11 +19,11 @@ MCEntityType实现了以下接口。 这意味着对这个接口可用的任何�
 | classification #类别   | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true | false |
 | commandString #命令字符串 | 字符串[string]                                                                                    | true | false |
 | height #实体高度         | 浮点数据[float]                                                                                    | true | false |
-| immuneToFire         | boolean                                                                                        | true | false |
-| lootTable            | String                                                                                         | true | false |
-| name                 | String                                                                                         | true | false |
-| serializable         | boolean                                                                                        | true | false |
-| summonable           | boolean                                                                                        | true | false |
-| translationKey       | String                                                                                         | true | false |
-| width                | float                                                                                          | true | false |
+| immuneToFire #免疫火焰   | 布尔值                                                                                            | true | false |
+| lootTable #掉落物表      | 字符串[string]                                                                                    | true | false |
+| name #名称             | 字符串[string]                                                                                    | true | false |
+| serializable #可序列化   | 布尔值                                                                                            | true | false |
+| summonable #可召唤的     | 布尔值                                                                                            | true | false |
+| translationKey #翻译密钥 | 字符串[string]                                                                                    | true | false |
+| width #宽度            | 浮点数据[float]                                                                                    | true | false |
 
