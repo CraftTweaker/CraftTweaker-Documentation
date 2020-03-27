@@ -170,99 +170,99 @@ myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlaye
 | other | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 未提供说明 |
 
 
-### canBeAttackedWithItem
+### canBeAttackedWithItem #可以被物体攻击
 
-Returns true if it's possible to attack this entity with an item.
+如果可能用物品攻击该实体,则返回true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeAttackedWithItem();
 ```
 
-### canBeCollidedWith
+### canBeCollidedWith #具有碰撞箱
 
-Returns true if other Entities should be prevented from moving through this Entity.
+如果此实体可以阻止其他实体的移动,则反为真
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeCollidedWith();
 ```
 
-### canBeHitWithPotion
+### canBeHitWithPotion #可以被药水瓶击中
 
-Returns false if the entity is an armor stand. Returns true for all other entity living bases.
+如果实体为盔甲架,则返回false 如果是其他实体生物则返回为true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeHitWithPotion();
 ```
 
-### canBePushed
+### canBePushed #可以被推动
 
-Returns true if this entity should push and be pushed by other entities when colliding.
+如果该实体在与其他实体碰撞时可以被推动,则返回值true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBePushed();
 ```
 
-### canBeRiddenInWater
+### canBeRiddenInWater #可以潜水
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater
+### canBreatheUnderwater #可以水下呼吸
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBreatheUnderwater();
 ```
 
-### canEat
+### canEat #可以进食
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canEat(ignoreHunger as boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| ignoreHunger | boolean | No description provided |
+| 参数           | 返回值类型 | 描述    |
+| ------------ | ----- | ----- |
+| ignoreHunger | 布尔值   | 未提供说明 |
 
 
-### canHarvestBlock
+### canHarvestBlock #可以破坏方块
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| 参数    | 返回值类型                                                                   | 描述    |
+| ----- | ----------------------------------------------------------------------- | ----- |
+| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 未提供说明 |
 
 
-### canPassengerSteer
+### canPassengerSteer #可以乘坐
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canPassengerSteer();
 ```
 
-### canPlayerEdit
+### canPlayerEdit #可以由玩家编辑
 
-Returns whether this player can modify the block at a certain location with the given stack. <p> The position being queried is {@code pos.offset(facing.getOpposite()))}. Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+返回此玩家是否可以在某个地点使用给定的堆栈修改方块。 <p> 查询位置是 {@code pos.offset(facing.getOpposite()}。 Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
 
 Returns boolean
 
