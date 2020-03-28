@@ -2,7 +2,8 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
+  - Syntax: 'syntax.md'
+  - Commands: 'commands.md'
   - Recipes:
     - Removing Recipes: "recipes/removing_recipes.md"
     - Adding Recipes:
