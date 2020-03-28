@@ -1,32 +1,47 @@
-// For any custom css that shouldn't be in the tailwind build
+/* For any custom css that shouldn't be in the tailwind build*/
+
+.toclink:hover {
+    text-decoration: underline;
+}
+
+.toclink:hover::after {
+    content: "";
+    /*noinspection CssUnknownTarget*/
+    background-image: url("https://blamejared.com/svg/link.svg");
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 .nav-closed {
     content: "";
 }
 
 .nav-closed > span::before {
-    content:          "";
+    content: "";
     /*noinspection CssUnknownTarget*/
-    background-image: url("/img/cheveron-right.svg");
-    display:          inline-block;
-    width:            14px;
-    height:           14px;
+    background-image: url("https://blamejared.com/svg/cheveron-right.svg");
+    display: inline-block;
+    width: 14px;
+    height: 14px;
     margin-top: auto;
     margin-bottom: auto;
 }
-
 
 .nav-open {
     content: "";
 }
 
 .nav-open > span::before {
-    content:          "";
+    content: "";
     /*noinspection CssUnknownTarget*/
-    background-image: url("/img/cheveron-down.svg");
-    display:          inline-block;
-    width:            14px;
-    height:           14px;
+    background-image: url("https://blamejared.com/svg/cheveron-down.svg");
+    display: inline-block;
+    width: 14px;
+    height: 14px;
     margin-top: auto;
     margin-bottom: auto;
 }

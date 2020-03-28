@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        var base_url = "{{ base_url }}";
+    </script>
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-    <link rel = "stylesheet" href = "/css/tailwind.css">
-    <link rel = "stylesheet" href = "/css/github-gist.css">
+    <link rel = "stylesheet" href = "{{ base_url }}/css/tailwind.css">
+    <link rel = "stylesheet" href = "{{ base_url }}/css/github-gist.css">
+    <link rel = "stylesheet" href = "{{ base_url }}/css/style.css">
     <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/simplebar@5.1.0/dist/simplebar.css"/>
-    <link rel = "stylesheet" href = "/css/style.css">
     <script src = "//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity = "sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin = "anonymous"></script>
     <script src = "//cdn.jsdelivr.net/npm/simplebar@5.1.0/dist/simplebar.min.js"></script>
     <script src = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-    <script src = "/js/highlightjs-zenscript.js"></script>
-    <script src = "/js/script.js"></script>
+
+    <script src = "{{ base_url }}/js/mkdocs/require.js"></script>
+    <script src = "{{ base_url }}/js/mkdocs/search.js"></script>
+    <script src = "{{ base_url }}/js/highlightjs-zenscript.js"></script>
+    <script src = "{{ base_url }}/js/script.js"></script>
     <script>hljs.registerLanguage("zenscript", hljsZenScript);</script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body class = "bg-gray-100">
 {% include 'navbar.html' %}
-<div class = "lg:flex flex-row">
-    <div class = "w-full lg:w-1/6 max-h-with-nav border-r flex-none lg:block hidden float-left absolute top-0 left-0 bg-gray-200 z-10" data-simplebar id="side-nav">
+<div class="float-right right-0 mr-4 absolute max-h-64 w-96 hidden z-10 " id="mkdocs-search-results-container">
+    <div class="max-h-64 w-96 border border-black shadow-lg" id="mkdocs-search-results">
+    </div>
+</div>
+<div class="lg:flex flex-row">
+
+    <div class="w-full lg:w-1/6 h-with-nav border-r flex-none lg:block hidden float-left absolute top-0 left-0 bg-gray-200 z-10 shadow-lg" data-simplebar id="side-nav">
         {% include 'nav-pane.html' %}
     </div>
-    <div class = "mx-auto max-h-with-nav pt-3 w-full" id = "content" data-simplebar>
-        <div class = "w-11/12 lg:w-1/2 mx-auto text-3xl lg:text-lg">
+
+    <div class="mx-auto max-h-with-nav pt-3 w-full" id="content" data-simplebar>
+        <div class="w-11/12 lg:w-1/2 mx-auto text-3xl lg:text-lg">
             {{ page.content }}
         </div>
     </div>
+
 </div>
 </body>
 

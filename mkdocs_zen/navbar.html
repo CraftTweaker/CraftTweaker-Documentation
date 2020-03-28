@@ -1,17 +1,27 @@
-<nav class = "flex items-center justify-between flex-wrap bg-blue-800 h-24 lg:h-16 shadow-lg">
-    <div class = "flex items-center flex-shrink-0 text-white mr-6 my-2 lg:my-0">
-        <img class = "h-20 lg:h-12 mx-2" src = "{{ base_url }}/{{ config.extra.logo }}"/>
-        <p class = "text-3xl lg:text-xl tracking-tight">CraftTweaker Documentation</p>
-    </div>
-    <div class = "block lg:hidden pr-6">
-        <button class = "flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" id="menu-button">
-            <svg class = "fill-current h-8 w-8" viewBox = "0 0 20 20" xmlns = "http://www.w3.org/2000/svg"><title>Menu</title>
-                <path d = "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+<nav class="flex items-center justify-between flex-wrap bg-blue-800 h-24 lg:h-16 shadow-lg z-20">
+    <a href="{{ base_url }}" class="flex items-center flex-none text-white mr-6 my-2 lg:my-0">
+        <img class="h-20 lg:h-12 mx-2" src="{{ base_url }}/{{ config.extra.logo }}"/>
+        <span class="text-3xl lg:text-xl tracking-tight">CraftTweaker Documentation</span>
+    </a>
+    <div class="block lg:hidden pr-6">
+        <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" id="menu-button">
+            <svg class="fill-current h-8 w-8" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>
+                    Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
             </svg>
         </button>
     </div>
-    <div class = "w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class = "text-sm lg:flex-grow">
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+
         </div>
+        <div class="relative my-auto text-white">
+            <svg width="1rem" height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current svg-icon absolute pointer-events-none ml-2 my-3">
+                <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+            </svg>
+            <input class="p-2 mr-4 bg-transparent " type="text" placeholder="Search" id="mkdocs-search-query" style="text-indent: 1.5rem"/>
+        </div>
+    </div>
     </div>
 </nav>
