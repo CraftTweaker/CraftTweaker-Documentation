@@ -71,4 +71,6 @@ a
 multiline comment! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects.
+
+When you feel comfortable with the basics of scripts, feel free to navigate to Recipes to learn how to edit them.
