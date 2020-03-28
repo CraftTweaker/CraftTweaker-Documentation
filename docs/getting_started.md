@@ -71,4 +71,10 @@ a
 multiline comment! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects.
+
+## Live Editing
+
+You can use the command `/reload` in CraftTweaker to reload all of your scripts in-game! This feature was deprecated in 1.12.2 but was brought back in 1.14.4 due to a change in when scripts were loaded in in Forge! Use this feature to your advantage to save a lot of time.
+
+When you feel comfortable with the basics of scripts, feel free to navigate to Recipes to learn how to edit recipes.

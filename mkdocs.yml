@@ -2,14 +2,21 @@
 pages:
   - Home: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
+  - Syntax: 'syntax.md'
+  - Commands: 'commands.md'
   - Recipes:
-    - Recipe Managers: "recipes/recipe_managers.md"
-    - Crafting Table: "recipes/crafting_table.md"
+    - Removing Recipes: "recipes/removing_recipes.md"
+    - Adding Recipes:
+      - Blast Furnace: "recipes/adding_recipes/blast_furnace.md"
+      - Campfire: "recipes/adding_recipes/campfire.md"
+      - Crafting Table: "recipes/adding_recipes/crafting_table.md"
+      - Furnace: "recipes//adding_recipes/furnace.md"
+      - Smoker: "recipes/adding_recipes/smoker.md"
+      - Stone Cutter: "recipes/adding_recipes/stonecutter.md"
   - Vanilla:
     - How to:
       - How to: 'vanilla/how_to/how_to.md'
+    - Stations: "vanilla/stations.md"
     - Api:
       - Block:
         - Material:
