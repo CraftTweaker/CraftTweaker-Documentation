@@ -1,6 +1,6 @@
 # If you add a page, you must add it to the index here
 pages:
-  - Home: 'home.md'
+  - Home: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
   - Commands: "commands.md"
   - Recipes:
