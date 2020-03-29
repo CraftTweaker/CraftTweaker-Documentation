@@ -35,62 +35,50 @@ require([
 
     let search = function () {
 
-        let query = document.getElementById('mkdocs-search-query').value;
-        let resultsElement = document.getElementById("mkdocs-search-results");
+        let query = document.getElementById('search-query').value;
+        let resultsElement = document.getElementById("search-results");
 
         // this is needed for some reason, without it the content element is undefined...
-        let simpleBar = new SimpleBar(resultsElement);
-        simpleBar = SimpleBar.instances.get(resultsElement);
-        let search_results = simpleBar.getContentElement();
 
-        while (search_results.firstChild) {
-            search_results.removeChild(search_results.firstChild);
+        while (resultsElement.firstChild) {
+            resultsElement.removeChild(resultsElement.firstChild);
         }
-        let resultsContainer = $("#mkdocs-search-results-container");
-        if (query.trim().length < 3) {
-            resultsContainer.slideUp();
-            return;
-        }
-
 
         let results = index.search(query);
 
         if (results.length > 0) {
-            for (let i = 0; i < Math.min(results.length, 5); i++) {
+            for (let i = 0; i < results.length; i++) {
                 let result = results[i];
                 let doc = documents[result.ref];
                 doc.base_url = base_url;
-                doc.summary = doc.text.substring(0, 90);
+                doc.summary = doc.text.substring(0, 200);
                 let html = Mustache.to_html(results_template, doc);
-                search_results.insertAdjacentHTML('beforeend', html.replace(new RegExp(`(${query})`, `gi`), "<span class='font-bold'>$1</span>"));
+                resultsElement.insertAdjacentHTML('beforeend', html.replace(new RegExp(`(?<!href.*)(${query})`, `gi`), "<span class='font-bold'>$1</span>"));
             }
         } else {
-            search_results.insertAdjacentHTML('beforeend', `<div class="block hover:bg-gray-400">
+            resultsElement.insertAdjacentHTML('beforeend', `<div class="block hover:bg-gray-400">
                         <div class="py-1 pl-2">
                             <h4 class="my-0 text-base">No results found for "${query}"</h4>
                         </div>
                     </div>`);
         }
-        if (results.length > 5) {
-            search_results.insertAdjacentHTML('beforeend', `<a href="${base_url}/search.html?q=${query}" class="block hover:bg-gray-400">
-                        <div class="py-1 pl-2">
-                            <h4 class="my-0 text-blue-500 text-base">See all results</h4>
-                        </div>
-                    </a>`);
-        }
 
-        resultsContainer.slideDown();
-        simpleBar.recalculate();
     };
 
-    let search_input = document.getElementById('mkdocs-search-query');
+    let search_input = document.getElementById('search-query');
+    let nav_search = document.getElementById("mkdocs-search-query");
 
     let term = getSearchTerm();
     if (term) {
         search_input.value = term;
+        nav_search.value = term;
         search();
     }
-
+    search_input.addEventListener("keyup", ev => {
+        nav_search.value = ev.target.value;
+    });
     search_input.addEventListener("keyup", search);
-
+    nav_search.addEventListener("focus", ev => {
+        search_input.focus();
+    });
 });
