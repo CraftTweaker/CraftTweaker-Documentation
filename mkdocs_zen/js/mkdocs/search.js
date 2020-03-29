@@ -46,16 +46,17 @@ require([
         while (search_results.firstChild) {
             search_results.removeChild(search_results.firstChild);
         }
+        let resultsContainer = $("#mkdocs-search-results-container");
         if (query.trim().length < 3) {
-            $("#mkdocs-search-results-container").fadeOut();
+            resultsContainer.slideUp();
             return;
         }
-        $("#mkdocs-search-results-container").fadeIn();
+
 
         var results = index.search(query);
 
         if (results.length > 0) {
-            for (var i = 0; i < results.length; i++) {
+            for (var i = 0; i < Math.min(results.length, 5); i++) {
                 var result = results[i];
                 doc = documents[result.ref];
                 doc.base_url = base_url;
@@ -64,9 +65,21 @@ require([
                 search_results.insertAdjacentHTML('beforeend', html);
             }
         } else {
-            search_results.insertAdjacentHTML('beforeend', `<p class='bg-white block w-full hover:bg-gray-300 px-2 py-1 my-0'>No results found for \"${query}\"</p>`);
+            search_results.insertAdjacentHTML('beforeend', `<div class="block hover:bg-gray-400">
+                        <div class="py-1 pl-2">
+                            <h4 class="my-0 text-base">No results found for "${query}"</h4>
+                        </div>
+                    </div>`);
+        }
+        if (results.length > 5) {
+            search_results.insertAdjacentHTML('beforeend', `<a href="${base_url}/search.html?q=${query}" class="block hover:bg-gray-400">
+                        <div class="py-1 pl-2">
+                            <h4 class="my-0 text-blue-500 text-base">See all results</h4>
+                        </div>
+                    </a>`);
         }
 
+        resultsContainer.slideDown();
         simpleBar.recalculate();
     };
 

@@ -46,7 +46,7 @@ $(document).ready(async function () {
     // Causes the navbar to be auto open when swapping between, but really should be fine...?
     $(window).resize(function () {
 
-        if (window.matchMedia("(max-width: 1024px)").matches) {
+        if (window.matchMedia("(max-width: 768px)").matches) {
             // $("#side-nav").hide();
         } else {
             $("#side-nav").show();
@@ -56,12 +56,12 @@ $(document).ready(async function () {
     $("#mkdocs-search-query").click(function (event) {
         let val = $("#mkdocs-search-query").val();
         if (val.trim()) {
-            $("#mkdocs-search-results-container").fadeIn();
+            $("#mkdocs-search-results-container").slideDown();
         }
     });
     window.onclick = function (e) {
         if (!e.target.matches('#mkdocs-search-results-container') && !e.target.matches("#mkdocs-search-query")) {
-            $("#mkdocs-search-results-container").fadeOut();
+            $("#mkdocs-search-results-container").slideUp();
         }
     }
 

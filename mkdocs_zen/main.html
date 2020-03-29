@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         var base_url = "{{ base_url }}";
     </script>
@@ -23,18 +24,14 @@
 
 <body class = "bg-gray-100">
 {% include 'navbar.html' %}
-<div class="float-right right-0 mr-4 absolute max-h-64 w-96 hidden z-10 " id="mkdocs-search-results-container">
-    <div class="max-h-64 w-96 border border-black shadow-lg" id="mkdocs-search-results">
-    </div>
-</div>
-<div class="lg:flex flex-row">
+<div class="md:flex flex-row">
 
-    <div class="w-full lg:w-1/6 h-with-nav border-r flex-none lg:block hidden float-left absolute top-0 left-0 bg-gray-200 z-10 shadow-lg" data-simplebar id="side-nav">
+    <div class="w-full md:w-64 h-with-nav border-r flex-none md:block hidden float-left absolute top-0 left-0 bg-gray-200 z-10 shadow-lg" data-simplebar id="side-nav">
         {% include 'nav-pane.html' %}
     </div>
 
     <div class="mx-auto max-h-with-nav pt-3 w-full" id="content" data-simplebar>
-        <div class="w-11/12 lg:w-1/2 mx-auto text-3xl lg:text-lg">
+        <div class="w-11/12 md:w-auto md:max-w-screen-sm px-4 mx-auto">
             {{ page.content }}
         </div>
     </div>
