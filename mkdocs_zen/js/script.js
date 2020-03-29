@@ -4,6 +4,7 @@ $(document).ready(async function () {
     $("td").addClass("border border-black px-2 py-1");
     $("pre").addClass("bg-white border p-2 my-2");
     $("p > code").addClass("bg-white border py-1 px-2");
+    $("code").addClass("whitespace-pre-wrap");
     $("td > a").addClass("text-blue-500");
     $("#menu-button").click(function (event) {
         $("#side-nav").fadeToggle();
@@ -31,6 +32,7 @@ $(document).ready(async function () {
 
     let parents = elem.parentsUntil("#nav-pane");
     parents.show();
+    // noinspection JSUnresolvedFunction
     parents.each(value => {
 
         let parent = parents[value];
