@@ -13,5 +13,5 @@ TRANS=./*;
 
 SITE_URL="https:\/\/docs.blamejared.com\/1.14\/"
 
-for f in $TRANS; do cd $f; echo "Processing folder $f"; SITEDIR="../../build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --theme-dir "../../mkdocs_windmill" --site-dir $SITEDIR; sed -i "s/<loc>\//<loc>$SITE_URL${f:2:4}\//g" $SITEDIR/sitemap.xml; cd ..; done
+for f in $TRANS; do cd $f; echo "Processing folder $f"; SITEDIR="../../build/${f#"./"}"; echo $SITEDIR; mkdocs build --clean --theme-dir "../../mkdocs_zen" --site-dir $SITEDIR; sed -i "s/<loc>\//<loc>$SITE_URL${f:2:4}\//g" $SITEDIR/sitemap.xml; cd ..; done
 echo "finished building!"
