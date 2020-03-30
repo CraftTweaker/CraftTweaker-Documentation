@@ -33,7 +33,7 @@ require([
         documents[doc.location] = doc;
     }
 
-    if (!window.location.pathname.startsWith("/search.html")) {
+    if (!window.location.pathname.endsWith("search.html")) {
 
 
         let search = function () {
