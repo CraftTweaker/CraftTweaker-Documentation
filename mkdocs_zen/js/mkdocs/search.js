@@ -62,7 +62,7 @@ require([
                 doc.base_url = base_url;
                 doc.summary = doc.text.substring(0, 90);
                 let html = Mustache.to_html(results_template, doc);
-                search_results.insertAdjacentHTML('beforeend', html.replace(new RegExp(`(${query})`, `gi`), "<span class='font-bold'>$1</span>"));
+                search_results.insertAdjacentHTML('beforeend', html);
             }
         } else {
             search_results.insertAdjacentHTML('beforeend', `<div class="block hover:bg-gray-400">
