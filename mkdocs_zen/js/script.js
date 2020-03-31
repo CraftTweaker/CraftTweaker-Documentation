@@ -8,6 +8,7 @@ $(document).ready(async function () {
             window.location.replace(base_url + "/" + hash.substring(1));
         }
     }
+    $("table").wrap("<div data-simplebar data-simplebar-auto-hide=\"false\" ></div>")
 
     $("#menu-button").click(function (event) {
         $("#side-nav").fadeToggle();
@@ -27,7 +28,7 @@ $(document).ready(async function () {
     });
     let elem = $(".nav-item").filter(function (index) {
         let refs = $(this).attr("href");
-        if (refs && refs === "./") {
+        if (refs && (refs === "./" || refs === ".")) {
             return true;
         }
         return false;

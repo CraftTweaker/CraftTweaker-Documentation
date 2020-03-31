@@ -1,5 +1,5 @@
-{%- if nav_item.url -%}
-<a href = "{{ nav_item.url }}" class = "py-1 block navlev-{{ navlevel }} {% if nav_item.children %}bg-red-200{% endif %} hover:bg-gray-400 nav-item {% if navlevel == 1 %} nav-top {% endif %}">{{ nav_item.title }}</a>
+{%- if not nav_item.is_section  -%}
+<a href = "{{ nav_item.url|url }}" class = "py-1 block navlev-{{ navlevel }} hover:bg-gray-400 nav-item {% if navlevel == 1 %} nav-top {% endif %}">{{ nav_item.title }}</a>
 {%- else -%}
 <div class = "block nav-closed nav-item-top {% if navlevel == 1 %}nav-top{% endif %}">
     <span class = "py-1 w-full navlev-{{ navlevel }} drawer cursor-pointer inline-block hover:bg-gray-400">

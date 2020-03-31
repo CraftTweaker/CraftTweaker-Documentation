@@ -1,14 +1,14 @@
 language: python
-python: 2.7
+python: 3.8
 sudo: false
 
 install:
-  - pip install mkdocs==0.16.3
-  - pip install git+https://github.com/linkchecker/linkchecker.git
-
+  - pip install mkdocs==1.1
+  - pip install git+https://github.com/CraftTweaker/mkdocs-use-site-url-plugin.git
+  - pip install mkdocs-minify-plugin==0.2.3
 
 script:
   - mkdocs build --clean --site-dir site
-  - linkchecker site/index.html --ignore-url="search\.html"
+#  - linkchecker site/index.html --ignore-url="search\.html" # doesn't work with python3
 
 cache: pip
