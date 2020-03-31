@@ -45,7 +45,7 @@ $(document).ready(async function () {
         }
     });
     elem.show();
-    elem.addClass("text-white").addClass("bg-blue-900").addClass("hover:bg-blue-900");
+    elem.addClass("text-white bg-blue-900 hover:bg-blue-900");
 
     // Make sure the nav is shown.
     // Causes the navbar to be auto open when swapping between, but really should be fine...?
