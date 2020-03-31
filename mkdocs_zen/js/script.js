@@ -1,10 +1,14 @@
 $(document).ready(async function () {
-    $("table").addClass("w-full my-4 bg-gray-200 border border-black");
-    $("th").addClass("bg-gray-300 border border-black px-2 py-1");
-    $("td").addClass("border border-black px-2 py-1");
-    $("pre").addClass("bg-white border p-2 my-2");
-    $("p > code").addClass("bg-white border py-1 px-2");
-    $("td > a").addClass("text-blue-500");
+    // Migration code from mkdocs_windmill
+    if (window.location.hash) {
+        let hash = window.location.hash;
+        // Get the first hash (mkdocs_windmill used 2 hashes sometimes)
+        let id = document.getElementById(hash.substring(1).split("#")[0]);
+        if (!id) {
+            window.location.replace(base_url + "/" + hash.substring(1));
+        }
+    }
+
     $("#menu-button").click(function (event) {
         $("#side-nav").fadeToggle();
     });
