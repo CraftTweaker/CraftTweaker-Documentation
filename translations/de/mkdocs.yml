@@ -135,7 +135,7 @@ markdown_extensions:
 
 theme:
   name: null
-  custom_dir: 'mkdocs_zen/'
+  custom_dir: '../../mkdocs_zen/'
   include_search_page: True
   search_index_only: True
 
