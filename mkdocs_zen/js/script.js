@@ -48,6 +48,37 @@ $(document).ready(async function () {
     elem.show();
     elem.addClass("text-white bg-blue-900 hover:bg-blue-900");
 
+
+    $(document).ready(function () {
+        $.get("/index.php", function (data, status) {
+            const parsed = JSON.parse(data);
+
+            for (let index in parsed.reverse()) {
+                let dat = parsed[index];
+                if(getVersion() === dat){
+                    $("#version-select").append("<option selected id=\"option-" +dat + "\">" + dat + "</option>");
+                } else {
+                    $("#version-select").append("<option id=\"option-" +dat + "\">" + dat + "</option>");
+                }
+            }
+
+        });
+    });
+
+    function getVersion(){
+        let url = window.location.pathname;
+        return url.split("/")[1].split("/")[0];
+    }
+
+    function swapVersions(){
+
+        let dat = document.getElementById("version-select").value;
+        if(getVersion() !== dat){
+            window.location.href = "/" + dat;
+        }
+
+    }
+
     // Make sure the nav is shown.
     // Causes the navbar to be auto open when swapping between, but really should be fine...?
     $(window).resize(function () {

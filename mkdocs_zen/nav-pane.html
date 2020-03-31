@@ -29,6 +29,10 @@
         <input class="p-2 pr-4 bg-transparent " type="text" placeholder="Search" id="mkdocs-search-query" style="text-indent: 1.5rem"/>
 
     </div>
+    <div class = "my-auto inline-block pt-2 pl-4 pr-4 flex flex-row">
+        <span class = "flex-none navlev-1 py-1">Version:</span>
+        <select class = "flex-grow bg-transparent px-2 py-1" id = "versionSelect" onchange = "swapVersions()"><option>1.12</option><option>1.14</option> </select>
+    </div>
     <div class="my-auto block pb-1 border-b py-1 pl-3 pr-4">
         <div class="max-h-72 w-full" id="mkdocs-search-results-container">
             <div class="max-h-72 w-full" id="mkdocs-search-results">
