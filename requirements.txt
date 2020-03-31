@@ -1,3 +1,1 @@
 mkdocs==0.16.3
-htmlmin==0.1.12
-jsmin==2.2.2
