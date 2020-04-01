@@ -1,3 +1,17 @@
+function getVersion() {
+    let url = window.location.pathname;
+    return url.split("/")[1].split("/")[0];
+}
+
+function swapVersions() {
+
+    let dat = document.getElementById("version-select").value;
+    if (getVersion() !== dat) {
+        window.location.href = "/" + dat;
+    }
+
+}
+
 $(document).ready(async function () {
     // Migration code from mkdocs_windmill
     if (window.location.hash) {
@@ -55,20 +69,15 @@ $(document).ready(async function () {
 
             for (let index in parsed.reverse()) {
                 let dat = parsed[index];
-                if(getVersion() === dat){
-                    $("#version-select").append("<option selected id=\"option-" +dat + "\">" + dat + "</option>");
+                if (getVersion() === dat) {
+                    $("#version-select").append("<option selected id=\"option-" + dat + "\">" + dat + "</option>");
                 } else {
-                    $("#version-select").append("<option id=\"option-" +dat + "\">" + dat + "</option>");
+                    $("#version-select").append("<option id=\"option-" + dat + "\">" + dat + "</option>");
                 }
             }
 
         });
     });
-
-    function getVersion(){
-        let url = window.location.pathname;
-        return url.split("/")[1].split("/")[0];
-    }
 
     // Make sure the nav is shown.
     // Causes the navbar to be auto open when swapping between, but really should be fine...?
@@ -94,11 +103,4 @@ $(document).ready(async function () {
     }
 
 });
-function swapVersions(){
 
-    let dat = document.getElementById("version-select").value;
-    if(getVersion() !== dat){
-        window.location.href = "/" + dat;
-    }
-
-}
