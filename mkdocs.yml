@@ -676,6 +676,61 @@ pages:
       - Recipes:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
+    - MoreTweaker:
+      - MoreTweaker: 'Mods/MoreTweaker/MoreTweaker.md'
+      - BedrockCraft:
+        - Bedrock Ritual: 'Mods/MoreTweaker/BedrockCraft/BedrockRitual.md'
+        - Dust Infusion: 'Mods/MoreTweaker/BedrockCraft/DustInfusion.md'
+      - Blood Arsenal:
+        - Infusion de Sanguine: 'Mods/MoreTweaker/BloodArsenal/Sanguine.md'
+      - BuildCraft:
+        - Assembly Table: 'Mods/MoreTweaker/BuildCraft/AssemblyTable.md'
+        - Integration Table: 'Mods/MoreTweaker/BuildCraft/IntegrationTable.md'
+        - Refinery: 'Mods/MoreTweaker/BuildCraft/Refinery.md'
+      - Draconic Evolution:
+        - Fusion Crafting: 'Mods/MoreTweaker/DraconicEvolution/FusionCrafting.md'
+      - Enderfuge:
+        - EnderFuge: 'Mods/MoreTweaker/Enderfuge/Enderfuge.md'
+      - Fossils and Archeology:
+        - Analyzer: 'Mods/MoreTweaker/Fossils/Analyzer.md'
+        - Archeology Workbench: 'Mods/MoreTweaker/Fossils/ArcheologyWorkbench.md'
+        - Culure Vat: 'Mods/MoreTweaker/Fossils/CultureVat.md'
+        - Sifter: 'Mods/MoreTweaker/Fossils/Sifter.md'
+      - Gadgetry:
+        - Alloy Furnace: 'Mods/MoreTweaker/Gadgetry/AlloyFurnace.md'
+        - Combustion Generator: 'Mods/MoreTweaker/Gadgetry/CombustionGenerator.md'
+        - Distillery: 'Mods/MoreTweaker/Gadgetry/Distillery.md'
+        - Grinder: 'Mods/MoreTweaker/Gadgetry/Grinder.md'
+      - InfinityCraft:
+        - Compressor: 'Mods/MoreTweaker/InfinityCraft/Compressor.md'
+      - LightningCraft:
+        - Lightning Crusher: 'Mods/MoreTweaker/LightningCraft/Crusher.md'
+        - Lightning Infusion: 'Mods/MoreTweaker/LightningCraft/Infusion.md'
+        - Lightning Transforming: 'Mods/MoreTweaker/LightningCraft/Transforming.md'
+      - Matter Overdrive:
+        - Inscriber: 'Mods/MoreTweaker/MatterOverdrive/Inscriber.md'
+        - Matter Values: 'Mods/MoreTweaker/MatterOverdrive/Matter.md'
+      - Mob Grinding Utils:
+        - Chicken Feed: 'Mods/MoreTweaker/MobGrindingUtils/ChickenFeed.md'
+      - QuackLib:
+        - Alloy Furnace: 'Mods/MoreTweaker/QuackLib/AlloyFurnace.md'
+      - Railcraft:
+        - Blast Furnace: 'Mods/MoreTweaker/Railcraft/BlastFurnace.md'
+        - Coke Oven: 'Mods/MoreTweaker/Railcraft/CokeOven.md'
+        - Fluid Fuels: 'Mods/MoreTweaker/Railcraft/FluidFuels.md'
+        - Rock Crusher: 'Mods/MoreTweaker/Railcraft/RockCrusher.md'
+        - Rolling Machine: 'Mods/MoreTweaker/Railcraft/RollingMachine.md'
+      - The Betweenlands:
+        - Animator: 'Mods/MoreTweaker/Betweenlands/Animator.md'
+        - Compost Bin: 'Mods/MoreTweaker/Betweenlands/CompostBin.md'
+        - Dark Druid Altar: 'Mods/MoreTweaker/Betweenlands/DruidAltar.md'
+        - Pestle & Mortar: 'Mods/MoreTweaker/Betweenlands/Mortar.md'
+        - Purifier: 'Mods/MoreTweaker/Betweenlands/Purifier.md'
+      - VoidCraft:
+        - Void Alchemy: 'Mods/MoreTweaker/VoidCraft/VoidAlchemy.md'
+        - Void Blast Furnace: 'Mods/MoreTweaker/VoidCraft/VoidBlastFurnace.md'
+        - Void Infuser: 'Mods/MoreTweaker/VoidCraft/VoidInfuser.md'
+        - Void Macerator: 'Mods/MoreTweaker/VoidCraft/VoidMacerator.md'
     - MrCrayfish's Furniture Mod:
       - MrCrayfish's Furniture Mod: 'Mods/MrCrayfish_s_Furniture_Mod/MrCrayfish_s_Furniture_Mod.md'
       - Crafting:
