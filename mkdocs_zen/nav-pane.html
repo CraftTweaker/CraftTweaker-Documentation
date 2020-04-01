@@ -3,7 +3,7 @@
     {# Optional link to the repository #}
     {%- block repo %}
     {%- if config.repo_url %}
-    <ul class="pt-4 pl-4 pr-4 pb-1 border-b">
+    <div class="pt-4 pl-4 pr-4 pb-1 border-b">
             <a class="py-1 pl-1 hover:bg-gray-400 block w-full" href="{{ config.repo_url }}" target="_blank" >
                 <svg class="inline" width="14" height="14" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                     <g>
@@ -14,10 +14,10 @@
             </a>
             <a href="{{ config.extra.patreon_link }}" class = "py-1 pl-1 hover:bg-gray-400 block w-full"
                 target="_blank">
-                <img class="inline" src="https://i.blamejared.com/patreon_logo.png" width="12" height="12">
+                <img class="inline" src="https://i.blamejared.com/patreon_logo.png" width="12" height="12" alt="patreon_logo">
                 Support this wiki on Patreon
             </a>
-    </ul>
+    </div>
     {%- endif %}
     {%- endblock %}
 
@@ -26,11 +26,11 @@
         <svg width="1rem" height="1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-current svg-icon absolute pointer-events-none ml-2 my-3">
             <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
         </svg>
-        <input class="p-2 pr-4 bg-transparent " type="text" placeholder="Search" id="mkdocs-search-query" style="text-indent: 1.5rem"/>
+        <label for = "mkdocs-search-query" class="sr-only">Search</label><input class="p-2 pr-4 bg-transparent " type="text" placeholder="Search" id="mkdocs-search-query" style="text-indent: 1.5rem"/>
 
     </div>
     <div class = "my-auto inline-block pt-2 pl-4 pr-4 flex flex-row">
-        <span class = "flex-none navlev-1 py-1">Version:</span>
+        <label class = "flex-none navlev-1 py-1" for="version-select">Version:</label>
         <select class = "flex-grow bg-transparent px-2 py-1" id = "version-select" onchange = "swapVersions()">
         </select>
     </div>
