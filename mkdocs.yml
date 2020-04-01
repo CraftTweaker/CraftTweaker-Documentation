@@ -138,7 +138,7 @@ markdown_extensions:
 
 theme:
   name: null
-  custom_dir: '../../mkdocs_zen/' # if you're building locally, change this to just be 'mkdocs_zen', this is to fix an issue with mkdocs not accepting a theme dir anymore
+  custom_dir: 'mkdocs_zen/'
   include_search_page: True
   search_index_only: True
 
