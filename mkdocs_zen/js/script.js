@@ -70,15 +70,6 @@ $(document).ready(async function () {
         return url.split("/")[1].split("/")[0];
     }
 
-    function swapVersions(){
-
-        let dat = document.getElementById("version-select").value;
-        if(getVersion() !== dat){
-            window.location.href = "/" + dat;
-        }
-
-    }
-
     // Make sure the nav is shown.
     // Causes the navbar to be auto open when swapping between, but really should be fine...?
     $(window).resize(function () {
@@ -103,3 +94,11 @@ $(document).ready(async function () {
     }
 
 });
+function swapVersions(){
+
+    let dat = document.getElementById("version-select").value;
+    if(getVersion() !== dat){
+        window.location.href = "/" + dat;
+    }
+
+}
