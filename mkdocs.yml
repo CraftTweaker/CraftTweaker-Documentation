@@ -149,6 +149,7 @@ extra:
   #history_buttons: false
   version: 'CrT v5.0.0'
   patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
+  discord_link: "https://discord.blamejared.com"
 
 plugins:
   - search
