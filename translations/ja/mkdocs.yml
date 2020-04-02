@@ -834,8 +834,8 @@ extra:
 
 plugins:
   - search
-  - minify:
-      minify_html: true
-      htmlmin_opts:
-        remove_comments: true
+#  - minify:
+#      minify_html: true
+#      htmlmin_opts:
+#        remove_comments: true
   - use-site-url
