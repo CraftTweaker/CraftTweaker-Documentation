@@ -833,7 +833,7 @@ extra:
   discord_link: "https://discord.blamejared.com"
 
 plugins:
-  - search
+  - fast-search-updated
   - minify:
       minify_html: true
       htmlmin_opts:
