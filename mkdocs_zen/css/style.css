@@ -1,0 +1,69 @@
+/* For any custom css that shouldn't be in the tailwind build*/
+
+.toclink:hover {
+    text-decoration: underline;
+}
+
+.toclink:hover::after {
+    content: "";
+    /*noinspection CssUnknownTarget*/
+    background-image: url("https://blamejared.com/svg/link.svg");
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-closed {
+    content: "";
+}
+
+.nav-closed > span::before {
+    content: "";
+    /*noinspection CssUnknownTarget*/
+    background-image: url("https://blamejared.com/svg/cheveron-right.svg");
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.nav-open {
+    content: "";
+}
+
+.nav-open > span::before {
+    content: "";
+    /*noinspection CssUnknownTarget*/
+    background-image: url("https://blamejared.com/svg/cheveron-down.svg");
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-align: center;
+    color: #ccc;
+    border-right: 1px solid #CCC;
+    vertical-align: top;
+    padding-right: 5px;
+
+    /* your custom style here */
+}
+
+/* for block of code */
+.hljs-ln-code {
+    padding-left: 10px;
+}
