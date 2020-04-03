@@ -30,7 +30,7 @@ if (!window.location.pathname.endsWith("search.html")) {
             resultsContainer.slideUp();
             return;
         }
-        request = $.get(`http://docs.blamejared.com/search?v=${game_version}&lang=${language}&base_url=${base_url}&q=${query}`, function (value) {
+        request = $.get(`https://docs.blamejared.com/search?v=${game_version}&lang=${language}&base_url=${base_url}&q=${query}`, function (value) {
             while (search_results.firstChild) {
                 search_results.removeChild(search_results.firstChild);
             }
@@ -94,7 +94,7 @@ if (!window.location.pathname.endsWith("search.html")) {
             }
             return;
         }
-        request = $.get(`http://docs.blamejared.com/search?v=${game_version}&lang=${language}&base_url=${base_url}&q=${query}&limit=-1`, function (value) {
+        request = $.get(`https://docs.blamejared.com/search?v=${game_version}&lang=${language}&base_url=${base_url}&q=${query}&limit=-1`, function (value) {
             while (resultsElement.firstChild) {
                 resultsElement.removeChild(resultsElement.firstChild);
             }
