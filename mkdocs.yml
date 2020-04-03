@@ -833,7 +833,8 @@ extra:
   discord_link: "https://discord.blamejared.com"
 
 plugins:
-  - fast-search-updated
+  - search:
+      prebuild_index: "python"
   - minify:
       minify_html: true
       htmlmin_opts:

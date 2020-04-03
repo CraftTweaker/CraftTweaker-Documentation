@@ -2,3 +2,4 @@
 site/
 build/
 translations/en/
+node_modules/
