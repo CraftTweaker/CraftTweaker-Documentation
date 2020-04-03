@@ -13,6 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         var base_url = "{{ base_url }}";
+        var game_version = "{{ config.extra.game_version }}";
+        var language = '{{ config.extra.language }}';
     </script>
     <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
     <meta property="og:title" content="{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}"/>
@@ -40,8 +42,8 @@
     <script src="//cdn.jsdelivr.net/npm/simplebar@5.1.0/dist/simplebar.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
     <script src="{{ base_url }}/js/mkdocs/require.js"></script>
-    <script src="{{ base_url }}/js/mkdocs/search.js"></script>
     <script src="{{ base_url }}/js/highlightjs-zenscript.js"></script>
+    <script defer src="{{ base_url }}/js/search.js"></script>
     <script src="{{ base_url }}/js/script.js"></script>
     <script>
         hljs.registerLanguage("zenscript", hljsZenScript);

@@ -831,6 +831,8 @@ extra:
   version: 'CrT v4.1.20'
   patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
   discord_link: "https://discord.blamejared.com"
+  game_version: "1.12"
+  language: "en"
 
 plugins:
   - search:
