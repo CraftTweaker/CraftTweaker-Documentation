@@ -681,12 +681,20 @@ nav:
       - BedrockCraft:
         - Bedrock Ritual: 'Mods/MoreTweaker/BedrockCraft/BedrockRitual.md'
         - Dust Infusion: 'Mods/MoreTweaker/BedrockCraft/DustInfusion.md'
+      - Bewitchment:
+        - Distillery: 'Mods/MoreTweaker/Bewitchment/Distillery.md'
+        - Frost Fire: 'Mods/MoreTweaker/Bewitchment/FrostFire.md'
+        - Rituals: 'Mods/MoreTweaker/Bewitchment/Rituals.md'
+        - Witches Cauldron: 'Mods/MoreTweaker/Bewitchment/WitchesCauldron.md'
+        - Witches Oven: 'Mods/MoreTweaker/Bewitchment/WitchesOven.md'
       - Blood Arsenal:
         - Infusion de Sanguine: 'Mods/MoreTweaker/BloodArsenal/Sanguine.md'
       - BuildCraft:
         - Assembly Table: 'Mods/MoreTweaker/BuildCraft/AssemblyTable.md'
         - Integration Table: 'Mods/MoreTweaker/BuildCraft/IntegrationTable.md'
         - Refinery: 'Mods/MoreTweaker/BuildCraft/Refinery.md'
+      - Cooking For Blockheads:
+        - Kitchen Appliances: 'Mods/MoreTweaker/CookingForBlockheads/KitchenAppliances.md'
       - Draconic Evolution:
         - Fusion Crafting: 'Mods/MoreTweaker/DraconicEvolution/FusionCrafting.md'
       - Enderfuge:
