@@ -99,6 +99,7 @@ pages:
         - IMinecartEvent: 'Vanilla/Events/Events/IMinecartEvent.md'          
         - IPotionBrewEvent: 'Vanilla/Events/Events/IPotionBrewEvent.md'            
         - IProcessableEvent: 'Vanilla/Events/Events/IProcessableEvent.md'
+        - IProjectileImpactEvent: 'Vanilla/Events/Events/IProjectileImpactEvent.md'  
         - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
         - IExplosionEvent: 'Vanilla/Events/Events/IExplosionEvent.md'
         - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
