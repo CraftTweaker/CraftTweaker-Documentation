@@ -97,6 +97,7 @@ pages:
         - IEventHasResult: 'Vanilla/Events/Events/IEventHasResult.md'          
         - IEventPositionable: 'Vanilla/Events/Events/IEventPositionable.md'
         - IMinecartEvent: 'Vanilla/Events/Events/IMinecartEvent.md'          
+        - IPotionBrewEvent: 'Vanilla/Events/Events/IPotionBrewEvent.md'            
         - IProcessableEvent: 'Vanilla/Events/Events/IProcessableEvent.md'
         - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
         - IExplosionEvent: 'Vanilla/Events/Events/IExplosionEvent.md'
