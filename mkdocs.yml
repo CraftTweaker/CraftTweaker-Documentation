@@ -456,14 +456,6 @@ pages:
       - Machines: 'Mods/GregTechCE/Machines.md'
       - Material: 'Mods/GregTechCE/Material.md'
     - IC2 Tweaker:
-      - IC2ClassicTweaker:
-        - Adv Crafting: 'Mods/IC2Tweaker/IC2ClassicTweaker/AdvCrafting.md'
-        - Canning Machine: 'Mods/IC2Tweaker/IC2ClassicTweaker/CanningMachine.md'
-        - Electrolyzer: 'Mods/IC2Tweaker/IC2ClassicTweaker/Electrolyzer.md'
-        - Liquid Fuel Generator: 'Mods/IC2Tweaker/IC2ClassicTweaker/LiquidFuelGenerator.md'
-        - Rare Earth Extractor: 'Mods/IC2Tweaker/IC2ClassicTweaker/RareEarthExtractor.md'
-        - Sawmill: 'Mods/IC2Tweaker/IC2ClassicTweaker/Sawmill.md'
-        - Scrap Box: 'Mods/IC2Tweaker/IC2ClassicTweaker/Scrap_Box.md'
       - Blast Furnace: 'Mods/IC2Tweaker/Blast_Furnace.md'
       - Block Cutter: 'Mods/IC2Tweaker/Block_Cutter.md'
       - Canner: 'Mods/IC2Tweaker/Canner.md'
@@ -479,6 +471,14 @@ pages:
       - Scrap Box: 'Mods/IC2Tweaker/Scrap_Box.md'
       - Semi-Fluid Generator: 'Mods/IC2Tweaker/Semi-Fluid_Generator.md'
       - Thermal Centrifuge: 'Mods/IC2Tweaker/ThermalCentrifuge.md'
+    - IC2ClassicTweaker:
+      - Adv Crafting: 'Mods/IC2ClassicTweaker/AdvCrafting.md'
+      - Canning Machine: 'Mods/IC2ClassicTweaker/CanningMachine.md'
+      - Electrolyzer: 'Mods/IC2ClassicTweaker/Electrolyzer.md'
+      - Liquid Fuel Generator: 'Mods/IC2ClassicTweaker/LiquidFuelGenerator.md'
+      - Rare Earth Extractor: 'Mods/IC2ClassicTweaker/RareEarthExtractor.md'
+      - Sawmill: 'Mods/IC2ClassicTweaker/Sawmill.md'
+      - Scrap Box: 'Mods/IC2ClassicTweaker/Scrap_Box.md'
     - Immersive Engineering:
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
