@@ -8,10 +8,6 @@ import mods.ic2.ClassicElectrolyzer;
 
 ## Methods
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from discharge part and total energy used for charge part of the recipe.
-
 ### Add Both Recipe 
 
 ```zenscripts
@@ -22,7 +18,7 @@ mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt>
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu used in the recipe.
+- **int energy** Total eu received from discharge part and total energy used for charge part of the recipe.
 
 ### Add Charge Recipe 
 
@@ -34,7 +30,7 @@ mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:sto
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from the recipe.
+- **int energy** Total eu used in the recipe.
 
 ### Add Discharge Recipe 
 
@@ -43,6 +39,10 @@ mods.ic2.ClassicElectrolyzer.addDischargeRecipe(IItemStack output, IItemStack in
 
 mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <minecraft:bedrock>, 500);
 ```
+
+- **[IItemStack](/Vanilla/Items/IItemStack/) output**
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
+- **int energy** Total eu received from the recipe.
 
 ### Removal
 
