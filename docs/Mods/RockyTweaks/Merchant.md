@@ -9,7 +9,7 @@ The following commands are added to retrieve information about the availible mer
 
 ## Package
 
-`mods.rockycore.Merchant`
+`mods.rockytweaks.Merchant`
 
 ## Addition
 
@@ -17,7 +17,7 @@ Trades can be added to a specific merchant profession & carrer.
 
 ```zenscript
 // addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
-mods.rockycore.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
+mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
 ## Removal
