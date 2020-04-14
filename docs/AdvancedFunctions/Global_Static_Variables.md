@@ -12,7 +12,7 @@ Both, statics and globals are scriptbound and instantiated before the script is 
 Both cannot be changed.  
 The difference is how they are called:  
 Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
-Statics on the other hand, need to use the [cross-script reference](Cross-Script_Reference/) to be accessed.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.  
 
 Globals are created using the `global` keyword.  
 Statics are created using the `static` keyword.
@@ -35,7 +35,7 @@ Okay, let's break it down, shall we?
 
 1. `global` keyword that indicates the declaration of a global value
 2. `myGlobalValue` the name of the value
-3. `as IItemStack` the type of the value (It is recommended to [import](Import/) the types before casting the variable)
+3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
 4. `= <minecraft:dirt>;` value initialization. As global values are final, you need to initialize them whilst declaring them!
 
 ## Words of advice
