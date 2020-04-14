@@ -13,4 +13,4 @@ This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), whi
 
 | name             | type                                                     |
 |------------------|----------------------------------------------------------|
-| `rayTrace`       | [IRayTraceResult](Vanilla/World/IRayTraceResult/)        |
+| `rayTrace`       | [IRayTraceResult](/Vanilla/World/IRayTraceResult/)       |
