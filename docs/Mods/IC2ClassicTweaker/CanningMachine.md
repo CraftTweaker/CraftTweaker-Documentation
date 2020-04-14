@@ -69,14 +69,7 @@ mods.ic2.CanningMachine.deleteItemFuel(<ic2:itemmisc:102>);
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The item to be removed from being an input for the fuel can.
 
-
-
 See [here](https://github.com/TinyModularThings/IC2Classic/wiki/Fuel-Cans) for info on how fuel cans work.
-
-
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
-- **[IItemStack](/Vanilla/Items/IItemStack/) container** The itemstack to be "filled"
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) filler** The ingredient with which is filled into the container
 
 ### Add Canning Recipe (IItemStack output, IIngredient filler, IItemStack container)
 ```zenscript
@@ -84,3 +77,7 @@ mods.ic2.CanningMachine.addCanningRecipe(IItemStack output, IIngredient filler, 
 
 mods.ic2.CanningMachine.addCanningRecipe(<minecraft:emerald>, <minecraft:diamond>, <minecraft:bucket>);
 ```
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
+- **[IItemStack](/Vanilla/Items/IItemStack/) container** The itemstack to be "filled"
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) filler** The ingredient with which is filled into the container
+

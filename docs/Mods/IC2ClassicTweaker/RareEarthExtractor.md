@@ -2,7 +2,7 @@
 
 ## Package
 
-```java
+```zenscript
 import mods.ic2.RareEarthExtractor;
 ```
 
