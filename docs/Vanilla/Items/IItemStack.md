@@ -80,6 +80,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | isEnchanted         |                     | bool                                                       |
 | isDamaged           |                     | bool                                                       |
 | isDamageable        |                     | bool                                                       |
+| isItemBlock         |                     | bool (if contained item is an itemblock)
 | isStackable         |                     | bool                                                       |
 | isBeaconPayment     |                     | bool                                                       |
 | hasEffect           |                     | bool                                                       |
@@ -337,6 +338,12 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 ```zenscript
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
+```
+
+You can also test if an IItemStack contains an ItemBlock and can thus be converted:
+```zenscript:
+<minecraft:dirt>.isItemBlock; // true
+<minecraft:stick>.isItemBlock; // false
 ```
 
 #### Food Properties
