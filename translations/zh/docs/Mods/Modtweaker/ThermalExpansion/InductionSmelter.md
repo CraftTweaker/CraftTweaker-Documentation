@@ -15,7 +15,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<minecraft:diamond>, <minecraft
 ## 删除配方
 
 ```zenscript
-mods.thermalexpansion.InductionSmelter.removeRecipe(input);
+mods.thermalexpansion.InductionSmelter.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
 
 mods.thermalexpansion.InductionSmelter.removeRecipe(<minecraft:bucket>, <minecraft:sand>);
 ```

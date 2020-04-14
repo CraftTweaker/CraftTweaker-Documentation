@@ -37,3 +37,7 @@ It might be required for you to import the package if you encounter any issues (
 - int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
 - List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
 - List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+
+## Additional Info
+
+To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)

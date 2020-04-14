@@ -1,6 +1,6 @@
 # Iterable
 
-Аннотации Iterable могут быть применимы к классу, чтобы ZS мог проходить по ним.  
+Аннотации для перечисляемых типов могут быть применены к классу, чтобы ZS мог перебирать их.  
 Есть три вида аннотаций Iterable:
 
 - `@IterableSimple` (класс должен реализовывать `Iterable`)
@@ -45,7 +45,7 @@ public interface IOreDict extends Iterable<IOreDictEntry> {
     }
 ```
 
-## Как это будет полезно в ZS?
+## Как это используется в ZS?
 
 ```zenscript
 for oreDictEntry in oreDict {

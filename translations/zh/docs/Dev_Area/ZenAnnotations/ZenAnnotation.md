@@ -6,16 +6,16 @@ ZenAnnotation 可以被提供给一个类或其方法以将其公开给 ZenScrip
 
 这些注解可以被提供给 ZenClass
 
-| 注解                                                                       | 值                                                               | 目标 | 信息                                                                        |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------- | -- | ------------------------------------------------------------------------- |
-| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass 类名（如 `crafttweaker.item.IItemStack`），可以与正式的方法名不同       | 类  | 名称必须唯一                                                                    |
-| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | 被扩展的 ZenType 名（如 `crafttweaker.item.IItemStack`）                | 类  | 名称必须已经存在（你不能扩展不存在的 ZenType）                                               |
-| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                 | 类  | 用于自动注册这个类或扩展                                                              |
-| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | 可迭代的 ZenClass 类名（如 `crafttweaker.mods.IMod`）                    | 类  | 需要可赋值给 `Iterable<Type>` 的类                                          |
-| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | 键和值的可迭代的 ZenClass 类名（如 `string`，`crafttweaker.item.IItemStack`） | 类  | 需要可赋值给 `List<Type>` 的类                                              |
-| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | 可迭代的 ZenClass 类名（如 `crafttweaker.mods.IMod`）                    | 类  | 需要可赋值给 `Map<KeyType, ValueType>` 的类                                 |
-| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | 括号处理器的优先级（如 `priority = 19`）                                    | 类  | 需要可赋值给 `IBracketHandler` 的类                                               |
-| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | 需要的 mod 的名称（`isModLoaded(annotation.getValue())` 需要为 true）      | 类  | 与 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 结合使用 |
+| 注解                                                                       | 值                                                                                       | 目标 | 信息                                                                        |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- | -- | ------------------------------------------------------------------------- |
+| [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/)             | ZenClass Name (e.g. `crafttweaker.item.IItemStack`), can differ from class' formal name | 类  | 名称必须唯一                                                                    |
+| [`@ZenExpansion`](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)     | 被扩展的 ZenType 名（如 `crafttweaker.item.IItemStack`）                                        | 类  | 名称必须已经存在（你不能扩展不存在的 ZenType）                                               |
+| [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/)       |                                                                                         | 类  | 用于自动注册这个类或扩展                                                              |
+| [`@IterableList`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)         | 可迭代的 ZenClass 类名（如 `crafttweaker.mods.IMod`）                                            | 类  | 需要可赋值给 `Iterable<Type>` 的类                                          |
+| [`@IterableMap`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)          | 键和值的可迭代的 ZenClass 类名（如 `string`，`crafttweaker.item.IItemStack`）                         | 类  | 需要可赋值给 `List<Type>` 的类                                              |
+| [`@IterableSimple`](/Dev_Area/ZenAnnotations/Annotation_Iterable/)       | 可迭代的 ZenClass 类名（如 `crafttweaker.mods.IMod`）                                            | 类  | 需要可赋值给 `Map<KeyType, ValueType>` 的类                                 |
+| [`@BracketHandler`](/Dev_Area/ZenAnnotations/Annotation_BracketHandler/) | 括号处理器的优先级（如 `priority = 19`）                                                            | 类  | 需要可赋值给 `IBracketHandler` 的类                                               |
+| [`@ModOnly`](/Dev_Area/ZenAnnotations/Annotation_ModOnly/)               | 需要的 mod 的名称（`isModLoaded(annotation.getValue())` 需要为 true）                              | 类  | 与 [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) 结合使用 |
 
 ## 参数注解
 

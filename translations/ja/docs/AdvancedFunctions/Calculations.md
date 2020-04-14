@@ -1,75 +1,75 @@
-# Calculations
+# 計算
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+数字入力だけでは十分でない場合があります。 ときに計算が必要になる場面があります。  
+1回の計算に3つ以上の数値が利用できることに留意してください。`1+1+1+1`も問題なく計算されます。
 
-## A word of advice
+## アドバイス
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+計算結果が予期せぬものとなった場合、異なる型同士を計算に用いた可能性が十二分にあります。  
+例えば、`13 % 6.5`は1を返しますが、数学的に正しい答えは0です。 なぜ? ZenScriptは2つの変数を常に同じ型として計算します。 なので、2番めの値の型を最初の値の型と一致するように自動的にキャストされます。 この例では、実際に行われた計算は`13 % 6`でした。2番めの値(double)が最初の値(integer)と一致するように自動キャストされたためです。
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+常に、2つの変数の型に気を配り、怪しければprint関数を用いてlogに出力し、結果を確認しましょう。
 
-## Arithmetic Operators
+## 数式演算子
 
-I'm pretty sure all of you know these already, don't you?
+これらについては、皆さんはご存知だと思います。
 
-| Token | Tokenassign | Function       | Example |
-| ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
-| `-`   | `-=`        | Substraction   | 2-1     |
-| `*`   | `*=`        | Multiplication | 1*1     |
-| `/`   | `/=`        | Division       | 2/2     |
-| `%`   | `%=`        | Modulo         | 13 % 6  |
+| 演算子 | 代入演算子 | 機能 | 例      |
+| --- | ----- | -- | ------ |
+| `+` | `+=`  | 加算 | 1+2    |
+| `-` | `-=`  | 減算 | 2-1    |
+| `*` | `*=`  | 乗算 | 1*1    |
+| `/` | `/=`  | 除算 | 2/2    |
+| `%` | `%=`  | 剰余 | 13 % 6 |
 
-## Concatenation
+## 連結
 
-Puts one thing at the and of the other
+あるものを、もう片方にくっつけます。
 
 ```zenscript
-//prints "Hello World"
+//"Hello World" を出力
 print("Hello" ~ " " ~ "World");
 ```
 
-## Calculation results
+## 計算結果
 
-A calculation usually ends up with a result. So what to do with that?
+通常、計算されると計算結果が返ります。 では、それで何をしましょう?
 
-### Assigning a variable
+### 変数割り当て
 
-There are two ways of assigning a value to a variable:
+変数に値を設定するのに、3つの方法があります。
 
 ```zenscript
 var test = 0;
 
 //Option 1:
-//assigns test with the value 3 (1+2)
+//test に 3 (1+2) を設定する
 test = 1+2;
 
 //Option 2:
-//assigns test with 5 (3+2)
+//test に 5 (3+2) を設定する
 test = test + 2;
 
 //Option 3:
-//assigns test with 2 (5-3)
+//test に 2 (5-3) を設定する
 test -= 3;
 ```
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Option 1 及び 2 では、`=` トークンによる返り値を変数に割り当てています。  
+おそらく初心者にも優しい簡単な方法で、未使用の変数に割り当てる唯一の方法でもあります。
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+Option 3 では`-=`とその結果である通常の減算の前に変数を割り当てています。  
+このページのすべての演算子にはそれぞれ割当トークンも用意されています。上にある表もご確認ください。
 
-### Using the result otherwise
+### その他の使い方
 
-You can always use the result of a calculation in a function or a conditional statement:
+関数、条件ステートメントにおいても、演算子を用いた計算の結果を扱うことができます。
 
 ```zenscript
-//prints 4
+//4を出力
 print(3+1);
 
-//removes the item on array[4]
+//array[4]の要素を削除
 recipes.remove(array[3+1]);
 
 //

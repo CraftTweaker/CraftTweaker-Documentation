@@ -6,6 +6,12 @@
 
 Они объявляются с помощью ```[``` и ```]```.
 
+**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+
+`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+
+Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+
 ```zenscript
 //Массив, содержащий "Hello" и "World"
 val stringArray = ["Hello", "World"] as string[];
@@ -14,12 +20,12 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-Если вы сейчас подумали "подождите, разве я не видел эти скобки раньше?", то "да", вы видели. Помните ```recipes.add(out,[[],[],[]]);```? Здесь используются три массива, где каждый содержит по три объекта, чтобы определить рецепт крафта в верстаке.
+If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
 
 ## Приведение к типу массива
 
-Вы точно заметили, что все массивы имеют дополнительное указание`as`.  
-Почему, вы спросите. Это потому что ZenScript иногда не может предсказать, предметы какого типа хранятся в массиве. This can be the cause of strange conversion error logs!  
+You surely have noticed that all arrays here have the `as` statement appended.  
+Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
 Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
@@ -30,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Вложенные массивы
 
-Вы можете разместить массивы в массивах.
+You can place Arrays in Arrays.
 
 ```zenscript
 val stringArray1 = ["Привет", "мир"] as string[];
@@ -41,7 +47,7 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["бабочка","
 
 ## Обращение к элементам массива
 
-Вы можете ссылаться на элемент в массиве, используя его место в списке. Первый элемент массива — номер 0, второй — номер 1 и так далее.
+You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
 
 If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
@@ -81,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Циклы
 
-Цикл — это функция, которая повторяется. Вы можете использовать циклы, чтобы применить какое-то действие ко всем элементам массива.
+A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
 ## Цикл for
 
-Основное использование цикла for — проход через массив. Проход через массив означает, что действие применяется ко всем элементам массива.  
-Вы можете использовать ключевое слово `break`, чтобы прервать выполнение цикла досрочно.
+The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -131,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## Цикл while
 
-Цикл while выполняет данный код пока некоторое условие возвращает `true`.  
-В качестве альтернативы, вы можете остановить его с помощью ключевого слова `break`.
+The while loop executes the given code as long as the given condition evaluates to `true`.  
+Alternatively, you can stop it using the `break` keyword.
 
 ```zenscript
 var i = 0; 
@@ -146,7 +152,7 @@ while i < 10 {
 print("After loop: " + i);
 
 
-//Will print 10 - 6, because in the iteration after that i == 5 and it will break.
+//Напечатает от 10 до 6, потому что на итерации, где i == 5, цикл прерывается.
 while (i > 0) {
     if i == 5
         break;
@@ -154,7 +160,7 @@ while (i > 0) {
     i -= 1;
 }
 
-print("After loop 2: " + i);
+print("После цикла 2: " + i);
 
 
 for k in 1 .. 10 {
@@ -166,9 +172,9 @@ for k in 1 .. 10 {
 
 # Добавление элементов к массиву
 
-Пока что это не очень рекомендуется, но можно добавляет объекты к массивам.  
-Вы можете добавлять объекты к массиву только по одному, нельзя соединить два массива.  
-Оператор для добавления элементов к массиву &mdash; `&plus;`:
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You use the `+` operator for array Addition:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

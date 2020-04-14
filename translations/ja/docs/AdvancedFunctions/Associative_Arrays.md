@@ -35,13 +35,13 @@ val myAssocArray = {
 違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```zenscript
-<br />val dirt = &lt;minecraft:dirt&gt;;
+<br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    &lt;minecraft:dirt&gt; : "This is me"
+    <minecraft:dirt> : "This is me"
 } as string[IItemStack];
 
 //array[index]
-print(assocArray[&lt;minecraft:dirt&gt;]);
+print(assocArray[<minecraft:dirt>]);
 
 //変数の型が正しいときに限り、ここで変数を用いることもできます
 print(assocArray[dirt]);
@@ -66,11 +66,11 @@ print(assocWithStrings.one);
 print(assocWithStrings["two"]);
 ```
 
-## Manipulating items inside an Associative Array
+## 連想配列の要素への操作
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+配列と同じく、`array[index] = newValue`を通して連想配列内の要素を操作することができます。  
+ただし、1つ大きな違いがあります。  
+配列は大きさが固定されていますが、連想配列はそうではありません。 すなわち、未使用のインデックスに要素を設定することによって、いつでもエントリを追加できます。
 
 ```zenscript
 val changingArray = {
@@ -80,18 +80,18 @@ val changingArray = {
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
+//gold_ingotの値を変更します
 changingArray[gg] = "and I love it";
 
-//adds a new entry
+//新しいエントリを追加します
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## 連想配列のキーおよびエントリセットの取得
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+連想配列のすべてのキーを配列に格納したものがkeySet、  
+連想配列のすべての値を配列に格納したものがvalueSet、  
+連想配列のすべてのエントリを配列に格納したものがentrySetです(以下を参照ください)。
 
 ```zenscript
 myAssocArray.keySet   //keySet
@@ -101,19 +101,19 @@ myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## 連想配列の反復処理
 
-There are two Iterators that allow you to iterate over an Associative Array:
+連想配列では次の2つのイテレータで反復処理が可能です。
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- キーイテレータ: キーを反復し、1つの変数を使用
+- キー・値イテレータ: キーと値両方を反復し、2つの変数を使用
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+では、反復処理されるクラフトレシピを保持する連想配列を作ってみましょう。
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- キーはクラフト成果で、[IItemStack](/Vanilla/Items/IItemStack/)とする
+- 値はクラフト材料で、[IIngredient](/Vanilla/Variable_Types/IIngredient/)とする
+- 次のような構文のキーイテレータを使用: `for key in assocArray {doSth;}`
+- 次のような構文のキー・値イテレータを使用: `for key, value in assocArray {doSth;}`
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -127,13 +127,13 @@ val recipeMapShaped = {
 
 recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
 
-//key will be grass, goldIngot, dirt
+//キーはgrass, goldIngot, dirt
 for key in recipeMapShaped {
     recipes.addShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//キーはgrass, goldIngot, dirt、値はそれらのレシピ
 for key, value in recipeMapShaped {
     recipes.addShaped(key, value);
 }
@@ -141,16 +141,16 @@ for key, value in recipeMapShaped {
 
 # ZenType Entry
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+連想配列のエントリはキーと値によって成り立っています。  
+現状このオブジェクトは連想配列のentrySetメソッドを用いることによってのみ取得できます。
 
-You can use the getters to get `key` and `value`
+getterとして`key`と`value`が用意されています。
 
 ```zenscript
-//Replace map with a reference to an existing map/associative array
+//マップを既存のマップ/連想配列への参照に置き換えます
 val myEntry = map.entrySet[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key;    //エントリのキーを返します
+myEntry.value;  //エントリの値を返します
 ```

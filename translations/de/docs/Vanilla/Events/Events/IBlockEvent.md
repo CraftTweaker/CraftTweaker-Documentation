@@ -1,6 +1,6 @@
 # IBlockEvent
 
-This interface is extended by all Events that can have a central living entity.
+This interface is extended by all Events that can deal with blocks in the world.
 
 ## Diese Klasse importieren
 

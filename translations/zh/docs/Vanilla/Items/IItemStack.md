@@ -191,8 +191,9 @@ print(apple.displayName);
 
 Locally (only this single item).
 
-    <minecraft:coal>.withDisplayName("Black Gold");
-    
+```zenscript
+<minecraft:coal>.withDisplayName("Black Gold");
+```
 
 #### Lore
 

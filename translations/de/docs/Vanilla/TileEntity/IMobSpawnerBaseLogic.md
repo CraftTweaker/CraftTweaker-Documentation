@@ -18,6 +18,8 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenMethods
 
-    void updateSpawner();
-    
-    void setDelayToMin();
+```zenscript
+void updateSpawner();
+
+void setDelayToMin();
+```

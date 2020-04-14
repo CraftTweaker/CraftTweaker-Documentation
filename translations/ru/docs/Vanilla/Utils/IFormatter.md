@@ -1,14 +1,14 @@
 # IFormatter
 
-## Accessing the text formatting Handler
+## Доступ к обработчику форматирования
 
-You can access the Formatting Handler using the `format` [global keyword](/Vanilla/Global_Functions/).
+Вы можете получить доступ к обработчику форматирования, используя [глобальное значение](/Vanilla/Global_Functions/) `format`.
 
-## Formatting a text
+## Форматирование текста
 
-### Color
+### Цвет
 
-You can give an IFormattedText a color using one of the following Colors:
+Вы можете задать цвет IFormattedText, используя один из следующих цветов:
 
 - black
 - darkBlue
@@ -27,9 +27,9 @@ You can give an IFormattedText a color using one of the following Colors:
 - yellow
 - white
 
-### Style
+### Стиль
 
-You can give an IFormattedText one (or more) of the following formatting styles:
+Вы можете задать стиль IFormattedText, используя один или несколько из следующих стилей форматирования:
 
 - obfuscated
 - bold

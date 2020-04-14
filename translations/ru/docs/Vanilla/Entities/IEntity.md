@@ -5,16 +5,16 @@ Entities are everything that is freely movable in the world such as players, mon
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Может потребоваться импортировать пакет, если вы обнаруживаете какие-либо проблемы (вроде приведения типа [массива](/AdvancedFunctions/Arrays_and_Loops/)), поэтому в качестве меры предосторожности лучше добавить импорт:  
 `import crafttweaker.entity.IEntity;`
 
-## Extending ICommandSender
+## Наследование от ICommandSender
 
-IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
+IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
-## Геттеры ZenScript
+## Геттеры
 
-| Геттер                   | Метод-геттер      | Return Type (*can be null*)                                 |
+| Геттер                   | Метод-геттер      | Возвращаемый тип (*может быть `null`*)                      |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
 | air                      | getAir()          | int                                                         |
 | alive                    | isAlive()         | boolean                                                     |
@@ -81,9 +81,9 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | rotationPitch            |                   | float                                                       |
 | lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
-## ZenSetters
+## Сеттеры
 
-| SetterName          | SetterMethod        | Parameter Type                         |
+| Сеттер              | Метод-сеттер        | Тип параметра                          |
 | ------------------- | ------------------- | -------------------------------------- |
 | air                 | setAir(seconds)     | int                                    |
 | alwaysRenderNameTag |                     | boolean                                |
@@ -108,7 +108,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posY                |                     | double                                 |
 | posZ                |                     | double                                 |
 
-## More ZenMethods
+## Другие методы
 
 - boolean attackEntityFrom([IDamageSource](/Vanilla/Damage/IDamageSource/) source, float amount);
 - boolean canTrample([IWorld](/Vanilla/World/IWorld/) world, [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) block, [IBlockPos](/Vanilla/World/IBlockPos/) pos, float fall);

@@ -7,16 +7,19 @@
 Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.recipes.IFurnaceRecipe`
 
-## Методы/геттеры ZenScript
+## Методы/геттеры
 
 ### Преобразование в строку
 
-    rec.commandString;
-    rec.toCommandString();
-    
+```zenscript
+rec.commandString;
+rec.toCommandString();
+```
 
 ### Другие геттеры
 
-    rec.input;
-    rec.output;
-    rec.xp;
+```zenscript
+rec.input;
+rec.output;
+rec.xp;
+```

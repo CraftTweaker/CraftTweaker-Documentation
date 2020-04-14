@@ -1,6 +1,6 @@
 # CTGUI
 
-このコマンドを使えば、ゲーム内でGUIを用いてレシピを編集することができます。
+You can run a command and edit recipes from ingame using a GUI. It will generate a file on your local scripts folder called recipes.zs .
 
 <details><summary>背景</summary> 多くのユーザーはテキストエディタに明るくありません。 構文を強調させるテンプレートがあったとしても、彼らは満足に扱うことはできません。 GUI(Graphical User Interface)を彼らは欲しがっています。  
 For this matter, Jared, humble servant of Lord Ellpeck of House penguin, rightful heir to the Milkshake Throne, King of the Seven Kingdoms of Germany, the Rhoynar and the First Men, Mother of penguins, the modder of the great frozen plains, the unbroken and breaker of mods, has descended upon us from Maven, the great Library of Forbidden Wisdom and Blasphemy to share his great knowledge with mankind, after being urged by BBoldt, traveller of realms, slayer of the great Unknown, writer of Necrochodu. Unfortunately, we were not yet able to decipher the seemingly random jabbering that came from him, so he decided to instead go for a more simplistic means of help, by giving people who posess the power to manipulate the very laws of the universe (also called `OPs` or `Admins`) to access a magical window from inside the game they liked to play and change the fundaments of this false reality from within. </details>
@@ -18,3 +18,5 @@ idには次のものが現在用意されています。
 | ------------- | ------------ | -- |
 | craftingtable | CraftTweaker |    |
 | furnace       | CraftTweaker |    |
+
+Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.

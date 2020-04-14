@@ -16,8 +16,9 @@ IBlockState extends [IBlockAccess](IBlockAccess/). That means that all methods t
 Normally, you can derive this object from entities or other functions. If you need to create it yourself though, this is the way to go:  
 Note that this method should only be called inside functions that are meant to be run inside minecraft, not during the loading circle.
 
-    crafttweaker.world.IWorld.getFromID(int id);
-    
+```zenscript
+crafttweaker.world.IWorld.getFromID(int id);
+```
 
 ## ZenMethods without parameters and ZenGetters
 
@@ -43,42 +44,47 @@ Note that this method should only be called inside functions that are meant to b
 Use either an [IPosition3f](/Vanilla/Utils/Position3f/) or an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
 Returns an [IBiome](/Vanilla/Biomes/IBiome/) Object.
 
-    worldObj.getBiome(IPosition3f position);
-    worldObj.getBiome(IBlockPos position);
-    
+```zenscript
+worldObj.getBiome(IPosition3f position);
+worldObj.getBiome(IBlockPos position);
+```
 
 ### Get Brightness at specific Position
 
 Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an int.
 
-    worldObj.getBrightness(int x, int y, int z);
-    worldObj.getBrightness(IBlockPos position);
-    
+```zenscript
+worldObj.getBrightness(int x, int y, int z);
+worldObj.getBrightness(IBlockPos position);
+```
 
 ### Get Block at specific Position
 
 Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
 
-    worldObj.getBlock(int x, int y, int z);
-    worldObj.getBlock(IBlockPos position);
-    
+```zenscript
+worldObj.getBlock(int x, int y, int z);
+worldObj.getBlock(IBlockPos position);
+```
 
 ### Get or Set a blockState at a specific Position
 
 Use an [IBlockPos](/Vanilla/World/IBlockPos/) Object and for the setter also an [IBlockState](/Vanilla/Blocks/IBlockState/) Object. Optionally an [IData](/Vanilla/Data/IData/) object can be specified to define NBT data for the blockstate's TileEntity when it is set. Getter Returns an [IBlockState](/Vanilla/Blocks/IBlockState/), setter a bool.
 
-    worldObj.getBlockState(IBlockPos pos);
-    worldObj.setBlockState(IBlockState state, IBlockPos pos);
-    worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
-    
+```zenscript
+worldObj.getBlockState(IBlockPos pos);
+worldObj.setBlockState(IBlockState state, IBlockPos pos);
+worldObj.setBlockState(IBlockState state, IData tileEntityData, IBlockPos pos);
+```
 
 ### Spawn entity
 
 Use an [IEntity](/Vanilla/Entities/IEntity/) object.  
 Returns a bool that states if the spawn was successful.
 
-    worldObj.spawnEntity(IEntity entity);
-    
+```zenscript
+worldObj.spawnEntity(IEntity entity);
+```
 
 ### Get a raytrace result
 
@@ -88,4 +94,6 @@ Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to ge
 The first vector describes the starting point, the 2nd vector the direction and length we are searching in.  
 Only the last parameter is true by default.
 
-    worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```zenscript
+worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
+```

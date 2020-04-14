@@ -27,4 +27,6 @@ You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanill
 Uses a string (e.g. `"item_search.png"`).  
 Returns void (nothing).
 
-    tab.setBackgroundImageName(String backgroundImage);
+```zenscript
+tab.setBackgroundImageName(String backgroundImage);
+```

@@ -1,9 +1,9 @@
 # IItemUtils
 
-The ItemUtils interface provides various item utils.  
-It can be accessed using the `items` keyword.
+Интерфейс ItemUtils предоставляет различные утилиты для работы с предметами.  
+Можно получить к нему доступ с помощью `items`.
 
-## Creating Potions
+## Создание зелий
 
 The createPotions function allows you to create custom potions.  
 Returns the potion as [IItemStack](/Vanilla/Items/IItemStack/).  
@@ -23,7 +23,7 @@ If an Object[] is not of this length or not in this order, it will be ignored.
 val potion = itemUtils.createPotion([[<potion:minecraft:strength>, 1, 1]]);
 ```
 
-## Get Items by name
+## Получение предметов по имени
 
 These two functions both return an [IItemStack](/Vanilla/Items/IItemStack/)[] containing all matching items.  
 The first checks against the items' registry names, the 2nd uses the unlocalized names.
@@ -37,19 +37,19 @@ itemUtils.getItemsByRegexRegistryName(".*thermal.*"); // all thermal expansion/f
 itemUtils.getItemsByRegexUnlocalizedName(".*pink.*"); // pink things!! <3
 ```
 
-## Imitate the Item Bracket Handler
+## Имитирование обработчика скобок
 
 This method does the same as the [Item Bracket Handler](/Vanilla/Brackets/Bracket_Item/).  
 Unlike the BH though, you need to provide the meta as optional parameter.  
 If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
-    getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
-    getItem("minecraft:dye", 1);        //<minecraft:dye:1>
-    getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
+    itemUtils.getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+    itemUtils.getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+    itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
-## Create Spawn egg
+## Создание яиц призыва
 
 The createSpawnEgg function allows you to create custom mod spawn eggs.  
 The customNBT is OPTIONAL and can override the entity tag.  

@@ -1,5 +1,3 @@
-# 修改柴堆仪式（Pyre Ritual）配方
-
 ### 类
 
 ```zenscript
@@ -9,9 +7,9 @@ import mods.roots.Ritual;
 #### 方法
 
 ```zenscript
-static void modifyRitual(
-  string name,         // 你希望修改的柴堆仪式的名称。
-  IIngredient[] inputs // 由5种仪式原料构成的数列 (不能多，也不能少)。
+void modifyRitual(
+  string name,         // the name of the ritual whose ingredients you wish to modify
+  IIngredient[] inputs // a list of five ingredients (no more, no less)
 );
 ```
 

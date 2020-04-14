@@ -5,7 +5,7 @@
 
 ## Пример
 
-[ModOnly из тестового проекта CraftTweaker:](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
+[ModOnly в тестовом проекте CraftTweaker:](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ModOnlyWiki.java)
 
 ```java
 @ModOnly(value = "mcp")
@@ -21,5 +21,5 @@ public class ModOnlyWiki {
 
 ## Какие классы должны быть помечены || Дополнительная информация
 
-- You can annotate all Java Classes that also have the [`@ZenRegister` Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Technically, you can register all classes, but only there it will have an impact.
-- The Annotation requires a String value that represents the modName (`isModLoaded(annotation.getValue())` has to return true of the mod is loaded)
+- Вы можете пометить все классы Java, которые также имеют [ аннотацию `@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/). Технически, вы можете регистрировать все классы, но польза будет только в таком случае.
+- Аннотация принимает строку, которая представляет имя мода (`isModLoaded(annotation.getValue())` должно возвращать истинное значение, если мод загружен).

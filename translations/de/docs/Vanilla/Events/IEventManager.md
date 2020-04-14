@@ -17,18 +17,19 @@ You can add a function that represents the event and from there on you can decid
 The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
 If you simply want to print something where you don't need to access the event, then it's fine.
 
-    events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
-        print("event".length);
-        print(event.player.name);
-        event.player.xp += 1;
-    });
-    
-    
-    events.onPlayerLoggedIn(function(event) {
-        //event instanceof Object -> No way of accessing it, so better cast!
-        print("SOMEONE HAS LOGGED IN!!!");
-    });
-    
+```zenscript
+events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
+    print("event".length);
+    print(event.player.name);
+    event.player.xp += 1;
+});
+
+
+events.onPlayerLoggedIn(function(event) {
+    //event instanceof Object -> No way of accessing it, so better cast!
+    print("SOMEONE HAS LOGGED IN!!!");
+});
+```
 
 ## What events are available?
 
@@ -40,6 +41,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onBlockBreak                | [`crafttweaker.event.BlockBreak`](/Vanilla/Events/Events/BlockBreak/)                                |
 | onBlockHarvestDrops         | [`crafttweaker.event.BlockHarvestDrops`](/Vanilla/Events/Events/BlockHarvestDrops/)                  |
 | onCheckSpawn                | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)     |
+| onCommand                   | [`crafttweaker.event.CommandEvent`](/Vanilla/Events/Events/CommandEvent/)                            |
 | onEnderTeleport             | [`crafttweaker.event.EnderTeleportEvent`](/Vanilla/Events/Events/EnderTeleport/)                     |
 | onEntityLivingAttacked      | [`crafttweaker.event.EntityLivingAttackedEvent`](/Vanilla/Events/Events/EntityLivingAttacked/)       |
 | onEntityLivingDeath         | [`crafttweaker.event.EntityLivingDeathEvent`](/Vanilla/Events/Events/EntityLivingDeath/)             |
@@ -84,4 +86,6 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 
 ## Clear all event handlers
 
-    events.clear();
+```zenscript
+events.clear();
+```

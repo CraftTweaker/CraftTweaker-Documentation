@@ -1,6 +1,6 @@
-# NOR Operator
+# 或非运算符
 
-A **NOR** gate is an inverted **OR** gate. This is the same as using the output of the **OR** gate as the input to the **NOT** gate. This means that the **NOR** gate returns `TRUE` only when both inputs are `FALSE`.
+**NOR**门就是一个翻转的**OR**门 这与把**OR**的输出作为**NOT**的输入是一样的。 这意味着只有两个输入都为`FALSE`时**NOR**才会返回`TRUE`。
 
 | 输入1 | 输入2 | 输出 |
 | --- | --- | --:|
@@ -9,16 +9,16 @@ A **NOR** gate is an inverted **OR** gate. This is the same as using the output 
 | 1   | 0   |  0 |
 | 1   | 1   |  0 |
 
-    Empty Example:
+    空白示例：
     nor|[]~[]
     
-    Filled-In Example:
+    举例：
     nor|[reskillable:mining|5]~[reskillable:gathering|5]
     
 
-## Use-Case
+## 使用例
 
-Only allow using a wooden shovel until the player gets mining or gathering level 5:
+只有在玩家获得采矿等级或采集等级达到5级之前才允许使用木制铲子：
 
 ```zenscript
 addRequirement(<minecraft:wooden_shovel:*>, "nor|[reskillable:mining|5]~[reskillable:gathering|5]");

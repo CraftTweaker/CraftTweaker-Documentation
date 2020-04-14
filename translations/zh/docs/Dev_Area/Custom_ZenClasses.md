@@ -33,7 +33,7 @@ zenClass name {
     //Variables don't need to be initialized, but if you do, initialization is as in Java.
 
 
-    //Statics are initialized in &lt;clinit&gt;, i.e. when the class is first defined.
+    //Statics are initialized in <clinit>, i.e. when the class is first defined.
     static myStatic as string = "value";
     static otherStatic as string = "value";
 

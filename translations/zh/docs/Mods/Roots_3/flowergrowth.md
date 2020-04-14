@@ -1,5 +1,3 @@
-# Ritual of Flower Growth
-
 ### 所属类名
 
 ```zenscript
@@ -9,7 +7,7 @@ import mods.roots.FlowerGrowth;
 #### 可用方法
 
 ```zenscript
-static void removeRecipe(
+void removeRecipe(
   string name // The name of the recipe you wish to remove
 );
 ```
@@ -17,7 +15,7 @@ static void removeRecipe(
 * * *
 
 ```zenscript
-static void addRecipeBlockState(
+void addRecipeBlockState(
   string name,      // The name of the recipe that you're adding
   IBlockState state // The state of the block of the flower
 );
@@ -26,7 +24,7 @@ static void addRecipeBlockState(
 * * *
 
 ```zenscript
-static void addRecipeBlock(
+void addRecipeBlock(
   string name,  // The name of the recipe that you're adding
   IBlock block, // The block of the flower to be placed
   int meta      // The meta of the state of the flower block

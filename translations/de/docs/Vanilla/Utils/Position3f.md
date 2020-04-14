@@ -38,5 +38,7 @@ The First method allows you to create a position at the given coordinates.
 
 You can use the two ways below to cast a Position3f Object to an [IBlockPos](/Vanilla/World/IBlockPos/) Object: Remember, for casting you need to [import](/AdvancedFunctions/Import/) the type you want to cast to unless you use the full name.
 
-    posThree.asBlockPos();
-    posThree as IBlockPos;
+```zenscript
+posThree.asBlockPos();
+posThree as IBlockPos;
+```

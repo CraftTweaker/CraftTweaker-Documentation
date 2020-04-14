@@ -1,10 +1,10 @@
 # 异或运算符
 
-An **XOR** gate combines two inputs and returns `TRUE` only if one of the inputs is `TRUE` and the other is `FALSE`.
+一个**XOR**门，只在一个输入是`TRUE`且另一个是`FALSE`时输出`TRUE`
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      0 |
+| 输入1 | 输入2 | 输出 |
+| --- | --- | --:|
+| 0   | 0   |  0 |
+| 0   | 1   |  1 |
+| 1   | 0   |  1 |
+| 1   | 1   |  0 |

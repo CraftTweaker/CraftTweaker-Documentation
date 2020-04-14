@@ -28,7 +28,7 @@ mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minec
 ## Remove Recipes
 
 You can of course also remove recipes.  
-If you want to remove a two-way binding you'll need tow calls, though.
+If you want to remove a two-way binding you'll need two calls, though.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);

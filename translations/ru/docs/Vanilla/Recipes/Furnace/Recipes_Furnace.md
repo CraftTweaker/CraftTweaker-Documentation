@@ -111,7 +111,8 @@ furnace.setFuel(<minecraft:rotten_flesh>, 100);
 
 ### Getting all registered Furnace Recipes
 
-    furnace.all;
-    
+```zenscript
+furnace.all;
+```
 
 Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).

@@ -1,1 +1,4 @@
-mkdocs==0.16.3
+mkdocs==1.1
+git+https://github.com/CraftTweaker/mkdocs-use-site-url-plugin.git
+mkdocs-minify-plugin==0.2.3
+git+https://github.com/CraftTweaker/mkdocs-fast-search-updated-plugin.git
