@@ -107,7 +107,6 @@ pages:
           #Actual Events below here
         - AnimalTameEvent: 'Vanilla/Events/Events/AnimalTame.md'                      
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
-        - BlockFarmlandTrampleEvent: 'Vanilla/Events/Events/BlockFarmlandTrample.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
         - BlockPlaceEvent: 'Vanilla/Events/Events/BlockPlace.md'
         - CommandEvent: 'Vanilla/Events/Events/CommandEvent.md'
@@ -128,6 +127,7 @@ pages:
         - EntityTravelToDimensionEvent: 'Vanilla/Events/Events/EntityTravelToDimension.md'
         - ExplosionDetonateEvent: 'Vanilla/Events/Events/ExplosionDetonate.md'
         - ExplosionStartEvent: 'Vanilla/Events/Events/ExplosionStart.md'
+        - FarmlandTrampleEvent: 'Vanilla/Events/Events/FarmlandTrample.md'          
         - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
         - ItemFishedEvent: 'Vanilla/Events/Events/ItemFished.md'
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
