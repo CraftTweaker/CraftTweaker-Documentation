@@ -1,5 +1,5 @@
 # If you add a page, you must add it to the index here
-pages:
+nav:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Using this wiki: 'UsingThisWiki.md'
@@ -804,10 +804,11 @@ pages:
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
-site_url: "https://docs.blamejared.com/1.12/en/"
+site_url: "https://docs.blamejared.com/1.12/ko/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
 repo_name: 'Visit this wiki on GitHub'
+google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
 
 markdown_extensions:
   - admonition
@@ -816,17 +817,25 @@ markdown_extensions:
   - toc:
       anchorlink: True
 
-
-theme_dir: 'mkdocs_windmill'
-extra_css:
-    - css/styles.css
-extra_javascript:
-    - js/highlightjs-zenscript.js
-    - js/init-zs-highlight.js
+theme:
+  name: null
+  custom_dir: 'mkdocs_zen/'
+  include_search_page: True
+  search_index_only: True
 
 extra:
-  logo: 'assets/logo.png'
+  logo: 'assets/logo.svg'
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
-  version: 'CrT v4.1.15'
+  version: 'CrT v4.1.20'
+  patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
+  discord_link: "https://discord.blamejared.com"
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+  - use-site-url

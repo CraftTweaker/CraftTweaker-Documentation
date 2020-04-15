@@ -1,0 +1,51 @@
+<head>
+    {%- if config.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.google_analytics[0] }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ config.google_analytics[0] }}');
+    </script>
+    {%- endif %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var base_url = "{{ base_url }}";
+        var game_version = "{{ config.extra.game_version }}";
+        var language = '{{ config.extra.language }}';
+    </script>
+    <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <meta property="og:title" content="{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://docs.blamejared.com/og_image.png"/>
+    {% if page and config.site_description %}
+    <meta name="description" content="{{ config.site_description }}">
+    {% endif %}
+    {% if config.site_author %}
+    <meta name="author" content="{{ config.site_author }}">
+    {% endif %}
+    {% if page and page.canonical_url %}
+    <link rel="canonical" href="{{ page.canonical_url }}">
+    {% endif %}
+    {% if config.site_favicon %}
+    <link rel="shortcut icon" href="{{ base_url }}/{{ config.site_favicon }}">
+    {% else %}
+    <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
+    {% endif %}
+    <link rel = "stylesheet" href = "{{ base_url }}/css/tailwind.css">
+    <link rel = "stylesheet" href = "{{ base_url }}/css/github-gist.css">
+    <link rel="stylesheet" href="{{ base_url }}/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@5.1.0/dist/simplebar.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/simplebar@5.1.0/dist/simplebar.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script src="{{ base_url }}/js/highlightjs-zenscript.js"></script>
+    <script defer src="{{ base_url }}/js/search.js"></script>
+    <script src="{{ base_url }}/js/script.js"></script>
+    <script>
+        hljs.registerLanguage("zenscript", hljsZenScript);
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>

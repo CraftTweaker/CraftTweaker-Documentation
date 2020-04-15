@@ -31,7 +31,7 @@ This includes:
 ## Integers
 Integers provide some functionality
 
-`+-*/%` Basic mathematic operators (check the [variable Types](Variable_Types) page). You can also use the operatorAssign tokens  
+`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). You can also use the operatorAssign tokens  
 `0 to 10` Returns an Integer Range ranging from 0 to 10.  
 `1~10` Concatenates the Integers (returns "110").  
 
