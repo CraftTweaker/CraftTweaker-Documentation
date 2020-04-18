@@ -119,6 +119,8 @@ nav:
   - Mods:
       - JEITweaker:
           - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
+      - InitialInventory:
+          - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
 
 # Do not edit in PRs below here
 site_name: CraftTweaker Documentation
