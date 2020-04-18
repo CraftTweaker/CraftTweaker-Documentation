@@ -18,7 +18,7 @@ The things in brackets are optional, depending on what you want to achieve. Let'
 ## Static Functions
 
 Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](Cross-Script_Reference).
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
 ### Void functions
 
