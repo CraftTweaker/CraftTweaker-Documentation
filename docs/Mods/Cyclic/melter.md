@@ -22,7 +22,7 @@ Melter.removeShapedRecipe("water", 500);
 
 ```zenscript
 void addRecipe(
-  IIngredient[] output,   // the input as an itemstack
+  IIngredient[] input,   // the input as an itemstack
   string fluid, // fluid name of the output
   int fluidSize   // the number of fluidSize units to generate (1000 = 1 bucket)
 );
