@@ -14,7 +14,7 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | Метод               | Возвращаемый тип                                                       |
+| Геттер          | Метод               | Возвращаемый тип                                                       |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
 | blocksLight     | blocksLight()       | bool                                                                   |
 | blocksMovement  | blocksMovement()    | bool                                                                   |
