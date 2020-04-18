@@ -116,6 +116,11 @@ nav:
           - World:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
+  - Mods:
+      - JEITweaker:
+          - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
+      - InitialInventory:
+          - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
 
 # Do not edit in PRs below here
 site_name: CraftTweaker Documentation
@@ -147,9 +152,12 @@ extra:
   version: 'CrT v5.0.0'
   patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
   discord_link: "https://discord.blamejared.com"
+  game_version: "1.14"
+  language: "en"
 
 plugins:
-  - search
+  - search:
+        prebuild_index: "python"
   - minify:
       minify_html: true
       htmlmin_opts:
