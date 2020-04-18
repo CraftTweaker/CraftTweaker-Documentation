@@ -1,268 +1,268 @@
-# MCPlayerEntity
+# MCPlayerEntity #MC玩家实体
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
-## Methods
-### addExhaustion
+## 使用方式
+### addExhaustion #增加饥饿值
 
-increases exhaustion level by supplied amount
+通过所提供的数值增加饥饿值
 
 ```zenscript
 myMCPlayerEntity.addExhaustion(exhaustion as float);
 ```
 
-| 参数         | 类型    | 描述                      |
-| ---------- | ----- | ----------------------- |
-| exhaustion | float | No description provided |
+| 参数         | 类型          | 描述    |
+| ---------- | ----------- | ----- |
+| exhaustion | 浮点数据[float] | 未提供说明 |
 
 
-### addExperienceLevel
+### addExperienceLevel #提升经验等级
 
-Add experience levels to this player.
+提升此玩家的经验等级
 
 ```zenscript
 myMCPlayerEntity.addExperienceLevel(levels as int);
 ```
 
-| Parameter | 类型  | 说明                      |
-| --------- | --- | ----------------------- |
-| levels    | int | No description provided |
+| 参数     | 类型      | 说明    |
+| ------ | ------- | ----- |
+| levels | int #整型 | 未提供说明 |
 
 
-### addItemStackToInventory
+### addItemStackToInventory #在背包中添加物品堆叠
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数            | 返回值类型                                                             | 描述    |
+| ------------- | ----------------------------------------------------------------- | ----- |
+| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
 
 
-### addMovementStat
+### addMovementStat #添加移动统计
 
-Adds a value to a movement statistic field - like run, walk, swin or climb.
+为移动统计添加一个值——如跑步、步行、游泳或攀登。
 
 ```zenscript
 myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
 ```
 
-| Parameter    | Type   | Description             |
-| ------------ | ------ | ----------------------- |
-| p_71000_1_ | double | No description provided |
-| p_71000_3_ | double | No description provided |
-| p_71000_5_ | double | No description provided |
+| 参数           | 返回值类型       | 描述    |
+| ------------ | ----------- | ----- |
+| p_71000_1_ | double #双精度 | 未提供说明 |
+| p_71000_3_ | double #双精度 | 未提供说明 |
+| p_71000_5_ | double #双精度 | 未提供说明 |
 
 
-### addPotionEffect
+### addPotionEffect #添加药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter        | Type                                                                                          | Description             |
-| ---------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数                     | 返回值类型                                                                                         | 描述    |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ----- |
+| effectInstanceIn #效果实例 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 未提供说明 |
 
 
-### addScore
+### addScore #添加分数
 
-Add to player's score
+添加到玩家分数
 
 ```zenscript
 myMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| 参数      | 返回值类型   | 描述    |
+| ------- | ------- | ----- |
+| scoreIn | int #整型 | 未提供说明 |
 
 
-### addTag
+### addTag #添加tag
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.addTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| 参数      | 返回值类型       | 描述    |
+| ------- | ----------- | ----- |
+| tag #标签 | 字符串[string] | 未提供说明 |
 
 
-### addVelocity
+### addVelocity #增加速度
 
-Adds to the current velocity of the entity, and sets  to true.
+为实体的当前速度添加一个值,并设置为true
 
 ```zenscript
 myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 返回值类型       | 描述    |
+| -- | ----------- | ----- |
+| x  | double #双精度 | 未提供说明 |
+| y  | double #双精度 | 未提供说明 |
+| z  | double #双精度 | 未提供说明 |
 
 
-### allowLogging
+### allowLogging #允许记录日志
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.allowLogging();
 ```
 
-### attackable
+### attackable #可攻击的
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.attackable();
 ```
 
-### attemptTeleport
+### attemptTeleport #是否尝试传送
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_213373_1_ | double  | No description provided |
-| p_213373_3_ | double  | No description provided |
-| p_213373_5_ | double  | No description provided |
-| p_213373_7_ | boolean | No description provided |
+| 参数            | 返回值类型       | 描述    |
+| ------------- | ----------- | ----- |
+| p_213373_1_ | double #双精度 | 未提供说明 |
+| p_213373_3_ | double #双精度 | 未提供说明 |
+| p_213373_5_ | double #双精度 | 未提供说明 |
+| p_213373_7_ | 布尔值         | 未提供说明 |
 
 
-### baseTick
+### baseTick #基础游戏刻
 
-Gets called every tick from main Entity class
+Gets called every tick from main Entity class #从主要实体类获取所有游戏刻
 
 ```zenscript
 myMCPlayerEntity.baseTick();
 ```
 
-### canAttackPlayer
+### canAttackPlayer #可以攻击玩家
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| other     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| 参数    | 返回值类型                                                                                      | 描述    |
+| ----- | ------------------------------------------------------------------------------------------ | ----- |
+| other | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 未提供说明 |
 
 
-### canBeAttackedWithItem
+### canBeAttackedWithItem #可以被物体攻击
 
-Returns true if it's possible to attack this entity with an item.
+如果可能用物品攻击该实体,则返回true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeAttackedWithItem();
 ```
 
-### canBeCollidedWith
+### canBeCollidedWith #具有碰撞箱
 
-Returns true if other Entities should be prevented from moving through this Entity.
+如果此实体可以阻止其他实体的移动,则反为真
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeCollidedWith();
 ```
 
-### canBeHitWithPotion
+### canBeHitWithPotion #可以被药水瓶击中
 
-Returns false if the entity is an armor stand. Returns true for all other entity living bases.
+如果实体为盔甲架,则返回false 如果是其他实体生物则返回为true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeHitWithPotion();
 ```
 
-### canBePushed
+### canBePushed #可以被推动
 
-Returns true if this entity should push and be pushed by other entities when colliding.
+如果该实体在与其他实体碰撞时可以被推动,则返回值true
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBePushed();
 ```
 
-### canBeRiddenInWater
+### canBeRiddenInWater #可以潜水
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater
+### canBreatheUnderwater #可以水下呼吸
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canBreatheUnderwater();
 ```
 
-### canEat
+### canEat #可以进食
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canEat(ignoreHunger as boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| ignoreHunger | boolean | No description provided |
+| 参数           | 返回值类型 | 描述    |
+| ------------ | ----- | ----- |
+| ignoreHunger | 布尔值   | 未提供说明 |
 
 
-### canHarvestBlock
+### canHarvestBlock #可以破坏方块
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| 参数    | 返回值类型                                                                   | 描述    |
+| ----- | ----------------------------------------------------------------------- | ----- |
+| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 未提供说明 |
 
 
-### canPassengerSteer
+### canPassengerSteer #可以乘坐
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canPassengerSteer();
 ```
 
-### canPlayerEdit
+### canPlayerEdit #可以由玩家编辑
 
-Returns whether this player can modify the block at a certain location with the given stack. <p> The position being queried is {@code pos.offset(facing.getOpposite()))}. Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+返回此玩家是否可以在某个地点使用给定的堆栈修改方块。 <p> 查询位置是 {@code pos.offset(facing.getOpposite()}。 Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
 
 Returns boolean
 
