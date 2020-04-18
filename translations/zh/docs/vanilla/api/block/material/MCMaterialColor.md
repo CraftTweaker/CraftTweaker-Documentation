@@ -1,17 +1,17 @@
-# MCMaterialColor
+# MCMaterialColor #MC材料颜色
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.block.material.MCMaterialColor
 ```
 
-## Methods
-### getMapColor
+## 使用方式
+### getMapColor #获取地图颜色
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCMaterialColor.getMapColor(index as int);
