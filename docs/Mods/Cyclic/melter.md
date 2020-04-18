@@ -34,7 +34,7 @@ void addRecipe(
 
 ```zenscript
 void removeShapedRecipe(
-  string fluid // the forge name of the fluid.  
+  string fluid, // the forge name of the fluid.  
   int fluidSize
 );
 ```
