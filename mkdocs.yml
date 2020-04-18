@@ -455,6 +455,12 @@ nav:
         - Mill: 'Mods/Cuisine/Mill.md'
         - Mortar: 'Mods/Cuisine/Mortar.md'
         - Vessel: 'Mods/Cuisine/Vessel.md'
+    - Cyclic:
+        - Dehydrator: 'Mods/Cyclic/dehydrator.md'
+        - Hydrator: 'Mods/Cyclic/hydrator.md'
+        - Melter: 'Mods/Cyclic/melter.md'
+        - Packager: 'Mods/Cyclic/packager.md'
+        - Solidifier: 'Mods/Cyclic/solidifier.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
