@@ -811,8 +811,8 @@ nav:
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
-      - Death Chest Defense: 'Mods/VanillaDeathChest/Death_Chest_Defense.md'
-      - Death Chest Spawning: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
+      - Защита сундука смерти: 'Mods/VanillaDeathChest/Death_Chest_Defense.md'
+      - Появление сундука смерти: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
       - VanillaDeathChest: 'Mods/VanillaDeathChest/VanillaDeathChest.md'
   - Как внести свой вклад:
     - Как создать ответвление проекта: 'Contribute/SetupGithub.md'
@@ -848,10 +848,10 @@ nav:
 # Не меняйте в PR'ах то, что ниже
 site_name: Документация Crafttweaker
 site_author: Команда CraftTweaker и участников репозитория CrT Wiki на GitHub
-site_url: "https://docs.blamejared.com/1.12/en/"
+site_url: "https://docs.blamejared.com/1.12/ru/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
-repo_name: 'Visit this wiki on GitHub'
+repo_name: 'Посетите эту вики-страницу на GitHub'
 google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
 
 markdown_extensions:
@@ -861,7 +861,7 @@ markdown_extensions:
   - toc:
       anchorlink: True
 
-theme:
+тема:
   name: null
   custom_dir: 'mkdocs_zen/'
   include_search_page: True
@@ -876,10 +876,10 @@ extra:
   patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
   discord_link: "https://discord.blamejared.com"
   game_version: "1.12"
-  language: "en"
+  language: "ru"
 
-plugins:
-  - search:
+плагины:
+  - поиск:
       prebuild_index: "python"
   - minify:
       minify_html: true
