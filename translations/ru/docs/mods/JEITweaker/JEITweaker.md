@@ -1,32 +1,32 @@
 # JEITweaker
 
-## Description
+## Описание
 
-This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
+Этот мод добавляет поддержку CraftTweaker в JEI. CraftTweaker изначально поддерживал JEI, но в связи с перезаписью версии 1.14, поддержка JEI перемещена в собственный мод.
 
 
 ## Package
 `mods.jei.JEI`
 
-## Item Hiding
+## Скрытие предметов
 
-This will hide the given item in JEI. The example given will hide the dirt block in the JEI menu.
+Это скроет данный предмет в JEI. В данном примере будет скрыт блок грязи в меню JEI.
 
 ```zenscript
 //mods.jei.JEI.hideItem(IItemStack stack);
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## Category Hiding
+## Скрытие категории
 
-This will hide the given category in JEI. The example given will hide the furnace category when looking up recipes in JEI.
+Это скроет данную категорию в JEI. Данный пример будет скрывать категорию печей при поиске рецептов в JEI.
 
 ```zenscript
 //mods.jei.JEI.hideCategory(String category);
 mods.jei.JEI.hideCategory("minecraft:furnace");
 ```
 
-The default categories are:
+Категории по умолчанию:
 ```zenscript
 "minecraft:crafting"
 "minecraft:furnace"
@@ -39,19 +39,19 @@ The default categories are:
 "jei:information"
 ```
 
-Mods can add more categories though!
+Моды могут добавлять больше категорий!
 
-## Add Info
+## Добавить информацию
 
-This will add information to the Item that will be shown when looking at usages in JEI!.
+Это добавит информацию к предмету, которая будет показана при использовании просмотра в JEI!.
 
-This exact example will add 3 lines of information to the Diamond item.
+Этот точный пример добавит 3 строки информации к предмету «Алмаз».
 
 ```zenscript
 //mods.jei.JEI.addInfo(IItemStack stack, String[] information);
-mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
+mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["Это первая строка!", "Это вторая!", "третья"]);
 ```
 
-The code above will produce: ![Commit Box Filled](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+Вышеприведенный код будет производить: ![Commit Box Filled](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
