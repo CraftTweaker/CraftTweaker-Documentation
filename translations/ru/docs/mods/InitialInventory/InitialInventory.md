@@ -1,52 +1,52 @@
 # InitialInventory
 
-## Description
+## Описание
 
-This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
+Этот мод добавляет поддержку для игрока, которому дают предмет когда он присоединяется к миру, и никогда больше, аналогично тому, как некоторые моды дают игрокам книги, когда они впервые присоединяются к миру.
 
 ## Package
 `mods.initialinventory.InvHandler`
 
-## Adding starting items
+## Добавление стартовых предметов
 
-This will add an item to the players inventory when they join the world.
+Это добавит предмет в инвентарь игроков, когда они присоединятся к миру.
 
-The parameters are:
+Параметры таковы:
 
 
 Param: `key`
 
 Type: `String`
 
-Description:
+Описание:
 
-Used to determine if an item should be given. A key can be any string, the point of it is to determine if a player has been given a set of items before.
+Используется для определения того, должен ли предмет быть дан. key может быть любым string, смысл его заключается в том, чтобы определить, был ли игроку дан набор предметов ранее.
 
-It is useful for modpacks which later add more starting items, by using a different key, players who have already started playing the pack, can still receive those items. An example would be:
+Это полезно для модпаков, которые позже добавляют больше стартовых предметов, используя другой ключ, игроки которые уже начали играть c модпаком, всё ещё могут получить эти предметы. В качестве примера можно привести:
 
-Add a diamond as a starting item with key "1", join the world, the player will get the diamond.
+Добавьте алмаз в качестве стартового предмета с ключом "1", Присоединившись к миру, игрок получит алмаз.
 
-Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.
+Добавьте яблоко в качестве стартового предмета с ключом "2", Присоединившись к миру, игрок получит яблоко, но не алмаз снова.
 
-Make a new world, the player will receive both an apple and a diamond.
+Создав новый мир, игрок получит как яблоко, так и алмаз.
 
 param: `item`
 
 Type `IItemStack`
 
-Description:
+Описание:
 
-The item to give to the player when they join.
+Предмет, который нужно дать игроку, когда он присоединится.
 
 Param: `index`
 
 Type: `int`
 
-Description:
+Описание:
 
-Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
+Необязательное целое число, определяющее где будет дан предмет, может быть использовано для размещения предмета в слоте инвентаря, например в слоте брони.
 
-If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
+Если не указано, то по умолчанию -1, что означает, что он поместит его в первый доступный слот, или объединит с другими предметами, которые возможно, уже находятся в инвентаре.
 
 
 ## Пример
