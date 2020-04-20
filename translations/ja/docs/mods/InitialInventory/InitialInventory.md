@@ -22,13 +22,13 @@ Description:
 
 アイテムを与えるかどうかを決定する際に使用します。 キー(key)は任意の文字列に設定することができ、その取っ掛かりというのは、以前にそのプレイヤーにアイテムセットが与えられたかどうかの判定をすることです。
 
-It is useful for modpacks which later add more starting items, by using a different key, players who have already started playing the pack, can still receive those items. An example would be:
+これは、別のキーを使用することで、開始時のアイテムを、後からさらに追加するようなmodpackにおいて役に立ちます。すでにpackをプレイし始めているプレイヤーも、引き続きそれらのアイテムを受け取ることが可能になります。 例は、以下のようなものになります:
 
-Add a diamond as a starting item with key "1", join the world, the player will get the diamond.
+開始時のアイテム, key"1"としてダイヤモンドを追加します。ワールドに参加したプレイヤーは、ダイヤモンドを受け取ることができます。
 
-Add an apple as a starting item with key "2", join the world, the player will get the apple, but not the diamond again.
+開始時のアイテム, key"2"としてリンゴを追加します。ワールドに参加すると、プレイヤーはリンゴを受け取ることができますが、ダイヤモンドをもう一度受け取ることはありません。
 
-Make a new world, the player will receive both an apple and a diamond.
+新たにワールドを作成した場合、プレイヤーはリンゴとダイヤモンドの両方を受け取ることができます。
 
 param: `item`
 
@@ -36,7 +36,7 @@ Type `IItemStack`
 
 Description:
 
-The item to give to the player when they join.
+プレイヤーが参加した際に、プレイヤーに与えられるアイテムです。
 
 Param: `index`
 
@@ -44,9 +44,9 @@ Type: `int`
 
 Description:
 
-Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
+オプションであるこの整数は、アイテムが与えられる場所を定義するものです。与えるアイテムを防具スロットのようなインベントリスロットに配置する場合などに使用できます。
 
-If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
+省略した場合、デフォルトでは-1に設定されます。つまり、使用可能な最初のスロットに配置されるか、すでにインベントリにある別の同じアイテムと一緒にまとめられます。
 
 
 ## Example
