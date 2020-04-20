@@ -24,9 +24,9 @@ val intArray = [1,2,3] as int[];
 
 ## 配列へのキャスト
 
-これまでの配列の全てに、`as`という演算子がくっついていることに気が付いたしょう。なぜでしょうか? それは、Zenscriptは配列の要素の型を検出できないことがままあるからです。 This can be the cause of strange conversion error logs!  
-Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
+これまでの配列の全てに、`as`という演算子がくっついていることに気が付いたしょう。なぜでしょうか? それは、Zenscriptは配列の要素の型を検出できないことがままあるからです。 これが変なエラーログの原因になっていることがあります。  
+お手数ですが、正しい型の配列にキャストしてあげてください。  
+また、非プリミティブ型(文字列や整数といったもの以外)の配列にキャストする場合、スクリプトの先頭にてその型に対応するパッケージもスクリプトの**先頭**にて[インポート](/AdvancedFunctions/Import/)してあげてください。
 
 ```zenscript
 import crafttweaker.item.IItemStack;
