@@ -1,6 +1,6 @@
 # 連想配列
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)と似ています。 [配列](/AdvancedFunctions/Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
 
 ## 連想配列の作り方
 
@@ -30,9 +30,9 @@ val myAssocArray = {
 
 ## 連想配列の要素へのアクセス
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)の要素へアクセスするのと同じ方法で、連想配列の要素へとアクセスできます。  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;
