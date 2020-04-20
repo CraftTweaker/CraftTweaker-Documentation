@@ -17,7 +17,7 @@ IItemStack implements the following interfaces. That means any method available 
 ## Methods
 ### clearCustomName
 
-Clears any custom name set for this ItemStack
+ItemStackに設定されているカスタムネームを取り除きます。
 
 ```zenscript
 <item:minecraft:dirt>.clearCustomName();
@@ -57,7 +57,7 @@ Returns boolean
 
 ### setDisplayName
 
-Sets the display name of the ItemStack
+ItemStackに表示される名前を設定します。
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -66,14 +66,14 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| name      | String | New name of the stack. |
+| Parameter | Type   | Description |
+| --------- | ------ | ----------- |
+| name      | String | stackの新しい名前 |
 
 
 ### withDamage
 
-Sets the damage of the ItemStack
+ItemStackのダメージ(耐久値)を設定します。
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -82,14 +82,14 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withDamage(10);
 ```
 
-| Parameter | Type | Description          |
-| --------- | ---- | -------------------- |
-| damage    | int  | the new damage value |
+| Parameter | Type | Description |
+| --------- | ---- | ----------- |
+| damage    | int  | 新しいダメージの値   |
 
 
 ### withTag
 
-Sets the tag for the ItemStack.
+ItemStackのタグを設定します。
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -98,13 +98,13 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type                                                   | Description     |
-| --------- | ------------------------------------------------------ | --------------- |
-| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
+| Parameter | Type                                                   | Description |
+| --------- | ------------------------------------------------------ | ----------- |
+| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | タグを設定       |
 
 
 
-## Properties
+## プロパティ
 
 | Name           | Type                                                                | Has Getter | Has Setter |
 | -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
@@ -136,7 +136,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 ## Operators
 ### MUL
 
-Sets the amount of the ItemStack
+ItemStackの数量(スタック数)を設定します。
 
 ```zenscript
 <item:minecraft:dirt> * amount as int
