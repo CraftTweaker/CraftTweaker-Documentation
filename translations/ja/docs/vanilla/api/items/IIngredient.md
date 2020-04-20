@@ -11,7 +11,7 @@ crafttweaker.api.item.IIngredient
 ```
 
 ## Implemented Interfaces
-IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
+IIngredientのimplementsでは、以下のようなインターフェースで実装されています。 That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
