@@ -11,13 +11,13 @@ crafttweaker.api.item.IIngredient
 ```
 
 ## Implemented Interfaces
-IIngredientのimplementsでは、以下のようなインターフェースで実装されています。 That means any method available to them can also be used on this class.
+IIngredientのimplementsでは、以下のようなインターフェースで実装されています。 つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methods
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+この材料スタックでクラフトが行われると、グリッド上になにが残るか？ ただし、スタックが一致するかどうかのチェックは行いません！ Craft Tweakerでの使用例,
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
