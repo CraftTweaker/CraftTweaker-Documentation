@@ -2,14 +2,14 @@
 
 ## Description
 
-This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
+このmodでは、初めてワールドに参加したプレイヤーにアイテムを提供できる機能を追加しています。他の一部のmodにおいて、プレイーが初めてワールドに参加したときに本などを与えるのと同じようなものです。
 
 ## Package
 `mods.initialinventory.InvHandler`
 
 ## Adding starting items
 
-This will add an item to the players inventory when they join the world.
+これにより、プレイヤーがワールドに参加した際に、プレイヤーのインベントリにアイテムが追加されます。
 
 The parameters are:
 
@@ -20,7 +20,7 @@ Type: `String`
 
 Description:
 
-Used to determine if an item should be given. A key can be any string, the point of it is to determine if a player has been given a set of items before.
+アイテムを与えるかどうかを決定する際に使用します。 キー(key)は任意の文字列に設定することができ、その取っ掛かりというのは、以前にそのプレイヤーにアイテムセットが与えられたかどうかの判定をすることです。
 
 It is useful for modpacks which later add more starting items, by using a different key, players who have already started playing the pack, can still receive those items. An example would be:
 
