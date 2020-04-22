@@ -1,0 +1,36 @@
+{% block article_nav %}
+{%- if page and (page.next_page or page.previous_page) %}
+
+<div class = "flex flex-row {% if page.previous_page and page.next_page %}justify-between{% endif %}{% if page.previous_page and not page.next_page %}justify-start{% endif %}{% if not page.previous_page and page.next_page %}justify-end{% endif %}" role = "navigation" aria-label = "navigation">
+    {%- if page.previous_page %}
+    <div class = "max-w-48per">
+        <a href = "{{ page.previous_page.url|url }}" class = "flex text-gray-700">
+            <div class = "flex flex-row inline-block pr-1 border border-gray-500 bg-white hover:bg-gray-400 w-full">
+                <img class = "flex-none my-auto inline-block w-4 h-4" src = "https://blamejared.com/svg/cheveron-left.svg"/>
+
+                <span class = "flex-shrink truncate">
+                     {{ page.previous_page.title }}
+                </span>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+
+    {% if page.next_page %}
+    <div class = "max-w-48per">
+        <a href = "{{ page.next_page.url|url }}" class = "flex text-gray-700">
+            <div class = "flex flex-row inline-block pl-1 border border-gray-500 bg-white hover:bg-gray-400 w-full">
+                <span class = "flex-shrink truncate">
+                    {{ page.next_page.title }}
+                </span>
+
+                <img class = "flex-none my-auto inline-block w-4 h-4" src = "https://blamejared.com/svg/cheveron-right.svg"/>
+            </div>
+
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+{%- endif %}
+{% endblock %}

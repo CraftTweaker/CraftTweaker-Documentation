@@ -37,7 +37,9 @@
                     </div>
                 </div>
                 <div class = "w-full md:w-1/2 mx-auto">
+                    {% include "article-nav.html" %}
                     {{ page.content }}
+                    {% include "article-nav.html" %}
                 </div>
                 <div class = "w-full md:w-1/4 flex flex-col justify-between">
                     <div class = "w-full md:w-11/12">
