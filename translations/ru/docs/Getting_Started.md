@@ -41,20 +41,20 @@ print("Привет, мир!");
 
 Используя приведенный выше шаблон, можно сделать пример:
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] Привет мир!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+Синтаксис используется в целях отладки, и единственное исключение, когда данный синтаксис не используется - для командных дампов, в этом случае это делается для того, чтобы скопировать дампы было легче.
 
 ### Комментарии
 
-Comments can be used to make your script files more readable and easier to understand!
+Комментарии облегчают понимание скриптов и делают их более читабельными!
 
-ZenScript supports 3 types of comments, being:
+ZenScript поддерживает 3 типа комментариев:
 
-Single line: `// I'm a single line comment!`
+Однострочный: `// Я - однострочный комментарий!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Альтернативный однострочный: `# Я тоже однострочный комментарий!`
 
 Многострочный:
 
