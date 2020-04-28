@@ -28,33 +28,33 @@ print("Привет, мир!");
 
 Теперь загрузите Minecraft и обратите внимание на файл `crafttweaker.log`.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+Файл `crafttweaker.log` находится в `<minecraftdir>` и может быть открыт любым редактором текста.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Для редактирования файлов скриптов рекомендуется использовать Notepad++ или Sublime text, однако, подходит почти любая программа.
 
 ### Файл crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Файл `crafttweaker.log` использует специальный синтекс для своего вывода:
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
 
-Using the example above, the output would be:
+Пример использования:
 
     [PREINITIALIZATION][CLIENT][INFO] Hello world!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+Этот синтакс используется для дебага за одним исключением: дампы комманд. В этом случае дампы команд выводятся просто как сообщения для простоты копирования.
 
 ### Комментарии
 
-Comments can be used to make your script files more readable and easier to understand!
+Комментарии помогут повысить читаемость Ваших скриптов и их простоту понимания!
 
-ZenScript supports 3 types of comments, being:
+ZenScript использует 3 типа комментариев:
 
-Single line: `// I'm a single line comment!`
+Однострочные: `// Я-однострочный комментарий!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Другой вариант: `# Я тоже однострочный комментарий!`
 
 Многострочный:
 

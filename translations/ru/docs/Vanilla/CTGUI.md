@@ -19,4 +19,4 @@ You can run a command and edit recipes from ingame using a GUI. It will generate
 | craftingtable | CraftTweaker |            |
 | furnace       | CraftTweaker |            |
 
-Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.
+Заметка: эта команда работает только в одиночной игре. На сервере Вам напишет, что данной команды не существует. При необходимости добавьте ее вручную.

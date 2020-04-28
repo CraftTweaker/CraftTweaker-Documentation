@@ -1,7 +1,7 @@
 # Global Functions
 
-Global functions are functions that can be called without being [imported](/AdvancedFunctions/Import/).  
-Here's the list:
+Глобальные функции-это функции, которые можно вызвать без [импортирования](/AdvancedFunctions/Import/).  
+Ниже приведен список таких функций:
 
 ## print
 
@@ -21,12 +21,12 @@ print("Привет, мир!");
 totalActions();
 ```
 
-Returns an int that shows how many global functions are registered.
+Возвращает int(целое число), отображающее кол-во зарегистрированных глобальных функций.
 
 ## enableDebug
 
-Enables Debug mode.  
-Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocessor/) is preferred though.
+Включает режим дебага.  
+Впрочем, рекомендуется использовать [препроцессор дебага](/AdvancedFunctions/Preprocessors/DebugPreprocessor/).
 
 ```zenscript
 //enableDebug();
@@ -37,7 +37,7 @@ enableDebug();
 
 ## isNull
 
-Checks if a given object is null.  
+Проверяет, равен ли объект null.  
 Doesn't work on primitives!
 
 ```zenscript
@@ -45,7 +45,7 @@ Doesn't work on primitives!
 isNull(<minecraft:dirt>);
 ```
 
-Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+Возвращает bool(true/false) Заметка: Если для Вас эта функция не сработала, попробуйте преобразовать объект в bool `<minecraft:dirt> as bool`
 
 ## max
 
@@ -72,22 +72,22 @@ min(10, 11);
 pow(2.0, 4.0);
 ```
 
-Возвращает число с двойной точностью.
+Возвращает первое число, возведенное в степень второго числа
 
 ## Глобальные поля
 
 | Поле       | Описание                                                                                       |
 | ---------- | ---------------------------------------------------------------------------------------------- |
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |
+| brewing    | Дает доступ к [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
+| client     | Дает доступ к [client Methods](/Vanilla/Game/IClient/)                                              |
+| events     | Дает доступ к [Event Handler](/Vanilla/Events/IEventManager/)                                   |
+| format     | Дает доступ к [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
+| furnace    | Дает доступ к [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
+| game       | Дает доступ к [Game functions](/Vanilla/Game/IGame/)                                                |
+| itemUtils  | Дает доступ к [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
+| loadedMods | Дает доступ к [loaded Mods list](/Vanilla/Game/Mods/)                                           |
+| logger     | Дает доступ к [logger](/Vanilla/Utils/Logger/)                                                  |
+| oreDict    | Дает доступ к [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
+| recipes    | Дает доступ к [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
+| server     | Дает доступ к [server Methods](/Vanilla/Game/IServer/)                                              |
+| vanilla    | Дает доступ к ванильным функциям (на данный момент только [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |

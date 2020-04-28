@@ -1,127 +1,127 @@
 # Commands
 
-CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
+CraftTweaker добавляет команды для помощи в написании скриптов, они созданы для сокращения времени разработки.
 
-The prefix for commands are: `/crafttweaker` or `/ct`
+Префикс для всех комманд: `/crafttweaker` или `/ct`
 
-You can also use one of these aliases: `/minetweaker` or `/mt`
+Также Вы можете использовать эти алиасы: `/minetweaker` или `/mt`
 
-All the commands can be found ingame by doing:
+Этот список можно отобразить в игре, выполнив:
 
 `/crafttweaker help`
 
-or
+или
 
 `/ct help`
 
-# List of commands
+# Список комманд
 
-## Biomes
+## Биомы
 
-Usage:
+Использование:
 
 `/crafttweaker biomes`
 
 `/ct biomes`
 
-Description:
+Описание:
 
-Lists all of the biomes that are in the game.
+Выводит список всех существующих в игре биомов.
 
 ## BiomeTypes
 
-Usage:
+Использование:
 
 `/crafttweaker biomeTypes`
 
 `/ct biomeTypes`
 
-Description:
+Описание:
 
-Lists all of the biomeTypes that are in the game.
+Перечисляет все виды биомов(biomeTypes) в игре.
 
-## BlockInfo
+## Читатель блоков
 
-Usage:
+Использование:
 
 `/crafttweaker blockinfo`
 
 `/ct blockinfo`
 
-Description:
+Описание:
 
-Activates or deactivates the block reader. In block info mode, right-clicking a block will tell you it's name, metadata and Tile Entity data if applicable.
+Включает/выключает читатель блоков. В этом режиме ПКМ по блоку отобразит Вам его имя, метаданные и(при возможности) информацию о нем как о TileEntity.
 
-## Blocks
+## Блоки
 
-Usage:
+Использование:
 
 `/crafttweaker blocks`
 
 `/ct blocks`
 
-Description:
+Описание:
 
-Outputs a list of all the blocks in the game to the crafttweaker.log file.
+Записывает лист всех блоков в файл crafttweaker.log.
 
-## Bugs
+## Баги
 
-Usage:
+Использование:
 
 `/crafttweaker bugs`
 
 `/ct bugs`
 
-Description:
+Описание:
 
-Opens your browser with the GitHub bug tracker.
+Открывает баг-трекер в Вашем браузере.
 
-## Conflict
+## Конфликты
 
-Usage:
+Использование:
 
 `/crafttweaker conflict`
 
 `/ct conflict`
 
-Description:
+Описание:
 
-Outputs a list of all conflicting crafting table recipes to the crafttweaker.log file.  
-Note that this only works on a CLIENT with JEI installed!
+Выводит список всех конфликтующих рецептов для верстака в файл crafttweaker.log.  
+Заметьте, эта функция работает исключительно для КЛИЕНТА с модом JEI!
 
-## Discord
+## Дискорд
 
-Usage:
+Использование:
 
 `/crafttweaker discord`
 
 `/ct discord`
 
-Description:
+Описание:
 
-Opens your browser with a link to [the Discord server](https://www.discord.blamejared.com).
+Открывает браузер со ссылкой на [сервер Discord](https://www.discord.blamejared.com).
 
-## Docs
+## Документация
 
-Usage:
+Использование:
 
 `/crafttweaker docs`
 
 `/ct docs`
 
-Description:
+Описание:
 
-Opens your browser to this docs page (same as `/ct wiki`).
+Открывает этот сайт в вашем браузере (идентично `/ct wiki`).
 
 ## DumpZs
 
-Usage:
+Использование:
 
 `/crafttweaker dumpzs`
 
 `/ct dumpzs`
 
-Description:
+Описание:
 
 Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
 You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
@@ -130,194 +130,194 @@ By default `log`, `html` and `json` are registered as targets.
 This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
 Note that not all of these can be used from within the scripts!
 
-## Entities
+## Сущности
 
-Usage:
+Использование:
 
 `/crafttweaker entities`
 
 `/ct entities`
 
-Description:
+Описание:
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+Записывает список всех существующих сущностей в файл crafttweaker.log.
 
-## Give Item
+## Выдать предмет
 
-Usage:
+Использование:
 
 `/crafttweaker give <minecraft:bedrock>`
 
 `/ct give <minecraft:bedrock>`
 
-Description:
+Описание:
 
-Gives the player the item using CrT's Bracket handler syntax.  
-You can also apply tags by appending a `.withTag()` call.  
-Note that this is a pretty simple parser and may not work for every case!
+Выдает предмет игроку с помощью CrT's Bracket handler синтакса.  
+С помощью `.withTag()` можно выдать предмет с тегом.  
+Заметьте, что этот парсер довольно прост и может помочь не во всех случаях!
 
-## Hand
+## Рука
 
-Usage:
+Использование:
 
 `/crafttweaker hand`
 
 `/ct hand`
 
-Description:
+Описание:
 
-Prints the name of the item in your hand to the chat.
+Выводит имя предмета, который Вы держите, в чат.
 
-Also copies the name to clipboard and prints oredict entries.
+Также копирует его в буфер обмена и учитывает вхождения в словарь руд.
 
-## Inventory
+## Инвентарь
 
-Usage:
+Использование:
 
 `/crafttweaker inventory`
 
 `/ct inventory`
 
-Description:
+Описание:
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+Выводит список предметов в Вашем инвентаре в файл crafttweaker.log.
 
 ## JeiCategories
 
-Usage:
+Использование:
 
 `/crafttweaker jeiCategories`
 
 `/ct jeiCategories`
 
-Description:
+Описание:
 
-Outputs a list of all registered jei categories to the crafttweaker.log file.  
-Requires JEI to be installed (surprise)!
+Выводит список категорий JEI в файл crafttweaker.log.  
+Мод JEI для этого должен быть установлен(неожиданно)!
 
 ## Json
 
-Usage:
+Использование:
 
 `/crafttweaker json` `/crafttweaker json escaped`
 
 `/ct json` `/ct json escaped`
 
-Description:
+Описание:
 
-Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting CraftTweaker uses.  
-You can click it to be copied to your clipboard.  
-You can also privide the `escaped` argumetn to automatically escape the resulting string.
+Выводит в чат nbt предмета в руке как JSON.  
+Этот формат отличается от IData форматирования, которое использует CraftTweaker.  
+Нажмите для него, чтобы скопировать его в буфер обмена.  
+You can also provide the `escaped` argument to automatically escape the resulting string.
 
-## Liquids
+## Жидкости
 
-Usage:
+Использование:
 
 `/crafttweaker liquids`
 
 `/ct liquids`
 
-Description:
+Описание:
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+Записывает список всех жидкостей в файл crafttweaker.log.
 
-## Log
+## Логи
 
-Usage:
+Использование:
 
 `/crafttweaker log`
 
 `/ct log`
 
-Description:
+Описание:
 
-Sends a clickable link to open the crafttweaker.log.
+Отправляет ссылку на файл crafttweaker.log.
 
-## Mods
+## Моды
 
-Usage:
+Использование:
 
 `/crafttweaker mods`
 
 `/ct mods`
 
-Description:
+Описание:
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+Выводит список всех модов с версиями в файл crafttweaker.log и выводит его в чат.
 
-## Names
+## Имена
 
-Usage:
+Использование:
 
-`/crafttweaker names [category]`
+`/crafttweaker names [категория]`
 
-`/ct names [category]`
+`/ct names [категория]`
 
-Description:
+Описание:
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+Записывает имена всех предметов в игре в файл crafttweaker.log.  
+Аргумент `категория` опицонален и дополнит список данной информацией:
 
-* burntime
-* creativetabs
-* damageable
+* burntime(время горения)
+* creativetabs(вкладки в креативе)
+* damageable(может ли ломаться)
 * display
-* enchantability
-* foodvalue
-* maxdamage
-* maxstack
+* enchantability(может ли быть зачаровано)
+* foodvalue(сколько восстанавливает еды)
+* maxdamage(прочность)
+* maxstack(сколько предметов в стаке)
 * maxuse
-* modid
-* rarity
-* repairable
-* repaircost
-* saturationvalue
+* modid(id мода)
+* rarity(редкость)
+* repairable(можно ли починить)
+* repaircost(стоимость починки)
+* saturationvalue(сколько восстанавливает сытости)
 * unloc
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+Этот список можно также отобразить с помощью автозаполнения клавишей TAB.
 
 ## Nbt
 
-Usage:
+Использование:
 
 `/crafttweaker nbt`
 
 `/ct nbt`
 
-Description:
+Описание:
 
-Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
+Записывает nbt блока, на который Вы смотрите или предмета, который Вы держите, в файл crafttweaker.log.
 
-## OreDict
+## Словарь руд
 
-Usage:
+Использование:
 
 `/crafttweaker oredict <name>`
 
 `/ct oredict <name>`
 
-Description:
+Описание:
 
-Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
+Записывает все существующие вхождения в словарь руд в файл crafttweaker.log.
 
-If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
+Если в команду вставлено имя, все вхождения этого имени в словарь руд будут записаны в файл crafttweaker.log.
 
-## Potions
+## Зелья
 
-Usage:
+Использование:
 
 `/crafttweaker potions`
 
 `/ct potions`
 
-Description:
+Описание:
 
-Outputs a list of all the potions in the game to the crafttweaker.log file.
+Записывает список всех зелий в файл crafttweaker.log.
 
 ## RecipeNames
 
-Usage:
+Использование:
 
 `/crafttweaker recipeNames`  
 `/crafttweaker recipeNames [modid]`
@@ -325,104 +325,104 @@ Usage:
 `/ct recipeNames`  
 `/ct recipeNames [modid]`
 
-Description:
+Описание:
 
-Outputs a list of all recipe names in the game to the crafttweaker.log file.  
-A modid can be provided to filter results.
+Записывает список всех имен рецептов в файл crafttweaker.log.  
+Id мода можно указать для фильтрации результатов.
 
-## Recipes
+## Рецепты
 
-Usage:
+Использование:
 
 `/crafttweaker recipes`
 
 `/ct recipes`
 
-Description:
+Описание:
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+Записывает список всех рецептов в игре в файл crafttweaker.log.
 
-## Recipes (Hand)
+## Рецепты (Рука)
 
-Usage:
+Использование:
 
 `/crafttweaker recipes hand`
 
 `/ct recipes hand`
 
-Description:
+Описание:
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+Идентично `/ct recipes`, но записывает в файл crafttweaker.log только рецепты, использующие этот предмет.
 
-## Recipes (Furnace)
+## Рецепты (Печь)
 
-Usage:
+Использование:
 
 `/crafttweaker recipes furnace`
 
 `/ct recipes furnace`
 
-Description:
+Описание:
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+Записывает список рецептов для печи в файл crafttweaker.log.
 
-## Scripts
+## Скрипты
 
-Usage:
+Использование:
 
 `/crafttweaker scripts`
 
 `/ct scripts`
 
-Description:
+Описание:
 
-Sends a clickable link to open the scripts directory.  
+Отправляет ссылку на папку со скриптами.  
 Can also be executed from a command line which instead prints the absolute path to the directory to the log.
 
 ## Seeds
 
-Usage:
+Использование:
 
 `/crafttweaker seeds`
 
 `/ct seeds`
 
-Description:
+Описание:
 
-Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+Записывает список всех семян в файл crafttweaker.log.
 
-## Syntax
+## Синтакс
 
-Usage:
+Использование:
 
 `/crafttweaker syntax`
 
 `/ct syntax`
 
-Description:
+Описание:
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+Выводит все синтаксические ошибки в Ваших скриптах. Заметьте, что для вступления правок в силу необходимо перезагрузить игру.
 
-## Wiki
+## Вики
 
-Usage:
+Использование:
 
 `/crafttweaker wiki`
 
 `/ct wiki`
 
-Description:
+Описание:
 
-Opens your browser to this wiki page (same as `/ct docs`).
+Открывает этот сайт в Вашем браузере (аналогично `/ct docs`).
 
 ## ZsLint
 
-Usage:
+Использование:
 
 `/crafttweaker zslint`
 
 `/ct zslint`
 
-Description:
+Описание:
 
 Starts the zslint socket.
