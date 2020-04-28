@@ -39,7 +39,7 @@ print("Привет, мир!");
     [СТАДИЯЗАГРУЗКИ][СТОРОНАВЫПОЛНЕНИЯ][ТИП] <message>
     
 
-Using the example above, the output would be:
+Используя приведенный выше шаблон, можно сделать пример:
 
     [PREINITIALIZATION][CLIENT][INFO] Hello world!
     
