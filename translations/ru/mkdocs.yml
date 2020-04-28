@@ -861,7 +861,7 @@ markdown_extensions:
   - toc:
       anchorlink: True
 
-тема:
+theme:
   name: null
   custom_dir: 'mkdocs_zen/'
   include_search_page: True
@@ -878,8 +878,8 @@ extra:
   game_version: "1.12"
   language: "ru"
 
-плагины:
-  - поиск:
+plugins:
+  - search:
       prebuild_index: "python"
   - minify:
       minify_html: true
