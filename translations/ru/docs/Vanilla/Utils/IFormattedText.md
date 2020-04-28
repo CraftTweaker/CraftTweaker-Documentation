@@ -2,12 +2,11 @@
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.formatting.IFormattedText;`
+Возможно, Вам понадобится импортировать пакет, если у Вас возникнут неполадки(к примеру, вызов ), поэтому рекомендуется перестраховаться и добавить пакет.</p> 
 
-## Creating an IFormattedText Object
+## Создание объекта IFormattedText
 
-You can always defer an IFormatted Text from a String (the conversion is automatic).
+Вы всегда можете отложить перевод текста из строки (преобразование проходит автоматически).
 
 ## Using an IFormattedText Object
 
