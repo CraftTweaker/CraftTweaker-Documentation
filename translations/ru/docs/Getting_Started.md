@@ -28,15 +28,15 @@ print("Привет, мир!");
 
 Теперь загрузите Minecraft и обратите внимание на файл `crafttweaker.log`.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+Файл `crafttweaker.log` находится в `<minecraftdir>` и может быть прочитан любой программой, которая может читать текстовые файлы.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Для редактирования файлов скриптов рекомендуется использовать Notepad++ или Sublime Text, впрочем, подойдет любой текстовый редактор.
 
 ### Файл crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Файл `crafttweaker.log` использует специальный синтаксис в выходном файле, приведенный ниже:
 
-    [LOADERSTAGE][SIDE][TYPE] <message>
+    [СТАДИЯЗАГРУЗКИ][СТОРОНАВЫПОЛНЕНИЯ][ТИП] <message>
     
 
 Using the example above, the output would be:
