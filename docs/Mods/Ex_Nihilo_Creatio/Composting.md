@@ -1,8 +1,9 @@
-# Compost
+# Composting
 
 ## Package
-
-`mods.exnihilocreatio.Compost`
+```zenscript
+mods.exnihilocreatio.Compost
+```
 
 ## Methods
 
@@ -14,10 +15,11 @@
 ## Addition
 
 Does not take arrays in for IIngredient.
-```zenscript
-Compost.addRecipe(IIngredient, Float, String, IItemStack);
 
-Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
+```zenscript
+mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
+
+mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
 ## Removal 
