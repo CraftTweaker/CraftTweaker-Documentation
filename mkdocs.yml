@@ -734,6 +734,11 @@ nav:
         - Printer: 'Mods/MrCrayfish_s_Furniture_Mod/Printer.md'
         - Toaster: 'Mods/MrCrayfish_s_Furniture_Mod/Toaster.md'
         - Washing Machine: 'Mods/MrCrayfish_s_Furniture_Mod/WashingMachine.md'
+    - Nature's Aura:
+      - Altar of Birthing: 'Mods/Natures_Aura/Altar_Of_Birthing.md'
+      - Natural Altar: 'Mods/Natures_Aura/Natural_Altar.md'
+      - Offering to the Gods: 'Mods/Natures_Aura/Offering_To_The_Gods.md'
+      - Ritual of the Forest: 'Mods/Natures_Aura/Ritual_Of_The_Forest.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
