@@ -465,6 +465,13 @@ nav:
         - Slice n Spice: 'Mods/Ender_Tweaker/Slice_n_Splice.md'
         - Soul Binder:  'Mods/Ender_Tweaker/Soul_Binder.md'
         - The Vat: 'Mods/Ender_Tweaker/The_Vat.md'
+    - Ex Nihilo Creatio:
+      - Composting: 'Mods/Ex_Nihilo_Creatio/Composting.md'
+      - Crooking:  'Mods/Ex_Nihilo_Creatio/Crooking.md'
+      - Crucible Heating Sources: 'Mods/Ex_Nihilo_Creatio/Heating_Sources.md'
+      - Hammering: 'Mods/Ex_Nihilo_Creatio/Hammering.md'
+      - Ore:  'Mods/Ex_Nihilo_Creatio/Ores.md'
+      - Sieving: 'Mods/Ex_Nihilo_Creatio/Sieving.md'
     - Extra Utilities 2:
       - XUTweaker: 'Mods/ExtraUtilities2/XUTweaker.md'
       - InterModCommsHandler: 'Mods/ExtraUtilities2/InterModCommsHandler.md'
