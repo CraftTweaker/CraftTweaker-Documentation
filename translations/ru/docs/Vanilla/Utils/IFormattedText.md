@@ -8,8 +8,8 @@
 
 Вы всегда можете отложить перевод текста из строки (преобразование проходит автоматически).
 
-## Using an IFormattedText Object
+## Использование объекта IFormattedText
 
-You can add or concatenate two IFormattedText together using the respecting Operators: `+ ~`
+Вы можете сложить или объединить два объекта с помощью соответствующих операторов: `+ ~`
 
-Besides that you can use the [IFormatter](/Vanilla/Utils/IFormatter/) to format an IFormattedText Object.
+Кроме того, вы можете использовать [IFormatter](/Vanilla/Utils/IFormatter/) для форматирования IFormattedText Object.
