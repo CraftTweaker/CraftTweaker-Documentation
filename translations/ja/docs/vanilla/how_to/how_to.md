@@ -1,3 +1,3 @@
 # How to
 
-This is a place holder page, more info will come in time!
+これはプレースホルダー(置き換えられる予定)のページです。詳細は間もなく表示されます。
