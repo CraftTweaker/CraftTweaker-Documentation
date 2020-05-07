@@ -4,7 +4,7 @@
 
 `mods.chisel.Carving`
 
-## Addition
+## 追加
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);
@@ -13,9 +13,9 @@ mods.chisel.Carving.addGroup("test");
 mods.chisel.Carving.addVariation("test", <minecraft:stone>);
 ```
 
-## Removal
+## 削除
 
-You can get the names of the groups by running `/ct chiselGroups`
+`/ct chiselGroups`を実行すると、グループ名を取得できます。
 
 ```zenscript
 //mods.chisel.Carving.removeGroup(String name);
