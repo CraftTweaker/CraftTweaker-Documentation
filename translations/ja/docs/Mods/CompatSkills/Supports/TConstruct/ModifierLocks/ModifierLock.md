@@ -2,14 +2,14 @@
 
 ## Material-Lock
 
-With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
+CompatSkills 1.5.0において、TConstrucuサポートが実装されました。ロックが可能になっています。
 
-    - Modifier Addition
+    - モディファイアの追加
     
 
-For specific Tinker Construct's Modifiers.
+Tinker Construct'sにおける特定のモディファイアに関して。
 
-### Syntax:
+### 構文:
 
     // Blank Example:
     mods.compatskills.ModifierLock.addModifierLock(String identifier, String... requirements);
