@@ -1,4 +1,4 @@
-# Arc Furnace
+# Blast Furnace
 The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
 
