@@ -1,6 +1,6 @@
 # コマンド
 
-Here are the commands that matter:
+重要となるコマンドは、次のとおりです:
 ```
 /ct hand
 ```
