@@ -15,8 +15,9 @@ It might be required for you to import the package if you encounter any issues (
 
 These will affect the items that you can use to craft the resulting item. Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
 
-    <minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
-    
+```zenscript
+<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
+```
 
 ### Damage
 
@@ -24,31 +25,35 @@ These will affect the items that you can use to craft the resulting item. Rememb
 
 The input item's damage value does not matter for the recipe
 
-    item.anyDamage()
-    
+```zenscript
+item.anyDamage()
+```
 
 #### onlyDamaged
 
 The input item needs to be damaged
 
-    item.onlyDamaged();
-    
+```zenscript
+item.onlyDamaged();
+```
 
 #### Damaged at least
 
 Input item's damage value needs to be at least the specified `value`  
 `Value` is an int
 
-    item.onlyDamageAtLeast(value);
-    
+```zenscript
+item.onlyDamageAtLeast(value);
+```
 
 #### Damage at most
 
 Input item's damage value needs to be at max the specified `value`  
 `Value` is an int
 
-    item.onlyDamageAtMost(value);
-    
+```zenscript
+item.onlyDamageAtMost(value);
+```
 
 #### Damage between
 
@@ -56,8 +61,9 @@ Input item's damage value needs to be between the speciefied `value1` and `value
 `Value1` is an int  
 `Value2` is an int
 
-    item.onlyDamageBetween(value1, value2);
-    
+```zenscript
+item.onlyDamageBetween(value1, value2);
+```
 
 ### Get Items back or explicitly forbid an item's reusability
 
@@ -69,8 +75,9 @@ By applying `transformDamage(int)` you can create such recipes.
 The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
 `Value` is an int
 
-    item.transformDamage(value);
-    
+```zenscript
+item.transformDamage(value);
+```
 
 ### NBT-Tags
 
@@ -80,12 +87,13 @@ If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei
 
 Here's how you do it: `NBTTag` is your NBT Data
 
-    item.withTag(NBTData);
-    item.onlyWithTag(NBTTag);
-    
-    <minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
-    <minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
-    
+```zenscript
+item.withTag(NBTData);
+item.onlyWithTag(NBTTag);
+
+<minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
+<minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
+```
 
 ## Output modifiers
 
@@ -96,24 +104,27 @@ If you can specify input conditions, it's not so hard to also define output cond
 Your output item will have `value` damage points.  
 `Value` is an int.
 
-    item.withDamage(value);
-    
+```zenscript
+item.withDamage(value);
+```
 
 ### NBT-Tags
 
 Your output item will have `NBTTag` as NBT-Tag.  
 `NBTTag` is your NBT Data
 
-    item.withTag(NBTTag);
-    
-    <minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
-    
+```zenscript
+item.withTag(NBTTag);
+
+<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
+```
 
 ## Registering own item Conditions
 
 You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 
-    conditionedItem = item.only(function(item) {return true;});
-    
+```zenscript
+conditionedItem = item.only(function(item) {return true;});
+```
 
 The function needs to return a bool that is true if the item matches the condition.

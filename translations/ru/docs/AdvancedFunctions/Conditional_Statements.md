@@ -40,7 +40,7 @@ if(test == 0){//false
 
 ```
 
-## Things to check for
+## Вещи, которые можно проверять
 
 Supported Calculations are `+`,`-`,`*`,`/`,`mod`,`concatenation(~)`
 
@@ -80,7 +80,7 @@ if(d=="Hello" & e == "Hello"){print("AND1!");}      //false
 if(d=="Hello" & e == "World"){print("AND2!");}      //true
 ```
 
-## The ? Operator
+## Оператор ?
 
 Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
 
@@ -119,7 +119,7 @@ switchy ? print("Bye") : print("Hello");
 | ИЛИ              | `|`     | Проверят, что истинно либо значение перед знаком, либо значение после знака. Если верны оба, то все выражение верно | true | true  |
 | ИЛИ-ИСКЛ         | `^`     | Проверяет, что ровно одно значение либо перед, либо после знака верно                                               | true ^ false |
 
-## The in/has Operator
+## Оператор in/has
 
 The `in` and the `has` operator check if something is in something.  
 First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.

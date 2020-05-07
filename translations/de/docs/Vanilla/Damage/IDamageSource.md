@@ -5,7 +5,7 @@ An IDamageSource object is the source of damage to an entity.
 ## Diese Klasse importieren
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamage`
+`import crafttweaker.damage.IDamageSource`
 
 ## Zengetters and ZenMethods without parameters
 

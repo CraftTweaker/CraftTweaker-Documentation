@@ -18,6 +18,6 @@ mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 ```zenscript
 <br />//1 GP = 100 energy
 //mods.extrautils2.Resonator.add(IItemStack output, IItemStack input, int energy, @Optional boolean addOwnerTag);
-mods.extrautils2.Resonator.add(&lt;minecraft:redstone_block&gt;, &lt;minecraft:gold_block&gt;, 100);
-mods.extrautils2.Resonator.add(&lt;minecraft:gold_block&gt;, &lt;minecraft:iron_block&gt;, 200, false);
+mods.extrautils2.Resonator.add(<minecraft:redstone_block>, <minecraft:gold_block>, 100);
+mods.extrautils2.Resonator.add(<minecraft:gold_block>, <minecraft:iron_block>, 200, false);
 ```

@@ -17,7 +17,7 @@ I'm going to use git Bash but the same procedure should work for the CMD as well
 To open git bash just navigate to the folder and click with the right mouse key:  
 ![Explorer context menu with gitBash option selected](/Contribute/LocalClone/assets/ExplorerContextMenu_GitBash.png)
 
-## Cloning your fork
+## Клонирование вашего форка
 
 After you have opened git Bash in the folder, you need to get the repo url.  
 You can find this url when checking your fork on GitHub:

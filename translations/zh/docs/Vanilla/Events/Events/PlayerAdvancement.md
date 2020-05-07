@@ -28,4 +28,6 @@ Apart from the functionality the PlayerEvent exposes you can get the advancement
 
 This can for example be a string like
 
-    "minecraft:story/mine_diamond"
+```zenscript
+"minecraft:story/mine_diamond"
+```

@@ -1,17 +1,17 @@
 # IRayTraceResult
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
-The result of such a hit is an IRayTraceResult object.
+Когда игрок смотрит или нажимает на что-нибудь, он запускает луч, который либо попадает куда-то или промахивается.  
+Результат такого попадания &mdash; объект IRayTraceResult.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.world.IRayTraceResult`
 
-## ZenGetters
+## Геттеры
 
-All you can do is retrieve information from these objects, here's which:  
-Be careful though, since all getters that do not return a bool can return `null`!
+Все, что вы можете сделать &mdash; получить информацию из этих объектов, ниже указано, какую именно.  
+Будьте осторожны, так как все геттеры, которые не возвращают bool, могут вернуть `null`!
 
 | name     | type                                   |
 | -------- | -------------------------------------- |

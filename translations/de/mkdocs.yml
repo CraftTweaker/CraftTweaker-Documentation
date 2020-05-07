@@ -1,5 +1,5 @@
 # If you add a page, you must add it to the index here
-pages:
+nav:
   - Home: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Using this wiki: 'UsingThisWiki.md'
@@ -57,7 +57,7 @@ pages:
       - ICommandManager: 'Vanilla/Commands/ICommandManager.md'
       - ICommand: 'Vanilla/Commands/ICommand.md'
       - ICommandSender: 'Vanilla/Commands/ICommandSender.md'
-    - Container: 
+    - Container:
       - IContainer: 'Vanilla/Container/IContainer.md'
     - Creative Tabs:
       - ICreativeTab: 'Vanilla/CreativeTabs/ICreativeTab.md'
@@ -102,6 +102,7 @@ pages:
           #Actual Events below here
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
+        - CommandEvent: 'Vanilla/Events/Events/CommandEvent.md'
         - EnderTeleportEvent: 'Vanilla/Events/Events/EnderTeleport.md'
         - EntityLivingAttackedEvent: 'Vanilla/Events/Events/EntityLivingAttacked.md'
         - EntityLivingDeathDropsEvent: 'Vanilla/Events/Events/EntityLivingDeathDrops.md'
@@ -157,7 +158,7 @@ pages:
       - ILiquidStack: 'Vanilla/Liquids/ILiquidStack.md'
       - ILiquidDefinition: 'Vanilla/Liquids/ILiquidDefinition.md'
       - WeightedLiquidStack: 'Vanilla/Liquids/WeightedLiquidStack.md'
-    - Ore Dictionary: 
+    - Ore Dictionary:
       - IOreDict: 'Vanilla/OreDict/IOreDict.md'
       - IOreDictEntry: 'Vanilla/OreDict/IOreDictEntry.md'
     - Players:
@@ -169,7 +170,7 @@ pages:
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
     - Recipes:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
-      - Crafting Table Recipes: 
+      - Crafting Table Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
         - Recipe Functions: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
@@ -213,13 +214,7 @@ pages:
       - P2P Attunement: 'Mods/Applied_Energistics_2/P2P_Attunement.md'
       - Spatial I/O: 'Mods/Applied_Energistics_2/Spatial.md'
     - Arcane Archives:
-      - Gem Cutter's Table: 'Mods/Arcane_Archives/gct.md' 
-    - Artisan Worktables:
-      - Artisan Worktables: 'Mods/Artisan_Worktables/Artisan_Worktables.md'
-      - RecipeBuilder: 
-        - RecipeBuilder: 'Mods/Artisan_Worktables/CraftTweaker_Support/RecipeBuilder.md'
-        - Usages: 'Mods/Artisan_Worktables/CraftTweaker_Support/Usages.md'
-        - To Scale Example: 'Mods/Artisan_Worktables/CraftTweaker_Support/To_Scale_Example.md'
+      - Gem Cutter's Table: 'Mods/Arcane_Archives/gct.md'
     - Astral Sorcery:
       - About Astral Sorcery: 'Mods/Astral_Sorcery/Astral_Sorcery.md'
       - Crafting:
@@ -234,14 +229,14 @@ pages:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Requirements:
         - Requirements: 'Mods/CompatSkills/Requirements/Requirements.md'
-        - Requirement Types: 
+        - Requirement Types:
           - Advancements: 'Mods/CompatSkills/Requirements/Requirement_Types/Advancements.md'
           - Dimensions: 'Mods/CompatSkills/Requirements/Requirement_Types/Dimensions.md'
           - Dynamic Sword Skills: 'Mods/CompatSkills/Requirements/Requirement_Types/Dynamic_Sword_Skills.md'
           - GameStages: 'Mods/CompatSkills/Requirements/Requirement_Types/GameStages.md'
           - Inverted Requirements: 'Mods/CompatSkills/Requirements/Requirement_Types/Inverted_Requirements.md'
           - Items: 'Mods/CompatSkills/Requirements/Requirement_Types/Items.md'
-          - Logic Operators: 
+          - Logic Operators:
             - IMPORTANT NOTICE: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/1_READ_ME_FIRST.md'
             - AND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/AND-Gate.md'
             - NAND-Gate: 'Mods/CompatSkills/Requirements/Requirement_Types/Logic_Operators/NAND-Gate.md'
@@ -259,7 +254,7 @@ pages:
         - Baubles: 'Mods/CompatSkills/Supports/Baubles.md'
         - Blood Magic:
           - Blood Magic: 'Mods/CompatSkills/Supports/BloodMagic/Blood_Magic.md'
-          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md' 
+          - Binding Support: 'Mods/CompatSkills/Supports/BloodMagic/Binding_Support.md'
           - Ritual Support: 'Mods/CompatSkills/Supports/BloodMagic/Ritual_Support.md'
         - GameStages:
           - GameStages: 'Mods/CompatSkills/Supports/GameStages/GameStages.md'
@@ -267,7 +262,7 @@ pages:
           - GameStages Unlockables: 'Mods/CompatSkills/Supports/GameStages/GameStagesUnlockables.md'
         - Immersive Engineering: 'Mods/CompatSkills/Supports/Immersive_Engineering.md'
         - Magneticraft: 'Mods/CompatSkills/Supports/Magneticraft.md'
-        - Minecraft: 
+        - Minecraft:
           - Armor-Value Locking: 'Mods/CompatSkills/Supports/Minecraft/Armor_Point_Locking.md'
           - Attack-Damage Locking: 'Mods/CompatSkills/Supports/Minecraft/Attack_Damage_Locking.md'
           - Dimension Locking: 'Mods/CompatSkills/Supports/Minecraft/Dimension_Locking.md'
@@ -279,10 +274,10 @@ pages:
         - Reskillable:
           - Bracket Handlers: 'Mods/CompatSkills/Supports/Reskillable/BracketHandlers.md'
           - Level-Lock Support: 'Mods/CompatSkills/Supports/Reskillable/LevelLockHandler.md'
-          - Custom Skills: 
+          - Custom Skills:
             - Custom Skills: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Custom_Skills.md'
             - Full-Scale example: 'Mods/CompatSkills/Supports/Reskillable/CustomSkills/Full_Scale_Example.md'
-          - Custom Traits: 
+          - Custom Traits:
             - Custom Traits: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Custom_Traits.md'
             - Events Info: 'Mods/CompatSkills/Supports/Reskillable/CustomTraits/Events.md'
             - Events:
@@ -300,7 +295,7 @@ pages:
           - Requirement Tweaker: 'Mods/CompatSkills/Supports/Reskillable/RequirementTweaker.md'
           - Skill Change Tweaker: 'Mods/CompatSkills/Supports/Reskillable/Skill_Change_Tweaker.md'
           - Skill Hiding: 'Mods/CompatSkills/Supports/Reskillable/Skill_Hiding.md'
-          - Transmutation: 
+          - Transmutation:
             - Default Transmutations: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Default_Transmutations.md'
             - Additions: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Additions_Tweaker.md'
             - Removals: 'Mods/CompatSkills/Supports/Reskillable/Transmutations/Removal_Tweaker.md'
@@ -308,13 +303,13 @@ pages:
         - Thaumcraft:
             - Knowledge Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Knowledge_Locking.md'
             - Research Locking: 'Mods/CompatSkills/Supports/Thaumcraft/Research_Locking.md'
-        - Tinker's Construct: 
+        - Tinker's Construct:
           - Tinker's Construct: 'Mods/CompatSkills/Supports/TConstruct/TConstruct.md'
           - Material-Locks:
             - Material-Locks: 'Mods/CompatSkills/Supports/TConstruct/MaterialLocks/MaterialLock.md'
           - Modifier-Locks:
             - Modifier-Locks: 'Mods/CompatSkills/Supports/TConstruct/ModifierLocks/ModifierLock.md'
-      - PlayerExpansion: 
+      - PlayerExpansion:
         - PlayerExpansion: 'Mods/CompatSkills/Player_Expansion/PlayerExpansion.md'
         - Wrapper:
           - CTPlayerData: 'Mods/CompatSkills/Player_Expansion/Wrapper/CTPlayerData.md'
@@ -338,10 +333,10 @@ pages:
           - Fluid: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid.md'
           - Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/Item.md'
           - Food Item: 'Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood.md'
-        - Advanced Functionality: 
+        - Advanced Functionality:
           - Commands: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands.md'
           - Map: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Map.md'
-          - Functions: 
+          - Functions:
             - ActionResult: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult.md'
             - IBlockAction: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction.md'
             - IBlockColorSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockColorSupplier.md'
@@ -415,6 +410,15 @@ pages:
         - Trait: 'Mods/ContentTweaker/Tinkers_Construct/Trait.md'
         - Trait Builder: 'Mods/ContentTweaker/Tinkers_Construct/TraitBuilder.md'
         - Trait Data Representation: 'Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation.md'
+    - Cuisine:
+        - Cuisine: 'Mods/Cuisine/Cuisine.md'
+        - Axe Chopping: 'Mods/Cuisine/AxeChopping.md'
+        - Basin Heating: 'Mods/Cuisine/Heating.md'
+        - Basin Squeezing: 'Mods/Cuisine/Squeezing.md'
+        - Basin Throwing: 'Mods/Cuisine/Throw.md'
+        - Mill: 'Mods/Cuisine/Mill.md'
+        - Mortar: 'Mods/Cuisine/Mortar.md'
+        - Vessel: 'Mods/Cuisine/Vessel.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
@@ -467,7 +471,7 @@ pages:
       - Scrap Box: 'Mods/IC2Tweaker/Scrap_Box.md'
       - Semi-Fluid Generator: 'Mods/IC2Tweaker/Semi-Fluid_Generator.md'
       - Thermal Centrifuge: 'Mods/IC2Tweaker/ThermalCentrifuge.md'
-    - Immersive Engineering: 
+    - Immersive Engineering:
       - Immersive Engineering: 'Mods/Immersive_Engineering/Immersive_Engineering.md'
       - IE Variables:
         - Arc Furnace:
@@ -489,8 +493,9 @@ pages:
         - Fermenter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Fermenter.md'
         - Metal Press: 'Mods/Immersive_Engineering/CraftTweaker_Support/Metal_Press.md'
         - Mixer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Mixer.md'
-        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md' 
+        - Refinery: 'Mods/Immersive_Engineering/CraftTweaker_Support/Refinery.md'
         - Squeezer: 'Mods/Immersive_Engineering/CraftTweaker_Support/Squeezer.md'
+        - Thermoelectric: 'Mods/Immersive_Engineering/CraftTweaker_Support/Thermoelectric.md'
     - Immersive Petroleum:
       - Immersive Petroleum: 'Mods/Immersive_Petroleum/Immersive_Petroleum.md'
       - CraftTweaker Support:
@@ -576,7 +581,7 @@ pages:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes: 
+        - Recipes:
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -608,7 +613,7 @@ pages:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
-        - Brackets: 
+        - Brackets:
           - Material Bracket Handler: 'Mods/Modtweaker/TConstruct/Brackets/Bracket_Material.md'
         - Alloying: 'Mods/Modtweaker/TConstruct/Alloying.md'
         - Casting: 'Mods/Modtweaker/TConstruct/Casting.md'
@@ -627,7 +632,7 @@ pages:
           - MixRecipeBuilder: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeBuilder.md'
           - MixRecipeManager: 'Mods/Modtweaker/TComplement/Handlers/MixRecipeManager.md'
       - Thaumcraft:
-        - Aspects: 
+        - Aspects:
           - CTAspect: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspect.md'
           - CTAspectStack: 'Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack.md'
           - Entity Aspects: 'Mods/Modtweaker/Thaumcraft/Aspects/Entity_Aspects.md'
@@ -668,7 +673,7 @@ pages:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes: 
+      - Recipes:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
@@ -721,16 +726,17 @@ pages:
       - Anvil: 'Mods/RockyCore/Anvil.md'
       - Merchant: 'Mods/RockyCore/Merchant.md'
     - Roots 3:
-      - Animal Harvest: 'Mods/Roots_3/animalharvest.md'
-      - Bark: 'Mods/Roots_3/bark.md'
-      - Fey Crafting: 'Mods/Roots_3/fey.md'
-      - Ritual of Flower Growth: 'Mods/Roots_3/flowergrowth.md'
-      - Mortar/Pestle, Spell Modification: 'Mods/Roots_3/mortar.md'
-      - \"Untrue Pacifist\" Advancement: 'Mods/Roots_3/pacifist.md'
+      - Animal Harvest Ritual: 'Mods/Roots_3/animalharvest.md'
+      - Bark Creation: 'Mods/Roots_3/bark.md'
+      - Fey Crafter: 'Mods/Roots_3/fey.md'
+      - Flower Growth Ritual: 'Mods/Roots_3/flowergrowth.md'
+      - Mortar: 'Mods/Roots_3/mortar.md'
+      - Untrue Pacifist Creatures: 'Mods/Roots_3/pacifist.md'
       - Pyre Crafting: 'Mods/Roots_3/pyre.md'
       - Pyre Ritual Recipes: 'Mods/Roots_3/ritual.md'
-      - Runic Shears: 'Mods/Roots_3/runicshears.md'
-      - Ritual of Transmutation: 'Mods/Roots_3/transmutation.md'
+      - Runic Shears Recipes: 'Mods/Roots_3/runicshears.md'
+      - Summon Creatures Ritual: 'Mods/Roots_3/summoncreatures.md'
+      - Transmutation Ritual: 'Mods/Roots_3/transmutation.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
       - Recipes:
@@ -746,6 +752,16 @@ pages:
         - Life Infusion: 'Mods/Sky_Resources_2/Recipes/Life_Infusion.md'
         - Rock Grinder: 'Mods/Sky_Resources_2/Recipes/Rock_Grinder.md'
         - Water Extractor: 'Mods/Sky_Resources_2/Recipes/Water_Extractor.md'
+    - SteamAgeRevolution:
+      - Alloy Forge: 'Mods/SteamAgeRevolution/AlloyForge.md'
+      - Casting Block: 'Mods/SteamAgeRevolution/CastingBlock.md'
+      - Crucible: 'Mods/SteamAgeRevolution/Crucible.md'
+      - Distiller: 'Mods/SteamAgeRevolution/Distiller.md'
+      - Grinder: 'Mods/SteamAgeRevolution/Grinder.md'
+      - Steam Furnace: 'Mods/SteamAgeRevolution/SteamFurnace.md'
+      - Steam Hammer: 'Mods/SteamAgeRevolution/SteamHammer.md'
+      - Steelworks: 'Mods/SteamAgeRevolution/Steelworks.md'
+      - Vat: 'Mods/SteamAgeRevolution/Vat.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
     - Tree Tweaker:
@@ -754,12 +770,12 @@ pages:
       - Death Chest Defense: 'Mods/VanillaDeathChest/Death_Chest_Defense.md'
       - Death Chest Spawning: 'Mods/VanillaDeathChest/Death_Chest_Spawning.md'
       - VanillaDeathChest: 'Mods/VanillaDeathChest/VanillaDeathChest.md'
-  - How to contribute: 
+  - How to contribute:
     - How to fork the project: 'Contribute/SetupGithub.md'
     - How to edit files online: 'Contribute/OnlineEditor_Edit.md'
     - How to create files online: 'Contribute/OnlineEditor_Create.md'
     - How to file a Pull Request: 'Contribute/PullRequest.md'
-    - Using a local version: 
+    - Using a local version:
       - How to install git: 'Contribute/LocalClone/InstallingGit.md'
       - How to clone: 'Contribute/LocalClone/Clone.md'
       - How to commit: 'Contribute/LocalClone/CreateCommit.md'
@@ -788,9 +804,11 @@ pages:
 # Do not edit in PRs below here
 site_name: Crafttweaker Documentation
 site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
+site_url: "https://docs.blamejared.com/1.12/de/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
 repo_name: 'Visit this wiki on GitHub'
+google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
 
 markdown_extensions:
   - admonition
@@ -798,15 +816,26 @@ markdown_extensions:
   - sane_lists
   - toc:
       anchorlink: True
-      
 
-theme_dir: 'mkdocs_windmill'
-extra_css:
-    - css/styles.css
-    
+theme:
+  name: null
+  custom_dir: 'mkdocs_zen/'
+  include_search_page: True
+  search_index_only: True
+
 extra:
-  logo: 'assets/logo.png'
+  logo: 'assets/logo.svg'
   #article_nav_top: true
   #artivle_nav_bottom: true
   #history_buttons: false
-  version: 'CrT v4.1.15'
+  version: 'CrT v4.1.20'
+  patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
+  discord_link: "https://discord.blamejared.com"
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+  - use-site-url

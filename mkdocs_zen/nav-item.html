@@ -1,0 +1,14 @@
+{%- if not nav_item.is_section  -%}
+<a href = "{{ nav_item.url|url }}" class = "navlev-{{ navlevel }} {% if navlevel == 1 %}nav-top {% endif %}nav-link nav-item">{{ nav_item.title }}</a>
+{%- else -%}
+<div class = "block nav-closed nav-item-top{% if navlevel == 1 %} nav-top{% endif %}">
+    <span class = "navlev-{{ navlevel }} drawer nav-folder">
+     {{ nav_item.title }}
+    </span>
+    {%- if nav_item.children %}
+    <div class = "nav-item hidden">
+        {%- set navlevel = navlevel + 1%} {%- for nav_item in nav_item.children %} {% include 'nav-item.html' %} {%- endfor %} {%- set navlevel = navlevel - 1%}
+    </div>
+    {% endif %}
+</div>
+{%- endif %}

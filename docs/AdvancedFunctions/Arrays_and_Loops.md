@@ -6,6 +6,12 @@ An array is a List containing several items of the same kind.
 ## Declaring Arrays
 It is declared using ```[``` and ```]```.
 
+**Imortant**: you *must* initialize arrays to something, even if it's an empty array. 
+
+`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work. 
+
+Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+
 ```zenscript
 //Array containing "Hello" and "World"
 val stringArray = ["Hello", "World"] as string[];
@@ -23,7 +29,7 @@ You surely have noticed that all arrays here have the `as` statement appended.
 Why you ask?
 This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:  
+Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:  
 ```zenscript
 import crafttweaker.item.IItemStack;
 val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];

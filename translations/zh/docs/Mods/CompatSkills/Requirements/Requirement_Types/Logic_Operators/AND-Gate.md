@@ -9,7 +9,7 @@
 | 1   | 0   |  0 |
 | 1   | 1   |  1 |
 
-与其他逻辑条件语句不太一样，“与”条件主要在嵌套式逻辑条件语句中发挥作用，如同时使用多个条件锁定一个物品或其他对象，并把达成给定的所有条件作为解锁条件。 This is the same as the AND functionality, so should be used when possible, as it will make the tooltip be formatted in an easier to read manner.
+与其他逻辑条件语句不太一样，“与”条件主要在嵌套式逻辑条件语句中发挥作用，如同时使用多个条件锁定一个物品或其他对象，并把达成给定的所有条件作为解锁条件。 这和“与”功能相同，所以应该尽可能的使用，因为这将使得它更容易阅读
 
-    Empty Example:
+    示例：
     AND|[]~[]

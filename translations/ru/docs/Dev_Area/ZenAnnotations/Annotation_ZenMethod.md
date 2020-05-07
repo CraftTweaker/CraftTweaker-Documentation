@@ -1,17 +1,17 @@
 # ZenMethod
 
-A ZenMethod is a java method that has been exposed to ZenScript.
+Метод ZenScript &mdash; это метод Java, которые доступен в ZenScript.
 
 Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
 The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
-## What methods can be annotated || Additional Info
+## Какие методы могут быть аннотированы || Дополнительная информация
 
-- You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
+- Вы можете помечать все методы: и статические, и нет. 
+- Помеченные методы должны иметь один дополнительный параметр, если внутри [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). Этот параметр должен принимать экземпляр расширенного класса.
 - When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
 
-## Example Class
+## Пример класса
 
 ```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
@@ -61,7 +61,7 @@ public class DevWikiTest {
 }
 ```
 
-ZS Script
+Скрипт ZS
 
 ```zenscript
 val instance = crafttweaker.tests.devWikiTest.staticMethod(10);

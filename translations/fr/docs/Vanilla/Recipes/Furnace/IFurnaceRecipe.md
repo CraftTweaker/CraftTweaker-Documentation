@@ -11,12 +11,15 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ### To String
 
-    rec.commandString;
-    rec.toCommandString();
-    
+```zenscript
+rec.commandString;
+rec.toCommandString();
+```
 
 ### Other getters
 
-    rec.input;
-    rec.output;
-    rec.xp;
+```zenscript
+rec.input;
+rec.output;
+rec.xp;
+```

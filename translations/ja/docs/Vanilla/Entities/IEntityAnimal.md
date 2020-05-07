@@ -2,7 +2,7 @@
 
 An Animal.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAnimal;`
@@ -27,21 +27,25 @@ IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That 
 Method expects an [IItemStack](/Vanilla/Items/IItemStack/).  
 Returns a bool.
 
-    entAnObj.isBreedingItem(IItemStack itemStack);
-    
+```zenscript
+entAnObj.isBreedingItem(IItemStack itemStack);
+```
 
 #### Set or Reset in love
 
 First method expects an optional [IPlayer](/Vanilla/Players/IPlayer/) object, second nothing.  
 Returns nothing.
 
-    entAnObj.setInLove(@Optional IPlayer player);
-    entAnObj.resetInLove();
-    
+```zenscript
+entAnObj.setInLove(@Optional IPlayer player);
+entAnObj.resetInLove();
+```
 
 #### Check if another animal can mate with this one.
 
 Method expects an IEntityAnimal object.  
 Returns a bool.
 
-    entAnObj.canMateWith(IEntityAnimal other);
+```zenscript
+entAnObj.canMateWith(IEntityAnimal other);
+```

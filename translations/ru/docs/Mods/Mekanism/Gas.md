@@ -24,12 +24,12 @@ var oxygen = <gas:oxygen>.withAmount(500) as IGasStack;
 var oxygen2 = <gas:oxygen> * 500;
 ```
 
-## Геттеры ZenScript
+## Геттеры
 
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
-| ZenGetter   | Описание                                | Возвращаемый тип |
+| Геттер      | Описание                                | Возвращаемый тип |
 | ----------- | --------------------------------------- | ---------------- |
 | definition  | Returns the gas' definition             | IGasDefinition   |
 | NAME        | Returns the gas' name                   | string           |

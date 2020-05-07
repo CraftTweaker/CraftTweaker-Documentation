@@ -10,12 +10,12 @@
 
 ```zenscript
 //mods.skyresources.freezer.addRecipe(<产物>, <原料>,tick数);
-mods.skyresources.freezer.addRecipe(&lt;minecraft:ice&gt;, &lt;minecraft:dirt&gt;, 900);
+mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
 ## 删除配方
 
 ```zenscript
 //mods.skyresources.freezer.removeRecipe(<产物>);
-mods.skyresources.freezer.removeRecipe(&lt;minecraft:ice&gt;);
+mods.skyresources.freezer.removeRecipe(<minecraft:ice>);
 ```

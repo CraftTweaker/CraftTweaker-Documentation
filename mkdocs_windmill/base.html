@@ -8,7 +8,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page and page.is_homepage %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+    {%- block htmltitle %}
+      <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+      <meta property="og:title" content="{{ config.site_name }}"/>
+    {%- endblock %}
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://docs.blamejared.com/og_image.png" />
+    {% if page and page.is_homepage and config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
     {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
     {% if config.site_favicon %}<link rel="shortcut icon" href="{{ base_url }}/{{ config.site_favicon }}">
@@ -16,16 +22,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   {%- endblock %}
 
-  {%- block htmltitle %}
-    <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-  {%- endblock %}
 
   {%- block styles %}
     <link href="{{ base_url }}/css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="{{ base_url }}/css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="{{ base_url }}/css/base.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs.min.css">
-	<!-- <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">--> 
+	<!-- <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">-->
     {%- for path in extra_css %}
     <link href="{{ path }}" rel="stylesheet">
     {%- endfor %}
@@ -40,10 +43,43 @@
 
     <script src="{{ base_url }}/js/jquery-3.2.1.min.js"></script>
     <script src="{{ base_url }}/js/bootstrap-3.3.7.min.js"></script>
-	
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 	<script src="{{ base_url }}/js/highlightjs-zenscript.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script> 
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+  $(document).ready(function () {
+    $.get("/index.php", function (data, status) {
+        const parsed = JSON.parse(data);
+
+        for (let index in parsed.reverse()) {
+            let dat = parsed[index];
+            if(getVersion() == dat){
+              $("#versionSelect").append("<option selected id=\"option-" +dat + "\">" + dat + "</option>");
+            } else {
+              $("#versionSelect").append("<option id=\"option-" +dat + "\">" + dat + "</option>");
+            }
+          }
+
+    });
+});
+
+  function getVersion(){
+      let url = window.location.pathname;
+      let version = url.split("/")[1].split("/")[0];
+      return version;
+  }
+
+  function swapVersions(){
+
+    let dat = document.getElementById("versionSelect").value;
+    if(getVersion() != dat){
+      window.location.href = "/" + dat;
+    }
+
+  }
+    </script>
     {% if is_top %}
       <script src="{{ base_url }}/js/elasticlunr.min.js"></script>
     {% endif %}
@@ -139,17 +175,18 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <br>
   {%- endif %}
 </div>
-
+{% if not is_top %}
 <footer class="col-md-12 wm-page-content">
+
 {%- block footer %}
   <p></p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 {%- endblock %}
 </footer>
-
+{%- endif %}
 </body>
 </html>
-{%- if is_top %}
+{% if is_top %}
 <!--
 MkDocs version : {{ mkdocs_version }}
 Build Date UTC : {{ build_date_utc }}

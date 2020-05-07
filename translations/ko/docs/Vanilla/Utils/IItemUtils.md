@@ -44,9 +44,9 @@ Unlike the BH though, you need to provide the meta as optional parameter.
 If you want to use the wildcard meta, use `32767`.
 
     //getItem(location, @Optional meta);
-    getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
-    getItem("minecraft:dye", 1);        //<minecraft:dye:1>
-    getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
+    itemUtils.getItem("minecraft:iron_ingot");    //<minecraft:iron_ingot>
+    itemUtils.getItem("minecraft:dye", 1);        //<minecraft:dye:1>
+    itemUtils.getItem("minecraft:wool", 32767);   //<minecraft:wool:*>
     
 
 ## Create Spawn egg

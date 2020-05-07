@@ -28,12 +28,15 @@ It might be required for you to import the package if you encounter any issues (
 Uses an [IItemStack](/Vanilla/Items/IItemStack/).  
 Returns a bool
 
-    isCurativeItem(IItemStack item);
-    
+```zenscript
+isCurativeItem(IItemStack item);
+```
 
 ### Perform Effect on an Entity
 
 Uses an [IEntity](/Vanilla/Entities/IEntity/) or any of its subclasses (e.g. [IPlayer](/Vanilla/Players/IPlayer/)).  
 Returns void (nothing).
 
-    performEffect(IEntity Entity);
+```zenscript
+performEffect(IEntity Entity);
+```

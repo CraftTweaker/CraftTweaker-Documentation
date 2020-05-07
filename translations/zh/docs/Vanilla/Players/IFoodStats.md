@@ -21,26 +21,31 @@ It might be required for you to import the package if you encounter any issues (
 
 Void Function. Takes an int and a float as intput parameters.
 
-    stats.addStats(int foodValue, float saturationLevel);
-    
+```zenscript
+stats.addStats(int foodValue, float saturationLevel);
+```
 
 #### onUpdate
 
 Void Function. Takes an [IPlayer](/Vanilla/Players/IPlayer/) object as input parameter.
 
-    stats.onUpdate(IPlayer player);
-    
+```zenscript
+stats.onUpdate(IPlayer player);
+```
 
 #### asNBT
 
 Returns an IData Object representing the foodStats.
 
-    stats.asNBT();
-    stats as crafttweaker.data.IData;
-    
+```zenscript
+stats.asNBT();
+stats as crafttweaker.data.IData;
+```
 
 #### Add Exhaustion
 
 Void Funtion. takes a float as input parameter.
 
-    stats.addExhaustion(float exhaustion);
+```zenscript
+stats.addExhaustion(float exhaustion);
+```

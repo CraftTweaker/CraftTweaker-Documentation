@@ -5,15 +5,15 @@ An IDamageSource object is the source of damage to an entity.
 ## Importing the class
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamage`
+`import crafttweaker.damage.IDamageSource`
 
 ## Zengetters and ZenMethods without parameters
 
 | ZenGetter        | ZenMethod                         | Return Type                           |
 | ---------------- | --------------------------------- | ------------------------------------- |
-| harmInCreative   | canHarmInCreative();              | bool                                  |
+| harmInCreative   | canHarmInCreative();              | bool型                                 |
 | damageType       | getDamageType();                  | string                                |
-| hunderDamage     | getHungerDamage();                | float                                 |
+| hunderDamage     | getHungerDamage();                | float型                                |
 | immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
 | trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
 | creativePlayer   | isCreativePlayer();               | bool                                  |

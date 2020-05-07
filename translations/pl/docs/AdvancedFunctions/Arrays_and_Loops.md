@@ -6,6 +6,12 @@ Tablica to lista zawierająca wiele przedmiotów jednego typu.
 
 Tworzy się ją za pomocą ```[``` i ```]```.
 
+**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+
+`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+
+Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+
 ```zenscript
 //Tablica zawierająca "Hello" i "World"
 val stringArray = ["Hello", "World"] as string[];
@@ -14,14 +20,14 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-Jeżeli myślisz sobie "czekaj, czy ja nie widziałem przypadkiem tych nawiasów wcześniej?", widziałeś je. Pamiętasz ```recipes.add(out,[[],[],[]]);```? Ta formuła używa trzech tablic, gdzie każda z nich zawiera do trzech wartości by zdefiniować recepturę w stole rzemieślniczym.
+If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
 
 ## Oznaczanie Tablic
 
-Na pewno zauważyłes już, że każda tablica ma przyłączone do niej wyrażenie ` as `.   
-Dlaczego jest to ważne? ZenScript czasem nie potrafi przewidzieć, jakiego typu zawartość jest w danej tablicy. Brak tego wyrażenia może spowodować dziwne logi błędów konwersji!  
-Lepiej się ubezpieczyć i oznaczyć tablice poprawnymi typami!  
-Pamiętaj także, aby przy używaniu nie prymitywnych typów (wszystkiego poza string, int, itp.) [zaimportować](Import/) odpowiedni pakiet i zrobić to na POCZĄTKU danego skryptu:
+You surely have noticed that all arrays here have the `as` statement appended.  
+Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Better be safe than sorry and cast the Arrays to their correct types!  
+Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -30,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Zagnieżdżone Tablice
 
-Możesz umieszczać tablice w tablicach.
+You can place Arrays in Arrays.
 
 ```zenscript
 val stringArray1 = ["Hello","World"] as string[];
@@ -41,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] 
 
 ## Odnoszenie się do zawartości tablicy
 
-Możesz odnieść się do elementu wewnątrz tablicy poprzez użycie jego miejsca na liście. Pierwsza wartość w tablicy to nr 0 druga to nr 2 itd.
+You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
 
-Jeżeli chcesz się odnieść do wartości w zagnieżdżonej tablicy potrzebujesz 2 lub więcej odnośników, ponieważ każdy z nich usuwa jedną warstwę z list.
+If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
 ```zenscript
 /*
@@ -81,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Pętle
 
-Pętla to funkcja która się sama powtarza. Pętli mozeżesz używać aby wykonać daną akcję dla wszystkich elementów tablicy
+A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
 ## Pętla For
 
-Głównym zastosowaniem pętli for jest iteracja po tablicy. Iteracja oznacza wykonywanie akcji dla wszystkich elementów Tablicy.   
-Używając hasła `break` możesz zatrzymać pętlę przedwcześnie.
+The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -131,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## Pętla While
 
-Pętla while wykonuje dany kod tak długo, jak dany warunek jest równy `true`.  
-Alternatywnie, pętle można zatrzymać hasłem `break`.
+The while loop executes the given code as long as the given condition evaluates to `true`.  
+Alternatively, you can stop it using the `break` keyword.
 
 ```zenscript
 var i = 0; 
@@ -166,9 +172,9 @@ for k in 1 .. 10 {
 
 # Dodawanie zmiennych do tablic
 
-Chociaż nie jest to rekomendowane, to dodawanie zmiennych do tablic jest możliwe.  
-Dodawać możesz tylko pojedyncze obiekty. Nie możesz dodać do siebie dwóch tablic.  
-Żeby dodać obiekt do tablicy należy użyć operatora `+`:
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You use the `+` operator for array Addition:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

@@ -1,4 +1,4 @@
-# Logger
+# Логгер
 
 If the print-function is not enough for you, then you can use the logger Object to log Commands, information warnings and more.
 

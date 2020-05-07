@@ -16,9 +16,9 @@ You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtwe
 val def = <ticmat:stone>.definition;
 ```
 
-## Геттеры ZenScript
+## Геттеры
 
-| ZenGetter   | Возвращаемый тип | Description                   |
+| Геттер      | Возвращаемый тип | Description                   |
 | ----------- | ---------------- | ----------------------------- |
 | name        | string           | The material's internal name  |
 | displayName | string           | The material's localized name |

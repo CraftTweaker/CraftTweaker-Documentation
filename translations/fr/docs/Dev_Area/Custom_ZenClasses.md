@@ -10,7 +10,7 @@ That's why only those who are able to mess with it should ever find this.
 
 These are keywords that can be found in the class' body and they will initiate a certain action, like adding a member to the class.
 
-| Name           | Descrition                                                                                                                             |
+| Name           | Description                                                                                                                            |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | zenClass       | Starts a new class, needs to be followed by the name.                                                                                  |
 | var/val        | Creates an instance variable, final of the val keyword was used.                                                                       |
@@ -33,7 +33,7 @@ zenClass name {
     //Variables don't need to be initialized, but if you do, initialization is as in Java.
 
 
-    //Statics are initialized in &lt;clinit&gt;, i.e. when the class is first defined.
+    //Statics are initialized in <clinit>, i.e. when the class is first defined.
     static myStatic as string = "value";
     static otherStatic as string = "value";
 

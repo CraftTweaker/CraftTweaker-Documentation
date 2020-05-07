@@ -21,19 +21,19 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter    | Rückgabetyp                              |
-| ------------ | ---------------------------------------- |
-| `canceled`   | boolean                                  |
-| `processed`  | boolean                                  |
-| `x`          | int                                      |
-| `y`          | int                                      |
-| `z`          | int                                      |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)         |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)        |
-| `blockState` | [IBlock](/Vanilla/Blocks/IBlockState/)   |
-| `dimension`  | int                                      |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/) |
+| ZenGetter    | Rückgabetyp                                 |
+| ------------ | ------------------------------------------- |
+| `canceled`   | boolean                                     |
+| `processed`  | boolean                                     |
+| `x`          | int                                         |
+| `y`          | int                                         |
+| `z`          | int                                         |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `dimension`  | int                                         |
+| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 

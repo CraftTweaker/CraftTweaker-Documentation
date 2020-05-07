@@ -29,7 +29,7 @@ The following information can be retrieved from the event:
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)       |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)           |
 | `block`      | [IBlock](/Vanilla/Blocks/IBlock/)          |
-| `blockState` | [IBlock](/Vanilla/Blocks/IBlockState/)     |
+| `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/)     |
 | `dimension`  | int                                       |
 | `item`       | [IItemStack](/Vanilla/Items/IItemStack/)   |
 

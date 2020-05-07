@@ -180,12 +180,12 @@ If the IIngredient represents a liquid, it will check if the item is a valid con
 print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
-You can also match two IIngredient Objects, in which case you'd need to use the in operator:
+You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
 
+```zenscript
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
 val oreIngot = <ore:ingotIron>;
 val ingotGold = <minecraft:gold_ingot>;
-
 
 //true as the ingots Ingredient has <minecraft:gold_ingot>
 ingots has ingotGold;

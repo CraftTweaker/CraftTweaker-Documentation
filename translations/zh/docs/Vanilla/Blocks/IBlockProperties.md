@@ -63,7 +63,7 @@ BlockProperties 是使得方块与方块间各具特色的原因。 它主要是
 - [IWorld](/Vanilla/World/IWorld/) world → 方块所处的世界
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → 方块的位置
 
-Returns an int representing the block's redstone comparator input override type.
+返回代表方块的红石比较器输入覆盖类型的整数。
 
 ### 返回方块上能否生成实体
 

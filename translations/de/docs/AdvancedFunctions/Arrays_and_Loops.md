@@ -6,6 +6,12 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 Ein Array wird mithilfe von eckigen Klammern erstellt, also mit ```[``` und ```]```.
 
+**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+
+`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+
+Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+
 ```zenscript
 //Ein Array mit "Hello" und "World"
 val stringArray = ["Hello", "World"] as string[];
@@ -14,14 +20,14 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-Falls du dich jetzt wunderst, ob du diese Klammern schon einmal gesehen hast, das hast du. Erinnerst du dich an ```recipes.add(out,[[],[],[]]);```? Dies nutzt drei Arrays mit jeweils bis zu drei Einträgen, um ein Crafting Rezept zu definieren.
+If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
 
 ## Arrays casten
 
-Vielleicht hast du gemerkt, dass hinter den Arrays oben immer ein `as` stand.  
-Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Items im Array sind. Das kann manchmal komische Fehler verursachen!  
-Geh lieber den sicheren Weg und weise deinen Arrays die richtigen Typen zu!  
-Darüber hinaus, wenn du zu nicht-primitiven Typen (also, alles außer strings, ints usw.) casten willst, denk dran, dass du die jeweiligen dazu passenden Pakete am Beginn des Skriptes importieren musst:
+You surely have noticed that all arrays here have the `as` statement appended.  
+Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Better be safe than sorry and cast the Arrays to their correct types!  
+Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -30,7 +36,7 @@ val IArray = [<minecraft:gold_ingot>, <minecraft:iron_ingot>] as IItemStack[];
 
 ## Verschachtelte Arrays
 
-Man kann auch Arrays innerhalb Arrays platzieren.
+You can place Arrays in Arrays.
 
 ```zenscript
 val stringArray1 = ["Hallo","Welt"] as string[];
@@ -41,9 +47,9 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Schmetterling","!
 
 ## Auf Elemente innerhalb eines Arrays zugreifen
 
-Man greift auf die Elemente eines Arrays zu, in dem man den jeweiligen Platz des Elements in der Liste nimmt. Das erste Element eines Arrays ist die Nummer 0, das zweite die Nummer 1 und so weiter.
+You can refer to an element within an array by using it's place in the list. The first item in an Array is No. 0, the 2nd No.1 and so on.
 
-Wenn du auf ein Element in einem verschachtelten Array zugeifen willst, musst du dementsprechend immer zwei oder mehr der Listenplätze angeben.
+If you want to refer to an item in a nested Array, you need two or more referers, as each removes one layer of the lists.
 
 ```zenscript
 /*
@@ -81,12 +87,12 @@ print(stringArrayAll[0][1]);
 
 # Schleifen
 
-Eine Schleife ist eine Funktion, die sich wiederholt. Du kannst Schleifen verwenden, um eine Aktion auf alle Elemente in einem Array anzuwenden.
+A loop is a function that repeats itself. You can use loops to apply an action to all elements in an Array
 
 ## For-Schleifen
 
-Die For-Schleife wird meistens dazu verwendet, um durch alle Elemente eines Arrays zu "iterieren". Iterieren bedeutet, eine Aktion für alle Elemente eines Arrays durchzuführen.  
-Mit dem `break`-Schlüsselwort kannst du das komplette durchlaufen des Arrays vorzeitig beenden.
+The main use of the for-loop is iterating through an array. Iterating means doing an action to all elements of an array.  
+You can use the `break` keyword to break the loop prematurely.
 
 ```zenscript
 import crafttweaker.item.IItemStack;
@@ -131,8 +137,8 @@ for item in loadedMods["minecraft"].items {
 
 ## While-Schleife
 
-Die While-Schleife wird so lange ausgeführt, bis die gegebene Bedingung nicht mehr `true` (wahr) ist.  
-Alternativ kannst du die While-Schleife auch mit dem `break`-Schlüsselwort vorzeitig stoppen.
+The while loop executes the given code as long as the given condition evaluates to `true`.  
+Alternatively, you can stop it using the `break` keyword.
 
 ```zenscript
 var i = 0; 
@@ -166,9 +172,9 @@ for k in 1 .. 10 {
 
 # Elemente in ein Array hinzufügen
 
-Auch wenn es nicht empfehlenswert ist, kann man nachträglich Elemente an ein Array anhängen.  
-Man kann nur einzelne Elemente an ein Array anhängen, zwei Arrays addieren ist nicht möglich.  
-Dazu kannst du den Operator `+` verwenden:
+While it is not recommended to do so, it is possible to add some Objects to Arrays.  
+You can only add single Objects to an array, you cannot add two arrays.  
+You use the `+` operator for array Addition:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

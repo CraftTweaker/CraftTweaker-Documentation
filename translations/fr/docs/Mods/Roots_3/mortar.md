@@ -1,5 +1,3 @@
-# Mortar & Pestle & Spell Recipes
-
 ### Class
 
 ```zenscript
@@ -9,7 +7,7 @@ import mods.roots.Mortar;
 #### Methods
 
 ```zenscript
-static void addRecipe(
+void addRecipe(
   IItemStack output,   // the item output of this recipe
   IIngredient[] inputs // an array of ingredients that is either 5 long or 1 long
 );
@@ -18,7 +16,7 @@ static void addRecipe(
 * * *
 
 ```zenscript
-static void changeSpell(
+void changeSpell(
   string spellName,    // the name of the spell as in the spell registry
   IIngredient[] inputs // an array of 5 items that are the new ingredients for the recipe
 );
@@ -27,7 +25,7 @@ static void changeSpell(
 * * *
 
 ```zenscript
-static void removeRecipe(
+void removeRecipe(
   IItemStack output // the item stack produced by the recipe
 );
 ```

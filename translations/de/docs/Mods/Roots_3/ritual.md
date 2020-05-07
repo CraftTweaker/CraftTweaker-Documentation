@@ -1,5 +1,3 @@
-# Modifying Pyre Ritual Recipes
-
 ### Class
 
 ```zenscript
@@ -9,7 +7,7 @@ import mods.roots.Ritual;
 #### Methods
 
 ```zenscript
-static void modifyRitual(
+void modifyRitual(
   string name,         // the name of the ritual whose ingredients you wish to modify
   IIngredient[] inputs // a list of five ingredients (no more, no less)
 );

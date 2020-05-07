@@ -20,4 +20,6 @@ IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That m
 The Method requires an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a bool.
 
-    entMobObj.isPreventingPlayerRest(IPlayer player);
+```zenscript
+entMobObj.isPreventingPlayerRest(IPlayer player);
+```

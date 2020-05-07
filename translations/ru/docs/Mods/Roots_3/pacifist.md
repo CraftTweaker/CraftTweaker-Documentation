@@ -1,5 +1,3 @@
-# "Untrue Pacifist" Advancement Creatures
-
 ### Class
 
 ```zenscript
@@ -9,7 +7,7 @@ import mods.roots.Pacifist;
 #### Methods
 
 ```zenscript
-static void addEntity(
+void addEntity(
   IEntityDefinition entity // the entity to add to the pacifist list
 );
 ```
@@ -17,7 +15,7 @@ static void addEntity(
 * * *
 
 ```zenscript
-static void removeEntity(
+void removeEntity(
   IEntityDefinition entity // the entity to remove from the pacifist list
 );
 ```
