@@ -16,13 +16,13 @@
 ## 添加配方
 
 ```zenscript
-mods.exnihilocreation.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
+mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
 
-mods.exnihilocreation.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
+mods.exnihilocreatio.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
 ```
 
 ## Removal
 
 ```zenscript
-mods.exnihilocreation.Hammer.removeAll();
+mods.exnihilocreatio.Hammer.removeAll();
 ```
