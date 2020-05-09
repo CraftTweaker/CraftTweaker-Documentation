@@ -116,6 +116,11 @@ nav:
           - Мир:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
+  - Моды:
+      - JEITweaker:
+          - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
+      - InitialInventory:
+          - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
 
 # Не меняйте в PR'ах то, что ниже
 site_name: CraftTweaker Documentation
@@ -123,7 +128,7 @@ site_author: Команда CraftTweaker и участников репозит�
 site_url: "https://docs.blamejared.com/1.14/ru/"
 
 repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
-repo_name: 'Посетите эту вики на GitHub'
+repo_name: 'Visit this wiki on GitHub'
 google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
 
 markdown_extensions:
@@ -147,9 +152,12 @@ extra:
   version: 'CrT v5.0.0'
   patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
   discord_link: "https://discord.blamejared.com"
+  game_version: "1.14"
+  language: "en"
 
 plugins:
-  - search
+  - search:
+        prebuild_index: "python"
   - minify:
       minify_html: true
       htmlmin_opts:

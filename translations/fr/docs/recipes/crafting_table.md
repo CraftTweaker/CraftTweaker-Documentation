@@ -1,6 +1,6 @@
-# Crafting Table
+# Établi
 
-### Addition:
+### Ajout :
 ```zenscript
 craftingTable.addShaped(String recipeName, IItemStack output, IIngredient[][] ingredients, @ZenCodeType.Optional RecipeFunctionMatrix recipeFunction);
 

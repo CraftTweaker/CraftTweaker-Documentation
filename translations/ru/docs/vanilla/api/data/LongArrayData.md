@@ -14,17 +14,17 @@ crafttweaker.api.data.LongArrayData
 LongArrayData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Constructors
+## Конструкторы
 ```zenscript
 new crafttweaker.api.data.LongArrayData(internal as long[]);
 ```
-| Parameter | Тип    | Описание                |
-| --------- | ------ | ----------------------- |
-| internal  | long[] | No description provided |
+| Параметр | Тип    | Описание             |
+| -------- | ------ | -------------------- |
+| internal | long[] | Описание отсутствует |
 
 
 
-## Methods
+## Методы
 ### add
 
 ```zenscript
@@ -32,9 +32,9 @@ new crafttweaker.api.data.LongArrayData(internal as long[]);
 [100000, 800000, 50000].add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| Параметр | Тип                                                    | Description                  |
+| -------- | ------------------------------------------------------ | ---------------------------- |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
