@@ -1,6 +1,6 @@
 # Assoziatives Array
 
-Ein Assoziatives Array (wird manchmal auch als "Map" oder "Dictionary" bezeichnet) ist ähnlich wie ein normales [Array](Arrays_and_Loops/) und kann mehrere Objekte in sich speichern. Der Unterschied zu normalen [Arrays](Arrays_and_Loops/) hier ist allerdings, dass man sich den Typ des Index (hier wird er auch als "Schlüssel" oder "Key" bezeichnet) aussuchen kann!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## Ein Assoziatives Array deklarieren
 
@@ -30,9 +30,9 @@ Okay, und was sollte ich denn noch beachten?
 
 ## Auf Elemente innerhalb eines assoziativen Arrays zugreifen
 
-Man greift auf assoziative Arrays genau so zu, wie man es auch bei normalen [Arrays](Arrays_and_Loops/) macht:  
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
 `Array[index]`  
-Der einzige Unterschied ist eben, dass man nun nicht unbedingt einen Integer braucht, sondern etwas, was dem davor spezifizierten Typ entspricht!
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;

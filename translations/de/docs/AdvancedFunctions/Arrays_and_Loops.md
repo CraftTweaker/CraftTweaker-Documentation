@@ -6,11 +6,11 @@ Ein Array ist eine Liste, die mehrere Elemente der gleichen Art enthalten.
 
 Ein Array wird mithilfe von eckigen Klammern erstellt, also mit ```[``` und ```]```.
 
-**Imortant**: you *must* initialize arrays to something, even if it's an empty array.
+**Wichtig**: Du *musst* Arrays zu etwas initialisieren, sogar wenn sie leer sind.
 
-`var floatArray as float [];` won't give syntax errors, but upon reloading your game, you will get an error and your script won't work.
+`var floatArray as float [];` wird keine Syntax Fehler geben, aber sobald du dein Spiel neu lädst wirst du einen Fehler bekommen und dein Skript wird nicht funktionieren.
 
-Instead, initialize empty arrays like this `var floatArray as float [] = [];`
+Initialsiere Arrays stattdessen so `var floatArray als float [] = [];`
 
 ```zenscript
 //Ein Array mit "Hello" und "World"
@@ -20,14 +20,14 @@ val stringArray = ["Hello", "World"] as string[];
 val intArray = [1,2,3] as int[];
 ```
 
-If you now think "wait, haven't I seen these brackets before?", you have. Remember ```recipes.add(out,[[],[],[]]);```? This uses three arrays with each containing up to three entries to define a crafting table recipe.
+Wenn du nun denkst "warte hab ich diese Klammern schon mal gesehen?", das hast du. Merke ```recipes.add(ergebins,[[],[],[]]);```? Dies nutzt drei Arrays mit jeweils bis zu drei Einträgen, um ein Crafting Rezept zu definieren.
 
 ## Arrays casten
 
-You surely have noticed that all arrays here have the `as` statement appended.  
-Why you ask? This is because ZenScript sometimes cannot predict what type the items in the array are. This can be the cause of strange conversion error logs!  
+Vielleicht hast du gemerkt, dass hinter den Arrays oben immer ein `as` stand.  
+Warum? Das wird benötigt, da ZenScript manchmal nicht vorhersagen kann, von welchem Typ die Objekte im Array sind. This can be the cause of strange conversion error logs!  
 Better be safe than sorry and cast the Arrays to their correct types!  
-Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](Import/) the corresponding package and be sure to do so at the TOP of the script:
+Also, if you cast to non-primitive types (everything except strings, ints and the same) be sure to [import](/AdvancedFunctions/Import/) the corresponding package and be sure to do so at the TOP of the script:
 
 ```zenscript
 import crafttweaker.item.IItemStack;

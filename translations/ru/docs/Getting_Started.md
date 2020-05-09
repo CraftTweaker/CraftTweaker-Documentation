@@ -28,33 +28,33 @@ print("Привет, мир!");
 
 Теперь загрузите Minecraft и обратите внимание на файл `crafttweaker.log`.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+Файл `crafttweaker.log` находится в `<minecraftdir>` и может быть прочитан любой программой, которая может читать текстовые файлы.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Для редактирования файлов скриптов рекомендуется использовать Notepad++ или Sublime Text, впрочем, подойдет любой текстовый редактор.
 
 ### Файл crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Файл `crafttweaker.log` использует специальный синтаксис в выходном файле, приведенный ниже:
 
-    [LOADERSTAGE][SIDE][TYPE] <message>
+    [СТАДИЯЗАГРУЗКИ][СТОРОНАВЫПОЛНЕНИЯ][ТИП] <message>
     
 
-Using the example above, the output would be:
+Используя приведенный выше шаблон, можно сделать пример:
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] Привет мир!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+Синтаксис используется в целях отладки, и единственное исключение, когда данный синтаксис не используется - для командных дампов, в этом случае это делается для того, чтобы скопировать дампы было легче.
 
 ### Комментарии
 
-Comments can be used to make your script files more readable and easier to understand!
+Комментарии облегчают понимание скриптов и делают их более читабельными!
 
-ZenScript supports 3 types of comments, being:
+ZenScript поддерживает 3 типа комментариев:
 
-Single line: `// I'm a single line comment!`
+Однострочный: `// Я - однострочный комментарий!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Альтернативный однострочный: `# Я тоже однострочный комментарий!`
 
 Многострочный:
 

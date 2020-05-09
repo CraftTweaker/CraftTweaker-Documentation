@@ -65,7 +65,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | maxStackSize        | maxStackSize        | int                                                         |
 | hardness            | hardness            | float                                                       |
 | damage              |                     | int型                                                        |
-| maxDamage           | maxDamage           | int                                                         |
+| maxDamage           | maxDamage           | int型                                                        |
 | hasTag              |                     | bool                                                        |
 | tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
 | ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
@@ -80,15 +80,16 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | isEnchanted         |                     | bool型                                                       |
 | isDamaged           |                     | bool型                                                       |
 | isDamageable        |                     | bool型                                                       |
+| isItemBlock         |                     | bool (if contained item is an itemblock)                    |
 | isStackable         |                     | bool型                                                       |
-| isBeaconPayment     |                     | bool型                                                       |
+| isBeaconPayment     |                     | bool                                                        |
 | hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
+| hasDisplayName      |                     | bool型                                                       |
 | metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
+| hasSubtypes         |                     | bool型                                                       |
+| isEmpty             |                     | bool型                                                       |
 | burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
+| showsDurabilityBar  |                     | bool型                                                       |
 | hasCustomEntity     |                     | bool                                                        |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 
@@ -343,6 +344,12 @@ You can cast an IItemStack to an [IBlock](/Vanilla/Blocks/IBlock/), as long as y
 <minecraft:dirt>.asBlock();
 <minecraft:dirt> as crafttweaker.block.IBlock;
 ```
+
+You can also test if an IItemStack contains an ItemBlock and can thus be converted:
+
+<pre><code class="zenscript:">&lt;minecraft:dirt&gt;.isItemBlock; // true
+&lt;minecraft:stick&gt;.isItemBlock; // false
+</code></pre>
 
 #### Food Properties
 

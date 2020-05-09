@@ -8,11 +8,11 @@
 
 ## 静态和全局变量的区别
 
-静态和全局变量都可以跨脚本调用，并且在脚本执行前就被实例化了。  
-两者都无法再次被修改。  
-不同之处在于两者如何被调用：  
-全局变量可以在脚本的任意处，简单的使用变量名来进行调用。除非局部脚本中有同名变量覆盖了它。  
-静态变量则需要通过[跨脚本调用](Cross-Script_Reference/)方式才能访问。
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
 创建全局变量使用 `global` 关键字；  
 创建静态变量使用 `static` 关键字。
@@ -35,7 +35,7 @@ static myStaticValue as IItemStack = <minecraft:sand>;
 
 1. `global` 关键字表示全局值的声明
 2. `myGlobalValue` 表示值的名称
-3. `as IItemStack` 表示值的类型（推荐在转换变量之前[导入](Import/)这个类型）
+3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
 4. `= <minecraft:dirt>;` 表示值的初始化。 由于全局值是最终的，因此你需要在声明它们的同时初始化！
 
 ## 一些忠告

@@ -18,7 +18,7 @@ function имя([arguments[as тип данных]]) [as возвращаемы�
 ## Статические функции
 
 Static functions are created before the script is run and can be accessed from anywhere in the script.  
-You can even access functions declared outside the script using the [cross-script reference](Cross-Script_Reference).
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
 ### Функции без возвращаемого значения
 

@@ -1,4 +1,4 @@
-# Compactor
+# 压缩机
 
 ## 所属包名
 
@@ -12,13 +12,13 @@ The compactor supports 4 types of modifiers:
     Gear
     
 
-## Mint
+## 货币铸造
 
 The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
 
 Note that these recipes require the Numismatic Press Augment.
 
-### Addition
+### 添加配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -26,7 +26,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### Removal
+### 删除配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
@@ -40,7 +40,7 @@ The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or
 
 These recipes do not require a specific Augment.
 
-### Addition
+### 添加配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -48,7 +48,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack inp
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### Removal
+### 删除配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
@@ -62,7 +62,7 @@ The Storage modifier changes the recipes registered in the `PLATE` recipe map in
 
 These recipes do not require a specific Augment, and seemingly are used only for plates.
 
-### Addition
+### 添加配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -70,7 +70,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack i
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### 删除配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
@@ -78,13 +78,13 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## Gear
+## 齿轮制作
 
 The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
 
 Note that these recipes require the Gearworking Die Augment.
 
-### Addition
+### 添加配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
@@ -92,7 +92,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### 删除配方
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);

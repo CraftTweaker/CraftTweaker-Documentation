@@ -12,6 +12,14 @@ Entities are everything that is freely movable in the world such as players, mon
 
 IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
 
+<details><summary>Derived Methods</summary> 
+
+- entity.displayName
+- entity.position
+- entity.world
+- entity.server
+- entity.sendMessage(String text)</details>
+
 ## Геттеры
 
 | Геттер                   | Метод-геттер      | Возвращаемый тип (*может быть `null`*)                      |
@@ -20,7 +28,6 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | alive                    | isAlive()         | boolean                                                     |
 | alwaysRenderNameTag      |                   | boolean                                                     |
 | armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| blockPos                 | getBlockPos()     | [IBlockPos](/Vanilla/World/IBlockPos/)                      |
 | canBeAttackedWithItem    |                   | boolean                                                     |
 | canBeCollidedWith        |                   | boolean                                                     |
 | canPassengerSteer        |                   | boolean                                                     |

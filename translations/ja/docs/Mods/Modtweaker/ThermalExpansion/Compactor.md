@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Compactor`
 
-The compactor supports 4 types of modifiers:
+Compactorでは、4種類の修飾子をサポートしています。
 
     Mint
     Press
@@ -12,11 +12,11 @@ The compactor supports 4 types of modifiers:
     Gear
     
 
-## Mint
+## Mint(造幣)
 
-The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
+Mint修飾子は、Thermal Expansionのレシピマップにおける、`COIN`に登録されているレシピを変更します。
 
-Note that these recipes require the Numismatic Press Augment.
+これらのレシピ使うには、Numismatic Press Augmentが必要なことに注意してください。
 
 ### Addition
 
@@ -36,9 +36,9 @@ mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167
 
 ## Press
 
-The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or `GEAR` recipe maps in Thermal Expansion.
+Press修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`, `COIN`, または`GEAR`に登録されていないレシピを変更させます。
 
-These recipes do not require a specific Augment.
+これらのレシピは、特定のAugmentを必要としません。
 
 ### Addition
 
@@ -58,9 +58,9 @@ mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:16
 
 ## Storage
 
-The Storage modifier changes the recipes registered in the `PLATE` recipe map in Thermal Expansion.
+Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE `に登録されているレシピを変更します。
 
-These recipes do not require a specific Augment, and seemingly are used only for plates.
+これらのレシピは特定のAugmentを必要とせず、どうやらプレート専用として使われているようです。
 
 ### Addition
 
@@ -80,9 +80,9 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:
 
 ## Gear
 
-The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
+Gear修飾子は、Thermal Expansionのレシピマップにおける、`GEAR`に登録されているレシピを変更します。
 
-Note that these recipes require the Gearworking Die Augment.
+これらのレシピ使うには、Gearworking Die Augmentが必要なことに注意してください。
 
 ### Addition
 

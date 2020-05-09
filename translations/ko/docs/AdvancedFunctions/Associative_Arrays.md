@@ -1,6 +1,6 @@
 # 연관 배열
 
-연관 배열(맵 또는 딕셔너리이라고도 함) 은 여러 항목을 저장할 수 있다는 점에서 일반적인 [배열](Arrays_and_Loops/)과 같습니다. 그러나 [배열](Arrays_and_Loops/)과는 달리, 인덱스 또는 키를 어떤 타입으로 할지 선택할 수 있습니다!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## 연관 배열의 선언
 
@@ -30,9 +30,9 @@ val myAssocArray = {
 
 ## 연관 배열에서의 요소 참조
 
-일반 [배열](Arrays_and_Loops/)에서 요소를 참조하는 것과 동일한 방식:  
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
 `Array[index]`  
-차이점은 반드시 정수(Integer) 를 인덱스로 사용할 필요는 없습니다. 다만 배열을 어떤 타입을 선언했는지에 맞춰서 참조하면 됩니다.
+Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;
