@@ -97,21 +97,21 @@ print(vInt);
 //switchyがtrueなら"Hello"を、それ以外なら"Bye"を出力
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
+//switchyがtrueなら"Bye"を、それ以外なら"Hello"を出力
 switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## 演算子
 
-You can use these operators. All the examples given evaluate to true.
+これらの演算子が使用可能です。 ここにある全ての例文はtrueと評価されます。
 
-| Name             | token   | Explanation                                                                          | Example      |
+| 名称               | 演算子     | 詳細                                                                                   | 例文           |
 | ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
+| Not              | `!`     | booleanを反転します                                                                        | !false       |
+| 不等価              | `!=`    | 前後の値が等しくないかどうかを判定します                                                                 | 1 != 2       |
+| 等価               | `==`    | 前後の値が等しいかどうかを判定します                                                                   | 1 == 1       |
+| 大なり              | `>`  | 前の値が後ろより大きいかどうかを判定します                                                                | 1 > 2        |
 | Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
 | Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
 | Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
