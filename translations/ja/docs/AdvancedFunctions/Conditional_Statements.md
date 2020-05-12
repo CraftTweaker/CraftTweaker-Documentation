@@ -82,44 +82,44 @@ if(d=="Hello" & e == "World"){print("AND2!");}      //true
 
 ## 「?」演算子 
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+確かに、常にif/else文を使用するのは煩雑な場合があります。 特に、二者択一を条件で決めたいなら。 それが`?`演算子の実装理由です。 if/else文と同じロジックですが、実際に書く量は遥かに少ないです。 構文: `boolean ? if : else`
 
 ```zenscript
 val switchy = false;
 
-//prints switchy state
+//swtichyの値を出力
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+//switchyがtrueならvInt = 1、そうでなければvInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+//switchyがtrueなら"Hello"を、それ以外なら"Bye"を出力
 print(switchy ? "Hello" : "Bye");
 
-//Prints "Bye" if switchy is true, otherwise prints "Hello"
+//switchyがtrueなら"Bye"を、それ以外なら"Hello"を出力
 switchy ? print("Bye") : print("Hello");
 
 ```
 
-## Operators
+## 演算子
 
-You can use these operators. All the examples given evaluate to true.
+これらの演算子が使用可能です。 ここにある全ての例文はtrueと評価されます。
 
-| Name             | token   | Explanation                                                                          | Example      |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | Inverts a boolean                                                                    | !false       |
-| Not Equal        | `!=`    | Checks if the value before and after are not equal                                   | 1 != 2       |
-| Equal            | `==`    | Checks if the value before and after are equal                                       | 1 == 1       |
-| Greater than     | `>`  | Checks if the value before is greater than after                                     | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| 名称      | 演算子     | 詳細                                                 | 例文           |
+| ------- | ------- | -------------------------------------------------- | ------------ |
+| Not     | `!`     | booleanを反転します                                      | !false       |
+| 不等価     | `!=`    | 前後の値が等しくないかどうかを評価します                               | 1 != 2       |
+| 等価      | `==`    | 前後の値が等しいかどうかを評価します                                 | 1 == 1       |
+| 大なり     | `>`  | 前の値が後ろの値より大きいかどうかを評価します                            | 1 > 2        |
+| 大なりイコール | `>=` | 前の値が後ろの値以上かどうかを評価します                               | 1 >= 1       |
+| 小なり     | `<`  | 前の値が後ろの値未満かどうかを評価します                               | 1 < 2        |
+| 小なりイコール | `<=` | 前の値が後ろの値以下かどうかを評価します                               | 1 <= 1       |
+| AND     | `&` | 前後両方の値がtrueかどうかを評価します。どちらかがfalseの場合、falseと評価されます   | true & true  |
+| OR      | `|`     | 前後の値のどれかがtrueかどうかを評価します。 両方がtrueの場合もtrueと評価されます    | true | true  |
+| XOR     | `^`     | 前後の値のいずれか一つがtrueかどうかを評価します。両方がtrueの場合はfalseと評価されます | true ^ false |
 
-## The in/has Operator
+## in/has演算子
 
 The `in` and the `has` operator check if something is in something.  
 First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
