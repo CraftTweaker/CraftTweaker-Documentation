@@ -82,19 +82,19 @@ if(d=="Hello" & e == "World"){print("AND2!");}      //true
 
 ## 「?」演算子 
 
-Surely, always typing out an if/else structure can be annoying. Especially if you just want to do an either or condition. That's why the `?` operator was implemented. It follows the same logic as an if/else statement, it only is by far less code required. Syntax: `boolean ? if : else`
+確かに、常にif/else文を使用するのは煩雑な場合があります。 特に、二者択一を条件で決めたいなら。 それが`?`演算子の実装理由です。 if/else文と同じロジックですが、実際に書く量は遥かに少ないです。 構文: `boolean ? if : else`
 
 ```zenscript
 val switchy = false;
 
-//prints switchy state
+//swtichyの値を出力
 print("Switchy is " ~ switchy);
 
-//if switchy is true, vInt = 1, otherwise vInt = 2
+//switchyがtrueならvInt = 1、そうでなければvInt = 2
 val vInt = switchy ? 1 : 2;
 print(vInt);
 
-//Prints "Hello" if switchy is stue, otherwise prints "Bye"
+//switchyがtrueなら"Hello"を、それ以外なら"Bye"を出力
 print(switchy ? "Hello" : "Bye");
 
 //Prints "Bye" if switchy is true, otherwise prints "Hello"
