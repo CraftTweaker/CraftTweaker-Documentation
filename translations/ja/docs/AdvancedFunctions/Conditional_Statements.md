@@ -106,20 +106,20 @@ switchy ? print("Bye") : print("Hello");
 
 これらの演算子が使用可能です。 ここにある全ての例文はtrueと評価されます。
 
-| 名称               | 演算子     | 詳細                                                                                   | 例文           |
-| ---------------- | ------- | ------------------------------------------------------------------------------------ | ------------ |
-| Not              | `!`     | booleanを反転します                                                                        | !false       |
-| 不等価              | `!=`    | 前後の値が等しくないかどうかを判定します                                                                 | 1 != 2       |
-| 等価               | `==`    | 前後の値が等しいかどうかを判定します                                                                   | 1 == 1       |
-| 大なり              | `>`  | 前の値が後ろより大きいかどうかを判定します                                                                | 1 > 2        |
-| Greater or Equal | `>=` | Checks if the value before is greater than or equal with after                       | 1 >= 1       |
-| Lesser then      | `<`  | Checks if the value before is fewer than after                                       | 1 < 2        |
-| Lesser or Equal  | `<=` | Checks if the value before is fewer than or equal with after                         | 1 <= 1       |
-| AND              | `&` | Checks whether both, value before and after are true, false if one or both are false | true & true  |
-| OR               | `|`     | Checks if the value before or after is true. True, is both are true                  | true | true  |
-| XOR              | `^`     | Checks if either the value before or after is true, false if both or none is true    | true ^ false |
+| 名称      | 演算子     | 詳細                                                 | 例文           |
+| ------- | ------- | -------------------------------------------------- | ------------ |
+| Not     | `!`     | booleanを反転します                                      | !false       |
+| 不等価     | `!=`    | 前後の値が等しくないかどうかを評価します                               | 1 != 2       |
+| 等価      | `==`    | 前後の値が等しいかどうかを評価します                                 | 1 == 1       |
+| 大なり     | `>`  | 前の値が後ろの値より大きいかどうかを評価します                            | 1 > 2        |
+| 大なりイコール | `>=` | 前の値が後ろの値以上かどうかを評価します                               | 1 >= 1       |
+| 小なり     | `<`  | 前の値が後ろの値未満かどうかを評価します                               | 1 < 2        |
+| 小なりイコール | `<=` | 前の値が後ろの値以下かどうかを評価します                               | 1 <= 1       |
+| AND     | `&` | 前後両方の値がtrueかどうかを評価します。どちらかがfalseの場合、falseと評価されます   | true & true  |
+| OR      | `|`     | 前後の値のどれかがtrueかどうかを評価します。 両方がtrueの場合もtrueと評価されます    | true | true  |
+| XOR     | `^`     | 前後の値のいずれか一つがtrueかどうかを評価します。両方がtrueの場合はfalseと評価されます | true ^ false |
 
-## The in/has Operator
+## in/has演算子
 
 The `in` and the `has` operator check if something is in something.  
 First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
