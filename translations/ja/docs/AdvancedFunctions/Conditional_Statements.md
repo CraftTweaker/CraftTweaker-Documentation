@@ -121,8 +121,8 @@ switchy ? print("Bye") : print("Hello");
 
 ## in/has演算子
 
-The `in` and the `has` operator check if something is in something.  
-First you need the list you want to check in, then the `in`/`has` then the value you want to check for. `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
+`in`演算子と`has`演算子は、あるものが別のなにかの中に入っているかどうかを評価します。  
+最初に、評価したいリスト、次に`in`演算子もしくは`has`演算子、そしてその次に評価したい値です。 `in` and `has` are the same keyword for ZS, but in most cases people use `has` for checking if a collection contains an item and in for loops as this represents the English grammar.
 
 ### in/has loadedMods
 
