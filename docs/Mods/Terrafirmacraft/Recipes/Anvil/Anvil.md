@@ -19,8 +19,6 @@ Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int m
 ## Removal
 
 ```zenscript
-// Removes all recipes that have a given output
 Anvil.removeRecipe(IItemStack output);
-// Removes a single recipe by registry name
 Anvil.removeRecipe(String registryName);
 ```

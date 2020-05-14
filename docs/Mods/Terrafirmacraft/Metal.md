@@ -1,4 +1,4 @@
-## Metals
+# Metals
 
 - BISMUTH
 - BISMUTH_BRONZE

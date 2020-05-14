@@ -14,9 +14,7 @@ Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, I
 ## Removal
 
 ```zenscript
-// Removes all recipes that produce a given output
 Welding.removeRecipe(IItemStack output);
-// Removes a single recipe by registry name
 Welding.removeRecipe(String registryName);
 ```
 - As with anvil recipes, the same rules for input applies here. The input must be forgeable(see [ItemRegistry](/Mods/Terrafirmacraft/ItemRegistry) for registering forging capability to an item) and can't be stacked.
