@@ -1,4 +1,4 @@
-# InitialInventory
+# 最初内存
 
 ## 描述
 
@@ -7,7 +7,7 @@ This mod adds support for the player to be given an item when they join a world,
 ## 所属包
 `mods.initialinventory.InvHandler`
 
-## Adding starting items
+## 添加初始物品
 
 This will add an item to the players inventory when they join the world.
 
@@ -34,7 +34,7 @@ param: `item`
 
 Type `IItemStack`
 
-Description:
+描述：
 
 The item to give to the player when they join.
 
@@ -42,7 +42,7 @@ Param: `index`
 
 Type: `int`
 
-Description:
+描述：
 
 Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
 
