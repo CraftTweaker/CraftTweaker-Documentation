@@ -815,6 +815,29 @@ nav:
       - Vat: 'Mods/SteamAgeRevolution/Vat.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Terrafirmacraft:
+      - Terrafirmacraft: 'Mods/Terrafirmacraft/Terrafirmacraft.md'
+      - Heating: 'Mods/Terrafirmacraft/Heating.md'
+      - HeatingTemperatures: 'Mods/Terrafirmacraft/HeatingTemperatures.md'
+      - ItemRegistry: 'Mods/Terrafirmacraft/ItemRegistry.md'
+      - Metal: 'Mods/Terrafirmacraft/Metal.md'
+      - Recipes:
+        - Anvil: 
+          - Anvil: 'Mods/Terrafirmacraft/Recipes/Anvil/Anvil.md'
+          - Welding: 'Mods/Terrafirmacraft/Recipes/Anvil/Welding.md'
+        - Barrel: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
+        - Knapping:
+          - Clay: 'Mods/Terrafirmacraft/Recipes/Knapping/Clay.md'
+          - FireClay: 'Mods/Terrafirmacraft/Recipes/Knapping/FireClay.md'
+          - Leather: 'Mods/Terrafirmacraft/Recipes/Knapping/Leather.md'
+          - Stone: 'Mods/Terrafirmacraft/Recipes/Knapping/Stone.md'
+        - Alloy: 'Mods/Terrafirmacraft/Recipes/Alloy.md'
+        - Barrel: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
+        - Chisel: 'Mods/Terrafirmacraft/Recipes/Chisel.md'
+        - Loom: 'Mods/Terrafirmacraft/Recipes/Loom.md'
+        - Quern: 'Mods/Terrafirmacraft/Recipes/Quern.md'
+    - The Aether:
+
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
