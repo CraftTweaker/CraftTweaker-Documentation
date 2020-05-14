@@ -876,6 +876,26 @@ nav:
       - Vat: 'Mods/SteamAgeRevolution/Vat.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Tech Reborn:
+      - Alloy Smelter: 'Mods/Tech_Reborn/Alloy_Smelter.md'
+      - Assembling Machine: 'Mods/Tech_Reborn/Assembling_Machine.md'
+      - Blast Furnace: 'Mods/Tech_Reborn/Blast_Furnace.md'
+      - Centrifuge: 'Mods/Tech_Reborn/Centrifuge.md'
+      - Chemical Reactor: 'Mods/Tech_Reborn/Chemical_Reactor.md'
+      - Compressor: 'Mods/Tech_Reborn/Compressor.md'
+      - Distillation Tower: 'Mods/Tech_Reborn/Distillation_Tower.md'
+      - Extractor: 'Mods/Tech_Reborn/Extractor.md'
+      - Fluid Generators: 'Mods/Tech_Reborn/Fluid_Generators.md'
+      - Fluid Replicator: 'Mods/Tech_Reborn/Fluid_Replicator.md'
+      - Fusion Reactor: 'Mods/Tech_Reborn/Fusion_Reactor.md'
+      - Grinder: 'Mods/Tech_Reborn/Grinder.md'
+      - Implosion Compressor: 'Mods/Tech_Reborn/Implosion_Compressor.md'
+      - Industrial Electrolyzer: 'Mods/Tech_Reborn/Industrial_Electrolyzer.md'
+      - Industrial Grinder: 'Mods/Tech_Reborn/Industrial_Grinder.md'
+      - Industrial Sawmill: 'Mods/Tech_Reborn/Industrial_Sawmill.md'
+      - Rolling Machine: 'Mods/Tech_Reborn/Rolling_Machine.md'
+      - Scrapbox: 'Mods/Tech_Reborn/Scrapbox.md'
+      - Vacuum Freezer: 'Mods/Tech_Reborn/Vacuum_Freezer.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
