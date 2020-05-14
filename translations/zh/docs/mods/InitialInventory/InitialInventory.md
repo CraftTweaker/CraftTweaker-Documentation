@@ -2,7 +2,7 @@
 
 ## 描述
 
-This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
+这个模组增加了对玩家第一次加入世界时获得物品的支持，然后永远不再获得。类似于一些模组在第一次加入世界时给玩家的书籍。
 
 ## 所属包
 `mods.initialinventory.InvHandler`
