@@ -1,4 +1,4 @@
-## Item Registry
+# Item Registry
 
 ## Package
 ```zenscript
