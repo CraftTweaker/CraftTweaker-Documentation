@@ -14,7 +14,7 @@ mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, double rad
 
 ## Radiation Immunity
 This method gives the ability to control the immunity of players depending on the stage.
-`defaultImmunity` is a boolean specifiying the players' immunity without teh specified stages.
+`defaultImmunity` is a boolean specifiying the players' immunity without the specified stages.
 `stageNames` is an array of the names of all stages that can toggle the immunity of players.
 ```zenscript
 mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);

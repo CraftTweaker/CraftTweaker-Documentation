@@ -12,5 +12,5 @@ mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTi
 ```zenscript
 mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.decay_hastener.removeAllRecipes();
+mods.nuclearcraft.salt_fission.removeAllRecipes();
 ```

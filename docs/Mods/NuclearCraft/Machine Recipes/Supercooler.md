@@ -1,7 +1,7 @@
 # Supercooler
 
 ## Importing the Package
-`mods.nuclearcraft.decay_hastener`
+`mods.nuclearcraft.supercooler`
 
 ## Adding Recipes
 ```zenscript
