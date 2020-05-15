@@ -12,16 +12,16 @@ five categories and packaging the information up into a recipe.
 
 ## Recipe Additions
 Recipe Methods will specify `itemInput` for Item Inputs. <br/>
-Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/>
 Recipe Methods will specify `itemOutput` for Item Outputs. <br/>
-Recipe Methods will specify `fluidOutput` for Fluid Outputs. 
+Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/>
+Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/>
+Recipe Methods will specify `blockInput` for Block Inputs. <br/>
+Recipe Methods will specify `blockOutput` for Block Outputs. <br/>
+**Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
+
 ### Item Inputs 
 `IItemStack`: <minecraft:gunpowder> * 4 <br/>
 `IOreDictEntry`: <ore:ingotIron> * 2 <br/>
-`null`: null
-
-### Fluid Inputs
-`ILiquidStack`: <liquid:lava> * 1500 <br/>
 `null`: null
 
 ### Item Outputs
@@ -31,9 +31,23 @@ Recipe Methods will specify `fluidOutput` for Fluid Outputs.
 `ChanceIOreDictEntry`: <ore:gemDiamond> * 5, 75 <br/>
 `null`: null
 
+### Fluid Inputs
+`ILiquidStack`: <liquid:lava> * 1500 <br/>
+`null`: null
+
 ### Fluid Outputs
 `ILiquidStack`: <liquid:lava> * 1500 <br/>
 `ChanceLiquidStack` : <liquid:water> * 2000, 40, 250, 500 <br/>
+`null`: null
+
+### Block Inputs
+`IItemStack`: <minecraft:dirt> * 4 <br/>
+`IOreDictEntry`: <ore:blockIron> * 2 <br/>
+`null`: null
+
+### Block Outputs
+`IItemStack`: <minecraft:dirt> * 4 <br/>
+`IOreDictEntry`: <ore:blockIron> * 2 <br/>
 `null`: null
 
 ## Recipe Removals

@@ -5,7 +5,7 @@
 
 ## Adding Recipes
 ```zenscript
-mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature}]);
+mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature]);
 ```
 
 ## Removing Recipes
