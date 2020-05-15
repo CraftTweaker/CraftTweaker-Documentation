@@ -17,7 +17,7 @@ ItemRegistry.registerItemSize(IIngredient input, String size, String weight);
 ## Register Item Heat
 - Register item heat capability and if this item is forgeable (eg: can be used in anvil).
 - Heat capacity determines how fast an item cools down/heat up. Wrought Iron is 0.35.
-- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](HeatingTemperatures)
+- Melt temperature is at which temperature the item is melt. Wrought Iron is 1535 Brilliant White while Bronze is 950 Orange. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
 ```zenscript
 ItemRegistry.registerItemHeat(IIngredient input, float heatCapacity, float meltTemp, bool forgeable);
 ```
