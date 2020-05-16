@@ -360,26 +360,26 @@ myMCPlayerEntity.clearBedPosition();
 
 ### closeScreen #关闭屏幕
 
-set current crafting inventory back to the 2x2 square
+把当前合成栏设置回2x2个格子
 
 ```zenscript
 myMCPlayerEntity.closeScreen();
 ```
 
-### curePotionEffects
+### curePotionEffects #清除药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.curePotionEffects(治疗的效果为 crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter    | Type                                                              | Description             |
-| ------------ | ----------------------------------------------------------------- | ----------------------- |
-| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数    | 类型                                                                | 说明    |
+| ----- | ----------------------------------------------------------------- | ----- |
+| 治疗的效果 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
 
 
-### detach
+### detach #分离
 
 ```zenscript
 myMCPlayerEntity.detach();
