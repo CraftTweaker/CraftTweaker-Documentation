@@ -336,29 +336,29 @@ myMCPlayerEntity.canUpdate(值为布尔型);
 | 值  | 布尔值 | 未提供说明 |
 
 
-### canUseCommandBlock
+### canUseCommandBlock #是否可以使用命令方块
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### clearActivePotions
+### clearActivePotions #清除药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.clearActivePotions();
 ```
 
-### clearBedPosition
+### clearBedPosition #清除床的位置
 
 ```zenscript
 myMCPlayerEntity.clearBedPosition();
 ```
 
-### closeScreen
+### closeScreen #关闭屏幕
 
 set current crafting inventory back to the 2x2 square
 
