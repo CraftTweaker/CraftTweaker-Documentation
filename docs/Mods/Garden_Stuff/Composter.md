@@ -5,7 +5,7 @@
 ## Methods
 - **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
 - **int processTime** Amount of energy created per tick in a base-line machine.
-- **oredictKey** An oreDictionary entry.
+- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
 
 ## Add Compostable Item
 ```zenscript
