@@ -32,7 +32,7 @@ craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [[<ite
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#recipe-functions) for examples on how to use recipe functions._
+_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
 ### Adding Shaped and Shaped Mirrored Recipes
 
@@ -72,7 +72,7 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 ]);
 ```
 
-_See [Using Recipe Functions](#recipe-functions) for examples on how to use recipe functions._
+_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
 
 ## Using Recipe Functions
 
