@@ -17,9 +17,9 @@ _When adding a recipe, ensure that your recipe names are unique!_
 `craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
 
 - `recipeName` \<string>
-- `output` <[IItemStack]()>
-- `ingredients` <[IIngredient]()[]>
-- `recipeFunction` (Optional) <[RecipeFunctionArray]()>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
+- `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
 Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
@@ -41,9 +41,9 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
 - `recipeName` \<string>
-- `output` <[IItemStack]()>
-- `ingredients` <[IIngredient]()[][]>
-- `recipeFunction` (Optional) <[RecipeFunctionMatrix]()>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
+- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
 Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
 
@@ -83,12 +83,12 @@ _As Shaped and Shaped Mirrored Recipes are similar, examples will only include S
 
 ### Using RecipeFunctionArray in a Shapeless Recipe
 
-`recipeFunction` <[RecipeFunctionArray]()>
+`recipeFunction` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
 `(usualOut as IItemStack, inputs as IItemStack[]) => {};`
 
-- `usualOut` <[IItemStack]()>
-- `inputs` <[IItemStack]()[]> Array of inputs ordered the same as defined in the original recipe
+- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
@@ -107,12 +107,12 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 
 ### Using RecipeFunctionMatrix in a Shaped/Mirrored Recipe
 
-`recipeFunction` <[RecipeFunctionMatrix]()>
+`recipeFunction` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
 `(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
 
-- `usualOut` <[IItemStack]()>
-- `inputs` <[IItemStack]()[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
 
@@ -170,9 +170,9 @@ craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 
 `craftingTable.removeRecipe(output);`
 
-- `output` <[IItemStack]()>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-Removes all recipes where the output result is the provided [IItemStack]().
+Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
