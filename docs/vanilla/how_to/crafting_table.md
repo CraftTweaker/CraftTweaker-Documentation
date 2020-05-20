@@ -26,7 +26,7 @@ Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#
 [Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
 ```zenscript
-craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [[<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
+craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
 // A shapeless recipe can have up to 9 inputs
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
@@ -90,6 +90,8 @@ _As Shaped and Shaped Mirrored Recipes are similar, examples will only include S
 - `inputs` <[IItemStack]()[]> Array of inputs ordered the same as defined in the original recipe
 
 ```zenscript
+import crafttweaker.api.item.IItemStack;
+
 craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
     // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
     if(inputs[0].displayName == "totally real diamond block" ){
