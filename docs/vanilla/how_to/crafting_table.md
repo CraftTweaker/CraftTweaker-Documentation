@@ -94,7 +94,7 @@ import crafttweaker.api.item.IItemStack;
 
 craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
     // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if(inputs[0].displayName == "totally real diamond block" ){
+    if (inputs[0].displayName == "totally real diamond block") {
         // Returns <item:minecraft:diamond> * 9
         return usualOut;
     }
@@ -137,8 +137,8 @@ Shapeless:
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-function exampleShapelessRecipeFunction(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack
-    if(inputs[0].displayName == "totally real diamond block" ){
+function exampleShapelessRecipeFunction(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack {
+    if (inputs[0].displayName == "totally real diamond block") {
         return usualOut;
     }
 
@@ -168,7 +168,7 @@ Shapeless:
 import crafttweaker.api.registries.IRecipeManager.RecipeFunctionArray;
 
 var exampleShapelessRecipeFunction as RecipeFunctionArray = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
+    if (inputs[0].displayName == "totally real diamond block") {
         return usualOut;
     }
 
