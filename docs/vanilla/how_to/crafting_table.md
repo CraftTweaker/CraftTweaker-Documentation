@@ -21,9 +21,9 @@ _When adding a recipe, ensure that your recipe names are unique!_
 - `ingredients` <[IIngredient]()[]>
 - `recipeFunction` (Optional) <[RecipeFunctionArray]()>
 
-Adds a [shapeless](#recipe_types) recipe to the crafting table. As [shapeless](#recipe_types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
+Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
-[Shapeless](#recipe_types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
+[Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
 ```zenscript
 craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [[<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
@@ -32,7 +32,7 @@ craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [[<ite
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#recipe_functions) for examples on how to use recipe functions._
+_See [Using Recipe Functions](#recipe-functions) for examples on how to use recipe functions._
 
 ### Adding Shaped and Shaped Mirrored Recipes
 
@@ -44,11 +44,11 @@ _See [Using Recipe Functions](#recipe_functions) for examples on how to use reci
 - `ingredients` <[IIngredient]()[][]>
 - `recipeFunction` (Optional) <[RecipeFunctionMatrix]()>
 
-Adds a [shaped](#recipe_types) (or [mirrored](#recipe_types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
+Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
 
-Making the recipe a [shaped mirrored](#recipe_types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
+Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
 
-Both [shaped](#recipe_types) and [shaped mirrored](#recipe_types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
+Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
 ```zenscript
 // Adding a shaped recipe
@@ -72,7 +72,7 @@ craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow
 ]);
 ```
 
-_See [Using Recipe Functions](#recipe_functions) for examples on how to use recipe functions._
+_See [Using Recipe Functions](#recipe-functions) for examples on how to use recipe functions._
 
 ## Using Recipe Functions
 
