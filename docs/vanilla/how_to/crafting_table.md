@@ -21,9 +21,9 @@ _When adding a recipe, ensure that your recipe names are unique!_
 - `ingredients` <[IIngredient]()[]>
 - `recipeFunction` (Optional) <[RecipeFunctionArray]()>
 
-Adds a [shapeless](<(#recipe_types)>) recipe to the crafting table. As [shapeless](<(#recipe_types)>) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
+Adds a [shapeless](#recipe_types) recipe to the crafting table. As [shapeless](#recipe_types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
 
-[Shapeless](<(#recipe_types)>) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
+[Shapeless](#recipe_types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
 ```zenscript
 craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [[<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
@@ -48,7 +48,7 @@ Adds a [shaped](#recipe_types) (or [mirrored](#recipe_types), depending on the f
 
 Making the recipe a [shaped mirrored](#recipe_types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
 
-Both [shaped](#recipe_types) and [shaped mirrored](<(#recipe_types)>) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
+Both [shaped](#recipe_types) and [shaped mirrored](#recipe_types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
 ```zenscript
 // Adding a shaped recipe
