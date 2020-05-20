@@ -122,34 +122,6 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 
 Recipe functions can also be defined as a named function which enables you to utilize the same function in multiple recipes easily:
 
-#### Named Functions
-
-Shapeless:
-
-```zenscript
-import crafttweaker.api.item.IItemStack;
-
-function exampleShapelessRecipeFunction(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack {
-    if (inputs[0].displayName == "totally real diamond block") {
-        return usualOut;
-    }
-
-    return <item:minecraft:clay>.setDisplayName("Diamond");
-}
-
-// inputs[0] in exampleShapelessRecipeFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeFunction);
-
-// inputs[0] in exampleShapelessRecipeFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_func_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeFunction);
-```
-
-Shaped/Mirrored:
-
-```zenscript
-
-```
-
 #### Functions as a Variable
 
 Alternatively, you can also assign the anonymous function to a variable.
