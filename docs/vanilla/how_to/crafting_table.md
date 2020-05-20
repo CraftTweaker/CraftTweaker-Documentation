@@ -180,3 +180,94 @@ Shaped/Mirrored:
 ```
 
 ## Removing a Recipe
+
+### Remove a Recipe by Name
+
+`craftingTable.removeByName(recipeName);`
+
+- `recipeName` \<string>
+
+Removes the recipe that matches the name provided.
+
+```zenscript
+craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
+```
+
+### Remove Recipes by Output
+
+`craftingTable.removeRecipe(output);`
+
+- `output` <[IItemStack]()>
+
+Removes all recipes where the output result is the provided [IItemStack]().
+
+```zenscript
+craftingTable.removeRecipe(<item:minecraft:stick>);
+```
+
+### Remove Recipes by Mod ID
+
+`craftingTable.removeByModid(modId);`
+
+- `modId` \<string>
+
+Removes all recipes added by the provided mod.
+
+```zenscript
+craftingTable.removeByModid("minecraft");
+```
+
+#### Exclude Recipes From Mod ID Removal
+
+`craftingTable.removeByModid(modId, exclusionFilter);`
+
+- `modId` \<string>
+- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
+  - `name` \<string> The name of the current recipe being checked. _The mod id will not be included_
+
+Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
+
+```zenscript
+craftingTable.removeByModid("minecraft", (name) => {
+    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
+    return name == "red_bed_from_white_bed";
+});
+```
+
+Multiple recipes can also be excluded. One way this can be done is as follows:
+
+```zenscript
+// An array of recipe names as strings
+var minecraftExclusions as string[] = [
+    "acacia_slab",
+    "red_bed_from_white_bed",
+    "sugar_from_sugar_cane"
+];
+
+craftingTable.removeByModid("minecraft", (name) => {
+    return name in minecraftExclusions;
+});
+```
+
+### Remove Recipes by Regex
+
+`craftingTable.removeByRegex(regex);`
+
+- `regex` \<string>
+
+Removes all recipes that's name matches the regex string.
+
+```zenscript
+// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
+craftingTable.removeByRegex("minecraft:.*_carpet");
+```
+
+### Remove All Recipes
+
+`craftingTable.removeAll();`
+
+Removes all crafting table recipes.
+
+```zenscript
+craftingTable.removeAll();
+```
