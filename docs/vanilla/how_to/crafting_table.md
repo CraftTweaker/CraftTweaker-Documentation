@@ -129,21 +129,21 @@ Alternatively, you can also assign the anonymous function to a variable.
 Shapeless:
 
 ```zenscript
-import crafttweaker.api.registries.IRecipeManager.RecipeFunctionArray;
+import crafttweaker.api.item.IItemStack;
 
-var exampleShapelessRecipeFunction as RecipeFunctionArray = (usualOut, inputs) => {
-    if (inputs[0].displayName == "totally real diamond block") {
+var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
+    if(inputs[0].displayName == "totally real diamond block" ){
         return usualOut;
     }
 
     return <item:minecraft:clay>.setDisplayName("Diamond");
 };
 
-// inputs[0] in exampleShapelessRecipeFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeFunction);
+// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
+craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
 
-// inputs[0] in exampleShapelessRecipeFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_func_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeFunction);
+// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:cobblestone>
+craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
 ```
 
 Shaped/Mirrored:
