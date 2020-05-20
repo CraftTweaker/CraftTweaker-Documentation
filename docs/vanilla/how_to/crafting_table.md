@@ -16,7 +16,7 @@ _When adding a recipe, ensure that your recipe names are unique!_
 
 `craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` <[String]()>
+- `recipeName` \<string>
 - `output` <[IItemStack]()>
 - `ingredients` <[IIngredient]()[]>
 - `recipeFunction` (Optional) <[RecipeFunctionArray]()>
@@ -40,7 +40,7 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` <[String]()>
+- `recipeName` \<string>
 - `output` <[IItemStack]()>
 - `ingredients` <[IIngredient]()[][]>
 - `recipeFunction` (Optional) <[RecipeFunctionMatrix]()>
