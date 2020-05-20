@@ -37,6 +37,7 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 ### Adding Shaped and Shaped Mirrored Recipes
 
 `craftingTable.addShaped(recipeName, output, ingredients, recipeFunction);`
+
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
 - `recipeName` <[String]()>
