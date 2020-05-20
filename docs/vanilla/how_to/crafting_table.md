@@ -114,16 +114,7 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 - `inputs` <[IItemStack]()[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
-craftingTable.addShaped("shaped_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[][]) => {
-    // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if(inputs[0].displayName == "totally real diamond block" ){
-        // Returns <item:minecraft:diamond> * 9
-        return usualOut;
-    }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-    return <item:minecraft:clay>.setDisplayName("Diamond");
-});
 ```
 
 ### Advanced Usage
