@@ -70,6 +70,7 @@ IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer)
 IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
 IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
 ```
+**Note: If `slowBuffer` is `true`, `getRadawayBuffer()` will return the slow-acting radiation removal buffer instead of the normal one.**
 
 ### Poison
 `amount` is the amount of Poison Buffer added to the `IEntityLivingBase`. 
