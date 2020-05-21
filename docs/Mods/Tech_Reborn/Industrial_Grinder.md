@@ -11,7 +11,7 @@ mods.techreborn.industrialGrinder.addRecipe(IItemStack output1, IItemStack outpu
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.industrialGrinder.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.industrialGrinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.industrialGrinder.removeRecipe(IItemStack output);
 mods.techreborn.industrialGrinder.removeAll();
 ```

@@ -10,7 +10,7 @@ mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, II
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.alloySmelter.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.alloySmelter.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.alloySmelter.removeRecipe(IItemStack output);
 mods.techreborn.alloySmelter.removeAll();
 ```

@@ -13,7 +13,7 @@ mods.techreborn.industrialSawmill.addRecipe(IItemStack output1, IItemStack outpu
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.industrialSawmill.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.industrialSawmill.removeRecipe(IItemStack output);
 mods.techreborn.industrialSawmill.removeAll();
 ```

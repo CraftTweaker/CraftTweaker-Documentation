@@ -10,7 +10,7 @@ mods.techreborn.assemblingMachine.addRecipe(IItemStack output, IIngredient input
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.assemblingMachine.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.assemblingMachine.removeInputRecipe(IIngredient ingredientA, IIngredient ingredientB);
 mods.techreborn.assemblingMachine.removeRecipe(IItemStack output);
 mods.techreborn.assemblingMachine.removeAll();
 ```

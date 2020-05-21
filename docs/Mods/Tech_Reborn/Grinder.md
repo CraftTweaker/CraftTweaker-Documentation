@@ -10,7 +10,7 @@ mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int tic
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.grinder.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
 mods.techreborn.grinder.removeAll();
 ```

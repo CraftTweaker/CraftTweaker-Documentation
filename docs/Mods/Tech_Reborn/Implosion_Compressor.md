@@ -10,7 +10,7 @@ mods.techreborn.implosionCompressor.addRecipe(IItemStack output1, IItemStack out
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.implosionCompressor.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.implosionCompressor.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.implosionCompressor.removeRecipe(IItemStack output);
 mods.techreborn.implosionCompressor.removeAll();
 ```

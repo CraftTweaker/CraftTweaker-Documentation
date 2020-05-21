@@ -1,4 +1,4 @@
-# Condense
+# Condenser
 **Note: Partially Broken**
 
 ## Importing the Package
@@ -6,7 +6,7 @@
 
 ## Adding Recipes
 ```zenscript
-mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature});
+mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature);
 ```
 
 ## Removing Recipes

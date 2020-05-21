@@ -10,7 +10,7 @@ mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack outpu
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.distillationTower.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.distillationTower.removeRecipe(IItemStack output);
 mods.techreborn.distillationTower.removeAll();
 ```

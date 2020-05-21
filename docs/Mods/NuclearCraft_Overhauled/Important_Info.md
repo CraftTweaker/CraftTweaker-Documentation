@@ -1,7 +1,4 @@
-# NuclearCraft
-
-**Note:The double set of brackets in functions, `([...])` is necessary.**
-This is basically because all NuclearCraft CraftTweaker methods require an array of objects, be they ingredients, strings, integers or doubles.
+# NuclearCraft: Overhauled
 
 All recipes involve five sets of information - item inputs, fluid inputs, item outputs, fluid outputs and extra info. The
 first four are clearly the ingredients and products involved in the recipe, and the extra info contains data such as
@@ -25,6 +22,8 @@ For ChanceFluidIngredients, a 'stack difference' must also be specified, which d
 the possible stacks (for ChanceItemIngredients, this is effectively 1). For example, a ChanceFluidIngredient for an
 ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500
 millibuckets of the fluid.
+
+**Note: `ChanceItemIngredient` and `ChanceFluidIngredient` count as `IIngredient` for the purpose of recipes in NuclearCraft: Overhauled**
 
 ### ChanceItemIngredient
 
@@ -50,6 +49,7 @@ int getMinStackSize();
 ```
 
 ### ChanceFluidIngredient
+These can be used anywhere where regular `ILiquidStack` is used. 
 
 #### Creation
 ```zenscript

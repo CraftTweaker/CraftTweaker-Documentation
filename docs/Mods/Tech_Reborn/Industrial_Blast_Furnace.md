@@ -1,4 +1,4 @@
-# Blast Furnace
+# Industrial Blast Furnace
 
 ## Importing the Package
 `mods.techreborn.blastFurnace`
@@ -10,7 +10,7 @@ mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, I
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.blastFurnace.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.blastFurnace.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.blastFurnace.removeRecipe(IItemStack output);
 mods.techreborn.blastFurnace.removeAll();
 ```

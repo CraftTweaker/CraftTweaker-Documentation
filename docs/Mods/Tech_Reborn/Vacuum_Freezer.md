@@ -10,7 +10,7 @@ mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, in
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);
 mods.techreborn.vacuumFreezer.removeAll();
 ```

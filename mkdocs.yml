@@ -879,7 +879,6 @@ nav:
     - Tech Reborn:
       - Alloy Smelter: 'Mods/Tech_Reborn/Alloy_Smelter.md'
       - Assembling Machine: 'Mods/Tech_Reborn/Assembling_Machine.md'
-      - Blast Furnace: 'Mods/Tech_Reborn/Blast_Furnace.md'
       - Centrifuge: 'Mods/Tech_Reborn/Centrifuge.md'
       - Chemical Reactor: 'Mods/Tech_Reborn/Chemical_Reactor.md'
       - Compressor: 'Mods/Tech_Reborn/Compressor.md'
@@ -890,12 +889,16 @@ nav:
       - Fusion Reactor: 'Mods/Tech_Reborn/Fusion_Reactor.md'
       - Grinder: 'Mods/Tech_Reborn/Grinder.md'
       - Implosion Compressor: 'Mods/Tech_Reborn/Implosion_Compressor.md'
+      - Industrial Blast Furnace: 'Mods/Tech_Reborn/Industrial_Blast_Furnace.md'
       - Industrial Electrolyzer: 'Mods/Tech_Reborn/Industrial_Electrolyzer.md'
       - Industrial Grinder: 'Mods/Tech_Reborn/Industrial_Grinder.md'
       - Industrial Sawmill: 'Mods/Tech_Reborn/Industrial_Sawmill.md'
+      - Plate Bending Machine: 'Mods/Tech_Reborn/Plate_Bending_Machine.md'
       - Rolling Machine: 'Mods/Tech_Reborn/Rolling_Machine.md'
       - Scrapbox: 'Mods/Tech_Reborn/Scrapbox.md'
+      - Solid Canning Machine: 'Mods/Tech_Reborn/Solid_Canning_Machine.md'
       - Vacuum Freezer: 'Mods/Tech_Reborn/Vacuum_Freezer.md'
+      - Wire Mill: 'Mods/Tech_Reborn/Wire_Mill.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:

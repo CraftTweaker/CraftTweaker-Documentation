@@ -1,4 +1,4 @@
-# Condense
+# Condenser
 
 ## Importing the Package
 `mods.nuclearcraft.condenser`

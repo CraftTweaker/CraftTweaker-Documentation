@@ -10,7 +10,7 @@ mods.techreborn.industrialElectrolyzer.addRecipe(IItemStack output1, IItemStack 
 
 ## Removing Recipes
 ```zenscript
-mods.techreborn.industrialElectrolyzer.removeInputRecipe(IIngredient iIngredient);
+mods.techreborn.industrialElectrolyzer.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.industrialElectrolyzer.removeRecipe(IItemStack output);
 mods.techreborn.industrialElectrolyzer.removeAll();
 ```

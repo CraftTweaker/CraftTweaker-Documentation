@@ -68,7 +68,7 @@ IEntityLivingBase::getRadiation();
 ```zenscript
 IEntityLivingBase::addRadawayBuffer(double amount, @Optional boolean slowBuffer);
 IEntityLivingBase::setRadawayBuffer(double amount, @Optional boolean slowBuffer);
-IEntityLivingBase::getRadawayBuffer({boolean slowBuffer});
+IEntityLivingBase::getRadawayBuffer(boolean slowBuffer);
 ```
 
 ### Poison
