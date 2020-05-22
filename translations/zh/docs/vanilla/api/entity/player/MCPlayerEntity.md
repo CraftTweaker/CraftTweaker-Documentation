@@ -396,19 +396,19 @@ myMCPlayerEntity.disableShield（p_190777_1_ 为布尔值）；
 | p_190777_1_ | 布尔值 | 未提供说明 |
 
 
-### doesEntityNotTriggerPressurePlate
+### doesEntityNotTriggerPressurePlate #实体是否会触发压力板
 
-Return whether this entity should NOT trigger a pressure plate or a tripwire.
+返回此实体是否会触发压力板或绊线。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 ```
 
-### equals
+### equals #等于
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.equals(p_equals_1_ as Object);
