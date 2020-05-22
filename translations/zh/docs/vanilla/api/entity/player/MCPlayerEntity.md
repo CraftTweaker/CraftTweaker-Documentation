@@ -391,9 +391,9 @@ myMCPlayerEntity.detach();
 myMCPlayerEntity.disableShield（p_190777_1_ 为布尔值）；
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_190777_1_ | boolean | No description provided |
+| 参数            | 类型  | 说明    |
+| ------------- | --- | ----- |
+| p_190777_1_ | 布尔值 | 未提供说明 |
 
 
 ### doesEntityNotTriggerPressurePlate
