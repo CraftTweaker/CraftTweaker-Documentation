@@ -385,10 +385,10 @@ myMCPlayerEntity.curePotionEffects(治疗的效果为 crafttweaker.api.item.IIte
 myMCPlayerEntity.detach();
 ```
 
-### disableShield
+### disableShield #禁用盾
 
 ```zenscript
-myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
+myMCPlayerEntity.disableShield（p_190777_1_ 为布尔值）；
 ```
 
 | Parameter     | Type    | Description             |
