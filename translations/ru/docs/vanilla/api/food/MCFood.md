@@ -12,10 +12,10 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Тип   | Описание                |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| Parameter  | Тип   | Описание             |
+| ---------- | ----- | -------------------- |
+| healing    | int   | Описание отсутствует |
+| saturation | float | Описание отсутствует |
 
 
 
