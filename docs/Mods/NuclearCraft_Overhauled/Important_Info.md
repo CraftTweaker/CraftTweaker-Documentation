@@ -36,8 +36,8 @@ mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chance
 #### Examples
 
 ```zenscript
-ChanceItemIngredient.create(`<minecraft:coal>`*2, 25);
-ChanceItemIngredient.create(`<ore:dustGlowstone>`*3, 60, 2);
+ChanceItemIngredient.create(<minecraft:coal>*2, 25);
+ChanceItemIngredient.create(<ore:dustGlowstone>*3, 60, 2);
 ```
 
 #### Extra Methods
@@ -58,8 +58,8 @@ mods.nuclearcraft.ChanceFluidIngredient.create(IIngredient ingredient, int chanc
 
 #### Examples
 ```zenscript
-ChanceFluidIngredient.create(`<liquid:water>`*1500, 35, 300);
-ChanceFluidIngredient.create(`<liquid:oil>`*1000, 80, 200, 400);
+ChanceFluidIngredient.create(<liquid:water>*1500, 35, 300);
+ChanceFluidIngredient.create(<liquid:oil>*1000, 80, 200, 400);
 ```
 
 #### Extra Methods
