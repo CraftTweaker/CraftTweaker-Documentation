@@ -36,8 +36,8 @@ mods.nuclearcraft.ChanceItemIngredient.create(IIngredient ingredient, int chance
 #### Examples
 
 ```zenscript
-ChanceItemIngredient.create(<minecraft:coal>*2, 25);
-ChanceItemIngredient.create(<ore:dustGlowstone>*3, 60, 2);
+ChanceItemIngredient.create(`<minecraft:coal>`*2, 25);
+ChanceItemIngredient.create(`<ore:dustGlowstone>`*3, 60, 2);
 ```
 
 #### Extra Methods
@@ -58,8 +58,8 @@ mods.nuclearcraft.ChanceFluidIngredient.create(IIngredient ingredient, int chanc
 
 #### Examples
 ```zenscript
-ChanceFluidIngredient.create(<liquid:water>*1500, 35, 300);
-ChanceFluidIngredient.create(<liquid:oil>*1000, 80, 200, 400);
+ChanceFluidIngredient.create(`<liquid:water>`*1500, 35, 300);
+ChanceFluidIngredient.create(`<liquid:oil>`*1000, 80, 200, 400);
 ```
 
 #### Extra Methods
@@ -71,42 +71,42 @@ int getMinStackSize();
 ```
 
 ## Recipe Additions
-Recipe Methods will specify `itemInput` for Item Inputs. <br/>
-Recipe Methods will specify `itemOutput` for Item Outputs. <br/>
-Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/>
-Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/>
-Recipe Methods will specify `blockInput` for Block Inputs. <br/>
-Recipe Methods will specify `blockOutput` for Block Outputs. <br/>
+Recipe Methods will specify `itemInput` for Item Inputs. `<br/>`
+Recipe Methods will specify `itemOutput` for Item Outputs. `<br/>`
+Recipe Methods will specify `fluidInput` for Fluid Inputs. `<br/>`
+Recipe Methods will specify `fluidOutput` for Fluid Outputs. `<br/>`
+Recipe Methods will specify `blockInput` for Block Inputs. `<br/>`
+Recipe Methods will specify `blockOutput` for Block Outputs. `<br/>`
 **Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
 
 ### Item Inputs 
-`IItemStack`: <minecraft:gunpowder> * 4 <br/>
-`IOreDictEntry`: <ore:ingotIron> * 2 <br/>
+`IItemStack`: `<minecraft:gunpowder>` * 4 `<br/>`
+`IOreDictEntry`: `<ore:ingotIron>` * 2 `<br/>`
 `null`: null
 
 ### Item Outputs
-`IItemStack`: <minecraft:gunpowder> * 4 <br/>
-`IOreDictEntry`: <ore:ingotIron> * 2 <br/>
-`ChanceItemIngredient`: <ore:gemDiamond> * 5, 75 <br/>
+`IItemStack`: `<minecraft:gunpowder>` * 4 `<br/>`
+`IOreDictEntry`: `<ore:ingotIron>` * 2 `<br/>`
+`ChanceItemIngredient`: `<ore:gemDiamond>` * 5, 75 `<br/>`
 `null`: null
 
 ### Fluid Inputs
-`ILiquidStack`: <liquid:lava> * 1500 <br/>
+`ILiquidStack`: `<liquid:lava>` * 1500 `<br/>`
 `null`: null
 
 ### Fluid Outputs
-`ILiquidStack`: <liquid:lava> * 1500 <br/>
-`ChanceLiquidStack` : <liquid:water> * 2000, 40, 250, 500 <br/>
+`ILiquidStack`: `<liquid:lava>` * 1500 `<br/>`
+`ChanceLiquidStack` : `<liquid:water>` * 2000, 40, 250, 500 `<br/>`
 `null`: null
 
 ### Block Inputs
-`IItemStack`: <minecraft:dirt> * 4 <br/>
-`IOreDictEntry`: <ore:blockIron> * 2 <br/>
+`IItemStack`: `<minecraft:dirt>` * 4 `<br/>`
+`IOreDictEntry`: `<ore:blockIron>` * 2 `<br/>`
 `null`: null
 
 ### Block Outputs
-`IItemStack`: <minecraft:dirt> * 4 <br/>
-`IOreDictEntry`: <ore:blockIron> * 2 <br/>
+`IItemStack`: `<minecraft:dirt>` * 4 `<br/>`
+`IOreDictEntry`: `<ore:blockIron>` * 2 `<br/>`
 `null`: null
 
 ## Recipe Removals

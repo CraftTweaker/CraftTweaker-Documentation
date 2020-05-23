@@ -758,10 +758,6 @@ nav:
       - Natural Altar: 'Mods/Natures_Aura/Natural_Altar.md'
       - Offering to the Gods: 'Mods/Natures_Aura/Offering_To_The_Gods.md'
       - Ritual of the Forest: 'Mods/Natures_Aura/Ritual_Of_The_Forest.md'
-    - PackMode:
-      - PackMode: 'Mods/Pack_Mode/Packmode.md'
-      - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
-      - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - NuclearCraft:
       - Important Info: 'Mods/NuclearCraft/Important_Info.md'
       - Radiation: 'Mods/NuclearCraft/Radiation.md'
@@ -823,6 +819,10 @@ nav:
         - Salt Mixer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Salt_Mixer.md'
         - Steam Turbine: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Steam_Turbine.md'
         - Supercooler: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Supercooler.md'
+    - PackMode:
+      - PackMode: 'Mods/Pack_Mode/Packmode.md'
+      - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
+      - Command: 'Mods/Pack_Mode/Commands/Packmode_Command.md'
     - PneumaticCraft&#58; Repressurized:
       - About PneumaticCraft&#58; Repressurized: 'Mods/PneumaticCraft_Repressurized/PneumaticCraft_Repressurized.md'
       - Crafting:
@@ -916,7 +916,7 @@ nav:
       - Solid Canning Machine: 'Mods/Tech_Reborn/Solid_Canning_Machine.md'
       - Vacuum Freezer: 'Mods/Tech_Reborn/Vacuum_Freezer.md'
       - Wire Mill: 'Mods/Tech_Reborn/Wire_Mill.md'
-    - Terrafirmacraft:
+    - TerraFirmaCraft&#58; The Next Generation:
       - Terrafirmacraft: 'Mods/Terrafirmacraft/Terrafirmacraft.md'
       - Heating: 'Mods/Terrafirmacraft/Heating.md'
       - HeatingTemperatures: 'Mods/Terrafirmacraft/HeatingTemperatures.md'
@@ -937,7 +937,7 @@ nav:
         - Loom: 'Mods/Terrafirmacraft/Recipes/Loom.md'
         - Quern: 'Mods/Terrafirmacraft/Recipes/Quern.md'
     - The Aether: 
-      - Accesory: 'Mods/The_Aether/Accesory.md'
+      - Accessory: 'Mods/The_Aether/Accessory.md'
       - Enchanter: 'Mods/The_Aether/Enchanter.md'
       - Freezer: 'Mods/The_Aether/Freezer.md'
     - Tree Tweaker:
