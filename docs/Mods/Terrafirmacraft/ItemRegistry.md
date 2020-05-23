@@ -44,5 +44,5 @@ ItemRegistry.registerArmor(IIngredient input, float crushingModifier, float pier
 ## Register Fuel
 - Register item as a fuel for fire pit, forge or bloomery
 ```zenscript
-ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel)
+ItemRegistry.registerFuel(IItemStack itemStack, int burnTicks, float temperature, bool forgeFuel, bool bloomeryFuel);
 ```

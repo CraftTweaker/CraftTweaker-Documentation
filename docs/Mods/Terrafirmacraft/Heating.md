@@ -16,6 +16,6 @@ Heating.addRecipe(String registryName, IItemStack input, IItemStack output, floa
 ## Removal
 
 ```zenscript
-Heating.removeRecipe(IItemStack output)
-Heating.removeRecipe(String registryName)
+Heating.removeRecipe(IItemStack output);
+Heating.removeRecipe(String registryName);
 ```
