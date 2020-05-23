@@ -1,4 +1,4 @@
-# Arc Furnace
+# Blast Furnace
 
 The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
 
@@ -40,7 +40,7 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 
 ## Add Fuel
 
-| Required | Type  | Data Type                                           |
+| Required | 返回值类型 | Data Type                                           |
 | -------- | ----- | --------------------------------------------------- |
 | Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 | Required | Time  | Integer                                             |
@@ -55,7 +55,7 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 
 ## Remove Fuel
 
-| Required | Type   | Data Type                                |
+| Required | 返回值类型  | Data Type                                |
 | -------- | ------ | ---------------------------------------- |
 | Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
