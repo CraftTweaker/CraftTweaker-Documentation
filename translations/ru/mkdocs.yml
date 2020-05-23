@@ -241,6 +241,16 @@ nav:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - Поддержка CraftTweaker: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - Alchemistry:
+      - Atomizer: 'Mods/Alchemistry/Atomizer.md'
+      - Chemical Combiner: 'Mods/Alchemistry/ChemicalCombiner.md'
+      - Chemical Dissolver: 'Mods/Alchemistry/Dissolver.md'
+      - Compound Creation: 'Mods/Alchemistry/CreateCompound.md'
+      - Electrolyzer: 'Mods/Alchemistry/Electrolyzer.md'
+      - Element Creation: 'Mods/Alchemistry/CreateElement.md'
+      - Evaporator: 'Mods/Alchemistry/Evaporator.md'
+      - Liquifier: 'Mods/Alchemistry/Liquifier.md'
+      - Get Metadata: 'Mods/Alchemistry/MetaGet.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -743,6 +753,11 @@ nav:
         - Printer: 'Mods/MrCrayfish_s_Furniture_Mod/Printer.md'
         - Toaster: 'Mods/MrCrayfish_s_Furniture_Mod/Toaster.md'
         - Washing Machine: 'Mods/MrCrayfish_s_Furniture_Mod/WashingMachine.md'
+    - Nature's Aura:
+      - Altar of Birthing: 'Mods/Natures_Aura/Altar_Of_Birthing.md'
+      - Natural Altar: 'Mods/Natures_Aura/Natural_Altar.md'
+      - Offering to the Gods: 'Mods/Natures_Aura/Offering_To_The_Gods.md'
+      - Ritual of the Forest: 'Mods/Natures_Aura/Ritual_Of_The_Forest.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
@@ -901,6 +916,30 @@ nav:
       - Solid Canning Machine: 'Mods/Tech_Reborn/Solid_Canning_Machine.md'
       - Vacuum Freezer: 'Mods/Tech_Reborn/Vacuum_Freezer.md'
       - Wire Mill: 'Mods/Tech_Reborn/Wire_Mill.md'
+    - Terrafirmacraft:
+      - Terrafirmacraft: 'Mods/Terrafirmacraft/Terrafirmacraft.md'
+      - Heating: 'Mods/Terrafirmacraft/Heating.md'
+      - HeatingTemperatures: 'Mods/Terrafirmacraft/HeatingTemperatures.md'
+      - ItemRegistry: 'Mods/Terrafirmacraft/ItemRegistry.md'
+      - Metal: 'Mods/Terrafirmacraft/Metal.md'
+      - Рецепты:
+        - Anvil: 
+          - Anvil: 'Mods/Terrafirmacraft/Recipes/Anvil/Anvil.md'
+          - Welding: 'Mods/Terrafirmacraft/Recipes/Anvil/Welding.md'
+        - Barrel: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
+        - Knapping:
+          - Clay: 'Mods/Terrafirmacraft/Recipes/Knapping/Clay.md'
+          - FireClay: 'Mods/Terrafirmacraft/Recipes/Knapping/FireClay.md'
+          - Leather: 'Mods/Terrafirmacraft/Recipes/Knapping/Leather.md'
+          - Stone: 'Mods/Terrafirmacraft/Recipes/Knapping/Stone.md'
+        - Alloy: 'Mods/Terrafirmacraft/Recipes/Alloy.md'
+        - Chisel: 'Mods/Terrafirmacraft/Recipes/Chisel.md'
+        - Loom: 'Mods/Terrafirmacraft/Recipes/Loom.md'
+        - Quern: 'Mods/Terrafirmacraft/Recipes/Quern.md'
+    - The Aether: 
+      - Accesory: 'Mods/The_Aether/Accesory.md'
+      - Enchanter: 'Mods/The_Aether/Enchanter.md'
+      - Freezer: 'Mods/The_Aether/Freezer.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
