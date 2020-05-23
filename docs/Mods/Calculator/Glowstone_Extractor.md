@@ -8,7 +8,6 @@ import mods.calculator.glowstone;
 ## Methods
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 - **Int value** The amount of input adds to that machine.
 
 
