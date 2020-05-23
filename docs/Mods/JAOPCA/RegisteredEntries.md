@@ -17,8 +17,8 @@ These are base entries, they may be extended by addons or special mod integratio
 | "molten"                          | JAOPCA                                                                                                                                                                        |
 |                                   |                                                                                                                                                                               |
 | "block"                           | JAOPCA                                                                                                                                                                        |
-| "fence"                           | JAOPCA or [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                        |
-| "wall"                            | JAOPCA or [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                        |
+| "fence"                           | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                        |
+| "wall"                            | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions)                                                                                        |
 |                                   |                                                                                                                                                                               |
 | "crystalAbyss"                    | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                               |
 | "crystalCluster"                  | JAOPCA + [abyssalcraft](https://minecraft.curseforge.com/projects/abyssalcraft)                                                                                               |
@@ -57,4 +57,4 @@ These are base entries, they may be extended by addons or special mod integratio
 |                                   |                                                                                                                                                                               |
 | "dustSmall"                       | JAOPCA + [Tech Reborn](https://minecraft.curseforge.com/projects/techreborn)                                                                                                  |
 |                                   |                                                                                                                                                                               |
-| "hardenedGlass"                   | JAOPCA or [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions) + [Thermal Foundation](https://minecraft.curseforge.com/projects/thermal-foundation)   |
+| "hardenedGlass"                   | [JAOPCAAdditions](https://minecraft.curseforge.com/projects/jaopcaadditions) + [Thermal Foundation](https://minecraft.curseforge.com/projects/thermal-foundation)   |
