@@ -832,11 +832,13 @@ nav:
           - Leather: 'Mods/Terrafirmacraft/Recipes/Knapping/Leather.md'
           - Stone: 'Mods/Terrafirmacraft/Recipes/Knapping/Stone.md'
         - Alloy: 'Mods/Terrafirmacraft/Recipes/Alloy.md'
-        - Barrel: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
         - Chisel: 'Mods/Terrafirmacraft/Recipes/Chisel.md'
         - Loom: 'Mods/Terrafirmacraft/Recipes/Loom.md'
         - Quern: 'Mods/Terrafirmacraft/Recipes/Quern.md'
-    - The Aether: 'Mods/The_Aether/The_Aether.md'
+    - The Aether: 
+      - Accesory: 'Mods/The_Aether/Accesory.md'
+      - Enchanter: 'Mods/The_Aether/Enchanter.md'
+      - Freezer: 'Mods/The_Aether/Freezer.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
