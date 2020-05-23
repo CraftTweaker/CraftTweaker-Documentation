@@ -1,6 +1,6 @@
 # 連想配列
 
-連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](Arrays_and_Loops/)と似ています。 [配列](Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
+連想配列(しばしばMapやDictionaryとも称される)とは、複数の要素を格納できるという点において、通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)と似ています。 [配列](/AdvancedFunctions/Arrays_and_Loops/)と異なる点は、好みの型をインデックス、もしくはキー(Mapではこう呼ぶ)に使うことができるところです。
 
 ## 連想配列の作り方
 
@@ -30,7 +30,7 @@ val myAssocArray = {
 
 ## 連想配列の要素へのアクセス
 
-通常の[配列](Arrays_and_Loops/)の要素へアクセスするのと同じ方法で、連想配列の要素へとアクセスできます。  
+通常の[配列](/AdvancedFunctions/Arrays_and_Loops/)の要素へアクセスするのと同じ方法で、連想配列の要素へとアクセスできます。  
 `Array[index]`  
 違いは、インデックスには整数以外も使用できますが、配列を宣言する型は何でも可能です。
 

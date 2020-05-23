@@ -8,10 +8,11 @@
 
 ## 전역과 정적의 차이
 
-공통점은 둘 다 스크립트가 실행되기 전에 초기화되고, 스크립트 내에서 사용 가능합니다. 그리고 둘 다 한 번 초기화되면 값을 변경할 수 없습니다.  
-차이점은 어떻게 호출하는가에 있습니다.  
-global 상수는 모든 곳에서 그 식별자로 호출이 가능한 상수입니다. 단, 동일한 이름의 지역 변수가 있을 경우 지역 변수가 더 우선시됩니다. (다시 말해 지역 변수는 global 상수를 숨깁니다.)  
-static 상수는 호출하기 위해선 [스크립트 간 참조](Cross-Script_Reference/)에 나와있는 방식을 따라야합니다.
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
 global 상수는 `global` 키워드로, static 상수는 `static` 키워드로 선언할 수 있습니다.
 
@@ -33,7 +34,7 @@ static myStaticValue as IItemStack = <minecraft:sand>;
 
 1. `global` 키워드는 global 상수의 선언을 가리킵니다.
 2. `myGlobalValue`는 현재 선언된 global 상수의 식별자입니다.
-3. `as IItemStack`는 초기화할 값의 자료형입니다. (특정 자료형으로 캐스팅하기 전엔 꼭 자료형을 먼저 [import](Import/)하는 것을 권장합니다.)
+3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
 4. `= <minecraft:dirt>;`는 초기화할 값입니다. 전역 상수는 전부 선언 당시에 딱 한 번만 값이 할당되기에 선언하기 위해선 반드시 값을 초기화해야 합니다!
 
 ## 조언

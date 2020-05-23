@@ -17,8 +17,8 @@ function NAME ([arguments[as type]]) [as returnType]{
 
 ## 정적 함수
 
-정적 함수는 스크립트를 실행하기 전에 생성되며 스크립트의 어느 곳에서나 액세스할 수 있습니다.  
-[cross-script reference](Cross-Script_Reference)를 사용하여 스크립트 외부에 선언된 함수를 액세스할 수도 있습니다.
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
 ### 보이드 함수
 

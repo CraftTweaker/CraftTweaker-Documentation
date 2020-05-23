@@ -2,7 +2,7 @@
 
 A Mod.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityMob;`
@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntityCreature](/Vanilla/Entities/IEntityCreature/) objects also are available to IEntityMob.
 
-## Methods
+## Методы
 
 ### ZenMethods
 
@@ -20,4 +20,6 @@ IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That m
 The Method requires an [IPlayer](/Vanilla/Players/IPlayer/) object.  
 Returns a bool.
 
-    entMobObj.isPreventingPlayerRest(IPlayer player);
+```zenscript
+entMobObj.isPreventingPlayerRest(IPlayer player);
+```

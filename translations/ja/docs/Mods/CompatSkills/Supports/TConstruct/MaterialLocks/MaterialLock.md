@@ -2,16 +2,16 @@
 
 ## Material-Lock
 
-With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
+CompatSkills 1.5.0において、TConstrucuサポートが実装されました。ロックが可能になっています。
 
-    - Tool Crafting
-    - Part Crafting
-    - Part Replacement
+    - ツールの作成
+    - ツールパーツの作成
+    - パーツの交換
     
 
-For specific Tinker Construct's Materials.
+Tinker Construct'sの特定の素材(マテリアル)用。
 
-### Syntax:
+### 構文:
 
     // Blank Example:
     mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);

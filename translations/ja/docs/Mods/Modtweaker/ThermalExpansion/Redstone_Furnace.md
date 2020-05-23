@@ -20,9 +20,9 @@ mods.thermalexpansion.RedstoneFurnace.removeRecipe(<minecraft:gold_ore>);
 
 ## Pyrolitic Augment Addition
 
-***Note that the energy is multiplied by `1.5`. If you specify `2000` energy, the recipe will actually cost `3000` RF. Likewise if you specify `1500`, it will cost `2250` RF.***
+***エネルギーが`1.5`倍されていることに注意してください。 `2000`のエネルギーを指定すると、実際のレシピにおけるコストは、`3000` RFになります。 同様に、`1500`を指定すると、`2250` RFのコストが必要になります。***
 
-Example recipe to turn charcoal into coal coke, producing 250mb of creosote oil in the process.
+木炭をcoal cokeに変え、250mbのcreosote oilを製造するレシピの例です。
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(IItemStack output, IItemStack input, int energy, int creosote);
@@ -31,7 +31,7 @@ mods.thermalexpansion.RedstoneFurnace.addPyrolysisRecipe(<thermalfoundation:mate
 
 ## Pyrolitic Augment Removal
 
-Removes the recipe to convert coal into coal coke.
+石炭をcoal cokeに変化させるレシピを削除します。
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.removePyrolysisRecipe(IItemStack input);

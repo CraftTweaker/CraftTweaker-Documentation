@@ -2,17 +2,17 @@
 
 ## Notice
 
-As of CompatSkills 1.9.0, TConstruct Locks now pass "up" to item-level. That way the tools are still inaccessible if a friend provides a crafted version.
+CompatSkills 1.9.0以降、TConstructにおけるロックは、アイテムレベルに"up"を渡すようになりました。 これにより、友達が作成したものを受け取った場合でも、ツールにアクセスができなくなっています。
 
-## Commands
+## コマンド
 
-    // Dumps all Materials
+    // すべての素材を破棄
     ~ /ct tinkermaterials
     
-    // Dumps all Modifiers
-    ~ /ct tinkermodifiers
+    // すべてのモディファイアを破棄
+    ~ /ct tinkermaterials
     
 
-## Tool-Creation Locks
+## ツール作成のロック
 
-By adding a normal ItemStack lock to any of the Tinker Tool-Types (not Part-Types!). You can lock the creation of a Tinker Tool-Type!
+通常のItemStackロックを、Tinkerr's Constructにおける任意の種類のツール(パーツの種類ではありません!)に追加します。 Tinkerにおけるいずれかのツールの作成をロックできます!

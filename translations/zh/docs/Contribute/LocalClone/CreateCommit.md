@@ -1,79 +1,78 @@
 # 创建提交
 
-## 先决条件
+## 需求
 
-You need to have [Cloned the repo to your local disk](/Contribute/LocalClone/Clone).  
-You also need to already have changed something within your local clone.
+你需要[在本地磁盘里拷贝了存储库](/Contribute/LocalClone/Clone)。  
+你需要已经在本地副本里更改了一些东西。
 
 ## 我们将做什么
 
-For the sake of learning, we will create a file named `Test.md` which will be available in `AdvancedFunctions/Secret/Test` and add it to mkdocs.yml.
+作为教学，我们将创建一个在 `AdvancedFunctions/Secret/Test` 里的名叫 `Test.md` 的文件，并将其添加到 mkdocs.yml 中。
 
-The screenshots are taken from a Sublime Text 3 Editor (unregistered because on a VM), but you can use whatever editor you want to create/modify the files.  
-That's one of the advantages of working locally ^^.
+这张截图截自 Sublime Text 3 编辑器（由于虚拟机的原因未注册），不过你可以使用你想用的任何编辑器。  
+这是在本地工作的一个优点 ^_^。
 
-Screenshots of the example files: ![Test.md](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
+示例文件的截屏： ![Test.md](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
 
-## Git status and Git add/stage
+## git status 与 git add/stage
 
-The `git status` command tells you which files have been changed.  
-In our example it shows us this:
+`git status`指令显示哪些文件被更改了。  
+在我们的例子了其显示：
 
-![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
+![Git status 调用](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
 
-As you can see, we have two sections, modified files and untracked files. Modified files are files whose content differ from the index (git knows another version of them than you currently have on your computer).  
-Untracked files are files that don't yet exist in the index (git doesn't know them yet).
+像你看到的一样，这里有两个部分，被更改的文件（modified files）与未监控的文件（untracked files）。 被更改的文件与索引区中的文件不同（git 所记录的是其与在你的电脑上不同的另一个版本）。  
+未监控的文件并不存在于索引区中（git 还不知道它们）。
 
-In both cases you can tell git to *stage* the files using either `git add` or `git stage`: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
+在两种情况下，你都可以通过 `git add` 或 `git stage` 让 git 将文件 *暂存*： ![Git status 调用](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
 
-Now the files are staged to be committed and therefore printed in green. Notice, that if you were to modify either of those files now you would need to issue the add command again as it only adds the current state to the staging area.
+现在，这些文件已经被暂存，准备提交，所以被以绿色显示。 注意：如果你现在再更改其中任意文件，就需要再次使用 add 指令，因为其只将当前的状态加入暂存区。
 
 ## Git commit
 
-Now that you have added the files you need to create a commit.  
-This can be done using the `git commit` command.
+现在，你已经把文件添加入暂存区，需要创建一个提交（commit）。  
+这可以通过`git commit`指令做到。
 
-When you issue that command, all file states that are currently staged will be combined and added to the index.  
-That means that you can create one commit that changes more than one file (something GH's online editor is not capable of).  
-Usually you will want to create one commit per logical sector, so if you were to create a PR that adds documentation for ModA, ModB and ModC, you may want to create one commit that adds ModA, one that adds ModB and one that adds ModC.
+当你执行该命令时，所有被暂存的文件将会被结合并加入索引区。  
+这意味着你可以创建一个包含多个文件的改动的提交（这是在 github 的在线编辑器里做不到的）。  
+一般而言，你应该对每一个逻辑部分创建提交，也就是说如果你想创建一个对 modA, modB, modC添加文档的拉取请求（Pull Request），你应该创建一个添加 modA 的提交，一个添加 modB 的提交，以及一个添加 modC 的提交。
 
-### Setting git Credentials
+### 设置 git 凭据
 
-If this is the first time you create a commit using git you will see this message: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
+如果这是您第一次使用 git 创建一个提交，您将会看到此消息： ![Git status 调用](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
 
-This means that git does not know who you are, so it does not know who the commit author is supposed to be. So let's run the commands stated in the error message:
+这意味着 git 不知道你是谁，所以其不知道该提交的作者应该是谁。 于是，运行在错误信息里显示的命令：
 
-    git config --global user.email "yourEmail"
-    git config --global user.name "yourName"
+    git config --global user.email "你的邮箱地址"
+    git config --global user.name "你的名称"
     
 
-For the email, use one that has been added to your GH account.  
-For the name you can use anything but try to use your GH account name.
+使用与你的 github 账号绑定的邮箱作为邮箱地址。  
+可以使用任何文本作为名称，但最好使用你的 github 用户名。
 
-### Setting the commit title/message
+### 设置提交的标题/内容
 
-If your credentials are set correctly, you will get a screen like this: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
+如果您的凭据设置正确，您将得到一个像这样的显示： ![Git commit 内容窗口](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
 
-This is from the text editor GitBash uses for that.  
-To enter insert mode (so that you can write something), press the INSERT key.  
-Now you can write your commit title (first line) and the commit message (everything below that).  
-You can use the ENTER key to create a new line and everything starting with a `#` will be ignored.
+这是 GitBash 所使用的文本编辑器。 按下 INSRET 键进入插入（insert）模式（以开始输入内容）。  
+现在，你可以输入提交的标题（第一行）以及内容（下面的任何东西）。  
+按下回车键创建新行，而以`#`开头的文本将被忽略。
 
-Don't mind the coloring, that's not your concern right now.  
-To exit the INSERT mode, press ESC.
+不要在意其高亮颜色，这不是你现在需要担心的。  
+按下 ESC 键以退出插入模式。
 
-Now you need to tell the editor that you are finished.  
-You can do that by typing pressing `:x` and pressing ENTER.
+现在，你需要告诉编辑器你输入完了。  
+可以通过输入`:x`然后按下回车键做到这一点。
 
-Here's a screen of what this may look like just before pressing enter to leave the editor: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
+这是在按下回车键离开编辑器前的显示：![Git commit 内容窗口](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
 
-### Setting the commit message/title using -m
+### 使用 -m 参数设置提交的内容/标题
 
-If you don't like the bash editor or find it hard to remember what keys to press, you can also use the `-m "message"` parameter. You can open the `"` and leave it unmatched to be able to create line breaks. Finish by typing the maching `"`.  
-Like in the editor, everything below the first line is considered part of the commit message.
+如果你不喜欢 bash 所用的编辑器或觉得记住需要按的键很难，你同样可以使用`-m "内容"`参数。 你可以只写一个`"`使其不匹配来写入换行。 输入相匹配的`"`结束提交文本。  
+像在编辑器里一样，第一行下到任何东西都被认作提交内容的一部分。
 
-The same commit message as above could be achieved by doing: ![Git commit using -m](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
+可以通过以下操作实现与上面相同的提交内容： ![使用 -m 的 git commit](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
 
-## How to continue
+## 下一步该做什么
 
-Now that you know how to create commits, you can [push them to your fork](/Contribute/LocalClone/Push/).
+现在，你知道怎么创建提交了，你可以[将其推送（push）到你的分支中](/Contribute/LocalClone/Push/)。

@@ -1,14 +1,14 @@
 # PlayerInteractEntity
 
-The PlayerInteractEntity Event is fired whenever a player interacts with an Entity.
+The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerInteractEntityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
 PlayerInteractEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -16,16 +16,16 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
-## ZenGetters
+## ZenGetters & ZenSetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter  | Return Type                           |
-| ---------- | ------------------------------------- |
-| `canceled` | boolean                               |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `target`   | [IEntity](/Vanilla/Entities/IEntity/) |
+| ZenGetter            | ZenSetters           | Возвращаемый тип                      |
+| -------------------- | -------------------- | ------------------------------------- |
+| `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
+| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
 
-## ZenMethods
+## Методы
 
 - `event.cancel()` sets the event as cancelled.

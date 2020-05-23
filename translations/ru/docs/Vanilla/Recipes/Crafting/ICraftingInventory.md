@@ -1,31 +1,28 @@
 # ICraftingInventory
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+ICraftingInventory содержит всю информацию об инвентаре, в котором ведется крафт.
 
-## Importing the class
+## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+Может понадобиться [импортировать](/AdvancedFunctions/Import/) класс для избежания ошибок:  
 `import crafttweaker.recipes.ICraftingInventory`
 
-## ZenGetters
+## Геттеры ZenScript
 
-| ZenGetter    | Return type                                  | Description                                          |
+| ZenGetter    | Возвращаемый тип                             | Описание                                             |
 | ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | игрок, владеющий этим инвентарем                     |
+| `size`       | int                                          | размер инвентаря                                     |
+| `width`      | int                                          | ширина инвентаря                                     |
+| `height`     | int                                          | высота инвентаря                                     |
 | `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | Предметы в сетке крафта                              |
+| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | Предметы в сетке крафта                              |
 
 ## ZenMethods
 
-Following Methods are available:
+Доступны следующие методы:
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`` возвращает [](/Vanilla/Items/IItemStack/), находящийся по указанному индексу, в случае его отсутствия-null. Индекс имеет тип int. `` задает стак по указанному индексу указанным предметом. Индекс имеет тип int, вещь имеет тип IItemStack. Используйте null, если вы хотите очистить стек по этому индексу.
 
-The top left stack is position (0, 0), row and column are ints.  
-`inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+Верхний левый стак находится на (0, 0), номер строчки и столба имеют тип int. `inventory.getStack(row, column)` возвращает [IItemStack](/Vanilla/Items/IItemStack/) на заданной позиции, или же null, если предмет не задан. `inventory.setStack(row, column, item)` задает стак на данной позиции данным предметом. Предмет имеет тип IItemStack. Используйте null, если вы хотите очистить стек по этой позиции.

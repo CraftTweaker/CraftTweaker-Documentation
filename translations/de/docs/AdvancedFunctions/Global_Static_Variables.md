@@ -7,11 +7,11 @@ Wenn diese allerdings ein mal deklariert sind, können diese nicht mehr geänder
 
 ## Unterschied zwischen globalen und statischen Variablen
 
-Beide sind an das Skript gebunden und werden intialisiert, bevor das Skript ausgeführt wird.  
-Beide können nicht verändert werden.  
-Der Unterschied liegt darin, wie man sie aufruft:  
-Globale Variablen können von überall mit ihrem Namen aufgerufen werden, außer man hat im Skript schon eine Variable mit dem gleichen Namen.  
-Statische Variablen müssen über [den Namen ihres Skriptes](Cross-Script_Reference/) ausgeführt werden.
+Both, statics and globals are scriptbound and instantiated before the script is executed.  
+Both cannot be changed.  
+The difference is how they are called:  
+Globals can be called from everywhere simply by their name unless you already have a local variable that has the same name.  
+Statics on the other hand, need to use the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference/) to be accessed.
 
 Globale Variablen werden mit dem `global`-Schlüsselwort erstellt.  
 Statische werden mit dem `static`-Schlüsselwort erstellt.
@@ -34,7 +34,7 @@ Okay, hier nun die Erklärung:
 
 1. `global` Das Schlüsselwort zeigt, dass es ein global verfügbarer Wert wird
 2. `myGlobalValue` der Name der Variable
-3. `as IItemStack` der Typ der Variable (wichtig ist, dass dieser Typ vorher [importiert](Import/) wurde)
+3. `as IItemStack` the type of the value (It is recommended to [import](/AdvancedFunctions/Import/) the types before casting the variable)
 4. `= <minecraft:dirt>;` Zuweisung des Wertes. Da globale Variablen "final" (fest) sind, müssen diese sofort bei der Deklaration initialisiert werden!
 
 ## Hinweise

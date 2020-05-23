@@ -121,7 +121,7 @@ All the examples given evaluate to true.
 | Lesser then       | `<`          | Checks if the value before is fewer than after                                            | 1 < 2              |
 | Lesser or Equal   | `<=`         | Checks if the value before is fewer than or equal with after                              | 1 <= 1             |
 | AND               | `&`          | Checks whether both, value before and after are true, false if one or both are false      | true & true        |
-| OR                | `|`          | Checks if the value before or after is true. True, is both are true                       | true | true        |
+| OR                | <code>&#124;</code>          | Checks if the value before or after is true. True, is both are true                       | true \| true        |
 | XOR               | `^`          | Checks if either the value before or after is true, false if both or none is true         | true ^ false       |
 
 

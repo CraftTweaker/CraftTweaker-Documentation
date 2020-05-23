@@ -17,8 +17,8 @@ Die Dinge in den eckigen Klammern sind optional. Schauen wir uns ein paar bestim
 
 ## Statische Funktionen
 
-Statische Funktionen werden bereitgestellt, bevor das Skript gestartet wird und es kann von überall drauf zugegriffen werden.  
-Du kannst sogar auch auf Funktionen zugreifen, welche [außerhalb des Skriptes definiert](Cross-Script_Reference) wurden.
+Static functions are created before the script is run and can be accessed from anywhere in the script.  
+You can even access functions declared outside the script using the [cross-script reference](/AdvancedFunctions/Cross-Script_Reference).
 
 ### Funktion ohne Rückgabewert
 

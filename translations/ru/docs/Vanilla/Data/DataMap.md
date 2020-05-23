@@ -4,7 +4,7 @@ A Map, sometimes also called an Associative Array is a data structure that allow
 Unlike an Array however, you can also give each of these item a key to call upon.  
 The DataMap expands [IData](/Vanilla/Data/IData/), so each DataMap is IData, you might need this info later.
 
-## Creating a map:
+## Создание карты:
 
 A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last you'll need to import that interface:  
 `import crafttweaker.data.IData;`

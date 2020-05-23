@@ -1,40 +1,40 @@
-# Explosion Crafting
+# 爆炸合成
 
-Explosion Crafting is used to transform one item into another by exposing it to an explosion when it is an item on the ground. A configurable (random) loss rate can be specified. By default, this is used to convert Iron Ingots into Compressed Iron Ingots with a 20% loss rate.
+爆炸合成指将一个物品被丢出后在受到爆炸时转化为另一个物品。 （随机）损耗率可以被指定。 默认情况下，爆炸合成用来将铁锭以 20% 的损失率转化为压缩铁锭。
 
 ## 导入
 
-You can call the Explosion Crafting package using `mods.pneumaticcraft.explosioncrafting`
+使用`mods.pneumaticcraft.explosioncrafting`导入爆炸合成相关包。
 
 ## 移除配方
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
+该方法移除其找到的第一个以指定的[IIngredient](/Vanilla/Variable_Types/IIngredient/)作为`输出`的合成配方：
 
 ```zenscript
 mods.pneumaticcraft.explosioncrafting.removeRecipe(IIngredient output);
-// Example
+// 例子
 mods.pneumaticcraft.explosioncrafting.removeRecipe(<pneumaticcraft:ingot_iron_compressed>);
 ```
 
-This function removes *all* Explosion Crafting recipes:
+此方法移除*所有*爆炸合成配方：
 
 ```zenscript
 mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
 ```
 
-## Adding
+## 添加配方
 
-These functions are used to add new Explosion Crafting recipes:
+这些方法用于添加爆炸合成配方：
 
 ```zenscript
 mods.pneumaticcraft.explosioncrafting.addRecipe(IItemStack input, IItemStack output, int loss_rate);
 mods.pneumaticcraft.explosioncrafting.addRecipe(IOreDictEntry input, IItemStack output, int loss_rate);
 
-// Example
+// 例子
 mods.pneumaticcraft.explosioncrafting.removeAllRecipes();
-// An expert-mode pack might make plain iron a very poor choice, and steel much better.
+// 专家模式的整合包也许会使得铁的损失率很高，而钢就要高一些。
 mods.pneumaticcraft.explosioncrafting.addRecipe(<ore:ingotIron>, <pneumaticcraft:ingot_iron_compressed>, 95);
 mods.pneumaticcraft.explosioncrafting.addRecipe(<ore:ingotSteel>, <pneumaticcraft:ingot_iron_compressed>, 10);
-// A way to make lots of Nether Brick, for (on average) 4x the cost of Netherrack
+// 一个以（平均）4 倍的地狱岩消耗制造大量地狱砖的方法
 mods.pneumaticcraft.explosioncrafting.addRecipe(<ore:netherrack>, <minecraft:netherbrick>, 75);
 ```

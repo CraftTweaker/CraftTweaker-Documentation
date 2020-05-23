@@ -26,7 +26,7 @@ Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 ## Example
 
 ```zenscript
-block.setDropHandler(function(drops, world, position, state) {
+block.setDropHandler(function(drops, world, position, state, fortune) {
 
     drops.add(<item:minecraft:bedrock>);
     drops.add(<item:minecraft:carrot> % 50);

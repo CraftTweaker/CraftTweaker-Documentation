@@ -1,6 +1,6 @@
 # Ассоциативные массивы
 
-Ассоциативный массив (иногда также называемый картой или словарем) &mdash; способ хранить несколько значений, равно как и обычный [массив](Arrays_and_Loops/). Однако, в отличие от [массивов](Arrays_and_Loops/), вы можете выбрать тип, который хотите использовать в качестве индекса или (как это называется в картах) ключа!
+An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
 
 ## Объявление ассоциативного массива
 
@@ -30,7 +30,7 @@ val myAssocArray = {
 
 ## Обращение к элементам ассоциативного массива
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](Arrays_and_Loops/):  
+You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
 `Array[index]`  
 Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
 

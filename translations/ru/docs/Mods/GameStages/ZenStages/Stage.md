@@ -10,9 +10,9 @@ Stage is the class you are given when you create a new "Stage" the class contain
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter | What does it do        | Возвращаемый тип |
-| --------- | ---------------------- | ---------------- |
-| stage     | Returns the stage name | string           |
+| Геттер | What does it do        | Возвращаемый тип |
+| ------ | ---------------------- | ---------------- |
+| stage  | Returns the stage name | string           |
 
 ### Staging Methods
 
