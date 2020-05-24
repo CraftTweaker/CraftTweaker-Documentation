@@ -1,0 +1,30 @@
+{
+  "name": "crafttweaker-documentation",
+  "version": "1.0.0",
+  "description": "Documentation for the CraftTweaker project",
+  "private": true,
+  "main": "tools/build.ts",
+  "scripts": {
+    "build": "tsc && node out/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CraftTweaker/CraftTweaker-Documentation.git"
+  },
+  "author": "Jaredlll08",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CraftTweaker/CraftTweaker-Documentation/issues"
+  },
+  "homepage": "https://github.com/CraftTweaker/CraftTweaker-Documentation#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.1",
+    "@types/node": "^14.0.5",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}
