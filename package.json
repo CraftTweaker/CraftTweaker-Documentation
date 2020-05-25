@@ -6,7 +6,8 @@
   "main": "tools/build.ts",
   "scripts": {
     "build": "tsc && node out/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && node out/test.js",
+    "start": "echo \"No way to start / serve this yet\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,17 @@
     "url": "https://github.com/CraftTweaker/CraftTweaker-Documentation/issues"
   },
   "homepage": "https://github.com/CraftTweaker/CraftTweaker-Documentation#readme",
-  "dependencies": {
-    "fs-extra": "^9.0.0"
-  },
   "devDependencies": {
     "@types/fs-extra": "^9.0.1",
     "@types/node": "^14.0.5",
+    "@types/lunr": "^2.3.3",
     "ts-node": "^8.10.1",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.3",
+    "fs-extra": "^9.0.0",
+    "dotenv": "^8.2.0",
+    "lunr": "^2.3.8",
+    "remark-parse": "^8.0.2",
+    "to-vfile": "^6.1.0",
+    "unified": "^9.0.0"
   }
 }
