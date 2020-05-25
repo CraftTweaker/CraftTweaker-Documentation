@@ -1,5 +1,6 @@
 import {Builder} from "lunr";
 import {Node} from "unist";
+import {getLanguages, listFiles} from "./util";
 
 require('dotenv').config();
 let fs = require("fs-extra");
@@ -16,23 +17,6 @@ interface Doc {
     text: string
 }
 
-const listFiles = (dir: string, filelist: string[]) => {
-    let files = fs.readdirSync(dir);
-    filelist = filelist || [];
-    files.forEach(function (file: string) {
-        if (fs.statSync(path.join(dir, file)).isDirectory()) {
-            filelist = listFiles(path.join(dir, file) + '/', filelist);
-        } else {
-            if (file.endsWith(".md"))
-                filelist.push(path.join(dir, file));
-        }
-    });
-    return filelist;
-};
-
-const getLanguages = (buildDir: string): string[] => {
-    return fs.readdirSync(buildDir);
-};
 
 const buildIndex = (folder: string) => {
 
