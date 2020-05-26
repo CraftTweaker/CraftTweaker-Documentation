@@ -47,13 +47,12 @@ const buildIndex = (folder: string) => {
                     for (let childrenKey in child.children) {
                         // @ts-ignore
                         let childObj = child.children[childrenKey];
-                        if (childObj.type === "text") {
-                            docs.push({
-                                title: childObj.value,
-                                location: value,
-                                text: childObj.value
-                            });
-                        } else if (childObj.type === "link") {
+                        docs.push({
+                            title: childObj.value,
+                            location: value,
+                            text: childObj.value
+                        });
+                        if (childObj.type === "link") {
                             let url = childObj.url;
                             // We aren't going to check external site links, seems a bit too much. Maybe in the future we can just send a get request to make sure it returns 200 though
                             if (url.startsWith("http")) {
@@ -90,7 +89,7 @@ const buildIndex = (folder: string) => {
         return {
             text: value.title,
             title: value.text,
-            location: value.location.substring(folder.length)
+            location: value.location.substring(folder.length + "/docs".length)
         };
     });
     // Finally build the index
