@@ -115,7 +115,39 @@ craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> 
 - `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
 
 ```zenscript
+import crafttweaker.api.item.IItemStack;
 
+craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>, [
+        [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
+        [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
+        [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
+    ], (usualOut as IItemStack, inputs as IItemStack[]) => {
+        var counter = 0;
+        // Checks if all <item:minecraft:clay_ball> has a display name of "totally real diamond block"
+        for row in inputs {
+            for recipeItem in row {
+                if (recipeItem.matches(<item:minecraft:clay_ball> & recipeItem.displayName == "totally real diamond block") {
+                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "totally real diamond block" increment the counter
+                    counter++;
+                }
+            }
+        }
+
+        // If we have 8 <item:minecraft:clay_ball> with a name of "totally real diamond block"
+        if (counter == 8) {
+            if (inputs[1][1].displayName == "Special Diamond") {
+                // If <item:minecraft:diamond> has a display name of "Special Diamond"
+                // Return 2 <item:minecraft:diamond_block>
+                return usualOut * 2;
+            } else {
+                // Returns <item:minecraft:diamond_block>
+                return usualOut;
+            }
+        }
+
+        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
+        return <item:minecraft:clay>.setDisplayName("Diamond");
+    });
 ```
 
 ### Advanced Usage
