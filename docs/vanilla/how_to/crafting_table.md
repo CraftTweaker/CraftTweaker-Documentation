@@ -25,10 +25,13 @@ Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#
 
 [Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
 
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+
 ```zenscript
 craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
 // A shapeless recipe can have up to 9 inputs
+// This also demonstrates that more than one output can be used. In this example, 8 grass will be outputted.
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
@@ -51,6 +54,8 @@ Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for m
 
 Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
 
+Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+
 ```zenscript
 // Adding a shaped recipe
 craftingTable.addShaped("shaped_example_1", <item:minecraft:arrow>, [
@@ -66,7 +71,7 @@ craftingTable.addShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
 ]);
 
 // Adding a shaped mirrored recipe
-craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow>, [
+craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
