@@ -15,6 +15,9 @@
   },
   "exclude": [
     "Docs-Site/",
-    "out/"
+    "out/",
+    "build/",
+    "translations/",
+    "node_modules"
   ]
 }
