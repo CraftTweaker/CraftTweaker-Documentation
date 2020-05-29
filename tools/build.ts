@@ -2,7 +2,10 @@ import {Builder} from "lunr";
 import {Node} from "unist";
 import {getLanguages, listFiles} from "./util";
 
-require('dotenv').config();
+let result = require('dotenv').config();
+if(result.error){
+    throw result.error;
+}
 let fs = require("fs-extra");
 let path = require("path");
 let lunr = require("lunr");
