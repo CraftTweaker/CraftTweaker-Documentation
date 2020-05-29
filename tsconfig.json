@@ -12,5 +12,9 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "resolveJsonModule": true
-  }
+  },
+  "exclude": [
+    "Docs-Site/",
+    "out/"
+  ]
 }
