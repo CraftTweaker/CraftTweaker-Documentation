@@ -129,7 +129,8 @@ const build = async () => {
     });
 
     console.log("Copying files to folders");
-    // TODO copy files to the correct folder, we have the version from process.env.VERSION, just a matter of *where* we move it to
+    fs.copySync(buildsDir, path.join(process.env.docsSiteDir, process.env.VERSION));
+    console.log("Copied files!")
 };
 
 
