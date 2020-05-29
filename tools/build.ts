@@ -129,6 +129,8 @@ const build = async () => {
     });
 
     console.log("Copying files to folders");
+    console.log(process.env.docsSiteDir);
+    console.log(process.env.VERSION);
     fs.rmdirSync(path.join(process.env.docsSiteDir, process.env.VERSION));
     fs.copySync(buildsDir, path.join(process.env.docsSiteDir, process.env.VERSION));
     console.log("Copied files!")
