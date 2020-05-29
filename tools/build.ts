@@ -1,9 +1,12 @@
 import {Builder} from "lunr";
 import {Node} from "unist";
-import {getLanguages, listFiles} from "./util";
+import {
+    getLanguages,
+    listFiles
+} from "./util";
 
 let result = require('dotenv').config();
-if(result.error){
+if (result.error) {
     throw result.error;
 }
 let fs = require("fs-extra");
@@ -132,9 +135,12 @@ const build = async () => {
     });
 
     console.log("Copying files to folders");
-    fs.rmdirSync(path.join(process.env.docsSiteDir, process.env.VERSION));
-    fs.mkdirSync(path.join(process.env.docsSiteDir, process.env.VERSION));
-    fs.copySync(buildsDir, path.join(process.env.docsSiteDir, process.env.VERSION));
+    let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
+    if (fs.existsSync(docsPath)) {
+        fs.rmdirSync(docsPath);
+    }
+    fs.mkdirSync(docsPath);
+    fs.copySync(buildsDir, docsPath);
     console.log("Copied files!")
 };
 
