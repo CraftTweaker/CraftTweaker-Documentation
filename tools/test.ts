@@ -43,12 +43,25 @@ const TestLink = (folder: string, useDocsDir: boolean = false) => {
                             }
                         }
                         // Links should start with a "/", just makes things easier to handle, and all our current links pass this check
-                        if (!url.startsWith("/")) {
+                        if (!url.startsWith("/") && !url.startsWith("../")) {
                             throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`
                         }
                         // Finally see if the file exists on disk
-                        if (!fs.existsSync(path.join(path.join(folder, `${useDocsDir ? `` : `docs`}`), url + ".md"))) {
-                            throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}"!`
+                        let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
+                        let filePathNoSlash = path.join(path.join(folder, "docs"), url.substring(0, url.length - 1) + ".md");
+                        if(url.indexOf("../") !== -1){
+                            filePath = path.resolve(path.join(value, url + ".md"));
+                            filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1)  + ".md"));
+                        }
+                        if (!fs.existsSync(filePath)) {
+                            if (url.endsWith("/")) {
+                                if (!fs.existsSync(filePathNoSlash)) {
+                                    throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`
+                                }
+                            } else {
+                                throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`
+                            }
+
                         }
                     }
                 }
