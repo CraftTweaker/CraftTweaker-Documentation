@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building wiki files'
-                sh 'npm build'
+                sh 'npm run-script build'
             }
         }
     }
