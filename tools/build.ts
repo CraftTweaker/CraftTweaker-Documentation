@@ -41,7 +41,7 @@ const buildIndex = (folder: string) => {
                 for (let childrenKey in child.children) {
                     // @ts-ignore
                     let childrenObj = child.children[childrenKey];
-                    if(!childrenObj.value){
+                    if (!childrenObj.value) {
                         continue;
                     }
                     docs.push({
@@ -84,9 +84,9 @@ const buildIndex = (folder: string) => {
                             // Finally see if the file exists on disk
                             let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
                             let filePathNoSlash = path.join(path.join(folder, "docs"), url.substring(0, url.length - 1) + ".md");
-                            if(url.indexOf("../") !== -1){
+                            if (url.indexOf("../") !== -1) {
                                 filePath = path.resolve(path.join(value, url + ".md"));
-                                filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1)  + ".md"));
+                                filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1) + ".md"));
 
                             }
                             if (!fs.existsSync(filePath)) {
@@ -154,6 +154,8 @@ const build = async () => {
     console.log("Copying files to folders");
     let docsPath = path.join(process.env.docsSiteDir, process.env.VERSION);
     if (fs.existsSync(docsPath)) {
+        // can't remove a non empty dir?
+        fs.emptyDirSync(docsPath);
         fs.rmdirSync(docsPath);
     }
     fs.mkdirSync(docsPath);
