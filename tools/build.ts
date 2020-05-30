@@ -31,6 +31,7 @@ const buildIndex = (folder: string) => {
 
     let processor = unified().use(markdown, {});
     let docs: Doc[] = [];
+    let linkError:boolean = false;
     fileList.forEach(value => {
         let processedFile = processor.parse(vfile.readSync(value));
         processedFile.children.forEach((child: Node) => {
@@ -50,7 +51,7 @@ const buildIndex = (folder: string) => {
                         text: childrenObj.value
                     });
                 }
-            } else { // @ts-ignore
+            } else {
                 if (child.type === "paragraph") {
                     // @ts-ignore
                     for (let childrenKey in child.children) {
@@ -79,7 +80,9 @@ const buildIndex = (folder: string) => {
                             }
                             // Links should start with a "/", just makes things easier to handle, and all our current links pass this check
                             if (!url.startsWith("/") && !url.startsWith("../")) {
-                                throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`
+                                console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`);
+                                linkError = true;
+                                continue;
                             }
                             // Finally see if the file exists on disk
                             let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
@@ -87,15 +90,16 @@ const buildIndex = (folder: string) => {
                             if (url.indexOf("../") !== -1) {
                                 filePath = path.resolve(path.join(value, url + ".md"));
                                 filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1) + ".md"));
-
                             }
                             if (!fs.existsSync(filePath)) {
                                 if (url.endsWith("/")) {
                                     if (!fs.existsSync(filePathNoSlash)) {
-                                        throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`
+                                        console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`)
+                                        linkError = true;
                                     }
                                 } else {
-                                    throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`
+                                    console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`)
+                                    linkError = true;
                                 }
 
                             }
@@ -107,6 +111,9 @@ const buildIndex = (folder: string) => {
 
         });
     });
+    if(linkError){
+        throw "Link check failed!";
+    }
     // Convert to relative links that we can use
     docs = docs.map(value => {
         return {

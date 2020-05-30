@@ -12,12 +12,13 @@ import {
 } from "./util";
 
 
-const TestLink = (folder: string, useDocsDir: boolean = false) => {
+const testLinks = (folder: string, useDocsDir: boolean = false) => {
 
     let fileList: string[] = [];
     listFiles(folder, fileList);
 
     let processor = unified().use(markdown, {});
+    let linkError: boolean = false;
     fileList.forEach(value => {
         let processedFile = processor.parse(vfile.readSync(value));
         processedFile.children.forEach((child: Node) => {
@@ -44,22 +45,26 @@ const TestLink = (folder: string, useDocsDir: boolean = false) => {
                         }
                         // Links should start with a "/", just makes things easier to handle, and all our current links pass this check
                         if (!url.startsWith("/") && !url.startsWith("../")) {
-                            throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`
+                            console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! "${url}" Links should start with "/"!`);
+                            linkError = true;
+                            continue;
                         }
                         // Finally see if the file exists on disk
-                        let filePath = path.join(path.join(folder, "docs"), url + (url.endsWith(".md") ? `` : ".md"));
-                        let filePathNoSlash = path.join(path.join(folder, "docs"), url.substring(0, url.length - 1) + ".md");
-                        if(url.indexOf("../") !== -1){
+                        let filePath = path.join(path.join(folder, `${useDocsDir ? `` : `docs`}`), url + (url.endsWith(".md") ? `` : ".md"));
+                        let filePathNoSlash = path.join(path.join(folder, `${useDocsDir ? `` : `docs`}`), url.substring(0, url.length - 1) + ".md");
+                        if (url.indexOf("../") !== -1) {
                             filePath = path.resolve(path.join(value, url + ".md"));
-                            filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1)  + ".md"));
+                            filePathNoSlash = path.resolve(path.join(value, url.substring(0, url.length - 1) + ".md"));
                         }
                         if (!fs.existsSync(filePath)) {
                             if (url.endsWith("/")) {
                                 if (!fs.existsSync(filePathNoSlash)) {
-                                    throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`
+                                    console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url}" or "${url.substring(0, url.length - 1)} tried in: ${filePath} and ${filePathNoSlash}"!`)
+                                    linkError = true;
                                 }
                             } else {
-                                throw `Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`
+                                console.error(`Invalid Link in ${value.substring(path.join(folder, "../").length)}! Could not find "${url} tried in: ${filePath}"!`)
+                                linkError = true;
                             }
 
                         }
@@ -70,18 +75,32 @@ const TestLink = (folder: string, useDocsDir: boolean = false) => {
 
         });
     });
+    if (linkError) {
+        throw "Link check failed!";
+    }
+
 };
 
 const test = async () => {
     let translationsDir = path.join(process.cwd(), `translations`);
     let languages = getLanguages(translationsDir);
     console.log(`Testing "en"`);
-    TestLink(path.join(process.cwd(), `docs`), true);
+    try {
+        testLinks(path.join(process.cwd(), `docs`), true);
+    } catch (e) {
+        console.log(e);
+    }
+
     console.log(`Done testing "en"`);
     languages.forEach(lang => {
-        console.log(`Testing "${lang}"`);
-        TestLink(path.join(translationsDir, lang));
-        console.log(`Done testing "${lang}"`);
+
+        try {
+            console.log(`Testing "${lang}"`);
+            testLinks(path.join(translationsDir, lang));
+            console.log(`Done testing "${lang}"`);
+        } catch (e) {
+            console.log(e);
+        }
     });
 
 };
