@@ -165,5 +165,5 @@ const build = async () => {
 build().then(value => {
     console.log(`Build done!`);
 }).catch(reason => {
-    console.log(`Build failed! Reason: "${reason}"`);
+    throw reason;
 });

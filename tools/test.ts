@@ -90,5 +90,5 @@ const test = async () => {
 test().then(value => {
     console.log(`Test done!`);
 }).catch(reason => {
-    console.log(`Test failed! Reason: "${reason}"`);
+    throw reason;
 });
