@@ -157,11 +157,9 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
 
 ### Advanced Usage
 
-Recipe functions can also be defined as a named function which enables you to utilize the same function in multiple recipes easily:
-
 #### Functions as a Variable
 
-Alternatively, you can also assign the anonymous function to a variable.
+Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
 
 Shapeless:
 
