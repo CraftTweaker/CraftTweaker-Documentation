@@ -131,7 +131,7 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
         // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
         for row in inputs {
             for recipeItem in row {
-                if (recipeItem.matches(<item:minecraft:clay_ball>) & recipeItem.displayName == "Diamond") {
+                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
                     // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
                     counter++;
                 }
@@ -191,7 +191,7 @@ var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as
     // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
     for row in inputs {
         for recipeItem in row {
-            if (recipeItem.matches(<item:minecraft:clay_ball>) & recipeItem.displayName == "Diamond") {
+            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
                 // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
                 counter++;
             }
