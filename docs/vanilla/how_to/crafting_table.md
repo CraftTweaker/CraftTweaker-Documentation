@@ -126,19 +126,19 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-    ], (usualOut as IItemStack, inputs as IItemStack[]) => {
+    ], (usualOut as IItemStack, inputs as IItemStack[][]) => {
         var counter = 0;
-        // Checks if all <item:minecraft:clay_ball> has a display name of "totally real diamond block"
+        // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
         for row in inputs {
             for recipeItem in row {
-                if (recipeItem.matches(<item:minecraft:clay_ball> & recipeItem.displayName == "totally real diamond block") {
-                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "totally real diamond block" increment the counter
+                if (recipeItem.matches(<item:minecraft:clay_ball>) & recipeItem.displayName == "Diamond") {
+                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
                     counter++;
                 }
             }
         }
 
-        // If we have 8 <item:minecraft:clay_ball> with a name of "totally real diamond block"
+        // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
         if (counter == 8) {
             if (inputs[1][1].displayName == "Special Diamond") {
                 // If <item:minecraft:diamond> has a display name of "Special Diamond"
@@ -150,8 +150,8 @@ craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>
             }
         }
 
-        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-        return <item:minecraft:clay>.setDisplayName("Diamond");
+        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
+        return <item:minecraft:clay>.setDisplayName("Diamond Block");
     });
 ```
 
