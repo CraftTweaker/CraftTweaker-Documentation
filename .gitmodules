@@ -1,0 +1,3 @@
+[submodule "Docs-Site"]
+	path = Docs-Site
+	url = https://github.com/CraftTweaker/Docs-Site.git

@@ -3,31 +3,17 @@
 pipeline {
     agent any
     stages {
-        stage('Cleanup') {
+        stage('Setup') {
             steps {
                 echo 'Cleaning up'
-                sh 'chmod +x cleanup.sh'
-                sh 'bash ./cleanup.sh'
+                sh 'npm ci'
             }
         }
         stage('Build') {
             steps {
                 echo 'Building wiki files'
-                sh 'chmod +x build.sh'
-                sh 'bash ./build.sh'
+                sh 'npm run-script build'
             }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                }
-            }
-        }
-    post {
-        success {
-            echo 'Success, now moving to web server'
-            sh 'chmod +x move_to_webDir.sh'
-            sh 'bash ./move_to_webDir.sh'
         }
     }
 }
