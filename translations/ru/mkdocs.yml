@@ -117,7 +117,31 @@ nav:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Моды:
-      - JEITweaker:
-          - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
-      - InitialInventory:
-          - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+    - ContentTweaker:
+      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - API:
+        - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
+        - Api:
+          - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
+        - Блок:
+          - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
+          - Basic:
+            - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
+          - Pillar:
+            - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
+          - Stairs:
+            - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
+        - Предмет:
+          - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
+          - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
+          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
+          - Basic:
+            - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
+          - Tool:
+            - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
+    - JEITweaker:
+        - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
+    - InitialInventory:
+        - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
