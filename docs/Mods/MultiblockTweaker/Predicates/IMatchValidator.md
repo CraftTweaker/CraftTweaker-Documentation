@@ -17,7 +17,7 @@ layer contains exactly one fluid output hatch.
 ## Calling an IMatchValidator
 There is only one way to obtain an IMatchValidator,
 
-* Define your own using [Custom Functions](../../AdvancedFunctions/Custom_Functions.md).
+* Define your own using [Custom Functions](../../../AdvancedFunctions/Custom_Functions.md).
 
 Okay, I lied, you can also use the boolean operators mentioned below.
 

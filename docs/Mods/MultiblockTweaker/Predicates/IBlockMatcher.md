@@ -15,10 +15,10 @@ IBlockMatcher is used by an [IBlockPattern](./IBlockPattern) to decide whether t
 There are several methods that return an IBlockMatcher
 
 * Using the static method `IBlockMatcher.controller()`, of which there must be at least one present in an [IBlockPattern](./IBlockPattern).
-* Casting an [IBlock](../../Vanilla/Blocks/IBlock.md) or [IBlockState](../../Vanilla/Blocks/IBlockState.md) using `as IBlockMatcher`.
+* Casting an [IBlock](../../../Vanilla/Blocks/IBlock.md) or [IBlockState](../../../Vanilla/Blocks/IBlockState.md) using `as IBlockMatcher`.
 * Using one of the [predefined matchers](#Predefined Matchers): `IBlockMatcher.ANY`, `IBlockMatcher.AIR` or `IBlockMatcher.IN_PREVIEW`.
 * Using one of the several other static methods of `IBlockMatcher`, detailed [below](#Static Methods).
-* Defining your own using [Custom Functions](../../AdvancedFunctions/Custom_Functions.md) as detailed [below](#Custom Functions).
+* Defining your own using [Custom Functions](../../../AdvancedFunctions/Custom_Functions.md) as detailed [below](#Custom Functions).
 * Applying boolean operators, `||`, `&&` or `!` on existing `IBlockMatcher`s, as detailed [below](#Instance Methods).
 
 ---
@@ -89,11 +89,11 @@ val part as IBlockMatcher = IBlockMatcher.partPredicate("gregtech.common.metatil
 
 #### IBlockMatcher#statePredicate
 
-Match any of the given [IBlockState](../../Vanilla/Blocks/IBlockState.md)s.
+Match any of the given [IBlockState](../../../Vanilla/Blocks/IBlockState.md)s.
 
 When called with a single parameter, it is equivalent to `IBlockState as IBlockMatcher`.
 
-* _param_ **allowedStates**: [`IBlockState...`](../../Vanilla/Blocks/IBlockState.md) - The list of {@link IBlockState}s to match.
+* _param_ **allowedStates**: [`IBlockState...`](../../../Vanilla/Blocks/IBlockState.md) - The list of {@link IBlockState}s to match.
 * _return_: [`IBlockMatcher`](#IBlockMatcher) - An [IBlockMatcher](#IBlockMatcher) that returns true for any of the given blockstates.
 ##### Example:
 ```zencode
@@ -111,11 +111,11 @@ val dispenserN as IBlockMatcher = <blockstate:minecraft:dispenser:facing=north> 
 
 #### IBlockMatcher#blockPredicate
 
-Match any blockstate with one of the given [IBlock](../../Vanilla/Blocks/IBlock.md)s or [IItemStack](../../Vanilla/Items/IItemStack.md)s.
+Match any blockstate with one of the given [IBlock](../../../Vanilla/Blocks/IBlock.md)s or [IItemStack](../../../Vanilla/Items/IItemStack.md)s.
 
 When called with a single parameter, it is equivalent to `IBlock as IBlockMatcher`, or `IItemStack as IBlock as IBlockMatcher`.
 
-* _param_ **blocks**: [`IBlock...`](../../Vanilla/Blocks/IBlock.md)s or [`IItemStack...`](../../Vanilla/Items/IItemStack.md) - The list of [IBlock](../../Vanilla/Blocks/IBlock.md)s or [IItemStack](../../Vanilla/Items/IItemStack.md)s to match.
+* _param_ **blocks**: [`IBlock...`](../../../Vanilla/Blocks/IBlock.md)s or [`IItemStack...`](../../../Vanilla/Items/IItemStack.md) - The list of [IBlock](../../../Vanilla/Blocks/IBlock.md)s or [IItemStack](../../../Vanilla/Items/IItemStack.md)s to match.
 * _return_: [`IBlockMatcher`](#IBlockMatcher) - An [IBlockMatcher](#IBlockMatcher) that returns true for any of the given blocks.
 ##### Example:
 ```zencode
@@ -151,7 +151,7 @@ These can also be applied with the operators, `||`, `&&`, `!` and `in` respectiv
 
 ### Custom Functions
 IBlockMatcher is a *functional interface*.
-That is, you can define your own [Custom Function](../../AdvancedFunctions/Custom_Functions.md) as one.
+That is, you can define your own [Custom Function](../../../AdvancedFunctions/Custom_Functions.md) as one.
 
 It takes an [IBlockWorldState](./IBlockWorldState.md) and returns a _**bool**ean_.
 
