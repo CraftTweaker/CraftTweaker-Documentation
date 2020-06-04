@@ -25,11 +25,11 @@ Okay, I lied, you can also use the boolean operators mentioned below.
 ### Instance Methods
 Since `IMatchValidator`s are predicates, there are some basic methods included for chaining them.
 
-| ZenMethod                                  | Return Type     | Description                                                                    |
-|--------------------------------------------|-----------------|--------------------------------------------------------------------------------|
-| IMatchValidator#or(IMatchValidator)        | IMatchValidator | an `IMatchValidator` that returns true if either of those given return `true`. |
-| IMatchValidator#and(IMatchValidator)       | IMatchValidator | an `IMatchValidator` that returns true if both of those given return `true`.   |
-| IMatchValidator#negate()                   | IMatchValidator | an `IMatchValidator` that returns true if the one given returns `false`.       |
-| IMatchValidator#test(IBlockWorldState)     | bool            | what the matcher returns when called                                           |
+| ZenMethod                                    | Return Type                           | Description                                                                    |
+|----------------------------------------------|---------------------------------------|--------------------------------------------------------------------------------|
+| `IMatchValidator#or(IMatchValidator)`        | [`IMatchValidator`](#IMatchValidator) | an `IMatchValidator` that returns true if either of those given return `true`. |
+| `IMatchValidator#and(IMatchValidator)`       | [`IMatchValidator`](#IMatchValidator) | an `IMatchValidator` that returns true if both of those given return `true`.   |
+| `IMatchValidator#negate()`                   | [`IMatchValidator`](#IMatchValidator) | an `IMatchValidator` that returns true if the one given returns `false`.       |
+| `IMatchValidator#test(IBlockWorldState)`     | `bool`                                | what the matcher returns when called                                           |
 
 These can also be applied with the operators, `||`, `&&`, `!` and `in` respectively.

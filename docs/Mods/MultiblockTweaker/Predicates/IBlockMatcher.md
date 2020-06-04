@@ -138,12 +138,12 @@ val dropper = <minecraft:dropper> as IBlock as IBlockMatcher;
 ### Instance Methods
 Since `IBlockMatcher`s are predicates, there are some basic methods included for chaining them.
 
-| ZenMethod                              | Return Type   | Description                                                                  |
-|----------------------------------------|---------------|------------------------------------------------------------------------------|
-| IBlockMatcher#or(IBlockMatcher)        | IBlockMatcher | an `IBlockMatcher` that returns true if either of those given return `true`. |
-| IBlockMatcher#and(IBlockMatcher)       | IBlockMatcher | an `IBlockMatcher` that returns true if both of those given return `true`.   |
-| IBlockMatcher#negate()                 | IBlockMatcher | an `IBlockMatcher` that returns true if the one given returns `false`.       |
-| IBlockMatcher#test(IBlockWorldState)   | bool          | what the matcher returns when called                                         |
+| ZenMethod                                | Return Type                       | Description                                                                  |
+|------------------------------------------|-----------------------------------|------------------------------------------------------------------------------|
+| `IBlockMatcher#or(IBlockMatcher)`        | [`IBlockMatcher`](#IBlockMatcher) | an `IBlockMatcher` that returns true if either of those given return `true`. |
+| `IBlockMatcher#and(IBlockMatcher)`       | [`IBlockMatcher`](#IBlockMatcher) | an `IBlockMatcher` that returns true if both of those given return `true`.   |
+| `IBlockMatcher#negate()`                 | [`IBlockMatcher`](#IBlockMatcher) | an `IBlockMatcher` that returns true if the one given returns `false`.       |
+| `IBlockMatcher#test(IBlockWorldState)`   | `bool`                            | what the matcher returns when called                                         |
 
 These can also be applied with the operators, `||`, `&&`, `!` and `in` respectively.
 
