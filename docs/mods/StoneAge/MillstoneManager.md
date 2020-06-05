@@ -13,7 +13,7 @@
 ## Addition
 
 ```zenscript
-mods.stone_age.MillstoneManager.addRecipe(String name, IItemStack output, IIngredient input, int activateCount, @OptionalString String group)
+<recipetype:stone_age:millstone>.addRecipe(String name, IItemStack output, IIngredient input, int activateCount, @OptionalString String group)
 
-mods.stone_age.MillstoneManager.addRecipe("sugar", <minecraft:sugar>, <minecraft:sugar_cane>, 2, "foods");
+<recipetype:stone_age:millstone>.addRecipe("sugar", <item:minecraft:sugar>, <item:minecraft:sugar_cane>, 2, "foods");
 ```
