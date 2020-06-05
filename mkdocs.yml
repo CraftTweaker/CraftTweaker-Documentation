@@ -6,7 +6,6 @@ nav:
   - Examples: "examples.md"
   - Recipes:
       - Recipe Managers: "recipes/recipe_managers.md"
-      - Crafting Table: "recipes/crafting_table.md"
   - Vanilla:
       - How to:
           - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
