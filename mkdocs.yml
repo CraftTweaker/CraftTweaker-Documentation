@@ -150,3 +150,9 @@ nav:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - InitialInventory:
         - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+    - StoneAge:
+        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+        - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
+        - Millstone: 'mods/StoneAge/MillstoneManager.md'
+        - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
+        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
