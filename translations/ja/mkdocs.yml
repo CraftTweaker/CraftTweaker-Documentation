@@ -6,7 +6,6 @@ nav:
   - Examples: "examples.md"
   - レシピ:
       - Recipe Managers: "recipes/recipe_managers.md"
-      - Crafting Table: "recipes/crafting_table.md"
   - バニラ:
       - How to:
           - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
@@ -103,6 +102,11 @@ nav:
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
               - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+          - Recipe:
+              - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+              - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+              - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+              - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
           - ポーション:
               - MCPotion: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
@@ -145,3 +149,9 @@ nav:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - InitialInventory:
         - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+    - StoneAge:
+        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+        - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
+        - Millstone: 'mods/StoneAge/MillstoneManager.md'
+        - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
+        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
