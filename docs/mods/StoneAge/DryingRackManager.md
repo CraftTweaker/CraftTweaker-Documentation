@@ -15,5 +15,5 @@
 ```zenscript
 mods.stone_age.DryingRackManager.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString String group)
 
-mods.stone_age.DryingRackManager.addRecipe("dried_meat", <minecraft:cooked_mutton>, <minecraft:mutton>, 1200, "foods");
+mods.stone_age.DryingRackManager.addRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
 ```
