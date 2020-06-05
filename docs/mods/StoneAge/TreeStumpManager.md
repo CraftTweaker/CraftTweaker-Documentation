@@ -14,7 +14,7 @@
 ## Addition
 
 ```zenscript
-mods.stone_age.TreeStumpManager.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
+<recipetype:stone_age:tree_stump>.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
 
-mods.stone_age.TreeStumpManager.addRecipe("oak_planks", <minecraft:oak_planks>, <minecraft:iron_axe>, <minecraft:oak_log>, 2);
+<recipetype:stone_age:tree_stump>.addRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
 ```
