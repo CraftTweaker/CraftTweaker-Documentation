@@ -1,4 +1,4 @@
-# Drying Rack
+# Tree Stump
 
 ## Package
 `import mods.stone_age.TreeStumpManager;`
