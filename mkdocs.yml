@@ -103,6 +103,11 @@ nav:
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
               - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+          - Recipe:
+              - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+              - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+              - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+              - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
           - Potions:
               - MCPotion: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
