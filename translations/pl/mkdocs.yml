@@ -9,7 +9,7 @@ nav:
       - Crafting Table: "recipes/crafting_table.md"
   - Vanilla:
       - How to:
-          - How to: 'vanilla/how_to/how_to.md'
+          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
       - Api:
           - Block:
               - Material:
