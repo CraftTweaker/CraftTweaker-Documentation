@@ -1,0 +1,32 @@
+# RecipeFunctionArray
+
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
+```zenscript
+crafttweaker.api.recipe.RecipeFunctionArray
+```
+
+## Functional Interface
+
+This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+```zenscript
+(usualOut, inputs) => <item:minecraft:dirt>
+```
+## Methods
+### process
+
+Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+
+```zenscript
+myRecipeFunctionArray.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[]);
+```
+
+| Parameter | Type                                                                | Description             |
+| --------- | ------------------------------------------------------------------- | ----------------------- |
+| usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | No description provided |
+| inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+
+
+
