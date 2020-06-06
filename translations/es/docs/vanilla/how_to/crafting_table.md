@@ -16,7 +16,7 @@ _When adding a recipe, ensure that your recipe names are unique!_
 
 `craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` \<string>
+- `recipeName` &lt;string>
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 - `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
@@ -43,7 +43,7 @@ _See [Using Recipe Functions](#using-recipe-functions) for examples on how to us
 
 `craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
 
-- `recipeName` \<string>
+- `recipeName` &lt;string>
 - `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
 - `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
@@ -233,7 +233,7 @@ craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>
 
 `craftingTable.removeByName(recipeName);`
 
-- `recipeName` \<string>
+- `recipeName` &lt;string>
 
 Removes the recipe that matches the name provided.
 
@@ -257,7 +257,7 @@ craftingTable.removeRecipe(<item:minecraft:stick>);
 
 `craftingTable.removeByModid(modId);`
 
-- `modId` \<string>
+- `modId` &lt;string>
 
 Removes all recipes added by the provided mod.
 
@@ -269,9 +269,9 @@ craftingTable.removeByModid("minecraft");
 
 `craftingTable.removeByModid(modId, exclusionFilter);`
 
-- `modId` \<string>
+- `modId` &lt;string>
 - `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` \<string> The name of the current recipe being checked. _The mod id will not be included_
+  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
 
 Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
 
@@ -301,7 +301,7 @@ craftingTable.removeByModid("minecraft", (name) => {
 
 `craftingTable.removeByRegex(regex);`
 
-- `regex` \<string>
+- `regex` &lt;string>
 
 Removes all recipes that's name matches the regex string.
 
