@@ -13,7 +13,7 @@ Get an [IBlockState](../../Vanilla/Blocks/IBlockState.md) by its resource locati
 ```
 ## Multiblock Bracket Handler
 ### Information
-Get a [Multiblock](./Multiblock.md) by its resource location (Meta Tile Entity ID), or by its metadata.
+Get a [Multiblock](Multiblock.md) by its resource location (Meta Tile Entity ID), or by its metadata.
 ### Examples
 ```
 // Examples:
@@ -25,5 +25,5 @@ Get a [Multiblock](./Multiblock.md) by its resource location (Meta Tile Entity I
 <multiblock:multiblocktweaker:example_multiblock>
 ```
 
-\* These examples will only work if you register a [Multiblock](./Multiblock.md) under metadata `3000`,
+\* These examples will only work if you register a [Multiblock](Multiblock.md) under metadata `3000`,
 or under the resource location `multiblocktweaker:example_multiblock`.

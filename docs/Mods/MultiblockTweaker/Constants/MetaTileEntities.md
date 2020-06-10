@@ -1,0 +1,123 @@
+# MetaTileEntities
+
+## Importing the Package
+
+It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+```zenscript
+import mods.gregtech.MetaTileEntities;
+```
+## ZenGetters/ZenSetters
+| ZenGetter | ZenSetter | Type |
+| --- | --- | --- |
+| STEAM_BOILER_COAL_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_BOILER_COAL_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_BOILER_SOLAR_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_BOILER_LAVA_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_BOILER_LAVA_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_EXTRACTOR_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_EXTRACTOR_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_MACERATOR_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_MACERATOR_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_COMPRESSOR_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_COMPRESSOR_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_HAMMER_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_HAMMER_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_FURNACE_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_FURNACE_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_ALLOY_SMELTER_BRONZE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEAM_ALLOY_SMELTER_STEEL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| MAGIC_ENERGY_ABSORBER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| COKE_OVEN_HATCH |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| PRIMITIVE_BLAST_FURNACE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| COKE_OVEN |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| ELECTRIC_BLAST_FURNACE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| VACUUM_FREEZER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| IMPLOSION_COMPRESSOR |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| PYROLYSE_OVEN |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| DISTILLATION_TOWER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| CRACKER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| MULTI_FURNACE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| DIESEL_ENGINE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_STEAM_TURBINE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_GAS_TURBINE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_PLASMA_TURBINE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_BRONZE_BOILER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_STEEL_BOILER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_TITANIUM_BOILER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LARGE_TUNGSTENSTEEL_BOILER |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| SMALL_WOODEN_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| WOODEN_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| BRONZE_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEEL_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STAINLESS_STEEL_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| TITANIUM_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| TUNGSTENSTEEL_CHEST |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| LOCKED_SAFE |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| WOODEN_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| BRONZE_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STEEL_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| STAINLESS_STEEL_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| TITANIUM_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| TUNGSTENSTEEL_TANK |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| WORKBENCH |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| TESLA_COIL |   | [IMetaTileEntity](../Interfaces/IMetaTileEntity.md) |
+| HULL |   | IMetaTileEntity[] |
+| TRANSFORMER |   | IMetaTileEntity[] |
+| CHARGER |   | IMetaTileEntity[] |
+| ELECTRIC_FURNACE |   | IMetaTileEntity[] |
+| MACERATOR |   | IMetaTileEntity[] |
+| ALLOY_SMELTER |   | IMetaTileEntity[] |
+| AMPLIFABRICATOR |   | IMetaTileEntity[] |
+| ARC_FURNACE |   | IMetaTileEntity[] |
+| ASSEMBLER |   | IMetaTileEntity[] |
+| AUTOCLAVE |   | IMetaTileEntity[] |
+| BENDER |   | IMetaTileEntity[] |
+| BREWERY |   | IMetaTileEntity[] |
+| CANNER |   | IMetaTileEntity[] |
+| CENTRIFUGE |   | IMetaTileEntity[] |
+| CHEMICAL_BATH |   | IMetaTileEntity[] |
+| CHEMICAL_REACTOR |   | IMetaTileEntity[] |
+| COMPRESSOR |   | IMetaTileEntity[] |
+| CUTTER |   | IMetaTileEntity[] |
+| DISTILLERY |   | IMetaTileEntity[] |
+| ELECTROLYZER |   | IMetaTileEntity[] |
+| ELECTROMAGNETIC_SEPARATOR |   | IMetaTileEntity[] |
+| EXTRACTOR |   | IMetaTileEntity[] |
+| EXTRUDER |   | IMetaTileEntity[] |
+| FERMENTER |   | IMetaTileEntity[] |
+| FLUID_CANNER |   | IMetaTileEntity[] |
+| FLUID_EXTRACTOR |   | IMetaTileEntity[] |
+| FLUID_HEATER |   | IMetaTileEntity[] |
+| FLUID_SOLIDIFIER |   | IMetaTileEntity[] |
+| FORGE_HAMMER |   | IMetaTileEntity[] |
+| FORMING_PRESS |   | IMetaTileEntity[] |
+| LATHE |   | IMetaTileEntity[] |
+| MICROWAVE |   | IMetaTileEntity[] |
+| MIXER |   | IMetaTileEntity[] |
+| ORE_WASHER |   | IMetaTileEntity[] |
+| PACKER |   | IMetaTileEntity[] |
+| UNPACKER |   | IMetaTileEntity[] |
+| PLASMA_ARC_FURNACE |   | IMetaTileEntity[] |
+| POLARIZER |   | IMetaTileEntity[] |
+| LASER_ENGRAVER |   | IMetaTileEntity[] |
+| SIFTER |   | IMetaTileEntity[] |
+| THERMAL_CENTRIFUGE |   | IMetaTileEntity[] |
+| WIREMILL |   | IMetaTileEntity[] |
+| DIESEL_GENERATOR |   | IMetaTileEntity[] |
+| STEAM_TURBINE |   | IMetaTileEntity[] |
+| GAS_TURBINE |   | IMetaTileEntity[] |
+| ITEM_IMPORT_BUS |   | IMetaTileEntity[] |
+| ITEM_EXPORT_BUS |   | IMetaTileEntity[] |
+| FLUID_IMPORT_HATCH |   | IMetaTileEntity[] |
+| FLUID_EXPORT_HATCH |   | IMetaTileEntity[] |
+| ENERGY_INPUT_HATCH |   | IMetaTileEntity[] |
+| ENERGY_OUTPUT_HATCH |   | IMetaTileEntity[] |
+| ROTOR_HOLDER |   | IMetaTileEntity[] |
+| PUMP |   | IMetaTileEntity[] |
+| BLOCK_BREAKER |   | IMetaTileEntity[] |
+| AIR_COLLECTOR |   | IMetaTileEntity[] |
+| ITEM_COLLECTOR |   | IMetaTileEntity[] |
+| QUANTUM_CHEST |   | IMetaTileEntity[] |
+| QUANTUM_TANK |   | IMetaTileEntity[] |
+| FISHER |   | IMetaTileEntity[] |
+| BATTERY_BUFFER |   | IMetaTileEntity[][] |

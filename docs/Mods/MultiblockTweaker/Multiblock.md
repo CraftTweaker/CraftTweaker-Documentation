@@ -1,29 +1,48 @@
-# IMatchValidator
+# Multiblock
 
 ## Importing the Package
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
-```zencode
+```zenscript
 import mods.gregtech.multiblock.Multiblock;
 ```
-
 ## Information
+A representation of a custom GregTech Multiblock.
 
-The Multiblock object can be used to define additional behaviour for a multiblock, or to get information from it.
+This is best used for easy access to the recipe map.
 
-This is a good way to easily get the [RecipeMap](../GregTechCE/Machines.md) without having to get it manually by name.
+Use this to set any custom working functions.
+
+ * **See also:**
+   * Builder
+
+     <p>
+   * IUpdateFunction
+   * IUpdateWorktableFunction
+   * ISetupRecipeFunction
+   * ICompleteRecipeFunction
+   * IRecipePredicate
+
+## ZenMethods
+
+### Instance Methods
+#### Multiblock#register()
+-> Multiblock
+
+Register this multiblock. Calling this more than once will error.
+
+ * **Returns:** This multiblock, for convenience.
 
 ## ZenGetters/ZenSetters
-
-| ZenGetter            | ZenSetter           | Type                                                                  |
-|----------------------|---------------------|-----------------------------------------------------------------------|
-| `update`             | `update`            | [`IUpdateFunction`](./Functions/IUpdateFunction.md)                   |
-| `updateWorktable`    | `updateWorktable`   | [`IUpdateWorktableFunction`](./Functions/IUpdateWorktableFunction.md) |
-| `setupRecipe`        | `setupRecipe`       | [`ISetupRecipeFunction`](./Functions/ISetupRecipeFunction.md)         |
-| `completeRecipe`     | `completeRecipe`    | [`ICompleteRecipeFunction`](./Functions/ICompleteRecipeFunction.md)   |
-| `recipePredicate`    | `recipePredicate`   | [`IRecipePredicate`](./Functions/IRecipePredicate.md)                 |
-| `recipeMap`          |                     | [`RecipeMap`](../GregTechCE/Machines.md)                              |
-| `pattern`            |                     | [`IBlockPattern`](./IBlockPattern.md)                                 |
-| `texture`            |                     | [`ICubeRenderer`](./ICubeRenderer.md)                                 |
-| `metaId`             |                     | `int`                                                                 |
-| `location`           |                     | `string`                                                              |
+| ZenGetter | ZenSetter | Type |
+| --- | --- | --- |
+| metaId |   | int |
+| recipeMap |   | [RecipeMap](../GregTechCE/Machines.md) |
+| update | update | [IUpdateFunction](Functions/IUpdateFunction.md) |
+| updateWorktable | updateWorktable | [IUpdateWorktableFunction](Functions/IUpdateWorktableFunction.md) |
+| setupRecipe | setupRecipe | [ISetupRecipeFunction](Functions/ISetupRecipeFunction.md) |
+| completeRecipe | completeRecipe | [ICompleteRecipeFunction](Functions/ICompleteRecipeFunction.md) |
+| recipePredicate | recipePredicate | [IRecipePredicate](Functions/IRecipePredicate.md) |
+| loc |   | string |
+| pattern |   | [IBlockPattern](Interfaces/IBlockPattern.md) |
+| texture |   | [ICubeRenderer](Interfaces/ICubeRenderer.md) |
