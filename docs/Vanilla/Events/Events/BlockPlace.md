@@ -22,7 +22,6 @@ The following information can be retrieved from the event:
 | ZenGetter        | ZenSetter     | Type                                                               |
 |------------------|---------------|--------------------------------------------------------------------|
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)                               |
-| `isPlayer`       |               | bool                                                               |
 | `current`        |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `placedAgainst`  |               | [IBlockState](/Vanilla/Blocks/IBlockState/)                        |
 | `hand`           |               | String                                                             |
