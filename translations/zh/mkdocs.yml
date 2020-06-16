@@ -145,10 +145,10 @@ nav:
             - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
           - Tool:
             - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
-    - JEITweaker:
-        - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - InitialInventory:
         - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+    - JEITweaker:
+        - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - StoneAge:
         - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
         - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
