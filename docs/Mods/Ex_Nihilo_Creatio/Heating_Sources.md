@@ -13,13 +13,13 @@
 ## Addition
 
 ```zenscript
-mods.exnihilocreation.Heat.addRecipe(IItemStack, Int);
+mods.exnihilocreatio.Heat.addRecipe(IItemStack, Int);
 
-mods.exnihilocreation.Heat.addRecipe(<minecraft:log>, 20);
+mods.exnihilocreatio.Heat.addRecipe(<minecraft:log>, 20);
 ```
 
 ## Removal 
 
 ```zenscript
-mods.exnihilocreation.Heat.removeAll();
+mods.exnihilocreatio.Heat.removeAll();
 ```
