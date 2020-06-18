@@ -6,7 +6,7 @@ Class path: `mods.buildcraft.AssemblyTable`
 
 ## Use
 
-To use, import the class with `import mods.buildcraft.AssemblyTable;` as the beginning of your script.
+To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
 ## Adding a Recipe
 
@@ -71,8 +71,8 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-**Parameters:**
+Parameters:
 
 - `<operation>`: `and` or `or`
 - `<material>`: `iron`, `nether_brick`, or `gold`
-- `<modifier>`: `lapis`, `quartz` or `diamond`
+- `<modifier>`: `lapis`, `quartz`, or `diamond`
