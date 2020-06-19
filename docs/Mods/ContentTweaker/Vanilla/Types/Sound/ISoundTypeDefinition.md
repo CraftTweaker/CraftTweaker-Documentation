@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues, 
 You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
 `<soundtype:wood>`
 
-##ZenMethods without parameters
+## ZenMethods without parameters
 |ZenMethod       |Return type                                    |Definition                                                         |
 |----------------|-----------------------------------------------|-------------------------------------------------------------------|
 |getVolume()     |float                                          |Returns the type's volume                                          |

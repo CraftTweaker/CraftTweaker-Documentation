@@ -7,7 +7,7 @@ That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MutableItemStack;` 
 
-##ZenMethods
+## ZenMethods
 
 ### Quantity
 A Stack's count is the number of items in that stack!
