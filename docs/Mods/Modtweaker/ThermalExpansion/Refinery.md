@@ -41,7 +41,6 @@ Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) 
 ## Removing a Recipe
 
 `Refinery.removeRecipe(input);`
-`Refinery.removeRecipePotion(input);`
 
 - `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
 
@@ -49,5 +48,16 @@ Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) 
 import mods.thermalexpansion.Refinery;
 
 Refinery.removeRecipe(<liquid:resin>);
+```
+
+### Removing a Potion Recipe
+
+`Refinery.removeRecipePotion(input);`
+
+- `input` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)>
+
+```zenscript
+import mods.thermalexpansion.Refinery;
+
 Refinery.removeRecipePotion(<liquid:potion_lingering>.withTag({Potion: "cofhcore:healing3"}));
 ```
