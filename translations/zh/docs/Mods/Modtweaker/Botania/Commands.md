@@ -1,4 +1,4 @@
-# Commands
+# 命令
 
 ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
@@ -39,7 +39,7 @@ Usage:
 
 `/ct botania apothecary`
 
-Description:
+描述：
 
 Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
