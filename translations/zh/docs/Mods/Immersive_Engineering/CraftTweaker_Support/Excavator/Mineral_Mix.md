@@ -36,9 +36,9 @@ You will need to use the oredict names.
 
 ## Remove Ore
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Ore  | string    |
+| Required | 返回值类型 | Data Type |
+| -------- | ----- | --------- |
+| Required | Ore   | string    |
 
 ```zenscript
 mineralMixObject.removeOre("oreIron");
