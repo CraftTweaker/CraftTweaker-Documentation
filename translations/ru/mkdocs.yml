@@ -270,6 +270,10 @@ nav:
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
         - Utils: 'Mods/Astral_Sorcery/Util.md'
+    - BuildCraft:
+        - Home: 'Mods/BuildCraft/index.md'
+        - Крафт:
+            - 'Mods/BuildCraft/Crafting/AssemblyTable.md'
     - Calculator:
       - Algorithm Seperator: 'Mods/Calculator/Algorithm_Seperator.md'
       - Atomic Calculator: 'Mods/Calculator/Atomic_Calculator.md'
