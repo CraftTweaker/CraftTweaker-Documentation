@@ -4,14 +4,14 @@
 
 `mods.thermalexpansion.RedstoneFurnace`
 
-## Addition
+## 追加
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.addRecipe(IItemStack output, IItemStack input, int energy);
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
