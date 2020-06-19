@@ -2,7 +2,7 @@
 
 An ISoundTypeDefinition object represents a sound (type) in the game. A sound type is almost always bound to one or multiple blocks.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.SoundType;`
@@ -14,7 +14,7 @@ You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentT
 
 ## ZenMethods without parameters
 
-| ZenMethod       | Return type                                                                             | Definition                                                         |
+| Метод           | Возвращаемый тип                                                                        | Definition                                                         |
 | --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | getVolume()     | float                                                                                   | Returns the type's volume                                          |
 | getPitch()      | float                                                                                   | Returns the type's pitch                                           |
