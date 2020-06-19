@@ -10,16 +10,16 @@ It might be required for you to import the class if you encounter any issues (li
 
 ## ZenGetter and ZenSetter
 
-| Название    | ZenGetter | ZenSetter | Type   |
-| ----------- | --------- | --------- | ------ |
-| color       | ✔         | ✔         | int    |
-| current     | ✔         | ✔         | int    |
-| extraInfo   | ✔         | ✔         | string |
-| identifier  | ✔         | ✔         | string |
-| level       | ✔         | ✔         | int    |
-| max         | ✔         | ✔         | int    |
-| info        | ✔         |           | string |
-| colorString | ✔         |           | string |
+| Название    | Геттер | ZenSetter | Тип    |
+| ----------- | ------ | --------- | ------ |
+| color       | ✔      | ✔         | int    |
+| current     | ✔      | ✔         | int    |
+| extraInfo   | ✔      | ✔         | string |
+| identifier  | ✔      | ✔         | string |
+| level       | ✔      | ✔         | int    |
+| max         | ✔      | ✔         | int    |
+| info        | ✔      |           | string |
+| colorString | ✔      |           | string |
 
 ## Методы ZenScript
 
