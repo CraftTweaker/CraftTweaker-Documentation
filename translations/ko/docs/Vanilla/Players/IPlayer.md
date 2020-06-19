@@ -2,7 +2,7 @@
 
 The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
 
-## Importing the package
+## 패키지 임포트하기
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IPlayer;`
@@ -16,7 +16,7 @@ IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions 
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
+| Zengetter     | 역할                                                                                         | 반환 타입                                      | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
