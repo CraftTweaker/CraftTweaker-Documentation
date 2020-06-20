@@ -271,9 +271,11 @@ nav:
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
         - Util: 'Mods/Astral_Sorcery/Util.md'
     - BuildCraft:
-        - Home: 'Mods/BuildCraft/index.md'
-        - Wytwarzanie:
-            - 'Mods/BuildCraft/Crafting/AssemblyTable.md'
+      - Home: 'Mods/BuildCraft/index.md'
+      - Wytwarzanie:
+        - AssemblyTable: 'Mods/BuildCraft/Crafting/AssemblyTable.md'
+      - Energy:
+        - CombustionEngine: 'Mods/BuildCraft/Energy/CombustionEngine.md'
     - Calculator:
       - Algorithm Seperator: 'Mods/Calculator/Algorithm_Seperator.md'
       - Atomic Calculator: 'Mods/Calculator/Atomic_Calculator.md'
