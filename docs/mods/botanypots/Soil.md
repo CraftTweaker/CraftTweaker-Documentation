@@ -119,6 +119,11 @@ This will give you an array of all the known soil ids at the time.
 
 ```zenscript
 Soil.getAllIds();
+
+// Log all ids to the crafttweaker.log file
+for soilId in Soil.getAllIds() {
+    println(soilId);
+}
 ```
 
 ## Removing All Soil
