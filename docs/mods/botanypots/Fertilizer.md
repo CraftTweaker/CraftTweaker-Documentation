@@ -70,6 +70,11 @@ This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
 Fertilizer.getAllIds();
+
+// Log all ids to the crafttweaker.log file
+for fertilizerId in Fertilizer.getAllIds() {
+    println(fertilizerId);
+}
 ```
 
 ## Removing All Fertilizers
