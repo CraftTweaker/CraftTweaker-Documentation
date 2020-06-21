@@ -62,6 +62,10 @@ Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sug
 
 ## Getting All Ids
 
+`Fertilizer.getAllIds();`
+
+- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
+
 This will give you an array of all the known fertilizer ids at the time.
 
 ```zenscript
