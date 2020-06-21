@@ -169,8 +169,6 @@ Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 This will give you an array of all the known crop ids at the time.
 
 ```zenscript
-Crop.getAllIds();
-
 // Log all ids to the crafttweaker.log file
 for cropId in Crop.getAllIds() {
     println(cropId);
