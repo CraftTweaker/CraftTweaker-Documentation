@@ -12,7 +12,7 @@ To use, import the class with `import mods.botanypots.Soil;` at the beginning of
 
 - `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState.md)> The block state to display for the soil in the pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 - `tickRate` &lt;int> The tick rate for the soil.
 - `categories` &lt;string[]> An array of categories associated with the new soil.
 
@@ -65,7 +65,7 @@ Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 `Soil.setDisplayState(id, displayState);`
 
 - `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState.md)> The block state to display for the soil in the pot.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
 
 Changes the block displayed for the soil.
 
