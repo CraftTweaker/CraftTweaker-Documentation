@@ -16,7 +16,7 @@ To use, import the class with `import mods.botanypots.Crop;` at the beginning of
 
 - `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState.md)> The block to display when rendering the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 - `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
 - `multiplier` &lt;float> (Only in 1.14) Another factor for how long the crop takes to grow.
 - `categories` &lt;string[]> An array of soil categories this crop can be grown in.
@@ -57,7 +57,7 @@ Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 `Crop.setDisplay(id, state);`
 
 - `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState.md)> The block to display when rendering the crop.
+- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 
 Sets the block rendered for the crop.
 
