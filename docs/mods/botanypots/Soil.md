@@ -111,6 +111,10 @@ Soil.clearCategories("botanypots:soil/farmland");
 
 ## Getting All Ids
 
+`Soil.getAllIds();`
+
+- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
+
 This will give you an array of all the known soil ids at the time.
 
 ```zenscript
