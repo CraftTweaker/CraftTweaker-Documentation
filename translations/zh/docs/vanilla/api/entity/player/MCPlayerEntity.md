@@ -495,6 +495,7 @@ Returns boolean
 
 ```zenscript
 myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
+
 ```
 
 | Parameter   | Type                                                              | Description             |
