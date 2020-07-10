@@ -13,13 +13,13 @@ To use, import the class with `import mods.botanypots.Soil;` at the beginning of
 - `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
-- `tickRate` &lt;int> The tick rate for the soil.
+- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
 - `categories` &lt;string[]> An array of categories associated with the new soil.
 
 Creates a new soil entry that players can use in the botany pot.
 
 ```zenscript
-Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
+Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 0, ["rocky"]);
 ```
 
 ## Removing A Soil
@@ -34,17 +34,17 @@ Removes a soil from the game's data.
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## Changing Soil Tick Rate
+## Changing Soil Growth Modifier
 
-`Soil.setTicks(id, tickRate);`
+`Soil.setGrowthModifier(id, tickRate);`
 
 - `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `tickRate` &lt;int> The new tick rate for the soil.
+- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
 
-Changes the tick rate of a given soil.
+Changes the growth modifier of a given soil.
 
 ```zenscript
-Soil.setTicks("botanypots:soil/grass", 1300);
+Soil.setGrowthModifier("botanypots:soil/grass", 0.15);
 ```
 
 ## Changing Soil Ingredient
