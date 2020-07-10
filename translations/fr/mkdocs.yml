@@ -6,10 +6,9 @@ nav:
   - Examples: "examples.md"
   - Recipes:
       - Recipe Managers: "recipes/recipe_managers.md"
-      - Crafting Table: "recipes/crafting_table.md"
   - Vanilla:
       - How to:
-          - How to: 'vanilla/how_to/how_to.md'
+          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
       - Api:
           - Block:
               - Material:
@@ -103,6 +102,11 @@ nav:
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
               - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+          - Recipe:
+              - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+              - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+              - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+              - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
           - Potions:
               - MCPotion: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
@@ -117,49 +121,37 @@ nav:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
-      - JEITweaker:
-          - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
-      - InitialInventory:
-          - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
-
-# Do not edit in PRs below here
-site_name: CraftTweaker Documentation
-site_author: Team CraftTweaker and any Contributors to the CrT Wiki GitHub repository
-site_url: "https://docs.blamejared.com/1.14/fr/"
-
-repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
-repo_name: 'Visit this wiki on GitHub'
-google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
-
-markdown_extensions:
-  - admonition
-  - smarty
-  - sane_lists
-  - toc:
-      anchorlink: True
-
-theme:
-  name: null
-  custom_dir: 'mkdocs_zen/'
-  include_search_page: True
-  search_index_only: True
-
-extra:
-  logo: 'assets/logo.svg'
-  #article_nav_top: true
-  #artivle_nav_bottom: true
-  #history_buttons: false
-  version: 'CrT v5.0.0'
-  patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
-  discord_link: "https://discord.blamejared.com"
-  game_version: "1.14"
-  language: "en"
-
-plugins:
-  - search:
-        prebuild_index: "python"
-  - minify:
-      minify_html: true
-      htmlmin_opts:
-        remove_comments: true
-  - use-site-url
+    - ContentTweaker:
+      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - API:
+        - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
+        - Api:
+          - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
+        - Block:
+          - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
+          - Basic:
+            - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
+          - Pillar:
+            - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
+          - Stairs:
+            - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
+        - Item:
+          - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
+          - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
+          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
+          - Basic:
+            - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
+          - Tool:
+            - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
+    - InitialInventory:
+        - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+    - JEITweaker:
+        - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
+    - StoneAge:
+        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+        - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
+        - Millstone: 'mods/StoneAge/MillstoneManager.md'
+        - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
+        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'

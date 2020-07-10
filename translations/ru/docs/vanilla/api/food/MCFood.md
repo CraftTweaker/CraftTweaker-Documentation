@@ -12,10 +12,10 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Тип   | Описание                |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| Parameter  | Тип   | Описание             |
+| ---------- | ----- | -------------------- |
+| healing    | int   | Описание отсутствует |
+| saturation | float | Описание отсутствует |
 
 
 
@@ -28,7 +28,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
 ```
 
-| Parameter   | Type                                                                                          | Description             |
+| Параметр    | Тип                                                                                           | Описание                |
 | ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 | probability | float                                                                                         | No description provided |

@@ -2,58 +2,58 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс добавляется модом `crafttweaker`. Вы должны установить этот мод, если хотите использовать эту возможность.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.data.IntArrayData
 ```
 
-## Implemented Interfaces
-IntArrayData implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+IntArrayData реализует интерфейсы ниже. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Constructors
+## Конструкторы
 ```zenscript
 new crafttweaker.api.data.IntArrayData(internal as int[]);
 ```
-| Parameter | Тип   | Описание                |
-| --------- | ----- | ----------------------- |
-| internal  | int[] | No description provided |
+| Параметр | Тип   | Описание             |
+| -------- | ----- | -------------------- |
+| internal | int[] | Описание отсутствует |
 
 
 
-## Methods
+## Методы
 ### add
 
 ```zenscript
 [4, 128, 256, 1024].add(value as crafttweaker.api.data.IData);
-[4, 128, 256, 1024].add("today");
+[4, 128, 256, 1024].add("сегодня");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| Параметр | Тип                                                    | Описание                       |
+| -------- | ------------------------------------------------------ | ------------------------------ |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению в список |
 
 
 
 ```zenscript
 [4, 128, 256, 1024].add(index as int, value as crafttweaker.api.data.IData);
-[4, 128, 256, 1024].add(1, "beautiful");
+[4, 128, 256, 1024].add(1, "красиво");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| Параметр | Тип                                                    | Описание                                                                  |
+| -------- | ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| index    | int                                                    | Индекс к добавлению.  Индексы последующих элементов будут увеличены на 1. |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению.                                                    |
 
 
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Получает представление<IData> этого объекта как список, возвращая null на значения помимо [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Returns: `null if this IData is not a list.`
+ Возвращает: `null, если этот объект не список.`
 
 Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
@@ -104,9 +104,9 @@ Returns boolean
 [4, 128, 256, 1024].contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Параметр | Тип                                                    | Описание                         |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -134,9 +134,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 128, 256, 1024].get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Параметр | Тип | Описание      |
+| -------- | --- | ------------- |
+| index    | int | Индекс (от 0) |
 
 
 ### getId
@@ -199,9 +199,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 
 
-## Properties
+## Свойства
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Имя  | Тип | Имеет геттер | Имеет сеттер |
+| ---- | --- | ------------ | ------------ |
+| size | int | да           | нет          |
 

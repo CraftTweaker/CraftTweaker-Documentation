@@ -262,65 +262,65 @@ myMCPlayerEntity.canPassengerSteer();
 
 ### canPlayerEdit #可以由玩家编辑
 
-返回此玩家是否可以在某个地点使用给定的堆栈修改方块。 <p> 查询位置是 {@code pos.offset(facing.getOpposite()}。 Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+返回此玩家是否可以在某个地点使用给定的堆栈修改方块。 <p> 查询位置是 {@code pos.offset(facing.getOpposite()}。 返回：`此玩家是否可以修改当前世界中查询的位置` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowededge
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | No description provided |
-| facing    | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | No description provided |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数 | 类型                                                                | 说明    |
+| -- | ----------------------------------------------------------------- | ----- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | 未提供说明 |
+| 方向 | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | 未提供说明 |
+| 堆叠 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
 
 
-### canRenderOnFire
+### canRenderOnFire #是否能被渲染为着火
 
-Return whether this entity should be rendered as on fire.
+返回该实体能否被渲染为着火
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canRenderOnFire();
 ```
 
-### canRiderInteract
+### canRiderInteract #是否可以互动
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canRiderInteract();
 ```
 
-### canSwim
+### canSwim #是否可以游泳
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canSwim();
 ```
 
-### canTrample
+### canTrample #是否能被踩踏
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
 ```
 
-| Parameter    | Type                                                                    | Description             |
-| ------------ | ----------------------------------------------------------------------- | ----------------------- |
-| state        | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
-| fallDistance | float                                                                   | No description provided |
+| 参数   | 类型                                                                      | 说明    |
+| ---- | ----------------------------------------------------------------------- | ----- |
+| 状态   | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 未提供说明 |
+| 点    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | 未提供说明 |
+| 下落距离 | 浮点                                                                      | 未提供说明 |
 
 
-### canUpdate
+### canUpdate #是否能被更新
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canUpdate();
@@ -328,87 +328,87 @@ myMCPlayerEntity.canUpdate();
 
 
 ```zenscript
-myMCPlayerEntity.canUpdate(value as boolean);
+myMCPlayerEntity.canUpdate(值为布尔型);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| value     | boolean | No description provided |
+| 参数 | 类型  | 说明    |
+| -- | --- | ----- |
+| 值  | 布尔值 | 未提供说明 |
 
 
-### canUseCommandBlock
+### canUseCommandBlock #是否可以使用命令方块
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### clearActivePotions
+### clearActivePotions #清除药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.clearActivePotions();
 ```
 
-### clearBedPosition
+### clearBedPosition #清除床的位置
 
 ```zenscript
 myMCPlayerEntity.clearBedPosition();
 ```
 
-### closeScreen
+### closeScreen #关闭屏幕
 
-set current crafting inventory back to the 2x2 square
+把当前合成栏设置回2x2个格子
 
 ```zenscript
 myMCPlayerEntity.closeScreen();
 ```
 
-### curePotionEffects
+### curePotionEffects #清除药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.curePotionEffects(治疗的效果为 crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter    | Type                                                              | Description             |
-| ------------ | ----------------------------------------------------------------- | ----------------------- |
-| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数    | 类型                                                                | 说明    |
+| ----- | ----------------------------------------------------------------- | ----- |
+| 治疗的效果 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
 
 
-### detach
+### detach #分离
 
 ```zenscript
 myMCPlayerEntity.detach();
 ```
 
-### disableShield
+### disableShield #禁用盾
 
 ```zenscript
-myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
+myMCPlayerEntity.disableShield（p_190777_1_ 为布尔值）；
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_190777_1_ | boolean | No description provided |
+| 参数            | 类型  | 说明    |
+| ------------- | --- | ----- |
+| p_190777_1_ | 布尔值 | 未提供说明 |
 
 
-### doesEntityNotTriggerPressurePlate
+### doesEntityNotTriggerPressurePlate #实体是否会触发压力板
 
-Return whether this entity should NOT trigger a pressure plate or a tripwire.
+返回此实体是否会触发压力板或绊线。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 ```
 
-### equals
+### equals #等于
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.equals(p_equals_1_ as Object);
@@ -495,6 +495,7 @@ Returns boolean
 
 ```zenscript
 myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
+
 ```
 
 | Parameter   | Type                                                              | Description             |

@@ -22,7 +22,7 @@ new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
 
 
 
-## Methods
+## 方法
 ### add
 
 Adds two positions together and returns the result.
