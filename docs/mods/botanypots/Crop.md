@@ -6,19 +6,15 @@ Class path: `mods.botanypots.Crop`
 
 To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
 
-***Growth multipliers no longer exist after MC 1.14.***
-
 ## Create A Crop
 
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
-
-`Crop.create(id, seed, display, tickRate, categories);` (For MC 1.15+)
 
 - `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 - `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 - `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
-- `multiplier` &lt;float> (Only in 1.14) Another factor for how long the crop takes to grow.
+- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
 - `categories` &lt;string[]> An array of soil categories this crop can be grown in.
 
 This can be used to create a new crop. Keep in mind that drops need to be added separately.
@@ -86,8 +82,6 @@ Crop.setTickRate("botanypots:crop/wheat", 5000);
 - `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
 
 Sets the growth multiplier/modifier for the crop.
-
-***Does not exist beyond 1.14!***
 
 ```zenscript
 Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
