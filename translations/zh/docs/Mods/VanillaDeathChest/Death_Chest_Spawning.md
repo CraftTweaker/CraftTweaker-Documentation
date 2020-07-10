@@ -19,3 +19,17 @@ DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, 
 //DeathChestSpawning.setContainerDisplayName(string stage, string name);
 DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
 ```
+
+## Registry name regex
+
+```zenscript
+//DeathChestSpawning.setRegistryNameRegex(string stage, string regex);
+DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*");
+```
+
+## Use container in inventory
+
+```zenscript
+//DeathChestSpawning.setUseContainerInInventory(string stage, bool flag);
+DeathChestSpawning.setUseContainerInInventory("example_stage", false);
+```
