@@ -12,7 +12,7 @@ To use, import the class with `import mods.buildcraft.CombustionEngine;` at the 
 
 `CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
 
-- `liquid` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
+- `liquid` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
 - `powerPerTick` &lt;double> Power output in MJ per tick
 - `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
 
@@ -26,10 +26,10 @@ CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
-- `lFuel` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The liquid to be used as fuel
+- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
 - `powerPerTick` &lt;double> Power output in MJ per tick
 - `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
-- `lResidue` <[ILiquidStack](/vanilla/api/liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
+- `lResidue` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
 
 ```zenscript
 import mods.buildcraft.CombustionEngine;
