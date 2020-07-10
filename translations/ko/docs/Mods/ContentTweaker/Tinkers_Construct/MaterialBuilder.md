@@ -88,8 +88,8 @@ Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers
 - `"fletching"`
 
 ```zenscript
-myMaterial.addTrait("fiery");
-myMaterial.addTrait("fiery", "bowstring");
+myMaterial.addMaterialTrait("fiery");
+myMaterial.addMaterialTrait("fiery", "bowstring");
 ```
 
 You can remove materialTraits as well (which is especially useful when doing batch materials).  

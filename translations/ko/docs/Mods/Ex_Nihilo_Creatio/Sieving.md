@@ -41,5 +41,5 @@ addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ## Removal
 
 ```zenscript
-mods.exnihilocreation.Sieve.removeAll();
+mods.exnihilocreatio.Sieve.removeAll();
 ```

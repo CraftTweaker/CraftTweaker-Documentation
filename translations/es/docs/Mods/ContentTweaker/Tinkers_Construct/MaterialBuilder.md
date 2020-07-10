@@ -2,7 +2,7 @@
 
 Using this package you can create materials that you can then create tools with!
 
-## Importing the class
+## Importar la clase
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.MaterialBuilder;`
@@ -88,8 +88,8 @@ Alternatively, you can use a [Trait Representation](/Mods/ContentTweaker/Tinkers
 - `"fletching"`
 
 ```zenscript
-myMaterial.addTrait("fiery");
-myMaterial.addTrait("fiery", "bowstring");
+myMaterial.addMaterialTrait("fiery");
+myMaterial.addMaterialTrait("fiery", "bowstring");
 ```
 
 You can remove materialTraits as well (which is especially useful when doing batch materials).  

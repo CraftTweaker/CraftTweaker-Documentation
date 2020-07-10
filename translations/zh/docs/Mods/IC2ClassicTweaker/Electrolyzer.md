@@ -46,4 +46,5 @@ mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <m
 
 ### 删除配方
 
-Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`. ```
+Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+

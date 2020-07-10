@@ -2,7 +2,7 @@
 
 The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
 
-## Importing the package
+## Импорт пакета
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IPlayer;`
@@ -12,11 +12,11 @@ It might be required for you to import the package if you encounter any issues (
 IPlayer extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objects also are available to IPlayer Objects.  
 IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions available to [IUser](/Vanilla/Players/IUser/) Objects also are available to IPlayer Objects.
 
-## Zengetters
+## Геттеры
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
+| Геттер        | Что он делает                                                                              | Возвращаемый тип                           | Использование          |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
@@ -33,7 +33,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 | position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f/)   | `player.position`      |
 | foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
 
-## ZenMethods
+## Методы
 
 Zenmethods are for doing things with other things, in this case with a player.
 

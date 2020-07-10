@@ -99,7 +99,6 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerPickupItem          | [`crafttweaker.event.PlayerPickupItemEvent`](/Vanilla/Events/Events/PlayerPickupItem/)                   |
 | onPlayerPickupXp            | [`crafttweaker.event.PlayerPickupXpEvent`](/Vanilla/Events/Events/PlayerPickupXp/)                       |
 | onPlayerRespawn             | [`crafttweaker.event.PlayerRespawnEvent`](/Vanilla/Events/Events/PlayerRespawn/)                         |
-| onPlayerRightClickEmpty     | [`crafttweaker.event.PlayerRightClickEmptyEvent`](/Vanilla/Events/Events/PlayerRightClickEmpty/)         |
 | onPlayerRightClickItem      | [`crafttweaker.event.PlayerRightClickItemEvent`](/Vanilla/Events/Events/PlayerRightClickItem/)           |
 | onPlayerSetSpawn            | [`crafttweaker.event.PlayerSetSpawn`](/Vanilla/Events/Events/PlayerSetSpawn/)                            |
 | onPlayerSleepInBed          | [`crafttweaker.event.PlayerSleepInBedEvent`](/Vanilla/Events/Events/PlayerSleepInBed/)                   |

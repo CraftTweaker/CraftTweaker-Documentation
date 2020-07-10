@@ -2,7 +2,7 @@
 
 The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.player.IPlayer;`
@@ -16,12 +16,12 @@ IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions 
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| Zengetter     | What does it do                                                                            | Return Type                                | Usage                  |
+| Zengetter     | 功能                                                                                         | 返回值类型                                      | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
 | data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
-| xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
+| xp (经验值)      | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
 | hotbarSize    | returns the player's hotbar size                                                           | int                                        | `player.hotbarSize`    |
 | inventorySize | returns the player's inventory size                                                        | int                                        | `player.inventorySize` |
 | currentItem   | returns the item the player is currently holding                                           | [IItemStack](/Vanilla/Items/IItemStack/)   | `player.currentItem`   |
@@ -39,7 +39,7 @@ Zenmethods are for doing things with other things, in this case with a player.
 
 | ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
-| removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
+| removeXP(XPtoRemove)     | int #整型                                  | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
 | update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
 | sendChat(Message)        | string OR IChatMessage                   | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")`    |
 | getHotbarStack(index)    | int                                      | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`                  |

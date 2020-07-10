@@ -4,7 +4,7 @@
 
 `mods.exnihilocreatio.Sieve`
 
-## Methods
+## Metodos
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
@@ -41,5 +41,5 @@ addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ## Removal
 
 ```zenscript
-mods.exnihilocreation.Sieve.removeAll();
+mods.exnihilocreatio.Sieve.removeAll();
 ```

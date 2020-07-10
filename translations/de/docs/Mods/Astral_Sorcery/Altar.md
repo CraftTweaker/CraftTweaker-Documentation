@@ -78,7 +78,7 @@ Adds a recipe to the Starlight Crafting Table (T2)
 ![Inputs Order](/Mods/Astral_Sorcery/Assets/guialtar2.png)
 
 ```zenscript
-mods.astralsorcery.Altar.addAttunmentAltarRecipe(mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
+mods.astralsorcery.Altar.addAttunementAltarRecipe("mypackname:shaped/internal/altar/iguessmarble", <minecraft:dirt>, 500, 300, [
             null, null, null,
             <ore:treeLeaves>, <astralsorcery:blockmarble:2>, <ore:treeLeaves>,
             null, <liquid:astralsorcery.liquidstarlight>, null,

@@ -21,7 +21,6 @@ BlockPlace Events implement the following interfaces and are able to call all of
 | ZenGetter       | ZenSetter | Тип                                         |
 | --------------- | --------- | ------------------------------------------- |
 | `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `isPlayer`      |           | bool                                        |
 | `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `hand`          |           | String                                      |
