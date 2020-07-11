@@ -184,16 +184,16 @@ print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
+2つのIIngredientオブジェクトをマッチングすることもできますが、それにはin演算子を用いる必要があります。 ```in``` 演算子:
 
 ```zenscript
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
 val oreIngot = <ore:ingotIron>;
 val ingotGold = <minecraft:gold_ingot>;
 
-//true as the ingots Ingredient has <minecraft:gold_ingot>
+//ingotsの中に<minecraft:gold_ingot>が含まれるためtrue
 ingots has ingotGold;
 
-//false as <minecraft:iron_ingot> cannot be found in <ore:ingotGold>
+//<minecraft:iron_ingot>は<ore:ingotGold>では見つからないためfalse
 oreIngot has ingots;
 ```

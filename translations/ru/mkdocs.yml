@@ -94,18 +94,18 @@ nav:
           #Event superinterfaces/Shared stuff
         - IBlockEvent: 'Vanilla/Events/Events/IBlockEvent.md'
         - IEventCancelable: 'Vanilla/Events/Events/IEventCancelable.md'
-        - IEventHasResult: 'Vanilla/Events/Events/IEventHasResult.md'          
+        - IEventHasResult: 'Vanilla/Events/Events/IEventHasResult.md'
         - IEventPositionable: 'Vanilla/Events/Events/IEventPositionable.md'
-        - IMinecartEvent: 'Vanilla/Events/Events/IMinecartEvent.md'          
-        - IPotionBrewEvent: 'Vanilla/Events/Events/IPotionBrewEvent.md'            
+        - IMinecartEvent: 'Vanilla/Events/Events/IMinecartEvent.md'
+        - IPotionBrewEvent: 'Vanilla/Events/Events/IPotionBrewEvent.md'
         - IProcessableEvent: 'Vanilla/Events/Events/IProcessableEvent.md'
-        - IProjectileImpactEvent: 'Vanilla/Events/Events/IProjectileImpactEvent.md'  
+        - IProjectileImpactEvent: 'Vanilla/Events/Events/IProjectileImpactEvent.md'
         - IEntityEvent: 'Vanilla/Events/Events/IEntityEvent.md'
         - IExplosionEvent: 'Vanilla/Events/Events/IExplosionEvent.md'
         - ILivingEvent: 'Vanilla/Events/Events/ILivingEvent.md'
         - IPlayerEvent: 'Vanilla/Events/Events/IPlayerEvent.md'
           #Настоящие события ниже
-        - AnimalTameEvent: 'Vanilla/Events/Events/AnimalTame.md'                      
+        - AnimalTameEvent: 'Vanilla/Events/Events/AnimalTame.md'
         - BlockBreakEvent: 'Vanilla/Events/Events/BlockBreak.md'
         - BlockHarvestDropsEvent: 'Vanilla/Events/Events/BlockHarvestDrops.md'
         - BlockPlaceEvent: 'Vanilla/Events/Events/BlockPlace.md'
@@ -127,7 +127,7 @@ nav:
         - EntityTravelToDimensionEvent: 'Vanilla/Events/Events/EntityTravelToDimension.md'
         - ExplosionDetonateEvent: 'Vanilla/Events/Events/ExplosionDetonate.md'
         - ExplosionStartEvent: 'Vanilla/Events/Events/ExplosionStart.md'
-        - FarmlandTrampleEvent: 'Vanilla/Events/Events/FarmlandTrample.md'          
+        - FarmlandTrampleEvent: 'Vanilla/Events/Events/FarmlandTrample.md'
         - ItemExpireEvent: 'Vanilla/Events/Events/ItemExpire.md'
         - ItemFishedEvent: 'Vanilla/Events/Events/ItemFished.md'
         - ItemTossEvent: 'Vanilla/Events/Events/ItemToss.md'
@@ -175,7 +175,7 @@ nav:
         - ProjectileImpactFireballEvent: 'Vanilla/Events/Events/ProjectileImpactFireball.md'
         - ProjectileImpactThrowableEvent: 'Vanilla/Events/Events/ProjectileImpactThrowable.md'
         - SleepingLocationCheckEvent: 'Vanilla/Events/Events/SleepingLocationCheck.md'
-        - SleepingTimeCheckEvent: 'Vanilla/Events/Events/SleepingTimeCheck.md'                 
+        - SleepingTimeCheckEvent: 'Vanilla/Events/Events/SleepingTimeCheck.md'
     - Игра:
       - IClient: 'Vanilla/Game/IClient.md'
       - IGame: 'Vanilla/Game/IGame.md'
@@ -211,7 +211,6 @@ nav:
         - Функции рецептов: 'Vanilla/Recipes/Crafting/Recipe_Functions.md'
         - ICraftingRecipe: 'Vanilla/Recipes/Crafting/ICraftingRecipe.md'
         - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
-        - ICraftingInventory: 'Vanilla/Recipes/Crafting/ICraftingInventory.md'
         - ICraftingInfo: 'Vanilla/Recipes/Crafting/ICraftingInfo.md'
       - Рецепты печи:
         - Рецепты печи: 'Vanilla/Recipes/Furnace/Recipes_Furnace.md'
@@ -242,6 +241,16 @@ nav:
     - Advanced Mortars:
       - Advanced Mortars: 'Mods/Advanced_Mortars/Advanced_Mortars.md'
       - Поддержка CraftTweaker: 'Mods/Advanced_Mortars/CraftTweaker_Support/Mortars.md'
+    - Alchemistry:
+      - Atomizer: 'Mods/Alchemistry/Atomizer.md'
+      - Chemical Combiner: 'Mods/Alchemistry/ChemicalCombiner.md'
+      - Chemical Dissolver: 'Mods/Alchemistry/Dissolver.md'
+      - Compound Creation: 'Mods/Alchemistry/CreateCompound.md'
+      - Electrolyzer: 'Mods/Alchemistry/Electrolyzer.md'
+      - Element Creation: 'Mods/Alchemistry/CreateElement.md'
+      - Evaporator: 'Mods/Alchemistry/Evaporator.md'
+      - Liquifier: 'Mods/Alchemistry/Liquifier.md'
+      - Get Metadata: 'Mods/Alchemistry/MetaGet.md'
     - Applied Energistics 2:
       - Applied Energistics 2: 'Mods/Applied_Energistics_2/Applied_Energistics_2.md'
       - Cannon: 'Mods/Applied_Energistics_2/Cannon.md'
@@ -261,6 +270,30 @@ nav:
         - Starlight Infusion: 'Mods/Astral_Sorcery/Infusion.md'
         - Starlight Transmutation: 'Mods/Astral_Sorcery/Transmutation.md'
         - Utils: 'Mods/Astral_Sorcery/Util.md'
+    - BuildCraft:
+      - Home: 'Mods/BuildCraft/index.md'
+      - Крафт:
+        - AssemblyTable: 'Mods/BuildCraft/Crafting/AssemblyTable.md'
+      - Energy:
+        - CombustionEngine: 'Mods/BuildCraft/Energy/CombustionEngine.md'
+    - Calculator:
+      - Algorithm Seperator: 'Mods/Calculator/Algorithm_Seperator.md'
+      - Atomic Calculator: 'Mods/Calculator/Atomic_Calculator.md'
+      - Basic Calculator: 'Mods/Calculator/Basic_Calculator.md'
+      - Conductor Mast: 'Mods/Calculator/Conductor_Mast.md'
+      - Extraction Chamber: 'Mods/Calculator/Extraction_Chamber.md'
+      - Fabrication Chamber: 'Mods/Calculator/Fabrication_Chamber.md'
+      - Flawless Calculator: 'Mods/Calculator/Flawless_Calculator.md'
+      - Glowstone Extractor: 'Mods/Calculator/Glowstone_Extractor.md'
+      - Health Processor: 'Mods/Calculator/Health_Processor.md'
+      - Precision Chamber: 'Mods/Calculator/Precision_Chamber.md'
+      - Processing Chamber: 'Mods/Calculator/Processing_Chamber.md'
+      - Reassembly Chamber: 'Mods/Calculator/Reassembly_Chamber.md'
+      - Redstone Extractor: 'Mods/Calculator/Redstone_Extractor.md'
+      - Restoration Chamber: 'Mods/Calculator/Restoration_Chamber.md'
+      - Scientific Calculator: 'Mods/Calculator/Scientific_Calculator.md'
+      - Starch Extractor: 'Mods/Calculator/Starch_Extractor.md'
+      - Stone Seperator: 'Mods/Calculator/Stone_Seperator.md'
     - CompatSkills:
       - CompatSkills: 'Mods/CompatSkills/CompatSkills.md'
       - Требования:
@@ -494,6 +527,9 @@ nav:
         - ZenStager: 'Mods/GameStages/ZenStages/ZenStager.md'
         - Stage: 'Mods/GameStages/ZenStages/Stage.md'
         - Custom Type: 'Mods/GameStages/ZenStages/CustomType.md'
+    - Garden Stuff:
+      - Introduction: 'Mods/Garden_Stuff/Garden_Stuff.md'
+      - Composter: 'Mods/Garden_Stuff/Composter.md'
     - GregTech Community Edition:
       - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
       - Machines: 'Mods/GregTechCE/Machines.md'
@@ -514,7 +550,7 @@ nav:
       - Scrap Box: 'Mods/IC2Tweaker/Scrap_Box.md'
       - Semi-Fluid Generator: 'Mods/IC2Tweaker/Semi-Fluid_Generator.md'
       - Thermal Centrifuge: 'Mods/IC2Tweaker/ThermalCentrifuge.md'
-    - IC2ClassicTweaker:
+    - IC2 Classic Tweaker:
       - Adv Crafting: 'Mods/IC2ClassicTweaker/AdvCrafting.md'
       - Canning Machine: 'Mods/IC2ClassicTweaker/CanningMachine.md'
       - Electrolyzer: 'Mods/IC2ClassicTweaker/Electrolyzer.md'
@@ -741,6 +777,72 @@ nav:
         - Printer: 'Mods/MrCrayfish_s_Furniture_Mod/Printer.md'
         - Toaster: 'Mods/MrCrayfish_s_Furniture_Mod/Toaster.md'
         - Washing Machine: 'Mods/MrCrayfish_s_Furniture_Mod/WashingMachine.md'
+    - Nature's Aura:
+      - Altar of Birthing: 'Mods/Natures_Aura/Altar_Of_Birthing.md'
+      - Natural Altar: 'Mods/Natures_Aura/Natural_Altar.md'
+      - Offering to the Gods: 'Mods/Natures_Aura/Offering_To_The_Gods.md'
+      - Ritual of the Forest: 'Mods/Natures_Aura/Ritual_Of_The_Forest.md'
+    - NuclearCraft:
+      - Important Info: 'Mods/NuclearCraft/Important_Info.md'
+      - Radiation: 'Mods/NuclearCraft/Radiation.md'
+      - Machine Recipes: 
+        - Alloy Furnace: 'Mods/NuclearCraft/Machine_Recipes/Alloy_Furnace.md'
+        - Centrifuge: 'Mods/NuclearCraft/Machine_Recipes/Centrifuge.md'
+        - Chemical Reactor: 'Mods/NuclearCraft/Machine_Recipes/Chemical_Reactor.md'
+        - Condenser: 'Mods/NuclearCraft/Machine_Recipes/Condenser.md'
+        - Crystallizer: 'Mods/NuclearCraft/Machine_Recipes/Crystallizer.md'
+        - Decay Generator: 'Mods/NuclearCraft/Machine_Recipes/Decay_Generator.md'
+        - Decay Hastener: 'Mods/NuclearCraft/Machine_Recipes/Decay_Hastener.md'
+        - Electrolyzer: 'Mods/NuclearCraft/Machine_Recipes/Electrolyzer.md'
+        - Fission: 'Mods/NuclearCraft/Machine_Recipes/Fission.md'
+        - Fluid Enricher: 'Mods/NuclearCraft/Machine_Recipes/Fluid_Enricher.md'
+        - Fluid Extractor: 'Mods/NuclearCraft/Machine_Recipes/Fluid_Extractor.md'
+        - Fuel Reprocessor: 'Mods/NuclearCraft/Machine_Recipes/Fuel_Reprocessor.md'
+        - Fusion: 'Mods/NuclearCraft/Machine_Recipes/Fusion.md'
+        - Heat Exchanger: 'Mods/NuclearCraft/Machine_Recipes/Heat_Exchanger.md'
+        - Infuser: 'Mods/NuclearCraft/Machine_Recipes/Infuser.md'
+        - Ingot Former: 'Mods/NuclearCraft/Machine_Recipes/Ingot_Former.md'
+        - Irradiator: 'Mods/NuclearCraft/Machine_Recipes/Irradiator.md'
+        - Isotope Seperator: 'Mods/NuclearCraft/Machine_Recipes/Isotope_Separator.md'
+        - Manufactory: 'Mods/NuclearCraft/Machine_Recipes/Manufactory.md'
+        - Melter: 'Mods/NuclearCraft/Machine_Recipes/Melter.md'
+        - Pressurizer: 'Mods/NuclearCraft/Machine_Recipes/Pressurizer.md'
+        - Rock Crusher: 'Mods/NuclearCraft/Machine_Recipes/Rock_Crusher.md'
+        - Salt Fission: 'Mods/NuclearCraft/Machine_Recipes/Salt_Fission.md'
+        - Salt Mixer: 'Mods/NuclearCraft/Machine_Recipes/Salt_Mixer.md'
+        - Steam Turbine: 'Mods/NuclearCraft/Machine_Recipes/Steam_Turbine.md'
+        - Supercooler: 'Mods/NuclearCraft/Machine_Recipes/Supercooler.md'
+    - NuclearCraft&#58; Overhauled:
+      - Important Info: 'Mods/NuclearCraft_Overhauled/Important_Info.md'
+      - Radiation: 'Mods/NuclearCraft_Overhauled/Radiation.md'
+      - Recipe Info: 'Mods/NuclearCraft_Overhauled/Recipe_Info.md'
+      - Machine Recipes: 
+        - Alloy Furnace: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Alloy_Furnace.md'
+        - Assembler: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Assembler.md'
+        - Centrifuge: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Centrifuge.md'
+        - Chemical Reactor: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Chemical_Reactor.md'
+        - Condenser: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Condenser.md'
+        - Crystallizer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Crystallizer.md'
+        - Decay Generator: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Decay_Generator.md'
+        - Decay Hastener: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Decay_Hastener.md'
+        - Electrolyzer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Electrolyzer.md'
+        - Fission: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fission.md'
+        - Fluid Enricher: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fluid_Enricher.md'
+        - Fluid Extractor: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fluid_Extractor.md'
+        - Fuel Reprocessor: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fuel_Reprocessor.md'
+        - Fusion: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fusion.md'
+        - Heat Exchanger: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Heat_Exchanger.md'
+        - Infuser: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Infuser.md'
+        - Ingot Former: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Ingot_Former.md'
+        - Isotope Seperator: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Isotope_Separator.md'
+        - Manufactory: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Manufactory.md'
+        - Melter: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Melter.md'
+        - Pressurizer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Pressurizer.md'
+        - Rock Crusher: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Rock_Crusher.md'
+        - Salt Fission: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Salt_Fission.md'
+        - Salt Mixer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Salt_Mixer.md'
+        - Steam Turbine: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Steam_Turbine.md'
+        - Supercooler: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Supercooler.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
@@ -815,6 +917,53 @@ nav:
       - Vat: 'Mods/SteamAgeRevolution/Vat.md'
     - Survivalist:
       - Survivalist: 'Mods/Survivalist/Survivalist.md'
+    - Tech Reborn:
+      - Alloy Smelter: 'Mods/Tech_Reborn/Alloy_Smelter.md'
+      - Assembling Machine: 'Mods/Tech_Reborn/Assembling_Machine.md'
+      - Centrifuge: 'Mods/Tech_Reborn/Centrifuge.md'
+      - Chemical Reactor: 'Mods/Tech_Reborn/Chemical_Reactor.md'
+      - Compressor: 'Mods/Tech_Reborn/Compressor.md'
+      - Distillation Tower: 'Mods/Tech_Reborn/Distillation_Tower.md'
+      - Extractor: 'Mods/Tech_Reborn/Extractor.md'
+      - Fluid Generators: 'Mods/Tech_Reborn/Fluid_Generators.md'
+      - Fluid Replicator: 'Mods/Tech_Reborn/Fluid_Replicator.md'
+      - Fusion Reactor: 'Mods/Tech_Reborn/Fusion_Reactor.md'
+      - Grinder: 'Mods/Tech_Reborn/Grinder.md'
+      - Implosion Compressor: 'Mods/Tech_Reborn/Implosion_Compressor.md'
+      - Industrial Blast Furnace: 'Mods/Tech_Reborn/Industrial_Blast_Furnace.md'
+      - Industrial Electrolyzer: 'Mods/Tech_Reborn/Industrial_Electrolyzer.md'
+      - Industrial Grinder: 'Mods/Tech_Reborn/Industrial_Grinder.md'
+      - Industrial Sawmill: 'Mods/Tech_Reborn/Industrial_Sawmill.md'
+      - Plate Bending Machine: 'Mods/Tech_Reborn/Plate_Bending_Machine.md'
+      - Rolling Machine: 'Mods/Tech_Reborn/Rolling_Machine.md'
+      - Scrapbox: 'Mods/Tech_Reborn/Scrapbox.md'
+      - Solid Canning Machine: 'Mods/Tech_Reborn/Solid_Canning_Machine.md'
+      - Vacuum Freezer: 'Mods/Tech_Reborn/Vacuum_Freezer.md'
+      - Wire Mill: 'Mods/Tech_Reborn/Wire_Mill.md'
+    - TerraFirmaCraft&#58; The Next Generation:
+      - Terrafirmacraft: 'Mods/Terrafirmacraft/Terrafirmacraft.md'
+      - Heating: 'Mods/Terrafirmacraft/Heating.md'
+      - HeatingTemperatures: 'Mods/Terrafirmacraft/HeatingTemperatures.md'
+      - ItemRegistry: 'Mods/Terrafirmacraft/ItemRegistry.md'
+      - Metal: 'Mods/Terrafirmacraft/Metal.md'
+      - Рецепты:
+        - Anvil: 
+          - Anvil: 'Mods/Terrafirmacraft/Recipes/Anvil/Anvil.md'
+          - Welding: 'Mods/Terrafirmacraft/Recipes/Anvil/Welding.md'
+        - Barrel: 'Mods/Terrafirmacraft/Recipes/Barrel.md'
+        - Knapping:
+          - Clay: 'Mods/Terrafirmacraft/Recipes/Knapping/Clay.md'
+          - FireClay: 'Mods/Terrafirmacraft/Recipes/Knapping/FireClay.md'
+          - Leather: 'Mods/Terrafirmacraft/Recipes/Knapping/Leather.md'
+          - Stone: 'Mods/Terrafirmacraft/Recipes/Knapping/Stone.md'
+        - Alloy: 'Mods/Terrafirmacraft/Recipes/Alloy.md'
+        - Chisel: 'Mods/Terrafirmacraft/Recipes/Chisel.md'
+        - Loom: 'Mods/Terrafirmacraft/Recipes/Loom.md'
+        - Quern: 'Mods/Terrafirmacraft/Recipes/Quern.md'
+    - The Aether: 
+      - Accessory: 'Mods/The_Aether/Accessory.md'
+      - Enchanter: 'Mods/The_Aether/Enchanter.md'
+      - Freezer: 'Mods/The_Aether/Freezer.md'
     - Tree Tweaker:
       - Tree Tweaker: 'Mods/Tree_Tweaker/Tree_Tweaker.md'
     - VanillaDeathChest:
@@ -851,45 +1000,3 @@ nav:
       - Iterable: 'Dev_Area/ZenAnnotations/Annotation_Iterable.md'
       - ZenDoc: 'Dev_Area/ZenAnnotations/Annotation_ZenDoc.md'
     - Пользовательские классы ZenScript: 'Dev_Area/Custom_ZenClasses.md'
-
-# Не меняйте в PR'ах то, что ниже
-site_name: Документация Crafttweaker
-site_author: Команда CraftTweaker и участников репозитория CrT Wiki на GitHub
-site_url: "https://docs.blamejared.com/1.12/ru/"
-
-repo_url: 'https://github.com/CraftTweaker/CraftTweaker-Documentation'
-repo_name: 'Посетите эту вики-страницу на GitHub'
-google_analytics: ['UA-130251586-3', 'https://docs.blamejared.com']
-
-markdown_extensions:
-  - admonition
-  - smarty
-  - sane_lists
-  - toc:
-      anchorlink: True
-
-theme:
-  name: null
-  custom_dir: 'mkdocs_zen/'
-  include_search_page: True
-  search_index_only: True
-
-extra:
-  logo: 'assets/logo.svg'
-  #article_nav_top: true
-  #artivle_nav_bottom: true
-  #history_buttons: false
-  version: 'CrT v4.1.20'
-  patreon_link: "https://www.patreon.com/bePatron?u=104953&s=docs"
-  discord_link: "https://discord.blamejared.com"
-  game_version: "1.12"
-  language: "ru"
-
-plugins:
-  - search:
-      prebuild_index: "python"
-  - minify:
-      minify_html: true
-      htmlmin_opts:
-        remove_comments: true
-  - use-site-url

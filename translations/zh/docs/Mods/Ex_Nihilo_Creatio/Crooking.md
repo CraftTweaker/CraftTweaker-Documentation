@@ -14,13 +14,13 @@ mods.exnihilocreatio.Crook
 ## 添加配方
 
 ```zenscript
-mods.exnihilocreation.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
+mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 
-mods.exnihilocreation.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
+mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Removal
+## 删除配方
 
 ```zenscript
-mods.exnihilocreation.Crook.removeAll();
+mods.exnihilocreatio.Crook.removeAll();
 ```

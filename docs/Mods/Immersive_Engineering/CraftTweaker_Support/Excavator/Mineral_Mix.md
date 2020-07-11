@@ -44,7 +44,7 @@ You will need to use the oredict names.
 mineralMixObject.removeOre("oreIron");
 ```
 
-##Fail Chance Getter/Setter
+## Fail Chance Getter/Setter
 
 ### Example
 ```zenscript

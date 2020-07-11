@@ -11,7 +11,7 @@ Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for
 ```zenscript
 mods.projecte.EntityRandomizer.addPeaceful(IEntityDefinition entityDefinition);
 
-#Allows turning peaceful creatures into zombies. 
+// Allows turning peaceful creatures into zombies. 
 mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```
 
@@ -20,7 +20,7 @@ mods.projecte.EntityRandomizer.addPeaceful(<entity:minecraft:zombie>);
 ```zenscript
 mods.projecte.EntityRandomizer.addMob(IEntityDefinition entityDefinition);
 
-#Allows turning hostile mobs into pigs.
+// Allows turning hostile mobs into pigs.
 mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```
 
@@ -31,7 +31,7 @@ mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```zenscript
 mods.projecte.EntityRandomizer.removePeaceful(IEntityDefinition entityDefinition);
 
-#Stops peaceful mobs being able to be turned into pigs.
+// Stops peaceful mobs being able to be turned into pigs.
 mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```
 
@@ -40,20 +40,20 @@ mods.projecte.EntityRandomizer.removePeaceful(<entity:minecraft:pig>);
 ```zenscript
 mods.projecte.EntityRandomizer.removeMob(IEntityDefinition entityDefinition);
 
-#Stops hostile mobs being able to be turned into zombies.
+// Stops hostile mobs being able to be turned into zombies.
 mods.projecte.EntityRandomizer.removeMob(<entity:minecraft:zombie>);
 ```
 
 ### clearPeacefuls
 
 ```zenscript
-#Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
+// Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
 mods.projecte.EntityRandomizer.clearPeacefuls();
 ```
 
 ### clearMobs
 
 ```zenscript
-#Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
+// Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
 mods.projecte.EntityRandomizer.clearMobs();
 ```

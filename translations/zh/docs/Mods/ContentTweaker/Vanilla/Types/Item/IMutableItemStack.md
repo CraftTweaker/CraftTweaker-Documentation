@@ -3,7 +3,7 @@
 A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
 That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
 
-## Importing the package
+## 导入相关包
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.MutableItemStack;`
@@ -14,11 +14,11 @@ It might be required for you to import the package if you encounter any issues, 
 
 A Stack's count is the number of items in that stack!
 
-| ZenMethod       | Parameter Type | Description                                         |
-| --------------- | -------------- | --------------------------------------------------- |
-| setCount(count) | int            | Sets the stack's count to the `count` provided      |
-| grow(count)     | int            | Increases the stack's count by the `count` provided |
-| shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+| ZenMethod       | 参数类型 | 描述                                                  |
+| --------------- | ---- | --------------------------------------------------- |
+| setCount(count) | 整型   | Sets the stack's count to the `count` provided      |
+| grow(count)     | int  | Increases the stack's count by the `count` provided |
+| shrink(count)   | int  | Decreases the stack's count by the `count` provided |
 
 ### Damage
 

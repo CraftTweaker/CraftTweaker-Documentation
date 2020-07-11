@@ -6,7 +6,7 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 # List of Botania Mod Tweaker Commands
 
-##Recipes
+## Recipes
 ### botbrews
 
 Usage:

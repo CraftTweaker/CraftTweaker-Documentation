@@ -39,7 +39,7 @@ Usage:
 
 `/ct botania apothecary`
 
-Description:
+Описание:
 
 Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
