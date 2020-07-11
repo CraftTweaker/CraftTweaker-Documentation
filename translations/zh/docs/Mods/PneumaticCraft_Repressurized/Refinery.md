@@ -1,12 +1,12 @@
-# Refinery
+# 精炼厂
 
-The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
+精炼厂是一个使用热量将一个输入流体转换为两个或多个输出流体的多方块结果。 该多方块结构包含 2 （包含）至 4 （包含）个精炼厂方块，而可能的输出数量有精炼厂方块的数量限制。
 
-Prior to PneumaticCraft: Repressurized v0.9.0, the minimum temperature for any Refinery recipe (i.e. the temperature at which procesing starts) was always 373K, or 100°C. However, in v0.9.0 and later, it is possible to specify a minimum temperature when adding a Refinery recipe.
+在版本 v0.9.0 以前，任何精炼厂配方的所需最小温度（即加工开始的温度）一直是 373K，即 100℃。 但是，在版本 v0.9.0 及以后，可以在添加配方时指定一个最小温度。
 
-The Refinery will start processing fluids at the recipe's minimum temperature, and will work faster as the temperature rises.
+精炼厂将在到达最低温度时开始工作，温度越高，工作速度越快。
 
-Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
+注：可以有输入相同的配方，只要输出的个数不同。 In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
 
 ## 导入
 
