@@ -566,7 +566,7 @@ nav:
         - Blueprint:
           - Categories: 'Mods/Immersive_Engineering/Variables/Categories.md'
       - CraftTweaker Support:
-        - Alloy Smelter: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Smelter.md'
+        - Alloy Kiln: 'Mods/Immersive_Engineering/CraftTweaker_Support/Alloy_Kiln.md'
         - Arc Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Arc_Furnace.md'
         - Blast Furnace: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blast_Furnace.md'
         - Blueprint: 'Mods/Immersive_Engineering/CraftTweaker_Support/Blueprint.md'
@@ -830,7 +830,6 @@ nav:
         - Fluid Enricher: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fluid_Enricher.md'
         - Fluid Extractor: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fluid_Extractor.md'
         - Fuel Reprocessor: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fuel_Reprocessor.md'
-        - Fusion: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Fusion.md'
         - Heat Exchanger: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Heat_Exchanger.md'
         - Infuser: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Infuser.md'
         - Ingot Former: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Ingot_Former.md'
