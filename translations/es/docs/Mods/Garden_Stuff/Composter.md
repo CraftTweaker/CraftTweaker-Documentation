@@ -1,6 +1,6 @@
 # Composter
 ## Package
-`import mods.gardenstuff.CompostBin;`
+`import mods.gardenstuff.CompostBin;CompostBin;`
 
 ## Metodos
 - **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
@@ -11,12 +11,14 @@
 ```zenscript
 mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
+
 mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
 ## Add Compostable oreDictionary Entry
 ```zenscript
-mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
+mods.gardenstuff.mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
 
-mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);
+mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);CompostBin.add(<ore:cropCarrot>, 150);
 ```
