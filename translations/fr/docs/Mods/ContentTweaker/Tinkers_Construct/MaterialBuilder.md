@@ -108,7 +108,7 @@ In order for TiCon to build your materials, it needs to know the material stats.
 Only tooltypes whose stat has been added will be built!
 
 ```zenscript
-<br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
+<br /><br />myMat.addHeadMaterialStats(int durability, float miningSpeed, float attackDamage, int harvestLevel);
 myMat.removeHeadMaterialStats();
 
 
