@@ -2,7 +2,7 @@
 
 ## Package
 
-`mods.exnihilocreatio.Sieve`
+`mods.exnihilocreatio.SieveSieve`
 
 ## Methods
 
@@ -41,5 +41,5 @@ addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ## Removal
 
 ```zenscript
-mods.exnihilocreatio.Sieve.removeAll();
+mods.exnihilocreatio.mods.exnihilocreatio.Sieve.removeAll();
 ```
