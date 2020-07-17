@@ -43,10 +43,12 @@ The Saw has a recipe builder. Due to the nature of the saw it currently has no s
 * Saw methods
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
