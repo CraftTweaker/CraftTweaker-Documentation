@@ -33,18 +33,22 @@ The Mill has a recipe builder that allows more precise control over the recipes.
 * Mill builder methods
      
      * Sets up the inputs and outputs of the recipe  
+          zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+          zenscript setPriority(int priority)  
               zenscript
               setPriority(int priority)
      
      * Set the sound of a Mill Recipe.  
+          zenscript setSound(String soundLocation)  
               zenscript
               setSound(String soundLocation)
      
      * Finalize the recipe and add it to the game  
+          zenscript build()  
               zenscript
               build()
 
