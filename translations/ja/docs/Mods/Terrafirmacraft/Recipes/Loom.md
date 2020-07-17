@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Loom;
+import mods.terrafirmacraft.Loom;Loom;
 ```
 
 ## 追加
