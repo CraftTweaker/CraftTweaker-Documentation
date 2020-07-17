@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Quern;
+import mods.terrafirmacraft.Quern;Quern;
 ```
 
 ## 追加
