@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.TreeRitual
+mods.naturesaura.TreeRitualTreeRitual
 ```
 
 ## Metodos
@@ -15,11 +15,11 @@ mods.naturesaura.TreeRitual
 ## Addition
 
 ```zenscript
-mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
+mods.naturesaura.mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
+mods.naturesaura.mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
 ```
