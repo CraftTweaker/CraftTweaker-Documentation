@@ -3,7 +3,7 @@ Get is an convenient alternative to looking up the meta value for all elements a
 
 ## Package
 ```zenscript
-mods.alchemistry.Util.get`
+mods.alchemistry.Util.get`Util.get`
 ```
 
 ## Metodos
@@ -13,8 +13,9 @@ mods.alchemistry.Util.get`
 ## Syntax
 
 ```zenscript
-mods.alchemistry.Util.get(String name);
+mods.alchemistry.mods.alchemistry.Util.get(String name);
 
 val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
+val carbon = mods.alchemistry.Util.get("carbon");Util.get("strontium_carbonate");
 val carbon = mods.alchemistry.Util.get("carbon");
 ```
