@@ -95,10 +95,10 @@ val vInt = switchy ? 1 : 2;
 print(vInt);
 
 //Prints "Hello" if switchy is stue, otherwise prints "Bye"
-print(switchy ? "Hello" : "Bye");
+print(switchy ? print("Bye") : print("Hello"); "Hello" : "Bye");
 
 //Prints "Bye" if switchy is true, otherwise prints "Hello"
-switchy ? print("Bye") : print("Hello");
+switchy ?
 
 ```
 
@@ -106,18 +106,18 @@ switchy ? print("Bye") : print("Hello");
 
 You can use these operators. All the examples given evaluate to true.
 
-| Name             | token    | Explanation                                                                          | Example       |
-| ---------------- | -------- | ------------------------------------------------------------------------------------ | ------------- |
-| Not              | `!`      | Inverts a boolean                                                                    | !false        |
-| Not Equal        | `!=`     | Checks if the value before and after are not equal                                   | 1 != 2        |
-| Equal            | `==`     | Checks if the value before and after are equal                                       | 1 == 1        |
-| Greater than     | `>`   | Checks if the value before is greater than after                                     | 1 > 2         |
-| Greater or Equal | `>=`  | Checks if the value before is greater than or equal with after                       | 1 >= 1        |
-| Lesser then      | `<`   | Checks if the value before is fewer than after                                       | 1 < 2         |
-| Lesser or Equal  | `<=`  | Checks if the value before is fewer than or equal with after                         | 1 <= 1        |
-| AND              | `&`  | Checks whether both, value before and after are true, false if one or both are false | true & true   |
+| Name             | token        | Explanation                                                                          | Example       |
+| ---------------- | ------------ | ------------------------------------------------------------------------------------ | ------------- |
+| Not              | `!`          | Inverts a boolean                                                                    | !false        |
+| Not Equal        | `!=`         | Checks if the value before and after are not equal                                   | 1 != 2        |
+| Equal            | `==`         | Checks if the value before and after are equal                                       | 1 == 1        |
+| Greater than     | `>`       | Checks if the value before is greater than after                                     | 1 > 2         |
+| Greater or Equal | `>=`      | Checks if the value before is greater than or equal with after                       | 1 >= 1        |
+| Lesser then      | `<`       | Checks if the value before is fewer than after                                       | 1 < 2         |
+| Lesser or Equal  | `<=`      | Checks if the value before is fewer than or equal with after                         | 1 <= 1        |
+| AND              | `&`      | Checks whether both, value before and after are true, false if one or both are false | true & true   |
 | OR               | `&#124;` | Checks if the value before or after is true. True, is both are true                  | true \| true |
-| XOR              | `^`      | Checks if either the value before or after is true, false if both or none is true    | true ^ false  |
+| XOR              | `^`          | Checks if either the value before or after is true, false if both or none is true    | true ^ false  |
 
 ## The in/has Operator
 
