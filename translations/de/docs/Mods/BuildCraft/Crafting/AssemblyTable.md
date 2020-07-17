@@ -13,9 +13,9 @@ To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beg
 `AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
 - `recipeName` (Optional) &lt;string> The name of the recipe. *Must be unique!*
-- `output` <[IItemStack](/Vanilla/Items/IItemStack)>
+- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
 - `power` &lt;int> Total power cost in MJ
-- `inputs` <[IIngredient](/Vanilla/Variable_Types/IIngredient)[]>
+- `inputs` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 
 ```zenscript
 import mods.buildcraft.AssemblyTable;
