@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.AnimalSpawner
+mods.naturesaura.AnimalSpawnerAnimalSpawner
 ```
 
 ## Metodos
@@ -15,11 +15,11 @@ mods.naturesaura.AnimalSpawner
 ## Addition
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
+mods.naturesaura.mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.removeRecipe(String name)
+mods.naturesaura.mods.naturesaura.AnimalSpawner.removeRecipe(String name)
 ```
