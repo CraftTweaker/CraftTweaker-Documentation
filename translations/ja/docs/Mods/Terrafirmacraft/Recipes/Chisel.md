@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Chisel;
+import mods.terrafirmacraft.Chisel;Chisel;
 ```
 
 ## 追加
