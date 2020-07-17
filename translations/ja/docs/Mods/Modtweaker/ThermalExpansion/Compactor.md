@@ -58,7 +58,7 @@ mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:16
 
 ## Storage
 
-Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE `に登録されているレシピを変更します。
+Storage修飾子は、Thermal Expansionのレシピマップにおける、`PLATE`に登録されているレシピを変更します。
 
 これらのレシピは特定のAugmentを必要とせず、どうやらプレート専用として使われているようです。
 
