@@ -1,32 +1,32 @@
 # Kiln
 
-The Kiln is a multiblock that it used for quickly processing building blocks that can be acquired through smelting something in a furnace
+The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
 ## Package
-`import mods.atum.Kiln;`
+`mods.atum.Kiln;`
 
 ## Blacklist
 
-As the Kiln grabs most of its recipes from the vanilla Furnace, the blacklist is a way for you to sort out the recipes you don't want
+The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` <The ID for the input of block/item that should be blacklisted>
+- `id` A namespaced ID for the input block/item that should be blacklisted.
 
 Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
 
 ```zenscript
-mods.atum.Kiln.blacklist(<item:minecraft:cobblestone>);
+mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
 ## Adding a Recipe
 
-`mods.atum.Kiln.addRecipe(input, output, experience, cookTime <optional>);`
+`mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
-- `input` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `experience` <Float number>
-- `cookTime` <Integer number> (If left empty, it'll default to 75)
+- `input` [IItemStack](/vanilla/api/items/IItemStack)
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
+- `experience` Float number
+- `cookTime` Integer number (If left empty, it'll default to 75)
 
 Adds a recipe with the specified input, output, experience & cook time
 
@@ -44,7 +44,7 @@ If you wish to remove something else, you're probably looking for the blacklist 
 
 `mods.atum.Kiln.removeRecipeByOutput(output);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
@@ -56,8 +56,8 @@ mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 
 `mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `input` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
+- `input` [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes the specific recipe, with the specified output & input
 

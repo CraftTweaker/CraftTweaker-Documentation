@@ -1,15 +1,15 @@
 # Spinning Wheel
 
 ## Package
-`import mods.atum.SpinningWheel;`
+`mods.atum.SpinningWheel;`
 
 ## Adding a Recipe
 
 `mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
 
-- `input` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `rotations` <Any number above 0>
+- `input` [IItemStack](/vanilla/api/items/IItemStack)
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
+- `rotations` Any number above 0
 
 Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
 
@@ -23,7 +23,7 @@ mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3
 
 `mods.atum.SpinningWheel.removeRecipeByOutput(output);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
 
@@ -35,8 +35,8 @@ mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 
 `mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `input` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `output` [IItemStack](/vanilla/api/items/IItemStack)
+- `input` [IItemStack](/vanilla/api/items/IItemStack)
 
 Removes the specific recipe, with the specified output & input
 
