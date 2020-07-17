@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.Altar
+mods.naturesaura.AltarAltar
 ```
 
 ## Metodos
@@ -16,11 +16,11 @@ mods.naturesaura.Altar
 ## Addition
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.Altar.removeRecipe(IItemStack output)
+mods.naturesaura.mods.naturesaura.Altar.removeRecipe(IItemStack output)
 ```
