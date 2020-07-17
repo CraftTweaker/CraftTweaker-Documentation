@@ -24,7 +24,7 @@ val intArray = [1,2,3] as int[];
 
 ## 配列へのキャスト
 
-これまでの配列の全てに、`as`という演算子がくっついていることに気が付いたしょう。なぜでしょうか? それは、Zenscriptは配列の要素の型を検出できないことがままあるからです。 これが変なエラーログの原因になっていることがあります。  
+これまでの配列の全てに、`as`という演算子がくっついていることに気が付いたしょう。なぜでしょうか? それは、Zenscriptは配列の要素の型を検出できないことがままあるからです。 それは、Zenscriptは配列の要素の型を検出できないことがままあるからです。 これが変なエラーログの原因になっていることがあります。  
 お手数ですが、正しい型の配列にキャストしてあげてください。  
 また、非プリミティブ型(文字列や整数といったもの以外)の配列にキャストする場合、スクリプトの先頭にてその型に対応するパッケージもスクリプトの**先頭**にて[インポート](/AdvancedFunctions/Import/)してあげてください。
 
@@ -46,7 +46,7 @@ val stringArrayAll = [stringArray1,stringArray2,stringArray3,["Butterfly","!"]] 
 
 ## 配列内要素へのアクセス
 
-リスト内の場所を使って配列内の要素にアクセスできます。 最初の番号は 0、そして2番めは1というように番号が振られます。
+リスト内の場所を使って配列内の要素にアクセスできます。 最初の番号は 0、そして2番めは1というように番号が振られます。 最初の番号は 0、そして2番めは1というように番号が振られます。
 
 ネストされた配列にアクセスするためには、2度参照する必要があります。
 
@@ -86,11 +86,11 @@ print(stringArrayAll[0][1]);
 
 # ループ
 
-ループとは自己反復するための機能です。 ループを用いて、同じ操作を配列内要素全てに行うことができます。
+ループとは自己反復するための機能です。 ループを用いて、同じ操作を配列内要素全てに行うことができます。 ループを用いて、同じ操作を配列内要素全てに行うことができます。
 
 ## Forループ構文
 
-forループ構文の主な使い方は配列の反復処理です。 反復処理とは、配列内要素全てに操作を行うことです。  
+forループ構文の主な使い方は配列の反復処理です。 forループ構文の主な使い方は配列の反復処理です。 反復処理とは、配列内要素全てに操作を行うことです。  
 `break`キーワードを使ってループを早期に脱出することができます。
 
 ```zenscript
@@ -106,6 +106,24 @@ val KArray = [<minecraft:wooden_axe>,<minecraft:golden_shovel>,<minecraft:emeral
 for item in IArray {
     //IArrayの各要素 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)は変数"item"に入ります
     //それでこれは使えるようになります
+    recipes.remove(item);
+}
+
+for i, item in IArray {
+    //IArrayの各番号 (i.e. 0,1,2,...)は変数"i"に入ります
+    //IArrayの各要素 (i.e. <minecraft:dirt>,<minecraft:planks>,<minecraft:diamond>)は変数"item"に入ります
+    //それでこれらは使えるようになります
+
+    //JArrayとKArray(i.e. Dirt with grass and wooden axe, planks with wood and golden shovel, diamond with gold ingot and emerald)のアイテムを用いた、IArrayのアイテムのクラフト
+    recipes.addShapeless(item,[JArray[i],KArray[i]]);
+}
+
+for i in 0 to 10 {
+    //0から9 (i.e. 0,1,2,...,8,9)の各数値は変数"i"に入る
+    print(i);
+}
+
+for i in 10 ..
     recipes.remove(item);
 }
 
@@ -143,6 +161,9 @@ whileループは、与えられた条件が`true`と評価される限り操作
 var i = 0; 
 
 //0から9を出力します。なぜなら、i以降の繰り返しにおいて、iが10のために i < 10 がfalseと評価されるからです。
+var i = 0; 
+
+//0から9を出力します。なぜなら、i以降の繰り返しにおいて、iが10のために i < 10 がfalseと評価されるからです。
 while i < 10 {
     print(i); 
     i += 1;
@@ -152,6 +173,17 @@ print("After loop: " + i);
 
 
 //10から6を出力します。i == 5の時にbreakでループから脱出します。
+while (i > 0) {
+    if i == 5
+        break;
+    print(i);
+    i -= 1;
+}
+
+print("After loop 2: " + i);
+
+
+for k in 1 ..
 while (i > 0) {
     if i == 5
         break;
