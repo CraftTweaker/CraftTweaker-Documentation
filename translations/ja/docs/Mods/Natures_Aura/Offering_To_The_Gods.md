@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-mods.naturesaura.Offering
+mods.naturesaura.OfferingOffering
 ```
 
 ## Methods
@@ -15,11 +15,11 @@ mods.naturesaura.Offering
 ## Addition
 
 ```zenscript
-mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
+mods.naturesaura.mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.Offering.removeRecipe(IItemStack output)
+mods.naturesaura.mods.naturesaura.Offering.removeRecipe(IItemStack output)
 ```
