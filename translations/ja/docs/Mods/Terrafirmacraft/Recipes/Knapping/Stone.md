@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.StoneKnapping;
+import mods.terrafirmacraft.StoneKnapping;StoneKnapping;
 ```
 
 ## 追加
