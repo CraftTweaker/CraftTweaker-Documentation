@@ -2,7 +2,7 @@
 
 # Package
 ```zenscript
-mods.alchemistry.Evaporator
+mods.alchemistry.EvaporatorEvaporator
 ```
 
 ## Methods
@@ -14,13 +14,16 @@ mods.alchemistry.Evaporator
 ## 追加
 ```zenscript
 mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
+mods.alchemistry.mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Evaporator.addRecipe(<minecraft:stone>,<liquid:lava>*250);
 ```
 
 ## 削除
 ```zenscript
-mods.alchemistry.Evaporator.removeRecipe(ILiquidStack input); //Will work regardless of quantity
+mods.alchemistry.mods.alchemistry.Evaporator.removeRecipe(ILiquidStack input); //Will work regardless of quantity
 mods.alchemistry.Evaporator.removeRecipe(<liquid:milk>);
+
+mods.alchemistry.Evaporator.removeAllRecipes();Evaporator.removeRecipe(<liquid:milk>);
 
 mods.alchemistry.Evaporator.removeAllRecipes();
 ```
