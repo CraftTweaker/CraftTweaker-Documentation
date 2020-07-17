@@ -2,7 +2,7 @@
 
 ## Package
 ```zenscript
-import mods.terrafirmacraft.Welding;
+import mods.terrafirmacraft.Welding;Welding;
 ```
 
 ## 追加
