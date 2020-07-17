@@ -3,7 +3,7 @@
 ## Package
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+import mods.aether_legacy.Accessory;Accessory;
 ```
 ## Usage
 
