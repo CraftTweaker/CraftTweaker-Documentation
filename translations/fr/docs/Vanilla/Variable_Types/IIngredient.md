@@ -116,7 +116,7 @@ Sometimes you want an item not to be consumed upon crafting but instead receive 
 This is what item Transformers are there for.
 
 ```zenscript
-<br />val item = <minecraft:apple>;
+<br /><br />val item = <minecraft:apple>;
 
 //Item won't be consumed and will stay in the grid
 transformedItem = item.reuse();
