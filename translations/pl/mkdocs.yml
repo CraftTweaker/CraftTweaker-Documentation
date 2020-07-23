@@ -121,6 +121,10 @@ nav:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Modyfikacje:
+    - Atum 2:
+        - Kiln: 'mods/Atum2/Kiln.md'
+        - Quern: 'mods/Atum2/Quern.md'
+        - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
     - ContentTweaker:
       - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
       - API:
