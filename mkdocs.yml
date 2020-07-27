@@ -488,6 +488,16 @@ nav:
         - Mill: 'Mods/Cuisine/Mill.md'
         - Mortar: 'Mods/Cuisine/Mortar.md'
         - Vessel: 'Mods/Cuisine/Vessel.md'
+    - Embers Rekindled:
+      - Ember Bore: 'Mods/Embers_Rekindled/Ember_Bore.md' 
+      - Melter: 'Mods/Embers_Rekindled/Melter.md'
+      - Stamper: 'Mods/Embers_Rekindled/Stamper.md'
+      - Mixer: 'Mods/Embers_Rekindled/Mixer.md'
+      - Hearth Coil: 'Mods/Embers_Rekindled/Hearth_Coil.md'
+      - Alchemy: 'Mods/Embers_Rekindled/Exchange_Tablet.md'
+      - Dawnstone Anvil: 'Mods/Embers_Rekindled/Dawnstone_Anvil.md'
+      - Ember Generation: 'Mods/Embers_Rekindled/Ember_Generation.md'
+      - Expansions: 'Mods/Embers_Rekindled/Expansions.md'
     - Enchanting Plus:
         - Functions: 'Mods/EnchantingPlus/EnchantingPlus.md'
     - Ender Tweaker:
@@ -534,6 +544,8 @@ nav:
       - GregTech Community Edition: 'Mods/GregTechCE/GregTechCE.md'
       - Machines: 'Mods/GregTechCE/Machines.md'
       - Material: 'Mods/GregTechCE/Material.md'
+    - Heterorustichromia
+      - Recipes: 'Mods/Heterorustichromia/Recipes.md'
     - IC2 Tweaker:
       - Blast Furnace: 'Mods/IC2Tweaker/Blast_Furnace.md'
       - Block Cutter: 'Mods/IC2Tweaker/Block_Cutter.md'
@@ -842,6 +854,7 @@ nav:
         - Salt Mixer: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Salt_Mixer.md'
         - Steam Turbine: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Steam_Turbine.md'
         - Supercooler: 'Mods/NuclearCraft_Overhauled/Machine_Recipes/Supercooler.md'
+      - Customisation: 'Mods/NuclearCraft_Overhualed/Customisation.md'
     - PackMode:
       - PackMode: 'Mods/Pack_Mode/Packmode.md'
       - Preprocessor: 'Mods/Pack_Mode/Preprocessors/Preprocessor_Packmode.md'
