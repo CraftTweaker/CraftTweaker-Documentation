@@ -4,4 +4,4 @@ CraftTweaker è una mod di Minecraft che permette la personalizzazione dell'espe
 
 CraftTweaker utilizza un linguaggio di scripting ad-hoc chiamato ZenScript, che è un linguaggio abbastanza semplice da imparare e che si adatta alle esigenze di CraftTweaker più di qualsiasi altro linguaggio già esistente (come per esempio JavaScript).
 
-This site will hopefully help guide you through everything that is possible with CraftTweaker, all that would be left is for you to use the knowledge and create something amazing!
+Lo scopo di questo sito è guidarti attraverso tutto (o quasi) ciò che è possibile fare con CraftTweaker. Quello che ti rimane da fare è sfruttare queste conoscenze per creare qualcosa di straordinario!
