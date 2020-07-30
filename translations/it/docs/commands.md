@@ -1,6 +1,6 @@
-# Commands
+# Comandi
 
-Here are the commands that matter:
+Questi sono i comandi più importanti:
 ```
 /ct hand
 ```
