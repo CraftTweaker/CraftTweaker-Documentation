@@ -13,24 +13,24 @@ Gli script sono memorizzati nella cartella `<gamedir>/scripts` e sono caricati q
 
 Gli script vengono caricati due volte quando si entra in un mondo a giocatore singolo, prima sul lato `Server` e successivamente lato `Client`: se nel tuo script hai una direttiva `println()`, la vedrai due volte nei file di log, proprio per questo motivo.
 
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
+Questo però non vuol dire che le modifiche vengono applicate due volte. Difatti, alcune azioni degli script possono essere eseguite solo su uno dei due lati. Alcune modifiche, come impostare la localizzazione, vengono eseguite solo lato client; altre, come aggiungere ricette, avviene solo lato server.
 
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+Quando si entra su un server, gli script vengono inviati al client, che provvede ad eseguirli. Questo significa che un client senza script può entrare su un server e automaticamente vedere le modifiche applicate (questo è utile per esempio per disabilitare un elemento sul server ma non si vuole far scaricare al client ulteriori file).
 
 
-### Writing your first script
+### Scrivere il tuo primo script
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+Per iniziare con lo scripting, crea un file estremamente semplice, chiamato `hello.zs` nella cartella `<gamedir>/scripts>`; se non sei sicuro di dove si trovi questa cartella, esegui il comando `/ct scripts` e la cartella si dovrebbe aprire!
 
-In `hello.zs` put the following line
+Scrivi la seguente riga all'interno di `hello.zs`:
 
 ```zenscript
-println("Hello world!");
+println("Ciao mondo!");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+Ora carica Minecraft e dai un'occhiata al file `<gamedir>/logs/crafttweaker.log` (o esegui il comando `/ct log` per aprirlo direttamente nel tuo editor di testo predefinito).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+Il file `crafttweaker.log` si trova nella cartella `<gamedir>/logs` e può essere letto da qualsiasi programma che può leggere file di puro testo.
 
 It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
 
