@@ -62,13 +62,13 @@ ZenScript supporta tre tipi di commenti:
 
 Riga singola: `// Sono un commento su di un'unica riga!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Forma alternativa di riga singola: `# Anche io sono un commento su di un'unica riga!`
 
-Multiline:
+Righe multiple:
 ```
-/* I'm 
-a
-multiline comment! */
+/* Sono
+un commento
+su più righe! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Ricorda però che i commenti che iniziano con `#` sono anche utilizzati per il preprocessore, quindi potrebbero causare degli effetti non voluti, anche se sono comunque dei commenti validi. 
