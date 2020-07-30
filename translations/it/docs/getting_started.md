@@ -32,24 +32,24 @@ Ora carica Minecraft e dai un'occhiata al file `<gamedir>/logs/crafttweaker.log`
 
 Il file `crafttweaker.log` si trova nella cartella `<gamedir>/logs` e può essere letto da qualsiasi programma che può leggere file di puro testo.
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+Si consiglia di utilizzare Notepad++, Sublime Text, o Visual Studio Code per scrivere o modificare gli script, ma questo non è necessario.
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+Quando si sceglie un programma da utilizzare per modificare gli script, cerca quali evidenziatori di sintassi sono disponibili: la maggior parte dei comuni editori di testo supportano la sintassi di ZenScript attraverso l'utilizzo di alcuni plugin.
 
 
 
-### The crafttweaker.log file
+### Il file crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Il file `crafttweaker.log` utilizza una specifica sintassi per presentare l'output dell'esecuzione, che è la seguente:
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+In base all'esempio dato sopra, l'output sarebbe:
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14:58:06.697][DONE][SERVER][INFO] Ciao mondo!
 ```
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
