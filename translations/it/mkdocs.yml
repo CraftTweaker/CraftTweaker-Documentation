@@ -2,8 +2,8 @@
 nav:
   - Pagina Principale: 'index.md'
   Le Basi dello Scripting: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
+  - Comandi: "commands.md"
+  - Esempi: "examples.md"
   - Recipes:
       - Recipe Managers: "recipes/recipe_managers.md"
   - Vanilla:
