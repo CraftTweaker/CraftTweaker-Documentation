@@ -52,15 +52,15 @@ In base all'esempio dato sopra, l'output sarebbe:
 [14:58:06.697][DONE][SERVER][INFO] Ciao mondo!
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+Questo modo di visualizzare le informazioni è molto utile per il debugging; l'unica volta in cui queste informazioni vengono omesse è per il dumping dei comandi, dove solamente l'output viene stampato. In questo modo, è molto più facile copiare le informazioni oggetto di dumping
 
-### Comments
+### Commenti
 
-Comments can be used to make your script files more readable and easier to understand!
+I commenti possono essere utilizzati per rendere gli script più leggibili e facili da capire!
 
-ZenScript supports 3 types of comments, being:
+ZenScript supporta tre tipi di commenti:
 
-Single line: `// I'm a single line comment!`
+Riga singola: `// Sono un commento su di un'unica riga!`
 
 Alternate Single Line: `# I'm also a single line comment!`
 
