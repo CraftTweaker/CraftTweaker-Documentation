@@ -1,9 +1,9 @@
-# If you add a page, you must add it to the index here
+# Se viene aggiunta una pagina, deve essere aggiunta anche in questo indice
 nav:
-  - Home: 'index.md'
-  - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
+  - Pagina Principale: 'index.md'
+  Le Basi dello Scripting: 'getting_started.md'
+  - Comandi: "commands.md"
+  - Esempi: "examples.md"
   - Recipes:
       - Recipe Managers: "recipes/recipe_managers.md"
   - Vanilla:
@@ -122,9 +122,13 @@ nav:
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
     - Atum 2:
-        - Kiln: 'mods/Atum2/Kiln.md'
-        - Quern: 'mods/Atum2/Quern.md'
-        - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
+       - Kiln: 'mods/Atum2/Kiln.md'
+       - Quern: 'mods/Atum2/Quern.md'
+       - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
+    - Botany Pots:
+      - Crop: 'mods/botanypots/Crop.md'
+      - Fertilizer: 'mods/botanypots/Fertilizer.md'
+      - Soil: 'mods/botanypots/Soil.md'
     - ContentTweaker:
       - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
       - API:
