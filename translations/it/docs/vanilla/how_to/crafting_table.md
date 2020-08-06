@@ -81,20 +81,20 @@ craftingTable.addShapedMirrored("esempio_con_forma_riflessa_1", <item:minecraft:
 
 _Fai riferimento a [Usare le Funzioni Ricetta](#using-recipe-functions) per alcuni esempi su come usare le funzioni ricetta._
 
-## Using Recipe Functions
+## Usare le Funzioni Ricetta
 
-A recipe function allows for a programatically determined output. This can be especially useful when you need some of the input item's information, like the item's damage or other NBT data.
+Una funzione ricetta permette di generare un prodotto programmaticamente. Questo può essere utile soprattutto quando è necessario usare delle informazioni riguardanti uno degli oggetti in input, come il suo livello di danno o altri dati NBT.
 
-_As Shaped and Shaped Mirrored Recipes are similar, examples will only include Shaped Recipes. You may treat any example using `addShaped` as the same as using `addShapedMirrored`._
+_Siccome le ricette con forma e con forma riflessa sono molto simili, gli esempi riguarderanno solamente le prime. Ogni esempio che usa `addShaped` può essere letto come se venisse usata `addShapedMirrored`._
 
-### Using RecipeFunctionArray in a Shapeless Recipe
+### Usare RecipeFunctionArray in una Ricetta Informe
 
-`recipeFunction` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+`funzioneRicetta` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-`(usualOut as IItemStack, inputs as IItemStack[]) => {};`
+`(prodottoUsuale as IItemStack, ingredienti as IItemStack[]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
+- `prodottoUsuale` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredienti` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array di ingredienti ordinati nello stesso modo definito nella ricetta originale.
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
