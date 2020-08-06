@@ -1,16 +1,16 @@
-# Crops
+# Colture
 
-Class path: `mods.botanypots.Crop`
+Percorso classe: `mods.botanypots.Crop`
 
-## Use
+## Uso
 
-To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
+Per usare, importa la classe con `import mods.botanypots.Crop;` all'inizio del tuo script.
 
-## Create A Crop
+## Crea Una Coltura
 
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> L'id della coltura. This is a namespaced id an must be in the valid `namespace:path` format.
 - `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
 - `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
 - `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
