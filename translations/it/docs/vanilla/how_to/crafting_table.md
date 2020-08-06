@@ -160,105 +160,105 @@ craftingTable.addShaped("esempio_con_forma_funzione_1", <item:minecraft:diamond_
 
 #### Funzioni come Variabili
 
-Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
+Le funzioni ricetta possono essere assegnate ad una variabile, cosicché possano essere utilizzate facilmente in più ricette.
 
-Shapeless:
+Informe:
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
-        return usualOut;
+var funzioneRicettaDiEsempioPerRicettaInforme as function(solitoProdotto as IItemStack, ingredienti as IItemStack[]) as IItemStack = (solitoProdotto, ingredienti) => {
+    if(ingredienti[0].displayName == "vero blocco di diamante"){
+        return solitoProdotto;
     }
 
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    return <item:minecraft:clay>.setDisplayName("Diamante");
 };
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
+// ingredienti[0] per funzioneRicettaDiEsempioPerRicettaInforme sarà <item:minecraft:dirt>
+craftingTable.addShapeless("esempio_funzione_ricetta_in_variabile_informe_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], funzioneRicettaDiEsempioPerRicettaInforme);
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
+// ingredienti[0] per funzioneRicettaDiEsempioPerRicettaInforme sarà <item:minecraft:cobblestone>
+craftingTable.addShapeless("esempio_funzione_ricetta_in_variabile_informe_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], funzioneRicettaDiEsempioPerRicettaInforme);
 ```
 
-Shaped/Mirrored:
+Con forma (riflessa):
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
-    var counter = 0;
-    // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-    for row in inputs {
-        for recipeItem in row {
-            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                counter++;
+var funzioneRicettaDiEsempioPerRicettaConForma as function(solitoProdotto as IItemStack, ingredienti as IItemStack[][]) as IItemStack = (solitoProdotto as IItemStack, ingredienti as IItemStack[][]) => {
+    var contatore = 0;
+    // Controlla che tutte le <item:minecraft:clay_ball> abbiano come nome "Diamante"
+    for riga in ingredienti {
+        for oggetto in riga {
+            if (<item:minecraft:clay_ball>.matches(oggetto) && recipeItem.displayName == "Diamante") {
+                // Se l'oggetto nella ricetta è <item:minecraft:clay_ball> e ha come nome "Diamante", incrementiamo il contatore
+                contatore++;
             }
         }
     }
 
-    // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
-    if (counter == 8) {
-        if (inputs[1][1].displayName == "Special Diamond") {
-            // If <item:minecraft:diamond> has a display name of "Special Diamond"
-            // Return 2 <item:minecraft:diamond_block>
-            return usualOut * 2;
+    // Se ci sono 8 <item:minecraft:clay_ball> aventi come nome "Diamante"
+    if (contatore == 8) {
+        if (inputs[1][1].displayName == "Diamante Speciale") {
+            // Se <item:minecraft:diamond> ha come nome "Diamante Speciale"
+            // Ritorna 2 <item:minecraft:diamond_block>
+            return solitoProdotto * 2;
         } else {
-            // Returns <item:minecraft:diamond_block>
-            return usualOut;
+            // Ritorna <item:minecraft:diamond_block>
+            return solitoProdotto;
         }
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-    return <item:minecraft:clay>.setDisplayName("Diamond Block");
+    // Altrimenti, ritorna <item:minecraft:clay> avente come nome "Blocco di Diamante"
+    return <item:minecraft:clay>.setDisplayName("Blocco di Diamante");
 };
 
-craftingTable.addShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("esempio_funzione_ricetta_in_variabile_con_forma_3", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], funzioneRicettaDiEsempioPerRicettaConForma);
 
-craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("esempio_funzione_ricetta_in_variabile_con_forma_4", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-], exampleShapedRecipeVarFunction);
+], funzioneRicettaDiEsempioPerRicettaConForma);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
-### Remove a Recipe by Name
+### Rimuovere una Ricetta in base al Nome
 
-`craftingTable.removeByName(recipeName);`
+`craftingTable.removeByName(nomeRicetta);`
 
-- `recipeName` &lt;string>
+- `nomeRicetta` &lt;string>
 
-Removes the recipe that matches the name provided.
+Rimuove la ricetta che ha come nome il valore dato.
 
 ```zenscript
 craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 ```
 
-### Remove Recipes by Output
+### Rimuovere Ricette in base al Prodotto
 
-`craftingTable.removeRecipe(output);`
+`craftingTable.removeRecipe(prodotto);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `prodotto` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/IItemStack) dato.
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Remove Recipes by Mod ID
+### Rimuovere Ricette in base all'ID mod
 
-`craftingTable.removeByModid(modId);`
+`craftingTable.removeByModid(idMod);`
 
-- `modId` &lt;string>
+- `idMod` &lt;string>
 
 Removes all recipes added by the provided mod.
 
