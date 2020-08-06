@@ -14,7 +14,7 @@ nav:
               - Materiale:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
-          - Blocks:
+          - Blocchi:
               - MCBlock: 'vanilla/api/blocks/MCBlock.md'
               - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
           - Brackets:
