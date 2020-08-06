@@ -4,11 +4,11 @@ nav:
   Le Basi dello Scripting: 'getting_started.md'
   - Comandi: "commands.md"
   - Esempi: "examples.md"
-  - Recipes:
-      - Recipe Managers: "recipes/recipe_managers.md"
+  - Ricette:
+      - Gestori di Ricette: "recipes/recipe_managers.md"
   - Vanilla:
-      - How to:
-          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
+      - Come fare:
+          - Ricette del Banco da Lavoro: 'vanilla/how_to/crafting_table.md'
       - Api:
           - Block:
               - Material:
