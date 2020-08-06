@@ -63,43 +63,43 @@ Restituisce un booleano
 myMCBlockState.hasProperty(nome as String);
 ```
 
-| Parametro | Tipo   | Descrizione             |
-| --------- | ------ | ----------------------- |
-| nome      | String | No description provided |
+| Parametro | Tipo   | Descrizione                 |
+| --------- | ------ | --------------------------- |
+| nome      | String | Nessuna descrizione fornita |
 
 
 ### withProperty
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Restituisce [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(name as String, value as String);
+myMCBlockState.withProperty(nome as String, valore as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
-| value     | String | No description provided |
+| Parametro | Tipo   | Descrizione                 |
+| --------- | ------ | --------------------------- |
+| nome      | String | Nessuna descrizione fornita |
+| valore    | String | Nessuna descrizione fornita |
 
 
 
-## Properties
+## Proprietà
 
-| Name            | Type                                                          | Has Getter | Has Setter |
-| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
-| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
-| canProvidePower | boolean                                                       | true       | false      |
-| commandString   | String                                                        | true       | false      |
-| hasTileEntity   | boolean                                                       | true       | false      |
-| isSolid         | boolean                                                       | true       | false      |
-| isSticky        | boolean                                                       | true       | false      |
-| lightLevel      | int                                                           | true       | false      |
-| ticksRandomly   | boolean                                                       | true       | false      |
+| Nome            | Tipo                                                          | Ha Getter | Ha Setter |
+| --------------- | ------------------------------------------------------------- | --------- | --------- |
+| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | sì        | no        |
+| canProvidePower | boolean                                                       | sì        | no        |
+| commandString   | String                                                        | sì        | no        |
+| hasTileEntity   | boolean                                                       | sì        | no        |
+| isSolid         | boolean                                                       | sì        | no        |
+| isSticky        | boolean                                                       | sì        | no        |
+| lightLevel      | int                                                           | sì        | no        |
+| ticksRandomly   | boolean                                                       | sì        | no        |
 
-## Casters
+## Caster
 
-| Result type                                                   | Is Implicit |
-| ------------------------------------------------------------- | ----------- |
-| String                                                        | false       |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
+| Tipo Risultato                                                | Implicito |
+| ------------------------------------------------------------- | --------- |
+| String                                                        | no        |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | sì        |
 
