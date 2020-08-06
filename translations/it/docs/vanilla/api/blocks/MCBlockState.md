@@ -1,34 +1,34 @@
 # MCBlockState
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la Classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.block.MCBlockState
 ```
 
-## Implemented Interfaces
-MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+MCBlockState implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Metodi
 ### getAllowedValuesForProperty
 
-Returns List<String>
+Restituisce List<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(name as String);
+myMCBlockState.getAllowedValuesForProperty(nome as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| Parametro | Tipo   | Descrizione                 |
+| --------- | ------ | --------------------------- |
+| nome      | String | Nessuna descrizione fornita |
 
 
 ### getProperties
 
-Returns String[String]
+Ritorna String[String]
 
 ```zenscript
 myMCBlockState.getProperties();
@@ -36,7 +36,7 @@ myMCBlockState.getProperties();
 
 ### getPropertyNames
 
-Returns List<String>
+Restituisce List<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
@@ -44,28 +44,28 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
-myMCBlockState.getPropertyValue(name as String);
+myMCBlockState.getPropertyValue(nome as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| Parametro | Tipo   | Descrizione                 |
+| --------- | ------ | --------------------------- |
+| nome      | String | Nessuna descrizione fornita |
 
 
 ### hasProperty
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
-myMCBlockState.hasProperty(name as String);
+myMCBlockState.hasProperty(nome as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parametro | Tipo   | Descrizione             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nome      | String | No description provided |
 
 
 ### withProperty
