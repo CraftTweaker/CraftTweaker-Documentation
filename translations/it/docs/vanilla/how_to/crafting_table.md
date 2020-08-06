@@ -6,7 +6,7 @@ Ci sono tre tipi di ricette per i banchi da lavoro:
 
 - **Informi:** Una ricetta informe è una ricetta dove la posizione degli oggetti nella griglia di fabbricazione non è importante.
 - **Con forma:** Una ricetta con forma è una ricetta dove la posizione degli oggetti deve corrispondere ad una predeterminata griglia.
-- **Con forma e riflessa:** Una ricetta riflessa è equivalente ad una ricetta con forma, ma può essere specchiata lungo l'asse orizzontale o verticale.
+- **Con forma riflessa:** Una ricetta riflessa è equivalente ad una ricetta con forma, ma può essere specchiata lungo l'asse orizzontale o verticale.
 
 ## Aggiungere una Ricetta
 
@@ -33,53 +33,53 @@ craftingTable.addShapeless("esempio_informe_1", <item:minecraft:grass>, [<item:m
 // Una ricetta senza forma può avere fino a 9 elementi in input
 // In questo esempio si può anche notare come si possa avere più
 // di un oggetto in output. Difatti, nel seguente esempio, il prodotto sarà di 8 Erbe Alte
-craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
+craftingTable.addShapeless("esempio_informe_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Fai riferimento a [Usare le Funzioni Ricetta](#using-recipe-functions) per alcuni esempi su come usare le funzioni ricetta._
 
-### Adding Shaped and Shaped Mirrored Recipes
+### Aggiungere Ricette con Forma e con Forma Riflessa
 
-`craftingTable.addShaped(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShaped(nomeRicetta, prodotto, ingredienti, funzioneRicetta);`
 
-`craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShapedMirrored(nomeRicetta, prodotto, ingredienti, funzioneRicetta);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
-- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+- `nomeRicetta` &lt;string>
+- `prodotto` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredienti` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
+- `funzioneRicetta` (Opzionale) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
+Aggiunge una ricetta [con forma](#recipe-types) (o [riflessa](#recipe-types), a seconda della funzione usata) al banco da lavoro. L'ordine degli oggetti quando la ricetta viene creata detta la posizione di ciascun oggetto all'interno della griglia di fabbricazione.
 
-Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
+Rendere la ricetta una ricetta [con forma riflessa](#recipe-types) permette una maggiore flessibilità al giocatore sulla posizione degli oggetti nella griglia di fabbricazione.
 
-Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
+Sia le ricette [con forma](#recipe-types) sia quelle [con forma riflessa](#recipe-types) possono essere create per permetterne la fabbricazione in una griglia 2x2 (nell'inventario) o 3x3.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Le ricette del banco da lavoro possono produrre più di un oggetto singolo. Per far ciò, è possibile sfruttare l'[operatore di moltiplicazione di IItemStack](/vanilla/api/items/IItemStack/#mul) sull'oggetto prodotto.
 
 ```zenscript
-// Adding a shaped recipe
-craftingTable.addShaped("shaped_example_1", <item:minecraft:arrow>, [
+// Aggiunta di una ricetta con forma
+craftingTable.addShaped("esempio_con_forma_1", <item:minecraft:arrow>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 
-// Adding a shaped 2x2 recipe (this can also be done as mirrored)
-craftingTable.addShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
+// Aggiunta di una ricetta con forma 2x2 (potrebbe anche essere resa riflessa)
+craftingTable.addShaped("esempio_con_forma_1, <item:minecraft:diamond_axe>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:diamond>, <item:minecraft:stick>]
 ]);
 
-// Adding a shaped mirrored recipe
-craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
+// Aggiunta di una ricetta con forma riflessa
+craftingTable.addShapedMirrored("esempio_con_forma_riflessa_1", <item:minecraft:arrow> * 2, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Fai riferimento a [Usare le Funzioni Ricetta](#using-recipe-functions) per alcuni esempi su come usare le funzioni ricetta._
 
 ## Using Recipe Functions
 
