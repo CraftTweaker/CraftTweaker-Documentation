@@ -21,17 +21,18 @@ _Quando aggiungi una ricetta, assicurati che i nomi delle ricette siano unici!_
 - `ingredienti` <[IIngredient](/vanilla/api/items/IIngredient)[]>
 - `funzioneRicetta` (Opzionale) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-Aggiunge una ricetta [informe](#recipe-types) al banco da lavoro. Siccome le ricette [informi](#recipe-types) ignorano la posizione degli oggetti iniziali, l'ordine degli oggetti durante la creazione degli oggetti non importa comunque.
+Aggiunge una ricetta [informe](#recipe-types) al banco da lavoro. Siccome le ricette [informi](#recipe-types) ignorano la posizione degli oggetti iniziali, l'ordine degli oggetti durante la creazione della ricetta non è importante.
 
-[Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
+Le ricette [informi](#recipe-types) possono avere fino a 9 elementi in input, ma quelle con 4 input o meno posso anche essere fabbricate nella griglia 2x2 disponibile nell'inventario.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Le ricette del banco da lavoro possono produrre più di un oggetto singolo. Per far ciò, è possibile sfruttare l'[operatore di moltiplicazione di IItemStack](/vanilla/api/items/IItemStack/#mul) sull'oggetto prodotto.
 
 ```zenscript
-craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
+craftingTable.addShapeless("esempio_informe_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
-// A shapeless recipe can have up to 9 inputs
-// This also demonstrates that more than one output can be used. In this example, 8 grass will be outputted.
+// Una ricetta senza forma può avere fino a 9 elementi in input
+// In questo esempio si può anche notare come si possa avere più
+// di un oggetto in output. Difatti, nel seguente esempio, il prodotto sarà di 8 Erbe Alte
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
