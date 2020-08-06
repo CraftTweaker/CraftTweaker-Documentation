@@ -10,8 +10,8 @@ nav:
       - Come fare:
           - Ricette del Banco da Lavoro: 'vanilla/how_to/crafting_table.md'
       - Api:
-          - Block:
-              - Material:
+          - Blocco:
+              - Materiale:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
           - Blocks:
