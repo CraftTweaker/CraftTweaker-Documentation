@@ -1,19 +1,19 @@
 # MCMaterial
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la Classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.block.material.MCMaterial
 ```
 
-## Methods
+## Metodi
 ### blocksMovement
 
-Returns if this material is considered solid or not
+Ritorna se questo materiale è considerato solido o no
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.blocksMovement();
@@ -21,9 +21,9 @@ myMCMaterial.blocksMovement();
 
 ### getColor
 
-Retrieves the color index of the block. This is is the same color used by vanilla maps to represent this block.
+Restituisce l'indice di colore del blocco. Questo è lo stesso colore utilizzato dalle mappe vanilla per rappresentare questo blocco.
 
-Returns [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
+Ritorna [crafttweaker.api.block.material.MCMaterialColor](/vanilla/api/block/material/MCMaterialColor)
 
 ```zenscript
 myMCMaterial.getColor();
@@ -31,9 +31,9 @@ myMCMaterial.getColor();
 
 ### isFlammable
 
-Returns if the block can burn or not.
+Ritorna se il blocco può bruciare o meno.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isFlammable();
@@ -41,9 +41,9 @@ myMCMaterial.isFlammable();
 
 ### isLiquid
 
-Returns if blocks of these materials are liquids.
+Restituisce se i blocchi fatti di questo materiale sono liquidi.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isLiquid();
