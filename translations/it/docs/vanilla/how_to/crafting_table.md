@@ -99,66 +99,66 @@ _Siccome le ricette con forma e con forma riflessa sono molto simili, gli esempi
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
-    // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if (inputs[0].displayName == "totally real diamond block") {
-        // Returns <item:minecraft:diamond> * 9
-        return usualOut;
+craftingTable.addShapeless("esempio_informe_funzione_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (solitoProdotto as IItemStack, ingredienti as IItemStack[]) => {
+    // Controlla se <item:minecraft:dirt> ha come nome "vero blocco di diamante"
+    if (inputs[0].displayName == "vero blocco di diamante") {
+        // Ritorna <item:minecraft:diamond> * 9
+        return solitoProdotto;
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    // Altrimenti ritorna<item:minecraft:clay> avente come nome "Diamante"
+    return <item:minecraft:clay>.setDisplayName("Diamante");
 });
 ```
 
-### Using RecipeFunctionMatrix in a Shaped/Mirrored Recipe
+### Usare RecipeFunctionMatrix in una Ricetta Con Forma (Riflessa)
 
-`recipeFunction` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+`funzioneRicetta` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-`(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
+`(solitoProdotto as IItemStack, ingredienti as IItemStack[][]) => {};`
 
-- `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `prodottoUsuale` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ingredienti` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array di ingredienti ordinati nello stesso modo definito nella ricetta originale. Un ingrediente può essere trovato definendone prima la riga, poi la colonna (`ingredienti[0][1]`, per esempio, identifica l'ingrediente nella prima riga, seconda colonna).
 
 ```zenscript
 import crafttweaker.api.item.IItemStack;
 
-craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>, [
+craftingTable.addShaped("esempio_con_forma_funzione_1", <item:minecraft:diamond_block>, [
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-    ], (usualOut as IItemStack, inputs as IItemStack[][]) => {
-        var counter = 0;
-        // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-        for row in inputs {
-            for recipeItem in row {
-                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                    counter++;
+    ], (solitoProdotto as IItemStack, ingredienti as IItemStack[][]) => {
+        var contatore = 0;
+        // Controlla che tutte le <item:minecraft:clay_ball> abbiano come nome "Diamante"
+        for riga in ingredienti {
+            for oggetto in riga {
+                if (<item:minecraft:clay_ball>.matches(oggetto) && oggetto.displayName == "Diamante") {
+                    // Se l'oggetto nella ricetta è <item:minecraft:clay_ball> e ha come nome "Diamante", incrementiamo il contatore
+                    contatore++;
                 }
             }
         }
 
-        // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
-        if (counter == 8) {
-            if (inputs[1][1].displayName == "Special Diamond") {
-                // If <item:minecraft:diamond> has a display name of "Special Diamond"
-                // Return 2 <item:minecraft:diamond_block>
-                return usualOut * 2;
+        // Se ci sono 8 <item:minecraft:clay_ball> aventi come nome "Diamante"
+        if (contatore == 8) {
+            if (inputs[1][1].displayName == "Diamante Speciale") {
+                // Se<item:minecraft:diamond> ha come nome "Diamante Speciale"
+                // Ritorna 2 <item:minecraft:diamond_block>
+                return solitoProdotto * 2;
             } else {
-                // Returns <item:minecraft:diamond_block>
-                return usualOut;
+                // Ritorna <item:minecraft:diamond_block>
+                return solitoProdotto;
             }
         }
 
-        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-        return <item:minecraft:clay>.setDisplayName("Diamond Block");
+        // Altrimenti, ritorna <item:minecraft:clay> avente come nome "Blocco di Diamante"
+        return <item:minecraft:clay>.setDisplayName("Blocco di Diamante");
     });
 ```
 
-### Advanced Usage
+### Uso Avanzato
 
-#### Functions as a Variable
+#### Funzioni come Variabili
 
 Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
 
