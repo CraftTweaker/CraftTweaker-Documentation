@@ -1,7 +1,7 @@
-# Recipe managers
+# Gestori di Ricette
 
 
-All recipe related globals extend from this class, and have all of these methods.
+Tutte le variabili globali relative alle ricette sono dei gestori di ricette, e come tali hanno tutti questi metodi:
 
 ```zenscript
 removeRecipe(IItemStack output);
