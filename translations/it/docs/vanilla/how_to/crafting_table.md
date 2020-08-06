@@ -1,8 +1,8 @@
-# Crafting Table
+# Banco da Lavoro
 
-## Recipe Types
+## Tipi di Ricette
 
-There are three recipe types for crafting tables:
+Ci sono tre tipi di ricette per i banchi da lavoro:
 
 - **Shapeless:** A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
 - **Shaped:** A shaped recipe is a recipe where the position of the items must be exact.
