@@ -254,68 +254,68 @@ Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/II
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Rimuovere Ricette in base all'ID mod
+### Rimuovere Ricette in base all'ID Mod
 
 `craftingTable.removeByModid(idMod);`
 
 - `idMod` &lt;string>
 
-Removes all recipes added by the provided mod.
+Rimuove tutte le ricette aggiunte dalla mod data.
 
 ```zenscript
 craftingTable.removeByModid("minecraft");
 ```
 
-#### Exclude Recipes From Mod ID Removal
+#### Escludere Ricette dalla Rimozione per ID Mod
 
-`craftingTable.removeByModid(modId, exclusionFilter);`
+`craftingTable.removeByModid(idMod, filtroEsclusione);`
 
-- `modId` &lt;string>
-- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
+- `idMod` &lt;string>
+- `filtroEsclusione` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
+  - `nome` &lt;string> Il nome della ricetta per un eventuale filtraggio. _L'ID mod non è incluso_
 
-Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
+Rimuove tutte le ricette aggiunte dalla mod data. Le ricette vengono escluse se il risultato di filtroEsclusione è vero (true) in base al nome della ricetta.
 
 ```zenscript
-craftingTable.removeByModid("minecraft", (name) => {
-    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
-    return name == "red_bed_from_white_bed";
+craftingTable.removeByModid("minecraft", (nome) => {
+    // Controlla se il nome della ricetta corrisponde a "minecraft:red_bed_from_white_bed"
+    return nome == "red_bed_from_white_bed";
 });
 ```
 
-Multiple recipes can also be excluded. One way this can be done is as follows:
+È possibile escludere più di una ricetta. Un modo di farlo è presentato nel seguente esempio:
 
 ```zenscript
-// An array of recipe names as strings
-var minecraftExclusions as string[] = [
+// Un vettore di nomi di ricette rappresentati come stringhe
+var esclusioniMinecraft as string[] = [
     "acacia_slab",
     "red_bed_from_white_bed",
     "sugar_from_sugar_cane"
 ];
 
-craftingTable.removeByModid("minecraft", (name) => {
-    return name in minecraftExclusions;
+craftingTable.removeByModid("minecraft", (npme) => {
+    return nome in esclusioniMinecraft;
 });
 ```
 
-### Remove Recipes by Regex
+### Rimuovere Ricette in base ad una Regex
 
 `craftingTable.removeByRegex(regex);`
 
 - `regex` &lt;string>
 
-Removes all recipes that's name matches the regex string.
+Rimuove tutte le ricette il cui nome può essere identificato dalla regex (espressione regolare) data.
 
 ```zenscript
-// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
-craftingTable.removeByRegex("minecraft:.*_carpet");
+// Rimuove ricette come "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", e "minecraft:white_carpet"
+craftingTable.removeByRegex("minecraft:*_carpet");
 ```
 
-### Remove All Recipes
+### Rimuovere Tutte le Ricette
 
 `craftingTable.removeAll();`
 
-Removes all crafting table recipes.
+Rimuove tutte le ricette dal banco da lavoro.
 
 ```zenscript
 craftingTable.removeAll();
