@@ -51,9 +51,9 @@ myMCMaterial.isLiquid();
 
 ### isOpaque
 
-Indicate if the material is opaque
+Indica se questo materiale è opaco
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isOpaque();
@@ -61,9 +61,9 @@ myMCMaterial.isOpaque();
 
 ### isReplaceable
 
-Returns whether the material can be replaced by other blocks when placed - eg snow, vines and tall grass.
+Restituisce se questo materiale può essere rimpiazzato da altri blocchi quando vengono piazzati - per esempio neve, liane e erba alta.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isReplaceable();
@@ -71,9 +71,9 @@ myMCMaterial.isReplaceable();
 
 ### isSolid
 
-Returns true if the block is a considered solid. This is true by default.
+Restituisce true se il blocco è considerato solido. Questo vale per impostazione predefinita.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isSolid();
@@ -81,9 +81,9 @@ myMCMaterial.isSolid();
 
 ### isToolNotRequired
 
-Returns true if the material can be harvested without a tool (or with the wrong tool)
+Ritorna true se il materiale può essere raccolto senza l'utilizzo di alcun strumento (o con lo strumento errato)
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCMaterial.isToolNotRequired();
