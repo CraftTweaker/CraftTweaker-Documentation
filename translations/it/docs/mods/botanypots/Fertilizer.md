@@ -15,58 +15,58 @@ Per usare, importa la classe con `import mods.botanypots.Fertilizer;` all'inizio
 - `minTick` &lt;int> Il quantitativo minimo di tick aggiunti dal fertilizzante.
 - `maxTick` &lt;int> Il quantitativo massimo di tick aggiunti dal fertilizzante.
 
-Crea un nuovo fertilizzante. These can be used to grow crops faster.
+Crea un nuovo fertilizzante. Questo si può usare per fa crescere le colture più velocemente.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Removing Fertilizers
+## Rimuovere Fertilizzanti
 
 `Fertilizer.remove(id);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> L'id del fertilizzante. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
 
-This can be used to remove a fertilizer.
+Questo si può usare per rimuovere un fertilizzante.
 
 ```zenscript
 Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## Changing Fertilizer Ticks
+## Modificare i Tick del Fertilizzante
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
+- `id` &lt;string> L'id del fertilizzante. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
+- `minTick` &lt;int> Il nuovo quantitativo minimo di tick aggiunti dal fertilizzante.
+- `maxTick` &lt;int> Il nuovo quantitativo massimo di tick aggiunti dal fertilizzante.
 
-This will change the growth tick range added by the fertilizer.
+Questo modificherà il tasso di tick di crescita aggiunti dal fertilizzante.
 
 ```zenscript
 Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## Changing Fertilizer Ingredients
+## Modificare gli Ingredienti del Fertilizzante
 
 `Fertilizer.setIngredient(id, ingredient);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
+- `id` &lt;string> L'id del fertilizzante. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> Il nuovo elemento da usare per il fertilizzante.
 
-Sets the ingredient item that is the fertilizer.
+Imposta l'elemento ingredienti che è il fertilizzante.
 
 ```zenscript
 Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Ottenere Tutti gli ID
 
 `Fertilizer.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
+- Restituisce: &lt;string[]> Un insieme di tutti gli id dei fertilizzanti noti al momento in cui questo è eseguito.
 
-This will give you an array of all the known fertilizer ids at the time.
+Questo ti darà un insieme di tutti gli id dei fertilizzanti al momento.
 
 ```zenscript
 // Log all ids to the crafttweaker.log file
@@ -75,9 +75,9 @@ for fertilizerId in Fertilizer.getAllIds() {
 }
 ```
 
-## Removing All Fertilizers
+## Rimuovere Tutti i Fertilizzanti
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Questo rimuoverà completamente tutti i fertilizzanti correntemente registrati. Questo è utile se vuoi ricreare tutti i dati da zero tramite gli script.
 
 ```zenscript
 Fertilizer.removeAll();
