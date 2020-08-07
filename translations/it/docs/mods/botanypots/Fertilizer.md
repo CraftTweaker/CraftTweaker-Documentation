@@ -1,21 +1,21 @@
-# Fertilizers
+# Fertilizzanti
 
-Class path: `mods.botanypots.Fertilizer`
+Percorso classe: `mods.botanypots.Fertilizer`
 
-## Use
+## Uso
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Per usare, importa la classe con `import mods.botanypots.Fertilizer;` all'inizio del tuo script.
 
-## Creating Fertilizers
+## Creare Fertilizzanti
 
 `Fertilizer.create(id, ingredient, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
-- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
+- `id` &lt;string> L'id del nuovo fertilizzante. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
+- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> L'elemento usato per il fertilizzante.
+- `minTick` &lt;int> Il quantitativo minimo di tick aggiunti dal fertilizzante.
+- `maxTick` &lt;int> Il quantitativo massimo di tick aggiunti dal fertilizzante.
 
-Creates a new fertilizer. These can be used to grow crops faster.
+Crea un nuovo fertilizzante. These can be used to grow crops faster.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
