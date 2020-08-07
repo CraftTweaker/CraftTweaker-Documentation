@@ -1,33 +1,33 @@
 # BlockBuilderBasic
 
-This builder builds the block type that is used by default in [mods.contenttweaker.block.basic.BlockBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) This builder does not offer any special properties to set, you can only build it.
+Questo costruttore costruisce il tipo di blocco che è usato per impostazione predefinita in [mods.contenttweaker.block.basicBlocBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) Questo costruttore non offre alcuna proprietà speciale da impostare, puoi solo costruirlo.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Quindi devi avere questa mod installata se vuoi usare questa funzionalità.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario che tu importi il pacchetto se incontri dei problemi (come lanciare un Insieme), quindi meglio essere sicuri piuttosto che in colpa ed aggiungere l'importazione.
 ```zenscript
 mods.contenttweaker.block.basic.BlockBuilderBasic
 ```
 
-## Implemented Interfaces
-BlockBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+BlockBuilderBasic implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
-## Methods
+## Metodi
 ### build
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Istruisce CoT per costruire realmente qualsiasi cosa il costruttore dovrebbe star costruendo.
 
 ```zenscript
 new BlockBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametro        | Tipo    | Descrizione                                      |
+| ---------------- | ------- | ------------------------------------------------ |
+| resourceLocation | Stringa | Il percorso della risorsa per dare questo blocco |
 
 
 
