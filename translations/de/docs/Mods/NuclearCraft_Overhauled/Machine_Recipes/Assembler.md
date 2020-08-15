@@ -1,6 +1,6 @@
 # Assembler
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.Assembler`
 
 ## Rezepte hinzufügen
@@ -12,5 +12,5 @@ mods.nuclearcraft.Assembler.addRecipe(IIngredient itemInput1, IIngredient itemIn
 ```zenscript
 mods.nuclearcraft.Assembler.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemInput3, IIngredient itemInput4);
 mods.nuclearcraft.Assembler.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Assembler.removeAllRecipes();
+mods.nuclearcraft.Assembler.removeAllRezept();
 ```
