@@ -4,11 +4,11 @@ The Thermopneumatic Processing Plant (TPP) uses pressure and heat to convert one
 
 *Technically, 273.16 K = 0°C, but for the purposes of this mod it's simplified to an integer offset.*
 
-## Calling
+## Anruf
 
 You can call the TPP package using `mods.pneumaticcraft.thermopneumaticprocessingplant`.
 
-## Removing
+## Entfernen
 
 This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
@@ -24,7 +24,7 @@ This function removes *all* TPP recipes:
 mods.pneumaticcraft.thermopneumaticprocessingplant.removeAllRecipes();
 ```
 
-## Adding
+## Hinzufügen
 
 The following functions can be used to add recipes to the TPP:
 
