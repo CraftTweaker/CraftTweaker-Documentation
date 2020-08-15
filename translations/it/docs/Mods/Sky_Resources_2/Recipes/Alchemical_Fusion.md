@@ -1,10 +1,10 @@
-# Alchemical Fusion
+# Fusione Alchemica
 
-The *fusion* package is used for adding or removing recipes to/from the Alchemical Fusion process.
+Il pacchetto *fusion* viene utilizzato per aggiungere o rimuovere ricette a/dal processo di fusione alchimica.
 
 ## Chiamata
 
-You can call the *fusion* package using `mods.skyresources.fusion`
+Puoi chiamare il pacchetto *fusion* utilizzando `mods.skyresources.fusion`
 
 ## Aggiunta Ricetta
 
