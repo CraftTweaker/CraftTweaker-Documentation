@@ -20,7 +20,7 @@ new crafttweaker.api.data.IntData(internal as int);
 ```
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| internal  | int  | No description provided |
+| intern    | int  | No description provided |
 
 
 
@@ -74,7 +74,7 @@ Returns boolean
 
 | Parameter | Type                                                   | Beschreibung                     |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
