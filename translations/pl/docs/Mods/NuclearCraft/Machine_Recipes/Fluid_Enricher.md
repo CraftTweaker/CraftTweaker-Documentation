@@ -1,11 +1,11 @@
-# Fluid Enricher
+# Płynny Enricher
 
-## Importing the Package
-`mods.nuclearcraft.dissolver`
+## Importowanie pakietu
+`Rozpakuj`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny nośnik, @Opcjonalny podwójny proces]);
 ```
 
 ## Usuwanie przepisów
