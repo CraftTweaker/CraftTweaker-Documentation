@@ -7,7 +7,7 @@ In the following list, functions are split into categories that represent what t
 ## BiConsumers
 A BiConsumer accepts two elements, which can be of different types, and consumes them, meaning uses them for internal processing and returns nothing.
 
-| Class Name          | Function Signature                                  | Notes |
+| Class Name          | Function Signature                                  | Notas |
 | ------------------- | --------------------------------------------------- | ----- |
 | `BiConsumer`        | `function accept(t as T, u as U) as void;`          | \-   |
 | `ObjDoubleConsumer` | `function accept(t as T, value as double) as void;` | \-   |
@@ -17,7 +17,7 @@ A BiConsumer accepts two elements, which can be of different types, and consumes
 ## BiFunctions
 A BiFunction applies a function to two elements, which can be of different types, returning a single element, which can also be of a different type. It can be pictured mathematically as `r = f(s, t)`, where `f` is the bifunction.
 
-| Class Name           | Function Signature                          | Notes |
+| Class Name           | Function Signature                          | Notas |
 | -------------------- | ------------------------------------------- | ----- |
 | `BiFunction`         | `function apply(t as T, u as U) as R;`      | \-   |
 | `ToDoubleBiFunction` | `function apply(t as T, u as U) as double;` | \-   |
@@ -27,7 +27,7 @@ A BiFunction applies a function to two elements, which can be of different types
 ## Binary Operators
 A Binary Operator applies a function to two elements of the **same type**, returning another element, which has the **same type** as the inputs. It can be mathematically pictured as `r = s op t`, where `op` is the binary operator.
 
-| Class Name             | Function Signature                                                   | Notes                                 |
+| Class Name             | Function Signature                                                   | Notas                                 |
 | ---------------------- | -------------------------------------------------------------------- | ------------------------------------- |
 | `BinaryOperator`       | `function apply(t as T, u as T) as T;`                               | `BinaryOperator` extends `BiFunction` |
 | `DoubleBinaryOperator` | `function applyAsDouble(left as double, right as double) as double;` | \-                                   |
@@ -37,14 +37,14 @@ A Binary Operator applies a function to two elements of the **same type**, retur
 ## BiPredicates
 A BiPredicate tests the two given inputs, which may be of different types, and returns a boolean, representing whether they passed the test or not.
 
-| Class Name    | Function Signature                       | Notes |
+| Class Name    | Function Signature                       | Notas |
 | ------------- | ---------------------------------------- | ----- |
 | `BiPredicate` | `function test(t as T, u as U) as bool;` | \-   |
 
 ## Consumers
 A Consumer accepts a single element and consumes it, meaning it uses it for internal processing and returns nothing.
 
-| Class Name       | Function Signature                          | Notes |
+| Class Name       | Function Signature                          | Notas |
 | ---------------- | ------------------------------------------- | ----- |
 | `Consumer`       | `function accept(t as T) as void;`          | \-   |
 | `DoubleConsumer` | `function accept(value as double) as void;` | \-   |
@@ -54,9 +54,9 @@ A Consumer accepts a single element and consumes it, meaning it uses it for inte
 ## Functions
 A Function applies a function to a single element, returning another element, which can be a different type from the inputs. It can be pictured mathematically as `r = f(t)`, where `f` is the function.
 
-| Class Name             | Function Signature                                 | Notes |
+| Class Name             | Function Signature                                 | Notas |
 | ---------------------- | -------------------------------------------------- | ----- |
-| `Function`             | `function apply(t as T) as R;`                     | \-   |
+| `Función`              | `function apply(t as T) as R;`                     | \-   |
 | `DoubleFunction`       | `function apply(value as double) as R;`            | \-   |
 | `DoubleToIntFunction`  | `function applyAsInt(value as double) as int;`     | \-   |
 | `DoubleToLongFunction` | `function applyAsLong(value as double) as long;`   | \-   |
@@ -73,7 +73,7 @@ A Function applies a function to a single element, returning another element, wh
 ## Predicates
 A Predicate tests the given input and returns a boolean, representing whether it passed the test or not.
 
-| Class Name        | Function Signature                        | Notes |
+| Class Name        | Function Signature                        | Notas |
 | ----------------- | ----------------------------------------- | ----- |
 | `Predicate`       | `function test(t as T) as bool;`          | \-   |
 | `DoublePredicate` | `function test(value as double) as bool;` | \-   |
@@ -83,7 +83,7 @@ A Predicate tests the given input and returns a boolean, representing whether it
 ## Suppliers
 A Supplier outputs an instance of a given type, be it either created on the fly or cached.
 
-| Class Name        | Function Signature                  | Notes |
+| Class Name        | Function Signature                  | Notas |
 | ----------------- | ----------------------------------- | ----- |
 | `Supplier`        | `function get() as T;`              | \-   |
 | `BooleanSupplier` | `function getAsBoolean() as bool;`  | \-   |
@@ -94,7 +94,7 @@ A Supplier outputs an instance of a given type, be it either created on the fly 
 ## Unary Operators
 A Unary operator applies a function to an element of a given type, returning another element, which has to be of the **same type** as the inputs. It can be pictured mathematically as `r = op t`, where `op` is the unary operator.
 
-| Class Name            | Function Signature                                     | Notes                              |
+| Class Name            | Function Signature                                     | Notas                              |
 | --------------------- | ------------------------------------------------------ | ---------------------------------- |
 | `UnaryOperator`       | `function apply(t as T) as T;`                         | `UnaryOperator` extends `Function` |
 | `DoubleUnaryOperator` | `function applyAsDouble(operand as double) as double;` | \-                                |
