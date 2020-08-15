@@ -1,10 +1,10 @@
-# NOT Operator
+# НЕ оператор
 
-A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
+**НЕ** переключает состояние входа. Итак, если на входе `TRUE` , то вывод будет `FALSE` и наоборот.
 
-| Input | Output |
-| ----- | ------:|
-| 0     |      1 |
-| 1     |      0 |
+| Input | Вывод |
+| ----- | -----:|
+| 0     |     1 |
+| 1     |     0 |
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
+Самая простая логика в том, что поддержка Reskillable заключается в способности инвертировать требования. Это делает это с использованием НЕ ворот и синтаксис для него не |requirement. Как описано выше в разделе "Логические ворота", это требование логики будет помечено как выполненное только в том случае, если данное требование не выполнено.
