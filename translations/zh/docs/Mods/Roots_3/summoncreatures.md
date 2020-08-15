@@ -2,16 +2,16 @@
 ### 所属类名
 
 ```zenscript
-import mods.roots.SummonCreatures;
+导入 mods.roots.summonCreatheres;
 ```
 
 #### 可用方法
 
 ```zenscript
-void addEntity(
-  IEntityDefinition entity, // the entity to be summoned
-  IIngredient[] ingredients // a list of ingredients used for the summoning
-);
+无效加权(
+  IEntityDefinition entity, // 被召唤的实体
+  IIngredient[成分] / / 一个用于召唤的成分列表
+)；
 ```
 
 
@@ -19,9 +19,9 @@ void addEntity(
 
 
 ```zenscript
-void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
-);
+无效 removeEntity(
+  IEntityDefinition entity // 实体将通过配方
+ 从召唤中移除；
 ```
 
 
@@ -29,9 +29,9 @@ void removeEntity(
 
 
 ```zenscript
-void removeLifeEssence(
-  IEntityDefinition entity // the entity to remove life essence for
-);
+无效移除生命值(
+  IEntityDefinition entity // 实体可移除
+的生命实质)；
 ```
 
 
@@ -39,9 +39,9 @@ void removeLifeEssence(
 
 
 ```zenscript
-void addLifeEssence(
-  IEntityDefinition entity // the entity to add life essence for
-);
+无效的 addLifeEssence(
+  IEntityDefinition entity // 实体为
+ 添加生命实质的实体)；
 ```
 
 
@@ -49,7 +49,7 @@ void addLifeEssence(
 
 
 ```zenscript
-void clearLifeEssence();
+缺少清除寿命();
 ```
 
 
@@ -59,22 +59,22 @@ void clearLifeEssence();
 ### 例子
 
 ```zenscript
-import mods.roots.SummonCreatures;
+导入 mods.roots.summonCreatheres；
 
-// Clear all automatically generated Life Essences added by
-// the Animal Harvest map
-SummonCreatures.clearLifeEssence();
+// 清除由
+// 动物采集地图
+SummonCreaty添加的所有自动生成的生命值。 学习生命();
 
-// Add a recipe to summon a Chicken using 3 items
-SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
+// 添加一个配方，用3个项目召唤一个鸡肉
+SummonCreat。 ddEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
-// Remove the enderman added by the Animal Harvest example
-// from the Life Essence list (presuming it hasn't been cleared)
-SummonCreatures.removeLifeEssence(<entity:minecraft:enderman>);
+// 从生命基础列表中删除动物捕获示例中添加的末影人
+// (假定它尚未被清除)
+SummonCreat。 EmoveLifeEssence(<entity:minecraft:enderman>);
 
-// Manually add a life-essence drop capability for an ender dragon
-SummonCreatures.addLifeEssence(<entity:minecraft:ender_dragon>);
+// 手动为末影龙
+SummonCreath. dLifeEssence(<entity:minecraft:ender_dragon>);
 
-// Remove the default recipe for cows
+// 移除奶牛的默认配方
 SummonCreatures.removeEntity(<entity:minecraft:cow>);
 ```
