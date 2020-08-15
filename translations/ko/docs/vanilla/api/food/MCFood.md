@@ -121,7 +121,7 @@ myMCFood.setSaturation(saturation as float);
 
 ## Properties
 
-| Name           | Type    | Has Getter | Has Setter |
+| 이름             | Type    | Has Getter | Has Setter |
 | -------------- | ------- | ---------- | ---------- |
 | canEatWhenFull | boolean | true       | false      |
 | healing        | int     | true       | false      |
