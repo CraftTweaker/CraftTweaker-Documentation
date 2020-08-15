@@ -2,16 +2,16 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.data.MapData
 ```
 
-## Implemented Interfaces
-MapData implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+MapData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Constructors
@@ -21,13 +21,13 @@ new crafttweaker.api.data.MapData();
 ```zenscript
 new crafttweaker.api.data.MapData(map as crafttweaker.api.data.IData[String]);
 ```
-| Parameter | Type                                                           | Description             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | No description provided |
+| Parametro | Tipo                                                           | Descrizione                 |
+| --------- | -------------------------------------------------------------- | --------------------------- |
+| map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | Nessuna descrizione fornita |
 
 
 
-## Methods
+## Metodi
 ### asList
 
 Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
@@ -58,7 +58,7 @@ Gets the String representation of this IData
 
  Returns: `String that represents this IData (value and type).`
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
 myMapData.asString();
@@ -68,16 +68,16 @@ myMapData.asString();
 
 Checks if the Map contains the given key.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMapData.contains(key as String);
 myMapData.contains("Hello");
 ```
 
-| Parameter | Type   | Description           |
-| --------- | ------ | --------------------- |
-| key       | String | The key to search for |
+| Parametro | Tipo    | Descrizione           |
+| --------- | ------- | --------------------- |
+| key       | Stringa | The key to search for |
 
 
 ### copy
@@ -105,9 +105,9 @@ myMapData.get(key as String);
 myMapData.get("Hello");
 ```
 
-| Parameter | Type   | Description           |
-| --------- | ------ | --------------------- |
-| key       | String | The key to search for |
+| Parametro | Tipo    | Descrizione           |
+| --------- | ------- | --------------------- |
+| key       | Stringa | The key to search for |
 
 
 ### getId
@@ -130,7 +130,7 @@ Gets the String representation of the internal INBT tag
 
  Returns: `String that represents the internal INBT of this IData.`
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
 myMapData.getString();
@@ -147,7 +147,7 @@ myMapData.merge(other as crafttweaker.api.data.MapData);
 myMapData.merge({Doodle: "Do});
 ```
 
-| Parameter | Type                                                       | Description    |
+| Parametro | Tipo                                                       | Descrizione    |
 | --------- | ---------------------------------------------------------- | -------------- |
 | other     | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | The other map. |
 
@@ -163,10 +163,10 @@ myMapData.put(key as String, value as crafttweaker.api.data.IData);
 myMapData.put("Hello", "Goodbye");
 ```
 
-| Parameter | Type                                                   | Description                   |
+| Parametro | Tipo                                                   | Descrizione                   |
 | --------- | ------------------------------------------------------ | ----------------------------- |
-| key       | String                                                 | The key to set the value for. |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
+| key       | Stringa                                                | The key to set the value for. |
+| valore    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
 
 
 ### putAll
@@ -178,12 +178,12 @@ myMapData.putAll(map as crafttweaker.api.data.IData[String]);
 myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
-| Parameter | Type                                                           | Description                               |
+| Parametro | Tipo                                                           | Descrizione                               |
 | --------- | -------------------------------------------------------------- | ----------------------------------------- |
 | map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
 
 
-### remove
+### rimuovi
 
 Removes the entry with the given key from the Map
 
@@ -192,22 +192,22 @@ myMapData.remove(key as String);
 myMapData.remove("Somewhere");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| key       | String | The key of the entry to remove |
+| Parametro | Tipo    | Descrizione                    |
+| --------- | ------- | ------------------------------ |
+| key       | Stringa | The key of the entry to remove |
 
 
 
-## Properties
+## Proprietà
 
-| Name    | Type        | Has Getter | Has Setter |
-| ------- | ----------- | ---------- | ---------- |
-| isEmpty | boolean     | true       | false      |
-| keySet  | Set<String> | true       | false      |
-| size    | int         | true       | false      |
+| Nome       | Tipo            | Ha Getter | Ha Setter |
+| ---------- | --------------- | --------- | --------- |
+| isEmpty    | boolean         | vero      | falso     |
+| keySet     | Imposta<String> | vero      | falso     |
+| dimensione | int             | vero      | falso     |
 
-## Operators
-### ADD
+## Operatori
+### AGGIUNGI
 
 Adds all entries from the given IData to this entry
 
@@ -215,13 +215,13 @@ Adds all entries from the given IData to this entry
 myMapData + data as crafttweaker.api.data.IData
 ```
 
-| Parameter | Type                                                   | Description             |
-| --------- | ------------------------------------------------------ | ----------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
+| Parametro | Tipo                                                   | Descrizione                 |
+| --------- | ------------------------------------------------------ | --------------------------- |
+| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Nessuna descrizione fornita |
 
-## Casters
+## Caster
 
-| Result type                                                    | Is Implicit |
-| -------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | true        |
+| Tipo Risultato                                                 | Implicito |
+| -------------------------------------------------------------- | --------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | vero      |
 
