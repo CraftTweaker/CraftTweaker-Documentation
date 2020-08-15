@@ -1,6 +1,6 @@
-# ExplosionDetonate
+# Взрывной Детонат
 
-The ExplosionDetonate Event is fired shortly before an explosion starts. It cannot be canceled.
+Событие Взрыв Детоната запускается незадолго до начала взрыва. Это не может быть отменено.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -8,15 +8,15 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-ExplosionDetonate Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+ExplosionDetonate Events реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [IExplosion-событие](/Vanilla/Events/Events/IExplosionEvent/)
 
 
 ## Геттеры
 Следующая информация может быть получена от события:
 
-| ZenGetter           | ZenSetter | Тип                                            |
-| ------------------- | --------- | ---------------------------------------------- |
-| `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
-| `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
+| ZenGetter             | ZenSetter | Тип                                            |
+| --------------------- | --------- | ---------------------------------------------- |
+| `измененные сущности` |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
+| `affectedPositions`   |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
