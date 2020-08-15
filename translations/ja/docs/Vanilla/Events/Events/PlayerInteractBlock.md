@@ -21,7 +21,7 @@ PlayerInteractBlock Events implement the following interfaces and are able to ca
 
 The following information can be retrieved from the event:
 
-| zengetter            | zengetter            | type                                   |
+| zengetter            | zengetter            | タイプ                                    |
 | -------------------- | -------------------- | -------------------------------------- |
 | `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
 | `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
