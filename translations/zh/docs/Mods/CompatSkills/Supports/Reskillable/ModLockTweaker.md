@@ -1,17 +1,17 @@
-# Mod-Lock Tweaker
+# Mod-Lock Tsinfer
 
-## Mod-Locking
+## 模式锁定
 
-This was added as a capability for configs in 1.2.0 and now has a CrT ZenMethod implemented to support it. This can also be accomplished through the configs as previously mentioned.
+这被添加为1.2.0中的配置能力，现在已经安装了一个 CrT ZenMethod来支持它。 这也可以通过前面提到的配置完成。
 
-Mod-Locks allow you to lock all ItemStacks from a specific mod behind a specific lock.
+Mod-Locks 允许您锁定特定模组中的所有物品应用于特定锁定。
 
-### Syntax:
+### 语法：
 
-    // Blank Example
-    mods.compatskills.ModLock.addModLock(String modId, String... locked);
+    // 空白示例
+    mods.compatskills.ModLock.addModLock(String modId, String... 锁定);
     
-    // Working Example:
+    // 工作示例:
     mods.compatskills.ModLock.addModLock("minecraft", "reskillable:building|4");
     
-    The above lock will lock everything from the mod "minecraft" behind a lock of "building 4"
+    以上锁定将锁定来自模组"minecraft"的所有东西，锁定在"Building 4"
