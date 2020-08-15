@@ -5,21 +5,21 @@
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange
+craftminstrer.api.event.entity.player.PlayerXpEvent.MCXpChange
 ```
 
 ## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
+新 craftminstrer.api.event.entity.player.PlayerXpEvent.MCXpChange(处理程序作为函数。消费者<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>)；
 ```
-| 参数      | 类型                                                                                                                                            | 描述                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
+| 参数      | 类型                                                                                                                              | 描述                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | 消费者<[craftmiliter.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
 
 
 
 ## 方法
-### getAmount
+### get金额
 
 返回为int值
 
@@ -29,7 +29,7 @@ myMCXpChange.getAmount();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getEntityPlayer();
@@ -37,17 +37,17 @@ myMCXpChange.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+返回： `玩家`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getPlayer();
 ```
 
-### hasResult
+### 突然结果
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
 
 返回为布尔值
 
@@ -55,11 +55,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCXpChange.hasResult();
 ```
 
-### isCancelable
+### 可取消
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
+ 注意：
+ 取消批注事件将自动添加此方法以返回 true。`
 
 返回为布尔值
 
@@ -67,9 +67,9 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCXpChange.isCancelable();
 ```
 
-### isCanceled
+### 已取消
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
 
 返回为布尔值
 
@@ -77,10 +77,10 @@ Determine if this event is canceled and should stop executing. Returns: `The cur
 myMCXpChange.isCanceled();
 ```
 
-### setAmount
+### 设置金额
 
 ```zenscript
-myMCXpChange.setAmount(amount as int);
+myMCXpChange.setAmount(金额为int)；
 ```
 
 | 参数 | 类型 | 说明                      |
@@ -88,15 +88,15 @@ myMCXpChange.setAmount(amount as int);
 | 金额 | 整数 | No description provided |
 
 
-### setCanceled
+### 已取消
 
 ```zenscript
-myMCXpChange.setCanceled(cancel as boolean);
+myMCXpChange.setCanceled(cancel as boolean)；
 ```
 
-| 参数     | 类型      | 描述                      |
-| ------ | ------- | ----------------------- |
-| cancel | boolean | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 取消 | boolean | No description provided |
 
 
 
