@@ -3,7 +3,7 @@
 ## Пакет
 
 ```zenscript
-import mods.aether_legacy.Freezer;
+import mods.aether_legacy.заморожено;
 ```
 ## Использование
 
