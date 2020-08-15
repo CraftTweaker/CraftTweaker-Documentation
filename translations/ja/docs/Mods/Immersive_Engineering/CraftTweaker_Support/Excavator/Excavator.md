@@ -1,22 +1,22 @@
 # Excavator
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the Excavator package using `mods.immersiveengineering.Excavator`.
+`mods.immersiveengineering.Excavator` を使用して、Excavator パッケージを呼び出すことができます。
 
-## Add Mineral
+## 鉱物を追加
 
-| Required | Type                | Data Type |
-| -------- | ------------------- | --------- |
-| Required | Name                | string    |
-| Required | Mineral Weight      | int型      |
-| Required | Fail Chance         | double型   |
-| Required | Ores                | string[]  |
-| Required | Chances             | double[]  |
-| Optional | Dimension Whitelist | int []    |
-| Optional | Blacklist           | boolean   |
+| 必須   | タイプ       | データタイプ   |
+| ---- | --------- | -------- |
+| 必須   | 名称        | 文字列      |
+| 必須   | 鉱物の重量     | int型     |
+| 必須   | 失敗のチャンス   | double型  |
+| 必須   | Ores      | ストリング[]  |
+| 必須   | チャンス      | double[] |
+| 省略可能 | 寸法ホワイトリスト | int []   |
+| 省略可能 | ブラック リスト  | boolean型 |
 
-### Example
+### 例
 
 ```zenscript
 //Example:
@@ -27,16 +27,16 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron"
 mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1], true);
 ```
 
-## Remove Mineral
+## 鉱物を削除
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| 必須 | タイプ | データタイプ |
+| -- | --- | ------ |
+| 必須 | 名称  | 文字列型   |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.Excavator.removeMineral(String name);
 
 mods.immersiveengineering.Excavator.removeMineral("Iron Ore");
