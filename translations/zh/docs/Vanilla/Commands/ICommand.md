@@ -1,11 +1,11 @@
 # ICommand
 
-An ICommand Object represents a command ingame.
+ICommand Object 代表一个命令。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.command.ICommand;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.commandICommand；`
 
 ## ZenGetters
 
@@ -32,11 +32,11 @@ It might be required for you to import the package if you encounter any issues (
   
   <tr>
     <td>
-      aliases
+      别名
     </td>
     
     <td>
-      List<String\>
+      列表<String\>
     </td>
   </tr>
 </table>
@@ -44,8 +44,8 @@ It might be required for you to import the package if you encounter any issues (
 ## ZenMethods
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
-- boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
-- boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → You can compare them!
+- 无效的执行([IServer](/Vanilla/Game/IServer/) 服务器, [ICommander Sender](/Vanilla/Commands/ICommandSender/) 发送者, String[]args;
+- 布尔检查权限([IServer](/Vanilla/Game/IServer/) 服务器, [ICommander](/Vanilla/Commands/ICommandSender/) 发送者);
+- 列表<string> getTabComplations([IServer](/Vanilla/Game/IServer/) server, [ICommander](/Vanilla/Commands/ICommandSender/) sender, String[……] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- 布尔值是用户名索引(String[]args, int index);
+- command1 != command2; → 你可以比较它们!
