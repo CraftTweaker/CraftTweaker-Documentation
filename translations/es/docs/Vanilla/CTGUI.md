@@ -14,7 +14,7 @@ You call the command using
 
 These ids are currently implemented:
 
-| ID            | Added by     | Notes |
+| ID            | Added by     | Notas |
 | ------------- | ------------ | ----- |
 | craftingtable | CraftTweaker |       |
 | furnace       | CraftTweaker |       |
