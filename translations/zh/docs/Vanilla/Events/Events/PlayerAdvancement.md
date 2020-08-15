@@ -1,6 +1,6 @@
 # PlayerAdvancement
 
-The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
+每当一名玩家被授予高级版时，玩家升级活动就会被发射。
 
 ## 事件类
 
@@ -10,7 +10,7 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## 事件界面扩展
 
-PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAdvance事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -24,10 +24,10 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 ## Id
 
-Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
+除了玩家事件所显示的功能外，您可以获得高级ID作为字符串。
 
-This can for example be a string like
+这可以是一个像这样的字符串
 
 ```zenscript
-"minecraft:story/mine_diamond"
+“minecraft:story/mine_diamond”
 ```
