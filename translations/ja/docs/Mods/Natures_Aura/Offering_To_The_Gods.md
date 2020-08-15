@@ -1,16 +1,16 @@
-# Offering to the Gods
+# 神々に捧げること
 
 ## パッケージ
 ```zenscript
-mods.naturesaura.OfferingOffering
+mods.naturesaura.Offeringオファー中
 ```
 
 ## メソッド
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The offering
-- **int ininputAmount** The amount of items required for the input. Note that this means that the amount of the input variable is ignored
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
+- **文字列名**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** 提供
+- **int ininputAmount** 入力に必要な項目の量。 これは入力変数の量が無視されることを意味することに注意してください
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** 提供を開始するために必要なアイテム
+- **[IItemStack](/Vanilla/Items/IItemStack) 出力** オファーのギフト
 
 ## 加算
 
