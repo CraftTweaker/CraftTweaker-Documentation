@@ -1,10 +1,10 @@
-# Condenser
+# 冷凝器
 
-The *condenser* package is used for adding or removing recipes to/from the Condenser.
+*冷凝器* 包用于添加或删除配方到冷却器。
 
 ## 导入包
 
-You can call the *condenser* package using `mods.skyresources.condenser`
+您可以调用 *冷凝器* 包使用 `mods.skyresources.condenser`
 
 ## 配方添加
 
@@ -16,6 +16,6 @@ mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>
 ## 删除配方
 
 ```zenscript
-//mods.skyresources.condenser.removeRecipe(IItemStack output);
+//mods.skyresources.condenser.removeRecipe(IItemStack 输出);
 mods.skyresources.condenser.removeRecipe(<minecraft:iron_ingot>);
 ```
