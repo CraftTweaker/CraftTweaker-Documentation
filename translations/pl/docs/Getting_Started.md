@@ -1,62 +1,62 @@
-# Getting Started with scripts
+# Zacznij od skryptów
 
-CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder.
+CraftTweaker używa niestandardowego języka skryptowego o nazwie `ZenScript`, ZenScript jest odczytywany z `. s` plików, które są przechowywane w folderze `<gamedir>/scripts`.
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
+ZenScript jest językiem skryptowym "top down", co oznacza, że `Import` musi znajdować się na górze pliku, `Deklaracje zmiennych` powinny znajdować się w górnej części pliku, jednak nie ma do tego żadnych ograniczeń, zmienna `` może być zdefiniowana gdziekolwiek w skrypcie, jednak nie będzie on dostępny dla linii powyżej deklaracji `Zmienna`.
 
-## Introduction
+## Wprowadzanie
 
-Ever went into building a modpack and then found that just throwing in a bunch of mods didn't give you an integrated experience? As mods are developed relatively independently from each other, one may feel overpowered in comparison to the other. Or you may believe that there would be a better recipe for some of the items. Or perhaps you'd want to remove an item from the game without having to remove the entire mod. Or you may discover that some ore dictionary entries have too many or too few items. Now you can do all of that - each with just a single instruction to MineTweaker.
+Czy kiedyś udało się zbudować paczkę modów, a następnie znalazł to, że tylko rzucenie kilku modów nie dało Ci zintegrowanego doświadczenia? Ponieważ mody są rozwijane względnie niezależnie od siebie, jeden może czuć się nadmiernie obciążony w porównaniu z drugim. Albo możesz wierzyć, że na niektóre przedmioty będzie lepszy przepis. Lub może chcesz usunąć przedmiot z gry bez konieczności usuwania całego moda. Albo możesz odkryć, że niektóre wpisy słownika rudy mają zbyt wiele lub zbyt mało elementów. Teraz możesz to wszystko zrobić - każdy z nich z jedną instrukcją dla MineTweaker.
 
-In addition to the core functionality provided to support Vanilla minecraft, mod integration libraries are provided with the mod to enable you to not only modify vanilla recipes, but also the mod machine recipes and mod behavior.
+Oprócz podstawowej funkcji wspierającej Vanilla minecraft, biblioteki integracji modów są dostarczane z modyfikacjami, aby nie tylko modyfikować przepisy vanilla; ale także receptury i zachowanie modów maszyny.
 
-## Scripts
+## Skrypty
 
-Scripts are stored in `<minecraftdir>/scripts` and are loaded in the `PreInitialization` phase of Minecraft, unlike previous versions of CraftTweaker, Scripts cannot be reloaded, this is due to changes that Mojang have made in 1.12 and there is no workaround. Also, Scripts need to be on **both, the server AND the client instance** to work
+Skrypty są przechowywane w `<minecraftdir>/scripts` i są ładowane w fazie `PreInitialization` Minecraft, w odróżnieniu od poprzednich wersji CraftTweaker, skryptów nie można ponownie załadować, jest to spowodowane zmianami wprowadzonymi przez Mojang w 1. 2 i nie ma żadnych prac. Skrypty muszą być również na **obu, serwerze ORAZ instancji klienta** , aby działać
 
-Script files have the `.zs` prefix and can be compressed into a `.zip` that will also be read.
+Pliki skryptów mają prefiks `.zs` i mogą być skompresowane do `.zip` , który również zostanie odczytany.
 
-### Writing your first script
+### Pisanie pierwszego skryptu
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<minecraftdir>/scripts>` folder.
+Aby rozpocząć od skryptów możesz utworzyć bardzo prosty plik, zwany `hello.zs` w folderze `<minecraftdir>/scripts>`.
 
-In `hello.zs` put the following line
+W `hello.zs` umieść następującą linię
 
 ```zenscript
-print("Hello world!");
+print("Witaj świecie!");
 ```
 
-Now load up Minecraft and and take a look at the `crafttweaker.log` file.
+Załaduj Minecraft i spójrz na plik `crafttweaker.log`.
 
-The `crafttweaker.log` file is located in `<minecraftdir>` and can be read by any program that can read plaintext files.
+Plik `crafttweaker.log` znajduje się w `<minecraftdir>` i może być odczytywany przez każdy program, który może odczytywać pliki zwykłe.
 
-It is recommended to use Notepad++ or Sublime Text to edit script files, however any program will do.
+Zalecane jest użycie Notepad++ lub Sublime Text do edycji plików skryptu, jednak każdy program zrobi to.
 
-### The crafttweaker.log file
+### Plik crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Plik `crafttweaker.log` używa konkretnej składni w jego wyjściu, składnia to:
 
     [LOADERSTAGE][SIDE][TYPE] <message>
     
 
-Using the example above, the output would be:
+Korzystając z powyższego przykładu, wyniki byłyby następujące:
 
-    [PREINITIALIZATION][CLIENT][INFO] Hello world!
+    [PREINITIALIZATION][CLIENT][INFO] Witaj świecie!
     
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumps is easier.
+Składnia jest używana do celów debugowania i jedyny czas kiedy składnia nie jest używana, to dla komend, w którym to przypadku po prostu wydrukuje wiadomość, jest to zrobione w ten sposób, że wklejanie zrzutów jest łatwiejsze.
 
-### Comments
+### Komentarze
 
-Comments can be used to make your script files more readable and easier to understand!
+Komentarze mogą być używane do poprawy czytelności plików skryptów i łatwiejszego do zrozumienia!
 
-ZenScript supports 3 types of comments, being:
+ZenScript obsługuje 3 typy komentarzy:
 
-Single line: `// I'm a single line comment!`
+Pojedynczy wiersz: `// Jestem pojedynczym komentarzem linii!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Alternatywna pojedyncza linia: `# Jestem również pojedynczym komentarze!`
 
-Multiline:
+Wielolinia:
 
     /* I'm 
     a
