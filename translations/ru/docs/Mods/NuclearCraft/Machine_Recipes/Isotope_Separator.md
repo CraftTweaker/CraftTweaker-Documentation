@@ -1,6 +1,6 @@
 # Isotope Separator
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.isotope_separator`
 
 ## Добавление рецептов
@@ -11,6 +11,6 @@ mods.nuclearcraft.isotope_separator.addRecipe([itemInput, itemOutput1, itemOutpu
 ## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.isotope_separator.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.isotope_separator.removeRecipeWithOutput([itemOutput1, itemOutput2]);
+mods.nuclearcraft.isotope_separator.removeRecipeWithOutput([itemput1, itemput2]);
 mods.nuclearcraft.isotope_separator.removeAllRecipes();
 ```
