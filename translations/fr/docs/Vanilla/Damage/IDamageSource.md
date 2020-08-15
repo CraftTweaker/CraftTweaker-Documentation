@@ -2,27 +2,27 @@
 
 An IDamageSource object is the source of damage to an entity.
 
-## Importing the class
+## Importation de la classe
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.damage.IDamageSource`
 
 ## Zengetters and ZenMethods without parameters
 
-| ZenGetter        | ZenMethod                         | Return Type                           |
+| ZenGetter        | Méthode Zen                       | Type de retour                        |
 | ---------------- | --------------------------------- | ------------------------------------- |
-| harmInCreative   | canHarmInCreative();              | bool                                  |
-| damageType       | getDamageType();                  | string                                |
-| hunderDamage     | getHungerDamage();                | float                                 |
+| harmInCreative   | canHarmInCreative();              | booléen                               |
+| damageType       | getDamageType();                  | chaîne de caractères                  |
+| hunderDamage     | getHungerDamage();                | flottant                              |
 | immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
 | trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| creativePlayer   | isCreativePlayer();               | bool                                  |
-| damageAbsolute   | isDamageAbsolute();               | bool                                  |
-| difficultyScaled | isDifficultyScaled();             | bool                                  |
-| explosion        | isExplosion();                    | bool                                  |
-| fireDamage       | isFireDamage();                   | bool                                  |
-| magicDamage      | isMagicDamage();                  | bool                                  |
-| projectile       | isProjectile();                   | bool                                  |
+| creativePlayer   | isCreativePlayer();               | booléen                               |
+| damageAbsolute   | isDamageAbsolute();               | booléen                               |
+| difficultyScaled | isDifficultyScaled();             | booléen                               |
+| explosion        | isExplosion();                    | booléen                               |
+| fireDamage       | isFireDamage();                   | booléen                               |
+| magicDamage      | isMagicDamage();                  | booléen                               |
+| projectile       | isProjectile();                   | booléen                               |
 |                  | setDamageAllowedInCreativeMode(); | IDamageSource                         |
 |                  | setDamageBypassesArmor();         | IDamageSource                         |
 |                  | setDamageIsAbsolute();            | IDamageSource                         |
