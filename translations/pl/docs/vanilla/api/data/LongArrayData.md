@@ -4,7 +4,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.LongArrayData
@@ -18,23 +18,23 @@ LongArrayData implements the following interfaces. That means any method availab
 ```zenscript
 new crafttweaker.api.data.LongArrayData(internal as long[]);
 ```
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| internal  | long[] | No description provided |
+| Parametr   | Typ    | Opis                    |
+| ---------- | ------ | ----------------------- |
+| wewnętrzna | long[] | No description provided |
 
 
 
-## Methods
-### add
+## Metody
+### dodaj
 
 ```zenscript
 [100000, 800000, 50000].add(value as crafttweaker.api.data.IData);
 [100000, 800000, 50000].add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| Parametr | Typ                                                    | Opis                         |
+| -------- | ------------------------------------------------------ | ---------------------------- |
+| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -43,10 +43,10 @@ new crafttweaker.api.data.LongArrayData(internal as long[]);
 [100000, 800000, 50000].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| Parametr | Typ                                                    | Opis                                                                 |
+| -------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| indeks   | odcień                                                 | The index to add to. Subsequent items will be moved one index higher |
+| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### asList
@@ -104,9 +104,9 @@ Returns boolean
 [100000, 800000, 50000].contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parametr | Typ                                                    | Opis                             |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| dane     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -134,9 +134,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [100000, 800000, 50000].get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parametr | Typ    | Opis                |
+| -------- | ------ | ------------------- |
+| indeks   | odcień | The index (0-based) |
 
 
 ### getId
@@ -165,7 +165,7 @@ Returns String
 [100000, 800000, 50000].getString();
 ```
 
-### remove
+### usuń
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -176,9 +176,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [100000, 800000, 50000].remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parametr | Typ    | Opis                |
+| -------- | ------ | ------------------- |
+| indeks   | odcień | The index (0-based) |
 
 
 ### set
@@ -192,16 +192,16 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [100000, 800000, 50000].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Parametr | Typ                                                    | Opis                       |
+| -------- | ------------------------------------------------------ | -------------------------- |
+| indeks   | odcień                                                 | The index to set (0-based) |
+| wartość  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Właściwości
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Nazwisko | Typ    | Has Getter | Has Setter |
+| -------- | ------ | ---------- | ---------- |
+| rozmiar  | odcień | prawda     | fałszywy   |
 
