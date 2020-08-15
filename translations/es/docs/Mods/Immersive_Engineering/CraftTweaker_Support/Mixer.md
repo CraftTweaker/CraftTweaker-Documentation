@@ -6,16 +6,16 @@ The Mixer package can be used to add/remove recipes to/from the Immersive Engine
 
 You can call the Mixer package using `mods.immersiveengineering.Mixer`.
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type         | Data Type                                                    |
-| -------- | ------------ | ------------------------------------------------------------ |
-| Required | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
-| Required | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
-| Required | Energy       | Integer                                                      |
+| Requerido | Tipo         | Tipo de Datos                                                |
+| --------- | ------------ | ------------------------------------------------------------ |
+| Requerido | Fluid Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Requerido | Fluid Input  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)                 |
+| Requerido | Item Inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) as Array |
+| Requerido | Energy       | Entero                                                       |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:lava>, <liquid:water>, [<ore:l
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Tipo   | Tipo de Datos                                |
 | ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Salida | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
