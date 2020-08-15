@@ -1,4 +1,4 @@
-# Blast Furnace
+# Fornace Esplosiva
 
 Il pacchetto Blast Furnace può essere utilizzato per aggiungere/rimuovere ricette/combustibili da/dalla fornace di ingegneria immersiva.
 
