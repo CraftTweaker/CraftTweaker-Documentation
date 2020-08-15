@@ -7,7 +7,7 @@ A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) c
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import thaumcraft.aspect.CTAspectStack;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
