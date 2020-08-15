@@ -1,20 +1,20 @@
 # LootingLevel
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+Questo evento viene sparato ogni volta che una creatura di entità vivente viene uccisa per calcolare il livello di saccheggio. Il valore può essere aumentato o diminuito o lasciato come è. Il valore può essere già stato modificato da altri eventi, ma il valore originale non è incluso.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LootingLevelEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. ootingLevelEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+Gli eventi LootingLevel implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
 
 | ZenGetter      | ZenSetter      | Tipo                                            |
 | -------------- | -------------- | ----------------------------------------------- |
