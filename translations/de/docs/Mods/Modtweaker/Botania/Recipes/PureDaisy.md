@@ -2,7 +2,7 @@
 
 The PureDaisy package is used for adding or removing recipes to/from the Botania Pure Daisy.
 
-## Calling
+## Anruf
 
 You can call the PureDaisy package using `mods.botania.PureDaisy`
 
@@ -10,7 +10,7 @@ You can call the PureDaisy package using `mods.botania.PureDaisy`
 
 You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Rezeptzusatz
 
 The time defaults to 150 ticks
 
