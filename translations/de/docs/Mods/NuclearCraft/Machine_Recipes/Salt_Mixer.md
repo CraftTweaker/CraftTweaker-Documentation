@@ -1,6 +1,6 @@
-# Salt Mixer
+# Salzwischen-Mixer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.salt_mixer`
 
 ## Rezepte hinzufügen
