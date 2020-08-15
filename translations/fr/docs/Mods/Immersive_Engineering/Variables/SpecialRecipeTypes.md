@@ -6,7 +6,7 @@ The Arc-Furnace has an Optional String parameter called "specialRecipeType". Thi
 
 ### Existing Types
 
-| Recipe Types: | Value      |
+| Recipe Types: | Valeur     |
 | ------------- | ---------- |
 | Alloying      | "Alloying" |
 | Ores          | "Ores"     |
