@@ -2,10 +2,10 @@
 
 This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.item.IItemStack
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.item.IItemStack
 IItemStack implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## メソッド
 ### clearCustomName
 
 ItemStackに設定されているカスタムネームを取り除きます。
@@ -25,7 +25,7 @@ ItemStackに設定されているカスタムネームを取り除きます。
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+この材料スタックでクラフトが行われると、グリッド上になにが残るか？ ただし、スタックが一致するかどうかのチェックは行いません！ Craft Tweakerでの使用例,
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -34,12 +34,12 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| パラメータ | タイプ                                                               | 説明                                        |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### 一致
 
 Does the given stack match the ingredient?
 
@@ -50,9 +50,9 @@ Returns boolean
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| パラメータ | タイプ                                                               | 説明                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### setDisplayName
@@ -66,9 +66,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| name      | String | stackの新しい名前 |
+| パラメータ | タイプ  | 説明          |
+| ----- | ---- | ----------- |
+| 名前    | 文字列型 | stackの新しい名前 |
 
 
 ### withDamage
@@ -82,9 +82,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withDamage(10);
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| damage    | int  | 新しいダメージの値   |
+| パラメータ | タイプ | 説明        |
+| ----- | --- | --------- |
+| ダメージ  | int | 新しいダメージの値 |
 
 
 ### withTag
@@ -98,42 +98,42 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type                                                   | Description |
-| --------- | ------------------------------------------------------ | ----------- |
-| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | タグを設定       |
+| パラメータ | タイプ                                                    | 説明    |
+| ----- | ------------------------------------------------------ | ----- |
+| タグ    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | タグを設定 |
 
 
 
 ## プロパティ
 
-| Name           | Type                                                                | Has Getter | Has Setter |
+| 名称             | タイプ                                                                 | Has Getter | Has Setter |
 | -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
+| 金額             | int                                                                 | true       | false      |
 | burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
-| damaged        | boolean                                                             | true       | false      |
-| displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
+| commandString  | 文字列型                                                                | true       | false      |
+| damageable     | boolean型                                                            | true       | false      |
+| damaged        | boolean型                                                            | true       | false      |
+| displayName    | 文字列型                                                                | true       | false      |
+| 空              | boolean型                                                            | true       | false      |
 | food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
 | getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
 | getRepairCost  | int                                                                 | true       | false      |
-| hasDisplayName | boolean                                                             | true       | false      |
-| hasEffect      | boolean                                                             | true       | false      |
-| hasTag         | boolean                                                             | true       | false      |
-| isCrossbow     | boolean                                                             | true       | false      |
-| isEnchantable  | boolean                                                             | true       | false      |
-| isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| hasDisplayName | boolean型                                                            | true       | false      |
+| hasEffect      | boolean型                                                            | true       | false      |
+| hasTag         | boolean型                                                            | true       | false      |
+| isCrossbow     | boolean型                                                            | true       | false      |
+| isEnchantable  | boolean型                                                            | true       | false      |
+| isEnchanted    | boolean型                                                            | true       | false      |
+| 項目             | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 | maxDamage      | int                                                                 | true       | false      |
 | maxStackSize   | int                                                                 | true       | false      |
-| registryName   | String                                                              | true       | false      |
-| stackable      | boolean                                                             | true       | false      |
-| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| translationKey | String                                                              | true       | false      |
+| registryName   | 文字列型                                                                | true       | false      |
+| stackable      | boolean型                                                            | true       | false      |
+| タグ             | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
+| translationKey | 文字列型                                                                | true       | false      |
 | useDuration    | int                                                                 | true       | false      |
 
-## Operators
+## 演算子
 ### MUL
 
 ItemStackの数量(スタック数)を設定します。
@@ -143,9 +143,9 @@ ItemStackの数量(スタック数)を設定します。
 <item:minecraft:dirt> * 3
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| amount    | int  | new amount  |
+| パラメータ | タイプ | 説明         |
+| ----- | --- | ---------- |
+| 金額    | int | new amount |
 
 ## Casters
 
