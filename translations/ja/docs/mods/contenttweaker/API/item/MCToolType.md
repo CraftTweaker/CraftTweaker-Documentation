@@ -1,8 +1,8 @@
 # MCToolType
 
-A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
+ツールタイプは、どのような種類のブロックを採掘できるかを識別するために使用されます。 または逆に、特定のブロックを採掘するにはどのような種類のツールが必要です。
 
-This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
 問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
@@ -10,28 +10,28 @@ This class was added by a mod with mod-id `contenttweaker`. 従って、この�
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implemented Interfaces
-MCToolType implements the following interfaces. つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
+## 実装されたインターフェース
+MCToolType は以下のインターフェースを実装しています。 つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructors
-Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
+ToolType オブジェクトを作成します。 指定された名前を持つものが既に存在する場合は、内部的に同じtoolTypeを指すことになります。 そうでなければ、名前を持つ新しいものが作成されます (同じことがBracketsでも同じことが当てはまります)。
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| パラメータ | タイプ  | 説明                  |
-| ----- | ---- | ------------------- |
-| name  | 文字列型 | The name to be used |
+| パラメータ | タイプ  | 説明     |
+| ----- | ---- | ------ |
+| name  | 文字列型 | 使用する名前 |
 
 
 
 ## メソッド
 ### getName
 
-Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+このtoolTypeの名前を取得します。 The name is what is used in the Bracket expression after the `<tooltype:`
 
-Return type: String
+戻り値の型: String
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Return type: String
 
 ### hashCode
 
-Returns the object's hash code
+オブジェクトのハッシュコードを返します
 
-Return type: int
+戻り値の種類: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,9 +49,9 @@ Return type: int
 
 ### toString
 
-Get the string representation of this type. Is different from commandString!
+この型の文字列表現を取得します。 コマンド文字列とは異なります！
 
-Return type: String
+戻り値の型: String
 
 ```zenscript
 <tooltype:pickaxe>.toString();
@@ -60,28 +60,28 @@ Return type: String
 
 ## プロパティー
 
-| 名称            | タイプ  | Has Getter | Has Setter |
-| ------------- | ---- | ---------- | ---------- |
-| commandString | 文字列型 | true       | false      |
-| 名前            | 文字列型 | true       | false      |
+| 名称            | タイプ  | ゲッターあり | セッターあり |
+| ------------- | ---- | ------ | ------ |
+| commandString | 文字列型 | true   | false  |
+| 名前            | 文字列型 | true   | false  |
 
 ## 演算子
 ### EQUALS
 
-Compares if two given MCToolType objects are equal
+2つの指定された MCToolType オブジェクトが等しい場合に比較
 
 ```zenscript
 <tooltype:pickaxe> == o as Object
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| パラメータ | タイプ    | 説明               |
-| ----- | ------ | ---------------- |
-| o     | Object | The other object |
+| パラメータ | タイプ    | 説明          |
+| ----- | ------ | ----------- |
+| o     | オブジェクト | もう一方のオブジェクト |
 
-## Casters
+## キャスト
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| 文字列型        | false       |
+| 結果の種類 | 暗黙的   |
+| ----- | ----- |
+| 文字列型  | false |
 
