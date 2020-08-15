@@ -19,7 +19,7 @@ PlayerLeftClickBlock Events implement the following interfaces and are able to c
 ## ZenGetters & ZenSetters
 The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetter            | type                                   |
+| ZenGetter            | ZenSetter            | tipo                                   |
 | -------------------- | -------------------- | -------------------------------------- |
 | `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
 | `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
