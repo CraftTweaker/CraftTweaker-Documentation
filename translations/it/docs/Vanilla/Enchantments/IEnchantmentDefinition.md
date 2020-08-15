@@ -1,15 +1,15 @@
-# IEnchantmentDefinition
+# Definizione IEnchantmentDefinizione
 
-An IEnchantmentDefinition is the actual Enchantment, it does not posess a level, but you can use this to retrieve information on the Enchantment.
+Una definizione di Incantesimo è l'Incantesimo attuale, non posa un livello, ma puoi usarlo per recuperare informazioni sull'Incantesimo.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
 ## Recupero di un tale oggetto
 
-You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
+È possibile recuperare un tale oggetto dal gestore [Enchantment Bracket](/Vanilla/Brackets/Bracket_Enchantment/) o da un oggetto [IEnchantment](/Vanilla/Enchantments/IEnchantment/).
 
 ## ZenGetters/ZenSetters
 
@@ -26,11 +26,11 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 
 ## ZenMethods
 
-### CanApply
+### CanApplica
 
-Checks if the enchantment can be put on the item.  
-First method checks in general, second checks if the item can be enchanted to this enchantment using the enchantment Table.  
-Both return a bool and require an [IItemStack](/Vanilla/Items/IItemStack/) as input parameter.
+Controlla se l'incantesimo può essere messo sull'oggetto.  
+Il primo metodo controlla in generale, il secondo controlla se l'oggetto può essere incantato a questo incantesimo usando il tavolo dell'incantesimo.  
+Entrambi restituiscono un bool e richiedono un [IItemStack](/Vanilla/Items/IItemStack/) come parametro di input.
 
 ```zenscript
 ench.canApply(IItemStack item);
@@ -39,37 +39,37 @@ ench.canApplyAtEnchantmentTable(IItemStack item);
 
 ### getEnchantability
 
-Checks what enchantability the item must have for the Enchantment at the given level.  
-Both methods return an int and take the level of the enchantment as int parameter.
+Controlla quale incantevolezza l'oggetto deve avere per l'Incantesimo al livello specificato.  
+Entrambi i metodi restituiscono un int e prendono il livello dell'incantesimo come parametro int.
 
 ```zenscript
 ench.getMinEnchantability(int level);
 ench.getMaxEnchantability(int level);
 ```
 
-### TranslatedName
+### Nome Tradotto
 
-Returns the translated name (e.g. "smite IV").  
-Returns a string and requires the level of the enchantment as int parameter.  
-Does the same as [IEnchantment's](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
+Restituisce il nome tradotto (es. "smite IV").  
+Restituisce una stringa e richiede il livello dell'incantesimo come parametro int.  
+Fa come [IEnchantment](/Vanilla/Enchantments/IEnchantment/) `.displayName` ZenGetter!
 
 ```objectzenscriptivec
 ench.getTranslatedName(int level);
 ```
 
-### make Enchantment
+### crea Incantesimo
 
-By giving an EnchantmentDefinition a level you can make an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) out of it:
+Dando a EnchantmentDefinition un livello puoi fare un [IEnchantment](/Vanilla/Enchantments/IEnchantment/) di esso:
 
 ```zenscript
 ench.makeEnchantment(int level);
 ench * level;
 ```
 
-### Compare with other IEnchantmentDefinition objects
+### Confronta con altri oggetti IEnchantmentDefinition
 
-You can use the `==` operator to check if two enchantments are the same.  
-This means if they have the same id.
+È possibile utilizzare l'operatore `==` per verificare se due incantesimi sono uguali.  
+Questo significa che se hanno lo stesso id.
 
 ```zenscript
 if(enchA == enchB)
@@ -79,15 +79,15 @@ if(enchA == enchB)
 ## Esempio
 
 ```zenscript
-import crafttweaker.enchantments.IEnchantmentDefinition;
-import crafttweaker.data.IData;
+import crafttweaker.enchantments.IEnchantmentDefinizione;
+import crafttweaker.data. Data;
 
 val array as IEnchantmentDefinition[] = [<enchantment:minecraft:protection>,<enchantment:minecraft:fire_protection>,<enchantment:minecraft:feather_falling>,<enchantment:minecraft:blast_protection>,<enchantment:minecraft:projectile_protection>,<enchantment:minecraft:respiration>,<enchantment:minecraft:aqua_affinity>];
 
 var map as IData = {};
 
 for ench in array {
-    map += ench.makeEnchantment(3).makeTag();
+    map += ench. akeEnchantment(3).makeTag();
 }
 
 print(map.asString());
