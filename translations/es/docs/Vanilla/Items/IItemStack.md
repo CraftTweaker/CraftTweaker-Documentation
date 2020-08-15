@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -57,40 +57,40 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
+| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Tipo                                                        |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
 | definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
+| nombre              |                     | cadena                                                      |
+| displayName         | displayName         | cadena                                                      |
 | maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
+| dureza              | dureza              | flotante                                                    |
 | damage              |                     | int                                                         |
 | maxDamage           | maxDamage           | int                                                         |
-| hasTag              |                     | bool                                                        |
+| hasTag              |                     | pluma                                                       |
 | tag                 | withTag(tag)        | [IData](/Vanilla/Data/IData/)                               |
 | ores                |                     | List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>    |
 | toolClasses         |                     | List<string\>                                              |
 | itemEnchantability  |                     | int                                                         |
 | containerItem       |                     | IItemStack                                                  |
-| hasContainerItem    |                     | bool                                                        |
+| hasContainerItem    |                     | pluma                                                       |
 | repairCost          | repairCost          | int                                                         |
-| canEditBlocks       |                     | bool                                                        |
-| isOnItemFrame       |                     | bool                                                        |
-| isEnchantable       |                     | bool                                                        |
-| isEnchanted         |                     | bool                                                        |
-| isDamaged           |                     | bool                                                        |
-| isDamageable        |                     | bool                                                        |
+| canEditBlocks       |                     | pluma                                                       |
+| isOnItemFrame       |                     | pluma                                                       |
+| isEnchantable       |                     | pluma                                                       |
+| isEnchanted         |                     | pluma                                                       |
+| isDamaged           |                     | pluma                                                       |
+| isDamageable        |                     | pluma                                                       |
 | isItemBlock         |                     | bool (if contained item is an itemblock)                    |
-| isStackable         |                     | bool                                                        |
-| isBeaconPayment     |                     | bool                                                        |
-| hasEffect           |                     | bool                                                        |
-| hasDisplayName      |                     | bool                                                        |
+| isStackable         |                     | pluma                                                       |
+| isBeaconPayment     |                     | pluma                                                       |
+| hasEffect           |                     | pluma                                                       |
+| hasDisplayName      |                     | pluma                                                       |
 | metadata            |                     | int                                                         |
-| hasSubtypes         |                     | bool                                                        |
-| isEmpty             |                     | bool                                                        |
+| hasSubtypes         |                     | pluma                                                       |
+| isEmpty             |                     | pluma                                                       |
 | burnTime            |                     | int                                                         |
-| showsDurabilityBar  |                     | bool                                                        |
-| hasCustomEntity     |                     | bool                                                        |
+| showsDurabilityBar  |                     | pluma                                                       |
+| hasCustomEntity     |                     | pluma                                                       |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
 
 #### Amount
@@ -110,7 +110,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
 | `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
-#### Damage
+#### Daño
 
 | Method call                                    | Returns                                    | ParameterTypes                             |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
@@ -124,7 +124,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | ------------------------------ | ------------------------------------------ | ----------------------------- |
 | `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
 | `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
+| `stack.removeTag(String name)` | A new IItemStack with the changed property | cadena                        |
 | `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
 
 #### Block Casting
@@ -142,7 +142,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
 | `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
 
-#### Enchantments
+#### Encantamientos
 
 | Method call                                                         | Returns        | ParameterTypes                                                          |
 | ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
@@ -171,7 +171,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## Ejemplos
 
 #### DisplayName
 
@@ -241,7 +241,7 @@ grass.hardness = 10.0;
 print(grass.hardness);
 ```
 
-#### Damage
+#### Daño
 
 The damage for items that cannot be damaged is 0.
 
