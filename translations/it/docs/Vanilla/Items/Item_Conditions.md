@@ -6,7 +6,7 @@ Sometimes we want to be able to specify recipes that only work when the input it
 
 Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemCondition;`
@@ -19,7 +19,7 @@ These will affect the items that you can use to craft the resulting item. Rememb
 <minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
 ```
 
-### Damage
+### Danno
 
 #### anyDamage
 
@@ -99,7 +99,7 @@ item.onlyWithTag(NBTTag);
 
 If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
 
-### Damage
+### Danno
 
 Your output item will have `value` damage points.  
 `Value` is an int.
