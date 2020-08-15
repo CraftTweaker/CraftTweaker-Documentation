@@ -1,46 +1,46 @@
-# Blueprint
+# Blaupause
 
-The Blueprint crafting package can be used to add/remove recipes to/from the Immersive Engineering Blueprint crafting.
+Das Blaupausenfertigungspaket kann verwendet werden, um Rezepte zu/von der Immersive Engineering Blaupause herzustellen oder zu entfernen.
 
 ## PSA
 
-The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quite special. For any string entered that doesn't already have an established Category, it'll create a new Category and thus a new Blueprint. This means that you could add a Blueprint Category called "Banana Pancakes" that provides "Food Recipes". After the first entry found it'll generate all additional recipes for that Category String under the generated Category.
+Der [Kategorie](/Mods/Immersive_Engineering/Variables/Categories/) String ist ganz besonders. Für jede eingegebene Zeichenkette, die noch keine etablierte Kategorie hat, wird eine neue Kategorie und damit eine neue Blaupause erstellt. Dies bedeutet, dass du eine Blaupausen-Kategorie mit dem Namen "Bananen Pfannkuchen" hinzufügen kannst, die "Nahrungsrezepte" bereitstellt. Nachdem der erste Eintrag gefunden wurde, wird er alle zusätzlichen Rezepte für diese Kategorie unter der generierten Kategorie generieren.
 
-## Calling The Package
+## Hinzufügen des Packages
 
-You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
+Du kannst das Blaupausenpaket mit `mods.immersiveengineering.Blueprint` aufrufen.
 
 ## Rezept hinzufügen
 
-| Benötigt | Type     | Datentyp                                                             |
-| -------- | -------- | -------------------------------------------------------------------- |
-| Benötigt | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
-| Benötigt | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
-| Benötigt | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
+| Benötigt | Type      | Datentyp                                                              |
+| -------- | --------- | --------------------------------------------------------------------- |
+| Benötigt | Kategorie | String [Kategorie](/Mods/Immersive_Engineering/Variables/Categories/) |
+| Benötigt | Ausgang   | [IItemstack](/Vanilla/Items/IItemStack/)                              |
+| Benötigt | Inputs    | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                   |
 
 ### Beispiel
 
 ```zenscript
-//Example:
+//Beispiel:
 mods.immersiveengineering.Blueprint.addRecipe(String category, IItemStack output, IIngredient[] inputs);
 
-//Using an existing Category String
-mods.immersiveengineering.Blueprint.addRecipe("components", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+//Mit einer bestehenden Kategorie String
+mods.immersiveengineering.Blueprint. ddRecipe("components", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 
-//Using a new Category String (This generates a new Blueprint item)
-mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
+//Benutze einen neuen Kategorie-String (dies erzeugt ein neues Blaupausenelement)
+Mods. mmersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diamond>, [<ore:logWood>, <minecraft:dirt>]);
 ```
 
-## Remove Recipe
+## Rezept entfernen
 
 | Type   | Datentyp                                 |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Beispiel:
 
 ```zenscript
-//Example:
+//Beispiel:
 mods.immersiveengineering.Blueprint.removeRecipe(IItemStack output);
 mods.immersiveengineering.Blueprint.removeRecipe(<minecraft:diamond>);
 ```
