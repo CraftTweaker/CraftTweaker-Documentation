@@ -1,6 +1,6 @@
-# Centrifuge
+# Zentrifuge
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.centrifuge`
 
 ## Rezepte hinzufügen
