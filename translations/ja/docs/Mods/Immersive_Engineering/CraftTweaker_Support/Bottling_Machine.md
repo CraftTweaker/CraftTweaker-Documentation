@@ -1,35 +1,35 @@
 # Bottling Machine
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
+`mods.immersiveengineering.BottlingMachine` を使ってBottlingMachineパッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+| 必須 | タイプ   | データタイプ                                              |
+| -- | ----- | --------------------------------------------------- |
+| 必須 | 出力    | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必須 | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須 | Fluid | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
-## Remove Recipe
+## レシピを削除
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| タイプ | データタイプ                                   |
+| --- | ---------------------------------------- |
+| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);
 ```
