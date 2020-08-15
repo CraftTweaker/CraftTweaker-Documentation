@@ -1,10 +1,10 @@
-# IExplosionEvent
+# IExplossion事件
 
-This interface is extended by all explosion events. That means you can use the getters below to access the position details.
+这个接口可以扩展到所有爆炸事件。 这意味着您可以使用下面的getter来访问位置详细信息。
 
 ## 导入类
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IExplosionEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.eventIExplossion事件；`
 
 ## ZenGetters
 
