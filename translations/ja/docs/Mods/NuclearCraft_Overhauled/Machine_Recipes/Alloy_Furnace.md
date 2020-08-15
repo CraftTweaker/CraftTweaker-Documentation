@@ -3,14 +3,14 @@
 ## Importing the Package
 `mods.nuclearcraft.AlloyFurnaceAlloyFurnace`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient itemInput2, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
 mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.AlloyFurnace.removeAllRecipes();AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.AlloyFurnace.removeAllRecipes();
