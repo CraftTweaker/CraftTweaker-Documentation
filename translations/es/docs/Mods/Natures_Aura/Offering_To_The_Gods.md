@@ -12,14 +12,14 @@ mods.naturesaura.OfferingOffering
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
 - **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
 
-## Addition
+## Adicional
 
 ```zenscript
-mods.naturesaura.mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
 ## Removal
 
 ```zenscript
-mods.naturesaura.mods.naturesaura.Offering.removeRecipe(IItemStack output)
+mods.naturesaura.AnimalSpawnermods.naturesaura.Offering.removeRecipe(IItemStack output)
 ```
