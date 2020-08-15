@@ -14,6 +14,6 @@ MinecartCollision Events implement the following interfaces and are able to call
 
 ## ZenGetters
 
-| ZenGetter  | Type                                  |
+| ZenGetter  | Tipo                                  |
 | ---------- | ------------------------------------- |
 | `collider` | [IEntity](/Vanilla/Entities/IEntity/) |
