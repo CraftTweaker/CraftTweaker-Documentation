@@ -2,7 +2,7 @@
 
 This interface is extended by all Events that can have a central living entity.
 
-## Importing the class
+## Importation de la classe
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ILivingEvent;`
@@ -13,6 +13,6 @@ This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), whi
 
 ## ZenGetters
 
-| name             | type                                                      |
+| Nom              | Type de type                                              |
 | ---------------- | --------------------------------------------------------- |
 | entityLivingBase | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
