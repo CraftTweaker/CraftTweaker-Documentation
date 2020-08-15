@@ -1,20 +1,20 @@
-# Custom Types
+# Eigene Typen
 
-Custom Types are a new powerful way for you to create your own *custom* things to stage. Essentially what this allows you to do is, say for example stage an Event from Minecraft or Stage a list of Blocks to prevent a player from interacting or breaking. Using the [Events](/Vanilla/Events/IEventManager/) CraftTweaker provides. This gives you the ability to lock more things down. Creating a complete custom experience in the game without the need for additional mods. As all you need is ZenStages and CraftTweaker sounds pretty cool, huh?
+Benutzerdefinierte Typen sind eine neue mächtige Möglichkeit für Sie, Ihre eigenen *benutzerdefinierten* Dinge auf der Bühne zu erstellen. Im Wesentlichen ist das, was Sie damit tun können, sag zum Beispiel ein Event von Minecraft oder Stufe eine Liste von Blöcken, um zu verhindern, dass ein Spieler interagiert oder zerbricht. Mit [Events](/Vanilla/Events/IEventManager/) CraftTweaker wird bereitgestellt. Dies gibt dir die Möglichkeit, mehr Dinge zu sperren. Erstellen Sie ein komplettes Benutzererlebnis im Spiel ohne zusätzliche Mods zu benötigen. Wie alles, was du brauchst, ist ZenStages und CraftTweaker klingt ziemlich cool, huh?
 
-This is a still a fairly new system and *may* have some bugs. If you notice any please report them to [Our Repo](https://github.com/DarkPacks/ZenStages/issues) so we can look into it!
+This is a still a fairly new system and *may* have some bugs. Wenn du irgendetwas bemerkst, melde sie bitte an [unser Repo](https://github.com/DarkPacks/ZenStages/issues) , damit wir es sehen können!
 
-Note: This is a complete custom type nothing will check against this internally. You'll need to create and listen to the [Events](/Vanilla/Events/IEventManager/) to then call the provided methods in [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) to perform the checks. So the *slug/name* name you use for the type you'll need to note down somewhere so you know what does what.
+Hinweis: Dies ist ein vollständiger benutzerdefinierter Typ, nichts wird gegen diese intern überprüfen. Sie müssen die [Events](/Vanilla/Events/IEventManager/) erstellen und hören, um die angegebenen Methoden in [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) aufzurufen, um die Prüfungen durchzuführen. Also der *Slug/Name* Name, den Sie für den Typ verwenden, den Sie irgendwo notieren müssen, damit Sie wissen, was was macht.
 
 Note: It is also a recomended standard that you use unique names for **all** your Custom Types.
 
 ## Dieses Paket importieren
 
-`import mods.zenstages.type.CustomStageType;`
+`importiere mods.zenstages.type.CustomStageType;`
 
-## How to create them
+## Wie man sie erstellt
 
-Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) using the following method.
+Benutzerdefinierte Typen werden über [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) mit der folgenden Methode erstellt.
 
 ```zenscript
 // initCustomType(string name, string value);
@@ -23,20 +23,20 @@ Custom Types are created via [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) 
 // initCustomType(string name, int[] values);
 // initCustomType(string name, IIngredient value);
 // initCustomType(string name, IIngredient[] values);
-var MyCustomType as CustomStageType = ZenStager.initCustomType("blockBreak", [<minecraft:stone>]);
+var MyCustomType as CustomStageType = ZenStager. nitCustomType("blockBreak", [<minecraft:stone>]);
 ZenStager.initCustomType("disallowedDimension", 14);
 ```
 
-Once you have created the Custom Type you can now assign that Type to a [Stage](/Mods/GameStages/ZenStages/Stage/). By calling the following.
+Sobald Sie den benutzerdefinierten Typ erstellt haben, können Sie diesen Typ nun einer [Stufe](/Mods/GameStages/ZenStages/Stage/) zuweisen. Indem Sie Folgendes anrufen.
 
 ```zenscript
 // setStage(Stage stage);
 MyCustomType.setStage(TestStage);
 ```
 
-## How to perform a check to a Custom Type
+## Wie man einen Scheck an einen benutzerdefinierten Typ durchführt
 
-This method requires that you have set a stage to a type. Using the above method. Otherwise it returns null.
+Diese Methode erfordert, dass Sie eine Stufe auf einen Typ gesetzt haben. Verwenden Sie die obige Methode. Andernfalls gibt es Null zurück.
 
 ```zenscript
 // getCustomStage(string name, string value);
@@ -45,7 +45,7 @@ This method requires that you have set a stage to a type. Using the above method
 ZenStager.getCustomStage("blockBreak", [<minecraft:stone>]);
 ```
 
-This method does not require a Custom Type to be *Staged* to a stage.
+Für diese Methode ist kein benutzerdefinierter Typ *Stage* erforderlich.
 
 ```zenscript
 // getCustomType(String name);
