@@ -1,6 +1,6 @@
-# Mill
+# 磨机
 
-## Addition
+## 加
 
 ```zenscript
 import mods.cuisine.Mill;
@@ -11,7 +11,7 @@ Mill.add(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
 Mill.add(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 import mods.cuisine.Mill;
