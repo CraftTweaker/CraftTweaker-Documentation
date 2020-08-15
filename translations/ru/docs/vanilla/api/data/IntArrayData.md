@@ -97,7 +97,7 @@ Removes every element in the list
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 [4, 128, 256, 1024].contains(data as crafttweaker.api.data.IData);
@@ -176,9 +176,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 128, 256, 1024].remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Параметр | Тип | Описание            |
+| -------- | --- | ------------------- |
+| index    | int | The index (0-based) |
 
 
 ### set
@@ -192,10 +192,10 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 128, 256, 1024].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Параметр | Тип                                                    | Описание                   |
+| -------- | ------------------------------------------------------ | -------------------------- |
+| index    | int                                                    | The index to set (0-based) |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
