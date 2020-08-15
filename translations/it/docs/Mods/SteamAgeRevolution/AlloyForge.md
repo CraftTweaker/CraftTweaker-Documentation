@@ -2,16 +2,16 @@
 
 The Alloy Forge is a machine that converts two input fluids into one output fluid.
 
-## Package
+## Pacchetto
 `mods.steamagerevolution.AlloyForge`
 
-## Methods
+## Metodi
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
 - **int craftTime** Crafting time for machine to process
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.addRecipe(ILiquidStack input, ILiquidStack input, ILiquidStack output, int craftTime);
@@ -19,7 +19,7 @@ mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*1
 ```
 
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
