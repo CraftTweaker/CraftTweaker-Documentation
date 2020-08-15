@@ -1,6 +1,6 @@
 # Basic Calculator
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.basic;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.basic;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Сложение
 ```zenscript
 basic.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 basic.removeRecipe(IIngredient output);
 ```
