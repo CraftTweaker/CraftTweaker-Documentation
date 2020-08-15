@@ -1,6 +1,6 @@
 # Slice 'n' Splice
 
-## Package
+## Paket
 
 `import mods.enderio.SliceNSplice;`
 
@@ -24,7 +24,7 @@ mods.enderio.SliceNSplice.
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.enderio.SliceNSplice.removeRecipe(IItemStack output);
