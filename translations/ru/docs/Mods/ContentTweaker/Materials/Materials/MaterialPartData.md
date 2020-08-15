@@ -1,19 +1,19 @@
-# MaterialPartData
+# Материалы части данных
 
-Material Part Data is data that can be added to a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) to give it some more properties.
+Материальные данные - это данные, которые могут быть добавлены в [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) , чтобы дать им больше свойств.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialPartData;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.MaterialPartData;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-You can get a MaterialPartData object by using the `getData()` Method on a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object.
+Вы можете получить объект MaterialPartData используя метод `getData()` на объекте [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/).
 
-## Methods
+## Методы
 
-All you can do with MaterialPartData is add more Data and retrieve stored data! You do that like so:
+Все что вы можете сделать с MaterialPartData - добавить больше данных и получить сохраненные данные! Вы делаете это так:
 
 ```zenscript
 MPD.addDataValue(String name, String value);
@@ -21,149 +21,149 @@ MPD.getIntValue(String name, int defaultValue);
 MPD.getStringValue(String name, String defaultValue);
 ```
 
-Now, what to put in as name or value?  
-Well, that depends on the parttype of the tool you are using.  
-Below you will find a list for CoT's basic Part Types:
+Теперь, что поместить как имя или значение?  
+Ну, это зависит от типа компонента используемого инструмента.  
+Ниже вы найдете список основных типов частей:
 
-<details><summary>Items</summary> 
+<details><summary>Предметы</summary> 
 
 <table>
   <th>
-    Name
+    Название
   </th>
   
   <th>
-    Value
+    Параметры
   </th>
   
   <th>
-    Required?
+    Обязательно?
   </th></tr> 
   
   <tr>
     <td>
-      burn
+      ожог
     </td>
     
     <td>
-      An "Integer" (e.g. "100")
+      "Целое число" (например "100")
     </td>
     
     <td>
-      No
+      Нет
     </td>
   </tr>
 </table></details>
 
-<details><summary>Armor</summary> 
+<details><summary>Броня</summary> 
 
 <table>
   <th>
-    Name
+    Название
   </th>
   
   <th>
-    Value
+    Параметры
   </th>
   
   <th>
-    Required?
+    Обязательно?
   </th></tr> 
   
   <tr>
     <td>
-      durability
+      прочность
     </td>
     
     <td>
-      An "Integer" (e.g. "10")
+      "Целое число" (например "10")
     </td>
     
     <td>
-      No
+      Нет
     </td>
   </tr>
   
   <tr>
     <td>
-      enchantability
+      чарнируемость
     </td>
     
     <td>
-      An "Integer" (e.g. "10")
+      "Целое число" (например "10")
     </td>
     
     <td>
-      No
+      Нет
     </td>
   </tr>
   
   <tr>
     <td>
-      reduction
+      сокращение
     </td>
     
     <td>
-      Four "Integers" (e.g. "2, 5, 6, 2") <br />Representing Footwear, Leggins, Chestplate, Headslot
+      Четыре "Целые числа" (например "2, 5, 6, 2") <br />Представление обуви, ногтей, нагрудников, головы
     </td>
     
     <td>
-      No
+      Нет
     </td>
   </tr>
   
   <tr>
     <td>
-      toughness
+      выносливость
     </td>
     
     <td>
-      A "float" (e.g. "2.4")
+      "float" (например "2.4")
     </td>
     
     <td>
-      No
+      Нет
     </td>
   </tr>
 </table></details>
 
-<details><summary>Block</summary> 
+<details><summary>Блок</summary> 
 
-| Name         | Value                     | Required? |
-| ------------ | ------------------------- | --------- |
-| hardness     | An "Integer" (e.g. "3")   | No        |
-| resistance   | An "Integer" (e.g. "15")  | No        |
-| harvestLevel | An "Integer" (e.g. "1")   | No        |
-| harvestTool  | A "tool" (e.g. "pickaxe") | No        |</details>
+| Название             | Параметры                        | Обязательно? |
+| -------------------- | -------------------------------- | ------------ |
+| твердость            | "Integer" (например "3")         | Нет          |
+| сопротивление        | "Integer" (например "15")        | Нет          |
+| Уровень сбора урожая | "Целое число" (например "1")     | Нет          |
+| собрать урожай       | "Инструмент" (например, "кирка") | Нет          |</details>
 
-<details><summary>Fluid</summary> 
+<details><summary>Жидкость</summary> 
 
-| Name        | Value                      | Required? |
-| ----------- | -------------------------- | --------- |
-| temperature | An "Integer" (e.g. "300")  | No        |
-| density     | An "Integer" (e.g. "1000") | No        |
-| luminosity  | An "Integer" (e.g. "0")    | No        |
-| viscosity   | An "Integer" (e.g. "100")  | No        |
-| vaporize    | A "boolean" (e.g. "true")  | No        |</details>
+| Название    | Параметры                       | Обязательно? |
+| ----------- | ------------------------------- | ------------ |
+| температура | "Integer" (например "300")      | Нет          |
+| плотность   | "Целое число" (например "1000") | Нет          |
+| яркость     | "Целое число" (например "0")    | Нет          |
+| вязкость    | "Целое число" (например "100")  | Нет          |
+| испарение   | A "boolean" (e.g. "true")       | Нет          |</details>
 
-<details><summary>Ore</summary> 
+<details><summary>Руда</summary> 
 
-| Name         | Value                                                          | Required? |
-| ------------ | -------------------------------------------------------------- | --------- |
-| drops        | An "itemList" (e.g. "minecraft:redstone,minecraft:gold_ingot") | No        |
-| variants     | A "Block List" (e.g. "minecraft:stone,minecraft:end_stone")    | No        |
-| hardness     | An "Integer list" (e.g. "3,3")                                 | No        |
-| resistance   | An "Integer list" (e.g. "15,15")                               | No        |
-| harvestLevel | An "Integer list" (e.g. "1,1")                                 | No        |
-| harvestTool  | A "toolList" (e.g. "pickaxe,pickaxe")                          | No        |</details>
+| Название             | Параметры                                                        | Обязательно? |
+| -------------------- | ---------------------------------------------------------------- | ------------ |
+| капли                | "itemList" (например "minecraft:redstone,minecraft:gold_ingot")  | Нет          |
+| варианты             | "Список блоков" (например "minecraft:stone,minecraft:end_stone") | Нет          |
+| твердость            | "Целочисленный список" (например, "3,3")                         | Нет          |
+| сопротивление        | "Целочисленный список" (например, "15,15")                       | Нет          |
+| Уровень сбора урожая | "Целочисленный список" (например, "1,1")                         | Нет          |
+| собрать урожай       | "Список инструментов" (например, "кирка", кирка")                | Нет          |</details>
 
 <details><summary>Minecart</summary> 
 
-| Name       | Value                  | Required? |
-| ---------- | ---------------------- | --------- |
-| maxSpeed   | A "float" (e.g. "1.0") | No        |
-| drag       | A "float" (e.g. "1.0") | No        |
-| riddenDrag | A "float" (e.g. "1.0") | No        |</details>
+| Название       | Параметры                | Обязательно? |
+| -------------- | ------------------------ | ------------ |
+| Макс. Скорость | "float" (например "1.0") | Нет          |
+| перетащить     | "float" (например "1.0") | Нет          |
+| riddenDrag     | "float" (например "1.0") | Нет          |</details>
 
 ## Пример
 
@@ -171,12 +171,12 @@ Below you will find a list for CoT's basic Part Types:
 import mods.contenttweaker.MaterialSystem;
 
 val oreData = MaterialSystem.getMaterialBuilder().setName("Lawrencium").setColor(15426660).build().registerPart("ore").getData();
-oreData.addDataValue("drops", "minecraft:redstone,minecraft:gold_ingot");
-oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone");
-oreData.addDataValue("hardness", "3,3");
-oreData.addDataValue("resistance", "15,15");
-oreData.addDataValue("harvestLevel", "1,1");
-oreData.addDataValue("harvestTool", "pickaxe,shovel");
+oreDataValue("drops", "minecraft:redstone,minecraft:gold_ingot");
+oreDataValue("variants", "minecraft:stone");
+oreData. ddDataValue("жесткость", "3,3");
+oreDataValue("сопротивление", "15,15");
+oreDataValue("Уровень сбора", "1,1");
+oreData.addDataValue("сборочный инструмента", "pickaxe,shovel");
 
 oreData.addDataValue("test", 1);
 print(oreData.getIntValue("test", -1));
