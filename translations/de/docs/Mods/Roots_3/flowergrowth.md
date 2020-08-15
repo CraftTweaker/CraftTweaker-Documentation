@@ -1,10 +1,10 @@
-### Class
+### Klasse
 
 ```zenscript
 import mods.roots.FlowerGrowth;
 ```
 
-#### Methods
+#### Methoden
 
 ```zenscript
 void removeRecipe(
@@ -33,7 +33,7 @@ void addRecipeBlock(
 
 * * *
 
-### Examples
+### Beispiele
 
 ```zenscript
 import mods.roots.FlowerGrowth;
@@ -48,6 +48,6 @@ FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:fl
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
-### Notes
+### Notizen
 
 Currently untested with double-tall flowers.
