@@ -2,10 +2,10 @@
 
 The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.block.BlockBuilder
 ```
@@ -21,13 +21,13 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Parameter | Type                                                                                 | Description                       | IsOptional | Default Value                |
+| Parámetro | Tipo                                                                                 | Descripción                       | IsOptional | Valor por defecto            |
 | --------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| material  | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
+| material  | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | verdad     | `<blockmaterial:iron>` |
 
 
 
-## Methods
+## Métodos
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -37,9 +37,9 @@ myBlockBuilder.build(resourceLocation as String);
 myBlockBuilder.build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
+| Parámetro        | Tipo   | Descripción                          |
 | ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| resourceLocation | Cadena | The resource path to give this block |
 
 
 ### withHardnessAndResistance
@@ -55,9 +55,9 @@ myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| Parameter             | Type  | Description                                       |
-| --------------------- | ----- | ------------------------------------------------- |
-| hardnessAndResistance | float | The value to set for hardness and for resistance. |
+| Parámetro             | Tipo     | Descripción                                       |
+| --------------------- | -------- | ------------------------------------------------- |
+| hardnessAndResistance | flotante | The value to set for hardness and for resistance. |
 
 
 
@@ -72,10 +72,10 @@ myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as fl
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
 
-| Parameter    | Type  | Description                      |
-| ------------ | ----- | -------------------------------- |
-| hardnessIn   | float | The value to set for hardness    |
-| resistanceIn | float | The value to set for resistance. |
+| Parámetro    | Tipo     | Descripción                      |
+| ------------ | -------- | -------------------------------- |
+| hardnessIn   | flotante | The value to set for hardness    |
+| resistanceIn | flotante | The value to set for resistance. |
 
 
 ### withHarvestLevel
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Parameter    | Type | Description                |
-| ------------ | ---- | -------------------------- |
-| harvestLevel | int  | The harvest level requried |
+| Parámetro        | Tipo | Descripción                |
+| ---------------- | ---- | -------------------------- |
+| nivel de cosecha | int  | The harvest level requried |
 
 
 ### withHarvestTool
@@ -109,9 +109,9 @@ myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolTyp
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| Parameter   | Type                                                                            | Description   |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| Parámetro            | Tipo                                                                            | Descripción   |
+| -------------------- | ------------------------------------------------------------------------------- | ------------- |
+| cosechar herramienta | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
 
 ### withItemGroup
@@ -127,7 +127,7 @@ myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| Parameter | Type                                                                              | Description      |
+| Parámetro | Tipo                                                                              | Descripción      |
 | --------- | --------------------------------------------------------------------------------- | ---------------- |
 | group     | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
@@ -145,7 +145,7 @@ myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| Parameter    | Type | Description            |
+| Parámetro    | Tipo | Descripción            |
 | ------------ | ---- | ---------------------- |
 | lightValueIn | int  | The light level to set |
 
@@ -163,7 +163,7 @@ myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| Parameter | Type                                                          | Description                                  |
+| Parámetro | Tipo                                                          | Descripción                                  |
 | --------- | ------------------------------------------------------------- | -------------------------------------------- |
 | blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parameter | Type | Description      |
+| Parámetro | Tipo | Descripción      |
 | --------- | ---- | ---------------- |
-| size      | int  | The size to set. |
+| tamaño    | int  | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| Parameter | Type   | Description |
+| Parámetro | Tipo   | Descripción |
 | --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| rareza    | Cadena | The rarity  |
 
 
 ### withSlipperiness
@@ -217,9 +217,9 @@ myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parameter      | Type  | Description      |
-| -------------- | ----- | ---------------- |
-| slipperinessIn | float | The value to set |
+| Parámetro      | Tipo     | Descripción      |
+| -------------- | -------- | ---------------- |
+| slipperinessIn | flotante | The value to set |
 
 
 ### withType
