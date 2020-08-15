@@ -1,13 +1,13 @@
-# IResourceLocationSupplier
+# Proveedor de ubicación de recursos
 
-The IResourceLocationSupplier function can be used to provide the [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) to be used for whatever.
+La función IResourceLocationSupplier se puede utilizar para proporcionar la [ubicación de recursos](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) que se utilizará para lo que sea.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IResourceLocationSupplier;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.IResourceLocationSupplier;`
 
-## Parameters
+## Parámetros
 
-The IResourceLocationSupplier Function is a function with no parameters.  
-The function needs to return an [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/).
+La función IResourceLocationSupplier es una función sin parámetros.  
+La función necesita devolver una [Ubicación de recurso](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/).
