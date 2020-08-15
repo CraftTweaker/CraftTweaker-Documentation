@@ -1,6 +1,6 @@
-# Supercooler
+# Superkühler
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.supercooler`
 
 ## Rezepte hinzufügen
