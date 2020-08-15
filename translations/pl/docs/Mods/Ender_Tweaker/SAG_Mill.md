@@ -1,10 +1,10 @@
 # SAG Mill
 
-## Package
+## Pakiet
 
 `import mods.enderio.SagMill;`
 
-## Methods
+## Metody
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
 - **float[] chances** The chance that this item appears. Must have the same length as output.
@@ -13,7 +13,7 @@
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 - **float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp);
@@ -21,7 +21,7 @@ mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);
