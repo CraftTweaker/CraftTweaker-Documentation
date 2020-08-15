@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.Separator`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
 mods.nuclearcraft.Separator.addRecipe(IIngredient itemInput, IIngredient itemOutput1, IIngredient itemOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.Separator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Separator.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2);
