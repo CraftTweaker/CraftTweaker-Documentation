@@ -2,7 +2,7 @@
 
 The RuneAltar package is used for adding or removing recipes to/from the Botania Rune Altar.
 
-## Calling
+## Appel en cours
 
 You can call the RuneAltar package using `mods.botania.RuneAltar`
 
@@ -10,7 +10,7 @@ You can call the RuneAltar package using `mods.botania.RuneAltar`
 
 You can find all registered Rune Altar recipes using [`/ct botania altar`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Ajout de recette
 
 ```zenscript
 //mods.botania.RuneAltar.addRecipe(IItemStack output, IIngredient[] input, int mana);
