@@ -1,16 +1,16 @@
 # IFacing
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+L'Interfaccia IFacing ti permette di ottenere le direzioni di [IBlockPos's](/Vanilla/World/IBlockPos/) possibili.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import crafttweaker.world.IFacing;`
 
 ## Enumerazioni
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+Il fronte Interface ha 7 Metodi statici, ciascuno che restituisce la suddetta direzione.  
+L'ultimo prende la direzione come input String (es. `"NORTH"`)
 
 ```zenscript
 crafttweaker.world.Facing.north()
@@ -30,19 +30,19 @@ crafttweaker.world.Facing.fromString(String name);
 | --------- | ---------- | ------------ |
 | nome      | getName()  | stringa      |
 | rotateY   | rotateY()  | IFacing      |
-| opposite  | opposite() | IFacing      |
+| opposto   | opposito() | IFacing      |
 
-## Other methods
+## Altri metodi
 
-### Comparing two Facings
+### Confronto tra due facce
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+Puoi confrontare due facce usando lo standart che confronta gli Operatori `== ! < > <= >=`  
+In alternativa, è possibile utilizzare la funzione, anche se la funzione restituisce un int che è 0 se sono uguali.
 
 ```zenscript
-//Returns true or false
+//Restituisce true o false
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+//Restituisce 0 se sono uguali
 facingOne.compare(facingTwo);
 ```
