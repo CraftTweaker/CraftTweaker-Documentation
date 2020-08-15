@@ -1,11 +1,11 @@
-# Steam Turbine
+# Turbina parowa
 
-## Importing the Package
+## Importowanie pakietu
 `mods.nuclearcraft.turbine`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
+mods.nuclearcraft.turbine.addRecipe([fluidInput, liquididOutput, double powerPerMB, double expansionLevel]);
 ```
 
 ## Usuwanie przepisów
