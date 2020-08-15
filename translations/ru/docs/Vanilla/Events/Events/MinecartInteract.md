@@ -19,5 +19,5 @@ MinecartInteract Events implement the following interfaces and are able to call 
 | ZenGetter | Тип                                      |
 | --------- | ---------------------------------------- |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`    | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | String                                   |
+| `элемент` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `рука`    | String                                   |
