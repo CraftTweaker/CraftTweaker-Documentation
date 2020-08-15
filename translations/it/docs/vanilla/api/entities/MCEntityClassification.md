@@ -1,24 +1,24 @@
 # MCEntityClassification
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.entity.MCEntityClassification
 ```
 
-## Implemented Interfaces
-MCEntityClassification implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+MCEntityClassification implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Proprietà
 
-| Name              | Type    | Has Getter | Has Setter |
-| ----------------- | ------- | ---------- | ---------- |
-| commandString     | String  | true       | false      |
-| isAnimal          | boolean | true       | false      |
-| isPeaceful        | boolean | true       | false      |
-| maxNumberOfEntity | int     | true       | false      |
-| name              | String  | true       | false      |
+| Nome              | Tipo    | Ha Getter | Ha Setter |
+| ----------------- | ------- | --------- | --------- |
+| commandString     | Stringa | vero      | falso     |
+| isAnimal          | boolean | vero      | falso     |
+| isPeaceful        | boolean | vero      | falso     |
+| maxNumberOfEntity | int     | vero      | falso     |
+| nome              | Stringa | vero      | falso     |
 
