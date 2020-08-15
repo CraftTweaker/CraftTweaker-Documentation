@@ -1,25 +1,25 @@
-# Blood Altar
+# Krwawy Ołtarz
 
-## Package
+## Pakiet
 
-`mods.bloodmagic.BloodAltar`
+`[PLACEHOLDER] mods.blood magic.BloodAltar`
 
-## Addition
+## Dodanie
 
-This creates a blood altar recipe that uses the given `input` item and produces the given `output` item.  
-To get the `minimumTier`, substract 1 from what JEI/the sigil tells you, so a T1 altar would require `0`.  
-The `syphon` value is the amount of Life Essence to syphon from the Blood Altar over the course of the craft.  
-The `consumeRate` is how quickly the Life Essence is syphoned.  
-The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
+Tworzy to przepis na ołtarz krwi, który używa podanego `wejścia` elementu i wytwarza określony `element na wyjściu` .  
+Aby uzyskać `minimalny poziom`, substrat 1 z tego, co JEI/pieczęć ci mówi, więc ołtarz T1 wymagałby `0`.  
+Wartość `syfonu` to ilość Esencji Życia do syfonu z Ołtarza Krwi w trakcie rzemiosła.  
+KonsumeRate `` to szybkość syfonowania Life Essence.  
+Przepływ `` to szybki postęp stracony w przypadku wyczerpania się Ołtarza Życia podczas rzemieślnictwa.
 
 ```zenscript
-//mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
-mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
+//mods.bloodmagic.BloodAltar.addRecipe(wyjście IItemStack, wejście IItemStack, minimumTier, int syphon, int consumeRate, odwodnienie od cieczy);
+mods.blood magic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 30,40);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-//mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
+//mods.bloodmagic.BloodAltar.removeRecipe(wejście IItemStack);
 mods.bloodmagic.BloodAltar.removeRecipe(<minecraft:stone>);
 ```
