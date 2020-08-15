@@ -1,21 +1,21 @@
 # SleepingTimeCheck
 
-This event is fired when checking if a sleeping player can continue to sleep at a specified time. If has a **result** which determines the action.
+Questo evento è sparato quando si controlla se un giocatore in sonno può continuare a dormire in un momento specificato. Se ha un **risultato** che determina l'azione.
 
-Result:
-- **Default**, causes the Vanilla logic of `World::isDaytime` to be consulted.
-- **Allow**, allows the player to continue sleeping regardless
-- **Deny** is specifically ***ignored*** in this instance and does nothing.
+Risultato:
+- **Predefinito**, fa sì che la logica Vanilla di `World::isDaytime` venga consultata.
+- **Consenti**, permette al giocatore di continuare a dormire indipendentemente
+- **Nega** è specificatamente ***ignorato*** in questa istanza e non fa nulla.
 
-Thus, this event allows you to keep the player sleeping, but it does not allow you to specifically stop them from sleeping.
+Così, questo evento ti permette di mantenere il giocatore che dorme, ma non ti permette di fermarli specificamente dal dormire.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.SleepingTimeCheck`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. leepingTimeCheck`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-SleepingTimeCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+SleepingTimeCheck Eventi implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
