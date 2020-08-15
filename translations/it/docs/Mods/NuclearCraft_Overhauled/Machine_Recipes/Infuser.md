@@ -1,6 +1,6 @@
 # Infuser
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.Infuser`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInp
 ```zenscript
 mods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Infuser.removeAllRecipes();
+mods.nuclearcraft.Infuser.removeAllRicette();
 ```
