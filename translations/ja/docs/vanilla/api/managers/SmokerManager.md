@@ -10,120 +10,120 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.SmokerManager
 ```
 
-## Implemented Interfaces
-SmokerManager implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
+## 実装されたインターフェース
+SmokerManager は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [crafttweaker.api.registrries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## メソッド
 ### addJSONRecipe
 
-Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+提供されたIDataに基づいてレシピを追加します。 提供されたIDataはDataPack JSONを表し、IRecipeTypeシステムをサポートするDataPackのレシピを効果的に登録することができます。
 
 ```zenscript
 smoker.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-smoker.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+smoker.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| パラメータ | タイプ                                                    | 説明                              |
-| ----- | ------------------------------------------------------ | ------------------------------- |
-| name  | 文字列型                                                   | name of the recipe              |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| パラメータ | タイプ                                                    | 説明             |
+| ----- | ------------------------------------------------------ | -------------- |
+| name  | 文字列型                                                   | レシピの名前         |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | jsonファイルを表すデータ |
 
 
 ### addRecipe
 
-Adds a recipe based on given params.
+与えられたパラメータに基づいてレシピを追加します。
 
 ```zenscript
 smoker.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0);
 ```
 
-| パラメータ    | タイプ                                                                 | 説明                              |
-| -------- | ------------------------------------------------------------------- | ------------------------------- |
-| 名前       | 文字列型                                                                | Name of the new recipe          |
-| 出力       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp       | float型                                                              | how much xp the player gets     |
-| cookTime | int                                                                 | how long it takes to cook       |
+| パラメータ | タイプ                                                                | 説明                 |
+| ----- | ------------------------------------------------------------------ | ------------------ |
+| 名前    | 文字列型                                                               | 新しいレシピの名前          |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | レシピの IItemStack 出力 |
+| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | レシピの原料入力           |
+| xp    | float型                                                             | プレーヤーがどれだけXPを取得するか |
+| 調理時間  | int                                                                | 調理にどれだけ時間がかかるか     |
 
 
 ### すべて削除
 
-Remove all recipes in this registry
+このレジストリ内のすべてのレシピを削除
 
 ```zenscript
 smoker.removeAll();
 ```
 
-### removeByModid
+### removeByModo
 
-Remove recipe based on Registry name modid
+レジストリ名modidに基づいてレシピを削除
 
 ```zenscript
 smoker.removeByModid(modid as String);
 smoker.removeByModid("minecraft");
 ```
 
-| パラメータ | タイプ  | 説明                             |
-| ----- | ---- | ------------------------------ |
-| modid | 文字列型 | modid of the recipes to remove |
+| パラメータ | タイプ  | 説明              |
+| ----- | ---- | --------------- |
+| modid | 文字列型 | 取り除くべきレシピの<unk> |
 
 
 ### removeByName
 
-Remove recipe based on Registry name
+レジストリ名に基づいてレシピを削除
 
 ```zenscript
 smoker.removeByName(name as String);
 smoker.removeByName("minecraft:furnace");
 ```
 
-| パラメータ | タイプ  | 説明                                |
-| ----- | ---- | --------------------------------- |
-| 名前    | 文字列型 | registry name of recipe to remove |
+| パラメータ | タイプ  | 説明             |
+| ----- | ---- | -------------- |
+| 名前    | 文字列型 | 削除するレシピのレジストリ名 |
 
 
 ### removeByRegex
 
-Remove recipe based on regex
+正規表現に基づいてレシピを削除
 
 ```zenscript
 smoker.removeByRegex(regex as String);
 smoker.removeByRegex("\\d_\\d");
 ```
 
-| パラメータ | タイプ  | 説明                     |
-| ----- | ---- | ---------------------- |
-| regex | 文字列型 | regex to match against |
+| パラメータ | タイプ  | 説明        |
+| ----- | ---- | --------- |
+| Regex | 文字列型 | 正規表現と一致する |
 
 
-### removeRecipe
+### RemoveRecipe
 
-Remove a recipe based on it's output.
+出力に基づいてレシピを削除します。
 
 ```zenscript
 smoker.removeRecipe(output as crafttweaker.api.item.IItemStack);
 smoker.removeRecipe(<item:minecraft:glass>);
 ```
 
-| パラメータ | タイプ                                                               | 説明                   |
-| ----- | ----------------------------------------------------------------- | -------------------- |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| パラメータ | タイプ                                                               | 説明     |
+| ----- | ----------------------------------------------------------------- | ------ |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | レシピの出力 |
 
 
 
-Removes a recipe based on it's output and input.
+出力と入力に基づいてレシピを削除します。
 
 ```zenscript
 smoker.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 smoker.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| パラメータ | タイプ                                                                 | 説明                                   |
-| ----- | ------------------------------------------------------------------- | ------------------------------------ |
-| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| パラメータ | タイプ                                                                | 説明                 |
+| ----- | ------------------------------------------------------------------ | ------------------ |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | IItemStack レシピの出力。 |
+| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 削除するレシピの成分.        |
 
 
 
