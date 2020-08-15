@@ -1,6 +1,6 @@
 # Decay Generator
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.DecayGeneratorDecayGenerator`
 
 ## レシピを追加中
@@ -10,7 +10,7 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.DecayGenerator.addRecipe(IIngredi
 
 ## レシピを削除
 ```zenscript
-mods.nuclearcraft.SupercoolerDecayGenerator.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.SupercoolerDecayGenerator.removeRecipeWithInput(IInput));
 mods.nuclearcraft.mods.nuclearcraft.DecayGenerator.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.DecayGenerator.removeRecipeWithOutput(IIngredient blockOutput);
 mods.nuclearcraft.DecayGenerator.removeAllRecipes();DecayGenerator.removeAllRecipes();
