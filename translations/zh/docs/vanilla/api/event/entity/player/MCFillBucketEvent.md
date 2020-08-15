@@ -1,14 +1,14 @@
 # MCFillBucketEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.event.entity.player.MCFillBucketEvent
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
 new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCFillBucketEvent>);
 ```
@@ -18,7 +18,7 @@ new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.C
 
 
 
-## Methods
+## 方法
 ### getEmptyBucket
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
@@ -57,7 +57,7 @@ myMCFillBucketEvent.getPlayer();
 
 Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCFillBucketEvent.hasResult();
@@ -69,7 +69,7 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCFillBucketEvent.isCancelable();
@@ -79,7 +79,7 @@ myMCFillBucketEvent.isCancelable();
 
 Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCFillBucketEvent.isCanceled();
@@ -91,9 +91,9 @@ myMCFillBucketEvent.isCanceled();
 myMCFillBucketEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | 类型      | 说明                      |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| 参数     | 类型      | 说明                      |
+| ------ | ------- | ----------------------- |
+| cancel | boolean | No description provided |
 
 
 ### setFilledBucket
@@ -102,9 +102,9 @@ myMCFillBucketEvent.setCanceled(cancel as boolean);
 myMCFillBucketEvent.setFilledBucket(arg0 as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| arg0 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 
