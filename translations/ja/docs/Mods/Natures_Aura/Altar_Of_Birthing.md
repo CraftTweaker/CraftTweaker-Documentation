@@ -1,4 +1,4 @@
-# Altar of Birthing
+# 出産の祭壇（つろ）
 
 ## パッケージ
 ```zenscript
@@ -6,11 +6,11 @@ mods.naturesaura.AnimalSpawnerAnimalSpawner
 ```
 
 ## メソッド
-- **String Name**
-- **String Entity** Name of the entitiy to spawn
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
-- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredients** The inputs
+- **文字列名**
+- **文字列エンティティ** スポーンするエンティティの名前
+- **int aura** レシピの完成に必要なオーラの量
+- **int time** プロセスに要するティック数
+- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) 材料** 入力
 
 ## 加算
 
