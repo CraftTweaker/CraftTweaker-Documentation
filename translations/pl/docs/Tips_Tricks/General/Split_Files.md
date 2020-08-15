@@ -1,24 +1,24 @@
-# Split your scripts into multiple files
+# Podziel swoje skrypty na wiele plików
 
-It is a good idea to split your script into multiple files
+Dobrym pomysłem jest podzielenie skryptu na wiele plików
 
 ## Problem
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- Podczas pisania skryptów dla większych paczek modów, twój skrypt może wkrótce stać się dość długi i mylący.
+- Debugowanie długiego skryptu może trwać naprawdę dłużej, zwłaszcza jeśli masz błąd, który nie wskazuje konkretnej linii w skrypcie.
 
-## What we know/need to know
+## Co wiemy/musimy wiedzieć
 
-- CraftTweaker can load files from multiple script files.
-- CraftTweaker can even load files in subfolders.
-- Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
+- CraftTweaker może ładować pliki z wielu plików skryptu.
+- CraftTweaker może nawet załadować pliki w podfolderach.
+- CraftTweaker może również załadować pliki .zip, które zawierają skrypty .zs wewnątrz nich, o ile plik .zip nie jest chroniony hasłem.
 
-## Solution
+## Rozwiązanie
 
-- Split your large scripts into multiple smaller ones.
-- You could for example create one script for each mod, or each mod handler.
+- Podziel swoje duże skrypty na kilka mniejszych skryptów.
+- Możesz na przykład utworzyć jeden skrypt dla każdego moda lub każdego programu obsługi modyfikacji.
 
-## Example
+## Przykład
 
 ```zenscript
 scripts
@@ -26,7 +26,7 @@ scripts
         Compactor.zs
         Crucible.zs
     Vanilla
-        Recipes
+        Receptury
             Remove.zs
             Shaped.zs
             Shapeless.zs
@@ -34,13 +34,13 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## Korzyści
 
-- Your script files become easier to debug.
-- An error won't stop your whole script from working but instead only a small part of it.
-- People checking your script files can easier orient themselves
+- Twoje pliki skryptu stają się łatwiejsze do debugowania.
+- Błąd nie powstrzyma działania całego skryptu, a zamiast tego tylko jego niewielka część.
+- Osoby sprawdzające pliki skryptów mogą łatwiej orientować się
 
-## Disadvantages
+## Wady
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- Musisz zachować ostrożność w kolejności ładowania skryptów (zwłaszcza jeśli jeden skrypt usunie przepis, a drugi dodaje). Sprawdź [Preprocesor Priorytetów](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) jeśli ładowanie skryptu jest problemem
+- Istnieje wiele sposobów na kategoryzowanie twoich skryptów i może być mylące dla osób zewnętrznych.
