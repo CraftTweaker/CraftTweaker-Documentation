@@ -1,6 +1,6 @@
 # Composting
 
-## Package
+## Пакет
 ```zenscript
 mods.exnihilocreatio.Compost
 ```
@@ -12,7 +12,7 @@ mods.exnihilocreatio.Compost
 - **String color** The color is hex.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
-## Addition
+## Сложение
 
 Does not take arrays in for IIngredient.
 
@@ -22,7 +22,7 @@ mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, 
 mods.exnihilocreatio.Compost.addRecipe(<ore:woodPlank>, 0.25, "63452D", <minecraft:log>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 Compost.removeAll();
