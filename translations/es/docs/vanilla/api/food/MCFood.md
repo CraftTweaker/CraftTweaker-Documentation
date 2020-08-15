@@ -1,9 +1,9 @@
 # MCFood
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.food.MCFood
 ```
@@ -12,14 +12,14 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| Parámetro  | Tipo     | Descripción             |
+| ---------- | -------- | ----------------------- |
+| healing    | int      | No description provided |
+| saturación | flotante | No description provided |
 
 
 
-## Methods
+## Métodos
 ### addEffect
 
 Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
@@ -28,10 +28,10 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
 ```
 
-| Parameter   | Type                                                                                          | Description             |
+| Parámetro   | Tipo                                                                                          | Descripción             |
 | ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float                                                                                         | No description provided |
+| probability | flotante                                                                                      | No description provided |
 
 
 ### clearEffects
@@ -48,7 +48,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter | Type                                                                                          | Description             |
+| Parámetro | Tipo                                                                                          | Descripción             |
 | --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
@@ -61,7 +61,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Parameter      | Type    | Description             |
+| Parámetro      | Tipo    | Descripción             |
 | -------------- | ------- | ----------------------- |
 | canEatWhenFull | boolean | No description provided |
 
@@ -74,7 +74,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parameter  | Type    | Description             |
+| Parámetro  | Tipo    | Descripción             |
 | ---------- | ------- | ----------------------- |
 | fastEating | boolean | No description provided |
 
@@ -87,7 +87,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setHealing(healing as int);
 ```
 
-| Parameter | Type | Description             |
+| Parámetro | Tipo | Descripción             |
 | --------- | ---- | ----------------------- |
 | healing   | int  | No description provided |
 
@@ -100,7 +100,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setMeat(meat as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parámetro | Tipo    | Descripción             |
 | --------- | ------- | ----------------------- |
 | meat      | boolean | No description provided |
 
@@ -113,19 +113,19 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setSaturation(saturation as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| Parámetro  | Tipo     | Descripción             |
+| ---------- | -------- | ----------------------- |
+| saturación | flotante | No description provided |
 
 
 
-## Properties
+## Propiedades
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| canEatWhenFull | boolean | true       | false      |
-| healing        | int     | true       | false      |
-| isFastEating   | boolean | true       | false      |
-| meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| Nombre         | Tipo     | Has Getter | Has Setter |
+| -------------- | -------- | ---------- | ---------- |
+| canEatWhenFull | boolean  | verdad     | falso      |
+| healing        | int      | verdad     | falso      |
+| isFastEating   | boolean  | verdad     | falso      |
+| meat           | boolean  | verdad     | falso      |
+| saturación     | flotante | verdad     | falso      |
 
