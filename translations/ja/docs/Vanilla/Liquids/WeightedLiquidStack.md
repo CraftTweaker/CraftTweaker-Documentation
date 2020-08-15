@@ -22,8 +22,8 @@ val wLiquidStack2 = liquidStack.weight(0.2);
 
 ## ZenGetters
 
-| ZenGetter | What does it do                                      | Return Type                                    |
+| ZenGetter | 何をするか                                                | Return Type                                    |
 | --------- | ---------------------------------------------------- | ---------------------------------------------- |
 | stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                          |
+| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float型                                         |
 | percent   | Returns the stack's chance as percentage (e.g. 20.0) | float型                                         |
