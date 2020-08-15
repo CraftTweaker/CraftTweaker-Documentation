@@ -15,7 +15,7 @@ import mods.calculator.atomic;
 atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient output);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 atomic.removeRecipe(IIngredient output);
 ```
