@@ -1,13 +1,13 @@
 # EntityMountEvent
 
-The EntityMount event is fired whenever an entity is mounted or dismounted from. If canceled, the entity is prevented from mounting (or dismounting).
+Zdarzenie EntityMount jest uruchamiane za każdym razem, gdy jednostka jest zamontowana lub odmontowana. W przypadku anulowania obiekt nie może montować (lub odmontować).
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityMountEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. ntityMountEvent` Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-EntityMountEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia EntityMountEvent zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -15,10 +15,10 @@ EntityMountEvent Events implement the following interfaces and are able to call 
 ## ZenGetters/ZenSetters
 Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter        | Typ zwrotu                            |
-| ---------------- | ------------------------------------- |
-| `świat`          | [IWorld](/Vanilla/World/IWorld/)      |
-| `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `isMounting`     | boolean                               |
-| `isDismounting`  | boolean                               |
+| ZenGetter             | Typ zwrotu                            |
+| --------------------- | ------------------------------------- |
+| `świat`               | [IWorld](/Vanilla/World/IWorld/)      |
+| `montowanieJednostka` | [IEntity](/Vanilla/Entities/IEntity/) |
+| `zamontowano Obiekt`  | [IEntity](/Vanilla/Entities/IEntity/) |
+| `isMounting`          | boolean                               |
+| `rozmontowanie`       | boolean                               |
