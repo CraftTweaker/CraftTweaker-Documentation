@@ -14,7 +14,7 @@ import mods.calculator.flawless;
 flawless.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient input4, IIngredient output);
 ```
 
-## Removal
+## 移除
 ```zenscript
 flawless.removeRecipe(IIngredient output);
 ```
