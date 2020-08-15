@@ -63,7 +63,7 @@ You can also use `A has B` that represents `A.matches(B)`.
     Map<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+参数：
 
 - String name → The name of the property
 - String... values → One or more values that the property of a matching IBlockState may have.
