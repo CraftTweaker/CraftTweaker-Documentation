@@ -2,7 +2,7 @@
 
 Represents an XP Orb in the world.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityXp;`
@@ -13,6 +13,6 @@ IEntityXp extends [IEntity](/Vanilla/Entities/IEntity/). That means all function
 
 ## ZenGetters
 
-| ZenGetter | Return Type |
-| --------- | ----------- |
-| xp        | float       |
+| ZenGetter | Tipo Di Reso |
+| --------- | ------------ |
+| xp        | galleggiante |
