@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCFillBucketEvent
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCFillBucketEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCFillBucketEvent>);
 ```
-| Parameter | Type                                                                                                                            | Description             |
+| Paramètre | Type de texte                                                                                                                   | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCFillBucketEvent](/vanilla/api/event/entity/player/MCFillBucketEvent)> | No description provided |
 
 
 
-## Methods
+## Méthodes
 ### getEmptyBucket
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
@@ -91,9 +91,9 @@ myMCFillBucketEvent.isCanceled();
 myMCFillBucketEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| cancel    | boolean       | No description provided |
 
 
 ### setFilledBucket
@@ -102,7 +102,7 @@ myMCFillBucketEvent.setCanceled(cancel as boolean);
 myMCFillBucketEvent.setFilledBucket(arg0 as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Paramètre | Type de texte                                                     | Libellé                 |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | arg0      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
