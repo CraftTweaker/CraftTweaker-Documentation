@@ -1,6 +1,6 @@
 # Block Cutter
 
-## Package
+## Paket
 
 `import mods.ic2.BlockCutter;`
 
@@ -18,6 +18,6 @@ mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional i
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## Removal
+## Entfernen
 
 For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
