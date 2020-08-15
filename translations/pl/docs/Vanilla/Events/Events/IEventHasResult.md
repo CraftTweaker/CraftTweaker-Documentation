@@ -8,11 +8,11 @@ This interface is extended by all Events that has a result that is used by the e
 
 The meaning of these is dependent on context. Generally, denying an event prevents a specific event-related action from taking place (even if it wasn't guaranteed to take place). Likewise, allowing an event will force a behaviour to take place (even if it wasn't guaranteed). Default simply causes the event to continue with its normal logic. Not all events use every result.
 
-## Importing the class
+## Importowanie klasy
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## Co można z nimi zrobić?
 
 - `event.result` Getter, returns a string value of `default`, `deny` or `allow`
 - `event.deny()` Method, sets the event's result to `deny`
