@@ -1,9 +1,9 @@
 # MCEntityType
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.entity.MCEntityType
 ```
@@ -12,18 +12,18 @@ crafttweaker.api.entity.MCEntityType
 MCEntityType implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Propiedades
 
-| Name           | Type                                                                                           | Has Getter | Has Setter |
+| Nombre         | Tipo                                                                                           | Has Getter | Has Setter |
 | -------------- | ---------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true       | false      |
-| commandString  | String                                                                                         | true       | false      |
-| height         | float                                                                                          | true       | false      |
-| immuneToFire   | boolean                                                                                        | true       | false      |
-| lootTable      | String                                                                                         | true       | false      |
-| name           | String                                                                                         | true       | false      |
-| serializable   | boolean                                                                                        | true       | false      |
-| summonable     | boolean                                                                                        | true       | false      |
-| translationKey | String                                                                                         | true       | false      |
-| width          | float                                                                                          | true       | false      |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | verdad     | falso      |
+| commandString  | Cadena                                                                                         | verdad     | falso      |
+| altura         | flotante                                                                                       | verdad     | falso      |
+| immuneToFire   | boolean                                                                                        | verdad     | falso      |
+| lootTable      | Cadena                                                                                         | verdad     | falso      |
+| nombre         | Cadena                                                                                         | verdad     | falso      |
+| serializable   | boolean                                                                                        | verdad     | falso      |
+| summonable     | boolean                                                                                        | verdad     | falso      |
+| translationKey | Cadena                                                                                         | verdad     | falso      |
+| width          | flotante                                                                                       | verdad     | falso      |
 
