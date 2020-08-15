@@ -1,8 +1,8 @@
-# Clay Knapping
+# Gliniany Wykrywanie
 
 ## Pakiet
 ```zenscript
-import mods.terrafirmacraft.ClayKnapping;
+importuj mods.terrafirmacraft.ClayKpieping;
 ```
 
 ## Dodanie
@@ -14,8 +14,8 @@ ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern
 ## Usuwanie
 
 ```zenscript
-ClayKnapping.removeRecipe(IItemStack output);
-ClayKnapping.removeRecipe(String registryName);
+ClayKnapping.removeRecipe(wyjście IItemStack);
+ClayKnapping.removeRecipe(RejeststryName);
 ```
 
 ## Przykład
