@@ -1,6 +1,6 @@
-# Grinder
+# Smerigliatrice
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.grinder`
 
 ## Aggiunta Di Ricette
@@ -10,7 +10,7 @@ mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int tic
 
 ## Rimozione Ricette
 ```zenscript
-mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.grinder.removeInputRecipe(IIngredient ingrediente);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
 mods.techreborn.grinder.removeAll();
 ```
