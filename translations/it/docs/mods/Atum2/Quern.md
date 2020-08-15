@@ -1,9 +1,9 @@
 # Quern
 
-## Package
+## Pacchetto
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## Aggiungere una Ricetta
 
 `mods.atum.Quern.addRecipe(input, output, rotations);`
 
@@ -17,15 +17,15 @@ Adds a recipe with the specified input & output, that takes the specified rotati
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
-### Remove Recipes by Output
+### Rimuovere Ricette in base al Prodotto
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/IItemStack) dato.
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
