@@ -1,10 +1,10 @@
 # Enchanter
 
-## Package
+## Пакет
 
 `import mods.enderio.Enchanter;`
 
-## Methods
+## Методы
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
@@ -14,7 +14,7 @@
 
 **- double costMultiplier** Used to modify how expensive the recipe is.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
@@ -22,7 +22,7 @@ mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient inpu
 mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
