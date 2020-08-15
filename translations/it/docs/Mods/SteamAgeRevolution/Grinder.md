@@ -1,16 +1,16 @@
-# Grinder
+# Smerigliatrice
 
-The Grinder is a machine that converts an input item into an output item using steam.
+Il Grinder è una macchina che converte un elemento di input in un oggetto di uscita utilizzando vapore.
 
 ## Pacchetto
 `mods.steamagerevolution.Grinder`
 
 ## Metodi
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** L'input della ricetta.
+- **int craftTime** Tempo di lavorazione della macchina da elaborare
+- **int steamCosto** Costo di vapore per la macchina da elaborare
 
 ## Addizione
 
