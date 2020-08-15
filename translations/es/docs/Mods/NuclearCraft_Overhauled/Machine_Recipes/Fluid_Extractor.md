@@ -1,17 +1,17 @@
-# Fluid Extractor
+# Extractor de fluidos
 
-## Importing the Package
+## Importando el Paquete
 `mods.nuclearcraft.ExtractorExtractor`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.Supercoolermods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOutput, ILiquidStack fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.SupercoolerExtractor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.Extractor.removeAllRecipes();Extractor.removeAllRecipes();
+mods.nuclearcraft.Extractor.removeAllRecipes();Extractor.removeTodos();
 ```
