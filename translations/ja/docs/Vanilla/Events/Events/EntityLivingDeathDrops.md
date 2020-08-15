@@ -22,10 +22,10 @@ The following information can be retrieved from the event:
 
 | ZenGetter       | 戻り値                                                         |
 | --------------- | ----------------------------------------------------------- |
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `ドロップ`          | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
 | `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 | `isRecentlyHit` | bool                                                        |
-| `lootingLevel`  | int                                                         |
+| `略奪レベル`         | int                                                         |
 
 ## Modifying the item drops
 
