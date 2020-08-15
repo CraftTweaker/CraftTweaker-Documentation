@@ -1,20 +1,20 @@
-# Custom Traits
+# カスタムトレイト
 
-Using this package you can create trait that you can then put on your tools!
+このパッケージを使用すると、ツールに追加できるトレイトを作成できます！
 
-## Importing the class
+## クラスのインポート
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.TraitBuilder;`
 
-## Creating a trait
+## トレイトの作成
 
-First and foremost, you will need to create a trait builder.  
-This can be done using the static function:
+まず第一に、トレイトビルダーを作成する必要があります。  
+これは、静的関数を使用して行うことができます。
 
 ```zenscript
 //create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
-val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
+val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xfaadd, 100, 20);
 ```
 
 The `identifier` has to be unique!  
@@ -29,15 +29,15 @@ This can be done using the `register` method, which will return a [Representatio
 myTrait.register();
 ```
 
-After registering, you can still modify the builder, the trait itself can no longer be modified.  
-That way you can create multiple similar traits easily.
+登録後もビルダーを変更でき、トレイト自体は変更できなくなります。  
+そうすることで、複数の類似特性を簡単に作成できます。
 
-## Modifier Items
+## 追加項目
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+指定された成分とティンカーの工具鍛造工具を組み合わせると、修飾子として形質を適用できます。
 
 ```zenscript
-//myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+//myTrait.addItem(IIngredient項目, @Optional(1) int amountMatched));
 myTrait.addItem(<item:minecraft:iron_pickaxe>);
 myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 
@@ -45,33 +45,33 @@ myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
-- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+- `アイテム` はマッチングされたアイテムです。 [アイテム条件](/Vanilla/Items/Item_Conditions/) は使用できますが、トランスフォーマーは使用できません。 
+- `amountNeeded` は一致するアイテムの量です。 toolforgeが提供するすべてのスロットでそれらを分割することができ、64を超えることもできます。 上記の例では、鉄ブロックを4つ追加する必要があります。 デフォルトは 1 です。
+- `amountMatched` は、 `amountNeeded` あたりのトレイトポイントの量です。 上の例では、4つの鉄のブロックは、2つの特徴点を与えます。 デフォルトは 1 です。
+- `remove function`を使用すると、アイテムに一致するすべてのトレイト成分が削除されます。
 
-## Properties
+## プロパティー
 
-You can set and get these properties using the names given:
+与えられた名前を使用して、これらのプロパティを設定して取得できます:
 
-| Name                 | Type   |
-| -------------------- | ------ |
-| color                | int    |
-| countPerLevel        | int    |
-| hidden               | bool   |
-| identifier           | string |
-| localizedDescription | string |
-| localizedName        | string |
-| maxLevel             | int    |
+| 名称                   | タイプ  |
+| -------------------- | ---- |
+| 色                    | int  |
+| countPerLevel        | int  |
+| hidden               | bool |
+| identifier           | 文字列  |
+| localizedDescription | 文字列  |
+| localizedName        | 文字列  |
+| maxLevel             | int  |
 
-## Calculated Properties
+## 計算されたプロパティ
 
-Some properties will need to be calculated.  
-You can set the given property functions:
+いくつかのプロパティを計算する必要があります。  
+指定されたプロパティ関数を設定できます。
 
-### CanApplyTogether
+### CanApplyAs
 
-Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
+トレイトが既に別のトレイトを持つツールや [エンチャント](/Vanilla/Enchantments/IEnchantmentDefinition/) に追加できるかどうかを確認します。
 
 ```zenscript
 myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
@@ -80,30 +80,30 @@ myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IE
 
 ### Extra info
 
-The returned String[] will be displayed as extra information in the tool station.
+返された String[] は、ツールステーションに追加情報として表示されます。
 
 ```zenscript
 myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
 ```
 
-## Adding Functionality
+## 機能の追加
 
-Now that you have created a trait you need to make it modify something, don't you?  
-That's what the trait event handlers are for:  
-They are called whenever a user does something with the tool containing the trait.
+今、あなたは何かを変更する必要がありますトレイトを作成したのではありませんか?  
+トレイトイベントハンドラは以下のようなものです:  
+ユーザーがトレイトを含むツールで何かをするたびに呼び出されます。
 
-Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myTrait` with your own variable name.  
+以下に、可能なハンドラをすべて表示します。ハンドラの返り値と、関数の書き方についての情報が表示されます。 Remember that you will have to replace `myTrait` with your own variable name.  
 Also, you only have to use the handlers that you need, you don't need empty handlers only so that you have filled everything.
 
 <details>
-    <summary>All Handlers in a nutshell</summary>
+    <summary>一言で言えば、すべてのハンドラーです</summary>
     <ul>
         <li><a href="#onupdate">onUpdate</a></li>
         <li><a href="#getminingspeed">getMiningSpeed</a></li>
         <li><a href="#beforeblockbreak">beforeBlockBreak</a></li>
         <li><a href="#afterblockbreak">afterBlockBreak</a></li>
         <li><a href="#onblockharvestdrops">onBlockHarvestDrops</a></li>
-        <li><a href="#calccrit">calcCrit</a></li>
+        <li><a href="#calccrit">calcrit</a></li>
         <li><a href="#calcdamage">calcDamage</a></li>
         <li><a href="#onhit">onHit</a></li>
         <li><a href="#calcknockback">calcKnockBack</a></li>
@@ -112,25 +112,25 @@ Also, you only have to use the handlers that you need, you don't need empty hand
         <li><a href="#onplayerhurt">onPlayerHurt</a></li>
         <li><a href="#ontooldamage">onToolDamage</a></li>
         <li><a href="#ontoolheal">onToolHeal</a></li>
-        <li><a href="#ontoolrepair">onToolRepair</a></li>
+        <li><a href="#ontoolrepair">onTool修理</a></li>
     </ul>
 </details>
 
 ### onUpdate
 
-Called each tick by the tool is loaded (that means in the player's inventory).  
-Parameters:
+ツールによって呼び出される各ティックがロードされます（つまりプレイヤーのインベントリ内にあることを意味します）。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IEntity](/Vanilla/Entities/IEntity/) representing the `owner`
-- An int representing the `itemSlot`
-- A boolean that describes if the tool currently `isSelected`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [ワールド](/Vanilla/World/IWorld/) を表す `IWorld`
+- [所有者](/Vanilla/Entities/IEntity/) を表す `IEntity`
+- `itemSlot` を表すint
+- ツールが現在 `選択されているかどうかを記述する真偽値`
 
-**Returns nothing.**
+**何も返しません。**
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
@@ -140,17 +140,17 @@ myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelecte
 
 ### getMiningSpeed
 
-Called when a block is mined.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+ブロックが採掘されたときに呼び出されます。  
+このイベントは vanilla blockBreak ハンドラにもキャッチされるので注意してください。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
 
-**Returns nothing.**
+**何も返しません。**
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, event) {
@@ -160,17 +160,17 @@ myTrait.getMiningSpeed = function(trait, tool, event) {
 
 ### beforeBlockBreak
 
-Called just before a block is broken.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+ブロックが壊れる直前に呼び出されます。  
+このイベントは vanilla blockBreak ハンドラにもキャッチされるので注意してください。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
 
-**Returns nothing.**
+**何も返しません。**
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.beforeBlockBreak = function(trait, tool, event) {
@@ -180,19 +180,19 @@ myTrait.beforeBlockBreak = function(trait, tool, event) {
 
 ### afterBlockBreak
 
-Called after the block has been destroyed.  
-Parameters:
+ブロックが破壊された後に呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
-- A bool representing if the mining `wasEffective`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [ワールド](/Vanilla/World/IWorld/) を表す `IWorld`
+- 壊れた [ブロック](/Vanilla/Blocks/IBlockState/) を表す `IBlockState`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `鉱夫を表す`
+- 採掘を表すbool `wasEffective`
 
-**Returns nothing.**
+**何も返しません。**
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
@@ -207,13 +207,13 @@ Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.
 Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
 Parameters:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
 
-**Returns nothing**
+**何も返さない**
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.onBlockHarvestDrops = function(trait, tool, event) {
@@ -221,20 +221,20 @@ myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 };
 ```
 
-### calcCrit
+### calcrit
 
 Called before the damage done to the entity is calculated to determine whether it will be a crit or not.  
 Returning `false` will not stop a hit that is already a crit from being so.  
 Parameters:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `ターゲット` を表す
 
-**Returns a bool** that is `true` if the hit should crit, false whenever else.
+**ヒットした場合、** が `true` である bool format@@4 を返します。それ以外の場合は false を返します。
 
-Created using:
+作成済み:
 
 ```zenscript
 myTrait.calcCrit = function(trait, tool, attacker, target) {
@@ -245,21 +245,21 @@ myTrait.calcCrit = function(trait, tool, attacker, target) {
 
 ### calcDamage
 
-Called when an entity is hit, but still before the damage is dealt and before the crit damage is added.  
-The crit damage will be calculated off the result of this.  
-Parameters:
+エンティティがヒットしたときに呼び出されますが、ダメージが与えられる前とクリティカルダメージが追加される前に呼び出されます。  
+クリットダメージは、この結果から計算されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `originalDamage` (unmodified tool damage)
-- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `ターゲット` を表す
+- ツールの `originalDamage` (未変更のツールダメージ) を表すfloat
+- ツールの `newDamage` を表すfloat (ツールがこの時点までダメージを受ける) はオリジナルであることができます損傷、またはすでに他の形質によって変更されています)。
+- ヒット `isCritical` を表すブール値。
 
-**Returns a float** representing the new damage. Otherwise return `newDamage`
+**新しいダメージを表す float** を返します。 それ以外の場合は `newDamage` を返します
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
@@ -270,47 +270,47 @@ myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, new
 
 ### onHit
 
-Called when an entity is hit, just before the damage is dealt.  
-All damage calculation has already been done at this point.  
-Parameters:
+ダメージが与えられる直前にエンティティがヒットしたときに呼び出されます。  
+全ての損傷計算はこの時点で既に行われています。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (includung critdamage)
-- A boolean that represents if the hit `isCritical`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `ターゲット` を表す
+- ツールの `ダメージ` を表すフロート（クリティカルダメージを含む）
+- ヒット `isCritical` を表すブール値。
 
-**Returns nothing**
+**何も返さない**
 
-Created using
+作成されたユーザー
 
 ```zenscript
-myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
+myTrait.onHit = function(trait, tool, attacker, target, damage isCritical) {
     //CODE
 };
 ```
 
 ### calcKnockBack
 
-Called after an entity is hit to modify the applied knockback.  
-Parameters:
+適用されたノックバックを変更するためにエンティティがヒットした後に呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (including crit)
-- A float representing the tool's `originalKnockback` (unmodified tool knockback)
-- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `ターゲット` を表す
+- ツールの `ダメージを表すfloat` (critを含む)
+- ツールの `originalKnockback` を表すfloat (ツールノックバック未変更)
+- ツールの `newKnockback` を表すフロート（この時点まではツールのノックバックが行われます） オリジナルKnockback、またはすでに他の形質で変更することができます)。
+- ヒット `isCritical` を表すブール値。
 
-**Returns a float** representing the new knockback. Otherwise return `newKnockback`
+**新しいノックバックを表す float** を返します。 それ以外の場合は `newKnockback` を返します
 
-Created using
+作成されたユーザー
 
 ```zenscript
-myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
+myTrait.calcDamage = function(trait, tool, attacker, target, damage originalKnockBack, newKnockBack, isCritical) {
     //CODE
     return newDamage; //Or your modified value
 };
@@ -318,20 +318,20 @@ myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKno
 
 ### afterHit
 
-Called after an entity is hit and after the damage is dealt.  
-Parameters:
+エンティティがヒットし、ダメージが与えられた後に呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `dealtDamage`
-- A bool representing if the hit `wasCritical`
-- A bool representing if the entity `wasHit`. Can be false if the entity was invulnerable or had some other ways of exacing the damage.
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `ターゲット` を表す
+- ツールの `dealtDamage` を表すfloat
+- ヒット `wasCritical`を表すbool
+- エンティティ `wasHit` かどうかを表す bool エンティティが無敵であったか、損傷を逃れるいくつかの他の方法を持っていた場合、偽であることができます。
 
-**Returns nothing**
+**何も返さない**
 
-Created using
+作成されたユーザー
 
 ```zenscript
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
@@ -341,18 +341,18 @@ mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCriti
 
 ### onBlock
 
-Called when the player holding the tool blocks the attack.  
-Otherwise `onHit` will be called.  
-Parameters:
+プレイヤーがツールブロックを押した時に呼び出されます。  
+そうでなければ `onHit` が呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [プレイヤー](/Vanilla/Players/IPlayer/) を表す `IPlayer`
+- [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**何も返さない**
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.onBlock = function(trait, tool, player, event) {
@@ -362,19 +362,19 @@ myTrait.onBlock = function(trait, tool, player, event) {
 
 ### onPlayerHurt
 
-Called when the player holding the tool DID NOT BLOCK the attack.  
-Otherwise `onBlock` will be called.  
-Parameters:
+プレイヤーがDID NOT BLOCKを持っているときに呼び出されます。  
+それ以外の場合は `onBlock` が呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- [プレイヤー](/Vanilla/Players/IPlayer/) を表す `IPlayer`
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) が `攻撃者` を表す
+- [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**何も返さない**
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.onPlayerHurt = function(trait, tool, player, event) {
@@ -384,18 +384,18 @@ myTrait.onPlayerHurt = function(trait, tool, player, event) {
 
 ### onToolDamage
 
-Called before the tools durability is getting decreased.  
-Parameters:
+ツールの耐久性が低下する前に呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be reduced.
-- An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- 減少させる耐久 `変更されていない量` を表すint。
+- 減少する耐久度の `newAmount` を表す int で、他の形質で既に修正することができます。
+- 現在のツール [ホルダー](/Vanilla/Entities/IEntityLivingBase/) を表す `IEntityLivingBase`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**新しい金額を表す int** を返します。 それ以外の場合は `newAmount` を返します
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
@@ -406,18 +406,18 @@ myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder
 
 ### calcToolHeal
 
-Called before the tools durability is getting increased.  
-Parameters:
+ツールの耐久性が向上する前に呼び出されます。  
+パラメータ:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be increased.
-- An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 使用されている [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- 耐久度の `変更されていない量` を表すint。
+- Aint は `の耐久性の` を表します。これは他の形質で既に変更することができます。
+- 現在のツール [ホルダー](/Vanilla/Entities/IEntityLivingBase/) を表す `IEntityLivingBase`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**新しい金額を表す int** を返します。 それ以外の場合は `newAmount` を返します
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
@@ -426,20 +426,20 @@ myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder
 };
 ```
 
-### onToolRepair
+### onTool修理
 
 Called before the tool is getting repaired with tis repair material.  
 Not to be confused with `onToolHeal` which is called afterwards.  
 Will be called multiple times if multiple items are used at once.  
 Parameters:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the `tool` to be repaired
-- An int representing the `amount` of durability to be increased.
+- 現在使用されている [トレイト](/Mods/ContentTweaker/Tinkers_Construct/Trait/) を表す `トレイト`。
+- 修理する [ツール](/Vanilla/Items/IItemStack/) を表す `IItemStack`
+- 耐久度の `` を表すint。
 
-**Returns nothing**
+**何も返さない**
 
-Created using
+作成されたユーザー
 
 ```zenscript
 myTrait.onToolRepair = function(trait, tool, amount) {
@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## 例
 
 ```zenscript
 #loader contenttweaker
@@ -460,9 +460,9 @@ testTrait.countPerLevel = 20;
 testTrait.addItem(<item:minecraft:iron_pickaxe>);
 testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 testTrait.localizedName = "Whooooooooo";
-testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
-testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
-    attacker.heal(damageDealt);
+testTrait.localizedDescription = "This is fun! 悲しいことに、それは何もしません... \u2639";
+testTrait.afterHit = function(thisTrait, tool, attacker, target, damagDealt, wasCrit, washHit) {
+    attacker.hill(damageDealt);
 };
 testTrait.register();
 ```
