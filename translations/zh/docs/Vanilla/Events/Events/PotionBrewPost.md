@@ -4,11 +4,11 @@ This event is fired immediately after a potion has been "brewed" by the brewing 
 
 If the pre-event is cancelled without modifying itemstacks, this event will **not** be fired.
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PotionBrewPostEvent` You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 PotionBrewPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPotionBrewEvent](/Vanilla/Events/Events/IPotionBrewEvent/)
