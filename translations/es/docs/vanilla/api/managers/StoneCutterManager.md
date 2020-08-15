@@ -2,10 +2,10 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.StoneCutterManager
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.StoneCutterManager
 StoneCutterManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Methods
+## Métodos
 ### addJSONRecipe
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
@@ -24,13 +24,13 @@ stoneCutter.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
 stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
+| Parámetro | Tipo                                                   | Descripción                     |
 | --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| nombre    | Cadena                                                 | name of the recipe              |
+| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addRecipe
+### addReceta
 
 Adds a recipe to the stone cutter
 
@@ -39,14 +39,14 @@ stoneCutter.addRecipe(recipeName as String, output as crafttweaker.api.item.IIte
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
 ```
 
-| Parameter  | Type                                                                | Description        |
+| Parámetro  | Tipo                                                                | Descripción        |
 | ---------- | ------------------------------------------------------------------- | ------------------ |
-| recipeName | String                                                              | name of the recipe |
-| output     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output IItemStack  |
+| recipeName | Cadena                                                              | name of the recipe |
+| salida     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output IItemStack  |
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input IIngredient  |
 
 
-### removeAll
+### eliminar todo
 
 Remove all recipes in this registry
 
@@ -63,9 +63,9 @@ stoneCutter.removeByModid(modid as String);
 stoneCutter.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
+| Parámetro | Tipo   | Descripción                    |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modificar | Cadena | modid of the recipes to remove |
 
 
 ### removeByName
@@ -77,9 +77,9 @@ stoneCutter.removeByName(name as String);
 stoneCutter.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
+| Parámetro | Tipo   | Descripción                       |
 | --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| nombre    | Cadena | registry name of recipe to remove |
 
 
 ### removeByRegex
@@ -91,9 +91,9 @@ stoneCutter.removeByRegex(regex as String);
 stoneCutter.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
+| Parámetro | Tipo   | Descripción            |
 | --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| regex     | Cadena | regex to match against |
 
 
 ### removeRecipe
@@ -105,15 +105,15 @@ stoneCutter.removeRecipe(output as crafttweaker.api.item.IItemStack);
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
+| Parámetro | Tipo                                                              | Descripción          |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| salida    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Tipo   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| commandString | Cadena | verdad     | falso      |
 
