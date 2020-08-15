@@ -5,12 +5,12 @@
 import mods.calculator.processingChamber;
 ```
 
-## Methods
+## Méthodes
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Ajouter
 ```zenscript
 processingChamber.addRecipe(IIngredient input, IIngredient output);
 ```
