@@ -1,23 +1,23 @@
 # Crucible
 
-This package allows you to add and remove recipes to/from the Crucible.
+Dieses Paket erlaubt Ihnen Rezepte zu/von der Crucible hinzuzufügen und zu entfernen.
 
 ## Dieses Paket importieren
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
 ```zenscript
-import mods.thaumcraft.Crucible;
+importieren mods.thaumcraft.Crucible;
 ```
 
-## Adding recipes
+## Rezepte hinzufügen
 
 ```zenscript
 //mods.thaumcraft.Crucible.registerRecipe(String name, String researchKey, IItemStack output, IIngredient input, CTAspectStack[] aspects);
 mods.thaumcraft.Crucible.registerRecipe("crucibleTest", "", <minecraft:diamond>, <minecraft:stick>, [<aspect:aer>]);
 ```
 
-## Removing recipes
+## Entfernen von Rezepten
 
 ```zenscript
 //mods.thaumcraft.Crucible.removeRecipe(String name);
