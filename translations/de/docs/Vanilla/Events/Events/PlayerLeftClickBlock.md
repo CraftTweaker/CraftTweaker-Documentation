@@ -19,13 +19,13 @@ PlayerLeftClickBlock Events implement the following interfaces and are able to c
 ## ZenGetters & ZenSetters
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter            | ZenSetter            | type                                   |
+| ZenGetter            | ZenSetter            | typ                                    |
 | -------------------- | -------------------- | -------------------------------------- |
 | `hitvector`          |                      | [ivector3d](/vanilla/world/ivector3d/) |
 | `useblock`           | `useblock`           | string ("allow" / "deny" / "default")  |
 | `useitem`            | `useitem`            | string ("allow" / "deny" / "default")  |
 | `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")   |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled.
