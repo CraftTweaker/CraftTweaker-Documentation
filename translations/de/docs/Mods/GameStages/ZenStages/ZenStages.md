@@ -1,7 +1,7 @@
-# ZenStages
+# ZenPhasen
 
-This mod is an add-on for most mods curated as GameStage addons which use the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). ZenStages brings all the mods together to allow simple integration and tools to help make Staged modpacks that much easier to create.
+Dieser Mod ist ein Add-on für die meisten Mods, die als GameStage Addons kuratiert werden, die die [GameStages API](https://minecraft.curseforge.com/projects/game-stages) verwenden. ZenStages bringt alle Mods zusammen, um einfache Integration und Werkzeuge zu ermöglichen, die Staged Modpacks einfacher zu erstellen.
 
-ZenStages comes packed with useful methods to add staging to mobs, items etc.. along with a debug method to check that you have not staged something on more than one stage. Along with that the methods provided via the [Stage](/Mods/GameStages/ZenStages/Stage/) class or the [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) class allow for dynamic management leading to cleaner CraftTweaker scripts!
+ZenStages wird mit nützlichen Methoden gepackt, um Staging zu Mobs, Gegenständen, etc. hinzuzufügen. zusammen mit einer Debug-Methode, um zu überprüfen, dass Sie nicht mehr als eine Etappe inszeniert haben. Zusätzlich erlauben die Methoden, die über die [Stage](/Mods/GameStages/ZenStages/Stage/) Klasse oder die [ZenStager](/Mods/GameStages/ZenStages/ZenStager/) Klasse bereitgestellt werden, ein dynamisches Management, das zu saubereren CraftTweaker Skripten führt!
 
-More information about the mod can be found on the [CurseForge Page](https://minecraft.curseforge.com/projects/zenstages).
+Weitere Informationen über den Mod finden Sie auf der [CurseForge Seite](https://minecraft.curseforge.com/projects/zenstages).
