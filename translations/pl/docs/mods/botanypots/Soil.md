@@ -1,132 +1,132 @@
 # Soils
 
-Class path: `mods.botanypots.Soil`
+Ścieżka klasy: `mods.botanypots.Soil`
 
-## Use
+## Użycie
 
-To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
+Aby użyć, zaimportuj klasę z `importuj mods.botanypots.Soil;` na początku skryptu.
 
-## Creating New Soils
+## Tworzenie nowych gleb
 
-`Soil.create(id, ingredient, displayState, tickRate, categories);`
+`Utwórz.gleba(id, składnik, wyświetlacz stanu, tickRate, kategorie);`
 
-- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
-- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
-- `categories` &lt;string[]> An array of categories associated with the new soil.
+- `id` &lt;ciąg> Id nowej gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `składnik` <[Składnik](/vanilla/api/items/IIngredient)> Składnik używany do określenia, które przedmioty/bloki są używane do umieszczenia gleby w garnku.
+- `wyświetlanie stanu` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Stan bloku, który ma być wyświetlany dla gleby w garnku.
+- `growthModifier` &lt;float> Modyfikuje czas potrzebny do wzrostu upraw. 1f = szybki wzrost. 0 = normalny wzrost. -1f = nigdy nie wzrasta. 0,15 = 15% szybciej, -0,15 = 15% wolniej.
+- `kategorie` &lt;string[]> Tablica kategorii powiązanych z nową glebą.
 
-Creates a new soil entry that players can use in the botany pot.
+Tworzy nowy wpis do gleby, z którego gracze mogą korzystać w botanach.
 
 ```zenscript
 Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 0, ["rocky"]);
 ```
 
-## Removing A Soil
+## Usuwanie gleby
 
 `Soil.remove(id);`
 
-- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;ciąg> Id gleby do usunięcia. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
 
-Removes a soil from the game's data.
+Usuwa glebę z danych gry.
 
 ```zenscript
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## Changing Soil Growth Modifier
+## Zmiana Modyfikatora wzrostu gleby
 
 `Soil.setGrowthModifier(id, tickRate);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `growthModifier` &lt;float> Modyfikuje czas potrzebny do wzrostu upraw. 1f = szybki wzrost. 0 = normalny wzrost. -1f = nigdy nie wzrasta. 0,15 = 15% szybciej, -0,15 = 15% wolniej.
 
-Changes the growth modifier of a given soil.
+Zmienia modyfikator wzrostu danej gleby.
 
 ```zenscript
-Soil.setGrowthModifier("botanypots:soil/grass", 0.15);
+Soil.setGrowthModifier („botanypots:soil/trawa”, 0,15);
 ```
 
-## Changing Soil Ingredient
+## Zmiana składnika gleby
 
-`Soil.setIngredient(id, ingredient);`
+`Soil.setSkładnik (id, składnik);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `składnik` <[Składnik](/vanilla/api/items/IIngredient)> Składnik używany do określenia, które przedmioty/bloki są używane do umieszczenia gleby w garnku.
 
-Changes the items used to put the soil into the botany pot.
+Zmienia elementy używane do umieszczenia gleby w botany garnku.
 
 ```zenscript
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## Changing Soil Display
+## Zmiana wyświetlania gleby
 
-`Soil.setDisplayState(id, displayState);`
+`Soil.setDisplayState(id, wyświetlanie stanu);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `wyświetlanie stanu` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Stan bloku, który ma być wyświetlany dla gleby w garnku.
 
-Changes the block displayed for the soil.
+Zmienia blok wyświetlany dla gleby.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## Changing Soil Categories
+## Zmiana kategorii gleby
 
-Changes the categories associated with the soil. These are used to match crops to valid soils.
+Zmienia kategorie związane z glebą. Są one wykorzystywane do dopasowania upraw do ważnych gleb.
 
-### Add a Category to a Soil
+### Dodaj kategorię do gleby
 
-`Soil.addCategory(id, categoriesToAdd);`
+`Kategoria gleby.addCategory(id, kategorieToAdd);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `categoriesToAdd` &lt;string[]> Tablica kategorii do powiązania z glebą.
 
 ```zenscript
 Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
 ```
 
-### Remove a Category From a Soil
+### Usuń kategorię z gleby
 
-`Soil.removeCategory(id, categoriesToRemove);`
+`Soil.removeCategory(id, kategorieToRemove);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `categoriesToRemove` &lt;string[]> Tablica kategorii do rozdzielenia z glebą.
 
 ```zenscript
 Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### Clear All Categories From a Soil
+### Wyczyść wszystkie kategorie z gleby
 
-`Soil.clearCategories(id);`
+`[PLACEHOLDER] Soil.clearKategories(id);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;ciąg> Id gleby. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
 
 ```zenscript
-Soil.clearCategories("botanypots:soil/farmland");
+Soil.clearCategories("botanypots:gleba/grunty rolne");
 ```
 
-## Getting All Ids
+## Pobieranie wszystkich identyfikatorów
 
 `Soil.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
+- Zwraca: &lt;ciąg znaków[]> Tablica wszystkich znanych identyfikatorów gleby w tym momencie.
 
-This will give you an array of all the known soil ids at the time.
+W ten sposób otrzymasz serię wszystkich znanych identyfikatorów gleby.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for soilId in Soil.getAllIds() {
+// Log all id to the crafttweaker.log file
+for soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## Removing All Soil
+## Usuwanie całej gleby
 
-This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+To całkowicie usunie wszystkie aktualnie zarejestrowane gleby. Jest to przydatne jeśli chcesz odtworzyć wszystkie dane od podstaw przez skrypty.
 
 ```zenscript
 Soil.removeAll();
