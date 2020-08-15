@@ -3,7 +3,7 @@
 The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
 Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
 
@@ -33,9 +33,9 @@ The following information can be retrieved/set during the event:
 | ---------- | ---------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `isPlayer` | bool                                     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `項目`       | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `duration` | int                                      |
 
-| ZenSetter  | Parameter Type |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter  | パラメータタイプ |
+| ---------- | -------- |
+| `duration` | int      |
