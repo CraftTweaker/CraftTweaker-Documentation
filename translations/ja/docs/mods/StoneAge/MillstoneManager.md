@@ -1,14 +1,14 @@
-# Millstone
+# ミルストーン
 
 ## パッケージ
-`import mods.stone_age.MillstoneManager;`
+`import mods.stone_ageMillstoneManager;`
 
 ## メソッド
-- **String name** Recipe name
+- **文字列名** レシピ名
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
-- **int activateCount** Activate millstone count
-- **String group** Recipe group
+- **int activateCount** ミルストーンカウントを有効にする
+- **文字列グループ** レシピグループ
 
 ## 加算
 
