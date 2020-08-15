@@ -1,6 +1,6 @@
 # IFoodStats
 
-The IPlayer interface allows you to view certain information on a player's food Stats.
+IPlayerインターフェイスを使用すると、プレイヤーの食品統計に関する特定の情報を表示できます。
 
 ## パッケージのインポート
 
@@ -11,15 +11,15 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter       | ZenSetter       | タイプ      |
 | --------------- | --------------- | -------- |
-| foodLevel       | foodLevel       | int      |
+| 食料レベル           | 食料レベル           | int      |
 | saturationLevel | saturationLevel | float型   |
-| needFood        |                 | boolean型 |
+| 食べ物が必要          |                 | boolean型 |
 
 ## ZenMethods
 
-#### Adding Stats
+#### 統計の追加
 
-Void Function. Takes an int and a float as intput parameters.
+無効な関数 intputパラメータとしてintとしてintとしてfloatを取ります。
 
 ```zenscript
 stats.addStats(int foodValue, float saturationLevel);
@@ -27,7 +27,7 @@ stats.addStats(int foodValue, float saturationLevel);
 
 #### onUpdate
 
-Void Function. Takes an [IPlayer](/Vanilla/Players/IPlayer/) object as input parameter.
+無効な関数 [IPlayer](/Vanilla/Players/IPlayer/) オブジェクトを入力パラメータとして取ります。
 
 ```zenscript
 stats.onUpdate(IPlayer player);
@@ -35,17 +35,17 @@ stats.onUpdate(IPlayer player);
 
 #### asNBT
 
-Returns an IData Object representing the foodStats.
+foodStatsを表す IData オブジェクトを返します。
 
 ```zenscript
 stats.asNBT();
-stats as crafttweaker.data.IData;
+statsをcrafttweaker.data.IData;
 ```
 
-#### Add Exhaustion
+#### Exhaustion を追加
 
-Void Funtion. takes a float as input parameter.
+奈落の葬式。 入力パラメータとしてfloatを取ります。
 
 ```zenscript
-stats.addExhaustion(float exhaustion);
+stats.addExhaustion(float exustrion);
 ```
