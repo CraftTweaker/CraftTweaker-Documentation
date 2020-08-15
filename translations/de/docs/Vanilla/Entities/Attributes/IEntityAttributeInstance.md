@@ -16,9 +16,9 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | Parameter Type |
-| --------- | ------------------- | -------------- |
-| baseValue | setBaseValue(value) | double         |
+| ZenSetter | SetterMethod        | Parametertyp |
+| --------- | ------------------- | ------------ |
+| baseValue | setBaseValue(value) | double       |
 
 ## Modifier Methods
 
