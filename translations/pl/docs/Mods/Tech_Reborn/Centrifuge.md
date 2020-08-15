@@ -1,6 +1,6 @@
 # Wirówka
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.centrifuge`
 
 ## Dodawanie przepisów
@@ -11,6 +11,6 @@ mods.techreborn.centrifuge.addRecipe(IItemStack output1, IItemStack output2, IIt
 ## Usuwanie przepisów
 ```zenscript
 mods.techreborn.centrifuge.removeInputRecipe(IIngredient iIngredient);
-mods.techreborn.centrifuge.removeRecipe(IItemStack output);
+mods.techreborn.centrifuge.removeRecipe(wyjście IItemStack);
 mods.techreborn.centrifuge.removeAll();
 ```
