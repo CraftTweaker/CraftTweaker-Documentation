@@ -1,21 +1,21 @@
 # Chevalet de séchage
 
 ## Paquet
-`import mods.stone_age.DryingRackManager;`
+`Importer mods.stone_age.DryingRackManager ;`
 
 ## Méthodes
-- **String name** Recipe name
+- **Nom de la chaîne de caractères** Nom de la recette
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) entrée**
-- **int dryingTime** Drying time in ticks
-- **String group** Recipe group
+- **int dryingTime** Temps de séchage en ticks
+- **Groupe de chaînes** de recettes
 
 ## Ajouter
 
 ```zenscript
-<recipetype:stone_age:drying_rack>.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString String group)
+<recipetype:stone_age:drying_rack>.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString group)
 
-<recipetype:stone_age:drying_rack>.addRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
+<recipetype:stone_age:drying_rack>. ddRecipe("viande séchée", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "aliments");
 
-DryingRackManager.INSTANCE.addRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
+DryingRackManager.INSTANCE.addRecipe("viande séchée", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "aliments");
 ```
