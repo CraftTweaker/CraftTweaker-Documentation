@@ -1,9 +1,9 @@
 # MCPotion
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.potion.MCPotion
 ```
@@ -12,7 +12,7 @@ crafttweaker.api.potion.MCPotion
 MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### getNamePrefixed
 
 Returns String
@@ -21,17 +21,17 @@ Returns String
 myMCPotion.getNamePrefixed(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nombre    | Cadena | No description provided |
 
 
 
-## Properties
+## Propiedades
 
-| Name             | Type                                                                                                | Has Getter | Has Setter |
+| Nombre           | Tipo                                                                                                | Has Getter | Has Setter |
 | ---------------- | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| commandString    | String                                                                                              | true       | false      |
-| effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true       | false      |
-| hasInstantEffect | boolean                                                                                             | true       | false      |
+| commandString    | Cadena                                                                                              | verdad     | falso      |
+| effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | verdad     | falso      |
+| hasInstantEffect | boolean                                                                                             | verdad     | falso      |
 
