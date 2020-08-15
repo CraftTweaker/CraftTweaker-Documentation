@@ -1,35 +1,35 @@
-# MCPlayerDestroyItemEvent
+# Wydarzenie Niszczenia MCPlayerlayer
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
 ## Importowanie klasy
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
-crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent
+[PLACEHOLDER] crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent
 ```
 
-## Constructors
+## Konstruktorzy
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent>);
+nowe crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(handler jako funkcja.Consumer<crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent>);
 ```
-| Parametr | Typ                                                                                                                                           | Opis                    |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent](/vanilla/api/event/entity/player/MCPlayerDestroyItemEvent)> | No description provided |
+| Parametr | Typ                                                                                                                                            | Opis             |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| handler  | Funkcja Konsumenta<[crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent](/vanilla/api/event/entity/player/MCPlayerDestroyItemEvent)> | Nie podano opisu |
 
 
 
 ## Metody
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getEntityPlayer();
 ```
 
-### getOriginal
+### etokrystaliczny
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getOriginal();
@@ -37,55 +37,55 @@ myMCPlayerDestroyItemEvent.getOriginal();
 
 ### getPlayer
 
-Returns: `Player`
+Zwroty: `Gracz`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getPlayer();
 ```
 
-### hasResult
+### wynik
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Określa, czy to zdarzenie oczekuje znaczącej wartości wyniku. Uwaga: Zdarzenia z adnotacją HasResult będą automatycznie dodane, aby zwrócić true.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerDestroyItemEvent.hasResult();
 ```
 
-### isCancelable
+### anulowalne
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Określ czy ta funkcja jest w ogóle anulowalna. Zwroty: `Jeśli dostęp do setCanceled powinien być dozwolony
+ Uwaga:
+ Zdarzenia z anulowaną adnotacją będą automatycznie dodawane do tej metody, aby zwrócić true.`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerDestroyItemEvent.isCancelable();
 ```
 
-### isCanceled
+### Anulowane
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Określ czy to wydarzenie jest anulowane i powinno przestać wykonywać. Zwroty: `Aktualnie anulowany stan`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCPlayerDestroyItemEvent.isCanceled();
 ```
 
-### setCanceled
+### Anulowane
 
 ```zenscript
-myMCPlayerDestroyItemEvent.setCanceled(cancel as boolean);
+myMCPlayerDestroyItemEvent.setCanceled(anuluj jako boolean);
 ```
 
-| Parametr | Typ     | Opis                    |
-| -------- | ------- | ----------------------- |
-| cancel   | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| anuluj   | boolean | Nie podano opisu |
 
 
 
