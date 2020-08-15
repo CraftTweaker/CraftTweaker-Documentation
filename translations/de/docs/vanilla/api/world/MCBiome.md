@@ -44,7 +44,7 @@ myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 
 
 
-## Properties
+## Eigenschaften
 
 | Name               | Type    | Has Getter | Has Setter |
 | ------------------ | ------- | ---------- | ---------- |
@@ -60,7 +60,7 @@ myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 | isTempMedium       | boolean | true       | false      |
 | isTempOcean        | boolean | true       | false      |
 | isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
+| übergeordnete      | String  | true       | false      |
 | rainType           | String  | true       | false      |
 | scale              | float   | true       | false      |
 | spawningChange     | float   | true       | false      |
