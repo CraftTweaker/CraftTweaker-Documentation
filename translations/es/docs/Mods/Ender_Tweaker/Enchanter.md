@@ -4,7 +4,7 @@
 
 `import mods.enderio.Enchanter;`
 
-## Methods
+## Métodos
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
@@ -14,7 +14,7 @@
 
 **- double costMultiplier** Used to modify how expensive the recipe is.
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
