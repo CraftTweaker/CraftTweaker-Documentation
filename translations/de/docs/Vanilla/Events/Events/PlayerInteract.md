@@ -30,10 +30,10 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `z`          | int                                  |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| `blockieren` | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `maße`       | int                                  |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled
 - `event.useBlock()` sets Block to true
