@@ -20,7 +20,7 @@ IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Th
 | growingAge | growingAge  | int  |
 |            | scaleForAge | bool |
 
-### ZenMethods
+### ZenMethoden
 
 #### add age
 
