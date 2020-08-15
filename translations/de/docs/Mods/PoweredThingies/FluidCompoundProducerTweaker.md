@@ -28,6 +28,6 @@ addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);
 ```
 
-### Notes
+### Notizen
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
