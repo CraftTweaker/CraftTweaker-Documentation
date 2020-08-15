@@ -18,7 +18,7 @@ mods.naturesaura.AnimalSpawner
 mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.naturesaura.AnimalSpawner.removeRecipe(String name)
