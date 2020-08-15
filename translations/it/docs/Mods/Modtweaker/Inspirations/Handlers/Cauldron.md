@@ -1,77 +1,77 @@
-# Cauldron
+# Calderone
 
-The Cauldron package is used for adding/removing recipes for the cauldron. Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
+La confezione di Cauldron viene utilizzata per aggiungere/rimuovere ricette per il calderone. Nota che se il calderone è impostato su `simple` nella configurazione, solo le ricette che utilizzano l'acqua saranno in grado di essere realizzate, ma tutte le ricette saranno ancora mostrate in JEI.
 
-## Calling
+## Chiamata
 
-You can call the Cauldron package using `mods.inspirations.Cauldron`
+Puoi chiamare il pacchetto Cauldron usando `mods.inspirations.Cauldron`
 
-## Fluids
+## Fluidi
 
-Inspirations features three types of recipes using fluids: ones to transform an item using a fluid, ones to transform a fluid using an item, and ones to add fill with a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
+Le ispirazioni presentano tre tipi di ricette utilizzando fluidi: quelle per trasformare un elemento utilizzando un fluido, quelli per trasformare un fluido utilizzando un oggetto, e quelli per aggiungere riempire con un fluido utilizzando un oggetto. Mentre tutti i gestori assumono una pila fluida, solo il tipo di fluido influenzerà la ricetta. Ispirazioni calderoni utilizzare il sistema di vaniglia di tre bottiglie in un calderone così le quantità vengono maneggiate in un altro parametro.
 
-### Fluid adding
+### Aggiunta di fluidi
 
-Adds a recipe converting the input item to the output item using the fluid.
+Aggiunge una ricetta convertendo l'elemento di input all'oggetto di output usando il fluido.
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* L'elemento in ingresso supporta le dimensioni dello stack per richiedere che la stack tenuta sia una certa dimensione.
+* I livelli determinano quanti livelli vengono consumati dalla ricetta. Supporta 0-3, predefinito 1
+* La bollitura determina se il calderone deve essere posto sopra il fuoco per la ricetta. Può essere vero per richiederlo, falso per richiedere di non avere fuoco, o null (default) per ignorarlo.
 
 ```zenscript
-//mods.inspirations.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional boolean boiling);
-mods.inspirations.Cauldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
+//mods.inspirations.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int levels @Optional boolean boiling);
+mods.inspirations. auldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
 mods.inspirations.Cauldron.addFluidRecipe(<minecraft:water_bucket>, <minecraft:ice>, <liquid:lava>, 1, true);
 ```
 
-### Fluid removal
+### Rimozione di fluidi
 
-Removes an existing fluid recipe from the cauldron.
+Rimuove una ricetta fluida esistente dal calderone.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFluidRecipe(IIngredient output, @Optional IIngredient input, @Optional ILiquidStack fluid)
 mods.inspirations.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
 ```
 
-### Fluid transform adding
+### Aggiunta trasformazione fluido
 
-Adds a recipe converting the fluid to the output fluid using the item.
+Aggiunge una ricetta che converte il fluido nel fluido di uscita usando l'oggetto.
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Max level determines the maximum amount of fluid allowed for this transformation to happen. Used to allow recipes to have a cheaper version if the cauldron contains less fluid.
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* L'elemento in ingresso supporta le dimensioni dello stack per richiedere che la stack tenuta sia una certa dimensione.
+* Il livello massimo determina la quantità massima di fluido consentita per questa trasformazione. Utilizzato per consentire alle ricette di avere una versione più economica se il calderone contiene meno fluido.
+* La bollitura determina se il calderone deve essere posto sopra il fuoco per la ricetta. Può essere vero per richiederlo, falso per richiedere di non avere fuoco, o null (default) per ignorarlo.
 
 ```zenscript
 //mods.inspirations.Cauldron.addFluidTransform(ILiquidStack output, IIngredient input, ILiquidStack fluid, @Optional int maxLevels, @Optional boolean boiling);
 mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
 ```
 
-### Fluid transform removal
+### Rimozione trasformazione fluido
 
-Removes an existing fluid transform recipe from the cauldron. Output is `IIngredient` but only supports a fluid stack or wildcard.
+Rimuove una ricetta di trasformazione fluido esistente dal calderone. L'output è `IIngrediente` ma supporta solo una pila fluida o un jolly.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
 mods.inspirations.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
 ```
 
-### Fill recipe adding
+### Riempi l'aggiunta della ricetta
 
-Adds a recipe filling the cauldron with the provided fluid..
+Aggiunge una ricetta riempiendo il calderone con il fluido fornito..
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how much the recipe fills the cauldron by. Defaults to 1 if not provided.
-* Container determines the item returned after performing this recipe. If none is provided defaults to returning nothing.
+* L'elemento in ingresso supporta le dimensioni dello stack per richiedere che la stack tenuta sia una certa dimensione.
+* I livelli determinano quanto la ricetta riempie il calderone. Il valore predefinito è 1 se non è fornito.
+* Il contenitore determina l'oggetto restituito dopo aver eseguito questa ricetta. Se non viene fornito nessuno, non restituisce nulla.
 
 ```zenscript
-//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
+//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels @Optional IItemStack container);
 mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
 mods.inspirations.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
 ```
 
-### Fill recipe removal
+### Riempi rimozione ricetta
 
-Removes an existing fill recipe from the cauldron.
+Rimuove una ricetta di riempimento esistente dal calderone.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeFillRecipe(IIngredient input, @Optional ILiquidStack fluid);
@@ -79,25 +79,25 @@ mods.inspirations.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
 mods.inspirations.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
 ```
 
-## Brewing and Potions
+## Birra e pozioni
 
-Inspirations features two types of potion recipes using potions: brewing recipes that change a potion from one type into another, and potion recipes that change an item using a potion.
+Le ispirazioni presentano due tipi di ricette di pozioni usando pozioni: preparare ricette che cambiano una pozione da un tipo ad un altro, e ricette di pozione che cambiano un oggetto usando una pozione.
 
-Since the recipes take on `PotionType`'s instead of `Potion`'s directly, potion parameters are strings. A list of all potion types can be obtained using the command `/ct inspirations potions`.
+Dal momento che le ricette assumono `PozioneTipo`invece di `Pozione`direttamente, i parametri di pozione sono stringhe. Un elenco di tutti i tipi di pozione può essere ottenuto usando il comando `/ct pozioni di ispirazioni`.
 
-### Brewing adding
+### Aggiunta della produzione
 
-Adds a recipe converting the input potion to the output potion using the reagent.
+Aggiunge una ricetta che converte la pozione di ingresso nella pozione di uscita usando il reagente.
 
 ```zenscript
-//mods.inspirations.Cauldron.addBrewingRecipe(String output, String input, IIngredient reagent);
+//mods.inspirations.Cauldron.addBrewingRecipe(output String, input String, reagente IIngrediente);
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:invisibility", "minecraft:thick", <minecraft:diamond>);
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:healing", "minecraft:thick", <ore:gemEmerald>);
 ```
 
-### Brewing removal
+### Rimozione della birra
 
-Removes an existing brewing recipe from the cauldron. Both input and output can be set to null to act as a wildcard.
+Rimuove una ricetta di preparazione esistente dal calderone. Sia l'input che l'output possono essere impostati su nulla per agire come un jolly.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeBrewingRecipe(String output, @Optional String input, @Optional IIngredient reagent);
@@ -105,33 +105,33 @@ mods.inspirations.Cauldron.removeBrewingRecipe("inspirations:haste");
 mods.inspirations.Cauldron.removeBrewingRecipe("minecraft:awkward", "minecraft:water", <minecraft:nether_wart>);
 ```
 
-### Potion recipe adding
+### Aggiunta ricetta pozione
 
-Adds a recipe converting the input item to the output item using the potion.
+Aggiunge una ricetta convertendo l'elemento di input all'oggetto di output usando la pozione.
 
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* I livelli determinano quanti livelli vengono consumati dalla ricetta. Supporta 0-3, predefinito 1
+* La bollitura determina se il calderone deve essere posto sopra il fuoco per la ricetta. Può essere vero per richiederlo, falso per richiedere di non avere fuoco, o null (default) per ignorarlo.
 
 ```zenscript
-//mods.inspirations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String potion, @Optional int levels, @Optional boolean boiling);
+//mods.inspirations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String poion, @Optional int levels @Optional boolean boiling);
 mods.inspirations.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2); 
 ```
 
-### Potion recipe removal
+### Rimozione ricetta pozione
 
-Removes an existing potion recipe from the cauldron. By default no potion recipes exist but addons may add a recipe.
+Rimuove una ricetta di pozione esistente dal calderone. Per impostazione predefinita non esistono ricette di pozione ma gli addons possono aggiungere una ricetta.
 
 ```zenscript
-//mods.inspirations.Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String potion);
+//mods.inspirations.Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String poion);
 ```
 
-## Dyes
+## Coloranti
 
-Inspirations features only one type of dye recipe to transform an item using a dye. Dye recipes take on a string dye color which represents a value from `EnumDyeColor`. To get a list of all values, the command `/ct inspirations dyes` is provided.
+Le ispirazioni sono dotate di un solo tipo di ricetta di tintura per trasformare un oggetto utilizzando un colorante. Le ricette di tintura assumono un colore di tintura che rappresenta un valore da `EnumDyeColor`. Per ottenere un elenco di tutti i valori, viene fornito il comando `/ct ispirazioni coloranti`.
 
-### Adding
+### Aggiunta
 
-Adds a recipe converting the input to the output using the dye consuming a single level of dyed water.
+Aggiunge una ricetta che converte l'input in uscita usando il colorante che consuma un unico livello di acqua tinta.
 
 ```zenscript
 //mods.inspirations.Cauldron.addDyeRecipe(IItemStack output, IIngredient input, String dye);
@@ -139,9 +139,9 @@ mods.inspirations.Cauldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>
 mods.inspirations.Cauldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
 ```
 
-### Removal
+### Rimozione
 
-Removes an existing dye recipe from the cauldron.
+Rimuove una ricetta di colorante esistente dal calderone.
 
 ```zenscript
 //mods.inspirations.Cauldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)
