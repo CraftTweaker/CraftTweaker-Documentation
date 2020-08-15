@@ -20,7 +20,7 @@ new crafttweaker.api.data.ShortData(internal as short);
 ```
 | Parameter | Type  | Beschreibung            |
 | --------- | ----- | ----------------------- |
-| internal  | short | No description provided |
+| intern    | short | No description provided |
 
 
 
@@ -74,7 +74,7 @@ Returns boolean
 
 | Parameter | Type                                                   | Beschreibung                     |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
