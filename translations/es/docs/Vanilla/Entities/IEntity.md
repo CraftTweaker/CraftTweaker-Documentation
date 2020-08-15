@@ -3,7 +3,7 @@
 Entity Interface. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
@@ -33,12 +33,12 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | canPassengerSteer        |                   | boolean                                                     |
 | canRiderInteract         |                   | boolean                                                     |
 | controllingPassenger     |                   | *IEntity*                                                   |
-| customName               | getCustomName()   | string                                                      |
+| customName               | getCustomName()   | cadena                                                      |
 | definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| dimension                | getDimension()    | int                                                         |
+| dimensión                | getDimension()    | int                                                         |
 | doesTriggerPressurePlate |                   | boolean                                                     |
 | equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | float                                                       |
+| eyeHeight                |                   | flotante                                                    |
 | hasCustomName            |                   | boolean                                                     |
 | hasNoGravity             |                   | boolean                                                     |
 | heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
@@ -75,27 +75,27 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | team                     |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
 | wet                      | isWet()           | boolean                                                     |
 | world                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
-| x                        | getX()            | double                                                      |
-| y                        | getY()            | double                                                      |
-| z                        | getZ()            | double                                                      |
-| motionX                  |                   | double                                                      |
-| motionY                  |                   | double                                                      |
-| motionZ                  |                   | double                                                      |
-| posX                     |                   | double                                                      |
-| posY                     |                   | double                                                      |
-| posZ                     |                   | double                                                      |
-| rotationYaw              |                   | float                                                       |
-| rotationPitch            |                   | float                                                       |
+| x                        | getX()            | doble                                                       |
+| y                        | getY()            | doble                                                       |
+| z                        | getZ()            | doble                                                       |
+| motionX                  |                   | doble                                                       |
+| motionY                  |                   | doble                                                       |
+| motionZ                  |                   | doble                                                       |
+| posX                     |                   | doble                                                       |
+| posY                     |                   | doble                                                       |
+| posZ                     |                   | doble                                                       |
+| rotationYaw              |                   | flotante                                                    |
+| rotationPitch            |                   | flotante                                                    |
 | lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
 ## ZenSetters
 
-| SetterName          | SetterMethod        | Parameter Type                         |
+| SetterName          | SetterMethod        | Tipo de parámetro                      |
 | ------------------- | ------------------- | -------------------------------------- |
 | air                 | setAir(seconds)     | int                                    |
 | alwaysRenderNameTag |                     | boolean                                |
-| customName          | setCustomName(name) | string                                 |
-| dimension           | setDimension(id)    | int                                    |
+| customName          | setCustomName(name) | cadena                                 |
+| dimensión           | setDimension(id)    | int                                    |
 | fire                | setFire(seconds)    | int                                    |
 | hasNoGravity        |                     | boolean                                |
 | id                  |                     | int                                    |
@@ -106,14 +106,14 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isSneaking          |                     | boolean                                |
 | isSprinting         |                     | boolean                                |
 | position            | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| rotationYaw         |                     | float                                  |
-| rotationPitch       |                     | float                                  |
-| motionX             |                     | double                                 |
-| motionY             |                     | double                                 |
-| motionZ             |                     | double                                 |
-| posX                |                     | double                                 |
-| posY                |                     | double                                 |
-| posZ                |                     | double                                 |
+| rotationYaw         |                     | flotante                               |
+| rotationPitch       |                     | flotante                               |
+| motionX             |                     | doble                                  |
+| motionY             |                     | doble                                  |
+| motionZ             |                     | doble                                  |
+| posX                |                     | doble                                  |
+| posY                |                     | doble                                  |
+| posZ                |                     | doble                                  |
 
 ## More ZenMethods
 
