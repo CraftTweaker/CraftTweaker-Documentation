@@ -3,7 +3,7 @@
 When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
 They consist of a name (OreDictionary name) and an explanation (all matching items).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDictEntry;`
@@ -20,9 +20,9 @@ There are multiple ways of getting an IOreDictEntry Object: If you refer to an o
 
 You can use these getters to retrieve some information on the oredict:
 
-| name      | Description                              | Return type                              |
+| 名前        | 説明                                       | 戻り値の種類                                   |
 | --------- | ---------------------------------------- | ---------------------------------------- |
-| name      | Returns the oreDict's name               | string                                   |
+| 名前        | Returns the oreDict's name               | 文字列                                      |
 | empty     | Returns if the oreDict is empty          | bool                                     |
 | firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
