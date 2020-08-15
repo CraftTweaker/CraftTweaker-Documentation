@@ -1,6 +1,6 @@
-# Alloy Furnace
+# 合金炉
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.AlloyFurnaceAlloyFurnace`
 
 ## レシピを追加中
@@ -13,5 +13,5 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.AlloyFurnace.addRecipe(IIngredien
 mods.nuclearcraft.Supercoolermods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
 mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.AlloyFurnace.removeAllRecipes();AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.AlloyFurnace.removeAllRecipes();
+mods.nurcraft.AlloyFurnace.removeAllRecipes();
 ```
