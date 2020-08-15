@@ -1,10 +1,10 @@
-# Metal Press
+# Prensa de Metal
 
-The Metal Press package can be used to add/remove recipes to/from the Immersive Engineering Metal Press.
+El paquete de Prensas de Metal se puede utilizar para añadir/quitar recetas para/desde la Prensa de Metal Inmersiva.
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
+Puedes llamar al paquete MetalPress usando `mods.immersiveengineering.MetalPress`.
 
 ## Añadir Receta
 
@@ -12,21 +12,21 @@ You can call the MetalPress package using `mods.immersiveengineering.MetalPress`
 | --------- | ---------- | ----------------------------------------------------- |
 | Requerido | Salida     | [IItemstack](/Vanilla/Items/IItemStack/)              |
 | Requerido | Input      | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
-| Requerido | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)              |
-| Requerido | Energy     | Entero                                                |
+| Requerido | Molde      | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Energía    | Entero                                                |
 | Requerido | Input Size | Entero                                                |
 
 ### Ejemplo
 
 ```zenscript
-//Example:
-mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
+//Ejemplo:
+mods.immersiveengineering.MetalPress.addRecipe(Salida ItemStack, entrada IIngredient, moho ItemStack, energía de int, @Optional int inputSize);
 
-mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000);
+mods. mmersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000, 16);
 ```
 
-## Remove Recipe
+## Eliminar receta
 
 | Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
@@ -35,13 +35,13 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 ### Ejemplo
 
 ```zenscript
-//Example:
-mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
+//Ejemplo:
+mods.immersiveengineering.MetalPress.removeRecipe(Itemstack output);
 
 mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 ```
 
-## Remove By Mold
+## Quitar por Mold
 
 | Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
@@ -50,8 +50,8 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 ### Ejemplo
 
 ```zenscript
-//Example:
-mods.immersiveengineering.MetalPress.removeRecipeByMold(IItemstack output);
+//Ejemplo:
+mods.immersiveengineering.MetalPress.removeRecipeByMold(Itemstack output);
 
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<minecraft:diamond>);
 ```
