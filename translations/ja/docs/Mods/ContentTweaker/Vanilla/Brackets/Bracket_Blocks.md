@@ -1,8 +1,8 @@
-# Block Bracket Handler
+# ブロックブラケットハンドラ（ブロックブラケットハンドラ）
 
-The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
+Block Bracket Handler はゲーム内のブロックにアクセスできます。 ゲームに登録されているブロックのみを取得できます そのため、Modの追加や削除は、Block Bracket HandlerでModのブロックを参照すると問題が発生する可能性があります。
 
-Blocks are referenced in the Block Bracket handler this way:
+ブロックは次のようにブロックブラケットハンドラで参照されます。
 
 ```zenscript
 <block:modID:blockName>
