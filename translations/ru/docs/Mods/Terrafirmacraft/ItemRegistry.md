@@ -1,6 +1,6 @@
 # Item Registry
 
-## Package
+## Пакет
 ```zenscript
 // Imports ItemRegistry methods into your script
 import mods.terrafirmacraft.ItemRegistry;
