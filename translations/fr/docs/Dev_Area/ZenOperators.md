@@ -1,25 +1,25 @@
-# ZenOperators
+# Opérateurs Zen
 
 [`@ZenOperator`](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/) Annotation
 
-| ZenOperator  | Associated Token                        | TokenAssign / Alternate Token/Additional Info                      |
-| ------------ | --------------------------------------- | ------------------------------------------------------------------ |
-| ADD          | `+`                                     | `+=`                                                               |
-| SUB          | `-`                                     | `-=`                                                               |
-| MUL          | `*`                                     | `*=`                                                               |
-| DIV          | `/`                                     | `/=`                                                               |
-| MOD          | `%`                                     | `%=`                                                               |
-| CAT          | `~`                                     | `~=`                                                               |
-| OR           | `|`                                     | `|=`                                                               |
-| AND          | `&`                                 | `&=`                                                           |
-| XOR          | `^`                                     | `^=`                                                               |
-| NEG          | `-`                                     |                                                                    |
-| NOT          | `!`                                     |                                                                    |
-| INDEXSET     | `[i] = v`                               |                                                                    |
-| INDEXGET     | `[i]`                                   |                                                                    |
-| RANGE        | `i .. v`                                | `i to v`                                                           |
-| CONTAINS     | `in`                                    | `has`                                                              |
-| COMPARE      | `==` `<` `>` `<=` `>=` `!=` | Annotated Method should return an int! (Same as Integer.compare)   |
-| MEMBERGETTER | `.member`                               | Same as [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/) |
-| MEMBERSETTER | `.member = v`                           |                                                                    |
-| EQUALS       | `=`                                     |                                                                    |
+| ZenOperator  | Jeton Associé                           | Attribution de jetons / Jeton alternatif / Informations supplémentaires |
+| ------------ | --------------------------------------- | ----------------------------------------------------------------------- |
+| AJOUTER      | `+`                                     | `+=`                                                                    |
+| SUB          | `-`                                     | `-=`                                                                    |
+| MUL          | `*`                                     | `*=`                                                                    |
+| DIV          | `/`                                     | `/=`                                                                    |
+| MOD          | `%`                                     | `%=`                                                                    |
+| ATTENTION    | `~`                                     | `~=`                                                                    |
+| OU           | `|`                                     | `|=`                                                                    |
+| ET           | `&`                                 | `&=`                                                                |
+| XOR          | `^`                                     | `^=`                                                                    |
+| NEG          | `-`                                     |                                                                         |
+| NON          | `!`                                     |                                                                         |
+| INDEXSET     | `[i] = v`                               |                                                                         |
+| INDEXGET     | `[i]`                                   |                                                                         |
+| RANGE        | `i .. v`                                | `i à v`                                                                 |
+| CONTAINS     | `dans`                                  | `a`                                                                     |
+| COMMENTAIRE  | `==` `<` `>` `<=` `>=` `!=` | Méthode annotée devrait retourner un int! (Identique à Integer.compare) |
+| MEMBERGETTER | `Membre`                                | Même que [`@ZenMemberSetter`](/Dev_Area/ZenAnnotations/ZenMembers/)     |
+| MEMBERSETTRE | `.member = v`                           |                                                                         |
+| EQUALES      | `=`                                     |                                                                         |
