@@ -2,7 +2,7 @@
 
 A `MixRecipeManager` is used to modify existing high oven mix recipe, including those added by ModTweaker.
 
-## Importing the package
+## Importazione del pacchetto
 
 Better be safe than sorry and import the package
 
@@ -30,7 +30,7 @@ This may have surprising results with oredict entries. Since oredict entries are
 
 Generally speaking, if you remove something specific (say, an `IItemStack` with transformers) but an (single) additive addition would allow what you removed plus some other things (say, a more generic `IItemStack`), the whole addition will be cancelled, preventing said other things from being accepted by the High Oven.
 
-| Method                                 | Info                                                      |
+| Metodo                                 | Info                                                      |
 | -------------------------------------- | --------------------------------------------------------- |
 | `removeOxidizer(IIngredient oxidizer)` | Forefully remove the oxidizer from the affected MixRecipe |
 | `removeReducer(IIngredient reducer)`   | Forefully remove the reducer from the affected MixRecipe  |
@@ -43,7 +43,7 @@ All those methods return the same instance they were called one, allowing method
 
 You can add additives to all mix recipe matched by the `MixRecipeManager`. Be careful, as removals have priority (see above).
 
-| Method                                                          | Info                                                            |
+| Metodo                                                          | Info                                                            |
 | --------------------------------------------------------------- | --------------------------------------------------------------- |
 | `addOxidizer(@NotNull IIngredient oxidizer, int consumeChance)` | Add the oxidizer with the specified consume chance (in percent) |
 | `addReducer(@NotNull IIngredient reducer, int consumeChance)`   | Add the reducer with the specified consume chance (in percent)  |
