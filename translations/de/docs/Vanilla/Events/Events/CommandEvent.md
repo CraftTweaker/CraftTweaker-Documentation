@@ -19,8 +19,8 @@ Command event implements the following interfaces:
 
 The following information ca be retrieved/set during the event:
 
-| ZenGetter       | ZenSetter    | Type                                                |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| ZenGetter       | ZenSetter   | Type                                                |
+| --------------- | ----------- | --------------------------------------------------- |
+| `commandSender` | no          | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `command`       | no          | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `Parameter`     | `Parameter` | string array                                        |
