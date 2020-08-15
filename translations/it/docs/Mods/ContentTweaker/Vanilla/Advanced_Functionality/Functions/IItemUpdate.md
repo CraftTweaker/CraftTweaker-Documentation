@@ -1,28 +1,28 @@
 # IItemUpdate
 
-The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) to allow code to be executed whenever the item updates.
+La funzione IItemUpdateFunction può essere aggiunta ad un articolo [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) per consentire che il codice venga eseguito ogni volta che l'elemento aggiorna.
 
-## Importing the package
+## Importazione del pacchetto
 
-If you ever feel the need to import this function's class, here you go:
+Se hai mai sentito la necessità di importare la classe di questa funzione, qui vai:
 
 ```zenscript
 import mods.contenttweaker.IItemUpdate;
 ```
 
-## Syntax
+## Sintassi
 
-We have a void function that takes the following parameters (in order)
+Abbiamo una funzione di vuoto che prende i seguenti parametri (in ordine)
 
-- An [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) representing the item stack itself.
-- An [IWorld object](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) representing the world the action takes place in.
-- An [IEntity object](/Vanilla/Entities/IEntity/) downcast as far as possible, so you can instanceOf up until [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
-- An int representing the slot the item currently is in
-- A boolean stating whether or not the item is currently selected.
+- Un [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) che rappresenta la pila di oggetti stessa.
+- Un [oggetto IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) che rappresenta il mondo in cui si svolge l'azione.
+- Un oggetto IEntity [](/Vanilla/Entities/IEntity/) per quanto possibile in downcast, così puoi instanceOf fino a [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
+- Un int che rappresenta lo slot in cui l'elemento è attualmente in
+- Un booleano che indica se l' elemento è attualmente selezionato.
 
 ```zenscript
 item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
     //CODE GOES HERE!!
-    return;
+    restituisce;
 }
 ```
