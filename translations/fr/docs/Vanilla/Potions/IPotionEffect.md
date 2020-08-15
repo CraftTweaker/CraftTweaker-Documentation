@@ -3,25 +3,25 @@
 An IPotionEffect is an [IPotion](/Vanilla/Potions/IPotion/) that also has a duration and an amplifier (strength) parameter.  
 You can get them from an [IPotion](/Vanilla/Potions/IPotion/) object.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.potions.IPotionEffect;`
 
 ## ZenGetter
 
-| ZenGetter                              | Type                                           |
+| ZenGetter                              | Type de texte                                  |
 | -------------------------------------- | ---------------------------------------------- |
-| duration                               | int                                            |
+| duration                               | Indice                                         |
 | potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
-| doesShowParticles                      | bool                                           |
-| amplifier                              | int                                            |
+| doesShowParticles                      | booléen                                        |
+| amplifier                              | Indice                                         |
 | curativeItems                          | List<[IItemStack](/Vanilla/Items/IItemStack/)> |
-| effectName                             | bool                                           |
-| isAmbient                              | bool                                           |
-| isPotionDurationMax (also a ZenSetter) | bool                                           |
+| effectName                             | booléen                                        |
+| isAmbient                              | booléen                                        |
+| isPotionDurationMax (also a ZenSetter) | booléen                                        |
 
-## ZenMethods
+## Méthodes Zen
 
 ### Is an item a curative item
 
