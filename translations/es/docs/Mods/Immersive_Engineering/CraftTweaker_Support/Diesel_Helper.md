@@ -1,12 +1,12 @@
-# Diesel Helper
+# Ayudante Diesel
 
-The Diesel Handler package can be used to change IE fuels.
+El paquete Diesel Handler puede utilizarse para cambiar los combustibles IE.
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
+Puedes llamar al paquete DieselHandler usando `mods.immersiveengineering.DieselHandler`.
 
-## Add Fuel
+## Añadir combustible
 
 | Requerido | Tipo   | Tipo de Datos                                |
 | --------- | ------ | -------------------------------------------- |
@@ -16,13 +16,13 @@ You can call the DieselHandler package using `mods.immersiveengineering.DieselHa
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
 
 mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 ```
 
-## Remove Fuel
+## Eliminar Petróleo
 
 | Requerido | Tipo   | Tipo de Datos                                |
 | --------- | ------ | -------------------------------------------- |
@@ -31,13 +31,13 @@ mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 ```
 
-## Add Drill Fuel
+## Añadir Petróleo
 
 | Requerido | Tipo   | Tipo de Datos                                |
 | --------- | ------ | -------------------------------------------- |
@@ -46,13 +46,13 @@ mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 ```
 
-## Remove Drill Fuel
+## Quitar Petróleo
 
 | Requerido | Tipo   | Tipo de Datos                                |
 | --------- | ------ | -------------------------------------------- |
@@ -61,7 +61,7 @@ mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
 
 mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>);
