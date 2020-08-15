@@ -1,19 +1,19 @@
 # Kiln
 
-The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
+Il Kiln è un multiblock utilizzato per la lavorazione rapida dei blocchi edilizi, che può essere acquisito attraverso la fusione di qualcosa in un forno.
 
 ## Pacchetto
 `mods.atum.Kiln;`
 
 ## Blacklist
 
-The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
+Le ricette Kiln sono basate sulle ricette di forni vanigliati, smistando tutto oltre ai blocchi di costruzione. La blacklist è un modo per ridurre ulteriormente le ricette che vengono afferrate dalla vaniglia Fornace.
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` A namespaced ID for the input block/item that should be blacklisted.
+- `id` Un ID namespaced per il blocco di ingresso/elemento che dovrebbe essere inserito nella blacklist.
 
-Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
+Rimuove le ricette con l'oggetto/blocco specificato dalle ricette che il Kiln tira dalla fornace vanigliata
 
 ```zenscript
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
@@ -25,10 +25,10 @@ mods.atum.Kiln.blacklist("minecraft:cobblestone");
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `experience` Float number
-- `cookTime` Integer number (If left empty, it'll default to 75)
+- `experience` Numero galleggiante
+- `cookTime` Numero intero (Se lasciato vuoto, sarà predefinito 75)
 
-Adds a recipe with the specified input, output, experience & cook time
+Aggiunge una ricetta con l'input specificato, l'uscita, l'esperienza & il tempo di cuoco
 
 ```zenscript
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
@@ -36,7 +36,7 @@ mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.
 
 ## Rimuovere una RIcetta
 
-The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
+I metodi di rimozione funzionano solo per ricette aggiunte specificamente per il Kiln di Atum (Or altre mods) Per impostazione predefinita in Atum questa sarà solo la ricetta del blocco di piastrelle di ceramica bianco Marl to . Se vuoi rimuovere qualcos'altro, probabilmente stai cercando la blacklist (Documentazione sopra)
 
 ### Rimuovere Ricette in base al Prodotto
 
@@ -50,19 +50,19 @@ Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/II
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 ```
 
-### Remove Recipes by Output & Input
+### Rimuovi Ricette per Uscita & Input
 
 `mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Rimuove la ricetta specifica, con l'output specificato & input
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
-### Other removal methods
+### Altri metodi di rimozione
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+Vedi [Gestori ricette](/recipes/recipe_managers) per altri modi per rimuovere le ricette della ruota rotante
