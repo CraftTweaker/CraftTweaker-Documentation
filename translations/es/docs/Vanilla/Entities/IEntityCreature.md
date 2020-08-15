@@ -2,7 +2,7 @@
 
 A Creature.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityCreature;`
@@ -11,19 +11,19 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
-## Methods
+## Métodos
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Type                                   |
+| ZenGetter            | Tipo                                   |
 | -------------------- | -------------------------------------- |
-| hasPath              | bool                                   |
-| isWithinHomeDistance | bool                                   |
+| hasPath              | pluma                                  |
+| isWithinHomeDistance | pluma                                  |
 | homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float                                  |
-| hasHome              | bool                                   |
+| maximumHomeDistance  | flotante                               |
+| hasHome              | pluma                                  |
 
-### ZenMethods
+### Métodos
 
 #### play living sound
 
