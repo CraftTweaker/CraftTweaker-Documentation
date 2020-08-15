@@ -14,7 +14,7 @@ LivingExperienceDrop Events implement the following interfaces and are able to c
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter            | ZenSetter           | Тип                                  |
 | -------------------- | ------------------- | ------------------------------------ |
@@ -22,6 +22,6 @@ The following information can be retrieved/set during the event:
 | `droppedExperience`  | `droppedExperience` | int                                  |
 | `originalExperience` |                     | int                                  |
 
-## Notes
+## Примечания
 
 `originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
