@@ -1,4 +1,4 @@
-# If you add a page, you must add it to the index here
+# ページを追加する場合は、ここでインデックスに追加する必要があります。
 nav:
   - ホーム: 'index.md'
   - Getting Started With Scripts: 'getting_started.md'
@@ -10,7 +10,7 @@ nav:
       - How to:
           - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
       - Api:
-          - Block:
+          - ブロック:
               - Material:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
@@ -39,11 +39,11 @@ nav:
               - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
               - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
           - Entity:
-              - Player:
+              - プレイヤー:
                   - MCPlayerEntity: 'vanilla/api/entity/player/MCPlayerEntity.md'
           - Event:
               - Entity:
-                  - Player:
+                  - プレイヤー:
                       - MCAdvancementEvent: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
                       - MCAnvilRepairEvent: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
                       - MCArrowLooseEvent: 'vanilla/api/event/entity/player/MCArrowLooseEvent.md'
@@ -117,7 +117,7 @@ nav:
               - BlockPos: 'vanilla/api/util/BlockPos.md'
               - Direction: 'vanilla/api/util/Direction.md'
               - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
-          - World:
+          - ワールド:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
@@ -131,7 +131,7 @@ nav:
         - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
         - Api:
           - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
-        - Block:
+        - ブロック:
           - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
           - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
           - Basic:
@@ -140,7 +140,7 @@ nav:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
           - Stairs:
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
-        - Item:
+        - アイテム:
           - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
           - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
           - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
