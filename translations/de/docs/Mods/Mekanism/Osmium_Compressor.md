@@ -1,6 +1,6 @@
-# Osmium Compressor
+# Osmium-Kompressor
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Osmium Compressor through the command `/ct mekrecipes compressor`
+Ab Mekanism 9.7.0 ist es nun möglich, alle Rezeptstrings des Osmiumkompressors über den Befehl `/ct mekrecipes compressor` anzuzeigen
 
 ## Addition
 
@@ -11,7 +11,7 @@ mods.mekanism.compressor.addRecipe(<mekanism:basicblock:3>, <gas:liquidosmium>, 
 mods.mekanism.compressor.addRecipe(<mekanism:basicblock:1>, <minecraft:netherrack>);
 ```
 
-As of Mekanism 9.7.0 inputGas is no longer restricted to only osmium.
+Ab dem Mekanismus ist 9.7.0 inputGas nicht mehr nur auf Osmium beschränkt.
 
 Auch ab Mekanism 9.7.0 ist es möglich, IIngredients als InputStack statt nur IItemStacks zu verwenden.
 
@@ -30,7 +30,7 @@ Wenn Sie einen Eingabeparameter angeben, wird nur das Rezept entfernt, das besag
 
 ## Entferne alle Rezepte
 
-As of Mekanism 9.7.0 it is now possible to remove all Osmium Compressor recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
+Ab Mekanism 9.7.0 ist es nun möglich, alle Rezepte des Osmiumkompressors zu entfernen. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
 ```zenscript
 mods.mekanism.compressor.removeAllRecipes();
