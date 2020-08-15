@@ -1,21 +1,21 @@
-# Refinery
+# Raffineria
 
-The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
+Il pacchetto di raffineria può essere utilizzato per aggiungere/rimuovere ricette da/per la raffineria di ingegneria immersiva.
 
-## Calling The Package
+## Chiamare Il Pacchetto
 
-You can call the Refinery package using `mods.immersiveengineering.Refinery`.
+È possibile chiamare il pacchetto di raffineria utilizzando `mods.immersiveengineering.Refinery`.
 
-## Add Recipe
+## Aggiungi Ricetta
 
-| Required | Type    | Data Type                                    |
-| -------- | ------- | -------------------------------------------- |
-| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Energy  | Integer                                      |
+| Richiesto | Tipo    | Tipo Di Dati                                 |
+| --------- | ------- | -------------------------------------------- |
+| Richiesto | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Richiesto | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Richiesto | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Richiesto | Energia | Intero                                       |
 
-### Example
+### Esempio
 
 ```zenscript
 //Example
@@ -24,13 +24,13 @@ mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack i
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## Remove Recipe
+## Rimuovi Ricetta
 
-| Type   | Data Type                                    |
+| Tipo   | Tipo Di Dati                                 |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
 //Example
