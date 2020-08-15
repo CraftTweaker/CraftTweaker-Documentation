@@ -1,11 +1,11 @@
-# Vacuum Freezer
+# Congelatore A Vuoto
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.vacuumFreezer`
 
 ## Aggiunta Di Ricette
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
+mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, ingresso IIngredient, int ticktime, int euTick);
 ```
 
 ## Rimozione Ricette
