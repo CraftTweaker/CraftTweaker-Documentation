@@ -2,7 +2,7 @@
 
 You use the IMachineRegistry to register a new [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) to the game, or to retrieve a previously registered machine afterwards.
 
-## Importing the package
+## Importazione del pacchetto
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
@@ -48,15 +48,15 @@ extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
 As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
 The parameters are:
 
-| Name                | Type                                                                |
+| Nome                | Tipo                                                                |
 | ------------------- | ------------------------------------------------------------------- |
-| name                | string                                                              |
+| nome                | stringa                                                             |
 | energyBufferSize    | int                                                                 |
 | energyTransferLimit | int                                                                 |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture        | string                                                              |
-| frontTextureActive  | string                                                              |
+| frontTexture        | stringa                                                             |
+| frontTextureActive  | stringa                                                             |
 | color (optional)    | int (defaults to `0xffffff` (black))                                |
 
 The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
