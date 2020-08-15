@@ -14,6 +14,6 @@ This interface extends [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), whi
 
 ## ZenGetter
 
-| name   | type                                 |
+| name   | typ                                  |
 | ------ | ------------------------------------ |
 | player | [IPlayer](/Vanilla/Players/IPlayer/) |
