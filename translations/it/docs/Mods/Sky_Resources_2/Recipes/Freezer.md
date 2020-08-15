@@ -2,18 +2,18 @@
 
 The *freezer* package is used for adding or removing recipes to/from the Freezer.
 
-## Calling
+## Chiamata
 
 You can call the *freezer* package using `mods.skyresources.freezer`
 
-## Recipe Addition
+## Aggiunta Ricetta
 
 ```zenscript
 //mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
 mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
-## Recipe Removal
+## Rimozione Ricetta
 
 ```zenscript
 //mods.skyresources.freezer.removeRecipe(IItemStack output);
