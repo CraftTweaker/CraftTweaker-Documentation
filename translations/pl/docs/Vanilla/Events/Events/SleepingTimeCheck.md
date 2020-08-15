@@ -9,14 +9,14 @@ Result:
 
 Thus, this event allows you to keep the player sleeping, but it does not allow you to specifically stop them from sleeping.
 
-## Event Class
+## Klasa wydarzenia
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.SleepingTimeCheck`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 SleepingTimeCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)
