@@ -1,6 +1,6 @@
 # ILogger
 
-Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
+Classe di base utilizzata per interfacciarsi con il file crafttweaker.log e altri logger (come il logger del giocatore).
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -13,58 +13,58 @@ crafttweaker.api.ILogger
 ## Metodi
 ### debug
 
-Logs a debug message.
+Registra un messaggio di debug.
 
 ```zenscript
-logger.debug(message as String);
+logger.debug(messaggio come Stringa);
 logger.debug("message");
 ```
 
-| Parametro | Tipo    | Descrizione           |
-| --------- | ------- | --------------------- |
-| message   | Stringa | message to be logged. |
+| Parametro | Tipo    | Descrizione              |
+| --------- | ------- | ------------------------ |
+| messaggio | Stringa | messaggio da registrare. |
 
 
-### error
+### errore
 
-Logs an error message.
+Registra un messaggio di errore.
 
 ```zenscript
-logger.error(message as String);
-logger.error("message");
+logger.error(messaggio come Stringa);
+logger.error("messaggio");
 ```
 
-| Parametro | Tipo    | Descrizione           |
-| --------- | ------- | --------------------- |
-| message   | Stringa | message to be logged. |
+| Parametro | Tipo    | Descrizione              |
+| --------- | ------- | ------------------------ |
+| messaggio | Stringa | messaggio da registrare. |
 
 
 ### info
 
-Logs an info message.
+Registra un messaggio di informazioni.
 
 ```zenscript
-logger.info(message as String);
-logger.info("message");
+logger.info(messaggio come Stringa);
+logger.info("messaggio");
 ```
 
-| Parametro | Tipo    | Descrizione           |
-| --------- | ------- | --------------------- |
-| message   | Stringa | message to be logged. |
+| Parametro | Tipo    | Descrizione              |
+| --------- | ------- | ------------------------ |
+| messaggio | Stringa | messaggio da registrare. |
 
 
-### warning
+### avviso
 
-Logs a warning message.
+Registra un messaggio di avviso.
 
 ```zenscript
-logger.warning(message as String);
+logger.warning(messaggio come Stringa);
 logger.warning("message");
 ```
 
-| Parametro | Tipo    | Descrizione           |
-| --------- | ------- | --------------------- |
-| message   | Stringa | message to be logged. |
+| Parametro | Tipo    | Descrizione              |
+| --------- | ------- | ------------------------ |
+| messaggio | Stringa | messaggio da registrare. |
 
 
 
