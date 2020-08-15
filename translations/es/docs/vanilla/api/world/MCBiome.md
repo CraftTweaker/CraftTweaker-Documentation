@@ -11,60 +11,60 @@ crafttweaker.api.world.MCBiome
 ## Métodos
 ### getSpawns
 
-Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+Devuelve List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(clasificación como crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parámetro      | Tipo                                                                                           | Descripción             |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| Parámetro     | Tipo                                                                                         | Descripción                   |
+| ------------- | -------------------------------------------------------------------------------------------- | ----------------------------- |
+| clasificación | [crafttweaker.api.entity.Clasificación de MCs](/vanilla/api/entities/MCEntityClassification) | No se proporcionó descripción |
 
 
-### getTempCategory
+### Obtener categoría de Tempso
 
-Returns String
+Devuelve Cadena
 
 ```zenscript
 myMCBiome.getTempCategory();
 ```
 
-### getTemperature
+### getTemperatura
 
-Returns float
+Devuelve flotante
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+myMCBiome.getTemperature(pos como crafttweaker.api.util.BlockPos);
 ```
 
-| Parámetro | Tipo                                                         | Descripción             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parámetro | Tipo                                                         | Descripción                   |
+| --------- | ------------------------------------------------------------ | ----------------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No se proporcionó descripción |
 
 
 
 ## Propiedades
 
-| Nombre             | Tipo     | Has Getter | Has Setter |
-| ------------------ | -------- | ---------- | ---------- |
-| category           | Cadena   | verdad     | falso      |
-| defaultTemperature | flotante | verdad     | falso      |
-| depth              | flotante | verdad     | falso      |
-| doesRain           | boolean  | verdad     | falso      |
-| doesSnow           | boolean  | verdad     | falso      |
-| downfall           | flotante | verdad     | falso      |
-| isHighHumidity     | boolean  | verdad     | falso      |
-| isMutation         | boolean  | verdad     | falso      |
-| isTempCold         | boolean  | verdad     | falso      |
-| isTempMedium       | boolean  | verdad     | falso      |
-| isTempOcean        | boolean  | verdad     | falso      |
-| isTempWarm         | boolean  | verdad     | falso      |
-| padre              | Cadena   | verdad     | falso      |
-| rainType           | Cadena   | verdad     | falso      |
-| scale              | flotante | verdad     | falso      |
-| spawningChange     | flotante | verdad     | falso      |
-| translationKey     | Cadena   | verdad     | falso      |
-| waterColor         | int      | verdad     | falso      |
-| waterFogColor      | int      | verdad     | falso      |
+| Nombre                  | Tipo     | Tiene Obtén | Tiene Setter |
+| ----------------------- | -------- | ----------- | ------------ |
+| categoría               | Cadena   | verdad      | falso        |
+| Temperatura por defecto | flotante | verdad      | falso        |
+| profundidad             | flotante | verdad      | falso        |
+| Lluvia                  | boolean  | verdad      | falso        |
+| Nieve                   | boolean  | verdad      | falso        |
+| caída                   | flotante | verdad      | falso        |
+| es alta humedad         | boolean  | verdad      | falso        |
+| es Mutación             | boolean  | verdad      | falso        |
+| es Tempfrío             | boolean  | verdad      | falso        |
+| isTempMedia             | boolean  | verdad      | falso        |
+| isTempOcean             | boolean  | verdad      | falso        |
+| isTempWarm              | boolean  | verdad      | falso        |
+| padre                   | Cadena   | verdad      | falso        |
+| tipo de lluvia          | Cadena   | verdad      | falso        |
+| escala                  | flotante | verdad      | falso        |
+| spawningChange          | flotante | verdad      | falso        |
+| translationKey          | Cadena   | verdad      | falso        |
+| acuarela                | int      | verdad      | falso        |
+| color del agua          | int      | verdad      | falso        |
 
