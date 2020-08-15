@@ -1,9 +1,9 @@
 # ICTPlayer
 
-An ICTPlayer is ContentTweaker's special [IPlayer](/Vanilla/Players/IPlayer/) object.  
-That means all of [IPlayer's](/Vanilla/Players/IPlayer/) methods are also available on this object!
+ICTPlayer はContentTweaker の特別な [IPlayer](/Vanilla/Players/IPlayer/) オブジェクトです。  
+つまり、すべての [IPlayer の](/Vanilla/Players/IPlayer/) メソッドもこのオブジェクトで利用できます！
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Player;`
@@ -12,8 +12,8 @@ It might be required for you to import the package if you encounter any issues (
 
 `IMutableItemStack getHeldItem(Hand hand);`
 
-Parameters:
+パラメータ:
 
-- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → Main or Off Hand
+- [手](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) → メインまたはオフ
 
-Returns the [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) held at the given [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/).
+与えられた [ハンド](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) で保持されている [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/)を返します。
