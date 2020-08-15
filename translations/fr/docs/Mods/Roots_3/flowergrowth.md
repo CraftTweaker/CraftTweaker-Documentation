@@ -1,10 +1,10 @@
-### Class
+### Classe
 
 ```zenscript
 import mods.roots.FlowerGrowth;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void removeRecipe(
@@ -33,7 +33,7 @@ void addRecipeBlock(
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.FlowerGrowth;
