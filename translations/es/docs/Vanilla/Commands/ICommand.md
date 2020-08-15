@@ -2,7 +2,7 @@
 
 An ICommand Object represents a command ingame.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.command.ICommand;`
@@ -16,17 +16,17 @@ It might be required for you to import the package if you encounter any issues (
     </th>
     
     <th>
-      Return Type
+      Tipo de devolución
     </th>
   </tr>
   
   <tr>
     <td>
-      name
+      nombre
     </td>
     
     <td>
-      string
+      cadena
     </td>
   </tr>
   
@@ -41,7 +41,7 @@ It might be required for you to import the package if you encounter any issues (
   </tr>
 </table>
 
-## ZenMethods
+## Métodos
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
