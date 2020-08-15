@@ -2,16 +2,16 @@
 
 A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
 ## Реализованные интерфейсы
-MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
+MCToolType implements the following interfaces. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Конструкторы
@@ -60,12 +60,12 @@ Return type: String
 
 ## Свойства
 
-| Name          | Тип    | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| Название         | Тип    | Имеет Getter | Имеет Setter |
+| ---------------- | ------ | ------------ | ------------ |
+| командная строка | String | true         | false        |
+| имя              | String | true         | false        |
 
-## Operators
+## Операторы
 ### EQUALS
 
 Compares if two given MCToolType objects are equal
@@ -79,9 +79,9 @@ Compares if two given MCToolType objects are equal
 | -------- | ------ | ---------------- |
 | o        | Object | The other object |
 
-## Casters
+## Утилиты
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| String         | false            |
 
