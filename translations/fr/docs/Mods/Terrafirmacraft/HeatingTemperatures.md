@@ -1,13 +1,13 @@
-# Heating Temperatures
+# Températures de chauffage
 
-- Warming starts at 1, ends at 80
-- Hot starts at 80, ends at 210
-- Very Hot starts at 210, ends at 480
-- Faint Red starts at 480, ends at 580
-- Dark Red starts at 580, ends at 730
-- Bright Red starts at 730, ends at 930
-- Orange starts at 930, ends at 1100
-- Yellow starts at 1100, ends at 1300
-- Yellow White starts at 1300, ends at 1400
-- White starts at 1400, ends at 1500
-- Brilliant White starts at 1500
+- Le chauffage commence à 1, se termine à 80
+- Chaud commence à 80 ans, se termine à 210
+- Très chaud commence à 210, se termine à 480
+- Le rouge pâle commence à 480, se termine à 580
+- Le rouge foncé commence à 580, se termine à 730
+- Le rouge vif commence à 730, se termine à 930
+- Orange commence à 930, se termine à 1100
+- Le jaune commence à 1100, se termine à 1300
+- Le blanc jaune commence à 1300, se termine à 1400
+- Le blanc commence à 1400, se termine à 1500
+- Brillant White commence à 1500
