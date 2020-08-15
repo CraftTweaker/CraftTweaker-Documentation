@@ -22,7 +22,7 @@ val wItemStack2 = itemStack.weight(0.2);
 
 ## ZenGetter
 
-| ZenGetter | What does it do                                      | Rückgabetyp                              |
+| ZenGetter | Was macht es                                         | Rückgabetyp                              |
 | --------- | ---------------------------------------------------- | ---------------------------------------- |
 | stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
 | chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
