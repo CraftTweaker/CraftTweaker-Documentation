@@ -23,9 +23,9 @@ Return type: boolean
 myRecipeFilter.test(name as String);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| name      | 文字列型 | No description provided |
+| パラメータ | タイプ  | 説明                      |
+| ----- | ---- | ----------------------- |
+| name  | 文字列型 | No description provided |
 
 
 
