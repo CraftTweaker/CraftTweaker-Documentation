@@ -1,32 +1,32 @@
-# Reservoir
+# Reservas
 
-## registerReservoir
+## registrarreservorio
 
-| Tipo            | Tipo de Datos                                |
-| --------------- | -------------------------------------------- |
-| Name Identifier | String                                       |
-| Fluido          | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimum Size    | Entero                                       |
-| Maximum Size    | Entero                                       |
-| Replenish Rate  | Entero                                       |
-| Weight          | Entero                                       |
+| Tipo                    | Tipo de Datos                                |
+| ----------------------- | -------------------------------------------- |
+| Identificador de nombre | Cadena                                       |
+| Fluido                  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Tamaño mínimo           | Entero                                       |
+| Tamaño máximo           | Entero                                       |
+| Reponer tasa            | Entero                                       |
+| Peso                    | Entero                                       |
 
-### Weight
+### Peso
 
-Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
+El peso es la posibilidad ponderada de un trozo que contiene ese depósito de líquido específico. El peso es contado como en X en Total.
 
 So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
 
-Then each respective entry will have a weighted chance of:
+Entonces cada entrada respectiva tendrá una probabilidad ponderada de:
 
-    5  in 34
-    5  in 34
-    6  in 34
-    8  in 34
-    10 in 34
+    5 en 34
+    5 en 34
+    6 en 34
+    8 en 34
+    10 en 34
     
 
-### Code Example:
+### Ejemplo de código:
 
 ```zenscript
 mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
