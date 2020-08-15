@@ -21,8 +21,8 @@ ItemFished Events implement the following interfaces and are able to call all of
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter          | Type                                       |
+| ZenGetter | ZenSetter          | Type de texte                              |
 | --------- | ------------------ | ------------------------------------------ |
-| `damage`  |                    | int                                        |
-|           | `additionalDamage` | int                                        |
-| `drops`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
+| `damage`  |                    | Indice                                     |
+|           | `additionalDamage` | Indice                                     |
+| `gouttes` |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
