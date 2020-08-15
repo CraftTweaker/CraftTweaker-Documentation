@@ -21,21 +21,21 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                                 |
+| ZenGetter    | Type de retour                              |
 | ------------ | ------------------------------------------- |
 | `canceled`   | boolean                                     |
 | `processed`  | boolean                                     |
-| `x`          | int                                         |
-| `y`          | int                                         |
-| `z`          | int                                         |
+| `x`          | Indice                                      |
+| `y`          | Indice                                      |
+| `z`          | Indice                                      |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `Bloquer`    | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `dimension`  | Indice                                      |
+| `Élément`    | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled
 - `event.process()` sets the event as processed
