@@ -1,30 +1,30 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
+Mutable Item Stack - специальный объект [IItemStack](/Vanilla/Items/IItemStack/) , который можно получить только из [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
+Это означает, что все методы [IItemStack](/Vanilla/Items/IItemStack/)и [Igredients](/Vanilla/Variable_Types/IIngredient/)!
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MutableItemStack;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.MutableItemStack;`
 
 ## ZenMethods
 
-### Quantity
+### Количество
 
-A Stack's count is the number of items in that stack!
+Количество стеков — это количество предметов в этом стеке!
 
-| Метод           | Parameter Type | Описание                                            |
-| --------------- | -------------- | --------------------------------------------------- |
-| setCount(count) | int            | Sets the stack's count to the `count` provided      |
-| grow(count)     | int            | Increases the stack's count by the `count` provided |
-| shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+| Метод                | Тип параметра | Описание                                                        |
+| -------------------- | ------------- | --------------------------------------------------------------- |
+| setCount(count)      | int           | Устанавливает количество стеков на `количество предоставленных` |
+| grow(count)          | int           | Увеличивает количество стеков на `предоставленное`              |
+| усадьба (количество) | int           | Уменьшает количество стека на `предоставленном количестве`      |
 
-### Damage
+### Урон
 
-`damage(int amount, ICTPlayer player)`
+`повреждение (сумма подсказки, игрок в МТПлеер)`
 
-Parameters:
+Параметры:
 
-- int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item
+- int сумма → Количество очков урона для придания предмету
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) игрок → игрок/сущность повреждает предмет
