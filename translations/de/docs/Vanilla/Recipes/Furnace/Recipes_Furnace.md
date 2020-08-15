@@ -4,7 +4,7 @@ CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fue
 
 ## Recipes
 
-### Removal
+### Entfernen
 
 There are 2 ways to remove Furnace recipes, being:
 
@@ -69,9 +69,9 @@ furnace.getFuel(IItemStack item);
 
 This will return the burn value as an Integer
 
-## Examples
+## Beispiele
 
-### Removal
+### Entfernen
 
 This will remove all Furnace recipes that outputs `<minecraft:glass>`.
 
