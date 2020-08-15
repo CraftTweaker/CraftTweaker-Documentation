@@ -1,10 +1,10 @@
-# Crucible
+# Crogiolo
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Crucible`
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, int energy);
@@ -12,7 +12,7 @@ mods.thermalexpansion.Crucible.addRecipe(ILiquidStack output, IItemStack input, 
 mods.thermalexpansion.Crucible.addRecipe(<liquid:refined_oil>, <minecraft:diamond>, 50);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.thermalexpansion.Crucible.removeRecipe(IItemStack input);
