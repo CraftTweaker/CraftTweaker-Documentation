@@ -1,6 +1,6 @@
-# Solid Canning Machine
+# Solidna maszyna do puszkowania
 
-## Importing the Package
+## Importowanie pakietu
 `mods.techreborn.solidCanningMachine`
 
 ## Dodawanie przepisów
