@@ -1,6 +1,6 @@
 # Basin Heating
 
-## Addition
+## 加
 
 ```zenscript
 import mods.cuisine.BasinHeating;
@@ -12,7 +12,7 @@ BasinHeating.add(<liquid:lava> * 1000, <item:minecraft:diamond>);
 BasinHeating.add(<liquid:water> * 1000, <item:minecraft:diamond>, 100);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 import mods.cuisine.BasinHeating;
