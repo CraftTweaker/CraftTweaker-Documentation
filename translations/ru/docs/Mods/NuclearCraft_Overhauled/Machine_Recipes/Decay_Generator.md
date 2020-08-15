@@ -1,11 +1,11 @@
 # Decay Generator
 
-## Importing the Package
-`mods.nuclearcraft.DecayGenerator`
+## Импортирование пакета
+`mods.nuclearcraft.Генератор деканов`
 
 ## Добавление рецептов
 ```zenscript
-mods.nuclearcraft.DecayGenerator.addRecipe(IIngredient blockInput, IIngredient blockOutput, double meanLifetime, double power, double radiation);
+mods.nuclearcraft.DecayGenerator.addRecipe(IIngredient blockInput, IIngredient blockOutput, двойное средство, двойная мощность, двойное излучение);
 ```
 
 ## Удаление рецептов
