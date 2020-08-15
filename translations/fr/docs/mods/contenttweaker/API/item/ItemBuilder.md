@@ -1,135 +1,135 @@
-# ItemBuilder
+# Constructeur d'élément
 
-The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
+Le constructeur d'objet est pour... construire des objets (surprise!) <p> Il vous permet de définir différentes propriétés qui changeront le comportement de l'élément et ce qu'il peut faire. Vous pouvez également utiliser [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) pour passer à un constructeur plus spécialisé, s'il y en a. <p> Pour dire à CoT que vous voulez que l'élément apparaisse en jeu, vous devez appeler [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) et spécifiez un chemin d'emplacement de ressource valide.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `contenttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-mods.contenttweaker.item.ItemBuilder
+mods.contenttweaker.item.Constructeur d'élément
 ```
 
-## Implemented Interfaces
-ItemBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+ItemBuilder implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Constructors
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) for that.
+## Constructeurs
+Crée un nouveau constructeur d'éléments. N'oubliez pas que cela ne fera _pas_ créer un nouveau bloc dans le jeu, vous devez appeler [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) pour cela.
 ```zenscript
-new mods.contenttweaker.item.ItemBuilder();
+nouvel élément mods.contenttweaker.item.Constructeur d'élément();
 ```
 
 ## Méthodes
-### build
+### construire
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instructions de CoT pour construire ce que ce constructeur est censé construire.
 
 ```zenscript
 new ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| Paramètre        | Type de texte        | Libellé                              |
-| ---------------- | -------------------- | ------------------------------------ |
-| resourceLocation | Chaîne de caractères | The resource path to give this block |
+| Paramètre                    | Type de texte        | Libellé                                       |
+| ---------------------------- | -------------------- | --------------------------------------------- |
+| Localisation de la ressource | Chaîne de caractères | Le chemin de la ressource pour donner ce bloc |
 
 
-### withItemGroup
+### avec un groupe d'articles
 
-Allows you to set the item group that this item will appear in. By default, items will land in `misc`
+Vous permet de définir le groupe d'articles dans lequel cet élément apparaîtra. Par défaut, les objets débarqueront dans `Divers`
 
- Returns: `This builder, used for method chaining`
+ Renvoie : `Ce constructeur, utilisé pour l'enchaînement de méthodes`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Type de retour: [mods.contenttweaker.item.Constructeur d'objets](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGroup);
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| Paramètre | Type de texte                                                                     | Libellé                                   |
-| --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
-| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| Paramètre      | Type de texte                                                                     | Libellé                                                         |
+| -------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Groupe d'items | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | Le groupe d'articles dans lequel cet élément devrait apparaître |
 
 
-### withMaxDamage
+### Avec un maximum de dégâts
 
-Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
+Vous permet de définir les dégâts maximaux pour cet élément.<br/> Soyez averti que cela ne peut pas être utilisé en combinaison avec [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
 
- Returns: `This builder, used for method chaining`
+ Renvoie : `Ce constructeur, utilisé pour l'enchaînement de méthodes`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Type de retour: [mods.contenttweaker.item.Constructeur d'objets](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(maxDamage as int);
+Nouvel ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Paramètre | Type de texte | Libellé                |
-| --------- | ------------- | ---------------------- |
-| maxDamage | Indice        | The maximum stack size |
+| Paramètre | Type de texte | Libellé                       |
+| --------- | ------------- | ----------------------------- |
+| maxDamage | Indice        | La taille maximale de la pile |
 
 
-### withMaxStackSize
+### Avec MaxStackSize
 
-Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
+Vous permet de définir la taille maximale de la pile pour cet élément.<br/> Soyez averti que cela ne peut pas être utilisé en combinaison avec [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
 
- Returns: `This builder, used for method chaining`
+ Renvoie : `Ce constructeur, utilisé pour l'enchaînement de méthodes`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Type de retour: [mods.contenttweaker.item.Constructeur d'objets](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxStackSize(maxStackSize as int);
+Nouveau ItemBuilder().withMaxStackSize(maxStackSize comme int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| Paramètre    | Type de texte | Libellé                |
-| ------------ | ------------- | ---------------------- |
-| maxStackSize | Indice        | The maximum stack size |
+| Paramètre    | Type de texte | Libellé                       |
+| ------------ | ------------- | ----------------------------- |
+| maxStackSize | Indice        | La taille maximale de la pile |
 
 
-### withNoRepair
+### sans réparation
 
-Sets that this item may not be repaired in an anvil Returns: `This builder, used for method chaining`
+Définit que cet élément ne peut pas être réparé dans une enclume Retours: `Ce constructeur, utilisé pour l'enchaînement de méthodes`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Type de retour: [mods.contenttweaker.item.Constructeur d'objets](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withNoRepair();
+Nouvel ItemBuilder().sans réparation();
 ```
 
-### withRarity
+### avec rareté
 
-Allows you to set the item's rarity
+Vous permet de définir la rareté de l'objet
 
- Returns: `This builder, used for method chaining`
+ Renvoie : `Ce constructeur, utilisé pour l'enchaînement de méthodes`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Type de retour: [mods.contenttweaker.item.Constructeur d'objets](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| Paramètre | Type de texte        | Libellé    |
-| --------- | -------------------- | ---------- |
-| rareté    | Chaîne de caractères | The rarity |
+| Paramètre | Type de texte        | Libellé   |
+| --------- | -------------------- | --------- |
+| rareté    | Chaîne de caractères | La rareté |
 
 
-### withType
+### avec type
 
-Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method. Returns: `A builder with the given item.`
+Définit le type spécifique de cet élément. Après que cette méthode soit appelée le contexte du constructeur passera au constructeur de type le plus fourni. Cela signifie que les méthodes de ce constructeur ne seront plus disponibles, donc toutes les propriétés que vous souhaitez définir doivent être définies avant d'appeler cette méthode. Renvoie : `Un constructeur avec l'élément donné.`
 
-Return type: T
+Type de retour: T
 
 ```zenscript
 new ItemBuilder().withType<T>();
-new ItemBuilder().withType<mods.contenttweaker.item.tool.ItemBuilderTool>();
+new ItemBuilder().withType<mods.contenttweaker.item.tool.Outil ItemBuilder>();
 ```
 
-| ParameterName | Bounds                                                                                    |
-| ------------- | ----------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
+| Nom du paramètre | Limites                                                                                   |
+| ---------------- | ----------------------------------------------------------------------------------------- |
+| TT               | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
 
 
