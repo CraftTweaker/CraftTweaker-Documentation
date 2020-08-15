@@ -1,7 +1,7 @@
 # Fabrication Chamber
 ## Not fully implimented, only takes one input.
 
-## Package
+## パッケージ
 ```zenscript
 import mods.calculator.fabricationChamber;
 ```
@@ -11,12 +11,12 @@ import mods.calculator.fabricationChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
-## Addition
+## 加算
 ```zenscript
 fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## 削除
 ```zenscript
 fabricationChamber.removeRecipe(IIngredient input);
 ```
