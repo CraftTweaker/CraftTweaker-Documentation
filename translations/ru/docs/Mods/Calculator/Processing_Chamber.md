@@ -1,6 +1,6 @@
 # Processing Chamber
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.processingChamber;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.processingChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Сложение
 ```zenscript
 processingChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 processingChamber.removeRecipe(IIngredient output);
 ```
