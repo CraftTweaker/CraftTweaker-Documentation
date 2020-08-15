@@ -1,11 +1,11 @@
-# Vessel
+# 船
 
 ## 加算
 
 ```zenscript
 import mods.cuisine.Vessel;
 
-// All parameter named 'extra' refers to the extra input.
+// All parameter named 'extra' is to the extra input.
 Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
 Vessel.add(IItemStack input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IOreDictEntry extra);
 Vessel.add(IOreDictEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid, IItemStack extra);
@@ -34,6 +34,6 @@ Vessel.remove();
 
 Vessel.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除します！
 Vessel.removeAll();
 ```
