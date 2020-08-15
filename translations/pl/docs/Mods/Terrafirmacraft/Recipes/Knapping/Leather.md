@@ -1,25 +1,25 @@
-# Leather Knapping
+# Skórzany Kupiec
 
 ## Pakiet
 ```zenscript
-import mods.terrafirmacraft.leatherKnapping;
+importuj mods.terrafirmacraft.leatherKnapping;
 ```
 
 ## Dodanie
 
 ```zenscript
-leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
+letherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
 ## Usuwanie
 
 ```zenscript
-leatherKnapping.removeRecipe(IItemStack output);
-leatherKnapping.removeRecipe(String registryName);
+SktherKnapping.removeRecipe(wyjście IItemStack);
+leatherKnapping.removeRecipe(RejeststryName);
 ```
 
 ## Przykład
 ```zenscript
-// quiver recipe
+// receptura na quiver
 leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
 ```
