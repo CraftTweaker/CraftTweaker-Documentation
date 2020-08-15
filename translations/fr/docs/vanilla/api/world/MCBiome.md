@@ -1,9 +1,9 @@
 # MCBiome
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
@@ -11,60 +11,60 @@ crafttweaker.api.world.MCBiome
 ## Méthodes
 ### getSpawns
 
-Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+Retourne la liste<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(classification comme crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Paramètre      | Type de texte                                                                                  | Libellé                 |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| Paramètre      | Type de texte                                                                                  | Libellé                    |
+| -------------- | ---------------------------------------------------------------------------------------------- | -------------------------- |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Aucune description fournie |
 
 
-### getTempCategory
+### Obtenir une catégorie temporaire
 
-Returns String
+Retourne une chaîne de caractères
 
 ```zenscript
 myMCBiome.getTempCategory();
 ```
 
-### getTemperature
+### format@@0 getTemperature
 
-Returns float
+Renvoie un flottant
 
 ```zenscript
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Paramètre | Type de texte                                                | Libellé                 |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Paramètre | Type de texte                                                | Libellé                    |
+| --------- | ------------------------------------------------------------ | -------------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Aucune description fournie |
 
 
 
 ## Propriétés
 
-| Nom                | Type de texte        | Has Getter | Has Setter |
-| ------------------ | -------------------- | ---------- | ---------- |
-| category           | Chaîne de caractères | vrai       | Faux       |
-| defaultTemperature | flottant             | vrai       | Faux       |
-| depth              | flottant             | vrai       | Faux       |
-| doesRain           | boolean              | vrai       | Faux       |
-| doesSnow           | boolean              | vrai       | Faux       |
-| downfall           | flottant             | vrai       | Faux       |
-| isHighHumidity     | boolean              | vrai       | Faux       |
-| isMutation         | boolean              | vrai       | Faux       |
-| isTempCold         | boolean              | vrai       | Faux       |
-| isTempMedium       | boolean              | vrai       | Faux       |
-| isTempOcean        | boolean              | vrai       | Faux       |
-| isTempWarm         | boolean              | vrai       | Faux       |
-| parent             | Chaîne de caractères | vrai       | Faux       |
-| rainType           | Chaîne de caractères | vrai       | Faux       |
-| scale              | flottant             | vrai       | Faux       |
-| spawningChange     | flottant             | vrai       | Faux       |
-| translationKey     | Chaîne de caractères | vrai       | Faux       |
-| waterColor         | Indice               | vrai       | Faux       |
-| waterFogColor      | Indice               | vrai       | Faux       |
+| Nom                         | Type de texte        | A un Getter | A un Setter |
+| --------------------------- | -------------------- | ----------- | ----------- |
+| Catégorie                   | Chaîne de caractères | vrai        | Faux        |
+| Température par défaut      | flottant             | vrai        | Faux        |
+| profondeur                  | flottant             | vrai        | Faux        |
+| pleuve                      | boolean              | vrai        | Faux        |
+| Neige                       | boolean              | vrai        | Faux        |
+| chute                       | flottant             | vrai        | Faux        |
+| isHighHumidité              | boolean              | vrai        | Faux        |
+| isMutation                  | boolean              | vrai        | Faux        |
+| Froid isTempo               | boolean              | vrai        | Faux        |
+| isTempMoyen                 | boolean              | vrai        | Faux        |
+| isTempOcean                 | boolean              | vrai        | Faux        |
+| isTempWarm                  | boolean              | vrai        | Faux        |
+| parent                      | Chaîne de caractères | vrai        | Faux        |
+| Type de pluie               | Chaîne de caractères | vrai        | Faux        |
+| Echelle                     | flottant             | vrai        | Faux        |
+| spawningChange              | flottant             | vrai        | Faux        |
+| Clé de traduction           | Chaîne de caractères | vrai        | Faux        |
+| aquarelle                   | Indice               | vrai        | Faux        |
+| Couleur du brouillard d'eau | Indice               | vrai        | Faux        |
 
