@@ -2,7 +2,7 @@
 
 Using this package you can create custom enchantments for tools, weapons and probably everything else.
 
-## Importing the class
+## Importation de la classe
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.enchantments.EnchantmentBuilder;`
@@ -28,36 +28,36 @@ myChant.register();
 
 You can set and get these properties using `myChant.name`.
 
-| name            | Type                                                                               |
+| Nom             | Type de texte                                                                      |
 | --------------- | ---------------------------------------------------------------------------------- |
-| name            | string                                                                             |
-| allowedOnBooks  | bool                                                                               |
+| Nom             | chaîne de caractères                                                               |
+| allowedOnBooks  | booléen                                                                            |
 | applicableSlots | [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/)[] (default: empty) |
-| curse           | bool                                                                               |
+| curse           | booléen                                                                            |
 | domain          | string (default: "contenttweaker")                                                 |
 | maxLevel        | int (default: 1)                                                                   |
 | minLevel        | int (default: 1)                                                                   |
 | rarity          | string (use the custom methods below)                                              |
-| treasure        | bool                                                                               |
-| type            | string (use the custom methods below)                                              |
+| treasure        | booléen                                                                            |
+| Type de type    | string (use the custom methods below)                                              |
 
 ## Calculated Properties
 
 You can set and get these properties functions.
 
-| name                       | parameters                                                                                                                                                                                                             | Return Type |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| canApply                   | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
-| canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | bool        |
-| canApplyTogether           | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) other                                                 | bool        |
-| calcDamageByCreature       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [String]() creatureType                                                                                        | float       |
-| calcEnchantabilityMin      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | int         |
-| calcEnchantabilityMax      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | int         |
-| calcModifierDamage         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [IDamageSource](/Vanilla/Damage/IDamageSource/) damageSource                                                   | int         |
-| calcTranslatedName         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | string      |
-|                            |                                                                                                                                                                                                                        |             |
-| onEntityDamaged            | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) target, [int]() level   | void        |
-| onUserHurt                 | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) attacker, [int]() level | void        |
+| Nom                        | parameters                                                                                                                                                                                                             | Type de retour       |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| canApply                   | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | booléen              |
+| canApplyAtEnchantmentTable | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IItemStack](/Vanilla/Items/IItemStack/) item                                                                                 | booléen              |
+| canApplyTogether           | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) other                                                 | booléen              |
+| calcDamageByCreature       | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [String]() creatureType                                                                                        | flottant             |
+| calcEnchantabilityMin      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | Indice               |
+| calcEnchantabilityMax      | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | Indice               |
+| calcModifierDamage         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level, [IDamageSource](/Vanilla/Damage/IDamageSource/) damageSource                                                   | Indice               |
+| calcTranslatedName         | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [int]() level                                                                                                                 | chaîne de caractères |
+|                            |                                                                                                                                                                                                                        |                      |
+| onEntityDamaged            | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) target, [int]() level   | null                 |
+| onUserHurt                 | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) thisEnchantment, [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) user, [IEntity](/Vanilla/Entities/IEntity/) attacker, [int]() level | null                 |
 
 ## Rarity and Type
 
@@ -85,7 +85,7 @@ myChant.setTypeBow()
 myChant.setTypeWearable()
 ```
 
-## Example
+## Exemple
 
 ```zenscript
 #loader contenttweaker
