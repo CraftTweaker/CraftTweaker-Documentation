@@ -1,11 +1,11 @@
 
-### Class
+### Classe
 
 ```zenscript
 import mods.roots.SummonCreatures;
 ```
 
-#### Methods
+#### Metodi
 
 ```zenscript
 void addEntity(
@@ -56,7 +56,7 @@ void clearLifeEssence();
 ---
 
 
-### Examples
+### Esempi
 
 ```zenscript
 import mods.roots.SummonCreatures;
