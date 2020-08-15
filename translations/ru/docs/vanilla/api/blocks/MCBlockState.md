@@ -9,16 +9,16 @@ crafttweaker.api.block.MCBlockState
 ```
 
 ## Реализованные интерфейсы
-MCBlockState implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+MCBlockState реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
-### getAllowedValuesForProperty
+### getAllowValuesForProperty
 
-Returns List<String>
+Список возвратов<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(name as String);
+myMCBlockState.getAllowedValuesForProperty(название как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -26,9 +26,9 @@ myMCBlockState.getAllowedValuesForProperty(name as String);
 | name     | String | Описание отсутствует |
 
 
-### getProperties
+### getСвойства
 
-Returns String[String]
+Возвращает строку[String]
 
 ```zenscript
 myMCBlockState.getProperties();
@@ -36,7 +36,7 @@ myMCBlockState.getProperties();
 
 ### getPropertyNames
 
-Returns List<String>
+Список возвратов<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
@@ -44,10 +44,10 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue
 
-Returns String
+Возвращает строку
 
 ```zenscript
-myMCBlockState.getPropertyValue(name as String);
+myMCBlockState.getPropertyValue(название как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -55,12 +55,12 @@ myMCBlockState.getPropertyValue(name as String);
 | имя      | String | Описание отсутствует |
 
 
-### hasProperty
+### имеет Инвестиции
 
 Возвращает boolean
 
 ```zenscript
-myMCBlockState.hasProperty(name as String);
+myMCBlockState.hasProperty(название как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -68,12 +68,12 @@ myMCBlockState.hasProperty(name as String);
 | имя      | String | Описание отсутствует |
 
 
-### withProperty
+### с свойствами
 
 Возвращает [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(name as String, value as String);
+myMCBlockState.withProperty(название как строка, значение как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -94,7 +94,7 @@ myMCBlockState.withProperty(name as String, value as String);
 | isSolid          | boolean                                                       | true         | false        |
 | isSticky         | boolean                                                       | true         | false        |
 | lightLevel       | int                                                           | true         | false        |
-| ticksRandomly    | boolean                                                       | true         | false        |
+| ТиксСлучайно     | boolean                                                       | true         | false        |
 
 ## Утилиты
 
