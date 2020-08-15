@@ -12,11 +12,11 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
-## Methods
+## メソッド
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| ZenGetter           | ZenSetter     | タイプ                                                       |
 | ------------------- | ------------- | --------------------------------------------------------- |
 | attackInterval      |               | int型                                                      |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
@@ -31,10 +31,10 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 | isLeftHanded        | isLeftHanded  | bool                                                      |
 | isNoDespawnRequired |               | bool                                                      |
 | maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | float                                                     |
-|                     | moveStrafing  | float                                                     |
-|                     | moveVertival  | float                                                     |
-| renderSizeModifier  |               | float                                                     |
+|                     | moveForward   | float型                                                    |
+|                     | moveStrafing  | float型                                                    |
+|                     | moveVertival  | float型                                                    |
+| renderSizeModifier  |               | float型                                                    |
 
 ### ZenMethods
 
