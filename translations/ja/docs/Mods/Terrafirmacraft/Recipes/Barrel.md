@@ -1,6 +1,6 @@
 # Barrel
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Barrel;Barrel;
 ```
