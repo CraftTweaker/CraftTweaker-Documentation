@@ -26,6 +26,6 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
 | `xp`       | float                                     |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled.
