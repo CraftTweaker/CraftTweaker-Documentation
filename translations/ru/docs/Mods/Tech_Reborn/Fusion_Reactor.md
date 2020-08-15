@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.techreborn.fusionReactor`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.techreborn.fusionReactor.addRecipe(IIngredient topInput, IIngredient bottomInput, IItemStack output, int startEU, int euTick, int tickTime);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.fusionReactor.removeTopInputRecipe(IIngredient iIngredient);
 mods.techreborn.fusionReactor.removeBottomInputRecipe(IIngredient iIngredient);
