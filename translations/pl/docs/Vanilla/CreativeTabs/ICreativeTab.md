@@ -1,32 +1,32 @@
-# ICreativeTab
+# Karta ICreative
 
-An ICreativeTabObject represents a creative inventory tab.
+ICreativeTabObject reprezentuje kartę kreatywnego ekwipunku.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.creativetabs.ICreativeTab;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.creativetabs.ICreativeTab;`
 
-## Getting such an Object
+## Uzyskiwanie takiego obiektu
 
-You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanilla/Brackets/Bracket_CreativeTab/).
+Możesz pobrać ICreativeTab z [Kreatywnej Tabulatora](/Vanilla/Brackets/Bracket_CreativeTab/).
 
-## ZenGetters and ZenMethods without parameters
+## ZenGetters i ZenMethods bez parametrów
 
-| ZenGetter/ZenMethod | Return Type    |
-| ------------------- | -------------- |
-| searchBarWidth      | int            |
-| tabLabel            | string         |
-| setNoScrollBar()    | void (nothing) |
-| setNoTitle()        | void (nothing) |
+| ZenGetter/ZenMethod | Typ zwrotu       |
+| ------------------- | ---------------- |
+| searchBarWidth      | odcień           |
+| tabulator           | ciąg znaków      |
+| setNoScrollBar()    | Unieważnij (nic) |
+| setNoTitle()        | Unieważnij (nic) |
 
-## ZenMethod
+## Metoda ZenMethod
 
-#### Set Background image Name
+#### Ustaw nazwę obrazu tła
 
-Uses a string (e.g. `"item_search.png"`).  
-Returns void (nothing).
+Używa ciągu znaków (np. `"item_search.png"`).  
+Zwraca unieważnienie (nie ma znaczenia).
 
 ```zenscript
-tab.setBackgroundImageName(String backgroundImage);
+tab.setBackgroundImageName(Obraz tła ciągu);
 ```
