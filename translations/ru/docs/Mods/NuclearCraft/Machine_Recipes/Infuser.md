@@ -1,6 +1,6 @@
-# Decay Infuser
+# Покинуть инфоблока
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.infuser`
 
 ## Добавление рецептов
