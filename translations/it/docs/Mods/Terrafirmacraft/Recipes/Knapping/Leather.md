@@ -1,4 +1,4 @@
-# Leather Knapping
+# Knapping In Cuoio
 
 ## Pacchetto
 ```zenscript
@@ -20,6 +20,6 @@ leatherKnapping.removeRecipe(String registryName);
 
 ## Esempio
 ```zenscript
-// quiver recipe
-leatherKnapping.addRecipe("recipe", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
+// ricetta faretra
+pelletteria Knapping.addRecipe("ricetta", <tfc:quiver>, " XXXX", "X XXX", "X XXX", "X XXX", " XXXX");
 ```
