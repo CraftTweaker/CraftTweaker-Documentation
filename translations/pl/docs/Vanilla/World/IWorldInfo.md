@@ -1,44 +1,44 @@
 # IWorldInfo
 
-The World Info interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
+Interfejs World Info jest używany do uzyskania jeszcze większej ilości informacji z obiektu [IWorld](/Vanilla/World/IWorld/).
 
 ## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IWorldInfo;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj crafttweaker.world.IWorldInfo;`
 
 ## ZenMethods bez parametrów i ZenGetters
 
-| ZenGetter             | Metoda ZenMethod           | Typ zwrotu  |
-| --------------------- | -------------------------- | ----------- |
-| commandsAllowed       | isCommandsAllowed()        | bool        |
-| borderCenterX         | getBorderCenterX()         | podwójne    |
-| borderCenterZ         | getBorderCenterZ()         | podwójne    |
-| borderDamagePerBlock  | getBorderDamagePerBlock()  | podwójne    |
-| borderSafeZone        | getBorderSafeZone()        | podwójne    |
-| borderSize            | getBorderSize()            | podwójne    |
-| borderWarningDistance | getBorderWarningDistance() | odcień      |
-| borderWarningTime     | getBorderWarningTime()     | odcień      |
-| cleanWeatherTime      | getCleanWeatherTime()      | podwójne    |
-| difficulty            | getDifficulty()            | ciąg znaków |
-| generatorOptions      | getGeneratorOptions()      | ciąg znaków |
-| lastTimePlayed        | getLastTimePlayed()        | długie      |
-| rainTime              | getRainTime()              | odcień      |
-| saveVersion           | getSaveVersion()           | odcień      |
-| seed                  | getSeed()                  | długie      |
-| spawnX                | getSpawnX()                | odcień      |
-| spawnY                | getSpawnY()                | odcień      |
-| spawnZ                | getSpawnZ()                | odcień      |
-| thunderTime           | getThunderTime()           | odcień      |
-| versionId             | getVersionId()             | odcień      |
-| versionName           | getVersionName()           | ciąg znaków |
-| worldName             | getWorldName()             | ciąg znaków |
-| worldTotalTime        | getWorldTotalTime()        | długie      |
-| boderLerpTarget       | getBoderLerpTarget()       | podwójne    |
-| boderLerpTime         | getBoderLerpTime()         | długie      |
-| difficultyLocked      | isDifficultyLocked()       | bool        |
-| hardcoreModeEnabled   | isHardcoreModeEnabled()    | bool        |
-| initialized           | isInitialized()            | bool        |
-| mapFeaturesEnabled    | isMapFeaturesEnabled()     | bool        |
-| kruszący              | isThundering()             | bool        |
-| versionSnapshot       | isVersionSnapshot()        | bool        |
+| ZenGetter                     | Metoda ZenMethod           | Typ zwrotu  |
+| ----------------------------- | -------------------------- | ----------- |
+| komendy dozwolone             | isCommandsAllowed()        | bool        |
+| Centrum graniczne:            | getBorderCenterX()         | podwójne    |
+| Centrum Granic Z              | getBorderCenterZ()         | podwójne    |
+| Obrażenia ObrażeńPerBlock     | getBorderDamagePerBlock()  | podwójne    |
+| Strefa Granic                 | getBorderSafeZone()        | podwójne    |
+| Rozmiar granicy               | getBorderSize()            | podwójne    |
+| Odległość Ostrzeżenia Granicy | getBorderWarningDistance() | odcień      |
+| Godzina Ostrzeżenia           | getBorderWarningTime()     | odcień      |
+| Czysta WeatherTime            | getCleanWeatherTime()      | podwójne    |
+| trudności                     | getDifficulty()            | ciąg znaków |
+| Opcje generatora              | getGeneratorOptions()      | ciąg znaków |
+| lastTimePlayed                | getLastTimePlayed()        | długie      |
+| deszcz                        | getRainTime()              | odcień      |
+| zapisz wersję                 | getSaveVersion()           | odcień      |
+| ziarno                        | getSeed()                  | długie      |
+| spawnX                        | getSpawnX()                | odcień      |
+| spawnY                        | getSpawnY()                | odcień      |
+| spawnZ                        | getSpawnZ()                | odcień      |
+| czas niezużyty                | getThunderTime()           | odcień      |
+| versionId                     | getVersionId()             | odcień      |
+| Nazwa wersji                  | getVersionName()           | ciąg znaków |
+| Nazwa świata                  | getWorldName()             | ciąg znaków |
+| Świat Czasrazem               | getWorldTotalTime()        | długie      |
+| boderLerpTarget               | getBoderLerpTarget()       | podwójne    |
+| boderLerpTime                 | getBoderLerpTime()         | długie      |
+| trudność zablokowana          | isDifficultyLocked()       | bool        |
+| hardcoreModewłączone          | isHardcoreModeEnabled()    | bool        |
+| zainicjowane                  | izInitialized()            | bool        |
+| Funkcje mapowe włączone       | isMapFeaturesEnabled()     | bool        |
+| kruszący                      | isThundering()             | bool        |
+| Zrzut wersji                  | isVersionSnapshot()        | bool        |
