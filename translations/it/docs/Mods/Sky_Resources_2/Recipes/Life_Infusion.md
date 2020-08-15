@@ -1,10 +1,10 @@
-# Life Infusion
+# Infusione Di Vita
 
-The *infusion* package is used for adding or removing recipes to/from the Life Infusion process.
+La confezione *infusione* viene utilizzata per aggiungere o rimuovere ricette da/per il processo di Life Infusion.
 
 ## Chiamata
 
-You can call the *infusion* package using `mods.skyresources.infusion`
+Puoi chiamare il pacchetto *infusione* usando `mods.skyresources.infusion`
 
 ## Aggiunta Ricetta
 
