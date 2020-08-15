@@ -1,15 +1,15 @@
-# Taming Locking
+# テイムロック
 
-## Animal-Tame Locking
+## 動物テイムロック
 
-This feature allows for you to add requirement locks to taming specific entities.
+この機能を使用すると、特定のエンティティをテイムするための要件ロックを追加できます。
 
-### Syntax
+### 構文
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[IEntityDefinition へのリンク](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
+    # 空白の例:
+    mods.compatskills.AnimalTamLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
     
-    # Working Example:
-    mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
+    # 作業例:
+    mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7');
