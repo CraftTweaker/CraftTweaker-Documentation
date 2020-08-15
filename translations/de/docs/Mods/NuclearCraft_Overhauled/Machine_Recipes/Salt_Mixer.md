@@ -1,6 +1,6 @@
-# Salt Mixer
+# Salzwischen-Mixer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.SaltMixer`
 
 ## Rezepte hinzufügen
@@ -12,5 +12,5 @@ mods.nuclearcraft.SaltMixer.addRecipe(ILiquidStack fluidInput1, ILiquidStack flu
 ```zenscript
 mods.nuclearcraft.SaltMixer.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
 mods.nuclearcraft.SaltMixer.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.SaltMixer.removeAllRecipes();
+mods.nuclearcraft.SaltMixer.removeAllRezept();
 ```
