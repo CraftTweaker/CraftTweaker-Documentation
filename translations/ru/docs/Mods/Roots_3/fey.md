@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Fey;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
@@ -35,7 +35,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Fey;
@@ -53,6 +53,6 @@ Fey.removeRecipe(<roots:living_axe>);
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
-### Notes
+### Примечания
 
 It is important for Patchouli continuity that, if you remove a default recipe (say `living_axe`), that you replace it with another recipe and give that recipe the name `"living_axe"` if you wish Patchouli to properly display the new recipe.
