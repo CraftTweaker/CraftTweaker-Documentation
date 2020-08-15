@@ -17,12 +17,12 @@ Boson by default already creates a certain set of tag types, which can be used i
 | `fluids` | (not currently accessible via CraftTweaker)   |
 | `items`  | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
 
-## Properties
+## Eigenschaften
 A `TagType` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name       | Type                                                                   | Beschreibung                                                              |
+| Eigenschaftsname    | Type                                                                   | Beschreibung                                                              |
 | ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
 | `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
-| `classType`         | [`Class`](/Mods/Boson/Reflection/Class/)                               | Type of objects stored in the tag                                         |
+| `classType`         | [`Klasse`](/Mods/Boson/Reflection/Class/)                              | Type of objects stored in the tag                                         |
 | `converterFunction` | [`Function<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converts names into tag elements                                          |
