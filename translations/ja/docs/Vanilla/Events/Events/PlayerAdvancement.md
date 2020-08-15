@@ -18,9 +18,9 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter | 戻り値    |
-| --------- | ------ |
-| `id`      | string |
+| ZenGetter | 戻り値 |
+| --------- | --- |
+| `id`      | 文字列 |
 
 ## Id
 
