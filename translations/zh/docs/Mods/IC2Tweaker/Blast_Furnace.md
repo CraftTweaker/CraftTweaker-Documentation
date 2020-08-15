@@ -4,7 +4,7 @@
 
 `import mods.ic2.BlastFurnace;`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
@@ -19,6 +19,6 @@ mods.ic2.BlastFurnace.addRecipe(IItemStack[] outputs, IIngredient input, int tot
 mods.ic2.BlastFurnace.addRecipe([<minecraft:diamond>, <minecraft:emerald>], <minecraft:dirt> * 64, 1, 1000);
 ```
 
-## Removal
+## 移除
 
 For now simply remove the corresponding line in `config/ic2/blast_furnace.ini`.
