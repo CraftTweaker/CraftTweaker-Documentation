@@ -1,6 +1,6 @@
 # ItemTypeBuilder
 
-Denotes a special builder that is used for builing special item types. Used in [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype)
+Indica un costruttore speciale che viene utilizzato per costruire tipi di oggetti speciali. Utilizzato in [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype)
 
 Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,7 +11,7 @@ mods.contenttweaker.item.ItemTypeBuilder
 ```
 
 ## Interfacce Implementate
-ItemTypeBuilder implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+ItemTypeBuilder implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Metodi
