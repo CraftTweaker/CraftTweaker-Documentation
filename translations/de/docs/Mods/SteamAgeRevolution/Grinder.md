@@ -19,7 +19,7 @@ mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, 
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
-## Removing
+## Entfernen
 
 ```zenscript
 mods.steamagerevolution.Grinder.removeRecipe(IItemStack output);
