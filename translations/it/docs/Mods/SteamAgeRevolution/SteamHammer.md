@@ -1,16 +1,16 @@
-# Steam Hammer
+# Martello Di Vapore
 
-The Steam Hammer is a machine that converts two input items into an output item using steam.
+Il martello di vapore è una macchina che converte due elementi di ingresso in un oggetto di uscita utilizzando vapore.
 
 ## Pacchetto
 `mods.steamagerevolution.SteamHammer`.
 
 ## Metodi
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** L'input della ricetta.
+- **int craftTime** Tempo di lavorazione della macchina da elaborare
+- **int steamCosto** Costo di vapore per la macchina da elaborare
 
 ## Addizione
 
