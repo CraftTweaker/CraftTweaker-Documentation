@@ -1,8 +1,8 @@
-# Aspect Bracket handler
+# Gestore parentesi dimensioni
 
-The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
+L'aspetto Bracket Handler ti permette di recuperare un Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) nel caso ne avessi bisogno.
 
-Aspects are referenced in the Aspect Bracket handler this way:
+Gli aspetti sono referenziati nel gestore delle parentesi dimensioni in questo modo:
 
 ```zenscript
 <aspect:name>
