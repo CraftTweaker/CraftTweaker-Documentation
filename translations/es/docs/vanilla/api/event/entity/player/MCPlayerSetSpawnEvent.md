@@ -8,28 +8,28 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent>);
+nuevo crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent>);
 ```
-| Parámetro | Tipo                                                                                                                                    | Descripción             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | No description provided |
+| Parámetro | Tipo                                                                                                                                    | Descripción                   |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | No se proporcionó descripción |
 
 
 
 ## Métodos
-### getEntityPlayer
+### %s Jugador
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getEntityPlayer();
 ```
 
-### getNewSpawn
+### Recibir nuevo Spawn
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Devuelve [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getNewSpawn();
@@ -37,41 +37,41 @@ myMCPlayerSetSpawnEvent.getNewSpawn();
 
 ### getPlayer
 
-Returns: `Player`
+Devuelve: `Jugador`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getPlayer();
 ```
 
-### hasResult
+### hastaResultado
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerSetSpawnEvent.hasResult();
 ```
 
-### isCancelable
+### es cancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
+ Nota:
+ Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCancelable();
 ```
 
-### isCanceled
+### es cancelado
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCanceled();
@@ -79,23 +79,23 @@ myMCPlayerSetSpawnEvent.isCanceled();
 
 ### es forzado
 
-This event is called before a player's spawn point is changed. The event can be canceled, and no further processing will be done.
+Este evento es llamado antes de que se cambie el punto de aparición de un jugador. El evento puede ser cancelado y no se procesará más.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isForced();
 ```
 
-### setCanceled
+### setCancelado
 
 ```zenscript
-myMCPlayerSetSpawnEvent.setCanceled(cancel as boolean);
+myMCPlayerSetSpawnEvent.setCanceled(cancelar como booleano);
 ```
 
-| Parámetro | Tipo    | Descripción             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| cancelar  | boolean | No se proporcionó descripción |
 
 
 
