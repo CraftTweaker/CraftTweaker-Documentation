@@ -1,10 +1,10 @@
-# Combustion
+# Combustione
 
-The *combustion* package is used for adding or removing recipes to/from the Combustion process.
+Il pacchetto *combustione* viene utilizzato per aggiungere o rimuovere ricette da/per il processo di combustione.
 
 ## Chiamata
 
-You can call the *combustion* package using `mods.skyresources.combustion`
+Puoi chiamare il pacchetto *combustion* utilizzando `mods.skyresources.combustion`
 
 ## Aggiunta Ricetta
 
