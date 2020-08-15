@@ -1,7 +1,7 @@
 # Конденсатор
-**Note: Partially Broken**
+**Примечание: Частично сломано**
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.Конденсатор`
 
 ## Добавление рецептов
