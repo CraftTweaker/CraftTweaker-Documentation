@@ -1,32 +1,32 @@
 # DamageSource Bracket Handler
 
-The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
+ダメージソースブラケットハンドラーでは、ゲーム内で [IDamageSources](/Vanilla/Damage/IDamageSource/) を参照できます。
 
-If the Damage source is not one of the predefined ones, this will create a new one with the given name.
+ダメージソースがあらかじめ定義されているものでない場合、与えられた名前の新しいものが作成されます。
 
 <details>
-    <summary>Preregistered Damage Source Types</summary>
+    <summary>事前登録された被害元タイプ</summary>
     <ul>
-        <li>IN_FIRE</li>
-        <li>LIGHTNING_BOLT</li>
-        <li>ON_FIRE</li>
+        <li>最初に</li>
+        <li>左揃え</li>
+        <li>最初に</li>
         <li>LAVA</li>
-        <li>HOT_FLOOR</li>
-        <li>IN_WALL</li>
+        <li>FLOOR(_F)</li>
+        <li>水平線(_W)</li>
         <li>CRAMMING</li>
         <li>DROWN</li>
-        <li>STARVE</li>
+        <li>開始</li>
         <li>CACTUS</li>
         <li>FALL</li>
-        <li>FLY_INTO_WALL</li>
-        <li>OUT_OF_WORLD</li>
+        <li>Y_INTO_WALL</li>
+        <li>ワールドの外</li>
         <li>GENERIC</li>
-        <li>MAGIC</li>
-        <li>WITHER</li>
-        <li>ANVIL</li>
-        <li>FALLING_BLOCK</li>
+        <li>マギック語</li>
+        <li>Wither</li>
+        <li>Anvil</li>
+        <li>偽のブロック</li>
         <li>DRAGON_BREATH</li>
-        <li>FIREWORKS</li>
+        <li>ファイワークス</li>
     </ul>
 </details>
 
