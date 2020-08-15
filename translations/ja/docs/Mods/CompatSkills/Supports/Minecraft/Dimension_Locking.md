@@ -1,13 +1,13 @@
-# Dimension Locking
+# 寸法ロック
 
-## Dimension Locking
+## 寸法ロック
 
-This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
+この機能は、要件が満たされない限り、特定の寸法に移動する能力をロックできます!
 
-### Syntax
+### 構文
 
-    Blank Example:
+    空白の例:
     mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Working Example:
-    mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");
+    作業例:
+    mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7');
