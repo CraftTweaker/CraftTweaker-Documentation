@@ -1,6 +1,6 @@
 # Hammering
 
-## Package
+## Пакет
 ```zenscirpt
 `mods.exnihilocreatio.Hammer`
 ```
@@ -13,7 +13,7 @@
 - **Float chance** chance between 0-1.
 - **Float fortune chance** chance between 0-1.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
@@ -21,7 +21,7 @@ mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float
 mods.exnihilocreatio.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.exnihilocreatio.Hammer.removeAll();
