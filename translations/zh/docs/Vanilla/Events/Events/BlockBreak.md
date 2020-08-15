@@ -1,27 +1,27 @@
-# BlockBreakEvent
+# 区块断开
 
-The BlockBreak Event is fired whenever a block is being broken.  
-You can cancel the event to prevent the block from being broken.
+每当一个方块被损坏时都会触发BlockBreak 事件。  
+您可以取消该事件以防止方块被损坏。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockBreakEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockBreak 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter    | ZenSetter    | Type                                 |
-| ------------ | ------------ | ------------------------------------ |
-| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| ZenGetter  | ZenSetter | 类型                                   |
+| ---------- | --------- | ------------------------------------ |
+| `播放器`      |           | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isPlayer` |           | 布尔值                                  |
+| `体验`       | `体验`      | 整数                                   |
