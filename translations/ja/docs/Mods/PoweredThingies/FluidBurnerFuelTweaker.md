@@ -1,35 +1,35 @@
-# Powered Thingies :: Fluid Burner :: Fuel
+# パワードThingies :: Fluid Burner :: Fuel
 
-### Importing
+### インポート中
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### キーによるレシピの削除、キーのリスト化、クリア
 
 ```zenscript
 fuel().logKeys()
-fuel().removeRecipe('liquid:fluid_lava') // check <logKeys> output for valid keys
+fuel().removeRecipe('liquid:fluid_lava') // <logKeys> 出力で有効なキー
 fuel().clear()
 ```
 
-### Adding Recipe
+### レシピを追加中
 
-##### Signature
+##### 署名
 
 ```zenscript
 addFuel(fluid: ILiquidStack, ticks: Int)
 ```
 
-`ticks` represents the number of ticks the specified fuel will burn for.
+`tick` は、指定された燃料が燃焼するティック数を表します。
 
-##### Example
+##### 例
 
 ```zenscript
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
-### Notes
+### メモ
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。
