@@ -1,4 +1,4 @@
-# Stone Separator
+# Separator Kamieni
 
 ## Pakiet
 ```zenscript
@@ -7,17 +7,17 @@ import mods.calculator.stoneSeparator;
 
 ## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wejście
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście[1-2]** Wyjście
 
 
-## Additon
+## Dodatek
 
 ```zenscript
-stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
+[PLACEHOLDER] stoneSeparator.addRecipe(IIngredient Inputt, IIngredient output1, IIngredient output2);
 ```
 
 ## Usuwanie
 ```zenscript
-stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
+[PLACEHOLDER] stoneSeparator.removeRecipe(Ingredient Output, IIngredient output2);
 ```
