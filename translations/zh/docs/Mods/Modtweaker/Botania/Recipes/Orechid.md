@@ -1,35 +1,35 @@
 # Orechid
 
-The Orechid package is used for adding or removing generated ores to/from the Botania Orechid Flowers.
+Orechid 包用于添加或从Botania Orechid Flowers中移除生成的矿石。
 
 ## 导入包
 
-You can call the Orechid package using `mods.botania.Orechid`
+您可以使用 `mods.botania.Orechid 调用 Orechid 包`
 
-## Find all registered Recipes
+## 查找所有注册的配方
 
-You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
+您可以使用 [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/) 找到所有注册的 Orechid 配方。
 
 ## 添加配方
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+您可以使用返回的 [IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/) 作为输出参数添加配方，也可以使用上述oreDictEnter 作为字符串的名称。
 
 ```zenscript
-//mods.botania.Orechid.addOre(IOreDictEntry oreDict, int weight);
+//mods.botania.Orechid.addOre(IoreDictEntry oredict, int digest);
 mods.botania.Orechid.addOre(<ore:logWood>, 500);
 
-//mods.botania.Orechid.addOre(String oreDict, int weight);
-mods.botania.Orechid.addOre("logWood", 500);
+/mods.botania.Orechid.addOre(String oredDict, int 权重);
+mods.botania.Orechid.addOre("logod", 500);
 ```
 
-## Recipe removal
+## 删除配方
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+您可以使用返回的 [IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/) 作为输出参数移除配方，也可以删除上述oredDictEnter 作为字符串的名称。
 
 ```zenscript
-//mods.botania.Orechid.removeOre(IOreDictEntry oreDict);
+//mods.botania.Orechid.removeOre(IOreDictEntry oredict);
 mods.botania.Orechid.removeOre(<ore:oreGold>);
 
 //mods.botania.Orechid.removeOre(String oreDict);
-mods.botania.Orechid.removeOre("oreGold");
+mods.botania.Orechid.rechiveOre("oreGold");
 ```
