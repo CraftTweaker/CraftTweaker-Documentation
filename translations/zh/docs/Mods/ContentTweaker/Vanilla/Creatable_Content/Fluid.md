@@ -1,78 +1,78 @@
-# Fluid
+# 流体
 
-This allows you to add fluids to the game!
+这允许您添加液体到游戏中！
 
-## Create the Fluid Representation
+## 创建流体表示
 
-Before you can add the fluid, you need to create a Fluid Representation which will allow you to set the properties of the fluid you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+在您可以添加流量之前， 您需要创建一个流体表述，允许您设置您想要添加的流体属性。  
+这是 [Vanilla工厂](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) 所处的位置：
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
-mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
+mods.contenttweeper.VanillaFactory.createFluid(String unlocalizedName, int color);
+mods.contenttweeper.VanillaFactory.createFluid(String unlocalizedName, CTColor 颜色);
 ```
 
-## Import the representation Package
+## 导入校验包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Fluid;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweiner.Fluid；`
 
 ## ZenProperties
 
-To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
+要获取/设置属性，您可以使用尊敬的 ZenGetters/Setters或ZenMethods：
 
 ```zenscript
-//property name: density
+//房产名称：密度
 //ZenGetter
 print(fluid.density);
 //ZenSetter
-fluid.density = 500;
-//ZenMethods
+fluid.durity = 500;
+//ZenMethod
 fluid.getDensity();
-fluid.setDensity(1000);
+fluid.setDensity(1000)；
 ```
 
-| Property Name   | 类型                                                                                       | Required | Default Value                    | Description/Notes                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
-| unlocalizedName | string                                                                                   | Yes      |                                  | Name, should be all lowercase                                                        |
-| density         | int                                                                                      | No       | 1000                             | How fast you can walk in the fluid                                                   |
-| gaseous         | boolean                                                                                  | No       | false                            | Is the fluid gaseous (flows upwards instead of downwards)?                           |
-| luminosity      | int                                                                                      | No       | 0                                | The light-level emitted by the fluid                                                 |
-| temperature     | int                                                                                      | No       | 300                              | The Fluid's temperature                                                              |
-| color           | int                                                                                      | Yes      |                                  | The Fluid's color-code                                                               |
-| colorize        | boolean                                                                                  | No       | true                             | Is the fluid's color-code applied?                                                   |
-| rarity          | string                                                                                   | No       | COMMON                           | How rare a fluid is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
-| viscosity       | int                                                                                      | No       | 1000                             | How quickly the fluid spreads                                                        |
-| fillSound       | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_FILL               | The sound played when the fluid is picked up with a Bucket                           |
-| emptySound      | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_EMPTY              | The sound played when the fluid is placed                                            |
-| vaporize        | boolean                                                                                  | No       | false                            | Does vaporize when placed in the Nether?                                             |
-| stillLocation   | string                                                                                   | No       | contenttweaker:fluids/fluid      | The Location where to find the texture for the still fluid                           |
-| flowingLocation | string                                                                                   | No       | contenttweaker:fluids/fluid_flow | The Location where to find the texture for the flowing fluid                         |
-| material        | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)     | No       | WATER                            | The Material the fluid is made of                                                    |
+| 属性名称            | 类型                                                                                       | 必填 | 默认值                              | 描述/注释                                               |
+| --------------- | ---------------------------------------------------------------------------------------- | -- | -------------------------------- | --------------------------------------------------- |
+| unlocalizedName | string                                                                                   | 否  |                                  | 名字，应该是所有小写                                          |
+| 密度：             | int                                                                                      | 否  | 1000                             | 您可以在流体中步行多快。                                        |
+| 气压              | boolean                                                                                  | 否  | false                            | 液态气体是否向上(向上而不是向下)？                                  |
+| 亮度              | 整数                                                                                       | 否  | 0                                | 液体放出的光电水平                                           |
+| 温度              | int                                                                                      | 否  | 300                              | 流体温度                                                |
+| 颜色              | 整数                                                                                       | 否  |                                  | 流体颜色代码                                              |
+| 着色              | boolean                                                                                  | 否  | true                             | 液体的颜色代码是否适用？                                        |
+| 稀有度             | 字符串                                                                                      | 否  | 常驻代表                             | 液体多少，确定工具提示颜色("COMMON", "UNCOMMON", "RARE", "EPIC") |
+| 视觉性             | int                                                                                      | 否  | 1000                             | 流体传播速度                                              |
+| 填充声音            | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | 否  | VIP_BUCKET_FILL                | 液体被拿到圆桶时播放的声音                                       |
+| 清空声音            | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | 否  | VIP_BUCKET_TITLE               | 放置液体时播放的声音                                          |
+| 蒸发量             | boolean                                                                                  | 否  | false                            | 放置在荷兰时是否蒸发？                                         |
+| 挂起位置            | 字符串                                                                                      | 否  | contenttweaker:fluids/fluid      | 寻找液体纹理的位置                                           |
+| 浮动位置            | 字符串                                                                                      | 否  | contenttweaker:fluids/fluid_flow | 找到流体纹理的位置                                           |
+| 材料              | [IMaterial定义](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)             | 否  | 观看者                              | 液体制成的材料                                             |
 
-## Registering the fluid
+## 正在注册流体
 
-You need to call this method to register the fluid in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the fluid or change any of it's properties!
+您需要调用这个方法来注册游戏中的液体！  
+否则什么也不会发生！  
+调用此函数后，您不能取消注册流体或更改其任何属性！
 
 ```zenscript
-fluid.register();
+a. 液体登记器();
 ```
 
-## Example Script
+## 示例脚本
 
 ```zenscript
-#loader contenttweaker
-import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.Fluid;
-import mods.contenttweaker.Color;
+#loader contenttfinfinder
+import mods.contenttweeper.VanillaFactory;
+import mods.contenttweeper.Fluid;
+import mods.contenttweeper.Color;
 
-var zsFluid = VanillaFactory.createFluid("zs_fluid", Color.fromHex("FF69B4"));
+var zsFluid = VanillaFactory.createFluid("zs_fluid", Color.fromHex");
 zsFluid.fillSound = <soundevent:block.anvil.place>;
 zsFluid.register();
 ```
 
-## Localizing the fluid
+## 本地化流体
 
-You will need to add `fluid.fluidName = Localized Name` to the responding language files. Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
+您需要将 `fluid.fluidName = 本地化名称` 添加到响应语言文件。 或者，您可以使用 CraftTweaker 的 [本地化功能](/Vanilla/Game/IGame/)，尽管它建议使用语言文件！
