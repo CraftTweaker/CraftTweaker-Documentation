@@ -15,7 +15,7 @@ import mods.calculator.basic;
 basic.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 basic.removeRecipe(IIngredient output);
 ```
