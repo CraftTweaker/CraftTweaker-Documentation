@@ -9,30 +9,30 @@ crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
 ## Методы
-### addExhaustion
+### Добавить Exhaustion
 
-increases exhaustion level by supplied amount
+повышает уровень истощения на поставляемое количество
 
 ```zenscript
-myMCPlayerEntity.addExhaustion(exhaustion as float);
+myMCPlayerEntity.addExhaustion(истощение как float);
 ```
 
-| Параметр   | Тип   | Описание             |
-| ---------- | ----- | -------------------- |
-| exhaustion | float | Описание отсутствует |
+| Параметр  | Тип   | Описание             |
+| --------- | ----- | -------------------- |
+| истощение | float | Описание отсутствует |
 
 
-### addExperienceLevel
+### уровень расширенияОпыта
 
-Add experience levels to this player.
+Добавить уровни опыта этому игроку.
 
 ```zenscript
-myMCPlayerEntity.addExperienceLevel(levels as int);
+myMCPlayerEntity.addExperienceLevel(уровни);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| levels   | int | Описание отсутствует |
+| уровни   | int | Описание отсутствует |
 
 
 ### addItemStackToInventory
@@ -50,10 +50,10 @@ myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.II
 
 ### addMovementStat
 
-Adds a value to a movement statistic field - like run, walk, swin or climb.
+Добавляет значение в поле статистики движения - такие как run, walk, swin или восхождение.
 
 ```zenscript
-myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
+myMCPlayerEntity.addMovementStat(p_71000_1_ двойная, p_71000_3_ двойная, p_71000_5_ двойной);
 ```
 
 | Параметр     | Тип    | Описание             |
@@ -63,30 +63,30 @@ myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_7
 | p_71000_5_ | double | Описание отсутствует |
 
 
-### addPotionEffect
+### Добавить Зелье
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCPlayerEntity.addPotionEffect(effectInstanceIn как crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Параметр         | Тип                                                                                           | Описание             |
-| ---------------- | --------------------------------------------------------------------------------------------- | -------------------- |
-| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| Параметр         | Тип                                                                                                   | Описание             |
+| ---------------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
+| effectInstanceIn | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
 
 
 ### addScore
 
-Add to player's score
+Добавить к счету игрока
 
 ```zenscript
-myMCPlayerEntity.addScore(scoreIn as int);
+myMCPlayerEntity.addScore(счет как int);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| scoreIn  | int | Описание отсутствует |
+| счет     | int | Описание отсутствует |
 
 
 ### addTag
@@ -94,7 +94,7 @@ myMCPlayerEntity.addScore(scoreIn as int);
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.addTag(tag as String);
+myMCPlayerEntity.addTag(тег как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -104,10 +104,10 @@ myMCPlayerEntity.addTag(tag as String);
 
 ### addVelocity
 
-Adds to the current velocity of the entity, and sets  to true.
+Добавляет текущую скорость сущности и устанавливает истину.
 
 ```zenscript
-myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
+myMCPlayerEntity.addVelocity(x как двойная, y как двойная, z как двойной);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -117,7 +117,7 @@ myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 | z        | double | Описание отсутствует |
 
 
-### allowLogging
+### разрешить ведение журнала
 
 Возвращает boolean
 
@@ -125,7 +125,7 @@ myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 myMCPlayerEntity.allowLogging();
 ```
 
-### attackable
+### атакуемый
 
 Возвращает boolean
 
@@ -133,12 +133,12 @@ myMCPlayerEntity.allowLogging();
 myMCPlayerEntity.attackable();
 ```
 
-### attemptTeleport
+### попытка телепортации
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
+myMCPlayerEntity.attemptTeleport(p_213373_1_ как double, p_213373_3_ как double, p_213373_5_ как double, p_213373_7_ как boolean);
 ```
 
 | Параметр      | Тип     | Описание             |
@@ -151,7 +151,7 @@ myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p
 
 ### baseTick
 
-Gets called every tick from main Entity class
+Получает каждый тик от главного класса сущности
 
 ```zenscript
 myMCPlayerEntity.baseTick();
@@ -162,17 +162,17 @@ myMCPlayerEntity.baseTick();
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.canAttackPlayer(другой как crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
 | Параметр | Тип                                                                                        | Описание             |
 | -------- | ------------------------------------------------------------------------------------------ | -------------------- |
-| other    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Описание отсутствует |
+| другой   | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Описание отсутствует |
 
 
-### canBeAttackedWithItem
+### Снято с кем-предмета
 
-Returns true if it's possible to attack this entity with an item.
+Возвращает значение true, если возможно атаковать этот объект предметом.
 
 Возвращает boolean
 
@@ -180,9 +180,9 @@ Returns true if it's possible to attack this entity with an item.
 myMCPlayerEntity.canBeAttackedWithItem();
 ```
 
-### canBeCollidedWith
+### canBeCollidedС
 
-Returns true if other Entities should be prevented from moving through this Entity.
+Возвращает значение true, если другие сущности не могут перемещаться по этой сущности.
 
 Возвращает boolean
 
@@ -190,9 +190,9 @@ Returns true if other Entities should be prevented from moving through this Enti
 myMCPlayerEntity.canBeCollidedWith();
 ```
 
-### canBeHitWithPotion
+### Снять зелье
 
-Returns false if the entity is an armor stand. Returns true for all other entity living bases.
+Возвращает false, если сущность подставна для брони. Возвращает значение «истина» для всех остальных живых баз сущности.
 
 Возвращает boolean
 
@@ -202,7 +202,7 @@ myMCPlayerEntity.canBeHitWithPotion();
 
 ### canBePushed
 
-Returns true if this entity should push and be pushed by other entities when colliding.
+Возвращает значение true, если эта сущность должна толкать другие сущности при столкновении.
 
 Возвращает boolean
 
@@ -231,7 +231,7 @@ myMCPlayerEntity.canBreatheUnderwater();
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.canEat(ignoreHunger as boolean);
+myMCPlayerEntity.canEat(игнорировать голода как boolean);
 ```
 
 | Параметр     | Тип     | Описание             |
@@ -239,17 +239,17 @@ myMCPlayerEntity.canEat(ignoreHunger as boolean);
 | ignoreHunger | boolean | Описание отсутствует |
 
 
-### canHarvestBlock
+### СборкаБлок
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.canHarvestBlock(состояние как crafttweaker.api.block.MCBlockState);
 ```
 
 | Параметр | Тип                                                                     | Описание             |
 | -------- | ----------------------------------------------------------------------- | -------------------- |
-| state    | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
+| штат     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
 
 
 ### canPassengerSteer
@@ -262,7 +262,7 @@ myMCPlayerEntity.canPassengerSteer();
 
 ### canPlayerEdit
 
-Returns whether this player can modify the block at a certain location with the given stack. <p> The position being queried is {@code pos.offset(facing.getOpposite()))}. Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+Возвращает, может ли этот игрок изменять блок в определенном месте с заданным стеком. <p> Позиция запроса: {@code pos.offset(facing.getOpposite())}. Возвращается: `Может ли этот игрок изменить место в текущем мире` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
 
 Возвращает boolean
 
@@ -270,16 +270,16 @@ Returns whether this player can modify the block at a certain location with the 
 myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр | Тип                                                               | Описание             |
-| -------- | ----------------------------------------------------------------- | -------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | Описание отсутствует |
-| facing   | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | Описание отсутствует |
-| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр  | Тип                                                               | Описание             |
+| --------- | ----------------------------------------------------------------- | -------------------- |
+| пос       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | Описание отсутствует |
+| облицовка | [crafttweaker.api.util.direction](/vanilla/api/util/Direction)    | Описание отсутствует |
+| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 
 
 ### canRenderOnFire
 
-Return whether this entity should be rendered as on fire.
+Возвращает ли эта сущность должна быть отображена как огонь.
 
 Возвращает boolean
 
@@ -303,19 +303,19 @@ myMCPlayerEntity.canRiderInteract();
 myMCPlayerEntity.canSwim();
 ```
 
-### canTrample
+### канTrample
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
+myMCPlayerEntity.canTrample(состояние как crafttweaker.api.block.MCBlockState, pos как crafttweaker.api.util.BlockPos, fallDistance как float);
 ```
 
-| Параметр     | Тип                                                                     | Описание             |
-| ------------ | ----------------------------------------------------------------------- | -------------------- |
-| state        | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
-| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Описание отсутствует |
-| fallDistance | float                                                                   | Описание отсутствует |
+| Параметр         | Тип                                                                     | Описание             |
+| ---------------- | ----------------------------------------------------------------------- | -------------------- |
+| штат             | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
+| пос              | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | Описание отсутствует |
+| Дальность взлёта | float                                                                   | Описание отсутствует |
 
 
 ### canUpdate
@@ -328,7 +328,7 @@ myMCPlayerEntity.canUpdate();
 
 
 ```zenscript
-myMCPlayerEntity.canUpdate(value as boolean);
+myMCPlayerEntity.canUpdate(значение boolean);
 ```
 
 | Параметр | Тип     | Описание             |
@@ -344,12 +344,12 @@ myMCPlayerEntity.canUpdate(value as boolean);
 myMCPlayerEntity.canUseCommandBlock();
 ```
 
-### clearActivePotions
+### очистить ActivePotions
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.clearActivePotions();
+myMCPlayerEntity.clearActivePotion();
 ```
 
 ### clearBedPosition
@@ -358,15 +358,15 @@ myMCPlayerEntity.clearActivePotions();
 myMCPlayerEntity.clearBedPosition();
 ```
 
-### closeScreen
+### закрытие Экрана
 
-set current crafting inventory back to the 2x2 square
+вернуть инвентарь для создания в квадрат 2x2
 
 ```zenscript
 myMCPlayerEntity.closeScreen();
 ```
 
-### curePotionEffects
+### лекарственное зелье
 
 Возвращает boolean
 
@@ -374,9 +374,9 @@ myMCPlayerEntity.closeScreen();
 myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр     | Тип                                                               | Описание             |
-| ------------ | ----------------------------------------------------------------- | -------------------- |
-| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр            | Тип                                                               | Описание             |
+| ------------------- | ----------------------------------------------------------------- | -------------------- |
+| целительный элемент | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 
 
 ### detach
@@ -385,10 +385,10 @@ myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemSt
 myMCPlayerEntity.detach();
 ```
 
-### disableShield
+### Отключать щит
 
 ```zenscript
-myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
+myMCPlayerEntity.disableShield(p_190777_1_ как boolean);
 ```
 
 | Параметр      | Тип     | Описание             |
@@ -396,9 +396,9 @@ myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
 | p_190777_1_ | boolean | Описание отсутствует |
 
 
-### doesEntityNotTriggerPressurePlate
+### не EntityNotTriggerPressurePlate
 
-Return whether this entity should NOT trigger a pressure plate or a tripwire.
+Возвращает ли эта сущность не должна запускать нажимную пластину или тележку.
 
 Возвращает boolean
 
@@ -406,50 +406,50 @@ Return whether this entity should NOT trigger a pressure plate or a tripwire.
 myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 ```
 
-### equals
+### равно
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.equals(p_equals_1_ as Object);
+myMCPlayerEntity.equals(p_equals_1_ как объект);
 ```
 
-| Параметр      | Тип    | Описание             |
-| ------------- | ------ | -------------------- |
-| p_equals_1_ | Object | Описание отсутствует |
+| Параметр     | Тип    | Описание             |
+| ------------ | ------ | -------------------- |
+| p_равно 1_ | Объект | Описание отсутствует |
 
 
 ### extinguish
 
-Removes fire from entity.
+Убирает огонь из объекта.
 
 ```zenscript
 myMCPlayerEntity.extinguish();
 ```
 
-### fall
+### падение
 
 ```zenscript
-myMCPlayerEntity.fall(distance as float, damageMultiplier as float);
+myMCPlayerEntity.fall(расстояние как плавающий, Множитель урона как плавающий);
 ```
 
 | Параметр        | Тип   | Описание             |
 | --------------- | ----- | -------------------- |
-| distance        | float | Описание отсутствует |
+| расстояние      | float | Описание отсутствует |
 | Множитель урона | float | Описание отсутствует |
 
 
-### findAmmo
+### найти патроны
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.findAmmo(shootable as crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр  | Тип                                                               | Описание             |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| shootable | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр     | Тип                                                               | Описание             |
+| ------------ | ----------------------------------------------------------------- | -------------------- |
+| съемный стол | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 
 
 ### func_213300_bk
@@ -463,7 +463,7 @@ myMCPlayerEntity.func_213300_bk();
 ### func_213312_b
 
 ```zenscript
-myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_213312_5_ as double);
+myMCPlayerEntity.func_213312_b(p_213312_1_ как double, p_213312_3_ как double, p_213312_5_ как double);
 ```
 
 | Параметр      | Тип    | Описание             |
@@ -473,7 +473,7 @@ myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_2
 | p_213312_5_ | double | Описание отсутствует |
 
 
-### func_213314_bj
+### функция_213314_bj
 
 Возвращает boolean
 
@@ -483,7 +483,7 @@ myMCPlayerEntity.func_213314_bj();
 
 ### func_213343_cS
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.func_213343_cS();
@@ -494,7 +494,7 @@ myMCPlayerEntity.func_213343_cS();
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.func_213365_e(itemstackIn как crafttweaker.api.item.IItemStack);
 ```
 
 | Параметр    | Тип                                                               | Описание             |
@@ -504,19 +504,19 @@ myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
 
 ### getAIMoveSpeed
 
-the movespeed used for the new AI system
+движущийся для новой системы ИИ
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getAIMoveSpeed();
 ```
 
-### getAbsorptionAmount
+### getAbsorptionСумма
 
-Returns the amount of health added by the Absorption effect.
+Возвращает количество здоровья, добавляемое эффектом Абсорбция.
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getAbsorptionAmount();
@@ -524,7 +524,7 @@ myMCPlayerEntity.getAbsorptionAmount();
 
 ### getActiveItemStack
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getActiveItemStack();
@@ -532,35 +532,35 @@ myMCPlayerEntity.getActiveItemStack();
 
 ### getActivePotionEffect
 
-returns the PotionEffect for the supplied Potion if it is active, null otherwise.
+возвращает зелье для поставляемого зелья, если оно активно, null иначе.
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Возвращает [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPlayerEntity.getActivePotionEffect(potionIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.getActivePotionEffect(зелье как crafttweaker.api.potion.MCPotionEffect);
 ```
 
 | Параметр | Тип                                                                           | Описание             |
 | -------- | ----------------------------------------------------------------------------- | -------------------- |
-| potionIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
+| зелье    | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
 
 
 ### getActivePotionEffects
 
-Returns Collection<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
+Возвращает коллекцию<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
 
 ```zenscript
 myMCPlayerEntity.getActivePotionEffects();
 ```
 
-### getAdjustedHorizontalFacing
+### getjustedHorizontalFacing
 
-Gets the horizontal facing direction of this Entity, adjusted to take specially-treated entity types into account.
+Получает горизонтальное направление направления этого объекта, скорректированное с учетом особо обработанных типов сущностей.
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCPlayerEntity.getAdjustedHorizontalFacing();
+myMCPlayerEntity.getjustedHorizonFacing();
 ```
 
 ### getAir
@@ -589,9 +589,9 @@ myMCPlayerEntity.getArrowCountInEntity();
 
 ### getBedDirection
 
-gets the Direction for the camera if this entity is sleeping
+получает направление к камере, если этот объект спящий
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getBedDirection();
@@ -599,7 +599,7 @@ myMCPlayerEntity.getBedDirection();
 
 ### getBedLocation
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getBedLocation();
@@ -615,9 +615,9 @@ myMCPlayerEntity.getBlockState();
 
 ### getBrightness
 
-Gets how bright this entity is.
+Получает яркость этой сущности.
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getBrightness();
@@ -631,9 +631,9 @@ myMCPlayerEntity.getBrightness();
 myMCPlayerEntity.getBrightnessForRender();
 ```
 
-### getCachedUniqueIdString
+### Уникальная строка getCachedUniqueIdString
 
-Returns String
+Возвращает строку
 
 ```zenscript
 myMCPlayerEntity.getCachedUniqueIdString();
@@ -641,28 +641,28 @@ myMCPlayerEntity.getCachedUniqueIdString();
 
 ### getClassification
 
-Returns [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
+Возвращает [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
 
 ```zenscript
-myMCPlayerEntity.getClassification(forSpawnCount as boolean);
+myMCPlayerEntity.getClassification(forawnCount as boolean);
 ```
 
-| Параметр      | Тип     | Описание             |
-| ------------- | ------- | -------------------- |
-| forSpawnCount | boolean | Описание отсутствует |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| фора     | boolean | Описание отсутствует |
 
 
 ### getCollisionBorderSize
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getCollisionBorderSize();
 ```
 
-### getCooldownPeriod
+### Время перезарядки
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getCooldownPeriod();
@@ -670,34 +670,34 @@ myMCPlayerEntity.getCooldownPeriod();
 
 ### getCooledAttackStrength
 
-Returns the percentage of attack power available based on the cooldown (zero to one).
+Возвращает процент доступной мощности атаки, основанный на откате (от нуля до одного).
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
-myMCPlayerEntity.getCooledAttackStrength(adjustTicks as float);
+myMCPlayerEntity.getCooledAttackStrength(adjustTicks как плавающий);
 ```
 
 | Параметр    | Тип   | Описание             |
 | ----------- | ----- | -------------------- |
-| adjustTicks | float | Описание отсутствует |
+| Регулировка | float | Описание отсутствует |
 
 
 ### getDigSpeed
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
-myMCPlayerEntity.getDigSpeed(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.getDigSpeed(состояние как crafttweaker.api.block.MCBlockState);
 ```
 
 | Параметр | Тип                                                                     | Описание             |
 | -------- | ----------------------------------------------------------------------- | -------------------- |
-| state    | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
+| штат     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | Описание отсутствует |
 
 
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 as crafttweaker.api.util.BlockPos);
@@ -711,10 +711,10 @@ myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 a
 
 ### getDistanceSq
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
-myMCPlayerEntity.getDistanceSq(x as double, y as double, z as double);
+myMCPlayerEntity.getDistanceSq(x как двойный, y как двойный, z как двойный);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -734,15 +734,15 @@ myMCPlayerEntity.getEntityId();
 
 ### getEntityString
 
-Returns String
+Возвращает строку
 
 ```zenscript
 myMCPlayerEntity.getEntityString();
 ```
 
-### getEyeHeight
+### getEyeВысота
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getEyeHeight();
@@ -756,17 +756,17 @@ myMCPlayerEntity.getEyeHeight();
 myMCPlayerEntity.getFireTimer();
 ```
 
-### getHealth
+### Здравоохранение
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getHealth();
 ```
 
-### getHeight
+### getВысота
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getHeight();
@@ -774,7 +774,7 @@ myMCPlayerEntity.getHeight();
 
 ### getHeldItemMainhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemMainhand();
@@ -782,7 +782,7 @@ myMCPlayerEntity.getHeldItemMainhand();
 
 ### getHeldItemOffhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemOffhand();
@@ -790,12 +790,12 @@ myMCPlayerEntity.getHeldItemOffhand();
 
 ### getHorizontalFacing
 
-Gets the horizontal facing direction of this Entity.
+Получает горизонтальное направление в этом объекте.
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCPlayerEntity.getHorizontalFacing();
+myMCPlayerEntity.getHorizonFacing();
 ```
 
 ### getIdleTime
@@ -832,7 +832,7 @@ myMCPlayerEntity.getLastAttackedEntityTime();
 
 ### getLuck
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getLuck();
@@ -848,7 +848,7 @@ myMCPlayerEntity.getMaxAir();
 
 ### getMaxFallHeight
 
-The maximum height from where the entity is alowed to jump (used in pathfinder)
+Максимальная высота, с которой сущность должна прыгать (используется в путепроводе)
 
 Возвращает int
 
@@ -858,7 +858,7 @@ myMCPlayerEntity.getMaxFallHeight();
 
 ### getMaxHealth
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getMaxHealth();
@@ -866,7 +866,7 @@ myMCPlayerEntity.getMaxHealth();
 
 ### getMaxInPortalTime
 
-Return the amount of time this entity should stay in a portal before being transported.
+Возвращает количество времени, которое данная сущность должна остаться на портале перед транспортировкой.
 
 Возвращает int
 
@@ -876,9 +876,9 @@ myMCPlayerEntity.getMaxInPortalTime();
 
 ### getMountedYOffset
 
-Returns the Y offset from the entity's position for any entity riding this one.
+Возвращает смещение по Y из позиции сущности для любого объекта, занимающего это место.
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
 myMCPlayerEntity.getMountedYOffset();
@@ -886,22 +886,22 @@ myMCPlayerEntity.getMountedYOffset();
 
 ### getPitch
 
-Gets the current pitch of the entity.
+Получает текущий участок объекта.
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
-myMCPlayerEntity.getPitch(partialTicks as float);
+myMCPlayerEntity.getPitch(partialTicks как float);
 ```
 
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| partialTicks | float | Описание отсутствует |
+| Параметр       | Тип   | Описание             |
+| -------------- | ----- | -------------------- |
+| частичные Тики | float | Описание отсутствует |
 
 
-### getPortalCooldown
+### getPortalперезарядка
 
-Return the amount of cooldown before this entity can use a portal again.
+Возвращает количество отката перед повторным использованием портала.
 
 Возвращает int
 
@@ -911,9 +911,9 @@ myMCPlayerEntity.getPortalCooldown();
 
 ### getPosition
 
-Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
+Получить позицию в мире. <b>{@code null} не допускается!</b> Если вы не являетесь объектом в мире, верните координаты 0, 0
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getPosition();
@@ -921,7 +921,7 @@ myMCPlayerEntity.getPosition();
 
 ### getRenderScale
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getRenderScale();
@@ -937,7 +937,7 @@ myMCPlayerEntity.getRevengeTimer();
 
 ### getRotationYawHead
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getRotationYawHead();
@@ -951,11 +951,11 @@ myMCPlayerEntity.getRotationYawHead();
 myMCPlayerEntity.getScore();
 ```
 
-### getScoreboardName
+### Имя getScoreboardname
 
-Returns a String to use as this entity's name in the scoreboard/entity selector systems
+Возвращает строку для использования в качестве имени этого объекта в системах выбора счетчика и сущностей
 
-Returns String
+Возвращает строку
 
 ```zenscript
 myMCPlayerEntity.getScoreboardName();
@@ -969,32 +969,32 @@ myMCPlayerEntity.getScoreboardName();
 myMCPlayerEntity.getSleepTimer();
 ```
 
-### getSubmergedHeight
+### getSubmergedВысота
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
 myMCPlayerEntity.getSubmergedHeight();
 ```
 
-### getSwimAnimation
+### getSwimАнимация
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
-myMCPlayerEntity.getSwimAnimation(partialTicks as float);
+myMCPlayerEntity.getSwimAnimation(partialTicks как плавающий);
 ```
 
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| partialTicks | float | Описание отсутствует |
+| Параметр       | Тип   | Описание             |
+| -------------- | ----- | -------------------- |
+| частичные Тики | float | Описание отсутствует |
 
 
 ### getSwingProgress
 
-Gets the progression of the swing animation, ranges from 0.0 to 1.0.
+Получает прогрессию анимации свинга, диапазоны от 0.0 до 1.0.
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getSwingProgress(partialTickTime as float);
@@ -1005,17 +1005,17 @@ myMCPlayerEntity.getSwingProgress(partialTickTime as float);
 | partialTickTime | float | Описание отсутствует |
 
 
-### getTags
+### getТеги
 
-Returns Set<String>
+Набор возвратов<String>
 
 ```zenscript
 myMCPlayerEntity.getTags();
 ```
 
-### getTeleportDirection
+### Направление getTeleport
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getTeleportDirection();
@@ -1029,9 +1029,9 @@ myMCPlayerEntity.getTeleportDirection();
 myMCPlayerEntity.getTicksElytraFlying();
 ```
 
-### getTotalArmorValue
+### getTotalArmmorValue
 
-Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue
+Возвращает текущее значение брони, определенное вызовом к InventoryPlayer.getTotalArmorValue
 
 Возвращает int
 
@@ -1041,7 +1041,7 @@ myMCPlayerEntity.getTotalArmorValue();
 
 ### getWidth
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerEntity.getWidth();
@@ -1057,9 +1057,9 @@ myMCPlayerEntity.getXPSeed();
 
 ### getYOffset
 
-Returns the Y Offset of this entity.
+Возвращает смещение по Y этого объекта.
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
 myMCPlayerEntity.getYOffset();
@@ -1067,23 +1067,23 @@ myMCPlayerEntity.getYOffset();
 
 ### getYaw
 
-Gets the current yaw of the entity
+Получает текущую яду сущности
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
-myMCPlayerEntity.getYaw(partialTicks as float);
+myMCPlayerEntity.getYaw(partialTicks как float);
 ```
 
-| Параметр     | Тип   | Описание             |
-| ------------ | ----- | -------------------- |
-| partialTicks | float | Описание отсутствует |
+| Параметр       | Тип   | Описание             |
+| -------------- | ----- | -------------------- |
+| частичные Тики | float | Описание отсутствует |
 
 
-### giveExperiencePoints
+### Дать Очки опыта
 
 ```zenscript
-myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
+myMCPlayerEntity.giveExperiencePoints(p_195068_1_ как int);
 ```
 
 | Параметр      | Тип | Описание             |
@@ -1094,7 +1094,7 @@ myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
 ### handleStatusUpdate
 
 ```zenscript
-myMCPlayerEntity.handleStatusUpdate(id as byte);
+myMCPlayerEntity.handleStatusUpdate(id как байт);
 ```
 
 | Параметр | Тип  | Описание             |
@@ -1102,9 +1102,9 @@ myMCPlayerEntity.handleStatusUpdate(id as byte);
 | id       | byte | Описание отсутствует |
 
 
-### handleWaterMovement
+### перемещение ручной воды
 
-Returns if this entity is in water and will end up adding the waters velocity to the entity
+Возвращает если эта сущность находится в воде и в итоге добавит скорость воды к сущности
 
 Возвращает boolean
 
@@ -1112,7 +1112,7 @@ Returns if this entity is in water and will end up adding the waters velocity to
 myMCPlayerEntity.handleWaterMovement();
 ```
 
-### hasCustomName
+### имеет Настраиваемое Имя
 
 Возвращает boolean
 
@@ -1128,12 +1128,12 @@ myMCPlayerEntity.hasCustomName();
 myMCPlayerEntity.hasNoGravity();
 ```
 
-### hasPermissionLevel
+### уровень разрешений
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
+myMCPlayerEntity.hasPermissionLevel(p_211513_1_ как int);
 ```
 
 | Параметр      | Тип | Описание             |
@@ -1143,7 +1143,7 @@ myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
 
 ### hasReducedDebug
 
-Whether the "reducedDebugInfo" option is active for this player.
+Опция "reducedDebugInfo" активна для этого игрока.
 
 Возвращает boolean
 
@@ -1159,12 +1159,12 @@ myMCPlayerEntity.hasReducedDebug();
 myMCPlayerEntity.hashCode();
 ```
 
-### heal
+### исцеляет
 
-Heal living entity (param: amount of half-hearts)
+Исцелить живую сущность (Пара: количество полусердец)
 
 ```zenscript
-myMCPlayerEntity.heal(healAmount as float);
+myMCPlayerEntity.heal(исцеление плавающей суммы);
 ```
 
 | Параметр  | Тип   | Описание             |
@@ -1172,13 +1172,13 @@ myMCPlayerEntity.heal(healAmount as float);
 | исцеление | float | Описание отсутствует |
 
 
-### ignoreItemEntityData
+### игнорировать сущность
 
-Checks if players can use this entity to access operator (permission level 2) commands either directly or indirectly, such as give or setblock. A similar method exists for entities at {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>For example, {@link
- net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() command block minecarts} and {@link
+Проверяет, могут ли игроки использовать эту сущность для доступа к оператору (уровень разрешений 2) либо напрямую, либо косвенно, например, дать или setblock. Аналогичный метод существует по адресу {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>Например, {@link
+ net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() command block minecarts} и {@link
  net.minecraft.entity.item.EntityMinecartMobSpawner#ignoreItemEntityData() mob spawner minecarts} (spawning command
- block minecarts or drops) are considered accessible.</p>Returns: `true if this entity offers ways for unauthorized
- players to use restricted commands`
+ block minecarts или drops) считаются доступными.</p>Возвращается: `истина, если эта сущность предлагает способы для несанкционированных
+ игроков использовать ограниченные команды`
 
 Возвращает boolean
 
@@ -1194,7 +1194,7 @@ myMCPlayerEntity.ignoreItemEntityData();
 myMCPlayerEntity.isActiveItemStackBlocking();
 ```
 
-### isAddedToWorld
+### добавлен в мир
 
 Возвращает boolean
 
@@ -1204,7 +1204,7 @@ myMCPlayerEntity.isAddedToWorld();
 
 ### isAlive
 
-Returns true if the entity has not been .
+Возвращает значение истины, если сущность не была .
 
 Возвращает boolean
 
@@ -1212,7 +1212,7 @@ Returns true if the entity has not been .
 myMCPlayerEntity.isAlive();
 ```
 
-### isAllowEdit
+### Разрешено
 
 Возвращает boolean
 
@@ -1222,7 +1222,7 @@ myMCPlayerEntity.isAllowEdit();
 
 ### isBeingRidden
 
-If at least 1 entity is riding this one
+Если хотя бы 1 объект ездит на этом объекте
 
 Возвращает boolean
 
@@ -1230,9 +1230,9 @@ If at least 1 entity is riding this one
 myMCPlayerEntity.isBeingRidden();
 ```
 
-### isBurning
+### зажигающий
 
-Returns true if the entity is on fire. Used by render to add the fire effect on rendering.
+Возвращает значение истина, если сущность на огне. Используется рендером, чтобы добавить эффект огня при рендеринге.
 
 Возвращает boolean
 
@@ -1242,7 +1242,7 @@ myMCPlayerEntity.isBurning();
 
 ### isChild
 
-If Animal, checks if the age timer is negative
+Проверяет, является ли возраст отрицательным
 
 Возвращает boolean
 
@@ -1250,7 +1250,7 @@ If Animal, checks if the age timer is negative
 myMCPlayerEntity.isChild();
 ```
 
-### isCreative
+### неТворческий
 
 Возвращает boolean
 
@@ -1266,7 +1266,7 @@ myMCPlayerEntity.isCreative();
 myMCPlayerEntity.isCustomNameVisible();
 ```
 
-### isElytraFlying
+### Элитрация Летания
 
 Возвращает boolean
 
@@ -1276,7 +1276,7 @@ myMCPlayerEntity.isElytraFlying();
 
 ### isEntityInsideOpaqueBlock
 
-Checks if this entity is inside of an opaque block
+Проверяет, находится ли эта сущность внутри непрозрачного блока
 
 Возвращает boolean
 
@@ -1286,7 +1286,7 @@ myMCPlayerEntity.isEntityInsideOpaqueBlock();
 
 ### isEntityUndead
 
-Returns true if this entity is undead.
+Возвращает значение истины, если сущность не мертва.
 
 Возвращает boolean
 
@@ -1351,22 +1351,22 @@ myMCPlayerEntity.isInRangeToRender3d(x as double, y as double, z as double);
 
 ### isInRangeToRenderDist
 
-Checks if the entity is in range to render.
+Проверяет, находится ли объект в диапазоне к рендеру.
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRenderDist(distance as double);
+myMCPlayerEntity.isInRangeToRenderDist(расстояние двойно);
 ```
 
-| Параметр | Тип    | Описание             |
-| -------- | ------ | -------------------- |
-| distance | double | Описание отсутствует |
+| Параметр   | Тип    | Описание             |
+| ---------- | ------ | -------------------- |
+| расстояние | double | Описание отсутствует |
 
 
 ### isInWater
 
-Checks if this entity is inside water (if inWater field is true as a result of handleWaterMovement() returning true)
+Проверяет, является ли эта сущность внутренней водой (если поле inWater истинно в результате handleWaterMovement() возвращает значение )
 
 Возвращает boolean
 
@@ -1374,12 +1374,12 @@ Checks if this entity is inside water (if inWater field is true as a result of h
 myMCPlayerEntity.isInWater();
 ```
 
-### isInWaterOrBubbleColumn
+### пузырьковый пузырьк
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isInWaterOrBubbleColumn();
+myMCPlayerEntity.isInWaterOrbbleColumn();
 ```
 
 ### isInWaterRainOrBubbleColumn
@@ -1387,7 +1387,7 @@ myMCPlayerEntity.isInWaterOrBubbleColumn();
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isInWaterRainOrBubbleColumn();
+myMCPlayerEntity.isInWaterRainOrbbleColumn();
 ```
 
 ### isInvisible
@@ -1395,17 +1395,17 @@ myMCPlayerEntity.isInWaterRainOrBubbleColumn();
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isInvisible();
+myMCPlayerEntity.isневидимый();
 ```
 
-### isInvisibleToPlayer
+### невидимый для игрока
 
-Only used by renderer in EntityLivingBase subclasses. Determines if an entity is visible or not to a specific player, if the entity is normally invisible. For EntityLivingBase subclasses, returning false when invisible will render the entity semi-transparent.
+Используется только рендерером в подклассах EntityLivingBase. Определяет, является ли сущность видимой или не видимой для определенного игрока, если сущность обычно невидимой. Для подклассов EntityLivingBase возврат false, когда невидимый сделает сущность полупрозрачной.
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.isInvisibleToPlayer(игрок как мастерство.api.entity.player.MCPlayerEntity);
 ```
 
 | Параметр | Тип                                                                                        | Описание             |
@@ -1413,7 +1413,7 @@ myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MC
 | player   | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Описание отсутствует |
 
 
-### isInvulnerable
+### неуязвимый
 
 Возвращает boolean
 
@@ -1421,7 +1421,7 @@ myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MC
 myMCPlayerEntity.isInvulnerable();
 ```
 
-### isLiving
+### живой
 
 Возвращает boolean
 
@@ -1431,7 +1431,7 @@ myMCPlayerEntity.isLiving();
 
 ### isNonBoss
 
-Returns false if this Entity is a boss, true otherwise.
+Возвращает false, если этот объект является боссом, верно иначе.
 
 Возвращает boolean
 
@@ -1441,12 +1441,12 @@ myMCPlayerEntity.isNonBoss();
 
 ### isOffsetPositionInLiquid
 
-Checks if the offset position from the entity's current position is inside of a liquid.
+Проверяет, находится ли офсетная позиция сущности внутри жидкости.
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double);
+myMCPlayerEntity.isOffsetPositionInLiquid(x как double, y как double, z как double);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -1458,7 +1458,7 @@ myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double)
 
 ### лестница
 
-Returns true if this entity should move as if it were on a ladder (either because it's actually on a ladder, or for AI reasons)
+Возвращает значение true, если этот объект должен двигаться так, как будто он находится на лестнице (либо потому, что на самом деле он находится на лестнице, или по соображениям И)
 
 Возвращает boolean
 
@@ -1474,7 +1474,7 @@ myMCPlayerEntity.isOnLadder();
 myMCPlayerEntity.isOnePlayerRiding();
 ```
 
-### isPassenger
+### пассажир
 
 Возвращает boolean
 
@@ -1482,9 +1482,9 @@ myMCPlayerEntity.isOnePlayerRiding();
 myMCPlayerEntity.isPassenger();
 ```
 
-### isPlayerFullyAsleep
+### Полностью спящий
 
-Returns whether or not the player is asleep and the screen has fully faded.
+Возвращает ли игрок спящий или нет и экран полностью исчезает.
 
 Возвращает boolean
 
@@ -1492,20 +1492,20 @@ Returns whether or not the player is asleep and the screen has fully faded.
 myMCPlayerEntity.isPlayerFullyAsleep();
 ```
 
-### isPotionActive
+### неактивный
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.isPotionActive(зелье как мастерство.api.potion.MCPotionEffect);
 ```
 
 | Параметр | Тип                                                                           | Описание             |
 | -------- | ----------------------------------------------------------------------------- | -------------------- |
-| potionIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
+| зелье    | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
 
 
-### isPotionApplicable
+### Применимо к отравлению
 
 Возвращает boolean
 
@@ -1513,9 +1513,9 @@ myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffe
 myMCPlayerEntity.isPotionApplicable(potioneffectIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Параметр       | Тип                                                                                           | Описание             |
-| -------------- | --------------------------------------------------------------------------------------------- | -------------------- |
-| potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| Параметр | Тип                                                                                                   | Описание             |
+| -------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
+| зелье    | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
 
 
 ### isPushedByWater
@@ -1528,7 +1528,7 @@ myMCPlayerEntity.isPushedByWater();
 
 ### isServerWorld
 
-Returns whether the entity is in a server world
+Возвращает ли сущность в мире сервера
 
 Возвращает boolean
 
@@ -1538,7 +1538,7 @@ myMCPlayerEntity.isServerWorld();
 
 ### isSilent
 
-Returns: `True if this entity will not play sounds`
+Возвращается: `Правда, если этот объект не воспроизводит звуки`
 
 Возвращает boolean
 
@@ -1546,9 +1546,9 @@ Returns: `True if this entity will not play sounds`
 myMCPlayerEntity.isSilent();
 ```
 
-### isSleeping
+### спящий
 
-Returns whether player is sleeping or not
+Возвращает ли игрок спящий или нет
 
 Возвращает boolean
 
@@ -1558,7 +1558,7 @@ myMCPlayerEntity.isSleeping();
 
 ### isSneaking
 
-Returns if this entity is sneaking.
+Возвращает если эта сущность красться.
 
 Возвращает boolean
 
@@ -1566,7 +1566,7 @@ Returns if this entity is sneaking.
 myMCPlayerEntity.isSneaking();
 ```
 
-### isSpawnForced
+### неспавнсированный
 
 Возвращает boolean
 
@@ -1576,7 +1576,7 @@ myMCPlayerEntity.isSpawnForced();
 
 ### isSpectator
 
-Returns true if the player is in spectator mode.
+Возвращает значение true, если игрок находится в режиме наблюдателя.
 
 Возвращает boolean
 
@@ -1594,7 +1594,7 @@ myMCPlayerEntity.isSpinAttacking();
 
 ### isSprinting
 
-Get if the Entity is sprinting.
+Получить, если сущность спринтирована.
 
 Возвращает boolean
 
@@ -1602,7 +1602,7 @@ Get if the Entity is sprinting.
 myMCPlayerEntity.isSprinting();
 ```
 
-### isSwimming
+### плавание
 
 Возвращает boolean
 
@@ -1610,9 +1610,9 @@ myMCPlayerEntity.isSprinting();
 myMCPlayerEntity.isSwimming();
 ```
 
-### isUser
+### пользователь
 
-returns true if this is an EntityPlayerSP, or the logged in player.
+возвращает true, если это EntityPlayerSP, или игрок.
 
 Возвращает boolean
 
@@ -1622,7 +1622,7 @@ myMCPlayerEntity.isUser();
 
 ### isWet
 
-Checks if this entity is either in water or on an open air block in rain (used in wolves).
+Проверяет, находится ли эта сущность в воде или на открытом воздухе в дождь (используется в волках).
 
 Возвращает boolean
 
@@ -1630,9 +1630,9 @@ Checks if this entity is either in water or on an open air block in rain (used i
 myMCPlayerEntity.isWet();
 ```
 
-### jump
+### прыжок
 
-Causes this entity to do an upwards motion (jumping).
+Вызывает эту сущность для движения вверх (прыжок).
 
 ```zenscript
 myMCPlayerEntity.jump();
@@ -1640,37 +1640,37 @@ myMCPlayerEntity.jump();
 
 ### livingTick
 
-Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
+Звонки часто, чтобы сущность могла обновлять свое состояние каждый тик по мере необходимости. Например, зомби и скелеты используют это для реагирования на солнечный свет и начала гореть.
 
 ```zenscript
 myMCPlayerEntity.livingTick();
 ```
 
-### moveToBlockPosAndAngles
+### переместить в Блокируемые Углы
 
 ```zenscript
-myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn as float, rotationPitchIn as float);
+myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn как плавающий, вращениеPitchIn как плавающие);
 ```
 
-| Параметр        | Тип                                                          | Описание             |
-| --------------- | ------------------------------------------------------------ | -------------------- |
-| pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
-| rotationYawIn   | float                                                        | Описание отсутствует |
-| rotationPitchIn | float                                                        | Описание отсутствует |
+| Параметр       | Тип                                                          | Описание             |
+| -------------- | ------------------------------------------------------------ | -------------------- |
+| пос            | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| вращение YawIn | float                                                        | Описание отсутствует |
+| вращение       | float                                                        | Описание отсутствует |
 
 
-### onAddedToWorld
+### добавлено в мир
 
 ```zenscript
 myMCPlayerEntity.onAddedToWorld();
 ```
 
-### onCollideWithPlayer
+### ОН/Выход Игрока
 
-Called by a player entity when they collide with an entity
+Вызывается игроком при столкновении с сущностью
 
 ```zenscript
-myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.onCollideWithPlayer(entityIn как crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
 | Параметр | Тип                                                                                        | Описание             |
@@ -1678,71 +1678,71 @@ myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.
 | entityIn | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Описание отсутствует |
 
 
-### onEnchant
+### зачарование
 
 ```zenscript
-myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, cost as int);
+myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, стоит как int);
 ```
 
-| Параметр      | Тип                                                               | Описание             |
-| ------------- | ----------------------------------------------------------------- | -------------------- |
-| enchantedItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
-| cost          | int                                                               | Описание отсутствует |
+| Параметр             | Тип                                                               | Описание             |
+| -------------------- | ----------------------------------------------------------------- | -------------------- |
+| зачарованный предмет | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| стоимость            | int                                                               | Описание отсутствует |
 
 
 ### onEnterBubbleColumn
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
+myMCPlayerEntity.onEnterBubbleColumn(вниз, как boolean);
 ```
 
-| Параметр  | Тип     | Описание             |
-| --------- | ------- | -------------------- |
-| downwards | boolean | Описание отсутствует |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| вниз     | boolean | Описание отсутствует |
 
 
 ### onEnterBubbleColumnWithAirAbove
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(downwards as boolean);
+myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(вниз, как boolean);
 ```
 
-| Параметр  | Тип     | Описание             |
-| --------- | ------- | -------------------- |
-| downwards | boolean | Описание отсутствует |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| вниз     | boolean | Описание отсутствует |
 
 
 ### onKillCommand
 
-Called by the /kill command.
+Вызывается командой /kill
 
 ```zenscript
 myMCPlayerEntity.onKillCommand();
 ```
 
-### onRemovedFromWorld
+### судалён из мира
 
 ```zenscript
 myMCPlayerEntity.onRemovedFromWorld();
 ```
 
-### performHurtAnimation
+### выполнить HurtAnimation
 
-Setups the entity to do the hurt animation. Only used by packets in multiplayer.
+Настройте сущность для выполнения анимации повреждения. Используется только пакетами в мультиплеере.
 
 ```zenscript
 myMCPlayerEntity.performHurtAnimation();
 ```
 
-### preparePlayerToSpawn
+### подготовленного игрокаТоспавна
 
-Keeps moving the entity up so it isn't colliding with blocks and other requirements for this entity to be spawned (only actually used on players though its also on Entity)
+Перемещает сущность вверх, поэтому она не сталкивается с блоками и другими требованиями для создания сущности (фактически используется только для игроков, хотя и для сущности)
 
 ```zenscript
 myMCPlayerEntity.preparePlayerToSpawn();
 ```
 
-### recalculateSize
+### пересчитать размер
 
 ```zenscript
 myMCPlayerEntity.recalculateSize();
@@ -1759,14 +1759,14 @@ myMCPlayerEntity.remove();
 myMCPlayerEntity.remove(keepData as boolean);
 ```
 
-| Параметр | Тип     | Описание             |
-| -------- | ------- | -------------------- |
-| keepData | boolean | Описание отсутствует |
+| Параметр         | Тип     | Описание             |
+| ---------------- | ------- | -------------------- |
+| данные хранилища | boolean | Описание отсутствует |
 
 
-### removeActivePotionEffect
+### удалить активный эффект зелья
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Возвращает [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
 myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPotionEffect);
@@ -1779,13 +1779,13 @@ myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPoti
 
 ### removePassengers
 
-Dismounts all entities riding this entity from this entity.
+Размонтирует все сущности, которые ездят на эту сущность из этой сущности.
 
 ```zenscript
 myMCPlayerEntity.removePassengers();
 ```
 
-### removePotionEffect
+### удалить зелье
 
 Возвращает boolean
 
@@ -1795,7 +1795,7 @@ myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotion
 
 | Параметр | Тип                                                                           | Описание             |
 | -------- | ----------------------------------------------------------------------------- | -------------------- |
-| effectIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
+| эффект В | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | Описание отсутствует |
 
 
 ### removeTag
@@ -1803,7 +1803,7 @@ myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotion
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.removeTag(tag as String);
+myMCPlayerEntity.removeTag(тег как строка);
 ```
 
 | Параметр | Тип    | Описание             |
@@ -1811,21 +1811,21 @@ myMCPlayerEntity.removeTag(tag as String);
 | tag      | String | Описание отсутствует |
 
 
-### replaceItemInInventory
+### заменить Инвентарь
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.replaceItemInInventory(inventorySlot as int, itemStackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.replaceItemInInventory(inventorySlot как int, itemStackIn как crafttweaker.api.item.IItemStack);
 ```
 
-| Параметр      | Тип                                                               | Описание             |
-| ------------- | ----------------------------------------------------------------- | -------------------- |
-| inventorySlot | int                                                               | Описание отсутствует |
-| itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
+| Параметр       | Тип                                                               | Описание             |
+| -------------- | ----------------------------------------------------------------- | -------------------- |
+| слот инвентаря | int                                                               | Описание отсутствует |
+| itemStackIn    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Описание отсутствует |
 
 
-### resetActiveHand
+### сбросить Активный Рук
 
 ```zenscript
 myMCPlayerEntity.resetActiveHand();
@@ -1837,57 +1837,57 @@ myMCPlayerEntity.resetActiveHand();
 myMCPlayerEntity.resetCooldown();
 ```
 
-### resetPositionToBB
+### сбросить позицию в BB
 
-Resets the entity's position to the center (planar) and bottom (vertical) points of its bounding box.
+Сбрасывает положение объекта в центр (планар) и нижние (вертикальные) точки его границы.
 
 ```zenscript
 myMCPlayerEntity.resetPositionToBB();
 ```
 
-### respawnPlayer
+### возродить Игрока
 
 ```zenscript
 myMCPlayerEntity.respawnPlayer();
 ```
 
-### revive
+### возродить
 
 ```zenscript
 myMCPlayerEntity.revive();
 ```
 
-### rotateTowards
+### поворачиватьПо
 
 ```zenscript
-myMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
+myMCPlayerEntity.rotateToward(yaw двойный, высота в два раза);
 ```
 
 | Параметр | Тип    | Описание             |
 | -------- | ------ | -------------------- |
-| yaw      | double | Описание отсутствует |
-| pitch    | double | Описание отсутствует |
+| яй       | double | Описание отсутствует |
+| высота   | double | Описание отсутствует |
 
 
 ### sendEndCombat
 
-Sends an END_COMBAT packet to the client
+Отправляет клиенту пакет END_COMBAT
 
 ```zenscript
 myMCPlayerEntity.sendEndCombat();
 ```
 
-### sendEnterCombat
+### sendEnterbattle
 
-Sends an ENTER_COMBAT packet to the client
+Отправляет клиенту пакет ENTER_COMBAT
 
 ```zenscript
 myMCPlayerEntity.sendEnterCombat();
 ```
 
-### sendPlayerAbilities
+### sendPlayerAbility
 
-Sends the player's abilities to the server (if there is one).
+Отправляет возможности игрока на сервер (если таковой имеется).
 
 ```zenscript
 myMCPlayerEntity.sendPlayerAbilities();
@@ -1895,15 +1895,15 @@ myMCPlayerEntity.sendPlayerAbilities();
 
 ### setAIMoveSpeed
 
-set the movespeed used for the new AI system
+установить передвижение, используемое для новой системы ИИ
 
 ```zenscript
-myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
+myMCPlayerEntity.setAIMoveSpeed(скорость плавающей скорости);
 ```
 
 | Параметр | Тип   | Описание             |
 | -------- | ----- | -------------------- |
-| speedIn  | float | Описание отсутствует |
+| скорости | float | Описание отсутствует |
 
 
 ### setAbsorptionAmount
@@ -1920,7 +1920,7 @@ myMCPlayerEntity.setAbsorptionAmount(amount as float);
 ### setAir
 
 ```zenscript
-myMCPlayerEntity.setAir(air as int);
+myMCPlayerEntity.setAir(воздух, как int);
 ```
 
 | Параметр | Тип | Описание             |
@@ -1931,18 +1931,18 @@ myMCPlayerEntity.setAir(air as int);
 ### setArrowCountInEntity
 
 ```zenscript
-myMCPlayerEntity.setArrowCountInEntity(count as int);
+myMCPlayerEntity.setArrowCountInEntity(учитывается как int);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| count    | int | Описание отсутствует |
+| подсчет  | int | Описание отсутствует |
 
 
-### setBedPosition
+### установленная позиция
 
 ```zenscript
-myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.setBedPosition(p_213369_1_ как crafttweaker.api.util.BlockPos);
 ```
 
 | Параметр      | Тип                                                          | Описание             |
@@ -1953,7 +1953,7 @@ myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
 ### setCustomNameVisible
 
 ```zenscript
-myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
+myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag boolean);
 ```
 
 | Параметр            | Тип     | Описание             |
@@ -1961,7 +1961,7 @@ myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
 | alwaysRenderNameTag | boolean | Описание отсутствует |
 
 
-### setEntityId
+### идентификатор объекта
 
 ```zenscript
 myMCPlayerEntity.setEntityId(id as int);
@@ -1974,21 +1974,21 @@ myMCPlayerEntity.setEntityId(id as int);
 
 ### setFire
 
-Sets entity to burn for x amount of seconds, cannot lower amount of existing fire.
+Устанавливает ожог сущности на x количество секунд, нельзя уменьшить количество огонь.
 
 ```zenscript
-myMCPlayerEntity.setFire(seconds as int);
+myMCPlayerEntity.setFire(секунды как int);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| seconds  | int | Описание отсутствует |
+| секунд   | int | Описание отсутствует |
 
 
 ### setFireTimer
 
 ```zenscript
-myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
+myMCPlayerEntity.setFireTimer(p_223308_1_ как int);
 ```
 
 | Параметр      | Тип | Описание             |
@@ -1996,10 +1996,10 @@ myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
 | p_223308_1_ | int | Описание отсутствует |
 
 
-### setGlowing
+### установка Светящейся
 
 ```zenscript
-myMCPlayerEntity.setGlowing(glowingIn as boolean);
+myMCPlayerEntity.setGlowing(glowingIn как boolean);
 ```
 
 | Параметр  | Тип     | Описание             |
@@ -2015,14 +2015,14 @@ myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
 
 | Параметр | Тип   | Описание             |
 | -------- | ----- | -------------------- |
-| yaw      | float | Описание отсутствует |
-| pitch    | int   | Описание отсутствует |
+| яй       | float | Описание отсутствует |
+| высота   | int   | Описание отсутствует |
 
 
-### setHealth
+### задано Здоровье
 
 ```zenscript
-myMCPlayerEntity.setHealth(health as float);
+myMCPlayerEntity.setHealth(здоровье плавать);
 ```
 
 | Параметр | Тип   | Описание             |
@@ -2033,7 +2033,7 @@ myMCPlayerEntity.setHealth(health as float);
 ### setIdleTime
 
 ```zenscript
-myMCPlayerEntity.setIdleTime(idleTimeIn as int);
+myMCPlayerEntity.setIdleTime(idleTimeIn как int);
 ```
 
 | Параметр   | Тип | Описание             |
@@ -2047,44 +2047,44 @@ myMCPlayerEntity.setIdleTime(idleTimeIn as int);
 myMCPlayerEntity.setInLava();
 ```
 
-### setInvisible
+### невидимый
 
 ```zenscript
-myMCPlayerEntity.setInvisible(invisible as boolean);
+myMCPlayerEntity.setInvisible(невидим как boolean);
 ```
 
 | Параметр  | Тип     | Описание             |
 | --------- | ------- | -------------------- |
-| invisible | boolean | Описание отсутствует |
+| невидимый | boolean | Описание отсутствует |
 
 
 ### setInvulnerable
 
-Sets whether this Entity is invulnerable.
+Устанавливает неуязвимость этой сущности.
 
 ```zenscript
 myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 ```
 
-| Параметр       | Тип     | Описание             |
-| -------------- | ------- | -------------------- |
-| isInvulnerable | boolean | Описание отсутствует |
+| Параметр   | Тип     | Описание             |
+| ---------- | ------- | -------------------- |
+| неуязвимый | boolean | Описание отсутствует |
 
 
 ### setJumping
 
 ```zenscript
-myMCPlayerEntity.setJumping(jumping as boolean);
+myMCPlayerEntity.setJumping(прыжок как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| jumping  | boolean | Описание отсутствует |
+| прыжок   | boolean | Описание отсутствует |
 
 
-### setLocationAndAngles
+### setLocationAndУглы
 
-Sets the location and Yaw/Pitch of an entity in the world
+Устанавливает местоположение и Яйцо/Яйцо сущности в мире
 
 ```zenscript
 myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float);
@@ -2095,8 +2095,8 @@ myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw
 | х        | double | Описание отсутствует |
 | у        | double | Описание отсутствует |
 | z        | double | Описание отсутствует |
-| yaw      | float  | Описание отсутствует |
-| pitch    | float  | Описание отсутствует |
+| яй       | float  | Описание отсутствует |
+| высота   | float  | Описание отсутствует |
 
 
 ### setMotion
@@ -2115,7 +2115,7 @@ myMCPlayerEntity.setMotion(x as double, y as double, z as double);
 ### setNoGravity
 
 ```zenscript
-myMCPlayerEntity.setNoGravity(noGravity as boolean);
+myMCPlayerEntity.setNoGravity(noGravity как boolean);
 ```
 
 | Параметр  | Тип     | Описание             |
@@ -2123,23 +2123,23 @@ myMCPlayerEntity.setNoGravity(noGravity as boolean);
 | noGravity | boolean | Описание отсутствует |
 
 
-### setPartying
+### настройка Партнёра
 
-Called when a record starts or stops playing. Used to make parrots start or stop partying.
+Вызывается, когда запись запускается или прекращается играть. Используется для того, чтобы попугаи начинали или останавливали вечеринку.
 
 ```zenscript
-myMCPlayerEntity.setPartying(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
+myMCPlayerEntity.setParty(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
 ```
 
-| Параметр   | Тип                                                          | Описание             |
-| ---------- | ------------------------------------------------------------ | -------------------- |
-| pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
-| isPartying | boolean                                                      | Описание отсутствует |
+| Параметр  | Тип                                                          | Описание             |
+| --------- | ------------------------------------------------------------ | -------------------- |
+| пос       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| Причастие | boolean                                                      | Описание отсутствует |
 
 
 ### setPortal
 
-Marks the entity as being inside a portal, activating teleportation logic in onEntityUpdate() in the following tick(s).
+Отмечает сущность как находящуюся внутри портала, активируя логику телепортации в onEntityUpdate() в следующем флажке.
 
 ```zenscript
 myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
@@ -2147,12 +2147,12 @@ myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
 
 | Параметр | Тип                                                          | Описание             |
 | -------- | ------------------------------------------------------------ | -------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
 
 
-### setPosition
+### установка позиции
 
-Sets the x,y,z of the entity from the given parameters. Also seems to set up a bounding box.
+Устанавливает x,y,z сущности из заданных параметров. Также кажется, что можно настроить граничащее поле.
 
 ```zenscript
 myMCPlayerEntity.setPosition(x as double, y as double, z as double);
@@ -2165,9 +2165,9 @@ myMCPlayerEntity.setPosition(x as double, y as double, z as double);
 | z        | double | Описание отсутствует |
 
 
-### setPositionAndRotation
+### setPositionи ротация
 
-Sets position and rotation, clamping and wrapping params to valid values. Used by network code.
+Устанавливает положение и вращение, зажигание и обертывание параметров действительными значениями. Используется сетевым кодом.
 
 ```zenscript
 myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, yaw as float, pitch as float);
@@ -2178,32 +2178,32 @@ myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, y
 | х        | double | Описание отсутствует |
 | у        | double | Описание отсутствует |
 | z        | double | Описание отсутствует |
-| yaw      | float  | Описание отсутствует |
-| pitch    | float  | Описание отсутствует |
+| яй       | float  | Описание отсутствует |
+| высота   | float  | Описание отсутствует |
 
 
-### setPositionAndRotationDirect
+### setPositionAndDirect
 
-Sets a target for the client to interpolate towards over the next few ticks
+Устанавливает цель для клиента для интерполяции на следующие несколько тактов
 
 ```zenscript
 myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, pitch as float, posRotationIncrements as int, teleport as boolean);
 ```
 
-| Параметр              | Тип     | Описание             |
-| --------------------- | ------- | -------------------- |
-| х                     | double  | Описание отсутствует |
-| у                     | double  | Описание отсутствует |
-| z                     | double  | Описание отсутствует |
-| yaw                   | float   | Описание отсутствует |
-| pitch                 | float   | Описание отсутствует |
-| posRotationIncrements | int     | Описание отсутствует |
-| teleport              | boolean | Описание отсутствует |
+| Параметр             | Тип     | Описание             |
+| -------------------- | ------- | -------------------- |
+| х                    | double  | Описание отсутствует |
+| у                    | double  | Описание отсутствует |
+| z                    | double  | Описание отсутствует |
+| яй                   | float   | Описание отсутствует |
+| высота               | float   | Описание отсутствует |
+| Пороговые увеличения | int     | Описание отсутствует |
+| телепортироваться    | boolean | Описание отсутствует |
 
 
-### setPositionAndUpdate
+### установить и обновить
 
-Sets the position of the entity and updates the 'last' variables
+Устанавливает положение сущности и обновляет «последние» переменные
 
 ```zenscript
 myMCPlayerEntity.setPositionAndUpdate(x as double, y as double, z as double);
@@ -2227,56 +2227,56 @@ myMCPlayerEntity.setPositionNonDirty();
 ### setReducedDebug
 
 ```zenscript
-myMCPlayerEntity.setReducedDebug(reducedDebug as boolean);
+myMCPlayerEntity.setReducedDebug(reducedОтладка как boolean);
 ```
 
-| Параметр     | Тип     | Описание             |
-| ------------ | ------- | -------------------- |
-| reducedDebug | boolean | Описание отсутствует |
+| Параметр         | Тип     | Описание             |
+| ---------------- | ------- | -------------------- |
+| отладка отменена | boolean | Описание отсутствует |
 
 
 ### setRenderYawOffset
 
-Set the render yaw offset
+Установить смещение рендеринга
 
 ```zenscript
-myMCPlayerEntity.setRenderYawOffset(offset as float);
+myMCPlayerEntity.setRenderYawOffset(смещение с плавающей точкой);
 ```
 
 | Параметр | Тип   | Описание             |
 | -------- | ----- | -------------------- |
-| offset   | float | Описание отсутствует |
+| смещение | float | Описание отсутствует |
 
 
 ### setRotationYawHead
 
-Sets the head's yaw rotation of the entity.
+Устанавливает вращение головы yaw сущности.
 
 ```zenscript
-myMCPlayerEntity.setRotationYawHead(rotation as float);
+myMCPlayerEntity.setRotationYawHead(вращение как плавный);
 ```
 
 | Параметр | Тип   | Описание             |
 | -------- | ----- | -------------------- |
-| rotation | float | Описание отсутствует |
+| вращение | float | Описание отсутствует |
 
 
 ### setScore
 
-Set player's score
+Установить счет игрока
 
 ```zenscript
-myMCPlayerEntity.setScore(scoreIn as int);
+myMCPlayerEntity.setScore(счет как int);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| scoreIn  | int | Описание отсутствует |
+| счет     | int | Описание отсутствует |
 
 
 ### setSilent
 
-When set to true the entity will not play sounds.
+Когда установлено в true сущность не будет воспроизводить звуки.
 
 ```zenscript
 myMCPlayerEntity.setSilent(isSilent as boolean);
@@ -2287,34 +2287,34 @@ myMCPlayerEntity.setSilent(isSilent as boolean);
 | isSilent | boolean | Описание отсутствует |
 
 
-### setSneaking
+### настройка подкрадывания
 
-Sets the sneaking flag.
+Устанавливает флаг подкрадывания.
 
 ```zenscript
-myMCPlayerEntity.setSneaking(sneaking as boolean);
+myMCPlayerEntity.setSneaking(зависание от boolean);
 ```
 
-| Параметр | Тип     | Описание             |
-| -------- | ------- | -------------------- |
-| sneaking | boolean | Описание отсутствует |
+| Параметр      | Тип     | Описание             |
+| ------------- | ------- | -------------------- |
+| подкрадывание | boolean | Описание отсутствует |
 
 
 ### setSpawnPoint
 
 ```zenscript
-myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, forced as boolean);
+myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, принудительно boolean);
 ```
 
-| Параметр | Тип                                                          | Описание             |
-| -------- | ------------------------------------------------------------ | -------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
-| forced   | boolean                                                      | Описание отсутствует |
+| Параметр      | Тип                                                          | Описание             |
+| ------------- | ------------------------------------------------------------ | -------------------- |
+| пос           | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Описание отсутствует |
+| принудительно | boolean                                                      | Описание отсутствует |
 
 
 ### setSprinting
 
-Set sprinting switch for Entity.
+Установите переключатель пружины для Entity.
 
 ```zenscript
 myMCPlayerEntity.setSprinting(sprinting as boolean);
@@ -2322,13 +2322,13 @@ myMCPlayerEntity.setSprinting(sprinting as boolean);
 
 | Параметр  | Тип     | Описание             |
 | --------- | ------- | -------------------- |
-| sprinting | boolean | Описание отсутствует |
+| пружинный | boolean | Описание отсутствует |
 
 
 ### setSwimming
 
 ```zenscript
-myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
+myMCPlayerEntity.setSwimming(p_204711_1_ как boolean);
 ```
 
 | Параметр      | Тип     | Описание             |
@@ -2338,7 +2338,7 @@ myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
 
 ### setVelocity
 
-Updates the entity motion clientside, called by packets from the server
+Обновляет клиентское движение сущности, вызываемое пакетами с сервера
 
 ```zenscript
 myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
@@ -2351,9 +2351,9 @@ myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
 | z        | double | Описание отсутствует |
 
 
-### shouldHeal
+### должен исцелить
 
-Checks if the player's health is not full and not zero.
+Проверяет, не заполнено ли здоровье игрока и не равно нулю.
 
 Возвращает boolean
 
@@ -2361,23 +2361,23 @@ Checks if the player's health is not full and not zero.
 myMCPlayerEntity.shouldHeal();
 ```
 
-### shouldReceiveErrors
+### должны быть допущены ошибки
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.shouldReceiveErrors();
+myMCPlayerEntity.shouldReceiveError();
 ```
 
-### shouldReceiveFeedback
+### не удалось получить отзыв
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.shouldReceiveFeedback();
+myMCPlayerEntity.shouldReceiveback();
 ```
 
-### shouldRenderSneaking
+### ShouldRenderSneaking
 
 Возвращает boolean
 
@@ -2385,22 +2385,22 @@ myMCPlayerEntity.shouldReceiveFeedback();
 myMCPlayerEntity.shouldRenderSneaking();
 ```
 
-### shouldRiderFaceForward
+### должно быть RiderFaceForward
 
-Returns true if the entity's rider (EntityPlayer) should face forward when mounted. currently only used in vanilla code by pigs.
+Возвращает true, если всадник сущности (EntityPlayer) должен столкнуться вперед при монтировании. в настоящее время используется только в ванильном коде свиньями.
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.shouldRiderFaceForward(игрок как crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Параметр | Тип                                                                                        | Описание                             |
-| -------- | ------------------------------------------------------------------------------------------ | ------------------------------------ |
-| player   | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
+| Параметр | Тип                                                                                        | Описание                         |
+| -------- | ------------------------------------------------------------------------------------------ | -------------------------------- |
+| player   | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | Игрок, который ездит на объекте. |
 
 
-### shouldRiderSit
+### должно быть RiderSit
 
 Возвращает boolean
 
@@ -2408,24 +2408,24 @@ myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player
 myMCPlayerEntity.shouldRiderSit();
 ```
 
-### spawnRunningParticles
+### спавн RunningParticle
 
-Attempts to create sprinting particles if the entity is sprinting and not in water.
+Попытка создавать частицы спринта, если сущность спринтирована, а не в воде.
 
 ```zenscript
 myMCPlayerEntity.spawnRunningParticles();
 ```
 
-### spawnSweepParticles
+### создать частицы развёртывания
 
 ```zenscript
 myMCPlayerEntity.spawnSweepParticles();
 ```
 
-### startSleeping
+### старт сна
 
 ```zenscript
-myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.startSleeping(p_213342_1_ как crafttweaker.api.util.BlockPos);
 ```
 
 | Параметр      | Тип                                                          | Описание             |
@@ -2436,7 +2436,7 @@ myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
 ### startSpinAttack
 
 ```zenscript
-myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
+myMCPlayerEntity.startSpinAttack(p_204803_1_ как int);
 ```
 
 | Параметр      | Тип | Описание             |
@@ -2444,24 +2444,24 @@ myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
 | p_204803_1_ | int | Описание отсутствует |
 
 
-### stopActiveHand
+### Стоп-Активный
 
 ```zenscript
 myMCPlayerEntity.stopActiveHand();
 ```
 
-### stopRiding
+### остановка на пути
 
-Dismounts this entity from the entity it is riding.
+Отмонтирует этот объект от той сущности, которую он управляет.
 
 ```zenscript
 myMCPlayerEntity.stopRiding();
 ```
 
-### teleportKeepLoaded
+### телепортация загружена
 
 ```zenscript
-myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double, p_223102_5_ as double);
+myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ как double, p_223102_3_ как double, p_223102_5_ двойно);
 ```
 
 | Параметр      | Тип    | Описание             |
@@ -2471,9 +2471,9 @@ myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double
 | p_223102_5_ | double | Описание отсутствует |
 
 
-### tick
+### тик
 
-Called to update the entity's position/logic.
+Звонил обновления позиции/логики сущности.
 
 ```zenscript
 myMCPlayerEntity.tick();
@@ -2481,15 +2481,15 @@ myMCPlayerEntity.tick();
 
 ### toString
 
-Returns String
+Возвращает строку
 
 ```zenscript
 myMCPlayerEntity.toString();
 ```
 
-### updateRidden
+### обновить Ridden
 
-Handles updating while riding another entity
+Обрабатывает обновление при езде на другую сущность
 
 ```zenscript
 myMCPlayerEntity.updateRidden();
@@ -2501,30 +2501,30 @@ myMCPlayerEntity.updateRidden();
 myMCPlayerEntity.updateSwimming();
 ```
 
-### wakeUp
+### пробуждение
 
 ```zenscript
 myMCPlayerEntity.wakeUp();
 ```
 
-### wakeUpPlayer
+### пробуждение-плеер
 
-Wake up the player if they're sleeping.
+Разбудить игрока, если он спал.
 
 ```zenscript
-myMCPlayerEntity.wakeUpPlayer(immediately as boolean, updateWorldFlag as boolean, setSpawn as boolean);
+myMCPlayerEntity.wakeUpPlayer(сразу же как логический, обновлять WorldFlag как логический, установить Spawn как boolean);
 ```
 
 | Параметр        | Тип     | Описание             |
 | --------------- | ------- | -------------------- |
-| immediately     | boolean | Описание отсутствует |
+| немедленно      | boolean | Описание отсутствует |
 | updateWorldFlag | boolean | Описание отсутствует |
 | setSpawn        | boolean | Описание отсутствует |
 
 
 ### xpBarCap
 
-This method returns the cap amount of experience that the experience bar can hold. With each level, the experience cap on the player's experience bar is raised by 10.
+Этот метод возвращает кол-во опыта, которое может держать бар опыта. На каждом уровне колпачка опыта игрока поднимается на 10.
 
 Возвращает int
 
