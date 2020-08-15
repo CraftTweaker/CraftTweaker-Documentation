@@ -1,7 +1,7 @@
-# Supercooler
+# スーパークーラーです
 
-## Importing the Package
-`mods.nuclearcraft.SupercoolerSupercooler`
+## パッケージのインポート
+`mods.nuclearcraft.Supercoolerスーパークーラーです`
 
 ## レシピを追加中
 ```zenscript
