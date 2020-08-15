@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent>);
 ```
-| Parameter | Type                                                                                                                                                    | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent)> | No description provided |
+| Parametr | Typ                                                                                                                                                     | Opis                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemPickupEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent)> | No description provided |
 
 
 
-## Methods
+## Metody
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -83,9 +83,9 @@ myMCItemPickupEvent.isCanceled();
 myMCItemPickupEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parametr | Typ     | Opis                    |
+| -------- | ------- | ----------------------- |
+| cancel   | boolean | No description provided |
 
 
 
