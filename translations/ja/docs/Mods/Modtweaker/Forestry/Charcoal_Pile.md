@@ -2,11 +2,11 @@
 
 ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
 
-## Calling
+## 発信中
 
 You can call the package using `mods.forestry.CharcoalWall`
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
