@@ -1,7 +1,7 @@
-# Fluid Enricher
+# 流体离心机
 
-## Importing the Package
-`mods.nuclearcraft.dissolver`
+## 导入软件包
+`Nuclearcraft.dissoler`
 
 ## 添加配方
 ```zenscript
@@ -10,7 +10,7 @@ mods.nuclearcraft.dissolver.addRecipe([itemInput, fluidInput, fluidOutput, @Opti
 
 ## 删除配方
 ```zenscript
-mods.nuclearcraft.dissolver.removeRecipeWithInput([itemInput, fluidInput]);
-mods.nuclearcraft.dissolver.removeRecipeWithOutput([fluidOutput]);
+mods.nuclearcraft.dissolver.removeRecipewidInput([itemInput, fluidInput]);
+mods.nuclearcraft.dissolver.removeReciput([fluidOutput]);
 mods.nuclearcraft.dissolver.removeAllRecipes();
 ```
