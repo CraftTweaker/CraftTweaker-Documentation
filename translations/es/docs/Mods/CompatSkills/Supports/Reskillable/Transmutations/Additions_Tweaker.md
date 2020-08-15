@@ -1,12 +1,12 @@
-# Addition Tweaker
+# Adición Tweaker
 
-## ZenMethod List:
+## Lista de ZenMethod:
 
-    // Adds a Blockstate > Blockstate transmutation to the specified Itemstack Reagent.
-    mods.compatskills.transmutations.additions.addEntryToReagent(IItemStack reagent, IItemStack startState, IItemStack endState);
-    mods.compatskills.transmutations.additions.addEntryToReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);
+    // Agrega una transmutación Blockstate > Blockstate al Itemstack Reagent especificado.
+    mods.compatskills.transmutations.additions.addEntryToReagent(ItemStack reagent, ItemStack startState, ItemStack endState);
+    mods.compatskills.transmutations.additions. ddEntryToReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);
     
-    // Adds a Blockstate > Blockstate Transmutation regardless of a specific reagent.
-    // This means it will add this Transmutation to any already available reagent in the Transmutation Map.
-    mods.compatskills.transmutations.additions.addEntryToReagentAgnostic(IItemStack startState, IItemStack endState);
+    // Añade un Blockstate > Transmutación Blockstate independientemente de un reagente específico.
+    // Esto significa que añadirá esta Transmutación a cualquier reagente ya disponible en el Mapa de Transmutación.
+    mods.compatskills.transmutations.additions.addEntryToReagentAgnostic(ItemStack startState, ItemStack endState);
     mods.compatskills.transmutations.additions.addEntryToReagentAgnostic(crafttweaker.api.block.IBlockState state1, crafttweaker.api.block.IBlockState state2);
