@@ -5,7 +5,7 @@ The Distiller is a machine that converts an input fluid into an output fluid and
 ## 所属包名
 `mods.steamagerevolution.Distiller`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
@@ -20,7 +20,7 @@ mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outpu
 mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200);
 ```
 
-## Removal
+## 移除
 
 ```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
 
