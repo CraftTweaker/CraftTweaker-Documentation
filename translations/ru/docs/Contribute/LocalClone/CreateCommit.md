@@ -2,78 +2,78 @@
 
 ## Требования
 
-You need to have [Cloned the repo to your local disk](/Contribute/LocalClone/Clone).  
-You also need to already have changed something within your local clone.
+Вам нужно [Клонировать репозиторий на ваш локальный диск](/Contribute/LocalClone/Clone).  
+Вам также нужно уже что-то изменить в вашем локальном клоне.
 
 ## Что мы сделаем
 
-For the sake of learning, we will create a file named `Test.md` which will be available in `AdvancedFunctions/Secret/Test` and add it to mkdocs.yml.
+Для обучения мы создадим файл с именем `тест. d` который будет доступен в `Расширенные Функции/Secret/Test` и добавьте его в mkdocs.yml.
 
-The screenshots are taken from a Sublime Text 3 Editor (unregistered because on a VM), but you can use whatever editor you want to create/modify the files.  
-That's one of the advantages of working locally ^^.
+Скриншоты сделаны из Sublime Text 3 редактора (незарегистрированный, потому что на VM), но вы можете использовать любой редактор, который вы хотите создать/изменить файлы.  
+Это одно из преимуществ работы локально ^^.
 
-Screenshots of the example files: ![Test.md](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
+Скриншоты из примеров: ![Тест.мд](/Contribute/LocalClone/assets/Example1_TestMD.png) ![mkdocs.yml](/Contribute/LocalClone/assets/Example1_mkdocsYML.png)
 
-## Git status and Git add/stage
+## Git статус и Git добавление/этап
 
-The `git status` command tells you which files have been changed.  
-In our example it shows us this:
+Команда `git status` рассказывает вам, какие файлы были изменены.  
+В нашем примере мы показываем следующее:
 
-![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
+![Git статус звонка](/Contribute/LocalClone/assets/Example1_Bash_GitStatus.png)
 
-As you can see, we have two sections, modified files and untracked files. Modified files are files whose content differ from the index (git knows another version of them than you currently have on your computer).  
-Untracked files are files that don't yet exist in the index (git doesn't know them yet).
+Как вы можете видеть, у нас есть два раздела, модифицированные файлы и неотслеживаемые файлы. Измененные файлы - это файлы, содержание которых отличается от индекса (git знает другую версию файла, чем у вас сейчас на компьютере).  
+Неотслеживаемые файлы - это файлы, которые еще не существуют в индексе (git пока не знает их).
 
-In both cases you can tell git to *stage* the files using either `git add` or `git stage`: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
+В обоих случаях вы можете сказать git *стадии* файлов, используя либо `git add` или `git этап`: ![Git статус звонка](/Contribute/LocalClone/assets/Example1_Bash_GitStatus2.png)
 
-Now the files are staged to be committed and therefore printed in green. Notice, that if you were to modify either of those files now you would need to issue the add command again as it only adds the current state to the staging area.
+Теперь файлы будут сделаны и поэтому печатаются зеленым. Заметка Если вы модифицируете один из этих файлов, то теперь вам нужно будет выдать команду add снова, так как она только добавляет текущее состояние в промежуточную область.
 
-## Git commit
+## Git коммит
 
-Now that you have added the files you need to create a commit.  
-This can be done using the `git commit` command.
+Теперь, когда вы добавили файлы, необходимо создать коммит.  
+Это можно сделать, используя команду `git commit`.
 
-When you issue that command, all file states that are currently staged will be combined and added to the index.  
-That means that you can create one commit that changes more than one file (something GH's online editor is not capable of).  
-Usually you will want to create one commit per logical sector, so if you were to create a PR that adds documentation for ModA, ModB and ModC, you may want to create one commit that adds ModA, one that adds ModB and one that adds ModC.
+Когда вы выдаете эту команду, все состояния, которые в настоящее время поставлены в комплекте будут объединены и добавлены в индекс.  
+Это означает, что вы можете создать коммит, который изменяет более одного файла (сетевой редактор GH) не способен).  
+Обычно вы хотите создать одно коммит на логический сектор, , если вы хотите создать PR, который добавляет документацию для ModA, ModB и ModC, вы можете создать одно коммит, который добавляет мод, добавляющий мод и модуль.
 
-### Setting git Credentials
+### Настройка git учетных данных
 
-If this is the first time you create a commit using git you will see this message: ![Git status call](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
+Если вы впервые создаете коммит с помощью git, вы увидите это сообщение: ![Git статус звонка](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_CredentialError.png)
 
-This means that git does not know who you are, so it does not know who the commit author is supposed to be. So let's run the commands stated in the error message:
+Это означает, что git не знает, кто вы, так что не знаете, кто автор фиксации должен быть. Итак, давайте выполним команды, указанные в сообщении об ошибке:
 
     git config --global user.email "yourEmail"
     git config --global user.name "yourName"
     
 
-For the email, use one that has been added to your GH account.  
-For the name you can use anything but try to use your GH account name.
+Для электронной почты используйте тот, который был добавлен в ваш GH аккаунт.  
+Для имени вы можете использовать что-нибудь, но попробуйте использовать ваше имя учетной записи GH.
 
-### Setting the commit title/message
+### Установка заголовка/сообщения коммита
 
-If your credentials are set correctly, you will get a screen like this: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
+Если ваши учетные данные установлены правильно, вы получите экран: ![Окно коммита Git](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message1.png)
 
-This is from the text editor GitBash uses for that.  
-To enter insert mode (so that you can write something), press the INSERT key.  
-Now you can write your commit title (first line) and the commit message (everything below that).  
-You can use the ENTER key to create a new line and everything starting with a `#` will be ignored.
+Для этого используется текстовый редактор GitBash.  
+Для входа в режим вставки (чтобы что-то можно было написать), нажмите клавишу INSERT.  
+Теперь вы можете написать заголовок коммита (первую строку) и сообщение коммита (все ниже это).  
+Вы можете использовать ключ ENTER для создания новой строки, и все, начинающееся с `#` , будет проигнорировано.
 
-Don't mind the coloring, that's not your concern right now.  
-To exit the INSERT mode, press ESC.
+Не забывайте о цвете, это не ваша проблема.  
+Чтобы выйти из режима INSERT, нажмите ESC.
 
-Now you need to tell the editor that you are finished.  
-You can do that by typing pressing `:x` and pressing ENTER.
+Теперь вам нужно сообщить редактору, что вы закончили.  
+Вы можете сделать это, нажав `:x` и нажав ENTER.
 
-Here's a screen of what this may look like just before pressing enter to leave the editor: ![Git commit message window](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
+Вот экран, как это может выглядеть перед нажатием Enter, чтобы покинуть редактор: ![Окно коммита Git](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_Message2.png)
 
-### Setting the commit message/title using -m
+### Установка сообщения/заголовка коммита с помощью -m
 
-If you don't like the bash editor or find it hard to remember what keys to press, you can also use the `-m "message"` parameter. You can open the `"` and leave it unmatched to be able to create line breaks. Finish by typing the maching `"`.  
-Like in the editor, everything below the first line is considered part of the commit message.
+Если вам не нравится редактор bash или трудно запомнить, какие клавиши нажать - также можно использовать параметр `-m "message"`. Вы можете открыть `"` и оставить его несовпадающим, чтобы иметь возможность создавать переносы строк. Завершите набрав машину `"`.  
+Как и в редакторе, все ниже первой строки считается частью сообщения коммита.
 
-The same commit message as above could be achieved by doing: ![Git commit using -m](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
+Сообщение фиксации, которое выше, может быть получено: ![Git коммит используя -m](/Contribute/LocalClone/assets/Example1_Bash_GitCommit_MessageParameter.png)
 
-## How to continue
+## Как продолжить
 
-Now that you know how to create commits, you can [push them to your fork](/Contribute/LocalClone/Push/).
+Теперь, когда вы знаете, как создавать коммиты, вы можете [толкать их в свой форк](/Contribute/LocalClone/Push/).
