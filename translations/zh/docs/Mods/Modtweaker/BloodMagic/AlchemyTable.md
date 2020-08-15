@@ -1,39 +1,39 @@
-# Alchemy Table
+# 炼金术表
 
 ## 所属包名
 
-`mods.bloodmagic.AlchemyTable`
+`血红宝石表.`
 
 ## 添加配方
 
 ```zenscript
-inputs has a max size of 6
-//mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
+输入的最大尺寸是 6
+//mods.blemmagic.AlchemyTable.addRecipe(IItemStack 输出, IItemStack[……]输入, int syphon, int ticks, int miner Tier);
+mods. loodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
 ```
 
-## Potion addition
+## 药水添加剂
 
 ```zenscript
-inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
-var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
-//mods.bloodmagic.AlchemyTable.addPotionRecipe(IItemStack[] inputs, IPotionEffect effects, int syphon, int ticks, int minTier)
-mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0);
+输入的最大值为5，用于计算催化剂 (丢弃任何药水容器对象)
+var pot = <potion:minecraft:strength>。 akePotionEffect(6000, 1);
+/mods.blemmagic.AlchemyTable ddPotionRecipe(IItemStack[…]投入, IPotionEffect effects, int ticks, int minertier)
+mods.bolmagic.AlchemyTable.addPotionRecipe(<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0)；
 ```
 
-## Removal
+## 移除
 
 ```zenscript
-inputs has a max size of 6
-//mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
-mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
+输入的最大大小为 6
+//mods.blemmagic.AlchemyTable.removeRecipe(IItemStack[…]输入);
+mods.blemmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
 ```
 
-## Potion removal
+## 药水移除
 
-Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
+任何移除都被视为潜在的药剂，如果它与API注册表中的配方不匹配的话。
 
 ```zenscript
-//mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
-mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
+//mods.blemMagic.AlchemyTable.removeRecipe(IItemStack[…]输入)；
+mods.blemmagic.AlchemyTable.removeRecipe([<minecraft:ghast_tear>, <bloodmagic:potion_flask>]);
 ```
