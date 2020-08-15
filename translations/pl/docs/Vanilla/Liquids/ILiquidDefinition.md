@@ -2,16 +2,16 @@
 
 The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
+## Metody
 
 So, what can we do with it?
 
-### Multiplication
+### Mnożenie
 
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 
@@ -41,12 +41,12 @@ val lavaL = definition.luminosity;
 definition.luminosity = 0;
 ```
 
-| Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
-| ----------- | ----------- | -------------------------------------------------------- | --------------- |
-| name        |             | This returns the unlocalized liquid name                 | string          |
-| displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| Zengetter          | Zensetter   | What is this?                                            | Return/Set Type |
+| ------------------ | ----------- | -------------------------------------------------------- | --------------- |
+| Nazwa              |             | This returns the unlocalized liquid name                 | ciąg znaków     |
+| nazwa wyświetlacza |             | This returns the localized liquid name                   | ciąg znaków     |
+| luminancja         | luminancja  | This returns/sets the luminosity of the referred liquid  | odcień          |
+| gęstość            | gęstość     | This returns/sets the density of the referred liquid     | odcień          |
+| temperatura        | temperatura | This returns/sets the temperature of the referred liquid | odcień          |
+| lepkość            | lepkość     | This returns/sets the viscosity of the referred liquid   | odcień          |
+| gazowe             | gazowe      | This returns/sets whether the referred liquid is gaseous | boolean         |
