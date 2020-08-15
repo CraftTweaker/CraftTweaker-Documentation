@@ -2,16 +2,16 @@
 
 The ILiquidDefinition defines the liquid an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) consists of. Unlike the ILiquidStack, this interface allows you to change fluid properties.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidDefinition;`
 
-## Methods
+## Metodi
 
 So, what can we do with it?
 
-### Multiplication
+### Moltiplicazione
 
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 
@@ -43,10 +43,10 @@ definition.luminosity = 0;
 
 | Zengetter   | Zensetter   | What is this?                                            | Return/Set Type |
 | ----------- | ----------- | -------------------------------------------------------- | --------------- |
-| name        |             | This returns the unlocalized liquid name                 | string          |
-| displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| nome        |             | This returns the unlocalized liquid name                 | stringa         |
+| displayName |             | This returns the localized liquid name                   | stringa         |
+| luminosità  | luminosità  | This returns/sets the luminosity of the referred liquid  | int             |
+| densità     | densità     | This returns/sets the density of the referred liquid     | int             |
+| temperatura | temperatura | This returns/sets the temperature of the referred liquid | int             |
+| viscosità   | viscosità   | This returns/sets the viscosity of the referred liquid   | int             |
+| gassoso     | gassoso     | This returns/sets whether the referred liquid is gaseous | boolean         |
