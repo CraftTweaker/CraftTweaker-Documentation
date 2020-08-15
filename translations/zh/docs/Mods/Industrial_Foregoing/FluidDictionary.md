@@ -1,27 +1,27 @@
-# Fluid Dictionary
+# 液体字典
 
 ### 导入
 
 ```zenscript
-import mods.industrialforegoing.FluidDictionary;
+进口模式.工业前沿.氟乙烯；
 ```
 
 ### 添加配方
 
-It needs the Fluid Name as an input, the Fluid Name as an output and a conversion rate. The rate is how many mb from the origin will be transformed into the output. (InputMB * rate = OutputMB)
+它需要流体名称作为输入，流体名称作为输出和转换率。 比率是原产地的多少毫布将转化为输出。 (输入MB * 比率 = 输出MB)
 
 ```zenscript
-FluidDictionary.add(String input, String output, double rate);
+FluidDictionary.add(输入, 字符串输出, 双倍率);
 
-FluidDictionary.add("essence", "xpjuice", 1);
+FluidDictionary.add("基本", "xpjuice", 1);
 ```
 
 ### 移除配方
 
-It needs the Fluid Name as an input, the Fluid Name as an output.
+它需要流体名称作为输入，流体名称作为输出。
 
 ```zenscript
-FluidDictionary.remove(String input, String output);
+FluidDictionary.remove(正在输入, 字符串输出);
 
-FluidDictionary.remove("essence", "xpjuice");
+FluidDictionary.remove("基本", "xpjuice");
 ```
