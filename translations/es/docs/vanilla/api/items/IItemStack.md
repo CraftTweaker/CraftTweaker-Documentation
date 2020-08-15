@@ -1,6 +1,6 @@
 # IItemStack
 
-This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+Esto representa un elemento. Puede ser recuperado usando un artículo BEP. Es un [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
@@ -10,148 +10,148 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.item.IItemStack
 ```
 
-## Implemented Interfaces
-IItemStack implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implementadas
+ItemStack implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## Métodos
-### clearCustomName
+### borrar nombre
 
-Clears any custom name set for this ItemStack
+Limpia cualquier nombre personalizado establecido para este ItemStack
 
 ```zenscript
 <item:minecraft:dirt>.clearCustomName();
 ```
 
-### getRemainingItem
+### Objeto restante
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+Cuando se fabrica esta pila de ingredientes, ¿qué quedará en la cuadrícula? No comprueba si la pila concuerda! Utilizado, por ejemplo, en net.minecraft.item.crafting.ICraftingRecipe
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
+<item:minecraft:dirt>.getRemainingItem(stack as crafttweaker.api.item.ItemStack);
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parámetro | Tipo                                                              | Descripción                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parámetro | Tipo                                                              | Descripción                                 |
+| --------- | ----------------------------------------------------------------- | ------------------------------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pila para proporcionar este ingrediente. |
 
 
 ### partidas
 
-Does the given stack match the ingredient?
+¿La pila dada coincide con el ingrediente?
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 <item:minecraft:dirt>.matches(stack as crafttweaker.api.item.IItemStack);
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parámetro | Tipo                                                              | Descripción        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parámetro | Tipo                                                              | Descripción         |
+| --------- | ----------------------------------------------------------------- | ------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pila a comprobar |
 
 
 ### setDisplayName
 
-Sets the display name of the ItemStack
+Establece el nombre a mostrar del ItemStack
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<item:minecraft:dirt>.setDisplayName(name as String);
+<item:minecraft:dirt>.setDisplayName(nombre como cadena);
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parámetro | Tipo   | Descripción            |
-| --------- | ------ | ---------------------- |
-| nombre    | Cadena | New name of the stack. |
+| Parámetro | Tipo   | Descripción              |
+| --------- | ------ | ------------------------ |
+| nombre    | Cadena | Nuevo nombre de la pila. |
 
 
-### withDamage
+### con daño
 
-Sets the damage of the ItemStack
+Establece el daño de la pila de objetos
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>.withDamage(damage as int);
 <item:minecraft:dirt>.withDamage(10);
 ```
 
-| Parámetro | Tipo | Descripción          |
-| --------- | ---- | -------------------- |
-| daño      | int  | the new damage value |
+| Parámetro | Tipo | Descripción             |
+| --------- | ---- | ----------------------- |
+| daño      | int  | el nuevo valor del daño |
 
 
-### withTag
+### conEtiqueta
 
-Sets the tag for the ItemStack.
+Establece la etiqueta para el ItemStack.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <item:minecraft:dirt>.withTag(tag as crafttweaker.api.data.IData);
-<item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
+<item:minecraft:dirt>.withTag({Display: {lore: ["Hola"]}});
 ```
 
-| Parámetro | Tipo                                                   | Descripción     |
-| --------- | ------------------------------------------------------ | --------------- |
-| etiqueta  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
+| Parámetro | Tipo                                  | Descripción               |
+| --------- | ------------------------------------- | ------------------------- |
+| etiqueta  | [data.IData](/vanilla/api/data/IData) | La etiqueta a establecer. |
 
 
 
 ## Propiedades
 
-| Nombre             | Tipo                                                                | Has Getter | Has Setter |
-| ------------------ | ------------------------------------------------------------------- | ---------- | ---------- |
-| monto              | int                                                                 | verdad     | falso      |
-| tiempo quemado     | int                                                                 | verdad     | verdad     |
-| commandString      | Cadena                                                              | verdad     | falso      |
-| dañable            | boolean                                                             | verdad     | falso      |
-| damaged            | boolean                                                             | verdad     | falso      |
-| nombre de pantalla | Cadena                                                              | verdad     | falso      |
-| vacío              | boolean                                                             | verdad     | falso      |
-| food               | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | verdad     | verdad     |
-| getOrCreate        | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | verdad     | falso      |
-| getRepairCost      | int                                                                 | verdad     | falso      |
-| hasDisplayName     | boolean                                                             | verdad     | falso      |
-| hasEffect          | boolean                                                             | verdad     | falso      |
-| hasTag             | boolean                                                             | verdad     | falso      |
-| isCrossbow         | boolean                                                             | verdad     | falso      |
-| encantable         | boolean                                                             | verdad     | falso      |
-| encantado          | boolean                                                             | verdad     | falso      |
-| objetos            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | verdad     | falso      |
-| maxDamage          | int                                                                 | verdad     | falso      |
-| maxStackSize       | int                                                                 | verdad     | falso      |
-| registryName       | Cadena                                                              | verdad     | falso      |
-| stackable          | boolean                                                             | verdad     | falso      |
-| etiqueta           | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | verdad     | falso      |
-| translationKey     | Cadena                                                              | verdad     | falso      |
-| useDuration        | int                                                                 | verdad     | falso      |
+| Nombre             | Tipo                                                                | Tiene Obtén | Tiene Setter |
+| ------------------ | ------------------------------------------------------------------- | ----------- | ------------ |
+| monto              | int                                                                 | verdad      | falso        |
+| tiempo quemado     | int                                                                 | verdad      | verdad       |
+| commandString      | Cadena                                                              | verdad      | falso        |
+| dañable            | boolean                                                             | verdad      | falso        |
+| dañado             | boolean                                                             | verdad      | falso        |
+| nombre de pantalla | Cadena                                                              | verdad      | falso        |
+| vacío              | boolean                                                             | verdad      | falso        |
+| comida             | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | verdad      | verdad       |
+| getOrCreate        | [data.IData](/vanilla/api/data/IData)                               | verdad      | falso        |
+| getRepairCost      | int                                                                 | verdad      | falso        |
+| hasDisplayName     | boolean                                                             | verdad      | falso        |
+| hasEfecto          | boolean                                                             | verdad      | falso        |
+| hasTag             | boolean                                                             | verdad      | falso        |
+| isCrossbow         | boolean                                                             | verdad      | falso        |
+| encantable         | boolean                                                             | verdad      | falso        |
+| encantado          | boolean                                                             | verdad      | falso        |
+| objetos            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | verdad      | falso        |
+| maxDamage          | int                                                                 | verdad      | falso        |
+| maxStackSize       | int                                                                 | verdad      | falso        |
+| registryName       | Cadena                                                              | verdad      | falso        |
+| apilable           | boolean                                                             | verdad      | falso        |
+| etiqueta           | [data.IData](/vanilla/api/data/IData)                               | verdad      | falso        |
+| translationKey     | Cadena                                                              | verdad      | falso        |
+| useDuration        | int                                                                 | verdad      | falso        |
 
 ## Operadores
 ### MUL
 
-Sets the amount of the ItemStack
+Establece la cantidad de la pila de objetos
 
 ```zenscript
-<item:minecraft:dirt> * amount as int
+<item:minecraft:dirt> * monto como int
 <item:minecraft:dirt> * 3
 ```
 
-| Parámetro | Tipo | Descripción |
-| --------- | ---- | ----------- |
-| monto     | int  | new amount  |
+| Parámetro | Tipo | Descripción    |
+| --------- | ---- | -------------- |
+| monto     | int  | nueva cantidad |
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)            | verdad      |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)        | verdad      |
-| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | falso       |
+| Tipo de resultado                                                 | Es implícito |
+| ----------------------------------------------------------------- | ------------ |
+| [data.IData](/vanilla/api/data/IData)                             | verdad       |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)        | verdad       |
+| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | falso        |
 
