@@ -1,28 +1,28 @@
-# Food Items
+# 食物物品
 
-This allows you to add food items to the game!
+这允许您将食物添加到游戏中！
 
-## Create the Food Item Representation
+## 创建食物项表示
 
-Before you can add the item, you need to create a food item Representation which will allow you to set the properties of the item you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+在您可以添加项目之前， 您需要创建一个食物项的表示，以允许您设置您想要添加的项目的属性。  
+这是 [Vanilla工厂](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) 所处的位置：
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
+mods.contenttweeper.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
-## Import the representation Package
+## 导入校验包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.ItemFood;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweakerItemFood;`
 
-## ItemRepresentation Expansion
+## 项目呈现扩展
 
-The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). That means all Methods and ZenProperties that are available for [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) are also available for food items!
+ItemFoodRepresentation 类扩展 [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). 这意味着所有可用于 [项目](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 的方法和ZenProperties 也可用于食物！
 
 ## ZenProperties
 
-To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
+要获取/设置属性，您可以使用尊敬的 ZenGetters/Setters或ZenMethods：
 
 ```zenscript
 //property name: healAmount
@@ -35,20 +35,20 @@ item.getHealAmount();
 item.setHealAmount(64);
 ```
 
-| Property        | 类型                                                                                              | Required | Default Value | Description/Notes                                           |
-| --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
-| healAmount      | int                                                                                             | Yes      |               | How many food points are restored when eaten?               |
-| alwaysEdible    | bool                                                                                            | No       | false         | Can the food still be eaten if the user's food bar is full? |
-| wolfFood        | bool                                                                                            | No       | false         | Can the food be used to tame woves?                         |
-| saturation      | float                                                                                           | No       | 0.6           | The food's Saturation Value                                 |
-| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null          | Called when the food item is eaten                          |
+| 财产              | 类型                                                                                              | 必填 | 默认值   | 描述/注释               |
+| --------------- | ----------------------------------------------------------------------------------------------- | -- | ----- | ------------------- |
+| 治疗量             | int                                                                                             | 否  |       | 当吃饭时恢复了多少食物点？       |
+| 总是可食用           | 布尔值                                                                                             | 否  | false | 如果用户的食物栏满了，是否仍然吃食物？ |
+| 狼肉              | 布尔值                                                                                             | 否  | false | 能否将食物用于驯服羊毛？        |
+| 饱和度             | float                                                                                           | 否  | 0.6   | 食物饱和度               |
+| onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | 否  | 空的    | 食物被吃时               |
 
-## Registering the item
+## 注册项目
 
-You need to call this method to register the item in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the item or change any of it's properties!
+您需要调用此方法来注册游戏中的项目！  
+不会发生任何事情！  
+在你调用此函数后，你不能取消注册该项或更改它的任何属性！
 
 ```zenscript
-item.register();
+文 件：
 ```
