@@ -16,12 +16,12 @@ LivingExperienceDrop Events implement the following interfaces and are able to c
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter            | ZenSetter           | Type                                 |
+| ZenGetter            | ZenSetter           | タイプ                                  |
 | -------------------- | ------------------- | ------------------------------------ |
 | `player`             |                     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `droppedExperience`  | `droppedExperience` | int型                                 |
 | `originalExperience` |                     | int                                  |
 
-## Notes
+## メモ
 
 `originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
