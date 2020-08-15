@@ -1,12 +1,12 @@
 # IMinecartEvent
 
-This event is extended by all events involving Minecarts.
+このイベントは、Minecartsを含むすべてのイベントによって拡張されます。
 
 ## クラスのインポート
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IMinecartEvent;`
 
-## What can be done with them?
+## 何が彼らを使って行うことができますか?
 
 | 名前       | タイプ                                   |
 | -------- | ------------------------------------- |
