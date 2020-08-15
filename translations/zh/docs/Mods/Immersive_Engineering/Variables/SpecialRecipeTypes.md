@@ -1,12 +1,12 @@
-# Special Recipe Types
+# 特殊配方类型
 
-## Information
+## 信息
 
-The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
+Arc-Furnace 有一个可选的字符串参数，叫做“specialRecipeType”。 此字符串允许您将配方“子标签”设置为特定配方类型。 这不会以任何方式改变行为，它只是分配给子标签。
 
-### Existing Types
+### 现有类型
 
-| Recipe Types: | Value      |
-| ------------- | ---------- |
-| Alloying      | "Alloying" |
-| Ores          | "Ores"     |
+| 配方类型： | 值    |
+| ----- | ---- |
+| 分配中   | “分配” |
+| Ores  | “异常” |
