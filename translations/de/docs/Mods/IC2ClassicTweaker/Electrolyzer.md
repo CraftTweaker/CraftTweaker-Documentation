@@ -44,7 +44,7 @@ mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <m
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
 - **int energy** Total eu received from the recipe.
 
-### Removal
+### Entfernen
 
 Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
 
