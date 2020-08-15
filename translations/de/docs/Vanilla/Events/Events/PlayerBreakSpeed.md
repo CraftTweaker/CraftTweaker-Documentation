@@ -22,6 +22,6 @@ PlayerBreakSpeed Events implement the following interfaces and are able to call 
 | ZenGetter     | ZenSetter | Type                                        |
 | ------------- | --------- | ------------------------------------------- |
 | blockState    |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block         |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| blockieren    |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | originalSpeed |           | float                                       |
 | newSpeed      | newSpeed  | float                                       |
