@@ -1,15 +1,15 @@
-# Anvil
+# Incudine
 
-The Anvil is a simple 4x4 Crafting Table with the same options.
+L'incudine è un semplice tavolo da lavoro 4x4 con le stesse opzioni.
 
-## Shaped
+## Forma
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
 
-mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -17,7 +17,7 @@ mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
@@ -30,12 +30,12 @@ mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
 
 ## Shapeless
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
 
-mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Invil. ddShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
@@ -43,19 +43,19 @@ mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
 
 mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. emoveShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
 
-mods.betterwithmods.Anvil.removeAll();
+mod. etterwithmods.Anvil.removeAll();
 ```
