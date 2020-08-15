@@ -1,6 +1,6 @@
 # OR Operator
 
-An **OR** gate combines two inputs and returns `TRUE` if at least one of the inputs is also `TRUE`.
+Un cancello **OR** combina due ingressi e restituisce `VERO` se almeno uno degli ingressi è anche `VERO`.
 
 | Input 1 | Input 2 | Output |
 | ------- | ------- | ------:|
