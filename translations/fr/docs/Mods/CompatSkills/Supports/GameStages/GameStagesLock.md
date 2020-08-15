@@ -1,16 +1,16 @@
-# Stage-Locks
+# Verrou de l'étape
 
-## Stage-Lock
+## Verrouillage par étapes
 
-This part of the GameStages-support allows you to lock a specific stage behind a set of requirements. This means that if a player does not match the set requirements for the stage upon unlocking the stage, it'll cancel the unlock and post an error message to chat. This chat message isn't server-wide but player-specific.
+Cette partie du support GameStages vous permet de verrouiller une étape spécifique derrière un ensemble de conditions. Cela signifie que si un joueur ne correspond pas aux conditions définies pour l'étape lors du déblocage de l'étape, il annulera le déverrouillage et publiera un message d'erreur dans le chat. Ce message de chat n'est pas spécifique au serveur mais au joueur.
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example:
+    // Exemple:
     mods.compatskills.GameStageLocks.addGameStageLock(String gamestage, String... defaultRequirements);
     
-    // Test Example:
+    // Test Exemple:
     mods.compatskills.GameStageLocks.addGameStageLock("i", "reskillable:agility|10");
-    mods.compatskills.GameStageLocks.addGameStageLock("like", "reskillable:agility|11");
+    mods.compatskills.GameStageLocks.addGameStageLock("comme", "reskillable:agility|11");
     mods.compatskills.GameStageLocks.addGameStageLock("banana", "reskillable:agility|12");
     mods.compatskills.GameStageLocks.addGameStageLock("pancakes", "reskillable:agility|13");
