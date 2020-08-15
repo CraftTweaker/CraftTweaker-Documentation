@@ -1,6 +1,6 @@
-# Immersive Engineering
+# Ingeniería Inmersiva
 
-## Information
+## Información
 
 Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
 
@@ -12,6 +12,6 @@ IE is about making tech mods more balanced and more pretty, and adding its own t
 
 Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
 
-## Bug Reports
+## Reportes de errores
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues
