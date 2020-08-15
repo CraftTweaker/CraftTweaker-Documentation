@@ -1,12 +1,12 @@
-# Astral Sorcery
+# アストラル魔法使い(Astral Sorcery)
 
-Astral Sorcery is a magic mod focused around harnessing the powers of starlight and the constellations. Explore and discover the world and the sky above you; focus starlight to your will, strengthening yourself or enhancing the world around you.
+アストラル魔法は星の光と星座の力を利用することに焦点を当てた魔法のModです。 探検し、あなたの上の世界と空を発見してください。あなたの意志にスターライトを集中させ、あなた自身を強化するか、あなたの周りの世界を強化します。
 
 ## CraftTweaker integration
 
-Astral Sorcery comes with NATIVE crafttweaker integration.  
-This means that issues with the added methods should be discussed at the [Astral sorcery issue tracker](https://github.com/HellFirePvP/AstralSorcery/issues).
+アストラル魔法にはNATIVEcrafttweaker統合が付属しています。  
+これは、追加された方法に関する問題が [アストラル魔術問題トラッカー](https://github.com/HellFirePvP/AstralSorcery/issues) で議論されるべきであることを意味します。
 
-## Removed CraftTweaker methods
+## CraftTweakerメソッドを削除しました
 
-- Astral Sorcery's CraftTweaker integration once featured a Mineralis Ritual. This is now handled by a config option!
+- Astral Sorcery's CraftTweaker統合は、かつてMineralis Ritualを特集したことがあります。 これは設定オプションによって処理されます！
