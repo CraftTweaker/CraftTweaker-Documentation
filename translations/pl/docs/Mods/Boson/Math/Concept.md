@@ -1,11 +1,11 @@
-# The Concept
+# Koncepcja
 
-Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
+Większość zastosowań matematyki w ZenScript może być pokryta za pomocą czterech podstawowych operacji: dodaj, odejmowanie, mnożenie i dzielenie. ZenScript zapewnia również dostęp do funkcji `pow` , która wykonuje operację zasilania. Ale to wszystko. Nie można wykonać bardziej zaawansowanych operacji matematycznych, i wymagałoby pełnej reimplementacji z tablicami funkcji zecerskich i nie skorzystałoby w tym względzie z optymalizacji sprzętu, zwłaszcza dla nowoczesnych procesorów.
 
-This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
+To jest miejsce, w którym znajduje się ZenScriptX Math, dostarczając zestaw klas i podstawowych operacji arytmetycznych, które mogą być ogólnej przydatności, korzystając również w większości z optymalizacji sprzętu, ponieważ większość z nich jest wdrażana na natywnym poziomie (poprzez kilka pośrednich czynników związanych z uruchomieniem VM ZenScript).
 
-Every documentation section will provide the user with a list of provided functions and their behavior.
+Każda sekcja dokumentacji dostarczy użytkownikowi listę dostarczonych funkcji i ich zachowania.
 
-The current list of provided classes that are implemented are:
+Aktualny wykaz oferowanych klas jest następujący:
 
-- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)
+- [Matematyka](/Mods/Boson/Math/Math/) dla zwykłych funkcji matematycznych (np. sinus, cosine, logarytm...)
