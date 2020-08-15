@@ -1,6 +1,6 @@
 # Basin Squeezing
 
-## Addition
+## Сложение
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
@@ -11,7 +11,7 @@ BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
