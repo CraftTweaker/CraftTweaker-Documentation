@@ -1,19 +1,19 @@
-# Tooltips
+# Suggerimenti
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+Aggiungere o rimuovere un suggerimento è davvero facile:  
+Tutto quello che ti serve è un oggetto (o oreDict o simile), in altre parole, un IIngrediente.
 
-## Clearing tooltips
+## Suggerimenti per la cancellazione
 
-This removes ALL tooltips from the `item`
+Questo rimuove TUTTI i suggerimenti dall'elemento ``
 
 ```zenscript
 item.clearTooltip();
 ```
 
-## Removing specific tooltips
+## Rimozione di suggerimenti specifici
 
-This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
+Questa funzione rimuove tutti i suggerimenti che corrispondono al regex dato. Un suggerimento è generalmente una riga di testo (a meno che non ci siano linebreaks forzati a causa dello spazio).
 
 ```zenscript
 item.removeTooltip(regex);
@@ -22,43 +22,43 @@ item.removeTooltip(regex);
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
 `tT` is a string
 
-## Normal Tooltips
+## Suggerimenti Normale
 
-This adds `tT` as tooltip to `item`.
+Questo aggiunge `tT` come suggerimento a `elemento`.
 
 ```zenscript
 item.addTooltip(tT);
 
-<minecraft:chest>.addTooltip("Storage, what can I say more?");
+<minecraft:chest>.addTooltip("Storage, cosa posso dire di più?");
 ```
 
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
 `tT` is a string
 
-## Shift Tooltips
+## Suggerimenti Maiusc
 
-This adds a tooltip, that will only be visible when you hold shift.  
-You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
+Questo aggiunge un suggerimento, che sarà visibile solo quando tieni premuto lo spostamento.  
+Puoi anche aggiungere un'informazione che sarà visibile quando non tieni premuto lo spostamento (solitamente usata per creare qualcosa di simile a un messaggio che ti dice sul suggerimento di spostamento).
 
 ```zenscript
 item.addShiftTooltip(tT);
 item.addShiftTooltip(tT, info);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
-<minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
+<minecraft:redstone>.addShiftTooltip("ROSSO!!", "Tieni premuto shift per sapere cosa sono");
 ```
 
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
-`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
+`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). Puoi anche usare una stringa come convertita automaticamente.  
+`info` è un [IFormattedText](/Vanilla/Utils/IFormattedText/). È anche possibile utilizzare semplicemente una stringa come vengono convertiti automaticamente.
 
 # Markup
 
-The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+Il mondo è colorato, e così dovrebbe essere tutti i nostri suggerimenti. Si può anche nidare queste opzioni, se con a (se si voleva un testo verde, che è scioccato)
 
-## Coloring a String
+## Colorare una stringa
 
-You can apply one of the 16 colors to your string
+Puoi applicare uno dei 16 colori alla tua stringa
 
 ```zenscript
 format.black
@@ -68,7 +68,7 @@ format.darkAqua
 format.darkRed
 format.darkPurple
 format.gold
-format.gray
+format. ray
 format.darkGray
 format.blue
 format.green
@@ -80,12 +80,12 @@ format.white
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+<minecraft:stick>.addTooltip(format.green("Questo non era ripe"));
 ```
 
-## Formatting a String
+## Formattazione di una stringa
 
-You can apply different formats to your String should you wish to:
+Puoi applicare diversi formati alla tua Stringa se:
 
 ```zenscript
 format.obfuscated
@@ -96,17 +96,17 @@ format.italic
 ```
 
 ```zenscript
-<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
+<minecraft:stick>.addShiftTooltip(format.strikethrough("Questo è un cattivo suggerimento"));
 ```
 
-## Tooltip functions
+## Funzioni di suggerimento
 
-You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
-These functions allow you to dynamically generate a tooltip based on the given IItemStack.
+È possibile sostituire il parametro [IFormattedText](/Vanilla/Utils/IFormattedText/) con un ITooltipFunction (`import crafttweaker.item. Funzione Tooltip;`).  
+Queste funzioni consentono di generare dinamicamente un suggerimento basato su IItemStack dato.
 
-A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
+Una funzione di suggerimento è una funzione che richiede un [IItemStack](/Vanilla/Items/IItemStack/) e restituisce il suggerimento come stringa. Ciò significa che l'utilizzo di un comando `format` *non funziona* per queste funzioni, dovrai fare affidamento sui prefissi di formattazione di Minecraft, se hai bisogno di farlo.
 
-For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
+Per i suggerimenti degli strumenti di spostamento, è possibile fornire una seconda funzione pure, che consente di generare anche il suggerimento che dovrebbe essere mostrato quando lo spostamento non viene premuto. Per i suggerimenti di spostamento sono entrambi i parametri come funzione o entrambi come [IFormattedText](/Vanilla/Utils/IFormattedText/), nessun mix-up!
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
@@ -114,15 +114,15 @@ addShiftTooltip(ITooltipFunction fn, @Optional ITooltipFunction infoFn);
 
 
 //Example
-<ore:myAxeOreDictionary>.add(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
+<ore:myAxeOreDictionary>. dd(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
 
-<ore:myAxeOreDictionary>.addAdvancedTooltip(function(item) {   
-    return "Damage: " ~ item.damage ~ " / " ~ item.maxDamage;
+<ore:myAxeOreDictionary>. ddAdvancedTooltip(function(item) {   
+    return "Damage: " ~ item. amage ~ " / " ~ item.maxDamage;
 });
 
 
-<ore:myAxeOreDictionary>.addShiftTooltip(function(item) {    
-    return "Uses left: " ~ (item.maxDamage - item.damage);
+<ore:myAxeOreDictionary>. ddShiftTooltip(function(item) {    
+    return "Uses left: " ~ (item. axDamage - item.damage);
 }, function(item){
     return "Hold shift for some juicy math.";
 });
