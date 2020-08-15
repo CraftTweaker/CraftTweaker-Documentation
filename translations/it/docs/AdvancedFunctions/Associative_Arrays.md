@@ -1,156 +1,156 @@
-# Associative Arrays
+# Array Associativi
 
-An Associative Array (sometimes also called a Map or a Dictionary) is like a normal [Array](/AdvancedFunctions/Arrays_and_Loops/) in the way that it is able to store multiple entries. Unlike [Arrays](/AdvancedFunctions/Arrays_and_Loops/) however, you can choose what type you want the index, or (as we call it in maps) key, to be!
+Un Array Associativo (a volte chiamato anche una Mappa o un Dizionario) è come un normale [Array](/AdvancedFunctions/Arrays_and_Loops/) nel modo in cui è in grado di memorizzare voci multiple. A differenza di [Arrays](/AdvancedFunctions/Arrays_and_Loops/) , tuttavia, è possibile scegliere quale tipo si desidera l'indice, o (come lo chiamiamo in mappe) chiave, per essere!
 
-## Declaring an Associative Array
+## Dichiarare una matrice associativa
 
-You declare Associative Arrays using curly brackets `{}` and colons `:`
+Si dichiara Associative Arrays utilizzando parentesi ricce `{}` e punti `:`
 
 ```zenscript
 val myAssocArray = {
     dirt : <minecraft:dirt>,
     gold : <minecraft:gold_ingot>
-} as IItemStack[string];
+} come IItemStack[string];
 ```
 
-Let's break this down, shall we?
+Ripartiamo questo giù, vero?
 
-- `val myAssocArray =` standard variable declaration
+- `val myAssocArray =` dichiarazione di variabile standard
 - `{` this is an Associative Array, Sir!
-- `dirt : <minecraft:dirt>` we map `<minecraft:dirt>` under the string `dirt`
-- `,` wait, there's more to come
-- `gold : <minecraft:gold_ingot>` we map `<minecraft:gold_ingot>` under the string `gold`
-- `}` we have reached the end of the Array, Sir!
-- `as IItemStack[string];` this is an Associative Array that uses strings as indices and IItemStacks as values.
+- `dirt : <minecraft:dirt>` mappiamo `<minecraft:dirt>` sotto la stringa `dirt`
+- `,` aspetta, c'è di più per venire
+- `oro : <minecraft:gold_ingot>` mappiamo `<minecraft:gold_ingot>` sotto la stringa `oro`
+- `}` abbiamo raggiunto la fine dell'Array, Signore!
+- `come IItemStack[string];` questo è un Array Associativo che utilizza le stringhe come indici e IItemStacks come valori.
 
-Okay, so what do I need to think of when using these?
+Okay, quindi che cosa devo pensare quando li uso?
 
-- You can use about every type available to Zenscript as either key or value.
-- You cannot use variables for key declaration in the initial Declaration (the one that uses `{}`) as clear Text is interpreted as string!
+- È possibile utilizzare su ogni tipo disponibile a Zenscript come chiave o valore.
+- Non puoi usare le variabili per la dichiarazione delle chiavi nella Dichiarazione iniziale (quella che usa `{}`) come testo chiaro è interpretata come stringa!
 
-## Refering to Items inside an Associative Array.
+## Riferirsi agli oggetti all'interno di un Array Associativo.
 
-You refer to items inside an Associative Array the same way you refer to items inside a normal [Array](/AdvancedFunctions/Arrays_and_Loops/):  
+Fai riferimento agli oggetti all'interno di un Array Associativo allo stesso modo in cui fai riferimento agli oggetti all'interno di un Array [normale](/AdvancedFunctions/Arrays_and_Loops/):  
 `Array[index]`  
-Only difference is this time, you don't necessarily need to use an Integer as index, but whatever type you declared your Array to be!
+Solo la differenza è questa volta, non hai necessariamente bisogno di usare un Integer come indice, ma qualunque tipo hai dichiarato la tua Array!
 
 ```zenscript
 <br />val dirt = <minecraft:dirt>;
 val assocArray = {
-    <minecraft:dirt> : "This is me"
-} as string[IItemStack];
+    <minecraft:dirt> : "Questo è me"
+} come stringa[IItemStack];
 
 //array[index]
 print(assocArray[<minecraft:dirt>]);
 
-//You can also use varaibles here, as long as the variable is of the correct type
+//È anche possibile utilizzare varaibles qui, purché la variabile sia del tipo corretto
 print(assocArray[dirt]);
 ```
 
-There is one special case, that is when you use strings as indeces:  
-In this case you can also use the memberGetter like this:
+C'è un caso speciale, che è quando si usano le stringhe come inserimenti:  
+In questo caso è anche possibile utilizzare il memberGetter in questo modo:
 
 ```zenscript
 val assocWithStrings = {
-    //you can use "" if you want
+    //puoi usare "" se vuoi
     "one" : "1",
 
-    //but you don't have to
-    two : "2"
-} as string[string];
+    //ma non devi
+    due : "2"
+} come stringa[string];
 
-//You can either use the memberGetter
-print(assocWithStrings.one);
+//È possibile utilizzare il memberGetter
+print(assocWithStrings. ne);
 
-//Or the standard index Getter
-print(assocWithStrings["two"]);
+//O l'indice standard Getter
+print(assocWithStrings["due"]);
 ```
 
-## Manipulating items inside an Associative Array
+## Manipolazione degli oggetti all'interno di un Array Associativo
 
-As in Arrays, you can manipulate items inside an Associative Array using `array[index] = newValue`.  
-There is one major differenc though:  
-While Arrays have a fixed size, maps don't. That means you can always add an entry by setting to an index that has previously not been set!
+Come in Arrays, puoi manipolare gli oggetti all'interno di un Array Associativo utilizzando `array[index] = newValue`.  
+C'è però una differenza importante:  
+Mentre gli Array hanno una dimensione fissa, le mappe non lo fanno. Ciò significa che puoi sempre aggiungere una voce impostando un indice che non è stato precedentemente impostato!
 
 ```zenscript
 val changingArray = {
     <minecraft:dirt> : "this is me",
-    <minecraft:gold_ingot> : "and I hate it"
-} as string[IItemStack];
+    <minecraft:gold_ingot> : "e lo odio"
+} come stringa[IItemStack];
 
 val gg = <minecraft:gold>;
 
-//Overrides the value of gold_ingot
-changingArray[gg] = "and I love it";
+//Sovrascrive il valore di gold_ingot
+changingArray[gg] = "e lo amo";
 
-//adds a new entry
+//add a new entry
 changingArray[<minecraft:grass>] = "Power!";
 ```
 
-## Retrieving an Associative Array's Key and Entrysets
+## Recuperare chiave e ingressi di un Array Associativo
 
-The KeySet is an array containing all the map's keys.  
-The valueSet is an array containing all the map's values.  
-The entrySet is an array containing all the map's entries (see below).
+Il KeySet è un array contenente tutte le chiavi della mappa.  
+Il valueSet è un array contenente tutti i valori della mappa.  
+L'entrySet è un array contenente tutte le voci della mappa (vedi sotto).
 
 ```zenscript
-myAssocArray.keySet   //keySet
-myAssocArray.keys     //keySet
-myAssocArray.values   //valueSet
+myAssocArray.keySet //keySet
+myAssocArray.keys //keySet
+myAssocArray.values //valueSet
 myAssocArray.valueSet //valueSet
 myAssocArray.entrySet //entrySet
 ```
 
-## Iterating over an Associative Array
+## Iterare su un Array Associativo
 
-There are two Iterators that allow you to iterate over an Associative Array:
+Ci sono due Iteratori che ti permettono di iterare su un Array Associativo:
 
-- The key-Iterator: Iterates over the keys, uses one variable
-- The key-value-Iterator: Iterates over the keys and values, uses two variables
+- La chiave-Iteratore: Itera sopra le chiavi, usa una variabile
+- Il key-value-Iterator: Iterates sopra le chiavi e i valori, utilizza due variabili
 
-Let's add an Associative Array that stores crafting recipes to be iterated over:
+Aggiungiamo un Array Associativo che memorizza le ricette di lavorazione da iterare:
 
-- Keys shall be the crafting output as [IItemStack](/Vanilla/Items/IItemStack/)
-- Values shall be the crafting ingredients as [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We shall use the key-Iterator that is built like this: `for key in assocArray {doSth;}`
-- We shall also use the key-value-Iterator that is built like this `for key, value in assocArray {doSth;}`
+- Le chiavi devono essere l'output di creazione come [IItemStack](/Vanilla/Items/IItemStack/)
+- I valori devono essere gli ingredienti di fabbricazione come [IIngrediente](/Vanilla/Variable_Types/IIngredient/)
+- Useremo il key-Iterator che è costruito in questo modo: `per la chiave in assocArray {doSth;}`
+- Useremo anche il key-value-Iterator che è costruito come questa `per la chiave, il valore in assocArray {doSth;}`
 
 ```zenscript
 import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
+import crafttweaker.item. Ingrediente;
 
 val dirt = <minecraft:dirt>;
 val recipeMapShaped = {
     <minecraft:grass> : [[dirt, dirt, dirt],[dirt, dirt, dirt],[dirt, dirt, dirt]],
-    <minecraft:gold_ingot> : [[dirt, dirt, dirt],[dirt, <minecraft:gold_ingot>, dirt],[dirt, dirt, dirt]]
-} as IIngredient[][][IItemStack];
+    <minecraft:gold_ingot> [[sporco, sporco, sporco, sporco],[sporcizia, <minecraft:gold_ingot>, sporco],[sporco, sporco, sporco]]
+} come IIngrediente[][][IItemStack];
 
-recipeMapShaped[dirt] = [[dirt, dirt, dirt],[dirt, null, dirt],[dirt, dirt, dirt]];
+recipeMapShaped[dirt] = [[sporco, sporco, sporcizia],[sporco, null, sporco],[sporco, sporco, sporcizia]];
 
-//key will be grass, goldIngot, dirt
+//key will be grass, goldIngot, sporco
 for key in recipeMapShaped {
-    recipes.addShaped(key, recipeMapShaped[key]);
+    recipes. ddShaped(key, recipeMapShaped[key]);
 }
 
 
-//keys will be grass, goldIngot, dirt, values will be the recipes for them
+//chiavi saranno erba, goldIngot, sporcizia, values will be the recipes for them
 for key, value in recipeMapShaped {
-    recipes.addShaped(key, value);
+    recipes. ddShaped(key, value);
 }
 ```
 
-# ZenType Entry
+# Voce ZenType
 
-A map Entry consists of a key and a value.  
-Currently the only way to get such an object is via a map's entrySet method.
+Un elemento mappa consiste di una chiave e un valore.  
+Attualmente l'unico modo per ottenere un tale oggetto è tramite un metodo di impostazione della mappa.
 
-You can use the getters to get `key` and `value`
+È possibile utilizzare i ricevitori per ottenere `chiave` e `valore`
 
 ```zenscript
-//Replace map with a reference to an existing map/associative array
-val myEntry = map.entrySet[0];
+//Sostituisci la mappa con un riferimento a una mappa/array associativo
+val myEntry = map.entryImposta[0];
 
 
-myEntry.key;    //Returns the entry's key.
-myEntry.value;  //Returns the entry's value.
+myEntry.key; //Restituisce la chiave dell'elemento.
+myEntry.value; //Restituisce il valore dell'elemento.
 ```
