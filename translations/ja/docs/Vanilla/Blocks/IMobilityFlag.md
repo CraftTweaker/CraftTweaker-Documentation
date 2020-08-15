@@ -18,7 +18,7 @@ Returns a bool.
 flagOne.matches(other);
 ```
 
-## Enumerations
+## 列挙型
 
 The MobilityFlag Interface has 5 static Methods, each returning the given IMobilityFlag object.
 
