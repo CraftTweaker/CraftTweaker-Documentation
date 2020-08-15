@@ -1,8 +1,8 @@
-# Chemical Dissolution Chamber
+# Camera Di Dissoluzione Chimica
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Dissolution Chamber through the command `/ct mekrecipes dissolution`
+A partire dal Mekanism 9.7. ora è possibile visualizzare tutte le stringhe di ricetta della Camera di Dissoluzione Chimica attraverso il comando `/ct mekrecipes dissoluzione`
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.mekanism.chemical.dissolution.addRecipe(IIngredient inputStack, IGasStack outputGas);
@@ -10,11 +10,11 @@ mods.mekanism.chemical.dissolution.addRecipe(IIngredient inputStack, IGasStack o
 mods.mekanism.chemical.dissolution.addRecipe(<minecraft:ice>, <gas:water>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+A partire da Mekanism 9.7.0 è possibile usare IIngredients come inputStack invece di IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Nota: Attualmente tutto questo fa è loop sopra le diverse possibilità in java mentre si aggiunge invece di doverlo fare in ZenScript. Attualmente nelle macchine stesse non vi è alcun supporto per gli ingredienti composti o per il dizionario.
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.mekanism.chemical.dissolution.removeRecipe(IIngredient outputGas, @Optional IIngredient inputStack);
@@ -23,12 +23,12 @@ mods.mekanism.chemical.dissolution.removeRecipe(<gas:osmium>, <mekanism:oreblock
 mods.mekanism.chemical.dissolution.removeRecipe(<gas:tin>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Specificare un parametro di input rimuoverà solo la ricetta specifica che utilizza detto input. L'esclusione del parametro di input rimuoverà tutte le ricette che producono l'output specificato.
 
-## Removing all recipes
+## Rimozione di tutte le ricette
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Dissolution Chamber recipes. (This excludes any recipes added via CraftTweaker)
+A partire da Mekanism 9.7.0 è ora possibile rimuovere tutte le ricette della camera di dissoluzione chimica. (Questo esclude le ricette aggiunte tramite CraftTweaker)
 
 ```zenscript
-mods.mekanism.chemical.dissolution.removeAllRecipes();
+mods.mekanism.chemical.dissolution.removeAllRicette();
 ```
