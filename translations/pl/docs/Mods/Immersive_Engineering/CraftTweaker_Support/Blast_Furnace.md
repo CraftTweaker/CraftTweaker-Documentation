@@ -1,4 +1,4 @@
-# Blast Furnace
+# Piec wielkopiecowy
 
 Pakiet pieca wielkopiecowego może być użyty do dodawania/usuwania przepisów/paliw do/z wielkich pieców inżynieryjnych.
 
