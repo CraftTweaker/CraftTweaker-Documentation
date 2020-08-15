@@ -1,17 +1,17 @@
 # Si agregas una página, debes añadirla al índice aquí
 nav:
   - Inicio: 'index.md'
-  - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
+  - Comenzar con Scripts: 'getting_started.md'
+  - Comandos: "commands.md"
+  - Ejemplos: "examples.md"
   - Recetas:
-      - Recipe Managers: "recipes/recipe_managers.md"
+      - Gestores de recetas: "recetas/recetas_managers.md"
   - Vanilla:
-      - How to:
-          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
+      - Cómo hacer:
+          - Recetas de la tabla de fabricación: 'vanilla/how_to/crafting_table.md'
       - Api:
           - Bloqueo:
-              - Material:
+              - material:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
           - Bloques:
@@ -22,7 +22,7 @@ nav:
           - Datos:
               - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
               - ByteData: 'vanilla/api/data/ByteData.md'
-              - DoubleData: 'vanilla/api/data/DoubleData.md'
+              - DobleData: 'vanilla/api/data/DoubleData.md'
               - FloatData: 'vanilla/api/data/FloatData.md'
               - ICollectionData: 'vanilla/api/data/ICollectionData.md'
               - IData: 'vanilla/api/data/IData.md'
@@ -38,95 +38,95 @@ nav:
           - Entidades:
               - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
               - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
-          - Entity:
+          - Entidad:
               - Jugador:
                   - MCPlayerEntity: 'vanilla/api/entity/player/MCPlayerEntity.md'
-          - Event:
-              - Entity:
+          - Evento:
+              - Entidad:
                   - Jugador:
                       - MCAdvancementEvent: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
                       - MCAnvilRepairEvent: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
                       - MCArrowLooseEvent: 'vanilla/api/event/entity/player/MCArrowLooseEvent.md'
                       - MCArrowNockEvent: 'vanilla/api/event/entity/player/MCArrowNockEvent.md'
                       - MCAttackEntityEvent: 'vanilla/api/event/entity/player/MCAttackEntityEvent.md'
-                      - MCBonemealEvent: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
-                      - MCCriticalHitEvent: 'vanilla/api/event/entity/player/MCCriticalHitEvent.md'
+                      - Evento MCBonemeal: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
+                      - MCriticalHitEvent: 'vanilla/api/event/entity/player/MCriticalHitEvent.md'
                       - MCEntityItemPickupEvent: 'vanilla/api/event/entity/player/MCEntityItemPickupEvent.md'
-                      - MCFillBucketEvent: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
+                      - Evento MCFillBucket: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
                       - MCItemFishedEvent: 'vanilla/api/event/entity/player/MCItemFishedEvent.md'
                       - MCItemTooltipEvent: 'vanilla/api/event/entity/player/MCItemTooltipEvent.md'
                       - MCPlayerDestroyItemEvent: 'vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md'
-                      - MCPlayerFlyableFallEvent: 'vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md'
+                      - MCPlayerFlallEvent: 'vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md'
                       - MCPlayerSetSpawnEvent: 'vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md'
                       - MCPlayerSleepInBedEvent: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
                       - MCPlayerWakeUpEvent: 'vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md'
                       - MCSleepingLocationCheckEvent: 'vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md'
                       - MCSleepingTimeCheckEvent: 'vanilla/api/event/entity/player/MCSleepingTimeCheckEvent.md'
                       - MCUseHoeEvent: 'vanilla/api/event/entity/player/MCUseHoeEvent.md'
-                      - PlayerContainerEvent:
-                          - MCClose: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCClose.md'
+                      - Evento PlayerContainer:
+                          - CClose: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCClose.md'
                           - MCOpen: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCOpen.md'
-                      - PlayerEvent:
-                          - MCItemCraftedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
+                      - Evento del jugador:
+                          - Evento MCItemCraftedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
                           - MCItemPickupEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md'
-                          - MCItemSmeltedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md'
+                          - Evento MCItemPyelted: 'vanilla/api/event/entity/player/PlayerEvent/MCItemworeltedEvent.md'
                           - MCPlayerChangedDimensionEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
                           - MCPlayerLoggedInEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedInEvent.md'
                           - MCPlayerLoggedOutEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md'
-                          - MCPlayerRespawnEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
-                      - PlayerInteractEvent:
+                          - Evento MCPlayerRespawnEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
+                      - Evento de Interacción del jugador:
                           - MCEntityInteract: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract.md'
                           - MCEntityInteractSpecific: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteractSpecific.md'
                           - MCLeftClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock.md'
                           - MCLeftClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
-                          - MCRightClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock.md'
-                          - MCRightClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
-                          - MCRightClickItem: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem.md'
-                      - PlayerXpEvent:
+                          - MCRight ClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRight ClickBlock.md'
+                          - MCRight ClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
+                          - MCRight ClickItem: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRight ClickItem.md'
+                      - JugadorXpEvento:
                           - MCLevelChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCLevelChange.md'
                           - MCPickupXp: 'vanilla/api/event/entity/player/PlayerXpEvent/MCPickupXp.md'
                           - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
-          - Food:
+          - Comida:
               - MCFood: 'vanilla/api/food/MCFood.md'
           - Elementos:
               - IIngredient: 'vanilla/api/items/IIngredient.md'
               - IItemStack: 'vanilla/api/items/IItemStack.md'
           - Logger:
               - ILogger: 'vanilla/api/logger/ILogger.md'
-          - Managers:
+          - Gestores:
               - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
               - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
-              - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
+              - Creación de TableManager: 'vanilla/api/managers/CraftingTableManager.md'
               - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
               - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
-              - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
+              - smokerManager: 'vanilla/api/managers/smokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-          - Recipe:
+          - Receta:
               - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
               - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
-              - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+              - RecipeFunctionMATIx: 'vanilla/api/recipe/RecipeFunctionMcampax.md'
               - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
           - Pociones:
               - MCPotion: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
               - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
-          - Tags:
+          - Etiquetas:
               - MCTag: 'vanilla/api/tags/MCTag.md'
           - Util:
               - BlockPos: 'vanilla/api/util/BlockPos.md'
-              - Direction: 'vanilla/api/util/Direction.md'
+              - Dirección: 'vanilla/api/util/Direction.md'
               - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
           - Mundo:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
     - Botany Pots:
-      - Crop: 'mods/botanypots/Crop.md'
-      - Fertilizer: 'mods/botanypots/Fertilizer.md'
-      - Soil: 'mods/botanypots/Soil.md'
+      - Cultivar: 'mods/botanypots/Crop.md'
+      - Férezo: 'mods/botanypots/FerFirstzer.md'
+      - Suelo: 'mods/botanypots/Soil.md'
     - ContentTweaker:
-      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - Caminata simple: 'mods/contenttweaker/SimpleWalkthroughh.md'
       - API:
         - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
         - Api:
@@ -134,28 +134,28 @@ nav:
         - Bloqueo:
           - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
           - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
-          - Basic:
+          - Básico:
             - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
-          - Pillar:
+          - Pila:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
-          - Stairs:
+          - Escaleras:
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
         - Elemento:
           - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
           - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
-          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - Grupo MCItem: 'mods/contenttweaker/API/item/MCItemGroup.md'
           - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
-          - Basic:
+          - Básico:
             - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
-          - Tool:
+          - Herramienta:
             - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
     - InitialInventory:
         - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
     - JEITweaker:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
-    - StoneAge:
-        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+    - Edad de Piedra:
+        - Secando Rack: 'mods/StoneAge/DryingRackManager.md'
         - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
-        - Millstone: 'mods/StoneAge/MillstoneManager.md'
+        - Piedra Milla: 'mods/StoneAge/MillstoneManager.md'
         - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
-        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
+        - Paso del árbol: 'mods/StoneAge/TreeStumpManager.md'
