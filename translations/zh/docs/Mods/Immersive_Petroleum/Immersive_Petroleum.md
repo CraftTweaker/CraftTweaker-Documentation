@@ -1,7 +1,7 @@
-# Immersive Petroleum
+# 沉浸石油公司
 
-Immersive Petroleum is a lightweight content add-on for Immersive Engineering that introduces oil, oil extraction, and oil processing to the mod's tech progression. It includes an expansive set of configuration options to ensure that it will be a welcome addition to any modpack that includes Immersive Engineering.
+沉浸式石油是沉浸式工程的轻量内容附加组件，这将石油、石油开采和石油加工引入模式的技术进步。 它包括一整套广泛的配置选项，以确保它将是任何包括沉浸式工程在内的组合包的一个受欢迎的补充。
 
-## CraftTweaker Integration
+## CraftTinfirst集成
 
-Immersive Petroleum comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Immersive Petroleum Issue-Tracker](https://github.com/Flaxbeard/ImmersivePetroleum/issues)
+沉浸式石油伴随着本土板块的整合。 这意味着添加方法的问题应该在 [沉浸石油问题追踪器](https://github.com/Flaxbeard/ImmersivePetroleum/issues) 中讨论。
