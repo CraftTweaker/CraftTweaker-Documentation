@@ -1,14 +1,14 @@
-# LivingExperienceDrop
+# Dorobek Żywotny
 
-This event is fired when an entity dies and drops experience, allowing for the amount of experience to be modified. Alternately, the event can be **canceled** to prevent experience from being dropped.
+To wydarzenie jest uruchamiane, gdy jednostka umrze i umrze doświadczenie, co pozwala na zmianę ilości doświadczenia. Alternately, the event can be **canceled** to prevent experience from being dropped.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingExperienceDropEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. ivingExperienceDropEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-LivingExperienceDrop Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia „LivingExperienceDrop” implementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/osoby pobierające/ustawiające:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
@@ -16,12 +16,12 @@ LivingExperienceDrop Events implement the following interfaces and are able to c
 ## ZenGetters/ZenSetters
 Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter            | ZenSetter           | Typ                                  |
-| -------------------- | ------------------- | ------------------------------------ |
-| `gracz`              |                     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `droppedExperience`  | `droppedExperience` | odcień                               |
-| `originalExperience` |                     | odcień                               |
+| ZenGetter             | ZenSetter             | Typ                                  |
+| --------------------- | --------------------- | ------------------------------------ |
+| `gracz`               |                       | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `upuść Doświadczenie` | `upuść Doświadczenie` | odcień                               |
+| `originalExperience`  |                       | odcień                               |
 
 ## Uwagi
 
-`originalExperience` contains the original Vanilla amount of experience. It is possible that `droppedExperience` when this event is fired has already been modified.
+`originalExperience` zawiera oryginalną ilość doświadczenia Vanilli. Możliwe, że `droppedExperience` kiedy to wydarzenie zostanie wystrzelone, został już zmodyfikowany.
