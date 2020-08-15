@@ -11,7 +11,7 @@ crafttweaker.api.block.MCBlock
 ## Métodos
 ### puede aparecer en el bloque
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -19,7 +19,7 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Devuelve [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
@@ -28,14 +28,14 @@ myMCBlock.getDefaultState();
 
 ## Propiedades
 
-| Nombre         | Tipo   | Has Getter | Has Setter |
-| -------------- | ------ | ---------- | ---------- |
-| lootTable      | Cadena | verdad     | falso      |
-| translationKey | Cadena | verdad     | falso      |
+| Nombre         | Tipo   | Tiene Obtén | Tiene Setter |
+| -------------- | ------ | ----------- | ------------ |
+| lootTable      | Cadena | verdad      | falso        |
+| translationKey | Cadena | verdad      | falso        |
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| Cadena      | falso       |
+| Tipo de resultado | Es implícito |
+| ----------------- | ------------ |
+| Cadena            | falso        |
 
