@@ -2,7 +2,7 @@
 
 The IWorld object contains information on a Dimension within the game.
 
-## Importing the class
+## Importation de la classe
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IWorld`
@@ -22,15 +22,15 @@ crafttweaker.world.IWorld.getFromID(int id);
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
+| Méthode Zen        | ZenGetter     | Return type                                      | Libellé                                                                                                                                                                                 |
 | ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
 | isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
 | isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
-| getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
+| getMoonPhase()     | moonPhase     | Indice                                           | Returns the current moon phase.                                                                                                                                                         |
 | isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
 | getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
-| getDimension()     | dimension     | int                                              | Returns the world's dimension.                                                                                                                                                          |
+| getDimension()     | dimension     | Indice                                           | Returns the world's dimension.                                                                                                                                                          |
 | isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
 | getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
 | getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
@@ -60,7 +60,7 @@ worldObj.getBrightness(IBlockPos position);
 
 ### Get Block at specific Position
 
-Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Returns an [IBlock](/Vanilla/Blocks/IBlock/) Object.
+Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object. Use either three ints or an [IBlockPos](/Vanilla/World/IBlockPos/) object.
 
 ```zenscript
 worldObj.getBlock(int x, int y, int z);
