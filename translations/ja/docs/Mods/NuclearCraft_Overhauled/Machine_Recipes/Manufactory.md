@@ -1,7 +1,7 @@
-# Manufactory
+# 製造
 
-## Importing the Package
-`mods.nuclearcraft.ManufactoryManufactory`
+## パッケージのインポート
+`mods.nuclearcraft.Manufactory製造`
 
 ## レシピを追加中
 ```zenscript
@@ -12,6 +12,6 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.Manufactory.addRecipe(IIngredient
 ```zenscript
 mods.nuclearcraft.Supercoolermods.nuclearcraft.Manufactory.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Manufactory.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Manufactory.removeAllRecipes();Manufactory.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Manufactory.removeAllRecipes();
+mods.nuclearcraft.Manufactory.removeAllRecipes();Manufacturtory.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nukraft.Manufacturtory.removeAllRecipes();
 ```
