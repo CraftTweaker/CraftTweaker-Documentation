@@ -1,72 +1,72 @@
-# Item Stages
+# Этапы предметов
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Item Stages allows access for items and blocks to be placed into a custom progression system set by the modpack creator. If a player does not have the required stage, the player will have trouble using the item. To learn more about how it does this, check out the mod page [here](https://minecraft.curseforge.com/projects/item-stages)
+Этот мод является аддоном для [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Этапы элементов позволяют поместить элементы и блоки в пользовательскую прогрессивную систему, установленную создателем модулей. Если у игрока нет необходимой стадии, то у игрока возникнут проблемы с использованием предмета. Чтобы узнать больше о том, как это сделать, посетите страницу модов [здесь](https://minecraft.curseforge.com/projects/item-stages)
 
-## Staging an Item
+## Постановка предмета
 
-For an item to be restricted with this mod, it needs to be associated with a stage. This can be done in a few different ways.
+Чтобы предмет был ограничен этим модом, он должен быть связан со стадией. Это может быть сделано несколькими разными способами.
 
 ```zenscript
-// Stages a single block or item. 
+// Стадии одного блока или элемента. 
 mods.ItemStages.addItemStage("stage_name", <minecraft:stone>);
 
-// Stages an item with partial NBT. For example this stage all LV 5 enchantment books.
+// Стадии с частичным NBT. Например, этот этап все книги чар LV 5.
 mods.ItemStages.addItemStage("stage_name", <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short}]}));
 
-// Stages all items with an ore dictionary tag.
+// Этапы всех элементов тегом ore dictionary .
 mods.ItemStages.addItemStage("stage_name", <ore:dye>);
 
-// Stages all items that are added by a specific mod.
+// Этапы всех элементов, которые добавляются определенным модом.
 mods.ItemStages.stageModItems("stage_name", "modid");
 
-// Removes a stage from a specific item, useful when paired with stageModItems to reduce script size.
+// Удаляем этап из определенного элемента, полезно в паре с stageModItems для уменьшения размера скрипта.
 mods.ItemStages.removeItemStage(<minecraft:stone>);
 ```
 
-## Staging Liquids
+## Постановка жидкостей
 
-You may want to stage liquids, this is primarily done to hide them in JEI.
+Вы можете захотеть сменить жидкости, это в первую очередь делается чтобы скрыть их в JEI.
 
 ```zenscript
-// Stages a single fluid, like water.
+// Стадии однородной жидкости, например воды.
 mods.ItemStages.stageLiquid("stage_name", <liquid:water>);
 ```
 
-## Staging Enchantments
+## Разбивные чары
 
-You can stage enchantments to prevent players from using items that have the enchantment on them.
+Вы можете чары на стадии, чтобы не допустить использования предметов, которые имеют на них чары.
 
 ```zenscript
-// Stages a specific enchantment. In this case protection.
+// Этапы заклинаний. В этом случае защита.
 mods.ItemStages.stageEnchant("stage_name", <enchantment:minecraft:protection>);
 
-// Stages a specific enchantment, at a specific level. In this case Protection II.
+// Этапы заклинаний на определенном уровне. В данном случае защита II.
 mods.ItemStages.stageEnchantByLevel("stage_name", <enchantment:minecraft:protection>.makeEnchantment(2));
 ```
 
-## Changing the Unfamiliar Item Name.
+## Изменение Неизвестного Имени Предмета
 
-You may want to give your restricted items a new name while they are hidden. This can be used to add jokes and subtle lore to your pack.
+Вы можете добавить ограниченное имя во время скрытия. Может быть использовано для добавления к набору шуток и тонких хлопот.
 
 ```zenscript
-// Sets all wool to be named "Clump of Fur" for players who don't have the right stage.
-mods.ItemStages.setUnfamiliarName("Clump of Fur", <minecraft:wool:*>);
+// Устанавливает все шерсти под названием "Кольцо фура" для игроков, которые не имеют правильной стадии.
+mods.ItemStages.setUnfamiliarName("Кольцо перы", <minecraft:wool:*>);
 ```
 
-## Staging a tooltip
+## Отправка подсказки
 
-You can stage parts of tooltips to hide information. This is especially useful when trying to stage mods like Project E which add an "EMC:" tooltip to most items.
+Вы можете спланировать части подсказок, чтобы скрыть информацию. Это особенно полезно при попытке сценировать такие моды, как Project E, которые добавляют подсказку "EMC:" к большинству элементов.
 
 ```zenscript
-// Removes any line in a tooltip that starts with "EMC:"
+// Удаляет любую строку в всплывающей подсказке, начинающейся с "EMC:"
 mods.ItemStages.stageTooltip("stage_name", "EMC:");
 ```
 
-## Staging a Recipe Category
+## Категория рецепта
 
-You can stage access to an entire recipe category with JEI. For example if you stage the furnace category and a player does not have the stage, they will not be able to see furnace recipes.
+Вы можете получить доступ к всей категории рецептов с помощью JEI. Например, если вы смените категорию печи и у игрока нет сцены, они не смогут увидеть рецепты печи.
 
 ```zenscript
-// Stages a specific recipe category. In this example we are staging the anvil category.
-mods.ItemStages.stageRecipeCategory("stage_name", "minecraft.anvil");
+// Этапы определенной категории рецептов. В этом примере мы станем злой категории.
+mods.ItemStages.stageCategory("stage_name", "minecraft.anvil");
 ```
