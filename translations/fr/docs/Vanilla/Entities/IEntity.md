@@ -3,7 +3,7 @@
 Entity Interface. Used to obtain and modify information entities' data.  
 Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntity;`
@@ -24,7 +24,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 
 | GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
-| air                      | getAir()          | int                                                         |
+| air                      | getAir()          | Indice                                                      |
 | alive                    | isAlive()         | boolean                                                     |
 | alwaysRenderNameTag      |                   | boolean                                                     |
 | armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
@@ -33,16 +33,16 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | canPassengerSteer        |                   | boolean                                                     |
 | canRiderInteract         |                   | boolean                                                     |
 | controllingPassenger     |                   | *IEntity*                                                   |
-| customName               | getCustomName()   | string                                                      |
+| customName               | getCustomName()   | chaîne de caractères                                        |
 | definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| dimension                | getDimension()    | int                                                         |
+| dimension                | getDimension()    | Indice                                                      |
 | doesTriggerPressurePlate |                   | boolean                                                     |
 | equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | float                                                       |
+| eyeHeight                |                   | flottant                                                    |
 | hasCustomName            |                   | boolean                                                     |
 | hasNoGravity             |                   | boolean                                                     |
 | heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| id                       |                   | int                                                         |
+| id                       |                   | Indice                                                      |
 | immuneToFire             | isImmuneToFire()  | boolean                                                     |
 | isBeingRidden            |                   | boolean                                                     |
 | isBoss                   |                   | boolean                                                     |
@@ -62,12 +62,12 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isSneaking               |                   | boolean                                                     |
 | isSprinting              |                   | boolean                                                     |
 | lowestRidingEntity       |                   | *IEntity*                                                   |
-| maxFallHeight            |                   | int                                                         |
-| maxInPortalTime          |                   | int                                                         |
+| maxFallHeight            |                   | Indice                                                      |
+| maxInPortalTime          |                   | Indice                                                      |
 | parts                    |                   | IEntity[]                                                   |
 | passengers               | getPassengers()   | List<IEntity\>                                             |
 | passengersRecursive      |                   | List<IEntity\>                                             |
-| portalCooldowne          |                   | int                                                         |
+| portalCooldowne          |                   | Indice                                                      |
 | position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
 | shouldRiderSit           |                   | boolean                                                     |
@@ -84,36 +84,36 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                     |                   | double                                                      |
 | posY                     |                   | double                                                      |
 | posZ                     |                   | double                                                      |
-| rotationYaw              |                   | float                                                       |
-| rotationPitch            |                   | float                                                       |
+| rotationYaw              |                   | flottant                                                    |
+| rotationPitch            |                   | flottant                                                    |
 | lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
 ## ZenSetters
 
-| SetterName          | SetterMethod        | Parameter Type                         |
-| ------------------- | ------------------- | -------------------------------------- |
-| air                 | setAir(seconds)     | int                                    |
-| alwaysRenderNameTag |                     | boolean                                |
-| customName          | setCustomName(name) | string                                 |
-| dimension           | setDimension(id)    | int                                    |
-| fire                | setFire(seconds)    | int                                    |
-| hasNoGravity        |                     | boolean                                |
-| id                  |                     | int                                    |
-| isGlowing           |                     | boolean                                |
-| isInvisible         |                     | boolean                                |
-| isOutsideBorder     |                     | boolean                                |
-| isSilent            |                     | boolean                                |
-| isSneaking          |                     | boolean                                |
-| isSprinting         |                     | boolean                                |
-| position            | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| rotationYaw         |                     | float                                  |
-| rotationPitch       |                     | float                                  |
-| motionX             |                     | double                                 |
-| motionY             |                     | double                                 |
-| motionZ             |                     | double                                 |
-| posX                |                     | double                                 |
-| posY                |                     | double                                 |
-| posZ                |                     | double                                 |
+| SetterName          | SetterMethod        | Type de paramètre                       |
+| ------------------- | ------------------- | --------------------------------------- |
+| air                 | setAir(seconds)     | Indice                                  |
+| alwaysRenderNameTag |                     | boolean                                 |
+| customName          | setCustomName(name) | chaîne de caractères                    |
+| dimension           | setDimension(id)    | Indice                                  |
+| fire                | setFire(seconds)    | Indice                                  |
+| hasNoGravity        |                     | boolean                                 |
+| id                  |                     | Indice                                  |
+| isGlowing           |                     | boolean                                 |
+| isInvisible         |                     | boolean                                 |
+| isOutsideBorder     |                     | boolean                                 |
+| isSilent            |                     | boolean                                 |
+| isSneaking          |                     | boolean                                 |
+| isSprinting         |                     | boolean                                 |
+| position            | setPosition(pos)    | [Pos IBlock](/Vanilla/World/IBlockPos/) |
+| rotationYaw         |                     | flottant                                |
+| rotationPitch       |                     | flottant                                |
+| motionX             |                     | double                                  |
+| motionY             |                     | double                                  |
+| motionZ             |                     | double                                  |
+| posX                |                     | double                                  |
+| posY                |                     | double                                  |
+| posZ                |                     | double                                  |
 
 ## More ZenMethods
 
