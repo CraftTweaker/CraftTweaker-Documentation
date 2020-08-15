@@ -5,23 +5,23 @@
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent
+craftminstrer.api.event.entity.playerEvent.MCPlayerRespawnEvent
 ```
 
 ## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent>);
+新 craftminstrer.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent(处理程序作为函数。消费者<crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent>);
 ```
-| 参数      | 类型                                                                                                                                                            | 描述                      |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent](/vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent)> | No description provided |
+| 参数      | 类型                                                                                                                                                   | 描述                      |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | Consumer<[craftmiliter.api.event.entity.player.PlayerEvent.MCPlayerRespawnEvent](/vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent)> | No description provided |
 
 
 
 ## 方法
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerRespawnEvent.getEntityPlayer();
@@ -29,17 +29,17 @@ myMCPlayerRespawnEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+返回： `玩家`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerRespawnEvent.getPlayer();
 ```
 
-### hasResult
+### 突然结果
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
 
 返回为布尔值
 
@@ -47,11 +47,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCPlayerRespawnEvent.hasResult();
 ```
 
-### isCancelable
+### 可取消
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
+ 注意：
+ 取消批注事件将自动添加此方法以返回 true。`
 
 返回为布尔值
 
@@ -59,14 +59,14 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCPlayerRespawnEvent.isCancelable();
 ```
 
-### isCanceled
+### 已取消
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
 
 返回为布尔值
 
 ```zenscript
-myMCPlayerRespawnEvent.isCanceled();
+myMCPlayerRespawnEvent.isCancelled();
 ```
 
 ### isEndConquered
@@ -74,18 +74,18 @@ myMCPlayerRespawnEvent.isCanceled();
 返回为布尔值
 
 ```zenscript
-myMCPlayerRespawnEvent.isEndConquered();
+myMCPlayerRespawnEvent.isEndConqueed();
 ```
 
-### setCanceled
+### 已取消
 
 ```zenscript
-myMCPlayerRespawnEvent.setCanceled(cancel as boolean);
+myMCPlayerRespawnEvent.setCanceled(cancel as boolean)；
 ```
 
-| 参数     | 类型      | 说明                      |
-| ------ | ------- | ----------------------- |
-| cancel | boolean | No description provided |
+| 参数 | 类型      | 说明                      |
+| -- | ------- | ----------------------- |
+| 取消 | boolean | No description provided |
 
 
 
