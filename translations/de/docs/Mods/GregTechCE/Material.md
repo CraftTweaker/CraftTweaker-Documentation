@@ -12,10 +12,10 @@ Properties:
 
 | Name               | Type                         | Beschreibung                                     |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
-| color              | int                          | Color of material in RGB format                  |
+| farben             | int                          | Color of material in RGB format                  |
 | chemicalFormula    | string                       | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
-| components         | ImmutableList<materialstack> | List of this material component                  |
+| komponenten        | ImmutableList<materialstack> | List of this material component                  |
 | generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
 | element            | Element                      | Element of this material consist of              |
 
@@ -27,7 +27,7 @@ Getters:
 | protons         | long   |                                      |
 | neutrons        | long   |                                      |
 | mass            | long   |                                      |
-| density         | long   |                                      |
+| dichte          | long   |                                      |
 | camelCaseString | string |                                      |
 | unlocalizedName | string |                                      |
 | localizedName   | string | Client-side only                     |
@@ -59,7 +59,7 @@ Getters:
 | hasFluid  | bool                                                       |                       |
 | hasPlasma | bool                                                       |                       |
 | isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
+| flüssig   | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
 | plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
 
 ### DustMaterial
@@ -83,7 +83,7 @@ Getters:
 | Name          | Type                | Beschreibung                                        |
 | ------------- | ------------------- | --------------------------------------------------- |
 | oreByProducts | List<fluidmaterial> | List of ore by products                             |
-| harvestLevel  | int                 | Tool level needed to harvest block of this material |
+| abruf Level   | int                 | Tool level needed to harvest block of this material |
 
 ### SolidMaterial
 
@@ -162,7 +162,7 @@ Getters:
 
 Ingot materials can be used as wire, cable and fluid pipe. Those properties can be set by `setCableProperties(long voltage, int baseAmperage, int lossPerBlock)` and `setFluidPipeProperties(int throughput, int maxTemperature, boolean gasProof)`.
 
-For example:
+Zum Beispiel:
 
 ```zenscript
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
