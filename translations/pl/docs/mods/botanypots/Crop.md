@@ -1,164 +1,164 @@
-# Crops
+# Uprawy
 
-Class path: `mods.botanypots.Crop`
+Ścieżka klasy: `mods.botanypots.Crop`
 
-## Use
+## Użycie
 
-To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
+Aby użyć, zaimportuj klasę z `importuj mods.botanypots.Crop;` na początku skryptu.
 
-## Create A Crop
+## Utwórz przycięcie
 
-`Crop.create(id, seed, display, tickRate, categories);`
+`Rośliny uprawne (id, nasiona, wyświetlacz, wskaźnik tickrat, kategorie);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
-- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
-- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `ziarno` <[Składnik](/vanilla/api/items/IIngredient)> Element używany do zasadzania upraw.
+- `wyświetl` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Blok wyświetlany podczas renderowania przycinania.
+- `tickRate` &lt;int> Jeden z czynników, jak długo rośnie uprawa.
+- `kategorie` &lt;string[]> Tablica kategorii gleby, w których można uprawiać tę uprawę.
 
-This can be used to create a new crop. Keep in mind that drops need to be added separately.
-
-```zenscript
-Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
-```
-
-## Remove A Crop
-
-`Crop.remove(id);`
-
-- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
-
-Removes a crop based on it's id.
+To może być użyte do tworzenia nowej uprawy. Pamiętaj, że krople należy dodawać oddzielnie.
 
 ```zenscript
-Crop.remove("botanypots:crop/wheat");
+Przytnij tworzenie ("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## Set Seed Item
+## Usuń przytnij
 
-`Crop.setSeed(id, seed);`
+`Przycinanie (id);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `id` &lt;ciąg> Id przycinania do usunięcia. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
 
-Sets the item used to plant the crop.
+Usuwa przycinanie na podstawie jego identyfikatora.
 
 ```zenscript
-Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
+Uprawy pastewne („botanypots:uprawa pszenica”);
 ```
 
-## Set Display Block
+## Ustaw materiał siewny
+
+`Nasiona roślin uprawnych (id, nasiona);`
+
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `ziarno` <[Składnik](/vanilla/api/items/IIngredient)> Element używany do zasadzania upraw.
+
+Ustawia przedmiot używany do sadzenia upraw.
+
+```zenscript
+Nasiona roślin uprawnych („botanypots:crop/pszenica”, <item:minecraft:diamond>);
+```
+
+## Ustaw blok wyświetlania
 
 `Crop.setDisplay(id, state);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `wyświetl` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Blok wyświetlany podczas renderowania przycinania.
 
-Sets the block rendered for the crop.
-
-```zenscript
-Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
-```
-
-## Set Tick Rate
-
-`Crop.setTickRate(id, tickRate);`
-
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
-
-Sets the crop tick factor.
+Ustawia blok renderowany dla przycinania.
 
 ```zenscript
-Crop.setTickRate("botanypots:crop/wheat", 5000);
+Crop.setDisplay("botanypots:crop/pszenica", <blockstate:minecraft:snow_block>);
 ```
 
-## Changing Crop Categories
+## Ustaw szybkość zaznaczania
 
-Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
+`Uprawy setTickRate(id, tickRate);`
 
-### Add a Category to a Crop
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `tickRate` &lt;int> Zaktualizowany wskaźnik ticku. Jeden z czynników, jak długo uprawa trwa do wzrostu.
 
-`Crop.addCategory(id, categoriesToAdd);`
-
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
+Ustawia współczynnik ticku przycinania.
 
 ```zenscript
-Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
+Rośliny uprawne setTickRate(»botanypots:plony/pszenica«, 5000);
 ```
 
-### Remove a Category From a Crop
+## Zmiana kategorii przycinania
 
-`Crop.removeCategory(id, categoriesToRemove);`
+Zmienia kategorie związane z uprawą. Kategorie są używane do dopasowania prawidłowych gleb do upraw.
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
+### Dodaj kategorię do przycinania
+
+`Przytnij kategorię(id, kategorieToAdd);`
+
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `categoriesToAdd` &lt;string[]> Tablica kategorii do powiązania z uprawami.
 
 ```zenscript
-Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
+Rośliny uprawne („botanypots:uprawy pszenicy”, [„kamienne”, „śnieg”]);
 ```
 
-### Clear All Categories From a Crop
+### Usuń kategorię z przycinania
 
-`Crop.clearCategories(id);`
+`Przytnij kategorie(id, kategorieToRemove);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `categoriesToRemove` &lt;string[]> Tablica kategorii do rozdzielenia z przycinaniem.
 
 ```zenscript
-Crop.clearCategories("botanypots:crop/wheat");
+Rośliny uprawne removeCategory(»botanypots:plony/pszenica«, [»brudna«]);
 ```
 
-## Crop Drops
+### Wyczyść wszystkie kategorie z przycinania
 
-### Adding Drops
+`Przytnij kategorie(id);`
 
-`Crop.addDrop(id, drop, chance, min, max);`
-
-- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
-- `min` &lt;int> The min amount of that item to give.
-- `max` &lt;int> The max amount of that item to give.
-
-This adds a new potential drop to the crop.
+- `id` &lt;ciąg> Id przycinania. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
 
 ```zenscript
-Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
+Kategorie upraw („botanypots:uprawy pszenicy”);
 ```
 
-### Removing Drops
+## Krople przycinania
+
+### Dodawanie spadków
+
+`Przytnij dodatni (id, kropla, szansa, min, maks.);`
+
+- `id` &lt;ciąg> Id przycięcia do dodania kropli. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `upuść` <[IItemStack](/vanilla/api/items/IItemStack)> Element do upuszczenia.
+- `szansa` &lt;unosi się> Szansa, którą upuszcza.
+- `min` &lt;int> Minimalna ilość tego elementu do podania.
+- `maks.` &lt;int> Maksymalna ilość tego elementu do podania.
+
+To dodaje nowy potencjalny łup do uprawy.
+
+```zenscript
+Crop.addDrop("botanypots:crop/pszenica", <item:minecraft:diamond>, 0.05, 1, 1);
+```
+
+### Usuwanie kropel
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
+- `id` &lt;ciąg> Id przycinania do usunięcia kropla. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `toRemove` <[Składnik](/vanilla/api/items/IIngredient)> Składnik do dopasowania do usunięcia
 
-Removes any drops that have a matching item.
+Usuwa wszelkie kropki, które mają pasujący element.
 
 ```zenscript
-Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
+Rośliny uprawne removeDrop("botanypots:uprawa pszenicy", <item:minecraft:wheat_seeds>);
 ```
 
-## Getting All Ids
+## Pobieranie wszystkich identyfikatorów
 
 `Crop.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
+- Zwraca: &lt;ciąg znaków[]> Tablica wszystkich znanych identyfikatorów upraw w tym momencie.
 
-This will give you an array of all the known crop ids at the time.
+To da Ci tablicę wszystkich znanych identyfikatorów upraw na raz.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for cropId in Crop.getAllIds() {
+// Rejestruj wszystkie identyfikatory pliku crafttweaker.log
+dla przycięcia w Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## Removing All Crops
+## Usuwanie wszystkich przycinanych
 
-This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Spowoduje to całkowite usunięcie wszystkich obecnie zarejestrowanych upraw. Jest to przydatne jeśli chcesz odtworzyć wszystkie dane od podstaw przez skrypty.
 
 ```zenscript
-Crop.removeAll();
+Przycięcie removeAll();
 ```
