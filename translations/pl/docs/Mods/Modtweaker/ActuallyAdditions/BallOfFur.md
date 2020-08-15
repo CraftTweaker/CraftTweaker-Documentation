@@ -1,19 +1,19 @@
-# Ball of Fur
+# Piłka Futra
 
-## Package
+## Pakiet
 
-`mods.actuallyadditions.BallOfFur`
+`mods.Rzeczywiściejadditions.BallOfFur`
 
-## Addition
+## Dodanie
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
-mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
+//mods.rzeczywiścieadditions.BallOfFur.addReturn(wyjście IItemStack, szansa na int);
+mods.Rzeczywiścieadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-//mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
-mods.actuallyadditions.BallOfFur.removeReturn(<minecraft:coal>);
+//mods.rzeczywiścieadditions.BallOfFur.removeReturn(wyjście IItemStack);
+mods.rzeczywiścieadditions.BallOfFur.removeReturn(<minecraft:coal>);
 ```
