@@ -1,28 +1,28 @@
 # ItemFishedEvent
 
-This event is fired to when a player is about to fish up an item. Cancelling the event will prevent the player from receiving an item, but the rod will still take damage.
+Questo evento è sparato a quando un giocatore sta per pescare un oggetto. L'annullamento dell'evento impedirà al giocatore di ricevere un oggetto, ma l'asta subirà comunque dei danni.
 
 ## Note
 
-Additional damage can be done to the rod by setting `event.additionalDamage`. A list of IItemStacks (which is **not modifiable**) that are going to be fished up is contained within `event.drops`.
+Ulteriori danni possono essere fatti all'asta impostando `event.additionalDamage`. Una lista di IItemStacks (che non è **modificabile**) che saranno pescati è contenuta all'interno di `event.drops`.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ItemFishedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. temFishedEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-ItemFished Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+ItemFished Events implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
 
 | ZenGetter | ZenSetter          | Tipo                                       |
 | --------- | ------------------ | ------------------------------------------ |
-| `damage`  |                    | int                                        |
+| `danno`   |                    | int                                        |
 |           | `additionalDamage` | int                                        |
 | `gocce`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
