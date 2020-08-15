@@ -1,14 +1,14 @@
-# Heating Sources
+# Heizquellen
 
-## Package
+## Paket
 ```zenscirpt
-`mods.exnihilocreatio.Heat`
+"mods.exnihilocreatio.Heat"
 ```
 
 ## Methoden
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
-- **Int heat** heat per instance.
+- **[IItemStack](/Vanilla/Items/IItemStack/) Eingabe** Der Block, der Wärme liefert.
+- **Int Hitze** pro Instanz.
 
 ## Addition
 
