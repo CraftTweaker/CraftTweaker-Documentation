@@ -3,7 +3,7 @@
 An IItemStack Object consists of an [item definition](/Vanilla/Items/IItemDefinition/), a meta/damage value and NBT data.  
 In other words, it refers to an item or to a block.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemStack;`
@@ -57,13 +57,13 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Read how to use them [here](/UsingThisWiki/). Also, check out the examples below.
 
-| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Type                                                        |
+| ZenGetter/ZenMethod | ZenSetter/ZenMethod | Tipo                                                        |
 | ------------------- | ------------------- | ----------------------------------------------------------- |
-| definition          |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
-| name                |                     | string                                                      |
-| displayName         | displayName         | string                                                      |
+| definizione         |                     | [IItemDefinition](/Vanilla/Items/IItemDefinition/)          |
+| nome                |                     | stringa                                                     |
+| displayName         | displayName         | stringa                                                     |
 | maxStackSize        | maxStackSize        | int                                                         |
-| hardness            | hardness            | float                                                       |
+| durezza             | durezza             | galleggiante                                                |
 | damage              |                     | int                                                         |
 | maxDamage           | maxDamage           | int                                                         |
 | hasTag              |                     | bool                                                        |
@@ -103,14 +103,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack *  amount`              | A new IItemStack with the changed property                     | int            |
 | `stack.splitStack(int amount)` | The split IItemStack. The old one will be reduced accordingly. | int            |
 
-#### Weight
+#### Peso
 
 | Method call                   | Returns                                                  | ParameterTypes     |
 | ----------------------------- | -------------------------------------------------------- | ------------------ |
 | `stack.percent(float chance)` | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (100 = 100%) |
 | `stack.weight(float chance)`  | A [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | float (1 = 100%)   |
 
-#### Damage
+#### Danno
 
 | Method call                                    | Returns                                    | ParameterTypes                             |
 | ---------------------------------------------- | ------------------------------------------ | ------------------------------------------ |
@@ -124,7 +124,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | ------------------------------ | ------------------------------------------ | ----------------------------- |
 | `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
 | `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
+| `stack.removeTag(String name)` | A new IItemStack with the changed property | stringa                       |
 | `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
 
 #### Block Casting
@@ -142,7 +142,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | `stack.withLore(String[] lore)`      | A new IItemStack with the changed property.                                                                       | string[] (supports color codes with "§") |
 | `stack.clearCustomName()`            | void (nothing)                                                                                                    |                                          |
 
-#### Enchantments
+#### Incantesimi
 
 | Method call                                                         | Returns        | ParameterTypes                                                          |
 | ------------------------------------------------------------------- | -------------- | ----------------------------------------------------------------------- |
@@ -171,7 +171,7 @@ You can find how to use these either in the [IIngredient](/Vanilla/Variable_Type
 [Item Conditions](/Vanilla/Items/Item_Conditions/)  
 [Item Transformers](/Vanilla/Items/Item_Transformers/)
 
-## Examples
+## Esempi
 
 #### DisplayName
 
@@ -241,7 +241,7 @@ grass.hardness = 10.0;
 print(grass.hardness);
 ```
 
-#### Damage
+#### Danno
 
 The damage for items that cannot be damaged is 0.
 
@@ -314,7 +314,7 @@ val moreApples = apple * 2;
 val evenMoreApples = <minecraft:apple> * 3;
 ```
 
-#### Weight
+#### Peso
 
 Returns a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) with the provided percentage.
 
