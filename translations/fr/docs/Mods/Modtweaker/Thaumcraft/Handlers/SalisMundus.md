@@ -1,43 +1,43 @@
 # Salis Mundus
 
-This package allows you to add conversion handlers for thaumcraft's salis mundus handler.  
-These handlers are invoked when you click a block in the world with Thaumcraft's salis mundus to change them to something else.
+Ce paquet vous permet d'ajouter des gestionnaires de conversion pour le gestionnaire de salis mundus de thaumcraft.  
+Ces gestionnaires sont invoqués lorsque vous cliquez sur un bloc dans le monde avec le salis mundus de Thaumcraft pour les changer en autre chose.
 
-If that result is a block, it will be placed in the world, if not it will be dropped as item.
+Si ce résultat est un bloc, il sera placé dans le monde, sinon il sera lâché comme objet.
 
-## Import the package
+## Importer le paquet
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Pour raccourcir les appels de méthode, vous pouvez [importer](/AdvancedFunctions/Import/) le paquet comme ceci :
 
 ```zenscript
-import mods.thaumcraft.SalisMundus;
+Importer mods.thaumcraft.SalisMundus;
 ```
 
-## Add Recipes
+## Ajouter des recettes
 
-You can either specify an [IBlock](/Vanilla/Blocks/IBlock/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
-If you don't specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
+Vous pouvez soit spécifier un [IBlock](/Vanilla/Blocks/IBlock/) ou un [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
+Si vous ne spécifiez pas de recherche, cette recette sera toujours possible, si vous décidez de spécifier une chaîne de recherche, vous devez avoir déverrouillé la recherche pour que la conversion fonctionne.
 
 ```zenscript
 //mods.thaumcraft.SalisMundus.addSingleConversion(IBlock in, IItemStack out, @Optional String research);
 SalisMundus.addSingleConversion(<blockstate:minecraft:dirt>.block, <minecraft:bedrock>);
 
-//mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
+//mods.thaumcraft.SalisMundus. ddSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
 mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out, @Optional String research);
 SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
 ```
 
-## Remove Recipes
+## Supprimer les recettes
 
-You can also remove all recipes that return a matching item.  
-This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient `<*>`.
+Vous pouvez également supprimer toutes les recettes qui retournent un objet correspondant.  
+Ce gestionnaire vérifie si le paramètre fourni correspond à l'itemStack de sortie, pour que vous puissiez également supprimer toutes les recettes en utilisant l'ingrédient générique `<*>`.
 
 ```zenscript
 mods.thaumcraft.SalisMundus.removeSingleConversion(IIngredient output);
 
-//Removes ALL registered handlers
+//Supprime tous les gestionnaires enregistrés
 mods.thaumcraft.SalisMundus.removeSingleConversion(<*>);
 
-//Only removes the crucible handler
+//Supprime seulement le gestionnaire de creuset
 mods.thaumcraft.SalisMundus.removeSingleConversion(<thaumcraft:crucible>);
 ```
