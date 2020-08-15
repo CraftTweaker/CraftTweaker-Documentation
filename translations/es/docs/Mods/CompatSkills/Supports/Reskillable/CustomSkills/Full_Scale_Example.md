@@ -1,8 +1,8 @@
-# Full Scale Example
+# Ejemplo de escala completa
 
-## Credit
+## Crédito
 
-Credit goes out to Lead Developer pupnewfster for the below example!
+¡Crédito sale al pupnewfster del principal desarrollador para el siguiente ejemplo!
 
     #modloaded compatskills reskillable
     #priority 1000
