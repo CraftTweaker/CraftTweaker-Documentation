@@ -1,33 +1,33 @@
-# Chopping Board
+# Tavola Di Chopping
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+Il tagliere permette di tagliare un oggetto in molti pezzi di un altro oggetto.
 
-By default only cuts bread into 6 bread slices.
+Per impostazione predefinita taglia solo il pane in 6 fette di pane.
 
-## Removing Chopping Recipes
+## Rimozione Delle Ricette Di Ritaglio
 
-## Remove matching chopping recipes.
+## Rimuovere le ricette di taglio corrispondenti.
 
 ```zenscript
 mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Remove recipe with bread as the input item
-mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
-// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
-mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// Rimuovi la ricetta con il pane come elemento di input
+mods.cfm.ChoppingBoard. emove(null,<minecraft:bread>);
+// Rimuovi le ricette che danno luogo a 6 fette di pane (stessa corrispondenza di quella sopra la ricetta, quindi non avrà effetto se usato dopo)
+mods. fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
 ```
 
-## Adding Chopping Recipes
+## Aggiunta Di Ricette Di Ritaglio
 
-Add a chopping recipe.
+Aggiungi una ricetta da tritare.
 
-## Input requires stack size of 1.
+## L'input richiede la dimensione dello stack di 1.
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull finale IItemStack output, @Nonnull finale IItemStack input);
 
-// Add a recipe to chop wheat into 2 sticks
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Add a recipe to chop bread into 3 wheat
+// Aggiungi una ricetta per tagliare il grano in 2 bastoncini
+mods.cfm.ChoppingBoard. ddRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
+// Aggiungi una ricetta per tagliare il pane in 3 grano
 mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
 ```
