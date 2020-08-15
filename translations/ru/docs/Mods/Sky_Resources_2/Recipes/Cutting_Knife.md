@@ -1,21 +1,21 @@
-# Cutting Knife
+# Режущий нож
 
-The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
+Пакет *ножа* используется для добавления или удаления рецептов из Ножа резки.
 
-## Calling
+## Звонок
 
-You can call the *knife* package using `mods.skyresources.knife`
+Вы можете вызвать пакет *нож* с помощью `mods.skyresources.knife`
 
-## Recipe Addition
+## Добавление рецепта
 
 ```zenscript
-//mods.skyresources.knife.addRecipe(IItemStack output, IItemStack input);
+//mods.skyresources.knife.addRecipe(IItemStack output, IItemStack);
 mods.skyresources.knife.addRecipe(<minecraft:diamond>, <minecraft:stone>);
 ```
 
-## Recipe Removal
+## Удаление рецепта
 
 ```zenscript
-//mods.skyresources.knife.removeRecipe(IItemStack output);
+//mods.skyresources.knife.removeRecipe(IItemStack);
 mods.skyresources.knife.removeRecipe(<minecraft:melon>);
 ```
