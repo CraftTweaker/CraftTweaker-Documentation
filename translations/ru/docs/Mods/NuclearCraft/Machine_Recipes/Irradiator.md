@@ -1,6 +1,6 @@
 # Irradiator
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.irradiator`
 
 ## Добавление рецептов
