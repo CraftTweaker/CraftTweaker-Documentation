@@ -1,46 +1,46 @@
 # Mine Bay
 
-You can trade for items on minebay.
+您可以交易迷你生物上的物品。
 
-## Default Trades
+## 默认交易
 
-- Hardened Clay for 1x Emerald
-- Skull for 8x Emerald
-- Saddle for 4x Emerald
-- Spawn Egg (meta 100, does nothing) for 8x Emerald
-- Diamond Horse Armor for 8x Diamond
-- Bottle o' Enchanting for 1x Iron Ingot
-- 4x Fireworks for 1x Iron Ingot
-- Silk Touch Enchanted Book for 8x Emerald
-- 2x Night Vision Potion (3:00) for 1x Emerald
-- Recipe Book given 1x Emerald
+- 1倍绿宝石的硬粘土
+- 8倍绿宝石头的头骨
+- 4倍绿宝石鞍
+- 为 8x 绿宝石生成 蛋 (meta 100, 不做)
+- 8x钻石钻石的钻石马甲
+- 一根铁墨水的瓶子
+- 1倍铁矿石4倍烟花。
+- 8倍绿宝石丝网关附魔书
+- 1x 绿宝石2倍夜视药水 (3:00)
+- 配方书给予1倍绿宝石。
 
 ## 移除配方
 
-## Remove matching trades.
+## 删除匹配的交易。
 
 ```zenscript
-mods.cfm.MineBay.remove(@Optional IIngredient item);
+mods.cfm.MineBay.remove(@Optional IIngredient items);
 
-// Remove trade resulting in the nightvision potion (with any amount)
-mods.cfm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
-// Remove all trades
+// 移除导致夜视药水(含任何数量)
+mods。 fm.MineBay.remove(<minecraft:potion>.withTag({Potion: "night_vision"}));
+// 删除所有交易
 mods.cfm.MineBay.remove();
 ```
 
-Currently only supports removing by trade result.
+目前只支持通过贸易结果移除。
 
-## Adding
+## 添加
 
-## Add a trade.
+## 添加交易。
 
 ```zenscript
-mods.cfm.MineBay.addTrade(@Nonnull IItemStack item, @Nonnull IItemStack currency);
+mods.cfm.MineBay.addTrade(@Nonnull IItemStack 项目，@Nonnull IItemStack 货币)，
 
-// Add a trade for 42 sticks given 13 diamonds
-mods.cfm.MineBay.addTrade(<minecraft:stick>.withAmount(42),<minecraft:diamond>.withAmount(13));
-// Add a trade for 16 apples given 3 emeralds
-mods.cfm.MineBay.addTrade(<minecraft:apple>.withAmount(16),<minecraft:emerald>.withAmount(3));
-// Add a trade for 1 carrot given 1 emerald
+// 为42个给出13个钻石的大棒添加一个交易
+mods.cfm.MineBay.addTrade(<minecraft:stick>.with(42)，<minecraft:diamond>ithamount(13) );
+// 添加16个苹果的交易给了三个绿宝石
+mods.cfm.MineBay.addTrade(<minecraft:apple>.withamount(16),<minecraft:emerald>. ithamount(3))；
+// 为 1 个胡萝卜给出1个绿宝石
 mods.cfm.MineBay.addTrade(<minecraft:carrot>,<minecraft:emerald>);
 ```
