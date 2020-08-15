@@ -6,16 +6,16 @@ The Alloy Smelter package can be used to add/remove recipes to/from the Immersiv
 
 You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type    | Data Type                                           |
-| -------- | ------- | --------------------------------------------------- |
-| Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time    | Integer                                             |
+| Requerido | Tipo    | Tipo de Datos                                         |
+| --------- | ------- | ----------------------------------------------------- |
+| Requerido | Salida  | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Input 1 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Input 2 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Time    | Entero                                                |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -25,11 +25,11 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
