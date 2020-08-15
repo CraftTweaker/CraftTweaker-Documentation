@@ -2,11 +2,11 @@
 
 The OrechidIgnem package is used for adding or removing generated ores to/from the Botania Orechid Ignem Flowers.
 
-## Calling
+## Llamando
 
 You can call the OrechidIgnem package using `mods.botania.OrechidIgnem`
 
-## Recipe addition
+## Añadir receta
 
 You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
