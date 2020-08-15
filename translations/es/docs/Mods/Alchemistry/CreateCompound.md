@@ -19,7 +19,7 @@ This needs to be loaded with `#loader alchemistry`
 
 ## Creation
 ```zenscript
-mods.alchemistry.mods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
+mods.alchemistry.Atomizermods.alchemistry.Util.createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
 
 mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
 [["vibranium", 1],
@@ -28,7 +28,7 @@ mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
  ["sulfur", 3]]);
 ```
 
-## Notes
+## Notas
 - Please use lowercase names
 - The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
 - The components field requires each entry to be an array like so ["cellulose", 5], indicating the element/compound and it's quantity. String arguments are used here rather than itemstacks as a way to ensure that only elements/compounds are used.
