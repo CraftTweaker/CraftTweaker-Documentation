@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Moistener Recipes
 
-## Calling
+## Anruf
 
 You can call the package using `mods.forestry.Moistener`
 
@@ -37,7 +37,7 @@ mods.forestry.Moistener.addFuel(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 
 
 | Parameter      | Type                                     | Beschreibung                                                                                 |
 | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------- |
-| item           | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
+| eintrag        | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the Moistener                                                |
 | product        | [IItemStack](/Vanilla/Items/IItemStack/) | Item that will leave the moistener's working slot (e.g. mouldy wheat or mulch).              |
 | MoistenerValue | int                                      | How much this item contributes to the final product of the moistener.                        |
-| stage          | int                                      | What stage this product represents. Resources with lower stage value will be consumed first. |
+| stadium        | int                                      | What stage this product represents. Resources with lower stage value will be consumed first. |
