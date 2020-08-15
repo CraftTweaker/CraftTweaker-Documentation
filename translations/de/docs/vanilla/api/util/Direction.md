@@ -1,39 +1,39 @@
-# Direction
+# Richtung
 
-Represents a cardinal direction (north, south, east, west) and (up and down).
+Stellt eine Kardinalrichtung (Norden, Süden, Osten, Westen) und (oben und unten).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
-crafttweaker.api.util.Direction
+crafttweaker.api.util.Richtung
 ```
 
 ## Methoden
-### rotateAround
+### drehen um Runde
 
-Rotates this direction around a given Axis
+Dreht diese Richtung um eine bestimmte Achse
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Gibt [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-<direction:north>.rotateAround(axis as crafttweaker.api.util.DirectionAxis);
+<direction:north>.rotateAround(Achse als crafttweaker.api.util.DirectionAxis);
 <direction:north>.rotateAround(<directionaxis:north>);
 ```
 
-| Parameter | Type                                                                   | Beschreibung              |
-| --------- | ---------------------------------------------------------------------- | ------------------------- |
-| axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
+| Parameter | Type                                                                   | Beschreibung                     |
+| --------- | ---------------------------------------------------------------------- | -------------------------------- |
+| achse     | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | die Achse, um die es drehen soll |
 
 
 ### rotateY
 
-Rotates this direction on the Y axis
+Dreht diese Richtung auf die Y-Achse
 
- Returns: `the direction that rotated on the Y axis of this direction`
+ Gibt `die Richtung zurück, die auf der Y-Achse dieser Richtung gedreht wurde`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Gibt [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateY();
@@ -41,11 +41,11 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ### rotateYCCW
 
-Rotates this direction counter-clock wise on the Y axis
+Dreht diese Richtung gegen die Uhr auf der Y-Achse
 
- Returns: `the direction that is counter clockwise on the Y axis`
+ Gibt `die Richtung zurück, die im Uhrzeigersinn auf der Y-Achse ist`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Gibt [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateYCCW();
@@ -54,16 +54,16 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ## Eigenschaften
 
-| Name            | Type                                                                   | Has Getter | Has Setter |
-| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                                                    | true       | false      |
-| horizontalAngle | float                                                                  | true       | false      |
-| horizontalIndex | int                                                                    | true       | false      |
-| indexieren      | int                                                                    | true       | false      |
-| name            | String                                                                 | true       | false      |
-| entgegengesetzt | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
-| xOffset         | int                                                                    | true       | false      |
-| yOffset         | int                                                                    | true       | false      |
-| zOffset         | int                                                                    | true       | false      |
+| Name             | Type                                                                   | Hat Getter | Hat Setter |
+| ---------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
+| achse            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
+| axisOffset       | int                                                                    | true       | false      |
+| horizontalwinkel | float                                                                  | true       | false      |
+| horizontalIndex  | int                                                                    | true       | false      |
+| indexieren       | int                                                                    | true       | false      |
+| name             | String                                                                 | true       | false      |
+| entgegengesetzt  | [crafttweaker.api.util.Richtung](/vanilla/api/util/Direction)          | true       | false      |
+| xOffset          | int                                                                    | true       | false      |
+| yOffset          | int                                                                    | true       | false      |
+| zOffset          | int                                                                    | true       | false      |
 
