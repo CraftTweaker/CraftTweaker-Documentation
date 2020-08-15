@@ -18,7 +18,7 @@ FireClayKnapping.removeRecipe(IItemStack output);
 FireClayKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## 예제
 ```zenscript
 // add fireClay knapping recipe for enderio conduit binder
 FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
