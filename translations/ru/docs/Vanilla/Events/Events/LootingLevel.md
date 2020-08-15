@@ -14,9 +14,9 @@ LootingLevel Events implement the following interfaces and are able to call all 
 
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
-| ZenGetter      | ZenSetter      | Тип                                             |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int                                             |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter              | ZenSetter        | Тип                                             |
+| ---------------------- | ---------------- | ----------------------------------------------- |
+| `уровень добычи`       | `уровень добычи` | int                                             |
+| `источник повреждения` |                  | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
