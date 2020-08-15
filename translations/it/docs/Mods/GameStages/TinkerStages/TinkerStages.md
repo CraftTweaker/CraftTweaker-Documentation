@@ -1,84 +1,84 @@
-# Tinker Stages
+# Fasi Di Tinker
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Tinker Stages allows aspects of the Tinkers Construct mod to be put into a custom progression system set up by the modpack author. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/tinkerstages)
+Questa mod è un addon per l'API [GameStages](https://minecraft.curseforge.com/projects/game-stages). Tinker Stages permette che gli aspetti della modalità Tinkers Construct vengano inseriti in un sistema di progressione personalizzato impostato dall'autore del modpack. Per maggiori informazioni, consulta la pagina delle mod [qui](https://minecraft.curseforge.com/projects/tinkerstages)
 
-## General Restrictions
+## Restrizioni Generali
 
-Restricts tool crafting to a stage. If multiple stages are added using this method, the player will need at least one of them.
+Limita la creazione di strumenti a uno stadio. Se vengono aggiunti più stadi usando questo metodo, il giocatore avrà bisogno di almeno uno di essi.
 
 ```zenscript
 // mods.TinkerStages.addGeneralCraftingStage(String stage);
 mods.TinkerStages.addGeneralCraftingStage("one");
 ```
 
-Restricts part replacing to a stage. If multiple stages are added using this method, the player will need at least one of them.
+Limita la sostituzione della parte a uno stadio. Se vengono aggiunti più stadi usando questo metodo, il giocatore avrà bisogno di almeno uno di essi.
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartReplacingStage(String stage);
 mods.TinkerStages.addGeneralPartReplacingStage("one");
 ```
 
-Restricts part building to a stage. If multiple stages are added using this method, the player will need at least one of them.
+Limita la costruzione di parti a uno stadio. Se vengono aggiunti più stadi usando questo metodo, il giocatore avrà bisogno di almeno uno di essi.
 
 ```zenscript
 // mods.TinkerStages.addGeneralPartBuildingStage(String stage);
 mods.TinkerStages.addGeneralPartBuildingStage("one");
 ```
 
-Restricts applying modifiers to a stage. If multiple stages are added using this method, the player will need at least one of them.
+Limita l'applicazione di modificatori a uno stadio. Se vengono aggiunti più stadi usando questo metodo, il giocatore avrà bisogno di almeno uno di essi.
 
 ```zenscript
 // mods.TinkerStages.addGeneralModifierStage(String stage);
 mods.TinkerStages.addGeneralModifierStage("one");
 ```
 
-## Specific Restrictions
+## Restrizioni Specifiche
 
-Prevents a specific tool type from being crafted at the tool station. For example, you can restrict the crafting of hammers until a specific stage.
+Impedisce che un tipo di strumento specifico venga creato presso la stazione degli utensili. Ad esempio, è possibile limitare la creazione di martelli fino a uno stadio specifico.
 
 ```zenscript
 // mods.TinkerStages.addToolTypeStage(String stage, String toolId);
 mods.TinkerStages.addToolTypeStage(String "one", "tconstruct:pickaxe");
 ```
 
-Prevents a material from being used by the player. Including crafting, part building, and using the tool.
+Impedisce che il giocatore utilizzi un materiale. Compreso la creazione, costruzione di parti, e utilizzando lo strumento.
 
 ```zenscript
 // mods.TinkerStages.addMaterialStage(String stage, String material);
 mods.TinkerStages.addMaterialStage("one", "stone");
 ```
 
-Prevents a specific modifier from being applied to a tool or used.
+Impedisce che un modificatore specifico venga applicato a uno strumento o utilizzato.
 
 ```zenscript
 // mods.TinkerStages.addModifierStage(String stage, String modifier);
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```
 
-## Example Script
+## Script Di Esempio
 
 ```zenscript
-//GENERAL RESTRICTIONS
-//Prevents all tools unless the stage is unlocked.
+//RESTRIZIONI GENERALI
+//Previene tutti gli strumenti a meno che lo stadio non sia sbloccato.
 mods.TinkerStages.addGeneralCraftingStage("one");
 
-//Prevents all tool swapping unless the stage is unlcoked.
+//Previene lo scambio di tutti gli strumenti a meno che lo stadio non sia unlcoked.
 mods.TinkerStages.addGeneralPartReplacingStage("one");
 
-//Prvents all part building unless the stage is unlocked.
+//Apre tutti i brani a meno che lo stadio non sia sbloccato.
 mods.TinkerStages.addGeneralPartBuildingStage("one");
 
-//Prevents applying any tool modifiers unless the stage is unlocked.
+//Previene l'applicazione di qualsiasi modificatore di strumenti a meno che lo stadio non sia sbloccato.
 mods.TinkerStages.addGeneralModifierStage("one");
 
 
 //SPECIFIC RESTRICTIONS
-//Prevents crafting pickaxes unless the stage is unlocked.
+//Previene la creazione di picconi a meno che lo stadio non sia sbloccato.
 mods.TinkerStages.addToolTypeStage("two", "tconstruct:pickaxe");
 
-//Prevents the material from being used. 
+//Impedisce l'uso del materiale. 
 mods.TinkerStages.addMaterialStage("two", "stone");
 
-//Prevents the modifier from being applied.
+//Impedisce l'applicazione del modificatore.
 mods.TinkerStages.addModifierStage("two", "mending_moss");
 ```
