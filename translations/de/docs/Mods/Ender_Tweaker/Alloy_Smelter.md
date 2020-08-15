@@ -1,6 +1,6 @@
-# Alloy Smelter
+# Legierungsschmelzer
 
-## Package
+## Paket
 
 `import mods.enderio.AlloySmelter;`
 
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opt
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
