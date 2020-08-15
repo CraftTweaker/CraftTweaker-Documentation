@@ -2,10 +2,10 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.data.ListData
 ```
@@ -21,23 +21,23 @@ new crafttweaker.api.data.ListData();
 ```zenscript
 new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ```
-| Parameter | Type                                                         | Description             | IsOptional | Default Value |
-| --------- | ------------------------------------------------------------ | ----------------------- | ---------- | ------------- |
-| list      | List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No description provided | true       | null          |
+| Parámetro | Tipo                                                         | Descripción             | IsOptional | Valor por defecto |
+| --------- | ------------------------------------------------------------ | ----------------------- | ---------- | ----------------- |
+| lista     | List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No description provided | verdad     | nulo              |
 
 
 
-## Methods
-### add
+## Métodos
+### añadir
 
 ```zenscript
 ["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
 ["Hello", "World", "!"].add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
+| Parámetro | Tipo                                                   | Descripción                  |
 | --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -46,10 +46,10 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
+| Parámetro | Tipo                                                   | Descripción                                                          |
 | --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| índice    | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### clear
@@ -71,12 +71,12 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ["Hello", "World", "!"].get(0);
 ```
 
-| Parameter | Type | Description         |
+| Parámetro | Tipo | Descripción         |
 | --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| índice    | int  | The index (0-based) |
 
 
-### remove
+### eliminar
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -87,9 +87,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ["Hello", "World", "!"].remove(0);
 ```
 
-| Parameter | Type | Description         |
+| Parámetro | Tipo | Descripción         |
 | --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| índice    | int  | The index (0-based) |
 
 
 ### set
@@ -103,22 +103,22 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 ["Hello", "World", "!"].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
+| Parámetro | Tipo                                                   | Descripción                |
 | --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| índice    | int                                                    | The index to set (0-based) |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Propiedades
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Nombre | Tipo | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| tamaño | int  | verdad     | falso      |
 
 ## Casters
 
 | Result type                                                  | Is Implicit |
 | ------------------------------------------------------------ | ----------- |
-| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true        |
+| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | verdad      |
 
