@@ -1,26 +1,26 @@
 # Pure Daisy
 
-The PureDaisy package is used for adding or removing recipes to/from the Botania Pure Daisy.
+PureDaisy 包用于添加或删除配方到Botania Pure Daisy。
 
 ## 导入包
 
-You can call the PureDaisy package using `mods.botania.PureDaisy`
+您可以使用 `mods.botania.PureDaisy 调用PureDaisy 包`
 
-## Find all registered Recipes
+## 查找所有注册的配方
 
-You can find all registered Pure Daisy recipes using [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/).
+您可以使用 [`/ct botania daisy`](/Mods/Modtweaker/Botania/Commands/) 找到所有注册的 Pure Daisy 配方。
 
 ## 添加配方
 
-The time defaults to 150 ticks
+默认时间为150个ticks
 
 ```zenscript
-//mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOutput, @Optional int time);
+//mods.botania.PureDaisy.addRecipe(IIngredient blockInput, IItemStack blockOut, @Optional int time);
 mods.botania.PureDaisy.addRecipe(<minecraft:dirt>,<minecraft:grass>);
 mods.botania.PureDaisy.addRecipe(<minecraft:planks>,<minecraft:grass>, 200);
 ```
 
-## Recipe removal
+## 删除配方
 
 ```zenscript
 //mods.botania.PureDaisy.removeRecipe(IIngredient output);
