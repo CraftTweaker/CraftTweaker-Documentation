@@ -1,15 +1,15 @@
-# Tree Stump
+# 木の切り取り
 
 ## パッケージ
-`import mods.stone_age.TreeStumpManager;`
+`import mods.stone_ageTreeStumpManager;`
 
 ## メソッド
-- **String name** Recipe name
+- **文字列名** レシピ名
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ツール**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
-- **int chopTimes** Chop times
-- **String group** Recipe group
+- **int chopTimes** チョップ
+- **文字列グループ** レシピグループ
 
 ## 加算
 
