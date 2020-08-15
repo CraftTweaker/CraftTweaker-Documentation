@@ -1,14 +1,14 @@
-# Fluid Dictionary
+# 流体辞書
 
-### Importing
+### インポート中
 
 ```zenscript
-import mods.industrialforegoing.FluidDictionary;
+import mods.industrialforgoing.FluidDictionary;
 ```
 
-### Adding
+### 追加中
 
-It needs the Fluid Name as an input, the Fluid Name as an output and a conversion rate. The rate is how many mb from the origin will be transformed into the output. (InputMB * rate = OutputMB)
+入力として流体名、出力として流体名、変換速度が必要です。 レートは、原点から出力に変換されるmb の数です。 (InputMB * rate = OutputMB)
 
 ```zenscript
 FluidDictionary.add(String input, String output, double rate);
@@ -16,9 +16,9 @@ FluidDictionary.add(String input, String output, double rate);
 FluidDictionary.add("essence", "xpjuice", 1);
 ```
 
-### Removing
+### 削除中
 
-It needs the Fluid Name as an input, the Fluid Name as an output.
+流体名を入力、流体名を出力とする必要があります。
 
 ```zenscript
 FluidDictionary.remove(String input, String output);
