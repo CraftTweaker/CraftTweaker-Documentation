@@ -2,7 +2,7 @@
 
 An Animal.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAnimal;`
@@ -11,16 +11,16 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
 
-## Methods
+## Métodos
 
 ### ZenGetters/Setters
 
-| ZenGetter | Type                                                |
+| ZenGetter | Tipo                                                |
 | --------- | --------------------------------------------------- |
 | loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
-| isInLove  | bool                                                |
+| isInLove  | pluma                                               |
 
-### ZenMethods
+### Métodos
 
 #### check if an item can be used to breed the animal
 
