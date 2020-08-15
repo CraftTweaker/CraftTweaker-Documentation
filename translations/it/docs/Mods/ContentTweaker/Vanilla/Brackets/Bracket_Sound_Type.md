@@ -1,26 +1,26 @@
-# SoundType Bracket Handler
+# Gestore Staffa SoundType
 
-The SoundType Bracket Handler gives you access to the SoundTypes in the game. Currently the only soundTypes supported are:
+Il Gestore staffe SoundType ti dà accesso ai tipi sonori nel gioco. Attualmente gli unici tipi sonori supportati sono:
 
 <details>
-    <summary>Click to expand the type list</summary>
+    <summary>Fare clic per espandere l'elenco dei tipi</summary>
     <ul>
-        <li>Wood</li>
-        <li>Ground</li>
-        <li>Plant</li>
-        <li>Stone</li>
-        <li>Metal</li>
-        <li>Glass</li>
-        <li>Cloth</li>
-        <li>Sand</li>
-        <li>Snow</li>
-        <li>Ladder</li>
-        <li>Anvil</li>
+        <li>Legno</li>
+        <li>Terreno</li>
+        <li>Pianta</li>
+        <li>Pietra</li>
+        <li>Metallo</li>
+        <li>Vetro</li>
+        <li>Tessuto</li>
+        <li>Sabbia</li>
+        <li>Neve</li>
+        <li>Scala</li>
+        <li>Incudine</li>
         <li>Slime</li>
     </ul>
 </details>
 
-SoundTypes are referenced in the SoundType Bracket handler this way:
+I tipi sonori sono referenziati in SoundType Bracket handler in questo modo:
 
 ```zenscript
 <soundtype:name>
@@ -28,4 +28,4 @@ SoundTypes are referenced in the SoundType Bracket handler this way:
 <soundtype:wood>
 ```
 
-If the soundType is found, this will return an [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) Object.
+Se il tipo sonoro viene trovato, restituirà un oggetto [ISoundTypeDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/).
