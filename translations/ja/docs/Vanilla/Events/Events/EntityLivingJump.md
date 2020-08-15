@@ -1,15 +1,15 @@
 # EntityLivingJump
 
-The EntityLivingJump Event is fired whenver an entity jumps.
+EntityLivingJump イベントは、エンティティがジャンプしたときに発生します。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EntityLivingJumpEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops イベントは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべてコールできます。
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
