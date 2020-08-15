@@ -1,34 +1,34 @@
-# Thermoelectric
-The Thermoelectric package can be used to register or unregister temperatures for blocks to allow them to power the Immersive Engineering Thermoelectric Generator. Liquids inherently have a temperature, so they do not and cannot be registered. Temperatures are in Kelvin.
+# Termoelettrico
+Il pacchetto termoelettrico può essere utilizzato per registrare o annullare la registrazione delle temperature dei blocchi per consentire loro di alimentare il Generatore Termoelettrico di Ingegneria Immersiva. I liquidi hanno intrinsecamente una temperatura, quindi non sono e non possono essere registrati. Le temperature sono a Kelvin.
 
 ## Chiamare Il Pacchetto
-You can call the Thermoelectric package using `mods.immersiveengineering.Thermoelectric`.
+È possibile chiamare il pacchetto termoelettrico utilizzando `mods.immersiveengineering.Thermoelectric`.
 
-## Add Temperature Source
+## Aggiungi Sorgente Temperatura
 
 | Richiesto | Tipo            | Tipo Di Dati                                         |
 | --------- | --------------- | ---------------------------------------------------- |
-| Richiesto | Target Block    | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
-| Richiesto | Temperature (K) | Intero                                               |
+| Richiesto | Blocco Target   | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto | Temperatura (K) | Intero                                               |
 
 ### Esempio
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
 
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
 ```
 
 
-## Remove Temperature Source
+## Rimuovi Sorgente Temperatura
 
-| Richiesto | Tipo         | Tipo Di Dati                                         |
-| --------- | ------------ | ---------------------------------------------------- |
-| Richiesto | Target Block | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto | Tipo          | Tipo Di Dati                                         |
+| --------- | ------------- | ---------------------------------------------------- |
+| Richiesto | Blocco Target | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
 
 ### Esempio
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(IIngredient source);
 
 mods.immersiveengineering.Thermoelectric.removeTemperatureSource(<minecraft:obsidian>);
