@@ -1,22 +1,22 @@
-# Packmode Preprocessor
+# Препроцессор пакетного режима
 
-The Packmode Preprocessor will change the script to only be executed if a certain packmode is enabled in the packmode config file
+Препроцессор Packmode изменит сценарий на только в том случае, если в файле конфигурации пакета включен определенный режим
 
 ## Вызов
 
-You call the Packmode Preprocessor by adding `#packmode mode(s)` to your script file, with `mode(s)` being the pack mode(s) you want the script to run in
+Вы вызываете Препроцессор Packmode путем добавления `#packmode режима(ов)` в ваш скрипт файл, с помощью `режима(ов)` режима(ов) пакета, в котором скрипт запускается
 
 ## Пример
 
-`#packmode normal expert` would enable the script in normal and expert mode
+`#packmode нормальный эксперт` включит скрипт в нормальном и экспертном режиме
 
 ```zenscript
-#packmode normal
-import crafttweaker.items.IItemStack;
+#packmode нормальный
+импорт crafttweaker.items.IItemStack;
 
-print("If I appear on your CT-logs, packmode normal is enabled!");
+print("Если я появляюсь в ваших CT-журналах включён!");
 ```
 
-## What it does
+## Что он делает
 
-The Processor will only allow the script to be executed if a certain packmode is enabled.
+Процессор позволит выполнить скрипт только в том случае, если включен определенный пакетный режим.
