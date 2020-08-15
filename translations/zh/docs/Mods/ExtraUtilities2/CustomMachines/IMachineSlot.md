@@ -38,10 +38,10 @@ The parameters are:
 | 名称                | 类型                                            |
 | ----------------- | --------------------------------------------- |
 | name（名称）          | string                                        |
-| isOptional        | bool                                          |
-| stackCapacity     | int                                           |
-| color             | int                                           |
-| backgroundTexture | string                                        |
+| isOptional        | 布尔值                                           |
+| stackCapacity     | 整数                                            |
+| 颜色                | 整数                                            |
+| backgroundTexture | 字符串                                           |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
 What the parameters do:
@@ -58,8 +58,8 @@ What the parameters do:
 You can get basic information from an IMachineSlot as well.  
 Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| 名称            | 类型     |
-| ------------- | ------ |
-| name          | string |
-| optional      | bool   |
-| stackCapacity | int    |
+| 名称            | 类型  |
+| ------------- | --- |
+| 名称            | 字符串 |
+| optional      | 布尔值 |
+| stackCapacity | 整数  |
