@@ -1,20 +1,20 @@
-# Tanning Rack
+# Танкерка
 
 ## Пакет
 `import mods.stone_age.TanningRackManager;`
 
 ## Методы
-- **String name** Recipe name
+- **Имя строки** Имя Рецепта
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[Ingredient](/Vanilla/Variable_Types/IIngredient/) ввод**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
-- **String group** Recipe group
+- **[Ингредиент](/Vanilla/Variable_Types/IIngredient/) инструмент**
+- **Группа строк** группа рецептов
 
 ## Сложение
 
 ```zenscript
-<recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack output, IIngredient input, IIngredient tool, @OptionalString String group)
+<recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack, Ingredient input, IIngredient tool, @OptionalString String)
 
-<recipetype:stone_age:tanning_rack>.addRecipe("leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "leather");
-TanningRackManager.INSTANCE.addRecipe("leather", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "leather");
+<recipetype:stone_age:tanning_rack>ddRecipe("кожа", <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "кожа");
+TanningRackManager.INSTANCE.addRecipe("кожа"), <item:minecraft:leather>, <item:minecraft:rotten_flesh>, <item:minecraft:iron_sword>, "кожа");
 ```
