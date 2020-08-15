@@ -1,7 +1,7 @@
-# Manufactory
+# Ручной завод
 
-## Importing the Package
-`mods.nuclearcraft.Manufactory`
+## Импортирование пакета
+`mods.nuclearcraft.Ручной завод`
 
 ## Добавление рецептов
 ```zenscript
@@ -10,7 +10,7 @@ mods.nuclearcraft.Manufactory.addRecipe(IIngredient itemInput, IIngredient itemO
 
 ## Удаление рецептов
 ```zenscript
-mods.nuclearcraft.Manufactory.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.Manufactory.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Manufactory.removeAllRecipes();
+mods.nuclearcraft.Manufactory.removeRecipeWithInput(IIngredient item);
+mods.nuclearcraft.Manufactory.removeRecipeWithOutput(IIngredient itemput);
+mods.nuclearcraft.Мануфакция.removeAllRecipes();
 ```
