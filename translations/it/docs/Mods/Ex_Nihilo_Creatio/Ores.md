@@ -3,12 +3,12 @@
 **Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
-## Package
+## Pacchetto
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
 
-## Methods
+## Metodi
 
 - **String name** Name the ore chunks/piece/dust/ingot
 - **String color** Color of material in hex.
@@ -16,7 +16,7 @@
 - **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.exnihilocreatio.Ore.addRecipe(String,
@@ -34,7 +34,7 @@ mods.exnihilocreatio.Ore.addRecipe("Stone",
     "Stone");
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();
