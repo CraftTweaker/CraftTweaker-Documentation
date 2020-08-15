@@ -2,7 +2,7 @@
 
 The *infusion* package is used for adding or removing recipes to/from the Life Infusion process.
 
-## Calling
+## Anruf
 
 You can call the *infusion* package using `mods.skyresources.infusion`
 
