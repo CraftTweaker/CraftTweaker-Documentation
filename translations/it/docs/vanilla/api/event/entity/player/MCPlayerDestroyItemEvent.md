@@ -1,9 +1,9 @@
 # MCPlayerDestroyItemEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent>);
 ```
-| Parameter | Type                                                                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent](/vanilla/api/event/entity/player/MCPlayerDestroyItemEvent)> | No description provided |
+| Parametro | Tipo                                                                                                                                          | Descrizione                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent](/vanilla/api/event/entity/player/MCPlayerDestroyItemEvent)> | Nessuna descrizione fornita |
 
 
 
-## Methods
+## Metodi
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -49,7 +49,7 @@ myMCPlayerDestroyItemEvent.getPlayer();
 
 Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCPlayerDestroyItemEvent.hasResult();
@@ -61,7 +61,7 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCPlayerDestroyItemEvent.isCancelable();
@@ -71,7 +71,7 @@ myMCPlayerDestroyItemEvent.isCancelable();
 
 Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCPlayerDestroyItemEvent.isCanceled();
@@ -83,9 +83,9 @@ myMCPlayerDestroyItemEvent.isCanceled();
 myMCPlayerDestroyItemEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parametro | Tipo    | Descrizione                 |
+| --------- | ------- | --------------------------- |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 
