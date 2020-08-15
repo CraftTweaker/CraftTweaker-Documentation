@@ -1,11 +1,11 @@
 # Hammering
 
-## Package
+## パッケージ
 ```zenscirpt
 `mods.exnihilocreatio.Hammer`
 ```
 
-## Methods
+## メソッド
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
@@ -13,7 +13,7 @@
 - **Float chance** chance between 0-1.
 - **Float fortune chance** chance between 0-1.
 
-## Addition
+## 加算
 
 ```zenscript
 mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
@@ -21,7 +21,7 @@ mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float
 mods.exnihilocreatio.Hammer.addRecipe(<minecraft:log>, <minecraft:plank>, 0, 0.25, 0.5);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.exnihilocreatio.Hammer.removeAll();
