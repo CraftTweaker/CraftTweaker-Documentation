@@ -17,24 +17,24 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
+| ZenGetter       | ZenSetter           | Was macht es                                 | Type                                                |
 | --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
 |                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
-| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| kreativ-Tab     | kreativ-Tab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
 |                 | defaultSlipperiness |                                              | float                                               |
 | id              |                     | Returns the block ID                         | string                                              |
 | displayName     |                     | Returns the block's DisplayName              | string                                              |
-|                 | hardness            |                                              | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
+|                 | Härte               |                                              | int                                                 |
+| abruf Level     |                     | Returns the block's harvest level            | int                                                 |
 | harvestTool     |                     | Returns the block's harvest tool             | string                                              |
-|                 | lightOpacity        |                                              | int                                                 |
+|                 | helle Deckkraft     |                                              | int                                                 |
 |                 | lightLevel          |                                              | int                                                 |
-|                 | resistance          |                                              | int                                                 |
+|                 | widerstand          |                                              | int                                                 |
 | unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
 | tickRandomly    | tickRandomly        |                                              | bool                                                |
 
-## ZenMethods
+## ZenMethoden
 
 ### Set Block unbreakable
 
