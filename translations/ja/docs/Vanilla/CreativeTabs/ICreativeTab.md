@@ -16,7 +16,7 @@ You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanill
 | ZenGetter/ZenMethod | 戻り値            |
 | ------------------- | -------------- |
 | searchBarWidth      | int            |
-| tabLabel            | string         |
+| tabLabel            | 文字列            |
 | setNoScrollBar()    | void (nothing) |
 | setNoTitle()        | void (nothing) |
 
