@@ -1,6 +1,6 @@
 # Supercooler
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.Supercooler`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.Supercooler.addRecipe(ILiquidStack fluidInput, ILiquidStack fl
 ```zenscript
 mods.nuclearcraft.Supercooler.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Supercooler.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Supercooler.removeAllRecipes();
+mods.nuclearcraft.Supercooler.removeAllRicette();
 ```
