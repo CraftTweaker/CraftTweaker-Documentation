@@ -1,12 +1,12 @@
 # DebugPreprocessor
 
-The debugPreprocessor enables debug mode.
+DebugPreprocessor włącza tryb debugowania.
 
-## Call
+## Połącz
 
-You call the debug Preprocessor by adding `#debug` to your script file.
+Wywołujesz preprocesor debugowania, dodając `#debug` do pliku skryptu.
 
-## What it does
+## Co to robi
 
-It globally enables debug mode. This mode outputs the parsed script files.  
-You most likely will never need them.
+Globalnie włącza tryb debugowania. Ten tryb wychodzi przeanalizowane pliki skryptu.  
+Najprawdopodobniej nigdy ich nie potrzebujesz.
