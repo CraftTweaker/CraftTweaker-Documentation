@@ -1,16 +1,16 @@
 # MechanicalDryingBasin
 
-This package allows you to modify recipes for the Mechanical Drying Basin.
+このパッケージでは、メカニカルドライビング盆地のレシピを変更できます。
 
 ## パッケージのインポート
 
-If you want to import this package, here you go:
+このパッケージをインポートしたい場合は、次のようにします。
 
 ```zenscript
 import mods.integrateddynamics.MechanicalDryingBasin;
 ```
 
-## Adding Recipes
+## レシピを追加中
 
 ```zenscript
 //MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
@@ -18,7 +18,7 @@ import mods.integrateddynamics.MechanicalDryingBasin;
 MechanicalDryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 ```
 
-## Removing Recipes
+## レシピを削除
 
 ```zenscript
 //MechanicalDryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
