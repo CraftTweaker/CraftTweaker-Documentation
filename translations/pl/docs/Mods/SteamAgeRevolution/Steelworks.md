@@ -2,11 +2,11 @@
 
 The Steelworks is a machine that converts an input item and fluid into an output item using steam.
 
-## Calling
+## Dzwonienie
 
 You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
 
-## Removing
+## Usuwanie
 
 This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
 
@@ -23,7 +23,7 @@ This function removes *all* recipes currently defined for the Steelworks:
 mods.steamagerevolution.Steelworks.removeAll();
 ```
 
-## Adding
+## Dodawanie
 
 This function is used to add new recipes for the Steelworks:
 
