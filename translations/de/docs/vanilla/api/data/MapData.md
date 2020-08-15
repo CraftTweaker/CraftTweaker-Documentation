@@ -105,7 +105,7 @@ myMapData.get(key as String);
 myMapData.get("Hello");
 ```
 
-| Parameter | Type   | Description           |
+| Parameter | Type   | Beschreibung          |
 | --------- | ------ | --------------------- |
 | key       | String | The key to search for |
 
@@ -166,7 +166,7 @@ myMapData.put("Hello", "Goodbye");
 | Parameter | Type                                                   | Beschreibung                  |
 | --------- | ------------------------------------------------------ | ----------------------------- |
 | key       | String                                                 | The key to set the value for. |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
+| wert      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
 
 
 ### putAll
@@ -183,7 +183,7 @@ myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 | map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
 
 
-### remove
+### entfernen
 
 Removes the entry with the given key from the Map
 
@@ -198,16 +198,16 @@ myMapData.remove("Somewhere");
 
 
 
-## Properties
+## Eigenschaften
 
-| Name    | Type        | Has Getter | Has Setter |
-| ------- | ----------- | ---------- | ---------- |
-| isEmpty | boolean     | true       | false      |
-| keySet  | Set<String> | true       | false      |
-| size    | int         | true       | false      |
+| Name    | Type           | Has Getter | Has Setter |
+| ------- | -------------- | ---------- | ---------- |
+| isEmpty | boolean        | true       | false      |
+| keySet  | Setzen<String> | true       | false      |
+| grösse  | int            | true       | false      |
 
-## Operators
-### ADD
+## Operatoren
+### ZUD
 
 Adds all entries from the given IData to this entry
 
@@ -217,7 +217,7 @@ myMapData + data as crafttweaker.api.data.IData
 
 | Parameter | Type                                                   | Beschreibung            |
 | --------- | ------------------------------------------------------ | ----------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
 
 ## Casters
 
