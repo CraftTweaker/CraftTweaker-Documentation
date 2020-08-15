@@ -2,7 +2,7 @@
 
 The ElvenTrade package is used for adding or removing recipes to/from the Botania Portal to Alfheim.
 
-## Calling
+## Anruf
 
 You can call the ElvenTrade package using `mods.botania.ElvenTrade`
 
@@ -10,7 +10,7 @@ You can call the ElvenTrade package using `mods.botania.ElvenTrade`
 
 You can find all registered ElvenTrade recipes using [`/ct botania trades`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Rezeptzusatz
 
 ```zenscript
 //mods.botania.ElvenTrade.addRecipe(IIngredient[] outputs, IIngredient[] input);
