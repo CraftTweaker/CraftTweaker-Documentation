@@ -2,7 +2,7 @@
 
 The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
-## Package
+## Pacchetto
 `mods.atum.Kiln;`
 
 ## Blacklist
@@ -19,7 +19,7 @@ Removes the recipe(s) with the specified item/block from the recipes the Kiln wi
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Adding a Recipe
+## Aggiungere una Ricetta
 
 `mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
@@ -34,17 +34,17 @@ Adds a recipe with the specified input, output, experience & cook time
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
 The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
 
-### Remove Recipes by Output
+### Rimuovere Ricette in base al Prodotto
 
 `mods.atum.Kiln.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/IItemStack) dato.
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
