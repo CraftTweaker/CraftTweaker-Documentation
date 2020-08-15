@@ -1,15 +1,15 @@
-# Mount Locking
+# Verrouillage du montage
 
-## Mount Locks
+## Verrou de montage
 
-This feature allows you to add a requirement lock to Mounting specific entities!
+Cette fonctionnalité vous permet d'ajouter un verrou prérequis à des entités spécifiques au montage !
 
-### Syntax
+### Syntaxe
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Lien vers IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
+    # Exemple:
     mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
     
-    # Working Example:
+    # Exemple de Travail :
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")
