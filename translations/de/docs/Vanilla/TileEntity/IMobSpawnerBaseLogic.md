@@ -16,7 +16,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
 | `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
 
-## ZenMethods
+## ZenMethoden
 
 ```zenscript
 void updateSpawner();
