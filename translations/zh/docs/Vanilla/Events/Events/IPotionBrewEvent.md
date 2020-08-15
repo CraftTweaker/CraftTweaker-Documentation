@@ -6,11 +6,11 @@ This event is extended by all events involving the brewing stand, although not t
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPotionBrewEvent;`
 
-## What can be done with them?
+## 他们能够做些什么？
 
-| ZenGetter | ZenSetter | type |
-| --------- | --------- | ---- |
-| `length`  |           | int  |
+| ZenGetter | ZenSetter | 类型 |
+| --------- | --------- | -- |
+| `length`  |           | 整数 |
 
 ## 可用方法
 
