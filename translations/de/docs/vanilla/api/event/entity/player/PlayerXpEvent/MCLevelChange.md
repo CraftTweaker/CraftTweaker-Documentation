@@ -94,7 +94,7 @@ myMCLevelChange.setCanceled(cancel as boolean);
 myMCLevelChange.setLevels(levels as int);
 ```
 
-| Parameter | Type | Description             |
+| Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
 | levels    | int  | No description provided |
 
