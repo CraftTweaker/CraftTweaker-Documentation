@@ -1,6 +1,6 @@
 # Flint Workbench
 
-## Package
+## Пакет
 `import mods.stone_age.FlintWorkbenchManager;`
 
 ## Методы
@@ -10,7 +10,7 @@
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool** Crafting tool
 - **String group** Recipe group
 
-## Addition
+## Сложение
 
 ```zenscript
 <recipetype:stone_age:flint_workbench>.addRecipe(String name, IItemStack output, IIngredient[][] inputMatrix, IIngredient tool, @OptionalString String group)
