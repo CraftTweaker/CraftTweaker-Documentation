@@ -1,53 +1,53 @@
-# Creative Tab
+# Scheda Creativa
 
-This allows you to add Creative Tabs to the game!
+Questo ti permette di aggiungere Schede Creative al gioco!
 
-## Creating the ICreativeTab object
+## Creazione dell'oggetto ICreativeTab
 
-Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Prima di poter aggiungere la scheda, è necessario creare una rappresentazione che ti permetterà di impostare le proprietà della scheda che vuoi aggiungere.  
+È qui che arriva il [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) in:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier);
 ```
 
-The String is in each of the three methods the same: It's the unlocalized name the Tab will later have.  
-The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").  
-You can decide wheter you want to use an itemRepresentation, an itemStack, a blockrepresentation or an itemStackSupplier function.
+La stringa è in ciascuno dei tre metodi lo stesso: è il nome non localizzato che la scheda avrà in seguito.  
+Il secondo parametro è il simbolo che la scheda porterà avanti (e. . un secchio di lava per "misc").  
+È possibile decidere wheter che si desidera utilizzare un itemRappresentation, un itemStack, una blockrepresentation o un itemStackSupplier funzione.
 
-## Calling an existing ICreativeTab object
+## Chiamare un oggetto ICreativeTab esistente
 
-You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) tab, though you cannot change any of it's properties.  
-Why would you need this, you ask?  
-You will need this if you want to add a newly created block or item to an existing tab!
+Puoi anche chiamare una scheda [creativa](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) esistente, anche se non puoi cambiare nessuna delle sue proprietà.  
+Perché ti serve questo, chiedi?  
+Ne avrai bisogno se vuoi aggiungere un blocco o un elemento appena creato a una scheda esistente!
 
-## Properties
+## Proprietà
 
-You can call and set all these properties using the normal ZenGetters and ZenSetters  
-`tab.unlocalizedName = "hh";`  
-Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
-Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
+È possibile chiamare e impostare tutte queste proprietà utilizzando la normale scheda ZenGetters e ZenSetters  
+`. nlocalizedName = "hh";`  
+Nota che probabilmente non avrai mai bisogno degli Setters poiché queste Proprietà sono già inizializzate ai valori desiderati quando crei l'oggetto ICreativeTab.  
+Anche, non puoi impostare né ottenere proprietà da un ICreativeTab(uno che hai recuperato usando il gestore [parentesi](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
+| Nome Proprietà    | Tipo                                                                                                    | Richiesto | Valore Predefinito | Descrizione/Note              |
+| ----------------- | ------------------------------------------------------------------------------------------------------- | --------- | ------------------ | ----------------------------- |
+| unlocalizedName   | stringa                                                                                                 | SÌ        |                    | Il nome della scheda creativa |
+| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | SÌ/NO     |                    | L'icona della scheda creativa |
+| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/SÌ     | null               | Determina qualcosa?           |
 
-## Registering the creative tab
+## Registrazione della scheda creativa
 
-You need to call this method to register the creative Tab in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the tab or change any of it's properties!
+Devi chiamare questo metodo per registrare la scheda creativa nel gioco!  
+Altrimenti non accadrà nulla!  
+Dopo aver chiamato questa funzione, non è possibile annullare la registrazione della scheda o modificare nessuna delle sue proprietà!
 
 ```zenscript
 tab.register();
 ```
 
-## Example Script
+## Script Di Esempio
 
 ```zenscript
 #loader contenttweaker
