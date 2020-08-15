@@ -10,7 +10,7 @@ mods.mekanism.thermalevaporation.addRecipe(ILiquidStack liquidInput, ILiquidStac
 mods.mekanism.thermalevaporation.addRecipe(<liquid:liquidfusionfuel>, <liquid:lava>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.mekanism.thermalevaporation.removeRecipe(IIngredient liquidInput, @Optional IIngredient liquidOutput);
@@ -21,7 +21,7 @@ mods.mekanism.thermalevaporation.removeRecipe(<liquid:brine>);
 
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Removing all recipes
+## Entferne alle Rezepte
 
 As of Mekanism 9.7.0 it is now possible to remove all Thermal Evaporation Plant recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
