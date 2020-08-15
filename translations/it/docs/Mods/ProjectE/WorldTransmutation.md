@@ -1,40 +1,40 @@
-# World Transmutation
+# Trasmutazione Mondiale
 
-## add
+## aggiungi
 
-Adds a Philosopher Stone world transmutation, with an optional sneak click transmutation.
+Aggiunge una trasmutazione del mondo delle Pietre Filosofiche, con una trasmutazione opzionale con clic scorrevole.
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
-mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
+// Se l'IItemStack non ha un blocco di coresponding, viene invece usata l'aria.
+mods.projecte.WorldTransmutation. dd(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking 
-mods.projecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
+// Trasforma i blocchi d'oro in blocchi di diamanti facendo clic con il tasto destro del mouse o in blocchi di ferro facendo clic con il tasto destro del mouse su 
+mods. rojecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
-mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
+mods.projecte.WorldTransmutation. dd(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
 
-// Turn gold blocks into diamond blocks by right clicking, or into iron blocks by sneak right clicking
-mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
+// Trasforma i blocchi d'oro in blocchi di diamanti facendo clic con il tasto destro del mouse o in blocchi di ferro facendo clic con il tasto destro del mouse su
+mods. rojecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## remove
+## rimuovi
 
-Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
+Rimuove le trasmutazioni del mondo Philosopher Stone che hanno lo stesso input, output e sneakOutput.
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
 ```zenscript
-// If the IItemStack's do not have a coresponding block, air is used instead.
+// Se l'IItemStack non ha un blocco di coresponding, viene invece usata l'aria.
 mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Optional IItemStack sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
+// Rimuove la ricetta che permette il ciottolo di essere cambiato in pietra/erba
+mods. rojecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
 ```
 
 ### [IBlockState](/Vanilla/Blocks/IBlockState/)
@@ -42,13 +42,13 @@ mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobbleston
 ```zenscript
 mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
 
-// Removes the recipe allowing cobblestone to be changed into stone/grass
-mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
+// Rimuove la ricetta che consente di trasformare il ciottolo in pietra/erba
+mods. rojecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
 ```
 
 ## removeAll
 
-Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
+Rimuove tutte le trasmutazioni Philosopher Stone World, incluso qualsiasi aggiunto dall'utente prima della chiamata a questo metodo.
 
 ```zenscript
 mods.projecte.PhiloStone.removeAllWorldTransmutation();
