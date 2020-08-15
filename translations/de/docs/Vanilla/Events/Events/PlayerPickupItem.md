@@ -20,5 +20,5 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 | ZenGetter | Rückgabetyp                                   |
 | --------- | --------------------------------------------- |
-| `item`    | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| `eintrag` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)          |
