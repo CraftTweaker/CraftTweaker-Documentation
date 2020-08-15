@@ -1,12 +1,12 @@
 # NoRun Preprocessor
 
-The NoRun Preprocessor disables the script from being loaded COMPLETELY.
+NoRun Preprocessor はスクリプトが COMPLETLY にロードされることを無効にします。
 
-## Call
+## 電話
 
-You call the NoRun Preprocessor by adding `#norun` to your script file.
+スクリプトファイルに `#norun` を追加して、NoRun プリプロセッサーを呼び出します。
 
-## What it does
+## 何をするか
 
-It completely disables the script it's added to from being loaded into the game.  
-Though `/ct syntax` will still show script issues in that file!
+追加されたスクリプトがゲームに読み込まれるのを完全に無効にします。  
+`/ct シンタックス` は、そのファイルにスクリプトの問題が表示されます。
