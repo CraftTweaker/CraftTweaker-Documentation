@@ -1,53 +1,53 @@
-# Basic variable functionality
+# Fonctionnalité de la variable de base
 
-The most basic variable types of ZenScript are Strings, Integers and booleans.
+Les types de variables les plus basiques de ZenScript sont Strings, Integers et booleans.
 
-## Most single types
+## Les plus simples types
 
-`true == true` You can check if two values are the same.  
-`"Hello" != "World"` You can also check if two values are unequal.
+`vrai == vrai` Vous pouvez vérifier si deux valeurs sont les mêmes.  
+`"Bonjour" != "Monde"` Vous pouvez également vérifier si deux valeurs sont inégales.
 
-## Strings
+## Chaînes de caractères
 
-Strings provide some functionality
+Les chaînes de caractères fournissent certaines fonctionnalités
 
-`"Hello".length` Returns the string's length as int.  
-`"Hello"[1]` Returns the character at the string's given index as another string.  
-`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
-`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
+`"Bonjour".leng` Renvoie la longueur de la chaîne comme int.  
+`"Bonjour"[1]` Renvoie le caractère à l'index de la chaîne de caractères donnée comme une autre chaîne.  
+`"Bonjour" dans "Enfer"` vérifie si la chaîne avant `dans` contient la chaîne après comme booléenne. Vous pouvez remplacer le `en` par `a` si vous le souhaitez.  
+`"Hel" ~ "lo " + "World"` Vous pouvez également ajouter/concaténer des chaînes. `chaîne += "assignAdd"` vous pouvez également utiliser les opérateurs assigner/assigner Concaténate.
 
-Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
-This includes:
+En dehors de ceux-ci, toutes les méthodes disponibles pour [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) et ne pas utiliser le type de caractères `` sont également disponibles pour les chaînes ZenScript !  
+Cela comprend :
 
-- toLowerCase
+- format@@0 toLowerCase
 - toUpperCase
 - getBytes
 - hashCode
-- intern
+- interne
 - isEmpty
-- toCharArray
-- trim
-- split
+- format@@0 toCharArray
+- découper
+- séparer
 
-## Integers
+## Nombre entier
 
-Integers provide some functionality
+Les entiers fournissent certaines fonctionnalités
 
-`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). You can also use the operatorAssign tokens  
-`0 to 10` Returns an Integer Range ranging from 0 to 10.  
-`1~10` Concatenates the Integers (returns "110").
+`+-*/%` Opérateurs mathématiques de base (consultez la page [types de variables](/Vanilla/Variable_Types/Variable_Types)). Vous pouvez également utiliser les jetons de l'operatorAssign  
+`0 à 10` Renvoie une plage d'entier comprise entre 0 et 10.  
+`1~10` Concatène les Integers (retourne "110").
 
-## Booleans
+## Booléens
 
-Booleans provide some functionality
+Les booléens fournissent certaines fonctionnalités
 
-`true ~ false` Concatenates the booleans (returns "truefalse").  
-`& | ^` Boolean operators (and/or/xor).
+`vrai ~ faux` Concatène les booléens (retourne "truefalse").  
+`& | ^` Opérateurs booléens (et/ou/xor).
 
-## Arrays/ArrayLists
+## Tableaux / Listes de tableaux
 
-Arrays and ArrayLists provide common functions
+Les tableaux et les listes de tableaux fournissent des fonctions communes
 
-`array[1]` returns the item at the given index.  
-`array[1] = "Hello"` Sets the item at the given index.  
-`array.length` returns the arrays length
+`table[1]` retourne l'élément à l'index donné.  
+`tableau[1] = "Bonjour"` Définit l'élément à l'index donné.  
+`array.length` retourne la longueur des tableaux
