@@ -1,13 +1,13 @@
-# Tile-Entity Locking
+# Blocco Tile-Entity
 
-## Tile-Entity Locks
+## Blocchi Tile-Entity
 
-This features allows you to lock the ability for players to interact with specific Tile-Entities.
+Questa funzionalità consente di bloccare la possibilità per i giocatori di interagire con specifiche Tile-Entities.
 
-### Syntax:
+### Sintassi:
 
-    // Blank Example
-    mods.compatskills.TileEntityLock.addTileEntityLock(String tileName, String... locked);
+    // Esempio vuoto
+    mods.compatskills.TileEntityLock.addTileEntityLock(String tileName, String... bloccato);
     
-    // Working Example
-    mods.compatskills.TileEntityLock.addTileEntityLock("minecraft:furnace", "reskillable:defense|5");
+    // Esempio di lavoro
+    mods.compatskills.TileEntityLock.addTileEntityLock("minecraft:furnace", "reskillable:defense<unk> 5");
