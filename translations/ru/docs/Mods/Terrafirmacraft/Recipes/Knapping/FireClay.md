@@ -1,17 +1,17 @@
 # FireClay Knapping
 
-## Package
+## Пакет
 ```zenscript
 import mods.terrafirmacraft.FireClayKnapping;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 FireClayKnapping.removeRecipe(IItemStack output);
