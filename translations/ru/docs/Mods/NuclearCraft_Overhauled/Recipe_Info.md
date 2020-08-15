@@ -15,7 +15,7 @@ RecipeHandler::getFluidOutputSize();
 RecipeHandler::isShapeless();
 ```
 
-## Recipe Methods
+## Методы рецепта
 ```zenscript
 Recipe::getItemIngredient(int index);
 Recipe::getFluidIngredient(int index);
