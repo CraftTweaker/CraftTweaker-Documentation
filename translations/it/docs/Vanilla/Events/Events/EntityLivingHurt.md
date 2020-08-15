@@ -18,7 +18,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 ## ZenGetters
 
-| ZenGetter    | Type                                            |
+| ZenGetter    | Tipo                                            |
 | ------------ | ----------------------------------------------- |
 | damageSource | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
-| amount       | float                                           |
+| importo      | galleggiante                                    |
