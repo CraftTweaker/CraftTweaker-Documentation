@@ -19,6 +19,6 @@ LivingEntityUseItem Events implement the following interfaces and are able to ca
 
 The following information can be retrieved/set during the event:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | Type de retour                        |
 | ----------- | ------------------------------------- |
 | `lightning` | [IEntity](/Vanilla/Entities/IEntity/) |
