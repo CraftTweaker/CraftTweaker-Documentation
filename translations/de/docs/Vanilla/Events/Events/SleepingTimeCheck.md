@@ -1,21 +1,21 @@
-# SleepingTimeCheck
+# Schlafzeitprüfung
 
-This event is fired when checking if a sleeping player can continue to sleep at a specified time. If has a **result** which determines the action.
+Dieses Ereignis wird abgefeuert, wenn geprüft wird, ob ein schlafender Spieler zu einem bestimmten Zeitpunkt weiter schlafen kann. Wenn ein **Ergebnis** hat, das die Aktion bestimmt.
 
-Result:
-- **Default**, causes the Vanilla logic of `World::isDaytime` to be consulted.
-- **Allow**, allows the player to continue sleeping regardless
-- **Deny** is specifically ***ignored*** in this instance and does nothing.
+Ergebnis:
+- **Standard**, bewirkt, dass die Vanilla-Logik von `World::isDaytime` konsultiert wird.
+- **Erlaube**, erlaubt es dem Spieler zu schlafen
+- **Deny** ist speziell ***ignoriert*** in dieser Instanz und unternimmt nichts.
 
-Thus, this event allows you to keep the player sleeping, but it does not allow you to specifically stop them from sleeping.
+Dieses Ereignis erlaubt es Ihnen, den Spieler schlafen zu lassen, aber es erlaubt Ihnen nicht, speziell zu stoppen.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.SleepingTimeCheck`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. leepingTimeCheck`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-SleepingTimeCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+SleepingTimeCheck Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
