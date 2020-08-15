@@ -1,10 +1,10 @@
-# Condenser
+# Condensatore
 
-The *condenser* package is used for adding or removing recipes to/from the Condenser.
+Il pacchetto *condensatore* viene utilizzato per aggiungere o rimuovere ricette a/dal Condenser.
 
 ## Chiamata
 
-You can call the *condenser* package using `mods.skyresources.condenser`
+Puoi chiamare il pacchetto *condensatore* usando `mods.skyresources.condenser`
 
 ## Aggiunta Ricetta
 
