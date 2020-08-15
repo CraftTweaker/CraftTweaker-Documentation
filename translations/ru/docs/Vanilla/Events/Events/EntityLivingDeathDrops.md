@@ -1,7 +1,7 @@
-# EntityLivingDeathDrops
+# Сущность LivingDeathDrops
 
-The EntityLivingDeathDrops Event is fired whenver an Entity's death causes dropped items to appear.  
-It can be canceled to stop the entity from dropping anything.
+Событие EntityLivingDeathDrops запускается при смерти сущности.  
+Это может быть отменено, чтобы остановить сущность от удаления ничего.
 
 ## Класс события
 
@@ -20,19 +20,19 @@ PlayerDeathDrops реализует следующие интерфейсы и �
 
 Следующая информация может быть получена от события:
 
-| Геттер          | Возвращаемый тип                                            |
-| --------------- | ----------------------------------------------------------- |
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
-| `isRecentlyHit` | bool                                                        |
-| `lootingLevel`  | int                                                         |
+| Геттер                 | Возвращаемый тип                                              |
+| ---------------------- | ------------------------------------------------------------- |
+| `капли`                | [`Список<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `источник повреждения` | [IDamageSource](/Vanilla/Damage/IDamageSource/)               |
+| `Недавно`              | bool                                                          |
+| `уровень добычи`       | int                                                           |
 
-## Modifying the item drops
+## Изменение выпадения предмета
 
-You can either add to the droplist or completely substitute it with a new one:
+Вы можете либо добавить в дроплист, либо полностью заменить его новым:
 
 ```zenscript
-event.drops = //reference to IEntityItem list.
+event.drops = //ссылка на список IEntityItem .
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
