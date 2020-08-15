@@ -1,6 +1,6 @@
-# Anvil
+# 金床
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Anvil;Anvil;
 ```
