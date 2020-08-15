@@ -2,14 +2,14 @@
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.AttributeModifier;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaper.entity.AttricteModifier；`
 
 ## ZenGetters
 
-| ZenGetter | GetterMethod   | 返回值类型  |
+| ZenGetter | 获取方法           | 返回值类型  |
 | --------- | -------------- | ------ |
-| uuid      | getUUID()      | string |
-| name      | getName()      | string |
-| operation | getOperation() | int    |
-| amount    | getAmount()    | double |
+| uuid      | getUUID()      | 字符串    |
+| 名称        | getName()      | string |
+| 操作        | getOperation() | 整数     |
+| 金额        | getAmount()    | 双精度    |
