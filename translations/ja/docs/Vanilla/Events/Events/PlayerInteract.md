@@ -20,18 +20,18 @@ PlayerInteract Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                          |
+| ZenGetter    | 戻り値                                  |
 | ------------ | ------------------------------------ |
-| `canceled`   | boolean                              |
-| `usingItem`  | boolean                              |
-| `usingBlock` | boolean                              |
+| `canceled`   | boolean型                             |
+| `usingItem`  | boolean型                             |
+| `usingBlock` | boolean型                             |
 | `x`          | int                                  |
 | `y`          | int                                  |
 | `z`          | int                                  |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `寸法`         | int                                  |
 
 ## ZenMethods
 
