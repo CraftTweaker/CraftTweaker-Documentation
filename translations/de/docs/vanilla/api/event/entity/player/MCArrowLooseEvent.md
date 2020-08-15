@@ -110,7 +110,7 @@ myMCArrowLooseEvent.setCanceled(cancel as boolean);
 myMCArrowLooseEvent.setCharge(charge as int);
 ```
 
-| Parameter | Type | Description             |
+| Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
 | charge    | int  | No description provided |
 
