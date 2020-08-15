@@ -23,7 +23,7 @@ new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.enti
 
 ## Properties
 
-| Name          | Type                                                                       | Has Getter | Has Setter |
+| 이름            | Type                                                                       | Has Getter | Has Setter |
 | ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
 | entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
 | maxGroupCount | int                                                                        | true       | false      |
