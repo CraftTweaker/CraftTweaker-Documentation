@@ -1,6 +1,6 @@
-# Distillation Tower
+# Torre Di Distillazione
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.distillationTower`
 
 ## Aggiunta Di Ricette
@@ -10,7 +10,7 @@ mods.techreborn.distillationTower.addRecipe(IItemStack output1, IItemStack outpu
 
 ## Rimozione Ricette
 ```zenscript
-mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.distillationTower.removeInputRecipe(IIngredient ingrediente);
 mods.techreborn.distillationTower.removeRecipe(IItemStack output);
 mods.techreborn.distillationTower.removeAll();
 ```
