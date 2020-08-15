@@ -2,7 +2,7 @@
 
 Represents an item stack in the world.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityItem;`
@@ -13,6 +13,6 @@ IEntityItem extends [IEntity](/Vanilla/Entities/IEntity/). That means all functi
 
 ## ZenGetters
 
-| ZenGetter | Return Type                              |
+| ZenGetter | Tipo Di Reso                             |
 | --------- | ---------------------------------------- |
-| item      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| elemento  | [IItemStack](/Vanilla/Items/IItemStack/) |
