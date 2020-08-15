@@ -2,7 +2,7 @@
 
 This package allows you to modify recipes for the Mechanical Squeezer.
 
-## Importing the package
+## Importation du paquet
 
 If you want to import this package, here you go:
 
