@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Transmutation;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void removeRecipe(
@@ -34,7 +34,7 @@ void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Transmutation;
@@ -49,7 +49,7 @@ Transmutation.addBlockToBlockRecipe("end_stone_to_bone", <blockstate:minecraft:e
 Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraft:tallgrass:type=tall_grass>, <minecraft:snowball>*3);
 ```
 
-### Notes
+### Примечания
 
 **Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
 
