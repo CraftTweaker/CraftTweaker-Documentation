@@ -9,11 +9,11 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenGetters/ZenMethods
 
-| Getter    | Type   |
-| --------- | ------ |
-| index     | int    |
-| slotIndex | int    |
-| name      | string |
+| Getter    | タイプ |
+| --------- | --- |
+| index     | int |
+| slotIndex | int |
+| 名前        | 文字列 |
 
 ### Compare
 
@@ -24,7 +24,7 @@ Returns a bool.
 slotOne == slotTwo;
 ```
 
-## Enumerations
+## 列挙型
 
 The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
