@@ -1,6 +1,6 @@
-# Ingot Former
+# Lingotto Ex
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.IngotFormer`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient ite
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.IngotFormer.removeAllRecipes();
+mods.nuclearcraft.IngotFormer.removeAllRice();
 ```
