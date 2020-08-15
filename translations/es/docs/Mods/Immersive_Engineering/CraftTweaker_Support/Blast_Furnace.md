@@ -8,14 +8,14 @@ You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurn
 
 ## Add Recipe:
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
-| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Requerido | Tipo   | Tipo de Datos                                         |
+| --------- | ------ | ----------------------------------------------------- |
+| Requerido | Salida | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Input  | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Time   | Entero                                                |
+| Opcional  | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)              |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -26,11 +26,11 @@ mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWo
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Ejemplo:
 
 ```zenscript
 //Example:
@@ -40,12 +40,12 @@ mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 
 ## Add Fuel
 
-| Required | Type  | Data Type                                           |
-| -------- | ----- | --------------------------------------------------- |
-| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time  | Integer                                             |
+| Requerido | Tipo  | Tipo de Datos                                         |
+| --------- | ----- | ----------------------------------------------------- |
+| Requerido | Input | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Time  | Entero                                                |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -55,11 +55,11 @@ mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 
 ## Remove Fuel
 
-| Required | Type   | Data Type                                |
-| -------- | ------ | ---------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Requerido | Tipo   | Tipo de Datos                            |
+| --------- | ------ | ---------------------------------------- |
+| Requerido | Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
