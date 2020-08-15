@@ -1,7 +1,7 @@
-# Fuel Reprocessor
+# 燃料のリプロセッサ
 
-## Importing the Package
-`mods.nuclearcraft.FuelReprocessorFuelReprocessor`
+## パッケージのインポート
+`mods.nuclearcraft.FuelReprocessor燃料リプロセッサ`
 
 ## レシピを追加中
 ```zenscript
