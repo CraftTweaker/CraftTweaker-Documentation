@@ -1,7 +1,7 @@
 # ChickenFactory
 
-The ChickenFactory allows you to create custom [Chickens](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) to the game.  
-Note that this module is a feature addition to the [Chickens mod by setycz](https://minecraft.curseforge.com/projects/chickens), so this module is only available if that mod is loaded.
+Mit der ChickenFactory kannst du eigene [Hühner](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) im Spiel erstellen.  
+Beachten Sie, dass dieses Modul eine zusätzliche Funktion zum [Hühner Mod von setycz](https://minecraft.curseforge.com/projects/chickens)ist, so dass dieses Modul nur verfügbar ist, wenn dieser Mod geladen ist.
 
 ## Dieses Paket importieren
 
@@ -9,31 +9,31 @@ Note that this module is a feature addition to the [Chickens mod by setycz](http
 import mods.contenttweaker.ChickenFactory;
 ```
 
-## Creating chickens
+## Hühner erstellen
 
-First of all, you will need to create a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/).  
-This is essentially an empty template of what your chicken will become.  
-This method returns such a [Chicken Representation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) object, by taking the following parameters:
+Zuerst musst du eine [Hühnervertretung](/Mods/ContentTweaker/Chickens/ChickenRepresentation/)erstellen.  
+Dies ist im Wesentlichen eine leere Vorlage, was Ihr Huhn werden wird.  
+Diese Methode gibt ein solches [Hühnerrepräsentation](/Mods/ContentTweaker/Chickens/ChickenRepresentation/) Objekt zurück, indem Sie die folgenden Parameter verwenden:
 
-- String name: the entity name of the chicken, used for models and the entity registry.
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The color, the chicken will have.
-- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: The item the chicken will lay later on.
+- String-Name: der Entitätsname des Hühners, der für Modelle und die Entitätsregister verwendet wird.
+- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) Farbe: Die Farbe, das Huhn wird haben.
+- [IItemStack](/Vanilla/Items/IItemStack/) layedItem: Das Item das das Hühnchen später lagert.
 
 ```zenscript
-ChickenFactory.createChicken(String name, CTColor color, IItemStack item);
+ChickenFactory.createChicken(String Name, CTColor Farbe, IItemStack Item);
 ```
 
 ## Skript-Beispiel
 
 ```zenscript
 #loader contenttweaker
-#modloaded chickens
+#modloaded Hühner
 
 import mods.contenttweaker.ChickenFactory;
 import mods.contenttweaker.Color;
 
 
-val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffff), <item:minecraft:bedrock>);
+val chickenRepresentation = ChickenFactory.createChicken("bedrocked_chicken", Color.fromInt(0xffffffffffffffff), <item:minecraft:bedrock>);
 
 chickenRepresentation.setForegroundColor(Color.fromInt(0xabcdef));
 
