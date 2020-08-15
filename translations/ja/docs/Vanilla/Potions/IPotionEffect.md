@@ -10,7 +10,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetter
 
-| ZenGetter                              | Type                                           |
+| ZenGetter                              | タイプ                                            |
 | -------------------------------------- | ---------------------------------------------- |
 | duration                               | int                                            |
 | potion                                 | [IPotion](/Vanilla/Potions/IPotion/)           |
