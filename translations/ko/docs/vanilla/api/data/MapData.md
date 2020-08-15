@@ -200,13 +200,13 @@ myMapData.remove("Somewhere");
 
 ## Properties
 
-| Name    | Type        | Has Getter | Has Setter |
+| 이름      | Type        | Has Getter | Has Setter |
 | ------- | ----------- | ---------- | ---------- |
 | isEmpty | boolean     | true       | false      |
 | keySet  | Set<String> | true       | false      |
 | size    | int         | true       | false      |
 
-## Operators
+## 연산자
 ### ADD
 
 Adds all entries from the given IData to this entry
