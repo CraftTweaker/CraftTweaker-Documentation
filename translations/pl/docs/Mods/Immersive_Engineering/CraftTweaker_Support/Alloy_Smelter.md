@@ -1,35 +1,35 @@
-# Alloy Smelter
+# Stop hutniczy
 
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+Pakiet stopu do hutnictwa może być użyty do dodawania/usuwania przepisów do/z hutnictwa stopu inżynieryjnego.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+Możesz wywołać pakiet AlloySmelter używając `mods.immersiveengineering.AlloySmelter`
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type    | Data Type                                           |
-| -------- | ------- | --------------------------------------------------- |
-| Required | Output  | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input 1 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Input 2 | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time    | Integer                                             |
+| Wymagane | Typ     | Typ danych                                       |
+| -------- | ------- | ------------------------------------------------ |
+| Wymagane | Wyjście | [IItemstack](/Vanilla/Items/IItemStack/)         |
+| Wymagane | Input 1 | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Input 2 | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Czas    | Liczba całkowita                                 |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
-mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
+mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient firstst, IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
