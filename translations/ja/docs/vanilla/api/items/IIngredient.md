@@ -2,10 +2,10 @@
 
 This is IIngredient!!!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.item.IIngredient
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.item.IIngredient
 IIngredientのimplementsでは、以下のようなインターフェースで実装されています。 つまり、これらのクラスで使用できるすべてのメソッドをこのクラスで使用することができます。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## メソッド
 ### getRemainingItem
 
 この材料スタックでクラフトが行われると、グリッド上になにが残るか？ ただし、スタックが一致するかどうかのチェックは行いません！ Craft Tweakerでの使用例,
@@ -26,12 +26,12 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| パラメータ | タイプ                                                               | 説明                                        |
+| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### 一致
 
 Does the given stack match the ingredient?
 
@@ -42,18 +42,18 @@ Returns boolean
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| パラメータ | タイプ                                                               | 説明                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-## Properties
+## プロパティー
 
-| Name          | Type                                                                | Has Getter | Has Setter |
+| 名称            | タイプ                                                                 | Has Getter | Has Setter |
 | ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| commandString | 文字列型                                                                | true       | false      |
+| 項目            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 
 ## Casters
 
