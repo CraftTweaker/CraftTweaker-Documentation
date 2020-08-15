@@ -1,6 +1,6 @@
-# Chemical Reactor
+# Chemischer Reaktor
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.chemical_reactor`
 
 ## Rezepte hinzufügen
