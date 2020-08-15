@@ -1,16 +1,16 @@
 # Vat
 
-The Vat is a machine that converts input items and fluids into an output fluid.
+Il Vat è una macchina che converte elementi di ingresso e fluidi in un fluido di uscita.
 
 ## Pacchetto
 `mods.steamagerevolution.Vat`
 
 ## Metodi
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** Fluid input of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il risultato della ricetta.
+- **[Ingresso ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** Ingresso fluido della ricetta.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) inputItems** Items to input of the recipe.
+- **int craftTime** Tempo di lavorazione della macchina da elaborare
 
 ## Aggiunta
 
