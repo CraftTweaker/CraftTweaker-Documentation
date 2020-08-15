@@ -10,7 +10,7 @@ mods.mekanism.separator.addRecipe(ILiquidStack inputFluid, double inputRF, IGasS
 mods.mekanism.separator.addRecipe(<liquid:liquidfusionfuel>, 5000, <gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.mekanism.separator.removeRecipe(IIngredient inputFluid, @Optional IIngredient outputGas1, @Optional IIngredient outputGas2);
@@ -21,7 +21,7 @@ mods.mekanism.separator.removeRecipe(<liquid:water>);
 
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Removing all recipes
+## Entferne alle Rezepte
 
 As of Mekanism 9.7.0 it is now possible to remove all Electrolytic Separator recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
