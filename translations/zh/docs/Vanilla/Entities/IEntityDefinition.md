@@ -1,95 +1,95 @@
-# IEntityDefinition
+# IEntity定义
 
-This sounds scary, so what does it mean? Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
+这听起来很稀少，所以它意味着什么？ 基本上，它是指在游戏中注册的一个实体，因此它是指在游戏中一个暴民。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDefinition;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.entity. IEntityDefinitiation;`
 
-## Calling an IEntityDefinition Object
+## 调用 IEntityDefinition 对象
 
 ```zenscript
-//These return an IEntityDefinition Object
-val test = <entity:minecraft:sheep>;
+///这些返回一个 IEntityDefinition 对象
+val test2 = <entity:minecraft:sheep>;
 val test2 = game.getEntity("sheep");
 
 ```
 
-## Functions
+## 职能
 
-So, this is where it gets interesting: What can we do with it, now that we created that thing?
+因此，这是它感兴趣的领域： 既然我们制造了这件事，我们怎么办？
 
 ### id
 
-Returns the ID as string
+返回ID为字符串
 
 ```zenscript
-//returns "net.minecraft.entity.passive.EntitySheep"
+//返回 "net.minecraft.entity.passive.EntitySheep"
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### 名称
 
-Returns the name as string
+返回名称为字符串
 
 ```zenscript
-//returns "Sheep"
+//返回 "Sheep"
 <entity:minecraft:sheep>.name;
 ```
 
-### create entity
+### 创建实体
 
-The first method only creates an entity on the given location.  
-The second one also spawns it.
+第一种方法只能在给定位置创建实体。  
+第二种方法也会生成它。
 
 ```zenscript
 <entity:minecraft:sheep>.createEntity(world);
-<entity:minecraft:sheep>.spawnEntity(world, blockPos);
+<entity:minecraft:sheep>.spawnEntity(world, blockpos)；
 ```
 
-`world` is an [IWorld](/Vanilla/World/IWorld/) object.  
-`blockPos` is an [IBlockPos](/Vanilla/World/IBlockPos/) object.
+`世界` 是一个 [IWorld](/Vanilla/World/IWorld/) 对象。  
+`blockPos` 是一个 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。
 
-## Drops
+## 下拉列表
 
-We can even add and/or remove mob drops, isn't that great?
+我们甚至可以添加和/或移除暴民的物品，这不是太棒了吗？
 
-### Add normal Drop
+### 添加正常掉落项
 
-This adds a normal drop, a drop that can occur whenever the mob is killed by whatever means.
+这增加了一个正常的掉落，当暴民被以任何方式杀死时，就会出现这种下降。
 
 ```zenscript
-val entity = <entity:minecraft:sheep>;
+valal entity = <entity:minecraft:sheep>;
 
 //addDrop(item,min,max,chance);
 entity.addDrop(<minecraft:apple>);
 
-//addDrop(weightedItem, min, max);
+//addDrop(权重项, min,max);
 entity.addDrop(<minecraft:stone> % 20);
 ```
 
-`item` is the item to be added as drop and an [IItemStack](/Vanilla/Items/IItemStack/) or a [WeightedItemStack](/Vanilla/Items/WeightedItemStack/).  
-`min` is the minimum amount that is dropped and an Integer. This is optional.  
-`max` is the maximum amount that is dropped and an Integer. This is optional.  
-`chance` is the drop chance. This is optional. Not needed if you use a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) instead as `item`
+`项目` 是要添加为丢弃的项目 [IItemStack](/Vanilla/Items/IItemStack/) 或 [重量项目](/Vanilla/Items/WeightedItemStack/)。  
+`分钟` 是丢弃的最小金额和整数。 这是可选的。  
+`max` 是丢弃的最大值和整数。 这是可选的。  
+`几率` 是丢弃的机会。 这是可选的。 如果您使用了 [重量项目堆栈](/Vanilla/Items/WeightedItemStack/) 而不是 `项` 则不需要
 
-### Add playeronly drop
+### 添加仅限玩家的下拉列表
 
-Same as normal drops, but only if the entity was killed by a player.
+与正常掉落相同，但仅当实体被玩家杀死时。
 
 ```zenscript
 //addPlayerOnlyDrop(item,min,max,chance);
-entity.addPlayerOnlyDrop(<minecraft:gold_ingot>, 10,64);
+entity.addPlayerOnlyDrop(<minecraft:gold_ingot>,10,64);
 
-//addPlayerOnlyDrop(weightedItem, min, max);
-entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20, 1, 3);
+//addPlayerOnlyDrop(重量,min,max);
+entity.addPlayerOnlyDrop(<minecraft:iron_ingot> % 20,1, 3);
 ```
 
-### Add drop Function
+### 添加拖放功能
 
-A drop function is called whenever the associated Entity is killed. You can use this if you need to check requirements for before you drop something, like only dropping in a certain biome and stuff.  
-You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
+每当关联实体被杀死时，都会调用掉函数。 如果您需要在丢弃东西之前检查要求，您可以使用这个功能，比如只丢弃在特定生物群落和物品中。  
+你将需要一个 [IentityDropfunction](/Vanilla/Entities/IEntityDropFunction/):
 
 ```zenscript
 <entity:minecraft:sheep>.addDropFunction(function(entity, dmgSource) {
@@ -97,36 +97,36 @@ You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
     });
 ```
 
-### Remove
+### 移除
 
-This removes a drop.
+这会移除掉一滴。
 
 ```zenscript
-val entity = <entity:minecraft:sheep>;
+valal entity = <entity:minecraft:sheep>;
 
 //removeDrop(item);
 entity.removeDrop(<minecraft:wool>);
 ```
 
-`item` is the item to be removed from being a drop and an [IItemStack](/Vanilla/Items/IItemStack/).
+`项目` 是要从掉落中删除的物品， [IItemStack](/Vanilla/Items/IItemStack/)。
 
-### Clear Drops
+### 清除下拉列表
 
-This removes all drops.
+这会移除所有掉落。
 
 ```zenscript
-val entity = <entity:minecraft:sheep>;
+valable entity = <entity:minecraft:sheep>;
 
 //clearDrops
 entity.clearDrops();
 ```
 
-### Get
+### 获取
 
-This returns all drops that were added via CT as list of [IEntityDrop](/Vanilla/Entities/IEntityDrop/) Objects.
+这将返回所有通过 CT 添加的 [IEntityDrop](/Vanilla/Entities/IEntityDrop/) 对象的掉落。
 
 ```zenscript
-val entity = <entity:minecraft:sheep>;
+valal entity = <entity:minecraft:sheep>;
 
 //drops;
 val dropList = entity.drops;
