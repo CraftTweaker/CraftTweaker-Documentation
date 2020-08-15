@@ -7,7 +7,7 @@ The Microwave heats up food items.
 - Beef -> Cooked Beef
 - Potato -> Baked Potato
 
-## Removing
+## Rimozione
 
 ## Remove matching microwave recipes.
 
@@ -22,7 +22,7 @@ mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
 mods.cfm.Microwave.remove();
 ```
 
-## Adding
+## Aggiunta
 
 ## Add a microwave recipe.
 
