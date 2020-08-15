@@ -2,19 +2,19 @@
 
 This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.item.IItemStack
 ```
 
-## Implemented Interfaces
-IItemStack implements the following interfaces. That means any method available to them can also be used on this class.
+## 已实现的接口
+IItemStack implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## 方法
 ### clearCustomName
 
 Clears any custom name set for this ItemStack
@@ -36,23 +36,23 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 | 参数    | 类型                                                                | 描述                                        |
 | ----- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### 匹配
 
 Does the given stack match the ingredient?
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 <item:minecraft:dirt>.matches(stack as crafttweaker.api.item.IItemStack);
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | 类型                                                                | 说明                 |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| 参数    | 类型                                                                | 说明                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### setDisplayName
@@ -66,9 +66,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| name      | String | New name of the stack. |
+| 参数 | 类型          | 描述                     |
+| -- | ----------- | ---------------------- |
+| 名称 | 字符串[string] | New name of the stack. |
 
 
 ### withDamage
@@ -82,9 +82,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withDamage(10);
 ```
 
-| Parameter | Type | Description          |
-| --------- | ---- | -------------------- |
-| damage    | int  | the new damage value |
+| 参数 | 类型 | 描述                   |
+| -- | -- | -------------------- |
+| 伤害 | 整数 | the new damage value |
 
 
 ### withTag
@@ -98,40 +98,40 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type                                                   | Description     |
-| --------- | ------------------------------------------------------ | --------------- |
-| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
+| 参数 | 类型                                                     | 描述              |
+| -- | ------------------------------------------------------ | --------------- |
+| 标签 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
 
 
 
-## Properties
+## 参数
 
-| Name           | Type                                                                | Has Getter | Has Setter |
-| -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
-| burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
-| damaged        | boolean                                                             | true       | false      |
-| displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
-| food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
-| getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| getRepairCost  | int                                                                 | true       | false      |
-| hasDisplayName | boolean                                                             | true       | false      |
-| hasEffect      | boolean                                                             | true       | false      |
-| hasTag         | boolean                                                             | true       | false      |
-| isCrossbow     | boolean                                                             | true       | false      |
-| isEnchantable  | boolean                                                             | true       | false      |
-| isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
-| maxDamage      | int                                                                 | true       | false      |
-| maxStackSize   | int                                                                 | true       | false      |
-| registryName   | String                                                              | true       | false      |
-| stackable      | boolean                                                             | true       | false      |
-| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| translationKey | String                                                              | true       | false      |
-| useDuration    | int                                                                 | true       | false      |
+| 名称                   | 类型                                                                  | 可获得  | 可设置   |
+| -------------------- | ------------------------------------------------------------------- | ---- | ----- |
+| 金额                   | 整数                                                                  | true | false |
+| 烧焦时间                 | 整数                                                                  | true | true  |
+| commandString #命令字符串 | 字符串[string]                                                         | true | false |
+| 可造成伤害                | boolean                                                             | true | false |
+| damaged              | boolean                                                             | true | false |
+| 显示名称                 | 字符串[string]                                                         | true | false |
+| 空的                   | boolean                                                             | true | false |
+| food                 | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true | true  |
+| getOrCreate          | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
+| getRepairCost        | 整数                                                                  | true | false |
+| hasDisplayName       | boolean                                                             | true | false |
+| hasEffect            | boolean                                                             | true | false |
+| 哈斯塔克                 | boolean                                                             | true | false |
+| isCrossbow           | boolean                                                             | true | false |
+| isEnchangable        | boolean                                                             | true | false |
+| 有附魔的                 | boolean                                                             | true | false |
+| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
+| maxDamage            | 整数                                                                  | true | false |
+| maxStackSize         | 整数                                                                  | true | false |
+| registryName         | 字符串[string]                                                         | true | false |
+| stackable            | boolean                                                             | true | false |
+| 标签                   | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true | false |
+| translationKey       | 字符串[string]                                                         | true | false |
+| useDuration          | 整数                                                                  | true | false |
 
 ## 运算符
 ### MUL
@@ -143,15 +143,15 @@ Sets the amount of the ItemStack
 <item:minecraft:dirt> * 3
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| amount    | int  | new amount  |
+| 参数 | 类型 | 描述         |
+| -- | -- | ---------- |
+| 金额 | 整数 | new amount |
 
 ## Casters
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)            | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)        | true        |
-| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | false       |
+| 结果类型                                                              | 是否隐藏  |
+| ----------------------------------------------------------------- | ----- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)            | true  |
+| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData)       | true  |
+| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | false |
 
