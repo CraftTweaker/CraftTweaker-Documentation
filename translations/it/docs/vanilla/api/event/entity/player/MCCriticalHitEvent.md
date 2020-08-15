@@ -8,7 +8,7 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
 
-## Constructors
+## Costruttori
 ```zenscript
 new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
@@ -21,9 +21,9 @@ new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.
 ## Metodi
 ### getDamageModifier
 
-The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
+Il modificatore di danno per il colpito.<br> Questo è di default 1.5F per i colpi ciritcali e 1F per i colpi normali.
 
-Returns float
+Restituisce fluttuante
 
 ```zenscript
 myMCCriticalHitEvent.getDamageModifier();
@@ -31,7 +31,7 @@ myMCCriticalHitEvent.getDamageModifier();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getEntityPlayer();
@@ -39,9 +39,9 @@ myMCCriticalHitEvent.getEntityPlayer();
 
 ### getOldDamageModifier
 
-The orignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hits and 1F for normal hits .
+Il modificatore di danno orignale per il colpo wthout qualsiasi cambiamento.<br> Questo è 1,5F per i colpi ciritcali e 1F per i colpi normali.
 
-Returns float
+Restituisce fluttuante
 
 ```zenscript
 myMCCriticalHitEvent.getOldDamageModifier();
@@ -49,29 +49,29 @@ myMCCriticalHitEvent.getOldDamageModifier();
 
 ### getPlayer
 
-Returns: `Player`
+Restituisce: `Giocatore`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getPlayer();
 ```
 
-### hasResult
+### hasRisultato
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCCriticalHitEvent.hasResult();
+myMCCriticalHitEvent.hasRisultato();
 ```
 
-### isCancelable
+### isAnnullabile
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
+ Nota:
+ Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
 
 Restituisce un booleano
 
@@ -79,9 +79,9 @@ Restituisce un booleano
 myMCCriticalHitEvent.isCancelable();
 ```
 
-### isCanceled
+### isAnnullato
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
 
 Restituisce un booleano
 
@@ -91,7 +91,7 @@ myMCCriticalHitEvent.isCanceled();
 
 ### isVanillaCritical
 
-Returns true if this hit was critical by vanilla
+Restituisce vero se questo colpo è stato critico dalla vaniglia
 
 Restituisce un booleano
 
@@ -99,7 +99,7 @@ Restituisce un booleano
 myMCCriticalHitEvent.isVanillaCritical();
 ```
 
-### setCanceled
+### setAnnullato
 
 ```zenscript
 myMCCriticalHitEvent.setCanceled(cancel as boolean);
@@ -107,12 +107,12 @@ myMCCriticalHitEvent.setCanceled(cancel as boolean);
 
 | Parametro | Tipo    | Descrizione                 |
 | --------- | ------- | --------------------------- |
-| cancel    | boolean | Nessuna descrizione fornita |
+| annulla   | boolean | Nessuna descrizione fornita |
 
 
 ### setDamageModifier
 
-This set the damage multiplier for the hit. If you set it to 0, then the particles are still generated but damage is not done.
+Questo imposta il moltiplicatore di danno per il colpo. Se lo si imposta a 0, allora le particelle sono ancora generate, ma il danno non è fatto.
 
 ```zenscript
 myMCCriticalHitEvent.setDamageModifier(mod as float);
