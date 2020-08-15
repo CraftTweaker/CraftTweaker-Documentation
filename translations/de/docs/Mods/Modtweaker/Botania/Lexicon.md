@@ -2,7 +2,7 @@
 
 The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
 
-## Calling
+## Anruf
 
 You can call the Lexicon package using `mods.botania.Lexicon`
 
@@ -45,7 +45,7 @@ mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
 mods.botania.Lexicon.removeEntry(String entry);
 ```
 
-## Categories
+## Kategorien
 
 ### Addition
 
