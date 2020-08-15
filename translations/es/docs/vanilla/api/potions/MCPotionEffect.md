@@ -1,9 +1,9 @@
 # MCPotionEffect
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.potion.MCPotionEffect
 ```
@@ -12,7 +12,7 @@ crafttweaker.api.potion.MCPotionEffect
 MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### isReady
 
 Returns boolean
@@ -21,10 +21,10 @@ Returns boolean
 myMCPotionEffect.isReady(duration as int, amplifier as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| duration  | int  | No description provided |
-| amplifier | int  | No description provided |
+| Parámetro    | Tipo | Descripción             |
+| ------------ | ---- | ----------------------- |
+| duración     | int  | No description provided |
+| amplificador | int  | No description provided |
 
 
 ### newInstance
@@ -35,22 +35,22 @@ Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MC
 myMCPotionEffect.newInstance(duration as int, amplifier as int);
 ```
 
-| Parameter | Type | Description             | IsOptional | Default Value |
-| --------- | ---- | ----------------------- | ---------- | ------------- |
-| duration  | int  | No description provided | false      | null          |
-| amplifier | int  | No description provided | true       | 0             |
+| Parámetro    | Tipo | Descripción             | IsOptional | Valor por defecto |
+| ------------ | ---- | ----------------------- | ---------- | ----------------- |
+| duración     | int  | No description provided | falso      | nulo              |
+| amplificador | int  | No description provided | verdad     | 0                 |
 
 
 
-## Properties
+## Propiedades
 
-| Name          | Type                                                                    | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                                  | true       | false      |
-| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
-| displayName   | String                                                                  | true       | false      |
-| isBeneficial  | boolean                                                                 | true       | false      |
-| isInstant     | boolean                                                                 | true       | false      |
-| liquidColor   | int                                                                     | true       | false      |
-| name          | String                                                                  | true       | false      |
+| Nombre              | Tipo                                                                    | Has Getter | Has Setter |
+| ------------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
+| commandString       | Cadena                                                                  | verdad     | falso      |
+| artículos curativos | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | verdad     | falso      |
+| nombre de pantalla  | Cadena                                                                  | verdad     | falso      |
+| es beneficioso      | boolean                                                                 | verdad     | falso      |
+| es instantáneo      | boolean                                                                 | verdad     | falso      |
+| color líquido       | int                                                                     | verdad     | falso      |
+| nombre              | Cadena                                                                  | verdad     | falso      |
 
