@@ -1,6 +1,6 @@
 # Decay Generator
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.decay_generator`
 
 ## Aggiunta Di Ricette
