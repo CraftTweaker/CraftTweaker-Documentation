@@ -1,4 +1,4 @@
-# Basin Throwing
+# Lancio Bacino
 
 ## Addizione
 
@@ -25,6 +25,6 @@ BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Remove everything!
+// Rimuovi tutto!
 BasinThrowing.removeAll();
 ```
