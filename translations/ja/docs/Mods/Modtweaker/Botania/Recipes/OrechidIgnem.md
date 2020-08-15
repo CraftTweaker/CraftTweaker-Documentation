@@ -1,31 +1,31 @@
 # Orechid Ignem
 
-The OrechidIgnem package is used for adding or removing generated ores to/from the Botania Orechid Ignem Flowers.
+OrechidIgnemパッケージは、BotaniaOrechid Ignemフラワーへ/から生成された鉱石を追加または削除するために使用されます。
 
-## Calling
+## 発信中
 
-You can call the OrechidIgnem package using `mods.botania.OrechidIgnem`
+`mods.botania.OrechidIgnem を使用して OrechidIgnem パッケージを呼び出すことができます`
 
-## Recipe addition
+## レシピの追加
 
-You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+出力パラメータとして [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を使用してレシピを追加するか、または oreDictEntry の名前を文字列として追加できます。
 
 ```zenscript
 //mods.botania.OrechidIgnem.addOre(IOreDictEntry oreDict, int weight);
 mods.botania.OrechidIgnem.addOre(<ore:logWood>, 500);
 
-//mods.botania.OrechidIgnem.addOre(String oreDict, int weight);
+//mods.botania.OrechidIgnem.addOre(String oreDict, oreDict, weight);
 mods.botania.OrechidIgnem.addOre("logWood", 500);
 ```
 
-## Recipe removal
+## レシピの削除
 
-You can either remove recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
+出力パラメータとして [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) を使用してレシピを削除するか、文字列として oreDictEntry の名前を使用します。
 
 ```zenscript
 //mods.botania.OrechidIgnem.removeOre(IOreDictEntry oreDict);
 mods.botania.OrechidIgnem.removeOre(<ore:oreGold>);
 
 //mods.botania.OrechidIgnem.removeOre(String oreDict);
-mods.botania.OrechidIgnem.removeOre("oreGold");
+mods.botania.OrechidIgnem.removeOre("Gold");
 ```
