@@ -5,12 +5,12 @@
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.formatting.IFormattedText;`
 
-## Creating an IFormattedText Object
+## IFormattedText オブジェクトの作成
 
-You can always defer an IFormatted Text from a String (the conversion is automatic).
+文字列から IFormatted Text をいつでも延期することができます (変換は自動的です)。
 
-## Using an IFormattedText Object
+## IFormattedText オブジェクトの使用
 
-You can add or concatenate two IFormattedText together using the respecting Operators: `+ ~`
+2つの IFormattedText を、リスペクト演算子 `+ ~` を使って一緒に追加または連結できます。
 
-Besides that you can use the [IFormatter](/Vanilla/Utils/IFormatter/) to format an IFormattedText Object.
+それに加えて、 [IFormatter](/Vanilla/Utils/IFormatter/) を使用して IFormattedText オブジェクトをフォーマットすることもできます。
