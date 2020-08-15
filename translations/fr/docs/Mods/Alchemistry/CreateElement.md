@@ -6,7 +6,7 @@ Custom Element Creation for Alchemistry
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
-## Methods
+## Méthodes
 - **int atomicNumber** ID for new Element
 - **String Name** New Elements Name
 - **String Abbrebiation** New Elements Abbrebiation
