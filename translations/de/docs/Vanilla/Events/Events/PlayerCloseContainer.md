@@ -16,6 +16,6 @@ PlayerCloseContainer Events implement the following interfaces and are able to c
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter   | Rückgabetyp                                  |
-| ----------- | -------------------------------------------- |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| ZenGetter  | Rückgabetyp                                  |
+| ---------- | -------------------------------------------- |
+| `behälter` | [IContainer](/Vanilla/Container/IContainer/) |
