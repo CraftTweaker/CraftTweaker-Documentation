@@ -20,7 +20,7 @@ mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Entfernen
 
 * Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
 
