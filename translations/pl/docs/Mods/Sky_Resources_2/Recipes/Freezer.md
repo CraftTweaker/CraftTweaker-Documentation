@@ -1,21 +1,21 @@
-# Freezer
+# Zamrażarka
 
-The *freezer* package is used for adding or removing recipes to/from the Freezer.
+Pakiet *zamrażarki* jest używany do dodawania lub usuwania przepisów do/z zamrażarki.
 
-## Calling
+## Dzwonienie
 
-You can call the *freezer* package using `mods.skyresources.freezer`
+Możesz wywołać pakiet *zamrażarka* używając `mods.skyresources.zamrażarka`
 
-## Recipe Addition
+## Dodawanie przepisów
 
 ```zenscript
-//mods.skyresources.freezer.addRecipe(IItemStack output, IItemStack input, int ticks);
-mods.skyresources.freezer.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
+//mods.skyresources.zamrażar.addRecipe(wyjście IItemStack, wejście IItemStack, ticks);
+mods.skyresources.zamrażar.addRecipe(<minecraft:ice>, <minecraft:dirt>, 900);
 ```
 
-## Recipe Removal
+## Usuwanie przepisów
 
 ```zenscript
-//mods.skyresources.freezer.removeRecipe(IItemStack output);
-mods.skyresources.freezer.removeRecipe(<minecraft:ice>);
+//mods.skyresources.zamrażar.removeRecipe(wyjście IItemStack);
+mods.skyresources.zamrażar.removeRecipe(<minecraft:ice>);
 ```
