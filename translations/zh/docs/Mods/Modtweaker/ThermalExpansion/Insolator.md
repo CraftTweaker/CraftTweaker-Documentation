@@ -1,21 +1,21 @@
-# Insolator
+# 7. 破产人
 
 ## 所属包名
 
-`mods.thermalexpansion.Insolator`
+`无力偿债者`
 
 ## 添加配方
 
 ```zenscript
-//mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+//mods.thermallipl.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Opinion secondaryChance);
 
-mods.thermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
+mods. hermalext.Insoletator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20)；
 ```
 
 ## 删除配方
 
 ```zenscript
-//mods.thermalexpansion.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
+//mods.thermallipl.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
 
-mods.thermalexpansion.Insolator.removeRecipe(<minecraft:melon_seeds>, <thermalfoundation:fertilizer:1>);
+mods.thermalexplan.Insolator.removeRecipe(<minecraft:melon_seeds>, <thermalfoundation:fertilizer:1>);
 ```
