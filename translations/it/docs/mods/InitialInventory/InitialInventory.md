@@ -1,24 +1,24 @@
 # InitialInventory
 
-## Description
+## Descrizione
 
 This mod adds support for the player to be given an item when they join a world, and then never again, similar to how some mods give players books when they join a world for the first time.
 
-## Package
+## Pacchetto
 `mods.initialinventory.InvHandler`
 
 ## Adding starting items
 
 This will add an item to the players inventory when they join the world.
 
-The parameters are:
+I parametri sono:
 
 
 Param: `key`
 
 Type: `String`
 
-Description:
+Descrizione:
 
 Used to determine if an item should be given. A key can be any string, the point of it is to determine if a player has been given a set of items before.
 
@@ -34,7 +34,7 @@ param: `item`
 
 Type `IItemStack`
 
-Description:
+Descrizione:
 
 The item to give to the player when they join.
 
@@ -42,14 +42,14 @@ Param: `index`
 
 Type: `int`
 
-Description:
+Descrizione:
 
 Optional integer to define where the item will be given, can be used to put an item in a inventory slot like an armor slot.
 
 If left out, will default to -1, which means it will put it in the first available slot, or combine it with other items that may already be in the inventory.
 
 
-## Example
+## Esempio
 
 ```zenscript
 //mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
