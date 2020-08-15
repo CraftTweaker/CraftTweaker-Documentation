@@ -2,14 +2,14 @@
 
 ## registerReservoir
 
-| Type            | Data Type                                    |
+| Type de texte   | Type de données                              |
 | --------------- | -------------------------------------------- |
 | Name Identifier | String                                       |
-| Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimum Size    | Integer                                      |
-| Maximum Size    | Integer                                      |
-| Replenish Rate  | Integer                                      |
-| Weight          | Integer                                      |
+| Fluide          | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Minimum Size    | Nombre entier                                |
+| Maximum Size    | Nombre entier                                |
+| Replenish Rate  | Nombre entier                                |
+| Weight          | Nombre entier                                |
 
 ### Weight
 
