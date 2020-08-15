@@ -1,10 +1,10 @@
 # JEI
 
-CraftTweaker comes with support for JustEnoughItems (JEI). You can add or hide items or fluids in JEI or add a Descriptions page for them.
+CraftTweaker bietet Unterstützung für JustEnoughItems (JEI). Sie können Elemente oder Flüssigkeiten in JEI hinzufügen oder verbergen oder eine Beschreibungsseite für diese hinzufügen.
 
-## Remove
+## Entfernen
 
-You can either just remove the item from JEI or remove it and all of it's crafting table recipes.
+Du kannst den Gegenstand entweder einfach aus JEI entfernen oder ihn und alle seine Rezepte aus dem Handwerkstisch entfernen.
 
 ```zenscript
 //hide(IItemStack item);
@@ -12,7 +12,7 @@ mods.jei.JEI.hide(<minecraft:diamond>);
 
 //hide(ILiquidStack item);
 mods.jei.JEI.hide(<liquid:water>);
-mods.jei.JEI.hide(<fluid:lava>);
+mods.jei.JEI. ide(<fluid:lava>);
 
 
 //removeAndHide(IIngredient output, @optional boolean NBT-Match)
@@ -20,32 +20,32 @@ mods.jei.JEI.removeAndHide(<minecraft:iron_leggings>);
 mods.jei.JEI.removeAndHide(<ore:planks>, false);
 ```
 
-## Hide Categories
+## Kategorien ausblenden
 
-You can use this to hide entire JEI Categories (e.g. crafting recipes, furnace recipes, machine X recipes, ...).  
-It accepts the category as string, you can get all registered categories by running `/ct jeiCategories` ingame.
+Hiermit kannst du ganze JEI-Kategorien verbergen (z.B. Herstellungsrezepte, Ofenrezepte, Maschinenrezepte, ...).  
+Es akzeptiert die Kategorie als Zeichenkette. Sie können alle registrierten Kategorien durch das Ausführen von `/ct jeiCategories` eintragen.
 
 ```zenscript
 //hideCategory(category)
 mods.jei.JEI.hideCategory("minecraft.smelting");
 ```
 
-## Add Item
+## Neuer Eintrag
 
-You can also add an [IItemStack](/Vanilla/Items/IItemStack/) to JEI to add Items that weren't added or to add an item with NBT-Tag to JEI
+Du kannst auch einen [IItemStack](/Vanilla/Items/IItemStack/) zu JEI hinzufügen, um Elemente hinzuzufügen, die nicht hinzugefügt wurden oder um ein Element mit NBT-Tag zu JEI hinzuzufügen
 
 ```zenscript
 //addItem(item);
-mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["What once was stone", "Is stone no more"]}}));
+mods.jei.JEI.addItem(<minecraft:stone>.withTag({display:{Name: "Pickle",Lore:["Was einmal war Stein", "Ist Stein nicht mehr"]}}));
 ```
 
-## Add Description
+## Beschreibung hinzufügen
 
-A JEI Description is an extra page shown when looking up an ingredient's recipe/usages in JEI which contains information on that ingredient.  
-You can add a JEI Description to an [IItemStack](/Vanilla/Items/IItemStack/), an [IItemStack](/Vanilla/Items/IItemStack/)[], an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).
+Eine JEI Beschreibung ist eine zusätzliche Seite, die bei der Suche nach Rezept/Verwendung einer Zutat in JEI angezeigt wird, die Informationen über diese Zutaten enthält.  
+Sie können eine JEI-Beschreibung zu einem [IItemStack](/Vanilla/Items/IItemStack/)hinzufügen, ein [IItemStack](/Vanilla/Items/IItemStack/)[], ein [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) oder ein [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).
 
-If your strings are too long to be written to one line (or page) it will automatically create line/page breaks.  
-Each string parameter will have at least one line and wrap around the end of the window if too long.
+Wenn Ihre Zeichenketten zu lang sind, um in eine Zeile (oder Seite) geschrieben zu werden, wird dies automatisch Zeilenumbrüche oder Seitenumbrüche erzeugen.  
+Jeder String-Parameter wird mindestens eine Zeile haben und am Ende des Fensters umwickeln, wenn zu lang.
 
 ```zenscript
 //addDescription(IItemStack item, string... desc);
@@ -53,13 +53,13 @@ mods.jei.JEI.addDescription(<minecraft:iron_ingot>,"TEST");
 
 
 //addDescription(IItemStack[] item, string... desc);
-mods.jei.JEI.addDescription([<minecraft:music_disc>, <minecraft:music_disc>],["Never","Gonna","Give","You","Up","Never","Gonna","Let","You","Down"]);
+mods.jei.JEI.addDescription([<minecraft:music_disc>, <minecraft:music_disc>],["Niemals ","Gonna","Give","Up","Nie","Gonna","Let","You","Down"]);
 
 //addDescription(IOreDictEntry dict, string... desc);
-mods.jei.JEI.addDescription(<ore:ingotIron>, "You can use these to create things", "", "things like Armor","","","Yes...","That as well...");
+mods.jei.JEI.addDescription(<ore:ingotIron>, "Sie können diese verwenden, um Dinge zu erstellen", "", "things like Armor","","","Yes...","That as well ...");
 
-//addDescription(ILiquidStack stack, string... desc);
+//addDescription(ILiquidStack stack, string... absteigend);
 mods.jei.JEI.addDescription(<liquid:lava>, ["LAVA"]);
 ```
 
-The `desc` parameter is a varArg, which means you can either give one string[] containing all description strings or many single strings, whatever you prefer. Just don't mix them!
+Der `desc` Parameter ist ein varArg, was bedeutet, dass Sie entweder einen String [] geben können, der alle Beschreibungszeichenketten oder viele einzelne Zeichenketten enthält, was auch immer Sie bevorzugen. Mischen Sie sie einfach nicht!
