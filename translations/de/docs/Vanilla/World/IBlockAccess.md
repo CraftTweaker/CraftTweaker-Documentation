@@ -7,7 +7,7 @@ BlockAccess objects are a group of blocks accessible via coordinates. They mainl
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IBlockAccess`
 
-## ZenMethods
+## ZenMethoden
 
 ### Get or Set a blockState at a specific Position
 
