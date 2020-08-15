@@ -16,7 +16,7 @@ LootingLevel Events implement the following interfaces and are able to call all 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter      | ZenSetter      | Type                                            |
-| -------------- | -------------- | ----------------------------------------------- |
-| `lootingLevel` | `lootingLevel` | int型                                            |
-| `damageSource` |                | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
+| ZenGetter      | ZenSetter | タイプ                                             |
+| -------------- | --------- | ----------------------------------------------- |
+| `略奪レベル`        | `略奪レベル`   | int型                                            |
+| `damageSource` |           | [IDamageSource](/Vanilla/Damage/IDamageSource/) |
