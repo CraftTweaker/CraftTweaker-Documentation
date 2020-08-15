@@ -1,17 +1,17 @@
-# Natural Altar
+# 自然のアルタ
 
 ## パッケージ
 ```zenscript
-mods.naturesaura.AltarAltar
+mods.naturesaura.Altarアルタ
 ```
 
 ## メソッド
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
-- **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) catalyst** The catalyst block that is placed on one of the four corner blocks, can be null
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
+- **文字列名**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** 祭壇の入力。
+- **[IItemStack](/Vanilla/Items/IItemStack) 出力** 祭壇の出力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient) 触媒** 4つのコーナーブロックのいずれかに配置される触媒ブロックは、null にすることができます
+- **int aura** レシピの完成に必要なオーラの量
+- **int time** プロセスに要するティック数
 
 ## 加算
 
