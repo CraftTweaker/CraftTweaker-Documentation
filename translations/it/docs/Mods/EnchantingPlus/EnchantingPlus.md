@@ -1,19 +1,19 @@
-# Enchanting Plus
+# Incantesimi Plus
 
-The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) allows players to have more control over the enchanting experience. CraftTweaker can be used to apply certain restrictions to this mod.
+L' [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) permette ai giocatori di avere più controllo sull'esperienza incantevole. CraftTweaker può essere utilizzato per applicare alcune restrizioni a questo mod.
 
-# Blacklisting Items
+# Oggetti Blacklist
 
-Prevents a specific item from entering the advanced enchanting table.
+Impedisce a un oggetto specifico di entrare nella tabella incantevole avanzata.
 
 ```zenscript
 // mods.eplus.Eplus.blacklistItem(IItemStack item);
 mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
 
-# Blacklisting Enchantments
+# Incantesimi Della Blacklist
 
-Prevents a specific enchantment from being applied at the advanced enchanting table.
+Impedisce che un incantesimo specifico venga applicato al tavolo incantevole avanzato.
 
 ```zenscript
 // mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
