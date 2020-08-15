@@ -13,7 +13,7 @@ IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That m
 
 ## Methoden
 
-### ZenMethods
+### ZenMethoden
 
 #### Check if the mob is preventing a player's sleep
 
