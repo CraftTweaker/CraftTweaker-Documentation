@@ -1,59 +1,59 @@
-# Contenttweaker Material System
+# Indebolimento Dei Materiali
 
-Contenttweaker allows you not only to add single items to the game but whole materials! You can for example use these materials to automatically generate a new ore together with gears, ingots and the like!
+Contenttweaker consente non solo di aggiungere singoli oggetti al gioco ma interi materiali! Ad esempio, puoi usare questi materiali per generare automaticamente un nuovo minerale insieme a ingranaggi, lingotti e simili!
 
-There are 5 Terms that are important:
+Ci sono 5 Termini che sono importanti:
 
-- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you are going to add/use (e.g. Platinum) → What the items are made of
-- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
-- [Part](/Mods/ContentTweaker/Materials/Parts/Part/): The item's form (e.g. Gear, Rod, Ingot, etc)
-- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
+- [Materiale](/Mods/ContentTweaker/Materials/Materials/Material/): Il Materiale di cui hai intenzione di aggiungere/utilizzare (ad esempio Platinum) → Di che cosa sono fatti gli oggetti
+- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Fondamentalmente un gruppo (es. Blocco, Oggetto, Entità, ecc) → Il tipo di parti
+- [Parte](/Mods/ContentTweaker/Materials/Parts/Part/): La forma dell'oggetto (ad esempio Gear, Rod, Ingot, ecc)
+- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combinazione di parte e materiale (ad es. Barra di ferro, Platinum Gear, ecc) → Può essere usato per restituire l'oggetto come [IItemStack](/Vanilla/Items/IItemStack/) più tardi.
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Alcune configurazioni → Varies per tipo di parte, controllare la pagina wiki per ulteriori informazioni.
 
-## Example Script
+## Script Di Esempio
 
 ```zenscript
     #loader contenttweaker
-    //////////
-    // Calls
-    //////////
-    import mods.contenttweaker.MaterialSystem;
-    import mods.contenttweaker.Material;
+    ////////
+    // Chiamate
+    //////
+    import mods. ontenttweaker.MaterialSystem;
+    import mods. ontenttweaker. ateriale;
 
-    //////////////
+    ////////////
     // Variables
-    //////////////
-    var copper = MaterialSystem.getMaterialBuilder().setName("Copper").setColor(15766817).build();
-    var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(10275286).build();
+    ////////////
+    var rame = MaterialSystem. etMaterialBuilder().setName("Copper").setColor(15766817).build();
+    var tin = MaterialSystem.getMaterialBuilder().setName("Tin").setColor(10275286). uild();
     var silver = MaterialSystem.getMaterialBuilder().setName("Silver").setColor(15592941).build();
-    var lead = MaterialSystem.getMaterialBuilder().setName("Lead").setColor(5658219).build();
-    var cobalt = MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(18347).build();
+    var lead = MaterialSystem. etMaterialBuilder().setName("Lead").setColor(5658219).build();
+    var cobalt = MaterialSystem.getMaterialBuilder().setName("Cobalt").setColor(18347). uild();
 
-    var metal_list = [copper, tin, silver, lead, cobalt] as Material[];
-    var part_names = ["dust", "gear", "plate", "nugget", "ingot", "beam", "bolt"] as string[];
-    var ore_types = ["ore", "poor_ore", "dense_ore"] as string[];
+    var metal_list = [rame, stagno, argento, piombo, cobalt] come Materiale[];
+    var part_names = ["polvere", "ingranaggio", "plate", "nugget", "ingot", "beam", "bolt"] come stringa[];
+    var ore_types = ["ore", "poor_ore", "dense_ore"] come stringa[];
 
-    ///////////////////////////
-    // Material registration
+    ///////////////////////////////
+    // Registrazione del materiale
     ///////////////////////////
 
     for i, metal in metal_list {
-        metal.registerParts(part_names);
+        metal. egisterParts(part_names);
 
-        var ores = metal.registerParts(ore_types);
-        for i, ore in ores {
-            var oreData = ore.getData();
-            oreData.addDataValue("variants", "minecraft:stone,minecraft:end_stone,minecraft:netherrack");
-            oreData.addDataValue("hardness", "3,3,3");
-            oreData.addDataValue("resistance", "15,15,15");
-            oreData.addDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
-            oreData.addDataValue("harvestLevel", "1,1,1");
+        var ores = metallo. egisterParts(ore_types);
+        per i, ore in ores {
+            var oreData = ore. etData();
+            oreData. ddDataValue("variants", "minecraft:stone,minecraft:end_stone,minecraft:netherrack");
+            oreData. ddDataValue("durezza", "3,3,3");
+            oreData. ddDataValue("resistance", "15,15");
+            oreData. ddDataValue("harvestTool", "pickaxe,pickaxe,pickaxe");
+            oreData. ddDataValue("harvestLevel", "1,1,1");
         }
 
-        var blockData = metal.registerPart("block").getData();
-        blockData.addDataValue("hardness", "5");
+        var blockData = metallo. egisterPart("block").getData();
+        blockData. ddDataValue("durezza", "5");
         blockData.addDataValue("resistance", "30");
-        blockData.addDataValue("harvestTool", "pickaxe");
+        blockData. ddDataValue("harvestTool", "pickaxe");
         blockData.addDataValue("harvestLevel", "1");
-    }
+}
 ```
