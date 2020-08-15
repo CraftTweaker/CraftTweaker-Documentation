@@ -1,19 +1,19 @@
-# Tiered Tooltips
+# Info-bulles à paliers
 
-This mod is a vanity addon to [ItemStages](https://minecraft.curseforge.com/projects/item-stages). Tiered Tooltips uses the new RenderTooltipEvent in Forge along with some clever logic to allow the end-user to change the tooltip colour of an item, based on which stage said item is restricted to. More info on the mod can be found [here](https://minecraft.curseforge.com/projects/tiered-tooltips).
+Ce mod est un addon de vanité à [ItemStages](https://minecraft.curseforge.com/projects/item-stages). Les info-bulles à niveau utilisent le nouveau RenderTooltipEvent dans Forge avec une logique intelligente pour permettre à l'utilisateur final de changer la couleur de l'infobulle d'un objet, sur la base de quelle étape ce point est restreint. Plus d'informations sur le mod peuvent être trouvées [ici](https://minecraft.curseforge.com/projects/tiered-tooltips).
 
-### 1.0.4 and later
+### 1.0.4 et plus tard
 
 ```zenscript
-//mods.tieredtooltips.colorStage(String stageName, String background, String borderStart, String borderEnd);
-mods.tieredtooltips.colorStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
-mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values
+//mods.tieredtooltips.colorStage(String stageName, background ground, String borderStart, String borderEnd);
+mods.tieredtooltips. olorStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
+mods.tieredtooltips.colorStage("two", "7fbf8200", "7fc43700", "32752202"); // Valeurs ARGB Hex
 ```
 
-### 1.0.2 and earlier
+### 1.0.2 et antérieur
 
 ```zenscript
-//mods.TieredTooltips.colourStage(String stageName, String background, String borderStart, String borderEnd);
-mods.TieredTooltips.colourStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
-mods.TieredTooltips.colourStage("two", "7fbf8200", "7fc43700", "32752202"); // ARGB Hex Values
+//mods.TieredTooltips.colourStage(String stageName, background ground, String borderStart, String borderEnd);
+mods.TieredTooltips. olourStage("one", "2969d1", "cccccc", "000000"); // RGB Hex Values
+mods.TieredTooltips.colourStage("two", "7fbf8200", "7fc43700", "32752202"); // Valeurs ARGB Hex
 ```
