@@ -1,11 +1,11 @@
 # IMaterial
 
-An IMaterial object represents the material a block is made of.
+Ein IMaterial-Objekt repräsentiert das Material, aus dem ein Block besteht.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.block.IMaterial;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`import craftweaker.block.IMaterial;`
 
 ## ZenGetters/ZenMethoden ohne Parameter
 
@@ -24,18 +24,18 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethoden mit Parametern
 
-### Check if two IMaterials match
+### Überprüfen Sie, ob zwei IMaterials übereinstimmen
 
-Uses an IMaterial.  
-Returns a bool.
+Verwendet ein IMaterial.  
+Gibt ein Bool.
 
 ```zenscript
-materialObj.matches(IMaterial other);
+materialObj.matches(IMaterial ander);
 ```
 
-## Getting Vanilla Minecraft Materials
+## Vanilla Minecraft Materialien erhalten
 
-You can use these methods to get the vanilla minecraft materials
+Du kannst diese Methoden verwenden, um die Vanilla Minecraft Materialien zu erhalten
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
