@@ -9,7 +9,7 @@ You can call the Thermoelectric package using `mods.immersiveengineering.Thermoe
 | Benötigt | Type            | Datentyp                                            |
 | -------- | --------------- | --------------------------------------------------- |
 | Benötigt | Target Block    | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Benötigt | Temperature (K) | Integer                                             |
+| Benötigt | Temperature (K) | Ganzzahl                                            |
 
 ### Beispiel
 ```zenscript
@@ -22,9 +22,9 @@ mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidia
 
 ## Remove Temperature Source
 
-| Required | Type         | Datentyp                                            |
+| Benötigt | Type         | Datentyp                                            |
 | -------- | ------------ | --------------------------------------------------- |
-| Required | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| Benötigt | Target Block | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
 
 ### Beispiel
 ```zenscript
