@@ -6,17 +6,17 @@
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Elencando le chiavi, la rimozione delle ricette dalla chiave, la cancellazione
 
 ```zenscript
 fct().logKeys()
-fct().removeRecipe('liquid:fluid_tf-molten_tesla') // check <logKeys> output for valid keys
+fct().removeRecipe('liquid:fluid_tf-molten_tesla') // controlla <logKeys> output per chiavi valide
 fct().clear()
 ```
 
-### Adding Recipe
+### Aggiunta Ricetta
 
-##### Signature
+##### Firma
 
 ```zenscript
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
@@ -30,4 +30,4 @@ fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 
 
 ### Note
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Tutte queste azioni verranno memorizzate nella cache e eseguite dopo che il registro di default per questa macchina ha finito di registrare tutte le ricette (comprese quelle dei json personalizzati).
