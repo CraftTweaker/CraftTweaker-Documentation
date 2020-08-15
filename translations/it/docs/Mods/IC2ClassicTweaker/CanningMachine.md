@@ -1,6 +1,6 @@
 # Canning Machine
 
-## Package
+## Pacchetto
 
 ```zenscript
 import mods.ic2.CanningMachine;
@@ -14,7 +14,7 @@ import mods.ic2.CanningMachine;
 * 5: Notch Apple
 * 6: Corus Fruit
 
-## Methods
+## Metodi
 
 ### Register Items For Effect (int id, IItemstack... inputs)
 
