@@ -19,13 +19,13 @@ PlayerPickupXp Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                               |
+| ZenGetter  | Type de retour                            |
 | ---------- | ----------------------------------------- |
 | `canceled` | boolean                                   |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
 | `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`       | float                                     |
+| `xp`       | flottant                                  |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled.
