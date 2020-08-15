@@ -26,7 +26,7 @@ myMCBlock.getDefaultState();
 ```
 
 
-## Properties
+## Eigenschaften
 
 | Name           | Type   | Has Getter | Has Setter |
 | -------------- | ------ | ---------- | ---------- |
