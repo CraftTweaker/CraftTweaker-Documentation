@@ -1,10 +1,10 @@
 # Semi-Fluid Generator
 
-## Package
+## パッケージ
 
 `import mods.ic2.SemiFluidGenerator;`
 
-## Methods
+## メソッド
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
 - **double powerOutput** The power output, measured in EU/tick
