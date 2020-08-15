@@ -37,7 +37,7 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 
 Zenmethods are for doing things with other things, in this case with a player.
 
-| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Example                                     |
+| ZenMethod                | Parameter Type(s)                        | 역할                                                                  | 예제                                          |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
 | removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
 | update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
