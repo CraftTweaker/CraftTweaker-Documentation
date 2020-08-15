@@ -1,34 +1,34 @@
 # Factorizer
 
-The Factorizer Manager allows you to add recipes to the factorizer.
+Il Factorizer Manager consente di aggiungere ricette al factorizer.
 
-## Import the package
+## Importa il pacchetto
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Per abbreviare le chiamate di metodo è possibile [importare](/AdvancedFunctions/Import/) il pacchetto in questo modo:
 
 ```zenscript
 import mods.thermalexpansion.Factorizer;
 ```
 
-## Add Recipes
+## Aggiungi Ricette
 
-You can add oneway split/combine recipes or two-way bindings.
+È possibile aggiungere oneway split/combinare ricette o rilegature bidirezionali.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.addRecipeSplit(IItemStack in, IItemStack out);
 mods.thermalexpansion.Factorizer.addRecipeSplit(<minecraft:dirt>, <minecraft:grass> * 5);
 
 //mods.thermalexpansion.Factorizer.addRecipeCombine(IItemStack in, IItemStack out);
-mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
+mods. hermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecraft:dirt>);
 
 //mods.thermalexpansion.Factorizer.addRecipeBoth(IItemStack combined, IItemStack split);
 mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
 ```
 
-## Remove Recipes
+## Rimuovi Ricette
 
-You can of course also remove recipes.  
-If you want to remove a two-way binding you'll need two calls, though.
+Naturalmente puoi anche rimuovere le ricette.  
+Se vuoi rimuovere un'associazione bidirezionale avrai bisogno di due chiamate, però.
 
 ```zenscript
 //mods.thermalexpansion.Factorizer.removeRecipeSplit(IItemStack in);
