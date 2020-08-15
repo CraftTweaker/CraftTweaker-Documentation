@@ -1,10 +1,10 @@
-# IExplosionEvent
+# Wydarzenie IExplosionEvent
 
-This interface is extended by all explosion events. That means you can use the getters below to access the position details.
+Ten interfejs jest rozszerzony przez wszystkie zdarzenia eksplozji. Oznacza to, że możesz użyć poniższych getterów, aby uzyskać dostęp do szczegółów pozycji.
 
 ## Importowanie klasy
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IExplosionEvent;`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuje crafttweaker.event.IExplosionEvent;`
 
 ## ZenGetters
 
