@@ -2,7 +2,7 @@
 
 The *combustion* package is used for adding or removing recipes to/from the Combustion process.
 
-## Calling
+## Anruf
 
 You can call the *combustion* package using `mods.skyresources.combustion`
 
