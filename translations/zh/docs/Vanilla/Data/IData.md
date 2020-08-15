@@ -1,75 +1,75 @@
 # IData
 
-The IData interface is a generic Interface for handling Data like NBT.  
-You can cast about all primitives (short, double, string, int, ...) as well as certain arrays to IData.  
-Remember that while they offer similar features, IData and their counterparts are NOT the same, which is why they will be referred to as DataTypes (e.g. DataBool).
+IData接口是处理NBT等数据的通用接口。  
+您可以投射所有原始文件 (短，双倍，字符串，...) 以及某些数组到 IData。  
+记住, 当他们提供类似的功能时, IData和它们的对应机构并不一样，这就是为什么它们会被称为DataTypes (e)。 . DataBool。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.data.IData;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftmilever.data;`
 
-## Overview
+## 概览
 
-| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
+| 二进制运算符                            | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
 | --------------------------------- | --- | --- | --- | --- | --- | ------- | --- | --- | ---- | ---- | -------------------------- |
 | DataBool                          | ✘   | ✘   | ✘   | ✘   | ✘   | ✔       | ✔   | ✔   | ✔    | ✔    | ✘                          |
 | DataByte                          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataByte[]                        | ✘   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
-| DataDouble                        | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
+| 双人数据                              | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 | DataFloat                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
-| DataInt                           | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
-| DataInt[]                         | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
+| 数据int                             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
+| 数据Int[]                           | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
 | DataList                          | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
-| DataLong                          | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
+| 数据Long                            | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | [DataMap](/Vanilla/Data/DataMap/) | ✔   | ✔   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✘                          |
 | DataShort                         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔       | ✔   | ✔   | ✔    | ✔    | ✔                          |
 | DataString                        | ✔   | ✘   | ✘   | ✘   | ✘   | ✘       | ✘   | ✘   | ✔    | ✔    | ✔                          |
 
-| Unary Oparators                   | `-` negate | `!` not |
-| --------------------------------- | ---------- | ------- |
-| DataBool                          | ✘          | ✔       |
-| DataByte                          | ✔          | ✔       |
-| DataByte[]                        | ✘          | ✘       |
-| DataDouble                        | ✔          | ✘       |
-| DataFloat                         | ✔          | ✘       |
-| DataInt                           | ✔          | ✔       |
-| DataInt[]                         | ✘          | ✘       |
-| DataList                          | ✘          | ✘       |
-| DataLong                          | ✔          | ✔       |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘          | ✘       |
-| DataShort                         | ✔          | ✔       |
-| DataString                        | ✘          | ✘       |
+| 无声的 Oparators                     | `-` 否定的 | `！` 不是 |
+| --------------------------------- | ------- | ------ |
+| DataBool                          | ✘       | ✔      |
+| DataByte                          | ✔       | ✔      |
+| DataByte[]                        | ✘       | ✘      |
+| 双人数据                              | ✔       | ✘      |
+| DataFloat                         | ✔       | ✘      |
+| 数据int                             | ✔       | ✔      |
+| 数据Int[]                           | ✘       | ✘      |
+| DataList                          | ✘       | ✘      |
+| 数据Long                            | ✔       | ✔      |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘       | ✘      |
+| DataShort                         | ✔       | ✔      |
+| DataString                        | ✘       | ✘      |
 
-| Index and Members                 | `[i]` | `[i]=v` | `.member` | `.member=v` | `.length`   | `.immutable` | `.update(v)` |
-| --------------------------------- | ----- | ------- | --------- | ----------- | ----------- | ------------ | ------------ |
-| DataBool                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataByte                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataByte[]                        | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataDouble                        | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataFloat                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataInt                           | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataInt[]                         | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataList                          | ✔     | ✔       | ✘         | ✘           | ✔           | ✔            | ✔            |
-| DataLong                          | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔           | ✔           | ✔            | ✔            |
-| DataShort                         | ✘     | ✘       | ✘         | ✘           | returns `0` | ✔            | ✔            |
-| DataString                        | ✔     | ✘       | ✘         | ✘           | ✔           | ✔            | ✔            |
+| 索引和成员                             | `[i]` | `[i]=v` | `.member` | `为 %1 的成员` | `长度`   | `.不可变的` | `.更新(五)` |
+| --------------------------------- | ----- | ------- | --------- | ---------- | ------ | ------- | -------- |
+| DataBool                          | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| DataByte                          | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| DataByte[]                        | ✔     | ✔       | ✘         | ✘          | ✔      | ✔       | ✔        |
+| 双人数据                              | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| DataFloat                         | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| 数据int                             | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| 数据Int[]                           | ✔     | ✔       | ✘         | ✘          | ✔      | ✔       | ✔        |
+| DataList                          | ✔     | ✔       | ✘         | ✘          | ✔      | ✔       | ✔        |
+| 数据Long                            | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘     | ✘       | ✔         | ✔          | ✔      | ✔       | ✔        |
+| DataShort                         | ✘     | ✘       | ✘         | ✘          | 返回 `0` | ✔       | ✔        |
+| DataString                        | ✔     | ✘       | ✘         | ✘          | ✔      | ✔       | ✔        |
 
-You can cast IData to a specific type using `data.asType()` → `data.asInt();`  
-You can also use the IData Interface to convert types: `("1" as IData).asInt();`
+您可以使用 `data.asType()` -> `数据投射到指定类型。 sInt();`  
+您也可以使用 IData 接口来转换类型: `("1" as IData).asInt();`
 
-| Casts from ↓ to →                 | bool | byte | byte[] | double | float | int | int[]  | list   | long | [Map](/AdvancedFunctions/Associative_Arrays/) | short | string |
-| --------------------------------- | ---- | ---- | ------ | ------ | ----- | --- | ------ | ------ | ---- | --------------------------------------------- | ----- | ------ |
-| DataBool                          | `≡`  | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataByte                          | ✘    | `≡`  | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataByte[]                        | ✘    | ✘    | `≡`    | ✘      | ✘     | ✘   | ✔      | ✔      | ✘    | `null`                                        | ✘     | ✔      |
-| DataDouble                        | ✘    | ✔    | `null` | `≡`    | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataFloat                         | ✘    | ✔    | `null` | ✔      | `≡`   | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataInt                           | ✘    | ✔    | `null` | ✔      | ✔     | `≡` | `null` | `null` | ✔    | `null`                                        | ✔     | ✔      |
-| DataInt[]                         | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | `≡`    | ✔      | ✘    | `null`                                        | ✘     | ✔      |
-| DataList                          | ✘    | ✘    | ✔      | ✘      | ✘     | ✘   | ✔      | `≡`    | ✘    | `null`                                        | ✘     | ✔      |
-| DataLong                          | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | `≡`  | `null`                                        | ✔     | ✔      |
-| [DataMap](/Vanilla/Data/DataMap/) | ✘    | ✘    | `null` | ✘      | ✘     | ✘   | `null` | `null` | ✘    | `≡`                                           | ✘     | ✔      |
-| DataShort                         | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | `≡`   | ✔      |
-| DataString                        | ✘    | ✔    | `null` | ✔      | ✔     | ✔   | `null` | `null` | ✔    | `null`                                        | ✔     | `≡`    |
+| 从 unnamed@@0 到 →                  | 布尔值 | 字节  | 字节[] | 双精度 | 浮点数 | 整数  | int[……] | 邮件列表 | 长   | [地图](/AdvancedFunctions/Associative_Arrays/) | 短的  | 字符串 |
+| --------------------------------- | --- | --- | ---- | --- | --- | --- | ------- | ---- | --- | -------------------------------------------- | --- | --- |
+| DataBool                          | `≡` | ✔   | `空的` | ✔   | ✔   | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | ✔   |
+| DataByte                          | ✘   | `≡` | `空的` | ✔   | ✔   | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | ✔   |
+| DataByte[]                        | ✘   | ✘   | `≡`  | ✘   | ✘   | ✘   | ✔       | ✔    | ✘   | `空的`                                         | ✘   | ✔   |
+| 双人数据                              | ✘   | ✔   | `空的` | `≡` | ✔   | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | ✔   |
+| DataFloat                         | ✘   | ✔   | `空的` | ✔   | `≡` | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | ✔   |
+| 数据int                             | ✘   | ✔   | `空的` | ✔   | ✔   | `≡` | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | ✔   |
+| 数据Int[]                           | ✘   | ✘   | ✔    | ✘   | ✘   | ✘   | `≡`     | ✔    | ✘   | `空的`                                         | ✘   | ✔   |
+| DataList                          | ✘   | ✘   | ✔    | ✘   | ✘   | ✘   | ✔       | `≡`  | ✘   | `空的`                                         | ✘   | ✔   |
+| 数据Long                            | ✘   | ✔   | `空的` | ✔   | ✔   | ✔   | `空的`    | `空的` | `≡` | `空的`                                         | ✔   | ✔   |
+| [DataMap](/Vanilla/Data/DataMap/) | ✘   | ✘   | `空的` | ✘   | ✘   | ✘   | `空的`    | `空的` | ✘   | `≡`                                          | ✘   | ✔   |
+| DataShort                         | ✘   | ✔   | `空的` | ✔   | ✔   | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | `≡` | ✔   |
+| DataString                        | ✘   | ✔   | `空的` | ✔   | ✔   | ✔   | `空的`    | `空的` | ✔   | `空的`                                         | ✔   | `≡` |
