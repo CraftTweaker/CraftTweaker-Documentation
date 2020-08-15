@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Compound Producer
 
-### Importing
+### Importation en cours
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemCompoundProducerTweaker as icp;
@@ -22,7 +22,7 @@ icp().clear()
 addRecipe(inputStack: IItemStack, inputFluid: ILiquidStack, result: IItemStack)
 ```
 
-##### Example
+##### Exemple
 
 ```zenscript
 icp().addRecipe(<minecraft:cobblestone>, <liquid:water> * 125, <minecraft:mossy_cobblestone>);
