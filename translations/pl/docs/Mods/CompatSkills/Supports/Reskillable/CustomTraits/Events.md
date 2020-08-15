@@ -1,9 +1,9 @@
-# Events and Traits
+# Wydarzenia i cechy
 
-## Credits:
+## Kredyty:
 
-Credits goes out to Kindlich for writing most of the Event implementation!
+Kredyty wychodzą do Kindlich w celu napisania większości implementacji wydarzenia!
 
 ## PSA:
 
-All the Events listed under the Event Tab are partially documented-based of the information I had available to me at the time. If the events has been update to feature mods Setters/Getters/Methods, that information can probably be found under: [Under the IEventManager Page](/Vanilla/Events/IEventManager/)
+Wszystkie wydarzenia wymienione w zakładce Wydarzenia są częściowo udokumentowane w oparciu o informacje, którymi dysponowałem w tym czasie. Jeśli zdarzenia zostały zaktualizowane do funkcji Setters/Getters/Methods, informacje te można znaleźć pod adresem: [Na stronie IEventManager](/Vanilla/Events/IEventManager/)
