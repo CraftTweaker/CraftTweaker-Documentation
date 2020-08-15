@@ -10,28 +10,28 @@ crafttweaker.api.food.MCFood
 
 ## コンストラクタ
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+new crafttweaker.api.food.MCFood(int, saturation as float);
 ```
-| パラメータ   | タイプ    | 説明                      |
-| ------- | ------ | ----------------------- |
-| healing | int    | No description provided |
-| 彩度      | float型 | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 癒し    | int    | 説明が提供されていません |
+| 彩度    | float型 | 説明が提供されていません |
 
 
 
 ## メソッド
 ### addEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(effection) crafttweaker.api.potion.MCPotionEffectInstance, float型の確率);
 ```
 
-| パラメータ       | タイプ                                                                                           | 説明                      |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float型                                                                                        | No description provided |
+| パラメータ | タイプ                                                                                           | 説明           |
+| ----- | --------------------------------------------------------------------------------------------- | ------------ |
+| 効果    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 説明が提供されていません |
+| 確率:   | float型                                                                                        | 説明が提供されていません |
 
 
 ### clearEffects
@@ -42,90 +42,90 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| パラメータ  | タイプ                                                                                           | 説明                      |
-| ------ | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| パラメータ | タイプ                                                                                           | 説明           |
+| ----- | --------------------------------------------------------------------------------------------- | ------------ |
+| 効果    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 説明が提供されていません |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
+myMCFood.setCanEatWhenFull(canEatWhenFull を boolean として);
 ```
 
-| パラメータ          | タイプ      | 説明                      |
-| -------------- | -------- | ----------------------- |
-| canEatWhenFull | boolean型 | No description provided |
+| パラメータ          | タイプ      | 説明           |
+| -------------- | -------- | ------------ |
+| canEatWhenFull | boolean型 | 説明が提供されていません |
 
 
 ### setFastEating
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setFastEating(fastEating as boolean);
+myMCFood.setFastEating(fastEating)
 ```
 
-| パラメータ      | タイプ      | 説明                      |
-| ---------- | -------- | ----------------------- |
-| fastEating | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| <unk> | boolean型 | 説明が提供されていません |
 
 
 ### setHealing
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setHealing(healing as int);
 ```
 
-| パラメータ   | タイプ | 説明                      |
-| ------- | --- | ----------------------- |
-| healing | int | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| 癒し    | int | 説明が提供されていません |
 
 
 ### setMeat
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setMeat(meat as boolean);
 ```
 
-| パラメータ | タイプ      | 説明                      |
-| ----- | -------- | ----------------------- |
-| meat  | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 肉     | boolean型 | 説明が提供されていません |
 
 
-### setSaturation
+### saturation
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+戻り値 [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setSaturation(saturation as float);
 ```
 
-| パラメータ | タイプ    | 説明                      |
-| ----- | ------ | ----------------------- |
-| 彩度    | float型 | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 彩度    | float型 | 説明が提供されていません |
 
 
 
 ## プロパティ
 
-| 名称             | タイプ      | Has Getter | Has Setter |
-| -------------- | -------- | ---------- | ---------- |
-| canEatWhenFull | boolean型 | true       | false      |
-| healing        | int      | true       | false      |
-| isFastEating   | boolean型 | true       | false      |
-| meat           | boolean型 | true       | false      |
-| 彩度             | float型   | true       | false      |
+| 名称             | タイプ      | ゲッターあり | セッターあり |
+| -------------- | -------- | ------ | ------ |
+| canEatWhenFull | boolean型 | true   | false  |
+| 癒し             | int      | true   | false  |
+| isFastEating   | boolean型 | true   | false  |
+| 肉              | boolean型 | true   | false  |
+| 彩度             | float型   | true   | false  |
 
