@@ -14,7 +14,7 @@ This class is a functional interface. This means that you can use the lambda not
 ```zenscript
 (usualOut, inputs) => <item:minecraft:dirt>
 ```
-## Methods
+## Métodos
 ### process
 
 Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
@@ -23,7 +23,7 @@ Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Parámetro | Tipo                                                              | Descripción             |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 | inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
