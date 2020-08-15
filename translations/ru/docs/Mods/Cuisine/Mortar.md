@@ -1,6 +1,6 @@
 # Mortar
 
-## Addition
+## Сложение
 
 ```zenscript
 import mods.cuisine.Mortar;
@@ -11,7 +11,7 @@ Mortar.add(IItemStack[] inputs, IItemStack output, int step);
 Mortar.add([<item:minecraft:dirt>, <item:minecraft:cobblestone>], <item:minecraft:diamond>, 3);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 import mods.cuisine.Mortar;
