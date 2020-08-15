@@ -20,12 +20,12 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 
 The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetters           | Return Type                           |
+| ZenGetter            | ZenSetters           | Tipo de devolución                    |
 | -------------------- | -------------------- | ------------------------------------- |
 | `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
 | `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
 
-## ZenMethods
+## Métodos
 
 - `event.cancel()` sets the event as cancelled.
