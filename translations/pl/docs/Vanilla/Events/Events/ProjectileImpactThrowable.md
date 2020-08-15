@@ -1,22 +1,22 @@
-# ProjectileImpactThrowable
+# Konstrukcja pocisku
 
-This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+To wydarzenie jest uruchamiane za każdym razem, gdy wyrzucany pocisk wpływa na jednostkę, ale przed uszkodzeniem itp., jest obliczany. **anulowalne**, a jeśli anulowane, wpływ nie zostanie przetworzony.
 
 ## Importowanie klasy
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactThrowableEvent;`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuje crafttweaker.event.ProjectileImpactThrowableEvent;`
 
 ## Rozszerzenie IEntityEvent
-ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia pociskowo-rzutowe mają następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Wydarzenie ICząsteczek](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters i ZenSetters
 
 Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter  | ZenSetter | Typ                                                       |
-| ---------- | --------- | --------------------------------------------------------- |
-| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter    | ZenSetter | Typ                                                       |
+| ------------ | --------- | --------------------------------------------------------- |
+| `kula ognia` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `strzelanka` |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
