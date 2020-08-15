@@ -34,7 +34,7 @@ mods.exnihilocreatio.Ore.addRecipe("Stone",
     "Stone");
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();
