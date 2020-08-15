@@ -8,18 +8,18 @@ The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making
 ## Creating a New Instance
 Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 
-## Properties
+## Propiedades
 A `Tag` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name | Type                                     | Description                                           |
-| ------------- | ---------------------------------------- | ----------------------------------------------------- |
-| `name`        | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
-| `type`        | [`TagType`](/Mods/Boson/Tags/TagType/)   | The type of this tag                                  |
-| `elements`    | `[T]` (where `T` is a generic type)      | A read-only list of the elements currently in the tag |
+| Nombre de Propiedad | Tipo                                     | Descripción                                           |
+| ------------------- | ---------------------------------------- | ----------------------------------------------------- |
+| `nombre`            | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
+| `tipo`              | [`TagType`](/Mods/Boson/Tags/TagType/)   | The type of this tag                                  |
+| `elements`          | `[T]` (where `T` is a generic type)      | A read-only list of the elements currently in the tag |
 
-## Methods
+## Métodos
 
-### Addition
+### Adicional
 Adding elements to a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
 
 ```zenscript
@@ -156,9 +156,9 @@ Tags also provide some overloading of normal ZenScript operators, so that certai
 ### Unary operators
 Unary operators are operators that are applied to the tag itself and take no arguments.
 
-| Operator | Syntax | Method equivalent | Notes |
-| -------- | ------ | ----------------- | ----- |
-| `-`      | `-TAG` | `clear`           | \-   |
+| Operador | Síntesis | Method equivalent | Notas |
+| -------- | -------- | ----------------- | ----- |
+| `-`      | `-TAG`   | `clear`           | \-   |
 
 ### Binary operators
 Binary operators are infix operators that are applied between the tag and one argument. The operators are listed here in order of priority (higher means that it will be applied first).
@@ -178,23 +178,23 @@ val tag = <tag-items:forge:ingots>;
 tag = tag & [<minecraft:iron_ingot>] as IItemStack[];
 ```
 
-| Operator | Argument Type                            | Syntax           | Method Equivalent | Notes                                                                 |
+| Operador | Argument Type                            | Síntesis         | Method Equivalent | Notas                                                                 |
 | -------- | ---------------------------------------- | ---------------- | ----------------- | --------------------------------------------------------------------- |
 | `+`      | `Tag`                                    | `TAG + ARG1`     | `addFrom`         | \-                                                                   |
 | `+`      | `any[]`                                  | `TAG + ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
 | `+`      | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG + ARG1`     | `add`             | The overload only accepts one argument                                |
-| `+`      | `any`                                    | `TAG + ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
+| `+`      | `cualquiera`                             | `TAG + ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `~`      | `Tag`                                    | `TAG ~ ARG1`     | `addFrom`         | \-                                                                   |
 | `~`      | `any[]`                                  | `TAG ~ ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
 | `~`      | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG ~ ARG1`     | `add`             | The overload only accepts one argument                                |
-| `~`      | `any`                                    | `TAG ~ ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
+| `~`      | `cualquiera`                             | `TAG ~ ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `&`  | `Tag`                                    | `TAG & ARG1` | `addFrom`         | \-                                                                   |
 | `&`  | `any[]`                                  | `TAG & ARG1` | `addAll`          | The array type must be the same as the tag's contents                 |
 | `&`  | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG & ARG1` | `add`             | The overload only accepts one argument                                |
-| `&`  | `any`                                    | `TAG & ARG1` | `addAll`          | Shorthand for a single element: same rules as the array version apply |
+| `&`  | `cualquiera`                             | `TAG & ARG1` | `addAll`          | Shorthand for a single element: same rules as the array version apply |
 | `-`      | `Tag`                                    | `TAG - ARG1`     | `removeFrom`      | \-                                                                   |
 | `-`      | `any[]`                                  | `TAG - ARG1`     | `removeAll`       | The array type must be the same as the tag's contents                 |
 | `-`      | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG - ARG1`     | `remove`          | The overload only accepts one argument                                |
-| `-`      | `any`                                    | `TAG - ARG1`     | `removeAll`       | Shorthand for a single element: same rules as the array version apply |
+| `-`      | `cualquiera`                             | `TAG - ARG1`     | `removeAll`       | Shorthand for a single element: same rules as the array version apply |
 | `==`     | `Tag`                                    | `TAG == ARG1`    | \-               | Acts as an equality check, matching contents; does not mutate `TAG`   |
 | `()`     | \-                                      | `TAG()`          | `elements`        | \-                                                                   |
