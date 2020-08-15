@@ -1,6 +1,6 @@
 # Atomizer
 
-# Package
+# Paket
 ```zenscript
 mods.alchemistry.Atomizer
 ```
@@ -17,7 +17,7 @@ mods.alchemistry.Atomizer.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Atomizer.addRecipe(<minecraft:redstone>,<liquid:beryllium>*500);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 mods.alchemistry.Atomizer.removeRecipe(ILiquidStack input); //Will work regardless of quantity
 
