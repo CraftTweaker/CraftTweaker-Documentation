@@ -2,16 +2,16 @@
 
 The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 mods.contenttweaker.block.BlockBuilder
 ```
 
 ## Реализованные интерфейсы
-BlockBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilder implements the following interfaces. Следовательно, методы из них доступны в этом классе.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Конструкторы
@@ -21,9 +21,9 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Параметр | Тип                                                                                  | Описание                          | IsOptional | Default Value                |
+| Параметр | Тип                                                                                  | Описание                          | IsOptional | Значение по умолчанию        |
 | -------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| material | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
+| материал | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
 
 
 
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Параметр     | Тип | Описание                   |
-| ------------ | --- | -------------------------- |
-| harvestLevel | int | The harvest level requried |
+| Параметр             | Тип | Описание                   |
+| -------------------- | --- | -------------------------- |
+| Уровень сбора урожая | int | The harvest level requried |
 
 
 ### withHarvestTool
@@ -109,9 +109,9 @@ myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolTyp
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| Parameter   | Type                                                                            | Description   |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| Параметр       | Тип                                                                             | Описание      |
+| -------------- | ------------------------------------------------------------------------------- | ------------- |
+| собрать урожай | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
 
 ### withItemGroup
@@ -127,9 +127,9 @@ myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| Parameter | Type                                                                              | Description      |
-| --------- | --------------------------------------------------------------------------------- | ---------------- |
-| group     | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| Параметр | Тип                                                                               | Описание         |
+| -------- | --------------------------------------------------------------------------------- | ---------------- |
+| group    | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
 
 ### withLightValue
@@ -145,7 +145,7 @@ myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| Parameter    | Тип | Description            |
+| Параметр     | Тип | Описание               |
 | ------------ | --- | ---------------------- |
 | lightValueIn | int | The light level to set |
 
@@ -163,9 +163,9 @@ myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| Parameter | Type                                                          | Description                                  |
-| --------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
+| Параметр | Тип                                                           | Описание                                     |
+| -------- | ------------------------------------------------------------- | -------------------------------------------- |
+| blockIn  | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
 
 ### withMaxStackSize
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parameter | Type | Description      |
-| --------- | ---- | ---------------- |
-| size      | int  | The size to set. |
+| Параметр | Тип | Описание         |
+| -------- | --- | ---------------- |
+| size     | int | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| Параметр | Тип    | Описание   |
+| -------- | ------ | ---------- |
+| редкость | String | The rarity |
 
 
 ### withSlipperiness
@@ -217,7 +217,7 @@ myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parameter      | Type  | Description      |
+| Параметр       | Тип   | Описание         |
 | -------------- | ----- | ---------------- |
 | slipperinessIn | float | The value to set |
 
