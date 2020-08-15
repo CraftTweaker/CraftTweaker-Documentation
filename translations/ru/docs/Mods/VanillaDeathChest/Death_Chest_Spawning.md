@@ -1,35 +1,35 @@
-# Death Chest Spawning
+# Появление Сундука смерти
 
 ## Импорт пакета
 
-`import mods.vanilladeathchest.DeathChestSpawning;`
+`импорт mods.vanilladeathchest.DeathChestSpawning;`
 
-## Chat message
+## Сообщение в чате
 
 ```zenscript
 //DeathChestSpawning.setChatMessage(string stage, string message);
-DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, %s]!");
+DeathChestSpawning.setChatMessage("example_stage", "Появится сундук [%s, %s, %s]!");
 ```
 
-The string takes three arguments: the X, Y and Z coordinates of the death chest.
+Строка принимает три аргумента: координаты Х, Y и Z сундука смерти.
 
-## Container display name
+## Отображаемое имя контейнера
 
 ```zenscript
 //DeathChestSpawning.setContainerDisplayName(string stage, string name);
 DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
 ```
 
-## Registry name regex
+## regex имени реестра
 
 ```zenscript
 //DeathChestSpawning.setRegistryNameRegex(string stage, string regex);
 DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*");
 ```
 
-## Use container in inventory
+## Использовать контейнер в инвентаре
 
 ```zenscript
-//DeathChestSpawning.setUseContainerInInventory(string stage, bool flag);
+//Смертоносный сундук.setUseContainerInInventory(строковый этап, бул);
 DeathChestSpawning.setUseContainerInInventory("example_stage", false);
 ```
