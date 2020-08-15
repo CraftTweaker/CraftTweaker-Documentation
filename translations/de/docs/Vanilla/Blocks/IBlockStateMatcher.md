@@ -42,7 +42,7 @@ Returns an IBlockStateMatcher to match the specified blockstate(s).
 - If only one blockstate is supplied in `blockStates`, the resulting IBlockStateMatcher will match *any* blockstate of the provided IBlockState's underlying block with any property values accepted as matching. The `withMatchedValuesForProperty` method can be used to add more specific requirements for the properties. 
 - If multiple `blockStates` are supplied, the resulting IBlockStateMatcher is the same as using the OR (`|`) operator with each of the IBlockStates provided.
 
-## ZenMethods
+## ZenMethoden
 
 ### matches
 
@@ -63,7 +63,7 @@ You can also use `A has B` that represents `A.matches(B)`.
     Map<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+Parameter:
 
 - String name → The name of the property
 - String... values → One or more values that the property of a matching IBlockState may have.
