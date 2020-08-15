@@ -43,9 +43,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Parameter    | Type  | Beschreibung                 |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| Parameter     | Type  | Beschreibung                 |
+| ------------- | ----- | ---------------------------- |
+| attackSchaden | float | The additional attack damage |
 
 
 ### withAttackSpeed
@@ -61,7 +61,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Parameter   | Type   | Description      |
+| Parameter   | Type   | Beschreibung     |
 | ----------- | ------ | ---------------- |
 | attackSpeed | double | The attack speed |
 
@@ -116,11 +116,11 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parameter   | Type                                                                            | Beschreibung                                         | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| Parameter   | Type                                                                            | Beschreibung                                         | IsOptional | Standardwert |
+| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------ |
+| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`       |
+| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`       |
+| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`        |
 
 
 
