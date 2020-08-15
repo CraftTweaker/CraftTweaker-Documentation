@@ -1,4 +1,4 @@
-# Tags
+# Теги
 
 Tags are a powerful concept that has been present in Vanilla Minecraft since 1.13. It allows players and datapack makers to define a set of elements to be considered the same in a certain context, removing some of the hardcoding of blocks and items in code.
 
