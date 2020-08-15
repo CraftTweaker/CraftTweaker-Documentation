@@ -1,8 +1,8 @@
-# Block Bracket Handler
+# Klammerhandler blockieren
 
-The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
+Der Block-Klammerhandler gibt dir Zugriff auf die Blöcke im Spiel. Es ist nur möglich Blöcke im Spiel zu registrieren so dass das Hinzufügen oder Entfernen von Mods Probleme verursachen kann, wenn du die Blöcke des Mods in einem Block Klammer Handler referenzierst.
 
-Blocks are referenced in the Block Bracket handler this way:
+Blöcke werden auf diese Weise im Klammer-Handler referenziert:
 
 ```zenscript
 <block:modID:blockName>
@@ -10,5 +10,5 @@ Blocks are referenced in the Block Bracket handler this way:
 <block:minecraft:dirt>
 ```
 
-If the block is found, this will return an [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Object.  
-Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) for further information on what you can do with these.
+Wenn der Block gefunden wird, wird ein [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Objekt zurückgegeben.  
+Bitte lesen Sie den [entsprechenden Wiki-Eintrag](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) für weitere Informationen darüber, was Sie damit tun können.
