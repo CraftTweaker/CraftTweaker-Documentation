@@ -18,7 +18,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | Type                                          |
+| ZenGetter | タイプ                                           |
 | --------- | --------------------------------------------- |
-| item      | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| 項目        | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | player    | [IPlayer](/Vanilla/Players/IPlayer/)          |
