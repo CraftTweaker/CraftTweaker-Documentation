@@ -1,27 +1,27 @@
 # BlockBreakEvent
 
-The BlockBreak Event is fired whenever a block is being broken.  
-You can cancel the event to prevent the block from being broken.
+L'evento BlockBreak viene sparato ogni volta che un blocco viene rotto.  
+È possibile annullare l'evento per evitare che il blocco venga rotto.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockBreakEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. lockBreakEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-BlockBreak Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockBreak Events implementa le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter    | ZenSetter    | Tipo                                 |
 | ------------ | ------------ | ------------------------------------ |
-| `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `giocatore`  |              | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| `esperienza` | `esperienza` | int                                  |
