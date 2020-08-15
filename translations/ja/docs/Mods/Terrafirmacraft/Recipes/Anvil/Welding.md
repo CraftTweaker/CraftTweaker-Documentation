@@ -1,6 +1,6 @@
 # Anvil Welding
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Welding;Welding;
 ```
