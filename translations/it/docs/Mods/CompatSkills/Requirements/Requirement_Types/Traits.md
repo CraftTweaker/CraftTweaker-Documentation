@@ -1,12 +1,12 @@
-# Traits:
+# Tratti:
 
-Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
+I tratti sono una nuova aggiunta per Reskillable e lo rende così ora è possibile bloccare le cose dietro un Trait richiesto. I tratti sono simili alle Abilità nel modo in cui le abbiamo spostate in una Posizione Risorse invece di un nome per consentire un'estensione più robusta. La Sintassi del Trait è la seguente:
 
-    Example:
-    trait|ResourceLocation
+    Esempio:
+    trait<unk> ResourceLocation
     
-    Working Example:
-    trait|reskillable:battle_spirit
+    Esempio di lavoro:
+    trait<unk> reskillable:battle_spirit
     
 
-You can find the Traits's ResourceLocations under: [Skills & Traits](/Mods/CompatSkills/Requirements/Skills_Traits/)
+Puoi trovare le risorse dei Traits: [Abilità & Tratti](/Mods/CompatSkills/Requirements/Skills_Traits/)
