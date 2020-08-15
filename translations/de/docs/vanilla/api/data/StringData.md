@@ -20,7 +20,7 @@ new crafttweaker.api.data.StringData(internal as String);
 ```
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| internal  | String | No description provided |
+| intern    | String | No description provided |
 
 
 
@@ -74,7 +74,7 @@ new StringData("Hello").contains("Display");
 
 | Parameter | Type                                                   | Beschreibung                     |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -119,7 +119,7 @@ new StringData("Hello").getString();
 
 
 ## Operatoren
-### ADD
+### ZUD
 
 Concatenates the two string Datas and returns the result.
 
@@ -128,7 +128,7 @@ new StringData("Hello") + data as crafttweaker.api.data.StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-| Parameter | Type                                                             | Description              |
+| Parameter | Type                                                             | Beschreibung             |
 | --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| daten     | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
 
