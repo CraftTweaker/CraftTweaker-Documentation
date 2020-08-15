@@ -3,47 +3,47 @@
 ## Paquet
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## Ajout d'une recette
 
-`mods.atum.Quern.addRecipe(input, output, rotations);`
+`mods.atum.Quern.addRecipe(entrée, sortie, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `rotations` Tout nombre au-dessus de 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
+Ajoute une recette avec l'entrée & sortie spécifiée, qui prend les rotations spécifiées pour compléter la requête
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Removing a Recipe
+## Suppression d'une recette
 
-### Remove Recipes by Output
+### Supprimer les recettes par sortie
 
 `mods.atum.Quern.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Supprime toutes les recettes où le résultat de sortie est le [IItemStack](/vanilla/api/items/IItemStack) fourni.
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Remove Recipes by Output & Input
+### Supprimer les recettes par sortie & Entrée
 
-`mods.atum.Quern.removeRecipeByOutputInput(output, input);`
+`mods.atum.Quern.removeRecipeByOutputInput(sortie, entrée);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Supprime la recette spécifique, avec la sortie & entrée spécifiée
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Other removal methods
+### Autres méthodes de suppression
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
+Voir [Gestionnaires de recettes](/recipes/recipe_managers) pour d'autres façons de supprimer les recettes de Quern
