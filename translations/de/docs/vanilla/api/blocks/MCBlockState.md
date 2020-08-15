@@ -63,7 +63,7 @@ Returns boolean
 myMCBlockState.hasProperty(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
 | name      | String | No description provided |
 
@@ -79,22 +79,22 @@ myMCBlockState.withProperty(name as String, value as String);
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
 | name      | String | No description provided |
-| value     | String | No description provided |
+| wert      | String | No description provided |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name            | Type                                                          | Has Getter | Has Setter |
-| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
-| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
-| canProvidePower | boolean                                                       | true       | false      |
-| commandString   | String                                                        | true       | false      |
-| hasTileEntity   | boolean                                                       | true       | false      |
-| isSolid         | boolean                                                       | true       | false      |
-| isSticky        | boolean                                                       | true       | false      |
-| lightLevel      | int                                                           | true       | false      |
-| ticksRandomly   | boolean                                                       | true       | false      |
+| Name             | Type                                                          | Has Getter | Has Setter |
+| ---------------- | ------------------------------------------------------------- | ---------- | ---------- |
+| blockieren       | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
+| canProvidePower  | boolean                                                       | true       | false      |
+| Kommandozeile    | String                                                        | true       | false      |
+| hasTileEntity    | boolean                                                       | true       | false      |
+| isSolid          | boolean                                                       | true       | false      |
+| isSticky         | boolean                                                       | true       | false      |
+| leuchtende Stufe | int                                                           | true       | false      |
+| ticksRandomly    | boolean                                                       | true       | false      |
 
 ## Casters
 
