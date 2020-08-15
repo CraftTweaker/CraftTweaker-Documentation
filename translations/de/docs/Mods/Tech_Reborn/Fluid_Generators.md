@@ -1,18 +1,18 @@
-# Fluid Generators
-**Note: The Fluid Generators are Thermal, Gas, Plasma, Semi and Diesel**
-## Importing the Package
+# Flüssigkeitsgeneratoren
+**Hinweis: Die Fluid-Generatoren sind Thermal, Gas, Plasma, Semi und Diesel**
+## Paket wird importiert
 `mods.techreborn.fluidGen`
 
-## Adding Fuels
+## Füge Brennstoffe hinzu
 ```zenscript
 mods.techreborn.fluidGen.addThermalFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addGasFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addSemiFluid(ILiquidStack fluid, int energyPerMb);
-mods.techreborn.fluidGen.addDieselFluid(ILiquidStack fluid, int energyPerMb);
+mods.techreborn.fluidGen.addDieselFluid(ILiquidStack fluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addPlasmaFluid(ILiquidStack fluid, int energyPerMb);
 ```
 
-## Removing Fuel
+## Brennstoff entfernen
 ```zenscript
 mods.techreborn.fluidGen.removeThermalFluid(ILiquidStack fluid);
 mods.techreborn.fluidGen.removeGasFluid(ILiquidStack fluid);
