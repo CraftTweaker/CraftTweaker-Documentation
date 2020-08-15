@@ -1,22 +1,22 @@
-# Create Element
-Custom Element Creation for Alchemistry
+# Crea Elemento
+Creazione di elementi personalizzati per l'alchimia
 
 # Pacchetto
-`mods.alchemistry.Util.createElement`
-## Loader
-This needs to be loaded with `#loader alchemistry`
+`mods.alchimia.Util.createElement`
+## Caricatore
+Questo deve essere caricato con `#loader alchemistry`
 
 ## Metodi
 - **int atomicNumber** ID for new Element
-- **String Name** New Elements Name
-- **String Abbrebiation** New Elements Abbrebiation
+- **Nome stringa** Nome nuovi elementi
+- **Abbrebiation string** New Elements Abbrebiation
 - **int red** Element red shade, RGB
 - **int green** Element green shade, RGB
 - **int blue** Element blue shade, RGB
 
-## Creation
+## Creazione
 ```zenscript
-mods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
+mods.alchimia.Elemento di util.creement(int atomicNumber, nome della stringa, abbreviazione della stringa, int rosso, int verde, int blue);
 
 mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
@@ -24,7 +24,7 @@ mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 
 ## Note
 
-- Please use lowercase names
-- Pre-existing atomic numbers cannot be overwritten
-- The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
-- NOTE: As of v1.0.2, The mod Resource Loader must be used to include the image and model json for custom elements. If you would like to auto-generate these resources I have created a command-line JAR program [here](https://github.com/al132mc/alchemistry-resource-creator/releases) to do so.
+- Si prega di utilizzare nomi minuscoli
+- I numeri atomici preesistenti non possono essere sovrascritti
+- La linea '#loader alchemistry' è richiesta nella parte superiore del file. Questo file può essere usato solo per creare elementi e composti, altre ricette devono essere inserite in altri file.
+- NOTA: A partire da v1.0.2, il caricatore di risorse mod deve essere usato per includere l'immagine e il modello json per elementi personalizzati. Se si desidera generare automaticamente queste risorse ho creato un programma JAR da riga di comando [qui](https://github.com/al132mc/alchemistry-resource-creator/releases) per farlo.
