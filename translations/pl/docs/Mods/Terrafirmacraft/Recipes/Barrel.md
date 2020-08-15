@@ -1,13 +1,13 @@
-# Barrel
+# Beczka
 
 ## Pakiet
 ```zenscript
-import mods.terrafirmacraft.Barrel;
+importuj mods.terrafirmacraft.Beczka/bęben
 ```
 
 ## Dodanie
 ```zenscript
-Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
+Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidStack Output, godz.);
 ```
 
 ## Usuwanie
@@ -16,4 +16,4 @@ Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidSt
 Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
 Barrel.removeRecipe(String registryName)
 ```
-- At least one output(liquid or item) must be supplied, for both removing and adding recipes.
+- Należy dostarczyć co najmniej jedną pojemność (ciecz lub element) zarówno w celu usunięcia jak i dodania przepisów cyrkulacyjnych.
