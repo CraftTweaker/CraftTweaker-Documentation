@@ -35,13 +35,13 @@ All these methods will return the new Slot as IMachineSlot object.
 
 The parameters are:
 
-| Name              | Type                                          |
+| 名称                | タイプ                                           |
 | ----------------- | --------------------------------------------- |
-| name              | string                                        |
+| name              | 文字列                                           |
 | isOptional        | bool                                          |
 | stackCapacity     | int                                           |
-| color             | int                                           |
-| backgroundTexture | string                                        |
+| 色                 | int                                           |
+| backgroundTexture | 文字列                                           |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
 What the parameters do:
@@ -58,8 +58,8 @@ What the parameters do:
 You can get basic information from an IMachineSlot as well.  
 Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Name          | Type   |
-| ------------- | ------ |
-| name          | string |
-| optional      | bool   |
-| stackCapacity | int    |
+| 名称            | タイプ  |
+| ------------- | ---- |
+| 名前            | 文字列  |
+| optional      | bool |
+| stackCapacity | int  |
