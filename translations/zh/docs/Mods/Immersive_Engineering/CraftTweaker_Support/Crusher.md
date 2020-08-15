@@ -1,58 +1,58 @@
 # 磨粉机
 
-The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
+Crusher包可以用来添加/移除沉浸式工程粉碎器的配方。
 
-## Calling The Package
+## 调用包
 
-You can call the Crusher package using `mods.immersiveengineering.Crusher`.
+您可以使用 `mods.immersiveengineering.Crusher` 来调用Crusher 包裹。
 
 ## 添加配方
 
-| Required | 类型               | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| 必要       | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| 必要       | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| 必填 | 类型   | 数据类型                                                    |
+| -- | ---- | ------------------------------------------------------- |
+| 必要 | 输出   | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 必要 | 输入   | [材料（IIngredient）](/Vanilla/Variable_Types/IIngredient/) |
+| 必填 | 能源   | 整数                                                      |
+| 可选 | 次要输出 | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| 可选 | 次要机会 | 双精度                                                     |
 
 ### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
+//示例：
+mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Opiddle secondaryChance);
 
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
+mods.immersiveengineerering.crusher。 ddRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>);
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
+mods. mmersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5)；
 ```
 
-## Remove Recipe by Output
+## 通过输出移除配方
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输出 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
+//示例：
+mods.immersiveengineering.Crusher.removeRecipe(IItemstack 输出)；
 
-mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
+mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>)；
 ```
 
-## Remove Recipe By Input
+## 通过输入移除配方
 
-| Type  | Data Type                                |
-| ----- | ---------------------------------------- |
-| Input | [IItemstack](/Vanilla/Items/IItemStack/) |
+| 类型 | 数据类型                                          |
+| -- | --------------------------------------------- |
+| 输入 | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
+//示例：
+mods.immersiveEngineering.Crusher.removeRecipesForput(Itemstack input)；
 
-mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>);
+mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>)；
 ```
