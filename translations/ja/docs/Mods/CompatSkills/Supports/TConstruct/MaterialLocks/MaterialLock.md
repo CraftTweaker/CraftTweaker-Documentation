@@ -1,4 +1,4 @@
-# Material Locks
+# 材料ロック
 
 ## Material-Lock
 
@@ -16,5 +16,5 @@ Tinker Construct'sの特定の素材(マテリアル)用。
     // Blank Example:
     mods.compatskills.MaterialLock.addMaterialLock(String identifier, String... requirements);
     
-    // Example:
+    // 例:
     mods.compatskills.MaterialLock.addMaterialLock("wood", "reskillable:mining|5", "reskillable:magic|7");
