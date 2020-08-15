@@ -1,27 +1,27 @@
-# PlayerSetSpawn
+# Создатель Игрока
 
-The PlayerSetSpawn Event is fired whenever a player's spawn location changes.  
-It can be canceled to prevent further processing.
+Событие PlayerSetSpawn запускается всякий раз, когда местоположение спавна игрока меняется.  
+Оно может быть отменено, чтобы предотвратить дальнейшую обработку.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerSetSpawnEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerSetSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerSetSpawn реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter  | Return Type                            |
-| ---------- | -------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
-| `isForced` | bool                                   |
-| `newSpawn` | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| Геттеры           | Возвращаемый тип                       |
+| ----------------- | -------------------------------------- |
+| `player`          | [IPlayer](/Vanilla/Players/IPlayer/)   |
+| `насильно`        | bool                                   |
+| `Новая Появление` | [IBlockPos](/Vanilla/World/IBlockPos/) |
