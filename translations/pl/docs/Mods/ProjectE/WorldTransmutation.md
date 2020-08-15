@@ -14,7 +14,7 @@ mods.projecte.WorldTransmutation.add(IItemStack output, IItemStack input, @Optio
 mods.projecte.WorldTransmutation.add(<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>);
 ```
 
-### [IBlockState](/Vanilla/Blocks/IBlockState/)
+### [Stan IBlocka](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
 mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
@@ -37,7 +37,7 @@ mods.projecte.WorldTransmutation.remove(IItemStack output, IItemStack input, @Op
 mods.projecte.WorldTransmutation.remove(<minecraft:stone>, <minecraft:cobblestone>, <minecraft:grass>);
 ```
 
-### [IBlockState](/Vanilla/Blocks/IBlockState/)
+### [Stan IBlocka](/Vanilla/Blocks/IBlockState/)
 
 ```zenscript
 mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @Optional IBlockState sneakOutput);
