@@ -1,37 +1,37 @@
-# Toaster
+# Tostapane
 
-The Toaster crips up food to start your day.
+Il Tostapane prescrive cibo per iniziare la giornata.
 
-## Default Toaster Recipes
+## Ricette Tostapane Predefinite
 
-- Beef -> Cooked Beef
-- Sausage -> Cooked Sausage
-- Kebab -> Cooked Kebab
+- Manzo -> Carne Cotta
+- Salsiccia -> Salsiccia Cotta
+- Kebab -> Kebab Cotto
 
 ## Rimozione
 
-## Remove matching toaster recipes.
+## Rimuovere le ricette del tostapane corrispondenti.
 
 ```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
 
-// Remove recipes that make Toast from a Bread Slice
-mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
-// Remove all recipes
+// Rimuovi le ricette che fanno toast da una fetta di pane
+mods. fm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
+// Rimuovi tutte le ricette
 mods.cfm.Toaster.remove();
 ```
 
 ## Aggiunta
 
-Add a toaster recipe.
+Aggiungi una ricetta tostapane.
 
-## Only supports inputs of size 1.
+## Supporta solo ingressi di dimensione 1.
 
 ```zenscript
-mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Toaster.addRecipe(@Nonnull finale IItemStack output, @Nonnull finale IItemStack input);
 
-// Add a recipe that makes Bread from Wheat
-mods.cfm.Toaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
-// Add a recipe that makes Cooked Beef from Beef
+// Aggiungi una ricetta che rende Pane da Grano
+mods.cfm. oaster.addRecipe(<minecraft:bread>,<minecraft:wheat>);
+// Aggiungere una ricetta che rende il manzo cotto di manzo
 mods.cfm.Toaster.addRecipe(<minecraft:cooked_beef>,<minecraft:beef>);
 ```
