@@ -2,11 +2,11 @@
 
 ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
 
-## Calling
+## Anruf
 
 You can call the Resonator package using `mods.extrautils2.Resonator`
 
-## Removing
+## Entfernen
 
 ```zenscript
 //mods.extrautils2.Resonator.remove(IItemStack outout);
