@@ -2,11 +2,11 @@
 
 The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
 
-## Calling
+## Llamando
 
 You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
 
-## Removing
+## Eliminando
 
 This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
 
@@ -22,7 +22,7 @@ This function removes *all* Pressure Chamber recipes:
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## Agregando
 
 This function is used to add new recipes to the Pressure Chamber:
 
