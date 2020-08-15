@@ -1,21 +1,21 @@
-# Item Aspects
+# 项目
 
-Modtweaker's Thaumcraft integration extends [IItemStacks](/Vanilla/Items/IItemStack/).  
-That means that you can use the methods below on any IItemStack object:
+插件的 Thaumcraft 集成扩展 [IItemStacks](/Vanilla/Items/IItemStack/)。  
+这意味着你可以在任何 IItemStack 对象上使用下面的方法：
 
-## Set aspects
+## 设定方面
 
-You can use this to override what aspects an item would normally have.  
-Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
+您可以使用它来覆盖项目通常具有的方面。  
+需要 [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] 或更多 [CTAPotStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) 对象。
 
 ```zenscript
 <minecraft:stone>.setAspects(<aspect:ignis>*5);
 ```
 
-## Remove aspects
+## 移除分组
 
-You can use this to prevent certain aspects from being added to an item.  
-Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
+您可以使用这个来防止某些方面被添加到项目中。  
+需要 [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] 或更多 [CTAPotStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) 对象。
 
 ```zenscript
 <minecraft:iron_ore>.removeAspects(<aspect:terra>);
