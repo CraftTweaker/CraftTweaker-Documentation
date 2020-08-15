@@ -14,7 +14,7 @@ import mods.ic2.CanningMachine;
 * 5: Notch Apple
 * 6: Corus Fruit
 
-## Methods
+## Méthodes
 
 ### Register Items For Effect (int id, IItemstack... inputs)
 
