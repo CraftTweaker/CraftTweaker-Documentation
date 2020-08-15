@@ -2,31 +2,31 @@
 
 ## Opis
 
-This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
+Ta modyfikacja dodaje wsparcie CraftTweaker do JEI. CraftTweaker wykorzystywał do wspierania inicjatywy JEI w sposób naturalny, ale ze względu na przeredagowanie 1.14 wsparcie JEI jest pobierane w jego własny mod.
 
 
 ## Pakiet
 `mods.jei.JEI`
 
-## Item Hiding
+## Ukrywanie przedmiotu
 
-This will hide the given item in JEI. The example given will hide the dirt block in the JEI menu.
+To ukryje dany przedmiot w JEI. Podany przykład ukryje blok zabrudzenia w menu JEI.
 
 ```zenscript
 //mods.jei.JEI.hideItem(IItemStack stack);
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## Category Hiding
+## Ukrywanie kategorii
 
-This will hide the given category in JEI. The example given will hide the furnace category when looking up recipes in JEI.
+To ukryje podaną kategorię w JEI. Podany przykład ukryje kategorię pieca podczas wyszukiwania przepisów w JEI.
 
 ```zenscript
 //mods.jei.JEI.hideCategory(String category);
 mods.jei.JEI.hideCategory("minecraft:furnace");
 ```
 
-The default categories are:
+Kategorie domyślne to:
 ```zenscript
 "minecraft:crafting"
 "minecraft:furnace"
@@ -39,19 +39,19 @@ The default categories are:
 "jei:information"
 ```
 
-Mods can add more categories though!
+Modyfikacje mogą jednak dodać więcej kategorii!
 
-## Add Info
+## Dodaj informacje
 
-This will add information to the Item that will be shown when looking at usages in JEI!.
+To doda informacje do przedmiotu, które będą wyświetlane podczas oglądania użycia w JEI!.
 
-This exact example will add 3 lines of information to the Diamond item.
+Dokładny przykład doda 3 linie informacji do elementu Diamentowego.
 
 ```zenscript
 //mods.jei.JEI.addInfo(IItemStack stack, String[] information);
-mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
+mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["To jest pierwszy wiersz!", "To jest drugi!", "trzeci"]);
 ```
 
-The code above will produce: ![Wypełnione pole commitów](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+Powyższy kod będzie produkował: ![Wypełnione pole commitów](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
