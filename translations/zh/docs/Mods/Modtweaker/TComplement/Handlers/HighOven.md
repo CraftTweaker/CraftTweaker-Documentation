@@ -1,160 +1,160 @@
-# HighOven
+# 高Oven
 
-The HighOven package allows to add/remove fuels, heat recipes and mix recipes to the high oven.
+高炉包可以将燃料、热配方和混合配方添加到高炉。
 
 ## 导入相关包
 
-Import the package using
+导入软件包使用
 
 ```zenscript
-import mods.tcomplement.highoven.HighOven;
+导入 mods.tcomplement.higoven.HighOven;
 ```
 
-## Fuels
+## 燃料量
 
-You can add and remove fuels accepted by the high oven.
+您可以添加和删除高炉所接受的燃料。
 
-### Removing fuels
+### 去除燃料
 
 ```zenscript
-// HighOven.removeFuel(IIngredient fuel);
-HighOven.removeFuel(<minecraft:coal:1>);
+// HighOven.removeFuel(Ingredient fuel)；
+HighOven.removeFuel(<minecraft:coal:1>)；
 ```
 
-### Adding fuels
+### 添加燃料
 
 ```zenscript
-// HighOven.addFuel(IIngredient fuel, int time, int rate);
+// HighOven.addFuel(IIngredient fuel, int time, int rate );
 HighOven.addFuel(<minecraft:hay_block>, 3600, 5);
 ```
 
-+ `fuel` is the fuel to add (supports transformers, NBT and fluid containers)
-+ `time` is how long the fuel lasts, in seconds
-+ `rate` is the temperature increase of the high oven when that fuel is used, in degrees per second
++ `燃料` 是要添加的燃料(支持变压器、NBT和液体容器)
++ `时间` 是燃料持续多长时间，秒数
++ `速率` 是高炉使用燃料时的温度升高（以每秒的度计算）
 
-## Melting Overrides
+## 熔融覆盖
 
-You can add and remove melting overrides for the High Oven. Melting overrides, well, override the default melting behavior in the High Oven. Items normally behave the same as in the smeltery, overrides can redefine output fluid and melting temperature (only for the High Oven).
+您可以添加和移除高奥文的熔融覆盖。 熔化覆盖，覆盖高奥文的默认融化行为。 项目通常行为与冶炼厂相同。替代可以重新定义输出液体和熔化温度(仅适用于高炉)。
 
-### Removing overrides
+### 删除覆盖
 
 ```zenscript
-// HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack input)
+// HighOven.removeMeltingOverride(ILiquidStack output, @Optional IItemStack 输入)
 HighOven.removeMeltingOverride(<liquid:iron>);
 ```
 
-### Adding overrides
+### 添加覆盖
 
-This is more interesting. Overrides specify a new behavior for items in the High Oven
+这更令人感兴趣。 覆盖高炉项目的新行为
 
 ```zenscript
-// HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Optional int temp)
-HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567);
+// HighOven.addMeltingOverride(ILiquidStack output, IIngredient input, @Opinion temp)
+HighOven.addMeltingOverride(<liquid:steel> * 144, <ore:ingotIron>, 2567)；
 ```
 
-+ `output` the liquid and amount to produce
-+ `input` the IIngredient to smelt. Supports transformers, oredict etc.
-+ `temp` (Optional) the minimum temperature for the item to start melting in the High Oven, in Kelvin. If undefined, leave the calculation to the High Oven
++ `输出` 液体和生产量
++ `输入` IIngredient 进行熔炼。 支持变压器、修复等。
++ `调节` (可选)物品在克尔文的高奥文开始熔化的最低温度。 如果未定义, 请将计算留给高炉子
 
-## Heat recipes
+## 热配方
 
-Heat recipes transform a fluid into another in the high oven tank, provided the temperature of the high oven is high enough.
+热配方将一种液体转化为高炉罐中的另一种液体，条件是高炉的温度足够高。
 
-### Removing heat recipes
+### 移除热配方
 
 ```zenscript
-// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack input);
+// HighOven.removeHeatRecipe(ILiquidStack output, @Optional ILiquidStack 输入);
 HighOven.removeHeatRecipe(<liquid:steam>);
 ```
 
-+ `output` is the output for which recipes should be disabled
-+ `input` is optionally the inputs to filter recipes with. If unspecified (or `null`), all recipes producing the supplied output will be disabled. Otherwise, only the recipe with the given input is disabled.
++ `输出` 是应该禁用配方的输出
++ `输入` 是可选的输入，用于筛选配方。 如果未指定(或 `null`)，生成所提供输出的所有配方都将被禁用。 否则，只有带有给定输入的配方被禁用。
 
-*NOTE*: this method does **not** disable heat recipes added by ModTweaker using the next method.
+*备注*: 此方法不 **** 使用下一个方法禁用ModTinventer 添加的热配方。
 
-### Adding heat recipes
+### 添加热配方
 
 ```zenscript
 // HighOven.addHeatRecipe(ILiquidStack output, ILiquidStack input, int temp);
 HighOven.addHeatRecipe(<liquid:iron> * 144, <liquid:lava> * 1000, 1450);
 ```
 
-+ `output` the liquid to pruduce, and in which quantity
++ `输出` 液体到谨慎气体以及在其中的数量
 + `input` the liquid to consume, and in which quantity, to produce the output quantity
-+ `temp` the minimum high oven's temperature, in Kelvin.
++ `在克尔温下调` 最低高温。
 
-*Note*: the actual rate of the heat recipes scales with excess temperature
+*注意*: 热配方超出温度的实际比率
 
-## Mix recipes
+## 混合配方
 
-Mix recipes allow to do a kind of alchemy or alloying. When a stack melts in the high oven, if it produces the right fluid *and* the proper oxidizers, reducers and purifiers are in their dedicated slots, then a different fluid is produced.
+混合配方允许进行某种炼金或合金。 当一堆栈熔融在高炉子中，如果它能产生适当的液体 *和* 适当的氧化剂， 还原剂和净化剂都在其专用槽中，然后生产一种不同的液体。
 
-Since those recipes are complicated, adding or tweaking existing ones uses a special zen class.
+由于这些配方是复杂的，添加或扭曲了现有的配方使用了一个特殊的 zen 类。
 
-### Removing mix recipes
+### 删除混合配方
 
-This is the easy part for mix recipes
+这是混合配方的简单部分
 
 ```zenscript
-// HighOven.removeMixRecipe(ILiquidStack output, @Optional ILiquidStack input);
-HighOven.removeMixRecipe(<liquid:steel>); // disable any steel-producing mix recipe
+// HighOven.removeMixRecipe(ILiquidStack 输出, @Opinion ILiquidStack 输入);
+HighOven.removeMixRecipe(<liquid:steel>); // 禁用任何生产钢材的混合配方
 ```
 
-The arguments are the same as `removeHeatRecipe()` and the matching works the same way. Similarly to `removeHeatRecipe()`, this method will not remove recipes added by ModTweaker.
+参数与 `removeHeatRecipe()` 和匹配的方式相同。 类似于 `removeHeatRecipe()`, 此方法将不会删除ModTinstrer添加的配方。
 
-### Adding mix recipes
+### 添加混合配方
 
-To add a mix recipe, you have to use a `MixRecipeBuilder`. You can get one using
+要添加混合配方方法，您必须使用 `MixRecipeBuilder`。 您可以使用
 
 ```zenscript
-import mods.tcomplements.highoven.MixRecipeBuilder;
+import mods.tcomplements.higoven.MixRecipeBuilder;
 
-// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int temp);
+// HighOven.newMixRecipe(ILiquidStack output, ILiquidStack input, int tempes);
 var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 1350);
 ```
 
-+ `output` is the fluid and quantity to produce
-+ `input` is the fluid and quantity to consume
-+ `temp` is the minimal temperature of the high oven for the recipe to work, in Kelvin
++ `输出` 是要生产的液体和数量
++ `输入` 是要消耗的液体和数量
++ `temp` 是在Kelvin 中让配方工作的高炉的最低温度
 
-Once you have a `MixRecipeBuilder`, you should add oxidizers, reducers and purifiers to it, and then register it.
+一旦你有一个 `MixRecipeBuilder`, 你应该添加氧化器、还原器和净化器，然后注册它。
 
 ```zenscript
-builder.addOxidizer(<minecraft:redstone>, 95);
+builder.addOxidzer(<minecraft:redstone>, 95);
 builder.addReducer(<minecraft:glowstone>, 5);
 builder.addPurifier(<ore:dustCoal>, 50);
 builder.addPurifier(<minecraft:nether_star>, 0);
 builder.register();
 ```
 
-For a detailed documentation of what you can do with a `MixRecipeBuilder`, see its documentation.
+关于您可以使用 `MixRecipeBuilder`做什么的详细文档，见其文档。
 
-NOTE*: Once you have used a `MixRecipeBuilder`, you can keep modifying it and re-using it. It allows for recipe variations to be easily added.
+注意：一旦您使用了 `MixRecipeBuilder`，您可以继续修改并重新使用它。 它允许易于添加配方变量。
 
-**WARNING**: If no item produces the input fluid when it melts in the smeltery, then the recipe won't be visible in JEI.
+**警告**: 如果没有项目在熔炼中熔化时产生输入液体，那么该配方就不会在 JEI 中可见了。
 
-### Tweaking mix recipe
+### 混合配方
 
-To change existing mix recipes (**including** those added by ModTweaker), you can use a `MixRecipeManager`:
+要更改现有的混合配方(**包括由ModTweaker添加的** 个配方)，您可以使用 `MixRecipeManager`：
 
 ```zenscript
-import mods.tcomplement.highoven.MixRecipeManager;
+导入mods.tcomplement.higoven.MixRecipeManager;
 
-// HighOven.manageMixRecipe(ILiquidStack output, ILiquidStack input);
-var manager = HighOven.manageMixRecipe(<liquid:steel>);
+// HighOven.management MixRecipe(ILiquidStack 输出, ILiquidStack 输入);
+var Manager = HighOven.management MixRecipe(<liquid:steel>);
 ```
 
-As usual, not specifying the input (or providing `null`) result in a wildcard behavior where all input will be accepted.
+像往常一样，不指定输入(或提供 `null`) 导致通配符行为，所有输入都将被接受。
 
-Once you have a `MixRecipeManager` representing a particular set of mix recipe, you can prevent certain oxidizer/reducers/purifiers from being added to those recipes, *or* try to add new additives. Removals have priority on additions.
+一旦你有 `MixRecipeManager` 代表特定的混合配方 您可以防止某些氧化物/减少剂/净化剂被添加到这些配方中， *或* 尝试添加新添加剂。 移除对添加具有优先性。
 
 ```zenscript
-manager.removeOxidizer(<minecraft:redstone>);
+manager.removeOxidzer(<minecraft:redstone>);
 manager.addPurifier(<minecraft:dirt>, 25);
 ```
 
-The behavior might be a little surpring at times. When you disable an additive, any additive addition that would allow what you disable will be canceled. For instance, if you add a bunch of items using a single `OreDictEntry`, then try to remove a specific `IItemStack`, it will prevent the entry from being added.
+这种行为有时可能略有冒犯。 当您禁用添加剂时，允许您禁用的添加剂将被取消。 例如，如果您使用单独的 `OreDictEnter`添加了一堆物品， 然后尝试删除一个特定 `IItemStack`, 它将防止添加该条目。
 
-This is because iternally, `OreDictEntry` are added as-is and are not converted to individual items. The only way to disable the `ItemStack` you want to forbid is to prevent the whole entry from being registered, otherwise the entry would allow the item.
+这是因为反复添加 `OreDictEnter` 不会转换为单个项目。 禁用您想要禁止的 `ItemStack` 的唯一方法是防止整个条目被注册。 否则，该条目将允许该物项。
 
-If you actually want to do add an oredict entry except some items, you'll have to do it manually by iterating on the `OreDictEntry` content and then removing the specific items (or by not adding them in the first place).
+如果您实际上想要添加一个操作条目，但一些项目除外， 您必须手动在 `OreDictEnter` 内容上进行迭代，然后删除特定的项目 (或不首先添加它们)。
