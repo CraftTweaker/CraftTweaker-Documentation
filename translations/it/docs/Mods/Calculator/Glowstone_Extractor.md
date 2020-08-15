@@ -1,4 +1,4 @@
-# Glowstone Extractor
+# Estrattore Di Luminite
 
 ## Pacchetto
 ```zenscript
@@ -7,11 +7,11 @@ import mods.calculator.glowstone;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Int value** The amount of input adds to that machine.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input.
+- **Valore interno** La quantità di input aggiunge a quella macchina.
 
 
-## Additon
+## Addizionale
 ```zenscript
 glowstone.addRecipe(IIngredient input, int value);
 ```
