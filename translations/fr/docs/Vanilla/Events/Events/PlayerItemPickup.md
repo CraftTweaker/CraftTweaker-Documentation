@@ -16,7 +16,7 @@ PlayerItemPickup Events implement the following interfaces and are able to call 
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                   |
+| ZenGetter        | Type de retour                                |
 | ---------------- | --------------------------------------------- |
 | `stackCopy`      | [IItemStack](/Vanilla/Items/IItemStack/)      |
 | `originalEntity` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
