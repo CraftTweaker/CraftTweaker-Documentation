@@ -20,18 +20,18 @@ val itemDefinition = <minecraft:stone>.definition;
 val itemDefinitionList = game.items;
 ```
 
-## What to do with it
+## Was ist damit zu tun
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters und parameterlose ZenMethoden
 
-| ZenGetter          | What does it do                                                                                      | Rückgabetyp                                                    |
+| ZenGetter          | Was macht es                                                                                         | Rückgabetyp                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | id                 | Returns the item ID                                                                                  | string                                                         |
 | name               | Returns the unlocalized item Name                                                                    | string                                                         |
 | ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
 | owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
-| creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
+| kreativ-Tab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |
 | canItemEditBlocks  |                                                                                                      | bool                                                           |
 | itemEnchantability |                                                                                                      | int                                                            |
@@ -39,13 +39,13 @@ val itemDefinitionList = game.items;
 
 ### ZenSetters and other void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
+| ZenSetter/ZenMethod                    | Parametertyp                                        |
 | -------------------------------------- | --------------------------------------------------- |
-| creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| kreativ-Tab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | setNoRepair()                          | none                                                |
 | setContainerItem(IItemDefinition item) | IItemDefinition                                     |
 
-### ZenMethods
+### ZenMethoden
 
 - `def.makeStack(meta);` Creates an [IItemStack](/Vanilla/Items/IItemStack/) with the given metadata. Metadata is an int and OPTIONAL.
 - `def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level
