@@ -5,12 +5,12 @@
 mods.alchemistry.Liquifier
 ```
 
-## Methods
+## Méthodes
 **[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
 
 **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 
-## Addition
+## Ajouter
 ```zenscript
 mods.alchemistry.Liquifier.addRecipe(ILiquidStack output, IItemStack input);
 mods.alchemistry.Liquifier.addRecipe(<liquid:beryllium>*100,<alchemistry:element:5>);
