@@ -1,4 +1,4 @@
-# Commands
+# Befehle
 
 Here are the commands that matter:
 ```
@@ -8,7 +8,7 @@ Here are the commands that matter:
 /ct log
 ```
 ```
-/ct scripts
+/ct Skripte
 ```
 ```
 /ct issues
