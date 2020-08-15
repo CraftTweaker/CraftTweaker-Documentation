@@ -1,8 +1,8 @@
-# Material Bracket Handler
+# 材料板块处理器
 
-The Material Bracket handler's sole purpose is providing you with [Material Representations](/Mods/ContentTweaker/Tinkers_Construct/Material/).
+材质板块处理程序的唯一目的是为您提供 [Material Representation](/Mods/ContentTweaker/Tinkers_Construct/Material/)。
 
-You use the trait bracket handler like this:
+您使用的特征括号处理程序像这样：
 
 ```zenscript
 <ticonmaterial:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticonmaterial:iron>
 ```
 
-If the Material is found, this will return an Material Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Material/) for further information on what you can do with these.
+如果找到这种材料，将返回一个材料代表物体。 请参考 [相应的 Wiki 条目](/Mods/ContentTweaker/Tinkers_Construct/Material/) 了解您可以对这些条目做些什么。
