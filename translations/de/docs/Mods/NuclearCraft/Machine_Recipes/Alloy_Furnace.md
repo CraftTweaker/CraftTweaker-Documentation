@@ -1,7 +1,7 @@
-# Alloy Furnace
+# Legierungsöfen
 
-## Importing the Package
-`mods.nuclearcraft.alloy_furnace`
+## Paket wird importiert
+`mods.nuclearcraft.alloy_ofen`
 
 ## Rezepte hinzufügen
 ```zenscript
