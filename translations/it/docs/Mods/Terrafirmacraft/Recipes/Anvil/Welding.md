@@ -1,17 +1,17 @@
 # Anvil Welding
 
-## Package
+## Pacchetto
 ```zenscript
 import mods.terrafirmacraft.Welding;
 ```
 
-## Addition
+## Addizione
 
 ```zenscript
 Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 Welding.removeRecipe(IItemStack output);
