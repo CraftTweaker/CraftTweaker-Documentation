@@ -1,6 +1,6 @@
-# If you add a page, you must add it to the index here
+# Se viene aggiunta una pagina, deve essere aggiunta anche in questo indice
 nav:
-  - Home: 'index.md'
+  - Pagina Principale: 'index.md'
   - Getting Started With Scripts: 'Getting_Started.md'
   - Using this wiki: 'UsingThisWiki.md'
   - Commands: 'Vanilla/Commands.md'
@@ -34,7 +34,7 @@ nav:
   - Vanilla:
     - Biomes:
       - IBiome: 'Vanilla/Biomes/IBiome.md'
-    - Blocks:
+    - Blocchi:
       - IBlock: 'Vanilla/Blocks/IBlock.md'
       - IBlockDefinition: 'Vanilla/Blocks/IBlockDefinition.md'
       - IBlockPattern: 'Vanilla/Blocks/IBlockPattern.md'
@@ -204,7 +204,7 @@ nav:
     - Potions:
       - IPotion: 'Vanilla/Potions/IPotion.md'
       - IPotionEffect: 'Vanilla/Potions/IPotionEffect.md'
-    - Recipes:
+    - Ricette:
       - Brewing Recipes: 'Vanilla/Recipes/Recipes_Brewing_Stand.md'
       - Crafting Table Recipes:
         - Crafting Table Recipes: 'Vanilla/Recipes/Crafting/Recipes_Crafting_Table.md'
@@ -451,7 +451,7 @@ nav:
             - ILocalizedNameSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ILocalizedNameSupplier.md'
             - IResourceLocationSupplier: 'Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IResourceLocationSupplier.md'
         - Types:
-          - Block:
+          - Blocco:
             - Facing: 'Mods/ContentTweaker/Vanilla/Types/Block/Facing.md'
             - ICTBlockState: 'Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState.md'
             - IBlockPos: 'Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos.md'
@@ -696,7 +696,7 @@ nav:
       - Botania:
         - Commands: 'Mods/Modtweaker/Botania/Commands.md'
         - Lexica Botania: 'Mods/Modtweaker/Botania/Lexicon.md'
-        - Recipes:
+        - Ricette:
           - Brew: 'Mods/Modtweaker/Botania/Recipes/Brew.md'
           - Elven Trade: 'Mods/Modtweaker/Botania/Recipes/ElvenTrade.md'
           - Mana Infusions: 'Mods/Modtweaker/Botania/Recipes/ManaInfusion.md'
@@ -724,7 +724,7 @@ nav:
         - Handlers:
           - Cauldron: 'Mods/Modtweaker/Inspirations/Handlers/Cauldron.md'
       - Refined Storage:
-        - Recipes:
+        - Ricette:
           - Solderer: 'Mods/Modtweaker/RefinedStorage/Recipes/Solderer.md'
       - Tinkers' Construct:
         - Commands: 'Mods/Modtweaker/TConstruct/Commands.md'
@@ -788,7 +788,7 @@ nav:
         - Sawmill: 'Mods/Modtweaker/ThermalExpansion/Sawmill.md'
     - Modular Machinery:
       - Modular Machinery: 'Mods/ModularMachinery/ModularMachinery.md'
-      - Recipes:
+      - Ricette:
         - RecipeBuilder: 'Mods/ModularMachinery/Recipes/RecipeBuilder.md'
         - RecipePrimer: 'Mods/ModularMachinery/Recipes/RecipePrimer.md'
     - MrCrayfish's Furniture Mod:
@@ -920,7 +920,7 @@ nav:
       - Transmutation Ritual: 'Mods/Roots_3/transmutation.md'
     - Sky Resources 2:
       - Sky Resources 2: 'Mods/Sky_Resources_2/Sky_Resources_2.md'
-      - Recipes:
+      - Ricette:
         - Alchemical Fusion: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion.md'
         - Alchemical Fusion Catalysts: 'Mods/Sky_Resources_2/Recipes/Alchemical_Fusion_Catalysts.md'
         - Cauldron Cleaning: 'Mods/Sky_Resources_2/Recipes/Cauldron_Cleaning.md'
@@ -974,7 +974,7 @@ nav:
       - HeatingTemperatures: 'Mods/Terrafirmacraft/HeatingTemperatures.md'
       - ItemRegistry: 'Mods/Terrafirmacraft/ItemRegistry.md'
       - Metal: 'Mods/Terrafirmacraft/Metal.md'
-      - Recipes:
+      - Ricette:
         - Anvil: 
           - Anvil: 'Mods/Terrafirmacraft/Recipes/Anvil/Anvil.md'
           - Welding: 'Mods/Terrafirmacraft/Recipes/Anvil/Welding.md'
