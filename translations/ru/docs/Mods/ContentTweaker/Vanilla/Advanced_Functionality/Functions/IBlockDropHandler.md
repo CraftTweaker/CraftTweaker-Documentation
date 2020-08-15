@@ -1,29 +1,29 @@
 # IBlockDropHandler
 
-The IBlockDropHandler function is used to allow for advanced block drop handling for [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) created with the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
+Функция IBlockDropHandler используется для расширенной обработки блоков с [Блоками](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) , созданной с [Заводским Заводом](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/).
 
 ## Импорт класса
 
-You want to import the class? Here you go:
+Вы хотите импортировать класс? Вот:
 
 ```zenscript
 import mods.contenttweaker.DropHandler;
 ```
 
-## Function structure
+## Структура функции
 
-The function is a void function that takes the following parameters:
+Функция является недействительной функцией, которая принимает следующие параметры:
 
-- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) drops.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) world -> the world we are in, possible an [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), you might want to instanceof and downcast
-- [IBlockPos](/Vanilla/World/IBlockPos/) position -> the position of the block
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state -> the blockstate of the block
-- int fortune -> the fortune level of the tool used
+- [ICTItemList](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/) выпадает.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) мир -> мир, в котором мы находимся, возможно, [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/), вы можете захотеть установить и спасти
+- [IBlockPos](/Vanilla/World/IBlockPos/) позиция -> позиция блока
+- [состояние ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) -> blockstate блока
+- int fortune -> уровень счастья используемого инструмента
 
-As this method does not return anything, all drops need to be added to the `drops` list using the exposed methods.  
-Read about them [here](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
+Поскольку этот метод не возвращает ничего, все капли нужно добавить в список `сбросов` с использованием экспонированных методов.  
+О них [читайте здесь](/Mods/ContentTweaker/Vanilla/Types/Drops/ICTItemList/).
 
-## Example
+## Пример
 
 ```zenscript
 block.setDropHandler(function(drops, world, position, state, fortune) {
