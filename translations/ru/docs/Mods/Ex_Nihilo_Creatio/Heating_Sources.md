@@ -1,4 +1,4 @@
-# Heating Sources
+# Источники отопления
 
 ## Пакет
 ```zenscirpt
@@ -7,8 +7,8 @@
 
 ## Методы
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
-- **Int heat** heat per instance.
+- **[IItemStack](/Vanilla/Items/IItemStack/) входной блок** Блок который обеспечивает тепло.
+- **Int тепло** тепла в экземпляре.
 
 ## Сложение
 
