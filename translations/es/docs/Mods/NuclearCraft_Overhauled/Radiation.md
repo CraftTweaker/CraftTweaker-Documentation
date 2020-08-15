@@ -3,16 +3,16 @@
 ## Radiation Scrubber
 
 ### Importing the Package
-`mods.nuclearcraft.RadiationScrubber`
+`mods.nuclearcraft.SupercoolerRadiationScrubber`
 
 ### Adding Recipes
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
 ```
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerRadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
 mods.nuclearcraft.RadiationScrubber.removeAllRecipes();RadiationScrubber.removeAllRecipes();
@@ -21,16 +21,16 @@ mods.nuclearcraft.RadiationScrubber.removeAllRecipes();RadiationScrubber.removeA
 ## Block Mutation
 
 ### Importing the Package
-`mods.nuclearcraft.RadiationBlockMutation`
+`mods.nuclearcraft.SupercoolerRadiationBlockMutation`
 
 ### Adding Recipes
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.SupercoolerRadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
 mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
 ```
@@ -38,11 +38,11 @@ mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
 ## Block Purification
 
 ### Importing the Package
-`mods.nuclearcraft.mods.nuclearcraft.RadiationBlockPurification`
+`mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification`
 
 ### Adding Recipes
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
 ### Removing Recipes
@@ -104,11 +104,11 @@ IEntityLivingBase::getRadiationLevel();
 ## Radiation
 This method gets the radiation of an `IIngredient` in rads/tick.
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.getRadiationLevel(IIngredient itemInput);
 ```
 
 ## Radiation Immunity
 This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.Radiation.setRadiationImmunityGameStages(boolean defaultImmunity, String[] stageNames);
 ```
