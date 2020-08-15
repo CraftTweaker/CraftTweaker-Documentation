@@ -1,4 +1,4 @@
-# ICraftingRecipe
+# Рецепт ICrafting
 
 ICraftingRecipe-это рецепт крафта так, как его видит ZS.
 
@@ -26,7 +26,7 @@ rec.ingredients2D
 rec.output
 ```
 
-### Check for conditions
+### Проверить условия
 
 Все нижеперечисленное возвращает boolean
 
