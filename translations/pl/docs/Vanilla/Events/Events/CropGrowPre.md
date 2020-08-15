@@ -1,18 +1,18 @@
-# CropGrowPreEvent
+# Wydarzenie Przyrostu
 
-The CropGrowPre Event is fired when crops attempt to grow. It has a **result** which determines whether the default behaviour occurs or not:
+Wydarzenie „Rośliny rosnące” jest rozpalane, gdy uprawy próbują rosnąć. Ma **wynik** , który określa, czy występuje zachowanie domyślne, czy nie:
 
-- **allow**: the crop is forced to grow.
-- **deny**: the crop is prevented from growing.
-- **default**: the attack uses default Vanilla behaviour.
+- **zezwól**: uprawa jest zmuszona do wzrostu.
+- **blokuj**: uprawa nie może być uprawiana.
+- **domyślnie**: atak używa domyślnego zachowania Vanilli.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPreEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. ropGrowPreEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia CropGrowPost wdrażają następujące interfejsy i są w stanie nazwać wszystkie swoje metody/podmioty pobierające/wyznaczające:
 
 - [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -24,4 +24,4 @@ Z wydarzenia można uzyskać następujące informacje:
 | ZenGetter            | ZenSetter | Typ                                          |
 | -------------------- | --------- | -------------------------------------------- |
 | `originalBlockState` |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)            |
+| `oryginalnyBlok`     |           | [IBlock](/Vanilla/Blocks/IBlock/)            |
