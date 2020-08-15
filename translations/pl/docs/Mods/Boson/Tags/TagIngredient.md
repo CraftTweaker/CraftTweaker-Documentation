@@ -8,17 +8,17 @@ The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making
 ## Creating a New Instance
 Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 
-## `IIngredient`
+## `Składnik`
 Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
 
-## Properties
+## Właściwości
 A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| Property Name | Type                                     | Description                                                     |
-| ------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| Nazwa Właściwości | Typ                                      | Opis                                                            |
+| ----------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `tagName`         | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
-## Example
+## Przykład
 
 ```zenscript
 val anyIngot = <tag-items:forge:ingots>;
