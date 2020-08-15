@@ -2,7 +2,7 @@
 
 The *crucible* package is used for adding or removing recipes to/from the Crucible.
 
-## Calling
+## Llamando
 
 You can call the *crucible* package using `mods.skyresources.crucible`
 
