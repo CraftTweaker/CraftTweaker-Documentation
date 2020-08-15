@@ -1,14 +1,14 @@
 # MCLeftClickBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
 ```
@@ -18,7 +18,7 @@ new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(ha
 
 
 
-## Methods
+## 方法
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -71,7 +71,7 @@ myMCLeftClickBlock.getPos();
 
 Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCLeftClickBlock.hasResult();
@@ -83,7 +83,7 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCLeftClickBlock.isCancelable();
@@ -93,7 +93,7 @@ myMCLeftClickBlock.isCancelable();
 
 Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCLeftClickBlock.isCanceled();
@@ -105,9 +105,9 @@ myMCLeftClickBlock.isCanceled();
 myMCLeftClickBlock.setCanceled(canceled as boolean);
 ```
 
-| Parameter | 类型      | 说明                      |
-| --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+| 参数  | 类型      | 说明                      |
+| --- | ------- | ----------------------- |
+| 已取消 | boolean | No description provided |
 
 
 
