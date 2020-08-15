@@ -1,6 +1,6 @@
-# Compost
+# Compuesto
 
-## Package
+## Paquete
 
 `mods.actuallyadditions.Compost`
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.Compost.addRecipe(<minecraft:dirt>, <minecraft:dirt>, <minecraft:sugar>, <minecraft:snow>);
 ```
 
-## Removal
+## Eliminar
 
 ```zenscript
 //mods.actuallyadditions.Compost.removeRecipe(IItemStack output);
