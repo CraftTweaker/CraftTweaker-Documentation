@@ -4,13 +4,13 @@
 
 `import mods.ic2.OreWasher;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int water** Amount of water required for one round of processing of this recipe, measured in mB. Default to 1000 if not given.
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional int water);
