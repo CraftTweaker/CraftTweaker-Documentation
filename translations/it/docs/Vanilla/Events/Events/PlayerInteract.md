@@ -20,7 +20,7 @@ PlayerInteract Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                          |
+| ZenGetter    | Tipo Di Reso                         |
 | ------------ | ------------------------------------ |
 | `canceled`   | boolean                              |
 | `usingItem`  | boolean                              |
@@ -30,8 +30,8 @@ The following information can be retrieved from the event:
 | `z`          | int                                  |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| `blocco`     | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `dimensione` | int                                  |
 
 ## ZenMethods
 
