@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Pacifist;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addEntity(
@@ -22,7 +22,7 @@ void removeEntity(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Pacifist;
