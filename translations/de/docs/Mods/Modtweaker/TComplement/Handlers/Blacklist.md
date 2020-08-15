@@ -2,7 +2,7 @@
 
 The Blacklist package is used for adding/removing recipes from/to the melter Blacklist.
 
-## Calling
+## Anruf
 
 You can call the Blacklist package using `mods.tcomplement.Blacklist`
 
