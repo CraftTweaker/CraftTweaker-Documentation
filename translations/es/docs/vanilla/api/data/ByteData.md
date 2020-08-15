@@ -10,17 +10,17 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.data.ByteData
 ```
 
-## Implemented Interfaces
-ByteData implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
+## Interfaces implementadas
+ByteData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [datos de crafttweaker.api.infumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Constructores
 ```zenscript
 new crafttweaker.api.data.ByteData(internal as byte);
 ```
-| Parámetro | Tipo | Descripción             |
-| --------- | ---- | ----------------------- |
-| interno   | byte | No description provided |
+| Parámetro | Tipo | Descripción                   |
+| --------- | ---- | ----------------------------- |
+| interno   | byte | No se proporcionó descripción |
 
 
 
