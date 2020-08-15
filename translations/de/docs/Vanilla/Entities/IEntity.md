@@ -35,7 +35,7 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | controllingPassenger     |                   | *IEntity*                                                   |
 | customName               | getCustomName()   | string                                                      |
 | definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| dimension                | getDimension()    | int                                                         |
+| maße                     | getDimension()    | int                                                         |
 | doesTriggerPressurePlate |                   | boolean                                                     |
 | equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
 | eyeHeight                |                   | float                                                       |
@@ -90,12 +90,12 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 
 ## ZenSetters
 
-| SetterName          | SetterMethod        | Parameter Type                         |
+| SetterName          | SetterMethod        | Parametertyp                           |
 | ------------------- | ------------------- | -------------------------------------- |
 | air                 | setAir(seconds)     | int                                    |
 | alwaysRenderNameTag |                     | boolean                                |
 | customName          | setCustomName(name) | string                                 |
-| dimension           | setDimension(id)    | int                                    |
+| maße                | setDimension(id)    | int                                    |
 | fire                | setFire(seconds)    | int                                    |
 | hasNoGravity        |                     | boolean                                |
 | id                  |                     | int                                    |
