@@ -4,7 +4,7 @@
 
 `import mods.enderio.Enchanter;`
 
-## Methods
+## 方法
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
@@ -22,7 +22,7 @@ mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient inpu
 mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
