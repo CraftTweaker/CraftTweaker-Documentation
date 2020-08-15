@@ -10,7 +10,7 @@ It requires flipping food to cook both sides.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## 削除中
 
 ## Remove matching grill recipes.
 
@@ -25,7 +25,7 @@ mods.cfm.Grill.remove(<cfm:item_sausage_cooked>);
 mods.cfm.Grill.remove();
 ```
 
-## Adding
+## 追加中
 
 Add a grill recipe.
 
