@@ -33,8 +33,8 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
 The despawn event also offers three functions to change the event outcome:
 
-| ZenMethod | Beschreibung                               |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| ZenMethode  | Beschreibung                               |
+| ----------- | ------------------------------------------ |
+| `allow`     | Forces the entity to (de)spawn             |
+| `deny`      | Forces the entity not to (de)spawn         |
+| `passieren` | Sets the event result to the default state |
