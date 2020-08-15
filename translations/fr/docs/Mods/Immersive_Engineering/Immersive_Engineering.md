@@ -1,4 +1,4 @@
-# Immersive Engineering
+# Ingénierie immersive
 
 ## Information
 
@@ -12,6 +12,6 @@ IE is about making tech mods more balanced and more pretty, and adding its own t
 
 Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
 
-## Bug Reports
+## Rapports de bugs
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues
