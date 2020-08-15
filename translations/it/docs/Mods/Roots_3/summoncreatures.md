@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
+  IEntityDefinition entity // the entity to remove from summoning via ricetta
 );
 ```
 
@@ -61,20 +61,20 @@ void clearLifeEssence();
 ```zenscript
 import mods.roots.SummonCreatures;
 
-// Clear all automatically generated Life Essences added by
-// the Animal Harvest map
-SummonCreatures.clearLifeEssence();
+// Cancella tutte le Essenza Vita generate automaticamente aggiunte da
+// la mappa di raccolta degli animali
+Evoca creature. learLifeEssence();
 
-// Add a recipe to summon a Chicken using 3 items
-SummonCreatures.addEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
+// Aggiungi una ricetta per evocare un pollo usando 3 elementi
+EvocaCreature. ddEntity(<entity:minecraft:chicken>, [<minecraft:wheat_seeds>, <minecraft:wheat>, <ore:ingotIron>]);
 
-// Remove the enderman added by the Animal Harvest example
-// from the Life Essence list (presuming it hasn't been cleared)
-SummonCreatures.removeLifeEssence(<entity:minecraft:enderman>);
+// Rimuovi l'enderman aggiunto dall'esempio di raccolta degli animali
+// dalla lista di Essenza della Vita (presumendo che non sia stato cancellato)
+EvocaCreature. emoveLifeEssence(<entity:minecraft:enderman>);
 
-// Manually add a life-essence drop capability for an ender dragon
-SummonCreatures.addLifeEssence(<entity:minecraft:ender_dragon>);
+// Aggiungi manualmente una capacità di goccia di essenza della vita per un drago di un ender
+EvocaCreature. ddLifeEssence(<entity:minecraft:ender_dragon>);
 
-// Remove the default recipe for cows
+// Rimuovi la ricetta predefinita per le vacche
 SummonCreatures.removeEntity(<entity:minecraft:cow>);
 ```
