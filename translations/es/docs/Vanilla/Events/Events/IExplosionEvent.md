@@ -1,6 +1,6 @@
-# IExplosionEvent
+# Evento de Explosión
 
-This interface is extended by all explosion events. That means you can use the getters below to access the position details.
+Esta interfaz es extendida por todos los eventos de la explosión. Esto significa que puede utilizar los getters de abajo para acceder a los detalles de posición.
 
 ## Importar la clase
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
@@ -10,8 +10,8 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 | nombre   | tipo                                   |
 | -------- | -------------------------------------- |
-| world    | [IWorld](/Vanilla/World/IWorld/)       |
-| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| mundo    | [IWorld](/Vanilla/World/IWorld/)       |
+| posición | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | x        | doble                                  |
 | y        | doble                                  |
 | z        | doble                                  |
