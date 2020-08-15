@@ -1,30 +1,30 @@
-# Thermoelectric
-The Thermoelectric package can be used to register or unregister temperatures for blocks to allow them to power the Immersive Engineering Thermoelectric Generator. Liquids inherently have a temperature, so they do not and cannot be registered. Temperatures are in Kelvin.
+# Termoelektryczne
+Zestaw termoelektryczny może być wykorzystywany do rejestrowania lub wyłączania temperatury bloków, aby umożliwić im zasilanie prądnicy termoelektrycznego Inżynierii. Ciecze z natury mają temperaturę, więc nie są i nie mogą być zarejestrowane. Temperatury występują w Kelwinach.
 
 ## Wezwanie do pakietu
-You can call the Thermoelectric package using `mods.immersiveengineering.Thermoelectric`.
+Możesz wywołać pakiet termoelektryczny używając `mods.immersiveengineering.Thermoelectric`.
 
-## Add Temperature Source
+## Dodaj źródło temperatury
 
 | Wymagane | Typ             | Typ danych                                       |
 | -------- | --------------- | ------------------------------------------------ |
-| Wymagane | Target Block    | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
-| Wymagane | Temperature (K) | Liczba całkowita                                 |
+| Wymagane | Blok docelowy   | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Temperatura (K) | Liczba całkowita                                 |
 
 ### Przykład
 ```zenscript
 //Example:
-mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int temperature);
+mods.immersiveengineering.Thermoelectric.addTemperatureSource(IIngredient source, int Temperre);
 
 mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:obsidian>, 1272);
 ```
 
 
-## Remove Temperature Source
+## Usuń źródło temperatury
 
-| Wymagane | Typ          | Typ danych                                       |
-| -------- | ------------ | ------------------------------------------------ |
-| Wymagane | Target Block | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Typ           | Typ danych                                       |
+| -------- | ------------- | ------------------------------------------------ |
+| Wymagane | Blok docelowy | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
 
 ### Przykład
 ```zenscript
