@@ -29,9 +29,9 @@ This function removes *all* Plastic Mixer recipes:
 mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Adding
+## 添加
 
-The following functions can be used to add recipes to the TPP:
+以下函数可以用来向TP添加配方：
 
 ```zenscript
 // Add a two-way recipe (temperature in Kelvin)
