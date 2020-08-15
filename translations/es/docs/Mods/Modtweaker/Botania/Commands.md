@@ -1,4 +1,4 @@
-# Commands
+# Comandos
 
 ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
@@ -9,97 +9,97 @@ To access these commands you do the same as you do for CraftTweaker commands, yo
 
 ### botbrews
 
-Usage:
+Uso:
 
 `/crafttweaker botbrews`
 
 `/ct botbrews`
 
-Description:
+Descripción:
 
 Outputs a list of all registered Botania Brews to the crafttweaker.log file.
 
 ### botorechid
 
-Usage:
+Uso:
 
 `/crafttweaker botorechid`
 
 `/ct botorechid`
 
-Description:
+Descripción:
 
 Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
 
 ### botania apothecary
 
-Usage:
+Uso:
 
 `/crafttweaker botania apothecary`
 
 `/ct botania apothecary`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
 
 ### botania brews
 
-Usage:
+Uso:
 
 `/crafttweaker botania brews`
 
 `/ct botania brews`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
 
 ### botania trades
 
-Usage:
+Uso:
 
 `/crafttweaker botania trades`
 
 `/ct botania trades`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
 
 ### botania infusions
 
-Usage:
+Uso:
 
 `/crafttweaker botania infusions`
 
 `/ct botania infusions`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
 
 ### botania daisy
 
-Usage:
+Uso:
 
 `/crafttweaker botania daisy`
 
 `/ct botania daisy`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
 
 ### botania altar
 
-Usage:
+Uso:
 
 `/crafttweaker botania altar`
 
 `/ct botania altar`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
 
@@ -107,48 +107,48 @@ Outputs a list of all registerd botania altar recipes to the crafttweaker.log fi
 
 ### botlexcats
 
-Usage:
+Uso:
 
 `/crafttweaker botlexcats`
 
 `/ct botlexcats`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
 
 ### botlexentries
 
-Usage:
+Uso:
 
 `/crafttweaker botlexentries`
 
 `/ct botlexentries`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
 
 ### botlextypes
 
-Usage:
+Uso:
 
 `/crafttweaker botlextypes`
 
 `/ct botlextypes`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
 
 ### botlexpages
 
-Usage:
+Uso:
 
 `/crafttweaker botlexpages`
 
 `/ct botlexpages`
 
-Description:
+Descripción:
 
 Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.
