@@ -1,22 +1,22 @@
-# Map
+# Karte
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+Mit dem Kartenpaket können Sie einen Wegpunkt mittels BASE's Wegpunkt-Event-Handler festlegen.
 
 ## Dieses Paket importieren
 
-You can import the package so that you don't have to retype it everytime.
+Sie können das Paket so importieren, dass Sie es nicht immer neu eingeben müssen.
 
-    import mods.contenttweaker.Map;
+    importieren mods.contenttweaker.Map;
     
 
-## Adding Waypoints
+## Wegpunkte hinzufügen
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+Dies ist die einzige Methode, die das Kartenpaket offenbart und es ermöglicht Ihnen, einen Wegpunkt an der angegebenen Stelle zu setzen.  
+Es ist eine ungültige Methode mit den Parametern:
 
-- string name
+- string-Name
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(String-Name, IWorld-Welt, IBlockPos pos, CTColor Farbe)
