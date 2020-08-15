@@ -1,19 +1,19 @@
-# Industrial Foregoing
+# Precedenti Industriali
 
-Industrial Foregoing's BioReactor, Laser Drill and Sludge Refiner CraftTweaker support.
+Supporto per Bioreattore, trapano laser e raffinatore per fanghi industriali di cui sopra.
 
-### Item Weight
+### Peso Articolo
 
-The `ItemWeight` is a number that represents the chance of an item to get selected. For example:
+Il `ItemWeight` è un numero che rappresenta la possibilità di un elemento di ottenere selezionato. Per esempio:
 
-| Item  | Weight | Chance % |
-| ----- | ------ | -------- |
-| Stone | 99     | 99%      |
-| Dirt  | 1      | 1%       |
+| Elemento | Peso | Probabilità % |
+| -------- | ---- | ------------- |
+| Pietra   | 99   | 99%           |
+| Terra    | 1    | 1%            |
 
-| Item  | Weight | Chance % |
-| ----- | ------ | -------- |
-| Stone | 2      | 66%      |
-| Dirt  | 1      | 33%      |
+| Elemento | Peso | Probabilità % |
+| -------- | ---- | ------------- |
+| Pietra   | 2    | 66%           |
+| Terra    | 1    | 33%           |
 
 ItemChance% = (ItemWeight/TotalWeight)*100
