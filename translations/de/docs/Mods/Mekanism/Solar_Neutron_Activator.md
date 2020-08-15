@@ -10,7 +10,7 @@ mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasO
 mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
@@ -21,7 +21,7 @@ mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>);
 
 Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
 
-## Removing all recipes
+## Entferne alle Rezepte
 
 As of Mekanism 9.7.0 it is now possible to remove all Solar Neutron Activator recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
