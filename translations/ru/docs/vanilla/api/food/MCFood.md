@@ -10,11 +10,11 @@ crafttweaker.api.food.MCFood
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+new crafttweaker.api.food.MCFood(исцеление как int, насыщенность как плавный);
 ```
 | Параметр   | Тип   | Описание             |
 | ---------- | ----- | -------------------- |
-| healing    | int   | Описание отсутствует |
+| исцеление  | int   | Описание отсутствует |
 | saturation | float | Описание отсутствует |
 
 
@@ -22,16 +22,16 @@ new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ## Методы
 ### addEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance, вероятность как плавание);
 ```
 
 | Параметр    | Тип                                                                                           | Описание             |
 | ----------- | --------------------------------------------------------------------------------------------- | -------------------- |
 | effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
-| probability | float                                                                                         | Описание отсутствует |
+| вероятность | float                                                                                         | Описание отсутствует |
 
 
 ### clearEffects
@@ -42,23 +42,23 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Параметр | Тип                                                                                           | Описание             |
-| -------- | --------------------------------------------------------------------------------------------- | -------------------- |
-| effect   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| Параметр | Тип                                                                                                   | Описание             |
+| -------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
+| effect   | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
+myMCFood.setCanEatWhenFull(canEatWhenFull как boolean);
 ```
 
 | Параметр       | Тип     | Описание             |
@@ -66,51 +66,51 @@ myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 | canEatWhenFull | boolean | Описание отсутствует |
 
 
-### setFastEating
+### Настройка FastEating
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Параметр   | Тип     | Описание             |
-| ---------- | ------- | -------------------- |
-| fastEating | boolean | Описание отсутствует |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| Зажигаем | boolean | Описание отсутствует |
 
 
-### setHealing
+### назначение лечения
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setHealing(healing as int);
+myMCFood.setHealing(исцеление как int);
 ```
 
-| Параметр | Тип | Описание             |
-| -------- | --- | -------------------- |
-| healing  | int | Описание отсутствует |
+| Параметр  | Тип | Описание             |
+| --------- | --- | -------------------- |
+| исцеление | int | Описание отсутствует |
 
 
-### setMeat
+### Мясо
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setMeat(мясо в виде бункеров);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| meat     | boolean | Описание отсутствует |
+| мясо     | boolean | Описание отсутствует |
 
 
 ### setSaturation
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(saturation as float);
+myMCFood.setSaturation(продолжительность как плавный);
 ```
 
 | Параметр     | Тип   | Описание             |
@@ -121,11 +121,11 @@ myMCFood.setSaturation(saturation as float);
 
 ## Свойства
 
-| Название       | Тип     | Имеет Getter | Имеет Setter |
-| -------------- | ------- | ------------ | ------------ |
-| canEatWhenFull | boolean | true         | false        |
-| healing        | int     | true         | false        |
-| isFastEating   | boolean | true         | false        |
-| meat           | boolean | true         | false        |
-| насыщенность   | float   | true         | false        |
+| Название        | Тип     | Имеет Getter | Имеет Setter |
+| --------------- | ------- | ------------ | ------------ |
+| canEatWhenFull  | boolean | true         | false        |
+| исцеление       | int     | true         | false        |
+| небыстроеееееие | boolean | true         | false        |
+| мясо            | boolean | true         | false        |
+| насыщенность    | float   | true         | false        |
 
