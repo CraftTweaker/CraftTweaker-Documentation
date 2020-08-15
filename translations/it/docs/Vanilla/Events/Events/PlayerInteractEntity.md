@@ -1,16 +1,16 @@
 # PlayerInteractEntity
 
-The PlayerInteractEntity Event is fired whenever a player interacts with an Entity. It can be canceled to prevent the interaction from taking place. If the event is canceled, a specific result of success, fail or pass can be provided. By default, the result is pass.
+L'evento PlayerInteractEntity viene sparato ogni volta che un giocatore interagisce con un'Entità. Può essere annullato per evitare che l'interazione abbia luogo. Se l'evento viene annullato, può essere fornito un risultato specifico del successo, del fallimento o del passaggio. Per impostazione predefinita, il risultato è passato.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractEntityEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerInteractEntityEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerInteractEntity Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteractEntity Events implementa le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [PlayerInteract](/Vanilla/Events/Events/PlayerInteract/)
@@ -18,14 +18,14 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 
 ## ZenGetters & ZenSetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
-| ZenGetter            | ZenSetters           | Tipo Di Reso                          |
-| -------------------- | -------------------- | ------------------------------------- |
-| `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
-| `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
+| ZenGetter                | ZenSetters               | Tipo Di Reso                          |
+| ------------------------ | ------------------------ | ------------------------------------- |
+| `giocatore`              |                          | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `target`                 |                          | [IEntity](/Vanilla/Entities/IEntity/) |
+| `cancellazioneRisultato` | `cancellazioneRisultato` | string ("success" / "pass" / "fail")  |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` imposta l'evento come annullato.
