@@ -1,22 +1,22 @@
 # Logger
 
-If the print-function is not enough for you, then you can use the logger Object to log Commands, information warnings and more.
+如果打印函数对您来说还不够，那么您可以使用日志对象到日志命令、信息警告和更多。
 
-## Accessing the Logging Handler
+## 访问日志处理程序
 
-You can access the Formatting Handler using the `logger` [global keyword](/Vanilla/Global_Functions/).
+您可以使用 `记录器` [全局关键字](/Vanilla/Global_Functions/) 访问格式化处理器。
 
-## Logging
+## 日志记录
 
-- logCommand(String message);
-- logInfo(String message);
-- logWarning(String message);
-- logError(String message);
+- logCommand(消息)；
+- logInfo(消息)；
+- 日志警告(消息)；
+- 日志错误(消息)；
 
-## Accessible, but useless Methods
+## 可访问但无用的方法
 
-- logError(String message, Throwable exception);
+- logError(消息，可浏览异常)；
 - logPlayer([IPlayer](/Vanilla/Players/IPlayer/) player);
 
-You can not use Java's throwables so the first Method is useless.  
-The second Method does absolutely nothing. Literally, the implementation is empty!
+您不能使用 Java 的螺旋形，所以第一个方法没有用。  
+第二个方法绝对没有任何作用。 从字面上讲，执行是空的！
