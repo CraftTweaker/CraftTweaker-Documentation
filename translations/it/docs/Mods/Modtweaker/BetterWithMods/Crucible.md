@@ -1,8 +1,8 @@
-# Crucible
+# Crogiolo
 
-## Basic Recipe
+## Ricetta Di Base
 
-* Adds a Unstoked Crucible Recipe 
+* Aggiunge una Ricetta Crogiolo Non Stupita 
 
 ```zenscript
 mods.betterwithmods.Crucible.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -11,7 +11,7 @@ mods.betterwithmods.Crucible.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]
 mods.betterwithmods.Crucible.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Crucible Recipe 
+* Aggiunge una ricetta Crogiolo Stoccata 
 
 ```zenscript
 mods.betterwithmods.Crucible.addStoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -20,49 +20,49 @@ mods.betterwithmods.Crucible.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Crucible.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Rimozione
 
-* Remove a Crucible recipe based on the output
+* Rimuovere una ricetta Crogibile in base all'uscita
 
 ```zenscript
-mods.betterwithmods.Crucible.remove(IItemStack[] outputs);
+mods.betterwithmods.Crucible.remove(IItemStack[] output);
 ```
 
-* Remove all Crucible recipes
+* Rimuovi tutte le ricette Crogibili
 
 ```zenscript
 mods.betterwithmods.Crucible.removeAll();
 ```
 
-## Builder
+## Costruttore
 
-The Crucible has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Il Crogiolo ha un costruttore di ricette che permette un controllo più preciso sulle ricette. Tutti i metodi precedenti sono semplicemente tagli corti per usare il costruttore.
 
-* To create a new Crucible builder. `mods.betterwithmods.Crucible.builder()`
+* Per creare un nuovo costruttore Crogiolo. `mods.betterwithmods.Crucible.builder()`
 
-* Crucible methods
+* Metodi crogioli
      
-     * Sets up the inputs and outputs of the recipe  
+     * Imposta gli input e gli output della ricetta  
               zenscript
               buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
-     * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+     * Imposta la priorità della ricetta, minore è la priorità quanto prima sarà creata. Predefinito=0.  
               zenscript
               setPriority(int priority)
      
-     * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked Crucible. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+     * Impostare i requisiti di calore della ricetta. Il calore è usato per controllare se la ricetta può essere fatta in un Crogiolo soffiato o non soffocato. Calore non atteso = 1, Calore atteso = 2. È possibile aggiungere fonti di calore personalizzate e anche livelli di calore personalizzati utilizzando il [Registro di calore](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
               zenscript
-              setHeat(int heat)
+              setHeat(int calore)
      
-     * Set the recipe to ignore the heat value and craft anyways  
+     * Imposta la ricetta per ignorare il valore del calore e creare comunque  
               zenscript
               setIgnoreHeat(boolean ignoreHeat)
      
-     * Finalize the recipe and add it to the game  
+     * Finalizzare la ricetta e aggiungerla al gioco  
               zenscript
               build()
 
-### Example builder usage
+### Esempio di utilizzo del costruttore
 
 ```zenscript
 mods.betterwithmods.Crucible.builder()
