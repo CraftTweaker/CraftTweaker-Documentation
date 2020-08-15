@@ -1,13 +1,13 @@
 # IContainer
 
-An IContainer is an item container that is able to hold several itemStacks such as a chest.
+IContainer は、チェストのような複数の itemStacks を保持できるアイテムコンテナです。
 
 ## ZenGetter/Setter
 
-- `container.containerSize` returns the container size as int
-- `container.getStack(int index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.setStack(int index, IItemStack stack)` sets the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.asString()` `container as string` executes `toString` on the container object.
+- `container.containerSize` はコンテナサイズを int として返します
+- `container.getStack(int index)` は指定されたインデックスの [IItemStack](/Vanilla/Items/IItemStack/) を返します。
+- `container.setStack(int index, IItemStack stack)` は指定されたインデックスで [IItemStack](/Vanilla/Items/IItemStack/) を設定します。
+- `container.asString()` `container` は `toString` をコンテナオブジェクトで実行します。
 
 ## Iterable<IItemStack\>
 
