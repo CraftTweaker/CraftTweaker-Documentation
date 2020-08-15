@@ -1,27 +1,27 @@
 # コマンド
 
-You can use this class to send a command, you cannot use this class to create new commands! Look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/) to add new commands. You can also use a [ICommandManager](/Vanilla/Commands/ICommandManager/).
+このクラスを使用してコマンドを送信できます。このクラスを使用して新しいコマンドを作成することはできません。 新しいコマンドを追加するには [CommandEvent](/Vanilla/Events/Events/CommandEvent/) を参照してください。 [ICommandManager](/Vanilla/Commands/ICommandManager/) を使用することもできます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.Commands;`
 
-## Calling a command
+## コマンドを呼び出す
 
-This is the only thing you can do with the Commands package.
+Commands パッケージでできるのはこれだけです。
 
 ```zenscript
 call(String command, IPlayer player, IWorld world)
 call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
 ```
 
-Parameters:
+パラメータ:
 
-- String command → The command to be executed
-- [IPlayer](/Vanilla/Players/IPlayer/) player → The Player executing the command
-- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → The world the command is executed in
-- boolean logToChat → Should the command output appear in the MC chat?
-- boolean overridePermissions should the command be executed regardless of the required permission level?
+- 文字列コマンド → 実行するコマンド
+- [IPlayer](/Vanilla/Players/IPlayer/) プレーヤー → コマンドを実行しているプレイヤー
+- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) ワールド → コマンドを実行する
+- boolean logToChat → MC チャットにコマンド出力が表示されるか?
+- boolean overridePermissionsは必要な権限レベルに関係なくコマンドを実行する必要がありますか?
 
-The two booleans either both need to be added or omitted. If you call the command without them, they will be true.
+2つのブール値は、両方とも追加または省略する必要があります。 それらなしでコマンドを呼び出せば、それらは真実です。
