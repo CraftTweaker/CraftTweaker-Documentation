@@ -17,9 +17,9 @@ Returns int
 myMCMaterialColor.getMapColor(index as int);
 ```
 
-| パラメータ  | タイプ | 説明                      |
-| ------ | --- | ----------------------- |
-| インデックス | int | No description provided |
+| パラメータ  | タイプ | 説明           |
+| ------ | --- | ------------ |
+| インデックス | int | 説明が提供されていません |
 
 
 
