@@ -1,11 +1,11 @@
-# Survivalist
+# Sopravvivente
 
-## Chopping Block
+## Blocco Di Chopping
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(IIngredient input, IItemStack outputMultiplier, hitCountMultiplier);
 ```
 
 ##### Esempio
@@ -26,7 +26,7 @@ gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient inpu
 gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## Drying Rack
+## Rack Di Essiccazione
 
 ### InputStack, OutputStack, Time in Ticks
 
@@ -52,4 +52,4 @@ gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input)
 gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack can be ore dictionary and anything surrounded by {} is optional
+#### InputStack può essere dizionario minerario e qualsiasi cosa circondata da {} è opzionale
