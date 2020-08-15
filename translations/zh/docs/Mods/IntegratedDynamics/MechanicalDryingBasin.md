@@ -1,30 +1,30 @@
-# MechanicalDryingBasin
+# 机械式干燥盆地：
 
-This package allows you to modify recipes for the Mechanical Drying Basin.
+这个包允许您修改干燥盆地的配方。
 
 ## 导入相关包
 
-If you want to import this package, here you go:
+如果您想导入这个包，您可以在这里：
 
 ```zenscript
-import mods.integrateddynamics.MechanicalDryingBasin;
+导入 mods.integrateddynamics.MechanicalDryingBasin;
 ```
 
-## Adding Recipes
+## 添加配方
 
 ```zenscript
-//MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+/MechanicalDryingBasin.addRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
 
-MechanicalDryingBasin.addRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+MechanicalDryingBasin. ddRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10)；
 ```
 
-## Removing Recipes
+## 删除配方
 
 ```zenscript
-//MechanicalDryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
-MechanicalDryingBasin.removeRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
+/MechanicalDryingBasin.removeRecipe(@Optional IItemStack inputStack, @Optional ILiquidStack inputFluid, @Optional IItemStack outputStack, @Optional ILiquidStack outputFluid, @Optional(10) int duration);
+MechanicalDryingBasin. emoveRecipe(<minecraft:melon>, <liquid:lava> * 100, <minecraft:stick>, <liquid:water> * 100, 10);
 
 
-//MechanicalDryingBasin.removeRecipesWithOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
-MechanicalDryingBasin.removeRecipesWithOutput(<minecraft:leather>, null);
+//MechanicalDryingBasin. emoveRecipesWOutput(@Optional IItemStack outputStack, @Optional ILiquidStack outputFluid);
+MechanicalDryingBasin.removeRecipesWidOutput(<minecraft:leather>, null);
 ```
