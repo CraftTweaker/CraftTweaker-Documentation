@@ -1,12 +1,12 @@
-# Recipe Functions
+# Funciones de Receta
 
-# IRecipeFunction
+# IRecipeFunción
 
-Some recipes support custom functions to programmatically determine their output.  
-This can be especially useful if you need some of the input item's information, like the damage value.  
-This is a so-called IRecipeFunction.
+Algunas recetas soportan funciones personalizadas para determinar programáticamente su salida.  
+Esto puede ser especialmente útil si necesitas parte de la información del artículo de entrada, como el valor del daño.  
+Esta es una llamada IRecipeFunction.
 
-## Example for repairing a pickaxe
+## Ejemplo para reparar un pico
 
 ```zenscript
 val diaPick = <minecraft:diamond_pickaxe>;
@@ -14,47 +14,47 @@ val diaPick = <minecraft:diamond_pickaxe>;
 //we start normal, by writing the output
 recipes.addShapeless("pickrepair",diaPick,
 
-//followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
-[diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
+//seguido por el arreglo de entrada. Un cambio sin embargo - marcamos el pico de diamante, así que podemos usarlo en la función más adelante
+[diaPick. nyDamage().marked("mark"),<minecraft:diamond>],
 
-//now we start declaring the function. 
-//It needs 3 parameters, one for the output, one for the inputs and one for crafting info. 
-//We'll only need the input parameter, though.
+//ahora comenzamos a declarar la función. 
+//It necesita 3 parámetros, uno para la salida, uno para las entradas y otro para la información de fabricación. 
+//Sólo necesitaremos el parámetro de entrada.
 function(out, ins, cInfo){
 
-    //now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
+    //ahora devolvemos el pico con 0 DMG o daño corriente -10, sea cual sea el nivel más alto. Esto es para prevenir valores de daños negativos.
     return ins.mark.withDamage(max(0,ins.mark.damage - 10));
 }, 
-//We don't need a recipeAction here so just set it to null
-null);
+//No necesitamos una receta aquí por lo que solo establecerla nula
+nula);
 ```
 
-## How to set up an IRecipeFunction
+## Cómo configurar una IRecipeFunction
 
-As you might have seen in the example above, there is a function with 3 Parameters:  
-You don't have to call them this way, they can have any name.
+Como podría haber visto en el ejemplo anterior, hay una función con 3 parámetros:  
+No tienes que llamarlos de esta manera, pueden tener ningún nombre.
 
-`out` is the recipe's output and an IItemStack object.  
-`ins` is a map with the marks as keys and the marked inputs as values.  
-`cInfo` is an ICraftingInfo Object
+`out` es la salida de la receta y un objeto ItemStack.  
+`ins` es un mapa con las marcas como claves y las entradas marcadas como valores.  
+`cInfo` es un objeto ICraftingInfo
 
-The function must return the IItemStack that the recipe should output.
+La función debe devolver el ItemStack que la receta debe salir.
 
-You can invalidate a recipe by returning `null` so it can't be crafted under certain conditions.
+Puedes invalidar una receta devolviendo `nulo` para que no se pueda fabricar bajo ciertas condiciones.
 
-Modifying the `ins` here is a bad idea, this function triggers for each change in the crafting grid, not when actually pulling out the result.
+Modificar el `in` aquí es una mala idea. esta función activa para cada cambio en la rejilla de fabricación, no cuando se extrae el resultado.
 
-# IRecipeAction
+# IReceta
 
-But CraftTweaker goes beyond simply calculating your outputs using functions.  
-With an IRecipeAction Function, you can also determine what should happen when a user crafts the item.  
-An IRecipeAction object comes after an IRecipeFunction!
+Pero CraftTweaker va más allá de simplemente calcular las salidas usando funciones.  
+Con una función de receta también puedes determinar qué debe ocurrir cuando un usuario fabrica el artículo.  
+Un objeto IRecipeAction viene después de una IRecipeFunction!
 
 ```zenscript
 val stone = <minecraft:stone>;
 
-recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],
-//IrecipeFunction, just return the output, it doesn't interest us this time.
+recetas.addShapeless("experiencestone",stone,[stone,stone,stone,stone,stone],
+//IrecipeFunction, simplemente devuelve la salida, esta vez no nos interesa.
 function(out,ins,cInfo){
     return out;
 },
@@ -64,7 +64,7 @@ function(out,cInfo,player){
 });
 ```
 
-This gives the player who performs the recipe 1 level each time the crafting is completed. Again, we have a function with 3 Parameters:  
+Esto da al jugador que realiza el nivel de la receta 1 cada vez que se completa la fabricación. Again, we have a function with 3 Parameters:  
 `out` is the recipe's output and an IItemStack object.  
 `cInfo` is an ICraftingInfo Object  
 `player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object.
