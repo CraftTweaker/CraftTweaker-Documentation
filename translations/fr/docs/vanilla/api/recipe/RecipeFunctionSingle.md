@@ -1,32 +1,32 @@
-# RecipeFunctionSingle
+# Fonction de recette simple
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-crafttweaker.api.recipe.RecipeFunctionSingle
+crafttweaker.api.recipe.Fonction de recette simple
 ```
 
-## Functional Interface
+## Interface fonctionnelle
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+Cette classe est une interface fonctionnelle. Cela signifie que vous pouvez utiliser la notation lambda pour créer une instance de celle-ci. La notation lambda ressemble à :
 ```zenscript
-(usualOut, inputs) => <item:minecraft:dirt>
+(habituellement) => <item:minecraft:dirt>
 ```
 ## Méthodes
-### process
+### Processus
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Type de retour : [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
 ```
 
-| Paramètre | Type de texte                                                     | Libellé                 |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Paramètre          | Type de texte                                                     | Libellé                    |
+| ------------------ | ----------------------------------------------------------------- | -------------------------- |
+| format@@0 usualOut | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Aucune description fournie |
+| inputs             | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Aucune description fournie |
 
 
 
