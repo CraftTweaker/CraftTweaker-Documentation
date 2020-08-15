@@ -1,9 +1,9 @@
-# Events and Traits
+# 事件和特性
 
-## Credits:
+## 积分：
 
-Credits goes out to Kindlich for writing most of the Event implementation!
+感谢Kindlich撰写大部分事件实现！
 
-## PSA:
+## PSA：
 
-All the Events listed under the Event Tab are partially documented-based of the information I had available to me at the time. If the events has been update to feature mods Setters/Getters/Methods, that information can probably be found under: [Under the IEventManager Page](/Vanilla/Events/IEventManager/)
+活动选项卡下列出的所有活动部分是根据我当时掌握的信息记录的。 如果事件已经更新，可以在以下位置找到相关信息： [在 IEventManager 页面](/Vanilla/Events/IEventManager/)
