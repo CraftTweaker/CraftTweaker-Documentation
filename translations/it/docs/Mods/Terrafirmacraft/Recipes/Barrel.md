@@ -1,16 +1,16 @@
 # Barrel
 
-## Package
+## Pacchetto
 ```zenscript
 import mods.terrafirmacraft.Barrel;
 ```
 
-## Addition
+## Addizione
 ```zenscript
 Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
