@@ -33,9 +33,9 @@ The following information can be retrieved/set during the event:
 | ---------- | ---------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `isPlayer` | bool                                     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `eintrag`  | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `duration` | int                                      |
 
-| ZenSetter  | Parameter Type |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter  | Parametertyp |
+| ---------- | ------------ |
+| `duration` | int          |
