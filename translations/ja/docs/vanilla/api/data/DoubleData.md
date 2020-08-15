@@ -10,17 +10,17 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.data.DoubleData
 ```
 
-## Implemented Interfaces
-DoubleData implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+DoubleData は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.data.DoubleData(internal as double);
+new crafttweaker.api.data.DoubleData(doubleとして内部);
 ```
-| パラメータ | タイプ    | 説明                      |
-| ----- | ------ | ----------------------- |
-| 内部    | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 内部    | double | 説明が提供されていません |
 
 
 
