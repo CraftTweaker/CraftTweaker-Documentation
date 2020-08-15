@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.heat_exchanger`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
 mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
 mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);
