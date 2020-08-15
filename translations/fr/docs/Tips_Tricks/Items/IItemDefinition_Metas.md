@@ -1,47 +1,47 @@
-# Using IItemDefinitions to save a lot of time when referring meta-items
+# Utiliser IItemDefinitions pour gagner beaucoup de temps lors de la référence de méta-éléments
 
-## Problem
+## Problème
 
-Let's say we want to remove the recipes of some specific colors of wool.  
-White wool has the metadata 0, all colors range from meta 1 to meta 15, so there are 16 in total.
+Disons que nous voulons enlever les recettes de quelques couleurs spécifiques de laine.  
+La laine blanche a les métadonnées 0, toutes les couleurs vont de meta 1 à meta 15, donc il y a 16 au total.
 
-We want to remove the wools with meta 3 to 12. What do we do?  
-We can't just remove all of them (in other words, use `<minecraft:wool:*>`), but we also don't want to write 10 times the same thing.  
-While in this example this would totally work, in large scale this becomes pretty annoying!
+Nous voulons enlever les laines avec meta 3 à 12. Que faisons-nous?  
+Nous ne pouvons pas nous contenter de les supprimer tous (en d'autres mots, utilisez `<minecraft:wool:*>`), mais nous ne voulons pas non plus écrire 10 fois la même chose.  
+Alors que dans cet exemple cela fonctionnerait totalement, à grande échelle, cela devient assez ennuyeux !
 
-## What do we know/need to know
+## Que savons-nous/avons besoin de savoir
 
-- recipes.remove requires an [IIngredient](/Vanilla/Variable_Types/IIngredient/) Object
-- An [IItemStack](/Vanilla/Items/IItemStack/) can be used as [IIngredient](/Vanilla/Variable_Types/IIngredient/) as [IItemstack](/Vanilla/Items/IItemStack/) extends [IIngredient](/Vanilla/Variable_Types/IIngredient/)
-- We can use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) to create [IItemStacks](/Vanilla/Items/IItemStack/)
+- recipes.remove requiert un objet [Igredient](/Vanilla/Variable_Types/IIngredient/)
+- Un [IItemStack](/Vanilla/Items/IItemStack/) peut être utilisé comme [IIngrédient](/Vanilla/Variable_Types/IIngredient/) comme [IItemstack](/Vanilla/Items/IItemStack/) étend [IIngrédient](/Vanilla/Variable_Types/IIngredient/)
+- Nous pouvons utiliser [IItemDefinitions](/Vanilla/Items/IItemDefinition/) pour créer [IItemStacks](/Vanilla/Items/IItemStack/)
 
 ## Solution
 
-We use [IItemDefinitions](/Vanilla/Items/IItemDefinition/) and an Integer Range and iterate through latter.  
-If we can't use an int range we can also use a number array, but that would require you to type in all required numbers.  
-You can also use this to Except some items from being used.
+Nous utilisons [IItemDefinitions](/Vanilla/Items/IItemDefinition/) et une plage d'entier et itérons à travers ces dernières.  
+Si nous ne pouvons pas utiliser une plage d'ints, nous pouvons également utiliser une table de nombres, mais cela vous demandera de taper tous les nombres requis.  
+Vous pouvez également utiliser ceci à l'exception de certains éléments à utiliser.
 
 ```zenscript
-val itemDef = <minecraft:wool>.definition;
+val itemDef = <minecraft:wool>. efinition;
 
-//does this for <minecraft:wool:3> to <minecraft:wool:12>
-for i in 3 to 13{
-    recipes.remove(itemDef.makeStack(i));
+//fait cela pour <minecraft:wool:3> à <minecraft:wool:12>
+pour i dans 3 à 13{
+    recettes.remove(itemDef. akeStack(i));
 }
 
 
-val numArray = [3,4,5,6,7,8,9,10,11,12] as int[];
+val numArray = [3,4,5,6,7,8,9,10,11,12] comme int[];
 
 
-//<minecraft:wool:3> to <minecraft:wool:12>
-for i in numArray{
-    itemDef.makeStack(i).addTooltip("Un-Craftable");
+//<minecraft:wool:3> à <minecraft:wool:12>
+pour i dans numArray{
+    itemDef. akeStack(i).addTooltip("Un-Craftable");
 }
 
-//<minecraft:wool:3> to <minecraft:wool:12>, but without 5 and 9
-for i in 3 .. 13{
+//<minecraft:wool:3> à <minecraft:wool:12>, mais sans 5 et 9
+pour i in 3 .. 13{
     if(i != 5 & i != 9){
-        itemDef.makeStack(i).addShiftTooltip("Help me!");
+        itemDef.makeStack(i).addShiftTooltip("Aidez-moi !");
     }
 }
 
