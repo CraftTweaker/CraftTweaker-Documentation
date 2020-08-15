@@ -1,4 +1,4 @@
-# Chemical Combiner
+# 化学結合器
 
 # パッケージ
 ```zenscript
@@ -6,9 +6,9 @@ mods.alchemistry.Combiner組み合わせ
 ```
 
 ## メソッド
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** - レシピの出力。
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - レシピの入力。
 
 
 ## 追加
@@ -30,14 +30,14 @@ mods.alchemistry.Combiner.removeAllRecipes();Combiner.removeAllRecipes();
 ```
 
 
-# Game Stages Integration
+# ゲームステージの統合
 
-## New Recipes
+## 新しいレシピ
 ```zenscript
 mods.alchemistry.Atomizermods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Existing Recipe
+## 既存のレシピ
 
 ```zenscript
 mods.alchemistry.Atomizermods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);
