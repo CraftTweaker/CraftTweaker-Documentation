@@ -1,7 +1,7 @@
-# Garden Stuff
-This mod is a collection of garden-related mods originally based on Modular Flower Pots.
+# Gartenmaterial
+Dieser Mod ist eine Sammlung von Gartenmods, die ursprünglich auf Modularen Blumentöpfen basieren.
 
 
 ## CraftTweaker Integration
 
-Garden Stuff comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)
+Garden Stuff kommt mit Native CraftTweaker Integration. Das bedeutet, dass Probleme mit den hinzugefügten Methoden im [Garden Stuff Issue-Tracker diskutiert werden sollten](https://github.com/jaquadro/GardenCollection/issues)
