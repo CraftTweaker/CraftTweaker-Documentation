@@ -1,6 +1,6 @@
-# Ingot Former
+# Früher Barren
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.ingot_former`
 
 ## Rezepte hinzufügen
