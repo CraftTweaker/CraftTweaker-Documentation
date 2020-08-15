@@ -1,26 +1,26 @@
-# IItemUse Function
+# IItemUse 関数
 
-An itemUseFunction is called whenever the associated [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) is used on a block.
+関連する [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) がブロック上で使用されるたびに、itemUseFunction が呼び出されます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IItemUse;`
 
-## Parameters
+## パラメータ
 
-The IItemUse function is a function with the following parameters (In this order):
+IItemUse 関数は、以下のパラメータを持つ関数です(この順序で)。
 
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Position of the block the item is used on
-- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → The used Hand (main or off)
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side of the block the item is used on
-- [Position3f](/Vanilla/Utils/Position3f/) blockHit → The block's relative X,Y and Z coordinate → All three are between 0 and 1
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) プレーヤー → 右クリックを行うプレイヤー
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → プレイヤーがいる世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → アイテムが使用されているブロックの位置
+- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → 使用済みHand (メインまたはオフ)
+- [向き合う](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) → アイテムが使用されているブロックの辺。
+- [Position3f](/Vanilla/Utils/Position3f/) blockHit → ブロックの相対的なX,YおよびZ座標→ 3つすべてが0から1の間です
 
-The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) object.
+関数は [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) オブジェクトを返す必要があります。
 
-## Example
+## 例
 
 ```zenscript
 #loader contenttweaker
