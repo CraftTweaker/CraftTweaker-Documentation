@@ -28,10 +28,10 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 | Parameter | Type                                                              | Beschreibung                              |
 | --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### passt
 
 Does the given stack match the ingredient?
 
@@ -44,16 +44,16 @@ Returns boolean
 
 | Parameter | Type                                                              | Beschreibung       |
 | --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type                                                                | Has Getter | Has Setter |
 | ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| Kommandozeile | String                                                              | true       | false      |
+| gegenstände   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 
 ## Casters
 
