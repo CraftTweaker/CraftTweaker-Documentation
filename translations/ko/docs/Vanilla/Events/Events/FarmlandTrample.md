@@ -18,7 +18,7 @@ FarmlandTrample Events implement the following interfaces and are able to call a
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+다음 정보들은 이벤트를 통해서 얻을 수 있습니다.
 
 | ZenGetter      | ZenSetter | Type                                  |
 | -------------- | --------- | ------------------------------------- |
