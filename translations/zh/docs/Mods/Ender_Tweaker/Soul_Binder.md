@@ -4,7 +4,7 @@
 
 `import mods.enderio.SoulBinder;`
 
-## Method
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
@@ -20,7 +20,7 @@ mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[]
 mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.SoulBinder.removeRecipe(IItemStack output);
