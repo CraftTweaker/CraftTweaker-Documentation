@@ -1,22 +1,22 @@
-# Map
+# Карта
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+Пакет карты позволяет установить путевую точку с помощью обработчика события BASE.
 
-## Importing the package
+## Импорт пакета
 
-You can import the package so that you don't have to retype it everytime.
+Вы можете импортировать этот пакет, так что вам не придется повторно вводить его каждый раз.
 
     import mods.contenttweaker.Map;
     
 
-## Adding Waypoints
+## Добавление путевых точек
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+Это единственный метод, описанный в пакете Map, и он позволяет задать точку в указанном месте.  
+Это пустой метод с параметрами:
 
-- string name
+- название строки
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(String название, IWorld world, почта IBlockPos, CTColor цвет)
