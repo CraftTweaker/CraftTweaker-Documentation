@@ -1,6 +1,6 @@
 # Infuser
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.InfuserInfuser`
 
 ## レシピを追加中
@@ -13,5 +13,5 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.Infuser.addRecipe(IIngredient ite
 mods.nuclearcraft.Supercoolermods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.Infuser.removeAllRecipes();Infuser.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Infuser.removeAllRecipes();
+mods.nurcraft.Infuser.removeAllRecipes();
 ```
