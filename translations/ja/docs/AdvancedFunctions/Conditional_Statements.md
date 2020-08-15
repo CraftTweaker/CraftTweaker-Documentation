@@ -127,7 +127,7 @@ switchy ?
 
 ### in/has loadedMods
 
-You can check, if a mod is loaded by checking if it's in the loadedMods list
+loadedModリストにあるかどうかを確認することで、Modがロードされているかを確認できます。
 
 ```zenscript
 //While contains checks can use in
@@ -141,7 +141,7 @@ if(loadedMods has "mcp"){
 }
 ```
 
-### in/has IIngredient
+### In/has IIngredient
 
 You can also check if an item matches a definition by comparing two IIngredients.  
 With this one you need to be a bit careful as not to confuse the two entries:  
