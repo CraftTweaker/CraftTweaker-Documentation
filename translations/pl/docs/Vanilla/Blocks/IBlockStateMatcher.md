@@ -2,7 +2,7 @@
 
 An IBlockStateMatcher object can be used to match an [IBlockState](/Vanilla/Blocks/IBlockState/) object against a set of requirements or a set of matching blockstates.
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/) or using the static `.create()` method), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockStateMatcher;`
@@ -42,7 +42,7 @@ Returns an IBlockStateMatcher to match the specified blockstate(s).
 - If only one blockstate is supplied in `blockStates`, the resulting IBlockStateMatcher will match *any* blockstate of the provided IBlockState's underlying block with any property values accepted as matching. The `withMatchedValuesForProperty` method can be used to add more specific requirements for the properties. 
 - If multiple `blockStates` are supplied, the resulting IBlockStateMatcher is the same as using the OR (`|`) operator with each of the IBlockStates provided.
 
-## ZenMethods
+## Metody ZenMethods
 
 ### matches
 
@@ -63,10 +63,10 @@ You can also use `A has B` that represents `A.matches(B)`.
     Map<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+Parametry:
 
 - String name → The name of the property
-- String... values → One or more values that the property of a matching IBlockState may have.
+- Ciąg znaków... values → One or more values that the property of a matching IBlockState may have.
 
 Returns a new IBlockStateMatcher with the same property requirements as this IBlockStateMatcher with the exception of the specified property `name`, which will now allow any of the specified `values` as a matching input.
 
