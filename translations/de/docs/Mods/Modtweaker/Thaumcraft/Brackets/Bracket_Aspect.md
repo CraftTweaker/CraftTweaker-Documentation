@@ -1,8 +1,8 @@
-# Aspect Bracket handler
+# Aspekt Klammerhandler
 
-The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
+Der Aspekt Klammerhandler erlaubt es dir eine Thaumcraft [Facettenstapel](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) zu holen, falls du einen brauchst.
 
-Aspects are referenced in the Aspect Bracket handler this way:
+Aspekte werden auf diese Weise im Aspect Bracket Handler referenziert:
 
 ```zenscript
 <aspect:name>
@@ -10,5 +10,5 @@ Aspects are referenced in the Aspect Bracket handler this way:
 <aspect:ignis>
 ```
 
-If the Aspect is found, this will return an [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) Object with the stacksize 1.  
-Please refer to the [respective Wiki entry](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) for further information on what you can do with these.
+Wenn der Aspekt gefunden wird, wird ein [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) Objekt mit der Stapelgröße 1 zurückgegeben.  
+Bitte lesen Sie den [entsprechenden Wiki-Eintrag](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) für weitere Informationen darüber, was Sie damit tun können.
