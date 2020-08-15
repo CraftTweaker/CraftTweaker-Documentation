@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLivingBase;`
@@ -17,19 +17,19 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | ZenGetter              | Return Type (*can be null*)                            |
 | ---------------------- | ------------------------------------------------------ |
 | activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
-| AIMovementSpeed        | float                                                  |
+| AIMovementSpeed        | float型                                                 |
 | arrowsInEntity         | int                                                    |
 | attackingEntity        | *IEntityLivingBase*                                    |
-| canBreatheUnderwater   | boolean                                                |
-| health                 | float                                                  |
-| isChild                | boolean                                                |
-| isOnLadder             | boolean                                                |
-| isUndead               | boolean                                                |
+| canBreatheUnderwater   | boolean型                                               |
+| health                 | float型                                                 |
+| isChild                | boolean型                                               |
+| isOnLadder             | boolean型                                               |
+| isUndead               | boolean型                                               |
 | lastAttackedEntity     | *IEntityLivingBase*                                    |
 | lastAttackedEntityTime | int                                                    |
 | lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
 | mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| maxHealth              | float                                                  |
+| maxHealth              | float型                                                 |
 | offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)               |
 | revengeTarget          | *IEntityLivingBase*                                    |
 | totalArmorValue        | int                                                    |
@@ -38,9 +38,9 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 
 | ZenSetter          | Parameter Type (*can be null*) |
 | ------------------ | ------------------------------ |
-| AIMovementSpeed    | float                          |
+| AIMovementSpeed    | float型                         |
 | arrowsInEntity     | int                            |
-| health             | float                          |
+| health             | float型                         |
 | lastAttackedEntity | *IEntityLivingBase*            |
 | revengeTarget      | *IEntityLivingBase*            |
 
