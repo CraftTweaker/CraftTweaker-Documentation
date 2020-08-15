@@ -35,7 +35,7 @@ events.onPlayerLoggedIn(function(event) {
 
 The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
 
-| ZenMethod                   | Event-Klasse                                                                                             |
+| ZenMethode                  | Event-Klasse                                                                                             |
 | --------------------------- | -------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
