@@ -1,23 +1,23 @@
-# Facing
+# 正面显示
 
-A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
+CoT 正面是计数 [块的](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) 可能方向
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Facing;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入mods.contenttweiner.Facing；`
 
-## Enumerations
+## 枚举数
 
-Facing can be of those six values:
+面对这六种价值：
 
-- north
-- east
-- south
-- west
-- down
-- up
+- 北区
+- 东部地区
+- 南方
+- 西部地区
+- 向下
+- 上
 
-## Uses
+## 使用
 
-A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+手的主要用途是 [IItemUse 函数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)。
