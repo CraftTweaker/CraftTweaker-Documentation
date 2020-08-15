@@ -7,7 +7,7 @@ A RecipePrimer Object is the actual recipe. You can get such an object from the 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.modularmachinery.RecipePrimer;`
 
-## ZenMethods
+## ZenMethoden
 
 Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
 This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
