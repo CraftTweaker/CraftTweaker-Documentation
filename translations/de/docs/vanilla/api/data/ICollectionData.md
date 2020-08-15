@@ -15,7 +15,7 @@ ICollectionData implements the following interfaces. That means any method avail
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Methoden
-### add
+### hinzufügen
 
 ```zenscript
 new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
@@ -24,7 +24,7 @@ new ListData(["Hello", "World"]).add("today");
 
 | Parameter | Type                                                   | Beschreibung                 |
 | --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| wert      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -33,10 +33,10 @@ new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Beschreibung                                                         |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| Parameter  | Type                                                   | Beschreibung                                                         |
+| ---------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| indexieren | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| wert       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### asList
@@ -94,9 +94,9 @@ new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
+| Parameter | Type                                                   | Beschreibung                     |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -124,9 +124,9 @@ new ListData(["Hello", "World"]).get(index as int);
 new ListData(["Hello", "World"]).get(0);
 ```
 
-| Parameter | Type | Beschreibung        |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parameter  | Type | Beschreibung        |
+| ---------- | ---- | ------------------- |
+| indexieren | int  | The index (0-based) |
 
 
 ### getId
@@ -155,7 +155,7 @@ Returns String
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+### entfernen
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -166,9 +166,9 @@ new ListData(["Hello", "World"]).remove(index as int);
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Beschreibung        |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parameter  | Type | Beschreibung        |
+| ---------- | ---- | ------------------- |
+| indexieren | int  | The index (0-based) |
 
 
 ### set
@@ -182,16 +182,16 @@ new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Beschreibung               |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Parameter  | Type                                                   | Beschreibung               |
+| ---------- | ------------------------------------------------------ | -------------------------- |
+| indexieren | int                                                    | The index to set (0-based) |
+| wert       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Name   | Type | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| grösse | int  | true       | false      |
 
