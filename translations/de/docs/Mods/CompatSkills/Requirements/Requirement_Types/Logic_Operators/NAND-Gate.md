@@ -1,24 +1,24 @@
-# NAND Operator
+# NAND-Betreiber
 
-A **NAND** gate is an inverted **AND** gate. This is the same as using the output of the **AND** gate as the input to the **NOT** gate. This means that the **NAND** gate returns `TRUE` in all cases except for when both inputs are also `TRUE`.
+Ein **NAND** Tor ist ein invertiertes **UND** Tor. Dies ist das Gleiche wie die Verwendung der Ausgabe des **UND** Gates als Eingabe für das **NICHT** Gate. Das bedeutet, dass das **NAND** Gate `TRUE` in allen Fällen zurückgibt, außer wenn beide Eingaben auch `TRUE` sind.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      0 |
+| Input 1 | Input 2 | Ausgang |
+| ------- | ------- | -------:|
+| 0       | 0       |       1 |
+| 0       | 1       |       1 |
+| 1       | 0       |       1 |
+| 1       | 1       |       0 |
 
-    Empty Example:
+    Leeres Beispiel:
     nand|[]~[]
     
-    Filled-In Example:
+    Gefülltes Beispiel:
     nand|[reskillable:defense|24]~[reskillable:agility|24]
     
 
-## Use-Case
+## Verwendungsfall
 
-Once a player gets to defense level 24 and agility level 24 stop allowing them to use leather armor:
+Sobald ein Spieler das Level 24 und die Beweglichkeit Level 24 erreicht hat, kann er Lederrüstungen verwenden:
 
 ```zenscript
 addRequirement(<minecraft:leather_helmet:*>, "nand|[reskillable:defense|24]~[reskillable:agility|24]");
