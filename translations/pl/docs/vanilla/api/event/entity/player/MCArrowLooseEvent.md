@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCArrowLooseEvent
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCArrowLooseEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCArrowLooseEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCArrowLooseEvent>);
 ```
-| Parameter | Type                                                                                                                            | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCArrowLooseEvent](/vanilla/api/event/entity/player/MCArrowLooseEvent)> | No description provided |
+| Parametr | Typ                                                                                                                             | Opis                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCArrowLooseEvent](/vanilla/api/event/entity/player/MCArrowLooseEvent)> | No description provided |
 
 
 
-## Methods
+## Metody
 ### getBow
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
@@ -99,9 +99,9 @@ myMCArrowLooseEvent.isCanceled();
 myMCArrowLooseEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parametr | Typ     | Opis                    |
+| -------- | ------- | ----------------------- |
+| cancel   | boolean | No description provided |
 
 
 ### setCharge
@@ -110,9 +110,9 @@ myMCArrowLooseEvent.setCanceled(cancel as boolean);
 myMCArrowLooseEvent.setCharge(charge as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| charge    | int  | No description provided |
+| Parametr | Typ    | Opis                    |
+| -------- | ------ | ----------------------- |
+| charge   | odcień | No description provided |
 
 
 
