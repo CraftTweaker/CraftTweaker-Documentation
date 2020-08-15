@@ -1,16 +1,16 @@
-# PlayerLoggedOut
+# Spieler abgemeldet
 
-The PlayerLoggedOut Event is fired whenever a player logs out.
+Das PlayerLoggedOut Event wird abgefeuert, wenn ein Spieler sich ausloggt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerLoggedOutEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerLoggedOutEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerLoggedIn Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
