@@ -1,6 +1,6 @@
 # Starch Extractor
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.starch;
 ```
@@ -16,7 +16,7 @@ import mods.calculator.starch;
 starch.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 starch.removeRecipe(IIngredient input);
 ```
