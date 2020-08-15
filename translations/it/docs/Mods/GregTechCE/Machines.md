@@ -1,160 +1,160 @@
-# Machines
+# Macchine
 
-GTCE stores all recipes in a `RecipeMap`. To get them, you need import `mods.gregtech.recipe.RecipeMap` to your code.
+GTCE memorizza tutte le ricette in una `RecipeMap`. Per ottenerli, è necessario importare `mods.gregtech.recipe.RecipeMap` al tuo codice.
 
-Recipes are categorized into their machines, call `RecipeMap.getByName(machineName)` to get specific recipes and builder.
+Le ricette sono classificate nelle loro macchine, chiamano `RecipeMap.getByName(nomemacchina)` per ottenere ricette specifiche e costruttore.
 
-## List of available machines
+## Elenco delle macchine disponibili
 
-- Compressor: `compressor`
-- Extractor: `extractor`
+- Compressore: `compressore`
+- Estrattore: `estrattore`
 - Macerator: `macerator`
-- Ore washing plant: `orewasher`
-- Thermal centrifuge: `thermal_centrifuge`
-- Furnace: `furnace`
-- Microwave: `microwave`
-- Assembling machine: `assembler`
+- Impianto di lavaggio minerale: `orewasher`
+- Centrifuga termica: `termal_centrifuga`
+- Fornace: `forno`
+- Microonde: `microonde`
+- Macchina assemblatrice: `assemblatore`
 - Forming press: `forming_press`
-- Fluid canner: `fluid_canner`
-- Plasma arc furnace: `plasma_arc_furnace`
-- Arc furnace: `arc_furnace`
-- Sifting machine: `sifter`
+- Canner: `fluid_canner`
+- Forno ad arco plasmatico: `plasma_arc_furnace`
+- Forno ad arco: `arc_furnace`
+- Macchina per setacciatura: `sifter`
 - Precision laser engraver: `laser_engraver`
-- Mixing machine: `mixer`
+- Miscelatrice: `mixer`
 - Autoclave: `autoclave`
-- Electromagnetic separator: `electromagnetic_separator`
+- Separatore elettromagnetico: `elettromagnetico_separatore`
 - Polarizer: `polarizer`
-- Chemi bath: `chemical_bath`
-- Brewing machine: `brewer`
-- Fluid heater: `fluid_heater`
-- Distillery: `distillery`
-- Fermenter: `fermenter`
-- Fluid solidifier: `fluid_solidifier`
-- Fluid extractor: `fluid_extractor`
-- Centrifuge: `centrifuge`
-- Electrolyzer: `electrolyzer`
+- Bagno di Chemi: `chimico_bagno`
+- Macchina da birra: `birrificio`
+- Riscaldatore di fluidi: `fluid_heater`
+- Distilleria: `distilleria`
+- Fermentatore: `fermentatore`
+- Solidificatore di fluidi: `fluid_solidificatore`
+- Estrattore di fluidi: `fluid_extractor`
+- Centrifuga: `centrifuga`
+- Elettrolyzer: `elettrolizzatore`
 - Blast furnace: `blast_furnace`
-- Implo compressor: `implosion_compressor`
+- Compressore Implo: `implosion_compressor`
 - Vac freezer: `vacuum_freezer`
-- Chemical reactor: `chemical_reactor`
-- Disti tower: `distillation_tower`
-- Cracker unit: `cracker`
-- Pyrolyse oven: `pyro`
+- Reattore chimico: `chimico_reattore`
+- Torre Disti: `distillation_tower`
+- Unità cracker: `cracker`
+- Forno pirolisso: `pyro`
 - Wiremill: `wiremill`
-- Metal bender: `metal_bender`
-- Alloy smelter: `alloy_smelter`
-- Canning machine: `canner`
+- Cursore metallico: `metal_bender`
+- Ferro ferro: `lega_smelter`
+- Canning macchina: `canner`
 - Lathe: `lathe`
-- Block cutting machine: `cutting_saw`
-- Extruder: `extruder`
-- Forge hammer: `forge_hammer`
-- Packaging machine: `packer`
-- Unpackaging machine: `unpacker`
+- Macchina da taglio a blocchi: `taglia_sega`
+- Estrusore: `estrusore`
+- Forgia martello: `forge_hammer`
+- Imballatrice: `packer`
+- Disimballatrice: `unpacker`
 - Diesel gen: `diesel_generator`
-- Gas turbine: `gas_turbine`
-- Steam turbine: `steam_turbine`
-- Plasma generator: `plasma_generator`
+- Turbina a gas: `turbina`
+- Turbina a vapore: `steam_turbine`
+- Generatore di plasma: `plasma_generator`
 
-**Not yet implemented:**
+**Non ancora attuato:**
 
-- Uu-mater producer: `uuamplifier`
-- Thermal generator: `thermal_generator`
-- Semi-fluid generator: `semi_fluid_generator`
-- Fusion reactor: `fusion_reactor`
+- Produttore Uu-mater: `uuamplifier`
+- Generatore termico: `thermal_generator`
+- Generatore semi-fluido: `semi_fluid_generator`
+- Reattore fusione: `fusion_reattore`
 
-**Primitive Blast Furnace** *uses different syntax from normal recipes.* For example:
+**Primitive Blast Furnace** *utilizza una sintassi diversa dalle normali ricette.* Per esempio:
 
 ```zenscript
 import mods.gregtech.recipe.PBFRecipeBuilder;
 
 //Primitive Blast Furnace
 PBFRecipeBuilder.start()
-    .input(<ore:ingotCompressedWroughtIron> * 1)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    . nput(<ore:ingotCompressedWroughtIron> * 1)
+    .output(<ore:ingotSteel>. irstItem * 1)
     .duration(250)
-    .fuelAmount(2)
+    . uelAmount(2)
     .buildAndRegister();
 
 //Remove recipes from PBF
-import mods.gregtech.recipe.RecipeMaps;
+import mods.gregtech.recipe. ecipeMaps;
 
 for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
     recipe.remove();
 ```
 
-## Builder information
+## Informazioni del costruttore
 
-After getting a instance of `RecipeMap`, you can define recipes by using their builder.
+Dopo aver ricevuto un'istanza di `RecipeMap`, è possibile definire le ricette utilizzando il loro costruttore.
 
-Builder method calling:
+Metodo di compilazione chiamata:
 
 ```zenscript
 recipeMap.recipeBuilder()
 ```
 
-It is a bit like `Stream<T>` in Java, with fully functionally to control your recipe's behaviour.
+È un po 'come `Stream<T>` in Java, con completamente funzionalmente per controllare il comportamento della tua ricetta.
 
-Example for EBF:
+Esempio per EBF:
 
 ```zenscript
-// Electric Blast Furnace
+// Fornace elettrico di Esplosione
 val blast_furnace = mods.gregtech.recipe.RecipeMap.getByName("blast_furnace");
-blast_furnace.recipeBuilder()
+blast_furnace. ecipeBuilder()
     .inputs(<ore:ingotCompressedWroughtIron> * 1)
-    .fluidInputs([<liquid:oxygen> * 500])
-    .outputs(<ore:ingotSteel>.firstItem * 1)
-    .property("temperature", 1000) //this is a minimal temperature at which the item will be smelted
-    .duration(40)
+    . luidInputs([<liquid:oxygen> * 500])
+    . utputs(<ore:ingotSteel>.firstItem * 1)
+    . ropertia ("temperatura", 1000) //questa è una temperatura minima alla quale l'oggetto sarà fuso
+    . uration(40)
     .EUt(120)
     .buildAndRegister();
 ```
 
-Some of properties assignable to `.property()` method:
+Alcune proprietà assegnabili al metodo `.property()`:
 
-| Nome        | Descrizione                                                        |
-| ----------- | ------------------------------------------------------------------ |
-| explosives  | Implosion Compressor, amount of explosives                         |
-| circuit     | Integrated Circuit-configurable machines. Configuration of circuit |
-| temperatura | Blast Furnace. Minimum temperature requirement.                    |
+| Nome        | Descrizione                                                   |
+| ----------- | ------------------------------------------------------------- |
+| esplosivi   | Compressore di Implosione, quantità di esplosivi              |
+| circuito    | Macchine integrate configurabili. Configurazione del circuito |
+| temperatura | Fornace Esplosiva. Temperatura minima prescritta.             |
 
-These ones are **NOT IMPLEMENTED YET:**
+Questi non sono **ANNO IMPLEMENTATO:**
 
-| Nome          | Descrizione                                     |
-| ------------- | ----------------------------------------------- |
-| amplifier     | UU Amplifier. Amount of UU Amplifier outputted. |
-| eu_to_start | Fusion Reactor, EU to start fusion              |
+| Nome          | Descrizione                                              |
+| ------------- | -------------------------------------------------------- |
+| amplificatore | Amplificatore UU. Quantità di amplificatore UU superata. |
+| eu_to_start | Reattore di fusione, UE per avviare la fusione           |
 
-You use it just like the "temperature":
+Lo usi proprio come la "temperatura":
 
 ```zenscript
-.property("circuit", X)//, where X is the integrated circuit configuration
-.property("explosives", Y)//, where Y is the amount of explosives required to make a recipe work
+.property("circuit", X)//, dove X è la configurazione del circuito integrato
+.property("esplosivi", Y)//, dove Y è la quantità di esplosivi necessari per fare un lavoro di ricetta
 ```
 
-More useful methods:
+Metodi più utili:
 
 ```zenscript
 .inputs()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // (itemstack, intitial output chance, tier output chance boost
-.duration() // in ticks
-.notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
-.hidden() // if the recipe is hidden from the JEI
-.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. some of them use that method. The most notable one is macerator
-.EUt() // EU per tick
+. hancedOutput(<itemstack>, 0-10000, 0-10000) (10000 è 100%) // (itemstack, intitial output chance, tier output chance boost
+. uration() // in ticks
+.notConsumable(X) // where X is a CT id. Funziona come .inputs, ma l'elemento non viene consumato
+.hidden() // se la ricetta è nascosta dal JEI
+. hancedOutput(<itemstack>, 0-10000, 0-10000) (10000 è 100%) // non valido per ogni macchina. alcuni di loro usano quel metodo. Il più notevole è il maceratore
+.EUt() // UE per tick
 ```
 
 ## Rimozione
 
-Removing a recipe is done by recipe instance itself, so you have to find a recipe first.
+La rimozione di una ricetta è fatta per istanza di ricetta stessa, quindi è necessario trovare una ricetta prima.
 
 Esempio:
 
 ```zenscript
-val compressor as RecipeMap = RecipeMap.getByName("compressor");
+val compressore come RecipeMap = RecipeMap.getByName("compressore");
 
-// findRecipe(long voltage, IItemHandlerModifiable inputs, IMultipleTankHandler/List<FluidStack> fluidInputs)
+// findRecipe(long voltage, IItemHandlerInput modificabili, IMultipleTankHandler/List<FluidStack> fluidInputs)
 compressor.findRecipe(2, [<minecraft:redstone>], null).remove();
 ```
