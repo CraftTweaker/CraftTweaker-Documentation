@@ -1,7 +1,7 @@
-# Manufactory
+# Ręczna fabryka
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## Importowanie pakietu
+`Mods.nuclearcraft.manufactory`
 
 ## Dodawanie przepisów
 ```zenscript
