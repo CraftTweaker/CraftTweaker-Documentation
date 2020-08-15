@@ -48,15 +48,15 @@ extrautilities2.Tweaker.IMachineRegistry.createNewGenerator(
 As you can see, both methods accept the same parameters, the only difference is if they require or produce energy.  
 The parameters are:
 
-| Name                | Type                                                                |
+| 名称                  | タイプ                                                                 |
 | ------------------- | ------------------------------------------------------------------- |
-| name                | string                                                              |
+| name                | 文字列                                                                 |
 | energyBufferSize    | int                                                                 |
 | energyTransferLimit | int                                                                 |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture        | string                                                              |
-| frontTextureActive  | string                                                              |
+| frontTexture        | 文字列                                                                 |
+| frontTextureActive  | 文字列                                                                 |
 | color (optional)    | int (defaults to `0xffffff` (black))                                |
 
 The slots accept a list of [IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot). Lists can be created the same way as Arrays, by using [] around the slots. Both methods return an [IMachine](/Mods/ExtraUtilities2/CustomMachines/IMachine) object that represents the created machine.  
