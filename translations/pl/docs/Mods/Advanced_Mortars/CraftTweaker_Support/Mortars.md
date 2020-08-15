@@ -1,43 +1,43 @@
 # Mortars
 
-## Importing The Package
+## Importowanie pakietu
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+Możesz nazwać pakiet moździerza używając `mods.advancedmotars.moździerz`.
 
-## Add Recipe
+## Dodaj przepis
 
 <table>
   <tr>
     <th>
-      Type
+      Typ
     </th>
     
     <th>
-      Data Type
+      Typ danych
     </th>
     
     <th>
-      Examples
+      Przykłady
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      Typy moździerzy
     </td>
     
     <td>
-      String[]
+      Ciąg znaków[]
     </td>
     
     <td>
-      ["wooden", "stone", "iron", "diamond"]
+      ["drewno", "kamień", "żelazo", "diamenty"]
     </td>
   </tr>
   
   <tr>
     <td>
-      Output
+      Wyjście
     </td>
     
     <td>
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      Czas trwania
     </td>
     
     <td>
-      Integer
+      Liczba całkowita
     </td>
     
     <td>
@@ -69,7 +69,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </td>
     
     <td>
-      <a href="/Vanilla/Variable_Types/IIngredient/">IIngredient</a>
+      <a href="/Vanilla/Variable_Types/IIngredient/">Składnik</a>
     </td>
     
     <td>
@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### Przykład
 
 ```zenscript
 ///// "Crushing"
