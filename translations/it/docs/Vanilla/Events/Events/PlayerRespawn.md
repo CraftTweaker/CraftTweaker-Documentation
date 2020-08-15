@@ -1,24 +1,24 @@
 # PlayerRespawn
 
-The PlayerRespawn Event is fired whenever a player respawns.
+L'evento PlayerRespawn viene sparato ogni volta che un giocatore rientra.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerRespawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerRespawnEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerRespawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerRespawn Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
-| ZenGetter        | Tipo Di Reso                                              |
-| ---------------- | --------------------------------------------------------- |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                      |
-| `isEndConquered` | bool (states if the respawn is because of the end portal) |
+| ZenGetter        | Tipo Di Reso                                             |
+| ---------------- | -------------------------------------------------------- |
+| `giocatore`      | [IPlayer](/Vanilla/Players/IPlayer/)                     |
+| `isEndConquered` | bool (indica se il respawn è a causa del portale finale) |
