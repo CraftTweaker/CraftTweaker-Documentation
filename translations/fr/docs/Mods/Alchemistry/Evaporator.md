@@ -5,13 +5,13 @@
 mods.alchemistry.Evaporator
 ```
 
-## Methods
+## Méthodes
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## Addition
+## Ajouter
 ```zenscript
 mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Evaporator.addRecipe(<minecraft:stone>,<liquid:lava>*250);
