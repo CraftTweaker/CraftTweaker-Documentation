@@ -1,10 +1,10 @@
 # Soul Binder
 
-## Package
+## Пакет
 
 `import mods.enderio.SoulBinder;`
 
-## Method
+## Метод
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
@@ -12,7 +12,7 @@
 - **int xp** The Experience cost for this recipe
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[] entities, int xp, int energyCost);
@@ -20,7 +20,7 @@ mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[]
 mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.enderio.SoulBinder.removeRecipe(IItemStack output);
