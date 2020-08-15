@@ -1,11 +1,11 @@
 # IEnchantment
 
-An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
+Eine IEnchantment ist im Wesentlichen eine [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) und eine Verzauberungsstufe.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.enchantments.IEnchantment;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importiere crafttweaker.enchantments.IEnchantment;`
 
 ## ZenGetter/ZenSetter
 
@@ -17,12 +17,12 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenMethoden
 
-### Retrieve the Enchantment as NBT
+### Die Verzauberung als NBT abrufen
 
-You might want to get the Enchantment's NBT-Tag.  
-You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
+Möglicherweise möchten Sie das NBT-Tag des Verzauberungszaubers erhalten.  
+Sie können es entweder als [IData](/Vanilla/Data/IData/) übertragen oder die Methode verwenden:
 
 ```zenscript
 ench.makeTag();
-ench as crafttweaker.data.IData;
+ench als crafttweaker.data.IData;
 ```
