@@ -2,16 +2,16 @@
 
 This represents an item. It can be retrieved using an Item BEP. Is an [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.item.IItemStack
 ```
 
-## Implemented Interfaces
-IItemStack implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+IItemStack implements the following interfaces. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## Методы
@@ -34,25 +34,25 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Тип                                                               | Описание                                  |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Параметр | Тип                                                               | Описание                                  |
+| -------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
 ### matches
 
 Does the given stack match the ingredient?
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 <item:minecraft:dirt>.matches(stack as crafttweaker.api.item.IItemStack);
 <item:minecraft:dirt>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Параметр | Тип                                                               | Описание           |
+| -------- | ----------------------------------------------------------------- | ------------------ |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### setDisplayName
@@ -66,9 +66,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| name      | String | New name of the stack. |
+| Параметр | Тип    | Описание               |
+| -------- | ------ | ---------------------- |
+| имя      | String | New name of the stack. |
 
 
 ### withDamage
@@ -82,9 +82,9 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withDamage(10);
 ```
 
-| Parameter | Type | Description          |
-| --------- | ---- | -------------------- |
-| damage    | int  | the new damage value |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| damage   | int | the new damage value |
 
 
 ### withTag
@@ -98,40 +98,40 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.withTag({Display: {lore: ["Hello"]}});
 ```
 
-| Parameter | Type                                                   | Description     |
-| --------- | ------------------------------------------------------ | --------------- |
-| tag       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
+| Параметр | Тип                                                    | Описание        |
+| -------- | ------------------------------------------------------ | --------------- |
+| tag      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The tag to set. |
 
 
 
-## Properties
+## Свойства
 
-| Name           | Type                                                                | Has Getter | Has Setter |
-| -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
-| burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
-| damaged        | boolean                                                             | true       | false      |
-| displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
-| food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
-| getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| getRepairCost  | int                                                                 | true       | false      |
-| hasDisplayName | boolean                                                             | true       | false      |
-| hasEffect      | boolean                                                             | true       | false      |
-| hasTag         | boolean                                                             | true       | false      |
-| isCrossbow     | boolean                                                             | true       | false      |
-| isEnchantable  | boolean                                                             | true       | false      |
-| isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
-| maxDamage      | int                                                                 | true       | false      |
-| maxStackSize   | int                                                                 | true       | false      |
-| registryName   | String                                                              | true       | false      |
-| stackable      | boolean                                                             | true       | false      |
-| tag            | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
-| translationKey | String                                                              | true       | false      |
-| useDuration    | int                                                                 | true       | false      |
+| Название         | Тип                                                                 | Имеет Getter | Имеет Setter |
+| ---------------- | ------------------------------------------------------------------- | ------------ | ------------ |
+| сумма            | int                                                                 | true         | false        |
+| время сгорания   | int                                                                 | true         | true         |
+| командная строка | String                                                              | true         | false        |
+| повреждаемый     | boolean                                                             | true         | false        |
+| damaged          | boolean                                                             | true         | false        |
+| displayName      | String                                                              | true         | false        |
+| пустой           | boolean                                                             | true         | false        |
+| food             | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true         | true         |
+| getOrCreate      | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true         | false        |
+| getRepairCost    | int                                                                 | true         | false        |
+| hasDisplayName   | boolean                                                             | true         | false        |
+| hasEffect        | boolean                                                             | true         | false        |
+| hasTag           | boolean                                                             | true         | false        |
+| isCrossbow       | boolean                                                             | true         | false        |
+| isEnchantable    | boolean                                                             | true         | false        |
+| isEnchanted      | boolean                                                             | true         | false        |
+| элементы         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true         | false        |
+| maxDamage        | int                                                                 | true         | false        |
+| maxStackSize     | int                                                                 | true         | false        |
+| registryName     | String                                                              | true         | false        |
+| stackable        | boolean                                                             | true         | false        |
+| tag              | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true         | false        |
+| translationKey   | String                                                              | true         | false        |
+| useDuration      | int                                                                 | true         | false        |
 
 ## Операторы
 ### MUL
@@ -143,15 +143,15 @@ Sets the amount of the ItemStack
 <item:minecraft:dirt> * 3
 ```
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| amount    | int  | new amount  |
+| Параметр | Тип | Описание   |
+| -------- | --- | ---------- |
+| сумма    | int | new amount |
 
-## Casters
+## Утилиты
 
-| Result type                                                       | Is Implicit |
-| ----------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)            | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)        | true        |
-| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | false       |
+| Тип результата                                                    | Является неявным |
+| ----------------------------------------------------------------- | ---------------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)            | true             |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)        | true             |
+| [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | false            |
 
