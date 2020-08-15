@@ -2,7 +2,7 @@
 
 This package allows you to modify recipes for the Drying Basin.
 
-## Importing the package
+## Importando el paquete
 
 If you want to import this package, here you go:
 
