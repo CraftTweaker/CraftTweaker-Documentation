@@ -2,11 +2,11 @@
 
 ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
 
-## Calling
+## Dzwonienie
 
 You can call the package using `mods.forestry.CharcoalWall`
 
-## Recipe Removal
+## Usuwanie przepisów
 
 ```zenscript
 //mods.forestry.CharcoalWall.removeWall(IBlock block);
@@ -22,7 +22,7 @@ mods.forestry.CharcoalWall.removeWallState(<blockstate:minecraft:bedrock>);
 mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 ```
 
-## Reipe Addition
+## Dodanie podglądu
 
 `amount` states the amount of charcoal the wall will provide.
 
