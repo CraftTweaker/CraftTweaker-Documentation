@@ -1,22 +1,22 @@
-# Map
+# Mappa
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+Il pacchetto Mappa consente di impostare un waypoint utilizzando il gestore degli eventi waypoint di BASE.
 
-## Importing the package
+## Importazione del pacchetto
 
-You can import the package so that you don't have to retype it everytime.
+È possibile importare il pacchetto in modo da non doverlo ripetere ogni volta.
 
     import mods.contenttweaker.Map;
     
 
-## Adding Waypoints
+## Aggiungere Waypoint
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+Questo è l'unico metodo esposto dal pacchetto Mappa e consente di impostare un waypoint nella posizione indicata.  
+Si tratta di un metodo vuoto con i parametri:
 
-- string name
+- nome stringa
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(nome stringa, mondo di IWorld, IBlockPos pos, colore CTcolor)
