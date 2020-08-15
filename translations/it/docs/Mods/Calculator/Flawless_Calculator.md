@@ -1,4 +1,4 @@
-# Flawless Calculator
+# Calcolatrice Flawless
 
 ## Pacchetto
 ```zenscript
@@ -7,8 +7,8 @@ import mods.calculator.flawless;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-4]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)[1-4]** Gli input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output** L'output.
 ## Addizione
 ```zenscript
 flawless.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient input4, IIngredient output);
