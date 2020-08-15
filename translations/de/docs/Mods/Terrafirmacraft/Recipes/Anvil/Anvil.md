@@ -1,6 +1,6 @@
-# Anvil
+# Amboss
 
-## Package
+## Paket
 ```zenscript
 import mods.terrafirmacraft.Anvil;
 ```
@@ -16,7 +16,7 @@ Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int m
 - Skill type is what category of skill the forging should contribute to. Valid entries are `general`, `tools`, `weapons`, `armor`, or null. If the skill type is `tools`, `weapons`, or `armor` then the result item will have a skill bonus applied to it.
 - A recipe must have 1, 2 or 3 rules. Rules consist of a type (`HIT`, `DRAW`, `PUNCH`, `BEND`, `UPSET`, or `SHRINK`), followed by an order (`ANY`, `NOT_LAST`, `LAST`, `SECOND_LAST`, `THIRD_LAST`), separated by an underscore. As example, `HIT_ANY`, `DRAW_SECOND_LAST`, and `UPSET_NOT_LAST` are valid rule names.
 
-## Removal
+## Entfernen
 
 ```zenscript
 Anvil.removeRecipe(IItemStack output);
