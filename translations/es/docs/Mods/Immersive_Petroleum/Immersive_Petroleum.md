@@ -1,7 +1,7 @@
-# Immersive Petroleum
+# Animolio inmersivo
 
-Immersive Petroleum is a lightweight content add-on for Immersive Engineering that introduces oil, oil extraction, and oil processing to the mod's tech progression. It includes an expansive set of configuration options to ensure that it will be a welcome addition to any modpack that includes Immersive Engineering.
+Inmersive Petroleum es un complemento de contenido ligero para Ingeniería Inmersiva que introduce petróleo, extracción de petróleo y procesamiento de petróleo en la progresión tecnológica del mod. Incluye un extenso conjunto de opciones de configuración para asegurar que sea un añadido bienvenido a cualquier paquete de mods que incluya Inmersive Engineering.
 
-## CraftTweaker Integration
+## Integración de CraftTweaker
 
-Immersive Petroleum comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Immersive Petroleum Issue-Tracker](https://github.com/Flaxbeard/ImmersivePetroleum/issues)
+Inmersive Petroleum viene con Integración Nativa CraftTweaker. Esto significa que los problemas con los métodos añadidos deben ser discutidos en el [Inmersive Petroleum Issue-Tracker](https://github.com/Flaxbeard/ImmersivePetroleum/issues)
