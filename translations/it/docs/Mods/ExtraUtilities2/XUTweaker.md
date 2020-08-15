@@ -1,51 +1,51 @@
 # XUTweaker
 
-The XUTweaker package adds several static utility methods.
+Il pacchetto XUTweaker aggiunge diversi metodi di utilità statica.
 
 ## Importazione del pacchetto
 
-If you want to shorten method calls or encounter any issues you might need to import the package.  
-You can do so using
+Se vuoi abbreviare le chiamate di metodo o riscontrare problemi che potrebbero essere necessari per importare il pacchetto.  
+Puoi farlo usando
 
 ```zenscript
-import extrautilities2.Tweaker.XUTweaker;
+importazione extrautilities2.Tweaker.XUTweaker;
 ```
 
 ## Metodi
 
-### Allow survival flight
+### Permetti volo di sopravvivenza
 
-Allows Flight for all players, permanently.
+Consente il volo per tutti i giocatori, in modo permanente.
 
 ```zenscript
 extrautilities2.Tweaker.XUTweaker.allowSurvivalFlight();
 ```
 
-### Disable Nether Portals
+### Disabilita Portale Del Nether
 
-Prevents Nether portals (and all portals that use the PortalSpawnEvent) from spawning, permanently.
-
-```zenscript
-extrautilities2.Tweaker.XUTweaker.disableNetherPortals();
-```
-
-### Check if a player is a fake Player
-
-Returns a boolean stating if the player is a fake Player.
-
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.
+Impedisce che i portali del Nether (e tutti i portali che utilizzano il PortalSpawnEvent) vengano generati, in modo permanente.
 
 ```zenscript
-extrautilities2.Tweaker.XUTweaker.isPlayerFake(player);
+extrautilities2.Tweaker.XUTweaker.disableNetherlandPortals();
 ```
 
-### Open a books screen for the player
+### Controlla se un giocatore è un giocatore falso
 
-Tries to open the written book screen to the given player.
+Restituisce un booleano che indica se il giocatore è un giocatore falso.
 
-Returns a boolean stating if the command was executed correctly.  
-Requires an [IPlayer](/Vanilla/Players/IPlayer) argument.  
-Also requires a string[] argument that will be the pages.
+Richiede un argomento [IPlayer](/Vanilla/Players/IPlayer).
+
+```zenscript
+extrautilities2.Tweaker.XUTweaker.isPlayerFake(giocatore);
+```
+
+### Apri una schermata di libri per il giocatore
+
+Cerca di aprire la schermata del libro scritto al giocatore dato.
+
+Restituisce un booleano che indica se il comando è stato eseguito correttamente.  
+Richiede un argomento [IPlayer](/Vanilla/Players/IPlayer) .  
+Richiede anche un argomento stringa[] che sarà le pagine.
 
 ```zenscript
 extrautilities2.Tweaker.XUTweaker.openBookScreen(player, pages);
