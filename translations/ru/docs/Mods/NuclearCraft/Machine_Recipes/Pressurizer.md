@@ -1,6 +1,6 @@
-# Pressurizer
+# Пресуризатор
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.pressurizer`
 
 ## Добавление рецептов
