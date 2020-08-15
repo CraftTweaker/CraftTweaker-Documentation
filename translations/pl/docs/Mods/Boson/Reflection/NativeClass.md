@@ -23,15 +23,15 @@ NativeClass.fromZen(<blockstate:minecraft:pumpkin>); # returns the NativeClass t
 NativeClass.byName("123"); # returns null because no native class with that name can exist
 ```
 
-## Properties
+## Właściwości
 A `NativeClass` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name   | Type     | Description                                                                                                                                        |
-| --------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `simpleName`    | `string` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.api.item.IItemStack`, `String` for `java.lang.String`) |
-| `qualifiedName` | `string` | Full name that uniquely identifies this class in the backend environment (i.e. `crafttweaker.api.item.IItemStack` or `java.lang.String`)           |
+| Nazwa Właściwości | Typ           | Opis                                                                                                                                               |
+| ----------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `simpleName`      | `ciąg znaków` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.api.item.IItemStack`, `String` for `java.lang.String`) |
+| `qualifiedName`   | `ciąg znaków` | Full name that uniquely identifies this class in the backend environment (i.e. `crafttweaker.api.item.IItemStack` or `java.lang.String`)           |
 
-## Methods
+## Metody
 `NativeClass` also provides access to a single method that allows conversion to the ZenScript equivalent (refer to [`Class`](/Mods/Boson/Reflection/Class/) for more information). The signature of the method is as follows:
 
 ```zenscript
