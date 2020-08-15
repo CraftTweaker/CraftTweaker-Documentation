@@ -1,8 +1,8 @@
-# Crucible
+# Crogiolo
 
 This package allows you to add and remove recipes to/from the Crucible.
 
-## Importing the package
+## Importazione del pacchetto
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
