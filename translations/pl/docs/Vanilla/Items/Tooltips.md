@@ -1,112 +1,112 @@
-# Tooltips
+# Porady
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+Dodanie lub usunięcie podpowiedzi jest naprawdę łatwe:  
+Wszystko, czego potrzebujesz, to przedmiot (lub oreDict lub podobny), innymi słowy, IIngredient.
 
-## Clearing tooltips
+## Czyszczenie podpowiedzi
 
-This removes ALL tooltips from the `item`
-
-```zenscript
-item.clearTooltip();
-```
-
-## Removing specific tooltips
-
-This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
+Usuwa WSZYSTKIE podpowiedzi z elementu ``
 
 ```zenscript
-item.removeTooltip(regex);
+pozycja clearTooltip();
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+## Usuwanie określonych podpowiedzi
 
-## Normal Tooltips
-
-This adds `tT` as tooltip to `item`.
+Ta funkcja usuwa wszystkie podpowiedzi pasujące do podanego regex. Jeden podpowiedź to zazwyczaj jeden wiersz tekstu (chyba że istnieją wymuszone przerwy linii spowodowane spacją).
 
 ```zenscript
-item.addTooltip(tT);
-
-<minecraft:chest>.addTooltip("Storage, what can I say more?");
+element.removeTooltip(regex);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`element` jest [Składnikiem](/Vanilla/Variable_Types/IIngredient/)  
+`tT` jest ciągiem znaków
 
-## Shift Tooltips
+## Normalne podpowiedzi
 
-This adds a tooltip, that will only be visible when you hold shift.  
-You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
+To dodaje `tT` jako podpowiedź do `elementu`.
+
+```zenscript
+item.addoltip(tT);
+
+<minecraft:chest>.addoltip("Pamięć, co mogę powiedzieć więcej?");
+```
+
+`element` jest [Składnikiem](/Vanilla/Variable_Types/IIngredient/)  
+`tT` jest ciągiem znaków
+
+## Poradniki zmiany
+
+To dodaje podpowiedź, która będzie widoczna tylko po przemieszczeniu.  
+Możesz również dodać informacje, które będą widoczne, gdy nie trzymasz zmiany (zwykle używane do tworzenia czegoś takiego jak wiadomość informująca Cię o narzędziu Shift.)
 
 ```zenscript
 item.addShiftTooltip(tT);
 item.addShiftTooltip(tT, info);
 
-<minecraft:chest>.addShiftTooltip("STORAGE!!!");
-<minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
+<minecraft:chest>.addShiftTooltip("STORAGNE!!!");
+<minecraft:redstone>.addShiftTooltip("RED!!!", "Przytrzymaj zmianę, aby wiedzieć, co jest");
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
-`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
+`element` jest [składnikiem](/Vanilla/Variable_Types/IIngredient/)  
+`tT` to [IFormattedText](/Vanilla/Utils/IFormattedText/). Możesz również użyć ciągu, ponieważ są one automatycznie konwertowane.  
+`info` jest [IFormattedText](/Vanilla/Utils/IFormattedText/). Możesz również użyć ciągu, ponieważ są one automatycznie konwertowane.
 
 # Markup
 
-The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+Świat jest kolorowy i powinien być wszystkimi naszymi wskazówkami. Możesz również zagnieżdżać te opcje, jeśli masz na to (jeśli chcesz, zielony tekst, jest to przejażdżka)
 
-## Coloring a String
+## Kolorowanie ciągu
 
-You can apply one of the 16 colors to your string
+Możesz zastosować jeden z 16 kolorów do Twojego ciągu
 
 ```zenscript
-format.black
+format.czarny
 format.darkBlue
 format.darkGreen
 format.darkAqua
 format.darkRed
 format.darkPurple
 format.gold
-format.gray
+. ray
 format.darkGray
 format.blue
-format.green
+format.zielony
 format.aqua
-format.red
-format.lightPurple
-format.yellow
-format.white
+format.czerwony
+format.lightFiple
+format.żółty
+format.biały
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+<minecraft:stick>.addTooltip(format.green("Ten nie był dojrzały"));
 ```
 
-## Formatting a String
+## Formatowanie ciągu znaków
 
-You can apply different formats to your String should you wish to:
+Możesz zastosować różne formaty do swojego ciągu znaków, jeśli chcesz:
 
 ```zenscript
 format.obfuscated
 format.bold
 format.strikethrough
-format.underline
+format.Podkreślaj
 format.italic
 ```
 
 ```zenscript
-<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
+<minecraft:stick>.addShiftTooltip(format.strikethrough("To jest zła podpowiedź"));
 ```
 
-## Tooltip functions
+## Funkcje podpowiedzi
 
-You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
-These functions allow you to dynamically generate a tooltip based on the given IItemStack.
+Możesz zastąpić parametr [IFormattedText](/Vanilla/Utils/IFormattedText/) parametrem ITooltipFunction (`import crafttweaker.itemem. Funkcja narzędziowa;`).  
+Te funkcje pozwalają na dynamiczne generowanie podpowiedzi na podstawie podanego IItemStack.
 
-A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
+Funkcja podpowiedzi jest funkcją, która przyjmuje [IItemStack](/Vanilla/Items/IItemStack/) i zwraca podpowiedź jako ciąg. Oznacza to, że polecenie `w formacie` *nie działa* dla tych funkcji, będziesz musiał polegać na prefiksach do formatowania Minecraft, jeśli chcesz to zrobić.
 
-For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
+Dla podpowiedzi zmiany możesz również dostarczyć drugą funkcję, który pozwala również wygenerować podpowiedź, która powinna być wyświetlana, gdy zmiana nie jest wciśnięta. Dla przesunięcia podpowiedzi to albo oba parametry jako funkcja albo jako [IFormattedText](/Vanilla/Utils/IFormattedText/), bez mieszańców!
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
@@ -114,16 +114,16 @@ addShiftTooltip(ITooltipFunction fn, @Optional ITooltipFunction infoFn);
 
 
 //Example
-<ore:myAxeOreDictionary>.add(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
+<ore:myAxeOreDictionary>. dd(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
 
-<ore:myAxeOreDictionary>.addAdvancedTooltip(function(item) {   
-    return "Damage: " ~ item.damage ~ " / " ~ item.maxDamage;
+<ore:myAxeOreDictionary>. ddAdvancedTooltip(function(item) {   
+    zwraca "Obrażenia: " ~ element. amage ~ " / " ~ item.maxDamage;
 });
 
 
-<ore:myAxeOreDictionary>.addShiftTooltip(function(item) {    
-    return "Uses left: " ~ (item.maxDamage - item.damage);
+<ore:myAxeOreDictionary>. ddShiftTooltip(function(item) {    
+    return "Uses left: " ~ (element. axDamage - item.damage);
 }, function(item){
-    return "Hold shift for some juicy math.";
+    return "Hold shift for some soicy matth.";
 });
 ```
