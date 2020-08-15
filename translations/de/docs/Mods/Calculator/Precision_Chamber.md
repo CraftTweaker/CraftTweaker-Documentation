@@ -15,7 +15,7 @@ import mods.calculator.precisionChamber;
 precisionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 precisionChamber.removeRecipe(IIngredient output1, IIngredient output2);
 ```
