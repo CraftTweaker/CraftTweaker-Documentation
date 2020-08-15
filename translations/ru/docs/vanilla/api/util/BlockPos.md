@@ -2,28 +2,28 @@
 
 Represents a position of a block in the world
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.util.BlockPos
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
 new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
 ```
-| Parameter | Тип | Описание                |
-| --------- | --- | ----------------------- |
-| х         | int | No description provided |
-| y         | int | No description provided |
-| z         | int | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| х        | int | Описание отсутствует |
+| y        | int | Описание отсутствует |
+| z        | int | Описание отсутствует |
 
 
 
 ## Методы
-### add
+### Добавить
 
 Adds two positions together and returns the result.
 
@@ -34,9 +34,9 @@ new BlockPos(0, 1, 2).add(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
-| Parameter | Type                                                         | Description           |
-| --------- | ------------------------------------------------------------ | --------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| Параметр | Тип                                                          | Описание              |
+| -------- | ------------------------------------------------------------ | --------------------- |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 
 
 
@@ -49,11 +49,11 @@ new BlockPos(0, 1, 2).add(x as double, y as double, z as double);
 new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
-| Parameter | Type   | Description    |
-| --------- | ------ | -------------- |
-| x         | double | x value to add |
-| y         | double | y value to add |
-| z         | double | z value to add |
+| Параметр | Тип    | Описание       |
+| -------- | ------ | -------------- |
+| х        | double | x value to add |
+| у        | double | y value to add |
+| z        | double | z value to add |
 
 
 ### crossProduct
@@ -67,9 +67,9 @@ new BlockPos(0, 1, 2).crossProduct(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
-| Parameter | Type                                                         | Description               |
-| --------- | ------------------------------------------------------------ | ------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
+| Параметр | Тип                                                          | Описание                  |
+| -------- | ------------------------------------------------------------ | ------------------------- |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
 
 
 ### distanceSq
@@ -83,9 +83,9 @@ new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
-| Parameter | Type                                                         | Description               |
-| --------- | ------------------------------------------------------------ | ------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
+| Параметр | Тип                                                          | Описание                  |
+| -------- | ------------------------------------------------------------ | ------------------------- |
+| до       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 
 
 
@@ -98,9 +98,9 @@ new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos, useCenter
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
-| Parameter | Type                                                         | Description                                                           |
+| Параметр  | Тип                                                          | Описание                                                              |
 | --------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
+| до        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
 | useCenter | boolean                                                      | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
@@ -114,15 +114,15 @@ new BlockPos(0, 1, 2).distanceSq(x as double, y as double, z as double, useCente
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
-| Parameter | Type    | Description                                                           |
+| Параметр  | Тип     | Описание                                                              |
 | --------- | ------- | --------------------------------------------------------------------- |
-| x         | double  | x position to check against                                           |
-| y         | double  | y position to check against                                           |
+| х         | double  | x position to check against                                           |
+| у         | double  | y position to check against                                           |
 | z         | double  | z position to check against                                           |
 | useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
-### down
+### вниз
 
 Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
 
@@ -134,7 +134,7 @@ Returns net.minecraft.util.math.BlockPos
 new BlockPos(0, 1, 2).down();
 ```
 
-### east
+### восток
 
 Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
 
@@ -158,28 +158,28 @@ new BlockPos(0, 1, 2).east(n as int);
 new BlockPos(0, 1, 2).east(2);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| n        | int | Описание отсутствует |
 
 
 ### manhattanDistance
 
 Gets the Manhattan Distance of this pos compared to a different position
 
-Returns int
+Возвращает int
 
 ```zenscript
 new BlockPos(0, 1, 2).manhattanDistance(other as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
-| Parameter | Type                                                         | Description                           |
-| --------- | ------------------------------------------------------------ | ------------------------------------- |
-| other     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
+| Параметр | Тип                                                          | Описание                              |
+| -------- | ------------------------------------------------------------ | ------------------------------------- |
+| other    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
 
 
-### north
+### север
 
 Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
 
@@ -203,9 +203,9 @@ new BlockPos(0, 1, 2).north(n as int);
 new BlockPos(0, 1, 2).north(10);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| n        | int | Описание отсутствует |
 
 
 ### offset
@@ -221,9 +221,9 @@ new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction);
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
-| Parameter | Type                                                           | Description             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
+| Параметр  | Тип                                                            | Описание             |
+| --------- | -------------------------------------------------------------- | -------------------- |
+| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Описание отсутствует |
 
 
 
@@ -238,13 +238,13 @@ new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction, n as 
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
-| Parameter | Type                                                           | Description             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
-| n         | int                                                            | No description provided |
+| Параметр  | Тип                                                            | Описание             |
+| --------- | -------------------------------------------------------------- | -------------------- |
+| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Описание отсутствует |
+| n         | int                                                            | Описание отсутствует |
 
 
-### south
+### юг
 
 Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
 
@@ -268,9 +268,9 @@ new BlockPos(0, 1, 2).south(n as int);
 new BlockPos(0, 1, 2).south(12);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| n        | int | Описание отсутствует |
 
 
 ### subtract
@@ -284,12 +284,12 @@ new BlockPos(0, 1, 2).subtract(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
-| Parameter | Type                                                         | Description              |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| Параметр | Тип                                                          | Описание                 |
+| -------- | ------------------------------------------------------------ | ------------------------ |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
 
-### up
+### вверх
 
 Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
 
@@ -313,12 +313,12 @@ new BlockPos(0, 1, 2).up(n as int);
 new BlockPos(0, 1, 2).up(45);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| n        | int | Описание отсутствует |
 
 
-### west
+### запад
 
 Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
 
@@ -342,36 +342,36 @@ new BlockPos(0, 1, 2).west(n as int);
 new BlockPos(0, 1, 2).west(120);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| n        | int | Описание отсутствует |
 
 
 ### withinDistance
 
 Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 new BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, distance as double);
 new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
-| Parameter | Type                                                         | Description                                    |
-| --------- | ------------------------------------------------------------ | ---------------------------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
-| distance  | double                                                       | distance to check within                       |
+| Параметр | Тип                                                          | Описание                                       |
+| -------- | ------------------------------------------------------------ | ---------------------------------------------- |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
+| distance | double                                                       | distance to check within                       |
 
 
 
-## Properties
+## Свойства
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| Название | Тип | Имеет Getter | Имеет Setter |
+| -------- | --- | ------------ | ------------ |
+| х        | int | true         | false        |
+| у        | int | true         | false        |
+| z        | int | true         | false        |
 
 ## Операторы
 ### ADD
@@ -383,9 +383,9 @@ new BlockPos(0, 1, 2) + pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
 ```
 
-| Parameter | Type                                                         | Description           |
-| --------- | ------------------------------------------------------------ | --------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| Параметр | Тип                                                          | Описание              |
+| -------- | ------------------------------------------------------------ | --------------------- |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 ### SUB
 
 Subtracts two positions together and returns the result.
@@ -395,13 +395,13 @@ new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
 ```
 
-| Parameter | Type                                                         | Description              |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| Параметр | Тип                                                          | Описание                 |
+| -------- | ------------------------------------------------------------ | ------------------------ |
+| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
-## Casters
+## Утилиты
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| long        | false       |
+| Тип результата | Является неявным |
+| -------------- | ---------------- |
+| long           | false            |
 
