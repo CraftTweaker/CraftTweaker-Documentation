@@ -4,23 +4,23 @@ This event is fired to determine the visibility of a player, i.e., whether or no
 
 While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
 
-## Event Class
+## Klasa wydarzenia
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerVisibilityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter    | ZenSetter          | Type      |
+| ZenGetter    | ZenSetter          | Typ       |
 | ------------ | ------------------ | --------- |
-| `visibility` |                    | double    |
+| `visibility` |                    | podwójne  |
 |              | `modifyVisibility` | See note. |
 
 ## Note
