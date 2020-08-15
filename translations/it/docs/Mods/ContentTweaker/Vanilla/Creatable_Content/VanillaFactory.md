@@ -1,78 +1,78 @@
-# Vanilla Factory
+# Vaniglia Fabbrica
 
-The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
+La Vanilla Factory ti permette di creare [Blocchi](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Elementi](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) e [Schede Creative](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) che puoi aggiungere al gioco.
 
-## Calling
+## Chiamata
 
-You can find the package at `mods.contenttweaker.VanillaFactory`
+Puoi trovare il pacchetto su `mods.contenttweaker.VanillaFactory`
 
-## Creating Content
+## Creazione Contenuto
 
-### Create Blocks
+### Crea Blocchi
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createBlock(String unlocalizedName, IMaterialDefinition material);
 ```
 
-Parameters:
+Parametri:
 
-- String unlocalizedName: The Block's unlocalized name.
-- [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) material: The base material the block is made of.
+- Stringa unlocalizedName: The Block's unlocalized name.
+- [IMaterialDefinizione](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) materiale: Il materiale di base di cui è fatto il blocco.
 
-Returns a [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) object. Check the [Block page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) for further information and an example script!
+Restituisce un oggetto [BlockRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/). Controlla la pagina [Blocca](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) per ulteriori informazioni e uno script di esempio!
 
-### Create Items
+### Crea Oggetti
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItem(String unlocalizedName);
 ```
 
-Parameters:
+Parametri:
 
-- String unlocalizedName: The item's unlocalized name.
+- Stringa unlocalizedName: The item's unlocalized name.
 
-Returns an [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) object. Check the [Item page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) for further information and an example script!
+Restituisce un oggetto [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). Controlla la pagina [Articolo](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) per ulteriori informazioni e uno script di esempio!
 
-### Create Creative Tabs
+### Crea Schede Creative
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier);
 ```
 
-Parameters:
+Parametri:
 
-- String unlocalizedName: The Tab's unlocalized Name.
-- Item or Block representation: The Item/Block to be displayed as the Tab's symbol. Alternatively you can use an [IItemStackSupplier function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/).
+- Stringa unlocalizedName: The Tab's unlocalized Name.
+- Rappresentazione dell'elemento o del blocco: l'elemento/blocco da visualizzare come simbolo della scheda. In alternativa è possibile utilizzare una funzione [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/).
 
-Returns a [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) object. Check the [Creative Tab page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) for further information and an example script!
+Restituisce un oggetto [ICreativeTab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/). Controlla la pagina [della scheda creativa](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) per ulteriori informazioni e uno script di esempio!
 
-### Create Fluids
+### Crea Fluidi
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
 ```
 
-Parameters:
+Parametri:
 
-- String unlocalizedName: The Fluid's unlocalized name.
-- int color: The fluid's color-code.
+- Stringa unlocalizedName: The Fluid's unlocalized name.
+- int colore: Il codice colore del fluido.
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color: The fluid's color as color-Object.
 
-Returns a [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) object. Check the [Fluid page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) for further information and an example script.
+Restituisce un oggetto [FluidRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/). Controlla [Fluid page](/Mods/ContentTweaker/Vanilla/Creatable_Content/Fluid/) per ulteriori informazioni e uno script di esempio.
 
-### Create Food Items
+### Crea Oggetti Cibo
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createItemFood(String unlocalizedName, int healAmount);
 ```
 
-Parameters:
+Parametri:
 
-- String unlocalizedName: The item's unlocalized Name.
+- Stringa unlocalizedName: The item's unlocalized Name.
 - int healAmount: The Food Value
 
-Returns an [ItemFoodRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) object. Check out the [Food page](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) for further information and an example script.
+Restituisce un oggetto [ItemFoodRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/). Consulta la pagina [Food](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) per ulteriori informazioni e uno script di esempio.
