@@ -39,25 +39,25 @@ IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That 
 
 IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
 
-## ZenMethods and ZenGetters
+## ZenMethodsとZenGetters
 
-| ZenGetter     | 戻り値                               | Description                                                                                |
+| ZenGetter     | 戻り値                               | 説明                                                                                         |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
-| meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| ブロック          | [IBlock](/Vanilla/Blocks/IBlock/) | 参照されたブロックを返します                                                                             |
+| meta          | int                               | 参照されたブロックのメタデータを返します                                                                       |
+| commandString | 文字列                               | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
 
 ## ZenMethods
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+パラメータ:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+ブロックを置き換えられるかどうかを sais のブール値を返します。
 
 ### Getting or changing Properties
 
@@ -78,8 +78,8 @@ IBlockState withProperty(String name, String value);
 You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
 The return different types though:
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` は、等しい場合は 0 の整数を返します
+- `state == other` は同じ値を持つ bool を返す
 
 ### Getting an explicit Blockstate Matcher
 
