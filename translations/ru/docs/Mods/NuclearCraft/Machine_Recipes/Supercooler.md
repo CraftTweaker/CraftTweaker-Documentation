@@ -1,6 +1,6 @@
-# Supercooler
+# Суперкрушитель
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.supercooler`
 
 ## Добавление рецептов
