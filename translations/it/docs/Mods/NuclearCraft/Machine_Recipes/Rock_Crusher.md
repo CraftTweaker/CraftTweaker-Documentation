@@ -1,6 +1,6 @@
 # Rock Crusher
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.rock_crusher`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.rock_crusher.addRecipe([itemInput, itemOutput1, itemOutput2, i
 ```zenscript
 mods.nuclearcraft.rock_crusher.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.rock_crusher.removeRecipeWithOutput([itemOutput1, itemOutput2, itemOutput3]);
-mods.nuclearcraft.rock_crusher.removeAllRecipes();
+mods.nuclearcraft.rock_crusher.removeAllRicette();
 ```
