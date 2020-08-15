@@ -2,17 +2,17 @@
 
 This event is extended by all events involving the brewing stand, although not the player-based function for extracting items from the brewing stand.
 
-## Importing the class
+## Importowanie klasy
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IPotionBrewEvent;`
 
-## What can be done with them?
+## Co można z nimi zrobić?
 
-| ZenGetter | ZenSetter | type |
-| --------- | --------- | ---- |
-| `length`  |           | int  |
+| ZenGetter | ZenSetter | typ    |
+| --------- | --------- | ------ |
+| `length`  |           | odcień |
 
-## Methods
+## Metody
 
 - [IItemStack](/Vanilla/Items/IItemStack/) `getItem()`
 
