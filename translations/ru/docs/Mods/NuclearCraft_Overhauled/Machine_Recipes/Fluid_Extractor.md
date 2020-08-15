@@ -1,7 +1,7 @@
-# Fluid Extractor
+# Экстрактор жидкости
 
-## Importing the Package
-`mods.nuclearcraft.Extractor`
+## Импортирование пакета
+`mods.nuclearcraft.Экстрактор`
 
 ## Добавление рецептов
 ```zenscript
@@ -10,7 +10,7 @@ mods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOut
 
 ## Удаление рецептов
 ```zenscript
-mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
-mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
+mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient item);
+mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemput, ILiquidStack fluidOutput);
 mods.nuclearcraft.Extractor.removeAllRecipes();
 ```
