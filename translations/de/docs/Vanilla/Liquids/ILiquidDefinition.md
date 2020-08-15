@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 So, what can we do with it?
 
-### Multiplication
+### Multiplikation
 
 Multiplying a ILiquidDefinition results in a new [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) with the specified amount in millibuckets
 
@@ -45,8 +45,8 @@ definition.luminosity = 0;
 | ----------- | ----------- | -------------------------------------------------------- | --------------- |
 | name        |             | This returns the unlocalized liquid name                 | string          |
 | displayName |             | This returns the localized liquid name                   | string          |
-| luminosity  | luminosity  | This returns/sets the luminosity of the referred liquid  | int             |
-| density     | density     | This returns/sets the density of the referred liquid     | int             |
-| temperature | temperature | This returns/sets the temperature of the referred liquid | int             |
-| viscosity   | viscosity   | This returns/sets the viscosity of the referred liquid   | int             |
-| gaseous     | gaseous     | This returns/sets whether the referred liquid is gaseous | boolean         |
+| Leuchtkraft | Leuchtkraft | This returns/sets the luminosity of the referred liquid  | int             |
+| dichte      | dichte      | This returns/sets the density of the referred liquid     | int             |
+| Temperatur  | Temperatur  | This returns/sets the temperature of the referred liquid | int             |
+| viskosität  | viskosität  | This returns/sets the viscosity of the referred liquid   | int             |
+| gasförmig   | gasförmig   | This returns/sets whether the referred liquid is gaseous | boolean         |
