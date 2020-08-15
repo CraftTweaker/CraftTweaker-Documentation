@@ -2,7 +2,7 @@
 
 An IMachine is the actual machine object, you can get it from the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry).
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to [import](/AdvancedFunctions/Import) the class.  
 You usually only need to import a class when directly using the name, such as in casting or [Array Declarations](/AdvancedFunctions/Arrays_and_Loops) but better be safe than sorry and add the import.
@@ -25,12 +25,12 @@ myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 
 This method uses the following parameters:
 
-| Name          | Type                                                         |
+| Nazwisko      | Typ                                                          |
 | ------------- | ------------------------------------------------------------ |
 | inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| energy        | int                                                          |
-| time          | int                                                          |
+| energy        | odcień                                                       |
+| czas          | odcień                                                       |
 | probabilities | float[string\]                                              |
 
 ### Using only the outputs map
@@ -44,12 +44,12 @@ myMachine.addRecipe(inputs, outputs, energy, time);
 
 This method uses the following parameters:
 
-| Name    | Type                                                         |
-| ------- | ------------------------------------------------------------ |
-| inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| outputs | Object[string\]                                             |
-| energy  | int                                                          |
-| time    | int                                                          |
+| Nazwisko | Typ                                                          |
+| -------- | ------------------------------------------------------------ |
+| inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| outputs  | Object[string\]                                             |
+| energy   | odcień                                                       |
+| czas     | odcień                                                       |
 
 ## Remove recipes
 
@@ -63,9 +63,9 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
-| ------ | ------------------------------------------------------------ |
-| inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
+| Nazwisko | Typ                                                          |
+| -------- | ------------------------------------------------------------ |
+| inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
 ### Using separate maps for Items and Liquids
 
@@ -73,10 +73,10 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
-| ------- | ------------------------------------------------------- |
-| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
+| Nazwisko | Typ                                                     |
+| -------- | ------------------------------------------------------- |
+| elementy | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| ciecze   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
 ## Retrieving machine information
 
