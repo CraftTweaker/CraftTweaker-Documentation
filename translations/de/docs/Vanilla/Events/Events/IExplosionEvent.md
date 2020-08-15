@@ -8,7 +8,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenGetter
 
-| name     | type                                   |
+| name     | typ                                    |
 | -------- | -------------------------------------- |
 | world    | [IWorld](/Vanilla/World/IWorld/)       |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
