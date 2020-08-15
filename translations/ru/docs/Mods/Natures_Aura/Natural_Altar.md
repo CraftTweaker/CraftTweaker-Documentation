@@ -1,6 +1,6 @@
 # Natural Altar
 
-## Package
+## Пакет
 ```zenscript
 mods.naturesaura.Altar
 ```
@@ -13,13 +13,13 @@ mods.naturesaura.Altar
 - **int aura** The amount of Aura required for the completion of the recipe
 - **int time** The time processes take in ticks
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.naturesaura.Altar.removeRecipe(IItemStack output)
