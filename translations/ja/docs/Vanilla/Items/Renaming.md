@@ -1,12 +1,12 @@
-# Renaming
+# 名前の変更
 
-Always reading 'chest' is annoying, isn't it?
+いつも「胸」を読むのは面倒ですね。
 
-That's why there's the possibility to rename stuff.
+だから名前を変更する可能性があります。
 
-## Changing the display name
+## 表示名の変更
 
-This is probably the easiest way to achieve a different item or block name. You rename `item` to `newName`:
+これはおそらく、別のアイテムやブロック名を達成するための最も簡単な方法です。 `アイテム` を `newName` に変更します :
 
 ```zenscript
 item.displayName = newName;
@@ -15,12 +15,12 @@ item.displayName = newName;
 <minecraft:chest>.displayName = "Storage Box Deluxe";
 ```
 
-`item` is an [IItemStack](/Vanilla/Items/IItemStack/).  
-`newName` is a String.
+`項目` は [IItemStack](/Vanilla/Items/IItemStack/)です。  
+`newName` は文字列です。
 
-## Changing the localization
+## ローカライズの変更
 
-If some modded inventories still show the item's old name instead of the new one, you need to change the localization. You can read what that means on the `game` entry.
+モデリングされた在庫の中には、新しい在庫ではなくアイテムの古い名前がまだ表示されているものがある場合は、ローカライズを変更する必要があります。 `ゲーム` の項目でそれが何を意味するかを読むことができます。
 
 ```zenscript
 game.setLocalization(languageCode,unlocalizedName,newName);
@@ -28,6 +28,6 @@ game.setLocalization(languageCode,unlocalizedName,newName);
 game.setLocalization("tile.chest.name","StorageBox Deluxe")
 ```
 
-`languageCode` is a string and optional. If you omit it, it will apply the localization regardless of the client's set language.  
-`unlocaLizedName` is a string.  
-`newName` is a string.
+`languageCode` は文字列とオプションです。 省略すると、クライアントの設定言語に関係なくローカライズが適用されます。  
+`unlocaLizedName` は文字列です。  
+`newName` は文字列です。
