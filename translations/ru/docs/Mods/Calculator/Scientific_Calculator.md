@@ -1,6 +1,6 @@
 # Scientific Calculator
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.scientific;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.scientific;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Сложение
 ```zenscript
 scientific.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 scientific.removeRecipe(IIngredient output);
 ```
