@@ -3,7 +3,7 @@
 An IBlock Object consists of a [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/), a metadata and a TileData.  
 It refers to a block in the game.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlock;`
@@ -18,11 +18,11 @@ There are multiple ways thet return an IBlock object:
 
 ## Zengetters
 
-| Getter     | What does it do                | Return Type                                           |
-| ---------- | ------------------------------ | ----------------------------------------------------- |
-| definition | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
-| meta       | Returns the Block's metadata   | int                                                   |
-| data       | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
+| Getter      | Che cosa fa                    | Tipo Di Reso                                          |
+| ----------- | ------------------------------ | ----------------------------------------------------- |
+| definizione | Returns the Block's definition | [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) |
+| meta        | Returns the Block's metadata   | int                                                   |
+| data        | Returns the Block's tileData   | [IData](/Vanilla/Data/IData/)                         |
 
 # IBlockPattern
 
