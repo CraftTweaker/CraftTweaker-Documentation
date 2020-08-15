@@ -1,23 +1,23 @@
-# The Concept
+# Das Konzept
 
-Looping is an old concept and one of the basis of programming: repeating the same set of actions over a group of elements, while filtering some of them out or converting sets. Or even finding the first item in a list that satisfies a certain condition or a count the items in a set recursively.
+Schleifen ist ein altes Konzept und eine der Grundlagen für die Programmierung: Wiederholung der gleichen Aktion über eine Gruppe von Elementen, während des Filterns einige von ihnen aus oder Umwandlung von Sätzen. Oder man findet sogar das erste Element in einer Liste, die eine bestimmte Bedingung erfüllt oder die Elemente rekursiv zählt.
 
-In procedural and imperative programming, most of that has been done with plain old `for` loops and a series of conditional statements with their relative `continue` and `break` statements. While this may seem simpler to follow, it requires a lot of code for simple operations such as filtering and may produce nesting chains that can go on for longer. Moreover, it doesn't express the intent unless the code specifies it with comments.
+In der prozeduralen und zwingenden Programmierung das meiste wurde mit dem alten `für` Schleifen und einer Reihe von bedingten Anweisungen mit ihrem relativen `erledigt, fahren Sie fort` und `break` fort. Dies mag einfacher erscheinen, aber es benötigt viel Code für einfache Operationen wie Filtern und kann Schachtelketten erzeugen, die länger andauern können. Außerdem wird die Absicht nicht ausgedrückt, es sei denn, der Code gibt ihn mit Kommentaren an.
 
-Consider the following ZenScript code:
+Betrachten Sie den folgenden ZenScript-Code:
 
 ```zenscript
-var nbtForMc = false;
+var nbtForMc = falsch;
 
-for recipe in recipes.all {
+für Rezepte in Rezepten. ll {
     if (recipe.shaped) {
-        val output = recipes.output;
-        if (!isNull(output)) {
-            if (output.definition.owner == "minecraft") {
-                val hasData = output.hasTag;
+        val output = recipes. utput;
+        if (! sNull(output)) {
+            if (output. efinition.owner == "minecraft") {
+                val hasData = Ausgabe. asTag;
                 if (hasData) {
                     nbtForMc = true;
-                    break;
+                    Pausen;
                 }
             }
         }
@@ -25,19 +25,19 @@ for recipe in recipes.all {
 }
 ```
 
-What this code does isn't obvious from a first glance and requires the user to read the logic to understand. Consider this equivalent one constructed via sequences:
+Was dieser Code vom ersten Blick her nicht ersichtlich ist und verlangt, dass der Benutzer die Logik lesen muss, um zu verstehen. Betrachten Sie dieses äquivalente über Sequenzen:
 
 ```zenscript
 val nbtForMc = <sequence:ICraftingRecipe>(recipes.all)
-    .filter(function (recipe) { return recipe.shaped; })
+    .filter(function (recipe) { return recipe. haped; })
     .map(function (recipe) { return recipe.output; })
-    .filterNot(function (output) { return isNull(output); })
-    .filter(function (output) { return output.definition.owner == "minecraft"; })
+    . ilterNot(function (output) { return isNull(output); })
+    .filter(function (output) { return output. efinition.owner == "minecraft"; })
     .any(function (output) { return output.hasTag; });
 ```
 
-This code does the exact same and not only it's more concise, but also conveys more meaning that a chain of nested `if` statements. Granted, this does not seem like a general improvement, due to the simplicity of the code in question, but it may prove useful for more complicated pieces of logic.
+Dieser Code macht genau das Gleiche und ist nicht nur prägnanter aber vermittelt auch mehr Bedeutung, dass eine Kette von verschachtelten `wenn` Anweisungen. Zugegebenermaßen scheint dies aufgrund der Einfachheit des betreffenden Codes keine allgemeine Verbesserung zu sein. , aber es kann sich für kompliziertere Logiken als nützlich erweisen.
 
-Another pro of the above code is that evaluation is not performed until the `any` call, meaning that the sequence can be extended via additional method calls over time and it won't be resolved until a "terminal" method is called (i.e. a method that does not return a `Sequence` itself). This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
+Ein weiterer Profi des obigen Codes ist, dass die Auswertung erst durchgeführt wird, wenn `irgendein Aufruf` stattfindet bedeutet, dass die Sequenz über zusätzliche Methodenaufrufe im Laufe der Zeit erweitert werden kann und sie nicht aufgelöst wird, bis eine "Terminal"-Methode aufgerufen wird (i. , eine Methode, die keine `Sequenz` selbst zurückgibt. This proves extremely useful since it is not necessary to evaluate the whole `recipes.all` array.
 
-To get started and leverage Sequences, you can consult both the [class documentation](/Mods/Boson/Sequences/Docs/) and [how to obtain one](/Mods/Boson/Sequences/Obtaining/) documentation pages.
+Um Sequenzen zu starten und zu nutzen, können Sie sowohl die [Klassendokumentation](/Mods/Boson/Sequences/Docs/) als auch [konsultieren, wie Sie eine](/Mods/Boson/Sequences/Obtaining/) Dokumentationsseite erhalten.
