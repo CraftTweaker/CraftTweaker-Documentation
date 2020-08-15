@@ -22,11 +22,11 @@ BasinHeating.remove(ILiquidStack input);
 
 BasinHeating.remove(<liquid:lava> * 1000);
 
-// Remove by identifier.
+// 識別子で削除
 BasinHeating.remove(String id);
 
 BasinHeating.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除！
 BasinHeating.removeAll();
 ```
