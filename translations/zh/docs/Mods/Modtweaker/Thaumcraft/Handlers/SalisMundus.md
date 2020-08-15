@@ -13,7 +13,7 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thaumcraft.SalisMundus;
 ```
 
-## Add Recipes
+## 添加配方
 
 You can either specify an [IBlock](/Vanilla/Blocks/IBlock/) or an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/).  
 If you don't specify a research, this recipe will always be possible, if you do decide to specify a research string, you need to have the research unlocked in order for the conversion to work.
@@ -27,7 +27,7 @@ mods.thaumcraft.SalisMundus.addSingleConversion(IOreDictEntry in, IItemStack out
 SalisMundus.addSingleConversion(<ore:blockIron>, <minecraft:bedrock>);
 ```
 
-## Remove Recipes
+## 删除配方
 
 You can also remove all recipes that return a matching item.  
 This handler checks if the parameter provided matches with the output itemStack, so you could also remove all recipes using the wildcard ingredient `<*>`.
