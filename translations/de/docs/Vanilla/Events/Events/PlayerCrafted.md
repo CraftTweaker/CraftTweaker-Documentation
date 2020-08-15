@@ -21,5 +21,5 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ZenGetter   | Rückgabetyp                                                         |
 | ----------- | ------------------------------------------------------------------- |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `ausgeben`  | [IItemStack](/Vanilla/Items/IItemStack/)                            |
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
