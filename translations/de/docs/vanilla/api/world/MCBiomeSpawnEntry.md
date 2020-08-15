@@ -21,7 +21,7 @@ new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.enti
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type                                                                       | Has Getter | Has Setter |
 | ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
