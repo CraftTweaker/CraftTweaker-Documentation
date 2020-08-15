@@ -1,4 +1,4 @@
-# Composting
+# Компостинг
 
 ## Пакет
 ```zenscript
@@ -8,13 +8,13 @@ mods.exnihilocreatio.Compost
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **Float chance** The chance should be between 0-1.
-- **String color** The color is hex.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+- **Шанс плавающего** Шанс должен быть от 0 до 1.
+- **Цвет строки** Цвет шестнадцатеричный.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
 
 ## Сложение
 
-Does not take arrays in for IIngredient.
+Не принимает массивы для IIngredient.
 
 ```zenscript
 mods.exnihilocreatio.Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
