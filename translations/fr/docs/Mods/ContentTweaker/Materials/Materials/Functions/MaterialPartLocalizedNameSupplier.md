@@ -1,18 +1,18 @@
-# MaterialPartLocalizedNameSupplier
+# format@@0 MaterialPartalizedNameSupplier
 
-You can create a MaterialPartLocalizedNameSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
+Vous pouvez créer un MaterialPartLocalizedNameSupplier formant un objet [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) , qui sera ensuite utilisé à chaque demande.
 
-## Importing the class
+## Importation de la classe
 
-Should you need to import he class, here you go:
+Si vous avez besoin d'importer la classe, voici :
 
 ```zenscript
-import mods.contenttweaker.MaterialPartLocalizedNameSupplier;
+Importer mods.contenttweaker.MaterialPartLocalizedNameSupplier;
 ```
 
-## Static methods
+## Méthodes statiques
 
-Static methods can be called upon the package, not upon instances of the class.
+Les méthodes statiques peuvent être appelées sur le paquet, pas sur les instances de la classe.
 
 ```zenscript
 //mods.contenttweaker.MaterialPartLocalizedNameSupplier.create(IMaterialPart materialPart);
