@@ -1,14 +1,14 @@
-# Melter
+# Mélanger
 
-## Importing the Package
+## Importation du paquet en cours
 `mods.nuclearcraft.melter`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
 mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);
