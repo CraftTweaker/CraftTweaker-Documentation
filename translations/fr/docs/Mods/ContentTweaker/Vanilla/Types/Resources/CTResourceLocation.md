@@ -1,4 +1,4 @@
-# CTResourceLocation
+# format@@0 CTResourceLocation
 
 A resource location object is used for telling minecraft where to find something. It consists of a domain and a path.
 
@@ -26,7 +26,7 @@ ZenGetters are called on an object, not on the package itself
 print(myLocation.domain);
 ```
 
-| ZenGetter | Type   |
-| --------- | ------ |
-| domain    | string |
-| path      | string |
+| ZenGetter | Type de texte        |
+| --------- | -------------------- |
+| domain    | chaîne de caractères |
+| path      | chaîne de caractères |
