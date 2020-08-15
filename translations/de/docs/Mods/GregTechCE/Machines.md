@@ -111,11 +111,11 @@ blast_furnace.recipeBuilder()
 
 Some of properties assignable to `.property()` method:
 
-| Name        | Beschreibung                                                       |
-| ----------- | ------------------------------------------------------------------ |
-| explosives  | Implosion Compressor, amount of explosives                         |
-| circuit     | Integrated Circuit-configurable machines. Configuration of circuit |
-| temperature | Blast Furnace. Minimum temperature requirement.                    |
+| Name       | Beschreibung                                                       |
+| ---------- | ------------------------------------------------------------------ |
+| explosives | Implosion Compressor, amount of explosives                         |
+| circuit    | Integrated Circuit-configurable machines. Configuration of circuit |
+| Temperatur | Blast Furnace. Minimum temperature requirement.                    |
 
 These ones are **NOT IMPLEMENTED YET:**
 
@@ -146,11 +146,11 @@ More useful methods:
 .EUt() // EU per tick
 ```
 
-## Removing
+## Entfernen
 
 Removing a recipe is done by recipe instance itself, so you have to find a recipe first.
 
-Example:
+Beispiel:
 
 ```zenscript
 val compressor as RecipeMap = RecipeMap.getByName("compressor");
