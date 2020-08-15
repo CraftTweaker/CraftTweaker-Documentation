@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.MCAdvancementEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCAdvancementEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAdvancementEvent>);
 ```
-| パラメータ   | タイプ                                                                                                                               | 説明                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCAdvancementEvent](/vanilla/api/event/entity/player/MCAdvancementEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                               | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCAdvancementEvent](/vanilla/api/event/entity/player/MCAdvancementEvent)> | 説明が提供されていません |
 
 
 
 ## メソッド
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAdvancementEvent.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCAdvancementEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAdvancementEvent.getPlayer();
@@ -39,9 +39,9 @@ myMCAdvancementEvent.getPlayer();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCAdvancementEvent.hasResult();
@@ -49,11 +49,11 @@ myMCAdvancementEvent.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCAdvancementEvent.isCancelable();
@@ -61,9 +61,9 @@ myMCAdvancementEvent.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCAdvancementEvent.isCanceled();
@@ -75,9 +75,9 @@ myMCAdvancementEvent.isCanceled();
 myMCAdvancementEvent.setCanceled(cancel as boolean);
 ```
 
-| パラメータ  | タイプ      | 説明                      |
-| ------ | -------- | ----------------------- |
-| cancel | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
 
