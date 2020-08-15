@@ -16,7 +16,7 @@ PlayerVisibilityEvent Events implement the following interfaces and are able to 
 
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter    | ZenSetter          | Тип       |
 | ------------ | ------------------ | --------- |
