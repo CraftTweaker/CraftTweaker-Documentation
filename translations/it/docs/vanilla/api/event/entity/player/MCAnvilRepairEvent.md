@@ -8,7 +8,7 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
 
-## Constructors
+## Costruttori
 ```zenscript
 new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.
 ## Metodi
 ### getBreakChance
 
-Returns float
+Restituisce fluttuante
 
 ```zenscript
 myMCAnvilRepairEvent.getBreakChance();
@@ -29,7 +29,7 @@ myMCAnvilRepairEvent.getBreakChance();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getEntityPlayer();
@@ -37,9 +37,9 @@ myMCAnvilRepairEvent.getEntityPlayer();
 
 ### getIngredientInput
 
-Get the second item input into the anvil Returns: `the second input slot`
+Ottieni il secondo input nell'incudine Restituisce: `il secondo slot di input`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getIngredientInput();
@@ -47,9 +47,9 @@ myMCAnvilRepairEvent.getIngredientInput();
 
 ### getItemInput
 
-Get the first item input into the anvil Returns: `the first input slot`
+Ottieni il primo input dell'oggetto nell'incudine Restituisce: `il primo slot di input`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemInput();
@@ -57,9 +57,9 @@ myMCAnvilRepairEvent.getItemInput();
 
 ### getItemResult
 
-Get the output result from the anvil Returns: `the output`
+Ottieni il risultato dell'uscita dall'incudine Restituisce: `l'output`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemResult();
@@ -67,29 +67,29 @@ myMCAnvilRepairEvent.getItemResult();
 
 ### getPlayer
 
-Returns: `Player`
+Restituisce: `Giocatore`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getPlayer();
 ```
 
-### hasResult
+### hasRisultato
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCAnvilRepairEvent.hasResult();
+myMCAnvilRepairEvent.hasRisultato();
 ```
 
-### isCancelable
+### isAnnullabile
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
+ Nota:
+ Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
 
 Restituisce un booleano
 
@@ -97,9 +97,9 @@ Restituisce un booleano
 myMCAnvilRepairEvent.isCancelable();
 ```
 
-### isCanceled
+### isAnnullato
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
 
 Restituisce un booleano
 
@@ -118,7 +118,7 @@ myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 | breakChance | galleggiante | Nessuna descrizione fornita |
 
 
-### setCanceled
+### setAnnullato
 
 ```zenscript
 myMCAnvilRepairEvent.setCanceled(cancel as boolean);
@@ -126,7 +126,7 @@ myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 
 | Parametro | Tipo    | Descrizione                 |
 | --------- | ------- | --------------------------- |
-| cancel    | boolean | Nessuna descrizione fornita |
+| annulla   | boolean | Nessuna descrizione fornita |
 
 
 
