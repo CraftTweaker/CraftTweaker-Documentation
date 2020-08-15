@@ -1,6 +1,6 @@
 # Mortar
 
-## Addition
+## Adicional
 
 ```zenscript
 import mods.cuisine.Mortar;
