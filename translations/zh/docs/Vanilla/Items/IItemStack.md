@@ -83,7 +83,7 @@ Read how to use them [here](/UsingThisWiki/). 并查看下面的示例。
 | isItemBlock                    |                      | 布尔(如果包含项目是一个项目块)                                         |
 | 可叠加层                           |                      | 布尔值                                                      |
 | isBeacon支付                     |                      | 布尔值                                                      |
-| hasEffect                      |                      | 布尔值                                                      |
+| 哈斯特效                           |                      | 布尔值                                                      |
 | hasDisplayName                 |                      | 布尔值                                                      |
 | 元数据                            |                      | 整数                                                       |
 | hassubtypes                    |                      | 布尔值                                                      |
