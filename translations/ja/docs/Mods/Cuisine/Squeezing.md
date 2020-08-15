@@ -1,4 +1,4 @@
-# Basin Squeezing
+# Basin Squezing
 
 ## 加算
 
@@ -22,10 +22,10 @@ BasinSqueezing.remove(IItemStack input, ILiquidStack inputFluid);
 BasinSqueezing.remove(<item:minecraft:dirt>, <liquid:water> * 1000);
 
 // Remove by identifier.
-BasinSqueezing.remove(String id);
+BasinSceezing.remove(String id);
 
-BasinSqueezing.remove("recipe_name");
+BasinSceezing.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除します！
 BasinSqueezing.removeAll();
 ```
