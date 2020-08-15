@@ -8,27 +8,27 @@ The CriticalHit Event is fired whenever a player attacks another creature. It ha
 
 You can also adjust the damage modifier for the critical hit.
 
-## Notes
+## 注
 
 `event.oldDamageModifier` contains the original damage modifier of the event, while `event.isVanillaCrit` is a boolean value that determines whether or not this is actually already a critical hit.
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.CriticalHitEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 CriticalHit Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
 | ZenGetter           | ZenSetter        | 返回值类型                                 |
 | ------------------- | ---------------- | ------------------------------------- |
 | `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `oldDamageModifier` |                  | float                                 |
+| `oldDamageModifier` |                  | 浮点数                                   |
 | `damageModifier`    | `damageModifier` | float                                 |
 | `isVanillaCrit`     |                  | boolean                               |
 
