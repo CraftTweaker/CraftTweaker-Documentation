@@ -14,11 +14,11 @@ Since `TagIngredient` is an `IIngredient`, it provides access to all the propert
 ## プロパティ
 A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| Property Name | Type                                     | Description                                                     |
-| ------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| プロパティ名    | タイプ                                      | 説明                                                              |
+| --------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `tagName` | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
-## Example
+## 例
 
 ```zenscript
 val anyIngot = <tag-items:forge:ingots>;
