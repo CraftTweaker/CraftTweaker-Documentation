@@ -2,16 +2,16 @@
 
 ## Pakiet
 ```zenscirpt
-`mods.exnihilocreatio.Hammer`
+`mods.exnihilocreo.Hammer`
 ```
 
 ## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Blok, który musi być uszkodzony.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** Element który blok upuszcza po uszkodzeniu.
 - **Int tool level** tool level for breaking the block.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **Szansa na pływanie** szansa między 0-1.
+- **Szansa na przedłużenie** szansa między 0-1.
 
 ## Dodanie
 
