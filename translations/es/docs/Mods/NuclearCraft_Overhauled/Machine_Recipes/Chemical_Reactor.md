@@ -1,14 +1,14 @@
-# Chemical Reactor
+# Reactor Químico
 
-## Importing the Package
-`mods.nuclearcraft.ChemicalReactorChemicalReactor`
+## Importando el Paquete
+`mods.nuclearcraft.ChemicalReactorReactor Químico`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.Supercoolermods.nuclearcraft.ChemicalReactor.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidInput2, ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.SupercoolerChemicalReactor.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
 mods.nuclearcraft.mods.nuclearcraft.ChemicalReactor.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
