@@ -1,17 +1,17 @@
-# ProjectileImpactFireball
+# Эффект снаряда
 
-This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+Это событие запускается, когда огненный шар воздействует на объект, но до повреждения и т. д. рассчитывается. Это **отменимый**, и в случае отмены влияние не будет обработано.
 
-Acceleration values from the fireball entity are available through zengetters.
+Значения ускорения от огненной части доступны через зонгеттеры.
 
 ## Импорт класса
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactFireballEvent;`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импорт crafttweaker.event.ProjectileImpactFireballEvent;`
 
 ## Расширение IEntityEvent
-ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События ProjectileImpactFireball реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Событие снаряда](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters и ZenSetters
@@ -20,8 +20,8 @@ ProjectileImpactFireball Events implement the following interfaces and are able 
 
 | ZenGetter       | ZenSetter       | Тип                                                       |
 | --------------- | --------------- | --------------------------------------------------------- |
-| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `accelerationX` | `accelerationX` | double                                                    |
-| `accelerationY` | `accelerationY` | double                                                    |
+| `Огненный шар`  |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `стрелок`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `ускорениеX`    | `ускорениеX`    | double                                                    |
+| `ускорение Y`   | `ускорение Y`   | double                                                    |
 | `accelerationZ` | `accelerationZ` | double                                                    |
