@@ -4,7 +4,7 @@ The blockbuilder is used to... build blocks (you totally didn't see that one com
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.block.BlockBuilder
@@ -21,13 +21,13 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Parameter | Type                                                                                 | Description                       | IsOptional | Default Value                |
-| --------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| material  | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
+| Parametr | Typ                                                                                  | Opis                              | IsOptional | Wartość domyślna             |
+| -------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
+| materiał | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | prawda     | `<blockmaterial:iron>` |
 
 
 
-## Methods
+## Metody
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -37,9 +37,9 @@ myBlockBuilder.build(resourceLocation as String);
 myBlockBuilder.build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametr         | Typ         | Opis                                 |
+| ---------------- | ----------- | ------------------------------------ |
+| resourceLocation | Ciąg znaków | The resource path to give this block |
 
 
 ### withHardnessAndResistance
@@ -55,9 +55,9 @@ myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| Parameter             | Type  | Description                                       |
-| --------------------- | ----- | ------------------------------------------------- |
-| hardnessAndResistance | float | The value to set for hardness and for resistance. |
+| Parametr              | Typ                | Opis                                              |
+| --------------------- | ------------------ | ------------------------------------------------- |
+| hardnessAndResistance | zmiennoprzecinkowe | The value to set for hardness and for resistance. |
 
 
 
@@ -72,10 +72,10 @@ myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as fl
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
 
-| Parameter    | Type  | Description                      |
-| ------------ | ----- | -------------------------------- |
-| hardnessIn   | float | The value to set for hardness    |
-| resistanceIn | float | The value to set for resistance. |
+| Parametr     | Typ                | Opis                             |
+| ------------ | ------------------ | -------------------------------- |
+| hardnessIn   | zmiennoprzecinkowe | The value to set for hardness    |
+| resistanceIn | zmiennoprzecinkowe | The value to set for resistance. |
 
 
 ### withHarvestLevel
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Parameter    | Type | Description                |
-| ------------ | ---- | -------------------------- |
-| harvestLevel | int  | The harvest level requried |
+| Parametr         | Typ    | Opis                       |
+| ---------------- | ------ | -------------------------- |
+| poziom zbierania | odcień | The harvest level requried |
 
 
 ### withHarvestTool
@@ -109,9 +109,9 @@ myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolTyp
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| Parameter   | Type                                                                            | Description   |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| Parametr             | Typ                                                                             | Opis          |
+| -------------------- | ------------------------------------------------------------------------------- | ------------- |
+| Narzędzie zbierające | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
 
 ### withItemGroup
@@ -127,9 +127,9 @@ myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| Parameter | Type                                                                              | Description      |
-| --------- | --------------------------------------------------------------------------------- | ---------------- |
-| group     | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| Parametr | Typ                                                                               | Opis             |
+| -------- | --------------------------------------------------------------------------------- | ---------------- |
+| group    | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
 
 ### withLightValue
@@ -145,9 +145,9 @@ myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| Parameter    | Type | Description            |
-| ------------ | ---- | ---------------------- |
-| lightValueIn | int  | The light level to set |
+| Parametr     | Typ    | Opis                   |
+| ------------ | ------ | ---------------------- |
+| lightValueIn | odcień | The light level to set |
 
 
 ### withLootFrom
@@ -163,9 +163,9 @@ myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| Parameter | Type                                                          | Description                                  |
-| --------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
+| Parametr | Typ                                                           | Opis                                         |
+| -------- | ------------------------------------------------------------- | -------------------------------------------- |
+| blockIn  | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
 
 ### withMaxStackSize
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parameter | Type | Description      |
-| --------- | ---- | ---------------- |
-| size      | int  | The size to set. |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| rozmiar  | odcień | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| Parametr | Typ         | Opis       |
+| -------- | ----------- | ---------- |
+| rzadkość | Ciąg znaków | The rarity |
 
 
 ### withSlipperiness
@@ -217,9 +217,9 @@ myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parameter      | Type  | Description      |
-| -------------- | ----- | ---------------- |
-| slipperinessIn | float | The value to set |
+| Parametr       | Typ                | Opis             |
+| -------------- | ------------------ | ---------------- |
+| slipperinessIn | zmiennoprzecinkowe | The value to set |
 
 
 ### withType
