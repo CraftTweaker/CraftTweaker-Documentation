@@ -1,10 +1,10 @@
-# NOT Operator
+# NIEPRZEZNACZONE
 
-A **NOT** gate switches the state of the input. So if the input is `TRUE` then the output will be `FALSE` and vice versa.
+Bramka **NOT** przełącza stan wejścia. Więc jeśli wejście wynosi `TRUE` , wtedy wyjście będzie `FALSE` i odwrotnie.
 
-| Input | Output |
-| ----- | ------:|
-| 0     |      1 |
-| 1     |      0 |
+| Input | Wyjście |
+| ----- | -------:|
+| 0     |       1 |
+| 1     |       0 |
 
-The simplest logic requirement that Reskillable supports is the ability to invert a requirement. It does this using a NOT gate and the syntax for it is not|requirement. As described above in the section about Logic Gates, this logic requirement will only be marked as met if the specified requirement is not met.
+Najprostszym wymogiem logicznym, który obsługuje Reskillable jest możliwość odwrócenia wymogu. Wykonuje to za pomocą bramki NOT i składnia dla niej nie jest wymagana. Jak opisano powyżej w sekcji dotyczącej bramek logicznych, ten wymóg logiki zostanie oznaczony jako spełniony, tylko jeśli określony wymóg nie jest spełniony.
