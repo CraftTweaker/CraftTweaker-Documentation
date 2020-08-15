@@ -1,6 +1,6 @@
-# Wire Mill
+# ワイヤーミル
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.wireMill`
 
 ## レシピを追加中
