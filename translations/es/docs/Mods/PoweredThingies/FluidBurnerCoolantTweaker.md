@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Burner :: Coolant
 
-### Importing
+### Importando
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerCoolantTweaker as coolant;
@@ -24,12 +24,12 @@ addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 
 `timeMultiplier` is the value that will be used to increase (or decrease) the number ticks a fuel will burn for.
 
-##### Example
+##### Ejemplo
 
 ```zenscript
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 
-### Notes
+### Notas
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
