@@ -8,7 +8,7 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thermalexpansion.NumisticDynamo;
 ```
 
-## Add Fuel
+## Добавить топливо
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack stack, int energy);
@@ -22,7 +22,7 @@ mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 13);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## Снимите топливо
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeFuel(IItemStack stack);
