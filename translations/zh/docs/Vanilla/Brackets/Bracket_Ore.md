@@ -1,19 +1,19 @@
-# Ore Dictionary Bracket Handler
+# Ore 词库处理器
 
-The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
+Ore字典板块处理程序让您能够访问游戏中的Ore字典。
 
-Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
+Ore 词典处理程序如此引用：
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
+返回 [IOreDictentre](/Vanilla/OreDict/IOreDictEntry/)，只要没有 `*` 正在拨打， 否则返回一个 `列表<IOreDictEntry>` 如果操作词典尚未在游戏中， 将创建一个带有给定名称的新的空的 oreDictionary 并返回它。 请参阅 [Ore 词典](/Vanilla/OreDict/IOreDictEntry/) 条目，了解如何处理它们。
 
-# Getting all Registered ore Dictionaries
+# 获取所有注册矿石字典
 
-You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
+您可以使用以下命令将所有注册的矿石字典输出到 CraftTinline日志
 
     /ct oredict
     /crafttweaker oredict
