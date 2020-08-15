@@ -1,13 +1,13 @@
-# Heating Temperatures
+# Температура отопления
 
-- Warming starts at 1, ends at 80
-- Hot starts at 80, ends at 210
-- Very Hot starts at 210, ends at 480
-- Faint Red starts at 480, ends at 580
-- Dark Red starts at 580, ends at 730
-- Bright Red starts at 730, ends at 930
-- Orange starts at 930, ends at 1100
-- Yellow starts at 1100, ends at 1300
-- Yellow White starts at 1300, ends at 1400
-- White starts at 1400, ends at 1500
-- Brilliant White starts at 1500
+- Разогрев начинается с 1, заканчивается в 80
+- Горячий старт в 80, заканчивается в 210
+- Очень горячий старт в 210, заканчивается в 480
+- Faint Red запускается в 480, заканчивается в 580
+- Темный красный начинается в 580, заканчивается в 730
+- Ярко-красный цвет начинается с 730, заканчивается с 930
+- Оранжевый старт в 930, заканчивается в 1100
+- Желтый старт в 1100, заканчивается в 1300
+- Желтый белый стартует в 1300, заканчивается в 1400
+- Белый старт в 1400, заканчивается в 1500
+- Бриллиант Белый стартует с 1500
