@@ -15,14 +15,14 @@ Boson by default already creates a certain set of tag types, which can be used i
 | -------- | --------------------------------------------- |
 | `blocks` | [`IBlockState`](/Vanilla/Blocks/IBlockState/) |
 | `fluids` | (not currently accessible via CraftTweaker)   |
-| `items`  | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
+| `项目`     | [`IItemStack`](/Vanilla/Items/IItemStack/)    |
 
 ## 参数
 A `TagType` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name       | 返回值类型                                                                  | 描述                                                                        |
+| 属性名称                | 返回值类型                                                                  | 描述                                                                        |
 | ------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `directoryName`     | `string`                                                               | Name of the directory where tag JSONs are in a data-pack                  |
-| `name`              | `string`                                                               | Mnemonic that identifies the given tag type; used in tag bracket handlers |
-| `classType`         | [`Class`](/Mods/Boson/Reflection/Class/)                               | Type of objects stored in the tag                                         |
+| `directoryName`     | `字符串`                                                                  | Name of the directory where tag JSONs are in a data-pack                  |
+| `名称`                | `字符串`                                                                  | Mnemonic that identifies the given tag type; used in tag bracket handlers |
+| `classType`         | [`类`](/Mods/Boson/Reflection/Class/)                                   | Type of objects stored in the tag                                         |
 | `converterFunction` | [`Function<NameSpacedString, any>`](/Mods/Boson/Functions/List/) | Converts names into tag elements                                          |
