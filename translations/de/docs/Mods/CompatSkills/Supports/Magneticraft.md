@@ -1,17 +1,17 @@
 # Magneticraft
 
-## Explaination:
+## Erklärung:
 
-Magneticraft Support currently consists of:
+Magneticraft Support besteht derzeit aus:
 
-- A Command for dumping the string name of all Magneticraft Multiblocks. 
-    - Command is: /ct magMultiBlocks
-- Multiblock Gating using a Crt-based Syntax.
+- Ein Kommando zum Dumpen des String-Namens aller Magneticraft-Multiblöcke. 
+    - Befehl ist: /ct MultiBlocks
+- Multiblock Gating mit einer Crt-basierten Syntax.
 
 ### Syntax:
 
-    Blank Example:
+    Leeres Beispiel:
     mods.compatskills.MagMultiBlockGates.addGate(String multiBlockName, String failureMessage, String... defaultRequirements);
     
-    Working Example:
-    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "I'm afraid this is just too complex for an idiot like you!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");
+    Arbeitsbeispiel:
+    mods.compatskills.MagMultiBlockGates.addGate("solar_mirror", "Ich fürchte, das ist einfach zu komplex für einen Idioten wie Sie!", "reskillable:building|15", "reskillable:magic|7", "adv|minecraft:husbandry/plant_seed", "stage|test");
