@@ -1,13 +1,13 @@
 # Befehle
 
-ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
-To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
+ModTweakers Botania Integration erweitert die Kommandopalette von CraftTweaker.  
+Um auf diese Befehle zuzugreifen, tun Sie dasselbe wie bei CraftTweaker-Befehlen, du das `/crafttweaker` Präfix benutzt
 
-# List of Botania Mod Tweaker Commands
+# Liste der Botania Mod Tweaker Befehle
 
-## Recipes
+## Rezepte
 
-### botbrews
+### bodenbrauen
 
 Verwendung:
 
@@ -17,7 +17,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registered Botania Brews to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Botania Brews in die crafttweaker.log Datei aus.
 
 ### botorechid
 
@@ -29,7 +29,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Orechid-Erze sowie deren Generationschancen für die crafttweaker.log Datei aus.
 
 ### botania apothecary
 
@@ -41,9 +41,9 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Apothekarrezepte in die crafttweaker.log Datei aus.
 
-### botania brews
+### botanische Brauereien
 
 Verwendung:
 
@@ -53,7 +53,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Braurezepte in die crafttweaker.log Datei aus.
 
 ### botania trades
 
@@ -65,7 +65,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Elfenhandelsrezepte in die crafttweaker.log Datei aus.
 
 ### botania infusions
 
@@ -77,7 +77,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
+Gibt eine Liste aller Mana-Infusionsrezepte in die crafttweaker.log Datei aus.
 
 ### botania daisy
 
@@ -89,7 +89,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
+Gibt eine Liste aller registrierten reines Daisy-Rezepte in die crafttweaker.log Datei aus.
 
 ### botania altar
 
@@ -101,7 +101,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
+Gibt eine Liste aller botanischen Altarrezepte in die crafttweaker.log Datei aus.
 
 ## Lexica Botania
 
@@ -115,9 +115,9 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
+Gibt eine Liste aller registrierten botania-Lexikon-Kategorien an die crafttweaker.log Datei aus.
 
-### botlexentries
+### botlexeinträge
 
 Verwendung:
 
@@ -127,9 +127,9 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
+Gibt eine Liste aller registrierten botania-Lexikon-Einträge in die crafttweaker.log Datei aus.
 
-### botlextypes
+### botlextypen
 
 Verwendung:
 
@@ -139,7 +139,7 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
+Gibt eine Liste aller registrierten Botania-Lexikon-Wissensarten in die Datei crafttweaker.log aus.
 
 ### botlexpages
 
@@ -151,4 +151,4 @@ Verwendung:
 
 Beschreibung:
 
-Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.
+Gibt eine Liste aller registrierten botania-Lexikon-Seiten an die crafttweaker.log Datei aus.
