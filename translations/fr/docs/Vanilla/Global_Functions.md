@@ -12,7 +12,7 @@ Prints the string to the crafttweaker log as information.
 print("Hello World!");
 ```
 
-Returns nothing
+Ne retourne rien
 
 ## totalActions
 
@@ -33,7 +33,7 @@ Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocess
 enableDebug();
 ```
 
-Returns nothing
+Ne retourne rien
 
 ## isNull
 
@@ -76,7 +76,7 @@ Returns a double
 
 ## Global Fields
 
-| Field      | Description                                                                                    |
+| Champ      | Libellé                                                                                        |
 | ---------- | ---------------------------------------------------------------------------------------------- |
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
