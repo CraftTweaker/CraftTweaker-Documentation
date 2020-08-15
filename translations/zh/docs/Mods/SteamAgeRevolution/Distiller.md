@@ -1,17 +1,17 @@
-# Distiller
+# 蒸馏器
 
-The Distiller is a machine that converts an input fluid into an output fluid and item using steam.
+蒸馏器是一个用蒸汽将输入液体转换成输出液体和物品的机器。
 
 ## 所属包名
-`mods.steamagerevolution.Distiller`
+`Steamagerevolution.Distiller`
 
 ## 方法
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输出** 该配方的结果。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输出** 该配方的结果。
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 输入** 该配方的输入.
+- **整理时间** 机器处理的制造时间
+- **整流蒸汽成本** 机器处理蒸汽成本
 
 ## 添加配方
 
