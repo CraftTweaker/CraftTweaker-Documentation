@@ -8,7 +8,7 @@ The Toaster crips up food to start your day.
 - Sausage -> Cooked Sausage
 - Kebab -> Cooked Kebab
 
-## Removing
+## Eliminando
 
 ## Remove matching toaster recipes.
 
@@ -21,7 +21,7 @@ mods.cfm.Toaster.remove(<cfm:item_toast>,<cfm:item_bread_slice>);
 mods.cfm.Toaster.remove();
 ```
 
-## Adding
+## Agregando
 
 Add a toaster recipe.
 
