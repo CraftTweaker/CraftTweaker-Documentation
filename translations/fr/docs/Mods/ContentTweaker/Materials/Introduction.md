@@ -1,16 +1,16 @@
-# Contenttweaker Material System
+# Système de matériaux du Contenttweaker
 
-Contenttweaker allows you not only to add single items to the game but whole materials! You can for example use these materials to automatically generate a new ore together with gears, ingots and the like!
+Contenttweaker vous permet non seulement d'ajouter des objets au jeu mais aussi des matériaux entiers ! Vous pouvez par exemple utiliser ces matériaux pour générer automatiquement un nouveau minerai avec les engrenages, les lingots et les autres !
 
-There are 5 Terms that are important:
+Il y a 5 conditions qui sont importantes:
 
-- [Material](/Mods/ContentTweaker/Materials/Materials/Material/): The Material you are going to add/use (e.g. Platinum) → What the items are made of
-- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Basically a group (e.g. Block, Item, Entity, etc) → The type of the parts
-- [Part](/Mods/ContentTweaker/Materials/Parts/Part/): The item's form (e.g. Gear, Rod, Ingot, etc)
-- [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combination of Part and Material (e.g. Iron rod, Platinum Gear, etc) → Can be used to return the item as [IItemStack](/Vanilla/Items/IItemStack/) later on.
-- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Some configurations → Varies by part type, check the wiki page for further information.
+- [Matériel](/Mods/ContentTweaker/Materials/Materials/Material/): Le Matériel que vous allez ajouter/utiliser (par exemple Platinum) → Quels sont les éléments faits de
+- [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/): Fondamentalement un groupe (par exemple, Block, itemm, Entity, etc.) → Le type des parties
+- [Partie](/Mods/ContentTweaker/Materials/Parts/Part/): La forme de l'élément (ex: Gear, Rod, Lingot,etc)
+- [MatérialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/): Combinaison de pièce et de matériel (par ex. Tige de fer, Équipement de platine, etc) → Peut être utilisé pour retourner l'objet comme [IItemStack](/Vanilla/Items/IItemStack/) plus tard.
+- [MaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/): Quelques configurations → Varie par type de pièce, consultez la page wiki pour plus d'informations.
 
-## Example Script
+## Exemple de script
 
 ```zenscript
     #loader contenttweaker
