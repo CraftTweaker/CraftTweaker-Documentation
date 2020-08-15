@@ -8,14 +8,14 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thermalexpansion.SteamDynamo;
 ```
 
-## Add Fuel
+## 添加燃料
 
 ```zenscript
 //mods.thermalexpansion.SteamDynamo.addFuel(IItemStack stack, int energy);
 mods.thermalexpansion.SteamDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## 移除燃料
 
 ```zenscript
 //mods.thermalexpansion.SteamDynamo.removeFuel(IItemStack stack);
