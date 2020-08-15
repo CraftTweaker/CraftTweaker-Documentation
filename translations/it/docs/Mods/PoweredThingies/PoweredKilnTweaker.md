@@ -1,6 +1,6 @@
 # Powered Thingies :: Powered Kiln
 
-### Importing
+### Importazione
 
 ```zenscript
 import mods.poweredthingies.Tweaker.poweredKilnTweaker as pkt;
@@ -22,12 +22,12 @@ pkt().clear()
 addRecipe(input: IItemStack, output: IItemStack)
 ```
 
-##### Example
+##### Esempio
 
 ```zenscript
 pkt().addRecipe(<minecraft:bucket>, <minecraft:iron_ingot>);
 ```
 
-### Notes
+### Note
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
