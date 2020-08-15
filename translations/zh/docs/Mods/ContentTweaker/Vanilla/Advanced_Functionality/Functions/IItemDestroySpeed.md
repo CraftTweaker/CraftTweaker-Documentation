@@ -1,17 +1,17 @@
 # IItemDestroySpeed
 
-The IItemDestroySpeed function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will determine the item's block breaking speed.
+ItemDestroySpeed 函数可以添加到 [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 上，并将决定该项目的方块破碎速度。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemDestroySpeed;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入mods.contenttweeper.IItemDestroySpeed;`
 
-## Parameters
+## 参数
 
-The IItemDestroySpeed is a function with the following parameters:
+IItemDestroySpeed 是一个具有以下参数的函数：
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The item.
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) 可变物品stemstack → 该物品。
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockStateformat@@2 = 正在开采的方块的状态。
 
-The function needs to return a float value.
+函数需要返回一个浮点数。
