@@ -15,7 +15,7 @@ As of Mekanism 9.7.0 it is now possible to view all registered gases (including 
 
 It is also possible as of Mekanism 9.7.1 to get a gas stack/bracket handler by string. Use `mods.mekanism.MekanismHelper.getGas(string);`
 
-## Example
+## Ejemplo
 
 ```zenscript
 import mod.mekanism.gas.IGasStack;
@@ -29,12 +29,12 @@ var oxygen2 = <gas:oxygen> * 500;
 Like LiquidStacks, IGasStacks also support some special ZenGetters.  
 You call the ZenGetters using `gas.Getter` (E.g. `<gas:water>.name`)
 
-| ZenGetter   | Description                             | Return Type    |
-| ----------- | --------------------------------------- | -------------- |
-| definition  | Returns the gas' definition             | IGasDefinition |
-| NAME        | Returns the gas' name                   | string         |
-| displayName | Returns the gas' displayName            | string         |
-| amount      | Returns the gas' amount in millibuckets | int            |
+| ZenGetter   | Descripción                             | Tipo de devolución |
+| ----------- | --------------------------------------- | ------------------ |
+| definition  | Returns the gas' definition             | IGasDefinition     |
+| NAME        | Returns the gas' name                   | cadena             |
+| displayName | Returns the gas' displayName            | cadena             |
+| amount      | Returns the gas' amount in millibuckets | int                |
 
 ## Setting the Object's Amount
 
@@ -50,10 +50,10 @@ var gas_amount_zenMethod = <gas:water>.withAmount(500);
 An IGasDefinition object contains information on a gas.  
 You can get such an object using `gasStack.definition` (check the table above)
 
-| ZenGetter   | Description                            | Return Type |
-| ----------- | -------------------------------------- | ----------- |
-| NAME        | Returns the referred gas' name         | string      |
-| displayName | Returns the referred gas' display name | string      |
+| ZenGetter   | Descripción                            | Tipo de devolución |
+| ----------- | -------------------------------------- | ------------------ |
+| NAME        | Returns the referred gas' name         | cadena             |
+| displayName | Returns the referred gas' display name | cadena             |
 
 You can multiply a gasDefinition to return a new IGasStack with the given amount in millibuckets:
 
