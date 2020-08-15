@@ -19,11 +19,11 @@ PlayerOpenContainer Events implement the following interfaces and are able to ca
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                                  |
-| ----------- | -------------------------------------------- |
-| `canceled`  | boolean                                      |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| ZenGetter  | 戻り値                                          |
+| ---------- | -------------------------------------------- |
+| `canceled` | boolean型                                     |
+| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `コンテナ`     | [IContainer](/Vanilla/Container/IContainer/) |
 
 ## ZenMethods
 
