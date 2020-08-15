@@ -1,8 +1,8 @@
 # MCItemGroup
 
-An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
+Группа предметов (a.k.a. Creative Tab) - это группировка элементов по категориям.
 
-This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
+Этот класс был добавлен модом с мод-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
@@ -11,15 +11,15 @@ mods.contenttweaker.item.MCItemGroup
 ```
 
 ## Реализованные интерфейсы
-MCItemGroup implements the following interfaces. Следовательно, методы из них доступны в этом классе.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+MCItemGroup реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
+- [crafttweaker.api.brackets.Отображаемая строка команды](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
 ### getPath
 
-Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
+Получает путь к группе элементов. Путь — это то, что вы используете в выражении кронштейна после `<itemgroup:` part.
 
-Return type: String
+Тип возврата: строка
 
 ```zenscript
 <itemgroup:misc>.getPath();
@@ -27,26 +27,26 @@ Return type: String
 
 ### setBackgroundImageName
 
-Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
+Устанавливает имя изображения фона, используемого для этой вкладки в меню креативного меню Возвращает: `Этот объект для цепочки`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-<itemgroup:misc>.setBackgroundImageName(texture as String);
+<itemgroup:misc>.setBackgroundImageName(текстура как строка);
 ```
 
-| Параметр | Тип    | Описание               |
-| -------- | ------ | ---------------------- |
-| texture  | String | The texture to be used |
+| Параметр | Тип    | Описание                   |
+| -------- | ------ | -------------------------- |
+| текстура | String | Текстура для использования |
 
 
 ### setNoScrollbar
 
-Removes the scrollbar of the item Group in the creative inventory
+Удаляет полосу прокрутки группы предметов в креативном инвентаре
 
- Returns: `This object for chaining`
+ Возвращается: `Этот объект для цепочки`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,11 +54,11 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 
 ### setNoTitle
 
-Removes the title of the item Group in the creative inventory
+Убирает название группы предметов в творческом инвентаре
 
- Returns: `This object for chaining`
+ Возвращается: `Этот объект для цепочки`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Тип возврата: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
