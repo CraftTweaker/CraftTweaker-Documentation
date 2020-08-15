@@ -1,178 +1,178 @@
-# Crops
+# 作物数
 
-Class path: `mods.botanypots.Crop`
+类路径： `mods.botanypots.Crop`
 
-## Use
+## 使用
 
-To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
+若要使用，导入 `导入mods.botanypots.Crop的类；` 在您的脚本开头。
 
-## Create A Crop
+## 创建裁剪模式
 
-`Crop.create(id, seed, display, tickRate, multiplier, categories);`
+`Crop.create(id, seed, display, tickRate, floader, categories);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
-- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
-- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
-- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `种子` <[IIngredient](/vanilla/api/items/IIngredient)> 用于种植作物的物品。
+- `显示` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 在渲染裁剪时要显示的方块。
+- `tickRate` &lt;int> 是作物需要多长时间才能生长的因素之一。
+- `乘数` &lt;浮点> 另一个因子来决定裁剪需要多长时间。
+- `类别` &lt;字符串[……]> 这种作物可以生长的一组土壤类别。
 
-This can be used to create a new crop. Keep in mind that drops need to be added separately.
+这可以用来创建一个新的作物。 请记住，需要单独添加掉料。
 
 ```zenscript
-Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
+Crop.create("示例包:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
 ```
 
-## Remove A Crop
+## 移除裁剪模式
 
-`Crop.remove(id);`
+`裁剪拆卸(id)；`
 
-- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;字符串> 要移除的裁剪的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
 
-Removes a crop based on it's id.
+移除基于 id 的裁剪。
 
 ```zenscript
 Crop.remove("botanypots:crop/wheat");
 ```
 
-## Set Seed Item
+## 设置种子项
 
-`Crop.setSeed(id, seed);`
+`Crop.setSeed(id, seed)；`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `种子` <[IIngredient](/vanilla/api/items/IIngredient)> 用于种植作物的物品。
 
-Sets the item used to plant the crop.
+设置用于种植作物的物品。
 
 ```zenscript
 Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 ```
 
-## Set Display Block
+## 设置显示块
 
-`Crop.setDisplay(id, state);`
+`Crop.setDisplay(id, state)；`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `显示` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> 在渲染裁剪时要显示的方块。
 
-Sets the block rendered for the crop.
+设置裁剪的方块渲染。
 
 ```zenscript
 Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Set Tick Rate
+## 设置推送速率
 
 `Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `tickRate` &lt;int> 更新的tick 速率。 作物种植需要多长时间的因素之一。
 
-Sets the crop tick factor.
-
-```zenscript
-Crop.setTickRate("botanypots:crop/wheat", 5000);
-```
-
-## Set Growth Multiplier
-
-`Crop.setGrowthModifier(id, multiplier);`
-
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
-
-Sets the growth multiplier/modifier for the crop.
+设置裁剪刻度因数。
 
 ```zenscript
-Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
+Crop.setTickRate("botanypots:cro/ wheat", 5000);
 ```
 
-## Changing Crop Categories
+## 设置增长乘数
 
-Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
+`Crop.setGrowthModifier(id, multier);`
 
-### Add a Category to a Crop
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `乘数` &lt;浮点> 更新乘数。 作物种植需要多长时间的另一个因素。
 
-`Crop.addCategory(id, categoriesToAdd);`
-
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
+设置作物的增长乘数/调整器。
 
 ```zenscript
-Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
+Crop.setGrowthMofieir(“botanypots:crop/wheat”，1.8)；
 ```
 
-### Remove a Category From a Crop
+## 更改裁剪类别
 
-`Crop.removeCategory(id, categoriesToRemove);`
+更改与裁剪关联的类别。 类别用于将有效土壤与作物相匹配。
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
+### 将类别添加到裁剪中
+
+`Crop.addCategory(id, categoriesToAdd)；`
+
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `categoriesToAdd` &lt;string]> 一个与裁剪关联的分类数组。
+
+```zenscript
+Crop.addCategory(“botanypots:crop/wheat”, ["stone", "雪"]);
+```
+
+### 从裁剪中删除类别
+
+`Crop.removeCategory(id, categoriesToRemove)；`
+
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `categoriesToday` &lt;string. [> 一个要与crop 断开关联的类别数组。
 
 ```zenscript
 Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### Clear All Categories From a Crop
+### 从裁剪清除所有类别
 
-`Crop.clearCategories(id);`
+`Crop.clearcategories(id)；`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> The id of the crop. 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
 
 ```zenscript
-Crop.clearCategories("botanypots:crop/wheat");
+Crop.clearcategories("botanypots:cro/wheat");
 ```
 
-## Crop Drops
+## 裁剪掉文件
 
-### Adding Drops
+### 添加掉落中
 
-`Crop.addDrop(id, drop, chance, min, max);`
+`Crop.addDrop(id, drop, opportence, min, max)；`
 
-- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
-- `min` &lt;int> The min amount of that item to give.
-- `max` &lt;int> The max amount of that item to give.
+- `id` &lt;字符串> 要添加一滴到的裁剪的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `掉入` <[IItemStack](/vanilla/api/items/IItemStack)> 要掉落的物品
+- `几率` &lt;浮点> 它掉落的几率。
+- `分钟` &lt;int> 该项目的最小金额给出。
+- `最大` &lt;int> 该物品的最大数量可给予。
 
-This adds a new potential drop to the crop.
+这给作物增加了新的潜在下降。
 
 ```zenscript
 Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
-### Removing Drops
+### 删除掉落中
 
-`Crop.removeDrop(id, toRemove);`
+`裁剪移除Drop(id，移除)；`
 
-- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
+- `id` &lt;字符串> 要移除掉的裁剪的 id。 这是一个命名空间ID，必须是有效的 `命名空间：路径` 格式。
+- `to删除` <[IIngredient](/vanilla/api/items/IIngredient)> 与可移除相匹配的组件
 
-Removes any drops that have a matching item.
+删除任何有匹配项的掉落。
 
 ```zenscript
 Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Getting All Ids
+## 正在获取所有ID
 
 `Crop.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
+- 返回： &lt;字符串[]> 此时所有已知裁剪id的数组。
 
-This will give you an array of all the known crop ids at the time.
+这将给您一个当时所有已知裁剪ID的数组。
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for cropId in Crop.getAllIds() {
-    println(cropId);
+// 将所有id记录到 crafttweeper.log 文件
+的 Crop.getAllids() 中的 crop Id 中的 format@@
+    println(ropId);
 }
 ```
 
-## Removing All Crops
+## 移除所有裁剪中
 
-This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+这将完全移除所有当前注册的作物。 如果你想要通过脚本从头重新创建所有数据，这是有用的。
 
 ```zenscript
-Crop.removeAll();
+crop.removeAll();
 ```
