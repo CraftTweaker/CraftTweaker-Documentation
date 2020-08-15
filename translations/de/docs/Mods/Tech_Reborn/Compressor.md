@@ -1,6 +1,6 @@
-# Compressor
+# Kompressor
 
-## Importing the Package
+## Paket wird importiert
 `mods.techreborn.compressor`
 
 ## Rezepte hinzufügen
