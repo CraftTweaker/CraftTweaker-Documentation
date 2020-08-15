@@ -1,7 +1,7 @@
-# Sky Resources 2
+# Zasoby nieba 2
 
-[Sky Resources 2](https://minecraft.curseforge.com/projects/sky-resources) is a skyblock companion mod providing access to all the basic resources needed for vanilla and other mods using machines including combustion heaters, condensers, water extractors, and much more!
+[Sky Resources 2](https://minecraft.curseforge.com/projects/sky-resources) jest modem kompanującym na płycie zapewniającym dostęp do wszystkich podstawowych zasobów potrzebnych do wanili i innych modów wykorzystujących maszyny, w tym grzejniki spalinowe, kondensatory, wyciągi wody i wiele więcej!
 
-## Source and Issues
+## Źródło i problemy
 
-The [github page](https://github.com/Bartz24/SkyResources) for Sky Resources 2 where you can post issues or view the source code for the mod.
+Strona [github](https://github.com/Bartz24/SkyResources) dla Sky Resources 2, gdzie możesz publikować zgłoszenia lub przeglądać kod źródłowy moda.
