@@ -2,7 +2,7 @@
 
 An IBlockState object represents a block's current state.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockState;`
@@ -39,25 +39,25 @@ IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That 
 
 IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
 
-## ZenMethods and ZenGetters
+## ZenMethods e ZenGetters
 
-| ZenGetter     | Return Type                       | Description                                                                                |
+| ZenGetter     | Tipo Di Reso                      | Descrizione                                                                                |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
-| meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| blocco        | [IBlock](/Vanilla/Blocks/IBlock/) | Restituisce il blocco referito                                                             |
+| meta          | int                               | Restituisce i metadati del blocco di riferimento                                           |
+| commandString | stringa                           | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
 
 ## ZenMethods
 
-### isReplacable
+### isSostituibile
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parametri:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+Restituisce un booleano che sa se il blocco può essere sostituito o meno.
 
 ### Getting or changing Properties
 
@@ -78,7 +78,7 @@ IBlockState withProperty(String name, String value);
 You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
 The return different types though:
 
-- `state.compare(other)` returns an int that is 0 if they are equal
+- `state.compare(other)` restituisce un int che è 0 se sono uguali
 - `state == other` returns a bool that is true of they are equal
 
 ### Getting an explicit Blockstate Matcher
