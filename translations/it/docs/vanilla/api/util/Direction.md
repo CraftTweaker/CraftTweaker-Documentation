@@ -1,6 +1,6 @@
-# Direction
+# Direzione
 
-Represents a cardinal direction (north, south, east, west) and (up and down).
+Rappresenta una direzione cardinale (nord, sud, est, ovest) e (su e giù).
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,11 +11,11 @@ crafttweaker.api.util.Direction
 ```
 
 ## Metodi
-### rotateAround
+### rotateIntorno
 
-Rotates this direction around a given Axis
+Ruota questa direzione attorno a un determinato asse
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Restituisce [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateAround(axis as crafttweaker.api.util.DirectionAxis);
@@ -24,16 +24,16 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 | Parametro | Tipo                                                                   | Descrizione               |
 | --------- | ---------------------------------------------------------------------- | ------------------------- |
-| axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
+| asse      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | l'asse da ruotare intorno |
 
 
 ### rotateY
 
-Rotates this direction on the Y axis
+Ruota questa direzione sull'asse Y
 
- Returns: `the direction that rotated on the Y axis of this direction`
+ Restituisce: `la direzione che ha ruotato sull'asse Y di questa direzione`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Restituisce [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateY();
@@ -41,11 +41,11 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ### rotateYCCW
 
-Rotates this direction counter-clock wise on the Y axis
+Ruota questa direzione in senso antiorario sull'asse Y
 
- Returns: `the direction that is counter clockwise on the Y axis`
+ Restituisce: `la direzione in senso antiorario sull'asse Y`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Restituisce [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateYCCW();
@@ -54,16 +54,16 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ## Proprietà
 
-| Nome            | Tipo                                                                   | Ha Getter | Ha Setter |
-| --------------- | ---------------------------------------------------------------------- | --------- | --------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | vero      | falso     |
-| axisOffset      | int                                                                    | vero      | falso     |
-| horizontalAngle | galleggiante                                                           | vero      | falso     |
-| horizontalIndex | int                                                                    | vero      | falso     |
-| indice          | int                                                                    | vero      | falso     |
-| nome            | Stringa                                                                | vero      | falso     |
-| opposto         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | vero      | falso     |
-| xOffset         | int                                                                    | vero      | falso     |
-| yOffset         | int                                                                    | vero      | falso     |
-| zOffset         | int                                                                    | vero      | falso     |
+| Nome               | Tipo                                                                   | Ha Getter | Ha Setter |
+| ------------------ | ---------------------------------------------------------------------- | --------- | --------- |
+| asse               | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | vero      | falso     |
+| axisOffset         | int                                                                    | vero      | falso     |
+| orizzontale Angolo | galleggiante                                                           | vero      | falso     |
+| horizontalIndex    | int                                                                    | vero      | falso     |
+| indice             | int                                                                    | vero      | falso     |
+| nome               | Stringa                                                                | vero      | falso     |
+| opposto            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | vero      | falso     |
+| xOffset            | int                                                                    | vero      | falso     |
+| yOffset            | int                                                                    | vero      | falso     |
+| zOffset            | int                                                                    | vero      | falso     |
 
