@@ -9,34 +9,34 @@ The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAn
 
 - Вы можете помечать все методы: и статические, и нет. 
 - Помеченные методы должны иметь один дополнительный параметр, если внутри [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). Этот параметр должен принимать экземпляр расширенного класса.
-- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
+- При аннотации статического метода в [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (например, заводской метод), вместо этого потребуется использовать [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/).
 
 ## Пример класса
 
 ```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
 @ZenRegister
-public class DevWikiTest {
+публичный класс DevWikiTest {
 
-    //statics which will be called using crafttweaker.tests.devWikiTest.methodName(arguments);
+    //statics, который будет называться с помощью crafttweaker.tests.devWikiTest. ethodName(аргументы);
     @ZenMethod
-    public static DevWikiTest staticMethod(int arg1) {
+    публичный статический DevWikiTest staticMethod(int arg1) {
         return new DevWikiTest(arg1);
     }
 
     @ZenMethod
     public static void staticMethod2() {
-        CraftTweakerAPI.logInfo("staticMethod2 called!");
+        CraftTweakerAPI. ogInfo("staticMethod2 называется!");
     }
 
     @ZenMethod
-    public static void staticMethodVarArg(int... args) {
-        CraftTweakerAPI.logInfo("staticMethod3 called with " + args.length + " arguments");
+    публичная статическая пустая staticMethodVarArg(int... args) {
+        CraftTweakerAPI.logInfo("staticMethod3 called with " + args. ength + " arguments");
     }
 
 
 
-    //nonstatics which sill be called using instance.methodName(arguments);
+    //nonstatics, которые вызываются с помощью экземпляра. ethodName(аргументы);
     @ZenMethod
     public int getValue() {
         return value;
@@ -44,19 +44,19 @@ public class DevWikiTest {
 
     @ZenMethod
     public void print() {
-        CraftTweakerAPI.logInfo("DevWikiTest Object with value " + value);
+        CraftTweakerAPI. ogInfo("Объект DevWikiTest со значением " + значение);
     }
 
     @ZenMethod
     public void printWithVarArg(int... args) {
-        CraftTweakerAPI.logInfo("Nonstatic called with " + args.length + " arguments");
+        CraftTweakerAPI.logInfo("Nonstatic called with " + args. ength + " arguments");
     }
 
 
     private final int value;
 
     public DevWikiTest(int value) {
-        this.value = value;
+        this. alue = значение;
     }
 }
 ```
