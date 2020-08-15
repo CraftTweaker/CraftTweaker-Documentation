@@ -102,7 +102,7 @@ myMCFillBucketEvent.setCanceled(cancel as boolean);
 myMCFillBucketEvent.setFilledBucket(arg0 as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Parameter | Type                                                              | Beschreibung            |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | arg0      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
