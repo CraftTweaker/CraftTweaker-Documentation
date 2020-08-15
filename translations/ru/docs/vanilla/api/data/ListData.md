@@ -1,4 +1,4 @@
-# ListData
+# Список данных
 
 
 
@@ -11,7 +11,7 @@ crafttweaker.api.data.ListData
 ```
 
 ## Реализованные интерфейсы
-ListData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+ListData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
 ## Конструкторы
@@ -19,11 +19,11 @@ ListData implements the following interfaces. Следовательно, мет
 new crafttweaker.api.data.ListData();
 ```
 ```zenscript
-new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
+new crafttweaker.api.data.ListData(список как список<crafttweaker.api.data.IData>);
 ```
-| Параметр | Тип                                                          | Описание             | IsOptional | Значение по умолчанию |
-| -------- | ------------------------------------------------------------ | -------------------- | ---------- | --------------------- |
-| список   | List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | Описание отсутствует | true       | null                  |
+| Параметр | Тип                                                            | Описание             | Необязательный | Значение по умолчанию |
+| -------- | -------------------------------------------------------------- | -------------------- | -------------- | --------------------- |
+| список   | Список<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | Описание отсутствует | true           | null                  |
 
 
 
@@ -31,8 +31,8 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ### Добавить
 
 ```zenscript
-["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
-["Hello", "World", "!"].add("today");
+["Привет", "Мир", "!"].add(значение как crafttweaker.api.data.IData);
+["Привет", "Мир", "!"].add("сегодня");
 ```
 
 | Параметр | Тип                                                    | Описание                       |
@@ -42,8 +42,8 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 
 
 ```zenscript
-["Hello", "World", "!"].add(index as int, value as crafttweaker.api.data.IData);
-["Hello", "World", "!"].add(1, "beautiful");
+["Привет", "Мир", "!"].add(индекс int, значение как crafttweaker.api.data.IData);
+["Привет", "Мир", "!"].add(1, "красиво");
 ```
 
 | Параметр | Тип                                                    | Описание                                                                  |
@@ -52,61 +52,61 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 | value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению в список                                            |
 
 
-### clear
+### очистить
 
-Removes every element in the list
-
-```zenscript
-["Hello", "World", "!"].clear();
-```
-
-### get
-
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
-
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Удаляет каждый элемент списка
 
 ```zenscript
-["Hello", "World", "!"].get(index as int);
-["Hello", "World", "!"].get(0);
+["Привет", "Мир", "!"].clear();
 ```
 
-| Параметр | Тип | Описание            |
-| -------- | --- | ------------------- |
-| index    | int | The index (0-based) |
+### получить
+
+Получает [crafttweaker.api.data.IData](/vanilla/api/data/IData) , хранящийся по данному индексу.
+
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+```zenscript
+["Привет", "Мир", "!"].get(индекс int);
+["Привет", "Мир", "!"].get(0);
+```
+
+| Параметр | Тип | Описание   |
+| -------- | --- | ---------- |
+| index    | int | Индекс (0) |
 
 
 ### удалить
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+Удаляет [crafttweaker.api.data.IData](/vanilla/api/data/IData) , хранящуюся по заданному индексу.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
-
-```zenscript
-["Hello", "World", "!"].remove(index as int);
-["Hello", "World", "!"].remove(0);
-```
-
-| Параметр | Тип | Описание            |
-| -------- | --- | ------------------- |
-| index    | int | The index (0-based) |
-
-
-### set
-
-Sets the item at the provided index to the given value
-
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-["Hello", "World", "!"].set(index as int, value as crafttweaker.api.data.IData);
-["Hello", "World", "!"].set(0, "Bye");
+["Привет", "Мир", "!"].remove(индекс int);
+["Привет", "Мир", "!"].remove(0);
 ```
 
-| Параметр | Тип                                                    | Описание                   |
-| -------- | ------------------------------------------------------ | -------------------------- |
-| index    | int                                                    | The index to set (0-based) |
-| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Параметр | Тип | Описание   |
+| -------- | --- | ---------- |
+| index    | int | Индекс (0) |
+
+
+### набор
+
+Устанавливает элемент по указанному индексу для заданного значения
+
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+
+```zenscript
+["Привет", "Мир", "!"].set(индекс как int, значение как crafttweaker.api.data.IData);
+["Привет", "Мир", "!"].set(0, "Би"");
+```
+
+| Параметр | Тип                                                    | Описание                 |
+| -------- | ------------------------------------------------------ | ------------------------ |
+| index    | int                                                    | Индекс для установки (0) |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Новое значение           |
 
 
 
@@ -118,7 +118,7 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Утилиты
 
-| Тип результата                                               | Является неявным |
-| ------------------------------------------------------------ | ---------------- |
-| List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true             |
+| Тип результата                                                 | Является неявным |
+| -------------------------------------------------------------- | ---------------- |
+| Список<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | true             |
 
