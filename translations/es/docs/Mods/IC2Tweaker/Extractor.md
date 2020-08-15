@@ -4,12 +4,12 @@
 
 `import mods.ic2.Extractor;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.ic2.Extractor.addRecipe(IItemStack output, IIngredient input);
