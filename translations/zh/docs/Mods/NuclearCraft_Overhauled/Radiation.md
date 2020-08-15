@@ -5,12 +5,12 @@
 ### Importing the Package
 `mods.nuclearcraft.RadiationScrubber`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
 mods.nuclearcraft.RadiationScrubber.addRecipe(IIngredient itemInput, ILiquidStack fluidInput, IIngredient itemOutput, ILiquidStack fluidOutput, int processTime, int processPower, double processEfficiency);
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
 mods.nuclearcraft.RadiationScrubber.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
@@ -22,12 +22,12 @@ mods.nuclearcraft.RadiationScrubber.removeAllRecipes();
 ### Importing the Package
 `mods.nuclearcraft.RadiationBlockMutation`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
 mods.nuclearcraft.RadiationBlockMutation.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockMutation.removeRecipeWithOutput(IIngredient blockOutput);
@@ -39,12 +39,12 @@ mods.nuclearcraft.RadiationBlockMutation.removeAllRecipes();
 ### Importing the Package
 `mods.nuclearcraft.RadiationBlockPurification`
 
-### Adding Recipes
+### 添加配方
 ```zenscript
 mods.nuclearcraft.RadiationBlockPurification.addRecipe(IIngredient blockInput, IIngredient blockOutput, double radiationThreshold);
 ```
 
-### Removing Recipes
+### 删除配方
 ```zenscript
 mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.RadiationBlockPurification.removeRecipeWithOutput(IIngredient blockOutput);
