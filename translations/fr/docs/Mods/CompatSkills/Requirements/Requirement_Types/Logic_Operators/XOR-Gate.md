@@ -1,8 +1,8 @@
 # XOR Operator
 
-An **XOR** gate combines two inputs and returns `TRUE` only if one of the inputs is `TRUE` and the other is `FALSE`.
+Une porte **XOR** combine deux entrées et renvoie `TRUE` seulement si l'une des entrées est `TRÈS` et l'autre est `FALSE`.
 
-| Input 1 | Input 2 | Output |
+| Input 1 | Input 2 | Sortie |
 | ------- | ------- | ------:|
 | 0       | 0       |      0 |
 | 0       | 1       |      1 |
