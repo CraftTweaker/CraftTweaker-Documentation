@@ -1,16 +1,16 @@
-# PlayerAdvancement
+# Улучшение плеера
 
-The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
+Событие Улучшение Игрока запускается каждый раз, когда игрок получает Продвижение
 
 ## Класс события
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAdvancementEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Вам нужно оформить событие в заголовке функции как этот класс:  
+`crafttweaker.event. layerAdvancementEvent`  
+Вы можете, конечно, импортировать класс и [затем импортировать](/AdvancedFunctions/Import/).
 
 ## Наследование от интерфейсов событий
 
-PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAdvancement События реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
@@ -24,9 +24,9 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 ## Id
 
-Apart from the functionality the PlayerEvent exposes you can get the advancement's ID as string.
+Кроме функциональности PlayerEvent вы можете получить продвинутый идентификатор как строку.
 
-This can for example be a string like
+Это может быть строка, как
 
 ```zenscript
 "minecraft:story/mine_diamond"
