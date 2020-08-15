@@ -6,6 +6,6 @@
 
 VanillaDeathChest can be paired with [Game Stages](https://www.curseforge.com/minecraft/mc-mods/game-stages) and CraftTweaker to make accessing death chests more difficult for players as they progress.
 
-If any properties are not set via CraftTweaker, the values set in the global configuration are used. Game stages should be defined in order. Calling any of the VanillaDeathChest functions causes the specified stage to be defined if it has not been already.
+If any properties are not set via CraftTweaker, the values set in the global configuration are used. Les étapes de jeu doivent être définies dans l'ordre. Calling any of the VanillaDeathChest functions causes the specified stage to be defined if it has not been already.
 
 Any messages that take arguments, such as the unlock failed chat message, follow [this](https://dzone.com/articles/java-string-format-examples) format. For example, `%2$s` refers to the second argument.
