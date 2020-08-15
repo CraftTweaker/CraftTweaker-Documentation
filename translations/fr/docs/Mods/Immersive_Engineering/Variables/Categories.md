@@ -1,17 +1,17 @@
-# Categories
+# Catégories
 
 ## Information
 
-The Blueprint has a Required String parameter called "Category". This String allows you to "Categorise" your recipes to a specific Blueprint Category.
+Le Plan a un paramètre de Chaîne Requise appelé "Catégorie". Cette Chaîne vous permet de "Catégoriser" vos recettes à une catégorie de Plan spécifique.
 
-If this string returns a Category not already existing it'll create that Category and an appropriate Blueprint. If it finds an existing Category it'll add the recipe to said Category.
+Si cette chaîne retourne une catégorie qui n'existe pas déjà, elle créera cette catégorie et un plan approprié. Si elle trouve une catégorie existante, elle ajoutera la recette à cette catégorie.
 
-### Existing Categories
+### Catégories existantes
 
-| Category: | Name:         | Localized Name:         |
-| --------- | ------------- | ----------------------- |
-| Category  | components    | Crafting Components     |
-| Category  | molds         | Metal Press Molds       |
-| Category  | bullet        | Common Projectiles      |
-| Category  | specialBullet | Specialized Projectiles |
-| Category  | electrode     | Arc Furnace Electrodes  |
+| Catégorie: | Nom:          | Nom localisé :              |
+| ---------- | ------------- | --------------------------- |
+| Catégorie  | composants    | Composants d'artisanat      |
+| Catégorie  | moules        | Moules de presse métallique |
+| Catégorie  | balle         | Projectiles communs         |
+| Catégorie  | specialBullet | Projectiles Spécialisés     |
+| Catégorie  | électrode     | Électrodes de four à arc    |
