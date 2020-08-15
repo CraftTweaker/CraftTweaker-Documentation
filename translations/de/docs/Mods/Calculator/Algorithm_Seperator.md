@@ -15,7 +15,7 @@ import mods.calculator.algorithmSeparator;
 algorithmSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 algorithmSeparator.removeRecipe(IIngredient output1, IIngredient output2);
 ```
