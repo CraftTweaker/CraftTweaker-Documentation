@@ -1,46 +1,46 @@
-# Block Material Bracket Handler
+# Manejador de bloques de material
 
-The Block Material Bracket Handler gives you access to the Block Materials in the game. Currently the only Block Materials supported are:
+The Block Material Bracket Handler te da acceso a los Bloques de Materiales en el juego. Actualmente el único bloque de materiales soportados son:
 
 <details>
-    <summary>Click to expand the Material list</summary>
+    <summary>Haga clic para expandir la lista de materiales</summary>
     <ul>
-        <li>Air</li>
-        <li>Grass</li>
-        <li>Ground</li>
-        <li>Wood</li>
-        <li>Rock</li>
-        <li>Iron</li>
-        <li>Anvil</li>
-        <li>Water</li>
+        <li>Aire</li>
+        <li>Hierba</li>
+        <li>Terreno</li>
+        <li>Madera</li>
+        <li>Roca</li>
+        <li>Hierro</li>
+        <li>Yunque</li>
+        <li>Agua</li>
         <li>Lava</li>
-        <li>Leaves</li>
-        <li>Plants</li>
+        <li>Hojas</li>
+        <li>Plantas</li>
         <li>Vine</li>
-        <li>Sponge</li>
-        <li>Cloth</li>
-        <li>Fire</li>
-        <li>sand</li>
-        <li>Circuits</li>
-        <li>Carpet</li>
-        <li>Glass</li>
-        <li>Redstone_Light</li>
+        <li>Esponja</li>
+        <li>Ropa</li>
+        <li>Fuego</li>
+        <li>arena</li>
+        <li>Circuitos</li>
+        <li>Alfombra</li>
+        <li>Cristal</li>
+        <li>Piedra_Luz</li>
         <li>TNT</li>
         <li>Coral</li>
-        <li>Ice</li>
-        <li>Packed_Ice</li>
-        <li>Crafted_Snow</li>
+        <li>Hielo</li>
+        <li>Hielo empaquetado</li>
+        <li>Nieve fabricada</li>
         <li>Cactus</li>
-        <li>Clay</li>
+        <li>Arcilla</li>
         <li>Gourd</li>
-        <li>Dragon_Egg</li>
+        <li>Huevo de Dragón</li>
         <li>Portal</li>
-        <li>Cake</li>
+        <li>Pastel</li>
         <li>Web</li>
     </ul>
 </details>
 
-Block Materials are referenced in the Material Bracket handler this way:
+Los materiales de bloque son referenciados en el manejador de soportes Material de esta manera:
 
 ```zenscript
 <blockmaterial:name>
@@ -48,4 +48,4 @@ Block Materials are referenced in the Material Bracket handler this way:
 <blockmaterial:wood>
 ```
 
-If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.
+Si se encuentra el Material del Bloque, esto devolverá un objeto [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/).
