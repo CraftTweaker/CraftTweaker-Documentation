@@ -15,7 +15,7 @@ LivingKnockBack Events implement the following interfaces and are able to call a
 
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter          | ZenSetter  | Тип                                   |
 | ------------------ | ---------- | ------------------------------------- |
@@ -28,6 +28,6 @@ The following information can be retrieved/set during the event:
 | `originalRatioX`   |            | double                                |
 | `originalRatioZ`   |            | double                                |
 
-## Notes
+## Примечания
 
 When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.
