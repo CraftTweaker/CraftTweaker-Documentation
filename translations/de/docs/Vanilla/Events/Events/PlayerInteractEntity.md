@@ -26,6 +26,6 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
 | `cancellationResult` | `cancellationResult` | string ("success" / "pass" / "fail")  |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled.
