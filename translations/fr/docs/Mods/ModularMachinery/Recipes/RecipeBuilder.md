@@ -2,7 +2,7 @@
 
 The RecipeBuilder class only has one objective: Creating a new [RecipePrimer](/Mods/ModularMachinery/Recipes/RecipePrimer/) Object for you.
 
-## Calling
+## Appel en cours
 
 You can call the Brew package using `mods.modularmachinery.RecipeBuilder`
 
