@@ -2,29 +2,29 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.data.IntData
 ```
 
-## Implemented Interfaces
-IntData implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+IntData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Constructors
 ```zenscript
 new crafttweaker.api.data.IntData(internal as int);
 ```
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| internal  | int  | No description provided |
+| Parametro | Tipo | Descrizione                 |
+| --------- | ---- | --------------------------- |
+| interno   | int  | Nessuna descrizione fornita |
 
 
 
-## Methods
+## Metodi
 ### asList
 
 Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
@@ -55,7 +55,7 @@ Gets the String representation of this IData
 
  Returns: `String that represents this IData (value and type).`
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
 8192.asString();
@@ -65,16 +65,16 @@ Returns String
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 8192.contains(data as crafttweaker.api.data.IData);
 8192.contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
+| Parametro | Tipo                                                   | Descrizione                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| dati      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -111,7 +111,7 @@ Gets the String representation of the internal INBT tag
 
  Returns: `String that represents the internal INBT of this IData.`
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
 8192.getString();
