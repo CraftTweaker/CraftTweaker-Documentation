@@ -4,7 +4,7 @@ The Dishwasher allows you to clean dirty tools.
 
 By default repairs durability of vanilla tools and weapons only.
 
-## Removing
+## Rimozione
 
 ## Remove matching washable items.
 
@@ -16,7 +16,7 @@ mods.cfm.Dishwasher.remove(<minecraft:flint_and_steel>);
 mods.cfm.Dishwasher.remove();
 ```
 
-## Adding
+## Aggiunta
 
 ## Add a washable item.
 
