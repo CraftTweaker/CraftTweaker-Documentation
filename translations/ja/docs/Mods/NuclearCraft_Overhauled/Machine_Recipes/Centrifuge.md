@@ -1,6 +1,6 @@
 # 遠心分離機
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.Centrifuge遠心分離機`
 
 ## レシピを追加中
@@ -13,5 +13,5 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.Centrifuge.addRecipe(ILiquidStack
 mods.nuclearcraft.Supercoolermods.nuclearcraft.Centrifuge.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Centrifuge.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
 mods.nuclearcraft.Centrifuge.removeAllRecipes();Centrifuge.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Centrifuge.removeAllRecipes();
+mods.nut.Centrifuge.removeAllRecipes();
 ```
