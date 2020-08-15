@@ -1,15 +1,15 @@
-# EntityLivingJump
+# EntityLivingsprung
 
-The EntityLivingJump Event is fired whenver an entity jumps.
+Das EntityLivingJump Event wird abgefeuert, wenn eine Entität springt.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingJumpEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. ntityLivingJumpEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
