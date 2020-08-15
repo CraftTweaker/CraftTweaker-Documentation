@@ -1,10 +1,10 @@
-### Class
+### Klasa
 
 ```zenscript
 import mods.roots.Mortar;
 ```
 
-#### Methods
+#### Metody
 
 ```zenscript
 void addRecipe(
@@ -32,7 +32,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Przykłady
 
 ```zenscript
 import mods.roots.Mortar;
