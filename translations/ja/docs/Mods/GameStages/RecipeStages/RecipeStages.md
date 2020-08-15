@@ -1,10 +1,10 @@
-# Recipe Stages
+# レシピの段階
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Recipe Stages allows for Crafting Table Recipes to be restricted by a custom progression system. For more info, check out the mod page [here](https://minecraft.curseforge.com/projects/recipe-stages)
+この mod は [GameStages API](https://minecraft.curseforge.com/projects/game-stages) のアドオンです。 レシピ段階を使用すると、カスタムの進行システムによって、作業台レシピを制限できます。 詳細はこちら [をご覧ください](https://minecraft.curseforge.com/projects/recipe-stages)
 
-## Methods
+## メソッド
 
-Adds a shaped recipe that is locked behind a stage.
+ステージの後ろにロックされた形状のレシピを追加します。
 
 ```zenscript
 //mods.recipestages.Recipes.addShaped(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
@@ -14,7 +14,7 @@ mods.recipestages.Recipes.addShaped("two", <minecraft:iron_leggings>,[[<minecraf
 mods.recipestages.Recipes.addShaped("test", "one", <minecraft:iron_leggings>,[[<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>],[<minecraft:iron_ingot>, null, <minecraft:iron_ingot>]]);
 ```
 
-Adds a mirrored shaped recipe that is locked behind a stage.
+ステージの後ろにロックされているミラー状のレシピを追加します。
 
 ```zenscript
 //mods.recipestages.Recipes.addShapedMirrored(String stage, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
@@ -25,7 +25,7 @@ mods.recipestages.Recipes.addShapedMirrored("test_mirrored", "one", <minecraft:i
 
 ```
 
-Adds a shapeless recipe that is locked behind a stage.
+ステージの後ろにロックされたシェイプレスレシピを追加します。
 
 ```zenscript
 //mods.recipestages.Recipes.addShapeless(String stage, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
@@ -35,14 +35,14 @@ mods.recipestages.Recipes.addShapeless("one", <minecraft:diamond>, [<ore:sand>, 
 mods.recipestages.Recipes.addShapeless("shapeless_test". "one", <minecraft:diamond>, [<ore:sand>, <ore:sand>, <ore:ingotIron>, <minecraft:gold_ingot>]);
 ```
 
-Sets the stage of a non staged recipe.
+ステージ以外のレシピのステージを設定します。
 
 ```zenscript
-//mods.recipestages.Recipes.setRecipeStage(String name, IItemStack output);
-//mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
+//mods.recipes.setRecipeStage(String name, IItemStack output);
+//mods.recipeStackes.Recipes.setRecipeStage(String name, String recipeName);
 
-mods.recipestages.Recipes.setRecipeStage("one", <minecraft:stone_hoe>);
-mods.recipestages.Recipes.setRecipeStage("one", "minecraft:boat");
+mods.recipes.setRecipeStage("one", <minecraft:stone_hoe>);
+mods.recipes.setRecipeRecipeStage("one", "minecraft:boat");
 ```
 
 Sets the stage of all recipes that make items from a certain mod.  
@@ -50,36 +50,36 @@ More specifically, stages all recipes that have the given modid as resource doma
 Does NOT work with regex expressions, so using `.*` as argument would do nothing!
 
 ```zenscript
-//mods.recipestages.Recipes.setRecipeStage(String name, String recipeName);
-mods.recipestages.Recipes.setRecipeStageByMod("one", "minecraft");
+//mods.recipes.setRecipeStage(String name, String recipeName);
+mods.recipe.setRecipeStageByMod("one", "minecraft");
 ```
 
-Sets the stage of all recipes based on a regex check against their name.
+名前に基づいて、すべてのレシピのステージを設定します。
 
 ```zenscript
-//mods.recipestages.Recipes.setRecipeStageByRegex(String name, String modid);
-//This sets the stage of all recipes who's name only contains numbers to stage "one"
+//mods.recipes.setRecipeStageByRegex(String name, String modid);
+//これは、名前のみが「1」の数字を含むすべてのレシピのステージを設定します。
 
-mods.recipestages.Recipes.setRecipeStageByRegex("one", "^[0-9]*$");
+mods.recipes.setRecipeStageByRegex("one", "^[0-9]*$");
 ```
 
-Tells RecipeStages to print Container names to chat
+コンテナ名を出力してチャットするようRecipeStagesに伝えます
 
 ```zenscript
-//mods.recipestages.Recipes.setPrintContainers(boolean printContainers);
-mods.recipestages.Recipes.setPrintContainers(true);
+//mods.recipes.setPrintContainers(boolean printContainers);
+mods.recipes.setPrintContainers(true);
 ```
 
-"Stages" a container, allowing it to craft recipes from certain stages
+特定の段階からレシピを作成できる容器を「ステージ」します
 
 ```zenscript
-//mods.recipestages.Recipes.setContainerStage(String containerPath, String[] stages);
-mods.recipestages.Recipes.setContainerStage("primal_tech.inventory.ContainerWorkStump", "one");
+//mods.recipes.setContainerStage(String containerPath, String[] stage);
+mods.recipes.setContainerStage("primal_tech.inventory.ContainerWorkStump", "one");
 ```
 
-"Stages" a package, allowing all containers in the package to craft recipes from certain stages
+パッケージを「ステージ」し、パッケージ内のすべてのコンテナが特定の段階からレシピを作成できるようにします
 
 ```zenscript
-//mods.recipestages.Recipes.setPackageStage(String packageName, String[] stages);
-mods.recipestages.Recipes.setPackageStage("appeng", allStages);
+//mods.recipes.setPackageStage(String packageName, String[] stages);
+mods.recipes.setPackageStage("appeng", allStages);
 ```
