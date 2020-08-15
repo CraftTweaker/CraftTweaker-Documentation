@@ -1,50 +1,50 @@
-# MaterialPart
+# Материал
 
-A MaterialPart Object is, as the name suggests a combination of a [Material](/Mods/ContentTweaker/Materials/Materials/Material/) and a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), such as `platinum gear`.
+Объект "Материалчасть", как следует из названия комбинации [Материала](/Mods/ContentTweaker/Materials/Materials/Material/) и [части](/Mods/ContentTweaker/Materials/Parts/Part/), такие как `платиновая передача`.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialPart;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.MaterialPart;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-There are several ways of retreiving such an object, either as list or as single object.
+Есть несколько способов отступать от такого объекта, как список или один объект.
 
-Single Object:
+Один объект:
 
-- Using the [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
-- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerPart Method
-- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Method
+- С помощью обработчика деталей [](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
+- С помощью регистрационного метода [Material](/Mods/ContentTweaker/Materials/Materials/Material/)
+- С помощью регистра [части](/Mods/ContentTweaker/Materials/Parts/Part/) Метода
 
-List:
+Список:
 
-- Using [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method
-- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method
-- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterials Method
+- Используя регистрационный метод [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem/)
+- Используя регистрационный метод [Material's](/Mods/ContentTweaker/Materials/Materials/Material/)
+- Используя метод реестра [части](/Mods/ContentTweaker/Materials/Parts/Part/)
 
-## Fields
+## Поля
 
-You can retrieve the following information from a MaterialPart:
+Вы можете получить следующую информацию из MaterialPart:
 
-| ZenMethod            | Return Type                                                                     |
+| ZenMethod            | Возвращаемый тип                                                                |
 | -------------------- | ------------------------------------------------------------------------------- |
 | getName()            | string                                                                          |
 | getLocalizedName()   | string                                                                          |
 | hasEffect()          | boolean                                                                         |
 | hasOverlay()         | boolean                                                                         |
-| getMaterial()        | [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)                 |
+| getMaterial()        | [Иматерация](/Mods/ContentTweaker/Materials/Materials/Material/)                |
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
 | getTextureLocation() | string                                                                          |
-| getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
+| getCTColor()         | [Цвет](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                         |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean                                                                         |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
-You can also set the following information of a MaterialPart:
+Вы также можете задать следующую информацию из MaterialPart:
 
-| ZenMethod                           | Parameter              | Description                                                                                     |
-| ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
-| setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
-| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |
+| ZenMethod                                  | Параметр                       | Описание                                                                                                                 |
+| ------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| setColorized(раскрашивание)                | булев раскрашен                | Устанавливает, применяется ли код цвета товара                                                                           |
+| установка Расположение Текстуры (текстура) | строка текстуры Местоположение | Устанавливает текстурный путь к элементу. Например, если вы хотите, чтобы одна передача выглядела отличной от остальных. |
