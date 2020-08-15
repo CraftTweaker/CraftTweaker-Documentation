@@ -7,20 +7,20 @@ Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener es
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.data.DoubleData
+datos de crafttweaker.api.DobleData
 ```
 
-## Implemented Interfaces
-DoubleData implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
+## Interfaces implementadas
+DoubleData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [datos de crafttweaker.api.infumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.data.DoubleData(internal as double);
+nuevo crafttweaker.api.data.DoubleData(internal as double);
 ```
-| Parámetro | Tipo  | Descripción             |
-| --------- | ----- | ----------------------- |
-| interno   | doble | No description provided |
+| Parámetro | Tipo  | Descripción                   |
+| --------- | ----- | ----------------------------- |
+| interno   | doble | No se proporcionó descripción |
 
 
 
