@@ -17,6 +17,6 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Наследование от интерфейсов событий
 SleepingLocationCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)
