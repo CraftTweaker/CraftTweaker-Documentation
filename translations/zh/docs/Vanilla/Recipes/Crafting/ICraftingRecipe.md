@@ -1,70 +1,70 @@
-# ICraftingRecipe
+# ICrafting配方
 
-An ICraftingRecipe is a crafting table recipe the way ZS sees it.
+ICraftingRecipe 是ZS 如何看待它的一个制造桌子。
 
-## Importing the class
+## 导入相关包
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.ICraftingRecipe`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.reciples.ICraftingRecipe`
 
 ## ZenMethods/Getters
 
-### Get Ingredients
+### 获取属性
 
-Either returns an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] or an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[][]
+要么返回一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]或一个 [Igredient](/Vanilla/Variable_Types/IIngredient/)[]
 
 ```zenscript
-rec.ingredients1D
-rec.ingredients2D
+复合成分1D
+rec.incomponents2D
 ```
 
 ### Get standart output
 
-Returns the ouptut as [IItemStack](/Vanilla/Items/IItemStack/). Careful, can be null!
+以 [IItemStack](/Vanilla/Items/IItemStack/) 返回的 ouptut。 小心，可以为空！
 
 ```zenscript
-rec.output
+输出
 ```
 
-### Check for conditions
+### 检查条件
 
-Each of these returns a boolean
+每个返回一个布尔值
 
 ```zenscript
-rec.hasTransformers;
-rec.hasRecipeAction;
+建议.hasTransformers;
+rec.hasRecipepeAction;
 rec.hasRecipeFunction;
 rec.hidden;
 rec.shaped;
 ```
 
-### resourceDomain
+### 资源域
 
-Basically, the modid of the mod that added the recipe.
+基本上，添加该配方的模组的模组。
 
 ```zenscript
-rec.resourceDomain;
+Rec.resourceDomain;
 rec.fullResourceDomain;
 ```
 
-### Ingredients
+### 成分：
 
-Returns the ingredients list as [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] or [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[] respectively.
-
-```zenscript
-rec.ingredients1D;
-rec.ingredients2D;
-```
-
-### Output
-
-The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
+返回成分列表分别为 [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[] 或 [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[]\[]\[……]。
 
 ```zenscript
-rec.output;
+rec.listicents1D;
+rec.listents2D;
 ```
 
-### To String
+### 输出
+
+该配方的 [IItemStack](/Vanilla/Items/IItemStack/) 输出。
+
+```zenscript
+输出；
+```
+
+### 到字符串
 
 ```zenscript
 rec.commandString;
