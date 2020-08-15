@@ -1,6 +1,6 @@
 # VanillaDeathChest
 
-## Information
+## Informationen
 
 [VanillaDeathChest](https://www.curseforge.com/minecraft/mc-mods/vanilladeathchest) places chests (or shulker boxes) where players die containing all of their items.VanillaDeathChest is completely server-sided; it can be installed on the client for use on singleplayer worlds, but clients without this mod can connect to servers with this mod installed without losing functionality.
 
