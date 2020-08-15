@@ -1,8 +1,8 @@
 # Composter
-## Package
+## パッケージ
 `import mods.gardenstuff.CompostBin;CompostBin;`
 
-## Methods
+## メソッド
 - **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
 - **int processTime** Amount of energy created per tick in a base-line machine.
 - **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
