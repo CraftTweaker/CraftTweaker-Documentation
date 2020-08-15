@@ -1,23 +1,23 @@
 # Advanced Recipes
 
-## Package
+## Pakiet
 
 ```zenscript
 import mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
-There are several types of recipes:
+## Typy przepisów
+Istnieje kilka rodzajów przepisów:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### Kształtowane przepisy
+Kształtowane przepisy są przepisami, gdzie ma to znaczenie, do których elementów dołącza się miejsce. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. Kształt ma znaczenie, a więc jest to przepis.
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### Bezkształtne przepisy
+Bezkształtne przepisy są przepisami, w których tylko przedmioty umieszczane w siatki wytwarzania, podczas gdy kształt nie ma znaczenia. Na przykład barwnik niebieski i żółty tworzą barwnik zielony. Ten przepis nie troszczy się o to, gdzie umieścisz dany przedmiot.
 
-## Add Recipes
+## Dodaj przepisy
 
-### addShaped
+### dodany
 ```zenscript
 mods.ic2.AdvRecipes.addShaped(output,inputs);
 ```
