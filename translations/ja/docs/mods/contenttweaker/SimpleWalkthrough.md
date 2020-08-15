@@ -66,7 +66,7 @@ new BlockBuilder()
 ```
 
 
-## Items
+## アイテム
 
 For items you more or less do the same, but this time you need an [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder).  
 You can again, either use a `build(name)` directly, or switch to a specialized version using `withType`.  
@@ -116,7 +116,7 @@ new ItemBuilder()
 
 ```
 
-## Names
+## 名前
 So, how would you go about giving items proper names?  
 For that, you need a lang file.  
 At the time of this writing CoT did not yet create that one for ya, so you will need to create it yourself.  
