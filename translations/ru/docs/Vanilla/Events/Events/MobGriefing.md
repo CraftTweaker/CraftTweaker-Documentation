@@ -1,10 +1,10 @@
 # MobGriefing
 
-This event is fired whenever potential mob griefing is about to occur. It has a **result** which determines whether the default behaviour occurs or not:
+Это событие вызывается, когда собирается вызвать потенциальную скорбь мобов. У него есть **результат** , который определяет, происходит ли поведение по умолчанию:
 
-- **allow**: the griefing is allowed
-- **deny**: the griefing is prevented
-- **default**: the griefing occurs according to Vanilla logic.
+- **разрешить**: разрешен гриф
+- **отрицает**: невозможно огорчить
+- **по умолчанию**: грипп происходит в соответствии с логикой ванили.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -12,7 +12,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-MobGriefing Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+MobGriefing Events реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventHasResult](/Vanilla/Events/Events/IEventHasResult/)
