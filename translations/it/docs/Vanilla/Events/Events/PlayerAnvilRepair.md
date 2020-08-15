@@ -1,27 +1,27 @@
 # PlayerAnvilRepair
 
-The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+Il PlayerAnvilRepair Event viene sparato ogni volta che un giocatore artigianale qualcosa nell'incudine.  
+Puoi cambiare la possibilità che l'incudine sia danneggiata.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerAnvilRepairEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerAnvilRepairEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAnvilRepair Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter        | ZenSetter     | Tipo Di Reso                             |
 | ---------------- | ------------- | ---------------------------------------- |
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `giocatore`      |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
