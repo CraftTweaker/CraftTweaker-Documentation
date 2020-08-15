@@ -17,12 +17,12 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 
 ## ZenGetter
 
-| ZenGetter   | What does it do                                | Rückgabetyp                             |
+| ZenGetter   | Was macht es                                   | Rückgabetyp                             |
 | ----------- | ---------------------------------------------- | --------------------------------------- |
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
 | displayName | Returns the displayNames of the fitting blocks | string                                  |
 
-## OR
+## OR (ODER)
 
 You can OR two IBlockPattern Objects using the OR `|` Operator
 
