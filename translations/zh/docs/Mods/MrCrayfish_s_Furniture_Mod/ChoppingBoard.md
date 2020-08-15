@@ -1,33 +1,33 @@
-# Chopping Board
+# 查找棋盘
 
-The Chopping Board allows you to chop up an item into many pieces of another item.
+聊天板允许你把一个项目砍成另一个项目的许多块。
 
-By default only cuts bread into 6 bread slices.
+默认情况下，只将面包切为 6 个面包切割。
 
-## Removing Chopping Recipes
+## 正在删除聊天室
 
-## Remove matching chopping recipes.
+## 删除匹配的切换配方。
 
 ```zenscript
-mods.cfm.ChoppingBoard.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.ChoppingBoard.remove(@Opinion final IIngredient output, @Opinion final IIngredient input);
 
-// Remove recipe with bread as the input item
-mods.cfm.ChoppingBoard.remove(null,<minecraft:bread>);
-// Remove recipes that result in 6 bread slices (same match as above recipe, so will have no effect if used after)
-mods.cfm.ChoppingBoard.remove(<cfm:item_bread_slice>.withAmount(6));
+// 删除配方作为输入项
+mods.cfm.ChoppingBoard. 表情符号(null,<minecraft:bread>);
+// 删除会导致6个面包切片的配方(与上面的配方相同，如果后来使用，将不会产生任何效果)
+模组。 fm.ChoppingBoard.remove(<cfm:item_bread_slice>.withamount(6))；
 ```
 
-## Adding Chopping Recipes
+## 正在添加聊天室
 
-Add a chopping recipe.
+添加一个chopping配方。
 
-## Input requires stack size of 1.
+## 输入的堆栈大小为1。
 
 ```zenscript
-mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.ChoppingBoard.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack 输入)；
 
-// Add a recipe to chop wheat into 2 sticks
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:stick>.withAmount(2),<minecraft:wheat>);
-// Add a recipe to chop bread into 3 wheat
-mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.withAmount(3),<minecraft:bread>);
+// 将配方添加到chop wheat 到 2 sticks
+mods.cfm.ChoppingBoard. ddRecipe(<minecraft:stick>.witter (2),<minecraft:wheat>);
+// 将配方添加到chop bread 到3 wheat
+mods.cfm.ChoppingBoard.addRecipe(<minecraft:wheat>.witter (3),<minecraft:bread>);
 ```
