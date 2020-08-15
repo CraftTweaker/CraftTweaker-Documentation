@@ -2,13 +2,13 @@
 
 The PlayerAdvancement Event is fired whenever a player is awarded an Advancement.
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAdvancementEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
 PlayerAdvancement Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
@@ -16,7 +16,7 @@ PlayerAdvancement Events implement the following interfaces and are able to call
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
 | ZenGetter | 返回值类型  |
 | --------- | ------ |
