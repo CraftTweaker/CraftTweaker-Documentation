@@ -1,136 +1,136 @@
-# Custom Traits
+# 自定义特性
 
-Using this package you can create trait that you can then put on your tools!
+使用这个软件包，您可以创建特征，然后将其放在您的工具上！
 
 ## 导入类
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.TraitBuilder;`
+如果您遇到任何问题，可能需要导入类 (例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)) 这样比抱歉更安全并添加导入。  
+`导入 mods.contenttweiner.tconstruct.TraitBuilder；`
 
-## Creating a trait
+## 创建特性
 
-First and foremost, you will need to create a trait builder.  
-This can be done using the static function:
+首先，您将需要创建一个特性生成器。  
+这可以使用静态函数完成：
 
 ```zenscript
-//create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
-val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
+//create(String identificer, int color, @Optional int maxLevel, @Optional int countPerLevel)
+val myTrait = mods.contenttweiner.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
 ```
 
-The `identifier` has to be unique!  
-For the `color`, it is suggested that you use the hexadecimal notation as shown above.  
-`maxLevel` is the maximum level the trait can become, and will default to 0.  
-`countPerLevel` is how many sublevels the trait can have (like Redstone which has 50).
+`标识符` 必须是唯一的！  
+对于 `颜色`, 建议您使用上面显示的十六进制标记。  
+`maxlevel` 是特性可以变成的最大级，默认值为0。  
+`计数Perlevel` 是特性可以有多少子级别 (如Redstone 50)。
 
-After you've finished all modifications below, you will need to register your trait.  
-This can be done using the `register` method, which will return a [Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) of the new trait.
+在您完成下面的所有修改后，您需要注册您的特性。  
+可以使用 `寄存器` 的方法完成， 返回一个 [表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 的新特性。
 
 ```zenscript
 myTrait.register();
 ```
 
-After registering, you can still modify the builder, the trait itself can no longer be modified.  
-That way you can create multiple similar traits easily.
+注册后，您仍然可以修改生成器，特性本身不能再被修改。  
+你可以很容易地创建多个相似的特性.
 
-## Modifier Items
+## 修改者项目
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+如果你将给定的成分与工具一起编织在一只修饰工具中，你可以将特性应用为修饰器。
 
 ```zenscript
-//myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+//myTrait.addItem(Ingredient item, @Optional(1) int amountNeed, @Optional(1) int amountMatched);
 myTrait.addItem(<item:minecraft:iron_pickaxe>);
 myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 
-//myTrait.removeItem(IItemStack stack);
+//myTrait.removeItem(ItemStack stack);
 myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
-- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+- `项目` 是匹配的物品。 您可以使用 [项目条件](/Vanilla/Items/Item_Conditions/) 但没有变压器。 
+- `数量` 是匹配的项目数量。 你可以将它们拆分到工具构造提供的所有位置，这也允许你超过64。 在上面的示例中，你需要每个添加4个铁块。 默认值为 1。
+- `数量匹配` 是按 `数量添加的特性点数量`。 在上面的例子中，四个铁块给出了两个特性点。 默认值为 1。
+- 如果您使用 `移除函数`，它将会移除与项目匹配的所有特性成分。
 
-## Properties
+## 参数
 
-You can set and get these properties using the names given:
+您可以使用指定的名称设置和获取这些属性：
 
-| 名称                   | 类型     |
-| -------------------- | ------ |
-| color                | int    |
-| countPerLevel        | int    |
-| hidden               | bool   |
-| identifier           | string |
-| localizedDescription | string |
-| localizedName        | string |
-| maxLevel             | int    |
+| 名称            | 类型  |
+| ------------- | --- |
+| color         | int |
+| 计数权限          | int |
+| hidden        | 布尔值 |
+| identifier    | 字符串 |
+| 本地化描述         | 字符串 |
+| localizedName | 字符串 |
+| 最大级别          | 整数  |
 
-## Calculated Properties
+## 计算的属性
 
-Some properties will need to be calculated.  
-You can set the given property functions:
+一些属性将需要计算。  
+您可以设置给定的属性函数：
 
-### CanApplyTogether
+### CanApplyOnly
 
-Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
+检查特性是否可以添加到已经具有另一个特性或 [附魔](/Vanilla/Enchantments/IEnchantmentDefinition/) 的工具。
 
 ```zenscript
-myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
-myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinition enchant){....};
+myTrait.canApplytherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
+myTrait.canCo-therEnchantment = function(TraitRepresentation thisTrait, IEnchantmentDefinion enchant){....};
 ```
 
 ### Extra info
 
-The returned String[] will be displayed as extra information in the tool station.
+返回的字符串[…]将作为额外信息在工具站显示。
 
 ```zenscript
-myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
+myTrait.extraInfo = 函数 (TraitRepresentation thisTrait, IItemStack item, IData tag){....};
 ```
 
-## Adding Functionality
+## 添加功能
 
-Now that you have created a trait you need to make it modify something, don't you?  
-That's what the trait event handlers are for:  
-They are called whenever a user does something with the tool containing the trait.
+既然你已经创建了一个特征，你需要使它进行修改，不要你吗？  
+是指特性事件处理程序的对象：  
+每当用户使用包含特性的工具时，他们都会被调用。
 
-Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myTrait` with your own variable name.  
-Also, you only have to use the handlers that you need, you don't need empty handlers only so that you have filled everything.
+下面你会看到所有可能的处理器，以及他们返回的内容和如何为他们写函数的信息。 请记住，您必须用自己的变量名替换 `myTrait` 。  
+此外，您只需使用您需要的处理程序。 你不需要空的处理程序以便你填写了一切。
 
 <details>
-    <summary>All Handlers in a nutshell</summary>
+    <summary>Nutshell 中的所有处理程序</summary>
     <ul>
         <li><a href="#onupdate">onUpdate</a></li>
         <li><a href="#getminingspeed">getMiningSpeed</a></li>
-        <li><a href="#beforeblockbreak">beforeBlockBreak</a></li>
-        <li><a href="#afterblockbreak">afterBlockBreak</a></li>
+        <li><a href="#beforeblockbreak">beforedBlockBreak</a></li>
+        <li><a href="#afterblockbreak">事后阻挡断开</a></li>
         <li><a href="#onblockharvestdrops">onBlockHarvestDrops</a></li>
         <li><a href="#calccrit">calcCrit</a></li>
-        <li><a href="#calcdamage">calcDamage</a></li>
+        <li><a href="#calcdamage">calcamage</a></li>
         <li><a href="#onhit">onHit</a></li>
-        <li><a href="#calcknockback">calcKnockBack</a></li>
-        <li><a href="#afterhit">afterHit</a></li>
+        <li><a href="#calcknockback">calcKnockback</a></li>
+        <li><a href="#afterhit">命中后</a></li>
         <li><a href="#onblock">onBlock</a></li>
         <li><a href="#onplayerhurt">onPlayerHurt</a></li>
         <li><a href="#ontooldamage">onToolDamage</a></li>
         <li><a href="#ontoolheal">onToolHeal</a></li>
-        <li><a href="#ontoolrepair">onToolRepair</a></li>
+        <li><a href="#ontoolrepair">onTool修复工具</a></li>
     </ul>
 </details>
 
 ### onUpdate
 
-Called each tick by the tool is loaded (that means in the player's inventory).  
-Parameters:
+工具调用的每个刻录都已加载(这意味着玩家背包中的内容)。  
+个参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IEntity](/Vanilla/Entities/IEntity/) representing the `owner`
-- An int representing the `itemSlot`
-- A boolean that describes if the tool currently `isSelected`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IWorld](/Vanilla/World/IWorld/) 代表 `世界`
+- [Ienty](/Vanilla/Entities/IEntity/) 代表 `所有者`
+- 表示 `项目槽的` 整数
+- 一个描述工具当前是否是 `被选中` 的布尔值
 
-**Returns nothing.**
+**没有返回任何东西。**
 
-Created using:
+使用创建时间：
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
@@ -140,17 +140,17 @@ myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelecte
 
 ### getMiningSpeed
 
-Called when a block is mined.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+当一个方块被开采时被呼叫。  
+小心，因为这个事件也被原版阻塞。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [玩家断路事件](/Vanilla/Events/Events/PlayerBreakSpeed/)
 
-**Returns nothing.**
+**没有返回任何东西。**
 
-Created using:
+使用创建时间：
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, event) {
@@ -158,19 +158,19 @@ myTrait.getMiningSpeed = function(trait, tool, event) {
 };
 ```
 
-### beforeBlockBreak
+### beforedBlockBreak
 
-Called just before a block is broken.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+在方块损坏前拨打电话。  
+小心这个事件也被原版阻塞。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [阻断事件](/Vanilla/Events/Events/BlockBreak/)
 
-**Returns nothing.**
+**没有返回任何东西。**
 
-Created using:
+使用创建时间：
 
 ```zenscript
 myTrait.beforeBlockBreak = function(trait, tool, event) {
@@ -178,21 +178,21 @@ myTrait.beforeBlockBreak = function(trait, tool, event) {
 };
 ```
 
-### afterBlockBreak
+### 事后阻挡断开
 
-Called after the block has been destroyed.  
-Parameters:
+方块被破坏后调用。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
-- A bool representing if the mining `wasEffective`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IWorld](/Vanilla/World/IWorld/) 代表 `世界`
+- [IBlockState](/Vanilla/Blocks/IBlockState/) 代表已损坏的 `块`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `矿工`
+- 如果挖掘 `擦除效果`
 
-**Returns nothing.**
+**没有返回任何东西。**
 
-Created using:
+使用创建时间：
 
 ```zenscript
 myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
@@ -202,18 +202,18 @@ myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEff
 
 ### onBlockHarvestDrops
 
-Called whenever a block has been broken.  
-Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.  
-Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
-Parameters:
+每当一个方块被损坏时拨打电话。  
+小心这个事件也被原版 onBlockHarvestBreak 处理器调用。  
+与原版版处理程序不同的是，此处理程序只会在玩家打破方块时执行。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [BlockHarvestDrops事件](/Vanilla/Events/Events/BlockHarvestDrops/)
 
-**Returns nothing**
+**什么都不返回**
 
-Created using:
+使用创建时间：
 
 ```zenscript
 myTrait.onBlockHarvestDrops = function(trait, tool, event) {
@@ -223,67 +223,67 @@ myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 
 ### calcCrit
 
-Called before the damage done to the entity is calculated to determine whether it will be a crit or not.  
-Returning `false` will not stop a hit that is already a crit from being so.  
-Parameters:
+在计算对该实体造成的损害之前先打电话，以确定它是否为裂缝。  
+return `false` 不会阻止已经是破裂的攻击。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 表示 `目标`
 
 **Returns a bool** that is `true` if the hit should crit, false whenever else.
 
-Created using:
+使用创建时间：
 
 ```zenscript
-myTrait.calcCrit = function(trait, tool, attacker, target) {
+myTrait.calcCrit = function(trait, tool, attacker, target) (
     //CODE
-    return true; //or false
+    return true; //or fals
 };
 ```
 
-### calcDamage
+### calcamage
 
-Called when an entity is hit, but still before the damage is dealt and before the crit damage is added.  
-The crit damage will be calculated off the result of this.  
-Parameters:
+当一个实体被击中时，但仍然在损坏处理之前和加上破损之前呼叫。  
+裂痕伤害将从此结果中计算。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `originalDamage` (unmodified tool damage)
-- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 表示 `目标`
+- 一个代表工具的 `原始伤害` (未经修改的工具损坏)
+- 一个代表工具 `新伤害` 的浮动(直到这个点之前工具会造成的伤害) 可以是原始损害，或者已经被其他特性修改)。
+- 一个表示如果命中 `是关键的` 的布尔值
 
-**Returns a float** representing the new damage. Otherwise return `newDamage`
+**返回一个代表新伤害的浮点** 否则返回 `新的伤害`
 
-Created using
+创建于
 
 ```zenscript
-myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) 电子邮件：
     //CODE
-    return newDamage; //Or your modified value
+    return newDamage; //or your modified value
 };
 ```
 
 ### onHit
 
-Called when an entity is hit, just before the damage is dealt.  
-All damage calculation has already been done at this point.  
-Parameters:
+当一个实体被击中时，仅在损坏发生之前被召唤。  
+所有伤害计算已经完成。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (includung critdamage)
-- A boolean that represents if the hit `isCritical`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 表示 `目标`
+- 一个代表工具的 `伤害` (包括魔术损坏)
+- 一个表示如果命中 `是关键的` 的布尔值
 
-**Returns nothing**
+**什么都不返回**
 
-Created using
+创建于
 
 ```zenscript
 myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
@@ -291,23 +291,23 @@ myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 };
 ```
 
-### calcKnockBack
+### calcKnockback
 
-Called after an entity is hit to modify the applied knockback.  
-Parameters:
+在实体被击中后调用来修改应用的击退。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (including crit)
-- A float representing the tool's `originalKnockback` (unmodified tool knockback)
-- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 表示 `目标`
+- 一个表示工具 `伤害的浮点数` (包括临床)
+- 一个代表工具 `原始的 alKnokback` (未经修改的工具击退)
+- 一个代表工具 `newKnockback` 的浮动(击退工具将持续到这个点) 可以是原生的 alKnockback, 或者已经被其它特性修改了)。
+- 一个表示如果命中 `是关键的` 的布尔值
 
-**Returns a float** representing the new knockback. Otherwise return `newKnockback`
+**返回一个代表新回击的浮点** 否则返回 `netikback`
 
-Created using
+创建于
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
@@ -316,22 +316,22 @@ myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKno
 };
 ```
 
-### afterHit
+### 命中后
 
-Called after an entity is hit and after the damage is dealt.  
-Parameters:
+在实体被击中后并在损坏发生后拨打电话。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `dealtDamage`
-- A bool representing if the hit `wasCritical`
-- A bool representing if the entity `wasHit`. Can be false if the entity was invulnerable or had some other ways of exacing the damage.
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 表示 `目标`
+- 一个代表工具的 `严重伤害`
+- 如果命中了 `个废墟` 一个布尔表示的
+- 一个表示实体 `被击中` 的布尔值。 如果该实体是无敌或有其他方法来达到损害，则可以是虚假的。
 
-**Returns nothing**
+**什么都不返回**
 
-Created using
+创建于
 
 ```zenscript
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
@@ -341,18 +341,18 @@ mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCriti
 
 ### onBlock
 
-Called when the player holding the tool blocks the attack.  
-Otherwise `onHit` will be called.  
-Parameters:
+当持有工具的玩家阻止攻击时调用。  
+`不然的话，` 将被调用。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IPlayer](/Vanilla/Players/IPlayer/) 代表 `播放器`
+- 一个 [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**什么都不返回**
 
-Created using
+创建于
 
 ```zenscript
 myTrait.onBlock = function(trait, tool, player, event) {
@@ -362,19 +362,19 @@ myTrait.onBlock = function(trait, tool, player, event) {
 
 ### onPlayerHurt
 
-Called when the player holding the tool DID NOT BLOCK the attack.  
-Otherwise `onBlock` will be called.  
-Parameters:
+当持有工具的玩家不要拦截攻击时调用。  
+`onBlock` 将被调用。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- [IPlayer](/Vanilla/Players/IPlayer/) 代表 `播放器`
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表 `攻击者`
+- 一个 [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**什么都不返回**
 
-Created using
+创建于
 
 ```zenscript
 myTrait.onPlayerHurt = function(trait, tool, player, event) {
@@ -384,62 +384,62 @@ myTrait.onPlayerHurt = function(trait, tool, player, event) {
 
 ### onToolDamage
 
-Called before the tools durability is getting decreased.  
-Parameters:
+在工具耐久性降低之前呼叫。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be reduced.
-- An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- 一个表示耐久性的 `未修改数量的` 的整数。
+- 一个整数型变量，表示耐久性为 `的新数量` ，它已经可以被其它特性修改。
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表当前工具 `持有者`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**返回一个 int** 表示新的金额。 否则返回 `新金额`
 
-Created using
+创建于
 
 ```zenscript
-myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
+myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newValent, holder) }.
     //CODE
-    return newAmount; //Or your modified value
+    return newValent; //or your modified value
 };
 ```
 
-### calcToolHeal
+### calcTool恢复
 
-Called before the tools durability is getting increased.  
-Parameters:
+在工具耐久性增加之前呼叫。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be increased.
-- An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- [IItemStack](/Vanilla/Items/IItemStack/) 代表已使用的 `工具`
+- 一个表示耐久性的 `未修改数量的` 的整数。
+- 一个整数型变量，表示耐久性为 `的新数量` ，它已经可以被其它特性修改。
+- [IentityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 代表当前工具 `持有者`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**返回一个 int** 表示新的金额。 否则返回 `新金额`
 
-Created using
+创建于
 
 ```zenscript
-myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
+myTrait.calcToolToolHeal = function(trait, tool, unmodifiedAmount, newValent, holder) 然后返回
     //CODE
-    return newAmount; //Or your modified value
+    new Amount; //or your modified value
 };
 ```
 
-### onToolRepair
+### onTool修复工具
 
-Called before the tool is getting repaired with tis repair material.  
-Not to be confused with `onToolHeal` which is called afterwards.  
-Will be called multiple times if multiple items are used at once.  
-Parameters:
+已拨打电话，工具才能用防线修理材料修复。  
+不要与 `onToolReceal` 混为一谈。  
+如果同时使用多个项目，将被调用多次。  
+参数：
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the `tool` to be repaired
-- An int representing the `amount` of durability to be increased.
+- [特性表示](/Mods/ContentTweaker/Tinkers_Construct/Trait/) 代表当前使用的 `特性`。
+- 要修复的 [IItemStack](/Vanilla/Items/IItemStack/) 代表 `工具`
+- 一个代表要增加耐久性的 `数量的` 整数。
 
-**Returns nothing**
+**什么都不返回**
 
-Created using
+创建于
 
 ```zenscript
 myTrait.onToolRepair = function(trait, tool, amount) {
@@ -447,20 +447,20 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## 例子
 
 ```zenscript
-#loader contenttweaker
+#loader contenttnowl
 #modloaded tconstruct
 
-val testTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test");
+valal testTrait = mods.contenttweeper.tconstruct.TraitBuilder.create("kindlich_test");
 testTrait.color = 0xffaadd;
 testTrait.maxLevel = 100;
-testTrait.countPerLevel = 20;
+testTrait. ountPerLevel = 20;
 testTrait.addItem(<item:minecraft:iron_pickaxe>);
 testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
-testTrait.localizedName = "Whooooooooo";
-testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
+testTrait.localizedName = “Whooooooooooo ”;
+testTrait.localizeddescription = “这是有趣的！ 可悲的是，它没有做任何事情... \u2639";
 testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
     attacker.heal(damageDealt);
 };
