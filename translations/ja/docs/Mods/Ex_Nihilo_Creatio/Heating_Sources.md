@@ -1,4 +1,4 @@
-# Heating Sources
+# ソースを加熱中
 
 ## パッケージ
 ```zenscirpt
@@ -7,8 +7,8 @@
 
 ## メソッド
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
-- **Int heat** heat per instance.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 入力** 熱を供給するブロック。
+- **Int heat** はインスタンスあたりの熱です。
 
 ## 加算
 
