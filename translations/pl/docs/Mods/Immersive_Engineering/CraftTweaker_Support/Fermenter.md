@@ -1,60 +1,60 @@
-# Fermenter
+# Fermentator
 
-The Fermenter package can be used to add/remove recipes to/from the Immersive Engineering Fermenter.
+Pakiet Fermentera może być użyty do dodawania/usuwania przepisów do/z Fermentera Inżynierii Immersive Engineering Fermenter.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the Fermenter package using `mods.immersiveengineering.Fermenter`.
+Możesz wywołać pakiet Fermentera używając `mods.immersiveengineering.Fermenter`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy | Integer                                             |
+| Wymagane | Typ     | Typ danych                                       |
+| -------- | ------- | ------------------------------------------------ |
+| Wymagane | Wyjście | [IItemStack](/Vanilla/Items/IItemStack/)         |
+| Wymagane | Płyn    | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)     |
+| Wymagane | Input   | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Energia | Liczba całkowita                                 |
 
-### Example
+### Przykład
 
 ```zenscript
 mods.immersiveengineering.Fermenter.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 mods.immersiveengineering.Fermenter.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
 
-## Remove Fluid Recipe
+## Usuń przepis na płyn
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Typ     | Typ danych                                   |
+| ------- | -------------------------------------------- |
+| Wyjście | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
-mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack fluid);
+mods.immersiveengineering.Fermenter.removeFluidRecipe(ILiquidStack);
 mods.immersiveengineering.Fermenter.removeFluidRecipe(<liquid:water>);
 ```
 
-## Remove Item Recipe
+## Usuń przepis na element
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 mods.immersiveengineering.Fermenter.removeItemRecipe(IItemstack output);
 mods.immersiveengineering.Fermenter.removeItemRecipe(<minecraft:diamond>);
 ```
 
-## Remove By Input
+## Usuń przez wejście
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 mods.immersiveengineering.Fermenter.removeByInput(IItemstack input);
