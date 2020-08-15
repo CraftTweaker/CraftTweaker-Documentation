@@ -8,14 +8,14 @@ import mods.terrafirmacraft.FireClayKnapping;FireClayKnapping;
 ## 追加
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
+FireClayKnapping.addRecipe(レジストリ名、IItemStack output、String...pattern)
 ```
 
 ## 削除
 
 ```zenscript
 FireClayKnapping.removeRecipe(IItemStack output);
-FireClayKnapping.removeRecipe(String registryName);
+FireClayNnapping.removeRecipe(String registryName);
 ```
 
 ## 例
