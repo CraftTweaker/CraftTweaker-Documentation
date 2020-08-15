@@ -3,17 +3,17 @@
 A Material representation represents a Tinkers' Construct Material.  
 You can get such an object either from the [Material Builder](/Mods/ContentTweaker/Tinkers_Construct/MaterialBuilder/) or from the [Material Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Material/).
 
-## Importing the class
+## Importation de la classe
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.Material`
 
 ## ZenGetter
 
-| ZenGetter     | Type   |
-| ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| ZenGetter     | Type de texte        |
+| ------------- | -------------------- |
+| identifier    | chaîne de caractères |
+| commandString | chaîne de caractères |
 
 ## Adding material items
 
