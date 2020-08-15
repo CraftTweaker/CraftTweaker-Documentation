@@ -15,7 +15,7 @@ It might be required for you to import the package if you encounter any issues (
 | saturationLevel | saturationLevel | float   |
 | needFood        |                 | boolean |
 
-## ZenMethods
+## ZenMethoden
 
 #### Adding Stats
 
