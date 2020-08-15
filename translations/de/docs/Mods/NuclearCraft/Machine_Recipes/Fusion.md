@@ -1,6 +1,6 @@
 # Fusion
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.fusion`
 
 ## Rezepte hinzufügen
@@ -11,6 +11,6 @@ mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, flui
 ## Rezepte entfernen
 ```zenscript
 mods.nuclearcraft.fusion.removeRecipeWithInput([fluidInput1, fluidInput2]);
-mods.nuclearcraft.fusion.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
+mods.nuclearcraft.fusion.removeRecipeWithOutput([fluidOutput1, fluidOutput3, fluidOutput4]);
 mods.nuclearcraft.fusion.removeAllRecipes();
 ```
