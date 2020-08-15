@@ -18,8 +18,8 @@ PlayerCrafted Events implement the following interfaces and are able to call all
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                                                         |
+| ZenGetter   | Type de retour                                                      |
 | ----------- | ------------------------------------------------------------------- |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)                                |
-| `output`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| `Sortie`    | [IItemStack](/Vanilla/Items/IItemStack/)                            |
 | `inventory` | [ICraftingInventory](/Vanilla/Recipes/Crafting/ICraftingInventory/) |
