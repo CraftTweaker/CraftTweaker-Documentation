@@ -1,25 +1,25 @@
-# Fuel
+# 燃料
 
-The `Fuel` package allows you to add Smeltery fuel fluids.
+`燃料` パッケージで精錬液を追加できます。
 
-## Calling
+## 発信中
 
-You can call the Alloy package using `mods.tconstruct.Fuel`
+`mods.tconstruct.Fuel` を使ってAlloy パッケージを呼び出すことができます。
 
-## Add Fuel Recipes
+## 燃料レシピを追加
 
 ```zenscript
 //mods.tconstruct.Fuel.registerFuel(ILiquidStack fuel, int duration);
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Parameters:
+パラメータ:
 
-- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
-- int duration → How many ticks the consumtpion of the fluidStack lasts.
+- [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) 燃料 → 流体。 金額は一度に消費される最小増分です。
+- int duration → fluidStack の消耗品のティック数。
 
-### Consider this:
+### 考えてみてください：
 
-- The [ILiquidStack's](/Vanilla/Liquids/ILiquidStack/) amount is the minimal increment that is consumed at once (e.g. the smeltery only consumes 2 mB at once).
-- The duration is how many ticks one fluid stack lasts.
-- You cannot set the temperature the fluid is going to have in the smeltery. Use an [ILiquidDefinition's](/Vanilla/Liquids/ILiquidDefinition/) ZenSetter to change the fluid's temperature beforehand!
+- [ILiquidStackの](/Vanilla/Liquids/ILiquidStack/) 量は、一度に消費される最小の増分量です(例えば、製錬所は一度に2mBしか消費しません)。
+- 持続時間は、1つの流体スタックが持続するティック数です。
+- 精錬所で流体が持つ温度を設定することはできません。 [ILiquidDefinitionの](/Vanilla/Liquids/ILiquidDefinition/) ZenSetterを使用して、流体の温度を事前に変更しましょう!
