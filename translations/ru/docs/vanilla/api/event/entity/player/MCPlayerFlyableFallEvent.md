@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
+new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(обработчик функция.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
 | Параметр | Тип                                                                                                                                           | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as fun
 ## Методы
 ### getDistance
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
@@ -29,7 +29,7 @@ myMCPlayerFlyableFallEvent.getDistance();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-Returns float
+Возвращает с плавающей точкой
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,17 +45,17 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
 Возвращает boolean
 
@@ -63,11 +63,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCPlayerFlyableFallEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
 Возвращает boolean
 
@@ -75,9 +75,9 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCPlayerFlyableFallEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
 Возвращает boolean
 
@@ -85,37 +85,37 @@ Determine if this event is canceled and should stop executing. Returns: `The cur
 myMCPlayerFlyableFallEvent.isCanceled();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
+myMCPlayerFlyableFallEvent.setCancel(отменить как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| cancel   | boolean | Описание отсутствует |
+| отменить | boolean | Описание отсутствует |
 
 
 ### setDistance
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistance(distance as float);
+myMCPlayerFlyableFallEvent.setDistance(расстояние как плавно);
 ```
 
-| Параметр | Тип   | Описание             |
-| -------- | ----- | -------------------- |
-| distance | float | Описание отсутствует |
+| Параметр   | Тип   | Описание             |
+| ---------- | ----- | -------------------- |
+| расстояние | float | Описание отсутствует |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
+myMCPlayerFlyableFallEvent.setMultiplier(мультипликатор как float);
 ```
 
-| Параметр   | Тип   | Описание             |
-| ---------- | ----- | -------------------- |
-| multiplier | float | Описание отсутствует |
+| Параметр       | Тип   | Описание             |
+| -------------- | ----- | -------------------- |
+| мультипликатор | float | Описание отсутствует |
 
 
 
