@@ -1,16 +1,16 @@
-# Toaster
+# トースター
 
-The Toaster crips up food to start your day.
+トースターはあなたの一日を始めるために食べ物をクリップアップします。
 
-## Default Toaster Recipes
+## デフォルトのトースターレシピ
 
-- Beef -> Cooked Beef
-- Sausage -> Cooked Sausage
-- Kebab -> Cooked Kebab
+- 牛肉->焼いた肉
+- ソーセージ->焼いたソーセージ。
+- ケバブ->焼いたケバブ。
 
 ## 削除中
 
-## Remove matching toaster recipes.
+## 一致するトースターのレシピを削除
 
 ```zenscript
 mods.cfm.Toaster.remove(@Optional final IIngredient output, @Optional final IIngredient input);
@@ -23,9 +23,9 @@ mods.cfm.Toaster.remove();
 
 ## 追加中
 
-Add a toaster recipe.
+トースターのレシピを追加します。
 
-## Only supports inputs of size 1.
+## サイズ1の入力のみをサポートします。
 
 ```zenscript
 mods.cfm.Toaster.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
