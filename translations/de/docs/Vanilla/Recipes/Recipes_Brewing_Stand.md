@@ -1,35 +1,35 @@
-# Brewing Recipe Handler
+# Braurezept Handler
 
-## Access the Brewing Handler
+## Zugriff auf den Brau-Handler
 
 You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
 
-## Recipe Methods
+## Rezept-Methoden
 
-A Brewing Recipe consists of 3 Parts:
+Ein Braurezept besteht aus 3 Teilen:
 
-1. An Input (What is in the 3 "Bottle Slots")
-2. One or more possible Ingredients (What can go into the upper slot where netherwart goes)
-3. The output (What the recipe returns)
+1. Eine Eingabe (Was ist in den 3 "Flaschenautomaten")
+2. Eine oder mehrere mögliche Zutaten (Was kann in den oberen Slot gehen, wohin die Netherwarte geht)
+3. Die Ausgabe (was das Rezept zurückgibt)
 
-### Add Brewing Recipes
+### Braurezepte hinzufügen
 
 ```zenscript
-//brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
+//brewing.addBrew(IIngredient Eingabe, IIngredient Zutat, IItemStack Ausgabe, @Optional boolesche versteck);
+Brauen. ddBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
 brewing.addBrew(<ore:ingotGold>, <minecraft:obsidian>, <minecraft:wool:3>, true);
 
 
-//brewing.addBrew(IIngredient input, IIngredient[] ingredients, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
-brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, true);
+//brauen. ddBrew(IIngredient Input, IIngredient[] Zutaten, IItemStack Output, @Optional boolean hidden);
+Brauen. ddBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
+brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, wahr);
 ```
 
-### Remove Brewing Recipes
+### Braurezepte entfernen
 
-Only works with JEI version 4.15.0.275 or higher.
+Funktioniert nur mit JEI Version 4.15.0.275 oder höher.
 
 ```zenscript
-//brewing.removeRecipe(IItemStack input, IItemStack ingredient);
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
+//brewing.removeRecipe(IItemStack Eingabe, IItemStack Zutat);
+brauen.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:gunpowder>);
 ```
