@@ -1,64 +1,64 @@
-# Tooltips
+# ツールチップ
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+ツールチップを追加または削除するのは本当に簡単です:  
+必要なのはアイテム(またはoreDictなど)、つまりIIngredientです。
 
-## Clearing tooltips
+## ツールチップの消去
 
-This removes ALL tooltips from the `item`
+`アイテム`からすべてのツールチップを削除します
 
 ```zenscript
 item.clearTooltip();
 ```
 
-## Removing specific tooltips
+## 特定のツールチップを削除する
 
-This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
+この関数は、与えられた正規表現に一致するすべてのツールチップを削除します。 1つのツールチップは一般的に1行のテキストです(スペースによる改行がない限り)。
 
 ```zenscript
 item.removeTooltip(regex);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`アイテム` は [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` は文字列です
 
-## Normal Tooltips
+## 標準ツールチップ
 
-This adds `tT` as tooltip to `item`.
+`項目` に `tT`をツールチップとして追加します。
 
 ```zenscript
 item.addTooltip(tT);
 
-<minecraft:chest>.addTooltip("Storage, what can I say more?");
+<minecraft:chest>.addTooltip("Storage, what I can say more?");
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`アイテム` は [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` は文字列です
 
 ## Shift Tooltips
 
-This adds a tooltip, that will only be visible when you hold shift.  
-You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
+これは、シフトを保持するときにのみ表示されるツールチップを追加します。  
+シフトを保持しない場合に表示される情報を追加することもできます。(通常、シフトツールチップについてのメッセージのようなものを作成するために使用されます。
 
 ```zenscript
 item.addShiftTooltip(tT);
 item.addShiftTooltip(tT, info);
 
 <minecraft:chest>.addShiftTooltip("STORAGE!!!");
-<minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
+<minecraft:redstone>.addShiftTooltipt("RED!!!", "Hold shift to know what I am");
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
-`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
+`項目` は [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` は [IFormattedText](/Vanilla/Utils/IFormattedText/) です。 自動的に変換される文字列を使用することもできます。  
+`info` は [IFormattedText](/Vanilla/Utils/IFormattedText/) です。 文字列が自動的に変換されるので、文字列を使用することもできます。
 
 # Markup
 
-The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+世界はカラフルなので、私たちのツールチップのすべてが必要です。 これらのオプションをネストすることもできます。(緑色のテキストが必要な場合は、取り消し線です)
 
-## Coloring a String
+## 文字列の色
 
-You can apply one of the 16 colors to your string
+16色のいずれかを文字列に適用できます。
 
 ```zenscript
 format.black
@@ -80,33 +80,33 @@ format.white
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+<minecraft:stick>.addTooltip(format.green("This one was ripe"));
 ```
 
-## Formatting a String
+## 文字列の書式設定
 
-You can apply different formats to your String should you wish to:
+以下のように文字列に異なる形式を適用できます:
 
 ```zenscript
-format.obfuscated
-format.bold
-format.strikethrough
+
+
+
 format.underline
-format.italic
+format@@4format@@5 format@@6format@@7 format@@7format@@8.italic
 ```
 
 ```zenscript
 <minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
 ```
 
-## Tooltip functions
+## ツールチップ関数
 
 You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
 These functions allow you to dynamically generate a tooltip based on the given IItemStack.
 
-A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
+tooltip 関数は、 [IItemStack](/Vanilla/Items/IItemStack/) を取得し、tooltip を文字列として返す関数です。 つまり、 `` コマンド *を使用すると、これらの関数に* が動作しないということです。 それを達成する必要がある場合は、Minecraft のフォーマットプレフィックスに依存する必要があります。
 
-For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
+シフトツールチップについては、同様に第二の機能を提供することができます。 これにより、シフトが押されたときに表示されるツールチップも生成できます。 シフトツールチップの場合は、両方のパラメータを関数として、または両方とも [IFormattedText](/Vanilla/Utils/IFormattedText/)として、ミックスアップはありません!
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
