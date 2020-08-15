@@ -1,33 +1,33 @@
-# Pressurised Reaction Chamber
+# 压力反应分庭
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Pressurised Reaction Chamber through the command `/ct mekrecipes prc`
+截至Mekanism 9.7。 现在可以透过命令 `/ct mektendes prc` 查看压力反应分庭的所有配方字符串。
 
-## Addition
-
-```zenscript
-mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);
-
-mods.mekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
-```
-
-As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
-
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
-
-## Removal
+## 加
 
 ```zenscript
-mods.mekanism.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasOutput, @Optional IIngredient itemInput, @Optional IIngredient liquidInput, @Optional IIngredient gasInput);
+mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack life Input, IGasStack gasInput, IItemStack itemOutput, IGasStack gastput, tual energy, int duration);
 
-mods.mekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, <gas:hydrogen>);
-mods.mekanism.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen>);
+mods. ekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000)；
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+到Mekanism 9.7.0, 可以使用IIngredients 作为物品，而不仅仅是IItemStacks。
 
-## Removing all recipes
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-As of Mekanism 9.7.0 it is now possible to remove all Pressurised Reaction Chamber recipes. (This excludes any recipes added via CraftTweaker)
+## 移除
+
+```zenscript
+mods.mekanism.reaction.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasOutput, @Opinion IIngredient itemInput, @Optional IIngredient gasInput);
+
+mods. ekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, , <gas:hydrogen>);
+mods.mekanism.reaction.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen>);
+```
+
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
+
+## 删除所有配方
+
+到Mekanism 9.7.0，现在可以移除所有压力反应分庭的配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.reaction.removeAllRecipes();
