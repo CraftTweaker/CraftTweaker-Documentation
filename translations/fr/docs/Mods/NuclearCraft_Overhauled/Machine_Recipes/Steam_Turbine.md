@@ -10,7 +10,6 @@ mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidO
 
 ## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Turbine.removeRecipeWithInput(ILiquidStack fluidInput);
-mods.nuclearcraft.Turbine.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.turbine.removeAllRecipes();
+mods.nuclearcraft.mods.nuclearcraft.Turbine.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.
 ```
