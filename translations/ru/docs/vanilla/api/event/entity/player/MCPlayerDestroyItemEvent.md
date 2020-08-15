@@ -1,4 +1,4 @@
-# MCPlayerDestroyItemEvent
+# Событие Разрушения MCPlayer1
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent>);
+новый crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent>);
 ```
 | Параметр | Тип                                                                                                                                           | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCPlayerDestroyItemEvent(handler as fun
 ## Методы
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getEntityPlayer();
@@ -29,7 +29,7 @@ myMCPlayerDestroyItemEvent.getEntityPlayer();
 
 ### getOriginal
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getOriginal();
@@ -37,17 +37,17 @@ myMCPlayerDestroyItemEvent.getOriginal();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerDestroyItemEvent.getPlayer();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
 Возвращает boolean
 
@@ -55,11 +55,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCPlayerDestroyItemEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
 Возвращает boolean
 
@@ -67,25 +67,25 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCPlayerDestroyItemEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
 Возвращает boolean
 
 ```zenscript
-myMCPlayerDestroyItemEvent.isCanceled();
+myMCPlayerDestroyItemEvent.isCancel();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCPlayerDestroyItemEvent.setCanceled(cancel as boolean);
+myMCPlayerDestroyItemEvent.setCancel(отменить как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| cancel   | boolean | Описание отсутствует |
+| отменить | boolean | Описание отсутствует |
 
 
 
