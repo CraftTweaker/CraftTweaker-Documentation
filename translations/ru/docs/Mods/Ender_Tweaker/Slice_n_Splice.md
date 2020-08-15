@@ -1,18 +1,18 @@
-# Slice 'n' Splice
+# Кусочек 'н'
 
 ## Пакет
 
-`import mods.enderio.SliceNSplice;`
+`импорт mods.enderio.SliceNSplice;`
 
 ## Методы
 
-**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+**- [IItemStack](/Vanilla/Items/IItemStack/) output** Результат рецепта.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** Ингредиенты. Должно быть от 1 до 6 компонентов.
 
-**- int energyCost** How much FE the recipe uses. Defaults to 5000.
+**- int energyCost** Сколько FE использует рецепт. По умолчанию 5000.
 
-**- float xp** The xp is granted from this recipe. May not be negative.
+**- float xp** xp предоставляется из этого рецепта. Не может быть отрицательным.
 
 ## Сложение
 
@@ -27,7 +27,7 @@ addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <mi
 ## Удаление
 
 ```zenscript
-mods.enderio.SliceNSplice.removeRecipe(IItemStack output);
+mods.enderio.SliceNSplice.removeRecipe(IItemStack);
 
 mods.enderio.SliceNSplice.removeRecipe(<enderio:block_enderman_skull:2>);
 ```
