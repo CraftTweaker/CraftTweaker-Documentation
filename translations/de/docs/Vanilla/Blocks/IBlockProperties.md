@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 | ZenGetter                 | Rückgabetyp                             | Beschreibung                                                          |
 | ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
+| canProvidePower           | bool                                    | Gibt zurück, wenn der empfohlene Block Redstone-Power bieten kann     |
 | mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
 | material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
 | causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
@@ -22,27 +22,27 @@ It might be required for you to import the package if you encounter any issues, 
 | translucent               | bool                                    |                                                                       |
 | useNeighborBrightness     | bool                                    |                                                                       |
 
-## ZenMethods
+## ZenMethoden
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parameter:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+Gibt einen booleschen Wert zurück, der sicherstellt, ob der Block ersetzt werden kann oder nicht.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+Parameter:
 
 - [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the current light value at the given location.
+Gibt eine Int zurück, die den aktuellen Lichtwert an der angegebenen Stelle darstellt.
 
 ### getWeakPower/GetStrongPower
 
@@ -58,12 +58,12 @@ Parameters:
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+Parameter:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the block's redstone comparator input override type.
+Gibt eine Int zurück, die den Rotsteinvergleichungstyp des Blocks überschreibt.
 
 ### Check if an entity can spawn on the block
 
