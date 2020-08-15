@@ -1,11 +1,11 @@
-# Enchanter
+# 附魔者
 
 ## 所属包名
 
 ```zenscript
 import mods.aether_legacy.Enchanter;
 ```
-## Usage
+## 用法
 
 ```zenscript
 Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
