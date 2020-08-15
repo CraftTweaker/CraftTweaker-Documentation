@@ -1,33 +1,33 @@
-# Lightwell
+# Lámpara
 
-You can add and remove Lightwell Liquefications
+Puedes añadir y eliminar Lightwell Liquefications
 
-## Calling
+## Llamando
 
-You can call the WellRecipe package using `mods.astralsorcery.Lightwell`.
+Puedes llamar al paquete wellRecipe usando `mods.astralsorcery.Lightwell`.
 
-## Removing
+## Eliminando
 
-This function removes the first recipe it finds that returns the provided [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `output` using the provided [IItemStack](/Vanilla/Items/IItemStack/) `input`. If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Esta función elimina la primera receta que encuentra que devuelve la salida [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `proporcionada` usando la [ItemStack](/Vanilla/Items/IItemStack/) `entrada` proporcionada. Si hay múltiples recetas que devuelven la salida proporcionada, ¡necesitas llamar a este método varias veces!
 
-You can set the output to `null` to only search via the input stack
+Puedes establecer la salida a `null` para buscar solo a través de la pila de entrada
 
 ```zenscript
-//mods.astralsorcery.Lightwell.removeLiquefaction(IItemStack input, ILiquidStack output);
+//mods.astralsorcery.Lightwell.removeLiquefaction(entrada ItemStack, salida ILiquidStack);
 mods.astralsorcery.Lightwell.removeLiquefaction(<astralsorcery:itemcraftingcomponent:0>, null);
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.astralsorcery.Lightwell.addLiquefaction(IItemStack input, ILiquidStack output, float productionMultiplier, float shatterMultiplier, int colorhex);
+//mods.astralsorcery.Lightwell.addLiquefaction(entrada ItemStack, salida ILiquidStack, multiplicador de producción flotante, multiplicador flotante de shatterMultiplier, int colorhex);
 mods.astralsorcery.Lightwell.addLiquefaction(<minecraft:dirt>, <liquid:water>, 1, 0.2, 0);
 ```
 
-| Parameter         | Parameter Type                                 | Description                                                                                                                                                                                  |
-| ----------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| input             | [IItemStack](/Vanilla/Items/IItemStack/)       | The input item                                                                                                                                                                               |
-| output            | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The returned Liquid. Only the type of the fluid counts, the amount will (like the default lightwell) depend on stuff like day/night and so on…                                               |
-| outputMultiplier  | float                                          | Multiplier that is applied together with the collected starlight to calculate the output fluid amount. Usually 0.3 - 1.2 (aka: don't write like 200 here, if you want to stay reasonable :P) |
-| shatterMultiplier | float                                          | The higher this multiplier, the lower the chance per-tick that the catalyst item will shatter.                                                                                               |
-| colorHEX          | int                                            | The colorcode used for the particles around the hovering item.                                                                                                                               |
+| Parámetro         | Tipo de parámetro                              | Descripción                                                                                                                                                                                              |
+| ----------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| input             | [IItemStack](/Vanilla/Items/IItemStack/)       | El elemento de entrada                                                                                                                                                                                   |
+| salida            | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | El Liquid devuelto. Solo el tipo de fluido cuenta, la cantidad dependerá (como la luz por defecto) de cosas como el día/noche, y así sucesivamente…                                                      |
+| outputMultiplier  | flotante                                       | Multiplicador que se aplica junto con la estrella recolectada para calcular la cantidad del fluido de salida. Normalmente 0.3 - 1.2 (aka: no escribas como 200 aquí, si quieres permanecer razonable :P) |
+| shatterMultiplier | flotante                                       | Cuanto mayor sea este multiplicador, menor será la probabilidad de que el objeto catalizador destroze.                                                                                                   |
+| color HEX         | int                                            | El código de color utilizado para las partículas alrededor del elemento flotante.                                                                                                                        |
