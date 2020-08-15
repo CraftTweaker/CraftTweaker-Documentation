@@ -1,46 +1,46 @@
-# Ritual Support
+# Rituale Unterstützung
 
-## Rituals:
+## Rituale:
 
-This will cancel the activation of a ritual if the specific requirements aren't met for the rituals activation.
+Dies wird die Aktivierung eines Rituals abbrechen, wenn die spezifischen Anforderungen für die Aktivierung der Rituale nicht erfüllt sind.
 
-### Command:
+### Befehl:
 
-There is currently an in-game command for dumping all of the Ritual Strings for use by the Ritual Handler. The command is: /ct ritualDump and it'll output all of the ritual strings to the "CraftTweaker.log".
+Derzeit gibt es einen in-game Befehl zum Dumping aller Ritual Strings für den Ritual Handler. Der Befehl ist: /ct ritualDump und wird alle rituellen Zeichenketten an die "CraftTweaker.log" ausgeben.
 
-### Pre-1.4.0:
+### Vor-1.4.0:
 
 #### Syntax:
 
-    Blank Example:
+    Leeres Beispiel:
     mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
     
-    Test Example:
-    mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
+    Testbeispiel:
+    mods.compatskills.RitualHandler.addRitualLock("Da das Ritual aktiviert ist, erreichen Sie nicht das erwartete Ergebnis", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
     
 
-### Post-1.4.0:
+### Nach-1.4.0:
 
-As of CompatSkills 1.4.0 a few new ZenMethods have been added as well as some changes has been done to the existing syntax. We've also fixed an issue that made Ritual Support and Binding Support not work properly!
+Seit CompatSkills 1.4.0 wurden einige neue ZenMethoden hinzugefügt sowie einige Änderungen an der bestehenden Syntax vorgenommen. Wir haben auch ein Problem behoben, das Ritual Support und Binding Support nicht richtig funktioniert!
 
 #### Syntax:
 
-    Blank Example:
-    mods.compatskills.RitualHandler.addRitualLock(String ritual, String... requirements);
-    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... requirements);
+    Leeres Beispiel:
+    mods.compatskills.RitualHandler.addRitualLock(String-Ritual, String... erforderlich);
+    mods.compatskills.RitualHandler.addRitualCostLock(int activationCost, String... Anforderungen);
     mods.compatskills.RitualHandler.addRitualCrystalLock(int crystalLevel, String... requirements);
     
-    Test Example:
+    Testbeispiel:
     mods.compatskills.RitualHandler.addRitualLock("ritualCrushing", "reskillable:magic|7");
     mods.compatskills.RitualHandler.addRitualCostLock(500, "reskillable:magic|7";
     mods.compatskills.RitualHandler.addRitualCrystalLock(1, "reskillable:magic|7");
     
 
-#### Error Message
+#### Fehlermeldung
 
-As with the binding support, the error message has been moved over to a localizable string instead of a string set in the CrT Method. This will make it so resource pack authors can localize and change the strings as they'd like much easier.
+Wie bei der Bindungsunterstützung wurde die Fehlermeldung in einen lokalisierbaren String übertragen, anstatt in der CrT-Methode. Dies macht es so dass Autoren von Ressourcenpacks die Zeichenketten übersetzen und ändern können, da sie viel einfacher mögen.
 
-    compatskills.bloodmagic.ritualError=As the ritual activates, you don't achieve the expected result
+    compatskills.bloodmagic.ritualError=Während das Ritual aktiviert ist, erreichen Sie nicht das erwartete Ergebnis
     
 
-Some other changes are for example that the default error message now displays as part of a status chat message to the player. This means that the message is only shown to the player and not printed in chat for everyone to see. This also means that it will now display alongside requirements in the chat. Which makes it easier for the player to identify what they are missing from the lock.
+Einige andere Änderungen sind zum Beispiel, dass die Standard-Fehlermeldung nun als Teil einer Statuschatnachricht an den Spieler angezeigt wird. Das bedeutet, dass die Nachricht nur dem Spieler angezeigt wird und nicht im Chat für alle sichtbar ist. Das bedeutet auch, dass es jetzt neben den Anforderungen im Chat angezeigt wird. Das macht es dem Spieler leichter zu erkennen, was er im Schloss vermisst.
