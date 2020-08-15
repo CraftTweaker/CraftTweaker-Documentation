@@ -1,10 +1,10 @@
 # Fluid_Transposer
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Transposer`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.thermalexpansion.Transposer.addExtractRecipe(ILiquidStack output, IItemStack input, int energy);
@@ -20,7 +20,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:leaves:1>, <minecraft:
 
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.thermalexpansion.Transposer.removeExtractRecipe(IItemStack input);
