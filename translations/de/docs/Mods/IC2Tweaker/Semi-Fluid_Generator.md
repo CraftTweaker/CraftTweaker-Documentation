@@ -1,6 +1,6 @@
 # Semi-Fluid Generator
 
-## Package
+## Paket
 
 `import mods.ic2.SemiFluidGenerator;`
 
