@@ -1,6 +1,6 @@
 # Compactor
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Compactor`
 
@@ -18,7 +18,7 @@ The Mint modifier changes the recipes registered in the `COIN` recipe map in The
 
 Note that these recipes require the Numismatic Press Augment.
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack input, int energy);
@@ -26,7 +26,7 @@ mods.thermalexpansion.Compactor.addMintRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addMintRecipe(<minecraft:sand>, <minecraft:stick>, 1500);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
@@ -40,7 +40,7 @@ The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or
 
 These recipes do not require a specific Augment.
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack input, int energy);
@@ -48,7 +48,7 @@ mods.thermalexpansion.Compactor.addPressRecipe(IItemStack output, IItemStack inp
 mods.thermalexpansion.Compactor.addPressRecipe(<minecraft:sand>, <minecraft:apple>, 1500);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
@@ -62,7 +62,7 @@ The Storage modifier changes the recipes registered in the `PLATE` recipe map in
 
 These recipes do not require a specific Augment, and seemingly are used only for plates.
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack input, int energy);
@@ -70,7 +70,7 @@ mods.thermalexpansion.Compactor.addStorageRecipe(IItemStack output, IItemStack i
 mods.thermalexpansion.Compactor.addStorageRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
@@ -84,7 +84,7 @@ The Gear modifier changes the recipes registered in the `GEAR` recipe map in The
 
 Note that these recipes require the Gearworking Die Augment.
 
-### Addition
+### Addizione
 
 ```zenscript
 mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack input, int energy);
@@ -92,7 +92,7 @@ mods.thermalexpansion.Compactor.addGearRecipe(IItemStack output, IItemStack inpu
 mods.thermalexpansion.Compactor.addGearRecipe(<minecraft:sand>, <minecraft:arrow>, 1500);
 ```
 
-### Removal
+### Rimozione
 
 ```zenscript
 mods.thermalexpansion.Compactor.removeGearRecipe(IItemStack input);
