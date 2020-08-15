@@ -1,19 +1,19 @@
-# Removal Tweaker
+# Удаление Tweaker
 
-## ZenMethod List:
+## Список ZenMethod:
 
-    // Removes the Entry corresponding to the Starting State from the specified Reagent
-    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, IItemStack startState)
-    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
+    // Удаляет Вход, соответствующий начальному состоянию, из указанного реагента
+    mods.compatskills.transmutations.removals.removeStartStateFromReagent(IItemStack, агент IItemStack startState)
+    модов. ompatskills.transmutations.removals.removeStartStateFromReagent(IItemStack, crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the Starting State from ALL Reagents!
-    mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(IItemStack state)
+    // Удаляет Вход, соответствующий Начальному Состоянию от ВСЕХ Реагентов!
+    mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(IItemStack)
     mods.compatskills.transmutations.removals.removeStartStateReagentAgnostic(crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the End State from the specified Reagent.
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, IItemStack state)
-    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, crafttweaker.api.block.IBlockState state)
+    // Удаляет Вход, соответствующий конечному состоянию из указанного реагента.
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack reagent, IItemStack)
+    mods.compatskills.transmutations.removals.removeEndStateFromReagent(IItemStack, crafttweaker.api.block.IBlockState state)
     
-    // Removes the Entry corresponding to the End State from ALL Reagents!
-    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(IItemStack state)
+    // Удаляет Вход, соответствующий Конечному Штату со всех агентов!
+    mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(состояние IItemStack)
     mods.compatskills.transmutations.removals.removeEndStateReagentAgnostic(crafttweaker.api.block.IBlockState state)
