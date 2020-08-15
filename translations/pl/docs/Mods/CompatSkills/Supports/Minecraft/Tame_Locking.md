@@ -1,15 +1,15 @@
-# Taming Locking
+# Blokowanie oswajania
 
-## Animal-Tame Locking
+## Blokowanie oswajania zwierząt
 
-This feature allows for you to add requirement locks to taming specific entities.
+Ta funkcja pozwala na dodanie bloków wymagań do oswojania określonych obiektów.
 
-### Syntax
+### Składnia
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link do IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements);
+    # Pusty przykład:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition Definition, String... domyślne wymagania);
     
-    # Working Example:
-    mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
+    # Przykład:
+    mods.compatskills.AnimalTameLock(<entity:minecraft:wolf>, "reskillable:mining|5", "reskillable:magic|7");
