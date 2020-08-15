@@ -1,6 +1,6 @@
 # Decay Hastener
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.DecayHastener`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.DecayHastener.addRecipe(IIngredient itemInput, IIngredient ite
 ```zenscript
 mods.nuclearcraft.DecayHastener.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.DecayHastener.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.DecayHastener.removeAllRecipes();
+mods.nuclearcraft.DecayHastener.removeAllRicette();
 ```
