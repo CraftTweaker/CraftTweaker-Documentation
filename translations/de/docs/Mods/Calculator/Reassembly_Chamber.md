@@ -14,7 +14,7 @@ import mods.calculator.reassemblyChamber;
 ```zenscript
 reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## Removal
+## Entfernen
 ```zenscript
 
 reassemblyChamber.removeRecipe(IIngredient output);
