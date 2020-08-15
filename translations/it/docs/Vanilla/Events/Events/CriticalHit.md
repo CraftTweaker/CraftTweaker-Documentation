@@ -8,7 +8,7 @@ The CriticalHit Event is fired whenever a player attacks another creature. It ha
 
 You can also adjust the damage modifier for the critical hit.
 
-## Notes
+## Note
 
 `event.oldDamageModifier` contains the original damage modifier of the event, while `event.isVanillaCrit` is a boolean value that determines whether or not this is actually already a critical hit.
 
@@ -25,11 +25,11 @@ CriticalHit Events implement the following interfaces and are able to call all o
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter           | ZenSetter        | Return Type                           |
+| ZenGetter           | ZenSetter        | Tipo Di Reso                          |
 | ------------------- | ---------------- | ------------------------------------- |
 | `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `oldDamageModifier` |                  | float                                 |
-| `damageModifier`    | `damageModifier` | float                                 |
+| `oldDamageModifier` |                  | galleggiante                          |
+| `damageModifier`    | `damageModifier` | galleggiante                          |
 | `isVanillaCrit`     |                  | boolean                               |
 
 ## ZenMethods
