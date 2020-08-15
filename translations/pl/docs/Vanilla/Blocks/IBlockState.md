@@ -31,7 +31,7 @@ Aby tego uniknąć, możesz użyć metody statycznej `IBlockState.getBlockState(
 
 Zwraca IBlockState o podanej `nazwie bloku` o określonych `właściwościach`lub domyślnym stanie blokowania, jeśli nie określono żadnych właściwości.
 
-## Extending IBlockProperties
+## Rozszerzenie właściwości IBlockProperties
 
 IBlockState rozszerza [właściwości IBlockProperties](/Vanilla/Blocks/IBlockProperties/). Oznacza to, że wszystkie metody dostępne dla obiektów [IBlockProperties](/Vanilla/Blocks/IBlockProperties/) są również dostępne dla obiektów IBlockStatus.
 
