@@ -8,7 +8,7 @@ import mods.roots.Transmutation;
 
 ```zenscript
 void removeRecipe(
-  string name // the name of the recipe being removed
+  string name // 削除されているレシピの名前
 );
 ```
 
@@ -51,12 +51,12 @@ Transmutation.addBlockToItemRecipe("tallgrass_to_snowball", <blockstate:minecraf
 
 ### メモ
 
-**Note: complex state functions are not currently acessible through CraftTweaker (i.e., checking surroundings).**
+**注:複雑な状態関数は、CraftTweaker(すなわち、周囲をチェックする)を介して現在acessibleではありません。**
 
-It is possible to find the information about the block and its variants and states by using the F3 debug functionality and targeting it. On the right side of the screen it will display the block's registry name, and then any states below that.
+F3デバッグ機能を使用してターゲティングすることで、ブロックとそのバリエーションと状態に関する情報を見つけることができます。 画面の右側には、ブロックのレジストリ名が表示され、その下の任意の状態が表示されます。
 
-For example, `bone_block` has the following:
+例えば、 `bone_block` は以下のようになります。
 
-    axis: y
+    軸: y
 
 This can be converted into a blockstate by replacing the `:` with `=` like so: `axis=y`, meaning that the final blockstate (for an upwards facing bone block) would be `<blockstate:minecraft:bone_block:axis=y>`.
