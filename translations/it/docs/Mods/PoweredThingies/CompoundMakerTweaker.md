@@ -1,6 +1,6 @@
 # Powered Thingies :: Compound Maker
 
-### Importing
+### Importazione
 
 ```zenscript
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;
@@ -22,12 +22,12 @@ ct().clear()
 addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
 ```
 
-##### Example
+##### Esempio
 
 ```zenscript
 ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
-### Notes
+### Note
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
