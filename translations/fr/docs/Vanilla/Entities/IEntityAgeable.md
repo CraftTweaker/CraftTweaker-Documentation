@@ -2,7 +2,7 @@
 
 An Ageable Entity is one that grows over time, like a cow.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityAgeable;`
@@ -11,16 +11,16 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
 
-## Methods
+## Méthodes
 
 ### ZenGetters/Setters
 
-| ZenGetter  | ZenSetter   | Type |
-| ---------- | ----------- | ---- |
-| growingAge | growingAge  | int  |
-|            | scaleForAge | bool |
+| ZenGetter  | ZenSetter   | Type de texte |
+| ---------- | ----------- | ------------- |
+| growingAge | growingAge  | Indice        |
+|            | scaleForAge | booléen       |
 
-### ZenMethods
+### Méthodes Zen
 
 #### add age
 
