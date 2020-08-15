@@ -10,7 +10,7 @@ BasinThrowing.add(IIngredient input, ILiquidStack inputFluid, IItemStack output)
 BasinThrowing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
