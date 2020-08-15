@@ -2,10 +2,10 @@
 
 Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.registries.IRecipeManager
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.registries.IRecipeManager
 IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## メソッド
 ### addJSONRecipe
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
@@ -24,13 +24,13 @@ craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData)
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | 文字列型                                                   | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| パラメータ | タイプ                                                    | 説明                              |
+| ----- | ------------------------------------------------------ | ------------------------------- |
+| name  | 文字列型                                                   | name of the recipe              |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### removeAll
+### すべて削除
 
 Remove all recipes in this registry
 
@@ -47,9 +47,9 @@ craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| パラメータ | タイプ  | 説明                             |
+| ----- | ---- | ------------------------------ |
+| modid | 文字列型 | modid of the recipes to remove |
 
 
 ### removeByName
@@ -61,9 +61,9 @@ craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| パラメータ | タイプ  | 説明                                |
+| ----- | ---- | --------------------------------- |
+| 名前    | 文字列型 | registry name of recipe to remove |
 
 
 ### removeByRegex
@@ -75,9 +75,9 @@ craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| パラメータ | タイプ  | 説明                     |
+| ----- | ---- | ---------------------- |
+| regex | 文字列型 | regex to match against |
 
 
 ### removeRecipe
@@ -89,15 +89,15 @@ craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| パラメータ | タイプ                                                               | 説明                   |
+| ----- | ----------------------------------------------------------------- | -------------------- |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Properties
+## プロパティー
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| 名称            | タイプ  | Has Getter | Has Setter |
+| ------------- | ---- | ---------- | ---------- |
+| commandString | 文字列型 | true       | false      |
 
