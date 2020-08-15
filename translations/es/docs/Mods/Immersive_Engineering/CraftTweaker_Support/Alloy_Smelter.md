@@ -1,10 +1,10 @@
-# Alloy Smelter
+# Fundición de Aleación
 
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+El paquete de Fundición de Aleación se puede utilizar para añadir/quitar recetas para/de la Fundición Inmersiva de Aleación de Ingeniería.
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+Puedes llamar al paquete de AleyFundición usando `mods.immersiveengineering.AlloyPhone`
 
 ## Añadir Receta
 
@@ -13,17 +13,17 @@ You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmel
 | Requerido | Salida  | [IItemstack](/Vanilla/Items/IItemStack/)              |
 | Requerido | Input 1 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
 | Requerido | Input 2 | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
-| Requerido | Time    | Entero                                                |
+| Requerido | Hora    | Entero                                                |
 
 ### Ejemplo
 
 ```zenscript
-//Example:
-mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
+//Ejemplo:
+mods.immersiveengineering.Alloyterielter.addRecipe(salida ItemStack, IIngredient primero, IIngredient segundo, tiempo de intención);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
-## Remove Recipe
+## Eliminar receta
 
 | Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
@@ -32,7 +32,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
-mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
+mods.immersiveengineering.Alloyworthelter.removeRecipe(<minecraft:diamond>);
 ```
