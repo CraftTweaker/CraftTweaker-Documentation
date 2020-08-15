@@ -1,22 +1,22 @@
-# Centrifuge
+# Wirówka
 
-ModTweaker allows you to add or remove forestry Centrifuge Recipes
+ModTweaker pozwala na dodanie lub usunięcie przepisów dotyczących wirówek leśnych
 
-## Calling
+## Dzwonienie
 
-You can call the package using `mods.forestry.Centrifuge`
+Możesz wywołać pakiet używając `mods.forestry.Centrifuge`
 
-## Recipe Removal
+## Usuwanie przepisów
 
 ```zenscript
-//mods.forestry.Centrifuge.removeRecipe(IIngredient input);
+//mods.forestry.Centrifuge.removeRecipe(Input);
 mods.forestry.Centrifuge.removeRecipe(<forestry:bee_combs:*>);
 
 ```
 
-## Reipe Addition
+## Dodanie podglądu
 
 ```zenscript
-//mods.forestry.Centrifuge.addRecipe(WeightedItemStack[] output, IItemStack ingredients, int packagingTime);
+//mods.forestry.Centrifuge.addRecipe(WysokicjonalnaItemStack[] wyjścia, składniki IItemStack, int packingTime);
 mods.forestry.Centrifuge.addRecipe([(<minecraft:redstone> * 9) % 80, <minecraft:gold_ingot> % 12], <minecraft:redstone_block>, 100);
 ```
