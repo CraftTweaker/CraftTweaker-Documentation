@@ -4,17 +4,17 @@ The ICTItemList is what an [IBlockDropHandler](/Mods/ContentTweaker/Vanilla/Adva
 It is a list of items that will be dropped by the given [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/).  
 Depending on other event handlers active it might already contain some items, or it might be empty.
 
-## Importing the class
+## クラスのインポート
 
-If you ever find yourself in need of importing this class, this is how you do it:
+このクラスをインポートする必要がある場合は、次のようにします。
 
 ```zenscript
 import mods.contenttweaker.ItemList;
 ```
 
-## Adding items to the list
+## リストにアイテムを追加する
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/) or [WeightedItemStacks](/Vanilla/Items/WeightedItemStack/) to the list using the functions below:
+以下の関数を使用して、 [IItemStacks](/Vanilla/Items/IItemStack/) または [WeightedItemStacks](/Vanilla/Items/WeightedItemStack/) をリストに追加できます:
 
 ```zenscript
 list.add(<minecraft:carrot>);
@@ -26,9 +26,9 @@ list.add(<minecraft:seeds> % 10);
 list + (<minecraft:seeds> % 10);
 ```
 
-## Removing items from the list
+## リストから項目を削除中
 
-You can only remove items using the item's index, or you can clear the whole list.
+項目のインデックスを使用してのみ項目を削除するか、リスト全体を削除することができます。
 
 ```zenscript
 list.remove(1);
@@ -36,23 +36,23 @@ list.remove(1);
 list.clear();
 ```
 
-## Getting items from the list
+## リストからアイテムを取得しています
 
-You can either get an item by its index or you can get the whole list as either an array or a list:
+インデックスでアイテムを取得するか、リスト全体を配列またはリストとして取得できます:
 
 ```zenscript
 import crafttweaker.item.IItemStack;
 
-val itemAt = list.get(0); //as IItemStack
+val itemAt = list.get(0); ///as IItemStack
 
 val itemArray = list.getArray(); //as IItemStack[]
 
-val itemList = list.getList(); //as [IItemStack]
+val itemList = list.getList(); ///as [IItemStack]
 ```
 
-## Other information
+## その他の情報
 
-You can also retreive this information from the list:
+リストからこの情報を取り戻すこともできます:
 
 ```zenscript
 list.getLength();
