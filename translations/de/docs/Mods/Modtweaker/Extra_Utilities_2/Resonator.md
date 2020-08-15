@@ -1,10 +1,10 @@
 # Resonator
 
-ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
+ModTweaker ermöglicht das Hinzufügen oder Entfernen von zusätzlichen Utilities 2 Resonatorrezepten
 
 ## Anruf
 
-You can call the Resonator package using `mods.extrautils2.Resonator`
+Sie können das Resonator-Paket mit `mods.extrautils2.Resonator` aufrufen
 
 ## Entfernen
 
