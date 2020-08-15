@@ -2,7 +2,7 @@
 
 A MineCraft Axis Aligned Boundary Box object allows you change a [Block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) Boundary borders to a given cuboid shape.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.AxisAlignedBB;`
@@ -18,15 +18,15 @@ AxisAlignedBB.create(double minX, double minY, double minZ, double maxX, double 
 
 All parameters for this function are doubles between 0 and 1!
 
-## ZenProperties
+## Propriétés Zen
 
 You can get and set each Property using `getProperty()` or `object.property`.
 
-| ZenProperty | Type   |
-| ----------- | ------ |
-| minX        | double |
-| minY        | double |
-| minZ        | double |
-| maxX        | double |
-| maxY        | double |
-| maxZ        | double |
+| Propriété Zen | Type de texte |
+| ------------- | ------------- |
+| minX          | double        |
+| minY          | double        |
+| minZ          | double        |
+| maxX          | double        |
+| maxY          | double        |
+| maxZ          | double        |
