@@ -20,7 +20,7 @@ new crafttweaker.api.data.LongData(internal as long);
 ```
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| internal  | long | No description provided |
+| intern    | long | No description provided |
 
 
 
@@ -74,7 +74,7 @@ Returns boolean
 
 | Parameter | Type                                                   | Beschreibung                     |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
