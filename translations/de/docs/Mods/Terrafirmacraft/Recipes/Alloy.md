@@ -1,6 +1,6 @@
 # Alloy
 
-## Package
+## Paket
 ```zenscript
 import mods.terrafirmacraft.Alloy;
 import mods.terrafirmacraft.AlloyRecipeBuilder;
@@ -14,7 +14,7 @@ builder.addMetal(String input, double min, double max);
 builder.build();
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 Alloy.removeAlloy(String metal);
