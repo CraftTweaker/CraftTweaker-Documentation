@@ -1,23 +1,23 @@
 # Wynik IRayTraceReult
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
-The result of such a hit is an IRayTraceResult object.
+Gdy gracz patrzy lub klika na coś, co wystrzeliwuje obrazek do momentu, gdy uderza w to, co potrzebuje do uderzenia, lub przegapi.  
+Wynik takiego trafienia jest obiektem IRayTraceResult.
 
 ## Importowanie klasy
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IRayTraceResult`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuj crafttweaker.world.IRayTraceResult`
 
 ## ZenGetters
 
-All you can do is retrieve information from these objects, here's which:  
-Be careful though, since all getters that do not return a bool can return `null`!
+Jedyne, co możesz zrobić, to pobieranie informacji z tych obiektów, tutaj, które:  
+Uważaj, ponieważ wszyscy poborcy, którzy nie zwracają boolu, mogą zwrócić `null`!
 
-| Nazwa    | typ                                    |
-| -------- | -------------------------------------- |
-| isMiss   | bool                                   |
-| isEntity | bool                                   |
-| isBlock  | bool                                   |
-| podmiot  | [IEntity](/Vanilla/Entities/IEntity/)  |
-| bloki    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| sideHit  | [IFacing](/Vanilla/World/IFacing/)     |
+| Nazwa   | typ                                    |
+| ------- | -------------------------------------- |
+| isMiss  | bool                                   |
+| Obiekt  | bool                                   |
+| isBlock | bool                                   |
+| podmiot | [IEntity](/Vanilla/Entities/IEntity/)  |
+| bloki   | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| sideHit | [IFacing](/Vanilla/World/IFacing/)     |
