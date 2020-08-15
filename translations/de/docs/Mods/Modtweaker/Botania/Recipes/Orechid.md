@@ -2,7 +2,7 @@
 
 The Orechid package is used for adding or removing generated ores to/from the Botania Orechid Flowers.
 
-## Calling
+## Anruf
 
 You can call the Orechid package using `mods.botania.Orechid`
 
@@ -10,7 +10,7 @@ You can call the Orechid package using `mods.botania.Orechid`
 
 You can find all registered Orechid recipes using [`/ct botorechid`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Rezeptzusatz
 
 You can either add recipes using the returned [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) as output parameter, or the name of said oreDictEntry as string.
 
