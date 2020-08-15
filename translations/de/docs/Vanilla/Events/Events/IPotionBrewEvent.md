@@ -8,9 +8,9 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## What can be done with them?
 
-| ZenGetter | ZenSetter | type |
-| --------- | --------- | ---- |
-| `length`  |           | int  |
+| ZenGetter | ZenSetter | typ |
+| --------- | --------- | --- |
+| `length`  |           | int |
 
 ## Methoden
 
