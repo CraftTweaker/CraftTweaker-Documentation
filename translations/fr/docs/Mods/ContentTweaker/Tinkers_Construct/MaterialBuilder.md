@@ -2,7 +2,7 @@
 
 Using this package you can create materials that you can then create tools with!
 
-## Importing the class
+## Importation de la classe
 
 It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import mods.contenttweaker.tconstruct.MaterialBuilder;`
@@ -28,18 +28,18 @@ myMat.register();
 
 You can set and get these properties using `myMaterial.name`.
 
-| Property           | Type                                             | Additional notes                                             |
-| ------------------ | ------------------------------------------------ | ------------------------------------------------------------ |
-| identifier         | string                                           | Unique name                                                  |
-| color              | int                                              |                                                              |
-| hidden             | bool                                             |                                                              |
-| liquid             | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)   | Smeltery output                                              |
-| craftable          | bool                                             | Can be created in the part builder                           |
-| castable           | bool                                             | Can be created using casts. Requires liquid to be set!       |
-| representativeItem | [IItemStack](/Vanilla/Items/IItemStack/)         | Shown item in the tinkers' manual                            |
-| representativeOre  | [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) | Shown if representativeItem is null                          |
-| shard              | [IItemStack](/Vanilla/Items/IItemStack/)         | Used instead of the tinker's shard item in the part builder. |
-| localizedName      | string                                           | The shown name                                               |
+| Property           | Type de texte                                      | Additional notes                                             |
+| ------------------ | -------------------------------------------------- | ------------------------------------------------------------ |
+| identifier         | chaîne de caractères                               | Unique name                                                  |
+| color              | Indice                                             |                                                              |
+| hidden             | booléen                                            |                                                              |
+| liquid             | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)     | Smeltery output                                              |
+| craftable          | booléen                                            | Can be created in the part builder                           |
+| castable           | booléen                                            | Can be created using casts. Requires liquid to be set!       |
+| representativeItem | [IItemStack](/Vanilla/Items/IItemStack/)           | Shown item in the tinkers' manual                            |
+| representativeOre  | [Entrée IOreDict](/Vanilla/OreDict/IOreDictEntry/) | Shown if representativeItem is null                          |
+| shard              | [IItemStack](/Vanilla/Items/IItemStack/)           | Used instead of the tinker's shard item in the part builder. |
+| localizedName      | chaîne de caractères                               | The shown name                                               |
 
 ## Calculated Properties
 
@@ -140,7 +140,7 @@ myMat.addProjectileMaterialStats();
 myMat.removeProjectileMaterialStats();
 ```
 
-## Example
+## Exemple
 
 ```zenscript
 #loader contenttweaker
