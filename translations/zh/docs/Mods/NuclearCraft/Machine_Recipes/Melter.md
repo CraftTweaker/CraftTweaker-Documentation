@@ -1,7 +1,7 @@
-# Melter
+# 熔化
 
-## Importing the Package
-`mods.nuclearcraft.melter`
+## 导入软件包
+`nuclearcraft.melter`
 
 ## 添加配方
 ```zenscript
@@ -10,7 +10,7 @@ mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Optional double tim
 
 ## 删除配方
 ```zenscript
-mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);
+mods.nuclearcraft.melter.removeRecipeWidInput([itemInput]);
+mods.nuclearcraft.melter.removeRecipeWOutput([fluidOutput]);
 mods.nuclearcraft.melter.removeAllRecipes();
 ```
