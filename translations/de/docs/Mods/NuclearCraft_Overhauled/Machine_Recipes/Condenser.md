@@ -1,8 +1,8 @@
-# Condenser
-**Note: Partially Broken**
+# Kondensator
+**Hinweis: Teilweise kaputt**
 
-## Importing the Package
-`mods.nuclearcraft.Condenser`
+## Paket wird importiert
+`mods.nuclearcraft.Kondensator`
 
 ## Rezepte hinzufügen
 ```zenscript
@@ -13,5 +13,5 @@ mods.nuclearcraft.Condenser.addRecipe(ILiquidStack fluidInput, ILiquidStack flui
 ```zenscript
 mods.nuclearcraft.Condenser.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Condenser.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Condenser.removeAllRecipes();
+mods.nuclearcraft.Condenser.removeAllRezept();
 ```
