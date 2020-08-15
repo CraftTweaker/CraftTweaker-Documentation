@@ -1,13 +1,13 @@
-# Tool Harvest-Level Locking
+# Verrouillage du niveau de récolte des outils
 
-## Feature:
+## Caractéristique:
 
-This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
+Ce verrou permet aux auteurs de packs de verrouiller des outils en général ou des « types » spécifiques derrière leur niveau de récolte. Cela signifie que vous pouvez verrouiller toutes les pioches avec un niveau de récolte de "3" derrière un ensemble de conditions. Ou en général tous les outils avec un niveau de récolte de 3 derrière un ensemble d'exigences !
 
-## Syntax:
+## Syntaxe :
 
-    mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
-    mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
+    mods.compatskills.HarvestLock.addToolLevelLock(int niveau, String... exigences);
+    mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... exigences);
     
     mods.compatskills.HarvestLock.addToolLevelLock(3, "dim|1");
-    mods.compatskills.HarvestLock.addToolLevelLock("pickaxe", 3, "dim|1");
+    mods.compatskills.HarvestLock.addToolLevelLock("pioche", 3, "dim|1");
