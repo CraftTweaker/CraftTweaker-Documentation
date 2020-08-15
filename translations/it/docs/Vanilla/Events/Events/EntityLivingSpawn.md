@@ -1,40 +1,40 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+L'evento EntityLivingSpawn viene sparato ogni volta che un'entità cerca di unirsi o lasciare un mondo.  
+Ha una sottoclasse, l'EntityLivingExtendedSpawnEvent che contiene anche un riferimento [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker. vent.EntityLivingSpawnEvent`  
+`crafttweaker. vent.EntityLivingExtendedSpawnEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+EntityLivingSpawn Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
-| ZenGetter                 | Tipo                                                             |
-| ------------------------- | ---------------------------------------------------------------- |
-| `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | galleggiante                                                     |
-| `y`                       | galleggiante                                                     |
-| `z`                       | galleggiante                                                     |
-|                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| ZenGetter               | Tipo                                                             |
+| ----------------------- | ---------------------------------------------------------------- |
+| `mondo`                 | [IWorld](/Vanilla/World/IWorld/)                                 |
+| `x`                     | galleggiante                                                     |
+| `y`                     | galleggiante                                                     |
+| `z`                     | galleggiante                                                     |
+|                         |                                                                  |
+| `spawner` (solo esteso) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Funzioni evento
 
-The despawn event also offers three functions to change the event outcome:
+L'evento despawn offre anche tre funzioni per cambiare il risultato dell'evento:
 
-| ZenMethod | Descrizione                                |
-| --------- | ------------------------------------------ |
-| `allow`   | Forces the entity to (de)spawn             |
-| `deny`    | Forces the entity not to (de)spawn         |
-| `passa`   | Sets the event result to the default state |
+| ZenMethod    | Descrizione                                             |
+| ------------ | ------------------------------------------------------- |
+| `consentire` | Forza l'entità a (de)generare                           |
+| `nega`       | Forza l'entità a (de)spawn                              |
+| `passa`      | Imposta il risultato dell'evento allo stato predefinito |
