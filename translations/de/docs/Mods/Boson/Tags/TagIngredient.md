@@ -11,12 +11,12 @@ Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
 ## `IIngredient`
 Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
 
-## Properties
+## Eigenschaften
 A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
 
-| Property Name | Type                                     | Beschreibung                                                    |
-| ------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`     | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| Eigenschaftsname | Type                                     | Beschreibung                                                    |
+| ---------------- | ---------------------------------------- | --------------------------------------------------------------- |
+| `tagName`        | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
 
 ## Beispiel
 
