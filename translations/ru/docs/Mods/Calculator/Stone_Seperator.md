@@ -1,6 +1,6 @@
 # Stone Separator
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.stoneSeparator;
 ```
@@ -17,7 +17,7 @@ import mods.calculator.stoneSeparator;
 stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
 ```
