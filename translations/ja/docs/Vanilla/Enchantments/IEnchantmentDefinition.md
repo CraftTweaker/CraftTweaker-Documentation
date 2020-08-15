@@ -7,22 +7,22 @@ An IEnchantmentDefinition is the actual Enchantment, it does not posess a level,
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Retrieving such an object
+## そのようなオブジェクトを取得しています
 
 You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter             | ZenSetter | Type    |
-| --------------------- | --------- | ------- |
-| id                    |           | int型    |
-| name                  | name      | string  |
-| maxLevel              |           | int     |
-| minLevel              |           | int     |
-| isAllowedOnBooks      |           | boolean |
-| isTreasureEnchantment |           | boolean |
-| isCurse               |           | boolean |
-| registryName          |           | string  |
+| ZenGetter             | ZenSetter | タイプ      |
+| --------------------- | --------- | -------- |
+| id                    |           | int型     |
+| 名前                    | 名前        | 文字列      |
+| maxLevel              |           | int      |
+| minLevel              |           | int      |
+| isAllowedOnBooks      |           | boolean型 |
+| isTreasureEnchantment |           | boolean型 |
+| isCurse               |           | boolean型 |
+| registryName          |           | 文字列      |
 
 ## ZenMethods
 
@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## 例
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
