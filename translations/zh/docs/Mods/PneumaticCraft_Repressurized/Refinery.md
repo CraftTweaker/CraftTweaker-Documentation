@@ -23,13 +23,13 @@ mods.pneumaticcraft.refinery.removeRecipe(IIngredient[] outputs);
 该方法移除其找到的第一个以指定的[IIngredient](/Vanilla/Variable_Types/IIngredient/)作为`输入`的合成配方：
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeRecipes(IIngredient input);
+mods.pneumaticcraft.elinery.removeRecipes(IIngredient input)；
 ```
 
 该方法移除*所有*精炼厂配方：
 
 ```zenscript
-mods.pneumaticcraft.refinery.removeAllRecipes();
+mods.pneumaticcraft.reformery.removeAllRecipes();
 ```
 
 ## 添加配方
