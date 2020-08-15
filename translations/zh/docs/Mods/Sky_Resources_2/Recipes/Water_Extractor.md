@@ -10,9 +10,9 @@
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
-mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
+mods.skyresources.waterextractor.addRecipe(500, <minecraft:dirt>, <minecraft:leaves>);
 
-//mods.skyresources.waterextractor.insert.addRecipe(IItemStack output, IIngredient input, int waterIn);
+//mods. kyresources.waterextractor.insert.addRecipe(IItemStack output, Ingredient input, int waterIn);
 mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
 ```
 
@@ -20,8 +20,8 @@ mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:c
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
-mods.skyresources.waterextractor.extract.removeRecipe(50, null, <minecraft:snow>);
+mods.skyresources.waterxtractor.removeRecipe(50, null, <minecraft:snow>);
 
-//mods.skyresources.waterextractor.insert.removeRecipe(IItemStack output);
-mods.skyresources.waterextractor.insert.removeRecipe(<minecraft:clay>);
+///mods.skyresources.waterextractor.insert.removeRecipe(IItemStack output);
+mods.skyresources.waterextractor.insert.reveRecipe(<minecraft:clay>);
 ```
