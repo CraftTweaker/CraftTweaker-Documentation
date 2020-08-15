@@ -2,16 +2,16 @@
 
 A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
 ```
 
 ## 已实现的接口
-ItemBuilderTool implements the following interfaces. That means any method available to them can also be used on this class.
+ItemBuilderTool implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
@@ -43,9 +43,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| 参数           | 返回值类型 | 描述                           |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| 参数   | 返回值类型 | 描述                           |
+| ---- | ----- | ---------------------------- |
+| 攻击伤害 | 浮点数   | The additional attack damage |
 
 
 ### withAttackSpeed
@@ -61,9 +61,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| 参数          | 返回值类型  | 描述               |
-| ----------- | ------ | ---------------- |
-| attackSpeed | double | The attack speed |
+| 参数          | 返回值类型 | 描述               |
+| ----------- | ----- | ---------------- |
+| attackSpeed | 双精度   | The attack speed |
 
 
 ### withDurabilityCostAttack
@@ -116,11 +116,11 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| 参数          | 返回值类型                                                                           | 描述                                                   | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| 参数          | 返回值类型                                                                           | 描述                                                   | 可选的   | 默认值   |
+| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ----- | ----- |
+| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false | `空的`  |
+| miningLevel | 整数                                                                              | The mining level for this tool type                  | false | `空的`  |
+| miningSpeed | 浮点数                                                                             | How fast this tool can mine blocks of the given type | true  | `1.0` |
 
 
 
