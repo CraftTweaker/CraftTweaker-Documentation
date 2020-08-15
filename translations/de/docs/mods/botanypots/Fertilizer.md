@@ -1,84 +1,84 @@
-# Fertilizers
+# Dünger
 
-Class path: `mods.botanypots.Fertilizer`
+Klassenpfad: `mods.botanypots.Fertilizer`
 
-## Use
+## Benutzen
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Importieren Sie die Klasse mit `importieren Sie mods.botanypots.Fertilizer;` am Anfang Ihres Skripts.
 
-## Creating Fertilizers
+## Erstelle Düngemittel
 
-`Fertilizer.create(id, ingredient, minTick, maxTick);`
+`Düngemittel.create(id, Zutat, MinTick, MaxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
-- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
+- `id` &lt;string> Die ID des neuen Düngemittels. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Zutat` <[Ingredient](/vanilla/api/items/IIngredient)> Das für den Dünger verwendete Element.
+- `minTick` &lt;int> Der Mindestbetrag an Ticks, der vom Dünger hinzugefügt wurde.
+- `maxTick` &lt;int> Die maximale Menge an Ticks, die vom Dünger hinzugefügt wurde.
 
-Creates a new fertilizer. These can be used to grow crops faster.
-
-```zenscript
-Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
-```
-
-## Removing Fertilizers
-
-`Fertilizer.remove(id);`
-
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-
-This can be used to remove a fertilizer.
+Erzeugt einen neuen Dünger. Diese können genutzt werden, um Pflanzen schneller anzubauen.
 
 ```zenscript
-Fertilizer.remove("botanypots:fertilizers/bone_meal");
+Düngemittel.create("beispielpack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Changing Fertilizer Ticks
+## Düngemittel entfernen
+
+`Düngemittel.remove(id);`
+
+- `id` &lt;string> Die ID des Düngemittels. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+
+Dies kann verwendet werden, um einen Dünger zu entfernen.
+
+```zenscript
+Düngemittel.remove("botanypots:Düngemittel/Knochenmehl");
+```
+
+## Düngemittel-Ticks ändern
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
+- `id` &lt;string> Die ID des Düngemittels. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `minTick` &lt;int> Der neue Mindestbetrag an Ticks, der vom Dünger hinzugefügt wurde.
+- `maxTick` &lt;int> Die neue Höchstmenge an Ticks, die vom Dünger hinzugefügt wurde.
 
-This will change the growth tick range added by the fertilizer.
+Dies ändert den Wachstumsstickbereich des Düngemittels.
 
 ```zenscript
-Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
+Düngemittel.setTicks("botanypots:Düngemittel/Knochenmehl", 800, 900);
 ```
 
-## Changing Fertilizer Ingredients
+## Düngemittelwechsel
 
-`Fertilizer.setIngredient(id, ingredient);`
+`Düngemittel.setIngredient(id, Zutat);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
+- `id` &lt;string> Die ID des Düngemittels. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Zutat` <[Ingredient](/vanilla/api/items/IIngredient)> Das neue Element, das für den Dünger verwendet werden soll.
 
-Sets the ingredient item that is the fertilizer.
+Legt den Zutaten-Gegenstand fest, der der Dünger ist.
 
 ```zenscript
-Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
+Düngemittel.setIngredient("botanypots:Düngemittel/Knochenmehl", <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Alle Ids abrufen
 
-`Fertilizer.getAllIds();`
+`Düngemittel.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
+- Gibt folgende Werte zurück: &lt;string[]> Ein Array aller bekannten Düngemittel-Iden zur Zeit dieser Reihe.
 
-This will give you an array of all the known fertilizer ids at the time.
+Dies gibt dir ein Array aller bekannten Düngemittel-Iden zu dieser Zeit.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for fertilizerId in Fertilizer.getAllIds() {
+// Logge alle Ids in der crafttweaker.log Datei
+für die fertilizerId in Fertilizer.getAllIds() {
     println(fertilizerId);
 }
 ```
 
-## Removing All Fertilizers
+## Alle Dünger entfernen
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Dadurch werden alle derzeit registrierten Düngemittel vollständig entfernt. Dies ist nützlich, wenn Sie alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
-Fertilizer.removeAll();
+Düngemittel.removeAll();
 ```
