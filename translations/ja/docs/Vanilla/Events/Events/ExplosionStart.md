@@ -1,14 +1,15 @@
-# ExplosionStart
+# 爆発開始
 
-The ExplosionStart Event is fired shortly before an explosion starts. If canceled, the explosion will not happen.
+ExplosionStartイベントは、爆発が始まる直前に発生します。 キャンセルされた場合、爆発は起こりません。
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ExplosionStartEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## イベントクラス
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. xplosionStartEvent <br x-id="2" /> 
+ <code>`  
+もちろん、 [インポート](/AdvancedFunctions/Import/) 前にクラスをインポートして、その名前を使用することもできます。
 
-## Event interface extensions
-ExplosionStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## イベントインターフェースの拡張
+ExplosionStartイベントは、以下のインターフェースを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [爆発イベント](/Vanilla/Events/Events/IExplosionEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
