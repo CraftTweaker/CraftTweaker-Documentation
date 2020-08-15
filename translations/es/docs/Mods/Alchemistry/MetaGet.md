@@ -10,10 +10,10 @@ mods.alchemistry.Util.get`Util.get`
 
 - **String Name** Element Name
 
-## Syntax
+## Síntesis
 
 ```zenscript
-mods.alchemistry.mods.alchemistry.Util.get(String name);
+mods.alchemistry.Atomizermods.alchemistry.Util.get(String name);
 
 val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
 val carbon = mods.alchemistry.Util.get("carbon");Util.get("strontium_carbonate");
