@@ -2,7 +2,7 @@
 
 An IMaterialDefinition object represents a material definition in the game. A Material Definition is needed if you want to create a new block.
 
-# Importing the package
+# Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockMaterial;`
@@ -14,17 +14,17 @@ You can get such an object using the [Block Material Bracket Handler](/Mods/Cont
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type                                                            |
+| ZenGetter       | Méthode Zen         | Type de retour                                                         |
 | --------------- | ------------------- | ---------------------------------------------------------------------- |
-| blocksLight     | blocksLight()       | bool                                                                   |
-| blocksMovement  | blocksMovement()    | bool                                                                   |
-| canBurn         | getCanBurn()        | bool                                                                   |
+| blocksLight     | blocksLight()       | booléen                                                                |
+| blocksMovement  | blocksMovement()    | booléen                                                                |
+| canBurn         | getCanBurn()        | booléen                                                                |
 | mobilityFlag    | getMobilityFlag()   | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) |
-| liquid          | isLiquid()          | bool                                                                   |
-| opaque          | isOpaque()          | bool                                                                   |
-| replaceable     | isReplaceable()     | bool                                                                   |
-| solid           | isSolid()           | bool                                                                   |
-| toolNotRequired | isToolNotRequired() | bool                                                                   |
+| liquid          | isLiquid()          | booléen                                                                |
+| opaque          | isOpaque()          | booléen                                                                |
+| replaceable     | isReplaceable()     | booléen                                                                |
+| solid           | isSolid()           | booléen                                                                |
+| toolNotRequired | isToolNotRequired() | booléen                                                                |
 
 ## Compare two BlockMaterials
 
