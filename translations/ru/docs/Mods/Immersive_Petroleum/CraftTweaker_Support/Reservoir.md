@@ -1,34 +1,34 @@
-# Reservoir
+# Водохранилище
 
-## registerReservoir
+## регистрРезервуар
 
-| Type            | Data Type                                    |
-| --------------- | -------------------------------------------- |
-| Name Identifier | String                                       |
-| Fluid           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Minimum Size    | Integer                                      |
-| Maximum Size    | Integer                                      |
-| Replenish Rate  | Integer                                      |
-| Weight          | Integer                                      |
+| Тип                 | Тип данных                                   |
+| ------------------- | -------------------------------------------- |
+| Идентификатор имени | String                                       |
+| Жидкость            | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Минимальный размер  | Целое                                        |
+| Максимальный размер | Целое                                        |
+| Скорость пополнения | Целое                                        |
+| Вес                 | Целое                                        |
 
-### Weight
+### Вес
 
-Weight is the Weighted Chance of a chunk containing that specific fluid reservoir. The weight is counted as in X in Total.
+Вес - Вес Веса Шанс на чанк, содержащий конкретный жидкий резервуар. Вес считается как в X в Тотале.
 
-So if you have 5 Reservoir values at: 5, 5, 6, 8, 10
+Таким образом, если у вас есть 5 значений резервуара в: 5, 5, 6, 8, 10
 
-Then each respective entry will have a weighted chance of:
+Тогда каждая соответствующая запись будет иметь взвешенный шанс:
 
-    5  in 34
-    5  in 34
-    6  in 34
-    8  in 34
-    10 in 34
+    5 в 34
+    5 в 34
+    6 в 34
+    8 в 34
+    10 в 34
     
 
-### Code Example:
+### Пример кода:
 
 ```zenscript
-mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
-mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
+mods.immersivepetroleum.Reservoir.registerReservoir(название резервуара, жидкость ILiquidStack, int minSize, int replenishRate, внутренний вес);
+mods.immersivepetroleum.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
 ```
