@@ -1,16 +1,16 @@
 # Tanning Rack
 
-## Package
+## Paquete
 `import mods.stone_age.TanningRackManager;`
 
 ## Metodos
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
 - **String group** Recipe group
 
-## Addition
+## Adicional
 
 ```zenscript
 <recipetype:stone_age:tanning_rack>.addRecipe(String name, IItemStack output, IIngredient input, IIngredient tool, @OptionalString String group)
