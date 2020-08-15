@@ -19,7 +19,7 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled.
 - `event.process()` sets the event as processed.
