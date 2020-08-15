@@ -1,14 +1,14 @@
 # MinecartInteract
 
-MinecartInteractEvent is fired whenever a player begins to interact with a minecart. The event is **cancelable**, and doing so will prevent the container from being opened.
+MinecartInteractEvent viene sparato ogni volta che un giocatore inizia a interagire con un minecart. L'evento è **annullabile**e così facendo impedirà l'apertura del contenitore.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.MinecartInteractEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. inecartInteractEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-MinecartInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+MinecartInteract Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getters/setters pure:
 
 - [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,8 +16,8 @@ MinecartInteract Events implement the following interfaces and are able to call 
 
 ## ZenGetters
 
-| ZenGetter  | Tipo                                     |
-| ---------- | ---------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `elemento` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`     | Stringa                                  |
+| ZenGetter   | Tipo                                     |
+| ----------- | ---------------------------------------- |
+| `giocatore` | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `elemento`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `mano`      | Stringa                                  |
