@@ -4,23 +4,23 @@ This event is fired to determine the visibility of a player, i.e., whether or no
 
 While this can be used to increase the visibility range (if it were decreased by Minecraft or another mod), it cannot be increased above its maximum value (the standard target distance).
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerVisibilityEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 PlayerVisibilityEvent Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 
 ## ZenGetters/ZenSetters
-The following information can be retrieved/set during the event:
+以下信息可以在事件中检索/设置：
 
-| ZenGetter    | ZenSetter          | Type      |
+| ZenGetter    | ZenSetter          | 类型        |
 | ------------ | ------------------ | --------- |
-| `visibility` |                    | double    |
+| `visibility` |                    | 双精度       |
 |              | `modifyVisibility` | See note. |
 
 ## Note
