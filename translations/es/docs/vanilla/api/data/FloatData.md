@@ -1,4 +1,4 @@
-# FloatData
+# Datos flotantes
 
 
 
@@ -10,17 +10,17 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.data.FloatData
 ```
 
-## Implemented Interfaces
-FloatData implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
+## Interfaces implementadas
+FloatData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [datos de crafttweaker.api.infumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.data.FloatData(internal as float);
+nuevo crafttweaker.api.data.FloatData(interno como flotante);
 ```
-| Parámetro | Tipo     | Descripción             |
-| --------- | -------- | ----------------------- |
-| interno   | flotante | No description provided |
+| Parámetro | Tipo     | Descripción                   |
+| --------- | -------- | ----------------------------- |
+| interno   | flotante | No se proporcionó descripción |
 
 
 
