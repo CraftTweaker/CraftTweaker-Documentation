@@ -1,4 +1,4 @@
-# MCPotionEffectInstance
+# MCPotionEffect实例
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -9,10 +9,10 @@ crafttweaker.api.potion.MCPotionEffectInstance
 ```
 
 ## 方法
-### addCurativeItem
+### 添加治疗项目
 
 ```zenscript
-myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemStack);
+myMCPotionEffectInstance.addCurativeItem(stack as craftweeper.api.IItemStack);
 ```
 
 | 参数    | 类型                                                                | 描述                      |
@@ -20,22 +20,22 @@ myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemSta
 | 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### combine
+### 合并
 
 返回为布尔值
 
 ```zenscript
-myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCPotionEffectInstance.combine(效果为 craftbiner.api.potion.MCPotionEffectInstance)；
 ```
 
-| 参数     | 类型                                                                                            | 说明                      |
-| ------ | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数 | 类型                                                                                            | 说明                      |
+| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| 效果 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
-### getCurativeItems
+### 获取治疗项目
 
-Returns List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)>
+返回列表<[craftbiner.api.item.IItemStack](/vanilla/api/items/IItemStack)>
 
 ```zenscript
 myMCPotionEffectInstance.getCurativeItems();
@@ -46,7 +46,7 @@ myMCPotionEffectInstance.getCurativeItems();
 返回为布尔值
 
 ```zenscript
-myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
+myMCPotionEffectInstance.isCurativeItem(stack as craftminstrer.api.item.IItemStack)；
 ```
 
 | 参数    | 类型                                                                | 描述                      |
@@ -54,10 +54,10 @@ myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStac
 | 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### setCurativeItems
+### 设置治疗项目
 
 ```zenscript
-myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCPotionEffectInstance.setCurativeItems(items as craftbiner.api.IItemStack[]);
 ```
 
 | 参数 | 类型                                                                  | 描述                      |
@@ -68,13 +68,13 @@ myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemSt
 
 ## 参数
 
-| 名称            | 类型                                                                            | 可获得  | 可设置   |
-| ------------- | ----------------------------------------------------------------------------- | ---- | ----- |
-| ambient       | boolean                                                                       | true | false |
-| 放大器           | 整数                                                                            | true | false |
-| 持续时间          | 整数                                                                            | true | false |
-| effectName    | 字符串[string]                                                                   | true | false |
-| 药水            | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false |
-| showIcon      | boolean                                                                       | true | false |
-| showParticles | boolean                                                                       | true | false |
+| 名称         | 类型                                                                    | 可获得  | 可设置   |
+| ---------- | --------------------------------------------------------------------- | ---- | ----- |
+| 环境         | boolean                                                               | true | false |
+| 放大器        | 整数                                                                    | true | false |
+| 持续时间       | 整数                                                                    | true | false |
+| effectName | 字符串[string]                                                           | true | false |
+| 药水         | [制作效果.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true | false |
+| 显示图标       | boolean                                                               | true | false |
+| 显示粒子       | boolean                                                               | true | false |
 
