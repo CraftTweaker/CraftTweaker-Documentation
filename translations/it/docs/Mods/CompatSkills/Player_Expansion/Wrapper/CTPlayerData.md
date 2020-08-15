@@ -1,18 +1,18 @@
 # CTPlayerData
 
-## Methods
+## Metodi
 
 ### getHasAnyAbilities()
 
-    Example:
-    event.player.skillData.getHasAnyAbilities;
+    Esempio:
+    event.player.skillData.getHasAnyAbility;
     
-    This returns a Boolean based on if the player has any abilties which are a type of Unlockables.
+    Questo restituisce un Booleano basato su se il giocatore ha abilità che sono un tipo di Sbloccabili.
     
 
-### getSkillInfo(CTSkill skill)
+### getSkillInfo(Abilità Skill)
 
-    Example:
+    Esempio:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>);
     
-    This returns the PlayerSkillInfo for that specific skill!
+    Questo restituisce il PlayerSkillInfo per quella specifica abilità!
