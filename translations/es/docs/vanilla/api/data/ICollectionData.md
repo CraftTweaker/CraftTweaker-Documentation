@@ -2,10 +2,10 @@
 
 The ICollection data is used to represent a collection of [crafttweaker.api.data.IData](/vanilla/api/data/IData) like a List<IData>
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.data.ICollectionData
 ```
@@ -14,17 +14,17 @@ crafttweaker.api.data.ICollectionData
 ICollectionData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Methods
-### add
+## Métodos
+### añadir
 
 ```zenscript
 new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
+| Parámetro | Tipo                                                   | Descripción                  |
 | --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -33,10 +33,10 @@ new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
+| Parámetro | Tipo                                                   | Descripción                                                          |
 | --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| índice    | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### asList
@@ -94,9 +94,9 @@ new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
+| Parámetro | Tipo                                                   | Descripción                      |
 | --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -124,9 +124,9 @@ new ListData(["Hello", "World"]).get(index as int);
 new ListData(["Hello", "World"]).get(0);
 ```
 
-| Parameter | Type | Description         |
+| Parámetro | Tipo | Descripción         |
 | --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| índice    | int  | The index (0-based) |
 
 
 ### getId
@@ -155,7 +155,7 @@ Returns String
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+### eliminar
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -166,9 +166,9 @@ new ListData(["Hello", "World"]).remove(index as int);
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Description         |
+| Parámetro | Tipo | Descripción         |
 | --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| índice    | int  | The index (0-based) |
 
 
 ### set
@@ -182,16 +182,16 @@ new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
+| Parámetro | Tipo                                                   | Descripción                |
 | --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| índice    | int                                                    | The index to set (0-based) |
+| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Propiedades
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Nombre | Tipo | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| tamaño | int  | verdad     | falso      |
 
