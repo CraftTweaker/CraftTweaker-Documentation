@@ -10,23 +10,23 @@ crafttweaker.api.world.MCBiomeSpawnEntry
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, weight as int, minGroupCount as int, maxGroupCount as int);
+new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, weight as int, maxGroupCount as int);
 ```
-| パラメータ         | タイプ                                                                        | 説明                      |
-| ------------- | -------------------------------------------------------------------------- | ----------------------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | No description provided |
-| weight        | int                                                                        | No description provided |
-| minGroupCount | int                                                                        | No description provided |
-| maxGroupCount | int                                                                        | No description provided |
+| パラメータ         | タイプ                                                                        | 説明           |
+| ------------- | -------------------------------------------------------------------------- | ------------ |
+| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | 説明が提供されていません |
+| 重量            | int                                                                        | 説明が提供されていません |
+| minGroupCount | int                                                                        | 説明が提供されていません |
+| maxGroupCount | int                                                                        | 説明が提供されていません |
 
 
 
 ## プロパティー
 
-| 名称            | タイプ                                                                        | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
-| maxGroupCount | int                                                                        | true       | false      |
-| minGroupCount | int                                                                        | true       | false      |
-| weight        | int                                                                        | true       | false      |
+| 名称            | タイプ                                                                        | ゲッターあり | セッターあり |
+| ------------- | -------------------------------------------------------------------------- | ------ | ------ |
+| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true   | false  |
+| maxGroupCount | int                                                                        | true   | false  |
+| minGroupCount | int                                                                        | true   | false  |
+| 重量            | int                                                                        | true   | false  |
 
