@@ -1,19 +1,19 @@
-# Level-Lock Support
+# Wsparcie dla blokady poziomu
 
 ## PSA:
 
-This feature works off cancelling the Level-Up event in Reskillable. Some mods that call the levelUp(); method directly will bypass the locks! This includes mods like Scavenge: Reskillable and TogetherForever!
+Ta funkcja działa wyłączając wydarzenie Poziom-Up w Reskillable Niektóre modyfikacje, które wywołują poziom.Up(); metoda bezpośrednio omijają blokady! Zawiera mody takie jak Scavenge: Reskillable and TogetherForever!
 
-## Level-Lock Support
+## Wsparcie dla blokady poziomu
 
-Level-Lock Support is a weird feature that came from a joke that Skysom made in a DM one day. This feature is entirely for those sadistic enough to implement it! This gates the progression to the set level not the "going from" that level!
+Wsparcie Level-Lock jest dziwną funkcją pochodzącą z żartu stworzonego przez Skysom pewnego dnia. Ta funkcja jest całkowicie przeznaczona dla tych sadistycznych na tyle aby ją wdrożyć! Bramuje przejście do ustawionego poziomu, a nie od tego poziomu!
 
 CTSkill = [Skill-Bracket Handler](/Mods/CompatSkills/Supports/Reskillable/BracketHandlers/)
 
-### Syntax:
+### Składnia:
 
-    // Blank Example:
-    mods.compatskills.SkillLocks.addLevelLock(CTSkill skill, int level, String... defaultRequirements);
+    // Pusty przykład:
+    mods.compatskills.SkillLocks.addLevelLock(CTSkill, int level, String... domyślne wymagania);
     
-    // Test Example:
+    // Test Przykład:
     mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:agility>, 11, "reskillable:gathering", 3, "adv|minecraft:husbandry/plant_seed");
