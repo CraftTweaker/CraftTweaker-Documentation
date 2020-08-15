@@ -4,14 +4,14 @@
 ```zenscirpt
 mods.exnihilocreatio.Crook
 ```
-## Methods
+## Méthodes
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
 - **Float chance** chance between 0-1.
 - **Float fortune chance** chance between 0-1.
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
