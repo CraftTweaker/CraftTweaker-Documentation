@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Pyre;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
@@ -35,7 +35,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Pyre;
@@ -52,7 +52,7 @@ Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, 
 Pyre.addRecipe("stalicripe", <roots:stalicripe>*64, [<minecraft:diamond_block>, <minecraft:gold_block>, <minecraft:iron_block>, <minecraft:emerald_block>, <minecraft:deadbush>], 30);
 ```
 
-### Notes
+### Примечания
 
 It's extremely important when replacing recipes to ensure that the recipe name is the same to make certain that Patchouli correctly reports the correct recipe for crafting base items.
 
