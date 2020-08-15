@@ -22,7 +22,7 @@ Vous pouvez définir ces propriétés
 
 | Méthode Zen                       | Paramètre                                                        |
 | --------------------------------- | ---------------------------------------------------------------- |
-| nomdeset(nom)                     | string name                                                      |
+| nomdeset(nom)                     | nom de la chaîne                                                 |
 | setColor(color)                   | int couleur                                                      |
 | setColor(color)                   | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
 | format@@0 setHasEffect(hasEffect) | booléen hasEffect                                                |
