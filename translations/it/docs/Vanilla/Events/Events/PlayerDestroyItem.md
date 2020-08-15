@@ -18,8 +18,8 @@ PlayerDestroyItem Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter      | Return Type                              |
+| ZenGetter      | Tipo Di Reso                             |
 | -------------- | ---------------------------------------- |
 | `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`         | string                                   |
+| `hand`         | stringa                                  |
