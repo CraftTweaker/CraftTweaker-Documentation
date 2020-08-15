@@ -1,27 +1,27 @@
-# Commands
+# Comandos
 
-You can use this class to send a command, you cannot use this class to create new commands! Look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/) to add new commands. You can also use a [ICommandManager](/Vanilla/Commands/ICommandManager/).
+Puedes usar esta clase para enviar un comando, ¡no puedes usar esta clase para crear nuevos comandos! Mira [CommandEvent](/Vanilla/Events/Events/CommandEvent/) para añadir nuevos comandos. También puede utilizar un [ICommandManager](/Vanilla/Commands/ICommandManager/).
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Commands;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.Commands;`
 
-## Calling a command
+## Llamando a un comando
 
-This is the only thing you can do with the Commands package.
+Esto es lo único que puede hacer con el paquete Commands.
 
 ```zenscript
 call(String command, IPlayer player, IWorld world)
-call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
+call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermiss)
 ```
 
-Parameters:
+Parámetros:
 
-- String command → The command to be executed
-- [IPlayer](/Vanilla/Players/IPlayer/) player → The Player executing the command
-- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → The world the command is executed in
-- boolean logToChat → Should the command output appear in the MC chat?
-- boolean overridePermissions should the command be executed regardless of the required permission level?
+- Comando de cadena → El comando a ejecutar
+- [IPlayer](/Vanilla/Players/IPlayer/) jugador → El jugador ejecutando el comando
+- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) mundo → El mundo en el que se ejecuta el comando
+- boolean logToChat → ¿Debería la salida del comando aparecer en el chat MC?
+- los permisos booleanos deben ser ejecutados independientemente del nivel de permisos requerido?
 
-The two booleans either both need to be added or omitted. If you call the command without them, they will be true.
+Los dos booleanos deben ser añadidos o omitidos. Si llama al comando sin ellos, serán ciertos.
