@@ -26,7 +26,7 @@ void changeSpell(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the item stack produced by the recipe
+  IItemStack 出力 // レシピによって生成されたアイテムスタック
 );
 ```
 
@@ -43,7 +43,7 @@ import mods.roots.Mortar;
 // the quantity of the output respectively.
 Mortar.addRecipe(<minecraft:gunpowder>, [<minecraft:flint>]);
 
-// This recipe uses five ingredients to create one bed.
+// このレシピは、1つのベッドを作るために5つの成分を使用します。
 Mortar.addRecipe(<minecraft:bed>, [<minecraft:wool>, <minecraft:wool>, <minecraft:planks>, <minecraft:planks>, <minecraft:planks>]);
 
 // This will remove all recipes that have Root's flour as an output
