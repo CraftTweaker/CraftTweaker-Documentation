@@ -1,6 +1,6 @@
 # Mortar
 
-## Addition
+## Ajouter
 
 ```zenscript
 import mods.cuisine.Mortar;
