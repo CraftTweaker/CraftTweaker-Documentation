@@ -10,15 +10,15 @@ The [Category](/Mods/Immersive_Engineering/Variables/Categories/) String is quit
 
 You can call the Blueprint package using `mods.immersiveengineering.Blueprint`.
 
-## Add Recipe
+## Ajouter une recette
 
-| Required | Type     | Data Type                                                            |
-| -------- | -------- | -------------------------------------------------------------------- |
-| Required | Category | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
-| Required | Output   | [IItemstack](/Vanilla/Items/IItemStack/)                             |
-| Required | Inputs   | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                  |
+| Required | Type de texte | Type de données                                                      |
+| -------- | ------------- | -------------------------------------------------------------------- |
+| Required | Category      | String [Category](/Mods/Immersive_Engineering/Variables/Categories/) |
+| Required | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)                             |
+| Required | Inputs        | [Ingrédient](/Vanilla/Variable_Types/IIngredient/)                   |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -33,11 +33,11 @@ mods.immersiveengineering.Blueprint.addRecipe("Banana Pancakes", <minecraft:diam
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Exemple:
 
 ```zenscript
 //Example:
