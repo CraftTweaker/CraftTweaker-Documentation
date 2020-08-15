@@ -31,11 +31,11 @@ You can call and set all these properties using the normal ZenGetters and ZenSet
 Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
 Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
+| Nom de la propriété | Type de texte                                                                                           | Required | Default Value | Description/Notes       |
+| ------------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
+| unlocalizedName     | chaîne de caractères                                                                                    | YES      |               | The Creative Tab's name |
+| iconStack           | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
+| iconStackSupplier   | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
 
 ## Registering the creative tab
 
@@ -47,7 +47,7 @@ After you have called this function, you cannot un-register the tab or change an
 tab.register();
 ```
 
-## Example Script
+## Exemple de script
 
 ```zenscript
 #loader contenttweaker
