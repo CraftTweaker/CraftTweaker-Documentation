@@ -1,6 +1,6 @@
 # Melter
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.melter`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.melter.addRecipe([itemInput, fluidOutput, @Optional double tim
 ```zenscript
 mods.nuclearcraft.melter.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.melter.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.melter.removeAllRecipes();
+mods.nuclearcraft.melter.removeAllRicette();
 ```
