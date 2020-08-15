@@ -71,7 +71,7 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-Parameters:
+Parameter:
 
 - `<operation>`: `and` or `or`
 - `<material>`: `iron`, `nether_brick`, or `gold`
