@@ -1,6 +1,6 @@
-# Heat Exchanger
+# Wärmetauscher
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.heat_exchanger`
 
 ## Rezepte hinzufügen
