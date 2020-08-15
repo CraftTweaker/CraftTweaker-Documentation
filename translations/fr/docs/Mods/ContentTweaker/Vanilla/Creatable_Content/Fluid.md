@@ -17,7 +17,7 @@ mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor c
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Fluid;`
 
-## ZenProperties
+## Propriétés Zen
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
@@ -32,23 +32,23 @@ fluid.getDensity();
 fluid.setDensity(1000);
 ```
 
-| Property Name   | Type                                                                                     | Required | Default Value                    | Description/Notes                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
-| unlocalizedName | string                                                                                   | Yes      |                                  | Name, should be all lowercase                                                        |
-| density         | int                                                                                      | No       | 1000                             | How fast you can walk in the fluid                                                   |
-| gaseous         | boolean                                                                                  | No       | false                            | Is the fluid gaseous (flows upwards instead of downwards)?                           |
-| luminosity      | int                                                                                      | No       | 0                                | The light-level emitted by the fluid                                                 |
-| temperature     | int                                                                                      | No       | 300                              | The Fluid's temperature                                                              |
-| color           | int                                                                                      | Yes      |                                  | The Fluid's color-code                                                               |
-| colorize        | boolean                                                                                  | No       | true                             | Is the fluid's color-code applied?                                                   |
-| rarity          | string                                                                                   | No       | COMMON                           | How rare a fluid is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
-| viscosity       | int                                                                                      | No       | 1000                             | How quickly the fluid spreads                                                        |
-| fillSound       | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_FILL               | The sound played when the fluid is picked up with a Bucket                           |
-| emptySound      | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_EMPTY              | The sound played when the fluid is placed                                            |
-| vaporize        | boolean                                                                                  | No       | false                            | Does vaporize when placed in the Nether?                                             |
-| stillLocation   | string                                                                                   | No       | contenttweaker:fluids/fluid      | The Location where to find the texture for the still fluid                           |
-| flowingLocation | string                                                                                   | No       | contenttweaker:fluids/fluid_flow | The Location where to find the texture for the flowing fluid                         |
-| material        | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)     | No       | WATER                            | The Material the fluid is made of                                                    |
+| Nom de la propriété | Type de texte                                                                            | Required | Default Value                    | Description/Notes                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
+| unlocalizedName     | chaîne de caractères                                                                     | Yes      |                                  | Name, should be all lowercase                                                        |
+| density             | Indice                                                                                   | No       | 1000                             | How fast you can walk in the fluid                                                   |
+| gaseous             | boolean                                                                                  | No       | Faux                             | Is the fluid gaseous (flows upwards instead of downwards)?                           |
+| luminosity          | Indice                                                                                   | No       | 0                                | The light-level emitted by the fluid                                                 |
+| temperature         | Indice                                                                                   | No       | 300                              | The Fluid's temperature                                                              |
+| color               | Indice                                                                                   | Yes      |                                  | The Fluid's color-code                                                               |
+| colorize            | boolean                                                                                  | No       | vrai                             | Is the fluid's color-code applied?                                                   |
+| rarity              | chaîne de caractères                                                                     | No       | COMMON                           | How rare a fluid is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
+| viscosity           | Indice                                                                                   | No       | 1000                             | How quickly the fluid spreads                                                        |
+| fillSound           | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_FILL               | The sound played when the fluid is picked up with a Bucket                           |
+| emptySound          | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_EMPTY              | The sound played when the fluid is placed                                            |
+| vaporize            | boolean                                                                                  | No       | Faux                             | Does vaporize when placed in the Nether?                                             |
+| stillLocation       | chaîne de caractères                                                                     | No       | contenttweaker:fluids/fluid      | The Location where to find the texture for the still fluid                           |
+| flowingLocation     | chaîne de caractères                                                                     | No       | contenttweaker:fluids/fluid_flow | The Location where to find the texture for the flowing fluid                         |
+| material            | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)     | No       | WATER                            | The Material the fluid is made of                                                    |
 
 ## Registering the fluid
 
@@ -60,7 +60,7 @@ After you have called this function, you cannot un-register the fluid or change 
 fluid.register();
 ```
 
-## Example Script
+## Exemple de script
 
 ```zenscript
 #loader contenttweaker
