@@ -25,12 +25,12 @@ myMachine.addRecipe(inputs, outputs, energy, time, probabilities);
 
 This method uses the following parameters:
 
-| Name          | Type                                                         |
+| 名称            | タイプ                                                          |
 | ------------- | ------------------------------------------------------------ |
 | inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | energy        | int                                                          |
-| time          | int                                                          |
+| 時間            | int                                                          |
 | probabilities | float[string\]                                              |
 
 ### Using only the outputs map
@@ -44,12 +44,12 @@ myMachine.addRecipe(inputs, outputs, energy, time);
 
 This method uses the following parameters:
 
-| Name    | Type                                                         |
+| 名称      | タイプ                                                          |
 | ------- | ------------------------------------------------------------ |
 | inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs | Object[string\]                                             |
 | energy  | int                                                          |
-| time    | int                                                          |
+| 時間      | int                                                          |
 
 ## Remove recipes
 
@@ -63,7 +63,7 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
+| 名称     | タイプ                                                          |
 | ------ | ------------------------------------------------------------ |
 | inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
@@ -73,7 +73,7 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
+| 名称      | タイプ                                                     |
 | ------- | ------------------------------------------------------- |
 | items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
 | liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
