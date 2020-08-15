@@ -7,7 +7,7 @@
 ## パッケージ
 `mods.initialinventory.InvHandler`
 
-## Adding starting items
+## 開始アイテムを追加中
 
 これにより、プレイヤーがワールドに参加した際に、プレイヤーのインベントリにアイテムが追加されます。
 
@@ -38,7 +38,7 @@ Type `IItemStack`
 
 プレイヤーが参加した際に、プレイヤーに与えられるアイテムです。
 
-Param: `index`
+パラメータ: `index`
 
 Type: `int`
 
@@ -52,9 +52,9 @@ Type: `int`
 ## 例
 
 ```zenscript
-//mods.initialinventory.InvHandler.addStartingItem(String key, IItemStack item, Optional int index);
-mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:apple>);
-mods.initialinventory.InvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
+//mods.initialinvHandler.addStartingItem(String key, IItemStack item, Optional int index);
+mods.initialinvHandler.addStartingItem("apples", <item:minecraft:apple>);
+mods.initialinvHandler.addStartingItem("apples", <item:minecraft:golden_apple>, 5);
 ```
 
 
