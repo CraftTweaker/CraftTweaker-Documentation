@@ -1,6 +1,6 @@
 # Blast Furnace
 
-## Package
+## Paket
 
 `import mods.ic2.BlastFurnace;`
 
@@ -19,6 +19,6 @@ mods.ic2.BlastFurnace.addRecipe(IItemStack[] outputs, IIngredient input, int tot
 mods.ic2.BlastFurnace.addRecipe([<minecraft:diamond>, <minecraft:emerald>], <minecraft:dirt> * 64, 1, 1000);
 ```
 
-## Removal
+## Entfernen
 
 For now simply remove the corresponding line in `config/ic2/blast_furnace.ini`.
