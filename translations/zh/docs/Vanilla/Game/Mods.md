@@ -19,39 +19,39 @@ if(loadedMods.contains("mcp")){
 }
 ```
 
-## Retrieve a specific mod
+## 检索特定模组
 
-You can retrieve a specific mod as IMod as long as you have it's ID
+只要你有它的ID，你就可以从 IMod 检索到特定的模组
 
 ```zenscript
-//retrieves the minecraftCoderPack mod
+//检索minecraftCoderPack模组
 val mod = loadedMods["mcp"];
 ```
 
-## Iterate through the modList
+## 通过 modList
 
-You can iterate through the list of loaded mods like this:
+您可以通过加载的模组列表进行迭代，比如：
 
 ```zenscript
-//prints all registred item definitions, not recommended in larger packs!
-//the mod variable will be an IMod type
-for mod in loadedMods {
-    print(mod.name ~ ":");
-    for item in mod.items {
-        print("\t\t" ~ item.displayName);
+//打印所有重计项目定义，不推荐在较大的包中！
+//mod 变量将是loadedModMod中的
+的IMod 类型。
+    打印(mod)。 为 ~":";
+    for item in mod. 泰姆族居民
+        print("\t\t" ~ 项。 isplayname;
     }
 }
 ```
 
 # IMod
 
-The IMod Interface provides you with some general information on a specific mod.  
-If needed, it can be imported using `import crafttweaker.mods.IMod;`
+IMod 界面为您提供了一些特定模组的一般信息。  
+如果需要，它可以用 `导入craftmilower.mods.IMod；`
 
-| Zengetter   | 功能                                 | 返回值类型                                      | Usage             |
-| ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
-| id          | Returns the mod's id               | string                                     | `mod.id`          |
-| name        | Returns the mod's internal name    | string                                     | `mod.name`        |
-| version     | Returns the mod's version          | string                                     | `mod.version`     |
-| description | Returns the mod description        | string                                     | `mod.description` |
-| items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |
+| Zengetter | 功能           | 返回值类型                                      | 用法          |
+| --------- | ------------ | ------------------------------------------ | ----------- |
+| id        | 返回模组的id      | 字符串                                        | `mod.id`    |
+| 名称        | 返回模组的内部名称    | string                                     | `mod.name`  |
+| 版本        | 返回模组的版本      | 字符串                                        | `版本`        |
+| 描述        | 返回模组描述       | string                                     | `描述`        |
+| 项目        | 返回由模组添加的所有项目 | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items` |
