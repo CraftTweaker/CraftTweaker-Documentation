@@ -2,10 +2,10 @@
 
 The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.item.ItemBuilder
 ```
@@ -20,7 +20,7 @@ Creates a new ItemBuilder. Remember that this will _not_ create a new block in t
 new mods.contenttweaker.item.ItemBuilder();
 ```
 
-## Methods
+## Métodos
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -30,9 +30,9 @@ new ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
+| Parámetro        | Tipo   | Descripción                          |
 | ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| resourceLocation | Cadena | The resource path to give this block |
 
 
 ### withItemGroup
@@ -48,7 +48,7 @@ new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGrou
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| Parameter | Type                                                                              | Description                               |
+| Parámetro | Tipo                                                                              | Descripción                               |
 | --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
 | itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
 
@@ -66,7 +66,7 @@ new ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Parameter | Type | Description            |
+| Parámetro | Tipo | Descripción            |
 | --------- | ---- | ---------------------- |
 | maxDamage | int  | The maximum stack size |
 
@@ -84,7 +84,7 @@ new ItemBuilder().withMaxStackSize(maxStackSize as int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| Parameter    | Type | Description            |
+| Parámetro    | Tipo | Descripción            |
 | ------------ | ---- | ---------------------- |
 | maxStackSize | int  | The maximum stack size |
 
@@ -112,9 +112,9 @@ new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| Parameter | Type   | Description |
+| Parámetro | Tipo   | Descripción |
 | --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| rareza    | Cadena | The rarity  |
 
 
 ### withType
