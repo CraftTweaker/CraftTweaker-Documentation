@@ -3,7 +3,7 @@
 A Position in Minecraft consists of 3 values: x, y and z.  
 A Position3f Object stores a position using those three values.
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to [import](/AdvancedFunctions/Import/) the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.util.Position3f;`
@@ -26,9 +26,9 @@ crafttweaker.util.Position3f.create(float x, float y, float z);
 
 The First method allows you to create a position at the given coordinates.
 
-## ZenGetters and ZenSetters
+## ZenGetters i ZenSetters
 
-| ZenGetter | ZenSetter | Description                    |
+| ZenGetter | ZenSetter | Opis                           |
 | --------- | --------- | ------------------------------ |
 | x         | x         | Returns the position's x value |
 | y         | y         | Returns the position's y value |
