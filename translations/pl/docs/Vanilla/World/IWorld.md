@@ -2,7 +2,7 @@
 
 The IWorld object contains information on a Dimension within the game.
 
-## Importing the class
+## Importowanie klasy
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IWorld`
@@ -20,24 +20,24 @@ Note that this method should only be called inside functions that are meant to b
 crafttweaker.world.IWorld.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethods bez parametrów i ZenGetters
 
-| ZenMethod          | ZenGetter     | Return type                                      | Description                                                                                                                                                                             |
-| ------------------ | ------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                          | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                          | Returns true if it is currently raining.                                                                                                                                                |
-| isThundering()     | thundering    | boolean                                          | Returns true if it is currently thundering.                                                                                                                                             |
-| getMoonPhase()     | moonPhase     | int                                              | Returns the current moon phase.                                                                                                                                                         |
-| isDayTime()        | dayTime       | boolean                                          | Checks if it is daytime.                                                                                                                                                                |
-| getWorldTime()     | time          | long                                             | Returns the world's time.                                                                                                                                                               |
-| getDimension()     | dimension     | int                                              | Returns the world's dimension.                                                                                                                                                          |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                      |
-| getDimensionType() | dimensionType | String                                           | Returns the dimension's type name.                                                                                                                                                      |
-| getWorldType()     | worldType     | String                                           | Returns the world's type name.                                                                                                                                                          |
-| getWorldInfo()     | worldInfo     | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                   |
-| getProvider()      | provider      | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                      |
+| Metoda ZenMethod   | ZenGetter           | Typ zwrotu                                       | Opis                                                                                                                                                                                                                |
+| ------------------ | ------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isRemote()         | zdalny              | boolean                                          | Prawdą jest, że świat jest „niewolnikiem” klientem; zmiany nie zostaną zapisane ani propagowane z tego świata. Na przykład światy serwerów mają ten zestaw do fałszowania, światy klientów mają ten zestaw do true. |
+| isRaining()        | deszcz              | boolean                                          | Returns true if it is currently raining.                                                                                                                                                                            |
+| isThundering()     | kruszący            | boolean                                          | Returns true if it is currently thundering.                                                                                                                                                                         |
+| getMoonPhase()     | faza księżyca       | odcień                                           | Returns the current moon phase.                                                                                                                                                                                     |
+| isDayTime()        | dayTime             | boolean                                          | Checks if it is daytime.                                                                                                                                                                                            |
+| getWorldTime()     | czas                | długie                                           | Returns the world's time.                                                                                                                                                                                           |
+| getDimension()     | wymiary             | odcień                                           | Returns the world's dimension.                                                                                                                                                                                      |
+| isSurfaceWorld()   | powierzchnia świata | boolean                                          | Returns whether you are in a surface world or not.                                                                                                                                                                  |
+| getDimensionType() | wymiarowy Typ       | Ciąg znaków                                      | Returns the dimension's type name.                                                                                                                                                                                  |
+| getWorldType()     | worldType           | Ciąg znaków                                      | Returns the world's type name.                                                                                                                                                                                      |
+| getWorldInfo()     | worldInfo           | [IWorldInfo](/Vanilla/World/IWorldInfo/)         | Returns the world's information. Can be used to retrieve even more info on the world.                                                                                                                               |
+| getProvider()      | provider            | [IWorldProvider](/Vanilla/World/IWorldProvider/) | Returns the world's provider. Can be used to retrieve even more info on the world.                                                                                                                                  |
 
-## ZenMethods with parameters
+## Metody ZenMethods z parametrami
 
 ### Get Biome at specific Position
 
