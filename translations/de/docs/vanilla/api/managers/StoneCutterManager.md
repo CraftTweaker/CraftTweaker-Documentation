@@ -27,7 +27,7 @@ stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_
 | Parameter | Type                                                   | Beschreibung                    |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
@@ -42,11 +42,11 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 | Parameter  | Type                                                                | Beschreibung       |
 | ---------- | ------------------------------------------------------------------- | ------------------ |
 | recipeName | String                                                              | name of the recipe |
-| output     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output IItemStack  |
+| ausgeben   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output IItemStack  |
 | input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input IIngredient  |
 
 
-### removeAll
+### alle entfernen
 
 Remove all recipes in this registry
 
@@ -63,9 +63,9 @@ stoneCutter.removeByModid(modid as String);
 stoneCutter.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
+| Parameter | Type   | Beschreibung                   |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modo      | String | modid of the recipes to remove |
 
 
 ### removeByName
@@ -107,13 +107,13 @@ stoneCutter.removeRecipe(<item:minecraft:glass>);
 
 | Parameter | Type                                                              | Beschreibung         |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Kommandozeile | String | true       | false      |
 
