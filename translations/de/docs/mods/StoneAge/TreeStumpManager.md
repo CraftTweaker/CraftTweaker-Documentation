@@ -1,13 +1,13 @@
 # Tree Stump
 
-## Package
+## Paket
 `import mods.stone_age.TreeStumpManager;`
 
 ## Methoden
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe**
 - **int chopTimes** Chop times
 - **String group** Recipe group
 
