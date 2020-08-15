@@ -1,53 +1,53 @@
-# Basic variable functionality
+# Basisvariablen-Funktionalität
 
-The most basic variable types of ZenScript are Strings, Integers and booleans.
+Die grundlegendsten Variablentypen von ZenScript sind Strings, Integers und Booleans.
 
-## Most single types
+## Meiste einzelne Typen
 
-`true == true` You can check if two values are the same.  
-`"Hello" != "World"` You can also check if two values are unequal.
+`true == true` Sie können überprüfen, ob zwei Werte gleich sind.  
+`"Hallo" != "Welt"` Sie können auch überprüfen, ob zwei Werte ungleich sind.
 
-## Strings
+## Zeichenketten
 
-Strings provide some functionality
+Zeichenketten bieten einige Funktionen
 
-`"Hello".length` Returns the string's length as int.  
-`"Hello"[1]` Returns the character at the string's given index as another string.  
-`"Hello" in "Hell"` checks if the string before `in` contains the string after it as boolean. You can replace the `in` with `has` if you like that better.  
-`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `string += "assignAdd"` you can also use the assignAdd/assignConcatenate operators.
+`"Hallo".length` Gibt die Länge der Zeichenkette als int.  
+`"Hallo"[1]` Gibt das Zeichen am angegebenen Index als einen anderen String zurück.  
+`"Hallo" in "Hell"` prüft, ob der String vor `in` den String als Boolean enthält. You can replace the `in` with `has` if you like that better.  
+`"Hel" ~ "lo " + "World"` You also can add/concatenate strings. `String += "assignAdd"` können Sie auch die assignAdd/assignConcatenate-Operatoren verwenden.
 
-Aside from these, all methods that are available to [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) and do not use the `char` type are also available to ZenScript strings!  
-This includes:
+Abgesehen von diesen alle Methoden, die [Java Strings](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html) zur Verfügung stehen und nicht das `Zeichen` Typ verwenden sind auch in ZenScript Zeichenketten verfügbar!  
+Dies beinhaltet:
 
-- toLowerCase
+- towerCase
 - toUpperCase
 - getBytes
 - hashCode
 - intern
 - isEmpty
 - toCharArray
-- trim
-- split
+- trimmen
+- geteilt
 
-## Integers
+## Ganzzahlen
 
-Integers provide some functionality
+Integers bieten einige Funktionen
 
-`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). You can also use the operatorAssign tokens  
-`0 to 10` Returns an Integer Range ranging from 0 to 10.  
-`1~10` Concatenates the Integers (returns "110").
+`+-*/%` Grundlegende mathematische Operatoren (überprüfen Sie die [Variablentypen](/Vanilla/Variable_Types/Variable_Types) Seite). Sie können auch die OperatorAssign Token  
+`0 bis 10` Gibt einen Integerbereich zwischen 0 und 10 zurück.  
+`1~10` vereint die Zahlen (gibt "110" zurück).
 
-## Booleans
+## Boolen
 
-Booleans provide some functionality
+Booleans bieten einige Funktionen
 
-`true ~ false` Concatenates the booleans (returns "truefalse").  
-`& | ^` Boolean operators (and/or/xor).
+`true ~ false` Boolesche Operatoren (gibt "truefalse") zurück.  
+`& | ^` Boolesche Operatoren (and/or/xor).
 
-## Arrays/ArrayLists
+## Arrays/ArrayListen
 
-Arrays and ArrayLists provide common functions
+Arrays und ArrayLists bieten gemeinsame Funktionen
 
-`array[1]` returns the item at the given index.  
-`array[1] = "Hello"` Sets the item at the given index.  
-`array.length` returns the arrays length
+`Array[1]` gibt das Element am angegebenen Index zurück.  
+`array[1] = "Hallo"` Setzt das Element am angegebenen Index.  
+`Array.length` gibt die Array-Länge zurück
