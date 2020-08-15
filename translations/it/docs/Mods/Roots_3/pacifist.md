@@ -27,9 +27,9 @@ void removeEntity(
 ```zenscript
 import mods.roots.Pacifist;
 
-// Adds an enderman as a pacifist creature
-Pacifist.addEntity(<entity:minecraft:enderman>);
+// Aggiunge un enderman come una creatura pacifista
+Pacifist. ddEntity(<entity:minecraft:enderman>);
 
-// Prevents cows from triggering the pacifism effect
+// Impedisce alle vacche di innescare l'effetto pacifismo
 Pacifist.removeEntity(<entity:minecraft:cow>);
 ```
