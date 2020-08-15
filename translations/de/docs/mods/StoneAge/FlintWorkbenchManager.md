@@ -1,6 +1,6 @@
 # Flint Workbench
 
-## Package
+## Paket
 `import mods.stone_age.FlintWorkbenchManager;`
 
 ## Methoden
