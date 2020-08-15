@@ -1,10 +1,10 @@
 # Sawmill
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Sawmill`
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
@@ -12,7 +12,7 @@ mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int
 mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
