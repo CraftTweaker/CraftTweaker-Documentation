@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.food.MCFood
@@ -12,14 +12,14 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| Parametr  | Typ                | Opis                    |
+| --------- | ------------------ | ----------------------- |
+| healing   | odcień             | No description provided |
+| nasycenie | zmiennoprzecinkowe | No description provided |
 
 
 
-## Methods
+## Metody
 ### addEffect
 
 Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
@@ -28,10 +28,10 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
 ```
 
-| Parameter   | Type                                                                                          | Description             |
+| Parametr    | Typ                                                                                           | Opis                    |
 | ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float                                                                                         | No description provided |
+| probability | zmiennoprzecinkowe                                                                            | No description provided |
 
 
 ### clearEffects
@@ -48,9 +48,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter | Type                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Parametr | Typ                                                                                           | Opis                    |
+| -------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| effect   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### setCanEatWhenFull
@@ -61,7 +61,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Parameter      | Type    | Description             |
+| Parametr       | Typ     | Opis                    |
 | -------------- | ------- | ----------------------- |
 | canEatWhenFull | boolean | No description provided |
 
@@ -74,7 +74,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parameter  | Type    | Description             |
+| Parametr   | Typ     | Opis                    |
 | ---------- | ------- | ----------------------- |
 | fastEating | boolean | No description provided |
 
@@ -87,9 +87,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setHealing(healing as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| healing   | int  | No description provided |
+| Parametr | Typ    | Opis                    |
+| -------- | ------ | ----------------------- |
+| healing  | odcień | No description provided |
 
 
 ### setMeat
@@ -100,9 +100,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setMeat(meat as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| meat      | boolean | No description provided |
+| Parametr | Typ     | Opis                    |
+| -------- | ------- | ----------------------- |
+| meat     | boolean | No description provided |
 
 
 ### setSaturation
@@ -113,19 +113,19 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setSaturation(saturation as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| Parametr  | Typ                | Opis                    |
+| --------- | ------------------ | ----------------------- |
+| nasycenie | zmiennoprzecinkowe | No description provided |
 
 
 
-## Properties
+## Właściwości
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| canEatWhenFull | boolean | true       | false      |
-| healing        | int     | true       | false      |
-| isFastEating   | boolean | true       | false      |
-| meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| Nazwisko       | Typ                | Has Getter | Has Setter |
+| -------------- | ------------------ | ---------- | ---------- |
+| canEatWhenFull | boolean            | prawda     | fałszywy   |
+| healing        | odcień             | prawda     | fałszywy   |
+| isFastEating   | boolean            | prawda     | fałszywy   |
+| meat           | boolean            | prawda     | fałszywy   |
+| nasycenie      | zmiennoprzecinkowe | prawda     | fałszywy   |
 
