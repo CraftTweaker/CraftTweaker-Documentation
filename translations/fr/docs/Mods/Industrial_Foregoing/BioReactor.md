@@ -3,7 +3,7 @@
 ### Importation en cours
 
 ```zenscript
-import mods.industrialforegoing.BioReactor;
+Importer mods.industrialforegoing.BioReactor;
 ```
 
 ### Ajout en cours
