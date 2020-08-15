@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Chisel;
 ```
 
-## Addition
+## Ajouter
 ```zenscript
 Chisel.addRecipe(String registryName, IItemStack input, IItemStack output);
 ```
