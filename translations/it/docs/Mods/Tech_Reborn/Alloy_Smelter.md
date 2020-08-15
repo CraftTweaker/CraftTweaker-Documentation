@@ -1,6 +1,6 @@
 # Fusione Leghe Metalliche
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.alloySmelter`
 
 ## Aggiunta Di Ricette
