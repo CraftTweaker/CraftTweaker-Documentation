@@ -18,10 +18,10 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                          |
+| ZenGetter   | Type de retour                       |
 | ----------- | ------------------------------------ |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `from`      | int                                  |
+| `from`      | Indice                               |
 | `fromWorld` | [IWorld](/Vanilla/World/IWorld/)     |
-| `to`        | int                                  |
+| `to`        | Indice                               |
 | `toWorld`   | [IWorld](/Vanilla/World/IWorld/)     |
