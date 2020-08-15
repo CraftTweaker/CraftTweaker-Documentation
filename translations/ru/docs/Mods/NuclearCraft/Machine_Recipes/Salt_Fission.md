@@ -1,6 +1,6 @@
-# Salt Fission
+# Солевое Fission
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.salt_fission`
 
 ## Добавление рецептов
