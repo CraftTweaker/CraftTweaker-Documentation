@@ -7,9 +7,9 @@ The World Info interface is used to get even more information out of an [IWorld]
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldInfo;`
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethoden ohne Parameter und ZenGetters
 
-| ZenGetter             | ZenMethod                  | Rückgabetyp |
+| ZenGetter             | ZenMethode                 | Rückgabetyp |
 | --------------------- | -------------------------- | ----------- |
 | commandsAllowed       | isCommandsAllowed()        | bool        |
 | borderCenterX         | getBorderCenterX()         | double      |
@@ -40,5 +40,5 @@ It might be required for you to import the package if you encounter any issues, 
 | hardcoreModeEnabled   | isHardcoreModeEnabled()    | bool        |
 | initialized           | isInitialized()            | bool        |
 | mapFeaturesEnabled    | isMapFeaturesEnabled()     | bool        |
-| thundering            | isThundering()             | bool        |
+| donnernd              | isThundering()             | bool        |
 | versionSnapshot       | isVersionSnapshot()        | bool        |
