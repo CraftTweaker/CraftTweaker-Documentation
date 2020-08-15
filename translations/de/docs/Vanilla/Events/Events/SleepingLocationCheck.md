@@ -1,21 +1,21 @@
 # SleepingLocationCheck
 
-This event is fired when checking if a sleeping player can continue to sleep in the current location. If has a **result** which determines the action.
+Dieses Ereignis wird abgefeuert, wenn geprüft wird, ob ein schlafender Spieler an der aktuellen Position weiterhin schlafen kann. Wenn ein **Ergebnis** hat, das die Aktion bestimmt.
 
-Result:
-- **Default**, returns the default Vanilla response as found in the Bed tile entity
-- **Allow**, allows the player to continue sleeping regardless
-- **Deny** is specifically ***ignored*** in this instance and does nothing.
+Ergebnis:
+- **Standard**, gibt die Standardantwort von Vanilla zurück, wie sie in der Bett-Tile-Entität gefunden wurde
+- **Erlaube**, erlaubt es dem Spieler zu schlafen
+- **Deny** ist speziell ***ignoriert*** in dieser Instanz und unternimmt nichts.
 
-Thus, this event allows you to keep the player sleeping, but it does not allow you to bypass the default bed logic.
+Dieses Ereignis erlaubt es Ihnen, den Spieler schlafen zu lassen, aber es erlaubt Ihnen nicht, die Standard-Bett-Logik zu umgehen.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.SleepingLocationCheck`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. leepingLocationCheck`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-SleepingLocationCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+SleepingLocationCheck Events implementieren die folgenden Schnittstellen und können alle ihre Methoden/Getters/Setter auch aufrufen:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
