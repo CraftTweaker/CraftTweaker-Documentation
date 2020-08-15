@@ -1,24 +1,24 @@
 # ZenMethod
 
-A ZenMethod is a java method that has been exposed to ZenScript.
+Un metodo ZenMethod è un metodo java che è stato esposto a ZenScript.
 
-Static Methods can be accessed using the [ZenClass' Name](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
-The ZenMethod annotation can stand alongside other [Annotations](/Dev_Area/ZenAnnotations/ZenAnnotation/), like the [ZenOperator Annotation](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
+È possibile accedere ai metodi statici utilizzando il nome [ZenClass'](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), nonstatics use `object.methodName(arguments,..);`.  
+L'annotazione ZenMethod può stare accanto ad altre [Annotazioni](/Dev_Area/ZenAnnotations/ZenAnnotation/), come la [Annotazione ZenOperator](/Dev_Area/ZenAnnotations/Annotation_ZenOperator/).
 
-## What methods can be annotated || Additional Info
+## Quali metodi possono essere annotati <unk> <unk> Ulteriori informazioni
 
-- You can annotate all methods, static and nonstatic. 
-- Annotated Methods need one additional parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). That parameter is the expanded class' instance
-- When annotating a static Method in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (for example a factory method) you will need to use [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/) instead.
+- È possibile annotare tutti i metodi, statici e nonstatici. 
+- I metodi annotati richiedono un parametro aggiuntivo quando in [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/). Questo parametro è l'istanza della classe espansa
+- Quando annotiamo un metodo statico in un [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/) (per esempio un metodo di fabbrica) dovrai invece usare [ZenMethodStatic](/Dev_Area/ZenAnnotations/Annotation_ZenMethodStatic/).
 
-## Example Class
+## Classe Di Esempio
 
 ```java
 @ZenClass(value = "crafttweaker.tests.devWikiTest")
 @ZenRegister
 public class DevWikiTest {
 
-    //statics which will be called using crafttweaker.tests.devWikiTest.methodName(arguments);
+    //statics which will be called using crafttweaker.tests.devWikiTest. ethodName(argomenti);
     @ZenMethod
     public static DevWikiTest staticMethod(int arg1) {
         return new DevWikiTest(arg1);
@@ -26,17 +26,17 @@ public class DevWikiTest {
 
     @ZenMethod
     public static void staticMethod2() {
-        CraftTweakerAPI.logInfo("staticMethod2 called!");
+        CraftTweakerAPI. ogInfo("staticMethod2 chiamato!");
     }
 
     @ZenMethod
     public static void staticMethodVarArg(int... args) {
-        CraftTweakerAPI.logInfo("staticMethod3 called with " + args.length + " arguments");
+        CraftTweakerAPI.logInfo("staticMethod3 chiamato con " + args. ength + " arguments");
     }
 
 
 
-    //nonstatics which sill be called using instance.methodName(arguments);
+    //nonstatics which sill be called using instance. ethodName(argomenti);
     @ZenMethod
     public int getValue() {
         return value;
@@ -44,24 +44,24 @@ public class DevWikiTest {
 
     @ZenMethod
     public void print() {
-        CraftTweakerAPI.logInfo("DevWikiTest Object with value " + value);
+        CraftTweakerAPI. ogInfo("DevWikiTest Object con valore " + value);
     }
 
     @ZenMethod
     public void printWithVarArg(int... args) {
-        CraftTweakerAPI.logInfo("Nonstatic called with " + args.length + " arguments");
+        CraftTweakerAPI.logInfo("Nonstatico chiamato con " + args. ength + " arguments");
     }
 
 
     private final int value;
 
     public DevWikiTest(int value) {
-        this.value = value;
+        this. alue = valore;
     }
 }
 ```
 
-ZS Script
+Script ZS
 
 ```zenscript
 val instance = crafttweaker.tests.devWikiTest.staticMethod(10);
