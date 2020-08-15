@@ -122,9 +122,9 @@ nav:
               - MCBiomeSpawnEntry: 'Vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
     - Atum 2:
-       - Kiln: 'mods/Atum2/Kiln.md'
+       - Ofen: 'mods/Atum2/Kiln.md'
        - Quern: 'mods/Atum2/Quern.md'
-       - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
+       - Spinnrad 'mods/Atum2/SpinningWheel.md'
     - Botany Pots:
       - Crop: 'mods/botanypots/Crop.md'
       - Düngemittel: 'mods/botanypots/Düngemittel.md'
