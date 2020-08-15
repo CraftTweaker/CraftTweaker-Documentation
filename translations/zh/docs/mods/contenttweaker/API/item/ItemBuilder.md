@@ -2,16 +2,16 @@
 
 The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 mods.contenttweaker.item.ItemBuilder
 ```
 
 ## 已实现的接口
-ItemBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+ItemBuilder implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructor #构造函数
@@ -112,9 +112,9 @@ new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| 参数     | 返回值类型  | 描述         |
-| ------ | ------ | ---------- |
-| rarity | String | The rarity |
+| 参数  | 返回值类型  | 描述         |
+| --- | ------ | ---------- |
+| 稀有度 | String | The rarity |
 
 
 ### withType
