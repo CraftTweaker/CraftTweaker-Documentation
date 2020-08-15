@@ -1,30 +1,30 @@
-# Binding Support
+# Wiążące wsparcie
 
-## Binding:
+## Wiążący:
 
-This will cancel Item Binding for said specific item if the player doesn't meet the requirements.
+Spowoduje to anulowanie powiązania dla określonego przedmiotu, jeśli gracz nie spełnia wymagań.
 
-### Pre-1.4.0:
+### Przedmiot 1.4.0:
 
-#### Syntax:
+#### Składnia:
 
-    Blank Example:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
+    Pusty przykład:
+    mods.compatskills.BindHandler.addBindLock(String failureMessreMessage, IItemStack stack, String... Wymagania);
     
-    Test Example:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minec
-    
-
-### Post-1.4.0
-
-As of CompatSkills 1.4.0 the binding locking has now been rolled in as a part of ItemStack-Locking. This means there is no longer a dedicated script syntax for adding a binding lock to an item.
-
-This change has also come with a few other changes. For example the default error message displayed has been changed in some regards:
-
-- It now displays alongside requirements in the chat as a player-only status message
-- The error message is now a Localizable string: 
-
-    compatskills.bloodmagic.bindingError=Untold Dark Energies swirl around you and then subside
+    Test Przykład:
+    mods.compatskills.BindHandler.addBindLock ("Nieznana ciemna energia ruchu wokół ciemnej energii, a następnie na sucho", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|min|minec
     
 
-This means that resource pack authors can now localize the error message into whatever language they want. This also means you can use mods like ResourceLoader or Base (With ContentTweaker present) to change the error string.
+### Po 1.4.0
+
+Od wersji CompatSkills 1.4.0 blokowanie wiązania zostało teraz włączone jako część ItemStack-Locking. Oznacza to, że nie ma już dedykowanej składni skryptu do dodawania blokady powiązania do elementu.
+
+Zmiana ta nastąpiła również z kilkoma innymi zmianami. Na przykład wyświetlany domyślny komunikat o błędzie został zmieniony w niektórych odpowiedziach:
+
+- Wyświetla teraz obok wymagań na czacie jako komunikat statusu tylko dla gracza
+- Komunikat o błędzie jest teraz ciągiem językowym: 
+
+    compatskills.bloodmagic.bindingError=Nieznana Mroczna Energia wirl wokół ciebie, a następnie podboczne
+    
+
+Oznacza to, że autorzy paczek zasobów mogą teraz zlokalizować komunikat o błędzie w dowolnym języku. Oznacza to również, że możesz używać modów takich jak ResourceLoader lub Baza (prezentacja) aby zmienić ciąg błędów.
