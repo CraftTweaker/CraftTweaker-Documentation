@@ -9,11 +9,11 @@ CraftTweaker support adds the ability to specify any item and liquid combination
 
 While the solidification target item can be any item, it makes most sense to use colourable items here, since dyes are always used, regardless of whether or not the output item is colourable.
 
-## Calling
+## Dzwonienie
 
 You can call the Plastic Mixer package using `mods.pneumaticcraft.plasticmixer`.
 
-## Removing
+## Usuwanie
 
 This function removes the first recipe it finds with the given [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `input`:
 
@@ -29,9 +29,9 @@ This function removes *all* Plastic Mixer recipes:
 mods.pneumaticcraft.plasticmixer.removeAllRecipes();
 ```
 
-## Adding
+## Dodawanie
 
-The following functions can be used to add recipes to the TPP:
+Następujące funkcje mogą być używane do dodawania przepisów do TPP:
 
 ```zenscript
 // Add a two-way recipe (temperature in Kelvin)
