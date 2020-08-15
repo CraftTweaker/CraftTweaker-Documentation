@@ -1,29 +1,29 @@
-# Alloy Smelter
+# Fonderie d'Alliage
 
-The Alloy Smelter package can be used to add/remove recipes to/from the Immersive Engineering Alloy Smelter.
+Le pack de Fonderie d'Alliage peut être utilisé pour ajouter/retirer des recettes à/de la Fonderie d'Alliage d'Ingénierie Immersive.
 
-## Calling The Package
+## Appeler le paquet
 
-You can call the AlloySmelter package using `mods.immersiveengineering.AlloySmelter`
+Vous pouvez appeler le package AlloySmelter en utilisant `mods.immersiveengineering.AlloySmelter`
 
 ## Ajouter une recette
 
-| Required | Type de texte | Type de données                                    |
-| -------- | ------------- | -------------------------------------------------- |
-| Required | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)           |
-| Required | Input 1       | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Input 2       | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time          | Nombre entier                                      |
+| Requis | Type de texte | Type de données                                    |
+| ------ | ------------- | -------------------------------------------------- |
+| Requis | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)           |
+| Requis | Input 1       | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
+| Requis | Input 2       | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
+| Requis | Date et heure | Nombre entier                                      |
 
 ### Exemple
 
 ```zenscript
-//Example:
-mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack output, IIngredient first, IIngredient second, int time);
+//Exemple:
+mods.immersiveengineering.AlloySmelter.addRecipe(IItemStack, IIngredient d'abord, IIngredient second, int time);
 mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingotIron>, <minecraft:dirt>, 2000);
 ```
 
-## Remove Recipe
+## Supprimer la recette
 
 | Type de texte | Type de données                          |
 | ------------- | ---------------------------------------- |
@@ -32,7 +32,7 @@ mods.immersiveengineering.AlloySmelter.addRecipe(<minecraft:diamond>, <ore:ingot
 ### Exemple
 
 ```zenscript
-//Example:
+//Exemple:
 mods.immersiveengineering.AlloySmelter.removeRecipe(IItemstack output);
 mods.immersiveengineering.AlloySmelter.removeRecipe(<minecraft:diamond>);
 ```
