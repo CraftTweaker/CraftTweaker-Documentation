@@ -1,4 +1,4 @@
-# Energetic Infuser
+# Infusore Energetico
 
 ## Pacchetto
 
