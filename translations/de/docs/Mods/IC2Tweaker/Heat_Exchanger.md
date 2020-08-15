@@ -1,6 +1,6 @@
 # Heat Exchanger
 
-## Package
+## Paket
 
 `import mods.ic2.HeatExchanger;`
 
