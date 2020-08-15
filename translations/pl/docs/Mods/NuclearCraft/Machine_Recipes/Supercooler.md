@@ -1,11 +1,11 @@
-# Supercooler
+# Superchłodnica
 
-## Importing the Package
+## Importowanie pakietu
 `mods.nuclearcraft.supercooler`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.supercooler.addRecipe([fluidInput, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.supercooler.addRecipe([fluidInput, fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny mocy,@Opcjonalny podwójny proces, Radiation]);
 ```
 
 ## Usuwanie przepisów
