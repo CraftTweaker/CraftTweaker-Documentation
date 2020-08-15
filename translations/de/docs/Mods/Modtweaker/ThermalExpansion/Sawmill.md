@@ -12,7 +12,7 @@ mods.thermalexpansion.Sawmill.addRecipe(IItemStack output, IItemStack input, int
 mods.thermalexpansion.Sawmill.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.thermalexpansion.Sawmill.removeRecipe(IItemStack input);
