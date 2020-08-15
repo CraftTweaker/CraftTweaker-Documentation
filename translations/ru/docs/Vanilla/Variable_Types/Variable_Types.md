@@ -1,12 +1,12 @@
-# Variable Types
+# Переменные типы
 
-As you surely already messed a bit with variables and values, you must've wondered, how CraftTweaker knows whether it's dealing with an Integer, an Item or an oreDic entry?
+Так как вы наверняка уже немного перепутали переменные и значения, вы должны задуматься, как CraftTweaker знает, имеет ли дело с целым числом, вещью или рудикой?
 
-The easiest way of declaring a variable is using ```var name = value;```. This creates the variable and casts it to the value it thinks is most fitting for the situation.
+Самый простой способ определения переменной используется ```имя var = значение;```. Это создает переменную и бросает ее в значение, которое она считает наиболее подходящим для ситуации.
 
-## Casting a variable to a specific type
+## Размещение переменной к определенному типу
 
-More complex scripts might require you to cast a variable as a specific type. For example, this would fail:
+Для более сложных скриптов может потребоваться наложение переменной как определенного типа. Например, это не удалось:
 
 ```zenscript
 var test;
@@ -15,35 +15,35 @@ test = <minecraft:dirt>;
 recipes.remove(test);
 ```
 
-So why does this fail? This is because CT casts variables that aren't given a start value to the IAny Type. That type was made to facilitate some recipe handlers, though never really implemented, so it sometimes does more harm than good. It was originally intended as a type that can take the form of most other types so you don't need to change variables all the time, but the interface never got implemented.
+Так почему это не удалось? Это происходит потому, что CT отличает переменные, которые не дают начальное значение для IAny Type. Этот тип был сделан для облегчения некоторых обработчиков рецептов, хотя и не реализован, поэтому иногда он причиняет больше вреда, чем хорошо. Первоначально он был предназначен как тип, который может принимать форму большинства других типов, так что вам не нужно постоянно изменять переменные, но интерфейс никогда не реализовался.
 
-Back to the topic: How can we fix this issue? By casting the variable test to ```IItemStack```, which is the type used for items. Unfortunately, some types need to be imported first, and this is one of those.
+Вернуться к теме: Как мы можем исправить эту проблему? Передача теста переменной на ```IItemStack```, который является типом используемым для элементов. К сожалению, некоторые типы должны быть импортированы первым, и это один из них.
 
 ```zenscript
-import crafttweaker.item.IItemStack;
-var test as IItemStack;
+импорт crafttweaker.item.IItemStack;
+var test как IItemStack;
 
 test = <minecraft:dirt>;
 recipes.remove(test);
 ```
 
-## List of Variable Types
+## Список переменных типов
 
-Here's an (incomplete) List of most variable types
+Вот (неполный) список большинства типов переменных
 
-| Name (Name in CT)                                   | Explanation                                                                                           | Example                                              | Import                                    |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
-| Integer (int)                                       | Integers are whole Numbers (e.g. 1,2,3,...), caps at 2 147 483 647                                    | `var test = 10 as int;`                              |                                           |
-| [IItemStack](/Vanilla/Items/IItemStack/)            | Single items                                                                                          | `var test = <minecraft:dirt> as IItemStack;`   | import crafttweaker.item.IItemStack;      |
-| [IIngredient](/Vanilla/Variable_Types/IIngredient/) | Single or Multiple Items (e.g. `<minecraft:dirt>`, `<ore:ingotIron>`,...)                 | `var test = <minecraft:dirt> as IIngredient;`  | import crafttweaker.item.IIngredient;     |
-| [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)    | Multiple Items from an OreDict (e.g. `<ore:ingotIron>`, `<ore:ingotGold>`,...)            | `var test = <ore:ingotIron> as IOreDictEntry;` | import crafttweaker.oredict.IOreDictEntry |
-| Boolean (bool)                                      | Booleans are either true or false.                                                                    | `var test = false as bool;`                          |                                           |
-| Byte (byte)                                         | Bytes values are whole numbers from 0 to 255 ()                                                       | `var test = 125 as byte;`                            |                                           |
-| Floating Point (float)                              | Decimals                                                                                              | `var test = 1.25 as float;`                          |                                           |
-| Double Precision (double)                           | Like Floating Points, just more precise and with a higher number range                                | `var test = 1.25 as double;`                         |                                           |
-| Long (long)                                         | Like Integer, but with a higher number range (usually int is just fine)                               | `var test = 30 as long;`                             |                                           |
-| Null (null)                                         | Null, nothing, nada. Not really a type but still useful                                               | `var test = null;`                                   |                                           |
-| Short (short)                                       | Like Integer, but with a smaller number Range                                                         | `var test = 16 as short;`                            |                                           |
-| String (string)                                     | A string is a text. Here you usually won't need the "as" as anything in "s is automatically a string. | `var test = "Hello World!" as string;`               |                                           |
-| Void (void)                                         | Even less than null. You will probably only need the void type when dealing with functions            | `var test as void;`                                  |                                           |
-| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)      | Same as IItemStack, only for liquids                                                                  | `var test = <liquid:water> as ILiquidStack;`   | import crafttweaker.liquid.ILiquidStack;  |
+| Имя (имя в CT)                                      | Объяснение                                                                                      | Пример                                                | Импорт                                    |
+| --------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------- |
+| Целое число (int)                                   | Целые числа являются целыми числами (например, 1,2,3,...), шапками по 2 147 483 647             | `var испытание = 10 int;`                             |                                           |
+| [IItemStack](/Vanilla/Items/IItemStack/)            | Одиночные элементы                                                                              | `var test = <minecraft:dirt> как IItemStack;`   | импорт crafttweaker.item.IItemStack;      |
+| [Иингредиент](/Vanilla/Variable_Types/IIngredient/) | Один или несколько элементов (например, `<minecraft:dirt>`, `<ore:ingotIron>`,...)  | `var test = <minecraft:dirt> как IIngredient;`  | импорт crafttweaker.item.IIngredient;     |
+| [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)    | Несколько предметов из OreDict (например, `<ore:ingotIron>`, `<ore:ingotGold>`,...) | `var test = <ore:ingotIron> как IOreDictEntry;` | импорт crafttweaker.oredict.IOreDictEntry |
+| Логическое (bool)                                   | Логические выражения являются либо истинными, либо ложными.                                     | `var испытание = ложное как снаряд;`                  |                                           |
+| Байт (байт)                                         | Значения байт - это целые числа от 0 до 255 ()                                                  | `var испытание = 125 байт;`                           |                                           |
+| Плавающая точка (плавать)                           | Десятичные дроби                                                                                | `var test = 1,25 as float;`                           |                                           |
+| Двойная точность (двойная)                          | Как и Плавающие Очки, просто точнее и с более высоким числом диапазона                          | `испытание var = 1,25 двойно;`                        |                                           |
+| Долгое (длинное)                                    | Как целое число, но с более высоким диапазоном числа (обычно int хорошо)                        | `испытание на рулон = 30 длиной;`                     |                                           |
+| Пустой (пустой)                                     | Ну, ничего, нада. Не похоже на тип, но все еще полезно                                          | `var test = null;`                                    |                                           |
+| Короткий (короткий)                                 | Как целое число, но с меньшим диапазоном числа                                                  | `var испытание = 16 как короткое;`                    |                                           |
+| Строка (строка)                                     | Строка - текст. Здесь вам обычно не понадобится "как", как ничего в "s - автоматическая строка. | `var test = "Hello World!" как строка;`               |                                           |
+| Бездна (бездействие)                                | Еще меньше нуля. Вероятно, вам понадобится только пустой тип при работе с функциями             | `var испытание как недействительное;`                 |                                           |
+| [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)      | То же, что и IItemStack, только для жидкостей                                                   | `var test = <liquid:water> как ILiquidStack;`   | импорт crafttweaker.liquid.ILiquidStack;  |
