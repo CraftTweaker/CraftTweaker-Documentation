@@ -2,18 +2,18 @@
 
 ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
-## Calling
+## Llamando
 
 You can call the Crusher package using `mods.extrautils2.Crusher`
 
-## Removing
+## Eliminando
 
 ```zenscript
 //mods.extrautils2.Crusher.remove(IItemStack outout);
 mods.extrautils2.Crusher.remove(<minecraft:redstone>);
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
 //mods.extrautils2.Crusher.add(IItemStack output, IItemStack input, @Optional IItemStack secondaryOutput, @Optional float secondaryChance);
