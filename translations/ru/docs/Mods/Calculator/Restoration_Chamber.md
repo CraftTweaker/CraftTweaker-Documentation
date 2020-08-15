@@ -1,6 +1,6 @@
 # Restoration Chamber
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.restorationChamber;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.restorationChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Сложение
 ```zenscript
 restorationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 restorationChamber.removeRecipe(IIngredient output);
 ```
