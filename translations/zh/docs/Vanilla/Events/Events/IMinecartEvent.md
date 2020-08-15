@@ -6,7 +6,7 @@ This event is extended by all events involving Minecarts.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IMinecartEvent;`
 
-## What can be done with them?
+## 他们能够做些什么？
 
 | 名称       | 类型                                    |
 | -------- | ------------------------------------- |
