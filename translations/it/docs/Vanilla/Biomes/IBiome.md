@@ -2,7 +2,7 @@
 
 The IBiome interface allows you to retrieve information on a registered Biome.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.world.IBiome;`
@@ -15,16 +15,16 @@ You can get a list of all registered Biomes using `game.biomes` from [IGame](/Va
 
 Atm, all you can do with an IBiome object is retrieving some information out of it:
 
-| ZenGetter                    | Return Type |
-| ---------------------------- | ----------- |
-| name                         | string      |
-| canRain                      | boolean     |
-| isSnowyBiome                 | boolean     |
-| highHumidity                 | boolean     |
-| spawningChance               | float       |
-| baseHeight                   | float       |
-| heightVariation              | float       |
-| rainfall                     | float       |
-| waterColorMultiplier         | int         |
-| ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| ZenGetter                    | Tipo Di Reso |
+| ---------------------------- | ------------ |
+| nome                         | stringa      |
+| canRain                      | boolean      |
+| isSnowyBiome                 | boolean      |
+| highHumidity                 | boolean      |
+| spawningChance               | galleggiante |
+| baseHeight                   | galleggiante |
+| heightVariation              | galleggiante |
+| rainfall                     | galleggiante |
+| waterColorMultiplier         | int          |
+| ignorePlayerSpawnSuitability | boolean      |
+| temperatura                  | galleggiante |
