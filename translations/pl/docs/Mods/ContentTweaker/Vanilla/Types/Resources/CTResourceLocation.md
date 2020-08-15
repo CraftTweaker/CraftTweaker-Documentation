@@ -1,18 +1,18 @@
-# CTResourceLocation
+# Lokalizacja CTResourceLocation
 
-A resource location object is used for telling minecraft where to find something. It consists of a domain and a path.
+Obiekt lokalizacji zasobów jest używany do mówienia minecraftowi, gdzie coś znaleźć. Składa się z domeny i ścieżki.
 
-## Calling/Importing the package
+## Wywołanie/importowanie pakietu
 
-If you don't want to type out the package's whole name every time you use a static method or if you are encountering any issues with the class in general it might be required for you to [import](/AdvancedFunctions/Import/) the class:  
-`import mods.contenttweaker.ResourceLocation`
+Jeśli nie chcesz wpisywać całej nazwy pakietu za każdym razem, gdy używasz metody statycznej, lub jeśli napotkasz jakiekolwiek problemy z klasą, może być wymagane aby [zaimportować](/AdvancedFunctions/Import/) klasę:  
+`importuj mody. Lokalizacja zasobów`
 
-## ZenMethods
+## Metody ZenMethods
 
-### Static methods: Create
+### Metody statyczne: Utwórz
 
-Static methods are those that are called on the package itself, not on any specific object of this instance.  
-You can use this method to create a new CTResourceLocation instance:
+Metody statyczne to te, które są nazywane samym pakietem, a nie żadnym konkretnym przedmiotem tej instancji.  
+Możesz użyć tej metody do utworzenia nowej instancji CTResourceLocation:
 
 ```zenscript
 var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/myItem");
@@ -20,13 +20,13 @@ var instance = mods.contenttweaker.ResourceLocation.create("contenttweaker:item/
 
 ### ZenGetters
 
-ZenGetters are called on an object, not on the package itself
+ZenGetters są wywoływane na obiekcie, a nie na samym pakiecie
 
 ```zenscript
 print(myLocation.domain);
 ```
 
-| ZenGetter | Type   |
-| --------- | ------ |
-| domain    | string |
-| path      | string |
+| ZenGetter | Typ         |
+| --------- | ----------- |
+| domena    | ciąg znaków |
+| ścieżka   | ciąg znaków |
