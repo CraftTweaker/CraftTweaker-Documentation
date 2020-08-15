@@ -27,4 +27,4 @@ Atm, all you can do with an IBiome object is retrieving some information out of 
 | rainfall                     | float       |
 | waterColorMultiplier         | int         |
 | ignorePlayerSpawnSuitability | boolean     |
-| temperature                  | float       |
+| Temperatur                   | float       |
