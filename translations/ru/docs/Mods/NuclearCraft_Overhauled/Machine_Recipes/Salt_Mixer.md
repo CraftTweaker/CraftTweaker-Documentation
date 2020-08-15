@@ -1,6 +1,6 @@
-# Salt Mixer
+# Соль микшер
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.SaltMixer`
 
 ## Добавление рецептов
