@@ -1,30 +1,30 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
+Ein veränderbarer Gegenstandsstapel ist ein spezielles [IItemStack](/Vanilla/Items/IItemStack/) Objekt, das nur von [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/)abgerufen werden kann.  
+Das bedeutet alle Methoden von [IItemStack](/Vanilla/Items/IItemStack/)und die von [Zutaten](/Vanilla/Variable_Types/IIngredient/)!
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MutableItemStack;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importieren mods.contenttweaker.MutableItemStack;`
 
-## ZenMethods
+## ZenMethoden
 
-### Quantity
+### Menge
 
-A Stack's count is the number of items in that stack!
+Die Anzahl eines Stapels ist die Anzahl der Items in diesem Stapel!
 
-| ZenMethod       | Parameter Type | Beschreibung                                        |
-| --------------- | -------------- | --------------------------------------------------- |
-| setCount(count) | int            | Sets the stack's count to the `count` provided      |
-| grow(count)     | int            | Increases the stack's count by the `count` provided |
-| shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+| ZenMethode          | Parametertyp | Beschreibung                                      |
+| ------------------- | ------------ | ------------------------------------------------- |
+| setCount(Anzahl)    | int          | Legt die Anzahl des Stapels auf `Anzahl` fest     |
+| wachsen (zählen)    | int          | Erhöht die Anzahl der Stapel um `Anzahl`          |
+| schrumpfen (Anzahl) | int          | Verringert die Anzahl des Stapels um die `Anzahl` |
 
-### Damage
+### Schaden
 
-`damage(int amount, ICTPlayer player)`
+`schad(int betrag, ICTPlayer Spieler)`
 
-Parameters:
+Parameter:
 
-- int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item
+- int Betrag → Die Menge an Schadenspunkten, um dem Gegenstand zu geben
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) Spieler → Spieler/Entität, der den Gegenstand beschädigt
