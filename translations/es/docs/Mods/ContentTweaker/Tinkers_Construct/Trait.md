@@ -1,36 +1,36 @@
-# Trait Representation
+# Representación del rasgo
 
-A Trait representation represents a Tinkers' Construct Trait.  
-You can get such an object either from the [Trait Builder](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) or from the [Trait Bracket Handler](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
+Una representación de Rasgo representa el Rasgo de Construir de un Tinker.  
+Puedes obtener tal objeto desde el [Constructor de rasgos](/Mods/ContentTweaker/Tinkers_Construct/TraitBuilder/) o desde el [Manejador de Bracket de rasgo](/Mods/ContentTweaker/Tinkers_Construct/Brackets/Bracket_Trait/).
 
-## Importing the class
+## Importar la clase
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import mods.contenttweaker.tconstruct.Trait`
+Podría ser necesario que importes la clase si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar mods.contenttweaker.tconstruct.Trait`
 
 ## ZenGetter
 
-| ZenGetter     | Type   |
+| ZenGetter     | Tipo   |
 | ------------- | ------ |
-| identifier    | string |
-| commandString | string |
+| identifier    | cadena |
+| commandString | cadena |
 
-## Adding trait items
+## Añadiendo elementos de rasgo
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+Si combina el ingrediente dado con una herramienta en la forja de herramientas de un tinker, puede aplicar el rasgo como modificador.
 
 ```zenscript
-//myTrait.addModifierItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
+//myTrait.addModifierItem(elemento IIngredient, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
 myTrait.addModifierItem(<item:minecraft:iron_pickaxe>);
 myTrait.addModifierItem(<item:minecraft:iron_block>, 4, 2);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
+- `elemento` es el elemento que coincide en su lugar. Puede utilizar [Condiciones del artículo](/Vanilla/Items/Item_Conditions/) pero sin Transformadores. 
+- `la cantidad requerida` es la cantidad de artículos que coinciden en contra. Puede dividirlos entre todas las ranuras que proporciona la forja de herramientas, lo que también le permite ir por encima de 64. En el ejemplo anterior, necesitas 4 bloques de hierro por adición. Por defecto es 1.
+- `monto emparejado` es la cantidad de puntos de rasgo añadidos por `cantidad necesaria`. En el ejemplo de arriba cuatro bloques de hierro dan dos puntos característicos. Por defecto es 1.
 
-## Accessing Trait Data
+## Acceder a datos de rasgo
 
-Trait data is the data that belongs to a trait and is itemBound. As such, you can provide the [IItemStack](/Vanilla/Items/IItemStack/) and retrieve the [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/) object.
+Datos de rasgo son los datos que pertenecen a un rasgo y es itemBound. Como tal, puede proporcionar el [ItemStack](/Vanilla/Items/IItemStack/) y recuperar el objeto [TraitDataRepresentation](/Mods/ContentTweaker/Tinkers_Construct/TraitDataRepresentation/).
 
     val myTraitData = myTrait.getData(itemWithTrait);
