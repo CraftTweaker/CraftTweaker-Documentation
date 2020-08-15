@@ -1,9 +1,9 @@
 # MCBlockState
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.block.MCBlockState
 ```
@@ -12,7 +12,7 @@ crafttweaker.api.block.MCBlockState
 MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### getAllowedValuesForProperty
 
 Returns List<String>
@@ -21,9 +21,9 @@ Returns List<String>
 myMCBlockState.getAllowedValuesForProperty(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nombre    | Cadena | No description provided |
 
 
 ### getProperties
@@ -50,9 +50,9 @@ Returns String
 myMCBlockState.getPropertyValue(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nombre    | Cadena | No description provided |
 
 
 ### hasProperty
@@ -63,9 +63,9 @@ Returns boolean
 myMCBlockState.hasProperty(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nombre    | Cadena | No description provided |
 
 
 ### withProperty
@@ -76,30 +76,30 @@ Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 myMCBlockState.withProperty(name as String, value as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
-| value     | String | No description provided |
+| nombre    | Cadena | No description provided |
+| valor     | Cadena | No description provided |
 
 
 
-## Properties
+## Propiedades
 
-| Name            | Type                                                          | Has Getter | Has Setter |
-| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
-| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
-| canProvidePower | boolean                                                       | true       | false      |
-| commandString   | String                                                        | true       | false      |
-| hasTileEntity   | boolean                                                       | true       | false      |
-| isSolid         | boolean                                                       | true       | false      |
-| isSticky        | boolean                                                       | true       | false      |
-| lightLevel      | int                                                           | true       | false      |
-| ticksRandomly   | boolean                                                       | true       | false      |
+| Nombre             | Tipo                                                          | Has Getter | Has Setter |
+| ------------------ | ------------------------------------------------------------- | ---------- | ---------- |
+| bloque             | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad     | falso      |
+| puede ProvidePower | boolean                                                       | verdad     | falso      |
+| commandString      | Cadena                                                        | verdad     | falso      |
+| hasTileEntity      | boolean                                                       | verdad     | falso      |
+| isSolid            | boolean                                                       | verdad     | falso      |
+| isSticky           | boolean                                                       | verdad     | falso      |
+| nivel de luz       | int                                                           | verdad     | falso      |
+| ticksRandomly      | boolean                                                       | verdad     | falso      |
 
 ## Casters
 
 | Result type                                                   | Is Implicit |
 | ------------------------------------------------------------- | ----------- |
-| String                                                        | false       |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
+| Cadena                                                        | falso       |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad      |
 
