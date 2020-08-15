@@ -1,6 +1,6 @@
-# Fluid Extractor
+# Flüssigkeits-Extraktor
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.extractor`
 
 ## Rezepte hinzufügen
