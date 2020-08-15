@@ -1,19 +1,19 @@
 # IItemUseFinish
 
-The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will be triggered only when a user finishes using the item (e.g. finishes eating).
+IItemUseFinish 関数は [アイテム](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) に追加でき、ユーザーがアイテムを使用して終了したときにのみトリガーされます (e. を選択します。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IItemUseFinish;`
 
 ## パラメータ
 
-The IItemRightClickFunction is a function with the following parameters:
+IItemRightClickFunction は以下のパラメータを持つ関数です。
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is used
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → 使用される項目
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) ワールド → プレイヤーがいる世界
-- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → The entity using the item
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) エンティティ → アイテムを使用するエンティティ
 
 関数は [IItemStack](/Vanilla/Items/IItemStack/) を返す必要があります。
 
