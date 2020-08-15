@@ -1,28 +1,28 @@
-# PlayerAnvilRepair
+# Восстановление Игрока
 
-The PlayerAnvilRepair Event is fired whenever a player crafts something in the anvil.  
-You can change the chance that the anvil is damaged.
+Событие Восстановление PlayerAnvilRepair запускается всякий раз, когда игрок создает что-нибудь в ярости.  
+Вы можете изменить вероятность повреждения зла.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerAnvilRepairEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## Наследование от интерфейсов событий
 
-PlayerAnvilRepair Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerAnvilRepair События реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter        | ZenSetter     | Return Type                              |
-| ---------------- | ------------- | ---------------------------------------- |
-| `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `breakChance`    | `breakChance` | float                                    |
+| Геттеры              | ZenSetter      | Возвращаемый тип                         |
+| -------------------- | -------------- | ---------------------------------------- |
+| `player`             |                | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `itemInput`          |                | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `элемент Ингредиент` |                | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `itenResult`         |                | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `Шанс разрыва`       | `Шанс разрыва` | float                                    |
