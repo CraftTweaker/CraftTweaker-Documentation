@@ -1,9 +1,9 @@
 # MCLeftClickBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
 ```
-| Parameter | Type                                                                                                                                                                  | Description             |
+| Parámetro | Tipo                                                                                                                                                                  | Descripción             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock)> | No description provided |
 
 
 
-## Methods
+## Métodos
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -105,9 +105,9 @@ myMCLeftClickBlock.isCanceled();
 myMCLeftClickBlock.setCanceled(canceled as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parámetro | Tipo    | Descripción             |
 | --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+| cancelado | boolean | No description provided |
 
 
 
