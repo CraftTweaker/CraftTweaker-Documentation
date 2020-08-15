@@ -2,7 +2,7 @@
 
 The HighOven package allows to add/remove fuels, heat recipes and mix recipes to the high oven.
 
-## Importing the package
+## Importazione del pacchetto
 
 Import the package using
 
