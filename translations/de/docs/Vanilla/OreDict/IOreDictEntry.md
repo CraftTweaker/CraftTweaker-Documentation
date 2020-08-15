@@ -1,4 +1,4 @@
-# IOreDictEntry
+# IOreDictEintrag
 
 When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
 They consist of a name (OreDictionary name) and an explanation (all matching items).
@@ -26,7 +26,7 @@ You can use these getters to retrieve some information on the oredict:
 | empty     | Returns if the oreDict is empty          | bool                                     |
 | firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethods
+## ZenMethoden
 
 You can use these methos on an IOreDictEntry Object:
 
