@@ -3,7 +3,7 @@
 An IItemDefinition object is the direct reference to an item.  
 It is different from an [IItemStack](/Vanilla/Items/IItemStack/) as this only refers to the item, it does not include any meta-information or NBT-values!
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemDefinition;`
@@ -20,32 +20,32 @@ val itemDefinition = <minecraft:stone>.definition;
 val itemDefinitionList = game.items;
 ```
 
-## What to do with it
+## Co z tym zrobić
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters i bezparametrowe ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | Co to robi                                                                                           | Typ zwrotu                                                     |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| id                 | Returns the item ID                                                                                  | string                                                         |
-| name               | Returns the unlocalized item Name                                                                    | string                                                         |
+| id                 | Returns the item ID                                                                                  | ciąg znaków                                                    |
+| Nazwa              | Returns the unlocalized item Name                                                                    | ciąg znaków                                                    |
 | ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
+| owner              | Returns the mod name that this item belongs to.                                                      | ciąg znaków                                                    |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
-| creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
+| kreatywna zakładka |                                                                                                      | [Karta ICreative](/Vanilla/CreativeTabs/ICreativeTab/)         |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |
 | canItemEditBlocks  |                                                                                                      | bool                                                           |
-| itemEnchantability |                                                                                                      | int                                                            |
-| subItems           |                                                                                                      | List<[IItemStack](/Vanilla/Items/IItemStack/)\>               |
+| itemEnchantability |                                                                                                      | odcień                                                         |
+| subItems           |                                                                                                      | Lista<[IItemStack](/Vanilla/Items/IItemStack/)\>              |
 
 ### ZenSetters and other void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
-| -------------------------------------- | --------------------------------------------------- |
-| creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| setNoRepair()                          | none                                                |
-| setContainerItem(IItemDefinition item) | IItemDefinition                                     |
+| ZenSetter/ZenMethod                    | Typ parametru                                          |
+| -------------------------------------- | ------------------------------------------------------ |
+| kreatywna zakładka                     | [Karta ICreative](/Vanilla/CreativeTabs/ICreativeTab/) |
+| setNoRepair()                          | none                                                   |
+| setContainerItem(IItemDefinition item) | IItemDefinition                                        |
 
-### ZenMethods
+### Metody ZenMethods
 
 - `def.makeStack(meta);` Creates an [IItemStack](/Vanilla/Items/IItemStack/) with the given metadata. Metadata is an int and OPTIONAL.
 - `def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level
