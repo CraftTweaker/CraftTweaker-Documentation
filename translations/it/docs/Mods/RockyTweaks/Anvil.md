@@ -1,10 +1,10 @@
-# Anvil
+# Incudine
 
-## Package
+## Pacchetto
 
 `mods.rockytweaks.Anvil`
 
-## Addition
+## Addizione
 
 ### Single
 
@@ -40,7 +40,7 @@ mods.rockytweaks.Anvil.addRecipe(<minecraft:book>,
 );
 ```
 
-## Removal
+## Rimozione
 
 The anvil does not use recipes in the normal sense but you are still able to remove/blacklist specific inputs or outputs.
 
