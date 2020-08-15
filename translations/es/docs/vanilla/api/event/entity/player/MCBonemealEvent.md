@@ -1,9 +1,9 @@
 # MCBonemealEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.event.entity.player.MCBonemealEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCBonemealEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCBonemealEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCBonemealEvent>);
 ```
-| Parameter | Type                                                                                                                        | Description             |
+| Parámetro | Tipo                                                                                                                        | Descripción             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCBonemealEvent](/vanilla/api/event/entity/player/MCBonemealEvent)> | No description provided |
 
 
 
-## Methods
+## Métodos
 ### getBlock
 
 Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
@@ -99,7 +99,7 @@ myMCBonemealEvent.isCanceled();
 myMCBonemealEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parámetro | Tipo    | Descripción             |
 | --------- | ------- | ----------------------- |
 | cancel    | boolean | No description provided |
 
