@@ -6,15 +6,15 @@ Get is an convenient alternative to looking up the meta value for all elements a
 mods.alchemistry.Util.get`
 ```
 
-## Methods
+## Méthodes
 
 - **String Name** Element Name
 
-## Syntax
+## Syntaxe
 
 ```zenscript
-mods.alchemistry.Util.get(String name);
+mods.alchemistry.mods.alchemistry.Util.get(String name);
 
 val strontiumCarbonate = mods.alchemistry.Util.get("strontium_carbonate");
-val carbon = mods.alchemistry.Util.get("carbon");
+val carbon = mods.alchemistry.
 ```
