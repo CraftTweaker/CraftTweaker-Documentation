@@ -1,6 +1,6 @@
-# Fission
+# Фейбер
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.fission`
 
 ## Добавление рецептов
