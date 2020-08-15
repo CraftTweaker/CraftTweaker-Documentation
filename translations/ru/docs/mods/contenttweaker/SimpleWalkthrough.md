@@ -17,7 +17,7 @@ Simply put it somewhere in (preferable the top of) your file and you're set to g
 Remember **no crafttweaker scripts are allowed** in `#loader contenttweaker`as they run at different phases of the laod cycle!
 
 
-## Blocks
+## Блоки
 
 For creating blocks you need to create a [BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder) object.  
 Once you have that you can set most simple properties in a builder pattern.
@@ -66,7 +66,7 @@ new BlockBuilder()
 ```
 
 
-## Items
+## Предметы
 
 For items you more or less do the same, but this time you need an [ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder).  
 You can again, either use a `build(name)` directly, or switch to a specialized version using `withType`.  
@@ -116,7 +116,7 @@ new ItemBuilder()
 
 ```
 
-## Names
+## Имена
 So, how would you go about giving items proper names?  
 For that, you need a lang file.  
 At the time of this writing CoT did not yet create that one for ya, so you will need to create it yourself.  
