@@ -1,26 +1,26 @@
-# Crooking
+# 裁剪：
 
 ## 所属包名
 ```zenscirpt
-mods.exnihilocreatio.Crook
+德涅希拉克雷蒂奥.Crook
 ```
 ## 使用方式
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IItemStack](/Vanilla/Items/IItemStack/) reward** the item that has a chance to drop.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[Ingredient](/Vanilla/Variable_Types/IIngredient/) 输入** 输入.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 奖励** 有机会掉落的物品。
+- **浮动几率** 几率介于 0-1 之间。
+- **幸运几率** 几率介于0-1之间。
 
 ## 添加配方
 
 ```zenscript
-mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
+mods.exnihilocreatio.crook.addRecipe(IIngredient, IItemStack, Float);
 
-mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
+mods.exnihilocreatio.crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
 ## 删除配方
 
 ```zenscript
-mods.exnihilocreatio.Crook.removeAll();
+mods.exnihilocreatio.crook.removeAll();
 ```
