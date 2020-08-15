@@ -1,10 +1,10 @@
 # The Vat
 
-## Package
+## Pakiet
 
 `import mods.enderio.Vat;`
 
-## Method
+## Metoda
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
@@ -20,7 +20,7 @@
 
 **@Optional int energyCost** - How much FE the recipe uses. Defaults to 5000.
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[] slot1Solids, float[] slot1Mults, IIngredient[] slot2Solids, float[] slot2Mults, @Optional int energyCost);
@@ -28,7 +28,7 @@ mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[
 mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.enderio.Vat.removeRecipe(ILiquidStack output);
