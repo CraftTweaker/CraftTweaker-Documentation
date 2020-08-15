@@ -1,6 +1,6 @@
-# Ingot Former
+# インゴットの元
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.IngotFormerIngotFormer`
 
 ## レシピを追加中
@@ -13,5 +13,5 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.IngotFormer.addRecipe(ILiquidStac
 mods.nuclearcraft.Supercoolermods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.IngotFormer.removeAllRecipes();IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.IngotFormer.removeAllRecipes();
+mods.nurcraft.IngotFormer.removeAllRecipes();
 ```
