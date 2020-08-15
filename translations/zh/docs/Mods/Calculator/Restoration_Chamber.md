@@ -15,7 +15,7 @@ import mods.calculator.restorationChamber;
 restorationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## 移除
 ```zenscript
 restorationChamber.removeRecipe(IIngredient output);
 ```
