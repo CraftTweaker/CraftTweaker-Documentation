@@ -8,12 +8,12 @@ import mods.terrafirmacraft.Quern;
 ## Сложение
 
 ```zenscript
-Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
+Quern.addRecipe(String registryName, IIngredient input, IItemStack);
 ```
 
 ## Удаление
 
 ```zenscript
-Quern.removeRecipe(IItemStack output);
+Quern.removeRecipe(IItemStack);
 Quern.removeRecipe(String registryName);
 ```
