@@ -1,10 +1,10 @@
 # Slice 'n' Splice
 
-## Package
+## Pacchetto
 
 `import mods.enderio.SliceNSplice;`
 
-## Methods
+## Metodi
 
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
@@ -14,7 +14,7 @@
 
 **- float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.enderio.SliceNSplice.  
@@ -24,7 +24,7 @@ mods.enderio.SliceNSplice.
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.enderio.SliceNSplice.removeRecipe(IItemStack output);
