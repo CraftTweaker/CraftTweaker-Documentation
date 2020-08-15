@@ -1,132 +1,132 @@
-# Recipes
+# 配方
 
-## Recipe Types
+## 配方类型
 
-There are several types of recipes:
+有几种配方：
 
-### Shaped Recipes
+### 形状配方
 
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+形状的配方是一种配方，在这种配方中，哪个项目进入哪个配置。 例如，你不能在任何情况下只安排7个铁豆来创建铁腿。 形状很重要，因此它是一种形状的配方。
 
-### Mirrored Recipe
+### 镜像配方
 
-Mirrored Recipes are shaped recipes. Only difference is that the recipe can be mirrored along the horizontal or vertical axes.
+镜像配方是形状的配方。 唯一不同的是，配方可以沿水平轴或垂直轴镜像。
 
-### Shapeless Recipes
+### 无缝配方
 
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+无缝配方是配方的，只有你放置在网格中的物品才是配方的，而形状则不重要。 例如，蓝色和黄色染料会产生绿色染料。 这个配方不关心你放在哪里的项目。
 
-## Remove Recipes
+## 删除配方
 
-There are several ways of removing recipes.
+消除配方有几种方法。
 
-### remove
-
-```zenscript
-recipes.remove(output, NBTMatch);
-```
-
-This will crafting table recipes for the given `output`.  
-If `NBTMatch` is true, it will only remove recipes that result in items with the same NTB-Data as provided
-
-`Output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).  
-`NBTMatch` is a boolan and optional (Will be the same as false if not specified).
-
-### removeShaped
+### remove #移除
 
 ```zenscript
-recipes.removeShaped(output, inputs);
+remove(输出, NBTMatch)；
 ```
 
-This one is more strict on which recipes to remove and will only remove shaped recipes that craft `output` with `input`.
+这将制作给定的 `输出`的表格配方。  
+如果 `NBTMatch` 为 true 它只会移除导致提供相同非关税壁垒数据的配方
 
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (e.g.[[iron,iron,iron],[iron,null,iron],[iron,null,iron]])
+`输出` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)。  
+`NBTMatch` 是一种布尔值和可选值(如果未指定则与假值相同)。
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shaped Recipes.  
-`inputs` can contain wildcard characters: `[[<*>,<*>,<*>],[<*>,<*>,<*>],[<*>,<*>,<*>]]` would refer a recipe whose items, as long as each slot is filled, don't matter.
-
-### removeShapeless
+### 移除形状
 
 ```zenscript
-recipes.removeShapeless(output, inputs, wildcard);
+移除Shaped(输出、输入)；
 ```
 
-This one is more strict on which recipes to remove and will only remove shapeless recipes that craft `output` with `input`.  
-If `wildcard` is true, it will remove shapeless recipes that craft `output` with `input` and other, non-specified items (for example you could disable all shapeless recipe that contain, among others, Lapis as ingredient).
+这更严格的是要删除哪个配方，并且只会删除那些使用 `输入为 <code>输出` 的形状配方</code>。
 
-`output` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  
-`wildcard` is a boolan and optional (Will be the same as false if not specified)
+`输出` 是 [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`输入` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (例如，[[iron,iron,iron,iron,iron],[iron,null,iron],[iron,null,iron],[iron,null,iron]])
 
-Furthermore, `inputs` is optional. If omitted, the function will do the same as `recipe.remove`, though it will only remove shapeless Recipes.
+此外， `输入` 是可选的。 如果省略，函数将做到与 `recipe.remove`, 尽管它只会删除形状的配方。  
+`输入` 可以包含通配符字符： `[[<*>]<*>,<*>], [<*>,<*>,<*>],[<*>,<*>,<*>]` 会引述一个配方的项目，只要每个配方都填满，就不会有任何关系。
 
-### removeAll
-
-Removes all crafting recipes in the game.  
-A bit overkill, don't you think?
+### 移除休眠
 
 ```zenscript
-recipes.removeAll();
+removeShapeless(输出、输入、通配卡)；
 ```
 
-### Remove by name
+这更严格的是要删除哪些配方，并且只会删除那些用 `输入来制作 <code>输出` 的无形配方</code>。  
+如果 `通配符` 为 true 它会移除可制作 `输出` 带有 `输入` 等的合成配方 未指定的项目 (例如，您可以禁用所有含有Lapis等成分的无形配方)。
 
-As 1.12 introduces naming recipes, you can also remove recipes once you know their name. You can also use regex to remove multiple recipes at once. And no, if you don't know what regular expressions are, I won't explain it here!
+`输出` 是 [IIngrendient](/Vanilla/Variable_Types/IIngredient/)  
+`输入` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  
+`通配符` 是一个可选的 (如果未指定则与fals相同)
+
+此外， `输入` 是可选的。 如果省略，函数将做与 `recipe.remove`相同的事情，尽管它只会删除shapeless Recipes。
+
+### 全部移除
+
+移除游戏中的所有制造配方。  
+有点过度，不要你想吗？
 
 ```zenscript
-recipes.removeByRegex("name[1-9]");
-recipes.removeByRecipeName("modid:recipename");
+移除所有();
 ```
 
-### Remove by mod
+### 按名称删除
 
-You can also remove all recipes that were added by the mod specified.  
-You need to provide the mod's modid as string.
+由于1.12引入了命名配方，一旦您知道配方的名字，您也可以删除配方。 您也可以使用正则表达式同时删除多个配方。 如果你不知道是什么正则表达式，我不会在这里解释它！
 
 ```zenscript
-recipes.removeByMod("modularmachinery");
+removeByRegex("name[1-9]");
+配方.removeByRecipeName("moded:symposname");
 ```
 
-## Add Recipes
+### 通过模组删除
 
-### Notes On 1.12
+您也可以删除由指定的模组添加的所有配方。  
+您需要提供模组的模组作为字符串。
 
-On 1.12, each added recipe requires a UNIQUE identifier, because the forge dev team wanted it that way.  
-This means, all add functions now require an additional parameter `name` at the start (which cannot be omitted).  
-This means `recipe.addShaped(output,input);` now is `recipe.addShaped(name,output,input);`  
-All other functionality stay the same. Remember that `name` needs to be unique!  
-`name` is a string.
+```zenscript
+除去ByMod("modularmachinery")；
+```
 
-### addShaped
+## 添加配方
+
+### 第1.12段说明
+
+关于1.12，每个添加的配方都需要一个UNIQUE标识符，因为锻造开发团队希望这样做。  
+这意味着所有添加函数现在都需要额外的参数 `名称` 在开始时(不能省略)。  
+这意味着 `recipe.addShaped(output,input)。` 现在是 `配方。 ddShaped(name,output,input);`  
+所有其他功能都保持不变。 请记住 `name` 需要是唯一的！  
+`name` 是一个字符串。
+
+### 添加了
 
 ```zenscript
 //pre-1.12
-recipes.addShaped(output,inputs,function,action);
+配方.addShaped(输出,inputs,function,action);
 
 //1.12
-recipes.addShaped(name,output,inputs,function,action);
+配方.addShaped(name,output,inputs,function,action);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
+这将为 `输出` 创建一个形状的配方。使用 `输入` 作为属性。  
+如果添加一个 `函数` 作为第三个参数，您也可以使用一个函数来确定输出。  
+如果添加一个 `动作` 函数作为fiss参数， 如果项目是制作的，你也可以确定会发生什么情况。
 
 `name` is a string and needs to be unique but is also optional `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
 `inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions.
+`function` is a IRecipeFunction. 更多关于函数的信息，请参考 [关于 wiki 条目](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) 。  
+`动作` 是一个 IRecipepeAction。 关于操作的更多信息，请参阅 [关于wiki条目的](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction)。
 
-`inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+`输入` 是一个 2 维度 [元素](/Vanilla/Variable_Types/IIngredient/) 数组  
+铁护腿的写法将为 `[[iron,iron,iron,iron],[iron,null,iron],[iron,null,iron],[iron,] ull,iron]]`  
+如果这会令人困惑，请尝试将数组分割成每行一个数组
 
 ```zenscript
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
 
-recipes.addShaped("CTLeggings", leggings,
- [[iron,iron,iron],
+配方.addShaped("CTLeggings", leggings,
+ [iron,iron,iron,],
   [iron,null,iron],
   [iron,null,iron]]);
 ```
@@ -134,89 +134,89 @@ recipes.addShaped("CTLeggings", leggings,
 ### addShapedMirrored
 
 ```zenscript
-//Normal pre 1.12 syntax
-recipes.addShapedMirrored(output,inputs,function,action);
+//正常pre 1.12语法
+配方.addShapedMirrored(output,inputs,function);
 
-//Recommended 1.12 syntax
-recipes.addShapedMirrored(name,output,inputs,function,action);
+///Recommend1.12语法
+配方.addShapedMirrored(name,output,inputs,function,action);
 ```
 
-Same as `addShaped`, only that the recipe created this way is a mirrored recipe.
+与 `添加`相同。只有这样创建的配方才是一种镜像配方。
 
 ### addShapeless
 
 ```zenscript
-//Normal pre 1.12 syntax
-recipes.addShapeless(output,inputs,function,action)
+//正常pre 1.12语法
+配方.addShapeless(output,inputs,function,action)
 
-//Recommended 1.12 syntax
-recipes.addShapeless(name,output,inputs,function,action)
+///，建议1.12 语法
+配方.addShapeless(name,output,inputs,function,action)
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.
+这就为 `输出` 创建了一个无耻的配方。使用 `输入` 作为成分。  
+如果添加一个 `函数` 作为第三个参数，您也可以使用一个函数来确定输出。  
+如果添加一个 `动作` 函数作为fiss参数， 如果项目是制作的，你也可以确定会发生什么情况。
 
-`name` is a string and needs to be unique `output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])  
-`function` is a IRecipeFunction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction) for more information on functions. This is optional.  
-`action` is a IRecipeAction. Please refer to the [respecting wiki entry](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction) for more information on actions. This is optional.
+`名称` 是一个字符串，需要唯一的 `输出` 是一个 [IItemStack](/Vanilla/Items/IItemStack/)  
+`inputs` 是 [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (例如[<minecraft:dye:1>,<minecraft:dye:2>])  
+`函数` 是一个 IRecipeFunction。 更多关于函数的信息，请参阅 [关于wiki条目的](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipefunction)。 这是可选的。  
+`行动` 是一种IRecipeAction。 关于操作的更多信息，请参阅 [关于wiki条目的](/Vanilla/Recipes/Crafting/Recipe_Functions/#irecipeaction)。 这是可选的。
 
 ### addHidden
 
 ```zenscript
-addHiddenShapeless(String name, IItemStack output, IIngredient[] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action);
-addHiddenShaped(String name, IItemStack output, IIngredient[][] ingredients, @Optional IRecipeFunction function, @Optional IRecipeAction action, @Optional boolean mirrored);
+addHiddenShapeless(名称, IItemStack output, IIngredient[…]成分, @Optional IRecipeFunction 函数, @Optional IRecipeAction 动作);
+addHiddenShaped(名称, IItemStack 输出, IIngredient[] 成分, @Optional IRecipeFunction 函数, @Optional IRecipepe Action action, @Optional boolian mirrored);
 ```
 
-This creates a shapeless recipe for `output` using `inputs` as Ingredients that is named `name`.  
-If a `function` is added as third parameter, you can also use a function to determinate the output.  
-If an `action` function is added as forth parameter, you can also determine, what will happen, if the item is crafted.  
-For the shapeless variant you can also set if the recipe is `mirrored`, if omitted, it will not.
+这为 `输出` 创建了一个无耻的配方。使用 `输入` 作为命名为 `名称`的属性。  
+如果添加一个 `函数` 作为第三个参数，您也可以使用一个函数来确定输出。  
+如果一个 `动作` 函数被添加为fass参数， 如果项目是制作的，你也可以确定会发生什么情况。  
+如果配方是 `镜像`，您也可以设置无耻的变体，如果省略，它不会被忽略。
 
-## Other Functionality
+## 其他功能
 
-### Get all registered Crafting recipes.
+### 获取所有注册的制造配方。
 
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes.
+您可以使用它来获取一个 [`邮件列表<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) 其中包含所有注册的制造配方。
 
-    recipes.all;
+    所有配方；
     
 
-### Get all recipes for a given IIngredient
+### 获取给定的 IIngredient 的所有配方
 
-You can use this to get a [`List<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) that contains ALL registered crafting recipes for the given [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+您可以使用这个来获取一个 [`邮件列表<ICraftingRecipe>`](/Vanilla/Recipes/Crafting/ICraftingRecipe/) 其中包含所有注册的给定的配方 [IIngredient](/Vanilla/Variable_Types/IIngredient/)
 
-    //recipes.getRecipesFor(IIngredient ingredient);
-    recipes.getRecipesFor(<minecraft:iron_ingot>);
+    // 配方.getRecipesFor(Ingredient component);
+    配方.getRecipesFor(<minecraft:iron_ingot>);
     
 
-### Replace all item ingredients with another one
+### 将所有物品的原料替换为另一个
 
-You can use this to replace all [ingredients](/Vanilla/Variable_Types/IIngredient/) in a recipe with another one, for example all sticks with stones. It also accepts an optional third parameter that matches agains the recipe outputs. If the recipe
+你可以用它来替换配方中的所有 [成分](/Vanilla/Variable_Types/IIngredient/) ，比如所有棍棒都用石头。 它还接受一个可选的第三个参数，再次匹配配方输出。 如果配方
 
-    //recipes.replaceAllOccurences(IIngredient toReplace, IIngredient replaceWith, @Optional IIngredient forOutput);
+    //repluses.replace Alloccureces(IIngredient toReplace, IIngredient replace With, @Optional IIngredient forOutput);
     
-    //replaces every stick with stone
-    recipes.replaceAllOccurences(<minecraft:stick>, <minecraft:stone>);
+    ///将每个棍棒替换为石质
+    配方。 eplacAllocculences(<minecraft:stick>, <minecraft:stone>);
     
-    //Explicitly uses any output, replaces gold ingots with gold blocks
-    recipes.replaceAllOccurences(<ore:ingotGold>, <ore:blockGold>, <*>);
-    
-    
-    //Only replaces in recipes with a diamond_sword as output
-    recipes.replaceAllOccurences(<ore:gemDiamond>, <ore:blockDiamond>, <minecraft:diamond_sword>);
+    // Exploiling uses any output, places gold innotes with gold blocks
+    配方。 eplacAlloccurances(<ore:ingotGold>, <ore:blockGold>, <*>);
     
     
-    //conditions work as well -> replaces in recipes for any recipe output except tnt
-    recipes.replaceAllOccurences(<ore:gunpowder>, <minecraft:tnt>, <*>.only(function(item) {
+    ///Only replaces in restrictions with a diamond_sword as output
+    restrictions eplaceAlloccureces(<ore:gemDiamond>, <ore:blockDiamond>, <minecraft:diamond_sword>);
+    
+    
+    //conditions 工作 -> 替换除tnt 外任何配方输出的配方
+    配方。 eplaceAlloccureces(<ore:gunpowder>, <minecraft:tnt>, <*>. nly(function(item) por
         return !isNull(item) & !<minecraft:tnt>.matches(item);
-    }));
+    });
     
 
-### Craft
+### 制造业：
 
-You can even craft from inside `recipes`! The function will return an [IItemStack](/Vanilla/Items/IItemStack/) or `null` depending if a recipe is found or not.
+你甚至可以从 `内制作配方`！ 函数将返回 [IItemStack](/Vanilla/Items/IItemStack/) 或 `null` 取决于是否找到配方。
 
-    //recipes.craft(IItemStack[][]content);
-    recipes.craft([[<minecraft:iron_ingot>]]);
+    // 配方.craft(IItemStack[] []content);
+    配方.craft([[<minecraft:iron_ingot>]]);
