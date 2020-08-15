@@ -4,7 +4,7 @@ The *heatsources* package is used for adding or removing Heat Sources for certai
 
 **Note: These functions only work for items that have a block form!**
 
-## Calling
+## Anruf
 
 You can call the *heatsources* package using `mods.skyresources.heatsources`
 
