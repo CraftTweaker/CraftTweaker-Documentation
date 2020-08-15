@@ -15,7 +15,7 @@ import extrautilities2.Tweaker.IMachineRegistry;
 
 There are two types of machines:
 
-- Machines
+- 机器
 - Generators
 
 Machines consume energy, generators emit energy, otherwise they behave almost identically.
@@ -52,10 +52,10 @@ The parameters are:
 | ------------------- | ------------------------------------------------------------------- |
 | name（名称）            | string                                                              |
 | energyBufferSize    | int                                                                 |
-| energyTransferLimit | int                                                                 |
+| energyTransferLimit | 整数                                                                  |
 | inputSlots          | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
 | outputSlots         | [[IMachineSlot](/Mods/ExtraUtilities2/CustomMachines/IMachineSlot)] |
-| frontTexture        | string                                                              |
+| frontTexture        | 字符串                                                                 |
 | frontTextureActive  | string                                                              |
 | color (optional)    | int (defaults to `0xffffff` (black))                                |
 
