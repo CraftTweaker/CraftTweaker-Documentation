@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Welding;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
 Welding.addRecipe(String registryName, IIngredient input1, IIngredient input2, IItemStack output, int minTier);
