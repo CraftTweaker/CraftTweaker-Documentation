@@ -1,6 +1,6 @@
 # The Vat
 
-## Package
+## Paket
 
 `import mods.enderio.Vat;`
 
@@ -28,7 +28,7 @@ mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[
 mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.enderio.Vat.removeRecipe(ILiquidStack output);
