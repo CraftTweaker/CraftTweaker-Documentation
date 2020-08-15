@@ -1,37 +1,37 @@
 # Numistic Dynamo
 
-## Import the package
+## Импортировать пакет
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Чтобы сократить вызовы методов, вы можете [импортировать](/AdvancedFunctions/Import/) пакет так:
 
 ```zenscript
-import mods.thermalexpansion.NumisticDynamo;
+импорт mods.thermalexpansion.NumisticDynamo;
 ```
 
 ## Добавить топливо
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack stack, int energy);
+//mods.thermalexpansion.NumisticDynamo.addFuel(IItemStack, int energy);
 mods.thermalexpansion.NumisticDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Add Gem Fuel
+## Добавить топливо для Самоцветов
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.addGemFuel(IItemStack stack, int energy);
+//mods.thermalexpansion.NumisticDynamo.addGemFuel(IItemStack, int energy);
 mods.thermalexpansion.NumisticDynamo.addGemFuel(<minecraft:stick>, 13);
 ```
 
 ## Снимите топливо
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.removeFuel(IItemStack stack);
+//mods.thermalexpansion.NumisticDynamo.removeFuel(IItemStack);
 mods.thermalexpansion.NumisticDynamo.removeFuel(<minecraft:stick>);
 ```
 
-## Remove Gem Fuel
+## Снимите топливо для Самоцвета
 
 ```zenscript
-//mods.thermalexpansion.NumisticDynamo.removeGemFuel(IItemStack stack);
+//mods.thermalexpansion.NumisticDynamo.removeGemFuel(IItemStack);
 mods.thermalexpansion.NumisticDynamo.removeGemFuel(<minecraft:stick>);
 ```
