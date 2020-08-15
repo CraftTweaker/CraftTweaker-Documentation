@@ -1,33 +1,33 @@
-# Arcane Workbench
+# 奥术工作台
 
-This package allows you to add and remove recipes to/from the Arcane Workbench.
+此软件包允许您将配方添加到或从奥术师工作台中移除。
 
 ## 导入相关包
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+您可以 [导入](/AdvancedFunctions/Import/) 个软件包及其方法来方便检索这些方法。
 
 ```zenscript
-import mods.thaumcraft.ArcaneWorkbench;
+导入 mods.thaumcraft.ArcaneWorkbey;
 ```
 
-## Adding recipes
+## 添加配方
 
 ```zenscript
-//mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
-mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]]);
+//mods.thaumcraft.ArcaneWorkbound.registerShapedRecipe(名称, String research, int vis, CTapertStack[……]aspectList, IItemStack output, IIngredient[] input);
+mods. 奥氏体工作台 egisterShapedRecipe("test", "", 20, [<aspect:aer>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [[<minecraft:dirt>], [<minecraft:stick>], [<minecraft:grass>]);
 
 
-//mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[] input);
-mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
+/mods。 Haumcraft.ArcaneWorkbook.registerShapelessRecipe(名称, String research, int vis, CTAPotStack[……]aspectList, IItemStack output, IIngredient[……]输入)；
+mods. haumcraft.ArcaneWorkbey.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
 ```
 
-## Removing recipes
+## 删除配方
 
 ```zenscript
-//mods.thaumcraft.ArcaneWorkbench.removeRecipe(String name);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
+//mods.thaumcraft.ArcaneWorkbind.removeRecipe(String name);
+mods.thaumcraft.ArcaneWorkfind.removeRecipe("recipeName");
 
 
-//mods.thaumcraft.ArcaneWorkbench.removeRecipe(IItemStack output);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
+///mods.thaumcraft.ArcaneWorkbind.removeRecipe(IItemStack output);
+mods.thaumcraft.ArcaneWorkfac.removeRecipe(<thaumcraft:goggles>);
 ```
