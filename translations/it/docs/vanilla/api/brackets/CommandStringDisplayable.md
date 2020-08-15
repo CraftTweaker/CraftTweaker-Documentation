@@ -2,17 +2,17 @@
 
 This is A helper interface for every item that is returned by a BEP!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.brackets.CommandStringDisplayable
 ```
 
-## Properties
+## Proprietà
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Nome          | Tipo    | Ha Getter | Ha Setter |
+| ------------- | ------- | --------- | --------- |
+| commandString | Stringa | vero      | falso     |
 
