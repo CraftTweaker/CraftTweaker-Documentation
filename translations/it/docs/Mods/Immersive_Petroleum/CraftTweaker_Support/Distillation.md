@@ -1,30 +1,30 @@
-# Distillation
+# Distillazione
 
 ## addRecipe
 
-The Distillation "addRecipe" method consists of:
+Il metodo di distillazione "addRecipe" è costituito da:
 
-| Type          | Data Type                                            |
-| ------------- | ---------------------------------------------------- |
-| Output        | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
-| Output        | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
-| Input         | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
-| Flux/t        | Integer                                              |
-| Time in Ticks | Integer                                              |
-| Chance        | Float Array []                                       |
+| Tipo            | Tipo Di Dati                                         |
+| --------------- | ---------------------------------------------------- |
+| Output          | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[] |
+| Output          | [ItemStack](/Vanilla/Items/IItemStack/) Array[]      |
+| Input           | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
+| Flux/t          | Intero                                               |
+| Tempo in zecche | Intero                                               |
+| Probabilità     | Array Fluttuante []                                  |
 
-### Preface:
+### Prefazione:
 
-Each ItemStack Entry is linked to the corresponding "Chance" array entry.
+Ogni elemento dello stack è collegato alla corrispondente voce dell'array "Chance".
 
-Example:
+Esempio:
 
 ```zenscript
 [<minecraft:diamond>, <minecraft:leather> * 2]
 [1, 1]
 ```
 
-The Chance "Float" value should be between 0 and 1. Since it converts it from a float value to a percentage value between 0% and 100% I.E:
+Il valore "Float" della probabilità dovrebbe essere compreso tra 0 e 1. Dal momento che lo converte da un valore float a un valore percentuale compreso tra 0% e 100% I.E:
 
 ```zenscript
 0.5     = 50%
@@ -32,12 +32,12 @@ The Chance "Float" value should be between 0 and 1. Since it converts it from a 
 1       = 100%
 ```
 
-While you can submit a float higher than 1, it'll never yield a value over 100%
+Mentre è possibile inviare un galleggiante superiore a 1, non produrrà mai un valore superiore al 100%
 
-### Code Example:
+### Esempio Di Codice:
 
 ```zenscript
-//mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
+//mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energia, int tempo, float[] possibilità)
 
-mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);
+mods. mmersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, [1, 1]);
 ```
