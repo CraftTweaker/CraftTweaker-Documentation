@@ -76,7 +76,7 @@ if(enchA == enchB)
     print("Same!");
 ```
 
-## Example
+## 예제
 
 ```zenscript
 import crafttweaker.enchantments.IEnchantmentDefinition;
