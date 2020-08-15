@@ -8,14 +8,14 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thermalexpansion.MagmaticDynamo;
 ```
 
-## Add Fuel
+## 燃料を追加
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.addFuel(ILiquidStack stack, int energy);
 mods.thermalexpansion.MagmaticDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Remove Fuel
+## 燃料を取り除く
 
 ```zenscript
 //mods.thermalexpansion.MagmaticDynamo.removeFuel(ILiquidStack stack);
