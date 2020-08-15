@@ -1,9 +1,9 @@
 # MCCriticalHitEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
-| Parameter | Type                                                                                                                              | Description             |
+| Parámetro | Tipo                                                                                                                              | Descripción             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No description provided |
 
 
 
-## Methods
+## Métodos
 ### getDamageModifier
 
 The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
@@ -105,7 +105,7 @@ myMCCriticalHitEvent.isVanillaCritical();
 myMCCriticalHitEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parámetro | Tipo    | Descripción             |
 | --------- | ------- | ----------------------- |
 | cancel    | boolean | No description provided |
 
@@ -118,9 +118,9 @@ This set the damage multiplier for the hit. If you set it to 0, then the particl
 myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| mod       | float | No description provided |
+| Parámetro | Tipo     | Descripción             |
+| --------- | -------- | ----------------------- |
+| mod       | flotante | No description provided |
 
 
 
