@@ -1,7 +1,7 @@
-# Alloy Furnace
+# Сплав печи
 
-## Importing the Package
-`mods.nuclearcraft.AlloyFurnace`
+## Импортирование пакета
+`mods.nuclearcraft.Сплав печи`
 
 ## Добавление рецептов
 ```zenscript
@@ -11,6 +11,6 @@ mods.nuclearcraft.AlloyFurnace.addRecipe(IIngredient itemInput1, IIngredient ite
 ## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.AlloyFurnace.removeRecipeWithInput(IIngredient itemInput1, IIngredient itemInput2);
-mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.AlloyFurnace.removeRecipeWithOutput(IIngredient itemput);
 mods.nuclearcraft.AlloyFurnace.removeAllRecipes();
 ```
