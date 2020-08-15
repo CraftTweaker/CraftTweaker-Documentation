@@ -1,8 +1,8 @@
-# Commands
+# Comandos
 
 Here are the commands that matter:
 ```
-/ct hand
+/ct mano
 ```
 ```
 /ct log
@@ -23,5 +23,5 @@ Here are the commands that matter:
 /ct recipeTypes
 ```
 ```
-/ct help
+/ct ayuda
 ```
