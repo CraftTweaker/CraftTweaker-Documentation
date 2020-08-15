@@ -1,102 +1,102 @@
-# Available Interfaces
+# Verfügbare Schnittstellen
 
-All interfaces are part of the `zenscriptx.fun` package, meaning that the fully qualified name for a class `X` is `zenscriptx.fun.X`, which is useful for importing.
+Alle Schnittstellen sind Teil des `zenscriptx. un` Paket bedeutet, dass der voll qualifizierte Name für eine Klasse `X` `zenscriptx ist. un.X`, was für den Import nützlich ist.
 
-In the following list, functions are split into categories that represent what their general use is. Also, in all of the functions definitions, the letters `T`, `U`, and `R` define generic types, i.e. types that can be specified by the developer.
+In der folgenden Liste werden Funktionen in Kategorien aufgeteilt, die ihren allgemeinen Gebrauch repräsentieren. Auch in allen Funktionsdefinitionen die Buchstaben `T`, `U`, und `R` definieren generische Typen, i. . Typen, die vom Entwickler angegeben werden können.
 
-## BiConsumers
-A BiConsumer accepts two elements, which can be of different types, and consumes them, meaning uses them for internal processing and returns nothing.
+## Bikonsumenten
+Ein BiConsumer akzeptiert zwei Elemente, die verschiedene Typen haben können, und verbraucht diese, was bedeutet, dass sie für die interne Verarbeitung verwendet werden und nichts zurückgibt.
 
-| Class Name          | Function Signature                                  | Notizen |
-| ------------------- | --------------------------------------------------- | ------- |
-| `BiConsumer`        | `function accept(t as T, u as U) as void;`          | \-     |
-| `ObjDoubleConsumer` | `function accept(t as T, value as double) as void;` | \-     |
-| `ObjIntConsumer`    | `function accept(t as T, value as int) as void;`    | \-     |
-| `ObjLongConsumer`   | `function accept(t as T, value as long) as void;`   | \-     |
+| Klassenname         | Funktionssignatur                                           | Notizen |
+| ------------------- | ----------------------------------------------------------- | ------- |
+| `BiConsumer`        | `Funktion akzeptiert (t als T, u als U) als nichtig;`       | \-     |
+| `ObjDoubleConsumer` | `Funktion akzeptiert (t als T, Wert als doppelt) als leer;` | \-     |
+| `ObjIntConsumer`    | `Funktion akzeptiert (t als T, Wert als int) als leer;`     | \-     |
+| `ObjLongConsumer`   | `Funktion akzeptiert (t als T, Wert als lang) als leer;`    | \-     |
 
-## BiFunctions
-A BiFunction applies a function to two elements, which can be of different types, returning a single element, which can also be of a different type. It can be pictured mathematically as `r = f(s, t)`, where `f` is the bifunction.
+## BiFunktionen
+Eine BiFunction wendet eine Funktion auf zwei Elemente an, die verschiedene Typen haben können gibt ein einzelnes Element zurück, das auch von einem anderen Typ sein kann. Es kann mathematisch als `r = f(s, t)`abgebildet werden, wobei `f` die Bifunktion ist.
 
-| Class Name           | Function Signature                          | Notizen |
-| -------------------- | ------------------------------------------- | ------- |
-| `BiFunction`         | `function apply(t as T, u as U) as R;`      | \-     |
-| `ToDoubleBiFunction` | `function apply(t as T, u as U) as double;` | \-     |
-| `ToIntBiFunction`    | `function apply(t as T, u as U) as int;`    | \-     |
-| `ToLongBiFunction`   | `function apply(t as T, u as U) as long;`   | \-     |
+| Klassenname          | Funktionssignatur                         | Notizen |
+| -------------------- | ----------------------------------------- | ------- |
+| `BiFunktion`         | `anwenden(t wie T, u wie U) als R;`       | \-     |
+| `ToDoubleBiFunktion` | `anwenden(t wie T, u wie U) als doppelt;` | \-     |
+| `IntBiFunktion`      | `anwenden(t wie T, u wie U) als int;`     | \-     |
+| `ToLongBiFunktion`   | `anwenden(t wie T, u wie U) so lange;`    | \-     |
 
-## Binary Operators
-A Binary Operator applies a function to two elements of the **same type**, returning another element, which has the **same type** as the inputs. It can be mathematically pictured as `r = s op t`, where `op` is the binary operator.
+## Binäre Operatoren
+Ein Binäroperator wendet eine Funktion auf zwei Elemente des **gleichen Typs**an, gibt ein anderes Element zurück, das den **gleichen Typ** wie die Eingaben hat. Es kann mathematisch als `r = s op t`abgebildet werden, wobei `op` der binäre Operator ist.
 
-| Class Name             | Function Signature                                                   | Notizen                               |
-| ---------------------- | -------------------------------------------------------------------- | ------------------------------------- |
-| `BinaryOperator`       | `function apply(t as T, u as T) as T;`                               | `BinaryOperator` extends `BiFunction` |
-| `DoubleBinaryOperator` | `function applyAsDouble(left as double, right as double) as double;` | \-                                   |
-| `IntBinaryOperator`    | `function applyAsInt(left as int, right as int) as int;`             | \-                                   |
-| `LongBinaryOperator`   | `function applyAsLong(left as long, right as long) as long;`         | \-                                   |
+| Klassenname            | Funktionssignatur                                                            | Notizen                                 |
+| ---------------------- | ---------------------------------------------------------------------------- | --------------------------------------- |
+| `BinaryOperator`       | `anwenden(t wie T, u wie T) als T;`                                          | `BinaryOperator` erweitert `BiFunction` |
+| `DoubleBinaryOperator` | `Funktion applyAsDouble(links als doppelt, rechts als doppelt) als doppelt;` | \-                                     |
+| `IntBinaryOperator`    | `function applyAsInt(links als int, rechts wie int) als int;`                | \-                                     |
+| `LongBinaryOperator`   | `Funktion applyAsLong(linke so lange, rechte wie lange) wie lang;`           | \-                                     |
 
-## BiPredicates
-A BiPredicate tests the two given inputs, which may be of different types, and returns a boolean, representing whether they passed the test or not.
+## BiVorhersagen
+Ein BiPredicate testet die beiden angegebenen Eingänge, die verschiedene Typen haben können und gibt einen Boolean zurück und gibt an, ob den Test bestanden hat oder nicht.
 
-| Class Name    | Function Signature                       | Notizen |
-| ------------- | ---------------------------------------- | ------- |
-| `BiPredicate` | `function test(t as T, u as U) as bool;` | \-     |
+| Klassenname   | Funktionssignatur                          | Notizen |
+| ------------- | ------------------------------------------ | ------- |
+| `BiPredicate` | `funktionstest (t as T, u as U) als bool;` | \-     |
 
-## Consumers
-A Consumer accepts a single element and consumes it, meaning it uses it for internal processing and returns nothing.
+## Verbraucher
+Der Verbraucher akzeptiert ein einzelnes Element und verbraucht es, was bedeutet, dass er es zur internen Verarbeitung verwendet und nichts zurückgibt.
 
-| Class Name       | Function Signature                          | Notizen |
-| ---------------- | ------------------------------------------- | ------- |
-| `Consumer`       | `function accept(t as T) as void;`          | \-     |
-| `DoubleConsumer` | `function accept(value as double) as void;` | \-     |
-| `IntConsumer`    | `function accept(value as int) as void;`    | \-     |
-| `LongConsumer`   | `function accept(value as long) as void;`   | \-     |
+| Klassenname      | Funktionssignatur                                  | Notizen |
+| ---------------- | -------------------------------------------------- | ------- |
+| `Verbraucher`    | `Funktionsakzeptierung(t als T) als nichtig;`      | \-     |
+| `DoubleConsumer` | `Funktion akzeptiert (Wert als doppelt) als leer;` | \-     |
+| `IntConsumer`    | `Funktionsakzeptierung(Wert als int) als nichtig;` | \-     |
+| `LongConsumer`   | `Funktion akzeptiert (Wert als lang) als leer;`    | \-     |
 
-## Functions
-A Function applies a function to a single element, returning another element, which can be a different type from the inputs. It can be pictured mathematically as `r = f(t)`, where `f` is the function.
+## Funktionen
+Eine Funktion wendet eine Funktion auf ein einzelnes Element an und gibt ein anderes Element zurück, das einen anderen Typ als die Eingänge haben kann. Es kann mathematisch als `r = f(t)`abgebildet werden, wobei `f` die Funktion ist.
 
-| Class Name             | Function Signature                                 | Notizen |
-| ---------------------- | -------------------------------------------------- | ------- |
-| `Funktion`             | `function apply(t as T) as R;`                     | \-     |
-| `DoubleFunction`       | `function apply(value as double) as R;`            | \-     |
-| `DoubleToIntFunction`  | `function applyAsInt(value as double) as int;`     | \-     |
-| `DoubleToLongFunction` | `function applyAsLong(value as double) as long;`   | \-     |
-| `IntFunction`          | `function apply(value as int) as R;`               | \-     |
-| `IntToDoubleFunction`  | `function applyAsDouble(value as int) as double;`  | \-     |
-| `IntToLongFunction`    | `function applyAsLong(value as int) as long;`      | \-     |
-| `LongFunction`         | `function apply(value as long) as R;`              | \-     |
-| `LongToDoubleFunction` | `function applyAsDouble(value as long) as double;` | \-     |
-| `LongToIntFunction`    | `function applyAsInt(value as long) as int;`       | \-     |
-| `ToDoubleFunction`     | `function apply(value as T) as double;`            | \-     |
-| `ToIntFunction`        | `function apply(value as T) as int;`               | \-     |
-| `ToLongFunction`       | `function apply(value as T) as long;`              | \-     |
+| Klassenname            | Funktionssignatur                                   | Notizen |
+| ---------------------- | --------------------------------------------------- | ------- |
+| `Funktion`             | `anwenden(t wie T) als R;`                          | \-     |
+| `Doppelfunktion`       | `die Funktion anwenden (Wert als doppelt) als R;`   | \-     |
+| `DoubleToIntFunktion`  | `function applyAsInt(Wert als doppelt) als int;`    | \-     |
+| `DoubleToLongFunction` | `Funktion applyAsLong(doppelter Wert) so lang;`     | \-     |
+| `IntFunction`          | `anwenden(Wert als int) als R;`                     | \-     |
+| `IntToDoubleFunktion`  | `Funktion applyAsDouble(Wert als int) als doppelt;` | \-     |
+| `IntToLongFunction`    | `Funktion applyAsLong(Wert als int) als lang;`      | \-     |
+| `Langfunktion`         | `anwenden(Wert so lang) wie R;`                     | \-     |
+| `LongToDoubleFunktion` | `Funktion applyAsDouble(Wert so lang) als doppelt;` | \-     |
+| `LongToIntFunktion`    | `Funktion applyAsInt(Wert so lang) wie int;`        | \-     |
+| `ToDoubleFunktion`     | `anwenden(Wert als T) als doppelt;`                 | \-     |
+| `IntFunktion`          | `anwenden(Wert als T) als int;`                     | \-     |
+| `ToLongFunction`       | `anwenden(Wert als T) als lang;`                    | \-     |
 
-## Predicates
-A Predicate tests the given input and returns a boolean, representing whether it passed the test or not.
+## Prädikate
+Ein Predicate testet den angegebenen Eingabewert und gibt einen Boolean zurück, der darstellt, ob er den Test bestanden hat oder nicht.
 
-| Class Name        | Function Signature                        | Notizen |
-| ----------------- | ----------------------------------------- | ------- |
-| `Predicate`       | `function test(t as T) as bool;`          | \-     |
-| `DoublePredicate` | `function test(value as double) as bool;` | \-     |
-| `IntPredicate`    | `function test(value as int) as bool;`    | \-     |
-| `LongPredicate`   | `function test(value as long) as bool;`   | \-     |
+| Klassenname       | Funktionssignatur                            | Notizen |
+| ----------------- | -------------------------------------------- | ------- |
+| `Predicate`       | `funktionstest (t als T) als Bool;`          | \-     |
+| `DoublePredicate` | `funktionstest (Wert als doppelt) als Bool;` | \-     |
+| `IntPredicate`    | `function test(value as int) as bool;`       | \-     |
+| `LongPredicate`   | `function test(value as long) as bool;`      | \-     |
 
-## Suppliers
-A Supplier outputs an instance of a given type, be it either created on the fly or cached.
+## Lieferanten
+Ein Lieferant gibt eine Instanz eines bestimmten Typs aus, ob sie entweder während der Fliege erstellt oder zwischengespeichert wird.
 
-| Class Name        | Function Signature                  | Notizen |
-| ----------------- | ----------------------------------- | ------- |
-| `Supplier`        | `function get() as T;`              | \-     |
-| `BooleanSupplier` | `function getAsBoolean() as bool;`  | \-     |
-| `DoubleSupplier`  | `function getAsDouble() as double;` | \-     |
-| `IntSupplier`     | `function getAsInt() as int;`       | \-     |
-| `LongSupplier`    | `function getAsLong() as long;`     | \-     |
+| Klassenname         | Funktionssignatur                     | Notizen |
+| ------------------- | ------------------------------------- | ------- |
+| `Lieferant`         | `Funktion get() als T;`               | \-     |
+| `Boolean-Lieferant` | `Funktion getAsBoolean() als Bool;`   | \-     |
+| `Doppellieferant`   | `Funktion getAsDouble() als doppelt;` | \-     |
+| `IntLieferant`      | `Funktion getAsInt() als int;`        | \-     |
+| `Langlieferant`     | `Funktion getAsLong() als lang;`      | \-     |
 
-## Unary Operators
-A Unary operator applies a function to an element of a given type, returning another element, which has to be of the **same type** as the inputs. It can be pictured mathematically as `r = op t`, where `op` is the unary operator.
+## Unare Operatoren
+Ein Unary-Operator wendet eine Funktion auf ein Element eines bestimmten Typs an und gibt ein anderes Element zurück, die vom **gleichen Typ** wie die Eingaben sein muss. Es kann mathematisch als `r = op t`abgebildet werden, wobei `op` der unare Operator ist.
 
-| Class Name            | Function Signature                                     | Notizen                            |
-| --------------------- | ------------------------------------------------------ | ---------------------------------- |
-| `UnaryOperator`       | `function apply(t as T) as T;`                         | `UnaryOperator` extends `Function` |
-| `DoubleUnaryOperator` | `function applyAsDouble(operand as double) as double;` | \-                                |
-| `IntUnaryOperator`    | `function applyAsInt(operand as int) as int;`          | \-                                |
-| `LongUnaryOperator`   | `function applyAsLong(operand as long) as long;`       | \-                                |
+| Klassenname           | Funktionssignatur                                        | Notizen                              |
+| --------------------- | -------------------------------------------------------- | ------------------------------------ |
+| `UnaryOperator`       | `anwenden(t wie T) als T;`                               | `UnaryOperator` erweitert `Funktion` |
+| `DoubleUnaryOperator` | `function applyAsDouble(operand as double) als doppelt;` | \-                                  |
+| `IntUnaryOperator`    | `function applyAsInt(operand as int) als int;`           | \-                                  |
+| `LongUnaryOperator`   | `Funktion applyAsLong(Operand so lang) wie lang;`        | \-                                  |
