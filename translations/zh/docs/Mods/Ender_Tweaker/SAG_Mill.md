@@ -4,7 +4,7 @@
 
 `import mods.enderio.SagMill;`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] output** The results of the recipe.
 - **float[] chances** The chance that this item appears. Must have the same length as output.
@@ -21,7 +21,7 @@ mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);
