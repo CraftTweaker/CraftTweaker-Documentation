@@ -9,9 +9,9 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter    | GetterMethod      | Return Type      |
 | ------------ | ----------------- | ---------------- |
-| name         | getName()         | string           |
+| name         | getName()         | 文字列              |
 | defaultValue | getDefaultValue() | double           |
-| shouldWatch  | getShouldWatch()  | boolean          |
+| shouldWatch  | getShouldWatch()  | boolean型         |
 | parent       | getParent()       | IEntityAttribute |
 
 ## More ZenMethods
