@@ -1,6 +1,6 @@
-# Condenser
+# Condensatore
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.condenser`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double
 ```zenscript
 mods.nuclearcraft.condenser.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.condenser.removeRecipeWithOutput([fluidOutput]);
-mods.nuclearcraft.condenser.removeAllRecipes();
+mods.nuclearcraft.condenser.removeAllRicette();
 ```
