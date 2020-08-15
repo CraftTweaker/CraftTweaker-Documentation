@@ -4,7 +4,7 @@
 
 `import mods.enderio.Vat;`
 
-## Method
+## 方法
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** - The output fluid (right tank).
 
@@ -28,7 +28,7 @@ mods.enderio.Vat.addRecipe(ILiquidStack output, ILiquidStack input, IIngredient[
 mods.enderio.Vat.addRecipe(<liquid:lava>, <liquid:water>, [<minecraft:glowstone_dust>], [5], [<minecraft:fire_charge>], [10], 500);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.Vat.removeRecipe(ILiquidStack output);
