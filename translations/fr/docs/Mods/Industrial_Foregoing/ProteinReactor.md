@@ -1,9 +1,9 @@
-# Protein Reactor
+# Réacteur protéinique
 
 ### Importation en cours
 
 ```zenscript
-import mods.industrialforegoing.ProteinReactor;
+Importer mods.industrialforegoing.ProteinReactor;
 ```
 
 ### Ajout en cours
