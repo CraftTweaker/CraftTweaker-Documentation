@@ -16,7 +16,7 @@ import mods.calculator.redstone;
 redstone.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## 移除
 ```zenscript
 redstone.removeRecipe(IIngredient input);
 ```
