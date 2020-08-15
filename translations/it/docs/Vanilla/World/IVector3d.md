@@ -1,16 +1,16 @@
 # IVector3d
 
-A Vector3d object is a vector that uses three doubles for the directions.  
-They have several utility methods and getters.
+Un oggetto Vector3d è un vettore che utilizza tre raddoppia per le direzioni.  
+Hanno diversi metodi di utilità e getter.
 
 ## Importare la classe
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IVector3d`
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
+`importare crafttweaker.world.IVector3d`
 
-## Creating a new IVector3d object
+## Creare un nuovo oggetto IVector3d
 
-If you ever find yourself in the need of creating a new IVector3d object, you can use this method:
+Se mai ti trovi nella necessità di creare un nuovo oggetto IVector3d, puoi usare questo metodo:
 
 ```zenscript
 //crafttweaker.world.IVector3d.create(double x, double y, double z);
@@ -19,18 +19,18 @@ crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
 
 ## ZenGetters
 
-| ZenGetter  | Tipo      |
-| ---------- | --------- |
-| x          | doppia    |
-| y          | doppia    |
-| z          | doppia    |
-| normalized | IVector3d |
+| ZenGetter    | Tipo      |
+| ------------ | --------- |
+| x            | doppia    |
+| y            | doppia    |
+| z            | doppia    |
+| normalizzato | IVector3d |
 
 ## ZenMethods
 
-- double dotProduct(IVector3d other);
+- doppio dotProduct(IVector3d altro);
 - IVector3d crossProduct(IVector3d other);
-- IVector3d subtract(IVector3d other);
+- IVector3d sottra(IVector3d altro);
 - IVector3d add(IVector3d other);
-- double distanceTo(IVector3d other);
-- IVector3d scale(double factor);
+- doppia distanzaTo(IVector3d altro);
+- Scala IVector3d (doppio fattore);
