@@ -11,7 +11,7 @@ BasinSqueezing.add(<item:minecraft:dirt>, <liquid:water> * 1000);
 BasinSqueezing.add(<ore:cobblestone> * 2, <liquid:lava> * 1000, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
