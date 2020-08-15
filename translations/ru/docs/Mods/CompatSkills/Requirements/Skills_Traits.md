@@ -1,35 +1,35 @@
-# Skills & Traits
+# Навыки & симптомы
 
-## Skills List:
+## Список навыков:
 
-| Skills    | ResourceLocation      |
-|:--------- |:--------------------- |
-| Agility   | reskillable:agility   |
-| Attack    | reskillable:attack    |
-| Building  | reskillable:building  |
-| Defense   | reskillable:defense   |
-| Farming   | reskillable:farming   |
-| Gathering | reskillable:gathering |
-| Magic     | reskillable:magic     |
-| Mining    | reskillable:mining    |
+| Навыки             | Расположение ресурсов |
+|:------------------ |:--------------------- |
+| Ловкость           | устрашаемая:ловкость  |
+| Атака              | reskillable:attack    |
+| Здание             | устрашаем: строение   |
+| Защита             | устрашаем: защита     |
+| Сельское хозяйство | reskillable:farming   |
+| Сбор               | устрашающий: сбор     |
+| Магия              | устрашаемая:магия     |
+| Добыча             | reskillable: майнинг  |
 
-## Traits List:
+## Список симптомов:
 
-| Parent Skill |        Trait         | ResourceLocation             |
-|:------------:|:--------------------:|:---------------------------- |
-|   Agility    |      Road Walk       | reskillable:roadwalk         |
-|   Agility    |       Sidestep       | reskillable:sidestep         |
-|    Attack    |    Battle Spirit     | reskillable:battle_spirit    |
-|    Attack    |     Neutralissse     | reskillable:neutralissse     |
-|   Building   | Chorus Transmutation | reskillable:chorus_transmute |
-|   Building   |   Perfect Recovery   | reskillable:perfect_recover  |
-|   Defense    |     Effect Twist     | reskillable:effect_twist     |
-|   Defense    |      Undershirt      | reskillable:undershirt       |
-|   Farming    |     Green Thumb      | reskillable:green_thumb      |
-|   Farming    |      More Wheat      | reskillable:more_wheat       |
-|  Gathering   |    Drop Guarantee    | reskillable:drop_guarantee   |
-|  Gathering   |   Lucky Fisherman    | reskillable:lucky_fisherman  |
-|    Magic     |    Golden Osmosis    | reskillable:golden_osmosis   |
-|    Magic     |      Safe Port       | reskillable:safe_port        |
-|    Mining    |    Fossil Digger     | reskillable:fossil_digger    |
-|    Mining    |   Obsidian Smasher   | reskillable:obsidian_smasher |
+| Родительский навык |         Симптом          | Расположение ресурсов           |
+|:------------------:|:------------------------:|:------------------------------- |
+|      Ловкость      |     Дорога на Валке      | устрашающий:дорожный ход        |
+|      Ловкость      |         Sidestep         | reskillable:sidestep            |
+|       Атака        |        Боевой Дух        | reskillable:battle_spirit       |
+|       Атака        |       Нейтралитет        | устранимая:нейтрализм           |
+|       Здание       |    Трансмутация хора     | выстрел:chorus_transmute        |
+|       Здание       | Идеальное восстановление | reskillable:perfect_recover     |
+|       Защита       |      Сдвиг эффекта       | устрашающий:effect_twist        |
+|       Защита       |         Футболка         | reskillable: Футболка           |
+| Сельское хозяйство |      Зелёный ярлык       | reskillable:green_thumb         |
+| Сельское хозяйство |      Больше пшеницы      | устрашаемая:more_пшеница        |
+|        Сбор        |    Гарантия выпадения    | reskillable:drop_guarantee      |
+|        Сбор        |     Счастливый рыбак     | умный рыбак: удачный_рыбак      |
+|       Магия        |      Золотой Осмоз       | reskillable:golden_osmosis      |
+|       Магия        |     Безопасный порт      | reskillable:safe_port           |
+|       Добыча       |   Ископаемый Копатель    | устрашающий:ископаемый_копатель |
+|       Добыча       |     Obsidian Smasher     | выстреливаемый:obsidian_smasher |
