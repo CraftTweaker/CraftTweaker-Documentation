@@ -7,15 +7,15 @@ import mods.calculator.restorationChamber;
 
 ## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** 入力。
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** 出力。
 
 ## 加算
 ```zenscript
-restorationChamber.addRecipe(IIngredient input, IIngredient output);
+restorationChamber.addRecipe(IIngredient入力, IIngredient出力);
 ```
 
 ## 削除
 ```zenscript
-restorationChamber.removeRecipe(IIngredient output);
+restorationChamber.removeRecipe(IIngredient出力);
 ```
