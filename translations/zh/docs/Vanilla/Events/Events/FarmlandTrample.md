@@ -1,10 +1,10 @@
 # FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+每当一块农田即将被困时，都会发射法尔特姆普尔事件。 取消该事件将防止方块被陷阱。
 
 ## 注
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` 含有在击中农田之前降落的距离。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -12,7 +12,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+FarmlandTrample Events 实现了以下接口，并且能够调用他们所有的方法/getter/setters：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
