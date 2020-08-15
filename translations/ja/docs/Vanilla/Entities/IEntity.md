@@ -25,42 +25,42 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
 | air                      | getAir()          | int型                                                        |
-| alive                    | isAlive()         | boolean                                                     |
-| alwaysRenderNameTag      |                   | boolean                                                     |
+| alive                    | isAlive()         | boolean型                                                    |
+| alwaysRenderNameTag      |                   | boolean型                                                    |
 | armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| canBeAttackedWithItem    |                   | boolean                                                     |
-| canBeCollidedWith        |                   | boolean                                                     |
-| canPassengerSteer        |                   | boolean                                                     |
-| canRiderInteract         |                   | boolean                                                     |
+| canBeAttackedWithItem    |                   | boolean型                                                    |
+| canBeCollidedWith        |                   | boolean型                                                    |
+| canPassengerSteer        |                   | boolean型                                                    |
+| canRiderInteract         |                   | boolean型                                                    |
 | controllingPassenger     |                   | *IEntity*                                                   |
 | customName               | getCustomName()   | 文字列型                                                        |
-| definition               |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
-| dimension                | getDimension()    | int                                                         |
-| doesTriggerPressurePlate |                   | boolean                                                     |
+| 定義                       |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
+| 寸法                       | getDimension()    | int                                                         |
+| doesTriggerPressurePlate |                   | boolean型                                                    |
 | equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | float                                                       |
-| hasCustomName            |                   | boolean                                                     |
-| hasNoGravity             |                   | boolean                                                     |
+| eyeHeight                |                   | float型                                                      |
+| hasCustomName            |                   | boolean型                                                    |
+| hasNoGravity             |                   | boolean型                                                    |
 | heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
 | id                       |                   | int型                                                        |
-| immuneToFire             | isImmuneToFire()  | boolean                                                     |
-| isBeingRidden            |                   | boolean                                                     |
-| isBoss                   |                   | boolean                                                     |
-| isBurning                |                   | boolean                                                     |
-| isGlowing                |                   | boolean                                                     |
-| isImmuneToExplosions     |                   | boolean                                                     |
-| isInLava                 |                   | boolean                                                     |
-| isInsideOpaqueBlock      |                   | boolean                                                     |
-| isInvisible              |                   | boolean                                                     |
-| isInvulnerable           |                   | boolean                                                     |
-| isInWater                |                   | boolean                                                     |
-| isOutsideBorder          |                   | boolean                                                     |
-| isOverWater              |                   | boolean                                                     |
-| isPushedByWater          |                   | boolean                                                     |
-| isRiding                 |                   | boolean                                                     |
-| isSilent                 |                   | boolean                                                     |
-| isSneaking               |                   | boolean                                                     |
-| isSprinting              |                   | boolean                                                     |
+| immuneToFire             | isImmuneToFire()  | boolean型                                                    |
+| isBeingRidden            |                   | boolean型                                                    |
+| isBoss                   |                   | boolean型                                                    |
+| isBurning                |                   | boolean型                                                    |
+| isGlowing                |                   | boolean型                                                    |
+| isImmuneToExplosions     |                   | boolean型                                                    |
+| isInLava                 |                   | boolean型                                                    |
+| isInsideOpaqueBlock      |                   | boolean型                                                    |
+| isInvisible              |                   | boolean型                                                    |
+| isInvulnerable           |                   | boolean型                                                    |
+| isInWater                |                   | boolean型                                                    |
+| isOutsideBorder          |                   | boolean型                                                    |
+| isOverWater              |                   | boolean型                                                    |
+| isPushedByWater          |                   | boolean型                                                    |
+| isRiding                 |                   | boolean型                                                    |
+| isSilent                 |                   | boolean型                                                    |
+| isSneaking               |                   | boolean型                                                    |
+| isSprinting              |                   | boolean型                                                    |
 | lowestRidingEntity       |                   | *IEntity*                                                   |
 | maxFallHeight            |                   | int                                                         |
 | maxInPortalTime          |                   | int                                                         |
@@ -70,10 +70,10 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | portalCooldowne          |                   | int                                                         |
 | position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
-| shouldRiderSit           |                   | boolean                                                     |
+| shouldRiderSit           |                   | boolean型                                                    |
 | tags                     |                   | List<string\>                                              |
 | team                     |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
-| wet                      | isWet()           | boolean                                                     |
+| wet                      | isWet()           | boolean型                                                    |
 | world                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
 | x                        | getX()            | double                                                      |
 | y                        | getY()            | double                                                      |
@@ -84,30 +84,30 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posX                     |                   | double                                                      |
 | posY                     |                   | double                                                      |
 | posZ                     |                   | double                                                      |
-| rotationYaw              |                   | float                                                       |
-| rotationPitch            |                   | float                                                       |
+| rotationYaw              |                   | float型                                                      |
+| rotationPitch            |                   | float型                                                      |
 | lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
 ## ZenSetters
 
-| SetterName          | SetterMethod        | Parameter Type                         |
+| SetterName          | SetterMethod        | パラメータタイプ                               |
 | ------------------- | ------------------- | -------------------------------------- |
 | air                 | setAir(seconds)     | int                                    |
-| alwaysRenderNameTag |                     | boolean                                |
-| customName          | setCustomName(name) | string                                 |
-| dimension           | setDimension(id)    | int                                    |
+| alwaysRenderNameTag |                     | boolean型                               |
+| customName          | setCustomName(name) | 文字列                                    |
+| 寸法                  | setDimension(id)    | int                                    |
 | fire                | setFire(seconds)    | int                                    |
-| hasNoGravity        |                     | boolean                                |
+| hasNoGravity        |                     | boolean型                               |
 | id                  |                     | int                                    |
-| isGlowing           |                     | boolean                                |
-| isInvisible         |                     | boolean                                |
-| isOutsideBorder     |                     | boolean                                |
-| isSilent            |                     | boolean                                |
-| isSneaking          |                     | boolean                                |
-| isSprinting         |                     | boolean                                |
+| isGlowing           |                     | boolean型                               |
+| isInvisible         |                     | boolean型                               |
+| isOutsideBorder     |                     | boolean型                               |
+| isSilent            |                     | boolean型                               |
+| isSneaking          |                     | boolean型                               |
+| isSprinting         |                     | boolean型                               |
 | position            | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| rotationYaw         |                     | float                                  |
-| rotationPitch       |                     | float                                  |
+| rotationYaw         |                     | float型                                 |
+| rotationPitch       |                     | float型                                 |
 | motionX             |                     | double                                 |
 | motionY             |                     | double                                 |
 | motionZ             |                     | double                                 |
