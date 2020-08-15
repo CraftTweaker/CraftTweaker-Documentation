@@ -1,9 +1,9 @@
-# IOreDictEntry
+# IOreDictentry
 
 When the [IOreDict](/Vanilla/OreDict/IOreDict/) is the lexicon, the IOreDictEntries are the lexicon's entries.  
 They consist of a name (OreDictionary name) and an explanation (all matching items).
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.oredict.IOreDictEntry;`
@@ -20,13 +20,13 @@ There are multiple ways of getting an IOreDictEntry Object: If you refer to an o
 
 You can use these getters to retrieve some information on the oredict:
 
-| name      | Description                              | Return type                              |
+| Nazwa     | Opis                                     | Typ zwrotu                               |
 | --------- | ---------------------------------------- | ---------------------------------------- |
-| name      | Returns the oreDict's name               | string                                   |
+| Nazwa     | Returns the oreDict's name               | ciąg znaków                              |
 | empty     | Returns if the oreDict is empty          | bool                                     |
 | firstItem | Returns the first of the oreDict's items | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethods
+## Metody ZenMethods
 
 You can use these methos on an IOreDictEntry Object:
 
