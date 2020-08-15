@@ -2,7 +2,7 @@
 
 A `MixRecipeBuilder` is used to build and add High Oven's Mix Recipe to the game.
 
-## Importing the package
+## Importowanie pakietu
 
 Better be safe than sorry and import the package
 
@@ -25,11 +25,11 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 ## Attributes
 
-| Attribute   | ZenGetter   | ZenSetter            | Type                      | Info                                                                     |
+| Attribute   | ZenGetter   | ZenSetter            | Typ                       | Info                                                                     |
 | ----------- | ----------- | -------------------- | ------------------------- | ------------------------------------------------------------------------ |
-| output      | `output`    | :heavy_check_mark: | `ILiquidStack`            | the output produced by the MixRecipe                                     |
+| wyjście     | `wyjście`   | :heavy_check_mark: | `ILiquidStack`            | the output produced by the MixRecipe                                     |
 | input       | `input`     | :heavy_check_mark: | `ILiquidStack`            | the input of the MixRecipe                                               |
-| temperature | `temp`      | :heavy_check_mark: | `int`                     | the minimum temperature, in Kelvin                                       |
+| temperatura | `temp`      | :heavy_check_mark: | `odcień`                  | the minimum temperature, in Kelvin                                       |
 | oxidizers   | `oxidizers` | :x:                  | `List<IIngredient>` | the valid oxidizers for the recipe at the time the attribute is accessed |
 | reducers    | `reducers`  | :x:                  | `List<IIngredient>` | the valid reducers for the recipe at the time the attribute is accessed  |
 | purifiers   | `purifiers` | :x:                  | `List<IIngredient>` | the valid purifiers for the recipe at the time the attribute is accessed |
@@ -37,11 +37,11 @@ var builder = HighOven.newMixRecipe(<liquid:steel> * 72, <liquid:iron> * 144, 13
 
 ## Methods
 
-| Method                                                 | Return type        | Info                                                                                      |
+| Metoda                                                 | Typ zwrotu         | Info                                                                                      |
 | ------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------------- |
-| `getOxidizerChance(IIngredient oxidizer)`              | `int`              | The chance in percent that the oxidizer is consumed, or `-1` if the oxidizer is not valid |
-| `getReducerChance(IIngredient reducer)`                | `int`              | The chance in percent that the reducer is consumed, or `-1` if the reducer is not valid   |
-| `getOxidizerChance(IIngredient purifier)`              | `int`              | The chance in percent that the purifier is consumed, or `-1` if the oxidizer is not valid |
+| `getOxidizerChance(IIngredient oxidizer)`              | `odcień`           | The chance in percent that the oxidizer is consumed, or `-1` if the oxidizer is not valid |
+| `getReducerChance(IIngredient reducer)`                | `odcień`           | The chance in percent that the reducer is consumed, or `-1` if the reducer is not valid   |
+| `getOxidizerChance(IIngredient purifier)`              | `odcień`           | The chance in percent that the purifier is consumed, or `-1` if the oxidizer is not valid |
 | `addOxidizer(IIngredient oxidizer, int consumeChance)` | `MixRecipeBuilder` | Add the oxidizer with the given consume chance (in percent)                               |
 | `addReducer(IIngredient reducer, int consumeChance)`   | `MixRecipeBuilder` | Add the reducer with the given consume chance (in percent)                                |
 | `addPurifier(IIngredient purifier, int consumeChance)` | `MixRecipeBuilder` | Add the purifier with the given consume chance (in percent)                               |
