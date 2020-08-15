@@ -1,53 +1,53 @@
-# OreEntry
+# OreEintrag
 
-An OreEntry is a material like Gold, Diamond, Coal, Redstone and so on.  
-You can use this to get several [OreDictEntries](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/).
+Ein OreEntry ist ein Material wie Gold, Diamant, Kohle, Redstone und so weiter.  
+Sie können dies verwenden, um mehrere [OreDictEinträge](/Vanilla/OreDict/IOreDictEntry/), [IItemStacks](/Vanilla/Items/IItemStack/), [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) zu erhalten.
 
 ## Methoden
 
-In general, the methods take a string parameter that is a prefix to be used.  
-For example, an OreEntry for `"Gold"`, called with the prefix `"dust"` will return Gold Dust.  
-For these examples, we will assume this was declared:  
-The comments after the example calls will state what the method call can return (unless in the extra category).
+Im Allgemeinen nehmen die Methoden einen String-Parameter, der ein Präfix ist, der verwendet werden soll.  
+Zum Beispiel ein OreEintrag für `"Gold"`, aufgerufen mit dem Präfix `"Staub"` wird Gold Staub zurückgeben.  
+Für diese Beispiele, wir gehen davon aus, dass dies deklariert wurde:  
+Die Kommentare nach den Beispielaufrufen geben an, was die Methodenaufrufe zurückgeben können (außer in der zusätzlichen Kategorie).
 
 ```zenscript
 val oreEntry = mods.jaopca.JAOPCA.getOre("Gold");
 ```
 
-### Get entry properties
+### Eintragseigenschaften abrufen
 
-You can get these properties:
+Sie können diese Eigenschaften erhalten:
 
 ```zenscript
-oreEntry.energyModifier; //1.0 as double
-oreEntry.rarity; //1.0 as double
-oreEntry.oreType; //"INGOT" as string
+oreEntry.energyModifier; //1.0 als double
+oreEntry.rarity; //1.0 als double
+oreEntry.oreType; //"INGOT" als string
 ```
 
-### Get OreName or OreNameSynonyms
+### OreName oder OreNameSynonyms erhalten
 
-The ore name is essentialy how it is registered and what you use in a getOre to retrieve it.  
-The ore name synonyms are synonyms that mods or pack authors can register to combine two or more oreEntries (e.g. "Aluminum" and "Aluminium"). Most oreEntries will probably have nothing registered, though. The synonyms getter will return a list containing all the synonyms as strings.
+Der Erzname ist unentbehrlich, wie er registriert wird und was du in einem getOre verwendest, um ihn abzurufen.  
+Die Erznamenssynonyme sind Synonyme, die Mods oder Paketautoren registrieren können, um zwei oder mehr OreEinträge zu kombinieren (z. "Aluminium" und "Aluminium"). Die meisten OreEntries werden wahrscheinlich nichts registriert. Der Synonym Getter gibt eine Liste zurück, die alle Synonyme als Strings enthält.
 
 ```zenscript
 oreEntry.oreName; //"Gold"
 oreEntry.oreNameSynonyms; //[]
 ```
 
-### Get IOreDictEntry
+### IOreDictEintrag herunterladen
 
-Returns a new [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) with the given prefix.
+Gibt einen neuen [IOreDictEintrag](/Vanilla/OreDict/IOreDictEntry/) mit dem angegebenen Präfix zurück.
 
 ```zenscript
-oreEntry.getOreDictEntry("dust"); //<ore:dustGold>
+oreEntry.getOreDictEntry("staub"); //<ore:dustGold>
 ```
 
 ### Get IItemStack
 
-Returns a new [IItemStacks](/Vanilla/Items/IItemStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Item is found.
+Gibt einen neuen [IItemStacks](/Vanilla/Items/IItemStack/) zurück, der mit dem angegebenen Präfix übereinstimmt.  
+Sie können einen alternativen Fallback-Präfix angeben, der verwendet werden kann, wenn kein passendes Element gefunden wird.
 
-If no matching item is found and no matching item is found using the fallback prefix (if provided), it will return `null`.
+Wenn kein passendes Element gefunden und kein passendes Element mit dem Fallback-Präfix gefunden wurde (falls vorhanden), wird es `null` zurückgeben.
 
 ```zenscript
 //oreEntry.getItemStack(prefix);
@@ -61,10 +61,10 @@ oreEntry.getItemStack("invalid", "faulty"); //null
 
 ### Get ILiquidStack
 
-Returns a new [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) that matches the given prefix.  
-You can provide an alternate fallback prefix to be used if no matching Liquid is found.
+Gibt einen neuen [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) zurück, der mit dem angegebenen Präfix übereinstimmt.  
+Sie können einen alternativen Fallback-Präfix angeben, der verwendet werden kann, wenn kein passendes Liquid gefunden wird.
 
-If no matching liquid is found and no matching liquid is found using the fallback prefix (if provided), it will return `null`.
+Wenn keine passende Flüssigkeit gefunden wird und keine passende Flüssigkeit mit dem Fallback-Präfix gefunden wird (falls vorhanden) wird `null` zurückgegeben.
 
 ```zenscript
 //oreEntry.getLiquidStack(prefix);
@@ -76,38 +76,38 @@ oreEntry.getLiquidStack("invalid", "molten"); //<liquid:gold>
 oreEntry.getLiquidStack("invalid", "faulty"); //null
 ```
 
-### Get Extra
+### Extra erhalten
 
-An Entry can have an extra registered. An extra can for example be a secondary output when pulverizing a matching ore.
+Ein Eintrag kann einen extra registrierten Eintrag haben. Ein Extra kann zum Beispiel eine sekundäre Ausgabe sein, wenn ein passendes Erz pulverisiert wird.
 
-You can either check if an entry has an extra, get the extra (or `null` if not present) or the extraName.  
-You can also use the same methods as above (`getOreDictEntry`, `getLiquidStack` and `getItemStack`).
+Sie können entweder überprüfen, ob ein Eintrag ein Extra, erhalten Sie das Extra (oder `null` wenn nicht vorhanden) oder den Extranamen.  
+Sie können auch die gleichen Methoden wie oben verwenden (`getOreDictEntry`, `getLiquidStack` und `getItemStack`).
 
-There are up to 3 extras that can be registered. For the sake of simplicity there won't be examples for the equivalent methods, they will only be stated
+Es gibt bis zu 3 Extras, die registriert werden können. Um der Einfachheit willen gibt es keine Beispiele für die entsprechenden Methoden, sie werden nur angegeben
 
 ```zenscript
-//First extra
-oreEntry.hasExtra; //true or false
-oreEntry.extra; //matching oreEntry or null
-oreEntry.extraName; //the name or null
+//Erstes zusätzliches
+oreEntry.hasExtra; //true oder false
+oreEntry.extra; //übereinstimmende oreEntry oder null
+oreEntry. xtraName; //Name oder Null
 
-//Methods for first extra
-oreEntry.getOreDictEntryExtra(prefix);
+//Methoden für das erste Extra
+oreEntry. etOreDictEntryExtra(prefix);
 oreEntry.getItemStackExtra(prefix);
 oreEntry.getItemStackExtra(prefix, fallback);
-oreEntry.getLiquidStackExtra(prefix);
+oreEntry. etLiquidStackExtra(prefix);
 oreEntry.getLiquidStackExtra(prefix, fallback);
 
 
 
-//Second extra
+//Zweiter Extra
 oreEntry.hasSecondExtra; //true or false
-oreEntry.secondExtra; //matching oreEntry or null
-oreEntry.secondExtraName; //the name or null
+oreEntry. econdExtra; //übereinstimmend mit oreEntry oder null
+oreEntry.secondExtraName; //Name oder Null
 
-//Methods for second extra
+//Methoden für Sekunde extra
 oreEntry.getOreDictEntrySecondExtra(prefix);
-oreEntry.getItemStackSecondExtra(prefix);
+oreEntry. etItemStackSecondExtra(prefix);
 oreEntry.getItemStackSecondExtra(prefix, fallback);
 oreEntry.getLiquidStackSecondExtra(prefix);
 oreEntry.getLiquidStackSecondExtra(prefix, fallback);
@@ -117,9 +117,9 @@ oreEntry.getLiquidStackSecondExtra(prefix, fallback);
 //Third extra
 oreEntry.hasThirdExtra; //true or false
 oreEntry.thirdExtra; //matching oreEntry or null
-oreEntry.thirdExtraName; //the name or null
+oreEntry. hirdExtraName; //der Name oder null
 
-//Methods for third extra
+//Methoden für dritte Extra
 oreEntry.getOreDictEntryThirdExtra(prefix);
 oreEntry.getItemStackThirdExtra(prefix);
 oreEntry.getItemStackThirdExtra(prefix, fallback);
