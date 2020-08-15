@@ -4,7 +4,7 @@ Represents a position of a block in the world
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.BlockPos
@@ -14,16 +14,16 @@ crafttweaker.api.util.BlockPos
 ```zenscript
 new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
 ```
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| x         | int  | No description provided |
-| y         | int  | No description provided |
-| z         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | Indice        | No description provided |
+| y         | Indice        | No description provided |
+| Z         | Indice        | No description provided |
 
 
 
-## Methods
-### add
+## Méthodes
+### Ajouter
 
 Adds two positions together and returns the result.
 
@@ -34,7 +34,7 @@ new BlockPos(0, 1, 2).add(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
-| Parameter | Type                                                         | Description           |
+| Paramètre | Type de texte                                                | Libellé               |
 | --------- | ------------------------------------------------------------ | --------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 
@@ -49,11 +49,11 @@ new BlockPos(0, 1, 2).add(x as double, y as double, z as double);
 new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
-| Parameter | Type   | Description    |
-| --------- | ------ | -------------- |
-| x         | double | x value to add |
-| y         | double | y value to add |
-| z         | double | z value to add |
+| Paramètre | Type de texte | Libellé        |
+| --------- | ------------- | -------------- |
+| x         | double        | x value to add |
+| y         | double        | y value to add |
+| Z         | double        | z value to add |
 
 
 ### crossProduct
@@ -67,7 +67,7 @@ new BlockPos(0, 1, 2).crossProduct(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
-| Parameter | Type                                                         | Description               |
+| Paramètre | Type de texte                                                | Libellé                   |
 | --------- | ------------------------------------------------------------ | ------------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
 
@@ -83,9 +83,9 @@ new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
-| Parameter | Type                                                         | Description               |
+| Paramètre | Type de texte                                                | Libellé                   |
 | --------- | ------------------------------------------------------------ | ------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
+| à         | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
 
 
 
@@ -98,9 +98,9 @@ new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos, useCenter
 new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
-| Parameter | Type                                                         | Description                                                           |
+| Paramètre | Type de texte                                                | Libellé                                                               |
 | --------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
+| à         | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
 | useCenter | boolean                                                      | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
@@ -114,15 +114,15 @@ new BlockPos(0, 1, 2).distanceSq(x as double, y as double, z as double, useCente
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
-| Parameter | Type    | Description                                                           |
-| --------- | ------- | --------------------------------------------------------------------- |
-| x         | double  | x position to check against                                           |
-| y         | double  | y position to check against                                           |
-| z         | double  | z position to check against                                           |
-| useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
+| Paramètre | Type de texte | Libellé                                                               |
+| --------- | ------------- | --------------------------------------------------------------------- |
+| x         | double        | x position to check against                                           |
+| y         | double        | y position to check against                                           |
+| Z         | double        | z position to check against                                           |
+| useCenter | boolean       | should the center of the coordinate be used? (adds 0.5 to each value) |
 
 
-### down
+### bas
 
 Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
 
@@ -134,7 +134,7 @@ Returns net.minecraft.util.math.BlockPos
 new BlockPos(0, 1, 2).down();
 ```
 
-### east
+### est
 
 Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
 
@@ -158,9 +158,9 @@ new BlockPos(0, 1, 2).east(n as int);
 new BlockPos(0, 1, 2).east(2);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| n         | Indice        | No description provided |
 
 
 ### manhattanDistance
@@ -174,12 +174,12 @@ new BlockPos(0, 1, 2).manhattanDistance(other as crafttweaker.api.util.BlockPos)
 new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
-| Parameter | Type                                                         | Description                           |
+| Paramètre | Type de texte                                                | Libellé                               |
 | --------- | ------------------------------------------------------------ | ------------------------------------- |
 | other     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
 
 
-### north
+### Nord
 
 Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
 
@@ -203,9 +203,9 @@ new BlockPos(0, 1, 2).north(n as int);
 new BlockPos(0, 1, 2).north(10);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| n         | Indice        | No description provided |
 
 
 ### offset
@@ -221,7 +221,7 @@ new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction);
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
-| Parameter | Type                                                           | Description             |
+| Paramètre | Type de texte                                                  | Libellé                 |
 | --------- | -------------------------------------------------------------- | ----------------------- |
 | direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
 
@@ -238,13 +238,13 @@ new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction, n as 
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
-| Parameter | Type                                                           | Description             |
+| Paramètre | Type de texte                                                  | Libellé                 |
 | --------- | -------------------------------------------------------------- | ----------------------- |
 | direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
-| n         | int                                                            | No description provided |
+| n         | Indice                                                         | No description provided |
 
 
-### south
+### Sud
 
 Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
 
@@ -268,9 +268,9 @@ new BlockPos(0, 1, 2).south(n as int);
 new BlockPos(0, 1, 2).south(12);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| n         | Indice        | No description provided |
 
 
 ### subtract
@@ -284,12 +284,12 @@ new BlockPos(0, 1, 2).subtract(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
-| Parameter | Type                                                         | Description              |
+| Paramètre | Type de texte                                                | Libellé                  |
 | --------- | ------------------------------------------------------------ | ------------------------ |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
 
-### up
+### plus haut
 
 Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
 
@@ -313,12 +313,12 @@ new BlockPos(0, 1, 2).up(n as int);
 new BlockPos(0, 1, 2).up(45);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| n         | Indice        | No description provided |
 
 
-### west
+### à l'ouest
 
 Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
 
@@ -342,9 +342,9 @@ new BlockPos(0, 1, 2).west(n as int);
 new BlockPos(0, 1, 2).west(120);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| n         | Indice        | No description provided |
 
 
 ### withinDistance
@@ -358,23 +358,23 @@ new BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, dist
 new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
-| Parameter | Type                                                         | Description                                    |
+| Paramètre | Type de texte                                                | Libellé                                        |
 | --------- | ------------------------------------------------------------ | ---------------------------------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
 | distance  | double                                                       | distance to check within                       |
 
 
 
-## Properties
+## Propriétés
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| Nom | Type de texte | Has Getter | Has Setter |
+| --- | ------------- | ---------- | ---------- |
+| x   | Indice        | vrai       | Faux       |
+| y   | Indice        | vrai       | Faux       |
+| Z   | Indice        | vrai       | Faux       |
 
-## Operators
-### ADD
+## Opérateurs
+### AJOUTER
 
 Adds two positions together and returns the result.
 
@@ -383,7 +383,7 @@ new BlockPos(0, 1, 2) + pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
 ```
 
-| Parameter | Type                                                         | Description           |
+| Paramètre | Type de texte                                                | Libellé               |
 | --------- | ------------------------------------------------------------ | --------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
 ### SUB
@@ -395,7 +395,7 @@ new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
 new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
 ```
 
-| Parameter | Type                                                         | Description              |
+| Paramètre | Type de texte                                                | Libellé                  |
 | --------- | ------------------------------------------------------------ | ------------------------ |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
 
@@ -403,5 +403,5 @@ new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
 
 | Result type | Is Implicit |
 | ----------- | ----------- |
-| long        | false       |
+| long        | Faux        |
 
