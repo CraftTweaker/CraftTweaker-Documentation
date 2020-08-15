@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.StoneKnapping;StoneKnapping;
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
 StoneKnapping.addRecipe(String registryName, IItemStack[] output, String[] rocks, String... pattern)
@@ -18,7 +18,7 @@ StoneKnapping.removeRecipe(IItemStack output);
 StoneKnapping.removeRecipe(String registryName);
 ```
 
-## Examples
+## Ejemplos
 
 ```zenscript
 // Gives a stone hoe in all rocks.
