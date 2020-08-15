@@ -3,7 +3,7 @@
 ### Importando
 
 ```zenscript
-import mods.industrialforegoing.SludgeRefiner;
+importar mods.industrialforegoing.SludgeRefiner;
 ```
 
 ### Agregando
