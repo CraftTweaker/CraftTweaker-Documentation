@@ -1,4 +1,4 @@
-# Blast Furnace
+# Sprengöfen
 
 Mit dem Sprengofenpaket können Rezepte/Treibstoffe zum Immersive Ingenieurstofen hinzugefügt bzw. entfernt werden.
 
