@@ -1,21 +1,21 @@
-# Hand
+# 手
 
-A Hand is an enumeration of the player's two possible hands: main and off
+一把手是对玩家两把可能的手的计数：主手和关
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Hand;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweiner.Hand；`
 
-## Enumerations
+## 枚举数
 
-Hand can be of those two values:
+可以是这两种值：
 
-- main
-- off
+- 主要的
+- 关闭
 
 ```zenscript
-import mods.contenttweaker.Hand;
+导入 mods.contenttweaker.Hand;
 
 Hand.off();
 Hand.main();
@@ -23,13 +23,13 @@ Hand.fromString("off");
 Hand.fromString("main");
 ```
 
-## Uses
+## 使用
 
-A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+手的主要用途是 [IItemUse 函数](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/)。
 
-## Comparing two Hand objects
+## 比较两个握手对象
 
-You can compare two Hand objects using the `==` getter.
+您可以使用 `==` getter比较两个助手对象。
 
 ```zenscript
 Hand.main() == Hand.main()
