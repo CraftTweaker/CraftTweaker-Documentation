@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the output itemstack to be removed (quantity must match)
+  IItemStack 出力 // The output itemstack to be removed (quantity must match)
 );
 ```
 
