@@ -8,7 +8,7 @@ import mods.roots.FlowerGrowth;
 
 ```zenscript
 void removeRecipe(
-  string name // The name of the recipe you wish to remove
+  string name // 削除したいレシピの名前
 );
 ```
 
@@ -50,4 +50,4 @@ FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(),
 
 ### メモ
 
-Currently untested with double-tall flowers.
+現在、二重背の高い花でテストされていません。
