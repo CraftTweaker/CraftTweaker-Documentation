@@ -1,14 +1,14 @@
-# LivingDestroyBlock
+# Blok życia
 
-This event is fired whenever a Wither or Ender Dragon attempts to destroy blocks, or when a zombie attempts to break a door. This event is **cancelable**, and if canceled, the block will not be broken.
+To wydarzenie jest uruchamiane za każdym razem, gdy Wither lub Smok Kresu próbuje zniszczyć bloki lub gdy zombie próbują złamać drzwi. To wydarzenie jest **anulowalne**, a jeśli zostanie anulowane, blok nie zostanie uszkodzony.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.LivingDestroyBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. ivingDestroyBlockEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia LivingDestroyBlock zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
 - [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -18,7 +18,7 @@ LivingDestroyBlock Events implement the following interfaces and are able to cal
 ## ZenGetters/ZenSetters
 Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
-| ZenGetter | ZenSetter | Typ                                          |
-| --------- | --------- | -------------------------------------------- |
-| `state`   |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
+| ZenGetter     | ZenSetter | Typ                                          |
+| ------------- | --------- | -------------------------------------------- |
+| `województwo` |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
 
