@@ -1,6 +1,6 @@
 # Natural Altar
 
-## Package
+## Paket
 ```zenscript
 mods.naturesaura.Altar
 ```
@@ -19,7 +19,7 @@ mods.naturesaura.Altar
 mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.naturesaura.Altar.removeRecipe(IItemStack output)
