@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Squeezer Recipes
 
-## Calling
+## Appel en cours
 
 You can call the package using `mods.forestry.Squeezer`
 
@@ -24,9 +24,9 @@ mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]
 mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <minecraft:redstone> % 20);
 ```
 
-| Parameter   | Type                                                   | description                                   |
+| Paramètre   | Type de texte                                          | Libellé                                       |
 | ----------- | ------------------------------------------------------ | --------------------------------------------- |
 | fluidOutput | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)         | The Recipe's output                           |
 | ingredients | [IItemStack](/Vanilla/Items/IItemStack/)[]             | The Recipe's item input(s)                    |
-| timePerItem | int                                                    | Amount of inputFluid on organic item requires |
+| timePerItem | Indice                                                 | Amount of inputFluid on organic item requires |
 | itemOutput  | [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | Output multiplier                             |
