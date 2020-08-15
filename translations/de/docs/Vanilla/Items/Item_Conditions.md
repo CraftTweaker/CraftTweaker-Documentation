@@ -19,7 +19,7 @@ These will affect the items that you can use to craft the resulting item. Rememb
 <minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
 ```
 
-### Damage
+### Schaden
 
 #### anyDamage
 
@@ -99,7 +99,7 @@ item.onlyWithTag(NBTTag);
 
 If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
 
-### Damage
+### Schaden
 
 Your output item will have `value` damage points.  
 `Value` is an int.
