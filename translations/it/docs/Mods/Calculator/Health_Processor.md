@@ -1,11 +1,11 @@
 # Health Processor
 
-## Package
+## Pacchetto
 ```zenscript
 import mods.calculator.health;
 ```
 
-## Methods
+## Metodi
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **Int value** The amount of input adds to that machine.
@@ -15,7 +15,7 @@ import mods.calculator.health;
 health.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Rimozione
 ```zenscript
 health.removeRecipe(IIngredient input);
 ```
