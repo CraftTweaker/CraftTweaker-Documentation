@@ -8,49 +8,49 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.potion.MCPotionEffect
 ```
 
-## Implemented Interfaces
-MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## 実装されたインターフェース
+MCPotionEffectは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## メソッド
 ### isReady
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+myMCPotionEffect.isReady(intとしての持続時間)
 ```
 
-| パラメータ | タイプ | 説明                      |
-| ----- | --- | ----------------------- |
-| 期間    | int | No description provided |
-| アンプ   | int | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| 期間    | int | 説明が提供されていません |
+| アンプ   | int | 説明が提供されていません |
 
 
 ### newInstance
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+戻り値 [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+myMCPotionEffect.newInstance(intとしての持続時間)
 ```
 
-| パラメータ | タイプ | 説明                      | IsOptional | デフォルト値 |
-| ----- | --- | ----------------------- | ---------- | ------ |
-| 期間    | int | No description provided | false      | null   |
-| アンプ   | int | No description provided | true       | 0      |
+| パラメータ | タイプ | 説明           | IsOptional | デフォルト値 |
+| ----- | --- | ------------ | ---------- | ------ |
+| 期間    | int | 説明が提供されていません | false      | null   |
+| アンプ   | int | 説明が提供されていません | true       | 0      |
 
 
 
 ## プロパティー
 
-| 名称            | タイプ                                                                     | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | 文字列型                                                                    | true       | false      |
-| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
-| displayName   | 文字列型                                                                    | true       | false      |
-| 有益な           | boolean型                                                                | true       | false      |
-| isInstant     | boolean型                                                                | true       | false      |
-| liquidColor   | int                                                                     | true       | false      |
-| 名前            | 文字列型                                                                    | true       | false      |
+| 名称            | タイプ                                                                     | ゲッターあり | セッターあり |
+| ------------- | ----------------------------------------------------------------------- | ------ | ------ |
+| commandString | 文字列型                                                                    | true   | false  |
+| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true   | false  |
+| displayName   | 文字列型                                                                    | true   | false  |
+| 有益な           | boolean型                                                                | true   | false  |
+| isInstant     | boolean型                                                                | true   | false  |
+| liquidColor   | int                                                                     | true   | false  |
+| 名前            | 文字列型                                                                    | true   | false  |
 
