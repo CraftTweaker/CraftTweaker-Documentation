@@ -1,17 +1,17 @@
-# Heating
+# Riscaldamento
 
 ## Pacchetto
 ```zenscript
-import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.Riscaldamento;
 ```
 
 ## Addizione
 
 ```zenscript
-Heating.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
+Riscaldamento.addRecipe(String registryName, IItemStack input, IItemStack output, float transformTemp, float maxTemp);
 ```
-- transformTemp is at which temperature the recipe completely transform the input into the output stack.
-- maxTemp is at which temperature the input is destroyed. For a complete reference, check [Heating Temperatures](/Mods/Terrafirmacraft/HeatingTemperatures)
+- transformTemp è a quale temperatura la ricetta trasforma completamente l'input in stack di uscita.
+- maxTemp è alla quale la temperatura di ingresso viene distrutta. Per un riferimento completo, controlla [Temperature di riscaldamento](/Mods/Terrafirmacraft/HeatingTemperatures)
 
 ## Rimozione
 
