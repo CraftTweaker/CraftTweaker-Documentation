@@ -1,26 +1,26 @@
-# IMaterial
+# Important
 
 An IMaterial object represents the material a block is made of.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IMaterial;`
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter       | Méthode Zen         | Type de retour       |
+| --------------- | ------------------- | -------------------- |
+| blocksLight     | blocksLight()       | booléen              |
+| blocksMovement  | blocksMovement()    | booléen              |
+| canBurn         | getCanBurn()        | booléen              |
+| mobilityFlag    | getMobilityFlag()   | chaîne de caractères |
+| liquide         | isLiquid()          | booléen              |
+| opaque          | isOpaque()          | booléen              |
+| replaceable     | isReplaceable()     | booléen              |
+| solid           | isSolid()           | booléen              |
+| toolNotRequired | isToolNotRequired() | booléen              |
+|                 | setReplaceable()    | Important            |
 
 ## ZenMethods with parameters
 
