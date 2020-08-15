@@ -1,3 +1,3 @@
 # BuildCraft
 
-To use crafttwaeker with BuildCraft, make sure to install the full [BuildCraft Package](https://www.curseforge.com/minecraft/mc-mods/buildcraft) or the [BuildCraft Compat Module](https://www.curseforge.com/minecraft/mc-mods/buildcraft-compat)
+Per utilizzare crafttwaeker con BuildCraft, assicurati di installare l'intero [BuildCraft Package](https://www.curseforge.com/minecraft/mc-mods/buildcraft) o il [BuildCraft Compat Module](https://www.curseforge.com/minecraft/mc-mods/buildcraft-compat)
