@@ -2,18 +2,18 @@
 
 The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
 
-## Notes
+## 注
 
 `event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
 
 `event.level` can be arbitrarily modified to a value between 0 & 30.
 
-## Event Class
+## 事件类
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.EnchantmentLevelSetEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
@@ -22,9 +22,9 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 
 | ZenGetter       | ZenSetter | 返回值类型                                    |
 | --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `世界`            |           | [IWorld](/Vanilla/World/IWorld/)         |
 | `enchantRow`    |           | int                                      |
-| `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | int                                      |
-| `level`         | `level`   | int                                      |
+| `power`         |           | 整数                                       |
+| `项目`            |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `originalLevel` |           | 整数                                       |
+| `关卡`            | `关卡`      | 整数                                       |
