@@ -1,4 +1,4 @@
-# Material
+# Материал
 
 ## Calling the package
 
@@ -10,32 +10,32 @@ An object of `mods.gregtech.material.Material` represents a material in GregTech
 
 Properties:
 
-| Название           | Type                         | Description                                      |
+| Название           | Тип                          | Описание                                         |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
-| color              | int                          | Color of material in RGB format                  |
+| цвет               | int                          | Color of material in RGB format                  |
 | chemicalFormula    | string                       | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
-| components         | ImmutableList<materialstack> | List of this material component                  |
+| компоненты         | ImmutableList<materialstack> | List of this material component                  |
 | generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
 | element            | Element                      | Element of this material consist of              |
 
 Getters:
 
-| Name            | Type   | Description                          |
+| Название        | Тип    | Описание                             |
 | --------------- | ------ | ------------------------------------ |
 | radioactive     | bool   | True if this material is radioactive |
 | protons         | long   |                                      |
 | neutrons        | long   |                                      |
 | mass            | long   |                                      |
-| density         | long   |                                      |
+| плотность       | long   |                                      |
 | camelCaseString | string |                                      |
 | unlocalizedName | string |                                      |
 | localizedName   | string | Client-side only                     |
-| name            | string | Name in the Material registry        |
+| имя             | string | Name in the Material registry        |
 
 Methods:
 
-| Name (Parameters)             | Description           |
+| Name (Parameters)             | Описание              |
 | ----------------------------- | --------------------- |
 | addFlags(String... flagNames) | Add generation flags  |
 | hasFlag(String flagName)      | Has a generation flag |
@@ -48,19 +48,19 @@ Methods:
 
 Properties:
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| fluidTemperature | int  |             |
+| Название         | Тип | Описание |
+| ---------------- | --- | -------- |
+| fluidTemperature | int |          |
 
 Getters:
 
-| Name      | Type                                                       | Description           |
-| --------- | ---------------------------------------------------------- | --------------------- |
-| hasFluid  | bool                                                       |                       |
-| hasPlasma | bool                                                       |                       |
-| isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
-| plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
+| Название  | Тип                                                         | Описание              |
+| --------- | ----------------------------------------------------------- | --------------------- |
+| hasFluid  | bool                                                        |                       |
+| hasPlasma | bool                                                        |                       |
+| isGaseous | bool                                                        |                       |
+| жидкость  | [ILiquidОпределение](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
+| plasma    | [ILiquidОпределение](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
 
 ### DustMaterial
 
@@ -68,7 +68,7 @@ Getters:
 
 Properties:
 
-| Name                | Type          | Description                                                                                                                                  |
+| Название            | Тип           | Описание                                                                                                                                     |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
 | byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
@@ -80,10 +80,10 @@ Properties:
 
 Getters:
 
-| Name          | Type                | Description                                         |
-| ------------- | ------------------- | --------------------------------------------------- |
-| oreByProducts | List<fluidmaterial> | List of ore by products                             |
-| harvestLevel  | int                 | Tool level needed to harvest block of this material |
+| Название             | Тип                 | Описание                                            |
+| -------------------- | ------------------- | --------------------------------------------------- |
+| oreByProducts        | List<fluidmaterial> | List of ore by products                             |
+| Уровень сбора урожая | int                 | Tool level needed to harvest block of this material |
 
 ### SolidMaterial
 
@@ -91,7 +91,7 @@ Getters:
 
 Properties:
 
-| Name           | Type          | Description                                                                                          |
+| Название       | Тип           | Описание                                                                                             |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
@@ -101,15 +101,15 @@ Getters:
 <table>
   <tr>
     <th>
-      Name
+      Название
     </th>
     
     <th>
-      Type
+      Тип
     </th>
     
     <th>
-      Description
+      Описание
     </th>
   </tr>
   
@@ -162,7 +162,7 @@ Getters:
 
 Ingot materials can be used as wire, cable and fluid pipe. Those properties can be set by `setCableProperties(long voltage, int baseAmperage, int lossPerBlock)` and `setFluidPipeProperties(int throughput, int maxTemperature, boolean gasProof)`.
 
-For example:
+Например:
 
 ```zenscript
 var ingotMaterial = MaterialRegistry.createIngotMaterial(2052, "test", 0x1a2f3e, "ingot", 1);
@@ -188,7 +188,7 @@ material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a en
 
 These flags are applicable to materials.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
+| Name (case-insensitive)           | Описание                                                                                                                                                                                                                                            |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
 | DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
@@ -261,7 +261,7 @@ Material registry is a helper to get, list and create materials in the unificati
 
 You may import the class `mods.gregtech.material.MaterialRegistry`.
 
-### Usage
+### Использование
 
 ```zenscript
 #loader gregtech
@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### Пример
 
 ```zenscript
 #loader gregtech
