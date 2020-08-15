@@ -1,23 +1,23 @@
-# Loom
+# 洛姆
 
 ## 所属包名
 ```zenscript
-import mods.terrafirmacraft.Loom;
+导入 mods.terrafirmacraft。循环；
 ```
 
 ## 添加配方
 
 ```zenscript
-Loom.addRecipe(String registryName, IIngredient input, IItemStack output, int steps, String loomTexture);
+Loom.addRecipe(String registryName, IIngreendent input, IItemStack output, int stances, String loomTexture);
 ```
-- steps is the number of steps needed to complete the recipe. It's the number of times the player has to click the loom, each movement of the loop advances one step. Within TFC, this is the same as the number of items required for the recipe, but it is not required to be so.
-- loomTexture is a path (`ResourceLocation`) to a texture file, to be used to display on the loom in the world.(For example, "minecraft:textures/blocks/wool_colored_white.png" references the vanilla texture for white wool). If you are using custom textures you need some form of data/resource loading (read: a resource pack) for this to be able to reference your texture correctly.
+- 步骤是完成配方所需步骤的数量。 它是玩家点击循环的次数，循环的每次移动都向前推进。 在过渡联邦委员会内，这与该配方所需物品的数量相同，但不必如此。
+- loomTexture 是指通向纹理文件的路径(`ResourceLocation`)，用于在世界上的彩虹中显示。 例如，"minecraft:textures/blocks/wool_colored_whit.png"引用白色羊毛的原生纹理)。 如果您正在使用自定义纹理，您需要某种形式的数据/资源加载(阅读：资源包)才能正确参考您的纹理。
 
 ## 删除配方
 
 ```zenscript
-Loom.removeRecipe(IItemStack output);
-Loom.removeRecipe(String registryName);
+Loom.removeRecipe(IItemStack 输出);
+Loom.removeRecipe(String registryname);
 ```
 
 ## 例子
