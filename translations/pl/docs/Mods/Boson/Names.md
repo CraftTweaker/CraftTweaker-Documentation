@@ -31,15 +31,15 @@ The casting way relies instead on an explicit cast from a `string` to a `NameSpa
 "minecraft:iron_ingot" as NameSpacedString;
 ```
 
-### Properties
+### Właściwości
 A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Property Name | Type     | Description                                                             |
-| ------------- | -------- | ----------------------------------------------------------------------- |
-| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
-| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
+| Nazwa Właściwości | Typ           | Opis                                                                    |
+| ----------------- | ------------- | ----------------------------------------------------------------------- |
+| `nameSpace`       | `ciąg znaków` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `ścieżka`         | `ciąg znaków` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
-### Methods
+### Metody
 
 #### `asString`
 A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
