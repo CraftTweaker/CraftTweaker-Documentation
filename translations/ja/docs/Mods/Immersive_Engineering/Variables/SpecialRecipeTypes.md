@@ -1,12 +1,12 @@
-# Special Recipe Types
+# 特殊レシピタイプ
 
-## Information
+## 情報
 
-The Arc-Furnace has an Optional String parameter called "specialRecipeType". This String allows you to "Sub-Tag" your Recipe to a specific Recipe Type. This does not alter behavior in any way, it just assigns it to a Sub-Tag.
+Arc-Furnace には「specialRecipeType」と呼ばれるオプションの String パラメータがあります。 この文字列を使用すると、レシピを特定のレシピタイプに「サブタグ」することができます。 これはどのような方法でも動作を変更せず、サブタグに割り当てるだけです。
 
-### Existing Types
+### 既存のタイプ
 
-| Recipe Types: | Value      |
-| ------------- | ---------- |
-| Alloying      | "Alloying" |
-| Ores          | "Ores"     |
+| レシピの種類: | 値          |
+| ------- | ---------- |
+| 合金化     | "Alloying" |
+| Ores    | "Ores"     |
