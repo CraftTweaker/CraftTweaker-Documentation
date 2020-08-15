@@ -1,21 +1,21 @@
 # Tygiel
 
-The Crucible is a machine that converts an input item into an output fluid using steam.
+Tygiel to maszyna, która przekształca element wejściowy w płyn wyjściowy za pomocą pary.
 
 ## Pakiet
-`mods.steamagerevolution.Crucible`
+`[PLACEHOLDER] mods.steamagerevolution.Crucible`
 
 ## Metody
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) wyjście** wynik przepisu.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście** Wprowadzenie przepisu.
+- **int craftTime** Czas tworzenia maszyny do przetworzenia
+- **int SteamCost** Koszt Steam dla maszyny do przetworzenia
 
 ## Dodanie
 
 ```zenscript
-mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Crucible.addRecipe(IIngredient inputt, ILiquidStack output, int craftTime, int steamCost);
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
