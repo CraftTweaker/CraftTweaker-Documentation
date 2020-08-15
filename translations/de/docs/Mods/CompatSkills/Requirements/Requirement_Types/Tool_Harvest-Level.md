@@ -1,11 +1,11 @@
-# Tool Harvest-Level
+# Werkzeug Erntestufe
 
-This requires the player to be holding an itemTool whose harvest level is equal or higher than the level specified.
+Dies erfordert, dass der Spieler ein Gegenstandswerkzeug besitzt, dessen Erntelevel gleich oder höher ist als das angegebene Level.
 
-    Example:
-    harvest|integer
+    Beispiel:
+    Ernte|Integer
     
-    Working Example:
-    harvest|1
-    harvest|2
-    harvest|3
+    Arbeitsbeispiel:
+    Ernte|1
+    Ernte|2
+    Ernte|3
