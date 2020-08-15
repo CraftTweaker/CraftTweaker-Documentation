@@ -138,11 +138,11 @@ blast_furnace.recipeBuilder()
 .fluidInputs()
 .outputs()
 .fluidOutputs()
-.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // (itemstack, intitial output chance, tier output chance boost
-.duration() // in ticks
-.notConsumable(X) // where X is a CT id. Works as .inputs, but the item doesn't get consumed
-.hidden() // if the recipe is hidden from the JEI
-.chancedOutput(<itemstack>, 0-10000, 0-10000) (10000 is 100%) // not valid for every machine. 只有部分机器会使用这个语句。 最不可用的一类是打粉机
+. hancedOutput(<itemstack>, 0-10000, 0-10000) (100%) // (itemstack, intiproduct opportunity, tier product opportunity
+uration() // 以ticks
+.notConsumable(X) // X 是一个 CT ID的地方。 可使用 .inputes 工作，但项目无法使用
+.hidden() // 如果该配方隐藏在 JEI
+中。 hancedOut(<itemstack>, 0-10000, 0-10000) (10000是 100%) // 对每台机器无效。 只有部分机器会使用这个语句。 最不可用的一类是打粉机
 .EUt() // 每tick的EU消耗
 ```
 
