@@ -1,12 +1,12 @@
-# Still
+# 仍然的
 
-ModTweaker allows you to add or remove forestry Still Recipes
+ModTinflow允许您添加或删除林业仍然是配方
 
 ## 导入包
 
-You can call the package using `mods.forestry.Still`
+您可以使用 `mods.forestry.Still` 来调用软件包。
 
-## Recipe Removal
+## 删除配方
 
 ```zenscript
 //mods.forestry.Still.removeRecipe(ILiquidStack output, @Optional ILiquidStack fluidInput);
@@ -14,9 +14,9 @@ mods.forestry.Still.removeRecipe(<liquid:bio.ethanol>);
 mods.forestry.Still.removeRecipe(<liquid:refinedcanolaoil>,<liquid:canolaoil>);
 ```
 
-## Recipe Addition
+## 配方添加
 
 ```zenscript
-//mods.forestry.Still.addRecipe(ILiquidStack fluidOutput, ILiquidStack fluidInput, int timePerUnit);
+//mods.forestry.Still.addRecipe(ILiquidStack fluidOut, ILiquidStack fluidInput, int timePerUnit);
 mods.forestry.Still.addRecipe(<liquid:lava>, <liquid:water>, 200);
 ```
