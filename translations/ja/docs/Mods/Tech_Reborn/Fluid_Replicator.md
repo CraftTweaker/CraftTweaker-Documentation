@@ -1,6 +1,6 @@
 # Fluid Replicator
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.fluidReplicator`
 
 ## レシピを追加中
