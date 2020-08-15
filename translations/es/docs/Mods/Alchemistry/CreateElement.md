@@ -16,14 +16,14 @@ This needs to be loaded with `#loader alchemistry`
 
 ## Creation
 ```zenscript
-mods.alchemistry.mods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
+mods.alchemistry.Atomizermods.alchemistry.Util.createElement(int atomicNumber, String name, String abbreviation, int red, int green, int blue);
 
 mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## Notes
+## Notas
 
 - Please use lowercase names
 - Pre-existing atomic numbers cannot be overwritten
