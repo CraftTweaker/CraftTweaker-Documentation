@@ -31,7 +31,7 @@ void addEntityRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the itemstack output that you wish to remove
+  IItemStack 出力 // 削除したいアイテムスタック出力
 );
 ```
 
@@ -55,4 +55,4 @@ RunicShears.removeRecipe(<roots:fey_leather>);
 
 ### メモ
 
-Note that the `removeRecipe` function will attempt to remove any recipe (both runic shearing of blocks and of entities) that matches the desired output.
+`removeRecipe` 関数は、目的の出力と一致するレシピ(ブロックとエンティティの両方)を削除しようとします。
