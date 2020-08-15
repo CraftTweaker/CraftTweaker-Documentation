@@ -10,11 +10,11 @@ By default, the following fluids are recognized by the Aerial Interface:
 
 This package allows arbitrary other fluids to be used by the Aerial Interface as XP fluids, or for existing XP fluids to be deregistered.
 
-## Calling
+## Llamando
 
 You can call the XP Fluids package using `mods.pneumaticcraft.xpfluid`.
 
-## Removing
+## Eliminando
 
 This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid`:
 
@@ -30,7 +30,7 @@ This function deregisters *all* known XP fluids:
 mods.pneumaticcraft.xpfluid.removeAllXPFluids();
 ```
 
-## Adding
+## Agregando
 
 This function can be used to register fluids as XP fluids:
 
