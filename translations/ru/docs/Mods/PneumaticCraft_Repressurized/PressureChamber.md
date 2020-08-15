@@ -1,34 +1,34 @@
-# Pressure Chamber
+# Патрон давления
 
-The Pressure Chamber is a multiblock structure which uses compressed air to convert one or more input items into one or more output items. Pressure Chamber recipes have an associated pressure value, which is the air pressure in bar required to perform the conversion.
+Камера давления представляет собой многоблочную структуру, которая использует сжатый воздух для преобразования одного или нескольких входных элементов в один или несколько выходных элементов. Рецепты камеры давления имеют сопутствующее значение давления, которое является давлением воздуха в баре, необходимое для конвертирования.
 
-## Calling
+## Звонок
 
-You can call the Pressure Chamber package using `mods.pneumaticcraft.pressurechamber`.
+Вы можете вызвать пакет камеры давления, используя `mods.pneumaticcraft.pressurechamber`.
 
-## Removing
+## Удаление
 
-This function removes the first recipe it finds with the given [IItemStack](/Vanilla/Items/IItemStack/) `outputs` array:
+Эта функция удаляет первый рецепт, который он найдет, с данным [IItemStack](/Vanilla/Items/IItemStack/) `выводит` массив:
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeRecipe(IItemStack[] outputs);
-// Example
+// Пример
 mods.pneumaticcraft.pressurechamber.removeRecipe([<pneumaticcraft:ingot_iron_compressed>]);
 ```
 
-This function removes *all* Pressure Chamber recipes:
+Эта функция удаляет *всех рецептов камеры давления:*
 
 ```zenscript
 mods.pneumaticcraft.pressurechamber.removeAllRecipes();
 ```
 
-## Adding
+## Добавление
 
-This function is used to add new recipes to the Pressure Chamber:
+Эта функция используется для добавления новых рецептов в камеру давления:
 
 ```zenscript
-mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] inputs, double pressure, IItemStack[] outputs);
+mods.pneumaticcraft.pressurechamber.addRecipe(IIngredient[] входов, двойное давление, IItemStack[] выход);
 
-// Example
+// Пример
 mods.pneumaticcraft.pressurechamber.addRecipe([<minecraft:gold_ingot> * 2,<minecraft:apple>], 2.0, [<minecraft:golden_apple>]);
 ```
