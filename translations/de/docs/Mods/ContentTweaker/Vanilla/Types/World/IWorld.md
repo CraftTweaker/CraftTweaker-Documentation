@@ -1,28 +1,28 @@
 # IWorld
 
-An IWorld object represents the world the player is currently in.
+Ein IWorld-Objekt repräsentiert die Welt, in der sich der Spieler derzeit befindet.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.World;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`mods.contenttweaker.World;`
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethoden ohne Parameter und ZenGetters
 
-| ZenMethod          | ZenGetter     | Rückgabetyp                                                    | Beschreibung                                                                                                                                                                            |
-| ------------------ | ------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| isRemote()         | remote        | boolean                                                        | True if the world is a "slave" client; changes will not be saved or propagated from this world. For example, server worlds have this set to false, client worlds have this set to true. |
-| isRaining()        | raining       | boolean                                                        | Returns true if it is currently raining                                                                                                                                                 |
-| isThundering()     | thundering    | boolean                                                        | Returns true if it is currently thundering                                                                                                                                              |
-| getMoonPhase()     | moonPhase     | int                                                            | Returns the current moon phase                                                                                                                                                          |
-| isDayTime()        | dayTime       | boolean                                                        | Checks if it is daytime                                                                                                                                                                 |
-| getWorldTime()     | time          | long                                                           | Returns the world's time                                                                                                                                                                |
-| getDimension()     | dimension     | int                                                            | Returns the world's dimension                                                                                                                                                           |
-| isSurfaceWorld()   | surfaceWorld  | boolean                                                        | Returns whether you are in a surface world or not                                                                                                                                       |
-| getDimensionType() | dimensionType | String                                                         | Returns the dimension's type name                                                                                                                                                       |
-| getRandom()        | random        | [CTRandom](/Mods/ContentTweaker/Vanilla/Types/World/CTRandom/) | Returns the world's random number generator                                                                                                                                             |
+| ZenMethode         | ZenGetter       | Rückgabetyp                                                    | Beschreibung                                                                                                                                                                                              |
+| ------------------ | --------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| isRemote()         | fernbedienung   | boolean                                                        | Wahr, wenn die Welt ein "Slave"-Client ist; Änderungen werden nicht aus dieser Welt gespeichert oder verbreitet. Zum Beispiel haben Server-Welten diesen Wert auf falsch, Client-Welten auf true gesetzt. |
+| isRaining()        | regnet          | boolean                                                        | Gibt wahr aus, wenn es derzeit regnet                                                                                                                                                                     |
+| isThundering()     | donnernd        | boolean                                                        | Gibt wahr aus, wenn es gerade donnert                                                                                                                                                                     |
+| getMoonPhase()     | mondphase       | int                                                            | Gibt die aktuelle Mondphase zurück                                                                                                                                                                        |
+| isDayTime()        | dayTime         | boolean                                                        | Prüft, ob es Tageszeit ist                                                                                                                                                                                |
+| getWorldTime()     | Zeit            | long                                                           | Gibt die Zeit der Welt zurück                                                                                                                                                                             |
+| getDimension()     | maße            | int                                                            | Gibt die Dimension der Welt zurück                                                                                                                                                                        |
+| isSurfaceWorld()   | oberflächenwelt | boolean                                                        | Gibt zurück, ob du in einer Oberflächenwelt bist oder nicht                                                                                                                                               |
+| getDimensionType() | dimensiontyp    | String                                                         | Gibt den Namen des Dimensionstyps zurück                                                                                                                                                                  |
+| getRandom()        | zufällig        | [CTRandom](/Mods/ContentTweaker/Vanilla/Types/World/CTRandom/) | Gibt den weltweiten Zufallszahlengenerator zurück                                                                                                                                                         |
 
-## ZenMethods with parameters
+## ZenMethoden mit Parametern
 
 - [IBiome](/Vanilla/Biomes/IBiome/) getBiome([IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) blockPos);
 - boolean setBlockState([ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState, [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) blockPos);
