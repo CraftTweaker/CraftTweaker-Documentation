@@ -1,21 +1,21 @@
-# Mining Lens
+# Lente Mineraria
 
-## Package
+## Pacchetto
 
 `mods.actuallyadditions.MiningLens`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);
 mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
 
 
-//mods.actuallyadditions.MiningLens.addNetherOre(IOreDictEntry ore, int weight);
-mods.actuallyadditions.MiningLens.addNetherOre(<ore:oreGold>, 5);
+//mods.actuallyadditions.MiningLens.addDutOre(IOreDictEntry ore, int weight);
+mods.actuallyadditions.MiningLens.addNetherlandOre(<ore:oreGold>, 5);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.removeStoneOre(IOreDictEntry ore)
@@ -23,6 +23,6 @@ mods.actuallyadditions.MiningLens.removeStoneOre(<ore:oreIron>)
 
 
 
-//mods.actuallyadditions.MiningLens.removeNetherOre(IOreDictEntry ore)
-mods.actuallyadditions.MiningLens.removeNetherOre(<ore:oreGold>)
+//mods.actuallyadditions.MiningLens.removeNetherlandOre(IOreDictEntry ore)
+mods.actuallyadditions.MiningLens.removeNetherlandOre(<ore:oreGold>)
 ```
