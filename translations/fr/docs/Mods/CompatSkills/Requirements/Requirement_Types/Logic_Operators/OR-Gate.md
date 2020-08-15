@@ -1,8 +1,8 @@
-# OR Operator
+# OU Opérateur
 
-An **OR** gate combines two inputs and returns `TRUE` if at least one of the inputs is also `TRUE`.
+Une porte **OU** combine deux entrées et renvoie `TRUE` si au moins une des entrées est `TRUE`.
 
-| Input 1 | Input 2 | Output |
+| Input 1 | Input 2 | Sortie |
 | ------- | ------- | ------:|
 | 0       | 0       |      0 |
 | 0       | 1       |      1 |
