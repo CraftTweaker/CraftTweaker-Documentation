@@ -1,6 +1,6 @@
 # Pressurizer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.pressurizer`
 
 ## Rezepte hinzufügen
