@@ -1,6 +1,6 @@
 # Quern
 
-## Package
+## Paket
 `mods.atum.Quern;`
 
 ## Adding a Recipe
