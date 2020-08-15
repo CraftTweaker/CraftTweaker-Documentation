@@ -1,19 +1,19 @@
-# Condenser
+# 凝縮器
 
-The *condenser* package is used for adding or removing recipes to/from the Condenser.
+*condenser* パッケージは、Condenser へのレシピの追加や削除に使用されます。
 
-## Calling
+## 発信中
 
-You can call the *condenser* package using `mods.skyresources.condenser`
+*mods.skyresources.condenser* を使って `condenser` パッケージを呼び出すことができます。
 
-## Recipe Addition
+## レシピの追加
 
 ```zenscript
-//mods.skyresources.condenser.addRecipe(IItemStack output, int tickTime, IItemStack catalyst, ILiquidStack inputFluid);
+//mods.skyresources.condenser.addRecipe(IItemStack 出力, int tickTime, IItemStack 触媒, ILiquidStack inputFluid);
 mods.skyresources.condenser.addRecipe(<minecraft:obsidian>, 300, <minecraft:ice>, <liquid:lava>);
 ```
 
-## Recipe Removal
+## レシピの削除
 
 ```zenscript
 //mods.skyresources.condenser.removeRecipe(IItemStack output);
