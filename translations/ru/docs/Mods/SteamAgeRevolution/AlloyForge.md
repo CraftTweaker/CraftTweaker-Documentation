@@ -1,15 +1,15 @@
-# Alloy Forge
+# Кузня Сплавов
 
-The Alloy Forge is a machine that converts two input fluids into one output fluid.
+Машина Alloy Forge - это машина, которая преобразует две входные жидкости в одну выходную жидкость.
 
 ## Пакет
 `mods.steamagerevolution.AlloyForge`
 
 ## Методы
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Результат рецепта.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) ввода** Ввод рецепта.
+- **int Time** время создания машины для обработки
 
 ## Сложение
 
@@ -22,7 +22,7 @@ mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*1
 ## Удаление
 
 ```zenscript
-mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
+mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack);
 mods.steamagerevolution.AlloyForge.removeRecipe(<liquid:bronze>);
 
 mods.steamagerevolution.AlloyForge.removeAll();
