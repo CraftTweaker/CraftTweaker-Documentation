@@ -1,17 +1,17 @@
-# Crusher
+# Frantumatore
 
-## Package
+## Pacchetto
 
 `mods.actuallyadditions.Crusher`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.actuallyadditions.Crusher.addRecipe(IItemStack output, IItemStack input, @Optional IItemStack outputSecondary, @Optional int outputSecondaryChance);
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);
