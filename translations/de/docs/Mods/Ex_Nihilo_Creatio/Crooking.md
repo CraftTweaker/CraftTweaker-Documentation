@@ -19,7 +19,7 @@ mods.exnihilocreatio.Crook.addRecipe(IIngredient, IItemStack, Float, Float);
 mods.exnihilocreatio.Crook.addRecipe(<minecraft:log>, <minecraft:plank>, 0.25, 0.5);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.exnihilocreatio.Crook.removeAll();
