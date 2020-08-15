@@ -1,32 +1,32 @@
-# DamageSource Bracket Handler
+# Obsługa nawiasów Źródła Obrażeń
 
-The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
+Obsługa nawiasów źródła obrażeń pozwala na odwołanie się do [źródeł IDamageSource](/Vanilla/Damage/IDamageSource/) w grze.
 
-If the Damage source is not one of the predefined ones, this will create a new one with the given name.
+Jeśli źródło obrażeń nie jest jednym z predefiniowanych źródeł, to stworzy ono nowe o podanej nazwie.
 
 <details>
-    <summary>Preregistered Damage Source Types</summary>
+    <summary>Wstępnie zarejestrowane typy źródeł obrażeń</summary>
     <ul>
-        <li>IN_FIRE</li>
-        <li>LIGHTNING_BOLT</li>
-        <li>ON_FIRE</li>
+        <li>Podstawowe</li>
+        <li>ŚWIATŁO</li>
+        <li>ON_PLAYLIST_TITLE</li>
         <li>LAVA</li>
         <li>HOT_FLOOR</li>
-        <li>IN_WALL</li>
-        <li>CRAMMING</li>
-        <li>DROWN</li>
+        <li>W ścianie</li>
+        <li>ZWALCZANIE</li>
+        <li>KOLEJNE</li>
         <li>STARVE</li>
         <li>CACTUS</li>
-        <li>FALL</li>
-        <li>FLY_INTO_WALL</li>
-        <li>OUT_OF_WORLD</li>
+        <li>WSZYSTKIE</li>
+        <li>Wstecz do ściany</li>
+        <li>Świat</li>
         <li>GENERIC</li>
         <li>MAGIC</li>
-        <li>WITHER</li>
+        <li>ZAWARTOŚĆ</li>
         <li>ANVIL</li>
-        <li>FALLING_BLOCK</li>
-        <li>DRAGON_BREATH</li>
-        <li>FIREWORKS</li>
+        <li>Blok</li>
+        <li>REPORT_TITLE</li>
+        <li>SIECI</li>
     </ul>
 </details>
 
