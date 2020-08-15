@@ -1,18 +1,18 @@
 # MaterialPartLocalizedNameSupplier
 
-You can create a MaterialPartLocalizedNameSupplier form a [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) object, which will then be used whenever requested.
+MaterialPartLocalizedNameSupplier フォームに [MaterialPart](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) オブジェクトを作成し、要求されるたびに使用されます。
 
-## Importing the class
+## クラスのインポート
 
-Should you need to import he class, here you go:
+彼のクラスをインポートする必要がある場合は、次のようにします。
 
 ```zenscript
 import mods.contenttweaker.MaterialPartLocalizedNameSupplier;
 ```
 
-## Static methods
+## 静的メソッド
 
-Static methods can be called upon the package, not upon instances of the class.
+静的メソッドは、クラスのインスタンスではなく、パッケージに対して呼び出すことができます。
 
 ```zenscript
 //mods.contenttweaker.MaterialPartLocalizedNameSupplier.create(IMaterialPart materialPart);
