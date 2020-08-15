@@ -6,15 +6,15 @@ I advise against using the static methods in this class directly as they may be 
  <itemgroup:${myName}>
  ```
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.BracketHandlers
 ```
 
-## Methods
+## メソッド
 ### getItemGroup
 
 Gets the itemGroup. Will throw an error if the group could not be found
@@ -30,9 +30,9 @@ mods.contenttweaker.BracketHandlers.getItemGroup(tokens as String);
 mods.contenttweaker.BracketHandlers.getItemGroup("misc");
 ```
 
-| Parameter | Type | Description                                 |
-| --------- | ---- | ------------------------------------------- |
-| tokens    | 文字列型 | What you createDataCompound in the BEP call |
+| パラメータ  | タイプ  | 説明                                          |
+| ------ | ---- | ------------------------------------------- |
+| tokens | 文字列型 | What you createDataCompound in the BEP call |
 
 
 ### getToolType
@@ -50,9 +50,9 @@ mods.contenttweaker.BracketHandlers.getToolType(tokens as String);
 mods.contenttweaker.BracketHandlers.getToolType("shovel");
 ```
 
-| Parameter | Type   | Description                                       |
-| --------- | ------ | ------------------------------------------------- |
-| tokens    | String | What you would createDataCompound in the BEP call |
+| パラメータ  | タイプ  | 説明                                                |
+| ------ | ---- | ------------------------------------------------- |
+| tokens | 文字列型 | What you would createDataCompound in the BEP call |
 
 
 
