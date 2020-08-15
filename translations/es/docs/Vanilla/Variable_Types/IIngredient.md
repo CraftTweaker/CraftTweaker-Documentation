@@ -1,9 +1,9 @@
-# IIngredient
+# IIngredientes
 
 An IIngredient is an ingredient for recipes.  
 This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IIngredient;`
@@ -184,7 +184,7 @@ print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
+You can also match two IIngredient Objects, in which case you'd need to use the ```en``` operator:
 
 ```zenscript
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
