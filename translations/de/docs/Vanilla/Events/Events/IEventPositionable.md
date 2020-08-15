@@ -10,7 +10,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenGetter
 
-| name     | type                                   |
+| name     | typ                                    |
 | -------- | -------------------------------------- |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | x        | int                                    |
