@@ -10,9 +10,9 @@ It might be required for you to import the package if you encounter any issues (
 crafttweaker.api.brackets.CommandStringDisplayable
 ```
 
-## Properties
+## Eigenschaften
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Kommandozeile | String | true       | false      |
 
