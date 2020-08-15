@@ -1,49 +1,49 @@
-# Spinning Wheel
+# Rueda giratoria
 
 ## Paquete
-`mods.atum.SpinningWheel;`
+`mods.atum.Spinningwheel;`
 
-## Adding a Recipe
+## Añadir una receta
 
-`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
+`mods.atum.Spinningwheel.addRecipe(entrada, salida, rotaciones);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `rotaciones` Cualquier número superior a 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
+Añade una receta con la entrada & salida especificada, que toma las rotaciones especificadas para completar la receta
 
 ```zenscript
-mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
+mods.atum.Spinningwheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Eliminando una receta
 
-### Remove Recipes by Output
+### Quitar recetas por Salida
 
-`mods.atum.SpinningWheel.removeRecipeByOutput(output);`
+`mods.atum.Spinningwheel.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Elimina todas las recetas donde el resultado de la salida es el [ItemStack](/vanilla/api/items/IItemStack) proporcionado.
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
+mods.atum.Spinningwheel.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
-### Remove Recipes by Output & Input
+### Eliminar recetas por Salida & Entrada
 
-`mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
+`mods.atum.Spinningwheel.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Elimina la receta específica, con la salida & entrada especificada
 
 ```zenscript
-mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
+mods.atum.Spinningwheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
-### Other removal methods
+### Otros métodos de eliminación
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+Ver [Administradores de Recetas](/recipes/recipe_managers) para ver otras formas de remover las recetas de Rueda
