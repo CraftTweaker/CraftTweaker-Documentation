@@ -31,12 +31,12 @@ Check the table to see what you can retrieve from the ILiquidStack Object using 
 | ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
 | name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
 | displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
-| amount      | This returns the amount of the ILiquidObject              | int                                                       | `test = <liquid:lava>.amount;`      |
-| luminosity  | This returns the luminosity of the referred liquid        | int                                                       | `test = <liquid:lava>.luminosity;`  |
-| density     | This returns the density of the referred liquid           | int                                                       | `test = <liquid:lava>.density;`     |
-| temperature | This returns the temperature of the referred liquid       | int                                                       | `test = <liquid:lava>.temperature;` |
-| viscosity   | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
-| gaseous     | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
+| beträge     | This returns the amount of the ILiquidObject              | int                                                       | `test = <liquid:lava>.amount;`      |
+| Leuchtkraft | This returns the luminosity of the referred liquid        | int                                                       | `test = <liquid:lava>.luminosity;`  |
+| dichte      | This returns the density of the referred liquid           | int                                                       | `test = <liquid:lava>.density;`     |
+| Temperatur  | This returns the temperature of the referred liquid       | int                                                       | `test = <liquid:lava>.temperature;` |
+| viskosität  | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
+| gasförmig   | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
 | tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
 | definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
 
