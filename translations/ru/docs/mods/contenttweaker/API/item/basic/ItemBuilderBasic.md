@@ -1,33 +1,33 @@
-# ItemBuilderBasic
+# Базовый ItemBuilderBasic
 
-The basic builder for items, also called by [mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build). Does not have any special properties, it exists.
+Базовый конструктор для элементов, также вызван [mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build). Не имеет специальных свойств, она существует.
 
-This class was added by a mod with mod-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
+Этот класс был добавлен модом с мод-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
-mods.contenttweaker.item.basic.ItemBuilderBasic
+mods.contenttweaker.item.basic.Базовый ItemBuilderBasic
 ```
 
 ## Реализованные интерфейсы
-ItemBuilderBasic implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+ItemBuilderBasic реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
 ## Методы
-### build
+### сборка
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Инструкция CoT на самом деле строить то, что этот строитель должен быть построен.
 
 ```zenscript
-new ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
+новый ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation как строка);
 new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Параметр         | Тип    | Описание                             |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Параметр               | Тип    | Описание                       |
+| ---------------------- | ------ | ------------------------------ |
+| местоположение ресурса | String | Путь к ресурсу для этого блока |
 
 
 
