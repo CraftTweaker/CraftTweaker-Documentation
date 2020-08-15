@@ -30,13 +30,13 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `z`          | int                                         |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `blockieren` | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `maße`       | int                                         |
+| `eintrag`    | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled
 - `event.process()` sets the event as processed
