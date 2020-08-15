@@ -4,7 +4,7 @@
 
 `thermalext.Refinery`
 
-## Adding a Recipe
+## 添加配方
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
@@ -39,7 +39,7 @@
 Refinery.addRecipepPotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## Removing a Recipe
+## 删除配方
 
 `Refinery.removeRecipe(input)；`
 
