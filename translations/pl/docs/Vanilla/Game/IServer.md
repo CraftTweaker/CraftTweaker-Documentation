@@ -1,11 +1,11 @@
 # IServer
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.server.IServer;`
 
-## Extending ICommandSender
+## Rozszerzenie ICommandSender
 
 IServer extends [ICommandSender](/Vanilla/Commands/ICommandSender), so all methods that are available for an [ICommandSender](/Vanilla/Commands/ICommandSender) object are also available for an IServer object.
 
