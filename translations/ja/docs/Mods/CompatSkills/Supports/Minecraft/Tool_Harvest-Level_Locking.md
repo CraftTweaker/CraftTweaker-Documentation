@@ -1,13 +1,13 @@
-# Tool Harvest-Level Locking
+# ツール収穫レベルのロック
 
-## Feature:
+## 機能:
 
-This lock adds the ability for pack authors to lock Tools in general or specific tool "types" behind their harvest level. This means that you can lock down all pickaxes with a harvest level of "3" behind a set of requirements. Or in general all tools with a harvest level of 3 behind a set of requirements!
+このロックは、パックの作成者が収穫レベルの背後にある一般的または特定のツール「種類」でツールをロックする機能を追加します。 つまり、一連の要件の後ろに「3」の収穫レベルを持つすべてのつるはしをロックダウンすることができます。 または一般的には、要件のセットの背後に3の収穫レベルを持つすべてのツール!
 
-## Syntax:
+## 構文
 
     mods.compatskills.HarvestLock.addToolLevelLock(int level, String... requirements);
     mods.compatskills.HarvestLock.addToolLevelLock(String type, int level, String... requirements);
     
     mods.compatskills.HarvestLock.addToolLevelLock(3, "dim|1");
-    mods.compatskills.HarvestLock.addToolLevelLock("pickaxe", 3, "dim|1");
+    mods.compatskills.HarvestLock.addToolLevelLock("pickax", 3, "dim|1");
