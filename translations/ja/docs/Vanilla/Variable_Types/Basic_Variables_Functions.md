@@ -33,7 +33,7 @@ ZenScriptにおける最も基本的な型は文字列型、Integer型、そし�
 
 整数には次の機能があります。
 
-`+-*/%` Basic mathematic operators (check the [variable Types](/Vanilla/Variable_Types/Variable_Types) page). もちろん代入演算子として使うこともできます。  
+`+-*/%` 基本的な数学演算子 ( [変数型](/Vanilla/Variable_Types/Variable_Types) ページを確認してください)。 もちろん代入演算子として使うこともできます。  
 `0 to 10` 0から10までの範囲のRangeを返します。  
 `1~10` 整数を連結します(文字列として"110"が返ります)。
 
