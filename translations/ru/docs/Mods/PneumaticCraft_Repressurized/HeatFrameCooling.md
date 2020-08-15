@@ -1,30 +1,30 @@
-# Heat Frame Cooling
+# Охлаждение теплового фрейма
 
-Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
+Охлаждение тепловых кадров может быть использовано для преобразования одного предмета в другой, поместив предметы в сундук или другой инвентарь с прикрепленной тепловой рамкой, и охлаждать его ниже 0°С (обычно используя трубку Vortex).
 
-## Calling
+## Звонок
 
-You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
+Вы можете вызвать пакет теплового охлаждения с помощью `mods.pneumaticcraft.heatframecooling`
 
-## Removing
+## Удаление
 
-This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
+Эта функция удаляет первый рецепт, который он находит с данным [IIngredient](/Vanilla/Variable_Types/IIngredient/) `вывод`:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.removeRecipe(IIngredient output);
-// Example
+// Пример
 mods.pneumaticcraft.heatframecooling.removeRecipe(<minecraft:obsidian>);
 ```
 
-This function removes *all* Heat Frame Cooling recipes:
+Эта функция удаляет *всех рецептов охлаждения* тепловой рамки:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Adding
+## Добавление
 
-These functions are used to add new recipes for the Heat Frame Cooling system:
+Эти функции используются для добавления новых рецептов системы теплового охлаждения:
 
 ```zenscript
 mods.pneumaticcraft.heatframecooling.addRecipe(IItemStack input, IItemStack output);
