@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Zengetters
 
-| Zengetter | What does it do?                        | Return Type                                                     | Usage           |
+| Zengetter | What does it do?                        | Return Type                                                     | 使用法             |
 | --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
 | biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
 | blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
@@ -18,7 +18,7 @@ It might be required for you to import the package if you encounter any issues (
 | liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
 | potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
 
-## Methods
+## メソッド
 
 ### GetEntity
 
