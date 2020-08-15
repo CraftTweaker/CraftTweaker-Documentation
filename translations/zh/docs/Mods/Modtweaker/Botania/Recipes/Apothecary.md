@@ -1,33 +1,33 @@
-# Petal Apothecary
+# 小孩远端
 
-The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
+远地点包用于添加或移除Botania Petal Apothecary的配方。
 
 ## 导入包
 
-You can call the Apothecary package using `mods.botania.Apothecary`
+您可以使用 `mods.botania.Apothecary 调用Apothecary 包`
 
 ## 添加配方
 
-You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
-Remember one thing though:  
-The Apothecary is **hardcoded to only accept petals**, so while you can add recipes with any ingredients, you should only use items that you can throw in the apothecary.
+您可以使用返回的 [IItemStack](/Vanilla/Items/IItemStack/) 作为输出参数添加配方，或者作为字符串的 Botania 花的名称。 字符串名称仅适用于植物花。  
+记住一件事：  
+Apothecary 是 **硬代码，只接受小派**所以当您可以添加配方的任何配方时，您只能使用您可以扔进适当配方的项目。
 
 ```zenscript
-//mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[] input);
+//mods.botania.Apothecary.addRecipe(IItemStack output, IIngredient[…]输入);
 mods.botania.Apothecary.addRecipe(<minecraft:melon>, [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>]);
 
-//mods.botania.Apothecary.addRecipe(String output, IIngredient[] input);
+/mods. otania.Apothecary.addRecipe(String output, IIngredient[……]input)；
 mods.botania.Apothecary.addRecipe("daybloom", [<ore:petalLime>, <ore:petalLime>, <ore:petalLime>, <ore:petalRed>]);
 ```
 
 ## 删除配方
 
-You can either remove recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.
+您可以使用返回的 [IItemStack](/Vanilla/Items/IItemStack/) 作为输出参数移除配方，也可以将Botania floer 的名称作为字符串。 字符串名称仅适用于植物花。
 
 ```zenscript
 //mods.botania.Apothecary.removeRecipe(IItemStack output);
 mods.botania.Apothecary.removeRecipe(<minecraft:melon>);
 
-//mods.botania.Apothecary.removeRecipe(String output);
+/mods.botania.Apothecary.removeRecipe(String output);
 mods.botania.Apothecary.removeRecipe("daybloom");
 ```
