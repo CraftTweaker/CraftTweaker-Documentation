@@ -4,7 +4,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.StringData
@@ -18,13 +18,13 @@ StringData implements the following interfaces. That means any method available 
 ```zenscript
 new crafttweaker.api.data.StringData(internal as String);
 ```
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| internal  | String | No description provided |
+| Parametr   | Typ         | Opis                    |
+| ---------- | ----------- | ----------------------- |
+| wewnętrzna | Ciąg znaków | No description provided |
 
 
 
-## Methods
+## Metody
 ### asList
 
 Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
@@ -72,9 +72,9 @@ new StringData("Hello").contains(data as crafttweaker.api.data.IData);
 new StringData("Hello").contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parametr | Typ                                                    | Opis                             |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| dane     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -118,8 +118,8 @@ new StringData("Hello").getString();
 ```
 
 
-## Operators
-### ADD
+## Operatorzy
+### DODAJ
 
 Concatenates the two string Datas and returns the result.
 
@@ -128,7 +128,7 @@ new StringData("Hello") + data as crafttweaker.api.data.StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-| Parameter | Type                                                             | Description              |
-| --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| Parametr | Typ                                                              | Opis                     |
+| -------- | ---------------------------------------------------------------- | ------------------------ |
+| dane     | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
 
