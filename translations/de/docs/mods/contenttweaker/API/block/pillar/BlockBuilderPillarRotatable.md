@@ -60,7 +60,7 @@ new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTex
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
+| Parameter  | Type                                                                                                                                                                                                    | Beschreibung        |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
 
