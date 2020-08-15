@@ -1,6 +1,6 @@
-# Plate Bending Machine
+# プレート曲げ機
 
-## Importing the Package
+## パッケージのインポート
 `mods.techreborn.plateBendingMachine`
 
 ## レシピを追加中
@@ -10,6 +10,6 @@ mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1, IIngredient in
 
 ## レシピを削除
 ```zenscript
-mods.techreborn.plateBendingMachine.removeRecipe(IItemStack output);
+mods.techreborn.plateBendingMachine.removeRecipe(IItemStack 出力);
 mods.techreborn.plateBendingMachine.removeAll();
 ```
