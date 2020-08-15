@@ -20,7 +20,7 @@ mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, 
 ```
 
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
