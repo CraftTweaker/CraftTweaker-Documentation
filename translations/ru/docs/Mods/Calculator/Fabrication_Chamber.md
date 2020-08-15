@@ -11,12 +11,12 @@ import mods.calculator.fabricationChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
-## Addition
+## Сложение
 ```zenscript
 fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 fabricationChamber.removeRecipe(IIngredient input);
 ```
