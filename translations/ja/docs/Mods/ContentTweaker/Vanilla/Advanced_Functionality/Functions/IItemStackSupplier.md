@@ -1,12 +1,12 @@
 # IItemStackSupplier
 
-The IItemStackSupplier function can be added to a [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) and is used to provide the [IItemStack](/Vanilla/Items/IItemStack/) to be used as the tab's icon.
+IItemStackSupplier 関数を [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) に追加し、 [IItemStack](/Vanilla/Items/IItemStack/) をタブのアイコンとして使用するために使用します。
 
-## Importing the package
+## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IItemStackSupplier;`
 
-## Parameters
+## パラメータ
 
-The IItemStackSupplier Function is a function with no parameters. The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
+IItemStackサプライヤー関数は、パラメータを持たない関数です。 関数は [IItemStack](/Vanilla/Items/IItemStack/) を返す必要があります。
