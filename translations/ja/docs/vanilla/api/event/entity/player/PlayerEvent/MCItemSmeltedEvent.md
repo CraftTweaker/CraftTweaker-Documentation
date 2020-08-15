@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent>);
 ```
-| パラメータ   | タイプ                                                                                                                                                       | 説明                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                                       | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent)> | 説明が提供されていません |
 
 
 
 ## メソッド
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemSmeltedEvent.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCItemSmeltedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemSmeltedEvent.getPlayer();
@@ -39,7 +39,7 @@ myMCItemSmeltedEvent.getPlayer();
 
 ### getSmelting
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemSmeltedEvent.getSmelting();
@@ -47,9 +47,9 @@ myMCItemSmeltedEvent.getSmelting();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCItemSmeltedEvent.hasResult();
@@ -57,11 +57,11 @@ myMCItemSmeltedEvent.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCItemSmeltedEvent.isCancelable();
@@ -69,9 +69,9 @@ myMCItemSmeltedEvent.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCItemSmeltedEvent.isCanceled();
@@ -83,9 +83,9 @@ myMCItemSmeltedEvent.isCanceled();
 myMCItemSmeltedEvent.setCanceled(cancel as boolean);
 ```
 
-| パラメータ  | タイプ      | 説明                      |
-| ------ | -------- | ----------------------- |
-| cancel | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
 
