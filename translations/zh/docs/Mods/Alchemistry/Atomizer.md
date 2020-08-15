@@ -1,6 +1,6 @@
 # Atomizer
 
-# Package
+# 所属包名
 ```zenscript
 mods.alchemistry.Atomizer
 ```
