@@ -4,7 +4,7 @@ This event is fired whenever an arrow projectile impacts an entity but before da
 
 Various values from the arrow entity are available through zengetters, and can be modified in order to adjust damage, knockback strength, pickup status, and determine (or force) a critical hit.
 
-## Importing the class
+## Importar la clase
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactArrowEvent;`
 
@@ -18,14 +18,14 @@ ProjectileImpactArrow Events implement the following interfaces and are able to 
 
 The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter           | Type                                  |
+| ZenGetter      | Ajuste              | Tipo                                  |
 | -------------- | ------------------- | ------------------------------------- |
 | `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
 | `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
+| `damage`       | `damage`            | doble                                 |
 |                | `knockbackStrength` | int (setter only, no getter)          |
 | `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| `pickupStatus` |                     | Cadena                                |
 
 ## Additional methods
 
