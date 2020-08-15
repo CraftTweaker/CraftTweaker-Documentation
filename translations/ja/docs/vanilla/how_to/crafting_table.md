@@ -1,6 +1,6 @@
 # Crafting Table
 
-## Recipe Types
+## レシピタイプ
 
 There are three recipe types for crafting tables:
 
