@@ -1,21 +1,21 @@
-# Alchemy Array
+# 炼金术阵列
 
 ## 所属包名
 
-`mods.bloodmagic.AlchemyArray`
+`AlchemyArray`
 
 ## 添加配方
 
 ```zenscript
-//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
-// creates an alchemy array recipe with the output of diamond. the first item placed into the array is the stick (the input), followed by the grass (the catalyst)
+//mods.blemmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catultureLocation);
+mods.blemmagic.AlchemyArray ddRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "blemmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.blemagic. lchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
+// 创建一个带有钻石输出的炼金机阵列配方。 放入数组的第一个项目是棍子(输入)，然后是草(催化剂)
 ```
 
 ## 删除配方
 
 ```zenscript
-//mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
-mods.bloodmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
+//mods.blemmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
+mods.blemmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
 ```
