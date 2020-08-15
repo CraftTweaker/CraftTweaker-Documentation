@@ -1,25 +1,25 @@
-# IFurnaceRecipe
+# 熔炉配方
 
-An ICraftingRecipe is a furnace table recipe the way ZS sees it.
+ICraftingRecipe 是ZS 如何看待它的熔炉表配方。
 
 ## 导入类
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.IFurnaceRecipe`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.reciplesIFurnaceRecipe`
 
 ## ZenMethods/Getters
 
-### To String
+### 到字符串
 
 ```zenscript
 rec.commandString;
 rec.toCommandString();
 ```
 
-### Other getters
+### 其他getters
 
 ```zenscript
-rec.input;
+输入;
 rec.output;
 rec.xp;
 ```
