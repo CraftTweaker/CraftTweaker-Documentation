@@ -15,7 +15,7 @@ EntityMountEvent Events implement the following interfaces and are able to call 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter        | Return Type                           |
+| ZenGetter        | Tipo Di Reso                          |
 | ---------------- | ------------------------------------- |
 | `world`          | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
