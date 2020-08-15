@@ -1,4 +1,4 @@
-# MCItemFishedEvent
+# Событие «Рыба-MCItemFished»
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.MCItemFishedEvent
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.MCItemFishedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
+новый crafttweaker.api.event.entity.player.MCItemFishedEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
 ```
 | Параметр | Тип                                                                                                                             | Описание             |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -19,10 +19,10 @@ new crafttweaker.api.event.entity.player.MCItemFishedEvent(handler as function.C
 
 
 ## Методы
-### damageRodBy
+### повреждения Гродби
 
 ```zenscript
-myMCItemFishedEvent.damageRodBy(arg0 as int);
+myMCItemFishedEvent.damageRodBy(arg0 как int);
 ```
 
 | Параметр | Тип | Описание             |
@@ -32,7 +32,7 @@ myMCItemFishedEvent.damageRodBy(arg0 as int);
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getEntityPlayer();
@@ -40,17 +40,17 @@ myMCItemFishedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getPlayer();
 ```
 
-### getRodDamage
+### getРодный Урон
 
-Get the damage the rod will take. Returns: `The damage the rod will take`
+Получите урон, который будет нанесен стержень. Возвращение: `Урон, полученный от стержня`
 
 Возвращает int
 
@@ -58,9 +58,9 @@ Get the damage the rod will take. Returns: `The damage the rod will take`
 myMCItemFishedEvent.getRodDamage();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
 Возвращает boolean
 
@@ -68,11 +68,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCItemFishedEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
 Возвращает boolean
 
@@ -80,9 +80,9 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCItemFishedEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
 Возвращает boolean
 
@@ -90,15 +90,15 @@ Determine if this event is canceled and should stop executing. Returns: `The cur
 myMCItemFishedEvent.isCanceled();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCItemFishedEvent.setCanceled(cancel as boolean);
+myMCItemFishedEvent.setCancel(отменить как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| cancel   | boolean | Описание отсутствует |
+| отменить | boolean | Описание отсутствует |
 
 
 
