@@ -2,7 +2,7 @@
 
 This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
 
-## Importing the class
+## Importar la clase
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactThrowableEvent;`
 
@@ -16,7 +16,7 @@ ProjectileImpactThrowable Events implement the following interfaces and are able
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | ZenSetter | Type                                                      |
-| ---------- | --------- | --------------------------------------------------------- |
-| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter  | Ajuste | Tipo                                                      |
+| ---------- | ------ | --------------------------------------------------------- |
+| `fireball` |        | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `shooter`  |        | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
