@@ -1,9 +1,9 @@
 # Comandi
 
-ModTweaker's Tinker's Construct integration extends the command palette provided by CraftTweaker.  
-To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
+L'integrazione di ModTweaker's Tinker's Construct estende la tavolozza dei comandi fornita da CraftTweaker.  
+Per accedere a questi comandi fai lo stesso per i comandi CraftTweaker, usi il prefisso `/crafttweaker`
 
-# List of Tinkers' Commands
+# Elenco dei comandi di Tinkers
 
 ## ticmat
 
@@ -15,4 +15,4 @@ Uso:
 
 Descrizione:
 
-Outputs a list of all registered [Tinkers' Construct Materials](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) in the game to the crafttweaker.log file.
+Produce una lista di tutti i materiali di costruzione [Tinkers registrati](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) nel gioco al file crafttweaker.log.
