@@ -2,10 +2,10 @@
 
 The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.block.BlockBuilder
 ```
@@ -21,13 +21,13 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Parameter | Type                                                                                 | Description                       | IsOptional | Default Value                |
-| --------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| material  | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
+| パラメータ | タイプ                                                                                  | 説明                                | IsOptional | デフォルト値                       |
+| ----- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
+| 材料    | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
 
 
 
-## Methods
+## メソッド
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -37,9 +37,9 @@ myBlockBuilder.build(resourceLocation as String);
 myBlockBuilder.build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| パラメータ            | タイプ  | 説明                                   |
+| ---------------- | ---- | ------------------------------------ |
+| resourceLocation | 文字列型 | The resource path to give this block |
 
 
 ### withHardnessAndResistance
@@ -55,9 +55,9 @@ myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| Parameter             | Type  | Description                                       |
-| --------------------- | ----- | ------------------------------------------------- |
-| hardnessAndResistance | float | The value to set for hardness and for resistance. |
+| パラメータ                 | タイプ    | 説明                                                |
+| --------------------- | ------ | ------------------------------------------------- |
+| hardnessAndResistance | float型 | The value to set for hardness and for resistance. |
 
 
 
@@ -72,10 +72,10 @@ myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as fl
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
 
-| Parameter    | Type  | Description                      |
-| ------------ | ----- | -------------------------------- |
-| hardnessIn   | float | The value to set for hardness    |
-| resistanceIn | float | The value to set for resistance. |
+| パラメータ        | タイプ    | 説明                               |
+| ------------ | ------ | -------------------------------- |
+| hardnessIn   | float型 | The value to set for hardness    |
+| resistanceIn | float型 | The value to set for resistance. |
 
 
 ### withHarvestLevel
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Parameter    | Type | Description                |
-| ------------ | ---- | -------------------------- |
-| harvestLevel | int  | The harvest level requried |
+| パラメータ | タイプ | 説明                         |
+| ----- | --- | -------------------------- |
+| 収穫レベル | int | The harvest level requried |
 
 
 ### withHarvestTool
@@ -109,7 +109,7 @@ myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolTyp
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| Parameter   | Type                                                                            | Description   |
+| パラメータ       | タイプ                                                                             | 説明            |
 | ----------- | ------------------------------------------------------------------------------- | ------------- |
 | harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
@@ -127,9 +127,9 @@ myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| Parameter | Type                                                                              | Description      |
-| --------- | --------------------------------------------------------------------------------- | ---------------- |
-| group     | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| パラメータ | タイプ                                                                               | 説明               |
+| ----- | --------------------------------------------------------------------------------- | ---------------- |
+| group | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
 
 
 ### withLightValue
@@ -145,9 +145,9 @@ myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| Parameter    | Type | Description            |
-| ------------ | ---- | ---------------------- |
-| lightValueIn | int  | The light level to set |
+| パラメータ        | タイプ | 説明                     |
+| ------------ | --- | ---------------------- |
+| lightValueIn | int | The light level to set |
 
 
 ### withLootFrom
@@ -163,9 +163,9 @@ myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| Parameter | Type                                                          | Description                                  |
-| --------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
+| パラメータ   | タイプ                                                           | 説明                                           |
+| ------- | ------------------------------------------------------------- | -------------------------------------------- |
+| blockIn | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
 
 
 ### withMaxStackSize
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parameter | Type | Description      |
-| --------- | ---- | ---------------- |
-| size      | int  | The size to set. |
+| パラメータ | タイプ | 説明               |
+| ----- | --- | ---------------- |
+| サイズ   | int | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| レア度   | 文字列型 | The rarity |
 
 
 ### withSlipperiness
@@ -217,9 +217,9 @@ myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parameter      | Type  | Description      |
-| -------------- | ----- | ---------------- |
-| slipperinessIn | float | The value to set |
+| パラメータ          | タイプ    | 説明               |
+| -------------- | ------ | ---------------- |
+| slipperinessIn | float型 | The value to set |
 
 
 ### withType
