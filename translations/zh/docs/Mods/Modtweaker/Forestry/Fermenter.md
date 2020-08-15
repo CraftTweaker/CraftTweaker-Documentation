@@ -1,12 +1,12 @@
-# Fermenter
+# 发酵器
 
-ModTweaker allows you to add or remove forestry Fermenter Recipes
+ModTinflow允许您添加或移除林业肥料配方
 
 ## 导入包
 
-You can call the package using `mods.forestry.Fermenter`
+您可以使用 `mods.forestry.Fermenter` 来调用软件包。
 
-## Recipe Removal
+## 删除配方
 
 ```zenscript
 //mods.forestry.Fermenter.removeRecipe(IIngredient input);
@@ -14,24 +14,24 @@ mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 ```
 
-## Recipe Addition
+## 配方添加
 
 ```zenscript
-//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
+//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutModifier);
 mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
 ```
 
-Amount of fluid output: fermentationValue * fluidOutputModifier
+液体输出量：发酵值* 液体输出修改器
 
-| 参数                  | 类型                                             | description                                   |
-| ------------------- | ---------------------------------------------- | --------------------------------------------- |
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
-| resource            | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)  | The Recipe's item input                       |
-| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's liquid input                     |
-| fermentationValue   | int                                            | Amount of inputFluid on organic item requires |
-| fluidOutputModifier | int                                            | Output multiplier                             |
+| 参数          | 类型                                             | 描述           |
+| ----------- | ---------------------------------------------- | ------------ |
+| fluidOutput | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | 矩形的输出        |
+| 资源          | [物品堆（IItemstack）](/Vanilla/Items/IItemStack/)  | 乐施会的项目输入     |
+| fluidInput  | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | 累积体液体输入      |
+| 发酵值         | 整数                                             | 有机项目上的输入流量需要 |
+| 流体输出修改器     | int                                            | 输出倍数         |
 
-## Fuel Removal
+## 燃料移除
 
 ```zenscript
 //mods.forestry.Fermenter.removeFuel(IIngredient fermenterItem);
@@ -39,15 +39,15 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 
 ```
 
-## Fuel Addition
+## 燃料添加
 
 ```zenscript
-//mods.forestry.Fermenter.addFuel(IItemStack item, int fermentPerCycle, int burnDuration);
+//mods.forestry.Fermenter.addFuel(ItemStack item, int fermentPerCycle, int burning Dur);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Parameter       | 类型                                       | 说明                                                                                  |
-| --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
-| item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
-| fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
-| burnDuration    | int                                      | Amount of work cycles a single item of this fuel lasts before expiring.             |
+| 参数    | 类型                                       | 说明                     |
+| ----- | ---------------------------------------- | ---------------------- |
+| 项目    | [IItemStack](/Vanilla/Items/IItemStack/) | 要成为发酵器有效燃料的物品          |
+| 发酵周期线 | 整数                                       | 每个工作周期发酵量多少，即输入的液体消耗量。 |
+| 燃烧时长  | 整数                                       | 这种燃料中的单一物品的工作周期在期满前保持。 |
