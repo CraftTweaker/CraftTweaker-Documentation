@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.pressurizer`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
 mods.nuclearcraft.pressurizer.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
 mods.nuclearcraft.pressurizer.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.pressurizer.removeRecipeWithOutput([itemOutput]);
