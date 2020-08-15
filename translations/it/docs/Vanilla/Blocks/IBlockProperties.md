@@ -2,47 +2,47 @@
 
 BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | Return Type                             | Description                                                           |
-| ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
-| causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
-| hasCustomBreakingProgress | bool                                    |                                                                       |
-| blockNormalCube           | bool                                    |                                                                       |
-| fullBlock                 | bool                                    |                                                                       |
-| fullCube                  | bool                                    |                                                                       |
-| normalCube                | bool                                    |                                                                       |
-| opaqueCube                | bool                                    |                                                                       |
-| translucent               | bool                                    |                                                                       |
-| useNeighborBrightness     | bool                                    |                                                                       |
+| ZenGetter                 | Tipo Di Reso                             | Descrizione                                                           |
+| ------------------------- | ---------------------------------------- | --------------------------------------------------------------------- |
+| canProvidePower           | bool                                     | Restituisce se il blocco referito può fornire Redstone Power          |
+| mobilityFlag              | stringa                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
+| materiale                 | [IMateriale](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
+| causesSuffocation         | bool                                     | Returns whether the block can choke you.                              |
+| hasCustomBreakingProgress | bool                                     |                                                                       |
+| blockNormalCube           | bool                                     |                                                                       |
+| fullBlock                 | bool                                     |                                                                       |
+| fullCube                  | bool                                     |                                                                       |
+| normalCube                | bool                                     |                                                                       |
+| opaqueCube                | bool                                     |                                                                       |
+| translucent               | bool                                     |                                                                       |
+| useNeighborBrightness     | bool                                     |                                                                       |
 
 ## ZenMethods
 
-### isReplacable
+### isSostituibile
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parametri:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+Restituisce un booleano che sa se il blocco può essere sostituito o meno.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+Parametri:
 
 - [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the current light value at the given location.
+Restituisce un int che rappresenta il valore di luce corrente nella posizione indicata.
 
 ### getWeakPower/GetStrongPower
 
@@ -58,12 +58,12 @@ Parameters:
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+Parametri:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the block's redstone comparator input override type.
+Restituisce un int che rappresenta il tipo di override del comparatore redstone del blocco.
 
 ### Check if an entity can spawn on the block
 
