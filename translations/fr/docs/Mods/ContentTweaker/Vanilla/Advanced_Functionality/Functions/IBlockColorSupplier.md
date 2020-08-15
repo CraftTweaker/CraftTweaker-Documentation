@@ -2,7 +2,7 @@
 
 The IBlockColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IBlockColorSupplier;`
@@ -16,7 +16,7 @@ The IBlockColorSupplier Function is a function with following parameters.
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → the position of the block whose color is being requested.
 - int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
-## Examples
+## Exemples
 
 ```zenscript
 #loader contenttweaker
