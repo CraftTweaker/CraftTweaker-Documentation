@@ -1,75 +1,75 @@
 # ICTBlockState
 
-An ICTBlockState object represents a block's current state.
+Un oggetto ICTBlockState rappresenta lo stato corrente di un blocco.
 
-## Importing the package
+## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.BlockState;`
 
-## Calling an ICTBlockState
+## Chiamare una ICTBlockState
 
-You can get an ICTBlockState either as a parameter in an [IBlockAction function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) or from the [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
+Puoi ottenere un ICTBlockState come parametro in una [funzione IBlockAction](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IBlockAction/) o dal [Block Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Blocks/)
 
 `<block:minecraft:dirt>`
 
-## ZenMethods and ZenGetters
+## ZenMethods e ZenGetters
 
-| ZenMethod         | ZenGetter | Return Type                                                            | Description                                             |
-| ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
-| getBlock()        | block     | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Returns the refered block                               |
-| getMeta()         | meta      | int                                                                    | Returns the refered block's metadata                    |
-| canProvidePower() |           | boolean                                                                | Returns if the refered block can provide Redstone Power |
-| getMobilityFlag() |           | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Returns the push reaction flag                          |
+| ZenMethod         | ZenGetter | Tipo Di Reso                                                           | Descrizione                                                  |
+| ----------------- | --------- | ---------------------------------------------------------------------- | ------------------------------------------------------------ |
+| getBlock()        | blocco    | [IBlock](/Vanilla/Blocks/IBlock/)                                      | Restituisce il blocco referito                               |
+| getMeta()         | meta      | int                                                                    | Restituisce i metadati del blocco di riferimento             |
+| canProvidePower() |           | boolean                                                                | Restituisce se il blocco referito può fornire Redstone Power |
+| getMobilityFlag() |           | [PushReaction](/Mods/ContentTweaker/Vanilla/Types/Block/PushReaction/) | Restituisce il flag della reazione push                      |
 
 ## ZenMethods
 
-### isReplacable
+### isSostituibile
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parametri:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo da controllare
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → La posizione del blocco
 
-Returns a boolean that sais whether the block can be replaced or not.
+Restituisce un booleano che sa se il blocco può essere sostituito o meno.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+Parametri:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo da controllare
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → La posizione del blocco
 
-Returns an int representing the current light value at the given location.
+Restituisce un int che rappresenta il valore di luce corrente nella posizione indicata.
 
 ### getWeakPower
 
 `int getWeakPower(IWorld world, IBlockPos blockPos, Facing facing);`  
-Parameters:
+Parametri:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side to be checked
+- [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo da controllare
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → La posizione del blocco
+- [Faccia](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) rivolta verso → Il lato da controllare
 
-Returns an int representing the current redstone power on this side.
+Restituisce un int che rappresenta l'attuale potere di redstone su questo lato.
 
 ### getComparatorInputOverride
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+Parametri:
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world to be checked in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Block's position
+- [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo da controllare
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → La posizione del blocco
 
-Returns an int representing the block's redstone comparator input override type.
+Restituisce un int che rappresenta il tipo di override del comparatore redstone del blocco.
 
-### Comparing two ICTBlockState objects
+### Confronto di due oggetti ICTBlockState
 
-You can either use `int compare(ICTBlockState other);` or the ZenCompare Tokens `==` `!=`.  
-The return different types though:
+Puoi usare `int compare(ICTBlockState other);` o ZenCompare Tokens `==` `!=`.  
+I tipi di ritorno diversi:
 
-- `state.compare(other)` returns an int that is 0 if they are equal
+- `state.compare(other)` restituisce un int che è 0 se sono uguali
 - `state == other` returns a bool that is true of they are equal
