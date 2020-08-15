@@ -1,4 +1,4 @@
-# MCPotion
+# MCЗелье
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -9,13 +9,13 @@ crafttweaker.api.potion.MCPotion
 ```
 
 ## Реализованные интерфейсы
-MCPotion implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+MCPotion реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
 ### getNamePrefixed
 
-Returns String
+Возвращает строку
 
 ```zenscript
 myMCPotion.getNamePrefixed(name as String);
@@ -29,9 +29,9 @@ myMCPotion.getNamePrefixed(name as String);
 
 ## Свойства
 
-| Название         | Тип                                                                                                 | Имеет Getter | Имеет Setter |
-| ---------------- | --------------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| командная строка | String                                                                                              | true         | false        |
-| effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true         | false        |
-| hasInstantEffect | boolean                                                                                             | true         | false        |
+| Название         | Тип                                                                                                    | Имеет Getter | Имеет Setter |
+| ---------------- | ------------------------------------------------------------------------------------------------------ | ------------ | ------------ |
+| командная строка | String                                                                                                 | true         | false        |
+| эффекты          | Список <[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true         | false        |
+| hasInstantEffect | boolean                                                                                                | true         | false        |
 
