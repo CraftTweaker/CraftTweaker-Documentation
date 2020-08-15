@@ -1,12 +1,12 @@
 # Alloy
 
-## Package
+## Пакет
 ```zenscript
 import mods.terrafirmacraft.Alloy;
 import mods.terrafirmacraft.AlloyRecipeBuilder;
 ```
 
-## Addition
+## Сложение
 - For manipulating Alloy recipes a recipe builder is provided
 ```zenscript
 AlloyRecipeBuilder builder = Alloy.addAlloy(String metal);
@@ -14,7 +14,7 @@ builder.addMetal(String input, double min, double max);
 builder.build();
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 Alloy.removeAlloy(String metal);
