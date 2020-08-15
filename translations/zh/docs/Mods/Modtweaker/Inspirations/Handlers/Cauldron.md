@@ -1,93 +1,93 @@
-# Cauldron
+# 炼药店
 
-The Cauldron package is used for adding/removing recipes for the cauldron. Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
+Cauldron 包用于添加/移除导管配方。 Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
 
 ## 导入包
 
-You can call the Cauldron package using `mods.inspirations.Cauldron`
+您可以使用 `mods.intentions.Cauldron` 来调用 Cauldron 包
 
-## Fluids
+## 流体
 
-Inspirations features three types of recipes using fluids: ones to transform an item using a fluid, ones to transform a fluid using an item, and ones to add fill with a fluid using an item. While all the handlers take on a fluid stack, only the fluid type will affect the recipe. Inspirations cauldrons use the vanilla system of three bottles in a cauldron so amounts are handled in another parameter.
+灵感有三种使用液体的配方：使用液体转换物品的配方。 用一件物品来转换液体，以及用一件物品来添加液体的液体。 虽然所有处理器都会拿到液体堆栈，但只有液体类型会影响该配方。 刺激电缆使用由三瓶子组成的香草系统，以便在另一个参数中处理数量问题。
 
-### Fluid adding
+### 液体添加
 
-Adds a recipe converting the input item to the output item using the fluid.
+添加一个配方，使用液体将输入项转换到输出项。
 
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
-
-```zenscript
-//mods.inspirations.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional boolean boiling);
-mods.inspirations.Cauldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
-mods.inspirations.Cauldron.addFluidRecipe(<minecraft:water_bucket>, <minecraft:ice>, <liquid:lava>, 1, true);
-```
-
-### Fluid removal
-
-Removes an existing fluid recipe from the cauldron.
+* 输入项支持堆栈大小，需要持有的堆栈为一定大小。
+* 该水平决定了该配方消费的水平。 支持0-3，默认为1
+* 锅炉决定是否必须将电缆放置在该配方火上面。 可以是真的，可以要求它, false 要求没有火焰, 或者null (默认) 忽略它。
 
 ```zenscript
-//mods.inspirations.Cauldron.removeFluidRecipe(IIngredient output, @Optional IIngredient input, @Optional ILiquidStack fluid)
-mods.inspirations.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
+//mods.intensions.Cauldron.addFluidRecipe(IItemStack output, IIngredient input, ILiquidStack fluid, @Optional int level, @Optional boolian boiling);
+mods.intentions. auldron.addFluidRecipe(<minecraft:blaze_rod>, <minecraft:blaze_powder> * 2, <liquid:lava>);
+mods.byears.Cauldron.addFluidRecipe(<minecraft:water_bucket>, <minecraft:ice>, <liquid:lava>, 1, true);
 ```
 
-### Fluid transform adding
+### 液体移除
 
-Adds a recipe converting the fluid to the output fluid using the item.
-
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Max level determines the maximum amount of fluid allowed for this transformation to happen. Used to allow recipes to have a cheaper version if the cauldron contains less fluid.
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+移除电缆中现有的液体配方。
 
 ```zenscript
-//mods.inspirations.Cauldron.addFluidTransform(ILiquidStack output, IIngredient input, ILiquidStack fluid, @Optional int maxLevels, @Optional boolean boiling);
-mods.inspirations.Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
+//mods.byounations.Cauldron.removeFluidRecipe(IIngredient output, @Optional IIngredient input, @Opinion ILiquidStack fluid)
+mods.Cauldron.removeFluidRecipe(<minecraft:beetroot_soup>);
 ```
 
-### Fluid transform removal
+### 液体变换添加
 
-Removes an existing fluid transform recipe from the cauldron. Output is `IIngredient` but only supports a fluid stack or wildcard.
+添加一个配方，使用该项目将液体转换为输出液体。
+
+* 输入项支持堆栈大小，需要持有的堆栈为一定大小。
+* 最大等级决定允许转换发生的最大流量值。 用于允许配方拥有较便宜的版本，如果电缆含有较少的液体。
+* 锅炉决定是否必须将电缆放置在该配方火上面。 可以是真的，可以要求它, false 要求没有火焰, 或者null (默认) 忽略它。
 
 ```zenscript
-//mods.inspirations.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
-mods.inspirations.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
+//mods.intensions.Cauldron.addFluidTransform(ILiquidStack output, IIngredient input, ILiquidStack fluid, @Optional int maxLevels, @Optional boolian boiling);
+mods.byears. Cauldron.addFluidTransform(<liquid:lava>, <minecraft:blaze_powder>, <liquid:water>, 2, false);
 ```
 
-### Fill recipe adding
+### 液体转化移除
 
-Adds a recipe filling the cauldron with the provided fluid..
-
-* Input item supports stack sizes to require the held stack to be a certain size.
-* Levels determines how much the recipe fills the cauldron by. Defaults to 1 if not provided.
-* Container determines the item returned after performing this recipe. If none is provided defaults to returning nothing.
+移除电缆中现有的液体转化配方。 输出是 `IIngredient` 但仅支持液体堆栈或通配符。
 
 ```zenscript
-//mods.inspirations.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int levels, @Optional IItemStack container);
-mods.inspirations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
-mods.inspirations.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
+//mods.intensions.Cauldron.removeFluidTransform(IIngredient output, [IIngredient input, [IFluidStack fluid]]);
+mods.years.Cauldron.removeFluidTransform(<liquid:beetroot_soup>, <minecraft:beetroot>, <liquid:water>);
 ```
 
-### Fill recipe removal
+### 填充配方添加
 
-Removes an existing fill recipe from the cauldron.
+添加一个配方用提供的液体填充电缆...
+
+* 输入项支持堆栈大小，需要持有的堆栈为一定大小。
+* 水平决定着配方在多大程度上填充了蛋糕。 如果没有提供，默认值为 1。
+* 容器决定完成该配方后返回的项目。 如果没有提供任何信息，请默认什么都不返回。
 
 ```zenscript
-//mods.inspirations.Cauldron.removeFillRecipe(IIngredient input, @Optional ILiquidStack fluid);
-mods.inspirations.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
-mods.inspirations.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
+//mods.intensions.Cauldron.addFillRecipe(IIngredient input, ILiquidStack fluid, @Optional int level, @Opinion IItemStack container);
+mods.butilisations.Cauldron.addFillRecipe(<ore:gemDiamond>, <liquid:water>, 2, <minecraft:emerald>);
+mods.intentions.Cauldron.addFillRecipe(<minecraft:emerald>, <liquid:lava>);
 ```
 
-## Brewing and Potions
+### 填充配方移除
 
-Inspirations features two types of potion recipes using potions: brewing recipes that change a potion from one type into another, and potion recipes that change an item using a potion.
+从导星中移除现有的填充配方。
 
-Since the recipes take on `PotionType`'s instead of `Potion`'s directly, potion parameters are strings. A list of all potion types can be obtained using the command `/ct inspirations potions`.
+```zenscript
+//mods.灵感. Cauldron.removeFillRecipe(IIngredient input, @Opinion ILiquidStack fluid);
+mods.Cauldron.removeFillRecipe(<minecraft:beetroot_soup>);
+mods.byears.Cauldron.removeFillRecipe(<*>, <liquid:mushroom_stew>);
+```
 
-### Brewing adding
+## 酿造和药水
 
-Adds a recipe converting the input potion to the output potion using the reagent.
+灵感有两种药水药剂：酿造药剂，将药水从一种变成另一种药水。 和药水配方使用药水改变一种物品。
+
+因为配方需要使用 `药水类型`而不是 `药水`的直接药水参数是字符串。 可以使用命令 `/ct 灵感药水` 获取所有药水类型的列表。
+
+### 酿造添加
+
+添加一个配方，使用反应剂将输入药水转换为输出药水。
 
 ```zenscript
 //mods.inspirations.Cauldron.addBrewingRecipe(String output, String input, IIngredient reagent);
@@ -95,56 +95,56 @@ mods.inspirations.Cauldron.addBrewingRecipe("minecraft:invisibility", "minecraft
 mods.inspirations.Cauldron.addBrewingRecipe("minecraft:healing", "minecraft:thick", <ore:gemEmerald>);
 ```
 
-### Brewing removal
+### 酿造除法
 
-Removes an existing brewing recipe from the cauldron. Both input and output can be set to null to act as a wildcard.
+移除电缆中现有的酿造配方。 输入和输出都可以设置为 null 作为通配符。
 
 ```zenscript
-//mods.inspirations.Cauldron.removeBrewingRecipe(String output, @Optional String input, @Optional IIngredient reagent);
-mods.inspirations.Cauldron.removeBrewingRecipe("inspirations:haste");
-mods.inspirations.Cauldron.removeBrewingRecipe("minecraft:awkward", "minecraft:water", <minecraft:nether_wart>);
+//mods.intensions.Cauldron.removeBrewingRecipe(String output, @Optional String input, @Optional IIngredient reagent);
+mods.灵感. Cauldron.remove BrewingRecipe("灵感:haste");
+mods.Cyears.Cauldron.removeBrewingRecipe("minecraft:awkward", "minecraft:water", <minecraft:nether_wart>);
 ```
 
-### Potion recipe adding
+### 药水配方添加
 
-Adds a recipe converting the input item to the output item using the potion.
+使用药水添加一个将输入项转换为输出项的配方。
 
-* Levels determines how many levels are consumed by the recipe. Supports 0-3, defaulting to 1
-* Boiling determines if the cauldron must be placed above fire for the recipe. Can be true to require it, false to require not having fire, or null (default) to ignore it.
+* 该水平决定了该配方消费的水平。 支持0-3，默认为1
+* 锅炉决定是否必须将电缆放置在该配方火上面。 可以是真的，可以要求它, false 要求没有火焰, 或者null (默认) 忽略它。
 
 ```zenscript
-//mods.inspirations.Cauldron.addPotionRecipe(IItemStack output, IIngredient input, String potion, @Optional int levels, @Optional boolean boiling);
-mods.inspirations.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2); 
+//mods.intensions.Cauldron.addPotionRecipe( IItemStack output, IIngredient input, String potion, @Optional int level, @Opinion boiling);
+mods.Cauldron.addPotionRecipe(<minecraft:golden_apple>, <minecraft:apple>, "minecraft:regeneration", 2) 
 ```
 
-### Potion recipe removal
+### 药水配方移除
 
-Removes an existing potion recipe from the cauldron. By default no potion recipes exist but addons may add a recipe.
+从导星中移除现有的药水配方。 默认情况下不存在药水配方，但附加组件可以添加配方。
 
 ```zenscript
-//mods.inspirations.Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String potion);
+//mods.灵感. Cauldron.removePotionRecipe(IIngredient output, @Optional IIngredient input, @Optional String 药水);
 ```
 
-## Dyes
+## 染料
 
-Inspirations features only one type of dye recipe to transform an item using a dye. Dye recipes take on a string dye color which represents a value from `EnumDyeColor`. To get a list of all values, the command `/ct inspirations dyes` is provided.
+灵感只能有一种类型的染料配方来使用染料来转换物品。 染料配方取自 `EnumDye彩色` 的字符串染料颜色。 要获取所有值的列表，请提供命令 `/ct 灵感dyes`。
 
-### Adding
+### 添加
 
-Adds a recipe converting the input to the output using the dye consuming a single level of dyed water.
+添加一个配方，使用染料消耗一定水平的染料水，将输入转换为输出。
 
 ```zenscript
-//mods.inspirations.Cauldron.addDyeRecipe(IItemStack output, IIngredient input, String dye);
-mods.inspirations.Cauldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>, "blue");
-mods.inspirations.Cauldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
+//mods.intensions.Cauldron.addDyeRecipe(IItemStack output, IIngredient input, String dye);
+mods.Cauldron.addDyeRecipe(<minecraft:diamond>, <minecraft:emerald>, "蓝色");
+mods.Cauldron.addDyeRecipe(<minecraft:emerald>, <minecraft:diamond>, "lime");
 ```
 
-### Removal
+### 移除
 
-Removes an existing dye recipe from the cauldron.
+移除已存在的染料配方。
 
 ```zenscript
-//mods.inspirations.Cauldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)
-mods.inspirations.Cauldron.removeDyeRecipe(<*>, <*>, "blue");
-mods.inspirations.Cauldron.removeDyeRecipe(<inspirations:carpeted_trapdoor_white>);
+//mods.灵感. Cauldron.removeDyeRecipe(IIngredient output, @Optional IIngredient input, @Optional String dye)
+mods.灵感. Cauldron.removeDyeRecipe(<*>, <*>, "蓝色");
+mods.Cyrons.Cauldron.removeDyeRecipe(<inspirations:carpeted_trapdoor_white>);
 ```
