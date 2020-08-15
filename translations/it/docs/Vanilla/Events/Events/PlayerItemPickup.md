@@ -16,11 +16,11 @@ PlayerItemPickup Events implement the following interfaces and are able to call 
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                   |
+| ZenGetter        | Tipo Di Reso                                  |
 | ---------------- | --------------------------------------------- |
 | `stackCopy`      | [IItemStack](/Vanilla/Items/IItemStack/)      |
 | `originalEntity` | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 
-## Notes
+## Note
 
 `stackCopy` is a copy of the item contained inside of the original entity item, representing what was picked up and placed into the player's inventory. `originalEntity` is the item entity with any remaining amount of the item stack (if the player didn't pick up the full amount).
