@@ -5,7 +5,7 @@
 import mods.terrafirmacraft.Quern;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
 Quern.addRecipe(String registryName, IIngredient input, IItemStack output);
