@@ -1,25 +1,25 @@
-# ISoundTypeDefinition
+# Определение типа ISoundType
 
-An ISoundTypeDefinition object represents a sound (type) in the game. A sound type is almost always bound to one or multiple blocks.
+Объект ISoundTypeDefinition представляет звук (тип) в игре. Звуковой тип почти всегда связан с одним или несколькими блоками.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.SoundType;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импорт mods.contenttweaker.SoundType;`
 
-## Calling an ISoundTypeDefinition object
+## Вызов объекта ISoundTypeDefinition
 
-You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
+Такой объект можно получить с помощью [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
 `<soundtype:wood>`
 
-## ZenMethods without parameters
+## Методы ZenMethods без параметров
 
-| Метод           | Возвращаемый тип                                                                        | Definition                                                         |
-| --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| getVolume()     | float                                                                                   | Returns the type's volume                                          |
-| getPitch()      | float                                                                                   | Returns the type's pitch                                           |
-| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is broken     |
-| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is stepped on |
-| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is placed     |
-| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is hit        |
-| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is falling    |
+| Метод           | Возвращаемый тип                                                                        | Определение                                                      |
+| --------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| getVolume()     | float                                                                                   | Возвращает объем типа                                            |
+| getPitch()      | float                                                                                   | Возвращает высоту типа                                           |
+| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Возвращает звук, возникающий при разрыве связанного блока        |
+| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Возвращает звук, возникающий при нажатии на соответствующий блок |
+| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Возвращает звук, возникающий при размещении связанного блока     |
+| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Возвращает звук, возникающий при попадании связанного блока      |
+| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Возвращает звук, возникающий при падении связанного блока        |
