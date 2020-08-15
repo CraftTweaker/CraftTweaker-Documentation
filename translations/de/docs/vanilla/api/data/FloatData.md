@@ -20,7 +20,7 @@ new crafttweaker.api.data.FloatData(internal as float);
 ```
 | Parameter | Type  | Beschreibung            |
 | --------- | ----- | ----------------------- |
-| internal  | float | No description provided |
+| intern    | float | No description provided |
 
 
 
