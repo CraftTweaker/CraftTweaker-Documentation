@@ -4,7 +4,7 @@
 
 `mods.thermalexpansion.Infuser`
 
-## Addition
+## Ajouter
 
 ```zenscript
 //mods.thermalexpansion.Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
