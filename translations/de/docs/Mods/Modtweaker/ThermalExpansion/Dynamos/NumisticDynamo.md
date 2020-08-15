@@ -5,7 +5,7 @@
 To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
 
 ```zenscript
-import mods.thermalexpansion.NumisticDynamo;
+importieren mods.thermalexpansion.NumisticDynamo;
 ```
 
 ## Brennstoff hinzufügen
@@ -15,7 +15,7 @@ import mods.thermalexpansion.NumisticDynamo;
 mods.thermalexpansion.NumisticDynamo.addFuel(<liquid:water>, 13);
 ```
 
-## Add Gem Fuel
+## Juwel hinzufügen
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.addGemFuel(ILiquidStack stack, int energy);
@@ -29,7 +29,7 @@ mods.thermalexpansion.NumisticDynamo.addGemFuel(<liquid:water>, 13);
 mods.thermalexpansion.NumisticDynamo.removeFuel(<liquid:water>);
 ```
 
-## Remove Gem Fuel
+## Juwelenkraftstoff entfernen
 
 ```zenscript
 //mods.thermalexpansion.NumisticDynamo.removeGemFuel(ILiquidStack stack);
