@@ -1,8 +1,8 @@
-# Block Bracket Handler
+# Gestore Parentesi Blocco
 
-The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
+Il Block Bracket Handler ti dà accesso ai blocchi del gioco. È possibile ottenere solo blocchi registrati nel gioco, quindi aggiungere o rimuovere le mod può causare problemi se si fa riferimento ai blocchi della mod in un Block Bracket Handler.
 
-Blocks are referenced in the Block Bracket handler this way:
+I blocchi sono referenziati nel gestore della staffa di blocco in questo modo:
 
 ```zenscript
 <block:modID:blockName>
@@ -10,5 +10,5 @@ Blocks are referenced in the Block Bracket handler this way:
 <block:minecraft:dirt>
 ```
 
-If the block is found, this will return an [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) Object.  
-Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) for further information on what you can do with these.
+Se il blocco viene trovato, questo restituirà un oggetto [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) .  
+Si prega di fare riferimento alla [rispettiva voce Wiki](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) per ulteriori informazioni su ciò che si può fare con questi.
