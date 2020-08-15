@@ -1,36 +1,36 @@
-# Coke Oven
+# コークスOven
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
+`mods.immersiveengineering.CokeOven` を使用して、CokeOven パッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
-| Required | Type        | Data Type                                           |
-| -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| 必須 | タイプ   | データタイプ                                              |
+| -- | ----- | --------------------------------------------------- |
+| 必須 | 出力    | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| 必須 | 燃料出力  | 整数                                                  |
+| 必須 | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
+| 必須 | 時刻    | 整数                                                  |
 
-### Example
+### 例
 
 ```zenscript
-//Example:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
-mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
+//例:
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack 出力, int fuelOutput, IIngredient input, int time);
+mods.immursiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Remove Recipe
+## レシピを削除
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| タイプ | データタイプ                                   |
+| --- | ---------------------------------------- |
+| 出力  | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### 例
 
 ```zenscript
-//Example:
+//例:
 mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```
