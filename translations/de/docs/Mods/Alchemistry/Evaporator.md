@@ -1,6 +1,6 @@
 # Evaporator
 
-# Package
+# Paket
 ```zenscript
 mods.alchemistry.Evaporator
 ```
@@ -17,7 +17,7 @@ mods.alchemistry.Evaporator.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Evaporator.addRecipe(<minecraft:stone>,<liquid:lava>*250);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 mods.alchemistry.Evaporator.removeRecipe(ILiquidStack input); //Will work regardless of quantity
 mods.alchemistry.Evaporator.removeRecipe(<liquid:milk>);
