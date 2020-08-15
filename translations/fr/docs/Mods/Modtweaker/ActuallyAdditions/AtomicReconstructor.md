@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.AtomicReconstructor`
 
-## Addition
+## Ajouter
 
 ```zenscript
 //mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
