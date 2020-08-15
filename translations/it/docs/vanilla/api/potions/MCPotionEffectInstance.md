@@ -20,22 +20,22 @@ myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemSta
 | pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nessuna descrizione fornita |
 
 
-### combine
+### combinare
 
 Restituisce un booleano
 
 ```zenscript
-myMCPotionEffectInstance.combine(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCPotionEffectInstance.combine(effetto come crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
 | Parametro | Tipo                                                                                          | Descrizione                 |
 | --------- | --------------------------------------------------------------------------------------------- | --------------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nessuna descrizione fornita |
+| effetto   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nessuna descrizione fornita |
 
 
-### getCurativeItems
+### getCurativeItem
 
-Returns List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)>
+Restituisce Lista<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)>
 
 ```zenscript
 myMCPotionEffectInstance.getCurativeItems();
@@ -54,7 +54,7 @@ myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStac
 | pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Nessuna descrizione fornita |
 
 
-### setCurativeItems
+### setCurativeItem
 
 ```zenscript
 myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
@@ -68,13 +68,13 @@ myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemSt
 
 ## Proprietà
 
-| Nome          | Tipo                                                                          | Ha Getter | Ha Setter |
-| ------------- | ----------------------------------------------------------------------------- | --------- | --------- |
-| ambient       | boolean                                                                       | vero      | falso     |
-| amplificatore | int                                                                           | vero      | falso     |
-| durata        | int                                                                           | vero      | falso     |
-| effectName    | Stringa                                                                       | vero      | falso     |
-| pozione       | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | vero      | falso     |
-| showIcon      | boolean                                                                       | vero      | falso     |
-| showParticles | boolean                                                                       | vero      | falso     |
+| Nome             | Tipo                                                                          | Ha Getter | Ha Setter |
+| ---------------- | ----------------------------------------------------------------------------- | --------- | --------- |
+| ambiente         | boolean                                                                       | vero      | falso     |
+| amplificatore    | int                                                                           | vero      | falso     |
+| durata           | int                                                                           | vero      | falso     |
+| effectName       | Stringa                                                                       | vero      | falso     |
+| pozione          | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | vero      | falso     |
+| showIcon         | boolean                                                                       | vero      | falso     |
+| mostraParticelle | boolean                                                                       | vero      | falso     |
 
