@@ -2,7 +2,7 @@
 
 An IDamageSource object is the source of damage to an entity.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.damage.IDamageSource`
@@ -12,7 +12,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | ZenGetter        | ZenMethod                         | Return Type                           |
 | ---------------- | --------------------------------- | ------------------------------------- |
 | harmInCreative   | canHarmInCreative();              | bool型                                 |
-| damageType       | getDamageType();                  | string                                |
+| damageType       | getDamageType();                  | 文字列                                   |
 | hunderDamage     | getHungerDamage();                | float型                                |
 | immediateSource  | getImmediateSource();             | [IEntity](/Vanilla/Entities/IEntity/) |
 | trueSource       | getTrueSource();                  | [IEntity](/Vanilla/Entities/IEntity/) |
