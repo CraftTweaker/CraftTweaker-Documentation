@@ -10,31 +10,31 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.data.MapData
 ```
 
-## Implemented Interfaces
-MapData implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+## Interfaces implementadas
+MapData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [data.IData](/vanilla/api/data/IData)
 
-## Constructors
+## Constructores
 ```zenscript
 new crafttweaker.api.data.MapData();
 ```
 ```zenscript
 new crafttweaker.api.data.MapData(map as crafttweaker.api.data.IData[String]);
 ```
-| Parámetro | Tipo                                                           | Descripción             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | No description provided |
+| Parámetro | Tipo                                                           | Descripción                   |
+| --------- | -------------------------------------------------------------- | ----------------------------- |
+| mapa      | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | No se proporcionó descripción |
 
 
 
 ## Métodos
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Obtiene una lista<IData> la representación de esta IData, devuelve nulo en cualquier cosa menos [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Returns: `null if this IData is not a list.`
+ Devuelve: `null si este IData no es una lista.`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Devuelve List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 myMapData.asList();
@@ -42,11 +42,11 @@ myMapData.asList();
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Obtiene una representación del mapa<String, IData> de esta IData, devuelve nulo en cualquier cosa menos [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
+ Devuelve: `null si este IData no es un mapa.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 myMapData.asMap();
@@ -54,71 +54,71 @@ myMapData.asMap();
 
 ### asString
 
-Gets the String representation of this IData
+Obtiene la representación de cadena de este IData
 
- Returns: `String that represents this IData (value and type).`
+ Devuelve: `String que representa este IData (valor y tipo).`
 
-Returns String
+Devuelve Cadena
 
 ```zenscript
 myMapData.asString();
 ```
 
-### contains
+### contiene
 
-Checks if the Map contains the given key.
+Comprueba si el mapa contiene la clave dada.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
-myMapData.contains(key as String);
-myMapData.contains("Hello");
+myMapData.contains(clave como String);
+myMapData.contains("Hola");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| key       | Cadena | The key to search for |
+| Parámetro | Tipo   | Descripción       |
+| --------- | ------ | ----------------- |
+| llave     | Cadena | La clave a buscar |
 
 
-### copy
+### copiar
 
-Makes a copy of this IData.
+Hace una copia de este IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData es inmutable por defecto, use esto para crear una copia adecuada del objeto.
 
- Returns: `a copy of this IData.`
+ Devuelve: `una copia de este IData.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.copy();
 ```
 
-### get
+### obtener
 
-Retrieves the value associated with the key
+Recuperar el valor asociado con la clave
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.get(key as String);
-myMapData.get("Hello");
+myMapData.get("Hola");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| key       | Cadena | The key to search for |
+| Parámetro | Tipo   | Descripción       |
+| --------- | ------ | ----------------- |
+| llave     | Cadena | La clave a buscar |
 
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+Obtiene el ID de la etiqueta NBT interna.
 
- Used to determine what NBT type is stored (in a list for example)
+ Utilizado para determinar qué tipo de NBT se almacena (en una lista por ejemplo)
 
- Returns: `ID of the NBT tag that this data represents.`
+ Devuelve: `ID de la etiqueta NBT que representan estos datos.`
 
-Returns byte
+Devuelve byte
 
 ```zenscript
 myMapData.getId();
@@ -126,102 +126,102 @@ myMapData.getId();
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+Obtiene la representación de cadena de la etiqueta INBT interna
 
- Returns: `String that represents the internal INBT of this IData.`
+ Devuelve: `Cadena que representa el INBT interno de este IData.`
 
-Returns String
+Devuelve Cadena
 
 ```zenscript
 myMapData.getString();
 ```
 
-### merge
+### fusión
 
-Merges this map and the other map. If entries from this map and the other map share the values are tried to be merged. If that does not work, then the value from the other map is used.
+Combina este mapa y el otro mapa. Si las entradas de este mapa y del otro mapa comparten los valores se intenta fusionar. Si esto no funciona, entonces se utilizará el valor del otro mapa.
 
-Returns [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)
+Devuelve [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-myMapData.merge(other as crafttweaker.api.data.MapData);
+myMapData.merge(otro como crafttweaker.api.data.MapData);
 myMapData.merge({Doodle: "Do});
 ```
 
-| Parámetro | Tipo                                                       | Descripción    |
-| --------- | ---------------------------------------------------------- | -------------- |
-| other     | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | The other map. |
+| Parámetro | Tipo                                                       | Descripción   |
+| --------- | ---------------------------------------------------------- | ------------- |
+| otro      | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | El otro mapa. |
 
 
-### put
+### poner
 
-Adds sets the value for the given key or creates a new entry if it did not exist before.
+Añade el valor de la clave dada o crea una nueva entrada si no existía antes.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Devuelve [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.put(key as String, value as crafttweaker.api.data.IData);
-myMapData.put("Hello", "Goodbye");
+myMapData.put("Hola", "Goodbye");
 ```
 
-| Parámetro | Tipo                                                   | Descripción                   |
-| --------- | ------------------------------------------------------ | ----------------------------- |
-| key       | Cadena                                                 | The key to set the value for. |
-| valor     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
+| Parámetro | Tipo                                  | Descripción                             |
+| --------- | ------------------------------------- | --------------------------------------- |
+| llave     | Cadena                                | La clave para establecer el valor para. |
+| valor     | [data.IData](/vanilla/api/data/IData) | El valor a establecer.                  |
 
 
 ### putAll
 
-Adds all entries from the given map into this one. Can override existing keys.
+Añade todas las entradas del mapa dado a ésta. Puede reemplazar las claves existentes.
 
 ```zenscript
 myMapData.putAll(map as crafttweaker.api.data.IData[String]);
-myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
+myMapData.putAll({Hello: "Goodbye", Objeto: "Bedrock"});
 ```
 
-| Parámetro | Tipo                                                           | Descripción                               |
-| --------- | -------------------------------------------------------------- | ----------------------------------------- |
-| map       | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
+| Parámetro | Tipo                                                           | Descripción                              |
+| --------- | -------------------------------------------------------------- | ---------------------------------------- |
+| mapa      | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | Las otras entradas a agregar a este mapa |
 
 
 ### eliminar
 
-Removes the entry with the given key from the Map
+Elimina la entrada con la clave dada del mapa
 
 ```zenscript
 myMapData.remove(key as String);
-myMapData.remove("Somewhere");
+myMapData.remove("en alguna parte");
 ```
 
-| Parámetro | Tipo   | Descripción                    |
-| --------- | ------ | ------------------------------ |
-| key       | Cadena | The key of the entry to remove |
+| Parámetro | Tipo   | Descripción                       |
+| --------- | ------ | --------------------------------- |
+| llave     | Cadena | La clave de la entrada a eliminar |
 
 
 
 ## Propiedades
 
-| Nombre  | Tipo          | Has Getter | Has Setter |
-| ------- | ------------- | ---------- | ---------- |
-| isEmpty | boolean       | verdad     | falso      |
-| keySet  | Fijar<String> | verdad     | falso      |
-| tamaño  | int           | verdad     | falso      |
+| Nombre  | Tipo          | Tiene Obtén | Tiene Setter |
+| ------- | ------------- | ----------- | ------------ |
+| isEmpty | boolean       | verdad      | falso        |
+| keySet  | Fijar<String> | verdad      | falso        |
+| tamaño  | int           | verdad      | falso        |
 
 ## Operadores
 ### AGREGAR
 
-Adds all entries from the given IData to this entry
+Añade todas las entradas del IData dado a esta entrada
 
 ```zenscript
-myMapData + data as crafttweaker.api.data.IData
+myMapData + datos como crafttweaker.api.data.IData
 ```
 
-| Parámetro | Tipo                                                   | Descripción             |
-| --------- | ------------------------------------------------------ | ----------------------- |
-| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
+| Parámetro | Tipo                                  | Descripción                   |
+| --------- | ------------------------------------- | ----------------------------- |
+| datos     | [data.IData](/vanilla/api/data/IData) | No se proporcionó descripción |
 
 ## Casters
 
-| Result type                                                    | Is Implicit |
-| -------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | verdad      |
+| Tipo de resultado                                              | Es implícito |
+| -------------------------------------------------------------- | ------------ |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | verdad       |
 
