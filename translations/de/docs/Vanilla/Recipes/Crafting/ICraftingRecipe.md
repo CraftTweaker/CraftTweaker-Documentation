@@ -56,7 +56,7 @@ rec.ingredients1D;
 rec.ingredients2D;
 ```
 
-### Output
+### Ausgang
 
 The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
 
