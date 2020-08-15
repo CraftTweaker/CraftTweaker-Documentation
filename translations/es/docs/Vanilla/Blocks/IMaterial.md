@@ -2,27 +2,27 @@
 
 An IMaterial object represents the material a block is made of.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods sin parámetros
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter                | Método                          | Tipo de devolución |
+| ------------------------ | ------------------------------- | ------------------ |
+| blocksLight              | blocksLight()                   | pluma              |
+| bloquesMovimiento        | blocksMovement()                | pluma              |
+| canQuemar                | getCanBurn()                    | pluma              |
+| mobilityFlag             | getMobilityFlag()               | cadena             |
+| líquido                  | isLiquid()                      | pluma              |
+| opaco                    | isOpaque()                      | pluma              |
+| reemplazable             | es reemplazable()               | pluma              |
+| solid                    | isSolid()                       | pluma              |
+| herramienta no requerida | no se requiere la herramienta() | pluma              |
+|                          | setReplaceable()                | IMaterial          |
 
-## ZenMethods with parameters
+## ZenMethods con parámetros
 
 ### Check if two IMaterials match
 
