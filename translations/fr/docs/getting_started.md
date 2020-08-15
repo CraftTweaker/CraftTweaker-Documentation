@@ -1,8 +1,8 @@
-# Getting Started with scripts
+# Commencer avec des scripts
 
 CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder, if you aren't sure where this folder is, just run `/ct scripts` when in the game and the folder will open.
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
+ZenScript est un langage de script "haut en bas", ce qui signifie que `Importe` doit être en haut du fichier, `Les déclarations de variables` doivent être en haut du fichier, cependant il n'y a aucune restriction à cela, une variable `` peut être définie n'importe où dans un script, Cependant, il ne sera pas accessible aux lignes au-dessus de la déclaration de la `Variable`.
 
 
 Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
@@ -18,11 +18,11 @@ This does not mean that changes are applied twice however, changes made by scrip
 When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
 
 
-### Writing your first script
+### Écriture de votre premier script
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+Dans `hello.zs` mettez la ligne suivante
 
 ```zenscript
 println("Hello world!");
@@ -38,15 +38,15 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 
 
-### The crafttweaker.log file
+### Le fichier crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Le fichier `crafttweaker.log` utilise une syntaxe spécifique dans sa sortie, cette syntaxe est :
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+En utilisant l'exemple ci-dessus, la sortie serait:
 
 ```
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
@@ -54,21 +54,21 @@ Using the example above, the output would be:
 
 The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
 
-### Comments
+### Commentaires
 
-Comments can be used to make your script files more readable and easier to understand!
+Les commentaires peuvent être utilisés pour rendre vos fichiers de script plus lisibles et plus faciles à comprendre!
 
-ZenScript supports 3 types of comments, being:
+ZenScript supporte 3 types de commentaires, être:
 
-Single line: `// I'm a single line comment!`
+Une seule ligne: `// Je suis une seule ligne de commentaire!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Ligne unique alternative : `# Je suis aussi un commentaire d'une seule ligne !`
 
-Multiline:
+Multiligne :
 ```
-/* I'm 
-a
-multiline comment! */
+/* Je suis 
+un commentaire
+multiligne ! */
 ```
 
 Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
