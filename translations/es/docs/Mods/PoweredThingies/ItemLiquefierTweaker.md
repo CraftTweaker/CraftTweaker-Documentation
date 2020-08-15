@@ -1,6 +1,6 @@
 # Powered Thingies :: Item Liquefier
 
-### Importing
+### Importando
 
 ```zenscript
 import mods.poweredthingies.Tweaker.itemLiquefierTweaker as ilt;
@@ -22,12 +22,12 @@ ilt().clear()
 addRecipe(input: IItemStack, output: ILiquidStack)
 ```
 
-##### Example
+##### Ejemplo
 
 ```zenscript
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
 ```
 
-### Notes
+### Notas
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
