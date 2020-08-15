@@ -1,10 +1,10 @@
 # Canner
 
-## Package
+## Pacchetto
 
 `import mods.ic2.Canner;`
 
-## Methods
+## Metodi
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The product
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) container** The ingredient to be "filled"
