@@ -12,7 +12,7 @@ The Microwave heats up food items.
 - Salmon -> Cooked Salmon
 - Flesh -> Cooked Flesh
 
-## Removing
+## 削除中
 
 ## Remove matching oven recipes.
 
@@ -27,7 +27,7 @@ mods.cfm.Oven.remove(null,<minecraft:potato>);
 mods.cfm.Oven.remove();
 ```
 
-## Adding
+## 追加中
 
 ## Add an oven recipe.
 
