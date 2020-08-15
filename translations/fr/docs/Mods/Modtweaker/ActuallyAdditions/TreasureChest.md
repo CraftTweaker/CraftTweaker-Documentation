@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.TreasureChest`
 
-## Addition
+## Ajouter
 
 ```zenscript
 //mods.actuallyadditions.TreasureChest.addLoot(IItemStack returnItem, int chance, int minAmount, int maxAmount);
