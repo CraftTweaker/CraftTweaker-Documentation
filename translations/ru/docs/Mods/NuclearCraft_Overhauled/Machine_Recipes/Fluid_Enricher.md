@@ -1,6 +1,6 @@
-# Fluid Enricher
+# Улучшить жидкость
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.Enricher`
 
 ## Добавление рецептов
