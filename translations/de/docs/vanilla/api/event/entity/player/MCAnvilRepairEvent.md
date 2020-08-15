@@ -115,7 +115,7 @@ myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 
 | Parameter   | Type  | Beschreibung            |
 | ----------- | ----- | ----------------------- |
-| breakChance | float | No description provided |
+| bruchchance | float | No description provided |
 
 
 ### setCanceled
@@ -124,7 +124,7 @@ myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parameter | Type    | Beschreibung            |
 | --------- | ------- | ----------------------- |
 | cancel    | boolean | No description provided |
 
