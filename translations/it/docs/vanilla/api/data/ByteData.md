@@ -11,12 +11,12 @@ crafttweaker.api.data.ByteData
 ```
 
 ## Interfacce Implementate
-ByteData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+ByteData implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Costruttori
 ```zenscript
-new crafttweaker.api.data.ByteData(internal as byte);
+new crafttweaker.api.data.ByteData(interno come byte);
 ```
 | Parametro | Tipo | Descrizione                 |
 | --------- | ---- | --------------------------- |
