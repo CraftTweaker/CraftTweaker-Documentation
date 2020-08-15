@@ -24,7 +24,7 @@ Sie können entweder ein bestehendes Bauteil mit dem [Materialsystem](/Mods/Cont
             <li>Dichte Platte (dense_plate)<img src="../Assets/dense_plate.png" alt="symbol"></li>
             <li>Schmutziger Staub (dirty_staub)<img src="../Assets/dirty_dust.png" alt="symbol"></li>
             <li>Staub<img src="../Assets/dust.png" alt="symbol"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="symbol"></li>
+            <li>Ausrüstung<img src="../Assets/gear.png" alt="symbol"></li>
             <li>Ingot<img src="../Assets/ingot.png" alt="symbol"></li>
             <li>Nugget<img src="../Assets/nugget.png" alt="symbol"></li>
             <li>Platte<img src="../Assets/plate.png" alt="symbol"></li>
