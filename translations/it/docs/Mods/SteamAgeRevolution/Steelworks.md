@@ -1,23 +1,23 @@
-# Steelworks
+# Acciaierie
 
-The Steelworks is a machine that converts an input item and fluid into an output item using steam.
+L'acciaieria è una macchina che converte un elemento di ingresso e fluido in un oggetto di uscita utilizzando vapore.
 
 ## Chiamata
 
-You can call the Steelworks package using `mods.steamagerevolution.Steelworks`.
+È possibile chiamare il pacchetto Steelworks utilizzando `mods.steamagerevolution.Steelworks`.
 
 ## Rimozione
 
-This function removes the first recipe they find with the given [IItemStack](/Vanilla/Items/IItemStack/) `output`:
+Questa funzione rimuove la prima ricetta che trovano con l'output [IItemStack](/Vanilla/Items/IItemStack/) `dato`:
 
 ```java
 mods.steamagerevolution.Steelworks.removeRecipe(IItemStack output);
 
-// Examples
+// Esempi
 mods.steamagerevolution.Steelworks.removeRecipe(<ore:ingotSteel>.firstItem);
 ```
 
-This function removes *all* recipes currently defined for the Steelworks:
+Questa funzione rimuove *tutte le* ricette attualmente definite per gli Acciai:
 
 ```java
 mods.steamagerevolution.Steelworks.removeAll();
@@ -25,11 +25,11 @@ mods.steamagerevolution.Steelworks.removeAll();
 
 ## Aggiunta
 
-This function is used to add new recipes for the Steelworks:
+Questa funzione viene utilizzata per aggiungere nuove ricette per le acciaierie:
 
 ```java
-mods.steamagerevolution.Steelworks.addRecipe(ILiquidStack input, IIngredient input2, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Steelworks.addRecipe(ingresso ILiquidStack, ingresso IIngredient 2, uscita IItemStack, int craftTime, int steamCost);
 
-// Examples
+// Esempi
 mods.steamagerevolution.Steelworks.addRecipe(<liquid:iron>, <ore:coal>, <ore:ingotSteel>.firstItem, 200, 200);
 ```
