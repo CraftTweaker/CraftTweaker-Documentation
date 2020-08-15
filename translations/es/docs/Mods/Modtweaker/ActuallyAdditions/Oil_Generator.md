@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.OilGen`
 
-## Addition
+## Adicional
 
 `genTime` defaults to 100 if omitted
 
