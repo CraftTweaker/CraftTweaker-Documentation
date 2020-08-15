@@ -20,20 +20,20 @@ PlayerInteract Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                          |
+| ZenGetter    | Type de retour                       |
 | ------------ | ------------------------------------ |
 | `canceled`   | boolean                              |
 | `usingItem`  | boolean                              |
 | `usingBlock` | boolean                              |
-| `x`          | int                                  |
-| `y`          | int                                  |
-| `z`          | int                                  |
+| `x`          | Indice                               |
+| `y`          | Indice                               |
+| `z`          | Indice                               |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| `Bloquer`    | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `dimension`  | Indice                               |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled
 - `event.useBlock()` sets Block to true
