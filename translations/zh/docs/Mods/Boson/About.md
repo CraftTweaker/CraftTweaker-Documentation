@@ -9,7 +9,7 @@ Moreover, Boson also provides some classes that are part of the (unofficial) [Ze
 Before delving into the features, it is highly suggested to read the [Names in Boson](/Mods/Boson/Names/) page, for some details in how names are handled in this mod's CraftTweaker interactions.
 
 ## CraftTweaker-compatible features
-- [Tags](/Mods/Boson/Tags/Concept/)
+- [标签](/Mods/Boson/Tags/Concept/)
 
 ## Source code
 The source code for the CraftTweaker integration provided by Boson is available over on [GitHub](https://github.com/TheSilkMiner/Boson/tree/1.12.2/src/main/kotlin/net/thesilkminer/mc/boson/compatibility/crafttweaker).
