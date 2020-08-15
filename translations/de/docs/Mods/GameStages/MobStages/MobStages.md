@@ -1,55 +1,55 @@
-# Mob Stages
+# Mob-Stufen
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Mob Stages allows for mob spawning to be configured into a custom progression system. For more info on how the mod works, check out the mod page [here](https://minecraft.curseforge.com/projects/mob-stages)
+Dieser Mod ist ein Addon für die [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Mob Stages ermöglichen die Konfiguration des Mob-Spawnens in einem benutzerdefinierten Progressionssystem. Für weitere Informationen darüber, wie die Mod funktioniert, schau dir die Mod Seite [hier an](https://minecraft.curseforge.com/projects/mob-stages)
 
-## Global Options
+## Globale Optionen
 
-Creates a new gloabl entry for the mob. Only one global entry can exist per mob.
+Erstellt einen neuen Globus Eintrag für den Mob. Pro Mob kann nur ein globaler Eintrag existieren.
 
 ```zenscript
-// mods.MobStages.addStage(String stage, String entityId);
+// mods.MobStages.addStage(String-Bühne, String entityId);
 mods.MobStages.addStage("one", "minecraft:zombie");
 ```
 
-Adds a replacement for the mob. If the mob fails to spawn because there are no valid players nearby, the replacement mob will be spawned in it's place.
+Fügt einen Ersatz für den Mob hinzu. Wenn der Mob nicht spawnen kann, weil es keine gültigen Spieler in der Nähe gibt, wird der ersetzte Mob an seinem Platz gespawnt.
 
 ```zenscript
 // mods.MobStages.addReplacement(String entityId, String replacementId);
 mods.MobStages.addReplacement("minecraft:zombie", "minecraft:slime");
 ```
 
-Sets the range to search for valid players. The default range is 512 blocks, so this is optional.
+Legt den Bereich fest, um nach gültigen Spielern zu suchen. Der Standardbereich ist 512 Blöcke, also ist dies optional.
 
 ```zenscript
 // mods.MobStages.addRange(String entityId, int range);
 mods.MobStages.addRange("minecraft:zombie", 32);
 ```
 
-Allows for spawners to override the stage check. The default is false. If set to true, spawners will work for this mob, even if there are no valid players.
+Erlaubt es Spawnern, die Stufenüberprüfung zu überschreiben. Die Standardeinstellung ist falsch. Wenn auf "richtig" gesetzt, funktionieren die Spawner für diesen Mob, auch wenn es keine gültigen Spieler gibt.
 
 ```zenscript
 // mods.MobStages.toggleSpawners(String entityId, boolean allow);
 mods.MobStages.toggleSpawners("minecraft:zombie", true);
 ```
 
-## Dimension Specific Options
+## Maßspezifische Optionen
 
-Dimension specific options are nearly the same as the global options, however they have another argument added to the end, which is the Integer dimension id. Dimension specific entries will override the global entry in that dimension. You can only have one entry per mob, per dimension.
+Dimensionsspezifische Optionen sind fast identisch mit den globalen Optionen, haben sie jedoch noch ein weiteres Argument hinzugefügt, nämlich die Integer-Dimension-Id. Dimensionsspezifische Einträge überschreiben den globalen Eintrag in dieser Dimension. Du kannst nur einen Eintrag pro Mob, pro Dimension haben.
 
 ## Skript-Beispiel
 
 ```zenscript
-// Creepers require stage one to spawn
+// Creepers benötigen Stufe eins um
 mods.MobStages.addStage("one", "minecraft:creeper");
 
-// Skeletons require stage two, or any spawner.
-mods.MobStages.addStage("two", "minecraft:skeleton");
+// Skelette erfordern Stufe 2 oder Spawner.
+mods.MobStages.addStage("zwei", "minecraft:skeleton");
 mods.MobStages.toggleSpawner("minecraft:skeleton", true);
 
-// Spiders require stage three in the nether.
-mods.MobStages.addStage("three", "minecraft:spider", -1);
+// Spiders erfordern Stufe drei im Nether.
+mods.MobStages.addStage("drei", "minecraft:spider", -1);
 
-// Zombies require stage 4 in the nether, and are replaced by bats if they can't.
+// Zombies erfordern Stufe 4 im Nether und werden durch Fledermäuse ersetzt, wenn sie dies nicht können.
 mods.MobStages.addStage("four", "minecraft:zombie", -1);
 mods.MobStages.toggleSpawner("minecraft:zombie", true, -1);
 mods.MobStages.addStage("four", "minecraft:zombie", -1);
