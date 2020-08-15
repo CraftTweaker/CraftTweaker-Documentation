@@ -1,17 +1,17 @@
-# Cauldron
+# Котел
 
-## Basic Recipe
+## Базовый рецепт
 
-* Adds a Unstoked Cauldron Recipe 
+* Добавляет Рецепт Неукраденного котла 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] входов, IItemStack[] выхода);
+//Примеры
 mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Cauldron Recipe 
+* Добавляет Рецепт Сохранённого Котла 
 
 ```zenscript
 mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
@@ -20,36 +20,36 @@ mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
 mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## Удаление
 
-* Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
+* Снимите рецепт котла, основываясь на его выходе ```mods.betterwithmods.Cauldron.remove(IItemStack[]);```
 
-* Remove all Cauldron recipes ```mods.betterwithmods.Cauldron.removeAll();```
+* Удалить все рецепты котла ```mods.betterwithmods.Cauldron.removeAll();```
 
-## Builder
+## Строитель
 
-The Cauldron has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+Котел имеет построитель рецептов, который позволяет более точно контролировать рецепты. Все предыдущие методы являются просто короткими отрезками для использования конструктора.
 
-* To create a new Cauldron builder. `mods.betterwithmods.Cauldron.builder()`
+* Создавать новый строитель котла. `mods.betterwithmods.Cauldron.builder()`
 
-* Cauldron methods
+* Методы котла
     
-    * Sets up the inputs and outputs of the recipe  
-            buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+    * Настраивает входы и выходные данные рецепта  
+            buildRecipe(IIngredient[] входов, IItemStack[] выхода)
     
-    * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
+    * Устанавливает приоритет рецепта, тем самым снижая приоритет чем скорее он будет создан. По умолчанию=0.  
             setPriority(int priority)
     
-    * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
-            setHeat(int heat)
+    * Установите требования к отоплению рецепта. Тепло, используется, чтобы проверить, можно ли сделать рецепт в украденном или неукраденном котле. Неукрашенное тепло = 1, Сохраненное тепло = 2. Вы можете добавить собственные источники тепла, а также даже пользовательские уровни тепла, используя [Реестр Тепловых](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+            setHeat(внутренняя плавка)
     
-    * Set the recipe to ignore the heat value and craft anyways  
-            setIgnoreHeat(boolean ignoreHeat)
+    * Установите рецепт, чтобы игнорировать значение тепла и создать всё равно  
+            setIgnoreHeat(логическое игнорирование)
     
-    * Finalize the recipe and add it to the game  
+    * Завершить рецепт и добавить его в игру  
             build()
 
-### Example builder usage
+### Пример использования конструктора
 
 ```zenscript
 mods.betterwithmods.Cauldron.builder()
