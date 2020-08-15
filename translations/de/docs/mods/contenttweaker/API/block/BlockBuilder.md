@@ -21,7 +21,7 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Parameter | Type                                                                                 | Beschreibung                      | IsOptional | Default Value                |
+| Parameter | Type                                                                                 | Beschreibung                      | IsOptional | Standardwert                 |
 | --------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
 | material  | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
 
@@ -55,7 +55,7 @@ myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| Parameter             | Type  | Description                                       |
+| Parameter             | Type  | Beschreibung                                      |
 | --------------------- | ----- | ------------------------------------------------- |
 | hardnessAndResistance | float | The value to set for hardness and for resistance. |
 
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Parameter    | Type | Beschreibung               |
-| ------------ | ---- | -------------------------- |
-| harvestLevel | int  | The harvest level requried |
+| Parameter   | Type | Beschreibung               |
+| ----------- | ---- | -------------------------- |
+| abruf Level | int  | The harvest level requried |
 
 
 ### withHarvestTool
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parameter | Type | Description      |
+| Parameter | Type | Beschreibung     |
 | --------- | ---- | ---------------- |
-| size      | int  | The size to set. |
+| grösse    | int  | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| Parameter  | Type   | Beschreibung |
+| ---------- | ------ | ------------ |
+| seltenheit | String | The rarity   |
 
 
 ### withSlipperiness
@@ -217,7 +217,7 @@ myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parameter      | Type  | Description      |
+| Parameter      | Type  | Beschreibung     |
 | -------------- | ----- | ---------------- |
 | slipperinessIn | float | The value to set |
 
