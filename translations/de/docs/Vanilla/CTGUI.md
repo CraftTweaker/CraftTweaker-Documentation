@@ -14,9 +14,9 @@ You call the command using
 
 These ids are currently implemented:
 
-| ID            | Added by     | Notes |
-| ------------- | ------------ | ----- |
-| craftingtable | CraftTweaker |       |
-| furnace       | CraftTweaker |       |
+| ID            | Hinzugefügt von | Notizen |
+| ------------- | --------------- | ------- |
+| craftingtable | CraftTweaker    |         |
+| furnace       | CraftTweaker    |         |
 
 Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.
