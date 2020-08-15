@@ -16,7 +16,7 @@ IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions 
 
 Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
 
-| ZenGetter     | What does it do                                                                            | Rückgabetyp                                | Usage                  |
+| ZenGetter     | Was macht es                                                                               | Rückgabetyp                                | Usage                  |
 | ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
 | id            | returns the player's id                                                                    | string                                     | `player.id`            |
 | name          | returns the player's name                                                                  | string                                     | `player.name`          |
@@ -33,11 +33,11 @@ Zengetters are for retrieving information. Usually either assigned to a variable
 | position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f/)   | `player.position`      |
 | foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
 
-## ZenMethods
+## ZenMethoden
 
 Zenmethods are for doing things with other things, in this case with a player.
 
-| ZenMethod                | Parameter Type(s)                        | What does it do                                                     | Beispiel                                    |
+| ZenMethode               | Parameter Type(s)                        | Was macht es                                                        | Beispiel                                    |
 | ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
 | removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
 | update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
