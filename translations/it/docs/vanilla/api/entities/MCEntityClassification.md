@@ -9,7 +9,7 @@ crafttweaker.api.entity.MCEntityClassification
 ```
 
 ## Interfacce Implementate
-MCEntityClassification implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+MCEntityClassification implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Proprietà
