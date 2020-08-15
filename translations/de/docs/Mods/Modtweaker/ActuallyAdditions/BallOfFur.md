@@ -1,6 +1,6 @@
-# Ball of Fur
+# Fellball
 
-## Package
+## Paket
 
 `mods.actuallyadditions.BallOfFur`
 
