@@ -1,7 +1,7 @@
-# Garden Stuff
-This mod is a collection of garden-related mods originally based on Modular Flower Pots.
+# ガーデン・スタッフ
+このモッドは、もともとモジュラーフラワーポットをベースにした庭園関連のモッドのコレクションです。
 
 
 ## CraftTweaker Integration
 
-Garden Stuff comes with Native CraftTweaker Integration. This means that issues with the added methods should be discussed at the [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues)
+Garden StuffにはNative CraftTweaker Integrationが付属しています。 これは、追加された方法に関する問題は、 [Garden Stuff Issue-Tracker](https://github.com/jaquadro/GardenCollection/issues) で検討する必要があることを意味します。
