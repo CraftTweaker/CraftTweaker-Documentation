@@ -1,7 +1,7 @@
-# Ingot Former
+# Слиток Превышен
 
-## Importing the Package
-`mods.nuclearcraft.ingot_former`
+## Импортирование пакета
+`former mods.nuclearcraft.ingot_`
 
 ## Добавление рецептов
 ```zenscript
