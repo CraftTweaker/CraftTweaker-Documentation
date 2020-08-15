@@ -96,7 +96,7 @@ myMCItemFishedEvent.isCanceled();
 myMCItemFishedEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parameter | Type    | Beschreibung            |
 | --------- | ------- | ----------------------- |
 | cancel    | boolean | No description provided |
 
