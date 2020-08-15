@@ -1,6 +1,6 @@
 # Mineral Mix
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an Array). So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
 
@@ -10,9 +10,9 @@ You can get and set the failchance for the Mineralmix using the failChance [ZenS
 
 ## Get Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| Required | Type de texte | Type de données      |
+| -------- | ------------- | -------------------- |
+| Required | Nom           | chaîne de caractères |
 
 ```zenscript
 //Example:
@@ -23,10 +23,10 @@ var Iron = Excavator.getMineral("Iron_Ore");
 
 ## Add Ore
 
-| Required | Type   | Data Type |
-| -------- | ------ | --------- |
-| Required | Ore    | string    |
-| Required | Chance | string    |
+| Required | Type de texte | Type de données      |
+| -------- | ------------- | -------------------- |
+| Required | Minerai       | chaîne de caractères |
+| Required | Chance        | chaîne de caractères |
 
 ```zenscript
 mineralMixObject.addOre("oreIron", 0.5);
@@ -36,9 +36,9 @@ You will need to use the oredict names.
 
 ## Remove Ore
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Ore  | string    |
+| Required | Type de texte | Type de données      |
+| -------- | ------------- | -------------------- |
+| Required | Minerai       | chaîne de caractères |
 
 ```zenscript
 mineralMixObject.removeOre("oreIron");
@@ -46,7 +46,7 @@ mineralMixObject.removeOre("oreIron");
 
 ## Fail Chance Getter/Setter
 
-### Example
+### Exemple
 
 ```zenscript
 //Getter
