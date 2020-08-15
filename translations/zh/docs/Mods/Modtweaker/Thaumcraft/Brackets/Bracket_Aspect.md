@@ -1,8 +1,8 @@
-# Aspect Bracket handler
+# 宽高比处理器
 
-The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
+宽高比处理让您能够在您需要的情况下检索Thaumcraft [Aspet Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/)。
 
-Aspects are referenced in the Aspect Bracket handler this way:
+在这种方式的横向处理器中引用了各个方面：
 
 ```zenscript
 <aspect:name>
@@ -10,5 +10,5 @@ Aspects are referenced in the Aspect Bracket handler this way:
 <aspect:ignis>
 ```
 
-If the Aspect is found, this will return an [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) Object with the stacksize 1.  
-Please refer to the [respective Wiki entry](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) for further information on what you can do with these.
+如果找到这个宽高比值，将返回一个 [CTapertStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) 个与堆栈大小相同的对象。  
+请参阅 [相应的 Wiki 条目](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) 了解您可以对这些条目做些什么。
