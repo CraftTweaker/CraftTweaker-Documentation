@@ -1,14 +1,14 @@
-# Centrifuge
+# Centrifuga
 
 ## Importing the Package
 `mods.nuclearcraft.centrifuge`
 
-## Adding Recipes
+## Aggiunta Di Ricette
 ```zenscript
 mods.nuclearcraft.centrifuge.addRecipe([fluidInput, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4 , @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Rimozione Ricette
 ```zenscript
 mods.nuclearcraft.centrifuge.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.centrifuge.removeRecipeWithOutput([fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4]);
