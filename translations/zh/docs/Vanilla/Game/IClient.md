@@ -1,18 +1,18 @@
 # IClient
 
-The Client Interface is for providing general information on a Client.  
-This is only available for clients, these won't work on a sever!
+客户端接口是为了提供客户端的一般信息。  
+这仅适用于客户端，这些客户端将无法工作！
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.api.IClient;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.api.IClient；`
 
-## Where to find the client class?
+## 在哪里找到客户端类？
 
-The Client class is a globally registered Symbol, so you won't need to import anything, you can just use the keyword `client`
+客户端类是一个全局注册符号，所以您不需要导入任何东西，您只能使用关键字 `客户端`
 
-## What to do with it?
+## 如何处理？
 
-`client.player` returns the player running the client as an [IPlayer](/Vanilla/Players/IPlayer/) Object.  
-`client.language` returns the language the client runs on as string.
+`client.player` 返回运行客户端的玩家为 [IPlayer](/Vanilla/Players/IPlayer/) 对象。  
+`client.langue` 返回客户端作为字符串使用的语言。
