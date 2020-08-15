@@ -1,7 +1,7 @@
-# Manufactory
+# Ручной завод
 
-## Importing the Package
-`mods.nuclearcraft.manufactory`
+## Импортирование пакета
+`mods.nuclearcraft.production`
 
 ## Добавление рецептов
 ```zenscript
