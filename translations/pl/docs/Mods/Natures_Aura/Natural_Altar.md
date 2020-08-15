@@ -1,11 +1,11 @@
 # Natural Altar
 
-## Package
+## Pakiet
 ```zenscript
 mods.naturesaura.Altar
 ```
 
-## Methods
+## Metody
 - **String Name**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
 - **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
@@ -13,13 +13,13 @@ mods.naturesaura.Altar
 - **int aura** The amount of Aura required for the completion of the recipe
 - **int time** The time processes take in ticks
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.naturesaura.Altar.removeRecipe(IItemStack output)
