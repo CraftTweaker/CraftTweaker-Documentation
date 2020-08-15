@@ -2,7 +2,7 @@
 
 This interface is extended by all Events that can deal with blocks in the world.
 
-## Importing the class
+## Importare la classe
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IBlockEvent;`
@@ -13,8 +13,8 @@ This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositio
 
 ## ZenGetters
 
-| name       | type                                        |
+| nome       | tipo                                        |
 | ---------- | ------------------------------------------- |
 | world      | [IWorld](/Vanilla/World/IWorld/)            |
 | blockState | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| blocco     | [IBlock](/Vanilla/Blocks/IBlock/)           |
