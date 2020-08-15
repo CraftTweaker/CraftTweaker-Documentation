@@ -2,7 +2,7 @@
 
 The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
 
-## Notes
+## メモ
 
 `event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
 
@@ -22,9 +22,9 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 
 | ZenGetter       | ZenSetter | 戻り値の型                                    |
 | --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `世界`            |           | [IWorld](/Vanilla/World/IWorld/)         |
 | `enchantRow`    |           | int型                                     |
 | `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `項目`            |           | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `originalLevel` |           | int型                                     |
-| `level`         | `level`   | int型                                     |
+| `レベル`           | `レベル`     | int型                                     |
