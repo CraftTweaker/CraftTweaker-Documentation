@@ -1,7 +1,7 @@
 # Create Compound
 Custom Alchemistry Compound Generation
 
-# Package
+# Pakiet
 ```zenscript
 mods.alchemistry.Util.createCompound
 ```
@@ -9,7 +9,7 @@ mods.alchemistry.Util.createCompound
 ## Loader
 This needs to be loaded with `#loader alchemistry`
 
-## Methods
+## Metody
 - **int meta** meta for new Compund
 - **String Name** Name for New Compund
 - **int red** compound red shade, RGB
@@ -26,7 +26,7 @@ mods.alchemistry.Util.createCompound(1000, "vibranium sufide", 20, 69, 185,
  ["sulfur", 3]]);
 ```
 
-## Notes
+## Uwagi
 - Please use lowercase names
 - The '#loader alchemistry' line is required at the top of the file. This file can only be used to create elements and compounds, other recipes must be put in other files.
 - The components field requires each entry to be an array like so ["cellulose", 5], indicating the element/compound and it's quantity. String arguments are used here rather than itemstacks as a way to ensure that only elements/compounds are used.
