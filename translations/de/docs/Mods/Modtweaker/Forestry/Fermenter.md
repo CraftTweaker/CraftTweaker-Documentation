@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Fermenter Recipes
 
-## Calling
+## Anruf
 
 You can call the package using `mods.forestry.Fermenter`
 
@@ -23,7 +23,7 @@ mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:w
 
 Amount of fluid output: fermentationValue * fluidOutputModifier
 
-| Parameter           | Type                                           | description                                   |
+| Parameter           | Type                                           | beschreibung                                  |
 | ------------------- | ---------------------------------------------- | --------------------------------------------- |
 | fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
 | resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
@@ -48,6 +48,6 @@ mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 
 | Parameter       | Type                                     | Beschreibung                                                                        |
 | --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
-| item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
+| eintrag         | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
 | fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
 | burnDuration    | int                                      | Amount of work cycles a single item of this fuel lasts before expiring.             |
