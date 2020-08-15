@@ -2,16 +2,16 @@
 
 The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 mods.contenttweaker.block.BlockBuilder
 ```
 
 ## 已实现的接口
-BlockBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilder implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructor #构造函数
@@ -21,9 +21,9 @@ new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.ma
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| 参数       | 返回值类型                                                                                | 描述                                | 可选的  | 默认值                          |
-| -------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---- | ---------------------------- |
-| material | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true | `<blockmaterial:iron>` |
+| 参数 | 返回值类型                                                                                                                                         | 描述                                | 可选的  | 默认值                          |
+| -- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---- | ---------------------------- |
+| 材料 | [crafttweaker.api.block.material.MCMaterial #导入方式为 import crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true | `<blockmaterial:iron>` |
 
 
 
@@ -57,7 +57,7 @@ myBlockBuilder.withHardnessAndResistance(0.5f);
 
 | 参数                    | 返回值类型 | 描述                                                |
 | --------------------- | ----- | ------------------------------------------------- |
-| hardnessAndResistance | float | The value to set for hardness and for resistance. |
+| hardnessAndResistance | 浮点数   | The value to set for hardness and for resistance. |
 
 
 
@@ -74,8 +74,8 @@ myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 
 | 参数           | 返回值类型 | 描述                               |
 | ------------ | ----- | -------------------------------- |
-| hardnessIn   | float | The value to set for hardness    |
-| resistanceIn | float | The value to set for resistance. |
+| hardnessIn   | 浮点数   | The value to set for hardness    |
+| resistanceIn | 浮点数   | The value to set for resistance. |
 
 
 ### withHarvestLevel
@@ -91,9 +91,9 @@ myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| 参数           | 返回值类型 | 描述                         |
-| ------------ | ----- | -------------------------- |
-| harvestLevel | 整型    | The harvest level requried |
+| 参数   | 返回值类型 | 描述                         |
+| ---- | ----- | -------------------------- |
+| 收获级别 | 整型    | The harvest level requried |
 
 
 ### withHarvestTool
@@ -109,9 +109,9 @@ myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolTyp
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| 参数          | 返回值类型                                                                           | 描述            |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| 参数   | 返回值类型                                                                           | 描述            |
+| ---- | ------------------------------------------------------------------------------- | ------------- |
+| 收获工具 | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
 
 
 ### withItemGroup
@@ -181,9 +181,9 @@ myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| 参数   | 返回值类型 | 描述               |
-| ---- | ----- | ---------------- |
-| size | int   | The size to set. |
+| 参数 | 返回值类型 | 描述               |
+| -- | ----- | ---------------- |
+| 大小 | 整数    | The size to set. |
 
 
 ### withRarity
@@ -199,9 +199,9 @@ myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| 参数     | 返回值类型  | 描述         |
-| ------ | ------ | ---------- |
-| rarity | String | The rarity |
+| 参数  | 返回值类型       | 描述         |
+| --- | ----------- | ---------- |
+| 稀有度 | 字符串[string] | The rarity |
 
 
 ### withSlipperiness
@@ -219,7 +219,7 @@ myBlockBuilder.withSlipperiness(0.5f);
 
 | 参数             | 返回值类型 | 描述               |
 | -------------- | ----- | ---------------- |
-| slipperinessIn | float | The value to set |
+| slipperinessIn | 浮点数   | The value to set |
 
 
 ### withType
