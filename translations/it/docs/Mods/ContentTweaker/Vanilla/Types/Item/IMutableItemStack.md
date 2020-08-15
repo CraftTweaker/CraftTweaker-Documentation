@@ -1,30 +1,30 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
+Una pila di oggetti mutabile è uno speciale oggetto [IItemStack](/Vanilla/Items/IItemStack/) che può essere recuperato solo da [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
+Ciò significa tutti i metodi di [IItemStack](/Vanilla/Items/IItemStack/)e quelli di [IIngredienti](/Vanilla/Variable_Types/IIngredient/)!
 
-## Importing the package
+## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.MutableItemStack;`
 
 ## ZenMethods
 
-### Quantity
+### Quantità
 
-A Stack's count is the number of items in that stack!
+Il conteggio di una pila è il numero di oggetti in quella pila!
 
-| ZenMethod       | Parameter Type | Description                                         |
-| --------------- | -------------- | --------------------------------------------------- |
-| setCount(count) | int            | Sets the stack's count to the `count` provided      |
-| grow(count)     | int            | Increases the stack's count by the `count` provided |
-| shrink(count)   | int            | Decreases the stack's count by the `count` provided |
+| ZenMethod                 | Tipo Parametro | Descrizione                                                 |
+| ------------------------- | -------------- | ----------------------------------------------------------- |
+| setCount(count)           | int            | Imposta il conteggio dello stack al conteggio `` fornito    |
+| grow(count)               | int            | Aumenta il numero della pila del `conteggio` fornito        |
+| restringimento(conteggio) | int            | Diminuisce il conteggio dello stack del `conteggio` fornito |
 
-### Damage
+### Danno
 
-`damage(int amount, ICTPlayer player)`
+`danno(int quantità, giocatore ICTPlayer)`
 
-Parameters:
+Parametri:
 
-- int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item
+- int amount → La quantità di punti Danno per dare l'oggetto
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) giocatore → il giocatore/entità danneggiando l'oggetto
