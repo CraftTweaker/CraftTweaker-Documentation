@@ -2,7 +2,7 @@
 
 The *freezer* package is used for adding or removing recipes to/from the Freezer.
 
-## Calling
+## Anruf
 
 You can call the *freezer* package using `mods.skyresources.freezer`
 
