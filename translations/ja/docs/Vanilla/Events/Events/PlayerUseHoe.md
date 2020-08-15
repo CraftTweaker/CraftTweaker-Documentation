@@ -1,16 +1,16 @@
 # PlayerUseHoe
 
-The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
+PlayerUseHoe イベントはプレイヤーがホーを使用するたびに発生します。 私が何を言っているか分かっていれば。
 
-## Event Class
+## イベントクラス
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseHoeEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseHoe Eventsは以下のインターフェイスを実装し、それらのメソッド/getters/settersをすべて呼び出すことができます。
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,17 +19,17 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
 | ZenGetter    | 戻り値                                         |
 | ------------ | ------------------------------------------- |
-| `canceled`   | boolean型                                    |
-| `processed`  | boolean型                                    |
+| `キャンセル済み`    | boolean型                                    |
+| `処理されました`    | boolean型                                    |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `プレイヤー`      | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `世界`         | [IWorld](/Vanilla/World/IWorld/)            |
 | `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `寸法`         | int                                         |
@@ -37,5 +37,5 @@ The following information can be retrieved from the event:
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` はイベントをキャンセルとして設定します
+- `event.process()` は処理済みとしてイベントを設定します
