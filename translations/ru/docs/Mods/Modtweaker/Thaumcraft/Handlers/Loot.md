@@ -1,36 +1,36 @@
-# Loot Bags
+# Трофеи Сумки
 
-This package allows you to add and remove items to/from the Loot Bags.
+Этот пакет позволяет вам добавлять и удалять предметы в или из мешки Вещей.
 
 ## Импорт пакета
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Вы можете [импортировать](/AdvancedFunctions/Import/) пакет и его методы для облегчения извлечения методов.
 
 ```zenscript
 import mods.thaumcraft.LootBag;
 ```
 
-## Loot types
+## Типы добычи
 
-You need to provide an array of one or multiple numbers from 0 to 2 (inclusive) to the functions.  
-Those determine the type of lootbag to be affected.
+Необходимо задать массив одного или нескольких чисел от 0 до 2 (включительно) до функций.  
+Они определяют тип упаковочной сумки, которая будет затронута.
 
-- 0: Common
-- 1: Uncommon
-- 2: Rare
+- 0: Обычный
+- 1: Необычный
+- 2: Редкий
 
-## Adding items
+## Добавление элементов
 
-Notice: Gold coins have a value of 2000, diamonds are 50.
+Внимание: золотые монеты стоимостью 2000 год, алмазы составляют 50.
 
 ```zenscript
-//mods.thaumcraft.LootBag.addLoot(WeightedItemStack stack, int[] bagTypes)
+//mods.thaumcraft.LootBag.addLoot(WeightedItemStack, int[] bagTypes)
 mods.thaumcraft.LootBag.addLoot(<minecraft:dirt>%20000, [0,1,2]);
 ```
 
-## Removing items
+## Удаление элементов
 
 ```zenscript
-//mods.thaumcraft.LootBag.removeLoot(IItemStack stack, int[] bagTypes);
+//mods.thaumcraft.LootBag.removeLoot(IItemStack, int[] bagTypes);
 mods.thaumcraft.LootBag.removeLoot(<minecraft:gold_nugget>, [1,2]);
 ```
