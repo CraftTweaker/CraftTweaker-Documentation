@@ -1,4 +1,4 @@
-# Electrolyzer
+# Elettrolyzer
 
 ## Pacchetto
 
@@ -6,10 +6,10 @@
 
 ## Metodi
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] outputs** Array of all outputs. Each slot corresponds to Down-Up-North-South-West-East direction. Trailing null may be omitted.
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] output** Array di tutti gli output. Ogni slot corrisponde alla direzione Down Up-Nord-Sud-Ovest-Est . Può essere omesso il null del rimorchio.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input
-- **int power** Power consumption, measured in EU/tick
-- **@Optional int time** Time cost. Default to 200 if not given.
+- **int potenza** Consumo di energia, misurato in EU/tick
+- **@Optional int time** Time cost. Predefinito a 200 se non indicato.
 
 ## Addizione
 
