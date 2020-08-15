@@ -19,7 +19,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
 | `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
 
-## ZenMethods
+## ZenMethoden
 
 Following Methods are available:
 
