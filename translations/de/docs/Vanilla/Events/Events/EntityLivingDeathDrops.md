@@ -20,12 +20,12 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter       | Rückgabetyp                                                 |
-| --------------- | ----------------------------------------------------------- |
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
-| `isRecentlyHit` | bool                                                        |
-| `lootingLevel`  | int                                                         |
+| ZenGetter          | Rückgabetyp                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `drops`            | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `Schadensquelle`   | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| `isRecentlyHit`    | bool                                                        |
+| `plündernde Stufe` | int                                                         |
 
 ## Modifying the item drops
 
