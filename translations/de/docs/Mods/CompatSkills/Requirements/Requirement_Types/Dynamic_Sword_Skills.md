@@ -1,4 +1,4 @@
-# Dynamic Sword Skills
+# Dynamische Schwert-Fertigkeiten
 
 ## Syntax
 
