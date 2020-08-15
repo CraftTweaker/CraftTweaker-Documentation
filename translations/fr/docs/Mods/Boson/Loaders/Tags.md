@@ -1,13 +1,13 @@
 # `tags` Loader
 
-The `tags` loader is a special Loader that fires at a later stage in the Minecraft loading process and allows manipulation of [Tags](/Mods/Boson/Tags/Concept/). The Tag bracket handler has a different meaning when used in a file loaded by this loader: refer to the Tags documentation for more information.
+Le chargeur `de balises` est un chargeur spécial qui tire à un stade ultérieur du processus de chargement de Minecraft et permet la manipulation de [Tags](/Mods/Boson/Tags/Concept/). Le gestionnaire d'étiquettes a une signification différente lorsqu'il est utilisé dans un fichier chargé par ce chargeur : reportez-vous à la documentation des balises pour plus d'informations.
 
-## Using this loader
+## Utiliser ce chargeur
 This loader can be enabled via the [`#loader` preprocessor directive](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) by specifying its name next to the declaration, as in the following example:
 
 ```zenscript
-#loader tags
+Balises #loader
 ```
 
-## Reason for this loader
-Refer to the documentation for the [tag bracket handler](/Mods/Boson/Tags/BracketHandler/) and the page related to the [actual concept](/Mods/Boson/Tags/Concept/) for more information.
+## Raison de ce chargeur
+Reportez-vous à la documentation pour le gestionnaire de parenthèses [](/Mods/Boson/Tags/BracketHandler/) et à la page relative au concept réel [](/Mods/Boson/Tags/Concept/) pour plus d'informations.
