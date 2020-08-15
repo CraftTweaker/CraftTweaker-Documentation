@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.Bark;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
@@ -24,7 +24,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.Bark;
