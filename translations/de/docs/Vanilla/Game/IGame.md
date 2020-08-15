@@ -1,22 +1,22 @@
-# Game Class
+# Spieleklasse
 
-The IGame Class is used to obtain general game information. Can be accessed using `game`
+Die IGame Class wird verwendet, um allgemeine Spielinformationen zu erhalten. Kann mit `Spiel erreicht werden`
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.game.IGame;`
+Möglicherweise ist es erforderlich, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (z.B. [Array](/AdvancedFunctions/Arrays_and_Loops/)), also besser sicher sein als bedauern und fügen Sie den Import.  
+`importieren Sie crafttweaker.game.IGame;`
 
 ## ZenGetter
 
-| ZenGetter | What does it do?                        | Rückgabetyp                                                     | Usage           |
-| --------- | --------------------------------------- | --------------------------------------------------------------- | --------------- |
-| biomes    | Returns all registered biomes as list   | List<[IBiomes](/Vanilla/Biomes/IBiome/)>                        | `game.biomes`   |
-| blocks    | Returns all registered blocks as list   | List<[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`   |
-| entities  | Returns all registered entities as list | List<[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `game.entities` |
-| items     | Returns all registered items as list    | List<[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`    |
-| liquids   | Returns all registered liquids as list  | List<[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`  |
-| potions   | Returns all registered potions as list  | List<[IPotion](/Vanilla/Potions/IPotion/)>                      | `game.potions`  |
+| ZenGetter     | Was tut es?                                            | Rückgabetyp                                                       | Auslastung         |
+| ------------- | ------------------------------------------------------ | ----------------------------------------------------------------- | ------------------ |
+| biome         | Gibt alle registrierten Biome als Liste zurück         | Liste <[IBiome](/Vanilla/Biomes/IBiome/)>                         | `game.biome`       |
+| blocks        | Gibt alle registrierten Blöcke als Liste zurück        | Liste <[IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/)>     | `game.blocks`      |
+| objekte       | Gibt alle registrierten Entitäten als Liste zurück     | Liste <[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)> | `spiele.Entitäten` |
+| gegenstände   | Gibt alle registrierten Elemente als Liste zurück      | Liste <[IItemDefinition](/Vanilla/Items/IItemDefinition/)>        | `game.items`       |
+| Flüssigkeiten | Gibt alle registrierten Flüssigkeiten als Liste zurück | Liste <[ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition/)>  | `game.liquids`     |
+| tränke        | Gibt alle registrierten Tränke als Liste zurück        | Liste <[ITrank](/Vanilla/Potions/IPotion/)>                       | `game.tränke`      |
 
 ## Methoden
 
@@ -25,19 +25,19 @@ It might be required for you to import the package if you encounter any issues (
 ```zenscript
 //getEntity(EntityName)
 
-//essentially the same
-val sheep = game.getEntity("sheep");
+//im Wesentlichen das gleiche
+val Schafe = game.getEntity("Schafe");
 val sheep1 = <entity:minecraft:sheep>;
 ```
 
-### SetLocalization
+### Lokalisierung festlegen
 
-Sets the localization.  
-All parameters are strings. `game.setLocalization(key, value);`  
-`game.setLocalization(lang, key, value);`
+Legt die Lokalisierung fest.  
+Alle Parameter sind Zeichenketten. `game.setLocalization(Schlüssel, Wert);`  
+`game.setLocalization(lang, Schlüssel, Wert);`
 
-### Localize
+### Lokalisieren
 
-Returns a localized String  
+Gibt einen lokalisierten String  
 `game.localize(key)`  
-`game.localize(key, lang)`
+`game.localize(key, lang)` zurück
