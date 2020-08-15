@@ -1,11 +1,11 @@
-# Industrial Blast Furnace
+# Fornace Industriale Blast
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.blastFurnace`
 
 ## Aggiunta Di Ricette
 ```zenscript
-mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int neededHeat);
+mods.techreborn.blastFurnace.addRecipe(IItemStack output1, IItemStack output2, IIngredient input1, IIngredient input2, int ticktime, int euTick, int necessarioRiscaldamento);
 ```
 
 ## Rimozione Ricette
