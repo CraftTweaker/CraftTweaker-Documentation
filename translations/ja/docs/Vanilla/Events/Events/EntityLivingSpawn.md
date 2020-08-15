@@ -20,12 +20,12 @@ EntityLivingSpawn Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter                 | Type                                                             |
+| ZenGetter                 | タイプ                                                              |
 | ------------------------- | ---------------------------------------------------------------- |
 | `world`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | float                                                            |
-| `y`                       | float                                                            |
-| `z`                       | float                                                            |
+| `x`                       | float型                                                           |
+| `y`                       | float型                                                           |
+| `z`                       | float型                                                           |
 |                           |                                                                  |
 | `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
@@ -33,8 +33,8 @@ The following information can be retrieved from the event:
 
 The despawn event also offers three functions to change the event outcome:
 
-| ZenMethod | Description                                |
+| ZenMethod | 説明                                         |
 | --------- | ------------------------------------------ |
 | `allow`   | Forces the entity to (de)spawn             |
 | `deny`    | Forces the entity not to (de)spawn         |
-| `pass`    | Sets the event result to the default state |
+| `パス`      | Sets the event result to the default state |
