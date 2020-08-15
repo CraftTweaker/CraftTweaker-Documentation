@@ -1,13 +1,13 @@
-# Accessory
+# Accessorio
 
 ## Pacchetto
 
 ```zenscript
-import mods.aether_legacy.Accessory;
+import mods.aether_legacy.Accessorio;
 ```
-## Usage
+## Utilizzo
 
 ```zenscript
-Accessory.registerAccessory(IItemStack input, String accessory);
+Accessory.registerAccessory(IItemStack input, Accessori stringhe);
 ```
-- Accesory string can be "Ring", "Pendant", "Cape", "Shield", "Gloves", "Miscellaneous"
+- La stringa di batterie può essere "Ring", "Ciondolo", "Capo", "Scudo", "Guanti", "Varie"
