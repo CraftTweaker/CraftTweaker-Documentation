@@ -1,15 +1,15 @@
-# Resonator
+# Resonador
 
-ModTweaker allows you to add or remove Extra Utilities 2 Resonator Recipes
+ModTweaker te permite añadir o eliminar recetas de Resonador Extra 2
 
 ## Llamando
 
-You can call the Resonator package using `mods.extrautils2.Resonator`
+Puedes llamar al paquete Resonator usando `mods.extrautils2.Resonator`
 
 ## Eliminando
 
 ```zenscript
-//mods.extrautils2.Resonator.remove(IItemStack outout);
+//mods.extrautils2.Resonator.remove(IItemStack out);
 mods.extrautils2.Resonator.remove(<minecraft:redstone>);
 ```
 
