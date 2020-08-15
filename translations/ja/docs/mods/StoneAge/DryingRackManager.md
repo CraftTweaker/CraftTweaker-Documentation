@@ -1,14 +1,14 @@
 # ドライラック
 
 ## パッケージ
-`import mods.stone_age.DryingRackManager;`
+`import mods.stone_ageDryingRackManager;`
 
 ## メソッド
-- **String name** Recipe name
+- **文字列名** レシピ名
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
-- **int dryingTime** Drying time in ticks
-- **String group** Recipe group
+- **int dryingTime** 乾燥時間 (ティック)
+- **文字列グループ** レシピグループ
 
 ## 加算
 
