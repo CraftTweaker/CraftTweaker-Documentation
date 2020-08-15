@@ -2,27 +2,27 @@
 
 BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | Return Type                             | Description                                                           |
+| ZenGetter                 | Type de retour                          | Libellé                                                               |
 | ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
-| causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
-| hasCustomBreakingProgress | bool                                    |                                                                       |
-| blockNormalCube           | bool                                    |                                                                       |
-| fullBlock                 | bool                                    |                                                                       |
-| fullCube                  | bool                                    |                                                                       |
-| normalCube                | bool                                    |                                                                       |
-| opaqueCube                | bool                                    |                                                                       |
-| translucent               | bool                                    |                                                                       |
-| useNeighborBrightness     | bool                                    |                                                                       |
+| canProvidePower           | booléen                                 | Returns if the refered block can provide Redstone Power               |
+| mobilityFlag              | chaîne de caractères                    | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
+| material                  | [Important](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
+| causesSuffocation         | booléen                                 | Returns whether the block can choke you.                              |
+| hasCustomBreakingProgress | booléen                                 |                                                                       |
+| blockNormalCube           | booléen                                 |                                                                       |
+| fullBlock                 | booléen                                 |                                                                       |
+| fullCube                  | booléen                                 |                                                                       |
+| normalCube                | booléen                                 |                                                                       |
+| opaqueCube                | booléen                                 |                                                                       |
+| translucent               | booléen                                 |                                                                       |
+| useNeighborBrightness     | booléen                                 |                                                                       |
 
-## ZenMethods
+## Méthodes Zen
 
 ### isReplacable
 
@@ -58,7 +58,7 @@ Parameters:
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+Paramètres:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
