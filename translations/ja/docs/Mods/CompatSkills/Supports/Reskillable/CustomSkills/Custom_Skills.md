@@ -1,33 +1,33 @@
-# Custom Skills
+# カスタムスキル
 
-## Credits:
+## クレジット:
 
-Credits goes out to Kindlich for writing most of the Custom Content implementation!
+クレジットは、カスタムコンテンツの実装のほとんどを書くためにKindlichに出ています!
 
-## Custom Skills:
+## カスタムスキル:
 
-### Implementation Syntax:
+### 実装構文:
 
-    Examples:
+    例:
     mods.compatskills.SkillCreator.createSkill(String name, String backGroundLocation)
     mods.compatskills.SkillCreator.createNewSkill(String nameLocation, String backGroundLocation)
     
-    "createSkill" auto-assigns the CompatSkills ModID to the Name Resource Location.
-    So for example:
+    "createSkill" は名前リソースの場所に CompatSkills ModID を自動的に割り当てます。
+    例えば:
     mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
     
-    Would internally return:
-    "compatskills:banana" as the resource location name for the skill.
+    内部でリターン:
+    "compatskills:banana" スキルのリソースロケーション名として。
     
-    The second one has no assigned ModID meaning you can insert your own.
+    2つ目にはModIDが割り当てられていないので、自分で挿入できます。
     mods.compatskills.SkillCreator.createNewSkill("pokemon:throwing", "textures/blocks/stonebrick.png")
     
 
 ### ZenProperties
 
-| Reference | Property Name | Implementation |
-|:--------- |:------------- | -------------- |
-| CrTSkill  | name          | See Below      |
+| 参照       | プロパティ名 | 実装        |
+|:-------- |:------ | --------- |
+| CrTSkill | 名前     | 以下をご覧ください |
 
     // Creates the skill as a variable
     var banana = mods.compatskills.SkillCreator.createSkill("banana", "textures/blocks/stonebrick.png");
@@ -39,22 +39,22 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name           | Values                                   |
-|:----------- |:--------------------- | ---------------------------------------- |
-| Setter      | setLevelCap           | Takes an Integer                         |
-| Getter      | getLevelCap           | Returns an Integer                       |
-| Setter      | setEnabled            | Takes an Boolean                         |
-| Getter      | getEnabled            | Returns an Boolean                       |
-| Setter      | setSkillPointInterval | Takes an Integer                         |
-| Setter      | setBaseLevelCost      | Takes an Integer                         |
-| Getter      | getBaseLevelCost      | Returns an Integer                       |
-| Getter      | getName               | Returns the localized String Name        |
-| Setter      | setLevelStaggering    | Takes a String[], See Config for Example |
-| Getter      | getLevelStaggering    | Returns a String[]                       |
-| Setter      | setHidden             | Takes a Boolean                          |
-| Getter      | isHidden              | Returns a Boolean                        |
+| メソッドタイプ | メソッド名                 | 値                       |
+|:------- |:--------------------- | ----------------------- |
+| Setter  | setLevelCap           | 整数を取る                   |
+| Getter  | getLevelCap           | 整数を返す                   |
+| Setter  | setEnabled            | ブール値を取る                 |
+| Getter  | getEnabled            | ブール値を返す                 |
+| Setter  | setSkillPointInterval | 整数を取る                   |
+| Setter  | setBaseLevelCost      | 整数を取る                   |
+| Getter  | getBaseLevelCost      | 整数を返す                   |
+| Getter  | getName               | ローカライズされた文字列名を返します      |
+| Setter  | setLevelStaggering    | 文字列を取る[]、例の設定を参照してください。 |
+| Getter  | getLevelStaggering    | 文字列を返します[]              |
+| Setter  | setHidden             | ブール値を取る                 |
+| Getter  | isHidden              | ブール値を返す                 |
 
-### Localization & Resource Location References:
+### 地域化 & リソース場所の参照:
 
     Skill Icons:
     
@@ -76,4 +76,4 @@ Credits goes out to Kindlich for writing most of the Custom Content implementati
     - customResourceLocation:lang/localeCode.lang
     
 
-Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+このリンクに移動して、可能なすべてのLocale-Codeを表示します！ [GamepediaのMinecraft言語ページ](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
