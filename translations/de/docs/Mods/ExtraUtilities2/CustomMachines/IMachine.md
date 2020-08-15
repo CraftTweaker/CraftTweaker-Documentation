@@ -30,7 +30,7 @@ This method uses the following parameters:
 | inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | energy        | int                                                          |
-| time          | int                                                          |
+| Zeit          | int                                                          |
 | probabilities | float[string\]                                              |
 
 ### Using only the outputs map
@@ -49,7 +49,7 @@ This method uses the following parameters:
 | inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs | Object[string\]                                             |
 | energy  | int                                                          |
-| time    | int                                                          |
+| Zeit    | int                                                          |
 
 ## Remove recipes
 
