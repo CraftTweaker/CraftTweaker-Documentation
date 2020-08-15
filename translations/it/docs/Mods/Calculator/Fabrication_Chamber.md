@@ -1,5 +1,5 @@
 # Fabrication Chamber
-## Not fully implimented, only takes one input.
+## Non completamente implicito, richiede solo un input.
 
 ## Pacchetto
 ```zenscript
@@ -7,8 +7,8 @@ import mods.calculator.fabricationChamber;
 ```
 
 ## Metodi
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output** Gli output.
 
 
 ## Addizione
