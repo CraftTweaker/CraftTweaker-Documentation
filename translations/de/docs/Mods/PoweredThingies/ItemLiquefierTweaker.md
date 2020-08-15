@@ -28,6 +28,6 @@ addRecipe(input: IItemStack, output: ILiquidStack)
 ilt().addRecipe(<minecraft:bucket>, <liquid:lava> * 125);
 ```
 
-### Notes
+### Notizen
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
