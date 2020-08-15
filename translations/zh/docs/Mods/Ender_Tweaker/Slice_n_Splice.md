@@ -4,7 +4,7 @@
 
 `import mods.enderio.SliceNSplice;`
 
-## Methods
+## 方法
 
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
@@ -24,7 +24,7 @@ mods.enderio.SliceNSplice.
 addRecipe(<minecraft:emerald>, [<minecraft:diamond>, <minecraft:gold_ingot>, <minecraft:iron_ingot>], 5000, 0);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.SliceNSplice.removeRecipe(IItemStack output);
