@@ -1,54 +1,54 @@
-# IEntityCreature
+# Сущность
 
-A Creature.
+Существ.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityCreature;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.entity.IEntityCreature;`
 
-## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+## Расширение [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
+IEntityCreature расширяет [IEntityLiving](/Vanilla/Entities/IEntityLiving/). Это означает, что все функции, доступные для объектов [IEntityLiving](/Vanilla/Entities/IEntityLiving/) , также доступны для IEntityCreature.
 
 ## Методы
 
 ### ZenGetters/Setters
 
-| Геттер               | Тип                                    |
-| -------------------- | -------------------------------------- |
-| hasPath              | bool                                   |
-| isWithinHomeDistance | bool                                   |
-| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float                                  |
-| hasHome              | bool                                   |
+| Геттер              | Тип                                    |
+| ------------------- | -------------------------------------- |
+| имеет путь          | bool                                   |
+| Снятие ДомДистанции | bool                                   |
+| позиция дома        | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| maximumHomeDistance | float                                  |
+| hasHome             | bool                                   |
 
 ### Методы
 
-#### play living sound
+#### исполнить звук жизни
 
-Method expects nothing.  
-Returns nothing.
+Метод ничего не ожидает.  
+ничего не возвращает.
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### Set or detach home
+#### Установка или отключение дома
 
-First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
-Second method expects nothing.  
-Both methods return nothing.
+Первый метод ожидает объект [IBlockPos](/Vanilla/World/IBlockPos/) и int.  
+Второй метод ничего не ожидает.  
+Оба метода ничего не возвращают.
 
 ```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### Check if a position is within the home distance
+#### Проверьте, находится ли положение в пределах домашнего расстояния
 
-Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns a bool.
+Метод ожидает объект [IBlockPos](/Vanilla/World/IBlockPos/) .  
+Возвращает щит.
 
 ```zenscript
 entAnObj.isPositionWithinHomeDistance
