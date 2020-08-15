@@ -1,15 +1,15 @@
-# Anvil
+# 铁道体
 
-The Anvil is a simple 4x4 Crafting Table with the same options.
+铁道是一个简单的 4x4 制造桌，具有相同的选项。
 
-## Shaped
+## 形状：
 
-### Addition
+### 加
 
 ```zenscript
-mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
+mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[] inputs);
 
-mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -17,45 +17,45 @@ mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### 移除
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
+mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[] inputs;
 
 mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
+mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>[<minecraft:stone>]]);
 
 ```
 
-## Shapeless
+## 无形的
 
-### Addition
+### 加
 
 ```zenscript
-mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
+mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[…]输入)；
 
-mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil。 ddShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
-]);
+];
 ```
 
-### Removal
+### 移除
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
+mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[……]输入)；
 
 mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. EmoveShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
-]);
+];
 
-mods.betterwithmods.Anvil.removeAll();
+模组。 etterwithmods.Anvil.removeAll();
 ```
