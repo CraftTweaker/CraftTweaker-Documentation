@@ -1,17 +1,17 @@
-# Alloy Smelter
+# 合金精錬機
 
-## Package
+## パッケージ
 
 `import mods.enderio.AlloySmelter;`
 
-## Methods
+## メソッド
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
 - **int energyCost** How much FE the recipe uses. Defaults to 5000.
 - **float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## 加算
 
 ```zenscript
 mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Optional int energyCost, @Optional float xp);
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opt
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
