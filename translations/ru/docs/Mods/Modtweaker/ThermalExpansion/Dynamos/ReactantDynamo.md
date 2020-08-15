@@ -1,37 +1,37 @@
 # ReactantDynamo
 
-## Import the package
+## Импортировать пакет
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Чтобы сократить вызовы методов, вы можете [импортировать](/AdvancedFunctions/Import/) пакет так:
 
 ```zenscript
-import mods.thermalexpansion.ReactantDynamo;
+импорт mods.thermalexpansion.ReactantDynamo;
 ```
 
-## Add Reaction
+## Добавить реакцию
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.addReaction(IItemStack item, ILiquidStack liquid, int energy);
+//mods.thermalexpansion.ReactantDynamo.addReaction(элемент IItemStack, жидкость ILiquidStack);
 mods.thermalexpansion.ReactantDynamo.addReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Add Elemental Reaction
+## Добавить Элементальную реакцию
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack liquid, int energy);
+//mods.thermalexpansion.ReactantDynamo.addElementalReaction(IItemStack item, ILiquidStack жидкость, int energy);
 mods.thermalexpansion.ReactantDynamo.addElementalReaction(<minecraft:bedrock>, <liquid:water>, 13);
 ```
 
-## Remove Reaction
+## Удалить реакцию
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.removeReaction(IItemStack item, ILiquidStack liquid);
+//mods.thermalexpansion.ReactantDynamo.removeReaction(IItemStack, ILiquidStack);
 mods.thermalexpansion.ReactantDynamo.removeReaction(<minecraft:bedrock>, <liquid:water>);
 ```
 
-## Remove Elemental Reaction
+## Удалить элементальную реакцию
 
 ```zenscript
-//mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack item, ILiquidStack liquid);
+//mods.thermalexpansion.ReactantDynamo.removeElementalReaction(IItemStack, ILiquidStack);
 mods.thermalexpansion.ReactantDynamo.removeElementalReaction(<minecraft:bedrock>, <liquid:water>);
 ```
