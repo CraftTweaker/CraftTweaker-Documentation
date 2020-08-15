@@ -1,11 +1,11 @@
-# Survivalist
+# Superviviente
 
-## Chopping Block
+## Bloque de corte
 
 ### InputStack, OutputStack, {outputMultiplier}, {hitCountMultiplier}
 
 ```zenscript
-gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, outputMultiplier, hitCountMultiplier);
+gigaherz.survivalist.Choppable.addRecipe(entrada IIngredient, salida IItemStack, salidaMultiplier, hitCountMultiplier);
 ```
 
 ##### Ejemplo
@@ -14,10 +14,10 @@ gigaherz.survivalist.Choppable.addRecipe(IIngredient input,  IItemStack output, 
 gigaherz.survivalist.Choppable.addRecipe(<minecraft:bone>,<minecraft:dye:15>, 1.0, 1.0);
 ```
 
-### OutputStack, {InputStack}
+### SalidaStack, {InputStack}
 
 ```zenscript
-gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient input);
+gigaherz.survivalist.Choppable.removeRecipe(salida IIngredient, entrada IIngredient);
 ```
 
 ##### Ejemplo
@@ -26,12 +26,12 @@ gigaherz.survivalist.Choppable.removeRecipe(IIngredient output, IIngredient inpu
 gigaherz.survivalist.Choppable.removeRecipe(<minecraft:stick>);
 ```
 
-## Drying Rack
+## Rack de secado
 
-### InputStack, OutputStack, Time in Ticks
+### InputStack, OutputStack, Tiempo en Ticks
 
 ```zenscript
-gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int time);
+gigaherz.survivalist.Dryable.addRecipe(entrada IIngredient, salida ItemStack, hora int);
 ```
 
 ##### Ejemplo
@@ -40,7 +40,7 @@ gigaherz.survivalist.Dryable.addRecipe(IIngredient input, IItemStack output, int
 gigaherz.survivalist.Dryable.addRecipe(<minecraft:rotten_flesh>, <minecraft:leather>, 300);
 ```
 
-### OutputStack, {InputStack}
+### SalidaStack, {InputStack}
 
 ```zenscript
 gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input);
@@ -52,4 +52,4 @@ gigaherz.survivalist.Dryable.removeRecipe(IIngredient output, IIngredient input)
 gigaherz.survivalist.Dryable.removeRecipe(<minecraft:leather>, <minecraft:rotten_flesh>);
 ```
 
-#### InputStack can be ore dictionary and anything surrounded by {} is optional
+#### InputStack puede ser un diccionario de minerales y cualquier cosa rodeada por {} es opcional
