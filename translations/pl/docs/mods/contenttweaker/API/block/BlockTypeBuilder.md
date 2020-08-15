@@ -1,32 +1,32 @@
 # BlockTypeBuilder
 
-Denotes a special builder that is used for building special block types. Used in [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
+Określa specjalną konstruktora używaną do budowy specjalnych typów bloków. Używane w [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `contenttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
 ## Importowanie klasy
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 mods.contenttweaker.block.BlockTypeBuilder
 ```
 
-## Implemented Interfaces
-BlockTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+BlockTypeBuilder implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Metody
-### build
+### kompilacja
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Poleca CoT, aby faktycznie zbudował wszystko, co ten konstruktor ma budować.
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderBasic>().build(resourceLocation as String);
+new BlockBuilder().withType<BlockBuilderBasic>().build().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parametr         | Typ         | Opis                                 |
-| ---------------- | ----------- | ------------------------------------ |
-| resourceLocation | Ciąg znaków | The resource path to give this block |
+| Parametr           | Typ         | Opis                                 |
+| ------------------ | ----------- | ------------------------------------ |
+| lokalizacja zasobu | Ciąg znaków | Ścieżka zasobu do nadania tego bloku |
 
 
 
