@@ -1,112 +1,112 @@
-# Tooltips
+# 工具提示
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+添加或删除工具提示真的很容易：  
+您需要的只是一个项目 (或oredict 或类似项目)，换句话说，是一个 IIngredient。
 
-## Clearing tooltips
+## 清除工具提示
 
-This removes ALL tooltips from the `item`
-
-```zenscript
-item.clearTooltip();
-```
-
-## Removing specific tooltips
-
-This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
+这将从 `条中移除所有工具提示`
 
 ```zenscript
-item.removeTooltip(regex);
+etem.clearTooltip();
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+## 删除特定的工具提示
 
-## Normal Tooltips
-
-This adds `tT` as tooltip to `item`.
+此函数删除所有匹配给定正则表达式的工具提示。 一种工具提示通常是一行文字(除非由于空间而被强行绑定)。
 
 ```zenscript
-item.addTooltip(tT);
-
-<minecraft:chest>.addTooltip("Storage, what can I say more?");
+etem.removeTooltip(regex)；
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`项目` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` 是一个字符串
 
-## Shift Tooltips
+## 普通工具提示
 
-This adds a tooltip, that will only be visible when you hold shift.  
-You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
+这将添加 `tT` 作为工具提示到 `项`.
 
 ```zenscript
-item.addShiftTooltip(tT);
-item.addShiftTooltip(tT, info);
+item.addTooltip(tT)；
 
-<minecraft:chest>.addShiftTooltip("STORAGE!!!");
-<minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
+<minecraft:chest>.addTooltip("存储，我可以说什么更多？")；
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
-`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
+`项目` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` 是一个字符串
+
+## Shift 工具提示
+
+这添加了一个工具提示, 只有当您按班轮换时才会显示。  
+您还可以添加一个在您不举行shift时将会显示的信息(通常用来创建类似消息的信息，告诉您关于shift工具提示)
+
+```zenscript
+item.addShiftTooltip(tT)；
+item.addShiftTooltip(tT, 信息)；
+
+<minecraft:chest>.addShiftTooltip("STORAGE!!!")；
+<minecraft:redstone>.addShiftTooltip("RED!!!", "按住shifting to know I am")；
+```
+
+`项目` 是 [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` 是一个 [IFormatted文本](/Vanilla/Utils/IFormattedText/)。 您也可以在自动转换时使用字符串。  
+`info` 是 [IFormattedText](/Vanilla/Utils/IFormattedText/)。 您也可以在它们被自动转换时使用字符串。
 
 # Markup
 
-The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+世界是多彩的，我们的所有工具都应该是多彩的。 您也可以排料这些选项，如果您想要一个绿色文本，即删除线)
 
-## Coloring a String
+## 着色字符串
 
-You can apply one of the 16 colors to your string
+您可以将16种颜色中的一种应用到您的字符串
 
 ```zenscript
-format.black
-format.darkBlue
-format.darkGreen
-format.darkAqua
-format.darkRed
-format.darkPurple
-format.gold
-format.gray
-format.darkGray
-format.blue
-format.green
-format.aqua
-format.red
-format.lightPurple
-format.yellow
-format.white
+格式.blank
+格式.darkBlue
+格式.darkGre
+格式.darkAqua
+格式.darkRed
+格式.darkPurple
+格式.gold
+格式 ray
+格式.darkGray
+格式.蓝色
+格式.green
+格式.aqua
+格式.red
+格式.lightPurple
+格式.yellow
+格式.白色.
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+<minecraft:stick>.addTooltip(格式.green("这个时候不成熟");
 ```
 
-## Formatting a String
+## 格式化字符串
 
-You can apply different formats to your String should you wish to:
+您可以对字符串应用不同的格式，如果您希望：
 
 ```zenscript
-format.obfuscated
-format.bold
-format.strikethrough
-format.underline
-format.italic
+格式.obfuscated
+格式.bold
+格式.strikeby
+格式.下划线
+格式.italic
 ```
 
 ```zenscript
-<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
+<minecraft:stick>.addShiftTooltip(格式.strike-through ("这是一个坏的工具提示");
 ```
 
-## Tooltip functions
+## 工具提示功能
 
-You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
-These functions allow you to dynamically generate a tooltip based on the given IItemStack.
+您可以将 [IFormatedText](/Vanilla/Utils/IFormattedText/) 参数替换为 ITooltipFunction (`导入craftweaper.item。 工具提示功能；`。  
+这些函数允许您根据给定的 IItemStack 动态生成工具提示。
 
-A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
+工具提示函数是需要 [IItemStack](/Vanilla/Items/IItemStack/) 并返回工具提示作为字符串的函数。 这意味着使用 `格式` 命令 *对这些函数无法使用* 如果你需要实现这一点，你将需要依赖Minecraft的格式前缀。
 
-For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
+对于Shift 工具提示, 您也可以提供第二个函数。 它允许您也生成不按键时显示的工具提示。 对于shift tool提示来说，既不是作为函数的参数，也不是同时作为 [IFormatted文本](/Vanilla/Utils/IFormattedText/)，没有混合物！
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
