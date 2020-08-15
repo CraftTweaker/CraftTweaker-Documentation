@@ -1,21 +1,21 @@
-# Alchemical Fusion
+# Алхимическое слияние
 
-The *fusion* package is used for adding or removing recipes to/from the Alchemical Fusion process.
+Пакет *слияния* используется для добавления или удаления рецептов в/из процесса алхимического синтеза.
 
-## Calling
+## Звонок
 
-You can call the *fusion* package using `mods.skyresources.fusion`
+Вы можете вызвать пакет *fusion* с помощью `mods.skyresources.fusion`
 
-## Recipe Addition
+## Добавление рецепта
 
 ```zenscript
 //mods.skyresources.fusion.addRecipe(IItemStack output, IItemStack[] input, float catalystUsedPerCraft);
 mods.skyresources.fusion.addRecipe(<minecraft:diamond> * 6, [<minecraft:dirt>, <minecraft:emerald> * 2], 0.00420);
 ```
 
-## Recipe Removal
+## Удаление рецепта
 
 ```zenscript
-//mods.skyresources.fusion.removeRecipe(IItemStack output);
+//mods.skyresources.fusion.removeRecipe(IItemStack);
 mods.skyresources.fusion.removeRecipe(<minecraft:dirt>);
 ```
