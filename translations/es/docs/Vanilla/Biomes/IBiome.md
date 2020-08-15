@@ -1,30 +1,30 @@
-# IBiome
+# Ioma
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+La interfaz IBioma le permite recuperar información sobre un Bioma registrado.
 
 ## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.world.IBiome;`
+Podría ser necesario que importes el paquete si encuentras algún problema (como lanzar un [array](/AdvancedFunctions/Arrays_and_Loops/)), más vale estar seguro que lo siento y añadir la importación.  
+`importar crafttweaker.world.IBiome;`
 
-## Calling an IBiome
+## Llamar a un IBioma
 
 You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Atm, todo lo que se puede hacer con un objeto IBiome es obtener información de ello:
 
-| ZenGetter                    | Tipo de devolución |
-| ---------------------------- | ------------------ |
-| nombre                       | cadena             |
-| canRain                      | boolean            |
-| isSnowyBiome                 | boolean            |
-| highHumidity                 | boolean            |
-| spawningChance               | flotante           |
-| baseHeight                   | flotante           |
-| heightVariation              | flotante           |
-| rainfall                     | flotante           |
-| waterColorMultiplier         | int                |
-| ignorePlayerSpawnSuitability | boolean            |
-| temperatura                  | flotante           |
+| ZenGetter                       | Tipo de devolución |
+| ------------------------------- | ------------------ |
+| nombre                          | cadena             |
+| canRain                         | boolean            |
+| isSnowyBiome                    | boolean            |
+| alta humedad                    | boolean            |
+| posibilidad de generar          | flotante           |
+| altura base                     | flotante           |
+| altura Variación                | flotante           |
+| lluvia                          | flotante           |
+| multiplicador acuarela          | int                |
+| ignorarJugadorSpawnSuitabilidad | boolean            |
+| temperatura                     | flotante           |
