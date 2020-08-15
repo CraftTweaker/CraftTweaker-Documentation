@@ -2,7 +2,7 @@
 
 This package allows you to add and remove items to/from the Loot Bags.
 
-## Importing the package
+## Importazione del pacchetto
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
