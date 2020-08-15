@@ -1,28 +1,28 @@
 # ZenDoc
 
-The `@ZenDoc` annotation allows developers to provide additional information to the `/ct dumpZS` command.  
-More specifically, it will look like this:
+L'annotazione `@ZenDoc` consente agli sviluppatori di fornire ulteriori informazioni al comando `/ct dumpZS` .  
+Più specificamente, sarà così:
 
 ![img](assets/zenDoc.png)
 
-## Example
+## Esempio
 
 [CraftTweaker Test Project ZenDoc](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests/src/main/java/crafttweaker/tests/wiki/ZenDocWiki.java)
 
 ```java
-@ZenClass(value = "crafttweaker.tests.zenDoc")
+@ZenClass(value = "crafttweaker.tests. enDoc")
 @ZenRegister
 public class ZenDocWiki {
     @ZenMethod
     @ZenDoc("This prints a warning")
     public static void print() {
-        CraftTweakerAPI.logWarning("Print invoked!");
+        CraftTweakerAPI. ogWarning("Stampa invocato!");
     }
 }
 ```
 
-## What methods can be annotated || Additional Info
+## Quali metodi possono essere annotati <unk> <unk> Ulteriori informazioni
 
-- You can annotate all methods, static and nonstatic.
-- Currently, this will only affect the generated HTML file when running [`/ct dumpzs`](/Vanilla/Commands/).
-- This annotation takes one String as value that is the additional information that should be printed.
+- È possibile annotare tutti i metodi, statici e nonstatici.
+- Attualmente, questo influenzerà solo il file HTML generato quando si esegue [`/ct dumpzs`](/Vanilla/Commands/).
+- Questa annotazione prende una Stringa come valore che è le informazioni aggiuntive che devono essere stampate.
