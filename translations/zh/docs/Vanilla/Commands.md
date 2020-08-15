@@ -123,306 +123,306 @@ CraftTweaker 添加了一些命令，这些命令可以帮助你创建脚本，�
 
 说明：
 
-Outputs a ZenScript dump to a crafttweaker_dump folder within your minecraft directory as HTML file.  
-You can use one or more dump targets that will be executed consecutively (if you provide a target twice it will run twice).  
-The targets can be found using auto-complete (tab key).  
-By default `log`, `html` and `json` are registered as targets.  
-This will include all registered Bracket Handlers, ZenTypes, Global Functions, ZenExpansions an all Registered Packages including their methods.  
-Note that not all of these can be used from within the scripts!
+在你的Minecraft目录中输出一个 ZenScript 转储到一个 craftfiner_dump 文件夹作为HTML文件。  
+您可以使用一个或多个将被连续执行的转储目标(如果您提供了两次目标将运行两次)。  
+目标可以使用自动完成 (标签键) 找到。  
+默认情况下 `日志`, `html` 和 `json` 已注册为目标。  
+这将包括所有注册的 Backet 处理器、ZenTypes, Global Functions, ZenExpansions 所有注册包，包括他们的方法。  
+注意并非所有这些都可以从脚本中使用！
 
-## Entities
+## 实体
 
-Usage:
+用法：
 
-`/crafttweaker entities`
+`/手工艺较弱实体`
 
-`/ct entities`
+`/ctt 实体`
 
-Description:
+描述：
 
-Outputs a list of all the entities in the game to the crafttweaker.log file.
+将游戏中所有实体的列表导出到 crafttweaper.log 文件。
 
-## Give Item
+## 赠送物品
 
-Usage:
+用法：
 
-`/crafttweaker give <minecraft:bedrock>`
+`/crafttbelower get <minecraft:bedrock>`
 
-`/ct give <minecraft:bedrock>`
+`/ct gives <minecraft:bedrock>`
 
-Description:
+描述：
 
-Gives the player the item using CrT's Bracket handler syntax.  
-You can also apply tags by appending a `.withTag()` call.  
-Note that this is a pretty simple parser and may not work for every case!
+使用 Crt's Backet 处理器语法给玩家一个物品。  
+你也可以通过附加一个 `来应用标签。 ithTag()` 通话。  
+注意，这是一个相当简单的解析器，不能适用于每个案例！
 
-## Hand
+## 手
 
-Usage:
+用法：
 
 `/crafttweaker hand`
 
-`/ct hand`
+`/ct 手`
 
-Description:
+描述：
 
-Prints the name of the item in your hand to the chat.
+将手中物品的名称打印到聊天室。
 
-Also copies the name to clipboard and prints oredict entries.
+同时复制名称到剪贴板并打印oredict 条目。
 
-## Inventory
+## 库存
 
-Usage:
+用法：
 
-`/crafttweaker inventory`
+`/craftbelown 背包`
 
-`/ct inventory`
+`/ct库存`
 
-Description:
+描述：
 
-Outputs a list of all the items in your inventory to the crafttweaker.log file.
+将你物品栏中所有物品的列表导出到 crafttweaper.log 文件。
 
-## JeiCategories
+## Jei类别
 
-Usage:
+用法：
 
-`/crafttweaker jeiCategories`
+`/craftbelower jeiaries`
 
-`/ct jeiCategories`
+`/ct jei类别`
 
-Description:
+描述：
 
-Outputs a list of all registered jei categories to the crafttweaker.log file.  
-Requires JEI to be installed (surprise)!
+输出所有注册jei类别的列表到craftminstruer.log 文件。  
+需要安装 JEI (意外)！
 
 ## Json
 
-Usage:
+用法：
 
-`/crafttweaker json` `/crafttweaker json escaped`
+`/craftbinevel json` `/crafttbinevel json 逃脱`
 
-`/ct json` `/ct json escaped`
+`/ct json` `/ct json 逃脱`
 
-Description:
+描述：
 
-Prints the nbt of the item in your hand as JSON to the chat.  
-This format differs from the IData formatting CraftTweaker uses.  
-You can click it to be copied to your clipboard.  
-You can also privide the `escaped` argumetn to automatically escape the resulting string.
+将你手中的物品的忍者打印为 JSON 到聊天室。  
+此格式不同于IData 格式的 CraftTsinple 用途。  
+您可以点击它复制到剪贴板。  
+您也可以根据 `逃脱` 参数自动逃脱生成的字符串。
 
-## Liquids
+## 流动资金
 
-Usage:
+用法：
 
 `/crafttweaker liquids`
 
-`/ct liquids`
+`/ct液体`
 
-Description:
+描述：
 
-Outputs a list of all the liquids in the game to the crafttweaker.log file.
+将游戏中所有液体的列表导出到craftweaker.log 文件中。
 
-## Log
+## 日志
 
-Usage:
+用法：
 
-`/crafttweaker log`
+`/craftbelown 日志`
 
-`/ct log`
+`/ct 日志`
 
-Description:
+描述：
 
-Sends a clickable link to open the crafttweaker.log.
+发送一个可点击的链接来打开 crafttweaker.log。
 
-## Mods
+## 模组
 
-Usage:
+用法：
 
 `/crafttweaker mods`
 
-`/ct mods`
+`/ct模组`
 
-Description:
+描述：
 
-Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
+输出游戏中所有模组及其版本的列表到craftbiner.log 文件并在聊天中打印它。
 
-## Names
+## 名称
 
-Usage:
+用法：
 
 `/crafttweaker names [category]`
 
-`/ct names [category]`
+`/ct 名称 [category]`
 
-Description:
+描述：
 
-Outputs a list of all the items in the game to the crafttweaker.log file.  
-The `category` argument is optional and will extend the list with the according information:
+将游戏中所有项目的列表导出到craftminstrer.log 文件。  
+`类别` 是可选的，并将通过提供信息扩展列表：
 
-* burntime
-* creativetabs
-* damageable
-* display
-* enchantability
-* foodvalue
+* 烧毁时间
+* 创建标签
+* 可造成伤害
+* 显示
+* 附魔性
+* 食物价值
 * maxdamage
 * maxstack
 * maxuse
-* modid
-* rarity
-* repairable
-* repaircost
-* saturationvalue
+* 莫多德
+* 稀有度
+* 可修复
+* 修理费用
+* 饱和度
 * unloc
 
-You can also see all the available parameters using the TAB-Key autocompletion feature.
+您也可以使用TAB-Key 自动补全功能查看所有可用参数。
 
-## Nbt
+## 南特
 
-Usage:
+用法：
 
 `/crafttweaker nbt`
 
-`/ct nbt`
+`/ctt nbt`
 
-Description:
+描述：
 
-Outputs the NBT of the block you are looking at or the item you are holding to the crafttweaker.log file.
+输出您正在查看的方块的NBT或您正在持有的项目到 craftminstruer.log 文件。
 
-## OreDict
+## 奥雷迪尔特
 
-Usage:
+用法：
 
 `/crafttweaker oredict <name>`
 
-`/ct oredict <name>`
+`/ctt oredict <name>`
 
-Description:
+描述：
 
-Outputs a list of all the OreDict entries in the game to the crafttweaker.log file.
+将游戏中所有的 OreDict 条目列表导出到craftweaker.log 文件。
 
-If a name is supplied, the names of all the items registered to the oredict will be outputted to the crafttweaker.log file.
+如果提供了一个名字，所有注册到oredic的项目的名称将会被输出到craftweaker.log 文件中。
 
-## Potions
+## 药水
 
-Usage:
+用法：
 
-`/crafttweaker potions`
+`/手工艺较弱药水`
 
-`/ct potions`
+`/ct药水`
 
-Description:
+描述：
 
-Outputs a list of all the potions in the game to the crafttweaker.log file.
+将游戏中所有药水的列表导出到craftweaper.log 文件中。
 
-## RecipeNames
+## 食谱名称
 
-Usage:
+用法：
 
-`/crafttweaker recipeNames`  
-`/crafttweaker recipeNames [modid]`
+`/craftbelown recipedname`  
+`/crafttbinever recipename [modid]`
 
-`/ct recipeNames`  
-`/ct recipeNames [modid]`
+`/ct 累计名称`  
+`/ct累计名称 [modid]`
 
-Description:
+描述：
 
-Outputs a list of all recipe names in the game to the crafttweaker.log file.  
-A modid can be provided to filter results.
+将游戏中所有配方名称列表导出到 craftminstruer.log 文件。  
+可以为筛选结果提供月经。
 
-## Recipes
+## 配方
 
-Usage:
+用法：
 
-`/crafttweaker recipes`
+`/crafttbelower 配方`
 
-`/ct recipes`
+`/ct配方`
 
-Description:
+描述：
 
-Outputs a list of all the crafting recipes in the game to the crafttweaker.log file.
+输出游戏中所有制造配方的列表到craftmilower.log 文件。
 
-## Recipes (Hand)
+## 配方(Hand)
 
-Usage:
+用法：
 
-`/crafttweaker recipes hand`
+`/crafttbelower 配方手`
 
-`/ct recipes hand`
+`/ct配方手`
 
-Description:
+描述：
 
-Outputs a list of all the crafting recipes for the item in the player's hand in the game to the crafttweaker.log file.
+将游戏中玩家手中的项目的所有制造配方列表输出到craftminstruer.log 文件。
 
-## Recipes (Furnace)
+## 配方(熔炉)
 
-Usage:
+用法：
 
-`/crafttweaker recipes furnace`
+`/craftbelower 配方熔化`
 
-`/ct recipes furnace`
+`/ct配方熔化`
 
-Description:
+描述：
 
-Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
+输出游戏中所有熔炉配方的列表到craftminstrer.log 文件。
 
-## Scripts
+## 脚本
 
-Usage:
+用法：
 
 `/crafttweaker scripts`
 
-`/ct scripts`
+`/ct脚本`
 
-Description:
+描述：
 
-Sends a clickable link to open the scripts directory.  
-Can also be executed from a command line which instead prints the absolute path to the directory to the log.
+发送可点击链接打开脚本目录。  
+也可以从命令行执行，而是将绝对路径打印到日志目录。
 
-## Seeds
+## 种子
 
-Usage:
+用法：
 
-`/crafttweaker seeds`
+`/手工弱化种子`
 
-`/ct seeds`
+`/ct种种子`
 
-Description:
+描述：
 
-Outputs a list of all the items in the seed registry to the crafttweaker.log file.
+将种子注册表中所有项目的列表导出到 crafttweaper.log 文件。
 
-## Syntax
+## 语句
 
-Usage:
+用法：
 
 `/crafttweaker syntax`
 
-`/ct syntax`
+`/ct语法`
 
-Description:
+描述：
 
-Reads through all your scripts and will output all errors it finds in your syntaxes. Note that this won't apply your script changes, you need to restart your game to see them in effect.
+读取所有脚本并输出在您的语法中发现的所有错误。 请注意这不会应用您的脚本更改，您需要重新启动您的游戏才能看到它们生效。
 
-## Wiki
+## 维基
 
-Usage:
+用法：
 
 `/crafttweaker wiki`
 
-`/ct wiki`
+`/ctt wiki`
 
-Description:
+描述：
 
-Opens your browser to this wiki page (same as `/ct docs`).
+打开您的浏览器到这个wiki页面(与 `/ct docs` 相同)。
 
 ## ZsLint
 
-Usage:
+用法：
 
 `/crafttweaker zslint`
 
 `/ct zslint`
 
-Description:
+描述：
 
-Starts the zslint socket.
+启动 zslint 套接字。
