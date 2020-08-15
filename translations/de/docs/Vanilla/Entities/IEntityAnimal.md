@@ -20,7 +20,7 @@ IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That 
 | loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
 | isInLove  | bool                                                |
 
-### ZenMethods
+### ZenMethoden
 
 #### check if an item can be used to breed the animal
 
