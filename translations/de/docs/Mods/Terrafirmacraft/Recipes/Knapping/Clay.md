@@ -1,6 +1,6 @@
 # Clay Knapping
 
-## Package
+## Paket
 ```zenscript
 import mods.terrafirmacraft.ClayKnapping;
 ```
@@ -11,7 +11,7 @@ import mods.terrafirmacraft.ClayKnapping;
 ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 ClayKnapping.removeRecipe(IItemStack output);
