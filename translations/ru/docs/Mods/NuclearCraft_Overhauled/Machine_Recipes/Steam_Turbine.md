@@ -1,7 +1,7 @@
-# Steam Turbine
+# Паровая турбина
 
-## Importing the Package
-`mods.nuclearcraft.Turbine`
+## Импортирование пакета
+`mods.nuclearcraft.Турбин`
 
 ## Добавление рецептов
 ```zenscript
