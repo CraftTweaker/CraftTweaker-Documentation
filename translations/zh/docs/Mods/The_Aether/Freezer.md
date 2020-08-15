@@ -5,7 +5,7 @@
 ```zenscript
 import mods.aether_legacy.Freezer;
 ```
-## Usage
+## 用法
 
 ```zenscript
 Freezer.registerFreezable(IItemStack input, IItemStack output, int timeRequired);
