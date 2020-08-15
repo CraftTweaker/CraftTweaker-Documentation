@@ -65,10 +65,10 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 ```
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| Kommandozeile | String | true       | false      |
+| pfad          | String | true       | false      |
 
