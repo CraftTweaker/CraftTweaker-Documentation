@@ -12,7 +12,7 @@ It might be required for you to import the package if you encounter any issues (
 
 | ZenGetter   | 戻り値                                    |
 | ----------- | -------------------------------------- |
-| displayName | string                                 |
+| displayName | 文字列                                    |
 | position    | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
