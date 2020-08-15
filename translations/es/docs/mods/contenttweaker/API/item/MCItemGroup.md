@@ -2,10 +2,10 @@
 
 An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
@@ -14,7 +14,7 @@ mods.contenttweaker.item.MCItemGroup
 MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### getPath
 
 Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
@@ -35,9 +35,9 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 <itemgroup:misc>.setBackgroundImageName(texture as String);
 ```
 
-| Parameter | Type   | Description            |
+| Parámetro | Tipo   | Descripción            |
 | --------- | ------ | ---------------------- |
-| texture   | String | The texture to be used |
+| texture   | Cadena | The texture to be used |
 
 
 ### setNoScrollbar
@@ -65,10 +65,10 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 ```
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Tipo   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| commandString | Cadena | verdad     | falso      |
+| ruta          | Cadena | verdad     | falso      |
 
