@@ -1,6 +1,6 @@
 # PlayerCloseContainer
 
-The PlayerCloseContainer Event is fired whenever a player closes a container.
+当玩家关闭容器时，PlayerCloseContaineContainer事件将被开除。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-PlayerCloseContainer Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerCloseContainer Events 实现了以下接口，并且也能够调用他们的所有方法/getter/setter：
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
