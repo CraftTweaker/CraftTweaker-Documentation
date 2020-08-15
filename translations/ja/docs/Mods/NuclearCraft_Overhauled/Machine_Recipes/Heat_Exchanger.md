@@ -1,7 +1,7 @@
-# Heat Exchanger
-**Note: Partially Broken**
+# 熱交換
+**注意：部分的に壊れている**
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.HeatExchangerHeatExchanger`
 
 ## レシピを追加中
