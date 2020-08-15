@@ -1,7 +1,7 @@
 # Decay Hastener
 
-## Importing the Package
-`mods.nuclearcraft.decay_hastener`
+## 导入软件包
+`nuclearcraft.decay_hastener`
 
 ## 添加配方
 ```zenscript
@@ -10,7 +10,7 @@ mods.nuclearcraft.decay_hastener.addRecipe([itemInput, itemOutput, @Optional dou
 
 ## 删除配方
 ```zenscript
-mods.nuclearcraft.decay_hastener.removeRecipeWithInput([itemInput]);
-mods.nuclearcraft.decay_hastener.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.decay_hastener.removeRecipeWindupet([itemInput]);
+mods.nuclearcraft.decay_hastener.removeRecipewOutput([itemOutput]);
 mods.nuclearcraft.decay_hastener.removeAllRecipes();
 ```
