@@ -2,10 +2,10 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.data.StringData
 ```
@@ -18,13 +18,13 @@ StringData implements the following interfaces. That means any method available 
 ```zenscript
 new crafttweaker.api.data.StringData(internal as String);
 ```
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| internal  | 文字列型 | No description provided |
+| パラメータ | タイプ  | 説明                      |
+| ----- | ---- | ----------------------- |
+| 内部    | 文字列型 | No description provided |
 
 
 
-## Methods
+## メソッド
 ### asList
 
 Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
@@ -72,9 +72,9 @@ new StringData("Hello").contains(data as crafttweaker.api.data.IData);
 new StringData("Hello").contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| パラメータ | タイプ                                                    | 説明                               |
+| ----- | ------------------------------------------------------ | -------------------------------- |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -118,8 +118,8 @@ new StringData("Hello").getString();
 ```
 
 
-## Operators
-### ADD
+## 演算子
+### 追加
 
 Concatenates the two string Datas and returns the result.
 
@@ -128,7 +128,7 @@ new StringData("Hello") + data as crafttweaker.api.data.StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-| Parameter | Type                                                             | Description              |
-| --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| パラメータ | タイプ                                                              | 説明                       |
+| ----- | ---------------------------------------------------------------- | ------------------------ |
+| データ   | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
 
