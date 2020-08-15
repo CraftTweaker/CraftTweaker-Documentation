@@ -1,18 +1,18 @@
-# Material Locks
+# 材料锁
 
-## Material-Lock
+## 材料锁
 
-With the implementation of TConstruct support in CompatSkills 1.5.0. You now have the ability to lock:
+在 CompatSkills 1.5.0中实现的 TConstruct 支持。 您现在有能力锁定：
 
-    - Modifier Addition
+    - 修饰符
     
 
-For specific Tinker Construct's Modifiers.
+对于特定的Tinker 构造的修饰符。
 
-### Syntax:
+### 语法：
 
-    // Blank Example:
-    mods.compatskills.ModifierLock.addModifierLock(String identifier, String... requirements);
+    // 空白示例：
+    mods.compatskills.ModifierLock.addModifierLock(String identificer, String... 要求);
     
-    // Example:
-    mods.compatskills.ModifierLock.addModifierLock("harvestwidth", "reskillable:mining|5", "reskillable:magic|7");
+    // 示例:
+    mods.compatskills.ModifierLock.addModifierLock("testwidth", "reskillable:mining|5", "reskillable:magic|7");
