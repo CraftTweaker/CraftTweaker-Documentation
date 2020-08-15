@@ -1,18 +1,18 @@
-# Tinker's Construct
+# Construction du Clicheur
 
-## Notice
+## Annonce
 
-As of CompatSkills 1.9.0, TConstruct Locks now pass "up" to item-level. That way the tools are still inaccessible if a friend provides a crafted version.
+À partir de CompatSkills 1.9.0, les verrous TConstruct passent maintenant à niveau d'objet. De cette façon, les outils sont toujours inaccessibles si un ami fournit une version fabriquée.
 
-## Commands
+## Commandes
 
-    // Dumps all Materials
+    // Déverse tous les matériaux
     ~ /ct tinkermaterials
     
-    // Dumps all Modifiers
+    // Déverse tous les modificateurs
     ~ /ct tinkermodifiers
     
 
-## Tool-Creation Locks
+## Verrouillages de création d'outils
 
-By adding a normal ItemStack lock to any of the Tinker Tool-Types (not Part-Types!). You can lock the creation of a Tinker Tool-Type!
+En ajoutant un verrou normal de la pile d'objets à l'un des types d'outils du Tinker (pas les types de pièces !). Vous pouvez verrouiller la création d'un type de Tinker !
