@@ -1,7 +1,7 @@
-# Rock Crusher
+# Felsenkreuzer
 
-## Importing the Package
-`mods.nuclearcraft.rock_crusher`
+## Paket wird importiert
+`mods.nuclearcraft.rock_Brecher`
 
 ## Rezepte hinzufügen
 ```zenscript
