@@ -18,7 +18,7 @@ mods.naturesaura.TreeRitual
 mods.naturesaura.TreeRitual.addRecipe(String name, IIngredient saplingType, IItemStack output, int time, IIngredient[] items)
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.naturesaura.TreeRitual.removeRecipe(IItemStack output)
