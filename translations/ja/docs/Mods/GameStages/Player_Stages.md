@@ -1,46 +1,46 @@
-# Player Stages
+# プレイヤーステージ
 
-The GameStages API expands CraftTweaker's [IPlayer](/Vanilla/Players/IPlayer/) functionality to allow you to check and modify a player's stages.
+GameStages APIはCraftTweakerの [IPlayer](/Vanilla/Players/IPlayer/) 機能を拡張し、プレイヤーのステージを確認および変更できます。
 
-## Calling the methods
+## メソッドを呼び出す
 
-As this is a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), you can simply call the methods on any [IPlayer](/Vanilla/Players/IPlayer/) object, or any of it's subtypes.
+これは [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)なので、任意の [IPlayer](/Vanilla/Players/IPlayer/) オブジェクト、またはそのサブタイプのいずれかのメソッドを呼び出すことができます。
 
-## Methods
+## メソッド
 
-### Check for gamestages
+### ゲーム施設のチェック
 
-The methods return booleans.
+メソッドはブール値を返します。
 
 ```zenscript
-// Checks if the player has the passed stage.
+// プレイヤーが渡されたステージを持っているかどうかをチェックします。
 //player.hasGameStage(String stage);
 player.hasGameStage("one");
 
 
 
-// Checks if the player has any of the passed stages. They only need one.
+// プレイヤーが渡されたステージのいずれかをチェックします。 必要なのは一つだけです
 //player.hasAnyGameStages(String... stages);
 player.hasAnyGameStages("one", "two");
 
 
 
-// Checks if the player has all of the passed stages.
-//player.hasAllGameStages (String... stages);
+// プレイヤーが渡されたすべてのステージを持っているかどうかをチェックします。
+//player.hasAllGameStages (文字列... stages);
 player.hasAllGameStages ("one", "two");
 ```
 
-### Add or remove a gamestage
+### ゲーム施設を追加または削除する
 
-The methods return void (nothing).
+メソッドは void (nothing) を返します。
 
 ```zenscript
-// Unlocks a stage for a player.
+// プレイヤー用のステージのロックを解除する
 //addGameStage(String stage);
 addGameStage(String stage);
 
 
-// Locks a stage for a player.
+// プレイヤーのステージをロックします。
 //removeGameStage(String stage);
 removeGameStage(String stage);
 ```
