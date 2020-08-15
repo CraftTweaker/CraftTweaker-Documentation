@@ -1,7 +1,7 @@
-# Implosion Compressor
+# Compressore Di Implosione
 
-## Importing the Package
-`mods.techreborn.implosionCompressor`
+## Importazione del pacchetto
+`mods.techreborn.implosionCompressore`
 
 ## Aggiunta Di Ricette
 ```zenscript
@@ -10,7 +10,7 @@ mods.techreborn.implosionCompressor.addRecipe(IItemStack output1, IItemStack out
 
 ## Rimozione Ricette
 ```zenscript
-mods.techreborn.implosionCompressor.removeInputRecipe(IIngredient ingredient);
+mods.techreborn.implosionCompressor.removeInputRecipe(IIngredient ingrediente);
 mods.techreborn.implosionCompressor.removeRecipe(IItemStack output);
 mods.techreborn.implosionCompressor.removeAll();
 ```
