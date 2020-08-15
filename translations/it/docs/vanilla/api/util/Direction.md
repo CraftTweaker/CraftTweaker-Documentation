@@ -2,15 +2,15 @@
 
 Represents a cardinal direction (north, south, east, west) and (up and down).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.util.Direction
 ```
 
-## Methods
+## Metodi
 ### rotateAround
 
 Rotates this direction around a given Axis
@@ -22,7 +22,7 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 <direction:north>.rotateAround(<directionaxis:north>);
 ```
 
-| Parameter | Type                                                                   | Description               |
+| Parametro | Tipo                                                                   | Descrizione               |
 | --------- | ---------------------------------------------------------------------- | ------------------------- |
 | axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
 
@@ -52,18 +52,18 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 ```
 
 
-## Properties
+## Proprietà
 
-| Name            | Type                                                                   | Has Getter | Has Setter |
-| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                                                    | true       | false      |
-| horizontalAngle | float                                                                  | true       | false      |
-| horizontalIndex | int                                                                    | true       | false      |
-| index           | int                                                                    | true       | false      |
-| name            | String                                                                 | true       | false      |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
-| xOffset         | int                                                                    | true       | false      |
-| yOffset         | int                                                                    | true       | false      |
-| zOffset         | int                                                                    | true       | false      |
+| Nome            | Tipo                                                                   | Ha Getter | Ha Setter |
+| --------------- | ---------------------------------------------------------------------- | --------- | --------- |
+| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | vero      | falso     |
+| axisOffset      | int                                                                    | vero      | falso     |
+| horizontalAngle | galleggiante                                                           | vero      | falso     |
+| horizontalIndex | int                                                                    | vero      | falso     |
+| indice          | int                                                                    | vero      | falso     |
+| nome            | Stringa                                                                | vero      | falso     |
+| opposto         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | vero      | falso     |
+| xOffset         | int                                                                    | vero      | falso     |
+| yOffset         | int                                                                    | vero      | falso     |
+| zOffset         | int                                                                    | vero      | falso     |
 
