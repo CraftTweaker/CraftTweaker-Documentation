@@ -1,6 +1,6 @@
 # Crystallizer
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.CrystallizerCrystallizer`
 
 ## レシピを追加中
@@ -13,5 +13,5 @@ mods.nuclearcraft.Supercoolermods.nuclearcraft.Crystallizer.addRecipe(ILiquidSta
 mods.nuclearcraft.Supercoolermods.nuclearcraft.Crystallizer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Crystallizer.removeRecipeWithOutput(IIngredient itemOutput);
 mods.nuclearcraft.Crystallizer.removeAllRecipes();Crystallizer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Crystallizer.removeAllRecipes();
+mods.nukraft.Crystallizer.removeAllRecipes();
 ```
