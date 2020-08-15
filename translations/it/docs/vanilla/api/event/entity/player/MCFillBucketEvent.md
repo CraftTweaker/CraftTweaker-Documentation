@@ -8,7 +8,7 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.event.entity.player.MCFillBucketEvent
 ```
 
-## Constructors
+## Costruttori
 ```zenscript
 new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCFillBucketEvent>);
 ```
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCFillBucketEvent(handler as function.C
 ## Metodi
 ### getEmptyBucket
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCFillBucketEvent.getEmptyBucket();
@@ -29,7 +29,7 @@ myMCFillBucketEvent.getEmptyBucket();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCFillBucketEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCFillBucketEvent.getEntityPlayer();
 
 ### getFilledBucket
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCFillBucketEvent.getFilledBucket();
@@ -45,29 +45,29 @@ myMCFillBucketEvent.getFilledBucket();
 
 ### getPlayer
 
-Returns: `Player`
+Restituisce: `Giocatore`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCFillBucketEvent.getPlayer();
 ```
 
-### hasResult
+### hasRisultato
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCFillBucketEvent.hasResult();
+myMCFillBucketEvent.hasRisultato();
 ```
 
-### isCancelable
+### isAnnullabile
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
+ Nota:
+ Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
 
 Restituisce un booleano
 
@@ -75,9 +75,9 @@ Restituisce un booleano
 myMCFillBucketEvent.isCancelable();
 ```
 
-### isCanceled
+### isAnnullato
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
 
 Restituisce un booleano
 
@@ -85,7 +85,7 @@ Restituisce un booleano
 myMCFillBucketEvent.isCanceled();
 ```
 
-### setCanceled
+### setAnnullato
 
 ```zenscript
 myMCFillBucketEvent.setCanceled(cancel as boolean);
@@ -93,13 +93,13 @@ myMCFillBucketEvent.setCanceled(cancel as boolean);
 
 | Parametro | Tipo    | Descrizione                 |
 | --------- | ------- | --------------------------- |
-| cancel    | boolean | Nessuna descrizione fornita |
+| annulla   | boolean | Nessuna descrizione fornita |
 
 
 ### setFilledBucket
 
 ```zenscript
-myMCFillBucketEvent.setFilledBucket(arg0 as crafttweaker.api.item.IItemStack);
+myMCFillBucketEvent.setFilledBucket(arg0 come crafttweaker.api.item.IItemStack);
 ```
 
 | Parametro | Tipo                                                              | Descrizione                 |
