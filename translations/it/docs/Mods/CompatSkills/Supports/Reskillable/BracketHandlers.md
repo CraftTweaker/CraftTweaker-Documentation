@@ -1,20 +1,20 @@
-# Bracket Handlers
+# Gestori Parentesi
 
-## Bracket Handlers
+## Gestori Parentesi
 
-### Skill Bracket Handler:
+### Gestore Staffa Abilità:
 
-    ## Example:
+    ## Esempio:
     <skill:resourcelocation>
     
-    ## Working Example:
+    ## Esempio di lavoro:
     <skill:reskillable:agility>
     
 
-### Trait Bracket Handler:
+### Gestore Staffa Trait:
 
-    ## Example:
+    ## Esempio:
     <trait:resourcelocation>
     
-    ## Working Example:
+    ## Esempio di lavoro:
     <trait:reskillable:sidestep>
