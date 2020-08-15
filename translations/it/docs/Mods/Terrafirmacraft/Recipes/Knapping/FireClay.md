@@ -20,11 +20,11 @@ FireClayKnapping.removeRecipe(String registryName);
 
 ## Esempio
 ```zenscript
-// add fireClay knapping recipe for enderio conduit binder
-FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-"    X",
-"   XX",
-"  XXX",
+// aggiungi la ricetta per il raccoglitore per conduit enderio
+FireClayKnapping. ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+" X",
+" XX",
+" XXX",
 " XXXX",
 "XXXXX");
 ```
