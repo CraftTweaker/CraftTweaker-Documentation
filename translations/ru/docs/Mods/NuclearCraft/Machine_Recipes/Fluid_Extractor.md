@@ -1,6 +1,6 @@
-# Fluid Extractor
+# Экстрактор жидкости
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.extractor`
 
 ## Добавление рецептов
