@@ -1,6 +1,6 @@
 # Верстак
 
-## Recipe Types
+## Типы рецептов
 
 There are three recipe types for crafting tables:
 
