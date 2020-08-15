@@ -1,12 +1,12 @@
 # Liquid Fuel Generator
 
-## Package
+## Pakiet
 
 ```zemscript
 import mods.ic2.LiquidFuelGenerator;
 ```
 
-## Methods
+## Metody
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in liquid fuel generators. The amount of fluid specified will make no difference; it uses 100 mb.
 - **int ticks** The time in ticks the liquid will burn for.
