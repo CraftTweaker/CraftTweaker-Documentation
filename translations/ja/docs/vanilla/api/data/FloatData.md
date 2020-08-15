@@ -10,17 +10,17 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.data.FloatData
 ```
 
-## Implemented Interfaces
-FloatData implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+FloatData は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.data.FloatData(internal as float);
+new crafttweaker.api.data.FloatData(float型として内部);
 ```
-| パラメータ | タイプ    | 説明                      |
-| ----- | ------ | ----------------------- |
-| 内部    | float型 | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 内部    | float型 | 説明が提供されていません |
 
 
 
