@@ -1,4 +1,4 @@
-# Crusher
+# Kreuzritter
 
 ## Package
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.Crusher.addRecipe(<minecraft:iron_ingot>, <minecraft:iron_ore>, <minecraft:stone>, 50);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.actuallyadditions.Crusher.removeRecipe(IItemStack output);
