@@ -1,8 +1,8 @@
-# Potion Bracket Handler
+# Gestionnaire de potions
 
-The Potion Bracket Handler gives you access to the Potions in the game. It is only possible to get Potions registered in the game, so adding or removing mods may cause issues if you reference the mod's Potions in a Potion Bracket Handler.
+Le gestionnaire de potions vous donne accès aux potions du jeu. Il est uniquement possible de s'inscrire à une potion dans le jeu, ainsi l'ajout ou la suppression de mods peuvent causer des problèmes si vous référencez les potions du mod dans un gestionnaire de potions de potion.
 
-Potions are referenced in the Potion Bracket Handler like so:
+Les potions sont référencées dans le gestionnaire de potions comme ceci:
 
 ```zenscript
 <potion:modname:potionname>
@@ -10,11 +10,11 @@ Potions are referenced in the Potion Bracket Handler like so:
 <potion:minecraft:strength>
 ```
 
-If the Potion is found, this will return an IPotion Object. Please refer to the [respective Wiki entry](/Vanilla/Potions/IPotion/) for further information on what you can do with these.
+Si la Potion est trouvée, cela retournera un objet Ipotion. Veuillez vous référer à la [entrée Wiki respective](/Vanilla/Potions/IPotion/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
 
-# Getting all Registered Potions
+# Récupération de toutes les potions enregistrées
 
-You can use the following command to output all registered Potions to the CraftTweaker log
+Vous pouvez utiliser la commande suivante pour afficher toutes les potions enregistrées dans le journal CraftTweaker
 
-    /ct potions
+    potions /ct
     /crafttweaker potions
