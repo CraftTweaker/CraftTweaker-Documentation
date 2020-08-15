@@ -18,9 +18,9 @@ BlockPlace Events implement the following interfaces and are able to call all of
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter | Type                                        |
-| --------------- | --------- | ------------------------------------------- |
-| `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `hand`          |           | String                                      |
+| ZenGetter       | Ajuste | Tipo                                        |
+| --------------- | ------ | ------------------------------------------- |
+| `player`        |        | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `actual`        |        | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `placedAgainst` |        | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `hand`          |        | Cadena                                      |
