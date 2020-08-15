@@ -1,10 +1,10 @@
-### Class
+### Classe
 
 ```zenscript
 import mods.roots.Transmutation;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void removeRecipe(
@@ -34,7 +34,7 @@ void addBlockToItemRecipe(
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.Transmutation;
