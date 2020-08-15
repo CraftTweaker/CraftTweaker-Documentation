@@ -19,4 +19,4 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 | ZenGetter            | ZenSetter | Тип                                         |
 | -------------------- | --------- | ------------------------------------------- |
 | `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `originalBlock`      |           | [БИБлок](/Vanilla/Blocks/IBlock/)           |
