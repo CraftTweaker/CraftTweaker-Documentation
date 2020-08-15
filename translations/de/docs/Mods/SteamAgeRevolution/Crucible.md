@@ -19,7 +19,7 @@ mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack outpu
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);
