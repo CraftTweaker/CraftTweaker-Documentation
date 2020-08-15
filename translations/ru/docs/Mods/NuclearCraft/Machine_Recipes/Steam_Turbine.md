@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.turbine`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.nuclearcraft.turbine.addRecipe([fluidInput, fluidOutput, double powerPerMB, double expansionLevel]);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.turbine.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.turbine.removeRecipeWithOutput([fluidOutput]);
