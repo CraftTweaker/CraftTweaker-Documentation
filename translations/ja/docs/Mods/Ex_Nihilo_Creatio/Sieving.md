@@ -1,6 +1,6 @@
 # Sieving
 
-## Package
+## パッケージ
 
 To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
@@ -8,7 +8,7 @@ To access `Sieve` without clarifying the full path, you can import the package a
 import mods.exnihilocreatio.Sieve;
 ```
 
-## Methods
+## メソッド
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
@@ -42,7 +42,7 @@ Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 Sieve.removeAll();
