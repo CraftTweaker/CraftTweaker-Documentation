@@ -1,8 +1,8 @@
-# Crusher
+# Kruszący
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crusher through the command `/ct mekrecipes crusher`
+Od Mekanism 9.7.0 można teraz zobaczyć wszystkie ciągi receptur Crushera przez polecenie `/ct mekrecipes crusher`
 
-## Addition
+## Dodanie
 
 ```zenscript
 mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
@@ -10,11 +10,11 @@ mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
 mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+Od Mekanism 9.7.0 możliwe jest stosowanie IIngredients jako inputStack zamiast tylko IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Uwaga: Obecnie wszystko to jest w pętli nad różnymi możliwościami w java podczas dodawania zamiast tego musisz to zrobić w ZenScript. Obecnie w samych maszynach nie ma wbudowanego wsparcia dla składników składowych składowych czy też słownika.
 
-## Removal
+## Usuwanie
 
 ```zenscript
 mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
@@ -23,11 +23,11 @@ mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
 mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Określenie parametru wejściowego usunie tylko konkretny przepis, który wykorzystuje dane wejściowe. Odrzucenie parametru wejściowego usunie wszystkie receptury, które wytwarzają dane wyjściowe.
 
-## Removing all recipes
+## Usuwanie wszystkich przepisów
 
-As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
+Od Mekanism 9.7.0 można obecnie usunąć wszystkie przepisy Crusher. (Wyłącza wszelkie przepisy dodane przez CraftTweaker)
 
 ```zenscript
 mods.mekanism.crusher.removeAllRecipes();
