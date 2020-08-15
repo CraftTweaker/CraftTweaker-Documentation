@@ -1,12 +1,12 @@
-# PriorityPreprocessor
+# 優先順位プリプロセッサ
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+Priority Preprocessorを使用すると、スクリプトに負荷の優先順位を与えることができます。
 
-## Call
+## 電話
 
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+`#priority number` をスクリプトに追加して、 `number` を設定したいプライオリティ番号としてプリプロセッサーを呼び出します。
 
-## What it does
+## 何をするか
 
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+スクリプトの優先度が高いほど、実行されます。  
+同じ優先度を持つスクリプトは、パス名を使用してアルファベット順にソートされます。
