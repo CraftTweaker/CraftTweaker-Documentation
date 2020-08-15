@@ -2,29 +2,29 @@
 
 ## 所属包名
 ```zenscript
-import mods.terrafirmacraft.FireClayKnapping;
+导入 mods.terrafirmacraft。FireClayKnapping;
 ```
 
 ## 添加配方
 
 ```zenscript
-FireClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern)
+FireClayKnapping.addRecipe(String registryName, IItemStack 输出, String... pattern)
 ```
 
 ## 删除配方
 
 ```zenscript
-FireClayKnapping.removeRecipe(IItemStack output);
-FireClayKnapping.removeRecipe(String registryName);
+FireClayKnapping.removeRecipe(IItemStack 输出);
+FireClayKnapping.removeRecipe(注册表名称);
 ```
 
 ## 例子
 ```zenscript
-// add fireClay knapping recipe for enderio conduit binder
-FireClayKnapping.addRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
-"    X",
-"   XX",
-"  XXX",
-" XXXX",
-"XXXXX");
+// 为enderio 管道添加FireClay knapping 配方
+FireClayKnapping。 ddRecipe("enderio/item_conduit_binder", <enderio:item_material:22>*2, 
+" X",
+" XX",
+" XX",
+" XX",
+"XXX");
 ```
