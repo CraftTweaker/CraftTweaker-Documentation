@@ -19,12 +19,12 @@ PlayerAttackEntity Events implement the following interfaces and are able to cal
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                           |
+| ZenGetter  | Tipo de devolución                    |
 | ---------- | ------------------------------------- |
 | `canceled` | boolean                               |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `entity`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## Métodos
 
 - `event.cancel()` sets the event as cancelled.
