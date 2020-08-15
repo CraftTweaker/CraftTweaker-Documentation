@@ -1,6 +1,6 @@
-# Wire Mill
+# Drahtmühle
 
-## Importing the Package
+## Paket wird importiert
 `mods.techreborn.wireMill`
 
 ## Rezepte hinzufügen
@@ -10,6 +10,6 @@ mods.techreborn.wireMill.addRecipe(IItemStack output1, IIngredient input1, int t
 
 ## Rezepte entfernen
 ```zenscript
-mods.techreborn.wireMill.removeRecipe(IItemStack output);
+mods.techreborn.wireMill.removeRecipe(IItemStack Ausgabe);
 mods.techreborn.wireMill.removeAll();
 ```
