@@ -1,28 +1,28 @@
-# Smelting bonus
+# Premia do wytapiania
 
-This package allows you to add and remove items to/from the Smelting bonus list.  
-The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
+Ten pakiet pozwala na dodawanie i usuwanie produktów do/z listy bonusów.  
+Lista bonusów na wytapianie jest sprawdzana za każdym razem, gdy piec domowy gotuje przedmiot.
 
-## Importing the package
+## Importowanie pakietu
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+Możesz [zaimportować](/AdvancedFunctions/Import/) paczkę i jej metody, aby ułatwić ponowne triwalowanie metod.
 
 ```zenscript
 import mods.thaumcraft.SmeltingBonus;
 ```
 
-## Adding items
+## Dodawanie elementów
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Uwaga: Wejście musi być IItemStack lub IOreDictEntry
 
 ```zenscript
-//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
+//mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient inputt, WeightedItemStack stack)
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## Removing items
+## Usuwanie elementów
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+Uwaga: Wejście musi być IItemStack lub IOreDictEntry
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);
