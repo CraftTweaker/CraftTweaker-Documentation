@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| Parameter | Type                                                                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
+| Parametr | Typ                                                                                                                                           | Opis                    |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
 
 
 
-## Methods
+## Metody
 ### getDistance
 
 Returns float
@@ -91,9 +91,9 @@ myMCPlayerFlyableFallEvent.isCanceled();
 myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parametr | Typ     | Opis                    |
+| -------- | ------- | ----------------------- |
+| cancel   | boolean | No description provided |
 
 
 ### setDistance
@@ -102,9 +102,9 @@ myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 myMCPlayerFlyableFallEvent.setDistance(distance as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| distance  | float | No description provided |
+| Parametr | Typ                | Opis                    |
+| -------- | ------------------ | ----------------------- |
+| distance | zmiennoprzecinkowe | No description provided |
 
 
 ### setMultiplier
@@ -113,9 +113,9 @@ myMCPlayerFlyableFallEvent.setDistance(distance as float);
 myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| multiplier | float | No description provided |
+| Parametr   | Typ                | Opis                    |
+| ---------- | ------------------ | ----------------------- |
+| multiplier | zmiennoprzecinkowe | No description provided |
 
 
 
