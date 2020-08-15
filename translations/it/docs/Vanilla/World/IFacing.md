@@ -2,12 +2,12 @@
 
 The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IFacing;`
 
-## Enumerations
+## Enumerazioni
 
 The facing Interface has 7 static Methods, each returning the said direction.  
 The last one takes the direction as String input (e.g. `"NORTH"`)
@@ -24,13 +24,13 @@ crafttweaker.world.Facing.up()
 crafttweaker.world.Facing.fromString(String name);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods senza parametri
 
-| ZenGetter | ZenMethod  | Return Type |
-| --------- | ---------- | ----------- |
-| name      | getName()  | string      |
-| rotateY   | rotateY()  | IFacing     |
-| opposite  | opposite() | IFacing     |
+| ZenGetter | ZenMethod  | Tipo Di Reso |
+| --------- | ---------- | ------------ |
+| nome      | getName()  | stringa      |
+| rotateY   | rotateY()  | IFacing      |
+| opposite  | opposite() | IFacing      |
 
 ## Other methods
 
