@@ -1,40 +1,40 @@
 # MCFood
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.food.MCFood
 ```
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Paramètre  | Type de texte | Libellé                 |
-| ---------- | ------------- | ----------------------- |
-| healing    | Indice        | No description provided |
-| saturation | flottant      | No description provided |
+| Paramètre  | Type de texte | Libellé                    |
+| ---------- | ------------- | -------------------------- |
+| guérison   | Indice        | Aucune description fournie |
+| saturation | flottant      | Aucune description fournie |
 
 
 
 ## Méthodes
-### addEffect
+### Ajouter Effet
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(effet comme crafttweaker.api.potion.MCPotionEffectInstance, probabilité comme float);
 ```
 
-| Paramètre   | Type de texte                                                                                 | Libellé                 |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | flottant                                                                                      | No description provided |
+| Paramètre   | Type de texte                                                                                 | Libellé                    |
+| ----------- | --------------------------------------------------------------------------------------------- | -------------------------- |
+| effet       | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Aucune description fournie |
+| Probabilité | flottant                                                                                      | Aucune description fournie |
 
 
-### clearEffects
+### effacer les effets
 
 ```zenscript
 myMCFood.clearEffects();
@@ -42,90 +42,90 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(effet comme crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Paramètre | Type de texte                                                                                 | Libellé                 |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Paramètre | Type de texte                                                                                 | Libellé                    |
+| --------- | --------------------------------------------------------------------------------------------- | -------------------------- |
+| effet     | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Aucune description fournie |
 
 
-### setCanEatWhenFull
+### format@@0 setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Paramètre      | Type de texte | Libellé                 |
-| -------------- | ------------- | ----------------------- |
-| canEatWhenFull | boolean       | No description provided |
+| Paramètre                | Type de texte | Libellé                    |
+| ------------------------ | ------------- | -------------------------- |
+| format@@0 canEatWhenFull | boolean       | Aucune description fournie |
 
 
-### setFastEating
+### format@@0 setFastMating
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
-
-```zenscript
-myMCFood.setFastEating(fastEating as boolean);
-```
-
-| Paramètre  | Type de texte | Libellé                 |
-| ---------- | ------------- | ----------------------- |
-| fastEating | boolean       | No description provided |
-
-
-### setHealing
-
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setHealing(healing as int);
+myMCFood.setFastEating(fastManger comme booléen);
 ```
 
-| Paramètre | Type de texte | Libellé                 |
-| --------- | ------------- | ----------------------- |
-| healing   | Indice        | No description provided |
+| Paramètre         | Type de texte | Libellé                    |
+| ----------------- | ------------- | -------------------------- |
+| Mangez rapidement | boolean       | Aucune description fournie |
 
 
-### setMeat
+### format@@0 setHealing
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setHealing(guérison comme int);
 ```
 
-| Paramètre | Type de texte | Libellé                 |
-| --------- | ------------- | ----------------------- |
-| meat      | boolean       | No description provided |
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| guérison  | Indice        | Aucune description fournie |
+
+
+### format@@0 setMeat
+
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+
+```zenscript
+myMCFood.setMeat(viande booléenne) ;
+```
+
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| Viande    | boolean       | Aucune description fournie |
 
 
 ### setSaturation
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Retourne [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(saturation as float);
+myMCFood.setSaturation(saturation comme float);
 ```
 
-| Paramètre  | Type de texte | Libellé                 |
-| ---------- | ------------- | ----------------------- |
-| saturation | flottant      | No description provided |
+| Paramètre  | Type de texte | Libellé                    |
+| ---------- | ------------- | -------------------------- |
+| saturation | flottant      | Aucune description fournie |
 
 
 
 ## Propriétés
 
-| Nom            | Type de texte | Has Getter | Has Setter |
-| -------------- | ------------- | ---------- | ---------- |
-| canEatWhenFull | boolean       | vrai       | Faux       |
-| healing        | Indice        | vrai       | Faux       |
-| isFastEating   | boolean       | vrai       | Faux       |
-| meat           | boolean       | vrai       | Faux       |
-| saturation     | flottant      | vrai       | Faux       |
+| Nom                      | Type de texte | A un Getter | A un Setter |
+| ------------------------ | ------------- | ----------- | ----------- |
+| format@@0 canEatWhenFull | boolean       | vrai        | Faux        |
+| guérison                 | Indice        | vrai        | Faux        |
+| Manger rapidement        | boolean       | vrai        | Faux        |
+| Viande                   | boolean       | vrai        | Faux        |
+| saturation               | flottant      | vrai        | Faux        |
 
