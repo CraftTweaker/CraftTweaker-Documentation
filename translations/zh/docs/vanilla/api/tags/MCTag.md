@@ -1,4 +1,4 @@
-# MCTag
+# MC标签
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -9,36 +9,36 @@ crafttweaker.api.tag.MCTag
 ```
 
 ## 已实现的接口
-MCTag implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+MCTag实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
+- [制造商.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## 方法
-### addBlocks
+### 添加块
 
 ```zenscript
-myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+myMCTag.addBlocks(块作为craftminstrer.api.block.MCBlock[]);
 ```
 
 | 参数     | 类型                                                              | 描述                      |
 | ------ | --------------------------------------------------------------- | ----------------------- |
-| blocks | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
+| blocks | [craftbinstruer.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | No description provided |
 
 
-### addEntityTypes
+### 添加属性类型
 
 ```zenscript
-myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
+myMCTag.addEntityTypes(实体为 craftweeper.api.entity.MCEntityType[]);
 ```
 
-| 参数 | 类型                                                                           | 说明                      |
-| -- | ---------------------------------------------------------------------------- | ----------------------- |
-| 实体 | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| 参数 | 类型                                                                             | 说明                      |
+| -- | ------------------------------------------------------------------------------ | ----------------------- |
+| 实体 | [craftbinstruer.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
 
 
-### addItems
+### 添加项目
 
 ```zenscript
-myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(items as craftbiner.api.IItemStack[]);
 ```
 
 | 参数 | 类型                                                                  | 描述                      |
@@ -48,7 +48,7 @@ myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
 
 ### createBlockTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+返回 [craftbinstruer.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createBlockTag();
@@ -56,7 +56,7 @@ myMCTag.createBlockTag();
 
 ### createEntityTypeTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+返回 [craftbinstruer.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createEntityTypeTag();
@@ -64,70 +64,70 @@ myMCTag.createEntityTypeTag();
 
 ### createItemTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+返回 [craftbinstruer.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createItemTag();
 ```
 
-### getRemainingItem
+### getRemainingitem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+当这种成分堆栈被制造时，网格中还会有什么东西？ 不检查堆栈是否匹配！ 用于Ctrt's net.minecraft.item.crafting.ICraftingRecipe
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myMCTag.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
+myMCTag.getRemainingItem(stack as craftbiner.api.item.IItemStack);
 myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述                                        |
-| ----- | ----------------------------------------------------------------- | ----------------------------------------- |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| 参数    | 类型                                                                | 描述         |
+| ----- | ----------------------------------------------------------------- | ---------- |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 提供这种成分的堆栈。 |
 
 
 ### 匹配
 
-Does the given stack match the ingredient?
+给定的堆栈是否与原料相符？
 
 返回为布尔值
 
 ```zenscript
-myMCTag.matches(stack as crafttweaker.api.item.IItemStack);
+myMCTag.matches(堆栈为 craftbiner.api.item.IItemStack);
 myMCTag.matches(<item:minecraft:iron_ingot>);
 ```
 
-| 参数    | 类型                                                                | 描述                 |
-| ----- | ----------------------------------------------------------------- | ------------------ |
-| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| 参数    | 类型                                                                | 描述      |
+| ----- | ----------------------------------------------------------------- | ------- |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 要检查的堆栈。 |
 
 
-### removeBlocks
+### 移除块
 
 ```zenscript
-myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+myMCTag.removeBlocks(块作为craftbiner.api.block.MCBlock[]);
 ```
 
 | 参数     | 类型                                                              | 描述                      |
 | ------ | --------------------------------------------------------------- | ----------------------- |
-| blocks | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
+| blocks | [craftbinstruer.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | No description provided |
 
 
-### removeEntityTypes
+### 移除实体类型
 
 ```zenscript
-myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
+myMCTag.removeEntityTypes(实体为 craftweeper.api.entity.MCEntityType[]);
 ```
 
-| 参数 | 类型                                                                           | 描述                      |
-| -- | ---------------------------------------------------------------------------- | ----------------------- |
-| 实体 | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| 参数 | 类型                                                                             | 描述                      |
+| -- | ------------------------------------------------------------------------------ | ----------------------- |
+| 实体 | [craftbinstruer.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
 
 
-### removeItems
+### 删除项目
 
 ```zenscript
-myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(items as craftbiner.api.item.IItemStack[]);
 ```
 
 | 参数 | 类型                                                                  | 描述                      |
@@ -138,14 +138,14 @@ myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 
 ## 参数
 
-| 名称                   | 类型                                                                           | 可获得  | 可设置   |
-| -------------------- | ---------------------------------------------------------------------------- | ---- | ----- |
-| blocks               | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true | false |
-| commandString #命令字符串 | 字符串[string]                                                                  | true | false |
-| entityTypes          | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true | false |
-| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true | false |
+| 名称                   | 类型                                                                             | 可获得  | 可设置   |
+| -------------------- | ------------------------------------------------------------------------------ | ---- | ----- |
+| blocks               | [craftbinstruer.api.block.MCBlock](/vanilla/api/blocks/MCBlock)                | true | false |
+| commandString #命令字符串 | 字符串[string]                                                                    | true | false |
+| 实体类型                 | [craftbinstruer.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true | false |
+| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]            | true | false |
 
-## Casters
+## 卡斯特尔
 
 | 结果类型                                                        | 是否隐藏 |
 | ----------------------------------------------------------- | ---- |
