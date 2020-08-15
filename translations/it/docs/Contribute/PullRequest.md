@@ -1,43 +1,43 @@
 # Filing a PullRequest
 
-## Prerequisites
+## Prerequisiti
 
-You need to have [created](/Contribute/OnlineEditor_Create) and/or [modified](/Contribute/OnlineEditor_Edit) files in your fork of the wiki.
+Devi aver [creato](/Contribute/OnlineEditor_Create) e/o [modificato](/Contribute/OnlineEditor_Edit) file nel tuo fork della wiki.
 
 ## Introduzione
 
-After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  
-This guide will show you how to create a PR to apply your changes to the actual wiki.
+Dopo aver creato o modificato qualsiasi cosa stavi cercando di fare, è necessario ottenere le modifiche al repository originale.  
+Questa guida ti mostrerà come creare una PR per applicare le tue modifiche alla wiki attuale.
 
-A Pull Request (or PR for short) allows you to apply your commits to the original codebase.  
-In other words, it allows you to make your changes visible to everyone visiting the wiki.
+Una Pull Request (o PR per breve) ti permette di applicare i tuoi commit al codice originale.  
+In altre parole, ti permette di rendere visibili le tue modifiche a tutti coloro che visitano la wiki.
 
-## Opening the Pull Request
+## Apertura della richiesta Pull
 
-When you head back to your fork's GitHub page, you will notice the branch info bar.  
-This bar tells you how your fork version differs from the original one.
+Quando torni alla pagina GitHub della tua fork, noterai la barra delle informazioni dei rami.  
+Questa barra ti dice come la tua versione del fork differisce da quella originale.
 
-For example, the picture below has three commits that have not yet been applied to the CrT-wiki whereas three other commits have been created in the original one that have not been applied to the fork.
+Ad esempio, il quadro sottostante contiene tre impegni che non sono ancora stati applicati al CrT-wiki mentre altri tre impegni sono stati creati in quello originale che non sono stati applicati alla forchetta.
 
-![Pull Request Button](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
+![Pulsante Richiesta Preleva](/Contribute/assets/PullRequest_Compare_PullRequestButton.png)
 
-If you click on the "Pull Request" button a new view will open, the Compare View.  
-In most cases it is already properly defined to use the Original CraftTweaker/CraftTweaker-Documentation master branch as destination and your branch as the changes to be pulled.
+Se si fa clic sul pulsante "Pull Request" si aprirà una nuova visualizzazione, la vista Confronta .  
+Nella maggior parte dei casi è già definito correttamente per utilizzare il ramo master Originale CraftTweaker/CraftTweaker-Documentation come destinazione e il ramo come modifiche da tirare.
 
-Github will also verify that there are no conflicts between your changes and what the current state of the wiki is.  
-In case it does find any misfits it will alert you, though you can still create the PR and ask for our help to resolve the conflicts.
+Github verificherà anche che non ci siano conflitti tra i tuoi cambiamenti e ciò che è lo stato attuale della wiki.  
+Nel caso in cui trovi qualsiasi disaccordo ti avviserà, anche se puoi ancora creare la PR e chiedere il nostro aiuto per risolvere i conflitti.
 
-Now all you need is provide a descriptive title and a description that will tell us about the changes.
+Ora tutto ciò di cui hai bisogno è fornire un titolo descrittivo e una descrizione che ci dirà circa i cambiamenti.
 
-Also notice the `Allow edits from mainainers` checkbox.  
-This checkbox allows people with write-access to the CrT-Repo (e.g. Members of the CraftTweaker organization) to modify files of your PR in order to resolve merge conflicts, for example.
+Notare anche la casella di controllo `Consenti modifiche dai principali` .  
+Questa casella consente alle persone con accesso di scrittura al CrT-Repo (e. . Membri dell’organizzazione CraftTweaker) per modificare i file della vostra PR al fine di risolvere i conflitti di fusione, per esempio.
 
 ![New PR Tool](/Contribute/assets/PullRequest_Create.png)
 
-At the bottom you can verify that all your changes will be included in the PR.
+In fondo è possibile verificare che tutte le modifiche saranno incluse nel PR.
 
-## Next Steps
+## Prossimi Passi
 
-Next, someone from the CrT-Organization or any contributor can look over your PR and leave general feedback or suggestions.  
-If someone from the CrT-Organization does a PR Review, you will be notified of all comments and whether or not you need to change something before it will be merged.  
-After all suggestions have been resolved, someone will merge the PR.
+Successivamente, qualcuno della CrT-Organization o qualsiasi collaboratore può guardare sopra la vostra PR e lasciare commenti o suggerimenti generali.  
+Se qualcuno della CrT-Organization fa una recensione PR, verrai avvisato di tutti i commenti e se devi o meno cambiare qualcosa prima che venga unito.  
+Dopo che tutti i suggerimenti sono stati risolti, qualcuno unirà il PR.
