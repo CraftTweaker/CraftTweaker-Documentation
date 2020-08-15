@@ -1,6 +1,6 @@
-# Implosion Compressor
+# Implosion-Kompressor
 
-## Importing the Package
+## Paket wird importiert
 `mods.techreborn.implosionCompressor`
 
 ## Rezepte hinzufügen
