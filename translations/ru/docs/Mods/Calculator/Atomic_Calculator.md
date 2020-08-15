@@ -1,6 +1,6 @@
 # Atomic Calculator
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.atomic;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.atomic;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-3]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Сложение
 ```zenscript
 atomic.addRecipe(IIngredient input1, IIngredient input2, IIngredient input3, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 atomic.removeRecipe(IIngredient output);
 ```
