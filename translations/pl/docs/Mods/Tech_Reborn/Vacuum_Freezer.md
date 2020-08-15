@@ -1,16 +1,16 @@
-# Vacuum Freezer
+# Zamrażarka próżniowa
 
-## Importing the Package
-`mods.techreborn.vacuumFreezer`
+## Importowanie pakietu
+`mods.techreborn.wakuumFreezer`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.techreborn.vacuumFreezer.addRecipe(IItemStack output, IIngredient input, int ticktime, int euTick);
+mods.techreborn.vacuumFreezer.addRecipe(wyjście IItemStack, Wejście IIngredient, int ticktime, int euTick);
 ```
 
 ## Usuwanie przepisów
 ```zenscript
-mods.techreborn.vacuumFreezer.removeInputRecipe(IIngredient ingredient);
-mods.techreborn.vacuumFreezer.removeRecipe(IItemStack output);
+mods.techreborn.vacuumFreezer.removeInputRecipe(składnik składnika);
+mods.techreborn.vacuumFreezer.removeRecipe(wyjście IItemStack);
 mods.techreborn.vacuumFreezer.removeAll();
 ```
