@@ -1,4 +1,4 @@
-# Mortar
+# 迫撃砲
 
 ## 加算
 
@@ -21,7 +21,7 @@ Mortar.remove(IItemStack[] input);
 
 Mortar.remove([<item:minecraft:dirt>, <item:minecraft:cobblestone>]);
 
-// Remove by output.
+// 出力で削除します。
 Mortar.removeByOutput(IIngredient output);
 
 Mortar.removeByOutput(<item:minecraft:diamond>);
@@ -32,6 +32,6 @@ Mortar.remove(String id);
 
 Mortar.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除します！
 Mortar.removeAll();
 ```
