@@ -1,15 +1,15 @@
-# Starlight Infusion Recipes
+# Starlight Infusionsrezepte
 
-You can add and remove crafting infusions.
+Du kannst Handwerksinfusionen hinzufügen und entfernen.
 
-## Calling
+## Anruf
 
-You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
+Sie können das InfusionRecipe Paket mit `mods.astralsorcery.StarlightInfusion` aufrufen.
 
-## Removing
+## Entfernen
 
-This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Dadurch wird die erste Infusion entfernt, die die bereitgestellten [IItemStack](/Vanilla/Items/IItemStack/) `Ausgabe`erzeugt.  
+Wenn es mehrere Rezepte gibt, die die angegebene Ausgabe zurückgeben, müssen Sie diese Methode mehrmals aufrufen!
 
 ```zenscript
 //mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
