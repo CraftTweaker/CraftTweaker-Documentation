@@ -4,7 +4,7 @@
 
 `import mods.enderio.SliceNSplice;`
 
-## Methods
+## Métodos
 
 **- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 
@@ -14,7 +14,7 @@
 
 **- float xp** The xp is granted from this recipe. May not be negative.
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.enderio.SliceNSplice.  
