@@ -2,7 +2,7 @@
 
 The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Calling
+## Appel en cours
 
 You can call the Alloy package using `mods.tconstruct.Alloy`
 
