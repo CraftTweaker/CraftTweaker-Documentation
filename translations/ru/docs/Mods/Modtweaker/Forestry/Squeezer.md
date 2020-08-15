@@ -1,14 +1,14 @@
-# Squeezer
+# Сжатие
 
-ModTweaker allows you to add or remove forestry Squeezer Recipes
+ModTweaker позволяет добавлять или удалять рецепты Squeezer
 
-## Calling
+## Звонок
 
-You can call the package using `mods.forestry.Squeezer`
+Вы можете вызвать пакет с помощью `mods.forestry.Squeezer`
 
-## Recipe Removal
+## Удаление рецепта
 
-Beware, you cannot remove the recipes that fill or drain fluid containers, such as forestry cans!
+Будьте осторожны, вы не можете удалить рецепты, которые заполняют или сливают жидкие контейнеры, такие как лесные бары!
 
 ```zenscript
 //mods.forestry.Squeezer.removeRecipe(ILiquidStack liquid, @Optional IIngredient[] ingredients);
@@ -16,17 +16,17 @@ mods.forestry.Squeezer.removeRecipe(<liquid:juice>);
 mods.forestry.Squeezer.removeRecipe(<liquid:seed.oil>, [<minecraft:wheat_seeds>]);
 ```
 
-## Recipe Addition
+## Добавление рецепта
 
 ```zenscript
-//mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemOutput);
-//mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
+//mods.forestry.Squeezer.addRecipe(ILiquidStack fluidOutput, IItemStack[] ingredients, int timePerItem, @Optional WeightedItemStack itemput);
+//моды. orestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:redstone>], 120);
 mods.forestry.Squeezer.addRecipe(<liquid:lava>, [<minecraft:obsidian>], 120, <minecraft:redstone> % 20);
 ```
 
-| Parameter   | Type                                                   | description                                   |
-| ----------- | ------------------------------------------------------ | --------------------------------------------- |
-| fluidOutput | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)         | The Recipe's output                           |
-| ingredients | [IItemStack](/Vanilla/Items/IItemStack/)[]             | The Recipe's item input(s)                    |
-| timePerItem | int                                                    | Amount of inputFluid on organic item requires |
-| itemOutput  | [WeightedItemStack](/Vanilla/Items/WeightedItemStack/) | Output multiplier                             |
+| Параметр    | Тип                                                            | описание                                                    |
+| ----------- | -------------------------------------------------------------- | ----------------------------------------------------------- |
+| fluidOutput | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/)                 | Выход рецепта                                               |
+| ингредиенты | [IItemStack](/Vanilla/Items/IItemStack/)[]                     | Вход(ы) рецепта                                             |
+| timePerItem | int                                                            | Количество входной жидкости на органический предмет требует |
+| itemOutput  | [Взвешенный стек предметов](/Vanilla/Items/WeightedItemStack/) | Мультипликатор вывода                                       |
