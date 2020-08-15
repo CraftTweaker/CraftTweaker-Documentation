@@ -4,13 +4,13 @@ A Map, sometimes also called an Associative Array is a data structure that allow
 Unlike an Array however, you can also give each of these item a key to call upon.  
 The DataMap expands [IData](/Vanilla/Data/IData/), so each DataMap is IData, you might need this info later.
 
-## Creating a map:
+## マップの作成:
 
 A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last you'll need to import that interface:  
 `import crafttweaker.data.IData;`
 
-You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
-There is:
+マップに変換できないタイプがあることに気づいたかもしれません (マップは文字列以外の型に変換することもできません) 別の方法があるはずだ!  
+以下があります:
 
 ```zenscript
 import crafttweaker.data.IData;
@@ -34,10 +34,10 @@ val nestedMap = { key1:
                 } as IData;
 ```
 
-## Retrieving Members
+## メンバーを取得中
 
-Unfortunately, Maps created as above are immutable, so you cannot change their members.  
-To retrieve a Map's member you need to know its key name. Then you can do this:
+残念ながら、上記のように作成された地図は不変ですので、メンバーを変更することはできません。  
+マップメンバーを取得するには、マップのキー名を知る必要があります。 次に、以下を実行できます。
 
 ```zenscript
 val mySecondMap = {key1: "value1",
@@ -53,10 +53,10 @@ var k2 = mySecondMap.memberGet("key2") as IData;
 print(k2.asString());
 ```
 
-## Modifying maps
+## 地図の変更
 
-You can add or substract maps from each other to get a new map with changed values.  
-This even works for nested maps!
+互いにマップを追加したり、変更された値を持つ新しいマップを取得することができます。  
+これはネストされたマップでも動作します！
 
 ```zenscript
 val map1 as IData = {
