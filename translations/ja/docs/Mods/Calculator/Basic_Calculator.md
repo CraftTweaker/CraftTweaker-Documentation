@@ -1,21 +1,21 @@
 # Basic Calculator
 
-## Package
+## パッケージ
 ```zenscript
 import mods.calculator.basic;
 ```
 
-## Methods
+## メソッド
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## 加算
 ```zenscript
 basic.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## Removal
+## 削除
 ```zenscript
 basic.removeRecipe(IIngredient output);
 ```
