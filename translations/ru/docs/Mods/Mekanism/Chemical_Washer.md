@@ -1,16 +1,16 @@
-# Chemical Washer
+# Химическая мойка
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Washer through the command `/ct mekrecipes washer`
+Начиная с 9.7.0 меканизма появилась возможность просматривать все рецептные строки Химической Мойки через команду `/ct мекрецептов`
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack outputGas);
+mods.mekanism.chemical.washer.addRecipe(IGasStack inputGas, IGasStack);
 
 mods.mekanism.chemical.washer.addRecipe(<gas:deuterium>, <gas:tritium>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.mekanism.chemical.washer.removeRecipe(IIngredient outputGas, @Optional IIngredient inputGas);
@@ -19,11 +19,11 @@ mods.mekanism.chemical.washer.removeRecipe(<gas:cleanLead>, <gas:lead>);
 mods.mekanism.chemical.washer.removeRecipe(<gas:cleanOsmium>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Указанный входной параметр удалит только тот рецепт, который использует указанный ввод. Пропуск входного параметра удалит все рецепты, которые производят указанный выход.
 
-## Removing all recipes
+## Удаление всех рецептов
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Washer recipes. (This excludes any recipes added via CraftTweaker)
+Меканизм 9.7.0 позволяет удалить все рецепты Химмойки. (Это исключает любые рецепты, добавленные через CraftTweaker)
 
 ```zenscript
 mods.mekanism.chemical.washer.removeAllRecipes();
