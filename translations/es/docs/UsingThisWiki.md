@@ -19,7 +19,7 @@ We use the ZenGetter like this:
 
 A ZenGetter will always return something, in this case a string representing the item's name ("Iron Ingot").
 
-## ZenSetter
+## Ajuste
 
 A ZenSetter works almost the same way as a ZenGetter does, the only difference is that a ZenSetter sets, a ZenGetter gets.  
 Let's stay with our [IItemStack](/Vanilla/Items/IItemStack/), since it also has a ZenSetter called "displayName". We know from the entry that it is of type string.
