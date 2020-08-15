@@ -1,10 +1,10 @@
 # IMateriale
 
-An IMaterial object represents the material a block is made of.
+Un oggetto IMateriale rappresenta il materiale di cui è costituito un blocco.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import crafttweaker.block.IMaterial;`
 
 ## ZenGetters/ZenMethods senza parametri
@@ -24,39 +24,39 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenMethods con parametri
 
-### Check if two IMaterials match
+### Controlla se due IMateriali corrispondono
 
-Uses an IMaterial.  
-Returns a bool.
+Usa un IMateriale.  
+Restituisce un bool.
 
 ```zenscript
 materialObj.matches(IMaterial other);
 ```
 
-## Getting Vanilla Minecraft Materials
+## Ottenere Materiali Minecraft Vaniglia
 
-You can use these methods to get the vanilla minecraft materials
+È possibile utilizzare questi metodi per ottenere i materiali minecraft vaniglia
 
 ```zenscript
 crafttweaker.blocks.IMaterial.air();
 crafttweaker.blocks.IMaterial.anvil();
 crafttweaker.blocks.IMaterial.barrier();
-crafttweaker.blocks.IMaterial.cactus();
-crafttweaker.blocks.IMaterial.cake();
+crafttweaker.blocks.blocks.IMaterial.cactus();
+crafttweaker.blocks.blocks.IMaterial.cake();
 crafttweaker.blocks.IMaterial.carpet();
 crafttweaker.blocks.IMaterial.circuits();
 crafttweaker.blocks.IMaterial.clay();
 crafttweaker.blocks.IMaterial.cloth();
-crafttweaker.blocks.IMaterial.coral();
+crafttweaker. locks.IMaterial.coral();
 crafttweaker.blocks.IMaterial.craftedSnow();
 crafttweaker.blocks.IMaterial.dragonEgg();
 crafttweaker.blocks.IMaterial.fire();
-crafttweaker.blocks.IMaterial.glass();
+crafttweaker.blocks.blocks.IMaterial.glass();
 crafttweaker.blocks.IMaterial.gourd();
 crafttweaker.blocks.IMaterial.grass();
 crafttweaker.blocks.IMaterial.ground();
 crafttweaker.blocks.IMaterial.ice();
-crafttweaker.blocks.IMaterial.iron();
+crafttweaker. locks.IMaterial.iron();
 crafttweaker.blocks.IMaterial.lava();
 crafttweaker.blocks.IMaterial.leaves();
 crafttweaker.blocks.IMaterial.packedIce();
@@ -64,7 +64,7 @@ crafttweaker.blocks.IMaterial.piston();
 crafttweaker.blocks.IMaterial.plants();
 crafttweaker.blocks.IMaterial.portal();
 crafttweaker.blocks.IMaterial.redstoneLight();
-crafttweaker.blocks.IMaterial.rock();
+crafttweaker.blocks.IMaterial. ock();
 crafttweaker.blocks.IMaterial.sand();
 crafttweaker.blocks.IMaterial.snow();
 crafttweaker.blocks.IMaterial.sponge();
