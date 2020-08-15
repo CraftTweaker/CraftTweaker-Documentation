@@ -1,8 +1,8 @@
-# Enchantment Bracket Handler
+# Manejador de brazaletes de encantamiento
 
-The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
+El Enchantment Bracket Handler te da acceso a las definiciones de Enchantment en el juego.
 
-They are referenced in the Enchantment handler this way:
+Se refieren en el manejador de encantamientos de esta manera:
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@ They are referenced in the Enchantment handler this way:
 <enchantment:minecraft:protection>
 ```
 
-If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.
+Si se encuentra el encantamiento, esto devolverá un objeto IEnchantmentDefinition . Por favor, consulte la [entrada respectiva del Wiki](/Vanilla/Enchantments/IEnchantmentDefinition/) para obtener más información sobre lo que puede hacer con estos.
