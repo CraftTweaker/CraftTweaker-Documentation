@@ -1,10 +1,10 @@
 # IItemUpdate
 
-The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) to allow code to be executed whenever the item updates.
+Die IItemUpdateFunktion kann zu einem [Element](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) hinzugefügt werden, damit Code ausgeführt werden kann, wenn das Element aktualisiert wird.
 
 ## Dieses Paket importieren
 
-If you ever feel the need to import this function's class, here you go:
+Wenn Sie jemals das Bedürfnis haben, die Klasse dieser Funktion zu importieren, gehen Sie hier:
 
 ```zenscript
 import mods.contenttweaker.IItemUpdate;
@@ -12,17 +12,17 @@ import mods.contenttweaker.IItemUpdate;
 
 ## Syntax
 
-We have a void function that takes the following parameters (in order)
+Wir haben eine ungültige Funktion, die die folgenden Parameter nimmt (in Reihenfolge)
 
-- An [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) representing the item stack itself.
-- An [IWorld object](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) representing the world the action takes place in.
-- An [IEntity object](/Vanilla/Entities/IEntity/) downcast as far as possible, so you can instanceOf up until [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).
-- An int representing the slot the item currently is in
-- A boolean stating whether or not the item is currently selected.
+- Ein [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) repräsentiert den Gegenstandsstapel selbst.
+- Ein [IWorld-Objekt](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) repräsentiert die Welt in der die Aktion stattfindet.
+- Ein [IEntity Objekt](/Vanilla/Entities/IEntity/) ist so weit wie möglich heruntergegangen, sodass Sie bis [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) instanzieren können.
+- Eine Int, die den Slot repräsentiert, in dem sich der Gegenstand befindet
+- Eine boolesche Angabe ob das Element aktuell ausgewählt ist oder nicht.
 
 ```zenscript
-item.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
-    //CODE GOES HERE!!
-    return;
+item.onItemUpdate = function(itemStack, world, ownerer, slot, isSelected) {
+    //CODE GOES HIER!!
+    zurückkehren;
 }
 ```
