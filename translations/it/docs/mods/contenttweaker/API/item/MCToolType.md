@@ -1,6 +1,6 @@
 # MCToolType
 
-A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
+Un tipo di strumento è usato per identificare che tipo di blocchi uno strumento può mio, o inversamente, che tipo di strumento è necessario per estrarre un determinato blocco.
 
 Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,27 +11,27 @@ mods.contenttweaker.item.MCToolType
 ```
 
 ## Interfacce Implementate
-MCToolType implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+MCToolType implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructors
-Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
+## Costruttori
+Costruisce un oggetto Tipo di strumento. Se uno con il nome dato esiste già, indicheranno internamente lo stesso tipo di strumento. Altrimenti, viene creato un nuovo nome (Lo stesso vale anche per le parentesi!)
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parametro | Tipo    | Descrizione         |
-| --------- | ------- | ------------------- |
-| nome      | Stringa | The name to be used |
+| Parametro | Tipo    | Descrizione      |
+| --------- | ------- | ---------------- |
+| nome      | Stringa | Il nome da usare |
 
 
 
 ## Metodi
 ### getName
 
-Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+Ottiene il nome di questo toolType. The name is what is used in the Bracket expression after the `<tooltype:`
 
-Return type: String
+Tipo di ritorno: Stringa
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Return type: String
 
 ### hashCode
 
-Returns the object's hash code
+Restituisce il codice hash dell'oggetto
 
-Return type: int
+Tipo di restituzione: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,9 +49,9 @@ Return type: int
 
 ### toString
 
-Get the string representation of this type. Is different from commandString!
+Ottieni la rappresentazione stringa di questo tipo. È diverso dalla Stringa di comando!
 
-Return type: String
+Tipo di ritorno: Stringa
 
 ```zenscript
 <tooltype:pickaxe>.toString();
@@ -68,16 +68,16 @@ Return type: String
 ## Operatori
 ### EQUALI
 
-Compares if two given MCToolType objects are equal
+Confronta se due oggetti MCToolType dati sono uguali
 
 ```zenscript
 <tooltype:pickaxe> == o as Object
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parametro | Tipo   | Descrizione      |
-| --------- | ------ | ---------------- |
-| o         | Object | The other object |
+| Parametro | Tipo    | Descrizione     |
+| --------- | ------- | --------------- |
+| o         | Oggetto | L'altro oggetto |
 
 ## Caster
 
