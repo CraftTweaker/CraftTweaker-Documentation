@@ -1,7 +1,7 @@
-# Salt Fission
-**Note: Partially Broken**
+# 塩の<unk>
+**注意：部分的に壊れている**
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.SaltFissionSaltFission`
 
 ## レシピを追加中
