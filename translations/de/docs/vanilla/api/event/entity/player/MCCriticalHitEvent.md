@@ -118,7 +118,7 @@ This set the damage multiplier for the hit. If you set it to 0, then the particl
 myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Parameter | Type  | Description             |
+| Parameter | Type  | Beschreibung            |
 | --------- | ----- | ----------------------- |
 | mod       | float | No description provided |
 
