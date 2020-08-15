@@ -1,11 +1,11 @@
-# Kiln
+# 基尔文
 
 The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
 ## 所属包名
 `mods.atum.Kiln;`
 
-## Blacklist
+## 黑名单
 
 The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
 
