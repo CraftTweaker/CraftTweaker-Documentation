@@ -1,10 +1,10 @@
 # CTRandom
 
-The CTRandom object is only accessible from within CoT [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) objects and allows you to access the world's random number generator.
+Объект CTRandom доступен только из объектов CoT [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) и позволяет получить доступ к генератору случайных чисел в мире.
 
 ## Импорт класса
 
-If you ever want to import the class, here you go:
+Если вы когда-нибудь хотите импортировать класс, вы идете:
 
 ```zenscript
 import mods.contenttweaker.Random;
@@ -12,10 +12,10 @@ import mods.contenttweaker.Random;
 
 ## ZenMethods
 
-The only methods available are for random values, either as boolean or as int.  
-For the latter, you also need to provide an upper bound (the upper bound is exclusive).
+Единственный доступный метод - для случайных значений либо как булевского, либо int.  
+Для последней также необходимо указать верхнюю границу (верхняя граница является исключительной).
 
 ```zenscript
-randomObj.nextBoolean();
+случайный Obj.nextBoolean();
 randomObj.nextInt(int upperBound);
 ```
