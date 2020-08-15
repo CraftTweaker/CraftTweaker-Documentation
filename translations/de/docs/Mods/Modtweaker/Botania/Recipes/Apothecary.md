@@ -2,11 +2,11 @@
 
 The Apothecary package is used for adding or removing recipes to/from the Botania Petal Apothecary.
 
-## Calling
+## Anruf
 
 You can call the Apothecary package using `mods.botania.Apothecary`
 
-## Recipe addition
+## Rezeptzusatz
 
 You can either add recipes using the returned [IItemStack](/Vanilla/Items/IItemStack/) as output parameter, or the name of the botania flower as string. the string name only works for botania flowers.  
 Remember one thing though:  
