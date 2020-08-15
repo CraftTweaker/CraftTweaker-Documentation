@@ -4,7 +4,7 @@ Adding and removing entities from ProjectE's philosopher's stone entity randomiz
 
 Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
 
-## Adding
+## 添加
 
 ### addPeaceful
 
