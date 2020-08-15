@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLiving;`
@@ -12,31 +12,31 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
-## Methods
+## Méthodes
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| ZenGetter           | ZenSetter     | Type de texte                                             |
 | ------------------- | ------------- | --------------------------------------------------------- |
-| attackInterval      |               | int                                                       |
+| attackInterval      |               | Indice                                                    |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| canBeSteered        |               | bool                                                      |
-| canPickUpLoot       | canPickUpLoot | bool                                                      |
-| canSpawnHere        |               | bool                                                      |
+| canBeSteered        |               | booléen                                                   |
+| canPickUpLoot       | canPickUpLoot | booléen                                                   |
+| canSpawnHere        |               | booléen                                                   |
 | getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isColliding         |               | bool                                                      |
-| isLeashed           |               | bool                                                      |
-| isLeftHanded        | isLeftHanded  | bool                                                      |
-| isNoDespawnRequired |               | bool                                                      |
-| maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | float                                                     |
-|                     | moveStrafing  | float                                                     |
-|                     | moveVertival  | float                                                     |
-| renderSizeModifier  |               | float                                                     |
+| isAIDisabled        | isAIDisabled  | booléen                                                   |
+| isAIDisabled        | isAIDisabled  | booléen                                                   |
+| isColliding         |               | booléen                                                   |
+| isLeashed           |               | booléen                                                   |
+| isLeftHanded        | isLeftHanded  | booléen                                                   |
+| isNoDespawnRequired |               | booléen                                                   |
+| maxSpawnedInChunk   |               | Indice                                                    |
+|                     | moveForward   | flottant                                                  |
+|                     | moveStrafing  | flottant                                                  |
+|                     | moveVertival  | flottant                                                  |
+| renderSizeModifier  |               | flottant                                                  |
 
-### ZenMethods
+### Méthodes Zen
 
 #### Play living sound
 
