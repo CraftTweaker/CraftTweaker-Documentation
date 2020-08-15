@@ -122,9 +122,9 @@ nav:
               - MCBiomeSpawnEntry: 'ванильная/api/world/MCBiomeSpawnEntry.md'
   - Моды:
     - Atum 2:
-       - Kiln: 'mods/Atum2/Kiln.md'
+       - Килн: 'mods/Atum2/Kiln.md'
        - Quern: 'mods/Atum2/Quern.md'
-       - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
+       - вращающееся колесо: 'мод/Atum2/SpinningWheel.md'
     - Botany Pots:
       - Обрезать: 'mods/botanypots/Crop.md'
       - Удобрения: 'mods/botanypots/Fertilizer.md'
