@@ -1,6 +1,6 @@
 # Electrolyzer
 
-## Package
+## Paket
 
 `import mods.ic2.Electrolyzer;`
 
