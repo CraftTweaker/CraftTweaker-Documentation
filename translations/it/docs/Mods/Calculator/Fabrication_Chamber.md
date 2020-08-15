@@ -1,22 +1,22 @@
 # Fabrication Chamber
 ## Not fully implimented, only takes one input.
 
-## Package
+## Pacchetto
 ```zenscript
 import mods.calculator.fabricationChamber;
 ```
 
-## Methods
+## Metodi
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
-## Addition
+## Addizione
 ```zenscript
 fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
 
-## Removal
+## Rimozione
 ```zenscript
 fabricationChamber.removeRecipe(IIngredient input);
 ```
