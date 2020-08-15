@@ -5,14 +5,14 @@ The Steam Furnace is a machine that converts an input item into an output item u
 ## Package
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## Méthodes
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
 - **int craftTime** Crafting time for machine to process
 - **int steamCost** Cost of Steam for machine to process
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.steamagerevolution.SteamFurnace.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
