@@ -7,15 +7,15 @@ The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanil
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemUseFinish;`
 
-## Parameters
+## Parameter
 
 The IItemRightClickFunction is a function with the following parameters:
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is used
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) Welt → Die Welt, in der der Spieler ist
 - [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → The entity using the item
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
+Die Funktion muss einen [IItemStack](/Vanilla/Items/IItemStack/) zurückgeben.
 
 ## Beispiel
 
