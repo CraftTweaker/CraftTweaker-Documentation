@@ -1,8 +1,8 @@
 # ZenOperator
 
-A Method annotated with `@ZenOperator` cannot be called by instance.method(parameters) but instead uses Tokens like `+`, `!` and the like.
+Un método anotado con `@ZenOperator` no puede ser llamado por instancia. ethod(parameters) pero en su lugar utiliza fichas como `+`, `!` y similares.
 
-## Example
+## Ejemplo
 
 [CraftTweaker's IData](https://github.com/jaredlll08/CraftTweaker/blob/1.12/CraftTweaker2-API/src/main/java/crafttweaker/api/data/IData.java)
 
@@ -17,12 +17,12 @@ public interface IData {
     @ZenOperator(OperatorType.SUB)
     IData sub(IData other);
 
-    ...
+...
 }
 ```
 
-## What methods can be annotated || Additional Info
+## Qué métodos se pueden anotar || Información adicional
 
-- You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators/).
-- Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
-- You should give the annotation a [ZenOperator value](/Dev_Area/ZenOperators/) (e.g. `OperatorType.ADD`). You can find a list of all possible OperatorTypes [here](/Dev_Area/ZenOperators/).
+- Puede anotar todos los métodos no estáticos. Solo debe anotar un método por [Tipo de operador](/Dev_Area/ZenOperators/).
+- Métodos anotados, al menos aquellos que tienen un token de Asignación asociado, deben devolver el mismo tipo. (¡No hagas Elemento + Elemento = ¡fluido!)
+- Debe dar la anotación un [valor de ZenOperator](/Dev_Area/ZenOperators/) (por ejemplo, `OperatorType.ADD`). Puede encontrar una lista de todos los tipos de Operador posibles [aquí](/Dev_Area/ZenOperators/).
