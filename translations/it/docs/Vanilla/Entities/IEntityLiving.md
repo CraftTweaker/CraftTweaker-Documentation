@@ -1,74 +1,74 @@
 # IEntityLiving
 
-A living Entity is one that has health and that can die.  
-Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
+Un'Entità vivente è quella che ha salute e che può morire.  
+A differenza di [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) , tuttavia, i giocatori non sono oggetti IEnitiyLive!
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.entity.IEntityLiving;`
 
-## Extending [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
+## Estendere [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
 
-IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
+IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). Ciò significa che tutte le funzioni disponibili per gli oggetti [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) sono disponibili anche per gli oggetti IEntityLiving .
 
 ## Metodi
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Tipo                                                      |
-| ------------------- | ------------- | --------------------------------------------------------- |
-| attackInterval      |               | int                                                       |
-| attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| canBeSteered        |               | bool                                                      |
-| canPickUpLoot       | canPickUpLoot | bool                                                      |
-| canSpawnHere        |               | bool                                                      |
-| getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isColliding         |               | bool                                                      |
-| isLeashed           |               | bool                                                      |
-| isLeftHanded        | isLeftHanded  | bool                                                      |
-| isNoDespawnRequired |               | bool                                                      |
-| maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | galleggiante                                              |
-|                     | moveStrafing  | galleggiante                                              |
-|                     | moveVertival  | galleggiante                                              |
-| renderSizeModifier  |               | galleggiante                                              |
+| ZenGetter                    | ZenSetter         | Tipo                                                      |
+| ---------------------------- | ----------------- | --------------------------------------------------------- |
+| attaccoIntervallo di attacco |                   | int                                                       |
+| attacco Bersaglio            | attacco Bersaglio | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| canBeSteered                 |                   | bool                                                      |
+| canPickUpLoot                | canPickUpLoot     | bool                                                      |
+| canSpawnHere                 |                   | bool                                                      |
+| getLeashedToEntity           |                   | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| isAIDisabilitato             | isAIDisabilitato  | bool                                                      |
+| isAIDisabilitato             | isAIDisabilitato  | bool                                                      |
+| isColliding                  |                   | bool                                                      |
+| isLeashed                    |                   | bool                                                      |
+| isLeftHanded                 | isLeftHanded      | bool                                                      |
+| isNoDespawnRequired          |                   | bool                                                      |
+| maxSpawnedInChunk            |                   | int                                                       |
+|                              | moveForward       | galleggiante                                              |
+|                              | moveStrafing      | galleggiante                                              |
+|                              | moveVertival      | galleggiante                                              |
+| renderSizeModifier           |                   | galleggiante                                              |
 
 ### ZenMethods
 
-#### Play living sound
+#### Riproduci suono vivente
 
-Requires no parameters.  
-Returns nothing.
+Non richiede parametri.  
+Restituisce nulla.
 
 ```zenscript
 ebtLiv.playLivingSound();
 ```
 
-#### Spawn explosion particles
+#### Genera particelle di esplosione
 
-Requires no parameters.  
-Returns nothing.
+Non richiede parametri.  
+Restituisce nulla.
 
 ```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
-#### Set the drop chance for an Equipment Slot
+#### Imposta la possibilità di cadere per un Slot Equipaggiamento
 
-Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
-Returns nothing.
+Richiede un oggetto [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) e un galleggiante.  
+Non restituisce nulla.
 
 ```zenscript
-ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
+ebtLiv.setDropChance(IEntityEquipmentSlot slot, galleggiante);
 ```
 
-#### Enable Persistence
+#### Abilita Persistenza
 
-Requires no parameters.  
-Returns nothing.
+Non richiede parametri.  
+Restituisce nulla.
 
 ```zenscript
 ebtLiv.enablePersistence();
@@ -76,8 +76,8 @@ ebtLiv.enablePersistence();
 
 #### Lashes
 
-First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
-Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
+Il primo metodo richiede un oggetto [IEntity](/Vanilla/Entities/IEntity/) , un booleano e non restituisce nulla. Il secondo metodo richiede due booleani e non restituisce nulla.  
+Il terzo metodo richiede un oggetto [IPlayer](/Vanilla/Players/IPlayer/) e restituisce un bool.
 
 ```zenscript
 ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
