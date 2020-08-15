@@ -1,25 +1,25 @@
-# DirectionAxis
+# Axe de direction
 
-Represents a direction axis (X, Y, Z)
+Représente un axe de direction (X, Y, Z)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.util.DirectionAxis
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+DirectionAxis implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Méthodes
 ### getCoordinate
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+Obtient les coordonnées de cet axe en fonction des valeurs fournies, si cet axe est "X", alors il retournera la valeur du paramètre "x"
 
-Returns int
+Renvoie int
 
 ```zenscript
 <directionaxis:x>.getCoordinate(x as int, y as int, z as int);
@@ -28,19 +28,19 @@ Returns int
 
 | Paramètre | Type de texte | Libellé                   |
 | --------- | ------------- | ------------------------- |
-| x         | Indice        | x value of the coordinate |
-| y         | Indice        | y value of the coordinate |
-| Z         | Indice        | z value of the coordinate |
+| x         | Indice        | valeur x de la coordonnée |
+| y         | Indice        | valeur y de la coordonnée |
+| Z         | Indice        | valeur z de la coordonnée |
 
 
 
 ## Propriétés
 
-| Nom                | Type de texte        | Has Getter | Has Setter |
-| ------------------ | -------------------- | ---------- | ---------- |
-| Chaîne de commande | Chaîne de caractères | vrai       | Faux       |
-| horizontal         | boolean              | vrai       | Faux       |
-| Nom                | Chaîne de caractères | vrai       | Faux       |
-| ordinal            | Indice               | vrai       | Faux       |
-| vertical           | boolean              | vrai       | Faux       |
+| Nom                | Type de texte        | A un Getter | A un Setter |
+| ------------------ | -------------------- | ----------- | ----------- |
+| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
+| horizontale        | boolean              | vrai        | Faux        |
+| Nom                | Chaîne de caractères | vrai        | Faux        |
+| ordinal            | Indice               | vrai        | Faux        |
+| verticale          | boolean              | vrai        | Faux        |
 
