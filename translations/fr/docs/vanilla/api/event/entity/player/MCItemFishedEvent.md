@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCItemFishedEvent
@@ -12,22 +12,22 @@ crafttweaker.api.event.entity.player.MCItemFishedEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCItemFishedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
 ```
-| Parameter | Type                                                                                                                            | Description             |
+| Paramètre | Type de texte                                                                                                                   | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCItemFishedEvent](/vanilla/api/event/entity/player/MCItemFishedEvent)> | No description provided |
 
 
 
-## Methods
+## Méthodes
 ### damageRodBy
 
 ```zenscript
 myMCItemFishedEvent.damageRodBy(arg0 as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| arg0      | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| arg0      | Indice        | No description provided |
 
 
 ### getEntityPlayer
@@ -96,9 +96,9 @@ myMCItemFishedEvent.isCanceled();
 myMCItemFishedEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| cancel    | boolean       | No description provided |
 
 
 
