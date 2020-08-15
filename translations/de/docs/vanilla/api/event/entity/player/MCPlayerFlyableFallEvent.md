@@ -1,27 +1,27 @@
 # MCPlayerFlyableFallEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```
 
-## Constructors
+## Konstrukteure
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
+neue crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(Handler als Funktion.Verbraucher<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| Parameter | Type                                                                                                                                          | Beschreibung            |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
+| Parameter | Type                                                                                                                                          | Beschreibung                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | Keine Beschreibung angegeben |
 
 
 
 ## Methoden
 ### getDistance
 
-Returns float
+Rückgabewerte schweben
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
@@ -29,7 +29,7 @@ myMCPlayerFlyableFallEvent.getDistance();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-Returns float
+Rückgabewerte schweben
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,77 +45,77 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-Returns: `Player`
+Rückgaben: `Spieler`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
 ```
 
-### hasResult
+### hasergebnis
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Legt fest, ob dieses Ereignis einen signifikanten Ergebniswert erwartet. Hinweis: Ereignisse mit der HasResult-Anmerkung werden diese Methode automatisch hinzugefügt, um wahr zurückzugeben.
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCPlayerFlyableFallEvent.hasResult();
 ```
 
-### isCancelable
+### isabbrechbar
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Legen Sie fest, ob diese Funktion überhaupt abgebrochen werden kann. Gibt zurück: `Wenn der Zugriff auf setCanceled erlaubt sein sollte
+ Hinweis:
+ Ereignisse mit der abbrechbaren Anmerkung werden diese Methode automatisch hinzugefügt, um true zurückzugeben.`
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCancelable();
 ```
 
-### isCanceled
+### ist abgebrochen
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Legen Sie fest, ob dieses Ereignis abgebrochen wird und nicht mehr ausgeführt werden soll. Rückgabe: `Der aktuell abgebrochene Status`
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCanceled();
 ```
 
-### setCanceled
+### abgebrochen
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
+myMCPlayerFlyableFallEvent.setCanceled(Abbrechen als boolean);
 ```
 
-| Parameter | Type    | Beschreibung            |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parameter | Type    | Beschreibung                 |
+| --------- | ------- | ---------------------------- |
+| abbrechen | boolean | Keine Beschreibung angegeben |
 
 
-### setDistance
+### setDistanz
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistance(distance as float);
+myMCPlayerFlyableFallEvent.setDistance(Entfernung als float);
 ```
 
-| Parameter | Type  | Beschreibung            |
-| --------- | ----- | ----------------------- |
-| distance  | float | No description provided |
+| Parameter | Type  | Beschreibung                 |
+| --------- | ----- | ---------------------------- |
+| distanz   | float | Keine Beschreibung angegeben |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
+myMCPlayerFlyableFallEvent.setMultiplier(Multiplikator als float);
 ```
 
-| Parameter  | Type  | Beschreibung            |
-| ---------- | ----- | ----------------------- |
-| multiplier | float | No description provided |
+| Parameter     | Type  | Beschreibung                 |
+| ------------- | ----- | ---------------------------- |
+| multiplikator | float | Keine Beschreibung angegeben |
 
 
 
