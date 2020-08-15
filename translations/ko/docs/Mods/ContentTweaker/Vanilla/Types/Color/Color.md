@@ -21,6 +21,6 @@ All these Methods return a Color Object.
 
 Nonstatic Methods are not called on the package name but on the Object itself.
 
-| ZenMethod     | Return Type |
-| ------------- | ----------- |
-| getIntColor() | int         |
+| ZenMethod     | 반환 타입 |
+| ------------- | ----- |
+| getIntColor() | int   |
