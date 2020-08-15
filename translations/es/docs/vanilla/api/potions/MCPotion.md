@@ -8,30 +8,30 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.potion.MCPotion
 ```
 
-## Implemented Interfaces
-MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCPotion implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Métodos
 ### getNamePrefixed
 
-Returns String
+Devuelve Cadena
 
 ```zenscript
-myMCPotion.getNamePrefixed(name as String);
+myMCPotion.getNamePrefixed(nombre como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción             |
-| --------- | ------ | ----------------------- |
-| nombre    | Cadena | No description provided |
+| Parámetro | Tipo   | Descripción                   |
+| --------- | ------ | ----------------------------- |
+| nombre    | Cadena | No se proporcionó descripción |
 
 
 
 ## Propiedades
 
-| Nombre           | Tipo                                                                                                | Has Getter | Has Setter |
-| ---------------- | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| commandString    | Cadena                                                                                              | verdad     | falso      |
-| effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | verdad     | falso      |
-| hasInstantEffect | boolean                                                                                             | verdad     | falso      |
+| Nombre           | Tipo                                                                                                  | Tiene Obtén | Tiene Setter |
+| ---------------- | ----------------------------------------------------------------------------------------------------- | ----------- | ------------ |
+| commandString    | Cadena                                                                                                | verdad      | falso        |
+| efectos          | Lista <[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | verdad      | falso        |
+| hasInstantEffect | boolean                                                                                               | verdad      | falso        |
 
