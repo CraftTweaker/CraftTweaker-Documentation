@@ -2,33 +2,33 @@
 
 ## 説明
 
-This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
+この mod はJEIにCraftTweakerのサポートを追加します。 CraftTweakerはJEIをネイティブにサポートするために使用しましたが、1.14の書き換えにより、JEIサポートは独自のmodに取り込まれています。
 
 
 ## パッケージ
 `mods.jei.JEI`
 
-## Item Hiding
+## アイテム非表示
 
-This will hide the given item in JEI. The example given will hide the dirt block in the JEI menu.
+JEIで指定されたアイテムを非表示にします。 与えられた例はJEIメニューの汚れブロックを非表示にします。
 
 ```zenscript
 //mods.jei.JEI.hideItem(IItemStack stack);
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## Category Hiding
+## カテゴリ非表示
 
-This will hide the given category in JEI. The example given will hide the furnace category when looking up recipes in JEI.
+これはJEIの指定されたカテゴリを非表示にします。 与えられた例は、JEIでレシピを検索するときに炉カテゴリを非表示にします。
 
 ```zenscript
 //mods.jei.JEI.hideCategory(String category);
-mods.jei.JEI.hideCategory("minecraft:furnace");
+mods.jei.jei.hideCategory("minecraft:炉");
 ```
 
-The default categories are:
+デフォルトのカテゴリは次のとおりです。
 ```zenscript
-"minecraft:crafting"
+"minecraft:craft"
 "minecraft:furnace"
 "minecraft:smoking"
 "minecraft:blasting"
@@ -39,19 +39,19 @@ The default categories are:
 "jei:information"
 ```
 
-Mods can add more categories though!
+Modはさらにカテゴリを追加できます！
 
-## Add Info
+## 情報を追加
 
-This will add information to the Item that will be shown when looking at usages in JEI!.
+これにより、JEI!で使用状況を見たときに表示されるアイテムに情報が追加されます。
 
-This exact example will add 3 lines of information to the Diamond item.
+この正確な例では、ダイヤモンドのアイテムに3行の情報を追加します。
 
 ```zenscript
-//mods.jei.JEI.addInfo(IItemStack stack, String[] information);
+//mods.jei.JEI.addInfo(IItemStack stack, String[] in
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
 ```
 
-The code above will produce: ![コミットボックス塗りつぶし](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+上記のコードが生成されます: ![コミットボックス塗りつぶし](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
