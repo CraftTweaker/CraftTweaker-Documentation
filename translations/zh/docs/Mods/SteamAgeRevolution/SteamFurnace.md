@@ -5,7 +5,7 @@ The Steam Furnace is a machine that converts an input item into an output item u
 ## 所属包名
 `mods.steamagerevolution.SteamFurnace`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
@@ -20,7 +20,7 @@ mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:sto
 ```
 
 
-## Removal
+## 移除
 
 ```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 
