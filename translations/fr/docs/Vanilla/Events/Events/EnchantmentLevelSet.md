@@ -20,11 +20,11 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 
 ## ZenGetters
 
-| ZenGetter       | ZenSetter | Return Type                              |
+| ZenGetter       | ZenSetter | Type de retour                           |
 | --------------- | --------- | ---------------------------------------- |
 | `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
-| `enchantRow`    |           | int                                      |
-| `power`         |           | int                                      |
-| `item`          |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | int                                      |
-| `level`         | `level`   | int                                      |
+| `enchantRow`    |           | Indice                                   |
+| `power`         |           | Indice                                   |
+| `Élément`       |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `originalLevel` |           | Indice                                   |
+| `level`         | `level`   | Indice                                   |
