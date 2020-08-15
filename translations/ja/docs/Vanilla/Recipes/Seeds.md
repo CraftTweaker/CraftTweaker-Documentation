@@ -1,49 +1,49 @@
-# Seeds
+# 種
 
-Seeds are things you get from punching tall grass.
+種子は背の高い草を殴ることで得られるものです。
 
-## Print all seeds to the log
+## すべてのシードをログに出力する
 
-This command will print all registered seeds to the log.
+このコマンドは登録されている全てのシードをログに出力します。
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+プレイヤーまたはコンソールによって実行される必要がありますが、zsファイルには書き込めません。
 
     1.12
     /ct seeds
     
-    pre-1.12
+    1.12 より前
     /mt seeds
     
 
-## Add a seed drop
+## シードドロップを追加
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
+`アイテム` をシードドロップに追加する。  
+**重量はシードから相対的になり、重量は10（<unk> 10%）！**
 
 ```zenscript
 vanilla.seeds.addSeed(item);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+`アイテム` は [weightedItemStack](/Vanilla/Items/WeightedItemStack/) です。 それはどういう意味ですか？ これは単純に、次のようなパーセンテージを与える必要があることを意味します。
 
 ```zenscript
 //adds carrots with a weight of 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Remove a seed drop
+## シードドロップを削除
 
-Stops `item` from being a seed drop.
+`個のアイテム` がシードドロップになるのを防ぎます。
 
 ```zenscript
 vanilla.seeds.removeSeed(item);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+`アイテム` は [IIngredient](/Vanilla/Variable_Types/IIngredient/) です。
 
-## Retrieve all registered Seeds
+## 登録されているすべてのシードを取得します
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+すべてのアイテムを [weightedItemStack](/Vanilla/Items/WeightedItemStack/) リストとして返します。
 
 ```zenscript
 val seedList = vanilla.seeds.seeds;
