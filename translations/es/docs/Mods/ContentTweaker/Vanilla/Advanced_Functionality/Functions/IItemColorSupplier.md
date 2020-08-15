@@ -1,15 +1,15 @@
 # IItemColorSupplier
 
-The IItemColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
+La función ItemColorSupplier se puede utilizar para proporcionar el [Objeto de Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) que se utilizará para lo que sea.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemColorSupplier;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.IItemColorSupplier;`
 
-## Parameters
+## Parámetros
 
-The IItemColorSupplier Function is a function with following parameters.
+La función ItemColorSupplier es una función con los siguientes parámetros.
 
-- [IItemStack](/Vanilla/Items/IItemStack/) itemStack → the item whose color is being requested.
-- int tintIndex → the tint index, use that however you like. The function needs to return an [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
+- [ItemStack](/Vanilla/Items/IItemStack/) itemStack → el elemento cuyo color está siendo solicitado.
+- int tintIndex → el índice de tinte, use eso como desee. La función necesita devolver un [objeto de color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
