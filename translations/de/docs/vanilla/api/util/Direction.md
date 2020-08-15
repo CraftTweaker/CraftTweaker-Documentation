@@ -52,7 +52,7 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 ```
 
 
-## Properties
+## Eigenschaften
 
 | Name            | Type                                                                   | Has Getter | Has Setter |
 | --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
@@ -60,9 +60,9 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 | axisOffset      | int                                                                    | true       | false      |
 | horizontalAngle | float                                                                  | true       | false      |
 | horizontalIndex | int                                                                    | true       | false      |
-| index           | int                                                                    | true       | false      |
+| indexieren      | int                                                                    | true       | false      |
 | name            | String                                                                 | true       | false      |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
+| entgegengesetzt | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
 | xOffset         | int                                                                    | true       | false      |
 | yOffset         | int                                                                    | true       | false      |
 | zOffset         | int                                                                    | true       | false      |
