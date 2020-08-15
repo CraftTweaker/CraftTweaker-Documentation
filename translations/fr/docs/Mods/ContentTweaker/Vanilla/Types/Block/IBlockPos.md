@@ -2,18 +2,18 @@
 
 An IBlockPos object represents a position in the game.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.BlockPos;`
 
 ## ZenMethods without parameters
 
-| ZenMethod | ZenGetter | Return Type | Description                    |
-| --------- | --------- | ----------- | ------------------------------ |
-| getX()    | x         | int         | Returns the position's X value |
-| getY()    | y         | int         | Returns the position's Y value |
-| getZ()    | z         | int         | Returns the position's Z value |
+| Méthode Zen | ZenGetter | Type de retour | Libellé                        |
+| ----------- | --------- | -------------- | ------------------------------ |
+| getX()      | x         | Indice         | Returns the position's X value |
+| getY()      | y         | Indice         | Returns the position's Y value |
+| getZ()      | z         | Indice         | Returns the position's Z value |
 
 ## ZenMethods with parameters
 
