@@ -1,6 +1,6 @@
 # Basin Throwing
 
-## Addition
+## Ajouter
 
 ```zenscript
 import mods.cuisine.BasinThrowing;
