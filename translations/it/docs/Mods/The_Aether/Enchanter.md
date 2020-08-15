@@ -1,6 +1,6 @@
 # Enchanter
 
-## Package
+## Pacchetto
 
 ```zenscript
 import mods.aether_legacy.Enchanter;
