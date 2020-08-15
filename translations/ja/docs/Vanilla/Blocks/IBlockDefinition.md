@@ -17,21 +17,21 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
+| ZenGetter       | ZenSetter           | 何をするか                                        | タイプ                                                 |
 | --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
 |                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
 | creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                              | float                                               |
-| id              |                     | Returns the block ID                         | string                                              |
-| displayName     |                     | Returns the block's DisplayName              | string                                              |
-|                 | hardness            |                                              | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
-| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
+|                 | defaultSlipperiness |                                              | float型                                              |
+| id              |                     | Returns the block ID                         | 文字列                                                 |
+| displayName     |                     | Returns the block's DisplayName              | 文字列                                                 |
+|                 | 硬さ                  |                                              | int                                                 |
+| 収穫レベル           |                     | Returns the block's harvest level            | int                                                 |
+| harvestTool     |                     | Returns the block's harvest tool             | 文字列                                                 |
 |                 | lightOpacity        |                                              | int                                                 |
 |                 | lightLevel          |                                              | int                                                 |
-|                 | resistance          |                                              | int                                                 |
-| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
+|                 | 抵抗                  |                                              | int                                                 |
+| unlocalizedName |                     | Returns the block's unlocalized Name         | 文字列                                                 |
 | tickRandomly    | tickRandomly        |                                              | bool                                                |
 
 ## ZenMethods
