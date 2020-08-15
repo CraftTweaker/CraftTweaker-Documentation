@@ -1,42 +1,42 @@
 # DropTableBuilder
 
-DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
+DropTableBuilder jest używany do tworzenia ciągów „drops” dla rud i próbek, które obsługują upuszczanie wielu stosów przedmiotów na raz, stosy elementów, które zawierają więcej niż jeden element, oraz ważone łupy.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.DropTableBuilder;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.DropTableBuilder;`
 
-## Methods
+## Metody
 
-These methods allow for creation and modification of a drop table. All builder methods return the builder they were run on, allowing for chaining methods.
+Metody te pozwalają na stworzenie i modyfikację tabeli punktów. Wszystkie metody konstrukcyjne zwracają konstruktora do ich uruchomienia, co pozwala na metody łańcuchowe.
 
-| Method Name     | Description                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| newSlot()       | Creates a new drop table if run statically or adds a new slot to the drop table. |
-| addItem()       | Adds the specified item to the current slot of the drop table.                   |
-| enableFortune() | Enables the current slot to benefit from the fortune enchant.                    |
+| Nazwa metody    | Opis                                                                                                          |
+| --------------- | ------------------------------------------------------------------------------------------------------------- |
+| newSlot()       | Tworzy nową tabelę upuszczania, jeśli uruchamia się statycznie lub dodaje nowe gniazdo do tabeli upuszczania. |
+| dodajelement()  | Dodaje określony element do bieżącego gniazda tabeli upuszczania.                                             |
+| enableFortune() | Umożliwia obecnemu slotowi korzystanie z zaklęcia szczęścia.                                                  |
 
-### Usage:
+### Użycie:
 
 #### `newSlot()`
 
-DropTableBuilder.newSlot() will create a new builder. \<builder\>.newSlot() will finalize the current slot and start a new one.
+DropTableBuilder.newSlot() stworzy nowego budownika. \<builder\>.newSlot() zakończy bieżący slot i rozpocznie nowy.
 
 #### `addItem(String itemStr[, int weight[, int count]])`
 
-`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>. Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
+`itemStr` może być nazwą przedmiotu taką jak \<mod\>:\<item\>:\<meta\>, wpisem słownika rudy takim jak oredykt:\<entry\>lub słowo puste. `waga` kontroluje prawdopodobieństwo spadku przedmiotu za pomocą wzoru \<item weight\>/\<sum of item weights within slot\>. Wartość domyślna 1 w przypadku pominięcia. `count` to ile przedmiotów spada, jeśli wybrano. Wartość domyślna 1 w przypadku pominięcia.
 
 #### `enableFortune()`
 
-Slots that have fortune enabled will select a number of additional items from the slot up to the level of fortune used. Matches vanilla fortune behavior on slots that have only 1 item.
+Sloty, które mają włączone szczęście wybierze liczbę dodatkowych przedmiotów z gniazda do poziomu użytego szczęścia. Dopasuje zachowanie wanilii na slotach, które mają tylko 1 przedmiot.
 
-## Examples using the Builder
+## Przykłady użycia konstruktora
 
-### Creating a drop table
+### Tworzenie tabeli upuszczenia
 
 ```zenscript
-var complextable = DropTableBuilder.newSlot()
+var complex = DropTableBuilder.newSlot()
                     .addItem("minecraft:diamond", 1, 2)
                     .addItem("minecraft:coal", 9)
                     .enableFortune()
@@ -44,36 +44,36 @@ var complextable = DropTableBuilder.newSlot()
                     .addItem("oredict:stone")
                     .newSlot()
                     .addItem("minecraft:cobblestone")
-                    .addItem("empty");
+                    .addItem("pusty");
 ```
 
-This drop table would drop 2 diamonds (10%) or 1 coal (90%) benefiting from fortune, 1 stone (100%), and 1 cobblestone (50%).
+Ta kropla spadnie 2 diamenty (10%) lub 1 węgiel (90%) czerpiący korzyści z fortunu, 1 kamienia (100%) i 1 bruk (50%).
 
 ```zenscript
 var lapistable = DropTableBuilder.newSlot()
-                   .addItem("minecraft:lapis_lazuli", 1, 4)
-                   .addItem("minecraft:lapis_lazuli", 1, 5)
-                   .addItem("minecraft:lapis_lazuli", 1, 6)
-                   .addItem("minecraft:lapis_lazuli", 1, 7)
-                   .addItem("minecraft:lapis_lazuli", 1, 8)
+                   . ddItem("minecraft:lapis_lazuli", 1, 4)
+                   . ddItem("minecraft:lapis_lazuli", 1, 5)
+                   . ddItem("minecraft:lapis_lazuli", 1, 6)
+                   . ddItem("minecraft:lapis_lazuli", 1, 7)
+                   . ddItem("minecraft:lapis_lazuli", 1, 8)
                    .enableFortune();
 ```
 
-This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from fortune.
+Ta kropla stół naśladuje wanilię lapis, spadając 4-8 lapis i czerpie korzyści z fortunu.
 
-### Using a drop table
+### Używanie tabeli upuszczenia
 
-Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
+Budynki są używane, przypisując je jako wartość danych "spadków". Ponieważ wartości danych akceptują tylko ciągi znaków, konstruktor będzie nadawany jako ciąg znaków przy użyciu metody toString.
 
 ```zenscript
 var lapisData = MaterialSystem.getMaterialBuilder()
                   .setColor(12345678).setName("Fake Lapis").setColor(12345678).build()
                   .registerPart("ore").getData();
-var complexData = MaterialSystem.getMaterialBuilder()
+kompleks var = MaterialSystem.getMaterialBuilder()
                     .setColor(12345678).setName("Complex Ore").setColor(12345678).build()
                     .registerPart("ore").getData();
 lapisData.addDataValue("drops",lapistable);
-complexData.addDataValue("drops",complextable+lapistable);
+complexData.addDataValue("drops",complex table+lapistable);
 ```
 
-When 2 builders are added together, a new table is created with the slots from both tables.
+Po dodaniu 2 budowli tworzy się nową tabelę z miejsc z obu tabel.
