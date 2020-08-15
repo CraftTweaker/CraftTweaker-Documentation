@@ -1,14 +1,14 @@
-# LoaderPreprocessor
+# Pré-processeur de chargement
 
-The loader preprocessor will set the script's loader.
+Le préprocesseur du chargeur définira le chargeur du script.
 
-## Call
+## Appel
 
-You call the loader Preprocessor by adding `#loader loaderName` to your script file with `loaderName` being the name of the loader you want to assign the script to.  
-Example: `#loader contenttweaker`
+Vous appelez le préprocesseur du chargeur en ajoutant `#loader loaderName` à votre fichier de script avec `loaderName` qui est le nom du chargeur auquel vous voulez assigner le script.  
+Exemple : `#loader contenttweaker`
 
-## What it does
+## Ce qu'il fait
 
-Scripts with the loader Preprocessor will only be loaded by the loader specified.  
-In the example above, crafttweaker's loader won't touch the file, instead the loader called "contentTweaker" will execute that script.  
-If you don't specify that preprocessor, it will default to being "crafttweaker".
+Les scripts avec le préprocesseur du chargeur ne seront chargés que par le chargeur spécifié.  
+Dans l'exemple ci-dessus, le chargeur de crafttweaker ne touchera pas le fichier, à la place le chargeur appelé "contentTweaker" exécutera ce script.  
+Si vous ne spécifiez pas ce préprocesseur, il sera par défaut d'être "crafttweaker".
