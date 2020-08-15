@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.arcanearchives.GCT;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addRecipe(
@@ -34,7 +34,7 @@ void replaceRecipe(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.arcanearchives.GCT;
