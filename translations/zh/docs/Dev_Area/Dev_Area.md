@@ -1,3 +1,3 @@
 # 开发者区域
 
-This Area is meant only for CrT addon developers. It contains several Explanations of Relevant CrT-Annotations and Types as well as Tips. Examples can be found in the test Project [here](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests).
+此区域仅用于 Ctrt 插件开发者。 其中载有若干关于有关CT-注释和类型以及提要的解释。 示例可以在测试项目 [这里](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests) 中找到。
