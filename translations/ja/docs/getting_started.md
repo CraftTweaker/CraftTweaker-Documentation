@@ -5,17 +5,17 @@ CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is r
 Zenscriptは"トップダウン型"のプログラミング言語です。つまり、`Import`をファイルの一番上に書かなければいけません。また、`変数の宣言`も書く必要があります。しかし、それには制限がありません。`変数の宣言`はどこの行でも書くことができますが、その行の前までの行では`変数`にアクセスすることはできません。
 
 
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
+スクリプト ファイルは `.zs` 接頭辞を持っています。 `.zs.txt` ではないことを確認してください。
 
-## What are scripts
+## スクリプトとは
 
 Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
 
 Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
 
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
+これは、変更が2回適用されるわけではありませんが、スクリプトによる変更が横になる可能性がありますので、いくつかの変更があります。 ローカリゼーションの設定はクライアント側でのみ実行されますが
 
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+サーバーに参加すると、サーバーはクライアントにスクリプトを送信し、クライアントはこれらのスクリプトを実行します。 これは、すべてのスクリプトのないクライアントであることを意味します。 はサーバーに参加して変更を取得することができます(サーバー上のアイテムを無効にする必要がありますが、クライアントに追加ファイルをダウンロードさせたくない場合に便利です)。
 
 
 ### あなたの最初のスクリプトを書こう
@@ -30,11 +30,11 @@ println("Hello world!");
 
 Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+`crafttweaker.log` ファイルは `<gamedir>/logs` 内にあり、プレーンテキストファイルを読むことができるプログラムで読むことができます。
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+スクリプトファイルを編集するには、Notepad++、Sublime TextまたはVScodeを使用することをお勧めしますが、どのプログラムでも使用できます。
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+スクリプトを編集するために使用するプログラムを選択する場合は、Syntaxハイライターが利用できるものを見てください。 一般的なテキストエディタでは、プラグインを使用して ZenScript ハイライト表示がサポートされています。
 
 
 
@@ -52,7 +52,7 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+構文はデバッグ目的で使用され、構文が使用されていない唯一の時間は、コマンドダンプのためです。 メッセージを出力するだけだったら捨てられた情報をコピーして
 
 ### コメント
 
@@ -71,4 +71,4 @@ a
 multiline comment! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+ただ、 `#` のコメントはプリプロセッサにも使用されることに注意してください (ドキュメント化された場合は、TODOはPreProcessorsにリンクしています) 彼らはまだ有効なコメントですが望ましくない副作用を引き起こす可能性があります 
