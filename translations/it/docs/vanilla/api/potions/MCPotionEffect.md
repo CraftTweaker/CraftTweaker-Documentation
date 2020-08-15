@@ -9,7 +9,7 @@ crafttweaker.api.potion.MCPotionEffect
 ```
 
 ## Interfacce Implementate
-MCPotionEffect implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+MCPotionEffect implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Metodi
@@ -18,7 +18,7 @@ MCPotionEffect implements the following interfaces. Ciò significa che ogni meto
 Restituisce un booleano
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+myMCPotionEffect.isReady(durata come int, amplificatore come int);
 ```
 
 | Parametro     | Tipo | Descrizione                 |
@@ -29,10 +29,10 @@ myMCPotionEffect.isReady(duration as int, amplifier as int);
 
 ### newInstance
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Restituisce [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+myMCPotionEffect.newInstance(durata come int, amplificatore come int);
 ```
 
 | Parametro     | Tipo | Descrizione                 | IsOptional | Valore Predefinito |
@@ -44,13 +44,13 @@ myMCPotionEffect.newInstance(duration as int, amplifier as int);
 
 ## Proprietà
 
-| Nome          | Tipo                                                                    | Ha Getter | Ha Setter |
-| ------------- | ----------------------------------------------------------------------- | --------- | --------- |
-| commandString | Stringa                                                                 | vero      | falso     |
-| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | vero      | falso     |
-| displayName   | Stringa                                                                 | vero      | falso     |
-| isBeneficial  | boolean                                                                 | vero      | falso     |
-| isInstant     | boolean                                                                 | vero      | falso     |
-| liquidColor   | int                                                                     | vero      | falso     |
-| nome          | Stringa                                                                 | vero      | falso     |
+| Nome          | Tipo                                                                     | Ha Getter | Ha Setter |
+| ------------- | ------------------------------------------------------------------------ | --------- | --------- |
+| commandString | Stringa                                                                  | vero      | falso     |
+| curativeItems | Lista<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | vero      | falso     |
+| displayName   | Stringa                                                                  | vero      | falso     |
+| isBeneficial  | boolean                                                                  | vero      | falso     |
+| isInstant     | boolean                                                                  | vero      | falso     |
+| liquidColor   | int                                                                      | vero      | falso     |
+| nome          | Stringa                                                                  | vero      | falso     |
 
