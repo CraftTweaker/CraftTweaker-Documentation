@@ -1,21 +1,21 @@
-# Enchanting Plus
+# Verzauberung Plus
 
-The [Enchanting Plus](https://minecraft.curseforge.com/projects/enchanting-plus) allows players to have more control over the enchanting experience. CraftTweaker can be used to apply certain restrictions to this mod.
+Das [Verzaubern Plus](https://minecraft.curseforge.com/projects/enchanting-plus) erlaubt es Spielern, mehr Kontrolle über das verzaubernde Erlebnis zu haben. CraftTweaker kann verwendet werden, um bestimmte Einschränkungen auf diesen Mod anzuwenden.
 
-# Blacklisting Items
+# Blacklisting Elemente
 
-Prevents a specific item from entering the advanced enchanting table.
+Verhindert die Eingabe eines bestimmten Gegenstands in den erweiterten Verzauberungstisch.
 
 ```zenscript
 // mods.eplus.Eplus.blacklistItem(IItemStack item);
 mods.eplus.Eplus.blacklistItem(<minecraft:chainmail_helmet>);
 ```
 
-# Blacklisting Enchantments
+# Blacklisting Verzauberungen
 
-Prevents a specific enchantment from being applied at the advanced enchanting table.
+Verhindert die Anwendung einer bestimmten Verzauberung am fortgeschrittenen Verzauberungstisch.
 
 ```zenscript
-// mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition enchantment);
+// mods.eplus.Eplus.blacklistEnchantment(IEnchantmentDefinition);
 mods.eplus.Eplus.blacklistEnchantment(<enchantment:minecraft:protection>);
 ```
