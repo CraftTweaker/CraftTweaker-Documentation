@@ -1,10 +1,10 @@
-# Refinery
+# Raffineria
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Refinery`
 
-## Adding a Recipe
+## Aggiungere una Ricetta
 
 `Refinery.addRecipe(output, outputItem, input, energy);`
 
@@ -39,7 +39,7 @@ import mods.thermalexpansion.Refinery;
 Refinery.addRecipePotion(<liquid:potion>.withTag({Potion: "minecraft:mundane"}) * 500, <liquid:potion>.withTag({Potion: "cofhcore:leaping4"}) * 100, 100);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
 `Refinery.removeRecipe(input);`
 
