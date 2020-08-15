@@ -1,9 +1,9 @@
-# Dynamic Sword Skills
+# Habilidades de Espada Dinámica
 
-## Syntax
+## Síntesis
 
 ```zenscript
-dss|skillname|level
+dss|nombre de habilidad|nivel
 
 dss|
 ```
