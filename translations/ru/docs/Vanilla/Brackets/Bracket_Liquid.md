@@ -1,20 +1,20 @@
-# Liquid Bracket Handler
+# Обработчик Liquid
 
-The liquid Bracket Handler gives you access to the liquids in the game. It is only possible to get liquids registered in the game, so adding or removing mods may cause issues if you reference the mod's liquids in an liquid Bracket Handler.
+Обработчик с ликвидными брюками дает вам доступ к жидкостям в игре. Можно получить только зарегистрированные в игре жидкости, , так что добавление или удаление модов могут вызвать проблемы, если вы ссылаетесь на жидкости мода на обработчике жидкой скобки.
 
-Liquids are referenced in the Liquid Bracket Handler by like so:
+Жидкости упоминаются в обработчике Liquid Bracket следующим образом:
 
 ```zenscript
-<liquid:liquidname> OR <fluid:liquidname>
+<liquid:liquidname> ИЛИ <fluid:liquidname>
 
-<liquid:lava> OR <fluid:lava>
+<liquid:lava> ИЛИ <fluid:lava>
 ```
 
-If the liquid is found, this will return an ILiquidStack Object. Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack/) for further information on what you can do with these.
+Если жидкость найдена, будет возвращен объект ILiquidStack. Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/Liquids/ILiquidStack/) для получения дополнительной информации о том, что вы можете сделать с этим.
 
-# Getting all Registered liquids
+# Получение всех зарегистрированных жидкостей
 
-You can use the following command to output all registered liquids to the CraftTweaker log
+Вы можете использовать следующую команду для вывода всех зарегистрированных жидкостей в CraftTweaker лог
 
     /ct liquids
     /crafttweaker liquids
