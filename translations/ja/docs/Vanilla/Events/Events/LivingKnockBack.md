@@ -17,7 +17,7 @@ LivingKnockBack Events implement the following interfaces and are able to call a
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter          | ZenSetter  | Type                                  |
+| ZenGetter          | ZenSetter  | タイプ                                   |
 | ------------------ | ---------- | ------------------------------------- |
 | `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
@@ -28,6 +28,6 @@ The following information can be retrieved/set during the event:
 | `originalRatioX`   |            | double型                               |
 | `originalRatioZ`   |            | double                                |
 
-## Notes
+## メモ
 
 When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.
