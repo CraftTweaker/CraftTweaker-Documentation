@@ -1,23 +1,23 @@
-# Heat Sources
+# 発熱元
 
-The *heatsources* package is used for adding or removing Heat Sources for certain machines/processes.
+*ヒートソース* パッケージは、特定のマシン/プロセスに熱源を追加または除去するために使用されます。
 
-**Note: These functions only work for items that have a block form!**
+**注意: これらの機能は、ブロックフォームを持つアイテムに対してのみ機能します!**
 
-## Calling
+## 発信中
 
-You can call the *heatsources* package using `mods.skyresources.heatsources`
+*mods.skyresources.heatotsource* を使用して `ヒートソース` パッケージを呼び出すことができます
 
-## Heat Source Addition
+## 熱源の追加
 
 ```zenscript
-//mods.skyresources.heatsources.add(IItemStack stack, int heatValue);
-mods.skyresources.heatsources.add(<minecraft:ice>, 3);
+//mods.skyresources.heatsources.add(IItemStack stack, int heat Value);
+mods.skyresources.heatotsources.add(<minecraft:ice>, 3);
 ```
 
-## Heat Source Removal
+## 熱源の除去
 
 ```zenscript
-//mods.skyresources.heatsources.remove(IItemStack output);
-mods.skyresources.heatsources.remove(<minecraft:obsidian>);
+//mods.skyresources.heatotsources.remove(IItemStack output);
+mods.skyresources.heatotsources.remove(<minecraft:obsidian>);
 ```
