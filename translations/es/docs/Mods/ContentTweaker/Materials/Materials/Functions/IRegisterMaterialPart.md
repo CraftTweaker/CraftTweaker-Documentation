@@ -1,20 +1,20 @@
-# IRegisterMaterialPart
+# Registrar parte de la historia
 
-The IRegisterMaterialPart function is a fucntion used to register [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) added using a custom [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/).
+La función IRegisterMaterialPart es una fucnción utilizada para registrar [Material Parts](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) añadidos usando un [PartType personalizado](/Mods/ContentTweaker/Materials/Parts/PartType/).
 
-## Importing the package
+## Importando el paquete
 
-If you ever feel the need to import this function's class, here you go:
+Si alguna vez sientes la necesidad de importar la clase de esta función, aquí vas:
 
 ```zenscript
-import mods.contenttweaker.RegisterMaterialPart;
+importar mods.contenttweaker.RegisterMaterialPart;
 ```
 
-## Syntax
+## Síntesis
 
-We have a void function, that takes a [Material Part](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) as input.  
-This is the materialPart that should be registered.  
-You could for example call the [Vanilla Factory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) at this point, but how proceed form this point is really up to you.
+Tenemos una función vacía, que toma como entrada una [Parte del Material](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) .  
+Esta es la parte material que debe ser registrada.  
+Por ejemplo, puede llamar a la [Fábrica de Vanilla](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) en este punto, pero cómo proceder de este punto depende realmente de usted.
 
 ```zenscript
 function(materialPart) {
