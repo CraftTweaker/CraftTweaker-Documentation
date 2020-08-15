@@ -1,14 +1,14 @@
-# Material Builder
+# Materialgenerator
 
 If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
 Doesn't sound that hard, does it?
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialBuilder;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`importieren mods.contenttweaker.MaterialBuilder;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
 
@@ -16,29 +16,29 @@ You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/C
 var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
 ```
 
-## Set the Material's Properties
+## Materialeigenschaften festlegen
 
-You can set these Properties
+Sie können diese Eigenschaften festlegen
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethode              | Parameter                                                        |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | string name                                                      |
-| setColor(color)         | int color                                                        |
+| setName(name)           | string-Name                                                      |
+| setColor(color)         | int Farbe                                                        |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
-| setHasEffect(hasEffect) | boolean hasEffect                                                |
+| setHasEffect(hasEffect) | boolesche Hash-Effekt                                            |
 
-All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
-You can see in the example scripts below what this means.
+All diese Methoden tun 2 Dinge: Erstens verändern sie die Eigenschaft des Baumeisters und zweitens geben sie den modifizierten Builder zurück.  
+Du kannst in den Beispielskripten unten sehen, was dies bedeutet.
 
-## Actually build the Material
+## Baue das Material gerade aus
 
-Before you can build your material, you need to build it:
+Bevor du dein Material bauen kannst, musst du es bauen:
 
 ```zenscript
 mBuilder.build();
 ```
 
-This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
+Dies gibt ein [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Objekt zurück.
 
 ## Skript-Beispiel
 
@@ -51,5 +51,5 @@ builder.setColor(000151);
 builder.setHasEffect(false);
 val urubuntu = builder.build();
 
-val arakantara = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build();
+val arakantara = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build(); build();
 ```
