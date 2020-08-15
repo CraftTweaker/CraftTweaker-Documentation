@@ -1,11 +1,11 @@
 # Accessory
 
-## Package
+## Pakiet
 
 ```zenscript
 import mods.aether_legacy.Accessory;
 ```
-## Usage
+## Użycie
 
 ```zenscript
 Accessory.registerAccessory(IItemStack input, String accessory);
