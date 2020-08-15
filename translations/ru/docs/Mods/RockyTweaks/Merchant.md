@@ -1,19 +1,19 @@
-# Merchant
+# Торговец
 
 ## Команды
 
-The following commands are added to retrieve information about the availible merchant professions & carrers:
+Следующие команды добавляются для получения информации о доступных профессиях торговца & переносов:
 
-- `/ct merchant professions` - outputs a log of valid merchant professions
-- `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
+- `/ct профессии торговца` - выводит журнал действительных профессий торговца
+- `/ct мерчант карьеры [profession]` - выводит журнал действительных карьеры для всех или указанной профессии
 
 ## Пакет
 
-`mods.rockytweaks.Merchant`
+`Торговец mods.rockytweaks.Merchant`
 
 ## Сложение
 
-Trades can be added to a specific merchant profession & carrer.
+Сделки могут быть добавлены к определенной профессии торговца & коррем.
 
 ```zenscript
 // addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
@@ -22,4 +22,4 @@ mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emer
 
 ## Удаление
 
-Merchant trade removal is currently not possible.
+Удаление торговых операций в настоящее время невозможно.
