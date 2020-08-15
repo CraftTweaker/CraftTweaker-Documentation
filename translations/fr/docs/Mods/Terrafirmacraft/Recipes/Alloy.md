@@ -6,7 +6,7 @@ import mods.terrafirmacraft.Alloy;
 import mods.terrafirmacraft.AlloyRecipeBuilder;
 ```
 
-## Addition
+## Ajouter
 - For manipulating Alloy recipes a recipe builder is provided
 ```zenscript
 AlloyRecipeBuilder builder = Alloy.addAlloy(String metal);
