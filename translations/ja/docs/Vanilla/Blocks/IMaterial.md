@@ -7,22 +7,22 @@ An IMaterial object represents the material a block is made of.
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## パラメータのない ZenGetters/ZenMethods
 
 | ZenGetter       | ZenMethod           | Return Type |
 | --------------- | ------------------- | ----------- |
 | blocksLight     | blocksLight()       | bool        |
 | blocksMovement  | blocksMovement()    | bool        |
 | canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
+| mobilityFlag    | getMobilityFlag()   | 文字列         |
+| 液体|<unk>        | isLiquid()          | bool        |
+| 不透明な            | isOpaque()          | bool        |
+| 交換可能            | isReplaceable()     | bool        |
 | solid           | isSolid()           | bool        |
 | toolNotRequired | isToolNotRequired() | bool        |
 |                 | setReplaceable()    | IMaterial   |
 
-## ZenMethods with parameters
+## パラメータ付きのZenMethods
 
 ### Check if two IMaterials match
 
