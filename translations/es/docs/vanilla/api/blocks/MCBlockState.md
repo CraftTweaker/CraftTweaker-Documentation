@@ -1,4 +1,4 @@
-# MCBlockState
+# Estado MCBlockState
 
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
@@ -8,98 +8,98 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.block.MCBlockState
 ```
 
-## Implemented Interfaces
-MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCBlockState implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Métodos
-### getAllowedValuesForProperty
+### Valores permitidos para propiedad
 
-Returns List<String>
+Devuelve la lista<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(name as String);
+myMCBlockState.getAllowedValuesForProperty(nombre como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción             |
-| --------- | ------ | ----------------------- |
-| nombre    | Cadena | No description provided |
+| Parámetro | Tipo   | Descripción                   |
+| --------- | ------ | ----------------------------- |
+| nombre    | Cadena | No se proporcionó descripción |
 
 
 ### getProperties
 
-Returns String[String]
+Devuelve la cadena[String]
 
 ```zenscript
 myMCBlockState.getProperties();
 ```
 
-### getPropertyNames
+### Nombre de la propiedad
 
-Returns List<String>
+Devuelve la lista<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
 ```
 
-### getPropertyValue
+### valor de la propiedad
 
-Returns String
+Devuelve Cadena
 
 ```zenscript
-myMCBlockState.getPropertyValue(name as String);
+myMCBlockState.getPropertyValue(nombre como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción             |
-| --------- | ------ | ----------------------- |
-| nombre    | Cadena | No description provided |
+| Parámetro | Tipo   | Descripción                   |
+| --------- | ------ | ----------------------------- |
+| nombre    | Cadena | No se proporcionó descripción |
 
 
 ### hasProperty
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
-myMCBlockState.hasProperty(name as String);
+myMCBlockState.hasProperty(nombre como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción             |
-| --------- | ------ | ----------------------- |
-| nombre    | Cadena | No description provided |
+| Parámetro | Tipo   | Descripción                   |
+| --------- | ------ | ----------------------------- |
+| nombre    | Cadena | No se proporcionó descripción |
 
 
-### withProperty
+### sin Propiedad
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Devuelve [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(name as String, value as String);
+myMCBlockState.withProperty(nombre como cadena, valor como cadena);
 ```
 
-| Parámetro | Tipo   | Descripción             |
-| --------- | ------ | ----------------------- |
-| nombre    | Cadena | No description provided |
-| valor     | Cadena | No description provided |
+| Parámetro | Tipo   | Descripción                   |
+| --------- | ------ | ----------------------------- |
+| nombre    | Cadena | No se proporcionó descripción |
+| valor     | Cadena | No se proporcionó descripción |
 
 
 
 ## Propiedades
 
-| Nombre             | Tipo                                                          | Has Getter | Has Setter |
-| ------------------ | ------------------------------------------------------------- | ---------- | ---------- |
-| bloque             | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad     | falso      |
-| puede ProvidePower | boolean                                                       | verdad     | falso      |
-| commandString      | Cadena                                                        | verdad     | falso      |
-| hasTileEntity      | boolean                                                       | verdad     | falso      |
-| isSolid            | boolean                                                       | verdad     | falso      |
-| isSticky           | boolean                                                       | verdad     | falso      |
-| nivel de luz       | int                                                           | verdad     | falso      |
-| ticksRandomly      | boolean                                                       | verdad     | falso      |
+| Nombre              | Tipo                                                          | Tiene Obtén | Tiene Setter |
+| ------------------- | ------------------------------------------------------------- | ----------- | ------------ |
+| bloque              | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad      | falso        |
+| puede ProvidePower  | boolean                                                       | verdad      | falso        |
+| commandString       | Cadena                                                        | verdad      | falso        |
+| hasTileEntity       | boolean                                                       | verdad      | falso        |
+| isSolid             | boolean                                                       | verdad      | falso        |
+| isSticky            | boolean                                                       | verdad      | falso        |
+| nivel de luz        | int                                                           | verdad      | falso        |
+| ticksaleatoriamente | boolean                                                       | verdad      | falso        |
 
 ## Casters
 
-| Result type                                                   | Is Implicit |
-| ------------------------------------------------------------- | ----------- |
-| Cadena                                                        | falso       |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad      |
+| Tipo de resultado                                             | Es implícito |
+| ------------------------------------------------------------- | ------------ |
+| Cadena                                                        | falso        |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | verdad       |
 
