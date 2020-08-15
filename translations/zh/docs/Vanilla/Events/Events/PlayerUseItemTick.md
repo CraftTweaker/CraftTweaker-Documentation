@@ -1,31 +1,31 @@
 # PlayerUseItemTick
 
-The PlayerUseItemTick Event is fired each tick a player consistently uses an item.
+玩家每次使用一件物品时，玩家都会被发射。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerUseItemTick`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerUseItemTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseItemTick 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter  | Return Type                              |
-| ---------- | ---------------------------------------- |
-| `canceled` | boolean                                  |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                      |
+| ZenGetter | 返回值类型                                    |
+| --------- | ---------------------------------------- |
+| `已取消`     | boolean                                  |
+| `播放器`     | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `项目`      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `持续时间`    | 整数                                       |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
+- `event.cancel()` 将事件设置为取消
