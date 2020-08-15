@@ -9,6 +9,6 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## What can be done with them?
 
-| name   | type                                  |
+| name   | typ                                   |
 | ------ | ------------------------------------- |
 | entity | [IEntity](/Vanilla/Entities/IEntity/) |
