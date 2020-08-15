@@ -1,6 +1,6 @@
 # Vessel
 
-## Addition
+## Addizione
 
 ```zenscript
 import mods.cuisine.Vessel;
@@ -16,7 +16,7 @@ Vessel.add(IOreEntry input, ILiquidStack inputFluid, IItemStack output, ILiquidS
 Vessel.add(<item:minecraft:dirt>, <liquid:water> * 1000, <item:minecraft:diamond>, null);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 import mods.cuisine.Vessel;
