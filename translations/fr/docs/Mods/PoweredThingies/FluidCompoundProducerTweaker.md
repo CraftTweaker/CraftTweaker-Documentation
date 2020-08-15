@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Compound Producer
 
-### Importing
+### Importation en cours
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidCompoundTweaker as fct;
@@ -22,7 +22,7 @@ fct().clear()
 addRecipe(output: ILiquidStack, inputA: ILiquidStack, inputB: ILiquidStack)
 ```
 
-##### Example
+##### Exemple
 
 ```zenscript
 fct().addRecipe(<liquid:tf-sewage> * 150, <liquid:water> * 300, <liquid:lava> * 100);
