@@ -1,4 +1,4 @@
-# Slice 'n' Splice
+# Fetta 'n' Splice
 
 ## Pacchetto
 
@@ -6,13 +6,13 @@
 
 ## Metodi
 
-**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+**- [IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
+**- [Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)[]** Gli ingredienti. Deve essere compreso tra 1 e 6 ingredienti.
 
-**- int energyCost** How much FE the recipe uses. Defaults to 5000.
+**- int energyCost** Quanto FE usa la ricetta. Predefinito a 5000.
 
-**- float xp** The xp is granted from this recipe. May not be negative.
+**- float xp** L'xp è concesso da questa ricetta. Non può essere negativo.
 
 ## Addizione
 
