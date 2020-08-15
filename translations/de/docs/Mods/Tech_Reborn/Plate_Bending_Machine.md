@@ -1,6 +1,6 @@
-# Plate Bending Machine
+# Plattenbiegemaschine
 
-## Importing the Package
+## Paket wird importiert
 `mods.techreborn.plateBendingMachine`
 
 ## Rezepte hinzufügen
@@ -10,6 +10,6 @@ mods.techreborn.plateBendingMachine.addRecipe(IItemStack output1, IIngredient in
 
 ## Rezepte entfernen
 ```zenscript
-mods.techreborn.plateBendingMachine.removeRecipe(IItemStack output);
+mods.techreborn.plateBendingMachine.removeRecipe(IItemStack Ausgabe);
 mods.techreborn.plateBendingMachine.removeAll();
 ```
