@@ -18,10 +18,10 @@ PlayerVisibilityEvent Events implement the following interfaces and are able to 
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter    | ZenSetter          | Type      |
-| ------------ | ------------------ | --------- |
-| `visibility` |                    | double    |
-|              | `modifyVisibility` | See note. |
+| ZenGetter    | ZenSetter          | Type de texte |
+| ------------ | ------------------ | ------------- |
+| `visibility` |                    | double        |
+|              | `modifyVisibility` | See note.     |
 
 ## Note
 
