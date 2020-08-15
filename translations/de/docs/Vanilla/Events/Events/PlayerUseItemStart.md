@@ -23,8 +23,8 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ---------- | ---------------------------------------- |
 | `canceled` | boolean                                  |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `eintrag`  | [IItemStack](/Vanilla/Items/IItemStack/) |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled
