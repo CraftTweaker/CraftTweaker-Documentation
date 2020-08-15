@@ -11,7 +11,7 @@ crafttweaker.api.block.MCBlock
 ## メソッド
 ### canSpawnInBlock
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -19,7 +19,7 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+戻り値 [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
@@ -28,14 +28,14 @@ myMCBlock.getDefaultState();
 
 ## プロパティー
 
-| 名称             | タイプ  | Has Getter | Has Setter |
-| -------------- | ---- | ---------- | ---------- |
-| lootTable      | 文字列型 | true       | false      |
-| translationKey | 文字列型 | true       | false      |
+| 名称             | タイプ  | ゲッターあり | セッターあり |
+| -------------- | ---- | ------ | ------ |
+| lootTable      | 文字列型 | true   | false  |
+| translationKey | 文字列型 | true   | false  |
 
-## Casters
+## キャスト
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| 文字列型        | false       |
+| 結果の種類 | 暗黙的   |
+| ----- | ----- |
+| 文字列型  | false |
 
