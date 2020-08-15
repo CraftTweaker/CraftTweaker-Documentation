@@ -1,3 +1,3 @@
-# Developer Area
+# 開発者エリア
 
-This Area is meant only for CrT addon developers. It contains several Explanations of Relevant CrT-Annotations and Types as well as Tips. Examples can be found in the test Project [here](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests).
+このエリアはCrTアドオン開発者向けのものです。 これは、関連するCrT-AnnotationsとTypesのいくつかの説明とヒントが含まれています。 テストプロジェクト [はこちら](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests) にあります。
