@@ -2,10 +2,10 @@
 
 The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.item.ItemBuilder
 ```
@@ -20,7 +20,7 @@ Creates a new ItemBuilder. Remember that this will _not_ create a new block in t
 new mods.contenttweaker.item.ItemBuilder();
 ```
 
-## Methods
+## メソッド
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -30,7 +30,7 @@ new ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
+| パラメータ            | タイプ  | 説明                                   |
 | ---------------- | ---- | ------------------------------------ |
 | resourceLocation | 文字列型 | The resource path to give this block |
 
@@ -48,7 +48,7 @@ new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGrou
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| Parameter | Type                                                                              | Description                               |
+| パラメータ     | タイプ                                                                               | 説明                                        |
 | --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
 | itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
 
@@ -66,9 +66,9 @@ new ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Parameter | Type | Description            |
-| --------- | ---- | ---------------------- |
-| maxDamage | int  | The maximum stack size |
+| パラメータ     | タイプ | 説明                     |
+| --------- | --- | ---------------------- |
+| maxDamage | int | The maximum stack size |
 
 
 ### withMaxStackSize
@@ -84,9 +84,9 @@ new ItemBuilder().withMaxStackSize(maxStackSize as int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| Parameter    | Type | Description            |
-| ------------ | ---- | ---------------------- |
-| maxStackSize | int  | The maximum stack size |
+| パラメータ        | タイプ | 説明                     |
+| ------------ | --- | ---------------------- |
+| maxStackSize | int | The maximum stack size |
 
 
 ### withNoRepair
@@ -112,9 +112,9 @@ new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| レア度   | 文字列型 | The rarity |
 
 
 ### withType
