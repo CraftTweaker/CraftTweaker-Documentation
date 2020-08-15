@@ -2,40 +2,40 @@
 
 ## パッケージ
 
-To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
+フルパスを明確にせずに `ふるい` にアクセスするには、以下のようにスクリプトの最上部にあるパッケージをインポートできます。
 
 ```zenscript
-import mods.exnihilocreatio.Sieve;
+import mods.exnihilocreatioSieve;
 ```
 
 ## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ブロック** 出力をドロップするブロック。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** ブロックからドロップするアイテム。
+- **浮動小数点数** 確率は0-1の間でなければなりません。
 
-## String Mesh
+## ストリングメッシュ
 
 ```zenscript
 Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## フリントメッシュ
 
 ```zenscript
 Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## 鉄メッシュ
 
 ```zenscript
 Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## ダイヤモンドメッシュ
 
 ```zenscript
 Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
