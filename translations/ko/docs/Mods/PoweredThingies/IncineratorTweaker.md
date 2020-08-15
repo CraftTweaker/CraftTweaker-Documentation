@@ -24,7 +24,7 @@ addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 
 `power` represents the total number of power units (RF, T, or FE) the input item will generate.
 
-##### Example
+##### 예제
 
 ```zenscript
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
