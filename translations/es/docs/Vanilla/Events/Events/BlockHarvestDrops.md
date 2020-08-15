@@ -19,14 +19,14 @@ BlockHarvestDrops Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter    | Type                                             |
+| ZenGetter      | Ajuste       | Tipo                                             |
 | -------------- | ------------ | ------------------------------------------------ |
 | `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
-| `isPlayer`     |              | bool                                             |
-| `silkTouch`    |              | bool                                             |
+| `isPlayer`     |              | pluma                                            |
+| `silkTouch`    |              | pluma                                            |
 | `fortuneLevel` |              | int                                              |
-| `drops`        | `drops`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
-| `dropChance`   | `dropChance` | float                                            |
+| `gotas`        | `gotas`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
+| `dropChance`   | `dropChance` | flotante                                         |
 
 ## Adding an item to the list
 
