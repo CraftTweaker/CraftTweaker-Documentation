@@ -1,20 +1,20 @@
-# Liquid Bracket Handler
+# Obsługa wspornika z ciekłym wspornikiem
 
-The liquid Bracket Handler gives you access to the liquids in the game. It is only possible to get liquids registered in the game, so adding or removing mods may cause issues if you reference the mod's liquids in an liquid Bracket Handler.
+Obsługa wspornika cieczy daje Ci dostęp do cieczy w grze. Możliwe jest tylko zarejestrowanie płynów w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do cieczy moda w uchwycie nawiasów płynnych.
 
-Liquids are referenced in the Liquid Bracket Handler by like so:
+Ciecze są przywoływane w uchwycie wspornika cieczy w taki sposób:
 
 ```zenscript
-<liquid:liquidname> OR <fluid:liquidname>
+<liquid:liquidname> LUB <fluid:liquidname>
 
-<liquid:lava> OR <fluid:lava>
+<liquid:lava> LUB <fluid:lava>
 ```
 
-If the liquid is found, this will return an ILiquidStack Object. Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack/) for further information on what you can do with these.
+Jeśli płyn zostanie znaleziony, zwróci obiekt ILiquidStack. Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack/) for further information on what you can do with these.
 
-# Getting all Registered liquids
+# Uzyskiwanie wszystkich zarejestrowanych płynów
 
-You can use the following command to output all registered liquids to the CraftTweaker log
+Możesz użyć następującej komendy do wysyłania wszystkich zarejestrowanych płynów do dziennika CraftTweaker
 
     /ct liquids
     /crafttweaker liquids
