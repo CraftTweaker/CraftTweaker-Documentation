@@ -17,7 +17,7 @@ myMCPotionEffectInstance.addCurativeItem(stack as crafttweaker.api.item.IItemSta
 
 | Parameter | Type                                                              | Beschreibung            |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### combine
@@ -49,9 +49,9 @@ Returns boolean
 myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Parameter | Type                                                              | Beschreibung            |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### setCurativeItems
@@ -60,21 +60,21 @@ myMCPotionEffectInstance.isCurativeItem(stack as crafttweaker.api.item.IItemStac
 myMCPotionEffectInstance.setCurativeItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter | Type                                                                | Beschreibung            |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| Parameter   | Type                                                                | Beschreibung            |
+| ----------- | ------------------------------------------------------------------- | ----------------------- |
+| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type                                                                          | Has Getter | Has Setter |
 | ------------- | ----------------------------------------------------------------------------- | ---------- | ---------- |
 | ambient       | boolean                                                                       | true       | false      |
-| amplifier     | int                                                                           | true       | false      |
-| duration      | int                                                                           | true       | false      |
+| verstärker    | int                                                                           | true       | false      |
+| dauern        | int                                                                           | true       | false      |
 | effectName    | String                                                                        | true       | false      |
-| potion        | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
+| trank         | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | true       | false      |
 | showIcon      | boolean                                                                       | true       | false      |
 | showParticles | boolean                                                                       | true       | false      |
 
