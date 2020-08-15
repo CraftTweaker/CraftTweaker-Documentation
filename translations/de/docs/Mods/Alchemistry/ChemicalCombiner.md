@@ -1,8 +1,8 @@
 # Chemical Combiner
 
-# Package
+# Paket
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchemistry.Kombinator
 ```
 
 ## Methoden
@@ -19,7 +19,7 @@ mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
      <alchemistry:element:5>]);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 mods.alchemistry.Combiner.removeRecipe(IItemStack output);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
