@@ -3,7 +3,7 @@
 ## パッケージ
 
 ```zenscript
-import mods.aether_legacy.Freezer;Freezer;
+import mods.aether_legacy.Freezer;フリーザ;
 ```
 ## 使用法
 
