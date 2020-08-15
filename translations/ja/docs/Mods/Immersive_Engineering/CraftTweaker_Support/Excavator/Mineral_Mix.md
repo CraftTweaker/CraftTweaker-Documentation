@@ -1,52 +1,52 @@
-# Mineral Mix
+# ミネラルミックス
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues (like casting an Array). So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
+何か問題(配列のキャストなど)が発生した場合は、パッケージをインポートする必要があるかもしれません。 申し訳ありませんよりも安全で、インポート `import mods.immysiveengineering.MineralMix;` を追加してください。
 
-## Fail Chance
+## 失敗のチャンス
 
-You can get and set the failchance for the Mineralmix using the failChance [ZenSetter/Getter] on the object.
+オブジェクトのfailChance [ZenSetter/Getter] を使用して、Mineralmix のfailchance を取得および設定できます。
 
-## Get Mineral
+## 鉱物を入手
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| 必須 | タイプ | データタイプ |
+| -- | --- | ------ |
+| 必須 | 名称  | 文字列    |
 
 ```zenscript
-//Example:
+//例:
 Excavator.getMineral(String Name);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 ```
 
-## Add Ore
+## 鉱石を追加
 
-| Required | Type   | Data Type |
-| -------- | ------ | --------- |
-| Required | Ore    | string    |
-| Required | Chance | string    |
+| 必須 | タイプ  | データタイプ |
+| -- | ---- | ------ |
+| 必須 | 鉱石   | 文字列    |
+| 必須 | チャンス | 文字列    |
 
 ```zenscript
 mineralMixObject.addOre("oreIron", 0.5);
 ```
 
-You will need to use the oredict names.
+あなたはオレディクトの名前を使用する必要があります。
 
-## Remove Ore
+## 鉱石を削除
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Ore  | string    |
+| 必須 | タイプ | データタイプ |
+| -- | --- | ------ |
+| 必須 | 鉱石  | 文字列    |
 
 ```zenscript
 mineralMixObject.removeOre("oreIron");
 ```
 
-## Fail Chance Getter/Setter
+## 失敗のチャンス ゲッター/セッター
 
-### Example
+### 例
 
 ```zenscript
 //Getter
@@ -56,7 +56,7 @@ mineralMixObject.failchance;
 mineralMixObject.failchance = 0.5;
 ```
 
-## Full Example
+## 完全な例
 
 ```zenscript
 //Example:
