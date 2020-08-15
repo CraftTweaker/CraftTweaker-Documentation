@@ -19,9 +19,9 @@ PlayerSleepInBed Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | Type de retour                       |
 | --------- | ------------------------------------ |
-| `x`       | int                                  |
-| `y`       | int                                  |
-| `z`       | int                                  |
+| `x`       | Indice                               |
+| `y`       | Indice                               |
+| `z`       | Indice                               |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
