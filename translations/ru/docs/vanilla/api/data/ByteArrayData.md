@@ -2,39 +2,39 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.data.ByteArrayData
 ```
 
-## Implemented Interfaces
-ByteArrayData implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+ByteArrayData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
-## Constructors
+## Конструкторы
 ```zenscript
 new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| Parameter | Тип    | Описание                |
-| --------- | ------ | ----------------------- |
-| internal  | byte[] | No description provided |
+| Параметр   | Тип    | Описание             |
+| ---------- | ------ | -------------------- |
+| внутренняя | байт[] | Описание отсутствует |
 
 
 
-## Methods
-### add
+## Методы
+### Добавить
 
 ```zenscript
 [4, 1, 2].add(value as crafttweaker.api.data.IData);
 [4, 1, 2].add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| Параметр | Тип                                                    | Описание                       |
+| -------- | ------------------------------------------------------ | ------------------------------ |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению в список |
 
 
 
@@ -43,10 +43,10 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| Параметр | Тип                                                    | Описание                                                                  |
+| -------- | ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| index    | int                                                    | Индекс к добавлению.  Индексы последующих элементов будут увеличены на 1. |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению в список                                            |
 
 
 ### clear
@@ -68,12 +68,12 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Параметр | Тип | Описание            |
+| -------- | --- | ------------------- |
+| index    | int | The index (0-based) |
 
 
-### remove
+### удалить
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -84,9 +84,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Параметр | Тип | Описание            |
+| -------- | --- | ------------------- |
+| index    | int | The index (0-based) |
 
 
 ### set
@@ -100,16 +100,16 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Параметр | Тип                                                    | Описание                   |
+| -------- | ------------------------------------------------------ | -------------------------- |
+| index    | int                                                    | The index to set (0-based) |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Свойства
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Название | Тип | Имеет Getter | Имеет Setter |
+| -------- | --- | ------------ | ------------ |
+| size     | int | true         | false        |
 
