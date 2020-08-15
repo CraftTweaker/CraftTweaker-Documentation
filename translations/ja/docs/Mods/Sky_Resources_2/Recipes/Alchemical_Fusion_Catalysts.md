@@ -1,21 +1,21 @@
-# Alchemical Fusion Catalysts
+# 錬金術核融合触媒format@@0
 
-The *catalysts* package is used for adding or removing catalysts for Alchemical Fusion.
+*触媒* パッケージは、錬金術用触媒の追加または除去に使用されます。
 
-## Calling
+## 発信中
 
-You can call the *catalysts* package using `mods.skyresources.catalysts`
+*触媒* パッケージは、 `mods.skyresources.触媒`を使用して呼び出すことができます。
 
-## Catalyst Addition
+## 触媒の追加
 
 ```zenscript
-//mods.skyresources.catalysts.add(IItemStack stack, float value);
-mods.skyresources.catalysts.add(<minecraft:diamond>, 4.20);
+//mods.skyresources.atalysts.add(IItemStack stack, float value);
+mods.skyresources.atalysts.add(<minecraft:diamond>, 4.20);
 ```
 
-## Catalyst Removal
+## 触媒除去
 
 ```zenscript
-//mods.skyresources.catalysts.remove(IItemStack output);
-mods.skyresources.catalysts.remove(<skyresources:alchemyitemcomponent:2>);
+//mods.skyresources.atalists.remove(IItemStack output);
+mods.skyresources.atalysts.remove(<skyresources:alchemyitemcomponent:2>);
 ```
