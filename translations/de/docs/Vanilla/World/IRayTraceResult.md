@@ -13,7 +13,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 All you can do is retrieve information from these objects, here's which:  
 Be careful though, since all getters that do not return a bool can return `null`!
 
-| name     | type                                   |
+| name     | typ                                    |
 | -------- | -------------------------------------- |
 | isMiss   | bool                                   |
 | isEntity | bool                                   |
