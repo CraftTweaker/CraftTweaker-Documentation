@@ -1,6 +1,6 @@
 # ZenOperator
 
-A Method annotated with `@ZenOperator` cannot be called by instance.method(parameters) but instead uses Tokens like `+`, `!` and the like.
+Eine Methode, die mit `@ZenOperator` kommentiert wurde, kann nicht per Beispiel aufgerufen werden. ethod(Parameter), sondern verwendet stattdessen Tokens wie `+`, `!` und ähnliches.
 
 ## Beispiel
 
@@ -17,12 +17,12 @@ public interface IData {
     @ZenOperator(OperatorType.SUB)
     IData sub(IData other);
 
-    ...
+...
 }
 ```
 
-## What methods can be annotated || Additional Info
+## Welche Methoden können kommentiert werden || Zusätzliche Informationen
 
-- You can annotate all nonstatic methods. You should only annotate one method per [Operator Type](/Dev_Area/ZenOperators/).
-- Annotated methods, at least those which have an associated Assign token, should return the same type. (Don't do Item + Item = fluid!)
-- You should give the annotation a [ZenOperator value](/Dev_Area/ZenOperators/) (e.g. `OperatorType.ADD`). You can find a list of all possible OperatorTypes [here](/Dev_Area/ZenOperators/).
+- Sie können alle nicht-statischen Methoden kommentieren. Sie sollten nur eine Methode pro [Operator Typ](/Dev_Area/ZenOperators/) kommentieren.
+- Annotierte Methoden, zumindest solche, die einen zugeordneten Token haben, sollten den gleichen Typ zurückgeben. (Element + Element nicht = Flüssig!)
+- Sie sollten der Anmerkung einen [ZenOperator-Wert geben](/Dev_Area/ZenOperators/) (z.B. `OperatorType.ADD`). Eine Liste aller möglichen Operatortypen [finden Sie hier](/Dev_Area/ZenOperators/).
