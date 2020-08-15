@@ -32,7 +32,7 @@ It might be required for you to import the package if you encounter any issues (
   </tr>
 </table>
 
-## ZenMethods
+## ZenMethoden
 
 - int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
 - List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
