@@ -1,7 +1,7 @@
-# Supercooler
+# Суперкрушитель
 
-## Importing the Package
-`mods.nuclearcraft.Supercooler`
+## Импортирование пакета
+`mods.nuclearcraft.Суперкрушитель`
 
 ## Добавление рецептов
 ```zenscript
