@@ -1,4 +1,4 @@
-# Advanced Recipes
+# Ricette Avanzate
 
 ## Pacchetto
 
@@ -7,37 +7,37 @@ import mods.ic2.AdvRecipes;
 ```
 
 ## Tipi di Ricette
-There are several types of recipes:
+Ci sono diversi tipi di ricette:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### Ricette A Forma
+Le ricette a forma sono ricette, dove importa, quale elemento entra in quale slot. Ad esempio, non si può solo organizzare 7 stack di diverse dimensioni di lingotti di ferro in qualsiasi modo per creare leggings di ferro. La forma conta, così è una ricetta sagomata.
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### Ricette Senza Forma
+Le ricette senza forma sono ricette, dove solo gli oggetti che mettete nella materia della griglia di creazione, mentre la forma non è importante. Ad esempio, colorante blu e giallo creano colorante verde. Questa ricetta non si preoccupa di dove hai messo quale articolo.
 
-## Add Recipes
+## Aggiungi Ricette
 
 ### addShaped
 ```zenscript
-mods.ic2.AdvRecipes.addShaped(output,inputs);
+mods.ic2.AdvRecipes.addShaped(output,input);
 ```
 
-This creates a shaped recipe for `output` using `inputs` as Ingredients.
+Questo crea una ricetta sagomata per `output` utilizzando `ingressi` come ingredienti.
 
-`output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)\[][\] (see below)
+`output` è un [IItemStack](/Vanilla/Items/IItemStack/)  
+`ingressi` è un [IIngrediente](/Vanilla/Variable_Types/IIngredient/)\[][\] (vedi sotto)
 
 `inputs` is a 2 Dimensional [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array.  
-So the recipe for Iron Leggings would be written as `[[iron,iron,iron],[iron,null,iron],[iron,null,iron]]`  
-If that looks to confusing, try splitting the arrays up into one array per line
+Quindi la ricetta per i Leggings di Ferro sarebbe stata scritta come `[[ferro, ferro,ferro],[ferro,null,ferro],[ferro, ull,iron]]`  
+Se sembra confusione, prova a dividere gli array in un array per riga
 ```zenscript
 val iron = <minecraft:iron_ingot>;
 val leggings = <minecraft:iron_leggings>;
 
-AdvRecipes.addShaped(leggings,
- [[iron * 5,iron * 7,iron * 5],
-  [iron * 3,null,iron * 3],
-  [iron,null,iron]]);
+AdvRecipes. ddShaped(leggings,
+ [[ferro * 5,ferro * 7,ferro * 5],
+  [ferro * 3,null,ferro * 3],
+  [ferro,null,ferro]]);
 ```
 
 ### addShapeless
@@ -45,15 +45,15 @@ AdvRecipes.addShaped(leggings,
 mods.ic2.AdvRecipes.addShapeless(output,inputs)
 ```
 
-This creates a shapeless stacked recipe for `output` using `inputs` as Ingredients.
+Questo crea una ricetta impilata senza forma per `output` utilizzando `ingressi` come ingredienti.
 
-`output` is an [IItemStack](/Vanilla/Items/IItemStack/)  
-`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[]  (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
+`output` è un [IItemStack](/Vanilla/Items/IItemStack/)  
+`inputs` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] (e.g. [<minecraft:dye:1>,<minecraft:dye:2>])
 
 ### addHidden
 ```zenscript
-mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredients);
-mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredients);
+mods.ic2.AdvRecipes.addHiddenShapeless(IItemStack output, IIngredient[] ingredienti);
+mods.ic2.AdvRecipes.addHiddenShaped(IItemStack output, IIngredient[][] ingredienti);
 ```
 
-This creates a shaped or shapeless stacked recipe for `output` using `inputs` as Ingredients that is hidden. 
+Questo crea una ricetta impilata sagomata o senza forma per `output` utilizzando `ingressi` come Ingredienti nascosti. 
