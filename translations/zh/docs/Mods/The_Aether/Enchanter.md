@@ -3,13 +3,13 @@
 ## 所属包名
 
 ```zenscript
-import mods.aether_legacy.Enchanter;
+导入 mods.aether_legacy.附魔员；
 ```
 ## 用法
 
 ```zenscript
-Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
-// repairing tools and stuff
-Enchanter.registerEnchantment(IItemStack repair, int timeRequired);
-Enchanter.registerEnchanterFuel(IItemStack input, int timeGiven);
+Enchancter.registerEnchantment(StemStack input, IItemStack output, int time Requireed);
+// 维修工具和物品
+Enchanter.registerEnchantment(IItemStack reparation, int time);
+Enchanter.registerEnchanterFuel(ItemStack input, int timeGiven);
 ```
