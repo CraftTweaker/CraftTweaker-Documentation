@@ -1,116 +1,116 @@
-# MaterialSystem
+# 材料系统
 
-The MaterialSystem is used to create new or retrieve existing Materials from within CT.
+材料系统用来创建新材料或从CT内部检索现有材料。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialSystem;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.MaterialSystem;`
 
 ## [IPartType](/Mods/ContentTweaker/Materials/Parts/PartType/)
 
-### Create
+### 创建
 
 ```zenscript
-createPartType(String name, IRegisterMaterialPart registerMaterialPart)
+createPartType(名称, IRegisterMaterialPart registerMaterialPart)
 ```
 
-Required Parameters:
+所需参数：
 
-- String name: The part type's name → e.g. "dense_gear"
-- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → A function that handles how the Material parts will be created.
+- 字符串名称：部件类型的名称 -> 例如，"dense_gear"
+- [IRegisterMaterialPart](/Mods/ContentTweaker/Materials/Materials/Functions/IRegisterMaterialPart/) registerMaterialPart → 处理如何创建材料零件的函数。
 
-### Retrieve
+### 获取
 
 ```zenscript
-getPartType(String name);
+getPartType(String名称)；
 ```
 
-Required Parameters:
+所需参数：
 
-- String name: The part type's name → e.g. "gear" For a list of all available part types check [the part type page](/Mods/ContentTweaker/Materials/Parts/PartType/).
+- 字符串名称：部件类型的名称 -> 例如 "gear" 若要列出所有可用的部件类型，请检查 [部件类型页面](/Mods/ContentTweaker/Materials/Parts/PartType/)。
 
-## [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/)
+## [镜像](/Mods/ContentTweaker/Materials/Materials/Material/)
 
-### Create
+### 创建
 
-Unlike the PartType, you cannot directly create a Material, instead you need to use a MaterialBuilder. Check the [MaterialBuilder entry](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) for info on what exactly to do with these.
+不同于 PartType，您不能直接创建材料，而是需要使用材料生成器。 查看 [MaterialBuilder 条目](/Mods/ContentTweaker/Materials/Materials/Material_Builder/) 了解如何处理这些条目。
 
 ```zenscript
 val MB MaterialSystem.getMaterialBuilder();
 MB.setName("Urubuntium");
 MB.setColor(0);
 MB.setHasEffect(false);
-var builtMaterial = MB.build();
+var buildtMaterial = MB.build();
 ```
 
-### Retrieve
+### 获取
 
 ```zenscript
-getMaterial(String name);
+getMaterial(String名称)；
 ```
 
-Required Parameters:
+所需参数：
 
-- String name: The Material's name → e.g. "Platinum"
+- 字符串名称：材料的名称 -> 例如："Platinum"
 
 ## [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)
 
-### Create
+### 创建
 
-Unlike the PartType, you cannot directly create a Part, instead you need to use a PartBuilder. Check the [Part entry](/Mods/ContentTweaker/Materials/Parts/Part/) for info on what exactly to do with these.
-
-```zenscript
-val PB = MaterialSystem.getPartBuilder();
-```
-
-### Retrieve
+不同于 PartType，您不能直接创建零件，而是需要使用 PartBuilder。 检查 [元件条目](/Mods/ContentTweaker/Materials/Parts/Part/) 以了解如何正确处理这些问题。
 
 ```zenscript
-getPart(String name);
+val PB = MaterialSystem.getPartPartnBuilder;
 ```
 
-Required Parameters:
+### 获取
 
-- String name: The Part's name
+```zenscript
+getPart(String名称)；
+```
+
+所需参数：
+
+- 字符串名称：零件名称
 
 ## [IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)
 
-### Create
+### 创建
 
-    createPartDataPiece(String name, boolean required)
+    createPartDataPiece(必须输入布尔值)
     
 
-Required Parameters:
+所需参数：
 
-- String name: The Data Piece's name
-- boolean required: Is the data piece required?
+- 字符串名称：数据块名称
+- 需要布尔值：需要数据块吗？
 
-## Register multiple MaterialParts
+## 注册多个材料
 
-Even though you can also do this using the [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) own functionality, this Method allows you to register [Parts](/Mods/ContentTweaker/Materials/Parts/Part/) for a given Material
+即使您也可以使用 [材料的](/Mods/ContentTweaker/Materials/Materials/Material/) 自身功能来做这件事。 此方法允许您注册 [配件](/Mods/ContentTweaker/Materials/Parts/Part/) 给定的材料
 
 ```zenscript
-registerPartsForMaterial(Material material, String[] partNames);
+registerPartsForMaterial(Material material，String[…]部分命名)；
 ```
 
-Required Parameters:
+所需参数：
 
-- [Material](/Mods/ContentTweaker/Materials/Materials/Material/) material: The material that the registered parts should be made of
-- String[] partNames: The names of the parts that should be registered → e.g. ["gear", "ingot"]
+- [Material](/Mods/ContentTweaker/Materials/Materials/Material/) materials: The material which registed parts should be made of the regarded parts
+- 字符串[…]部分名称：应该注册的部件名称 -> 例如，["gear", "ingot"]
 
-## Retrieve already registered things:
+## 检索已经注册的东西：
 
-You can use these methods to retrieve a map using strings as keys and the object as values:
+您可以使用这些方法检索地图，使用字符串作为键值和对象值：
 
-| Method Name        | 返回值类型                                                                                        |
-| ------------------ | -------------------------------------------------------------------------------------------- |
-| getMaterialParts() | [`Map<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
-| getMaterials()     | [`Map<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
-| getParts()         | [`Map<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part/)                     |
-| getPartType()      | [`Map<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType/)             |
+| 方法名称               | 返回值类型                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------- |
+| getMaterialParts() | [`地图<String, IMaterialPart>`](/Mods/ContentTweaker/Materials/Materials/MaterialPart/) |
+| getMaterials()     | [`地图<String, IMaterial>`](/Mods/ContentTweaker/Materials/Materials/Material/)         |
+| getParts()         | [`地图<String, IPart>`](/Mods/ContentTweaker/Materials/Parts/Part/)                     |
+| getPartType()      | [`地图<String, IPartType>`](/Mods/ContentTweaker/Materials/Parts/PartType/)             |
 
-    import mods.contenttweaker.MaterialPart;
+    导入mods.contenttweeper.MaterialPart;
     
     val part = MaterialSystem.getMaterialPart("name"); //as MaterialPart
     
