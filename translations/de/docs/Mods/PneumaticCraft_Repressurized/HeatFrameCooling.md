@@ -2,11 +2,11 @@
 
 Heat Frame Cooling can be used to transform one item into another by placing items in a chest or other inventory with a Heat Frame attached, and cooling it to below 0°C (commonly using a Vortex Tube).
 
-## Calling
+## Anruf
 
 You can call the Heat Frame Cooling package using `mods.pneumaticcraft.heatframecooling`
 
-## Removing
+## Entfernen
 
 This function removes the first recipe it finds with the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `output`:
 
@@ -22,7 +22,7 @@ This function removes *all* Heat Frame Cooling recipes:
 mods.pneumaticcraft.heatframecooling.removeAllRecipes();
 ```
 
-## Adding
+## Hinzufügen
 
 These functions are used to add new recipes for the Heat Frame Cooling system:
 
