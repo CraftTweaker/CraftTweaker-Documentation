@@ -1,22 +1,22 @@
-# Composter
+# Komposter
 ## Pakiet
-`import mods.gardenstuff.CompostBin;`
+`importuj mods.ogrodnictwo.kompostowa;`
 
 ## Metody
-- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
-- **int processTime** Amount of energy created per tick in a base-line machine.
-- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
+- **[element IItemStack](/Vanilla/Liquids/IItemStack/)** Przedmiot do kompostowania.
+- **int processTime** Ilość energii wytworzonej na tick w maszynie bazowej.
+- **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** Wpis oreDictionary.
 
-## Add Compostable Item
+## Dodaj element kompostowalny
 ```zenscript
-mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
+mods.ogrody.CompostBin.add(element IItemStack, int processTime);
 
-mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
+mods.ogrody.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
-## Add Compostable oreDictionary Entry
+## Dodaj kompostowalny wpis słownika
 ```zenscript
-mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
+mods.ogrody.CompostBin.add(oredictKey, int processTime);
 
-mods.gardenstuff.CompostBin.add(<ore:cropCarrot>, 150);
+mods.ogrody.CompostBin.add(<ore:cropCarrot>, 150);
 ```
