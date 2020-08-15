@@ -1,7 +1,7 @@
 # Fusion
-**Note: Not yet implemented**
+**Hinweis: Noch nicht implementiert**
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.Fusion`
 
 ## Rezepte hinzufügen
@@ -13,5 +13,5 @@ mods.nuclearcraft.Fusion.addRecipe(ILiquidStack fluidInput1, ILiquidStack fluidI
 ```zenscript
 mods.nuclearcraft.Fusion.removeRecipeWithInput(ILiquidStack fluidInput1, ILiquidStack fluidInput2);
 mods.nuclearcraft.Fusion.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Fusion.removeAllRecipes();
+mods.nuclearcraft.Fusion.removeAllRezept();
 ```
