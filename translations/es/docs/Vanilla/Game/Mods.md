@@ -49,10 +49,10 @@ for mod in loadedMods {
 The IMod Interface provides you with some general information on a specific mod.  
 If needed, it can be imported using `import crafttweaker.mods.IMod;`
 
-| Zengetter   | What does it do                    | Return Type                                | Usage             |
+| Zengetter   | ¿Qué hace                          | Tipo de devolución                         | Usage             |
 | ----------- | ---------------------------------- | ------------------------------------------ | ----------------- |
-| id          | Returns the mod's id               | string                                     | `mod.id`          |
-| name        | Returns the mod's internal name    | string                                     | `mod.name`        |
-| version     | Returns the mod's version          | string                                     | `mod.version`     |
-| description | Returns the mod description        | string                                     | `mod.description` |
+| id          | Returns the mod's id               | cadena                                     | `mod.id`          |
+| nombre      | Returns the mod's internal name    | cadena                                     | `mod.name`        |
+| versión     | Returns the mod's version          | cadena                                     | `mod.version`     |
+| descripción | Returns the mod description        | cadena                                     | `mod.description` |
 | items       | Returns all items added by the mod | [IItemStack](/Vanilla/Items/IItemStack/)[] | `mod.items`       |
