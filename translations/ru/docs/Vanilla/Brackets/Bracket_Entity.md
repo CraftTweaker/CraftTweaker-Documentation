@@ -1,8 +1,8 @@
-# Entity Bracket Handler
+# Обработчик скобок сущностей
 
-The Entity Bracket Handler gives you access to the Entities (e.g. Mobs, tile ents etc.) in the game. It is only possible to get entities registered in the game, so adding or removing mods may cause issues if you reference the mod's mobs in an Entity Bracket Handler.
+Обработчик скобок сущностей дает вам доступ к сущностям (например, Mobs, плитки и т. д.) в игре. Можно получить только зарегистрированные в игре, , так что добавление или удаление модов может вызвать проблемы, если вы ссылаетесь на мобов Entity Bracket Handler.
 
-Entities are referenced in the Entity handler this way:
+Сущности ссылаются в обработчике сущностей таким образом:
 
 ```zenscript
 <entity:modID:entityName>
@@ -10,11 +10,11 @@ Entities are referenced in the Entity handler this way:
 <entity:minecraft:sheep>
 ```
 
-If the mob/entity is found, this will return an IEntityDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Entities/IEntityDefinition/) for further information on what you can do with these.
+Если моб/сущность найдена, это возвращает объект IEntityDefinition. Пожалуйста, обратитесь к [соответствующей вики](/Vanilla/Entities/IEntityDefinition/) для получения дополнительной информации о том, что вы можете сделать с этим.
 
-# Getting all Registered Entities
+# Получение всех зарегистрированных сущностей
 
-You can use the following command to output all registered entities to the CraftTweaker log
+Вы можете использовать следующую команду для вывода всех зарегистрированных сущностей в CraftTweaker лог
 
-    /ct entities
-    /crafttweaker entities
+    /ct сущностей
+    /crafttweaker сущностей
