@@ -1,54 +1,54 @@
-# Names in Boson
+# 博森地区的名称
 
-In Minecraft, most objects are identified by unique names. E.g., items use their registry name to be uniquely identified and there can't exist more than one item with the same registry name.
+在Minecraft中，大多数对象都是用唯一的名称识别的。 例如，项目使用其注册表名称来识别唯一的 并且不能存在多个具有相同注册表名称的项目。
 
-Most names in Minecraft follow a rigid structure, identified by a string with a namespace and a path separated by a colon (e.g. `minecraft:iron_ingot`, where `minecraft` is the namespace and `iron_ingot` is the path). In CraftTweaker, most of these names are represented as raw strings, but within Boson this is frowned upon. In fact, the usage of a raw `string` may confuse people on whether a method call expects a string with a namespace or without. For this reason, Boson separated the usage of non-namespaced strings and namespaced ones.
+Minecraft中的大多数名称遵循一个僵化的结构，这个结构由一个带有命名空间的字符串和一个由 冒号分隔的路径来标识(例如) `minecraft:iron_ingot`, 其中 `minecraft` 是命名空间, `iron_ingot` 是路径)。 在 CraftTweaker 中， 这些名字大多是原始字符串，但是在博森内部这个名字被吓倒。 事实上， 原始 `字符串` 的使用可能会使人们对一个方法调用是否需要一个具有命名空间的字符串感到困惑。 为此原因， 博森将非命名空间字符串和命名空间字符串的使用分开。
 
-Non-namespaced strings are represented as instances of `string`, among all the Boson APIs. For more information, refer to the ZenScript documentation.
+非命名空间字符串作为 `字符串`的实例，列于所有博森API中。 欲了解更多信息，请参考 ZenScript 文档。
 
-Namespaced strings are represented as instances of `NameSpacedString`, among all the Boson APIs. For more information on how to obtain such strings, refer to the next section.
+命名空间字符串被代表为 `namesSpacedString`的实例，在所有Boson API中都是如此。 For more information on how to obtain such strings, refer to the next section.
 
-## `NameSpacedString` Documentation
-The `NameSpacedString` class resides in the `net.thesilkminer.mc.boson.zen.naming` package.
+## `名称SpacedString` 文档
+`NameSpacedString` 类位于 `net.thesilkmin.mc.boson.zen.naming` 软件包。
 
-### Creating a new instance
-There are two ways of creating a `NameSpacedString`: using the factory method or casting a `string`.
+### 创建一个新实例
+有两种方式创建 `名称SpacedString`：使用出厂方法或投射 `字符串`。
 
-The factory method is the suggested approach. Due to it being a static method, it can be invoked directly on the class instance. The following is the method signature and an example of its usage:
+工厂方法是建议采用的方法。 由于它是一种静态方法，它可以在类 实例上直接调用。 以下是方法签名及其用法示例：
 
 ```zenscript
-function from(nameSpace as string?, path as string) as NameSpacedString;
+function from (nameSpace as string?, path as string) as NameSpacedString;
 ```
 
 ```zenscript
-NameSpacedString.from("minecraft", "iron_ingot"); // equivalent to minecraft:iron_ingot
-NameSpacedString.from(null, "iron_ingot"); // uses default namespace 'minecraft'
+NameSpacedString.from("minecraft", "iron_ingot"); // 等效于minecraft:iron_ingot
+NameSpacedString.from(null, "iron_ingot"); // 使用默认命名空间 'minecraft'
 ```
 
 The casting way relies instead on an explicit cast from a `string` to a `NameSpacedString` using the `as` operator in ZenScript:
 
 ```zenscript
-"minecraft:iron_ingot" as NameSpacedString;
+“minecraft:iron_ingot”作为名称SpacedString；
 ```
 
 ### 参数
-A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
+一个 `NameSpacedString` 通过属性提供只读访问其命名空间和路径：
 
-| 属性名称        | 返回值类型 | 描述                                                                      |
-| ----------- | ----- | ----------------------------------------------------------------------- |
-| `nameSpace` | `字符串` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
-| `路径`        | `字符串` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
+| 属性名称   | 返回值类型 | 描述                                           |
+| ------ | ----- | -------------------------------------------- |
+| `名称空间` | `字符串` | 获取 `名称SpacedString` 的命名空间部分(例如， `Minecraft`) |
+| `路径`   | `字符串` | 获取 `名称SpacedString` (例如 `iron_ingot`)        |
 
 ### 方法
 
 #### `asString #作为字符串`
-A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
+一个 `名称SpacedString` 可以通过使用 `asString` 方法转换为常规的 `字符串`。 下面是 方法签名及其用法示例：
 
 ```zenscript
-function asString() as string;
+函数 asString() 为字符串；
 ```
 
 ```zenscript
 val nss = NameSpacedString("minecraft", "iron_ingot");
-println(nss.asString()); // Prints 'minecraft:iron_ingot' to the log
+println(nss.asString()); // 打印'minecraft:iron_ingot' 到日志
 ```
