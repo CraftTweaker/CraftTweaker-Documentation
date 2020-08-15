@@ -1,56 +1,56 @@
-# MCPotionEffect
+# format@@0 MCPotionEffect
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.potion.MCPotionEffect
 ```
 
-## Implemented Interfaces
-MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+MCPotionEffect implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Méthodes
-### isReady
+### est prêt
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+myMCPotionEffect.isReady(durée comme int, amplificateur comme int) ;
 ```
 
-| Paramètre     | Type de texte | Libellé                 |
-| ------------- | ------------- | ----------------------- |
-| durée         | Indice        | No description provided |
-| amplificateur | Indice        | No description provided |
+| Paramètre     | Type de texte | Libellé                    |
+| ------------- | ------------- | -------------------------- |
+| durée         | Indice        | Aucune description fournie |
+| amplificateur | Indice        | Aucune description fournie |
 
 
 ### newInstance
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Retourne [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+myMCPotionEffect.newInstance(durée comme int, amplificateur comme int);
 ```
 
-| Paramètre     | Type de texte | Libellé                 | IsOptional | Valeur par défaut |
-| ------------- | ------------- | ----------------------- | ---------- | ----------------- |
-| durée         | Indice        | No description provided | Faux       | null              |
-| amplificateur | Indice        | No description provided | vrai       | 0                 |
+| Paramètre     | Type de texte | Libellé                    | Optionnel | Valeur par défaut |
+| ------------- | ------------- | -------------------------- | --------- | ----------------- |
+| durée         | Indice        | Aucune description fournie | Faux      | null              |
+| amplificateur | Indice        | Aucune description fournie | vrai      | 0                 |
 
 
 
 ## Propriétés
 
-| Nom                | Type de texte                                                           | Has Getter | Has Setter |
-| ------------------ | ----------------------------------------------------------------------- | ---------- | ---------- |
-| Chaîne de commande | Chaîne de caractères                                                    | vrai       | Faux       |
-| Éléments curatifs  | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | vrai       | Faux       |
-| nomdeaffichage     | Chaîne de caractères                                                    | vrai       | Faux       |
-| bénéficiaire       | boolean                                                                 | vrai       | Faux       |
-| est instantané     | boolean                                                                 | vrai       | Faux       |
-| Couleur du liquide | Indice                                                                  | vrai       | Faux       |
-| Nom                | Chaîne de caractères                                                    | vrai       | Faux       |
+| Nom                | Type de texte                                                             | A un Getter | A un Setter |
+| ------------------ | ------------------------------------------------------------------------- | ----------- | ----------- |
+| Chaîne de commande | Chaîne de caractères                                                      | vrai        | Faux        |
+| Éléments curatifs  | Liste <[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | vrai        | Faux        |
+| nomdeaffichage     | Chaîne de caractères                                                      | vrai        | Faux        |
+| bénéficiaire       | boolean                                                                   | vrai        | Faux        |
+| est instantané     | boolean                                                                   | vrai        | Faux        |
+| Couleur du liquide | Indice                                                                    | vrai        | Faux        |
+| Nom                | Chaîne de caractères                                                      | vrai        | Faux        |
 
