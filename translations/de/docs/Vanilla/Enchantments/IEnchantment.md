@@ -12,10 +12,10 @@ It might be required for you to import the package if you encounter any issues (
 | ZenGetter   | ZenSetter   | Type                                                                    |
 | ----------- | ----------- | ----------------------------------------------------------------------- |
 | definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| level       |             | int                                                                     |
+| Level       |             | int                                                                     |
 | displayName | displayName | string                                                                  |
 
-## ZenMethods
+## ZenMethoden
 
 ### Retrieve the Enchantment as NBT
 
