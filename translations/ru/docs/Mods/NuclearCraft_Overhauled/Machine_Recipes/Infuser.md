@@ -1,7 +1,7 @@
-# Infuser
+# Инфект
 
-## Importing the Package
-`mods.nuclearcraft.Infuser`
+## Импортирование пакета
+`mods.nuclearcraft.Инфект`
 
 ## Добавление рецептов
 ```zenscript
@@ -11,6 +11,6 @@ mods.nuclearcraft.Infuser.addRecipe(IIngredient itemInput, ILiquidStack fluidInp
 ## Удаление рецептов
 ```zenscript
 mods.nuclearcraft.Infuser.removeRecipeWithInput(IIngredient itemInput, ILiquidStack fluidInput);
-mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemOutput);
+mods.nuclearcraft.Infuser.removeRecipeWithOutput(IIngredient itemput);
 mods.nuclearcraft.Infuser.removeAllRecipes();
 ```
