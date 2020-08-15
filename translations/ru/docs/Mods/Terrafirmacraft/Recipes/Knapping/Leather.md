@@ -1,17 +1,17 @@
 # Leather Knapping
 
-## Package
+## Пакет
 ```zenscript
 import mods.terrafirmacraft.leatherKnapping;
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 leatherKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 leatherKnapping.removeRecipe(IItemStack output);
