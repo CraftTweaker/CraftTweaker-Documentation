@@ -25,14 +25,14 @@ CriticalHit Events implement the following interfaces and are able to call all o
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter           | ZenSetter        | Return Type                           |
+| ZenGetter           | ZenSetter        | Type de retour                        |
 | ------------------- | ---------------- | ------------------------------------- |
 | `target`            |                  | [IEntity](/Vanilla/Entities/IEntity/) |
-| `oldDamageModifier` |                  | float                                 |
-| `damageModifier`    | `damageModifier` | float                                 |
+| `oldDamageModifier` |                  | flottant                              |
+| `damageModifier`    | `damageModifier` | flottant                              |
 | `isVanillaCrit`     |                  | boolean                               |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.deny()` sets the result to deny.
 - `event.allow()` sets the result to allow.
