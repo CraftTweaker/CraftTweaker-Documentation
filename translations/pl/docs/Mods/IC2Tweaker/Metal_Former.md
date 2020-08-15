@@ -1,10 +1,10 @@
 # Metal Former
 
-## Package
+## Pakiet
 
 `import mods.ic2.MetalFormer;`
 
-## Methods
+## Metody
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
