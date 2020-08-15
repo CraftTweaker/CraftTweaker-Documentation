@@ -20,12 +20,12 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| internal  | byte[] | No description provided |
+| intern    | byte[] | No description provided |
 
 
 
 ## Methoden
-### add
+### hinzufügen
 
 ```zenscript
 [4, 1, 2].add(value as crafttweaker.api.data.IData);
@@ -34,7 +34,7 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 | Parameter | Type                                                   | Beschreibung                 |
 | --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| wert      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -43,10 +43,10 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 [4, 1, 2].add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| Parameter  | Type                                                   | Beschreibung                                                         |
+| ---------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| indexieren | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| wert       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### clear
@@ -68,12 +68,12 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].get(0);
 ```
 
-| Parameter | Type | Beschreibung        |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parameter  | Type | Beschreibung        |
+| ---------- | ---- | ------------------- |
+| indexieren | int  | The index (0-based) |
 
 
-### remove
+### entfernen
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -84,9 +84,9 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].remove(0);
 ```
 
-| Parameter | Type | Beschreibung        |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| Parameter  | Type | Beschreibung        |
+| ---------- | ---- | ------------------- |
+| indexieren | int  | The index (0-based) |
 
 
 ### set
@@ -100,16 +100,16 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 [4, 1, 2].set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Beschreibung               |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Parameter  | Type                                                   | Beschreibung               |
+| ---------- | ------------------------------------------------------ | -------------------------- |
+| indexieren | int                                                    | The index to set (0-based) |
+| wert       | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| Name   | Type | Has Getter | Has Setter |
+| ------ | ---- | ---------- | ---------- |
+| grösse | int  | true       | false      |
 
