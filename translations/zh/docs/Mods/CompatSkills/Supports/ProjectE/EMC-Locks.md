@@ -1,23 +1,23 @@
 # ProjectE
 
-## EMC-Locks
+## EMC-锁
 
-As of 1.5.0 CompatSkills supports EMC Locks for items.
+截止1.5.0 Compatter技能支持EMC 锁定物品。
 
-## NOTICE
+## 注意事项
 
-As of 1.9.0 EMC Locks has been modified:
+截至1.9.0 EMC 锁已被修改：
 
-    Modified ProjectE support to lock transmutation learning and condenser multiplication.
-    The syntax is the same as before mods.compatskills.EMCLock.addEMCLock(int emc, String... requirements);
-    Players will be able to use items that do not meet the emc lock but will not be able to learn or duplicate that item. Learning and duplication now also requires the player to meet any requirements the item has on it.
-    Note: For putting items in the transmutation table you will still gain the emc but will not be able to get the item back out.
+    修改后的项目E支持锁定传输学习和冷凝器倍增。
+    语法与 mods.compatskills.EMCLock.addEMCLock(int em, String... (c) 《关于消耗臭氧层物质的蒙特利尔议定书》未予管制的物质的蒙特利尔议定书
+    玩家将能够使用不符合emc 锁定但无法学习或复制该项的物品。 现在学习和重复也要求玩家满足项目上的任何要求。
+    注意：要将项目放入转化表中，您仍将获得emc ，但将无法将项目退出。
     
 
-### Syntax:
+### 语法：
 
-    // Blank Example:
-    mods.compatskills.EMCLock.addEMCLock(int emc, String... locked)
+    // 空白示例：
+    mods.compatskills.EMCLock.addEMCLock(int em, String... 已锁定)
     
-    // Example:
+    // 示例：
     mods.compatskills.EMCLock.addEMCLock(8192, "reskillable:mining|5", "reskillable:magic|7")
