@@ -8,9 +8,9 @@ import mods.roots.Bark;
 
 ```zenscript
 void addRecipe(
-  string name,        // the name of the recipe
-  IItemStack woodLog, // the itemstack equivalent of the wood log being broken
-  IItemStack bark     // the itemstack of the type of bark this log produces (including stack count)
+  nome stringa, // il nome della ricetta
+  IItemStack woodLog, // l'equivalente itemstack del legname che viene rotto
+  IItemStack corteccia // il itemstack del tipo di corteccia che questo registro produce (incluso il numero di pile)
 );
 ```
 
@@ -18,7 +18,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack bark // the itemstack of the type of bark to remove (excluding stack size)
+  IItemStack corteccia // il itemstack del tipo di corteccia da rimuovere (esclusa la dimensione dello stack)
 );
 ```
 
@@ -29,9 +29,9 @@ void removeRecipe(
 ```zenscript
 import mods.roots.Bark;
 
-// Will produce 2 sand from a melon block broken by a knife.
+// produrrà 2 sabbia da un blocco di melone rotto da un coltello.
 Bark.addRecipe("melon", <minecraft:melon_block>, <minecraft:sand>*2);
 
-// Removes wildwood bark from the default list
+// Rimuove corteccia di legno selvaggio dalla lista predefinita
 Bark.removeRecipe(<roots:bark_wildwood>);
 ```
