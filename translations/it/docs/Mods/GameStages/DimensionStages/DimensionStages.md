@@ -1,6 +1,6 @@
-# Dimension Stages
+# Fasi Di Dimensione
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Dimension Stages allows access to dimensions to be gated behind custom progression systems that are set in place by the modpack creator. If a player does not have access to a stage, they will not be able to enter that dimension. Their pets, and projectiles, mounts and dropped items will also be prevented from entering a restricted dimension. You can find more info about Dimension Stages [here](https://minecraft.curseforge.com/projects/dimension-stages)
+Questa mod è un addon per l'API [GameStages](https://minecraft.curseforge.com/projects/game-stages). Le fasi di dimensione consentono di accedere alle dimensioni da gare dietro sistemi di progressione personalizzati impostati dal creatore di modpack. Se un giocatore non ha accesso a una fase, non sarà in grado di entrare in quella dimensione. I loro animali domestici e proiettili, monti e oggetti caduti sarà anche impedito di entrare in una dimensione limitata. Puoi trovare maggiori informazioni sulle fasi di dimensione [qui](https://minecraft.curseforge.com/projects/dimension-stages)
 
 ```zenscript
 //mods.DimensionStages.addDimensionStage(String stage, int dimensionId);
