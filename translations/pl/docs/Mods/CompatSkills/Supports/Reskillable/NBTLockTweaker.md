@@ -1,30 +1,30 @@
 # NBT-Lock Tweaker
 
-## NBT-Locking
+## Blokada NBT
 
-The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
+Blokady NBT są specyficzne dla CompatSkills 1.4.0+ i obecnie są najpotężniejszą funkcją. Możesz zablokować konkretne tagi NBT ograniczone do danego identyfikatora moda lub na każdym elemencie w grze.
 
-This means that any item found to contain that NBT-tag will have the lock applied to it.
+Oznacza to, że dowolny element znajdujący się w tym tagu NBT będzie miał do niego zastosowaną blokadę.
 
-### Syntax:
+### Składnia:
 
-    // Blank Example:
-    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
-    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
+    // Pusty przykład:
+    mods.compatskills.NBTLock.addGenericNBTLock(IDI, String... zablokowane)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... zablokowane)
     
-    //// Working Example:
-    // Locks Silk-Touch
-    addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
+    //// Przykład:
+    // Zablokuj jedwabne dotknięcie
+    addicNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
     
-    // Locks Unbreaking (No Level-Specified)
-    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
+    // Blokady Unbreaking (No Level-Specified)
+    addModNBTLock ("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-This has some powerful implications. This means for example that you as a pack-maker can lock:
+Ma to pewne poważne konsekwencje. Oznacza to na przykład, że jako twórca pakietów możesz zablokować:
 
-- Tinker Materials
-- Tinker Modifiers
-- Enchantments
-- Energy-Values
+- Materiały drukujące
+- Modyfikatory Tinkera
+- Zaklęcia
+- Wartości energetyczne
 
-And much more, as long as you know the NBT-tag it uses!
+I o wiele więcej, o ile znasz tagi NBT, który go stosuje!
