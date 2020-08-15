@@ -1,4 +1,4 @@
-# Slice 'n' Splice
+# 'n' スプライス（スライス）
 
 ## パッケージ
 
@@ -6,13 +6,13 @@
 
 ## メソッド
 
-**- [IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
+**- [IItemStack](/Vanilla/Items/IItemStack/) 出力** レシピの結果。
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 6 ingredients.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** 原料. 1から6の材料の間でなければなりません。
 
-**- int energyCost** How much FE the recipe uses. Defaults to 5000.
+**- energyCost** レシピが使用するFEの量。 デフォルトは5000です。
 
-**- float xp** The xp is granted from this recipe. May not be negative.
+**- float xp** このレシピからxpが付与されます。 否定的ではないかもしれない。
 
 ## 加算
 
