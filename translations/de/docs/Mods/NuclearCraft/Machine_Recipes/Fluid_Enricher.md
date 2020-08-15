@@ -1,6 +1,6 @@
-# Fluid Enricher
+# Flüssigkeitsreicher
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.dissolver`
 
 ## Rezepte hinzufügen
