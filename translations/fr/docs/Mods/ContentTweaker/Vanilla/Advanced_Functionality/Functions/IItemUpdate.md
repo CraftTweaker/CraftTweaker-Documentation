@@ -2,7 +2,7 @@
 
 The IItemUpdateFunction can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) to allow code to be executed whenever the item updates.
 
-## Importing the package
+## Importation du paquet
 
 If you ever feel the need to import this function's class, here you go:
 
@@ -10,7 +10,7 @@ If you ever feel the need to import this function's class, here you go:
 import mods.contenttweaker.IItemUpdate;
 ```
 
-## Syntax
+## Syntaxe
 
 We have a void function that takes the following parameters (in order)
 
