@@ -10,32 +10,32 @@ An object of `mods.gregtech.material.Material` represents a material in GregTech
 
 Properties:
 
-| Name               | Type                         | Description                                      |
+| Nombre             | Tipo                         | Descripción                                      |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
 | color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | string                       | Chemical formula of this material                |
+| chemicalFormula    | cadena                       | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
 | components         | ImmutableList<materialstack> | List of this material component                  |
-| generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
+| generationFlagsRaw | largo                        | Generation flags of this material (See MatFlags) |
 | element            | Element                      | Element of this material consist of              |
 
 Getters:
 
-| Name            | Type   | Description                          |
+| Nombre          | Tipo   | Descripción                          |
 | --------------- | ------ | ------------------------------------ |
-| radioactive     | bool   | True if this material is radioactive |
-| protons         | long   |                                      |
-| neutrons        | long   |                                      |
-| mass            | long   |                                      |
-| density         | long   |                                      |
-| camelCaseString | string |                                      |
-| unlocalizedName | string |                                      |
-| localizedName   | string | Client-side only                     |
-| name            | string | Name in the Material registry        |
+| radioactive     | pluma  | True if this material is radioactive |
+| protons         | largo  |                                      |
+| neutrons        | largo  |                                      |
+| mass            | largo  |                                      |
+| densidad        | largo  |                                      |
+| camelCaseString | cadena |                                      |
+| unlocalizedName | cadena |                                      |
+| localizedName   | cadena | Client-side only                     |
+| nombre          | cadena | Name in the Material registry        |
 
 Methods:
 
-| Name (Parameters)             | Description           |
+| Name (Parameters)             | Descripción           |
 | ----------------------------- | --------------------- |
 | addFlags(String... flagNames) | Add generation flags  |
 | hasFlag(String flagName)      | Has a generation flag |
@@ -48,18 +48,18 @@ Methods:
 
 Properties:
 
-| Name             | Type | Description |
+| Nombre           | Tipo | Descripción |
 | ---------------- | ---- | ----------- |
 | fluidTemperature | int  |             |
 
 Getters:
 
-| Name      | Type                                                       | Description           |
+| Nombre    | Tipo                                                       | Descripción           |
 | --------- | ---------------------------------------------------------- | --------------------- |
-| hasFluid  | bool                                                       |                       |
-| hasPlasma | bool                                                       |                       |
-| isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
+| hasFluid  | pluma                                                      |                       |
+| hasPlasma | pluma                                                      |                       |
+| isGaseous | pluma                                                      |                       |
+| fluido    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
 | plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
 
 ### DustMaterial
@@ -68,7 +68,7 @@ Getters:
 
 Properties:
 
-| Name                | Type          | Description                                                                                                                                  |
+| Nombre              | Tipo          | Descripción                                                                                                                                  |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
 | byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
@@ -80,10 +80,10 @@ Properties:
 
 Getters:
 
-| Name          | Type                | Description                                         |
-| ------------- | ------------------- | --------------------------------------------------- |
-| oreByProducts | List<fluidmaterial> | List of ore by products                             |
-| harvestLevel  | int                 | Tool level needed to harvest block of this material |
+| Nombre           | Tipo                | Descripción                                         |
+| ---------------- | ------------------- | --------------------------------------------------- |
+| oreByProducts    | List<fluidmaterial> | List of ore by products                             |
+| nivel de cosecha | int                 | Tool level needed to harvest block of this material |
 
 ### SolidMaterial
 
@@ -91,7 +91,7 @@ Getters:
 
 Properties:
 
-| Name           | Type          | Description                                                                                          |
+| Nombre         | Tipo          | Descripción                                                                                          |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
@@ -101,15 +101,15 @@ Getters:
 <table>
   <tr>
     <th>
-      Name
+      Nombre
     </th>
     
     <th>
-      Type
+      Tipo
     </th>
     
     <th>
-      Description
+      Descripción
     </th>
   </tr>
   
@@ -119,7 +119,7 @@ Getters:
     </td>
     
     <td>
-      float
+      flotante
     </td>
     
     <td>
@@ -188,7 +188,7 @@ material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a en
 
 These flags are applicable to materials.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
+| Name (case-insensitive)           | Descripción                                                                                                                                                                                                                                         |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
 | DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### Ejemplo
 
 ```zenscript
 #loader gregtech
