@@ -1,6 +1,6 @@
-# Enrichment Chamber
+# Anreicherungskammer
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Enrichment Chamber through the command `/ct mekrecipes enrichment`
+Ab dem Mekanismus 9.7.0 ist es nun möglich, alle Rezeptfolgen der Kammer über den Befehl `/ct mekrecipes enrichment`
 
 ## Addition
 
@@ -23,11 +23,11 @@ mods.mekanism.enrichment.removeRecipe(<minecraft:mossy_cobblestone>, <minecraft:
 mods.mekanism.enrichment.removeRecipe(<minecraft:stonebrick:1>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Die Angabe eines Ausgabeparameters entfernt nur das spezifische Rezept, das zu dieser Ausgabe führt. Wird der Ausgabeparameter nicht aktiviert, werden alle Rezepte entfernt, die der Eingabeartikel produzieren kann.
 
 ## Entferne alle Rezepte
 
-As of Mekanism 9.7.0 it is now possible to remove all Enrichment Chamber recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
+Ab dem Mekanismus 9.7.0 ist es nun möglich, alle Rezepte der Kammer für die Bereicherung zu entfernen. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
 ```zenscript
 mods.mekanism.enrichment.removeAllRecipes();
