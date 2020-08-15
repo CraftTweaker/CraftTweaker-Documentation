@@ -20,7 +20,7 @@ PlayerInteractEntity Events implement the following interfaces and are able to c
 
 The following information can be retrieved from the event:
 
-| ZenGetter            | ZenSetters           | Return Type                           |
+| ZenGetter            | ZenSetters           | Tipo Di Reso                          |
 | -------------------- | -------------------- | ------------------------------------- |
 | `player`             |                      | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `target`             |                      | [IEntity](/Vanilla/Entities/IEntity/) |
