@@ -2,7 +2,7 @@
 
 The `Fuel` package allows you to add Smeltery fuel fluids.
 
-## Calling
+## Chiamata
 
 You can call the Alloy package using `mods.tconstruct.Fuel`
 
@@ -13,7 +13,7 @@ You can call the Alloy package using `mods.tconstruct.Fuel`
 mods.tconstruct.Fuel.registerFuel(<liquid:water> * 2, 300);
 ```
 
-Parameters:
+Parametri:
 
 - [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) fuel → The fluid. Amount is the minimal increment that is consumed at once.
 - int duration → How many ticks the consumtpion of the fluidStack lasts.
