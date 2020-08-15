@@ -1,22 +1,22 @@
-# Item Aspects
+# アイテムのアスペクト
 
-Modtweaker's Thaumcraft integration extends [IItemStacks](/Vanilla/Items/IItemStack/).  
-That means that you can use the methods below on any IItemStack object:
+ModtweakerのThaumcraftの統合は [IItemStacks](/Vanilla/Items/IItemStack/)を拡張します。  
+つまり、以下のメソッドはどのIItemStackオブジェクトでも使用できます。
 
-## Set aspects
+## アスペクトを設定
 
-You can use this to override what aspects an item would normally have.  
-Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
+これを使用して、アイテムが通常どの側面を持つかを上書きできます。  
+CTAspectStack [オブジェクト](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[]または多くの [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) オブジェクトが必要です。
 
 ```zenscript
-<minecraft:stone>.setAspects(<aspect:ignis>*5);
+<minecraft:stone>.setApects(<aspect:ignis>*5);
 ```
 
-## Remove aspects
+## アスペクトを削除
 
-You can use this to prevent certain aspects from being added to an item.  
-Requires a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[] or many [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) objects.
+これを使用すると、特定の側面が項目に追加されないようにできます。  
+CTAspectStack [オブジェクト](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/)[]または多くの [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) オブジェクトが必要です。
 
 ```zenscript
-<minecraft:iron_ore>.removeAspects(<aspect:terra>);
+<minecraft:iron_ore>.removeアスペクト(<aspect:terra>);
 ```
