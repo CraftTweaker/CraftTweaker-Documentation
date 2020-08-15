@@ -21,6 +21,6 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | ZenGetter       | ZenSetter | Type                                        |
 | --------------- | --------- | ------------------------------------------- |
 | `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `current`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `aktuell`       |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `hand`          |           | String                                      |
