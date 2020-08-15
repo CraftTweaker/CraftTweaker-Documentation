@@ -5,7 +5,7 @@
 `mods.exnihilocreatio.Hammer`
 ```
 
-## Methods
+## Métodos
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
@@ -13,7 +13,7 @@
 - **Float chance** chance between 0-1.
 - **Float fortune chance** chance between 0-1.
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.exnihilocreatio.Hammer.addRecipe(IIngredient, IItemStack, Int, Float, Float);
