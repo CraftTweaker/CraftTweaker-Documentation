@@ -1,6 +1,6 @@
-# Steam Turbine
+# Dampfturbine
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.turbine`
 
 ## Rezepte hinzufügen
