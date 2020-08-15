@@ -1,17 +1,17 @@
-# Foreword
+# Vorwort
 
-This section will contain Tips and Tricks from experienced Tweakers.  
-Remember that these are really individual and some can also hinder you from achieving your aims instead of facilitating it.
+Dieser Abschnitt enthält Tipps und Tricks von erfahrenen Tweakern.  
+Denken Sie daran, dass diese wirklich individuell sind und einige Sie daran hindern können, Ihre Ziele zu erreichen, anstatt sie zu vereinfachen.
 
-## What this section is for
+## Was ist dieser Abschnitt für
 
-- Show you strategies on how to minimize your scripts.
-- Show you strategies on how to save time writing the scripts.
-- Show you strategies on how to make your scripts easier to read.
-- Show you strategies on how to make your scripts easier to debug.
-- Show you some often occuring mistakes, so you can spot them more easily in your scripts.
+- Zeigen Sie Ihnen Strategien, wie Sie Ihre Skripte minimieren können.
+- Zeigen Sie Ihnen Strategien, wie Sie Zeit sparen die Skripte zu schreiben.
+- Zeigen Sie Ihnen Strategien, wie Sie Ihre Skripte leichter lesen können.
+- Zeigen Sie Ihnen Strategien, wie Sie Ihre Skripte einfacher zu debuggen machen.
+- Zeigen Sie einige häufig auftretende Fehler, damit Sie sie leichter in Ihren Skripten finden können.
 
-## What this section is NOT for
+## Was ist dieser Abschnitt NICHT für
 
-- This section is not to be understood as kind of Tutorial for the novice Tweaker.
-- These tips are just tips, you don't need to implement them in your scripts and some might even be inappropriate for what you are trying to achieve.
+- Dieser Abschnitt ist nicht als Art von Tutorial für den Anfänger Tweaker zu verstehen.
+- Diese Tipps sind nur Tipps, Sie müssen sie nicht in Ihre Skripte implementieren und einige sind möglicherweise sogar ungeeignet für das, was Sie erreichen wollen.
