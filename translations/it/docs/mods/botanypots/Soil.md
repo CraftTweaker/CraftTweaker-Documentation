@@ -13,7 +13,7 @@ Per usare, importa la classe con `import mods.botanypots.Soil;` all'inizio del t
 - `id` &lt;string> L'id del nuovo suolo. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
 - `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> L'ingrediente usato per determinare quali elementi/blocchi sono usati per mettere il suolo in un vaso.
 - `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Lo stato del blocco da mostrare per il suolo nel vaso.
-- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
+- `growthModifier` &lt;float> Modifica il tempo di crescita di un raccolto. 1f = crescita istantanea. 0 = crescita normale. -1f = non cresce mai. 0,15 = 15% più veloce, -0,15 = 15% più lentamente.
 - `categories` &lt;string[]> Un insieme di categorie associate al nuovo suolo.
 
 Crea una nuova voce del suolo che i giocatori possano usare nel vaso botanico.
@@ -34,17 +34,17 @@ Rimuove un suolo dai dati del gioco.
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## Changing Soil Growth Modifier
+## Modificatore Di Crescita Del Terreno
 
 `Soil.setGrowthModifier(id, tickRate);`
 
 - `id` &lt;string> L'id del suolo. Questo è un id spaziato dai nomi e deve essere nel formato valido `namespace:path`.
-- `growthModifier` &lt;float> Modifies the time a crop takes to grow. 1f = instant growth. 0 = normal growth. -1f = never grows. 0.15 = 15% faster, -0.15 = 15% slower.
+- `growthModifier` &lt;float> Modifica il tempo di crescita di un raccolto. 1f = crescita istantanea. 0 = crescita normale. -1f = non cresce mai. 0,15 = 15% più veloce, -0,15 = 15% più lentamente.
 
-Changes the growth modifier of a given soil.
+Cambia il modificatore di crescita di un dato terreno.
 
 ```zenscript
-Soil.setGrowthModifier("botanypots:soil/grass", 0.15);
+Soil.setGrowthModifier("botanypots:suolo/erba", 0.15);
 ```
 
 ## Modificare Ingrediente del Suolo
