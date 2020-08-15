@@ -2,7 +2,7 @@
 
 ## Pacchetto
 
-To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
+Per accedere a `Sieve` senza chiarire il percorso completo, è possibile importare il pacchetto nella parte superiore dello script con il seguente:
 
 ```zenscript
 import mods.exnihilocreatio.Sieve;
@@ -10,35 +10,35 @@ import mods.exnihilocreatio.Sieve;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[Blocco IIngrediente](/Vanilla/Variable_Types/IIngredient/)** Il blocco che rilascia l'output.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** L'elemento che scende dal blocco..
+- **Possibilità galleggiante** La possibilità dovrebbe essere compresa tra 0-1.
 
-## String Mesh
+## Maglia Di Stringa
 
 ```zenscript
-Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addStringMeshRecipe(IIngrediente, IItemStack, Float chance);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Maglia Flint
 
 ```zenscript
-Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addFlintMeshRecipe(IIngrediente, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Maglia Di Ferro
 
 ```zenscript
-Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addIronMeshRecipe(IIngrediente, IItemStack, Float chance);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Maglia Di Diamante
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addDiamondMeshRecipe(IIngrediente, IItemStack, Float chance);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
