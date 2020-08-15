@@ -9,11 +9,11 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter   | ZenSetter   | Type                                                                    |
+| ZenGetter   | ZenSetter   | タイプ                                                                     |
 | ----------- | ----------- | ----------------------------------------------------------------------- |
-| definition  |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
-| level       |             | int型                                                                    |
-| displayName | displayName | string                                                                  |
+| 定義          |             | [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) |
+| レベル         |             | int型                                                                    |
+| displayName | displayName | 文字列                                                                     |
 
 ## ZenMethods
 
