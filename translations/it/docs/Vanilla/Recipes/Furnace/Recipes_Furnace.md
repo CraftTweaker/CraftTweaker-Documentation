@@ -1,27 +1,27 @@
-# Furnace
+# Fornace
 
-CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
+CraftTweaker ti permette di `Aggiungi` e `Rimuovi` Ricette fornace e cambiare il valore del carburante degli oggetti.
 
 ## Ricette
 
 ### Rimozione
 
-There are 2 ways to remove Furnace recipes, being:
+Ci sono 2 modi per rimuovere le ricette Fornace, essere:
 
 ```zenscript
 furnace.remove(IIngredient output)
 ```
 
-And
+E
 
 ```zenscript
 furnace.remove(IIngredient output, IIngredient input);
 ```
 
-The first syntax is more flexible with the recipes that are removed and will remove all Furnace recipes that output the `output` given.  
-The second syntax is more strict with the recipes that are removed and will remove all Furnace recipes that output the `output` given and has an input of `input`.
+La prima sintassi è più flessibile con le ricette che vengono rimosse e rimuoverà tutte le ricette di Furnace che producono l'output `` dato.  
+La seconda sintassi è più rigorosa con le ricette che vengono rimosse e rimuoverà tutte le ricette di Furnace che producono l'output `` dato e ha un input di `input`.
 
-There also is a third way of removing furnace recipes, though this one will remove ALL furnace recipes registered in the game.
+C'è anche un terzo modo di rimuovere ricette forno, anche se questo rimuoverà TUTTE le ricette fornace registrate nel gioco.
 
 ```zenscript
 furnace.removeAll();
@@ -29,57 +29,57 @@ furnace.removeAll();
 
 ### Addizione
 
-There are 2 commands for adding furnace recipes:
+Ci sono 2 comandi per aggiungere ricette fornace:
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input);
+furnace.addRecipe(uscita IItemStack, ingresso IIngredient);
 ```
 
-And
+E
 
 ```zenscript
-furnace.addRecipe(IItemStack output, IIngredient input, double xp);
+furnace.addRecipe(uscita IItemStack, ingresso IIngredient, doppio xp);
 ```
 
-The first syntax will add a Furnace recipe that will give 0 xp on smelt.
+La prima sintassi aggiungerà una ricetta Fornace che darà 0 xp sulla fonderia.
 
-The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
+La seconda sintassi aggiungerà una ricetta Fornace che darà `xp` xp sulla fusione.
 
 ## Carburante
 
 ### Imposta
 
-The command for setting fuel values is:
+Il comando per impostare i valori del carburante è:
 
 ```zenscript
 furnace.setFuel(IIngredient input, int burnTime);
 ```
 
-This will set the burn value of `input` to `burnTime` in ticks. Minecraft coal burns for 1600 ticks, 80 seconds, 8 items. 1 item in a minecraft furnace takes 200 ticks to complete.
+Questo imposterà il valore di masterizzazione di `input` su `burnTime` nei tick. Minecraft carbone brucia per 1600 zecche, 80 secondi, 8 oggetti. 1 elemento in un forno minecraft richiede 200 zecche per completare.
 
-Setting the `burnTime` to `0` will stop the `input` from being a fuel item.
+Impostare il `burnTime` a `0` impedirà a `input` di essere un elemento combustibile.
 
-### Get
+### Ottieni
 
-The command for retrieving an item's fuel value is:
+Il comando per recuperare il valore del carburante di un elemento è:
 
 ```zenscript
 furnace.getFuel(IItemStack item); 
 ```
 
-This will return the burn value as an Integer
+Questo restituirà il valore di masterizzazione come Intero
 
 ## Esempi
 
 ### Rimozione
 
-This will remove all Furnace recipes that outputs `<minecraft:glass>`.
+Questo rimuoverà tutte le ricette Fornace che producono `<minecraft:glass>`.
 
 ```zenscript
 furnace.remove(<minecraft:glass>);
 ```
 
-This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:quartz_ore>` as an input.
+Questo rimuoverà tutte le ricette di Furnace `<minecraft:quartz>` che usano `<minecraft:quartz_ore>` come input.
 
 ```zenscript
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
@@ -87,13 +87,13 @@ furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 
 ### Addizione
 
-This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
+Questo aggiungerà una ricetta Fornace che produrrà un `<minecraft:golden_apple>` quando un `<minecraft:apple>` viene fuso.
 
 ```zenscript
 furnace.addRecipe(<minecraft:golden_apple>, <minecraft:apple>);
 ```
 
-This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` when a `<minecraft:melon>` is smelted and will give the player 1500 xp points.
+Questo aggiungerà una ricetta Fornace che produrrà un `<minecraft:speckled_melon>` quando un `<minecraft:melon>` è fuso e darà al giocatore 1500 punti xp.
 
 ```zenscript
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
@@ -101,18 +101,18 @@ furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 
 ### Carburante
 
-This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
+Questo imposterà il valore del carburante di `<minecraft:rotten_flesh>` a `100`.
 
 ```zenscript
 furnace.setFuel(<minecraft:rotten_flesh>, 100);
 ```
 
-## Other Functionality
+## Altra Funzionalità
 
-### Getting all registered Furnace Recipes
+### Ottenere tutte le ricette di fornace registrate
 
 ```zenscript
-furnace.all;
+fornace.all;
 ```
 
-Returns a [`List<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
+Restituisce una lista [`<IFurnaceRecipe>`](/Vanilla/Recipes/Furnace/IFurnaceRecipe/).
