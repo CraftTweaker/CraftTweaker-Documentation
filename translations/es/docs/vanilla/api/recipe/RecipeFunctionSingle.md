@@ -1,32 +1,32 @@
-# RecipeFunctionSingle
+# Receta funcional
 
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.recipe.RecipeFunctionSingle
+crafttweaker.api.receta.Receta funcional
 ```
 
-## Functional Interface
+## Interfaz funcional
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+Esta clase es una interfaz funcional. Esto significa que puede usar la notación lambda para crear una instancia de ella. La noción de lambda se ve así:
 ```zenscript
-(usualOut, inputs) => <item:minecraft:dirt>
+(usual, entradas) => <item:minecraft:dirt>
 ```
 ## Métodos
-### process
+### proceso
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Tipo de retorno: [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
+myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.ItemStack, entradas como crafttweaker.api.item.ItemStack);
 ```
 
-| Parámetro | Tipo                                                              | Descripción             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| Parámetro        | Tipo                                                              | Descripción                   |
+| ---------------- | ----------------------------------------------------------------- | ----------------------------- |
+| usualmente fuera | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No se proporcionó descripción |
+| inputs           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No se proporcionó descripción |
 
 
 
