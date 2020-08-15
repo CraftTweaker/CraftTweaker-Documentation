@@ -42,7 +42,7 @@ Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 Sieve.removeAll();
