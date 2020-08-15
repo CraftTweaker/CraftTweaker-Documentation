@@ -1,9 +1,9 @@
-# MrCrayfish's Furniture Mod
+# MrCrayfish's Möbelmod
 
-MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
+Frau Crayfish's Möbelmod fügt einzigartige Möbelstücke hinzu, die Sie verwenden können, um Ihre Gebäude zu dekorieren, einige von ihnen sind brauchbare Geräte und Einrichtungen.
 
-Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
+Obwohl die Dokumentation Standardrezepte enthält, lesen Sie bitte das Mod-Rezeptbuch für die aktuellen Rezepte.
 
-# Important Note
+# Wichtige Notiz
 
-Inputs are matched only on item id and metadata, nbt is ignored.
+Eingaben werden nur auf Item-Id und Metadaten abgestimmt, nbt wird ignoriert.
