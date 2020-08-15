@@ -2,7 +2,7 @@
 
 The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IBlockAction;`
@@ -17,7 +17,7 @@ The IBlockAction is a function with the following parameters:
 
 The function doesn't have a return value!
 
-## Example
+## Exemple
 
 ```zenscript
 zsBlock.onBlockBreak = function(world, blockPos, blockState){
