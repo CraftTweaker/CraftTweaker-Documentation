@@ -1,5 +1,5 @@
 # Baubles
 
-## Baubles Support
+## ボーブルスのサポート
 
-Baubles-Support is part of the standard ItemStack-Requirement locks. This means that any Item you do not have the required requirements for in your Baubles Inventory will be automatically-ejected and a error message will be printed!
+Baubles-Supportは標準のItemStack-Requirementロックの一部です。 つまり、Baubles Inventoryに必要な要件がないアイテムは自動的に取り出され、エラーメッセージが出力されます!
