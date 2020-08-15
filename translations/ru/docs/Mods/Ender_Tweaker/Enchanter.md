@@ -1,23 +1,23 @@
-# Enchanter
+# Чародей
 
 ## Пакет
 
-`import mods.enderio.Enchanter;`
+`импорт mods.enderio.Enchanter;`
 
 ## Методы
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) ввод** предмет, используемый для создания этого чара.
 
-**- int amountPerLevel** The number of input items per level of enchantment.
+**- количество int Level** количество входных предметов на уровень зачарований.
 
-**- double costMultiplier** Used to modify how expensive the recipe is.
+**- Множитель двойной стоимости** используется для модификации, насколько дорого стоит рецепт.
 
 ## Сложение
 
 ```zenscript
-mods.enderio.Enchanter.addRecipe(IEnchantmentDefinition output, IIngredient input, int amountPerLevel, double costMultiplier);
+mods.enderio.Enchanter.addRecipe(IEnchantDefinition output, IIngredient input, int amountPervel, double costMultiplier);
 
 mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:prismarine_shard>, 32, 60);
 ```
@@ -25,7 +25,7 @@ mods.enderio.Enchanter.addRecipe(<enchantment:minecraft:sharpness>, <minecraft:p
 ## Удаление
 
 ```zenscript
-mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition output);
+mods.enderio.Enchanter.removeRecipe(IEnchantmentDefinition);
 
 mods.enderio.Enchanter.removeRecipe(<enchantment:minecraft:sharpness>);
 ```
