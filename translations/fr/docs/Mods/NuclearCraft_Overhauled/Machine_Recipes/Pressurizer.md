@@ -1,16 +1,16 @@
-# Pressurizer
+# Pressuriseur
 
-## Importing the Package
-`mods.nuclearcraft.Pressurizer`
+## Importation du paquet en cours
+`mods.nuclearcraft.Pressuriseur`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
-mods.nuclearcraft.Pressurizer.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
+mods.nuclearcraft.Pressurizer.addRecipe(IIngredient itemInput, Igredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.Pressurizer.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Pressurizer.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.Pressurizer.removeAllRecipes();
+mods.nuclearcraft.Supprimer toutes les recettes ();
 ```
