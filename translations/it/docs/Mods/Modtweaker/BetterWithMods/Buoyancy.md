@@ -1,10 +1,10 @@
-# Buoyancy
+# Galleggiabilità
 
-Buoyancy effects the ability for an Item to float on water when HCBuoy is enabled in BWM.
+La galleggiabilità influenza la capacità di un oggetto di galleggiare sull'acqua quando HCBuoy è abilitato in BWM.
 
-Value can be a decimal between -1 and 1 where -1 sinks directly to the bottom, 0 reaches equilibrium, 1 floats on top.
+Il valore può essere un decimale tra -1 e 1 dove -1 affonda direttamente in basso, 0 raggiunge l'equilibrio, 1 galleggiante in alto.
 
 ```zenscript
-mods.betterwithmods.Buoyancy.set(IItemStack stack, float value);
+mods.betterwithmods.Buoyancy.set(IItemStack stack, valore float);
 
 ```
