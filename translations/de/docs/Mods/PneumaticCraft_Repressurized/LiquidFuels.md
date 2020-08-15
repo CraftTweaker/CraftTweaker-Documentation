@@ -2,11 +2,11 @@
 
 Liquid Fuels are used in PneumaticCraft: Repressurized in the (Advanced) Liquid Compressor to create compressed air, and (optionally) in the Kerosene Lamp to produce light. By default the liquids produced in the Refinery are defined as fuel, as well as any liquid above a temperature of 305 degrees Kelvin.
 
-## Calling
+## Anruf
 
 You can call the Liquid Fuels package using `mods.pneumaticcraft.liquidfuel`.
 
-## Removing
+## Entfernen
 
 This function deregisters the [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) `fluid` as a fuel:
 
@@ -22,7 +22,7 @@ This function deregisters *all* registered fuels:
 mods.pneumaticcraft.liquidfuel.removeAllFuels();
 ```
 
-## Adding
+## Hinzufügen
 
 The following functions can be used to add fluids to the fuel registry:
 
