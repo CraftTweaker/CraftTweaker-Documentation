@@ -1,86 +1,86 @@
 # IEntityLiving
 
-A living Entity is one that has health and that can die.  
-Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
+生命实体是一个健康且能够死亡的实体。  
+与 [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 不同的玩家不是IEnitiyLivingobject！
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityLiving;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.entity.IEntityLiving。`
 
-## Extending [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
+## 扩展 [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/)
 
-IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
+IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). 这意味着 [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) 对象所有可用的函数也可供IEntityLivings对象使用。
 
-## Methods
+## 方法
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
-| ------------------- | ------------- | --------------------------------------------------------- |
-| attackInterval      |               | int                                                       |
-| attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| canBeSteered        |               | bool                                                      |
-| canPickUpLoot       | canPickUpLoot | bool                                                      |
-| canSpawnHere        |               | bool                                                      |
-| getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isColliding         |               | bool                                                      |
-| isLeashed           |               | bool                                                      |
-| isLeftHanded        | isLeftHanded  | bool                                                      |
-| isNoDespawnRequired |               | bool                                                      |
-| maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | float                                                     |
-|                     | moveStrafing  | float                                                     |
-|                     | moveVertival  | float                                                     |
-| renderSizeModifier  |               | float                                                     |
+| ZenGetter         | ZenSetter     | 类型                                                        |
+| ----------------- | ------------- | --------------------------------------------------------- |
+| 攻击间隔              |               | 整数                                                        |
+| 攻击目标              | 攻击目标          | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| 画布                |               | bool                                                      |
+| canPickUpLoot     | canPickUpLoot | 布尔值                                                       |
+| 可以在这里生成           |               | bool                                                      |
+| getLeashedTo实体    |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| ISAIDS 启用         | ISAIDS 启用     | bool                                                      |
+| ISAIDS 启用         | ISAIDS 启用     | bool                                                      |
+| isColliding       |               | bool                                                      |
+| isLeashed         |               | bool                                                      |
+| 空手势               | 空手势           | bool                                                      |
+| 需要No Despawna     |               | bool                                                      |
+| maxSpawnedInChunk |               | 整数                                                        |
+|                   | 移动            | 浮点数                                                       |
+|                   | 移动            | 浮点数                                                       |
+|                   | 移动 Vertial    | 浮点数                                                       |
+| 渲染SizeModifier    |               | 浮点数                                                       |
 
 ### ZenMethods
 
-#### Play living sound
+#### 播放活的声音
 
-Requires no parameters.  
-Returns nothing.
+无需参数。  
+没有返回任何东西。
 
 ```zenscript
 ebtLiv.playLivingSound();
 ```
 
-#### Spawn explosion particles
+#### 生成爆炸粒子
 
-Requires no parameters.  
-Returns nothing.
+无需参数。  
+没有返回任何东西。
 
 ```zenscript
 ebtLiv.spawnExplosionParticle();
 ```
 
-#### Set the drop chance for an Equipment Slot
+#### 设置设备槽的跌落几率
 
-Requires an [IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) object and a float.  
-Returns nothing.
+需要 [IEntityEquipmentslot](/Vanilla/Entities/IEntityEquipmentSlot/) 对象和一个浮点。  
+什么也不返回。
 
 ```zenscript
-ebtLiv.setDropChance(IEntityEquipmentSlot slot, float chance);
+ebtLiv.setDropChance(IEntity装备槽，浮动概率)；
 ```
 
-#### Enable Persistence
+#### 启用持久性
 
-Requires no parameters.  
-Returns nothing.
+无需参数。  
+没有返回任何东西。
 
 ```zenscript
 ebtLiv.enablePersistence();
 ```
 
-#### Lashes
+#### 闪光
 
-First method requires an [IEntity](/Vanilla/Entities/IEntity/) object, a boolean and returns nothing. Second method requires two booleans and returns nothing.  
-Third method requires an [IPlayer](/Vanilla/Players/IPlayer/) object and returns a bool.
+第一个方法需要一个 [IEnty](/Vanilla/Entities/IEntity/) 对象，一个布尔值，什么也不返回任何东西。 第二个方法需要两个布尔值，什么也不返回。  
+第三个方法需要一个 [IPlayer](/Vanilla/Players/IPlayer/) 对象并返回一个布尔值。
 
 ```zenscript
-ebtLiv.setLeashedToEntity(IEntity enttiy, boolean sendAttachNotification);
-ebtLiv.clearLeashed(boolean sendPacket, boolean dropLead);
-ebtLiv.canBeLeashedTo(IPlayer player);
+ebtLiv.setLeashedToEntity(IEnty enttiy, boolan sendAttache notification);
+ebtLiv.clearleashed(foolian sendPacket, boolan dropLead);
+ebtLiv.canBeachedTo(IPlayer player);
 ```
