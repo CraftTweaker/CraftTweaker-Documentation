@@ -97,7 +97,7 @@ You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
     });
 ```
 
-### Remove
+### Entfernen
 
 This removes a drop.
 
