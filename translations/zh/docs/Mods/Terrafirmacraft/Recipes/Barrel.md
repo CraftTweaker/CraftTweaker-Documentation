@@ -1,19 +1,19 @@
-# Barrel
+# 手枪
 
 ## 所属包名
 ```zenscript
-import mods.terrafirmacraft.Barrel;
+导入 mods.terrafirmacraft。巴雷尔；
 ```
 
 ## 添加配方
 ```zenscript
-Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int hours);
+Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidStack fluidInput, @Optional IItemStack itemOutput, @Optional ILiquidStack fluidOutput, int 小时)；
 ```
 
 ## 删除配方
 
 ```zenscript
-Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
+Barrel.removeRecipe(@Optional IItemStack outputItem, @Opinion ILiquidStack outputLiquid)
 Barrel.removeRecipe(String registryName)
 ```
-- At least one output(liquid or item) must be supplied, for both removing and adding recipes.
+- 必须至少提供一个输出(液体或物品)，用于删除和添加配方。
