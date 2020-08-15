@@ -1,7 +1,7 @@
-# Fuel Reprocessor
+# Riprocessore Di Carburante
 
-## Importing the Package
-`mods.nuclearcraft.FuelReprocessor`
+## Importazione del pacchetto
+`mods.nuclearcraft.Riprocessore Di Carburante`
 
 ## Aggiunta Di Ricette
 ```zenscript
@@ -12,5 +12,5 @@ mods.nuclearcraft.FuelReprocessor.addRecipe(IIngredient itemInput, IIngredient i
 ```zenscript
 mods.nuclearcraft.FuelReprocessor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.FuelReprocessor.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2, IIngredient itemOutput3, IIngredient itemOutput4);
-mods.nuclearcraft.FuelReprocessor.removeAllRecipes();
+mods.nuclearcraft.FuelReprocessor.removeAllRicette();
 ```
