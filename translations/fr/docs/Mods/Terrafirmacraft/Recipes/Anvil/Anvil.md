@@ -1,11 +1,11 @@
-# Anvil
+# Enclume
 
 ## Package
 ```zenscript
 import mods.terrafirmacraft.Anvil;
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
 Anvil.addRecipe(String registryName, IIngredient input, IItemStack output, int minTier, String skillType, String... forgeRules);
