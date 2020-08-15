@@ -1,20 +1,20 @@
-# Liquid Bracket Handler
+# Gestionnaire de tranches de liquides
 
-The liquid Bracket Handler gives you access to the liquids in the game. It is only possible to get liquids registered in the game, so adding or removing mods may cause issues if you reference the mod's liquids in an liquid Bracket Handler.
+Le gestionnaire de brackets liquide vous donne accès aux liquides du jeu. Il n'est possible que de se faire enregistrer dans le jeu, donc l'ajout ou la suppression de mods peuvent causer des problèmes si vous faites référence aux liquides du mod dans un gestionnaire de brackets liquides.
 
-Liquids are referenced in the Liquid Bracket Handler by like so:
+Les liquides sont référencés dans le gestionnaire de pont de liquides par la même manière :
 
 ```zenscript
-<liquid:liquidname> OR <fluid:liquidname>
+<liquid:liquidname> OU <fluid:liquidname>
 
-<liquid:lava> OR <fluid:lava>
+<liquid:lava> OU <fluid:lava>
 ```
 
-If the liquid is found, this will return an ILiquidStack Object. Please refer to the [respective Wiki entry](/Vanilla/Liquids/ILiquidStack/) for further information on what you can do with these.
+Si le liquide est trouvé, cela retournera un objet ILiquidStack. Veuillez vous référer à la [entrée Wiki respective](/Vanilla/Liquids/ILiquidStack/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
 
-# Getting all Registered liquids
+# Obtenir tous les liquides enregistrés
 
-You can use the following command to output all registered liquids to the CraftTweaker log
+Vous pouvez utiliser la commande suivante pour afficher tous les liquides enregistrés dans le journal CraftTweaker
 
     /ct liquids
     /crafttweaker liquids
