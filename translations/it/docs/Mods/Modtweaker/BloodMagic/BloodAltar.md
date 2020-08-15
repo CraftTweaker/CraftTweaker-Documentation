@@ -1,23 +1,23 @@
-# Blood Altar
+# Altare Del Sangue
 
-## Package
+## Pacchetto
 
 `mods.bloodmagic.BloodAltar`
 
-## Addition
+## Addizione
 
-This creates a blood altar recipe that uses the given `input` item and produces the given `output` item.  
-To get the `minimumTier`, substract 1 from what JEI/the sigil tells you, so a T1 altar would require `0`.  
-The `syphon` value is the amount of Life Essence to syphon from the Blood Altar over the course of the craft.  
-The `consumeRate` is how quickly the Life Essence is syphoned.  
-The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
+Questo crea una ricetta di altare del sangue che utilizza l'elemento `input` dato e produce l'oggetto `output` fornito.  
+Per ottenere il `minimumTier`, substrato 1 da quello che JEI/il sigil ti dice, quindi un altare T1 richiederebbe `0`.  
+Il `syphon` valore è la quantità di Essenza della Vita per Sifone dall'Altare del Sangue nel corso dell'Arte.  
+Il `consumeRate` è quanto velocemente l'Essenza Vita è sinfonica.  
+Il `drainRate` è quanto velocemente si perde il progresso se l'Altare del Sangue finisce fuori dall'Essenza della Vita durante il mestiere.
 
 ```zenscript
 //mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
 mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
