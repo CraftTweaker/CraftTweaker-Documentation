@@ -1,25 +1,25 @@
-# IOreDict
+# IOREDict
 
-The Forge OreDictionary is like a huge Lexicon in the way that it features many different entries and each entry is described by fitting Items.  
-When talking about ore Dictionarys, people mostly refer to [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) not the whole ore Dictionary.
+Forge OreDictions就像一个庞大的词汇，它包含许多不同的条目，每个条目都被描述为合适的条目。  
+在谈到矿石字典时，人们大多引用 [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) 不是整个矿石字典。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.oredict.IOreDict;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.oredict.IORDict.`
 
-## How to retrieve the oreDictionary
+## 如何检索oreDictionary
 
-You can retrieve the OreDictionary using the [`oreDict` global keyword](/Vanilla/Global_Functions/).
+您可以使用 [`oredDict` 全局关键字](/Vanilla/Global_Functions/) 检索OreDiction。
 
-## Methods
+## 方法
 
-So what can be done with the oreDict?
+那么可以用雷迪克来做些什么？
 
-### Getting an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)
+### 获取 [IOreDictEnter](/Vanilla/OreDict/IOreDictEntry/)
 
-You can use either of the three ways below to refer to an OreDictEntry, no matter if it already exists or not.  
-If the oreDictEntry does not yet exist, it will be created.
+您可以使用下面三种方法中的任何一种方法来使用 OreDictEntry，不管它是否已经存在。  
+如果oredDictEnter不存在，它将被创建。
 
 ```zenscript
 oreDict.ingotIron;
@@ -27,10 +27,10 @@ oreDict.get("ingotIron");
 oreDict["ingotIron"];
 ```
 
-### Iterating through all registered [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
+### 通过所有注册的 [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/)
 
 ```zenscript
-//the entries member is for retrieving all registered oreDictionary entries!
+///该条目成员是为了检索所有注册的 oreDictionary 条目！
 val allEntries = oreDict.entries;
 
 for oreDictEntry in allEntries{
@@ -44,22 +44,22 @@ for entry in oreDict {
 
 ```
 
-## How to check if an ore Dictionary entry exists
+## 如何检查矿石字典记录是否存在
 
-You can use the `in` or `has` operator to check if an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) already exists:
+您可以使用</code> 或 `中的 <code>或` 操作员来检查一个 [IOreeDictentre](/Vanilla/OreDict/IOreDictEntry/) 是否已经存在：
 
 ```zenscript
-if (oreDict in "ingotIron") {
-    print("ingotIron exists!");
+if (oredDict in "ingotIron") 然后
+    print("ingotIron存在! );
 }
 
-if (oreDict has "ingotIron") {
-    print("ingotIron exists!");
+if (oreDict have "ingotIron") 然后
+    print("ingotIron存在! );
 }
 
 
-//Alternatively use the contains function:
-if(oreDict.contains "ingotIron") {
-    print("ingotIron exists!"); 
+//或者使用包含的函数:
+if(oreDict). ontains "ingotIron") Windows
+    print("ingotIron存在!"); 
 }
 ```
