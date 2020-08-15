@@ -1,8 +1,8 @@
-# Barrel
+# Barile
 
 ## Pacchetto
 ```zenscript
-import mods.terrafirmacraft.Barrel;
+import mods.terrafirmacraft.Barile;
 ```
 
 ## Addizione
@@ -16,4 +16,4 @@ Barrel.addRecipe(String registryName, @Optional IIngredient itemInput, ILiquidSt
 Barrel.removeRecipe(@Optional IItemStack outputItem, @Optional ILiquidStack outputLiquid)
 Barrel.removeRecipe(String registryName)
 ```
-- At least one output(liquid or item) must be supplied, for both removing and adding recipes.
+- Almeno una uscita (liquido o elemento) deve essere fornita, sia per la rimozione e l'aggiunta di ricette.
