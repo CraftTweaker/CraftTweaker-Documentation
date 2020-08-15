@@ -1,7 +1,7 @@
-# Fission
+# Rozszczepienie
 
-## Importing the Package
-`mods.nuclearcraft.fission`
+## Importowanie pakietu
+`Rozszczepienie`
 
 ## Dodawanie przepisów
 ```zenscript
