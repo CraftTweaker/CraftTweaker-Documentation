@@ -66,7 +66,7 @@ new ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Parameter | Type | Description            |
+| Parameter | Type | Beschreibung           |
 | --------- | ---- | ---------------------- |
 | maxDamage | int  | The maximum stack size |
 
@@ -112,9 +112,9 @@ new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| Parameter | Type   | Beschreibung |
-| --------- | ------ | ------------ |
-| rarity    | String | The rarity   |
+| Parameter  | Type   | Beschreibung |
+| ---------- | ------ | ------------ |
+| seltenheit | String | The rarity   |
 
 
 ### withType
