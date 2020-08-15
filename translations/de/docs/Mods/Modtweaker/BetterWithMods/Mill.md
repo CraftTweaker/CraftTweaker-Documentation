@@ -10,7 +10,7 @@ mods.betterwithmods.Mill.addRecipe(IIngredient[] inputs, IItemStack[] outputs);
 mods.betterwithmods.Mill.addRecipe([<minecraft:dirt>],[<minecraft:stone>]);
 ```
 
-## Removal
+## Entfernen
 
 * Remove a Mill recipe based on the output
 
