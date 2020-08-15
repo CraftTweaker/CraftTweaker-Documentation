@@ -11,6 +11,6 @@ This interface extends [IEntityEvent](/Vanilla/Events/Events/IEntityEvent/), whi
 
 ## ZenGetter
 
-| name       | type                                               |
+| name       | typ                                                |
 | ---------- | -------------------------------------------------- |
 | `rayTrace` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
