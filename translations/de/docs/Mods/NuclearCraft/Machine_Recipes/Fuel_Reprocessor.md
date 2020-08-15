@@ -1,6 +1,6 @@
-# Fuel Reprocessor
+# Brennstoff-Reprozessor
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.fuel_reprocessor`
 
 ## Rezepte hinzufügen
