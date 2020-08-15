@@ -1,4 +1,4 @@
-# Refinery
+# Raffinerie
 
 The Refinery is a multiblock structure which uses heat to convert an input fluid to two or more output fluids. The multiblock consists of two to four (inclusive) refinery blocks, and the number of possible output fluids is limited by the number of refinery blocks in the structure.
 
@@ -8,11 +8,11 @@ The Refinery will start processing fluids at the recipe's minimum temperature, a
 
 Note that it's possible to have two or more recipes with the same input, as long as the number of outputs is different. In this case, the recipe producing the most possible outputs (given the number of refinery blocks in the multiblock) will be used.
 
-## Calling
+## Anruf
 
 You can call the Refinery package using `mods.pneumaticcraft.refinery`.
 
-## Removing
+## Entfernen
 
 This function removes the first recipe it finds which matches all of the given [IIngredient](/Vanilla/Variable_Types/IIngredient/) `outputs`:
 
@@ -32,7 +32,7 @@ This function will remove *all* Refinery recipes:
 mods.pneumaticcraft.refinery.removeAllRecipes();
 ```
 
-## Adding
+## Hinzufügen
 
 These functions add a new recipe to the Refinery:
 
