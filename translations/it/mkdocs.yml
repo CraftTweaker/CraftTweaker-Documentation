@@ -24,7 +24,7 @@ nav:
               - ByteData: 'vanilla/api/data/ByteData.md'
               - DoubleData: 'vanilla/api/data/DoubleData.md'
               - FloatData: 'vanilla/api/data/FloatData.md'
-              - ICollectionData: 'vanilla/api/data/ICollectionData.md'
+              - ICollectionDati: 'vanilla/api/data/ICollectionData.md'
               - IData: 'vanilla/api/data/IData.md'
               - INumberData: 'vanilla/api/data/INumberData.md'
               - IntArrayData: 'vanilla/api/data/IntArrayData.md'
@@ -38,11 +38,11 @@ nav:
           - Entità:
               - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
               - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
-          - Entity:
+          - Entità:
               - Giocatore:
                   - MCPlayerEntity: 'vanilla/api/entity/player/MCPlayerEntity.md'
-          - Event:
-              - Entity:
+          - Evento:
+              - Entità:
                   - Giocatore:
                       - MCAdvancementEvent: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
                       - MCAnvilRepairEvent: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
@@ -52,13 +52,13 @@ nav:
                       - MCBonemealEvent: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
                       - MCCriticalHitEvent: 'vanilla/api/event/entity/player/MCCriticalHitEvent.md'
                       - MCEntityItemPickupEvent: 'vanilla/api/event/entity/player/MCEntityItemPickupEvent.md'
-                      - MCFillBucketEvent: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
+                      - MCFillBucketEvento: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
                       - MCItemFishedEvent: 'vanilla/api/event/entity/player/MCItemFishedEvent.md'
                       - MCItemTooltipEvent: 'vanilla/api/event/entity/player/MCItemTooltipEvent.md'
                       - MCPlayerDestroyItemEvent: 'vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md'
                       - MCPlayerFlyableFallEvent: 'vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md'
                       - MCPlayerSetSpawnEvent: 'vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md'
-                      - MCPlayerSleepInBedEvent: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
+                      - MCPlayerSleepInBedEvento: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
                       - MCPlayerWakeUpEvent: 'vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md'
                       - MCSleepingLocationCheckEvent: 'vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md'
                       - MCSleepingTimeCheckEvent: 'vanilla/api/event/entity/player/MCSleepingTimeCheckEvent.md'
@@ -70,7 +70,7 @@ nav:
                           - MCItemCraftedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
                           - MCItemPickupEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md'
                           - MCItemSmeltedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md'
-                          - MCPlayerChangedDimensionEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
+                          - MCPlayerChangedDimensioneEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
                           - MCPlayerLoggedInEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedInEvent.md'
                           - MCPlayerLoggedOutEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md'
                           - MCPlayerRespawnEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
@@ -78,22 +78,22 @@ nav:
                           - MCEntityInteract: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract.md'
                           - MCEntityInteractSpecific: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteractSpecific.md'
                           - MCLeftClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock.md'
-                          - MCLeftClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
+                          - MCLeftClickVuoto: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
                           - MCRightClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock.md'
-                          - MCRightClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
+                          - MCRightClickVuoto: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
                           - MCRightClickItem: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem.md'
                       - PlayerXpEvent:
                           - MCLevelChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCLevelChange.md'
                           - MCPickupXp: 'vanilla/api/event/entity/player/PlayerXpEvent/MCPickupXp.md'
                           - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
-          - Food:
+          - Cibo:
               - MCFood: 'vanilla/api/food/MCFood.md'
           - Articoli:
-              - IIngredient: 'vanilla/api/items/IIngredient.md'
+              - IIngrediente: 'vanilla/api/items/IIngredient.md'
               - IItemStack: 'vanilla/api/items/IItemStack.md'
           - Logger:
               - ILogger: 'vanilla/api/logger/ILogger.md'
-          - Managers:
+          - Dirigenti:
               - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
               - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
               - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
@@ -102,20 +102,20 @@ nav:
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
               - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-          - Recipe:
+          - Ricetta:
               - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
               - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
               - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
               - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
           - Pozioni:
-              - MCPotion: 'vanilla/api/potions/MCPotion.md'
-              - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
-              - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
+              - MCPozione: 'vanilla/api/pozioni/MCPotion.m'
+              - MCPotionEffect: 'vanilla/api/pozioni/MCPotionEffect.md'
+              - MCPotionEffectInstance: 'vanilla/api/pozioni/MCPotionEffectInstance.md'
           - Tags:
               - MCTag: 'vanilla/api/tags/MCTag.md'
           - Util:
               - BlockPos: 'vanilla/api/util/BlockPos.md'
-              - Direction: 'vanilla/api/util/Direction.md'
+              - Direzione: 'vanilla/api/util/Direction.md'
               - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
           - Mondo:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
@@ -123,10 +123,10 @@ nav:
   - Mod:
     - Botany Pots:
       - Crop: 'mods/botanypots/Crop.md'
-      - Fertilizer: 'mods/botanypots/Fertilizer.md'
-      - Soil: 'mods/botanypots/Soil.md'
+      - Fertilizzante: 'mods/botanypots/Fertilizer.md'
+      - Suolo: 'mods/botanypots/Soil.md'
     - ContentTweaker:
-      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - Semplice Passeggiata: 'mods/contenttweaker/SimpleWalkthrough.md'
       - API:
         - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
         - Api:
@@ -134,27 +134,27 @@ nav:
         - Blocco:
           - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
           - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
-          - Basic:
+          - Base:
             - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
-          - Pillar:
+          - Pilastro:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
-          - Stairs:
+          - Scale
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
         - Articolo:
           - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
           - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
           - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
           - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
-          - Basic:
+          - Base:
             - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
-          - Tool:
+          - Strumente:
             - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
     - InitialInventory:
         - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
     - JEITweaker:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - StoneAge:
-        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+        - Asciugamento: 'mods/StoneAge/DryingRackManager.md'
         - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
         - Millstone: 'mods/StoneAge/MillstoneManager.md'
         - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
