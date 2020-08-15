@@ -19,7 +19,7 @@ PlayerSleepInBed Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter | Return Type                          |
+| ZenGetter | Tipo Di Reso                         |
 | --------- | ------------------------------------ |
 | `x`       | int                                  |
 | `y`       | int                                  |
