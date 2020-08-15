@@ -7,30 +7,30 @@ import mods.roots.Fey;
 #### 可用方法
 
 ```zenscript
-void addRecipe(
-  string name,         // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,   // the itemstack produced by this recipe
-  IIngredient[] inputs // an array of IIngredients that make up the recipe; must contain 5 items
-);
+无效的 addRecipe(
+  字符串名称, // 累计名称; 如果替换现有的配方，肯定要使用相同的名称来确保Patchouli的连续性
+  IItemStack输出， // 由此配方
+  IIngredient[…]输入// 构成累犯的IIngredients 数组； 必须包含 5 个项目
+;
 ```
 
 * * *
 
 ```zenscript
-void addRecipe(
-  string name,          // the name of the recipe; if replacing an existing recipe, be sure to use the same name to ensure Patchouli continuity
-  IItemStack output,    // the itemstack produced by this recipe
-  IIngredient[] inputs, // an array of IIngredients that make up the recipe; must contain 5 items
-  int xp                // the amount of xp (in levels) to reward the player for crafting this recipe
-);
+无效的 addRecipe(
+  字符串名称, // 累计名称; 如果替换现有的配方，肯定要使用相同的名称来确保Patchouli的连续性
+  IItemStack输出， // 由此配方
+  IIngredient[…]投入、// 构成累犯的IIngredients 数组； 必须包含 5 个项目
+  整数// xp (级别) 以奖励玩家制作这个配方
+;
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
-);
+无效的removeRecipe(
+  IItemStack 输出 // 你想要删除的
+ 的配方生产的物品)；
 ```
 
 * * *
