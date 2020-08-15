@@ -1,5 +1,5 @@
-# TComplement
+# Uzupełnianie
 
-The Tinkers' Complement Package is used solely for altering the TComplement melter.
+Pakiet dotyczący suplementów dietetycznych jest wykorzystywany wyłącznie do zmiany procesu topienia plastra.
 
-You can either alter its [overrides](/Mods/Modtweaker/TComplement/Handlers/Overrides) or its [Blacklist](/Mods/Modtweaker/TComplement/Handlers/Blacklist).
+Możesz zmienić jego [nadpisane](/Mods/Modtweaker/TComplement/Handlers/Overrides) lub [czarną listę](/Mods/Modtweaker/TComplement/Handlers/Blacklist).
