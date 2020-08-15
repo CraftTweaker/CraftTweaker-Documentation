@@ -1,15 +1,15 @@
-# Scrapbox
+# 废纸箱
 
-## Importing the Package
-`mods.techreborn.scrapbox`
+## 导入软件包
+`mods.techreborn.scrappox`
 
-## Adding Drops
+## 添加掉落中
 ```zenscript
-mods.techreborn.scrapbox.addScrapboxDrop(IIngredient input);
+mods.techreborn.scrappbox.addScrappboxDrop(Ingredient input)；
 ```
 
-## Removing Drops
+## 删除掉落中
 ```zenscript
-mods.techreborn.scrapbox.removeRecipe(IItemStack output);
-mods.techreborn.scrapbox.removeAll();
+mods.techreborn.scrappox.removeRecipe(IItemStack 输出);
+mods.techreborn.scrappbox.removeAll();
 ```
