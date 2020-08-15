@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues (
     </th>
     
     <th>
-      Type
+      タイプ
     </th>
   </tr>
   
