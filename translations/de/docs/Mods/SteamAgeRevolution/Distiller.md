@@ -20,7 +20,7 @@ mods.steamagerevolution.Distiller.addRecipe(ILiquidStack input, IItemStack outpu
 mods.steamagerevolution.Distiller.addRecipe(<liquid:bio_fuel>*1000, <minecraft:dirt>, <liquid:ethanol>*1000, 200, 200);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript mods.steamagerevolution.Distiller.removeRecipe(IItemStack outputStack, ILiquidStack output); mods.steamagerevolution.Distiller.removeRecipe(<minecraft:cobblestone>, <liquid:lava>);
 
