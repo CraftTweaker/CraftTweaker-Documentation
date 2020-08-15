@@ -1,19 +1,19 @@
 # IPlayerEvent
 
-This interface is extended by all events that have a player.  
-That means you can use the getter below to access the player.
+此接口被所有有玩家的事件扩展。  
+意味着您可以使用下面的getter访问玩家。
 
-## Importing the class
+## 导入相关包
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IPlayerEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftmilower.event.IPlayerEvent；`
 
-## Extending ILivingEvent
+## 扩展 ILivingEvent
 
-This interface extends [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), which means that all functionality that ILivingEvent offers is also present in IPlayerEvent
+此接口扩展 [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/), 这意味着ILivingEvent 提供的所有功能也都存在于IPlayerEvent
 
 ## ZenGetters
 
-| name   | type                                 |
-| ------ | ------------------------------------ |
-| player | [IPlayer](/Vanilla/Players/IPlayer/) |
+| 名称  | 类型                                   |
+| --- | ------------------------------------ |
+| 播放器 | [IPlayer](/Vanilla/Players/IPlayer/) |
