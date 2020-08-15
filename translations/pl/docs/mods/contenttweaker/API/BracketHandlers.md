@@ -8,13 +8,13 @@ I advise against using the static methods in this class directly as they may be 
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.BracketHandlers
 ```
 
-## Methods
+## Metody
 ### getItemGroup
 
 Gets the itemGroup. Will throw an error if the group could not be found
@@ -30,9 +30,9 @@ mods.contenttweaker.BracketHandlers.getItemGroup(tokens as String);
 mods.contenttweaker.BracketHandlers.getItemGroup("misc");
 ```
 
-| Parameter | Type   | Description                                 |
-| --------- | ------ | ------------------------------------------- |
-| tokens    | String | What you createDataCompound in the BEP call |
+| Parametr | Typ         | Opis                                        |
+| -------- | ----------- | ------------------------------------------- |
+| tokens   | Ciąg znaków | What you createDataCompound in the BEP call |
 
 
 ### getToolType
@@ -50,9 +50,9 @@ mods.contenttweaker.BracketHandlers.getToolType(tokens as String);
 mods.contenttweaker.BracketHandlers.getToolType("shovel");
 ```
 
-| Parameter | Type   | Description                                       |
-| --------- | ------ | ------------------------------------------------- |
-| tokens    | String | What you would createDataCompound in the BEP call |
+| Parametr | Typ         | Opis                                              |
+| -------- | ----------- | ------------------------------------------------- |
+| tokens   | Ciąg znaków | What you would createDataCompound in the BEP call |
 
 
 
