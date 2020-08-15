@@ -1,4 +1,4 @@
-# Heating Sources
+# 供暖源
 
 ## 所属包名
 ```zenscirpt
@@ -7,8 +7,8 @@
 
 ## 使用方式
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
-- **Int heat** heat per instance.
+- **[IItemStack](/Vanilla/Items/IItemStack/) 输入** 提供热量的方块。
+- **内部热** 每实例加热。
 
 ## 添加配方
 
