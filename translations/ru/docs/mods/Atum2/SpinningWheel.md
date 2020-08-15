@@ -1,49 +1,49 @@
-# Spinning Wheel
+# Вращающееся колесо
 
 ## Пакет
 `mods.atum.SpinningWheel;`
 
-## Adding a Recipe
+## Добавление рецепта
 
-`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
+`mods.atum.SpinningWheel.addRecipe(ввод, вывод, вращения);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `вращения` любое число выше 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
+Добавляет рецепт с указанным вводом & вывода который принимает указанные вращения для завершения рецепта
 
 ```zenscript
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Удаление рецепта
 
-### Remove Recipes by Output
+### Удалить рецепты по выходу
 
-`mods.atum.SpinningWheel.removeRecipeByOutput(output);`
+`mods.atum.SpinningWheel.removeRecipeByOutput(Выход);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Удаляет все рецепты, в которых приведен результат, предоставленный [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
-### Remove Recipes by Output & Input
+### Удалить рецепты по Выходу & Вход
 
 `mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Удаляет определенный рецепт с указанным выводом & ввод
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
-### Other removal methods
+### Другие методы удаления
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+Смотрите [менеджеров рецептов](/recipes/recipe_managers) для других способов удаления рецептов вращающегося колеса
