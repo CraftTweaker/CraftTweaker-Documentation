@@ -1,6 +1,6 @@
 # Heating
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Heating;Heating;
 ```
