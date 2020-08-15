@@ -1,23 +1,23 @@
-# Infusion
+# Infusione
 
-This package allows you to add and remove recipes to/from the Infusion.
+Questo pacchetto consente di aggiungere e rimuovere ricette da/per l'Infusione.
 
 ## Importazione del pacchetto
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+È possibile [importare](/AdvancedFunctions/Import/) il pacchetto e i suoi metodi per facilitare il retrival dei metodi.
 
 ```zenscript
 import mods.thaumcraft.Infusion;
 ```
 
-## Adding recipes
+## Aggiungere ricette
 
 ```zenscript
-//mods.thaumcraft.Infusion.registerRecipe(String name, String research, IItemStack output, int instability, CTAspectStack[] aspects, IIngredient centralItem, IIngredient[] recipe);
-mods.thaumcraft.Infusion.registerRecipe("testName", "", <minecraft:diamond>, 20, [<aspect:aer>, <aspect:ignis>], <minecraft:grass>, [<minecraft:stick>, <minecraft:dirt>]);
+//mods.thaumcraft.Infusion.registerRecipe(nome string, ricerca string, output IItemStack, int instabilità, aspetti CTAspectStack[], Ricetta IIngrediente centralItem, IIngredient[]);
+mods. haumcraft.Infusion.registerRecipe("testName", "", <minecraft:diamond>, 20, [<aspect:aer>, <aspect:ignis>], <minecraft:grass>, [<minecraft:stick>, <minecraft:dirt>]);
 ```
 
-## Removing recipes
+## Rimozione ricette
 
 ```zenscript
 //mods.thaumcraft.Infusion.removeRecipe(String name);
