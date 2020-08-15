@@ -1,108 +1,108 @@
-# Radiation
-**Note: The double set of brackets `([...])` is not required here!**
+# Radiazione
+**Nota: il doppio set di parentesi `([...])` non è obbligatorio qui!**
 
-## Radiation
-This method gets the radiation of an `IIngredient` in rads/tick.
+## Radiazione
+Questo metodo ottiene la radiazione di un `IIngrediente` in rads/tick.
 ```zenscript
 mods.nuclearcraft.radiation.getRadiationLevel(itemInput);
 ```
-## Block Mutations
-This method adds a block mutation. The Block will not mutate when the radiation is below `radiationThreshold`.
+## Mutazioni Del Blocco
+Questo metodo aggiunge una mutazione di blocco. Il blocco non muterà quando la radiazione è sotto `radiazioneSoglia`.
 ```zenscript
-mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, double radiationThreshold);
+mods.nuclearcraft.radiation.addBlockMutation(blockInput, blockOutput, doppia radiazioneSoglia);
 ```
 
-## Radiation Immunity
-This method gives the ability to control the immunity of players depending on the stage. `defaultImmunity` is a boolean specifiying the players' immunity without the specified stages. `stageNames` is an array of the names of all stages that can toggle the immunity of players.
+## Immunità Alle Radiazioni
+Questo metodo dà la capacità di controllare l'immunità dei giocatori a seconda della fase. `defaultImmunity` è un booleano che specifica l'immunità dei giocatori senza le fasi specificate. `stageNames` è una serie di nomi di tutte le fasi che possono attivare o disattivare l'immunità dei giocatori.
 ```zenscript
 mods.nuclearcraft.radiation.setRadiationImmunityGameStages(boolean defaultImmunity, string[] stageNames);
 ```
 
-## Radiation Getters/Setters
+## Impostatori Di Radiazioni
 
-### Adding Radiation
-`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### Aggiunta Di Radiazioni
+`amount` is the amount of radiation added to the `IEntityLivingBase`. `useImmunity` controlla se la funzione si verifica anche la `IEntityLivingBase` è immune.
 ```zenscript
-IEntityLivingBase.addRadiation(double amount, @Optional boolean useImmunity);
+IEntityLivingBase.addRadiation(doppio importo, @Optional boolean useImmunity);
 ```
 
-### Setting Radiation
-`amount` is the level of radiation that is applied to the `IEntityLivingBase`. `useImmunity` controls whether the function occurs even the `IEntityLivingBase` is immune.
+### Impostazione Radiazione
+`amount` is the level of radiation that is applied to the `IEntityLivingBase`. `useImmunity` controlla se la funzione si verifica anche la `IEntityLivingBase` è immune.
 ```zenscript
 IEntityLivingBase.setRadiation(double amount, @Optional boolean useImmunity);
 ```
 
-### Getting Radiation
-This method returns the level of radiation of the `IEntityLivingBase`.
+### Ottenere Le Radiazioni
+Questo metodo restituisce il livello di radiazione della `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadiation();
 ```
 
 ## Radaway Buffer Getters/Setters
 
-### Adding Radaway Buffer
-`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### Aggiungere Buffer Radaway
+`amount` is the amount of Radaway Buffer added to the `IEntityLivingBase`. `slowBuffer` decide se il Radaway Buffer aggiunto è un buffer lento.
 ```zenscript
-IEntityLivingBase.addRadiationResistance(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase.addRadiationResistance(doppio importo, @Optional boolean slowBuffer);
 ```
-### Setting Radaway Buffer
-`amount` is the amount of Radaway Buffer that is applied to the `IEntityLivingBase`. `slowBuffer` decides if the Radaway Buffer added is a slow buffer.
+### Impostazione Buffer Radaway
+`amount` is the amount of Radaway Buffer that is applied to the `IEntityLivingBase`. `slowBuffer` decide se il Radaway Buffer aggiunto è un buffer lento.
 ```zenscript
-IEntityLivingBase.setRadiationResistance(double amount, @Optional boolean slowBuffer);
+IEntityLivingBase.setRadiationResistance(doppio importo, @Optional boolean slowBuffer);
 ```
 
-### Getting Radaway Buffer
-This method returns the Radaway Buffer of the `IEntityLivingBase`. `slowBuffer` determines whether slow buffer is included in the returned value.
+### Ottenere Radaway Buffer
+Questo metodo restituisce il Buffer Radaway della `IEntityLivingBase`. `slowBuffer` determina se il buffer lento è incluso nel valore restituito.
 ```zenscript
 IEntityLivingBase.getRadiationResistance(@Optional boolean slowBuffer);
 ```
 
-## Poison Buffer Getters/Setters
+## Buffer Di Veleno Getters/Setters
 
-### Adding Poison Buffer
-`amount` is the amount of Poison Buffer added to the `IEntityLivingBase`.
+### Aggiungere Buffer Veleno
+`amount` is the amount of Velison Buffer added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.addPoisonBuffer(double amount);
+IEntityLivingBase.addPoisonBuffer(importo doppio);
 ```
-### Setting Poison Buffer
-`amount` is the amount of Poison Buffer that is applied to the `IEntityLivingBase`.
+### Impostazione Buffer Veleno
+`amount` is the amount of Velison Buffer that is applied to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.setPoisonBuffer(double amount);
+IEntityLivingBase.setPoisonBuffer(importo doppio);
 ```
 
-### Getting Poison Buffer
-This method returns the Poison Buffer of the `IEntityLivingBase`.
+### Ottenere Buffer Di Veleno
+Questo metodo restituisce il Buffer Veleno della `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getPoisonBuffer();
 ```
 
-## Radiation Resistance Getters/Setters
-### Adding Radiation Resistance
+## Resistenza Alle Radiazioni/Regolatori
+### Aggiungere Resistenza Alle Radiazioni
 `amount` is the amount of Radiation Resistance added to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.addRadawayBuffer(double amount);
+IEntityLivingBase.addRadawayBuffer(importo doppio);
 ```
-## Setting Radiation Resistance
+## Impostazione Resistenza Alle Radiazioni
 `amount` is the amount of Radiation Resistance that is applied to the `IEntityLivingBase`.
 ```zenscript
-IEntityLivingBase.setRadawayBuffer(double amount);
+IEntityLivingBase.setRadawayBuffer(importo doppio);
 ```
 
-## Getting Radiation Resistance
-This method returns the Radiation Resistance of the `IEntityLivingBase`.
+## Ottenere La Resistenza Alle Radiazioni
+Questo metodo restituisce la Resistenza alle Radiazioni della `IEntityLivingBase`.
 ```zenscript
 IEntityLivingBase.getRadawayBuffer();
 ```
-## Radiation Level Getters
+## Getters Di Livello Radiazione
 
-### Raw Radiation Level
-This method returns the radiation of the `IEntityLivingBase` in rads.
+### Livello Di Radiazione Cruda
+Questo metodo restituisce la radiazione della `IEntityLivingBase` nei rads.
 ```zenscript
 IEntityLivingBase.getRawRadiationLevel();
 ```
 
-### Radiation Level
-This method returns the change in radiation level of the `IEntityLivingBase` in rads/tick.
+### Livello Di Radiazione
+Questo metodo restituisce la variazione del livello di radiazione della `IEntityLivingBase` in rads/tick.
 ```zenscript
 IEntityLivingBase.getRadiationLevel();
 ```
