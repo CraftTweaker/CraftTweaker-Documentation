@@ -6,12 +6,12 @@
 import mods.calculator.fabricationChamber;
 ```
 
-## Methods
+## Métodos
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The outputs.
 
 
-## Addition
+## Adicional
 ```zenscript
 fabricationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
