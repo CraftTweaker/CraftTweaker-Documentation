@@ -3,47 +3,47 @@
 ## Пакет
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## Добавление рецепта
 
-`mods.atum.Quern.addRecipe(input, output, rotations);`
+`mods.atum.Quern.addRecipe(ввод, вывод, вращения);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `вращения` любое число выше 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
+Добавляет рецепт с заданным входом & выходом, который принимает указанные вращения для завершения запроса
 
 ```zenscript
 mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
 ```
 
-## Removing a Recipe
+## Удаление рецепта
 
-### Remove Recipes by Output
+### Удалить рецепты по выходу
 
-`mods.atum.Quern.removeRecipeByOutput(output);`
+`mods.atum.Quern.removeRecipeByOutput(Выход);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Удаляет все рецепты, в которых приведен результат, предоставленный [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
 ```
 
-### Remove Recipes by Output & Input
+### Удалить рецепты по Выходу & Вход
 
-`mods.atum.Quern.removeRecipeByOutputInput(output, input);`
+`mods.atum.Quern.removeRecipeByputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Удаляет определенный рецепт с указанным выводом & ввод
 
 ```zenscript
 mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Other removal methods
+### Другие методы удаления
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
+Смотрите [менеджеров рецептов](/recipes/recipe_managers) для других способов удаления рецептов Quern
