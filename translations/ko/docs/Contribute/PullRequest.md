@@ -4,7 +4,7 @@
 
 You need to have [created](/Contribute/OnlineEditor_Create) and/or [modified](/Contribute/OnlineEditor_Edit) files in your fork of the wiki.
 
-## Introduction
+## 소개
 
 After you have created or modified whatever you were trying to do, you need to get the changes to the original repository.  
 This guide will show you how to create a PR to apply your changes to the actual wiki.
