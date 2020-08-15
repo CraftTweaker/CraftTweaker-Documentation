@@ -1,12 +1,12 @@
-# PriorityPreprocessor
+# PrioritàPreprocessore
 
-The Priority Preprocessor allows you to give your scripts a loading priority.
+Il Preprocessore Priorità consente di dare agli script una priorità di caricamento.
 
-## Call
+## Chiama
 
-You call the Priority Preprocessor by adding `#priority number` to your script with `number` being the priority number you want to set.
+Si chiama il Preprocessore di Priorità aggiungendo `#numero di priorità` al tuo script con `numero` che è il numero di priorità che si desidera impostare.
 
-## What it does
+## Che cosa fa
 
-The higher a script's priority the earlier it is getting executed.  
-Scripts with the same priority will be sorted alphabetically using their pathname.
+Maggiore è la priorità di uno script prima che venga eseguito.  
+Gli script con la stessa priorità saranno ordinati alfabeticamente usando il loro nome percorso.
