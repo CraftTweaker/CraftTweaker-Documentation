@@ -1,8 +1,8 @@
-# Bottling Machine
+# Máquina explosiva
 
-## Calling The Package
+## Llamar al paquete
 
-You can call the BottlingMachine package using `mods.immersiveengineering.BottlingMachine`.
+Puede llamar al paquete BottlingMachine usando `mods.immersiveengineering.BottlingMachine`.
 
 ## Añadir Receta
 
@@ -15,12 +15,12 @@ You can call the BottlingMachine package using `mods.immersiveengineering.Bottli
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.BottlingMachine.addRecipe(IItemStack output, IIngredient input, ILiquidStack fluid);
 mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:logWood>, <liquid:water>);
 ```
 
-## Remove Recipe
+## Eliminar receta
 
 | Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
@@ -29,7 +29,7 @@ mods.immersiveengineering.BottlingMachine.addRecipe(<minecraft:diamond>, <ore:lo
 ### Ejemplo
 
 ```zenscript
-//Example:
+//Ejemplo:
 mods.immersiveengineering.BottlingMachine.removeRecipe(IItemStack output);
 mods.immersiveengineering.BottlingMachine.removeRecipe(<minecraft:diamond>);
 ```
