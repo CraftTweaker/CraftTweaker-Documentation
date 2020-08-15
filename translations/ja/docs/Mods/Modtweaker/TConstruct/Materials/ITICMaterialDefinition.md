@@ -1,16 +1,16 @@
 # ITICMaterialDefinition
 
-An ITICMaterialDefinition is an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) definition.  
-You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) object.
+ITICMaterialDefinition は [ITICMaterialの](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) 定義です。  
+これを使用して [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) オブジェクトに関する情報を取得できます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Retrieving such an object
+## そのようなオブジェクトを取得しています
 
-You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
+[ITICMaterialの](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `定義` ZenGetterからITICMaterialDefinition を取得できます。
 
 ```zenscript
 val def = <ticmat:stone>.definition;
@@ -18,7 +18,7 @@ val def = <ticmat:stone>.definition;
 
 ## ZenGetters
 
-| ZenGetter   | 戻り値    | Description                   |
-| ----------- | ------ | ----------------------------- |
-| name        | string | The material's internal name  |
-| displayName | string | The material's localized name |
+| ZenGetter   | 戻り値 | 説明            |
+| ----------- | --- | ------------- |
+| name        | 文字列 | マテリアルの内部名     |
+| displayName | 文字列 | マテリアルのローカライズ名 |
