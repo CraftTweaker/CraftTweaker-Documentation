@@ -15,7 +15,7 @@ You can trade for items on minebay.
 - 2x Night Vision Potion (3:00) for 1x Emerald
 - Recipe Book given 1x Emerald
 
-## Removing
+## 削除中
 
 ## Remove matching trades.
 
@@ -30,7 +30,7 @@ mods.cfm.MineBay.remove();
 
 Currently only supports removing by trade result.
 
-## Adding
+## 追加中
 
 ## Add a trade.
 
