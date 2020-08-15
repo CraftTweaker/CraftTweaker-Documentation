@@ -28,6 +28,6 @@ The following information can be retrieved/set during the event:
 | `originalRatioX`   |            | double                                |
 | `originalRatioZ`   |            | double                                |
 
-## Notes
+## Notizen
 
 When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.
