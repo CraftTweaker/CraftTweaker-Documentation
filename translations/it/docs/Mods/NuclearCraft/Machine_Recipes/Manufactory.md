@@ -1,6 +1,6 @@
-# Manufactory
+# Produzione
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.manufactory`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double
 ```zenscript
 mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.manufactory.removeAllRecipes();
+mods.nuclearcraft.manufactory.removeAllRicette();
 ```
