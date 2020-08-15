@@ -1,54 +1,54 @@
-# Seeds
+# 种子
 
-Seeds are things you get from punching tall grass.
+种子是你从冲锋利的草地得到的东西。
 
-## Print all seeds to the log
+## 打印所有种子到日志
 
-This command will print all registered seeds to the log.
+此命令将所有注册种子打印到日志。
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+需要玩家或控制台执行，不能写入zs文件。
 
     1.12
-    /ct seeds
+    /ct 种子
     
     pre-1.12
-    /mt seeds
+    /mt 种源
     
 
-## Add a seed drop
+## 添加种子掉落
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
-
-```zenscript
-vanilla.seeds.addSeed(item);
-```
-
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+添加 `条项目` 作为种子滴。  
+**重量与草种相对，草种的重量为 10 (asset10%)！**
 
 ```zenscript
-//adds carrots with a weight of 1
-vanilla.seeds.addSeed(<minecraft:carrot> % 1);
+vanilla.seeds.addSeed(items)；
 ```
 
-## Remove a seed drop
-
-Stops `item` from being a seed drop.
+`项目` 是一个 [重量的物品](/Vanilla/Items/WeightedItemStack/)。 这意味着什么？ 它只是意味着你需要给它一个像这样的百分比：
 
 ```zenscript
-vanilla.seeds.removeSeed(item);
+//添加重量为 1
+vanilla.seeds.addSeed(<minecraft:carrot> %1);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+## 删除种子掉落
 
-## Retrieve all registered Seeds
+停止 `个项目` 不再是种子掉落。
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+```zenscript
+vanilla.seeds.removeSeed(items)；
+```
+
+`项目` 是一个 [IIngredient](/Vanilla/Variable_Types/IIngredient/)。
+
+## 获取所有注册种子
+
+返回所有项目作为 [重量物品堆栈](/Vanilla/Items/WeightedItemStack/) 列表。
 
 ```zenscript
 val seedList = vanilla.seeds.seeds;
 
-for item in seedList {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
-}
+for item in seedList Group,
+    print("Item: " ~item. 抓取.displayname ~" |机会: " ~ item.percent ~"%";
+
 ```
