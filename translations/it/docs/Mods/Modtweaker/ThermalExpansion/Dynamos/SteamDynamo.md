@@ -1,8 +1,8 @@
-# Steam Dynamo
+# Dinamo A Vapore
 
-## Import the package
+## Importa il pacchetto
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Per abbreviare le chiamate di metodo è possibile [importare](/AdvancedFunctions/Import/) il pacchetto in questo modo:
 
 ```zenscript
 import mods.thermalexpansion.SteamDynamo;
