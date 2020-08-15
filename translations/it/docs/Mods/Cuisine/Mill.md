@@ -7,8 +7,8 @@ import mods.cuisine.Mill;
 
 Mill.add(IIngredient input, ILiquidStack inputFluid, IItemStack output, ILiquidStack outputFluid);
 
-Mill.add(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
-Mill.add(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
+Mill. dd(<item:minecraft:dirt> * 2, null, <item:minecraft:diamond>, null);
+Mill. dd(<ore:cobblestone> * 4, <liquid:water> * 1000, null, <liquid:lava> * 1000);
 ```
 
 ## Rimozione
@@ -28,6 +28,6 @@ Mill.remove(String id);
 
 Mill.remove("recipe_name");
 
-// Remove everything!
+// Rimuovi tutto!
 Mill.removeAll();
 ```
