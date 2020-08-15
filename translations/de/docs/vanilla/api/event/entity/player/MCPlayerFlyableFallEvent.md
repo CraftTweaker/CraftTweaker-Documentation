@@ -102,7 +102,7 @@ myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 myMCPlayerFlyableFallEvent.setDistance(distance as float);
 ```
 
-| Parameter | Type  | Description             |
+| Parameter | Type  | Beschreibung            |
 | --------- | ----- | ----------------------- |
 | distance  | float | No description provided |
 
