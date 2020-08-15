@@ -7,15 +7,15 @@ The IItemFoodEaten function is called whenever the associated [food item](/Mods/
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemFoodEaten;`
 
-## Parameters
+## Параметры
 
 The IItemFoodEaten is a function with the following parameters (In this order):
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The food item being eaten.
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) мир → мир, в котором находится игрок
 - [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
 
-## Examples
+## Примеры
 
 ```zenscript
 #loader contenttweaker
