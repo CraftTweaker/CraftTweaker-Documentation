@@ -1,34 +1,34 @@
 # 磨粉机
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Crusher through the command `/ct mekrecipes crusher`
+到Mekanism 9.7.0 现在可以透过命令 `/ct mektaches her的命令` 查看Crusher的所有配方字符串。
 
-## Addition
+## 加
 
 ```zenscript
-mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack);
+mods.mekanism.crither.addRecipe(IIngredient inputStack, IItemStack outputStack);
 
-mods.mekanism.crusher.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
+mods.mekanis.crither.addRecipe(<minecraft:double_plant:4>, <minecraft:dye:1> * 5);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
-## Removal
+## 移除
 
 ```zenscript
-mods.mekanism.crusher.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
+mods.mekanism.crither.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack);
 
-mods.mekanism.crusher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
-mods.mekanism.crusher.removeRecipe(<minecraft:gravel>);
+mods.mekanism.crasher.removeRecipe(<minecraft:sand>, <minecraft:gravel>);
+mods.mekanism.crither.removeRecipe(<minecraft:gravel>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Crusher recipes. (This excludes any recipes added via CraftTweaker)
+到Mekanism 9.7.0，现在可以移除所有十字架配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
-mods.mekanism.crusher.removeAllRecipes();
+mods.mekanism.crither.removeAllRecipes();
 ```
