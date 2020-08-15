@@ -14,7 +14,7 @@ if (AxeChopping.isEnabled()) {
 }
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -29,7 +29,7 @@ AxeChopping.add(IOreEntry input, IItemStack output);
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 import mods.cuisine.AxeChopping;
