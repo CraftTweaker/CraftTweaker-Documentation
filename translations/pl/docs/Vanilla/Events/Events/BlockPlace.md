@@ -1,15 +1,15 @@
 
 # BlockPlaceEvent
 
-The BlockBreak Event is fired whenever a block is being placed. You can cancel the event to prevent the block from being placed.
+Wydarzenie BlockBreak jest uruchamiane za każdym razem, gdy blok jest umieszczony. Możesz anulować wydarzenie, aby zapobiec umieszczeniu bloku.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockPlaceEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. lockPlaceEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-BlockPlace Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockPlace Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
@@ -18,9 +18,9 @@ BlockPlace Events implement the following interfaces and are able to call all of
 ## ZenGetters
 Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter       | ZenSetter | Typ                                          |
-| --------------- | --------- | -------------------------------------------- |
-| `gracz`         |           | [IPlayer](/Vanilla/Players/IPlayer/)         |
-| `bieżący`       |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
-| `placedAgainst` |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
-| `dłoń`          |           | Ciąg znaków                                  |
+| ZenGetter  | ZenSetter | Typ                                          |
+| ---------- | --------- | -------------------------------------------- |
+| `gracz`    |           | [IPlayer](/Vanilla/Players/IPlayer/)         |
+| `bieżący`  |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
+| `PostedAW` |           | [Stan IBlocka](/Vanilla/Blocks/IBlockState/) |
+| `dłoń`     |           | Ciąg znaków                                  |
