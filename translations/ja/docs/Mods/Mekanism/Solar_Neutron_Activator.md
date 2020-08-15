@@ -1,29 +1,29 @@
 # Solar Neutron Activator
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Solar Neutron Activator through the command `/ct mekrecipes solarneutronactivator`
+Mekanism 9.7. コマンド `/ct mekrecipes solarneutronactivator` を通して、太陽中性子アクティベーターのすべてのレシピストリングを見ることができるようになりました。
 
-## Addition
+## 加算
 
 ```zenscript
 mods.mekanism.solarneutronactivator.addRecipe(IGasStack gasInput, IGasStack gasOutput);
 
-mods.mekanism.solarneutronactivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
+mods.mekanism.solarnutivator.addRecipe(<gas:sulfurdioxide>, <gas:sulfurtrioxide>);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
-mods.mekanism.solarneutronactivator.removeRecipe(IIngredient gasInput, @Optional IIngredient gasOutput);
+mods.mekanism.solarneutronactivator.removeRecipe(IInput, @Optional IIngredient gasOutput);
 
-mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>, <gas:tritium>);
-mods.mekanism.solarneutronactivator.removeRecipe(<gas:lithium>);
+mods.mekanism.solarneutractivator.removeRecipe(<gas:lithium>, <gas:tritium>);
+mods.mekanism.solarneuteractivator.removeRecipe(<gas:lithium>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+出力パラメータを指定すると、その入力から出力される特定のレシピのみが削除されます。 出力パラメータを省略すると、入力項目が生成できるすべてのレシピが削除されます。
 
-## Removing all recipes
+## すべてのレシピを削除する
 
-As of Mekanism 9.7.0 it is now possible to remove all Solar Neutron Activator recipes. (This excludes any recipes added via CraftTweaker)
+Mekanism9.7.0では、太陽中性子アクティベーターのすべてのレシピを削除することが可能になりました。 （CraftTweaker経由で追加されたレシピは除外されます）
 
 ```zenscript
 mods.mekanism.solarneutronactivator.removeAllRecipes();
