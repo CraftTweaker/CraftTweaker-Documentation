@@ -1,49 +1,49 @@
 # IPlayer
 
-The IPlayer interface allows you to view certain information on a specific player and interact with said one. Mostly used in Event Handlers and Recipe Functions.
+L'interfaccia IPlayer consente di visualizzare alcune informazioni su un giocatore specifico e di interagire con detto uno. Utilizzato principalmente nei gestori di eventi e nelle funzioni ricettive.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.player.IPlayer;`
 
-## Extending IEntityLivingBase and IUser
+## Estendere IEntityLivingBase e IUser
 
-IPlayer extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) Objects also are available to IPlayer Objects.  
-IPlayer also extends [IUser](/Vanilla/Players/IUser/). That means all functions available to [IUser](/Vanilla/Players/IUser/) Objects also are available to IPlayer Objects.
+IPlayer estende [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). Ciò significa che tutte le funzioni disponibili per gli oggetti [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) sono disponibili anche per gli oggetti IPlayer.  
+IPlayer estende anche [IUser](/Vanilla/Players/IUser/). Ciò significa che tutte le funzioni disponibili per gli oggetti [IUser](/Vanilla/Players/IUser/) sono disponibili anche per gli oggetti IPlayer.
 
 ## Zengetters
 
-Zengetters are for retrieving information. Usually either assigned to a variable or used in a method/function.
+Zengetters sono per recuperare informazioni. Di solito sia assegnato a una variabile o utilizzato in un metodo/funzione.
 
-| Zengetter     | Che cosa fa                                                                                | Tipo Di Reso                               | Usage                  |
-| ------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------ | ---------------------- |
-| id            | returns the player's id                                                                    | stringa                                    | `player.id`            |
-| nome          | returns the player's name                                                                  | stringa                                    | `player.name`          |
-| data          | returns the player's data                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
-| xp            | returns the player's experience level. Can also be used to set a player's experience level | int                                        | `player.xp`            |
-| hotbarSize    | returns the player's hotbar size                                                           | int                                        | `player.hotbarSize`    |
-| inventorySize | returns the player's inventory size                                                        | int                                        | `player.inventorySize` |
-| currentItem   | returns the item the player is currently holding                                           | [IItemStack](/Vanilla/Items/IItemStack/)   | `player.currentItem`   |
-| creative      | returns if the player is currently in creative mode (a.k.a gamemode 1)                     | bool                                       | `player.creative`      |
-| adventure     | returns if the player is currently in adventure mode (a.k.a gamemode 2)                    | bool                                       | `player.adventure`     |
-| x             | returns the player's current X position in the world                                       | doppia                                     | `player.x`             |
-| y             | returns the player's current y position in the world                                       | doppia                                     | `player.y`             |
-| z             | returns the player's current z position in the world                                       | doppia                                     | `player.z`             |
-| position      | returns the player's current position. Can also be used to set a player's position         | [Position3f](/Vanilla/Utils/Position3f/)   | `player.position`      |
-| foodStats     | returns the player's foodstats.                                                            | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
+| Zengetter            | Che cosa fa                                                                                                                       | Tipo Di Reso                               | Utilizzo               |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ | ---------------------- |
+| id                   | restituisce l'id del giocatore                                                                                                    | stringa                                    | `player.id`            |
+| nome                 | restituisce il nome del giocatore                                                                                                 | stringa                                    | `player.name`          |
+| dati                 | restituisce i dati del giocatore                                                                                                  | [IData](/Vanilla/Data/IData/)              | `player.data`          |
+| xp                   | restituisce il livello di esperienza del giocatore. Può anche essere usato per impostare il livello di esperienza di un giocatore | int                                        | `giocatore.xp`         |
+| hotbarSize           | restituisce la dimensione della hotbar del giocatore                                                                              | int                                        | `player.hotbarSize`    |
+| inventarioDimensione | restituisce la dimensione dell'inventario del giocatore                                                                           | int                                        | `player.inventorySize` |
+| currentItem          | restituisce l'oggetto che il giocatore sta attualmente tenendo                                                                    | [IItemStack](/Vanilla/Items/IItemStack/)   | `player.currentItem`   |
+| creativo             | ritorna se il giocatore è attualmente in modalità creativa (alias gamemode 1)                                                     | bool                                       | `giocatore.creativo`   |
+| avventura            | ritorna se il giocatore è attualmente in modalità avventura (alias gamemode 2)                                                    | bool                                       | `giocatore.avventura`  |
+| x                    | restituisce la posizione X attuale del giocatore nel mondo                                                                        | doppia                                     | `giocatore.x`          |
+| y                    | restituisce la posizione y attuale del giocatore nel mondo                                                                        | doppia                                     | `giocatore.y`          |
+| z                    | restituisce la posizione z attuale del giocatore nel mondo                                                                        | doppia                                     | `giocatore.z`          |
+| posizione            | restituisce la posizione attuale del giocatore. Può anche essere usato per impostare la posizione di un giocatore                 | [Position3f](/Vanilla/Utils/Position3f/)   | `giocatore.posizione`  |
+| foodStats            | restituisce il food stats del giocatore.                                                                                          | [IFoodStats](/Vanilla/Players/IFoodStats/) | `player.foodStats`     |
 
 ## ZenMethods
 
-Zenmethods are for doing things with other things, in this case with a player.
+Zenmethods sono per fare le cose con altre cose, in questo caso con un giocatore.
 
-| ZenMethod                | Parameter Type(s)                        | Che cosa fa                                                         | Esempio                                     |
-| ------------------------ | ---------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------- |
-| removeXP(XPtoRemove)     | int                                      | Removes the given experience levels from the player.                | `player.removeXP(1)`                        |
-| update(IData)            | [IData](/Vanilla/Data/IData/)            | Updates the playerdata to the provided IData.                       |                                             |
-| sendChat(Message)        | string OR IChatMessage                   | Sends the player a Chat Message.                                    | `player.sendChat("Hello my old friend")`    |
-| getHotbarStack(index)    | int                                      | Returns the item at the given index within the player's hotbar.     | `player.getHotbarStack(3)`                  |
-| getInventoryStack(index) | int                                      | Returns the item at the given index within the player's inventory.  | `player.getInventoryStack(3)`               |
-| give(item)               | [IItemStack](/Vanilla/Items/IItemStack/) | Give the player the provided item. Item is an IItemStack.           | `player.give(<minecraft:gold_ingot>)` |
-| teleport(position)       | [Position3f](/Vanilla/Utils/Position3f/) | Teleports the player to the provided position in the same dimension | `player.teleport(position)`                 |
-| executeCommand(raw)      | stringa                                  | Executes the command as the player                                  | `player.executeCommand("kill")`             |
+| ZenMethod                | Tipo/i Di Parametro                      | Che cosa fa                                                                 | Esempio                                           |
+| ------------------------ | ---------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------- |
+| removeXP(XPtoRemove)     | int                                      | Rimuove i livelli di esperienza dati dal giocatore.                         | `giocatore.removeXP(1)`                           |
+| update(IData)            | [IData](/Vanilla/Data/IData/)            | Aggiorna i dati del giocatore agli IData forniti.                           |                                                   |
+| sendChat(Messaggio)      | Stringa O IChatMessage                   | Invia al giocatore un messaggio di chat.                                    | `giocatore.sendChat("Ciao il mio vecchio amico")` |
+| getHotbarStack(index)    | int                                      | Restituisce l'oggetto all'indice specificato nella hotbar del giocatore.    | `giocatore.getHotbarStack(3)`                     |
+| getInventoryStack(index) | int                                      | Restituisce l'oggetto all'indice specificato nell'inventario del giocatore. | `giocatore.getInventoryStack(3)`                  |
+| dare(elemento)           | [IItemStack](/Vanilla/Items/IItemStack/) | Dai al giocatore l'oggetto fornito. Oggetto è un IItemStack.                | `giocatore.give(<minecraft:gold_ingot>)`    |
+| teletrasporto(posizione) | [Position3f](/Vanilla/Utils/Position3f/) | Teletrasporta il giocatore nella posizione fornita nella stessa dimensione  | `player.teleport(posizione)`                      |
+| executeCommand(raw)      | stringa                                  | Esegue il comando come giocatore                                            | `player.executeCommand("kill")`                   |
