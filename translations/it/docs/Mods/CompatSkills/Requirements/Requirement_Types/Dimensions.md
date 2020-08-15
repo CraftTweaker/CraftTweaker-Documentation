@@ -1,12 +1,12 @@
-# Dimensions:
+# Dimensioni:
 
-Dimensions is a Requirement introduced by CompatSkills and allows you to gate things behind either:
+Dimensioni è un requisito introdotto da CompatSkills e consente di cancello le cose dietro sia:
 
-- Being in a **Specific** dimension.
-- Being in **any** dimension **other than** the one specified.
+- Essere in una dimensione **specifica**.
+- Essere in **qualsiasi** dimensione **diversa da** quella specificata.
 
-    Example:
-    dim|integer
+    Esempio:
+    dim<unk> integer
     
-    Working Example:
-    dim|0
+    Esempio di lavoro:
+    dim<unk> 0
