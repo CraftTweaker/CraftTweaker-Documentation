@@ -1,4 +1,4 @@
-# Soul Binder
+# Śliwka Dusz
 
 ## Pakiet
 
@@ -6,11 +6,11 @@
 
 ## Metoda
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
-- **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
-- **int xp** The Experience cost for this recipe
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** wynik przepisu.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wkład** Główny składnik (niedusze).
+- **String[] entities** Dozwolone przedmioty, które muszą być obecne w fiolce z duchem, aby ten przepis działał.
+- **int xp** Koszt doświadczenia dla tego przepisu
+- **int energyCost** Ile FE używa przepisu. Domyślnie 5000.
 
 ## Dodanie
 
@@ -23,7 +23,7 @@ mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["m
 ## Usuwanie
 
 ```zenscript
-mods.enderio.SoulBinder.removeRecipe(IItemStack output);
+mods.enderio.SoulBinder.removeRecipe(wyjście IItemStack);
 
 mods.enderio.SoulBinder.removeRecipe(<enderio:item_material:19>);
 ```
