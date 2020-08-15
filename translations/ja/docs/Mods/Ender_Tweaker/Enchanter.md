@@ -1,4 +1,4 @@
-# Enchanter
+# エンチャンター
 
 ## パッケージ
 
@@ -6,13 +6,13 @@
 
 ## メソッド
 
-**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
+**- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) 出力** 出力エンチャント。
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
+**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** このエンチャントを作るために使用するアイテム。
 
-**- int amountPerLevel** The number of input items per level of enchantment.
+**- int amountPerLevel** エンチャントのレベルあたりの入力項目の数。
 
-**- double costMultiplier** Used to modify how expensive the recipe is.
+**- double costMultiplier** レシピの高さを変更するために使用されます。
 
 ## 加算
 
