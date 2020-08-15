@@ -1,17 +1,17 @@
-# Ball of Fur
+# Palla di pelliccia
 
-## Package
+## Pacchetto
 
 `mods.actuallyadditions.BallOfFur`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.addReturn(IItemStack output, int chance);
 mods.actuallyadditions.BallOfFur.addReturn(<minecraft:string>, 5);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.actuallyadditions.BallOfFur.removeReturn(IItemStack output);
