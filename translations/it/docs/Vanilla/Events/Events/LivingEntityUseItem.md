@@ -1,11 +1,11 @@
 # LivingEntityUseItem
 
-The LivingEntityUseItem event is fired whenever an entity starts using an item, stops doing so, after the player finishes using an item and each tick they use the item.  
-Since that would be called far too often, there are 4 subEvents that are only called in their specific case.
+L'evento LivingEntityUseItem viene sparato ogni volta che un'entità inizia a usare un oggetto, smette di farlo, dopo che il giocatore finisce con un oggetto e ogni tick usano l'oggetto.  
+Poiché questo sarebbe chiamato troppo spesso, ci sono 4 subEvents che sono chiamati solo nel loro caso specifico.
 
 ## Importare la classe
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.
 
 ```zenscript
 //Base Event
@@ -18,24 +18,24 @@ import crafttweaker.event.EntityLivingUseItemEvent.Stop;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 ```
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-LivingEntityUseItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingEntityUseItem Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setters pure:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information can be retrieved/set during the event:
+Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
 
-| ZenGetter  | Tipo Di Reso                             |
-| ---------- | ---------------------------------------- |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `isPlayer` | bool                                     |
-| `elemento` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                      |
+| ZenGetter   | Tipo Di Reso                             |
+| ----------- | ---------------------------------------- |
+| `giocatore` | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `isPlayer`  | bool                                     |
+| `elemento`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `durata`    | int                                      |
 
-| ZenSetter  | Tipo Parametro |
-| ---------- | -------------- |
-| `duration` | int            |
+| ZenSetter | Tipo Parametro |
+| --------- | -------------- |
+| `durata`  | int            |
