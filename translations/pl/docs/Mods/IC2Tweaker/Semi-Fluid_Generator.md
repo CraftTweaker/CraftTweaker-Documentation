@@ -1,4 +1,4 @@
-# Semi-Fluid Generator
+# Generator pół-luid
 
 ## Pakiet
 
@@ -6,13 +6,13 @@
 
 ## Metody
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) liquid** The liquid which can be used as fuel in semi-fluid generator
-- **double powerOutput** The power output, measured in EU/tick
+- **[Ciecz ILiquidStack](/Vanilla/Liquids/ILiquidStack/)** Ciecz która może być użyta jako paliwo w generatorze półpłynów
+- **podwójna moc wyjściowa** Wyjście mocy mierzone w EU/tick
 
-## Add Fluid
+## Dodaj płyn
 
 ```zenscript
-mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack liquid, double powerOutput;
+mods.ic2.SemiFluidGenerator.addFluid(ILiquidStack – ciecz o podwójnej mocy wyjściowej;
 
 mods.ic2.SemiFluidGenerator.addFluid(<liquid:water>, 2333.0D);
 ```
