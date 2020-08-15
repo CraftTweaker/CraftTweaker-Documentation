@@ -1,38 +1,38 @@
-# Metal Press
+# Metalowe naciśnięcie
 
-The Metal Press package can be used to add/remove recipes to/from the Immersive Engineering Metal Press.
+Pakiet prasowy metalu może być użyty do dodawania/usuwania receptur do/z pras metalowych Inżynierii Immersive Engineering Metal.
 
-## Calling The Package
+## Wezwanie do pakietu
 
-You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
+Pakiet MetalPress można wywołać za pomocą `mods.immersiveengineering.MetalPress`.
 
-## Add Recipe
+## Dodaj przepis
 
-| Required | Type       | Data Type                                           |
-| -------- | ---------- | --------------------------------------------------- |
-| Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Energy     | Integer                                             |
-| Required | Input Size | Integer                                             |
+| Wymagane | Typ        | Typ danych                                       |
+| -------- | ---------- | ------------------------------------------------ |
+| Wymagane | Wyjście    | [IItemstack](/Vanilla/Items/IItemStack/)         |
+| Wymagane | Input      | [Składnik](/Vanilla/Variable_Types/IIngredient/) |
+| Wymagane | Młody      | [IItemstack](/Vanilla/Items/IItemStack/)         |
+| Wymagane | Energia    | Liczba całkowita                                 |
+| Wymagane | Input Size | Liczba całkowita                                 |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
-mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int energy, @Optional int inputSize);
+mods.immersiveengineering.MetalPress.addRecipe(IItemStack output, IIngredient input, IItemStack mold, int Energia, @Optional int inputSize);
 
-mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000);
+mods. mmersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood>, <minecraft:emerald>, 2000, 16);
 ```
 
-## Remove Recipe
+## Usuń przepis
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
@@ -41,13 +41,13 @@ mods.immersiveengineering.MetalPress.removeRecipe(IItemstack output);
 mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 ```
 
-## Remove By Mold
+## Usuń przez Mold
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Typ     | Typ danych                               |
+| ------- | ---------------------------------------- |
+| Wyjście | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Przykład
 
 ```zenscript
 //Example:
