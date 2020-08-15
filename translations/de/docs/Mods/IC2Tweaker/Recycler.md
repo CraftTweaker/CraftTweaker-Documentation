@@ -1,6 +1,6 @@
 # Recycler
 
-## Package
+## Paket
 
 `import mods.ic2.Recycler;`
 
