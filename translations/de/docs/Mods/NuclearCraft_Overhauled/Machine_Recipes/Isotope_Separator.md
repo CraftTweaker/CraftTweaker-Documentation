@@ -1,7 +1,7 @@
 # Isotope Separator
 
-## Importing the Package
-`mods.nuclearcraft.Separator`
+## Paket wird importiert
+`mods.nuclearcraft.Trennzeichen`
 
 ## Rezepte hinzufügen
 ```zenscript
@@ -12,5 +12,5 @@ mods.nuclearcraft.Separator.addRecipe(IIngredient itemInput, IIngredient itemOut
 ```zenscript
 mods.nuclearcraft.Separator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Separator.removeRecipeWithOutput(IIngredient itemOutput1, IIngredient itemOutput2);
-mods.nuclearcraft.Separator.removeAllRecipes();
+mods.nuclearcraft.Separator.removeAllRezept();
 ```
