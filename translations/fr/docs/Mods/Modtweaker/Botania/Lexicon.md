@@ -2,13 +2,13 @@
 
 The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
 
-## Calling
+## Appel en cours
 
 You can call the Lexicon package using `mods.botania.Lexicon`
 
 ## Pages
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
@@ -33,7 +33,7 @@ mods.botania.Lexicon.removePage(String entry, int page_number);
 
 ## Entries
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
@@ -47,7 +47,7 @@ mods.botania.Lexicon.removeEntry(String entry);
 
 ## Categories
 
-### Addition
+### Ajouter
 
 ```zenscript
 mods.botania.Lexicon.addCategory(String name);
