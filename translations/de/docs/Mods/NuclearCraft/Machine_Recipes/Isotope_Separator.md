@@ -1,6 +1,6 @@
 # Isotope Separator
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.isotope_separator`
 
 ## Rezepte hinzufügen
