@@ -2,16 +2,16 @@
 
 A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implemented Interfaces
-MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+MCToolType implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructors
@@ -20,13 +20,13 @@ Constructs a ToolType object. If one with the given name already exists, they wi
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type   | Description         |
-| --------- | ------ | ------------------- |
-| name      | String | The name to be used |
+| Parametro | Tipo    | Descrizione         |
+| --------- | ------- | ------------------- |
+| nome      | Stringa | The name to be used |
 
 
 
-## Methods
+## Metodi
 ### getName
 
 Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
@@ -58,15 +58,15 @@ Return type: String
 ```
 
 
-## Properties
+## Proprietà
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| Nome          | Tipo    | Ha Getter | Ha Setter |
+| ------------- | ------- | --------- | --------- |
+| commandString | Stringa | vero      | falso     |
+| nome          | Stringa | vero      | falso     |
 
-## Operators
-### EQUALS
+## Operatori
+### EQUALI
 
 Compares if two given MCToolType objects are equal
 
@@ -75,13 +75,13 @@ Compares if two given MCToolType objects are equal
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
+| Parametro | Tipo   | Descrizione      |
 | --------- | ------ | ---------------- |
 | o         | Object | The other object |
 
-## Casters
+## Caster
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Tipo Risultato | Implicito |
+| -------------- | --------- |
+| Stringa        | falso     |
 
