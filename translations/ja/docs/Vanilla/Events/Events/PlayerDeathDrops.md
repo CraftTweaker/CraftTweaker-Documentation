@@ -1,35 +1,36 @@
-# PlayerDeathDrops
+# PlayerDeathdrops
 
-The PlayerDeathDrops Event is fired whenever a player's items fall to the ground due to the player's death.
+PlayerDeathDropsイベントは、プレイヤーの死によってプレイヤーのアイテムが地面に落ちるたびに発生します。
 
-## Event Class
+## イベントクラス
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerDeathDropsEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+関数ヘッダーのイベントをこのクラスとしてキャストする必要があります:  
+`crafttweaker.event. layerDeathDropsEvent <br /> 
+ <code>`  
+もちろん、 [前にクラスをインポート](/AdvancedFunctions/Import/) して、その名前を使用することもできます。
 
-## Event interface extensions
+## イベントインターフェースの拡張
 
-PlayerDeathDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerDeathDrops イベントは以下のインターフェイスを実装しており、それらのメソッド/getters/settersもすべてコールできます。
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+イベントから次の情報を取得できます。
 
-| ZenGetter      | 戻り値                                                         |
-| -------------- | ----------------------------------------------------------- |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
-| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| ZenGetter      | 戻り値                                                        |
+| -------------- | ---------------------------------------------------------- |
+| `プレイヤー`        | [IPlayer](/Vanilla/Players/IPlayer/)                       |
+| `項目`           | [`リスト<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)            |
 
-## Modifying the item drops
+## アイテムドロップの変更
 
-You can either add to the droplist or completely substitute it with a new one:
+ドロップリストに追加するか、完全に新しいものに置き換えることができます:
 
 ```zenscript
-event.items = //reference to IEntityItem list.
+event.items = //IEntityItem リストへの参照。
 
 //event.addItem(IItemStack item);
 event.addItem(<minecraft:iron_ingot>);
