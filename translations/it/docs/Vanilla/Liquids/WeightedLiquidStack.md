@@ -1,29 +1,29 @@
-# WeightedLiquidStack
+# PesoLiquidStack
 
-A Weighted Liquid Stack is like a normal [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) but has a percentage added to it.  
-You normally use them when dealing with percentage based actions like drops or secondary outputs.
+Una pila liquida ponderata è come un normale [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) ma ha una percentuale aggiunta.  
+Normalmente li usi quando gestisci azioni basate su percentuali come gocce o uscite secondarie.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.item.WeightedLiquidStack;`
 
-## Calling a weightedLiquidStack
+## Chiamare una pila di peso
 
-You can derive a weightedLiquidStack from an [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) by either using the modulo operator or the weight function on it.
+È possibile ricavare un peso liquidoStack da un [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) utilizzando l'operatore modulo o la funzione di peso su di esso.
 
 ```zenscript
 val liquidStack = <liquid:lava>;
 
-//both create a weightedLiquidstack object with a chance of 20%
+//entrambi creano un oggetto Liquidstack ponderato con una probabilità del 20%
 val wLiquidStack = liquidStack % 20;
-val wLiquidStack2 = liquidStack.weight(0.2);
+val wLiquidStack2 = liquidStack. ottanta (0,2);
 ```
 
 ## ZenGetters
 
-| ZenGetter | Che cosa fa                                          | Tipo Di Reso                                   |
-| --------- | ---------------------------------------------------- | ---------------------------------------------- |
-| stack     | Returns the associated LiquidStack                   | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | galleggiante                                   |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | galleggiante                                   |
+| ZenGetter   | Che cosa fa                                                        | Tipo Di Reso                                   |
+| ----------- | ------------------------------------------------------------------ | ---------------------------------------------- |
+| pila        | Restituisce il LiquidStack associato                               | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) |
+| possibilità | Restituisce la possibilità dello stack come decimale (ad es. 0.2)  | galleggiante                                   |
+| percentuale | Restituisce la possibilità dello stack come percentuale (es. 20.0) | galleggiante                                   |
