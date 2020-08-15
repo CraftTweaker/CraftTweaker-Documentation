@@ -9,8 +9,8 @@ import mods.roots.SummonCreatures;
 
 ```zenscript
 void addEntity(
-  IEntityDefinition entity, // the entity to be summoned
-  IIngredient[] ingredients // a list of ingredients used for the summoning
+  IEntityDefinition entity, // the entity to be 召喚されるエンティティ
+  IIngredient[] mators // a list of method used for the 召喚に使用される食材
 );
 ```
 
@@ -20,7 +20,7 @@ void addEntity(
 
 ```zenscript
 void removeEntity(
-  IEntityDefinition entity // the entity to remove from summoning via recipe
+  IEntityDefinition entity // the entity to remove from 召喚からレシピ
 );
 ```
 
@@ -29,7 +29,7 @@ void removeEntity(
 
 
 ```zenscript
-void removeLifeEssence(
+void removeLifeEssentence(
   IEntityDefinition entity // the entity to remove life essence for
 );
 ```
@@ -39,7 +39,7 @@ void removeLifeEssence(
 
 
 ```zenscript
-void addLifeEssence(
+void addLifeessence(
   IEntityDefinition entity // the entity to add life essence for
 );
 ```
@@ -49,7 +49,7 @@ void addLifeEssence(
 
 
 ```zenscript
-void clearLifeEssence();
+void clearLifeessence();
 ```
 
 
