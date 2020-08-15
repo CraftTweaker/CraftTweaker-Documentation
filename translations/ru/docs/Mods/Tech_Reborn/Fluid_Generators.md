@@ -1,18 +1,18 @@
-# Fluid Generators
-**Note: The Fluid Generators are Thermal, Gas, Plasma, Semi and Diesel**
-## Importing the Package
+# Генераторы жидкости
+**Примечание: Жидкие генераторы - это Thermal, Gas, Plasma, Semi и Diesel**
+## Импортирование пакета
 `mods.techreborn.fluidGen`
 
-## Adding Fuels
+## Добавление топлива
 ```zenscript
-mods.techreborn.fluidGen.addThermalFluid(ILiquidStack fluid, int energyPerMb);
-mods.techreborn.fluidGen.addGasFluid(ILiquidStack fluid, int energyPerMb);
-mods.techreborn.fluidGen.addSemiFluid(ILiquidStack fluid, int energyPerMb);
+mods.techreborn.fluidGen.addThermalFluid(ILiquidStack жидкости, Int-energyPerMb);
+mods.techreborn.fluidGen.addGasFluid(ILiquidStack жидкости, int energyPerMb);
+mods.techreborn.fluidGen.addSemiFluid(ILiquidStack жидкость, int energyPerMb);
 mods.techreborn.fluidGen.addDieselFluid(ILiquidStack fluid, int energyPerMb);
 mods.techreborn.fluidGen.addPlasmaFluid(ILiquidStack fluid, int energyPerMb);
 ```
 
-## Removing Fuel
+## Съем топлива
 ```zenscript
 mods.techreborn.fluidGen.removeThermalFluid(ILiquidStack fluid);
 mods.techreborn.fluidGen.removeGasFluid(ILiquidStack fluid);
