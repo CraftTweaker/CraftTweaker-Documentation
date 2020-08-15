@@ -1,84 +1,84 @@
-# Fertilizers
+# Nawozy
 
-Class path: `mods.botanypots.Fertilizer`
+Ścieżka klasy: `mods.botanypots.Fertilizer`
 
-## Use
+## Użycie
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Aby użyć, zaimportuj klasę z `importuj mods.botanypots.Fertilizer;` na początku skryptu.
 
-## Creating Fertilizers
+## Tworzenie nawozów
 
-`Fertilizer.create(id, ingredient, minTick, maxTick);`
+`Nawóz.create(id, składnik, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
-- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
+- `id` &lt;ciąg> Id nowego nawozu. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `składnik` <[Składnik](/vanilla/api/items/IIngredient)> Element użyty dla nawozu.
+- `minTick` &lt;int> Minimalna ilość kleszczy dodanych przez nawóz.
+- `maxTick` &lt;int> Maksymalna ilość kleszczy dodanych przez nawóz.
 
-Creates a new fertilizer. These can be used to grow crops faster.
-
-```zenscript
-Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
-```
-
-## Removing Fertilizers
-
-`Fertilizer.remove(id);`
-
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-
-This can be used to remove a fertilizer.
+Tworzy nowy nawóz. Można je wykorzystać do szybszego uprawiania upraw.
 
 ```zenscript
-Fertilizer.remove("botanypots:fertilizers/bone_meal");
+Nawóz ("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Changing Fertilizer Ticks
+## Usuwanie nawozów
+
+`Nawóz.remove(id);`
+
+- `id` &lt;ciąg> Id nawozu. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+
+Może to być użyte do usunięcia nawozu.
+
+```zenscript
+Nawóz usuwalny („botanypots:nawozy/kość_meał”);
+```
+
+## Zmiana Ticków nawozu
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
+- `id` &lt;ciąg> Id nawozu. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `minTick` &lt;int> Nowa minimalna ilość kleszczy dodanych przez nawóz.
+- `maxTick` &lt;int> Nowa maksymalna ilość kleszczy dodanych przez nawóz.
 
-This will change the growth tick range added by the fertilizer.
+To zmieni zakres wzrostu dodany przez nawóz.
 
 ```zenscript
-Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
+Fertilizer.setTicks(botanypots:fertilizers/ko-mączka,800, 900);
 ```
 
-## Changing Fertilizer Ingredients
+## Zmiana składników nawozu
 
-`Fertilizer.setIngredient(id, ingredient);`
+`Nawóz.setSkładnik (id, składnik);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
+- `id` &lt;ciąg> Id nawozu. Jest to identyfikator pliku nazw, który musi być w prawidłowym formacie `namespace:path`.
+- `składnik` <[Składnik](/vanilla/api/items/IIngredient)> Nowy przedmiot do użycia dla nawozu.
 
-Sets the ingredient item that is the fertilizer.
+Ustawia składnik nawozu.
 
 ```zenscript
-Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
+Nawóz .setSkładnik („botanypots:nawozy/kość_posiłek”, <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Pobieranie wszystkich identyfikatorów
 
-`Fertilizer.getAllIds();`
+`nawóz .getAllIds();`
 
-- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
+- Zwraca: &lt;ciąg znaków[]> Tablica wszystkich znanych identyfikatorów nawozów w tym momencie jest rankingowa.
 
-This will give you an array of all the known fertilizer ids at the time.
+Daje to wachlarz wszystkich znanych identyfikatorów nawozów.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
+// Log all id to the crafttweaker.log file
 for fertilizerId in Fertilizer.getAllIds() {
     println(fertilizerId);
 }
 ```
 
-## Removing All Fertilizers
+## Usuwanie wszystkich nawozów
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Spowoduje to całkowite usunięcie wszystkich obecnie zarejestrowanych nawozów. Jest to przydatne jeśli chcesz odtworzyć wszystkie dane od podstaw przez skrypty.
 
 ```zenscript
-Fertilizer.removeAll();
+„Technologia”, zgodnie z uwagą ogólną do technologii, służąca do „rozwoju”, „produkcji” lub „użytkowania” sprzętu lub „oprogramowania” wyszczególnionego w pozycjach 2B004, 2B005, 2B009, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B109, 2B
 ```
