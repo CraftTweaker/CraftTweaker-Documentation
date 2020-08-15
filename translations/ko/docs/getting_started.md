@@ -22,7 +22,7 @@ When joining a server, the server sends their scripts to the client, and the cli
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+`hello.zs` 파일에 다음 코드를 입력하세요.
 
 ```zenscript
 println("Hello world!");
@@ -40,13 +40,13 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 ### craftweaker.log 파일
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+`crafttweaker.log` 파일의 출력내용에는 다음과 같은 특정 구문을 사용합니다.
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+위이 구문을 이용한 예제의 출력은 다음과 같습니다.
 
 ```
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
@@ -56,15 +56,15 @@ The syntax is used for debug purposes and the only time the syntax is not used, 
 
 ### 주석
 
-Comments can be used to make your script files more readable and easier to understand!
+주석은 스크립트 파일을 더 읽기 쉽고 이해하기 쉽게 만드는데 도움을 줍니다.
 
-ZenScript supports 3 types of comments, being:
+ZenScript는 다음과 같은 세 가지 유형의 주석을 지원합니다.
 
-Single line: `// I'm a single line comment!`
+한 라인: `// 한 줄 주석입니다.`
 
-Alternate Single Line: `# I'm also a single line comment!`
+또 다른 한 라인: `# 이것 또한 한줄 주석입니다.`
 
-Multiline:
+복수 라인:
 ```
 /* 이건
 복수 라인의
