@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
+new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
 ```
 | Параметр | Тип                                                                                                                                                                   | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(ha
 ## Методы
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCLeftClickBlock.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCLeftClickBlock.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+Возвращается: `Лицо, участвующее в этом взаимодействии. Для всех неблочных взаимодействий он вернёт null.`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCLeftClickBlock.getFace();
@@ -39,9 +39,9 @@ myMCLeftClickBlock.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+Возвращается: `Если рука была пуста: {` @code ItemStack.EMPTY}.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCLeftClickBlock.getItemStack();
@@ -49,9 +49,9 @@ myMCLeftClickBlock.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCLeftClickBlock.getPlayer();
@@ -59,17 +59,17 @@ myMCLeftClickBlock.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+Если взаимодействие было на сущности, то будет BlockPos в центре сущности. Если взаимодействие было на блоке, будет позиция этого блока. В противном случае будет BlockPos в центре игрока. никогда не будет нулевым. Возвращается: `Должность, участвующая в этом взаимодействии.`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCLeftClickBlock.getPos();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
 Возвращает boolean
 
@@ -77,11 +77,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCLeftClickBlock.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
 Возвращает boolean
 
@@ -89,20 +89,20 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCLeftClickBlock.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
 Возвращает boolean
 
 ```zenscript
-myMCLeftClickBlock.isCanceled();
+myMCLeftClickBlock.isCancel();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCLeftClickBlock.setCanceled(canceled as boolean);
+myMCLeftClickBlock.setCancel(отменено как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
