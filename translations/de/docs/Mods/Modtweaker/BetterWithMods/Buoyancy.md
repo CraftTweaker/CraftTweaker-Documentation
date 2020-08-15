@@ -1,8 +1,8 @@
-# Buoyancy
+# Tönung
 
-Buoyancy effects the ability for an Item to float on water when HCBuoy is enabled in BWM.
+Booyancy wirkt auf die Fähigkeit eines Gegenstandes, auf Wasser zu schwimmen, wenn HCBuoy in BWM aktiviert ist.
 
-Value can be a decimal between -1 and 1 where -1 sinks directly to the bottom, 0 reaches equilibrium, 1 floats on top.
+Der Wert kann ein Dezimalwert zwischen -1 und 1 sein, wobei -1 direkt nach unten sinkt, 0 ein Gleichgewicht erreicht, 1 floats oben.
 
 ```zenscript
 mods.betterwithmods.Buoyancy.set(IItemStack stack, float value);
