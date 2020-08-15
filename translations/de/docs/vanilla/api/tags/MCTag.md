@@ -32,7 +32,7 @@ myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 
 | Parameter | Type                                                                         | Beschreibung            |
 | --------- | ---------------------------------------------------------------------------- | ----------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| objekte   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
 
 
 ### addItems
@@ -41,9 +41,9 @@ myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter | Type                                                                | Description             |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| Parameter   | Type                                                                | Beschreibung            |
+| ----------- | ------------------------------------------------------------------- | ----------------------- |
+| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 ### createBlockTag
@@ -83,10 +83,10 @@ myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 
 | Parameter | Type                                                              | Beschreibung                              |
 | --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### passt
 
 Does the given stack match the ingredient?
 
@@ -99,7 +99,7 @@ myMCTag.matches(<item:minecraft:iron_ingot>);
 
 | Parameter | Type                                                              | Beschreibung       |
 | --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### removeBlocks
@@ -121,7 +121,7 @@ myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 
 | Parameter | Type                                                                         | Beschreibung            |
 | --------- | ---------------------------------------------------------------------------- | ----------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| objekte   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
 
 
 ### removeItems
@@ -130,20 +130,20 @@ myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter | Type                                                                | Beschreibung            |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| Parameter   | Type                                                                | Beschreibung            |
+| ----------- | ------------------------------------------------------------------- | ----------------------- |
+| gegenstände | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type                                                                         | Has Getter | Has Setter |
 | ------------- | ---------------------------------------------------------------------------- | ---------- | ---------- |
 | blocks        | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true       | false      |
-| commandString | String                                                                       | true       | false      |
+| Kommandozeile | String                                                                       | true       | false      |
 | entityTypes   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
+| gegenstände   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
 
 ## Casters
 
