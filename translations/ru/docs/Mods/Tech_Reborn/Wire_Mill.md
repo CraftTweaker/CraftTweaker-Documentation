@@ -1,6 +1,6 @@
-# Wire Mill
+# Мельница Wire
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.wireMill`
 
 ## Добавление рецептов
@@ -10,6 +10,6 @@ mods.techreborn.wireMill.addRecipe(IItemStack output1, IIngredient input1, int t
 
 ## Удаление рецептов
 ```zenscript
-mods.techreborn.wireMill.removeRecipe(IItemStack output);
+mods.techreborn.wireMill.removeRecipe(выход IItemStack);
 mods.techreborn.wireMill.removeAll();
 ```
