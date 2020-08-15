@@ -12,6 +12,6 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | -------- | -------------------------------------- |
 | world    | [IWorld](/Vanilla/World/IWorld/)       |
 | position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | double                                 |
-| y        | double                                 |
+| х        | double                                 |
+| у        | double                                 |
 | z        | double                                 |
