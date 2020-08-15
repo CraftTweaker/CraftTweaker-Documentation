@@ -1,17 +1,17 @@
 # Mod-Lock Tweaker
 
-## Mod-Locking
+## Verrouillage des mods
 
-This was added as a capability for configs in 1.2.0 and now has a CrT ZenMethod implemented to support it. This can also be accomplished through the configs as previously mentioned.
+Cela a été ajouté en tant que capacité pour les configurations en 1.2.0 et a maintenant une méthode CrT ZenMethod implémentée pour le supporter. Cela peut également être accompli par le biais des configurations comme mentionné précédemment.
 
-Mod-Locks allow you to lock all ItemStacks from a specific mod behind a specific lock.
+Les Mod-Locks vous permettent de verrouiller tous les ItemStacks d'un mod spécifique derrière un verrou spécifique.
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example
-    mods.compatskills.ModLock.addModLock(String modId, String... locked);
+    // Exemple vide
+    mods.compatskills.ModLock.addModLock(String modId, String... verrouillé);
     
-    // Working Example:
+    // Exemple de travail :
     mods.compatskills.ModLock.addModLock("minecraft", "reskillable:building|4");
     
-    The above lock will lock everything from the mod "minecraft" behind a lock of "building 4"
+    Le verrou ci-dessus verrouillera tout depuis le mod "minecraft" derrière un verrou de "construction 4"
