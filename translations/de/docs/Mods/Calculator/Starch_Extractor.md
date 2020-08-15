@@ -16,7 +16,7 @@ import mods.calculator.starch;
 starch.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 starch.removeRecipe(IIngredient input);
 ```
