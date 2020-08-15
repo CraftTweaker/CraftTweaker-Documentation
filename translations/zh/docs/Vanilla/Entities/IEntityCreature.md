@@ -1,54 +1,54 @@
-# IEntityCreature
+# IentityCreenure
 
-A Creature.
+创建。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityCreature;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.entity. EntityCreate；`
 
-## Extending [IEntityLiving](/Vanilla/Entities/IEntityLiving/)
+## 扩展 [IentityLiving](/Vanilla/Entities/IEntityLiving/)
 
-IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
+IEntityCreature extension [IEntityLiving](/Vanilla/Entities/IEntityLiving/). 这意味着 [IEntityLive](/Vanilla/Entities/IEntityLiving/) 对象的所有功能也都可供IEntityCreaty使用。
 
-## Methods
+## 方法
 
 ### ZenGetters/Setters
 
-| ZenGetter            | 类型                                     |
-| -------------------- | -------------------------------------- |
-| hasPath              | bool                                   |
-| isWithinHomeDistance | bool                                   |
-| homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float                                  |
-| hasHome              | bool                                   |
+| ZenGetter           | 类型                                     |
+| ------------------- | -------------------------------------- |
+| hasPath             | bool                                   |
+| isWithinHome距离      | 布尔值                                    |
+| 家居位置                | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| maximumHomeDistance | float                                  |
+| hasHome             | bool                                   |
 
 ### ZenMethods
 
-#### play living sound
+#### 播放活的声音
 
-Method expects nothing.  
-Returns nothing.
+方法不需要任何东西。  
+没有返回任何东西。
 
 ```zenscript
 entCreObj.playLivingSound();
 ```
 
-#### Set or detach home
+#### 设置或离开主页
 
-First method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object and an int.  
-Second method expects nothing.  
-Both methods return nothing.
+第一个方法需要一个 [IBlockPos](/Vanilla/World/IBlockPos/) 对象和一个整数。  
+第二个方法不需要任何。  
+两种方法都不会返回任何东西。
 
 ```zenscript
 entAnObj.setHomePositionAndDistance(IBlockPos pos, int distance);
 entAnObj.detachHome();
 ```
 
-#### Check if a position is within the home distance
+#### 检查位置是否在首页距离内
 
-Method expects an [IBlockPos](/Vanilla/World/IBlockPos/) object.  
-Returns a bool.
+方法需要 [IBlockPos](/Vanilla/World/IBlockPos/) 对象。  
+返回一个布尔值。
 
 ```zenscript
 entAnObj.isPositionWithinHomeDistance
