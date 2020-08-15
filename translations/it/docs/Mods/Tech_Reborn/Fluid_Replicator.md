@@ -1,6 +1,6 @@
-# Fluid Replicator
+# Replicatore Di Fluidi
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.fluidReplicator`
 
 ## Aggiunta Di Ricette
