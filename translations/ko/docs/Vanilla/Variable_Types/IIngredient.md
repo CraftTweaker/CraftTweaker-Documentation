@@ -175,7 +175,7 @@ conditionedItem = item.withTag({display: {Name: "Tomato"}});
 conditionedItem = item.onlyStack(32);
 ```
 
-### Matching
+### 블록 매칭하기
 
 If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
 
