@@ -1,6 +1,6 @@
 # Combustion Generator
 
-## Package
+## Paket
 
 `import mods.enderio.CombustionGen;`
 
@@ -12,7 +12,7 @@
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) coolant** The fluid coolant to add.
 - **float degreesCoolingPerMB** How much heat in the generator can one mB of the added coolant absorb until it heats up all the way?
 
-## Add Fuel
+## Brennstoff hinzufügen
 
 ```zenscript
 mods.enderio.CombustionGen.addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
@@ -28,7 +28,7 @@ mods.enderio.CombustionGen.addCoolant(ILiquidStack fluid coolant, float degreesC
 mods.enderio.CombustionGen.addCoolant(<liquid:liquid_sunshine>, 100);
 ```
 
-## Remove Fuel
+## Treibstoff entfernen
 
 ```zenscript
 mods.enderio.CombustionGen.removeFuel(ILiquidStack fuel);
