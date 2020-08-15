@@ -1,52 +1,52 @@
-# Mineral Mix
+# Минеральная смесь
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an Array). So better be safe than sorry and add the import `import mods.immersiveengineering.MineralMix;`.
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение массива). Так что лучше быть безопасным, чем извините и добавьте импорт `import mods.immersiveengineering.MineralMix;`.
 
-## Fail Chance
+## Неудачный шанс
 
-You can get and set the failchance for the Mineralmix using the failChance [ZenSetter/Getter] on the object.
+Вы можете получить и установить вероятность неудачи для Mineralmix с помощью шанса сбоя [ZenSetter/Getter] на объекте.
 
-## Get Mineral
+## Получить минерал
 
-| Required | Тип  | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | string    |
+| Требуется | Тип      | Тип данных |
+| --------- | -------- | ---------- |
+| Требуется | Название | string     |
 
 ```zenscript
-//Example:
+//Пример:
 Excavator.getMineral(String Name);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 ```
 
-## Add Ore
+## Добавить руду
 
-| Required | Тип    | Data Type |
-| -------- | ------ | --------- |
-| Required | Ore    | string    |
-| Required | Chance | string    |
-
-```zenscript
-mineralMixObject.addOre("oreIron", 0.5);
-```
-
-You will need to use the oredict names.
-
-## Remove Ore
-
-| Required | Тип | Data Type |
-| -------- | --- | --------- |
-| Required | Ore | string    |
+| Требуется | Тип  | Тип данных |
+| --------- | ---- | ---------- |
+| Требуется | Руда | string     |
+| Требуется | Шанс | string     |
 
 ```zenscript
-mineralMixObject.removeOre("oreIron");
+mineralMixObject.addOre("Рудная железа", 0.5);
 ```
 
-## Fail Chance Getter/Setter
+Вам нужно будет использовать имена oredict.
 
-### Example
+## Удалить руду
+
+| Требуется | Тип  | Тип данных |
+| --------- | ---- | ---------- |
+| Требуется | Руда | string     |
+
+```zenscript
+mineralMixObject.removeOre("Защита");
+```
+
+## Неудачный Получатель/Установщик
+
+### Пример
 
 ```zenscript
 //Getter
@@ -56,32 +56,32 @@ mineralMixObject.failchance;
 mineralMixObject.failchance = 0.5;
 ```
 
-## Full Example
+## Полный пример
 
 ```zenscript
-//Example:
+//Пример:
 import mods.immersiveengineering.Excavator;
 import mods.immersiveengineering.MineralMix;
 
-//Get The Mineral Mix
-mods.immersiveengineering.Excavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
+//Получить Минеральный Микс
+mods.immersiveengineering. xcavator.addMineral("Iron_Ore", 50, 0.005, ["oreIron", "oreDiamond"], [0.005, 0.01], [1, 0, -1]);
 
 var Iron = Excavator.getMineral("Iron_Ore");
 
-Iron.addOre("oreIron", 0.5);
+Iron.addOre("Iron", 0. );
 
-//Print Initial Fail Chance
-print(Iron.failChance);
+//Печатайте Первоначальный шанс на хвост
+(Iron.failChance);
 
-//Set The Fail Chance to 25%
-Iron.failChance = 0.25;
+//Шанс на хвост 25%
+Железо. ailChance = 0.25;
 
-//Print Out The Fail Chance
-print(Iron.failChance);
+//Распечатать шанс Fail
+принт (железо. ailChance);
 
-//Set The Fail Chance to 50%
-Iron.failChance = 0.5;
+//Настройте шанс на хвост на 50%
+железа.неудача = 0.5;
 
-//Print Final Fail Chance
-print(Iron.failChance);
+//Распечатать финальный шанс на хвост
+печатайте (Iron.failChance);
 ```
