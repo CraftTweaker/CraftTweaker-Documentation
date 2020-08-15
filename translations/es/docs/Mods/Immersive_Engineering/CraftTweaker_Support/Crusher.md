@@ -6,17 +6,17 @@ The Crusher package can be used to add/remove recipes to/from the Immersive Engi
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type             | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| Requerido | Tipo             | Tipo de Datos                                         |
+| --------- | ---------------- | ----------------------------------------------------- |
+| Requerido | Salida           | [IItemStack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Input            | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Energy           | int                                                   |
+| Opcional  | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)              |
+| Opcional  | Secondary Chance | doble                                                 |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ## Remove Recipe by Output
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -44,11 +44,11 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ## Remove Recipe By Input
 
-| Type  | Data Type                                |
+| Tipo  | Tipo de Datos                            |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
