@@ -3,7 +3,7 @@
 A Machine slot is a slot that either accepts Items or liquids.  
 You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
 
-## Importing the package
+## Importazione del pacchetto
 
 If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
 You can do so using
@@ -35,13 +35,13 @@ All these methods will return the new Slot as IMachineSlot object.
 
 The parameters are:
 
-| Name              | Type                                          |
+| Nome              | Tipo                                          |
 | ----------------- | --------------------------------------------- |
-| name              | string                                        |
+| nome              | stringa                                       |
 | isOptional        | bool                                          |
 | stackCapacity     | int                                           |
-| color             | int                                           |
-| backgroundTexture | string                                        |
+| colore            | int                                           |
+| backgroundTexture | stringa                                       |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
 What the parameters do:
@@ -58,8 +58,8 @@ What the parameters do:
 You can get basic information from an IMachineSlot as well.  
 Don't expect these getters to magically return something different from what you set the slot when creating it, though.
 
-| Name          | Type   |
-| ------------- | ------ |
-| name          | string |
-| optional      | bool   |
-| stackCapacity | int    |
+| Nome          | Tipo    |
+| ------------- | ------- |
+| nome          | stringa |
+| optional      | bool    |
+| stackCapacity | int     |
