@@ -1,26 +1,26 @@
 
 # BlockPlaceEvent
 
-The BlockBreak Event is fired whenever a block is being placed. You can cancel the event to prevent the block from being placed.
+L'evento BlockBreak viene sparato ogni volta che viene posizionato un blocco. Puoi annullare l'evento per evitare che il blocco venga piazzato.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.BlockPlaceEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. lockPlaceEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-BlockPlace Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+BlockPlace Events implementa le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter       | ZenSetter | Tipo                                        |
 | --------------- | --------- | ------------------------------------------- |
-| `player`        |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `giocatore`     |           | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `corrente`      |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `placedAgainst` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `hand`          |           | Stringa                                     |
+| `mano`          |           | Stringa                                     |
