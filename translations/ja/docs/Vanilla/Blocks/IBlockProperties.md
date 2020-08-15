@@ -7,11 +7,11 @@ BlockProperties are what makes a block distinctive from other blocks. It mainly 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | 戻り値                                     | Description                                                           |
+| ZenGetter                 | 戻り値                                     | 説明                                                                    |
 | ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
+| canProvidePower           | bool                                    | 参照されたブロックがレッドストーンパワーを与えられるかどうかを返します                                   |
+| mobilityFlag              | 文字列                                     | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
+| 材料                        | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
 | causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
 | hasCustomBreakingProgress | bool                                    |                                                                       |
 | blockNormalCube           | bool                                    |                                                                       |
@@ -27,22 +27,22 @@ It might be required for you to import the package if you encounter any issues, 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+パラメータ:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+ブロックを置き換えられるかどうかを sais のブール値を返します。
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+パラメータ:
 
 - [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the current light value at the given location.
+指定された位置の現在の光の値を表す int を返します。
 
 ### getWeakPower/GetStrongPower
 
@@ -58,12 +58,12 @@ Parameters:
 
 `int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
 
-Parameters:
+パラメータ:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the block's redstone comparator input override type.
+ブロックのレッドストーンコンパレータ入力オーバーライド型を表す int を返します。
 
 ### Check if an entity can spawn on the block
 
