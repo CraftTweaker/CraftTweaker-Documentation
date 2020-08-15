@@ -5,7 +5,7 @@ The Steam Hammer is a machine that converts two input items into an output item 
 ## 所属包名
 `mods.steamagerevolution.SteamHammer`.
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
@@ -20,7 +20,7 @@ mods.steamagerevolution.SteamHammer.addRecipe(<ore:ingotIron>, <ore:ingotIron>, 
 ```
 
 
-## Removal
+## 移除
 
 ```zenscript
 mods.steamagerevolution.SteamHammer.removeRecipe(IItemStack output);
