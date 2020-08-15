@@ -18,6 +18,6 @@ It might be required for you to import the package if you encounter any issues (
 | deathMessageVisibility | string         |
 | collisionRule          | string         |
 
-## ZenMethods
+## ZenMethoden
 
 - `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
