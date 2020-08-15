@@ -2,7 +2,7 @@
 
 The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
 
-## Calling
+## Anruf
 
 You can call the *waterextractor* package using `mods.skyresources.waterextractor`
 
