@@ -23,7 +23,7 @@ mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Opt
 mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## remove
+## удалить
 
 Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
 
@@ -46,7 +46,7 @@ mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @
 mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
 ```
 
-## removeAll
+## удалить все
 
 Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
 
