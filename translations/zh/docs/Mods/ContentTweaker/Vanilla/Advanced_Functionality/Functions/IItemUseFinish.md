@@ -7,17 +7,17 @@ The IItemUseFinish function can be added to an [item](/Mods/ContentTweaker/Vanil
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.IItemUseFinish;`
 
-## Parameters
+## 参数
 
 The IItemRightClickFunction is a function with the following parameters:
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) itemStack → The item that is used
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → 玩家所在的世界
 - [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → The entity using the item
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
+函数需要返回 [IItemStack](/Vanilla/Items/IItemStack/)。
 
-## Example
+## 例子
 
 ```zenscript
 zsItem.onItemUseFinish = function(stack, world, player) {
