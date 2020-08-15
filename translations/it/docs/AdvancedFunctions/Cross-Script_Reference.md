@@ -1,18 +1,18 @@
-# Cross-Script Reference
+# Riferimento Cross-Script
 
-All scripts that have [static variables](/AdvancedFunctions/Global_Static_Variables/) or [custom functions](/AdvancedFunctions/Custom_Functions/) are registered to the cross-script reference.  
-This allows you to access these fields/functions using the dot-notation.
+Tutti gli script che hanno [variabili statiche](/AdvancedFunctions/Global_Static_Variables/) o [funzioni personalizzate](/AdvancedFunctions/Custom_Functions/) sono registrati nel riferimento cross-script.  
+Questo consente di accedere a questi campi/funzioni utilizzando la notazione di punti.
 
-## Specifications
+## Specifiche
 
-- Cross-script references start with `scripts.`
-- You specify the path relative from the scripts folder (e.g. `scripts.mySubfolder.a.zs`)
-- You can use the dot-notation in an [import statement](/AdvancedFunctions/Import/) should you choose to do so.
-- ZS first checks for matching directories then for matching files or values.
+- I riferimenti cross-script iniziano con `scripts.`
+- Si specifica il percorso relativo dalla cartella script (es. `scripts.mySubfolder.a.zs`)
+- È possibile utilizzare la notazione punto in una dichiarazione di importazione [](/AdvancedFunctions/Import/) se si sceglie di farlo.
+- ZS prima controlla per le directory corrispondenti quindi per i file o i valori corrispondenti.
 
-## Example
+## Esempio
 
-Let's say we have two scripts: `a.zs` and `b.zs`.
+Diciamo che abbiamo due script: `a.zs` e `b.zs`.
 
 a.zs:
 
