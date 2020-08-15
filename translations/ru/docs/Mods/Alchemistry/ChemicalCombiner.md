@@ -1,4 +1,4 @@
-# Chemical Combiner
+# Химический комбинатор
 
 # Пакет
 ```zenscript
@@ -6,9 +6,9 @@ mods.alchemistry.Комбинер
 ```
 
 ## Методы
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** - вывод рецепта.
 
-- **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/)[] ввода** - Ввод рецепта.
 
 
 ## Сложение
@@ -28,14 +28,14 @@ mods.alchemistry.Combiner.removeAllRecipes();
 ```
 
 
-# Game Stages Integration
+# Интеграция с игровыми стадиями
 
-## New Recipes
+## Новые Рецепты
 ```zenscript
 mods.alchemistry.Combiner.addStagedRecipe(IItemStack output, IItemstack[] input, String stage);
 ```
 
-## Existing Recipe
+## Существующий рецепт
 
 ```zenscript
 mods.alchemistry.Combiner.setAsStaged(IItemStack output, String stage);
