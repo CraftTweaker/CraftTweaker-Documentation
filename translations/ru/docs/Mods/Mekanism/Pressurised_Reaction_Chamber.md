@@ -1,33 +1,33 @@
-# Pressurised Reaction Chamber
+# Сжатая палата реакции
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Pressurised Reaction Chamber through the command `/ct mekrecipes prc`
+По состоянию на Меканизм 9.7. добавлена возможность просматривать все рецептные строки камеры давлённой реакции через команду `/ct mekrecipes prc`
 
-## Addition
+## Сложение
 
 ```zenscript
-mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, double energy, int duration);
+mods.mekanism.reaction.addRecipe(IIngredient itemInput, ILiquidStack liquidInput, IGasStack gasInput, IItemStack itemOutput, IGasStack gasOutput, двойная энергия, внутренняя продолжительность);
 
-mods.mekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
+модов. ekanism.reaction.addRecipe(<mekanism:polyethene>, <liquid:liquidethene>, <gas:oxygen>, <mekanism:polyethene> * 8, <gas:oxygen>, 50000, 2000);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the itemInput instead of only IItemStacks.
+Для Mekanism 9.7.0 можно использовать IIngredients в качестве itemInput вместо IItemStacks.
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+Замечание: В настоящее время все это повторяет различные возможности в java при добавлении вместо того, чтобы делать это в ZenScript. В настоящее время в машинах нет встроенной поддержки комбинированных ингредиентов или oredictionary .
 
-## Removal
+## Удаление
 
 ```zenscript
-mods.mekanism.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasOutput, @Optional IIngredient itemInput, @Optional IIngredient liquidInput, @Optional IIngredient gasInput);
+mods.mekanism.reaction.removeRecipe(IIngredient itemOutput, IIngredient gasput, @Optional IIngredient itemInput, @Optional IIngredient liquidInput, @Optional IIngredient gasInput);
 
-mods.mekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, <gas:hydrogen>);
+mods. ekanism.reaction.removeRecipe(<mekanism:substrate>, <gas:ethene>, <mekanism:biofuel>, <liquid:water>, <gas:hydrogen>);
 mods.mekanism.reaction.removeRecipe(<mekanism:polyethene>, <gas:oxygen>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Указанный входной параметр удалит только тот рецепт, который использует указанный ввод. Пропуск входного параметра удалит все рецепты, которые производят указанный выход.
 
-## Removing all recipes
+## Удаление всех рецептов
 
-As of Mekanism 9.7.0 it is now possible to remove all Pressurised Reaction Chamber recipes. (This excludes any recipes added via CraftTweaker)
+По данным Меканизма 9.7.0, теперь можно удалить все рецепты Палаты Сжатой Реакции. (Это исключает любые рецепты, добавленные через CraftTweaker)
 
 ```zenscript
 mods.mekanism.reaction.removeAllRecipes();
