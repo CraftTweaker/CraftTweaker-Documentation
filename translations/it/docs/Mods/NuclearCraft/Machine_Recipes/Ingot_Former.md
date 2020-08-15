@@ -1,6 +1,6 @@
-# Ingot Former
+# Lingotto Ex
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.ingot_former`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional doub
 ```zenscript
 mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.ingot_former.removeAllRecipes();
+mods.nuclearcraft.ingot_former.removeAllRicette();
 ```
