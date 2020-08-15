@@ -4,7 +4,7 @@
 
 Class path: `mods.buildcraft.CombustionEngine`
 
-## Use
+## Uso
 
 To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
 
