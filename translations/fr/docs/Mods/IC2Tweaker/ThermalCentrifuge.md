@@ -4,13 +4,13 @@
 
 `import mods.ic2.ThermalCentrifuge;`
 
-## Methods
+## Méthodes
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int minHeat**
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.ic2.ThermalCentrifuge.addRecipe([IItemStack[] outputs, IIngredient input, @Optional int minHeat);
