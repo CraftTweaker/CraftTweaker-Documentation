@@ -1,12 +1,12 @@
-# Drying Rack
+# Trockenrausch
 
-## Package
+## Paket
 `import mods.stone_age.DryingRackManager;`
 
 ## Methoden
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe**
 - **int dryingTime** Drying time in ticks
 - **String group** Recipe group
 
