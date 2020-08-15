@@ -1,28 +1,28 @@
-# `TagIngredient`
+# `Ingrédient`
 
-A `TagIngredient` is an `IIngredient` implementation that allows you to use a [`Tag`](/Mods/Boson/Tags/Tag/) in recipes. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
+Un `TagIngrédient` est une implémentation `IIngrédient` qui vous permet d'utiliser un [`Tag`](/Mods/Boson/Tags/Tag/) dans les recettes. Vous ne pouvez accéder à ces données qu'à partir de l'extérieur du chargeur de balises [`` loader](/Mods/Boson/Loaders/Tags/). Pour plus d'informations concernant les balises et comment les obtenir, reportez-vous à [cette page](/Mods/Boson/Tags/Concept/).
 
-## Class Details
-The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagIngredient` its fully qualified name for importing.
+## Détails de la classe
+La classe est située dans le paquet `net.thesilkminer.mc.boson.zen.tag` , faisant `net.thesilkminer.mc.boson.zen.tag.TagIngredient` son nom entièrement qualifié pour l'importation.
 
-## Creating a New Instance
-Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
+## Créer une nouvelle instance
+Reportez-vous à [la documentation du gestionnaire de parenthèses](/Mods/Boson/Tags/BracketHandler/).
 
 ## `Ingrédient`
-Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
+Puisque `TagIngredient` est un `IIngrédient`, il fournit un accès à toutes les propriétés et méthodes de cette interface. Reportez-vous à la page de documentation de sur [`IIngrédient`](/Vanilla/Variable_Types/IIngredient/) pour plus de détails. Cette page de documentation ne décrit que les ajouts et les bizarreries qui sont spécifiques à cette classe.
 
 ## Propriétés
-A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
+Un `TagIngredient` fournit un accès en lecture seule à un ensemble supplémentaire de propriétés, comme décrit dans le tableau suivant :
 
-| Nom de la propriété | Type de texte                            | Libellé                                                         |
-| ------------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`           | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| Nom de la propriété | Type de texte                                       | Libellé                                                                           |
+| ------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `tagName`           | [`Chaîne de noms SpacedString`](/Mods/Boson/Names/) | Nom qui identifie de manière unique l'étiquette à laquelle se réfère ce composant |
 
 ## Exemple
 
 ```zenscript
-val anyIngot = <tag-items:forge:ingots>;
-val anyWool = <tag-items:minecraft:wool>;
+val anyLingot = <tag-items:forge:ingots>;
+valez n'importe quelle Laine = <tag-items:minecraft:wool>;
 
-recipes.addShaped("wool_infused_ingot", <contenttweaker:wool_infused_ingot>, [[anyIngot, anyWool], [anyWool, anyIngot]]);
+recettes.addShaped("laine d'infused_ingot", <contenttweaker:wool_infused_ingot>, [[anyIngot, anyWool], [anyWool, anyIngot]]);
 ```
