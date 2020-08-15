@@ -1,4 +1,4 @@
-# `Class`
+# `类`
 
 A `Class` identifies a single instance of a type that is exposed to ZenScript. Almost everything in ZenScript is, in fact, an instance of a class, be it an `IItemStack` (which is an instance of that class) or an array of strings (which is an instance of `string[]`).
 
@@ -26,10 +26,10 @@ Class.byName("123"); # returns null because no class with that name exists (or c
 ## 参数
 A `Class` provides read-only access to a certain set of properties, as outlined in the following table:
 
-| Property Name   | 返回值类型    | 描述                                                                                                                                   |
-| --------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| `simpleName`    | `string` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.item.IItemStack`, `string` for `string`) |
-| `qualifiedName` | `string` | Full name that uniquely identifies this class in the ZenScript environment (i.e. `crafttweaker.item.IItemStack` or `string`)         |
+| 属性名称            | 返回值类型 | 描述                                                                                                                                   |
+| --------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `simpleName`    | `字符串` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.item.IItemStack`, `string` for `string`) |
+| `qualifiedName` | `字符串` | Full name that uniquely identifies this class in the ZenScript environment (i.e. `crafttweaker.item.IItemStack` or `string`)         |
 
 ## 方法
 `Class` also provides access to a single method that allows conversion to the "native" equivalent (refer to [`NativeClass`](/Mods/Boson/Reflection/NativeClass/) for more information). The signature of the method is as follows:
