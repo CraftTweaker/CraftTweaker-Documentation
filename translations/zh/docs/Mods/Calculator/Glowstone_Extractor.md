@@ -16,7 +16,7 @@ import mods.calculator.glowstone;
 glowstone.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## 移除
 ```zenscript
 glowstone.removeRecipe(IIngredient input);
 ```
