@@ -7,7 +7,7 @@
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
 - **int chopTimes** Chop times
 - **String group** Recipe group
 
