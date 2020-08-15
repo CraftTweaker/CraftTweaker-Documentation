@@ -1,6 +1,6 @@
-# Condenser
+# Kondensator
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.condenser`
 
 ## Rezepte hinzufügen
