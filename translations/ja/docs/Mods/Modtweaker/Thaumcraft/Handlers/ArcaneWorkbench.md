@@ -1,16 +1,16 @@
 # Arcane Workbench
 
-This package allows you to add and remove recipes to/from the Arcane Workbench.
+このパッケージでは、Arcane Workbenchにレシピを追加および削除できます。
 
 ## パッケージのインポート
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+[パッケージとそのメソッドを](/AdvancedFunctions/Import/) インポートして、メソッドの再取得を促進できます。
 
 ```zenscript
 import mods.thaumcraft.ArcaneWorkbench;
 ```
 
-## Adding recipes
+## レシピの追加
 
 ```zenscript
 //mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe(String name, String research, int vis, CTAspectStack[] aspectList, IItemStack output, IIngredient[][] input);
@@ -21,7 +21,7 @@ mods.thaumcraft.ArcaneWorkbench.registerShapedRecipe("test", "", 20, [<aspect:ae
 mods.thaumcraft.ArcaneWorkbench.registerShapelessRecipe("tests", "", 20, [<aspect:aqua>, <aspect:ignis>, <aspect:terra>], <minecraft:diamond>, [<minecraft:sand>, <minecraft:stick>, <minecraft:grass>]);
 ```
 
-## Removing recipes
+## レシピを削除
 
 ```zenscript
 //mods.thaumcraft.ArcaneWorkbench.removeRecipe(String name);
@@ -29,5 +29,5 @@ mods.thaumcraft.ArcaneWorkbench.removeRecipe("recipeName");
 
 
 //mods.thaumcraft.ArcaneWorkbench.removeRecipe(IItemStack output);
-mods.thaumcraft.ArcaneWorkbench.removeRecipe(<thaumcraft:goggles>);
+mods.thaumcraft.ArcaneWorkbench.removeRemoveRecipe(<thaumcraft:goggles>);
 ```
