@@ -3,47 +3,47 @@
 ## 所属包名
 `mods.atum.Quern;`
 
-## Adding a Recipe
+## 添加配方
 
 `mods.atum.Quern.addRecipe(input, output, rotations);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `旋转` 0以上的任何数字
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete querning
+添加指定输入 & 输出的配方，这需要指定的旋转来完成查询
 
 ```zenscript
-mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3);
+mods.atum.Quern.addRecipe(<item:atum:fertile_soil>, <item:atum:fertile_soil_pile>, 3)；
 ```
 
-## Removing a Recipe
+## 删除配方
 
-### Remove Recipes by Output
+### 通过输出移除配方
 
-`mods.atum.Quern.removeRecipeByOutput(output);`
+`mods.atum.Quern.removeRecipeByOutput(输出);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+移除输出结果为所提供的 [IItemStack](/vanilla/api/items/IItemStack) 的所有配方。
 
 ```zenscript
-mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>);
+mods.atum.Quern.removeRecipeByOutput(<item:atum:emmer_flour>)；
 ```
 
-### Remove Recipes by Output & Input
+### 通过输出 & 输入移除配方
 
-`mods.atum.Quern.removeRecipeByOutputInput(output, input);`
+`mods.atum.Quern.removeRecipeByOutput(输出, 输入)；`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+移除指定输出 & 输入的特定方法
 
 ```zenscript
-mods.atum.Quern.removeRecipeByOutputInput(<item:atum:emmer_flour>, <item:atum:emmer>);
+mods.atum.Quern.removeRecipeByOutpute(<item:atum:emmer_flour>, <item:atum:emmer>);
 ```
 
-### Other removal methods
+### 其他移除方法
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Quern recipes
+请参阅 [配方管理器](/recipes/recipe_managers) 以其他方式移除查询配方
