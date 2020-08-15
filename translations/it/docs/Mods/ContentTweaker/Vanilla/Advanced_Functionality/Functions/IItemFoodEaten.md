@@ -1,19 +1,19 @@
 # IItemFoodEaten
 
-The IItemFoodEaten function is called whenever the associated [food item](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) is eaten. Note that this event *will not fire* if the item already has a provided [IItemUseFinish](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
+La funzione IItemFoodEaten viene chiamata ogni volta che viene mangiato l'oggetto alimentare [](/Mods/ContentTweaker/Vanilla/Creatable_Content/ItemFood/) associato. Nota che questo evento *non sparerà* se l'elemento ha già un [IItemUseFinish fornito](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUseFinish/).
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.IItemFoodEaten;`
 
 ## Parametri
 
-The IItemFoodEaten is a function with the following parameters (In this order):
+IItemFoodEaten è una funzione con i seguenti parametri (In questo ordine):
 
 - [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) mutableItemStack → The food item being eaten.
 - [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo in cui si trova il giocatore
-- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player eating the food.
+- [CTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) giocatore → Il giocatore che mangia il cibo.
 
 ## Esempi
 
@@ -26,9 +26,9 @@ var item = VanillaFactory.createItem("suspicious_soup");
 
 item.healAmount = 4;
 item.saturation = 1.5;
-item.onItemFoodEaten = function(stack, world, player) {
+item. nItemFoodEaten = function(stack, world, player) {
     if (!world.isRemote()) {
-        player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(60, 1));
+        player. ddPotionEffect(<potion:minecraft:weakness>.makePotionEffect(60, 1));
     }
 };
 item.register();
