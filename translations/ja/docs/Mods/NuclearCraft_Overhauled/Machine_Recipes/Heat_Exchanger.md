@@ -4,14 +4,14 @@
 ## Importing the Package
 `mods.nuclearcraft.HeatExchangerHeatExchanger`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
-mods.nuclearcraft.mods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
+mods.nuclearcraft.Supercoolermods.nuclearcraft.HeatExchanger.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double heatRequired, int temperatureIn, int temperatureOut);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
-mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.SupercoolerHeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.mods.nuclearcraft.HeatExchanger.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.HeatExchanger.removeRecipeWithOutput(ILiquidStack fluidOutput);
 mods.nuclearcraft.HeatExchanger.removeAllRecipes();HeatExchanger.removeAllRecipes();
