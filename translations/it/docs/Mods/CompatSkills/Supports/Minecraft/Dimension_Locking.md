@@ -1,13 +1,13 @@
-# Dimension Locking
+# Blocco Dimensione
 
-## Dimension Locking
+## Blocco Dimensione
 
-This feature allows for locking the ability to travel to specific dimensions unless requirements are met!
+Questa funzione consente di bloccare la capacità di viaggiare a specifiche dimensioni a meno che non siano soddisfatti i requisiti!
 
-### Syntax
+### Sintassi
 
-    Blank Example:
+    Esempio vuoto:
     mods.compatskills.DimensionLock.addDimensionLock(int dimension, String... defaultRequirements);
     
-    Working Example:
-    mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining|5", "reskillable:magic|7");
+    Esempio di lavoro:
+    mods.compatskills.DimensionLock.addDimensionLock(-1, "reskillable:mining<unk> 5", "reskillable:magic<unk> 7");
