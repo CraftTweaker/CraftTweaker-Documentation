@@ -1,6 +1,6 @@
 # Death Chest Defense
 
-## Importing the package
+## Importando el paquete
 
 `import mods.vanilladeathchest.DeathChestDefense;`
 
