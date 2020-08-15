@@ -1,12 +1,12 @@
 # Rare Earth Extractor
 
-## Package
+## パッケージ
 
 ```zenscript
 import mods.ic2.RareEarthExtractor;
 ```
 
-## Method
+## 方法
 
 - **float value**
 - **[IItemStack](/Vanilla/Items/IItemStack/)... inputs** Can have more then one specified for the input. If so all the specified items give the same specified value.
