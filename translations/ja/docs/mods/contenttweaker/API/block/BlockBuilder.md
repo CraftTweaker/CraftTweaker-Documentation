@@ -1,251 +1,251 @@
 # BlockBuilder
 
-The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
+blockbuilderはブロックを構築するために使用されます(あなたは完全にそれが来るのを見ませんでした、右?)。<br> 一度作成すると、別々のメソッドで概説される様々なプロパティを設定できます。 <p> ブロックの種類を変更して、より特殊なブロックを作成することもできます (e. を選択します。 Cotに、ブロックをインガムにするように伝えるには、 [mods.contenttweaker.blockを呼び出す必要があります。BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) と有効なリソースの場所パスを指定します。
 
-This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
 問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
-mods.contenttweaker.block.BlockBuilder
+mods.contenttweaker.blockBlockBuilder
 ```
 
-## Implemented Interfaces
-BlockBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+BlockBuilder は、以下のインターフェースを実装します。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructors
-Creates a new BlockBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) for that.
+新しいBlockBuilderを作成します。 これは _ではなく_ ゲーム内で新しいブロックを作成することを忘れないでください。 [mods.contenttweaker.blockを呼び出す必要があります。BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build)
 ```zenscript
-new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.material.MCMaterial);
+new mods.contenttweaker.blockBlockBuilder(material as crafttweaker.api.block.material);
 new mods.contenttweaker.block.BlockBuilder();
-new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
+new mods.contenttweaker.blockBlockBuilder(<blockmaterial:earth>);
 ```
-| パラメータ | タイプ                                                                                  | 説明                                | IsOptional | デフォルト値                       |
-| ----- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| 材料    | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | true       | `<blockmaterial:iron>` |
+| パラメータ | タイプ                                                                                  | 説明        | IsOptional | デフォルト値                       |
+| ----- | ------------------------------------------------------------------------------------ | --------- | ---------- | ---------------------------- |
+| 材料    | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | このブロックの材料 | true       | `<blockmaterial:iron>` |
 
 
 
 ## メソッド
-### build
+### ビルド
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
 
 ```zenscript
 myBlockBuilder.build(resourceLocation as String);
 myBlockBuilder.build("my_awesome_block");
 ```
 
-| パラメータ            | タイプ  | 説明                                   |
-| ---------------- | ---- | ------------------------------------ |
-| resourceLocation | 文字列型 | The resource path to give this block |
+| パラメータ   | タイプ  | 説明               |
+| ------- | ---- | ---------------- |
+| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
 
 
 ### withHardnessAndResistance
 
-Sets the block's hardness and resistance levels. Unlike the other method, this one only accepts one parameter and will use that value for both properties.
+ブロックの硬度と抵抗レベルを設定します。 他のメソッドとは異なり、このパラメータは 1 つしか受け付けず、両方のプロパティにその値を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
+myBlockBuilder.withHardnessAndResistance(hardnessAndResistance(floatとして));
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| パラメータ                 | タイプ    | 説明                                                |
-| --------------------- | ------ | ------------------------------------------------- |
-| hardnessAndResistance | float型 | The value to set for hardness and for resistance. |
+| パラメータ                 | タイプ    | 説明           |
+| --------------------- | ------ | ------------ |
+| hardnessAndResistance | float型 | 硬度と抵抗に設定する値。 |
 
 
 
-Sets the block's hardness and resistance levels. Unlike the other method, this one allows you to set each property one to a separate value.
+ブロックの硬度と抵抗レベルを設定します。 他のメソッドとは異なり、このメソッドでは各プロパティを別の値に設定できます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float);
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
 
-| パラメータ        | タイプ    | 説明                               |
-| ------------ | ------ | -------------------------------- |
-| hardnessIn   | float型 | The value to set for hardness    |
-| resistanceIn | float型 | The value to set for resistance. |
+| パラメータ        | タイプ    | 説明        |
+| ------------ | ------ | --------- |
+| hardnessIn   | float型 | 硬度に設定する値  |
+| resistanceIn | float型 | 抵抗に設定する値。 |
 
 
 ### withHarvestLevel
 
-Sets the mining level required to mine this block
+このブロックの採掘に必要な採掘レベルを設定します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHarvestLevel(harvestLevel as int);
+myBlockBuilder.withHarvestLevel(intとしてharvestLevel);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| パラメータ | タイプ | 説明                         |
-| ----- | --- | -------------------------- |
-| 収穫レベル | int | The harvest level requried |
+| パラメータ | タイプ | 説明    |
+| ----- | --- | ----- |
+| 収穫レベル | int | 収穫レベル |
 
 
 ### withHarvestTool
 
-Sets the tool required to harvest this block
+このブロックを収穫するのに必要な道具を設定します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolType);
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| パラメータ       | タイプ                                                                             | 説明            |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| パラメータ       | タイプ                                                                             | 説明     |
+| ----------- | ------------------------------------------------------------------------------- | ------ |
+| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | ツールの種類 |
 
 
 ### withItemGroup
 
-Sets the item group in which this block will appear
+このブロックを表示するアイテムグループを設定します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| パラメータ | タイプ                                                                               | 説明               |
-| ----- | --------------------------------------------------------------------------------- | ---------------- |
-| group | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| パラメータ | タイプ                                                                               | 説明       |
+| ----- | --------------------------------------------------------------------------------- | -------- |
+| グループ  | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | 設定するグループ |
 
 
 ### withLightValue
 
-Sets the block's light value.
+ブロックのライト値を設定します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| パラメータ        | タイプ | 説明                     |
-| ------------ | --- | ---------------------- |
-| lightValueIn | int | The light level to set |
+| パラメータ        | タイプ | 説明         |
+| ------------ | --- | ---------- |
+| lightValueIn | int | 設定するライトレベル |
 
 
 ### withLootFrom
 
-Will instruct CoT to override this block's loot table with the one of the block Provided. Currently this will still create a loot table entry, though it will be ignored by the game.
+format@@0ブロックのいずれかを持つ戦利品テーブルをformat@@1上書きするようCoTに指示します。 現在、これはまだ戦利品テーブルのエントリを作成しますが、それはゲームによって無視されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| パラメータ   | タイプ                                                           | 説明                                           |
-| ------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
+| パラメータ   | タイプ                                                           | 説明              |
+| ------- | ------------------------------------------------------------- | --------------- |
+| blockIn | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | 略奪テーブルを適用するブロック |
 
 
 ### withMaxStackSize
 
-Sets the maximum Stack size that this block can have when in your inventory. Will be 64 if unchanged.
+インベントリ内のスタックサイズの最大値を設定します。 変更しない場合は64になります。
 
- Returns: `This builder, used for chaining`
+ 戻り値: `このビルダーは、チェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| パラメータ | タイプ | 説明               |
-| ----- | --- | ---------------- |
-| サイズ   | int | The size to set. |
+| パラメータ | タイプ | 説明       |
+| ----- | --- | -------- |
+| サイズ   | int | 設定するサイズ。 |
 
 
 ### withRarity
 
-Allows you to set the rarity of this block.
+このブロックのレア度を設定できます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withRarity(rarity as String);
 myBlockBuilder.withRarity("UNCOMMON");
 ```
 
-| パラメータ | タイプ  | 説明         |
-| ----- | ---- | ---------- |
-| レア度   | 文字列型 | The rarity |
+| パラメータ | タイプ  | 説明  |
+| ----- | ---- | --- |
+| レア度   | 文字列型 | レア度 |
 
 
-### withSlipperiness
+### withslipperiness
 
-Sets the slipperiness.
+滑りやすさを設定します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withSlipperiness(slipperinessIn as float);
+myBlockBuilder.withSlipperiness(slipinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| パラメータ          | タイプ    | 説明               |
-| -------------- | ------ | ---------------- |
-| slipperinessIn | float型 | The value to set |
+| パラメータ       | タイプ    | 説明    |
+| ----------- | ------ | ----- |
+| slupinessIn | float型 | 設定する値 |
 
 
 ### withType
 
-Sets the specific type of this block. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
+このブロックの種類を設定します。 このメソッドが呼び出されると、ビルダーのコンテキストはより提供された型ビルダーに切り替わります。 つまり、このビルダーのメソッドは利用できなくなります。 このメソッドを呼び出す前に、設定したいプロパティを設定する必要があります。
 
- Returns: `A builder with the given block.`
+ 戻り値: `指定されたブロックを持つビルダー。`
 
-Return type: T
+戻り値の種類: T
 
 ```zenscript
 myBlockBuilder.withType<T>();
-myBlockBuilder.withType<mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable>();
+myBlockBuilder.withType<mods.contenttweaker.block.pillarBlockBuilderPillarRotatable>();
 ```
 
-| ParameterName | Bounds                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) |
+| パラメータ名 | バウンド数                                                                                        |
+| ------ | -------------------------------------------------------------------------------------------- |
+| T      | [mods.contenttweaker.blockBlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) |
 
-### withoutDrops
+### without Drops
 
-Will instruct CoT that this block will not have any loot entries. Currently this will still create a loot table entry, though it will be ignored by the game.
+このブロックには戦利品のエントリがないように指示します。 現在、これはまだ戦利品テーブルのエントリを作成しますが、それはゲームによって無視されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withoutDrops();
@@ -253,11 +253,11 @@ myBlockBuilder.withoutDrops();
 
 ### withoutMovementBlocking
 
-Instructs CoT that this block will does not block movement.
+このブロックが動きをブロックしないよう命令します。
 
- Returns: `This builder, used for chaining`
+ 戻り値: `このビルダーは、チェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+戻り値の型: [mods.contenttweaker.blockBlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withoutMovementBlocking();
