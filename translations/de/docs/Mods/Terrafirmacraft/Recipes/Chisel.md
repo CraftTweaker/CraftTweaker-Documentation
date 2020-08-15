@@ -1,6 +1,6 @@
 # Chisel
 
-## Package
+## Paket
 ```zenscript
 import mods.terrafirmacraft.Chisel;
 ```
@@ -10,7 +10,7 @@ import mods.terrafirmacraft.Chisel;
 Chisel.addRecipe(String registryName, IItemStack input, IItemStack output);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 Chisel.removeRecipe(IItemStack output);
