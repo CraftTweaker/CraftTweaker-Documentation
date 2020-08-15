@@ -1,10 +1,10 @@
-# Cutting Knife
+# Coltello Di Taglio
 
-The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
+Il pacchetto *coltello* viene utilizzato per aggiungere o rimuovere ricette da/per il coltello da taglio.
 
 ## Chiamata
 
-You can call the *knife* package using `mods.skyresources.knife`
+Puoi chiamare il pacchetto *coltello* usando `mods.skyresources.knife`
 
 ## Aggiunta Ricetta
 
