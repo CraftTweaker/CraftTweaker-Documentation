@@ -20,7 +20,7 @@ new crafttweaker.api.data.ByteData(internal as byte);
 ```
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| internal  | byte | No description provided |
+| intern    | byte | No description provided |
 
 
 
