@@ -1,17 +1,17 @@
 # MiniBlocks Utils
 
-## Get specific Mini Blocks
+## Obtenir des Mini Blocs spécifiques
 
-This is a util function for getting an IIngredient for a specific MiniBlock so you can avoid weird NBT.
+Ceci est une fonction utile pour obtenir un ingrédient pour un MiniBlock spécifique afin que vous puissiez éviter un NBT bizarre.
 
-* The type parameter specifies "siding", "moulding" or "corner"
-* The parentBlock is the block of which the miniblock got its texture from, because this parentBlock is an IIngredient things like oredictionary also work.
+* Le paramètre type spécifie "siding", "moulding" ou "corner"
+* Le parentBlock est le bloc dont le miniblock a obtenu sa texture, parce que ce parentBlock est un Igredient des choses comme l'oredictionnaire fonctionne aussi.
 
 ```zenscript
 mods.betterwithmods.MiniBlocks.getMiniBlock(String type, IIngredient parentBlock)
 
 
-//Example
-//Gets all sidings that have a base of planks
-mods.betterwithmods.MiniBlocks.getMiniBlock("siding", <ore:plankWood>);
+//Exemple
+//Renvoie tous les côtés qui ont une base de planches
+mods.betterwithmods.MiniBlocks.getMiniBlocks.Block("siding", <ore:plankWood>);
 ```
