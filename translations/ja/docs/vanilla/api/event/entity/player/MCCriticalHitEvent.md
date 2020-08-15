@@ -1,9 +1,9 @@
 # MCCriticalHitEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
-| Parameter | Type                                                                                                                              | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                               | 説明                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No description provided |
 
 
 
-## Methods
+## メソッド
 ### getDamageModifier
 
 The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
@@ -105,9 +105,9 @@ myMCCriticalHitEvent.isVanillaCritical();
 myMCCriticalHitEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ  | タイプ      | 説明                      |
+| ------ | -------- | ----------------------- |
+| cancel | boolean型 | No description provided |
 
 
 ### setDamageModifier
@@ -118,9 +118,9 @@ This set the damage multiplier for the hit. If you set it to 0, then the particl
 myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| mod       | float | No description provided |
+| パラメータ | タイプ    | 説明                      |
+| ----- | ------ | ----------------------- |
+| mod   | float型 | No description provided |
 
 
 
