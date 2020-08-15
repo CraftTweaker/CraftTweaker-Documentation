@@ -6,9 +6,9 @@ mods.alchemistry.EvaporatorEvaporator
 ```
 
 ## メソッド
-**[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
+**[IItemStack](/Vanilla/Items/IItemStack/) 出力** - レシピの出力。
 
-**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
+**[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - レシピの入力。
 
 
 ## 追加
