@@ -1,40 +1,40 @@
-# Refinery
+# 精炼厂
 
-The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
+Refinery 软件包可以用于添加/移除沉浸式工程精炼厂的配方。
 
-## Calling The Package
+## 调用包
 
-You can call the Refinery package using `mods.immersiveengineering.Refinery`.
+您可以使用 `mods.immersiveengineering.Refinery` 来调用 Refinery 软件包。
 
 ## 添加配方
 
-| Required | 类型      | Data Type                                    |
-| -------- | ------- | -------------------------------------------- |
-| 必要       | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Energy  | Integer                                      |
+| 必填 | 类型  | 数据类型                                         |
+| -- | --- | -------------------------------------------- |
+| 必要 | 输出  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要 | 输入1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必填 | 输入2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要 | 能源  | 整型                                           |
 
 ### 例子
 
 ```zenscript
-//Example
+//example
 mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
 
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## Remove Recipe
+## 删除配方
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 类型 | 数据类型                                         |
+| -- | -------------------------------------------- |
+| 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example
-mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack output);
+//示例
+mods.immersiveengineering.Refinery.removeRecipe(ILiquidStack 输出);
 
 mods.immersiveengineering.Refinery.removeRecipe(<liquid:iron>);
 ```
