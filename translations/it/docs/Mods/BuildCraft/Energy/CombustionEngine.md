@@ -1,38 +1,38 @@
-# Combustion Engine
+# Motore A Combustione
 
-*Requires BuildCraft Energy*
+*Richiede Energia BuildCraft*
 
-Class path: `mods.buildcraft.CombustionEngine`
+Percorso di classe: `mods.buildcraft.CombustionEngine`
 
 ## Uso
 
-To use, import the class with `import mods.buildcraft.CombustionEngine;` at the beginning of your script.
+Per usare, importa la classe con `import mods.buildcraft.CombustionEngine;` all'inizio del tuo script.
 
-## Adding a Clean Fuel
+## Aggiungere un combustibile pulito
 
-`CombustionEngine.addCleanFuel(liquid, powerPerTick, timePerBucket);`
+`CombustionEngine.addCleanFuel(liquido, powerPerTick, timePerBucket);`
 
-- `liquid` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> Power output in MJ per tick
-- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
+- `liquid` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Il liquido da utilizzare come carburante
+- `powerPerTick` &lt;doppio> Potenza in MJ per tick
+- `timePerBucket` &lt;int> Quantità di zecche che 1.000 mB (1 secchio) dovrebbero funzionare per
 
 ```zenscript
-import mods.buildcraft.CombustionEngine;
+importa mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addCleanFuel(<liquid:iron>, 32.0, 1200);
 ```
 
-## Adding a Dirty Fuel
+## Aggiungere un carburante sporco
 
 `CombustionEngine.addDirtyFuel(lFuel, powerPerTick, timePerBucket, lResidue);`
 
-- `lFuel` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The liquid to be used as fuel
-- `powerPerTick` &lt;double> Power output in MJ per tick
-- `timePerBucket` &lt;int> Amount of ticks that 1,000 mB (1 bucket) should run for
-- `lResidue` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> The residue fluid, per bucket of the original fuel
+- `lFuel` <[ILiquididStack](/Vanilla/Liquids/ILiquidStack)> Il liquido da usare come carburante
+- `powerPerTick` &lt;doppio> Potenza in MJ per tick
+- `timePerBucket` &lt;int> Quantità di zecche che 1.000 mB (1 secchio) dovrebbero funzionare per
+- `lResidue` <[ILiquidStack](/Vanilla/Liquids/ILiquidStack)> Il fluido residuo, per secchio del combustibile originale
 
 ```zenscript
-import mods.buildcraft.CombustionEngine;
+importa mods.buildcraft.CombustionEngine;
 
 CombustionEngine.addDirtyFuel(<liquid:iron>, 32.0, 1200, <liquid:water>);
 ```
