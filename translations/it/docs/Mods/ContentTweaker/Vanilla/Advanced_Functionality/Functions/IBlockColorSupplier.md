@@ -1,19 +1,19 @@
 # IBlockColorSupplier
 
-The IBlockColorSupplier function can be used to provide the [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) to be used for whatever.
+La funzione IBlockColorSupplier può essere utilizzata per fornire l'oggetto colore [](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) da utilizzare per qualsiasi cosa.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.IBlockColorSupplier;`
 
 ## Parametri
 
-The IBlockColorSupplier Function is a function with following parameters.
+La funzione IBlockColorSupplier è una funzione con i seguenti parametri.
 
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → the blockstate of the block whose color is being requested.
-- [IBlockAccess](/Vanilla/World/IBlockAccess/) access → the block access of the block whose color is being requested.
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → the position of the block whose color is being requested.
+- [Stato ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) → lo stato di blocco del blocco il cui colore è richiesto.
+- [IBlockAccess](/Vanilla/World/IBlockAccess/) accesso → accesso blocco del blocco di cui il colore è richiesto.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → la posizione del blocco il cui colore è richiesto.
 - int tintIndex → l'indice di tinta, utilizzare che comunque ti piace. La funzione deve restituire un [Color Object](/Mods/ContentTweaker/Vanilla/Types/Color/Color/).
 
 ## Esempi
@@ -26,10 +26,10 @@ import mods.contenttweaker.BlockState;
 import mods.contenttweaker.BlockPos;
 import mods.contenttweaker.Color;
 
-import crafttweaker.world.IBlockAccess;
+import crafttweaker. orld.IBlockAccess;
 
-function getBlockColor(state as BlockState, access as IBlockAccess, pos as BlockPos, tintIndex as int) as Color {
-  //Returns a lime color
-    return Color.fromInt(0x00FF00);
+funzione getBlockColor(stato come BlockState, accesso come IBlockAccess, pos come BlockPos, tintIndex as int) as Color {
+  //Restituisce a lime color
+    return Color. romInt(0x00FF00);
 }
 ```
