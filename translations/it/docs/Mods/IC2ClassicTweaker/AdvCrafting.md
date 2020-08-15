@@ -1,12 +1,12 @@
 # Advanced Recipes
 
-## Package
+## Pacchetto
 
 ```zenscript
 import mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
+## Tipi di Ricette
 There are several types of recipes:
 
 ### Shaped Recipes
