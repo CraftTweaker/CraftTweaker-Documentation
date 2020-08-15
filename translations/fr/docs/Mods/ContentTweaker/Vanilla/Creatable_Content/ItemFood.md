@@ -20,7 +20,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 The ItemFoodRepresentation class expands [ItemRepresentation](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/). That means all Methods and ZenProperties that are available for [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) are also available for food items!
 
-## ZenProperties
+## Propriétés Zen
 
 To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
 
@@ -35,12 +35,12 @@ item.getHealAmount();
 item.setHealAmount(64);
 ```
 
-| Property        | Type                                                                                            | Required | Default Value | Description/Notes                                           |
+| Property        | Type de texte                                                                                   | Required | Default Value | Description/Notes                                           |
 | --------------- | ----------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------------------------------------------- |
-| healAmount      | int                                                                                             | Yes      |               | How many food points are restored when eaten?               |
-| alwaysEdible    | bool                                                                                            | No       | false         | Can the food still be eaten if the user's food bar is full? |
-| wolfFood        | bool                                                                                            | No       | false         | Can the food be used to tame woves?                         |
-| saturation      | float                                                                                           | No       | 0.6           | The food's Saturation Value                                 |
+| healAmount      | Indice                                                                                          | Yes      |               | How many food points are restored when eaten?               |
+| alwaysEdible    | booléen                                                                                         | No       | Faux          | Can the food still be eaten if the user's food bar is full? |
+| wolfFood        | booléen                                                                                         | No       | Faux          | Can the food be used to tame woves?                         |
+| saturation      | flottant                                                                                        | No       | 0.6           | The food's Saturation Value                                 |
 | onItemFoodEaten | [IItemFoodEaten](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemFoodEaten/) | No       | null          | Called when the food item is eaten                          |
 
 ## Registering the item
