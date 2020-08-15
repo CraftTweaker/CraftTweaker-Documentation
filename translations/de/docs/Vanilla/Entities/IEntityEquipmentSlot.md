@@ -9,7 +9,7 @@ It might be required for you to import the package if you encounter any issues, 
 
 ## ZenGetters/ZenMethods
 
-| Getter    | Type   |
+| Getriebe  | Type   |
 | --------- | ------ |
 | index     | int    |
 | slotIndex | int    |
@@ -24,7 +24,7 @@ Returns a bool.
 slotOne == slotTwo;
 ```
 
-## Enumerations
+## Aufzählungen
 
 The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
