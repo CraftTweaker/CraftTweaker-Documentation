@@ -1,6 +1,6 @@
 # BlockBuilder
 
-The blockbuilder is used to... build blocks (you totally didn't see that one coming, right... right?).<br> Once you created it you can set various properties which will be outlined by the separate methods. <p> You can also change the block's type to create a more specialized form of block (e.g. stairs or Blocks that can be rotated in the same way logs can). To tell CoT that you want the block to appear ingame you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) and specify a valid resource location path.
+Il blockbuilder è usato per... costruire blocchi (hai completamente non visto che uno arriva, destra... giusto?).<br> Una volta creato è possibile impostare varie proprietà che saranno delineate con i metodi separati. <p> Puoi anche cambiare il tipo di blocco per creare una forma di blocco più specializzata (e. . scale o blocchi che possono essere ruotati nello stesso modo in cui i tronchi possono). Per dire a CoT che vuoi che il blocco appaia ingame devi chiamare [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) e specificare un percorso di localizzazione delle risorse valido.
 
 Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,19 +11,19 @@ mods.contenttweaker.block.BlockBuilder
 ```
 
 ## Interfacce Implementate
-BlockBuilder implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+BlockBuilder implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Constructors
-Creates a new BlockBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) for that.
+## Costruttori
+Crea un nuovo BlockBuilder. Ricorda che questo _non_ creerà un nuovo blocco nel gioco, è necessario chiamare [mods.contenttweaker.block.BlockBuilder#build(String)](/mods/contenttweaker/API/block/BlockBuilder/#build) per questo.
 ```zenscript
-new mods.contenttweaker.block.BlockBuilder(material as crafttweaker.api.block.material.MCMaterial);
+new mods.contenttweaker.block.BlockBuilder(materiale come crafttweaker.api.block.material.MCMaterial);
 new mods.contenttweaker.block.BlockBuilder();
 new mods.contenttweaker.block.BlockBuilder(<blockmaterial:earth>);
 ```
-| Parametro | Tipo                                                                                 | Descrizione                       | IsOptional | Valore Predefinito           |
-| --------- | ------------------------------------------------------------------------------------ | --------------------------------- | ---------- | ---------------------------- |
-| materiale | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | The material this block will have | vero       | `<blockmaterial:iron>` |
+| Parametro | Tipo                                                                                 | Descrizione                         | IsOptional | Valore Predefinito           |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------------------- | ---------- | ---------------------------- |
+| materiale | [crafttweaker.api.block.material.MCMaterial](/vanilla/api/block/material/MCMaterial) | Il materiale che questo blocco avrà | vero       | `<blockmaterial:iron>` |
 
 
 
@@ -42,157 +42,157 @@ myBlockBuilder.build("my_awesome_block");
 | resourceLocation | Stringa | Il percorso della risorsa per dare questo blocco |
 
 
-### withHardnessAndResistance
+### withDurezzaAndResistance
 
-Sets the block's hardness and resistance levels. Unlike the other method, this one only accepts one parameter and will use that value for both properties.
+Imposta i livelli di durezza e resistenza del blocco. A differenza dell'altro metodo, questo solo accetta un parametro e userà quel valore per entrambe le proprietà.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHardnessAndResistance(hardnessAndResistance as float);
+myBlockBuilder.withHardnessAndResistance(durezzaAndResistance as float);
 myBlockBuilder.withHardnessAndResistance(0.5f);
 ```
 
-| Parametro             | Tipo         | Descrizione                                       |
-| --------------------- | ------------ | ------------------------------------------------- |
-| hardnessAndResistance | galleggiante | The value to set for hardness and for resistance. |
+| Parametro             | Tipo         | Descrizione                                      |
+| --------------------- | ------------ | ------------------------------------------------ |
+| hardnessAndResistance | galleggiante | Il valore da impostare per durezza e resistenza. |
 
 
 
-Sets the block's hardness and resistance levels. Unlike the other method, this one allows you to set each property one to a separate value.
+Imposta i livelli di durezza e resistenza del blocco. A differenza dell'altro metodo, questo ti permette di impostare ogni proprietà ad un valore separato.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHardnessAndResistance(hardnessIn as float, resistanceIn as float);
+myBlockBuilder.withHardnessAndResistance(durezzaIn come float, resistenzaIn come float);
 myBlockBuilder.withHardnessAndResistance(0.5f, 0.5f);
 ```
 
-| Parametro    | Tipo         | Descrizione                      |
-| ------------ | ------------ | -------------------------------- |
-| hardnessIn   | galleggiante | The value to set for hardness    |
-| resistanceIn | galleggiante | The value to set for resistance. |
+| Parametro    | Tipo         | Descrizione                               |
+| ------------ | ------------ | ----------------------------------------- |
+| hardnessIn   | galleggiante | Il valore da impostare per la durezza     |
+| resistenzaIn | galleggiante | Il valore da impostare per la resistenza. |
 
 
 ### withHarvestLevel
 
-Sets the mining level required to mine this block
+Imposta il livello di miniera richiesto per estrarre questo blocco
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withHarvestLevel(harvestLevel as int);
 myBlockBuilder.withHarvestLevel(3);
 ```
 
-| Parametro           | Tipo | Descrizione                |
-| ------------------- | ---- | -------------------------- |
-| livello di raccolta | int  | The harvest level requried |
+| Parametro           | Tipo | Descrizione                     |
+| ------------------- | ---- | ------------------------------- |
+| livello di raccolta | int  | Il livello di raccolta riquried |
 
 
 ### withHarvestTool
 
-Sets the tool required to harvest this block
+Imposta lo strumento necessario per raccogliere questo blocco
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
-myBlockBuilder.withHarvestTool(harvestTool as mods.contenttweaker.item.MCToolType);
+myBlockBuilder.withHarvestTool(harvestTool come mods.contenttweaker.item.MCToolType);
 myBlockBuilder.withHarvestTool(<tooltype:shovel>);
 ```
 
-| Parametro   | Tipo                                                                            | Descrizione   |
-| ----------- | ------------------------------------------------------------------------------- | ------------- |
-| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The tool type |
+| Parametro   | Tipo                                                                            | Descrizione          |
+| ----------- | ------------------------------------------------------------------------------- | -------------------- |
+| harvestTool | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | Il tipo di strumento |
 
 
 ### withItemGroup
 
-Sets the item group in which this block will appear
+Imposta il gruppo di elementi in cui apparirà questo blocco
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withItemGroup(group as mods.contenttweaker.item.MCItemGroup);
 myBlockBuilder.withItemGroup(<itemgroup:building_blocks>);
 ```
 
-| Parametro | Tipo                                                                              | Descrizione      |
-| --------- | --------------------------------------------------------------------------------- | ---------------- |
-| group     | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The group to set |
+| Parametro | Tipo                                                                              | Descrizione            |
+| --------- | --------------------------------------------------------------------------------- | ---------------------- |
+| gruppo    | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | Il gruppo da impostare |
 
 
 ### withLightValue
 
-Sets the block's light value.
+Imposta il valore di luce del blocco.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withLightValue(lightValueIn as int);
 myBlockBuilder.withLightValue(15);
 ```
 
-| Parametro    | Tipo | Descrizione            |
-| ------------ | ---- | ---------------------- |
-| lightValueIn | int  | The light level to set |
+| Parametro    | Tipo | Descrizione                     |
+| ------------ | ---- | ------------------------------- |
+| lightValueIn | int  | Il livello di luce da impostare |
 
 
 ### withLootFrom
 
-Will instruct CoT to override this block's loot table with the one of the block Provided. Currently this will still create a loot table entry, though it will be ignored by the game.
+Istruirà CoT a sovrascrivere la tabella del bottino di questo blocco con quella del blocco Provideo. Attualmente questo creerà ancora una voce di tabella bottino, anche se sarà ignorato dal gioco.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withLootFrom(blockIn as crafttweaker.api.block.MCBlock);
 myBlockBuilder.withLootFrom(<block:minecraft:diamond>);
 ```
 
-| Parametro | Tipo                                                          | Descrizione                                  |
-| --------- | ------------------------------------------------------------- | -------------------------------------------- |
-| blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | The block whose loot table should be applied |
+| Parametro | Tipo                                                          | Descrizione                                               |
+| --------- | ------------------------------------------------------------- | --------------------------------------------------------- |
+| blockIn   | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | Il blocco il cui tavolo bottino dovrebbe essere applicato |
 
 
 ### withMaxStackSize
 
-Sets the maximum Stack size that this block can have when in your inventory. Will be 64 if unchanged.
+Imposta la dimensione massima dello stack che questo blocco può avere quando è nel tuo inventario. Saranno 64 se invariati.
 
- Returns: `This builder, used for chaining`
+ Restituisce: `Questo costruttore, usato per chaining`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withMaxStackSize(size as int);
 myBlockBuilder.withMaxStackSize(16);
 ```
 
-| Parametro  | Tipo | Descrizione      |
-| ---------- | ---- | ---------------- |
-| dimensione | int  | The size to set. |
+| Parametro  | Tipo | Descrizione                 |
+| ---------- | ---- | --------------------------- |
+| dimensione | int  | La dimensione da impostare. |
 
 
-### withRarity
+### withRarità
 
-Allows you to set the rarity of this block.
+Permette di impostare la rarità di questo blocco.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withRarity(rarity as String);
@@ -201,51 +201,51 @@ myBlockBuilder.withRarity("UNCOMMON");
 
 | Parametro | Tipo    | Descrizione |
 | --------- | ------- | ----------- |
-| rarità    | Stringa | The rarity  |
+| rarità    | Stringa | La rarità   |
 
 
-### withSlipperiness
+### conSlipperiness
 
-Sets the slipperiness.
+Imposta la scivolosità.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withSlipperiness(slipperinessIn as float);
 myBlockBuilder.withSlipperiness(0.5f);
 ```
 
-| Parametro      | Tipo         | Descrizione      |
-| -------------- | ------------ | ---------------- |
-| slipperinessIn | galleggiante | The value to set |
+| Parametro      | Tipo         | Descrizione            |
+| -------------- | ------------ | ---------------------- |
+| slipperinessIn | galleggiante | Il valore da impostare |
 
 
 ### withType
 
-Sets the specific type of this block. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method.
+Imposta il tipo specifico di questo blocco. Dopo che questo metodo è chiamato il contesto del costruttore passerà al costruttore di tipo più fornito. Ciò significa che i metodi di questo costruttore non saranno più disponibili, quindi tutte le proprietà che si desidera impostare dovrebbero essere impostate prima di chiamare questo metodo.
 
- Returns: `A builder with the given block.`
+ Restituisce: `Un costruttore con il blocco specificato.`
 
-Return type: T
+Tipo di restituzione: T
 
 ```zenscript
 myBlockBuilder.withType<T>();
 myBlockBuilder.withType<mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable>();
 ```
 
-| ParameterName | Bounds                                                                                        |
-| ------------- | --------------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) |
+| Nome | Limiti                                                                                        |
+| ---- | --------------------------------------------------------------------------------------------- |
+| T    | [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder) |
 
 ### withoutDrops
 
-Will instruct CoT that this block will not have any loot entries. Currently this will still create a loot table entry, though it will be ignored by the game.
+Istruirà CoT che questo blocco non avrà alcun bottino voci. Attualmente questo creerà ancora una voce di tabella bottino, anche se sarà ignorato dal gioco.
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withoutDrops();
@@ -253,11 +253,11 @@ myBlockBuilder.withoutDrops();
 
 ### withoutMovementBlocking
 
-Instructs CoT that this block will does not block movement.
+Insegna a CoT che questo blocco non bloccherà il movimento.
 
- Returns: `This builder, used for chaining`
+ Restituisce: `Questo costruttore, usato per chaining`
 
-Return type: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
+Tipo restituito: [mods.contenttweaker.block.BlockBuilder](/mods/contenttweaker/API/block/BlockBuilder)
 
 ```zenscript
 myBlockBuilder.withoutMovementBlocking();
