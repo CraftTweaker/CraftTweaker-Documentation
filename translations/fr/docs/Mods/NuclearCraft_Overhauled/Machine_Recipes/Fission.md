@@ -12,8 +12,8 @@ mods.nuclearcraft.FissionModerator.add(IIngredient block, int fluxFactor, double
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.FissionModerator.remove(IIngredient block);
-mods.nuclearcraft.FissionModerator.removeAll();
+mods.nuclearcraft.mods.nuclearcraft.FissionModerator.remove(IIngredient block);
+mods.nuclearcraft.
 ```
 
 ## Fission Reflector
@@ -44,9 +44,9 @@ mods.nuclearcraft.FissionIrradiator.add(IIngredient itemInput, IIngredient itemO
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.mods.nuclearcraft.FissionIrradiator.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.FissionIrradiator.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.FissionIrradiator.removeAllRecipes();
+mods.nuclearcraft.
 ```
 
 ## Pebble Bed Fission
@@ -61,9 +61,9 @@ mods.nuclearcraft.PebbleFission.addRecipe(IIngredient itemInput, IIngredient ite
 
 ### Removing Recipes
 ```zenscript
-mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
+mods.nuclearcraft.mods.nuclearcraft.PebbleFission.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.PebbleFission.removeRecipeWithOutput(IIngredient itemOutput);
-mods.nuclearcraft.PebbleFission.removeAllRecipes();
+mods.nuclearcraft.
 ```
 
 ## Solid Fuel Fission
