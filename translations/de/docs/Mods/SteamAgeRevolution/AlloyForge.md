@@ -19,7 +19,7 @@ mods.steamagerevolution.AlloyForge.addRecipe(<liquid:water>*100, <liquid:lava>*1
 ```
 
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.steamagerevolution.AlloyForge.removeRecipe(ILiquidStack output);
