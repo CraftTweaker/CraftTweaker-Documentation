@@ -29,7 +29,7 @@ AxeChopping.add(IOreEntry input, IItemStack output);
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 import mods.cuisine.AxeChopping;
