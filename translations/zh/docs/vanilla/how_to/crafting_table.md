@@ -1,6 +1,6 @@
 # 工作台
 
-## Recipe Types
+## 配方类型
 
 There are three recipe types for crafting tables:
 
