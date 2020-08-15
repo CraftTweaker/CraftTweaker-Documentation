@@ -2,16 +2,16 @@
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
 | ZenGetter      | GetterMethod        | Tipo Di Reso                                                       |
 | -------------- | ------------------- | ------------------------------------------------------------------ |
-| attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
+| attributo      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
 | baseValue      | getBaseValue()      | doppia                                                             |
-| modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
+| modificatori   | getModifiers()      | `Elenco<IEntityAttrubuteModifier>`                           |
 | attributeValue | getAttributeValue() | doppia                                                             |
 
 ## ZenSetters
@@ -20,12 +20,12 @@ It might be required for you to import the package if you encounter any issues (
 | --------- | ------------------- | -------------- |
 | baseValue | setBaseValue(value) | doppia         |
 
-## Modifier Methods
+## Metodi Modificatori
 
 - `List<IEntityAttrubuteModifier>` getModifiersByOperation(int operation)
 - boolean hasModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier)
 - [IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) getModifier(String uuid);
-- void applyModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
+- void applicyModifier([modificatore IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/));
 - void removeModifier([IEntityAttributeModifier](/Vanilla/Entities/Attributes/IEntityAttributeModifier/) modifier);
 - void removeModifier(String uuid);
 - void removeAllModifiers();
