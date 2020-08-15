@@ -1,6 +1,6 @@
-# Energized Smelter
+# Energierierter Schmelzer
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Energized Smelter through the command `/ct mekrecipes smelter`
+Ab dem Mekanismus 9.7.0 ist es nun möglich, alle Rezeptfolgen des Energized Schmelters über den Befehl `/ct mekrecipes smelter` anzuzeigen
 
 ## Addition
 
@@ -17,17 +17,17 @@ Notiz: Momentan ist all dies eine Schleife über die verschiedenen Möglichkeite
 ## Entfernen
 
 ```zenscript
-mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optional IIngredient outputStack);
+mods.mekanism.smelter.removeRecipe(IIngredient inputStack, @Optionale IIngredient outputStack);
 
 mods.mekanism.smelter.removeRecipe(<minecraft:sand:*>, <minecraft:glass>);
 mods.mekanism.smelter.removeRecipe(<minecraft:cobblestone>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Die Angabe eines Ausgabeparameters entfernt nur das spezifische Rezept, das zu dieser Ausgabe führt. Wird der Ausgabeparameter nicht aktiviert, werden alle Rezepte entfernt, die der Eingabeartikel produzieren kann.
 
 ## Entferne alle Rezepte
 
-As of Mekanism 9.7.0 it is now possible to remove all Energized Smelter recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
+Ab Mekanism 9.7.0 ist es nun möglich, alle Rezepte für Energized Schmelzer zu entfernen. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
 ```zenscript
 mods.mekanism.smelter.removeAllRecipes();
