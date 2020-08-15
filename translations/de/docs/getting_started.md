@@ -22,7 +22,7 @@ When joining a server, the server sends their scripts to the client, and the cli
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+In diese Datei packst du die folgende Zeile:
 
 ```zenscript
 println("Hello world!");
@@ -40,13 +40,13 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 ### Die crafttweaker.log-Datei
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Die `crafttweaker.log` verwendet eine bestimmte Syntax, welche ungefähr so aussieht:
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+Im Falle des vorherigen Beispiels, wird dort folgendes stehen:
 
 ```
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
@@ -56,15 +56,15 @@ The syntax is used for debug purposes and the only time the syntax is not used, 
 
 ### Kommentare
 
-Comments can be used to make your script files more readable and easier to understand!
+Mit Kommentaren kannst du deine Skripte besser lesbarer und verständlicher machen!
 
-ZenScript supports 3 types of comments, being:
+ZenScript unterstütz drei verschiedene Arten von Kommentaren:
 
-Single line: `// I'm a single line comment!`
+Einzeilig: `// Ich bin ein einzeiliger Kommentar!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Alternativ einzeilig: `# Ich bin auch ein einzeiliger Kommentar!`
 
-Multiline:
+Mehrzeilig:
 ```
 /* Ich bin
 ein mehrzeiliger
