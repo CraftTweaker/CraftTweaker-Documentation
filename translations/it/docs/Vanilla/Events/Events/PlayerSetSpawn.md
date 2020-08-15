@@ -20,7 +20,7 @@ PlayerSetSpawn Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                            |
+| ZenGetter  | Tipo Di Reso                           |
 | ---------- | -------------------------------------- |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)   |
 | `isForced` | bool                                   |
