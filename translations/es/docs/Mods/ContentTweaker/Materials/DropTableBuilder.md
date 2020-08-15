@@ -1,39 +1,39 @@
 # DropTableBuilder
 
-DropTableBuilder is used to create 'drops' strings for ores and samples that support dropping multiple item stacks at once, item stacks that contain more than one item, and weighted drops.
+DropTableBuilder se utiliza para crear cadenas de 'soltar' para minerales y muestras que soportan soltar múltiples pilas de objetos a la vez, pilas que contienen más de un elemento, y gotas ponderadas.
 
-## Importing the package
+## Importando el paquete
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.DropTableBuilder;`
+Podría ser necesario que importes el paquete si encuentras algún problema, así que más vale estar seguro que lo sentimos y añadir la importación.  
+`importar mods.contenttweaker.DropTableBuilder;`
 
-## Methods
+## Métodos
 
-These methods allow for creation and modification of a drop table. All builder methods return the builder they were run on, allowing for chaining methods.
+Estos métodos permiten crear y modificar una tabla de soltar. Todos los métodos de compilación devuelven el constructor en el que fueron ejecutados, lo que permite encadenar métodos.
 
-| Method Name     | Description                                                                      |
-| --------------- | -------------------------------------------------------------------------------- |
-| newSlot()       | Creates a new drop table if run statically or adds a new slot to the drop table. |
-| addItem()       | Adds the specified item to the current slot of the drop table.                   |
-| enableFortune() | Enables the current slot to benefit from the fortune enchant.                    |
+| Nombre del método | Descripción                                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------------------- |
+| newSlot()         | Crea una nueva tabla de soltar si se ejecuta estáticamente o añade una nueva ranura a la mesa de soltar. |
+| añadir elemento   | Añade el elemento especificado a la ranura actual de la tabla de soltar.                                 |
+| enableFortune()   | Permite que la ranura actual se beneficie del encantamiento de las fortunas.                             |
 
-### Usage:
+### Uso:
 
 #### `newSlot()`
 
-DropTableBuilder.newSlot() will create a new builder. \<builder\>.newSlot() will finalize the current slot and start a new one.
+DropTableBuilder.newSlot() creará un nuevo constructor. \<builder\>.newSlot() finalizará la ranura actual e iniciará una nueva.
 
 #### `addItem(String itemStr[, int weight[, int count]])`
 
-`itemStr` can be an item's name like \<mod\>:\<item\>:\<meta\>, an ore dictionary entry like oredict:\<entry\>, or the word empty. `weight` controls how likely the item is to drop using the formula \<item weight\>/\<sum of item weights within slot\>. Defaults to 1 if omitted. `count` is how many of the item drop if selected. Defaults to 1 if omitted.
+`artículo Str` puede ser el nombre de un elemento como \<mod\>:\<item\>:\<meta\>, una entrada de diccionario de mineral como oredicto:\<entry\>, o la palabra vacía. `el peso` controla las probabilidades de que el objeto se suelte usando la fórmula \<item weight\>/\<sum of item weights within slot\>. Por defecto es 1 si se omite. `contador` es cuántos de los elementos sueltos si se seleccionan. Por defecto es 1 si se omite.
 
 #### `enableFortune()`
 
-Slots that have fortune enabled will select a number of additional items from the slot up to the level of fortune used. Matches vanilla fortune behavior on slots that have only 1 item.
+Las ranuras que tengan habilitada la fortuna seleccionarán una serie de elementos adicionales desde la ranura hasta el nivel de la fortuna utilizada. Coincide con el comportamiento de las fortunas de vainilla en las ranuras que tienen sólo 1 objeto.
 
-## Examples using the Builder
+## Ejemplos usando el Constructor
 
-### Creating a drop table
+### Crear una tabla de borrado
 
 ```zenscript
 var complextable = DropTableBuilder.newSlot()
@@ -47,23 +47,23 @@ var complextable = DropTableBuilder.newSlot()
                     .addItem("empty");
 ```
 
-This drop table would drop 2 diamonds (10%) or 1 coal (90%) benefiting from fortune, 1 stone (100%), and 1 cobblestone (50%).
+Esta tabla de gota soltaría 2 diamantes (10%) o 1 carbón (90%) beneficiándose de fortuna, 1 piedra (100%) y 1 adoquín (50%).
 
 ```zenscript
 var lapistable = DropTableBuilder.newSlot()
-                   .addItem("minecraft:lapis_lazuli", 1, 4)
-                   .addItem("minecraft:lapis_lazuli", 1, 5)
-                   .addItem("minecraft:lapis_lazuli", 1, 6)
-                   .addItem("minecraft:lapis_lazuli", 1, 7)
-                   .addItem("minecraft:lapis_lazuli", 1, 8)
+                   . ddItem("minecraft:lapis_lazuli", 1, 4)
+                   . ddItem("minecraft:lapis_lazuli", 1, 5)
+                   . ddItem("minecraft:lapis_lazuli", 1, 6)
+                   . ddItem("minecraft:lapis_lazuli", 1, 7)
+                   . ddItem("minecraft:lapis_lazuli", 1, 8)
                    .enableFortune();
 ```
 
-This drop table mimics vanilla lapis, dropping 4-8 lapis and benefiting from fortune.
+Este cuadro de gota imita la lapis de vainilla, dejando caer 4-8 lapis y beneficiándose de la fortuna.
 
-### Using a drop table
+### Usando una tabla de soltar
 
-Builders are used by assigning them as a "drops" data value. Since data values only accept strings, the builder will be cast as a string using its toString method.
+Los constructores se utilizan asignándolos como un valor de datos "soltar". Dado que los valores de datos sólo aceptan cadenas, el constructor se convertirá como una cadena usando su método toString.
 
 ```zenscript
 var lapisData = MaterialSystem.getMaterialBuilder()
@@ -73,7 +73,7 @@ var complexData = MaterialSystem.getMaterialBuilder()
                     .setColor(12345678).setName("Complex Ore").setColor(12345678).build()
                     .registerPart("ore").getData();
 lapisData.addDataValue("drops",lapistable);
-complexData.addDataValue("drops",complextable+lapistable);
+complexDataValue("drops",complextable+lapistable);
 ```
 
-When 2 builders are added together, a new table is created with the slots from both tables.
+Cuando se agregan 2 constructores juntos, se crea una nueva tabla con las ranuras de ambas tablas.
