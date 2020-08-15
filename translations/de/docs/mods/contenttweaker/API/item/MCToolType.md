@@ -58,14 +58,14 @@ Return type: String
 ```
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Kommandozeile | String | true       | false      |
 | name          | String | true       | false      |
 
-## Operators
+## Operatoren
 ### EQUALS
 
 Compares if two given MCToolType objects are equal
@@ -75,7 +75,7 @@ Compares if two given MCToolType objects are equal
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
+| Parameter | Type   | Beschreibung     |
 | --------- | ------ | ---------------- |
 | o         | Object | The other object |
 
