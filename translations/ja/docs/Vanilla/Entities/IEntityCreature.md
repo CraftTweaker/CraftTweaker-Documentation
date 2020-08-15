@@ -11,16 +11,16 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That means all functions available to [IEntityLiving](/Vanilla/Entities/IEntityLiving/) objects also are available to IEntityCreature.
 
-## Methods
+## メソッド
 
 ### ZenGetters/Setters
 
-| ZenGetter            | Type                                   |
+| ZenGetter            | タイプ                                    |
 | -------------------- | -------------------------------------- |
 | hasPath              | bool                                   |
 | isWithinHomeDistance | bool                                   |
 | homePosition         | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| maximumHomeDistance  | float                                  |
+| maximumHomeDistance  | float型                                 |
 | hasHome              | bool                                   |
 
 ### ZenMethods
