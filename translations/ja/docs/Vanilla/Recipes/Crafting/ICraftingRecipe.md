@@ -2,7 +2,7 @@
 
 An ICraftingRecipe is a crafting table recipe the way ZS sees it.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingRecipe`
@@ -56,7 +56,7 @@ rec.ingredients1D;
 rec.ingredients2D;
 ```
 
-### Output
+### 出力
 
 The [IItemStack](/Vanilla/Items/IItemStack/) output of the recipe.
 
