@@ -4,16 +4,16 @@
 
 You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## Ajouter une recette
 
-| Required | Type        | Data Type                                           |
-| -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| Required | Type de texte | Type de données                                    |
+| -------- | ------------- | -------------------------------------------------- |
+| Required | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)           |
+| Required | Fuel Output   | Nombre entier                                      |
+| Required | Input         | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Time          | Nombre entier                                      |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -23,11 +23,11 @@ mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>,
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Exemple:
 
 ```zenscript
 //Example:
