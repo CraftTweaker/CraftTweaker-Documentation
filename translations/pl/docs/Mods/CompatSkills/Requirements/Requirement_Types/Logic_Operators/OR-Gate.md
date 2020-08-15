@@ -1,10 +1,10 @@
-# OR Operator
+# LUB Operator
 
-An **OR** gate combines two inputs and returns `TRUE` if at least one of the inputs is also `TRUE`.
+Bramka **OR** łączy dwa wejścia i zwraca `TRUE` , jeśli co najmniej jedno z wejść jest również `TRUE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      0 |
-| 0       | 1       |      1 |
-| 1       | 0       |      1 |
-| 1       | 1       |      1 |
+| Input 1 | Input 2 | Wyjście |
+| ------- | ------- | -------:|
+| 0       | 0       |       0 |
+| 0       | 1       |       1 |
+| 1       | 0       |       1 |
+| 1       | 1       |       1 |
