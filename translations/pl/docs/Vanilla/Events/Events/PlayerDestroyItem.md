@@ -1,25 +1,25 @@
 # PlayerDestroyItem
 
-The PlayerDestroyItem Event is fired whenever a player destroys an item.
+Wydarzenie Gracza Niszczyciela jest uruchamiane za każdym razem, gdy gracz niszczy przedmiot.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerDestroyItemEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerDestroyItemEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerDestroyItem Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerDestroyItem zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter      | Return Type                              |
-| -------------- | ---------------------------------------- |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `originalItem` | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`         | string                                   |
+| ZenGetter            | Typ zwrotu                               |
+| -------------------- | ---------------------------------------- |
+| `gracz`              | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `Element oryginalny` | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `dłoń`               | ciąg znaków                              |
