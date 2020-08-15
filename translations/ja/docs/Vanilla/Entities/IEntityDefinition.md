@@ -29,7 +29,7 @@ Returns the ID as string
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### 名前
 
 Returns the name as string
 
@@ -97,7 +97,7 @@ You will need an [IEntityDropFunction](/Vanilla/Entities/IEntityDropFunction/):
     });
 ```
 
-### Remove
+### 削除
 
 This removes a drop.
 
