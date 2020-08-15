@@ -1,8 +1,8 @@
 # ItemBuilder
 
-The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
+アイテムビルダーはアイテムを作ることです（驚き！） <p> これにより、アイテムがどのように動作し、何ができるかを変更する様々なプロパティを設定できます。 [mods.contenttweaker.itemも使用できます。ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) を使用すると、より特殊なビルダーに切り替わります。 <p> Cotに、インガムを表示させたいと伝えるには、 [mods.contenttweaker.itemを呼び出す必要があります。ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) と有効なリソースロケーションパスを指定します。
 
-This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
 問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
@@ -10,90 +10,90 @@ This class was added by a mod with mod-id `contenttweaker`. 従って、この�
 mods.contenttweaker.item.ItemBuilder
 ```
 
-## Implemented Interfaces
-ItemBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+ItemBuilder は、以下のインターフェイスを実装します。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructors
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) for that.
+新しいアイテムビルダーを作成します。 これは _ではなく_ ゲーム内に新しいブロックを作成することに注意してください。 [mods.contenttweaker.itemを呼び出す必要があります。そのためのItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build)
 ```zenscript
 new mods.contenttweaker.item.ItemBuilder();
 ```
 
 ## メソッド
-### build
+### ビルド
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
 
 ```zenscript
 new ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| パラメータ            | タイプ  | 説明                                   |
-| ---------------- | ---- | ------------------------------------ |
-| resourceLocation | 文字列型 | The resource path to give this block |
+| パラメータ   | タイプ  | 説明               |
+| ------- | ---- | ---------------- |
+| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
 
 
 ### withItemGroup
 
-Allows you to set the item group that this item will appear in. By default, items will land in `misc`
+このアイテムを表示するアイテムグループを設定できます。 デフォルトでは、アイテムは `その他` に着陸します
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+戻り値の型: [mods.contenttweaker.item。ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGroup);
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| パラメータ     | タイプ                                                                               | 説明                                        |
-| --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
-| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| パラメータ     | タイプ                                                                               | 説明                   |
+| --------- | --------------------------------------------------------------------------------- | -------------------- |
+| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | このアイテムを表示するアイテムグループ: |
 
 
 ### withMaxDamage
 
-Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
+このアイテムの最大ダメージを設定できます。<br/> [mods.contenttweaker.itemと組み合わせて使用できないことに注意してください。ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+戻り値の型: [mods.contenttweaker.item。ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(maxDamage as int);
+new ItemBuilder().withMaxDamage(maxDamage);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| パラメータ     | タイプ | 説明                     |
-| --------- | --- | ---------------------- |
-| maxDamage | int | The maximum stack size |
+| パラメータ     | タイプ | 説明        |
+| --------- | --- | --------- |
+| maxDamage | int | 最大スタックサイズ |
 
 
 ### withMaxStackSize
 
-Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
+このアイテムの最大スタックサイズを設定できます。<br/> [mods.contentweaker.itemと組み合わせて使用できないことに注意してください。ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+戻り値の型: [mods.contenttweaker.item。ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxStackSize(maxStackSize as int);
+new ItemBuilder().withMaxStackSize(maxStackSize を int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| パラメータ        | タイプ | 説明                     |
-| ------------ | --- | ---------------------- |
-| maxStackSize | int | The maximum stack size |
+| パラメータ        | タイプ | 説明        |
+| ------------ | --- | --------- |
+| maxStackSize | int | 最大スタックサイズ |
 
 
-### withNoRepair
+### with Norepair
 
-Sets that this item may not be repaired in an anvil Returns: `This builder, used for method chaining`
+このアイテムはアンビルで修理できないことを設定します。 戻り値: `このビルダーは、メソッドチェーンに使用されます。`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+戻り値の型: [mods.contenttweaker.item。ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withNoRepair();
@@ -101,35 +101,35 @@ new ItemBuilder().withNoRepair();
 
 ### withRarity
 
-Allows you to set the item's rarity
+アイテムのレア度を設定できます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+戻り値の型: [mods.contenttweaker.item。ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| パラメータ | タイプ  | 説明         |
-| ----- | ---- | ---------- |
-| レア度   | 文字列型 | The rarity |
+| パラメータ | タイプ  | 説明  |
+| ----- | ---- | --- |
+| レア度   | 文字列型 | レア度 |
 
 
 ### withType
 
-Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method. Returns: `A builder with the given item.`
+このアイテムの特定のタイプを設定します。 このメソッドが呼び出されると、ビルダーのコンテキストはより提供された型ビルダーに切り替わります。 つまり、このビルダーのメソッドは利用できなくなります。 このメソッドを呼び出す前に、設定したいプロパティを設定する必要があります。 戻り値: `指定されたアイテムを持つビルダー。`
 
-Return type: T
+戻り値の種類: T
 
 ```zenscript
 new ItemBuilder().withType<T>();
 new ItemBuilder().withType<mods.contenttweaker.item.tool.ItemBuilderTool>();
 ```
 
-| ParameterName | Bounds                                                                                    |
-| ------------- | ----------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
+| パラメータ名 | バウンド数                                                                                     |
+| ------ | ----------------------------------------------------------------------------------------- |
+| T      | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
 
 
