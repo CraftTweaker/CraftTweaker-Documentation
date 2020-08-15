@@ -2,16 +2,16 @@
 
 A special Block Builder that allows you to create blocks that can be rotated in the same way as logs can. <p> This means that it has one texture for the top and bottom and one texture for the sides. By default these sides' locations are the block's name, followed by and either `_end` or `sides`. As with most things here, sample images are generated for you by default, though.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable
 ```
 
 ## 已实现的接口
-BlockBuilderPillarRotatable implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilderPillarRotatable implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
