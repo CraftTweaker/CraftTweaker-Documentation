@@ -4,7 +4,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.DoubleData
@@ -18,9 +18,9 @@ DoubleData implements the following interfaces. That means any method available 
 ```zenscript
 new crafttweaker.api.data.DoubleData(internal as double);
 ```
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| internal  | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| interne   | double        | No description provided |
 
 
 
