@@ -1,14 +1,14 @@
 # MinecartCollision
 
-MinecartCollisionEvent is fired whenever a minecart collides with an entity.
+MinecartCollisionEvento viene sparato ogni volta che un minecart collide con un'entità.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.MinecartCollisionEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. inecartCollisionEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-MinecartCollision Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+MinecartCollision Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IMinecartEvent](/Vanilla/Events/Events/IMinecartEvent/)
 
