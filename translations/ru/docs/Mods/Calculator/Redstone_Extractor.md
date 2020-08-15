@@ -1,6 +1,6 @@
 # Redstone Extractor
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.redstone;
 ```
@@ -16,7 +16,7 @@ import mods.calculator.redstone;
 redstone.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 redstone.removeRecipe(IIngredient input);
 ```
