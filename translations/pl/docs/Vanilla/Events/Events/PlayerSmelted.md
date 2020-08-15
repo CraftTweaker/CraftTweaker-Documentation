@@ -1,24 +1,24 @@
-# PlayerSmelted
+# Gracza Przetapiana
 
-The PlayerSmelted Event is fired whenever a player takes something out of a furnace.
+Wydarzenie Gracza Wytapianego jest strzelane za każdym razem, gdy gracz wyciąga coś z pieca.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerSmeltedEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerSmeltedEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerSmelted Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerSmelted Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter | Return Type                              |
+| ZenGetter | Typ zwrotu                               |
 | --------- | ---------------------------------------- |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `output`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `gracz`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
+| `wyjście` | [IItemStack](/Vanilla/Items/IItemStack/) |
