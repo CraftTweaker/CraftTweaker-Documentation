@@ -10,13 +10,13 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 ## Наследование от интерфейсов событий
 LivingDestroyBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Событие доступно](/Vanilla/Events/Events/IEventPositionable/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
 
 ## Геттеры/сеттеры
-The following information can be retrieved/set during the event:
+Во время события можно извлечь/задать следующую информацию:
 
 | ZenGetter | ZenSetter | Тип                                         |
 | --------- | --------- | ------------------------------------------- |
