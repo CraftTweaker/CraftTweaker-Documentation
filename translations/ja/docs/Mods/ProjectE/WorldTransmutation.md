@@ -1,8 +1,8 @@
-# World Transmutation
+# 世界の変換
 
-## add
+## 追加
 
-Adds a Philosopher Stone world transmutation, with an optional sneak click transmutation.
+哲学者の石の世界変異を追加します。オプションのスニーク変異があります。
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
@@ -23,9 +23,9 @@ mods.projecte.WorldTransmutation.add(IBlockState output, IBlockState input, @Opt
 mods.projecte.WorldTransmutation.add(<blockstate:minecraft:diamond_block>, <blockstate:minecraft:gold_block>, <blockstate:minecraft:iron_block>);
 ```
 
-## remove
+## 削除
 
-Removes the Philosopher Stone world transmutations that have the same input, output, and sneakOutput.
+同じ入力、出力、およびsneakOutputを持つ哲学者石の世界変換を削除します。
 
 ### [IItemStack](/Vanilla/Items/IItemStack/)
 
@@ -46,10 +46,10 @@ mods.projecte.WorldTransmutation.remove(IBlockState output, IBlockState input, @
 mods.projecte.WorldTransmutation.remove(<blockstate:minecraft:stone>, <blockstate:minecraft:cobblestone>, <blockstate:minecraft:grass>); 
 ```
 
-## removeAll
+## すべて削除
 
-Removes all Philosopher Stone world transmutations, including any added by the user before the call to this method.
+このメソッドを呼び出す前にユーザーによって追加されたものを含む、すべての哲学者ストーンワールドの変換を削除します。
 
 ```zenscript
-mods.projecte.PhiloStone.removeAllWorldTransmutation();
+mods.projectte.PhiloStone.removeAllWorldTransmutation();
 ```
