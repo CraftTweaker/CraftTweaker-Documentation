@@ -24,7 +24,7 @@ Puedes recuperar una pieza existente usando el [MaterialSystem](/Mods/ContentTwe
             <li>Placa densa (plataforma_densa)<img src="../Assets/dense_plate.png" alt="icono"></li>
             <li>Polvo sucio (sucio_polvo)<img src="../Assets/dirty_dust.png" alt="icono"></li>
             <li>Polvo<img src="../Assets/dust.png" alt="icono"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icono"></li>
+            <li>Equipo<img src="../Assets/gear.png" alt="icono"></li>
             <li>Ingot<img src="../Assets/ingot.png" alt="icono"></li>
             <li>Nugget<img src="../Assets/nugget.png" alt="icono"></li>
             <li>Placa<img src="../Assets/plate.png" alt="icono"></li>
