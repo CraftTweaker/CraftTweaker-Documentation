@@ -8,14 +8,14 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thermalexpansion.EnervationDynamo;
 ```
 
-## Add Fuel
+## Dodaj paliwo
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.addFuel(IItemStack stack, int energy);
 mods.thermalexpansion.EnervationDynamo.addFuel(<minecraft:stick>, 13);
 ```
 
-## Remove Fuel
+## Usuń paliwo
 
 ```zenscript
 //mods.thermalexpansion.EnervationDynamo.removeFuel(IItemStack stack);
