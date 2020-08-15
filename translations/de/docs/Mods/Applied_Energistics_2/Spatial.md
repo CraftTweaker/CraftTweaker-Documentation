@@ -3,16 +3,16 @@
 ### Importieren
 
 ```zenscript
-import mods.appliedenergistics2.Spatial;
+importieren mods.appliedenergistics2.Spatial;
 ```
 
-### Adding
+### Hinzufügen
 
-Whitelist a TileEntity class for Spatial IO. Warning: Some title entities, especially multiblock structures, may cause unexpected errors or crash when moved into Spatial IO. Pack devs should throughly test any additions to the Spatial IO whitelist.
+Whitelist eine TileEntity Klasse für Spatial IO. Warnung: Einige Titel-Entitäten, insbesondere Multiblock-Strukturen, können zu unerwarteten Fehlern oder zum Absturz führen, wenn sie in Spatial IO verschoben werden. Pack devs sollte alle Ergänzungen zur Spatial IO Whitelist gründlich testen.
 
 ```zenscript
 Spatial.whitelistEntity(String fullEntityClassName);
 
-//Adds the AA small storage crate to the spatial IO whitelist
+//Fügt die AA kleine Speicherkiste zur räumlichen IO Whitelist
 Spatial.whitelistEntity("de.ellpeck.actuallyadditions.mod.tile.TileEntityGiantChest");
 ```
