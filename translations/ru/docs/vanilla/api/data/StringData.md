@@ -11,12 +11,12 @@ crafttweaker.api.data.StringData
 ```
 
 ## Реализованные интерфейсы
-StringData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+StringData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.data.StringData(internal as String);
+new crafttweaker.api.data.StringData(внутренняя строка);
 ```
 | Параметр   | Тип    | Описание             |
 | ---------- | ------ | -------------------- |
@@ -27,11 +27,11 @@ new crafttweaker.api.data.StringData(internal as String);
 ## Методы
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+возвращает список<IData> представление этого IData, возвращает null на все, кроме [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Returns: `null if this IData is not a list.`
+ Возвращается: `аннулировать, если это IData не список.`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Возвращает список <[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 new StringData("Hello").asList();
@@ -39,11 +39,11 @@ new StringData("Hello").asList();
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Получает карту<String, IData> представления этой IData, возвращает null на что-либо кроме [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
+ Возвращается: `нулево, если этот IData не является картой.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 new StringData("Hello").asMap();
@@ -51,11 +51,11 @@ new StringData("Hello").asMap();
 
 ### asString
 
-Gets the String representation of this IData
+Получает строку представления этой IData
 
- Returns: `String that represents this IData (value and type).`
+ Возвращается: `Строка, которая представляет этот IData (значение и тип).`
 
-Returns String
+Возвращает строку
 
 ```zenscript
 new StringData("Hello").asString();
@@ -63,29 +63,29 @@ new StringData("Hello").asString();
 
 ### contains
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+Проверяет, содержит ли этот IData другую IData, в основном используется в подклассах [crafttweaker. pi.data.ICollectionData](/vanilla/api/data/ICollectionData)— это то же самое, что и проверка на другие типы IData
 
 Возвращает boolean
 
 ```zenscript
-new StringData("Hello").contains(data as crafttweaker.api.data.IData);
+new StringData("Hello").contains(данные как crafttweaker.api.data.IData);
 new StringData("Hello").contains("Display");
 ```
 
-| Параметр | Тип                                                    | Описание                         |
-| -------- | ------------------------------------------------------ | -------------------------------- |
-| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Параметр | Тип                                                    | Описание                    |
+| -------- | ------------------------------------------------------ | --------------------------- |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | для проверки наличия данных |
 
 
 ### copy
 
-Makes a copy of this IData.
+Создает копию этой IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
+ По умолчанию IData неизменяемая, используйте это для создания соответствующей копии объекта.
 
- Returns: `a copy of this IData.`
+ Возвращается: `копия IData.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new StringData("Hello").copy();
@@ -93,13 +93,13 @@ new StringData("Hello").copy();
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+Получает идентификатор внутреннего NBT тега.
 
- Used to determine what NBT type is stored (in a list for example)
+ Используется для определения того, какой тип NBT хранится (например, списк)
 
- Returns: `ID of the NBT tag that this data represents.`
+ Возвращается: `ID NBT тега, который представляет эти данные.`
 
-Returns byte
+Возвращает байт
 
 ```zenscript
 new StringData("Hello").getId();
@@ -107,11 +107,11 @@ new StringData("Hello").getId();
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+Получает строку внутреннего INBT тэга
 
- Returns: `String that represents the internal INBT of this IData.`
+ Возвращается: `Строка, представляющая внутренний INBT этого IData.`
 
-Returns String
+Возвращает строку
 
 ```zenscript
 new StringData("Hello").getString();
@@ -121,14 +121,14 @@ new StringData("Hello").getString();
 ## Операторы
 ### ADD
 
-Concatenates the two string Datas and returns the result.
+Смещает две строки данных и возвращает результат.
 
 ```zenscript
-new StringData("Hello") + data as crafttweaker.api.data.StringData
-new StringData("Hello") + new StringData("World")
+new StringData("Hello") + данные как crafttweaker.api.data.StringData
+new StringData("Hello") + новые StringData("Мир")
 ```
 
-| Параметр | Тип                                                              | Описание                 |
-| -------- | ---------------------------------------------------------------- | ------------------------ |
-| data     | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| Параметр | Тип                                                              | Описание                        |
+| -------- | ---------------------------------------------------------------- | ------------------------------- |
+| data     | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | Остальные данные для добавления |
 
