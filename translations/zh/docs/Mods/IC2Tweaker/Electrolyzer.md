@@ -4,7 +4,7 @@
 
 `import mods.ic2.Electrolyzer;`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/)[] outputs** Array of all outputs. Each slot corresponds to Down-Up-North-South-West-East direction. Trailing null may be omitted.
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input
