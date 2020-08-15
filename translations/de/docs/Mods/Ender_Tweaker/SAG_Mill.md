@@ -1,6 +1,6 @@
 # SAG Mill
 
-## Package
+## Paket
 
 `import mods.enderio.SagMill;`
 
@@ -21,7 +21,7 @@ mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient
 mods.enderio.SagMill.addRecipe([<minecraft:planks>], [100], <minecraft:log>);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.enderio.SagMill.removeRecipe(IItemStack input);
