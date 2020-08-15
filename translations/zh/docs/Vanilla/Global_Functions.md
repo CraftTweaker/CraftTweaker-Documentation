@@ -3,22 +3,22 @@
 全局函数是可以不使用[imported](/AdvancedFunctions/Import/)关键字的情况下调用的函数.  
 列表如下
 
-## print
+## 打印
 
 将字符串信息打印到CraftTweaker的日志中。
 
 ```zenscript
-//print(String message);
-print("Hello World!");
+//print(短信)；
+打印("Hello World!")；
 ```
 
 不返回任何内容
 
-## totalActions
+## 总计操作
 
 ```zenscript
-//totalActions();
-totalActions();
+// 总计动作();
+总计动作();
 ```
 
 返回一个int，显示注册了多少个全局函数。
@@ -37,57 +37,57 @@ enableDebug();
 
 ## isNull
 
-Checks if a given object is null.  
-Doesn't work on primitives!
+检查给定的对象是否为空。  
+在原始上不能工作！
 
 ```zenscript
-//isNull(Object o);
+//isNull(对象 o);
 isNull(<minecraft:dirt>);
 ```
 
-Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
+返回布尔值 注意：如果这对您不起作用，试着将对象投射到布尔值 `<minecraft:dirt> 作为布尔`
 
-## max
+## 最大值
 
 ```zenscript
-//max(int number1, int number2);
+//max(int number 1, int number2);
 max(10, 11);
 ```
 
-Returns an int
+返回整数
 
-## min
+## 分钟
 
 ```zenscript
-//min(int number1, int number2);
+//min(int number 1, int number2);
 min(10, 11);
 ```
 
-Returns an int
+返回整数
 
 ## pow
 
 ```zenscript
-//pow(double number1, double number2);
-pow(2.0, 4.0);
+/粉末(双号1，双号2)；
+粉末(2.0, 4.0)；
 ```
 
 返回double型数据
 
-## Global Fields
+## 全局字段
 
-| Field      | 说明                                                                                             |
-| ---------- | ---------------------------------------------------------------------------------------------- |
-| brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
-| client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
-| events     | Accesses the [Event Handler](/Vanilla/Events/IEventManager/)                                   |
-| format     | Accesses the [Formatting Handler](/Vanilla/Utils/IFormatter/)                                  |
-| furnace    | Accesses the [Furnace Handler](/Vanilla/Recipes/Furnace/Recipes_Furnace/)                      |
-| game       | Accesses [Game functions](/Vanilla/Game/IGame/)                                                |
-| itemUtils  | Accesses the [ItemUtils Handler](/Vanilla/Utils/IItemUtils/)                                   |
-| loadedMods | Accesses the [loaded Mods list](/Vanilla/Game/Mods/)                                           |
-| logger     | Accesses the [logger](/Vanilla/Utils/Logger/)                                                  |
-| oreDict    | Accesses the [oreDictionary Handler](/Vanilla/OreDict/IOreDict/)                               |
-| recipes    | Accesses the [Recipe Handler](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/)               |
-| server     | Accesses [server Methods](/Vanilla/Game/IServer/)                                              |
-| vanilla    | Accesses vanilla functions (currently only [vanilla.seeds](/Vanilla/Recipes/Seeds/) available) |
+| 字段      | 说明                                                            |
+| ------- | ------------------------------------------------------------- |
+| 酿造中     | 访问 [酿造处理器](/Vanilla/Recipes/Recipes_Brewing_Stand/)           |
+| 客户      | 访问 [客户端方法](/Vanilla/Game/IClient/)                            |
+| 事件      | 访问 [事件处理程序](/Vanilla/Events/IEventManager/)                   |
+| 格式      | 访问 [格式化处理器](/Vanilla/Utils/IFormatter/)                       |
+| furnace | 访问 [转炉处理器](/Vanilla/Recipes/Furnace/Recipes_Furnace/)         |
+| 游戏      | 访问 [游戏功能](/Vanilla/Game/IGame/)                               |
+| 项目工具    | 访问 [个项目实用处理器](/Vanilla/Utils/IItemUtils/)                     |
+| 已加载模组   | 访问 [已加载模组列表](/Vanilla/Game/Mods/)                             |
+| logger  | 访问 [记录器](/Vanilla/Utils/Logger/)                              |
+| oredict | 访问 [oreDictionary 处理器](/Vanilla/OreDict/IOreDict/)            |
+| 配方      | 访问 [配方处理器](/Vanilla/Recipes/Crafting/Recipes_Crafting_Table/) |
+| 服务器     | 访问 [服务器方法](/Vanilla/Game/IServer/)                            |
+| vanilla | 访问原版功能 (目前只有 [个原版种子](/Vanilla/Recipes/Seeds/) 可用)             |
