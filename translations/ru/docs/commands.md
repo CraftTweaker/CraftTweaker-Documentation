@@ -1,6 +1,6 @@
 # Команды
 
-Here are the commands that matter:
+Вот те команды, которые важны:
 ```
 /ст рука
 ```
@@ -11,16 +11,16 @@ Here are the commands that matter:
 /ct скрипты
 ```
 ```
-/ct issues
+/ct задач
 ```
 ```
 /ct дискорд
 ```
 ```
-/ct dump
+/ct дамп
 ```
 ```
-/ct recipeTypes
+/ct типы рецептов
 ```
 ```
 /ct помощь
