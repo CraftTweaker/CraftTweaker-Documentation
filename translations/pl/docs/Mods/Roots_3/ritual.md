@@ -1,10 +1,10 @@
-### Class
+### Klasa
 
 ```zenscript
 import mods.roots.Ritual;
 ```
 
-#### Methods
+#### Metody
 
 ```zenscript
 void modifyRitual(
@@ -15,7 +15,7 @@ void modifyRitual(
 
 * * *
 
-### Examples
+### Przykłady
 
 ```zenscript
 import mods.roots.Ritual;
