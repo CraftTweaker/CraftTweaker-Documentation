@@ -1,4 +1,4 @@
-# Scientific Calculator
+# Calcolatrice Scientifica
 
 ## Pacchetto
 ```zenscript
@@ -7,8 +7,8 @@ import mods.calculator.scientific;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)[1-2]** Gli input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output** L'output.
 
 ## Addizione
 ```zenscript
