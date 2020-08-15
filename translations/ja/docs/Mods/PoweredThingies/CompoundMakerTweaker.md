@@ -1,33 +1,33 @@
-# Powered Thingies :: Compound Maker
+# パワードThingies :: コンパウンドメーカー
 
-### Importing
+### インポート中
 
 ```zenscript
 import mods.poweredthingies.Tweaker.compoundTweaker as ct;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### キーによるレシピの削除、キーのリスト化、クリア
 
 ```zenscript
 ct().logKeys()
-ct().removeRecipe('minecraft:stone') // check <logKeys> output for valid keys
+ct().removeRecipe('minecraft:stone') // <logKeys> 出力で有効なキーがないか確認する
 ct().clear()
 ```
 
-### Adding Recipe
+### レシピを追加中
 
-##### Signature
+##### 署名
 
 ```zenscript
 addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
 ```
 
-##### Example
+##### 例
 
 ```zenscript
 ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobblestone>, <minecraft:cobblestone>], null, [<minecraft:cobblestone>, <minecraft:cobblestone>]);
 ```
 
-### Notes
+### メモ
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+これらのアクションはすべてキャッシュされ、このマシンのデフォルトレジストリがすべてのレシピを登録し終えた後に実行されます (カスタム json からのものを含む)。
