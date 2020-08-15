@@ -1,10 +1,10 @@
-# Fermenter
+# 发酵器
 
 ## 所属包名
 
 `import mods.ic2.Fermenter;`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The fermented fluid
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The input fluid
