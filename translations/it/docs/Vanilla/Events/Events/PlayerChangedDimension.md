@@ -18,7 +18,7 @@ PlayerChandedDimension Events implement the following interfaces and are able to
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                          |
+| ZenGetter   | Tipo Di Reso                         |
 | ----------- | ------------------------------------ |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/) |
 | `from`      | int                                  |
