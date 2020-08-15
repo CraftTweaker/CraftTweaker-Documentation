@@ -16,7 +16,7 @@ mods.actuallyadditions.OilGen.addRecipe(<liquid:water>, 100);
 mods.actuallyadditions.OilGen.addRecipe(<liquid:lava>, 1000, 10);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.actuallyadditions.OilGen.removeRecipe(ILiquidStack output);
