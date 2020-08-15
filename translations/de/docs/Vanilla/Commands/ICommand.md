@@ -41,7 +41,7 @@ It might be required for you to import the package if you encounter any issues (
   </tr>
 </table>
 
-## ZenMethods
+## ZenMethoden
 
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
