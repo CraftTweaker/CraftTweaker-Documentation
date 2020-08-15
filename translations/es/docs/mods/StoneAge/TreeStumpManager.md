@@ -1,21 +1,21 @@
-# Tree Stump
+# Tocón de árbol
 
 ## Paquete
-`import mods.stone_age.TreeStumpManager;`
+`importar mods.stone_age.Gestor de trompetas;`
 
 ## Metodos
-- **String name** Recipe name
+- **Nombre de cadena** Nombre de la receta
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
+- **[Herramienta](/Vanilla/Variable_Types/IIngredient/) IIngrediente**
 - **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
-- **int chopTimes** Chop times
-- **String group** Recipe group
+- **chopTimes int** Corta veces
+- **Grupo de cadenas** Grupo de recetas
 
 ## Adicional
 
 ```zenscript
 <recipetype:stone_age:tree_stump>.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
 
-<recipetype:stone_age:tree_stump>.addRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
+<recipetype:stone_age:tree_stump>. ddRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
 TreeStumpManager.INSTANCE.addRecipe("oak_planks", <item:minecraft:oak_planks>, <item:minecraft:iron_axe>, <item:minecraft:oak_log>, 2);
 ```
