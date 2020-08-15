@@ -1,4 +1,4 @@
-# Anvil
+# Amboss
 
 The Anvil is a simple 4x4 Crafting Table with the same options.
 
@@ -17,7 +17,7 @@ mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### Entfernen
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
@@ -43,7 +43,7 @@ mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### Entfernen
 
 ```zenscript
 mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
