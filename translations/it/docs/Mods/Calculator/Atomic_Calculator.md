@@ -1,4 +1,4 @@
-# Atomic Calculator
+# Calcolatrice Atomica
 
 ## Pacchetto
 ```zenscript
@@ -7,8 +7,8 @@ import mods.calculator.atomic;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-3]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)[1-3]** Gli input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output** L'output.
 
 ## Addizione
 ```zenscript
