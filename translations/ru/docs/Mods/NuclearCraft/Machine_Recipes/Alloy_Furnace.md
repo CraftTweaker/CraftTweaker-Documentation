@@ -1,7 +1,7 @@
-# Alloy Furnace
+# Сплав печи
 
-## Importing the Package
-`mods.nuclearcraft.alloy_furnace`
+## Импортирование пакета
+`мод.nuclearcraft.alloy_печь`
 
 ## Добавление рецептов
 ```zenscript
