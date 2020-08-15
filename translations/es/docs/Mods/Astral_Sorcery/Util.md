@@ -1,21 +1,21 @@
 # Util
 
-The utils package allows you to retrieve a given [IIngredient](/Vanilla/Variable_Types/IIngredient/) from parameters provided.
+El paquete utils le permite recuperar un [IIngredient](/Vanilla/Variable_Types/IIngredient/) dado de parámetros proporcionados.
 
-## Importing the package
+## Importando el paquete
 
-If you ever find yourself needing an import for this, here's your chance:
+Si alguna vez te encuentras necesitando una importación para esto, esta es tu oportunidad:
 
 ```zenscript
-import mods.astralsorcery.Utils;
+importar mods.astralsoriceryṛtils;
 ```
 
-## Get a Crystal Ingredient
+## Consigue un Ingrediente de Cristal
 
-This will return you an ingredient matching all befitting AS crystals.
+Esto te devolverá un ingrediente que coincida con todos los cristales que se ajusten a los cristales AS.
 
 ```zenscript
-//Utils.getCrystalORIngredient(boolean hasToBeCelestial, boolean hasToBeAttuned);
+//Utils.getCrystalORIngredient(booleano hasToBeCelestial, boolean hasToBeAttuned);
 
 val myCrystal = Utils.getCrystalORIngredient(true, true); //as crafttweaker.item.IIngredient
 ```
