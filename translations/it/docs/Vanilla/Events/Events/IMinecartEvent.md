@@ -1,12 +1,12 @@
 # IMinecartEvent
 
-This event is extended by all events involving Minecarts.
+Questo evento è esteso da tutti gli eventi che coinvolgono Minecarts.
 
 ## Importare la classe
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IMinecartEvent;`
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
+`importare crafttweaker.event.IMinecartEvent;`
 
-## What can be done with them?
+## Cosa si può fare con loro?
 
 | nome     | tipo                                  |
 | -------- | ------------------------------------- |
