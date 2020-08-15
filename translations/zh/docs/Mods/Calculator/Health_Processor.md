@@ -15,7 +15,7 @@ import mods.calculator.health;
 health.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## 移除
 ```zenscript
 health.removeRecipe(IIngredient input);
 ```
