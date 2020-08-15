@@ -1,56 +1,56 @@
 # MCPotionEffect
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.potion.MCPotionEffect
 ```
 
-## Implemented Interfaces
-MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+MCPotionEffect implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methoden
-### isReady
+### isBereit
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+myMCPotionEffect.isReady(Dauer als Int, Verstärker);
 ```
 
-| Parameter  | Type | Beschreibung            |
-| ---------- | ---- | ----------------------- |
-| dauern     | int  | No description provided |
-| verstärker | int  | No description provided |
+| Parameter  | Type | Beschreibung                 |
+| ---------- | ---- | ---------------------------- |
+| dauern     | int  | Keine Beschreibung angegeben |
+| verstärker | int  | Keine Beschreibung angegeben |
 
 
 ### newInstance
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Gibt [craftweaker.api.potion.MCPotionEffectInstanz](/vanilla/api/potions/MCPotionEffectInstance) zurück
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+myMCPotionEffect.newInstance(Dauer als Int, Verstärker);
 ```
 
-| Parameter  | Type | Beschreibung            | IsOptional | Standardwert |
-| ---------- | ---- | ----------------------- | ---------- | ------------ |
-| dauern     | int  | No description provided | false      | null         |
-| verstärker | int  | No description provided | true       | 0            |
+| Parameter  | Type | Beschreibung                 | IsOptionale | Standardwert |
+| ---------- | ---- | ---------------------------- | ----------- | ------------ |
+| dauern     | int  | Keine Beschreibung angegeben | false       | null         |
+| verstärker | int  | Keine Beschreibung angegeben | true        | 0            |
 
 
 
 ## Eigenschaften
 
-| Name           | Type                                                                    | Has Getter | Has Setter |
-| -------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| Kommandozeile  | String                                                                  | true       | false      |
-| kurativeItems  | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
-| displayName    | String                                                                  | true       | false      |
-| isBeneficial   | boolean                                                                 | true       | false      |
-| isInstant      | boolean                                                                 | true       | false      |
-| flüssige Farbe | int                                                                     | true       | false      |
-| name           | String                                                                  | true       | false      |
+| Name           | Type                                                                      | Hat Getter | Hat Setter |
+| -------------- | ------------------------------------------------------------------------- | ---------- | ---------- |
+| Kommandozeile  | String                                                                    | true       | false      |
+| kurativeItems  | Liste <[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
+| displayName    | String                                                                    | true       | false      |
+| isBeneficial   | boolean                                                                   | true       | false      |
+| isInstant      | boolean                                                                   | true       | false      |
+| flüssige Farbe | int                                                                       | true       | false      |
+| name           | String                                                                    | true       | false      |
 
