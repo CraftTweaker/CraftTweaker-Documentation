@@ -1,8 +1,8 @@
-# Creative Tab Bracket Handler
+# Gestore Parentesi Scheda Creativa
 
-The Creative Tab Bracket Handler gives you access to the Creative Tabs in the game.
+Il Creative Tab Bracket Handler ti dà accesso alle Schede Creative nel gioco.
 
-Creative Tabs are referenced in the creative tabs handler this way:
+Le schede creative sono referenziate nel gestore delle schede creative in questo modo:
 
 Vanilla
 
@@ -12,4 +12,4 @@ Vanilla
 <creativetab:misc>
 ```
 
-If the creative tab is found, this will return a [creative tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Object.
+Se la scheda creativa viene trovata, questo restituirà una [scheda creativa](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) Oggetto.
