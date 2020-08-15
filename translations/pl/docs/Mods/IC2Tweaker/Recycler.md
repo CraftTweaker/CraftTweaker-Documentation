@@ -1,10 +1,10 @@
 # Recycler
 
-## Package
+## Pakiet
 
 `import mods.ic2.Recycler;`
 
-## Methods
+## Metody
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ingredient** The item to be blacklisted from recycler (as source of scrap)
 
