@@ -1,7 +1,7 @@
-# PlayerLeftClickBlock
+# Игрок оставил КликБлок
 
-The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
-It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
+Событие PlayerLeftClickBlock запускается, когда игрок нажимает на блок.  
+Это может быть отменено, чтобы предотвратить любые другие события. Если игрок удерживает левый клик, то событие снова огонет даже если оно было отменено. Отмена этого события предотвратит регистрацию левой кнопкой мыши, предотвращая блокировку (хотя и не в творческом режиме). Если событие отменено, может быть предоставлен конкретный результат успеха, неудачи или прохождения. По умолчанию, результат выгружается.
 
 ## Класс события
 You will need to cast the event in the function header as this class:  
@@ -9,7 +9,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## Наследование от интерфейсов событий
-PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События PlayerLeftClickBlock реализуют следующие интерфейсы и также могут вызвать все их методы/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [Взаимодействие игрока](/Vanilla/Events/Events/PlayerInteract/)
