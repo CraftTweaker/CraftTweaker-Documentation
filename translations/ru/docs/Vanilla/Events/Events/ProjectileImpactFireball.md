@@ -8,15 +8,15 @@ Acceleration values from the fireball entity are available through zengetters.
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
-## Extending IEntityEvent
+## Расширение IEntityEvent
 ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters и ZenSetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
 | ZenGetter       | ZenSetter       | Тип                                                       |
 | --------------- | --------------- | --------------------------------------------------------- |
