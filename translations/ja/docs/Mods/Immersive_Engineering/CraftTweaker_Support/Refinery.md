@@ -1,36 +1,36 @@
-# Refinery
+# 製鋼所
 
-The Refinery package can be used to add/remove recipes to/from the Immersive Engineering Refinery.
+Refineryパッケージは、Immersive Engineering Refineryへのレシピの追加/削除に使用できます。
 
-## Calling The Package
+## パッケージの呼び出し
 
-You can call the Refinery package using `mods.immersiveengineering.Refinery`.
+`mods.immysiveengineering.Refinery` を使用して、Refinery パッケージを呼び出すことができます。
 
-## Add Recipe
+## レシピを追加
 
-| Required | Type    | Data Type                                    |
-| -------- | ------- | -------------------------------------------- |
-| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Energy  | Integer                                      |
+| 必須 | タイプ     | データタイプ                                       |
+| -- | ------- | -------------------------------------------- |
+| 必須 | 出力      | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必須 | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必須 | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必須 | エネルギー   | 整数                                           |
 
-### Example
+### 例
 
 ```zenscript
 //Example
-mods.immersiveengineering.Refinery.addRecipe(ILiquidStack output, ILiquidStack input0, ILiquidStack input1, int energy);
+mods.immersiveengineering.Refinery.addRecipe(ILiquidStack 出力, ILiquidStack input0, int energy);
 
 mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liquid:lava>, 2048);
 ```
 
-## Remove Recipe
+## レシピを削除
 
-| Type   | Data Type                                    |
-| ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| タイプ | データタイプ                                       |
+| --- | -------------------------------------------- |
+| 出力  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例
 
 ```zenscript
 //Example
