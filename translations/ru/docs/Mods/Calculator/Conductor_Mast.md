@@ -1,6 +1,6 @@
 # Conductor Mast
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.conductorMast;
 ```
@@ -16,7 +16,7 @@ import mods.calculator.conductorMast;
 conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 conductorMast.removeRecipe(IIngredient output);
 ```
