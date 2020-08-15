@@ -16,9 +16,9 @@ Note that this method should only be called inside functions that are meant to b
 crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## ZenMethoden ohne Parameter und ZenGetters
 
-| ZenGetter              | ZenMethod                   | Rückgabetyp                            |
+| ZenGetter              | ZenMethode                  | Rückgabetyp                            |
 | ---------------------- | --------------------------- | -------------------------------------- |
 | actualHeight           | getActualHeight()           | int                                    |
 | actualGroundLevel      | getAverageGroundLevel()     | int                                    |
@@ -42,9 +42,9 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 | daytime                | isDaytime()                 | bool                                   |
 | nether                 | isNether()                  | bool                                   |
 | skyColored             | isSkyColored()              | bool                                   |
-| surfaceWorld           | isSurfaceWorld()            | bool                                   |
+| oberflächenwelt        | isSurfaceWorld()            | bool                                   |
 
-## ZenMethods with parameters
+## ZenMethoden mit Parametern
 
 ### get Biome at a certain Position
 
