@@ -1,66 +1,66 @@
 # CTPlayerSkillInfo
 
-## Methods
+## メソッド
 
 ### getLevel()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevel();
     
-    This returns the level of the Skill.
+    これはスキルのレベルを返します。
     
 
 ### getSkillPoints()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkillPoints();
     
-    This return the number of Skill Points available to spend for that Skill.
+    これは、そのスキルに使用できるスキルポイントの数を返します。
     
 
 ### getLevelUpCost()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getLevelUpCost();
     
-    This returns the Level-Up Cost for the Skill.
+    これはスキルのレベルアップコストを返します。
     
 
 ### getRank()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getRank();
     
-    This returns the current Rank String for the Skill.
+    これはスキルの現在のランク文字列を返します。
     
 
 ### getSkill()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).getSkill();
     
-    This returns the Skill you're currently getting info from.
+    これは現在情報を取得しているスキルを返します。
     
 
 ### levelUp()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).levelUp();
     
-    This levels up the Skill for the player.
+    プレイヤーのスキルをレベルアップします。
     
 
 ### respec()
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).respec();
     
-    This "un-purchases" all traits in this specific Skill and refunds all Skill Points.
+    この特定のスキルのすべての特性を「購入を解除」し、すべてのスキルポイントを返金します。
     
 
-### unlock(CTUnlockable ctUnlockable, IPlayer player)
+### ロック解除(CTUnlockable ctUnlockable, IPlayer player)
 
-    Example:
+    例:
     event.player.skillData.getSkillInfo(<skill:reskillable:agility>).unlock(<trait:reskillable:sidestep>, event.player);
     
-    This unlocks the provided trait if available under the skill to the provided player.
+    指定されたプレーヤーにスキルの下で利用可能な場合、与えられたトレイトをロック解除します。
