@@ -1,20 +1,20 @@
 # Reassembly Chamber
 
-## Package
+## パッケージ
 ```zenscript
 import mods.calculator.reassemblyChamber;
 ```
 
-## Methods
+## メソッド
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## 加算
 ```zenscript
 reassemblyChamber.addRecipe(IIngredient input, IIngredient output);
 ```
-## Removal
+## 削除
 ```zenscript
 
 reassemblyChamber.removeRecipe(IIngredient output);
