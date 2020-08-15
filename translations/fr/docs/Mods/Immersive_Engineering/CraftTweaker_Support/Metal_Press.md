@@ -6,17 +6,17 @@ The Metal Press package can be used to add/remove recipes to/from the Immersive 
 
 You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
-## Add Recipe
+## Ajouter une recette
 
-| Required | Type       | Data Type                                           |
-| -------- | ---------- | --------------------------------------------------- |
-| Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Energy     | Integer                                             |
-| Required | Input Size | Integer                                             |
+| Required | Type de texte | Type de données                                    |
+| -------- | ------------- | -------------------------------------------------- |
+| Required | Sortie        | [IItemstack](/Vanilla/Items/IItemStack/)           |
+| Required | Input         | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
+| Required | Mold          | [IItemstack](/Vanilla/Items/IItemStack/)           |
+| Required | Energy        | Nombre entier                                      |
+| Required | Input Size    | Nombre entier                                      |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -28,11 +28,11 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -43,11 +43,11 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 ## Remove By Mold
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
