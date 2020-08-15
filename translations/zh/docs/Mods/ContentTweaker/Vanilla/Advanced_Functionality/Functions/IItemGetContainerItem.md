@@ -1,19 +1,19 @@
-# IItemGetContainerItem
+# IItemGetContainer项目
 
-The IItemGetContainerItem function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever the item is used as ingredient.  
-It is used to determine, what will be left in the crafting slot, when the item is used as such.  
-Think of buckets, for example: Each filled bucket has the empty bucket as containerItem, and when a filled bucket is crafted, you will end up with an empty one.  
-This function can be used to calculate the containerItem, so you can go crazy with stuff like NBT-Tags or more.
+IstemGetContainerItem 函数可以添加到 [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) 并且每当该项目被用作成分时都会运行。  
+它被用来确定何时项目在制作时段中的剩余部分。  
+想像桶，例如：每个填充的桶都有空桶作为容器物品， 当一个填充的桶被制造时，你将最终会有一个空的桶。  
+此函数可以用来计算容器物品，所以你可以用NBT-Tags或更多的东西疯狂。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemGetContainerItem;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweaker.IItemGetContainerItem；`
 
-## Parameters
+## 参数
 
-The IItemGetContainerItem is a function with the following parameters:
+IItemGetContainerItem 是一个具有以下参数的函数：
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
+- [IItemStack](/Vanilla/Items/IItemStack/) stack → 这件物品。
 
-The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.
+函数需要返回一个新的 [IItemStack](/Vanilla/Items/IItemStack/) 对象，或者如果项目不应留下任何东西，则返回空。
