@@ -19,10 +19,10 @@ PlayerAnvilRepair Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter        | ZenSetter     | Return Type                              |
+| ZenGetter        | ZenSetter     | 戻り値                                      |
 | ---------------- | ------------- | ---------------------------------------- |
 | `player`         |               | [IPlayer](/Vanilla/Players/IPlayer/)     |
 | `itemInput`      |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itemIngredient` |               | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `itenResult`     |               | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `breakChance`    | `breakChance` | float                                    |
+| `breakChance`    | `breakChance` | float型                                   |
