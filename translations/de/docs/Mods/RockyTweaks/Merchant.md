@@ -1,6 +1,6 @@
 # Merchant
 
-## Commands
+## Befehle
 
 The following commands are added to retrieve information about the availible merchant professions & carrers:
 
@@ -20,6 +20,6 @@ Trades can be added to a specific merchant profession & carrer.
 mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
-## Removal
+## Entfernen
 
 Merchant trade removal is currently not possible.
