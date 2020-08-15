@@ -5,7 +5,7 @@
 ```zenscript
 import mods.aether_legacy.Accessory;
 ```
-## Usage
+## 用法
 
 ```zenscript
 Accessory.registerAccessory(IItemStack input, String accessory);
