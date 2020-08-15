@@ -2,18 +2,18 @@
 
 The *combustion* package is used for adding or removing recipes to/from the Combustion process.
 
-## Calling
+## Chiamata
 
 You can call the *combustion* package using `mods.skyresources.combustion`
 
-## Recipe Addition
+## Aggiunta Ricetta
 
 ```zenscript
 //mods.skyresources.combustion.addRecipe(IItemStack output, IItemStack[] input, int temperature);
 mods.skyresources.combustion.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:sand> * 2], 420);
 ```
 
-## Recipe Removal
+## Rimozione Ricetta
 
 ```zenscript
 //mods.skyresources.combustion.removeRecipe(IItemStack output);
