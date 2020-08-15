@@ -2,31 +2,31 @@
 
 Denotes a special builder that is used for builing special item types. Used in [mods.contenttweaker.item.ItemTypeBuilder#withType](/mods/contenttweaker/API/item/ItemTypeBuilder/#withtype)
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 mods.contenttweaker.item.ItemTypeBuilder
 ```
 
-## Implemented Interfaces
-ItemTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+ItemTypeBuilder implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Methods
+## Metodi
 ### build
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Istruisce CoT per costruire realmente qualsiasi cosa il costruttore dovrebbe star costruendo.
 
 ```zenscript
 new ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametro        | Tipo    | Descrizione                                      |
+| ---------------- | ------- | ------------------------------------------------ |
+| resourceLocation | Stringa | Il percorso della risorsa per dare questo blocco |
 
 
 
