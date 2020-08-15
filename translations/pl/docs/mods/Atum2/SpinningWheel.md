@@ -1,49 +1,49 @@
-# Spinning Wheel
+# Koło nakrętne
 
 ## Pakiet
 `mods.atum.SpinningWheel;`
 
-## Adding a Recipe
+## Dodawanie przepisu
 
-`mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
+`mods.atum.SpinningWheel.addRecipe(wejście, wyjście, obrót);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `rotations` Any number above 0
+- `rotacje` Dowolna liczba powyżej 0
 
-Adds a recipe with the specified input & output, that takes the specified rotations to complete the recipe
+Dodaje przepis z określonym wejściem & wyjścia, który wymaga określonych obrotów aby ukończyć przepis
 
 ```zenscript
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Usuwanie przepisu
 
-### Remove Recipes by Output
+### Usuń przepisy przez wyjście
 
-`mods.atum.SpinningWheel.removeRecipeByOutput(output);`
+`mods.atum.SpinningWheel.removeRecipeByOutput(wyjście);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Usuwa wszystkie przepisy, w których wynik wyjściowy jest dostarczonym [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
 ```
 
-### Remove Recipes by Output & Input
+### Usuń przepisy przez wyjście & Wejście
 
-`mods.atum.SpinningWheel.removeRecipeByOutputInput(output, input);`
+`mods.atum.SpinningWheel.removeRecipeByOutputInput(wyjście, wejście);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Usuwa konkretny przepis z określonym wyjściem & wejście
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutputInput(<item:atum:linen_thread>, <item:atum:flax>);
 ```
 
-### Other removal methods
+### Inne metody usuwania
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+Zobacz [Menadżerów przepisów](/recipes/recipe_managers) dla innych sposobów usunięcia przepisów na kołach
