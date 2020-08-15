@@ -1,6 +1,6 @@
-# Compost
+# Kompost
 
-## Package
+## Paket
 
 `mods.actuallyadditions.Compost`
 
