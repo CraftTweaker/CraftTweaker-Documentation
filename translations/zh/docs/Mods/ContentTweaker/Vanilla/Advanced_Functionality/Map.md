@@ -1,22 +1,22 @@
-# Map
+# 地图
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+地图包允许您使用BASE的航点事件处理器设置航点。
 
-## Importing the package
+## 导入相关包
 
-You can import the package so that you don't have to retype it everytime.
+您可以导入包，使您不必每次都重新输入。
 
-    import mods.contenttweaker.Map;
+    导入 mods.contenttweeper.Map;
     
 
-## Adding Waypoints
+## 添加航点
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+这是地图包显示的唯一方法，它允许您在指定位置设置一个航点。  
+这是一个无效的方法，其参数：
 
-- string name
+- 字符串名称
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
-- [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
+- [CT颜色（CTColor）](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(名称, IWorld world, IBlockPos pos, CTColor 颜色)
