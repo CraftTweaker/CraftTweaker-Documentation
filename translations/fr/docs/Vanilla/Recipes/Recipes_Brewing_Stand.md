@@ -1,33 +1,33 @@
-# Brewing Recipe Handler
+# Gestionnaire de recettes de brassage
 
-## Access the Brewing Handler
+## Accéder au gestionnaire de brassage
 
-You can access the Brewing Handler using the `brewing` [global keyword](/Vanilla/Global_Functions/).
+Vous pouvez accéder au gestionnaire de brassage en utilisant le `mot clé global` [brassant](/Vanilla/Global_Functions/).
 
-## Recipe Methods
+## Méthodes de Recette
 
-A Brewing Recipe consists of 3 Parts:
+Une recette de brassage se compose de 3 pièces :
 
-1. An Input (What is in the 3 "Bottle Slots")
-2. One or more possible Ingredients (What can go into the upper slot where netherwart goes)
-3. The output (What the recipe returns)
+1. Une entrée (ce qui est dans les 3 "Emplacements de bouteille")
+2. Un ou plusieurs ingrédients possibles (Qu'est-ce qui peut aller dans l'emplacement supérieur où va la véranda)
+3. La sortie (Qu'est-ce que la recette renvoie)
 
-### Add Brewing Recipes
+### Ajouter des recettes de cuisson
 
 ```zenscript
-//brewing.addBrew(IIngredient input, IIngredient ingredient, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
+//brewing.addBrew(Entrée Ingrédient, ingrédient Ingrédient, sortie IItemStack, @Optional boolean hidden);
+brewing. ddBrew(<ore:blockGlass>, <ore:logWood>, <minecraft:beacon>);
 brewing.addBrew(<ore:ingotGold>, <minecraft:obsidian>, <minecraft:wool:3>, true);
 
 
-//brewing.addBrew(IIngredient input, IIngredient[] ingredients, IItemStack output, @Optional boolean hidden);
-brewing.addBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
+//brewing. ddBrew(IIngrédient, IIngrédient[] ingrédients, IItemStack sortie, @Optional boolean hidden);
+brassage. ddBrew(<minecraft:bedrock>, [<minecraft:lapis_ore>], <minecraft:sponge:1>);
 brewing.addBrew(<minecraft:gold_block>, [<minecraft:iron_block>, <minecraft:lapis_block>], <minecraft:sponge:1>, true);
 ```
 
-### Remove Brewing Recipes
+### Supprimer les recettes de brassage
 
-Only works with JEI version 4.15.0.275 or higher.
+Ne fonctionne qu'avec JEI version 4.15.0.275 ou supérieure.
 
 ```zenscript
 //brewing.removeRecipe(IItemStack input, IItemStack ingredient);
