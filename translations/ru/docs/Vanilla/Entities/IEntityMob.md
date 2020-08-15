@@ -4,22 +4,22 @@ A Mod.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityMob;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.entity.IEntityMob;`
 
-## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## Расширение [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
 
-IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntityCreature](/Vanilla/Entities/IEntityCreature/) objects also are available to IEntityMob.
+IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Это означает, что все функции, доступные для объектов [IEntityCreature](/Vanilla/Entities/IEntityCreature/) , также доступны для IEntityMob.
 
 ## Методы
 
 ### ZenMethods
 
-#### Check if the mob is preventing a player's sleep
+#### Проверьте, предотвращает ли моб сн игрока
 
-The Method requires an [IPlayer](/Vanilla/Players/IPlayer/) object.  
-Returns a bool.
+Метод требует [IPlayer](/Vanilla/Players/IPlayer/) объекта.  
+Возвращает рабочее пространство.
 
 ```zenscript
-entMobObj.isPreventingPlayerRest(IPlayer player);
+entMobObj.isPreventingPlayerRest(Игрок);
 ```
