@@ -1,8 +1,8 @@
-# Bellows
+# Bälle
 
-The Bellows registry allows adding items to a weight class for whether it can be blown when in front of a Bellows
+Die Belgische Registrierung erlaubt es, einer Gewichtsklasse Elemente hinzuzufügen, ob sie vor einem Blasen geblasen werden können
 
-Value can be a decimal between (0, 128]. In which the number dictates how many blocks away from the bellows the item will be blown until it does not move anymore.
+Der Wert kann ein Dezimalwert zwischen (0, 128] sein. In der die Zahl bestimmt, wie viele Blöcke vom Ball entfernt sind, wird der Gegenstand geblasen, bis er sich nicht mehr bewegt.
 
 ```zenscript
 mods.betterwithmods.Bellows.set(IItemStack stack, float value);
