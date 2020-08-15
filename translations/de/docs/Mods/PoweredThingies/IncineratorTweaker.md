@@ -30,6 +30,6 @@ addRecipe(input: IItemStack, power: Long, outputs: Array<WeightedItemStack>)
 it().addRecipe(<minecraft:bucket>, 3600, [<minecraft:iron_ingot> % 15]);
 ```
 
-### Notes
+### Notizen
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
