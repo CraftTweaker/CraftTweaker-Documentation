@@ -11,12 +11,12 @@ crafttweaker.api.data.FloatData
 ```
 
 ## Реализованные интерфейсы
-FloatData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+FloatData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.data.FloatData(internal as float);
+new crafttweaker.api.data.FloatData(внутренняя как float);
 ```
 | Параметр   | Тип   | Описание             |
 | ---------- | ----- | -------------------- |
