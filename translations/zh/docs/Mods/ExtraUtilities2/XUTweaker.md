@@ -11,7 +11,7 @@ You can do so using
 import extrautilities2.Tweaker.XUTweaker;
 ```
 
-## Methods
+## 方法
 
 ### Allow survival flight
 
