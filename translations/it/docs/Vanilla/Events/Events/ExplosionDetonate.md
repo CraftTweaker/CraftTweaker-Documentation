@@ -16,7 +16,7 @@ ExplosionDetonate Events implement the following interfaces and are able to call
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter           | ZenSetter | Type                                           |
+| ZenGetter           | ZenSetter | Tipo                                           |
 | ------------------- | --------- | ---------------------------------------------- |
 | `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
 | `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
