@@ -1,21 +1,21 @@
 # Extraction Chamber
 
-## Package
+## Pacchetto
 ```zenscript
 import mods.calculator.extractionChamber;
 ```
 
-## Methods
+## Metodi
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
-## Addition
+## Addizione
 ```zenscript
 extractionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Rimozione
 ```zenscript
 extractionChamber.removeRecipe(IIngredient output, IIngredient output2);
 ```
