@@ -1,6 +1,6 @@
 # Spinning Wheel
 
-## Package
+## Paquete
 `mods.atum.SpinningWheel;`
 
 ## Adding a Recipe
