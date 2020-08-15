@@ -1,30 +1,30 @@
 # IBiome
 
-The IBiome interface allows you to retrieve information on a registered Biome.
+L'interfaccia IBiome consente di recuperare le informazioni su una Bioma registrata.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.world.IBiome;`
 
-## Calling an IBiome
+## Chiamare un IBiome
 
-You can get a list of all registered Biomes using `game.biomes` from [IGame](/Vanilla/Game/IGame/) That is currently the only way
+Puoi ottenere un elenco di tutti i Biomi registrati utilizzando `game.biomes` da [IGame](/Vanilla/Game/IGame/) Questo è attualmente l'unico modo
 
 ## ZenGetters
 
-Atm, all you can do with an IBiome object is retrieving some information out of it:
+Atm, tutto ciò che puoi fare con un oggetto IBiome sta recuperando alcune informazioni su di esso:
 
 | ZenGetter                    | Tipo Di Reso |
 | ---------------------------- | ------------ |
 | nome                         | stringa      |
 | canRain                      | boolean      |
 | isSnowyBiome                 | boolean      |
-| highHumidity                 | boolean      |
-| spawningChance               | galleggiante |
-| baseHeight                   | galleggiante |
-| heightVariation              | galleggiante |
-| rainfall                     | galleggiante |
-| waterColorMultiplier         | int          |
+| highUmidità                  | boolean      |
+| probanzaprobanza             | galleggiante |
+| baseAltezza                  | galleggiante |
+| altezzaVariazione            | galleggiante |
+| piovosità                    | galleggiante |
+| acquaColorMultiplier         | int          |
 | ignorePlayerSpawnSuitability | boolean      |
 | temperatura                  | galleggiante |
