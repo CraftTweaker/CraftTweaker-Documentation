@@ -1,36 +1,36 @@
-# Item Bracket Handler
+# Gestore Staffa Oggetto
 
-The Item Bracket Handler gives you access to the Items in the game. It is only possible to get items registered in the game, so adding or removing mods may cause issues if you reference the mod's items in an ITem Bracket Handler.
+Il Gestore di parentesi di oggetti ti dà accesso agli oggetti nel gioco. È possibile ottenere solo gli oggetti registrati nel gioco, quindi l'aggiunta o la rimozione di mod può causare problemi se si fa riferimento agli elementi della mod in un Gestore di parentesi ITem.
 
-Items are referenced in the Item Bracket Handler by like so:
+Gli elementi sono referenziati nel Gestore delle parentesi di oggetti in questo modo:
 
 ```zenscript
 <modid:itemname>
 ```
 
-With the `modid` being the modid of the mod that the Item belongs to, and `itemname` being the name of the item, It is recommended to use `/ct hand` to get the correct name of the item.
+Con il `modid` che è la modid della mod che l'oggetto appartiene, e `nome-articolo` essendo il nome dell'elemento, Si consiglia di utilizzare `/ct mano` per ottenere il nome corretto dell'articolo.
 
-Generally it is like this though:
+Generalmente è così:
 
 ```zenscript
 <item:modid:itemname:meta>
 ```
 
-With `item` as first entry, it specifically says "This has to be an item!" to CT.  
-As you've seen above: Optional.  
-Usually you will never need this, unless dealing with several custom bracket handlers.  
-`modid` is the modid of the mod that the Item belongs to.  
-`itemname` is the name of the item, use /ct hand to get the correct name.  
-`meta` is the meta value of the item (e.g. Damage value, types, etc.). This is an Integer.  
-You can also use a wildcard `*` to address all meta values.  
-Also optional: If left out it will be 0.
+Con l'oggetto `` come prima voce, dice in modo specifico "Questo deve essere un oggetto!" a CT.  
+Come hai visto sopra: Facoltativo.  
+Di solito non avrai mai bisogno di questo, a meno che non si tratti di diversi gestori di parentesi personalizzati.  
+`modid` è la modid della mod a cui appartiene l'oggetto.  
+`itemname` è il nome dell'oggetto, usa /ct mano per ottenere il nome corretto.  
+`meta` è il meta valore dell'oggetto (ad esempio valore danno, tipi, ecc.). Questo è un Integer.  
+Puoi anche usare un jolly `*` per indirizzare tutti i meta valori.  
+Opzionale anche: Se lasciato fuori sarà 0.
 
-Normally, this will return an IItemStack Object.  
-Please refer to [the respective wiki entry](/Vanilla/Items/IItemStack/) for further information.
+Normalmente, questo restituirà un oggetto IItemStack.  
+Si prega di fare riferimento a [la rispettiva voce wiki](/Vanilla/Items/IItemStack/) per ulteriori informazioni.
 
 ## Esempi
 
-An example of the Item Bracket Handler would be:
+Un esempio del gestore di parentesi di oggetti sarebbe:
 
 ```zenscript
 //apple
@@ -43,9 +43,9 @@ An example of the Item Bracket Handler would be:
 //charcoal
 <minecraft:coal:1>
 
-//both, coal and charcoal
+//entrambi, carbone e carbone
 <minecraft:coal:*>
 <item:minecraft:coal:*>
 ```
 
-This will give you access to the `Apple` item.
+Questo ti darà accesso all'elemento `Apple`.
