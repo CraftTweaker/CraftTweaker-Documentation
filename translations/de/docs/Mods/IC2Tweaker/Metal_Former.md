@@ -1,6 +1,6 @@
 # Metal Former
 
-## Package
+## Paket
 
 `import mods.ic2.MetalFormer;`
 
