@@ -13,8 +13,8 @@ This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositio
 
 ## ZenGetter
 
-| name       | type                                        |
+| name       | typ                                         |
 | ---------- | ------------------------------------------- |
 | world      | [IWorld](/Vanilla/World/IWorld/)            |
 | blockState | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| blockieren | [IBlock](/Vanilla/Blocks/IBlock/)           |
