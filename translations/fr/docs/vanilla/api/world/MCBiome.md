@@ -2,13 +2,13 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Methods
+## Méthodes
 ### getSpawns
 
 Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
@@ -17,7 +17,7 @@ Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBio
 myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parameter      | Type                                                                                           | Description             |
+| Paramètre      | Type de texte                                                                                  | Libellé                 |
 | -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
 | classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
 
@@ -38,33 +38,33 @@ Returns float
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
+| Paramètre | Type de texte                                                | Libellé                 |
 | --------- | ------------------------------------------------------------ | ----------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## Properties
+## Propriétés
 
-| Name               | Type    | Has Getter | Has Setter |
-| ------------------ | ------- | ---------- | ---------- |
-| category           | String  | true       | false      |
-| defaultTemperature | float   | true       | false      |
-| depth              | float   | true       | false      |
-| doesRain           | boolean | true       | false      |
-| doesSnow           | boolean | true       | false      |
-| downfall           | float   | true       | false      |
-| isHighHumidity     | boolean | true       | false      |
-| isMutation         | boolean | true       | false      |
-| isTempCold         | boolean | true       | false      |
-| isTempMedium       | boolean | true       | false      |
-| isTempOcean        | boolean | true       | false      |
-| isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
-| rainType           | String  | true       | false      |
-| scale              | float   | true       | false      |
-| spawningChange     | float   | true       | false      |
-| translationKey     | String  | true       | false      |
-| waterColor         | int     | true       | false      |
-| waterFogColor      | int     | true       | false      |
+| Nom                | Type de texte        | Has Getter | Has Setter |
+| ------------------ | -------------------- | ---------- | ---------- |
+| category           | Chaîne de caractères | vrai       | Faux       |
+| defaultTemperature | flottant             | vrai       | Faux       |
+| depth              | flottant             | vrai       | Faux       |
+| doesRain           | boolean              | vrai       | Faux       |
+| doesSnow           | boolean              | vrai       | Faux       |
+| downfall           | flottant             | vrai       | Faux       |
+| isHighHumidity     | boolean              | vrai       | Faux       |
+| isMutation         | boolean              | vrai       | Faux       |
+| isTempCold         | boolean              | vrai       | Faux       |
+| isTempMedium       | boolean              | vrai       | Faux       |
+| isTempOcean        | boolean              | vrai       | Faux       |
+| isTempWarm         | boolean              | vrai       | Faux       |
+| parent             | Chaîne de caractères | vrai       | Faux       |
+| rainType           | Chaîne de caractères | vrai       | Faux       |
+| scale              | flottant             | vrai       | Faux       |
+| spawningChange     | flottant             | vrai       | Faux       |
+| translationKey     | Chaîne de caractères | vrai       | Faux       |
+| waterColor         | Indice               | vrai       | Faux       |
+| waterFogColor      | Indice               | vrai       | Faux       |
 
