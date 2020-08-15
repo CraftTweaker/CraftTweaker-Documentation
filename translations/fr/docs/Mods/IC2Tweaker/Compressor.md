@@ -4,12 +4,12 @@
 
 `import mods.ic2.Compressor;`
 
-## Methods
+## Méthodes
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.ic2.Compressor.addRecipe(IItemStack output, IIngredient input);
