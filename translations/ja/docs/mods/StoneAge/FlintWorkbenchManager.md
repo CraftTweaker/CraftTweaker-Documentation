@@ -1,14 +1,14 @@
 # Flint Workbench
 
 ## パッケージ
-`import mods.stone_age.FlintWorkbenchManager;`
+`import mods.stone_ageFlintWorkbenchManager;`
 
 ## メソッド
-- **String name** Recipe name
+- **文字列名** レシピ名
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] inputMatrix**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool** Crafting tool
-- **String group** Recipe group
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ツール** 作成ツール
+- **文字列グループ** レシピグループ
 
 ## 加算
 
