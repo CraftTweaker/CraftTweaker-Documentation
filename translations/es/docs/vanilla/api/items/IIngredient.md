@@ -1,11 +1,11 @@
-# IIngredient
+# IIngredientes
 
 This is IIngredient!!!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.item.IIngredient
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.item.IIngredient
 IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### getRemainingItem
 
 When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
@@ -26,12 +26,12 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
+| Parámetro | Tipo                                                              | Descripción                               |
 | --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### partidas
 
 Does the given stack match the ingredient?
 
@@ -42,23 +42,23 @@ Returns boolean
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
+| Parámetro | Tipo                                                              | Descripción        |
 | --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-## Properties
+## Propiedades
 
-| Name          | Type                                                                | Has Getter | Has Setter |
+| Nombre        | Tipo                                                                | Has Getter | Has Setter |
 | ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| commandString | Cadena                                                              | verdad     | falso      |
+| objetos       | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | verdad     | falso      |
 
 ## Casters
 
 | Result type                                                | Is Implicit |
 | ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | verdad      |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | verdad      |
 
