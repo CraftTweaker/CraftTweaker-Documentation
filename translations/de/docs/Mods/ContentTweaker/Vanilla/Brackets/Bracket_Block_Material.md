@@ -1,46 +1,46 @@
-# Block Material Bracket Handler
+# Material Klammerhandler blockieren
 
-The Block Material Bracket Handler gives you access to the Block Materials in the game. Currently the only Block Materials supported are:
+Der Klammerhandler für Blockmaterial gibt dir Zugriff auf die Blockmaterialien im Spiel. Derzeit werden nur Block-Materialien unterstützt:
 
 <details>
-    <summary>Click to expand the Material list</summary>
+    <summary>Klicken, um die Materialliste zu erweitern</summary>
     <ul>
-        <li>Air</li>
-        <li>Grass</li>
-        <li>Ground</li>
-        <li>Wood</li>
-        <li>Rock</li>
-        <li>Iron</li>
-        <li>Anvil</li>
-        <li>Water</li>
+        <li>Luft</li>
+        <li>Gras</li>
+        <li>Boden</li>
+        <li>Holz</li>
+        <li>Felsen</li>
+        <li>Eisen</li>
+        <li>Amboss</li>
+        <li>Wasser</li>
         <li>Lava</li>
-        <li>Leaves</li>
-        <li>Plants</li>
+        <li>Blätter</li>
+        <li>Pflanzen</li>
         <li>Vine</li>
-        <li>Sponge</li>
-        <li>Cloth</li>
-        <li>Fire</li>
+        <li>Schwamm</li>
+        <li>Tuch</li>
+        <li>Feuer</li>
         <li>sand</li>
-        <li>Circuits</li>
-        <li>Carpet</li>
-        <li>Glass</li>
-        <li>Redstone_Light</li>
+        <li>Schaltkreise</li>
+        <li>Teppich</li>
+        <li>Glas</li>
+        <li>Redstone_Hell</li>
         <li>TNT</li>
-        <li>Coral</li>
-        <li>Ice</li>
-        <li>Packed_Ice</li>
-        <li>Crafted_Snow</li>
+        <li>Korallen</li>
+        <li>Eis</li>
+        <li>Gepackt_Eis</li>
+        <li>Hergestellte_Schnee</li>
         <li>Cactus</li>
-        <li>Clay</li>
+        <li>Lehm</li>
         <li>Gourd</li>
-        <li>Dragon_Egg</li>
+        <li>Drachen_Ei</li>
         <li>Portal</li>
-        <li>Cake</li>
+        <li>Kuchen</li>
         <li>Web</li>
     </ul>
 </details>
 
-Block Materials are referenced in the Material Bracket handler this way:
+Blockmaterialien werden auf diese Weise im Materialklappenhandler referenziert:
 
 ```zenscript
 <blockmaterial:name>
@@ -48,4 +48,4 @@ Block Materials are referenced in the Material Bracket handler this way:
 <blockmaterial:wood>
 ```
 
-If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.
+Wenn das Blockmaterial gefunden wird, wird ein [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Objekt zurückgegeben.
