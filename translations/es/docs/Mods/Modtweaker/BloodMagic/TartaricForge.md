@@ -4,7 +4,7 @@
 
 `mods.bloodmagic.TartaricForge`
 
-## Addition
+## Adicional
 
 ```zenscript
 inputs has a max size of 4
