@@ -1,6 +1,6 @@
 # Merchant
 
-## Commands
+## Comandos
 
 The following commands are added to retrieve information about the availible merchant professions & carrers:
 
@@ -11,7 +11,7 @@ The following commands are added to retrieve information about the availible mer
 
 `mods.rockytweaks.Merchant`
 
-## Addition
+## Adicional
 
 Trades can be added to a specific merchant profession & carrer.
 
