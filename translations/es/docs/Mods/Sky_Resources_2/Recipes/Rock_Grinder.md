@@ -2,7 +2,7 @@
 
 The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
 
-## Calling
+## Llamando
 
 You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
 
