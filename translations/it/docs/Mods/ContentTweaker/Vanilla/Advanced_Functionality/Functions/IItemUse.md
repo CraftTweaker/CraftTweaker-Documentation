@@ -1,26 +1,26 @@
-# IItemUse Function
+# Funzione IItemUse
 
-An itemUseFunction is called whenever the associated [item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) is used on a block.
+Un itemUseFunction viene chiamato ogni volta che l'elemento [associato](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) viene utilizzato su un blocco.
 
-## Importing the package
+## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.IItemUse;`
 
-## Parameters
+## Parametri
 
-The IItemUse function is a function with the following parameters (In this order):
+La funzione IItemUse è una funzione con i seguenti parametri (In questo ordine):
 
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → The player doing the right-click
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the player is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → The Position of the block the item is used on
-- [Hand](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) hand → The used Hand (main or off)
-- [Facing](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) facing → The side of the block the item is used on
-- [Position3f](/Vanilla/Utils/Position3f/) blockHit → The block's relative X,Y and Z coordinate → All three are between 0 and 1
+- [giocatore ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) → Il giocatore che fa il clic destro
+- [mondo IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Il mondo in cui si trova il giocatore
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → La posizione del blocco su cui viene utilizzato l'elemento
+- [Mano](/Mods/ContentTweaker/Vanilla/Types/Player/Hand/) mano → La mano usata (principale o off)
+- [Faccia](/Mods/ContentTweaker/Vanilla/Types/Block/Facing/) rivolta verso → Il lato del blocco su cui viene utilizzato l'elemento
+- [Position3f](/Vanilla/Utils/Position3f/) blockHit → Le relative coordinate X,Y e Z del blocco → Tutti e tre sono tra 0 e 1
 
-The function needs to return an [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/) object.
+La funzione deve restituire un oggetto [ActionResult](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/ActionResult/).
 
-## Example
+## Esempio
 
 ```zenscript
 #loader contenttweaker
@@ -30,14 +30,14 @@ import mods.contenttweaker.ActionResult;
 
 var item = VanillaFactory.createItem("fake_flint");
 
-item.maxStackSize = 1;
-item.maxDamage = 50;
-item.onItemUse = function(player, world, pos, hand, facing, blockHit) {
-    var firePos = pos.getOffset(facing, 1);
-    if (world.getBlockState(firePos).isReplaceable(world, firePos)) {
-        world.setBlockState(<block:minecraft:fire>, firePos);
-        player.getHeldItem(hand).damage(1, player);
-        return ActionResult.success();
+item. axStackSize = 1;
+oggetto.maxDanno = 50;
+oggetto. nItemUse = function(player, world, pos, hand, facing, blockHit) {
+    var firePos = pos. etOffset(facing, 1);
+    se (world.getBlockState(firePos). sReplaceable(world, firePos)) {
+        world. etBlockState(<block:minecraft:fire>, firePos);
+        giocatore. etHeldItem(hand).damage(1, player);
+        return AzioneRisultato. uccess();
     }
 
     return ActionResult.pass();
