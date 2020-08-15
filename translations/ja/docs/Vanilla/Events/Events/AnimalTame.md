@@ -17,7 +17,7 @@ AnimalTame Events implement the following interfaces and are able to call all of
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter | Type                                              |
+| ZenGetter | ZenSetter | タイプ                                               |
 | --------- | --------- | ------------------------------------------------- |
 | `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
