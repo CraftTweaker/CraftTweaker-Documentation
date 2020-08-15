@@ -6,9 +6,9 @@ mods.alchemistry.Liquifier
 ```
 
 ## Методы
-**[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
+**[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - вывод рецепта.
 
-**[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+**[IItemStack](/Vanilla/Items/IItemStack/) ввода** - Ввод рецепта.
 
 ## Сложение
 ```zenscript
