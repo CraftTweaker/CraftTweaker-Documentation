@@ -1,6 +1,6 @@
 # BlockPos
 
-Represents a position of a block in the world
+Представляет собой положение блока в мире
 
 Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
@@ -12,7 +12,7 @@ crafttweaker.api.util.BlockPos
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
+new crafttweaker.api.util.BlockPos(x как int, y как int, z как int);
 ```
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
@@ -25,133 +25,133 @@ new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
 ## Методы
 ### Добавить
 
-Adds two positions together and returns the result.
+Добавляет две позиции вместе и возвращает результат.
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).add(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
 ```
 
-| Параметр | Тип                                                          | Описание              |
-| -------- | ------------------------------------------------------------ | --------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| Параметр | Тип                                                          | Описание                    |
+| -------- | ------------------------------------------------------------ | --------------------------- |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | другое место для добавления |
 
 
 
-Adds the given values to this position, and returns a new position with the new values.
+Добавляет заданные значения в эту позицию и возвращает новое положение с новыми значениями.
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).add(x as double, y as double, z as double);
-new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
+new BlockPos(0, 1, 2).add(x как двойный, y как двойный, z как двойный);
+новый BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
 ```
 
-| Параметр | Тип    | Описание       |
-| -------- | ------ | -------------- |
-| х        | double | x value to add |
-| у        | double | y value to add |
-| z        | double | z value to add |
+| Параметр | Тип    | Описание                  |
+| -------- | ------ | ------------------------- |
+| х        | double | x значение для добавления |
+| у        | double | значение y для добавления |
+| z        | double | Значение z для добавления |
 
 
-### crossProduct
+### кроссПродукт
 
-Creates a new BlockPos based on the cross product of this position, and the given position
+Создает новые BlockPos на основе кросс-продукта этого положения и заданной позиции
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).crossProduct(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
 ```
 
-| Параметр | Тип                                                          | Описание                  |
-| -------- | ------------------------------------------------------------ | ------------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
+| Параметр | Тип                                                          | Описание                            |
+| -------- | ------------------------------------------------------------ | ----------------------------------- |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos для перекрестного продукта |
 
 
-### distanceSq
+### расстояние
 
-Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
+Получает квадрат расстояния этого положения до указанного блокпоса, используя центр BlockPos
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
+новый BlockPos(0, 1, 2).distanceSq(как crafttweaker.api.util.BlockPos);
+новый BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
 ```
 
-| Параметр | Тип                                                          | Описание                  |
-| -------- | ------------------------------------------------------------ | ------------------------- |
-| до       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
+| Параметр | Тип                                                          | Описание              |
+| -------- | ------------------------------------------------------------ | --------------------- |
+| до       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos для проверки |
 
 
 
-Gets the squared distance of this position to the specified BlockPos
+Получает квадрат расстояния этого положения до указанного BlockPos
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos, useCenter as boolean);
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
+новый BlockPos(0, 1, 2).distanceSq(как crafttweaker.api.util.BlockPos, использовать центр как boolean);
+новый BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
 ```
 
-| Параметр  | Тип                                                          | Описание                                                              |
-| --------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| до        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
-| useCenter | boolean                                                      | should the center of the coordinate be used? (adds 0.5 to each value) |
+| Параметр           | Тип                                                          | Описание                                                                   |
+| ------------------ | ------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| до                 | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos для проверки                                                      |
+| использовать Центр | boolean                                                      | должен использоваться центр координаты? (добавляет 0.5 к каждому значению) |
 
 
 
-Gets the squared distance of this position to the specified coordinates
+Получает квадрат расстояния от этого положения до указанных координат
 
-Returns double
+Удвоение возвратов
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(x as double, y as double, z as double, useCenter as boolean);
+new BlockPos(0, 1, 2).distanceSq(x как двойная, y как двойная, z как двойная, использовать как boolean);
 new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
 ```
 
-| Параметр  | Тип     | Описание                                                              |
-| --------- | ------- | --------------------------------------------------------------------- |
-| х         | double  | x position to check against                                           |
-| у         | double  | y position to check against                                           |
-| z         | double  | z position to check against                                           |
-| useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
+| Параметр           | Тип     | Описание                                                                   |
+| ------------------ | ------- | -------------------------------------------------------------------------- |
+| х                  | double  | положение x для проверки                                                   |
+| у                  | double  | положение y для проверки                                                   |
+| z                  | double  | положение z для проверки                                                   |
+| использовать Центр | boolean | должен использоваться центр координаты? (добавляет 0.5 к каждому значению) |
 
 
 ### вниз
 
-Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
+Создает новые BlockPos на основе этого BlockPos на один блок ниже этого BlockPos
 
- Returns: `a new BlockPos that is one block lower than this BlockPos`
+ Возвращается: `новый BlockPos блоков ниже этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).down();
+новый BlockPos(0, 1, 2).down();
 ```
 
 ### восток
 
-Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
+Создает новые BlockPos на основе этого BlockPos на одном блоке к востоку от этого BlockPos
 
- Returns: `a new BlockPos that is one block east of this BlockPos`
+ Возвращается: `новый BlockPos один блок к востоку от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).east();
+новый BlockPos(0, 1, 2).east();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) к востоку от этого BlockPos
 
- Returns: `a new BlockPos that is n block(s) east of this BlockPos`
+ Возвращается: `новый BlockPos который является n блок(ов) к востоку от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).east(n as int);
@@ -160,12 +160,12 @@ new BlockPos(0, 1, 2).east(2);
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| n        | int | Описание отсутствует |
+| п        | int | Описание отсутствует |
 
 
-### manhattanDistance
+### Расстояние манхата
 
-Gets the Manhattan Distance of this pos compared to a different position
+Получает Дистанцию Манхэттена по сравнению с другим положением
 
 Возвращает int
 
@@ -174,29 +174,29 @@ new BlockPos(0, 1, 2).manhattanDistance(other as crafttweaker.api.util.BlockPos)
 new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
 ```
 
-| Параметр | Тип                                                          | Описание                              |
-| -------- | ------------------------------------------------------------ | ------------------------------------- |
-| other    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
+| Параметр | Тип                                                          | Описание                                    |
+| -------- | ------------------------------------------------------------ | ------------------------------------------- |
+| другой   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | другое положение, чтобы получить расстояние |
 
 
 ### север
 
-Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является одним блоком к северу от этого BlockPos
 
- Returns: `a new BlockPos that is one block north of this BlockPos`
+ Возвращается: `новый BlockPos, который является одним блоком к северу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).north();
+новый BlockPos(0, 1, 2).north();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) к северу от этого BlockPos
 
- Returns: `a new BlockPos that is n block(s) north of this BlockPos`
+ Возвращается: `новый BlockPos который является n блок(ов) к северу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).north(n as int);
@@ -205,63 +205,63 @@ new BlockPos(0, 1, 2).north(10);
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| n        | int | Описание отсутствует |
+| п        | int | Описание отсутствует |
 
 
-### offset
+### смещение
 
-Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Создает новые BlockPos на основе этого BlockPos смещения одного блока этого BlockPos на основе данного [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
- Returns: `a new BlockPos that is 1 block offset of this BlockPos`
+ Возвращается: `новый BlockPos смещение 1 блока этого BlockPos`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction);
+new BlockPos(0, 1, 2).offset(направление как crafttweaker.api.util.Direction);
 new BlockPos(0, 1, 2).offset(<direction:east>);
 ```
 
-| Параметр  | Тип                                                            | Описание             |
-| --------- | -------------------------------------------------------------- | -------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Описание отсутствует |
+| Параметр    | Тип                                                            | Описание             |
+| ----------- | -------------------------------------------------------------- | -------------------- |
+| направление | [crafttweaker.api.util.direction](/vanilla/api/util/Direction) | Описание отсутствует |
 
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) смещения этого BlockPos на основе данного [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
- Returns: `a new BlockPos that is n block(s) offset of this BlockPos`
+ Возвращается: `новый BlockPos который является n блок(ов) смещение этого BlockPos`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction, n as int);
+new BlockPos(0, 1, 2).offset(направление crafttweaker.api.util.Direction, n как int);
 new BlockPos(0, 1, 2).offset(<direction:south>, 3);
 ```
 
-| Параметр  | Тип                                                            | Описание             |
-| --------- | -------------------------------------------------------------- | -------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | Описание отсутствует |
-| n         | int                                                            | Описание отсутствует |
+| Параметр    | Тип                                                            | Описание             |
+| ----------- | -------------------------------------------------------------- | -------------------- |
+| направление | [crafttweaker.api.util.direction](/vanilla/api/util/Direction) | Описание отсутствует |
+| п           | int                                                            | Описание отсутствует |
 
 
 ### юг
 
-Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является одним блоком к югу от этого BlockPos
 
- Returns: `a new BlockPos that is one block south of this BlockPos`
+ Возвращается: `новый BlockPos один блок к югу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).south();
+новый BlockPos(0, 1, 2).suth();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) к югу от этого BlockPos
 
- Returns: `a new BlockPos that is n block(s) south of this BlockPos`
+ Возвращается: `новый BlockPos, который является n блок(ов) к югу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
 new BlockPos(0, 1, 2).south(n as int);
@@ -270,98 +270,98 @@ new BlockPos(0, 1, 2).south(12);
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| n        | int | Описание отсутствует |
+| п        | int | Описание отсутствует |
 
 
-### subtract
+### вычесть
 
-Subtracts two positions together and returns the result.
+Вычитает две позиции вместе и возвращает результат.
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 new BlockPos(0, 1, 2).subtract(pos as crafttweaker.api.util.BlockPos);
 new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
 ```
 
-| Параметр | Тип                                                          | Описание                 |
-| -------- | ------------------------------------------------------------ | ------------------------ |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| Параметр | Тип                                                          | Описание                    |
+| -------- | ------------------------------------------------------------ | --------------------------- |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | другая позиция для удаления |
 
 
 ### вверх
 
-Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
+Создает новые BlockPos на основе этого BlockPos на один блок выше этого BlockPos
 
- Returns: `a new BlockPos that is one block higher than this BlockPos`
+ Возвращается: `новый BlockPos на один блок выше, чем этот BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).up();
+новый BlockPos(0, 1, 2).up();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) выше, чем этот BlockPos
 
- Returns: `a new BlockPos that is n block(s) higher than this BlockPos`
+ Возвращается: `новый BlockPos, который является n блок(ов) выше, чем этот BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).up(n as int);
+new BlockPos(0, 1, 2).up(n как int);
 new BlockPos(0, 1, 2).up(45);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| n        | int | Описание отсутствует |
+| п        | int | Описание отсутствует |
 
 
 ### запад
 
-Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
+Создает новые BlockPos на основе этого BlockPos на одном блоке к западу от этого BlockPos
 
- Returns: `a new BlockPos that is one block west of this BlockPos`
+ Возвращается: `новый BlockPos, который находится в одном блоке к западу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).west();
+новый BlockPos(0, 1, 2).west();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
+Создает новые BlockPos на основе этого BlockPos который является n блок(ов) к западу от этого BlockPos
 
- Returns: `a new BlockPos that is n block(s) west of this BlockPos`
+ Возвращается: `новый BlockPos, который n блок(ов) к западу от этого BlockPos`
 
-Returns net.minecraft.util.math.BlockPos
+Возвращает net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).west(n as int);
-new BlockPos(0, 1, 2).west(120);
+новый BlockPos(0, 1, 2).west(n как int);
+новый BlockPos(0, 1, 2).west(120);
 ```
 
 | Параметр | Тип | Описание             |
 | -------- | --- | -------------------- |
-| n        | int | Описание отсутствует |
+| п        | int | Описание отсутствует |
 
 
-### withinDistance
+### расстояние
 
-Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
+Проверяет, находится ли данный BlockPos в пределах указанного расстояния от этого BlockPos (используется середина BlockPos)
 
 Возвращает boolean
 
 ```zenscript
-new BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, distance as double);
-new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
+новый BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, расстояние двойно);
+новый BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ```
 
-| Параметр | Тип                                                          | Описание                                       |
-| -------- | ------------------------------------------------------------ | ---------------------------------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
-| distance | double                                                       | distance to check within                       |
+| Параметр   | Тип                                                          | Описание                                                 |
+| ---------- | ------------------------------------------------------------ | -------------------------------------------------------- |
+| пос        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos для проверки находится ли в пределах расстояния |
+| расстояние | double                                                       | расстояние для проверки в пределах                       |
 
 
 
@@ -376,28 +376,28 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 ## Операторы
 ### ADD
 
-Adds two positions together and returns the result.
+Добавляет две позиции вместе и возвращает результат.
 
 ```zenscript
-new BlockPos(0, 1, 2) + pos as crafttweaker.api.util.BlockPos
-new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
+новый BlockPos(0, 1, 2) + pos как crafttweaker.api.util.BlockPos
+новый BlockPos(0, 1, 2) + новый BlockPos(3, 2, 1)
 ```
 
-| Параметр | Тип                                                          | Описание              |
-| -------- | ------------------------------------------------------------ | --------------------- |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| Параметр | Тип                                                          | Описание                    |
+| -------- | ------------------------------------------------------------ | --------------------------- |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | другое место для добавления |
 ### SUB
 
-Subtracts two positions together and returns the result.
+Вычитает две позиции вместе и возвращает результат.
 
 ```zenscript
-new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
-new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
+новый BlockPos(0, 1, 2) - pos как crafttweaker.api.util.BlockPos
+новый BlockPos(0, 1, 2) - новый BlockPos(2, 1, 3)
 ```
 
-| Параметр | Тип                                                          | Описание                 |
-| -------- | ------------------------------------------------------------ | ------------------------ |
-| pos      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| Параметр | Тип                                                          | Описание                    |
+| -------- | ------------------------------------------------------------ | --------------------------- |
+| пос      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | другая позиция для удаления |
 
 ## Утилиты
 
