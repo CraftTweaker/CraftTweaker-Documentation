@@ -4,9 +4,9 @@ ZenScript использует скобки, чтобы ссылаться на 
 
 ## Как использовать обработчики скобок
 
-Brackets in ZenScript are defined using the `<` and `>` characters, anything inside these characters are considered a Bracket.
+Брюки в ZenScript определены с помощью символов `<` и `>` , все что внутри этих символов считаются скобками.
 
-An example of a Bracket Handler would be the Item Bracket Handler, which gives you access to the items inside the game.
+Примером обработчика брекетов является обработчик предмета, который дает вам доступ к предметам внутри игры.
 
 ## Примеры
 
@@ -18,10 +18,10 @@ An example of a Bracket Handler would be the Item Bracket Handler, which gives y
 
 Это даст вам доступ к [предмету](/Vanilla/Items/IItemStack/) `яблока`.
 
-An example of the [OreDictEntry Bracket Handler](/Vanilla/Brackets/Bracket_Ore/) would be:
+Пример обработчика брэндов [OreDictEntry](/Vanilla/Brackets/Bracket_Ore/) будет следующим:
 
 ```zenscript
 <ore:ingotIron>
 ```
 
-This will give you access to the [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) for `ingotIron`.
+Это даст вам доступ к [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/) для `ingotIron`.
