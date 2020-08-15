@@ -1,28 +1,28 @@
-# Blood Magic
+# 血魔法
 
-**This Support is WIP** **If Something Breaks, please open an issue on the issue tracker!** [Issue-Tracker Link](https://github.com/Coders-After-Dark/CompatSkills/issues)
+**此支持是 WIP** **如果出现了某些故障，请在问题跟踪器上打开一个问题！** [问题跟踪链接](https://github.com/Coders-After-Dark/CompatSkills/issues)
 
-## Binding:
+## 绑定：
 
-This will cancel the Item Binding in Blood Magic for said specific item if the player doesn't meet the requirements.
+如果玩家不符合要求，这将取消在血魔法中绑定该特定物品的物品。
 
-### Syntax:
+### 语法：
 
-    Blank Example:
-    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack stack, String... requirements);
+    空白示例：
+    mods.compatskills.BindHandler.addBindLock(String failureMessage, IItemStack, String... 需要);
     
-    Test Example:
-    mods.compatskills.BindHandler.addBindLock("Untold Dark Energies swirl around you and then subside", <bloodmagic:blood_orb>.withTag({orb: "bloodmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed");
+    测试示例:
+    mods.compatskills.Bindhandler.addBindLock("无法告诉的暗色能量在你周围然后再边", <bloodmagic:blood_orb>.withTag({orb: "bolmagic:weak"}), "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:harmry/plant_seed");
     
 
-## Rituals:
+## 仪式：
 
-This will cancel the activation of a ritual if the player doesn't meet the requirements.
+如果玩家不符合要求，这将取消仪式的激活。
 
-### Syntax:
+### 语法：
 
-    Blank Example:
-    mods.compatskills.RitualHandler.addRitualLock(String failureMessage, String ritual, String... requirements)
+    空白示例：
+    mods.compatskills.RitualHandler.addRitualLock(错误消息，字符串仪式，字符串... requirements)
     
     Test Example:
     mods.compatskills.RitualHandler.addRitualLock("As the ritual activates, you don't achieve the expected result", "ritualCrushing", "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed")
