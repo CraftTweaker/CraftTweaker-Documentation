@@ -16,7 +16,7 @@ mods.alchemistry.Liquifier.addRecipe(ILiquidStack output, IItemStack input);
 mods.alchemistry.Liquifier.addRecipe(<liquid:beryllium>*100,<alchemistry:element:5>);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 mods.alchemistry.Liquifier.removeRecipe(IItemStack input);
 
