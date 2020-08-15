@@ -13,10 +13,10 @@
 - logWarning(String сообщение);
 - logError(String сообщение);
 
-## Accessible, but useless Methods
+## Доступные, но бесполезные методы
 
-- logError(String message, Throwable exception);
-- logPlayer([IPlayer](/Vanilla/Players/IPlayer/) player);
+- ошибка logError(tring сообщение, Throwable exception);
+- logPlayer([IPlayer](/Vanilla/Players/IPlayer/) игрок);
 
-You can not use Java's throwables so the first Method is useless.  
-The second Method does absolutely nothing. Literally, the implementation is empty!
+Вы не можете использовать металы Java, так что первый метод бесполезен.  
+Второй метод ничего не делает. В буквальном смысле реализация пуста!
