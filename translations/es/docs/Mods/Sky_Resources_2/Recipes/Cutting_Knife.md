@@ -2,7 +2,7 @@
 
 The *knife* package is used for adding or removing recipes to/from the Cutting Knife.
 
-## Calling
+## Llamando
 
 You can call the *knife* package using `mods.skyresources.knife`
 
