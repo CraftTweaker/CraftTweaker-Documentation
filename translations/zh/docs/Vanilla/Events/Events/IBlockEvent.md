@@ -1,20 +1,20 @@
 # IBlockEvent
 
-This interface is extended by all Events that can deal with blocks in the world.
+此接口由所有可以处理世界上方块的事件扩展。
 
 ## 导入类
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.IBlockEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.eventIBlockEvent;`
 
-## Extending IEventPositionable
+## 扩展IEventPositionable
 
-This interface extends [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), which means that all functionality that IEventPositionable offers is also present in IBlockEvent
+此接口扩展 [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/), 这意味着IEventPositionable 提供的所有功能也都存在于IBlockEvent 事件中。
 
 ## ZenGetters
 
-| 名称         | 类型                                          |
-| ---------- | ------------------------------------------- |
-| world      | [IWorld](/Vanilla/World/IWorld/)            |
-| blockState | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| block      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| 名称   | 类型                                          |
+| ---- | ------------------------------------------- |
+| 世界   | [IWorld](/Vanilla/World/IWorld/)            |
+| 封禁状态 | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| 封禁   | [IBlock](/Vanilla/Blocks/IBlock/)           |
