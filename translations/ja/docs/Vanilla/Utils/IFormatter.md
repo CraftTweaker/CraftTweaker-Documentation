@@ -6,7 +6,7 @@ You can access the Formatting Handler using the `format` [global keyword](/Vanil
 
 ## Formatting a text
 
-### Color
+### 色
 
 You can give an IFormattedText a color using one of the following Colors:
 
