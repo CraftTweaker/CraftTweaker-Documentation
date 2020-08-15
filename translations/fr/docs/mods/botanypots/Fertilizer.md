@@ -1,83 +1,83 @@
-# Fertilizers
+# Engrais
 
-Class path: `mods.botanypots.Fertilizer`
+Chemin de la classe : `mods.botanypots.Fertilizer`
 
-## Use
+## Utiliser
 
-To use, import the class with `import mods.botanypots.Fertilizer;` at the beginning of your script.
+Pour l'utiliser, importez la classe avec `import mods.botanypots.Fertilizer;` au début de votre script.
 
-## Creating Fertilizers
+## Création d'engrais
 
-`Fertilizer.create(id, ingredient, minTick, maxTick);`
+`Fertilizer.create(id, ingrédient, minTick, maxTick);`
 
-- `id` &lt;string> The id of the new fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The item used for the fertilizer.
-- `minTick` &lt;int> The minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The maximum amount of ticks added by the fertilizer.
+- `id` &lt;chaîne> L'id du nouvel engrais. Ceci est un identifiant d'espaces de noms qui doit être au format `namespace:path` valide.
+- `ingrédient` <[Ingrédient](/vanilla/api/items/IIngredient)> L'objet utilisé pour l'engrais.
+- `minTick` &lt;int> La quantité minimale de ticks ajoutée par l'engrais.
+- `maxTick` &lt;int> La quantité maximale de ticks ajoutée par l'engrais.
 
-Creates a new fertilizer. These can be used to grow crops faster.
+Crée un nouvel engrais. Celles-ci peuvent être utilisées pour cultiver plus rapidement.
 
 ```zenscript
 Fertilizer.create("examplepack:stick", <item:minecraft:stick>, 250, 550);
 ```
 
-## Removing Fertilizers
+## Enlèvement des engrais
 
 `Fertilizer.remove(id);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;chaîne> L'id de l'engrais. Ceci est un identifiant d'espaces de noms qui doit être au format `namespace:path` valide.
 
-This can be used to remove a fertilizer.
+Ceci peut être utilisé pour enlever un engrais.
 
 ```zenscript
 Fertilizer.remove("botanypots:fertilizers/bone_meal");
 ```
 
-## Changing Fertilizer Ticks
+## Changement des tickets d'engrais
 
 `Fertilizer.setTicks(String id, int minTick, int maxTick);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `minTick` &lt;int> The new minimum amount of ticks added by the fertilizer.
-- `maxTick` &lt;int> The new maximum amount of ticks added by the fertilizer.
+- `id` &lt;chaîne> L'id de l'engrais. Ceci est un identifiant d'espaces de noms qui doit être au format `namespace:path` valide.
+- `minTick` &lt;int> La nouvelle quantité minimale de tiques ajoutée par l'engrais.
+- `maxTick` &lt;int> La nouvelle quantité maximale de ticks ajoutée par l'engrais.
 
-This will change the growth tick range added by the fertilizer.
+Cela changera la plage de tiques de croissance ajoutée par l'engrais.
 
 ```zenscript
 Fertilizer.setTicks("botanypots:fertilizers/bone_meal", 800, 900);
 ```
 
-## Changing Fertilizer Ingredients
+## Changement des ingrédients de l'engrais
 
-`Fertilizer.setIngredient(id, ingredient);`
+`Fertilizer.setIngredient(id, ingrédient);`
 
-- `id` &lt;string> The id of the fertilizer. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The new item to be used for the fertilizer.
+- `id` &lt;chaîne> L'id de l'engrais. Ceci est un identifiant d'espaces de noms qui doit être au format `namespace:path` valide.
+- `ingrédient` <[Ingrédient](/vanilla/api/items/IIngredient)> Le nouvel élément à utiliser pour l'engrais.
 
-Sets the ingredient item that is the fertilizer.
+Définit l'objet d'ingrédient qui est l'engrais.
 
 ```zenscript
 Fertilizer.setIngredient("botanypots:fertilizers/bone_meal", <item:minecraft:sugar>);
 ```
 
-## Getting All Ids
+## Obtenir tous les identifiants
 
 `Fertilizer.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known fertilizer ids at the time this is ran.
+- Retourne: &lt;string[]> Un tableau de tous les identifiants d'engrais connus au moment où il est couru.
 
-This will give you an array of all the known fertilizer ids at the time.
+Cela vous donnera une panoplie de tous les identifiants d'engrais connus à l'époque.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for fertilizerId in Fertilizer.getAllIds() {
+// Enregistre tous les ids dans le fichier crafttweaker.log
+pour fertilizerId dans Fertilizer.getAllIds() {
     println(fertilizerId);
 }
 ```
 
-## Removing All Fertilizers
+## Suppression de tous les engrais
 
-This will completely remove all the fertilizers currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Cela supprimera complètement tous les engrais actuellement enregistrés. Ceci est utile si vous voulez recréer toutes les données à partir de zéro à travers des scripts.
 
 ```zenscript
 Fertilizer.removeAll();
