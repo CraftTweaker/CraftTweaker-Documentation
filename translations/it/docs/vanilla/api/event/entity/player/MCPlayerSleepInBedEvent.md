@@ -8,7 +8,7 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.event.entity.player.MCPlayerSleepInBedEvent
 ```
 
-## Constructors
+## Costruttori
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerSleepInBedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerSleepInBedEvent>);
 ```
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCPlayerSleepInBedEvent(handler as func
 ## Metodi
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSleepInBedEvent.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCPlayerSleepInBedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Restituisce: `Giocatore`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSleepInBedEvent.getPlayer();
@@ -39,15 +39,15 @@ myMCPlayerSleepInBedEvent.getPlayer();
 
 ### getPos
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Restituisce [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerSleepInBedEvent.getPos();
 ```
 
-### hasResult
+### hasRisultato
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
 
 Restituisce un booleano
 
@@ -55,11 +55,11 @@ Restituisce un booleano
 myMCPlayerSleepInBedEvent.hasResult();
 ```
 
-### isCancelable
+### isAnnullabile
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
+ Nota:
+ Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
 
 Restituisce un booleano
 
@@ -67,9 +67,9 @@ Restituisce un booleano
 myMCPlayerSleepInBedEvent.isCancelable();
 ```
 
-### isCanceled
+### isAnnullato
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
 
 Restituisce un booleano
 
@@ -77,7 +77,7 @@ Restituisce un booleano
 myMCPlayerSleepInBedEvent.isCanceled();
 ```
 
-### setCanceled
+### setAnnullato
 
 ```zenscript
 myMCPlayerSleepInBedEvent.setCanceled(cancel as boolean);
@@ -85,7 +85,7 @@ myMCPlayerSleepInBedEvent.setCanceled(cancel as boolean);
 
 | Parametro | Tipo    | Descrizione                 |
 | --------- | ------- | --------------------------- |
-| cancel    | boolean | Nessuna descrizione fornita |
+| annulla   | boolean | Nessuna descrizione fornita |
 
 
 
