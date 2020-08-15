@@ -1,17 +1,17 @@
 ### onMobDrops
 
-| Setter/Getter/Method | Method Names                     | Names                            | Input/Output                                                       |
-|:-------------------- |:-------------------------------- |:-------------------------------- | ------------------------------------------------------------------ |
-| Getter               | getDamageSource();               | damageSource                     | Returns an [IDamageSource](/Vanilla/Damage/IDamageSource/)         |
-| Method               | addItem(IItemStack item);        | addItem(IItemStack item);        | Takes an [IItemStack](/Vanilla/Items/IItemStack/)                  |
-| Method               | addItem(IEntityItem entityItem); | addItem(IEntityItem entityItem); | Takes an [IEntityItem](/Vanilla/Entities/IEntityItem/)             |
-| Getter               | getLootingLevel();               | lootingLevel                     | Returns an Integer                                                 |
-| Getter               | getIsRecentlyHit();              | isRecentlyHit                    | Returns an Boolean                                                 |
-| Getter               | getDrops();                      | drops();                         | Returns an List of [IEntityItem's](/Vanilla/Entities/IEntityItem/) |
-| Setter               | setDrops();                      | drops(List<ientityitem> drops);  | Takes an List of [IEntityItem's](/Vanilla/Entities/IEntityItem/)   |
+| Setter/Getter/Method | Nombres del método               | Nombres                            | Input/Output                                                                 |
+|:-------------------- |:-------------------------------- |:---------------------------------- | ---------------------------------------------------------------------------- |
+| Obtén                | Obtener fuente de daño ();       | fuente de daño                     | Devuelve un [IDamageSource](/Vanilla/Damage/IDamageSource/)                  |
+| Método               | addItem(IItemStack item);        | addItem(IItemStack item);          | Takes an [IItemStack](/Vanilla/Items/IItemStack/)                            |
+| Método               | addItem(IEntityItem entityItem); | addItem(IEntityItem entityItem);   | Toma un artículo de [ItityItem](/Vanilla/Entities/IEntityItem/)              |
+| Obtén                | getLootingLevel();               | lootingLevel                       | Devuelve un entero                                                           |
+| Obtén                | getIsRecentlyHit();              | es golpeado recientemente          | Devuelve un booleano                                                         |
+| Obtén                | getDrops();                      | drops();                           | Devuelve una Lista de [ItityItem's](/Vanilla/Entities/IEntityItem/)          |
+| Setter               | setDrops();                      | soltar(Lista<ientityitem> soltar); | Toma una lista de [elementos de ItityItem's](/Vanilla/Entities/IEntityItem/) |
 
     var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
     
     test.onMobDrops = function(event as crafttweaker.event.EntityLivingDeathDropsEvent) {
-        ...
+    ...
     };
