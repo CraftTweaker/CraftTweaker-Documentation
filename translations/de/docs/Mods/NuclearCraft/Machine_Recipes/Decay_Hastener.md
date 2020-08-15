@@ -1,7 +1,7 @@
 # Decay Hastener
 
-## Importing the Package
-`mods.nuclearcraft.decay_hastener`
+## Paket wird importiert
+`mods.nuclearcraft.decay_hestener`
 
 ## Rezepte hinzufügen
 ```zenscript
