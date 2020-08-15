@@ -7,11 +7,11 @@
 
 ## メソッド
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
-- **Int tool level** tool level for breaking the block.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) 入力** 壊れる必要があるブロック。
+- **[IItemStack](/Vanilla/Items/IItemStack/) 出力** ブロックが壊れたときにドロップするアイテム。
+- **Intツールレベル** ブロックを壊すためのツールレベル。
+- **浮動小数点数** の確率は 0-1 です。
+- **浮動小数点数のチャンス** 0-1 の間の確率。
 
 ## 加算
 
