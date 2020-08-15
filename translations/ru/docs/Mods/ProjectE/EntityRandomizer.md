@@ -4,7 +4,7 @@ Adding and removing entities from ProjectE's philosopher's stone entity randomiz
 
 Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
 
-## Adding
+## Добавление
 
 ### addPeaceful
 
@@ -24,7 +24,7 @@ mods.projecte.EntityRandomizer.addMob(IEntityDefinition entityDefinition);
 mods.projecte.EntityRandomizer.addMob(<entity:minecraft:pig>);
 ```
 
-## Removing
+## Удаление
 
 ### removePeaceful
 
