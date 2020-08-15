@@ -1,8 +1,8 @@
-# Chemical Crystallizer
+# Cristallizzatore Chimico
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Chemical Crystallizer through the command `/ct mekrecipes crystallizer`
+A partire da Mekanism 9.7.0 è ora possibile visualizzare tutte le stringhe di ricetta del Cristallizzatore Chimico attraverso il comando `/ct mekrecipes cristallizzatore`
 
-## Addition
+## Addizione
 
 ```zenscript
 mods.mekanism.chemical.crystallizer.addRecipe(IGasStack inputGas, IItemStack outputStack);
@@ -10,7 +10,7 @@ mods.mekanism.chemical.crystallizer.addRecipe(IGasStack inputGas, IItemStack out
 mods.mekanism.chemical.crystallizer.addRecipe(<gas:water>, <minecraft:ice>);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 mods.mekanism.chemical.crystallizer.removeRecipe(IIngredient outputStack, @Optional IIngredient inputGas);
@@ -19,12 +19,12 @@ mods.mekanism.chemical.crystallizer.removeRecipe(<mekanism:otherdust:4>, <gas:li
 mods.mekanism.chemical.crystallizer.removeRecipe(<mekanism:crystal:1>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+Specificare un parametro di input rimuoverà solo la ricetta specifica che utilizza detto input. L'esclusione del parametro di input rimuoverà tutte le ricette che producono l'output specificato.
 
-## Removing all recipes
+## Rimozione di tutte le ricette
 
-As of Mekanism 9.7.0 it is now possible to remove all Chemical Crystallizer recipes. (This excludes any recipes added via CraftTweaker)
+A partire da Mekanism 9.7.0 è ora possibile rimuovere tutte le ricette Chimiche Crystallizer. (Questo esclude le ricette aggiunte tramite CraftTweaker)
 
 ```zenscript
-mods.mekanism.chemical.crystallizer.removeAllRecipes();
+mods.mekanism.chemical.crystallizer.removeAllRicette();
 ```
