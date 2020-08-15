@@ -1,8 +1,8 @@
-# Kiln
+# Ofen
 
 The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
 
-## Package
+## Paket
 `mods.atum.Kiln;`
 
 ## Blacklist
