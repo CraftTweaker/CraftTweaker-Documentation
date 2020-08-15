@@ -1,40 +1,40 @@
 # MCFood
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
 ## Importowanie klasy
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.food.MCFood
 ```
 
-## Constructors
+## Konstruktorzy
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+nowe rzemieślnik api.food.MCFood(leczenie jak int, nasycenie jako pływak);
 ```
-| Parametr  | Typ                | Opis                    |
-| --------- | ------------------ | ----------------------- |
-| healing   | odcień             | No description provided |
-| nasycenie | zmiennoprzecinkowe | No description provided |
+| Parametr  | Typ                | Opis             |
+| --------- | ------------------ | ---------------- |
+| gojenie   | odcień             | Nie podano opisu |
+| nasycenie | zmiennoprzecinkowe | Nie podano opisu |
 
 
 
 ## Metody
-### addEffect
+### dodaj efekt
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(działający jako crafttweaker.api.potion.MCPotionEffectInstance, prawdopodobieństwo jako float);
 ```
 
-| Parametr    | Typ                                                                                           | Opis                    |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | zmiennoprzecinkowe                                                                            | No description provided |
+| Parametr           | Typ                                                                                                         | Opis             |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | ---------------- |
+| efekt              | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nie podano opisu |
+| prawdopodobieństwo | zmiennoprzecinkowe                                                                                          | Nie podano opisu |
 
 
-### clearEffects
+### czyść Efekty
 
 ```zenscript
 myMCFood.clearEffects();
@@ -42,90 +42,90 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(działający jako crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parametr | Typ                                                                                           | Opis                    |
-| -------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect   | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Parametr | Typ                                                                                                         | Opis             |
+| -------- | ----------------------------------------------------------------------------------------------------------- | ---------------- |
+| efekt    | [[PLACEHOLDER] crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | Nie podano opisu |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
+miMCFood.setCanEatWhenFull(canEatWhenFull jako boolean);
 ```
 
-| Parametr       | Typ     | Opis                    |
-| -------------- | ------- | ----------------------- |
-| canEatWhenFull | boolean | No description provided |
+| Parametr       | Typ     | Opis             |
+| -------------- | ------- | ---------------- |
+| canEatWhenFull | boolean | Nie podano opisu |
 
 
-### setFastEating
+### setFastjedzenie
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setFastEating(fastEating as boolean);
+myMCFood.setFastEating(zapłodnienie jako boolean);
 ```
 
-| Parametr   | Typ     | Opis                    |
-| ---------- | ------- | ----------------------- |
-| fastEating | boolean | No description provided |
+| Parametr     | Typ     | Opis             |
+| ------------ | ------- | ---------------- |
+| zapłodnienie | boolean | Nie podano opisu |
 
 
-### setHealing
+### uzdatnianie
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setHealing(healing as int);
+leczenie myMCFood. (leczenie zgodnie z intami);
 ```
 
-| Parametr | Typ    | Opis                    |
-| -------- | ------ | ----------------------- |
-| healing  | odcień | No description provided |
+| Parametr | Typ    | Opis             |
+| -------- | ------ | ---------------- |
+| gojenie  | odcień | Nie podano opisu |
 
 
-### setMeat
+### setMięso
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setMięso (mięso jako boolean);
 ```
 
-| Parametr | Typ     | Opis                    |
-| -------- | ------- | ----------------------- |
-| meat     | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| mięso    | boolean | Nie podano opisu |
 
 
-### setSaturation
+### Nasycenie
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Zwraca [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(saturation as float);
+myMCFood.setSaturation(saturacja jako pływak);
 ```
 
-| Parametr  | Typ                | Opis                    |
-| --------- | ------------------ | ----------------------- |
-| nasycenie | zmiennoprzecinkowe | No description provided |
+| Parametr  | Typ                | Opis             |
+| --------- | ------------------ | ---------------- |
+| nasycenie | zmiennoprzecinkowe | Nie podano opisu |
 
 
 
 ## Właściwości
 
-| Nazwisko       | Typ                | Has Getter | Has Setter |
-| -------------- | ------------------ | ---------- | ---------- |
-| canEatWhenFull | boolean            | prawda     | fałszywy   |
-| healing        | odcień             | prawda     | fałszywy   |
-| isFastEating   | boolean            | prawda     | fałszywy   |
-| meat           | boolean            | prawda     | fałszywy   |
-| nasycenie      | zmiennoprzecinkowe | prawda     | fałszywy   |
+| Nazwisko       | Typ                | Posiada Getter | Ma ustawienie |
+| -------------- | ------------------ | -------------- | ------------- |
+| canEatWhenFull | boolean            | prawda         | fałszywy      |
+| gojenie        | odcień             | prawda         | fałszywy      |
+| isFastjedzenie | boolean            | prawda         | fałszywy      |
+| mięso          | boolean            | prawda         | fałszywy      |
+| nasycenie      | zmiennoprzecinkowe | prawda         | fałszywy      |
 
