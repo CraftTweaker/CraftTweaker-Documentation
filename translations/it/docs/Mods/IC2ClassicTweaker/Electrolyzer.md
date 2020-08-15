@@ -1,4 +1,4 @@
-# Electrolyzer
+# Elettrolyzer
 
 ## Pacchetto
 
@@ -8,7 +8,7 @@ import mods.ic2.ClassicElectrolyzer;
 
 ## Metodi
 
-### Add Both Recipe
+### Aggiungi Entrambe Le Ricette
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addBothRecipe(IItemStack output, IItemStack input, int energy);
@@ -17,10 +17,10 @@ mods.ic2.ClassicElectrolyzer.addBothRecipe(<minecraft:diamond>, <minecraft:dirt>
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** Deve essere un ItemStack, nessun oredict o altre cose.
 - **int energy** Total eu received from discharge part and total energy used for charge part of the recipe.
 
-### Add Charge Recipe
+### Aggiungi Ricetta Di Carica
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addChargeRecipe(IItemStack output, IItemStack input, int energy);
@@ -29,10 +29,10 @@ mods.ic2.ClassicElectrolyzer.addChargeRecipe(<minecraft:emerald>, <minecraft:sto
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** Deve essere un ItemStack, nessun oredict o altre cose.
 - **int energy** Total eu used in the recipe.
 
-### Add Discharge Recipe
+### Aggiungi Ricetta Di Scarico
 
 ```zenscripts
 mods.ic2.ClassicElectrolyzer.addDischargeRecipe(IItemStack output, IItemStack input, int energy);
@@ -41,10 +41,10 @@ mods.ic2.ClassicElectrolyzer.addDischargeRecipe(<minecraft:cobblestone> * 64, <m
 ```
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** Has to be an ItemStack, no oredict or other stuff.
-- **int energy** Total eu received from the recipe.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** Deve essere un ItemStack, nessun oredict o altre cose.
+- **int energy** Total eu ricevuto dalla ricetta.
 
 ### Rimozione
 
-Simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+Basta disabilitare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
 
