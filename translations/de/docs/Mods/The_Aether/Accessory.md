@@ -1,6 +1,6 @@
 # Accessory
 
-## Package
+## Paket
 
 ```zenscript
 import mods.aether_legacy.Accessory;
