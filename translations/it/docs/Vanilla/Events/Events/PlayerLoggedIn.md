@@ -1,23 +1,23 @@
 # PlayerLoggedIn
 
-The PlayerLoggedIn Event is fired whenever a player logs in.
+L'evento PlayerLoggedIn viene sparato ogni volta che un giocatore accede.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerLoggedInEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerLoggedInEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerLoggedIn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerLoggedIn Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getters/setters pure:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
-| ZenGetter | Tipo Di Reso                         |
-| --------- | ------------------------------------ |
-| `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| ZenGetter   | Tipo Di Reso                         |
+| ----------- | ------------------------------------ |
+| `giocatore` | [IPlayer](/Vanilla/Players/IPlayer/) |
