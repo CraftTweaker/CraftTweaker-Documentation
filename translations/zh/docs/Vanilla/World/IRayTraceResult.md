@@ -1,23 +1,23 @@
 # IRayTraceResult
 
-When a player is looking or clicking at something he fires a ray that goes until it hits what it needs to hit, or misses.  
-The result of such a hit is an IRayTraceResult object.
+当玩家看到或点击某些东西时，他会射出一只射到它需要击中的光，或者错了。  
+这次攻击的结果是一个 IRayTraceResults 对象。
 
-## Importing the class
+## 导入相关包
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.world.IRayTraceResult`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftminstruer.world.IRayTraceResult`
 
 ## ZenGetters
 
-All you can do is retrieve information from these objects, here's which:  
-Be careful though, since all getters that do not return a bool can return `null`!
+您可以做的只是从这些对象中检索信息，这里：  
+小心不过。 因为所有不返回布尔的采集器可以返回 `null`！
 
-| name     | type                                   |
+| 名称       | 类型                                     |
 | -------- | -------------------------------------- |
-| isMiss   | bool                                   |
-| isEntity | bool                                   |
-| isBlock  | bool                                   |
-| entity   | [IEntity](/Vanilla/Entities/IEntity/)  |
+| isMiss   | 布尔值                                    |
+| 空格       | 布尔值                                    |
+| isBlock  | 布尔值                                    |
+| 实体       | [IEntity](/Vanilla/Entities/IEntity/)  |
 | blockPos | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | sideHit  | [IFacing](/Vanilla/World/IFacing/)     |
