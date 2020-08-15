@@ -21,4 +21,4 @@ The following information can be retrieved from the event:
 | ZenGetter | 戻り値                                  |
 | --------- | ------------------------------------ |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `phase`   | string                               |
+| `phase`   | 文字列                                  |
