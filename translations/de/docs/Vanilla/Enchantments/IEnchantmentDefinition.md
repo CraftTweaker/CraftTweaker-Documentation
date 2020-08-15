@@ -7,7 +7,7 @@ An IEnchantmentDefinition is the actual Enchantment, it does not posess a level,
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.enchantments.IEnchantmentDefinition;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/Brackets/Bracket_Enchantment/) or from an [IEnchantment](/Vanilla/Enchantments/IEnchantment/) object.
 
@@ -17,14 +17,14 @@ You can retrieve such an object from the [Enchantment Bracket handler](/Vanilla/
 | --------------------- | --------- | ------- |
 | id                    |           | int     |
 | name                  | name      | string  |
-| maxLevel              |           | int     |
+| maximaler Level       |           | int     |
 | minLevel              |           | int     |
 | isAllowedOnBooks      |           | boolean |
 | isTreasureEnchantment |           | boolean |
 | isCurse               |           | boolean |
 | registryName          |           | string  |
 
-## ZenMethods
+## ZenMethoden
 
 ### CanApply
 
