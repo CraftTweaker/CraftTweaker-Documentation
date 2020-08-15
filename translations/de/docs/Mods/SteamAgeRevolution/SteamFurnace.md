@@ -20,7 +20,7 @@ mods.steamagerevolution.SteamFurnace.addRecipe(<ore:cobblestone>, <minecraft:sto
 ```
 
 
-## Removal
+## Entfernen
 
 ```zenscript mods.steamagerevolution.SteamFurnace.removeRecipe(IItemStack output); mods.steamagerevolution.SteamFurnace.removeRecipe(<minecraft:glass>);
 
