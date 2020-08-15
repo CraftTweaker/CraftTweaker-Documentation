@@ -21,20 +21,20 @@ PlayerBonemeal Events implement the following interfaces and are able to call al
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | Return Type                                 |
+| ZenGetter    | 戻り値                                         |
 | ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
+| `canceled`   | boolean型                                    |
+| `processed`  | boolean型                                    |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
 | `world`      | [IWorld](/Vanilla/World/IWorld/)            |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| `ブロック`       | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `blockPos`   | [IBlockPos](/Vanilla/World/IBlockPos/)      |
-| `dimension`  | int                                         |
-| `item`       | [IItemStack](/Vanilla/Items/IItemStack/)    |
+| `寸法`         | int                                         |
+| `項目`         | [IItemStack](/Vanilla/Items/IItemStack/)    |
 
 ## ZenMethods
 
