@@ -1,13 +1,13 @@
-# Advanced Mortars
+# 高度な迫撃砲
 
-## Information
+## 情報
 
-Advanced Mortars adds 4 tiered in-world Mortars and is intended as a tool to be used by modpack authors. It currently has both support for JEI as well as robust CraftTweaker Integration.
+高度な迫撃砲は、世界中で4段階の迫撃砲を追加し、modpack著者が使用するためのツールとして意図されています。 現在、JEIと堅牢なCraftTweaker統合の両方をサポートしています。
 
-### For More Information
+### 詳細はこちら
 
-https://minecraft.curseforge.com/projects/advanced-mortars
+https://minecraft.cursseforge.com/projects/advanced-mortars
 
-### Bug Reports
+### バグレポート
 
 https://github.com/codetaylor/advancedmortars/issues
