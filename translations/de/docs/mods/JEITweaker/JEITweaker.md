@@ -2,31 +2,31 @@
 
 ## Beschreibung
 
-This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
+Diese Mod fügt JEI zusätzlich Unterstützung für CraftTweaker hinzu. CraftTweaker unterstützte früher JEI nativ, aber aufgrund des 1.14 Rewrites wird die JEI Unterstützung in seinem eigenen Mod herausgezogen.
 
 
 ## Paket
 `mods.jei.JEI`
 
-## Item Hiding
+## Item verstecken
 
-This will hide the given item in JEI. The example given will hide the dirt block in the JEI menu.
+Dadurch wird das angegebene Element in JEI ausgeblendet. Das angezeigte Beispiel verdeckt den Schmutzblock im JEI-Menü.
 
 ```zenscript
 //mods.jei.JEI.hideItem(IItemStack stack);
 mods.jei.JEI.hideItem(<item:minecraft:dirt>);
 ```
 
-## Category Hiding
+## Kategorie verstecken
 
-This will hide the given category in JEI. The example given will hide the furnace category when looking up recipes in JEI.
+Dadurch wird die angegebene Kategorie in JEI versteckt. Das angeführte Beispiel wird die Ofenkategorie bei der Suche nach Rezepten in JEI verbergen.
 
 ```zenscript
 //mods.jei.JEI.hideCategory(String category);
 mods.jei.JEI.hideCategory("minecraft:furnace");
 ```
 
-The default categories are:
+Die Standardkategorien sind:
 ```zenscript
 "minecraft:crafting"
 "minecraft:furnace"
@@ -39,19 +39,19 @@ The default categories are:
 "jei:information"
 ```
 
-Mods can add more categories though!
+Mods können jedoch weitere Kategorien hinzufügen!
 
-## Add Info
+## Info hinzufügen
 
-This will add information to the Item that will be shown when looking at usages in JEI!.
+Dies fügt dem Element Informationen hinzu, die beim Betrachten der Nutzungen in JEI!.
 
-This exact example will add 3 lines of information to the Diamond item.
+Dieses exakte Beispiel fügt dem Diamant-Item 3 Zeilen Informationen hinzu.
 
 ```zenscript
-//mods.jei.JEI.addInfo(IItemStack stack, String[] information);
-mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
+//mods.jei.JEI.addInfo(IItemStack stack, String[] Information);
+mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["Dies ist die erste Zei!", "Dies ist die zweite!", "third"]);
 ```
 
-The code above will produce: ![Commit Box ausgefüllt](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+Der obige Code wird produzieren: ![Commit Box ausgefüllt](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
