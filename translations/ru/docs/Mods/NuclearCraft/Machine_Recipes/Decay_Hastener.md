@@ -1,6 +1,6 @@
 # Decay Hastener
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.decay_hastener`
 
 ## Добавление рецептов
