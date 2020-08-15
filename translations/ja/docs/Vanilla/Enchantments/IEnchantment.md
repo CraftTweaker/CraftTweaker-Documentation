@@ -1,6 +1,6 @@
-# IEnchantment
+# Ienchantment
 
-An IEnchantment essentially is an [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) and an enchantment level.
+IEnchantment は本質的に [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) とエンチャントレベルです。
 
 ## パッケージのインポート
 
@@ -17,10 +17,10 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenMethods
 
-### Retrieve the Enchantment as NBT
+### NBT としてエンチャントを取得
 
-You might want to get the Enchantment's NBT-Tag.  
-You can either cast it as [IData](/Vanilla/Data/IData/) or use the method:
+エンチャントのNBTタグを取得することができます。  
+[IData](/Vanilla/Data/IData/) としてキャストするか、メソッドを使用することができます。
 
 ```zenscript
 ench.makeTag();
