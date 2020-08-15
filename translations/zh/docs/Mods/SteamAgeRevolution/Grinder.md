@@ -5,7 +5,7 @@ The Grinder is a machine that converts an input item into an output item using s
 ## 所属包名
 `mods.steamagerevolution.Grinder`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
@@ -19,7 +19,7 @@ mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, 
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
-## Removing
+## 移除配方
 
 ```zenscript
 mods.steamagerevolution.Grinder.removeRecipe(IItemStack output);
