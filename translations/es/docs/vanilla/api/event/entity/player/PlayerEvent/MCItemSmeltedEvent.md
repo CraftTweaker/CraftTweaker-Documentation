@@ -5,23 +5,23 @@ Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener es
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent
+crafttweaker.api.event.entity.player.PlayerEvent.MCItemPhone Evento
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent>);
+nuevo crafttweaker.api.event.entity.player.PlayerEvent.MCItemmirreltedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent>);
 ```
-| Parámetro | Tipo                                                                                                                                                      | Descripción             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent)> | No description provided |
+| Parámetro | Tipo                                                                                                                                                        | Descripción                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCItemmirreltedEvent](/vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent)> | No se proporcionó descripción |
 
 
 
 ## Métodos
-### getEntityPlayer
+### %s Jugador
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemSmeltedEvent.getEntityPlayer();
@@ -29,63 +29,63 @@ myMCItemSmeltedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Devuelve: `Jugador`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
-myMCItemSmeltedEvent.getPlayer();
+myMCItemworeltedEvent.getPlayer();
 ```
 
 ### getSmelting
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemSmeltedEvent.getSmelting();
 ```
 
-### hasResult
+### hastaResultado
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCItemSmeltedEvent.hasResult();
 ```
 
-### isCancelable
+### es cancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
+ Nota:
+ Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCItemSmeltedEvent.isCancelable();
 ```
 
-### isCanceled
+### es cancelado
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCItemSmeltedEvent.isCanceled();
 ```
 
-### setCanceled
+### setCancelado
 
 ```zenscript
-myMCItemSmeltedEvent.setCanceled(cancel as boolean);
+myMCItemworeltedEvent.setCanceled(cancelar como booleano);
 ```
 
-| Parámetro | Tipo    | Descripción             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| cancelar  | boolean | No se proporcionó descripción |
 
 
 
