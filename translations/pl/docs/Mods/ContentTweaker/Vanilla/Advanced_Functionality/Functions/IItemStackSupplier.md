@@ -1,12 +1,12 @@
 # IItemStackSupplier
 
-The IItemStackSupplier function can be added to a [Creative Tab](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) and is used to provide the [IItemStack](/Vanilla/Items/IItemStack/) to be used as the tab's icon.
+Funkcja IItemStackSupplier może być dodana do karty [Kreatywna](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) i jest używana do dostarczania [IItemStack](/Vanilla/Items/IItemStack/) do użycia jako ikona karty.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemStackSupplier;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.IItemStackSupplier;`
 
-## Parameters
+## Parametry
 
-The IItemStackSupplier Function is a function with no parameters. The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).
+Funkcja IItemStackSupplier jest funkcją bez parametrów. Funkcja musi zwrócić [IItemStack](/Vanilla/Items/IItemStack/).
