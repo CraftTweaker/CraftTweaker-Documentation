@@ -6,17 +6,17 @@ The Metal Press package can be used to add/remove recipes to/from the Immersive 
 
 You can call the MetalPress package using `mods.immersiveengineering.MetalPress`.
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type       | Data Type                                           |
-| -------- | ---------- | --------------------------------------------------- |
-| Required | Output     | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input      | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Energy     | Integer                                             |
-| Required | Input Size | Integer                                             |
+| Requerido | Tipo       | Tipo de Datos                                         |
+| --------- | ---------- | ----------------------------------------------------- |
+| Requerido | Salida     | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Input      | [IIngredientes](/Vanilla/Variable_Types/IIngredient/) |
+| Requerido | Mold       | [IItemstack](/Vanilla/Items/IItemStack/)              |
+| Requerido | Energy     | Entero                                                |
+| Requerido | Input Size | Entero                                                |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -28,11 +28,11 @@ mods.immersiveengineering.MetalPress.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -43,11 +43,11 @@ mods.immersiveengineering.MetalPress.removeRecipe(<minecraft:diamond>);
 
 ## Remove By Mold
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
