@@ -1,32 +1,32 @@
-# IEntityAgeable
+# Возрастные единицы
 
-An Ageable Entity is one that grows over time, like a cow.
+Воздушная сущность - это единица, которая растет со временем, как корова.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityAgeable;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.entity.IEntityAgeable;`
 
-## Extending [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
+## Расширение [IEntityCreature](/Vanilla/Entities/IEntityCreature/)
 
-IEntityAgeable extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityCreature/) also are available to IEntityAgeable.
+IEntityAgeable расширяет [IEntityCreature](/Vanilla/Entities/IEntityCreature/). Это означает, что все функции, доступные [IEntities](/Vanilla/Entities/IEntityCreature/) , также доступны для IEntityAgeable.
 
 ## Методы
 
 ### ZenGetters/Setters
 
-| Геттер     | ZenSetter   | Тип  |
-| ---------- | ----------- | ---- |
-| growingAge | growingAge  | int  |
-|            | scaleForAge | bool |
+| Геттер           | ZenSetter        | Тип  |
+| ---------------- | ---------------- | ---- |
+| возрастающий век | возрастающий век | int  |
+|                  | поиск по веку    | bool |
 
 ### Методы
 
-#### add age
+#### добавить возраст
 
-Methods expect an int and the second method an optional bool.  
-Both methods return nothing.  
-Normally, the second method does the same as the first with false as forced argument, that may differ for mod implementations, though.
+Методы ожидают подсказки, а второй метод - необязательный щит.  
+оба метода ничего не возвращают.  
+Обычно, второй метод делает то же самое, что и первый с принудительным аргументом, который может отличаться от реализаций модификаций.
 
 ```zenscript
 entAgObj.ageUp(int seconds, @Optional boolean forced);
