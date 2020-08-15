@@ -4,13 +4,13 @@
 
 `import mods.ic2.BlockCutter;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **@Optional int hardness** Minimum hardness requirement for blade.
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
