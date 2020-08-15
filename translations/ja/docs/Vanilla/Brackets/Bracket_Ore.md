@@ -1,19 +1,19 @@
 # Ore Dictionary Bracket Handler
 
-The Ore Dictionary Bracket Handler gives you access to the Ore Dictionaries in the game.
+鉱石辞書のブラケットハンドラーは、ゲーム内の鉱石辞書にアクセスできます。
 
-Ore Dictionarys are referenced in the Ore Dictionary Bracket Handler by like so:
+鉱石辞書は、以下のように鉱石辞書のブラケットハンドラーで参照されます。
 
 ```zenscript
 <ore:orename>
 <ore:ingotIron>
 ```
 
-Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. Please refer to the [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) Entry for further information on what to do with them.
+Returns an [IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/), as long as no `*` is in the call, otherwise returns a `List<IOreDictEntry>` If the oreDictionary is not yet in the game, will create a new and empty oreDictionary with the given name and return that. それらをどうするかについては、 [Ore Dictionary](/Vanilla/OreDict/IOreDictEntry/) を参照してください。
 
-# Getting all Registered ore Dictionaries
+# 登録済みの鉱石辞書の取得
 
-You can use the following command to output all registered ore Dictionaries to the CraftTweaker log
+登録済みの鉱石辞書をCraftTweakerログに出力するには、次のコマンドを使用します。
 
     /ct oredict
     /crafttweaker oredict
