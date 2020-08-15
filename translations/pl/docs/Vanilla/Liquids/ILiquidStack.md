@@ -2,7 +2,7 @@
 
 A LiquidStack consists of a [Liquid Definition](/Vanilla/Liquids/ILiquidDefinition/) as well as an optional tag and an optional amount value.
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.liquid.ILiquidStack;`
@@ -27,18 +27,18 @@ val lavaWithAmount = <liquid:lava> * 1000;
 As an ILiquidStack represents a liquid, there surely must also be a way of retrieving the fluid's properties.  
 Check the table to see what you can retrieve from the ILiquidStack Object using ZenGetters.
 
-| Zengetter   | What is this?                                             | Return Type                                               | Example                                   |
-| ----------- | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
-| name        | This returns the unlocalized liquid name                  | string                                                    | `test = <liquid:lava>.name;`        |
-| displayName | This returns the localized liquid name                    | string                                                    | `test = <liquid:lava>.displayName;` |
-| amount      | This returns the amount of the ILiquidObject              | int                                                       | `test = <liquid:lava>.amount;`      |
-| luminosity  | This returns the luminosity of the referred liquid        | int                                                       | `test = <liquid:lava>.luminosity;`  |
-| density     | This returns the density of the referred liquid           | int                                                       | `test = <liquid:lava>.density;`     |
-| temperature | This returns the temperature of the referred liquid       | int                                                       | `test = <liquid:lava>.temperature;` |
-| viscosity   | This returns the viscosity of the referred liquid         | int                                                       | `test = <liquid:lava>.viscosity;`   |
-| gaseous     | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
-| tag         | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
-| definition  | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
+| Zengetter          | What is this?                                             | Typ zwrotu                                                | Przykład                                  |
+| ------------------ | --------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------- |
+| Nazwa              | This returns the unlocalized liquid name                  | ciąg znaków                                               | `test = <liquid:lava>.name;`        |
+| nazwa wyświetlacza | This returns the localized liquid name                    | ciąg znaków                                               | `test = <liquid:lava>.displayName;` |
+| kwota              | This returns the amount of the ILiquidObject              | odcień                                                    | `test = <liquid:lava>.amount;`      |
+| luminancja         | This returns the luminosity of the referred liquid        | odcień                                                    | `test = <liquid:lava>.luminosity;`  |
+| gęstość            | This returns the density of the referred liquid           | odcień                                                    | `test = <liquid:lava>.density;`     |
+| temperatura        | This returns the temperature of the referred liquid       | odcień                                                    | `test = <liquid:lava>.temperature;` |
+| lepkość            | This returns the viscosity of the referred liquid         | odcień                                                    | `test = <liquid:lava>.viscosity;`   |
+| gazowe             | This returns whether the referred liquid is gaseous       | boolean                                                   | `test = <liquid:lava>.gaseous;`     |
+| tag                | This returns the ILiquidObject's tag                      | [IData](/Vanilla/Data/IData/)                             | `test = <liquid:lava>.tag;`         |
+| definicja          | This returns the referred liquid's definition (see below) | [ILiquid Definition](/Vanilla/Liquids/ILiquidDefinition/) | `test = <liquid:lava>.definition;`  |
 
 # IIngredient Implementaion
 
