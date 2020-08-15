@@ -1,10 +1,10 @@
-### Class
+### Classe
 
 ```zenscript
 import mods.roots.RunicShears;
 ```
 
-#### Methods
+#### Méthodes
 
 ```zenscript
 void addRecipe(
@@ -37,7 +37,7 @@ void removeRecipe(
 
 * * *
 
-### Examples
+### Exemples
 
 ```zenscript
 import mods.roots.RunicShears;
