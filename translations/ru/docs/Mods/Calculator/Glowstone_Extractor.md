@@ -1,6 +1,6 @@
 # Glowstone Extractor
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.glowstone;
 ```
@@ -16,7 +16,7 @@ import mods.calculator.glowstone;
 glowstone.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 glowstone.removeRecipe(IIngredient input);
 ```
