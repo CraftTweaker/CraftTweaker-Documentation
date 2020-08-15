@@ -1,11 +1,11 @@
-# The Concept
+# El concepto
 
-Most of the uses of Math in ZenScript can be covered via the four basic operations: addition, subtraction, multiplication, and division. ZenScript also provides access to the `pow` function, which performs the power operation. But that's it. More advanced mathematical operations cannot be performed, and would require a full reimplementation with lookup tables and wouldn't benefit from the hardware's optimizations in that regard, especially for modern CPUs.
+La mayoría de los usos de Matemáticas en ZenScript pueden ser cubiertos a través de las cuatro operaciones básicas: adición, resto, multiplicación y división. ZenScript también proporciona acceso a la función `pow` , que realiza la operación de energía. Pero eso es todo. No se pueden realizar operaciones matemáticas más avanzadas, y requeriría una reimplementación completa con tablas de búsqueda y no se beneficiaría de las optimizaciones del hardware en ese sentido, especialmente para CPUs modernas.
 
-This is where ZenScriptX Math comes in, providing a set of classes and some basic arithmetic operations that may be of general usefulness, while also benefitting in the most part from hardware optimizations, since most of those are implemented on a native level (via a couple of indirections due to the VM ZenScript runs on).
+Aquí es donde entra ZenScriptX Mat, proporcionando un conjunto de clases y algunas operaciones aritméticas básicas que pueden ser de utilidad general, mientras también se beneficia en la mayor parte de las optimizaciones de hardware, ya que la mayoría de estos son implementados en un nivel nativo (a través de un par de indirecciones debido a que ZenScript VM se ejecuta en).
 
-Every documentation section will provide the user with a list of provided functions and their behavior.
+Cada sección de documentación proporcionará al usuario una lista de funciones proporcionadas y su comportamiento.
 
-The current list of provided classes that are implemented are:
+La lista actual de las clases proporcionadas que se implementan son:
 
-- [Math](/Mods/Boson/Math/Math/) for common mathematical functions (e.g., sine, cosine, logarithm...)
+- [Matemáticas](/Mods/Boson/Math/Math/) para funciones matemáticas comunes (por ejemplo, sino, cosino, logaritmo...)
