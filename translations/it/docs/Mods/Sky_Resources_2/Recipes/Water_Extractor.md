@@ -2,11 +2,11 @@
 
 The *waterextractor* package is used for adding or removing recipes to/from the Water Extractor Insert and Extract process.
 
-## Calling
+## Chiamata
 
 You can call the *waterextractor* package using `mods.skyresources.waterextractor`
 
-## Recipe Addition
+## Aggiunta Ricetta
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.addRecipe(int waterOut, IItemStack output, IIngredient input);
@@ -16,7 +16,7 @@ mods.skyresources.waterextractor.extract.addRecipe(500, <minecraft:dirt>, <minec
 mods.skyresources.waterextractor.insert.addRecipe(<minecraft:dirt>, <minecraft:cobblestone>, 100);
 ```
 
-## Recipe Removal
+## Rimozione Ricetta
 
 ```zenscript
 //mods.skyresources.waterextractor.extract.removeRecipe(int waterOut, IItemStack output, IIngredient input);
