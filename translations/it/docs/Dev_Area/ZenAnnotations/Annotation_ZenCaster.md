@@ -1,34 +1,34 @@
 # ZenCaster
 
-A ZenCaster denotes a method that can be called using the `as` token.  
-ZenCasters can be used to convert one type into another (e.g. [Strings to IData](https://github.com/jaredlll08/CraftTweaker/blob/30793645d58adeed12dfff50f31206a63a50d8de/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/expand/ExpandString.java#L30-L33)).
+Uno ZenCaster denota un metodo che può essere chiamato usando il token `come` .  
+ZenCasters può essere utilizzato per convertire un tipo in un altro (ad es. [Stringhe in IData](https://github.com/jaredlll08/CraftTweaker/blob/30793645d58adeed12dfff50f31206a63a50d8de/CraftTweaker2-API/src/main/java/crafttweaker/zenscript/expand/ExpandString.java#L30-L33)).
 
-## Example
+## Esempio
 
 ```java
-@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenExpansion("crafttweaker.item. ItemStack")
 @ZenRegister
 public class Expansion {
     @ZenMethod
     public static void print(IItemStack stack) {
-        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
+        CraftTweakerAPI. ogInfo("STACKKKKK: " + stack. etDisplayName());
     }
 
     @ZenCaster
     public static IOreDictEntry asOreDict(IItemStack stack) {
-        return stack.getOres().get(0);
+        return stack. etOres().get(0);
     }
 }
 ```
 
-If someone now would call this, they would get an oreDictEntry:
+Se qualcuno ora chiamasse questo, otterrebbe un oreDictEntry:
 
 ```zenscript
-val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
+val oreDict = <minecraft:iron_ingot> come IOreDictEntry;
 ```
 
-## What methods can be annotated || Additional Info
+## Quali metodi possono essere annotati <unk> <unk> Ulteriori informazioni
 
-- You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
-- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
-- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
+- È possibile annotare tutti i metodi non statici (a meno che in una ZenExpansion, in quanto consistono solo di statica)
+- I metodi annotati hanno bisogno di un parametro quando in una [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), nessuno se sono in una [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
+- Non fare affidamento su ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), funzionano solo in modo affidabile in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
