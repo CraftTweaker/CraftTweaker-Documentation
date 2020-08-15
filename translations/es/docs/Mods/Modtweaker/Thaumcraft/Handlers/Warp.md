@@ -2,7 +2,7 @@
 
 This package allows you to set items' Warp.
 
-## Importing the package
+## Importando el paquete
 
 You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
 
