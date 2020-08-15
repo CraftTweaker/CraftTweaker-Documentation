@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.heat_exchanger`
 
-## Adding Recipes
+## Aggiunta Di Ricette
 ```zenscript
 mods.nuclearcraft.heat_exchanger.addRecipe([fluidInput, fluidOutput, double heatRequired, int temperatureIn, int temperatureOut]);
 ```
 
-## Removing Recipes
+## Rimozione Ricette
 ```zenscript
 mods.nuclearcraft.heat_exchanger.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.heat_exchanger.removeRecipeWithOutput([fluidOutput]);
