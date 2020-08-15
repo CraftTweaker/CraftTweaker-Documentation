@@ -1,6 +1,6 @@
-# ExplosionDetonate
+# 爆炸性吸附器
 
-The ExplosionDetonate Event is fired shortly before an explosion starts. It cannot be canceled.
+爆炸引爆事件在爆炸开始前不久就发射。 不能取消它。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -8,9 +8,9 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-ExplosionDetonate Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+ExplosionDetonate Events实现以下接口，并且能够调用他们的所有方法/getter/setter：
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [IExplossion事件](/Vanilla/Events/Events/IExplosionEvent/)
 
 
 ## ZenGetters
@@ -18,5 +18,5 @@ ExplosionDetonate Events implement the following interfaces and are able to call
 
 | ZenGetter           | ZenSetter | 类型                                             |
 | ------------------- | --------- | ---------------------------------------------- |
-| `affectedEntities`  |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
+| `受影响实体`             |           | [IEntity](/Vanilla/Entities/IEntity/)[]        |
 | `affectedPositions` |           | [IBlockPos](/Vanilla/Blocks/IBlockPosition/)[] |
