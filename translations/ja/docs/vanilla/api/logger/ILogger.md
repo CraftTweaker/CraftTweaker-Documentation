@@ -1,6 +1,6 @@
 # ILogger
 
-Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
+crafttweaker.logファイルやその他のロガー(プレイヤーロガーなど)とインターフェースするために使用される基本クラス。
 
 crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
@@ -13,58 +13,58 @@ crafttweaker.api.ILogger
 ## メソッド
 ### debug
 
-Logs a debug message.
+デバッグメッセージを記録します。
 
 ```zenscript
 logger.debug(message as String);
 logger.debug("message");
 ```
 
-| パラメータ   | タイプ  | 説明                    |
-| ------- | ---- | --------------------- |
-| message | 文字列型 | message to be logged. |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| メッセージ | 文字列型 | 記録されるメッセージ |
 
 
-### error
+### エラー
 
-Logs an error message.
+エラーメッセージをログに記録します。
 
 ```zenscript
 logger.error(message as String);
 logger.error("message");
 ```
 
-| パラメータ   | タイプ  | 説明                    |
-| ------- | ---- | --------------------- |
-| message | 文字列型 | message to be logged. |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| メッセージ | 文字列型 | 記録されるメッセージ |
 
 
 ### 情報
 
-Logs an info message.
+情報メッセージをログに記録します。
 
 ```zenscript
 logger.info(message as String);
 logger.info("message");
 ```
 
-| パラメータ   | タイプ  | 説明                    |
-| ------- | ---- | --------------------- |
-| message | 文字列型 | message to be logged. |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| メッセージ | 文字列型 | 記録されるメッセージ |
 
 
-### warning
+### 警告
 
-Logs a warning message.
+警告メッセージをログに記録します。
 
 ```zenscript
 logger.warning(message as String);
 logger.warning("message");
 ```
 
-| パラメータ   | タイプ  | 説明                    |
-| ------- | ---- | --------------------- |
-| message | 文字列型 | message to be logged. |
+| パラメータ | タイプ  | 説明         |
+| ----- | ---- | ---------- |
+| メッセージ | 文字列型 | 記録されるメッセージ |
 
 
 
