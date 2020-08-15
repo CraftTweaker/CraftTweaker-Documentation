@@ -1,46 +1,46 @@
-# DirectionAxis
+# Eje de dirección
 
-Represents a direction axis (X, Y, Z)
+Representa un eje de dirección (X, Y, Z)
 
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.util.DirectionAxis
+crafttweaker.api.util.Eje de dirección
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+DirectionAxis implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Métodos
 ### getCoordinate
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+Obtiene la coordenada de este eje basada en los valores dados, si este eje es "X", entonces devolverá el valor del parámetro "x"
 
-Returns int
+Devuelve la pista
 
 ```zenscript
 <directionaxis:x>.getCoordinate(x as int, y as int, z as int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parámetro | Tipo | Descripción               |
-| --------- | ---- | ------------------------- |
-| x         | int  | x value of the coordinate |
-| y         | int  | y value of the coordinate |
-| z         | int  | z value of the coordinate |
+| Parámetro | Tipo | Descripción              |
+| --------- | ---- | ------------------------ |
+| x         | int  | valor x de la coordenada |
+| y         | int  | valor y de la coordenada |
+| z         | int  | valor z de la coordenada |
 
 
 
 ## Propiedades
 
-| Nombre        | Tipo    | Has Getter | Has Setter |
-| ------------- | ------- | ---------- | ---------- |
-| commandString | Cadena  | verdad     | falso      |
-| horizontal    | boolean | verdad     | falso      |
-| nombre        | Cadena  | verdad     | falso      |
-| ordinal       | int     | verdad     | falso      |
-| vertical      | boolean | verdad     | falso      |
+| Nombre        | Tipo    | Tiene Obtén | Tiene Setter |
+| ------------- | ------- | ----------- | ------------ |
+| commandString | Cadena  | verdad      | falso        |
+| horizontal    | boolean | verdad      | falso        |
+| nombre        | Cadena  | verdad      | falso        |
+| ordinal       | int     | verdad      | falso        |
+| vertical      | boolean | verdad      | falso        |
 
