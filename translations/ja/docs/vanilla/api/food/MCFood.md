@@ -12,10 +12,10 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| パラメータ   | タイプ    | 説明                      |
+| ------- | ------ | ----------------------- |
+| healing | int    | No description provided |
+| 彩度      | float型 | No description provided |
 
 
 
@@ -28,10 +28,10 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
 ```
 
-| Parameter   | Type                                                                                          | Description             |
+| パラメータ       | タイプ                                                                                           | 説明                      |
 | ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float                                                                                         | No description provided |
+| probability | float型                                                                                        | No description provided |
 
 
 ### clearEffects
@@ -48,9 +48,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter | Type                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| パラメータ  | タイプ                                                                                           | 説明                      |
+| ------ | --------------------------------------------------------------------------------------------- | ----------------------- |
+| effect | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### setCanEatWhenFull
@@ -61,9 +61,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Parameter      | Type    | Description             |
-| -------------- | ------- | ----------------------- |
-| canEatWhenFull | boolean | No description provided |
+| パラメータ          | タイプ      | 説明                      |
+| -------------- | -------- | ----------------------- |
+| canEatWhenFull | boolean型 | No description provided |
 
 
 ### setFastEating
@@ -74,9 +74,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parameter  | Type    | Description             |
-| ---------- | ------- | ----------------------- |
-| fastEating | boolean | No description provided |
+| パラメータ      | タイプ      | 説明                      |
+| ---------- | -------- | ----------------------- |
+| fastEating | boolean型 | No description provided |
 
 
 ### setHealing
@@ -87,9 +87,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setHealing(healing as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| healing   | int  | No description provided |
+| パラメータ   | タイプ | 説明                      |
+| ------- | --- | ----------------------- |
+| healing | int | No description provided |
 
 
 ### setMeat
@@ -100,9 +100,9 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setMeat(meat as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| meat      | boolean | No description provided |
+| パラメータ | タイプ      | 説明                      |
+| ----- | -------- | ----------------------- |
+| meat  | boolean型 | No description provided |
 
 
 ### setSaturation
@@ -113,19 +113,19 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setSaturation(saturation as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| パラメータ | タイプ    | 説明                      |
+| ----- | ------ | ----------------------- |
+| 彩度    | float型 | No description provided |
 
 
 
 ## プロパティ
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| canEatWhenFull | boolean | true       | false      |
-| healing        | int     | true       | false      |
-| isFastEating   | boolean | true       | false      |
-| meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| 名称             | タイプ      | Has Getter | Has Setter |
+| -------------- | -------- | ---------- | ---------- |
+| canEatWhenFull | boolean型 | true       | false      |
+| healing        | int      | true       | false      |
+| isFastEating   | boolean型 | true       | false      |
+| meat           | boolean型 | true       | false      |
+| 彩度             | float型   | true       | false      |
 
