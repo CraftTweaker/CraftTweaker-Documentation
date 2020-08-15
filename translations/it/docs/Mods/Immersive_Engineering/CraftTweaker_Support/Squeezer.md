@@ -1,69 +1,69 @@
 # Squeezer
 
-The Squeezer package can be used to add/remove recipes to/from the Immersive Engineering Squeezer.
+Il pacchetto Squeezer può essere utilizzato per aggiungere/rimuovere ricette da/per lo Squeezer Immersivo Engineering.
 
-## Calling The Package
+## Chiamare Il Pacchetto
 
-You can call the Squeezer package using `mods.immersiveengineering.Squeezer`.
+Puoi chiamare il pacchetto Squeezer usando `mods.immersiveengineering.Squeezer`.
 
-## Add Recipe
+## Aggiungi Ricetta
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Fluid  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy | Integer                                             |
+| Richiesto | Tipo    | Tipo Di Dati                                         |
+| --------- | ------- | ---------------------------------------------------- |
+| Richiesto | Output  | [IItemStack](/Vanilla/Items/IItemStack/)             |
+| Richiesto | Fluido  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/)         |
+| Richiesto | Input   | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto | Energia | Intero                                               |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Squeezer.addRecipe(IItemStack output, ILiquidStack fluid, IIngredient input, int energy);
 
 mods.immersiveengineering.Squeezer.addRecipe(<minecraft:diamond>, <liquid:water>, <ore:logWood>, 2048);
 ```
 
-## Remove Fluid Recipe
+## Rimuovi Ricetta Fluido
 
-| Type   | Data Type                                    |
+| Tipo   | Tipo Di Dati                                 |
 | ------ | -------------------------------------------- |
 | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Squeezer.removeFluidRecipe(ILiquidStack fluid);
 
 mods.immersiveengineering.Squeezer.removeFluidRecipe(<liquid:water>);
 ```
 
-## Remove Item Recipe
+## Rimuovi Ricetta Articolo
 
-| Type   | Data Type                                |
+| Tipo   | Tipo Di Dati                             |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Squeezer.removeItemRecipe(IItemStack stack);
 
 mods.immersiveengineering.Squeezer.removeItemRecipe(<minecraft:diamond>);
 ```
 
-## Remove By Input
+## Rimuovi Da Input
 
-| Type   | Data Type                                |
+| Tipo   | Tipo Di Dati                             |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Squeezer.removeByInput(IItemStack stack);
 
 mods.immersiveengineering.Squeezer.removeByInput(<minecraft:log>);
