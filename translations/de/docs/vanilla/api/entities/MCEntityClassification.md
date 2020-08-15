@@ -12,11 +12,11 @@ crafttweaker.api.entity.MCEntityClassification
 MCEntityClassification implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Eigenschaften
 
 | Name              | Type    | Has Getter | Has Setter |
 | ----------------- | ------- | ---------- | ---------- |
-| commandString     | String  | true       | false      |
+| Kommandozeile     | String  | true       | false      |
 | isAnimal          | boolean | true       | false      |
 | isPeaceful        | boolean | true       | false      |
 | maxNumberOfEntity | int     | true       | false      |
