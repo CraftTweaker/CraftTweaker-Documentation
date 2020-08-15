@@ -1,11 +1,11 @@
-# Traits:
+# Caractéristiques :
 
-Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
+Traits est un nouvel ajout pour Reskillable et le rend donc maintenant capable de verrouiller les choses derrière un Trait. Les traits sont similaires aux compétences de la manière dont nous les avons déplacés vers un emplacement de ressource au lieu d'un nom pour permettre une extension plus robuste. La syntaxe de la Caractéristique est la suivante:
 
-    Example:
-    trait|ResourceLocation
+    Exemple:
+    trait|RessourceLocation
     
-    Working Example:
+    Exemple de travail :
     trait|reskillable:battle_spirit
     
 
