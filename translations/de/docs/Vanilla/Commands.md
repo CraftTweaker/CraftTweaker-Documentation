@@ -1,4 +1,4 @@
-# Commands
+# Befehle
 
 CraftTweaker adds commands that will help you with the creation of scripts, they are provided to help reduce the development time of writing scripts.
 
@@ -18,7 +18,7 @@ or
 
 ## Biomes
 
-Usage:
+Verwendung:
 
 `/crafttweaker biomes`
 
@@ -30,7 +30,7 @@ Lists all of the biomes that are in the game.
 
 ## BiomeTypes
 
-Usage:
+Verwendung:
 
 `/crafttweaker biomeTypes`
 
@@ -42,7 +42,7 @@ Lists all of the biomeTypes that are in the game.
 
 ## BlockInfo
 
-Usage:
+Verwendung:
 
 `/crafttweaker blockinfo`
 
@@ -54,7 +54,7 @@ Activates or deactivates the block reader. In block info mode, right-clicking a 
 
 ## Blocks
 
-Usage:
+Verwendung:
 
 `/crafttweaker blocks`
 
@@ -66,7 +66,7 @@ Outputs a list of all the blocks in the game to the crafttweaker.log file.
 
 ## Bugs
 
-Usage:
+Verwendung:
 
 `/crafttweaker bugs`
 
@@ -78,7 +78,7 @@ Opens your browser with the GitHub bug tracker.
 
 ## Conflict
 
-Usage:
+Verwendung:
 
 `/crafttweaker conflict`
 
@@ -91,7 +91,7 @@ Note that this only works on a CLIENT with JEI installed!
 
 ## Discord
 
-Usage:
+Verwendung:
 
 `/crafttweaker discord`
 
@@ -103,7 +103,7 @@ Opens your browser with a link to [the Discord server](https://www.discord.blame
 
 ## Docs
 
-Usage:
+Verwendung:
 
 `/crafttweaker docs`
 
@@ -115,7 +115,7 @@ Opens your browser to this docs page (same as `/ct wiki`).
 
 ## DumpZs
 
-Usage:
+Verwendung:
 
 `/crafttweaker dumpzs`
 
@@ -132,7 +132,7 @@ Note that not all of these can be used from within the scripts!
 
 ## Entities
 
-Usage:
+Verwendung:
 
 `/crafttweaker entities`
 
@@ -144,7 +144,7 @@ Outputs a list of all the entities in the game to the crafttweaker.log file.
 
 ## Give Item
 
-Usage:
+Verwendung:
 
 `/crafttweaker give <minecraft:bedrock>`
 
@@ -158,7 +158,7 @@ Note that this is a pretty simple parser and may not work for every case!
 
 ## Hand
 
-Usage:
+Verwendung:
 
 `/crafttweaker hand`
 
@@ -172,7 +172,7 @@ Also copies the name to clipboard and prints oredict entries.
 
 ## Inventory
 
-Usage:
+Verwendung:
 
 `/crafttweaker inventory`
 
@@ -184,7 +184,7 @@ Outputs a list of all the items in your inventory to the crafttweaker.log file.
 
 ## JeiCategories
 
-Usage:
+Verwendung:
 
 `/crafttweaker jeiCategories`
 
@@ -197,7 +197,7 @@ Requires JEI to be installed (surprise)!
 
 ## Json
 
-Usage:
+Verwendung:
 
 `/crafttweaker json` `/crafttweaker json escaped`
 
@@ -212,7 +212,7 @@ You can also privide the `escaped` argumetn to automatically escape the resultin
 
 ## Liquids
 
-Usage:
+Verwendung:
 
 `/crafttweaker liquids`
 
@@ -224,7 +224,7 @@ Outputs a list of all the liquids in the game to the crafttweaker.log file.
 
 ## Log
 
-Usage:
+Verwendung:
 
 `/crafttweaker log`
 
@@ -236,7 +236,7 @@ Sends a clickable link to open the crafttweaker.log.
 
 ## Mods
 
-Usage:
+Verwendung:
 
 `/crafttweaker mods`
 
@@ -246,9 +246,9 @@ Beschreibung:
 
 Outputs a list of all the mods and their versions in the game to the crafttweaker.log file and prints it in chat.
 
-## Names
+## Namen
 
-Usage:
+Verwendung:
 
 `/crafttweaker names [category]`
 
@@ -263,13 +263,13 @@ The `category` argument is optional and will extend the list with the according 
 * creativetabs
 * damageable
 * display
-* enchantability
+* verzaubern
 * foodvalue
 * maxdamage
 * maxstack
 * maxuse
 * modid
-* rarity
+* seltenheit
 * repairable
 * repaircost
 * saturationvalue
@@ -279,7 +279,7 @@ You can also see all the available parameters using the TAB-Key autocompletion f
 
 ## Nbt
 
-Usage:
+Verwendung:
 
 `/crafttweaker nbt`
 
@@ -291,7 +291,7 @@ Outputs the NBT of the block you are looking at or the item you are holding to t
 
 ## OreDict
 
-Usage:
+Verwendung:
 
 `/crafttweaker oredict <name>`
 
@@ -305,7 +305,7 @@ If a name is supplied, the names of all the items registered to the oredict will
 
 ## Potions
 
-Usage:
+Verwendung:
 
 `/crafttweaker potions`
 
@@ -317,7 +317,7 @@ Outputs a list of all the potions in the game to the crafttweaker.log file.
 
 ## RecipeNames
 
-Usage:
+Verwendung:
 
 `/crafttweaker recipeNames`  
 `/crafttweaker recipeNames [modid]`
@@ -332,7 +332,7 @@ A modid can be provided to filter results.
 
 ## Recipes
 
-Usage:
+Verwendung:
 
 `/crafttweaker recipes`
 
@@ -344,7 +344,7 @@ Outputs a list of all the crafting recipes in the game to the crafttweaker.log f
 
 ## Recipes (Hand)
 
-Usage:
+Verwendung:
 
 `/crafttweaker recipes hand`
 
@@ -356,7 +356,7 @@ Outputs a list of all the crafting recipes for the item in the player's hand in 
 
 ## Recipes (Furnace)
 
-Usage:
+Verwendung:
 
 `/crafttweaker recipes furnace`
 
@@ -366,9 +366,9 @@ Beschreibung:
 
 Outputs a list of all the furnace recipes in the game to the crafttweaker.log file.
 
-## Scripts
+## Skripte
 
-Usage:
+Verwendung:
 
 `/crafttweaker scripts`
 
@@ -381,7 +381,7 @@ Can also be executed from a command line which instead prints the absolute path 
 
 ## Seeds
 
-Usage:
+Verwendung:
 
 `/crafttweaker seeds`
 
@@ -393,7 +393,7 @@ Outputs a list of all the items in the seed registry to the crafttweaker.log fil
 
 ## Syntax
 
-Usage:
+Verwendung:
 
 `/crafttweaker syntax`
 
@@ -405,7 +405,7 @@ Reads through all your scripts and will output all errors it finds in your synta
 
 ## Wiki
 
-Usage:
+Verwendung:
 
 `/crafttweaker wiki`
 
@@ -417,7 +417,7 @@ Opens your browser to this wiki page (same as `/ct docs`).
 
 ## ZsLint
 
-Usage:
+Verwendung:
 
 `/crafttweaker zslint`
 
