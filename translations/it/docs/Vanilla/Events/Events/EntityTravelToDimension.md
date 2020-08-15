@@ -2,7 +2,7 @@
 
 The EntityTravelToDimension event is fired whenever an entity is about to travel to another dimension. If canceled, the entity is prevented from travel.
 
-## Notes
+## Note
 
 `event.dimension` contains the dimension the entity is about to travel to.
 
@@ -19,6 +19,6 @@ EntityTravelToDimension Events implement the following interfaces and are able t
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter   | Return Type |
-| ----------- | ----------- |
-| `dimension` | int         |
+| ZenGetter    | Tipo Di Reso |
+| ------------ | ------------ |
+| `dimensione` | int          |
