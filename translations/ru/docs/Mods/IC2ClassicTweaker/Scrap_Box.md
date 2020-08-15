@@ -1,12 +1,12 @@
 ## Scrap Box
 
-## Package
+## Пакет
 
 ```zenscript
 import mods.ic2.ScrapBox;
 ```
 
-### Methods
+### Методы
 
 - See [ScrapBox (From IC2 Tweaker)](/Mods/IC2Tweaker/Scrap_Box/) for info on other methods.
 - **[ItemStack](/Vanilla/Items/IItemStack/) item** The entry being removed from the scrap box drop pool. Will cause drop chances of all other tiems to be recalculated.
