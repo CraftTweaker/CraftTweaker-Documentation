@@ -1,10 +1,10 @@
-# Charcoal Pile
+# Pile Di Carbone
 
-ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
+ModTweaker consente di aggiungere o rimuovere la silvicoltura Ricette a carbone da parete
 
 ## Chiamata
 
-You can call the package using `mods.forestry.CharcoalWall`
+Puoi chiamare il pacchetto usando `mods.forestry.CharcoalWall`
 
 ## Rimozione Ricetta
 
@@ -24,14 +24,14 @@ mods.forestry.CharcoalWall.removeWallStack(<minecraft:bedrock>);
 
 ## Addizione Reipe
 
-`amount` states the amount of charcoal the wall will provide.
+`quantità` indica la quantità di carbone che la parete fornirà.
 
 ```zenscript
 //mods.forestry.CharcoalWall.addWall(IBlock block, int amount);
 mods.forestry.CharcoalWall.addWall(<minecraft:bedrock>.asBlock(), 10);
 
 
-//mods.forestry.CharcoalWall.addWallState(IBlockState state, int amount);
+//mods.forestry.CharcoalWall. ddWallState(IBlockState state, int amount);
 mods.forestry.CharcoalWall.addWallState(<blockstate:minecraft:bedrock>, 10);
 
 
