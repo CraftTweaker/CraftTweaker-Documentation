@@ -4,7 +4,7 @@
 
 `mods.actuallyadditions.MiningLens`
 
-## Addition
+## Ajouter
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.addStoneOre(IOreDictEntry ore, int weight);
