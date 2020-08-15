@@ -1,7 +1,7 @@
 # PlayerLeftClickBlock
 
-The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
-It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). 如果事件被取消，则可以提供成功、失败或通过的特定结果。 默认情况下，结果是通过的。
+播放器左键点击方块时将触发单击事件。  
+它可以被取消以防止发生任何其他事件。 如果玩家按住左键，则事件将再次开火，即使它已被取消。 取消此事件将阻止左键点击进行注册，阻止阻止方块破坏(尽管不是创造性模式)。 如果事件被取消，则可以提供成功、失败或通过的特定结果。 默认情况下，结果是通过的。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -9,7 +9,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerLeftClickBlock 事件实现了以下接口，同时也可以调用他们的所有方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [玩家交互功能](/Vanilla/Events/Events/PlayerInteract/)
