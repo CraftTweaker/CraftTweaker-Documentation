@@ -1,55 +1,55 @@
-# Cauldron
+# 炼药店
 
-## Basic Recipe
+## 基本配方
 
-* Adds a Unstoked Cauldron Recipe 
+* 添加一个未炉灶的炼药剂配方 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addUnstoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
-mods.betterwithmods.Cauldron.addUnstoked([<ore:cobblestone>],[<minecraft:stone>]);
-mods.betterwithmods.Cauldron.addUnstoked([<minecraft:dirt>],[<minecraft:grass>]);
+mods.betterwithmods.Cauldron.adde Unstoked(IIngredient[] inputes, IItemStack[] outputs;
+/examps
+mods.betterwithmods.Cauldron.addunstoked([<ore:cobblestone>],[<minecraft:stone>]);
+mods.betterwithmods.Cauldron.addunstoked(<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-* Adds a Stoked Cauldron Recipe 
+* 添加一个炼焦厂配方 
 
 ```zenscript
-mods.betterwithmods.Cauldron.addStoked(IIngredient[] inputs, IItemStack[] outputs);
-//Examples
+mods.betterwithmods..Cauldron.addStoked(IIngredient[…]输入, IItemStack[…]输出);
+//examps
 mods.betterwithmods.Cauldron.addStoked([<ore:cobblestone>],[<minecraft:stone>]);
-mods.betterwithmods.Cauldron.addStoked([<minecraft:dirt>],[<minecraft:grass>]);
+mods.betterwithmods.Cauldron.addStoked(<minecraft:dirt>],[<minecraft:grass>]);
 ```
 
-## Removal
+## 移除
 
-* Remove a Cauldron recipe based on the output ```mods.betterwithmods.Cauldron.remove(IItemStack[] outputs);```
+* 基于输出删除炼药剂配方 ```mods.betterwithmods.Cauldron.remove(IItemStack[…]输出);```
 
-* Remove all Cauldron recipes ```mods.betterwithmods.Cauldron.removeAll();```
+* 移除所有炼药剂 ```mods.betterwithmods.Cauldron.removeAll();```
 
-## Builder
+## 构建器
 
-The Cauldron has a recipe builder that allows more precise control over the recipes. All previous methods are simply short cuts to using the builder.
+炼药厂有一个配方生成器，可以对配方进行更精确的控制。 所有以前的方法都是使用构建器的简单捷径。
 
-* To create a new Cauldron builder. `mods.betterwithmods.Cauldron.builder()`
+* 创建一个新的Cauldron构建器。 `mods.betterwithmods.Cauldron.builder()`
 
-* Cauldron methods
+* 炼药法
     
-    * Sets up the inputs and outputs of the recipe  
-            buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+    * 设置配方的输入和输出  
+            buildRecipe(IIngredient[…]输入, IItemStack[…]输出)
     
-    * Sets the priority of the recipe, the lower the priority the sooner it will be crafted. Default=0.  
-            setPriority(int priority)
+    * 设定配方的优先级，优先级越早确定。 默认=0。  
+            设置优先级(优先级)
     
-    * Set the Heat requirements of the recipe. Heat is used to check if the recipe can be made in a stoked or unstoked cauldron. Unstoked heat = 1, Stoked heat = 2. You can add custom heat sources, and even custom heat levels using the [Heat Registry](/Mods/Modtweaker/BetterWithMods/HeatRegistry/).  
+    * 设置配方的热量要求。 热能用来检查配方是否可以用炉灶或未炉灶。 无炉热=1，存储热=2。 您可以使用 [热注册表](/Mods/Modtweaker/BetterWithMods/HeatRegistry/) 添加自定义的热源，甚至自定义的热量。  
             setHeat(int heat)
     
-    * Set the recipe to ignore the heat value and craft anyways  
-            setIgnoreHeat(boolean ignoreHeat)
+    * 设置配方以忽略热值和制作任何方式  
+            setIgnoreHeat(布尔值忽略热)
     
-    * Finalize the recipe and add it to the game  
+    * 完成配方并将其添加到游戏  
             build()
 
-### Example builder usage
+### 示例生成器使用情况
 
 ```zenscript
 mods.betterwithmods.Cauldron.builder()
