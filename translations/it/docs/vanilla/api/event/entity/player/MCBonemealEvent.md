@@ -1,9 +1,9 @@
 # MCBonemealEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.event.entity.player.MCBonemealEvent
 ```
@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.MCBonemealEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCBonemealEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCBonemealEvent>);
 ```
-| Parameter | Type                                                                                                                        | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCBonemealEvent](/vanilla/api/event/entity/player/MCBonemealEvent)> | No description provided |
+| Parametro | Tipo                                                                                                                        | Descrizione                 |
+| --------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCBonemealEvent](/vanilla/api/event/entity/player/MCBonemealEvent)> | Nessuna descrizione fornita |
 
 
 
-## Methods
+## Metodi
 ### getBlock
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Restituisce un [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBonemealEvent.getBlock();
@@ -65,7 +65,7 @@ myMCBonemealEvent.getStack();
 
 Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCBonemealEvent.hasResult();
@@ -77,7 +77,7 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCBonemealEvent.isCancelable();
@@ -87,7 +87,7 @@ myMCBonemealEvent.isCancelable();
 
 Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
 
-Returns boolean
+Restituisce un booleano
 
 ```zenscript
 myMCBonemealEvent.isCanceled();
@@ -99,9 +99,9 @@ myMCBonemealEvent.isCanceled();
 myMCBonemealEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parametro | Tipo    | Descrizione                 |
+| --------- | ------- | --------------------------- |
+| cancel    | boolean | Nessuna descrizione fornita |
 
 
 
