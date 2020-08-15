@@ -17,12 +17,12 @@ LivingKnockBack Events implement the following interfaces and are able to call a
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter          | ZenSetter  | Type                                  |
+| ZenGetter          | ZenSetter  | Type de texte                         |
 | ------------------ | ---------- | ------------------------------------- |
 | `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
-| `strength`         | `strength` | float                                 |
-| `originalStrength` |            | float                                 |
+| `strength`         | `strength` | flottant                              |
+| `originalStrength` |            | flottant                              |
 | `ratioX`           | `ratioX`   | double                                |
 | `ratioZ`           | `ratioZ`   | double                                |
 | `originalRatioX`   |            | double                                |
