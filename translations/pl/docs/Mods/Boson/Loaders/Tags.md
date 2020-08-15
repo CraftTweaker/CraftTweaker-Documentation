@@ -1,13 +1,13 @@
-# `tags` Loader
+# `tagi` Ładowanie
 
-The `tags` loader is a special Loader that fires at a later stage in the Minecraft loading process and allows manipulation of [Tags](/Mods/Boson/Tags/Concept/). The Tag bracket handler has a different meaning when used in a file loaded by this loader: refer to the Tags documentation for more information.
+loader tagów `` jest specjalnym ładowarką, który wystrzeliwuje na późniejszym etapie procesu ładowania Minecraft i umożliwia manipulację [tagami](/Mods/Boson/Tags/Concept/). Obsługa nawiasów tagów ma inne znaczenie gdy jest używana w pliku załadowanym przez tego ładującego: zapoznaj się z dokumentacją tagów, aby uzyskać więcej informacji.
 
-## Using this loader
-This loader can be enabled via the [`#loader` preprocessor directive](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) by specifying its name next to the declaration, as in the following example:
+## Używanie tego ładowarki
+Ten loader może być włączony za pomocą [`#loader` dyrektywy](/AdvancedFunctions/Preprocessors/LoaderPreprocessor/) , określając jego nazwę obok deklaracji, jak w poniższym przykładzie:
 
 ```zenscript
-#loader tags
+#tagi loadera
 ```
 
-## Reason for this loader
-Refer to the documentation for the [tag bracket handler](/Mods/Boson/Tags/BracketHandler/) and the page related to the [actual concept](/Mods/Boson/Tags/Concept/) for more information.
+## Powód dla tego ładowarki
+Odwiedź dokumentację dla [obsługi nawiasów tagów](/Mods/Boson/Tags/BracketHandler/) i strony związanej z [faktyczną koncepcją](/Mods/Boson/Tags/Concept/) , aby uzyskać więcej informacji.
