@@ -8,24 +8,24 @@ Various values from the arrow entity are available through zengetters, and can b
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
+## 扩展 IEntityEvent
 ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters 和 ZenSettters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter      | ZenSetter           | Type                                  |
+| ZenGetter      | ZenSetter           | 类型                                    |
 | -------------- | ------------------- | ------------------------------------- |
 | `arrow`        |                     | [IEntity](/Vanilla/Entities/IEntity/) |
 | `shooter`      |                     | [IEntity](/Vanilla/Entities/IEntity/) |
-| `damage`       | `damage`            | double                                |
+| `伤害`           | `伤害`                | 双精度                                   |
 |                | `knockbackStrength` | int (setter only, no getter)          |
 | `isCritical`   | `isCritical`        | boolean                               |
-| `pickupStatus` |                     | String                                |
+| `pickupStatus` |                     | 字符串[string]                           |
 
 ## Additional methods
 
