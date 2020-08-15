@@ -27,7 +27,7 @@ furnace.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>
 | Parameter | Type                                                   | Beschreibung                    |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
 ### addRecipe
@@ -42,18 +42,18 @@ furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 | Parameter | Type                                                                | Beschreibung                    |
 | --------- | ------------------------------------------------------------------- | ------------------------------- |
 | name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
 | input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
 | xp        | float                                                               | how much xp the player gets     |
 | cookTime  | int                                                                 | how long it takes to cook       |
 
 
-### removeAll
+### alle entfernen
 
 Remove all recipes in this registry
 
 ```zenscript
-furnace.removeAll();
+oface.removeAll();
 ```
 
 ### removeByModid
@@ -65,9 +65,9 @@ furnace.removeByModid(modid as String);
 furnace.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
+| Parameter | Type   | Beschreibung                   |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modo      | String | modid of the recipes to remove |
 
 
 ### removeByName
@@ -109,7 +109,7 @@ furnace.removeRecipe(<item:minecraft:glass>);
 
 | Parameter | Type                                                              | Beschreibung         |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
@@ -122,7 +122,7 @@ furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 
 | Parameter | Type                                                                | Beschreibung                         |
 | --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
 | input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
 
 
