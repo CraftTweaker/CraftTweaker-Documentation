@@ -1,16 +1,16 @@
 # Millstone
 
-## Package
+## Paquet
 `import mods.stone_age.MillstoneManager;`
 
-## Methods
+## Méthodes
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Ingrédient](/Vanilla/Variable_Types/IIngredient/) entrée**
 - **int activateCount** Activate millstone count
 - **String group** Recipe group
 
-## Addition
+## Ajouter
 
 ```zenscript
 <recipetype:stone_age:millstone>.addRecipe(String name, IItemStack output, IIngredient input, int activateCount, @OptionalString String group)
