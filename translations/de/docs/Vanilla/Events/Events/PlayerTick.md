@@ -1,16 +1,16 @@
-# PlayerTick
+# Spieler-Tick
 
-The PlayerTick Event is fired each tick for each player.
+Das PlayerTick Event wird für jeden Spieler abgefeuert.
 
 ## Event-Klasse
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerTickEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. layerTickEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
 
-PlayerTick Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerTick Events implementiert die folgenden Schnittstellen und kann auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
