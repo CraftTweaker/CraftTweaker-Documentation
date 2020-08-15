@@ -1,8 +1,8 @@
-# Enchantment Bracket Handler
+# Gestionnaire de pont d'enchantement
 
-The Enchantment Bracket Handler gives you access to the Enchantment definitions in the game.
+Le Gestionnaire d'enchantement vous donne accès aux définitions d'enchantement du jeu.
 
-They are referenced in the Enchantment handler this way:
+Ils sont référencés dans le gestionnaire d'enchantement de cette façon :
 
 ```zenscript
 <enchantment:modid:name>
@@ -10,4 +10,4 @@ They are referenced in the Enchantment handler this way:
 <enchantment:minecraft:protection>
 ```
 
-If the Enchantment is found, this will return an IEnchantmentDefinition Object. Please refer to the [respective Wiki entry](/Vanilla/Enchantments/IEnchantmentDefinition/) for further information on what you can do with these.
+Si l'enchantement est trouvé, cela retournera un objet IEnchantmentDefinition. Veuillez vous référer à la [entrée Wiki respective](/Vanilla/Enchantments/IEnchantmentDefinition/) pour plus d'informations sur ce que vous pouvez faire avec celles-ci.
