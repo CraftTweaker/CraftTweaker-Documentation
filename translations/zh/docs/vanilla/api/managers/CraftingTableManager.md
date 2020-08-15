@@ -30,7 +30,7 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### addShaped
+### 添加了
 
 Adds a shaped recipe to the crafting table
 
@@ -40,12 +40,12 @@ craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:
 craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Parameter      | 类型                                                                           | 说明                                                                                                                 | IsOptional | Default Value |
-| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
-| recipeName     | String                                                                       | name of the recipe to add.                                                                                         | false      | null          |
-| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false      | null          |
-| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false      | null          |
-| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true       | null          |
+| 参数             | 类型                                                                           | 说明                                                                                                                 | 可选的   | 默认值 |
+| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----- | --- |
+| recipeName     | 字符串[string]                                                                  | name of the recipe to add.                                                                                         | false | 空的  |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false | 空的  |
+| 成分：            | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false | 空的  |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true  | 空的  |
 
 
 ### addShapedMirrored
@@ -58,12 +58,12 @@ craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:mi
 craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Parameter      | Type                                                                         | Description                                                                                                        | IsOptional | Default Value |
-| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------- | ------------- |
-| recipeName     | String                                                                       | name of the recipe to add.                                                                                         | false      | null          |
-| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false      | null          |
-| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false      | null          |
-| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true       | null          |
+| 参数             | 类型                                                                           | 描述                                                                                                                 | 可选的   | 默认值 |
+| -------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----- | --- |
+| recipeName     | 字符串[string]                                                                  | name of the recipe to add.                                                                                         | false | 空的  |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)            | output IItemStack                                                                                                  | false | 空的  |
+| 成分：            | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[][]      | array of an array of IIngredient for inputs                                                                        | false | 空的  |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix for more advanced conditions | true  | 空的  |
 
 
 ### addShapeless
@@ -76,15 +76,15 @@ craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraf
 craftingTable.addShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
-| Parameter      | Type                                                                        | Description                                                                                                       | IsOptional | Default Value |
-| -------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
-| recipeName     | String                                                                      | name of the recipe to add.                                                                                        | false      | null          |
-| output         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                                 | false      | null          |
-| ingredients    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[]       | array of IIngredient for inputs                                                                                   | false      | null          |
-| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray for more advanced conditions | true       | null          |
+| 参数             | 类型                                                                          | 描述                                                                                                                | 可选的   | 默认值 |
+| -------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----- | --- |
+| recipeName     | 字符串[string]                                                                 | name of the recipe to add.                                                                                        | false | 空的  |
+| output（输出）     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                                 | false | 空的  |
+| 成分：            | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)[]       | array of IIngredient for inputs                                                                                   | false | 空的  |
+| recipeFunction | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | optional com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray for more advanced conditions | true  | 空的  |
 
 
-### removeAll
+### 全部移除
 
 Remove all recipes in this registry
 
@@ -101,9 +101,9 @@ craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| 参数  | 类型          | 描述                             |
+| --- | ----------- | ------------------------------ |
+| 莫多德 | 字符串[string] | modid of the recipes to remove |
 
 
 ### removeByName
@@ -115,9 +115,9 @@ craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| 参数 | 类型          | 描述                                |
+| -- | ----------- | --------------------------------- |
+| 名称 | 字符串[string] | registry name of recipe to remove |
 
 
 ### removeByRegex
@@ -129,12 +129,12 @@ craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| 参数    | 类型          | 描述                     |
+| ----- | ----------- | ---------------------- |
+| regex | 字符串[string] | regex to match against |
 
 
-### removeRecipe
+### 删除合成表
 
 Remove a recipe based on it's output.
 
@@ -143,9 +143,9 @@ craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| 参数         | 类型                                                                | 描述                   |
+| ---------- | ----------------------------------------------------------------- | -------------------- |
+| output（输出） | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
