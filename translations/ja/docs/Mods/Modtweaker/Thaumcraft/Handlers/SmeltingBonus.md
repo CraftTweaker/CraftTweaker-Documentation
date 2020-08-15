@@ -1,28 +1,28 @@
-# Smelting bonus
+# 製錬ボーナス
 
-This package allows you to add and remove items to/from the Smelting bonus list.  
-The Smelting Bonus list is queried whenever an infernal furnace cooks an item.
+このパッケージでは、融解ボーナスリストとの間でアイテムを追加および削除することができます。  
+溶解ボーナスリストは、火炎炉がアイテムを調理するたびに照会されます。
 
 ## パッケージのインポート
 
-You can [import](/AdvancedFunctions/Import/) the package and its methods to facilitate the retrival of the methods.
+[パッケージとそのメソッドを](/AdvancedFunctions/Import/) インポートして、メソッドの再取得を促進できます。
 
 ```zenscript
 import mods.thaumcraft.SmeltingBonus;
 ```
 
-## Adding items
+## アイテムを追加中
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+注意: 入力は IItemStack または IOreDictEntry のいずれかである必要があります。
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.addSmeltingBonus(IIngredient input, WeightedItemStack stack)
 mods.thaumcraft.SmeltingBonus.addSmeltingBonus(<minecraft:cobblestone>, <minecraft:button> % 20);
 ```
 
-## Removing items
+## 項目を削除中
 
-Notice: Input needs to be either an IItemStack or an IOreDictEntry
+注意: 入力は IItemStack または IOreDictEntry のいずれかである必要があります。
 
 ```zenscript
 //mods.thaumcraft.SmeltingBonus.removeSmeltingBonus(IIngredient input, IItemStack stack);
