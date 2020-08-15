@@ -1,15 +1,15 @@
-# Anvil
+# Kowadło
 
-The Anvil is a simple 4x4 Crafting Table with the same options.
+Kowadło jest prostym stołem rzemieślniczym 4x4 z tymi samymi opcjami.
 
-## Shaped
+## Kształtowane
 
-### Addition
+### Dodanie
 
 ```zenscript
-mods.betterwithmods.Anvil.addShaped(IItemStack output, IIngredient[][] inputs);
+mods.betterwithmods.Anvil.addShaped(wyjście IItemStack, IIngredient[][] wejścia);
 
-mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. ddShaped(<minecraft:dirt>, [
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>],
@@ -17,10 +17,10 @@ mods.betterwithmods.Anvil.addShaped(<minecraft:dirt>, [
 ]);
 ```
 
-### Removal
+### Usuwanie
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShaped(IItemStack output, @Optional IIngredient[][] inputs);
+mods.betterwithmods.Anvil.removeShaped(wyjście IItemStack, @Optional IIngredient[][] inputs);
 
 mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>);
 
@@ -28,34 +28,34 @@ mods.betterwithmods.Anvil.removeShaped(<minecraft:dirt>,[[<minecraft:stone>]]);
 
 ```
 
-## Shapeless
+## Bezkształtne
 
-### Addition
+### Dodanie
 
 ```zenscript
-mods.betterwithmods.Anvil.addShapeless(IItemStack output, IIngredient[] inputs);
+mods.betterwithmods.Anvil.addShapeless(wyjście IItemStack, IIngredient[] wejścia);
 
-mods.betterwithmods.Anvil.addShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. ddShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
-<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
-<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
+<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
+<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
 ```
 
-### Removal
+### Usuwanie
 
 ```zenscript
-mods.betterwithmods.Anvil.removeShapeless(IItemStack output, @Optional IIngredient[] inputs);
+mods.betterwithmods.Anvil.removeShapeless(wyjście IItemStack, @Optional IIngredient[] inputs);
 
 mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>);
 
-mods.betterwithmods.Anvil.removeShapeless(<minecraft:dirt>, [
+mods.betterwithmods.Anvil. emoveShapeless(<minecraft:dirt>, [
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
-<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
-<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>,
+<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
+<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>
 ]);
 
-mods.betterwithmods.Anvil.removeAll();
+modów. etterwithmods.Anvil.removeAll();
 ```
