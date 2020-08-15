@@ -1,6 +1,6 @@
 # Centrifuga
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.centrifuge`
 
 ## Aggiunta Di Ricette
