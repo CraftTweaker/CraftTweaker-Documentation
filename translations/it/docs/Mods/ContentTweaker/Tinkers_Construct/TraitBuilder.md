@@ -1,40 +1,40 @@
-# Custom Traits
+# Tratti Personalizzati
 
-Using this package you can create trait that you can then put on your tools!
+Utilizzando questo pacchetto è possibile creare tratto che si può quindi mettere sui vostri strumenti!
 
-## Importing the class
+## Importare la classe
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare la classe se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.tconstruct.TraitBuilder;`
 
-## Creating a trait
+## Creare un tratto
 
-First and foremost, you will need to create a trait builder.  
-This can be done using the static function:
+Prima di tutto, dovrai creare un costruttore di tratti.  
+Questo può essere fatto usando la funzione statica:
 
 ```zenscript
-//create(String identifier, int color, @Optional int maxLevel, @Optional int countPerLevel)
+//create(Identificatore string, int color, @Optional int maxLevel, @Optional int countPerLevel)
 val myTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test", 0xffaadd, 100, 20);
 ```
 
-The `identifier` has to be unique!  
-For the `color`, it is suggested that you use the hexadecimal notation as shown above.  
-`maxLevel` is the maximum level the trait can become, and will default to 0.  
-`countPerLevel` is how many sublevels the trait can have (like Redstone which has 50).
+L'identificatore `` deve essere unico!  
+Per il `colore`, si suggerisce di utilizzare la notazione esadecimale come mostrato sopra.  
+`maxLevel` è il livello massimo che il tratto può diventare, e sarà predefinito a 0.  
+`countPerLevel` è il numero di sottolivelli che il tratto può avere (come la Redstone che ha 50).
 
-After you've finished all modifications below, you will need to register your trait.  
-This can be done using the `register` method, which will return a [Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) of the new trait.
+Dopo aver completato tutte le modifiche qui sotto, dovrai registrare il tuo carattere.  
+Questo può essere fatto utilizzando il metodo `registro` , che restituirà una [Rappresentanza](/Mods/ContentTweaker/Tinkers_Construct/Trait/) del nuovo tratto.
 
 ```zenscript
 myTrait.register();
 ```
 
-After registering, you can still modify the builder, the trait itself can no longer be modified.  
-That way you can create multiple similar traits easily.
+Dopo la registrazione, è ancora possibile modificare il costruttore, il tratto stesso non può più essere modificato.  
+In questo modo puoi creare più tratti simili facilmente.
 
-## Modifier Items
+## Elementi Modificatori
 
-If you combine the given ingredient together with a tool in a tinker's tool forge, you can apply the trait as modifier.
+Se si combina l'ingrediente dato con uno strumento nella forgiatura di utensili di un tinker, è possibile applicare il tratto come modificatore.
 
 ```zenscript
 //myTrait.addItem(IIngredient item, @Optional(1) int amountNeeded, @Optional(1) int amountMatched));
@@ -45,33 +45,33 @@ myTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 myTrait.removeItem(<item:minecraft:iron_pickaxe>);
 ```
 
-- `item` is the item that is matched against. You can use [Item Conditions](/Vanilla/Items/Item_Conditions/) but no Transformers. 
-- `amountNeeded` is the amount of items that is matched against. You can split them over all the slots the toolforge provides, which also allows you to go above 64. In the example above, you need 4 iron blocks per addition. Defaults to 1.
-- `amountMatched` is the amount of trait points added per `amountNeeded`. In the example above four iron blocks give two trait points. Defaults to 1.
-- If you use the `remove function`, it will remove all trait ingredients that match for the item.
+- `elemento` è l'elemento con cui è abbinato. È possibile utilizzare [condizioni articolo](/Vanilla/Items/Item_Conditions/) ma nessun trasformatore. 
+- `amountNeeded` is the amount of items that is matched in. È possibile dividerli su tutti gli slot forniti dalla toolforge, che consente anche di andare al di sopra di 64. Nell'esempio di cui sopra, avete bisogno di 4 blocchi di ferro per aggiunta. Predefiniti a 1.
+- `amountMatched` is the amount of trait points added per `amountNeeded`. Nell'esempio sopra quattro blocchi di ferro danno due punti di tratto. Predefiniti a 1.
+- Se si utilizza la funzione `remove`, rimuoverà tutti gli ingredienti tratti che corrispondono per l'articolo.
 
-## Properties
+## Proprietà
 
-You can set and get these properties using the names given:
+È possibile impostare e ottenere queste proprietà utilizzando i nomi indicati:
 
-| Name                 | Type   |
-| -------------------- | ------ |
-| color                | int    |
-| countPerLevel        | int    |
-| hidden               | bool   |
-| identifier           | string |
-| localizedDescription | string |
-| localizedName        | string |
-| maxLevel             | int    |
+| Nome                 | Tipo    |
+| -------------------- | ------- |
+| colore               | int     |
+| countPerLevel        | int     |
+| hidden               | bool    |
+| identifier           | stringa |
+| localizedDescription | stringa |
+| localizedName        | stringa |
+| maxLevel             | int     |
 
-## Calculated Properties
+## Proprietà Calcolate
 
-Some properties will need to be calculated.  
-You can set the given property functions:
+Alcune proprietà dovranno essere calcolate.  
+È possibile impostare le funzioni di proprietà specificate:
 
 ### CanApplyTogether
 
-Check if a trait can be added to a tool that already has another trait or [enchantment](/Vanilla/Enchantments/IEnchantmentDefinition/).
+Verifica se un tratto può essere aggiunto a uno strumento che ha già un altro tratto o [incantesimo](/Vanilla/Enchantments/IEnchantmentDefinition/).
 
 ```zenscript
 myTrait.canApplyTogetherTrait = function(TraitRepresentation thisTrait, String otherTrait){....};
@@ -80,23 +80,23 @@ myTrait.canApplyTogetherEnchantment = function(TraitRepresentation thisTrait, IE
 
 ### Extra info
 
-The returned String[] will be displayed as extra information in the tool station.
+La Stringa restituita[] verrà visualizzata come informazioni aggiuntive nella stazione degli strumenti.
 
 ```zenscript
 myTrait.extraInfo = function(TraitRepresentation thisTrait, IItemStack item, IData tag){....};
 ```
 
-## Adding Functionality
+## Aggiunta Di Funzionalità
 
-Now that you have created a trait you need to make it modify something, don't you?  
-That's what the trait event handlers are for:  
-They are called whenever a user does something with the tool containing the trait.
+Ora che hai creato un tratto devi farlo modificare qualcosa, vero?  
+Questo è ciò che i gestori degli eventi sono per:  
+Sono chiamati ogni volta che un utente fa qualcosa con lo strumento che contiene il carattere.
 
-Below you will see all possible handlers, together with information on what they return and how to write the function for them. Remember that you will have to replace `myTrait` with your own variable name.  
-Also, you only have to use the handlers that you need, you don't need empty handlers only so that you have filled everything.
+Qui sotto vedrete tutti i possibili gestori, insieme alle informazioni su ciò che ritornano e come scrivere la funzione per loro. Ricorda che dovrai sostituire `myTrait` con il tuo nome di variabile.  
+Inoltre, devi solo utilizzare i gestori di cui hai bisogno, non hai bisogno di gestori vuoti solo in modo che hai riempito tutto.
 
 <details>
-    <summary>All Handlers in a nutshell</summary>
+    <summary>Tutti i manipolatori in poche parole</summary>
     <ul>
         <li><a href="#onupdate">onUpdate</a></li>
         <li><a href="#getminingspeed">getMiningSpeed</a></li>
@@ -104,7 +104,7 @@ Also, you only have to use the handlers that you need, you don't need empty hand
         <li><a href="#afterblockbreak">afterBlockBreak</a></li>
         <li><a href="#onblockharvestdrops">onBlockHarvestDrops</a></li>
         <li><a href="#calccrit">calcCrit</a></li>
-        <li><a href="#calcdamage">calcDamage</a></li>
+        <li><a href="#calcdamage">calcDanno</a></li>
         <li><a href="#onhit">onHit</a></li>
         <li><a href="#calcknockback">calcKnockBack</a></li>
         <li><a href="#afterhit">afterHit</a></li>
@@ -118,19 +118,19 @@ Also, you only have to use the handlers that you need, you don't need empty hand
 
 ### onUpdate
 
-Called each tick by the tool is loaded (that means in the player's inventory).  
-Parameters:
+Chiamato ogni tick dallo strumento viene caricato (questo significa nell'inventario del giocatore).  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IEntity](/Vanilla/Entities/IEntity/) representing the `owner`
-- An int representing the `itemSlot`
-- A boolean that describes if the tool currently `isSelected`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [IWorld](/Vanilla/World/IWorld/) che rappresenta il `mondo`
+- Un [IEntity](/Vanilla/Entities/IEntity/) che rappresenta il `proprietario`
+- Un int che rappresenta il `itemSlot`
+- Un booleano che descrive se lo strumento attualmente `èSelezionato`
 
-**Returns nothing.**
+**Non ritorna nulla.**
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelected) {
@@ -140,17 +140,17 @@ myTrait.getMiningSpeed = function(trait, tool, world, owner, itemSlot, isSelecte
 
 ### getMiningSpeed
 
-Called when a block is mined.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+Chiamato quando viene estratto un blocco.  
+Fai attenzione perché questo evento viene catturato anche dai gestori di vaniglia blockBreak.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [PlayerBreakSpeedEvent](/Vanilla/Events/Events/PlayerBreakSpeed/)
 
-**Returns nothing.**
+**Non ritorna nulla.**
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.getMiningSpeed = function(trait, tool, event) {
@@ -160,17 +160,17 @@ myTrait.getMiningSpeed = function(trait, tool, event) {
 
 ### beforeBlockBreak
 
-Called just before a block is broken.  
-Be careful as this event is also be caught by vanilla blockBreak handlers.  
-Parameters:
+Chiamato poco prima che un blocco sia rotto.  
+Fai attenzione perché questo evento è anche catturato dai gestori di vaniglia blockBreak.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [BlockBreakEvent](/Vanilla/Events/Events/BlockBreak/)
 
-**Returns nothing.**
+**Non ritorna nulla.**
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.beforeBlockBreak = function(trait, tool, event) {
@@ -180,19 +180,19 @@ myTrait.beforeBlockBreak = function(trait, tool, event) {
 
 ### afterBlockBreak
 
-Called after the block has been destroyed.  
-Parameters:
+Chiamato dopo che il blocco è stato distrutto.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IWorld](/Vanilla/World/IWorld/) representing the `world`
-- An [IBlockState](/Vanilla/Blocks/IBlockState/) representing the broken `block`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `miner`
-- A bool representing if the mining `wasEffective`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [IWorld](/Vanilla/World/IWorld/) che rappresenta il `mondo`
+- Un [IBlockState](/Vanilla/Blocks/IBlockState/) che rappresenta il blocco `rotto`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `minatore`
+- Un bool che rappresenta se l'estrazione `era Efficace`
 
-**Returns nothing.**
+**Non ritorna nulla.**
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEffective) {
@@ -202,18 +202,18 @@ myTrait.afterBlockBreak = function(trait, tool, world, blockstate, miner, wasEff
 
 ### onBlockHarvestDrops
 
-Called whenever a block has been broken.  
-Be careful as this event is also called by vanilla onBlockHarvestBreak handlers.  
-Unlike the vanilla handler however, this handler will only be executed when a player broke the block.  
-Parameters:
+Chiamato ogni volta che un blocco è stato rotto.  
+Fai attenzione perché questo evento è anche chiamato da vaniglia onBlockHarvestBreak handlers.  
+A differenza del gestore di vaniglia, questo gestore verrà eseguito solo quando un giocatore ha rotto il blocco.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- A [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [BlockHarvestDropsEvent](/Vanilla/Events/Events/BlockHarvestDrops/)
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.onBlockHarvestDrops = function(trait, tool, event) {
@@ -223,18 +223,18 @@ myTrait.onBlockHarvestDrops = function(trait, tool, event) {
 
 ### calcCrit
 
-Called before the damage done to the entity is calculated to determine whether it will be a crit or not.  
-Returning `false` will not stop a hit that is already a crit from being so.  
-Parameters:
+Chiamato prima che il danno fatto all'entità sia calcolato per determinare se sarà un crit o meno.  
+Restituire `false` non fermerà un colpo che è già un crit dall'essere così.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `obiettivo`
 
-**Returns a bool** that is `true` if the hit should crit, false whenever else.
+**Restituisce un brano** che è `vero` se il colpo dovrebbe criticare falsi ogni volta.
 
-Created using:
+Creato utilizzando:
 
 ```zenscript
 myTrait.calcCrit = function(trait, tool, attacker, target) {
@@ -243,23 +243,23 @@ myTrait.calcCrit = function(trait, tool, attacker, target) {
 };
 ```
 
-### calcDamage
+### calcDanno
 
-Called when an entity is hit, but still before the damage is dealt and before the crit damage is added.  
-The crit damage will be calculated off the result of this.  
-Parameters:
+Chiamato quando un'entità viene colpita, ma ancora prima che il danno venga inflitto e prima che venga aggiunto il danno critico.  
+Il danno crit verrà calcolato dal risultato di questo.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `originalDamage` (unmodified tool damage)
-- A float representing the tool's `newDamage` (the damage the tool will do up until this point, can be originalDamage, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `obiettivo`
+- Un galleggiante che rappresenta il `originalDamage` dello strumento (danni non modificati strumento)
+- Un galleggiante che rappresenta il `nuovo danno` dello strumento (il danno che lo strumento farà fino a questo punto, può essere originaleDanno, o già essere modificato da altri tratti).
+- Un booleano che rappresenta se il colpo `isCritical`
 
-**Returns a float** representing the new damage. Otherwise return `newDamage`
+**Restituisce un galleggiante** che rappresenta il nuovo danno. Altrimenti restituisce `nuovo danno`
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
@@ -270,20 +270,20 @@ myTrait.calcDamage = function(trait, tool, attacker, target, originalDamage, new
 
 ### onHit
 
-Called when an entity is hit, just before the damage is dealt.  
-All damage calculation has already been done at this point.  
-Parameters:
+Chiamato quando un'entità viene colpita, poco prima che il danno venga inflitto.  
+Tutti i calcoli dei danni sono già stati effettuati a questo punto.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (includung critdamage)
-- A boolean that represents if the hit `isCritical`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `obiettivo`
+- Un galleggiante che rappresenta il `danno` dello strumento (critico incluso)
+- Un booleano che rappresenta se il colpo `isCritical`
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
@@ -293,21 +293,21 @@ myTrait.onHit = function(trait, tool, attacker, target, damage, isCritical) {
 
 ### calcKnockBack
 
-Called after an entity is hit to modify the applied knockback.  
-Parameters:
+Chiamato dopo che un'entità è colpita per modificare il knockback applicato.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `damage` (including crit)
-- A float representing the tool's `originalKnockback` (unmodified tool knockback)
-- A float representing the tool's `newKnockback` (the knockBack the tool will do up until this point, can be originalKnockback, or already be modified by other traits).
-- A boolean that represents if the hit `isCritical`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `obiettivo`
+- Un galleggiante che rappresenta il `danno` (incluso crit) dello strumento
+- Un galleggiante che rappresenta l'originale `dello strumentoKnockback` (knockback dello strumento non modificato)
+- Un galleggiante che rappresenta il `newKnockback dello strumento` (il knockBack lo strumento farà fino a questo punto, può essere originalKnockback, o già essere modificato da altri tratti).
+- Un booleano che rappresenta se il colpo `isCritical`
 
-**Returns a float** representing the new knockback. Otherwise return `newKnockback`
+**Restituisce un float** che rappresenta il nuovo knockback. Altrimenti restituisci `newKnockback`
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKnockBack, newKnockBack, isCritical) {
@@ -318,20 +318,20 @@ myTrait.calcDamage = function(trait, tool, attacker, target, damage, originalKno
 
 ### afterHit
 
-Called after an entity is hit and after the damage is dealt.  
-Parameters:
+Chiamato dopo che un'entità è stata colpita e dopo che il danno è stato inflitto.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `target`
-- A float representing the tool's `dealtDamage`
-- A bool representing if the hit `wasCritical`
-- A bool representing if the entity `wasHit`. Can be false if the entity was invulnerable or had some other ways of exacing the damage.
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `obiettivo`
+- Un galleggiante che rappresenta il `dealtDamage dello strumento`
+- Un branco che rappresenta se il colpo `era Critico`
+- Un branco che rappresenta se l'entità `wasHit`. Può essere falso se l'entità era invulnerabile o aveva altri modi di espellere il danno.
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using
+Creato usando
 
 ```zenscript
 mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCritical, wasHit) {
@@ -341,18 +341,18 @@ mytrait.afterHit = function(trait, tool, attacker, target, damageDealt, wasCriti
 
 ### onBlock
 
-Called when the player holding the tool blocks the attack.  
-Otherwise `onHit` will be called.  
-Parameters:
+Chiamato quando il giocatore che tiene premuto lo strumento blocca l'attacco.  
+Altrimenti `onHit` verrà chiamato.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [IPlayer](/Vanilla/Players/IPlayer/) che rappresenta il `giocatore`
+- Un [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.onBlock = function(trait, tool, player, event) {
@@ -362,19 +362,19 @@ myTrait.onBlock = function(trait, tool, player, event) {
 
 ### onPlayerHurt
 
-Called when the player holding the tool DID NOT BLOCK the attack.  
-Otherwise `onBlock` will be called.  
-Parameters:
+Chiamato quando il giocatore che tiene premuto lo strumento DID NON BLOCK l'attacco.  
+Altrimenti `onBlock` verrà chiamato.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An [IPlayer](/Vanilla/Players/IPlayer/) representing the `player`
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the `attacker`
-- An [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un [IPlayer](/Vanilla/Players/IPlayer/) che rappresenta il `giocatore`
+- Una [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta il `attaccante`
+- Un [EntityLivingHurtEvent](/Vanilla/Events/Events/EntityLivingHurt/)
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.onPlayerHurt = function(trait, tool, player, event) {
@@ -384,18 +384,18 @@ myTrait.onPlayerHurt = function(trait, tool, player, event) {
 
 ### onToolDamage
 
-Called before the tools durability is getting decreased.  
-Parameters:
+Chiamato prima che la durata degli strumenti venga diminuita.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be reduced.
-- An int representing the `newAmount` of durability to be reduced, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un int che rappresenta il `importo non modificato` della durata da ridurre.
+- Un suggerimento che rappresenta il `nuovoImporto` di durata da ridurre, che può già essere modificato da altre caratteristiche.
+- Un [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta lo strumento corrente `titolare`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**Restituisce un int** che rappresenta il nuovo importo. Altrimenti restituisce `nuovoImporto`
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder) {
@@ -406,18 +406,18 @@ myTrait.onToolDamage = function(trait, tool, unmodifiedAmount, newAmount, holder
 
 ### calcToolHeal
 
-Called before the tools durability is getting increased.  
-Parameters:
+Chiamato prima che la durata degli strumenti venga aumentata.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the used `tool`
-- An int representing the `unmodifiedAmount` of durability to be increased.
-- An int representing the `newAmount` of durability to be increased, which can already be modified by other traits.
-- An [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) representing the current tool `holder`
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `utilizzato`
+- Un int che rappresenta il `importo non modificato` della durata da aumentare.
+- Un int che rappresenta il `nuovoImporto` di durata da aumentare, che può già essere modificato da altre caratteristiche.
+- Un [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) che rappresenta lo strumento corrente `titolare`
 
-**Returns an int** representing the new amount. Otherwise return `newAmount`
+**Restituisce un int** che rappresenta il nuovo importo. Altrimenti restituisce `nuovoImporto`
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder) {
@@ -428,18 +428,18 @@ myTrait.calcToolHeal = function(trait, tool, unmodifiedAmount, newAmount, holder
 
 ### onToolRepair
 
-Called before the tool is getting repaired with tis repair material.  
-Not to be confused with `onToolHeal` which is called afterwards.  
-Will be called multiple times if multiple items are used at once.  
-Parameters:
+Chiamato prima che lo strumento viene riparato con materiale di riparazione di tis.  
+Da non confondere con `onToolHeal` che viene chiamato dopo.  
+Verrà chiamato più volte se vengono utilizzati più elementi contemporaneamente.  
+Parametri:
 
-- A [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) representing the currently used `trait`.
-- An [IItemStack](/Vanilla/Items/IItemStack/) representing the `tool` to be repaired
-- An int representing the `amount` of durability to be increased.
+- Un [Trait Representation](/Mods/ContentTweaker/Tinkers_Construct/Trait/) che rappresenta il tratto `attualmente utilizzato`.
+- Un [IItemStack](/Vanilla/Items/IItemStack/) che rappresenta lo strumento `` da riparare
+- Un suggerimento che rappresenta `la quantità` di durata da aumentare.
 
-**Returns nothing**
+**Restituisce nulla**
 
-Created using
+Creato usando
 
 ```zenscript
 myTrait.onToolRepair = function(trait, tool, amount) {
@@ -447,7 +447,7 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 };
 ```
 
-## Example
+## Esempio
 
 ```zenscript
 #loader contenttweaker
@@ -456,11 +456,11 @@ myTrait.onToolRepair = function(trait, tool, amount) {
 val testTrait = mods.contenttweaker.tconstruct.TraitBuilder.create("kindlich_test");
 testTrait.color = 0xffaadd;
 testTrait.maxLevel = 100;
-testTrait.countPerLevel = 20;
+testTrait. ountPerLevel = 20;
 testTrait.addItem(<item:minecraft:iron_pickaxe>);
 testTrait.addItem(<item:minecraft:iron_block>, 4, 2);
 testTrait.localizedName = "Whooooooooo";
-testTrait.localizedDescription = "This is fun! Sadly, it doesn't do anything... \u2639";
+testTrait.localizedDescription = "Questo è divertente! Purtroppo, non fa nulla... \u2639";
 testTrait.afterHit = function(thisTrait, tool, attacker, target, damageDealt, wasCrit, wasHit) {
     attacker.heal(damageDealt);
 };
