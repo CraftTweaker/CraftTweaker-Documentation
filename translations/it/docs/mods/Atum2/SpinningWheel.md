@@ -1,9 +1,9 @@
 # Spinning Wheel
 
-## Package
+## Pacchetto
 `mods.atum.SpinningWheel;`
 
-## Adding a Recipe
+## Aggiungere una Ricetta
 
 `mods.atum.SpinningWheel.addRecipe(input, output, rotations);`
 
@@ -17,15 +17,15 @@ Adds a recipe with the specified input & output, that takes the specified rotati
 mods.atum.SpinningWheel.addRecipe(<item:atum:scroll>, <item:minecraft:string>, 3);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
-### Remove Recipes by Output
+### Rimuovere Ricette in base al Prodotto
 
 `mods.atum.SpinningWheel.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Rimuove tutte le ricette il cui prodotto è l'[IItemStack](/vanilla/api/items/IItemStack) dato.
 
 ```zenscript
 mods.atum.SpinningWheel.removeRecipeByOutput(<item:atum:linen_thread>);
