@@ -11,12 +11,12 @@ crafttweaker.api.data.DoubleData
 ```
 
 ## Реализованные интерфейсы
-DoubleData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+DoubleData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.data.DoubleData(internal as double);
+new crafttweaker.api.data.DoubleData(double);
 ```
 | Параметр   | Тип    | Описание             |
 | ---------- | ------ | -------------------- |
