@@ -1,21 +1,21 @@
-# Items:
+# Artikel:
 
-Items is a Requirement-Type introduced by CompatSkills and allows you to gate things behind holding a specific Item/NBT-Value/Mod-Item in either your Main or Off-Hand. The Item Syntax is as follows:
+Items sind ein von CompatSkills eingeführter Anforderungs-Typ und ermöglichen es dir, Dinge hinter dem Halten eines bestimmten Gegenstands/NBT-Wertes/Mod-Item in deiner Haupt- oder Off-Hand zu verlegen. Die Artikelsyntax lautet wie folgt:
 
-    Example:
-    // Adds the requirement of you holding ANY item from the specified mod.
+    Beispiel:
+    // Fügt die Anforderung hinzu, dass Sie KEINE Elemente von der angegebenen Mod halten.
     stack|modid
     
-    // Adds the requirement of you holding the specified item with Meta 0
+    // Fügt die Anforderung hinzu, dass Sie das angegebene Element mit Meta 0
     stack|modid:item
     
-    // Adds the requirement of you holding the specified item with the specified Meta (* = Wildcard Metadata)
+    // Fügt die Anforderung hinzu, dass Sie das angegebene Element mit dem angegebenen Meta halten (* = Wildcard Metadaten)
     stack|modid:item:meta
     
-    // Adds the requirement of you holding ANY item with the specified NBT-data
-    stack||NBT as JSON
+    // Fügt die Anforderung hinzu, dass Sie KEINE Gegenstände mit den angegebenen NBT-Daten halten
+    stack|||NBT als JSON
     
-    // Adds the requirement of you holding ANY item from the specified mod with the specified NBT-data.
+    // Fügt die Anforderung hinzu, dass Sie KEINE Gegenstände aus dem angegebenen Mod mit den angegebenen NBT-Daten halten.
     stack|modid|NBT as JSON
     
     // Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data
