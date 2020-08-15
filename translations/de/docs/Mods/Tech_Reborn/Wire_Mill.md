@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.techreborn.wireMill`
 
-## Adding Recipes
+## Rezepte hinzufügen
 ```zenscript
 mods.techreborn.wireMill.addRecipe(IItemStack output1, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Rezepte entfernen
 ```zenscript
 mods.techreborn.wireMill.removeRecipe(IItemStack output);
 mods.techreborn.wireMill.removeAll();
