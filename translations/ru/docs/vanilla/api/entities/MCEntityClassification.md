@@ -9,7 +9,7 @@ crafttweaker.api.entity.MCEntityClassification
 ```
 
 ## Реализованные интерфейсы
-MCEntityClassification implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+MCEntityClassification реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Свойства
@@ -18,7 +18,7 @@ MCEntityClassification implements the following interfaces. Следовател
 | ----------------- | ------- | ------------ | ------------ |
 | командная строка  | String  | true         | false        |
 | isAnimal          | boolean | true         | false        |
-| isPeaceful        | boolean | true         | false        |
+| мирный            | boolean | true         | false        |
 | maxNumberOfEntity | int     | true         | false        |
 | имя               | String  | true         | false        |
 
