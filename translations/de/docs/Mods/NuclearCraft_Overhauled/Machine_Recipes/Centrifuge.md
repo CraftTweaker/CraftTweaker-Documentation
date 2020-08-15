@@ -1,7 +1,7 @@
-# Centrifuge
+# Zentrifuge
 
-## Importing the Package
-`mods.nuclearcraft.Centrifuge`
+## Paket wird importiert
+`mods.nuclearcraft.Zentrifuge`
 
 ## Rezepte hinzufügen
 ```zenscript
@@ -12,5 +12,5 @@ mods.nuclearcraft.Centrifuge.addRecipe(ILiquidStack fluidInput, ILiquidStack flu
 ```zenscript
 mods.nuclearcraft.Centrifuge.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Centrifuge.removeRecipeWithOutput(ILiquidStack fluidOutput1, ILiquidStack fluidOutput2, ILiquidStack fluidOutput3, ILiquidStack fluidOutput4);
-mods.nuclearcraft.Centrifuge.removeAllRecipes();
+mods.nuclearcraft.Centrifuge.removeAllRezept();
 ```
