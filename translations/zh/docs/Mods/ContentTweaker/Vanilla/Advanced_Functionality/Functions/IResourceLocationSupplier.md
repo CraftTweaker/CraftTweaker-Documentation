@@ -1,13 +1,13 @@
 # IResourceLocationSupplier
 
-The IResourceLocationSupplier function can be used to provide the [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) to be used for whatever.
+IResourceLocationSupplier 功能可以用于提供 [资源位置](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/) 用于任何目的。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IResourceLocationSupplier;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入mods.contenttweakerIResourceLocationSupplier；`
 
-## Parameters
+## 参数
 
-The IResourceLocationSupplier Function is a function with no parameters.  
-The function needs to return an [Resource Location](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/).
+IResourceLocationSupplier 功能是一个没有参数的函数。  
+函数需要返回 [资源位置](/Mods/ContentTweaker/Vanilla/Types/Resources/CTResourceLocation/)。
