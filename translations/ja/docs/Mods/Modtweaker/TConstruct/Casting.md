@@ -1,12 +1,12 @@
-# Casting
+# キャスティング
 
-The `Casting` package allows you to add or remove Casting recipes.
+`キャスティング` パッケージでは、キャスティングのレシピを追加または削除できます。
 
-## Calling
+## 発信中
 
-You can call the Casting package using `mods.tconstruct.Casting`
+`mods.tconstruct.Casting` を使用してキャスティングパッケージを呼び出すことができます。
 
-## Add Casting Recipes
+## キャスティングレシピを追加
 
 You can add recipes for both, casting tables and basins: The methods are equal in their parameters, varying only in their names.
 
@@ -23,9 +23,9 @@ mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_i
 mods.tconstruct.Casting.addBasinRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <liquid:molten_gold>, 30, true, 200);
 ```
 
-## Removing Casting Recipes
+## 鋳造レシピを削除しています
 
-Removing Recipes is also possible for Casting Tables and Basins:
+レシピの削除は、テーブルや盆地を鋳造することもできます。
 
 ```zenscript
 //mods.tconstruct.Casting.removeTableRecipe(IItemStack output);
