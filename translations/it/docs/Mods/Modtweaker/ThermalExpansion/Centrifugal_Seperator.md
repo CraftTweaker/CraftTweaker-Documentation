@@ -1,10 +1,10 @@
 # Centrifugal Seperator
 
-## Package
+## Pacchetto
 
 `mods.thermalexpansion.Centrifuge`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
@@ -29,7 +29,7 @@ mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecr
 mods.thermalexpansion.Centrifuge.addRecipeMob(<entity:minecraft:slime>, [<minecraft:gunpowder>%100], <liquid:lava>*20, 2000, 0);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.thermalexpansion.Centrifuge.removeRecipe(IItemStack input);
