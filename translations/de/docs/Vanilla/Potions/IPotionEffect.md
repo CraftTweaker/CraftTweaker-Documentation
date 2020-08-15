@@ -21,7 +21,7 @@ It might be required for you to import the package if you encounter any issues (
 | isAmbient                              | bool                                           |
 | isPotionDurationMax (also a ZenSetter) | bool                                           |
 
-## ZenMethods
+## ZenMethoden
 
 ### Is an item a curative item
 
