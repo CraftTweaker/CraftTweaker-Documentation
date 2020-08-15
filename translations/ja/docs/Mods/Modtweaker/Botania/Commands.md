@@ -3,152 +3,152 @@
 ModTweaker's Botania Integration extends the command palette provided by CraftTweaker.  
 To access these commands you do the same as you do for CraftTweaker commands, you use the `/crafttweaker` prefix
 
-# List of Botania Mod Tweaker Commands
+# Botania Mod Tweaker コマンドのリスト
 
-## Recipes
+## レシピ
 
 ### botbrews
 
-Usage:
+使用方法:
 
 `/crafttweaker botbrews`
 
 `/ct botbrews`
 
-Description:
+説明:
 
-Outputs a list of all registered Botania Brews to the crafttweaker.log file.
+登録済みのボタニアブルーのリストをcrafttweaker.logファイルに出力します。
 
 ### botorechid
 
-Usage:
+使用方法:
 
 `/crafttweaker botorechid`
 
 `/ct botorechid`
 
-Description:
+説明:
 
-Outputs a list of all registered Orechid ores as well as their generation chances to the crafttweaker.log file.
+登録されているすべての Orechid 鉱石のリストと、crafttweaker.log ファイルの生成チャンスを出力します。
 
 ### botania apothecary
 
-Usage:
+使用方法:
 
 `/crafttweaker botania apothecary`
 
 `/ct botania apothecary`
 
-Description:
+説明:
 
-Outputs a list of all registerd apothecary recipes to the crafttweaker.log file.
+crafttweaker.logファイルに、すべての登録済みのレシピのリストを出力します。
 
-### botania brews
+### ボタニア醸造所は
 
-Usage:
+使用方法:
 
 `/crafttweaker botania brews`
 
 `/ct botania brews`
 
-Description:
+説明:
 
-Outputs a list of all registerd brewing recipes to the crafttweaker.log file.
+すべての登録レシピのリストをcrafttweaker.logファイルに出力します。
 
 ### botania trades
 
-Usage:
+使用方法:
 
 `/crafttweaker botania trades`
 
 `/ct botania trades`
 
-Description:
+説明:
 
-Outputs a list of all registerd elven trade recipes to the crafttweaker.log file.
+すべての登録済みエルフ取引レシピのリストをcrafttweaker.logファイルに出力します。
 
 ### botania infusions
 
-Usage:
+使用方法:
 
 `/crafttweaker botania infusions`
 
-`/ct botania infusions`
+`/ct botania inusions`
 
-Description:
+説明:
 
-Outputs a list of all registerd mana infusion recipes to the crafttweaker.log file.
+すべての登録済みマナ注入レシピのリストをcrafttweaker.logファイルに出力します。
 
 ### botania daisy
 
-Usage:
+使用方法:
 
 `/crafttweaker botania daisy`
 
 `/ct botania daisy`
 
-Description:
+説明:
 
-Outputs a list of all registerd pure daisy recipes to the crafttweaker.log file.
+すべての登録済みの純粋なデイジー レシピのリストを crafttweaker.log ファイルに出力します。
 
 ### botania altar
 
-Usage:
+使用方法:
 
 `/crafttweaker botania altar`
 
-`/ct botania altar`
+`/ct botania falla`
 
-Description:
+説明:
 
-Outputs a list of all registerd botania altar recipes to the crafttweaker.log file.
+登録済みのボタニア祭壇のレシピのリストをcrafttweaker.logファイルに出力します。
 
 ## Lexica Botania
 
 ### botlexcats
 
-Usage:
+使用方法:
 
 `/crafttweaker botlexcats`
 
 `/ct botlexcats`
 
-Description:
+説明:
 
-Outputs a list of all registerd botania lexicon categories to the crafttweaker.log file.
+すべての登録済みのボタニア語のカテゴリのリストをcrafttweaker.logファイルに出力します。
 
 ### botlexentries
 
-Usage:
+使用方法:
 
 `/crafttweaker botlexentries`
 
 `/ct botlexentries`
 
-Description:
+説明:
 
-Outputs a list of all registerd botania lexicon entries to the crafttweaker.log file.
+すべての登録済みのボタニア語レキシコンエントリのリストをcrafttweaker.logファイルに出力します。
 
 ### botlextypes
 
-Usage:
+使用方法:
 
 `/crafttweaker botlextypes`
 
 `/ct botlextypes`
 
-Description:
+説明:
 
-Outputs a list of all registerd botania lexicon knowledge types to the crafttweaker.log file.
+すべての登録済みのボタニア語の知識タイプのリストをcrafttweaker.logファイルに出力します。
 
 ### botlexpages
 
-Usage:
+使用方法:
 
 `/crafttweaker botlexpages`
 
 `/ct botlexpages`
 
-Description:
+説明:
 
-Outputs a list of all registerd botania lexicon pages to the crafttweaker.log file.
+すべての登録済みのボタニア語のレキシコンページのリストをcrafttweaker.logファイルに出力します。
