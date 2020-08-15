@@ -3,7 +3,7 @@
 **Needs to be in the `#loader preinit` or `#loader contenttweaker`**
 
 
-## Package
+## Пакет
 ```zenscript
 `mods.exnihilocreatio.Ore`
 ```
@@ -16,7 +16,7 @@
 - **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.exnihilocreatio.Ore.addRecipe(String,
@@ -34,7 +34,7 @@ mods.exnihilocreatio.Ore.addRecipe("Stone",
     "Stone");
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.exnihilocreatio.Ore.removeAll();
