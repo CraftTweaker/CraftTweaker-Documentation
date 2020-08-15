@@ -2,7 +2,7 @@
 
 An IBlockStateMatcher object can be used to match an [IBlockState](/Vanilla/Blocks/IBlockState/) object against a set of requirements or a set of matching blockstates.
 
-## Importing the package
+## パッケージのインポート
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/) or using the static `.create()` method), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockStateMatcher;`
@@ -63,10 +63,10 @@ You can also use `A has B` that represents `A.matches(B)`.
     Map<String, List<String>> getMatchedProperties();
     
 
-Parameters:
+パラメータ:
 
 - String name → The name of the property
-- String... values → One or more values that the property of a matching IBlockState may have.
+- 文字列... values → One or more values that the property of a matching IBlockState may have.
 
 Returns a new IBlockStateMatcher with the same property requirements as this IBlockStateMatcher with the exception of the specified property `name`, which will now allow any of the specified `values` as a matching input.
 
