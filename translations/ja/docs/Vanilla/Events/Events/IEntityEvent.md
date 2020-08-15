@@ -2,13 +2,13 @@
 
 This interface is extended by all Events that can have a central entity.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEntityEvent;`
 
 ## What can be done with them?
 
-| name   | type                                  |
+| 名前     | タイプ                                   |
 | ------ | ------------------------------------- |
 | entity | [IEntity](/Vanilla/Entities/IEntity/) |
