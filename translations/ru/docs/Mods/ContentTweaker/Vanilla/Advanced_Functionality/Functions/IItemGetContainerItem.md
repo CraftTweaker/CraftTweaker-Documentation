@@ -1,19 +1,19 @@
 # IItemGetContainerItem
 
-The IItemGetContainerItem function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever the item is used as ingredient.  
-It is used to determine, what will be left in the crafting slot, when the item is used as such.  
-Think of buckets, for example: Each filled bucket has the empty bucket as containerItem, and when a filled bucket is crafted, you will end up with an empty one.  
-This function can be used to calculate the containerItem, so you can go crazy with stuff like NBT-Tags or more.
+Функция IItemGetContainerItem может быть добавлена к [предмету](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) и выполняться всякий раз, когда предмет используется в качестве ингредиента.  
+Используется для определения того, что осталось в слоте крафта, когда предмет используется в качестве такового.  
+Подумайте о сегментах, например: Каждый заполненный сегмент имеет пустой сегмент в качестве контейнера, и при создании заполненного ведра, вы получите пустое ведро.  
+Эта функция может быть использована для вычисления предметов контейнера, поэтому вы можете безумно использовать такие вещи, как NBT-теги или больше.
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemGetContainerItem;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импортировать mods.contenttweaker.IItemGetContainerItem;`
 
-## Parameters
+## Параметры
 
-The IItemGetContainerItem is a function with the following parameters:
+IItemGetContainerItem является функцией со следующими параметрами:
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
+- [IItemStack](/Vanilla/Items/IItemStack/) стек → предмет.
 
-The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.
+Функция должна вернуть новый объект [IItemStack](/Vanilla/Items/IItemStack/) или null, если предмет не должен оставлять ничего позади.
