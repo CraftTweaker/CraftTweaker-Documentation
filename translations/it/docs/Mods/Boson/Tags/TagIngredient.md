@@ -1,22 +1,22 @@
-# `TagIngredient`
+# `TagIngrediente`
 
-A `TagIngredient` is an `IIngredient` implementation that allows you to use a [`Tag`](/Mods/Boson/Tags/Tag/) in recipes. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
+Un `TagIngredient` è un'implementazione `IIngrediente` che consente di utilizzare un [`Tag`](/Mods/Boson/Tags/Tag/) nelle ricette. Puoi accedere a questi dati solo al di fuori dei tag [`` loader](/Mods/Boson/Loaders/Tags/). Per ulteriori informazioni sui tag e su come ottenerli, fai riferimento a [questa pagina](/Mods/Boson/Tags/Concept/).
 
-## Class Details
-The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagIngredient` its fully qualified name for importing.
+## Dettagli Classe
+La classe è situata nel pacchetto `net.thesilkminer.mc.boson.zen.tag` , rendendo `net.thesilkminer.mc.boson.zen.tag.TagIngredient` il suo nome completamente qualificato per l'importazione.
 
-## Creating a New Instance
-Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
+## Creare una nuova istanza
+Fare riferimento a [la documentazione del gestore di parentesi](/Mods/Boson/Tags/BracketHandler/).
 
 ## `IIngrediente`
-Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
+Dal momento che `TagIngredient` è un `IIngrediente`, fornisce l'accesso a tutte le proprietà e i metodi di quell'interfaccia. Consultare alla pagina di documentazione di [`IIngrediente`](/Vanilla/Variable_Types/IIngredient/) per maggiori dettagli. Questa pagina di documentazione delinea solo aggiunte e stranezze che sono particolari di questa classe.
 
 ## Proprietà
-A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
+Un `TagIngredient` fornisce accesso in sola lettura a un insieme di proprietà aggiuntive, come indicato nella tabella seguente:
 
-| Nome Proprietà | Tipo                                     | Descrizione                                                     |
-| -------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`      | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| Nome Proprietà | Tipo                                     | Descrizione                                                                   |
+| -------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
+| `tagName`      | [`NameSpacedString`](/Mods/Boson/Names/) | Nome che identifica univocamente il tag a cui si riferisce questo ingrediente |
 
 ## Esempio
 
