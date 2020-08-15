@@ -1,22 +1,22 @@
 # CTGUI
 
-You can run a command and edit recipes from ingame using a GUI. It will generate a file on your local scripts folder called recipes.zs .
+È possibile eseguire un comando e modificare le ricette da ingame utilizzando una GUI. Genererà un file nella cartella degli script locali chiamata recipes.zs .
 
-<details><summary>Background story</summary> Some people don't fancy text editors. Even using templates highlighting their syntax can't satisfy them. They want a GUI (Graphical User Interface).  
-For this matter, Jared, humble servant of Lord Ellpeck of House penguin, rightful heir to the Milkshake Throne, King of the Seven Kingdoms of Germany, the Rhoynar and the First Men, Mother of penguins, the modder of the great frozen plains, the unbroken and breaker of mods, has descended upon us from Maven, the great Library of Forbidden Wisdom and Blasphemy to share his great knowledge with mankind, after being urged by BBoldt, traveller of realms, slayer of the great Unknown, writer of Necrochodu. Unfortunately, we were not yet able to decipher the seemingly random jabbering that came from him, so he decided to instead go for a more simplistic means of help, by giving people who posess the power to manipulate the very laws of the universe (also called `OPs` or `Admins`) to access a magical window from inside the game they liked to play and change the fundaments of this false reality from within. </details>
+<details><summary>Storia di sfondo</summary> Alcune persone non hanno voglia di editor di testo. Anche utilizzando i modelli evidenziando la sintassi non può soddisfarli. Vogliono una GUI (interfaccia utente grafica).  
+Per questo motivo, Jared, umile servo di Lord Ellpeck of House pinguino, erede legittimo del Milkshake Throne, Re dei Sette Regni di Germania, il Rhoynar e il Primo Uomo, Madre dei pinguini, il modder delle grandi pianure congelate, l'ininterrotta e rottura di mods, è scesa su di noi da Maven, la grande Biblioteca della Sapienza Proibita e della Blasfemia per condividere la sua grande conoscenza con l'umanità, dopo essere stato sollecitato da BBoldt, viaggiatore di regni, assassino del grande ignoto, scrittore di Necrochodu. Purtroppo, non siamo ancora stati in grado di decifrare il jabbering apparentemente casuale che è venuto da lui, così ha deciso di andare invece per un più semplicistico mezzo di aiuto, dando alle persone che posano il potere di manipolare le stesse leggi dell'universo (chiamate anche `PO` o `Amministratori`) per accedere a una finestra magica dall'interno del gioco che amava giocare e cambiare i fondamenti di questa falsa realtà dall'interno. </details>
 
-## Calling the command
+## Chiamando il comando
 
-You call the command using
+Si chiama il comando usando
 
     /CTGUI id
     
 
-These ids are currently implemented:
+Questi ID sono attualmente attuati:
 
 | ID            | Aggiunto da  | Note |
 | ------------- | ------------ | ---- |
 | craftingtable | CraftTweaker |      |
-| furnace       | CraftTweaker |      |
+| fornace       | CraftTweaker |      |
 
-Note: This command works only on Single Player. It will return Unknown Command if ran on a server. Edit locally and merge/upload it to your server.
+Nota: Questo comando funziona solo su Giocatore singolo. Ritornerà il Comando Sconosciuto se eseguito su un server. Modifica localmente e unisci/carica sul tuo server.
