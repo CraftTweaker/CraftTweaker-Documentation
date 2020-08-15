@@ -1,4 +1,4 @@
-# Soul Binder
+# Legante Dell’Anima
 
 ## Pacchetto
 
@@ -6,11 +6,11 @@
 
 ## Metodo
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The main (non-soul vial) ingredient.
-- **String[] entities** Allowed entities that must be present in a soul vial for this recipe to work.
-- **int xp** The Experience cost for this recipe
-- **int energyCost** How much FE the recipe uses. Defaults to 5000.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Il risultato della ricetta.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'ingrediente principale (non-soul vial).
+- **String[] entità** Entità ammesse che devono essere presenti in una fiala dell'anima perché questa ricetta possa funzionare.
+- **int xp** The Experience cost for this ricetta
+- **int energyCost** Quanto FE usa la ricetta. Predefinito a 5000.
 
 ## Addizione
 
