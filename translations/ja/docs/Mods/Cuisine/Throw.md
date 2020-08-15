@@ -1,4 +1,4 @@
-# Basin Throwing
+# 盆地投げ
 
 ## 加算
 
@@ -25,6 +25,6 @@ BasinThrowing.remove(String id);
 
 BasinThrowing.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除!
 BasinThrowing.removeAll();
 ```
