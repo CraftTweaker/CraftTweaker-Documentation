@@ -2,7 +2,7 @@
 
 This event is fired to when a player is about to fish up an item. Cancelling the event will prevent the player from receiving an item, but the rod will still take damage.
 
-## Notes
+## Notas
 
 Additional damage can be done to the rod by setting `event.additionalDamage`. A list of IItemStacks (which is **not modifiable**) that are going to be fished up is contained within `event.drops`.
 
@@ -21,8 +21,8 @@ ItemFished Events implement the following interfaces and are able to call all of
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter | ZenSetter          | Type                                       |
+| ZenGetter | Ajuste             | Tipo                                       |
 | --------- | ------------------ | ------------------------------------------ |
 | `damage`  |                    | int                                        |
 |           | `additionalDamage` | int                                        |
-| `drops`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
+| `gotas`   |                    | [IItemStack](/Vanilla/Items/IItemStack/)[] |
