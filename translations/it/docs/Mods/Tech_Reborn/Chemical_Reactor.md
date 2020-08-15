@@ -1,6 +1,6 @@
-# Chemical Reactor
+# Reattore Chimico
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.chemicalReactor`
 
 ## Aggiunta Di Ricette
