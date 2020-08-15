@@ -2,10 +2,10 @@
 
 Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.registries.IRecipeManager
 ```
@@ -14,7 +14,7 @@ crafttweaker.api.registries.IRecipeManager
 IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### addJSONRecipe
 
 Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
@@ -24,13 +24,13 @@ craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData)
 craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
+| Parámetro | Tipo                                                   | Descripción                     |
 | --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| nombre    | Cadena                                                 | name of the recipe              |
+| datos     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### removeAll
+### eliminar todo
 
 Remove all recipes in this registry
 
@@ -47,9 +47,9 @@ craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
+| Parámetro | Tipo   | Descripción                    |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modificar | Cadena | modid of the recipes to remove |
 
 
 ### removeByName
@@ -61,9 +61,9 @@ craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
+| Parámetro | Tipo   | Descripción                       |
 | --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| nombre    | Cadena | registry name of recipe to remove |
 
 
 ### removeByRegex
@@ -75,9 +75,9 @@ craftingTable.removeByRegex(regex as String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
+| Parámetro | Tipo   | Descripción            |
 | --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| regex     | Cadena | regex to match against |
 
 
 ### removeRecipe
@@ -89,15 +89,15 @@ craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
+| Parámetro | Tipo                                                              | Descripción          |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| salida    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Tipo   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| commandString | Cadena | verdad     | falso      |
 
