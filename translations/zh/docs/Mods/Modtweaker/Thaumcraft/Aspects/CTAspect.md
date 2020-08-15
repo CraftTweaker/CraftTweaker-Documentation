@@ -1,23 +1,23 @@
-# CTAspect
+# CTAspolt
 
-A CTAspect is the aspect underlying an [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/), much like an [IItemDefinition](/Vanilla/Items/IItemDefinition/) underlies an [IItemStack](/Vanilla/Items/IItemStack/).
+CTAspect是一个 [Aspectt 堆栈的](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/)的基础，就像一个 [IItemDefinition](/Vanilla/Items/IItemDefinition/) 作为一个 [IItemStack](/Vanilla/Items/IItemStack/) 的基础。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import thaumcraft.aspect.CTAspect;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 thaumcraft.aspect.Clavis;`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
+您可以从 [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) 对象中检索到一个 CTAPotspot对象：
 
 ```zenscript
-val aspect = <aspect:ignis>.internal;
+val aspect = <aspect:ignis>.internal；
 ```
 
-## ZenGetters and ZenSetters
+## ZenGetters 和 ZenSettters
 
-| 名称             | isGetter | isSetter | 返回值类型  |
-| -------------- | -------- | -------- | ------ |
-| chatColo**u**r | ✔        | ✔        | string |
-| name           | ✔        |          | string |
+| 名称           | isGetter | isSetter | 返回值类型 |
+| ------------ | -------- | -------- | ----- |
+| 聊天Colo**u**r | ✔        | ✔        | 字符串   |
+| 名称           | ✔        |          | 字符串   |
