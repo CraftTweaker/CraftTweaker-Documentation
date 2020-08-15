@@ -1,16 +1,16 @@
-# Steam Turbine
+# Turbina A Vapore
 
-## Importing the Package
-`mods.nuclearcraft.Turbine`
+## Importazione del pacchetto
+`mods.nuclearcraft.Turbina`
 
 ## Aggiunta Di Ricette
 ```zenscript
-mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double powerPerMB, double expansionLevel, @Optional String particleEffect, @Optional double particleSpeedMultiplier);
+mods.nuclearcraft.Turbine.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, doppio powerPerMB, doppia espansioneLivello, @Optional String particleEffect, @Optional double particleSpeedMultiplier);
 ```
 
 ## Rimozione Ricette
 ```zenscript
 mods.nuclearcraft.Turbine.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Turbine.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.turbine.removeAllRecipes();
+mods.nuclearcraft.turbine.removeAllRicette();
 ```
