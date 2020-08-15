@@ -28,6 +28,6 @@ Mill.remove(String id);
 
 Mill.remove("recipe_name");
 
-// Remove everything!
+// すべてを削除！
 Mill.removeAll();
 ```
