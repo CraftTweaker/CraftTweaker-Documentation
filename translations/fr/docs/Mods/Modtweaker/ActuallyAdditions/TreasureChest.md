@@ -1,8 +1,8 @@
-# Treasure Chest
+# Coffre au Trésor
 
-## Package
+## Paquet
 
-`mods.actuallyadditions.TreasureChest`
+`format@@0 actuallyadditions.TreasureChest`
 
 ## Ajouter
 
@@ -11,7 +11,7 @@
 mods.actuallyadditions.TreasureChest.addLoot(<minecraft:dirt>, 50, 1, 64);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 //mods.actuallyadditions.TreasureChest.removeLoot(IItemStack returnItem);
