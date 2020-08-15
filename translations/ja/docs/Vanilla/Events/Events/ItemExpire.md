@@ -19,7 +19,7 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 ## ZenGetter/ZenSetter
 
-| ZenGetter | ZenSetter | Type                                          |
+| ZenGetter | ZenSetter | タイプ                                           |
 | --------- | --------- | --------------------------------------------- |
-| item      |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
+| 項目        |           | [IEntityItem](/Vanilla/Entities/IEntityItem/) |
 | extraLife | extraLife | int                                           |
