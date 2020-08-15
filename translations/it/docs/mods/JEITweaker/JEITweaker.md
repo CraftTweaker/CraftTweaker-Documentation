@@ -1,11 +1,11 @@
 # JEITweaker
 
-## Description
+## Descrizione
 
 This mod adds CraftTweaker support to JEI. CraftTweaker used to support JEI natively, but due to the 1.14 rewrite, the JEI support is being pulled out into it's own mod.
 
 
-## Package
+## Pacchetto
 `mods.jei.JEI`
 
 ## Item Hiding
@@ -52,6 +52,6 @@ This exact example will add 3 lines of information to the Diamond item.
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
 ```
 
-The code above will produce: ![Commit Box Filled](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+The code above will produce: ![Casella Di Commit Riempita](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
