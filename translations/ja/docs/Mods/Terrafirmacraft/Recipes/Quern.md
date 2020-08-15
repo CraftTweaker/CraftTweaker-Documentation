@@ -1,6 +1,6 @@
 # Quern
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Quern;Quern;
 ```
