@@ -1,15 +1,15 @@
 # PlayerLeftClickBlock
 
-The PlayerLeftClickBlock Event is fired whenever a player left clicks a block.  
-It can be canceled to prevent any other events from taking place. If the player holds down the left click, the event will fire again even if it has been canceled. Canceling this event will prevent the left click from being registered, preventing block breaking (although not in creative mode). Jeżeli zdarzenie zostanie anulowane, można podać konkretny wynik sukcesu, niepowodzenia lub przejścia. Domyślnie wynik jest pozytywny.
+Wydarzenie PlayerLeftClickBlock jest uruchamiane za każdym razem, gdy gracz opuścił blok.  
+Można go anulować, aby zapobiec wszelkim innym wydarzeniom. Jeśli gracz trzyma lewe kliknięcie, wydarzenie zostanie uruchomione ponownie, nawet jeśli zostanie anulowane. Anulowanie tego wydarzenia uniemożliwi rejestrację lewego kliknięcia, zapobiegając łamaniu bloków (choć nie w trybie kreatywnym). Jeżeli zdarzenie zostanie anulowane, można podać konkretny wynik sukcesu, niepowodzenia lub przejścia. Domyślnie wynik jest pozytywny.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerLeftClickBlockEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerLeftClickBlockEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-PlayerLeftClickBlock Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerLeftClickBlock zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [Interakcja gracza](/Vanilla/Events/Events/PlayerInteract/)
