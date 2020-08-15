@@ -1,18 +1,18 @@
 # IClient
 
-The Client Interface is for providing general information on a Client.  
-This is only available for clients, these won't work on a sever!
+Interfejs klienta służy do dostarczania ogólnych informacji na temat klienta.  
+Jest on dostępny tylko dla klientów, nie będą one działać z odwagą!
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.api.IClient;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (takie jak przesyłanie [Array](/AdvancedFunctions/Arrays_and_Loops/)), tak aby były bezpieczne niż przepraszamy i dodaj import.  
+`zaimportuj crafttweaker.api.IClient;`
 
-## Where to find the client class?
+## Gdzie znaleźć klasę klienta?
 
-The Client class is a globally registered Symbol, so you won't need to import anything, you can just use the keyword `client`
+Klasa klienta jest symbolem zarejestrowanym globalnie, więc nie musisz niczego importować, możesz po prostu użyć słowa kluczowego `klienta`
 
-## What to do with it?
+## Co z tym zrobić?
 
-`client.player` returns the player running the client as an [IPlayer](/Vanilla/Players/IPlayer/) Object.  
-`client.language` returns the language the client runs on as string.
+`client.player` zwraca gracza używającego klienta jako [IPlayer](/Vanilla/Players/IPlayer/) obiektu.  
+`klient` zwraca język, w którym klient działa jako ciąg.
