@@ -1,21 +1,21 @@
-# Alchemy Array
+# Tablica alchemiczna
 
-## Package
+## Pakiet
 
-`mods.bloodmagic.AlchemyArray`
+`mods.blood magic.AlchemyArray`
 
-## Addition
+## Dodanie
 
 ```zenscript
-//mods.bloodmagic.AlchemyArray.addRecipe(IItemStack output, IItemStack input, IItemStack catalyst, @Optional string textureLocation);
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
-mods.bloodmagic.AlchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
-// creates an alchemy array recipe with the output of diamond. the first item placed into the array is the stick (the input), followed by the grass (the catalyst)
+//mods.bloodmagic.AlchemyArray.addRecipe(wyjście IItemStack, wejście IItemStack, katalizator IItemStack, @Opcjonalny ciąg tekstowy Lokalizacji);
+mods.bloodmagic.AlchemyArray. ddRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>, "bloodmagic:textures/models/AlchemyArrays/LightSigil.png");
+mods.blood magic. lchemyArray.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:grass>);
+// tworzy alchemiczną tablicę z wyjściem diamentu. pierwszym elementem umieszczonym w tablicy jest kij (wkład), a następnie trawa (katalizator).
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
-//mods.bloodmagic.AlchemyArray.removeRecipe(IItemStack input, IItemStack catalyst);
-mods.bloodmagic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
+//mods.bloodmagic.AlchemyArray.removeRecipe(wprowadzanie IItemStack, katalizator IItemStack);
+mods.blood magic.AlchemyArray.removeRecipe(<minecraft:redstone>, <bloodmagic:slate:3>);
 ```
