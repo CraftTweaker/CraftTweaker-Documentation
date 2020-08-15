@@ -1,6 +1,6 @@
-# Fluid Replicator
+# 液体复制器
 
-## Importing the Package
+## 导入软件包
 `mods.techreborn.fluidReplicator`
 
 ## 添加配方
