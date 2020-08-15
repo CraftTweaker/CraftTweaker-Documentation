@@ -2,7 +2,7 @@
 
 The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IFacing;`
@@ -26,11 +26,11 @@ crafttweaker.world.Facing.fromString(String name);
 
 ## ZenGetters/ZenMethods without parameters
 
-| ZenGetter | ZenMethod  | Return Type |
-| --------- | ---------- | ----------- |
-| name      | getName()  | string      |
-| rotateY   | rotateY()  | IFacing     |
-| opposite  | opposite() | IFacing     |
+| ZenGetter | Méthode Zen | Type de retour       |
+| --------- | ----------- | -------------------- |
+| Nom       | getName()   | chaîne de caractères |
+| rotateY   | rotateY()   | IFacing              |
+| opposite  | opposite()  | IFacing              |
 
 ## Other methods
 
