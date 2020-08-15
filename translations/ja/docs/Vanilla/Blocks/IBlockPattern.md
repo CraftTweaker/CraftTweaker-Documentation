@@ -17,10 +17,10 @@ But there are cases when you explicitly get an IBlockPattern Object as return.
 
 ## ZenGetters
 
-| ZenGetter   | What does it do                                | Return Type                             |
+| ZenGetter   | 何をするか                                          | Return Type                             |
 | ----------- | ---------------------------------------------- | --------------------------------------- |
 | blocks      | Lists all possible blocks for this object      | List<[IBlock](/Vanilla/Blocks/IBlock/)> |
-| displayName | Returns the displayNames of the fitting blocks | string                                  |
+| displayName | Returns the displayNames of the fitting blocks | 文字列                                     |
 
 ## OR
 
