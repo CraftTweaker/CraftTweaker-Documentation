@@ -13,7 +13,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 | ---------- | ------------------ | ------------------------------------- |
 | `nbtData`  | `nbtData`          | [IData](/Vanilla/Data/IData/)         |
 |            | `entityDefinition` | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `world`    |                    | [IWorld](/Vanilla/World/IWorld)       |
+| `世界`       |                    | [IWorld](/Vanilla/World/IWorld)       |
 | `blockPos` |                    | [IBlockPos](/Vanilla/World/IBlockPos) |
 
 ## ZenMethods
