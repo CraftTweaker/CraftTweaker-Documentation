@@ -23,7 +23,7 @@ IEntityCreature extends [IEntityLiving](/Vanilla/Entities/IEntityLiving/). That 
 | maximumHomeDistance  | float                                  |
 | hasHome              | bool                                   |
 
-### ZenMethods
+### ZenMethoden
 
 #### play living sound
 
