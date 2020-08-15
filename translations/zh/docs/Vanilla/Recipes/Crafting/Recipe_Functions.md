@@ -1,70 +1,70 @@
-# Recipe Functions
+# 配方函数
 
 # IRecipeFunction
 
-Some recipes support custom functions to programmatically determine their output.  
-This can be especially useful if you need some of the input item's information, like the damage value.  
-This is a so-called IRecipeFunction.
+有些配方支持自定义函数程序性地决定其输出。  
+如果您需要一些输入项的信息，例如损坏值，这可能是特别有用的。  
+这是一个所谓的 IRecipeFunction。
 
-## Example for repairing a pickaxe
+## 修理卡车的例子
 
 ```zenscript
 val diaPick = <minecraft:diamond_pickaxe>;
 
-//we start normal, by writing the output
-recipes.addShapeless("pickrepair",diaPick,
+//we 开始正常，通过写输出
+restrices.addShapeless("pickreriir",diaPick,
 
-//followed by the input array. One change though - we mark the diamond pickaxe, so we can use it in the function later
-[diaPick.anyDamage().marked("mark"),<minecraft:diamond>],
+///follow-up 输入数组。 虽然有一个变化——我们标记钻石的卡车，所以我们可以稍后在函数中使用它
+[diaPick]。 nyDamage().marked("mark",<minecraft:diamond>],
 
-//now we start declaring the function. 
-//It needs 3 parameters, one for the output, one for the inputs and one for crafting info. 
-//We'll only need the input parameter, though.
-function(out, ins, cInfo){
+/now 我们开始声明函数。 
+///它需要3个参数，一个参数用于输出参数，一个参数用于输入参数，一个参数用于制造信息。 
+///我们只需要输入参数。
+函数(out, ins, cInfo)□
 
-    //now we return the pickaxe with either 0 DMG or Current damage -10, whatever is higher. This is to prevent negative damage values.
-    return ins.mark.withDamage(max(0,ins.mark.damage - 10));
+    //now we return with 0 DMG or current damage 10, where is higher 这是为了防止负损值。
+    返回 ins.mark.withdamage(0,ins.mark.damage - 10);
 }, 
-//We don't need a recipeAction here so just set it to null
+//我们不需要一个recipeActions，这样才能将其设置为 null
 null);
 ```
 
-## How to set up an IRecipeFunction
+## 如何设置一个 IRecipeFunction
 
-As you might have seen in the example above, there is a function with 3 Parameters:  
-You don't have to call them this way, they can have any name.
+正如你在上文的例子中所看到的那样， 有一个带有3个参数的函数：  
+你不必以这种方式给他们打电话，他们可以有任何名字。
 
-`out` is the recipe's output and an IItemStack object.  
-`ins` is a map with the marks as keys and the marked inputs as values.  
-`cInfo` is an ICraftingInfo Object
+`out` 是累犯的输出和一个 IItemStack 对象。  
+`ins` 是以标记为键和被标记为输入值的映射。  
+`cInfo` 是一个 ICraftingInfo 对象
 
-The function must return the IItemStack that the recipe should output.
+函数必须返回配方应该输出的IItemStack。
 
-You can invalidate a recipe by returning `null` so it can't be crafted under certain conditions.
+你可以通过返回 `null` 来使一个配方无效，这样它就无法在特定条件下制造。
 
-Modifying the `ins` here is a bad idea, this function triggers for each change in the crafting grid, not when actually pulling out the result.
+在这里修改 `ins` 是一个坏主意， 此函数会触发工作网格中的每次更改，而不是在实际拉出结果时。
 
 # IRecipeAction
 
-But CraftTweaker goes beyond simply calculating your outputs using functions.  
-With an IRecipeAction Function, you can also determine what should happen when a user crafts the item.  
-An IRecipeAction object comes after an IRecipeFunction!
+但CraftT弱超出了使用函数简单计算您的输出。  
+有一个 IRecipeAction 功能，您也可以确定当用户制作项目时应该发生什么情况。  
+IRecipeAction 对象是在 IRecipeFunction之后产生的！
 
 ```zenscript
 val stone = <minecraft:stone>;
 
-recipes.addShapeless("experiencestone",stone,[stone,stone,stone,stone],
-//IrecipeFunction, just return the output, it doesn't interest us this time.
-function(out,ins,cInfo){
+配方.addShapeless("experiencestone",stone,[stone,stone,stone,stone,stone,stone,stone],
+/IrecipeFunction,返回输出, 这一次它对我们不感兴趣。
+function(out,ins,cInfo)@un.org
     return out;
 },
-//IRecipeAction
-function(out,cInfo,player){
+/IRecipeAction
+function(out,cInfo,player)
     player.xp += 1;
 });
 ```
 
-This gives the player who performs the recipe 1 level each time the crafting is completed. Again, we have a function with 3 Parameters:  
-`out` is the recipe's output and an IItemStack object.  
-`cInfo` is an ICraftingInfo Object  
-`player` is the player performing the recipe and an [IPlayer](/Vanilla/Players/IPlayer/) object.
+这使得每次制造完成时执行配方1级的玩家能够完成工作。 我们还有一个函数包含3个参数：  
+`out` 是累犯的输出和一个 IItemStack 对象。  
+`cInfo` 是一个 ICraftInfo 对象  
+`玩家` 是执行配方的玩家 [IPlayer](/Vanilla/Players/IPlayer/) 对象。
