@@ -4,14 +4,14 @@
 
 `import mods.ic2.BlastFurnace;`
 
-## Methods
+## Métodos
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
 - **int totalFluidCost** Per-tick IC2 liquefied air cost, measured in mB/tick
 - **int time** Total time cost, measured in ticks
 
-## Addition
+## Adicional
 
 ```zenscript
 mods.ic2.BlastFurnace.addRecipe(IItemStack[] outputs, IIngredient input, int totalFluidCost, int time);
