@@ -4,7 +4,7 @@ Represents a direction axis (X, Y, Z)
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.util.DirectionAxis
@@ -14,7 +14,7 @@ crafttweaker.api.util.DirectionAxis
 DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Metody
 ### getCoordinate
 
 Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
@@ -26,21 +26,21 @@ Returns int
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parameter | Type | Description               |
-| --------- | ---- | ------------------------- |
-| x         | int  | x value of the coordinate |
-| y         | int  | y value of the coordinate |
-| z         | int  | z value of the coordinate |
+| Parametr | Typ    | Opis                      |
+| -------- | ------ | ------------------------- |
+| x        | odcień | x value of the coordinate |
+| y        | odcień | y value of the coordinate |
+| z        | odcień | z value of the coordinate |
 
 
 
-## Properties
+## Właściwości
 
-| Name          | Type    | Has Getter | Has Setter |
-| ------------- | ------- | ---------- | ---------- |
-| commandString | String  | true       | false      |
-| horizontal    | boolean | true       | false      |
-| name          | String  | true       | false      |
-| ordinal       | int     | true       | false      |
-| vertical      | boolean | true       | false      |
+| Nazwisko   | Typ         | Has Getter | Has Setter |
+| ---------- | ----------- | ---------- | ---------- |
+| polecenie  | Ciąg znaków | prawda     | fałszywy   |
+| horizontal | boolean     | prawda     | fałszywy   |
+| Nazwa      | Ciąg znaków | prawda     | fałszywy   |
+| ordinal    | odcień      | prawda     | fałszywy   |
+| vertical   | boolean     | prawda     | fałszywy   |
 
