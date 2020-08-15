@@ -1,24 +1,24 @@
-# Starlight Transmutation
+# Транмутация Звёздного Света
 
-You can add and remove Starlight Transmutations
+Вы можете добавить и удалить трансмутации Звёздного Света
 
-## Calling
+## Звонок
 
-You can call the LightTransmutations package using `mods.astralsorcery.LightTransmutation`.
+Вы можете вызвать пакет LightTransmutations с помощью `mods.astralsorcery.LightTransmutation`.
 
-## Removing
+## Удаление
 
-This function removes the first recipe it finds that returns provided [IItemStack](/Vanilla/Items/IItemStack/) `output` and uses `matchStack` to determine whether it should also match Metadata.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Эта функция удаляет первый рецепт, который он обнаружил, что возвращает предоставленный [IItemStack](/Vanilla/Items/IItemStack/) `output` и использует `matchStack` , чтобы определить, должно ли он совпадать с метаданными.  
+Если есть несколько рецептов, возвращающих предоставленный выход, вам нужно вызвать этот метод несколько раз!
 
 ```zenscript
 //mods.astralsorcery.LightTransmutation.removeTransmutation(IItemStack stackToRemove, boolean matchMeta);
 mods.astralsorcery.LightTransmutation.removeTransmutation(<minecraft:end_stone>, false);
 ```
 
-## Addition
+## Сложение
 
 ```zenscript
-//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, double cost);
+//mods.astralsorcery.LightTransmutation.addTransmutation(IItemStack stackIn, IItemStack stackOut, двойной стоимости);
 mods.astralsorcery.LightTransmutation.addTransmutation(<minecraft:grass>, <minecraft:gold_ore>, 10);
 ```
