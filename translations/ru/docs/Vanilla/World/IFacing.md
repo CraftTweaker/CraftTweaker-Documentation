@@ -36,13 +36,13 @@ crafttweaker.world.Facing.fromString(String name);
 
 ### Сравнение двух направлений
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+Вы можете сравнить две фракции, используя стандартные операторы `== ! < > <= >=`  
+Или можно использовать функцию, хотя функция возвращает подсказку, равную 0, если она равна.
 
 ```zenscript
-//Returns true or false
+//Возвращает true или false
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+//Возвращает 0, если он равен
 facingOne.compare(facingTwo);
 ```
