@@ -4,8 +4,8 @@ IDamageSource 对象是实体受伤的来源。
 
 ## 导入类
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamageSource`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftmilever.damage.IDamageSource`
 
 ## Zengetters 和无参数的 ZenMethods
 
