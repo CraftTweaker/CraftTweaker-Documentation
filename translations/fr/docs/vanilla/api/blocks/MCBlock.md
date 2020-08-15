@@ -2,14 +2,14 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Methods
-### canSpawnInBlock
+## Méthodes
+### format@@0 canSpawnInBlock
 
 Returns boolean
 
@@ -26,16 +26,16 @@ myMCBlock.getDefaultState();
 ```
 
 
-## Properties
+## Propriétés
 
-| Name           | Type   | Has Getter | Has Setter |
-| -------------- | ------ | ---------- | ---------- |
-| lootTable      | String | true       | false      |
-| translationKey | String | true       | false      |
+| Nom            | Type de texte        | Has Getter | Has Setter |
+| -------------- | -------------------- | ---------- | ---------- |
+| lootTable      | Chaîne de caractères | vrai       | Faux       |
+| translationKey | Chaîne de caractères | vrai       | Faux       |
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Result type          | Is Implicit |
+| -------------------- | ----------- |
+| Chaîne de caractères | Faux        |
 
