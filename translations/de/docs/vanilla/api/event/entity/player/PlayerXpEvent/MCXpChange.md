@@ -85,7 +85,7 @@ myMCXpChange.setAmount(amount as int);
 
 | Parameter | Type | Beschreibung            |
 | --------- | ---- | ----------------------- |
-| amount    | int  | No description provided |
+| beträge   | int  | No description provided |
 
 
 ### setCanceled
@@ -94,7 +94,7 @@ myMCXpChange.setAmount(amount as int);
 myMCXpChange.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
+| Parameter | Type    | Beschreibung            |
 | --------- | ------- | ----------------------- |
 | cancel    | boolean | No description provided |
 
