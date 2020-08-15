@@ -8,7 +8,7 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Constructors
+## Costruttori
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function
 ## Metodi
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,29 +29,29 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Restituisce: `Giocatore`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Restituisce [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### hasResult
+### hasRisultato
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina se questo evento prevede un valore significativo del risultato. Nota: Gli eventi con l'annotazione HasResult avranno questo metodo automaticamente aggiunto per restituire true.
 
 Restituisce un booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.hasResult();
+myMCPlayerWakeUpEvent.hasRisultato();
 ```
 
-### isCancelable
+### isAnnullabile
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determina se questa funzione è annullabile. Restituisce: `Se l'accesso a setAnnullato dovrebbe essere consentito
+ Nota:
+ Gli eventi con l'annotazione annullabile avranno questo metodo automaticamente aggiunto per restituire true.`
 
 Restituisce un booleano
 
@@ -59,9 +59,9 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### isCanceled
+### isAnnullato
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determina se questo evento è stato annullato e dovrebbe interrompere l'esecuzione. Restituisce: `L'attuale stato annullato`
 
 Restituisce un booleano
 
@@ -69,20 +69,20 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### setCanceled
+### setAnnullato
 
 ```zenscript
-myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
+myMCPlayerWakeUpEvent.setAnnullato (cancella come boolean);
 ```
 
 | Parametro | Tipo    | Descrizione                 |
 | --------- | ------- | --------------------------- |
-| cancel    | boolean | Nessuna descrizione fornita |
+| annulla   | boolean | Nessuna descrizione fornita |
 
 
 ### shouldSetSpawn
 
-Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
+Indica se il sonno del giocatore è stato considerato riuscito. In vaniglia, questo viene utilizzato per determinare se il pezzo di spawn deve essere impostato alla posizione del letto.
 
 Restituisce un booleano
 
@@ -92,7 +92,7 @@ myMCPlayerWakeUpEvent.shouldSetSpawn();
 
 ### updateWorld
 
-Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
+Indica se il server deve essere informato dei cambiamenti di sospensione. Questo sarà falso solo se il server è già considerato 'aggiornato', perché, per esempio, ha avviato la chiamata.
 
 Restituisce un booleano
 
@@ -100,14 +100,14 @@ Restituisce un booleano
 myMCPlayerWakeUpEvent.updateWorld();
 ```
 
-### wakeImmediately
+### wakeImmediatamente
 
-Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
+Usato per l''animazione di risveglio'. Questo è falso se il giocatore è considerato 'sonno' e la sovrapposizione dovrebbe lentamente svanire.
 
 Restituisce un booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeImmediately();
+myMCPlayerWakeUpEvent.wakeImmediatamente();
 ```
 
 
