@@ -1,17 +1,17 @@
-# On Preprocessors
+# プリプロセッサー上
 
-## What are preprocessors
+## プリプロセッサーとは
 
-As the name suggests, preprocessors are executed before the script is executed.  
-They can perform various actions like enabling Debug Mode or Supress Bracket Errors.
+名前が示すように、スクリプトが実行される前にプリプロセッサが実行されます。  
+デバッグモードの有効化やブラケットエラーのサポートなど、さまざまなアクションを実行できます。
 
-## Calling a preprocessor
+## プリプロセッサーを呼び出す
 
-A preprocessor can be called using the #comment function.  
-Be careful with the comments though as you might start one with a preprocessor keyword.
+プリプロセッサは #comment 関数を使用して呼び出すことができます。  
+プリプロセッサキーワードで開始する場合があるので、コメントには注意してください。
 
 ```zenscript
-#debug is my favorite word I like to add it everywhere as a comment
+#debugは私のお気に入りの単語です。どこにでもコメントとして追加します。
 ```
 
-↑ Would enable debug mode as `#debug` is found. If you really want to ensure such a rare case doesn't happen, use `//` for comments.
+`#debug` が見つかったらデバッグモードを有効にします。 このようなまれなケースが起こらないようにしたい場合は、コメントに `//` を使用してください。
