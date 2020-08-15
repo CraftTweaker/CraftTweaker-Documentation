@@ -83,12 +83,12 @@ IItemStack расширяет [IIngredient](/Vanilla/Variable_Types/IIngredient/
 | блок-istemBlock          |              | бул (если содержащийся элемент является блоком)              |
 | укладка                  |              | bool                                                         |
 | Платеж isBeacon          |              | bool                                                         |
-| hasEffect                |              | bool                                                         |
+| имеет эффект             |              | bool                                                         |
 | hasDisplayName           |              | bool                                                         |
 | метаданные               |              | int                                                          |
 | имеет подтипы            |              | bool                                                         |
 | isEmpty                  |              | bool                                                         |
-| burnTime                 |              | int                                                          |
+| время сгорания           |              | int                                                          |
 | полоса прочности         |              | bool                                                         |
 | имеет Настраиваемое Лицо |              | bool                                                         |
 | чары                     |              | Список<[Зачарование](/Vanilla/Enchantments/IEnchantment/)\> |
