@@ -1,10 +1,10 @@
 # Heat Exchanger
 
-## Package
+## Pacchetto
 
 `import mods.ic2.HeatExchanger;`
 
-## Methods
+## Metodi
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The liquid after it's been heated up/cooled down
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** The liquid before it's been heated up/cooled down
