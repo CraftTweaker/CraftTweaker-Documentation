@@ -10,8 +10,8 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.data.MapData
 ```
 
-## Implemented Interfaces
-MapData implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+MapData は以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Constructors
@@ -21,20 +21,20 @@ new crafttweaker.api.data.MapData();
 ```zenscript
 new crafttweaker.api.data.MapData(map as crafttweaker.api.data.IData[String]);
 ```
-| パラメータ | タイプ                                                            | 説明                      |
-| ----- | -------------------------------------------------------------- | ----------------------- |
-| map   | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | No description provided |
+| パラメータ | タイプ                                                            | 説明           |
+| ----- | -------------------------------------------------------------- | ------------ |
+| 地図    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | 説明が提供されていません |
 
 
 
 ## メソッド
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+リストを取得<IData> この IData の表現は、 [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a list.`
+ 戻り値: `この IData がリストでない場合は null です。`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+戻り値 List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 myMapData.asList();
@@ -42,11 +42,11 @@ myMapData.asList();
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+この IData のマップ<String, IData> 表現を取得します。 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a map.`
+ 戻り値: `この IData がマップでない場合は null です。`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 myMapData.asMap();
@@ -54,71 +54,71 @@ myMapData.asMap();
 
 ### asString
 
-Gets the String representation of this IData
+この IData の文字列表現を取得します
 
- Returns: `String that represents this IData (value and type).`
+ 戻り値: `この IData (値と型) を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMapData.asString();
 ```
 
-### contains
+### を含む
 
-Checks if the Map contains the given key.
+マップに与えられたキーが含まれているかどうかを確認します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMapData.contains(key as String);
 myMapData.contains("Hello");
 ```
 
-| パラメータ | タイプ  | 説明                    |
-| ----- | ---- | --------------------- |
-| key   | 文字列型 | The key to search for |
+| パラメータ | タイプ  | 説明     |
+| ----- | ---- | ------ |
+| キー    | 文字列型 | 検索するキー |
 
 
-### copy
+### コピー
 
-Makes a copy of this IData.
+このIDataのコピーを作成します。
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData はデフォルトで変更不能です。これを使用してオブジェクトの適切なコピーを作成します。
 
- Returns: `a copy of this IData.`
+ 戻り値: `この IData のコピー`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.copy();
 ```
 
-### get
+### 取得する
 
-Retrieves the value associated with the key
+キーに関連付けられた値を取得します
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.get(key as String);
 myMapData.get("Hello");
 ```
 
-| パラメータ | タイプ  | 説明                    |
-| ----- | ---- | --------------------- |
-| key   | 文字列型 | The key to search for |
+| パラメータ | タイプ  | 説明     |
+| ----- | ---- | ------ |
+| キー    | 文字列型 | 検索するキー |
 
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+内部 NBT タグの ID を取得します。
 
- Used to determine what NBT type is stored (in a list for example)
+ どの種類の NBT が格納されているかを決定するために使用されます(例えばリスト)
 
- Returns: `ID of the NBT tag that this data represents.`
+ 戻り値: `このデータが表現する NBT タグの ID。`
 
-Returns byte
+バイトを返します
 
 ```zenscript
 myMapData.getId();
@@ -126,102 +126,102 @@ myMapData.getId();
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+内部 INBT タグの文字列表現を取得します。
 
- Returns: `String that represents the internal INBT of this IData.`
+ 戻り値: `この IData の内部 INBT を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMapData.getString();
 ```
 
-### merge
+### マージ
 
-Merges this map and the other map. If entries from this map and the other map share the values are tried to be merged. If that does not work, then the value from the other map is used.
+このマップと他のマップを統合します。 このマップのエントリと他のマップが共有している場合、値をマージしようとします。 これが動作しない場合は、他のマップからの値が使用されます。
 
-Returns [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)
+戻り値 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData)
 
 ```zenscript
-myMapData.merge(other as crafttweaker.api.data.MapData);
+myMapData.merge(crafttweaker.api.data.MapData);
 myMapData.merge({Doodle: "Do});
 ```
 
-| パラメータ | タイプ                                                        | 説明             |
-| ----- | ---------------------------------------------------------- | -------------- |
-| other | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | The other map. |
+| パラメータ | タイプ                                                        | 説明      |
+| ----- | ---------------------------------------------------------- | ------- |
+| その他   | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | その他の地図。 |
 
 
-### put
+### 置く
 
-Adds sets the value for the given key or creates a new entry if it did not exist before.
+Adds は、与えられたキーの値を設定するか、それ以前に存在しなかった場合に新しいエントリを作成します。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 myMapData.put(key as String, value as crafttweaker.api.data.IData);
 myMapData.put("Hello", "Goodbye");
 ```
 
-| パラメータ | タイプ                                                    | 説明                            |
-| ----- | ------------------------------------------------------ | ----------------------------- |
-| key   | 文字列型                                                   | The key to set the value for. |
-| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to set.             |
+| パラメータ | タイプ                                                    | 説明        |
+| ----- | ------------------------------------------------------ | --------- |
+| キー    | 文字列型                                                   | 値を設定するキー。 |
+| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 設定する値。    |
 
 
 ### putAll
 
-Adds all entries from the given map into this one. Can override existing keys.
+指定されたマップからすべてのエントリをこのマップに追加します。 既存のキーを上書きできます。
 
 ```zenscript
 myMapData.putAll(map as crafttweaker.api.data.IData[String]);
 myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
-| パラメータ | タイプ                                                            | 説明                                        |
-| ----- | -------------------------------------------------------------- | ----------------------------------------- |
-| map   | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | The other entries to be added to this map |
+| パラメータ | タイプ                                                            | 説明             |
+| ----- | -------------------------------------------------------------- | -------------- |
+| 地図    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | この地図に追加される他の項目 |
 
 
 ### 削除
 
-Removes the entry with the given key from the Map
+与えられたキーを持つエントリをマップから削除します。
 
 ```zenscript
 myMapData.remove(key as String);
 myMapData.remove("Somewhere");
 ```
 
-| パラメータ | タイプ  | 説明                             |
-| ----- | ---- | ------------------------------ |
-| key   | 文字列型 | The key of the entry to remove |
+| パラメータ | タイプ  | 説明          |
+| ----- | ---- | ----------- |
+| キー    | 文字列型 | 削除するエントリのキー |
 
 
 
 ## プロパティー
 
-| 名称      | タイプ        | Has Getter | Has Setter |
-| ------- | ---------- | ---------- | ---------- |
-| isEmpty | boolean型   | true       | false      |
-| keySet  | 設定<String> | true       | false      |
-| サイズ     | int        | true       | false      |
+| 名称      | タイプ        | ゲッターあり | セッターあり |
+| ------- | ---------- | ------ | ------ |
+| isEmpty | boolean型   | true   | false  |
+| keySet  | 設定<String> | true   | false  |
+| サイズ     | int        | true   | false  |
 
 ## 演算子
 ### 追加
 
-Adds all entries from the given IData to this entry
+指定されたIDataのすべてのエントリをこのエントリに追加します。
 
 ```zenscript
 myMapData + data as crafttweaker.api.data.IData
 ```
 
-| パラメータ | タイプ                                                    | 説明                      |
-| ----- | ------------------------------------------------------ | ----------------------- |
-| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
+| パラメータ | タイプ                                                    | 説明           |
+| ----- | ------------------------------------------------------ | ------------ |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 説明が提供されていません |
 
-## Casters
+## キャスト
 
-| Result type                                                    | Is Implicit |
-| -------------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | true        |
+| 結果の種類                                                          | 暗黙的  |
+| -------------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | true |
 
