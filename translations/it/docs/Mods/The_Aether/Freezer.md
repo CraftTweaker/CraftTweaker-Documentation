@@ -1,6 +1,6 @@
 # Freezer
 
-## Package
+## Pacchetto
 
 ```zenscript
 import mods.aether_legacy.Freezer;
