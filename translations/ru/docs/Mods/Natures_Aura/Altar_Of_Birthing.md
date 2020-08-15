@@ -1,25 +1,25 @@
-# Altar of Birthing
+# Алтарь Рождения
 
 ## Пакет
 ```zenscript
-mods.naturesaura.AnimalSpawner
+mods.naturesaura.Спаун живота
 ```
 
 ## Методы
-- **String Name**
-- **String Entity** Name of the entitiy to spawn
-- **int aura** The amount of Aura required for the completion of the recipe
-- **int time** The time processes take in ticks
-- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ingredients** The inputs
+- **Название строки**
+- **Строковый объект** Имя сущности для появления
+- **int aura** Количество Ауры, необходимое для выполнения рецепта
+- **время подсказки** процессы времени занимают такты
+- **[IIngredient[]](/Vanilla/Variable_Types/IIngredient) ингредиенты** Входы
 
 ## Сложение
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
+mods.naturesaura.Рецепт Животноводства (название строки, ингредиенты, время, ингредиенты[])
 ```
 
 ## Удаление
 
 ```zenscript
-mods.naturesaura.AnimalSpawner.removeRecipe(String name)
+mods.naturesaura.Спаунер.удалитьРецепт (имя треда)
 ```
