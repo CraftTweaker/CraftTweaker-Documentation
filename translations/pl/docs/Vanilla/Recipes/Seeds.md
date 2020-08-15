@@ -1,54 +1,54 @@
-# Seeds
+# Nasiona
 
-Seeds are things you get from punching tall grass.
+Nasiona to rzeczy, które otrzymujesz od uderzenia wysokiej trawy.
 
-## Print all seeds to the log
+## Wydrukuj wszystkie seedy do dziennika
 
-This command will print all registered seeds to the log.
+Ta komenda wydrukuje wszystkie zarejestrowane seedy do dziennika.
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+Musi być wykonywany przez gracza lub konsolę, nie może być zapisany w pliku zs.
 
-    1.12
-    /ct seeds
+    1,12
+    /ct nasiona
     
-    pre-1.12
-    /mt seeds
+    pre1.12
+    /mt nasiona
     
 
-## Add a seed drop
+## Dodaj upuszczenie ziarna
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
+Dodaje `element` jako zrzut ziarenka.  
+**Wagi są względem ziarna trawy o wadze 10 (<unk> 10%)!**
 
 ```zenscript
-vanilla.seeds.addSeed(item);
+[PLACEHOLDER] vanilla.seeds.addSeed(item);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+`element` jest [ważonyItemStack](/Vanilla/Items/WeightedItemStack/). Co to oznacza? Oznacza to po prostu, że trzeba podać jej procent:
 
 ```zenscript
-//adds carrots with a weight of 1
+//dodaje marchewkę o wadze 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Remove a seed drop
+## Usuń łup ziarna
 
-Stops `item` from being a seed drop.
+Zatrzymuje `element` przed byciem zrzutem ziarenka.
 
 ```zenscript
-vanilla.seeds.removeSeed(item);
+vanilla.seeds.removeSeed(pozycja);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
+`element` jest [Składnikiem](/Vanilla/Variable_Types/IIngredient/).
 
-## Retrieve all registered Seeds
+## Pobierz wszystkie zarejestrowane seedy
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+Zwraca wszystkie elementy jako [ważona ListaItemStack](/Vanilla/Items/WeightedItemStack/).
 
 ```zenscript
-val seedList = vanilla.seeds.seeds;
+Wal seedList = vanilla.seeds.seeds;
 
-for item in seedList {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
+dla produktu w seedList {
+    print("Element: " ~ element. tack.displayName ~ " || Szansa: " ~ przedmiot.procent ~ "%");
 }
 ```
