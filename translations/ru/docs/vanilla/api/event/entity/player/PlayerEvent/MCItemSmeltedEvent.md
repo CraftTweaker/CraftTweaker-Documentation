@@ -10,7 +10,7 @@ crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent>);
+new crafttweaker.api.event.entity.player.Player.MCItemSmeltedEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent>);
 ```
 | Параметр | Тип                                                                                                                                                       | Описание             |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
@@ -21,7 +21,7 @@ new crafttweaker.api.event.entity.player.PlayerEvent.MCItemSmeltedEvent(handler 
 ## Методы
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemSmeltedEvent.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCItemSmeltedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemSmeltedEvent.getPlayer();
@@ -39,15 +39,15 @@ myMCItemSmeltedEvent.getPlayer();
 
 ### getSmelting
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCItemSmeltedEvent.getSmelting();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
 Возвращает boolean
 
@@ -55,11 +55,11 @@ Determines if this event expects a significant result value. Note: Events with t
 myMCItemSmeltedEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
 Возвращает boolean
 
@@ -67,9 +67,9 @@ Determine if this function is cancelable at all. Returns: `If access to setCance
 myMCItemSmeltedEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
 Возвращает boolean
 
@@ -77,15 +77,15 @@ Determine if this event is canceled and should stop executing. Returns: `The cur
 myMCItemSmeltedEvent.isCanceled();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCItemSmeltedEvent.setCanceled(cancel as boolean);
+myMCItemSmeltedEvent.setCancel(отменена как boolean);
 ```
 
 | Параметр | Тип     | Описание             |
 | -------- | ------- | -------------------- |
-| cancel   | boolean | Описание отсутствует |
+| отменить | boolean | Описание отсутствует |
 
 
 
