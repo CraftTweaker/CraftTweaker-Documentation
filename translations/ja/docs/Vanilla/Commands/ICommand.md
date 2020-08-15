@@ -26,7 +26,7 @@ It might be required for you to import the package if you encounter any issues (
     </td>
     
     <td>
-      string
+      文字列
     </td>
   </tr>
   
