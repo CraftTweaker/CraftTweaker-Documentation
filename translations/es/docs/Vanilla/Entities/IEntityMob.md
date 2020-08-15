@@ -2,7 +2,7 @@
 
 A Mod.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityMob;`
@@ -11,9 +11,9 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityMob extends [IEntityCreature](/Vanilla/Entities/IEntityCreature/). That means all functions available to [IEntityCreature](/Vanilla/Entities/IEntityCreature/) objects also are available to IEntityMob.
 
-## Methods
+## Métodos
 
-### ZenMethods
+### Métodos
 
 #### Check if the mob is preventing a player's sleep
 
