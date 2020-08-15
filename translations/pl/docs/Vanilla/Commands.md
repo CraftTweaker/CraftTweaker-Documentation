@@ -379,7 +379,7 @@ Opis:
 Wysyła klikalny link, aby otworzyć katalog skryptów.  
 Można również wykonać z wiersza poleceń, które zamiast tego drukuje ścieżkę bezwzględną do katalogu do logu.
 
-## Seeds
+## Nasiona
 
 Użycie:
 
