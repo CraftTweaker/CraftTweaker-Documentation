@@ -1,7 +1,7 @@
 # Meta Get
 Get is an convenient alternative to looking up the meta value for all elements and compounds, but the conventional way i.e. <alchemistry:compound:17> still works fine
 
-## Package
+## Пакет
 ```zenscript
 mods.alchemistry.Util.get`
 ```
@@ -10,7 +10,7 @@ mods.alchemistry.Util.get`
 
 - **String Name** Element Name
 
-## Syntax
+## Синтаксис
 
 ```zenscript
 mods.alchemistry.Util.get(String name);
