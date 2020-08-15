@@ -1,11 +1,11 @@
-# Traits:
+# Merkmale:
 
-Traits is a new addition for Reskillable and makes it so you now can lock things behind a required Trait. Traits are similar to Skills in the way that we've moved them over to a Resource Location instead of a name to allow for more robust extendability. The Trait Syntax is as follows:
+Merkmale sind eine neue Ergänzung für Reskillable und machen es so, dass du jetzt Gegenstände hinter einem erforderlichen Merkmal sperren kannst. Merkmale ähneln Fähigkeiten, wie wir sie an einen Ressourcenstandort verschoben haben, anstatt an einen Namen, um eine robustere Erweiterbarkeit zu ermöglichen. Die Merkmals-Syntax lautet wie folgt:
 
-    Example:
-    trait|ResourceLocation
+    Beispiel:
+    Merkmal|Ressourcenposition
     
-    Working Example:
+    Arbeitsbeispiel:
     trait|reskillable:battle_spirit
     
 
