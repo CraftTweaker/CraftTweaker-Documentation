@@ -1,10 +1,10 @@
-# Alloy Smelter
+# 合金冶炼器
 
 ## 所属包名
 
 `import mods.enderio.AlloySmelter;`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] input** The ingredients. Must be between 1 and 3 ingredients.
@@ -19,7 +19,7 @@ mods.enderio.AlloySmelter.addRecipe(IItemStack output, IIngredient[] input, @Opt
 mods.enderio.AlloySmelter.addRecipe(<minecraft:iron_ingot>, [<minecraft:sand>, <minecraft:gravel>, <minecraft:brick>]);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.enderio.AlloySmelter.removeRecipe(IItemStack output);
