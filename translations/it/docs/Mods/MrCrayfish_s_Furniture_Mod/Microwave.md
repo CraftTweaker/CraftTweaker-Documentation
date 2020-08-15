@@ -1,34 +1,34 @@
-# Microwave
+# Microonde
 
-The Microwave heats up food items.
+Il Microonde riscalda gli oggetti alimentari.
 
-## Default Microwave Recipes
+## Ricette Microonde Predefinite
 
-- Beef -> Cooked Beef
-- Potato -> Baked Potato
+- Manzo -> Carne Cotta
+- Patata -> Patata Al Forno
 
 ## Rimozione
 
-## Remove matching microwave recipes.
+## Rimuovere le ricette a microonde corrispondenti.
 
 ```zenscript
-mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Microwave.remove(@Optional final IIngredient output, @Optional final IIngredient);
 
-// Remove recipes that require a Potato
-mods.cfm.Microwave.remove(null,<minecraft:potato>);
-// Remove recipes that result in Cooked Beef
+// Rimuovi ricette che richiedono una patata
+mods.cfm.Microwave. emove(null,<minecraft:potato>);
+// Rimuovi le ricette che si traducono in Manzo cotto
 mods.cfm.Microwave.remove(<minecraft:cooked_beef>);
-// Remove all recipes
+// Rimuovi tutte le ricette
 mods.cfm.Microwave.remove();
 ```
 
 ## Aggiunta
 
-## Add a microwave recipe.
+## Aggiungi una ricetta a microonde.
 
 ```zenscript
-mods.cfm.Microwave.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Microwave.addRecipe(@Nonnull finale IItemStack output, @Nonnull finale IItemStack input);
 
-// Add a recipe that makes a 4 sticks from one sugar cane
-mods.cfm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
+// Aggiungi una ricetta che fa un 4 bastoncini da una canna da zucchero
+mods. fm.Microwave.addRecipe(<minecraft:stick>.withAmount(4),<minecraft:reeds>);
 ```
