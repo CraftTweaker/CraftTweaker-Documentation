@@ -1,24 +1,24 @@
 # IBlockPos
 
-An IBlockPos object represents a position in the game.
+Un oggetto IBlockPos rappresenta una posizione nel gioco.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IBlockPos;`
 
-## ZenMethods without parameters
+## ZenMethods senza parametri
 
-| ZenMethod    | ZenGetter/Caster | Return Type                               | Description                                |
+| ZenMethod    | ZenGetter/Caster | Tipo Di Reso                              | Descrizione                                |
 | ------------ | ---------------- | ----------------------------------------- | ------------------------------------------ |
-| getX()       | x                | int                                       | Returns the position's X value             |
-| getY()       | y                | int                                       | Returns the position's Y value             |
-| getZ()       | z                | int                                       | Returns the position's Z value             |
+| getX()       | x                | int                                       | Restituisce il valore X della posizione    |
+| getY()       | y                | int                                       | Restituisce il valore Y della posizione    |
+| getZ()       | z                | int                                       | Restituisce il valore Z della posizione    |
 | asPosition3f | as IPosition3f   | [IPosition3f](/Vanilla/Utils/Position3f/) | Returns the position as Position3f Object. |
 
-## ZenMethods with parameters
+## ZenMethods con parametri
 
-### Get Offset
+### Ottieni Offset
 
 Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 
@@ -27,4 +27,4 @@ Returns a new IBlockPos that is `offset` blocks into the `direction` direction.
 Alternatively you can directly get the [IFacing](/Vanilla/World/IFacing/) objects using the static methods provided there.
 
 - [IFacing](/Vanilla/World/IFacing/) direction → The direction
-- int offset → how many blocks in that direction?
+- int offset → quanti blocchi in quella direzione?
