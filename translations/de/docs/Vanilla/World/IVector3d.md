@@ -26,7 +26,7 @@ crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
 | z          | double    |
 | normalized | IVector3d |
 
-## ZenMethods
+## ZenMethoden
 
 - double dotProduct(IVector3d other);
 - IVector3d crossProduct(IVector3d other);
