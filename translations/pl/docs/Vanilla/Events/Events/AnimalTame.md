@@ -1,14 +1,14 @@
 # AnimalTame
 
-This event is fired to determine if an animal is going to be tamed. If canceled, **the tame does not succeed**. Otherwise, it simply serves as a notification of the tame taking place.
+To wydarzenie jest strzelone do określenia, czy zwierzę ma zostać oswojone. Jeśli anulowano, **oswajanie nie powiodło się**. W przeciwnym razie służy on po prostu jako powiadomienie o oswojeniu.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.AnimalTameEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. nimalTameEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-AnimalTame Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia związane z Tame Zwierzęta zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -19,6 +19,6 @@ Następujące informacje mogą być pobierane/ustawione podczas wydarzenia:
 
 | ZenGetter | ZenSetter | Typ                                               |
 | --------- | --------- | ------------------------------------------------- |
-| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
-| `animal`  |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `zwierzę` |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
+| `zwierzę` |           | [IEntityAnimal](/Vanilla/Entities/IEntityAnimal/) |
 | `gracz`   |           | [IPlayer](/Vanilla/Players/IPlayer/)              |
