@@ -1,21 +1,21 @@
 # Advanced Recipes
 
-## Package
+## Пакет
 
 ```zenscript
 import mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
-There are several types of recipes:
+## Типы рецептов
+Существует несколько типов рецептов:
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### Рецепты Формы
+Формированные Рецепты - это рецепты, в которых имеет значение, в которые входит предмет. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. Таким образом, эта форма имеет форму рецепта.
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### Рецепты без форм
+Рецепты без форм - это рецепты, где только те предметы, которые вы поместите в сетку ремесла, в то время как форма не имеет значения. Например, синяя и желтая краска создадут зеленый краситель. Этот рецепт не заботится о том, где вы поставили предмет.
 
-## Add Recipes
+## Добавить рецепты
 
 ### addShaped
 ```zenscript
