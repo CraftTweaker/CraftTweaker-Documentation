@@ -1,20 +1,20 @@
-# Bracket Handlers
+# 尖括号引用
 
-## Bracket Handlers
+## 尖括号引用
 
-### Skill Bracket Handler:
+### 技能等级处理器：
 
-    ## Example:
+    ## 示例：
     <skill:resourcelocation>
     
-    ## Working Example:
+    ## 工作示例：
     <skill:reskillable:agility>
     
 
-### Trait Bracket Handler:
+### 特性套接口处理器：
 
-    ## Example:
+    ## 示例：
     <trait:resourcelocation>
     
-    ## Working Example:
+    ## 工作示例：
     <trait:reskillable:sidestep>
