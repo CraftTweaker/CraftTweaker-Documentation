@@ -1,46 +1,46 @@
-# Block Material Bracket Handler
+# ブロックマテリアルブラケットハンドラー
 
-The Block Material Bracket Handler gives you access to the Block Materials in the game. Currently the only Block Materials supported are:
+Block Material Bracket Handlerでは、ゲーム内のBlock Materialsにアクセスできます。 現在サポートされている唯一のブロックマテリアルは次のとおりです。
 
 <details>
-    <summary>Click to expand the Material list</summary>
+    <summary>クリックしてマテリアルリストを展開します</summary>
     <ul>
-        <li>Air</li>
-        <li>Grass</li>
+        <li>空気</li>
+        <li>草</li>
         <li>Ground</li>
-        <li>Wood</li>
-        <li>Rock</li>
-        <li>Iron</li>
-        <li>Anvil</li>
-        <li>Water</li>
+        <li>木材</li>
+        <li>岩</li>
+        <li>合金</li>
+        <li>金床</li>
+        <li>水</li>
         <li>Lava</li>
-        <li>Leaves</li>
-        <li>Plants</li>
+        <li>葉</li>
+        <li>植物</li>
         <li>Vine</li>
         <li>Sponge</li>
-        <li>Cloth</li>
-        <li>Fire</li>
-        <li>sand</li>
-        <li>Circuits</li>
-        <li>Carpet</li>
-        <li>Glass</li>
+        <li>服</li>
+        <li><unk></li>
+        <li>砂地</li>
+        <li>回路</li>
+        <li>絨毯(カーペット)</li>
+        <li>ガラス</li>
         <li>Redstone_Light</li>
         <li>TNT</li>
-        <li>Coral</li>
-        <li>Ice</li>
+        <li>珊瑚（サンゴ）</li>
+        <li>氷</li>
         <li>Packed_Ice</li>
-        <li>Crafted_Snow</li>
+        <li>作成された雪</li>
         <li>Cactus</li>
         <li>Clay</li>
         <li>Gourd</li>
         <li>Dragon_Egg</li>
-        <li>Portal</li>
-        <li>Cake</li>
-        <li>Web</li>
+        <li>ポータル</li>
+        <li>ケーキ</li>
+        <li>ウェブ</li>
     </ul>
 </details>
 
-Block Materials are referenced in the Material Bracket handler this way:
+ブロックマテリアルは、次の方法でマテリアルブラケットハンドラで参照されます。
 
 ```zenscript
 <blockmaterial:name>
@@ -48,4 +48,4 @@ Block Materials are referenced in the Material Bracket handler this way:
 <blockmaterial:wood>
 ```
 
-If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.
+ブロックマテリアルが見つかれば、 [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) オブジェクトが返されます。
