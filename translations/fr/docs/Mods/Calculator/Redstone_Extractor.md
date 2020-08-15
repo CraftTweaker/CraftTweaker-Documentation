@@ -5,7 +5,7 @@
 import mods.calculator.redstone;
 ```
 
-## Methods
+## Méthodes
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **int value** The amount of input adds to that machine.
