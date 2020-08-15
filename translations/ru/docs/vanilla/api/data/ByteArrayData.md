@@ -11,12 +11,12 @@ crafttweaker.api.data.ByteArrayData
 ```
 
 ## Реализованные интерфейсы
-ByteArrayData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+ByteArrayData реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData)
 
 ## Конструкторы
 ```zenscript
-new crafttweaker.api.data.ByteArrayData(internal as byte[]);
+new crafttweaker.api.data.ByteArrayData(внутренняя как байт[]);
 ```
 | Параметр   | Тип    | Описание             |
 | ---------- | ------ | -------------------- |
@@ -28,8 +28,8 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ### Добавить
 
 ```zenscript
-[4, 1, 2].add(value as crafttweaker.api.data.IData);
-[4, 1, 2].add("today");
+[4, 1, 2].add(значение как crafttweaker.api.data.IData);
+[4, 1, 2].add("сегодня");
 ```
 
 | Параметр | Тип                                                    | Описание                       |
@@ -39,8 +39,8 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 
 ```zenscript
-[4, 1, 2].add(index as int, value as crafttweaker.api.data.IData);
-[4, 1, 2].add(1, "beautiful");
+[4, 1, 2].add(индекс int, значение как crafttweaker.api.data.IData);
+[4, 1, 2].add(1, "красиво");
 ```
 
 | Параметр | Тип                                                    | Описание                                                                  |
@@ -49,61 +49,61 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 | value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Значение к добавлению в список                                            |
 
 
-### clear
+### очистить
 
-Removes every element in the list
+Удаляет каждый элемент списка
 
 ```zenscript
 [4, 1, 2].clear();
 ```
 
-### get
+### получить
 
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+Получает [crafttweaker.api.data.IData](/vanilla/api/data/IData) , хранящийся по данному индексу.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[4, 1, 2].get(index as int);
+[4, 1, 2].get(индекс в виде int);
 [4, 1, 2].get(0);
 ```
 
-| Параметр | Тип | Описание            |
-| -------- | --- | ------------------- |
-| index    | int | The index (0-based) |
+| Параметр | Тип | Описание   |
+| -------- | --- | ---------- |
+| index    | int | Индекс (0) |
 
 
 ### удалить
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+Удаляет [crafttweaker.api.data.IData](/vanilla/api/data/IData) , хранящуюся по заданному индексу.
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[4, 1, 2].remove(index as int);
+[4, 1, 2].remove(индекс в виде int);
 [4, 1, 2].remove(0);
 ```
 
-| Параметр | Тип | Описание            |
-| -------- | --- | ------------------- |
-| index    | int | The index (0-based) |
+| Параметр | Тип | Описание   |
+| -------- | --- | ---------- |
+| index    | int | Индекс (0) |
 
 
-### set
+### набор
 
-Sets the item at the provided index to the given value
+Устанавливает элемент по указанному индексу для заданного значения
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Возвращает [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-[4, 1, 2].set(index as int, value as crafttweaker.api.data.IData);
+[4, 1, 2].set(индекс int, значение как crafttweaker.api.data.IData);
 [4, 1, 2].set(0, "Bye");
 ```
 
-| Параметр | Тип                                                    | Описание                   |
-| -------- | ------------------------------------------------------ | -------------------------- |
-| index    | int                                                    | The index to set (0-based) |
-| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| Параметр | Тип                                                    | Описание                 |
+| -------- | ------------------------------------------------------ | ------------------------ |
+| index    | int                                                    | Индекс для установки (0) |
+| value    | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Новое значение           |
 
 
 
