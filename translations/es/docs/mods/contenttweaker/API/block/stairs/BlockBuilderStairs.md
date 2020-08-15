@@ -1,135 +1,135 @@
-# BlockBuilderStairs
+# Escaleras de BlockBuilder
 
-A special Block Builder that allows you to create stairs. <p> Stairs will have not one but three textures that you will need to supply: One for the top, one for the bottom and one for the sides. By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`. As with most things here, sample images are generated for you by default, though.
+Un Constructor de Bloques especial que te permite crear escaleras. <p> Las escaleras tendrán no una sino tres texturas que necesitarás ofrecer: Una para arriba, una para el fondo y otra para los lados. Por defecto, estas texturas usarán su nombre de bloque como nombre, sufijo por `_top`, `_bottom` o `_sides`. Como en la mayoría de las cosas aquí, las imágenes de ejemplo se generan para usted por defecto, sin embargo.
 
-This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-mods.contenttweaker.block.stairs.BlockBuilderStairs
+mods.contenttweaker.block.stairs.Escaleras de BlockBuilder
 ```
 
-## Implemented Interfaces
-BlockBuilderStairs implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implementadas
+BlockBuilderStairs implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## Métodos
-### build
+### construir
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instruye CoT para construir lo que se supone que este constructor está construyendo.
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
 ```
 
-| Parámetro        | Tipo   | Descripción                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | Cadena | The resource path to give this block |
+| Parámetro            | Tipo   | Descripción                              |
+| -------------------- | ------ | ---------------------------------------- |
+| ubicacin del recurso | Cadena | La ruta de recursos para dar este bloque |
 
 
 ### withBottomTexture
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+Le permite anular la ruta de la textura que debe utilizar la parte inferior. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parámetro     | Tipo                                                                             | Descripción                                |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| Parámetro        | Tipo                                                                             | Descripción                            |
+| ---------------- | -------------------------------------------------------------------------------- | -------------------------------------- |
+| textura inferior | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La textura a usar en la parte inferior |
 
 
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+Le permite anular la ruta de la textura que debe utilizar la parte inferior. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto. Usa una función que toma el nombre del bloque como entrada y devuelve la textura final para ella.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+nuevo BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as function.Función<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
 
-| Parámetro     | Tipo                                                                                                                                                                                                    | Descripción         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| Parámetro        | Tipo                                                                                                                                                                                                  | Descripción       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| textura inferior | función.Función&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | La función a usar |
 
 
-### withSidesTexture
+### con la textura lateral
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+Le permite anular la trayectoria de la textura que los lados deben utilizar. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
+nuevo BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parámetro    | Tipo                                                                             | Descripción                          |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| Parámetro    | Tipo                                                                             | Descripción                      |
+| ------------ | -------------------------------------------------------------------------------- | -------------------------------- |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La textura a usar para los lados |
 
 
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+Le permite anular la trayectoria de la textura que los lados deben utilizar. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto. Usa una función que toma el nombre del bloque como entrada y devuelve la textura final para ella.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+nuevo BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture como función.Función<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parámetro    | Tipo                                                                                                                                                                                                    | Descripción         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| Parámetro    | Tipo                                                                                                                                                                                                  | Descripción       |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| sidesTexture | función.Función&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | La función a usar |
 
 
-### withTopTexture
+### con TopTexture
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+Le permite anular la ruta de la textura que debe utilizar la parte superior. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parámetro  | Tipo                                                                             | Descripción                             |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| Parámetro  | Tipo                                                                             | Descripción                            |
+| ---------- | -------------------------------------------------------------------------------- | -------------------------------------- |
+| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | La textura a usar en la parte superior |
 
 
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+Le permite anular la ruta de la textura que debe utilizar la parte superior. Si ese espacio de nombres de la textura está en el espacio de nombres de CoT o cualquiera de sus complementos (que lo soportan), entonces la imagen se creará por defecto. Usa una función que toma el nombre del bloque como entrada y devuelve la textura final para ella.
 
- Returns: `This builder, used for method chaining`
+ Devuelve: `Este constructor, utilizado para encadenamiento de métodos`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+Tipo de retorno: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+nuevo BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Función<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| Parámetro  | Tipo                                                                                                                                                                                                    | Descripción         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| Parámetro  | Tipo                                                                                                                                                                                                  | Descripción       |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| topTexture | función.Función&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | La función a usar |
 
 
 
