@@ -2,44 +2,44 @@
 
 ## Pakiet
 
-To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
+Aby uzyskać dostęp do `Sieve` bez wyjaśnienia pełnej ścieżki, możesz zaimportować pakiet u góry swojego skryptu z następującymi danymi:
 
 ```zenscript
-import mods.exnihilocreatio.Sieve;
+importuj mods.exnihilocreatio.Sieve;
 ```
 
 ## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[Blok Igredient](/Vanilla/Variable_Types/IIngredient/)** Blok, który upuszcza wyjście.
+- **[IItemStack](/Vanilla/Items/IItemStack/) wyjście** element, który usuwa się z bloku..
+- **Szansa na pływanie** Szansa powinna wynosić od 0 do 1.
 
-## String Mesh
+## Siatka String
 
 ```zenscript
-Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Siatka Krzemienia
 
 ```zenscript
-Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Żelazna siatka
 
 ```zenscript
-Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, Szansa Pływania);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Siatka diamentowa
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+Sieve.addDiamondMeshRecipe(Ingredient, IItemStack, Szansa Pływania);
+Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1;
 ```
 
 ## Usuwanie
