@@ -1,10 +1,10 @@
 # ICommand
 
-An ICommand Object represents a command ingame.
+Un oggetto ICommand rappresenta un ingame di comando.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.command.ICommand;`
 
 ## ZenGetters
@@ -32,11 +32,11 @@ It might be required for you to import the package if you encounter any issues (
   
   <tr>
     <td>
-      aliases
+      alias
     </td>
     
     <td>
-      List<String\>
+      Elenco<String\>
     </td>
   </tr>
 </table>
@@ -46,6 +46,6 @@ It might be required for you to import the package if you encounter any issues (
 - String getUsage([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
 - void execute([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args);
 - boolean checkPermission([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
-- List<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
+- Elenco<string> getTabCompletions([IServer](/Vanilla/Game/IServer/) server, [ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String[] args, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) targetPos);
 - boolean isUsernameIndex(String[] args, int index);
-- command1 != command2; → You can compare them!
+- command1 != command2; → Puoi confrontarli!
