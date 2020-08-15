@@ -2,7 +2,7 @@
 
 This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
 
-### Importing
+### Importazione
 
 ```zenscript
 import mods.poweredthingies.Tweaker;
