@@ -1,14 +1,14 @@
-# Drying
+# Essiccazione
 
-The `Drying` package allows you to add or remove Drying recipes.
+Il pacchetto `Drying` consente di aggiungere o rimuovere ricette di essiccazione.
 
 ## Chiamata
 
-You can call the Drying package using `mods.tconstruct.Drying`
+Puoi chiamare il pacchetto di essiccazione usando `mods.tconstruct.Drying`
 
 ## Aggiunta
 
-The time is in ticks
+Il tempo è in zecche
 
 ```zenscript
 //mods.tconstruct.Drying.addRecipe(IItemStack output, IIngredient input, int time);
