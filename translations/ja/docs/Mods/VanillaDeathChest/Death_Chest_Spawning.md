@@ -1,33 +1,33 @@
-# Death Chest Spawning
+# 死の宝箱のスポーニング
 
 ## パッケージのインポート
 
 `import mods.vanilladeathchest.DeathChestSpawning;`
 
-## Chat message
+## チャットメッセージ
 
 ```zenscript
 //DeathChestSpawning.setChatMessage(string stage, string message);
-DeathChestSpawning.setChatMessage("example_stage", "A chest appears at [%s, %s, %s]!");
+DeathChestSpawning.setChatMessage("example_stage", "A chest appear at [%s, %s, %s]!");
 ```
 
-The string takes three arguments: the X, Y and Z coordinates of the death chest.
+文字列は、死の胸のX、Y、Z座標の3つの引数をとります。
 
-## Container display name
+## コンテナ表示名
 
 ```zenscript
 //DeathChestSpawning.setContainerDisplayName(string stage, string name);
 DeathChestSpawning.setContainerDisplayName("example_stage", "Your Items");
 ```
 
-## Registry name regex
+## レジストリ名の正規表現
 
 ```zenscript
 //DeathChestSpawning.setRegistryNameRegex(string stage, string regex);
-DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*");
+DeathChestSpawning.setRegistryNameRegex("example_stage", ".*dirt.*');
 ```
 
-## Use container in inventory
+## インベントリ内のコンテナを使用
 
 ```zenscript
 //DeathChestSpawning.setUseContainerInInventory(string stage, bool flag);
