@@ -2,7 +2,7 @@
 
 The Cauldron package is used for adding/removing recipes for the cauldron. Note that if the cauldron is set to `simple` in the config, only recipes using water will be able to be crafted but all recipes will still show in JEI.
 
-## Calling
+## Anruf
 
 You can call the Cauldron package using `mods.inspirations.Cauldron`
 
@@ -129,7 +129,7 @@ Removes an existing potion recipe from the cauldron. By default no potion recipe
 
 Inspirations features only one type of dye recipe to transform an item using a dye. Dye recipes take on a string dye color which represents a value from `EnumDyeColor`. To get a list of all values, the command `/ct inspirations dyes` is provided.
 
-### Adding
+### Hinzufügen
 
 Adds a recipe converting the input to the output using the dye consuming a single level of dyed water.
 
