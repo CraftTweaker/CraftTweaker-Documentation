@@ -21,22 +21,22 @@ PlayerFillBucket Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                        |
+| ZenGetter        | Type de retour                                     |
 | ---------------- | -------------------------------------------------- |
 | `canceled`       | boolean                                            |
 | `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
 | `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
 | `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `x`              | int                                                |
-| `y`              | int                                                |
-| `z`              | int                                                |
+| `x`              | Indice                                             |
+| `y`              | Indice                                             |
+| `z`              | Indice                                             |
 | `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
 | `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
+| `Bloquer`        | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `dimension`      | Indice                                             |
 | `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled.
 
