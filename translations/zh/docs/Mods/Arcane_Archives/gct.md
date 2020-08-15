@@ -1,35 +1,35 @@
 ### 所属类名
 
 ```zenscript
-import mods.arcanearchives.GCT;
+导入 mods.arcanearchives.GCT;
 ```
 
 #### 可用方法
 
 ```zenscript
-void addRecipe(
-  string name,         // the recipe name
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
-);
+无效 addRecipe(
+  字符串名称, // 配方名称
+  IItemStack 输出, // 输出为项目堆栈
+  IIngredient[…]输入// 输入为成份数组
+；
 ```
 
 * * *
 
 ```zenscript
-void removeRecipe(
-  IItemStack output // the output itemstack to be removed (quantity must match)
-);
+无效的 removeRecipe(
+  IItemStack 输出 // 要删除的输出项目堆栈(数量必须匹配)
+)；
 ```
 
 * * *
 
 ```zenscript
-void replaceRecipe(
-  string name,         // the recipe name (must already exist)
-  IItemStack output,   // the output as an itemstack
-  IIngredient[] inputs // the inputs as an array of ingredients
-);
+无效的替换累积(
+  字符串名称 // 配方名称 (必须已存在)
+  IItemStack 输出， // 输出为项目堆栈
+  IIngredient[…]输入// 输入为成份数组
+；
 ```
 
 * * *
@@ -37,14 +37,14 @@ void replaceRecipe(
 ### 例子
 
 ```zenscript
-import mods.arcanearchives.GCT;
+导入 mods.arcanearchives.GCT;
 
-// Removes the recipe for radiant dust
+// 移除辐射粉尘的配方
 GCT.removeRecipe(<arcanearchives:radiant_dust>*2);
 
-// Adds a new recipe for radiant dust
-GCT.addRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
+// 添加新的辐射粉尘配方
+GCT。 ddRecipe("radiant_dust", <arcanearchives:radiant_dust>*2, [<minecraft:flint>, <arcanearchives:raw_quartz>]);
 
-// Replaces the shaped radiant quartz recipe without disordering the GCT screen
-GCT.replaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
+// 替换形状的辐射方块的方块，无需对GCT 屏幕进行排序
+GCT。 eplaceRecipe("shaped_quartz", <arcanearchives:shaped_quartz>, [<arcanearchives:raw_quartz>*10]);
 ```
