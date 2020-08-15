@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 Unlike [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) however, players don't are IEnitiyLiving objects!
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLiving;`
@@ -12,31 +12,31 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/). That means all functions available to [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) objects also are available to IEntityLiving objects.
 
-## Methods
+## Métodos
 
 ### ZenGetters/ZenSetters
 
-| ZenGetter           | ZenSetter     | Type                                                      |
+| ZenGetter           | Ajuste        | Tipo                                                      |
 | ------------------- | ------------- | --------------------------------------------------------- |
 | attackInterval      |               | int                                                       |
 | attackTarget        | attackTarget  | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| canBeSteered        |               | bool                                                      |
-| canPickUpLoot       | canPickUpLoot | bool                                                      |
-| canSpawnHere        |               | bool                                                      |
+| canBeSteered        |               | pluma                                                     |
+| canPickUpLoot       | canPickUpLoot | pluma                                                     |
+| canSpawnHere        |               | pluma                                                     |
 | getLeashedToEntity  |               | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isAIDisabled        | isAIDisabled  | bool                                                      |
-| isColliding         |               | bool                                                      |
-| isLeashed           |               | bool                                                      |
-| isLeftHanded        | isLeftHanded  | bool                                                      |
-| isNoDespawnRequired |               | bool                                                      |
+| isAIDisabled        | isAIDisabled  | pluma                                                     |
+| isAIDisabled        | isAIDisabled  | pluma                                                     |
+| isColliding         |               | pluma                                                     |
+| isLeashed           |               | pluma                                                     |
+| isLeftHanded        | isLeftHanded  | pluma                                                     |
+| isNoDespawnRequired |               | pluma                                                     |
 | maxSpawnedInChunk   |               | int                                                       |
-|                     | moveForward   | float                                                     |
-|                     | moveStrafing  | float                                                     |
-|                     | moveVertival  | float                                                     |
-| renderSizeModifier  |               | float                                                     |
+|                     | moveForward   | flotante                                                  |
+|                     | moveStrafing  | flotante                                                  |
+|                     | moveVertival  | flotante                                                  |
+| renderSizeModifier  |               | flotante                                                  |
 
-### ZenMethods
+### Métodos
 
 #### Play living sound
 
