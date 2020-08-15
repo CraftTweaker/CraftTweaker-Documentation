@@ -1,23 +1,23 @@
-# Blood Altar
+# Blutaltaren
 
-## Package
+## Paket
 
 `mods.bloodmagic.BloodAltar`
 
 ## Addition
 
-This creates a blood altar recipe that uses the given `input` item and produces the given `output` item.  
-To get the `minimumTier`, substract 1 from what JEI/the sigil tells you, so a T1 altar would require `0`.  
-The `syphon` value is the amount of Life Essence to syphon from the Blood Altar over the course of the craft.  
-The `consumeRate` is how quickly the Life Essence is syphoned.  
-The `drainRate` is how quickly progress is lost if the Blood Altar runs out of Life Essence during the craft.
+Dadurch wird ein Blutaltarrezept erzeugt, das den `Eingabewert` verwendet und den angegebenen `Ausgabe` Gegenstand erzeugt.  
+Um die `minimumTier`zu erhalten , substract 1 von dem, was JEI/das Silber dir mitteilt, so dass ein T1-Altar `0`benötigt.  
+Der `Syphon` Wert ist die Menge der LebensEssenz die im Laufe des Handwerks vom Blutaltar-Syphon syphon aus dem Blutaltar.  
+Die `Verbrauchsrate` ist wie schnell die LebensEssenz geschnürt wird.  
+Die `drainRate` ist, wie schnell der Fortschritt verloren geht, wenn der Blutaltar-Altar während der Fahrt nicht mehr lebenswichtig ist.
 
 ```zenscript
-//mods.bloodmagic.BloodAltar.addRecipe(IItemStack output, IItemStack input, int minimumTier, int syphon, int consumeRate, int drainRate);
+//mods.bloodmagic.BloodAltar.addRecipe(IItemStack Output, IItemStack Input, int minimumTier, int syphon, int consumeRate, int drainRate);
 mods.bloodmagic.BloodAltar.addRecipe(<minecraft:glass>, <minecraft:stick>, 0, 20,30,40);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.bloodmagic.BloodAltar.removeRecipe(IItemStack input);
