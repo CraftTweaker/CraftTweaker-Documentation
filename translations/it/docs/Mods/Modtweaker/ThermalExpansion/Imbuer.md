@@ -1,4 +1,4 @@
-# Alchemical Imbuer
+# Imbuer Alchemico
 
 ## Pacchetto
 
