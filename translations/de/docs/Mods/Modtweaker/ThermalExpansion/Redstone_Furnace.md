@@ -11,7 +11,7 @@
 mods.thermalexpansion.RedstoneFurnace.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, 3600);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.thermalexpansion.RedstoneFurnace.removeRecipe(IItemStack input);
