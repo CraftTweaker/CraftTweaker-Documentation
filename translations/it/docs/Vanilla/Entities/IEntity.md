@@ -1,18 +1,18 @@
 # IEntity
 
-Entity Interface. Used to obtain and modify information entities' data.  
-Entities are everything that is freely movable in the world such as players, monsters, items on the ground any many more.
+Interfaccia Di Entità. Utilizzato per ottenere e modificare i dati delle entità di informazione.  
+Le entità sono tutto ciò che è liberamente mobile nel mondo come giocatori, mostri, oggetti sul campo molti altri.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.entity.IEntity;`
 
-## Extending ICommandSender
+## Estensione Di ICommandSender
 
-IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means that all methods that are availabel to [ICommandSender](/Vanilla/Commands/ICommandSender/) Objects also are available to IEntity Objects!
+IEntity estende [ICommandSender](/Vanilla/Commands/ICommandSender/). Ciò significa che tutti i metodi disponibili per gli oggetti di [ICommandSender](/Vanilla/Commands/ICommandSender/) sono disponibili anche per gli oggetti di IEntity!
 
-<details><summary>Derived Methods</summary> 
+<details><summary>Metodi Derivati</summary> 
 
 - entity.displayName
 - entity.position
@@ -22,12 +22,12 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 
 ## ZenGetters
 
-| GetterName               | GetterMethod      | Return Type (*can be null*)                                 |
+| GetterName               | GetterMethod      | Tipo di ritorno (*can be null*)                             |
 | ------------------------ | ----------------- | ----------------------------------------------------------- |
-| air                      | getAir()          | int                                                         |
+| aria                     | getAir()          | int                                                         |
 | alive                    | isAlive()         | boolean                                                     |
 | alwaysRenderNameTag      |                   | boolean                                                     |
-| armorInventory           |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
+| armorInventory           |                   | Lista<[IItemStack](/Vanilla/Items/IItemStack/)              |
 | canBeAttackedWithItem    |                   | boolean                                                     |
 | canBeCollidedWith        |                   | boolean                                                     |
 | canPassengerSteer        |                   | boolean                                                     |
@@ -37,11 +37,11 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | definizione              |                   | *[IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)* |
 | dimensione               | getDimension()    | int                                                         |
 | doesTriggerPressurePlate |                   | boolean                                                     |
-| equipmentAndArmor        |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
-| eyeHeight                |                   | galleggiante                                                |
+| equipaggiamentoAndArmor  |                   | Lista<[IItemStack](/Vanilla/Items/IItemStack/)              |
+| altezzaAltezza           |                   | galleggiante                                                |
 | hasCustomName            |                   | boolean                                                     |
 | hasNoGravity             |                   | boolean                                                     |
-| heldEquipment            |                   | List<[IItemStack](/Vanilla/Items/IItemStack/)               |
+| possedutoEquipaggiamento |                   | Lista<[IItemStack](/Vanilla/Items/IItemStack/)              |
 | id                       |                   | int                                                         |
 | immuneToFire             | isImmuneToFire()  | boolean                                                     |
 | isBeingRidden            |                   | boolean                                                     |
@@ -51,30 +51,30 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | isImmuneToExplosions     |                   | boolean                                                     |
 | isInLava                 |                   | boolean                                                     |
 | isInsideOpaqueBlock      |                   | boolean                                                     |
-| isInvisible              |                   | boolean                                                     |
-| isInvulnerable           |                   | boolean                                                     |
+| isInvisibile             |                   | boolean                                                     |
+| isInvulnerabile          |                   | boolean                                                     |
 | isInWater                |                   | boolean                                                     |
 | isOutsideBorder          |                   | boolean                                                     |
 | isOverWater              |                   | boolean                                                     |
 | isPushedByWater          |                   | boolean                                                     |
-| isRiding                 |                   | boolean                                                     |
+| isEquitazione            |                   | boolean                                                     |
 | isSilent                 |                   | boolean                                                     |
 | isSneaking               |                   | boolean                                                     |
 | isSprinting              |                   | boolean                                                     |
 | lowestRidingEntity       |                   | *IEntity*                                                   |
 | maxFallHeight            |                   | int                                                         |
 | maxInPortalTime          |                   | int                                                         |
-| parts                    |                   | IEntity[]                                                   |
-| passengers               | getPassengers()   | List<IEntity\>                                             |
-| passengersRecursive      |                   | List<IEntity\>                                             |
+| parti                    |                   | Entità[]                                                    |
+| passeggeri               | getPassengers()   | Elenco<IEntity\>                                           |
+| passengersRecursive      |                   | Elenco<IEntity\>                                           |
 | portalCooldowne          |                   | int                                                         |
-| position3f               | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
+| posizione3f              | getPosition3f()   | [Position3f](/Vanilla/Utils/Position3f/)                    |
 | ridingEntity             | getRidingEntity() | *IEntity*                                                   |
 | shouldRiderSit           |                   | boolean                                                     |
-| tags                     |                   | List<string\>                                              |
+| tag                      |                   | Elenco<string\>                                            |
 | team                     |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
-| wet                      | isWet()           | boolean                                                     |
-| world                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
+| bagnato                  | isWet()           | boolean                                                     |
+| mondo                    |                   | [IWorld](/Vanilla/World/IWorld/)                            |
 | x                        | getX()            | doppia                                                      |
 | y                        | getY()            | doppia                                                      |
 | z                        | getZ()            | doppia                                                      |
@@ -85,29 +85,29 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posY                     |                   | doppia                                                      |
 | posZ                     |                   | doppia                                                      |
 | rotationYaw              |                   | galleggiante                                                |
-| rotationPitch            |                   | galleggiante                                                |
-| lookingDirection         |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
+| rotazionePitch           |                   | galleggiante                                                |
+| guardandoDirezione       |                   | [IVector3d](/Vanilla/World/IVector3d/)                      |
 
 ## ZenSetters
 
 | SetterName          | SetterMethod        | Tipo Parametro                         |
 | ------------------- | ------------------- | -------------------------------------- |
-| air                 | setAir(seconds)     | int                                    |
+| aria                | setAir(secondi)     | int                                    |
 | alwaysRenderNameTag |                     | boolean                                |
 | customName          | setCustomName(name) | stringa                                |
 | dimensione          | setDimension(id)    | int                                    |
-| fire                | setFire(seconds)    | int                                    |
+| fuoco               | setFire(secondi)    | int                                    |
 | hasNoGravity        |                     | boolean                                |
 | id                  |                     | int                                    |
 | isGlowing           |                     | boolean                                |
-| isInvisible         |                     | boolean                                |
+| isInvisibile        |                     | boolean                                |
 | isOutsideBorder     |                     | boolean                                |
 | isSilent            |                     | boolean                                |
 | isSneaking          |                     | boolean                                |
 | isSprinting         |                     | boolean                                |
-| position            | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| posizione           | setPosition(pos)    | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | rotationYaw         |                     | galleggiante                           |
-| rotationPitch       |                     | galleggiante                           |
+| rotazionePitch      |                     | galleggiante                           |
 | motionX             |                     | doppia                                 |
 | motionY             |                     | doppia                                 |
 | motionZ             |                     | doppia                                 |
@@ -115,31 +115,31 @@ IEntity extends [ICommandSender](/Vanilla/Commands/ICommandSender/). That means 
 | posY                |                     | doppia                                 |
 | posZ                |                     | doppia                                 |
 
-## More ZenMethods
+## Più ZenMethods
 
 - boolean attackEntityFrom([IDamageSource](/Vanilla/Damage/IDamageSource/) source, float amount);
 - boolean canTrample([IWorld](/Vanilla/World/IWorld/) world, [IBlockDefinition](/Vanilla/Blocks/IBlockDefinition/) block, [IBlockPos](/Vanilla/World/IBlockPos/) pos, float fall);
 - boolean isInsideOfMaterial([IMaterial](/Vanilla/Blocks/IMaterial/) material);
-- double getDistanceSqToEntity(entity); → Returns the distance to the given Entity
+- double getDistanceSqToEntity(entità); → Restituisce la distanza all'entità data
 - [IData](/Vanilla/Data/IData/) getNBT();
-- [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → Returns the [item](/Vanilla/Items/IItemStack/) that picking up the entity would return (e.g. the item id the entity is an item or the minecart item)
+- [IItemStack](/Vanilla/Items/IItemStack/) getPickedResult(); → Restituisce il [elemento](/Vanilla/Items/IItemStack/) che raccogliendo l'entità restituirebbe (e. . l' id dell' elemento che l' entità è un elemento o l' oggetto della miniera)
 - void addTag(String tag);
-- void extinguish(); → Extinguishes the entity, if on fire
+- void extinguish(); → Estingue l'entità, se in fiamme
 - void onEntityUpdate();
 - void onKillCommand();
 - void onUpdate();
 - void removeTag(String tag);
-- void setDead(); → Kills the entity
+- void setDead(); → Uccidi l'entità
 - void spawnRunningParticles();
 - void removePassengers();
 - void dismountRidingEntity();
 - boolean isOnSameTeam(IEntity other);
 - void setInWeb();
 - boolean isEntityEqual(IEntity other);
-- boolean isInvulnerableTo([IDamageSource](/Vanilla/Damage/IDamageSource/) source);
+- booleano isInvulnerableTo([IDamageSource](/Vanilla/Damage/IDamageSource/) source);
 - boolean shouldRiderDismountInWater(IEntity rider)
 - boolean boolean isPassenger(IEntity entity);
 - boolean isRidingSameEntity(IEntity other);
 - [IRayTraceResult](/Vanilla/World/IRayTraceResult/) getRayTrace(double blockReachDistance, float partialTicks, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(valueBoolean = true) boolean returnLastUncollidableBlock);
 - void update([IData](/Vanilla/Data/IData/) data);
-- boolean onGround(); → Returns true if the entity is on the ground, and false when in the air
+- booleano suGround(); → Restituisce vero se l'entità è a terra, e falso quando in aria
