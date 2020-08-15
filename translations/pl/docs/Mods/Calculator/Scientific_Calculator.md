@@ -1,21 +1,21 @@
 # Scientific Calculator
 
-## Package
+## Pakiet
 ```zenscript
 import mods.calculator.scientific;
 ```
 
-## Methods
+## Metody
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Dodanie
 ```zenscript
 scientific.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
 ```
 
-## Removal
+## Usuwanie
 ```zenscript
 scientific.removeRecipe(IIngredient output);
 ```
