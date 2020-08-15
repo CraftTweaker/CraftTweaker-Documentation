@@ -1,6 +1,6 @@
-# Plate Bending Machine
+# Piastra Piegatura Macchina
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.plateBendingMachine`
 
 ## Aggiunta Di Ricette
