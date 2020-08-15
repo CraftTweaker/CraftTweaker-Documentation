@@ -278,7 +278,7 @@ nav:
         - 标签：“Mods/Boson/Loaders/Tags.md”
       - 预处理器指令：
         - 实验标志：“Mods/Boson/Preprocessor/Exp.md”
-      - Tags:
+      - 标签：
         - 概念：“Mods/Boson/Tags/Concept.md”
         - 套装处理器：“Mods/Boson/Tags/BraketHandler.md”
         - 标签：“Mods/Boson/Tags/Tag.md”
