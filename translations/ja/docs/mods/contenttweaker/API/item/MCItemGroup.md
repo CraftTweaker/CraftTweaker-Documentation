@@ -2,10 +2,10 @@
 
 An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
@@ -35,9 +35,9 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 <itemgroup:misc>.setBackgroundImageName(texture as String);
 ```
 
-| Parameter | Type | Description            |
-| --------- | ---- | ---------------------- |
-| texture   | 文字列型 | The texture to be used |
+| パラメータ   | タイプ  | 説明                     |
+| ------- | ---- | ---------------------- |
+| texture | 文字列型 | The texture to be used |
 
 
 ### setNoScrollbar
@@ -67,8 +67,8 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 
 ## プロパティ
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| 名称            | タイプ  | Has Getter | Has Setter |
+| ------------- | ---- | ---------- | ---------- |
+| commandString | 文字列型 | true       | false      |
+| 小道            | 文字列型 | true       | false      |
 
