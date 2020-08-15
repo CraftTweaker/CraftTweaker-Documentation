@@ -12,10 +12,10 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | 戻り値                                   |
 | ----------- | ------------------------------------- |
-| `canceled`  | boolean                               |
-| `processed` | boolean                               |
+| `canceled`  | boolean型                              |
+| `processed` | boolean型                              |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
