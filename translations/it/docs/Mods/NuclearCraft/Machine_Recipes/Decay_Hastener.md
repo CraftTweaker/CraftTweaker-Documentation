@@ -1,6 +1,6 @@
 # Decay Hastener
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.decay_hastener`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.decay_hastener.addRecipe([itemInput, itemOutput, @Optional dou
 ```zenscript
 mods.nuclearcraft.decay_hastener.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.decay_hastener.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.decay_hastener.removeAllRecipes();
+mods.nuclearcraft.decay_hastener.removeAllRicette();
 ```
