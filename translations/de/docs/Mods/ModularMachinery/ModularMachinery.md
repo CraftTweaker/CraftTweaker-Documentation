@@ -1,6 +1,6 @@
-# ModularMachinery
+# Modularmaschine
 
-A modpack-maker toolset to create custom, massive, unique and complex machines and recipes from scratch with JSON.  
-Provides **native** CraftTweaker support, so if something doesn't work but HellFirePVP [here](https://github.com/HellFirePvP/ModularMachinery/issues)
+Ein Modpacker-Werkzeugset für die Erstellung individueller, massiver, einzigartiger und komplexer Maschinen und Rezepte von Grund auf mit JSON.  
+Bietet **native** CraftTweaker Unterstützung, also wenn etwas nicht funktioniert außer HellFirePVP [hier](https://github.com/HellFirePvP/ModularMachinery/issues)
 
-You cannot create Machines from here, but recipes for them. You use the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) to create the initial recipe Object and then the [RecipePrimer's](/Mods/ModularMachinery/Recipes/RecipePrimer/) Methods to add inputs/outputs to the recipe and lastly, to register it.
+Sie können nicht von hier aus Maschinen erstellen, sondern Rezepte für sie. Du verwendest den [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) um das ursprüngliche Rezeptobjekt zu erstellen und dann die [RecipePrimer's](/Mods/ModularMachinery/Recipes/RecipePrimer/) Methoden, um Eingänge/Ausgaben zum Rezept hinzuzufügen und schließlich, um es zu registrieren.
