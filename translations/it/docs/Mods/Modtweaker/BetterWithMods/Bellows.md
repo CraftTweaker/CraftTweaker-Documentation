@@ -1,10 +1,10 @@
-# Bellows
+# Soffietto
 
-The Bellows registry allows adding items to a weight class for whether it can be blown when in front of a Bellows
+Il registro dei soffietti consente di aggiungere elementi a una classe di peso per se può essere soffiato di fronte a un soffietto
 
-Value can be a decimal between (0, 128]. In which the number dictates how many blocks away from the bellows the item will be blown until it does not move anymore.
+Il valore può essere un decimale tra (0, 128]. In cui il numero determina quanti blocchi di distanza dal soffietto l'oggetto sarà soffiato fino a quando non si muove più.
 
 ```zenscript
-mods.betterwithmods.Bellows.set(IItemStack stack, float value);
+mods.betterwithmods.Bellows.set(IItemStack stack, valore float);
 
 ```
