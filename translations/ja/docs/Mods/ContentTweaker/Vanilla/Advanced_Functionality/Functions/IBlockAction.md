@@ -1,23 +1,23 @@
 # IBlockAction
 
-The IBlockAction function can be added to a [Block](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) and, depending on where you added it, will be triggered when the block is placed or broken.
+IBlockAction 関数は [ブロック](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) に追加できます。 追加した場所に応じて、ブロックが置かれたり壊れたりした時にトリガーされます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.IBlockAction;`
 
-## Parameters
+## パラメータ
 
-The IBlockAction is a function with the following parameters:
+IBlockAction は以下のパラメータを持つ関数です。
 
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world the block is in
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) position → The Block's position
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) state → Contains information on the block, such as the Block itself and its metadata
+- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) 世界 → ブロックのある世界
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) の位置 → ブロックの位置
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) の状態 → ブロック自体とそのメタデータなどのブロックに関する情報を含む
 
-The function doesn't have a return value!
+関数は戻り値を持っていません！
 
-## Example
+## 例
 
 ```zenscript
 zsBlock.onBlockBreak = function(world, blockPos, blockState){
