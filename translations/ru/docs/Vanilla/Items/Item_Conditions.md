@@ -1,130 +1,130 @@
-# Item Conditions
+# Условия элемента
 
-Sometimes normal items won't cut it:
+Иногда обычные элементы не обрезают:
 
-Sometimes we want to be able to specify recipes that only work when the input item fulfills some conditions.
+Иногда мы хотим иметь возможность указывать рецепты, которые работают только тогда, когда вводный элемент выполняет некоторые условия.
 
-Sometimes we want to be able to specify recipes that will produce a special item, be it with NBT-Tag or Damage value or otherwise.
+Иногда мы хотим иметь возможность указывать рецепты, которые производят особый предмет, будь то значение NBT-Tag или Урон или наоборот.
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemCondition;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.item.IItemCondition;`
 
-## Input Conditions
+## Входные условия
 
-These will affect the items that you can use to craft the resulting item. Remember, you can mix modifiers, to mix Damage and NBT-Tag, for example
+Они повлияют на предметы, которые можно использовать для создания результирующего предмета. Помните, что вы можете смешивать модификаторы для смешивания урона и NBT-тег, например,
 
 ```zenscript
-<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't we all butterflies?"}});
+<minecraft:iron_pickaxe>.onlyDamaged().withTag({display: {Lore: "Aren't all butterflies?"}});
 ```
 
-### Damage
+### Урон
 
-#### anyDamage
+#### любой урон
 
-The input item's damage value does not matter for the recipe
+Значение урона предмета не имеет значения для рецепта
 
 ```zenscript
 item.anyDamage()
 ```
 
-#### onlyDamaged
+#### только поврежден
 
-The input item needs to be damaged
+Элемент ввода должен быть повреждён
 
 ```zenscript
 item.onlyDamaged();
 ```
 
-#### Damaged at least
+#### Повреждено по крайней мере
 
-Input item's damage value needs to be at least the specified `value`  
-`Value` is an int
-
-```zenscript
-item.onlyDamageAtLeast(value);
-```
-
-#### Damage at most
-
-Input item's damage value needs to be at max the specified `value`  
-`Value` is an int
+Значение повреждения входящего элемента должно быть по крайней мере указанным значением ``  
+`Значение` является int
 
 ```zenscript
-item.onlyDamageAtMost(value);
+item.onlyDamageAtLeast(значение);
 ```
 
-#### Damage between
+#### Максимальный урон
 
-Input item's damage value needs to be between the speciefied `value1` and `value2`  
-`Value1` is an int  
-`Value2` is an int
+Значение повреждения входящего элемента должно быть не менее `указанного значения`  
+`Значение` является int
 
 ```zenscript
-item.onlyDamageBetween(value1, value2);
+item.onlyDamageAtMost(значение);
 ```
 
-### Get Items back or explicitly forbid an item's reusability
+#### Урон между
 
-Sometimes you need a recipe where you get some of your input items back.  
-By applying `transformDamage(int)` you can create such recipes.
-
-#### transformDamage
-
-The input item will receive `value` damage points and you will get it back, unless it breaks during the crafting process.  
-`Value` is an int
+Значение урона входящего элемента должно быть между заданным `значением1` и `значением`  
+`Значение1` является int  
+`Значение2` является int
 
 ```zenscript
-item.transformDamage(value);
+item.onlyDamageBetween(значение1, значение2);
 ```
 
-### NBT-Tags
+### Получить предметы или явно запретить повторное использование предмета
 
-Sometimes you want your ingredients to need a specific NBT-Tag. The recipe doesn't care if your item has NBT-Tags other than the ones specified, So a pickaxe with a specific lore may also be enchanted!
+Иногда вам нужен рецепт, в котором вы получите некоторые входящие элементы.  
+применяя `transformage(int)` вы можете создать такие рецепты.
 
-If you use `withTag` jei will display it properly, if you use `onlyWithTag`, jei will only display a tagless item!
+#### преобразование повреждения
 
-Here's how you do it: `NBTTag` is your NBT Data
+Введённый предмет получит `значение` очков урона, и вы получите его обратно, если только он не будет прерван во время процесса создания.  
+`Значение` является подсказкой
+
+```zenscript
+item.transformDamage(значение);
+```
+
+### NBT-теги
+
+Иногда вы хотите, чтобы ваши ингредиенты нуждались в конкретном NBT-теге. Рецепт не заботится, если в предмете есть NBT-теги, отличные от тех, которые указаны в заданном рецепте, Таким образом, может быть зачарована кирка с определенным цветом!
+
+Если вы используете `withTag` jei будет отображаться правильно, если вы используете `только WithTag`, jei будет отображать только бесцветный предмет!
+
+Вот как вы это делаете: `NBTTag` это ваши NBT данные
 
 ```zenscript
 item.withTag(NBTData);
 item.onlyWithTag(NBTTag);
 
 <minecraft.iron_pickaxe>.onlyWithTag({display: {Name: "Pickle the Pickleberry"}});
-<minecraft.iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}});
+<minecraft.iron_pickaxe>.withTag({display: {Name: "Pickleberry"});
 ```
 
-## Output modifiers
+## Модификаторы вывода
 
-If you can specify input conditions, it's not so hard to also define output conditions, or rather, output modifiers.
+Если вы можете указать условия ввода, то не так трудно также определить условия вывода или, скорее, модификаторы вывода.
 
-### Damage
+### Урон
 
-Your output item will have `value` damage points.  
-`Value` is an int.
+Ваш выходной элемент будет иметь `значение` точек повреждения.  
+`Значение` является int.
 
 ```zenscript
 item.withDamage(value);
 ```
 
-### NBT-Tags
+### NBT-теги
 
-Your output item will have `NBTTag` as NBT-Tag.  
-`NBTTag` is your NBT Data
+Ваш выходной элемент будет иметь `NBTTag` в качестве NBT-тега.  
+`NBTTag` - ваши данные NBT
 
 ```zenscript
 item.withTag(NBTTag);
 
-<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickle the Pickleberry"}})
+<minecraft:iron_pickaxe>.withTag({display: {Name: "Pickleberry"}})
 ```
 
-## Registering own item Conditions
+## Регистрация собственных Условий
 
-You can also add your own itemConditions. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
+Вы также можете добавить свои собственные Условия товаров. These are special functions that accept the [item](/Vanilla/Items/IItemStack/) itself as single parameter.
 
 ```zenscript
 conditionedItem = item.only(function(item) {return true;});
 ```
 
-The function needs to return a bool that is true if the item matches the condition.
+Функция должна возвращать логику, которая является истиной, если элемент соответствует условию.
