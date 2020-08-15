@@ -24,7 +24,7 @@ Potrebbe essere necessario per importare il pacchetto se si verificano problemi,
             <li>Piastra Densa (dense_plate)<img src="../Assets/dense_plate.png" alt="icona"></li>
             <li>Polvere Sporca (dirty_polvere)<img src="../Assets/dirty_dust.png" alt="icona"></li>
             <li>Polvere<img src="../Assets/dust.png" alt="icona"></li>
-            <li>Gear<img src="../Assets/gear.png" alt="icona"></li>
+            <li>Attrezzo<img src="../Assets/gear.png" alt="icona"></li>
             <li>Ingot<img src="../Assets/ingot.png" alt="icona"></li>
             <li>Nugget<img src="../Assets/nugget.png" alt="icona"></li>
             <li>Piastra<img src="../Assets/plate.png" alt="icona"></li>
