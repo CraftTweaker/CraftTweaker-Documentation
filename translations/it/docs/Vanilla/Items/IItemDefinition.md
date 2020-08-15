@@ -3,7 +3,7 @@
 An IItemDefinition object is the direct reference to an item.  
 It is different from an [IItemStack](/Vanilla/Items/IItemStack/) as this only refers to the item, it does not include any meta-information or NBT-values!
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IItemDefinition;`
@@ -20,16 +20,16 @@ val itemDefinition = <minecraft:stone>.definition;
 val itemDefinitionList = game.items;
 ```
 
-## What to do with it
+## Cosa fare con esso
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters e parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | Che cosa fa                                                                                          | Tipo Di Reso                                                   |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| id                 | Returns the item ID                                                                                  | string                                                         |
-| name               | Returns the unlocalized item Name                                                                    | string                                                         |
+| id                 | Returns the item ID                                                                                  | stringa                                                        |
+| nome               | Returns the unlocalized item Name                                                                    | stringa                                                        |
 | ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
+| owner              | Returns the mod name that this item belongs to.                                                      | stringa                                                        |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |
@@ -39,7 +39,7 @@ val itemDefinitionList = game.items;
 
 ### ZenSetters and other void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
+| ZenSetter/ZenMethod                    | Tipo Parametro                                      |
 | -------------------------------------- | --------------------------------------------------- |
 | creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | setNoRepair()                          | none                                                |
