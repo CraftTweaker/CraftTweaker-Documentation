@@ -1,6 +1,6 @@
 # Fermenter
 
-## Package
+## Paket
 
 `import mods.ic2.Fermenter;`
 
