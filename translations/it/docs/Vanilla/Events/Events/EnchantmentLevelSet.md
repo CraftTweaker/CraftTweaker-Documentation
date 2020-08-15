@@ -1,20 +1,20 @@
 # EnchantmentLevelSetEvent
 
-The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
+L'evento EnchantmentLevelSet viene sparato quando i livelli per i tre potenziali incantesimi vengono generati nel Tavolo Incantesimo.
 
 ## Note
 
-`event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
+`event.enchantRow` elenca la riga (1-3) del Tavolo Incantesimo, mentre `event.originalLevel` rappresenta il livello originale della riga. `event.power` è il valore cumulativo delle librerie che circondano il Tavolo Incantesimo, mentre `event.item` è l'oggetto che viene incantato.
 
-`event.level` can be arbitrarily modified to a value between 0 & 30.
+`event.level` può essere modificato arbitrariamente in un valore compreso tra 0 & 30.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EnchantmentLevelSetEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. nchantmentLevelSetEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+EnchantmentLevelSet Events implementa le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 
@@ -22,9 +22,9 @@ EnchantmentLevelSet Events implement the following interfaces and are able to ca
 
 | ZenGetter       | ZenSetter | Tipo Di Reso                             |
 | --------------- | --------- | ---------------------------------------- |
-| `world`         |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `mondo`         |           | [IWorld](/Vanilla/World/IWorld/)         |
 | `enchantRow`    |           | int                                      |
-| `power`         |           | int                                      |
+| `potenza`       |           | int                                      |
 | `elemento`      |           | [IItemStack](/Vanilla/Items/IItemStack/) |
 | `originalLevel` |           | int                                      |
 | `livello`       | `livello` | int                                      |
