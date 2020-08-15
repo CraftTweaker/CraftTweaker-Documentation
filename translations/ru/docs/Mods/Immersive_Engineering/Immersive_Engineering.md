@@ -1,17 +1,17 @@
-# Immersive Engineering
+# Инжиниринг
 
-## Information
+## Дополнительная информация
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+Immersive Engineering это технологический мод с определенным очарованием, основанный на идеях и концепциях, и с большинством активов, созданных Damien Hazard.
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+В целом, это технология вдохновляющая реализмов: Вместо того, чтобы посвещать красные трубки, она предлагает реальные, навесные электролинии. Вместо одного блока, который волшебно излучает пыль при всасывании руды, он предлагает дробитель, большой многоблочный (5x3x3), который имеет вращающиеся колеса и излучает частицы по мере ломания руды. Вместо лазера, который превращает силу в волшебный свет и руды, он предлагает экскаватор, другой массив, многоблочный (3x7x8), который выводит руду из почвы с большим вращающимся ведротором.
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IE - это сделать технологические моды более сбалансированными и более красивыми, а также добавить свои собственные повороты путём ретро-футуризма (думай «Биошок», Заказ 1886, SkyCaptain и Мир завтрашнего дня), а не клинический белый и серый будущие кубики. Мод оснащен электрогенерацией в виде ватерных колёс, ветровых заводов, биодизельного топлива, и многие из его машин являются многоблоками!
 
-## CraftTweaker Related Information
+## Информация о редакторе
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+Большинство из них, если не все машины, а также некоторые функции, не связанные с машиной, настраиваются с помощью ZenScript.
 
-## Bug Reports
+## Отчеты об ошибках
 
-https://github.com/BluSunrize/ImmersiveEngineering/issues
+https://github.com/BluSunrize/ImmersiveEngineering/замечания
