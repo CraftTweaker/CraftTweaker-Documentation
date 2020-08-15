@@ -1,14 +1,14 @@
-# Processing Chamber
+# Обработка патрона
 
 ## Пакет
 ```zenscript
-import mods.calculator.processingChamber;
+импорт mods.calculator.processingChamber;
 ```
 
 ## Методы
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** Выход.
 
 ## Сложение
 ```zenscript
