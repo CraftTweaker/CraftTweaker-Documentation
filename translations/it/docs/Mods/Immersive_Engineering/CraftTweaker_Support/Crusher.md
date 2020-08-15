@@ -1,58 +1,58 @@
-# Crusher
+# Frantumatore
 
-The Crusher package can be used to add/remove recipes to/from the Immersive Engineering Crusher.
+Il pacchetto Crusher può essere utilizzato per aggiungere/rimuovere ricette da/per il frantoio Immersivo di ingegneria.
 
-## Calling The Package
+## Chiamare Il Pacchetto
 
-You can call the Crusher package using `mods.immersiveengineering.Crusher`.
+Puoi chiamare il pacchetto Crusher usando `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## Aggiungi Ricetta
 
-| Required | Type             | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| Richiesto   | Tipo                   | Tipo Di Dati                                         |
+| ----------- | ---------------------- | ---------------------------------------------------- |
+| Richiesto   | Output                 | [IItemStack](/Vanilla/Items/IItemStack/)             |
+| Richiesto   | Input                  | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto   | Energia                | int                                                  |
+| Facoltativo | Uscita Secondaria      | [IItemStack](/Vanilla/Items/IItemStack/)             |
+| Facoltativo | Possibilità Secondaria | doppia                                               |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
-mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energy, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
+//Esempio:
+mods.immersiveengineering.Crusher.addRecipe(IItemStack output, IIngredient input, int energia, @Optional IItemStack secondaryOutput, @Optional double secondaryChance);
 
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
+mods.immersiveengineering.Crusher. ddRecipe(<minecraft:diamond>, <ore:logWood>, 2048);
 mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>);
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
+mods. mmersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 2048, <minecraft:dirt>, 0.5);
 ```
 
-## Remove Recipe by Output
+## Rimuovere la ricetta per uscita
 
-| Type   | Data Type                                |
+| Tipo   | Tipo Di Dati                             |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Crusher.removeRecipe(IItemstack output);
 
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 ```
 
-## Remove Recipe By Input
+## Rimuovi Ricetta Da Input
 
-| Type  | Data Type                                |
+| Tipo  | Tipo Di Dati                             |
 | ----- | ---------------------------------------- |
 | Input | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.Crusher.removeRecipesForInput(IItemstack input);
 
-mods.immersiveengineering.Crusher.removeRecipesForInput(<minecraft:diamond>);
+mods.immersiveengineering.Crusher.removeRecipesForput(<minecraft:diamond>);
 ```
