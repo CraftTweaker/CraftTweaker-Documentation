@@ -20,16 +20,16 @@ val itemDefinition = <minecraft:stone>.definition;
 val itemDefinitionList = game.items;
 ```
 
-## What to do with it
+## どうすればいいか
 
 ### ZenGetters and parameterless ZenMethods
 
-| ZenGetter          | What does it do                                                                                      | Return Type                                                    |
+| ZenGetter          | 何をするか                                                                                                | Return Type                                                    |
 | ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| id                 | Returns the item ID                                                                                  | string                                                         |
-| name               | Returns the unlocalized item Name                                                                    | string                                                         |
+| id                 | Returns the item ID                                                                                  | 文字列                                                            |
+| 名前                 | Returns the unlocalized item Name                                                                    | 文字列                                                            |
 | ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
+| owner              | Returns the mod name that this item belongs to.                                                      | 文字列                                                            |
 | defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
 | creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
 | creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |
@@ -39,7 +39,7 @@ val itemDefinitionList = game.items;
 
 ### ZenSetters and other void-Methods
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
+| ZenSetter/ZenMethod                    | パラメータタイプ                                            |
 | -------------------------------------- | --------------------------------------------------- |
 | creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
 | setNoRepair()                          | none                                                |
