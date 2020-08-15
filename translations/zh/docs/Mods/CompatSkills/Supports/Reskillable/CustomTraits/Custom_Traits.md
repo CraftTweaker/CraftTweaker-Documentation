@@ -1,82 +1,82 @@
-# Custom Skills & Traits
+# 自定义技能 & 特性
 
-## Credits:
+## 积分：
 
-Credits goes out to Kindlich for writing most of the Custom Content implementation!
+感谢Kindlich撰写大部分自定义内容实现！
 
-## Custom Traits:
+## 自定义特性：
 
-### Implementation Syntax:
+### 实现语法：
 
-    Examples:
-    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements)
-    mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, CrTSkill parentSkill, int cost, @Optional String... requirements)
+    示例：
+    mods.compatskills.TraitCreator.createTrait(tring traitname, int x, int y, String skilless location, int cost, @Optional String... 要求)
+    mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, CrTSkill parentSkill, int cost, int cost, @Optional String... 要求)
+    mods.compatskills.TraitCreator.createNewTrait(tring traitlocation, int x, int y, String skilless location, int cost, @Optional String... 要求)
+    mods.compatskills.TraitCreator.createNewTrait(tring traitlocation, int x, int y, CrTSkill parentSkill, int cost, int cost, @Opinion String... 要求)
     
     
-    "traitName" VS "traitLocation" is the same as in Skills.
+    "特性名称" VS "特性位置" 与技能相同。
     
-    "CrTSkill parentSkill" is the Skill Bracket Handler.
+    "CrTSkill parentSkill" 是技能级处理器。
     
     
-    So a functional Example would be:
-    var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-    var test1 = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
-    var test2 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
-    var test3 = mods.compatskills.TraitCreator.createTrait("broken:test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+    所以一个功能示例将是：
+    var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskess:banana", 1, "compatskills:banana|5");
+    var test1 = mods. ompatskills.TraitCreator.createTrait("test", 2, 3, "<skill:compatskills:banana>", 1, "compatskills:banana|5");
+    var test2 = mods. ompatskills.TraitCreateTrait("brochen:test", 2, 3, "compatskess:banana", 1, "compatskills:banana|5");
+    var test3 = mods.compatskills.TraitCreateTrait("brochen:test", 2, 3, "<skill:compatskills:banana>"compskills:banana|5");
     
 
 ### ZenProperties
 
-| Reference | Property Name | Implementation |
-|:--------- |:------------- | -------------- |
-| CrTTrait  | name          | See Below      |
-| CrTTrait  | description   | See Below      |
+| 参考       | 属性名称 | 二． 执行情况 |
+|:-------- |:---- | ------- |
+| CrTTrait | 名称   | 查看下     |
+| CrTTrait | 描述   | 查看下     |
 
-    // Creates the trait as a variable
-    var trait = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:banana", 1, "compatskills:banana|5");
+    // 将特性创建为变量
+    var 特性= mods.compatskills.TraitCreator。 ReateTrait("test", 2, 3, "compatskess:banana", 1, "compatskills:banana|5");
     
-    // Hard-Sets the name to "Test"
-    // Be aware this makes localization through .lang files not possible!
-    trait.name = "Test"
+    // Hard-将名称设置为“测试”
+    // 请注意这使得无法通过 .lang 文件进行本地化！
+    trait.name = "测试"
     
-    // Hard-Sets the description to "Hello, I'm a Description"
-    // Be aware this makes localization through .lang files not possible!
-    trait.description = "Hello, I'm a Description"
+    // 将描述设置为“你好，我是描述”
+    // 请注意这使得无法通过 .lang文件进行本地化！
+    trait.description = "你好，我是一个描述"
     
 
 ### ZenSetters/ZenGetters
 
-| Method Type | Method Name    | Values                                                |
-|:----------- |:-------------- | ----------------------------------------------------- |
-| Setter      | setEnabled     | Takes a Boolean                                       |
-| Getter      | getEnabled     | Returns a Boolean                                     |
-| Getter      | getName        | Returns the localized String Name of the Trait        |
-| Getter      | getDescription | Returns the localized String Description of the Trait |
-| Getter      | retrieveIcon   | Returns an Resource Location                          |
-| Setter      | changeIcon     | Takes an Resource Location String                     |
+| 方法类型   | 方法名称    | 值             |
+|:------ |:------- | ------------- |
+| Setter | 启用设置    | 取一个布尔值        |
+| 获取器    | get启用   | 返回一个布尔值       |
+| 获取器    | getName | 返回特性的本地化字符串名称 |
+| 获取器    | 获取描述    | 返回特性的本地化字符串描述 |
+| 获取器    | 检索图标    | 返回资源位置        |
+| Setter | 更改图标    | 使用资源位置字符串     |
 
-### Localization & Resource Location References:
+### 本地化 & 资源位置参考：
 
-    Trait Icons:
+    特性Icons:
     
     Either:
     
-    - mods.compatskills.TraitCreator.createTrait(String traitName, int x, int y, String skillLocation, int cost, @Optional String... requirements);
-        - compatskills:textures/unlockables/traitname.png
+    - mods.compatskills.TraitCreateTraitCreator.createTrait(tring traitName, int x, int y, String skilling location, inter cost, @Opinion String... 要求);
+        - 编程技能:textures/unlockables/traitname.png
     
-    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation, int x, int y, String skillLocation, int cost, @Optional String... requirements);
-        - customResourceLocation:/textures/unlockables/traitname.png
+    - mods.compatskills.TraitCreator.createNewTrait(String traitLocation,int x, int y, String skilles-location,int cost,@Optional String... 要求);
+        - customResourceLocation:textures/unlockables/traitname.png
     
     
-    Localizations are placed in:
+    本地化被放置在:
     
-    - compatskills:lang/localeCode.lang
+    - compatskills:lang/locale-Code.lang
     
-    or
+    或
     
     - customResourceLocation:lang/localeCode.lang
     
 
-Go to this link to see all possible Locale-Codes! [Gamepedia's Minecraft Language Page](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
+前往此链接查看所有可能的 Locale-Codes！ [游戏百科的 Minecraft 语言页面](https://minecraft.gamepedia.com/Language "Gamepedia's Minecraft Language Page")
