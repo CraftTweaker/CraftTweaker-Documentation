@@ -1,6 +1,6 @@
-# Alloy Furnace
+# Fornace Leghe Metalliche
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.alloy_furnace`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);
-mods.nuclearcraft.alloy_furnace.removeAllRecipes();
+mods.nuclearcraft.alloy_furnace.removeAllRicette();
 ```
