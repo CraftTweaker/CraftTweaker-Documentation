@@ -1,17 +1,17 @@
 # Chemical Combiner
 
-# Package
+# Pakiet
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchemistry.Kombinacja
 ```
 
-## Methods
+## Metody
 - **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] input** - The inputs of the recipe.
 
 
-## Addition
+## Dodanie
 ```zenscript
 mods.alchemistry.Combiner.addRecipe(IItemStack output, IItemstack[] input);
 mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
@@ -19,7 +19,7 @@ mods.alchemistry.Combiner.addRecipe(<minecraft:redstone>,
      <alchemistry:element:5>]);
 ```
 
-## Removal
+## Usuwanie
 ```zenscript
 mods.alchemistry.Combiner.removeRecipe(IItemStack output);
 mods.alchemistry.Combiner.removeRecipe(<minecraft:gold_ingot>);
