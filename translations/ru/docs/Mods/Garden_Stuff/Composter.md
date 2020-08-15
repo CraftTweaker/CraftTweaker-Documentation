@@ -1,5 +1,5 @@
 # Composter
-## Package
+## Пакет
 `import mods.gardenstuff.CompostBin;`
 
 ## Методы
