@@ -8,10 +8,10 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## ZenGetters
 
-| 名称       | 类型                                     |
-| -------- | -------------------------------------- |
-| world    | [IWorld](/Vanilla/World/IWorld/)       |
-| position | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| x        | double                                 |
-| y        | double                                 |
-| z        | double                                 |
+| 名称 | 类型                                     |
+| -- | -------------------------------------- |
+| 世界 | [IWorld](/Vanilla/World/IWorld/)       |
+| 位置 | [IBlockPos](/Vanilla/World/IBlockPos/) |
+| x  | 双精度                                    |
+| 年  | 双精度                                    |
+| z  | 双精度                                    |
