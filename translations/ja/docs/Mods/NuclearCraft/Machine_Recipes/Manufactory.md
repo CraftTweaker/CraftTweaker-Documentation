@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.manufactory`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
 mods.nuclearcraft.manufactory.addRecipe([itemInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
 mods.nuclearcraft.manufactory.removeRecipeWithInput([itemInput]);
 mods.nuclearcraft.manufactory.removeRecipeWithOutput([itemOutput]);
