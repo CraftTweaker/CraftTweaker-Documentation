@@ -5,31 +5,31 @@ Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener es
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange
+crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpCambiar
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
+nuevo crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
 ```
-| Parámetro | Tipo                                                                                                                                          | Descripción             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
+| Parámetro | Tipo                                                                                                                                           | Descripción                   |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpCambiar](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No se proporcionó descripción |
 
 
 
 ## Métodos
-### getAmount
+### Obtener cantidad
 
-Returns int
+Devuelve la pista
 
 ```zenscript
 myMCXpChange.getAmount();
 ```
 
-### getEntityPlayer
+### %s Jugador
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getEntityPlayer();
@@ -37,66 +37,66 @@ myMCXpChange.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Devuelve: `Jugador`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCXpChange.getPlayer();
 ```
 
-### hasResult
+### hastaResultado
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCXpChange.hasResult();
 ```
 
-### isCancelable
+### es cancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
+ Nota:
+ Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCXpChange.isCancelable();
 ```
 
-### isCanceled
+### es cancelado
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCXpChange.isCanceled();
 ```
 
-### setAmount
+### setAamount
 
 ```zenscript
-myMCXpChange.setAmount(amount as int);
+myMCXpChange.setAmount(cantidad como int);
 ```
 
-| Parámetro | Tipo | Descripción             |
-| --------- | ---- | ----------------------- |
-| monto     | int  | No description provided |
+| Parámetro | Tipo | Descripción                   |
+| --------- | ---- | ----------------------------- |
+| monto     | int  | No se proporcionó descripción |
 
 
-### setCanceled
+### setCancelado
 
 ```zenscript
-myMCXpChange.setCanceled(cancel as boolean);
+myMCXpChange.setCanceled(cancelar como booleano);
 ```
 
-| Parámetro | Tipo    | Descripción             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| cancelar  | boolean | No se proporcionó descripción |
 
 
 
