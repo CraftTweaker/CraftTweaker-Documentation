@@ -1,24 +1,24 @@
-# Starlight Infusion Recipes
+# Przepis na infuzję z gwiazdką
 
-You can add and remove crafting infusions.
+Możesz dodawać i usuwać infuzje wytwarzania.
 
-## Calling
+## Dzwonienie
 
-You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
+Możesz wywołać pakiet InfusionRecipe używając `mods.astralsorcery.StarlightInfusion`.
 
-## Removing
+## Usuwanie
 
-This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Spowoduje to usunięcie pierwszego wlewu, który odkryje, że tworzy dostarczony [IItemStack](/Vanilla/Items/IItemStack/) `wyjściowy`.  
+Jeśli istnieje wiele receptur, które zwracają podaną wartość, musisz wywołać tę metodę wielokrotnie!
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
+//mods.astralsorcery.StarlightInfusion.removeInfusion(wyjście IItemStack);
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+//mods.astralsorcery.StarlightInfusion.addInfusion(wprowadzanie IItemStack, wyjście IItemStack, konsumeMultiple, float consumption Chance, int craftingTickTime);
 mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
 ```
