@@ -1,6 +1,6 @@
-# Salt Fission
+# Salzspaltung
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.salt_fission`
 
 ## Rezepte hinzufügen
