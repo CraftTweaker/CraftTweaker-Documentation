@@ -31,17 +31,17 @@ The casting way relies instead on an explicit cast from a `string` to a `NameSpa
 "minecraft:iron_ingot" as NameSpacedString;
 ```
 
-### Properties
+### 参数
 A `NameSpacedString` provides read-only access to both its namespace and its path via properties:
 
-| Property Name | 返回值类型    | 描述                                                                      |
-| ------------- | -------- | ----------------------------------------------------------------------- |
-| `nameSpace`   | `string` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
-| `path`        | `string` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
+| 属性名称        | 返回值类型 | 描述                                                                      |
+| ----------- | ----- | ----------------------------------------------------------------------- |
+| `nameSpace` | `字符串` | Gets the namespace portion of the `NameSpacedString` (e.g. `minecraft`) |
+| `路径`        | `字符串` | Gets the path portion of the `NameSpacedString` (e.g. `iron_ingot`)     |
 
-### Methods
+### 方法
 
-#### `asString`
+#### `asString #作为字符串`
 A `NameSpacedString` can be converted back into a regular `string` by using the `asString` method. The following is the method signature and an example of its usage:
 
 ```zenscript
