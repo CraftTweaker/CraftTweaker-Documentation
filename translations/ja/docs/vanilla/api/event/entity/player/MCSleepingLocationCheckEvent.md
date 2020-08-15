@@ -1,9 +1,9 @@
 # MCSleepingLocationCheckEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent>);
 ```
-| Parameter | Type                                                                                                                                                  | Description             |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent](/vanilla/api/event/entity/player/MCSleepingLocationCheckEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                                   | 説明                      |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent](/vanilla/api/event/entity/player/MCSleepingLocationCheckEvent)> | No description provided |
 
 
 
-## Methods
+## メソッド
 ### getSleepingLocation
 
 Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
@@ -65,9 +65,9 @@ myMCSleepingLocationCheckEvent.isCanceled();
 myMCSleepingLocationCheckEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ  | タイプ      | 説明                      |
+| ------ | -------- | ----------------------- |
+| cancel | boolean型 | No description provided |
 
 
 
