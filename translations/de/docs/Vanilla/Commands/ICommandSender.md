@@ -17,7 +17,7 @@ It might be required for you to import the package if you encounter any issues (
 | world       | [IWorld](/Vanilla/World/IWorld/)       |
 | server      | [IServer](/Vanilla/Game/IServer/)      |
 
-## ZenMethods
+## ZenMethoden
 
 #### Send Message
 
