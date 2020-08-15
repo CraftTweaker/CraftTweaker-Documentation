@@ -1,63 +1,63 @@
 # IEntityLivingBase
 
-A living Entity is one that has health and that can die.  
-That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
+Живая сущность — это объект, который имеет здоровье и может погибнуть.  
+Это означает монстры, животные, но также [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityLivingBase;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, наложение [массива](/AdvancedFunctions/Arrays_and_Loops/)), так что лучше быть безопасным, чем извините и добавить импорт.  
+`импорт crafttweaker.entity.IEntityLivingBase;`
 
-## Extending [IEntity](/Vanilla/Entities/IEntity/)
+## Расширение [IEntity](/Vanilla/Entities/IEntity/)
 
-IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all functions available to [IEntities](/Vanilla/Entities/IEntity/) also are available to IEntityLivingBase.
+IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). Это означает, что все функции, доступные [IEntities](/Vanilla/Entities/IEntity/) , также доступны для IEntityLivingBase.
 
 ## ZenGetters
 
-| ZenGetter              | Return Type (*can be null*)                            |
-| ---------------------- | ------------------------------------------------------ |
-| activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
-| AIMovementSpeed        | float                                                  |
-| arrowsInEntity         | int                                                    |
-| attackingEntity        | *IEntityLivingBase*                                    |
-| canBreatheUnderwater   | boolean                                                |
-| health                 | float                                                  |
-| isChild                | boolean                                                |
-| isOnLadder             | boolean                                                |
-| isUndead               | boolean                                                |
-| lastAttackedEntity     | *IEntityLivingBase*                                    |
-| lastAttackedEntityTime | int                                                    |
-| lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
-| mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| maxHealth              | float                                                  |
-| offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| revengeTarget          | *IEntityLivingBase*                                    |
-| totalArmorValue        | int                                                    |
+| Геттеры                | Возвращаемый тип (*может быть `null`*)                  |
+| ---------------------- | ------------------------------------------------------- |
+| активное зелье         | Список<[Эффект зелья](/Vanilla/Potions/IPotionEffect/)> |
+| Скорость перемещения   | float                                                   |
+| стрелы InEntity        | int                                                     |
+| атакующий объект       | *IEntityLivingBase*                                     |
+| кандрейф под водой     | boolean                                                 |
+| здоровье               | float                                                   |
+| isChild                | boolean                                                 |
+| лестница               | boolean                                                 |
+| isUndead               | boolean                                                 |
+| lastAttackedEntity     | *IEntityLivingBase*                                     |
+| lastAttackedEntityTime | int                                                     |
+| Источник lastdamage    | [IDamageSource](/Vanilla/Damage/IDamageSource/)         |
+| mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| maxHealth              | float                                                   |
+| offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| цель выручки           | *IEntityLivingBase*                                     |
+| Общая стоимость брони  | int                                                     |
 
 ## ZenSetters
 
-| ZenSetter          | Parameter Type (*can be null*) |
-| ------------------ | ------------------------------ |
-| AIMovementSpeed    | float                          |
-| arrowsInEntity     | int                            |
-| health             | float                          |
-| lastAttackedEntity | *IEntityLivingBase*            |
-| revengeTarget      | *IEntityLivingBase*            |
+| ZenSetter            | Тип параметра (*может быть нулевым*) |
+| -------------------- | ------------------------------------ |
+| Скорость перемещения | float                                |
+| стрелы InEntity      | int                                  |
+| здоровье             | float                                |
+| lastAttackedEntity   | *IEntityLivingBase*                  |
+| цель выручки         | *IEntityLivingBase*                  |
 
-## More ZenMethods
+## Больше ZenMethods
 
-- boolean attackEntityFrom(IDamageSource source, float amount) → Does something...
+- boolean атакующий EntityFrom(IDamageSource источник с плавающей точкой) → Делает что-нибудь...
 - boolean canEntityBeSeen([IEntity](/Vanilla/Entities/IEntity/) other);
 - boolean hasItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
-- boolean isPotionActive([IPotion](/Vanilla/Potions/IPotion/) potion) → Returns true if the goven potion is active
-- boolean isPotionEffectApplicable([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- heal(float amount) → Heals the entity by the amount given
-- [IEntityAttributeInstance](/Vanilla/Entities/Attributes/IEntityAttributeInstance/) getAttribute(String name) → Returns the given [Attribute](/Vanilla/Entities/Attributes/IEntityAttributeInstance/)
+- boolean isPotionActive([IPotion](/Vanilla/Potions/IPotion/) зелье) → Возвращает значение true, если жеваное зелье активно
+- boolean isPotionEffectApplicable([IPotionEffect](/Vanilla/Potions/IPotionEffect/) зельея);
+- цели(плавающая сумма) → Исцеляет сущность на указанное количество
+- [IEntityAttributeInstance](/Vanilla/Entities/Attributes/IEntityAttributeInstance/) getAttribute(String name) → Возвращает данный [атрибут](/Vanilla/Entities/Attributes/IEntityAttributeInstance/)
 - [IItemStack](/Vanilla/Items/IItemStack/) getItemInSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot);
-- [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(IPotion potion);
-- void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) potionEffect);
-- void clearActivePotions() → Removes all active [potions](/Vanilla/Potions/IPotion/) from the Entity
-- void knockBack([IEntity](/Vanilla/Entities/IEntity/) entity, float one, double two, double three);
+- [IPotionEffect](/Vanilla/Potions/IPotionEffect/) getActivePotionEffect(зелье зелья);
+- void addPotionEffect([IPotionEffect](/Vanilla/Potions/IPotionEffect/) зельея);
+- void clearActivePotions() → Удаляет все активные [зелья](/Vanilla/Potions/IPotion/) из сущности
+- void knockBack([IEntity](/Vanilla/Entities/IEntity/) сущность, плавающая единица, двойной два, двойной три);
 - void onDeath();
 - void onLivingUpdate();
 - void setItemToSlot([IEntityEquipmentSlot](/Vanilla/Entities/IEntityEquipmentSlot/) slot, [IItemStack](/Vanilla/Items/IItemStack/) itemStack);
