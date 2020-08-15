@@ -1,6 +1,6 @@
 # Altar of Birthing
 
-## Package
+## Paket
 ```zenscript
 mods.naturesaura.AnimalSpawner
 ```
@@ -18,7 +18,7 @@ mods.naturesaura.AnimalSpawner
 mods.naturesaura.AnimalSpawner.addRecipe(String name, String entity, int aura, int time, IIngredient[] ingredients)
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.naturesaura.AnimalSpawner.removeRecipe(String name)
