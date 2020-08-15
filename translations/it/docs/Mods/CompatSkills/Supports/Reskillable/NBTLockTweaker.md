@@ -2,29 +2,29 @@
 
 ## NBT-Locking
 
-The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
+Le NBT-Locks sono specifiche per CompatSkills 1.4.0+ e attualmente è la funzione più potente. È possibile bloccare specifici NBT-Tags o limitato a un dato mod-id o su ogni elemento del gioco.
 
-This means that any item found to contain that NBT-tag will have the lock applied to it.
+Ciò significa che qualsiasi elemento trovato a contenere che NBT-tag avrà il blocco applicato ad esso.
 
-### Syntax:
+### Sintassi:
 
-    // Blank Example:
-    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
+    // Esempio vuoto:
+    mods.compatskills.NBTLock.addGenericNBTLock(tag IData, String... bloccato)
     mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
     
-    //// Working Example:
+    //// Esempio di lavoro:
     // Locks Silk-Touch
-    addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
+    addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic<unk> 10");
     
-    // Locks Unbreaking (No Level-Specified)
-    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
+    // Blocca ininterrottamente (nessun livello specificato)
+    addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:collecting<unk> 6");
     
 
-This has some powerful implications. This means for example that you as a pack-maker can lock:
+Questo ha alcune implicazioni potenti. Ciò significa, per esempio, che come un pack-maker può bloccare:
 
-- Tinker Materials
-- Tinker Modifiers
-- Enchantments
-- Energy-Values
+- Materiali Tinker
+- Modificatori Tinker
+- Incantesimi
+- Valori Energetici
 
-And much more, as long as you know the NBT-tag it uses!
+E molto altro ancora, finché conosci il NBT-tag che usa!
