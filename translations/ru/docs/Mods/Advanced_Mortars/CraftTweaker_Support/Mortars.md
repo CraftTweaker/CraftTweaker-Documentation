@@ -1,43 +1,43 @@
 # Mortars
 
-## Importing The Package
+## Импортирование пакета
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+Вы можете вызвать пакет Mortar используя `mods.advancedmortars.Mortar`.
 
-## Add Recipe
+## Добавить рецепт
 
 <table>
   <tr>
     <th>
-      Type
+      Тип
     </th>
     
     <th>
-      Data Type
+      Тип данных
     </th>
     
     <th>
-      Examples
+      Примеры
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      Типы минометов
     </td>
     
     <td>
-      String[]
+      Строка[]
     </td>
     
     <td>
-      ["wooden", "stone", "iron", "diamond"]
+      ["дерево", "камень", "чугун", "алмаз"]
     </td>
   </tr>
   
   <tr>
     <td>
-      Output
+      Вывод
     </td>
     
     <td>
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      Продолжительность
     </td>
     
     <td>
-      Integer
+      Целое
     </td>
     
     <td>
@@ -69,7 +69,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </td>
     
     <td>
-      <a href="/Vanilla/Variable_Types/IIngredient/">IIngredient</a>
+      <a href="/Vanilla/Variable_Types/IIngredient/">Иингредиент</a>
     </td>
     
     <td>
@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### Пример
 
 ```zenscript
 ///// "Crushing"
