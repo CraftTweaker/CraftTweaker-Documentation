@@ -1,22 +1,22 @@
-# Map
+# 地図
 
-The Map Package allows you to set a waypoint using BASE's waypoint event handler.
+Map Package では、BASEのウェイポイントイベントハンドラを使用してウェイポイントを設定できます。
 
-## Importing the package
+## パッケージのインポート
 
-You can import the package so that you don't have to retype it everytime.
+毎回再入力する必要がないように、パッケージをインポートできます。
 
     import mods.contenttweaker.Map;
     
 
-## Adding Waypoints
+## 通過点の追加
 
-This is the only method exposed by the Map package and it allows you to set a waypoint at the given location.  
-It is a void method with the parameters:
+これは Map パッケージによって公開される唯一のメソッドであり、指定された場所にウェイポイントを設定することができます。  
+パラメータを持つ無効なメソッドです。
 
-- string name
+- 文字列名
 - [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/)
 - [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/)
 - [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)
 
-    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor color)
+    Map.setWaypoint(String name, IWorld world, IBlockPos pos, CTColor
