@@ -19,13 +19,13 @@ PlayerUseItemTick Events implement the following interfaces and are able to call
 
 The following information can be retrieved from the event:
 
-| ZenGetter  | Return Type                              |
+| ZenGetter  | Type de retour                           |
 | ---------- | ---------------------------------------- |
 | `canceled` | boolean                                  |
 | `player`   | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `duration` | int                                      |
+| `Élément`  | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `duration` | Indice                                   |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled
