@@ -1,18 +1,20 @@
-# Insolator
+# インソレーター(Insolator)
 
-## Package
+## パッケージ
 
 `mods.thermalexpansion.Insolator`
 
-## Addition
+## 加算
 
 ```zenscript
 //mods.thermalexpansion.Insolator.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
 
-mods.thermalexpansion.Insolator.addRecipe(<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
+mods. hermalexpansion.Insolator.addRecipe( 
+
+ ,<minecraft:diamond>, <minecraft:stick>, <minecraft:iron_ore>, 1500, <minecraft:stone>, 20);
 ```
 
-## Removal
+## 削除
 
 ```zenscript
 //mods.thermalexpansion.Insolator.removeRecipe(IItemStack primaryInput, IItemStack secondaryInput);
