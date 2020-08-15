@@ -8,30 +8,30 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.potion.MCPotion
 ```
 
-## Implemented Interfaces
-MCPotion implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## 実装されたインターフェース
+MCPotionは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## メソッド
 ### getNamePrefixed
 
-Returns String
+戻り値の文字列
 
 ```zenscript
-myMCPotion.getNamePrefixed(name as String);
+myMCPoint.getNamePrefixed(name as String);
 ```
 
-| パラメータ | タイプ  | 説明                      |
-| ----- | ---- | ----------------------- |
-| name  | 文字列型 | No description provided |
+| パラメータ | タイプ  | 説明           |
+| ----- | ---- | ------------ |
+| name  | 文字列型 | 説明が提供されていません |
 
 
 
 ## プロパティー
 
-| 名称               | タイプ                                                                                                 | Has Getter | Has Setter |
-| ---------------- | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| commandString    | 文字列型                                                                                                | true       | false      |
-| effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true       | false      |
-| hasInstantEffect | boolean型                                                                                            | true       | false      |
+| 名称               | タイプ                                                                                                 | ゲッターあり | セッターあり |
+| ---------------- | --------------------------------------------------------------------------------------------------- | ------ | ------ |
+| commandString    | 文字列型                                                                                                | true   | false  |
+| エフェクト            | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true   | false  |
+| hasInstantEffect | boolean型                                                                                            | true   | false  |
 
