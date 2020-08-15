@@ -1,32 +1,32 @@
-# RecipeFunctionSingle
+# レシピ関数Single
 
 crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
 問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
-crafttweaker.api.recipe.RecipeFunctionSingle
+crafttweaker.api.recipe.レシピ関数Single
 ```
 
-## Functional Interface
+## 機能インターフェイス
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+このクラスは関数型インターフェイスです。 つまり、ラムダ表記を使用してインスタンスを作成することができます。 ラムダ表記は次のようになります。
 ```zenscript
-(usualOut, inputs) => <item:minecraft:dirt>
+(normalOut, inputs) => <item:minecraft:dirt>
 ```
 ## メソッド
-### process
+### プロセス
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値の型: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
+myRecipeFunctionSingle.process(通常はcrafttweaker.api.item.IItemStackとして, crafttweaker.api.item.IItemStackとして入力);
 ```
 
-| パラメータ    | タイプ                                                               | 説明                      |
-| -------- | ----------------------------------------------------------------- | ----------------------- |
-| usualOut | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| inputs   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ  | タイプ                                                               | 説明           |
+| ------ | ----------------------------------------------------------------- | ------------ |
+| 通常終了   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
+| inputs | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 
