@@ -19,6 +19,6 @@ EntityTravelToDimension Events implement the following interfaces and are able t
 ## ZenGetters/ZenSetters
 The following information can be retrieved/set during the event:
 
-| ZenGetter   | Return Type |
-| ----------- | ----------- |
-| `dimension` | int         |
+| ZenGetter   | Type de retour |
+| ----------- | -------------- |
+| `dimension` | Indice         |
