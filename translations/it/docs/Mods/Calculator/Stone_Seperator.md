@@ -1,4 +1,4 @@
-# Stone Separator
+# Separatore Di Pietra
 
 ## Pacchetto
 ```zenscript
@@ -7,11 +7,11 @@ import mods.calculator.stoneSeparator;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output[1-2]** Gli output.
 
 
-## Additon
+## Addizionale
 
 ```zenscript
 stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
