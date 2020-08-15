@@ -1,8 +1,8 @@
-# Alloying
+# Legende
 
 The `Alloy` package allows you to add or remove Alloy recipes.
 
-## Calling
+## Anruf
 
 You can call the Alloy package using `mods.tconstruct.Alloy`
 
