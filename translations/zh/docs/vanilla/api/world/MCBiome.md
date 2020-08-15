@@ -1,14 +1,14 @@
 # MCBiome
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Methods
+## 方法
 ### getSpawns
 
 Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
@@ -17,14 +17,14 @@ Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBio
 myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| 参数             | 类型                                                                                             | 描述                      |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| 参数                 | 类型                                                                                             | 描述                      |
+| ------------------ | ---------------------------------------------------------------------------------------------- | ----------------------- |
+| classification #类别 | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
 
 
 ### getTempCategory
 
-Returns String
+返回字符串[String]
 
 ```zenscript
 myMCBiome.getTempCategory();
@@ -38,33 +38,33 @@ Returns float
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | 类型                                                           | 说明                      |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 参数 | 类型                                                           | 说明                      |
+| -- | ------------------------------------------------------------ | ----------------------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
 
-## Properties
+## 参数
 
-| Name               | Type    | Has Getter | Has Setter |
-| ------------------ | ------- | ---------- | ---------- |
-| category           | String  | true       | false      |
-| defaultTemperature | float   | true       | false      |
-| depth              | float   | true       | false      |
-| doesRain           | boolean | true       | false      |
-| doesSnow           | boolean | true       | false      |
-| downfall           | float   | true       | false      |
-| isHighHumidity     | boolean | true       | false      |
-| isMutation         | boolean | true       | false      |
-| isTempCold         | boolean | true       | false      |
-| isTempMedium       | boolean | true       | false      |
-| isTempOcean        | boolean | true       | false      |
-| isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
-| rainType           | String  | true       | false      |
-| scale              | float   | true       | false      |
-| spawningChange     | float   | true       | false      |
-| translationKey     | String  | true       | false      |
-| waterColor         | int     | true       | false      |
-| waterFogColor      | int     | true       | false      |
+| 名称                 | 类型          | 可获得  | 可设置   |
+| ------------------ | ----------- | ---- | ----- |
+| category           | 字符串[string] | true | false |
+| defaultTemperature | 浮点数         | true | false |
+| depth              | 浮点数         | true | false |
+| doesRain           | boolean     | true | false |
+| doesSnow           | boolean     | true | false |
+| downfall           | 浮点数         | true | false |
+| isHighHumidity     | boolean     | true | false |
+| isMutation         | boolean     | true | false |
+| isTempCold         | boolean     | true | false |
+| isTempMedium       | boolean     | true | false |
+| isTempOcean        | boolean     | true | false |
+| isTempWarm         | boolean     | true | false |
+| 父级                 | 字符串[string] | true | false |
+| rainType           | 字符串[string] | true | false |
+| scale              | 浮点数         | true | false |
+| spawningChange     | 浮点数         | true | false |
+| translationKey     | 字符串[string] | true | false |
+| waterColor         | 整数          | true | false |
+| waterFogColor      | 整数          | true | false |
 
