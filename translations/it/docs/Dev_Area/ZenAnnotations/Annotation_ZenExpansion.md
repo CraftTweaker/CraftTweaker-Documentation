@@ -1,33 +1,33 @@
 # ZenExpansion
 
-A ZenExpansion is, like [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), used to annotate a Class that should be accessible from within ZS.  
-Unlike ZenClasses however, ZenExpansions are used to expand the functionality of already existing ZenClasses.
+Una ZenExpansion è, come [`@ZenClass`](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), utilizzata per annotare una classe che dovrebbe essere accessibile dall'interno di ZS.  
+A differenza di ZenClasses, tuttavia, ZenExpansions sono utilizzati per espandere le funzionalità di ZenClasses già esistenti.
 
-## Example
+## Esempio
 
 ```java
-@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenExpansion("crafttweaker.item. ItemStack")
 @ZenRegister
 public class Expansion {
     @ZenMethod
     public static void print(IItemStack stack) {
-        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
+        CraftTweakerAPI. ogInfo("STACKKKKK: " + stack.getDisplayName());
     }
 }
 ```
 
-This would allow people to do
+Questo permetterebbe alle persone di fare
 
 ```zenscript
 <minecraft:iron_ingot>.print();
 ```
 
-Since this is an expansion the first parameter is the class' instance!  
-This parameter will not be available in ZS.
+Poiché si tratta di un'espansione, il primo parametro è l'istanza della classe!  
+Questo parametro non sarà disponibile in ZS.
 
-## What classes can be annotated || Additional Info
+## Quali classi possono essere annotati <unk> <unk> Ulteriori informazioni
 
-- All Methods need to begin with a parameter that represents the expanded class' instance. Also, all Methods inside the expansion must be static (... and public).
-- You can annotate all Java Classes
-- You must give the annotation a String value (e.g. `crafttweaker.item.IItemStack`). This String value must represent an already existing ZenClass' name.
-- After declaring a class a ZenExpansion, you still need to register it. It is recommended that you use [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) for that.
+- Tutti i Metodi devono iniziare con un parametro che rappresenta l'istanza della classe espansa. Inoltre, tutti i metodi all'interno dell'espansione devono essere statici (... e pubblico).
+- Puoi annotare tutte le classi di Java
+- È necessario dare all'annotazione un valore Stringa (ad esempio `crafttweaker.item.IItemStack`). Questo valore Stringa deve rappresentare un nome ZenClass' già esistente.
+- Dopo aver dichiarato una classe a ZenExpansion, devi ancora registrarla. Si consiglia di utilizzare [`@ZenRegister`](/Dev_Area/ZenAnnotations/Annotation_ZenRegister/) per questo.
