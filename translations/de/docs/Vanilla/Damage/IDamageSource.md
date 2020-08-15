@@ -9,7 +9,7 @@ It might be required to [import](/AdvancedFunctions/Import/) the class to avoid 
 
 ## Zengetters and ZenMethods without parameters
 
-| ZenGetter        | ZenMethod                         | Rückgabetyp                           |
+| ZenGetter        | ZenMethode                        | Rückgabetyp                           |
 | ---------------- | --------------------------------- | ------------------------------------- |
 | harmInCreative   | canHarmInCreative();              | bool                                  |
 | damageType       | getDamageType();                  | string                                |
