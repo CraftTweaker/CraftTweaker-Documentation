@@ -1,4 +1,4 @@
-# Material
+# Matériel
 
 ## Calling the package
 
@@ -10,10 +10,10 @@ An object of `mods.gregtech.material.Material` represents a material in GregTech
 
 Properties:
 
-| Name               | Type                         | Description                                      |
+| Nom                | Type de texte                | Libellé                                          |
 | ------------------ | ---------------------------- | ------------------------------------------------ |
-| color              | int                          | Color of material in RGB format                  |
-| chemicalFormula    | string                       | Chemical formula of this material                |
+| couleur            | Indice                       | Color of material in RGB format                  |
+| chemicalFormula    | chaîne de caractères         | Chemical formula of this material                |
 | iconSet            | MaterialIconSet              | Icon set for this material meta-items generation |
 | components         | ImmutableList<materialstack> | List of this material component                  |
 | generationFlagsRaw | long                         | Generation flags of this material (See MatFlags) |
@@ -21,21 +21,21 @@ Properties:
 
 Getters:
 
-| Name            | Type   | Description                          |
-| --------------- | ------ | ------------------------------------ |
-| radioactive     | bool   | True if this material is radioactive |
-| protons         | long   |                                      |
-| neutrons        | long   |                                      |
-| mass            | long   |                                      |
-| density         | long   |                                      |
-| camelCaseString | string |                                      |
-| unlocalizedName | string |                                      |
-| localizedName   | string | Client-side only                     |
-| name            | string | Name in the Material registry        |
+| Nom             | Type de texte        | Libellé                              |
+| --------------- | -------------------- | ------------------------------------ |
+| radioactive     | booléen              | True if this material is radioactive |
+| protons         | long                 |                                      |
+| neutrons        | long                 |                                      |
+| mass            | long                 |                                      |
+| densité         | long                 |                                      |
+| camelCaseString | chaîne de caractères |                                      |
+| unlocalizedName | chaîne de caractères |                                      |
+| localizedName   | chaîne de caractères | Client-side only                     |
+| Nom             | chaîne de caractères | Name in the Material registry        |
 
 Methods:
 
-| Name (Parameters)             | Description           |
+| Name (Parameters)             | Libellé               |
 | ----------------------------- | --------------------- |
 | addFlags(String... flagNames) | Add generation flags  |
 | hasFlag(String flagName)      | Has a generation flag |
@@ -48,18 +48,18 @@ Methods:
 
 Properties:
 
-| Name             | Type | Description |
-| ---------------- | ---- | ----------- |
-| fluidTemperature | int  |             |
+| Nom              | Type de texte | Libellé |
+| ---------------- | ------------- | ------- |
+| fluidTemperature | Indice        |         |
 
 Getters:
 
-| Name      | Type                                                       | Description           |
+| Nom       | Type de texte                                              | Libellé               |
 | --------- | ---------------------------------------------------------- | --------------------- |
-| hasFluid  | bool                                                       |                       |
-| hasPlasma | bool                                                       |                       |
-| isGaseous | bool                                                       |                       |
-| fluid     | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
+| hasFluid  | booléen                                                    |                       |
+| hasPlasma | booléen                                                    |                       |
+| isGaseous | booléen                                                    |                       |
+| fluide    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material fluid        |
 | plasma    | [ILiquidDefinition](/Vanilla/Liquids/ILiquidDefinition.md) | material plasma fluid |
 
 ### DustMaterial
@@ -68,22 +68,22 @@ Getters:
 
 Properties:
 
-| Name                | Type          | Description                                                                                                                                  |
+| Nom                 | Type de texte | Libellé                                                                                                                                      |
 | ------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| oreMultiplier       | int           | Crushed ore output amount multiplier during maceration                                                                                       |
-| byProductMultiplier | int           | Byproducts output amount multiplier during pulverization                                                                                     |
-| smeltingMultiplier  | int           | Smelting item amount multiplier during vanilla item smelting                                                                                 |
+| oreMultiplier       | Indice        | Crushed ore output amount multiplier during maceration                                                                                       |
+| byProductMultiplier | Indice        | Byproducts output amount multiplier during pulverization                                                                                     |
+| smeltingMultiplier  | Indice        | Smelting item amount multiplier during vanilla item smelting                                                                                 |
 | directSmelting      | SolidMaterial | Material to which smelting of this material ore will result                                                                                  |
 | washedIn            | FluidMaterial | Material in which this material's ore should be washed to give additional output                                                             |
 | separatedInto       | DustMaterial  | During electromagnetic separation, this material ore will be separated onto this material and material specified by this field               |
-| burnTime            | int           | Burn time of this material when used as fuel in furnace smelting, Zero or negative value indicates that this material cannot be used as fuel |
+| burnTime            | Indice        | Burn time of this material when used as fuel in furnace smelting, Zero or negative value indicates that this material cannot be used as fuel |
 
 Getters:
 
-| Name          | Type                | Description                                         |
-| ------------- | ------------------- | --------------------------------------------------- |
-| oreByProducts | List<fluidmaterial> | List of ore by products                             |
-| harvestLevel  | int                 | Tool level needed to harvest block of this material |
+| Nom               | Type de texte       | Libellé                                             |
+| ----------------- | ------------------- | --------------------------------------------------- |
+| oreByProducts     | List<fluidmaterial> | List of ore by products                             |
+| Niveau de récolte | Indice              | Tool level needed to harvest block of this material |
 
 ### SolidMaterial
 
@@ -91,7 +91,7 @@ Getters:
 
 Properties:
 
-| Name           | Type          | Description                                                                                          |
+| Nom            | Type de texte | Libellé                                                                                              |
 | -------------- | ------------- | ---------------------------------------------------------------------------------------------------- |
 | handleMaterial | SolidMaterial | Material specified here will be required as handle to make tool from this material                   |
 | macerateInto   | DustMaterial  | Macerating any item of this material will result material specified in this field, default to itself |
@@ -101,15 +101,15 @@ Getters:
 <table>
   <tr>
     <th>
-      Name
+      Nom
     </th>
     
     <th>
-      Type
+      Type de texte
     </th>
     
     <th>
-      Description
+      Libellé
     </th>
   </tr>
   
@@ -119,7 +119,7 @@ Getters:
     </td>
     
     <td>
-      float
+      flottant
     </td>
     
     <td>
@@ -133,7 +133,7 @@ Getters:
     </td>
     
     <td>
-      int
+      Indice
     </td>
     
     <td>
@@ -188,7 +188,7 @@ material.addToolEnchantment(<enchantment:minecraft:fortune> * 1); // Create a en
 
 These flags are applicable to materials.
 
-| Name (case-insensitive)           | Description                                                                                                                                                                                                                                         |
+| Name (case-insensitive)           | Libellé                                                                                                                                                                                                                                             |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | DECOMPOSITION_BY_ELECTROLYZING  | Enables electrolyzer decomposition recipe generation                                                                                                                                                                                                |
 | DECOMPOSITION_BY_CENTRIFUGING   | Enables centrifuge decomposition recipe generation                                                                                                                                                                                                  |
@@ -285,7 +285,7 @@ MaterialRegistry.createGemMaterial(int metaItemSubId, String name, int color, St
 MaterialRegistry.createIngotMaterial(int metaItemSubId, String name, int color, String iconSet, int harvestLevel, @Optional MaterialStack[] materialComponents, @Optional float toolSpeed, @Optional int toolDurability, @Optional int blastFurnaceTemperature);
 ```
 
-### Example
+### Exemple
 
 ```zenscript
 #loader gregtech
