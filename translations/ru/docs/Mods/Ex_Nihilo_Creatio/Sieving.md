@@ -2,7 +2,7 @@
 
 ## Пакет
 
-To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
+Чтобы получить доступ к `Sieve` , не уточнив полный путь, вы можете импортировать пакет в верхней части скрипта следующим образом:
 
 ```zenscript
 import mods.exnihilocreatio.Sieve;
@@ -10,35 +10,35 @@ import mods.exnihilocreatio.Sieve;
 
 ## Методы
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) block** The block that drops the output.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item that drops from the block..
-- **Float chance** The chance should be between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) блок** блок, который выводит вывод.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Элемент, который падает из блока..
+- **Шанс плавающего** Шанс должен быть от 0 до 1.
 
-## String Mesh
+## Строковая сетка
 
 ```zenscript
-Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addStringMeshRecipe(IIngredient, IItemStack, плавающий шанс);
 Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
 ```
 
-## Flint Mesh
+## Кремневая сетка
 
 ```zenscript
 Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
-## Iron Mesh
+## Железная сетка
 
 ```zenscript
-Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addIronMeshRecipe(IIngredient, IItemStack, плавающий шанс);
 Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
-## Diamond Mesh
+## Алмазная сетка
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, плавающий шанс);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
