@@ -1,10 +1,10 @@
-# XNOR Operator
+# Operator XNOR
 
-An **XNOR** gate is an inverted **XOR** gate. This is the same as using the output of the **XOR** gate as the input to the **NOT** gate. This means that the **XNOR** gate returns `TRUE` only when both inputs are the same state. Either both are `TRUE` or both are `FALSE`.
+Bramka **XNOR** jest odwrotną bramą **XOR**. To samo co na wyjściu bramki **XOR** co wejście bramki **NOT**. Oznacza to, że bramka **XNOR** zwraca `TRUE` tylko wtedy, gdy oba wejścia są w tym samym stanie. Obydwa są `TRUE` albo oba są `FALSE`.
 
-| Input 1 | Input 2 | Output |
-| ------- | ------- | ------:|
-| 0       | 0       |      1 |
-| 0       | 1       |      0 |
-| 1       | 0       |      0 |
-| 1       | 1       |      1 |
+| Input 1 | Input 2 | Wyjście |
+| ------- | ------- | -------:|
+| 0       | 0       |       1 |
+| 0       | 1       |       0 |
+| 1       | 0       |       0 |
+| 1       | 1       |       1 |
