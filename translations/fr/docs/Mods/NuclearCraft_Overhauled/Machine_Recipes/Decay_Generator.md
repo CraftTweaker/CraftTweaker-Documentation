@@ -10,7 +10,7 @@ mods.nuclearcraft.DecayGenerator.addRecipe(IIngredient blockInput, IIngredient b
 
 ## Removing Recipes
 ```zenscript
-mods.nuclearcraft.DecayGenerator.removeRecipeWithInput(IIngredient blockInput);
+mods.nuclearcraft.mods.nuclearcraft.DecayGenerator.removeRecipeWithInput(IIngredient blockInput);
 mods.nuclearcraft.DecayGenerator.removeRecipeWithOutput(IIngredient blockOutput);
-mods.nuclearcraft.DecayGenerator.removeAllRecipes();
+mods.nuclearcraft.
 ```
