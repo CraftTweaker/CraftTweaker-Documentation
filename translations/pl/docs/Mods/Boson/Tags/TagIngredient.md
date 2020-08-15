@@ -1,27 +1,27 @@
-# `TagIngredient`
+# `Składnik`
 
-A `TagIngredient` is an `IIngredient` implementation that allows you to use a [`Tag`](/Mods/Boson/Tags/Tag/) in recipes. You can only access this data from outside the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
+`TagSkładnik` jest implementacją `ISkładnik` pozwalającą na użycie w przepisach [`Tag`](/Mods/Boson/Tags/Tag/). Możesz mieć dostęp tylko do tych danych spoza [`tagów` loader](/Mods/Boson/Loaders/Tags/). Aby uzyskać więcej informacji dotyczących tagów i jak je uzyskać, zapoznaj się z [tą stroną](/Mods/Boson/Tags/Concept/).
 
-## Class Details
-The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.TagIngredient` its fully qualified name for importing.
+## Szczegóły klasy
+Klasa znajduje się w pakiecie `net.thesilkminer.mc.boson.zen.tag` , tworząc `net.thesilkminer.mc.boson.zen.tag.TagIngredient` jego w pełni kwalifikowaną nazwę do importu.
 
-## Creating a New Instance
-Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
+## Tworzenie nowej instancji
+Zobacz [dokumentację obsługi nawiasów](/Mods/Boson/Tags/BracketHandler/).
 
 ## `Składnik`
-Since `TagIngredient` is an `IIngredient`, it provides access to all the properties and methods of that interface. Refer to [`IIngredient`'s documentation page](/Vanilla/Variable_Types/IIngredient/) for more details. This documentation page only outlines additions and quirks that are particular of this class.
+Ponieważ `TagSkładnik` jest `Składnikiem`, zapewnia dostęp do wszystkich właściwości i metod tego interfejsu. Aby uzyskać więcej szczegółów, zapoznaj się z na stronie [`ISkładnik`dokumentacji](/Vanilla/Variable_Types/IIngredient/). Ta strona dokumentacji przedstawia tylko dodatki i zapytania, które są szczególne dla tej klasy.
 
 ## Właściwości
-A `TagIngredient` provides read-only access to an additional set of properties, as outlined in the following table:
+`TagSkładnik` zapewnia dostęp tylko do odczytu do dodatkowego zestawu właściwości, jak przedstawiono w poniższej tabeli:
 
-| Nazwa Właściwości | Typ                                      | Opis                                                            |
-| ----------------- | ---------------------------------------- | --------------------------------------------------------------- |
-| `tagName`         | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies the tag this ingredient refers to |
+| Nazwa Właściwości | Typ                                       | Opis                                                                            |
+| ----------------- | ----------------------------------------- | ------------------------------------------------------------------------------- |
+| `tagName`         | [`NazwaSpacedString`](/Mods/Boson/Names/) | Nazwa, która jednoznacznie identyfikuje tag, do którego odnosi się ten składnik |
 
 ## Przykład
 
 ```zenscript
-val anyIngot = <tag-items:forge:ingots>;
+val Ingot = <tag-items:forge:ingots>;
 val anyWool = <tag-items:minecraft:wool>;
 
 recipes.addShaped("wool_infused_ingot", <contenttweaker:wool_infused_ingot>, [[anyIngot, anyWool], [anyWool, anyIngot]]);
