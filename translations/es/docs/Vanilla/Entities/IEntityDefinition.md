@@ -2,7 +2,7 @@
 
 This sounds scary, so what does it mean? Basically, it is a reference to an entity registered in the game, so it is a reference to, say a mob in the game.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityDefinition;`
@@ -29,7 +29,7 @@ Returns the ID as string
 <entity:minecraft:sheep>.id;
 ```
 
-### name
+### nombre
 
 Returns the name as string
 
