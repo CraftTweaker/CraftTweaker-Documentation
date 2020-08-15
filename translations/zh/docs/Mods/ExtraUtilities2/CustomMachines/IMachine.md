@@ -11,7 +11,7 @@ You usually only need to import a class when directly using the name, such as in
 import extrautilities2.Tweaker.IMachine;
 ```
 
-## Add Recipes
+## 添加配方
 
 There are two methods for adding recipes, one uses a probability map for the outputs, one allows for the use of [WeightedItemStack](/Vanilla/Items/WeightedItemStack) and [WeightedLiquidStack](/Vanilla/Liquids/WeightedLiquidStack) objects.  
 Both methods use [maps](/AdvancedFunctions/Associative_Arrays) with strings as indices.  
@@ -29,8 +29,8 @@ This method uses the following parameters:
 | ------------- | ------------------------------------------------------------ |
 | inputs        | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs       | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
-| energy        | int                                                          |
-| time          | int                                                          |
+| energy        | 整数                                                           |
+| 时间            | 整数                                                           |
 | probabilities | float[string\]                                              |
 
 ### Using only the outputs map
@@ -48,8 +48,8 @@ This method uses the following parameters:
 | ------- | ------------------------------------------------------------ |
 | inputs  | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 | outputs | Object[string\]                                             |
-| energy  | int                                                          |
-| time    | int                                                          |
+| energy  | 整数                                                           |
+| 时间      | 整数                                                           |
 
 ## Remove recipes
 
@@ -63,7 +63,7 @@ There are two methods, one uses [IIngredient](/Vanilla/Variable_Types/IIngredien
 myMachine.removeRecipe(inputs);
 ```
 
-| Name   | Type                                                         |
+| 名称     | 类型                                                           |
 | ------ | ------------------------------------------------------------ |
 | inputs | [IIngredient](/Vanilla/Variable_Types/IIngredient)[string\] |
 
@@ -73,10 +73,10 @@ myMachine.removeRecipe(inputs);
 myMachine.removeRecipe(items, liquids);
 ```
 
-| Name    | Type                                                    |
-| ------- | ------------------------------------------------------- |
-| items   | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
-| liquids | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
+| 名称 | 类型                                                      |
+| -- | ------------------------------------------------------- |
+| 项目 | [IItemStack](/Vanilla/Items/IItemStack)[string\]       |
+| 液体 | [ILiquidStack](/Vanilla/Liquids/ILiquidStack)[string\] |
 
 ## Retrieving machine information
 
