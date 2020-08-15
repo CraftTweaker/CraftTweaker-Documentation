@@ -1,6 +1,6 @@
 # Soul Binder
 
-## Package
+## Paket
 
 `import mods.enderio.SoulBinder;`
 
@@ -20,7 +20,7 @@ mods.enderio.SoulBinder.addRecipe(IItemStack output, IIngredient input, String[]
 mods.enderio.SoulBinder.addRecipe(<minecraft:nether_star>, <minecraft:bone>, ["minecraft:skeleton"], 50000);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.enderio.SoulBinder.removeRecipe(IItemStack output);
