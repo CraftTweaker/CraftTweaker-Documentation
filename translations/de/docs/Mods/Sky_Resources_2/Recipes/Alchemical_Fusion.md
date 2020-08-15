@@ -2,7 +2,7 @@
 
 The *fusion* package is used for adding or removing recipes to/from the Alchemical Fusion process.
 
-## Calling
+## Anruf
 
 You can call the *fusion* package using `mods.skyresources.fusion`
 
