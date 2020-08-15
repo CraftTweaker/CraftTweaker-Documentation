@@ -1,30 +1,30 @@
 # NBT-Lock Tweaker
 
-## NBT-Locking
+## Verrouillage NBT
 
-The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
+Les NBT-Locks sont spécifiques à CompatSkills 1.4.0+ et sont actuellement la fonctionnalité la plus puissante. Vous pouvez verrouiller des NBT-Tags spécifiques soit restreints à un mod-id donné soit à chaque élément du jeu.
 
-This means that any item found to contain that NBT-tag will have the lock applied to it.
+Cela signifie que tout élément trouvé pour contenir cette balise NBT aura le verrou appliqué à elle.
 
-### Syntax:
+### Syntaxe :
 
-    // Blank Example:
-    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
-    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
+    // Exemple:
+    mods.compatskills.NBTLock.addGenericNBTLock(balise IData, String... verrouillé)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, tag IData, String... verrouillé)
     
-    //// Working Example:
-    // Locks Silk-Touch
+    //// Exemple de travail :
+    // Verrouille Silk-Touch
     addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
     
-    // Locks Unbreaking (No Level-Specified)
+    // Verrouille Unbreaking (Aucun niveau spécifié)
     addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-This has some powerful implications. This means for example that you as a pack-maker can lock:
+Cela a de fortes implications. Cela signifie par exemple que vous en tant que fabricant de paquets pouvez verrouiller :
 
-- Tinker Materials
-- Tinker Modifiers
-- Enchantments
-- Energy-Values
+- Matériaux de Bricoleur
+- Modificateurs de Tinker
+- Enchantements
+- Valeur-Énergie
 
-And much more, as long as you know the NBT-tag it uses!
+Et bien plus encore, aussi longtemps que vous connaissez le NBT tag qu'il utilise!
