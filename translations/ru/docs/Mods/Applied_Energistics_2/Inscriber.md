@@ -1,30 +1,30 @@
-# Inscriber
+# Скриптор
 
-### Importing
+### Импорт
 
 ```zenscript
 import mods.appliedenergistics2.Inscriber;
 ```
 
-### Adding
+### Добавление
 
-When the `inscribe` boolean is true, the top and bottom inputs are not consumed.
+Когда `впишите` логическое значение истинно, входы сверху и внизу не потребляются.
 
 ```zenscript
-Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
+Инскрипт. ddRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
 
-//turns eggs into Wither Skele spawn eggs, does not consume wither skull
-Inscriber.addRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
+//превращает яйца в яйца возрожденного Скеле Иссушителя, не потребляет череп иссушителя
+Инстребитель. ddRecipe(<minecraft:spawn_egg:5>, <minecraft:egg>, true, <minecraft:skull:1>);
 
-//combines bread, coco beans, and sugar. all inputs are consumed
+//Совмещает хлеб, кокосовые бобы и сахар. все входы потребляются
 Inscriber.addRecipe(<minecraft:cookie>, <minecraft:minecraft:bread>, false, <minecraft:dye:3>, <minecraft:sugar>);
 ```
 
-### Removing
+### Удаление
 
 ```zenscript
-Inscriber.removeRecipe(IItemStack output);
+Inscriber.removeRecipe(IItemStack);
 
-//removes printed silicon recipe 
+//удаляет напечатанный силиконовый рецепт 
 Inscriber.removeRecipe(<appliedenergistics2:material:20>); 
 ```
