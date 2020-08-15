@@ -1,6 +1,6 @@
 # Établi
 
-## Recipe Types
+## Types de recettes
 
 There are three recipe types for crafting tables:
 
