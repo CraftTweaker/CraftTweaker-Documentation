@@ -1,22 +1,22 @@
-# Compactor
+# Compattatore
 
 ## Pacchetto
 
 `mods.thermalexpansion.Compactor`
 
-The compactor supports 4 types of modifiers:
+Il compattatore supporta 4 tipi di modificatori:
 
-    Mint
-    Press
-    Storage
+    Menta
+    Premi
+    Magazzino
     Gear
     
 
-## Mint
+## Menta
 
-The Mint modifier changes the recipes registered in the `COIN` recipe map in Thermal Expansion.
+Il modificatore della zecca cambia le ricette registrate nella mappa delle ricette `COIN` nell'espansione termica.
 
-Note that these recipes require the Numismatic Press Augment.
+Si noti che queste ricette richiedono l'incremento della stampa Numismatica.
 
 ### Addizione
 
@@ -34,11 +34,11 @@ mods.thermalexpansion.Compactor.removeMintRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeMintRecipe(<thermalfoundation:material:167>);
 ```
 
-## Press
+## Stampa
 
-The Press modifier changes the recipes not registered in the `PLATE`, `COIN`, or `GEAR` recipe maps in Thermal Expansion.
+Il modificatore stampa cambia le ricette non registrate nel `PLATE`, `COIN`, o `GEAR` ricette mappe in espansione termica.
 
-These recipes do not require a specific Augment.
+Queste ricette non richiedono un aumento specifico.
 
 ### Addizione
 
@@ -56,11 +56,11 @@ mods.thermalexpansion.Compactor.removePressRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removePressRecipe(<thermalfoundation:material:167>);
 ```
 
-## Storage
+## Archiviazione
 
-The Storage modifier changes the recipes registered in the `PLATE` recipe map in Thermal Expansion.
+Il modificatore Storage cambia le ricette registrate nella mappa delle ricette `PLATE` in espansione termica.
 
-These recipes do not require a specific Augment, and seemingly are used only for plates.
+Queste ricette non richiedono un aumento specifico, e apparentemente sono utilizzate solo per i piatti.
 
 ### Addizione
 
@@ -78,11 +78,11 @@ mods.thermalexpansion.Compactor.removeStorageRecipe(IItemStack input);
 mods.thermalexpansion.Compactor.removeStorageRecipe(<thermalfoundation:material:167>);
 ```
 
-## Gear
+## Attrezzo
 
-The Gear modifier changes the recipes registered in the `GEAR` recipe map in Thermal Expansion.
+Il modificatore dell'ingranaggio cambia le ricette registrate nella mappa delle ricette `GEAR` nell'espansione termica.
 
-Note that these recipes require the Gearworking Die Augment.
+Nota che queste ricette richiedono il Gearworking Die Augment.
 
 ### Addizione
 
