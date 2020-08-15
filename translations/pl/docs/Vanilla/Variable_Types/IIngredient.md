@@ -1,9 +1,9 @@
-# IIngredient
+# Składnik
 
 An IIngredient is an ingredient for recipes.  
 This could be [an item](/Vanilla/Items/IItemStack/), [an ore dictionary entry](/Vanilla/OreDict/IOreDictEntry/), [a liquid](/Vanilla/Liquids/ILiquidStack/) and much more.
 
-## Importing the package
+## Importowanie pakietu
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.IIngredient;`
@@ -17,7 +17,7 @@ You can do this using the following import:
 import crafttweaker.item.IIngredient;
 ```
 
-## Functions
+## Funkcje
 
 So, what can we do with this?
 
@@ -46,7 +46,7 @@ val markedPick = <minecraft:diamond_pickaxe>.marked("Picky");
 print(markedPick.mark);
 ```
 
-### Amount
+### Kwota
 
 If you want to use more than one of a given item, you can set an amount to an IIngredient.  
 This is as easy as multiplying the IIngredient with an Integer.  
@@ -116,31 +116,31 @@ Sometimes you want an item not to be consumed upon crafting but instead receive 
 This is what item Transformers are there for.
 
 ```zenscript
-<br />val item = <minecraft:apple>;
+<br />Towar walny = <minecraft:apple>;
 
-//Item won't be consumed and will stay in the grid
-transformedItem = item.reuse();
+//Przedmiot nie zostanie zużyty i pozostanie w siatki
+przekształceniePrzedmiot = przedmiot. euse();
 
-//Item won't be consumed and the whole stack will be given back to you (does /give).
+//Przedmiot nie zostanie zużyty, a cały stos zostanie Ci odesłany (robi /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
+//element zostanie zużyty, ale poda ci określony stos (gniazdo rzemieślnicze zostanie wyczyszczony!).
+element transformacji = element. iveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
+//przedmiot zostanie zastąpiony określonym przedmiotem, który zamiast tego przejdzie do transformacji
+przedmiot = przedmiot. ransformReplace(<minecraft:potato>);
 
-//damages the item by 1
-transformedItem = item.transformDamage();
+//uszkodza przedmiot przez 1
+transformedItem = element. ransformDamage();
 
-//damages the item by the given value
+//uszkodza element o podanej wartości
 transformedItem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
+//element zostanie zużyty, bez względu na to co się stanie.
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
-transformedItem = item.transformConsume(3);
+//Powoduje zużycie wielu elementów.
+Element transformedItem = item.transformConsume(3);
 ```
 
 ### Ingredient Conditions
@@ -175,7 +175,7 @@ conditionedItem = item.withTag({display: {Name: "Tomato"}});
 conditionedItem = item.onlyStack(32);
 ```
 
-### Matching
+### Dopasowanie
 
 If you want to check if an IItemStack matches your IIngredient you can use the match method. This will return a boolean. If the IIngredient represents a liquid, it will check if the item is a valid container for this liquid.
 
@@ -184,7 +184,7 @@ print(<ore:ingotIron>.matches(<minecraft:iron_ingot>));
 print(<ore:ingotIron>.matchesExact(<minecraft:iron_ingot>));
 ```
 
-You can also match two IIngredient Objects, in which case you'd need to use the ```in``` operator:
+You can also match two IIngredient Objects, in which case you'd need to use the ```w``` operator:
 
 ```zenscript
 val ingots = <minecraft:iron_ingot> | <minecraft:gold_ingot>;
