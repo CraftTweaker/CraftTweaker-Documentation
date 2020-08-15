@@ -6,17 +6,17 @@ You can call the Excavator package using `mods.immersiveengineering.Excavator`.
 
 ## Add Mineral
 
-| Required | Type                | Data Type |
-| -------- | ------------------- | --------- |
-| Required | Name                | string    |
-| Required | Mineral Weight      | int       |
-| Required | Fail Chance         | double    |
-| Required | Ores                | string[]  |
-| Required | Chances             | double[]  |
-| Optional | Dimension Whitelist | int []    |
-| Optional | Blacklist           | boolean   |
+| Requerido | Tipo                | Tipo de Datos |
+| --------- | ------------------- | ------------- |
+| Requerido | Nombre              | cadena        |
+| Requerido | Mineral Weight      | int           |
+| Requerido | Fail Chance         | doble         |
+| Requerido | Ores                | string[]      |
+| Requerido | Chances             | double[]      |
+| Opcional  | Dimension Whitelist | int []        |
+| Opcional  | Blacklist           | boolean       |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Excavator.addMineral("Iron Ore", 50, 0.005, ["oreIron"
 
 ## Remove Mineral
 
-| Required | Type | Data Type |
-| -------- | ---- | --------- |
-| Required | Name | String    |
+| Requerido | Tipo   | Tipo de Datos |
+| --------- | ------ | ------------- |
+| Requerido | Nombre | String        |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
