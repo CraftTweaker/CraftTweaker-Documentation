@@ -1,16 +1,16 @@
 # PlayerUseHoe
 
-The PlayerUseHoe Event is fired whenever a player uses his hoe... If you know what I mean.
+L'evento PlayerUseHoe viene sparato ogni volta che un giocatore usa la zappa... Se sai cosa intendo.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerUseHoeEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerUseHoeEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerUseHoe Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerUseHoe Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -19,17 +19,17 @@ PlayerUseHoe Events implement the following interfaces and are able to call all 
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter    | Tipo Di Reso                                |
 | ------------ | ------------------------------------------- |
-| `canceled`   | boolean                                     |
-| `processed`  | boolean                                     |
+| `annullato`  | boolean                                     |
+| `elaborato`  | boolean                                     |
 | `x`          | int                                         |
 | `y`          | int                                         |
 | `z`          | int                                         |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)        |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)            |
+| `giocatore`  | [IPlayer](/Vanilla/Players/IPlayer/)        |
+| `mondo`      | [IWorld](/Vanilla/World/IWorld/)            |
 | `blocco`     | [IBlock](/Vanilla/Blocks/IBlock/)           |
 | `blockState` | [IBlockState](/Vanilla/Blocks/IBlockState/) |
 | `dimensione` | int                                         |
@@ -37,5 +37,5 @@ The following information can be retrieved from the event:
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.process()` sets the event as processed
+- `event.cancel()` imposta l'evento come annullato
+- `event.process()` imposta l'evento come elaborato
