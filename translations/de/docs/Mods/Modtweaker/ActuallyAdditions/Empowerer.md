@@ -14,7 +14,7 @@ mods.actuallyadditions.Empowerer.addRecipe(<minecraft:iron_ingot>, <minecraft:le
 mods.actuallyadditions.Empowerer.addRecipe(<minecraft:gold_ingot>, <minecraft:iron_ingot>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, <minecraft:redstone>, 500, 100, [0.5, 0.3, 0.2]);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 //mods.actuallyadditions.Empowerer.removeRecipe(IItemStack output);
