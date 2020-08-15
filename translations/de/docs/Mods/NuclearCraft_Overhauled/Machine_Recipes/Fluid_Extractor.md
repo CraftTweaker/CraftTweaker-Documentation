@@ -1,7 +1,7 @@
-# Fluid Extractor
+# Flüssigkeits-Extraktor
 
-## Importing the Package
-`mods.nuclearcraft.Extractor`
+## Paket wird importiert
+`mods.nuclearcraft.Extraktor`
 
 ## Rezepte hinzufügen
 ```zenscript
@@ -12,5 +12,5 @@ mods.nuclearcraft.Extractor.addRecipe(IIngredient itemInput, IIngredient itemOut
 ```zenscript
 mods.nuclearcraft.Extractor.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Extractor.removeRecipeWithOutput(IIngredient itemOutput, ILiquidStack fluidOutput);
-mods.nuclearcraft.Extractor.removeAllRecipes();
+mods.nuclearcraft.Extractor.removeAllRezept();
 ```
