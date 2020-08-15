@@ -48,7 +48,7 @@ logger.info(message as String);
 logger.info("message");
 ```
 
-| Parameter | Type   | Description           |
+| Parameter | Type   | Beschreibung          |
 | --------- | ------ | --------------------- |
 | message   | String | message to be logged. |
 
