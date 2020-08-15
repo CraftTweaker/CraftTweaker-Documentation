@@ -1,61 +1,61 @@
-# Filtered Hopper
+# Tramoggia Filtrata
 
-The Filtered Hopper is a block that can allow or disallow certain items based on the item currently in its Filter Slot. Additionally it can perform recipes on the items that are attempting to enter the Hopper.
+La Tramoggia Filtrata è un blocco che può consentire o disattivare determinati oggetti in base all'oggetto attualmente nel suo Slot Filtro. Inoltre può eseguire ricette sugli elementi che stanno tentando di entrare nella tramoggia .
 
-# Filters
+# Filtri
 
-* Addition
+* Addizione
     
-    * Add a new Filter by a name and assign the items which will be used in the Filter Slot.
+    * Aggiungere un nuovo filtro per un nome e assegnare gli elementi che saranno utilizzati nel filtro Slot.
     ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilter(String name, IIngredient item)
+        mods.betterwithmods.FilteredHopper.addFilter(nome string, elemento IIngrediente)
     
         mods.betterwithmods.FilteredHopper.addFilter("modtweaker:myFilter", <minecraft:planks>);   
     ```
     
-    * Add an allowed item to a Filter by its name.
+    * Aggiungi un elemento consentito a un filtro per il suo nome.
     ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilteredItem(String name, IIngredient item)
+        mods.betterwithmods.FilteredHopper.addFilteredItem(nome string, elemento IIngrediente)
     
         mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<minecraft:dirt>);
         mods.betterwithmods.FilteredHopper.addFilteredItem("modtweaker:myFilter",<ore:ingotIron>);
     ```
     
-    * Filtered Recipes - The hopper can process the item attempting to input into specific item outputs, it can either
+    * Ricette filtrate - La tramoggia può elaborare l'elemento che tenta di immettere in output di articoli specifici, può entrambi
         
-        * Put into the hopper's inventory (as long as the current filter allows it).
-        * Eject the items into the world above the hopper 
+        * Metti nell'inventario della tramoggia (finché il filtro corrente lo consente).
+        * Espelli gli oggetti nel mondo sopra la tramoggia 
         ```zenscript
-        mods.betterwithmods.FilteredHopper.addFilterRecipe(String name, IIngredient input, IIngredient[] insideOutput , IIngredient[] outsideOutput);
+        mods.betterwithmods.FilteredHopper. ddFilterRecipe(Nome string, Input IIngrediente, IIngredient[] insideOutput , IIngredient[] outsideOutput);
         
-        //Will convert a grass block into a flint side the inventory and 9 diamonds outside the inventory
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
+        //Converrà un blocco di erba in un lato selce l'inventario e 9 diamanti al di fuori delle mods dell'inventario
+        . etterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter",<minecraft:grass>,[<minecraft:flint>],[<minecraft:diamond>*9]);
         
-        //Will only eject 9 diamonds into the world
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter2",<minecraft:gravel>, [], [<minecraft:diamond>*9]);
+        //Espellerà solo 9 diamanti nel mondo
+        mods. etterwithmods.FilteredHopper. ddFilterRecipe("modtweaker:myFilter2",<minecraft:gravel>, [], [<minecraft:diamond>*9]);
         
-        //Will only put 9 diamonds into the inventory, **only if you allow diamonds into the specific filter**
-        mods.betterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
+        //Inserirà solo 9 diamanti nell'inventario, **solo se consentirai diamanti nel filtro specifico**
+        mods. etterwithmods.FilteredHopper.addFilterRecipe("modtweaker:myFilter3",<minecraft:sand>, [<minecraft:diamond>*9], []);
         ```
         
-        Additionally, you can add special recipes to the Filtered Hopper that will create Souls Urns from Urns.
+        Inoltre, è possibile aggiungere ricette speciali alla tramoggia filtrata che creerà Urne anime da urne.
         
         ```zenscript
-           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondary)
+           mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(IIngredient input, IItemStack[] outputs, IItemStack[] secondario)
         
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
         ```
 
-* Removal
+* Rimozione
     
-    * Remove the allowed items from the specified filter
+    * Rimuovi gli elementi consentiti dal filtro specificato
     ```zenscript
         mods.betterwithmods.FilteredHopper.clearFilter(String name);
     
         mods.betterwithmods.FilteredHopper.clearFilter("betterwithmods:wicker");
     ```
     
-    * Remove a Filtered Recipe by input or output
+    * Rimuovi una Ricetta Filtrata per input o output
     ```zenscript
         mods.betterwithmods.FilteredHopper.removeRecipe(IIngredient[] insideOutput, IIngredient[] outsideOutput);
     
