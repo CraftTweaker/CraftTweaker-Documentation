@@ -2,47 +2,47 @@
 
 BlockProperties are what makes a block distinctive from other blocks. It mainly serves as superinterface to [IBlockState](/Vanilla/Blocks/IBlockState/), that means all these functions are also available to all [IBlockState](/Vanilla/Blocks/IBlockState/) objects.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockProperties;`
 
-| ZenGetter                 | Return Type                             | Description                                                           |
-| ------------------------- | --------------------------------------- | --------------------------------------------------------------------- |
-| canProvidePower           | bool                                    | Returns if the refered block can provide Redstone Power               |
-| mobilityFlag              | string                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string |
-| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)            |
-| causesSuffocation         | bool                                    | Returns whether the block can choke you.                              |
-| hasCustomBreakingProgress | bool                                    |                                                                       |
-| blockNormalCube           | bool                                    |                                                                       |
-| fullBlock                 | bool                                    |                                                                       |
-| fullCube                  | bool                                    |                                                                       |
-| normalCube                | bool                                    |                                                                       |
-| opaqueCube                | bool                                    |                                                                       |
-| translucent               | bool                                    |                                                                       |
-| useNeighborBrightness     | bool                                    |                                                                       |
+| ZenGetter                 | Tipo de devolución                      | Descripción                                                             |
+| ------------------------- | --------------------------------------- | ----------------------------------------------------------------------- |
+| canProvidePower           | pluma                                   | Devuelve si el bloque referenciado puede proporcionar Poder de Redstone |
+| mobilityFlag              | cadena                                  | Returns the [mobility flag](/Vanilla/Blocks/IMobilityFlag/) as string   |
+| material                  | [IMaterial](/Vanilla/Blocks/IMaterial/) | Returns the block's [material](/Vanilla/Blocks/IMaterial/)              |
+| causesSuffocation         | pluma                                   | Returns whether the block can choke you.                                |
+| hasCustomBreakingProgress | pluma                                   |                                                                         |
+| blockNormalCube           | pluma                                   |                                                                         |
+| fullBlock                 | pluma                                   |                                                                         |
+| fullCube                  | pluma                                   |                                                                         |
+| normalCube                | pluma                                   |                                                                         |
+| opaqueCube                | pluma                                   |                                                                         |
+| translucent               | pluma                                   |                                                                         |
+| useNeighborBrightness     | pluma                                   |                                                                         |
 
-## ZenMethods
+## Métodos
 
-### isReplacable
+### es reemplazable
 
-`boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+`booleano es reemplazable (mundo IWorld, IBlockPos pos);`  
+Parámetros:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+Devuelve un booleano que sais si el bloque puede ser reemplazado o no.
 
 ### getLightValue
 
 `int getLightValue(IWorld world, IBlockPos blockPos);`  
-Parameters:
+Parámetros:
 
 - [IBlockAccess](/Vanilla/World/IBlockAccess/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the current light value at the given location.
+Devuelve un int que representa el valor de luz actual en la ubicación dada.
 
 ### getWeakPower/GetStrongPower
 
@@ -56,14 +56,14 @@ Parameters:
 
 ### getComparatorInputOverride
 
-`int getComparatorInputOverride(IWorld world, IBlockPos blockPos);`
+`int getComparatorInputOverride(mundo IWorld, bloque IBlockPos);`
 
-Parameters:
+Parámetros:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns an int representing the block's redstone comparator input override type.
+Devuelve un int que representa el tipo de entrada del comparador de redstone del bloque.
 
 ### Check if an entity can spawn on the block
 
