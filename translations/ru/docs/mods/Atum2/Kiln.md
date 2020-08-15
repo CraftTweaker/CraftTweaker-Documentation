@@ -1,68 +1,68 @@
 # Килн
 
-The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
+Килн - это многоблок, используемый для быстрой обработки строительных блоков, которые можно получить через плавку чего-то в печи.
 
 ## Пакет
 `mods.atum.Kiln;`
 
 ## Черный список
 
-The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
+Рецепты Kiln основаны на рецептах ванильной печи и сортируют все кроме строительных блоков. «Черный список» – это способ еще больше минимизировать рецепты из «ванильной печи».
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` A namespaced ID for the input block/item that should be blacklisted.
+- `id` Идентификатор пространства имен для входного блока/элемента, который должен быть чёрный список.
 
-Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
+Удаляет рецепт(ы) с указанным предметом/блоком из рецептов, которые вытащит из ванильной печи
 
 ```zenscript
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Adding a Recipe
+## Добавление рецепта
 
 `mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `experience` Float number
-- `cookTime` Integer number (If left empty, it'll default to 75)
+- `опыт` Float number
+- `время куки` целое число (если оставить пустым, оно по умолчанию 75)
 
-Adds a recipe with the specified input, output, experience & cook time
+Добавляет рецепт с указанным входом, выходом, опытом & время приготовления
 
 ```zenscript
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Removing a Recipe
+## Удаление рецепта
 
-The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
+Методы удаления работают только по рецептам, добавленным специально для Kiln Atum (другие моды) По умолчанию в Atum это будет только рецепт Marl to White Ceramic Tile Block (белая керамическая плитка). Если вы хотите удалить что-нибудь еще, вы, вероятно, ищете черный список (документация выше)
 
-### Remove Recipes by Output
+### Удалить рецепты по выходу
 
-`mods.atum.Kiln.removeRecipeByOutput(output);`
+`mods.atum.Kiln.removeRecipeByOutput(Выход);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Удаляет все рецепты, в которых приведен результат, предоставленный [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 ```
 
-### Remove Recipes by Output & Input
+### Удалить рецепты по Выходу & Вход
 
 `mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+Удаляет определенный рецепт с указанным выводом & ввод
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
-### Other removal methods
+### Другие методы удаления
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+Смотрите [менеджеров рецептов](/recipes/recipe_managers) для других способов удаления рецептов вращающегося колеса
