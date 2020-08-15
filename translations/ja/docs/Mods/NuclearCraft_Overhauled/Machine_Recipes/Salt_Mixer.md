@@ -1,6 +1,6 @@
 # Salt Mixer
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.SaltMixerSaltMixer`
 
 ## レシピを追加中
