@@ -1,10 +1,10 @@
-### Class
+### Класс
 
 ```zenscript
 import mods.roots.AnimalHarvest;
 ```
 
-#### Methods
+#### Методы
 
 ```zenscript
 void addEntity(
@@ -40,7 +40,7 @@ void removeFish(
 
 * * *
 
-### Examples
+### Примеры
 
 ```zenscript
 import mods.roots.AnimalHarvest;
