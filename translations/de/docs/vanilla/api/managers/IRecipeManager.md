@@ -27,10 +27,10 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 | Parameter | Type                                                   | Beschreibung                    |
 | --------- | ------------------------------------------------------ | ------------------------------- |
 | name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
 
 
-### removeAll
+### alle entfernen
 
 Remove all recipes in this registry
 
@@ -49,7 +49,7 @@ craftingTable.removeByModid("minecraft");
 
 | Parameter | Type   | Beschreibung                   |
 | --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| modo      | String | modid of the recipes to remove |
 
 
 ### removeByName
@@ -61,7 +61,7 @@ craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
+| Parameter | Type   | Beschreibung                      |
 | --------- | ------ | --------------------------------- |
 | name      | String | registry name of recipe to remove |
 
@@ -91,13 +91,13 @@ craftingTable.removeRecipe(<item:minecraft:glass>);
 
 | Parameter | Type                                                              | Beschreibung         |
 | --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Kommandozeile | String | true       | false      |
 
