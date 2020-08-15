@@ -39,25 +39,25 @@ IBlockState extends [IBlockProperties](/Vanilla/Blocks/IBlockProperties/). That 
 
 IBlockState extends [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/). That means that all methods that are available to [IBlockStateMatcher](/Vanilla/Blocks/IBlockStateMatcher/) objects are also available to IBlockState objects.
 
-## ZenMethods and ZenGetters
+## ZenMethoden und ZenGetters
 
 | ZenGetter     | Rückgabetyp                       | Beschreibung                                                                               |
 | ------------- | --------------------------------- | ------------------------------------------------------------------------------------------ |
-| block         | [IBlock](/Vanilla/Blocks/IBlock/) | Returns the refered block                                                                  |
-| meta          | int                               | Returns the refered block's metadata                                                       |
-| commandString | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
+| blockieren    | [IBlock](/Vanilla/Blocks/IBlock/) | Gibt den referenzierten Block zurück                                                       |
+| meta          | int                               | Gibt die Metadaten des referierten Blocks zurück                                           |
+| Kommandozeile | string                            | Returns a possible [Bracket Handler](/Vanilla/Brackets/Bracket_BlockState/) for this state |
 
-## ZenMethods
+## ZenMethoden
 
 ### isReplacable
 
 `boolean isReplaceable(IWorld world, IBlockPos pos);`  
-Parameters:
+Parameter:
 
 - [IWorld](/Vanilla/World/IWorld/) world → The world to be checked in
 - [IBlockPos](/Vanilla/World/IBlockPos/) pos → The Block's position
 
-Returns a boolean that sais whether the block can be replaced or not.
+Gibt einen booleschen Wert zurück, der sicherstellt, ob der Block ersetzt werden kann oder nicht.
 
 ### Getting or changing Properties
 
@@ -78,8 +78,8 @@ IBlockState withProperty(String name, String value);
 You can either use `int compare(IBlockState other);` or the ZenCompare Tokens `==` `!=`.  
 The return different types though:
 
-- `state.compare(other)` returns an int that is 0 if they are equal
-- `state == other` returns a bool that is true of they are equal
+- `state.compare(other)` gibt eine Int zurück, die 0 ist, wenn sie gleich sind
+- `Status == anderer` gibt einen Bool zurück, der zutrifft, wenn er gleich ist
 
 ### Getting an explicit Blockstate Matcher
 
