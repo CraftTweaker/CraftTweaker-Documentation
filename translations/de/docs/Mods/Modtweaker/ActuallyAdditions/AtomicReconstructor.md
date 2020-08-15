@@ -1,6 +1,6 @@
-# Atomic Reconstructor
+# Atomischer Rekonstrukteur
 
-## Package
+## Paket
 
 `mods.actuallyadditions.AtomicReconstructor`
 
