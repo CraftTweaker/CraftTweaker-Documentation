@@ -2,7 +2,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent>);
 ```
-| Parameter | Type                                                                                                                                                                            | Description             |
+| Paramètre | Type de texte                                                                                                                                                                   | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
 | handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerEvent.MCPlayerChangedDimensionEvent](/vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent)> | No description provided |
 
 
 
-## Methods
+## Méthodes
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -75,9 +75,9 @@ myMCPlayerChangedDimensionEvent.isCanceled();
 myMCPlayerChangedDimensionEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| cancel    | boolean       | No description provided |
 
 
 
