@@ -1,6 +1,6 @@
-# Assembling Machine
+# Macchina Di Assemblaggio
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.assemblingMachine`
 
 ## Aggiunta Di Ricette
