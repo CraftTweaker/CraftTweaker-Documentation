@@ -1,41 +1,41 @@
-# `NativeClass`
+# `Natywna Klasa`
 
-A `NativeClass` identifies the instance of a class of the backend environment that is behind ZenScript. In the case of CraftTweaker, `NativeClass` therefore represents a Java class.
+`NativeClass` identyfikuje instancję klasy środowiska backendu stojącego za ZenScript. W przypadku CraftTweaker, `NativeClass` reprezentuje zatem klasę Java.
 
-## Class details
-The class is situated in the `zenscriptx.reflect` package, making `zenscriptx.reflect.NativeClass` the fully qualified name for importing.
+## Szczegóły klasy
+Klasa znajduje się w pakiecie `zenscriptx.reflect` , dzięki czemu `zenscriptx.reflect.NativeClass` jest w pełni kwalifikowaną nazwą do importu.
 
-## Creating a new Instance
-The only possible way to create a new `NativeClass` instance is through one of the two static methods, which take either the name of the class or an object to inspect. The snippe that follows shows the signatures of the two methods that can be used:
+## Tworzenie nowej instancji
+Jedynym możliwym sposobem na utworzenie nowej instancji `NativeClass` jest jedna z dwóch metod statycznych. które podaje(-ją) nazwę klasy lub obiektu do sprawdzenia. Poniższy fragment pokazuje podpisy dwóch metod, które można użyć :
 
 ```zenscript
-function byName(name as string) as NativeClass?;
-function fromZen(instance as any) as NativeClass?;
+funkcjaNazwa(nazwa jako ciąg) jako NativeClass?;
+funkcja fromZen(instancja jako dowolna) jako NativeClass?;
 ```
 
-Both methods are allowed to return `null` (as shown by the `?` at the end of the type) because there is the possibility for some classes not to exist or not to have a backend counterpart. In fact, some particular associative arrays may be not representable in the backend and require some mangling to be used correctly.
+Obie metody mogą zwrócić `null` (jak pokazują `?` na końcu typu) ponieważ istnieje możliwość , aby niektóre klasy nie istniały lub nie miały odpowiednika do zaplecza. W rzeczywistości niektóre konkretne tablice stowarzyszeniowe mogą być niereprezentatywne w tylnej części i wymagają poprawnego użycia pewnego manekina.
 
-The following are some examples of usage of the two factory methods:
+Poniżej przedstawiono przykłady wykorzystania dwóch metod fabrycznych:
 
 ```zenscript
-NativeClass.byName("crafttweaker.api.item.IItemStack"); # returns the NativeClass with the given name
-NativeClass.fromZen(<blockstate:minecraft:pumpkin>); # returns the NativeClass that matches the ZenScript IBlockState Class
-NativeClass.byName("123"); # returns null because no native class with that name can exist
+NativeClass.byName("crafttweaker.api.item.IItemStack"); # zwraca NativeClass o podanej nazwie
+NativeClass. romZen(<blockstate:minecraft:pumpkin>); # zwraca NativeClass która odpowiada klasie IBlockState
+NativeClass. yName("123"); # zwraca puste, ponieważ żadna natywna klasa o tej nazwie nie może istnieć
 ```
 
 ## Właściwości
-A `NativeClass` provides read-only access to a certain set of properties, as outlined in the following table:
+`NativeClass` zapewnia dostęp tylko do odczytu do określonego zestawu właściwości, zgodnie z poniższą tabelą:
 
-| Nazwa Właściwości | Typ           | Opis                                                                                                                                               |
-| ----------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `simpleName`      | `ciąg znaków` | "Shortest" name that can be used to refer to the class (i.e. `IItemStack` for `crafttweaker.api.item.IItemStack`, `String` for `java.lang.String`) |
-| `qualifiedName`   | `ciąg znaków` | Full name that uniquely identifies this class in the backend environment (i.e. `crafttweaker.api.item.IItemStack` or `java.lang.String`)           |
+| Nazwa Właściwości     | Typ           | Opis                                                                                                                                                              |
+| --------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `simpleName`          | `ciąg znaków` | Nazwa "Krótka", która może być użyta do odniesienia do klasy (tj. `IItemStack` dla `słabszego rzemieślnika. pi.item.IItemStack`, `String` dla `java.lang.String`) |
+| `nazwa kwalifikowana` | `ciąg znaków` | Pełna nazwa, która jednoznacznie identyfikuje tę klasę w backend środowiska (tj. `crafttweaker.api.item.IItemStack` lub `java.lang.String`)                       |
 
 ## Metody
-`NativeClass` also provides access to a single method that allows conversion to the ZenScript equivalent (refer to [`Class`](/Mods/Boson/Reflection/Class/) for more information). The signature of the method is as follows:
+`NativeClass` zapewnia również dostęp do jednej metody, która pozwala na konwersję na odpowiednik ZenScript (zob. [`Klasa`](/Mods/Boson/Reflection/Class/) aby uzyskać więcej informacji). Podpis metody jest następujący:
 
 ```zenscript
-function toClass() as Class?;
+funkcja toClass() jako klasa?;
 ```
 
-The method may return `null` since not all native classes may have a representation in ZenScript. In fact, there are some parts of the backend that are not exposed to ZenScript users, such as `org.apache.commons.lang3.BitField`, which therefore cannot be represented via a ZenScript `Class` object.
+Metoda może zwracać `null` , ponieważ nie wszystkie natywne klasy mogą mieć reprezentację w ZenScript. W rzeczywistości istnieją części zaplecza, które nie są narażone na kontakt z użytkownikami ZenScript, takie jak `org.apache.commons. ang3.Bitfield`, który nie może być reprezentowany przez obiekt ZenScript `Klasa`.
