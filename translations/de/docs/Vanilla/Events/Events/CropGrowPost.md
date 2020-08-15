@@ -1,14 +1,14 @@
 # CropGrowPostEvent
 
-The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
+Das CropGrowPost-Event wird abgefeuert, sobald ein Crop-Block **erfolgreich** gewachsen ist. Sie kann nicht aufgehoben werden und dient lediglich als Meldung über das Anbauwachstum.
 
 ## Event-Klasse
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.CropGrowPostEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Du musst das Ereignis als diese Klasse in den Funktionskopf verschieben:  
+`crafttweaker.event. ropGrowPostEvent`  
+Sie können natürlich auch [die Klasse vor](/AdvancedFunctions/Import/) importieren und dann diesen Namen verwenden.
 
 ## Erweiterte Event-Schnittellen
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+CropGrowPost Events implementieren die folgenden Schnittstellen und können auch alle ihre Methoden/Getters/Setter aufrufen:
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
@@ -16,7 +16,7 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 ## ZenGetter
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter            | ZenSetter | Type                                        |
-| -------------------- | --------- | ------------------------------------------- |
-| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter             | ZenSetter | Type                                        |
+| --------------------- | --------- | ------------------------------------------- |
+| `originalBlockstatus` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `originalBlock`       |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
