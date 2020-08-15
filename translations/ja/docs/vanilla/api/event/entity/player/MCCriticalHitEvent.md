@@ -12,18 +12,18 @@ crafttweaker.api.event.entity.player.MCCriticalHitEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCCriticalHitEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCCriticalHitEvent>);
 ```
-| パラメータ   | タイプ                                                                                                                               | 説明                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                               | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCCriticalHitEvent](/vanilla/api/event/entity/player/MCCriticalHitEvent)> | 説明が提供されていません |
 
 
 
 ## メソッド
 ### getDamageModifier
 
-The damage modifier for the hit.<br> This is by default 1.5F for ciritcal hits and 1F for normal hits .
+ヒット時のダメージ修飾子。<br> 通常ヒット時は、デフォルトで1.5F、通常ヒット時は1Fである。
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCCriticalHitEvent.getDamageModifier();
@@ -31,7 +31,7 @@ myMCCriticalHitEvent.getDamageModifier();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getEntityPlayer();
@@ -39,9 +39,9 @@ myMCCriticalHitEvent.getEntityPlayer();
 
 ### getOldDamageModifier
 
-The orignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hits and 1F for normal hits .
+ヒット時のorignal damage modifier for the hit wthout any changes.<br> This is 1.5F for ciritcal hit, and 1F for normal hit .
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCCriticalHitEvent.getOldDamageModifier();
@@ -49,9 +49,9 @@ myMCCriticalHitEvent.getOldDamageModifier();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCCriticalHitEvent.getPlayer();
@@ -59,9 +59,9 @@ myMCCriticalHitEvent.getPlayer();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCCriticalHitEvent.hasResult();
@@ -69,11 +69,11 @@ myMCCriticalHitEvent.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCCriticalHitEvent.isCancelable();
@@ -81,9 +81,9 @@ myMCCriticalHitEvent.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCCriticalHitEvent.isCanceled();
@@ -91,9 +91,9 @@ myMCCriticalHitEvent.isCanceled();
 
 ### isVanillaCritical
 
-Returns true if this hit was critical by vanilla
+このヒットがバニラによって批判された場合は true を返します
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCCriticalHitEvent.isVanillaCritical();
@@ -105,22 +105,22 @@ myMCCriticalHitEvent.isVanillaCritical();
 myMCCriticalHitEvent.setCanceled(cancel as boolean);
 ```
 
-| パラメータ  | タイプ      | 説明                      |
-| ------ | -------- | ----------------------- |
-| cancel | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
 ### setDamageModifier
 
-This set the damage multiplier for the hit. If you set it to 0, then the particles are still generated but damage is not done.
+これにより、ヒット時のダメージ倍率が設定されます。 0に設定すると粒子は生成されますが、ダメージは発生しません。
 
 ```zenscript
 myMCCriticalHitEvent.setDamageModifier(mod as float);
 ```
 
-| パラメータ | タイプ    | 説明                      |
-| ----- | ------ | ----------------------- |
-| mod   | float型 | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| mod   | float型 | 説明が提供されていません |
 
 
 
