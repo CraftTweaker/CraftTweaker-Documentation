@@ -1,6 +1,6 @@
-# Decay Infuser
+# Infuser verfallen
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.infuser`
 
 ## Rezepte hinzufügen
