@@ -1,11 +1,11 @@
-# Armor-Value Locking
+# Блокировка значения брони
 
-## Feature:
+## Свойство:
 
-This type of lock, locks the ability to use armor that provides a certain amount of Armor Points behind a set of requirements. This means that if an armor provides 0.75 armor point, as in the example below, you can lock it behind only being useable in the End (Aka Dim 1)!
+Этот тип замка, блокирует возможность использования брони, которая обеспечивает определенное количество очков брони за набор требований. Это означает, что если броня предоставит 0. 5 броневой точки, как и в примере ниже, вы можете заблокировать ее только быть пригодным для использования в Энде (Aka Dim 1)!
 
-## Syntax:
+## Синтаксис:
 
-    mods.compatskills.ArmorLock.addArmorLock(double armor, String... requirements);
+    Compatskills.ArmorLock.addArmorLock(двойная доспеха... requirement);
     
-    mods.compatskills.ArmorLock.addArmorLock(0.75, "dim|1");
+    mods.compatskills.ArmorLock.addArmorLock((0.75, "dim|1");
