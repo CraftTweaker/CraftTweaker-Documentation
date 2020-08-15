@@ -6,19 +6,19 @@ The Arc Furnace package can be used to add/remove recipes to/from the Immersive 
 
 You can call the ArcFurnace package using `mods.immersiveengineering.ArcFurnace`.
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type                | Data Type                                                                              |
-| -------- | ------------------- | -------------------------------------------------------------------------------------- |
-| Required | Output              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Required | Input               | [IIngredient](/Vanilla/Variable_Types/IIngredient/)                                    |
-| Required | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
-| Required | Time                | Integer                                                                                |
-| Required | Energy Per Tick     | Integer                                                                                |
-| Optional | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
-| Optional | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
+| Requerido | Tipo                | Tipo de Datos                                                                          |
+| --------- | ------------------- | -------------------------------------------------------------------------------------- |
+| Requerido | Salida              | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Requerido | Input               | [IIngredientes](/Vanilla/Variable_Types/IIngredient/)                                  |
+| Requerido | Slag                | [IItemStack](/Vanilla/Items/IItemStack/)                                               |
+| Requerido | Time                | Entero                                                                                 |
+| Requerido | Energy Per Tick     | Entero                                                                                 |
+| Opcional  | Additives           | [IIngredient](/Vanilla/Variable_Types/IIngredient/) Array[]                            |
+| Opcional  | Special Recipe Type | String [specialRecipeTypes](/Mods/Immersive_Engineering/Variables/SpecialRecipeTypes/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
@@ -32,11 +32,11 @@ mods.immersiveengineering.ArcFurnace.addRecipe(<minecraft:diamond>, <ore:logWood
 
 ## Remove Recipe
 
-| Type   | Data Type                                |
+| Tipo   | Tipo de Datos                            |
 | ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Salida | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example:
