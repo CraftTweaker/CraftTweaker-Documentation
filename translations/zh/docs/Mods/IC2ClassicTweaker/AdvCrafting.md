@@ -6,18 +6,18 @@
 import mods.ic2.AdvRecipes;
 ```
 
-## Recipe Types
-There are several types of recipes:
+## 配方类型
+有几种配方：
 
-### Shaped Recipes
-Shaped Recipes are recipes, where it matters, which item goes into which slot. For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. The shape matters, thus it is a shaped recipe.
+### 形状配方
+形状的配方是一种配方，在这种配方中，哪个项目进入哪个配置。 For example, you can't just arrange 7 different sized stacks of iron ingots in any order to create iron leggings. 形状很重要，因此它是一种形状的配方。
 
-### Shapeless Recipes
-Shapeless Recipes are recipes, where only the items you put in the crafting grid matter, whereas the shape is of no importance. For example, blue and yellow dye create green dye. This recipe doesn't care about where you put which item.
+### 无缝配方
+无缝配方是配方的，只有你放置在网格中的物品才是配方的，而形状则不重要。 例如，蓝色和黄色染料会产生绿色染料。 这个配方不关心你放在哪里的项目。
 
-## Add Recipes
+## 添加配方
 
-### addShaped
+### 添加了
 ```zenscript
 mods.ic2.AdvRecipes.addShaped(output,inputs);
 ```
