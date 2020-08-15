@@ -8,7 +8,7 @@ import mods.roots.FlowerGrowth;
 
 ```zenscript
 void removeRecipe(
-  string name // The name of the recipe you wish to remove
+  string name // Il nome della ricetta che si desidera rimuovere
 );
 ```
 
@@ -16,8 +16,8 @@ void removeRecipe(
 
 ```zenscript
 void addRecipeBlockState(
-  string name,      // The name of the recipe that you're adding
-  IBlockState state // The state of the block of the flower
+  nome stringa, // Il nome della ricetta che stai aggiungendo
+  IBlockStato // Lo stato del blocco del fiore
 );
 ```
 
@@ -25,9 +25,9 @@ void addRecipeBlockState(
 
 ```zenscript
 void addRecipeBlock(
-  string name,  // The name of the recipe that you're adding
-  IBlock block, // The block of the flower to be placed
-  int meta      // The meta of the state of the flower block
+  nome stringa, // Il nome della ricetta che stai aggiungendo
+  blocco IBlock, // Il blocco del fiore da posizionare
+  int meta // Il meta dello stato del blocco floreale
 );
 ```
 
@@ -38,16 +38,16 @@ void addRecipeBlock(
 ```zenscript
 import mods.roots.FlowerGrowth;
 
-// Removes the default recipe for dandelion
+// Rimuove la ricetta predefinita per il tarassaco
 FlowerGrowth.removeRecipe("dandelion");
 
-// Adds a Botania white flower using block state
-FlowerGrowth.addRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
+// Aggiunge un fiore bianco Botania usando lo stato di blocco
+FlowerGrowth. ddRecipeBlockState("mystical_white_flower", <blockstate:botania:flower:color=white>);
 
-// Adds a Botania magenta flower using block + meta
+// Aggiunge un fiore di magenta di Botania utilizzando blocco + meta
 FlowerGrowth.addRecipeBlock("mystical_green_flower", <botania:flower>.asBlock(), 2);
 ```
 
 ### Note
 
-Currently untested with double-tall flowers.
+Attualmente non testato con fiori doppi alti.
