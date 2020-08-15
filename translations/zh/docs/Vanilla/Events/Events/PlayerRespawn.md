@@ -1,24 +1,24 @@
-# PlayerRespawn
+# 玩家重生
 
-The PlayerRespawn Event is fired whenever a player respawns.
+每当玩家重生时，玩家都会被射击。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerRespawnEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-PlayerRespawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerRespawn 事件实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter        | Return Type                                               |
-| ---------------- | --------------------------------------------------------- |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                      |
-| `isEndConquered` | bool (states if the respawn is because of the end portal) |
+| ZenGetter        | 返回值类型                                |
+| ---------------- | ------------------------------------ |
+| `播放器`            | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `isEndConquered` | 布尔(如果重生因为端口而状态)                      |
