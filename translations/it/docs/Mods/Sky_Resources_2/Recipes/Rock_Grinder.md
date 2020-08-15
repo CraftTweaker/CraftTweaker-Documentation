@@ -1,10 +1,10 @@
-# Rock Grinder
+# Smerigliatrice Rock
 
-The *rockgrinder* package is used for adding or removing recipes to/from the Rock Grinder.
+Il pacchetto *rockgrinder* viene utilizzato per aggiungere o rimuovere ricette a/da Rock Grinder.
 
 ## Chiamata
 
-You can call the *rockgrinder* package using `mods.skyresources.rockgrinder`
+Puoi chiamare il pacchetto *rockgrinder* usando `mods.skyresources.rockgrinder`
 
 ## Aggiunta Ricetta
 
