@@ -2,16 +2,16 @@
 
 The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 mods.contenttweaker.item.ItemBuilder
 ```
 
-## Implemented Interfaces
-ItemBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+ItemBuilder implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructors
@@ -20,19 +20,19 @@ Creates a new ItemBuilder. Remember that this will _not_ create a new block in t
 new mods.contenttweaker.item.ItemBuilder();
 ```
 
-## Methods
+## Metodi
 ### build
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Istruisce CoT per costruire realmente qualsiasi cosa il costruttore dovrebbe star costruendo.
 
 ```zenscript
 new ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametro        | Tipo    | Descrizione                                      |
+| ---------------- | ------- | ------------------------------------------------ |
+| resourceLocation | Stringa | Il percorso della risorsa per dare questo blocco |
 
 
 ### withItemGroup
@@ -48,7 +48,7 @@ new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGrou
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| Parameter | Type                                                                              | Description                               |
+| Parametro | Tipo                                                                              | Descrizione                               |
 | --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
 | itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
 
@@ -66,7 +66,7 @@ new ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Parameter | Type | Description            |
+| Parametro | Tipo | Descrizione            |
 | --------- | ---- | ---------------------- |
 | maxDamage | int  | The maximum stack size |
 
@@ -84,7 +84,7 @@ new ItemBuilder().withMaxStackSize(maxStackSize as int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| Parameter    | Type | Description            |
+| Parametro    | Tipo | Descrizione            |
 | ------------ | ---- | ---------------------- |
 | maxStackSize | int  | The maximum stack size |
 
@@ -112,9 +112,9 @@ new ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| Parameter | Type   | Description |
-| --------- | ------ | ----------- |
-| rarity    | String | The rarity  |
+| Parametro | Tipo    | Descrizione |
+| --------- | ------- | ----------- |
+| rarità    | Stringa | The rarity  |
 
 
 ### withType
