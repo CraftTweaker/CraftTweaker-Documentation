@@ -2,19 +2,19 @@
 
 An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
 
-## Implemented Interfaces
-MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfacce Implementate
+MCItemGroup implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Metodi
 ### getPath
 
 Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
@@ -35,9 +35,9 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 <itemgroup:misc>.setBackgroundImageName(texture as String);
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| texture   | String | The texture to be used |
+| Parametro | Tipo    | Descrizione            |
+| --------- | ------- | ---------------------- |
+| texture   | Stringa | The texture to be used |
 
 
 ### setNoScrollbar
@@ -65,10 +65,10 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 ```
 
 
-## Properties
+## Proprietà
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| Nome          | Tipo    | Ha Getter | Ha Setter |
+| ------------- | ------- | --------- | --------- |
+| commandString | Stringa | vero      | falso     |
+| percorso      | Stringa | vero      | falso     |
 
