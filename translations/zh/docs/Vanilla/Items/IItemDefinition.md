@@ -1,53 +1,53 @@
-# IItemDefinition
+# IItem定义
 
-An IItemDefinition object is the direct reference to an item.  
-It is different from an [IItemStack](/Vanilla/Items/IItemStack/) as this only refers to the item, it does not include any meta-information or NBT-values!
+国际投资协定定义的目的是直接参照某一项目。  
+不同于 [IItemStack](/Vanilla/Items/IItemStack/) ，因为它只涉及该项目。 它不包含任何元信息或NBT值！
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.item.IItemDefinition;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweeper.item.IItemDefinitiation；`
 
-## How to get one
+## 如何获取一个
 
-The easiest way is from an [IItemStack](/Vanilla/Items/IItemStack/), but you can also get a list of all registered IItemDefinitions in the game and do something with that.
+最简单的方法是从 [IItemStack](/Vanilla/Items/IItemStack/)， 但你也可以在游戏中获得所有注册的 IItemDefinitions 的列表并做一些事情。
 
 ```zenscript
-//IItemStack Zengetter "definition" -> single IItemDefinition
-val itemDefinition = <minecraft:stone>.definition;
+//IItemStack Zengetter "definition" -> single IItemDefination
+val itemdefinition = <minecraft:stone>.defination;
 
-//IGame zengetter "items" -> LIST!
-val itemDefinitionList = game.items;
+//IGame zengetter "items" -> List!
+valide itemationList = game.items;
 ```
 
-## What to do with it
+## 如何处理
 
-### ZenGetters and parameterless ZenMethods
+### ZenGetters 和无参数ZenMethods
 
-| ZenGetter          | 功能                                                                                                   | 返回值类型                                                          |
-| ------------------ | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| id                 | Returns the item ID                                                                                  | string                                                         |
-| name               | Returns the unlocalized item Name                                                                    | string                                                         |
-| ores               | Returns all ore entries containing this item. Can also contain ore entries that refer to a sub-item. | `List<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
-| owner              | Returns the mod name that this item belongs to.                                                      | string                                                         |
-| defaultInstance    |                                                                                                      | [IItemStack](/Vanilla/Items/IItemStack/)                       |
-| creativeTab        |                                                                                                      | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)            |
-| creativeTabs       |                                                                                                      | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)          |
-| canItemEditBlocks  |                                                                                                      | bool                                                           |
-| itemEnchantability |                                                                                                      | int                                                            |
-| subItems           |                                                                                                      | List<[IItemStack](/Vanilla/Items/IItemStack/)\>               |
+| ZenGetter          | 功能                              | 返回值类型                                                        |
+| ------------------ | ------------------------------- | ------------------------------------------------------------ |
+| id                 | 返回项目 ID                         | 字符串                                                          |
+| 名称                 | 返回非本地化项目名称                      | string                                                       |
+| ores               | 返回包含此项目的所有矿石条目。 也可以包含提及子项的矿石条目。 | `列表<[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)>` |
+| 所有者                | 返回此项目所属的模组名称。                   | string                                                       |
+| 默认实例               |                                 | [IItemStack](/Vanilla/Items/IItemStack/)                     |
+| creativeTab        |                                 | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)          |
+| 创意选项卡              |                                 | [ICreativeTab[]](/Vanilla/CreativeTabs/ICreativeTab/)        |
+| cantemEditBlocks   |                                 | bool                                                         |
+| itemEnchantability |                                 | 整数                                                           |
+| subItems           |                                 | 列表<[IItemStack](/Vanilla/Items/IItemStack/)\>               |
 
-### ZenSetters and other void-Methods
+### ZenSetters和其他无效方法
 
-| ZenSetter/ZenMethod                    | Parameter Type                                      |
+| ZenSetter/ZenMethods                   | 参数类型                                                |
 | -------------------------------------- | --------------------------------------------------- |
 | creativeTab                            | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| setNoRepair()                          | none                                                |
-| setContainerItem(IItemDefinition item) | IItemDefinition                                     |
+| setNoRepair()                          | 无                                                   |
+| setContainerItem(IItemDefinition item) | IItem定义                                             |
 
 ### ZenMethods
 
-- `def.makeStack(meta);` Creates an [IItemStack](/Vanilla/Items/IItemStack/) with the given metadata. Metadata is an int and OPTIONAL.
-- `def.setHarvestLevel(String type, int level);` Changes the item's harvest level to the corresponding type and level
-- `def.getSubItems(creativeTab);` Returns a List<[IItemStack](/Vanilla/Items/IItemStack/)\> with all subitems for the given [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/).
-- `def.getItemBurntime(item);` Returns an int representing either -1 (Vanilla logic will apply), 0 (Not smeltable) or the items burntime
+- `def.makeStack(元)；` 用给定的元数据创建一个 [IItemStack](/Vanilla/Items/IItemStack/) 元数据是 int 和 OPTIONAL。
+- `def.setHarvestLevel(字符串类型，int level)；` 将项目的收获级别更改为相应的类型和级别
+- `def.getSubItems(creatativeTab)；` 返回一个列表<[IItemStack](/Vanilla/Items/IItemStack/)\> 包含给定的所有子项 [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/)
+- `def.getItemBurntime(item);` 返回一个 int 代表-1(Vanilla 逻辑将适用), 0 (不冶炼) 或燃烧时间
