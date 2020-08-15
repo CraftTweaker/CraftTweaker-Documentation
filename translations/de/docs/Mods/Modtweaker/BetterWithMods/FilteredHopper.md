@@ -46,7 +46,7 @@ The Filtered Hopper is a block that can allow or disallow certain items based on
            mods.betterwithmods.FilteredHopper.addSoulUrnRecipe(<minecraft:stone>,[],[<minecraft:diamond>*9]);
         ```
 
-* Removal
+* Entfernen
     
     * Remove the allowed items from the specified filter
     ```zenscript
