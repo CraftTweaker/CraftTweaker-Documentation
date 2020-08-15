@@ -1,20 +1,20 @@
-# IItemDestroyedBlock
+# [PLACEHOLDER] IItemDestroyedBlock
 
-The IItemDestroyedBlock function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever you try to break a block with the assiciated Item.
+Funkcja IItemDestroyedBlock może być dodana do elementu [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) i będzie uruchamiana za każdym razem, gdy spróbujesz złamać blok z asymilowanym przedmiotem.
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.IItemDestroyedBlock;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.IItemDestroyedBlock;`
 
-## Parameters
+## Parametry
 
-The IItemDestroyedBlock is a function with the following parameters:
+IItemDestroyedBlock jest funkcją z następującymi parametrami:
 
-- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → The item.
-- [IWorld](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) world → The world this takes place in
-- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) blockState → The state of the block that is being mined.
-- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pos → Where does this take place?
-- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) entity → Who/What mines the block?
+- [IMutableItemStack](/Mods/ContentTweaker/Vanilla/Types/Item/IMutableItemStack/) stack → Przedmiot.
+- [Świat](/Mods/ContentTweaker/Vanilla/Types/World/IWorld/) → Świat, który odbywa się w
+- [ICTBlockState](/Mods/ContentTweaker/Vanilla/Types/Block/ICTBlockState/) BlockState → Stan bloku, który jest wydobywany.
+- [IBlockPos](/Mods/ContentTweaker/Vanilla/Types/Block/IBlockPos/) pop → Gdzie to nastąpi?
+- [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) obiekt → Kto / Kto kopie bloku?
 
-The Function needs to return a boolean, that is `true` if the blockBreaking process is successfull, and `false` if it ain't.
+Funkcja musi zwrócić wartość logiczną, to jest `prawda` jeśli proces blokBreaking zakończył się sukcesem, a `fałsz` jeśli jest poprawny.
