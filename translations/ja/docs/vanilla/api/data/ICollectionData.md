@@ -2,10 +2,10 @@
 
 The ICollection data is used to represent a collection of [crafttweaker.api.data.IData](/vanilla/api/data/IData) like a List<IData>
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.data.ICollectionData
 ```
@@ -14,17 +14,17 @@ crafttweaker.api.data.ICollectionData
 ICollectionData implements the following interfaces. That means any method available to them can also be used on this class.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Methods
-### add
+## メソッド
+### 追加
 
 ```zenscript
 new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| パラメータ | タイプ                                                    | 説明                           |
+| ----- | ------------------------------------------------------ | ---------------------------- |
+| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
 
 
 
@@ -33,10 +33,10 @@ new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).add(1, "beautiful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| パラメータ  | タイプ                                                    | 説明                                                                   |
+| ------ | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| インデックス | int                                                    | The index to add to. Subsequent items will be moved one index higher |
+| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
 
 
 ### asList
@@ -94,9 +94,9 @@ new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| パラメータ | タイプ                                                    | 説明                               |
+| ----- | ------------------------------------------------------ | -------------------------------- |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
@@ -124,9 +124,9 @@ new ListData(["Hello", "World"]).get(index as int);
 new ListData(["Hello", "World"]).get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| パラメータ  | タイプ | 説明                  |
+| ------ | --- | ------------------- |
+| インデックス | int | The index (0-based) |
 
 
 ### getId
@@ -155,7 +155,7 @@ Returns String
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+### 削除
 
 Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
 
@@ -166,9 +166,9 @@ new ListData(["Hello", "World"]).remove(index as int);
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| パラメータ  | タイプ | 説明                  |
+| ------ | --- | ------------------- |
+| インデックス | int | The index (0-based) |
 
 
 ### set
@@ -182,16 +182,16 @@ new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.dat
 new ListData(["Hello", "World"]).set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| パラメータ  | タイプ                                                    | 説明                         |
+| ------ | ------------------------------------------------------ | -------------------------- |
+| インデックス | int                                                    | The index to set (0-based) |
+| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
 
 
 
-## Properties
+## プロパティー
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| 名称  | タイプ | Has Getter | Has Setter |
+| --- | --- | ---------- | ---------- |
+| サイズ | int | true       | false      |
 
