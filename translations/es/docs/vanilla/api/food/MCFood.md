@@ -8,30 +8,30 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 crafttweaker.api.food.MCFood
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+nuevo crafttweaker.api.food.MCFood(curación int, saturation as float);
 ```
-| Parámetro  | Tipo     | Descripción             |
-| ---------- | -------- | ----------------------- |
-| healing    | int      | No description provided |
-| saturación | flotante | No description provided |
+| Parámetro  | Tipo     | Descripción                   |
+| ---------- | -------- | ----------------------------- |
+| curación   | int      | No se proporcionó descripción |
+| saturación | flotante | No se proporcionó descripción |
 
 
 
 ## Métodos
-### addEffect
+### añadir efecto
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(efecto como crafttweaker.api.potion.MCPotionEffectInstance, probabilidad como flotante);
 ```
 
-| Parámetro   | Tipo                                                                                          | Descripción             |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | flotante                                                                                      | No description provided |
+| Parámetro    | Tipo                                                                                          | Descripción                   |
+| ------------ | --------------------------------------------------------------------------------------------- | ----------------------------- |
+| efecto       | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No se proporcionó descripción |
+| probabilidad | flotante                                                                                      | No se proporcionó descripción |
 
 
 ### clearEffects
@@ -42,90 +42,90 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(efecto como crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parámetro | Tipo                                                                                          | Descripción             |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Parámetro | Tipo                                                                                          | Descripción                   |
+| --------- | --------------------------------------------------------------------------------------------- | ----------------------------- |
+| efecto    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No se proporcionó descripción |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
+myMCFood.setCanEatWhenFull(canEatWhenFull como booleano);
 ```
 
-| Parámetro      | Tipo    | Descripción             |
-| -------------- | ------- | ----------------------- |
-| canEatWhenFull | boolean | No description provided |
+| Parámetro      | Tipo    | Descripción                   |
+| -------------- | ------- | ----------------------------- |
+| canEatWhenFull | boolean | No se proporcionó descripción |
 
 
-### setFastEating
+### setFastComing
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parámetro  | Tipo    | Descripción             |
-| ---------- | ------- | ----------------------- |
-| fastEating | boolean | No description provided |
+| Parámetro    | Tipo    | Descripción                   |
+| ------------ | ------- | ----------------------------- |
+| comer rápido | boolean | No se proporcionó descripción |
 
 
 ### setHealing
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setHealing(healing as int);
+myMCFood.setHealing(curación int);
 ```
 
-| Parámetro | Tipo | Descripción             |
-| --------- | ---- | ----------------------- |
-| healing   | int  | No description provided |
+| Parámetro | Tipo | Descripción                   |
+| --------- | ---- | ----------------------------- |
+| curación  | int  | No se proporcionó descripción |
 
 
-### setMeat
+### setCarne
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setMeat(carne como booleana);
 ```
 
-| Parámetro | Tipo    | Descripción             |
-| --------- | ------- | ----------------------- |
-| meat      | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| carne     | boolean | No se proporcionó descripción |
 
 
-### setSaturation
+### setSaturación
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Devuelve [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setSaturation(saturation as float);
 ```
 
-| Parámetro  | Tipo     | Descripción             |
-| ---------- | -------- | ----------------------- |
-| saturación | flotante | No description provided |
+| Parámetro  | Tipo     | Descripción                   |
+| ---------- | -------- | ----------------------------- |
+| saturación | flotante | No se proporcionó descripción |
 
 
 
 ## Propiedades
 
-| Nombre         | Tipo     | Has Getter | Has Setter |
-| -------------- | -------- | ---------- | ---------- |
-| canEatWhenFull | boolean  | verdad     | falso      |
-| healing        | int      | verdad     | falso      |
-| isFastEating   | boolean  | verdad     | falso      |
-| meat           | boolean  | verdad     | falso      |
-| saturación     | flotante | verdad     | falso      |
+| Nombre          | Tipo     | Tiene Obtén | Tiene Setter |
+| --------------- | -------- | ----------- | ------------ |
+| canEatWhenFull  | boolean  | verdad      | falso        |
+| curación        | int      | verdad      | falso        |
+| es Comer rápido | boolean  | verdad      | falso        |
+| carne           | boolean  | verdad      | falso        |
+| saturación      | flotante | verdad      | falso        |
 
