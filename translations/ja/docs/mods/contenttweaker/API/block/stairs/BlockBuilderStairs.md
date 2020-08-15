@@ -2,10 +2,10 @@
 
 A special Block Builder that allows you to create stairs. <p> Stairs will have not one but three textures that you will need to supply: One for the top, one for the bottom and one for the sides. By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`. As with most things here, sample images are generated for you by default, though.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.block.stairs.BlockBuilderStairs
 ```
@@ -25,7 +25,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().build(resourceLocation as Stri
 new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
+| パラメータ            | タイプ  | 説明                                   |
 | ---------------- | ---- | ------------------------------------ |
 | resourceLocation | 文字列型 | The resource path to give this block |
 
@@ -42,7 +42,7 @@ Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/content
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter     | Type                                                                             | Description                                |
+| パラメータ         | タイプ                                                                              | 説明                                         |
 | ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
 | bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
 
@@ -59,7 +59,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTextur
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
 
-| Parameter     | Type                                                                                                                                                                                                    | Description         |
+| パラメータ         | タイプ                                                                                                                                                                                                     | 説明                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
 
@@ -76,7 +76,7 @@ Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/content
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter    | Type                                                                             | Description                          |
+| パラメータ        | タイプ                                                                              | 説明                                   |
 | ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
 | sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
 
@@ -93,7 +93,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture 
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Description         |
+| パラメータ        | タイプ                                                                                                                                                                                                     | 説明                  |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
 
@@ -111,7 +111,7 @@ new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as c
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parameter  | Type                                                                             | Description                             |
+| パラメータ      | タイプ                                                                              | 説明                                      |
 | ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
 | topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
 
@@ -127,7 +127,7 @@ Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/content
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
+| パラメータ      | タイプ                                                                                                                                                                                                     | 説明                  |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
 | topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
 
