@@ -21,10 +21,10 @@ Returns boolean
 myMCPotionEffect.isReady(duration as int, amplifier as int);
 ```
 
-| Parameter | Type | Beschreibung            |
-| --------- | ---- | ----------------------- |
-| duration  | int  | No description provided |
-| amplifier | int  | No description provided |
+| Parameter  | Type | Beschreibung            |
+| ---------- | ---- | ----------------------- |
+| dauern     | int  | No description provided |
+| verstärker | int  | No description provided |
 
 
 ### newInstance
@@ -35,22 +35,22 @@ Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MC
 myMCPotionEffect.newInstance(duration as int, amplifier as int);
 ```
 
-| Parameter | Type | Beschreibung            | IsOptional | Default Value |
-| --------- | ---- | ----------------------- | ---------- | ------------- |
-| duration  | int  | No description provided | false      | null          |
-| amplifier | int  | No description provided | true       | 0             |
+| Parameter  | Type | Beschreibung            | IsOptional | Standardwert |
+| ---------- | ---- | ----------------------- | ---------- | ------------ |
+| dauern     | int  | No description provided | false      | null         |
+| verstärker | int  | No description provided | true       | 0            |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name          | Type                                                                    | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                                  | true       | false      |
-| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
-| displayName   | String                                                                  | true       | false      |
-| isBeneficial  | boolean                                                                 | true       | false      |
-| isInstant     | boolean                                                                 | true       | false      |
-| liquidColor   | int                                                                     | true       | false      |
-| name          | String                                                                  | true       | false      |
+| Name           | Type                                                                    | Has Getter | Has Setter |
+| -------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
+| Kommandozeile  | String                                                                  | true       | false      |
+| kurativeItems  | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
+| displayName    | String                                                                  | true       | false      |
+| isBeneficial   | boolean                                                                 | true       | false      |
+| isInstant      | boolean                                                                 | true       | false      |
+| flüssige Farbe | int                                                                     | true       | false      |
+| name           | String                                                                  | true       | false      |
 
