@@ -2,18 +2,18 @@
 
 An IEntityEquipmentSlot is a slot in a player's inventory. That could for example be the mainHand or one of the armor slots.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityEquipmentSlot;`
 
 ## ZenGetters/ZenMethods
 
-| Getter    | Type   |
+| Obtén     | Tipo   |
 | --------- | ------ |
 | index     | int    |
 | slotIndex | int    |
-| name      | string |
+| nombre    | cadena |
 
 ### Compare
 
@@ -24,7 +24,7 @@ Returns a bool.
 slotOne == slotTwo;
 ```
 
-## Enumerations
+## Enumeraciones
 
 The EntityEquipmentSlot Interface has 6 static Methods, each returning the given IEntityEquipmentSlot object.
 
