@@ -1,6 +1,6 @@
 # Melter
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.Melter`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.Melter.addRecipe(IIngredient itemInput, ILiquidStack fluidOutp
 ```zenscript
 mods.nuclearcraft.Melter.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.Melter.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Melter.removeAllRecipes();
+mods.nuclearcraft.Melter.removeAllRicette();
 ```
