@@ -1,6 +1,6 @@
-# Extractor
+# Estrattore
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.extractor`
 
 ## Aggiunta Di Ricette
