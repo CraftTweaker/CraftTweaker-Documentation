@@ -11,11 +11,11 @@ It might be required for you to import the package if you encounter any issues (
 
 IEntityAnimal extends [IEntityAgeable](/Vanilla/Entities/IEntityAgeable/). That means all functions available to [IEntities](/Vanilla/Entities/IEntityAgeable/) also are available to IEntityAnimal.
 
-## Methods
+## メソッド
 
 ### ZenGetters/Setters
 
-| ZenGetter | Type                                                |
+| ZenGetter | タイプ                                                 |
 | --------- | --------------------------------------------------- |
 | loveCause | [IPlayer](/Vanilla/Players/IPlayer/) (Can be null!) |
 | isInLove  | bool                                                |
