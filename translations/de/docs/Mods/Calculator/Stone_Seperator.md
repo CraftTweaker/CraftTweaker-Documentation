@@ -17,7 +17,7 @@ import mods.calculator.stoneSeparator;
 stoneSeparator.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 stoneSeparator.removeRecipe(IIngredient output, IIngredient output2);
 ```
