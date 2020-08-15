@@ -6,7 +6,7 @@
 import mods.ic2.ClassicElectrolyzer;
 ```
 
-## Methods
+## Méthodes
 
 ### Add Both Recipe
 
