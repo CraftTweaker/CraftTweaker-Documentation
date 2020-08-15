@@ -1,200 +1,200 @@
 # `Tag`
 
-A `Tag` is the object representation of what is stored inside an actual in-game Tag. You can only access this data from within the [`tags` loader](/Mods/Boson/Loaders/Tags/). For more information regarding tags and how to obtain them, refer to [this page](/Mods/Boson/Tags/Concept/).
+Un tag `` è la rappresentazione dell'oggetto di ciò che viene memorizzato all'interno di un Tag di gioco reale. È possibile accedere a questi dati solo da all'interno del [`tag` loader](/Mods/Boson/Loaders/Tags/). Per ulteriori informazioni sui tag e su come ottenerli, consulta a [questa pagina](/Mods/Boson/Tags/Concept/).
 
-## Class Details
-The class is situated in the `net.thesilkminer.mc.boson.zen.tag` package, making `net.thesilkminer.mc.boson.zen.tag.Tag` its fully qualified name for importing.
+## Dettagli Classe
+La classe è situata nel pacchetto `net.thesilkminer.mc.boson.zen.tag` , rendendo `net.thesilkminer.mc.boson.zen.tag.Tag` il suo nome completamente qualificato per l'importazione.
 
-## Creating a New Instance
-Refer to [the bracket handler documentation](/Mods/Boson/Tags/BracketHandler/).
+## Creare una nuova istanza
+Fare riferimento a [la documentazione del gestore di parentesi](/Mods/Boson/Tags/BracketHandler/).
 
 ## Proprietà
-A `Tag` provides read-only access to a certain set of properties, as outlined in the following table:
+Un tag `` fornisce accesso in sola lettura a un certo insieme di proprietà, come illustrato nella tabella seguente:
 
-| Nome Proprietà | Tipo                                     | Descrizione                                           |
-| -------------- | ---------------------------------------- | ----------------------------------------------------- |
-| `nome`         | [`NameSpacedString`](/Mods/Boson/Names/) | Name that uniquely identifies this tag                |
-| `tipo`         | [`TagType`](/Mods/Boson/Tags/TagType/)   | The type of this tag                                  |
-| `elements`     | `[T]` (where `T` is a generic type)      | A read-only list of the elements currently in the tag |
+| Nome Proprietà | Tipo                                     | Descrizione                                               |
+| -------------- | ---------------------------------------- | --------------------------------------------------------- |
+| `nome`         | [`NameSpacedString`](/Mods/Boson/Names/) | Nome che identifica univocamente questo tag               |
+| `tipo`         | [`TagType`](/Mods/Boson/Tags/TagType/)   | Il tipo di questo tag                                     |
+| `elementi`     | `[T]` (dove `T` è un tipo generico)      | Un elenco di elementi di sola lettura attualmente nel tag |
 
 ## Metodi
 
 ### Addizione
-Adding elements to a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
+Aggiungere elementi a un tag può essere fatto tramite una tripletta di metodi, le cui firme sono nella snippet che segue:
 
 ```zenscript
-function add(elements... as NameSpacedString) as void;
+function add(elementi... as NameSpacedString) as void;
 function addAll(elements as any[]) as void;
 function addFrom(other as Tag) as void;
 ```
 
-`add` is a so-called "vararg method", meaning it can accept as many arguments as desired, provided they are all of the same type, i.e. `NameSpacedString`s. This allows you to specify the registry name of the element you want to add to the tag and the tag implementation itself will attempt to convert the given name to the actual object.
+`add` is a so-called "vararg method", meaning it can accept as many arguments as desired, provided they are all of the same type, i.e. `NameSpacedString`s. Questo consente di specificare il nome del registro dell'elemento che si desidera aggiungere al tag e l'implementazione del tag stesso tenterà di convertire il nome dato nell'oggetto effettivo.
 
-`addAll`, on the other hand, accepts an array of elements and attempts to add them all to the given tag. The array is marked as `any[]` due to a lack of generic support on this method input. Nevertheless attempting to add non-compatible elements to a tag (say, adding blocks to an item-only tag) will result in a no-op operation being carried out.
+`addAll`, d'altra parte, accetta una serie di elementi e tenta di aggiungerli tutti al tag specificato. L'array è contrassegnato come `qualsiasi[]` a causa della mancanza di supporto generico su questo input di metodo. Tuttavia tentare di aggiungere elementi non compatibili ad un tag (ad esempio, l'aggiunta di blocchi a un tag solo elemento) comporterà un'operazione no-op in corso.
 
-`addFrom` adds all the contents of a tag to the other via a Tag Reference, meaning that any modifications carried out to the second tag also happens to the first. Note that this operation succeeds only if the tag types match, otherwise a no-op operation will be carried out.
+`addFrom` aggiunge tutti i contenuti di un tag all'altro tramite un Tag Reference, significa che qualsiasi modifica effettuata a il secondo tag avviene anche al primo. Si noti che questa operazione ha successo solo se i tipi di tag corrispondono, altrimenti verrà eseguita un'operazione no-op .
 
-Following is a list of examples:
+Segue un elenco di esempi:
 
 ```zenscript
 val tag = <tag-items:forge:ingots/iron>;
 
-# add elements via registry name
-tag.add("minecraft:iron_ingot" as NameSpacedString, "thermalfoundation:iron_ingot" as NameSpacedString);
+# aggiungi elementi tramite il nome del registro
+tag. dd("minecraft:iron_ingot" come NameSpacedString, "thermalfoundation:iron_ingot" come NameSpacedString);
 
-# add elements via their actual instances
-tag.addAll([<buildcraft:iron_ingot>] as IItemStack[]);
+# aggiungi elementi tramite le loro istanze effettive
+tag. ddAll([<buildcraft:iron_ingot>] come IItemStack[]);
 
-# add another tag via a tag reference
+# aggiungi un altro tag tramite un tag di riferimento
 tag.addFrom(<tag-items:customtag:other_iron_ingots>);
 ```
 
-### Replacement
-Elements of a tag can be replaced fully, meaning that all the contents are first cleared, then the given elements are added to the tag contents. This is also accomplished via a triplet of methods, whose signatures are in the snippet that follows:
+### Sostituzione
+Gli elementi di un tag possono essere completamente sostituiti, il che significa che tutti i contenuti vengono prima cancellati, quindi gli elementi indicati sono aggiunti al contenuto del tag. Questo si compie anche attraverso una tripletta di metodi, le cui firme sono nella snippet che segue:
 
 ```zenscript
-function replace(elements... as NameSpacedString) as void;
+function replace(elementi... as NameSpacedString) as void;
 function replaceAll(elements as any[]) as void;
 function replaceWith(other as Tag) as void;
 ```
 
-`replace` is a so-called "vararg method", meaning it can accept as many arguments as desired, provided they are all of the same type, i.e. `NameSpacedString`s. This allows you to specify the registry name of the element you want to use to replace the tag's contents and the tag implementation itself will attempt to convert the given name to the actual object.
+`replace` is a so-called "vararg method", significa che può accettare tutti gli argomenti desiderati, a condizione che siano tutti di lo stesso tipo, i. . `NameSpacedString`s. Questo ti permette di specificare il nome del registro dell'elemento che vuoi usare per sostituire il contenuto del tag e l'implementazione stessa del tag cercherà di convertire il nome dato nell'oggetto effettivo.
 
-`replaceAll`, on the other hand, accepts an array of elements and attempts to replace the contents of the given tag with the array. The array is marked as `any[]` due to a lack of generic support on this method input. Nevertheless attempting to pass non-compatible elements to a tag (say, blocks to an item-only tag) will result in a no-op operation being carried out.
+`replaceAll`, d'altra parte, accetta un array di elementi e cerca di sostituire il contenuto del tag dato con l'array. L'array è contrassegnato come `qualsiasi[]` a causa della mancanza di supporto generico su questo input di metodo. Tuttavia tentando di di passare elementi non compatibili ad un tag (ad esempio, blocchi di un tag solo elemento) comporterà un'operazione no-op effettuata.
 
-`replaceWith` replaces the contents of the given tag with a Tag Reference to the other, meaning that any modifications carried out to the second tag also happens to the first. Note that this operation succeeds only if the tag types match, otherwise a no-op operation will be carried out.
+`sostituisciCon` sostituisce il contenuto del tag dato con un riferimento al tag all'altro, significa che qualsiasi modifica effettuata al secondo tag avviene anche al primo. Nota che questa operazione ha successo solo se i tipi di tag corrispondono, altrimenti verrà eseguita un'operazione no-op.
 
-Following is a list of examples:
+Segue un elenco di esempi:
 
 ```zenscript
 val tag = <tag-items:forge:ingots/iron>;
 
-# replace elements via registry name
-tag.replace("minecraft:iron_ingot" as NameSpacedString, "thermalfoundation:iron_ingot" as NameSpacedString);
+# sostituire gli elementi con il nome del registro
+tag. eplace("minecraft:iron_ingot" come NameSpacedString, "thermalfoundation:iron_ingot" come NameSpacedString);
 
-# replace elements via their actual instances
-tag.replaceAll([<buildcraft:iron_ingot>] as IItemStack[]);
+# sostituire gli elementi tramite le loro istanze effettive
+tag. eplaceAll([<buildcraft:iron_ingot>] come IItemStack[]);
 
-# replace another tag via a tag reference
+# sostituire un altro tag con un tag di riferimento
 tag.replaceWith(<tag-items:customtag:other_iron_ingots>);
 ```
 
 ### Rimozione
-Removing elements from a tag can be done via a triplet of methods, whose signatures are in the snippet that follows:
+Rimuovere gli elementi da un tag può essere fatto tramite una tripletta di metodi, le cui firme sono nella snippet che segue:
 
 ```zenscript
-function remove(elements... as NameSpacedString) as void;
+function remove(elementi... as NameSpacedString) as void;
 function removeAll(elements as any[]) as void;
 function removeFrom(other as Tag) as void;
 ```
 
-`remove` is a so-called "vararg method", meaning it can accept as many arguments as desired, provided they are all of the same type, i.e. `NameSpacedString`s. This allows you to specify the registry name of the element you want to remove from the tag and the tag implementation itself will attempt to convert the given name to the actual object.
+`remove` is a so-called "vararg method", significa che può accettare tutti gli argomenti desiderati, a condizione che siano tutti di lo stesso tipo, i. . `NameSpacedString`s. Questo consente di specificare il nome del registro dell'elemento che si desidera rimuovere dal tag e l'implementazione del tag stessa tenterà di convertire il nome dato nell'oggetto effettivo.
 
-`removeAll`, on the other hand, accepts an array of elements and attempts to remove them all from the given tag. The array is marked as `any[]` due to a lack of generic support on this method input. Nevertheless attempting to remove non-compatible elements from a tag (say, removing blocks from an item-only tag) will result in a no-op operation being carried out.
+`removeAll`, d'altra parte, accetta una serie di elementi e tenta di rimuoverli tutti dal tag specificato. L'array è contrassegnato come `qualsiasi[]` a causa della mancanza di supporto generico su questo input di metodo. Tuttavia tentare di rimuovere elementi non compatibili da un tag (ad esempio, la rimozione di blocchi da un tag solo elemento) comporterà un'operazione no-op effettuata.
 
-`removeFrom` removes the second tag from the list of Tag References of the first tag. This will consequently remove the items that the second tag carries from the list of the first ones, though the second tag won't have its contents cleared. Note that this operation succeeds only if the tag types match, otherwise a no-op operation will be carried out.
+`removeFrom` rimuove il secondo tag dall'elenco dei Riferimenti Tag del primo tag. Questo rimuoverà di conseguenza gli elementi che il secondo tag porta dalla lista dei primi, anche se il secondo tag non avrà il suo contenuto cancellato. Si noti che questa operazione ha successo solo se i tipi di tag corrispondono, altrimenti verrà eseguita un'operazione no-op.
 
-Following is a list of examples:
+Segue un elenco di esempi:
 
 ```zenscript
 val tag = <tag-items:forge:ingots/iron>;
 
-# remove elements via registry name
-tag.remove("minecraft:iron_ingot" as NameSpacedString, "thermalfoundation:iron_ingot" as NameSpacedString);
+# rimuovi elementi tramite il nome del registro
+tag. emove("minecraft:iron_ingot" come NameSpacedString, "thermalfoundation:iron_ingot" come NameSpacedString);
 
 # remove elements via their actual instances
-tag.removeAll([<buildcraft:iron_ingot>] as IItemStack[]);
+tag. emoveAll([<buildcraft:iron_ingot>] come IItemStack[]);
 
-# remove a tag reference
+# rimuovi un tag di riferimento
 tag.removeFrom(<tag-items:customtag:other_iron_ingots>);
 ```
 
-### Clearing
-You can also clear a tag's contents via a single method. This will remove all elements and all Tag References stored in the tag and is equivalent to replacing a tag with empty contents. This can be done via a method that has the following signature:
+### Compensazione
+Puoi anche cancellare il contenuto di un tag tramite un unico metodo. Questo rimuoverà tutti gli elementi e tutti i riferimenti ai tag memorizzati nel tag ed equivale a sostituire un tag con contenuti vuoti. This can be done via a method that has the following signature:
 
 ```zenscript
 function clear() as void;
 ```
 
-The following is an example:
+Un esempio è il seguente:
 
 ```zenscript
 <tag-items:forge:ingots>.clear();
 ```
 
-## Additional Support
-Tags also offer additional support for certain ZenScript features.
+## Supporto Aggiuntivo
+I tag offrono anche un supporto aggiuntivo per alcune funzionalità ZenScript.
 
-### Querying
-By using the `has` syntax, it is possible to query whether a tag contains a certain object or not. A tag can in fact be viewed as a collection of elements:
+### Interrogazione
+Usando la sintassi `ha` , è possibile verificare se un tag contiene o meno un determinato oggetto. Un tag può infatti essere visto come una raccolta di elementi:
 
 ```zenscript
-val isContained = TAG has ELEMENT;
+val isContained = TAG ha ELEMENTO;
 ```
 
-`TAG` represents the tag instance to query. `ELEMENT` represents the element instance that you may want to query to check whether it is contained in the tag or not.
+`TAG` rappresenta l'istanza tag da interrogare. `ELEMENT` rappresenta l'istanza dell'elemento che potresti voler interrogare per verificare se è contenuta o meno nel tag.
 
-Note that while tags support querying of anything (it is effectively accepting `any`), using an element that is not of the type that is stored in the tag has no effect and will simply short-circuit the evaluation to `false`.
+Si noti che mentre i tag supportano la ricerca di qualsiasi cosa (sta effettivamente accettando `qualsiasi`), utilizzando un elemento che non è di il tipo che viene memorizzato nel tag non ha alcun effetto e semplicemente cortocircuito la valutazione a `false`.
 
-### Iterating
-Tags also support iteration via an iterative for loop, using a normal `for` loop. This way the necessity of querying the elements via a call to `elements` is eliminated, resulting in cleaner code.
+### Iterazione
+I tag supportano anche l'iterazione tramite un iterativo per il ciclo, usando un normale `per` ciclo. In questo modo viene eliminata la necessità di interrogare gli elementi tramite una chiamata a `elementi` , con conseguente codice più pulito.
 
-Since tags are effectively a set, iteration order is not preserved and may differ between different runs of the iterator. For this reason, only single-element iterators are supported (i.e. you cannot also request an iteration index when iterating).
+Dal momento che i tag sono effettivamente un set, l'ordine di iterazione non è conservato e può differire tra diverse fasi dell'iteratore . Per questo motivo, sono supportati solo gli iteratori a singolo elemento (cioè non è possibile richiedere anche un indice di iterazione durante l'iterazione).
 
-The syntax to use is the following:
+La sintassi da usare è la seguente:
 
 ```zenscript
 for VARNAME in TAG {
 }
 ```
 
-`VARNAME` represents the name of the variable that will be updated at each loop. `TAG` is the tag instance to loop on.
+`VARNAME` rappresenta il nome della variabile che verrà aggiornata ad ogni ciclo. `TAG` è l'istanza tag su cui accendere.
 
-## Operator Overloading
-Tags also provide some overloading of normal ZenScript operators, so that certain operations can be done easily and with less characters. Each section hosts a table of certain operator overloads that are available, with the corresponding meaning. In all tables, `TAG` represents the target tag instance, whereas `ARGx` represents the *x*-th argument that should be supplied.
+## Sovraccarico Operatore
+I tag forniscono anche qualche sovraccarico dei normali operatori di ZenScript, in modo che alcune operazioni possano essere eseguite facilmente e con caratteri minori. Ogni sezione ospita una tabella di alcuni sovraccarichi di operatore che sono disponibili, con il corrispondente significato. In tutte le tabelle, `TAG` rappresenta l'istanza del tag di destinazione, mentre `ARGx` rappresenta il *x*-th argomento che dovrebbe essere fornito.
 
-### Unary operators
-Unary operators are operators that are applied to the tag itself and take no arguments.
+### Operatori unari
+Gli operatori unari sono operatori che vengono applicati al tag stesso e non prendono argomenti.
 
-| Operatore | Sintassi | Method equivalent | Note |
-| --------- | -------- | ----------------- | ---- |
-| `-`       | `-TAG`   | `clear`           | \-  |
+| Operatore | Sintassi | Equivalente metodo | Note |
+| --------- | -------- | ------------------ | ---- |
+| `-`       | `-TAG`   | `cancella`         | \-  |
 
-### Binary operators
-Binary operators are infix operators that are applied between the tag and one argument. The operators are listed here in order of priority (higher means that it will be applied first).
+### Operatori binari
+Gli operatori binari sono operatori di infix che vengono applicati tra il tag e un argomento. Gli operatori sono elencati qui in ordine di priorità (più alto significa che sarà applicato per primo).
 
-**IMPORTANT**: unless noted otherwise, all operators **mutate** the tag that is passed to the overload, meaning that they change their contents. Consider the following example:
+**IMPORTANTE**: salvo diversa indicazione, tutti gli operatori **mutano** il tag che viene passato al sovraccarico, il che significa che cambiano il loro contenuto. Considera il seguente esempio:
 
 ```zenscript
 val tag = <tag-items:forge:ingots>;
-tag & [<minecraft:iron_ingot>] as IItemStack[];
+tag & [<minecraft:iron_ingot>] come IItemStack[];
 ```
 
-At the end of this snippet, the contents of `tag` will have changed according to the operator rules. This does **not** create a new tag, nor it does return the original tag's value. The following snippet of code is in fact not valid:
+Alla fine di questa snippet, il contenuto del tag `` sarà cambiato secondo le regole dell'operatore. Questo **non** crea un nuovo tag, né restituisce il valore del tag originale. La seguente snippet di codice non è infatti valida:
 
 ```zenscript
 val tag = <tag-items:forge:ingots>;
 # NOT VALID: WILL CAUSE COMPILATION ERROR
-tag = tag & [<minecraft:iron_ingot>] as IItemStack[];
+tag = tag & [<minecraft:iron_ingot>] come IItemStack[];
 ```
 
-| Operatore | Argument Type                            | Sintassi         | Method Equivalent | Note                                                                  |
-| --------- | ---------------------------------------- | ---------------- | ----------------- | --------------------------------------------------------------------- |
-| `+`       | `Tag`                                    | `TAG + ARG1`     | `addFrom`         | \-                                                                   |
-| `+`       | `any[]`                                  | `TAG + ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
-| `+`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG + ARG1`     | `add`             | The overload only accepts one argument                                |
-| `+`       | `qualsiasi`                              | `TAG + ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
-| `~`       | `Tag`                                    | `TAG ~ ARG1`     | `addFrom`         | \-                                                                   |
-| `~`       | `any[]`                                  | `TAG ~ ARG1`     | `addAll`          | The array type must be the same as the tag's contents                 |
-| `~`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG ~ ARG1`     | `add`             | The overload only accepts one argument                                |
-| `~`       | `qualsiasi`                              | `TAG ~ ARG1`     | `addAll`          | Shorthand for a single element: same rules as the array version apply |
-| `&`   | `Tag`                                    | `TAG & ARG1` | `addFrom`         | \-                                                                   |
-| `&`   | `any[]`                                  | `TAG & ARG1` | `addAll`          | The array type must be the same as the tag's contents                 |
-| `&`   | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG & ARG1` | `add`             | The overload only accepts one argument                                |
-| `&`   | `qualsiasi`                              | `TAG & ARG1` | `addAll`          | Shorthand for a single element: same rules as the array version apply |
-| `-`       | `Tag`                                    | `TAG - ARG1`     | `removeFrom`      | \-                                                                   |
-| `-`       | `any[]`                                  | `TAG - ARG1`     | `removeAll`       | The array type must be the same as the tag's contents                 |
-| `-`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG - ARG1`     | `remove`          | The overload only accepts one argument                                |
-| `-`       | `qualsiasi`                              | `TAG - ARG1`     | `removeAll`       | Shorthand for a single element: same rules as the array version apply |
-| `==`      | `Tag`                                    | `TAG == ARG1`    | \-               | Acts as an equality check, matching contents; does not mutate `TAG`   |
-| `()`      | \-                                      | `TAG()`          | `elements`        | \-                                                                   |
+| Operatore | Tipo Argomento                           | Sintassi         | Metodo Equivalente | Note                                                                                       |
+| --------- | ---------------------------------------- | ---------------- | ------------------ | ------------------------------------------------------------------------------------------ |
+| `+`       | `Tag`                                    | `TAG + ARG1`     | `addFrom`          | \-                                                                                        |
+| `+`       | `qualsiasi[]`                            | `TAG + ARG1`     | `addAll`           | Il tipo di array deve essere lo stesso del contenuto del tag                               |
+| `+`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG + ARG1`     | `aggiungi`         | Il sovraccarico accetta solo un argomento                                                  |
+| `+`       | `qualsiasi`                              | `TAG + ARG1`     | `addAll`           | Shorthand per un singolo elemento: si applicano le stesse regole della versione dell'array |
+| `~`       | `Tag`                                    | `TAG ~ ARG1`     | `addFrom`          | \-                                                                                        |
+| `~`       | `qualsiasi[]`                            | `TAG ~ ARG1`     | `addAll`           | Il tipo di array deve essere lo stesso del contenuto del tag                               |
+| `~`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG ~ ARG1`     | `aggiungi`         | Il sovraccarico accetta solo un argomento                                                  |
+| `~`       | `qualsiasi`                              | `TAG ~ ARG1`     | `addAll`           | Shorthand per un singolo elemento: si applicano le stesse regole della versione dell'array |
+| `&`   | `Tag`                                    | `TAG & ARG1` | `addFrom`          | \-                                                                                        |
+| `&`   | `qualsiasi[]`                            | `TAG & ARG1` | `addAll`           | Il tipo di array deve essere lo stesso del contenuto del tag                               |
+| `&`   | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG & ARG1` | `aggiungi`         | Il sovraccarico accetta solo un argomento                                                  |
+| `&`   | `qualsiasi`                              | `TAG & ARG1` | `addAll`           | Shorthand per un singolo elemento: si applicano le stesse regole della versione dell'array |
+| `-`       | `Tag`                                    | `TAG - ARG1`     | `removeFrom`       | \-                                                                                        |
+| `-`       | `qualsiasi[]`                            | `TAG - ARG1`     | `removeAll`        | Il tipo di array deve essere lo stesso del contenuto del tag                               |
+| `-`       | [`NameSpacedString`](/Mods/Boson/Names/) | `TAG - ARG1`     | `rimuovi`          | Il sovraccarico accetta solo un argomento                                                  |
+| `-`       | `qualsiasi`                              | `TAG - ARG1`     | `removeAll`        | Shorthand per un singolo elemento: si applicano le stesse regole della versione dell'array |
+| `==`      | `Tag`                                    | `TAG == ARG1`    | \-                | Agisce come controllo dell'uguaglianza, corrispondente ai contenuti; non mutare `TAG`      |
+| `()`      | \-                                      | `TAG()`          | `elementi`         | \-                                                                                        |
