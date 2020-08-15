@@ -1,64 +1,64 @@
-# Item Transformers
+# Trasformatori Di Articoli
 
-Item Transformers transform your crafting inputs upon crafting.  
-This can range from damaging the item up to returning a completely different item.
+Trasformatori di oggetti trasformano i tuoi input di creazione al momento della creazione.  
+Questo può andare dal danneggiare l'oggetto fino a restituire un oggetto completamente diverso.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import crafttweaker.item.IItemTransformer;`
 
 ```zenscript
 <br />val item = <minecraft:apple>;
 
-//Item won't be consumed and will stay in the grid
-transformedItem = item.reuse();
+//Item non sarà consumato e rimarrà nella griglia
+transformedItem = item. euse();
 
-//Item won't be consumed and the whole stack will be given back to you (does /give).
+//Item non verrà consumato e l'intera pila ti verrà restituita (fa /give).
 transformedItem = item.giveBack();
 
-//item will be consumed but will give the specified stack to you (the crafting slot will be cleared!).
-transformedItem = item.giveBack(<minecraft:potato>);
+//item verrà consumato ma ti darà lo stack specificato (il crafting slot verrà cancellato!).
+transformedItem = elemento. iveBack(<minecraft:potato>);
 
-//item will be replaced with the specified item, which will instead go to the crafting slot
-transformedItem = item.transformReplace(<minecraft:potato>);
+//elemento sarà sostituito con l'elemento specificato, che invece andrà allo slot di creazione
+transformedItem = oggetto. ransformReplace(<minecraft:potato>);
 
-//damages the item by 1
-transformedItem = item.transformDamage();
+//danneggia l'articolo di 1
+transformedItem = oggetto. ransformDamage();
 
-//damages the item by the given value
+//danneggia l'oggetto dal valore dato
 transformedItem = item.transformDamage(3);
 
-//item will be consumed, no matter what.
+//item verrà consumato, indipendentemente da cosa.
 transformedItem = item.noReturn();
 
-//Causes multiple items to be consumed.
+//Causa il consumo di più elementi.
 transformedItem = item.transformConsume(3);
 ```
 
-## Registering own item Transformers
+## Registrare la propria voce Trasformatori
 
-### Transform
+### Trasforma
 
-The old itemTransformer that might cease to exist in 1.13.  
-Thisis a special function that accepts two parameters: The [item](/Vanilla/Items/IItemStack/) itself and the [player](/Vanilla/Players/IPlayer/) performing the crafting.
+Il vecchio itemTransformer che potrebbe cessare di esistere in 1.13.  
+Questa è una funzione speciale che accetta due parametri: [elemento](/Vanilla/Items/IItemStack/) stesso e [giocatore](/Vanilla/Players/IPlayer/) che esegue il crafting.
 
 ```zenscript
 transformedItem = item.transform(function(item, player) {return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-This stack will replace what's in the crafting slot afterwards. Use `null` to clear that slot.
+La funzione deve restituire un [IItemStack](/Vanilla/Items/IItemStack/).  
+Questa pila sostituirà quello che c'è nello slot di creazione in seguito. Usa `null` per cancellare questo slot.
 
-### TransformNew
+### TrasformaNuovo
 
-With the new internal recipe system there was a need for a new ItemTransformer. This one only accepts one parameter, that is the item in the slot.
+Con il nuovo sistema di ricette interne c'era la necessità di un nuovo ItemTransformer. Questo solo accetta un parametro, cioè l'elemento nello slot.
 
 ```zenscript
 transformedItem = item.transformNew(function(item){return item;});
 ```
 
-The function needs to return an [IItemStack](/Vanilla/Items/IItemStack/).  
-Unlike the other transformer however, this will not be the itemstach that replaces the one in the crafting slot, but the one that is returned for that crafting slot.  
-In other words if you return `null` here, one item will be consumed, any other item that is returned will either be placed in the crafting slot, if possible, or given back to you, same as when dealing with buckets.  
-If you don't really need the player variable, this is the transformer to go for!
+La funzione deve restituire un [IItemStack](/Vanilla/Items/IItemStack/).  
+A differenza di altri trasformatori, tuttavia, questo non sarà l'oggetto stach che sostituisce quello nello slot di creazione, ma quello che viene restituito per quel slot di creazione.  
+In altre parole se restituisci `null` qui, un elemento verrà consumato, qualsiasi altro oggetto restituito sarà posizionato nello slot di creazione, se possibile, o restituito a voi, stesso come quando si tratta di secchi.  
+Se non hai davvero bisogno della variabile del giocatore, questo è il trasformatore per andare avanti!
