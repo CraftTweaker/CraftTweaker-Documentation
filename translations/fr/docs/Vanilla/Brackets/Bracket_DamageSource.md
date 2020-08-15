@@ -1,32 +1,32 @@
-# DamageSource Bracket Handler
+# Gestionnaire de pont de dégâtsSource
 
-The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
+Le gestionnaire de support de source de dégâts vous permet de vous référer à [IDamageSources](/Vanilla/Damage/IDamageSource/) dans le jeu.
 
-If the Damage source is not one of the predefined ones, this will create a new one with the given name.
+Si la source de dommage n'est pas une des sources prédéfinies, cela créera une nouvelle source avec le nom donné.
 
 <details>
-    <summary>Preregistered Damage Source Types</summary>
+    <summary>Types de sources de dégâts préenregistrés</summary>
     <ul>
-        <li>IN_FIRE</li>
-        <li>LIGHTNING_BOLT</li>
+        <li>Dans le fichier</li>
+        <li>LIGHTNING BOLT</li>
         <li>ON_FIRE</li>
         <li>LAVA</li>
-        <li>HOT_FLOOR</li>
-        <li>IN_WALL</li>
-        <li>CRAMMING</li>
-        <li>DROWN</li>
-        <li>STARVE</li>
+        <li>FLOIRE_HOT_HOT_FLOOR</li>
+        <li>Dans le mur</li>
+        <li>CRAMMATION</li>
+        <li>DROUTE</li>
+        <li>COMMENCER</li>
         <li>CACTUS</li>
-        <li>FALL</li>
-        <li>FLY_INTO_WALL</li>
-        <li>OUT_OF_WORLD</li>
+        <li>Automne</li>
+        <li>Flèche vers le mur</li>
+        <li>Hors du mot de passe</li>
         <li>GENERIC</li>
-        <li>MAGIC</li>
-        <li>WITHER</li>
+        <li>MAGIQUE</li>
+        <li>AVEC</li>
         <li>ANVIL</li>
-        <li>FALLING_BLOCK</li>
-        <li>DRAGON_BREATH</li>
-        <li>FIREWORKS</li>
+        <li>Bloc de chute</li>
+        <li>BREATH</li>
+        <li>FONCTIONNALES</li>
     </ul>
 </details>
 
