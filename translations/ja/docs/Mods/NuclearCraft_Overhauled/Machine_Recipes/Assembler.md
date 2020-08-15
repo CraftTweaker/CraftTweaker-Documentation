@@ -1,7 +1,7 @@
-# Assembler
+# 組立機
 
-## Importing the Package
-`mods.nuclearcraft.AssemblerAssembler`
+## パッケージのインポート
+`mods.nuclearcraft.Assembler組立機`
 
 ## レシピを追加中
 ```zenscript
