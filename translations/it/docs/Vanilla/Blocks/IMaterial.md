@@ -1,28 +1,28 @@
-# IMaterial
+# IMateriale
 
 An IMaterial object represents the material a block is made of.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.block.IMaterial;`
 
-## ZenGetters/ZenMethods without parameters
+## ZenGetters/ZenMethods senza parametri
 
-| ZenGetter       | ZenMethod           | Return Type |
-| --------------- | ------------------- | ----------- |
-| blocksLight     | blocksLight()       | bool        |
-| blocksMovement  | blocksMovement()    | bool        |
-| canBurn         | getCanBurn()        | bool        |
-| mobilityFlag    | getMobilityFlag()   | string      |
-| liquid          | isLiquid()          | bool        |
-| opaque          | isOpaque()          | bool        |
-| replaceable     | isReplaceable()     | bool        |
-| solid           | isSolid()           | bool        |
-| toolNotRequired | isToolNotRequired() | bool        |
-|                 | setReplaceable()    | IMaterial   |
+| ZenGetter       | ZenMethod           | Tipo Di Reso |
+| --------------- | ------------------- | ------------ |
+| blocksLight     | blocksLight()       | bool         |
+| blocksMovement  | blocksMovement()    | bool         |
+| canBurn         | getCanBurn()        | bool         |
+| mobilityFlag    | getMobilityFlag()   | stringa      |
+| liquido         | isLiquid()          | bool         |
+| opaco           | isOpaque()          | bool         |
+| sostituibile    | isReplaceable()     | bool         |
+| solid           | isSolid()           | bool         |
+| toolNotRequired | isToolNotRequired() | bool         |
+|                 | setReplaceable()    | IMateriale   |
 
-## ZenMethods with parameters
+## ZenMethods con parametri
 
 ### Check if two IMaterials match
 
