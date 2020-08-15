@@ -8,15 +8,15 @@ Various values from the arrow entity are available through zengetters, and can b
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactArrowEvent;`
 
-## Extending IEntityEvent
+## Расширение IEntityEvent
 ProjectileImpactArrow Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGetters и ZenSetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
 | ZenGetter      | ZenSetter           | Тип                                   |
 | -------------- | ------------------- | ------------------------------------- |
