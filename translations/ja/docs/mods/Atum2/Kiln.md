@@ -1,68 +1,68 @@
 # Kiln
 
-The Kiln is a multiblock used for quickly processing building blocks, that can be acquired through smelting something in a furnace.
+Kilnはビルディングブロックを迅速に処理するために使用されるマルチブロックで、炉内で何かを精錬することによって得ることができます。
 
 ## パッケージ
 `mods.atum.Kiln;`
 
 ## ブラック リスト
 
-The Kiln recipes are based on the vanilla Furnaces recipes, sorting out everything besides building blocks. The blacklist is a way for you to further minimize what recipes are grabbed from the vanilla Furnace.
+Kilnのレシピは、バニラかまどのレシピに基づいており、建築ブロック以外のすべてを整理します。 ブラックリストは、バニラかまどからレシピをつかむことをさらに最小限に抑えるための方法です。
 
 `mods.atum.Kiln.blacklist(id);`
 
-- `id` A namespaced ID for the input block/item that should be blacklisted.
+- `id` ブラックリストに入れるべき入力ブロック/アイテムの名前空間ID。
 
-Removes the recipe(s) with the specified item/block from the recipes the Kiln will pull from the vanilla Furnace
+指定されたアイテム/ブロックを持つレシピを削除します。窯がバニラかまどから取り出すレシピを削除します
 
 ```zenscript
 mods.atum.Kiln.blacklist("minecraft:cobblestone");
 ```
 
-## Adding a Recipe
+## レシピを追加
 
 `mods.atum.Kiln.addRecipe(input, output, experience, @Optional cookTime);`
 
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
-- `experience` Float number
-- `cookTime` Integer number (If left empty, it'll default to 75)
+- `経験` 浮動小数点数
+- `cookTime` Integer number (空白の場合、デフォルトは 75)
 
-Adds a recipe with the specified input, output, experience & cook time
+指定された入力、出力、経験 & 調理時間
 
 ```zenscript
 mods.atum.Kiln.addRecipe(<item:atum:dirty_bone_block>, <item:atum:alabaster>, 0.2);
 ```
 
-## Removing a Recipe
+## レシピを削除する
 
-The removal methods only work for recipes added specifically for the Kiln by Atum (Or other mods) By default in Atum this will only be the Marl to White Ceramic Tile Block recipe. If you wish to remove something else, you're probably looking for the blacklist (Documentation above)
+除去方法は、Atum(または他のMod)によってキルンのために特別に追加されたレシピのためにのみ機能します デフォルトでは、Atumでは、これはMarlからWhite Ceramic Tile Blockのレシピにのみなります。 何か他のものを削除したい場合は、おそらくブラックリスト(上記のドキュメント)を探しています。
 
-### Remove Recipes by Output
+### 出力によるレシピの削除
 
 `mods.atum.Kiln.removeRecipeByOutput(output);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+出力結果が与えられた [IItemStack](/vanilla/api/items/IItemStack) であるすべてのレシピを削除します。
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutput(<item:atum:marl>);
 ```
 
-### Remove Recipes by Output & Input
+### 出力 & 入力でレシピを削除
 
 `mods.atum.Kiln.removeRecipeByOutputInput(output, input);`
 
 - `output` [IItemStack](/vanilla/api/items/IItemStack)
 - `input` [IItemStack](/vanilla/api/items/IItemStack)
 
-Removes the specific recipe, with the specified output & input
+指定された出力 & 入力で特定のレシピを削除します。
 
 ```zenscript
 mods.atum.Kiln.removeRecipeByOutputInput(<item:atum:cermic_white>, <item:atum:marl>);
 ```
 
-### Other removal methods
+### その他の削除方法
 
-See [Recipe Managers](/recipes/recipe_managers) for other ways to remove Spinning Wheel recipes
+紡績ホイールのレシピを削除する他の方法については、 [レシピマネージャー](/recipes/recipe_managers) を参照してください。
