@@ -26,9 +26,9 @@ crafttweaker.util.Position3f.create(float x, float y, float z);
 
 The First method allows you to create a position at the given coordinates.
 
-## ZenGetters and ZenSetters
+## ZenGettersとZenSetters
 
-| ZenGetter | ZenSetter | Description                    |
+| ZenGetter | ZenSetter | 説明                             |
 | --------- | --------- | ------------------------------ |
 | x         | x         | Returns the position's x value |
 | y         | y         | Returns the position's y value |
