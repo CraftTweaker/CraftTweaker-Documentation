@@ -1,6 +1,6 @@
-# DirectionAxis
+# 方向 軸
 
-Represents a direction axis (X, Y, Z)
+方向軸 (X, Y, Z) を表します
 
 crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
@@ -10,37 +10,37 @@ crafttweakerのmod-idを持つmodによって追加されているクラスで�
 crafttweaker.api.util.DirectionAxis
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## 実装されたインターフェース
+DirectionAxis は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [craftweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## メソッド
 ### getCoordinate
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+指定された値に基づいてこの軸の座標を取得します。 この軸が "X" の場合、"x" パラメータの値を返します。
 
 Returns int
 
 ```zenscript
-<directionaxis:x>.getCoordinate(x as int, y as int, z as int);
+<directionaxis:x>.getCoordinate(x を int, y を int, z を int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| パラメータ | タイプ | 説明                        |
-| ----- | --- | ------------------------- |
-| x     | int | x value of the coordinate |
-| y     | int | y value of the coordinate |
-| z     | int | z value of the coordinate |
+| パラメータ | タイプ | 説明      |
+| ----- | --- | ------- |
+| x     | int | 座標の x 値 |
+| y     | int | 座標の y 値 |
+| z     | int | 座標のz値   |
 
 
 
 ## プロパティー
 
-| 名称            | タイプ      | Has Getter | Has Setter |
-| ------------- | -------- | ---------- | ---------- |
-| commandString | 文字列型     | true       | false      |
-| horizontal    | boolean型 | true       | false      |
-| 名前            | 文字列型     | true       | false      |
-| ordinal       | int      | true       | false      |
-| vertical      | boolean型 | true       | false      |
+| 名称            | タイプ      | ゲッターあり | セッターあり |
+| ------------- | -------- | ------ | ------ |
+| commandString | 文字列型     | true   | false  |
+| 水平方向          | boolean型 | true   | false  |
+| 名前            | 文字列型     | true   | false  |
+| 序数            | int      | true   | false  |
+| 垂直方向          | boolean型 | true   | false  |
 
