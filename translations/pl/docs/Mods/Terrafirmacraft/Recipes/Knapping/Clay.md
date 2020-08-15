@@ -1,24 +1,24 @@
 # Clay Knapping
 
-## Package
+## Pakiet
 ```zenscript
 import mods.terrafirmacraft.ClayKnapping;
 ```
 
-## Addition
+## Dodanie
 
 ```zenscript
 ClayKnapping.addRecipe(String registryName, IItemStack output, String... pattern);
 ```
 
-## Removal
+## Usuwanie
 
 ```zenscript
 ClayKnapping.removeRecipe(IItemStack output);
 ClayKnapping.removeRecipe(String registryName);
 ```
 
-## Example
+## Przykład
 ```zenscript
 ClayKnapping.addRecipe("unfired_vessel", <tfc:ceramics/unfired/vessel>, " XXX ", "XXXXX", "XXXXX", "XXXXX", " XXX ");
 ```
