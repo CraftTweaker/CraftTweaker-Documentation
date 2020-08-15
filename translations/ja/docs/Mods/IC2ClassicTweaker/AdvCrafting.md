@@ -1,6 +1,6 @@
 # Advanced Recipes
 
-## Package
+## パッケージ
 
 ```zenscript
 import mods.ic2.AdvRecipes;
