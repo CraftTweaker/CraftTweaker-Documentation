@@ -1,11 +1,11 @@
-# Creative Tab
+# Kreativer Tab
 
-This allows you to add Creative Tabs to the game!
+Damit kannst du Creative Tabs zum Spiel hinzufügen!
 
-## Creating the ICreativeTab object
+## Erstellen des ICreativeTab Objekts
 
-Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Bevor Sie den Tab hinzufügen können, Sie müssen eine Repräsentation erstellen, mit der Sie die Eigenschaften des Tabs einstellen können, den Sie hinzufügen möchten.  
+Hier kommt die [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) in:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
@@ -14,34 +14,34 @@ mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, Blo
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
 ```
 
-The String is in each of the three methods the same: It's the unlocalized name the Tab will later have.  
-The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").  
-You can decide wheter you want to use an itemRepresentation, an itemStack, a blockrepresentation or an itemStackSupplier function.
+Die Zeichenkette ist in jeder der drei Methoden die gleichen: Es ist der unlokalisierte Name, den der Tab später haben wird.  
+Der zweite Parameter ist das Symbol, das Ihr Tab später fortsetzen wird (e. . eine Lavabuchse für "misc").  
+Sie können entscheiden, ob Sie eine Item-Zuordnung, einen Itemstack, eine Blockdarstellung oder eine ItemStackLieferer-Funktion verwenden möchten.
 
-## Calling an existing ICreativeTab object
+## Ein vorhandenes ICreativeTab Objekt aufrufen
 
-You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) tab, though you cannot change any of it's properties.  
-Why would you need this, you ask?  
-You will need this if you want to add a newly created block or item to an existing tab!
+Sie können auch einen [vorhandenen kreativen Tab](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) aufrufen, obwohl Sie keine seiner Eigenschaften ändern können.  
+Warum würden Sie das brauchen, fragen Sie?  
+Sie benötigen dies, wenn Sie einen neu erstellten Block oder ein Element zu einem existierenden Tab hinzufügen wollen!
 
-## Properties
+## Eigenschaften
 
-You can call and set all these properties using the normal ZenGetters and ZenSetters  
-`tab.unlocalizedName = "hh";`  
-Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
-Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
+Sie können alle diese Eigenschaften über den normalen Tab ZenGetters und ZenSetters  
+`aufrufen und einstellen. nlocalizedName = "hh";`  
+Beachten Sie, dass Sie die Einstellungen wahrscheinlich kaum benötigen, da diese Eigenschaften bereits auf Ihre gewünschten Werte initialisiert werden, wenn Sie das ICreativeTab-Objekt erstellen.  
+können Sie keine Eigenschaften von einem existierenden ICreativeTab(eine, die Sie mit dem [Klammerhandler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) abgerufen haben) setzen oder abrufen!
 
-| Property Name     | Type                                                                                                    | Required | Standardwert | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------ | ----------------------- |
-| unlocalizedName   | string                                                                                                  | YES      |              | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |              | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null         | Determines something?   |
+| Eigenschaftsname   | Type                                                                                                    | Benötigt | Standardwert | Beschreibung / Notizen     |
+| ------------------ | ------------------------------------------------------------------------------------------------------- | -------- | ------------ | -------------------------- |
+| unlocalizedName    | string                                                                                                  | JA       |              | Der Name des Creative Tabs |
+| iconStack          | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | JA/Nein  |              | Das Creative Tab-Symbol    |
+| iconStackLieferant | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | Nein/Ja  | null         | Bestimmt etwas?            |
 
-## Registering the creative tab
+## Den kreativen Tab registrieren
 
-You need to call this method to register the creative Tab in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the tab or change any of it's properties!
+Du musst diese Methode aufrufen, um den kreativen Tab im Spiel zu registrieren!  
+Andernfalls wird nichts passieren!  
+Nachdem Sie diese Funktion aufgerufen haben, können Sie die Registerkarte nicht aufheben oder keine ihrer Eigenschaften ändern!
 
 ```zenscript
 tab.register();
