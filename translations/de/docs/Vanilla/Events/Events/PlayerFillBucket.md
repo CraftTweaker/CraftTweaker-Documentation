@@ -32,11 +32,11 @@ Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 | `z`              | int                                                |
 | `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
 | `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
+| `blockieren`     | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `maße`           | int                                                |
 | `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
-## ZenMethods
+## ZenMethoden
 
 - `event.cancel()` sets the event as cancelled.
 
