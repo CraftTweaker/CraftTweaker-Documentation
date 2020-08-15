@@ -12,7 +12,7 @@ mods.mekanism.GasConversion.register(IIngredient ingredient, IGasStack gas);
 mods.mekanism.GasConversion.register(<ore:sand>, <gas:liquidosmium> * 100);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.mekanism.GasConversion.unregister(IIngredient ingredient, IGasStack gas);
