@@ -12,14 +12,14 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 The following information can be retrieved from the event:
 
-| ZenGetter   | Return Type                           |
+| ZenGetter   | Type de retour                        |
 | ----------- | ------------------------------------- |
 | `canceled`  | boolean                               |
 | `processed` | boolean                               |
 | `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
 | `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
 
-## ZenMethods
+## Méthodes Zen
 
 - `event.cancel()` sets the event as cancelled.
 - `event.process()` sets the event as processed.
