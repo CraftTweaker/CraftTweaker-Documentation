@@ -1,30 +1,30 @@
 # MutableItemStack
 
-A Mutable Item Stack is a special [IItemStack](/Vanilla/Items/IItemStack/) object that can only be retrieved from [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/).  
-That means all of [IItemStack](/Vanilla/Items/IItemStack/)'s methods, and those of [IIngredients](/Vanilla/Variable_Types/IIngredient/)!
+可变物品堆栈是一个特殊的 [IItemStack](/Vanilla/Items/IItemStack/) 对象，只能从 [ICTPlayers](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/)中检索。  
+这意味着所有 [IItemStack](/Vanilla/Items/IItemStack/)的方法和 [内容](/Vanilla/Variable_Types/IIngredient/)！
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MutableItemStack;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入 mods.contenttweiner.MutableItemStack；`
 
 ## ZenMethods
 
-### Quantity
+### 数量
 
-A Stack's count is the number of items in that stack!
+堆栈的数量是该堆栈中的物品数量！
 
-| ZenMethod       | 参数类型 | 描述                                                  |
-| --------------- | ---- | --------------------------------------------------- |
-| setCount(count) | 整型   | Sets the stack's count to the `count` provided      |
-| grow(count)     | int  | Increases the stack's count by the `count` provided |
-| shrink(count)   | int  | Decreases the stack's count by the `count` provided |
+| ZenMethod（ZenMethod） | 参数类型 | 描述                 |
+| -------------------- | ---- | ------------------ |
+| 设置计数(计数)             | 整型   | 将堆栈的计数设置为提供的 `计数`  |
+| 增长(计数)               | int  | 通过提供 `计数` 来增加堆栈的计数 |
+| 缩减(计数)               | 整数   | 减少所提供的 `计数`        |
 
-### Damage
+### 伤害
 
-`damage(int amount, ICTPlayer player)`
+`伤害(整数, ICTPlayer 玩家)`
 
-Parameters:
+参数：
 
-- int amount → The amount of Damage points to give the item
-- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) player → the player/Entity damaging the item
+- 整数型变量→ 给物品的伤害点量
+- [ICTPlayer](/Mods/ContentTweaker/Vanilla/Types/Player/ICTPlayer/) 播放器 → 玩家/实体损坏物品
