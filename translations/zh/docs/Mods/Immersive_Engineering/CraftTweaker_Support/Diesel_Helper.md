@@ -1,68 +1,68 @@
-# Diesel Helper
+# 柴油助手
 
-The Diesel Handler package can be used to change IE fuels.
+柴油处理包可以用来改变IE燃料。
 
-## Calling The Package
+## 调用包
 
-You can call the DieselHandler package using `mods.immersiveengineering.DieselHandler`.
+您可以使用 `mods.immersiveengineering.DieselHandler` 来调用 DieselHandler 包。
 
-## Add Fuel
+## 添加燃料
 
-| Required | 类型     | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| 必要       | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| 必要       | Input  | Integer                                      |
+| 必填 | 类型 | 数据类型                                         |
+| -- | -- | -------------------------------------------- |
+| 必要 | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必要 | 输入 | 整型                                           |
 
 ### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time);
+//示例：
+mods.immersiveengineering.DieselHandler.addFuel(ILiquidStack fuel, int time)；
 
-mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000);
+mods.immersiveengineering.DieselHandler.addFuel(<liquid:water>, 2000年)；
 ```
 
-## Remove Fuel
+## 移除燃料
 
-| Required | 类型     | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必填 | 类型 | 数据类型                                         |
+| -- | -- | -------------------------------------------- |
+| 必填 | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack fuel);
+//示例：
+mods.immersiveengineering.DieselHandler.removeFuel(ILiquidStack 燃料)；
 
-mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>);
+mods.immersiveengineering.DieselHandler.removeFuel(<liquid:water>)；
 ```
 
-## Add Drill Fuel
+## 添加钻机燃料
 
-| Required | Type   | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必填 | 类型 | 数据类型                                         |
+| -- | -- | -------------------------------------------- |
+| 必填 | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack fuel);
+//示例：
+mods.immersiveengineering.DieselHandler.addDrillFuel(ILiquidStack 燃料)；
 
-mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>);
+mods.immersiveengineering.DieselHandler.addDrillFuel(<liquid:water>)；
 ```
 
-## Remove Drill Fuel
+## 移除钻孔燃料
 
-| Required | Type   | Data Type                                    |
-| -------- | ------ | -------------------------------------------- |
-| Required | Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| 必填 | 类型 | 数据类型                                         |
+| -- | -- | -------------------------------------------- |
+| 必填 | 输出 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### 例子
 
 ```zenscript
-//Example:
-mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack fuel);
+//示例：
+mods.immersiveengineering.DieselHandler.removeDrillFuel(ILiquidStack 燃料)；
 
-mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>);
+mods.immersiveengineering.DieselHandler.removeDrillFuel(<liquid:water>)；
 ```
