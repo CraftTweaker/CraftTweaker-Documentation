@@ -1,77 +1,77 @@
-# Calculations
+# Calculs
 
-Sometimes typing in numbers won't cut it. Sometimes you need some calculation.  
-Remember that you can use more than two numbers at one, `1+1+1+1` would work fine as well.
+Parfois, la saisie de nombres ne la réduira pas. Parfois, vous avez besoin d'un certain calcul.  
+N'oubliez pas que vous pouvez utiliser plus de deux nombres à un, `1+1+1+1+1` fonctionnerait bien aussi.
 
-## A word of advice
+## Un mot de conseil
 
-When unexpected results happen in a calculation, it is very well possible that you used two different types.  
-For example `13 % 6.5` returns 1, even though the correct result is 0. Why? ZenScript always performs its calculations with two variables of the same type. For this, it converts the 2nd Type to match the first one. In this example, the calculation performed was `13 % 6`, as the 2nd number (a double) was converted to match the first one (an Integer).
+Lorsque des résultats inattendus se produisent dans un calcul, il est très possible que vous ayez utilisé deux types différents.  
+Par exemple `13 % 6.5` retourne 1, même si le résultat correct est 0. Pourquoi? ZenScript effectue toujours ses calculs avec deux variables du même type. Pour cela, il convertit le 2ème Type pour correspondre au premier. Dans cet exemple, le calcul effectué était `13 % 6`, comme le deuxième nombre (un double) a été converti pour correspondre au premier (un Integer).
 
-Always be careful about what two variable types you use and when in doubt, just use a print function to print the output to the log and confirm the results.
+Soyez toujours prudent sur les deux types de variables que vous utilisez et en cas de doute, utilisez simplement une fonction print pour afficher la sortie dans le journal et confirmer les résultats.
 
-## Arithmetic Operators
+## Opérateurs arithmétiques
 
-I'm pretty sure all of you know these already, don't you?
+« Je suis presque sûr que vous les connaissez tous déjà, n'est-ce pas? »
 
-| Token | Tokenassign | Function       | Example |
+| Jeton | Tokenassign | Fonction       | Exemple |
 | ----- | ----------- | -------------- | ------- |
-| `+`   | `+=`        | Addition       | 1+2     |
+| `+`   | `+=`        | Ajouter        | 1+2     |
 | `-`   | `-=`        | Substraction   | 2-1     |
 | `*`   | `*=`        | Multiplication | 1*1     |
 | `/`   | `/=`        | Division       | 2/2     |
 | `%`   | `%=`        | Modulo         | 13 % 6  |
 
-## Concatenation
+## Concaténation
 
-Puts one thing at the and of the other
+Met une chose au et de l'autre
 
 ```zenscript
-//prints "Hello World"
-print("Hello" ~ " " ~ "World");
+//affiche "Hello World"
+print("Bonjour" ~ " " ~ "Monde");
 ```
 
-## Calculation results
+## Résultats du calcul
 
-A calculation usually ends up with a result. So what to do with that?
+Un calcul se termine généralement par un résultat. Alors, que faire de cela?
 
-### Assigning a variable
+### Affectation d'une variable
 
-There are two ways of assigning a value to a variable:
+Il y a deux façons d'assigner une valeur à une variable:
 
 ```zenscript
 var test = 0;
 
 //Option 1:
-//assigns test with the value 3 (1+2)
+//assigne le test avec la valeur 3 (1+2)
 test = 1+2;
 
 //Option 2:
-//assigns test with 5 (3+2)
-test = test + 2;
+//assigne un test avec 5 (3+2)
+= test + 2;
 
 //Option 3:
-//assigns test with 2 (5-3)
-test -= 3;
+//assigne un test avec 2 (5-3)
+-= 3 ;
 ```
 
-Option 1 and 2 assign the return variable using the `=` token.  
-This is probably the easiest way for beginners and the only way if you want to assign a variable not used in the calculation.
+Les options 1 et 2 affectent la variable de retour en utilisant le jeton `=` .  
+C'est probablement le moyen le plus simple pour les débutants et le seul moyen pour assigner une variable non utilisée dans le calcul.
 
-Option 3 assigns the variable before the `-=` with the result of a normal subtraction.  
-All Operators on on this page have their respective assign tokens, check the table above.
+L'option 3 assigne la variable avant le `-=` avec le résultat d'une soustraction normale.  
+Tous les opérateurs sur cette page ont leurs jetons d'assignation respectifs, vérifiez le tableau ci-dessus.
 
-### Using the result otherwise
+### Utiliser le résultat autrement
 
-You can always use the result of a calculation in a function or a conditional statement:
+Vous pouvez toujours utiliser le résultat d'un calcul dans une fonction ou une instruction conditionnelle :
 
 ```zenscript
-//prints 4
+//affiche 4
 print(3+1);
 
-//removes the item on array[4]
-recipes.remove(array[3+1]);
+//supprime l'élément du tableau[4]
+recettes.remove(tableau[3+1]);
 
 //
-if(3+1 == 2*2) {print("Used a calculation!")}
+if(3+1 == 2*2) {print("Utilisé un calcul!")}
 ```
