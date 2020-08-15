@@ -1,12 +1,12 @@
-# Crusher
+# Kreuzritter
 
 ModTweaker allows you to add or remove Extra Utilities 2 Crusher Recipes
 
-## Calling
+## Anruf
 
 You can call the Crusher package using `mods.extrautils2.Crusher`
 
-## Removing
+## Entfernen
 
 ```zenscript
 //mods.extrautils2.Crusher.remove(IItemStack outout);
