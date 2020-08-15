@@ -1,8 +1,8 @@
-# Entity Randomizer
+# エンティティランドマイザー
 
-Adding and removing entities from ProjectE's philosopher's stone entity randomizer projectile uses an [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/).
+ProjectEの哲学者の石の実体ランダマイザ投射物からエンティティを追加および削除するには、 [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) を使用します。
 
-Note: This [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) must be for a living entity.
+注: この [IEntityDefinition](/Vanilla/Entities/IEntityDefinition/) は、生きているエンティティのためのものでなければなりません。
 
 ## 追加中
 
@@ -44,16 +44,16 @@ mods.projecte.EntityRandomizer.removeMob(IEntityDefinition entityDefinition);
 // Stops hostile mobs being able to be turned into zombies.
 ```
 
-### clearPeacefuls
+### clearPeacfuls
 
 ```zenscript
-// Removes all randomized peaceful mob entries including ones registered by CraftTweaker before this call.
-mods.projecte.EntityRandomizer.clearPeacefuls();
+// この呼び出しの前にCraftTweakerによって登録されたものを含むすべてのランダム化された平和モブエントリを削除します。
+mods.projectte.EntityRandomizer.clearPeacfuls();
 ```
 
 ### clearMobs
 
 ```zenscript
-// Removes all randomized hostile mob entries including ones registered by CraftTweaker before this call.
-mods.projecte.EntityRandomizer.clearMobs();
+// CraftTweakerによって登録されたものを含むすべてのランダム化された敵対的モブエントリをこのコールの前に削除します。
+mods.projectte.EntityRandomizer.clearMobs();
 ```
