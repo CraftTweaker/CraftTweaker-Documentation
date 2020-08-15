@@ -1,21 +1,21 @@
 # SleepingLocationCheck
 
-This event is fired when checking if a sleeping player can continue to sleep in the current location. If has a **result** which determines the action.
+Questo evento è sparato quando si controlla se un giocatore in sonno può continuare a dormire nella posizione corrente. Se ha un **risultato** che determina l'azione.
 
-Result:
-- **Default**, returns the default Vanilla response as found in the Bed tile entity
-- **Allow**, allows the player to continue sleeping regardless
-- **Deny** is specifically ***ignored*** in this instance and does nothing.
+Risultato:
+- **Predefinito**, restituisce la risposta Vanilla predefinita come trovata nell'entità dei tile del letto
+- **Consenti**, permette al giocatore di continuare a dormire indipendentemente
+- **Nega** è specificatamente ***ignorato*** in questa istanza e non fa nulla.
 
-Thus, this event allows you to keep the player sleeping, but it does not allow you to bypass the default bed logic.
+Così, questo evento ti permette di mantenere il giocatore in sospeso, ma non ti permette di aggirare la logica del letto predefinita.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.SleepingLocationCheck`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. leepingLocationCheck`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-SleepingLocationCheck Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+SleepingLocationCheck Events implementare le seguenti interfacce e sono in grado di chiamare tutti i loro metodi/getter/setter:
 
 - [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
