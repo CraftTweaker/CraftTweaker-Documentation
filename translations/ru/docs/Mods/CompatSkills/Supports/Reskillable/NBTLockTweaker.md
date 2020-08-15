@@ -1,30 +1,30 @@
 # NBT-Lock Tweaker
 
-## NBT-Locking
+## NBT-блокировка
 
-The NBT-Locks are specific to CompatSkills 1.4.0+ and currently is the most powerful feature. You can lock specific NBT-Tags either restricted to a given mod-id or on every item in the game.
+NBT-Locks специфичны для CompatSkills 1.4.0+ и в настоящее время является самой мощной функцией. Вы можете заблокировать определенные NBT-теги либо только для определенного мод-кода или для каждого предмета в игре.
 
-This means that any item found to contain that NBT-tag will have the lock applied to it.
+Это означает, что любой элемент, находящийся в содержании NBT-тега, будет иметь привязанный к нему замок.
 
-### Syntax:
+### Синтаксис:
 
-    // Blank Example:
-    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... locked)
-    mods.compatskills.NBTLock.addModNBTLock(String modId, IData tag, String... locked)
+    // Пустой пример:
+    mods.compatskills.NBTLock.addGenericNBTLock(IData tag, String... заблокирован)
+    mods.compatskills.NBTLock.addModNBTLock(String modId, IData тег, строка... locked)
     
-    //// Working Example:
-    // Locks Silk-Touch
+    //// Пример работы:
+    // Заблокирует Silk-Touch
     addGenericNBTLock({ench:[{id: 33 as short}]}, "reskillable:magic|10");
     
-    // Locks Unbreaking (No Level-Specified)
+    // Заблокирует разрыв (Не указан Level)
     addModNBTLock("minecraft", {ench:[{id: 34 as short}]}, "reskillable:gathering|6");
     
 
-This has some powerful implications. This means for example that you as a pack-maker can lock:
+Это имеет некоторые мощные последствия. Это означает, например, что вы как пакет-производитель может блокировать:
 
-- Tinker Materials
-- Tinker Modifiers
-- Enchantments
-- Energy-Values
+- Материалы для тинкера
+- Модификаторы колесниц
+- Чары
+- Энергетические значения
 
-And much more, as long as you know the NBT-tag it uses!
+И многое другое, пока вы знаете NBT-тег его использует!
