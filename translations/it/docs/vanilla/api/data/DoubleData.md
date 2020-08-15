@@ -11,12 +11,12 @@ crafttweaker.api.data.DoubleData
 ```
 
 ## Interfacce Implementate
-DoubleData implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+DoubleData implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Costruttori
 ```zenscript
-new crafttweaker.api.data.DoubleData(internal as double);
+new crafttweaker.api.data.DoubleData(interno come doppio);
 ```
 | Parametro | Tipo   | Descrizione                 |
 | --------- | ------ | --------------------------- |
