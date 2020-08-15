@@ -10,7 +10,7 @@ mods.nuclearcraft.Supercooler.addRecipe(ILiquidStack fluidInput, ILiquidStack fl
 
 ## Removing Recipes
 ```zenscript
-mods.nuclearcraft.Supercooler.removeRecipeWithInput(ILiquidStack fluidInput);
+mods.nuclearcraft.mods.nuclearcraft.Supercooler.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.Supercooler.removeRecipeWithOutput(ILiquidStack fluidOutput);
-mods.nuclearcraft.Supercooler.removeAllRecipes();
+mods.nuclearcraft.
 ```
