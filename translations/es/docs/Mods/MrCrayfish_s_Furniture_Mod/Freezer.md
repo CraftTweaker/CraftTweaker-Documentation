@@ -13,7 +13,7 @@ It can be used to freeze items, but requires Ice to operate.
 - Poisonous Potato -> Potato
 - Rotten Flesh -> Flesh
 
-## Removing
+## Eliminando
 
 ## Remove matching freezer recipes.
 
@@ -28,7 +28,7 @@ mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## Agregando
 
 Add a freezer recipe.
 
