@@ -1,8 +1,8 @@
 # BlockTypeBuilder
 
-Denotes a special builder that is used for building special block types. Used in [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
+Denota un constructor especial que se utiliza para construir bloques especiales. Utilizado en [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
 
-This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
@@ -10,23 +10,23 @@ Puede ser requerido que importes el paquete si encuentras algun problema (como c
 mods.contenttweaker.block.BlockTypeBuilder
 ```
 
-## Implemented Interfaces
-BlockTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implementadas
+BlockTypeBuilder implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Métodos
-### build
+### construir
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instruye CoT para construir lo que se supone que este constructor está construyendo.
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parámetro        | Tipo   | Descripción                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | Cadena | The resource path to give this block |
+| Parámetro            | Tipo   | Descripción                              |
+| -------------------- | ------ | ---------------------------------------- |
+| ubicacin del recurso | Cadena | La ruta de recursos para dar este bloque |
 
 
 
