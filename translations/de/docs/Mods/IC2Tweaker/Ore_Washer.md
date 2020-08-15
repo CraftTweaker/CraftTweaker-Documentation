@@ -1,6 +1,6 @@
 # Ore Washer
 
-## Package
+## Paket
 
 `import mods.ic2.OreWasher;`
 
@@ -18,7 +18,7 @@ mods.ic2.OreWasher.addRecipe(IItemStack[] outputs, IIngredient input, @Optional 
 mods.ic2.OreWasher.addRecipe([<minecraft:diamond>, <minecraft:emerald>, <minecraft:nether_star>], <minecraft:dirt>);
 ```
 
-## Removal
+## Entfernen
 
 - If using Ic2 Experimental, to remove a recipe, simply remove the corresponding line in `config/ic2/ore_washer.ini`
 - If using Ic2 Classic and Ic2c Extras, to remove a recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
