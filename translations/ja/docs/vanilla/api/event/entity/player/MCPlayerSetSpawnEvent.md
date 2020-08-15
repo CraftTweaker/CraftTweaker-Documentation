@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent>);
 ```
-| パラメータ   | タイプ                                                                                                                                     | 説明                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                     | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | 説明が提供されていません |
 
 
 
 ## メソッド
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getEntityPlayer();
@@ -29,7 +29,7 @@ myMCPlayerSetSpawnEvent.getEntityPlayer();
 
 ### getNewSpawn
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+戻り値 [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getNewSpawn();
@@ -37,9 +37,9 @@ myMCPlayerSetSpawnEvent.getNewSpawn();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getPlayer();
@@ -47,9 +47,9 @@ myMCPlayerSetSpawnEvent.getPlayer();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerSetSpawnEvent.hasResult();
@@ -57,11 +57,11 @@ myMCPlayerSetSpawnEvent.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCancelable();
@@ -69,9 +69,9 @@ myMCPlayerSetSpawnEvent.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCanceled();
@@ -79,9 +79,9 @@ myMCPlayerSetSpawnEvent.isCanceled();
 
 ### isForceed
 
-This event is called before a player's spawn point is changed. The event can be canceled, and no further processing will be done.
+このイベントはプレイヤーのスポーンポイントが変更される前に呼び出されます。 イベントはキャンセルすることができ、それ以上の処理は行われません。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isForced();
@@ -93,9 +93,9 @@ myMCPlayerSetSpawnEvent.isForced();
 myMCPlayerSetSpawnEvent.setCanceled(cancel as boolean);
 ```
 
-| パラメータ  | タイプ      | 説明                      |
-| ------ | -------- | ----------------------- |
-| cancel | boolean型 | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
 
