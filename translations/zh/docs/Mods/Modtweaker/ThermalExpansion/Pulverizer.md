@@ -1,21 +1,21 @@
-# Pulverizer
+# 脉冲器
 
 ## 所属包名
 
-`mods.thermalexpansion.Pulverizer`
+`thermalext.Pulverizer`
 
 ## 添加配方
 
 ```zenscript
-mods.thermalexpansion.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondaryChance);
+mods.thermalext.Pulverizer.addRecipe(IItemStack output, IItemStack input, int energy, @Optional IItemStack secondaryOutput, @Optional int secondary Chance);
 
-mods.thermalexpansion.Pulverizer.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
+mods.thermalext.Pulverizer.addRecipe(<minecraft:diamond>, <minecraft:stick>, 1500, <minecraft:stone>, 20);
 ```
 
 ## 删除配方
 
 ```zenscript
-mods.thermalexpansion.Pulverizer.removeRecipe(IItemStack input);
+mods.thermalext.Pulverizer.removeRecipe(StemStack 输入)；
 
-mods.thermalexpansion.Pulverizer.removeRecipe(<thermalfoundation:material:136>);
+mods.thermalabus.Pulverizer.removeRecipe(<thermalfoundation:material:136>)；
 ```
