@@ -7,7 +7,7 @@ A Tinkers' Construct IMaterial (not to be confused with [ContentTweaker's IMater
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import modtweaker.tconstruct.ITICMaterial;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler](/Mods/Modtweaker/TConstruct/Brackets/Bracket_Material/):
 
@@ -15,7 +15,7 @@ You can retrieve an ITICMaterial object using the [ITICMaterial Bracket Handler]
 val stone = <ticmat:stone>;
 ```
 
-## Fields
+## Felder
 
 You can get/set the following fields:
 
