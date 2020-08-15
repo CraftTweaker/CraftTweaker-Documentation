@@ -1,4 +1,4 @@
-# Freezer
+# Морозильник
 
 The Freezer is the bottom compartment of the Fridge.
 
@@ -13,7 +13,7 @@ It can be used to freeze items, but requires Ice to operate.
 - Poisonous Potato -> Potato
 - Rotten Flesh -> Flesh
 
-## Removing
+## Удаление
 
 ## Remove matching freezer recipes.
 
@@ -28,7 +28,7 @@ mods.cfm.Freezer.remove(null,<minecraft:lava_bucket>);
 mods.cfm.Freezer.remove();
 ```
 
-## Adding
+## Добавление
 
 Add a freezer recipe.
 
