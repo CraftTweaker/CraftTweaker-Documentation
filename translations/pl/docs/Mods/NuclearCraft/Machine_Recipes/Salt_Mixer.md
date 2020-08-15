@@ -1,11 +1,11 @@
-# Salt Mixer
+# Mikser solny
 
-## Importing the Package
-`mods.nuclearcraft.salt_mixer`
+## Importowanie pakietu
+`[PLACEHOLDER] mods.nuclearcraft.salt_mixer`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.salt_mixer.addRecipe([fluidInput1, fluidInput2, fluidOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.salt_mixer.addRecipe([fluidInput1, fluidInput2, fluidOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny powerMultiplier, @Opcjonalny podwójny proces Promieniowania]);
 ```
 
 ## Usuwanie przepisów
