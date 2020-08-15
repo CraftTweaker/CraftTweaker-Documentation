@@ -4,8 +4,8 @@
 
 ## Импорт класса
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.damage.IDamageSource`
+Может потребоваться [импортировать](/AdvancedFunctions/Import/) класс, чтобы избежать ошибок.  
+`импортировать crafttweaker.damage.IDamageSource`
 
 ## Геттеры и методы без параметров
 
