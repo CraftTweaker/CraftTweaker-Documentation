@@ -7,7 +7,7 @@ A CTAspect is the aspect underlying an [Aspect Stack](/Mods/Modtweaker/Thaumcraf
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import thaumcraft.aspect.CTAspect;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve a CTAspect object from a [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) object:
 
