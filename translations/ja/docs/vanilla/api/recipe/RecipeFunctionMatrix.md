@@ -23,10 +23,10 @@ Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myRecipeFunctionMatrix.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[][]);
 ```
 
-| Parameter | Type                                                                  | Description             |
-| --------- | --------------------------------------------------------------------- | ----------------------- |
-| usualOut  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)     | No description provided |
-| inputs    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[][] | No description provided |
+| パラメータ    | タイプ                                                                   | 説明                      |
+| -------- | --------------------------------------------------------------------- | ----------------------- |
+| usualOut | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)     | No description provided |
+| inputs   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[][] | No description provided |
 
 
 
