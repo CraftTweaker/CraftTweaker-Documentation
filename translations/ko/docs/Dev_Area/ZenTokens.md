@@ -15,7 +15,7 @@ These are internal tokens only listed so I have a place to list them somewhere f
 | 7           | T_SQBROPEN          | `[`                                                         |
 | 8           | T_SQBRCLOSE         | `]`                                                         |
 | 9           | T_DOT2              | `..`                                                        |
-| 10          | T_DOT               | `.`                                                         |
+| 10          | T_DOT               | `을 이용하여 정의합니다.`                                             |
 | 11          | T_COMMA             | `,`                                                         |
 | 12          | T_PLUSASSIGN        | `+=`                                                        |
 | 13          | T_PLUS              | `+`                                                         |
