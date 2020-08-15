@@ -18,7 +18,7 @@ mods.steamagerevolution.CastingBlock.addRecipe(ILiquidStack input, IItemStack ou
 mods.steamagerevolution.CastingBlock.addRecipe(<liquid:lava>*1000, <minecraft:obsidian>, 200);
 ```
 
-## Removal
+## Entfernen
 
 ```zenscript
 mods.steamagerevolution.CastingBlock.removeRecipe(IItemStack output);
