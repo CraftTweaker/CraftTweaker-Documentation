@@ -1,6 +1,6 @@
 # IIngrediente
 
-This is IIngredient!!!
+Questo è IIngrediente!!!
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,29 +11,29 @@ crafttweaker.api.item.IIngredient
 ```
 
 ## Interfacce Implementate
-IIngredient implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+IIngredient implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Metodi
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+Quando questa pila di ingredienti è creata, cosa rimarrà nella griglia? Non controlla se lo stack corrisponde però! Usato, ad esempio, nella net.minecraft.item.crafting.ICraftingRecipe
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <tag:ingotIron>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parametro | Tipo                                                              | Descrizione                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parametro | Tipo                                                              | Descrizione                             |
+| --------- | ----------------------------------------------------------------- | --------------------------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pila per fornire questo ingrediente. |
 
 
-### matches
+### corrispondenze
 
-Does the given stack match the ingredient?
+Lo stack dato corrisponde all'ingrediente?
 
 Restituisce un booleano
 
@@ -42,9 +42,9 @@ Restituisce un booleano
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parametro | Tipo                                                              | Descrizione        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parametro | Tipo                                                              | Descrizione             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Lo stack da controllare |
 
 
 
