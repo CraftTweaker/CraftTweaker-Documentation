@@ -2,10 +2,10 @@
 
 A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
@@ -20,13 +20,13 @@ Constructs a ToolType object. If one with the given name already exists, they wi
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type   | Description         |
+| Parámetro | Tipo   | Descripción         |
 | --------- | ------ | ------------------- |
-| name      | String | The name to be used |
+| nombre    | Cadena | The name to be used |
 
 
 
-## Methods
+## Métodos
 ### getName
 
 Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
@@ -58,15 +58,15 @@ Return type: String
 ```
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
+| Nombre        | Tipo   | Has Getter | Has Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| commandString | Cadena | verdad     | falso      |
+| nombre        | Cadena | verdad     | falso      |
 
-## Operators
-### EQUALS
+## Operadores
+### IGUALES
 
 Compares if two given MCToolType objects are equal
 
@@ -75,7 +75,7 @@ Compares if two given MCToolType objects are equal
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
+| Parámetro | Tipo   | Descripción      |
 | --------- | ------ | ---------------- |
 | o         | Object | The other object |
 
@@ -83,5 +83,5 @@ Compares if two given MCToolType objects are equal
 
 | Result type | Is Implicit |
 | ----------- | ----------- |
-| String      | false       |
+| Cadena      | falso       |
 
