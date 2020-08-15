@@ -1,12 +1,12 @@
 # Tanning Rack
 
-## Package
+## Paket
 `import mods.stone_age.TanningRackManager;`
 
 ## Methoden
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
 - **String group** Recipe group
 
