@@ -1,8 +1,8 @@
-# Trait Bracket Handler
+# Manejador de brazaletes de rasgo
 
-The Trait Bracket handler's sole purpose is providing you with [Trait Representations](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
+El único propósito del manejador de Bracket de Trait es proporcionarte [Representaciones de rasgos](/Mods/ContentTweaker/Tinkers_Construct/Trait/).
 
-You use the trait bracket handler like this:
+Utilizas el manejador de corchetes como este:
 
 ```zenscript
 <ticontrait:identifier>
@@ -10,4 +10,4 @@ You use the trait bracket handler like this:
 <ticontrait:cactus>
 ```
 
-If the Trait is found, this will return an Trait Representation Object. Please refer to the [respective Wiki entry](/Mods/ContentTweaker/Tinkers_Construct/Trait/) for further information on what you can do with these.
+Si el rasgo es encontrado, esto devolverá un objeto de representación de rasgo. Por favor, consulte la [entrada respectiva del Wiki](/Mods/ContentTweaker/Tinkers_Construct/Trait/) para obtener más información sobre lo que puede hacer con estos.
