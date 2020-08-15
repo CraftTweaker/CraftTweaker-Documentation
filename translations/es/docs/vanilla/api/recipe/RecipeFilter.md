@@ -14,7 +14,7 @@ This class is a functional interface. This means that you can use the lambda not
 ```zenscript
 (name) => false
 ```
-## Methods
+## Métodos
 ### test
 
 Return type: boolean
@@ -23,9 +23,9 @@ Return type: boolean
 myRecipeFilter.test(name as String);
 ```
 
-| Parameter | Type   | Description             |
+| Parámetro | Tipo   | Descripción             |
 | --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| nombre    | Cadena | No description provided |
 
 
 
