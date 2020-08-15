@@ -22,7 +22,7 @@ When joining a server, the server sends their scripts to the client, and the cli
 
 To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
 
-In `hello.zs` put the following line
+`hello.zs`の中には次の文を書いてください。
 
 ```zenscript
 println("Hello world!");
@@ -40,13 +40,13 @@ When choosing a program to use to edit scripts, take a look at what Syntax highl
 
 ### crafttweaker.log ファイル
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+`crafttweaker.log`ファイルは、ログの出力に下のような構文が使われます。
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+上記に書いた例を使うと、以下のように出力されます。
 
 ```
 [14:58:06.697][DONE][SERVER][INFO] Hello world!
@@ -56,15 +56,15 @@ The syntax is used for debug purposes and the only time the syntax is not used, 
 
 ### コメント
 
-Comments can be used to make your script files more readable and easier to understand!
+コメントは、あなたのスクリプトを読みやすく、よりわかりやすくするために使います。
 
-ZenScript supports 3 types of comments, being:
+ZenScriptでは3つの種類のコメントの書き方ができます。
 
-Single line: `// I'm a single line comment!`
+1行コメント: `// I'm a single line comment!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+一行コメントの別の方法 : `# I'm also a single line comment!`
 
-Multiline:
+複数行のコメント:
 ```
 /* I'm 
 a
