@@ -8,7 +8,7 @@ You can use this to retrieve some information on the [ITICMaterial](/Mods/Modtwe
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import modtweaker.tconstruct.ITICMaterialDefinition;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
 You can retrieve an ITICMaterialDefinition from an [ITICMaterial's](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) `definition` ZenGetter:
 
