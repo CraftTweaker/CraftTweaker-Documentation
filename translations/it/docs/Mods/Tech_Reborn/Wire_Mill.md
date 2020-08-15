@@ -1,6 +1,6 @@
-# Wire Mill
+# Filo Mulino
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.wireMill`
 
 ## Aggiunta Di Ricette
