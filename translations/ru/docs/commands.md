@@ -1,20 +1,20 @@
-# Commands
+# Команды
 
 Here are the commands that matter:
 ```
-/ct hand
+/ст рука
 ```
 ```
-/ct log
+/ct лог
 ```
 ```
-/ct scripts
+/ct скрипты
 ```
 ```
 /ct issues
 ```
 ```
-/ct discord
+/ct дискорд
 ```
 ```
 /ct dump
@@ -23,5 +23,5 @@ Here are the commands that matter:
 /ct recipeTypes
 ```
 ```
-/ct help
+/ct помощь
 ```
