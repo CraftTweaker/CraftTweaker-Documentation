@@ -12,7 +12,7 @@ The meaning of these is dependent on context. Generally, denying an event preven
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IEventHasResult;`
 
-## What can be done with them?
+## 他们能够做些什么？
 
 - `event.result` Getter, returns a string value of `default`, `deny` or `allow`
 - `event.deny()` Method, sets the event's result to `deny`
