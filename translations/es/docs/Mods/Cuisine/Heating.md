@@ -1,6 +1,6 @@
 # Basin Heating
 
-## Addition
+## Adicional
 
 ```zenscript
 import mods.cuisine.BasinHeating;
