@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.techreborn.grinder`
 
-## Adding Recipes
+## Добавление рецептов
 ```zenscript
 mods.techreborn.grinder.addRecipe(IItemStack output, IIngredient input1, int ticktime, int euTick);
 ```
 
-## Removing Recipes
+## Удаление рецептов
 ```zenscript
 mods.techreborn.grinder.removeInputRecipe(IIngredient ingredient);
 mods.techreborn.grinder.removeRecipe(IItemStack output);
