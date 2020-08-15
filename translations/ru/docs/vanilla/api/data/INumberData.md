@@ -2,16 +2,16 @@
 
 Represents a Number in the form of an [crafttweaker.api.data.IData](/vanilla/api/data/IData), useful for converting between types (double to int / long for example).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.data.INumberData
 ```
 
-## Implemented Interfaces
-INumberData implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+INumberData implements the following interfaces. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ## Методы
@@ -55,16 +55,16 @@ Returns String
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 1.contains(data as crafttweaker.api.data.IData);
 1.contains("Display");
 ```
 
-| Parameter | Тип                                                    | Описание                         |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Параметр | Тип                                                    | Описание                         |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| data     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
