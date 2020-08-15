@@ -12,7 +12,7 @@ mods.contenttweaker.item.MCToolType
 
 ## 已实现的接口
 MCToolType implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+- [crafttweaker.api.brackets.CommandStringDisplayable #命令字符串可显示](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Constructor #构造函数
 Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
@@ -60,10 +60,10 @@ Return type: String
 
 ## 参数
 
-| 名称            | 返回值类型  | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| 名称                   | 返回值类型       | 可获得  | 可设置   |
+| -------------------- | ----------- | ---- | ----- |
+| commandString #命令字符串 | String      | true | false |
+| 名称                   | 字符串[string] | true | false |
 
 ## 运算符
 ### EQUALS
@@ -81,7 +81,7 @@ Compares if two given MCToolType objects are equal
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| 结果类型        | 是否隐藏  |
+| ----------- | ----- |
+| 字符串[string] | false |
 
