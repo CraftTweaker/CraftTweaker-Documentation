@@ -9,7 +9,7 @@ crafttweaker.api.block.material.MCMaterial
 ```
 
 ## Methoden
-### blocksMovement
+### blocksbewegung
 
 Returns if this material is considered solid or not
 
