@@ -1,31 +1,31 @@
-# ICraftingInventory
+# Inventario
 
-The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
+L'ICraftingInventory contiene tutti i tipi di informazioni sull'inventario in cui viene eseguito un processo di creazione.
 
 ## Importare la classe
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.recipes.ICraftingInventory`
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe per evitare errori.  
+`importare crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Tipo di ritorno                              | Descrizione                                          |
-| ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
-| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
+| ZenGetter    | Tipo di ritorno                              | Descrizione                                 |
+| ------------ | -------------------------------------------- | ------------------------------------------- |
+| `giocatore`  | [IPlayer](/Vanilla/Players/IPlayer/)         | il giocatore che possiede questo inventario |
+| `dimensione` | int                                          | dimensione dell'inventario                  |
+| `width`      | int                                          | larghezza dell'inventario                   |
+| `altezza`    | int                                          | altezza dell'inventario                     |
+| `stackCount` | int                                          | il numero di pile effettivamente riempite   |
+| `elementi`   | [IItemStack[][]](/Vanilla/Items/IItemStack/) | Gli oggetti presenti nel tavolo da lavoro   |
+| `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | Gli oggetti presenti nel tavolo da lavoro   |
 
 ## ZenMethods
 
-Following Methods are available:
+Sono disponibili i seguenti metodi:
 
-`inventory.getStack(index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index or null if no item present. Index is an int.  
-`inventory.setStack(index, item)` sets the Stack at the given index to the provided item. Index is an int, item is an IItemStack. Use null if you want to clear the stack at that index.
+`inventory.getStack(index)` restituisce il [IItemStack](/Vanilla/Items/IItemStack/) all'indice specificato o null se nessun elemento presente. L'indice è un int.  
+`inventario.setStack(index, elemento)` imposta lo Stack all'indice dato all'elemento fornito. L'indice è un int, l'elemento è un IItemStack. Utilizzare null se si desidera cancellare lo stack a quel indice.
 
-The top left stack is position (0, 0), row and column are ints.  
-`inventory.getStack(row, column)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given position or null if no item present.  
-`inventory.setStack(row, column, item)` sets the stack at the given position to the provided item. Item is an IItemStack. Use null if you want to clear the stack at that position.
+Lo stack in alto a sinistra è la posizione (0, 0), riga e colonna sono ints.  
+`inventario. etStack(riga, colonna)` restituisce il [IItemStack](/Vanilla/Items/IItemStack/) alla posizione specificata o null se nessun elemento presente.  
+`inventario.setStack(riga, colonna, oggetto)` imposta lo stack alla posizione indicata per l'elemento fornito. Oggetto è un IItemStack. Utilizzare null se si desidera cancellare la pila in quella posizione.
