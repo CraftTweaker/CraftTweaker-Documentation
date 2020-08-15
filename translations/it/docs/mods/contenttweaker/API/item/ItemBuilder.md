@@ -1,6 +1,6 @@
 # ItemBuilder
 
-The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
+Il costruttore di oggetti è a... costruire oggetti (sorpresa!) <p> Ti permette di impostare varie proprietà che cambieranno come si comporta l'elemento e cosa può fare. È anche possibile utilizzare [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) per passare a un costruttore più specializzato, se ce ne sono. <p> Per dire a CoT che vuoi che l'elemento appaia ingame devi chiamare [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) e specificare un percorso di localizzazione delle risorse valido.
 
 Questa classe è stata aggiunta da una mod con mod-id `contenttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,11 +11,11 @@ mods.contenttweaker.item.ItemBuilder
 ```
 
 ## Interfacce Implementate
-ItemBuilder implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+ItemBuilder implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Constructors
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) for that.
+## Costruttori
+Crea un nuovo ItemBuilder. Ricorda che questo _non_ creerà un nuovo blocco nel gioco, è necessario chiamare [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) per questo.
 ```zenscript
 new mods.contenttweaker.item.ItemBuilder();
 ```
@@ -37,75 +37,75 @@ new ItemBuilder().build("my_awesome_block");
 
 ### withItemGroup
 
-Allows you to set the item group that this item will appear in. By default, items will land in `misc`
+Ti permette di impostare il gruppo di elementi in cui apparirà questo elemento. Per impostazione predefinita, gli elementi atterreranno in `misc`
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Tipo restituito: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGroup);
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| Parametro | Tipo                                                                              | Descrizione                               |
-| --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
-| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| Parametro | Tipo                                                                              | Descrizione                                                    |
+| --------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | Il gruppo di elementi in cui questo elemento dovrebbe apparire |
 
 
 ### withMaxDamage
 
-Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
+Permette di impostare il danno massimo per questo oggetto.<br/> Attenzione che questo non può essere usato in combinazione con [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Tipo restituito: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withMaxDamage(maxDamage as int);
 new ItemBuilder().withMaxDamage(250);
 ```
 
-| Parametro | Tipo | Descrizione            |
-| --------- | ---- | ---------------------- |
-| maxDamage | int  | The maximum stack size |
+| Parametro | Tipo | Descrizione                       |
+| --------- | ---- | --------------------------------- |
+| maxDamage | int  | La dimensione massima dello stack |
 
 
 ### withMaxStackSize
 
-Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
+Permette di impostare la dimensione massima dello stack per questo oggetto.<br/> Attenzione che questo non può essere usato in combinazione con [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Tipo restituito: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxStackSize(maxStackSize as int);
+new ItemBuilder().withMaxStackSize(maxStackSize come int);
 new ItemBuilder().withMaxStackSize(16);
 ```
 
-| Parametro    | Tipo | Descrizione            |
-| ------------ | ---- | ---------------------- |
-| maxStackSize | int  | The maximum stack size |
+| Parametro    | Tipo | Descrizione                       |
+| ------------ | ---- | --------------------------------- |
+| maxStackSize | int  | La dimensione massima dello stack |
 
 
 ### withNoRepair
 
-Sets that this item may not be repaired in an anvil Returns: `This builder, used for method chaining`
+Imposta che questo oggetto non può essere riparato in un'incudine Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Tipo restituito: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withNoRepair();
 ```
 
-### withRarity
+### withRarità
 
-Allows you to set the item's rarity
+Ti permette di impostare la rarità dell'oggetto
 
- Returns: `This builder, used for method chaining`
+ Restituisce: `Questo costruttore, usato per la catena di metodi`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+Tipo restituito: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
 new ItemBuilder().withRarity(rarity as String);
@@ -114,22 +114,22 @@ new ItemBuilder().withRarity("EPIC");
 
 | Parametro | Tipo    | Descrizione |
 | --------- | ------- | ----------- |
-| rarità    | Stringa | The rarity  |
+| rarità    | Stringa | La rarità   |
 
 
 ### withType
 
-Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method. Returns: `A builder with the given item.`
+Imposta il tipo specifico di questo elemento. Dopo che questo metodo è chiamato il contesto del costruttore passerà al costruttore di tipo più fornito. Ciò significa che i metodi di questo costruttore non saranno più disponibili, quindi tutte le proprietà che si desidera impostare dovrebbero essere impostate prima di chiamare questo metodo. Restituisce: `Un costruttore con l'elemento specificato.`
 
-Return type: T
+Tipo di restituzione: T
 
 ```zenscript
 new ItemBuilder().withType<T>();
 new ItemBuilder().withType<mods.contenttweaker.item.tool.ItemBuilderTool>();
 ```
 
-| ParameterName | Bounds                                                                                    |
-| ------------- | ----------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
+| Nome | Limiti                                                                                    |
+| ---- | ----------------------------------------------------------------------------------------- |
+| T    | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
 
 
