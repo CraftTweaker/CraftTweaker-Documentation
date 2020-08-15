@@ -1,6 +1,6 @@
-# LootingLevel
+# 呼叫级别
 
-This event is fired whenever a Living Entity creature is killed in order to calculate the looting level. The value can be increased or decreased or left as-is. The value may have already been modified by other events, but the original value is not included.
+每当一个有生命实体的生物被杀以便计算抢劫程度，就会发生这种事件。 值可以增加或减少或保持不变。 该值可能已经被其他事件修改，但原始值未包括在内。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-LootingLevel Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Lootinglevel Events 实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
