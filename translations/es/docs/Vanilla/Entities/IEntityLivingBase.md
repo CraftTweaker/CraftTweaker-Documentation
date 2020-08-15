@@ -3,7 +3,7 @@
 A living Entity is one that has health and that can die.  
 That means Monsters, Animals but also [IPlayers](/Vanilla/Players/IPlayer/).
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.IEntityLivingBase;`
@@ -17,11 +17,11 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | ZenGetter              | Return Type (*can be null*)                            |
 | ---------------------- | ------------------------------------------------------ |
 | activePotionEffects    | List<[IPotionEffect](/Vanilla/Potions/IPotionEffect/)> |
-| AIMovementSpeed        | float                                                  |
+| AIMovementSpeed        | flotante                                               |
 | arrowsInEntity         | int                                                    |
 | attackingEntity        | *IEntityLivingBase*                                    |
 | canBreatheUnderwater   | boolean                                                |
-| health                 | float                                                  |
+| health                 | flotante                                               |
 | isChild                | boolean                                                |
 | isOnLadder             | boolean                                                |
 | isUndead               | boolean                                                |
@@ -29,18 +29,18 @@ IEntityLivingBase extends [IEntity](/Vanilla/Entities/IEntity/). That means all 
 | lastAttackedEntityTime | int                                                    |
 | lastDamageSource       | [IDamageSource](/Vanilla/Damage/IDamageSource/)        |
 | mainHandHeldItem       | [IItemStack](/Vanilla/Items/IItemStack/)               |
-| maxHealth              | float                                                  |
+| maxHealth              | flotante                                               |
 | offHandHeldItem        | [IItemStack](/Vanilla/Items/IItemStack/)               |
 | revengeTarget          | *IEntityLivingBase*                                    |
 | totalArmorValue        | int                                                    |
 
 ## ZenSetters
 
-| ZenSetter          | Parameter Type (*can be null*) |
+| Ajuste             | Parameter Type (*can be null*) |
 | ------------------ | ------------------------------ |
-| AIMovementSpeed    | float                          |
+| AIMovementSpeed    | flotante                       |
 | arrowsInEntity     | int                            |
-| health             | float                          |
+| health             | flotante                       |
 | lastAttackedEntity | *IEntityLivingBase*            |
 | revengeTarget      | *IEntityLivingBase*            |
 
