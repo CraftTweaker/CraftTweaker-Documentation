@@ -2,7 +2,7 @@
 
 A Part is the form an item is in, for example a gear or an ore.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import mods.contenttweaker.Part;`
@@ -13,7 +13,7 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 
 <details>
     <summary>Following types are pre-registered (Headlines are the <a href="../PartType">Part types</a>):</summary>
-    <h4>Items:</h4>
+    <h4>Éléments :</h4>
         <ul>
             <li>Beam<img src="../Assets/beam.png" alt="icon"></li>
             <li>Bolt<img src="../Assets/bolt.png" alt="icon"></li>
@@ -59,15 +59,15 @@ You can either retrieve an existing Part using the [MaterialSystem](/Mods/Conten
 
 You can retrieve the following information from a Part:
 
-| ZenMethod                 | Return Type                                                                   |
+| Méthode Zen               | Type de retour                                                                |
 | ------------------------- | ----------------------------------------------------------------------------- |
 | hasOverlay()              | boolean                                                                       |
-| getName()                 | string                                                                        |
-| getUnlocalizedName()      | string                                                                        |
-| getShortUnlocalizedName() | string                                                                        |
+| getName()                 | chaîne de caractères                                                          |
+| getUnlocalizedName()      | chaîne de caractères                                                          |
+| getShortUnlocalizedName() | chaîne de caractères                                                          |
 | getPartType()             | [PartType](/Mods/ContentTweaker/Materials/Parts/PartType/)                    |
-| getPartTypeName()         | string                                                                        |
-| getOreDictPrefix()        | string                                                                        |
+| getPartTypeName()         | chaîne de caractères                                                          |
+| getOreDictPrefix()        | chaîne de caractères                                                          |
 | getData()                 | List<[IPartDataPiece](/Mods/ContentTweaker/Materials/Parts/PartDataPiece/)\> |
 
 ## Register to Material(s)
