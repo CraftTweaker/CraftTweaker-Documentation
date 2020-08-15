@@ -1,39 +1,39 @@
-# Seeds
+# Semi
 
-Seeds are things you get from punching tall grass.
+I semi sono cose che si ottiene da punzonando erba alta.
 
-## Print all seeds to the log
+## Stampa tutti i semi nel log
 
-This command will print all registered seeds to the log.
+Questo comando stamperà tutti i semi registrati nel log.
 
-Needs to be performed by a player or console, cannot be written in a zs-file.
+La necessità di essere eseguita da un giocatore o da una console, non può essere scritta in un file zs.
 
     1.12
-    /ct seeds
+    /ct seed
     
     pre-1.12
-    /mt seeds
+    /mt seed
     
 
-## Add a seed drop
+## Aggiungi un seed drop
 
-Adds `item` as seed drop.  
-**Weights are relative to grass seed, which has a weight of 10 (≙ 10%)!**
+Aggiunge `elemento` come goccia di seme.  
+**I pesi sono relativi al seme d'erba, che ha un peso di 10 (<unk> 10%)!**
 
 ```zenscript
-vanilla.seeds.addSeed(item);
+vanilla.seeds.addSeed(articolo);
 ```
 
-`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). What does that mean? It simply means that you need to give it a percentage like this:
+`item` is a [weightedItemStack](/Vanilla/Items/WeightedItemStack/). Che cosa significa? Significa semplicemente che è necessario dargli una percentuale come questa:
 
 ```zenscript
-//adds carrots with a weight of 1
+//aggiunge carote con un peso di 1
 vanilla.seeds.addSeed(<minecraft:carrot> % 1);
 ```
 
-## Remove a seed drop
+## Rimuovi una goccia di semi
 
-Stops `item` from being a seed drop.
+Ferma `l'oggetto` dall'essere un seed drop.
 
 ```zenscript
 vanilla.seeds.removeSeed(item);
@@ -41,14 +41,14 @@ vanilla.seeds.removeSeed(item);
 
 `item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
-## Retrieve all registered Seeds
+## Recupera tutti i semi registrati
 
-Returns all items as a [weightedItemStack](/Vanilla/Items/WeightedItemStack/) List.
+Restituisce tutti gli elementi come un [ponderedItemStack](/Vanilla/Items/WeightedItemStack/) List.
 
 ```zenscript
 val seedList = vanilla.seeds.seeds;
 
 for item in seedList {
-    print("Item: " ~ item.stack.displayName ~ " || Chance: " ~ item.percent ~ "%");
+    print("Item: " ~ item. tack.displayName ~ " <unk> <unk> Chance: " ~ item.percent ~ "%");
 }
 ```
