@@ -12,7 +12,7 @@ Prints the string to the crafttweaker log as information.
 print("Hello World!");
 ```
 
-Returns nothing
+No devuelve nada
 
 ## totalActions
 
@@ -33,7 +33,7 @@ Use of the [Debug Preprocessor](/AdvancedFunctions/Preprocessors/DebugPreprocess
 enableDebug();
 ```
 
-Returns nothing
+No devuelve nada
 
 ## isNull
 
@@ -47,7 +47,7 @@ isNull(<minecraft:dirt>);
 
 Returns a boolean Note: If this does not work for you, try casting the object to bool `<minecraft:dirt> as bool`
 
-## max
+## máx
 
 ```zenscript
 //max(int number1, int number2);
@@ -76,7 +76,7 @@ Returns a double
 
 ## Global Fields
 
-| Field      | Description                                                                                    |
+| Campo      | Descripción                                                                                    |
 | ---------- | ---------------------------------------------------------------------------------------------- |
 | brewing    | Accesses the [Brewing Handler](/Vanilla/Recipes/Recipes_Brewing_Stand/)                        |
 | client     | Accesses [client Methods](/Vanilla/Game/IClient/)                                              |
