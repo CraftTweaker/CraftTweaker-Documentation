@@ -1,102 +1,102 @@
-# Available Interfaces
+# Доступные интерфейсы
 
-All interfaces are part of the `zenscriptx.fun` package, meaning that the fully qualified name for a class `X` is `zenscriptx.fun.X`, which is useful for importing.
+Все интерфейсы являются частью `zenscriptx. un` пакет, означающий, что полное имя класса `X` является `zenscriptx. un.X`, что полезно для импорта.
 
-In the following list, functions are split into categories that represent what their general use is. Also, in all of the functions definitions, the letters `T`, `U`, and `R` define generic types, i.e. types that can be specified by the developer.
+В следующем списке функции разделяются на категории, представляющие их общее использование. Кроме того, во всех определениях функций буквы `T`, `U`и `R` определить общие типы. , которые могут быть определены разработчиком .
 
-## BiConsumers
-A BiConsumer accepts two elements, which can be of different types, and consumes them, meaning uses them for internal processing and returns nothing.
+## Потребители
+BiConsumer принимает два элемента, которые могут иметь различные типы и потреблять их, что означает их использование для внутренней обработки и ничего не возвращает.
 
-| Class Name          | Function Signature                                  | Примечания |
-| ------------------- | --------------------------------------------------- | ---------- |
-| `BiConsumer`        | `function accept(t as T, u as U) as void;`          | \-        |
-| `ObjDoubleConsumer` | `function accept(t as T, value as double) as void;` | \-        |
-| `ObjIntConsumer`    | `function accept(t as T, value as int) as void;`    | \-        |
-| `ObjLongConsumer`   | `function accept(t as T, value as long) as void;`   | \-        |
+| Название класса          | Подпись функции                                                | Примечания |
+| ------------------------ | -------------------------------------------------------------- | ---------- |
+| `Бисер`                  | `функция accept(t as T, u as U) как void;`                     | \-        |
+| `ObjDoubleConsumer`      | `функция accept(t as T, value as double) как недействительна;` | \-        |
+| `ObjIntConsumer`         | `функции accept(t as T, value as int) как void;`               | \-        |
+| `Надлежащий потребитель` | `функция accept(t as T, value as long) как недействительна;`   | \-        |
 
-## BiFunctions
-A BiFunction applies a function to two elements, which can be of different types, returning a single element, which can also be of a different type. It can be pictured mathematically as `r = f(s, t)`, where `f` is the bifunction.
+## Библии
+Функция применяет функцию к двум элементам, которые могут иметь различные типы, возвращает один элемент, который может также иметь другой тип. Оно может быть показано математически как `r = f(s, t)`, где `f` является бифункцией.
 
-| Class Name           | Function Signature                          | Примечания |
-| -------------------- | ------------------------------------------- | ---------- |
-| `BiFunction`         | `function apply(t as T, u as U) as R;`      | \-        |
-| `ToDoubleBiFunction` | `function apply(t as T, u as U) as double;` | \-        |
-| `ToIntBiFunction`    | `function apply(t as T, u as U) as int;`    | \-        |
-| `ToLongBiFunction`   | `function apply(t as T, u as U) as long;`   | \-        |
+| Название класса             | Подпись функции                             | Примечания |
+| --------------------------- | ------------------------------------------- | ---------- |
+| `Функция`                   | `функция apply(t as T, u as U) как R;`      | \-        |
+| `Функция двойного биосферы` | `функция apply(t as T, u as U) в два раза;` | \-        |
+| `Функция IntBition`         | `функция apply(t as T, u as U) как int;`    | \-        |
+| `Облегчение функции`        | `функция apply(t as T, u as U) как длинна;` | \-        |
 
 ## Двоичные операторы
-A Binary Operator applies a function to two elements of the **same type**, returning another element, which has the **same type** as the inputs. It can be mathematically pictured as `r = s op t`, where `op` is the binary operator.
+A Binary Operator applies a function to two elements of the **same type**, returning another element, which has the **same type** as the inputs. Это может быть математически показано как `r = s op t`, где `op` является бинарным оператором.
 
-| Class Name             | Function Signature                                                   | Примечания                            |
-| ---------------------- | -------------------------------------------------------------------- | ------------------------------------- |
-| `BinaryOperator`       | `function apply(t as T, u as T) as T;`                               | `BinaryOperator` extends `BiFunction` |
-| `DoubleBinaryOperator` | `function applyAsDouble(left as double, right as double) as double;` | \-                                   |
-| `IntBinaryOperator`    | `function applyAsInt(left as int, right as int) as int;`             | \-                                   |
-| `LongBinaryOperator`   | `function applyAsLong(left as long, right as long) as long;`         | \-                                   |
+| Название класса         | Подпись функции                                                  | Примечания                                       |
+| ----------------------- | ---------------------------------------------------------------- | ------------------------------------------------ |
+| `BinaryOperator`        | `функция apply(t as T, u as T) as T;`                            | `Бинарный Оператор` расширяет `Бинарную Функцию` |
+| `Двухбинарный оператор` | `функция ApyAsDouble(левая двойная, справа двойная) как дважды;` | \-                                              |
+| `IntBinaryOperator`     | `функция applyAsInt(слева как int, справа как int) как int;`     | \-                                              |
+| `LongBinaryOperator`    | `функция applyAsLong(слева как длинная), как долгое;`            | \-                                              |
 
-## BiPredicates
-A BiPredicate tests the two given inputs, which may be of different types, and returns a boolean, representing whether they passed the test or not.
+## Бипрекаты
+Бипредикатный тест двух заданных входов, которые могут иметь различные типы, и возвращает логическое значение, представляющее ли , они прошли тест или нет.
 
-| Class Name    | Function Signature                       | Примечания |
-| ------------- | ---------------------------------------- | ---------- |
-| `BiPredicate` | `function test(t as T, u as U) as bool;` | \-        |
+| Название класса | Подпись функции                          | Примечания |
+| --------------- | ---------------------------------------- | ---------- |
+| `BiPredicate`   | `функции test(t as T, u as U) как bool;` | \-        |
 
-## Consumers
-A Consumer accepts a single element and consumes it, meaning it uses it for internal processing and returns nothing.
+## Потребители
+Потребитель принимает один элемент и потребляет его, что означает, что он использует его для внутренней обработки и ничего не возвращает.
 
-| Class Name       | Function Signature                          | Примечания |
+| Название класса  | Подпись функции                             | Примечания |
 | ---------------- | ------------------------------------------- | ---------- |
-| `Consumer`       | `function accept(t as T) as void;`          | \-        |
-| `DoubleConsumer` | `function accept(value as double) as void;` | \-        |
-| `IntConsumer`    | `function accept(value as int) as void;`    | \-        |
-| `LongConsumer`   | `function accept(value as long) as void;`   | \-        |
+| `Потребитель`    | `функции accept(t as T) как void;`          | \-        |
+| `DoubleConsumer` | `функции accept(value as double) как void;` | \-        |
+| `Интпотребитель` | `функции accept(value as int) as void;`     | \-        |
+| `LongConsumer`   | `функции accept(value as long) как void;`   | \-        |
 
 ## Функции
-A Function applies a function to a single element, returning another element, which can be a different type from the inputs. It can be pictured mathematically as `r = f(t)`, where `f` is the function.
+Функция применяет функцию к одному элементу, возвращающему другой элемент, который может отличаться от входов. Оно может быть показано математически как `r = f(t)`, где `f` является функцией.
 
-| Class Name             | Function Signature                                 | Примечания |
-| ---------------------- | -------------------------------------------------- | ---------- |
-| `Функция`              | `function apply(t as T) as R;`                     | \-        |
-| `DoubleFunction`       | `function apply(value as double) as R;`            | \-        |
-| `DoubleToIntFunction`  | `function applyAsInt(value as double) as int;`     | \-        |
-| `DoubleToLongFunction` | `function applyAsLong(value as double) as long;`   | \-        |
-| `IntFunction`          | `function apply(value as int) as R;`               | \-        |
-| `IntToDoubleFunction`  | `function applyAsDouble(value as int) as double;`  | \-        |
-| `IntToLongFunction`    | `function applyAsLong(value as int) as long;`      | \-        |
-| `LongFunction`         | `function apply(value as long) as R;`              | \-        |
-| `LongToDoubleFunction` | `function applyAsDouble(value as long) as double;` | \-        |
-| `LongToIntFunction`    | `function applyAsInt(value as long) as int;`       | \-        |
-| `ToDoubleFunction`     | `function apply(value as T) as double;`            | \-        |
-| `ToIntFunction`        | `function apply(value as T) as int;`               | \-        |
-| `ToLongFunction`       | `function apply(value as T) as long;`              | \-        |
+| Название класса                | Подпись функции                                       | Примечания |
+| ------------------------------ | ----------------------------------------------------- | ---------- |
+| `Функция`                      | `функция apply(t as T) as R;`                         | \-        |
+| `Двухсторонняя функция`        | `функция применяется(значение в дублере) как R;`      | \-        |
+| `Двойная функция`              | `функция applyAsInt(значение как double) как int;`    | \-        |
+| `Двойное Долгосрочное Функция` | `функция applyAsLong(значение двойное) в длину;`      | \-        |
+| `IntFunction`                  | `функция применяется(значение int) как R;`            | \-        |
+| `Функция IntToDoubleName`      | `функции applyAsDouble(value as int) как double;`     | \-        |
+| `Функция IntToLongFunction`    | `функция applyAsLong(значение int) длинно;`           | \-        |
+| `Долгосрочная функция`         | `функция применяется(значение в длине) как R;`        | \-        |
+| `Долгое двойное назначение`    | `функция applyAsDouble(значение в длину) как double;` | \-        |
+| `Долгосрочная функция`         | `функция applyAsInt(значение длинное), как int;`      | \-        |
+| `Функция двойного задания`     | `функция применяется(значение Т) в двойном виде;`     | \-        |
+| `Функция`                      | `функция применяется(значение в виде int;`            | \-        |
+| `Функция`                      | `функция применяется(значение Т) длинно;`             | \-        |
 
-## Predicates
-A Predicate tests the given input and returns a boolean, representing whether it passed the test or not.
+## Прогнозы
+Прогнозирование проверяет заданные входные данные и возвращает логическое значение, представляющее то, прошло ли он тест или нет.
 
-| Class Name        | Function Signature                        | Примечания |
-| ----------------- | ----------------------------------------- | ---------- |
-| `Predicate`       | `function test(t as T) as bool;`          | \-        |
-| `DoublePredicate` | `function test(value as double) as bool;` | \-        |
-| `IntPredicate`    | `function test(value as int) as bool;`    | \-        |
-| `LongPredicate`   | `function test(value as long) as bool;`   | \-        |
+| Название класса           | Подпись функции                               | Примечания |
+| ------------------------- | --------------------------------------------- | ---------- |
+| `Predicate`               | `тест(t as T) в качестве була;`               | \-        |
+| `Двойное прогнозирование` | `функция test(значение как double) как bool;` | \-        |
+| `IntPredicate`            | `функция test(значение int) как bool;`        | \-        |
+| `LongPredicate`           | `функция test(значение длинное) как bool;`    | \-        |
 
-## Suppliers
-A Supplier outputs an instance of a given type, be it either created on the fly or cached.
+## Поставщики
+Поставщик выводит экземпляр данного типа, будь он либо создан на лету, либо кэшируется.
 
-| Class Name        | Function Signature                  | Примечания |
-| ----------------- | ----------------------------------- | ---------- |
-| `Supplier`        | `function get() as T;`              | \-        |
-| `BooleanSupplier` | `function getAsBoolean() as bool;`  | \-        |
-| `DoubleSupplier`  | `function getAsDouble() as double;` | \-        |
-| `IntSupplier`     | `function getAsInt() as int;`       | \-        |
-| `LongSupplier`    | `function getAsLong() as long;`     | \-        |
+| Название класса           | Подпись функции                     | Примечания |
+| ------------------------- | ----------------------------------- | ---------- |
+| `Поставщик`               | `функция get() как T;`              | \-        |
+| `BooleanSupplier`         | `getAsBoolean() как bool;`          | \-        |
+| `Двухсторонний поставщик` | `функции getAsDouble() как double;` | \-        |
+| `ИнтПоставщик`            | `функция getAsInt() в int;`         | \-        |
+| `Длинный Поставщик`       | `функция getAsLong() длинна;`       | \-        |
 
-## Unary Operators
-A Unary operator applies a function to an element of a given type, returning another element, which has to be of the **same type** as the inputs. It can be pictured mathematically as `r = op t`, where `op` is the unary operator.
+## Операторы Unary
+Оператор Unary применяет функцию к элементу данного типа, возвращая другой элемент, которая должна быть из **того же типа** данных, что и входы. Это может быть фото математически как `r = op t`, где `op` является оператором унитарного типа.
 
-| Class Name            | Function Signature                                     | Примечания                         |
-| --------------------- | ------------------------------------------------------ | ---------------------------------- |
-| `UnaryOperator`       | `function apply(t as T) as T;`                         | `UnaryOperator` extends `Function` |
-| `DoubleUnaryOperator` | `function applyAsDouble(operand as double) as double;` | \-                                |
-| `IntUnaryOperator`    | `function applyAsInt(operand as int) as int;`          | \-                                |
-| `LongUnaryOperator`   | `function applyAsLong(operand as long) as long;`       | \-                                |
+| Название класса       | Подпись функции                                  | Примечания                          |
+| --------------------- | ------------------------------------------------ | ----------------------------------- |
+| `UnaryOperator`       | `функция apply(t as T) as T;`                    | `UnaryOperator` расширяет `функцию` |
+| `DoubleUnaryOperator` | `функции ApyAsDouble(operand as double) двойно;` | \-                                 |
+| `IntUnaryOperator`    | `функция applyAsInt(операнд int) как int;`       | \-                                 |
+| `LongUnaryOperator`   | `- функции applyAsLong(длинной)`                 | \-                                 |
