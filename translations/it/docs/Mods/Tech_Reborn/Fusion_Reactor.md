@@ -1,6 +1,6 @@
-# Fusion Reactor
+# Reattore Di Fusione
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.fusionReactor`
 
 ## Aggiunta Di Ricette
