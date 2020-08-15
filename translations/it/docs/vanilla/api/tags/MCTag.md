@@ -9,14 +9,14 @@ crafttweaker.api.tag.MCTag
 ```
 
 ## Interfacce Implementate
-MCTag implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+MCTag implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
 ## Metodi
 ### addBlocks
 
 ```zenscript
-myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+myMCTag.addBlocks(blocchi come crafttweaker.api.block.MCBlock[]);
 ```
 
 | Parametro | Tipo                                                            | Descrizione                 |
@@ -38,7 +38,7 @@ myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ### addItems
 
 ```zenscript
-myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(elementi come crafttweaker.api.item.IItemStack[]);
 ```
 
 | Parametro | Tipo                                                                | Descrizione                 |
@@ -48,7 +48,7 @@ myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
 
 ### createBlockTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Restituisce [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createBlockTag();
@@ -56,7 +56,7 @@ myMCTag.createBlockTag();
 
 ### createEntityTypeTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Restituisce [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createEntityTypeTag();
@@ -64,7 +64,7 @@ myMCTag.createEntityTypeTag();
 
 ### createItemTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+Restituisce [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createItemTag();
@@ -72,23 +72,23 @@ myMCTag.createItemTag();
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+Quando questa pila di ingredienti è creata, cosa rimarrà nella griglia? Non controlla se lo stack corrisponde però! Usato, ad esempio, nella net.minecraft.item.crafting.ICraftingRecipe
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Restituisce [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCTag.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parametro | Tipo                                                              | Descrizione                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parametro | Tipo                                                              | Descrizione                             |
+| --------- | ----------------------------------------------------------------- | --------------------------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | La pila per fornire questo ingrediente. |
 
 
-### matches
+### corrispondenze
 
-Does the given stack match the ingredient?
+Lo stack dato corrisponde all'ingrediente?
 
 Restituisce un booleano
 
@@ -97,15 +97,15 @@ myMCTag.matches(stack as crafttweaker.api.item.IItemStack);
 myMCTag.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parametro | Tipo                                                              | Descrizione        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parametro | Tipo                                                              | Descrizione             |
+| --------- | ----------------------------------------------------------------- | ----------------------- |
+| pila      | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Lo stack da controllare |
 
 
 ### removeBlocks
 
 ```zenscript
-myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+myMCTag.removeBlocks(block as crafttweaker.api.block.MCBlock[]);
 ```
 
 | Parametro | Tipo                                                            | Descrizione                 |
@@ -127,7 +127,7 @@ myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ### removeItems
 
 ```zenscript
-myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(elementi come crafttweaker.api.item.IItemStack[]);
 ```
 
 | Parametro | Tipo                                                                | Descrizione                 |
