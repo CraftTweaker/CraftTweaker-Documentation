@@ -28,8 +28,8 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | alive                             | isAlive()         | boolean                                                     |
 | alwaysRenderNameTag               |                   | boolean                                                     |
 | armorInventory                    |                   | Список<[IItemStack](/Vanilla/Items/IItemStack/)             |
-| canBeAttackedWithItem             |                   | boolean                                                     |
-| canBeCollidedWith                 |                   | boolean                                                     |
+| Снято с кем-предмета              |                   | boolean                                                     |
+| canBeCollidedС                    |                   | boolean                                                     |
 | canPassengerSteer                 |                   | boolean                                                     |
 | canRiderInteract                  |                   | boolean                                                     |
 | controllingPassenger              |                   | *IEntity*                                                   |
@@ -39,20 +39,20 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | не триггергергерметичная пластина |                   | boolean                                                     |
 | снаряжениеAndArmor                |                   | Список<[IItemStack](/Vanilla/Items/IItemStack/)             |
 | высота глаз                       |                   | float                                                       |
-| hasCustomName                     |                   | boolean                                                     |
+| имеет Настраиваемое Имя           |                   | boolean                                                     |
 | hasNoGravity                      |                   | boolean                                                     |
 | аппаратура                        |                   | Список<[IItemStack](/Vanilla/Items/IItemStack/)             |
 | id                                |                   | int                                                         |
 | immuneToFire                      | isImmuneToFire()  | boolean                                                     |
 | isBeingRidden                     |                   | boolean                                                     |
 | isBoss                            |                   | boolean                                                     |
-| isBurning                         |                   | boolean                                                     |
+| зажигающий                        |                   | boolean                                                     |
 | isGlowing                         |                   | boolean                                                     |
 | isImmuneToExplosions              |                   | boolean                                                     |
 | isInLava                          |                   | boolean                                                     |
 | InsideOpaqueBlock                 |                   | boolean                                                     |
 | isInvisible                       |                   | boolean                                                     |
-| isInvulnerable                    |                   | boolean                                                     |
+| неуязвимый                        |                   | boolean                                                     |
 | isInWater                         |                   | boolean                                                     |
 | isOutsideBorder                   |                   | boolean                                                     |
 | isOverWater                       |                   | boolean                                                     |
@@ -70,7 +70,7 @@ IEntity наследует от [ICommandSender](/Vanilla/Commands/ICommandSende
 | portalCooldowne                   |                   | int                                                         |
 | position3f                        | getPosition3f()   | [Позиция3f](/Vanilla/Utils/Position3f/)                     |
 | ездовой объект                    | getRidingEntity() | *IEntity*                                                   |
-| shouldRiderSit                    |                   | boolean                                                     |
+| должно быть RiderSit              |                   | boolean                                                     |
 | тэги                              |                   | List<string\>                                              |
 | команда                           |                   | *[ITeam](/Vanilla/Game/ITeam/)*                             |
 | влажный                           | isWet()           | boolean                                                     |
