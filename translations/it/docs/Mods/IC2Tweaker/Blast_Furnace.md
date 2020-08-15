@@ -1,4 +1,4 @@
-# Blast Furnace
+# Fornace Esplosiva
 
 ## Pacchetto
 
@@ -7,9 +7,9 @@
 ## Metodi
 
 - **[IItemStack](/Vanilla/Items/IItemStack/)[] outputs**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
-- **int totalFluidCost** Per-tick IC2 liquefied air cost, measured in mB/tick
-- **int time** Total time cost, measured in ticks
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **int totalFluidCost** Costo dell'aria liquefatta IC2, misurato in mB/tick
+- **int time** Costo totale del tempo, misurato in ticks
 
 ## Addizione
 
@@ -21,4 +21,4 @@ mods.ic2.BlastFurnace.addRecipe([<minecraft:diamond>, <minecraft:emerald>], <min
 
 ## Rimozione
 
-For now simply remove the corresponding line in `config/ic2/blast_furnace.ini`.
+Per ora basta rimuovere la riga corrispondente in `config/ic2/blast_furnace.ini`.
