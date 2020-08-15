@@ -1,8 +1,8 @@
-# Dimension Stages
+# 尺寸阶段
 
-This mod is an addon for the [GameStages API](https://minecraft.curseforge.com/projects/game-stages). Dimension Stages allows access to dimensions to be gated behind custom progression systems that are set in place by the modpack creator. If a player does not have access to a stage, they will not be able to enter that dimension. Their pets, and projectiles, mounts and dropped items will also be prevented from entering a restricted dimension. You can find more info about Dimension Stages [here](https://minecraft.curseforge.com/projects/dimension-stages)
+这个模组是 [GameStages API](https://minecraft.curseforge.com/projects/game-stages) 的附加值。 尺寸阶段允许访问由modpack 创建者设置的自定义进度系统后面的尺寸。 如果玩家不能进入一个阶段，他们将无法进入那个维度。 他们的宠物和抛射物、挂载物和抛射物件也将被阻止进入限制范围。 您可以在这里找到更多关于维度阶段的信息 [](https://minecraft.curseforge.com/projects/dimension-stages)
 
 ```zenscript
 //mods.DimensionStages.addDimensionStage(String stage, int dimensionId);
-mods.DimensionStages.addDimensionStage("nether", -1);
+mods.DimensionStages.addDimensionStage("下一步", -1);
 ```
