@@ -2,7 +2,7 @@
 
 The Brew package is used for adding or removing recipes to/from the Botania Brewing Stand.
 
-## Calling
+## Appel en cours
 
 You can call the Brew package using `mods.botania.Brew`
 
@@ -11,7 +11,7 @@ You can call the Brew package using `mods.botania.Brew`
 To use this Package, you need to know botania's registered Brew Names.  
 You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Ajout de recette
 
 ```zenscript
 //mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
