@@ -1,6 +1,6 @@
 # CommandStringDisplayable
 
-This is A helper interface for every item that is returned by a BEP!
+Questa è un'interfaccia di aiuto per ogni oggetto che viene restituito da un BEP!
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
