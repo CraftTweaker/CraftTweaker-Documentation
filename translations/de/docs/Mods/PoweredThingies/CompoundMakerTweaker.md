@@ -3,23 +3,23 @@
 ### Importieren
 
 ```zenscript
-import mods.poweredthingies.Tweaker.compoundTweaker as ct;
+importieren mods.poweredthingies.Tweaker.compoundTweaker als ct;
 ```
 
-### Listing Keys, Removing Recipes by Key, Clearing
+### Schlüssel auflisten, Rezepte nach Schlüssel entfernen, Clearing
 
 ```zenscript
 ct().logKeys()
-ct().removeRecipe('minecraft:stone') // check <logKeys> output for valid keys
-ct().clear()
+ct().removeRecipe('minecraft:stone') // die <logKeys> Ausgabe auf gültige Schlüssel
+ct().clear() überprüfen
 ```
 
-### Adding Recipe
+### Rezept hinzufügen
 
-##### Signature
+##### Signatur
 
 ```zenscript
-addRecipe(output: IItemStack, left: ILiquidStack?, top: Array<IItemStack>?, right: ILiquidStack?, bottom: Array<IItemStack>?)
+addRecipe(Ausgabe: IItemStack, links: ILiquidStack?, oben: Array<IItemStack>?, rechts: ILiquidStack?, unten: Array<IItemStack>?)
 ```
 
 ##### Beispiel
@@ -30,4 +30,4 @@ ct().addRecipe(<minecraft:obsidian>, <liquid:lava> * 250, [<minecraft:cobbleston
 
 ### Notizen
 
-All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
+Alle diese Aktionen werden zwischengespeichert und ausgeführt, nachdem die Standard-Registry für diese Maschine alle Rezepte (einschließlich der von den benutzerdefinierten Jsons) registriert hat.
