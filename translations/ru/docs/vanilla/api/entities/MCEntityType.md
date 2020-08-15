@@ -9,21 +9,21 @@ crafttweaker.api.entity.MCEntityType
 ```
 
 ## Реализованные интерфейсы
-MCEntityType implements the following interfaces. Следовательно, методы из них доступны в этом классе.
+MCEntityType реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Свойства
 
 | Название         | Тип                                                                                            | Имеет Getter | Имеет Setter |
 | ---------------- | ---------------------------------------------------------------------------------------------- | ------------ | ------------ |
-| classification   | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true         | false        |
+| классификация    | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true         | false        |
 | командная строка | String                                                                                         | true         | false        |
 | height           | float                                                                                          | true         | false        |
 | immuneToFire     | boolean                                                                                        | true         | false        |
 | lootTable        | String                                                                                         | true         | false        |
 | имя              | String                                                                                         | true         | false        |
 | serializable     | boolean                                                                                        | true         | false        |
-| summonable       | boolean                                                                                        | true         | false        |
+| вызываемый       | boolean                                                                                        | true         | false        |
 | translationKey   | String                                                                                         | true         | false        |
 | width            | float                                                                                          | true         | false        |
 
