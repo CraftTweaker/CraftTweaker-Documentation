@@ -1,18 +1,18 @@
 # EntityLivingSpawnEvent
 
-The EntityLivingSpawn Event is fired whenever an entity tries to join or leave a world.  
-It has one subclass, the EntityLivingExtendedSpawnEvent that also contains an [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) reference.
+Wydarzenie EntityLivingSpawn jest uruchamiane za każdym razem, gdy podmiot próbuje dołączyć lub opuścić świat.  
+Ma jedną podklasę, EnityLivingExtendedSpawnEvent zawierający odniesienie [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic).
 
 ## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EntityLivingSpawnEvent`  
-`crafttweaker.event.EntityLivingExtendedSpawnEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Będziesz musiał aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`stwórz słabszy. vent.EntityLivingSpawnEvent`  
+`crafttweaker. vent.EntityLivingExtendedSpawnEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
 
-EntityLivingSpawn Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Events EntityLivingSpawn implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
 
@@ -20,21 +20,21 @@ EntityLivingSpawn Events implement the following interfaces and are able to call
 
 Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter                 | Typ                                                              |
-| ------------------------- | ---------------------------------------------------------------- |
-| `świat`                   | [IWorld](/Vanilla/World/IWorld/)                                 |
-| `x`                       | zmiennoprzecinkowe                                               |
-| `y`                       | zmiennoprzecinkowe                                               |
-| `z`                       | zmiennoprzecinkowe                                               |
-|                           |                                                                  |
-| `spawner` (Extended Only) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
+| ZenGetter                     | Typ                                                              |
+| ----------------------------- | ---------------------------------------------------------------- |
+| `świat`                       | [IWorld](/Vanilla/World/IWorld/)                                 |
+| `x`                           | zmiennoprzecinkowe                                               |
+| `y`                           | zmiennoprzecinkowe                                               |
+| `z`                           | zmiennoprzecinkowe                                               |
+|                               |                                                                  |
+| `spawner` (Tylko rozszerzone) | [IMobSpawnerBaseLogic](/Vanilla/TileEntity/IMobSpawnerBaseLogic) |
 
-## Event functions
+## Funkcje zdarzenia
 
-The despawn event also offers three functions to change the event outcome:
+Wydarzenie despawn oferuje również trzy funkcje do zmiany wyniku wydarzenia:
 
-| Metoda ZenMethod | Opis                                       |
-| ---------------- | ------------------------------------------ |
-| `allow`          | Forces the entity to (de)spawn             |
-| `deny`           | Forces the entity not to (de)spawn         |
-| `przejdź`        | Sets the event result to the default state |
+| Metoda ZenMethod | Opis                                        |
+| ---------------- | ------------------------------------------- |
+| `zezwól`         | Zmusza obiekt do (de)spawn                  |
+| `odrzuć`         | Zmusza obiekt do nie uruchamiania (de)spawn |
+| `przejdź`        | Ustawia wynik wydarzenia na domyślny stan   |
