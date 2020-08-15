@@ -1,6 +1,6 @@
 # Sieving
 
-## Package
+## Пакет
 
 To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
@@ -42,7 +42,7 @@ Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
 Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 Sieve.removeAll();
