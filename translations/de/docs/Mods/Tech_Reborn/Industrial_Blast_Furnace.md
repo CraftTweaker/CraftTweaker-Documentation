@@ -1,7 +1,7 @@
-# Industrial Blast Furnace
+# Industrieller Sprengöfen
 
-## Importing the Package
-`mods.techreborn.blastFurnace`
+## Paket wird importiert
+`mods.techreborn.blastOfen`
 
 ## Rezepte hinzufügen
 ```zenscript
