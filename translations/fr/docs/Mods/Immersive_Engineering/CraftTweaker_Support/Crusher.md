@@ -6,17 +6,17 @@ The Crusher package can be used to add/remove recipes to/from the Immersive Engi
 
 You can call the Crusher package using `mods.immersiveengineering.Crusher`.
 
-## Add Recipe
+## Ajouter une recette
 
-| Required | Type             | Data Type                                           |
-| -------- | ---------------- | --------------------------------------------------- |
-| Required | Output           | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Required | Input            | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Energy           | int                                                 |
-| Optional | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)            |
-| Optional | Secondary Chance | double                                              |
+| Required  | Type de texte    | Type de données                                    |
+| --------- | ---------------- | -------------------------------------------------- |
+| Required  | Sortie           | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| Required  | Input            | [Ingrédient](/Vanilla/Variable_Types/IIngredient/) |
+| Required  | Energy           | Indice                                             |
+| Optionnel | Secondary Output | [IItemStack](/Vanilla/Items/IItemStack/)           |
+| Optionnel | Secondary Chance | double                                             |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -29,11 +29,11 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:diamond>, <ore:logWood>, 
 
 ## Remove Recipe by Output
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Sortie        | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
@@ -44,11 +44,11 @@ mods.immersiveengineering.Crusher.removeRecipe(<minecraft:diamond>);
 
 ## Remove Recipe By Input
 
-| Type  | Data Type                                |
-| ----- | ---------------------------------------- |
-| Input | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Type de texte | Type de données                          |
+| ------------- | ---------------------------------------- |
+| Input         | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Exemple
 
 ```zenscript
 //Example:
