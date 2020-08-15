@@ -20,7 +20,7 @@ new crafttweaker.api.data.DoubleData(internal as double);
 ```
 | Parameter | Type   | Beschreibung            |
 | --------- | ------ | ----------------------- |
-| internal  | double | No description provided |
+| intern    | double | No description provided |
 
 
 
