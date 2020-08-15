@@ -1,21 +1,21 @@
-# Grinder
+# Broyeur
 
-The Grinder is a machine that converts an input item into an output item using steam.
+Le broyeur est une machine qui convertit un élément d'entrée en un élément de sortie à l'aide de vapeur.
 
-## Package
-`mods.steamagerevolution.Grinder`
+## Paquet
+`Broyeur`
 
 ## Méthodes
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The result of the recipe.
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[IItemStack](/Vanilla/Items/IItemStack/) sortie** Le résultat de la recette.
+- **[IItemstack](/Vanilla/Items/IItemStack/) entrée** L'entrée de la recette.
+- **int craftTime** Temps d'artisanat pour la machine à traiter
+- **int steamCost** Coût de vapeur pour la machine à traiter
 
 ## Ajouter
 
 ```zenscript
-mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack output, int craftTime, int steamCost);
+mods.steamagerevolution.Grinder.addRecipe(IIngredient input, IItemStack sortie, int craftTime, int steamCost);
 mods.steamagerevolution.Grinder.addRecipe(<ore:cobblestone>, <minecraft:gravel>, 200, 200);
 ```
 
