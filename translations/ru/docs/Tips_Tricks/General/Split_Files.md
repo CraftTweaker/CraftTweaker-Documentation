@@ -4,8 +4,8 @@
 
 ## Проблема
 
-- When writing scripts for bigger modpacks, your script might soon become pretty long and confusing.
-- Debugging a long script might take really long, especially if you have an error that doesn't point out a specific line in your script.
+- При написании скриптов для больших модов ваш скрипт может вскоре стать довольно длинным и запутанным.
+- Отладка длинного скрипта может занять очень много времени, особенно если у вас есть ошибка, которая не указывает на конкретную строку вашего скрипта.
 
 ## Что мы знаем/должны знать
 
@@ -38,9 +38,9 @@ scripts
 
 - Ваши скрипты становятся легче для отладки.
 - Ошибка не остановит целый скрипт, а только их часть.
-- People checking your script files can easier orient themselves
+- Люди, которые проверяют ваши файлы скриптов, могут легче ориентироваться на себя
 
-## Disadvantages
+## Недостатки
 
-- You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
-- There are many ways to categorize your scripts after and yours may be confusing for outsiders.
+- Вам нужно быть осторожным с порядком загрузки скриптов (особенно если один скрипт удаляет рецепт, а другой добавляет его). Проверьте [Препроцессор Приоритета](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) , если ваш заказ на загрузку скрипта является проблемой
+- Есть много способов классифицировать ваши скрипты после и ваши могут вводить в заблуждение для внешних пользователей.
