@@ -1,46 +1,46 @@
 # Block Material Bracket Handler
 
-The Block Material Bracket Handler gives you access to the Block Materials in the game. Currently the only Block Materials supported are:
+Il Block Material Bracket Handler ti dà accesso ai Materiali Blocco nel gioco. Attualmente gli unici Materiali a Blocco supportati sono:
 
 <details>
-    <summary>Click to expand the Material list</summary>
+    <summary>Fare clic per espandere l'elenco dei materiali</summary>
     <ul>
-        <li>Air</li>
-        <li>Grass</li>
-        <li>Ground</li>
-        <li>Wood</li>
-        <li>Rock</li>
-        <li>Iron</li>
-        <li>Anvil</li>
-        <li>Water</li>
+        <li>Aria</li>
+        <li>Erba</li>
+        <li>Terreno</li>
+        <li>Legno</li>
+        <li>Roccia</li>
+        <li>Ferro</li>
+        <li>Incudine</li>
+        <li>Acqua</li>
         <li>Lava</li>
-        <li>Leaves</li>
-        <li>Plants</li>
+        <li>Foglie</li>
+        <li>Piante</li>
         <li>Vine</li>
-        <li>Sponge</li>
-        <li>Cloth</li>
-        <li>Fire</li>
-        <li>sand</li>
-        <li>Circuits</li>
-        <li>Carpet</li>
-        <li>Glass</li>
+        <li>Spugna</li>
+        <li>Tessuto</li>
+        <li>Fuoco</li>
+        <li>sabbia</li>
+        <li>Circuiti</li>
+        <li>Tappeto</li>
+        <li>Vetro</li>
         <li>Redstone_Light</li>
         <li>TNT</li>
-        <li>Coral</li>
-        <li>Ice</li>
-        <li>Packed_Ice</li>
-        <li>Crafted_Snow</li>
+        <li>Corallo</li>
+        <li>Ghiaccio</li>
+        <li>Ghiaccio</li>
+        <li>Neve</li>
         <li>Cactus</li>
-        <li>Clay</li>
+        <li>Argilla</li>
         <li>Gourd</li>
-        <li>Dragon_Egg</li>
-        <li>Portal</li>
-        <li>Cake</li>
+        <li>Uovo Di Drago</li>
+        <li>Portale</li>
+        <li>Torta</li>
         <li>Web</li>
     </ul>
 </details>
 
-Block Materials are referenced in the Material Bracket handler this way:
+Block Materials are referenced in the Material Bracket handler in questo modo:
 
 ```zenscript
 <blockmaterial:name>
@@ -48,4 +48,4 @@ Block Materials are referenced in the Material Bracket handler this way:
 <blockmaterial:wood>
 ```
 
-If the Block Material is found, this will return an [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/) Object.
+Se viene trovato il Materiale Blocco, questo restituirà un oggetto [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/).
