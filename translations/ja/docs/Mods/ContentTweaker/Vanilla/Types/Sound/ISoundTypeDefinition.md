@@ -1,25 +1,25 @@
 # ISoundTypeDefinition
 
-An ISoundTypeDefinition object represents a sound (type) in the game. A sound type is almost always bound to one or multiple blocks.
+ISoundTypeDefinition オブジェクトは、ゲーム内のサウンド (タイプ) を表します。 サウンドタイプは、ほとんどの場合、1つまたは複数のブロックにバインドされます。
 
 ## パッケージのインポート
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+問題が発生した場合は、パッケージをインポートする必要があるかもしれませんので、申し訳ありませんし、インポートを追加してください。  
 `import mods.contenttweaker.SoundType;`
 
-## Calling an ISoundTypeDefinition object
+## ISoundTypeDefinition オブジェクトの呼び出し
 
-You can get such an object using the [Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
-`<soundtype:wood>`
+[Sound Type Bracket Handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Sound_Type/):  
+`<soundtype:wood>` を使用してこのようなオブジェクトを取得できます。
 
-## ZenMethods without parameters
+## パラメータのないZenMethods
 
-| ZenMethod       | Return type                                                                             | Definition                                                         |
-| --------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| getVolume()     | float                                                                                   | Returns the type's volume                                          |
-| getPitch()      | float                                                                                   | Returns the type's pitch                                           |
-| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is broken     |
-| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is stepped on |
-| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is placed     |
-| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is hit        |
-| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | Returns the sound that occurs when the related block is falling    |
+| ZenMethod       | 戻り値の種類                                                                                  | 定義                             |
+| --------------- | --------------------------------------------------------------------------------------- | ------------------------------ |
+| getVolume()     | float型                                                                                  | 型の音量を返します                      |
+| getPitch()      | float型                                                                                  | 型のピッチを返します                     |
+| getBreakSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | 関連するブロックが壊れたときに発生する音を返します。     |
+| getStepSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | 関連するブロックが踏まれたときに発生する音を返します。    |
+| getPlaceSound() | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | 関連するブロックを配置したときに発生するサウンドを返します。 |
+| getHitSound()   | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | 関連するブロックがヒットしたときに発生する音を返します。   |
+| getFallSound()  | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundTypeDefinition/) | 関連するブロックが落下したときに発生する音を返します。    |
