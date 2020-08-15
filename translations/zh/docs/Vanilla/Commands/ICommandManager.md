@@ -1,12 +1,12 @@
 # ICommandManager
 
-The ICommandManager interface is managing commands. So you can use it to get and execute commands.  
-You can get this from an [IServer](/Vanilla/Game/IServer/) object.
+ICommandManager 接口正在管理命令。 所以你可以使用它来获取和执行命令。  
+你可以从 [IServer](/Vanilla/Game/IServer/) 对象中得到这一点。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.command.ICommandManager;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftweaker.command.ICommandManager；`
 
 ## ZenGetters
 
@@ -23,21 +23,21 @@ It might be required for you to import the package if you encounter any issues (
   
   <tr>
     <td>
-      commands
+      命令
     </td>
     
     <td>
-      Map<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
+      地图<String, <a href="/Vanilla/Commands/ICommand/">ICommand</a>\>
     </td>
   </tr>
 </table>
 
 ## ZenMethods
 
-- int executeCommand([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
-- List<String\> getTabCompletions([ICommandSender](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
-- List<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) sender);
+- int executeCommand([ICommander Sender](/Vanilla/Commands/ICommandSender/) sender, String rawCommand);
+- 列表<String\> getTabCompltions([ICommander](/Vanilla/Commands/ICommandSender/) sender, String input, @Optional [IBlockPos](/Vanilla/World/IBlockPos/) pos);
+- 列表<[ICommand](/Vanilla/Commands/ICommand/)\> getPossibleCommands([ICommandSender](/Vanilla/Commands/ICommandSender/) 发送者);
 
-## Additional Info
+## 附加信息
 
-To add your own command, look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/)
+要添加您自己的命令，请参阅 [命令事件](/Vanilla/Events/Events/CommandEvent/)
