@@ -1,9 +1,9 @@
 # MCAnvilRepairEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
-| Parameter | Type                                                                                                                              | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                               | 説明                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No description provided |
 
 
 
-## Methods
+## メソッド
 ### getBreakChance
 
 Returns float
@@ -113,9 +113,9 @@ myMCAnvilRepairEvent.isCanceled();
 myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| breakChance | float | No description provided |
+| パラメータ    | タイプ    | 説明                      |
+| -------- | ------ | ----------------------- |
+| ブレイクチャンス | float型 | No description provided |
 
 
 ### setCanceled
@@ -124,9 +124,9 @@ myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 myMCAnvilRepairEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ  | タイプ      | 説明                      |
+| ------ | -------- | ----------------------- |
+| cancel | boolean型 | No description provided |
 
 
 
