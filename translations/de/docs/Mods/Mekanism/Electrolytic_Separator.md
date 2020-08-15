@@ -1,6 +1,6 @@
-# Electrolytic Separator
+# Elektrolytischer Trenner
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Electrolytic Separator through the command `/ct mekrecipes separator`
+Ab dem Mekanismus 9.7.0 ist es nun möglich, alle Rezeptzeichenketten des Elektrolytischen Separators über den Befehl `/ct Mekrecipes Separator` anzuzeigen
 
 ## Addition
 
@@ -19,11 +19,11 @@ mods.mekanism.separator.removeRecipe(<liquid:heavywater>, <gas:deuterium>, <gas:
 mods.mekanism.separator.removeRecipe(<liquid:water>);
 ```
 
-Specifying an output parameter will only remove the specific recipe that results in that output from that input. Omitting the output parameter will remove all recipes that the input item can produce.
+Die Angabe eines Ausgabeparameters entfernt nur das spezifische Rezept, das zu dieser Ausgabe führt. Wird der Ausgabeparameter nicht aktiviert, werden alle Rezepte entfernt, die der Eingabeartikel produzieren kann.
 
 ## Entferne alle Rezepte
 
-As of Mekanism 9.7.0 it is now possible to remove all Electrolytic Separator recipes. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
+Ab Mekanism 9.7.0 ist es nun möglich, alle Rezepte des Elektrolytischen Trenners zu entfernen. (Das betrifft nicht die Rezepte, welche mittels CraftTweaker hinzugefügt wurden)
 
 ```zenscript
 mods.mekanism.separator.removeAllRecipes();
