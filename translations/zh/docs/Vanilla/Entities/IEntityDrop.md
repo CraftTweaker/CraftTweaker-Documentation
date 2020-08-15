@@ -1,21 +1,21 @@
 # IEntityDrop
 
-An IEntityDrop refers to a drop from an [Entity](/Vanilla/Entities/IEntityDefinition/).
+一个 IEntityDrop 指的是从 [实体](/Vanilla/Entities/IEntityDefinition/) 掉期的。
 
-## Importing the package
+## 导入相关包
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
-`import crafttweaker.entity.IEntityDrop;`
+如果您遇到任何问题，可能需要导入软件包(例如铸造一个 [数组](/AdvancedFunctions/Arrays_and_Loops/)), 这样比抱歉更安全并添加导入。  
+`导入craftminstruer.entity. IEntityDrop；`
 
 ## ZenGetters
 
-You can retrieve this information out of them.
+您可以从他们中检索此信息。
 
-| ZenGetter  | What does it do                                          | Return type                              | Usage             |
-| ---------- | -------------------------------------------------------- | ---------------------------------------- | ----------------- |
-| chance     | Returns the chance of the drop.                          | float                                    | `drop.chance`     |
-| max        | Returns the maximum Amount of the drop.                  | int                                      | `drop.max`        |
-| min        | Returns the minimum Amount of the drop.                  | int                                      | `drop.min`        |
-| playerOnly | Returns whether the drop is playerOnly.                  | boolean                                  | `drop.playerOnly` |
-| range      | Returns the minimum to maximum Amount range of the drop. | IntegerRange                             | `drop.range`      |
-| stack      | Returns the dropped Item.                                | [IItemStack](/Vanilla/Items/IItemStack/) | `drop.stack`      |
+| ZenGetter | 功能               | 退货类型                                     | 用法      |
+| --------- | ---------------- | ---------------------------------------- | ------- |
+| 几率：       | 返回掉落的几率。         | 浮点数                                      | `机会`    |
+| 最大值       | 返回掉落的最大数量。       | 整数                                       | `最大掉落数` |
+| 分钟        | 返回最小掉落量。         | 整数                                       | `分钟`    |
+| 仅播放器      | 返回是否仅播放。         | boolean                                  | `仅限玩家`  |
+| range     | 返回最小值到掉落的最大数量范围。 | 整数范围                                     | `范围`    |
+| 堆栈...     | 返回丢弃的项目。         | [IItemStack](/Vanilla/Items/IItemStack/) | `堆栈...` |
