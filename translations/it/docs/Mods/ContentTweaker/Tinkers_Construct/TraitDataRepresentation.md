@@ -1,25 +1,25 @@
-# Trait Data Representation
+# Rappresentazione Dei Dati Trait
 
-A Trait data representation represents a Tinkers' Construct Trait's Data and is ItemBound.  
-You can get such an object from an existing [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) object by supplying an IItemStack to the `getData` method.
+Una rappresentazione dei dati di Trait rappresenta i dati di un Tinkers' Construct Trait ed è ItemBound.  
+È possibile ottenere un tale oggetto da un oggetto [Trait](/Mods/ContentTweaker/Tinkers_Construct/Trait/) esistente fornendo un IItemStack al metodo `getData`.
 
-## Importing the class
+## Importare la classe
 
-It might be required for you to import the class if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare la classe se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.tconstruct.TraitDataRepresentation`
 
-## ZenGetter and ZenSetter
+## ZenGetter e ZenSetter
 
-| Name        | ZenGetter | ZenSetter | Type   |
-| ----------- | --------- | --------- | ------ |
-| color       | ✔         | ✔         | int    |
-| current     | ✔         | ✔         | int    |
-| extraInfo   | ✔         | ✔         | string |
-| identifier  | ✔         | ✔         | string |
-| level       | ✔         | ✔         | int    |
-| max         | ✔         | ✔         | int    |
-| info        | ✔         |           | string |
-| colorString | ✔         |           | string |
+| Nome         | ZenGetter | ZenSetter | Tipo    |
+| ------------ | --------- | --------- | ------- |
+| colore       | ✔         | ✔         | int     |
+| corrente     | ✔         | ✔         | int     |
+| extraInfo    | ✔         | ✔         | stringa |
+| identifier   | ✔         | ✔         | stringa |
+| livello      | ✔         | ✔         | int     |
+| max          | ✔         | ✔         | int     |
+| info         | ✔         |           | stringa |
+| colorStringa | ✔         |           | stringa |
 
 ## ZenMethods
 
