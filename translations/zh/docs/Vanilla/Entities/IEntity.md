@@ -39,7 +39,7 @@ IEntity extension [ICommander Sender](/Vanilla/Commands/ICommandSender/). 这意
 | 不触发PressurePlate               |                   | boolean                                             |
 | 装备AndArmor                     |                   | 列表<[IItemStack](/Vanilla/Items/IItemStack/)         |
 | 眼睛高度                           |                   | 浮点数                                                 |
-| hasCustomName                  |                   | boolean                                             |
+| hasCustom名称                    |                   | boolean                                             |
 | 急性重力                           |                   | boolean                                             |
 | 直升机装备                          |                   | 列表<[IItemStack](/Vanilla/Items/IItemStack/)         |
 | id                             |                   | 整数                                                  |
@@ -70,7 +70,7 @@ IEntity extension [ICommander Sender](/Vanilla/Commands/ICommandSender/). 这意
 | portalCooldowne                |                   | 整数                                                  |
 | 位置3f                           | getPosition3f()   | [位置3f](/Vanilla/Utils/Position3f/)                  |
 | 漂亮实体                           | getRidingEntity() | *IEntity*                                           |
-| shouldRiderSit                 |                   | boolean                                             |
+| 肩膀胱Sit                         |                   | boolean                                             |
 | 标签                             |                   | 列表<string\>                                        |
 | 团队                             |                   | *[ITeam](/Vanilla/Game/ITeam/)*                     |
 | 湿度                             | isWet()           | boolean                                             |
