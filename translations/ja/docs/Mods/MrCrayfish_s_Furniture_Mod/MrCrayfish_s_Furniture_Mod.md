@@ -1,9 +1,9 @@
-# MrCrayfish's Furniture Mod
+# MrCrayfishの家具Mod
 
-MrCrayfish's Furniture Mod adds unique pieces of furniture that you can use to decorate your builds, some of them are useable appliances and implements.
+MrCrayfishの家具Modは、あなたのビルドを飾るために使用できるユニークな家具の作品を追加します, それらのいくつかは、使用可能な家電製品や実装です.
 
-Although the documentation includes default recipes, please refer to the mod recipe book for the up to date recipes.
+ドキュメントにはデフォルトのレシピが含まれていますが、最新のレシピについては、Modレシピの本を参照してください。
 
-# Important Note
+# 重要な注意
 
-Inputs are matched only on item id and metadata, nbt is ignored.
+入力はアイテム id と metadata, nbt に対してのみマッチします。
