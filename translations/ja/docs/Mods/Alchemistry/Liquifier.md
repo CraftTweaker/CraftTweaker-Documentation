@@ -6,9 +6,9 @@ mods.alchemistry.LiquifierLiquifier
 ```
 
 ## メソッド
-**[IItemStack](/Vanilla/Liquids/ILiquidStack/) output** - The output of the recipe.
+**[IItemStack](/Vanilla/Liquids/ILiquidStack/) 出力** - レシピの出力。
 
-**[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
+**[IItemStack](/Vanilla/Items/IItemStack/) input** - レシピの入力。
 
 ## 追加
 ```zenscript
