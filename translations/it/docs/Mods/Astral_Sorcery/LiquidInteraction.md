@@ -1,19 +1,19 @@
-# LiquidInteraction
+# Interazione Liquidazione
 
-The liquidInteraction package is used to add Liquid interactions (like lava and liquid starlight) to AS chalices.
+Il pacchetto liquidInteraction viene utilizzato per aggiungere interazioni liquide (come lava e luce a stella liquida) ai calici AS.
 
-## Importing the package
+## Importazione del pacchetto
 
-If you want to import the package, here you go:
+Se vuoi importare il pacchetto, qui vai:
 
 ```zenscript
 import mods.astralsorcery.LiquidInteraction;
 ```
 
-## Remove interaction
+## Rimuovi interazione
 
-This function removes the first recipe it finds that uses the given [liquids](/Vanilla/Liquids/ILiquidStack/) and returns the given output [stack](/Vanilla/Items/IItemStack/).  
-If you leave out the output, it will remove the first recipe that uses the two given liquids regardless of their output.
+Questa funzione rimuove la prima ricetta che trova che utilizza i [liquidi](/Vanilla/Liquids/ILiquidStack/) dati e restituisce l'output [stack](/Vanilla/Items/IItemStack/)dato.  
+Se si esclude l'uscita, rimuoverà la prima ricetta che utilizza i due liquidi dati indipendentemente dalla loro uscita.
 
 ```zenscript
 //LiquidInteraction.removeInteraction(ILiquidStack liquid1, ILiquidStack liquid2, @Optional IItemStack output);
@@ -21,13 +21,13 @@ LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>);
 LiquidInteraction.removeInteraction(<liquid:lava>, <liquid:starlight>, <minecraft:obsidian>);
 ```
 
-## Recipe addition
+## Aggiunta ricetta
 
-Adds a liquid interaction to the chalice-interactions
+Aggiunge un'interazione liquida alle interazioni calice-
 
 [FluidStack](/Vanilla/Liquids/ILiquidStack/) amounts count as the amount of liquid that will be consumed if an interaction occurs.  
-chance1 and chance2 define the chances the input fluids input1 and input2 are consumed respectively.  
-weight determines how likely this is to be selected in comparison to the other liquid interactions registered for a given pair of fluid-inputs
+possibilità1 e possibilità2 definire le probabilità che i fluidi in ingresso input1 e input2 siano consumati rispettivamente.  
+peso determina la probabilità che questo sia selezionato rispetto alle altre interazioni liquide registrate per una data coppia di input fluidi
 
 ```zenscript
 //LiquidInteraction.addInteraction(ILiquidStack liquidIn1, float chanceConsumption1, ILiquidStack liquidIn2, float chanceConsumption2, int weight, IItemStack output);
