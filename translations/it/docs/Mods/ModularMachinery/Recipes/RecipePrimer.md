@@ -1,37 +1,37 @@
 # RecipePrimer
 
-A RecipePrimer Object is the actual recipe. You can get such an object from the [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) and use its methods to actually give the recipe ins and outs and stuff.
+Un oggetto RecipePrimer è la ricetta attuale. È possibile ottenere un tale oggetto dal [RecipeBuilder](/Mods/ModularMachinery/Recipes/RecipeBuilder/) e utilizzare i suoi metodi per dare effettivamente le ricette dentro e fuori e roba.
 
 ## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
+Potrebbe essere necessario importare il pacchetto se si incontrano problemi (come lanciare un [Array](/AdvancedFunctions/Arrays_and_Loops/)), quindi meglio essere sicuri che spiacenti e aggiungere l'importazione.  
 `import mods.modularmachinery.RecipePrimer;`
 
 ## ZenMethods
 
-Each of these methods does two things: First, it modifies the object, then it returns the object itself (as another RecipePrimer).  
-This means you can either call each method on its own, or make one call where you append each pieces of code (example below).
+Ognuno di questi metodi fa due cose: in primo luogo, modifica l'oggetto, quindi restituisce l'oggetto stesso (come un altro RecipePrimer).  
+Questo significa che puoi chiamare ogni metodo da solo, o fai una chiamata dove aggiungi ogni pezzo di codice (esempio di seguito).
 
-### Setting the chance
+### Impostare la possibilità
 
 ```zenscript
-setChance(float chance);
+setChance(galleggiante);
 ```
 
-### Adding Energy and fuel requirements
+### Aggiungere i requisiti di energia e carburante
 
 ```zenscript
 addEnergyPerTickInput(int perTick);
 addEnergyPerTickOutput(int perTick);
 
 
-//Typo? This is what the sourcecode sais, if it doesn't work try Input
+//Typo? Questo è ciò che il codice sorgente sais, se non funziona prova Input
 addFuelItemInout(int requiredTotalBurnTime);
 ```
 
-### Adding inputs
+### Aggiunta input
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as input.
+Puoi aggiungere [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) o [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) come input.
 
 ```zenscript
 addItemInput(IItemStack stack);
@@ -45,7 +45,7 @@ addFluidInput(ILiquidStack stack);
 
 ### Adding outputs
 
-You can add [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) or [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) as output.
+Puoi aggiungere [IItemStacks](/Vanilla/Items/IItemStack/), [IOreDictEntries](/Vanilla/OreDict/IOreDictEntry/) o [ILiquidStacks](/Vanilla/Liquids/ILiquidStack/) come output.
 
 ```zenscript
 addItemOutput(IItemStack stack);
@@ -57,17 +57,17 @@ addItemOutput(IOreDictEntry oreDict, int amount);
 addFluidOutput(ILiquidStack stack);
 ```
 
-### Building the recipe
+### Costruire la ricetta
 
-After you have done your changes above, you need to build the recipe so that it will actually do something.
+Dopo aver fatto i tuoi cambiamenti sopra, è necessario costruire la ricetta in modo che effettivamente farà qualcosa.
 
 ```zenscript
-build();
+costruzione();
 ```
 
 ## Esempio
 
-You can either call each method on its own, or play codegolf:
+È possibile chiamare ogni metodo da solo, o giocare codegolf:
 
 ```zenscript
 val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", "associatedMachineRegistryName", 1000, 0);
@@ -75,7 +75,7 @@ val reci = mods.modularmachinery.RecipeBuilder.newBuilder("recipeRegistryName", 
 reci.addEnergyPerTickInput(100);
 reci.addItemInput(<ore:ingotIron>);
 reci.addItemOutput(<minecraft:gold_ingot>);
-reci.build();
+reci. uild();
 
 
 
