@@ -1,27 +1,27 @@
-# Powered Thingies :: Tweaker Class
+# 强化Thingies :: 调弱类
 
-This is the entry point used to get instances of the individual `Tweaker` classes for each machine.
+这是用于获取每台机器的 `调弱` 类实例的切入点。
 
 ### 导入
 
 ```zenscript
-import mods.poweredthingies.Tweaker;
+导入 mods.poweredthingies.微调；
 ```
 
-### Getting Machine Specific Tweakers
+### 获取机器特定调整
 
 ```zenscript
-var compoundMaker = Tweaker.compoundTweaker();
-var fluidCompound = Tweaker.fluidCompoundTweaker();
-var fluidBurnerFuel = Tweaker.fluidBurnerFuelTweaker();
-var fluidBurnerCoolant = Tweaker.fluidBurnerCoolantTweaker();
-var itemCompoundProducer = Tweaker.itemCompoundProducerTweaker();
-var incinerator = Tweaker.incineratorTweaker();
-var itemLiquefier = Tweaker.itemLiquefierTweaker();
-var poweredKiln = Tweaker.poweredKilnTweaker();
-var powderMaker = Tweaker.powderMakerTweaker();
+var compoundMaker = Tweeper.compoundTinstrer();
+var fluidCompoundCompound = Tweeper.fluidCompoundTweeper();
+var fluidBurnerFuelTinstrer();
+var fluidBurnerCoolant = Tweiner.fluidBurnerCoolantTweeper();
+var compoundProducer = Tweiner. ComptemoundProducerTweeper();
+var incinerator = Tweeper.incineratorTweeper();
+var itemLiquefier = TweepfierTweeper();
+var poweredKiln = TweeplynTweeper();
+var powderMaker = Tweeper.powerMakerTweeper();
 ```
 
-### Reasons why this class even exists
+### 为什么这个班级存在的原因
 
-Mainly because I love using base classes and Kotlin and both those things don't import well in CT. Or I'm too retarded to make it work. So... you are stuck with using this instead of having direct access to individual classes for each machine.
+主要因为我喜欢使用基础类和 Kotlin以及这两种东西都不会很好地导入到CT中。 或者我太迟，不能让它正常工作。 好... 您被困在使用这个设备上，而不是直接访问每台机器的班级。
