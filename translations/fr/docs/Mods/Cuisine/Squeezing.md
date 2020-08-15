@@ -1,6 +1,6 @@
 # Basin Squeezing
 
-## Addition
+## Ajouter
 
 ```zenscript
 import mods.cuisine.BasinSqueezing;
