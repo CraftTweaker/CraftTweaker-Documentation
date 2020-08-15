@@ -1,12 +1,12 @@
-# Laser Drill
+# Trapano Laser
 
-### Importing
+### Importazione
 
 ```zenscript
 import mods.industrialforegoing.LaserDrill;
 ```
 
-### Adding
+### Aggiunta
 
 ```zenscript
 LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
@@ -14,7 +14,7 @@ LaserDrill.add(int itemLensMetaColor, IItemStack output, int ItemWeight);
 LaserDrill.add(1, <minecraft:stone>, 10);
 ```
 
-### Removing
+### Rimozione
 
 ```zenscript
 LaserDrill.remove(IItemStack output);
