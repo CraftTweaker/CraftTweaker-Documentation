@@ -1,6 +1,6 @@
-# Electrolyzer
+# 电解器
 
-# Package
+# 所属包名
 ```zenscript
 `mods.alchemistry.Electrolyzer`
 ```
