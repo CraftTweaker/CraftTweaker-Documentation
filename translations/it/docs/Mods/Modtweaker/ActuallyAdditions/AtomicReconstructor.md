@@ -1,17 +1,17 @@
-# Atomic Reconstructor
+# Ricostruttore Atomico
 
-## Package
+## Pacchetto
 
 `mods.actuallyadditions.AtomicReconstructor`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.actuallyadditions.AtomicReconstructor.addRecipe(IItemStack output, IItemStack input, int energyUsed);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<minecraft:fire_charge>, <minecraft:coal:1>, 1000);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
 //mods.actuallyadditions.AtomicReconstructor.removeRecipe(IItemStack output);
