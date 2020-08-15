@@ -1,11 +1,11 @@
-# Fusion
+# Fusione
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.fusion`
 
 ## Aggiunta Di Ricette
 ```zenscript
-mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, double comboTime, double comboPower, double comboHeatVar, @Optional double processRadiation]);
+mods.nuclearcraft.fusion.addRecipe([fluidInput1, fluidInput2, fluidOutput1, fluidOutput2, fluidOutput3, fluidOutput4, doppio comboTime, doppio comboPower, doppio comboHeatVar, @Optional double processRadiation]);
 ```
 
 ## Rimozione Ricette
