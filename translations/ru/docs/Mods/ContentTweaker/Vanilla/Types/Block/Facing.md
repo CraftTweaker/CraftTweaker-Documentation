@@ -1,23 +1,23 @@
-# Facing
+# Лицевой
 
-A CoT Facing is an enumeration of a [block's](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) possible directions
+Котировка - это перечисление [блоков](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/) возможных направлений
 
-## Importing the package
+## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
 `import mods.contenttweaker.Facing;`
 
-## Enumerations
+## Перечисление
 
-Facing can be of those six values:
+С учетом этих шести ценностей:
 
-- north
-- east
-- south
-- west
-- down
-- up
+- север
+- восток
+- юг
+- запад
+- вниз
+- вверх
 
-## Uses
+## Использовано
 
-A Hand's main use is in a [IItemUse Function](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
+Основное использование руки - в [Функции IItemUse](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemUse/).
