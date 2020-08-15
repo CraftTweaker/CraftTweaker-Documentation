@@ -1,15 +1,15 @@
-# IContainer
+# Contenedor
 
-An IContainer is an item container that is able to hold several itemStacks such as a chest.
+Un IContenedor es un contenedor de objetos que puede contener varias pilas de objetos como un cofre.
 
 ## ZenGetter/Setter
 
-- `container.containerSize` returns the container size as int
-- `container.getStack(int index)` returns the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.setStack(int index, IItemStack stack)` sets the [IItemStack](/Vanilla/Items/IItemStack/) at the given index.
-- `container.asString()` `container as string` executes `toString` on the container object.
+- `container.containerSize` devuelve el tamaño del contenedor como int
+- `container.getStack(int index)` devuelve el [ItemStack](/Vanilla/Items/IItemStack/) en el índice dado.
+- `container.setStack(int index, ItemStack stack)` establece el [ItemStack](/Vanilla/Items/IItemStack/) en el índice dado.
+- `container.asString()` `container como string` ejecuta `toString` en el objeto contenedor.
 
 ## Iterable<IItemStack\>
 
-An IContainer is an [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/).  
-This means that you can use a for-loop on the container to iterate over its [IItemStacks](/Vanilla/Items/IItemStack/).
+Un IContenedor es un [`Iterable<IItemStack>`](/Vanilla/Items/IItemStack/).  
+Esto significa que puedes usar un bucle for-loop en el contenedor para iterar sobre sus [ItemStacks](/Vanilla/Items/IItemStack/).
