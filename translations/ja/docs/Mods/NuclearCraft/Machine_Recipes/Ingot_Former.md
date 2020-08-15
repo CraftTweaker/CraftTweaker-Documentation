@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.ingot_former`
 
-## Adding Recipes
+## レシピを追加中
 ```zenscript
 mods.nuclearcraft.ingot_former.addRecipe([fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## レシピを削除
 ```zenscript
 mods.nuclearcraft.ingot_former.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.ingot_former.removeRecipeWithOutput([itemOutput]);
