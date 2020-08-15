@@ -1,39 +1,39 @@
-# Microwave
+# Microonde
 
-The Microwave heats up food items.
+Il Microonde riscalda gli oggetti alimentari.
 
-## Default Microwave Recipes
+## Ricette Microonde Predefinite
 
-- Beef -> Cooked Beef
-- Porkchop -> Cooked Porkchop
-- Potato -> Baked Potato
-- Chicken -> Cooked Chicken
-- Fish -> Cooked Fish
-- Salmon -> Cooked Salmon
-- Flesh -> Cooked Flesh
+- Manzo -> Carne Cotta
+- Carne Di Maiale -> Cotta Di Maiale
+- Patata -> Patata Al Forno
+- Pollo -> Pollo Cotto
+- Pesce -> Pesce Cotto
+- Salmone -> Salmone Cotto
+- Carne -> Carne Cotta
 
 ## Rimozione
 
-## Remove matching oven recipes.
+## Rimuovere le ricette del forno corrispondenti.
 
 ```zenscript
-mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient input);
+mods.cfm.Oven.remove(@Optional final IIngredient output, @Optional final IIngredient);
 
-// Remove recipes that result in Cooked Flesh
-mods.cfm.Oven.remove(<cfm:item_flesh_cooked>);
-// Remove recipes that require a Potato
+// Rimuovi le ricette che portano a Cooked Flesh
+mods.cfm.Oven. emove(<cfm:item_flesh_cooked>);
+// Rimuovi ricette che richiedono una patata
 mods.cfm.Oven.remove(null,<minecraft:potato>);
-// Remove all recipes
+// Rimuovi tutte le ricette
 mods.cfm.Oven.remove();
 ```
 
 ## Aggiunta
 
-## Add an oven recipe.
+## Aggiunga una ricetta di forno.
 
 ```zenscript
-mods.cfm.Oven.addRecipe(@Nonnull final IItemStack output, @Nonnull final IItemStack input);
+mods.cfm.Oven.addRecipe(@Nonnull finale IItemStack output, @Nonnull finale IItemStack input);
 
-// Add a recipe that makes two apples from one stick
-mods.cfm.Oven.addRecipe(<minecraft:apple>.withAmount(2),<minecraft:stick>);
+// Aggiungi una ricetta che fa due mele da un bastone
+mods. fm.Oven.addRecipe(<minecraft:apple>.withAmount(2),<minecraft:stick>);
 ```
