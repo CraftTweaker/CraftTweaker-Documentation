@@ -4,13 +4,13 @@ This class is the main handler for creating new [Stages](/Mods/GameStages/ZenSta
 
 You can find more information and the latest source for the class [here](https://github.com/DarkPacks/ZenStages/blob/master/src/main/java/uk/artdude/zenstages/stager/ZenStager.java).
 
-## Importing the package
+## Importando el paquete
 
 ZenStager : `import mods.zenstages.ZenStager;`
 
 Stage *(Recommended to import also)* : `import mods.zenstages.Stage;`
 
-## Methods
+## Métodos
 
 ### Create Stage
 
@@ -136,7 +136,7 @@ Supported Types:
 - mob
 - mod
 - mulitblock
-- ore
+- mineral
 - package
 - recipename
 - tinker
