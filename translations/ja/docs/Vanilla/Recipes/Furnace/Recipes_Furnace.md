@@ -2,9 +2,9 @@
 
 CraftTweaker allows you to `Add` and `Remove` Furnace recipes and change the fuel value of items.
 
-## Recipes
+## レシピ
 
-### Removal
+### 削除
 
 There are 2 ways to remove Furnace recipes, being:
 
@@ -27,7 +27,7 @@ There also is a third way of removing furnace recipes, though this one will remo
 furnace.removeAll();
 ```
 
-### Addition
+### 加算
 
 There are 2 commands for adding furnace recipes:
 
@@ -45,9 +45,9 @@ The first syntax will add a Furnace recipe that will give 0 xp on smelt.
 
 The second syntax will add a Furnace recipe that will give `xp` xp on smelt.
 
-## Fuel
+## 燃料
 
-### Set
+### 設定
 
 The command for setting fuel values is:
 
@@ -69,9 +69,9 @@ furnace.getFuel(IItemStack item);
 
 This will return the burn value as an Integer
 
-## Examples
+## 使用例
 
-### Removal
+### 削除
 
 This will remove all Furnace recipes that outputs `<minecraft:glass>`.
 
@@ -85,7 +85,7 @@ This will remove all Furnace recipes `<minecraft:quartz>` that use `<minecraft:q
 furnace.remove(<minecraft:quartz>, <minecraft:quartz_ore>);
 ```
 
-### Addition
+### 加算
 
 This will add a Furnace recipe that will output a `<minecraft:golden_apple>` when a `<minecraft:apple>` is smelted.
 
@@ -99,7 +99,7 @@ This will add a Furnace recipe that will output a `<minecraft:speckled_melon>` w
 furnace.addRecipe(<minecraft:speckled_melon>, <minecraft:melon>, 1500);
 ```
 
-### Fuel
+### 燃料
 
 This will set the Fuel value of `<minecraft:rotten_flesh>` to `100`.
 
