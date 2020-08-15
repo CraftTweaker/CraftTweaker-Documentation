@@ -1,14 +1,14 @@
-# Alloy Furnace
+# Four en Alliage
 
-## Importing the Package
-`mods.nuclearcraft.alloy_furnace`
+## Importation du paquet en cours
+`Four allié`
 
-## Adding Recipes
+## Ajout de recettes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.addRecipe([itemInput1, itemInput2, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Suppression des recettes
 ```zenscript
 mods.nuclearcraft.alloy_furnace.removeRecipeWithInput([itemInput1, itemInput2]);
 mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([itemOutput1]);
