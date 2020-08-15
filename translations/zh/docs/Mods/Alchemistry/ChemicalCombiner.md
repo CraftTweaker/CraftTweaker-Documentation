@@ -1,8 +1,8 @@
 # Chemical Combiner
 
-# Package
+# 所属包名
 ```zenscript
-mods.alchemistry.Combiner
+mods.alchemistry.合并器
 ```
 
 ## 方法
