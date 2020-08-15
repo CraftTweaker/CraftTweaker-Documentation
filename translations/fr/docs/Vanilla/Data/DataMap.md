@@ -1,62 +1,62 @@
 # DataMap
 
-A Map, sometimes also called an Associative Array is a data structure that allows you to store multiple items.  
-Unlike an Array however, you can also give each of these item a key to call upon.  
-The DataMap expands [IData](/Vanilla/Data/IData/), so each DataMap is IData, you might need this info later.
+Une carte, parfois aussi appelée un tableau associatif est une structure de données qui vous permet de stocker plusieurs éléments.  
+Contrairement à un tableau, cependant, vous pouvez également donner à chacun de ces éléments une clé à appeler.  
+Le DataMap agrandit [IData](/Vanilla/Data/IData/), donc chaque DataMap est IData, vous pourriez avoir besoin de cette information plus tard.
 
-## Creating a map:
+## Création d'une carte :
 
-A Map is a special kind of [IData](/Vanilla/Data/IData/), so at the very last you'll need to import that interface:  
-`import crafttweaker.data.IData;`
+Une carte est un type spécial de [IData](/Vanilla/Data/IData/), donc au dernier moment, vous devrez importer cette interface :  
+`import crafttweaker. ata.IData ;`
 
-You may have noticed that no type can be converted into a map (nor can map be converted to any type besides Strings), so there has to be another way of creating them!  
-There is:
+Vous avez peut-être remarqué qu'aucun type ne peut être converti en une carte (ni ne peut être converti en un type autre que Strings), donc il doit y avoir une autre façon de les créer!  
+Il y a :
 
 ```zenscript
-import crafttweaker.data.IData;
+import crafttweaker.data.IData ;
 
 val myFirstMap = {key1: "value1",
                   key2: "value2",
-                  key3: 3} as IData;
+                  key3: 3} as IData ;
 ```
 
-The thing to remember is:  
-Maps are handled as `Map<String,IData>`!  
-That means your keys should not contain characters that normal CT strings can't handle.  
-It also means that while the key is a string, the value is another [IData](/Vanilla/Data/IData/) object.  
-You can even nest maps inside maps (that's what a lot of NBT-Data do):
+La chose à retenir est :  
+Les cartes sont traitées comme `Carte<String,IData>`!  
+Cela signifie que vos clés ne doivent pas contenir de caractères que les chaînes CT normales ne peuvent gérer.  
+Cela signifie également que si la clé est une chaîne, la valeur est un autre objet [IData](/Vanilla/Data/IData/) .  
+Vous pouvez même imbriquer des cartes à l'intérieur des cartes (c'est ce que font beaucoup de NBT-Data):
 
 ```zenscript
 val nestedMap = { key1: 
                     {
-                        key1: "hello"
+                        key1: "Bonjour"
                     }
-                } as IData;
+                } en tant qu'IData;
 ```
 
-## Retrieving Members
+## Récupération des membres
 
-Unfortunately, Maps created as above are immutable, so you cannot change their members.  
-To retrieve a Map's member you need to know its key name. Then you can do this:
+Malheureusement, les cartes créées comme ci-dessus sont immuables, vous ne pouvez donc pas changer leurs membres.  
+Pour récupérer un membre de la carte, vous devez connaître son nom de clé. Ensuite, vous pouvez faire ceci:
 
 ```zenscript
 val mySecondMap = {key1: "value1",
-                   key2: "value2",
-                   key3: 3} as IData;
+                   clé2: "value2",
+                   clé3: 3} comme IData ;
 
-//Retrieves the member called "key1"
-var k1 = mySecondMap.key1 as IData;
+//Récupère le membre appelé "key1"
+var k1 = mySecondMap. ey1 comme IData ;
 print(k1.asString());
 
-//Retrieves the member called "key2"
-var k2 = mySecondMap.memberGet("key2") as IData;
+//Récupère le membre appelé "key2"
+var k2 = mySecondMap.memberGet("key2") comme IData ;
 print(k2.asString());
 ```
 
-## Modifying maps
+## Modifier les cartes
 
-You can add or substract maps from each other to get a new map with changed values.  
-This even works for nested maps!
+Vous pouvez ajouter ou soustraire des cartes les unes des autres pour obtenir une nouvelle carte avec des valeurs modifiées.  
+Cela fonctionne même pour les cartes imbriquées !
 
 ```zenscript
 val map1 as IData = {
@@ -69,7 +69,7 @@ val map2 as IData = {
     key3 : "override"
 };
 
-print((map1 + map2).asString()); //Prints {key1 : "hello", key2 : "bye", key3 : "override"}
+print((map1 + map2). sString()); //Imprime {key1 : "hello", key2 : "bye", key3 : "override"}
 
 
 
@@ -79,11 +79,11 @@ val map3 as IData = {
     key3 : "three"
 };
 
-print((map3 - "key1").asString()); //Prints {key2 : "two", key3 : "three"}
+print((map3 - "key1"). sString()); //Imprime {key2 : "two", key3 : "three"}
 
 val map4 as IData = {
     key3 : "anything"
 };
 
-print((map3 - map4).asString()); //Prints {key1 : "two", key2 : "two"}
+print((map3 - map4). sString()); //Imprime {key1 : "two", key2 : "two"}
 ```
