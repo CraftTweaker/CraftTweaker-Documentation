@@ -1,31 +1,31 @@
-# PlayerPickupXp
+# Odbiór gracza
 
-The PlayerPickupXp Event is fired whenever a player picks up experience orbs.
+Wydarzenie PickupXp Gracza jest uruchamiane za każdym razem, gdy gracz podnosi orby doświadczenia.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerPickupXpEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerPickupXpEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerPickupXp Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerPickupXp zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter  | Return Type                               |
-| ---------- | ----------------------------------------- |
-| `canceled` | boolean                                   |
-| `player`   | [IPlayer](/Vanilla/Players/IPlayer/)      |
-| `entityXp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
-| `xp`       | float                                     |
+| ZenGetter    | Typ zwrotu                                |
+| ------------ | ----------------------------------------- |
+| `anulowane`  | boolean                                   |
+| `gracz`      | [IPlayer](/Vanilla/Players/IPlayer/)      |
+| `podmiot Xp` | [IEntityXp](/Vanilla/Entities/IEntityXp/) |
+| `xp`         | zmiennoprzecinkowe                        |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` ustawia wydarzenie jako anulowane.
