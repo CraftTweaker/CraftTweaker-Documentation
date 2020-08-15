@@ -6,10 +6,10 @@ Bear in mind that they still can!
 
 ## クラスのインポート
 
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
+エラーを避けるためにクラスを [インポート](/AdvancedFunctions/Import/) する必要があるかもしれません。  
 `import crafttweaker.event.IPlayerEvent;`
 
-## What can be done with these
+## これらを使ってできること
 
-- `event.process();` method, returns void (nothing)
-- `event.processed;` getter, returns a bool
+- `event.process();` メソッド, void (nothing) を返します
+- `event.processed;` getter, bool を返す
