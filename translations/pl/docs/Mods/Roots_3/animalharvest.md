@@ -1,21 +1,21 @@
 ### Klasa
 
 ```zenscript
-import mods.roots.AnimalHarvest;
+importuj mods.roots.AnimalHarvest;
 ```
 
 #### Metody
 
 ```zenscript
-void addEntity(
-  IEntityDefinition entity // the entity to generate drops for
+Unieważnij addEntity(
+  IEntityDefinition entity // the entity to create drops for
 );
 ```
 
 * * *
 
 ```zenscript
-void removeEntity(
+Unieważnij removeEntity(
   IEntityDefinition entity // the entity to stop generating drops for
 );
 ```
@@ -23,18 +23,18 @@ void removeEntity(
 * * *
 
 ```zenscript
-void addFish(
-  string name,     // the name of the type of fish
-  IItemStack fish, // the type of fish as an item stack
-  int weight       // the weight of the fish as an integer
+Unieważnij addFish(
+  nazwa ciągu, // nazwa typu ryby
+  IItemStack, // typ ryb jako stos przedmiotów
+  int waga // masa ryb jako liczba całkowita
 );
 ```
 
 * * *
 
 ```zenscript
-void removeFish(
-  IItemStack fish // the type of fish to remove as an item stack
+Unieważnij removeFish(
+  IItemStack ryba // typ ryby do usunięcia jako stos przedmiotów
 );
 ```
 
@@ -45,17 +45,17 @@ void removeFish(
 ```zenscript
 import mods.roots.AnimalHarvest;
 
-// Adds an enderman as a target for the Animal Harvest ritual.
-// Generally it would be better to use animals.
+// Dodaje endermana jako cel rytuału zbiorów zwierząt.
+// Generalnie lepiej byłoby wykorzystywać zwierzęta.
 AnimalHarvest.addEntity(<entity:minecraft:enderman>);
 
-// Prevents the entity from giving drops during the ritual
-AnimalHarvest.removeEntity(<entity:minecraft:cow>);
+// Zapobiega oddawaniu spadków podczas rytuału
+Zwierzęta. emoveEntity(<entity:minecraft:cow>);
 
-// Adds magma cream as a type of fish with a weight of 20 (all weights based on 
-// the standard fishing.json loot table)
+// Dodaje magma krem jako rodzaj ryb o wadze 20 (wszystkie wagi oparte na 
+// standardowym połowie. syn loot table)
 AnimalHarvest.addFish("magma_cream", <minecraft:magma_cream>, 20);
 
-// Removes pufferfish from the Animal Harvest ritual
+// Usuwa pufferryty z rytuału zbiorów zwierząt
 AnimalHarvest.removeFish(<minecraft:fish:3>);
 ```
