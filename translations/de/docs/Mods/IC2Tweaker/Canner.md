@@ -1,6 +1,6 @@
 # Canner
 
-## Package
+## Paket
 
 `import mods.ic2.Canner;`
 
