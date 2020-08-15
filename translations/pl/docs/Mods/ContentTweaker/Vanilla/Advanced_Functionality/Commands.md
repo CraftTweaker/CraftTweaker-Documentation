@@ -1,27 +1,27 @@
-# Commands
+# Polecenia
 
-You can use this class to send a command, you cannot use this class to create new commands! Look at [CommandEvent](/Vanilla/Events/Events/CommandEvent/) to add new commands. You can also use a [ICommandManager](/Vanilla/Commands/ICommandManager/).
+Możesz użyć tej klasy do wysłania polecenia, nie możesz użyć tej klasy do tworzenia nowych poleceń! Spójrz na [CommandEvent](/Vanilla/Events/Events/CommandEvent/) , aby dodać nowe komendy. Możesz również użyć [ICommandManager](/Vanilla/Commands/ICommandManager/).
 
-## Importing the package
+## Importowanie pakietu
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Commands;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.Commands;`
 
-## Calling a command
+## Wywołanie polecenia
 
-This is the only thing you can do with the Commands package.
+To jedyna rzecz, którą możesz zrobić z pakietem poleceń.
 
 ```zenscript
-call(String command, IPlayer player, IWorld world)
-call(String command, IPlayer player, IWorld world, boolean logToChat, boolean overridePermissions)
+wywołanie (polecenie string, odtwarzacze IPlayera, Świat IWorld)
+wywołanie (polecenie String, odtwarzacze IPlayera, IWorld Świat, Boolean logToChat, nadpisywanie uprawnień)
 ```
 
-Parameters:
+Parametry:
 
-- String command → The command to be executed
-- [IPlayer](/Vanilla/Players/IPlayer/) player → The Player executing the command
-- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) world → The world the command is executed in
-- boolean logToChat → Should the command output appear in the MC chat?
-- boolean overridePermissions should the command be executed regardless of the required permission level?
+- Polecenie String → Polecenie do wykonania
+- [IPlayer](/Vanilla/Players/IPlayer/) gracz → Gracz wykonujący polecenie
+- [IWorld](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Commands/) Świat → Świat, w którym polecenie jest wykonywane
+- logToChat boolean → Czy polecenie powinno pojawić się na czacie MC?
+- logiczny nadpisanie uprawnień powinno być wykonywane niezależnie od wymaganego poziomu uprawnień?
 
-The two booleans either both need to be added or omitted. If you call the command without them, they will be true.
+Obie wartości logiczne należy dodać lub pominąć. Jeśli dzwonisz do komendy bez nich, będą one prawdziwe.
