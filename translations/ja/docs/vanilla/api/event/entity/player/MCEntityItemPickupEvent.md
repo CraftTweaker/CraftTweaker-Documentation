@@ -1,9 +1,9 @@
 # MCEntityItemPickupEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.MCEntityItemPickupEvent
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.MCEntityItemPickupEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCEntityItemPickupEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCEntityItemPickupEvent>);
 ```
-| Parameter | Type                                                                                                                                        | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCEntityItemPickupEvent](/vanilla/api/event/entity/player/MCEntityItemPickupEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                         | 説明                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCEntityItemPickupEvent](/vanilla/api/event/entity/player/MCEntityItemPickupEvent)> | No description provided |
 
 
 
-## Methods
+## メソッド
 ### getEntityPlayer
 
 Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
@@ -75,9 +75,9 @@ myMCEntityItemPickupEvent.isCanceled();
 myMCEntityItemPickupEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ  | タイプ      | 説明                      |
+| ------ | -------- | ----------------------- |
+| cancel | boolean型 | No description provided |
 
 
 
