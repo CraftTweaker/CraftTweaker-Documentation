@@ -1,66 +1,66 @@
-# Fluid
+# Płyn
 
-This allows you to add fluids to the game!
+Pozwala to na dodawanie płynów do gry!
 
-## Create the Fluid Representation
+## Utwórz Reprezentację Płynną
 
-Before you can add the fluid, you need to create a Fluid Representation which will allow you to set the properties of the fluid you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Zanim będziesz mógł dodać płyn, musisz utworzyć Reprezentację Płynną, która pozwoli Ci ustawić właściwości płynu, który chcesz dodać.  
+To gdzie znajduje się [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) w:
 
 ```zenscript
 mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, int color);
-mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, CTColor color);
+mods.contenttweaker.VanillaFactory.createFluid(String unlocalizedName, kolor CTColor);
 ```
 
-## Import the representation Package
+## Importuj pakiet reprezentacyjny
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.Fluid;`
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakieś problemy, więc lepiej być bezpiecznym niż przepraszamy i dodać import.  
+`zaimportuj mods.contenttweaker.Fluid;`
 
-## ZenProperties
+## Właściwości ZenWłaściwości
 
-To get/set the properties you can either use the respecting ZenGetters/Setters or the ZenMethods:
+Aby uzyskać/ustawić właściwości, możesz użyć szanującego ZenGetters/Setters lub ZenMethods:
 
 ```zenscript
-//property name: density
+//nazwa własności: gęstość
 //ZenGetter
-print(fluid.density);
+print(płyn.gęstość);
 //ZenSetter
-fluid.density = 500;
+płyn.density = 500;
 //ZenMethods
-fluid.getDensity();
-fluid.setDensity(1000);
+płyn.getDdensity();
+płyn.setDgęstość (1000);
 ```
 
-| Property Name   | Type                                                                                     | Required | Default Value                    | Description/Notes                                                                    |
-| --------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------ |
-| unlocalizedName | string                                                                                   | Yes      |                                  | Name, should be all lowercase                                                        |
-| density         | int                                                                                      | No       | 1000                             | How fast you can walk in the fluid                                                   |
-| gaseous         | boolean                                                                                  | No       | false                            | Is the fluid gaseous (flows upwards instead of downwards)?                           |
-| luminosity      | int                                                                                      | No       | 0                                | The light-level emitted by the fluid                                                 |
-| temperature     | int                                                                                      | No       | 300                              | The Fluid's temperature                                                              |
-| color           | int                                                                                      | Yes      |                                  | The Fluid's color-code                                                               |
-| colorize        | boolean                                                                                  | No       | true                             | Is the fluid's color-code applied?                                                   |
-| rarity          | string                                                                                   | No       | COMMON                           | How rare a fluid is, determines ToolTip color ("COMMON", "UNCOMMON", "RARE", "EPIC") |
-| viscosity       | int                                                                                      | No       | 1000                             | How quickly the fluid spreads                                                        |
-| fillSound       | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_FILL               | The sound played when the fluid is picked up with a Bucket                           |
-| emptySound      | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | No       | ITEM_BUCKET_EMPTY              | The sound played when the fluid is placed                                            |
-| vaporize        | boolean                                                                                  | No       | false                            | Does vaporize when placed in the Nether?                                             |
-| stillLocation   | string                                                                                   | No       | contenttweaker:fluids/fluid      | The Location where to find the texture for the still fluid                           |
-| flowingLocation | string                                                                                   | No       | contenttweaker:fluids/fluid_flow | The Location where to find the texture for the flowing fluid                         |
-| material        | [IMaterialDefinition](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)     | No       | WATER                            | The Material the fluid is made of                                                    |
+| Nazwa Właściwości       | Typ                                                                                      | Wymagane | Wartość domyślna                 | Opis/Uwagi                                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------------------- | -------- | -------------------------------- | ------------------------------------------------------------------------------------------- |
+| unlocalizedName         | ciąg znaków                                                                              | Tak      |                                  | Nazwa, powinna być wszystkimi małymi literami                                               |
+| gęstość                 | odcień                                                                                   | Nie      | 1000                             | Jak szybko można przejść do płynu                                                           |
+| gazowe                  | boolean                                                                                  | Nie      | fałszywy                         | Czy płyn jest gazowy (przepływ w górę zamiast w dół)?                                       |
+| luminancja              | odcień                                                                                   | Nie      | 0                                | Poziom światła emitowanego przez płyn                                                       |
+| temperatura             | odcień                                                                                   | Nie      | 300                              | Temperatura płynu                                                                           |
+| kolor                   | odcień                                                                                   | Tak      |                                  | Kod koloru płynu                                                                            |
+| koloryzuj               | boolean                                                                                  | Nie      | prawda                           | Czy zastosowano kod koloru płynu?                                                           |
+| rzadkość                | ciąg znaków                                                                              | Nie      | WSPÓLNE                          | Jak rzadko występuje płyn określający kolor ToolTip ("WSPÓLNE", "UNCOMMON", "RZEC", "EPIC") |
+| lepkość                 | odcień                                                                                   | Nie      | 1000                             | Jak szybko płyn spada                                                                       |
+| wypełnij dźwięk         | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | Nie      | & Pliki                          | Dźwięk odtwarzany, gdy płyn jest podnoszony za pomocą wiadra                                |
+| pusty dźwięk            | [ISoundEventDefinition](/Mods/ContentTweaker/Vanilla/Types/Sound/ISoundEventDefinition/) | Nie      | PLAYLIST_POPUP_TITLE           | Dźwięk odtwarzany po umieszczeniu płynu                                                     |
+| parowanie               | boolean                                                                                  | Nie      | fałszywy                         | Czy odparować po umieszczeniu w Piec?                                                       |
+| lokalizacja             | ciąg znaków                                                                              | Nie      | contenttweaker:fluids/fluid      | Lokalizacja gdzie znaleźć teksturę dla wciąż płynu                                          |
+| lokalizacja przepływowa | ciąg znaków                                                                              | Nie      | contenttweaker:fluids/fluid_flow | Położenie gdzie znaleźć teksturę płynu płynnego                                             |
+| materiał                | [Definicja IMateriałowa](/Mods/ContentTweaker/Vanilla/Types/Block/IMaterialDefinition/)  | Nie      | WODA                             | Materiał, z którego płyn jest wykonany                                                      |
 
-## Registering the fluid
+## Rejestrowanie płynu
 
-You need to call this method to register the fluid in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the fluid or change any of it's properties!
+Musisz wywołać tę metodę, aby zarejestrować płyn w grze!  
+W przeciwnym razie nic się nie stanie!  
+Po wywołaniu tej funkcji nie możesz wyrejestrować płynu ani zmieniać jego właściwości!
 
 ```zenscript
 fluid.register();
 ```
 
-## Example Script
+## Przykładowy skrypt
 
 ```zenscript
 #loader contenttweaker
@@ -73,6 +73,6 @@ zsFluid.fillSound = <soundevent:block.anvil.place>;
 zsFluid.register();
 ```
 
-## Localizing the fluid
+## Lokalizacja płynu
 
-You will need to add `fluid.fluidName = Localized Name` to the responding language files. Alternatively, you could use CraftTweaker's [localization feature](/Vanilla/Game/IGame/), though it's recommended using the language files!
+Będziesz musiał dodać `fluid.fluidName = Localized Name` do odpowiadających plików językowych. Alternatywnie, możesz użyć [funkcji lokalizacji CraftTweaker's](/Vanilla/Game/IGame/), choć zaleca się używanie plików językowych!
