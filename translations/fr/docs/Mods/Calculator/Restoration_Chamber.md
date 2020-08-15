@@ -5,12 +5,12 @@
 import mods.calculator.restorationChamber;
 ```
 
-## Methods
+## Méthodes
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
 
-## Addition
+## Ajouter
 ```zenscript
 restorationChamber.addRecipe(IIngredient input, IIngredient output);
 ```
