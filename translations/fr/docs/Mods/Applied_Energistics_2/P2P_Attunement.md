@@ -1,14 +1,14 @@
-# P2P Attunement
+# Harmonisation P2P
 
-### Importing
+### Importation en cours
 
 ```zenscript
-import mods.appliedenergistics2.Attunement;
+Importer mods.appliedenergistics2. Attunement;
 ```
 
-### Attuning Item
+### Objet en cours d'assemblage
 
-Attune an IItemStack or ModID to a specific P2P-Tunnel type. ModID's are used as fallback when no IItemStack was found.
+Attachez un IItemStack ou un ModID à un type de tunnel P2P spécifique. Les ModID sont utilisés comme valeur de secours quand IItemStack n'a pas été trouvé.
 
 ### ME P2P
 
@@ -20,14 +20,14 @@ Attunement.attuneME(<appliedenergistics2:controller>);
 Attunement.attuneME("actuallyadditions");
 ```
 
-### Item P2P
+### Élément P2P
 
 ```zenscript
 Attunement.attuneItem(IItemStack IItemStack);
 Attunement.attuneItem(String modID);
 ```
 
-### Fluid P2P
+### Fluide P2P
 
 ```zenscript
 Attunement.attuneFluid(IItemStack IItemStack);
@@ -41,7 +41,7 @@ Attunement.attuneRedstone(IItemStack IItemStack);
 Attunement.attuneRedstone(String modID);
 ```
 
-### RF P2P
+### P2P RF
 
 ```zenscript
 Attunement.attuneRF(IItemStack IItemStack);
@@ -55,7 +55,7 @@ Attunement.attuneIC2(IItemStack IItemStack);
 Attunement.attuneIC2(String modID);
 ```
 
-### Light P2P
+### Lumière P2P
 
 ```zenscript
 Attunement.attuneLight(IItemStack IItemStack);
