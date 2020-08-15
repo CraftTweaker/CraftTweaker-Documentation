@@ -34,11 +34,11 @@ Returns int
 
 
 
-## Properties
+## Eigenschaften
 
 | Name          | Type    | Has Getter | Has Setter |
 | ------------- | ------- | ---------- | ---------- |
-| commandString | String  | true       | false      |
+| Kommandozeile | String  | true       | false      |
 | horizontal    | boolean | true       | false      |
 | name          | String  | true       | false      |
 | ordinal       | int     | true       | false      |
