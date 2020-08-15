@@ -1,133 +1,133 @@
 # Soils
 
-Class path: `mods.botanypots.Soil`
+Ruta de la clase: `mods.botanypots.Soil`
 
-## Use
+## Usar
 
-To use, import the class with `import mods.botanypots.Soil;` at the beginning of your script.
+Para usar, importa la clase con `import mods.botanypots.Soil;` al principio de tu script.
 
-## Creating New Soils
+## Creando nuevos suelos
 
-`Soil.create(id, ingredient, displayState, tickRate, categories);`
+`Soil.create(id, ingrediente, displayState, tickRate, categorías);`
 
-- `id` &lt;string> The id of the new soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
-- `tickRate` &lt;int> The tick rate for the soil.
-- `categories` &lt;string[]> An array of categories associated with the new soil.
+- `id` &lt;cadena> El id del nuevo suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `ingrediente` <[IIngrediente](/vanilla/api/items/IIngredient)> El ingrediente utilizado para determinar qué artículos/bloques se utilizan para colocar la tierra en una maceta.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> El estado del bloque a mostrar en el suelo de la maceta.
+- `tarifa de tickRate` &lt;int> La tarifa de tick para el suelo.
+- `categories` &lt;string[]> Una matriz de categorías asociadas con el nuevo suelo.
 
-Creates a new soil entry that players can use in the botany pot.
+Crea una nueva entrada al suelo que los jugadores pueden usar en la poza de botanía.
 
 ```zenscript
 Soil.create("examplepack:rock", <item:minecraft:stone>, <blockstate:minecraft:stone>, 100, ["rocky"]);
 ```
 
-## Removing A Soil
+## Eliminando un suelo
 
-`Soil.remove(id);`
+`Suelo.remove(id);`
 
-- `id` &lt;string> The id of the soil to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;cadena> El id del suelo a remover. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
 
-Removes a soil from the game's data.
+Elimina un suelo de los datos del juego.
 
 ```zenscript
 Soil.remove("botanypots:soil/podzol");
 ```
 
-## Changing Soil Tick Rate
+## Cambio de Tick de suelo
 
 `Soil.setTicks(id, tickRate);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `tickRate` &lt;int> The new tick rate for the soil.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `tickRate` &lt;int> La nueva tasa de tick para el suelo.
 
-Changes the tick rate of a given soil.
+Cambia la tasa de garrapatos de un suelo determinado.
 
 ```zenscript
-Soil.setTicks("botanypots:soil/grass", 1300);
+Soil.setTicks("botanypots:suelo/hierba", 1300);
 ```
 
-## Changing Soil Ingredient
+## Cambiando el ingrediente del suelo
 
-`Soil.setIngredient(id, ingredient);`
+`Suelo.setIngredient(id, ingrediente);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `ingredient` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient used to determine which items/blocks are used to put the soil in a pot.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `ingrediente` <[IIngrediente](/vanilla/api/items/IIngredient)> El ingrediente utilizado para determinar qué artículos/bloques se utilizan para colocar la tierra en una maceta.
 
-Changes the items used to put the soil into the botany pot.
+Cambia los objetos utilizados para colocar la tierra en la maceta de botanía.
 
 ```zenscript
 Soil.setIngredient("botanypots:soil/soul_sand", <item:minecraft:sand>);
 ```
 
-## Changing Soil Display
+## Cambiando pantalla de suelo
 
 `Soil.setDisplayState(id, displayState);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block state to display for the soil in the pot.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `displayState` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> El estado del bloque a mostrar en el suelo de la maceta.
 
-Changes the block displayed for the soil.
+Cambia el bloque mostrado para el suelo.
 
 ```zenscript
 Soil.setDisplayState("botanypots:soil/dirt", <blockstate:minecraft:snow>);
 ```
 
-## Changing Soil Categories
+## Cambiando las categorías del suelo
 
-Changes the categories associated with the soil. These are used to match crops to valid soils.
+Cambia las categorías asociadas con el suelo. Estos se utilizan para combinar los cultivos con los suelos válidos.
 
-### Add a Category to a Soil
+### Añadir una categoría a un suelo
 
-`Soil.addCategory(id, categoriesToAdd);`
+`Soil.addCategory(id, categoríasToAñadir);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the soil.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `categoriesToAdd` &lt;cadena[]> Un array de categorías para asociar con el suelo.
 
 ```zenscript
-Soil.addCategory("botanypots:soil/soul_sand", ["nether"]);
+Soil.addCategory("botanypots:soil/soul_sand", ["bother"]);
 ```
 
-### Remove a Category From a Soil
+### Quitar una categoría de un suelo
 
-`Soil.removeCategory(id, categoriesToRemove);`
+`Soil.removeCategory(id, categoríasToRemove);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the soil.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
+- `categoriesToRemover` &lt;cadena[]> Un array de categorías para disociar con el suelo.
 
 ```zenscript
 Soil.removeCategory("botanypots:soil/soul_sand", ["soul_sand"]);
 ```
 
-### Clear All Categories From a Soil
+### Borrar todas las categorías de un suelo
 
-`Soil.clearCategories(id);`
+`Suelo.clearCategories(id);`
 
-- `id` &lt;string> The id of the soil. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;cadena> El id del suelo. Este es un id de espacio de nombres y debe estar en el formato válido `namespace:path`.
 
 ```zenscript
-Soil.clearCategories("botanypots:soil/farmland");
+Soil.clearCategories("botanypots:suelo/granja");
 ```
 
-## Getting All Ids
+## Obteniendo todos los Ids
 
 `Soil.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known soil ids at the time this is ran.
+- Devuelve: &lt;string[]> Una matriz con todos los ids de suelo conocidos en el momento en que esto es ran.
 
-This will give you an array of all the known soil ids at the time.
+Esto le dará una variedad de todos los identificadores de tierra conocidos en ese momento.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for soilId in Soil.getAllIds() {
+// Registrar todos los ids en el archivo crafttweaker.log
+para soilId en Soil.getAllIds() {
     println(soilId);
 }
 ```
 
-## Removing All Soil
+## Eliminando todo el suelo
 
-This will completely remove all the soils currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Esto eliminará completamente todos los suelos actualmente registrados. Esto es útil para si desea recrear todos los datos de scratch a través de scripts.
 
 ```zenscript
-Soil.removeAll();
+Suelo.removeTo();
 ```
