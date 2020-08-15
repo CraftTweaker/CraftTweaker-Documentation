@@ -4,7 +4,7 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.data.ShortData
@@ -18,13 +18,13 @@ ShortData implements the following interfaces. That means any method available t
 ```zenscript
 new crafttweaker.api.data.ShortData(internal as short);
 ```
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| internal  | short | No description provided |
+| Parametr   | Typ    | Opis                    |
+| ---------- | ------ | ----------------------- |
+| wewnętrzna | krótki | No description provided |
 
 
 
-## Methods
+## Metody
 ### asList
 
 Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
@@ -72,9 +72,9 @@ Returns boolean
 1058.contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parametr | Typ                                                    | Opis                             |
+| -------- | ------------------------------------------------------ | -------------------------------- |
+| dane     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
 
 
 ### copy
