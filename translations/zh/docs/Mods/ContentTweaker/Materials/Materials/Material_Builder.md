@@ -1,55 +1,55 @@
-# Material Builder
+# 材料生成器
 
-If you want to build a [material](/Mods/ContentTweaker/Materials/Materials/Material/), you will need a Material Builder!  
-Doesn't sound that hard, does it?
+如果你想要构建一个 [材料](/Mods/ContentTweaker/Materials/Materials/Material/)，你需要一个材料生成器！  
+这个硬音效不好，问吗？
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialBuilder;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入mods.contenttweiner.MaterialBuilder；`
 
-## Retrieving such an object
+## 正在获取此对象
 
-You can retrieve a new, clear Builder using the [MaterialSystem Package](/Mods/ContentTweaker/Materials/MaterialSystem/):
+您可以使用 [材料系统包](/Mods/ContentTweaker/Materials/MaterialSystem/) 检索一个新的、清晰的构建器：
 
 ```zenscript
-var mBuilder = mods.contenttweaker.MaterialSystem.getMaterialBuilder();
+var mBuilder = mods.contenttweiner.MaterialSystem.getMaterialBuilder();
 ```
 
-## Set the Material's Properties
+## 设置材料属性
 
-You can set these Properties
+您可以设置这些属性
 
-| ZenMethod               | Parameter                                                        |
+| ZenMethod（ZenMethod）    | 参数                                                               |
 | ----------------------- | ---------------------------------------------------------------- |
-| setName(name)           | string name                                                      |
-| setColor(color)         | int color                                                        |
+| 设置名称(名称)                | 字符串名称                                                            |
+| setColor(color)         | 整数颜色                                                             |
 | setColor(color)         | [CTColor](/Mods/ContentTweaker/Vanilla/Types/Color/Color/) color |
-| setHasEffect(hasEffect) | boolean hasEffect                                                |
+| setHasEffect(hasEffect) | 布尔型哈斯特效                                                          |
 
-All these Methods do 2 things: Firstly, they change the builder's Property, secondly they return the modified builder.  
-You can see in the example scripts below what this means.
+所有这些方法都有两件事：第一，它们改变了建筑商的财产，第二，它们归还了经过修改的建筑商。  
+您可以在下面的示例脚本中看到这意味着什么。
 
-## Actually build the Material
+## 实际构建材料
 
-Before you can build your material, you need to build it:
+在你可以构建你的材料之前，你需要构建它：
 
 ```zenscript
 mBuilder.build();
 ```
 
-This returns an [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) Object.
+这返回一个 [IMaterial](/Mods/ContentTweaker/Materials/Materials/Material/) 对象。
 
-## Example Script
+## 示例脚本
 
 ```zenscript
-import mods.contentTweaker.MaterialSystem;
+Import mods.contentTweeper.MaterialSystem;
 
 var builder = MaterialSystem.getMaterialBuilder();
-builder.setName("Urubuntu");
+builder.setName("Urupbuntu");
 builder.setColor(000151);
 builder.setHasEffect(false);
 val urubuntu = builder.build();
 
-val arakantara = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build();
+val arakantara = MaterialSystem.getMaterialBuilder().setName("Arakantara").setColor(15592941).setHasEffect(true).build(); build();
 ```
