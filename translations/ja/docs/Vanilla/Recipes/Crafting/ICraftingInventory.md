@@ -2,14 +2,14 @@
 
 The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Description                                          |
+| ZenGetter    | 戻り値の種類                                       | 説明                                                   |
 | ------------ | -------------------------------------------- | ---------------------------------------------------- |
 | `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
 | `size`       | int                                          | the inventory's size                                 |
