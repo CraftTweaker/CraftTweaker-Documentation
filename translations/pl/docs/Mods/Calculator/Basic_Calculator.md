@@ -1,4 +1,4 @@
-# Basic Calculator
+# Kalkulator podstawowy
 
 ## Pakiet
 ```zenscript
@@ -7,15 +7,15 @@ import mods.calculator.basic;
 
 ## Metody
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input[1-2]** The inputs.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) dane wejściowe[1-2]**
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wyjście** Wyjście </strong>
 
 ## Dodanie
 ```zenscript
-basic.addRecipe(IIngredient input1, IIngredient input2, IIngredient output);
+bazyc.addRecipe(Input1, IInput2, ISkładniki);
 ```
 
 ## Usuwanie
 ```zenscript
-basic.removeRecipe(IIngredient output);
+bazyc.removeRecipe(dane wyjściowe składnika);
 ```
