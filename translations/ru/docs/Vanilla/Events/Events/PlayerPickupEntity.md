@@ -1,8 +1,8 @@
-# PlayerPickupEntity
+# Подарки игрока
 
-The PlayerPickupEntity Event is fired whenever a player interacts with an Entity.
+Событие "Пикапсущность" запускается каждый раз, когда игрок взаимодействует с сущностью.
 
-## Event Class
+## Класс события
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.PlayerPickupEvent`  
@@ -10,16 +10,16 @@ You can, of course, also [import](/AdvancedFunctions/Import/) the class before a
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Следующая информация может быть получена от события:
 
-| ZenGetter   | Return Type                           |
-| ----------- | ------------------------------------- |
-| `canceled`  | boolean                               |
-| `processed` | boolean                               |
-| `player`    | [IPlayer](/Vanilla/Players/IPlayer/)  |
-| `entity`    | [IEntity](/Vanilla/Entities/IEntity/) |
+| Геттеры      | Возвращаемый тип                      |
+| ------------ | ------------------------------------- |
+| `отменено`   | boolean                               |
+| `обработано` | boolean                               |
+| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)  |
+| `сущность`   | [IEntity](/Vanilla/Entities/IEntity/) |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
-- `event.process()` sets the event as processed.
+- `event.cancel()` устанавливает событие как отменено.
+- `event.process()` устанавливает событие как обработанное.
