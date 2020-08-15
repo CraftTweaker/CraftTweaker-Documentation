@@ -1,14 +1,14 @@
 # MCBiome
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importare la classe
+Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi (come castare un vettore), quindi meglio essere sicuri e aggiungere la direttiva di importazione.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Methods
+## Metodi
 ### getSpawns
 
 Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
@@ -17,14 +17,14 @@ Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBio
 myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parameter      | Type                                                                                           | Description             |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| Parametro      | Tipo                                                                                           | Descrizione                 |
+| -------------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
+| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Nessuna descrizione fornita |
 
 
 ### getTempCategory
 
-Returns String
+Ritorna una stringa
 
 ```zenscript
 myMCBiome.getTempCategory();
@@ -38,33 +38,33 @@ Returns float
 myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parametro | Tipo                                                         | Descrizione                 |
+| --------- | ------------------------------------------------------------ | --------------------------- |
+| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Nessuna descrizione fornita |
 
 
 
-## Properties
+## Proprietà
 
-| Name               | Type    | Has Getter | Has Setter |
-| ------------------ | ------- | ---------- | ---------- |
-| category           | String  | true       | false      |
-| defaultTemperature | float   | true       | false      |
-| depth              | float   | true       | false      |
-| doesRain           | boolean | true       | false      |
-| doesSnow           | boolean | true       | false      |
-| downfall           | float   | true       | false      |
-| isHighHumidity     | boolean | true       | false      |
-| isMutation         | boolean | true       | false      |
-| isTempCold         | boolean | true       | false      |
-| isTempMedium       | boolean | true       | false      |
-| isTempOcean        | boolean | true       | false      |
-| isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
-| rainType           | String  | true       | false      |
-| scale              | float   | true       | false      |
-| spawningChange     | float   | true       | false      |
-| translationKey     | String  | true       | false      |
-| waterColor         | int     | true       | false      |
-| waterFogColor      | int     | true       | false      |
+| Nome               | Tipo         | Ha Getter | Ha Setter |
+| ------------------ | ------------ | --------- | --------- |
+| category           | Stringa      | vero      | falso     |
+| defaultTemperature | galleggiante | vero      | falso     |
+| depth              | galleggiante | vero      | falso     |
+| doesRain           | boolean      | vero      | falso     |
+| doesSnow           | boolean      | vero      | falso     |
+| downfall           | galleggiante | vero      | falso     |
+| isHighHumidity     | boolean      | vero      | falso     |
+| isMutation         | boolean      | vero      | falso     |
+| isTempCold         | boolean      | vero      | falso     |
+| isTempMedium       | boolean      | vero      | falso     |
+| isTempOcean        | boolean      | vero      | falso     |
+| isTempWarm         | boolean      | vero      | falso     |
+| genitore           | Stringa      | vero      | falso     |
+| rainType           | Stringa      | vero      | falso     |
+| scale              | galleggiante | vero      | falso     |
+| spawningChange     | galleggiante | vero      | falso     |
+| translationKey     | Stringa      | vero      | falso     |
+| waterColor         | int          | vero      | falso     |
+| waterFogColor      | int          | vero      | falso     |
 
