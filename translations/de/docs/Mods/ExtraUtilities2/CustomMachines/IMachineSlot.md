@@ -40,7 +40,7 @@ The parameters are:
 | name              | string                                        |
 | isOptional        | bool                                          |
 | stackCapacity     | int                                           |
-| color             | int                                           |
+| farben            | int                                           |
 | backgroundTexture | string                                        |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
