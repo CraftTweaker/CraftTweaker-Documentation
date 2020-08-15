@@ -1,14 +1,14 @@
-# Ignore Bracket Errors Preprocessor
+# Ignoruj błędy nawiasów
 
-This Preprocessor sets your script to ignore backet errors.  
-This DOES NOT in any way, shape or form magically correct your script, it supresses the error log.
+Ten preprocesor ustawia twój skrypt na ignorowanie błędów backet.  
+To NIE MOŻE w żaden sposób, kształt lub magicznie poprawia twój skrypt, co odpowiada dziennikowi błędów.
 
-## Call
+## Połącz
 
-You can call the IgnoreBracketErrors Preprocessor by placing `#ignoreBracketErrors` inside your script file.  
-This Preprocessor is file-specific, so calling it on one file doesn't affect the others (at least not for what the processor's concerned.
+Możesz wywołać preprocesor IgnoreBracketErrors poprzez umieszczenie `#ignoreBracketErrors` w pliku skryptu.  
+Ten Preprocesor jest specyficzny dla pliku, więc wywoływanie go w jednym pliku nie ma wpływu na innych (przynajmniej nie dla tego, co dany procesor jest zainteresowany.
 
-## What it does
+## Co to robi
 
-When the preprocessor is called on a file, all error logging on bracket errors will be supressed.  
-This doesn't change the affected lines in any way, instead the only change is that your log won't contain the regarding lines.
+Gdy preprocesor jest wywołany w pliku, wszystkie błędy w nawiasach zostaną ustawione.  
+To nie zmienia w żaden sposób przedmiotowych linii, zamiast tego jedyną zmianą jest to, że Twój log nie będzie zawierał odpowiednich linii.
