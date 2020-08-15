@@ -1,53 +1,53 @@
-# Creative Tab
+# Tab creativo
 
-This allows you to add Creative Tabs to the game!
+¡Esto te permite añadir etiquetas creativas al juego!
 
-## Creating the ICreativeTab object
+## Creando el objeto ICreativeTab
 
-Before you can add the tab, you need to create a representation which will allow you to set the properties of the tab you want to add.  
-This is where the [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) comes in:
+Antes de añadir la pestaña, necesita crear una representación que le permita establecer las propiedades de la pestaña que desea añadir.  
+Aquí es donde entra la [VanillaFactory](/Mods/ContentTweaker/Vanilla/Creatable_Content/VanillaFactory/) en:
 
 ```zenscript
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStack iItemStack);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemStack iItemStack);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemRepresentation iItem);
 mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, BlockRepresentation iBlock);
-mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, IItemStackSupplier supplier);
+mods.contenttweaker.VanillaFactory.createCreativeTab(String unlocalizedName, ItemStackSupplier
 ```
 
-The String is in each of the three methods the same: It's the unlocalized name the Tab will later have.  
-The second parameter is the symbol your tab will carry later on (e.g. a lava bucket for "misc").  
-You can decide wheter you want to use an itemRepresentation, an itemStack, a blockrepresentation or an itemStackSupplier function.
+La Cadena está en cada uno de los tres métodos del mismo: Es el nombre sin localizar que tendrá la Tabla más adelante.  
+El segundo parámetro es el símbolo que tu pestaña llevará más tarde (e. Un cubo de lava para "misc").  
+Puede decidir el tipo de elemento que desea utilizar una representación de artículos, una Stack, una representación de bloques o una función itemStackSupplier.
 
-## Calling an existing ICreativeTab object
+## Llamar a un objeto ICreativeTab existente
 
-You can also call an [existing creative](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) tab, though you cannot change any of it's properties.  
-Why would you need this, you ask?  
-You will need this if you want to add a newly created block or item to an existing tab!
+También puedes llamar a una pestaña [creativa](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/) existente, aunque no puedes cambiar ninguna de sus propiedades.  
+¿Por qué necesitarías esto, te preguntas?  
+¡Necesitarás esto si quieres añadir un bloque o elemento recién creado a una pestaña existente!
 
-## Properties
+## Propiedades
 
-You can call and set all these properties using the normal ZenGetters and ZenSetters  
-`tab.unlocalizedName = "hh";`  
-Note that you will probably hardly ever need the Setters as these Properties are already initialized to your wanted values when you create the ICreativeTab object.  
-Also, you can neither set nor get properties from an existing ICreativeTab(one that you retrieved using the [Bracket handler](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
+Puede llamar y configurar todas estas propiedades usando la pestaña normal de ZenGetters y ZenSetters  
+`. nlocalizedName = "h";`  
+Ten en cuenta que probablemente casi nunca necesitarás los Setters ya que estas propiedades ya están inicializadas a tus valores deseados cuando crees el objeto ICreativeTab.  
+Además, no puedes establecer ni obtener propiedades de un ICreativeTab(uno que hayas recuperado usando el controlador de [Bracket](/Mods/ContentTweaker/Vanilla/Brackets/Bracket_Creative_Tab/))!
 
-| Property Name     | Type                                                                                                    | Required | Default Value | Description/Notes       |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | -------- | ------------- | ----------------------- |
-| unlocalizedName   | string                                                                                                  | YES      |               | The Creative Tab's name |
-| iconStack         | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | YES/NO   |               | The Creative Tab's icon |
-| iconStackSupplier | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/YES   | null          | Determines something?   |
+| Nombre de Propiedad | Tipo                                                                                                    | Requerido | Valor por defecto | Descripción/Notas                |
+| ------------------- | ------------------------------------------------------------------------------------------------------- | --------- | ----------------- | -------------------------------- |
+| unlocalizedName     | cadena                                                                                                  | SI        |                   | El nombre de la pestaña creativa |
+| iconStack           | [IItemStack](/Vanilla/Items/IItemStack/)                                                                | SÍ/NO     |                   | Icono de la pestaña creativa     |
+| iconStackSupplier   | [IItemStackSupplier](/Mods/ContentTweaker/Vanilla/Advanced_Functionality/Functions/IItemStackSupplier/) | NO/Sí     | nulo              | ¿Determina algo?                 |
 
-## Registering the creative tab
+## Registrando la pestaña creativa
 
-You need to call this method to register the creative Tab in the game!  
-Otherwise nothing will happen!  
-After you have called this function, you cannot un-register the tab or change any of it's properties!
+¡Necesitas llamar a este método para registrar la pestaña creativa en el juego!  
+¡De lo contrario no pasará nada!  
+Después de haber llamado a esta función, no puede anular el registro de la pestaña o cambiar ninguna de sus propiedades!
 
 ```zenscript
 tab.register();
 ```
 
-## Example Script
+## Ejemplo de script
 
 ```zenscript
 #loader contenttweaker
