@@ -1,6 +1,6 @@
 # Offering to the Gods
 
-## Package
+## Пакет
 ```zenscript
 mods.naturesaura.Offering
 ```
@@ -12,13 +12,13 @@ mods.naturesaura.Offering
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient) startItem** the item required to start the offering
 - **[IItemStack](/Vanilla/Items/IItemStack) output** The gift of the Offering
 
-## Addition
+## Сложение
 
 ```zenscript
 mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
-## Removal
+## Удаление
 
 ```zenscript
 mods.naturesaura.Offering.removeRecipe(IItemStack output)
