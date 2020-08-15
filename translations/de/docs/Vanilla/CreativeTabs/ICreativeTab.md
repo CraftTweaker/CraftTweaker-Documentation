@@ -20,7 +20,7 @@ You can retrieve an ICreativeTab from the [Creative tab Bracket Handler](/Vanill
 | setNoScrollBar()    | void (nothing) |
 | setNoTitle()        | void (nothing) |
 
-## ZenMethod
+## ZenMethode
 
 #### Set Background image Name
 
