@@ -1,24 +1,24 @@
-# Botania Brewing
+# Birra Botania
 
-The Brew package is used for adding or removing recipes to/from the Botania Brewing Stand.
+Il pacchetto Brew viene utilizzato per aggiungere o rimuovere ricette da/per lo stand di birra Botania.
 
-## Calling
+## Chiamata
 
-You can call the Brew package using `mods.botania.Brew`
+Puoi chiamare il pacchetto Brew usando `mods.botania.Brew`
 
-## Brew Names
+## Nomi Di Brew
 
-To use this Package, you need to know botania's registered Brew Names.  
-You can find them using [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
+Per utilizzare questo pacchetto, è necessario conoscere i nomi di birra registrati della botania.  
+Puoi trovarli usando [`/ct botbrews`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Aggiunta ricetta
 
 ```zenscript
 //mods.botania.Brew.addRecipe(IIngredient[] input, String brewName);
 mods.botania.Brew.addRecipe([<minecraft:nether_wart>, <minecraft:reeds>, <minecraft:redstone>], "speed");
 ```
 
-## Recipe removal
+## Rimozione ricetta
 
 ```zenscript
 //mods.botania.Brew.removeRecipe(String brewName);
