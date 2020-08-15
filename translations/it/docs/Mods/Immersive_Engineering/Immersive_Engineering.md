@@ -1,17 +1,17 @@
-# Immersive Engineering
+# Ingegneria Immersiva
 
-## Information
+## Informazioni
 
-Immersive Engineering is a tech mod with a certain charm, based on the ideas and concepts, and with most assets created by Damien Hazard.
+Immersive Engineering è una mod tecnologica con un certo fascino, basata su idee e concetti, e con la maggior parte delle risorse create da Damien Hazard.
 
-Overall, it's about realism-inspired technology: Instead of glowing red tubes, it offers actual, hanging powerlines. Instead of one block that magically spits out dusts when ore is put in, it offers a crusher, a big multiblock (5x3x3) that features rotating wheels and spits out particles as it breaks the ore. Instead of a Laser that turns power into magical light and ores, it offers an Excavator, another massive, resource intensive, multiblock (3x7x8) which digs ores out of the ground with a big rotating bucketwheel.
+Complessivamente, si tratta di tecnologia ispirata al realismo: Invece di incandescenti tubi rossi, offre linee elettriche reali e pendenti. Invece di un blocco che sputa magicamente le polveri quando il minerale è inserito, offre un frantumatore, un grande multiblock (5x3x3) che presenta ruote rotanti e sporge particelle mentre rompe il minerale. Invece di un laser che trasforma il potere in luce magica e minerale, offre un escavatore, un altro massiccio, risorsa intensiva, multiblock (3x7x8) che scava i minerali fuori dal terreno con una grande ruota a secchio rotante.
 
-IE is about making tech mods more balanced and more pretty, and adding its own twist by going for retro-futurism (think BioShock, Order 1886, SkyCaptain and the World of Tomorrow) rather than clinical white+grey future cubes. The mod features Power Generation in forms of waterwheels, windmills, biodiesel and more and many of its machines are multiblocks!
+IE è di rendere le mod tecnologiche più equilibrate e più carine, e aggiungendo il proprio twist andando per retro-futurismo (pensare BioShock, Ordine 1886, SkyCaptain e il mondo di domani), piuttosto che i cubi clinici bianchi + grigi. La mod presenta Power Generation in forme di ruote, mulini a vento, biodiesel e sempre più e molte delle sue macchine sono multiblocks!
 
-## CraftTweaker Related Information
+## Informazioni Correlate CraftTweaker
 
-Most if not all of the machines as well as some of the non-machine related features are configurable through ZenScript.
+La maggior parte, se non tutte le macchine, così come alcune delle caratteristiche non correlate alla macchina sono configurabili attraverso ZenScript.
 
-## Bug Reports
+## Segnalazioni Di Bug
 
 https://github.com/BluSunrize/ImmersiveEngineering/issues
