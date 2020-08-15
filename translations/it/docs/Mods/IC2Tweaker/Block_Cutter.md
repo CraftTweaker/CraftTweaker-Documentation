@@ -1,4 +1,4 @@
-# Block Cutter
+# Taglierina A Blocchi
 
 ## Pacchetto
 
@@ -7,17 +7,17 @@
 ## Metodi
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
-- **@Optional int hardness** Minimum hardness requirement for blade.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
+- **@Optional int durezza** Durezza minima richiesta per la lama.
 
 ## Addizione
 
 ```zenscript
-mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int hardness default 0);
+mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional int durezza predefinita 0);
 
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
 ## Rimozione
 
-For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
+Per ora basta rimuovere la riga corrispondente in `config/ic2/block_cutter.ini`.
