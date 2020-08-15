@@ -3,7 +3,7 @@
 A Weighted Item Stack is like a normal [IItemStack](/Vanilla/Items/IItemStack/) but has a percentage added to it.  
 You normally use them when dealing with percentage based actions like drops or secondary outputs.
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.item.WeightedItemStack;`
@@ -22,8 +22,8 @@ val wItemStack2 = itemStack.weight(0.2);
 
 ## ZenGetters
 
-| ZenGetter | What does it do                                      | Return Type                              |
+| ZenGetter | ¿Qué hace                                            | Tipo de devolución                       |
 | --------- | ---------------------------------------------------- | ---------------------------------------- |
 | stack     | Returns the associated itemStack                     | [IItemStack](/Vanilla/Items/IItemStack/) |
-| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | float                                    |
-| percent   | Returns the stack's chance as percentage (e.g. 20.0) | float                                    |
+| chance    | Returns the stack's chance as decimal (e.g. 0.2)     | flotante                                 |
+| percent   | Returns the stack's chance as percentage (e.g. 20.0) | flotante                                 |
