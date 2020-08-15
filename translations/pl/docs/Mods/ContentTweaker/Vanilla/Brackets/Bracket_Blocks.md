@@ -1,8 +1,8 @@
-# Block Bracket Handler
+# Obsługa nawiasów blokowych
 
-The Block Bracket Handler gives you access to the blocks in the game. It is only possible to get blocks registered in the game, so adding or removing mods may cause issues if you reference the mod's blocks in a Block Bracket Handler.
+Obsługa przedziałów blokowych daje Ci dostęp do bloków w grze. Można zarejestrować tylko bloki w grze, więc dodawanie lub usuwanie modów może powodować problemy, jeśli odwołujesz się do bloków moda w uchwycie wspornika bloków.
 
-Blocks are referenced in the Block Bracket handler this way:
+Bloki są przywoływane w obsłudze nawiasów blokowych w ten sposób:
 
 ```zenscript
 <block:modID:blockName>
