@@ -1,27 +1,27 @@
-# ProjectileImpactFireball
+# Błyskawiczna kula ogniowa
 
-This event is fired whenever a fireball impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+To wydarzenie jest uruchamiane za każdym razem, gdy kula ognia uderza w jednostkę, ale przed naładowaniem obrażeń itp., jest obliczana. **anulowalne**, a jeśli anulowane, wpływ nie zostanie przetworzony.
 
-Acceleration values from the fireball entity are available through zengetters.
+Wartości przyspieszenia z kuli ognia są dostępne za pośrednictwem zengetters.
 
 ## Importowanie klasy
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactFireballEvent;`
+Może być wymagane [zaimportowanie](/AdvancedFunctions/Import/) klasy, aby uniknąć błędów.  
+`zaimportuje crafttweaker.event.ProjectileImpactFireballEvent;`
 
 ## Rozszerzenie IEntityEvent
-ProjectileImpactFireball Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia pociskówImpactFireball zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/podmioty pobierające/ustawiające:
 
-- [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
+- [Wydarzenie ICząsteczek](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters i ZenSetters
 
 Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter       | ZenSetter       | Typ                                                       |
-| --------------- | --------------- | --------------------------------------------------------- |
-| `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
-| `accelerationX` | `accelerationX` | podwójne                                                  |
-| `accelerationY` | `accelerationY` | podwójne                                                  |
-| `accelerationZ` | `accelerationZ` | podwójne                                                  |
+| ZenGetter         | ZenSetter         | Typ                                                       |
+| ----------------- | ----------------- | --------------------------------------------------------- |
+| `kula ognia`      |                   | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `strzelanka`      |                   | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| `akceleracjaX`    | `akceleracjaX`    | podwójne                                                  |
+| `przyspieszenieY` | `przyspieszenieY` | podwójne                                                  |
+| `accelerationZ`   | `accelerationZ`   | podwójne                                                  |
