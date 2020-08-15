@@ -2,7 +2,7 @@
 
 The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
 
-## Notes
+## メモ
 
 `event.fallDistance` contains the distance fallen before hitting the farmland.
 
@@ -20,7 +20,7 @@ FarmlandTrample Events implement the following interfaces and are able to call a
 ## ZenGetters
 The following information can be retrieved from the event:
 
-| ZenGetter      | ZenSetter | Type                                  |
+| ZenGetter      | ZenSetter | タイプ                                   |
 | -------------- | --------- | ------------------------------------- |
 | `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | float                                 |
+| `fallDistance` |           | float型                                |
