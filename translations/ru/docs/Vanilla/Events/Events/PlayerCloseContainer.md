@@ -18,4 +18,4 @@ PlayerCloseContainer Events implement the following interfaces and are able to c
 
 | ZenGetter   | Возвращаемый тип                             |
 | ----------- | -------------------------------------------- |
-| `container` | [IContainer](/Vanilla/Container/IContainer/) |
+| `контейнер` | [IContainer](/Vanilla/Container/IContainer/) |
