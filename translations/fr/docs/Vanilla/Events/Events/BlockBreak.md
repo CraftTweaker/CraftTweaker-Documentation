@@ -20,8 +20,8 @@ BlockBreak Events implement the following interfaces and are able to call all of
 
 The following information can be retrieved from the event:
 
-| ZenGetter    | ZenSetter    | Type                                 |
+| ZenGetter    | ZenSetter    | Type de texte                        |
 | ------------ | ------------ | ------------------------------------ |
 | `player`     |              | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `isPlayer`   |              | bool                                 |
-| `experience` | `experience` | int                                  |
+| `isPlayer`   |              | booléen                              |
+| `experience` | `experience` | Indice                               |
