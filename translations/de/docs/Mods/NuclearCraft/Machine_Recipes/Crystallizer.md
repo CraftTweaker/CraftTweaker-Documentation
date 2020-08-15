@@ -1,6 +1,6 @@
-# Crystallizer
+# Kristallisator
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.crystallizer`
 
 ## Rezepte hinzufügen
