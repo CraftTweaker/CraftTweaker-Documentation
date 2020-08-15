@@ -12,4 +12,4 @@ It might be required for you to import the package if you encounter any issues (
 | uuid      | getUUID()      | string      |
 | name      | getName()      | string      |
 | operation | getOperation() | int         |
-| amount    | getAmount()    | double      |
+| beträge   | getAmount()    | double      |
