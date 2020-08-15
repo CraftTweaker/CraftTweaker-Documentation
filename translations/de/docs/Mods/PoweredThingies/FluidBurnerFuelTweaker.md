@@ -30,6 +30,6 @@ addFuel(fluid: ILiquidStack, ticks: Int)
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
-### Notes
+### Notizen
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
