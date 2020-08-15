@@ -2,7 +2,7 @@
 
 The IBlockDefinition objects provide additional information on blocks.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.block.IBlockDefinition;`
@@ -17,24 +17,24 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters/ZenSetters
 
-| ZenGetter       | ZenSetter           | What does it do                              | Type                                                |
-| --------------- | ------------------- | -------------------------------------------- | --------------------------------------------------- |
-|                 | canSpawnInBlock     | Returns if an entity can spawn in this block | bool                                                |
-| creativeTab     | creativeTab         |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
-| defaultState    |                     |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
-|                 | defaultSlipperiness |                                              | float                                               |
-| id              |                     | Returns the block ID                         | string                                              |
-| displayName     |                     | Returns the block's DisplayName              | string                                              |
-|                 | hardness            |                                              | int                                                 |
-| harvestLevel    |                     | Returns the block's harvest level            | int                                                 |
-| harvestTool     |                     | Returns the block's harvest tool             | string                                              |
-|                 | lightOpacity        |                                              | int                                                 |
-|                 | lightLevel          |                                              | int                                                 |
-|                 | resistance          |                                              | int                                                 |
-| unlocalizedName |                     | Returns the block's unlocalized Name         | string                                              |
-| tickRandomly    | tickRandomly        |                                              | bool                                                |
+| ZenGetter         | ZenSetter             | What does it do                              | Type de texte                                       |
+| ----------------- | --------------------- | -------------------------------------------- | --------------------------------------------------- |
+|                   | canSpawnInBlock       | Returns if an entity can spawn in this block | booléen                                             |
+| creativeTab       | creativeTab           |                                              | [ICreativeTab](/Vanilla/CreativeTabs/ICreativeTab/) |
+| defaultState      |                       |                                              | [IBlockState](/Vanilla/Blocks/IBlockState/)         |
+|                   | defaultSlipperiness   |                                              | flottant                                            |
+| id                |                       | Returns the block ID                         | chaîne de caractères                                |
+| displayName       |                       | Returns the block's DisplayName              | chaîne de caractères                                |
+|                   | dureté                |                                              | Indice                                              |
+| Niveau de récolte |                       | Returns the block's harvest level            | Indice                                              |
+| Outil de récolte  |                       | Returns the block's harvest tool             | chaîne de caractères                                |
+|                   | Opacité de la lumière |                                              | Indice                                              |
+|                   | lightLevel            |                                              | Indice                                              |
+|                   | Résistance            |                                              | Indice                                              |
+| unlocalizedName   |                       | Returns the block's unlocalized Name         | chaîne de caractères                                |
+| tickRandomly      | tickRandomly          |                                              | booléen                                             |
 
-## ZenMethods
+## Méthodes Zen
 
 ### Set Block unbreakable
 
