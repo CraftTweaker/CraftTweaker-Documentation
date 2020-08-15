@@ -14,7 +14,7 @@ if (AxeChopping.isEnabled()) {
 }
 ```
 
-## Addition
+## Ajouter
 
 ```zenscript
 import mods.cuisine.AxeChopping;
