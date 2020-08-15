@@ -20,9 +20,9 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter       | Return Type                                                 |
+| ZenGetter       | Tipo Di Reso                                                |
 | --------------- | ----------------------------------------------------------- |
-| `drops`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `gocce`         | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
 | `damageSource`  | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 | `isRecentlyHit` | bool                                                        |
 | `lootingLevel`  | int                                                         |
