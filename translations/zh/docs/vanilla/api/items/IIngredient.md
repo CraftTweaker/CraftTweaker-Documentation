@@ -1,20 +1,20 @@
-# IIngredient
+# 材料（IIngredient）
 
 This is IIngredient!!!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.item.IIngredient
 ```
 
-## Implemented Interfaces
-IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
+## 已实现的接口
+IIngredient implements the following interfaces. 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## 方法
 ### getRemainingItem
 
 When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
@@ -28,37 +28,37 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 | 参数    | 类型                                                                | 描述                                        |
 | ----- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### 匹配
 
 Does the given stack match the ingredient?
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 <tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | 类型                                                                | 说明                 |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| 参数    | 类型                                                                | 说明                 |
+| ----- | ----------------------------------------------------------------- | ------------------ |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 
-## Properties
+## 参数
 
-| Name          | Type                                                                | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| 名称                   | 类型                                                                  | 可获得  | 可设置   |
+| -------------------- | ------------------------------------------------------------------- | ---- | ----- |
+| commandString #命令字符串 | 字符串[string]                                                         | true | false |
+| 项目                   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true | false |
 
 ## Casters
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| 结果类型                                                        | 是否隐藏 |
+| ----------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)      | true |
+| [craftminstrer.api.data.MapData](/vanilla/api/data/MapData) | true |
 
