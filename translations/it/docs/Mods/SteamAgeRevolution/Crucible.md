@@ -1,16 +1,16 @@
 # Crogiolo
 
-The Crucible is a machine that converts an input item into an output fluid using steam.
+Il Crogiolo è una macchina che converte un elemento di ingresso in un fluido di uscita utilizzando vapore.
 
 ## Pacchetto
 `mods.steamagerevolution.Crucible`
 
 ## Metodi
 
-- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
-- **int craftTime** Crafting time for machine to process
-- **int steamCost** Cost of Steam for machine to process
+- **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** Il risultato della ricetta.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input della ricetta.
+- **int craftTime** Tempo di lavorazione della macchina da elaborare
+- **int steamCosto** Costo di vapore per la macchina da elaborare
 
 ## Addizione
 
