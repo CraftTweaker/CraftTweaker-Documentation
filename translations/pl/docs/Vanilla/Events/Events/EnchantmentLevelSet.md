@@ -1,30 +1,30 @@
-# EnchantmentLevelSetEvent
+# Zdarzenie ZaklęciaPoziomów
 
-The EnchantmentLevelSet Event is fired when the levels for the three potential enchantments are generated in the Enchantment Table.
+Wydarzenie EnchantmentLevelSet jest uruchamiane, gdy poziomy trzech potencjalnych zaklęć są generowane w tabeli zaklęć.
 
 ## Uwagi
 
-`event.enchantRow` lists the row (1-3) of the Enchantment Table, while `event.originalLevel` represents the original level of the row. `event.power` is the cumulative value of bookshelves surrounding the Enchantment Table, while `event.item` is the item that is being enchanted.
+`event.enchantRrow` zawiera listę wiersza (1-3) tabeli zaklęć, podczas gdy `event.original` reprezentuje oryginalny poziom wiersza. `event.power` jest skumulowaną wartością półek książek otaczających tabelę zaklęć, podczas gdy `zdarzenie.element` jest przedmiotem, który jest zaklęty.
 
-`event.level` can be arbitrarily modified to a value between 0 & 30.
+`event.level` może być arbitralnie modyfikowany do wartości pomiędzy 0 & 30.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.EnchantmentLevelSetEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. nchantmentLevelSetEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-EnchantmentLevelSet Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia EnchantmentLevelSet zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-| ZenGetter       | ZenSetter | Typ zwrotu                               |
-| --------------- | --------- | ---------------------------------------- |
-| `świat`         |           | [IWorld](/Vanilla/World/IWorld/)         |
-| `enchantRow`    |           | odcień                                   |
-| `power`         |           | odcień                                   |
-| `element`       |           | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `originalLevel` |           | odcień                                   |
-| `poziom`        | `poziom`  | odcień                                   |
+| ZenGetter           | ZenSetter | Typ zwrotu                               |
+| ------------------- | --------- | ---------------------------------------- |
+| `świat`             |           | [IWorld](/Vanilla/World/IWorld/)         |
+| `zaklęty wiersz`    |           | odcień                                   |
+| `moc`               |           | odcień                                   |
+| `element`           |           | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `oryginalny poziom` |           | odcień                                   |
+| `poziom`            | `poziom`  | odcień                                   |
