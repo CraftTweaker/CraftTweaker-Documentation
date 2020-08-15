@@ -7,17 +7,17 @@ import mods.roots.Pacifist;
 #### 方法
 
 ```zenscript
-void addEntity(
-  IEntityDefinition entity // the entity to add to the pacifist list
-);
+无效添加实体(
+  IEntity定义实体 // 添加到和平主义者列表
+ 的实体)；
 ```
 
 * * *
 
 ```zenscript
-void removeEntity(
-  IEntityDefinition entity // the entity to remove from the pacifist list
-);
+无效移除实体(
+  IEntityDefinition entity // 实体从和平列表中移除
+)；
 ```
 
 * * *
