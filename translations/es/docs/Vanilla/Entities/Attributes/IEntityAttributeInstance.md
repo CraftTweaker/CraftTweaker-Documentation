@@ -1,24 +1,24 @@
 # IEntityAttributeInstance
 
-## Importing the package
+## Importando el paquete
 
 It might be required for you to import the package if you encounter any issues (like casting an [Array](/AdvancedFunctions/Arrays_and_Loops/)), so better be safe than sorry and add the import.  
 `import crafttweaker.entity.AttributeInstance;`
 
 ## ZenGetters
 
-| ZenGetter      | GetterMethod        | Return Type                                                        |
+| ZenGetter      | GetterMethod        | Tipo de devolución                                                 |
 | -------------- | ------------------- | ------------------------------------------------------------------ |
 | attribute      | getAttribute()      | [IEntityAttribute](/Vanilla/Entities/Attributes/IEntityAttribute/) |
-| baseValue      | getBaseValue()      | double                                                             |
+| baseValue      | getBaseValue()      | doble                                                              |
 | modifiers      | getModifiers()      | `List<IEntityAttrubuteModifier>`                             |
-| attributeValue | getAttributeValue() | double                                                             |
+| attributeValue | getAttributeValue() | doble                                                              |
 
 ## ZenSetters
 
-| ZenSetter | SetterMethod        | Parameter Type |
-| --------- | ------------------- | -------------- |
-| baseValue | setBaseValue(value) | double         |
+| Ajuste    | SetterMethod        | Tipo de parámetro |
+| --------- | ------------------- | ----------------- |
+| baseValue | setBaseValue(value) | doble             |
 
 ## Modifier Methods
 
