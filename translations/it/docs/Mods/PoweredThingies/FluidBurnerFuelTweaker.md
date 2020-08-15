@@ -1,6 +1,6 @@
 # Powered Thingies :: Fluid Burner :: Fuel
 
-### Importing
+### Importazione
 
 ```zenscript
 import mods.poweredthingies.Tweaker.fluidBurnerFuelTweaker as fuel;
@@ -24,12 +24,12 @@ addFuel(fluid: ILiquidStack, ticks: Int)
 
 `ticks` represents the number of ticks the specified fuel will burn for.
 
-##### Example
+##### Esempio
 
 ```zenscript
 fuel().addFuel(<liquid:tf-sewage> * 50, 100);
 ```
 
-### Notes
+### Note
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
