@@ -1,177 +1,177 @@
-# Crops
+# Getreide
 
-Class path: `mods.botanypots.Crop`
+Klassenpfad: `mods.botanypots.Crop`
 
-## Use
+## Benutzen
 
-To use, import the class with `import mods.botanypots.Crop;` at the beginning of your script.
+Importieren Sie die Klasse mit `importieren Sie mods.botanypots.Crop;` am Anfang Ihres Skripts.
 
-## Create A Crop
+## Eine Zubereitung erstellen
 
 `Crop.create(id, seed, display, tickRate, multiplier, categories);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
-- `tickRate` &lt;int> One of the factors for how long a crop takes to grow.
-- `multiplier` &lt;float> Another factor for how long the crop takes to grow.
-- `categories` &lt;string[]> An array of soil categories this crop can be grown in.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Seed` <[Ingredient](/vanilla/api/items/IIngredient)> Das Element, das verwendet wird, um die Ernte zu pflanzen.
+- `Anzeige` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Block, der angezeigt werden soll, wenn das Zuschneiden dargestellt wird.
+- `tickRate` &lt;int> Einer der Faktoren, wie lange ein Zuschnitt dauert.
+- `Multiplikator` &lt;float> Ein weiterer Faktor, wie lange das Zuschneiden dauert.
+- `Kategorien` &lt;string[]> Ein Array von Bodenkategorien, in denen diese Ernte angebaut werden kann.
 
-This can be used to create a new crop. Keep in mind that drops need to be added separately.
+Dies kann verwendet werden, um eine neue Ernte zu erstellen. Beachten Sie, dass Tropfen separat hinzugefügt werden müssen.
 
 ```zenscript
-Crop.create("examplepack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["stone"]);
+Crop.create("beispielpack:gold", <item:minecraft:gold_nugget>, <blockstate:minecraft:gold_block>, 3000, 2, ["Stein"]);
 ```
 
-## Remove A Crop
+## Ernte entfernen
 
 `Crop.remove(id);`
 
-- `id` &lt;string> The id of the crop to remove. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> Die ID des zu löschenden Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
 
-Removes a crop based on it's id.
+Entfernt eine Ernte basierend auf ihrer Id.
 
 ```zenscript
 Crop.remove("botanypots:crop/wheat");
 ```
 
-## Set Seed Item
+## Seed Element setzen
 
 `Crop.setSeed(id, seed);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `seed` <[IIngredient](/vanilla/api/items/IIngredient)> The item used to plant the crop.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Seed` <[Ingredient](/vanilla/api/items/IIngredient)> Das Element, das verwendet wird, um die Ernte zu pflanzen.
 
-Sets the item used to plant the crop.
+Legt das Item fest, das verwendet wird, um die Ernte zu pflanzen.
 
 ```zenscript
 Crop.setSeed("botanypots:crop/wheat", <item:minecraft:diamond>);
 ```
 
-## Set Display Block
+## Anzeigeblock setzen
 
-`Crop.setDisplay(id, state);`
+`Crop.setDisplay(id, Zustand);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `display` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> The block to display when rendering the crop.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Anzeige` <[MCBlockState](/vanilla/api/blocks/MCBlockState)> Der Block, der angezeigt werden soll, wenn das Zuschneiden dargestellt wird.
 
-Sets the block rendered for the crop.
+Legt den für das Zuschneiden gerenderten Block fest.
 
 ```zenscript
 Crop.setDisplay("botanypots:crop/wheat", <blockstate:minecraft:snow_block>);
 ```
 
-## Set Tick Rate
+## Tickrate festlegen
 
 `Crop.setTickRate(id, tickRate);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `tickRate` &lt;int> The updated tick rate. One of the factors for how long a crop takes to grow.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `tickRate` &lt;int> Der aktualisierte Tick-Rat. Einer der Faktoren, wie lange eine Ernte dauert.
 
-Sets the crop tick factor.
+Legt den Zuschneidenstickfaktor fest.
 
 ```zenscript
 Crop.setTickRate("botanypots:crop/wheat", 5000);
 ```
 
-## Set Growth Multiplier
+## Setze Wachstumsmultiplikator
 
-`Crop.setGrowthModifier(id, multiplier);`
+`Crop.setGrowthModifier(id, Multiplikator);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `multiplier` &lt;float> The updated multiplier. Another factor for how long the crop takes to grow.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Multiplikator` &lt;float> Der aktualisierte Multiplikator. Ein weiterer Faktor, wie lange die Ernte dauert.
 
-Sets the growth multiplier/modifier for the crop.
+Legt den Wachstumsmultiplikator/Modifikator für die Ernte fest.
 
 ```zenscript
 Crop.setGrowthMofieir("botanypots:crop/wheat", 1.8);
 ```
 
-## Changing Crop Categories
+## Erntekategorien ändern
 
-Changes the categories associated with the crop. Categories are used to match the valid soils to the crop.
+Ändert die mit der Ernte verbundenen Kategorien. Kategorien werden verwendet, um die gültigen Böden der Ernte anzupassen.
 
-### Add a Category to a Crop
+### Kategorie einem Zuschnitt hinzufügen
 
 `Crop.addCategory(id, categoriesToAdd);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToAdd` &lt;string[]> An array of categories to associate with the crop.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `categoriesToAdd` &lt;string[]> Ein Array von Kategorien, die dem Zuschnitt zugeordnet werden sollen.
 
 ```zenscript
-Crop.addCategory("botanypots:crop/wheat", ["stone", "snow"]);
+Crop.addCategory("botanypots:crop/wheat", ["Stein", "Schnee" ]);
 ```
 
-### Remove a Category From a Crop
+### Entferne eine Kategorie aus einer Zubereitung
 
 `Crop.removeCategory(id, categoriesToRemove);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
-- `categoriesToRemove` &lt;string[]> An array of categories to dissociate with the crop.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `categoriesToRemove` &lt;string[]> Ein Array von Kategorien, die mit dem Zuschnitt getrennt werden sollen.
 
 ```zenscript
 Crop.removeCategory("botanypots:crop/wheat", ["dirt"]);
 ```
 
-### Clear All Categories From a Crop
+### Alle Kategorien von Zuschneiden löschen
 
 `Crop.clearCategories(id);`
 
-- `id` &lt;string> The id of the crop. This is a namespaced id an must be in the valid `namespace:path` format.
+- `id` &lt;string> Die ID des Zuschnitts. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
 
 ```zenscript
 Crop.clearCategories("botanypots:crop/wheat");
 ```
 
-## Crop Drops
+## Erntetropfen
 
-### Adding Drops
+### Drops hinzufügen
 
 `Crop.addDrop(id, drop, chance, min, max);`
 
-- `id` &lt;string> The id of the crop to add a drop to. This is a namespaced id an must be in the valid `namespace:path` format.
-- `drop` <[IItemStack](/vanilla/api/items/IItemStack)> The item to drop.
-- `chance` &lt;float> The chance it drops.
-- `min` &lt;int> The min amount of that item to give.
-- `max` &lt;int> The max amount of that item to give.
+- `id` &lt;string> Die ID des Zuschnitts, zu dem ein Drop hinzugefügt werden soll. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `Ablegen` <[IItemStack](/vanilla/api/items/IItemStack)> Das zu fallende Element.
+- `Chance` &lt;schweben> Die Chance, dass sie fällt.
+- `min` &lt;int> Der minimale Betrag des zu gebenden Items.
+- `max` &lt;int> Der maximale Betrag des zu gebenden Elements.
 
-This adds a new potential drop to the crop.
+Dies fügt der Ernte einen neuen potenziellen Tropfen hinzu.
 
 ```zenscript
 Crop.addDrop("botanypots:crop/wheat", <item:minecraft:diamond>, 0.05, 1, 1);
 ```
 
-### Removing Drops
+### Drops entfernen
 
 `Crop.removeDrop(id, toRemove);`
 
-- `id` &lt;string> The id of the crop to remove a drop from. This is a namespaced id an must be in the valid `namespace:path` format.
-- `toRemove` <[IIngredient](/vanilla/api/items/IIngredient)> The ingredient to match against for removal
+- `id` &lt;string> Die ID des Zuschnitts, von dem ein Drop entfernt werden soll. Dies ist eine Namensraum-id und muss im gültigen `Namensraum:path` Format sein.
+- `toEntferne` <[Ingredient](/vanilla/api/items/IIngredient)> Die zutreffende Zutat für die Entfernung
 
-Removes any drops that have a matching item.
+Entfernt alle Drops mit einem passenden Element.
 
 ```zenscript
 Crop.removeDrop("botanypots:crop/wheat", <item:minecraft:wheat_seeds>);
 ```
 
-## Getting All Ids
+## Alle Ids abrufen
 
 `Crop.getAllIds();`
 
-- Returns: &lt;string[]> An array of all known crop ids at the time this is ran.
+- Gibt folgende Werte zurück: &lt;string[]> Ein Array aller bekannten Zuschneide-Ids zur Zeit dieser Reihe.
 
-This will give you an array of all the known crop ids at the time.
+Dies gibt Ihnen ein Array aller bekannten Crop Ids zu dieser Zeit.
 
 ```zenscript
-// Log all ids to the crafttweaker.log file
-for cropId in Crop.getAllIds() {
+// Logge alle IDs in der crafttweaker.log Datei
+für cropId in Crop.getAllIds() {
     println(cropId);
 }
 ```
 
-## Removing All Crops
+## Alle Ernten entfernen
 
-This will completely remove all the crops currently registered. This is useful for if you want to recreate all the data from scratch through scripts.
+Dadurch werden alle derzeit registrierten Kulturen vollständig entfernt. Dies ist nützlich, wenn Sie alle Daten von Grund auf durch Skripte neu erstellen möchten.
 
 ```zenscript
 Crop.removeAll();
