@@ -1,14 +1,14 @@
-# Knowledge Locking
+# Bloqueo de conocimientos
 
-## Feature:
+## Característica:
 
-This feature allows you to lock the acquisition of Observational or Theoretical Knowledge acquisition in Thaumcraft.
+Esta característica le permite bloquear la adquisición de conocimientos observacionales o teóricos en Thaumcraft.
 
-## Knowledge Types:
+## Tipos de Conocimiento:
 
-Current knowledge types are O for Observation and T for Theory.
+Los tipos de conocimiento actuales son OO para la Observación y T para la Teoría.
 
-## Syntax:
+## Sintaxis:
 
     mods.compatskills.Thaumcraft.addKnowledgeLock(String categoryName, String knowledgeType, String... requirements);
     
