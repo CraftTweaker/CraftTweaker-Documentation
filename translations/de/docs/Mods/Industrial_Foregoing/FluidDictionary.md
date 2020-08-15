@@ -1,27 +1,27 @@
-# Fluid Dictionary
+# Fluid-Wörterbuch
 
 ### Importieren
 
 ```zenscript
-import mods.industrialforegoing.FluidDictionary;
+importieren mods.industrialforegoing.FluidDictionary;
 ```
 
-### Adding
+### Hinzufügen
 
-It needs the Fluid Name as an input, the Fluid Name as an output and a conversion rate. The rate is how many mb from the origin will be transformed into the output. (InputMB * rate = OutputMB)
+Es benötigt den Fluidnamen als Eingabe, den Fluidnamen als Ausgabe und als Konversionsrate. Die Rate ist, wie viele MB aus dem Ursprung in die Ausgabe umgewandelt werden. (InputMB * Rate = OutputMB)
 
 ```zenscript
-FluidDictionary.add(String input, String output, double rate);
+FluidDictionary.add(String Input, String Output, Doppelrate);
 
-FluidDictionary.add("essence", "xpjuice", 1);
+FluidDictionary.add("Essenz", "xpjuice", 1);
 ```
 
-### Removing
+### Entfernen
 
-It needs the Fluid Name as an input, the Fluid Name as an output.
+Es benötigt den Fluidnamen als Eingabe, den Fluidnamen als Ausgabe.
 
 ```zenscript
-FluidDictionary.remove(String input, String output);
+FluidDictionary.remove(String Input, String Output);
 
-FluidDictionary.remove("essence", "xpjuice");
+FluidDictionary.remove("Essenz", "xpjuice");
 ```
