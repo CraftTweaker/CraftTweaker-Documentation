@@ -1,6 +1,6 @@
-# Fission
+# Spaltung
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.fission`
 
 ## Rezepte hinzufügen
