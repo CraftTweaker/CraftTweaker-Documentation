@@ -57,8 +57,8 @@ defObj.getTickRate(IWorld world);
 
 ### canPlaceBlockAt, canPlaceBlockOnSide
 
-Uses an [IWorld](/Vanilla/World/IWorld/) object, an [IBlockPos](/Vanilla/World/IBlockPos/) object and, depending on the method used, also an [IFacing](/Vanilla/World/IFacing/) object.  
-Returns a bool.
+Использует объект [IWorld](/Vanilla/World/IWorld/) , объект [IBlockPos](/Vanilla/World/IBlockPos/) и в зависимости от используемого метода также объект [IFacing](/Vanilla/World/IFacing/) .  
+Возвращает бул.
 
 ```zenscript
 defObj.canPlaceBlockOnSide(IWorld world, IBlockPos pos, IFacing facing);
