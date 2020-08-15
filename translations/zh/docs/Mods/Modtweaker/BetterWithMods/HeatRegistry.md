@@ -1,14 +1,14 @@
-# HeatRegistry
+# 加热注册表
 
-The HeatRegistry allows assigning an integer value to a block that interacts with the Cauldron, Crucible and Kiln.
+加热注册表允许分配一个整数值给一个与Cauldron、Crucible 和 Kiln交互的方块。
 
-* Default Values: Vanilla fire | 1 Stoked Fire | 2
+* 默认值： 原版火焰|1 存储火焰|2
 
-# Adding a Heat Source
+# 添加热源
 
 ```zenscript
-//stack must have an asssociated block state.
-mods.betterwithmods.HeatRegistry.addHeatSource(IItemStack stack, int heat);
+//stack 必须具有与方块关联的状态。
+mods.betterwithmods.HeatRegistry.addHeatSource(StemStack, int heat);
 
 mods.betterwithmods.HeatRegistry.addHeatSource(IBlockState stack, int heat);
 
