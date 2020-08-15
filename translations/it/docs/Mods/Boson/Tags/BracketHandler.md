@@ -2,7 +2,7 @@
 
 The Bracket Handler is the only way to obtain a tag.
 
-## Syntax
+## Sintassi
 The syntax of this bracket handler is extremely easy to follow, and at the same time it allows for a huge variety of possibilities in which tag it should be returned by the bracket handler.
 
 ```zenscript
