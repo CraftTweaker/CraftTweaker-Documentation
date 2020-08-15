@@ -2,7 +2,7 @@
 
 The *condenser* package is used for adding or removing recipes to/from the Condenser.
 
-## Calling
+## Anruf
 
 You can call the *condenser* package using `mods.skyresources.condenser`
 
