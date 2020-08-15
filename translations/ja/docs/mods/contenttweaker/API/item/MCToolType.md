@@ -2,10 +2,10 @@
 
 A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
@@ -20,13 +20,13 @@ Constructs a ToolType object. If one with the given name already exists, they wi
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| name      | 文字列型 | The name to be used |
+| パラメータ | タイプ  | 説明                  |
+| ----- | ---- | ------------------- |
+| name  | 文字列型 | The name to be used |
 
 
 
-## Methods
+## メソッド
 ### getName
 
 Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
@@ -58,14 +58,14 @@ Return type: String
 ```
 
 
-## Properties
+## プロパティー
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| 名称            | タイプ  | Has Getter | Has Setter |
+| ------------- | ---- | ---------- | ---------- |
+| commandString | 文字列型 | true       | false      |
+| 名前            | 文字列型 | true       | false      |
 
-## Operators
+## 演算子
 ### EQUALS
 
 Compares if two given MCToolType objects are equal
@@ -75,13 +75,13 @@ Compares if two given MCToolType objects are equal
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
-| --------- | ------ | ---------------- |
-| o         | Object | The other object |
+| パラメータ | タイプ    | 説明               |
+| ----- | ------ | ---------------- |
+| o     | Object | The other object |
 
 ## Casters
 
 | Result type | Is Implicit |
 | ----------- | ----------- |
-| String      | false       |
+| 文字列型        | false       |
 
