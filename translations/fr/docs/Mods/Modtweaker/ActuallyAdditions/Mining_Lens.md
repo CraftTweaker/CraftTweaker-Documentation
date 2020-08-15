@@ -1,8 +1,8 @@
-# Mining Lens
+# Lentille minière
 
-## Package
+## Paquet
 
-`mods.actuallyadditions.MiningLens`
+`format@@0 mods.Actually yadditions.MiningLens`
 
 ## Ajouter
 
@@ -15,7 +15,7 @@ mods.actuallyadditions.MiningLens.addStoneOre(<ore:oreIron>, 2);
 mods.actuallyadditions.MiningLens.addNetherOre(<ore:oreGold>, 5);
 ```
 
-## Removal
+## Retirer
 
 ```zenscript
 //mods.actuallyadditions.MiningLens.removeStoneOre(IOreDictEntry ore)
