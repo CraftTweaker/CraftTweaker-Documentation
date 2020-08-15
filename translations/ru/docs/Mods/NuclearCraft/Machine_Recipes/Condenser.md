@@ -1,11 +1,11 @@
 # Конденсатор
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.condenser`
 
 ## Добавление рецептов
 ```zenscript
-mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int condensingTemperature]);
+mods.nuclearcraft.condenser.addRecipe([fluidInput, fluidOutput, @Optional double coolingRequired, @Optional int int condensingTemperature]);
 ```
 
 ## Удаление рецептов
