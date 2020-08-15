@@ -1,22 +1,22 @@
-# Alloying
+# Сплав
 
-The `Alloy` package allows you to add or remove Alloy recipes.
+Пакет `сплава` позволяет добавлять или удалять рецепты сплава.
 
-## Calling
+## Звонок
 
-You can call the Alloy package using `mods.tconstruct.Alloy`
+Вы можете вызвать пакет Alloy, используя `mods.tconstruct.Alloy`
 
-## Add Alloy Recipes
+## Добавить рецепты сплава
 
 ```zenscript
-//mods.tconstruct.Alloy.addRecipe(ILiquidStack output, ILiquidStack[] inputs);
+//mods.tconstruct.Alloy.addRecipe(ILiquidStack, вывод ILiquidStack[]);
 mods.tconstruct.Alloy.addRecipe(<liquid:water> * 10, [<liquid:lava> * 10, <liquid:molten_iron> * 5]);
 ```
 
-## Removing Alloy Recipes
+## Удаление рецептов сплава
 
 ```zenscript
-//mods.tconstruct.Alloy.removeRecipe(ILiquidStack output);
+//mods.tconstruct.Alloy.removeRecipe(ILiquidStack);
 mods.tconstruct.Alloy.removeRecipe(<liquid:water>);
 
 //mods.tconstruct.Alloy.removeRecipe(ILiquidStack output, ILiquidStack[] inputs);
