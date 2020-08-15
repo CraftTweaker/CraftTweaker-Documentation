@@ -1,11 +1,11 @@
 # Enchanter
 
-## Package
+## Пакет
 
 ```zenscript
 import mods.aether_legacy.Enchanter;
 ```
-## Usage
+## Использование
 
 ```zenscript
 Enchanter.registerEnchantment(IItemStack input, IItemStack output, int timeRequired);
