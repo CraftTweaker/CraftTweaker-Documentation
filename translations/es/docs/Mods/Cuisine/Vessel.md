@@ -1,6 +1,6 @@
 # Vessel
 
-## Addition
+## Adicional
 
 ```zenscript
 import mods.cuisine.Vessel;
