@@ -1,6 +1,6 @@
-# Melter
+# Бильтер
 
-## Importing the Package
+## Импортирование пакета
 `mods.nuclearcraft.melter`
 
 ## Добавление рецептов
