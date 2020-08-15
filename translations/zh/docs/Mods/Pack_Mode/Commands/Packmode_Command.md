@@ -1,10 +1,10 @@
-# Packmode Command
+# 软件包模式命令
 
-## Calling
+## 导入
 
-You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
+您使用 `/packmode 新模式` 来调用命令， `新模式` 是新的包模式
 
-## Usage
+## 用法
 
-You use the command to set your game's packmode.  
-Please note that you will need to restart your game in order for the changes to occur!
+您使用该命令来设置您的游戏包模式。  
+请注意，您需要重新开始游戏才能进行更改！
