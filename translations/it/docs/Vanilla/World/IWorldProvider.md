@@ -2,7 +2,7 @@
 
 The World Provider interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldProvider;`
@@ -16,26 +16,26 @@ Note that this method should only be called inside functions that are meant to b
 crafttweaker.world.IWorldProvider.getFromID(int id);
 ```
 
-## ZenMethods without parameters and ZenGetters
+## ZenMetodi senza parametri e ZenGetters
 
-| ZenGetter              | ZenMethod                   | Return Type                            |
+| ZenGetter              | ZenMethod                   | Tipo Di Reso                           |
 | ---------------------- | --------------------------- | -------------------------------------- |
 | actualHeight           | getActualHeight()           | int                                    |
 | actualGroundLevel      | getAverageGroundLevel()     | int                                    |
-| cloudHeight            | getCloudHeight()            | float                                  |
-| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float                                  |
+| cloudHeight            | getCloudHeight()            | galleggiante                           |
+| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | galleggiante                           |
 | dimensionID            | getDimensionID()            | int                                    |
 | height                 | getHeight()                 | int                                    |
-| horizon                | getHorizon()                | double                                 |
+| horizon                | getHorizon()                | doppia                                 |
 | lightBrightnesTable    | getLightBrightnesTable()    | float[]                                |
-| movementFactor         | getMovementFactor()         | double                                 |
+| movementFactor         | getMovementFactor()         | doppia                                 |
 | randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | string                                 |
-| seed                   | getSeed()                   | long                                   |
+| saveFolder             | getSaveFolder()             | stringa                                |
+| seed                   | getSeed()                   | lungo                                  |
 | spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| voidFogYFactor         | getVoidFogYFactor()         | double                                 |
-| worldTime              | getWorldTime()              | long                                   |
+| voidFogYFactor         | getVoidFogYFactor()         | doppia                                 |
+| worldTime              | getWorldTime()              | lungo                                  |
 | canRespawnHere         | canRespawnHere()            | bool                                   |
 | waterVaporize          | doesWaterVaporize()         | bool                                   |
 | skylight               | hasSkyLight()               | bool                                   |
@@ -44,7 +44,7 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 | skyColored             | isSkyColored()              | bool                                   |
 | surfaceWorld           | isSurfaceWorld()            | bool                                   |
 
-## ZenMethods with parameters
+## ZenMethods con parametri
 
 ### get Biome at a certain Position
 
