@@ -1,6 +1,6 @@
-# Electrolyzer
+# Elektrolyzer
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.electrolyzer`
 
 ## Rezepte hinzufügen
