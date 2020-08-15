@@ -16,6 +16,6 @@ PlayerRightClickItem Events implement the following interfaces and are able to c
 ## ZenGetters & ZenSetters
 The following information can be adjusted in the event.
 
-| ZenGetter            | ZenSetter            | type                                  |
+| ZenGetter            | ZenSetter            | typ                                   |
 | -------------------- | -------------------- | ------------------------------------- |
 | `cancellationResult` | `cancellationResult` | string ("allow" / "deny" / "default") |
