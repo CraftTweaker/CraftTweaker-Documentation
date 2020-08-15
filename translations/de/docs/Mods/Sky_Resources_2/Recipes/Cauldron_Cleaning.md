@@ -2,7 +2,7 @@
 
 The *cauldroncleaning* package is used for adding or removing recipes to/from the Cauldron.
 
-## Calling
+## Anruf
 
 You can call the *cauldroncleaning* package using `mods.skyresources.cauldronclean`
 
