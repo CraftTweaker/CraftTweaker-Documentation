@@ -1,33 +1,33 @@
-# MaterialPart
+# Materialteil
 
-A MaterialPart Object is, as the name suggests a combination of a [Material](/Mods/ContentTweaker/Materials/Materials/Material/) and a [Part](/Mods/ContentTweaker/Materials/Parts/Part/), such as `platinum gear`.
+Ein Materialteil Objekt ist, wie der Name vorschlägt, eine Kombination aus einem [Material](/Mods/ContentTweaker/Materials/Materials/Material/) und einem [Teil](/Mods/ContentTweaker/Materials/Parts/Part/), zum Beispiel `Platinausrüstung`.
 
 ## Dieses Paket importieren
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import mods.contenttweaker.MaterialPart;`
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben. Seien Sie also besser sicher als entschuldigen und fügen Sie den Import hinzu.  
+`mods.contenttweaker.MaterialPart;`
 
-## Retrieving such an object
+## Ein solches Objekt wird abgerufen
 
-There are several ways of retreiving such an object, either as list or as single object.
+Es gibt mehrere Möglichkeiten, ein solches Objekt zu retreiben, entweder als Liste oder als einzelnes Objekt.
 
-Single Object:
+Einzelnes Objekt:
 
-- Using the [Material Part Bracket Handler](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
-- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerPart Method
-- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Method
+- Verwendung des [Materialteil Klammerhandlers](/Mods/ContentTweaker/Materials/Brackets/Bracket_MaterialPart/)
+- Verwende eine [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) Registrierungsteil Methode
+- Verwende eine [Ersatzteil](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterial Methode
 
-List:
+Liste:
 
-- Using [MaterialSystem's](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Method
-- Using a [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) registerParts Method
-- Using a [Part's](/Mods/ContentTweaker/Materials/Parts/Part/) registerToMaterials Method
+- Benutze [Materialsystem's](/Mods/ContentTweaker/Materials/MaterialSystem/) registerPartsForMaterial Methode
+- Verwende eine [Material's](/Mods/ContentTweaker/Materials/Materials/Material/) Registrierungsteile Methode
+- Verwende eine [Ersatzteil-](/Mods/ContentTweaker/Materials/Parts/Part/) RegisterToMaterials Methode
 
-## Fields
+## Felder
 
-You can retrieve the following information from a MaterialPart:
+Sie können die folgenden Informationen von einem Materialteil abrufen:
 
-| ZenMethod            | Rückgabetyp                                                                     |
+| ZenMethode           | Rückgabetyp                                                                     |
 | -------------------- | ------------------------------------------------------------------------------- |
 | getName()            | string                                                                          |
 | getLocalizedName()   | string                                                                          |
@@ -37,14 +37,14 @@ You can retrieve the following information from a MaterialPart:
 | getPart()            | [IPart](/Mods/ContentTweaker/Materials/Parts/Part/)                             |
 | getItemStack()       | [IItemStack](/Vanilla/Items/IItemStack/)                                        |
 | getTextureLocation() | string                                                                          |
-| getCTColor()         | [Color](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
+| getCTColor()         | [Farbe](/Mods/ContentTweaker/Vanilla/Types/Color/Color/)                        |
 | getColor()           | int                                                                             |
 | isColorized()        | boolean                                                                         |
 | getData()            | [IMaterialPartData](/Mods/ContentTweaker/Materials/Materials/MaterialPartData/) |
 
-You can also set the following information of a MaterialPart:
+Sie können auch folgende Informationen für einen Materialteil festlegen:
 
-| ZenMethod                           | Parameter              | Beschreibung                                                                                    |
-| ----------------------------------- | ---------------------- | ----------------------------------------------------------------------------------------------- |
-| setColorized(colorized)             | boolean colorized      | Sets if the item's color code is applied                                                        |
-| setTextureLocation(textureLocation) | string textureLocation | Sets the item's texure path. For example, if you want one Gear to look different from the rest. |
+| ZenMethode                          | Parameter                    | Beschreibung                                                                                                             |
+| ----------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| setColorisiert(gefärbt)             | boolesche gefärbt            | Legt fest, ob der Artikelfarbcode angewendet wird                                                                        |
+| setTextureLocation(textureLocation) | Texture-Position des Strings | Legt den Texturpfad des Elements fest. Zum Beispiel, wenn Sie wollen, dass eine Ausrüstung anders aussieht als der Rest. |
