@@ -7,11 +7,11 @@
 
 ## Методы
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The block that needs to be broken.
-- **[IItemStack](/Vanilla/Items/IItemStack/) output** The item the block drops when broken.
-- **Int tool level** tool level for breaking the block.
-- **Float chance** chance between 0-1.
-- **Float fortune chance** chance between 0-1.
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) входной код** Блок должен быть нарушен.
+- **[IItemStack](/Vanilla/Items/IItemStack/) output** Блок падает при разрушении.
+- **Уровень инструмента Int** уровня для разбиения блока.
+- **Ледяной шанс** в диапазоне от 0 до 1.
+- **Ледяной шанс** в промежутке от 0 до 1.
 
 ## Сложение
 
