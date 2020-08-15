@@ -1,33 +1,33 @@
-# ItemBuilderBasic
+# Constructor de objetos básico
 
-The basic builder for items, also called by [mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build). Does not have any special properties, it exists.
+El constructor básico para elementos, también llamado por [mods.contenttweaker.item.basic.ItemBuilderBasic#build](/mods/contenttweaker/API/item/basic/ItemBuilderBasic/#build). No tiene propiedades especiales, existe.
 
-This class was added by a mod with mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
+Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
 Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-mods.contenttweaker.item.basic.ItemBuilderBasic
+mods.contenttweaker.item.basic.Constructor de objetos básico
 ```
 
-## Implemented Interfaces
-ItemBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implementadas
+ItemBuilderBasic implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
 ## Métodos
-### build
+### construir
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instruye CoT para construir lo que se supone que este constructor está construyendo.
 
 ```zenscript
 new ItemBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
 new ItemBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parámetro        | Tipo   | Descripción                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | Cadena | The resource path to give this block |
+| Parámetro            | Tipo   | Descripción                              |
+| -------------------- | ------ | ---------------------------------------- |
+| ubicacin del recurso | Cadena | La ruta de recursos para dar este bloque |
 
 
 
