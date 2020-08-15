@@ -1,17 +1,17 @@
 # Merchant
 
-## Commands
+## Polecenia
 
 The following commands are added to retrieve information about the availible merchant professions & carrers:
 
 - `/ct merchant professions` - outputs a log of valid merchant professions
 - `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
 
-## Package
+## Pakiet
 
 `mods.rockytweaks.Merchant`
 
-## Addition
+## Dodanie
 
 Trades can be added to a specific merchant profession & carrer.
 
@@ -20,6 +20,6 @@ Trades can be added to a specific merchant profession & carrer.
 mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emerald>, <minecraft:diamond>, <minecraft:cobblestone>, 1);
 ```
 
-## Removal
+## Usuwanie
 
 Merchant trade removal is currently not possible.
