@@ -5,7 +5,7 @@
 To access `Sieve` without clarifying the full path, you can import the package at the top of your Script with the following:
 
 ```zenscript
-import mods.exnihilocreatio.Sieve;
+mods.exnihilocreatio.SieveSieve;
 ```
 
 ## Metodos
@@ -17,29 +17,28 @@ import mods.exnihilocreatio.Sieve;
 ## String Mesh
 
 ```zenscript
-Sieve.addStringMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addStringMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.001);
+addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
+addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
 ```
 
 ## Flint Mesh
 
 ```zenscript
-Sieve.addFlintMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addFlintMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.01);
+addIronMeshRecipe(IIngredient, IItemStack, Float chance);
+addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
 ```
 
 ## Iron Mesh
 
 ```zenscript
-Sieve.addIronMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addIronMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 0.1);
+addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
+addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
 ```
 
 ## Diamond Mesh
 
 ```zenscript
-Sieve.addDiamondMeshRecipe(IIngredient, IItemStack, Float chance);
-Sieve.addDiamondMeshRecipe(<minecraft:gravel>, <minecraft:diamond>, 1);
+mods.exnihilocreatio.Sieve.removeAll();
 ```
 
 ## Removal
