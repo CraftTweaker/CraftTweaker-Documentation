@@ -4,7 +4,7 @@
 
 `mods.chisel.Carving`
 
-## Addition
+## Adicional
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);
