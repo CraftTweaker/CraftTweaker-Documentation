@@ -1,8 +1,8 @@
-# Axe Chopping
+# Taglio Ascia
 
-## Availability
+## Disponibilità
 
-Before doing anything, you should check whether axe-chopping is enabled or not:
+Prima di fare qualsiasi cosa, dovresti verificare se il taglio dell'asse è abilitato o meno:
 
 ```zenscript
 import mods.cuisine.AxeChopping;
@@ -23,8 +23,8 @@ AxeChopping.add(IItemStack input, IItemStack output);
 
 AxeChopping.add(<item:minecraft:dirt>, <item:minecraft:diamond>);
 
-// If necessary, it is also possible to use ore dictionary.
-AxeChopping.add(IOreEntry input, IItemStack output);
+// Se necessario, è anche possibile utilizzare il dizionario minerario.
+AxeChopping.add(IOreEntry, IItemStack output);
 
 AxeChopping.add(<ore:cobblestone>, <item:minecraft:diamond>);
 ```
@@ -49,7 +49,7 @@ AxeChopping.remove(String id);
 
 AxeChopping.remove("recipe_name");
 
-// Remove everything!
+// Rimuovi tutto!
 AxeChopping.removeAll();
 ```
 
@@ -58,7 +58,7 @@ AxeChopping.removeAll();
 ```zenscript
 import mods.cuisine.AxeChopping;
 
-val defaultPlanksOutput as int = AxeChopping.getDefaultPlanksOutput();
+val defaultPlanksOutput come int = AxeChopping.getDefaultPlanksOutput();
 
-val defaultStickOutput as int = AxeChopping.getDefaultStickOutput();
+val defaultStickOutput come int = AxeChopping.getDefaultStickOutput();
 ```
