@@ -1,12 +1,12 @@
 # Millstone
 
-## Package
+## Paket
 `import mods.stone_age.MillstoneManager;`
 
 ## Methoden
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) Eingabe**
 - **int activateCount** Activate millstone count
 - **String group** Recipe group
 
