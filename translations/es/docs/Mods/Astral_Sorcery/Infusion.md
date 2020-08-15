@@ -1,24 +1,24 @@
-# Starlight Infusion Recipes
+# Recetas de Infusión Cósmica
 
-You can add and remove crafting infusions.
+Puedes añadir y eliminar infusiones de fabricación.
 
-## Calling
+## Llamando
 
-You can call the InfusionRecipe package using `mods.astralsorcery.StarlightInfusion`.
+Puedes llamar al paquete InfusionRecipe usando `mods.astralsorcery.StarlightInfusion`.
 
-## Removing
+## Eliminando
 
-This will remove the first infusion it finds that creates the provided [IItemStack](/Vanilla/Items/IItemStack/) `output`.  
-If there are multiple recipes that return the provided output, you need to call this method multiple times!
+Esto eliminará la primera infusión que encuentra que crea la [ItemStack](/Vanilla/Items/IItemStack/) `salida`proporcionada.  
+¡Si hay múltiples recetas que retornan la salida proporcionada, necesita llamar a este método varias veces!
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.removeInfusion(IItemStack output);
+//mods.astralsorcery.StarlightInfusion.removeInfusion(salida ItemStack);
 mods.astralsorcery.StarlightInfusion.removeInfusion(<minecraft:ice>);
 ```
 
-## Addition
+## Adicional
 
 ```zenscript
-//mods.astralsorcery.StarlightInfusion.addInfusion(IItemStack input, IItemStack output, boolean consumeMultiple, float consumptionChance, int craftingTickTime);
+//mods.astralsorcery.StarlightInfusion.addInfusion(entrada ItemStack, salida ItemStack, consumeMultiple booleano, posibilidad de consumo flotante, int. craftingTickTime);
 mods.astralsorcery.StarlightInfusion.addInfusion(<astralsorcery:itemjournal>, <minecraft:bow>, false, 0.7, 200);
 ```
