@@ -2,7 +2,7 @@
 
 The World Provider interface is used to get even more information out of an [IWorld](/Vanilla/World/IWorld/) object.
 
-## Importing the package
+## Importation du paquet
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import crafttweaker.world.IWorldProvider;`
@@ -18,31 +18,31 @@ crafttweaker.world.IWorldProvider.getFromID(int id);
 
 ## ZenMethods without parameters and ZenGetters
 
-| ZenGetter              | ZenMethod                   | Return Type                            |
+| ZenGetter              | Méthode Zen                 | Type de retour                         |
 | ---------------------- | --------------------------- | -------------------------------------- |
-| actualHeight           | getActualHeight()           | int                                    |
-| actualGroundLevel      | getAverageGroundLevel()     | int                                    |
-| cloudHeight            | getCloudHeight()            | float                                  |
-| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | float                                  |
-| dimensionID            | getDimensionID()            | int                                    |
-| height                 | getHeight()                 | int                                    |
+| actualHeight           | getActualHeight()           | Indice                                 |
+| actualGroundLevel      | getAverageGroundLevel()     | Indice                                 |
+| cloudHeight            | getCloudHeight()            | flottant                               |
+| currentMoonPhaseFactor | getCurrentMoonPhaseFactor() | flottant                               |
+| dimensionID            | getDimensionID()            | Indice                                 |
+| height                 | getHeight()                 | Indice                                 |
 | horizon                | getHorizon()                | double                                 |
 | lightBrightnesTable    | getLightBrightnesTable()    | float[]                                |
 | movementFactor         | getMovementFactor()         | double                                 |
 | randomizedSpawnPoint   | getRandomizedSpawnPoint()   | [IBlockPos](/Vanilla/World/IBlockPos/) |
-| saveFolder             | getSaveFolder()             | string                                 |
+| saveFolder             | getSaveFolder()             | chaîne de caractères                   |
 | seed                   | getSeed()                   | long                                   |
 | spawnCoordinate        | getSpawnCoordinate()        | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | spawnPoint             | getSpawnPoint()             | [IBlockPos](/Vanilla/World/IBlockPos/) |
 | voidFogYFactor         | getVoidFogYFactor()         | double                                 |
 | worldTime              | getWorldTime()              | long                                   |
-| canRespawnHere         | canRespawnHere()            | bool                                   |
-| waterVaporize          | doesWaterVaporize()         | bool                                   |
-| skylight               | hasSkyLight()               | bool                                   |
-| daytime                | isDaytime()                 | bool                                   |
-| nether                 | isNether()                  | bool                                   |
-| skyColored             | isSkyColored()              | bool                                   |
-| surfaceWorld           | isSurfaceWorld()            | bool                                   |
+| canRespawnHere         | canRespawnHere()            | booléen                                |
+| waterVaporize          | doesWaterVaporize()         | booléen                                |
+| skylight               | hasSkyLight()               | booléen                                |
+| daytime                | isDaytime()                 | booléen                                |
+| nether                 | isNether()                  | booléen                                |
+| skyColored             | isSkyColored()              | booléen                                |
+| surfaceWorld           | isSurfaceWorld()            | booléen                                |
 
 ## ZenMethods with parameters
 
