@@ -16,8 +16,8 @@ MinecartInteract Events implement the following interfaces and are able to call 
 
 ## ZenGetters
 
-| ZenGetter | Type                                     |
+| ZenGetter | タイプ                                      |
 | --------- | ---------------------------------------- |
 | `player`  | [IPlayer](/Vanilla/Players/IPlayer/)     |
-| `item`    | [IItemStack](/Vanilla/Items/IItemStack/) |
-| `hand`    | String                                   |
+| `項目`      | [IItemStack](/Vanilla/Items/IItemStack/) |
+| `hand`    | 文字列型                                     |
