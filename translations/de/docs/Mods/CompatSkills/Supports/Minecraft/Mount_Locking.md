@@ -1,15 +1,15 @@
-# Mount Locking
+# Mount-Sperre
 
-## Mount Locks
+## Einhängesperren
 
-This feature allows you to add a requirement lock to Mounting specific entities!
+Diese Funktion erlaubt es dir, bestimmte Einheiten mit einer Anforderungssperre zu montieren!
 
 ### Syntax
 
-[Link to IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
+[Link zur IEntityDefinition](/Vanilla/Entities/IEntityDefinition/)
 
-    # Blank Example:
-    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition definition, String... defaultRequirements)
+    # Leeres Beispiel:
+    mods.compatskills.AnimalTameLock.addTameLock(IEntityDefinition Definition, String... defaultRequirements)
     
-    # Working Example:
+    # Arbeitsbeispiel:
     mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:pig>, "reskillable:mining|5", "reskillable:magic|7")
