@@ -1,17 +1,17 @@
 # Tree Stump
 
-## Package
+## パッケージ
 `import mods.stone_age.TreeStumpManager;`
 
-## Methods
+## メソッド
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) の入力**
 - **int chopTimes** Chop times
 - **String group** Recipe group
 
-## Addition
+## 加算
 
 ```zenscript
 <recipetype:stone_age:tree_stump>.addRecipe(String name, IItemStack output, IIngredient tool, IIngredient input, int chopTimes, @OptionalString String group)
