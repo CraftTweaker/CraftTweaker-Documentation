@@ -13,12 +13,12 @@ It is a good idea to split your script into multiple files
 - CraftTweaker can even load files in subfolders.
 - Also, CraftTweaker can load .zip files that contain .zs scripts inside them, as long as the .zip file is not password protected.
 
-## Solution
+## 対応
 
 - Split your large scripts into multiple smaller ones.
 - You could for example create one script for each mod, or each mod handler.
 
-## Example
+## 例
 
 ```zenscript
 scripts
@@ -34,13 +34,13 @@ scripts
     oreDict.zs
 ```
 
-## Advantages
+## 利点
 
 - Your script files become easier to debug.
 - An error won't stop your whole script from working but instead only a small part of it.
 - People checking your script files can easier orient themselves
 
-## Disadvantages
+## 欠点
 
 - You need to be careful with the loading order of the scripts (especially if one script removes a recipe and another one adds it). Check the [Priority Preprocessor](/AdvancedFunctions/Preprocessors/PriorityPreprocessor/) if your script loading order is a problem
 - There are many ways to categorize your scripts after and yours may be confusing for outsiders.
