@@ -1,38 +1,38 @@
 # BlockHarvestDropsEvent
 
-The BlockHarvestDrops Event is fired whenever a block is about to drop its items.  
-You can modify the block list as well as the overall drop chance. Set latter to 1 if you do all chance handling beforehand.
+每当一个方块即将丢弃它的物品时，BlockHarvestDrops 事件就会被发射。  
+您可以修改方块列表以及总的丢弃机会。 如果您事先处理所有几率, 则将后者设为1。
 
-## Event Class
+## 事件类
 
 You will need to cast the event in the function header as this class:  
 `crafttweaker.event.BlockHarvestDropsEvent`  
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
-## Event interface extensions
+## 事件界面扩展
 
-BlockHarvestDrops Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+BlockHarvestDros Events 实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+以下信息可以从事件中检索：
 
-| ZenGetter      | ZenSetter    | Type                                             |
-| -------------- | ------------ | ------------------------------------------------ |
-| `player`       |              | [IPlayer](/Vanilla/Players/IPlayer/)             |
-| `isPlayer`     |              | bool                                             |
-| `silkTouch`    |              | bool                                             |
-| `fortuneLevel` |              | int                                              |
-| `drops`        | `drops`      | List<[IItemStack](/Vanilla/Items/IItemStack/)\> |
-| `dropChance`   | `dropChance` | float                                            |
+| ZenGetter  | ZenSetter | 类型                                             |
+| ---------- | --------- | ---------------------------------------------- |
+| `播放器`      |           | [IPlayer](/Vanilla/Players/IPlayer/)           |
+| `isPlayer` |           | bool                                           |
+| `丝绸Touch`  |           | bool                                           |
+| `幸运级别`     |           | 整数                                             |
+| `掉落数`      | `掉落数`     | 列表<[IItemStack](/Vanilla/Items/IItemStack/)\> |
+| `掉落机会`     | `掉落机会`    | 浮点数                                            |
 
-## Adding an item to the list
+## 添加项目到列表
 
-You can either addAssign the list or use the method to add an item to the list:
+您可以添加分配列表或使用方法将项目添加到列表中：
 
 ```zenscript
-event.drops += <minecraft:coal>;
-event.addItem(<minecraft:coal>);
+drops += <minecraft:coal>;
+event.additem(<minecraft:coal>);
 ```
