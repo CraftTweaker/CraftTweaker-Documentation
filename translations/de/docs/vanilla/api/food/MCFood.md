@@ -12,10 +12,10 @@ crafttweaker.api.food.MCFood
 ```zenscript
 new crafttweaker.api.food.MCFood(healing as int, saturation as float);
 ```
-| Parameter  | Type  | Beschreibung            |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| Parameter | Type  | Beschreibung            |
+| --------- | ----- | ----------------------- |
+| healing   | int   | No description provided |
+| Sättigung | float | No description provided |
 
 
 
@@ -48,7 +48,7 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter | Type                                                                                          | Description             |
+| Parameter | Type                                                                                          | Beschreibung            |
 | --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
@@ -113,13 +113,13 @@ Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 myMCFood.setSaturation(saturation as float);
 ```
 
-| Parameter  | Type  | Beschreibung            |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| Parameter | Type  | Beschreibung            |
+| --------- | ----- | ----------------------- |
+| Sättigung | float | No description provided |
 
 
 
-## Properties
+## Eigenschaften
 
 | Name           | Type    | Has Getter | Has Setter |
 | -------------- | ------- | ---------- | ---------- |
@@ -127,5 +127,5 @@ myMCFood.setSaturation(saturation as float);
 | healing        | int     | true       | false      |
 | isFastEating   | boolean | true       | false      |
 | meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| Sättigung      | float   | true       | false      |
 
