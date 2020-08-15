@@ -1,6 +1,6 @@
-# Solid Canning Machine
+# Macchina Di Scatola Solida
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.techreborn.solidCanningMachine`
 
 ## Aggiunta Di Ricette
