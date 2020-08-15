@@ -1,68 +1,68 @@
 # Blast Furnace
 
-The Blast Furnace package can be used to add/remove recipes/fuels to/from the Immersive Engineering Blast Furnace.
+Il pacchetto Blast Furnace può essere utilizzato per aggiungere/rimuovere ricette/combustibili da/dalla fornace di ingegneria immersiva.
 
-## Calling The Package
+## Chiamare Il Pacchetto
 
-You can call the BlastFurnace package using `mods.immersiveengineering.BlastFurnace`.
+Puoi chiamare il pacchetto BlastFurnace usando `mods.immersiveengineering.BlastFurnace`.
 
-## Add Recipe:
+## Aggiungi Ricetta:
 
-| Required | Type   | Data Type                                           |
-| -------- | ------ | --------------------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Input  | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time   | Integer                                             |
-| Optional | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Richiesto   | Tipo   | Tipo Di Dati                                         |
+| ----------- | ------ | ---------------------------------------------------- |
+| Richiesto   | Output | [IItemstack](/Vanilla/Items/IItemStack/)             |
+| Richiesto   | Input  | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto   | Tempo  | Intero                                               |
+| Facoltativo | Slag   | [IItemstack](/Vanilla/Items/IItemStack/)             |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.BlastFurnace.addRecipe(IItemStack output, IIngredient input, int time, @Optional IItemStack slag);
-mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
+mods.immersiveengineering. lastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000);
 mods.immersiveengineering.BlastFurnace.addRecipe(<minecraft:diamond>, <ore:logWood>, 2000, <minecraft:dirt>);
 ```
 
-## Remove Recipe
+## Rimuovi Ricetta
 
-| Type   | Data Type                                |
+| Tipo   | Tipo Di Dati                             |
 | ------ | ---------------------------------------- |
 | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Esempio:
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.BlastFurnace.removeRecipe(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeRecipe(<minecraft:diamond>;
 ```
 
-## Add Fuel
+## Aggiungi Carburante
 
-| Required | Type  | Data Type                                           |
-| -------- | ----- | --------------------------------------------------- |
-| Required | Input | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time  | Integer                                             |
+| Richiesto | Tipo  | Tipo Di Dati                                         |
+| --------- | ----- | ---------------------------------------------------- |
+| Richiesto | Input | [IIngrediente](/Vanilla/Variable_Types/IIngredient/) |
+| Richiesto | Tempo | Intero                                               |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.BlastFurnace.addFuel(IIngredient input, int time);
 mods.immersiveengineering.BlastFurnace.addFuel(<ore:plankWood>, 2000);
 ```
 
-## Remove Fuel
+## Rimuovi Carburante
 
-| Required | Type   | Data Type                                |
-| -------- | ------ | ---------------------------------------- |
-| Required | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Richiesto | Tipo   | Tipo Di Dati                             |
+| --------- | ------ | ---------------------------------------- |
+| Richiesto | Output | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example
+### Esempio
 
 ```zenscript
-//Example:
+//Esempio:
 mods.immersiveengineering.BlastFurnace.removeFuel(IItemStack output);
 mods.immersiveengineering.BlastFurnace.removeFuel(<minecraft:planks>);
 ```
