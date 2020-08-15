@@ -1,10 +1,10 @@
-# Carving
+# Intaglio
 
-## Package
+## Pacchetto
 
 `mods.chisel.Carving`
 
-## Addition
+## Addizione
 
 ```zenscript
 //mods.chisel.Carving.addGroup(String name);
@@ -13,9 +13,9 @@ mods.chisel.Carving.addGroup("test");
 mods.chisel.Carving.addVariation("test", <minecraft:stone>);
 ```
 
-## Removal
+## Rimozione
 
-You can get the names of the groups by running `/ct chiselGroups`
+Puoi ottenere i nomi dei gruppi eseguendo `/ct chiselGroups`
 
 ```zenscript
 //mods.chisel.Carving.removeGroup(String name);
