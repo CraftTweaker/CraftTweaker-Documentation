@@ -3,13 +3,13 @@
 ## Package
 `mods.alchemistry.Dissolver`
 
-## Methods
+## Méthodes
 - **[IItemStack](/Vanilla/Items/IItemStack/) input** - The input of the recipe.
 - **boolean relativeProbability** - Probability Calculation Boolean
 - **int rolls** -  Possibilty of Roles
 - **probabilityGroups** - An array of arrays with an double followed by any # of [IItemStack](/Vanilla/Items/IItemStack/)s. The double refers to the probability for its group.
 
-## Addition
+## Ajouter
 ```zenscript
 mods.alchemistry.Dissolver.addRecipe(IIngredient input, boolean relativeProbability, int rolls, Object[][] probabilityGroups);
 mods.alchemistry.Dissolver.addRecipe(<minecraft:dye:9>, false, 5,
