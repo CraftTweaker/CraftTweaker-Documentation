@@ -3,7 +3,7 @@
 A Vector3d object is a vector that uses three doubles for the directions.  
 They have several utility methods and getters.
 
-## Importing the class
+## クラスのインポート
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.world.IVector3d`
@@ -19,7 +19,7 @@ crafttweaker.world.IVector3d.create(0.0D, 0.0D, 0.0D);
 
 ## ZenGetters
 
-| ZenGetter  | Type      |
+| ZenGetter  | タイプ       |
 | ---------- | --------- |
 | x          | double    |
 | y          | double    |
