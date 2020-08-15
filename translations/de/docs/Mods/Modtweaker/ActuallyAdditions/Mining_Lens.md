@@ -1,6 +1,6 @@
-# Mining Lens
+# Minenlinse
 
-## Package
+## Paket
 
 `mods.actuallyadditions.MiningLens`
 
