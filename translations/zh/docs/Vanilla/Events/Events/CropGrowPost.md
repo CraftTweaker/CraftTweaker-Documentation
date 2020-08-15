@@ -1,6 +1,6 @@
-# CropGrowPostEvent
+# CropGrowPPost事件
 
-The CropGrowPost Event is fired once a crop block has **successfully** grown. It cannot be canceled, and merely serves as a notification of crop growth.
+一旦一个裁剪块成功增长了 **** ，作物生长后事件就会被发射。 它不能取消，只是作为作物增长的通知。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-CropGrowPost Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+CropGrowPost Events 实现了以下接口，并且能够调用他们所有的方法/getter/setter
 
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
@@ -16,7 +16,7 @@ CropGrowPost Events implement the following interfaces and are able to call all 
 ## ZenGetters
 以下信息可以从事件中检索：
 
-| ZenGetter            | ZenSetter | 类型                                          |
-| -------------------- | --------- | ------------------------------------------- |
-| `originalBlockState` |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
-| `originalBlock`      |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
+| ZenGetter | ZenSetter | 类型                                          |
+| --------- | --------- | ------------------------------------------- |
+| `原始方块状态`  |           | [IBlockState](/Vanilla/Blocks/IBlockState/) |
+| `原始块`     |           | [IBlock](/Vanilla/Blocks/IBlock/)           |
