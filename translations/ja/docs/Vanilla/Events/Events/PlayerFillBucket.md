@@ -21,9 +21,9 @@ PlayerFillBucket Events implement the following interfaces and are able to call 
 
 The following information can be retrieved from the event:
 
-| ZenGetter        | Return Type                                        |
+| ZenGetter        | 戻り値                                                |
 | ---------------- | -------------------------------------------------- |
-| `canceled`       | boolean                                            |
+| `canceled`       | boolean型                                           |
 | `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
 | `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
 | `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
@@ -32,8 +32,8 @@ The following information can be retrieved from the event:
 | `z`              | int                                                |
 | `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
 | `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
+| `ブロック`           | [IBlock](/Vanilla/Blocks/IBlock/)                  |
+| `寸法`             | int                                                |
 | `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
 
 ## ZenMethods
