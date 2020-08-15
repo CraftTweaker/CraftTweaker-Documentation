@@ -4,7 +4,7 @@ This event is fired whenever a fireball impacts an entity but before damage, etc
 
 Acceleration values from the fireball entity are available through zengetters.
 
-## Importing the class
+## クラスのインポート
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.ProjectileImpactFireballEvent;`
 
@@ -14,11 +14,11 @@ ProjectileImpactFireball Events implement the following interfaces and are able 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters and ZenSetters
+## ZenGettersとZenSetters
 
 The following information can be retrieved from the event:
 
-| ZenGetter       | ZenSetter       | Type                                                      |
+| ZenGetter       | ZenSetter       | タイプ                                                       |
 | --------------- | --------------- | --------------------------------------------------------- |
 | `fireball`      |                 | [IEntity](/Vanilla/Entities/IEntity/)                     |
 | `shooter`       |                 | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
