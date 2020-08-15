@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Fermenter Recipes
 
-## Calling
+## Appel en cours
 
 You can call the package using `mods.forestry.Fermenter`
 
@@ -23,13 +23,13 @@ mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:w
 
 Amount of fluid output: fermentationValue * fluidOutputModifier
 
-| Parameter           | Type                                           | description                                   |
+| Paramètre           | Type de texte                                  | Libellé                                       |
 | ------------------- | ---------------------------------------------- | --------------------------------------------- |
 | fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
 | resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
 | fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's liquid input                     |
-| fermentationValue   | int                                            | Amount of inputFluid on organic item requires |
-| fluidOutputModifier | int                                            | Output multiplier                             |
+| fermentationValue   | Indice                                         | Amount of inputFluid on organic item requires |
+| fluidOutputModifier | Indice                                         | Output multiplier                             |
 
 ## Fuel Removal
 
@@ -46,8 +46,8 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Parameter       | Type                                     | Description                                                                         |
+| Paramètre       | Type de texte                            | Libellé                                                                             |
 | --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
-| item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
-| fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
-| burnDuration    | int                                      | Amount of work cycles a single item of this fuel lasts before expiring.             |
+| Élément         | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
+| fermentPerCycle | Indice                                   | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
+| burnDuration    | Indice                                   | Amount of work cycles a single item of this fuel lasts before expiring.             |
