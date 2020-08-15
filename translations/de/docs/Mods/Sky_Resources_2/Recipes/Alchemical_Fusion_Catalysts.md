@@ -2,7 +2,7 @@
 
 The *catalysts* package is used for adding or removing catalysts for Alchemical Fusion.
 
-## Calling
+## Anruf
 
 You can call the *catalysts* package using `mods.skyresources.catalysts`
 
