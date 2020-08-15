@@ -6,7 +6,7 @@ Tree Tweaker is a CraftTweaker addon that allows you to add custom trees to worl
 
 Tree Tweaker issues should be discussed at the [Tree Tweaker issue tracker](https://github.com/superfluke/treetweaker/issues).
 
-## Package
+## パッケージ
 
 `import mods.treetweaker.TreeFactory;`
 
