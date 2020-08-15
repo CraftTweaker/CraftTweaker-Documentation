@@ -1,8 +1,8 @@
 # ITICMaterial Bracket Handler
 
-The Material Part Bracket Handler gives you access to the [Tinkers' Materials](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) in the game. It is only possible to get Materials registered in the game, so you need to be careful when adding or removing certain mods.
+Der Materialteil Klammerhandler gibt dir Zugriff auf die [Tinkers' Materialien](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) im Spiel. Es ist nur möglich, Materialien im Spiel registriert zu bekommen, daher müssen Sie vorsichtig sein, wenn Sie bestimmte Mods hinzufügen oder entfernen.
 
-Materials are referenced in the Material Bracket handler this way:
+Materialien werden auf diese Weise im Materialklappenhandler referenziert:
 
 ```zenscript
 <ticmat:mat>
@@ -10,5 +10,5 @@ Materials are referenced in the Material Bracket handler this way:
 <ticmat:stone>
 ```
 
-If the ITICMaterial is found, this will return an [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) Object.  
-Please refer to the [respective Wiki entry](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) for further information on what you can do with these.
+Wenn das ITICMaterial gefunden wird, wird ein [ITICMaterial](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) Objekt zurückgegeben.  
+Bitte lesen Sie den [entsprechenden Wiki-Eintrag](/Mods/Modtweaker/TConstruct/Materials/ITICMaterial/) für weitere Informationen darüber, was Sie damit tun können.
