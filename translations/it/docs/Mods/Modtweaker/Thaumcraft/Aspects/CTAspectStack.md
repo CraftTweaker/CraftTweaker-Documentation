@@ -2,12 +2,12 @@
 
 A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
 
-## Importing the package
+## Importazione del pacchetto
 
 It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
 `import thaumcraft.aspect.CTAspectStack;`
 
-## Retrieving such an object
+## Recupero di un tale oggetto
 
 You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
 
@@ -17,9 +17,9 @@ val aspect = <aspect:ignis>;
 
 ## ZenGetters
 
-| Name     | Type                                                      |
+| Nome     | Tipo                                                      |
 | -------- | --------------------------------------------------------- |
-| amount   | int                                                       |
+| importo  | int                                                       |
 | internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
 ## Setting the amount
