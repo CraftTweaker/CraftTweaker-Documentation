@@ -8,19 +8,19 @@ Potrebbe essere necessario importare il pacchetto, se si incontrano dei problemi
 crafttweaker.api.recipe.RecipeFunctionSingle
 ```
 
-## Functional Interface
+## Interfaccia Funzionale
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+Questa classe è un'interfaccia funzionale. Ciò significa che è possibile utilizzare la notazione lambda per creare un'istanza di esso. La notazione lambda assomiglia:
 ```zenscript
-(usualOut, inputs) => <item:minecraft:dirt>
+(usualOut, input) => <item:minecraft:dirt>
 ```
 ## Metodi
-### process
+### processo
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Tipo di restituzione: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionSingle.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack);
+myRecipeFunctionSingle.process(usualOut come crafttweaker.api.item.IItemStack, input come crafttweaker.api.item.IItemStack);
 ```
 
 | Parametro | Tipo                                                              | Descrizione                 |
