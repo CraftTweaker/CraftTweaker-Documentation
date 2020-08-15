@@ -5,13 +5,13 @@
 mods.alchemistry.Atomizer
 ```
 
-## Methods
+## Méthodes
 **[IItemStack](/Vanilla/Items/IItemStack/) output** - The output of the recipe.
 
 **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) input** - The input of the recipe.
 
 
-## Addition
+## Ajouter
 ```zenscript
 mods.alchemistry.Atomizer.addRecipe(IItemStack output, ILiquidStack input);
 mods.alchemistry.Atomizer.addRecipe(<minecraft:redstone>,<liquid:beryllium>*500);
