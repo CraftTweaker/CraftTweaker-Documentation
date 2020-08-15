@@ -3,18 +3,18 @@
 `import mods.gardenstuff.CompostBin;`
 
 ## Metodi
-- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** The item to be composted.
-- **int processTime** Amount of energy created per tick in a base-line machine.
+- **[IItemStack](/Vanilla/Liquids/IItemStack/) item** L'elemento da compostare.
+- **int processTime** Quantità di energia creata per tick in una macchina a linea di base.
 - **[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry) oredictKey** An oreDictionary entry.
 
-## Add Compostable Item
+## Aggiungi Elemento Compostabile
 ```zenscript
 mods.gardenstuff.CompostBin.add(IItemStack item, int processTime);
 
 mods.gardenstuff.CompostBin.add(<minecraft:carrot>, 150);
 ```
 
-## Add Compostable oreDictionary Entry
+## Aggiungi voce per il dizionario orale compostabile
 ```zenscript
 mods.gardenstuff.CompostBin.add(oredictKey, int processTime);
 
