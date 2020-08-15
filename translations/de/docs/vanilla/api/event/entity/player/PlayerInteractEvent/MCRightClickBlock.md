@@ -105,9 +105,9 @@ myMCRightClickBlock.isCanceled();
 myMCRightClickBlock.setCanceled(canceled as boolean);
 ```
 
-| Parameter | Type    | Beschreibung            |
-| --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+| Parameter   | Type    | Beschreibung            |
+| ----------- | ------- | ----------------------- |
+| abgebrochen | boolean | No description provided |
 
 
 
