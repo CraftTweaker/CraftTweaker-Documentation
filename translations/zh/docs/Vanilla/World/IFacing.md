@@ -1,48 +1,48 @@
 # IFacing
 
-The IFacing Interface allows you to get an [IBlockPos's](/Vanilla/World/IBlockPos/) possible directions.
+IFacing 接口允许您获得 [IBlockPos's](/Vanilla/World/IBlockPos/) 可能的方向。
 
 ## 导入相关包
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import crafttweaker.world.IFacing;`
+如果您遇到任何问题，可能需要导入软件包，所以比抱歉更安全并添加导入。  
+`导入craftweaper.world.IFaction；`
 
-## Enumerations
+## 枚举数
 
-The facing Interface has 7 static Methods, each returning the said direction.  
-The last one takes the direction as String input (e.g. `"NORTH"`)
+对接界面有7个静态方法，每个方法返回上述方向。  
+最后一个人以字符串输入为方向 (例如， `"NORTH"`)
 
 ```zenscript
-crafttweaker.world.Facing.north()
-crafttweaker.world.Facing.east()
-crafttweaker.world.Facing.south()
-crafttweaker.world.Facing.west()
-crafttweaker.world.Facing.down()
-crafttweaker.world.Facing.up()
+craftttweeper.world.Facing.north()
+craftmiliter.world.Facing.east()
+craftmiliter.world.Facing.south()
+craftweeper.world.Facing.west()
+craftmiliter.world.Facing.down()
+craftweeper.world.Facting.up()
 
 
-crafttweaker.world.Facing.fromString(String name);
+craftbinweer.world.Facting.Facting.froming String(String name);
 ```
 
-## ZenGetters/ZenMethods without parameters
+## 不带参数的 ZenGetters/ZenMethods
 
-| ZenGetter | ZenMethod  | 返回值类型   |
-| --------- | ---------- | ------- |
-| name（名称）  | getName()  | string  |
-| rotateY   | rotateY()  | IFacing |
-| opposite  | opposite() | IFacing |
+| ZenGetter | ZenMethod | 返回值类型   |
+| --------- | --------- | ------- |
+| name（名称）  | getName() | 字符串     |
+| rotateY   | rotateY() | IFacing |
+| 相反的       | 反向()      | IFacing |
 
-## Other methods
+## 其他方法
 
-### Comparing two Facings
+### 比较两个面
 
-You can compare two facings using the standart comparing Operators `== != < > <= >=`  
-Alternatively, you can use the function, though the function returns an int that is 0 if they are equal.
+您可以通过对比操作员 `== 的标准来比较两个阵营！ < > <= >=`  
+替代。 您可以使用函数，但函数返回一个整数为0，如果它们相同。
 
 ```zenscript
-//Returns true or false
+//返回true 或 false
 facingOne == facingTwo;
 
-//Returns 0 if they are equal
+///return 0 如果他们等于
 facingOne.compare(facingTwo);
 ```
