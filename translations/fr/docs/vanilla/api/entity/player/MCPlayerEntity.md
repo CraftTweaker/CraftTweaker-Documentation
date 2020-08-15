@@ -2,13 +2,13 @@
 
 This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importation de la classe
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
-## Methods
+## Méthodes
 ### addExhaustion
 
 increases exhaustion level by supplied amount
@@ -17,9 +17,9 @@ increases exhaustion level by supplied amount
 myMCPlayerEntity.addExhaustion(exhaustion as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| exhaustion | float | No description provided |
+| Paramètre  | Type de texte | Libellé                 |
+| ---------- | ------------- | ----------------------- |
+| exhaustion | flottant      | No description provided |
 
 
 ### addExperienceLevel
@@ -30,9 +30,9 @@ Add experience levels to this player.
 myMCPlayerEntity.addExperienceLevel(levels as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| levels    | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| levels    | Indice        | No description provided |
 
 
 ### addItemStackToInventory
@@ -43,7 +43,7 @@ Returns boolean
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
+| Paramètre     | Type de texte                                                     | Libellé                 |
 | ------------- | ----------------------------------------------------------------- | ----------------------- |
 | p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
@@ -56,11 +56,11 @@ Adds a value to a movement statistic field - like run, walk, swin or climb.
 myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
 ```
 
-| Parameter    | Type   | Description             |
-| ------------ | ------ | ----------------------- |
-| p_71000_1_ | double | No description provided |
-| p_71000_3_ | double | No description provided |
-| p_71000_5_ | double | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| p_71000_1_ | double        | No description provided |
+| p_71000_3_ | double        | No description provided |
+| p_71000_5_ | double        | No description provided |
 
 
 ### addPotionEffect
@@ -71,7 +71,7 @@ Returns boolean
 myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter        | Type                                                                                          | Description             |
+| Paramètre        | Type de texte                                                                                 | Libellé                 |
 | ---------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
@@ -84,9 +84,9 @@ Add to player's score
 myMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| scoreIn   | Indice        | No description provided |
 
 
 ### addTag
@@ -97,9 +97,9 @@ Returns boolean
 myMCPlayerEntity.addTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| Paramètre | Type de texte        | Libellé                 |
+| --------- | -------------------- | ----------------------- |
+| Étiquette | Chaîne de caractères | No description provided |
 
 
 ### addVelocity
@@ -110,11 +110,11 @@ Adds to the current velocity of the entity, and sets  to true.
 myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### allowLogging
@@ -141,12 +141,12 @@ Returns boolean
 myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_213373_1_ | double  | No description provided |
-| p_213373_3_ | double  | No description provided |
-| p_213373_5_ | double  | No description provided |
-| p_213373_7_ | boolean | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_213373_1_ | double        | No description provided |
+| p_213373_3_ | double        | No description provided |
+| p_213373_5_ | double        | No description provided |
+| p_213373_7_ | boolean       | No description provided |
 
 
 ### baseTick
@@ -165,7 +165,7 @@ Returns boolean
 myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
+| Paramètre | Type de texte                                                                              | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
 | other     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
@@ -234,9 +234,9 @@ Returns boolean
 myMCPlayerEntity.canEat(ignoreHunger as boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| ignoreHunger | boolean | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| ignoreHunger | boolean       | No description provided |
 
 
 ### canHarvestBlock
@@ -247,7 +247,7 @@ Returns boolean
 myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
+| Paramètre | Type de texte                                                           | Libellé                 |
 | --------- | ----------------------------------------------------------------------- | ----------------------- |
 | state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 
@@ -270,11 +270,11 @@ Returns boolean
 myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Paramètre | Type de texte                                                     | Libellé                 |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | No description provided |
 | facing    | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | No description provided |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| empilage  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### canRenderOnFire
@@ -311,11 +311,11 @@ Returns boolean
 myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
 ```
 
-| Parameter    | Type                                                                    | Description             |
+| Paramètre    | Type de texte                                                           | Libellé                 |
 | ------------ | ----------------------------------------------------------------------- | ----------------------- |
 | state        | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 | pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
-| fallDistance | float                                                                   | No description provided |
+| fallDistance | flottant                                                                | No description provided |
 
 
 ### canUpdate
@@ -331,9 +331,9 @@ myMCPlayerEntity.canUpdate();
 myMCPlayerEntity.canUpdate(value as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| value     | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| valeur    | boolean       | No description provided |
 
 
 ### canUseCommandBlock
@@ -374,7 +374,7 @@ Returns boolean
 myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter    | Type                                                              | Description             |
+| Paramètre    | Type de texte                                                     | Libellé                 |
 | ------------ | ----------------------------------------------------------------- | ----------------------- |
 | curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
@@ -391,9 +391,9 @@ myMCPlayerEntity.detach();
 myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_190777_1_ | boolean | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_190777_1_ | boolean       | No description provided |
 
 
 ### doesEntityNotTriggerPressurePlate
@@ -414,9 +414,9 @@ Returns boolean
 myMCPlayerEntity.equals(p_equals_1_ as Object);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_equals_1_ | Object | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_equals_1_ | Object        | No description provided |
 
 
 ### extinguish
@@ -433,10 +433,10 @@ myMCPlayerEntity.extinguish();
 myMCPlayerEntity.fall(distance as float, damageMultiplier as float);
 ```
 
-| Parameter        | Type  | Description             |
-| ---------------- | ----- | ----------------------- |
-| distance         | float | No description provided |
-| damageMultiplier | float | No description provided |
+| Paramètre                | Type de texte | Libellé                 |
+| ------------------------ | ------------- | ----------------------- |
+| distance                 | flottant      | No description provided |
+| Multiplicateur de dégâts | flottant      | No description provided |
 
 
 ### findAmmo
@@ -447,7 +447,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myMCPlayerEntity.findAmmo(shootable as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
+| Paramètre | Type de texte                                                     | Libellé                 |
 | --------- | ----------------------------------------------------------------- | ----------------------- |
 | shootable | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
@@ -466,11 +466,11 @@ myMCPlayerEntity.func_213300_bk();
 myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_213312_5_ as double);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_213312_1_ | double | No description provided |
-| p_213312_3_ | double | No description provided |
-| p_213312_5_ | double | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_213312_1_ | double        | No description provided |
+| p_213312_3_ | double        | No description provided |
+| p_213312_5_ | double        | No description provided |
 
 
 ### func_213314_bj
@@ -497,7 +497,7 @@ Returns boolean
 myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter   | Type                                                              | Description             |
+| Paramètre   | Type de texte                                                     | Libellé                 |
 | ----------- | ----------------------------------------------------------------- | ----------------------- |
 | itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
@@ -540,7 +540,7 @@ Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MC
 myMCPlayerEntity.getActivePotionEffect(potionIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
+| Paramètre | Type de texte                                                                 | Libellé                 |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
 | potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
@@ -647,9 +647,9 @@ Returns [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/M
 myMCPlayerEntity.getClassification(forSpawnCount as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| forSpawnCount | boolean | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| forSpawnCount | boolean       | No description provided |
 
 
 ### getCollisionBorderSize
@@ -678,9 +678,9 @@ Returns float
 myMCPlayerEntity.getCooledAttackStrength(adjustTicks as float);
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| adjustTicks | float | No description provided |
+| Paramètre   | Type de texte | Libellé                 |
+| ----------- | ------------- | ----------------------- |
+| adjustTicks | flottant      | No description provided |
 
 
 ### getDigSpeed
@@ -691,7 +691,7 @@ Returns float
 myMCPlayerEntity.getDigSpeed(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
+| Paramètre | Type de texte                                                           | Libellé                 |
 | --------- | ----------------------------------------------------------------------- | ----------------------- |
 | state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 
@@ -703,7 +703,7 @@ Returns float
 myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                                    | Description             |
+| Paramètre | Type de texte                                                           | Libellé                 |
 | --------- | ----------------------------------------------------------------------- | ----------------------- |
 | arg0      | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 | arg1      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
@@ -717,11 +717,11 @@ Returns double
 myMCPlayerEntity.getDistanceSq(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### getEntityId
@@ -894,9 +894,9 @@ Returns float
 myMCPlayerEntity.getPitch(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| partialTicks | flottant      | No description provided |
 
 
 ### getPortalCooldown
@@ -985,9 +985,9 @@ Returns float
 myMCPlayerEntity.getSwimAnimation(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| partialTicks | flottant      | No description provided |
 
 
 ### getSwingProgress
@@ -1000,9 +1000,9 @@ Returns float
 myMCPlayerEntity.getSwingProgress(partialTickTime as float);
 ```
 
-| Parameter       | Type  | Description             |
-| --------------- | ----- | ----------------------- |
-| partialTickTime | float | No description provided |
+| Paramètre       | Type de texte | Libellé                 |
+| --------------- | ------------- | ----------------------- |
+| partialTickTime | flottant      | No description provided |
 
 
 ### getTags
@@ -1075,9 +1075,9 @@ Returns float
 myMCPlayerEntity.getYaw(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| partialTicks | flottant      | No description provided |
 
 
 ### giveExperiencePoints
@@ -1086,9 +1086,9 @@ myMCPlayerEntity.getYaw(partialTicks as float);
 myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_195068_1_ | int  | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_195068_1_ | Indice        | No description provided |
 
 
 ### handleStatusUpdate
@@ -1097,9 +1097,9 @@ myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
 myMCPlayerEntity.handleStatusUpdate(id as byte);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | byte | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| id        | octet         | No description provided |
 
 
 ### handleWaterMovement
@@ -1120,7 +1120,7 @@ Returns boolean
 myMCPlayerEntity.hasCustomName();
 ```
 
-### hasNoGravity
+### Si vous avez un problème de gravité, vous pouvez le faire en cliquant ici .
 
 Returns boolean
 
@@ -1136,9 +1136,9 @@ Returns boolean
 myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_211513_1_ | int  | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_211513_1_ | Indice        | No description provided |
 
 
 ### hasReducedDebug
@@ -1167,9 +1167,9 @@ Heal living entity (param: amount of half-hearts)
 myMCPlayerEntity.heal(healAmount as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healAmount | float | No description provided |
+| Paramètre            | Type de texte | Libellé                 |
+| -------------------- | ------------- | ----------------------- |
+| format@@0 healAmount | flottant      | No description provided |
 
 
 ### ignoreItemEntityData
@@ -1294,7 +1294,7 @@ Returns boolean
 myMCPlayerEntity.isEntityUndead();
 ```
 
-### isGlowing
+### Brillant
 
 Returns boolean
 
@@ -1342,11 +1342,11 @@ Returns boolean
 myMCPlayerEntity.isInRangeToRender3d(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### isInRangeToRenderDist
@@ -1359,9 +1359,9 @@ Returns boolean
 myMCPlayerEntity.isInRangeToRenderDist(distance as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| distance  | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| distance  | double        | No description provided |
 
 
 ### isInWater
@@ -1390,7 +1390,7 @@ Returns boolean
 myMCPlayerEntity.isInWaterRainOrBubbleColumn();
 ```
 
-### isInvisible
+### est invisible
 
 Returns boolean
 
@@ -1408,9 +1408,9 @@ Returns boolean
 myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
+| Paramètre | Type de texte                                                                              | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| Joueur    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
 
 ### isInvulnerable
@@ -1449,14 +1449,14 @@ Returns boolean
 myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
-### isOnLadder
+### format@@0 isOnLadder
 
 Returns true if this entity should move as if it were on a ladder (either because it's actually on a ladder, or for AI reasons)
 
@@ -1500,7 +1500,7 @@ Returns boolean
 myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
+| Paramètre | Type de texte                                                                 | Libellé                 |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
 | potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
@@ -1513,7 +1513,7 @@ Returns boolean
 myMCPlayerEntity.isPotionApplicable(potioneffectIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter      | Type                                                                                          | Description             |
+| Paramètre      | Type de texte                                                                                 | Libellé                 |
 | -------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
 | potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
@@ -1652,11 +1652,11 @@ myMCPlayerEntity.livingTick();
 myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn as float, rotationPitchIn as float);
 ```
 
-| Parameter       | Type                                                         | Description             |
+| Paramètre       | Type de texte                                                | Libellé                 |
 | --------------- | ------------------------------------------------------------ | ----------------------- |
 | pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| rotationYawIn   | float                                                        | No description provided |
-| rotationPitchIn | float                                                        | No description provided |
+| rotationYawIn   | flottant                                                     | No description provided |
+| rotationPitchIn | flottant                                                     | No description provided |
 
 
 ### onAddedToWorld
@@ -1673,7 +1673,7 @@ Called by a player entity when they collide with an entity
 myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
+| Paramètre | Type de texte                                                                              | Libellé                 |
 | --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
 | entityIn  | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
@@ -1684,10 +1684,10 @@ myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.
 myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, cost as int);
 ```
 
-| Parameter     | Type                                                              | Description             |
+| Paramètre     | Type de texte                                                     | Libellé                 |
 | ------------- | ----------------------------------------------------------------- | ----------------------- |
 | enchantedItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| cost          | int                                                               | No description provided |
+| cost          | Indice                                                            | No description provided |
 
 
 ### onEnterBubbleColumn
@@ -1696,9 +1696,9 @@ myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, co
 myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| downwards | boolean       | No description provided |
 
 
 ### onEnterBubbleColumnWithAirAbove
@@ -1707,9 +1707,9 @@ myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
 myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(downwards as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| downwards | boolean       | No description provided |
 
 
 ### onKillCommand
@@ -1748,7 +1748,7 @@ myMCPlayerEntity.preparePlayerToSpawn();
 myMCPlayerEntity.recalculateSize();
 ```
 
-### remove
+### Enlever
 
 ```zenscript
 myMCPlayerEntity.remove();
@@ -1759,9 +1759,9 @@ myMCPlayerEntity.remove();
 myMCPlayerEntity.remove(keepData as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| keepData  | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| keepData  | boolean       | No description provided |
 
 
 ### removeActivePotionEffect
@@ -1772,7 +1772,7 @@ Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MC
 myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
+| Paramètre | Type de texte                                                                 | Libellé                 |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
 | arg0      | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
@@ -1793,7 +1793,7 @@ Returns boolean
 myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
+| Paramètre | Type de texte                                                                 | Libellé                 |
 | --------- | ----------------------------------------------------------------------------- | ----------------------- |
 | effectIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
@@ -1806,9 +1806,9 @@ Returns boolean
 myMCPlayerEntity.removeTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| Paramètre | Type de texte        | Libellé                 |
+| --------- | -------------------- | ----------------------- |
+| Étiquette | Chaîne de caractères | No description provided |
 
 
 ### replaceItemInInventory
@@ -1819,9 +1819,9 @@ Returns boolean
 myMCPlayerEntity.replaceItemInInventory(inventorySlot as int, itemStackIn as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
+| Paramètre     | Type de texte                                                     | Libellé                 |
 | ------------- | ----------------------------------------------------------------- | ----------------------- |
-| inventorySlot | int                                                               | No description provided |
+| inventorySlot | Indice                                                            | No description provided |
 | itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
@@ -1863,10 +1863,10 @@ myMCPlayerEntity.revive();
 myMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| yaw       | double | No description provided |
-| pitch     | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| yaw       | double        | No description provided |
+| pitch     | double        | No description provided |
 
 
 ### sendEndCombat
@@ -1901,9 +1901,9 @@ set the movespeed used for the new AI system
 myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| speedIn   | float | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| speedIn   | flottant      | No description provided |
 
 
 ### setAbsorptionAmount
@@ -1912,9 +1912,9 @@ myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
 myMCPlayerEntity.setAbsorptionAmount(amount as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| amount    | float | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| montant   | flottant      | No description provided |
 
 
 ### setAir
@@ -1923,9 +1923,9 @@ myMCPlayerEntity.setAbsorptionAmount(amount as float);
 myMCPlayerEntity.setAir(air as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| air       | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| air       | Indice        | No description provided |
 
 
 ### setArrowCountInEntity
@@ -1934,9 +1934,9 @@ myMCPlayerEntity.setAir(air as int);
 myMCPlayerEntity.setArrowCountInEntity(count as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| count     | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| count     | Indice        | No description provided |
 
 
 ### setBedPosition
@@ -1945,7 +1945,7 @@ myMCPlayerEntity.setArrowCountInEntity(count as int);
 myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
+| Paramètre     | Type de texte                                                | Libellé                 |
 | ------------- | ------------------------------------------------------------ | ----------------------- |
 | p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
@@ -1956,9 +1956,9 @@ myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
 myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
 ```
 
-| Parameter           | Type    | Description             |
-| ------------------- | ------- | ----------------------- |
-| alwaysRenderNameTag | boolean | No description provided |
+| Paramètre           | Type de texte | Libellé                 |
+| ------------------- | ------------- | ----------------------- |
+| alwaysRenderNameTag | boolean       | No description provided |
 
 
 ### setEntityId
@@ -1967,9 +1967,9 @@ myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
 myMCPlayerEntity.setEntityId(id as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| id        | Indice        | No description provided |
 
 
 ### setFire
@@ -1980,9 +1980,9 @@ Sets entity to burn for x amount of seconds, cannot lower amount of existing fir
 myMCPlayerEntity.setFire(seconds as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| seconds   | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| seconds   | Indice        | No description provided |
 
 
 ### setFireTimer
@@ -1991,9 +1991,9 @@ myMCPlayerEntity.setFire(seconds as int);
 myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_223308_1_ | int  | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_223308_1_ | Indice        | No description provided |
 
 
 ### setGlowing
@@ -2002,9 +2002,9 @@ myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
 myMCPlayerEntity.setGlowing(glowingIn as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| glowingIn | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| glowingIn | boolean       | No description provided |
 
 
 ### setHeadRotation
@@ -2013,10 +2013,10 @@ myMCPlayerEntity.setGlowing(glowingIn as boolean);
 myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| yaw       | float | No description provided |
-| pitch     | int   | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| yaw       | flottant      | No description provided |
+| pitch     | Indice        | No description provided |
 
 
 ### setHealth
@@ -2025,9 +2025,9 @@ myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
 myMCPlayerEntity.setHealth(health as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| health    | float | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| santé     | flottant      | No description provided |
 
 
 ### setIdleTime
@@ -2036,9 +2036,9 @@ myMCPlayerEntity.setHealth(health as float);
 myMCPlayerEntity.setIdleTime(idleTimeIn as int);
 ```
 
-| Parameter  | Type | Description             |
-| ---------- | ---- | ----------------------- |
-| idleTimeIn | int  | No description provided |
+| Paramètre  | Type de texte | Libellé                 |
+| ---------- | ------------- | ----------------------- |
+| idleTimeIn | Indice        | No description provided |
 
 
 ### setInLava
@@ -2053,9 +2053,9 @@ myMCPlayerEntity.setInLava();
 myMCPlayerEntity.setInvisible(invisible as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| invisible | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| invisible | boolean       | No description provided |
 
 
 ### setInvulnerable
@@ -2066,9 +2066,9 @@ Sets whether this Entity is invulnerable.
 myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 ```
 
-| Parameter      | Type    | Description             |
-| -------------- | ------- | ----------------------- |
-| isInvulnerable | boolean | No description provided |
+| Paramètre      | Type de texte | Libellé                 |
+| -------------- | ------------- | ----------------------- |
+| isInvulnerable | boolean       | No description provided |
 
 
 ### setJumping
@@ -2077,9 +2077,9 @@ myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 myMCPlayerEntity.setJumping(jumping as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| jumping   | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| jumping   | boolean       | No description provided |
 
 
 ### setLocationAndAngles
@@ -2090,13 +2090,13 @@ Sets the location and Yaw/Pitch of an entity in the world
 myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
+| yaw       | flottant      | No description provided |
+| pitch     | flottant      | No description provided |
 
 
 ### setMotion
@@ -2105,11 +2105,11 @@ myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw
 myMCPlayerEntity.setMotion(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### setNoGravity
@@ -2118,9 +2118,9 @@ myMCPlayerEntity.setMotion(x as double, y as double, z as double);
 myMCPlayerEntity.setNoGravity(noGravity as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| noGravity | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| noGravity | boolean       | No description provided |
 
 
 ### setPartying
@@ -2131,7 +2131,7 @@ Called when a record starts or stops playing. Used to make parrots start or stop
 myMCPlayerEntity.setPartying(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
 ```
 
-| Parameter  | Type                                                         | Description             |
+| Paramètre  | Type de texte                                                | Libellé                 |
 | ---------- | ------------------------------------------------------------ | ----------------------- |
 | pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 | isPartying | boolean                                                      | No description provided |
@@ -2145,7 +2145,7 @@ Marks the entity as being inside a portal, activating teleportation logic in onE
 myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
+| Paramètre | Type de texte                                                | Libellé                 |
 | --------- | ------------------------------------------------------------ | ----------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
@@ -2158,11 +2158,11 @@ Sets the x,y,z of the entity from the given parameters. Also seems to set up a b
 myMCPlayerEntity.setPosition(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### setPositionAndRotation
@@ -2173,13 +2173,13 @@ Sets position and rotation, clamping and wrapping params to valid values. Used b
 myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, yaw as float, pitch as float);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
+| yaw       | flottant      | No description provided |
+| pitch     | flottant      | No description provided |
 
 
 ### setPositionAndRotationDirect
@@ -2190,15 +2190,15 @@ Sets a target for the client to interpolate towards over the next few ticks
 myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, pitch as float, posRotationIncrements as int, teleport as boolean);
 ```
 
-| Parameter             | Type    | Description             |
-| --------------------- | ------- | ----------------------- |
-| x                     | double  | No description provided |
-| y                     | double  | No description provided |
-| z                     | double  | No description provided |
-| yaw                   | float   | No description provided |
-| pitch                 | float   | No description provided |
-| posRotationIncrements | int     | No description provided |
-| teleport              | boolean | No description provided |
+| Paramètre             | Type de texte | Libellé                 |
+| --------------------- | ------------- | ----------------------- |
+| x                     | double        | No description provided |
+| y                     | double        | No description provided |
+| Z                     | double        | No description provided |
+| yaw                   | flottant      | No description provided |
+| pitch                 | flottant      | No description provided |
+| posRotationIncrements | Indice        | No description provided |
+| teleport              | boolean       | No description provided |
 
 
 ### setPositionAndUpdate
@@ -2209,11 +2209,11 @@ Sets the position of the entity and updates the 'last' variables
 myMCPlayerEntity.setPositionAndUpdate(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### setPositionNonDirty
@@ -2230,9 +2230,9 @@ myMCPlayerEntity.setPositionNonDirty();
 myMCPlayerEntity.setReducedDebug(reducedDebug as boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| reducedDebug | boolean | No description provided |
+| Paramètre    | Type de texte | Libellé                 |
+| ------------ | ------------- | ----------------------- |
+| reducedDebug | boolean       | No description provided |
 
 
 ### setRenderYawOffset
@@ -2243,9 +2243,9 @@ Set the render yaw offset
 myMCPlayerEntity.setRenderYawOffset(offset as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| offset    | float | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| offset    | flottant      | No description provided |
 
 
 ### setRotationYawHead
@@ -2256,9 +2256,9 @@ Sets the head's yaw rotation of the entity.
 myMCPlayerEntity.setRotationYawHead(rotation as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| rotation  | float | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| rotation  | flottant      | No description provided |
 
 
 ### setScore
@@ -2269,9 +2269,9 @@ Set player's score
 myMCPlayerEntity.setScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| scoreIn   | Indice        | No description provided |
 
 
 ### setSilent
@@ -2282,9 +2282,9 @@ When set to true the entity will not play sounds.
 myMCPlayerEntity.setSilent(isSilent as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| isSilent  | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| isSilent  | boolean       | No description provided |
 
 
 ### setSneaking
@@ -2295,9 +2295,9 @@ Sets the sneaking flag.
 myMCPlayerEntity.setSneaking(sneaking as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sneaking  | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| sneaking  | boolean       | No description provided |
 
 
 ### setSpawnPoint
@@ -2306,7 +2306,7 @@ myMCPlayerEntity.setSneaking(sneaking as boolean);
 myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, forced as boolean);
 ```
 
-| Parameter | Type                                                         | Description             |
+| Paramètre | Type de texte                                                | Libellé                 |
 | --------- | ------------------------------------------------------------ | ----------------------- |
 | pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 | forced    | boolean                                                      | No description provided |
@@ -2320,9 +2320,9 @@ Set sprinting switch for Entity.
 myMCPlayerEntity.setSprinting(sprinting as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sprinting | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| sprinting | boolean       | No description provided |
 
 
 ### setSwimming
@@ -2331,9 +2331,9 @@ myMCPlayerEntity.setSprinting(sprinting as boolean);
 myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_204711_1_ | boolean | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_204711_1_ | boolean       | No description provided |
 
 
 ### setVelocity
@@ -2344,11 +2344,11 @@ Updates the entity motion clientside, called by packets from the server
 myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| Paramètre | Type de texte | Libellé                 |
+| --------- | ------------- | ----------------------- |
+| x         | double        | No description provided |
+| y         | double        | No description provided |
+| Z         | double        | No description provided |
 
 
 ### shouldHeal
@@ -2395,9 +2395,9 @@ Returns boolean
 myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description                          |
+| Paramètre | Type de texte                                                                              | Libellé                              |
 | --------- | ------------------------------------------------------------------------------------------ | ------------------------------------ |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
+| Joueur    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
 
 
 ### shouldRiderSit
@@ -2428,7 +2428,7 @@ myMCPlayerEntity.spawnSweepParticles();
 myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
+| Paramètre     | Type de texte                                                | Libellé                 |
 | ------------- | ------------------------------------------------------------ | ----------------------- |
 | p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
@@ -2439,9 +2439,9 @@ myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
 myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_204803_1_ | int  | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_204803_1_ | Indice        | No description provided |
 
 
 ### stopActiveHand
@@ -2464,11 +2464,11 @@ myMCPlayerEntity.stopRiding();
 myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double, p_223102_5_ as double);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_223102_1_ | double | No description provided |
-| p_223102_3_ | double | No description provided |
-| p_223102_5_ | double | No description provided |
+| Paramètre     | Type de texte | Libellé                 |
+| ------------- | ------------- | ----------------------- |
+| p_223102_1_ | double        | No description provided |
+| p_223102_3_ | double        | No description provided |
+| p_223102_5_ | double        | No description provided |
 
 
 ### tick
@@ -2515,11 +2515,11 @@ Wake up the player if they're sleeping.
 myMCPlayerEntity.wakeUpPlayer(immediately as boolean, updateWorldFlag as boolean, setSpawn as boolean);
 ```
 
-| Parameter       | Type    | Description             |
-| --------------- | ------- | ----------------------- |
-| immediately     | boolean | No description provided |
-| updateWorldFlag | boolean | No description provided |
-| setSpawn        | boolean | No description provided |
+| Paramètre       | Type de texte | Libellé                 |
+| --------------- | ------------- | ----------------------- |
+| immediately     | boolean       | No description provided |
+| updateWorldFlag | boolean       | No description provided |
+| setSpawn        | boolean       | No description provided |
 
 
 ### xpBarCap
