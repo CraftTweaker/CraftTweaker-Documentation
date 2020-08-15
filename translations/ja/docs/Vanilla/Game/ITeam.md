@@ -1,6 +1,6 @@
 # ITeam
 
-If you don't know what a team is then you are a horrible person.
+あなたがチームが何であるかを知らなければ、あなたは恐ろしい人です。
 
 ## パッケージのインポート
 
@@ -9,15 +9,15 @@ It might be required for you to import the package if you encounter any issues (
 
 ## ZenGetters
 
-| Getter name            | タイプ            |
-| ---------------------- | -------------- |
-| 名前                     | 文字列            |
-| allowFriendlyFire      | bool           |
-| colorPrefix            | 文字列            |
-| membershipCollection   | List<string\> |
-| deathMessageVisibility | 文字列            |
-| collisionRule          | 文字列            |
+| 取得者名                   | タイプ           |
+| ---------------------- | ------------- |
+| 名前                     | 文字列           |
+| allowFriendlyFire      | bool          |
+| colorPrefix            | 文字列           |
+| membershipCollection   | リスト<string\> |
+| deathMessageVisibility | 文字列           |
+| collisionRule          | 文字列           |
 
 ## ZenMethods
 
-- `formatString(string input);` → Formats the input string for the team. Returns the formatted string.
+- `formatString(string input);` → チームの入力文字列の書式を設定します。 フォーマットされた文字列を返します。
