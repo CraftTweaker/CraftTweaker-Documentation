@@ -4,12 +4,12 @@
 ## Importing the Package
 `mods.nuclearcraft.SaltFission`
 
-## Adding Recipes
+## Dodawanie przepisów
 ```zenscript
 mods.nuclearcraft.SaltFission.addRecipe(ILiquidStack fluidInput, ILiquidStack fluidOutput, double baseTime, double basePower, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Usuwanie przepisów
 ```zenscript
 mods.nuclearcraft.SaltFission.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.SaltFission.removeRecipeWithOutput(ILiquidStack fluidOutput);
