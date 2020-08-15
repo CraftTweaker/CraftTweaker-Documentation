@@ -2,10 +2,10 @@
 
 A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+This class was added by a mod with mod-id `contenttweaker`. 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
 ```
@@ -25,7 +25,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceL
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
+| パラメータ            | タイプ  | 説明                                   |
 | ---------------- | ---- | ------------------------------------ |
 | resourceLocation | 文字列型 | The resource path to give this block |
 
@@ -43,9 +43,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Parameter    | Type  | Description                  |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| パラメータ  | タイプ    | 説明                           |
+| ------ | ------ | ---------------------------- |
+| 攻撃ダメージ | float型 | The additional attack damage |
 
 
 ### withAttackSpeed
@@ -61,7 +61,7 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Parameter   | Type   | Description      |
+| パラメータ       | タイプ    | 説明               |
 | ----------- | ------ | ---------------- |
 | attackSpeed | double | The attack speed |
 
@@ -79,9 +79,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostAttack | int  | The damage points this item will receive |
+| パラメータ                | タイプ | 説明                                       |
+| -------------------- | --- | ---------------------------------------- |
+| durabilityCostAttack | int | The damage points this item will receive |
 
 
 ### withDurabilityCostMining
@@ -97,9 +97,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostMining | int  | The damage points this item will receive |
+| パラメータ                | タイプ | 説明                                       |
+| -------------------- | --- | ---------------------------------------- |
+| durabilityCostMining | int | The damage points this item will receive |
 
 
 ### withToolType
@@ -116,11 +116,11 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parameter   | Type                                                                            | Description                                          | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| パラメータ       | タイプ                                                                             | 説明                                                   | IsOptional | デフォルト値 |
+| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------ |
+| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null` |
+| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null` |
+| miningSpeed | float型                                                                          | How fast this tool can mine blocks of the given type | true       | `1.0`  |
 
 
 
