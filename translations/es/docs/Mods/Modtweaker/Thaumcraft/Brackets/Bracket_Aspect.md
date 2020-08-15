@@ -1,8 +1,8 @@
-# Aspect Bracket handler
+# Controlador de Bracket Aspecto
 
-The aspect Bracket Handler allows you to retrieve a Thaumcraft [Aspect Stack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) in case you need one.
+El ladrillo de bracket de aspecto te permite recuperar una [pila de aspecto](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) de Thaumcraft en caso de que necesites una.
 
-Aspects are referenced in the Aspect Bracket handler this way:
+Los asistentes son referenciados en el manejador de Bracket Aspecto de esta manera:
 
 ```zenscript
 <aspect:name>
@@ -10,5 +10,5 @@ Aspects are referenced in the Aspect Bracket handler this way:
 <aspect:ignis>
 ```
 
-If the Aspect is found, this will return an [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) Object with the stacksize 1.  
-Please refer to the [respective Wiki entry](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) for further information on what you can do with these.
+Si se encuentra el Aspecto, devolverá un objeto [CTAspectStack](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) con el tamaño de la pila 1.  
+Por favor, consulte la [entrada respectiva del Wiki](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspectStack/) para obtener más información sobre lo que puede hacer con estos.
