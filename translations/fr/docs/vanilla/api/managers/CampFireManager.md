@@ -1,51 +1,51 @@
-# CampFireManager
+# Feu de camp
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
 ## Importation de la classe
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.CampFireManager
 ```
 
-## Implemented Interfaces
-CampFireManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+CampFireManager implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## Méthodes
 ### Ajouter une recette
 
-Adds a recipe based on given params.
+Ajoute une recette basée sur des paramètres donnés.
 
 ```zenscript
 campfire.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
 campfire.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| Paramètre | Type de texte                                                       | Libellé                         |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| Nom       | Chaîne de caractères                                                | Name of the new recipe          |
-| Sortie    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | flottant                                                            | how much xp the player gets     |
-| cookTime  | Indice                                                              | how long it takes to cook       |
+| Paramètre        | Type de texte                                                               | Libellé                             |
+| ---------------- | --------------------------------------------------------------------------- | ----------------------------------- |
+| Nom              | Chaîne de caractères                                                        | Nom de la nouvelle recette          |
+| Sortie           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | IItemStack sortie de la recette     |
+| input            | [format@@0 crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient) | Ingrédient de la recette            |
+| xp               | flottant                                                                    | combien de xp le joueur obtient     |
+| temps de cuisson | Indice                                                                      | combien de temps il faut pour cuire |
 
 
-### removeRecipe
+### Supprimer la recette
 
-Removes a recipe based on it's output and input.
+Supprime une recette en fonction de sa sortie et de son entrée.
 
 ```zenscript
-campfire.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
+campfire.removeRecipe(affiche comme crafttweaker.api.item.IItemStack, entrée comme crafttweaker.api.item.IIngredient);
 campfire.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Paramètre | Type de texte                                                       | Libellé                              |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| Sortie    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Paramètre | Type de texte                                                               | Libellé                               |
+| --------- | --------------------------------------------------------------------------- | ------------------------------------- |
+| Sortie    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | IItemStack sortie de la recette.      |
+| input     | [format@@0 crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient) | Ingrédient de la recette à supprimer. |
 
 
 
