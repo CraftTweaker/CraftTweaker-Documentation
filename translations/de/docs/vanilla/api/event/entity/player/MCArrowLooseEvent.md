@@ -1,27 +1,27 @@
 # MCArrowLooseEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCArrowLooseEvent
 ```
 
-## Constructors
+## Konstrukteure
 ```zenscript
-new crafttweaker.api.event.entity.player.MCArrowLooseEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCArrowLooseEvent>);
+neue crafttweaker.api.event.entity.player.MCArrowLooseEvent(Handler als Funktion.Verbraucher<crafttweaker.api.event.entity.player.MCArrowLooseEvent>);
 ```
-| Parameter | Type                                                                                                                            | Beschreibung            |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCArrowLooseEvent](/vanilla/api/event/entity/player/MCArrowLooseEvent)> | No description provided |
+| Parameter | Type                                                                                                                            | Beschreibung                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCArrowLooseEvent](/vanilla/api/event/entity/player/MCArrowLooseEvent)> | Keine Beschreibung angegeben |
 
 
 
 ## Methoden
 ### getBow
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Gibt [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) zurück
 
 ```zenscript
 myMCArrowLooseEvent.getBow();
@@ -29,7 +29,7 @@ myMCArrowLooseEvent.getBow();
 
 ### getCharge
 
-Returns int
+Retouren Int
 
 ```zenscript
 myMCArrowLooseEvent.getCharge();
@@ -37,7 +37,7 @@ myMCArrowLooseEvent.getCharge();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCArrowLooseEvent.getEntityPlayer();
@@ -45,9 +45,9 @@ myMCArrowLooseEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Rückgaben: `Spieler`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCArrowLooseEvent.getPlayer();
@@ -55,64 +55,64 @@ myMCArrowLooseEvent.getPlayer();
 
 ### hasAmmo
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCArrowLooseEvent.hasAmmo();
 ```
 
-### hasResult
+### hasergebnis
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Legt fest, ob dieses Ereignis einen signifikanten Ergebniswert erwartet. Hinweis: Ereignisse mit der HasResult-Anmerkung werden diese Methode automatisch hinzugefügt, um wahr zurückzugeben.
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCArrowLooseEvent.hasResult();
 ```
 
-### isCancelable
+### isabbrechbar
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Legen Sie fest, ob diese Funktion überhaupt abgebrochen werden kann. Gibt zurück: `Wenn der Zugriff auf setCanceled erlaubt sein sollte
+ Hinweis:
+ Ereignisse mit der abbrechbaren Anmerkung werden diese Methode automatisch hinzugefügt, um true zurückzugeben.`
 
-Returns boolean
-
-```zenscript
-myMCArrowLooseEvent.isCancelable();
-```
-
-### isCanceled
-
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
-
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
-myMCArrowLooseEvent.isCanceled();
+myMCArrowLooseEvent.isAbbrechbar();
 ```
 
-### setCanceled
+### ist abgebrochen
+
+Legen Sie fest, ob dieses Ereignis abgebrochen wird und nicht mehr ausgeführt werden soll. Rückgabe: `Der aktuell abgebrochene Status`
+
+Rückgabewert boolesch
 
 ```zenscript
-myMCArrowLooseEvent.setCanceled(cancel as boolean);
+myMCArrowLooseEvent.isAbbrecht();
 ```
 
-| Parameter | Type    | Beschreibung            |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+### abgebrochen
+
+```zenscript
+myMCArrowLooseEvent.setCanceled(abbrechen als boolean);
+```
+
+| Parameter | Type    | Beschreibung                 |
+| --------- | ------- | ---------------------------- |
+| abbrechen | boolean | Keine Beschreibung angegeben |
 
 
 ### setCharge
 
 ```zenscript
-myMCArrowLooseEvent.setCharge(charge as int);
+myMCArrowLooseEvent.setCharge(Laden);
 ```
 
-| Parameter | Type | Beschreibung            |
-| --------- | ---- | ----------------------- |
-| charge    | int  | No description provided |
+| Parameter | Type | Beschreibung                 |
+| --------- | ---- | ---------------------------- |
+| aufladen  | int  | Keine Beschreibung angegeben |
 
 
 
