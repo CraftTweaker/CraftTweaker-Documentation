@@ -1,13 +1,13 @@
-# ProjectileImpactThrowable
+# 可投射投影器
 
-This event is fired whenever a throwable projectile impacts an entity but before damage, etc, is calculated. It is **cancelable**, and if canceled, the impact will not be processed.
+每当投掷可投射炮弹撞击某个实体但在损坏之前等被计算出来时，就会发射这个事件。 它是 **可取消**，如果取消，将不会处理影响。
 
 ## 导入类
-It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
-`import crafttweaker.event.ProjectileImpactThrowableEvent;`
+可能需要 [导入](/AdvancedFunctions/Import/) 类以避免错误。  
+`导入craftmilower.event.ProjecttileImpactThrowableEvent;`
 
 ## 扩展 IEntityEvent
-ProjectileImpactThrowable Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+ProjectleImpactThrow事件实现了以下接口，并且能够调用其所有方法/getter/setters：
 
 - [IProjectileEvent](/Vanilla/Events/Events/IProjectileEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
@@ -16,7 +16,7 @@ ProjectileImpactThrowable Events implement the following interfaces and are able
 
 以下信息可以从事件中检索：
 
-| ZenGetter  | ZenSetter | 类型                                                        |
-| ---------- | --------- | --------------------------------------------------------- |
-| `fireball` |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
-| `shooter`  |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
+| ZenGetter | ZenSetter | 类型                                                        |
+| --------- | --------- | --------------------------------------------------------- |
+| `火球`      |           | [IEntity](/Vanilla/Entities/IEntity/)                     |
+| `射手`      |           | [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/) |
