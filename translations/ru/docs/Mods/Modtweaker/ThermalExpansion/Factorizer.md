@@ -10,7 +10,7 @@ To shorten method calls you can [import](/AdvancedFunctions/Import/) the package
 import mods.thermalexpansion.Factorizer;
 ```
 
-## Add Recipes
+## Добавить рецепты
 
 You can add oneway split/combine recipes or two-way bindings.
 
@@ -25,7 +25,7 @@ mods.thermalexpansion.Factorizer.addRecipeCombine(<minecraft:grass> * 5, <minecr
 mods.thermalexpansion.Factorizer.addRecipeBoth(<minecraft:trapped_chest>, <minecraft:chest> * 13);
 ```
 
-## Remove Recipes
+## Удалить рецепты
 
 You can of course also remove recipes.  
 If you want to remove a two-way binding you'll need two calls, though.
