@@ -2,12 +2,12 @@
 
 This event is extended by all events involving Minecarts.
 
-## Importing the class
+## Importation de la classe
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.event.IMinecartEvent;`
 
 ## What can be done with them?
 
-| name     | type                                  |
+| Nom      | Type de type                          |
 | -------- | ------------------------------------- |
 | minecart | [IEntity](/Vanilla/Entities/IEntity/) |
