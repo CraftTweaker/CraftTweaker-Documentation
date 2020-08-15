@@ -1,16 +1,16 @@
-# Decay Infuser
+# Infusor decadente
 
-## Importing the Package
+## Importando el Paquete
 `mods.nuclearcraft.infuser`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.infuser.removeRecipeWithInput([itemInput, fluidInput]);
-mods.nuclearcraft.infuser.removeRecipeWithOutput([itemOutput]);
+mods.nuclearcraft.infuser.removeRecipeWithSalput([itemOutput]);
 mods.nuclearcraft.infuser.removeAllRecipes();
 ```
