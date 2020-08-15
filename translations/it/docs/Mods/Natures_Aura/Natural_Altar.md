@@ -1,22 +1,22 @@
-# Natural Altar
+# Altare Naturale
 
 ## Pacchetto
 ```zenscript
-mods.naturesaura.Altar
+mods.naturesaura.Altare
 ```
 
 ## Metodi
-- **String Name**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) input** The altars input.
+- **Nome Stringa**
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient)** Ingresso altari.
 - **[IItemStack](/Vanilla/Items/IItemStack) output** The altars output.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient) catalyst** The catalyst block that is placed on one of the four corner blocks, can be null
-- **int aura** The amount of Aura required for the completion of the recipe
+- **[Catalizzatore IIngrediente](/Vanilla/Variable_Types/IIngredient)** Il blocco catalizzatore che si trova su uno dei quattro blocchi angolari, può essere nullo
+- **int aura** La quantità di Aura richiesta per il completamento della ricetta
 - **int time** The time processes take in ticks
 
 ## Addizione
 
 ```zenscript
-mods.naturesaura.Altar.addRecipe(String name, IIngredient input, IItemStack output, IIngredient catalyst, int aura, int time)
+mods.naturesaura.Altar.addRecipe(nome string, ingresso IIngrediente, uscita IItemStack, catalizzatore IIngredient, int aura, int tempo)
 ```
 
 ## Rimozione
