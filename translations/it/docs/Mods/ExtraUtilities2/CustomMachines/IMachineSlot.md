@@ -1,27 +1,27 @@
 # IMachineSlot
 
-A Machine slot is a slot that either accepts Items or liquids.  
-You need them when creating a machine using the [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) later on.
+Uno slot machine è uno slot che accetta oggetti o liquidi.  
+Ne hai bisogno quando crei una macchina usando il [IMachineRegistry](/Mods/ExtraUtilities2/CustomMachines/IMachineRegistry) più tardi.
 
 ## Importazione del pacchetto
 
-If you want to shorten method calls or encounter any issues you might need to [import](/AdvancedFunctions/Import) the package.  
-You can do so using
+Se si desidera abbreviare le chiamate di metodo o incontrare eventuali problemi si potrebbe aver bisogno di [importare](/AdvancedFunctions/Import) il pacchetto.  
+Puoi farlo usando
 
 ```zenscript
-import extrautilities2.Tweaker.IMachineSlot;
+importazione extrautilities2.Tweaker.IMachineSlot;
 ```
 
-## Creating a new IMachineSlot
+## Creare un nuovo IMachineSlot
 
-The IMachineSlot package offers methods to create new IMachineSlot objects:
+Il pacchetto IMachineSlot offre metodi per creare nuovi oggetti IMachineSlot :
 
 ```zenscript
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, stackCapacity);
 extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, isOptional, stackCapacity);
-extrautilities2.Tweaker.IMachineSlot.newItemStackSlot(name, color, isOptional, backgroundTexture, stackCapacity);
+extrautilities2.Tweaker.IMachineSlot. ewItemStackSlot(nome, colore, isOptional, backgroundTexture, stackCapacity);
 
 
 newFluidSlot(name);
@@ -31,9 +31,9 @@ newFluidSlot(name, stackCapacity, isOptional, filterLiquidStack);
 newFluidSlot(name, stackCapacity, color, isOptional, filterLiquidStack);
 ```
 
-All these methods will return the new Slot as IMachineSlot object.
+Tutti questi metodi restituiranno il nuovo Slot come oggetto IMachineSlot.
 
-The parameters are:
+I parametri sono:
 
 | Nome              | Tipo                                          |
 | ----------------- | --------------------------------------------- |
@@ -44,22 +44,22 @@ The parameters are:
 | backgroundTexture | stringa                                       |
 | filterLiquidStack | [ILiquidStack](/Vanilla/Liquids/ILiquidStack) |
 
-What the parameters do:
+Cosa fanno i parametri:
 
-- `name`: The slot's name. Used for recipes later. Make sure that a machine has no 2 slots with the same name.
-- `isOptional`: Dictates whether or not this slot must be filled for recipe checks to commence.
-- `stackCapacity`: How many items/millibuckets can fit in this slot?
-- `color`: What color will the slot have?
-- `backgroundTexture`: A custom texture path for the background of this slot can be added here.
-- `filterLiquidStack`: If you provide this [ILiquidStack](/Vanilla/Liquids/ILiquidStack) object, then only this fluid will be allowed to enter the slot.
+- `name`: Il nome dello slot. Utilizzato per le ricette più tardi. Assicurarsi che una macchina non abbia 2 slot con lo stesso nome.
+- `isOptional`: Indica se questo slot deve essere riempito per i controlli delle ricette per cominciare.
+- `stackCapacity`: Quanti oggetti/millibuckets possono adattarsi a questo slot?
+- `color`: Di che colore avrà lo slot?
+- `backgroundTexture`: Un percorso di texture personalizzato per lo sfondo di questo slot può essere aggiunto qui.
+- `filterLiquidStack`: Se fornisci questo oggetto [ILiquidStack](/Vanilla/Liquids/ILiquidStack) , allora solo questo fluido sarà autorizzato ad entrare nello slot.
 
 ## Getters
 
-You can get basic information from an IMachineSlot as well.  
-Don't expect these getters to magically return something different from what you set the slot when creating it, though.
+È possibile ottenere informazioni di base da un IMachineSlot pure.  
+Non aspettarti che questi ricevitori restituiscano magicamente qualcosa di diverso da quello che hai impostato quando lo creano, però.
 
 | Nome          | Tipo    |
 | ------------- | ------- |
 | nome          | stringa |
-| optional      | bool    |
+| opzionale     | bool    |
 | stackCapacity | int     |
