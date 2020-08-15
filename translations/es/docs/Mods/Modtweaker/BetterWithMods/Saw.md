@@ -44,13 +44,15 @@ The Saw has a recipe builder. Due to the nature of the saw it currently has no s
      
      * Sets up the inputs and outputs of the recipe  
           zenscript buildRecipe(IIngredient[] inputs, IItemStack[] outputs)  
-              zenscript
-              buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
+              Sets up the inputs and outputs of the recipe<br />
+                    zenscript
+                    buildRecipe(IIngredient[] inputs, IItemStack[] outputs)
      
      * Finalize the recipe and add it to the game  
           zenscript build()  
-              zenscript
-              build()
+              Finalize the recipe and add it to the game<br />
+                    zenscript
+                    build()
 
 ### Example builder usage
 
