@@ -1,4 +1,4 @@
-# Sawmill
+# Segheria
 
 ## Pacchetto
 
@@ -9,7 +9,7 @@ import mods.ic2.Sawmill;
 ## Metodi
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
 
 ### Addizione
 
@@ -21,4 +21,4 @@ mods.ic2.Sawmill.addRecipe(<minecraft:diamond_block>, <minecraft:dirt> * 64);
 
 ### Rimozione
 
-To remove an already existing recipe, simply disable the corresponding recipe in `config/ic2/ic2machineRecipes.json`.
+Per rimuovere una ricetta già esistente, basta disabilitare la ricetta corrispondente in `config/ic2/ic2machineRecipes.json`.
