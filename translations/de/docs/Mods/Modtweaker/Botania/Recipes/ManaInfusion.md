@@ -2,7 +2,7 @@
 
 The ManaInfusion package is used for adding or removing recipes to/from the Botania ManaPool.
 
-## Calling
+## Anruf
 
 You can call the ManaInfusion package using `mods.botania.ManaInfusion`
 
@@ -10,7 +10,7 @@ You can call the ManaInfusion package using `mods.botania.ManaInfusion`
 
 You can find all registered ManaInfusion recipes using [`/ct botania infusions`](/Mods/Modtweaker/Botania/Commands/).
 
-## Recipe addition
+## Rezeptzusatz
 
 ```zenscript
 //mods.botania.ManaInfusion.addInfusion(IItemStack output, IIngredient input, int mana);
