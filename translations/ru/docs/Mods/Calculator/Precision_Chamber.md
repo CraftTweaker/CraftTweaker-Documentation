@@ -1,6 +1,6 @@
 # Precision Chamber
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.precisionChamber;
 ```
@@ -10,12 +10,12 @@ import mods.calculator.precisionChamber;
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
 
-## Addition
+## Сложение
 ```zenscript
 precisionChamber.addRecipe(IIngredient input, IIngredient output1, IIngredient output2);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 precisionChamber.removeRecipe(IIngredient output1, IIngredient output2);
 ```
