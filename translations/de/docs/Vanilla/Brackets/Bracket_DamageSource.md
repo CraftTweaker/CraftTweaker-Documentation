@@ -1,31 +1,31 @@
-# DamageSource Bracket Handler
+# Schadenquellen-Klammerhandler
 
-The Damage Source Bracket Handler allows you to refer to [IDamageSources](/Vanilla/Damage/IDamageSource/) in the game.
+Mit dem Klammerhandler der Schadensquelle kannst du [IDamageSources](/Vanilla/Damage/IDamageSource/) im Spiel aufrufen.
 
-If the Damage source is not one of the predefined ones, this will create a new one with the given name.
+Wenn die Schadensquelle keine der vordefinierten ist, wird eine neue mit dem angegebenen Namen erstellt.
 
 <details>
-    <summary>Preregistered Damage Source Types</summary>
+    <summary>Vorausgesetzte Schadensquellentypen</summary>
     <ul>
-        <li>IN_FIRE</li>
-        <li>LIGHTNING_BOLT</li>
-        <li>ON_FIRE</li>
+        <li>Anfang</li>
+        <li>BOLT</li>
+        <li>Auf den Anfang</li>
         <li>LAVA</li>
-        <li>HOT_FLOOR</li>
-        <li>IN_WALL</li>
+        <li>Blende</li>
+        <li>In Wall</li>
         <li>CRAMMING</li>
         <li>DROWN</li>
         <li>STARVE</li>
         <li>CACTUS</li>
         <li>FALL</li>
         <li>FLY_INTO_WALL</li>
-        <li>OUT_OF_WORLD</li>
+        <li>Welle</li>
         <li>GENERIC</li>
-        <li>MAGIC</li>
+        <li>MAGIK</li>
         <li>WITHER</li>
         <li>ANVIL</li>
-        <li>FALLING_BLOCK</li>
-        <li>DRAGON_BREATH</li>
+        <li>BLOCK</li>
+        <li>DRACH_BREATH</li>
         <li>FIREWORKS</li>
     </ul>
 </details>
