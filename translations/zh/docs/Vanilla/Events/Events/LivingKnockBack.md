@@ -1,6 +1,6 @@
-# LivingKnockBack
+# LivingKnockback
 
-This event is fired whenever an entity is knocked back. The event is **cancelable** and doing so will prevent the entity from being knocked back. Alternately, the strength of the knockback in addition to the X and Z ratios can be adjusted.
+一旦一个实体被击退，这个事件就会被发射。 事件是 **可取消** ，并且这样做会阻止实体被击退。 或者，除了X和Z比率外，还可以调整击退的强度。
 
 ## 事件类
 You will need to cast the event in the function header as this class:  
@@ -8,7 +8,7 @@ You will need to cast the event in the function header as this class:
 You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
 
 ## 事件界面扩展
-LivingKnockBack Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+LivingKnockBackEvents 实现了以下接口，并且能够调用他们所有的方法/getter/setter：
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [ILivingEvent](/Vanilla/Events/Events/ILivingEvent/)
@@ -17,17 +17,17 @@ LivingKnockBack Events implement the following interfaces and are able to call a
 ## ZenGetters/ZenSetters
 以下信息可以在事件中检索/设置：
 
-| ZenGetter          | ZenSetter  | 类型                                    |
-| ------------------ | ---------- | ------------------------------------- |
-| `attacker`         | `attacker` | [IEntity](/Vanilla/Entities/IEntity/) |
-| `originalAttacker` |            | [IEntity](/Vanilla/Entities/IEntity/) |
-| `strength`         | `strength` | float                                 |
-| `originalStrength` |            | 浮点数                                   |
-| `ratioX`           | `ratioX`   | 双精度                                   |
-| `ratioZ`           | `ratioZ`   | 双精度                                   |
-| `originalRatioX`   |            | 双精度                                   |
-| `originalRatioZ`   |            | 双精度                                   |
+| ZenGetter | ZenSetter | 类型                                    |
+| --------- | --------- | ------------------------------------- |
+| `攻击者`     | `攻击者`     | [IEntity](/Vanilla/Entities/IEntity/) |
+| `原始攻击者`   |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `强度`      | `强度`      | float                                 |
+| `原始强度`    |           | 浮点数                                   |
+| `比率`      | `比率`      | 双精度                                   |
+| `比率`      | `比率`      | 双精度                                   |
+| `原始比率`    |           | 双精度                                   |
+| `原始比率`    |           | 双精度                                   |
 
 ## 注
 
-When the event arrives, it's possible that the `attacker`, `strength`, or the various `ratio`s have already been modified. You can find these values in the `original*` variables.
+当事件到达时， `个攻击者` `实力`, 或各种 `比率`s已被修改。 您可以在 `原始*` 变量中找到这些值。
