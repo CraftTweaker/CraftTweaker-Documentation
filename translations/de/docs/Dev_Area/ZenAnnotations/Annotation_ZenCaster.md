@@ -6,29 +6,29 @@ ZenCasters can be used to convert one type into another (e.g. [Strings to IData]
 ## Beispiel
 
 ```java
-@ZenExpansion("crafttweaker.item.IItemStack")
+@ZenExpansion("crafttweaker.item. ItemStack")
 @ZenRegister
 public class Expansion {
     @ZenMethod
     public static void print(IItemStack stack) {
-        CraftTweakerAPI.logInfo("STACKKKKK: " + stack.getDisplayName());
+        CraftTweakerAPI. ogInfo("STACKKKK: " + Stack. etDisplayName());
     }
 
     @ZenCaster
     public static IOreDictEntry asOreDict(IItemStack stack) {
-        return stack.getOres().get(0);
+        return stack. etOres().get(0);
     }
 }
 ```
 
-If someone now would call this, they would get an oreDictEntry:
+Wenn jemand dies jetzt nennen würde, würde er einen OreDictEintrag bekommen:
 
 ```zenscript
-val oreDict = <minecraft:iron_ingot> as IOreDictEntry;
+val oreDict = <minecraft:iron_ingot> als IOreDictEntry;
 ```
 
-## What methods can be annotated || Additional Info
+## Welche Methoden können kommentiert werden || Zusätzliche Informationen
 
-- You can annotate all nonstatic methods (unless in a ZenExpansion, as they only consist of statics)
-- Annotated Methods need one parameter when in a [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/), none if they are in a [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/).
-- Don't rely on ZenCasters in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), they only work reliably in [ZenExpansions](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
+- Sie können alle nichtstatischen Methoden kommentieren (außer in einer ZenExpansion, da sie nur aus Statik bestehen)
+- Annotierte Methoden benötigen einen Parameter, wenn sie in einer [ZenExpansion](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/)sind, keine, wenn sie sich in einer [ZenClass](/Dev_Area/ZenAnnotations/Annotation_ZenClass/) befinden.
+- Verlassen Sie sich nicht auf ZenCaster in [ZenClasses](/Dev_Area/ZenAnnotations/Annotation_ZenClass/), sie funktionieren nur zuverlässig in [ZenErweiterungen](/Dev_Area/ZenAnnotations/Annotation_ZenExpansion/).
