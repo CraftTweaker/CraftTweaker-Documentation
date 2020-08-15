@@ -1,28 +1,28 @@
-# Official Compat Addon for Reskillable
+# Addon Compat Ufficiale per Reskillable
 
-## Currently adds Compatibility for:
+## Attualmente aggiunge la compatibilità per:
 
 - Baubles
-- Blood Magic
+- Magia Del Sangue
 - CraftTweaker
 - GameStages
 - Hwyla/Waila
-- Immersive Engineering
+- Ingegneria Immersiva
 - Magneticraft
 - ProjectE
 - Reskillable
-- The One Probe (TOP)
-- Tinkers Construct
+- La Sonda Unica (Top)
+- Costruzione Di Tinkers
 
-### Important!:
+### Importante!:
 
-You might notice a lot of references to "String..." in the blank examples. This is called a VarArg. It essentially means you can feed it any number of said variable this case "String".
+Si potrebbe notare un sacco di riferimenti a "String..." negli esempi vuoti. Questo si chiama VarArg. Significa essenzialmente che si può alimentare qualsiasi numero di detta variabile in questo caso "Stringa".
 
-Example: "reskillable:building|15", "reskillable:magic|7", "stage|test", "adv|minecraft:husbandry/plant_seed"
+Esempio: "reskillable:building<unk> 15", "reskillable:magic<unk> 7", "stage<unk> test", "adv<unk> minecraft:husbandry/plant_seed"
 
-Currently there is only 1 support not using the VarArg approach which is Requirement Locking through CrT. This will be switched over in the 1.2.0 release!
+Attualmente c'è solo 1 supporto che non utilizza l'approccio VarArg che è requisito di bloccaggio attraverso CrT. Questo verrà cambiato nella versione 1.2.0!
 
-### CurseForge Page:
+### Pagina CurseForge
 
 https://minecraft.curseforge.com/projects/compatskills
 
