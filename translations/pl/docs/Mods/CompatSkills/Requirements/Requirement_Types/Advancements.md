@@ -1,12 +1,12 @@
-# Advancements:
+# Zaawansowane:
 
-Advancements is one of the original requirement types supported in Skillable (Original Mod) and has now been improved in the code to be more reliable for gating. The Advancement Syntax is as follows:
+Advancements jest jednym z oryginalnych typów wymagań wspieranych w trybie umiejętności (Model oryginalny) i obecnie został udoskonalony w kodzie tak, aby był bardziej wiarygodny dla bramki. Składnia Advancement jest następująca:
 
-    Example:
+    Przykład:
     adv|ResourceLocation
     
-    Working Example:
+    Praca Przykład:
     adv|minecraft:husbandry/plant_seed
     
 
-This works for any and all Advancements even those added by other mods than minecraft, however the correct Resource Location needs to be specified.
+Działa to dla wszystkich i wszystkich Advancements nawet tych dodanych przez modyfikacje inne niż minecraft, jednak należy określić właściwą lokalizację zasobów.
