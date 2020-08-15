@@ -1,13 +1,13 @@
-# Advanced Mortars
+# Mortai Avanzati
 
-## Information
+## Informazioni
 
-Advanced Mortars adds 4 tiered in-world Mortars and is intended as a tool to be used by modpack authors. It currently has both support for JEI as well as robust CraftTweaker Integration.
+Advanced Mortars aggiunge 4 tiered in-world Mortars ed è inteso come uno strumento per essere utilizzato dagli autori di modpack. Attualmente ha sia il supporto per JEI che la robusta integrazione CraftTweaker.
 
-### For More Information
+### Per Ulteriori Informazioni
 
 https://minecraft.curseforge.com/projects/advanced-mortars
 
-### Bug Reports
+### Segnalazioni Di Bug
 
 https://github.com/codetaylor/advancedmortars/issues
