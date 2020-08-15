@@ -1,4 +1,4 @@
-# Heating Sources
+# Sorgenti Di Riscaldamento
 
 ## Pacchetto
 ```zenscirpt
@@ -7,7 +7,7 @@
 
 ## Metodi
 
-- **[IItemStack](/Vanilla/Items/IItemStack/) input** The block that supplies heat.
+- **[IItemStack](/Vanilla/Items/IItemStack/) input** Il blocco che fornisce calore.
 - **Int heat** heat per instance.
 
 ## Addizione
