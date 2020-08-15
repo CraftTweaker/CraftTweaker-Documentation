@@ -1,7 +1,7 @@
 # Create Element
 Custom Element Creation for Alchemistry
 
-# Package
+# 所属包名
 `mods.alchemistry.Util.createElement`
 ## Loader
 This needs to be loaded with `#loader alchemistry`
@@ -22,7 +22,7 @@ mods.alchemistry.Util.createElement(150,"vibranium","Vrb", 70, 90, 250);
 mods.alchemistry.Util.createElement(151,"unobtanium","Uno",30,54,69);
 ```
 
-## Notes
+## 注
 
 - Please use lowercase names
 - Pre-existing atomic numbers cannot be overwritten
