@@ -1,12 +1,12 @@
 # DebugPreprocessor
 
-The debugPreprocessor enables debug mode.
+debugPreprocessor はデバッグモードを有効にします。
 
-## Call
+## 電話
 
-You call the debug Preprocessor by adding `#debug` to your script file.
+スクリプトファイルに `#debug` を追加してデバッグプリプロセッサーを呼び出します。
 
-## What it does
+## 何をするか
 
-It globally enables debug mode. This mode outputs the parsed script files.  
-You most likely will never need them.
+デバッグモードをグローバルに有効にします。 このモードでは解析されたスクリプトファイルが出力されます。  
+おそらくそれらを必要としないでしょう。
