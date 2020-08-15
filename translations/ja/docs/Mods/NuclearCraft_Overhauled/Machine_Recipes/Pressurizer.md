@@ -1,7 +1,7 @@
-# Pressurizer
+# 加圧器
 
-## Importing the Package
-`mods.nuclearcraft.PressurizerPressurizer`
+## パッケージのインポート
+`mods.nuclearcraft.Pressurizer加圧器`
 
 ## レシピを追加中
 ```zenscript
