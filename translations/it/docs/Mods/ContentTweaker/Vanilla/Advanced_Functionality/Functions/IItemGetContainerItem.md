@@ -1,19 +1,19 @@
 # IItemGetContainerItem
 
-The IItemGetContainerItem function can be added to an [Item](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and will run whenever the item is used as ingredient.  
-It is used to determine, what will be left in the crafting slot, when the item is used as such.  
-Think of buckets, for example: Each filled bucket has the empty bucket as containerItem, and when a filled bucket is crafted, you will end up with an empty one.  
-This function can be used to calculate the containerItem, so you can go crazy with stuff like NBT-Tags or more.
+La funzione IItemGetContainerItem può essere aggiunta a un elemento [](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) e verrà eseguita ogni volta che l'elemento viene usato come ingrediente.  
+Viene usato per determinare, cosa rimarrà nello slot di creazione, quando l'oggetto viene usato come tale.  
+Pensa ai secchi, per esempio: Ogni secchio riempito ha il secchio vuoto come contenitoreArticolo, e quando un secchio riempito è realizzato, si finirà con uno vuoto.  
+Questa funzione può essere utilizzata per calcolare l'oggetto contenitore, quindi puoi impazzire con cose come NBT-Tags o più.
 
-## Importing the package
+## Importazione del pacchetto
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
+Potrebbe essere necessario per importare il pacchetto se si verificano problemi, in modo da essere più sicuri di spiacenti e aggiungere l'importazione.  
 `import mods.contenttweaker.IItemGetContainerItem;`
 
-## Parameters
+## Parametri
 
-The IItemGetContainerItem is a function with the following parameters:
+L'IItemGetContainerItem è una funzione con i seguenti parametri:
 
-- [IItemStack](/Vanilla/Items/IItemStack/) stack → The item.
+- [IItemStack](/Vanilla/Items/IItemStack/) stack → L'oggetto.
 
-The Function needs to return a new [IItemStack](/Vanilla/Items/IItemStack/) object, or null, if the item should not leave anything behind.
+La funzione deve restituire un nuovo oggetto [IItemStack](/Vanilla/Items/IItemStack/) , o null, se l'elemento non deve lasciare nulla indietro.
