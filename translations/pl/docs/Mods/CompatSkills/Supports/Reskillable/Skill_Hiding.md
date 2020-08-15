@@ -1,11 +1,11 @@
-# Skill Hiding / Visibility Locking
+# Ukrycie Umiejętności / Widoczność Blokowania
 
-This lock allows you to hide Skills until the point where a player fulfills the requirements to see the skill. This has some limited use-cases for example when adding "Class" Skills in Custom-Packs where you don't want someone who is an "Engineer" to see or be able to get access to the "Mage" skill page.
+Ta blokada pozwala ukrywać Umiejętności aż do momentu, w którym gracz spełni wymagania do zobaczenia umiejętności. Ma to pewne ograniczone zastosowania przykładowo podczas dodawania umiejętności "Klasa" w koszach, gdzie nie chcesz, aby ktoś, kto jest "inżynierem", widział lub miał dostęp do strony umiejętności "Mage".
 
-## Syntax:
+## Składnia:
 
-    Blank Example:
-    mods.compatskills.VisibilityLock.addVisibilityLock(CTSkill skill, String... Default Requirements);
+    Pusty przykład:
+    mods.compatskills.VisibilityLock.addVisibilityLock(CTSkill, String... Wymagania domyślne);
     
-    Working Example:
-    mods.compatskills.VisibilityLock.addVisibilityLock(<skill:reskillable:attack>, "dim|1");
+    Przykład:
+    mods.compatskills.VisibilityLock.addsibilityLock(<skill:reskillable:attack>, "dim|1");
