@@ -2,7 +2,7 @@
 
 ModTweaker allows you to add or remove forestry Charcoal Wall Recipes
 
-## Calling
+## Anruf
 
 You can call the package using `mods.forestry.CharcoalWall`
 
