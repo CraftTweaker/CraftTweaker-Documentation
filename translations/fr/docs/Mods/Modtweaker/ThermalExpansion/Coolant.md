@@ -1,37 +1,37 @@
-# Coolant
+# Refroidissement
 
-The Coolant manager does not belong to any specific machine but manages coolant values for all other machines.  
-For example the Enervation Dynamo uses the coolant values, as does the Magmatic Dynamo with the Ientropic Reservoir augment provided.
+Le gestionnaire de refroidissement n'appartient à aucune machine spécifique, mais gère les valeurs de refroidissement pour toutes les autres machines.  
+Par exemple la Dynamo Enervation utilise les valeurs de refroidissement, tout comme la Dynamo Magmatique avec l'amélioration du réservoir Ientropic fournie.
 
-## Import the package
+## Importer le paquet
 
-To shorten method calls you can [import](/AdvancedFunctions/Import/) the package like so:
+Pour raccourcir les appels de méthode, vous pouvez [importer](/AdvancedFunctions/Import/) le paquet comme ceci :
 
 ```zenscript
-import mods.thermalexpansion.Coolant;
+Importer mods.thermalexpansion.Coolant;
 ```
 
-## Add Coolant
+## Ajouter un refroidisseur
 
-Use this to register a new coolant to the manager.  
-CoolantRF needs to be non-negative, and the coolant factor needs to be between 1 and 100 (inclusive).  
-If those ranges are not met, the coolant will not be registered!
+Utilisez ceci pour enregistrer un nouveau refroidisseur au gestionnaire.  
+Le CoolantRF doit être non négatif et le facteur de refroidissement doit être compris entre 1 et 100 (inclus).  
+Si ces plages ne sont pas remplies, le refroidisseur ne sera pas enregistré !
 
 ```zenscript
-//mods.thermalexpansion.Coolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
+//mods.thermalexpansion.Coolant.addCoolant.addCoolant(ILiquidStack fluid, int coolantRf, int coolantFactor);
 mods.thermalexpansion.Coolant.addCoolant(<liquid:lava>, 0, 1);
 
 
-//These are two of the values TE uses by default:
-//mods.thermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20);
-//mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60);
+//Ce sont deux des valeurs que TE utilise par défaut :
+//mods. hermalexpansion.Coolant.addCoolant(<liquid:water>, 250000, 20 );
+//mods.thermalexpansion.Coolant.addCoolant(<liquid:cryotheum>, 3000000, 60 );
 ```
 
-## Remove Coolant
+## Retirer le Refroidissement
 
-Use this to deregister an existing coolant from the manager.
+Utilisez ceci pour désenregistrer un refroidisseur existant du gestionnaire.
 
 ```zenscript
-//mods.thermalexpansion.Coolant.removeCoolant(ILiquidStack fluid);
+//mods.thermalexpansion.Coolant.removeCoolant.fluide (ILiquidStack );
 mods.thermalexpansion.Coolant.removeCoolant(<liquid:water>);
 ```
