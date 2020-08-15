@@ -36,7 +36,7 @@ IEntityLiving extends [IEntityLivingBase](/Vanilla/Entities/IEntityLivingBase/).
 |                     | moveVertival  | float                                                     |
 | renderSizeModifier  |               | float                                                     |
 
-### ZenMethods
+### ZenMethoden
 
 #### Play living sound
 
