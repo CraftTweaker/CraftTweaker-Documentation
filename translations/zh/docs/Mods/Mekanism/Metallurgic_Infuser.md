@@ -1,24 +1,24 @@
-# Metallurgic Infuser
+# 冶金感染用户
 
-As of Mekanism 9.7.0 it is now possible to view all recipe strings of the Metallurgic Infuser through the command `/ct mekrecipes metallurgicInfuser`
+到Mekanism 9.7.0 现在可以通过命令 `/ct mekmatteres mallurgicInfuser` 查看所有配方字符串。
 
-## Infusion Type String
+## 注入类型字符串
 
-Both addition and removal of recipes require an "infusion type" string. Default examples from Mekanism are:
+添加和删除配方都需要一个“注入型”字符串。 Mekanis的默认例子是：
 
-| Infuse Type | Added by |
-| ----------- | -------- |
-| "CARBON"    | Mekanism |
-| "TIN"       | Mekanism |
-| "DIAMOND"   | Mekanism |
-| "REDSTONE"  | Mekanism |
-| "FUNGI"     | Mekanism |
-| "BIO"       | Mekanism |
-| "OBSIDIAN"  | Mekanism |
+| 信息类型       | 添加者   |
+| ---------- | ----- |
+| "CARBON"   | 梅卡尼什语 |
+| "TIN"      | 梅卡尼什语 |
+| “DIAMOND”  | 梅卡尼什语 |
+| “REDSTONE” | 梅卡尼什语 |
+| “FUNGI”    | 梅卡尼什语 |
+| “BIO”      | 梅卡尼什语 |
+| "OBSIDIAN" | 梅卡尼什语 |
 
-If any other mod registers a new infusion type, that type can be used in CraftTweaker as well as long as the registered type's name is specified exactly. NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
+如果任何其他模组注册一个新的注入类型， 这种类型可以在 CraftTinventer 中使用，只要注册类型的名称被准确指定。 NOTE: It is *not* possible to define **new** infusion *types* with CraftTweaker
 
-As of Mekanism 9.7.0 it is now possible to view all registered infusions (including those from other mods) via the command `/ct infuseTypes`
+到Mekanism 9.7.0 现在可以通过命令 `/ct infuseTypes查看所有已注册的注入(包括来自其他模式的注入`
 
 ## 添加配方
 
@@ -29,24 +29,24 @@ mods.mekanism.infuser.addRecipe("OBSIDIAN", 20, <minecraft:coal_block>, <minecra
 mods.mekanism.infuser.addRecipe("DIAMOND", 80, <minecraft:glowstone>, <minecraft:nether_star>);
 ```
 
-As of Mekanism 9.7.0 it is possible to use IIngredients as the inputStack instead of only IItemStacks.
+由于Mekanism 9.7.0，可以使用IIngredients 作为输入堆栈，而不仅仅是IItemStack。
 
-Note: Currently all this does is loop over the different possibilities in java while adding instead of you having to do it in ZenScript. Currently there is no built in support for compound ingredients or oredictionary in the machines themselves.
+注意：目前所有这一切都是在java的不同可能性上循环的，而不是在ZenScript中添加。 目前，机器本身没有用于支持复合成份或修复术。
 
 ## 删除配方
 
 ```zenscript
 mods.mekanism.infuser.removeRecipe(IIngredient outputStack, @Optional IIngredient inputStack, @Optional String infusionType);
 
-mods.mekanism.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ingot>, "REDSTONE");
-mods.mekanism.infuser.removeRecipe(<minecraft:mycelium>);
+mods.mekanis.infuser.removeRecipe(<mekanism:enrichedalloy>, <minecraft:iron_ingot>, "REDSTONE");
+mods.mekanis.infuser.removeRecipe(<minecraft:mycelium>);
 ```
 
-Specifying an input parameter will only remove the specific recipe that uses said input. Omitting the input parameter will remove all recipes that produce the specified output.
+指定输入参数只会删除使用所述输入的特定配方。 忽略输入参数将删除所有生成指定输出的配方。
 
-## Removing all recipes
+## 删除所有配方
 
-As of Mekanism 9.7.0 it is now possible to remove all Metallurgic Infuser recipes. (This excludes any recipes added via CraftTweaker)
+到Mekanism 9.7.0，现在可以移除所有冶金感染者配方。 (这排除了任何通过 CraftTweaker 添加的配方
 
 ```zenscript
 mods.mekanism.infuser.removeAllRecipes();
