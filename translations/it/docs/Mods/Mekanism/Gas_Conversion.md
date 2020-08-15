@@ -1,8 +1,8 @@
-# Item to Gas Conversion
+# Elemento a Conversione Gas
 
-As of Mekanism 9.7.5 it is now possible to have custom item to gas conversions in various machines.
+A partire da Mekanism 9.7.5 è ora possibile avere oggetti personalizzati per le conversioni di gas in varie macchine.
 
-If you want to change any of the values of the built in conversions it is recommended that you first remove the conversion and then add it back rather than overwriting it. This ensures that it properly removes all the data as in 9.7.5 it does not have a specified output/handling of what happens when an item is listed twice.
+Se si desidera modificare uno qualsiasi dei valori delle conversioni integrate, si consiglia di rimuovere prima la conversione e quindi aggiungerla di nuovo piuttosto che sovrascriverla. Ciò garantisce che rimuove correttamente tutti i dati come indicato al punto 9.7. non ha un output/gestione specifica di ciò che accade quando un articolo è elencato due volte.
 
 ## Addizione
 
@@ -20,7 +20,7 @@ mods.mekanism.GasConversion.unregister(IIngredient ingredient, IGasStack gas);
 mods.mekanism.GasConversion.unregister(<ore:ingotOsmium>, <gas:liquidosmium>);
 ```
 
-## Removing all conversions
+## Rimozione di tutte le conversioni
 
 ```zenscript
 mods.mekanism.GasConversion.unregisterAll();
