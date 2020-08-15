@@ -1,37 +1,37 @@
-# Fermenter
+# Fermentator
 
-ModTweaker allows you to add or remove forestry Fermenter Recipes
+ModTweaker pozwala na dodanie lub usunięcie przepisów leśnego Fermentera
 
-## Calling
+## Dzwonienie
 
-You can call the package using `mods.forestry.Fermenter`
+Możesz wywołać pakiet używając `mods.forestry.Fermenter`
 
-## Recipe Removal
+## Usuwanie przepisów
 
 ```zenscript
-//mods.forestry.Fermenter.removeRecipe(IIngredient input);
+//mods.forestry.Fermenter.removeRecipe(Input);
 mods.forestry.Fermenter.removeRecipe(<minecraft:reeds>);
 mods.forestry.Fermenter.removeRecipe(<liquid:water>);
 ```
 
-## Recipe Addition
+## Dodawanie przepisów
 
 ```zenscript
-//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, IItemStack resource, ILiquidStack fluidInput, int fermentationValue, float fluidOutputModifier);
+//mods.forestry.Fermenter.addRecipe(ILiquidStack fluidOutput, zasoby IItemStack, ILiquidStack fluidInput, int fermentationValue, fluidOutputModifier);
 mods.forestry.Fermenter.addRecipe(<liquid:lava>, <minecraft:obsidian>, <liquid:water>, 1000, 0.5);
 ```
 
-Amount of fluid output: fermentationValue * fluidOutputModifier
+Ilość wytworzenia płynów: wartość fermentacji * płynna Moc wyjściowa
 
-| Parameter           | Type                                           | description                                   |
-| ------------------- | ---------------------------------------------- | --------------------------------------------- |
-| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's output                           |
-| resource            | [IItemStack](/Vanilla/Items/IItemStack/)       | The Recipe's item input                       |
-| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | The Recipe's liquid input                     |
-| fermentationValue   | int                                            | Amount of inputFluid on organic item requires |
-| fluidOutputModifier | int                                            | Output multiplier                             |
+| Parametr            | Typ                                            | opis                                               |
+| ------------------- | ---------------------------------------------- | -------------------------------------------------- |
+| fluidOutput         | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | Wyjście przepisu                                   |
+| zasób               | [IItemStack](/Vanilla/Items/IItemStack/)       | Przedmiot Przepisu                                 |
+| fluidInput          | [ILiquidStack](/Vanilla/Liquids/ILiquidStack/) | Płynne wejście przepisu                            |
+| Wartość fermentacji | odcień                                         | Wymagana ilość inputFluid na materiale organicznym |
+| Modyfikator płynu   | odcień                                         | Mnożnik wyjściowy                                  |
 
-## Fuel Removal
+## Wydobycie paliwa
 
 ```zenscript
 //mods.forestry.Fermenter.removeFuel(IIngredient fermenterItem);
@@ -39,15 +39,15 @@ mods.forestry.Fermenter.removeFuel(<forestry:fertilizer_compound>);
 
 ```
 
-## Fuel Addition
+## Dodanie paliwa
 
 ```zenscript
-//mods.forestry.Fermenter.addFuel(IItemStack item, int fermentPerCycle, int burnDuration);
+//mods.forestry.Fermenter.addFuel(element IItemStack, int fermentPerCycle, int burnDuration);
 mods.forestry.Fermenter.addFuel(<minecraft:leaves:1>, 100, 5);
 ```
 
-| Parameter       | Type                                     | Description                                                                         |
-| --------------- | ---------------------------------------- | ----------------------------------------------------------------------------------- |
-| item            | [IItemStack](/Vanilla/Items/IItemStack/) | Item to become a valid fuel for the fermenter                                       |
-| fermentPerCycle | int                                      | How much is fermented per work cycle, i.e. how much fluid of the input is consumed. |
-| burnDuration    | int                                      | Amount of work cycles a single item of this fuel lasts before expiring.             |
+| Parametr           | Typ                                      | Opis                                                                           |
+| ------------------ | ---------------------------------------- | ------------------------------------------------------------------------------ |
+| element            | [IItemStack](/Vanilla/Items/IItemStack/) | Przedmiot do uzyskania ważności paliwa dla fermentatora                        |
+| fermentacyjny cykl | odcień                                   | Ile sfermentuje się w cyklu pracy, tj. ile płynów wejściowych jest zużywane.   |
+| Czas spalania      | odcień                                   | Ilość cykli pracy w pojedynczym elemencie tego paliwa trwa przed wygaśnięciem. |
