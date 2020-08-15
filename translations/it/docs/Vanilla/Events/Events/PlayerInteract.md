@@ -1,16 +1,16 @@
 # PlayerInteract
 
-The PlayerInteract Event is fired whenever a player interacts with a block.
+L'evento PlayerInteract viene sparato ogni volta che un giocatore interagisce con un blocco.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. layerInteractEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteract Events implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getters/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
@@ -18,23 +18,23 @@ PlayerInteract Events implement the following interfaces and are able to call al
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter    | Tipo Di Reso                         |
 | ------------ | ------------------------------------ |
-| `canceled`   | boolean                              |
+| `annullato`  | boolean                              |
 | `usingItem`  | boolean                              |
 | `usingBlock` | boolean                              |
 | `x`          | int                                  |
 | `y`          | int                                  |
 | `z`          | int                                  |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
+| `giocatore`  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `mondo`      | [IWorld](/Vanilla/World/IWorld/)     |
 | `blocco`     | [IBlock](/Vanilla/Blocks/IBlock/)    |
 | `dimensione` | int                                  |
 
 ## ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.useBlock()` sets Block to true
-- `event.useItem()` sets Item to true
+- `event.cancel()` imposta l'evento come annullato
+- `event.useBlock()` imposta Block a true
+- `event.useItem()` imposta l'articolo a true
