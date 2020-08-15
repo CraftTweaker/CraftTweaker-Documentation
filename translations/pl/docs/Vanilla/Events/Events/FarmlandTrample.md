@@ -1,18 +1,18 @@
 # FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+Wydarzenie FarmlandTrample jest wystrzelane za każdym razem, gdy ziemia rolna ma zostać zrzucona. Anulowanie wydarzenia zapobiegnie deptaniu bloku.
 
 ## Uwagi
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` zawiera odległość pokonaną przed uderzeniem w ziemię rolną.
 
 ## Klasa wydarzenia
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.FarmlandTrampleEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. armlandTrampleEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
 ## Rozszerzenia interfejsu zdarzenia
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Wydarzenia FarmlandTrample zaimplementują następujące interfejsy i są również w stanie wywołać wszystkie swoje metody/pobierające/ustawiające:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [Wydarzenie IBlock'a](/Vanilla/Events/Events/IBlockEvent/)
@@ -20,7 +20,7 @@ FarmlandTrample Events implement the following interfaces and are able to call a
 ## ZenGetters
 Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter      | ZenSetter | Typ                                   |
-| -------------- | --------- | ------------------------------------- |
-| `podmiot`      |           | [IEntity](/Vanilla/Entities/IEntity/) |
-| `fallDistance` |           | zmiennoprzecinkowe                    |
+| ZenGetter   | ZenSetter | Typ                                   |
+| ----------- | --------- | ------------------------------------- |
+| `podmiot`   |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `Odległość` |           | zmiennoprzecinkowe                    |
