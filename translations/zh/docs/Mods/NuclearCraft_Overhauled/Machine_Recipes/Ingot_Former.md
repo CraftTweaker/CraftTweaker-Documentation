@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.IngotFormer`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
 mods.nuclearcraft.IngotFormer.addRecipe(ILiquidStack fluidInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
 mods.nuclearcraft.IngotFormer.removeRecipeWithInput(ILiquidStack fluidInput);
 mods.nuclearcraft.IngotFormer.removeRecipeWithOutput(IIngredient itemOutput);
