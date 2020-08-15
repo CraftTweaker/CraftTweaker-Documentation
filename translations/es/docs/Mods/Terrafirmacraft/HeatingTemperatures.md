@@ -1,13 +1,13 @@
-# Heating Temperatures
+# Temperaturas de calefacción
 
-- Warming starts at 1, ends at 80
-- Hot starts at 80, ends at 210
-- Very Hot starts at 210, ends at 480
-- Faint Red starts at 480, ends at 580
-- Dark Red starts at 580, ends at 730
-- Bright Red starts at 730, ends at 930
-- Orange starts at 930, ends at 1100
-- Yellow starts at 1100, ends at 1300
-- Yellow White starts at 1300, ends at 1400
-- White starts at 1400, ends at 1500
-- Brilliant White starts at 1500
+- El calentamiento comienza a 1, termina a 80
+- El calor comienza a los 80, termina a 210
+- Muy caliente comienza a los 210, termina a 480
+- Faint Red comienza en 480, termina en 580
+- El Rojo Oscuro comienza en 580, termina en 730
+- El rojo brillante comienza a los 730, termina a las 930
+- Naranja comienza a las 930, termina a 1100
+- El amarillo comienza en 1100, termina en 1300
+- Blanco Amarillo comienza a las 1300, termina a las 1400
+- Blanco comienza a las 1400, termina a las 1500
+- Blanco brillante comienza a las 1500
