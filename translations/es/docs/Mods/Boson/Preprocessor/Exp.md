@@ -17,7 +17,7 @@ As an example, imagine we wanted to enable the `soo` and `wd4` flags. The corres
 ```
 
 ## List of flags
-| Flag name | Current Status | Description                                                                           |
+| Flag name | Current Status | Descripción                                                                           |
 | --------- | -------------- | ------------------------------------------------------------------------------------- |
 | `soo`     | Disabled       | Enables operator overloading for Sequences                                            |
 | `saia`    | Disabled       | Provides an automatic `it` argument to functions with a single parameter in Sequences |
