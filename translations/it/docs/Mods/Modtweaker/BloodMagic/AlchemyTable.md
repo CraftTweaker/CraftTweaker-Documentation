@@ -1,37 +1,37 @@
-# Alchemy Table
+# Tabella Alchimia
 
-## Package
+## Pacchetto
 
-`mods.bloodmagic.AlchemyTable`
+`mods.blood magic.AlchemyTable`
 
-## Addition
+## Addizione
 
 ```zenscript
-inputs has a max size of 6
+gli input hanno una dimensione massima di 6
 //mods.bloodmagic.AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
-mods.bloodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
+mods. loodmagic.AlchemyTable.addRecipe(<minecraft:diamond>, [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>], 20,10,0);
 ```
 
-## Potion addition
+## Aggiunta pozione
 
 ```zenscript
-inputs has a max size of 5 to account for catalysts (any potion container object is discarded)
-var pot = <potion:minecraft:strength>.makePotionEffect(6000, 1);
-//mods.bloodmagic.AlchemyTable.addPotionRecipe(IItemStack[] inputs, IPotionEffect effects, int syphon, int ticks, int minTier)
+gli ingressi hanno una dimensione massima di 5 per tenere conto dei catalizzatori (qualsiasi oggetto contenitore di pozioni viene scartato)
+var pot = <potion:minecraft:strength>. akePotionEffect(6000, 1);
+//mods.blood magic.AlchemyTable. ddPotionRecipe(IItemStack[] inputs, IPotionEffect effects int syphon, int ticks, int minTier)
 mods.bloodmagic.AlchemyTable.addPotionRecipe([<bloodmagic:potion_flask>, <minecraft:carrot>,<minecraft:potato>], pot, 20, 10, 0);
 ```
 
-## Removal
+## Rimozione
 
 ```zenscript
-inputs has a max size of 6
+gli input hanno una dimensione massima di 6
 //mods.bloodmagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
 mods.bloodmagic.AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
 ```
 
-## Potion removal
+## Eliminazione pozione
 
-Any removal is considered as a potential potion if it does not match a recipe in the API's registry.
+Qualsiasi rimozione è considerata come una pozione potenziale se non corrisponde a una ricetta nel registro API.
 
 ```zenscript
 //mods.bloodMagic.AlchemyTable.removeRecipe(IItemStack[] inputs);
