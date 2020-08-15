@@ -6,16 +6,16 @@ The Refinery package can be used to add/remove recipes to/from the Immersive Eng
 
 You can call the Refinery package using `mods.immersiveengineering.Refinery`.
 
-## Add Recipe
+## Añadir Receta
 
-| Required | Type    | Data Type                                    |
-| -------- | ------- | -------------------------------------------- |
-| Required | Output  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
-| Required | Energy  | Integer                                      |
+| Requerido | Tipo    | Tipo de Datos                                |
+| --------- | ------- | -------------------------------------------- |
+| Requerido | Salida  | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Requerido | Input 1 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Requerido | Input 2 | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Requerido | Energy  | Entero                                       |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example
@@ -26,11 +26,11 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:iron>, <liquid:water>, <liq
 
 ## Remove Recipe
 
-| Type   | Data Type                                    |
+| Tipo   | Tipo de Datos                                |
 | ------ | -------------------------------------------- |
-| Output | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
+| Salida | [Fluidstack](/Vanilla/Liquids/ILiquidStack/) |
 
-### Example
+### Ejemplo
 
 ```zenscript
 //Example
