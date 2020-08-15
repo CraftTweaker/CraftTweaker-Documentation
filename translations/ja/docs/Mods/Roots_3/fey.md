@@ -29,7 +29,7 @@ void addRecipe(
 
 ```zenscript
 void removeRecipe(
-  IItemStack output // the item produced by the recipe you wish to remove
+  IItemStack 出力// 削除したいレシピによって生成されたアイテム
 );
 ```
 
@@ -49,7 +49,7 @@ Fey.addRecipe("tnt", <minecraft:tnt>, [<minecraft:gunpowder>, <minecraft:gunpowd
 // Removes the recipe for the living axe
 Fey.removeRecipe(<roots:living_axe>);
 
-// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. By default all Fey crafting recipe names are the same as the item's registry name.
+// Adds a different recipe for the living axe, using the same name, to ensure that it shows up in Patchouli. デフォルトでは、すべてのFeyクラフトレシピ名はアイテムのレジストリ名と同じです。
 Fey.addRecipe("living_axe", <roots:living_axe>, [<minecraft:sand>, <minecraft:dirt>, <minecraft:stone>, <minecraft:glass>, <minecraft:stone_axe>]);
 ```
 
