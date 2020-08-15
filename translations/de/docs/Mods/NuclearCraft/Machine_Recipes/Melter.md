@@ -1,6 +1,6 @@
-# Melter
+# Schmelze
 
-## Importing the Package
+## Paket wird importiert
 `mods.nuclearcraft.melter`
 
 ## Rezepte hinzufügen
