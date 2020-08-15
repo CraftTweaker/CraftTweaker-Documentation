@@ -1,6 +1,6 @@
 # DirectionAxis
 
-Represents a direction axis (X, Y, Z)
+Rappresenta un asse di direzione (X, Y, Z)
 
 Questa classe è stata aggiunta da una mod con ID `crafttweaker`. Perciò, è necessario avere questa mod installata per poter utilizzare questa funzione.
 
@@ -11,13 +11,13 @@ crafttweaker.api.util.DirectionAxis
 ```
 
 ## Interfacce Implementate
-DirectionAxis implements the following interfaces. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
+DirectionAxis implementa le seguenti interfacce. Ciò significa che ogni metodo presente nell'interfaccia può essere usato anche per questa classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Metodi
 ### getCoordinate
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+Ottiene le coordinate di questo asse in base ai valori indicati, se questo asse è "X", restituirà il valore del parametro "x"
 
 Restituisce un intero
 
@@ -28,9 +28,9 @@ Restituisce un intero
 
 | Parametro | Tipo | Descrizione               |
 | --------- | ---- | ------------------------- |
-| x         | int  | x value of the coordinate |
-| y         | int  | y value of the coordinate |
-| z         | int  | z value of the coordinate |
+| x         | int  | x valore delle coordinate |
+| y         | int  | valore y della coordinata |
+| z         | int  | valore z della coordinata |
 
 
 
@@ -39,8 +39,8 @@ Restituisce un intero
 | Nome          | Tipo    | Ha Getter | Ha Setter |
 | ------------- | ------- | --------- | --------- |
 | commandString | Stringa | vero      | falso     |
-| horizontal    | boolean | vero      | falso     |
+| orizzontale   | boolean | vero      | falso     |
 | nome          | Stringa | vero      | falso     |
-| ordinal       | int     | vero      | falso     |
-| vertical      | boolean | vero      | falso     |
+| ordinale      | int     | vero      | falso     |
+| verticale     | boolean | vero      | falso     |
 
