@@ -1,40 +1,40 @@
-# PlayerInteract
+# Interakcja gracza
 
-The PlayerInteract Event is fired whenever a player interacts with a block.
+Wydarzenie PlayerInteract jest uruchamiane za każdym razem, gdy gracz wchodzi w interakcję z blokiem.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerInteractEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerInteractEvent`  
+Możesz oczywiście również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerInteract Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+PlayerInteract Events implementuje następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
+- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter    | Return Type                          |
-| ------------ | ------------------------------------ |
-| `canceled`   | boolean                              |
-| `usingItem`  | boolean                              |
-| `usingBlock` | boolean                              |
-| `x`          | int                                  |
-| `y`          | int                                  |
-| `z`          | int                                  |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/) |
-| `world`      | [IWorld](/Vanilla/World/IWorld/)     |
-| `block`      | [IBlock](/Vanilla/Blocks/IBlock/)    |
-| `dimension`  | int                                  |
+| ZenGetter                | Typ zwrotu                           |
+| ------------------------ | ------------------------------------ |
+| `anulowane`              | boolean                              |
+| `przy użyciu Przedmiotu` | boolean                              |
+| `używając Bloku`         | boolean                              |
+| `x`                      | odcień                               |
+| `y`                      | odcień                               |
+| `z`                      | odcień                               |
+| `gracz`                  | [IPlayer](/Vanilla/Players/IPlayer/) |
+| `świat`                  | [IWorld](/Vanilla/World/IWorld/)     |
+| `blok`                   | [IBlock](/Vanilla/Blocks/IBlock/)    |
+| `wymiary`                | odcień                               |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled
-- `event.useBlock()` sets Block to true
-- `event.useItem()` sets Item to true
+- `event.cancel()` ustawia wydarzenie jako anulowane
+- `event.useBlock()` ustawia blok na true
+- `event.useItem()` ustaw element na true
