@@ -1,71 +1,71 @@
 # Lexica Botania
 
-The Lexicon package is used for adding or removing pages, entries or whole categories to/from the Lexica Botania.
+Pakiet Leksoński jest używany do dodawania lub usuwania stron, wpisów lub całych kategorii do/z Botanii.
 
-## Calling
+## Dzwonienie
 
-You can call the Lexicon package using `mods.botania.Lexicon`
+Możesz zadzwonić na pakiet Lxicon używając `mods.botania.L5Non`
 
-## Pages
+## Strony
 
-### Addition
-
-```zenscript
-mods.botania.Lexicon.addBrewPage(String name, String entry, int page_number, String brew, IIngredient[] recipe, String bottomText);
-mods.botania.Lexicon.addCraftingPage(String name, String entry, int page_number, String... recipeNames);
-mods.botania.Lexicon.addElvenPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
-mods.botania.Lexicon.addEntityPage(String name, String entry, int page_number, String entity, int size);
-mods.botania.Lexicon.addImagePage(String name, String entry, int page_number, String resource);
-mods.botania.Lexicon.addLorePage(String name, String entry, int page_number);
-mods.botania.Lexicon.addInfusionPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addAlchemyPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addConjurationPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[] inputs, int[] mana);
-mods.botania.Lexicon.addPetalPage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs);
-mods.botania.Lexicon.addRunePage(String name, String entry, int page_number, IItemStack[] outputs, IIngredient[][] inputs, int[] mana);
-mods.botania.Lexicon.addTextPage(String name, String entry, int page_number);
-```
-
-### Removal
+### Dodanie
 
 ```zenscript
-mods.botania.Lexicon.removePage(String entry, int page_number);
+mods.botania.Lexicon.addBrewPage(nazwa ciągu, wpis ciągu, int page_numer, ciąg brew, IIngredient[] receptura, String bottomText);
+mods.botania.Lexicon.addCraftingPage(Nazwa ciągu, wpis ciągu, int page_numer, String... 
+mods.botania.Lexicon.addElvenPage(Nazwa ciągu, wpis ciągu, int page_numer, IItemStack[] wyjścia, IIngredient[][] wejścia);
+mods.botania.Lexicon.addEntityPage(nazwa ciągu, wpis ciągu, int page_numer, obiekt ciągu, rozmiar int);
+mods.botania.Lexicon. ddImagePage(Nazwa ciągu, wpis ciągu, int page_numer, String resource);
+mods.botania.Lexicon.addLorePage(Nazwa ciągu, wpis ciągu, int page_number);
+mods. otania.Lexicon.addInfusionPage(nazwa ciągu, wpis ciągu, int page_numer, IItemStack[] wyjścia, IIngredient[] dane wejściowe, int[] mana);
+mods.botania.Lexicon. ddAlchemyPage(nazwa ciągu, wpis ciągu, int page_numer, IItemStack[] dane wyjściowe, IIngredient[] dane wejściowe, int[] mana);
+mods.botania.Lexicon. ddConjurationPage(nazwa ciągu, wpis ciągu, int page_number, IItemStack[] dane wyjściowe, IIngredient[] dane wejściowe, int[] mana);
+mods.botania.Lexicon. ddPetalPage(nazwa ciągu, wpis ciągu, int page_numer, IItemStack[] wyjścia, IIngredient[][] wejścia);
+mods.botania.Lexicon. ddRunePage(nazwa ciągu, wpis ciągu, int page_numer, IItemStack[] dane wyjściowe, IIngredient[][] dane wejściowe, int[] mana);
+mods.botania.Lexicon.addTextPage(nazwa ciągu, wpis ciągu, int page_number);
 ```
 
-## Entries
-
-### Addition
+### Usuwanie
 
 ```zenscript
-mods.botania.Lexicon.addEntry(String entry, String catagory, IItemStack stack);
+mods.botania.Lexicon.removePage(wpis String, int page_number);
 ```
 
-### Removal
+## Wpisy
+
+### Dodanie
 
 ```zenscript
-mods.botania.Lexicon.removeEntry(String entry);
+mods.botania.Lexicon.addEntry(wpis ciągu, katagoria, IItemStack stack);
 ```
 
-## Categories
-
-### Addition
+### Usuwanie
 
 ```zenscript
-mods.botania.Lexicon.addCategory(String name);
+mods.botania.Lexicon.removeEntry(wpis String);
 ```
 
-### Removal
+## Kategorie
+
+### Dodanie
 
 ```zenscript
-mods.botania.Lexicon.removeCategory(String name);
+mods.botania.Lexicon.addCategory(Nazwa ciągu);
 ```
 
-### Set
+### Usuwanie
 
 ```zenscript
-mods.botania.Lexicon.setCategoryIcon(String name, String icon);
+mods.botania.Lexicon.removeCategory(Nazwa ciągu);
 ```
 
-## Recipe Mapping
+### Ustaw
+
+```zenscript
+mods.botania.Lexicon.setCategoryIcon(nazwa ciągu, ikona ciągu);
+```
+
+## Mapowanie przepisów
 
 ```zenscript
 mods.botania.Lexicon.addRecipeMapping(IItemStack stack, String Entry, int page);
