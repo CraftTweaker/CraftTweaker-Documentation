@@ -36,10 +36,10 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 | Parameter | Type                                                              | Beschreibung                              |
 | --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
 
 
-### matches
+### passt
 
 Does the given stack match the ingredient?
 
@@ -52,7 +52,7 @@ Returns boolean
 
 | Parameter | Type                                                              | Beschreibung       |
 | --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| stapeln   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
 
 
 ### setDisplayName
@@ -66,7 +66,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 <item:minecraft:dirt>.setDisplayName("totally not dirt");
 ```
 
-| Parameter | Type   | Description            |
+| Parameter | Type   | Beschreibung           |
 | --------- | ------ | ---------------------- |
 | name      | String | New name of the stack. |
 
@@ -84,7 +84,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 | Parameter | Type | Beschreibung         |
 | --------- | ---- | -------------------- |
-| damage    | int  | the new damage value |
+| schaden   | int  | the new damage value |
 
 
 ### withTag
@@ -104,17 +104,17 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 
 
-## Properties
+## Eigenschaften
 
 | Name           | Type                                                                | Has Getter | Has Setter |
 | -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| amount         | int                                                                 | true       | false      |
-| burnTime       | int                                                                 | true       | true       |
-| commandString  | String                                                              | true       | false      |
-| damageable     | boolean                                                             | true       | false      |
+| beträge        | int                                                                 | true       | false      |
+| brennzeit      | int                                                                 | true       | true       |
+| Kommandozeile  | String                                                              | true       | false      |
+| beschädigbar   | boolean                                                             | true       | false      |
 | damaged        | boolean                                                             | true       | false      |
 | displayName    | String                                                              | true       | false      |
-| empty          | boolean                                                             | true       | false      |
+| leer           | boolean                                                             | true       | false      |
 | food           | [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)            | true       | true       |
 | getOrCreate    | [crafttweaker.api.data.IData](/vanilla/api/data/IData)              | true       | false      |
 | getRepairCost  | int                                                                 | true       | false      |
@@ -124,7 +124,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 | isCrossbow     | boolean                                                             | true       | false      |
 | isEnchantable  | boolean                                                             | true       | false      |
 | isEnchanted    | boolean                                                             | true       | false      |
-| items          | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| gegenstände    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
 | maxDamage      | int                                                                 | true       | false      |
 | maxStackSize   | int                                                                 | true       | false      |
 | registryName   | String                                                              | true       | false      |
@@ -145,7 +145,7 @@ Sets the amount of the ItemStack
 
 | Parameter | Type | Beschreibung |
 | --------- | ---- | ------------ |
-| amount    | int  | new amount   |
+| beträge   | int  | new amount   |
 
 ## Casters
 
