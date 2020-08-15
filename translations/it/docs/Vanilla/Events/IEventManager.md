@@ -1,41 +1,41 @@
 # IEventManager
 
-The IEventManager is what you're gonna need when dealing with event handlers.
+IEventManager è quello di cui hai bisogno quando hai a che fare con i gestori di eventi.
 
 ## Importare la classe
 
-It might be required for you to [import](/AdvancedFunctions/Import/) the class if you encounter any issues.  
-`import crafttweaker.events.IEventManager;`
+Potrebbe essere necessario [importare](/AdvancedFunctions/Import/) la classe se riscontri dei problemi.  
+`importare crafttweaker.events.IEventManager;`
 
-## Calling the event manager
+## Chiamare il gestore degli eventi
 
-You can access the event manager using the [global `events` field](/Vanilla/Global_Functions/)
+È possibile accedere al gestore degli eventi utilizzando il campo [globale `eventi`](/Vanilla/Global_Functions/)
 
-## How do events work?
+## Come funzionano gli eventi?
 
-You can add a function that represents the event and from there on you can decide what you want CrT to do if such an event occurs.  
-The most important thing to remember is that you need to **CAST THE EVENT TO IT'S TYPE!** as otherwise you will not be able to access any if it's ZenGetters.  
-If you simply want to print something where you don't need to access the event, then it's fine.
+È possibile aggiungere una funzione che rappresenta l'evento e da lì in poi si può decidere cosa si desidera fare CrT se tale evento si verifica.  
+La cosa più importante da ricordare è che è necessario **CAST THE EVENT TO IT 'S TYPE!** altrimenti non sarai in grado di accedere a nessuno se è ZenGetters.  
+Se vuoi semplicemente stampare qualcosa dove non hai bisogno di accedere all'evento, allora va bene.
 
 ```zenscript
 events.onPlayerCrafted(function(event as crafttweaker.event.PlayerCraftedEvent){
     print("event".length);
     print(event.player.name);
-    event.player.xp += 1;
+    event. layer.xp += 1;
 });
 
 
-events.onPlayerLoggedIn(function(event) {
-    //event instanceof Object -> No way of accessing it, so better cast!
+eventi. nPlayerLoggedIn(function(event) {
+    //event instanceof Object -> Nessun modo di accedervi, così meglio cast!
     print("SOMEONE HAS LOGGED IN!!!");
 });
 ```
 
-## What events are available?
+## Quali eventi sono disponibili?
 
-The ZenMethods would be what you'll need to call on `events`, the Event Class would be what you need to cast the event as.
+Lo ZenMethods sarebbe quello che dovrai chiamare `eventi`, la Classe Evento sarebbe ciò di cui hai bisogno per lanciare l'evento.
 
-| ZenMethod                   | Event Class                                                                                              |
+| ZenMethod                   | Classe Evento                                                                                            |
 | --------------------------- | -------------------------------------------------------------------------------------------------------- |
 | onAllowDespawn              | [`crafttweaker.event.EntityLivingSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)                 |
 | onAnimalTame                | [`crafttweaker.event.AnimalTameEvent`](/Vanilla/Events/Events/AnimalTame/)                               |
@@ -66,7 +66,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onExplosionDetonate         | [`crafttweaker.event.ExplosionDetonateEvent`](/Vanilla/Events/Events/ExplosionDetonate/)                 |
 | onExplosionStart            | [`crafttweaker.event.ExplosionStartEvent`](/Vanilla/Events/Events/ExplosionStart/)                       |
 | onFarmlandTrample           | [`crafttweaker.event.FarmlandTrampleEvent`](/Vanilla/Events/Events/FarmlandTrample/)                     |
-| onItemExpire                | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
+| onItemScadere               | [`crafttweaker.event.ItemExpireEvent`](/Vanilla/Events/Events/ItemExpire/)                               |
 | onItemFished                | [`crafttweaker.event.ItemFishedEvent`](/Vanilla/Events/Events/ItemFished/)                               |
 | onItemToss                  | [`crafttweaker.event.ItemTossEvent`](/Vanilla/Events/Events/ItemToss/)                                   |
 | onLivingDestroyBlock        | [`crafttweaker.event.LivingDestroyBlockEvent`](/Vanilla/Events/Events/LivingDestroyBlock/)               |
@@ -81,7 +81,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onPlayerAttackEntity        | [`crafttweaker.event.PlayerAttackEntityEvent`](/Vanilla/Events/Events/PlayerAttackEntity/)               |
 | onPlayerBonemeal            | [`crafttweaker.event.PlayerBonemealEvent`](/Vanilla/Events/Events/PlayerBonemeal/)                       |
 | onPlayerBreakSpeed          | [`crafttweaker.event.PlayerBreakSpeed`](/Vanilla/Events/Events/PlayerBreakSpeed/)                        |
-| onPlayerBrewedPotion        | [`crafttweaker.event.PlayerBrewedPotion`](/Vanilla/Events/Events/PlayerBrewedPotion/)                    |
+| onPlayerBrewedPozione       | [`crafttweaker.event.PlayerBrewedPozione`](/Vanilla/Events/Events/PlayerBrewedPotion/)                   |
 | onPlayerChangedDimension    | [`crafttweaker.event.PlayerChangedDimensionEvent`](/Vanilla/Events/Events/PlayerChangedDimension/)       |
 | onPlayerCloseContainer      | [`crafttweaker.event.PlayerCloseContainerEvent`](/Vanilla/Events/Events/PlayerCloseContainer/)           |
 | onPlayerCrafted             | [`crafttweaker.event.PlayerCraftedEvent`](/Vanilla/Events/Events/PlayerCrafted/)                         |
@@ -115,7 +115,7 @@ The ZenMethods would be what you'll need to call on `events`, the Event Class wo
 | onSleepingTimeCheck         | [`crafttweaker.event.SleepingTimeCheckEvent`](/Vanilla/Events/Events/SleepingTimeCheck/)                 |
 | onSpecialSpawn              | [`crafttweaker.event.EntityLivingExtendedSpawnEvent`](/Vanilla/Events/Events/EntityLivingSpawn/)         |
 
-## Clear all event handlers
+## Cancella tutti i gestori di eventi
 
 ```zenscript
 events.clear();
