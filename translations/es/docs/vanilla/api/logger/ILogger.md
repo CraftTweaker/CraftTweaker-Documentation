@@ -1,6 +1,6 @@
 # ILogger
 
-Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
+Clase base usada para interactuar con el archivo crafttweaker.log y otros registradores (como el registrador del jugador).
 
 Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
@@ -13,58 +13,58 @@ crafttweaker.api.ILogger
 ## Métodos
 ### debug
 
-Logs a debug message.
+Registra un mensaje de depuración.
 
 ```zenscript
 logger.debug(message as String);
 logger.debug("message");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| message   | Cadena | message to be logged. |
+| Parámetro | Tipo   | Descripción               |
+| --------- | ------ | ------------------------- |
+| mensaje   | Cadena | mensaje a ser registrado. |
 
 
 ### error
 
-Logs an error message.
+Registra un mensaje de error.
 
 ```zenscript
 logger.error(message as String);
 logger.error("message");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| message   | Cadena | message to be logged. |
+| Parámetro | Tipo   | Descripción               |
+| --------- | ------ | ------------------------- |
+| mensaje   | Cadena | mensaje a ser registrado. |
 
 
 ### info
 
-Logs an info message.
+Registra un mensaje de información.
 
 ```zenscript
 logger.info(message as String);
 logger.info("message");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| message   | Cadena | message to be logged. |
+| Parámetro | Tipo   | Descripción               |
+| --------- | ------ | ------------------------- |
+| mensaje   | Cadena | mensaje a ser registrado. |
 
 
-### warning
+### advertencia
 
-Logs a warning message.
+Registra un mensaje de advertencia.
 
 ```zenscript
 logger.warning(message as String);
 logger.warning("message");
 ```
 
-| Parámetro | Tipo   | Descripción           |
-| --------- | ------ | --------------------- |
-| message   | Cadena | message to be logged. |
+| Parámetro | Tipo   | Descripción               |
+| --------- | ------ | ------------------------- |
+| mensaje   | Cadena | mensaje a ser registrado. |
 
 
 
