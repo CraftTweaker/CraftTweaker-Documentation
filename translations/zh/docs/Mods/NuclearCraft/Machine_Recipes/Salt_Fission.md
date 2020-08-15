@@ -3,12 +3,12 @@
 ## Importing the Package
 `mods.nuclearcraft.salt_fission`
 
-## Adding Recipes
+## 添加配方
 ```zenscript
 mods.nuclearcraft.salt_fission.addRecipe([fluidInput, fluidOutput, double baseTime, double basePower, @Optional double processRadiation]);
 ```
 
-## Removing Recipes
+## 删除配方
 ```zenscript
 mods.nuclearcraft.salt_fission.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.salt_fission.removeRecipeWithOutput([fluidOutput]);
