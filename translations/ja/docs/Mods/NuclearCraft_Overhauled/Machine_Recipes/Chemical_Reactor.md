@@ -1,7 +1,7 @@
-# Chemical Reactor
+# 化学リアクタ
 
-## Importing the Package
-`mods.nuclearcraft.ChemicalReactorChemicalReactor`
+## パッケージのインポート
+`mods.nuclearcraft.ChemicalReactor化学反応器`
 
 ## レシピを追加中
 ```zenscript
