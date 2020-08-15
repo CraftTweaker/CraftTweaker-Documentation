@@ -30,6 +30,6 @@ addCoolant(fluid: ILiquidStack, timeMultiplier: Float)
 coolant().addCoolant(<liquid:tf-sewage> * 50, 1.1);
 ```
 
-### Notes
+### Notizen
 
 All of these actions will get cached and ran after the default registry for this machine has finished registering all recipes (including the ones from the custom jsons).
