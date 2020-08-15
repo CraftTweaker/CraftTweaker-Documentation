@@ -1,6 +1,6 @@
-# Treasure Chest
+# Schatztruhe
 
-## Package
+## Paket
 
 `mods.actuallyadditions.TreasureChest`
 
