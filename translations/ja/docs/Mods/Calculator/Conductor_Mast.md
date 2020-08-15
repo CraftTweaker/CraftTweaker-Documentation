@@ -1,11 +1,11 @@
 # Conductor Mast
 
-## Package
+## パッケージ
 ```zenscript
 import mods.calculator.conductorMast;
 ```
 
-## Methods
+## メソッド
 
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output** The output.
@@ -16,7 +16,7 @@ import mods.calculator.conductorMast;
 conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Removal
+## 削除
 ```zenscript
 conductorMast.removeRecipe(IIngredient output);
 ```
