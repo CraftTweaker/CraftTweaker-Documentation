@@ -1,9 +1,9 @@
 # MCXpChange
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange
 ```
@@ -12,13 +12,13 @@ crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange>);
 ```
-| Parameter | Type                                                                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                           | 説明                      |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerXpEvent.MCXpChange](/vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange)> | No description provided |
 
 
 
-## Methods
+## メソッド
 ### getAmount
 
 Returns int
@@ -83,9 +83,9 @@ myMCXpChange.isCanceled();
 myMCXpChange.setAmount(amount as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| amount    | int  | No description provided |
+| パラメータ | タイプ | 説明                      |
+| ----- | --- | ----------------------- |
+| 金額    | int | No description provided |
 
 
 ### setCanceled
@@ -94,9 +94,9 @@ myMCXpChange.setAmount(amount as int);
 myMCXpChange.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ  | タイプ      | 説明                      |
+| ------ | -------- | ----------------------- |
+| cancel | boolean型 | No description provided |
 
 
 
