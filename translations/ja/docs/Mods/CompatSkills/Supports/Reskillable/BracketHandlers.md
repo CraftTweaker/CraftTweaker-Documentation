@@ -1,20 +1,20 @@
-# Bracket Handlers
+# ブラケット記法
 
-## Bracket Handlers
+## ブラケット記法
 
-### Skill Bracket Handler:
+### スキルブラケットハンドラー:
 
-    ## Example:
+    ## 例:
     <skill:resourcelocation>
     
-    ## Working Example:
+    ## 作業例:
     <skill:reskillable:agility>
     
 
-### Trait Bracket Handler:
+### トレイトブラケットハンドラー:
 
-    ## Example:
+    ## 例:
     <trait:resourcelocation>
     
-    ## Working Example:
+    ## 作業例:
     <trait:reskillable:sidestep>
