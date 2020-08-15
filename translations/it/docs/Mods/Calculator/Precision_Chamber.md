@@ -1,4 +1,4 @@
-# Precision Chamber
+# Camera Di Precisione
 
 ## Pacchetto
 ```zenscript
@@ -7,8 +7,8 @@ import mods.calculator.precisionChamber;
 
 ## Metodi
 
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input.
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) output[1-2]** The outputs.
+- **[Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'input.
+- **[IIngrediente](/Vanilla/Variable_Types/IIngredient/) output[1-2]** Gli output.
 
 ## Addizione
 ```zenscript
