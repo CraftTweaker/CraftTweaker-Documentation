@@ -1,6 +1,6 @@
-# Solid Canning Machine
+# Автомат сплошной очистки
 
-## Importing the Package
+## Импортирование пакета
 `mods.techreborn.solidCanningMachine`
 
 ## Добавление рецептов
@@ -10,6 +10,6 @@ mods.techreborn.solidCanningMachine.addRecipe(IItemStack output1, IIngredient in
 
 ## Удаление рецептов
 ```zenscript
-mods.techreborn.solidCanningMachine.removeRecipe(IItemStack output);
+mods.techreborn.solidCanningMachine.removeRecipe(выход IItemStack);
 mods.techreborn.solidCanningMachine.removeAll();
 ```
