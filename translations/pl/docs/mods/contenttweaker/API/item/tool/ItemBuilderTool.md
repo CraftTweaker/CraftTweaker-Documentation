@@ -4,7 +4,7 @@ A special builder that allows you to create items that can be used as tools. You
 
 This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
 
-## Importing the class
+## Importowanie klasy
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
@@ -15,7 +15,7 @@ ItemBuilderTool implements the following interfaces. That means any method avail
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
-## Methods
+## Metody
 ### build
 
 Instructs CoT to actually build whatever this builder is supposed to be building.
@@ -25,9 +25,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceL
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametr         | Typ         | Opis                                 |
+| ---------------- | ----------- | ------------------------------------ |
+| resourceLocation | Ciąg znaków | The resource path to give this block |
 
 
 ### withAttackDamage
@@ -43,9 +43,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamag
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Parameter    | Type  | Description                  |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| Parametr        | Typ                | Opis                         |
+| --------------- | ------------------ | ---------------------------- |
+| Obrażenia ataku | zmiennoprzecinkowe | The additional attack damage |
 
 
 ### withAttackSpeed
@@ -61,9 +61,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Parameter   | Type   | Description      |
-| ----------- | ------ | ---------------- |
-| attackSpeed | double | The attack speed |
+| Parametr    | Typ      | Opis             |
+| ----------- | -------- | ---------------- |
+| attackSpeed | podwójne | The attack speed |
 
 
 ### withDurabilityCostAttack
@@ -79,9 +79,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostAttack | int  | The damage points this item will receive |
+| Parametr             | Typ    | Opis                                     |
+| -------------------- | ------ | ---------------------------------------- |
+| durabilityCostAttack | odcień | The damage points this item will receive |
 
 
 ### withDurabilityCostMining
@@ -97,9 +97,9 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityC
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostMining | int  | The damage points this item will receive |
+| Parametr             | Typ    | Opis                                     |
+| -------------------- | ------ | ---------------------------------------- |
+| durabilityCostMining | odcień | The damage points this item will receive |
 
 
 ### withToolType
@@ -116,11 +116,11 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parameter   | Type                                                                            | Description                                          | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| Parametr    | Typ                                                                             | Opis                                                 | IsOptional | Wartość domyślna |
+| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ---------------- |
+| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | fałszywy   | `null`           |
+| miningLevel | odcień                                                                          | The mining level for this tool type                  | fałszywy   | `null`           |
+| miningSpeed | zmiennoprzecinkowe                                                              | How fast this tool can mine blocks of the given type | prawda     | `1.0`            |
 
 
 
