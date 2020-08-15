@@ -1,11 +1,11 @@
-# Crucible
+# 关键的
 
 The Crucible is a machine that converts an input item into an output fluid using steam.
 
 ## 所属包名
 `mods.steamagerevolution.Crucible`
 
-## Methods
+## 方法
 
 - **[ILiquidStack](/Vanilla/Liquids/ILiquidStack/) output** The result of the recipe.
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The input of the recipe.
@@ -19,7 +19,7 @@ mods.steamagerevolution.Crucible.addRecipe(IIngredient input, ILiquidStack outpu
 mods.steamagerevolution.Crucible.addRecipe(<minecraft:obsidian>, <liquid:lava>*1000, 200, 200);
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.steamagerevolution.Crucible.removeRecipe(ILiquidStack);
