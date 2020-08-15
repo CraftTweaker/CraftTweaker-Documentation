@@ -1,6 +1,6 @@
-# Crystallizer
+# Cristallizzatore
 
-## Importing the Package
+## Importazione del pacchetto
 `mods.nuclearcraft.crystallizer`
 
 ## Aggiunta Di Ricette
@@ -12,5 +12,5 @@ mods.nuclearcraft.crystallizer.addRecipe([fluidInput, itemOutput, @Optional doub
 ```zenscript
 mods.nuclearcraft.crystallizer.removeRecipeWithInput([fluidInput]);
 mods.nuclearcraft.crystallizer.removeRecipeWithOutput([itemOutput]);
-mods.nuclearcraft.crystallizer.removeAllRecipes();
+mods.nuclearcraft.crystallizer.removeAllRicette();
 ```
