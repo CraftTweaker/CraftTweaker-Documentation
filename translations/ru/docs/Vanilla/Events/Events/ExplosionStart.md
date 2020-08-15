@@ -1,14 +1,14 @@
-# ExplosionStart
+# Взрывной старт
 
-The ExplosionStart Event is fired shortly before an explosion starts. If canceled, the explosion will not happen.
+Событие Взрывной Старт запускается незадолго до начала взрыва. В случае отмены взрыв не произойдет.
 
 ## Класс события
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.ExplosionStartEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Вам нужно оформить событие в заголовке функции как этот класс:  
+`crafttweaker.event. xplosionStartEvent`  
+, конечно, вы можете импортировать класс и [затем импортировать](/AdvancedFunctions/Import/).
 
 ## Наследование от интерфейсов событий
-ExplosionStart Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+События ExplosionStart реализуют следующие интерфейсы и могут также вызвать все их методы/getters/setters:
 
-- [IExplosionEvent](/Vanilla/Events/Events/IExplosionEvent/)
+- [IExplosion-событие](/Vanilla/Events/Events/IExplosionEvent/)
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
