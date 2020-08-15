@@ -1,27 +1,27 @@
 # MCUseHoeEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
 ## Importowanie klasy
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.event.entity.player.MCUseHoeEvent
 ```
 
-## Constructors
+## Konstruktorzy
 ```zenscript
-new crafttweaker.api.event.entity.player.MCUseHoeEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCUseHoeEvent>);
+nowe crafttweaker.api.event.entity.player.MCUseHoeEvent(handler jako funkcja.Consumer<crafttweaker.api.event.entity.player.MCUseHoeEvent>);
 ```
-| Parametr | Typ                                                                                                                     | Opis                    |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCUseHoeEvent](/vanilla/api/event/entity/player/MCUseHoeEvent)> | No description provided |
+| Parametr | Typ                                                                                                                      | Opis             |
+| -------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| handler  | Funkcja Konsumenta<[crafttweaker.api.event.entity.player.MCUseHoeEvent](/vanilla/api/event/entity/player/MCUseHoeEvent)> | Nie podano opisu |
 
 
 
 ## Metody
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCUseHoeEvent.getEntityPlayer();
@@ -29,55 +29,55 @@ myMCUseHoeEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Zwroty: `Gracz`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCUseHoeEvent.getPlayer();
 ```
 
-### hasResult
+### wynik
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Określa, czy to zdarzenie oczekuje znaczącej wartości wyniku. Uwaga: Zdarzenia z adnotacją HasResult będą automatycznie dodane, aby zwrócić true.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCUseHoeEvent.hasResult();
 ```
 
-### isCancelable
+### anulowalne
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Określ czy ta funkcja jest w ogóle anulowalna. Zwroty: `Jeśli dostęp do setCanceled powinien być dozwolony
+ Uwaga:
+ Zdarzenia z anulowaną adnotacją będą automatycznie dodawane do tej metody, aby zwrócić true.`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCUseHoeEvent.isCancelable();
 ```
 
-### isCanceled
+### Anulowane
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Określ czy to wydarzenie jest anulowane i powinno przestać wykonywać. Zwroty: `Aktualnie anulowany stan`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCUseHoeEvent.isCanceled();
 ```
 
-### setCanceled
+### Anulowane
 
 ```zenscript
-myMCUseHoeEvent.setCanceled(cancel as boolean);
+myMCUseHoeEvent.setCanceled(Anuluj jako boolean);
 ```
 
-| Parametr | Typ     | Opis                    |
-| -------- | ------- | ----------------------- |
-| cancel   | boolean | No description provided |
+| Parametr | Typ     | Opis             |
+| -------- | ------- | ---------------- |
+| anuluj   | boolean | Nie podano opisu |
 
 
 
