@@ -1,45 +1,45 @@
-# PlayerFillBucket
+# GraczFillBucket
 
-The PlayerFillBucket Event is fired whenever a player fills a bucket.
+Wydarzenie Gracza FillBucket jest uruchamiane za każdym razem, gdy gracz wypełnia wiaderze.
 
-## Event Class
+## Klasa wydarzenia
 
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.PlayerFillBucketEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+Musisz aktywować wydarzenie w nagłówku funkcji jako klasa:  
+`crafttweaker.event. layerFillBucketEvent`  
+Oczywiście możesz również [zaimportować](/AdvancedFunctions/Import/) klasę przed i wtedy użyć tej nazwy.
 
-## Event interface extensions
+## Rozszerzenia interfejsu zdarzenia
 
-PlayerFillBucket Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+Zdarzenia PlayerFillBucket zaimplementują następujące interfejsy i są w stanie wywołać wszystkie swoje metody/getters/setters:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
-- [IPlayerEvent](/Vanilla/Events/Events/IPlayerEvent/)
+- [Wydarzenie IPlayer](/Vanilla/Events/Events/IPlayerEvent/)
 - [IProcessableEvent](/Vanilla/Events/Events/IProcessableEvent/)
-- [IEventPositionable](/Vanilla/Events/Events/IEventPositionable/)
+- [Pozycjonowalne](/Vanilla/Events/Events/IEventPositionable/)
 
 ## ZenGetters
 
-The following information can be retrieved from the event:
+Z wydarzenia można uzyskać następujące informacje:
 
-| ZenGetter        | Return Type                                        |
-| ---------------- | -------------------------------------------------- |
-| `canceled`       | boolean                                            |
-| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)               |
-| `result`         | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `emptyBucket`    | [IItemStack](/Vanilla/Items/IItemStack/)           |
-| `x`              | int                                                |
-| `y`              | int                                                |
-| `z`              | int                                                |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)                   |
-| `blockState`     | [IBlockState](/Vanilla/Blocks/IBlockState/)        |
-| `block`          | [IBlock](/Vanilla/Blocks/IBlock/)                  |
-| `dimension`      | int                                                |
-| `rayTraceResult` | [IRayTraceResult](/Vanilla/World/IRayTraceResult/) |
+| ZenGetter        | Typ zwrotu                                              |
+| ---------------- | ------------------------------------------------------- |
+| `anulowane`      | boolean                                                 |
+| `gracz`          | [IPlayer](/Vanilla/Players/IPlayer/)                    |
+| `wynik`          | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| `puste wiadro`   | [IItemStack](/Vanilla/Items/IItemStack/)                |
+| `x`              | odcień                                                  |
+| `y`              | odcień                                                  |
+| `z`              | odcień                                                  |
+| `świat`          | [IWorld](/Vanilla/World/IWorld/)                        |
+| `Blokada`        | [Stan IBlocka](/Vanilla/Blocks/IBlockState/)            |
+| `blok`           | [IBlock](/Vanilla/Blocks/IBlock/)                       |
+| `wymiary`        | odcień                                                  |
+| `rayTraceResult` | [Wynik IRayTraceReult](/Vanilla/World/IRayTraceResult/) |
 
-## ZenMethods
+## Metody ZenMethods
 
-- `event.cancel()` sets the event as cancelled.
+- `event.cancel()` ustawia wydarzenie jako anulowane.
 
-## Setters
+## Ustawcy
 
-- `event.result = <minecraft:ender_pearl>` This will also process the event!
+- `event.result = <minecraft:ender_pearl>` Spowoduje to również przetworzenie wydarzenia!
