@@ -1,36 +1,36 @@
-# Coke Oven
+# Коксовая печь
 
-## Calling The Package
+## Вызов пакета
 
-You can call the CokeOven package using `mods.immersiveengineering.CokeOven`.
+Вы можете вызвать пакет CokeOven с помощью `mods.immersiveengineering.CokeOven`.
 
-## Add Recipe
+## Добавить рецепт
 
-| Required | Type        | Data Type                                           |
-| -------- | ----------- | --------------------------------------------------- |
-| Required | Output      | [IItemstack](/Vanilla/Items/IItemStack/)            |
-| Required | Fuel Output | Integer                                             |
-| Required | Input       | [IIngredient](/Vanilla/Variable_Types/IIngredient/) |
-| Required | Time        | Integer                                             |
+| Требуется | Тип                        | Тип данных                                          |
+| --------- | -------------------------- | --------------------------------------------------- |
+| Требуется | Вывод                      | [IItemstack](/Vanilla/Items/IItemStack/)            |
+| Требуется | Производительность топлива | Целое                                               |
+| Требуется | Input                      | [Иингредиент](/Vanilla/Variable_Types/IIngredient/) |
+| Требуется | Время                      | Целое                                               |
 
-### Example
+### Пример
 
 ```zenscript
-//Example:
-mods.immersiveengineering.CokeOven.addRecipe(IItemStack output, int fuelOutput, IIngredient input, int time);
+//Пример:
+mods.immersiveengineering.CokeOven.addRecipe(IItemStack, int fuelOutput, IIngredient input, int time);
 mods.immersiveengineering.CokeOven.addRecipe(<minecraft:coal>, 2, <ore:logWood>, 2000);
 ```
 
-## Remove Recipe
+## Удалить рецепт
 
-| Type   | Data Type                                |
-| ------ | ---------------------------------------- |
-| Output | [IItemstack](/Vanilla/Items/IItemStack/) |
+| Тип   | Тип данных                               |
+| ----- | ---------------------------------------- |
+| Вывод | [IItemstack](/Vanilla/Items/IItemStack/) |
 
-### Example:
+### Пример:
 
 ```zenscript
-//Example:
-mods.immersiveengineering.CokeOven.removeRecipe(IItemStack output);
+//Пример:
+mods.immersiveengineering.CokeOven.removeRecipe(выход IItemStack);
 mods.immersiveengineering.CokeOven.removeRecipe(<minecraft:diamond>);
 ```
