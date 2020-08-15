@@ -1,11 +1,11 @@
-# Decay Infuser
+# Niszczenie
 
-## Importing the Package
+## Importowanie pakietu
 `mods.nuclearcraft.infuser`
 
 ## Dodawanie przepisów
 ```zenscript
-mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation]);
+mods.nuclearcraft.infuser.addRecipe([itemInput, fluidInput, itemOutput, @Opcjonalny podwójny timeMultiplier, @Opcjonalny podwójny power Multiplier, @Opcjonalny podwójny proces Promieniowania]);
 ```
 
 ## Usuwanie przepisów
