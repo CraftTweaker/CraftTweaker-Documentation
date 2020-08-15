@@ -1,52 +1,52 @@
-# NuclearCraft
+# Ядерное ремесло
 
-**Note:The double set of brackets in functions, `([...])` is necessary.** This is basically because all NuclearCraft CraftTweaker methods require an array of objects, be they ingredients, strings, integers or doubles.
+**Примечание:Двойной набор скобок в функциях, `([...])` является необходимым.** Это в основном потому, что все методы создания нуклеаркрата требуют массива объектов, будь то ингредиенты, строки, целые числа или двойные.
 
-All recipes involve five sets of information - item inputs, fluid inputs, item outputs, fluid outputs and extra info. The first four are clearly the ingredients and products involved in the recipe, and the extra info contains data such as processing time and power for machines, the base lifetime, power and heat variable of fusion combos, etc.
+Все рецепты включают в себя пять наборов информаций: входы предметов, жидкие входы элементов, выходные материалы жидкости и дополнительная информация. первые четыре ясно представляют собой ингредиенты и продукты, вовлеченные в рецепт, и дополнительная информация содержит такие данные, как время обработки и питание машин, базовое время жизни, мощность и тепловая переменная комбо fusion и т.д.
 
-All parts of the recipe are simply listed in the method - the internal NuclearCraft code will deal with splitting it up into those five categories and packaging the information up into a recipe.
+Все части рецепта просто перечислены в методе - внутренний код NuclearCraft будет посвящен разделению его на пять категорий и упаковке информации в рецепт.
 
-## Recipe Additions
-Recipe Methods will specify `itemInput` for Item Inputs. <br/> Recipe Methods will specify `itemOutput` for Item Outputs. <br/> Recipe Methods will specify `fluidInput` for Fluid Inputs. <br/> Recipe Methods will specify `fluidOutput` for Fluid Outputs. <br/> Recipe Methods will specify `blockInput` for Block Inputs. <br/> Recipe Methods will specify `blockOutput` for Block Outputs. <br/> **Note: `blockInput` and `blockOutput` must be the `IItemStack`/`IIngredient` versions of blocks**
+## Добавления рецептов
+Методы рецепта будут указывать `ввод элемента` для ввода. <br/> Методы рецептов будут задавать `элемент` для вывода элементов. <br/> Методы рецепта будут определять `fluidInput` для Fluid Inputs. <br/> Методы Рецепта будут определять `fluidOutput` для выходов жидкости. <br/> Методы рецепта будут содержать `блокаВвод` для ввода блоков. <br/> Методы рецептов будут содержать `blockOutput` для вывода блоков. <br/> **Примечание: `blockInput` и `blockOutput` должен быть `IItemStack`/`Ingredient` версий блоков**
 
 ### Item Inputs
 `IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `null`: null
 
 ### Item Outputs
-`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `ChanceItemStack`: `<minecraft:diamond>` * 3, 50, 1 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `ChanceIOreDictEntry`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
+`IItemStack`: `<minecraft:gunpowder>` * 4 <br/> `ChanceItemStack`: `<minecraft:diamond>` * 3, 50 1 <br/> `IOreDictEntry`: `<ore:ingotIron>` * 2 <br/> `ChanceIOreDictDictEntry`: `<ore:gemDiamond>` * 5, 75 <br/> `null`: null
 
-### Fluid Inputs
+### Входы жидкости
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `null`: null
 
 ### Fluid Outputs
 `ILiquidStack`: `<liquid:lava>` * 1500 <br/> `ChanceLiquidStack` : `<liquid:water>` * 2000, 40, 250, 500 <br/> `null`: null
 
-### Block Inputs
+### Блокировочные входы
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-### Block Outputs
+### Блокировать выход
 `IItemStack`: `<minecraft:dirt>` * 4 <br/> `IOreDictEntry`: `<ore:blockIron>` * 2 <br/> `null`: null
 
-## Recipe Removals
-When specifying a recipe to remove, all that is required is for either all input or output ingredients to be specified. Ingredient chance data is not required. Again, the items must come first, followed by the fluids.
+## Удаление рецептов
+При задании удаления рецепта все, что требуется для указания всех входных или выходных ингредиентов. Данные о шансах ингредиентов не требуются. Опять же, предметы должны прийти первым, а за ними следуют жидкости.
 
-You may also want to remove all of a certain type of recipe - to do this, simply use the `removeAllRecipes()` method.
+Вы также можете удалить все типы рецептов - для этого просто используйте метод `removeAllRecipes()`.
 
-## Chance Ingredients
-Item and fluid outputs can have additional info attached to them - specifically, info that can randomise the output stack size somewhat. This additional info is simply tagged onto the end of the specified ingredient. <br/>
+## Шанс ингредиентов
+Элемент и жидкие выходы могут иметь дополнительную информацию к ним - конкретно, информацию, которая может случайно отображать стек размера чем-то больше. Эта дополнительная информация просто помечена в конце указанного ингредиента. <br/>
 
-The size of the stack produced on each process is randomly assigned from a binomial distribution specified by the chance info. The percentage and ingredient stack size play the roles of the probability and number of trials, respectively. <br/>
+Размер стека, производимого в каждом процессе, случайным образом присваивается из распределения биномиальных значений, указанного вероятностью . Процент и размер стека ингредиентов играют роли соответственно с вероятностью и количеством попыток. <br/>
 
-For ChanceFluidStacks, a 'stack difference' must also be specified, which determines the difference in size between the possible stacks (for ChanceItemStacks and ChanceOreStacks, this is effectively 1). For example, a ChanceFluidStack for an ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500 millibuckets of the fluid.
+Для ChanceFluidStacks, также должна быть указана "разница в стеке", которая определяет разницу в размере возможных стеков (для ChanceItemStacks и ChanceOreStacks, это фактически 1). For example, a ChanceFluidStack for an ingredient of size 500, with a stack difference of 150 and minimum stack size of 50, will produce 50, 200, 350 or 500 millibuckets of the fluid.
 
 ### ChanceItemStack
-The form of a `ChanceItemStack` is `IItemStack output, int percentage, @Optional int minimumStackSize`. <br/> The chance for the `output` to be produced is `percentage`. <br/> If not specified, `minimumStackSize` is 0.
+Форма `ChanceItemStack` - это `IItemStack, int в процентах, @Optional int minimumStackSize`. <br/> Шанс получения `произведённого произведения` равен `процентам`. <br/> Если не указано, `minimumStackSize` равно 0.
 
 ### ChanceOreDictEntry
-The form of a `ChanceOreDictEntry` is `IOreDictEntry output, int percentage, @Optional int minimumStackSize`. <br/> The chance for the `output` to be produced is `percentage`. <br/> The minimum stack size for the output is `minimumStackSize`. If not specified, it defaults to 0.
+Форма `ChanceOreDictEntry` - `IOreDictEntry output, int в процентах, @Optional int minimumStackSize`. <br/> Шанс получения `произведённого произведения` равен `процентам`. <br/> Минимальный размер стека для вывода `minimumStackSize`. Если не указано, значение по умолчанию равно 0.
 
 ### ChanceLiquidStack
-The form of a `ChanceLiquidStack` is `ILiquidStack, int percentage, int stackDifference, @Optional int minimumStackSize`. <br/> The chance for the output to be produced is `percentage`. <br/> The difference between possible stack sizes is `stackDifference`. The minimum stack size for the output is `minimumStackSize`. If not specified, it defaults to 0.
+Форма `ChanceLiquidStack` это `ILiquidStack, int процент, int stackDifference, @Optional int minimumStackSize`. <br/> Шанс получения `процентов` <br/> Разница между возможными размерами стека в `стеке Разница`. Минимальный размер стека для вывода `minimumStackSize`. Если не указано, значение по умолчанию равно 0.
 
-- Example: ``<liquid:ethanol>` * 500, 100, 150, 50
-    - The Machine will produce 50, 200, 350 or 500 millibuckets of ethanol
+- Пример: ``<liquid:ethanol>` * 500, 100, 150, 50
+    - Машина будет производить 50, 200, 350 или 500 миллиметров этанола
