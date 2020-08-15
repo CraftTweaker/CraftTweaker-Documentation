@@ -1,16 +1,16 @@
-# Drying Rack
+# Rack de secado
 
-## Package
+## Paquete
 `import mods.stone_age.DryingRackManager;`
 
 ## Metodos
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[entrada IIngrediente](/Vanilla/Variable_Types/IIngredient/)**
 - **int dryingTime** Drying time in ticks
 - **String group** Recipe group
 
-## Addition
+## Adicional
 
 ```zenscript
 <recipetype:stone_age:drying_rack>.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString String group)
