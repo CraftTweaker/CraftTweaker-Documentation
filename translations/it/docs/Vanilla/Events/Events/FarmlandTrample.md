@@ -1,26 +1,26 @@
 # FarmlandTrampleEvent
 
-The FarmlandTrample Event is fired whenever a farmland is about to be trampled. Canceling the event will prevent the block from being trampled.
+L'evento FarmlandTrample viene sparato ogni volta che un terreno agricolo sta per essere calpestato. L'annullamento dell'evento impedirà che il blocco venga calpestato.
 
 ## Note
 
-`event.fallDistance` contains the distance fallen before hitting the farmland.
+`event.fallDistance` contiene la distanza caduta prima di colpire il terreno agricolo.
 
-## Event Class
-You will need to cast the event in the function header as this class:  
-`crafttweaker.event.FarmlandTrampleEvent`  
-You can, of course, also [import](/AdvancedFunctions/Import/) the class before and use that name then.
+## Classe Evento
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe:  
+`crafttweaker.event. armlandTrampleEvent`  
+È possibile, naturalmente, anche [importare](/AdvancedFunctions/Import/) la classe prima e utilizzare quel nome allora.
 
-## Event interface extensions
-FarmlandTrample Events implement the following interfaces and are able to call all of their methods/getters/setters as well:
+## Estensioni dell'interfaccia evento
+FarmlandTrample Events implementano le seguenti interfacce e sono in grado di chiamare anche tutti i loro metodi/getter/setter:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 - [IBlockEvent](/Vanilla/Events/Events/IBlockEvent/)
 
 ## ZenGetters
-The following information can be retrieved from the event:
+Le seguenti informazioni possono essere ricavate dall'evento:
 
 | ZenGetter      | ZenSetter | Tipo                                  |
 | -------------- | --------- | ------------------------------------- |
-| `entity`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
+| `entità`       |           | [IEntity](/Vanilla/Entities/IEntity/) |
 | `fallDistance` |           | galleggiante                          |
