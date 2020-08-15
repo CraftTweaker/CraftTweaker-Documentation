@@ -1,25 +1,25 @@
-# ICraftingInventory
+# Ekwipunek ICrafting
 
 The ICraftingInventory contains all kinds of information on the inventory a crafting process is performed in.
 
-## Importing the class
+## Importowanie klasy
 
 It might be required to [import](/AdvancedFunctions/Import/) the class to avoid errors.  
 `import crafttweaker.recipes.ICraftingInventory`
 
 ## ZenGetters
 
-| ZenGetter    | Return type                                  | Description                                          |
+| ZenGetter    | Typ zwrotu                                   | Opis                                                 |
 | ------------ | -------------------------------------------- | ---------------------------------------------------- |
-| `player`     | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
-| `size`       | int                                          | the inventory's size                                 |
-| `width`      | int                                          | the inventory's width                                |
-| `height`     | int                                          | the inventory's height                               |
-| `stackCount` | int                                          | the the number of stacks that are actually filled in |
-| `items`      | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
+| `gracz`      | [IPlayer](/Vanilla/Players/IPlayer/)         | the player owning this inventory                     |
+| `size`       | odcień                                       | the inventory's size                                 |
+| `width`      | odcień                                       | the inventory's width                                |
+| `height`     | odcień                                       | the inventory's height                               |
+| `stackCount` | odcień                                       | the the number of stacks that are actually filled in |
+| `elementy`   | [IItemStack[][]](/Vanilla/Items/IItemStack/) | The items that present in the crafting table         |
 | `itemArray`  | [IItemStack[]](/Vanilla/Items/IItemStack/)   | The items that present in the crafting table         |
 
-## ZenMethods
+## Metody ZenMethods
 
 Following Methods are available:
 
