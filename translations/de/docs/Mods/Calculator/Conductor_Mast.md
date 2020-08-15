@@ -16,7 +16,7 @@ import mods.calculator.conductorMast;
 conductorMast.addRecipe(IIngredient input, int powercost, IIngredient output);
 ```
 
-## Removal
+## Entfernen
 ```zenscript
 conductorMast.removeRecipe(IIngredient output);
 ```
