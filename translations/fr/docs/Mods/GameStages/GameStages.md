@@ -1,4 +1,4 @@
-# GameStages
+# format@@0 GameStages
 
 This mod adds a stage API. This stage API allows for players to unlock stages, and for other mods to hook in to these stages. This mod also handles save data, packets, networking and other systems required. The main way for players and modpack authors to interact with this mod is through the commands that are added.
 
