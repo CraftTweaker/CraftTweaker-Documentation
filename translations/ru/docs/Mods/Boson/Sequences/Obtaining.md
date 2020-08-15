@@ -1,6 +1,6 @@
 # Obtaining `Sequence`s
 
-## Overview
+## Обзор
 Obtaining a `Sequence` is a two step process: it is first necessary to obtain a reference to a sequence constructor of the correct type, then invoking the constructor by passing either a list of elements of the given type or a ready-made array of the given type will complete the construction process.
 
 Some CraftTweaker integrations may also provide a way to obtain a `Sequence` either directly or via a method. In this case, there is no need to do any constructor invocation. On the other hand, the generic type will not be specified explicitly, requiring the user to make a mental note of the return type.
