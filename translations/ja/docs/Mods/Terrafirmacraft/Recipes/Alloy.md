@@ -1,6 +1,6 @@
 # Alloy
 
-## Package
+## パッケージ
 ```zenscript
 import mods.terrafirmacraft.Alloy;
 import mods.terrafirmacraft.AlloyRecipeBuilder;Alloy;
