@@ -1,26 +1,26 @@
-# CommandEvent
+# ComandoEvento
 
-The Command Event is fired whenever a command is executed. You can react to the command by providing a command handler. See [Crafttweaker examples](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) for an example.
+L'Evento di Comando viene sparato ogni volta che viene eseguito un comando. È possibile reagire al comando fornendo un gestore dei comandi. Vedi gli esempi [Crafttweaker](https://github.com/CraftTweaker/CraftTweaker-Examples/blob/master/crafttweaker/events/commandEvent/SendMessageOnSyntaxCommand/SendMessageOnSyntaxCommand.zs) per un esempio.
 
-## Event Class
+## Classe Evento
 
-You will need to cast the event in the function header as this class: `crafttweaker.event.CommandEvent`. It is advised to [import](/AdvancedFunctions/Import/) the class
+Dovrai lanciare l'evento nell'intestazione della funzione come questa classe: `crafttweaker.event.CommandEvent`. Si consiglia di [importare](/AdvancedFunctions/Import/) la classe
 
     import crafttweaker.event.CommandEvent;
     
 
-## Event interface extensions
+## Estensioni dell'interfaccia evento
 
-Command event implements the following interfaces:
+L'evento di comando implementa le seguenti interfacce:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
 ## ZenGetters/ZenSetters
 
-The following information ca be retrieved/set during the event:
+Le seguenti informazioni possono essere recuperate/impostate durante l'evento:
 
 | ZenGetter       | ZenSetter   | Tipo                                                |
 | --------------- | ----------- | --------------------------------------------------- |
 | `commandSender` | no          | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no          | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parametri`     | `parametri` | string array                                        |
+| `comando`       | no          | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `parametri`     | `parametri` | array di stringhe                                   |
