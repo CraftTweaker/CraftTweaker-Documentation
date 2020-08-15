@@ -18,7 +18,7 @@ mods.naturesaura.Offering
 mods.naturesaura.Offering.addRecipe(String name, IIngredient input, int inputAmount, IIngredient startItem, IItemStack output)
 ```
 
-## Removal
+## 移除
 
 ```zenscript
 mods.naturesaura.Offering.removeRecipe(IItemStack output)
