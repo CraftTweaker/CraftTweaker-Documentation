@@ -18,11 +18,11 @@ PlayerDeathDrops Events implement the following interfaces and are able to call 
 
 Die folgenden Informationen lassen sich von diesem Event (Ereignis) abrufen:
 
-| ZenGetter      | Rückgabetyp                                                 |
-| -------------- | ----------------------------------------------------------- |
-| `player`       | [IPlayer](/Vanilla/Players/IPlayer/)                        |
-| `items`        | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
-| `damageSource` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
+| ZenGetter        | Rückgabetyp                                                 |
+| ---------------- | ----------------------------------------------------------- |
+| `player`         | [IPlayer](/Vanilla/Players/IPlayer/)                        |
+| `items`          | [`List<IEntityItem>`](/Vanilla/Entities/IEntityItem/) |
+| `Schadensquelle` | [IDamageSource](/Vanilla/Damage/IDamageSource/)             |
 
 ## Modifying the item drops
 
