@@ -4,7 +4,7 @@
 
 `import mods.ic2.BlockCutter;`
 
-## Methods
+## 方法
 
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
@@ -18,6 +18,6 @@ mods.ic2.BlockCutter.addRecipe(IItemStack output, IIngredient input, @Optional i
 mods.ic2.BlockCutter.addRecipe(<minecraft:diamond>, <minecraft:dirt>);
 ```
 
-## Removal
+## 移除
 
 For now simply remove the corresponding line in `config/ic2/block_cutter.ini`.
