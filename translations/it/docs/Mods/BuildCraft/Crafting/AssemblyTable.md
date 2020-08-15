@@ -4,11 +4,11 @@
 
 Class path: `mods.buildcraft.AssemblyTable`
 
-## Use
+## Uso
 
 To use, import the class with `import mods.buildcraft.AssemblyTable;` at the beginning of your script.
 
-## Adding a Recipe
+## Aggiungere una Ricetta
 
 `AssemblyTable.addRecipe(recipeName, output, power, inputs);`
 
@@ -23,7 +23,7 @@ import mods.buildcraft.AssemblyTable;
 AssemblyTable.addRecipe("example_recipe_for_diamonds", <minecraft:diamond>, 1000, [<minecraft:coal_block>, <minecraft:redstone>]);
 ```
 
-## Removing a Recipe
+## Rimuovere una RIcetta
 
 `AssemblyTable.removeByName(name);`
 
@@ -71,7 +71,7 @@ AssemblyTable.removeByName("buildcraftsilicon:redstone_chipset");
 - `buildcraftsilicon:gate-<operation>-<material>-no_modifier`
 - `buildcraftsilicon:gate-modifier-<operation>-<material>-<modifier>`
 
-Parameters:
+Parametri:
 
 - `<operation>`: `and` or `or`
 - `<material>`: `iron`, `nether_brick`, or `gold`
