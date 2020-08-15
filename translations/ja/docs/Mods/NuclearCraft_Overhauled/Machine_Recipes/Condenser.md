@@ -1,7 +1,7 @@
 # 凝縮器
-**Note: Partially Broken**
+**注意：部分的に壊れている**
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.Condenser凝縮器`
 
 ## レシピを追加中
