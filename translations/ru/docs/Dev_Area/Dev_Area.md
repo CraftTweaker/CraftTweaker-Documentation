@@ -1,3 +1,3 @@
 # Раздел для разработчиков
 
-This Area is meant only for CrT addon developers. It contains several Explanations of Relevant CrT-Annotations and Types as well as Tips. Examples can be found in the test Project [here](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests).
+Эта область предназначена только для разработчиков аддонов CrT. Он содержит несколько пояснений соответствующих CrT-Annotations и типов и советов. Примеры можно найти в тестовом проекте [здесь](https://github.com/jaredlll08/CraftTweaker/tree/1.12/CraftTweaker2-MC1120-Tests).
