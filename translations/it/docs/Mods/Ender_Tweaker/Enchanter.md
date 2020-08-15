@@ -1,4 +1,4 @@
-# Enchanter
+# Incantatore
 
 ## Pacchetto
 
@@ -8,11 +8,11 @@
 
 **- [IEnchantmentDefinition](/Vanilla/Enchantments/IEnchantmentDefinition/) output** The output enchantment.
 
-**- [IIngredient](/Vanilla/Variable_Types/IIngredient/) input** The item that it used to make this enchantment.
+**- [Ingresso IIngrediente](/Vanilla/Variable_Types/IIngredient/)** L'elemento usato per rendere questo incantesimo.
 
-**- int amountPerLevel** The number of input items per level of enchantment.
+**- int amountPerLevel** Il numero di elementi di input per livello di incantesimo.
 
-**- double costMultiplier** Used to modify how expensive the recipe is.
+**- doppio costMoltiplicatore** Usato per modificare quanto costoso è la ricetta.
 
 ## Addizione
 
