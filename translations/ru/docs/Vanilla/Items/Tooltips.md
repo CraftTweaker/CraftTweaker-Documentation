@@ -1,44 +1,44 @@
-# Tooltips
+# Подсказки
 
-Adding or removing a tooltip is really easy:  
-All you need is an item (or oreDict or similar), in other words, an IIngredient.
+Добавление или удаление всплывающих подсказок очень просто:  
+Все, что вам нужно — это элемент (или oreDict или аналогичный элемент), другими словами, IIngredient.
 
-## Clearing tooltips
+## Очистка подсказок
 
-This removes ALL tooltips from the `item`
+Это удалит ВСЕ подсказки из `элемента`
 
 ```zenscript
 item.clearTooltip();
 ```
 
-## Removing specific tooltips
+## Удаление подсказок
 
-This function removes all tooltips that match the given regex. One tooltip is generally one line of text (unless there are forced linebreaks due to space).
+Эта функция удаляет все подсказки, соответствующие заданному регулярному выражению. Одна подсказка, как правило, является одной строкой текста (если не существует принудительных прерываний строк из-за пробела).
 
 ```zenscript
 item.removeTooltip(regex);
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`элемент` является [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` является строкой
 
-## Normal Tooltips
+## Обычные подсказки
 
-This adds `tT` as tooltip to `item`.
+Это добавляет `tT` в качестве tooltip к `элементу`.
 
 ```zenscript
 item.addTooltip(tT);
 
-<minecraft:chest>.addTooltip("Storage, what can I say more?");
+<minecraft:chest>.addTooltip("багажа, что я могу сказать больше?");
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is a string
+`элемент` является [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` является строкой
 
-## Shift Tooltips
+## Подсказки Shift
 
-This adds a tooltip, that will only be visible when you hold shift.  
-You can also add an info that will be visible when you don't hold shift (usually used to create something like a message telling you about the shift tooltip.)
+Добавляет подсказку, которая будет видна только при удерживании сдвига.  
+Вы также можете добавить информацию, которая будет видна, когда вы не держите сдвиг (обычно используется для создания чего-либо, например, сообщение, сообщающее о всплывающей подсказке.)
 
 ```zenscript
 item.addShiftTooltip(tT);
@@ -48,44 +48,44 @@ item.addShiftTooltip(tT, info);
 <minecraft:redstone>.addShiftTooltip("RED!!!", "Hold shift to know what I am");
 ```
 
-`item` is an [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
-`tT` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.  
-`info` is an [IFormattedText](/Vanilla/Utils/IFormattedText/). You can also just use a string as they are automatically converted.
+`пункт` является [IIngredient](/Vanilla/Variable_Types/IIngredient/)  
+`tT` является [IFormattedText](/Vanilla/Utils/IFormattedText/). Вы также можете использовать строку, когда они автоматически преобразуются.  
+`информация` является [IFormattedText](/Vanilla/Utils/IFormattedText/). Вы также можете использовать строку по мере их автоматического преобразования.
 
 # Markup
 
-The world is colorful, and so should be all of our tooltips. You can also nest these options, should you with to (if you wanted a green text, that is strikethrough)
+Мир красок, и поэтому должны быть все наши подсказки. Вы также можете использовать эти опции, если вы хотите использовать зеленый текст, который будет зачеркнут)
 
-## Coloring a String
+## Окраска строки
 
-You can apply one of the 16 colors to your string
+Вы можете применить один из 16 цветов к вашей строке
 
 ```zenscript
-format.black
-format.darkBlue
-format.darkGreen
-format.darkAqua
-format.darkRed
-format.darkPurple
-format.gold
-format.gray
-format.darkGray
-format.blue
-format.green
-format.aqua
-format.red
-format.lightPurple
-format.yellow
-format.white
+формат.черный
+формат.darkBlue
+формат.darkGreen
+формат.darkAqua
+формат.darkRed
+формат.darkPurple
+формат.gold
+формат. луч
+форма.darkGray
+формат.Синяя
+формат.green
+формат.aqua
+формат.red
+формат.lightPurple
+формат.жёлтый
+формат.белый
 ```
 
 ```zenscript
-<minecraft:stick>.addTooltip(format.green("This one wasn't ripe"));
+<minecraft:stick>.addTooltip(форма.green("Этот не создан"));
 ```
 
-## Formatting a String
+## Форматирование строки
 
-You can apply different formats to your String should you wish to:
+Вы можете применить различные форматы к вашей строке, если хотите:
 
 ```zenscript
 format.obfuscated
@@ -96,33 +96,33 @@ format.italic
 ```
 
 ```zenscript
-<minecraft:stick>.addShiftTooltip(format.strikethrough("This is a bad tooltip"));
+<minecraft:stick>.addShiftTooltip(format.strikethrough("Это плохая подсказка"));
 ```
 
-## Tooltip functions
+## Подсказка функции
 
-You can replace the [IFormattedText](/Vanilla/Utils/IFormattedText/) parameter with an ITooltipFunction (`import crafttweaker.item.ITooltipFunction;`).  
-These functions allow you to dynamically generate a tooltip based on the given IItemStack.
+Вы можете заменить параметр [IFormattedText](/Vanilla/Utils/IFormattedText/) функцией ITooltipFunction (`импортировать crafttweaker.item. Функции TooltipFunction;`).  
+Эти функции позволяют динамически генерировать всплывающие подсказки на основе данной IItemStack.
 
-A tooltip function is a function that takes an [IItemStack](/Vanilla/Items/IItemStack/) and returns the tooltip as string. This means that using a `format` command *does not work* for these functions, you will need to rely on Minecraft's formatting prefixes if you need to accomplish that.
+Функция подсказки - это функция, которая принимает [IItemStack](/Vanilla/Items/IItemStack/) и возвращает всплывающие подсказки как строку. Это означает, что использование команды `формата` *не работает* для этих функций, вам нужно полагаться на префиксы форматирования Minecraft, если вам это нужно сделать.
 
-For the shift tooltips, you can provide a 2nd function as well, which allows you to also generate the tooltip that should be shown when shift is not pressed. For shift tooltips it's either both parameters as function or both as [IFormattedText](/Vanilla/Utils/IFormattedText/), no mix-ups!
+Для подсказок переключения вы можете также обеспечить вторую функцию, , которая позволяет также генерировать подсказку, которая должна быть показана при ненажатом переключении (shift is not presed). Для инструментов переключения это либо оба параметра как функция, либо как [IFormattedText](/Vanilla/Utils/IFormattedText/), без смешивания!
 
 ```zenscript
 addAdvancedTooltip(ITooltipFunction fn);
 addShiftTooltip(ITooltipFunction fn, @Optional ITooltipFunction infoFn);
 
 
-//Example
-<ore:myAxeOreDictionary>.add(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
+//Пример
+<ore:myAxeOreDictionary>dd(<minecraft:iron_axe:*>, <minecraft:golden_axe:*>, <minecraft:diamond_axe:*>);
 
-<ore:myAxeOreDictionary>.addAdvancedTooltip(function(item) {   
-    return "Damage: " ~ item.damage ~ " / " ~ item.maxDamage;
+<ore:myAxeOreDictionary>. ddAdvancedTooltip(function(item) {   
+    return "Damage: " ~ пункт. amage ~ " / " ~ item.maxDamage;
 });
 
 
-<ore:myAxeOreDictionary>.addShiftTooltip(function(item) {    
-    return "Uses left: " ~ (item.maxDamage - item.damage);
+<ore:myAxeOreDictionary>. ddShiftTooltip(function(item) {    
+    return "Uses left: " ~ (item). axDamage - item.damage);
 }, function(item){
     return "Hold shift for some juicy math.";
 });
