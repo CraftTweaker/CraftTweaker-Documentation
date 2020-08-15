@@ -8,7 +8,7 @@
 `mods.exnihilocreatio.Ore`
 ```
 
-## Methods
+## Méthodes
 
 - **String name** Name the ore chunks/piece/dust/ingot
 - **String color** Color of material in hex.
@@ -16,7 +16,7 @@
 - **Map string[string]** Language code then translation.
 - **String oreDict** The name of the oreDict you want.
 
-## Addition
+## Ajouter
 
 ```zenscript
 mods.exnihilocreatio.Ore.addRecipe(String,
