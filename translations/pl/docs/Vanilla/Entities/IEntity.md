@@ -12,7 +12,7 @@ Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek proble
 
 IEntity rozszerza [ICommandSender](/Vanilla/Commands/ICommandSender/). Oznacza to, że wszystkie metody, które są dostępne dla obiektów [ICommandSender](/Vanilla/Commands/ICommandSender/) są również dostępne dla obiektów IEntity!
 
-<details><summary>Derived Methods</summary> 
+<details><summary>Pochodne metody</summary> 
 
 - Nazwa podmiotu
 - Pozycja podmiotu
@@ -29,7 +29,7 @@ IEntity rozszerza [ICommandSender](/Vanilla/Commands/ICommandSender/). Oznacza t
 | alwaysRenderNameTag   |                     | boolean                                                               |
 | Zbroja Zapasów        |                     | Lista<[IItemStack](/Vanilla/Items/IItemStack/)                        |
 | canBeAttackedWithItem |                     | boolean                                                               |
-| canBeCollidedWith     |                     | boolean                                                               |
+| kolizja z kanbem      |                     | boolean                                                               |
 | canPassengerSteer     |                     | boolean                                                               |
 | canRiderInteract      |                     | boolean                                                               |
 | controllingPassenger  |                     | *IEntity*                                                             |
@@ -39,20 +39,20 @@ IEntity rozszerza [ICommandSender](/Vanilla/Commands/ICommandSender/). Oznacza t
 | Płyta Wyzwalająca     |                     | boolean                                                               |
 | SprzętAndArmor        |                     | Lista<[IItemStack](/Vanilla/Items/IItemStack/)                        |
 | wysokość oczu         |                     | zmiennoprzecinkowe                                                    |
-| hasCustomName         |                     | boolean                                                               |
+| Nazwa użytkownika     |                     | boolean                                                               |
 | hasNoGrawitacja       |                     | boolean                                                               |
 | trzymane Wyposażenie  |                     | Lista<[IItemStack](/Vanilla/Items/IItemStack/)                        |
 | id                    |                     | odcień                                                                |
 | immuneToFire          | isImmuneToFire()    | boolean                                                               |
 | isBeingRidden         |                     | boolean                                                               |
 | isBoss                |                     | boolean                                                               |
-| isBurning             |                     | boolean                                                               |
+| Płonący               |                     | boolean                                                               |
 | Świecący              |                     | boolean                                                               |
 | isImmuneToExplosions  |                     | boolean                                                               |
 | isInLava              |                     | boolean                                                               |
 | iInsideOpaqueBlock    |                     | boolean                                                               |
 | niewidzialny          |                     | boolean                                                               |
-| isInvulnerable        |                     | boolean                                                               |
+| niewrażliwość         |                     | boolean                                                               |
 | isInWater             |                     | boolean                                                               |
 | poza granicami        |                     | boolean                                                               |
 | isOverWoda            |                     | boolean                                                               |
@@ -68,9 +68,9 @@ IEntity rozszerza [ICommandSender](/Vanilla/Commands/ICommandSender/). Oznacza t
 | pasażerowie           | getPassengers()     | Lista<IEntity\>                                                      |
 | passengersRecursive   |                     | Lista<IEntity\>                                                      |
 | portalCooldowne       |                     | odcień                                                                |
-| pozycja3f             | getPosition3f()     | [Position3f](/Vanilla/Utils/Position3f/)                              |
+| pozycja3f             | getPosition3f()     | [Pozycja3f](/Vanilla/Utils/Position3f/)                               |
 | jazdyJednostka        | getRidingEntity()   | *IEntity*                                                             |
-| shouldRiderSit        |                     | boolean                                                               |
+| powinieneRiderSit     |                     | boolean                                                               |
 | tagi                  |                     | Lista<string\>                                                       |
 | drużyna               |                     | *[ITeam](/Vanilla/Game/ITeam/)*                                       |
 | mokry                 | isWet()             | boolean                                                               |
