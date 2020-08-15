@@ -4,7 +4,7 @@ The Print allows you to make a copy of an item.
 
 By default can copy written books and enchanted books.
 
-## Removing
+## 削除中
 
 ## Remove matching copyable items.
 
@@ -16,7 +16,7 @@ mods.cfm.Printer.remove(<minecraft:enchanted_book>);
 mods.cfm.Printer.remove();
 ```
 
-## Adding
+## 追加中
 
 ## Add a copyable item.
 
