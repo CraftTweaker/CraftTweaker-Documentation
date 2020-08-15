@@ -15,12 +15,12 @@ Command event implements the following interfaces:
 
 - [IEventCancelable](/Vanilla/Events/Events/IEventCancelable/)
 
-## ZenGetters/ZenSetters
+## Геттеры/сеттеры
 
 The following information ca be retrieved/set during the event:
 
-| Геттер          | ZenSetter    | Тип                                                 |
-| --------------- | ------------ | --------------------------------------------------- |
-| `commandSender` | no           | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
-| `command`       | no           | [ICommand](/Vanilla/Commands/ICommand/)             |
-| `parameters`    | `parameters` | string array                                        |
+| Геттер          | ZenSetter   | Тип                                                 |
+| --------------- | ----------- | --------------------------------------------------- |
+| `commandSender` | no          | [ICommandSender](/Vanilla/Commands/ICommandSender/) |
+| `command`       | no          | [ICommand](/Vanilla/Commands/ICommand/)             |
+| `параметры`     | `параметры` | string array                                        |
