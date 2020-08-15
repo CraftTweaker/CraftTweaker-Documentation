@@ -1,6 +1,6 @@
 # Packmode Command
 
-## Calling
+## Llamando
 
 You call the Command using `/packmode newMode` with `newMode` being the name of the new packMode
 
