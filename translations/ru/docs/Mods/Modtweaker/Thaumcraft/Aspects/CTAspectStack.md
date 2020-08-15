@@ -1,15 +1,15 @@
 # CTAspectStack
 
-A CTAspectStack is a [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) combined with an amount that shows how many aspect points the stack will be made of.
+CTAspectStack - это [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) в сочетании с количеством, показывающим сколько очков будет сделано.
 
 ## Импорт пакета
 
-It might be required for you to import the package if you encounter any issues, so better be safe than sorry and add the import.  
-`import thaumcraft.aspect.CTAspectStack;`
+Возможно, вам потребуется импортировать пакет, если вы столкнетесь с какими-либо проблемами, так что лучше быть безопасным чем извините и добавьте импорт.  
+`импортировать thaumcraft.aspectStack;`
 
-## Retrieving such an object
+## Получение такого объекта
 
-You can retrieve a CTAspectStack object from the [CTAspectStack Bracket Handler](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/) object:
+Вы можете получить объект CTAspectStack от объекта [CTAspectStack Bracket](/Mods/Modtweaker/Thaumcraft/Brackets/Bracket_Aspect/):
 
 ```zenscript
 val aspect = <aspect:ignis>;
@@ -17,16 +17,16 @@ val aspect = <aspect:ignis>;
 
 ## Геттеры
 
-| Название | Type                                                      |
-| -------- | --------------------------------------------------------- |
-| amount   | int                                                       |
-| internal | [CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
+| Название   | Тип                                                              |
+| ---------- | ---------------------------------------------------------------- |
+| сумма      | int                                                              |
+| внутренняя | [Аспект CTAspect](/Mods/Modtweaker/Thaumcraft/Aspects/CTAspect/) |
 
-## Setting the amount
+## Установка суммы
 
 ```zenscript
-//They do the same, both return a new CTAspectStack
-val aspect = <aspect:ignis> * 10;
+//Они делают то же самое, оба возвращают новый CTAspectStack
+аспект валы = <aspect:ignis> * 10;
 
-val aspect1 = <aspect:ignis>.setAmount(10);
+аспект вал1 = <aspect:ignis>.setAmount(10);
 ```
