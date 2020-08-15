@@ -2,7 +2,7 @@
 
 The Vanilla Factory allows you to create [Blocks](/Mods/ContentTweaker/Vanilla/Creatable_Content/Block/), [Items](/Mods/ContentTweaker/Vanilla/Creatable_Content/Item/) and [Creative Tabs](/Mods/ContentTweaker/Vanilla/Creatable_Content/Creative_Tab/) that you can then add to the game.
 
-## Calling
+## Appel en cours
 
 You can find the package at `mods.contenttweaker.VanillaFactory`
 
