@@ -1,14 +1,14 @@
 # Decay Hastener
 
-## Importing the Package
+## Importando el Paquete
 `mods.nuclearcraft.DecayHastenerDecayHastener`
 
-## Adding Recipes
+## Añadiendo recetas
 ```zenscript
 mods.nuclearcraft.Supercoolermods.nuclearcraft.DecayHastener.addRecipe(IIngredient itemInput, IIngredient itemOutput, @Optional double timeMultiplier, @Optional double powerMultiplier, @Optional double processRadiation);
 ```
 
-## Removing Recipes
+## Eliminando recetas
 ```zenscript
 mods.nuclearcraft.SupercoolerDecayHastener.removeRecipeWithInput(IIngredient itemInput);
 mods.nuclearcraft.mods.nuclearcraft.DecayHastener.removeRecipeWithInput(IIngredient itemInput);
