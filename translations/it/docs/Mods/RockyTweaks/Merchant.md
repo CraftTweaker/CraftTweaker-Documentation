@@ -1,11 +1,11 @@
-# Merchant
+# Commerciante
 
 ## Comandi
 
-The following commands are added to retrieve information about the availible merchant professions & carrers:
+I seguenti comandi sono aggiunti per recuperare informazioni sulle professioni mercantili disponibili & carrers:
 
-- `/ct merchant professions` - outputs a log of valid merchant professions
-- `/ct merchant careers [profession]` - outputs a log of valid careers for all or the specified profession
+- `/ct professioni mercantili` - realizza un registro delle professioni mercantili valide
+- `/ct carriere mercantili [profession]` - realizza un registro delle carriere valide per tutti o per la professione specificata
 
 ## Pacchetto
 
@@ -13,7 +13,7 @@ The following commands are added to retrieve information about the availible mer
 
 ## Addizione
 
-Trades can be added to a specific merchant profession & carrer.
+Le trattative possono essere aggiunte a una professione mercantile specifica & carrer.
 
 ```zenscript
 // addTrade(String profession, String career, IItemstack input1, @Optional IItemstack input2, IItemstack output, int level);
@@ -22,4 +22,4 @@ mods.rockytweaks.Merchant.addTrade("minecraft:nitwit", "nitwit", <minecraft:emer
 
 ## Rimozione
 
-Merchant trade removal is currently not possible.
+La rimozione dello scambio commerciale del commerciante non è attualmente possibile.
