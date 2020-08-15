@@ -1,37 +1,37 @@
 # Mortars
 
-## Importing The Package
+## Importazione Del Pacchetto
 
-You can call the Mortar package using `mods.advancedmortars.Mortar`.
+Puoi chiamare il pacchetto Mortaio usando `mods.advancedmortars.Mortaio`.
 
-## Add Recipe
+## Aggiungi Ricetta
 
 <table>
   <tr>
     <th>
-      Type
+      Tipo
     </th>
     
     <th>
-      Data Type
+      Tipo Di Dati
     </th>
     
     <th>
-      Examples
+      Esempi
     </th>
   </tr>
   
   <tr>
     <td>
-      Mortar Types
+      Tipi Di Mortaio
     </td>
     
     <td>
-      String[]
+      Stringa[]
     </td>
     
     <td>
-      ["wooden", "stone", "iron", "diamond"]
+      ["legno", "pietra", "ferro", "diamante"]
     </td>
   </tr>
   
@@ -51,11 +51,11 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   
   <tr>
     <td>
-      Duration
+      Durata
     </td>
     
     <td>
-      Integer
+      Intero
     </td>
     
     <td>
@@ -69,7 +69,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
     </td>
     
     <td>
-      <a href="/Vanilla/Variable_Types/IIngredient/">IIngredient</a>
+      <a href="/Vanilla/Variable_Types/IIngredient/">IIngrediente</a>
     </td>
     
     <td>
@@ -78,7 +78,7 @@ You can call the Mortar package using `mods.advancedmortars.Mortar`.
   </tr>
 </table>
 
-### Example
+### Esempio
 
 ```zenscript
 ///// "Crushing"
