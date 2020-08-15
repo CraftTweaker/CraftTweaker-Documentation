@@ -1,6 +1,6 @@
-# Steam Turbine
+# 蒸気タービン。
 
-## Importing the Package
+## パッケージのインポート
 `mods.nuclearcraft.TurbineTurbine`
 
 ## レシピを追加中
