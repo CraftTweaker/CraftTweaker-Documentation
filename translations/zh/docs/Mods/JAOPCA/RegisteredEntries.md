@@ -2,7 +2,7 @@
 
 These are base entries, they may be extended by addons or special mod integrations.
 
-| 名称                | Added by                                                                                                                                                          |
+| 名称                | 添加者                                                                                                                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | "coin"            | JAOPCA                                                                                                                                                            |
 | "dust"            | JAOPCA                                                                                                                                                            |
