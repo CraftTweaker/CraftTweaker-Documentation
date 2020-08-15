@@ -17,8 +17,8 @@ The following information can be retrieved/set during the event:
 
 | ZenGetter        | 戻り値                                   |
 | ---------------- | ------------------------------------- |
-| `world`          | [IWorld](/Vanilla/World/IWorld/)      |
+| `世界`             | [IWorld](/Vanilla/World/IWorld/)      |
 | `mountingEntity` | [IEntity](/Vanilla/Entities/IEntity/) |
 | `mountedEntity`  | [IEntity](/Vanilla/Entities/IEntity/) |
 | `isMounting`     | boolean型                              |
-| `isDismounting`  | boolean                               |
+| `isDismounting`  | boolean型                              |
