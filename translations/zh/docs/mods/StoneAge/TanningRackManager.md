@@ -6,7 +6,7 @@
 ## 使用方式
 - **String name** Recipe name
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
+- **[Igredient](/Vanilla/Variable_Types/IIngredient/) 输入**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool**
 - **String group** Recipe group
 
