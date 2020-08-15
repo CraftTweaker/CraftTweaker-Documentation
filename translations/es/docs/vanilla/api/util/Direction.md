@@ -2,15 +2,15 @@
 
 Represents a cardinal direction (north, south, east, west) and (up and down).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.util.Direction
 ```
 
-## Methods
+## Métodos
 ### rotateAround
 
 Rotates this direction around a given Axis
@@ -22,7 +22,7 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 <direction:north>.rotateAround(<directionaxis:north>);
 ```
 
-| Parameter | Type                                                                   | Description               |
+| Parámetro | Tipo                                                                   | Descripción               |
 | --------- | ---------------------------------------------------------------------- | ------------------------- |
 | axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
 
@@ -52,18 +52,18 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 ```
 
 
-## Properties
+## Propiedades
 
-| Name            | Type                                                                   | Has Getter | Has Setter |
+| Nombre          | Tipo                                                                   | Has Getter | Has Setter |
 | --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                                                    | true       | false      |
-| horizontalAngle | float                                                                  | true       | false      |
-| horizontalIndex | int                                                                    | true       | false      |
-| index           | int                                                                    | true       | false      |
-| name            | String                                                                 | true       | false      |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
-| xOffset         | int                                                                    | true       | false      |
-| yOffset         | int                                                                    | true       | false      |
-| zOffset         | int                                                                    | true       | false      |
+| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | verdad     | falso      |
+| axisOffset      | int                                                                    | verdad     | falso      |
+| horizontalAngle | flotante                                                               | verdad     | falso      |
+| horizontalIndex | int                                                                    | verdad     | falso      |
+| índice          | int                                                                    | verdad     | falso      |
+| nombre          | Cadena                                                                 | verdad     | falso      |
+| opuesto         | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | verdad     | falso      |
+| xOffset         | int                                                                    | verdad     | falso      |
+| yOffset         | int                                                                    | verdad     | falso      |
+| zOffset         | int                                                                    | verdad     | falso      |
 
