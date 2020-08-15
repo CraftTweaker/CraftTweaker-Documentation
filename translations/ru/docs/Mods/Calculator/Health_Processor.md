@@ -1,6 +1,6 @@
 # Health Processor
 
-## Package
+## Пакет
 ```zenscript
 import mods.calculator.health;
 ```
@@ -15,7 +15,7 @@ import mods.calculator.health;
 health.addRecipe(IIngredient input, int value);
 ```
 
-## Removal
+## Удаление
 ```zenscript
 health.removeRecipe(IIngredient input);
 ```
