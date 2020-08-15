@@ -1,6 +1,6 @@
 # ILogger
 
-Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
+基本类用于与 craftminstruer.log 文件和其他伐木器(例如玩家日志) 接口。
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
@@ -13,58 +13,58 @@ crafttweaker.api.ILogger
 ## 方法
 ### debug
 
-Logs a debug message.
+记录调试消息。
 
 ```zenscript
-logger.debug(message as String);
+logger.debug(消息为字符串);
 logger.debug("message");
 ```
 
-| 参数      | 类型     | 描述                    |
-| ------- | ------ | --------------------- |
-| message | String | message to be logged. |
+| 参数 | 类型     | 描述      |
+| -- | ------ | ------- |
+| 留言 | String | 要记录的消息。 |
 
 
-### error
+### 错误
 
-Logs an error message.
+记录一个错误消息。
 
 ```zenscript
-logger.error(message as String);
+logger.error(消息为字符串);
 logger.error("message");
 ```
 
-| 参数      | 类型          | 说明                    |
-| ------- | ----------- | --------------------- |
-| message | 字符串[string] | message to be logged. |
+| 参数 | 类型          | 说明      |
+| -- | ----------- | ------- |
+| 留言 | 字符串[string] | 要记录的消息。 |
 
 
 ### 信息
 
-Logs an info message.
+记录信息消息。
 
 ```zenscript
-logger.info(message as String);
+logger.info(消息为字符串);
 logger.info("message");
 ```
 
-| 参数      | 类型          | 描述                    |
-| ------- | ----------- | --------------------- |
-| message | 字符串[string] | message to be logged. |
+| 参数 | 类型          | 描述      |
+| -- | ----------- | ------- |
+| 留言 | 字符串[string] | 要记录的消息。 |
 
 
-### warning
+### 警告
 
-Logs a warning message.
+记录警告消息。
 
 ```zenscript
-logger.warning(message as String);
+logger.warning(消息作为字符串);
 logger.warning("message");
 ```
 
-| 参数      | 类型          | 描述                    |
-| ------- | ----------- | --------------------- |
-| message | 字符串[string] | message to be logged. |
+| 参数 | 类型          | 描述      |
+| -- | ----------- | ------- |
+| 留言 | 字符串[string] | 要记录的消息。 |
 
 
 
