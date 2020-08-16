@@ -21,7 +21,7 @@ Ajoute une recette basée sur un IData fourni. L'IData fourni doit représenter 
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+craftingTable.addJSONRecipe("Nom_de_la_recette", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
 | Paramètre | Type de texte                                          | Libellé                              |
@@ -36,8 +36,8 @@ Ajoute une recette formée au tableau de fabrication
 
 ```zenscript
 craftingTable.addShaped(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix);
-craftingTable.addShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
-craftingTable. ddShaped("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(entrées[0][0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
+craftingTable.addShaped("Nom_de_la_recette", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
+craftingTable. ddShaped("Nom_de_la_recette", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(entrées[0][0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
 ```
 
 | Paramètre           | Type de texte                                                                | Libellé                                                                                                        | Optionnel | Valeur par défaut |
@@ -94,7 +94,7 @@ craftingTable.removeAll();
 
 ### Retirer par Modid
 
-Supprimer la recette basée sur la modification du nom du Registre
+Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
 craftingTable.removeByModid(modifier en tant que chaîne);
@@ -108,7 +108,7 @@ craftingTable.removeByModid("minecraft");
 
 ### removeByName
 
-Supprimer la recette basée sur le nom du Registre
+Supprimer la recette basée sur le nom du Registre.
 
 ```zenscript
 craftingTable.removeByName(name as String);
@@ -122,7 +122,7 @@ craftingTable.removeByName("minecraft:furnace");
 
 ### removeByRegex
 
-Supprimer la recette basée sur la regex
+Supprimer la recette basée sur la regex.
 
 ```zenscript
 craftingTable.removeByRegex(regex as String);
