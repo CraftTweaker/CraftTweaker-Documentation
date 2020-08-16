@@ -54,8 +54,8 @@ Ajoute une recette en forme de miroir à la table d'artisanat
 
 ```zenscript
 craftingTable.addShapedMirrored(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[][], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionMatrix);
-craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
-craftingTable.addShapedMirrored("recipe_name", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "totally real diamond block" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
+craftingTable.addShapedMirrored("Nom_de_la_recette", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]]);
+craftingTable.addShapedMirrored("Nom_de_la_recette", <item:minecraft:dirt>, [[<item:minecraft:diamond>], [<tag:minecraft:wool>]], (usualOut as IItemStack, inputs as IItemStack[][]) => {if(inputs[0][0].displayName == "un bloc de diamants totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamant ");});
 ```
 
 | Paramètre           | Type de texte                                                                | Libellé                                                                                                        | Optionnel | Valeur par défaut |
@@ -72,21 +72,21 @@ Ajoute une recette sans forme à la table d'artisanat
 
 ```zenscript
 craftingTable.addShapeless(recipeName as String, output as crafttweaker.api.item.IItemStack, ingredients as crafttweaker.api.item.IIngredient[], recipeFunction as com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray);
-craftingTable. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>]);
-craftingTable. ddShapeless("recipe_name", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamond");});
+craftingTable. ddShapeless("Nom_de_la_recette", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>]);
+craftingTable. ddShapeless("Nom_de_la_recette", <item:minecraft:dirt>, [<item:minecraft:diamond>, <tag:minecraft:wool>], (usualOut as IItemStack, inputs as IItemStack[]) => {if(inputs[0]. isplayName == "bloc diamant totalement réel" ){return usualOut;}return <item:minecraft:clay>.setDisplayName("Diamant ");});
 ```
 
-| Paramètre           | Type de texte                                                               | Libellé                                                                                                       | Optionnel | Valeur par défaut |
-| ------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------- | ----------------- |
-| Nom de la recette   | Chaîne de caractères                                                        | nom de la recette à ajouter.                                                                                  | Faux      | null              |
-| Sortie              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                             | Faux      | null              |
-| ingrédients         | [crafttweaker.api.item.Igredient](/vanilla/api/items/IIngredient)[]         | tableau d'ingrédients pour les entrées                                                                        | Faux      | null              |
-| Fonction de recette | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | Com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray pour des conditions plus avancées | vrai      | null              |
+| Paramètre           | Type de texte                                                               | Libellé                                                                                                                   | Optionnel | Valeur par défaut |
+| ------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------- | ----------------- |
+| Nom de la recette   | Chaîne de caractères                                                        | nom de la recette à ajouter.                                                                                              | Faux      | null              |
+| Sortie              | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)           | output IItemStack                                                                                                         | Faux      | null              |
+| ingrédients         | [crafttweaker.api.item.Ingredient](/vanilla/api/items/IIngredient)[]        | tableau d'ingrédients pour les entrées                                                                                    | Faux      | null              |
+| Fonction de recette | com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray | Optionnelle com.blamejared.crafttweaker.api.managers.IRecipeManager.RecipeFunctionArray pour des conditions plus avancées | vrai      | null              |
 
 
 ### Retirer tout
 
-Supprimer toutes les recettes de ce registre
+Supprimer toutes les recettes de ce registre.
 
 ```zenscript
 craftingTable.removeAll();
