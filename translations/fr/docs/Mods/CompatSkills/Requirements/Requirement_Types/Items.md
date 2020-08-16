@@ -18,23 +18,23 @@ Les objets sont des types d'exigences introduits par CompatSkills et vous permet
     // Ajoute l'exigence que vous déteniez n'importe quel élément du mod spécifié avec les données NBT spécifiées.
     stack|modid|NBT as JSON
     
-    // Adds the requirement of you holding the specified item with meta 0 and the specified NBT-data
+    // Ajoute l'obligation de détenir l'élément spécifié avec meta 0 et les données NBT spécifiées
     stack|modid:item|NBT as JSON
     
-    // Adds the requirement of you holding the specified item with the specified Meta and the specified NBT-data
+    // Ajoute l'obligation de détenir l'élément spécifié avec meta 0 et les données NBT spécifiées
     stack|modid:item:meta|NBT as JSON
     
     
     
-    // Working Examples:
+    // Exemples de réalisation:
     stack|minecraft
     stack|minecraft:iron_pickaxe
     stack|minecraft:iron_pickaxe:*
     
-    //Needs a silk touch item
+    //Besoin d'un item de toucher de soie
     stack||{ench:[{id: 33s}]} 
     
-    //fortune tinkers tool
+    //outil de tinkers fortune
     stack|tconstruct|{ench:[{id: 35s}]} 
     
     stack|minecraft:iron_sword|{ench:[{id: 17s}]}
