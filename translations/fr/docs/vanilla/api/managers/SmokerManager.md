@@ -50,7 +50,7 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 
 ### Retirer tout
 
-Supprimer toutes les recettes de ce registre
+Supprimer toutes les recettes de ce registre.
 
 ```zenscript
 fumeur.removeT();
@@ -58,7 +58,7 @@ fumeur.removeT();
 
 ### Retirer par Modid
 
-Supprimer la recette basée sur la modification du nom du Registre
+Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
 smoker.removeByModid(modifiez comme String);
@@ -72,7 +72,7 @@ smoker.removeByModid("minecraft");
 
 ### removeByName
 
-Supprimer la recette basée sur le nom du Registre
+Supprimer la recette basée sur le nom du Registre.
 
 ```zenscript
 smoker.removeByName(name as String);
@@ -86,7 +86,7 @@ smoker.removeByName("minecraft:furnace");
 
 ### removeByRegex
 
-Supprimer la recette basée sur la regex
+Supprimer la recette basée sur la regex.
 
 ```zenscript
 smoker.removeByRegex(regex as String);
