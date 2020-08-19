@@ -82,3 +82,12 @@ Renvoie vide (rien).
 ```zenscript
 defObj.setHarvestLevel(chaîne toolclass, int level);
 ```
+
+### Obtenir un état de bloc par métadonnées
+
+Utilise un int.  
+Renvoie un [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
