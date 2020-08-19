@@ -82,3 +82,12 @@ void (nothing) を返します。
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### メタデータでブロック状態を取得する
+
+Uses an int.  
+戻り値 [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
