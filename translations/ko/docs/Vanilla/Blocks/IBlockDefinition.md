@@ -78,3 +78,12 @@ string타입의 인수와 int타입의 인수를 지정하며
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### Get a block state by metadata
+
+Uses an int.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
