@@ -97,3 +97,15 @@ worldObj.spawnEntity(Ientity entity);
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolian stopOnLiquid, @Optional boolian ignoreBlockwithout BoundingBox, @Optional(true) 布尔返回 LastUncollidableBlock)
 ```
+
+### 获取选中的块
+
+使用 [IBlockPos](/Vanilla/World/IBlockPos/), [IRayTraceResults 结果](/Vanilla/World/IRayTraceResult/) 和 [IPlayer](/Vanilla/Players/IPlayer/).  
+返回 [ItemStack](/Vanilla/Items/IItemStack/)。  
+**可以为空**
+
+获取可以通过在位置选择方块获取的IItemStack。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos，IRayTraceResult RayTraceResult，IPlayer player player)；
+```
