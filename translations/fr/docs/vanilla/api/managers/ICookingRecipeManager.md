@@ -50,7 +50,7 @@ furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 
 ### Retirer tout
 
-Supprimer toutes les recettes de ce registre
+Supprimer toutes les recettes de ce registre.
 
 ```zenscript
 Retirer tout ();
@@ -58,7 +58,7 @@ Retirer tout ();
 
 ### Retirer par Modid
 
-Supprimer la recette basée sur la modification du nom du Registre
+Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
 furnace.removeByModid(modifie en chaîne de caractères);
@@ -72,7 +72,7 @@ furnace.removeByModid("minecraft");
 
 ### removeByName
 
-Supprimer la recette basée sur le nom du Registre
+Supprimer la recette basée sur le nom du Registre.
 
 ```zenscript
 furnace.removeByName(name as String);
@@ -86,7 +86,7 @@ furnace.removeByName("minecraft:furnace");
 
 ### removeByRegex
 
-Supprimer la recette basée sur la regex
+Supprimer la recette basée sur la regex.
 
 ```zenscript
 furnace.removeByRegex(regex as String);
