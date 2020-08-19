@@ -82,3 +82,12 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### 通过元数据获取方块状态
+
+使用一个整数。  
+返回一个 [IBlockState](/Vanilla/Blocks/IBlockState/)。
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
