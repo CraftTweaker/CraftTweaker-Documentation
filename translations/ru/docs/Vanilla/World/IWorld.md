@@ -97,3 +97,15 @@ Use two [IVector3d](/Vanilla/World/IVector3d/) objects, and three booleans to ge
 ```zenscript
 worldObj.rayTraceBlocks(IVector3d begin, IVector3d ray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```
+
+### Получить выбранный блок
+
+Используйте [IBlockPos](/Vanilla/World/IBlockPos/), [IRayTraceResult](/Vanilla/World/IRayTraceResult/) и [IPlayer](/Vanilla/Players/IPlayer/).  
+Возвращает [IItemStack](/Vanilla/Items/IItemStack/).  
+**Может быть нулевым**
+
+Получает IItemStack, который будет получен, выбрав блок в позиции.
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult, IPlayer игрок);
+```
