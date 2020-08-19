@@ -82,3 +82,12 @@ defObj.getSlipperiness(IBlockState state, IBlockAccess access, IBlockPos pos, @O
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### Получить состояние блока метаданными
+
+Использует int.  
+возвращает [IBlockState](/Vanilla/Blocks/IBlockState/)
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
