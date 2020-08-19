@@ -48,7 +48,7 @@ stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool
 
 ### Retirer tout
 
-Supprimer toutes les recettes de ce registre
+Supprimer toutes les recettes de ce registre.
 
 ```zenscript
 stoneCutter.removeAll();
@@ -56,7 +56,7 @@ stoneCutter.removeAll();
 
 ### Retirer par Modid
 
-Supprimer la recette basée sur la modification du nom du Registre
+Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
 stoneCutter.removeByModid(modifiez comme String);
@@ -70,7 +70,7 @@ stoneCutter.removeByModid("minecraft");
 
 ### removeByName
 
-Supprimer la recette basée sur le nom du Registre
+Supprimer la recette basée sur le nom du Registre.
 
 ```zenscript
 stoneCutter.removeByName(name as String);
@@ -84,7 +84,7 @@ stoneCutter.removeByName("minecraft:furnace");
 
 ### removeByRegex
 
-Supprimer la recette basée sur la regex
+Supprimer la recette basée sur la regex.
 
 ```zenscript
 stoneCutter.removeByRegex(regex as String);
