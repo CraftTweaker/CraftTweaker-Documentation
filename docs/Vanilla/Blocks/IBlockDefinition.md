@@ -72,3 +72,10 @@ Returns void (nothing).
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### Get a block state by metadata
+Uses an int.  
+Returns an [IBlockState](/Vanilla/Blocks/IBlockState/).
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
