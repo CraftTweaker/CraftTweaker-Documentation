@@ -82,3 +82,12 @@ Devuelve vacío (nada).
 ```zenscript
 defObj.setHarvestLevel(clase de herramientas de cadena, nivel int);
 ```
+
+### Obtener un estado de bloque por metadatos
+
+Utiliza un int.  
+Devuelve un [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
