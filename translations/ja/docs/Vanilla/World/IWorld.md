@@ -97,3 +97,15 @@ worldObj.spawnEntity(IEntity)
 ```zenscript
 worldObj.rayTraceBlocks(IVector3dbegin, IVector3dray, @Optional boolean stopOnLiquid, @Optional boolean ignoreBlockWithoutBoundingBox, @Optional(true) boolean returnLastUncollidableBlock)
 ```
+
+### 選択したブロックを取得する
+
+Use an [IBlockPos](/Vanilla/World/IBlockPos/), an [IRayTraceResult](/Vanilla/World/IRayTraceResult/) and an [IPlayer](/Vanilla/Players/IPlayer/).  
+Returns an [IItemStack](/Vanilla/Items/IItemStack/).  
+**Can be null**
+
+位置にあるブロックを選択することで得られるIItemStackを取得します。
+
+```zenscript
+worldObj.getPickedBlock(IBlockPos pos, IRayTraceResult rayResult, IPlayer player);
+```
