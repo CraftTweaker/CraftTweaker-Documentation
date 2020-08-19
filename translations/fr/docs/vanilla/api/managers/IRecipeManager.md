@@ -21,7 +21,7 @@ Ajoute une recette basée sur un IData fourni. L'IData fourni doit représenter 
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+craftingTable.addJSONRecipe("Nom_de_la_recette", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
 | Paramètre | Type de texte                                          | Libellé                              |
@@ -32,7 +32,7 @@ craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gol
 
 ### Retirer tout
 
-Supprimer toutes les recettes de ce registre
+Supprimer toutes les recettes de ce registre.
 
 ```zenscript
 craftingTable.removeAll();
@@ -40,7 +40,7 @@ craftingTable.removeAll();
 
 ### Retirer par Modid
 
-Supprimer la recette basée sur la modification du nom du Registre
+Supprimer la recette basée sur la modification du nom du Registre.
 
 ```zenscript
 craftingTable.removeByModid(modifier en tant que chaîne);
@@ -54,7 +54,7 @@ craftingTable.removeByModid("minecraft");
 
 ### removeByName
 
-Supprimer la recette basée sur le nom du Registre
+Supprimer la recette basée sur le nom du Registre.
 
 ```zenscript
 craftingTable.removeByName(name as String);
@@ -68,7 +68,7 @@ craftingTable.removeByName("minecraft:furnace");
 
 ### removeByRegex
 
-Supprimer la recette basée sur la regex
+Supprimer la recette basée sur la regex.
 
 ```zenscript
 craftingTable.removeByRegex(regex as String);
