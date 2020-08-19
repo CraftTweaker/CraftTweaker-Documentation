@@ -82,3 +82,12 @@ Restituisce vuoto (niente).
 ```zenscript
 defObj.setHarvestLevel(string toolclass, int level);
 ```
+
+### Ottenere uno stato di blocco per metadati
+
+Usa un int.  
+Restituisce un [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
