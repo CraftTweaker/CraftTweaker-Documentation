@@ -82,3 +82,12 @@ Zwraca unieważnienie (nie ma znaczenia).
 ```zenscript
 defObj.setHarvestLevel(klasa stringu, poziom intów);
 ```
+
+### Uzyskaj stan bloku przez metadane
+
+Używa int.  
+Zwraca [IBlockState](/Vanilla/Blocks/IBlockState/).
+
+```zenscript
+defObj.getStateFromMeta(int meta);
+```
