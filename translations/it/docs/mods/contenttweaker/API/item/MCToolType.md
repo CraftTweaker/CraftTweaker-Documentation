@@ -29,7 +29,7 @@ new mods.contenttweaker.item.MCToolType("pickaxe");
 ## Metodi
 ### getName
 
-Ottiene il nome di questo toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+Ottiene il nome di questo toolType. Il nome che viene utilizzato nell'espressione angolare dopo `<tooltype:`
 
 Tipo di ritorno: Stringa
 
