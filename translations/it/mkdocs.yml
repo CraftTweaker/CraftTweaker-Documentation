@@ -1,7 +1,7 @@
 # Se viene aggiunta una pagina, deve essere aggiunta anche in questo indice
 nav:
   - Pagina Principale: 'index.md'
-  Le Basi dello Scripting: 'getting_started.md'
+  - Le Basi dello Scripting: 'getting_started.md'
   - Comandi: "commands.md"
   - Esempi: "examples.md"
   - Ricette:
