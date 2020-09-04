@@ -1174,7 +1174,7 @@ myMCPlayerEntity.heal(healAmount as float);
 
 ### ignoreItemEntityData
 
-Checks if players can use this entity to access operator (permission level 2) commands either directly or indirectly, such as give or setblock. Un metodo simile esiste per le entità a {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>Ad esempio, {@link
+Controlla se i giocatori possono sfruttare questa entità per accedere sia direttamente sia indirettamente a comandi operatore (livello di permesso 2), come per esempio give o setblock. Un metodo simile esiste per le entità a {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>Ad esempio, {@link
  net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() comando block minecarts} e {@link
  net.minecraft.entity.item.EntityMinecartMobSpawner#ignoreItemEntityData() mob spawner minecarts} (comando spawning
  block minecarts o drops) sono considerati accessibili.</p>Restituisce: `true se questa entità offre modi per
