@@ -92,6 +92,7 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 | showsDurabilityBar  |                     | bool                                                       |
 | hasCustomEntity     |                     | bool                                                       |
 | enchantments        |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact       |                     | bool                                                       |
 
 
 
