@@ -125,12 +125,14 @@ Read how to use them [here](/UsingThisWiki/). Also, check out the examples below
 
 #### Tags
 
-| Method call                    | Returns                                    | ParameterTypes                |
-|--------------------------------|--------------------------------------------|-------------------------------|
-| `stack.withEmtpyTag()`         | A new IItemStack with the changed property |                               |
-| `stack.withTag(IData tag)`     | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | A new IItemStack with the changed property | string                        |
-| `stack.updateTag(IData tag)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/) |
+| Method call                                 | Returns                                    | ParameterTypes                      |
+|---------------------------------------------|--------------------------------------------|-------------------------------------|
+| `stack.withEmtpyTag()`                      | A new IItemStack with the changed property |                                     |
+| `stack.withTag(IData tag)`                  | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, matchTagExact)`   | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`              | A new IItemStack with the changed property | string                              |
+| `stack.updateTag(IData tag)`                | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, matchTagExact)` | A new IItemStack with the changed property | [IData](/Vanilla/Data/IData/), bool |
 
 
 #### Block Casting
