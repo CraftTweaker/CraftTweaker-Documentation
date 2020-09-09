@@ -92,6 +92,7 @@ IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 | showsDurabilityBar  |                     | bool型                                                       |
 | hasCustomEntity     |                     | bool                                                        |
 | エンチャント              |                     | List<[IEnchantment](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact       |                     | bool                                                        |
 
 #### 金額
 
@@ -120,12 +121,14 @@ IItemStack extends [IIngredient](/Vanilla/Variable_Types/IIngredient/).
 
 #### タグ
 
-| メソッド通話                         | Returns                    | パラメータタイプ                      |
-| ------------------------------ | -------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`         | 変更されたプロパティを持つ新しいIItemStack |                               |
-| `stack.withTag(IData tag)`     | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | 変更されたプロパティを持つ新しいIItemStack | 文字列                           |
-| `stack.updateTag(IData tag)`   | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/) |
+| メソッド通話                                           | Returns                    | パラメータタイプ                            |
+| ------------------------------------------------ | -------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | 変更されたプロパティを持つ新しいIItemStack |                                     |
+| `stack.withTag(IData tag)`                       | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | 変更されたプロパティを持つ新しいIItemStack | 文字列                                 |
+| `stack.updateTag(IData tag)`                     | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | 変更されたプロパティを持つ新しいIItemStack | [IData](/Vanilla/Data/IData/), bool |
 
 #### ブロックキャスト
 
