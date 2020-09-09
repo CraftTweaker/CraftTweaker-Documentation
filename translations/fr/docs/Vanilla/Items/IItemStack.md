@@ -92,6 +92,7 @@ Lisez comment les utiliser [ici](/UsingThisWiki/). Consultez également les exem
 | Afficher la barre de durabilité |                           | booléen                                                        |
 | a une entité personnalisée      |                           | booléen                                                        |
 | enchantements                   |                           | Liste <[IEnchantement](/Vanilla/Enchantments/IEnchantment/)\> |
+| format@@0 matchTagExact         |                           | booléen                                                        |
 
 #### Montant
 
@@ -120,12 +121,14 @@ Lisez comment les utiliser [ici](/UsingThisWiki/). Consultez également les exem
 
 #### Tags
 
-| Méthode d'appel                        | Retours                                            | Types de paramètres           |
-| -------------------------------------- | -------------------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`                 | Une nouvelle IItemStack avec la propriété modifiée |                               |
-| `stack.withTag(balise IData)`          | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String nom)`          | Une nouvelle IItemStack avec la propriété modifiée | chaîne de caractères          |
-| `format@@0 stack.updateTag(IData tag)` | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/) |
+| Méthode d'appel                                  | Retours                                            | Types de paramètres                 |
+| ------------------------------------------------ | -------------------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Une nouvelle IItemStack avec la propriété modifiée |                                     |
+| `stack.withTag(balise IData)`                    | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(tag IData, bool matchTagExact)`   | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String nom)`                    | Une nouvelle IItemStack avec la propriété modifiée | chaîne de caractères                |
+| `format@@0 stack.updateTag(IData tag)`           | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(tag IData, bool matchTagExact)` | Une nouvelle IItemStack avec la propriété modifiée | [IData](/Vanilla/Data/IData/), bool |
 
 #### Bloc de lancement
 
