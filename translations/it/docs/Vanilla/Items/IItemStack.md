@@ -92,6 +92,7 @@ Leggi come usarli [qui](/UsingThisWiki/). Anche, controllare gli esempi qui sott
 | showsDurabilityBar  |                     | bool                                                        |
 | hasCustomEntity     |                     | bool                                                        |
 | incantesimi         |                     | Lista<[Incantesimo](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact       |                     | bool                                                        |
 
 #### Importo
 
@@ -120,12 +121,14 @@ Leggi come usarli [qui](/UsingThisWiki/). Anche, controllare gli esempi qui sott
 
 #### Etichette
 
-| Chiamata metodo                 | Restituzioni                                    | ParameterTypes                |
-| ------------------------------- | ----------------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`          | Un nuovo IItemStack con la proprietà modificata |                               |
-| `stack.withTag(IData tag)`      | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(nome stringa)` | Un nuovo IItemStack con la proprietà modificata | stringa                       |
-| `stack.updateTag(IData tag)`    | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/) |
+| Chiamata metodo                                  | Restituzioni                                    | ParameterTypes                      |
+| ------------------------------------------------ | ----------------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Un nuovo IItemStack con la proprietà modificata |                                     |
+| `stack.withTag(IData tag)`                       | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(nome stringa)`                  | Un nuovo IItemStack con la proprietà modificata | stringa                             |
+| `stack.updateTag(IData tag)`                     | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | Un nuovo IItemStack con la proprietà modificata | [IData](/Vanilla/Data/IData/), bool |
 
 #### Casting A Blocchi
 
