@@ -57,41 +57,42 @@ That means all functionality that is available to [IIngredient](/Vanilla/Variabl
 
 Lea cómo usarlos [aquí](/UsingThisWiki/). También, revisa los ejemplos a continuación.
 
-| ZenGetter/ZenMethod          | ZenSetter/ZenMethod | Tipo                                                           |
-| ---------------------------- | ------------------- | -------------------------------------------------------------- |
-| definición                   |                     | [Definición de ítems](/Vanilla/Items/IItemDefinition/)         |
-| nombre                       |                     | cadena                                                         |
-| nombre de pantalla           | nombre de pantalla  | cadena                                                         |
-| maxStackSize                 | maxStackSize        | int                                                            |
-| dureza                       | dureza              | flotante                                                       |
-| daño                         |                     | int                                                            |
-| maxDamage                    | maxDamage           | int                                                            |
-| hasTag                       |                     | pluma                                                          |
-| etiqueta                     | withTag(etiqueta)   | [IData](/Vanilla/Data/IData/)                                  |
-| ores                         |                     | Lista <[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>     |
-| clases de herramientas       |                     | Lista<string\>                                                |
-| itemEnchantability           |                     | int                                                            |
-| contenedor                   |                     | IItemStack                                                     |
-| hasContainerItem             |                     | pluma                                                          |
-| coste de reparación          | coste de reparación | int                                                            |
-| canEditBloques               |                     | pluma                                                          |
-| isOnItemFrame                |                     | pluma                                                          |
-| encantable                   |                     | pluma                                                          |
-| encantado                    |                     | pluma                                                          |
-| está Dañado                  |                     | pluma                                                          |
-| dañable                      |                     | pluma                                                          |
-| es ItemBlock                 |                     | libro (si el elemento contiene es un bloque de elementos)      |
-| es apilable                  |                     | pluma                                                          |
-| isBeaconPayment              |                     | pluma                                                          |
-| hasEfecto                    |                     | pluma                                                          |
-| hasDisplayName               |                     | pluma                                                          |
-| metadatos                    |                     | int                                                            |
-| hasSubtypes                  |                     | pluma                                                          |
-| isEmpty                      |                     | pluma                                                          |
-| tiempo quemado               |                     | int                                                            |
-| mostrar barra de durabilidad |                     | pluma                                                          |
-| ha Personalizado             |                     | pluma                                                          |
-| encantamientos               |                     | Lista <[Encantamiento](/Vanilla/Enchantments/IEnchantment/)\> |
+| ZenGetter/ZenMethod              | ZenSetter/ZenMethod | Tipo                                                           |
+| -------------------------------- | ------------------- | -------------------------------------------------------------- |
+| definición                       |                     | [Definición de ítems](/Vanilla/Items/IItemDefinition/)         |
+| nombre                           |                     | cadena                                                         |
+| nombre de pantalla               | nombre de pantalla  | cadena                                                         |
+| maxStackSize                     | maxStackSize        | int                                                            |
+| dureza                           | dureza              | flotante                                                       |
+| daño                             |                     | int                                                            |
+| maxDamage                        | maxDamage           | int                                                            |
+| hasTag                           |                     | pluma                                                          |
+| etiqueta                         | withTag(etiqueta)   | [IData](/Vanilla/Data/IData/)                                  |
+| ores                             |                     | Lista <[IOreDictEntry](/Vanilla/OreDict/IOreDictEntry/)\>     |
+| clases de herramientas           |                     | Lista<string\>                                                |
+| itemEnchantability               |                     | int                                                            |
+| contenedor                       |                     | IItemStack                                                     |
+| hasContainerItem                 |                     | pluma                                                          |
+| coste de reparación              | coste de reparación | int                                                            |
+| canEditBloques                   |                     | pluma                                                          |
+| isOnItemFrame                    |                     | pluma                                                          |
+| encantable                       |                     | pluma                                                          |
+| encantado                        |                     | pluma                                                          |
+| está Dañado                      |                     | pluma                                                          |
+| dañable                          |                     | pluma                                                          |
+| es ItemBlock                     |                     | libro (si el elemento contiene es un bloque de elementos)      |
+| es apilable                      |                     | pluma                                                          |
+| isBeaconPayment                  |                     | pluma                                                          |
+| hasEfecto                        |                     | pluma                                                          |
+| hasDisplayName                   |                     | pluma                                                          |
+| metadatos                        |                     | int                                                            |
+| hasSubtypes                      |                     | pluma                                                          |
+| isEmpty                          |                     | pluma                                                          |
+| tiempo quemado                   |                     | int                                                            |
+| mostrar barra de durabilidad     |                     | pluma                                                          |
+| ha Personalizado                 |                     | pluma                                                          |
+| encantamientos                   |                     | Lista <[Encantamiento](/Vanilla/Enchantments/IEnchantment/)\> |
+| coincidir con la etiqueta exacta |                     | pluma                                                          |
 
 #### Cantidad
 
@@ -120,12 +121,14 @@ Lea cómo usarlos [aquí](/UsingThisWiki/). También, revisa los ejemplos a cont
 
 #### Etiquetas
 
-| Método de llamada              | Devuelve                                     | Tipos de parámetros           |
-| ------------------------------ | -------------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`         | Un nuevo ItemStack con la propiedad cambiada |                               |
-| `stack.withTag(IData tag)`     | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | Un nuevo ItemStack con la propiedad cambiada | cadena                        |
-| `stack.updateTag(IData tag)`   | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/) |
+| Método de llamada                                | Devuelve                                     | Tipos de parámetros                 |
+| ------------------------------------------------ | -------------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Un nuevo ItemStack con la propiedad cambiada |                                     |
+| `stack.withTag(IData tag)`                       | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | Un nuevo ItemStack con la propiedad cambiada | cadena                              |
+| `stack.updateTag(IData tag)`                     | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | Un nuevo ItemStack con la propiedad cambiada | [IData](/Vanilla/Data/IData/), bool |
 
 #### Bloquear proyección
 
