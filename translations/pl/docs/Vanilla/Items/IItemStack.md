@@ -92,6 +92,7 @@ Przeczytaj jak używać ich [tutaj](/UsingThisWiki/). Sprawdź również poniżs
 | pokaż Pasek Trwałości    |                     | bool                                                            |
 | hasCustomEntity          |                     | bool                                                            |
 | zaklęcia                 |                     | List<[Zaklęcie Ichantu](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact            |                     | bool                                                            |
 
 #### Kwota
 
@@ -120,12 +121,14 @@ Przeczytaj jak używać ich [tutaj](/UsingThisWiki/). Sprawdź również poniżs
 
 #### Tagi
 
-| Metoda połączenia              | Zwroty                                    | Typy parametrów               |
-| ------------------------------ | ----------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`         | Nowy IItemStack ze zmienioną właściwością |                               |
-| `stack.withTag(tag I)`         | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(nazwa ciągu)` | Nowy IItemStack ze zmienioną właściwością | ciąg znaków                   |
-| `stack.updateTag(tag I)`       | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/) |
+| Metoda połączenia                            | Zwroty                                    | Typy parametrów                     |
+| -------------------------------------------- | ----------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                       | Nowy IItemStack ze zmienioną właściwością |                                     |
+| `stack.withTag(tag I)`                       | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(tag IDI, bool matchTagExact)` | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(nazwa ciągu)`               | Nowy IItemStack ze zmienioną właściwością | ciąg znaków                         |
+| `stack.updateTag(tag I)`                     | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData, bool matchTagExact)` | Nowy IItemStack ze zmienioną właściwością | [IData](/Vanilla/Data/IData/), bool |
 
 #### Blok przesyłania
 
