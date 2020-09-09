@@ -92,6 +92,7 @@ Lesen Sie, wie Sie sie [hier verwenden](/UsingThisWiki/). Schauen Sie sich auch 
 | showsDurabilitybar   |                      | bool                                                          |
 | hasCustom-Entity     |                      | bool                                                          |
 | verzaubert           |                      | Liste <[Verzauberung](/Vanilla/Enchantments/IEnchantment/)\> |
+| matchTagExact        |                      | bool                                                          |
 
 #### Betrag
 
@@ -120,12 +121,14 @@ Lesen Sie, wie Sie sie [hier verwenden](/UsingThisWiki/). Schauen Sie sich auch 
 
 #### Tags
 
-| Methodenaufruf                 | Rückgabewert                                        | Parameter Typen               |
-| ------------------------------ | --------------------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`         | Ein neuer IItemStack mit der geänderten Eigenschaft |                               |
-| `stack.withTag(IData Tag)`     | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String-Name)` | Ein neuer IItemStack mit der geänderten Eigenschaft | string                        |
-| `stack.updateTag(IData Tag)`   | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/) |
+| Methodenaufruf                                   | Rückgabewert                                        | Parameter Typen                     |
+| ------------------------------------------------ | --------------------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Ein neuer IItemStack mit der geänderten Eigenschaft |                                     |
+| `stack.withTag(IData Tag)`                       | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData-Tag, bool matchTagExact)`   | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String-Name)`                   | Ein neuer IItemStack mit der geänderten Eigenschaft | string                              |
+| `stack.updateTag(IData Tag)`                     | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData-Tag, bool matchTagExact)` | Ein neuer IItemStack mit der geänderten Eigenschaft | [IData](/Vanilla/Data/IData/), bool |
 
 #### Block-Casting
 
