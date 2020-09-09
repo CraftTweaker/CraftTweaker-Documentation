@@ -92,6 +92,7 @@ Read how to use them [here](/UsingThisWiki/). 并查看下面的示例。
 | 显示耐久条                          |                      | 布尔值                                                      |
 | 哈斯定制实体                         |                      | 布尔值                                                      |
 | 附属机构                           |                      | 列表<[IEnchantage](/Vanilla/Enchantments/IEnchantment/)\> |
+| 匹配标签精度                         |                      | 布尔值                                                      |
 
 #### 金额
 
@@ -120,12 +121,14 @@ Read how to use them [here](/UsingThisWiki/). 并查看下面的示例。
 
 #### 标签
 
-| 方法调用                     | 返回                     | 参数类型                          |
-| ------------------------ | ---------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`   | 一个带有更改属性的新的 IItemStack |                               |
-| `stack.withTag(IData标签)` | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/) |
-| `移除标签(名称)`               | 一个带有更改属性的新的 IItemStack | 字符串                           |
-| `更新标签(IData标签)`          | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/) |
+| 方法调用                                             | 返回                     | 参数类型                                |
+| ------------------------------------------------ | ---------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | 一个带有更改属性的新的 IItemStack |                                     |
+| `stack.withTag(IData标签)`                         | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/), bool |
+| `移除标签(名称)`                                       | 一个带有更改属性的新的 IItemStack | 字符串                                 |
+| `更新标签(IData标签)`                                  | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData tag, bool matchTagExact)` | 一个带有更改属性的新的 IItemStack | [IData](/Vanilla/Data/IData/), bool |
 
 #### 屏蔽连铸中
 
