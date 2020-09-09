@@ -92,6 +92,7 @@ IItemStack расширяет [IIngredient](/Vanilla/Variable_Types/IIngredient/
 | полоса прочности         |              | bool                                                         |
 | имеет Настраиваемое Лицо |              | bool                                                         |
 | чары                     |              | Список<[Зачарование](/Vanilla/Enchantments/IEnchantment/)\> |
+| совпадающий Тег Точно    |              | bool                                                         |
 
 #### Количество
 
@@ -120,12 +121,14 @@ IItemStack расширяет [IIngredient](/Vanilla/Variable_Types/IIngredient/
 
 #### Теги
 
-| Вызов метода                   | Возвращает                              | Типы параметров               |
-| ------------------------------ | --------------------------------------- | ----------------------------- |
-| `stack.withEmtpyTag()`         | Новый IItemStack с измененным свойством |                               |
-| `stack.withTag(IData тег)`     | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/) |
-| `stack.removeTag(String name)` | Новый IItemStack с измененным свойством | string                        |
-| `stack.updateTag(тег IDat)`    | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/) |
+| Вызов метода                                     | Возвращает                              | Типы параметров                     |
+| ------------------------------------------------ | --------------------------------------- | ----------------------------------- |
+| `stack.withEmtpyTag()`                           | Новый IItemStack с измененным свойством |                                     |
+| `stack.withTag(IData тег)`                       | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/)       |
+| `stack.withTag(IData tag, bool matchTagExact)`   | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/), bool |
+| `stack.removeTag(String name)`                   | Новый IItemStack с измененным свойством | string                              |
+| `stack.updateTag(тег IDat)`                      | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/)       |
+| `stack.updateTag(IData тег, bool matchTagExact)` | Новый IItemStack с измененным свойством | [IData](/Vanilla/Data/IData/), bool |
 
 #### Блоки литья
 
