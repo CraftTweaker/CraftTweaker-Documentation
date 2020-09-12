@@ -1,18 +1,18 @@
 # Distillation
 
-## addRecipe
+## DistillationTower.addRecipe
 
 The Distillation "addRecipe" method consists of:
 
-|Type              |Data Type                                          |
-|------------------|---------------------------------------------------|
+|Type              |Data Type                                           |
+|------------------|----------------------------------------------------|
+|Name              |String                                              |
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[]|
 |Output            |[ItemStack](/Vanilla/Items/IItemStack/) Array[]     |
 |Input             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
-|Flux/t            |Integer                                            |
-|Time in Ticks     |Integer                                            |
-|Chance            |Float Array []                                     |
-
+|Chance            |Float Array[]                                       |
+|Flux/t            |Integer                                             |
+|Time in Ticks     |Integer                                             |
 
 ### Preface:
 Each ItemStack Entry is linked to the corresponding "Chance" array entry.
@@ -36,7 +36,31 @@ While you can submit a float higher than 1, it'll never yield a value over 100%
 
 ### Code Example:
 ```zenscript
-//mods.immersivepetroleum.Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
+// mods.immersivepetroleum.DistillationTower.addRecipe(String name, ILiquidStack[] fluidOutputs, ILiquidStack inputfluid, IItemStack[] itemOutputs, float[] chance, int energy, int time);
 
-mods.immersivepetroleum.Distillation.addRecipe([<liquid:lava> * 5, <liquid:gasoline> * 5], [<minecraft:diamond>, <minecraft:leather> * 2], <liquid:water>, 5, 5, [1, 1]);
+mods.immersivepetroleum.DistillationTower.addRecipe("example_recipe", [<liquid:lava> * 5, <liquid:gasoline> * 5], <liquid:water>, [<minecraft:diamond>, <minecraft:leather> * 2], [1, 1], 5, 5);
+```
+
+## DistillationTower.remove
+
+The Distillation "remove" method consists of:
+
+|Type              |Data Type|
+|------------------|---------|
+|Recipe Name       |String   |
+
+### Code Example:
+```zenscript
+// mods.immersivepetroleum.DistillationTower.remove(String name);
+
+mods.immersivepetroleum.DistillationTower.remove("example_recipe");
+```
+
+## DistillationTower.removeAll
+
+### Code Example:
+```zenscript
+// mods.immersivepetroleum.DistillationTower.removeAll();
+
+mods.immersivepetroleum.DistillationTower.removeAll();
 ```
