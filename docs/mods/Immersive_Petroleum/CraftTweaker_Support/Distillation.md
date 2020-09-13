@@ -9,7 +9,7 @@ The Distillation "addRecipe" method consists of:
 |Name              |String                                              |
 |Output            |[Fluidstack](/Vanilla/Liquids/ILiquidStack/) Array[]|
 |Output            |[ItemStack](/Vanilla/Items/IItemStack/) Array[]     |
-|Input             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)        |
+|Input             |String (Fluid Tag, Amount)                          |
 |Chance            |Float Array[]                                       |
 |Flux/t            |Integer                                             |
 |Time in Ticks     |Integer                                             |
