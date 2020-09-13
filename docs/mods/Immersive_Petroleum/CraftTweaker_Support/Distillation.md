@@ -1,6 +1,6 @@
 # Distillation
 
-## DistillationTower.addRecipe
+## addRecipe
 
 The Distillation "addRecipe" method consists of:
 
@@ -41,7 +41,7 @@ While you can submit a float higher than 1, it'll never yield a value over 100%
 mods.immersivepetroleum.DistillationTower.addRecipe("example_recipe", [<liquid:lava> * 5, <liquid:gasoline> * 5], <liquid:water>, [<minecraft:diamond>, <minecraft:leather> * 2], [1, 1], 5, 5);
 ```
 
-## DistillationTower.remove
+## remove
 
 The Distillation "remove" method consists of:
 
@@ -56,7 +56,7 @@ The Distillation "remove" method consists of:
 mods.immersivepetroleum.DistillationTower.remove("example_recipe");
 ```
 
-## DistillationTower.removeAll
+## removeAll
 
 ### Code Example:
 ```zenscript
