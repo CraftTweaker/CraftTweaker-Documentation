@@ -36,9 +36,9 @@ While you can submit a float higher than 1, it'll never yield a value over 100%
 
 ### Code Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationTower.addRecipe(String name, ILiquidStack[] fluidOutputs, String fluidInputTag, IItemStack[] itemOutputs, float[] chance, int energy, int time);
+// mods.immersivepetroleum.DistillationTower.addRecipe(String name, IFluidStack[] fluidOutputs, String fluidInputTag, IItemStack[] itemOutputs, float[] chance, int energy, int time);
 
-mods.immersivepetroleum.DistillationTower.addRecipe("example_recipe", [<liquid:lava> * 5, <liquid:gasoline> * 5], "forge:water", [<minecraft:diamond>, <minecraft:leather> * 2], [1, 1], 5, 5);
+mods.immersivepetroleum.DistillationTower.addRecipe("example_recipe", [<fluid:lava> * 5, <fluid:gasoline> * 5], "forge:water", [<minecraft:diamond>, <minecraft:leather> * 2], [1, 1], 5, 5);
 ```
 
 ## remove

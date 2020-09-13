@@ -5,7 +5,7 @@
 |Type              |Data Type                                  |
 |------------------|-------------------------------------------|
 |Name Identifier   |String                                     |
-|Fluid             |[Fluidstack](/Vanilla/Liquids/ILiquidStack/)|
+|Fluid             |[Fluidstack](/Vanilla/Liquids/IFluidStack/)|
 |Minimum Size      |Integer                                    |
 |Maximum Size      |Integer                                    |
 |Replenish Rate    |Integer                                    |
@@ -30,6 +30,6 @@ Then each respective entry will have a weighted chance of:
 
 ### Code Example:
 ```zenscript
-mods.immersivepetroleum.Reservoir.registerReservoir(String name, ILiquidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
-mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <liquid:water>, 48000, 64000, 200, 5);
+mods.immersivepetroleum.Reservoir.registerReservoir(String name, IFluidStack fluid, int minSize, int maxSize, int replenishRate, int weight);
+mods.immersivepetroleum.Reservoir.registerReservoir("WaterTest", <fluid:water>, 48000, 64000, 200, 5);
 ```
