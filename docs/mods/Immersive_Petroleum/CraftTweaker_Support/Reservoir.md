@@ -32,9 +32,9 @@ mods.immersivepetroleum.ReservoirRegistry.removeAll();
 | Name                   | Type                                       |
 |------------------------|--------------------------------------------|
 | Fluid                  | [Fluidstack](/Vanilla/Liquids/IFluidStack/)|
-| Minimum Fluid          | int                                        |
-| Capacity/Maximum Fluid | int                                        |
-| Trace Amount of Fluid  | int                                        |
+| Minimum Size           | int                                        |
+| Maximum Size           | int                                        |
+| Replenish Rate         | int                                        |
 | Weight                 | int                                        |
 
 ### Weight
