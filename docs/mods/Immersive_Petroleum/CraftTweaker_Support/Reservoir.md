@@ -1,6 +1,6 @@
 # Reservoir
 
-#### remove
+## remove
 
 | Name        | Type        |
 |-------------|-------------|
@@ -13,7 +13,7 @@ Example:
 mods.immersivepetroleum.ReservoirRegistry.remove("aquifer");
 ```
 
-#### removeAll
+## removeAll
 
 | Name        | Type        |
 |-------------|-------------|
@@ -25,9 +25,9 @@ Example:
 mods.immersivepetroleum.ReservoirRegistry.removeAll();
 ```
 
-### Builder
+# Reservoir Builder
 
-#### constructor
+## constructor
 
 | Name                   | Type                                       |
 |------------------------|--------------------------------------------|
@@ -61,7 +61,7 @@ Example:
 new mods.immersivepetroleum.ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000, 0, 20);
 ```
 
-#### addDimensions
+## addDimensions
 
 | Name            | Type               |
 |-----------------|--------------------|
@@ -75,7 +75,7 @@ Example:
 mods.immersivepetroleum.ReservoirBuilder.addDimensions(false, ["minecraft:overworld"]);
 ```
 
-#### addBiomes
+## addBiomes
 
 | Name        | Type               |
 |-------------|--------------------|
@@ -89,14 +89,15 @@ Example:
 mods.immersivepetroleum.ReservoirBuilder.addBiomes(false, ["minecraft:plains"]);
 ```
 
-#### build
+## build
 
-| Name        | Type               |
-|-------------|--------------------|
+| Name | Type        |
+|------|-------------|
+| Name | String      |
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.ReservoirBuilder.build();
+// mods.immersivepetroleum.ReservoirBuilder.build(String name);
 
 mods.immersivepetroleum.ReservoirBuilder.build();
 ```
