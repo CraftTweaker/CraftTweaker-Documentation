@@ -108,5 +108,5 @@ Copy/Paste example:
 new ReservoirBuilder(<fluid:minecraft:lava>, 25000, 100000, 0, 20)
 	.addDimensions(false, ["overworld"])
 	.addBiomes(false, ["minecraft:desert"])
-	.build("desert_lava");
+	.build("Desert Lava");
 ```
