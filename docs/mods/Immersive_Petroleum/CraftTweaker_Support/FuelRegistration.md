@@ -11,7 +11,7 @@ Example:
 ```ZenScript
 //mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(IFluidStack fuel, int fluxPerTick);
 
-mods.immersivepetroleum.FuelRegistry.registerMotorboatFuel(<fluid:minecraft:water> * 180, 64); // Using 180mB per Tick
+mods.immersivepetroleum.FuelRegistry.registerGeneratorFuel(<fluid:minecraft:water> * 180, 64); // Using 180mB per Tick
 ```
 
 ## registerMotorboatFuel

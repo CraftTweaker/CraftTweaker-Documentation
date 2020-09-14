@@ -28,14 +28,13 @@ mods.immersivepetroleum.DistillationTower.removeAll();
 ## constructor
 
 | Name        | Type        |
-|-------------|-------------|
-| Recipe Name | String      |
+|-------------|-------------
 
 Example:
 ```zenscript
-// new mods.immersivepetroleum.DistillationBuilder(String recipeName);
+// new mods.immersivepetroleum.DistillationBuilder();
 
-new mods.immersivepetroleum.DistillationBuilder("example_name");
+new mods.immersivepetroleum.DistillationBuilder();
 ```
 
 ## setOutputFluid
@@ -123,28 +122,29 @@ mods.immersivepetroleum.DistillationBuilder.setTime(1);
 
 | Name        | Type               |
 |-------------|--------------------|
+| Recipe Name | String             |
 
 Example:
 ```zenscript
-// mods.immersivepetroleum.DistillationBuilder.build();
+// mods.immersivepetroleum.DistillationBuilder.build(String recipeName);
 
-mods.immersivepetroleum.DistillationBuilder.build();
+mods.immersivepetroleum.DistillationBuilder.build("example_name");
 ```
 
 ---
 
 Copy/Paste examples:
 ```zenscript
-new DistillationBuilder("builder_test")
+new DistillationBuilder()
 	.setOutputFluids([<fluid:minecraft:water> * 1]) // Array of output fluids
 	.setInputFluid(<tag:minecraft:lava>, 500) // Input Fluid Tag and the ammount of fluid in mB
 	.addByproduct(<item:minecraft:cobblestone>, 50) // Chance using integer (0 - 100)
 	.addByproduct(<item:minecraft:stone>, 0.25) // Chance using double (0.0 - 1.0)
 	.addByproduct(<item:minecraft:obsidian>, 0.007) // Integer is for convenience, using double gives more control
 	.setEnergyAndTime(1024, 1) // Can be done individualy with setEnergy(int) and setTime(int)
-	.build();
+	.build("lava_to_solids");
 
-new DistillationBuilder("test_distillation")
+new DistillationBuilder()
 	.setOutputFluids([<fluid:minecraft:water> * 500])
 	.setInputFluid(<tag:forge:concrete>, 500)
 	.addByproduct(<item:minecraft:gravel>, 0.5)
@@ -153,5 +153,5 @@ new DistillationBuilder("test_distillation")
 	.addByproduct(<item:minecraft:clay_ball>, 0.125)
 	.setEnergy(2048) // 2048 is the Default for Energy.
 	.setTime(1) // 1 is the Default for Time.
-	.build();
+	.build("concrete_reversal");
 ```

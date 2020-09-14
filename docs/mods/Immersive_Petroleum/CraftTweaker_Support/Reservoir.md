@@ -105,8 +105,8 @@ mods.immersivepetroleum.ReservoirBuilder.build();
 
 Copy/Paste example:
 ```ZenScript
-new ReservoirBuilder(<fluid:minecraft:lava>, 1000, 5000, 0, 20)
-	.addDimensions(false, ["nether", "test", "fakemod:fakedimension", "fakedimension2"])
-	.addBiomes(true, ["minecraft:plains", "forest", "fakemod:fakebiome", "fakebiome2"])
-	.build("creafttweaker_test");
+new ReservoirBuilder(<fluid:minecraft:lava>, 25000, 100000, 0, 20)
+	.addDimensions(false, ["overworld"])
+	.addBiomes(false, ["minecraft:desert"])
+	.build("desert_lava");
 ```
