@@ -95,11 +95,14 @@ mods.immersivepetroleum.ReservoirBuilder.addBiomes(false, ["minecraft:plains"]);
 |------|-------------|
 | Name | String      |
 
+### Preface
+The base reservoirs are lowercase as they are translated - custom ones should be properly capitalized (ex. "Deep Ocean Oil Reservoir").
+
 Example:
 ```zenscript
 // mods.immersivepetroleum.ReservoirBuilder.build(String name);
 
-mods.immersivepetroleum.ReservoirBuilder.build();
+mods.immersivepetroleum.ReservoirBuilder.build("Example Name");
 ```
 
 ---
