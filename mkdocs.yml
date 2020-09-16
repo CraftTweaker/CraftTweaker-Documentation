@@ -159,3 +159,10 @@ nav:
         - Millstone: 'mods/StoneAge/MillstoneManager.md'
         - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
         - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
+    - Immersive Petroleum:
+      - Immersive Petroleum: 'mods/Immersive_Petroleum/Immersive_Petroleum.md'
+      - CraftTweaker Support:
+        - Distillation: 'mods/Immersive_Petroleum/CraftTweaker_Support/Distillation.md'
+        - Fuel Registration: 'mods/Immersive_Petroleum/CraftTweaker_Support/FuelRegistration.md'
+        - Lubricant: 'mods/Immersive_Petroleum/CraftTweaker_Support/Lubricant.md'
+        - Reservoir: 'mods/Immersive_Petroleum/CraftTweaker_Support/Reservoir.md'
