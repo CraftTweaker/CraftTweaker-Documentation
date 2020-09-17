@@ -1,37 +1,37 @@
 # MCFood
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.food.MCFood
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+new crafttweaker.api.food.MCFood(исцеление как int, насыщенность как плавный);
 ```
-| Parameter  | Тип   | Описание             |
-| ---------- | ----- | -------------------- |
-| healing    | int   | Описание отсутствует |
-| saturation | float | Описание отсутствует |
+| Параметр     | Тип   | Описание             |
+| ------------ | ----- | -------------------- |
+| исцеление    | int   | Описание отсутствует |
+| насыщенность | float | Описание отсутствует |
 
 
 
 ## Методы
 ### addEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance, вероятность как плавание);
 ```
 
-| Параметр    | Тип                                                                                           | Описание                |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float                                                                                         | No description provided |
+| Параметр    | Тип                                                                                                   | Описание             |
+| ----------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
+| effect      | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
+| вероятность | float                                                                                                 | Описание отсутствует |
 
 
 ### clearEffects
@@ -42,90 +42,90 @@ myMCFood.clearEffects();
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(эффект как crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter | Type                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| Параметр | Тип                                                                                                   | Описание             |
+| -------- | ----------------------------------------------------------------------------------------------------- | -------------------- |
+| effect   | [Экземпляр crafttweaker.api.potion.MCPotionEffectEffect](/vanilla/api/potions/MCPotionEffectInstance) | Описание отсутствует |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
+myMCFood.setCanEatWhenFull(canEatWhenFull как boolean);
 ```
 
-| Parameter      | Type    | Description             |
-| -------------- | ------- | ----------------------- |
-| canEatWhenFull | boolean | No description provided |
+| Параметр       | Тип     | Описание             |
+| -------------- | ------- | -------------------- |
+| canEatWhenFull | boolean | Описание отсутствует |
 
 
-### setFastEating
+### Настройка FastEating
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parameter  | Type    | Description             |
-| ---------- | ------- | ----------------------- |
-| fastEating | boolean | No description provided |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| Зажигаем | boolean | Описание отсутствует |
 
 
-### setHealing
+### назначение лечения
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
-
-```zenscript
-myMCFood.setHealing(healing as int);
-```
-
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| healing   | int  | No description provided |
-
-
-### setMeat
-
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setHealing(исцеление как int);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| meat      | boolean | No description provided |
+| Параметр  | Тип | Описание             |
+| --------- | --- | -------------------- |
+| исцеление | int | Описание отсутствует |
+
+
+### Мясо
+
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+
+```zenscript
+myMCFood.setMeat(мясо в виде бункеров);
+```
+
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| мясо     | boolean | Описание отсутствует |
 
 
 ### setSaturation
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+Возвращает [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(saturation as float);
+myMCFood.setSaturation(продолжительность как плавный);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| Параметр     | Тип   | Описание             |
+| ------------ | ----- | -------------------- |
+| насыщенность | float | Описание отсутствует |
 
 
 
-## Properties
+## Свойства
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| canEatWhenFull | boolean | true       | false      |
-| healing        | int     | true       | false      |
-| isFastEating   | boolean | true       | false      |
-| meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| Название        | Тип     | Имеет Getter | Имеет Setter |
+| --------------- | ------- | ------------ | ------------ |
+| canEatWhenFull  | boolean | true         | false        |
+| исцеление       | int     | true         | false        |
+| небыстроеееееие | boolean | true         | false        |
+| мясо            | boolean | true         | false        |
+| насыщенность    | float   | true         | false        |
 
