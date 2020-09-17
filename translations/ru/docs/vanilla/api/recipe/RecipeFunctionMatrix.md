@@ -1,6 +1,6 @@
-# RecipeFunctionMatrix
+# Рецепт FunctionMatrix
 
-Этот класс добавляется модом `crafttweaker`. Вы должны установить этот мод, если хотите использовать эту возможность.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
 Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
@@ -8,19 +8,19 @@
 crafttweaker.api.recipe.RecipeFunctionMatrix
 ```
 
-## Functional Interface
+## Функциональный интерфейс
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+Этот класс является функциональным интерфейсом. Это означает, что вы можете использовать нотацию lambda для создания экземпляра. Нотация лямбда выглядит так:
 ```zenscript
 (usualOut, inputs) => <item:minecraft:dirt>
 ```
 ## Методы
-### process
+### процесс
 
-Return type: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвратный тип: [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myRecipeFunctionMatrix.process(usualOut as crafttweaker.api.item.IItemStack, inputs as crafttweaker.api.item.IItemStack[][]);
+myRecipeFunctionMatrix.process(usualOut as crafttweaker.api.item.IItemStack, входов как crafttweaker.api.item.IItemStack[]);
 ```
 
 | Параметр | Тип                                                                   | Описание             |
