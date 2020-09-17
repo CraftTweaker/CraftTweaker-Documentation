@@ -1,0 +1,119 @@
+- Обычная игра:
+    - Api:
+      - BracketHandlers: 'vanilla/api/BracketHandlers.md'
+      - Блок:
+        - Материал:
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+      - Блоки:
+        - MCBlock: 'ванильная/api/blocks/MCBlock.md'
+        - MCBlockState: 'ванильная/api/blocks/MCBlockState.md'
+      - Скобки:
+        - Отображаемый команд: 'vanilla/api/brackets/CommandStringDisplayable.md'
+      - Команды:
+        - Пользовательский:
+          - Пользовательские команды: 'vanilla/api/commands/custom/CustomCommands.md'
+          - MCAmbiguityConsumer: 'vanilla/api/commands/custom/MCAmbiguityConsumer.md'
+          - MCArgumentBuilder: 'vanilla/api/commands/custom/MCArgumentBuilder.md'
+          - MCArgumentCommandNode: 'vanilla/api/commands/custom/MCArgumentCommandNode.md'
+          - MCCommand: 'vanilla/api/commands/custom/MCCommand.md'
+          - MCCommandContext: 'vanilla/api/commands/custom/MCCommandContext.md'
+          - MCCommandContextBuilder: 'vanilla/api/commands/custom/MCCommandContextBuilder.md'
+          - MCCommandDispatcher: 'vanilla/api/commands/custom/MCCommandDispatcher.md'
+          - MCCommandNode: 'vanilla/api/commands/custom/MCCommandNode.md'
+          - MCCommandSource: 'vanilla/api/commands/custom/MCCommandSource.md'
+          - MCImmutableStringReader: 'ванильная/api/commands/custom/MCImmutableStringReader.md'
+          - MCLiteralArgumentBuilder: 'vanilla/api/commands/custom/MCLiteralArgumentBuilder.md'
+          - MCLiteralCommandNode: 'vanilla/api/commands/custom/MCLiteralCommandNode.md'
+          - MCParseResults: 'vanilla/api/commands/custom/MCParseResults.md'
+          - MCParsedArgument: 'vanilla/api/commands/custom/MCParsedArgument.md'
+          - MCParsedCommandNode: 'vanilla/api/commands/custom/MCParsedCommandNode.md'
+          - MCRedirectModifier: 'ванильная/api/commands/custom/MCRedirectModifier.md'
+          - MCRequiredArgumentBuilder: 'vanilla/api/commands/custom/MCRequiredArgumentBuilder.md'
+          - MCResultConsumer: 'vanilla/api/commands/custom/MCResultConsumer.md'
+          - MCRootCommandNode: 'vanilla/api/commands/custom/MCRootCommandNode.md'
+          - MCSingleRedirectModifier: 'ванильная/api/commands/custom/MCSingleRedirectModifier.md'
+          - MCStringRange: 'vanilla/api/commands/custom/MCStringRange.md'
+          - MCSugges: 'vanilla/api/commands/custom/MCSuggestion.md'
+          - MCSuggestionContext: 'vanilla/api/commands/custom/MCSuggestionContext.md'
+          - MCSuggestionProvider: 'vanilla/api/commands/custom/MCSuggestionProvider.md'
+          - Предложения MCSugges: 'vanilla/api/commands/custom/MCSuggestions.md'
+          - MCSuggestionsBuilder: 'vanilla/api/commands/custom/MCSuggestionsBuilder.md'
+      - Данные:
+        - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
+        - ByteData: 'vanilla/api/data/ByteData.md'
+        - DoubleData: 'vanilla/api/data/DoubleData.md'
+        - FloatData: 'vanilla/api/data/FloatData.md'
+        - ICollectionData: 'vanilla/api/data/ICollectionData.md'
+        - IData: 'vanilla/api/data/IData.md'
+        - INumberData: 'vanilla/api/data/INumberData.md'
+        - IntArrayData: 'vanilla/api/data/IntArrayData.md'
+        - IntData: 'vanilla/api/data/IntData.md'
+        - ListData: 'vanilla/api/data/ListData.md'
+        - LongArrayData: 'vanilla/api/data/LongArrayData.md'
+        - LongData: 'vanilla/api/data/LongData.md'
+        - MapData: 'vanilla/api/data/MapData.md'
+        - ShortData: 'vanilla/api/data/ShortData.md'
+        - Строчные данные: 'ванилья/api/data/StringData.md'
+      - Сущности:
+        - Классификация MCEntityClassification: 'ванильная/api/entities/MCEntityClassification.md'
+        - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
+      - Жидкость:
+        - IFluidStack: 'vanilla/api/fluid/IFluidStack.md'
+        - MCFluid: 'vanilla/api/fluid/MCFluid.md'
+      - Еда:
+        - MCFood: 'vanilla/api/food/MCFood.md'
+      - Предметы:
+        - Ингредиент: 'ванильная/api/items/IIngredient.md'
+        - Преобразователь ингредиентов: ванильная/api/элементы/преобразователя.md'
+        - Преобразователь ингредиентов: ванильная/api/элементы/преобразователя.md'
+        - IItemStack: 'vanilla/api/items/IItemStack.md'
+        - Список ингредиентов: 'ванильная/api/элементы/ингредиенты.md'
+        - MCIngredientConditioned: 'ванильная/api/items/MCIngredientConditioned.md'
+        - MCIngredientTransformed: 'ванильная/api/items/MCIngredientTransformed.md'
+      - Logger:
+        - ILogger: 'vanilla/api/logger/ILogger.md'
+      - Менеджеры:
+        - Менеджер BlastFurnaceManager: 'ванилья/api/менеджеры/BlastFurnaceManager.md'
+        - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
+        - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
+        - Менеджер печей: 'ванильная/api/менеджеры/печка.md'
+        - Менеджер рецептов ICooking: "ванилья/api/менеджеры/ICookingRecipeManager.md"
+        - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
+        - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
+        - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
+        - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+      - Моды:
+        - ModInfo: 'vanilla/api/mods/ModInfo.md'
+        - Моды: 'vanilla/api/mods/Mods.md'
+      - Зелья:
+        - MCPotion: 'ванильная/api/зелья/MCPotion.md'
+        - Эффект MCPotionEffect: 'ванильная/api/зелья/MCPotionEffect.md'
+        - Экземпляр MCPotionEffect: 'ванилья/api/potions/MCPotionEffectInstance.md'
+      - Рецепт:
+        - Рецепт: 'ванильная/api/рецепт/рецепт.md'
+        - Рецепт FunctionArray: 'ванильная/api/рецепт/рецептArray.md'
+        - Рецепт Матрицы: 'ванильная/api/рецепт/Рецептматрица.md'
+        - Функция рецепта: 'ванильная/api/рецепт/рецептFunctionSingle.md'
+      - Метки:
+        - MCTag: 'vanilla/api/tags/MCTag.md'
+      - Util:
+        - BlockPos: 'vanilla/api/util/BlockPos.md'
+        - Направление: 'ванильная/api/util/Direction.md'
+        - Направление: 'ванильная/api/util/DirectionAxis.md'
+        - Расположение MCResource: 'vanilla/api/util/MCResourceLocation.md'
+        - Текст:
+          - MCStyle: 'vanilla/api/util/text/MCStyle.md'
+          - MCTextComponent: 'vanilla/api/util/text/MCTextComponent.md'
+      - Мир:
+        - MCBiome: 'ванильная/api/world/MCBiome.md'
+
+- Crafttweaker:
+    - Api:
+      - Предмет:
+        - Подсказка:
+          - Функция ITooltipFunction: 'crafttweaker/api/item/tooltip/ITooltipFunction.md'
+      - Рецепты:
+        - Рецепт упаковки: 'Мастерское/api/recipes/WrapperRecipe.md'
+      - Текст:
+        - Форматирование текста: 'crafttweaker/api/text/TextFormatting.md'
+
