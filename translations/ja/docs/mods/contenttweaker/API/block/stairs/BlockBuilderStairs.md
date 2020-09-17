@@ -1,135 +1,135 @@
-# BlockBuilderStairs
+# BlockBuilder階段
 
-A special Block Builder that allows you to create stairs. <p> Stairs will have not one but three textures that you will need to supply: One for the top, one for the bottom and one for the sides. By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`. As with most things here, sample images are generated for you by default, though.
+階段を作成できる特別なブロックビルダー。 <p> 階段には、供給する必要があるテクスチャが3つあります: 上部に1つ。 下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に下に1つと側に下に1つずつ。 デフォルトでは、これらのテクスチャは `_top`、 `_bottom` または `_side` で接尾辞としてブロック名を使用します。 ほとんどの場合と同様に、サンプル画像はデフォルトで生成されます。
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
-mods.contenttweaker.block.stairs.BlockBuilderStairs
+mods.contenttweaker.block.stores.BlockBuilder階段
 ```
 
-## Implemented Interfaces
-BlockBuilderStairs implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+BlockBuilderStairsは以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## メソッド
-### build
+### ビルド
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
-| ---------------- | ---- | ------------------------------------ |
-| resourceLocation | 文字列型 | The resource path to give this block |
+| パラメータ   | タイプ  | 説明               |
+| ------- | ---- | ---------------- |
+| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
 
 
 ### withBottomTexture
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+下側が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter     | Type                                                                             | Description                                |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| パラメータ    | タイプ                                                                              | 説明              |
+| -------- | -------------------------------------------------------------------------------- | --------------- |
+| ボトムテクスチャ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 底面に使用されるテクスチャー。 |
 
 
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+下側が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。 ブロックの名前を入力として受け取り、終了テクスチャを返す関数を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
 ```
 
-| Parameter     | Type                                                                                                                                                                                                    | Description         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| パラメータ    | タイプ                                                                                                                                                                                                     | 説明     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| ボトムテクスチャ | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 使用する関数 |
 
 
 ### withSidesTexture
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+側面が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 ```
 
-| Parameter    | Type                                                                             | Description                          |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| パラメータ        | タイプ                                                                              | 説明              |
+| ------------ | -------------------------------------------------------------------------------- | --------------- |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 側面に使用されるテクスチャー。 |
 
 
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+側面が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。 ブロックの名前を入力として受け取り、終了テクスチャを返す関数を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Description         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| パラメータ        | タイプ                                                                                                                                                                                                     | 説明     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 使用する関数 |
 
 
 ### withTopTexture
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+上側が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| Parameter  | Type                                                                             | Description                             |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| パラメータ    | タイプ                                                                              | 説明                 |
+| -------- | -------------------------------------------------------------------------------- | ------------------ |
+| トップテクスチャ | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | トップサイドに使用するテクスチャー。 |
 
 
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+上側が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。 ブロックの名前を入力として受け取り、終了テクスチャを返す関数を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+戻り値の型: [mods.contenttweaker.block.store.BlockBuilderStairs.](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| パラメータ    | タイプ                                                                                                                                                                                                     | 説明     |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| トップテクスチャ | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 使用する関数 |
 
 
 
