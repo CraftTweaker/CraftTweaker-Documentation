@@ -1,104 +1,104 @@
-# MCItemFishedEvent
+# format@@0 MCItemFishedEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-crafttweaker.api.event.entity.player.MCItemFishedEvent
+format@@0 crafttweaker.api.event.entity.player.MCItemFishedEvent
 ```
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.event.entity.player.MCItemFishedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
 ```
-| Parameter | Type                                                                                                                            | Description             |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCItemFishedEvent](/vanilla/api/event/entity/player/MCItemFishedEvent)> | No description provided |
+| Paramètre | Type de texte                                                                                                                   | Libellé                    |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCItemFishedEvent](/vanilla/api/event/entity/player/MCItemFishedEvent)> | Aucune description fournie |
 
 
 
-## Methods
-### damageRodBy
+## Méthodes
+### Tige endommagée par
 
 ```zenscript
-myMCItemFishedEvent.damageRodBy(arg0 as int);
+myMCItemFishedEvent.damageRodBy(arg0 comme int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| arg0      | int  | No description provided |
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| arg0      | Indice        | Aucune description fournie |
 
 
-### getEntityPlayer
+### Lecteur d'entité
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getEntityPlayer();
 ```
 
-### getPlayer
+### Obtenir un joueur
 
-Returns: `Player`
+Renvoie : `Joueur`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getPlayer();
 ```
 
-### getRodDamage
+### format@@0 getRodDamage
 
-Get the damage the rod will take. Returns: `The damage the rod will take`
+Obtenez les dégâts que la tige subira. Revient : `Les dégâts que la tige subira`
 
-Returns int
+Renvoie int
 
 ```zenscript
 myMCItemFishedEvent.getRodDamage();
 ```
 
-### hasResult
+### Il y a un résultat
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Détermine si cet événement attend une valeur de résultat significative. Remarque : Les événements avec l'annotation HasResult auront automatiquement ajouté cette méthode pour retourner true.
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCItemFishedEvent.hasResult();
 ```
 
-### isCancelable
+### est annulable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+Détermine si cette fonction est annulable du tout. Renvoie : `Si l'accès à setAnnulled devrait être autorisé
  Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+ Les événements avec l'annotation annulable auront automatiquement ajouté cette méthode pour retourner true.`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCItemFishedEvent.isCancelable();
 ```
 
-### isCanceled
+### est annulé
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Détermine si cet événement est annulé et doit arrêter d'exécuter. Renvoie : `L'état actuel annulé`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCItemFishedEvent.isCanceled();
 ```
 
-### setCanceled
+### setAnnulé
 
 ```zenscript
-myMCItemFishedEvent.setCanceled(cancel as boolean);
+myMCItemFishedEvent.setCancled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| annuler   | boolean       | Aucune description fournie |
 
 
 
