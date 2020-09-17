@@ -1,52 +1,52 @@
 # MCItemGroup
 
-An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
+Grupa tematów (alias: Kreatywna karta) jest grupowaniem elementów według kategorii.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `contenttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
 
-## Implemented Interfaces
-MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+MCItemGroup implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
-### getPath
+## Metody
+### pobierz ścieżkę
 
-Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
+Pobiera ścieżkę grupy przedmiotów. Ścieżka jest tym, co używasz w wyrażeniu nawiasów za częścią `<grupy produktów:`.
 
-Return type: String
+Typ zwrotu: Ciąg
 
 ```zenscript
 <itemgroup:misc>.getPath();
 ```
 
-### setBackgroundImageName
+### Nazwa obrazka setTła
 
-Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
+Ustawia nazwę obrazu tła, która jest używana w tej karcie w kreatywnym menu Zwraca: `Ten obiekt do łańcucha`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Typ zwrotu: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-<itemgroup:misc>.setBackgroundImageName(texture as String);
+<itemgroup:misc>.setBackgroundImageName(tekstura jako string);
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| texture   | String | The texture to be used |
+| Parametr | Typ         | Opis                             |
+| -------- | ----------- | -------------------------------- |
+| tekstura | Ciąg znaków | Struktura, którą należy stosować |
 
 
 ### setNoScrollbar
 
-Removes the scrollbar of the item Group in the creative inventory
+Usuwa pasek przewijania grupy przedmiotów w kreatywnym ekwipunku
 
- Returns: `This object for chaining`
+ Zwraca: `Ten obiekt do łańcucha`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Typ zwrotu: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,21 +54,21 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 
 ### setNoTitle
 
-Removes the title of the item Group in the creative inventory
+Usuwa tytuł grupy przedmiotów w kreatywnym ekwipunku
 
- Returns: `This object for chaining`
+ Zwraca: `Ten obiekt do łańcucha`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Typ zwrotu: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
 ```
 
 
-## Properties
+## Właściwości
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| Nazwisko  | Typ         | Posiada Getter | Ma ustawienie |
+| --------- | ----------- | -------------- | ------------- |
+| polecenie | Ciąg znaków | prawda         | fałszywy      |
+| ścieżka   | Ciąg znaków | prawda         | fałszywy      |
 
