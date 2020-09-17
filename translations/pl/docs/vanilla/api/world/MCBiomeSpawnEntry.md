@@ -1,32 +1,32 @@
 # MCBiomeSpawnEntry
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.world.MCBiomeSpawnEntry
 ```
 
-## Constructors
+## Konstruktorzy
 ```zenscript
-new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, weight as int, minGroupCount as int, maxGroupCount as int);
+nowy crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, waga jako int, minGroupCount as int, maxGroupCount as int);
 ```
-| Parameter     | Type                                                                       | Description             |
-| ------------- | -------------------------------------------------------------------------- | ----------------------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | No description provided |
-| weight        | int                                                                        | No description provided |
-| minGroupCount | int                                                                        | No description provided |
-| maxGroupCount | int                                                                        | No description provided |
+| Parametr      | Typ                                                                        | Opis             |
+| ------------- | -------------------------------------------------------------------------- | ---------------- |
+| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | Nie podano opisu |
+| Waga          | odcień                                                                     | Nie podano opisu |
+| minGroupCount | odcień                                                                     | Nie podano opisu |
+| maxGroupCount | odcień                                                                     | Nie podano opisu |
 
 
 
-## Properties
+## Właściwości
 
-| Name          | Type                                                                       | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
-| maxGroupCount | int                                                                        | true       | false      |
-| minGroupCount | int                                                                        | true       | false      |
-| weight        | int                                                                        | true       | false      |
+| Nazwisko      | Typ                                                                        | Posiada Getter | Ma ustawienie |
+| ------------- | -------------------------------------------------------------------------- | -------------- | ------------- |
+| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | prawda         | fałszywy      |
+| maxGroupCount | odcień                                                                     | prawda         | fałszywy      |
+| minGroupCount | odcień                                                                     | prawda         | fałszywy      |
+| Waga          | odcień                                                                     | prawda         | fałszywy      |
 
