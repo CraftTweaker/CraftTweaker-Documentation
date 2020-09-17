@@ -1,407 +1,407 @@
 # BlockPos
 
-Represents a position of a block in the world
+代表一个方块在世界上的位置
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## 导入相关包
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.util.BlockPos
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.util.BlockPos(x as int, y as int, z as int);
+新手工艺.api.util.BlockPos(x为整数, y为整数, z为整数);
 ```
-| 参数 | 类型  | 描述                      |
-| -- | --- | ----------------------- |
-| x  | int | No description provided |
-| y  | int | No description provided |
-| z  | int | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| x  | 整数 | No description provided |
+| 年  | 整数 | No description provided |
+| z  | 整数 | No description provided |
 
 
 
 ## 方法
-### add
+### 添加
 
-Adds two positions together and returns the result.
+同时添加两个位置并返回结果。
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).add(pos as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).add(new BlockPos(3, 2, 1));
+新 BlockPost(0, 1, 2) .add(pos as craftweeper.api.util.BlockPos);
+new BlockPost(0, 1, 2).add(new BlockPost(3, 2, 1));
 ```
 
-| Parameter | 类型                                                           | 说明                    |
-| --------- | ------------------------------------------------------------ | --------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| 参数 | 类型                                                           | 描述       |
+| -- | ------------------------------------------------------------ | -------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要添加的其他位置 |
 
 
 
-Adds the given values to this position, and returns a new position with the new values.
+将给定的值添加到这个位置，并以新的值返回一个新的位置。
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).add(x as double, y as double, z as double);
-new BlockPos(0, 1, 2).add(50.21, -20.8, -25.2);
+新BlockPosad(0, 1, 2) .add(x 双倍，当双倍，当双倍)；
+新BlockPost(0, 1, 2).add(50.21, 20.8, -25.2)；
 ```
 
-| Parameter | Type   | Description    |
-| --------- | ------ | -------------- |
-| x         | double | x value to add |
-| y         | double | y value to add |
-| z         | double | z value to add |
+| 参数 | 类型  | 描述       |
+| -- | --- | -------- |
+| x  | 双精度 | 要添加的 x 值 |
+| 年  | 双精度 | 要添加的y 值  |
+| z  | 双精度 | 要添加的z 值  |
 
 
-### crossProduct
+### 交叉产品
 
-Creates a new BlockPos based on the cross product of this position, and the given position
+基于此位置的交叉产品和给定位置创建一个新BlockPos
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).crossProduct(pos as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).crossProduct(new BlockPos(5, 8, 2););
+新 BlockPost(0, 1, 2) .crossProduct(pos as craftbiner.api.util.BlockPos);
+new BlockPost(0, 1, 2).crossProduct(new BlockPost(5, 8, 2));
 ```
 
-| Parameter | Type                                                         | Description               |
-| --------- | ------------------------------------------------------------ | ------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to cross product |
+| 参数 | 类型                                                           | 描述             |
+| -- | ------------------------------------------------------------ | -------------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要跨越产品的BlockPos |
 
 
-### distanceSq
+### 距离Sq
 
-Gets the squared distance of this position to the specified BlockPos, using the center of the BlockPos
+使用BlockPos的中心来获取此位置的方位距离到指定的 BlockPos
 
-Returns double
+双倍返回
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10););
+新BlockPosad(0, 1, 2) .distanceSq(作为craftbiner.api.util.BlockPos);
+新BlockPost (0, 1, 2) .distanceSq(新BlockPost (256, 128, 10););
 ```
 
-| Parameter | Type                                                         | Description               |
-| --------- | ------------------------------------------------------------ | ------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against |
+| 参数 | 类型                                                           | 描述            |
+| -- | ------------------------------------------------------------ | ------------- |
+| 到  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要检查的 BlockPos |
 
 
 
-Gets the squared distance of this position to the specified BlockPos
+将这个位置的平面连接到指定的BlockPos
 
-Returns double
+双倍返回
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(to as crafttweaker.api.util.BlockPos, useCenter as boolean);
-new BlockPos(0, 1, 2).distanceSq(new BlockPos(256, 128, 10);, true);
+新BlockPosad(0, 1, 2) .distanceSq(作为craftbiner.api.util.BlockPos, useCenter as boolean);
+new BlockPost(0, 1, 2).distanceSq(新BlockPost(256, 128, 10);; true);
 ```
 
-| Parameter | Type                                                         | Description                                                           |
-| --------- | ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| to        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check against                                             |
-| useCenter | boolean                                                      | should the center of the coordinate be used? (adds 0.5 to each value) |
+| 参数   | 类型                                                           | 描述                    |
+| ---- | ------------------------------------------------------------ | --------------------- |
+| 到    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要检查的 BlockPos         |
+| 使用中心 | boolean                                                      | 是否应使用坐标中心？ (每个值增加0.5) |
 
 
 
-Gets the squared distance of this position to the specified coordinates
+获取这个位置到指定坐标的平方
 
-Returns double
+双倍返回
 
 ```zenscript
-new BlockPos(0, 1, 2).distanceSq(x as double, y as double, z as double, useCenter as boolean);
-new BlockPos(0, 1, 2).distanceSq(500.25, 250.75, 100.20, false);
+新BlockPosad(0, 1, 2).distanceSq(fx as 加倍, y as 加倍, z as 加倍, useCenter as boolean);
+new BlockPosos(0, 1, 2).distanceSq(000.25, 250.75, 100.20, false);
 ```
 
-| Parameter | Type    | Description                                                           |
-| --------- | ------- | --------------------------------------------------------------------- |
-| x         | double  | x position to check against                                           |
-| y         | double  | y position to check against                                           |
-| z         | double  | z position to check against                                           |
-| useCenter | boolean | should the center of the coordinate be used? (adds 0.5 to each value) |
+| 参数   | 类型      | 描述                    |
+| ---- | ------- | --------------------- |
+| x    | 双精度     | x 位置检查                |
+| 年    | 双精度     | y 位置检查                |
+| z    | 双精度     | 要检查的z位置               |
+| 使用中心 | boolean | 是否应使用坐标中心？ (每个值增加0.5) |
 
 
-### down
+### 向下
 
-Creates a new BlockPos based on this BlockPos that is one block lower than this BlockPos
+基于此BlockPos 创建一个新的BlockPos ，这个BlockPos 是一个小于此BlockPos
 
- Returns: `a new BlockPos that is one block lower than this BlockPos`
+ 返回: `一个新的 BlockPos , 它是一个小于此BlockPos 的块`
 
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).down();
+新BlockPost(0, 1, 2).down();
 ```
 
-### east
+### 东部地区
 
-Creates a new BlockPos based on this BlockPos that is one block east of this BlockPos
+基于这个BlockPos 创建一个新的BlockPos ，这个BlockPos 是这个BlockPos 以东的一个块
 
- Returns: `a new BlockPos that is one block east of this BlockPos`
+ 返回: `一个新的 BlockPos , 它是这个BlockPos 以东的一个块`
 
-Returns net.minecraft.util.math.BlockPos
-
-```zenscript
-new BlockPos(0, 1, 2).east();
-```
-
-
-Creates a new BlockPos based on this BlockPos that is n block(s) east of this BlockPos
-
- Returns: `a new BlockPos that is n block(s) east of this BlockPos`
-
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).east(n as int);
-new BlockPos(0, 1, 2).east(2);
-```
-
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
-
-
-### manhattanDistance
-
-Gets the Manhattan Distance of this pos compared to a different position
-
-Returns int
-
-```zenscript
-new BlockPos(0, 1, 2).manhattanDistance(other as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).manhattanDistance(new BlockPos(4, 5, 6));
-```
-
-| Parameter | Type                                                         | Description                           |
-| --------- | ------------------------------------------------------------ | ------------------------------------- |
-| other     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to get the distance to |
-
-
-### north
-
-Creates a new BlockPos based on this BlockPos that is one block north of this BlockPos
-
- Returns: `a new BlockPos that is one block north of this BlockPos`
-
-Returns net.minecraft.util.math.BlockPos
-
-```zenscript
-new BlockPos(0, 1, 2).north();
+新BlockPost(0, 1, 2) .east();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) north of this BlockPos
+基于此BlockPos 创建一个新的BlockPos ，这个BlockPos 是此BlockPos 以东的 n 块((s)
 
- Returns: `a new BlockPos that is n block(s) north of this BlockPos`
+ 返回: `一个新的BlockPos , 它是这个BlockPos 以东的 n 块`
 
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).north(n as int);
-new BlockPos(0, 1, 2).north(10);
+新的 BlockPost(0, 1, 2) .east(n int);
+新的 BlockPost(0, 1, 2) .east(2);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| n  | 整数 | No description provided |
 
 
-### offset
+### 曼哈顿距离
 
-Creates a new BlockPos based on this BlockPos that is one block offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+获取这个点与不同位置相比的曼哈顿距离
 
- Returns: `a new BlockPos that is 1 block offset of this BlockPos`
-
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回为int值
 
 ```zenscript
-new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction);
-new BlockPos(0, 1, 2).offset(<direction:east>);
+新 BlockPost(0, 1, 2) manhattanDistance(其他为 craftbiner.api.util.BlockPos);
+new BlockPost(0, 1, 2).manhattanDistance(new BlockPost(4, 5, 6));
 ```
 
-| Parameter | Type                                                           | Description             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
+| 参数    | 类型                                                           | 描述        |
+| ----- | ------------------------------------------------------------ | --------- |
+| other | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 其他位置去获取距离 |
 
 
+### 北区
 
-Creates a new BlockPos based on this BlockPos that is n block(s) offset of this BlockPos based on the given [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+基于这个BlockPos 创建一个新的BlockPos ，这个BlockPos 是这个BlockPos 以北的一个块
 
- Returns: `a new BlockPos that is n block(s) offset of this BlockPos`
+ 返回： `一个新的BlockPos，它是这个BlockPos以北的一个块`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
-
-```zenscript
-new BlockPos(0, 1, 2).offset(direction as crafttweaker.api.util.Direction, n as int);
-new BlockPos(0, 1, 2).offset(<direction:south>, 3);
-```
-
-| Parameter | Type                                                           | Description             |
-| --------- | -------------------------------------------------------------- | ----------------------- |
-| direction | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
-| n         | int                                                            | No description provided |
-
-
-### south
-
-Creates a new BlockPos based on this BlockPos that is one block south of this BlockPos
-
- Returns: `a new BlockPos that is one block south of this BlockPos`
-
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).south();
+新BlockPosad(0, 1, 2).north();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) south of this BlockPos
+在此BlockPos 上创建一个新的 BlockPos ，这个BlockPos 是此BlockPos 以北的 n 块((s)
 
- Returns: `a new BlockPos that is n block(s) south of this BlockPos`
+ 返回: `个新的BlockPos, 它是这个BlockPos 以北的 n 块`
 
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).south(n as int);
-new BlockPos(0, 1, 2).south(12);
+新BlockPosad(0, 1, 2).north(未设定)；
+新BlockPosad(0, 1, 2).north(10)；
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| n  | 整数 | No description provided |
 
 
-### subtract
+### 偏移量
 
-Subtracts two positions together and returns the result.
+基于这个BlockPos 创建一个新的BlockPos ，这个BlockPos 基于给定的 [craftbiner.api.util.Direction](/vanilla/api/util/Direction)
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+ 返回： `一个新的BlockPos，它是这个BlockPos的1块偏移量`
+
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).subtract(pos as crafttweaker.api.util.BlockPos);
-new BlockPos(0, 1, 2).subtract(new BlockPos(2, 1, 3));
+新 BlockPost(0, 1, 2) .offset(direction as craftbiner.api.util.Direction);
+new BlockPost(0, 1, 2).offset(<direction:east>);
 ```
 
-| Parameter | Type                                                         | Description              |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| 参数 | 类型                                                             | 描述                      |
+| -- | -------------------------------------------------------------- | ----------------------- |
+| 方向 | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
 
 
-### up
 
-Creates a new BlockPos based on this BlockPos that is one block higher than this BlockPos
+根据给定的 [craftbiner.api.util.方向](/vanilla/api/util/Direction) 创建一个新的 BlockPos 基于此 BlockPos 的 n 块(s) 偏移。
 
- Returns: `a new BlockPos that is one block higher than this BlockPos`
+ 返回: `一个新的BlockPos, 它是 n 区块偏移到这个区块`
 
-Returns net.minecraft.util.math.BlockPos
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
-new BlockPos(0, 1, 2).up();
+new BlockPost(0, 1, 2) .offset(direction as craftbiner.api.util.Direction, n as int);
+new BlockPost(0, 1, 2).offset(<direction:south>, 3);
 ```
 
-
-Creates a new BlockPos based on this BlockPos that is n block(s) higher than this BlockPos
-
- Returns: `a new BlockPos that is n block(s) higher than this BlockPos`
-
-Returns net.minecraft.util.math.BlockPos
-
-```zenscript
-new BlockPos(0, 1, 2).up(n as int);
-new BlockPos(0, 1, 2).up(45);
-```
-
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
+| 参数 | 类型                                                             | 描述                      |
+| -- | -------------------------------------------------------------- | ----------------------- |
+| 方向 | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction) | No description provided |
+| n  | 整数                                                             | No description provided |
 
 
-### west
+### 南方
 
-Creates a new BlockPos based on this BlockPos that is one block west of this BlockPos
+基于这个BlockPos 创建一个新的BlockPos ，这个BlockPos 是这个BlockPos 以南的一个块
 
- Returns: `a new BlockPos that is one block west of this BlockPos`
+ 返回: `一个新的BlockPos , 它是这个BlockPos 以南的一个块`
 
-Returns net.minecraft.util.math.BlockPos
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).west();
+新BlockPosad(0, 1, 2).south();
 ```
 
 
-Creates a new BlockPos based on this BlockPos that is n block(s) west of this BlockPos
+在此BlockPos 上创建一个新的 BlockPos ，这个BlockPos 是此BlockPos 以南的 n 区块。
 
- Returns: `a new BlockPos that is n block(s) west of this BlockPos`
+ 返回: `个新的BlockPos, 它是这个BlockPos 以南的 n 块`
 
-Returns net.minecraft.util.math.BlockPos
-
-```zenscript
-new BlockPos(0, 1, 2).west(n as int);
-new BlockPos(0, 1, 2).west(120);
-```
-
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| n         | int  | No description provided |
-
-
-### withinDistance
-
-Checks if the given BlockPos is within the specified distance of this BlockPos (this uses the middle of the BlockPos)
-
-Returns boolean
+返回 net.minecraft.util.math.BlockPos
 
 ```zenscript
-new BlockPos(0, 1, 2).withinDistance(pos as crafttweaker.api.util.BlockPos, distance as double);
-new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
+新BlockPosad(0, 1, 2) south(n int.);
+新Blockpos(0, 1, 2).south(12);
 ```
 
-| Parameter | Type                                                         | Description                                    |
-| --------- | ------------------------------------------------------------ | ---------------------------------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | BlockPos to check if it is within the distance |
-| distance  | double                                                       | distance to check within                       |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| n  | 整数 | No description provided |
+
+
+### 减少
+
+同时减去两个位置，然后返回结果。
+
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
+
+```zenscript
+新BlockPost(0, 1, 2).减法(pos as craftwiner.api.util.BlockPos);
+新BlockPost(0, 1, 2).减法(新BlockPost(2, 1, 3));
+```
+
+| 参数 | 类型                                                           | 描述       |
+| -- | ------------------------------------------------------------ | -------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 其他要删除的位置 |
+
+
+### 上
+
+创建一个新的 BlockPos 基于这个比这个BlockPos 更高的块
+
+ 返回: `一个新的 BlockPos , 比这个BlockPos 更高的一个块`
+
+返回 net.minecraft.util.math.BlockPos
+
+```zenscript
+新BlockPost(0, 1, 2).up();
+```
+
+
+基于此BlockPos创建一个新的BlockPos，这个BlockPos大于此BlockPos
+
+ 返回： `一个新的BlockPos, 其n块大于此BlockPos`
+
+返回 net.minecraft.util.math.BlockPos
+
+```zenscript
+新BlockPosad(0, 1, 2).upp(n int);
+新BlockPosad(0, 1, 2).up(45);
+```
+
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| n  | 整数 | No description provided |
+
+
+### 西部地区
+
+基于这个BlockPos 创建一个新的BlockPos ，这个BlockPos 是这个BlockPos 以西的一个块
+
+ 返回： `个新的BlockPos，它是这个BlockPos以西的一个块`
+
+返回 net.minecraft.util.math.BlockPos
+
+```zenscript
+新BlockPosad(0, 1, 2).west();
+```
+
+
+在此BlockPos 上创建一个新的 BlockPos ，这个BlockPos 是此BlockPos 以西的 n 块((s)
+
+ 返回: `个新的BlockPos, 它是这个BlockPos 以西的 n 块`
+
+返回 net.minecraft.util.math.BlockPos
+
+```zenscript
+新的 BlockPosad(0, 1, 2).west(未设定)；
+新的 BlockPosad(0, 1, 2).west(120)；
+```
+
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| n  | 整数 | No description provided |
+
+
+### 距离内
+
+检查给定的 BlockPos 是否在这个BlockPos 的指定距离内(使用方块的中间)
+
+返回为布尔值
+
+```zenscript
+新BlockPosad(0, 1, 2).witinDistance(pos as craftbiner.api.util.BlockPos, 距离加倍);
+新BlockPosad(0, 1, 2).witinDistance(new BlockPosos(80, 75, 54);, 10);
+```
+
+| 参数 | 类型                                                           | 描述                 |
+| -- | ------------------------------------------------------------ | ------------------ |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要检查是否在距离内的BlockPos |
+| 距离 | 双精度                                                          | 在距离内检查             |
 
 
 
-## Properties
+## 参数
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| 名称 | 类型 | 可获得  | 可设置   |
+| -- | -- | ---- | ----- |
+| x  | 整数 | true | false |
+| 年  | 整数 | true | false |
+| z  | 整数 | true | false |
 
 ## 运算符
 ### ADD
 
-Adds two positions together and returns the result.
+同时添加两个位置并返回结果。
 
 ```zenscript
-new BlockPos(0, 1, 2) + pos as crafttweaker.api.util.BlockPos
-new BlockPos(0, 1, 2) + new BlockPos(3, 2, 1)
+新 BlockPost(0, 1, 2) + pos as craftweeper.api.util.BlockPos
+new BlockPost(0, 1, 2) + new BlockPost(3, 2, 1)
 ```
 
-| Parameter | Type                                                         | Description           |
-| --------- | ------------------------------------------------------------ | --------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to add |
+| 参数 | 类型                                                           | 描述       |
+| -- | ------------------------------------------------------------ | -------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 要添加的其他位置 |
 ### SUB
 
-Subtracts two positions together and returns the result.
+同时减去两个位置，然后返回结果。
 
 ```zenscript
-new BlockPos(0, 1, 2) - pos as crafttweaker.api.util.BlockPos
-new BlockPos(0, 1, 2) - new BlockPos(2, 1, 3)
+新 BlockPost(0, 1, 2) - 以craftweeper.api.util.BlockPos
+new BlockPost(0, 1, 2) - 新BlockPost(2, 1, 3)
 ```
 
-| Parameter | Type                                                         | Description              |
-| --------- | ------------------------------------------------------------ | ------------------------ |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | other position to remove |
+| 参数 | 类型                                                           | 描述       |
+| -- | ------------------------------------------------------------ | -------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 其他要删除的位置 |
 
-## Casters
+## 卡斯特尔
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| long        | false       |
+| 结果类型 | 是否隐藏  |
+| ---- | ----- |
+| 长    | false |
 
