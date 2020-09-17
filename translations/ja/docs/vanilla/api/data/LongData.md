@@ -2,36 +2,36 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.data.LongData
 ```
 
-## Implemented Interfaces
-LongData implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+LongData は以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
 ## Constructors
 ```zenscript
-new crafttweaker.api.data.LongData(internal as long);
+new crafttweaker.api.data.LongData(内部と同じ長さ);
 ```
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| internal  | long | No description provided |
+| パラメータ | タイプ  | 説明           |
+| ----- | ---- | ------------ |
+| 内部    | long | 説明が提供されていません |
 
 
 
-## Methods
+## メソッド
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+リストを取得<IData> この IData の表現は、 [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a list.`
+ 戻り値: `この IData がリストでない場合は null です。`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+戻り値 List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 800000000.asList();
@@ -39,11 +39,11 @@ Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+この IData のマップ<String, IData> 表現を取得します。 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a map.`
+ 戻り値: `この IData がマップでない場合は null です。`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 800000000.asMap();
@@ -51,55 +51,55 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ### asString
 
-Gets the String representation of this IData
+この IData の文字列表現を取得します
 
- Returns: `String that represents this IData (value and type).`
+ 戻り値: `この IData (値と型) を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 800000000.asString();
 ```
 
-### contains
+### を含む
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 800000000.contains(data as crafttweaker.api.data.IData);
-800000000.contains("Display");
+8000000.contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| パラメータ | タイプ                                                    | 説明                    |
+| ----- | ------------------------------------------------------ | --------------------- |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | それが含まれているかどうかを確認するデータ |
 
 
-### copy
+### コピー
 
-Makes a copy of this IData.
+このIDataのコピーを作成します。
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData はデフォルトで変更不能です。これを使用してオブジェクトの適切なコピーを作成します。
 
- Returns: `a copy of this IData.`
+ 戻り値: `この IData のコピー`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
-800000000.copy();
+8000000.copy();
 ```
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+内部 NBT タグの ID を取得します。
 
- Used to determine what NBT type is stored (in a list for example)
+ どの種類の NBT が格納されているかを決定するために使用されます(例えばリスト)
 
- Returns: `ID of the NBT tag that this data represents.`
+ 戻り値: `このデータが表現する NBT タグの ID。`
 
-Returns byte
+バイトを返します
 
 ```zenscript
 800000000.getId();
@@ -107,11 +107,11 @@ Returns byte
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+内部 INBT タグの文字列表現を取得します。
 
- Returns: `String that represents the internal INBT of this IData.`
+ 戻り値: `この IData の内部 INBT を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 800000000.getString();
