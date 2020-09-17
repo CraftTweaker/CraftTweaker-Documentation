@@ -4,7 +4,7 @@
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.data.ByteArrayData
@@ -18,23 +18,23 @@ ByteArrayData实现了以下接口。 这意味着对这个接口可用的任何
 ```zenscript
 new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 ```
-| 参数       | 类型     | 描述    |
-| -------- | ------ | ----- |
-| internal | byte[] | 未提供说明 |
+| 参数   | 类型   | 描述                      |
+| ---- | ---- | ----------------------- |
+| 内部设置 | 字节[] | No description provided |
 
 
 
-## 使用方式
-### add #添加
+## 方法
+### 添加
 
 ```zenscript
 [4, 1, 2].add(value as crafttweaker.api.data.IData);
 [4, 1, 2].add("today");
 ```
 
-| 参数 | 类型                                                     | 说明       |
-| -- | ------------------------------------------------------ | -------- |
-| 值  | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
+| 参数    | 类型                                                     | 描述       |
+| ----- | ------------------------------------------------------ | -------- |
+| value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
 
 
@@ -45,7 +45,7 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 | 参数    | 类型                                                     | 描述                   |
 | ----- | ------------------------------------------------------ | -------------------- |
-| index | 整型                                                     | 要添加的索引。 后续项目将会上移一个索引 |
+| index | 整数                                                     | 要添加的索引。 后续项目将会上移一个索引 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
@@ -70,7 +70,7 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 | 参数    | 类型 | 描述               |
 | ----- | -- | ---------------- |
-| index | 整型 | The index (从0开始) |
+| index | 整数 | The index (从0开始) |
 
 
 ### remove #移除
@@ -86,7 +86,7 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 | 参数    | 类型 | 描述               |
 | ----- | -- | ---------------- |
-| index | 整型 | The index (从0开始) |
+| index | 整数 | The index (从0开始) |
 
 
 ### set #设置
@@ -102,14 +102,14 @@ new crafttweaker.api.data.ByteArrayData(internal as byte[]);
 
 | 参数    | 类型                                                     | 描述            |
 | ----- | ------------------------------------------------------ | ------------- |
-| index | 整型                                                     | 要设置的索引 (从0开始) |
+| index | 整数                                                     | 要设置的索引 (从0开始) |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
 ## 参数
 
-| 名称       | 类型 | 可获得  | 可设置   |
-| -------- | -- | ---- | ----- |
-| size #大小 | 整型 | true | false |
+| 名称 | 类型 | 可获得  | 可设置   |
+| -- | -- | ---- | ----- |
+| 大小 | 整数 | true | false |
 
