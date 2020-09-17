@@ -1,27 +1,27 @@
 # MCRightClickBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock
 ```
 
-## Constructors
+## Konstrukteure
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock>);
+neue crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock(Handler als Funktion.Verbraucher<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock>);
 ```
-| Parameter | Type                                                                                                                                                                    | Beschreibung            |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock)> | No description provided |
+| Parameter | Type                                                                                                                                                                    | Beschreibung                 |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock)> | Keine Beschreibung angegeben |
 
 
 
 ## Methoden
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCRightClickBlock.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCRightClickBlock.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+Gibt `das an dieser Interaktion beteiligte Gesicht zurück. Für alle nicht-blockierten Interaktionen wird diese Null zurückgegeben.`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Gibt [craftweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCRightClickBlock.getFace();
@@ -39,9 +39,9 @@ myMCRightClickBlock.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+Gibt zurück: `Der Gegenstand ist an dieser Interaktion beteiligt, {` @code ItemStack.EMPTY} wenn die Hand leer war.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Gibt [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) zurück
 
 ```zenscript
 myMCRightClickBlock.getItemStack();
@@ -49,9 +49,9 @@ myMCRightClickBlock.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+Rückgaben: `Spieler`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Gibt [craftweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) zurück
 
 ```zenscript
 myMCRightClickBlock.getPlayer();
@@ -59,55 +59,55 @@ myMCRightClickBlock.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+Wenn die Interaktion auf einer Entität war, wird ein BlockPos zentriert auf der Entität. Wenn die Interaktion auf einem Block war, wird die Position des Blocks sein. Ansonsten wird ein BlockPos zentriert auf dem Spieler. Wird nie null sein. Gibt `die Position zurück, die an dieser Interaktion beteiligt ist.`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Gibt [craftweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) zurück
 
 ```zenscript
 myMCRightClickBlock.getPos();
 ```
 
-### hasResult
+### hasergebnis
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Legt fest, ob dieses Ereignis einen signifikanten Ergebniswert erwartet. Hinweis: Ereignisse mit der HasResult-Anmerkung werden diese Methode automatisch hinzugefügt, um wahr zurückzugeben.
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
 myMCRightClickBlock.hasResult();
 ```
 
-### isCancelable
+### isabbrechbar
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Legen Sie fest, ob diese Funktion überhaupt abgebrochen werden kann. Gibt zurück: `Wenn der Zugriff auf setCanceled erlaubt sein sollte
+ Hinweis:
+ Ereignisse mit der abbrechbaren Anmerkung werden diese Methode automatisch hinzugefügt, um true zurückzugeben.`
 
-Returns boolean
-
-```zenscript
-myMCRightClickBlock.isCancelable();
-```
-
-### isCanceled
-
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
-
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
-myMCRightClickBlock.isCanceled();
+myMCRightClickBlock.isAbbrechbar();
 ```
 
-### setCanceled
+### ist abgebrochen
+
+Legen Sie fest, ob dieses Ereignis abgebrochen wird und nicht mehr ausgeführt werden soll. Rückgabe: `Der aktuell abgebrochene Status`
+
+Rückgabewert boolesch
 
 ```zenscript
-myMCRightClickBlock.setCanceled(canceled as boolean);
+myMCRightClickBlock.isAbbrecht();
 ```
 
-| Parameter | Type    | Beschreibung            |
-| --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+### abgebrochen
+
+```zenscript
+myMCRightClickBlock.setCanceled(als Boolean abgebrochen);
+```
+
+| Parameter   | Type    | Beschreibung                 |
+| ----------- | ------- | ---------------------------- |
+| abgebrochen | boolean | Keine Beschreibung angegeben |
 
 
 
