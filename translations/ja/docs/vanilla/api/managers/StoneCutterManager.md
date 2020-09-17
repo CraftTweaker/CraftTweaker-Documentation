@@ -2,118 +2,118 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.StoneCutterManager
 ```
 
-## Implemented Interfaces
-StoneCutterManager implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.registries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
+## 実装されたインターフェース
+StoneCutterManager は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [crafttweaker.api.registrries.IRecipeManager](/vanilla/api/managers/IRecipeManager)
 
-## Methods
+## メソッド
 ### addJSONRecipe
 
-Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+提供されたIDataに基づいてレシピを追加します。 提供されたIDataはDataPack JSONを表し、IRecipeTypeシステムをサポートするDataPackのレシピを効果的に登録することができます。
 
 ```zenscript
 stoneCutter.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-stoneCutter.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+stoneCutter.addJSONRecipe("recipe_name", {item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Description                     |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | 文字列型                                                   | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| パラメータ | タイプ                                                    | 説明             |
+| ----- | ------------------------------------------------------ | -------------- |
+| 名前    | 文字列型                                                   | レシピの名前         |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | jsonファイルを表すデータ |
 
 
 ### addRecipe
 
-Adds a recipe to the stone cutter
+石カッターにレシピを追加
 
 ```zenscript
 stoneCutter.addRecipe(recipeName as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 stoneCutter.addRecipe("recipe_name", <item:minecraft:grass>, <tag:minecraft:wool>);
 ```
 
-| Parameter  | Type                                                                | Description        |
-| ---------- | ------------------------------------------------------------------- | ------------------ |
-| recipeName | String                                                              | name of the recipe |
-| output     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | output IItemStack  |
-| input      | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | input IIngredient  |
+| パラメータ | タイプ                                                                | 説明                |
+| ----- | ------------------------------------------------------------------ | ----------------- |
+| レシピ名  | 文字列型                                                               | レシピの名前            |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | output IItemStack |
+| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient を入力   |
 
 
-### removeAll
+### すべて削除
 
-Remove all recipes in this registry
+このレジストリ内のすべてのレシピを削除
 
 ```zenscript
 stoneCutter.removeAll();
 ```
 
-### removeByModid
+### removeByModo
 
-Remove recipe based on Registry name modid
+レジストリ名modidに基づいてレシピを削除
 
 ```zenscript
 stoneCutter.removeByModid(modid as String);
 stoneCutter.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| パラメータ | タイプ  | 説明              |
+| ----- | ---- | --------------- |
+| modid | 文字列型 | 取り除くべきレシピの<unk> |
 
 
 ### removeByName
 
-Remove recipe based on Registry name
+レジストリ名に基づいてレシピを削除
 
 ```zenscript
 stoneCutter.removeByName(name as String);
-stoneCutter.removeByName("minecraft:furnace");
+stoneCutter.removeByName("minecraft:furnace');
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| パラメータ | タイプ  | 説明             |
+| ----- | ---- | -------------- |
+| 名前    | 文字列型 | 削除するレシピのレジストリ名 |
 
 
 ### removeByRegex
 
-Remove recipe based on regex
+正規表現に基づいてレシピを削除
 
 ```zenscript
 stoneCutter.removeByRegex(regex as String);
 stoneCutter.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| パラメータ | タイプ  | 説明        |
+| ----- | ---- | --------- |
+| Regex | 文字列型 | 正規表現と一致する |
 
 
-### removeRecipe
+### RemoveRecipe
 
-Remove a recipe based on it's output.
+出力に基づいてレシピを削除します。
 
 ```zenscript
-stoneCutter.removeRecipe(output as crafttweaker.api.item.IItemStack);
+stoneCutter.removeRecipe(crafttweaker.api.item.IItemStack);
 stoneCutter.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Description          |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| パラメータ | タイプ                                                               | 説明     |
+| ----- | ----------------------------------------------------------------- | ------ |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | レシピの出力 |
 
 
 
-## Properties
+## プロパティー
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| 名称            | タイプ  | ゲッターあり | セッターあり |
+| ------------- | ---- | ------ | ------ |
+| commandString | 文字列型 | true   | false  |
 
