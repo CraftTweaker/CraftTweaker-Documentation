@@ -1,14 +1,14 @@
-# Commands
+# Commandes
 
-Here are the commands that matter:
+Voici les commandes qui comptent :
 ```
-/ct hand
-```
-```
-/ct log
+/ct main
 ```
 ```
-/ct scripts
+log /ct
+```
+```
+Scripts /ct
 ```
 ```
 /ct issues
@@ -20,8 +20,8 @@ Here are the commands that matter:
 /ct dump
 ```
 ```
-/ct recipeTypes
+/ct types de recettes
 ```
 ```
-/ct help
+/ct aide
 ```
