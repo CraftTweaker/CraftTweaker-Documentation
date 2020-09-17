@@ -1,7 +1,7 @@
-# Recipe managers
+# レシピマネージャー
 
 
-All recipe related globals extend from this class, and have all of these methods.
+すべてのレシピ関連のグローバルは、このクラスから拡張され、これらのすべてのメソッドを持っています。
 
 ```zenscript
 removeRecipe(IItemStack output);
