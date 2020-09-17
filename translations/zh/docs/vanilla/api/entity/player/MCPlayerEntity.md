@@ -2,13 +2,13 @@
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
-## 使用方式
+## 方法
 ### addExhaustion #增加饥饿值
 
 通过所提供的数值增加饥饿值
@@ -17,9 +17,9 @@ crafttweaker.api.entity.player.MCPlayerEntity
 myMCPlayerEntity.addExhaustion(exhaustion as float);
 ```
 
-| 参数         | 类型          | 描述    |
-| ---------- | ----------- | ----- |
-| exhaustion | 浮点数据[float] | 未提供说明 |
+| 参数         | 类型  | 描述                      |
+| ---------- | --- | ----------------------- |
+| exhaustion | 浮点数 | No description provided |
 
 
 ### addExperienceLevel #提升经验等级
@@ -30,9 +30,9 @@ myMCPlayerEntity.addExhaustion(exhaustion as float);
 myMCPlayerEntity.addExperienceLevel(levels as int);
 ```
 
-| 参数     | 类型      | 说明    |
-| ------ | ------- | ----- |
-| levels | int #整型 | 未提供说明 |
+| 参数     | 类型 | 描述                      |
+| ------ | -- | ----------------------- |
+| levels | 整数 | No description provided |
 
 
 ### addItemStackToInventory #在背包中添加物品堆叠
@@ -43,9 +43,9 @@ myMCPlayerEntity.addExperienceLevel(levels as int);
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| 参数            | 返回值类型                                                             | 描述    |
-| ------------- | ----------------------------------------------------------------- | ----- |
-| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
+| 参数            | 类型                                                                | 描述                      |
+| ------------- | ----------------------------------------------------------------- | ----------------------- |
+| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### addMovementStat #添加移动统计
@@ -56,11 +56,11 @@ myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.II
 myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
 ```
 
-| 参数           | 返回值类型       | 描述    |
-| ------------ | ----------- | ----- |
-| p_71000_1_ | double #双精度 | 未提供说明 |
-| p_71000_3_ | double #双精度 | 未提供说明 |
-| p_71000_5_ | double #双精度 | 未提供说明 |
+| 参数           | 类型  | 描述                      |
+| ------------ | --- | ----------------------- |
+| p_71000_1_ | 双精度 | No description provided |
+| p_71000_3_ | 双精度 | No description provided |
+| p_71000_5_ | 双精度 | No description provided |
 
 
 ### addPotionEffect #添加药水效果
@@ -71,9 +71,9 @@ myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_7
 myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| 参数                     | 返回值类型                                                                                         | 描述    |
-| ---------------------- | --------------------------------------------------------------------------------------------- | ----- |
-| effectInstanceIn #效果实例 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 未提供说明 |
+| 参数                     | 类型                                                                                            | 描述                      |
+| ---------------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| effectInstanceIn #效果实例 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### addScore #添加分数
@@ -84,9 +84,9 @@ myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCP
 myMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| 参数      | 返回值类型   | 描述    |
-| ------- | ------- | ----- |
-| scoreIn | int #整型 | 未提供说明 |
+| 参数      | 类型 | 描述                      |
+| ------- | -- | ----------------------- |
+| scoreIn | 整数 | No description provided |
 
 
 ### addTag #添加tag
@@ -97,9 +97,9 @@ myMCPlayerEntity.addScore(scoreIn as int);
 myMCPlayerEntity.addTag(tag as String);
 ```
 
-| 参数      | 返回值类型       | 描述    |
-| ------- | ----------- | ----- |
-| tag #标签 | 字符串[string] | 未提供说明 |
+| 参数 | 类型          | 描述                      |
+| -- | ----------- | ----------------------- |
+| 标签 | 字符串[string] | No description provided |
 
 
 ### addVelocity #增加速度
@@ -110,11 +110,11 @@ myMCPlayerEntity.addTag(tag as String);
 myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 ```
 
-| 参数 | 返回值类型       | 描述    |
-| -- | ----------- | ----- |
-| x  | double #双精度 | 未提供说明 |
-| y  | double #双精度 | 未提供说明 |
-| z  | double #双精度 | 未提供说明 |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
 ### allowLogging #允许记录日志
@@ -141,12 +141,12 @@ myMCPlayerEntity.attackable();
 myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
 ```
 
-| 参数            | 返回值类型       | 描述    |
-| ------------- | ----------- | ----- |
-| p_213373_1_ | double #双精度 | 未提供说明 |
-| p_213373_3_ | double #双精度 | 未提供说明 |
-| p_213373_5_ | double #双精度 | 未提供说明 |
-| p_213373_7_ | 布尔值         | 未提供说明 |
+| 参数            | 类型      | 描述                      |
+| ------------- | ------- | ----------------------- |
+| p_213373_1_ | 双精度     | No description provided |
+| p_213373_3_ | 双精度     | No description provided |
+| p_213373_5_ | 双精度     | No description provided |
+| p_213373_7_ | boolean | No description provided |
 
 
 ### baseTick #基础游戏刻
@@ -165,9 +165,9 @@ myMCPlayerEntity.baseTick();
 myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| 参数    | 返回值类型                                                                                      | 描述    |
-| ----- | ------------------------------------------------------------------------------------------ | ----- |
-| other | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 未提供说明 |
+| 参数    | 类型                                                                                         | 描述                      |
+| ----- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| other | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
 
 ### canBeAttackedWithItem #可以被物体攻击
@@ -218,7 +218,7 @@ myMCPlayerEntity.canBePushed();
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater #可以水下呼吸
+### canBreatheUnderwater
 
 返回为布尔值
 
@@ -234,9 +234,9 @@ myMCPlayerEntity.canBreatheUnderwater();
 myMCPlayerEntity.canEat(ignoreHunger as boolean);
 ```
 
-| 参数           | 返回值类型 | 描述    |
-| ------------ | ----- | ----- |
-| ignoreHunger | 布尔值   | 未提供说明 |
+| 参数           | 类型      | 描述                      |
+| ------------ | ------- | ----------------------- |
+| ignoreHunger | boolean | No description provided |
 
 
 ### canHarvestBlock #可以破坏方块
@@ -247,9 +247,9 @@ myMCPlayerEntity.canEat(ignoreHunger as boolean);
 myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| 参数    | 返回值类型                                                                   | 描述    |
-| ----- | ----------------------------------------------------------------------- | ----- |
-| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 未提供说明 |
+| 参数    | 类型                                                                      | 描述                      |
+| ----- | ----------------------------------------------------------------------- | ----------------------- |
+| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 
 
 ### canPassengerSteer #可以乘坐
@@ -270,11 +270,11 @@ myMCPlayerEntity.canPassengerSteer();
 myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
 ```
 
-| 参数 | 类型                                                                | 说明    |
-| -- | ----------------------------------------------------------------- | ----- |
-| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | 未提供说明 |
-| 方向 | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | 未提供说明 |
-| 堆叠 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
+| 参数    | 类型                                                                | 描述                      |
+| ----- | ----------------------------------------------------------------- | ----------------------- |
+| 点     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | No description provided |
+| 方向    | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | No description provided |
+| 堆栈... | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### canRenderOnFire #是否能被渲染为着火
@@ -311,11 +311,11 @@ myMCPlayerEntity.canSwim();
 myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
 ```
 
-| 参数   | 类型                                                                      | 说明    |
-| ---- | ----------------------------------------------------------------------- | ----- |
-| 状态   | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 未提供说明 |
-| 点    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | 未提供说明 |
-| 下落距离 | 浮点                                                                      | 未提供说明 |
+| 参数    | 类型                                                                      | 描述                      |
+| ----- | ----------------------------------------------------------------------- | ----------------------- |
+| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| 点     | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
+| 下落距离  | 浮点数                                                                     | No description provided |
 
 
 ### canUpdate #是否能被更新
@@ -331,9 +331,9 @@ myMCPlayerEntity.canUpdate();
 myMCPlayerEntity.canUpdate(值为布尔型);
 ```
 
-| 参数 | 类型  | 说明    |
-| -- | --- | ----- |
-| 值  | 布尔值 | 未提供说明 |
+| 参数    | 类型      | 描述                      |
+| ----- | ------- | ----------------------- |
+| value | boolean | No description provided |
 
 
 ### canUseCommandBlock #是否可以使用命令方块
@@ -374,9 +374,9 @@ myMCPlayerEntity.closeScreen();
 myMCPlayerEntity.curePotionEffects(治疗的效果为 crafttweaker.api.item.IItemStack);
 ```
 
-| 参数    | 类型                                                                | 说明    |
-| ----- | ----------------------------------------------------------------- | ----- |
-| 治疗的效果 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 未提供说明 |
+| 参数    | 类型                                                                | 描述                      |
+| ----- | ----------------------------------------------------------------- | ----------------------- |
+| 治疗的效果 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### detach #分离
@@ -391,9 +391,9 @@ myMCPlayerEntity.detach();
 myMCPlayerEntity.disableShield（p_190777_1_ 为布尔值）；
 ```
 
-| 参数            | 类型  | 说明    |
-| ------------- | --- | ----- |
-| p_190777_1_ | 布尔值 | 未提供说明 |
+| 参数            | 类型      | 描述                      |
+| ------------- | ------- | ----------------------- |
+| p_190777_1_ | boolean | No description provided |
 
 
 ### doesEntityNotTriggerPressurePlate #实体是否会触发压力板
@@ -414,32 +414,32 @@ myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 myMCPlayerEntity.equals(p_equals_1_ as Object);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_equals_1_ | Object | No description provided |
+| 参数            | 类型 | 描述                      |
+| ------------- | -- | ----------------------- |
+| p_equals_1_ | 对象 | No description provided |
 
 
 ### extinguish
 
-Removes fire from entity.
+从实体中移除火灾。
 
 ```zenscript
 myMCPlayerEntity.extinguish();
 ```
 
-### fall
+### 落地
 
 ```zenscript
 myMCPlayerEntity.fall(distance as float, damageMultiplier as float);
 ```
 
-| Parameter        | Type  | Description             |
-| ---------------- | ----- | ----------------------- |
-| distance         | float | No description provided |
-| damageMultiplier | float | No description provided |
+| 参数   | 类型  | 描述                      |
+| ---- | --- | ----------------------- |
+| 距离   | 浮点数 | No description provided |
+| 伤害加成 | 浮点数 | No description provided |
 
 
-### findAmmo
+### 查找弹药
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -447,14 +447,14 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myMCPlayerEntity.findAmmo(shootable as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| shootable | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| 可拍摄的 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
 ### func_213300_bk
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.func_213300_bk();
@@ -466,16 +466,16 @@ myMCPlayerEntity.func_213300_bk();
 myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_213312_5_ as double);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_213312_1_ | double | No description provided |
-| p_213312_3_ | double | No description provided |
-| p_213312_5_ | double | No description provided |
+| 参数            | 类型  | 描述                      |
+| ------------- | --- | ----------------------- |
+| p_213312_1_ | 双精度 | No description provided |
+| p_213312_3_ | 双精度 | No description provided |
+| p_213312_5_ | 双精度 | No description provided |
 
 
-### func_213314_bj
+### 213314_bj
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.func_213314_bj();
@@ -483,7 +483,7 @@ myMCPlayerEntity.func_213314_bj();
 
 ### func_213343_cS
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.func_213343_cS();
@@ -491,33 +491,33 @@ myMCPlayerEntity.func_213343_cS();
 
 ### func_213365_e
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
 
 ```
 
-| Parameter   | Type                                                              | Description             |
-| ----------- | ----------------------------------------------------------------- | ----------------------- |
-| itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数     | 类型                                                                | 描述                      |
+| ------ | ----------------------------------------------------------------- | ----------------------- |
+| 物品堆栈进入 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### getAIMoveSpeed
+### getAIMove速度
 
-the movespeed used for the new AI system
+用于新的 AI 系统的已移动的
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getAIMoveSpeed();
 ```
 
-### getAbsorptionAmount
+### getAbsortion金额
 
-Returns the amount of health added by the Absorption effect.
+返回由吸收效果添加的健康数量。
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getAbsorptionAmount();
@@ -533,32 +533,32 @@ myMCPlayerEntity.getActiveItemStack();
 
 ### getActivePotionEffect
 
-returns the PotionEffect for the supplied Potion if it is active, null otherwise.
+返回所提供的药水的药水效果，如果它是活跃的，则是无效的。
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+返回 [craftbinstruer.api.potion.MCPotionEffect实例](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPlayerEntity.getActivePotionEffect(potionIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.getActivePotionEffect(药水作为craftweer.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| 参数 | 类型                                                                    | 描述                      |
+| -- | --------------------------------------------------------------------- | ----------------------- |
+| 药水 | [制作效果.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
 
 ### getActivePotionEffects
 
-Returns Collection<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
+返回收藏<[craftminstruer.api.potion.MCPotionEffect实例](/vanilla/api/potions/MCPotionEffectInstance)>
 
 ```zenscript
 myMCPlayerEntity.getActivePotionEffects();
 ```
 
-### getAdjustedHorizontalFacing
+### 获取调整水平面
 
-Gets the horizontal facing direction of this Entity, adjusted to take specially-treated entity types into account.
+获取这个实体的水平正向方向，调整以考虑到特殊处理的实体类型。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+返回 [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getAdjustedHorizontalFacing();
@@ -566,7 +566,7 @@ myMCPlayerEntity.getAdjustedHorizontalFacing();
 
 ### getAir
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getAir();
@@ -574,7 +574,7 @@ myMCPlayerEntity.getAir();
 
 ### getAlwaysRenderNameTagForRender
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.getAlwaysRenderNameTagForRender();
@@ -582,25 +582,25 @@ myMCPlayerEntity.getAlwaysRenderNameTagForRender();
 
 ### getArrowCountInEntity
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getArrowCountInEntity();
 ```
 
-### getBedDirection
+### 获取贝德方向
 
-gets the Direction for the camera if this entity is sleeping
+如果该实体正在睡觉，则获取相机方向
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+返回 [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getBedDirection();
 ```
 
-### getBedLocation
+### getBedlocation
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getBedLocation();
@@ -608,25 +608,25 @@ myMCPlayerEntity.getBedLocation();
 
 ### getBlockState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+返回值 [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCPlayerEntity.getBlockState();
 ```
 
-### getBrightness
+### 获取亮度
 
-Gets how bright this entity is.
+获取这个实体的亮度。
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getBrightness();
 ```
 
-### getBrightnessForRender
+### getBrightnessForender
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getBrightnessForRender();
@@ -634,100 +634,100 @@ myMCPlayerEntity.getBrightnessForRender();
 
 ### getCachedUniqueIdString
 
-Returns String
+返回字符串[String]
 
 ```zenscript
 myMCPlayerEntity.getCachedUniqueIdString();
 ```
 
-### getClassification
+### get分类
 
-Returns [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
+返回 [craftbinstruer.api.entity.MCEntityClassis](/vanilla/api/entities/MCEntityClassification)
 
 ```zenscript
-myMCPlayerEntity.getClassification(forSpawnCount as boolean);
+myMCPlayerEntity.getClassification(forSpawnCount作为布尔值)；
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| forSpawnCount | boolean | No description provided |
+| 参数             | 类型      | 描述                      |
+| -------------- | ------- | ----------------------- |
+| forSpawnCounty | boolean | No description provided |
 
 
 ### getCollisionBorderSize
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getCollisionBorderSize();
 ```
 
-### getCooldownPeriod
+### getCooldown会计期间
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getCooldownPeriod();
 ```
 
-### getCooledAttackStrength
+### getCooledAttackStower
 
-Returns the percentage of attack power available based on the cooldown (zero to one).
+返回基于冷却时间的攻击能量百分比(从零到一)。
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getCooledAttackStrength(adjustTicks as float);
+myMCPlayerEntity.getCooledAttackStrength(调整工单为浮点数)；
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| adjustTicks | float | No description provided |
+| 参数   | 类型  | 描述                      |
+| ---- | --- | ----------------------- |
+| 调整工单 | 浮点数 | No description provided |
 
 
 ### getDigSpeed
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getDigSpeed(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.getDigSpeed(state as craftweeper.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| 参数    | 类型                                                                      | 描述                      |
+| ----- | ----------------------------------------------------------------------- | ----------------------- |
+| state | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
 
 
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.getDigSpeed(arg0 as craftweeper.api.block.MCBlockState, arg1 as craftbiner.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| arg1      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
+| 参数   | 类型                                                                      | 描述                      |
+| ---- | ----------------------------------------------------------------------- | ----------------------- |
+| arg0 | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| arg1 | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
 
 
 ### getDistanceSq
 
-Returns double
+双倍返回
 
 ```zenscript
-myMCPlayerEntity.getDistanceSq(x as double, y as double, z as double);
+myMCPlayerEntity.getDistanceSq(x 倍，倍于倍，倍于倍，倍于倍)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
 ### getEntityId
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getEntityId();
@@ -735,23 +735,23 @@ myMCPlayerEntity.getEntityId();
 
 ### getEntityString
 
-Returns String
+返回字符串[String]
 
 ```zenscript
 myMCPlayerEntity.getEntityString();
 ```
 
-### getEyeHeight
+### getEye高度
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getEyeHeight();
+myMCPlayerEntity.getEyeHight();
 ```
 
 ### getFireTimer
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getFireTimer();
@@ -759,15 +759,15 @@ myMCPlayerEntity.getFireTimer();
 
 ### getHealth
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getHealth();
 ```
 
-### getHeight
+### 获取高度
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getHeight();
@@ -789,11 +789,11 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 myMCPlayerEntity.getHeldItemOffhand();
 ```
 
-### getHorizontalFacing
+### 获取水平面
 
-Gets the horizontal facing direction of this Entity.
+获取此实体的水平正向方向。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+返回 [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getHorizontalFacing();
@@ -801,7 +801,7 @@ myMCPlayerEntity.getHorizontalFacing();
 
 ### getIdleTime
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getIdleTime();
@@ -809,7 +809,7 @@ myMCPlayerEntity.getIdleTime();
 
 ### getItemInUseCount
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getItemInUseCount();
@@ -817,7 +817,7 @@ myMCPlayerEntity.getItemInUseCount();
 
 ### getItemInUseMaxCount
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getItemInUseMaxCount();
@@ -825,7 +825,7 @@ myMCPlayerEntity.getItemInUseMaxCount();
 
 ### getLastAttackedEntityTime
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getLastAttackedEntityTime();
@@ -833,7 +833,7 @@ myMCPlayerEntity.getLastAttackedEntityTime();
 
 ### getLuck
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getLuck();
@@ -841,7 +841,7 @@ myMCPlayerEntity.getLuck();
 
 ### getMaxAir
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getMaxAir();
@@ -849,17 +849,17 @@ myMCPlayerEntity.getMaxAir();
 
 ### getMaxFallHeight
 
-The maximum height from where the entity is alowed to jump (used in pathfinder)
+实体的最大高度 (用于路径查找器)
 
-Returns int
+返回为int值
 
 ```zenscript
-myMCPlayerEntity.getMaxFallHeight();
+myMCPlayerEntity.getMaxFallHight();
 ```
 
 ### getMaxHealth
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getMaxHealth();
@@ -867,9 +867,9 @@ myMCPlayerEntity.getMaxHealth();
 
 ### getMaxInPortalTime
 
-Return the amount of time this entity should stay in a portal before being transported.
+返回该实体在传输前应停留在门户网站的时间。
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getMaxInPortalTime();
@@ -877,9 +877,9 @@ myMCPlayerEntity.getMaxInPortalTime();
 
 ### getMountedYOffset
 
-Returns the Y offset from the entity's position for any entity riding this one.
+返回任何实体乘坐这个实体的位置的 Y 偏移。
 
-Returns double
+双倍返回
 
 ```zenscript
 myMCPlayerEntity.getMountedYOffset();
@@ -887,34 +887,34 @@ myMCPlayerEntity.getMountedYOffset();
 
 ### getPitch
 
-Gets the current pitch of the entity.
+获取实体的当前音量。
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getPitch(partialTicks as float);
+myMCPlayerEntity.getPitch(partialTicks as float)；
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| 参数      | 类型  | 描述                      |
+| ------- | --- | ----------------------- |
+| 部分Ticks | 浮点数 | No description provided |
 
 
 ### getPortalCooldown
 
-Return the amount of cooldown before this entity can use a portal again.
+在此实体再次使用门户之前返回冷却量。
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getPortalCooldown();
 ```
 
-### getPosition
+### 获取位置
 
-Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
+获得世界上的位置。 <b>{@code null} 是不允许的！</b> 如果您在世界上不是一个实体，返回 坐标0, 0, 0
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getPosition();
@@ -922,7 +922,7 @@ myMCPlayerEntity.getPosition();
 
 ### getRenderScale
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getRenderScale();
@@ -930,7 +930,7 @@ myMCPlayerEntity.getRenderScale();
 
 ### getRevengeTimer
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getRevengeTimer();
@@ -938,77 +938,77 @@ myMCPlayerEntity.getRevengeTimer();
 
 ### getRotationYawHead
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getRotationYawHead();
 ```
 
-### getScore
+### 获取得分
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getScore();
 ```
 
-### getScoreboardName
+### getScreboard名称
 
-Returns a String to use as this entity's name in the scoreboard/entity selector systems
+返回一个字符串作为该实体在计分板/实体选择器系统中的名称
 
-Returns String
+返回字符串[String]
 
 ```zenscript
-myMCPlayerEntity.getScoreboardName();
+myMCPlayerEntity.getScorreboardName();
 ```
 
 ### getSleepTimer
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getSleepTimer();
 ```
 
-### getSubmergedHeight
+### getSubmergedheight
 
-Returns double
+双倍返回
 
 ```zenscript
 myMCPlayerEntity.getSubmergedHeight();
 ```
 
-### getSwimAnimation
+### getSwim动画
 
-Returns float
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.getSwimAnimation(partialTicks as float);
+myMCPlayerEntity.getSwimanimation(partialTicks as float)；
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| 参数      | 类型  | 描述                      |
+| ------- | --- | ----------------------- |
+| 部分Ticks | 浮点数 | No description provided |
 
 
 ### getSwingProgress
 
-Gets the progression of the swing animation, ranges from 0.0 to 1.0.
+获取回旋动画的进度，从0.0到1.0不等。
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getSwingProgress(partialTickTime as float);
 ```
 
-| Parameter       | Type  | Description             |
-| --------------- | ----- | ----------------------- |
-| partialTickTime | float | No description provided |
+| 参数              | 类型  | 描述                      |
+| --------------- | --- | ----------------------- |
+| partialTickTime | 浮点数 | No description provided |
 
 
-### getTags
+### 获取标签
 
-Returns Set<String>
+返回集<String>
 
 ```zenscript
 myMCPlayerEntity.getTags();
@@ -1016,7 +1016,7 @@ myMCPlayerEntity.getTags();
 
 ### getTeleportDirection
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+返回 [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getTeleportDirection();
@@ -1024,7 +1024,7 @@ myMCPlayerEntity.getTeleportDirection();
 
 ### getTicksElytraFlying
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getTicksElytraFlying();
@@ -1032,9 +1032,9 @@ myMCPlayerEntity.getTicksElytraFlying();
 
 ### getTotalArmorValue
 
-Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue
+返回当前装甲值作为调用到InventoryPlayer.getTotalArmorValue
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getTotalArmorValue();
@@ -1042,7 +1042,7 @@ myMCPlayerEntity.getTotalArmorValue();
 
 ### getWidth
 
-Returns float
+返回浮点数
 
 ```zenscript
 myMCPlayerEntity.getWidth();
@@ -1050,7 +1050,7 @@ myMCPlayerEntity.getWidth();
 
 ### getXPSeed
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.getXPSeed();
@@ -1058,9 +1058,9 @@ myMCPlayerEntity.getXPSeed();
 
 ### getYOffset
 
-Returns the Y Offset of this entity.
+返回此实体的 Y 偏移。
 
-Returns double
+双倍返回
 
 ```zenscript
 myMCPlayerEntity.getYOffset();
@@ -1068,28 +1068,28 @@ myMCPlayerEntity.getYOffset();
 
 ### getYaw
 
-Gets the current yaw of the entity
+获取当前实体的 yawa
 
-Returns float
-
-```zenscript
-myMCPlayerEntity.getYaw(partialTicks as float);
-```
-
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
-
-
-### giveExperiencePoints
+返回浮点数
 
 ```zenscript
-myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
+myMCPlayerEntity.getYaw(partialTicks as float)；
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_195068_1_ | int  | No description provided |
+| 参数      | 类型  | 描述                      |
+| ------- | --- | ----------------------- |
+| 部分Ticks | 浮点数 | No description provided |
+
+
+### 赠送经验点
+
+```zenscript
+myMCPlayerEntity.giveExperiencePoints(p_195068_1_int)；
+```
+
+| 参数            | 类型 | 描述                      |
+| ------------- | -- | ----------------------- |
+| p_195068_1_ | 整数 | No description provided |
 
 
 ### handleStatusUpdate
@@ -1098,55 +1098,55 @@ myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
 myMCPlayerEntity.handleStatusUpdate(id as byte);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | byte | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| id | 字节 | No description provided |
 
 
-### handleWaterMovement
+### 手水运动
 
-Returns if this entity is in water and will end up adding the waters velocity to the entity
+返回如果该实体在水中并最终会将水的速度添加到该实体中
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.handleWaterMovement();
 ```
 
-### hasCustomName
+### hasCustom名称
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.hasCustomName();
 ```
 
-### hasNoGravity
+### 急性重力
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.hasNoGravity();
 ```
 
-### hasPermissionLevel
+### hasmission级别
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
+myMCPlayerEntity.hasPermissionLevel(p_211513_1_int)；
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_211513_1_ | int  | No description provided |
+| 参数            | 类型 | 描述                      |
+| ------------- | -- | ----------------------- |
+| p_211513_1_ | 整数 | No description provided |
 
 
-### hasReducedDebug
+### 加速调试器
 
-Whether the "reducedDebugInfo" option is active for this player.
+"reducedDebugInfo"选项是否对此玩家生效。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.hasReducedDebug();
@@ -1154,78 +1154,78 @@ myMCPlayerEntity.hasReducedDebug();
 
 ### hashCode
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.hashCode();
 ```
 
-### heal
+### 恢复
 
-Heal living entity (param: amount of half-hearts)
+治愈生命实体(参数：半心数)
 
 ```zenscript
-myMCPlayerEntity.heal(healAmount as float);
+myMCPlayerEntity.heal(治疗Amount as float)；
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healAmount | float | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 治疗量 | 浮点数 | No description provided |
 
 
-### ignoreItemEntityData
+### 忽略项目属性数据
 
-Checks if players can use this entity to access operator (permission level 2) commands either directly or indirectly, such as give or setblock. A similar method exists for entities at {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>For example, {@link
- net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() command block minecarts} and {@link
- net.minecraft.entity.item.EntityMinecartMobSpawner#ignoreItemEntityData() mob spawner minecarts} (spawning command
- block minecarts or drops) are considered accessible.</p>Returns: `true if this entity offers ways for unauthorized
+检查玩家是否可以使用此实体访问运算符 (权限级别2) 直接或 间接命令，例如授予或设置块。 对于{@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}中的实体存在类似的方法。<p>例如，{@link
+ net.minecraft.entity.itey.EntityMinecartCommandBlock#ignoreItemEntityData() 命令 block minecarts} 和 {@link
+ net.minecraft.entity.itey.item.EntityMinecartt MobSpawner#ignoreItemEntityData() mob spawner minecarts} (spawning 命令
+ blockminecarts 或 drops) 都可以访问。</p>Returns: `true if this entity offers ways for unauthorized
  players to use restricted commands`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.ignoreItemEntityData();
 ```
 
-### isActiveItemStackBlocking
+### 禁用物品封禁
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isActiveItemStackBlocking();
 ```
 
-### isAddedToWorld
+### isaddedToWorld
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isAddedToWorld();
+myMCPlayerEntity.isaddedToWorld();
 ```
 
 ### isAlive
 
-Returns true if the entity has not been .
+如果实体不是, 则返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isAlive();
 ```
 
-### isAllowEdit
+### 编辑
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isAllowEdit();
+myMCPlayerEntity.isallowedit();
 ```
 
 ### isBeingRidden
 
-If at least 1 entity is riding this one
+如果至少有一个实体乘坐这个实体
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isBeingRidden();
@@ -1233,9 +1233,9 @@ myMCPlayerEntity.isBeingRidden();
 
 ### isBurning
 
-Returns true if the entity is on fire. Used by render to add the fire effect on rendering.
+如果实体在火星上，则返回 true。 用于渲染时添加火焰效果。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isBurning();
@@ -1243,33 +1243,33 @@ myMCPlayerEntity.isBurning();
 
 ### isChild
 
-If Animal, checks if the age timer is negative
+如果动物的话，请检查年龄计时器是否为负数
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isChild();
 ```
 
-### isCreative
+### 有创意的
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isCreative();
 ```
 
-### isCustomNameVisible
+### isCustomName可见
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isCustomNameVisible();
 ```
 
-### isElytraFlying
+### isElytraFlim
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isElytraFlying();
@@ -1277,9 +1277,9 @@ myMCPlayerEntity.isElytraFlying();
 
 ### isEntityInsideOpaqueBlock
 
-Checks if this entity is inside of an opaque block
+检查此实体是否在一个不透明方块内
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isEntityInsideOpaqueBlock();
@@ -1287,9 +1287,9 @@ myMCPlayerEntity.isEntityInsideOpaqueBlock();
 
 ### isEntityUndead
 
-Returns true if this entity is undead.
+如果此实体未亡，则返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isEntityUndead();
@@ -1297,7 +1297,7 @@ myMCPlayerEntity.isEntityUndead();
 
 ### isGlowing
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isGlowing();
@@ -1305,7 +1305,7 @@ myMCPlayerEntity.isGlowing();
 
 ### isHandActive
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isHandActive();
@@ -1313,7 +1313,7 @@ myMCPlayerEntity.isHandActive();
 
 ### isImmuneToExplosions
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isImmuneToExplosions();
@@ -1321,7 +1321,7 @@ myMCPlayerEntity.isImmuneToExplosions();
 
 ### isImmuneToFire
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isImmuneToFire();
@@ -1329,7 +1329,7 @@ myMCPlayerEntity.isImmuneToFire();
 
 ### isInLava
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isInLava();
@@ -1337,94 +1337,94 @@ myMCPlayerEntity.isInLava();
 
 ### isInRangeToRender3d
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRender3d(x as double, y as double, z as double);
+myMCPlayerEntity.isInrangeToRender3d(fx as touble, y as 加倍, z as 加倍);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
 ### isInRangeToRenderDist
 
-Checks if the entity is in range to render.
+检查实体是否在要渲染的范围内。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRenderDist(distance as double);
+myMCPlayerEntity.isInrangeToRenderDist(距离加倍)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| distance  | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 距离 | 双精度 | No description provided |
 
 
 ### isInWater
 
-Checks if this entity is inside water (if inWater field is true as a result of handleWaterMovement() returning true)
+检查这个实体是否在水中(如果水域因手水移动而是真的) 返回 true)
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isInWater();
 ```
 
-### isInWaterOrBubbleColumn
+### isInWaterOrbblet列
 
-Returns boolean
-
-```zenscript
-myMCPlayerEntity.isInWaterOrBubbleColumn();
-```
-
-### isInWaterRainOrBubbleColumn
-
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isInWaterRainOrBubbleColumn();
+myMCPlayerEntity.isInWaterOrBubblColumn();
 ```
 
-### isInvisible
+### isInWaterRainOrbblet列
 
-Returns boolean
+返回为布尔值
+
+```zenscript
+myMCPlayerEntity.isInWaterRainOrBubblColumn();
+```
+
+### 不可见
+
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isInvisible();
 ```
 
-### isInvisibleToPlayer
+### 不可见的 ToPlayer
 
-Only used by renderer in EntityLivingBase subclasses. Determines if an entity is visible or not to a specific player, if the entity is normally invisible. For EntityLivingBase subclasses, returning false when invisible will render the entity semi-transparent.
+仅供渲染器在 EntityLivingBase 子类中使用。 如果实体通常是不可见的，则确定实体是否为特定玩家可见性。 对于EntityLivingBase子类，隐藏时返回 false将使实体变得半透明。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.isInvisibleToPlayer(player as craftbiner.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| 参数  | 类型                                                                                         | 描述                      |
+| --- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| 播放器 | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
 
 ### isInvulnerable
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isInvulnerable();
+myMCPlayerEntity.isInvulable();
 ```
 
-### isLiving
+### 活着的
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isLiving();
@@ -1432,9 +1432,9 @@ myMCPlayerEntity.isLiving();
 
 ### isNonBoss
 
-Returns false if this Entity is a boss, true otherwise.
+如果此实体是老板，则返回 false，否则为 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isNonBoss();
@@ -1442,26 +1442,26 @@ myMCPlayerEntity.isNonBoss();
 
 ### isOffsetPositionInLiquid
 
-Checks if the offset position from the entity's current position is inside of a liquid.
+检查实体当前位置的偏移位置是否在液体内。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double);
+myMCPlayerEntity.isOffsetPositionInLiquid(fx as touble, y as 加倍, z as 加倍);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
-### isOnLadder
+### isOnLader
 
-Returns true if this entity should move as if it were on a ladder (either because it's actually on a ladder, or for AI reasons)
+如果这个实体应该移动像它在梯子上一样, 则返回 true(因为它实际上在梯子上, 或 for AI 理由)
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isOnLadder();
@@ -1469,59 +1469,59 @@ myMCPlayerEntity.isOnLadder();
 
 ### isOnePlayerRiding
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isOnePlayerRiding();
 ```
 
-### isPassenger
+### 乘客人
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isPassenger();
 ```
 
-### isPlayerFullyAsleep
+### isPlayerFullyleep
 
-Returns whether or not the player is asleep and the screen has fully faded.
+返回玩家是否睡眠，屏幕已完全淡入。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isPlayerFullyAsleep();
 ```
 
-### isPotionActive
+### 处于活动状态
 
-Returns boolean
-
-```zenscript
-myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffect);
-```
-
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
-
-
-### isPotionApplicable
-
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.isPotionApplicable(potioneffectIn as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCPlayerEntity.isPotionActive(药水作为craftbiner.api.potion.MCPotionEffect);
 ```
 
-| Parameter      | Type                                                                                          | Description             |
-| -------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数 | 类型                                                                    | 描述                      |
+| -- | --------------------------------------------------------------------- | ----------------------- |
+| 药水 | [制作效果.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+
+
+### isPotionable
+
+返回为布尔值
+
+```zenscript
+myMCPlayerEntity.isPotionApplicable(pottioneffectin as craftweer.api.potion.MCPotionEffectInstance)；
+```
+
+| 参数   | 类型                                                                                            | 描述                      |
+| ---- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| 药水效果 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### isPushedByWater
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isPushedByWater();
@@ -1529,9 +1529,9 @@ myMCPlayerEntity.isPushedByWater();
 
 ### isServerWorld
 
-Returns whether the entity is in a server world
+返回实体是否在服务器世界
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isServerWorld();
@@ -1539,19 +1539,19 @@ myMCPlayerEntity.isServerWorld();
 
 ### isSilent
 
-Returns: `True if this entity will not play sounds`
+返回： `如果此实体不会播放声音`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSilent();
 ```
 
-### isSleeping
+### 正在睡眠
 
-Returns whether player is sleeping or not
+返回玩家是否睡眠
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSleeping();
@@ -1559,17 +1559,17 @@ myMCPlayerEntity.isSleeping();
 
 ### isSneaking
 
-Returns if this entity is sneaking.
+如果此实体正在潜入，则返回此实体。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSneaking();
 ```
 
-### isSpawnForced
+### Spawn强制使用
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSpawnForced();
@@ -1577,17 +1577,17 @@ myMCPlayerEntity.isSpawnForced();
 
 ### isSpectator
 
-Returns true if the player is in spectator mode.
+如果玩家处于投影模式则返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSpectator();
 ```
 
-### isSpinAttacking
+### isSpinattacking
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSpinAttacking();
@@ -1595,27 +1595,27 @@ myMCPlayerEntity.isSpinAttacking();
 
 ### isSprinting
 
-Get if the Entity is sprinting.
+如果实体正在冲浪，就会得到帮助。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSprinting();
 ```
 
-### isSwimming
+### isSwiming
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isSwimming();
 ```
 
-### isUser
+### 用户
 
-returns true if this is an EntityPlayerSP, or the logged in player.
+如果这是一个 EntityPlayerSP或登录的玩家则返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isUser();
@@ -1623,17 +1623,17 @@ myMCPlayerEntity.isUser();
 
 ### isWet
 
-Checks if this entity is either in water or on an open air block in rain (used in wolves).
+检查该实体是否在水中，或在雨水中的空格(用在狼中)。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.isWet();
 ```
 
-### jump
+### 跳转
 
-Causes this entity to do an upwards motion (jumping).
+导致该实体提出上游动议（jumping）。
 
 ```zenscript
 myMCPlayerEntity.jump();
@@ -1641,81 +1641,81 @@ myMCPlayerEntity.jump();
 
 ### livingTick
 
-Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
+经常呼叫，以便实体能够根据需要更新其每个状态。 例如，僵尸和骨头 用来对日光做出反应并开始燃烧。
 
 ```zenscript
 myMCPlayerEntity.livingTick();
 ```
 
-### moveToBlockPosAndAngles
+### 移动ToBlockPosAndAngles
 
 ```zenscript
-myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn as float, rotationPitchIn as float);
+myMCPlayerEntity.moveToBlockPosAndangles(pos as craftbiner.api.util.BlockPos, rotationYawIn as float, rotationPitchin as float);
 ```
 
-| Parameter       | Type                                                         | Description             |
-| --------------- | ------------------------------------------------------------ | ----------------------- |
-| pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| rotationYawIn   | float                                                        | No description provided |
-| rotationPitchIn | float                                                        | No description provided |
+| 参数      | 类型                                                           | 描述                      |
+| ------- | ------------------------------------------------------------ | ----------------------- |
+| 点       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 旋转Yawin | 浮点数                                                          | No description provided |
+| 旋转音调    | 浮点数                                                          | No description provided |
 
 
-### onAddedToWorld
+### 已添加到世界中
 
 ```zenscript
 myMCPlayerEntity.onAddedToWorld();
 ```
 
-### onCollideWithPlayer
+### onCollideWidPlayer
 
-Called by a player entity when they collide with an entity
-
-```zenscript
-myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
-```
-
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| entityIn  | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
-
-
-### onEnchant
+当玩家与实体碰撞时被玩家实体调用
 
 ```zenscript
-myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, cost as int);
+myMCPlayerEntity.onCollideWillayer(entityIn as craftbiner.api.entity.player.MCPlayerEntity)；
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| enchantedItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| cost          | int                                                               | No description provided |
+| 参数       | 类型                                                                                         | 描述                      |
+| -------- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| entityIn | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
 
 
-### onEnterBubbleColumn
+### 松开的
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
+myMCPlayerEntity.onEnchant(enchantedItem as craftbiner.api.item.IItemStack, cost as int);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| 附魔物品 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 费用   | 整数                                                                | No description provided |
 
 
-### onEnterBubbleColumnWithAirAbove
+### onEnterBubblable列
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(downwards as boolean);
+myMCPlayerEnterBubblColumn(降级为布尔值)；
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 下移 | boolean | No description provided |
+
+
+### onEnterBubblColumnWiAirabove
+
+```zenscript
+myMCPlayerEnterBubblColumnWiAirAbove(下载为布尔值)；
+```
+
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 下移 | boolean | No description provided |
 
 
 ### onKillCommand
 
-Called by the /kill command.
+由 /miller 命令呼叫。
 
 ```zenscript
 myMCPlayerEntity.onKillCommand();
@@ -1727,29 +1727,29 @@ myMCPlayerEntity.onKillCommand();
 myMCPlayerEntity.onRemovedFromWorld();
 ```
 
-### performHurtAnimation
+### 执行休眠动画
 
-Setups the entity to do the hurt animation. Only used by packets in multiplayer.
-
-```zenscript
-myMCPlayerEntity.performHurtAnimation();
-```
-
-### preparePlayerToSpawn
-
-Keeps moving the entity up so it isn't colliding with blocks and other requirements for this entity to be spawned (only actually used on players though its also on Entity)
+设置实体进行伤害动画。 仅在多人游戏中使用数据包。
 
 ```zenscript
-myMCPlayerEntity.preparePlayerToSpawn();
+myMCPlayerEntity.performance HurtAnimation();
 ```
 
-### recalculateSize
+### 准备播放器生成器
+
+保持实体向上移动，所以它不会与方块和其他要求碰撞才能生成这个实体 (实际上只用于玩家，尽管它也在实体上)
 
 ```zenscript
-myMCPlayerEntity.recalculateSize();
+myMCPlayerEntity.preparrePlayerToSpawn();
 ```
 
-### remove
+### 重新计算大小
+
+```zenscript
+myMCPlayerEntity.重新计算Size();
+```
+
+### remove #移除
 
 ```zenscript
 myMCPlayerEntity.remove();
@@ -1760,73 +1760,73 @@ myMCPlayerEntity.remove();
 myMCPlayerEntity.remove(keepData as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| keepData  | boolean | No description provided |
+| 参数   | 类型      | 描述                      |
+| ---- | ------- | ----------------------- |
+| 保存数据 | boolean | No description provided |
 
 
-### removeActivePotionEffect
+### 移除启用药水效果
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+返回 [craftbinstruer.api.potion.MCPotionEffect实例](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.removeActivePotionEffect(arg0 as craftbiner.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| 参数   | 类型                                                                    | 描述                      |
+| ---- | --------------------------------------------------------------------- | ----------------------- |
+| arg0 | [制作效果.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
 
 ### removePassengers
 
-Dismounts all entities riding this entity from this entity.
+将该实体的所有实体从该实体中拔除。
 
 ```zenscript
 myMCPlayerEntity.removePassengers();
 ```
 
-### removePotionEffect
+### 移除药水效果
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotionEffect);
+myMCPlayerEntity.removePotionEffect(effectIn as craftweeker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| effectIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| 参数 | 类型                                                                    | 描述                      |
+| -- | --------------------------------------------------------------------- | ----------------------- |
+| 特效 | [制作效果.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
 
 
 ### removeTag
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.removeTag(tag as String);
+myMCPlayerEntity.removeTag(标记为字符串)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| 参数 | 类型          | 描述                      |
+| -- | ----------- | ----------------------- |
+| 标签 | 字符串[string] | No description provided |
 
 
-### replaceItemInInventory
+### 替换物品库存
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.replaceItemInInventory(inventorySlot as int, itemStackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.replaceItemInventory(inventorySlot为int, itemStackin as craftbiner.api.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| inventorySlot | int                                                               | No description provided |
-| itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| 参数   | 类型                                                                | 描述                      |
+| ---- | ----------------------------------------------------------------- | ----------------------- |
+| 背包   | 整数                                                                | No description provided |
+| 物品应用 | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
 
 
-### resetActiveHand
+### 重置激活
 
 ```zenscript
 myMCPlayerEntity.resetActiveHand();
@@ -1838,208 +1838,208 @@ myMCPlayerEntity.resetActiveHand();
 myMCPlayerEntity.resetCooldown();
 ```
 
-### resetPositionToBB
+### 重置位置ToBB
 
-Resets the entity's position to the center (planar) and bottom (vertical) points of its bounding box.
+将该实体的位置重置为其边界盒的中心点(行星)和底点(垂直)。
 
 ```zenscript
 myMCPlayerEntity.resetPositionToBB();
 ```
 
-### respawnPlayer
+### 重生玩家
 
 ```zenscript
 myMCPlayerEntity.respawnPlayer();
 ```
 
-### revive
+### 重生
 
 ```zenscript
-myMCPlayerEntity.revive();
+myMCPlayerEntity.revve();
 ```
 
-### rotateTowards
+### 旋转方向
 
 ```zenscript
-myMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
+myMCPlayerEntity.rotateTows(yaw as mouble, pitch as 加倍);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| yaw       | double | No description provided |
-| pitch     | double | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 亚乌文 | 双精度 | No description provided |
+| 音调  | 双精度 | No description provided |
 
 
 ### sendEndCombat
 
-Sends an END_COMBAT packet to the client
+向客户端发送一个 END_COMBAT 包
 
 ```zenscript
 myMCPlayerEntity.sendEndCombat();
 ```
 
-### sendEnterCombat
+### 发送娱乐作战模式
 
-Sends an ENTER_COMBAT packet to the client
+向客户端发送ENTER_COMBAT 包
 
 ```zenscript
 myMCPlayerEntity.sendEnterCombat();
 ```
 
-### sendPlayerAbilities
+### 发送玩家能力
 
-Sends the player's abilities to the server (if there is one).
+将玩家的能力发送到服务器 (如果有一个)。
 
 ```zenscript
 myMCPlayerEntity.sendPlayerAbilities();
 ```
 
-### setAIMoveSpeed
+### 设置移动速度
 
-set the movespeed used for the new AI system
-
-```zenscript
-myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
-```
-
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| speedIn   | float | No description provided |
-
-
-### setAbsorptionAmount
+设置用于新的 AI 系统的移动文件
 
 ```zenscript
-myMCPlayerEntity.setAbsorptionAmount(amount as float);
+myMCPlayerEntity.setAIMoveSpeed(speedin as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| amount    | float | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 速度 | 浮点数 | No description provided |
+
+
+### set吸收金额
+
+```zenscript
+myMCPlayerEntity.setAbsorptionAmount(浮点数)；
+```
+
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 金额 | 浮点数 | No description provided |
 
 
 ### setAir
 
 ```zenscript
-myMCPlayerEntity.setAir(air as int);
+myMCPlayerEntity.setAir(空气为int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| air       | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| 空格 | 整数 | No description provided |
 
 
 ### setArrowCountInEntity
 
 ```zenscript
-myMCPlayerEntity.setArrowCountInEntity(count as int);
+myMCPlayerEntity.setArrowCountInEntity(计数为相关)；
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| count     | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| 计数 | 整数 | No description provided |
 
 
-### setBedPosition
+### 设定贝德位置
 
 ```zenscript
-myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.setBedPosition(p_213369_1_as craftbiner.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
+| 参数            | 类型                                                           | 描述                      |
 | ------------- | ------------------------------------------------------------ | ----------------------- |
 | p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
-### setCustomNameVisible
+### setCustomName可见
 
 ```zenscript
-myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
+myMCPlayerEntity.setCustomNameVisible(始终作为布尔值)
 ```
 
-| Parameter           | Type    | Description             |
+| 参数                  | 类型      | 描述                      |
 | ------------------- | ------- | ----------------------- |
 | alwaysRenderNameTag | boolean | No description provided |
 
 
-### setEntityId
+### 设置 Id
 
 ```zenscript
-myMCPlayerEntity.setEntityId(id as int);
+myMCPlayerEntity.setEntityId(id 为int)；
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| id | 整数 | No description provided |
 
 
 ### setFire
 
-Sets entity to burn for x amount of seconds, cannot lower amount of existing fire.
+将实体设置为燃烧x秒，不能降低现有火焰的数量。
 
 ```zenscript
-myMCPlayerEntity.setFire(seconds as int);
+myMCPlayerEntity.setFire(秒为int)；
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| seconds   | int  | No description provided |
+| 参数 | 类型 | 描述                      |
+| -- | -- | ----------------------- |
+| 秒  | 整数 | No description provided |
 
 
 ### setFireTimer
 
 ```zenscript
-myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
+myMCPlayerEntity.setFireTimer(p_223308_1_int)；
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_223308_1_ | int  | No description provided |
+| 参数            | 类型 | 描述                      |
+| ------------- | -- | ----------------------- |
+| p_223308_1_ | 整数 | No description provided |
 
 
 ### setGlowing
 
 ```zenscript
-myMCPlayerEntity.setGlowing(glowingIn as boolean);
+myMCPlayerEntity.setGlowingglowingin as boolean;
 ```
 
-| Parameter | Type    | Description             |
+| 参数        | 类型      | 描述                      |
 | --------- | ------- | ----------------------- |
 | glowingIn | boolean | No description provided |
 
 
-### setHeadRotation
+### 设置头旋转
 
 ```zenscript
-myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
+myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int)；
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| yaw       | float | No description provided |
-| pitch     | int   | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 亚乌文 | 浮点数 | No description provided |
+| 音调  | 整数  | No description provided |
 
 
-### setHealth
+### 设置生命值
 
 ```zenscript
 myMCPlayerEntity.setHealth(health as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| health    | float | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 健康 | 浮点数 | No description provided |
 
 
 ### setIdleTime
 
 ```zenscript
-myMCPlayerEntity.setIdleTime(idleTimeIn as int);
+myMCPlayerEntity.setIdleTime(idleTimeIn as int)；
 ```
 
-| Parameter  | Type | Description             |
-| ---------- | ---- | ----------------------- |
-| idleTimeIn | int  | No description provided |
+| 参数         | 类型 | 描述                      |
+| ---------- | -- | ----------------------- |
+| idleTimeIn | 整数 | No description provided |
 
 
 ### setInLava
@@ -2048,26 +2048,26 @@ myMCPlayerEntity.setIdleTime(idleTimeIn as int);
 myMCPlayerEntity.setInLava();
 ```
 
-### setInvisible
+### 设置不可见
 
 ```zenscript
-myMCPlayerEntity.setInvisible(invisible as boolean);
+myMCPlayerEntity.setInvisible(不可见为布尔值)；
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| invisible | boolean | No description provided |
+| 参数  | 类型      | 描述                      |
+| --- | ------- | ----------------------- |
+| 不可见 | boolean | No description provided |
 
 
 ### setInvulnerable
 
-Sets whether this Entity is invulnerable.
+设置这个实体是否不受伤害。
 
 ```zenscript
 myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 ```
 
-| Parameter      | Type    | Description             |
+| 参数             | 类型      | 描述                      |
 | -------------- | ------- | ----------------------- |
 | isInvulnerable | boolean | No description provided |
 
@@ -2078,403 +2078,403 @@ myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 myMCPlayerEntity.setJumping(jumping as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| jumping   | boolean | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 跳转 | boolean | No description provided |
 
 
-### setLocationAndAngles
+### setlocationAndAngles
 
-Sets the location and Yaw/Pitch of an entity in the world
+设置一个实体在世界上的位置和Yaw/Pitch
 
 ```zenscript
-myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float);
+myMCPlayerEntity.setLocationAndAngles(x as 加倍，y as 加倍，z as 加倍，yaw as float，pitch as float)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| x   | 双精度 | No description provided |
+| 年   | 双精度 | No description provided |
+| z   | 双精度 | No description provided |
+| 亚乌文 | 浮点数 | No description provided |
+| 音调  | 浮点数 | No description provided |
 
 
 ### setMotion
 
 ```zenscript
-myMCPlayerEntity.setMotion(x as double, y as double, z as double);
+myMCPlayerEntity.setMotion(x 双倍，当双倍，当z倍)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
-### setNoGravity
+### 设置重力
 
 ```zenscript
-myMCPlayerEntity.setNoGravity(noGravity as boolean);
+myMCPlayerEntity.setNoGravity(nocravity as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| noGravity | boolean | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 重力 | boolean | No description provided |
 
 
-### setPartying
+### 正在设置
 
-Called when a record starts or stops playing. Used to make parrots start or stop partying.
+当记录开始或停止播放时拨打电话。 用于制作parrots 开始或停止配置。
 
 ```zenscript
-myMCPlayerEntity.setPartying(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
+myMCPlayerEntity.setPartying(pos as craftbiner.api.util.BlockPos, isPartying as boolean);
 ```
 
-| Parameter  | Type                                                         | Description             |
-| ---------- | ------------------------------------------------------------ | ----------------------- |
-| pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| isPartying | boolean                                                      | No description provided |
+| 参数  | 类型                                                           | 描述                      |
+| --- | ------------------------------------------------------------ | ----------------------- |
+| 点   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 组队中 | boolean                                                      | No description provided |
 
 
 ### setPortal
 
-Marks the entity as being inside a portal, activating teleportation logic in onEntityUpdate() in the following tick(s).
+将该实体标记为在一个门户中，激活传送逻辑在 onEntityUpdate() 中，以下 tick(s)。
 
 ```zenscript
-myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.setPortal(pos as craftwiner.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 参数 | 类型                                                           | 描述                      |
+| -- | ------------------------------------------------------------ | ----------------------- |
+| 点  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
-### setPosition
+### 设置位置
 
-Sets the x,y,z of the entity from the given parameters. Also seems to set up a bounding box.
+设置给定参数中的实体x,y,z。 也似乎设置了一个边界盒。
 
 ```zenscript
-myMCPlayerEntity.setPosition(x as double, y as double, z as double);
+myMCPlayerEntity.setPosition(fx as 两倍，y as 两倍，z 双倍)；
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
-### setPositionAndRotation
+### 设置位置AndRotation
 
-Sets position and rotation, clamping and wrapping params to valid values. Used by network code.
+设置位置和旋转、夹和包装参数为有效值。 用于网络代码。
 
 ```zenscript
 myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, yaw as float, pitch as float);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| x   | 双精度 | No description provided |
+| 年   | 双精度 | No description provided |
+| z   | 双精度 | No description provided |
+| 亚乌文 | 浮点数 | No description provided |
+| 音调  | 浮点数 | No description provided |
 
 
 ### setPositionAndRotationDirect
 
-Sets a target for the client to interpolate towards over the next few ticks
+为客户端设置一个目标，以便在以后的几个刻度
 
 ```zenscript
-myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, pitch as float, posRotationIncrements as int, teleport as boolean);
+myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, poster RotationInc., as boolean);
 ```
 
-| Parameter             | Type    | Description             |
-| --------------------- | ------- | ----------------------- |
-| x                     | double  | No description provided |
-| y                     | double  | No description provided |
-| z                     | double  | No description provided |
-| yaw                   | float   | No description provided |
-| pitch                 | float   | No description provided |
-| posRotationIncrements | int     | No description provided |
-| teleport              | boolean | No description provided |
+| 参数     | 类型      | 描述                      |
+| ------ | ------- | ----------------------- |
+| x      | 双精度     | No description provided |
+| 年      | 双精度     | No description provided |
+| z      | 双精度     | No description provided |
+| 亚乌文    | 浮点数     | No description provided |
+| 音调     | 浮点数     | No description provided |
+| 帖子旋转增量 | 整数      | No description provided |
+| 传送器    | boolean | No description provided |
 
 
 ### setPositionAndUpdate
 
-Sets the position of the entity and updates the 'last' variables
+设置实体的位置并更新“最后”变量
 
 ```zenscript
-myMCPlayerEntity.setPositionAndUpdate(x as double, y as double, z as double);
+myMCPlayerEntity.setPositionAndUpdate(fx as mouble, y as 加倍, z as 加倍);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
-### setPositionNonDirty
+### 设置位置NonDirty
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.setPositionNonDirty();
 ```
 
-### setReducedDebug
+### 已设置简化调试
 
 ```zenscript
-myMCPlayerEntity.setReducedDebug(reducedDebug as boolean);
+myMCPlayerEntity.setReducedDebug(reducedDebug作为布尔值);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| reducedDebug | boolean | No description provided |
+| 参数   | 类型      | 描述                      |
+| ---- | ------- | ----------------------- |
+| 简化调试 | boolean | No description provided |
 
 
 ### setRenderYawOffset
 
-Set the render yaw offset
+设置 render yaw 偏移
 
 ```zenscript
-myMCPlayerEntity.setRenderYawOffset(offset as float);
+myMCPlayerEntity.setRenderYawOffset(偏移为浮点型)；
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| offset    | float | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 偏移量 | 浮点数 | No description provided |
 
 
 ### setRotationYawHead
 
-Sets the head's yaw rotation of the entity.
+设置实体头部的亚乌旋转.
 
 ```zenscript
-myMCPlayerEntity.setRotationYawHead(rotation as float);
+myMCPlayerEntity.setRotationYawHead(旋转为浮点数)；
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| rotation  | float | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| 旋转 | 浮点数 | No description provided |
 
 
-### setScore
+### 设置得分
 
-Set player's score
+设置玩家得分
 
 ```zenscript
-myMCPlayerEntity.setScore(scoreIn as int);
+myMCPlayerEntity.setScorree(按原样)；
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| 参数      | 类型 | 描述                      |
+| ------- | -- | ----------------------- |
+| scoreIn | 整数 | No description provided |
 
 
 ### setSilent
 
-When set to true the entity will not play sounds.
+当设置为 true时，实体将不会播放声音。
 
 ```zenscript
 myMCPlayerEntity.setSilent(isSilent as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| isSilent  | boolean | No description provided |
+| 参数       | 类型      | 描述                      |
+| -------- | ------- | ----------------------- |
+| isSilent | boolean | No description provided |
 
 
-### setSneaking
+### SetSneaking
 
-Sets the sneaking flag.
-
-```zenscript
-myMCPlayerEntity.setSneaking(sneaking as boolean);
-```
-
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sneaking  | boolean | No description provided |
-
-
-### setSpawnPoint
+设置潜行标志.
 
 ```zenscript
-myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, forced as boolean);
+myMCPlayerEntity.setSneaking(sneaking as boolean)；
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| forced    | boolean                                                      | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 潜行 | boolean | No description provided |
+
+
+### SpetwnPoint
+
+```zenscript
+myMCPlayerEntity.setSpawnPoint(pos as craftbiner.api.util.BlockPos, forced as boolean);
+```
+
+| 参数  | 类型                                                           | 描述                      |
+| --- | ------------------------------------------------------------ | ----------------------- |
+| 点   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| 强制的 | boolean                                                      | No description provided |
 
 
 ### setSprinting
 
-Set sprinting switch for Entity.
+设置实体的打印开关。
 
 ```zenscript
 myMCPlayerEntity.setSprinting(sprinting as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sprinting | boolean | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 刻录 | boolean | No description provided |
 
 
-### setSwimming
+### 游泳集
 
 ```zenscript
-myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
+myMCPlayerEntity.setSwiming(p_204711_1_as boolean);
 ```
 
-| Parameter     | Type    | Description             |
+| 参数            | 类型      | 描述                      |
 | ------------- | ------- | ----------------------- |
 | p_204711_1_ | boolean | No description provided |
 
 
 ### setVelocity
 
-Updates the entity motion clientside, called by packets from the server
+更新通过服务器数据包调用的实体移动客户端。
 
 ```zenscript
-myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
+myMCPlayerEntity.setVelocity(fx as double, y as 加倍, z as 加倍);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| 参数 | 类型  | 描述                      |
+| -- | --- | ----------------------- |
+| x  | 双精度 | No description provided |
+| 年  | 双精度 | No description provided |
+| z  | 双精度 | No description provided |
 
 
-### shouldHeal
+### 应愈合
 
-Checks if the player's health is not full and not zero.
+检查玩家的健康状况是否不完整而不是零。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.shouldHeal();
 ```
 
-### shouldReceiveErrors
+### 应该接收错误
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.shouldReceiveErrors();
 ```
 
-### shouldReceiveFeedback
+### 应该接受反馈
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.shouldReceiveFeedback();
 ```
 
-### shouldRenderSneaking
+### RenderSneaking
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.shouldRenderSneaking();
 ```
 
-### shouldRiderFaceForward
+### 应该RiderFaceward
 
-Returns true if the entity's rider (EntityPlayer) should face forward when mounted. currently only used in vanilla code by pigs.
+如果实体的行程器 (EntityPlayer) 挂载时向前应返回 true。 目前仅用作猪的原版代码。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.shouldRiderFaceward(player as craftweeker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description                          |
-| --------- | ------------------------------------------------------------------------------------------ | ------------------------------------ |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
+| 参数  | 类型                                                                                         | 描述         |
+| --- | ------------------------------------------------------------------------------------------ | ---------- |
+| 播放器 | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 正在骑乘实体的玩家。 |
 
 
-### shouldRiderSit
+### 肩膀胱Sit
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCPlayerEntity.shouldRiderSit();
 ```
 
-### spawnRunningParticles
+### 生成 NRunning粒子
 
-Attempts to create sprinting particles if the entity is sprinting and not in water.
+试图在实体正在旋转时而不是在水中创建印制粒子。
 
 ```zenscript
 myMCPlayerEntity.spawnRunningParticles();
 ```
 
-### spawnSweepParticles
+### 生下滑粒子
 
 ```zenscript
-myMCPlayerEntity.spawnSweepParticles();
+myMCPlayerEntity.spawnSwepParticles();
 ```
 
-### startSleeping
+### 开始睡眠
 
 ```zenscript
-myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
+myMCPlayerEntity.startSleeping(p_213342_1_as craftbiner.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
+| 参数            | 类型                                                           | 描述                      |
 | ------------- | ------------------------------------------------------------ | ----------------------- |
 | p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
 
 
-### startSpinAttack
+### 启动SpinAttack
 
 ```zenscript
-myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
+myMCPlayerEntity.startSpinAttack(p_204803_1_int)；
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_204803_1_ | int  | No description provided |
+| 参数            | 类型 | 描述                      |
+| ------------- | -- | ----------------------- |
+| p_204803_1_ | 整数 | No description provided |
 
 
-### stopActiveHand
+### 停止激活
 
 ```zenscript
 myMCPlayerEntity.stopActiveHand();
 ```
 
-### stopRiding
+### 停车
 
-Dismounts this entity from the entity it is riding.
+将此实体从它正在行驶的实体中拔除。
 
 ```zenscript
 myMCPlayerEntity.stopRiding();
 ```
 
-### teleportKeepLoaded
+### 遥控器已加载
 
 ```zenscript
-myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double, p_223102_5_ as double);
+myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ 为双倍，p_223102_3_ 为双倍，p_223102_5_ 为双倍；
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_223102_1_ | double | No description provided |
-| p_223102_3_ | double | No description provided |
-| p_223102_5_ | double | No description provided |
+| 参数            | 类型  | 描述                      |
+| ------------- | --- | ----------------------- |
+| p_223102_1_ | 双精度 | No description provided |
+| p_223102_3_ | 双精度 | No description provided |
+| p_223102_5_ | 双精度 | No description provided |
 
 
-### tick
+### 刻度
 
-Called to update the entity's position/logic.
+呼吁更新该实体的立场/逻辑。
 
 ```zenscript
 myMCPlayerEntity.tick();
@@ -2482,52 +2482,52 @@ myMCPlayerEntity.tick();
 
 ### toString
 
-Returns String
+返回字符串[String]
 
 ```zenscript
 myMCPlayerEntity.toString();
 ```
 
-### updateRidden
+### 更新Ridden
 
-Handles updating while riding another entity
+在乘坐另一个实体时处理更新
 
 ```zenscript
 myMCPlayerEntity.updateRidden();
 ```
 
-### updateSwimming
+### 更新Swiming
 
 ```zenscript
 myMCPlayerEntity.updateSwimming();
 ```
 
-### wakeUp
+### 唤醒
 
 ```zenscript
 myMCPlayerEntity.wakeUp();
 ```
 
-### wakeUpPlayer
+### 唤醒UpPlayer
 
-Wake up the player if they're sleeping.
+当玩家睡觉时唤醒他们。
 
 ```zenscript
-myMCPlayerEntity.wakeUpPlayer(immediately as boolean, updateWorldFlag as boolean, setSpawn as boolean);
+myMCPlayerEntity.wakeUpPlayer(立即作为布尔型，更新世界旗帜为布尔型，设置生成为布尔型)；
 ```
 
-| Parameter       | Type    | Description             |
+| 参数              | 类型      | 描述                      |
 | --------------- | ------- | ----------------------- |
-| immediately     | boolean | No description provided |
+| 马上的             | boolean | No description provided |
 | updateWorldFlag | boolean | No description provided |
 | setSpawn        | boolean | No description provided |
 
 
 ### xpBarCap
 
-This method returns the cap amount of experience that the experience bar can hold. With each level, the experience cap on the player's experience bar is raised by 10.
+这个方法返回经验栏可以保留的最大体验量。 在每个关卡中，玩家体验栏上的 上限提高了10。
 
-Returns int
+返回为int值
 
 ```zenscript
 myMCPlayerEntity.xpBarCap();

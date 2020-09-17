@@ -1,33 +1,33 @@
 # BlockBuilderBasic
 
-This builder builds the block type that is used by default in [mods.contenttweaker.block.basic.BlockBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) This builder does not offer any special properties to set, you can only build it.
+Ten konstruktor buduje typ bloku, który jest domyślnie używany w [mods.contenttweaker.block.basic. lockBuilderBasic#build](/mods/contenttweaker/API/block/basic/BlockBuilderBasic/#build) Ten konstruktor nie oferuje żadnych specjalnych właściwości, możesz go tylko zbudować.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `contenttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
-mods.contenttweaker.block.basic.BlockBuilderBasic
+Mods.contenttweaker.block.basic.BlockBuilderBasic
 ```
 
-## Implemented Interfaces
-BlockBuilderBasic implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+BlockBuilderBasic implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
-- [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
+- [Mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
-## Methods
-### build
+## Metody
+### kompilacja
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Poleca CoT, aby faktycznie zbudował wszystko, co ten konstruktor ma budować.
 
 ```zenscript
-new BlockBuilder().withType<ItemBuilderBasic>().build(resourceLocation as String);
+new BlockBuilder().withType<ItemBuilderBasic>().build().build(resourceLocation as String);
 new BlockBuilder().withType<ItemBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parametr           | Typ         | Opis                                 |
+| ------------------ | ----------- | ------------------------------------ |
+| lokalizacja zasobu | Ciąg znaków | Ścieżka zasobu do nadania tego bloku |
 
 
 

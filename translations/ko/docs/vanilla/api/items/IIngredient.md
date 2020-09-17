@@ -50,7 +50,7 @@ Returns boolean
 
 ## Properties
 
-| Name          | Type                                                                | Has Getter | Has Setter |
+| 이름            | Type                                                                | Has Getter | Has Setter |
 | ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
 | commandString | String                                                              | true       | false      |
 | items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |

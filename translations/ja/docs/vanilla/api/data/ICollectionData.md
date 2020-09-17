@@ -1,51 +1,51 @@
 # ICollectionData
 
-The ICollection data is used to represent a collection of [crafttweaker.api.data.IData](/vanilla/api/data/IData) like a List<IData>
+ICollection データは、リストのような [crafttweaker.api.data.IData](/vanilla/api/data/IData) のコレクションを表すために使用されます。<IData>
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.data.ICollectionData
 ```
 
-## Implemented Interfaces
-ICollectionData implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+IECollectionData は、以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Methods
-### add
+## メソッド
+### 追加
 
 ```zenscript
 new ListData(["Hello", "World"]).add(value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).add("today");
 ```
 
-| Parameter | Type                                                   | Description                  |
-| --------- | ------------------------------------------------------ | ---------------------------- |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list |
+| パラメータ | タイプ                                                    | 説明        |
+| ----- | ------------------------------------------------------ | --------- |
+| 値     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値 |
 
 
 
 ```zenscript
 new ListData(["Hello", "World"]).add(index as int, value as crafttweaker.api.data.IData);
-new ListData(["Hello", "World"]).add(1, "beautiful");
+new ListData(["Hello", "World"]).add(1, "beautful");
 ```
 
-| Parameter | Type                                                   | Description                                                          |
-| --------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| index     | int                                                    | The index to add to. Subsequent items will be moved one index higher |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The value to add to the list                                         |
+| パラメータ  | タイプ                                                    | 説明                                   |
+| ------ | ------------------------------------------------------ | ------------------------------------ |
+| インデックス | int                                                    | 追加するインデックス 後続のアイテムは1つ高いインデックスに移動されます |
+| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | リストに追加する値                            |
 
 
 ### asList
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+リストを取得<IData> この IData の表現は、 [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a list.`
+ 戻り値: `この IData がリストでない場合は null です。`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+戻り値 List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 new ListData(["Hello", "World"]).asList();
@@ -53,11 +53,11 @@ new ListData(["Hello", "World"]).asList();
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+この IData のマップ<String, IData> 表現を取得します。 [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) 以外の場合は null を返します。
 
- Returns: `null if this IData is not a map.`
+ 戻り値: `この IData がマップでない場合は null です。`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 new ListData(["Hello", "World"]).asMap();
@@ -65,79 +65,79 @@ new ListData(["Hello", "World"]).asMap();
 
 ### asString
 
-Gets the String representation of this IData
+この IData の文字列表現を取得します
 
- Returns: `String that represents this IData (value and type).`
+ 戻り値: `この IData (値と型) を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 new ListData(["Hello", "World"]).asString();
 ```
 
-### clear
+### クリア
 
-Removes every element in the list
+リスト内のすべての要素を削除します
 
 ```zenscript
 new ListData(["Hello", "World"]).clear();
 ```
 
-### contains
+### を含む
 
 Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-new ListData(["Hello", "World"]).contains(data as crafttweaker.api.data.IData);
+new ListData(["Hello", "World"]). contains(data as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).contains("Display");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| パラメータ | タイプ                                                    | 説明                    |
+| ----- | ------------------------------------------------------ | --------------------- |
+| データ   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | それが含まれているかどうかを確認するデータ |
 
 
-### copy
+### コピー
 
-Makes a copy of this IData.
+このIDataのコピーを作成します。
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData はデフォルトで変更不能です。これを使用してオブジェクトの適切なコピーを作成します。
 
- Returns: `a copy of this IData.`
+ 戻り値: `この IData のコピー`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new ListData(["Hello", "World"]).copy();
 ```
 
-### get
+### 取得する
 
-Retrieves the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を取得します。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new ListData(["Hello", "World"]).get(index as int);
 new ListData(["Hello", "World"]).get(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| パラメータ  | タイプ | 説明           |
+| ------ | --- | ------------ |
+| インデックス | int | インデックス（0ベース） |
 
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+内部 NBT タグの ID を取得します。
 
- Used to determine what NBT type is stored (in a list for example)
+ どの種類の NBT が格納されているかを決定するために使用されます(例えばリスト)
 
- Returns: `ID of the NBT tag that this data represents.`
+ 戻り値: `このデータが表現する NBT タグの ID。`
 
-Returns byte
+バイトを返します
 
 ```zenscript
 new ListData(["Hello", "World"]).getId();
@@ -145,53 +145,53 @@ new ListData(["Hello", "World"]).getId();
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+内部 INBT タグの文字列表現を取得します。
 
- Returns: `String that represents the internal INBT of this IData.`
+ 戻り値: `この IData の内部 INBT を表す文字列。`
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 new ListData(["Hello", "World"]).getString();
 ```
 
-### remove
+### 削除
 
-Removes the [crafttweaker.api.data.IData](/vanilla/api/data/IData) stored at the given index.
+指定したインデックスに保存されている [crafttweaker.api.data.IData](/vanilla/api/data/IData) を削除します。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new ListData(["Hello", "World"]).remove(index as int);
 new ListData(["Hello", "World"]).remove(0);
 ```
 
-| Parameter | Type | Description         |
-| --------- | ---- | ------------------- |
-| index     | int  | The index (0-based) |
+| パラメータ  | タイプ | 説明           |
+| ------ | --- | ------------ |
+| インデックス | int | インデックス（0ベース） |
 
 
-### set
+### セット
 
-Sets the item at the provided index to the given value
+指定されたインデックスの項目を指定された値に設定します。
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+戻り値 [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new ListData(["Hello", "World"]).set(index as int, value as crafttweaker.api.data.IData);
 new ListData(["Hello", "World"]).set(0, "Bye");
 ```
 
-| Parameter | Type                                                   | Description                |
-| --------- | ------------------------------------------------------ | -------------------------- |
-| index     | int                                                    | The index to set (0-based) |
-| value     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | The new Value              |
+| パラメータ  | タイプ                                                    | 説明                   |
+| ------ | ------------------------------------------------------ | -------------------- |
+| インデックス | int                                                    | 設定するインデックス (0-based) |
+| 値      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新しい値                 |
 
 
 
-## Properties
+## プロパティー
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| size | int  | true       | false      |
+| 名称  | タイプ | ゲッターあり | セッターあり |
+| --- | --- | ------ | ------ |
+| サイズ | int | true   | false  |
 

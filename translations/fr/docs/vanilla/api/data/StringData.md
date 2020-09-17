@@ -2,36 +2,36 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.data.StringData
 ```
 
-## Implemented Interfaces
-StringData implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+StringData implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.data.StringData(internal as String);
 ```
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| internal  | String | No description provided |
+| Paramètre | Type de texte        | Libellé                    |
+| --------- | -------------------- | -------------------------- |
+| interne   | Chaîne de caractères | Aucune description fournie |
 
 
 
-## Methods
-### asList
+## Méthodes
+### asListe
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Renvoie une liste<IData> la représentation de cet IData, retourne NULL sur tout sauf [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
 
- Returns: `null if this IData is not a list.`
+ Renvoie : `nul si cet IData n'est pas une liste.`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Retourne la liste<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 new StringData("Hello").asList();
@@ -39,11 +39,11 @@ new StringData("Hello").asList();
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Obtient une représentation de la carte<String, IData> de cet IData, retourne null sur tout sauf [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
+ Renvoie : `nul si cet IData n'est pas une carte.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Retourne [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ```zenscript
 new StringData("Hello").asMap();
@@ -51,41 +51,41 @@ new StringData("Hello").asMap();
 
 ### asString
 
-Gets the String representation of this IData
+Obtient la représentation de la chaîne de caractères de cette IData
 
- Returns: `String that represents this IData (value and type).`
+ Renvoie : `chaîne de caractères qui représente cet IData (valeur et type).`
 
-Returns String
+Retourne une chaîne de caractères
 
 ```zenscript
 new StringData("Hello").asString();
 ```
 
-### contains
+### contient
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+Vérifie si cette IData contient un autre IData, principalement utilisé dans les sous-classes de [fabricant. pi.data.ICollectionData](/vanilla/api/data/ICollectionData), est le même qu'une vérification égale sur d'autres types IData
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 new StringData("Hello").contains(data as crafttweaker.api.data.IData);
-new StringData("Hello").contains("Display");
+new StringData("Hello").contains("Affichage");
 ```
 
-| Parameter | Type                                                   | Description                      |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Paramètre | Type de texte                                          | Libellé                                       |
+| --------- | ------------------------------------------------------ | --------------------------------------------- |
+| données   | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | données pour vérifier si elles sont contenues |
 
 
-### copy
+### Copie
 
-Makes a copy of this IData.
+Fait une copie de cet IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData est immuable par défaut, utilisez ceci pour créer une copie correcte de l'objet.
 
- Returns: `a copy of this IData.`
+ Renvoie : `une copie de cet IData.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Retourne [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ```zenscript
 new StringData("Hello").copy();
@@ -93,13 +93,13 @@ new StringData("Hello").copy();
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+Récupère l'ID de la balise NBT interne.
 
- Used to determine what NBT type is stored (in a list for example)
+ Utilisé pour déterminer quel type de NBT est stocké (dans une liste par exemple)
 
- Returns: `ID of the NBT tag that this data represents.`
+ Renvoie : `ID de la balise NBT que ces données représente.`
 
-Returns byte
+Renvoie l'octet
 
 ```zenscript
 new StringData("Hello").getId();
@@ -107,28 +107,28 @@ new StringData("Hello").getId();
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+Récupère la représentation de la chaîne de caractères de la balise INBT interne
 
- Returns: `String that represents the internal INBT of this IData.`
+ Renvoie : `Chaîne qui représente l'INBT interne de cet IData.`
 
-Returns String
+Retourne une chaîne de caractères
 
 ```zenscript
 new StringData("Hello").getString();
 ```
 
 
-## Operators
-### ADD
+## Opérateurs
+### AJOUTER
 
-Concatenates the two string Datas and returns the result.
+Concatène les deux chaînes Datas et retourne le résultat.
 
 ```zenscript
-new StringData("Hello") + data as crafttweaker.api.data.StringData
+new StringData("Hello") + données comme crafttweaker.api.data.StringData
 new StringData("Hello") + new StringData("World")
 ```
 
-| Parameter | Type                                                             | Description              |
-| --------- | ---------------------------------------------------------------- | ------------------------ |
-| data      | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | The other data to append |
+| Paramètre | Type de texte                                                    | Libellé                      |
+| --------- | ---------------------------------------------------------------- | ---------------------------- |
+| données   | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | Les autres données à ajouter |
 

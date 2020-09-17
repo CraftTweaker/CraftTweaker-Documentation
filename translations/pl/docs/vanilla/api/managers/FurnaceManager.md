@@ -1,51 +1,51 @@
-# FurnaceManager
+# Menadżer Pieców
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.FurnaceManager
 ```
 
-## Implemented Interfaces
-FurnaceManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+FurnaceManager implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
-## Methods
-### addRecipe
+## Metody
+### napis
 
-Adds a recipe based on given params.
-
-```zenscript
-furnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
-```
-
-| Parameter | Type                                                                | Description                     |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
-
-
-### removeRecipe
-
-Removes a recipe based on it's output and input.
+Dodaje przepis na podstawie podanych parametrów.
 
 ```zenscript
-furnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
-furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+piec.addRecipe(nazwa jako String, wyjście jak crafttweaker.api.item.IItemStack, wejście jako crafttweaker.api.item.IIngredient, xp jako float, cookTime jak int);
+piec.addRecipe.Recipe. <item:diamond>, <tag:minecraft:wool>, , 1.0, 0);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Parametr | Typ                                                               | Opis                              |
+| -------- | ----------------------------------------------------------------- | --------------------------------- |
+| Nazwa    | Ciąg znaków                                                       | Nazwa nowego przepisu             |
+| wyjście  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | IItemStack wyjście przepisu       |
+| input    | [crafttweaker.api.item.Składnik](/vanilla/api/items/IIngredient)  | ISkładnik wprowadzany do przepisu |
+| xp       | zmiennoprzecinkowe                                                | ile xp dostaje gracz              |
+| cookTime | odcień                                                            | Jak długo trwa gotowanie          |
+
+
+### usuń Przepis
+
+Usuwa przepis na podstawie jego wyjścia i wejścia.
+
+```zenscript
+piec.removeRecipe(wyjście jako wyjście ze rzemieślnik.api.item.IItemStack, wejście jako crafttweaker.api.item.IIngredient);
+piec.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
+```
+
+| Parametr | Typ                                                               | Opis                              |
+| -------- | ----------------------------------------------------------------- | --------------------------------- |
+| wyjście  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | IItemStack wyjście receptury.     |
+| input    | [crafttweaker.api.item.Składnik](/vanilla/api/items/IIngredient)  | ISkładnik receptury do usunięcia. |
 
 
 

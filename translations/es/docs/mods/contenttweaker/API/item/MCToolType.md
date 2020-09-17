@@ -1,37 +1,37 @@
 # MCToolType
 
-A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
+Un tipo de herramienta se utiliza para identificar qué tipo de bloques puede minar una herramienta, o inversamente, qué tipo de herramienta es necesaria para minar un bloque determinado.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implemented Interfaces
-MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCToolType implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructors
-Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
+## Constructores
+Construye un objeto ToolType. Si uno con el nombre dado ya existe, apuntará internamente al mismo tipo de herramienta. De lo contrario, se crea uno nuevo con el nombre (¡Lo mismo es válido para los Brackets también!)
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type   | Description         |
-| --------- | ------ | ------------------- |
-| name      | String | The name to be used |
+| Parámetro | Tipo   | Descripción      |
+| --------- | ------ | ---------------- |
+| nombre    | Cadena | El nombre a usar |
 
 
 
-## Methods
+## Métodos
 ### getName
 
-Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+Obtiene el nombre de este tipo de herramientas. El nombre es lo que se utiliza en la expresión de corchetes después del `<tipo de herramienta:`
 
-Return type: String
+Tipo de retorno: Cadena
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Return type: String
 
 ### hashCode
 
-Returns the object's hash code
+Devuelve el código hash del objeto
 
-Return type: int
+Tipo de retorno: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,39 +49,39 @@ Return type: int
 
 ### toString
 
-Get the string representation of this type. Is different from commandString!
+Obtener la representación de cadena de este tipo. ¡Es diferente de commandString!
 
-Return type: String
+Tipo de retorno: Cadena
 
 ```zenscript
 <tooltype:pickaxe>.toString();
 ```
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| Nombre        | Tipo   | Tiene Obtén | Tiene Setter |
+| ------------- | ------ | ----------- | ------------ |
+| commandString | Cadena | verdad      | falso        |
+| nombre        | Cadena | verdad      | falso        |
 
-## Operators
-### EQUALS
+## Operadores
+### IGUALES
 
-Compares if two given MCToolType objects are equal
+Evalúa si dos objetos MCToolType son iguales
 
 ```zenscript
-<tooltype:pickaxe> == o as Object
-<tooltype:pickaxe> == new MCToolType("pickaxe")
+<tooltype:pickaxe> == o como objeto
+<tooltype:pickaxe> == nuevo MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
-| --------- | ------ | ---------------- |
-| o         | Object | The other object |
+| Parámetro | Tipo   | Descripción    |
+| --------- | ------ | -------------- |
+| o         | Objeto | El otro objeto |
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Tipo de resultado | Es implícito |
+| ----------------- | ------------ |
+| Cadena            | falso        |
 

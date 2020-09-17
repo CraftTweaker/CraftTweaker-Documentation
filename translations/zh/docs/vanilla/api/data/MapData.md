@@ -4,7 +4,7 @@
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 craftminstrer.api.data.MapData
@@ -21,9 +21,9 @@ new crafttweaker.api.data.MapData();
 ```zenscript
 new crafttweaker.api.data.MapData(map as crafttweaker.api.data.IData[String]);
 ```
-| 参数  | 参数                                                             | 描述    |
-| --- | -------------------------------------------------------------- | ----- |
-| map | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | 未提供说明 |
+| 参数  | 类型                                                             | 描述                      |
+| --- | -------------------------------------------------------------- | ----------------------- |
+| map | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | No description provided |
 
 
 
@@ -91,9 +91,9 @@ myMapData.contains("Hello");
 ```
 
 
-| 参数  | 返回值类型  | 描述     |
-| --- | ------ | ------ |
-| key | String | 要搜索的密钥 |
+| 参数  | 类型          | 描述     |
+| --- | ----------- | ------ |
+| key | 字符串[string] | 要搜索的密钥 |
 
 
 
@@ -132,9 +132,9 @@ myMapData.get("Hello");
 ```
 
 
-| 参数  | 返回值类型  | 描述     |
-| --- | ------ | ------ |
-| key | String | 要搜索的密钥 |
+| 参数  | 类型          | 描述     |
+| --- | ----------- | ------ |
+| key | 字符串[string] | 要搜索的密钥 |
 
 
 
@@ -161,7 +161,7 @@ myMapData.getId();
 
 ### getString #获取字符串
 
-getString #获取字符串
+获取内部INBT标记的字符串表示形式
 
 返回：`表示此 IData 内部INBT 的字符串。`
 
@@ -190,9 +190,9 @@ myMapData.merge({Doodle: "Do});
 ```
 
 
-| 参数    | 返回值类型                                                      | 描述     |
-| ----- | ---------------------------------------------------------- | ------ |
-| other | [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | 另一张地图。 |
+| 参数    | 类型                                                          | 描述     |
+| ----- | ----------------------------------------------------------- | ------ |
+| other | [craftminstrer.api.data.MapData](/vanilla/api/data/MapData) | 另一张地图。 |
 
 
 
@@ -212,9 +212,9 @@ myMapData.put("Hello", "Goodbye");
 ```
 
 
-| 参数    | 返回值类型                                                  | 描述       |
+| 参数    | 类型                                                     | 描述       |
 | ----- | ------------------------------------------------------ | -------- |
-| key   | String                                                 | 要设置值的密钥。 |
+| key   | 字符串[string]                                            | 要设置值的密钥。 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要设置的值    |
 
 
@@ -233,7 +233,7 @@ myMapData.putAll({Hello: "Goodbye", Item: "Bedrock"});
 ```
 
 
-| 参数  | 返回值类型                                                          | 描述           |
+| 参数  | 类型                                                             | 描述           |
 | --- | -------------------------------------------------------------- | ------------ |
 | map | [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String] | 要添加到此地图的其他条目 |
 
@@ -253,7 +253,7 @@ myMapData.remove("Somewhere");
 ```
 
 
-| 参数  | 返回值类型       | 描述        |
+| 参数  | 类型          | 描述        |
 | --- | ----------- | --------- |
 | key | 字符串[string] | 要删除的条目的密钥 |
 
@@ -264,11 +264,11 @@ myMapData.remove("Somewhere");
 
 ## 参数
 
-| 名称            | 返回值类型       | 可获得  | 可设置  |
-| ------------- | ----------- | ---- | ---- |
-| isEmpty #是否为空 | 布尔值         | true | true |
-| keySet #设置键   | set<String> | true | true |
-| size #大小      | int         | true | true |
+| 名称          | 类型         | 可获得  | 可设置   |
+| ----------- | ---------- | ---- | ----- |
+| isEmpty     | boolean    | true | false |
+| keySet #设置键 | 设置<String> | true | false |
+| 大小          | 整数         | true | false |
 
 
 
@@ -276,7 +276,7 @@ myMapData.remove("Somewhere");
 ## 运算符
 
 
-### ADD #添加
+### ADD
 
 将给定的 IData 中的所有条目添加到此条目
 
@@ -287,14 +287,14 @@ myMapData + data as crafttweaker.api.data.IData
 ```
 
 
-| 参数   | 参数                                                     | 描述    |
-| ---- | ------------------------------------------------------ | ----- |
-| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 未提供说明 |
+| 参数   | 类型                                                     | 描述                      |
+| ---- | ------------------------------------------------------ | ----------------------- |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | No description provided |
 
 
 
 
-## Casters
+## 卡斯特尔
 
 | 结果类型                                                           | 是否隐藏 |
 | -------------------------------------------------------------- | ---- |

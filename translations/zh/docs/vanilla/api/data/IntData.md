@@ -4,7 +4,7 @@
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 Craftbiner.api.data.IntData
@@ -18,13 +18,13 @@ IntData实现了以下接口。 这意味着对这个接口可用的任何方法
 ```zenscript
 new crafttweaker.api.data.IntData(internal as int);
 ```
-| 参数       | 返回值类型 | 描述    |
-| -------- | ----- | ----- |
-| internal | 整型    | 未提供说明 |
+| 参数   | 类型 | 描述                      |
+| ---- | -- | ----------------------- |
+| 内部设置 | 整数 | No description provided |
 
 
 
-## 使用方式
+## 方法
 ### asList #作为列表
 
 获取列表<IData> IData的表示形式，对 crafttweaker.api.data.ListData </ 0>以外的任何内容返回null。</p> 
@@ -86,7 +86,7 @@ new crafttweaker.api.data.IntData(internal as int);
 ```
 
 
-| 参数   | 返回值类型                                                  | 描述          |
+| 参数   | 类型                                                     | 描述          |
 | ---- | ------------------------------------------------------ | ----------- |
 | data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
@@ -134,7 +134,7 @@ IData默认情况下是不可变的，使用它可以创建对象的正确副本
 
 ### getString #获取字符串
 
-getString #获取字符串
+获取内部INBT标记的字符串表示形式
 
 返回：`表示此 IData 内部INBT 的字符串。`
 

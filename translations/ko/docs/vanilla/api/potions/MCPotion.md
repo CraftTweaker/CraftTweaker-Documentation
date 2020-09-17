@@ -29,7 +29,7 @@ myMCPotion.getNamePrefixed(name as String);
 
 ## Properties
 
-| Name             | Type                                                                                                | Has Getter | Has Setter |
+| 이름               | Type                                                                                                | Has Getter | Has Setter |
 | ---------------- | --------------------------------------------------------------------------------------------------- | ---------- | ---------- |
 | commandString    | String                                                                                              | true       | false      |
 | effects          | List<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)> | true       | false      |

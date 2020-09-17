@@ -121,6 +121,14 @@ nav:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
+    - Atum 2:
+       - Kiln: 'mods/Atum2/Kiln.md'
+       - Quern: 'mods/Atum2/Quern.md'
+       - Spinning Wheel: 'mods/Atum2/SpinningWheel.md'
+    - Botany Pots:
+      - Crop: 'mods/botanypots/Crop.md'
+      - Fertilizer: 'mods/botanypots/Fertilizer.md'
+      - Soil: 'mods/botanypots/Soil.md'
     - ContentTweaker:
       - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
       - API:

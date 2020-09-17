@@ -1,114 +1,114 @@
 # ItemBuilderTool
 
-A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
+ツールとして使用できるアイテムを作成できる特別なビルダー。 このビルダーに変更する前に、アイテムの最大ダメージを設定する必要があります。 <p> 特殊な方法で、いくつかの工具タイプの採掘レベルと攻撃ダメージを設定できます。
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
 ```
 
-## Implemented Interfaces
-ItemBuilderTool implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+ItemBuilderTool は以下のインターフェイスを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
 ## メソッド
-### build
+### ビルド
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
 
 ```zenscript
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceLocation as String);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
-| ---------------- | ---- | ------------------------------------ |
-| resourceLocation | 文字列型 | The resource path to give this block |
+| パラメータ   | タイプ  | 説明               |
+| ------- | ---- | ---------------- |
+| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
 
 
 ### withAttackDamage
 
-Allows you to set the attack damage bonus that you get when holding this item
+このアイテムを持っているときに獲得できる攻撃ダメージボーナスを設定します
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+戻り値の型: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(attackDamage as float);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(floatとしてattackDamage);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Parameter    | Type  | Description                  |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| パラメータ  | タイプ    | 説明       |
+| ------ | ------ | -------- |
+| 攻撃ダメージ | float型 | 追加攻撃ダメージ |
 
 
 ### withAttackSpeed
 
-Allows you to set the attack speed bonus that you get when holding this item.
+このアイテムを持っているときに獲得する攻撃速度ボーナスを設定できます。
 
- Returns: `This builder, used for method chaining.`
+ 戻り値: `メソッドチェーンに使用されるこのビルダー。`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+戻り値の型: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(attackSpeed as double);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(attackSpeed) double);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Parameter   | Type   | Description      |
-| ----------- | ------ | ---------------- |
-| attackSpeed | double | The attack speed |
+| パラメータ | タイプ    | 説明   |
+| ----- | ------ | ---- |
+| 攻撃速度  | double | 攻撃速度 |
 
 
 ### withDurabilityCostAttack
 
-Allows you to set the amount of damage that this item will receive when hitting enemies. By default this is `0`
+敵を撃った時に受けるダメージを設定できます。 デフォルトではこれは `0` です
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+戻り値の型: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(durabilityCostAttack as int);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(durabilityCostAttack) int);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostAttack | int  | The damage points this item will receive |
+| パラメータ                | タイプ | 説明                  |
+| -------------------- | --- | ------------------- |
+| durabilityCostAttack | int | このアイテムが受け取るダメージポイント |
 
 
 ### withDurabilityCostMining
 
-Allows you to set the amount of damage that this item will receive when mining blocks. By default this is `0`
+このアイテムが採掘時に受けるダメージを設定できます。 デフォルトではこれは `0` です
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+戻り値の型: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(durabilityCostMining as int);
+new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(intとしてのdurabilityCostMining);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
 
-| Parameter            | Type | Description                              |
-| -------------------- | ---- | ---------------------------------------- |
-| durabilityCostMining | int  | The damage points this item will receive |
+| パラメータ                | タイプ | 説明                  |
+| -------------------- | --- | ------------------- |
+| durabilityCostMining | int | このアイテムが受け取るダメージポイント |
 
 
 ### withToolType
 
-Allows you to add a tool type to this tool. You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
+このツールにツールタイプを追加できます。 このタイプにヒットしたときに、タイプ、マイニングレベル、および必要に応じてマイニング速度を指定することができます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+戻り値の型: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(toolType as mods.contenttweaker.item.MCToolType, miningLevel as int, miningSpeed as float);
@@ -116,11 +116,11 @@ new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<t
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parameter   | Type                                                                            | Description                                          | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| パラメータ    | タイプ                                                                             | 説明                               | IsOptional | デフォルト値 |
+| -------- | ------------------------------------------------------------------------------- | -------------------------------- | ---------- | ------ |
+| toolType | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | ツールの種類                           | false      | `null` |
+| 採掘レベル    | int                                                                             | このツールタイプのマイニングレベル                | false      | `null` |
+| 採掘速度     | float型                                                                          | このツールが与えられた種類のブロックをどれだけ速く掘り出せるか。 | true       | `1.0`  |
 
 
 

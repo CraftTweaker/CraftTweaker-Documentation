@@ -1,103 +1,103 @@
 # BlockBuilderPillarRotatable
 
-A special Block Builder that allows you to create blocks that can be rotated in the same way as logs can. <p> This means that it has one texture for the top and bottom and one texture for the sides. By default these sides' locations are the block's name, followed by and either `_end` or `sides`. As with most things here, sample images are generated for you by default, though.
+ログと同じように回転させるブロックを作成できる特別なブロックビルダー。 <p> つまり、上下に一つのテクスチャを、側面に一つのテクスチャを持つことになります。 デフォルトでは、これらの辺の位置はブロックの名前、それに続く `_end` または `辺` です。 ほとんどの場合と同様に、サンプル画像はデフォルトで生成されます。
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+このクラスは mod-id `contenttweaker` を持つ mod によって追加されました。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
 ## クラスのインポート
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable
 ```
 
-## Implemented Interfaces
-BlockBuilderPillarRotatable implements the following interfaces. That means any method available to them can also be used on this class.
+## 実装されたインターフェース
+BlockBuilderPillarRotatableは、次のインターフェースを実装します。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## メソッド
-### build
+### ビルド
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+このビルダーが構築されると思われるものは何でも実際に構築するようCoTに指示します。
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().build("my_awesome_block");
 ```
 
-| Parameter        | Type | Description                          |
-| ---------------- | ---- | ------------------------------------ |
-| resourceLocation | 文字列型 | The resource path to give this block |
+| パラメータ   | タイプ  | 説明               |
+| ------- | ---- | ---------------- |
+| リソースの場所 | 文字列型 | このブロックを与えるリソースパス |
 
 
 ### withEndTexture
 
-Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+エンドサイド (上/下) が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+戻り値の型: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| Parameter  | Type                                                                             | Description                               |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
+| パラメータ      | タイプ                                                                              | 説明              |
+| ---------- | -------------------------------------------------------------------------------- | --------------- |
+| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | エンド面に使用するテクスチャ。 |
 
 
 
-Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+エンドサイド (上/下) が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。 ブロックの名前を入力として受け取り、終了テクスチャを返す関数を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+戻り値の型: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
+new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| パラメータ      | タイプ                                                                                                                                                                                                     | 説明     |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 使用する関数 |
 
 
 ### withSideTexture
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+辺（上下以外のすべて）が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+戻り値の型: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| Parameter    | Type                                                                             | Description                           |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+| パラメータ        | タイプ                                                                              | 説明            |
+| ------------ | -------------------------------------------------------------------------------- | ------------- |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 側面に使用するテクスチャ。 |
 
 
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+辺（上下以外のすべて）が使用するテクスチャのパスを上書きできます。 テクスチャの名前空間がCoTまたはアドオンのいずれかの名前空間にある場合(それをサポートする)は、デフォルトでイメージが作成されます。 ブロックの名前を入力として受け取り、終了テクスチャを返す関数を使用します。
 
- Returns: `This builder, used for method chaining`
+ 戻り値: `このビルダーは、メソッドチェーンに使用されます`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+戻り値の型: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sidesTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
+new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((blockName as RourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Description         |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| パラメータ        | タイプ                                                                                                                                                                                                     | 説明     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 使用する関数 |
 
 
 

@@ -138,7 +138,7 @@ myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
 
 ## Properties
 
-| Name          | Type                                                                         | Has Getter | Has Setter |
+| 이름            | Type                                                                         | Has Getter | Has Setter |
 | ------------- | ---------------------------------------------------------------------------- | ---------- | ---------- |
 | blocks        | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true       | false      |
 | commandString | String                                                                       | true       | false      |

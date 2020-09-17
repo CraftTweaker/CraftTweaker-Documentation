@@ -1,27 +1,27 @@
-# MCRightClickBlock
+# КлайкБлок MCRightClickBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock>);
+new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock(обработчик функции.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock>);
 ```
-| Parameter | Тип                                                                                                                                                                     | Описание                |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock)> | No description provided |
+| Параметр | Тип                                                                                                                                                                     | Описание             |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock)> | Описание отсутствует |
 
 
 
 ## Методы
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickBlock.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCRightClickBlock.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+Возвращается: `Лицо, участвующее в этом взаимодействии. Для всех неблочных взаимодействий он вернёт null.`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Возвращает [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCRightClickBlock.getFace();
@@ -39,9 +39,9 @@ myMCRightClickBlock.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+Возвращается: `Если рука была пуста: {` @code ItemStack.EMPTY}.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCRightClickBlock.getItemStack();
@@ -49,9 +49,9 @@ myMCRightClickBlock.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickBlock.getPlayer();
@@ -59,55 +59,55 @@ myMCRightClickBlock.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+Если взаимодействие было на сущности, то будет BlockPos в центре сущности. Если взаимодействие было на блоке, будет позиция этого блока. В противном случае будет BlockPos в центре игрока. никогда не будет нулевым. Возвращается: `Должность, участвующая в этом взаимодействии.`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCRightClickBlock.getPos();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCRightClickBlock.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCRightClickBlock.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
-Returns boolean
-
-```zenscript
-myMCRightClickBlock.isCanceled();
-```
-
-### setCanceled
+Возвращает boolean
 
 ```zenscript
-myMCRightClickBlock.setCanceled(canceled as boolean);
+myMCRightClickBlock.isCancel();
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+### установка отменена
+
+```zenscript
+myMCRightClickBlock.setОтменено (отменено как boolean);
+```
+
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| отменено | boolean | Описание отсутствует |
 
 
 

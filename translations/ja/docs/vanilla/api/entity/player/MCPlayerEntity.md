@@ -1,133 +1,133 @@
 # MCPlayerEntity
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.entity.player.MCPlayerEntity
 ```
 
-## Methods
+## メソッド
 ### addExhaustion
 
-increases exhaustion level by supplied amount
+供給量で疲労レベルを上げる。
 
 ```zenscript
-myMCPlayerEntity.addExhaustion(exhaustion as float);
+myMCPlayerEntity.addExhaustion(exustrion)
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| exhaustion | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| <unk> | float型 | 説明が提供されていません |
 
 
 ### addExperienceLevel
 
-Add experience levels to this player.
+このプレイヤーに経験値を追加します。
 
 ```zenscript
 myMCPlayerEntity.addExperienceLevel(levels as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| levels    | int  | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| レベル   | int | 説明が提供されていません |
 
 
 ### addItemStackToInventory
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.addItemStackToInventory(p_191521_1_ as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ         | タイプ                                                               | 説明           |
+| ------------- | ----------------------------------------------------------------- | ------------ |
+| p_191521_1_ | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### addMovementStat
 
-Adds a value to a movement statistic field - like run, walk, swin or climb.
+移動統計フィールドに値を追加します - ランニング、ウォーキング、スイン、クライミングなど。
 
 ```zenscript
 myMCPlayerEntity.addMovementStat(p_71000_1_ as double, p_71000_3_ as double, p_71000_5_ as double);
 ```
 
-| Parameter    | Type   | Description             |
-| ------------ | ------ | ----------------------- |
-| p_71000_1_ | double | No description provided |
-| p_71000_3_ | double | No description provided |
-| p_71000_5_ | double | No description provided |
+| パラメータ        | タイプ    | 説明           |
+| ------------ | ------ | ------------ |
+| p_71000_1_ | double | 説明が提供されていません |
+| p_71000_3_ | double | 説明が提供されていません |
+| p_71000_5_ | double | 説明が提供されていません |
 
 
 ### addPotionEffect
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.addPotionEffect(effectInstanceIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter        | Type                                                                                          | Description             |
-| ---------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| パラメータ            | タイプ                                                                                           | 説明           |
+| ---------------- | --------------------------------------------------------------------------------------------- | ------------ |
+| effectInstanceIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 説明が提供されていません |
 
 
 ### addScore
 
-Add to player's score
+プレイヤーのスコアに追加
 
 ```zenscript
 myMCPlayerEntity.addScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| パラメータ   | タイプ | 説明           |
+| ------- | --- | ------------ |
+| scoreIn | int | 説明が提供されていません |
 
 
 ### addTag
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.addTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| パラメータ | タイプ  | 説明           |
+| ----- | ---- | ------------ |
+| タグ    | 文字列型 | 説明が提供されていません |
 
 
 ### addVelocity
 
-Adds to the current velocity of the entity, and sets  to true.
+エンティティの現在のベロシティーに追加し、true に設定します。
 
 ```zenscript
 myMCPlayerEntity.addVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
-### allowLogging
+### ログを許可
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.allowLogging();
 ```
 
-### attackable
+### 攻撃可能
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.attackable();
@@ -135,23 +135,23 @@ myMCPlayerEntity.attackable();
 
 ### attemptTeleport
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.attemptTeleport(p_213373_1_ as double, p_213373_3_ as double, p_213373_5_ as double, p_213373_7_ as boolean);
+myMCPlayerEntity.attemptTeleport(p_213373_1_ を double, p_213373_3_ を double, p_213373_5_ を double, p_213373_7_ を booleanとして);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_213373_1_ | double  | No description provided |
-| p_213373_3_ | double  | No description provided |
-| p_213373_5_ | double  | No description provided |
-| p_213373_7_ | boolean | No description provided |
+| パラメータ         | タイプ      | 説明           |
+| ------------- | -------- | ------------ |
+| p_213373_1_ | double   | 説明が提供されていません |
+| p_213373_3_ | double   | 説明が提供されていません |
+| p_213373_5_ | double   | 説明が提供されていません |
+| p_213373_7_ | boolean型 | 説明が提供されていません |
 
 
 ### baseTick
 
-Gets called every tick from main Entity class
+メインエンティティクラスからすべてのティックを呼び出します
 
 ```zenscript
 myMCPlayerEntity.baseTick();
@@ -159,22 +159,22 @@ myMCPlayerEntity.baseTick();
 
 ### canAttackPlayer
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.canAttackPlayer(other as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.canAttackPlayer(crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| other     | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| パラメータ | タイプ                                                                                        | 説明           |
+| ----- | ------------------------------------------------------------------------------------------ | ------------ |
+| その他   | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 説明が提供されていません |
 
 
 ### canBeAttackedWithItem
 
-Returns true if it's possible to attack this entity with an item.
+アイテムでこのエンティティを攻撃できる場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBeAttackedWithItem();
@@ -182,9 +182,9 @@ myMCPlayerEntity.canBeAttackedWithItem();
 
 ### canBeCollidedWith
 
-Returns true if other Entities should be prevented from moving through this Entity.
+このエンティティを通じて他のエンティティが移動できない場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBeCollidedWith();
@@ -192,9 +192,9 @@ myMCPlayerEntity.canBeCollidedWith();
 
 ### canBeHitWithPotion
 
-Returns false if the entity is an armor stand. Returns true for all other entity living bases.
+エンティティが防具立ての場合は false を返します。 他のすべての住んでいる拠点に対してtrueを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBeHitWithPotion();
@@ -202,9 +202,9 @@ myMCPlayerEntity.canBeHitWithPotion();
 
 ### canBePushed
 
-Returns true if this entity should push and be pushed by other entities when colliding.
+衝突時にこのエンティティがプッシュされ、他のエンティティによってプッシュされる場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBePushed();
@@ -212,15 +212,15 @@ myMCPlayerEntity.canBePushed();
 
 ### canBeRiddenInWater
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBeRiddenInWater();
 ```
 
-### canBreatheUnderwater
+### CanBreatheUnderwater
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canBreatheUnderwater();
@@ -228,33 +228,33 @@ myMCPlayerEntity.canBreatheUnderwater();
 
 ### canEat
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canEat(ignoreHunger as boolean);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| ignoreHunger | boolean | No description provided |
+| パラメータ        | タイプ      | 説明           |
+| ------------ | -------- | ------------ |
+| ignoreHunger | boolean型 | 説明が提供されていません |
 
 
 ### canHarvestBlock
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.canHarvestBlock(state as crafttweaker.api.block.MCBlockState);
+myMCPlayerEntity.canHarvestBlock(crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| パラメータ | タイプ                                                                     | 説明           |
+| ----- | ----------------------------------------------------------------------- | ------------ |
+| 状態    | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 説明が提供されていません |
 
 
 ### canPassengerSteer
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canPassengerSteer();
@@ -262,26 +262,26 @@ myMCPlayerEntity.canPassengerSteer();
 
 ### canPlayerEdit
 
-Returns whether this player can modify the block at a certain location with the given stack. <p> The position being queried is {@code pos.offset(facing.getOpposite()))}. Returns: `Whether this player may modify the queried location in the current world` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
+このプレイヤーが指定されたスタックで特定の場所のブロックを変更できるかどうかを返します。 <p> 問い合わせ先の位置は {@code pos.offset(facing.getOpposite())}です。 戻り値: `このプレイヤーが現在の世界のクエリー場所を変更できるかどうか` @see ItemStack#canPlaceOn(Block) @see ItemStack#canEditBlocks() @see PlayerCapabilities#allowEdit
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.canPlayerEdit(pos as crafttweaker.api.util.BlockPos, facing as crafttweaker.api.util.Direction, stack as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.canPlayerEdit(crafttweaker.api.util.BlockPosと向きcrafttweaker.api.util.Direction, crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | No description provided |
-| facing    | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | No description provided |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ | タイプ                                                               | 説明           |
+| ----- | ----------------------------------------------------------------- | ------------ |
+| pos   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)      | 説明が提供されていません |
+| 面を向いて | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)    | 説明が提供されていません |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### canRenderOnFire
 
-Return whether this entity should be rendered as on fire.
+このエンティティを火のようにレンダリングするかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canRenderOnFire();
@@ -289,7 +289,7 @@ myMCPlayerEntity.canRenderOnFire();
 
 ### canRiderInteract
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canRiderInteract();
@@ -297,30 +297,30 @@ myMCPlayerEntity.canRiderInteract();
 
 ### canSwim
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canSwim();
 ```
 
-### canTrample
+### canTryample
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.canTrample(state as crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
+myMCPlayerEntity.canTrample(crafttweaker.api.block.MCBlockState, pos as crafttweaker.api.util.BlockPos, fallDistance as float);
 ```
 
-| Parameter    | Type                                                                    | Description             |
-| ------------ | ----------------------------------------------------------------------- | ----------------------- |
-| state        | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
-| fallDistance | float                                                                   | No description provided |
+| パラメータ        | タイプ                                                                     | 説明           |
+| ------------ | ----------------------------------------------------------------------- | ------------ |
+| 状態           | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 説明が提供されていません |
+| pos          | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | 説明が提供されていません |
+| fallDistance | float型                                                                  | 説明が提供されていません |
 
 
 ### canUpdate
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canUpdate();
@@ -331,14 +331,14 @@ myMCPlayerEntity.canUpdate();
 myMCPlayerEntity.canUpdate(value as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| value     | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 値     | boolean型 | 説明が提供されていません |
 
 
 ### canUseCommandBlock
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.canUseCommandBlock();
@@ -346,7 +346,7 @@ myMCPlayerEntity.canUseCommandBlock();
 
 ### clearActivePotions
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.clearActivePotions();
@@ -360,7 +360,7 @@ myMCPlayerEntity.clearBedPosition();
 
 ### closeScreen
 
-set current crafting inventory back to the 2x2 square
+現在のクラフトのインベントリを2x2マスに戻します
 
 ```zenscript
 myMCPlayerEntity.closeScreen();
@@ -368,15 +368,15 @@ myMCPlayerEntity.closeScreen();
 
 ### curePotionEffects
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.curePotionEffects(curativeItem as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter    | Type                                                              | Description             |
-| ------------ | ----------------------------------------------------------------- | ----------------------- |
-| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ        | タイプ                                                               | 説明           |
+| ------------ | ----------------------------------------------------------------- | ------------ |
+| curativeItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### detach
@@ -391,70 +391,70 @@ myMCPlayerEntity.detach();
 myMCPlayerEntity.disableShield(p_190777_1_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_190777_1_ | boolean | No description provided |
+| パラメータ         | タイプ      | 説明           |
+| ------------- | -------- | ------------ |
+| p_190777_1_ | boolean型 | 説明が提供されていません |
 
 
 ### doesEntityNotTriggerPressurePlate
 
-Return whether this entity should NOT trigger a pressure plate or a tripwire.
+このエンティティが圧力プレートまたはトリワイヤをトリガーすべきではないかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.doesEntityNotTriggerPressurePlate();
 ```
 
-### equals
+### 等しい
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.equals(p_equals_1_ as Object);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_equals_1_ | Object | No description provided |
+| パラメータ         | タイプ    | 説明           |
+| ------------- | ------ | ------------ |
+| p_equals_1_ | オブジェクト | 説明が提供されていません |
 
 
 ### extinguish
 
-Removes fire from entity.
+エンティティから火を削除します。
 
 ```zenscript
 myMCPlayerEntity.extinguish();
 ```
 
-### fall
+### 落下する
 
 ```zenscript
-myMCPlayerEntity.fall(distance as float, damageMultiplier as float);
+myMCPlayerEntity.fall(distance as float, damagEMultiplier as float);
 ```
 
-| Parameter        | Type  | Description             |
-| ---------------- | ----- | ----------------------- |
-| distance         | float | No description provided |
-| damageMultiplier | float | No description provided |
+| パラメータ            | タイプ    | 説明           |
+| ---------------- | ------ | ------------ |
+| 距離               | float型 | 説明が提供されていません |
+| damageMultiplier | float型 | 説明が提供されていません |
 
 
 ### findAmmo
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-myMCPlayerEntity.findAmmo(shootable as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.findAmmo(crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter | Type                                                              | Description             |
-| --------- | ----------------------------------------------------------------- | ----------------------- |
-| shootable | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ | タイプ                                                               | 説明           |
+| ----- | ----------------------------------------------------------------- | ------------ |
+| 撮影可能  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### func_213300_bk
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.func_213300_bk();
@@ -466,16 +466,16 @@ myMCPlayerEntity.func_213300_bk();
 myMCPlayerEntity.func_213312_b(p_213312_1_ as double, p_213312_3_ as double, p_213312_5_ as double);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_213312_1_ | double | No description provided |
-| p_213312_3_ | double | No description provided |
-| p_213312_5_ | double | No description provided |
+| パラメータ         | タイプ    | 説明           |
+| ------------- | ------ | ------------ |
+| p_213312_1_ | double | 説明が提供されていません |
+| p_213312_3_ | double | 説明が提供されていません |
+| p_213312_5_ | double | 説明が提供されていません |
 
 
 ### func_213314_bj
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.func_213314_bj();
@@ -483,7 +483,7 @@ myMCPlayerEntity.func_213314_bj();
 
 ### func_213343_cS
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.func_213343_cS();
@@ -491,22 +491,22 @@ myMCPlayerEntity.func_213343_cS();
 
 ### func_213365_e
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.func_213365_e(itemstackIn as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter   | Type                                                              | Description             |
-| ----------- | ----------------------------------------------------------------- | ----------------------- |
-| itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ       | タイプ                                                               | 説明           |
+| ----------- | ----------------------------------------------------------------- | ------------ |
+| itemstackIn | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### getAIMoveSpeed
 
-the movespeed used for the new AI system
+新しいAIシステムに使用される移動速度
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getAIMoveSpeed();
@@ -514,9 +514,9 @@ myMCPlayerEntity.getAIMoveSpeed();
 
 ### getAbsorptionAmount
 
-Returns the amount of health added by the Absorption effect.
+吸収効果によって加えられる体力の量を返します。
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getAbsorptionAmount();
@@ -524,7 +524,7 @@ myMCPlayerEntity.getAbsorptionAmount();
 
 ### getActiveItemStack
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getActiveItemStack();
@@ -532,22 +532,22 @@ myMCPlayerEntity.getActiveItemStack();
 
 ### getActivePotionEffect
 
-returns the PotionEffect for the supplied Potion if it is active, null otherwise.
+は、与えられたポーションがアクティブな場合は PotionEffect を返します。それ以外の場合は null を返します。
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+戻り値 [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
 myMCPlayerEntity.getActivePotionEffect(potionIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| パラメータ    | タイプ                                                                           | 説明           |
+| -------- | ----------------------------------------------------------------------------- | ------------ |
+| potionIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | 説明が提供されていません |
 
 
 ### getActivePotionEffects
 
-Returns Collection<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
+戻り値 Collection<[crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)>
 
 ```zenscript
 myMCPlayerEntity.getActivePotionEffects();
@@ -555,9 +555,9 @@ myMCPlayerEntity.getActivePotionEffects();
 
 ### getAdjustedHorizontalFacing
 
-Gets the horizontal facing direction of this Entity, adjusted to take specially-treated entity types into account.
+このエンティティの水平面方向を取得し、特別に処理されたエンティティタイプを考慮するように調整します。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getAdjustedHorizontalFacing();
@@ -573,7 +573,7 @@ myMCPlayerEntity.getAir();
 
 ### getAlwaysRenderNameTagForRender
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.getAlwaysRenderNameTagForRender();
@@ -589,9 +589,9 @@ myMCPlayerEntity.getArrowCountInEntity();
 
 ### getBedDirection
 
-gets the Direction for the camera if this entity is sleeping
+このエンティティがスリープしている場合、カメラの向きを取得します。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getBedDirection();
@@ -599,7 +599,7 @@ myMCPlayerEntity.getBedDirection();
 
 ### getBedLocation
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+戻り値 [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getBedLocation();
@@ -607,7 +607,7 @@ myMCPlayerEntity.getBedLocation();
 
 ### getBlockState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+戻り値 [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCPlayerEntity.getBlockState();
@@ -615,9 +615,9 @@ myMCPlayerEntity.getBlockState();
 
 ### getBrightness
 
-Gets how bright this entity is.
+このエンティティの明るさを取得します。
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getBrightness();
@@ -633,7 +633,7 @@ myMCPlayerEntity.getBrightnessForRender();
 
 ### getCachedUniqueIdString
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMCPlayerEntity.getCachedUniqueIdString();
@@ -641,28 +641,28 @@ myMCPlayerEntity.getCachedUniqueIdString();
 
 ### getClassification
 
-Returns [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
+戻り値 [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification)
 
 ```zenscript
 myMCPlayerEntity.getClassification(forSpawnCount as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| forSpawnCount | boolean | No description provided |
+| パラメータ         | タイプ      | 説明           |
+| ------------- | -------- | ------------ |
+| forSpawnCount | boolean型 | 説明が提供されていません |
 
 
 ### getCollisionBorderSize
 
-Returns float
+float を返します。
 
 ```zenscript
-myMCPlayerEntity.getCollisionBorderSize();
+myMCPlayerEntity.getCollisionBorderSiz();
 ```
 
-### getCooldownPeriod
+### getResoldownPeriod
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getCooldownPeriod();
@@ -670,58 +670,58 @@ myMCPlayerEntity.getCooldownPeriod();
 
 ### getCooledAttackStrength
 
-Returns the percentage of attack power available based on the cooldown (zero to one).
+クールダウンに基づいて攻撃力のパーセンテージを返します（0から1）。
 
-Returns float
+float を返します。
 
 ```zenscript
-myMCPlayerEntity.getCooledAttackStrength(adjustTicks as float);
+myMCPlayerEntity.getCooledAttackStrength(float型としてTicksを調整);
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| adjustTicks | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 調整開始日 | float型 | 説明が提供されていません |
 
 
 ### getDigSpeed
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getDigSpeed(state as crafttweaker.api.block.MCBlockState);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| state     | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
+| パラメータ | タイプ                                                                     | 説明           |
+| ----- | ----------------------------------------------------------------------- | ------------ |
+| 状態    | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 説明が提供されていません |
 
 
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getDigSpeed(arg0 as crafttweaker.api.block.MCBlockState, arg1 as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                                    | Description             |
-| --------- | ----------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | No description provided |
-| arg1      | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | No description provided |
+| パラメータ | タイプ                                                                     | 説明           |
+| ----- | ----------------------------------------------------------------------- | ------------ |
+| arg0  | [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState) | 説明が提供されていません |
+| arg1  | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)            | 説明が提供されていません |
 
 
 ### getDistanceSq
 
-Returns double
+Double を返します。
 
 ```zenscript
 myMCPlayerEntity.getDistanceSq(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### getEntityId
@@ -734,7 +734,7 @@ myMCPlayerEntity.getEntityId();
 
 ### getEntityString
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMCPlayerEntity.getEntityString();
@@ -742,7 +742,7 @@ myMCPlayerEntity.getEntityString();
 
 ### getEyeHeight
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getEyeHeight();
@@ -758,7 +758,7 @@ myMCPlayerEntity.getFireTimer();
 
 ### getHealth
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getHealth();
@@ -766,7 +766,7 @@ myMCPlayerEntity.getHealth();
 
 ### getHeight
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getHeight();
@@ -774,7 +774,7 @@ myMCPlayerEntity.getHeight();
 
 ### getHeldItemMainhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemMainhand();
@@ -782,7 +782,7 @@ myMCPlayerEntity.getHeldItemMainhand();
 
 ### getHeldItemOffhand
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCPlayerEntity.getHeldItemOffhand();
@@ -790,9 +790,9 @@ myMCPlayerEntity.getHeldItemOffhand();
 
 ### getHorizontalFacing
 
-Gets the horizontal facing direction of this Entity.
+このエンティティの水平面方向を取得します。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getHorizontalFacing();
@@ -832,7 +832,7 @@ myMCPlayerEntity.getLastAttackedEntityTime();
 
 ### getLuck
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getLuck();
@@ -848,7 +848,7 @@ myMCPlayerEntity.getMaxAir();
 
 ### getMaxFallHeight
 
-The maximum height from where the entity is alowed to jump (used in pathfinder)
+エンティティが割り当てられている場所からの最大高さ (パスファインダーで使用)
 
 Returns int
 
@@ -858,7 +858,7 @@ myMCPlayerEntity.getMaxFallHeight();
 
 ### getMaxHealth
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getMaxHealth();
@@ -866,7 +866,7 @@ myMCPlayerEntity.getMaxHealth();
 
 ### getMaxInPortalTime
 
-Return the amount of time this entity should stay in a portal before being transported.
+このエンティティが転送される前にポータルに滞在する時間を返します。
 
 Returns int
 
@@ -876,9 +876,9 @@ myMCPlayerEntity.getMaxInPortalTime();
 
 ### getMountedYOffset
 
-Returns the Y offset from the entity's position for any entity riding this one.
+これに乗っているすべてのエンティティの位置からYオフセットを返します。
 
-Returns double
+Double を返します。
 
 ```zenscript
 myMCPlayerEntity.getMountedYOffset();
@@ -886,22 +886,22 @@ myMCPlayerEntity.getMountedYOffset();
 
 ### getPitch
 
-Gets the current pitch of the entity.
+図形の現在のピッチを取得します。
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getPitch(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| パラメータ        | タイプ    | 説明           |
+| ------------ | ------ | ------------ |
+| partialTicks | float型 | 説明が提供されていません |
 
 
 ### getPortalCooldown
 
-Return the amount of cooldown before this entity can use a portal again.
+このエンティティが再びポータルを使用できるまでのクールダウン量を返します。
 
 Returns int
 
@@ -911,9 +911,9 @@ myMCPlayerEntity.getPortalCooldown();
 
 ### getPosition
 
-Get the position in the world. <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
+世界での地位を手に入れよう。 <b>{@code null} is not allowed!</b> If you are not an entity in the world, return the coordinates 0, 0, 0
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+戻り値 [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerEntity.getPosition();
@@ -921,7 +921,7 @@ myMCPlayerEntity.getPosition();
 
 ### getRenderScale
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getRenderScale();
@@ -937,7 +937,7 @@ myMCPlayerEntity.getRevengeTimer();
 
 ### getRotationYawHead
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getRotationYawHead();
@@ -953,9 +953,9 @@ myMCPlayerEntity.getScore();
 
 ### getScoreboardName
 
-Returns a String to use as this entity's name in the scoreboard/entity selector systems
+スコアボード/エンティティセレクタシステムでこのエンティティの名前として使用する文字列を返します。
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMCPlayerEntity.getScoreboardName();
@@ -971,7 +971,7 @@ myMCPlayerEntity.getSleepTimer();
 
 ### getSubmergedHeight
 
-Returns double
+Double を返します。
 
 ```zenscript
 myMCPlayerEntity.getSubmergedHeight();
@@ -979,35 +979,35 @@ myMCPlayerEntity.getSubmergedHeight();
 
 ### getSwimAnimation
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getSwimAnimation(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| パラメータ        | タイプ    | 説明           |
+| ------------ | ------ | ------------ |
+| partialTicks | float型 | 説明が提供されていません |
 
 
 ### getSwingProgress
 
-Gets the progression of the swing animation, ranges from 0.0 to 1.0.
+スイングアニメーションの進行を取得します。範囲は 0.0 から 1.0 です。
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getSwingProgress(partialTickTime as float);
 ```
 
-| Parameter       | Type  | Description             |
-| --------------- | ----- | ----------------------- |
-| partialTickTime | float | No description provided |
+| パラメータ           | タイプ    | 説明           |
+| --------------- | ------ | ------------ |
+| partialTickTime | float型 | 説明が提供されていません |
 
 
 ### getTags
 
-Returns Set<String>
+返品セット<String>
 
 ```zenscript
 myMCPlayerEntity.getTags();
@@ -1015,7 +1015,7 @@ myMCPlayerEntity.getTags();
 
 ### getTeleportDirection
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCPlayerEntity.getTeleportDirection();
@@ -1031,7 +1031,7 @@ myMCPlayerEntity.getTicksElytraFlying();
 
 ### getTotalArmorValue
 
-Returns the current armor value as determined by a call to InventoryPlayer.getTotalArmorValue
+InventoryPlayer.getTotalArmorValue の呼び出しによって決定された現在のアーマー値を返します。
 
 Returns int
 
@@ -1041,13 +1041,13 @@ myMCPlayerEntity.getTotalArmorValue();
 
 ### getWidth
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getWidth();
 ```
 
-### getXPSeed
+### getXPseed
 
 Returns int
 
@@ -1057,9 +1057,9 @@ myMCPlayerEntity.getXPSeed();
 
 ### getYOffset
 
-Returns the Y Offset of this entity.
+このエンティティのYオフセットを返します。
 
-Returns double
+Double を返します。
 
 ```zenscript
 myMCPlayerEntity.getYOffset();
@@ -1067,28 +1067,28 @@ myMCPlayerEntity.getYOffset();
 
 ### getYaw
 
-Gets the current yaw of the entity
+エンティティの現在のヨーを取得します
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerEntity.getYaw(partialTicks as float);
 ```
 
-| Parameter    | Type  | Description             |
-| ------------ | ----- | ----------------------- |
-| partialTicks | float | No description provided |
+| パラメータ        | タイプ    | 説明           |
+| ------------ | ------ | ------------ |
+| partialTicks | float型 | 説明が提供されていません |
 
 
 ### giveExperiencePoints
 
 ```zenscript
-myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
+myMCPlayerEntity.giveExperiencePoints(p_195068_1_ を int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_195068_1_ | int  | No description provided |
+| パラメータ         | タイプ | 説明           |
+| ------------- | --- | ------------ |
+| p_195068_1_ | int | 説明が提供されていません |
 
 
 ### handleStatusUpdate
@@ -1097,16 +1097,16 @@ myMCPlayerEntity.giveExperiencePoints(p_195068_1_ as int);
 myMCPlayerEntity.handleStatusUpdate(id as byte);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | byte | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| id    | バイト | 説明が提供されていません |
 
 
 ### handleWaterMovement
 
-Returns if this entity is in water and will end up adding the waters velocity to the entity
+このエンティティが水中にある場合、水の速度をエンティティに加えることになるかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.handleWaterMovement();
@@ -1114,7 +1114,7 @@ myMCPlayerEntity.handleWaterMovement();
 
 ### hasCustomName
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.hasCustomName();
@@ -1122,7 +1122,7 @@ myMCPlayerEntity.hasCustomName();
 
 ### hasNoGravity
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.hasNoGravity();
@@ -1130,22 +1130,22 @@ myMCPlayerEntity.hasNoGravity();
 
 ### hasPermissionLevel
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.hasPermissionLevel(p_211513_1_ as int);
+myMCPlayerEntity.hasPermissionLevel(p_211513_1_ を int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_211513_1_ | int  | No description provided |
+| パラメータ         | タイプ | 説明           |
+| ------------- | --- | ------------ |
+| p_211513_1_ | int | 説明が提供されていません |
 
 
 ### hasReducedDebug
 
-Whether the "reducedDebugInfo" option is active for this player.
+"reducedDebugInfo" オプションがこのプレーヤーでアクティブかどうか。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.hasReducedDebug();
@@ -1159,28 +1159,28 @@ Returns int
 myMCPlayerEntity.hashCode();
 ```
 
-### heal
+### 治癒する
 
-Heal living entity (param: amount of half-hearts)
+生きているエンティティを回復する（パラメ：半分ハートの量）
 
 ```zenscript
 myMCPlayerEntity.heal(healAmount as float);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| healAmount | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 治療量   | float型 | 説明が提供されていません |
 
 
 ### ignoreItemEntityData
 
-Checks if players can use this entity to access operator (permission level 2) commands either directly or indirectly, such as give or setblock. A similar method exists for entities at {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}.<p>For example, {@link
- net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() command block minecarts} and {@link
- net.minecraft.entity.item.EntityMinecartMobSpawner#ignoreItemEntityData() mob spawner minecarts} (spawning command
- block minecarts or drops) are considered accessible.</p>Returns: `true if this entity offers ways for unauthorized
- players to use restricted commands`
+プレイヤーがこのエンティティを使用して、直接または (give や setblockなど) のいずれかで、オペレータ(権限レベル 2)コマンドにアクセスできるかどうかを確認します。 {@link net.minecraft.tileentity.TileEntity#onlyOpsCanSetNbt()}にも同様の方法が存在します。<p>例えば、{@link
+ net.minecraft.entity.item.EntityMinecartCommandBlock#ignoreItemEntityData() コマンド block minecarts} and {@link
+ net.minecraft.entity.item.EntityMinecraftMobSpawner#reignoreItemEntityData() (spawning command
+ block minecartsまたはdrops) はアクセス可能であると見なされます。</p>戻り値: `このエンティティが許可されていない
+ プレイヤーが制限されたコマンドを使用する方法を提供する場合はtrue`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.ignoreItemEntityData();
@@ -1188,7 +1188,7 @@ myMCPlayerEntity.ignoreItemEntityData();
 
 ### isActiveItemStackBlocking
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isActiveItemStackBlocking();
@@ -1196,7 +1196,7 @@ myMCPlayerEntity.isActiveItemStackBlocking();
 
 ### isAddedToWorld
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isAddedToWorld();
@@ -1204,9 +1204,9 @@ myMCPlayerEntity.isAddedToWorld();
 
 ### isAlive
 
-Returns true if the entity has not been .
+エンティティがされていない場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isAlive();
@@ -1214,7 +1214,7 @@ myMCPlayerEntity.isAlive();
 
 ### isAllowEdit
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isAllowEdit();
@@ -1222,9 +1222,9 @@ myMCPlayerEntity.isAllowEdit();
 
 ### isBeingRidden
 
-If at least 1 entity is riding this one
+少なくとも1つのエンティティがこのエンティティに乗っている場合
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isBeingRidden();
@@ -1232,9 +1232,9 @@ myMCPlayerEntity.isBeingRidden();
 
 ### isBurning
 
-Returns true if the entity is on fire. Used by render to add the fire effect on rendering.
+エンティティが燃えている場合は true を返します。 renderでレンダリング時の火災効果を追加するために使用されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isBurning();
@@ -1242,9 +1242,9 @@ myMCPlayerEntity.isBurning();
 
 ### isChild
 
-If Animal, checks if the age timer is negative
+Animalの場合、年齢タイマーが負かどうかをチェックします
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isChild();
@@ -1252,7 +1252,7 @@ myMCPlayerEntity.isChild();
 
 ### isCreative
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isCreative();
@@ -1260,7 +1260,7 @@ myMCPlayerEntity.isCreative();
 
 ### isCustomNameVisible
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isCustomNameVisible();
@@ -1268,7 +1268,7 @@ myMCPlayerEntity.isCustomNameVisible();
 
 ### isElytraFlying
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isElytraFlying();
@@ -1276,9 +1276,9 @@ myMCPlayerEntity.isElytraFlying();
 
 ### isEntityInsideOpaqueBlock
 
-Checks if this entity is inside of an opaque block
+この図形が不透明なブロックの中にあるかどうかをチェックします。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isEntityInsideOpaqueBlock();
@@ -1286,9 +1286,9 @@ myMCPlayerEntity.isEntityInsideOpaqueBlock();
 
 ### isEntityUndead
 
-Returns true if this entity is undead.
+このエンティティがアンデッドの場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isEntityUndead();
@@ -1296,7 +1296,7 @@ myMCPlayerEntity.isEntityUndead();
 
 ### isGlowing
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isGlowing();
@@ -1304,7 +1304,7 @@ myMCPlayerEntity.isGlowing();
 
 ### isHandActive
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isHandActive();
@@ -1312,7 +1312,7 @@ myMCPlayerEntity.isHandActive();
 
 ### isImmuneToExplosions
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isImmuneToExplosions();
@@ -1320,7 +1320,7 @@ myMCPlayerEntity.isImmuneToExplosions();
 
 ### isImmuneToFire
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isImmuneToFire();
@@ -1328,7 +1328,7 @@ myMCPlayerEntity.isImmuneToFire();
 
 ### isInLava
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInLava();
@@ -1336,47 +1336,47 @@ myMCPlayerEntity.isInLava();
 
 ### isInRangeToRender3d
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInRangeToRender3d(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### isInRangeToRenderDist
 
-Checks if the entity is in range to render.
+エンティティが範囲内にあるかどうかを確認します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.isInRangeToRenderDist(distance as double);
+myMCPlayerEntity.isInRangeToRenderDist(distance as as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| distance  | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 距離    | double | 説明が提供されていません |
 
 
 ### isInWater
 
-Checks if this entity is inside water (if inWater field is true as a result of handleWaterMovement() returning true)
+このエンティティが水中にあるかどうかをチェックします(handleWaterMovement() が true を返した結果として inWater フィールドが真の場合)
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInWater();
 ```
 
-### isInWaterOrBubbleColumn
+### isInWaterOrBubbleカラム
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInWaterOrBubbleColumn();
@@ -1384,7 +1384,7 @@ myMCPlayerEntity.isInWaterOrBubbleColumn();
 
 ### isInWaterRainOrBubbleColumn
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInWaterRainOrBubbleColumn();
@@ -1392,7 +1392,7 @@ myMCPlayerEntity.isInWaterRainOrBubbleColumn();
 
 ### isInvisible
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInvisible();
@@ -1400,22 +1400,22 @@ myMCPlayerEntity.isInvisible();
 
 ### isInvisibleToPlayer
 
-Only used by renderer in EntityLivingBase subclasses. Determines if an entity is visible or not to a specific player, if the entity is normally invisible. For EntityLivingBase subclasses, returning false when invisible will render the entity semi-transparent.
+EntityLivingBase サブクラスのレンダラーによってのみ使用されます。 エンティティが通常非表示の場合、エンティティが特定のプレイヤーに表示されるかどうかを決定します。 EntityLivingBaseサブクラスの場合、見えない場合にfalseを返すと、エンティティが半透明になります。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.isInvisibleToPlayer(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.isInvibleToPlayer(playeras crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| パラメータ | タイプ                                                                                        | 説明           |
+| ----- | ------------------------------------------------------------------------------------------ | ------------ |
+| プレイヤー | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 説明が提供されていません |
 
 
 ### isInvulnerable
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isInvulnerable();
@@ -1423,7 +1423,7 @@ myMCPlayerEntity.isInvulnerable();
 
 ### isLiving
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isLiving();
@@ -1431,9 +1431,9 @@ myMCPlayerEntity.isLiving();
 
 ### isNonBoss
 
-Returns false if this Entity is a boss, true otherwise.
+このエンティティが上司の場合は false を返し、それ以外の場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isNonBoss();
@@ -1441,26 +1441,26 @@ myMCPlayerEntity.isNonBoss();
 
 ### isOffsetPositionInLiquid
 
-Checks if the offset position from the entity's current position is inside of a liquid.
+エンティティの現在位置からのオフセット位置が液体の内部にあるかどうかを確認します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isOffsetPositionInLiquid(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### isOnLadder
 
-Returns true if this entity should move as if it were on a ladder (either because it's actually on a ladder, or for AI reasons)
+このエンティティがはしごの上にあるかのように動く場合は true を返します（実際ははしごの上にあるため） もしくは の理由で)
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isOnLadder();
@@ -1468,7 +1468,7 @@ myMCPlayerEntity.isOnLadder();
 
 ### isOnePlayerRiding
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isOnePlayerRiding();
@@ -1476,7 +1476,7 @@ myMCPlayerEntity.isOnePlayerRiding();
 
 ### isPassenger
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isPassenger();
@@ -1484,9 +1484,9 @@ myMCPlayerEntity.isPassenger();
 
 ### isPlayerFullyAsleep
 
-Returns whether or not the player is asleep and the screen has fully faded.
+プレイヤーがスリープ状態で画面が完全にフェード状態になっているかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isPlayerFullyAsleep();
@@ -1494,33 +1494,33 @@ myMCPlayerEntity.isPlayerFullyAsleep();
 
 ### isPotionActive
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isPotionActive(potionIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| potionIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| パラメータ    | タイプ                                                                           | 説明           |
+| -------- | ----------------------------------------------------------------------------- | ------------ |
+| potionIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | 説明が提供されていません |
 
 
 ### isPotionApplicable
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isPotionApplicable(potioneffectIn as crafttweaker.api.potion.MCPotionEffectInstance);
 ```
 
-| Parameter      | Type                                                                                          | Description             |
-| -------------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| パラメータ          | タイプ                                                                                           | 説明           |
+| -------------- | --------------------------------------------------------------------------------------------- | ------------ |
+| potioneffectIn | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | 説明が提供されていません |
 
 
 ### isPushedByWater
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isPushedByWater();
@@ -1528,9 +1528,9 @@ myMCPlayerEntity.isPushedByWater();
 
 ### isServerWorld
 
-Returns whether the entity is in a server world
+エンティティがサーバーのワールドにあるかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isServerWorld();
@@ -1538,19 +1538,19 @@ myMCPlayerEntity.isServerWorld();
 
 ### isSilent
 
-Returns: `True if this entity will not play sounds`
+戻り値: `このエンティティがサウンドを再生しない場合は True`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSilent();
 ```
 
-### isSleeping
+### アイスリープ
 
-Returns whether player is sleeping or not
+プレイヤーが眠っているかどうかを返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSleeping();
@@ -1558,27 +1558,27 @@ myMCPlayerEntity.isSleeping();
 
 ### isSneaking
 
-Returns if this entity is sneaking.
+このエンティティがスニークしている場合に返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSneaking();
 ```
 
-### isSpawnForced
+### isSpawnForceed
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.isSpawnForced();
+myMCPlayerEntity.isSpawnForce();
 ```
 
 ### isSpectator
 
-Returns true if the player is in spectator mode.
+プレイヤーが観戦モードの場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSpectator();
@@ -1586,7 +1586,7 @@ myMCPlayerEntity.isSpectator();
 
 ### isSpinAttacking
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSpinAttacking();
@@ -1594,9 +1594,9 @@ myMCPlayerEntity.isSpinAttacking();
 
 ### isSprinting
 
-Get if the Entity is sprinting.
+エンティティがスプリントされている場合は取得します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isSprinting();
@@ -1604,17 +1604,17 @@ myMCPlayerEntity.isSprinting();
 
 ### isSwimming
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.isSwimming();
+myMCPlayerEntity.isSwiming();
 ```
 
 ### isUser
 
-returns true if this is an EntityPlayerSP, or the logged in player.
+は、EntityPlayerSP またはログインしたプレーヤーの場合は true を返します。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isUser();
@@ -1622,17 +1622,17 @@ myMCPlayerEntity.isUser();
 
 ### isWet
 
-Checks if this entity is either in water or on an open air block in rain (used in wolves).
+このエンティティが水中か雨の中で空気のブロックにあるかどうかをチェックします（オオカミで使用されます）。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.isWet();
 ```
 
-### jump
+### ジャンプ
 
-Causes this entity to do an upwards motion (jumping).
+このエンティティを上向きの動作 (ジャンプ) させます。
 
 ```zenscript
 myMCPlayerEntity.jump();
@@ -1640,7 +1640,7 @@ myMCPlayerEntity.jump();
 
 ### livingTick
 
-Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons use this to react to sunlight and start to burn.
+頻繁に呼び出されるので、エンティティは必要に応じて毎にその状態を更新することができます。 例えば、ゾンビや骸骨 はこれを使って日光に反応し、燃え始めます。
 
 ```zenscript
 myMCPlayerEntity.livingTick();
@@ -1652,11 +1652,11 @@ myMCPlayerEntity.livingTick();
 myMCPlayerEntity.moveToBlockPosAndAngles(pos as crafttweaker.api.util.BlockPos, rotationYawIn as float, rotationPitchIn as float);
 ```
 
-| Parameter       | Type                                                         | Description             |
-| --------------- | ------------------------------------------------------------ | ----------------------- |
-| pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| rotationYawIn   | float                                                        | No description provided |
-| rotationPitchIn | float                                                        | No description provided |
+| パラメータ           | タイプ                                                          | 説明           |
+| --------------- | ------------------------------------------------------------ | ------------ |
+| pos             | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
+| rotationYawIn   | float型                                                       | 説明が提供されていません |
+| rotationPitchIn | float型                                                       | 説明が提供されていません |
 
 
 ### onAddedToWorld
@@ -1667,15 +1667,15 @@ myMCPlayerEntity.onAddedToWorld();
 
 ### onCollideWithPlayer
 
-Called by a player entity when they collide with an entity
+プレイヤーがエンティティと衝突したときに呼び出されます
 
 ```zenscript
 myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description             |
-| --------- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| entityIn  | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | No description provided |
+| パラメータ    | タイプ                                                                                        | 説明           |
+| -------- | ------------------------------------------------------------------------------------------ | ------------ |
+| entityIn | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | 説明が提供されていません |
 
 
 ### onEnchant
@@ -1684,37 +1684,37 @@ myMCPlayerEntity.onCollideWithPlayer(entityIn as crafttweaker.api.entity.player.
 myMCPlayerEntity.onEnchant(enchantedItem as crafttweaker.api.item.IItemStack, cost as int);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| enchantedItem | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
-| cost          | int                                                               | No description provided |
+| パラメータ         | タイプ                                                               | 説明           |
+| ------------- | ----------------------------------------------------------------- | ------------ |
+| エンチャントされたアイテム | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
+| コスト           | int                                                               | 説明が提供されていません |
 
 
-### onEnterBubbleColumn
+### onEnterBubbleカラム
 
 ```zenscript
 myMCPlayerEntity.onEnterBubbleColumn(downwards as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 下     | boolean型 | 説明が提供されていません |
 
 
-### onEnterBubbleColumnWithAirAbove
+### onEnterBubbleColumnWithAirAver
 
 ```zenscript
-myMCPlayerEntity.onEnterBubbleColumnWithAirAbove(downwards as boolean);
+myMCPlayerEntity.onEnterBubbleColumnWithAirAive(downwards as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| downwards | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 下     | boolean型 | 説明が提供されていません |
 
 
 ### onKillCommand
 
-Called by the /kill command.
+/kill コマンドによって呼び出されます。
 
 ```zenscript
 myMCPlayerEntity.onKillCommand();
@@ -1728,27 +1728,27 @@ myMCPlayerEntity.onRemovedFromWorld();
 
 ### performHurtAnimation
 
-Setups the entity to do the hurt animation. Only used by packets in multiplayer.
+傷つけたアニメーションを実行するエンティティを設定します。 マルチプレイヤーのパケットでのみ使用されます。
 
 ```zenscript
-myMCPlayerEntity.performHurtAnimation();
+myMCPlayerEntity.performantAnimation();
 ```
 
 ### preparePlayerToSpawn
 
-Keeps moving the entity up so it isn't colliding with blocks and other requirements for this entity to be spawned (only actually used on players though its also on Entity)
+エンティティを上に移動させて、このエンティティがスポーンされるブロックやその他の要件と衝突しないようにします。 (エンティティでも実際に使用されているもののみ)
 
 ```zenscript
 myMCPlayerEntity.preparePlayerToSpawn();
 ```
 
-### recalculateSize
+### 再計算サイズ
 
 ```zenscript
 myMCPlayerEntity.recalculateSize();
 ```
 
-### remove
+### 削除
 
 ```zenscript
 myMCPlayerEntity.remove();
@@ -1759,27 +1759,27 @@ myMCPlayerEntity.remove();
 myMCPlayerEntity.remove(keepData as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| keepData  | boolean | No description provided |
+| パラメータ  | タイプ      | 説明           |
+| ------ | -------- | ------------ |
+| キープデータ | boolean型 | 説明が提供されていません |
 
 
 ### removeActivePotionEffect
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+戻り値 [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
 myMCPlayerEntity.removeActivePotionEffect(arg0 as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| arg0      | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| パラメータ | タイプ                                                                           | 説明           |
+| ----- | ----------------------------------------------------------------------------- | ------------ |
+| arg0  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | 説明が提供されていません |
 
 
 ### removePassengers
 
-Dismounts all entities riding this entity from this entity.
+このエンティティに乗っているすべてのエンティティをアンマウントします。
 
 ```zenscript
 myMCPlayerEntity.removePassengers();
@@ -1787,42 +1787,42 @@ myMCPlayerEntity.removePassengers();
 
 ### removePotionEffect
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.removePotionEffect(effectIn as crafttweaker.api.potion.MCPotionEffect);
 ```
 
-| Parameter | Type                                                                          | Description             |
-| --------- | ----------------------------------------------------------------------------- | ----------------------- |
-| effectIn  | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | No description provided |
+| パラメータ    | タイプ                                                                           | 説明           |
+| -------- | ----------------------------------------------------------------------------- | ------------ |
+| effectIn | [crafttweaker.api.potion.MCPotionEffect](/vanilla/api/potions/MCPotionEffect) | 説明が提供されていません |
 
 
 ### removeTag
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.removeTag(tag as String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| tag       | String | No description provided |
+| パラメータ | タイプ  | 説明           |
+| ----- | ---- | ------------ |
+| タグ    | 文字列型 | 説明が提供されていません |
 
 
 ### replaceItemInInventory
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.replaceItemInInventory(inventorySlot as int, itemStackIn as crafttweaker.api.item.IItemStack);
+myMCPlayerEntity.replaceItemInInventory(inventorySlot を int, itemStackIn as crafttweaker.api.item.IItemStack);
 ```
 
-| Parameter     | Type                                                              | Description             |
-| ------------- | ----------------------------------------------------------------- | ----------------------- |
-| inventorySlot | int                                                               | No description provided |
-| itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | No description provided |
+| パラメータ         | タイプ                                                               | 説明           |
+| ------------- | ----------------------------------------------------------------- | ------------ |
+| inventorySlot | int                                                               | 説明が提供されていません |
+| itemStackIn   | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | 説明が提供されていません |
 
 
 ### resetActiveHand
@@ -1839,7 +1839,7 @@ myMCPlayerEntity.resetCooldown();
 
 ### resetPositionToBB
 
-Resets the entity's position to the center (planar) and bottom (vertical) points of its bounding box.
+エンティティの位置をその境界ボックスの中心点(平面)と下点(垂直方向)にリセットします。
 
 ```zenscript
 myMCPlayerEntity.resetPositionToBB();
@@ -1851,7 +1851,7 @@ myMCPlayerEntity.resetPositionToBB();
 myMCPlayerEntity.respawnPlayer();
 ```
 
-### revive
+### 蘇生する
 
 ```zenscript
 myMCPlayerEntity.revive();
@@ -1863,15 +1863,15 @@ myMCPlayerEntity.revive();
 myMCPlayerEntity.rotateTowards(yaw as double, pitch as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| yaw       | double | No description provided |
-| pitch     | double | No description provided |
+| パラメータ    | タイプ    | 説明           |
+| -------- | ------ | ------------ |
+| ヨー...    | double | 説明が提供されていません |
+| ピッチ(ピッチ) | double | 説明が提供されていません |
 
 
 ### sendEndCombat
 
-Sends an END_COMBAT packet to the client
+END_COMBAT パケットをクライアントに送信
 
 ```zenscript
 myMCPlayerEntity.sendEndCombat();
@@ -1879,7 +1879,7 @@ myMCPlayerEntity.sendEndCombat();
 
 ### sendEnterCombat
 
-Sends an ENTER_COMBAT packet to the client
+ENTER_COMBAT パケットをクライアントに送信する
 
 ```zenscript
 myMCPlayerEntity.sendEnterCombat();
@@ -1887,7 +1887,7 @@ myMCPlayerEntity.sendEnterCombat();
 
 ### sendPlayerAbilities
 
-Sends the player's abilities to the server (if there is one).
+プレイヤーの能力をサーバーに送信します(存在する場合)。
 
 ```zenscript
 myMCPlayerEntity.sendPlayerAbilities();
@@ -1895,15 +1895,15 @@ myMCPlayerEntity.sendPlayerAbilities();
 
 ### setAIMoveSpeed
 
-set the movespeed used for the new AI system
+新しいAIシステムに使用する移動速度を設定する
 
 ```zenscript
-myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
+myMCPlayerEntity.setAImoveSpeed(speedIn as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| speedIn   | float | No description provided |
+| パラメータ   | タイプ    | 説明           |
+| ------- | ------ | ------------ |
+| speedIn | float型 | 説明が提供されていません |
 
 
 ### setAbsorptionAmount
@@ -1912,9 +1912,9 @@ myMCPlayerEntity.setAIMoveSpeed(speedIn as float);
 myMCPlayerEntity.setAbsorptionAmount(amount as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| amount    | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 金額    | float型 | 説明が提供されていません |
 
 
 ### setAir
@@ -1923,9 +1923,9 @@ myMCPlayerEntity.setAbsorptionAmount(amount as float);
 myMCPlayerEntity.setAir(air as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| air       | int  | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| 空気    | int | 説明が提供されていません |
 
 
 ### setArrowCountInEntity
@@ -1934,9 +1934,9 @@ myMCPlayerEntity.setAir(air as int);
 myMCPlayerEntity.setArrowCountInEntity(count as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| count     | int  | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| カウント  | int | 説明が提供されていません |
 
 
 ### setBedPosition
@@ -1945,9 +1945,9 @@ myMCPlayerEntity.setArrowCountInEntity(count as int);
 myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
-| ------------- | ------------------------------------------------------------ | ----------------------- |
-| p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| パラメータ         | タイプ                                                          | 説明           |
+| ------------- | ------------------------------------------------------------ | ------------ |
+| p_213369_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
 
 
 ### setCustomNameVisible
@@ -1956,9 +1956,9 @@ myMCPlayerEntity.setBedPosition(p_213369_1_ as crafttweaker.api.util.BlockPos);
 myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
 ```
 
-| Parameter           | Type    | Description             |
-| ------------------- | ------- | ----------------------- |
-| alwaysRenderNameTag | boolean | No description provided |
+| パラメータ               | タイプ      | 説明           |
+| ------------------- | -------- | ------------ |
+| alwaysRenderNameTag | boolean型 | 説明が提供されていません |
 
 
 ### setEntityId
@@ -1967,33 +1967,33 @@ myMCPlayerEntity.setCustomNameVisible(alwaysRenderNameTag as boolean);
 myMCPlayerEntity.setEntityId(id as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| id        | int  | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| id    | int | 説明が提供されていません |
 
 
 ### setFire
 
-Sets entity to burn for x amount of seconds, cannot lower amount of existing fire.
+エンティティを x 秒間焼却するように設定します。既存の火炎の量を減らすことはできません。
 
 ```zenscript
 myMCPlayerEntity.setFire(seconds as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| seconds   | int  | No description provided |
+| パラメータ | タイプ | 説明           |
+| ----- | --- | ------------ |
+| 秒     | int | 説明が提供されていません |
 
 
 ### setFireTimer
 
 ```zenscript
-myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
+myMCPlayerEntity.setFireTimer(p_223308_1_ を int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_223308_1_ | int  | No description provided |
+| パラメータ         | タイプ | 説明           |
+| ------------- | --- | ------------ |
+| p_223308_1_ | int | 説明が提供されていません |
 
 
 ### setGlowing
@@ -2002,21 +2002,21 @@ myMCPlayerEntity.setFireTimer(p_223308_1_ as int);
 myMCPlayerEntity.setGlowing(glowingIn as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| glowingIn | boolean | No description provided |
+| パラメータ     | タイプ      | 説明           |
+| --------- | -------- | ------------ |
+| glowingIn | boolean型 | 説明が提供されていません |
 
 
 ### setHeadRotation
 
 ```zenscript
-myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
+myMCPlayerEntity.setHeadRotation(floatとしてyaw、intとしてピッチ);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| yaw       | float | No description provided |
-| pitch     | int   | No description provided |
+| パラメータ    | タイプ    | 説明           |
+| -------- | ------ | ------------ |
+| ヨー...    | float型 | 説明が提供されていません |
+| ピッチ(ピッチ) | int    | 説明が提供されていません |
 
 
 ### setHealth
@@ -2025,9 +2025,9 @@ myMCPlayerEntity.setHeadRotation(yaw as float, pitch as int);
 myMCPlayerEntity.setHealth(health as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| health    | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 健康    | float型 | 説明が提供されていません |
 
 
 ### setIdleTime
@@ -2036,9 +2036,9 @@ myMCPlayerEntity.setHealth(health as float);
 myMCPlayerEntity.setIdleTime(idleTimeIn as int);
 ```
 
-| Parameter  | Type | Description             |
-| ---------- | ---- | ----------------------- |
-| idleTimeIn | int  | No description provided |
+| パラメータ      | タイプ | 説明           |
+| ---------- | --- | ------------ |
+| idleTimeIn | int | 説明が提供されていません |
 
 
 ### setInLava
@@ -2053,50 +2053,50 @@ myMCPlayerEntity.setInLava();
 myMCPlayerEntity.setInvisible(invisible as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| invisible | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 見えない  | boolean型 | 説明が提供されていません |
 
 
 ### setInvulnerable
 
-Sets whether this Entity is invulnerable.
+エンティティが無敵であるかどうかを設定します。
 
 ```zenscript
 myMCPlayerEntity.setInvulnerable(isInvulnerable as boolean);
 ```
 
-| Parameter      | Type    | Description             |
-| -------------- | ------- | ----------------------- |
-| isInvulnerable | boolean | No description provided |
+| パラメータ          | タイプ      | 説明           |
+| -------------- | -------- | ------------ |
+| isInvulnerable | boolean型 | 説明が提供されていません |
 
 
 ### setJumping
 
 ```zenscript
-myMCPlayerEntity.setJumping(jumping as boolean);
+myMCPlayerEntity.setJumping(jump as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| jumping   | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| ジャンプ  | boolean型 | 説明が提供されていません |
 
 
 ### setLocationAndAngles
 
-Sets the location and Yaw/Pitch of an entity in the world
+ワールド内のエンティティの位置とヨー/ピッチを設定します
 
 ```zenscript
 myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw as float, pitch as float);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| パラメータ    | タイプ    | 説明           |
+| -------- | ------ | ------------ |
+| x        | double | 説明が提供されていません |
+| y        | double | 説明が提供されていません |
+| z        | double | 説明が提供されていません |
+| ヨー...    | float型 | 説明が提供されていません |
+| ピッチ(ピッチ) | float型 | 説明が提供されていません |
 
 
 ### setMotion
@@ -2105,11 +2105,11 @@ myMCPlayerEntity.setLocationAndAngles(x as double, y as double, z as double, yaw
 myMCPlayerEntity.setMotion(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### setNoGravity
@@ -2118,107 +2118,107 @@ myMCPlayerEntity.setMotion(x as double, y as double, z as double);
 myMCPlayerEntity.setNoGravity(noGravity as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| noGravity | boolean | No description provided |
+| パラメータ     | タイプ      | 説明           |
+| --------- | -------- | ------------ |
+| noGravity | boolean型 | 説明が提供されていません |
 
 
 ### setPartying
 
-Called when a record starts or stops playing. Used to make parrots start or stop partying.
+レコードが開始または再生を停止したときに呼び出されます。 オウムを開始またはパーティーを停止させるために使用されます。
 
 ```zenscript
 myMCPlayerEntity.setPartying(pos as crafttweaker.api.util.BlockPos, isPartying as boolean);
 ```
 
-| Parameter  | Type                                                         | Description             |
-| ---------- | ------------------------------------------------------------ | ----------------------- |
-| pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| isPartying | boolean                                                      | No description provided |
+| パラメータ      | タイプ                                                          | 説明           |
+| ---------- | ------------------------------------------------------------ | ------------ |
+| pos        | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
+| isPartying | boolean型                                                     | 説明が提供されていません |
 
 
 ### setPortal
 
-Marks the entity as being inside a portal, activating teleportation logic in onEntityUpdate() in the following tick(s).
+エンティティをポータル内にあることをマークし、次の tick(s) で onEntityUpdate() 内でテレポーテーションロジックをアクティブにします。
 
 ```zenscript
 myMCPlayerEntity.setPortal(pos as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| パラメータ | タイプ                                                          | 説明           |
+| ----- | ------------------------------------------------------------ | ------------ |
+| pos   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
 
 
 ### setPosition
 
-Sets the x,y,z of the entity from the given parameters. Also seems to set up a bounding box.
+与えられたパラメータからエンティティのx,y,zを設定します。 また、バウンディングボックスを設定しているようです。
 
 ```zenscript
-myMCPlayerEntity.setPosition(x as double, y as double, z as double);
+myMCPlayerEntity.setPosition(x を double, y を double, z を double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### setPositionAndRotation
 
-Sets position and rotation, clamping and wrapping params to valid values. Used by network code.
+位置と回転、クランプ、およびラップパラメータを有効な値に設定します。 ネットワークコードで使用されます。
 
 ```zenscript
-myMCPlayerEntity.setPositionAndRotation(x as double, y as double, z as double, yaw as float, pitch as float);
+myMCPlayerEntity.setPositionAndRotation(x を double, y を double, z を double, yaw を float, pitch を float, pitch を float);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
-| yaw       | float  | No description provided |
-| pitch     | float  | No description provided |
+| パラメータ    | タイプ    | 説明           |
+| -------- | ------ | ------------ |
+| x        | double | 説明が提供されていません |
+| y        | double | 説明が提供されていません |
+| z        | double | 説明が提供されていません |
+| ヨー...    | float型 | 説明が提供されていません |
+| ピッチ(ピッチ) | float型 | 説明が提供されていません |
 
 
 ### setPositionAndRotationDirect
 
-Sets a target for the client to interpolate towards over the next few ticks
+クライアントが次の数ティックに向かって補間するターゲットを設定します
 
 ```zenscript
-myMCPlayerEntity.setPositionAndRotationDirect(x as double, y as double, z as double, yaw as float, pitch as float, posRotationIncrements as int, teleport as boolean);
+myMCPlayerEntity.setPositionAndRotationDirect(xをdouble, yをdouble, zをdouble, yawをfloat, pitchをfloat, posRotationIncrements を int, teleport を boolean);
 ```
 
-| Parameter             | Type    | Description             |
-| --------------------- | ------- | ----------------------- |
-| x                     | double  | No description provided |
-| y                     | double  | No description provided |
-| z                     | double  | No description provided |
-| yaw                   | float   | No description provided |
-| pitch                 | float   | No description provided |
-| posRotationIncrements | int     | No description provided |
-| teleport              | boolean | No description provided |
+| パラメータ                 | タイプ      | 説明           |
+| --------------------- | -------- | ------------ |
+| x                     | double   | 説明が提供されていません |
+| y                     | double   | 説明が提供されていません |
+| z                     | double   | 説明が提供されていません |
+| ヨー...                 | float型   | 説明が提供されていません |
+| ピッチ(ピッチ)              | float型   | 説明が提供されていません |
+| posRotationIncrements | int      | 説明が提供されていません |
+| テレポートする               | boolean型 | 説明が提供されていません |
 
 
 ### setPositionAndUpdate
 
-Sets the position of the entity and updates the 'last' variables
+図形の位置を設定し、'last' 変数を更新します。
 
 ```zenscript
 myMCPlayerEntity.setPositionAndUpdate(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
 ### setPositionNonDirty
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.setPositionNonDirty();
@@ -2227,77 +2227,77 @@ myMCPlayerEntity.setPositionNonDirty();
 ### setReducedDebug
 
 ```zenscript
-myMCPlayerEntity.setReducedDebug(reducedDebug as boolean);
+myMCPlayerEntity.setReducedDebug(reducedDebugをbooleanとして);
 ```
 
-| Parameter    | Type    | Description             |
-| ------------ | ------- | ----------------------- |
-| reducedDebug | boolean | No description provided |
+| パラメータ        | タイプ      | 説明           |
+| ------------ | -------- | ------------ |
+| reducedDebug | boolean型 | 説明が提供されていません |
 
 
 ### setRenderYawOffset
 
-Set the render yaw offset
+レンダリングヨーオフセットを設定
 
 ```zenscript
 myMCPlayerEntity.setRenderYawOffset(offset as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| offset    | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| オフセット | float型 | 説明が提供されていません |
 
 
 ### setRotationYawHead
 
-Sets the head's yaw rotation of the entity.
+エンティティの頭のヨー回転を設定します。
 
 ```zenscript
-myMCPlayerEntity.setRotationYawHead(rotation as float);
+myMCPlayerEntity.setRotationYawHead(rotation as float型);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| rotation  | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 回転    | float型 | 説明が提供されていません |
 
 
 ### setScore
 
-Set player's score
+プレイヤーのスコアを設定
 
 ```zenscript
 myMCPlayerEntity.setScore(scoreIn as int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| scoreIn   | int  | No description provided |
+| パラメータ   | タイプ | 説明           |
+| ------- | --- | ------------ |
+| scoreIn | int | 説明が提供されていません |
 
 
 ### setSilent
 
-When set to true the entity will not play sounds.
+true に設定すると、エンティティはサウンドを再生しません。
 
 ```zenscript
 myMCPlayerEntity.setSilent(isSilent as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| isSilent  | boolean | No description provided |
+| パラメータ    | タイプ      | 説明           |
+| -------- | -------- | ------------ |
+| isSilent | boolean型 | 説明が提供されていません |
 
 
-### setSneaking
+### setSnaking
 
-Sets the sneaking flag.
+スニークフラグを設定します。
 
 ```zenscript
 myMCPlayerEntity.setSneaking(sneaking as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sneaking  | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| 卑劣な   | boolean型 | 説明が提供されていません |
 
 
 ### setSpawnPoint
@@ -2306,80 +2306,80 @@ myMCPlayerEntity.setSneaking(sneaking as boolean);
 myMCPlayerEntity.setSpawnPoint(pos as crafttweaker.api.util.BlockPos, forced as boolean);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
-| forced    | boolean                                                      | No description provided |
+| パラメータ | タイプ                                                          | 説明           |
+| ----- | ------------------------------------------------------------ | ------------ |
+| pos   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
+| 強制的に  | boolean型                                                     | 説明が提供されていません |
 
 
 ### setSprinting
 
-Set sprinting switch for Entity.
+エンティティのスプリントスイッチを設定します。
 
 ```zenscript
 myMCPlayerEntity.setSprinting(sprinting as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| sprinting | boolean | No description provided |
+| パラメータ  | タイプ      | 説明           |
+| ------ | -------- | ------------ |
+| スプリント中 | boolean型 | 説明が提供されていません |
 
 
 ### setSwimming
 
 ```zenscript
-myMCPlayerEntity.setSwimming(p_204711_1_ as boolean);
+myMCPlayerEntity.setSwiming(p_204711_1_ as boolean);
 ```
 
-| Parameter     | Type    | Description             |
-| ------------- | ------- | ----------------------- |
-| p_204711_1_ | boolean | No description provided |
+| パラメータ         | タイプ      | 説明           |
+| ------------- | -------- | ------------ |
+| p_204711_1_ | boolean型 | 説明が提供されていません |
 
 
 ### setVelocity
 
-Updates the entity motion clientside, called by packets from the server
+サーバーからのパケットによって呼び出されたエンティティモーションクライアント側を更新します
 
 ```zenscript
 myMCPlayerEntity.setVelocity(x as double, y as double, z as double);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| x         | double | No description provided |
-| y         | double | No description provided |
-| z         | double | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| x     | double | 説明が提供されていません |
+| y     | double | 説明が提供されていません |
+| z     | double | 説明が提供されていません |
 
 
-### shouldHeal
+### 体力を回復する
 
-Checks if the player's health is not full and not zero.
+プレイヤーの体力が一杯でもゼロでもないかどうかをチェックします。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.shouldHeal();
 ```
 
-### shouldReceiveErrors
+### shouldReceiveError
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.shouldReceiveErrors();
 ```
 
-### shouldReceiveFeedback
+### 受信フィードバック
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.shouldReceiveFeedback();
 ```
 
-### shouldRenderSneaking
+### shouldRenderSnake
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.shouldRenderSneaking();
@@ -2387,22 +2387,22 @@ myMCPlayerEntity.shouldRenderSneaking();
 
 ### shouldRiderFaceForward
 
-Returns true if the entity's rider (EntityPlayer) should face forward when mounted. currently only used in vanilla code by pigs.
+マウント時にエンティティのライダー(EntityPlayer)が前方に向かう場合は true を返します。 現在は豚のバニラコードでしか使われていません
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
-myMCPlayerEntity.shouldRiderFaceForward(player as crafttweaker.api.entity.player.MCPlayerEntity);
+myMCPlayerEntity.shouldRiderFaceForward(playeras crafttweaker.api.entity.player.MCPlayerEntity);
 ```
 
-| Parameter | Type                                                                                       | Description                          |
-| --------- | ------------------------------------------------------------------------------------------ | ------------------------------------ |
-| player    | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | The player who is riding the entity. |
+| パラメータ | タイプ                                                                                        | 説明                 |
+| ----- | ------------------------------------------------------------------------------------------ | ------------------ |
+| プレイヤー | [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity) | エンティティに乗っているプレイヤー。 |
 
 
 ### shouldRiderSit
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerEntity.shouldRiderSit();
@@ -2410,7 +2410,7 @@ myMCPlayerEntity.shouldRiderSit();
 
 ### spawnRunningParticles
 
-Attempts to create sprinting particles if the entity is sprinting and not in water.
+実体が、水の中でなく、ばねている場合、ばねている粒子を作成しようとします。
 
 ```zenscript
 myMCPlayerEntity.spawnRunningParticles();
@@ -2428,20 +2428,20 @@ myMCPlayerEntity.spawnSweepParticles();
 myMCPlayerEntity.startSleeping(p_213342_1_ as crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter     | Type                                                         | Description             |
-| ------------- | ------------------------------------------------------------ | ----------------------- |
-| p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| パラメータ         | タイプ                                                          | 説明           |
+| ------------- | ------------------------------------------------------------ | ------------ |
+| p_213342_1_ | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
 
 
 ### startSpinAttack
 
 ```zenscript
-myMCPlayerEntity.startSpinAttack(p_204803_1_ as int);
+myMCPlayerEntity.startSpinAttack(p_204803_1_ を int);
 ```
 
-| Parameter     | Type | Description             |
-| ------------- | ---- | ----------------------- |
-| p_204803_1_ | int  | No description provided |
+| パラメータ         | タイプ | 説明           |
+| ------------- | --- | ------------ |
+| p_204803_1_ | int | 説明が提供されていません |
 
 
 ### stopActiveHand
@@ -2452,28 +2452,28 @@ myMCPlayerEntity.stopActiveHand();
 
 ### stopRiding
 
-Dismounts this entity from the entity it is riding.
+このエンティティをそれが乗っているエンティティからアンマウントします。
 
 ```zenscript
 myMCPlayerEntity.stopRiding();
 ```
 
-### teleportKeepLoaded
+### テレポートKeepLoaded
 
 ```zenscript
 myMCPlayerEntity.teleportKeepLoaded(p_223102_1_ as double, p_223102_3_ as double, p_223102_5_ as double);
 ```
 
-| Parameter     | Type   | Description             |
-| ------------- | ------ | ----------------------- |
-| p_223102_1_ | double | No description provided |
-| p_223102_3_ | double | No description provided |
-| p_223102_5_ | double | No description provided |
+| パラメータ         | タイプ    | 説明           |
+| ------------- | ------ | ------------ |
+| p_223102_1_ | double | 説明が提供されていません |
+| p_223102_3_ | double | 説明が提供されていません |
+| p_223102_5_ | double | 説明が提供されていません |
 
 
-### tick
+### ティック(tick)
 
-Called to update the entity's position/logic.
+エンティティの位置/ロジックを更新するために呼び出されます。
 
 ```zenscript
 myMCPlayerEntity.tick();
@@ -2481,7 +2481,7 @@ myMCPlayerEntity.tick();
 
 ### toString
 
-Returns String
+戻り値の文字列
 
 ```zenscript
 myMCPlayerEntity.toString();
@@ -2489,7 +2489,7 @@ myMCPlayerEntity.toString();
 
 ### updateRidden
 
-Handles updating while riding another entity
+別のエンティティに乗っている間に更新を処理します。
 
 ```zenscript
 myMCPlayerEntity.updateRidden();
@@ -2498,33 +2498,33 @@ myMCPlayerEntity.updateRidden();
 ### updateSwimming
 
 ```zenscript
-myMCPlayerEntity.updateSwimming();
+myMCPlayerEntity.updateSwiming();
 ```
 
-### wakeUp
+### ウェイクアップ
 
 ```zenscript
 myMCPlayerEntity.wakeUp();
 ```
 
-### wakeUpPlayer
+### ウェイクアッププレイヤー
 
-Wake up the player if they're sleeping.
+スリープ状態になったらプレイヤーを起動してください。
 
 ```zenscript
-myMCPlayerEntity.wakeUpPlayer(immediately as boolean, updateWorldFlag as boolean, setSpawn as boolean);
+myMCPlayerEntity.wakeUpPlayer(boolean, updateWorldFlag を boolean, setSpawn を boolean);
 ```
 
-| Parameter       | Type    | Description             |
-| --------------- | ------- | ----------------------- |
-| immediately     | boolean | No description provided |
-| updateWorldFlag | boolean | No description provided |
-| setSpawn        | boolean | No description provided |
+| パラメータ           | タイプ      | 説明           |
+| --------------- | -------- | ------------ |
+| すぐに             | boolean型 | 説明が提供されていません |
+| updateWorldFlag | boolean型 | 説明が提供されていません |
+| setSpawn        | boolean型 | 説明が提供されていません |
 
 
 ### xpBarCap
 
-This method returns the cap amount of experience that the experience bar can hold. With each level, the experience cap on the player's experience bar is raised by 10.
+このメソッドは、エクスペリエンスバーが保持できる経験値の上限を返します。 各レベルでは、プレイヤーの経験値バーの キャップが10上昇します。
 
 Returns int
 

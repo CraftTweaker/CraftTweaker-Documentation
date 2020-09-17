@@ -1,17 +1,17 @@
 # MCBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.block.MCBlock
 ```
 
-## Methods
-### canSpawnInBlock
+## Métodos
+### puede aparecer en el bloque
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCBlock.canSpawnInBlock();
@@ -19,23 +19,23 @@ myMCBlock.canSpawnInBlock();
 
 ### getDefaultState
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Devuelve [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBlock.getDefaultState();
 ```
 
 
-## Properties
+## Propiedades
 
-| Name           | Type   | Has Getter | Has Setter |
-| -------------- | ------ | ---------- | ---------- |
-| lootTable      | String | true       | false      |
-| translationKey | String | true       | false      |
+| Nombre         | Tipo   | Tiene Obtén | Tiene Setter |
+| -------------- | ------ | ----------- | ------------ |
+| lootTable      | Cadena | verdad      | falso        |
+| translationKey | Cadena | verdad      | falso        |
 
 ## Casters
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Tipo de resultado | Es implícito |
+| ----------------- | ------------ |
+| Cadena            | falso        |
 

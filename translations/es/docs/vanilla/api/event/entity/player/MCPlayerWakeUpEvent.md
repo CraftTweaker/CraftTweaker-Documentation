@@ -1,27 +1,27 @@
 # MCPlayerWakeUpEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
+nuevo crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent>);
 ```
-| Parameter | Type                                                                                                                                | Description             |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | No description provided |
+| Parámetro | Tipo                                                                                                                                | Descripción                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerWakeUpEvent](/vanilla/api/event/entity/player/MCPlayerWakeUpEvent)> | No se proporcionó descripción |
 
 
 
-## Methods
-### getEntityPlayer
+## Métodos
+### %s Jugador
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getEntityPlayer();
@@ -29,85 +29,85 @@ myMCPlayerWakeUpEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Devuelve: `Jugador`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerWakeUpEvent.getPlayer();
 ```
 
-### hasResult
+### hastaResultado
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.hasResult();
+MCPlayerWakeUpEvent.hasResult();
 ```
 
-### isCancelable
+### es cancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
+ Nota:
+ Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCancelable();
 ```
 
-### isCanceled
+### es cancelado
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerWakeUpEvent.isCanceled();
 ```
 
-### setCanceled
+### setCancelado
 
 ```zenscript
-myMCPlayerWakeUpEvent.setCanceled(cancel as boolean);
+myMCPlayerWakeUpEvent.setCanceled(cancelar como booleano);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| cancelar  | boolean | No se proporcionó descripción |
 
 
-### shouldSetSpawn
+### debería aparecer
 
-Indicates if the player's sleep was considered successful. In vanilla, this is used to determine if the spawn chunk is to be set to the bed's position.
+Indica si el sueño del jugador fue considerado exitoso. En vainilla, esto se utiliza para determinar si el trozo de spawn se va a ajustar a la posición de la cama.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCPlayerWakeUpEvent.shouldSetSpawn();
 ```
 
-### updateWorld
+### actualizarMundo
 
-Indicates if the server should be notified of sleeping changes. This will only be false if the server is considered 'up to date' already, because, for example, it initiated the call.
+Indica si el servidor debe ser notificado de cambios de suspensión. Esto sólo será falso si el servidor ya se considera "actualizado", porque, por ejemplo, inició la llamada.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.updateWorld();
+MCPlayerWakeUpEvent.updateWorld();
 ```
 
-### wakeImmediately
+### activar inmediatamente
 
-Used for the 'wake up animation'. This is false if the player is considered 'sleepy' and the overlay should slowly fade away.
+Utilizado para la 'animación despertar'. Esto es falso si el jugador se considera 'dormido' y la superposición debería desvanecerse lentamente.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
-myMCPlayerWakeUpEvent.wakeImmediately();
+miMCPlayerWakeUpEvent.wakeInmediately();
 ```
 
 
