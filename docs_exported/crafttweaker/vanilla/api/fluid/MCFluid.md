@@ -23,6 +23,7 @@ Return type: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack
 
 ```zenscript
 myMCFluid.makeStack(amount as int);
+myMCFluid.makeStack(1000);
 ```
 
 | Parameter | Type | Description |
@@ -46,6 +47,7 @@ Creates a new [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStac
 
 ```zenscript
 myMCFluid * amount as int
+myMCFluid * 1000
 ```
 
 | Parameter | Type | Description |

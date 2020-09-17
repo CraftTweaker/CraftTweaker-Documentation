@@ -47,6 +47,7 @@ Return type: [crafttweaker.api.fluid.IFluidStack](/vanilla/api/fluid/IFluidStack
 
 ```zenscript
 myIFluidStack.setAmount(amount as int);
+myIFluidStack.setAmount(1000);
 ```
 
 | Parameter | Type | Description |
@@ -71,6 +72,7 @@ Sets the fluid amount in MilliBuckets (MB)
 
 ```zenscript
 myIFluidStack * amount as int
+myIFluidStack * 1000
 ```
 
 | Parameter | Type | Description |
