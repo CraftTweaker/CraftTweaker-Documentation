@@ -1,38 +1,38 @@
-# SmokerManager
+# Raucher Manager
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.SmokerManager
 ```
 
-## Implemented Interfaces
-SmokerManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+SmokerManager implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## Methoden
 ### addJSONRecipe
 
-Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+Fügt ein Rezept basierend auf einer angegebenen IData. Die zur Verfügung gestellten IData sollte ein DataPack JSON darstellen, dies ermöglicht Ihnen effektiv Rezepte für jedes DataPack zu registrieren, das IRecipeType Systeme unterstützt.
 
 ```zenscript
 smoker.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
 smoker.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Beschreibung                    |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Parameter | Type                                                   | Beschreibung                             |
+| --------- | ------------------------------------------------------ | ---------------------------------------- |
+| name      | String                                                 | Name des Rezepts                         |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Daten, die die json-Datei repräsentieren |
 
 
 ### addRecipe
 
-Adds a recipe based on given params.
+Fügt ein Rezept basierend auf angegebenen Parametern hinzu.
 
 ```zenscript
 smoker.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
@@ -41,89 +41,89 @@ smoker.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 
 | Parameter | Type                                                                | Beschreibung                    |
 | --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| name      | String                                                              | Name des neuen Rezepts          |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack-Ausgabe des Rezepts  |
+| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Ingrediente Eingabe des Rezepts |
+| xp        | float                                                               | wie viel xp der Spieler bekommt |
+| kochzeit  | int                                                                 | wie lange es dauert zu kochen   |
 
 
-### removeAll
+### alle entfernen
 
-Remove all recipes in this registry
+Alle Rezepte in dieser Registry entfernen
 
 ```zenscript
 smoker.removeAll();
 ```
 
-### removeByModid
+### entfernenByModid
 
-Remove recipe based on Registry name modid
+Entferne Rezept basierend auf Registry Name Modid
 
 ```zenscript
 smoker.removeByModid(modid as String);
 smoker.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Description                    |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| Parameter | Type   | Beschreibung                      |
+| --------- | ------ | --------------------------------- |
+| modo      | String | modid der zu entfernenden Rezepte |
 
 
 ### removeByName
 
-Remove recipe based on Registry name
+Rezept basierend auf Registry-Namen entfernen
 
 ```zenscript
 smoker.removeByName(name as String);
 smoker.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Beschreibung                      |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| Parameter | Type   | Beschreibung                            |
+| --------- | ------ | --------------------------------------- |
+| name      | String | Registry-Name des zu löschenden Rezepts |
 
 
 ### removeByRegex
 
-Remove recipe based on regex
+Rezept basierend auf Regex entfernen
 
 ```zenscript
-smoker.removeByRegex(regex as String);
+smoker.removeByRegex(regex als String);
 smoker.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Beschreibung           |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| Parameter | Type   | Beschreibung             |
+| --------- | ------ | ------------------------ |
+| regex     | String | regex zum übereinstimmen |
 
 
-### removeRecipe
+### Rezept entfernen
 
-Remove a recipe based on it's output.
+Entferne ein Rezept basierend auf seiner Ausgabe.
 
 ```zenscript
-smoker.removeRecipe(output as crafttweaker.api.item.IItemStack);
+smoker.removeRecipe(Ausgabe als crafttweaker.api.item.IItemStack);
 smoker.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Beschreibung         |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| Parameter | Type                                                              | Beschreibung        |
+| --------- | ----------------------------------------------------------------- | ------------------- |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Ausgabe des Rezepts |
 
 
 
-Removes a recipe based on it's output and input.
+Entfernt ein Rezept basierend auf Ausgabe und Eingabe.
 
 ```zenscript
-smoker.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
+smoker.removeRecipe(Ausgabe als crafttweaker.api.item.IItemStack, Eingabe als crafttweaker.api.item.IIngredient);
 smoker.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Beschreibung                         |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Parameter | Type                                                                | Beschreibung                             |
+| --------- | ------------------------------------------------------------------- | ---------------------------------------- |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack Ausgabe des Rezeptes.         |
+| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Ingredient des zu entfernenden Rezeptes. |
 
 
 
