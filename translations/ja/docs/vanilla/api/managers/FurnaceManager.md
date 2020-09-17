@@ -2,50 +2,50 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
-crafttweaker.api.FurnaceManager
+craftweaker.api.FurnaceManager
 ```
 
-## Implemented Interfaces
-FurnaceManager implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
+## 実装されたインターフェース
+FurnaceManager は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [crafttweaker.api.registrries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
-## Methods
+## メソッド
 ### addRecipe
 
-Adds a recipe based on given params.
+与えられたパラメータに基づいてレシピを追加します。
 
 ```zenscript
 furnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+furnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0);
 ```
 
-| Parameter | Type                                                                | Description                     |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | 文字列型                                                                | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| パラメータ | タイプ                                                                | 説明                 |
+| ----- | ------------------------------------------------------------------ | ------------------ |
+| 名前    | 文字列型                                                               | 新しいレシピの名前          |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | レシピの IItemStack 出力 |
+| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | レシピの原料入力           |
+| xp    | float型                                                             | プレーヤーがどれだけXPを取得するか |
+| 調理時間  | int                                                                | 調理にどれだけ時間がかかるか     |
 
 
-### removeRecipe
+### RemoveRecipe
 
-Removes a recipe based on it's output and input.
+出力と入力に基づいてレシピを削除します。
 
 ```zenscript
 furnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
 furnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| パラメータ | タイプ                                                                | 説明                 |
+| ----- | ------------------------------------------------------------------ | ------------------ |
+| 出力    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)  | IItemStack レシピの出力。 |
+| input | [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | 削除するレシピの成分.        |
 
 
 
