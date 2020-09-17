@@ -1,29 +1,29 @@
-# MCEntityType
+# Tipo de entidad
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.entity.MCEntityType
+tipo de entidad MCT
 ```
 
-## Implemented Interfaces
-MCEntityType implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCEntityType implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Propiedades
 
-| Name           | Type                                                                                           | Has Getter | Has Setter |
-| -------------- | ---------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true       | false      |
-| commandString  | String                                                                                         | true       | false      |
-| height         | float                                                                                          | true       | false      |
-| immuneToFire   | boolean                                                                                        | true       | false      |
-| lootTable      | String                                                                                         | true       | false      |
-| name           | String                                                                                         | true       | false      |
-| serializable   | boolean                                                                                        | true       | false      |
-| summonable     | boolean                                                                                        | true       | false      |
-| translationKey | String                                                                                         | true       | false      |
-| width          | float                                                                                          | true       | false      |
+| Nombre         | Tipo                                                                                         | Tiene Obtén | Tiene Setter |
+| -------------- | -------------------------------------------------------------------------------------------- | ----------- | ------------ |
+| clasificación  | [crafttweaker.api.entity.Clasificación de MCs](/vanilla/api/entities/MCEntityClassification) | verdad      | falso        |
+| commandString  | Cadena                                                                                       | verdad      | falso        |
+| altura         | flotante                                                                                     | verdad      | falso        |
+| inmuneToFire   | boolean                                                                                      | verdad      | falso        |
+| lootTable      | Cadena                                                                                       | verdad      | falso        |
+| nombre         | Cadena                                                                                       | verdad      | falso        |
+| serializable   | boolean                                                                                      | verdad      | falso        |
+| invocable      | boolean                                                                                      | verdad      | falso        |
+| translationKey | Cadena                                                                                       | verdad      | falso        |
+| width          | flotante                                                                                     | verdad      | falso        |
 
