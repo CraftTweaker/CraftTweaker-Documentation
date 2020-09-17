@@ -5,7 +5,7 @@
 Этот мод добавляет поддержку CraftTweaker в JEI. CraftTweaker изначально поддерживал JEI, но в связи с перезаписью версии 1.14, поддержка JEI перемещена в собственный мод.
 
 
-## Package
+## Пакет
 `mods.jei.JEI`
 
 ## Скрытие предметов
@@ -52,6 +52,6 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["Это первая строка!", "Это вторая!", "третья"]);
 ```
 
-Вышеприведенный код будет производить: ![Commit Box Filled](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+Вышеприведенный код будет производить: ![Коробка фиксации заполнена](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
