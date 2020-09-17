@@ -54,7 +54,7 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ## Properties
 
-| Name            | Type                                                                   | Has Getter | Has Setter |
+| 이름              | Type                                                                   | Has Getter | Has Setter |
 | --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
 | axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
 | axisOffset      | int                                                                    | true       | false      |
