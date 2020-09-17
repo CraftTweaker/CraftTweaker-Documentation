@@ -1,28 +1,28 @@
 # IIsBuilder
 
-Denotes anything that is a builder. What did you expect?
+Indique tout ce qui est un constructeur. Qu'attendiez-vous ?
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `contenttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 mods.contenttweaker.api.IIsBuilder
 ```
 
-## Methods
-### build
+## Méthodes
+### construire
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instructions de CoT pour construire ce que ce constructeur est censé construire.
 
 ```zenscript
 myIIsBuilder.build(resourceLocation as String);
 myIIsBuilder.build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Paramètre                    | Type de texte        | Libellé                                       |
+| ---------------------------- | -------------------- | --------------------------------------------- |
+| Localisation de la ressource | Chaîne de caractères | Le chemin de la ressource pour donner ce bloc |
 
 
 
