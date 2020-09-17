@@ -5,7 +5,7 @@
 这个模组添加了对于JEI物品管理器的支持 CraftTweaker以前是本地支持JEI的，但由于重写了1.14，JEI的支持被引入了它自己的模块中。
 
 
-## 所属包
+## 所属包名
 `mods.jei.JEI`
 
 ## 隐藏物品
@@ -52,6 +52,6 @@ mods.jei.JEI.hideCategory("minecraft:furnace");
 mods.jei.JEI.addInfo(<item:minecraft:diamond>, ["This is the first line!", "This is the second!", "third"]);
 ```
 
-上面的代码将会显示出如下效果![提交框已填充](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
+上面的代码将会显示出如下效果![填写完的提交框](https://blamejared.com/docsImages/JEITweakerAddInfo.png)
 
 
