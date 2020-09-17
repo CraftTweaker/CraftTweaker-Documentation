@@ -1,157 +1,157 @@
 # 如果你需要添加新页面，别忘了将其添加到此处的索引中
 nav:
   - 首页: 'index.md'
-  - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
-  - Recipes:
-      - Recipe Managers: "recipes/recipe_managers.md"
+  - 开始使用脚本: 'getting_started.md'
+  - 命令：“commands.md”
+  - 实例：“示例.md”
+  - 配方：
+      - 配方管理员：“配方/recipe_managers.md”
   - Vanilla:
-      - How to:
-          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
+      - 如何：
+          - 制作桌面配方: 'vanilla/how to /crafting_table.md'
       - Api:
-          - Block:
-              - Material:
+          - 块：
+              - 材料：
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
-          - Blocks:
+          - 块：
               - MCBlock: 'vanilla/api/blocks/MCBlock.md'
-              - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
-          - Brackets:
-              - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
-          - Data:
+              - MCBLockState: 'vanilla/api/blocks/MCBlockState.md'
+          - 板块：
+              - 命令StringDisplayable: 'vanilla/api/cluss/CommandStringDisplayable.md'
+          - 数据：
               - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
               - ByteData: 'vanilla/api/data/ByteData.md'
-              - DoubleData: 'vanilla/api/data/DoubleData.md'
+              - 双面数据：“vanilla/api/data/DoubleData.md”
               - FloatData: 'vanilla/api/data/FloatData.md'
               - ICollectionData: 'vanilla/api/data/ICollectionData.md'
               - IData: 'vanilla/api/data/IData.md'
               - INumberData: 'vanilla/api/data/INumberData.md'
               - IntArrayData: 'vanilla/api/data/IntArrayData.md'
               - IntData: 'vanilla/api/data/IntData.md'
-              - ListData: 'vanilla/api/data/ListData.md'
+              - 列表数据: 'vanilla/api/data/ListData.md'
               - LongArrayData: 'vanilla/api/data/LongArrayData.md'
-              - LongData: 'vanilla/api/data/LongData.md'
+              - 长数据：“vanilla/api/data/LongData.md”
               - MapData: 'vanilla/api/data/MapData.md'
-              - ShortData: 'vanilla/api/data/ShortData.md'
-              - StringData: 'vanilla/api/data/StringData.md'
-          - Entities:
-              - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
-              - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
-          - Entity:
-              - Player:
+              - 短数据: 'vanilla/api/data/ShortData.md'
+              - 字符串数据: 'vanilla/api/data/StringData.md'
+          - 实体：
+              - MCEntityClassification：'vanilla/api/entities es/MCEntityClassification.md'
+              - MCEntityType: 'vanilla/api/entities es/MCEntityType.md'
+          - 实体：
+              - 玩家：
                   - MCPlayerEntity: 'vanilla/api/entity/player/MCPlayerEntity.md'
-          - Event:
-              - Entity:
-                  - Player:
+          - 事件：
+              - 实体：
+                  - 玩家：
                       - MCAdvancementEvent: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
                       - MCAnvilRepairEvent: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
-                      - MCArrowLooseEvent: 'vanilla/api/event/entity/player/MCArrowLooseEvent.md'
+                      - MCArrowLoosevent: 'vanilla/api/event/entity/player/MCArrowLoosevent.md'
                       - MCArrowNockEvent: 'vanilla/api/event/entity/player/MCArrowNockEvent.md'
                       - MCAttackEntityEvent: 'vanilla/api/event/entity/player/MCAttackEntityEvent.md'
                       - MCBonemealEvent: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
                       - MCCriticalHitEvent: 'vanilla/api/event/entity/player/MCCriticalHitEvent.md'
                       - MCEntityItemPickupEvent: 'vanilla/api/event/entity/player/MCEntityItemPickupEvent.md'
                       - MCFillBucketEvent: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
-                      - MCItemFishedEvent: 'vanilla/api/event/entity/player/MCItemFishedEvent.md'
+                      - MCItemFishedEvent: 'vanilla/api/event/entity/player/MCItemFishevent.md'
                       - MCItemTooltipEvent: 'vanilla/api/event/entity/player/MCItemTooltipEvent.md'
                       - MCPlayerDestroyItemEvent: 'vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md'
                       - MCPlayerFlyableFallEvent: 'vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md'
-                      - MCPlayerSetSpawnEvent: 'vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md'
+                      - MCPlayerSetSpawnEvent: 'vanilla/api/event/entity/player/MCPlayerSetspawnEvent.md'
                       - MCPlayerSleepInBedEvent: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
                       - MCPlayerWakeUpEvent: 'vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md'
-                      - MCSleepingLocationCheckEvent: 'vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md'
+                      - MCSleepingLocationCheckEvent: 'vanilla/api/event/entity/player/MCSleepingLoceepEvent.md'
                       - MCSleepingTimeCheckEvent: 'vanilla/api/event/entity/player/MCSleepingTimeCheckEvent.md'
                       - MCUseHoeEvent: 'vanilla/api/event/entity/player/MCUseHoeEvent.md'
-                      - PlayerContainerEvent:
-                          - MCClose: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCClose.md'
-                          - MCOpen: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCOpen.md'
-                      - PlayerEvent:
+                      - 播放器ContainerEvents：
+                          - MCClos： 'vanilla/api/event/entity/player/playerContainerEvent/MCClose.md'
+                          - MCOpen: 'vanilla/api/event/entity/player/playerContainerEvent/MCOpen.md'
+                      - 玩家事件：
                           - MCItemCraftedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
                           - MCItemPickupEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md'
                           - MCItemSmeltedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md'
-                          - MCPlayerChangedDimensionEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
+                          - MCPlayerChangedDimensionEvent: 'vanilla/api/event/entity/playerEvent/MCPlayerChangedDimensionEvent.md'
                           - MCPlayerLoggedInEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedInEvent.md'
                           - MCPlayerLoggedOutEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md'
                           - MCPlayerRespawnEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
-                      - PlayerInteractEvent:
-                          - MCEntityInteract: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract.md'
+                      - 玩家交互事件：
+                          - MCEntityInteract: 'vanilla/api/event/entity/player/playerInteractEvent/MCEntityInteract.md'
                           - MCEntityInteractSpecific: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteractSpecific.md'
                           - MCLeftClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock.md'
-                          - MCLeftClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
+                          - MCLeftClickEmpt: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
                           - MCRightClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock.md'
-                          - MCRightClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
+                          - MCRightClickEmpt: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
                           - MCRightClickItem: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem.md'
-                      - PlayerXpEvent:
-                          - MCLevelChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCLevelChange.md'
-                          - MCPickupXp: 'vanilla/api/event/entity/player/PlayerXpEvent/MCPickupXp.md'
-                          - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
-          - Food:
+                      - 玩家XpEvent：
+                          - MCLevelChange: 'vanilla/api/event/entity/player_playerXpEvent/MCLevelChange.md'
+                          - MCPickupXp: 'vanilla/api/event/entity/player/playerXpEvent/MCPickupXp.md'
+                          - MCXpChange: 'vanilla/api/event/entity/player/playerXpEvent/MCXpChange.md'
+          - 食物：
               - MCFood: 'vanilla/api/food/MCFood.md'
-          - Items:
+          - 物品：
               - IIngredient: 'vanilla/api/items/IIngredient.md'
               - IItemStack: 'vanilla/api/items/IItemStack.md'
           - Logger:
               - ILogger: 'vanilla/api/logger/ILogger.md'
-          - Managers:
+          - 经理：
               - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
               - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
-              - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
+              - 制作TableManager: 'vanilla/api/managers/CraftingTableManager.md'
               - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
               - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
-              - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
+              - 吸烟管理器: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-          - Recipe:
-              - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+          - 累计：
+              - Recipefilter: 'vanilla/api/recipe/Recipefilter.md'
               - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
               - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
               - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
-          - Potions:
-              - MCPotion: 'vanilla/api/potions/MCPotion.md'
+          - 药水：
+              - MCPo: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
-              - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
-          - Tags:
+              - MCPotioneffect: 'vanilla/api/potions/MCPotionEffectInstance.md'
+          - 标签：
               - MCTag: 'vanilla/api/tags/MCTag.md'
           - Util:
               - BlockPos: 'vanilla/api/util/BlockPos.md'
-              - Direction: 'vanilla/api/util/Direction.md'
+              - 方向：'vanilla/api/util/Direction.md'
               - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
-          - World:
+          - 世界：
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
     - ContentTweaker:
-      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - 简单走路：'mods/contenttweakers/SimpleWalkthrok.md'
       - API:
-        - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
+        - BraketHandlers: 'mods/contenttweiler/API/BraketHandlers.md'
         - Api:
-          - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
-        - Block:
-          - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
-          - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
-          - Basic:
-            - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
-          - Pillar:
-            - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
-          - Stairs:
-            - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
-        - Item:
-          - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
-          - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
-          - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
+          - IIsBuilder: 'mods/contenttweiler/AAPI/IIsBuilder.md'
+        - 块：
+          - BlockBuilder: 'mods/contenttmiler/API/block/BlockBuilder.md'
+          - BlockTypeBuilder: 'mods/contenttmiler/API/block/BlockTypeBuilder.md'
+          - 基本：
+            - BlockBuilderBasic: 'mods/contenttmilower/API/block/basic/BlockBuilderBasic.md'
+          - 支柱：
+            - BlockBuilderPillarRotatable: 'mods/contenttmiler/API/block/pillar/BlockBuilderPillarRotable.md'
+          - 楼梯：
+            - BlockBuilderStairs： 'mods/contenttmiler/API/block/stairs/BlockBuilderStairs.md'
+        - 物品：
+          - ItemBuilder: 'mods/contenttemerer/API/itemBuilder.md'
+          - ItemTypeBuilder: 'mods/contenttweiler/API/itemTypeBuilder.md'
+          - MCItemGroup：'mods/contenttweiler/ADI/item/MCItemGroup.md'
           - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
-          - Basic:
-            - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
-          - Tool:
-            - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
+          - 基本：
+            - ItemBuilderBasic: 'mods/contenttweiler/API/item/ItemBuilderBasic.md'
+          - 工具：
+            - ItemBuilderTool: 'mods/contenttweiler/API/item/temBuilderTool.md'
     - InitialInventory:
-        - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+        - InitialInventory: 'mods/InitialInventory.md'
     - JEITweaker:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
-    - StoneAge:
-        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
-        - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
-        - Millstone: 'mods/StoneAge/MillstoneManager.md'
-        - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
-        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
+    - 石化时代：
+        - 干燥机：“mods/StoneAge/DryingRackManager.md”
+        基本工作台：“mods/StoneAge/FlintWorkfeManager.md”
+        - 摩尔斯顿：“mods/StoneAge/MillstoneManager.md”
+        - Tanning Rack：“mods/StoneAge/TanningRackManager.md”
+        - 树木Stump: 'mods/StoneAge/TreeStumpManager.md'

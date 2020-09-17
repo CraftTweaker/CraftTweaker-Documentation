@@ -1,0 +1,119 @@
+- バニラ:
+    - Api:
+      - BracketHandlers: 'vanilla/api/BracketHandlers.md'
+      - ブロック:
+        - 素材:
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+      - ブロック:
+        - MCBlock: 'vanilla/api/blocks/MCBlock.md'
+        - MCBlockState: 'vanilla/api/blocks/MCBlockState.md'
+      - ブラケット記法:
+        - CommandStringDisplayable: 'vanilla/api/brackets/CommandStringDisplayable.md'
+      - コマンド:
+        - カスタム:
+          - CustomCommands: 'vanilla/api/commands/custom/CustomCommands.md'
+          - MCAmbiguityConsummer: 'vanilla/api/commands/custom/MCAmbiguityConsumer.md'
+          - MCArgumentBuilder: 'vanilla/api/commands/custom/MCArgumentBuilder.md'
+          - MCArgumentCommandNode: 'vanilla/api/commands/custom/MCArgumentCommandNode.md'
+          - MCCommand: 'vanilla/api/commands/custom/MCCommand.md'
+          - MCCommandContext: 'vanilla/api/commands/custom/MCCommandContext.md'
+          - MCCommandContextBuilder: 'vanilla/api/commands/custom/MCCommandContextBuilder.md'
+          - MCCommandDispatcher: 'vanilla/api/commands/custom/MCCommandDispatcher.md'
+          - MCCommandNode: 'vanilla/api/commands/custom/MCCommandNode.md'
+          - MCCommandSource: 'vanilla/api/commands/custom/MCCommandSource.md'
+          - MCImmutableStringReader: 'vanilla/api/commands/custom/MCImmutableStringReader.md'
+          - MCliiteralArgumentBuilder: 'vanilla/api/commands/custom/MCLIiteralArgumentBuilder.md'
+          - MCLIiteralCommandNode: 'vanilla/api/commands/custom/MCLIiteralCommandNode.md'
+          - MCParseResults: 'vanilla/api/commands/custom/MCParseResults.md'
+          - MCParsedArgument: 'vanilla/api/commands/custom/MCParsedArgument.md'
+          - MCParsedCommandNode: 'vanilla/api/commands/custom/MCParsedCommandNode.md'
+          - MCRedirectModifier: 'vanilla/api/commands/custom/MCRedirectModifier.md'
+          - MCRequiredArgumentBuilder: 'vanilla/api/commands/custom/MCRequiredArgumentBuilder.md'
+          - MCResultConsumer: 'vanilla/api/commands/custom/MCResultConsumer.md'
+          - MCRootCommandNode: 'vanilla/api/commands/custom/MCRootCommandNode.md'
+          - MCSingleRedirectModifier: 'vanilla/api/commands/custom/MCSingleRedirectModifier.md'
+          - MCStringRange: 'vanilla/api/commands/custom/MCStringRange.md'
+          - MCSuggestion: 'vanilla/api/commands/custom/MCSuggestion.md'
+          - MCSuggestionContext: 'vanilla/api/commands/custom/MCSuggestionContext.md'
+          - MCSuggestionProvider: 'vanilla/api/commands/custom/MCSuggestionProvider.md'
+          - MCSuggestions: 'vanilla/api/commands/custom/MCSuggestions.md'
+          - MCSuggestionsBuilder: 'vanilla/api/commands/custom/MCSuggestionsBuilder.md'
+      - データ:
+        - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
+        - ByteData: 'vanilla/api/data/ByteData.md'
+        - DoubleData: 'vanilla/api/data/DoubleData.md'
+        - FloatData: 'vanilla/api/data/FloatData.md'
+        - ICollectionData: 'vanilla/api/data/ICollectionData.md'
+        - IData: 'vanilla/api/data/IData.md'
+        - INumberData: 'vanilla/api/data/INumberData.md'
+        - IntArrayData: 'vanilla/api/data/IntArrayData.md'
+        - IntData: 'vanilla/api/data/IntData.md'
+        - ListData: 'vanilla/api/data/ListData.md'
+        - LongArrayData: 'vanilla/api/data/LongArrayData.md'
+        - LongData: 'vanilla/api/data/LongData.md'
+        - MapData: 'vanilla/api/data/MapData.md'
+        - ShortData: 'vanilla/api/data/ShortData.md'
+        - StringData: 'vanilla/api/data/StringData.md'
+      - エンティティ:
+        - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
+        - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
+      - 流体:
+        - IFluidStack: 'vanilla/api/fluid/IFluidStack.md'
+        - MCFluid: 'vanilla/api/fluid/MCFluid.md'
+      - 食料:
+        - MCFood: 'vanilla/api/food/MCFood.md'
+      - アイテム:
+        - IIngredient: 'vanilla/api/items/IIngredient.md'
+        - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
+        - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
+        - IItemStack: 'vanilla/api/items/IItemStack.md'
+        - IngredientList: 'vanilla/api/items/IngredientList.md'
+        - MCIngredientConditioned: 'vanilla/api/items/MCIngredientConditioned.MD'
+        - MCIngredientTransformed: 'vanilla/api/items/MCIngredientTransformed.md'
+      - Logger:
+        - ILogger: 'vanilla/api/logger/ILogger.md'
+      - マネージャー:
+        - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
+        - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
+        - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
+        - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
+        - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
+        - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
+        - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
+        - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
+        - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+      - Mods:
+        - ModInfo: 'vanilla/api/mods/ModInfo.md'
+        - Mods: 'vanilla/api/mods/Mods.md'
+      - ポーション:
+        - MCPotion: 'vanilla/api/potions/MCPotion.md'
+        - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
+        - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
+      - レシピ:
+        - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
+        - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+        - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+        - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
+      - タグ:
+        - MCTag: 'vanilla/api/tags/MCTag.md'
+      - Util:
+        - BlockPos: 'vanilla/api/util/BlockPos.md'
+        - 方向: 'vanilla/api/util/Direction.md'
+        - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
+        - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
+        - テキスト:
+          - MCStyle: 'vanilla/api/util/text/MCStyle.md'
+          - MCTextComponent: 'vanilla/api/util/MCTextComponent.md'
+      - ワールド:
+        - MCBiome: 'vanilla/api/world/MCBiome.md'
+
+- Crafttweaker:
+    - Api:
+      - アイテム:
+        → ツールチップ:
+          - ITooltipFunction: 'crafttweaker/api/item/tooltip/ITooltipFunction.md'
+      - レシピ:
+        - WrapperRecipe: 'crafttweaker/api/recipes/WrapperRecipe.md'
+      - テキスト:
+        - テキスト書式設定: 'crafttweaker/api/text/TextFormatting.md'
+

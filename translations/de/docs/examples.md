@@ -1,6 +1,6 @@
-# Examples
-Script examples can be found here:
+# Beispiele
+Skriptbeispiele finden Sie hier:
 
-[Examples](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
+[Beispiele](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
 
-These are the scripts that have been used to test CraftTweaker in 1.14, they should all work and load just fine, you can use them to get familiarized with the new syntax
+Dies sind die Skripte, die verwendet wurden, um CraftTweaker in 1 zu testen. 4, sie sollten alle funktionieren und laden genau gut, Sie können sie verwenden, um sich mit der neuen Syntax vertraut zu machen

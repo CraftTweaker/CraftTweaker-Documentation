@@ -1,9 +1,9 @@
 # MCPlayerFlyableFallEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```
@@ -12,16 +12,16 @@ crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent>);
 ```
-| Parameter | Type                                                                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlyableFallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                     | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerFlallEvent](/vanilla/api/event/entity/player/MCPlayerFlyableFallEvent)> | 説明が提供されていません |
 
 
 
-## Methods
+## メソッド
 ### getDistance
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getDistance();
@@ -29,7 +29,7 @@ myMCPlayerFlyableFallEvent.getDistance();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getEntityPlayer();
@@ -37,7 +37,7 @@ myMCPlayerFlyableFallEvent.getEntityPlayer();
 
 ### getMultiplier
 
-Returns float
+float を返します。
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getMultiplier();
@@ -45,9 +45,9 @@ myMCPlayerFlyableFallEvent.getMultiplier();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerFlyableFallEvent.getPlayer();
@@ -55,9 +55,9 @@ myMCPlayerFlyableFallEvent.getPlayer();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerFlyableFallEvent.hasResult();
@@ -65,11 +65,11 @@ myMCPlayerFlyableFallEvent.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCancelable();
@@ -77,9 +77,9 @@ myMCPlayerFlyableFallEvent.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCPlayerFlyableFallEvent.isCanceled();
@@ -91,31 +91,31 @@ myMCPlayerFlyableFallEvent.isCanceled();
 myMCPlayerFlyableFallEvent.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
-### setDistance
+### 設定距離
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setDistance(distance as float);
+myMCPlayerFlyableFallEvent.setDistance(distance as as float);
 ```
 
-| Parameter | Type  | Description             |
-| --------- | ----- | ----------------------- |
-| distance  | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 距離    | float型 | 説明が提供されていません |
 
 
 ### setMultiplier
 
 ```zenscript
-myMCPlayerFlyableFallEvent.setMultiplier(multiplier as float);
+myMCPlayerFlyableFallEvent.setMultiplier(float型として乗算);
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| multiplier | float | No description provided |
+| パラメータ | タイプ    | 説明           |
+| ----- | ------ | ------------ |
+| 乗算    | float型 | 説明が提供されていません |
 
 
 

@@ -1,103 +1,103 @@
-# BlockBuilderPillarRotatable
+# BlockBuilderPillardrehbar
 
-A special Block Builder that allows you to create blocks that can be rotated in the same way as logs can. <p> This means that it has one texture for the top and bottom and one texture for the sides. By default these sides' locations are the block's name, followed by and either `_end` or `sides`. As with most things here, sample images are generated for you by default, though.
+Ein spezieller Blockbauer, der es dir erlaubt Blöcke zu erstellen, die genauso gedreht werden können wie Protokolle. <p> Das bedeutet, dass es eine Textur für oben und unten und eine Textur für die Seiten hat. Standardmäßig sind diese Seiten der Name des Blocks, gefolgt von `_end` oder `Seiten`. Wie bei den meisten Dingen hier werden für Sie standardmäßig Beispielbilder generiert.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `contenttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable
 ```
 
-## Implemented Interfaces
-BlockBuilderPillarRotatable implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+BlockBuilderPillarRotatable implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## Methoden
-### build
+### bauen
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Weist CoT tatsächlich zu bauen, was dieser Baumeister eigentlich bauen soll.
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().build(resourceLocation as String);
+neuer BlockBuilder().withType<BlockBuilderPillarRotatable>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Beschreibung                         |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Parameter          | Type   | Beschreibung                                    |
+| ------------------ | ------ | ----------------------------------------------- |
+| ressourcenstandort | String | Der Ressourcenpfad, der diesen Block geben soll |
 
 
-### withEndTexture
+### ohne EndTextur
 
-Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+Erlaubt es Ihnen, den Pfad der Textur zu überschreiben, die die Endseiten (oben/unten) verwenden sollen. Wenn der Namensraum dieser Textur im Namensraum von CoT oder einer seiner Addons (welche es unterstützen) liegt, wird das Bild standardmäßig erstellt.
 
- Returns: `This builder, used for method chaining`
+ Gibt zurück: `Dieser Builder, verwendet für Methodenverkettung`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+Rückgabetyp: [mods.contenttweaker.block.pillar.BlockBuilderPillaratable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTexture as crafttweaker.api.util.MCResourceLocation);
+neuer BlockBuilder().withTyp<BlockBuilderPillarRotatable>().withEndTexture(endTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(<resource:contenttweaker:my_awesome_pillar_end>);
 ```
 
-| Parameter  | Type                                                                             | Beschreibung                              |
-| ---------- | -------------------------------------------------------------------------------- | ----------------------------------------- |
-| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the end sides. |
+| Parameter  | Type                                                                             | Beschreibung                                      |
+| ---------- | -------------------------------------------------------------------------------- | ------------------------------------------------- |
+| endTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Die Textur, die für die Endseiten verwendet wird. |
 
 
 
-Allows you to override the path of the texture that the end sides (top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+Erlaubt es Ihnen, den Pfad der Textur zu überschreiben, die die Endseiten (oben/unten) verwenden sollen. Wenn der Namensraum dieser Textur im Namensraum von CoT oder einer seiner Addons (welche es unterstützen) liegt, wird das Bild standardmäßig erstellt. Verwendet eine Funktion, die den Namen des Blocks als Eingabe nimmt und die End-Textur dafür zurückgibt.
 
- Returns: `This builder, used for method chaining`
+ Gibt zurück: `Dieser Builder, verwendet für Methodenverkettung`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+Rückgabetyp: [mods.contenttweaker.block.pillar.BlockBuilderPillaratable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture(endTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
+new BlockBuilder().withType<BlockBuilderPillarRotatable>().withEndTexture((blockName als MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_end"));
 ```
 
-| Parameter  | Type                                                                                                                                                                                                    | Description         |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| Parameter  | Type                                                                                                                                                                                                    | Beschreibung                |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| endTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | Die zu verwendende Funktion |
 
 
-### withSideTexture
+### mit SideTextur
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+Erlaubt es dir, den Pfad der Textur zu überschreiben, die die Seiten (alles außer oben/unten) verwenden sollen. Wenn der Namensraum dieser Textur im Namensraum von CoT oder einer seiner Addons (welche es unterstützen) liegt, wird das Bild standardmäßig erstellt.
 
- Returns: `This builder, used for method chaining`
+ Gibt zurück: `Dieser Builder, verwendet für Methodenverkettung`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+Rückgabetyp: [mods.contenttweaker.block.pillar.BlockBuilderPillaratable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
+neuer BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(<resource:contenttweaker:my_awesome_pillar_side>);
 ```
 
-| Parameter    | Type                                                                             | Beschreibung                          |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------- |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides. |
+| Parameter    | Type                                                                             | Beschreibung                                          |
+| ------------ | -------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | Die Textur, die für die Seiten verwendet werden soll. |
 
 
 
-Allows you to override the path of the texture that the sides (everything but top/bottom) should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+Erlaubt es dir, den Pfad der Textur zu überschreiben, die die Seiten (alles außer oben/unten) verwenden sollen. Wenn der Namensraum dieser Textur im Namensraum von CoT oder einer seiner Addons (welche es unterstützen) liegt, wird das Bild standardmäßig erstellt. Verwendet eine Funktion, die den Namen des Blocks als Eingabe nimmt und die End-Textur dafür zurückgibt.
 
- Returns: `This builder, used for method chaining`
+ Gibt zurück: `Dieser Builder, verwendet für Methodenverkettung`
 
-Return type: [mods.contenttweaker.block.pillar.BlockBuilderPillarRotatable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
+Rückgabetyp: [mods.contenttweaker.block.pillar.BlockBuilderPillaratable](/mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable)
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture(sidesTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 new BlockBuilder().withType<BlockBuilderPillarRotatable>().withSideTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
 ```
 
-| Parameter    | Type                                                                                                                                                                                                    | Beschreibung        |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| Parameter    | Type                                                                                                                                                                                                    | Beschreibung                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | Die zu verwendende Funktion |
 
 
 

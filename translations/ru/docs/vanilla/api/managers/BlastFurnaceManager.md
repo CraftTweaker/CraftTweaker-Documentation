@@ -1,51 +1,51 @@
-# BlastFurnaceManager
+# Менеджер BlastFurnace
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.BlastFurnaceManager
 ```
 
-## Implemented Interfaces
-BlastFurnaceManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+BlastFurnaceManager реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.registries.ICookingRecipeManager](/vanilla/api/managers/ICookingRecipeManager)
 
 ## Методы
-### addRecipe
+### Добавить рецепт
 
-Adds a recipe based on given params.
+Добавляет рецепт на основе заданных параметров.
 
 ```zenscript
-blastFurnace.addRecipe(name as String, output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient, xp as float, cookTime as int);
-blastFurnace.addRecipe("wool2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
+blastFurnace.addRecipe(имя в виде строки, вывести как crafttweaker.api.item.IItemStack, вводить как crafttweaker.api.item.IIngredient, xp как плавающий, время приготовления int);
+blastFurnace.addRecipe("вал2diamond", <item:diamond>, <tag:minecraft:wool>, 1.0, 0);
 ```
 
-| Parameter | Тип                                                                 | Описание                        |
-| --------- | ------------------------------------------------------------------- | ------------------------------- |
-| name      | String                                                              | Name of the new recipe          |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient input of the recipe |
-| xp        | float                                                               | how much xp the player gets     |
-| cookTime  | int                                                                 | how long it takes to cook       |
+| Параметр        | Тип                                                                 | Описание                                    |
+| --------------- | ------------------------------------------------------------------- | ------------------------------------------- |
+| имя             | String                                                              | Название нового рецепта                     |
+| вывод           | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Вывод рецепта IItemStack                    |
+| input           | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Вход Igredient в рецепт                     |
+| xp              | float                                                               | сколько xp получает игрок                   |
+| время кулинарии | int                                                                 | сколько времени требуется для приготовления |
 
 
-### removeRecipe
+### удалить рецепт
 
-Removes a recipe based on it's output and input.
+Удаляет рецепт на основе его вывода и ввода.
 
 ```zenscript
-blastFurnace.removeRecipe(output as crafttweaker.api.item.IItemStack, input as crafttweaker.api.item.IIngredient);
+blastFurnace.removeRecipe(выход как crafttweaker.api.item.IItemStack, ввод как crafttweaker.api.item.IIngredient);
 blastFurnace.removeRecipe(<item:minecraft:diamond>, <tag:minecraft:wool>);
 ```
 
-| Parameter | Type                                                                | Description                          |
-| --------- | ------------------------------------------------------------------- | ------------------------------------ |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | IItemStack output of the recipe.     |
-| input     | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | IIngredient of the recipe to remove. |
+| Параметр | Тип                                                                 | Описание                         |
+| -------- | ------------------------------------------------------------------- | -------------------------------- |
+| вывод    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)   | Выход из рецепта IItemStack.     |
+| input    | [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient) | Ингредиент рецепта для удаления. |
 
 
 

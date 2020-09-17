@@ -1,21 +1,21 @@
-# Drying Rack
+# Suszarnia
 
-## Package
+## Pakiet
 `import mods.stone_age.DryingRackManager;`
 
-## Methods
-- **String name** Recipe name
+## Metody
+- **Nazwa ciągu** Nazwa przepisu
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) input**
-- **int dryingTime** Drying time in ticks
-- **String group** Recipe group
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/) wejście**
+- **int dryingTime** Czas suszenia w tickach
+- **Grupa ciągów** Grupa przepisów
 
-## Addition
+## Dodanie
 
 ```zenscript
-<recipetype:stone_age:drying_rack>.addRecipe(String name, IItemStack output, IIngredient input, int dryingTime, @OptionalString String group)
+<recipetype:stone_age:drying_rack>.addRecipe(Nazwa ciągu, wyjście IItemStack, IIngredient input, int dryingTime, @OptionalString String group)
 
-<recipetype:stone_age:drying_rack>.addRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
+<recipetype:stone_age:drying_rack>. ddRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
 
 DryingRackManager.INSTANCE.addRecipe("dried_meat", <item:minecraft:cooked_mutton>, <item:minecraft:mutton>, 1200, "foods");
 ```

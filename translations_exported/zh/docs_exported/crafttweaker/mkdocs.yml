@@ -1,0 +1,119 @@
+- Vanilla:
+    - Api:
+      - BraketHandlers: 'vanilla/api/BraketHandlers.md'
+      - 块：
+        - 材料：
+          - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
+      - 块：
+        - MCBlock: 'vanilla/api/blocks/MCBlock.md'
+        - MCBLockState: 'vanilla/api/blocks/MCBlockState.md'
+      - 板块：
+        - 命令StringDisplayable: 'vanilla/api/cluss/CommandStringDisplayable.md'
+      - 命令：
+        - 自定义：
+          - 自定义命令： 'vanilla/api/commands/custom/CustomCommands.md'
+          - MCAmbiguityConsumer: 'vanilla/api/commands/custom/MCambiguityConsumer.md'
+          - MCArgumentBuilder: 'vanilla/api/commands/custom/MCArgumentBuilder.md'
+          - MCArgumentCommande: 'vanilla/api/commands/custom/MCArgumentCommandNode.md'
+          - MCCommand: 'vanilla/api/commands/custom/MCCommand.md'
+          - MCCommandContext: 'vanilla/api/commands/custom/MCCommandContext.md'
+          - MCCommandContextBuilder: 'vanilla/api/commands/custom/MCCommandContextBuilder.md'
+          - MCCommandDispatcher: 'vanilla/api/commands/custom/MCCommandDispatcher.md'
+          - MCCommandNote: 'vanilla/api/commands/custom/MCCommandNode.md'
+          - MCCommandSource: 'vanilla/api/commands/custom/MCCommandSource.md'
+          - MCImmutableStringReader: 'vanilla/api/commands/custom/MCImmutableStringReader.md'
+          - MCLiteralArgumentBuilder: 'vanilla/api/commands/custom/MCLiteralArgumentBuilder.md'
+          - MCLiteralCommande: 'vanilla/api/commands/custom/MCLiteralCommandNode.md'
+          - MCParseResults: 'vanilla/api/commands/custom/MCParseResults.md'
+          - MCParsedArgu: 'vanilla/api/commands/custom/MCParsedArgument.md'
+          - MCParsedCommandNote: 'vanilla/api/commands/custom/MCParsedCommandNode.md'
+          - MCRedirectModifier: 'vanilla/api/commands/custom/MCRedirectModifier.md'
+          - MCRequireedArgumentBuilder: 'vanilla/api/commands/custom/MCRequireedArgumentBuilder.md'
+          - MCResultConsumer: 'vanilla/api/commands/custom/MCResultConsumer.md'
+          - MCRootCommande: 'vanilla/api/commands/custom/MCRootCommandNode.md'
+          - MCSingleRedirectModifier: 'vanilla/api/commands/custom/MCSingleRedirectModifier.md'
+          - MCStringrange: 'vanilla/api/commands/custom/MCStringRange.md'
+          - MCSuggestion: 'vanilla/api/commands/custom/MCSuggestion.md'
+          - MCSuggestionContext: 'vanilla/api/commands/custom/MCSuggestionContext.md'
+          - MCSuggestionprovider: 'vanilla/api/commands/custom/MCSuggestionProvider.md'
+          - MCSuggestions: 'vanilla/api/commands/custom/MCSuggestions.md'
+          - MCSuggestionsBuilder: 'vanilla/api/commands/custom/MCSuggestionsBuilder.md'
+      - 数据：
+        - ByteArrayData: 'vanilla/api/data/ByteArrayData.md'
+        - ByteData: 'vanilla/api/data/ByteData.md'
+        - 双面数据：“vanilla/api/data/DoubleData.md”
+        - FloatData: 'vanilla/api/data/FloatData.md'
+        - ICollectionData: 'vanilla/api/data/ICollectionData.md'
+        - IData: 'vanilla/api/data/IData.md'
+        - INumberData: 'vanilla/api/data/INumberData.md'
+        - IntArrayData: 'vanilla/api/data/IntArrayData.md'
+        - IntData: 'vanilla/api/data/IntData.md'
+        - 列表数据: 'vanilla/api/data/ListData.md'
+        - LongArrayData: 'vanilla/api/data/LongArrayData.md'
+        - 长数据：“vanilla/api/data/LongData.md”
+        - MapData: 'vanilla/api/data/MapData.md'
+        - 短数据: 'vanilla/api/data/ShortData.md'
+        - 字符串数据: 'vanilla/api/data/StringData.md'
+      - 实体：
+        - MCEntityClassification：'vanilla/api/entities es/MCEntityClassification.md'
+        - MCEntityType: 'vanilla/api/entities es/MCEntityType.md'
+      - 流体：
+        - IFluidStack: 'vanilla/api/fluid/IlluidStack.md'
+        - MCFluid: 'vanilla/api/fluid/MCFluid.md'
+      - 食物：
+        - MCFood: 'vanilla/api/food/MCFood.md'
+      - 物品：
+        - IIngredient: 'vanilla/api/items/IIngredient.md'
+        - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
+        - IIngredientTransformer: 'vanilla/api/items/IIngredientTransformer.md'
+        - IItemStack: 'vanilla/api/items/IItemStack.md'
+        - 成分列表: 'vanilla/api/items/IngredientList.md'
+        - MCIngredientCondition: 'vanilla/api/items/MCIngredientConditioned.md'
+        - MCIngredientTransformed: 'vanilla/api/items/MCIngredientTransformed.md'
+      - Logger:
+        - ILogger: 'vanilla/api/logger/ILogger.md'
+      - 经理：
+        - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
+        - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
+        - 制作TableManager: 'vanilla/api/managers/CraftingTableManager.md'
+        - FurnaceManager: 'vanilla/api/managers/FurnaceManager.md'
+        - ICookingRecipeManager: 'vanilla/api/managers/ICookingRecipeManager.md'
+        - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
+        - SmithingManager: 'vanilla/api/managers/SmithingManager.md'
+        - 吸烟管理器: 'vanilla/api/managers/SmokerManager.md'
+        - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
+      - Mods:
+        - ModInfo: 'vanilla/api/mods/ModInfo.md'
+        - 模式: 'vanilla/api/mods/Mods.md'
+      - 药水：
+        - MCPo: 'vanilla/api/potions/MCPotion.md'
+        - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
+        - MCPotioneffect: 'vanilla/api/potions/MCPotionEffectInstance.md'
+      - 累计：
+        - Recipefilter: 'vanilla/api/recipe/Recipefilter.md'
+        - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
+        - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
+        - RecipeFunctionSingle: 'vanilla/api/recipe/RecipeFunctionSingle.md'
+      - 标签：
+        - MCTag: 'vanilla/api/tags/MCTag.md'
+      - Util:
+        - BlockPos: 'vanilla/api/util/BlockPos.md'
+        - 方向：'vanilla/api/util/Direction.md'
+        - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
+        - MCResourceLocation: 'vanilla/api/util/MCResourceLocation.md'
+        - 文本：
+          - MCStyle: 'vanilla/api/util/text/MCStyle.md'
+          - MCTextcomponent: 'vanilla/api/util/text/MCTextComponent.md'
+      - 世界：
+        - MCBiome: 'vanilla/api/world/MCBiome.md'
+
+- Crafttweaker:
+    - Api:
+      - 物品：
+        - 工具提示：
+          - ITooltipfunction: 'craftmiliter/api/item/tooltip/ITooltipFunction.md'
+      - 配方：
+        - 包装累进器: "crafttfiler/api/配方/WrapperRecipe.md"
+      - 文本：
+        - 文本格式化: 'craftmiliter/api/text/TextFormating.md'
+

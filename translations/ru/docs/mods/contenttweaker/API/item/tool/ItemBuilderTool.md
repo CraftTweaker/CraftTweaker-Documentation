@@ -1,126 +1,126 @@
 # ItemBuilderTool
 
-A special builder that allows you to create items that can be used as tools. You should have set the item's max damage before changing to this builder. <p> Has special methods that allow you to set the mining level for several tool types as well as the attack damage.
+Специальный строитель, который позволяет создавать предметы, которые можно использовать в качестве инструментов. Перед изменением этого строителя необходимо задать максимальный урон предмета. <p> Имеет специальные методы, позволяющие задать уровень добычи нескольких инструментов, а также урон от атаки.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с мод-id `contenttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 mods.contenttweaker.item.tool.ItemBuilderTool
 ```
 
 ## Реализованные интерфейсы
-ItemBuilderTool implements the following interfaces. That means any method available to them can also be used on this class.
+ItemBuilderTool реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 - [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder)
 
 ## Методы
-### build
+### сборка
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Инструкция CoT на самом деле строить то, что этот строитель должен быть построен.
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceLocation as String);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build(resourceLocation as String);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().build("my_awesome_block");
 ```
 
-| Параметр         | Тип    | Описание                             |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Параметр               | Тип    | Описание                       |
+| ---------------------- | ------ | ------------------------------ |
+| местоположение ресурса | String | Путь к ресурсу для этого блока |
 
 
-### withAttackDamage
+### с атачным уроном
 
-Allows you to set the attack damage bonus that you get when holding this item
+Позволяет задать бонус к урону атаки, который вы получаете при удерживании этого предмета
 
- Returns: `This builder, used for method chaining`
+ Возвраты: `Этот конструктор используется для цепи методов`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+Тип возврата: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(attackDamage as float);
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(attackDamage as float);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackDamage(2.0f);
 ```
 
-| Параметр     | Тип   | Описание                     |
-| ------------ | ----- | ---------------------------- |
-| attackDamage | float | The additional attack damage |
+| Параметр   | Тип   | Описание                     |
+| ---------- | ----- | ---------------------------- |
+| Урон атаки | float | Дополнительный урон от атаки |
 
 
-### withAttackSpeed
+### с скоростью атаки
 
-Allows you to set the attack speed bonus that you get when holding this item.
+Позволяет вам установить бонус скорости атаки, который вы получите, удерживая этот предмет.
 
- Returns: `This builder, used for method chaining.`
+ Возврат: `Этот конструктор используется для цепи методов.`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+Тип возврата: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(attackSpeed as double);
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(скорость атаки дважды);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withAttackSpeed(2.0d);
 ```
 
-| Параметр    | Тип    | Описание         |
-| ----------- | ------ | ---------------- |
-| attackSpeed | double | The attack speed |
+| Параметр       | Тип    | Описание       |
+| -------------- | ------ | -------------- |
+| скорость атаки | double | Скорость атаки |
 
 
-### withDurabilityCostAttack
+### затратная атака при выпадении прочности
 
-Allows you to set the amount of damage that this item will receive when hitting enemies. By default this is `0`
+Позволяет задать количество урона, которое будет получено этим предметом при попадании в врага. По умолчанию это `0`
 
- Returns: `This builder, used for method chaining`
+ Возвраты: `Этот конструктор используется для цепи методов`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+Тип возврата: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(durabilityCostAttack as int);
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(durabilityCostAttack as int);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostAttack(5);
 ```
 
-| Параметр             | Тип | Описание                                 |
-| -------------------- | --- | ---------------------------------------- |
-| durabilityCostAttack | int | The damage points this item will receive |
+| Параметр                     | Тип | Описание                                  |
+| ---------------------------- | --- | ----------------------------------------- |
+| стоимость атаки на прочность | int | Очки урона за этот предмет будут получены |
 
 
-### withDurabilityCostMining
+### затратодобывающая мощность
 
-Allows you to set the amount of damage that this item will receive when mining blocks. By default this is `0`
+Позволяет задать количество урона, которое будет получено этим предметом при добыче блоков. По умолчанию это `0`
 
- Returns: `This builder, used for method chaining`
+ Возвраты: `Этот конструктор используется для цепи методов`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+Тип возврата: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(durabilityCostMining as int);
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(durabilityCostMining как int);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withDurabilityCostMining(1);
 ```
 
-| Параметр             | Тип | Описание                                 |
-| -------------------- | --- | ---------------------------------------- |
-| durabilityCostMining | int | The damage points this item will receive |
+| Параметр                 | Тип | Описание                                  |
+| ------------------------ | --- | ----------------------------------------- |
+| долговечность Комбинации | int | Очки урона за этот предмет будут получены |
 
 
-### withToolType
+### с типом инструментов
 
-Allows you to add a tool type to this tool. You can specify the type, the mining level and optionally the mining speed when this type is hit as well.
+Позволяет добавить тип инструмента в этот инструмент. Вы можете указать тип, уровень добычи и, по желанию, скорость добычи при наступлении этого типа.
 
- Returns: `This builder, used for method chaining`
+ Возвраты: `Этот конструктор используется для цепи методов`
 
-Return type: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
+Тип возврата: [mods.contenttweaker.item.tool.ItemBuilderTool](/mods/contenttweaker/API/item/tool/ItemBuilderTool)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(toolType as mods.contenttweaker.item.MCToolType, miningLevel as int, miningSpeed as float);
-new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3);
+новый ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(toolType as mods.contenttweaker.item.MCToolType, miningLevel как int, miningSpeed as float);
+new ItemBuilder(). ithMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3);
 new ItemBuilder().withMaxDamage(150).withType<ItemBuilderTool>().withToolType(<tooltype:shovel>, 3, 2.0f);
 ```
 
-| Parameter   | Type                                                                            | Description                                          | IsOptional | Default Value |
-| ----------- | ------------------------------------------------------------------------------- | ---------------------------------------------------- | ---------- | ------------- |
-| toolType    | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | The type of the tool                                 | false      | `null`        |
-| miningLevel | int                                                                             | The mining level for this tool type                  | false      | `null`        |
-| miningSpeed | float                                                                           | How fast this tool can mine blocks of the given type | true       | `1.0`         |
+| Параметр        | Тип                                                                             | Описание                                                     | Необязательный | Значение по умолчанию |
+| --------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------- | --------------------- |
+| тип инструмента | [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) | Тип инструмента                                              | false          | `null`                |
+| майнинг-уровень | int                                                                             | Уровень добычи для данного типа инструмента                  | false          | `null`                |
+| скорость добычи | float                                                                           | Как быстро этот инструмент может добывать блоки данного типа | true           | `1.0`                 |
 
 
 

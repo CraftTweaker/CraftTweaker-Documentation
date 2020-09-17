@@ -1,27 +1,27 @@
 # MCTag
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.tag.MCTag
 ```
 
-## Implemented Interfaces
-MCTag implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
+## 実装されたインターフェース
+MCTag は以下のインターフェースを実装しています。 つまり、利用可能な任意のメソッドはこのクラスでも使用できます。
+- [craftweaker.api.item.IIngredient](/vanilla/api/items/IIngredient)
 
-## Methods
+## メソッド
 ### addBlocks
 
 ```zenscript
 myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Parameter | Type                                                            | Description             |
-| --------- | --------------------------------------------------------------- | ----------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
+| パラメータ | タイプ                                                             | 説明           |
+| ----- | --------------------------------------------------------------- | ------------ |
+| ブロック  | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | 説明が提供されていません |
 
 
 ### addEntityTypes
@@ -30,25 +30,25 @@ myMCTag.addBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 myMCTag.addEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Parameter | Type                                                                         | Description             |
-| --------- | ---------------------------------------------------------------------------- | ----------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| パラメータ  | タイプ                                                                          | 説明           |
+| ------ | ---------------------------------------------------------------------------- | ------------ |
+| エンティティ | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | 説明が提供されていません |
 
 
 ### addItems
 
 ```zenscript
-myMCTag.addItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.addItems(crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter | Type                                                                | Description             |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| パラメータ | タイプ                                                                 | 説明           |
+| ----- | ------------------------------------------------------------------- | ------------ |
+| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
 
 
 ### createBlockTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+戻り値 [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createBlockTag();
@@ -56,7 +56,7 @@ myMCTag.createBlockTag();
 
 ### createEntityTypeTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+戻り値 [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createEntityTypeTag();
@@ -64,7 +64,7 @@ myMCTag.createEntityTypeTag();
 
 ### createItemTag
 
-Returns [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
+戻り値 [crafttweaker.api.tag.MCTag](/vanilla/api/tags/MCTag)
 
 ```zenscript
 myMCTag.createItemTag();
@@ -72,45 +72,45 @@ myMCTag.createItemTag();
 
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+この材料スタックでクラフトが行われると、グリッド上になにが残るか？ ただし、スタックが一致するかどうかのチェックは行いません！ Craft Tweakerでの使用例,
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCTag.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 myMCTag.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| パラメータ | タイプ                                                               | 説明                |
+| ----- | ----------------------------------------------------------------- | ----------------- |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | この成分を提供するためのスタック。 |
 
 
-### matches
+### 一致
 
-Does the given stack match the ingredient?
+指定されたスタックは成分と一致しますか?
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCTag.matches(stack as crafttweaker.api.item.IItemStack);
 myMCTag.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| パラメータ | タイプ                                                               | 説明         |
+| ----- | ----------------------------------------------------------------- | ---------- |
+| スタック  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | チェックするスタック |
 
 
-### removeBlocks
+### ブロックを削除
 
 ```zenscript
-myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
+myMCTag.removeBlocks(block as crafttweaker.api.block.MCBlock[]);
 ```
 
-| Parameter | Type                                                            | Description             |
-| --------- | --------------------------------------------------------------- | ----------------------- |
-| blocks    | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | No description provided |
+| パラメータ | タイプ                                                             | 説明           |
+| ----- | --------------------------------------------------------------- | ------------ |
+| ブロック  | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[] | 説明が提供されていません |
 
 
 ### removeEntityTypes
@@ -119,36 +119,36 @@ myMCTag.removeBlocks(blocks as crafttweaker.api.block.MCBlock[]);
 myMCTag.removeEntityTypes(entities as crafttweaker.api.entity.MCEntityType[]);
 ```
 
-| Parameter | Type                                                                         | Description             |
-| --------- | ---------------------------------------------------------------------------- | ----------------------- |
-| entities  | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | No description provided |
+| パラメータ  | タイプ                                                                          | 説明           |
+| ------ | ---------------------------------------------------------------------------- | ------------ |
+| エンティティ | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | 説明が提供されていません |
 
 
-### removeItems
+### アイテムを削除
 
 ```zenscript
-myMCTag.removeItems(items as crafttweaker.api.item.IItemStack[]);
+myMCTag.removeItems(crafttweaker.api.item.IItemStack[]);
 ```
 
-| Parameter | Type                                                                | Description             |
-| --------- | ------------------------------------------------------------------- | ----------------------- |
-| items     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | No description provided |
+| パラメータ | タイプ                                                                 | 説明           |
+| ----- | ------------------------------------------------------------------- | ------------ |
+| 項目    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | 説明が提供されていません |
 
 
 
-## Properties
+## プロパティー
 
-| Name          | Type                                                                         | Has Getter | Has Setter |
-| ------------- | ---------------------------------------------------------------------------- | ---------- | ---------- |
-| blocks        | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true       | false      |
-| commandString | String                                                                       | true       | false      |
-| entityTypes   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true       | false      |
+| 名称            | タイプ                                                                          | ゲッターあり | セッターあり |
+| ------------- | ---------------------------------------------------------------------------- | ------ | ------ |
+| ブロック          | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock)[]              | true   | false  |
+| commandString | 文字列型                                                                         | true   | false  |
+| entityTypes   | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType)[] | true   | false  |
+| 項目            | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[]          | true   | false  |
 
-## Casters
+## キャスト
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| 結果の種類                                                      | 暗黙的  |
+| ---------------------------------------------------------- | ---- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true |
 

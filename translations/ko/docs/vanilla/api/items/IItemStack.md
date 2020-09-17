@@ -106,7 +106,7 @@ Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ## Properties
 
-| Name           | Type                                                                | Has Getter | Has Setter |
+| 이름             | Type                                                                | Has Getter | Has Setter |
 | -------------- | ------------------------------------------------------------------- | ---------- | ---------- |
 | amount         | int                                                                 | true       | false      |
 | burnTime       | int                                                                 | true       | true       |

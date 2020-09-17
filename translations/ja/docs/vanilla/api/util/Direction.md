@@ -1,39 +1,39 @@
-# Direction
+# 方向
 
-Represents a cardinal direction (north, south, east, west) and (up and down).
+基本方向(北、南、東、西)と(上下)を表します。
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.util.Direction
 ```
 
-## Methods
+## メソッド
 ### rotateAround
 
-Rotates this direction around a given Axis
+指定した軸を中心にこの方向を回転します。
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-<direction:north>.rotateAround(axis as crafttweaker.api.util.DirectionAxis);
+<direction:north>.rotateAround(crafttweaker.api.util.DirectionAxis);
 <direction:north>.rotateAround(<directionaxis:north>);
 ```
 
-| Parameter | Type                                                                   | Description               |
-| --------- | ---------------------------------------------------------------------- | ------------------------- |
-| axis      | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | the Axis to rotate around |
+| パラメータ | タイプ                                                                    | 説明    |
+| ----- | ---------------------------------------------------------------------- | ----- |
+| 軸     | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | 回転する軸 |
 
 
 ### rotateY
 
-Rotates this direction on the Y axis
+この方向を Y 軸に回転します。
 
- Returns: `the direction that rotated on the Y axis of this direction`
+ 戻り値: `この方向のY軸で回転した方向`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateY();
@@ -41,29 +41,29 @@ Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ### rotateYCCW
 
-Rotates this direction counter-clock wise on the Y axis
+この方向を反時計回りにY軸で回転させます。
 
- Returns: `the direction that is counter clockwise on the Y axis`
+ 戻り値: `Y軸の反時計回りの方向`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 <direction:north>.rotateYCCW();
 ```
 
 
-## Properties
+## プロパティー
 
-| Name            | Type                                                                   | Has Getter | Has Setter |
-| --------------- | ---------------------------------------------------------------------- | ---------- | ---------- |
-| axis            | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true       | false      |
-| axisOffset      | int                                                                    | true       | false      |
-| horizontalAngle | float                                                                  | true       | false      |
-| horizontalIndex | int                                                                    | true       | false      |
-| index           | int                                                                    | true       | false      |
-| name            | String                                                                 | true       | false      |
-| opposite        | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true       | false      |
-| xOffset         | int                                                                    | true       | false      |
-| yOffset         | int                                                                    | true       | false      |
-| zOffset         | int                                                                    | true       | false      |
+| 名称              | タイプ                                                                    | ゲッターあり | セッターあり |
+| --------------- | ---------------------------------------------------------------------- | ------ | ------ |
+| 軸               | [crafttweaker.api.util.DirectionAxis](/vanilla/api/util/DirectionAxis) | true   | false  |
+| axisOffset      | int                                                                    | true   | false  |
+| 水平角度            | float型                                                                 | true   | false  |
+| horizontalIndex | int                                                                    | true   | false  |
+| インデックス          | int                                                                    | true   | false  |
+| 名前              | 文字列型                                                                   | true   | false  |
+| 正反対の            | [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)         | true   | false  |
+| xOffset         | int                                                                    | true   | false  |
+| yOffset         | int                                                                    | true   | false  |
+| zOffset         | int                                                                    | true   | false  |
 

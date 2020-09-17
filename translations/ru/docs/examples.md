@@ -1,6 +1,6 @@
-# Examples
-Script examples can be found here:
+# Примеры
+Примеры скриптов можно найти здесь:
 
-[Examples](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
+[Примеры](https://github.com/CraftTweaker/CraftTweaker-Examples/tree/master/1.14)
 
-These are the scripts that have been used to test CraftTweaker in 1.14, they should all work and load just fine, you can use them to get familiarized with the new syntax
+Это скрипты, которые были использованы для тестирования CraftTweaker в 1. 4, они должны работать и загрузить просто хорошо, вы можете использовать их для ознакомления с новым синтаксисом
