@@ -1,64 +1,64 @@
-# IIngredient
+# Składnik
 
-This is IIngredient!!!
+To jest ISkładnik!!!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
-crafttweaker.api.item.IIngredient
+crafttweaker.api.item.Składnik
 ```
 
-## Implemented Interfaces
-IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+IIngredient implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Metody
 ### getRemainingItem
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+Kiedy ten stos składników zostanie stworzony, co pozostanie w siatce? Nie sprawdza jednak, czy stos się zgadza! Używane np. w sieci CrT net.minecraft.item.crafting.ICraftingRecipe
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 <tag:ingotIron>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description                               |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Parametr | Typ                                                               | Opis                                 |
+| -------- | ----------------------------------------------------------------- | ------------------------------------ |
+| stos     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Stos do dostarczenia tego składnika. |
 
 
-### matches
+### dopasowania
 
-Does the given stack match the ingredient?
+Czy dany stos pasuje do składnika?
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 <tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Parametr | Typ                                                               | Opis                |
+| -------- | ----------------------------------------------------------------- | ------------------- |
+| stos     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Stos do sprawdzenia |
 
 
 
-## Properties
+## Właściwości
 
-| Name          | Type                                                                | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| Nazwisko  | Typ                                                                 | Posiada Getter | Ma ustawienie |
+| --------- | ------------------------------------------------------------------- | -------------- | ------------- |
+| polecenie | Ciąg znaków                                                         | prawda         | fałszywy      |
+| elementy  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | prawda         | fałszywy      |
 
-## Casters
+## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| Typ wyniku                                                 | Jest niedomniemany |
+| ---------------------------------------------------------- | ------------------ |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | prawda             |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | prawda             |
 
