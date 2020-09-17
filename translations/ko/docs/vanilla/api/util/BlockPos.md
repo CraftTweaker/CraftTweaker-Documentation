@@ -367,11 +367,11 @@ new BlockPos(0, 1, 2).withinDistance(new BlockPos(80, 75, 54);, 10);
 
 ## Properties
 
-| Name | Type | Has Getter | Has Setter |
-| ---- | ---- | ---------- | ---------- |
-| x    | int  | true       | false      |
-| y    | int  | true       | false      |
-| z    | int  | true       | false      |
+| 이름 | Type | Has Getter | Has Setter |
+| -- | ---- | ---------- | ---------- |
+| x  | int  | true       | false      |
+| y  | int  | true       | false      |
+| z  | int  | true       | false      |
 
 ## 연산자
 ### ADD
