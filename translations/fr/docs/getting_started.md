@@ -1,74 +1,74 @@
-# Getting Started with scripts
+# Commencer avec des scripts
 
-CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder, if you aren't sure where this folder is, just run `/ct scripts` when in the game and the folder will open.
+CraftTweaker utilise un langage de script personnalisé appelé `ZenScript`, ZenScript est lu depuis `. s` fichiers stockés dans le dossier `<gamedir>/scripts` , Si vous ne savez pas où se trouve ce dossier, exécutez simplement `scripts /ct` quand dans le jeu et le dossier s'ouvrira.
 
-ZenScript is a "top down" scripting language, meaning that, `Imports` need to be at the top of the file, `Variable Declarations` should be near the top of the file, however there are no restrictions to that, a `Variable` can be defined anywhere in a script, however it will not be accessible to the lines above the `Variable` declaration.
-
-
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
-
-## What are scripts
-
-Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
-
-Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
-
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
-
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+ZenScript est un langage de script "haut en bas", ce qui signifie que `Importe` doit être en haut du fichier, `Les déclarations de variables` doivent être en haut du fichier, cependant il n'y a aucune restriction à cela, une variable `` peut être définie n'importe où dans un script, Cependant, il ne sera pas accessible aux lignes au-dessus de la déclaration de la `Variable`.
 
 
-### Writing your first script
+Les fichiers de script ont le préfixe `.zs` , assurez-vous que ce n'est pas `.zs.txt`!
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+## Que sont les scripts
 
-In `hello.zs` put the following line
+Les scripts sont stockés dans `<gamedir>/scripts` et sont chargés lorsque le joueur rejoint un monde, comme les versions précédentes de CraftTweaker (à l'exception de 1. 2), les scripts peuvent être rechargés, exécutez simplement `/reload`.
+
+Les scripts sont chargés deux fois lorsque vous entrez dans un monde en mode solo, une fois du côté `Serveur` , puis du côté `Client` si vous avez un `println()` dans votre script, vous le verrez deux fois, puisqu'il s'exécute deux fois.
+
+Cela ne veut pas dire que les modifications sont appliquées deux fois par contre, les modifications apportées par les scripts peuvent être accompagnées, donc certaines modifications, comme la localisation des paramètres, ne fonctionne que du côté du client, mais l'ajout de recettes n'est fait que du côté du serveur.
+
+Lorsque vous rejoignez un serveur, le serveur envoie ses scripts au client, et le client exécute ces scripts. Cela signifie qu'un client sans aucun script, peut rejoindre un serveur et obtenir les changements (utile si vous avez besoin de désactiver un élément sur le serveur, mais ne voulez pas forcer les clients à télécharger des fichiers supplémentaires!)
+
+
+### Écriture de votre premier script
+
+Pour commencer avec des scripts, vous pouvez créer un fichier très basique, appelé `Bonjour. s` dans le dossier `<gamedir>/scripts>` ; Si vous ne savez pas où se trouve le dossier, exécutez simplement `scripts /ct` et il devrait s'ouvrir !
+
+Dans `hello.zs` mettez la ligne suivante
 
 ```zenscript
-println("Hello world!");
+println("Bonjour le monde !");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+Chargez maintenant Minecraft et jetez un coup d'œil au /logs/crafttweaker `<gamedir>. og` file (ou exécutez `/ct log` pour ouvrir le fichier dans votre éditeur de texte par défaut).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+Le fichier `crafttweaker.log` se trouve dans `<gamedir>/logs` et peut être lu par n'importe quel programme qui peut lire des fichiers en texte brut.
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+Il est recommandé d'utiliser Notepad++, Sublime Text ou VSCode pour éditer les fichiers de script, mais n'importe quel programme le fera.
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+Lorsque vous choisissez un programme à utiliser pour éditer des scripts, jetez un œil à ce que les surligneurs Syntax sont disponibles, la plupart des éditeurs de texte ont ZenScript mettant en évidence le support à travers l'utilisation d'un plugin.
 
 
 
-### The crafttweaker.log file
+### Le fichier crafttweaker.log
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Le fichier `crafttweaker.log` utilise une syntaxe spécifique dans sa sortie, cette syntaxe est :
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+En utilisant l'exemple ci-dessus, la sortie serait:
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14:58:06.697][DONE][SERVER][INFO] Bonjour le monde !
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+La syntaxe est utilisée à des fins de débogage et la seule fois que la syntaxe n'est pas utilisée, est pour les dumps de commandes, auquel cas il ne fait qu'imprimer le message, c'est fait donc copier coller les informations dumped est plus facile.
 
-### Comments
+### Commentaires
 
-Comments can be used to make your script files more readable and easier to understand!
+Les commentaires peuvent être utilisés pour rendre vos fichiers de script plus lisibles et plus faciles à comprendre!
 
-ZenScript supports 3 types of comments, being:
+ZenScript supporte 3 types de commentaires, être:
 
-Single line: `// I'm a single line comment!`
+Une seule ligne: `// Je suis une seule ligne de commentaire!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Ligne unique alternative : `# Je suis aussi un commentaire d'une seule ligne !`
 
-Multiline:
+Multiligne :
 ```
-/* I'm 
-a
-multiline comment! */
+/* Je suis 
+un commentaire
+multiligne ! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Il suffit de noter que les commentaires `#` sont également utilisés pour les préprocesseurs (lien TODO vers les préprocesseurs quand ils sont documentés), alors qu'ils sont encore des commentaires valables, ils pourraient causer des effets secondaires indésirables. 
