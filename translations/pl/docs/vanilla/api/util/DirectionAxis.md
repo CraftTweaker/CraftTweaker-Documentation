@@ -1,46 +1,46 @@
-# DirectionAxis
+# Oś kierunku
 
-Represents a direction axis (X, Y, Z)
+Reprezentuje oś kierunku (X, Y, Z)
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.util.DirectionAxis
 ```
 
-## Implemented Interfaces
-DirectionAxis implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+DirectionAxis implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
-### getCoordinate
+## Metody
+### pobierz współrzędne
 
-Gets the coordinate of this axis based on the given values, if this axis is "X", then it will return the value of the "x" parameter
+Pobiera współrzędną tej osi w oparciu o podane wartości, jeśli ta oś to "X", to zwróci wartość parametru "x"
 
-Returns int
+Zwraca int
 
 ```zenscript
 <directionaxis:x>.getCoordinate(x as int, y as int, z as int);
 <directionaxis:x>.getCoordinate(1, 2, 3);
 ```
 
-| Parameter | Type | Description               |
-| --------- | ---- | ------------------------- |
-| x         | int  | x value of the coordinate |
-| y         | int  | y value of the coordinate |
-| z         | int  | z value of the coordinate |
+| Parametr | Typ    | Opis                   |
+| -------- | ------ | ---------------------- |
+| x        | odcień | x wartość współrzędnej |
+| y        | odcień | wartość współrzędnej y |
+| z        | odcień | wartość współrzędnej z |
 
 
 
-## Properties
+## Właściwości
 
-| Name          | Type    | Has Getter | Has Setter |
-| ------------- | ------- | ---------- | ---------- |
-| commandString | String  | true       | false      |
-| horizontal    | boolean | true       | false      |
-| name          | String  | true       | false      |
-| ordinal       | int     | true       | false      |
-| vertical      | boolean | true       | false      |
+| Nazwisko  | Typ         | Posiada Getter | Ma ustawienie |
+| --------- | ----------- | -------------- | ------------- |
+| polecenie | Ciąg znaków | prawda         | fałszywy      |
+| poziomo   | boolean     | prawda         | fałszywy      |
+| Nazwa     | Ciąg znaków | prawda         | fałszywy      |
+| kolejność | odcień      | prawda         | fałszywy      |
+| pionowy   | boolean     | prawda         | fałszywy      |
 
