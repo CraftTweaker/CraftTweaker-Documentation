@@ -1,56 +1,56 @@
-# MCPotionEffect
+# Эффект "Зелье MC"
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.potion.MCPotionEffect
 ```
 
-## Implemented Interfaces
-MCPotionEffect implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+MCPotionEffect реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
-### isReady
+### Готов
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
-myMCPotionEffect.isReady(duration as int, amplifier as int);
+myMCPotionEffect.isReady(продолжительность, int, усилитель как int);
 ```
 
-| Parameter | Тип | Описание                |
-| --------- | --- | ----------------------- |
-| duration  | int | No description provided |
-| amplifier | int | No description provided |
+| Параметр     | Тип | Описание             |
+| ------------ | --- | -------------------- |
+| длительность | int | Описание отсутствует |
+| усилитель    | int | Описание отсутствует |
 
 
 ### newInstance
 
-Returns [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
+Возвращает [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance)
 
 ```zenscript
-myMCPotionEffect.newInstance(duration as int, amplifier as int);
+myMCPotionEffect.newInstance(длительность int, усилитель как int);
 ```
 
-| Parameter | Type | Description             | IsOptional | Default Value |
-| --------- | ---- | ----------------------- | ---------- | ------------- |
-| duration  | int  | No description provided | false      | null          |
-| amplifier | int  | No description provided | true       | 0             |
+| Параметр     | Тип | Описание             | Необязательный | Значение по умолчанию |
+| ------------ | --- | -------------------- | -------------- | --------------------- |
+| длительность | int | Описание отсутствует | false          | null                  |
+| усилитель    | int | Описание отсутствует | true           | 0                     |
 
 
 
-## Properties
+## Свойства
 
-| Name          | Type                                                                    | Has Getter | Has Setter |
-| ------------- | ----------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                                  | true       | false      |
-| curativeItems | List<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true       | false      |
-| displayName   | String                                                                  | true       | false      |
-| isBeneficial  | boolean                                                                 | true       | false      |
-| isInstant     | boolean                                                                 | true       | false      |
-| liquidColor   | int                                                                     | true       | false      |
-| name          | String                                                                  | true       | false      |
+| Название             | Тип                                                                       | Имеет Getter | Имеет Setter |
+| -------------------- | ------------------------------------------------------------------------- | ------------ | ------------ |
+| командная строка     | String                                                                    | true         | false        |
+| целительные элементы | Список<[crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)> | true         | false        |
+| displayName          | String                                                                    | true         | false        |
+| Бенефициар           | boolean                                                                   | true         | false        |
+| Мгновенный           | boolean                                                                   | true         | false        |
+| ликвидационный цвет  | int                                                                       | true         | false        |
+| имя                  | String                                                                    | true         | false        |
 
