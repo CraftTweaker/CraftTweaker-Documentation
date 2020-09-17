@@ -20,3 +20,4 @@ files:
   - source: /docs_exported/**/mkdocs.yml
     translation: >-
       /translations_exported/%two_letters_code%/%original_path%/%original_file_name%
+    type: txt
