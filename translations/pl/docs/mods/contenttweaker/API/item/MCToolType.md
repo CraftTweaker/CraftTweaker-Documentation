@@ -1,37 +1,37 @@
 # MCToolType
 
-A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
+Typ narzędzia jest używany do określenia, jakiego rodzaju bloków może kopać, lub odwrotnie, jaki rodzaj narzędzia jest wymagany do wydobycia danego bloku.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `contenttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implemented Interfaces
-MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
+## Zaimplementowane interfejsy
+MCToolType implementuje następujące interfejsy. Oznacza to, że każda dostępna dla nich metoda może być również stosowana w tej klasie.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructors
-Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
+## Konstruktorzy
+Tworzy obiekt ToolType. Jeśli nazwa o podanej nazwie już istnieje, będą one wskazywać wewnętrznie na ten sam typ narzędzia. W przeciwnym razie powstaje nowy o nazwie (tak samo jest w przypadku nawiasów!)
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
-new mods.contenttweaker.item.MCToolType("pickaxe");
+new mods.contenttweaker.item.MCToolType("kilkaxe");
 ```
-| Parameter | Type   | Description         |
-| --------- | ------ | ------------------- |
-| name      | String | The name to be used |
+| Parametr | Typ         | Opis            |
+| -------- | ----------- | --------------- |
+| Nazwa    | Ciąg znaków | Nazwa do użycia |
 
 
 
-## Methods
+## Metody
 ### getName
 
-Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+Pobiera nazwę tego narzędzia. Nazwa jest tym, co jest używane w wyrażeniu nawiasów po `<typie narzędzia:`
 
-Return type: String
+Typ zwrotu: Ciąg
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Return type: String
 
 ### hashCode
 
-Returns the object's hash code
+Zwraca kod haszujący obiektu
 
-Return type: int
+Typ zwrotu: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,39 +49,39 @@ Return type: int
 
 ### toString
 
-Get the string representation of this type. Is different from commandString!
+Uzyskaj reprezentację ciągów tego typu. Jest inny niż polecenie!
 
-Return type: String
+Typ zwrotu: Ciąg
 
 ```zenscript
 <tooltype:pickaxe>.toString();
 ```
 
 
-## Properties
+## Właściwości
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| Nazwisko  | Typ         | Posiada Getter | Ma ustawienie |
+| --------- | ----------- | -------------- | ------------- |
+| polecenie | Ciąg znaków | prawda         | fałszywy      |
+| Nazwa     | Ciąg znaków | prawda         | fałszywy      |
 
-## Operators
-### EQUALS
+## Operatorzy
+### RÓŻNE
 
-Compares if two given MCToolType objects are equal
+Porównuje jeśli dwa podane obiekty MCToolType są takie same
 
 ```zenscript
-<tooltype:pickaxe> == o as Object
-<tooltype:pickaxe> == new MCToolType("pickaxe")
+<tooltype:pickaxe> == o jako obiekt
+<tooltype:pickaxe> == nowy MCToolType("kilof ")
 ```
 
-| Parameter | Type   | Description      |
-| --------- | ------ | ---------------- |
-| o         | Object | The other object |
+| Parametr | Typ    | Opis        |
+| -------- | ------ | ----------- |
+| ob       | Obiekt | Inny obiekt |
 
-## Casters
+## Szafy na akta, szafy na kartoteki, kasety na papiery, podpórki na papiery, pojemniki na przybory do pisania, stojaki na stemple biurowe i podobne wyposażenie biurowe lub biurkowe, z metali nieszlachetnych
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Typ wyniku  | Jest niedomniemany |
+| ----------- | ------------------ |
+| Ciąg znaków | fałszywy           |
 
