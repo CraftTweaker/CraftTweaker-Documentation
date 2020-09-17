@@ -1,45 +1,45 @@
-# MCAnvilRepairEvent
+# Evento de Reparación MCYC
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.event.entity.player.MCAnvilRepairEvent
 ```
 
-## Constructors
+## Constructores
 ```zenscript
-new crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
+nuevo crafttweaker.api.event.entity.player.MCAnvilRepairEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCAnvilRepairEvent>);
 ```
-| Parameter | Type                                                                                                                              | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No description provided |
+| Parámetro | Tipo                                                                                                                              | Descripción                   |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCAnvilRepairEvent](/vanilla/api/event/entity/player/MCAnvilRepairEvent)> | No se proporcionó descripción |
 
 
 
-## Methods
+## Métodos
 ### getBreakChance
 
-Returns float
+Devuelve flotante
 
 ```zenscript
 myMCAnvilRepairEvent.getBreakChance();
 ```
 
-### getEntityPlayer
+### %s Jugador
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getEntityPlayer();
 ```
 
-### getIngredientInput
+### Obtener datos de entrada
 
-Get the second item input into the anvil Returns: `the second input slot`
+Obtener la segunda entrada del elemento en el yunque Devuelve: `la segunda ranura de entrada`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getIngredientInput();
@@ -47,19 +47,19 @@ myMCAnvilRepairEvent.getIngredientInput();
 
 ### getItemInput
 
-Get the first item input into the anvil Returns: `the first input slot`
+Obtener la entrada del primer elemento en el yunque Devuelve: `la primera ranura de entrada`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemInput();
 ```
 
-### getItemResult
+### getItemResultado
 
-Get the output result from the anvil Returns: `the output`
+Obtener el resultado de salida del yunque Devuelve: `la salida`
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Devuelve [crafttweaker.api.item.ItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCAnvilRepairEvent.getItemResult();
@@ -67,41 +67,41 @@ myMCAnvilRepairEvent.getItemResult();
 
 ### getPlayer
 
-Returns: `Player`
+Devuelve: `Jugador`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Devuelve [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCAnvilRepairEvent.getPlayer();
 ```
 
-### hasResult
+### hastaResultado
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Determina si este evento espera un valor de resultado significativo. Nota: Los eventos con la anotación HasResult tendrán este método automáticamente añadido para devolver verdadero.
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCAnvilRepairEvent.hasResult();
 ```
 
-### isCancelable
+### es cancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Determine si esta función es cancelable. Devuelve: `Si el acceso a setCanceled debe ser permitido
+ Nota:
+ Los eventos con la anotación Cancelable tendrán este método automáticamente añadido para devolver verdadero.`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCAnvilRepairEvent.isCancelable();
 ```
 
-### isCanceled
+### es cancelado
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Determine si este evento es cancelado y debe dejar de ejecutarse. Devuelve: `El estado actual cancelado`
 
-Returns boolean
+Devuelve booleano
 
 ```zenscript
 myMCAnvilRepairEvent.isCanceled();
@@ -113,20 +113,20 @@ myMCAnvilRepairEvent.isCanceled();
 myMCAnvilRepairEvent.setBreakChance(breakChance as float);
 ```
 
-| Parameter   | Type  | Description             |
-| ----------- | ----- | ----------------------- |
-| breakChance | float | No description provided |
+| Parámetro | Tipo     | Descripción                   |
+| --------- | -------- | ----------------------------- |
+| rompeolas | flotante | No se proporcionó descripción |
 
 
-### setCanceled
+### setCancelado
 
 ```zenscript
-myMCAnvilRepairEvent.setCanceled(cancel as boolean);
+myMCAnvilRepairEvent.setCanceled(cancelar como booleano);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Parámetro | Tipo    | Descripción                   |
+| --------- | ------- | ----------------------------- |
+| cancelar  | boolean | No se proporcionó descripción |
 
 
 
