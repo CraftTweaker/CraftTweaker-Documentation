@@ -1,64 +1,64 @@
-# IIngredient
+# Иингредиент
 
-This is IIngredient!!!
+Это IIngredient!!!
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.item.IIngredient
 ```
 
-## Implemented Interfaces
-IIngredient implements the following interfaces. That means any method available to them can also be used on this class.
+## Реализованные интерфейсы
+IIngredient реализует следующие интерфейсы. Следовательно, методы из них доступны в этом классе.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Методы
-### getRemainingItem
+### получить оставшиеся предметы
 
-When this ingredient stack is crafted, what will remain in the grid? Does not check if the stack matches though! Used e.g. in CrT's net.minecraft.item.crafting.ICraftingRecipe
+Когда создан этот ингредиент, что останется в сетке? Не проверяет, совпадает ли стек! Используется например, в net.minecraft.item.crafting.ICraftingRecipe
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
-<tag:ingotIron>.getRemainingItem(stack as crafttweaker.api.item.IItemStack);
+<tag:ingotIron>.getRemainingItem(стек как crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.getRemainingItem(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Тип                                                               | Описание                                  |
-| --------- | ----------------------------------------------------------------- | ----------------------------------------- |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to provide for this ingredient. |
+| Параметр | Тип                                                               | Описание                    |
+| -------- | ----------------------------------------------------------------- | --------------------------- |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стак для этого ингредиента. |
 
 
 ### matches
 
-Does the given stack match the ingredient?
+Соответствует ли данный стек ингредиенту?
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
-<tag:ingotIron>.matches(stack as crafttweaker.api.item.IItemStack);
+<tag:ingotIron>.matches(стек как crafttweaker.api.item.IItemStack);
 <tag:ingotIron>.matches(<item:minecraft:iron_ingot>);
 ```
 
-| Parameter | Type                                                              | Description        |
-| --------- | ----------------------------------------------------------------- | ------------------ |
-| stack     | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | The stack to check |
+| Параметр | Тип                                                               | Описание          |
+| -------- | ----------------------------------------------------------------- | ----------------- |
+| stack    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Стек для проверки |
 
 
 
-## Properties
+## Свойства
 
-| Name          | Type                                                                | Has Getter | Has Setter |
-| ------------- | ------------------------------------------------------------------- | ---------- | ---------- |
-| commandString | String                                                              | true       | false      |
-| items         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true       | false      |
+| Название         | Тип                                                                 | Имеет Getter | Имеет Setter |
+| ---------------- | ------------------------------------------------------------------- | ------------ | ------------ |
+| командная строка | String                                                              | true         | false        |
+| элементы         | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)[] | true         | false        |
 
-## Casters
+## Утилиты
 
-| Result type                                                | Is Implicit |
-| ---------------------------------------------------------- | ----------- |
-| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true        |
-| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true        |
+| Тип результата                                             | Является неявным |
+| ---------------------------------------------------------- | ---------------- |
+| [crafttweaker.api.data.IData](/vanilla/api/data/IData)     | true             |
+| [crafttweaker.api.data.MapData](/vanilla/api/data/MapData) | true             |
 
