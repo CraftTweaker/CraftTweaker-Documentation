@@ -1,18 +1,18 @@
-# CommandStringDisplayable
+# format@@0 CommandStringDisplayable
 
-This is A helper interface for every item that is returned by a BEP!
+Ceci est une interface d'aide pour chaque élément retourné par un BEP !
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.brackets.CommandStringDisplayable
 ```
 
-## Properties
+## Propriétés
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Nom                | Type de texte        | A un Getter | A un Setter |
+| ------------------ | -------------------- | ----------- | ----------- |
+| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
 
