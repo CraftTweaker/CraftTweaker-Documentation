@@ -2,9 +2,9 @@
 
 
 
-这个类由mod-id为`crafttweaker`的模组添加. 此类由具有mod-id的mod添加 `crafttweaker`.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 crafttweaker.api.data.StringData
@@ -18,13 +18,13 @@ StringData实现了以下接口。 这意味着对这个接口可用的任何方
 ```zenscript
 new crafttweaker.api.data.StringData(internal as String);
 ```
-| 参数       | 参数     | 描述    |
-| -------- | ------ | ----- |
-| internal | String | 未提供说明 |
+| 参数   | 类型          | 描述                      |
+| ---- | ----------- | ----------------------- |
+| 内部设置 | 字符串[string] | No description provided |
 
 
 
-## 使用方式
+## 方法
 ### asList #作为列表
 
 获取列表<IData> IData的表示形式，对
@@ -88,9 +88,9 @@ new StringData("Hello").contains("Display");
 ```
 
 
-| 参数 | 类型                                                     | 说明          |
-| -- | ------------------------------------------------------ | ----------- |
-| 数据 | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
+| 参数   | 类型                                                     | 描述          |
+| ---- | ------------------------------------------------------ | ----------- |
+| data | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要检查是否有包含的数据 |
 
 
 
@@ -155,7 +155,7 @@ new StringData("Hello").getString();
 ## 运算符
 
 
-### ADD #添加
+### ADD
 
 连接两个字符串数据并返回结果。
 
@@ -167,7 +167,7 @@ new StringData("Hello") + new StringData("World")
 ```
 
 
-| 参数   | 返回值类型                                                            | 描述       |
+| 参数   | 类型                                                               | 描述       |
 | ---- | ---------------------------------------------------------------- | -------- |
 | data | [crafttweaker.api.data.StringData](/vanilla/api/data/StringData) | 要附加的其他数据 |
 
