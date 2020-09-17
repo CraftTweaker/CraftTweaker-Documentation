@@ -1,27 +1,27 @@
-# MCRightClickItem
+# MCRlightClickItem
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem
+crafttweaker.api.event.entity.player.PlayerInteractEvent.MCrightClickItem
 ```
 
 ## Constructors
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem>);
 ```
-| Parameter | Type                                                                                                                                                                  | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem)> | No description provided |
+| パラメータ   | タイプ                                                                                                                                                                   | 説明           |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCRightClickItem](/vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem)> | 説明が提供されていません |
 
 
 
-## Methods
+## メソッド
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickItem.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCRightClickItem.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+戻り値: `この相互作用にかかわる顔。 すべての非ブロック相互作用に対して、これはnullを返します。`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+戻り値 [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCRightClickItem.getFace();
@@ -39,9 +39,9 @@ myMCRightClickItem.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+戻り値: `この操作に関与するitemstack, {` @code ItemStack.EMPTY} if the hand was empty.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+戻り値 [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCRightClickItem.getItemStack();
@@ -49,9 +49,9 @@ myMCRightClickItem.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+戻り値: `プレイヤー`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+戻り値 [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCRightClickItem.getPlayer();
@@ -59,9 +59,9 @@ myMCRightClickItem.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+相互作用がエンティティにあった場合は、エンティティを中心としたBlockPosになります。 相互作用がブロックの上にあった場合、そのブロックの位置になります。 そうでなければ、プレイヤーを中心としたBlockPosになります。 決してゼロになることはありません。 戻り値: `この相互作用に関与する位置`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+戻り値 [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCRightClickItem.getPos();
@@ -69,9 +69,9 @@ myMCRightClickItem.getPos();
 
 ### hasResult
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+このイベントが重要な結果値を期待するかどうかを決定します。 注: HasResult アノテーションを持つイベントでは、true を返すためにこのメソッドが自動的に追加されます。
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCRightClickItem.hasResult();
@@ -79,11 +79,11 @@ myMCRightClickItem.hasResult();
 
 ### isCancelable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+この関数がキャンセル可能かどうかを判断します。 Returns: `If access to setCanceled should be allowed
  Note:
  Events with the Cancelable annotation will have this method automatically added to return true.`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCRightClickItem.isCancelable();
@@ -91,9 +91,9 @@ myMCRightClickItem.isCancelable();
 
 ### isCanceled
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+このイベントがキャンセルされ、実行を停止するかどうかを決定します。 戻り値: `現在の状態がキャンセルされました`
 
-Returns boolean
+戻り値ブール値
 
 ```zenscript
 myMCRightClickItem.isCanceled();
@@ -105,9 +105,9 @@ myMCRightClickItem.isCanceled();
 myMCRightClickItem.setCanceled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| パラメータ | タイプ      | 説明           |
+| ----- | -------- | ------------ |
+| キャンセル | boolean型 | 説明が提供されていません |
 
 
 
