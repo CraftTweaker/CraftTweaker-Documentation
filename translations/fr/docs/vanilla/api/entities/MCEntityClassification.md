@@ -1,24 +1,24 @@
-# MCEntityClassification
+# Classification MCEntity
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.entity.MCEntityClassification
 ```
 
-## Implemented Interfaces
-MCEntityClassification implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+MCEntityClassification implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Propriétés
 
-| Name              | Type    | Has Getter | Has Setter |
-| ----------------- | ------- | ---------- | ---------- |
-| commandString     | String  | true       | false      |
-| isAnimal          | boolean | true       | false      |
-| isPeaceful        | boolean | true       | false      |
-| maxNumberOfEntity | int     | true       | false      |
-| name              | String  | true       | false      |
+| Nom                | Type de texte        | A un Getter | A un Setter |
+| ------------------ | -------------------- | ----------- | ----------- |
+| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
+| isAnimal           | boolean              | vrai        | Faux        |
+| pacifiques         | boolean              | vrai        | Faux        |
+| maxNumberOfEntity  | Indice               | vrai        | Faux        |
+| Nom                | Chaîne de caractères | vrai        | Faux        |
 
