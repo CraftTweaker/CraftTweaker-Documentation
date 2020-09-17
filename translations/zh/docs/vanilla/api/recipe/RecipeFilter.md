@@ -1,31 +1,31 @@
-# RecipeFilter
+# 食谱滤镜
 
-这个类由 mod-id 为 `crafttweaker` 的模组添加. 此类由具有mod-id的mod添加 `crafttweaker`.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.recipe.RecipeFilter
+制作器.api.recipe.RecipeFilter
 ```
 
-## Functional Interface
+## 函数接口
 
-This class is a functional interface. This means that you can use the lambda notation to create an instance of it. The lambda notation looks like:
+此类是一个功能接口。 这意味着您可以使用 lambda 符号来创建一个实例。 Lambda 符号如下所示：
 ```zenscript
 (name) => false
 ```
 ## 方法
-### test
+### 测试
 
-Return type: boolean
+返回类型：布尔值
 
 ```zenscript
-myRecipeFilter.test(name as String);
+myRecipefilter.test(名称为字符串)；
 ```
 
-| 参数       | 返回值类型       | 描述    |
-| -------- | ----------- | ----- |
-| name（名称） | 字符串[string] | 未提供说明 |
+| 参数 | 类型          | 描述                      |
+| -- | ----------- | ----------------------- |
+| 名称 | 字符串[string] | No description provided |
 
 
 
