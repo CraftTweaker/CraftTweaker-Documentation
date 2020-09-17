@@ -4,7 +4,7 @@
 
 这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
+## 导入相关包
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
 craftbiner.api.data.ListData
@@ -21,21 +21,21 @@ new crafttweaker.api.data.ListData();
 ```zenscript
 new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ```
-| 参数 | 参数                                                               | 描述    | 可选的  | 默认值  |
-| -- | ---------------------------------------------------------------- | ----- | ---- | ---- |
-| 列表 | 以列表形式列出的<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | 未提供说明 | true | null |
+| 参数   | 类型                                                               | 描述                      | 可选的  | 默认值 |
+| ---- | ---------------------------------------------------------------- | ----------------------- | ---- | --- |
+| 邮件列表 | 以列表形式列出的<[crafttweaker.api.data.IData](/vanilla/api/data/IData)> | No description provided | true | 空的  |
 
 
 
-## 使用方式
-### add #添加
+## 方法
+### 添加
 
 ```zenscript
 ["Hello", "World", "!"].add(value as crafttweaker.api.data.IData);
 ["Hello", "World", "!"].add("today");
 ```
 
-| 参数    | 返回值类型                                                  | 描述       |
+| 参数    | 类型                                                     | 描述       |
 | ----- | ------------------------------------------------------ | -------- |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值 |
 
@@ -46,9 +46,9 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].add(1, "beautiful");
 ```
 
-| 参数    | 返回值类型                                                  | 描述                   |
+| 参数    | 类型                                                     | 描述                   |
 | ----- | ------------------------------------------------------ | -------------------- |
-| index | 整型                                                     | 要添加的索引。 后续项目将会上移一个索引 |
+| index | 整数                                                     | 要添加的索引。 后续项目将会上移一个索引 |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 要添加到列表的值             |
 
 
@@ -71,9 +71,9 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].get(0);
 ```
 
-| 参数    | 返回值类型 | 描述               |
-| ----- | ----- | ---------------- |
-| index | 整型    | The index (从0开始) |
+| 参数    | 类型 | 描述               |
+| ----- | -- | ---------------- |
+| index | 整数 | The index (从0开始) |
 
 
 ### remove #移除
@@ -87,9 +87,9 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].remove(0);
 ```
 
-| 参数 | 返回值类型 | 描述               |
-| -- | ----- | ---------------- |
-| 索引 | 整数变量  | The index (从0开始) |
+| 参数    | 类型 | 描述               |
+| ----- | -- | ---------------- |
+| index | 整数 | The index (从0开始) |
 
 
 ### set #设置
@@ -103,20 +103,20 @@ new crafttweaker.api.data.ListData(list as List<crafttweaker.api.data.IData>);
 ["Hello", "World", "!"].set(0, "Bye");
 ```
 
-| 参数    | 返回值类型                                                  | 描述            |
+| 参数    | 类型                                                     | 描述            |
 | ----- | ------------------------------------------------------ | ------------- |
-| index | 整型                                                     | 要设置的索引 (从0开始) |
+| index | 整数                                                     | 要设置的索引 (从0开始) |
 | value | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | 新值            |
 
 
 
 ## 参数
 
-| 名称       | 返回值类型 | 可获得  | 可设置   |
-| -------- | ----- | ---- | ----- |
-| size #大小 | 整型    | true | false |
+| 名称 | 类型 | 可获得  | 可设置   |
+| -- | -- | ---- | ----- |
+| 大小 | 整数 | true | false |
 
-## Casters
+## 卡斯特尔
 
 | 结果类型                                                             | 是否隐藏 |
 | ---------------------------------------------------------------- | ---- |
