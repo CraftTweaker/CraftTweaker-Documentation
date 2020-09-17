@@ -1,74 +1,74 @@
 # Einführung in Skripte
 
-CraftTweaker uses a custom scripting Language called `ZenScript`, ZenScript is read from `.zs` files that are stored in the `<gamedir>/scripts` folder, if you aren't sure where this folder is, just run `/ct scripts` when in the game and the folder will open.
+CraftTweaker verwendet eine benutzerdefinierte Skriptsprache namens `ZenScript`, ZenScript wird von `gelesen. s` Dateien, die im `<gamedir>/scripts` Ordner gespeichert sind wenn du nicht sicher bist, wo sich dieser Ordner befindet, führe einfach `/ct Scripts` aus, wenn du im Spiel bist und der Ordner geöffnet wird.
 
 ZenScript ist eine "top down"-Skriptsprache, was bedeutet, dass ganz oben im Skript die `Imports` stehen müssen, danach werden die `Variablen` deklariert. `Variablen` können zwar auch weiter unten im Skript stehen, allerdings kann man von den übergeordneten Zeilen aus dann auch nicht auf diese `Variable` zugreifen.
 
 
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
+Skriptdateien haben das `.zs` Präfix und stellen Sie sicher, dass es nicht `.zs.txt` ist!
 
-## What are scripts
+## Was sind Skripte
 
-Scripts are stored in `<gamedir>/scripts` and are loaded when the player joins a world, much like previous versions of CraftTweaker (excluding 1.12), Scripts CAN be reloaded, just run `/reload`.
+Skripte werden in `<gamedir>/scripts` gespeichert und werden geladen, wenn der Spieler einer Welt beitritt ähnlich wie frühere Versionen von CraftTweaker (ausgenommen 1. 2), Skripte können neu geladen werden, führen Sie einfach `/reload` aus.
 
-Scripts are loaded twice when entering a single player world, once on the `Server` side, and then on the `Client` side, if you have a `println()` in your script, you will see it twice, since it is running twice.
+Skripte werden zweimal geladen, wenn Sie eine einzige Spielerwelt betreten einmal auf der `Server` Seite und dann auf der `Client` Seite wenn Sie eine `println()` in Ihrem Skript haben, werden Sie es zweimal sehen, da es zweimal läuft.
 
-This does not mean that changes are applied twice however, changes made by scripts can be sided, so some changes, such as setting localization, only run on the client side, but adding recipes is only done on the server side.
+Dies bedeutet nicht, dass Änderungen doppelt angewendet werden, Änderungen von Skripten können jedoch seitlich vorgenommen werden, so dass einige Änderungen vorgenommen werden z.B. Lokalisierung einstellen, nur auf der Client-Seite laufen, aber das Hinzufügen von Rezepten erfolgt nur auf der Serverseite.
 
-When joining a server, the server sends their scripts to the client, and the client runs those scripts. This does mean that a client without any scripts, can join a server and get the changes (useful if you need to disable an item on the server but don't want to force clients to download extra files!)
+Beim Beitritt zum Server sendet der Server seine Skripte an den Client, und der Client führt diese Skripte aus. Dies bedeutet, dass ein Client ohne Skripte kann einem Server beitreten und die Änderungen erhalten (nützlich, wenn du ein Element auf dem Server deaktivieren musst, aber nicht zwingen willst, zusätzliche Dateien herunterzuladen!)
 
 
 ### Dein allererstes Skript
 
-To get started with Scripts, you can create a very basic file, called `hello.zs` in the `<gamedir>/scripts>` folder; If you aren't sure where the folder is, just run `/ct scripts` and it should open!
+Um mit Skripten zu beginnen, können Sie eine sehr einfache Datei mit dem Namen `Hello erstellen. s` im Ordner `<gamedir>/scripts>` Wenn Sie nicht sicher sind, wo sich der Ordner befindet, führen Sie einfach `/ct Scripts` aus und es sollte geöffnet werden!
 
-In `hello.zs` put the following line
+In diese Datei packst du die folgende Zeile:
 
 ```zenscript
-println("Hello world!");
+println("Hallo Welt!");
 ```
 
-Now load up Minecraft and and take a look at the `<gamedir>/logs/crafttweaker.log` file (or run `/ct log` to have the file open in your default text editor).
+Lade nun Minecraft auf und schau dir den `<gamedir>/logs/crafttweaker an. og` Datei (oder führen Sie `/ct log` aus, um die Datei in Ihrem Standard-Texteditor öffnen zu lassen).
 
-The `crafttweaker.log` file is located in `<gamedir>/logs` and can be read by any program that can read plaintext files.
+Die Datei `crafttweaker.log` befindet sich in `<gamedir>/logs` und kann von jedem Programm gelesen werden, das Klartext-Dateien lesen kann.
 
-It is recommended to use Notepad++, Sublime Text or VSCode to edit script files, however any program will do.
+Es wird empfohlen, die Skriptdateien mit Notepad++, Sublime Text oder VSCode zu bearbeiten, wie auch immer jedes Programm dies tun wird.
 
-When choosing a program to use to edit scripts, take a look at what Syntax highlighters are available, most common text editors have ZenScript highlighting support through the use of a plugin.
+Wenn Sie ein Programm zum Bearbeiten von Skripten wählen, schauen Sie sich an, welche Syntax-Highlighter verfügbar sind meisten Texteditoren haben ZenScript Hervorhebung Unterstützung durch die Verwendung eines Plugins.
 
 
 
 ### Die crafttweaker.log-Datei
 
-The `crafttweaker.log` file uses a specific syntax in it's output, that syntax is:
+Die `crafttweaker.log` verwendet eine bestimmte Syntax, welche ungefähr so aussieht:
 
 ```
 [HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
-Using the example above, the output would be:
+Im Falle des vorherigen Beispiels, wird dort folgendes stehen:
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14:58:06.697][DONE][SERVER][INFO] Hallo Welt!
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+Die Syntax wird für Debug-Zwecke verwendet und das einzige Mal, wenn die Syntax nicht verwendet wird, ist für Befehlsdumps, in diesem Fall druckt es nur die Nachricht, so dass das Kopieren der gedumpten Informationen ist einfacher.
 
 ### Kommentare
 
-Comments can be used to make your script files more readable and easier to understand!
+Mit Kommentaren kannst du deine Skripte besser lesbarer und verständlicher machen!
 
-ZenScript supports 3 types of comments, being:
+ZenScript unterstütz drei verschiedene Arten von Kommentaren:
 
-Single line: `// I'm a single line comment!`
+Einzeilig: `// Ich bin ein einzeiliger Kommentar!`
 
-Alternate Single Line: `# I'm also a single line comment!`
+Alternativ einzeilig: `# Ich bin auch ein einzeiliger Kommentar!`
 
-Multiline:
+Mehrzeilig:
 ```
 /* Ich bin
 ein mehrzeiliger
 Kommentar! */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+Beachten Sie nur, dass `#` Kommentare auch für PreProcessors verwendet werden (TODO Link zu PreProcessors wenn sie dokumentiert sind), so dass sie noch gültige Kommentare sind, können sie unerwünschte Nebenwirkungen verursachen. 
