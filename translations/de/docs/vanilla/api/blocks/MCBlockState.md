@@ -1,34 +1,34 @@
-# MCBlockState
+# MCBlockStatus
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.block.MCBlockState
 ```
 
-## Implemented Interfaces
-MCBlockState implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+MCBlockState implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methoden
 ### getAllowedValuesForProperty
 
-Returns List<String>
+Retourenliste<String>
 
 ```zenscript
-myMCBlockState.getAllowedValuesForProperty(name as String);
+myMCBlockState.getAllowedValuesForProperty(Name als String);
 ```
 
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| Parameter | Type   | Beschreibung                 |
+| --------- | ------ | ---------------------------- |
+| name      | String | Keine Beschreibung angegeben |
 
 
-### getProperties
+### getEigenschaften
 
-Returns String[String]
+Gibt den String[String] zurück
 
 ```zenscript
 myMCBlockState.getProperties();
@@ -36,7 +36,7 @@ myMCBlockState.getProperties();
 
 ### getPropertyNames
 
-Returns List<String>
+Retourenliste<String>
 
 ```zenscript
 myMCBlockState.getPropertyNames();
@@ -44,62 +44,62 @@ myMCBlockState.getPropertyNames();
 
 ### getPropertyValue
 
-Returns String
+Gibt den String zurück
 
 ```zenscript
-myMCBlockState.getPropertyValue(name as String);
+myMCBlockState.getPropertyValue(Name als String);
 ```
 
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| Parameter | Type   | Beschreibung                 |
+| --------- | ------ | ---------------------------- |
+| name      | String | Keine Beschreibung angegeben |
 
 
 ### hasProperty
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
-myMCBlockState.hasProperty(name as String);
+myMCBlockState.hasProperty(Name als String);
 ```
 
-| Parameter | Type   | Description             |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
+| Parameter | Type   | Beschreibung                 |
+| --------- | ------ | ---------------------------- |
+| name      | String | Keine Beschreibung angegeben |
 
 
-### withProperty
+### ohne Eigentum
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Gibt [craftweaker.api.block.MCBlockState zurück](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
-myMCBlockState.withProperty(name as String, value as String);
+myMCBlockState.withProperty(Name als String, Wert als String);
 ```
 
-| Parameter | Type   | Beschreibung            |
-| --------- | ------ | ----------------------- |
-| name      | String | No description provided |
-| value     | String | No description provided |
+| Parameter | Type   | Beschreibung                 |
+| --------- | ------ | ---------------------------- |
+| name      | String | Keine Beschreibung angegeben |
+| wert      | String | Keine Beschreibung angegeben |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name            | Type                                                          | Has Getter | Has Setter |
-| --------------- | ------------------------------------------------------------- | ---------- | ---------- |
-| block           | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
-| canProvidePower | boolean                                                       | true       | false      |
-| commandString   | String                                                        | true       | false      |
-| hasTileEntity   | boolean                                                       | true       | false      |
-| isSolid         | boolean                                                       | true       | false      |
-| isSticky        | boolean                                                       | true       | false      |
-| lightLevel      | int                                                           | true       | false      |
-| ticksRandomly   | boolean                                                       | true       | false      |
+| Name             | Type                                                          | Hat Getter | Hat Setter |
+| ---------------- | ------------------------------------------------------------- | ---------- | ---------- |
+| blockieren       | [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true       | false      |
+| canProvidePower  | boolean                                                       | true       | false      |
+| Kommandozeile    | String                                                        | true       | false      |
+| hasTileEntity    | boolean                                                       | true       | false      |
+| isSolid          | boolean                                                       | true       | false      |
+| isSticky         | boolean                                                       | true       | false      |
+| leuchtende Stufe | int                                                           | true       | false      |
+| zufällig         | boolean                                                       | true       | false      |
 
-## Casters
+## Zauberer
 
-| Result type                                                   | Is Implicit |
-| ------------------------------------------------------------- | ----------- |
-| String                                                        | false       |
-| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true        |
+| Ergebnis-Typ                                                  | Ist Implizit |
+| ------------------------------------------------------------- | ------------ |
+| String                                                        | false        |
+| [crafttweaker.api.block.MCBlock](/vanilla/api/blocks/MCBlock) | true         |
 

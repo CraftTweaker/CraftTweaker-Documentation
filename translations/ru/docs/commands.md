@@ -1,27 +1,27 @@
-# Commands
+# Команды
 
-Here are the commands that matter:
+Вот те команды, которые важны:
 ```
-/ct hand
-```
-```
-/ct log
+/ст рука
 ```
 ```
-/ct scripts
+/ct лог
 ```
 ```
-/ct issues
+/ct скрипты
 ```
 ```
-/ct discord
+/ct задач
 ```
 ```
-/ct dump
+/ct дискорд
 ```
 ```
-/ct recipeTypes
+/ct дамп
 ```
 ```
-/ct help
+/ct типы рецептов
+```
+```
+/ct помощь
 ```

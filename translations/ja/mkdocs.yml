@@ -1,17 +1,17 @@
-# If you add a page, you must add it to the index here
+# ページを追加する場合は、ここでインデックスに追加する必要があります。
 nav:
   - ホーム: 'index.md'
-  - Getting Started With Scripts: 'getting_started.md'
-  - Commands: "commands.md"
-  - Examples: "examples.md"
+  - スクリプトの使い方: 'getting_started.md'
+  - コマンド: "commands.md"
+  - 例: "examples.md"
   - レシピ:
-      - Recipe Managers: "recipes/recipe_managers.md"
+      - レシピマネージャー: "recipes/recipe_managers.md"
   - バニラ:
-      - How to:
-          - Crafting Table Recipes: 'vanilla/how_to/crafting_table.md'
+      - 方法:
+          - 作業台レシピ: 'vanilla/how_to/crafting_table.md'
       - Api:
-          - Block:
-              - Material:
+          - ブロック:
+              - 素材:
                   - MCMaterial: 'vanilla/api/block/material/MCMaterial.md'
                   - MCMaterialColor: 'vanilla/api/block/material/MCMaterialColor.md'
           - ブロック:
@@ -38,62 +38,62 @@ nav:
           - エンティティ:
               - MCEntityClassification: 'vanilla/api/entities/MCEntityClassification.md'
               - MCEntityType: 'vanilla/api/entities/MCEntityType.md'
-          - Entity:
-              - Player:
+          - エンティティ:
+              - プレイヤー:
                   - MCPlayerEntity: 'vanilla/api/entity/player/MCPlayerEntity.md'
-          - Event:
-              - Entity:
-                  - Player:
-                      - MCAdvancementEvent: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
-                      - MCAnvilRepairEvent: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
-                      - MCArrowLooseEvent: 'vanilla/api/event/entity/player/MCArrowLooseEvent.md'
-                      - MCArrowNockEvent: 'vanilla/api/event/entity/player/MCArrowNockEvent.md'
-                      - MCAttackEntityEvent: 'vanilla/api/event/entity/player/MCAttackEntityEvent.md'
-                      - MCBonemealEvent: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
+          - イベント:
+              - エンティティ:
+                  - プレイヤー:
+                      - MCAdvancementイベント: 'vanilla/api/event/entity/player/MCAdvancementEvent.md'
+                      - MCAnvilRepairイベント: 'vanilla/api/event/entity/player/MCAnvilRepairEvent.md'
+                      - MCArrowLooseイベント: 'vanilla/api/event/entity/player/MCArrowLooseEvent.md'
+                      - MCArrowNockイベント: 'vanilla/api/event/entity/player/MCArrowNockEvent.md'
+                      - MCAttackEntityイベント: 'vanilla/api/event/entity/player/MCAttackEntityEvent.md'
+                      - MCBonemealイベント: 'vanilla/api/event/entity/player/MCBonemealEvent.md'
                       - MCCriticalHitEvent: 'vanilla/api/event/entity/player/MCCriticalHitEvent.md'
-                      - MCEntityItemPickupEvent: 'vanilla/api/event/entity/player/MCEntityItemPickupEvent.md'
-                      - MCFillBucketEvent: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
-                      - MCItemFishedEvent: 'vanilla/api/event/entity/player/MCItemFishedEvent.md'
-                      - MCItemTooltipEvent: 'vanilla/api/event/entity/player/MCItemTooltipEvent.md'
-                      - MCPlayerDestroyItemEvent: 'vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md'
-                      - MCPlayerFlyableFallEvent: 'vanilla/api/event/entity/player/MCPlayerFlyableFallEvent.md'
-                      - MCPlayerSetSpawnEvent: 'vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md'
-                      - MCPlayerSleepInBedEvent: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
-                      - MCPlayerWakeUpEvent: 'vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md'
-                      - MCSleepingLocationCheckEvent: 'vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md'
+                      - MCEntityItemPickupイベント: 'vanilla/api/event/entity/player/MCEntityItemPickupEvent.md'
+                      - MCFillBucketイベント: 'vanilla/api/event/entity/player/MCFillBucketEvent.md'
+                      - MCItemFishedイベント: 'vanilla/api/event/entity/player/MCItemFishedEvent.md'
+                      - MCItemTooltipイベント: 'vanilla/api/event/entity/player/MCItemTooltipEvent.md'
+                      - MCPlayerDestroyItemイベント: 'vanilla/api/event/entity/player/MCPlayerDestroyItemEvent.md'
+                      - MCPlayerFlyableFallEvent: 'vanilla/api/event/entity/player/MCPlayerFlallEvent.md'
+                      - MCPlayerSetSpawnイベント: 'vanilla/api/event/entity/player/MCPlayerSetSpawnEvent.md'
+                      - MCPlayerSleepInBedイベント: 'vanilla/api/event/entity/player/MCPlayerSleepInBedEvent.md'
+                      - MCPlayerWakeUpイベント: 'vanilla/api/event/entity/player/MCPlayerWakeUpEvent.md'
+                      - MCSleepingLocationCheckイベント: 'vanilla/api/event/entity/player/MCSleepingLocationCheckEvent.md'
                       - MCSleepingTimeCheckEvent: 'vanilla/api/event/entity/player/MCSleepingTimeCheckEvent.md'
-                      - MCUseHoeEvent: 'vanilla/api/event/entity/player/MCUseHoeEvent.md'
+                      - MCUseHoeイベント: 'vanilla/api/event/entity/player/MCUseHoeEvent.md'
                       - PlayerContainerEvent:
-                          - MCClose: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCClose.md'
-                          - MCOpen: 'vanilla/api/event/entity/player/PlayerContainerEvent/MCOpen.md'
-                      - PlayerEvent:
-                          - MCItemCraftedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
-                          - MCItemPickupEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md'
-                          - MCItemSmeltedEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md'
-                          - MCPlayerChangedDimensionEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
+                          - MCClose: 'vanilla/api/event/entity/playerContainerEvent/MCClose.md'
+                          - MCEOpen: 'vanilla/api/event/entity/playerContainerEvent/MCOpen.md'
+                      - プレイヤーイベント:
+                          - MCItemCraftedイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCItemCraftedEvent.md'
+                          - MCItemPickupイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCItemPickupEvent.md'
+                          - MCItemSmeltedイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCItemSmeltedEvent.md'
+                          - MCPlayerChangedDimensionイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerChangedDimensionEvent.md'
                           - MCPlayerLoggedInEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedInEvent.md'
-                          - MCPlayerLoggedOutEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md'
-                          - MCPlayerRespawnEvent: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
-                      - PlayerInteractEvent:
-                          - MCEntityInteract: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract.md'
-                          - MCEntityInteractSpecific: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteractSpecific.md'
-                          - MCLeftClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock.md'
-                          - MCLeftClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickEmpty.md'
+                          - MCPlayerLoggedOutイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerLoggedOutEvent.md'
+                          - MCPlayerRespawnイベント: 'vanilla/api/event/entity/player/PlayerEvent/MCPlayerRespawnEvent.md'
+                      - PlayerInteractイベント:
+                          - MCEntityInteract: 'vanilla/api/event/entity/playerInteractEvent/MCEntityInteract.md'
+                          - MCEntityInteractSpecific: 'vanilla/api/event/entity/playerInteractEvent/MCEntityInteractSpecific.md'
+                          - MCLeftClickBlock: 'vanilla/api/event/entity/playerInteractEvent/MCLeftClickBlock.md'
+                          - MCLeftClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MClickEmpty.md'
                           - MCRightClickBlock: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickBlock.md'
                           - MCRightClickEmpty: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickEmpty.md'
                           - MCRightClickItem: 'vanilla/api/event/entity/player/PlayerInteractEvent/MCRightClickItem.md'
-                      - PlayerXpEvent:
+                      - PlayerXpイベント:
                           - MCLevelChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCLevelChange.md'
                           - MCPickupXp: 'vanilla/api/event/entity/player/PlayerXpEvent/MCPickupXp.md'
                           - MCXpChange: 'vanilla/api/event/entity/player/PlayerXpEvent/MCXpChange.md'
-          - Food:
+          - 食料:
               - MCFood: 'vanilla/api/food/MCFood.md'
           - アイテム:
               - IIngredient: 'vanilla/api/items/IIngredient.md'
               - IItemStack: 'vanilla/api/items/IItemStack.md'
           - Logger:
               - ILogger: 'vanilla/api/logger/ILogger.md'
-          - Managers:
+          - マネージャー:
               - BlastFurnaceManager: 'vanilla/api/managers/BlastFurnaceManager.md'
               - CampFireManager: 'vanilla/api/managers/CampFireManager.md'
               - CraftingTableManager: 'vanilla/api/managers/CraftingTableManager.md'
@@ -102,7 +102,7 @@ nav:
               - IRecipeManager: 'vanilla/api/managers/IRecipeManager.md'
               - SmokerManager: 'vanilla/api/managers/SmokerManager.md'
               - StoneCutterManager: 'vanilla/api/managers/StoneCutterManager.md'
-          - Recipe:
+          - レシピ:
               - RecipeFilter: 'vanilla/api/recipe/RecipeFilter.md'
               - RecipeFunctionArray: 'vanilla/api/recipe/RecipeFunctionArray.md'
               - RecipeFunctionMatrix: 'vanilla/api/recipe/RecipeFunctionMatrix.md'
@@ -111,47 +111,51 @@ nav:
               - MCPotion: 'vanilla/api/potions/MCPotion.md'
               - MCPotionEffect: 'vanilla/api/potions/MCPotionEffect.md'
               - MCPotionEffectInstance: 'vanilla/api/potions/MCPotionEffectInstance.md'
-          - Tags:
+          - タグ:
               - MCTag: 'vanilla/api/tags/MCTag.md'
           - Util:
               - BlockPos: 'vanilla/api/util/BlockPos.md'
-              - Direction: 'vanilla/api/util/Direction.md'
+              - 方向: 'vanilla/api/util/Direction.md'
               - DirectionAxis: 'vanilla/api/util/DirectionAxis.md'
-          - World:
+          - ワールド:
               - MCBiome: 'vanilla/api/world/MCBiome.md'
               - MCBiomeSpawnEntry: 'vanilla/api/world/MCBiomeSpawnEntry.md'
   - Mods:
+    - Botany Pots:
+      - Crop: 'mods/botanypots/Crop.md'
+      - Fertilizer: 'mods/botanypots/Fertilizer.md'
+      - Soil: 'mods/botanypots/Soil.md'
     - ContentTweaker:
-      - Simple Walkthrough: 'mods/contenttweaker/SimpleWalkthrough.md'
+      - シンプルなウォークスルー: 'mods/contenttweaker/SimpleWalkthrough.md'
       - API:
         - BracketHandlers: 'mods/contenttweaker/API/BracketHandlers.md'
         - Api:
           - IIsBuilder: 'mods/contenttweaker/API/api/IIsBuilder.md'
-        - Block:
+        - ブロック:
           - BlockBuilder: 'mods/contenttweaker/API/block/BlockBuilder.md'
           - BlockTypeBuilder: 'mods/contenttweaker/API/block/BlockTypeBuilder.md'
-          - Basic:
+          - 基本:
             - BlockBuilderBasic: 'mods/contenttweaker/API/block/basic/BlockBuilderBasic.md'
-          - Pillar:
+          - 柱:
             - BlockBuilderPillarRotatable: 'mods/contenttweaker/API/block/pillar/BlockBuilderPillarRotatable.md'
-          - Stairs:
+          - 階段:
             - BlockBuilderStairs: 'mods/contenttweaker/API/block/stairs/BlockBuilderStairs.md'
-        - Item:
+        - アイテム:
           - ItemBuilder: 'mods/contenttweaker/API/item/ItemBuilder.md'
           - ItemTypeBuilder: 'mods/contenttweaker/API/item/ItemTypeBuilder.md'
           - MCItemGroup: 'mods/contenttweaker/API/item/MCItemGroup.md'
           - MCToolType: 'mods/contenttweaker/API/item/MCToolType.md'
-          - Basic:
+          - 基本:
             - ItemBuilderBasic: 'mods/contenttweaker/API/item/basic/ItemBuilderBasic.md'
-          - Tool:
+          → ツール:
             - ItemBuilderTool: 'mods/contenttweaker/API/item/tool/ItemBuilderTool.md'
     - InitialInventory:
-        - InitialInventory: 'mods/InitialInventory/InitialInventory.md'
+        - 初期インベントリ: 'mods/InitialInventory/InitialInventory.md'
     - JEITweaker:
         - JEITweaker: 'mods/JEITweaker/JEITweaker.md'
     - StoneAge:
-        - Drying Rack: 'mods/StoneAge/DryingRackManager.md'
+        - 乾燥ラック: 'mods/StoneAge/DryingRackManager.md'
         - Flint Workbench: 'mods/StoneAge/FlintWorkbenchManager.md'
         - Millstone: 'mods/StoneAge/MillstoneManager.md'
         - Tanning Rack: 'mods/StoneAge/TanningRackManager.md'
-        - Tree Stump: 'mods/StoneAge/TreeStumpManager.md'
+        - ツリースタンプ: 'mods/StoneAge/TreeStumpManager.md'

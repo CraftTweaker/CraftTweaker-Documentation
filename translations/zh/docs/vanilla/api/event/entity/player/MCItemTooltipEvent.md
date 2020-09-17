@@ -1,29 +1,29 @@
 # MCItemTooltipEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.event.entity.player.MCItemTooltipEvent
+craftminstruer.api.event.entity.player.MCItemTooltipEvent
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.event.entity.player.MCItemTooltipEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemTooltipEvent>);
+新 craftminstrer.api.event.entity.player.MCItemTooltipEvent(处理程序作为函数。消费者<crafttweaker.api.event.entity.player.MCItemTooltipEvent>);
 ```
-| 参数      | 类型                                                                                                                                | 描述                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.MCItemTooltipEvent](/vanilla/api/event/entity/player/MCItemTooltipEvent)> | No description provided |
+| 参数      | 类型                                                                                                                  | 描述                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | 消费者<[craftmiliter.api.event.entity.player.MCItemTooltipEvent](/vanilla/api/event/entity/player/MCItemTooltipEvent)> | No description provided |
 
 
 
-## Methods
+## 方法
 ### getEntityPlayer
 
-This event is fired with a null player during startup when populating search trees for tooltips.
+这个事件在启动时会被空玩家发射到工具提示的搜索树上。
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getEntityPlayer();
@@ -31,7 +31,7 @@ myMCItemTooltipEvent.getEntityPlayer();
 
 ### getItemStack
 
-The ItemStack with the tooltip.
+带有工具提示的物品堆栈。
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -41,55 +41,55 @@ myMCItemTooltipEvent.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+返回： `玩家`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemTooltipEvent.getPlayer();
 ```
 
-### hasResult
+### 突然结果
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCItemTooltipEvent.hasResult();
 ```
 
-### isCancelable
+### 可取消
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
+ 注意：
+ 取消批注事件将自动添加此方法以返回 true。`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCItemTooltipEvent.isCancelable();
 ```
 
-### isCanceled
+### 已取消
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCItemTooltipEvent.isCanceled();
 ```
 
-### setCanceled
+### 已取消
 
 ```zenscript
-myMCItemTooltipEvent.setCanceled(cancel as boolean);
+myMCItemTooltipEvent.setCanceled(cancel as boolean)；
 ```
 
-| Parameter | 类型      | 说明                      |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| 参数 | 类型      | 说明                      |
+| -- | ------- | ----------------------- |
+| 取消 | boolean | No description provided |
 
 
 

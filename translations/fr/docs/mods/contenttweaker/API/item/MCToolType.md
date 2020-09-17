@@ -1,37 +1,37 @@
 # MCToolType
 
-A Tooltype is used to identify what kind of blocks a tool can mine, or inversely, what kind of tool is required to mine a given block.
+Un type d'outils est utilisé pour identifier le type de blocs qu'un outil peut miner, ou inversement, quel type d'outil est requis pour miner un bloc donné.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `contenttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 mods.contenttweaker.item.MCToolType
 ```
 
-## Implemented Interfaces
-MCToolType implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implémentées
+MCToolType implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
+- [crafttweaker.api.brackets.format@@0 CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Constructors
-Constructs a ToolType object. If one with the given name already exists, they will internally point to the same toolType. Otherwise, a new one with the name is created (The same holds true for Brackets as well!)
+## Constructeurs
+Construit un objet ToolType. Si un des noms avec le même nom existe déjà, il pointera en interne vers le même toolType. Sinon, un nouveau nom est créé (c'est également vrai pour les parenthèses!)
 ```zenscript
 new mods.contenttweaker.item.MCToolType(name as String);
 new mods.contenttweaker.item.MCToolType("pickaxe");
 ```
-| Parameter | Type   | Description         |
-| --------- | ------ | ------------------- |
-| name      | String | The name to be used |
+| Paramètre | Type de texte        | Libellé           |
+| --------- | -------------------- | ----------------- |
+| Nom       | Chaîne de caractères | Le nom à utiliser |
 
 
 
-## Methods
+## Méthodes
 ### getName
 
-Gets the name of this toolType. The name is what is used in the Bracket expression after the `<tooltype:`
+Récupère le nom de ce toolType. Le nom est ce qui est utilisé dans l'expression entre parenthèses après le type d'outil `<:`
 
-Return type: String
+Type de retour: chaîne de caractères
 
 ```zenscript
 <tooltype:pickaxe>.getName();
@@ -39,9 +39,9 @@ Return type: String
 
 ### hashCode
 
-Returns the object's hash code
+Retourne le code de hachage de l'objet
 
-Return type: int
+Type de retour: int
 
 ```zenscript
 <tooltype:pickaxe>.hashCode();
@@ -49,39 +49,39 @@ Return type: int
 
 ### toString
 
-Get the string representation of this type. Is different from commandString!
+Récupère la représentation de la chaîne de caractères de ce type. Est différent de la chaîne de commande !
 
-Return type: String
+Type de retour: chaîne de caractères
 
 ```zenscript
 <tooltype:pickaxe>.toString();
 ```
 
 
-## Properties
+## Propriétés
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| name          | String | true       | false      |
+| Nom                | Type de texte        | A un Getter | A un Setter |
+| ------------------ | -------------------- | ----------- | ----------- |
+| Chaîne de commande | Chaîne de caractères | vrai        | Faux        |
+| Nom                | Chaîne de caractères | vrai        | Faux        |
 
-## Operators
-### EQUALS
+## Opérateurs
+### EQUALES
 
-Compares if two given MCToolType objects are equal
+Compare si deux objets MCToolType sont égaux
 
 ```zenscript
-<tooltype:pickaxe> == o as Object
+<tooltype:pickaxe> == o en tant qu'Objet
 <tooltype:pickaxe> == new MCToolType("pickaxe")
 ```
 
-| Parameter | Type   | Description      |
-| --------- | ------ | ---------------- |
-| o         | Object | The other object |
+| Paramètre | Type de texte | Libellé       |
+| --------- | ------------- | ------------- |
+| o         | Objet         | L'autre objet |
 
-## Casters
+## Pistolet
 
-| Result type | Is Implicit |
-| ----------- | ----------- |
-| String      | false       |
+| Type de résultat     | Est implicite |
+| -------------------- | ------------- |
+| Chaîne de caractères | Faux          |
 

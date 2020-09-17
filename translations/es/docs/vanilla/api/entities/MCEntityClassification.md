@@ -1,24 +1,24 @@
-# MCEntityClassification
+# Clasificación de la entidad
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
-crafttweaker.api.entity.MCEntityClassification
+crafttweaker.api.entity.Clasificación de MCs
 ```
 
-## Implemented Interfaces
-MCEntityClassification implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCEntityClassification implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Propiedades
 
-| Name              | Type    | Has Getter | Has Setter |
-| ----------------- | ------- | ---------- | ---------- |
-| commandString     | String  | true       | false      |
-| isAnimal          | boolean | true       | false      |
-| isPeaceful        | boolean | true       | false      |
-| maxNumberOfEntity | int     | true       | false      |
-| name              | String  | true       | false      |
+| Nombre            | Tipo    | Tiene Obtén | Tiene Setter |
+| ----------------- | ------- | ----------- | ------------ |
+| commandString     | Cadena  | verdad      | falso        |
+| isAnimal          | boolean | verdad      | falso        |
+| es pacífico       | boolean | verdad      | falso        |
+| maxNumberOfEntity | int     | verdad      | falso        |
+| nombre            | Cadena  | verdad      | falso        |
 

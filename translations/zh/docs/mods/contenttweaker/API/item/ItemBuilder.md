@@ -1,135 +1,135 @@
-# ItemBuilder
+# 项目生成器
 
-The item builder is to... build items (surprise!) <p> It allows you to set various properties that will change how the item behaves and what it can do. You can also use [mods.contenttweaker.item.ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) to switch to a more specialized builder, if there exist any. <p> To tell CoT that you want the item to appear ingame you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) and specify a valid resource location path.
+项目生成器是为了... 构建项目 (意外!) <p> 它允许你设置各种属性来改变物品的行为方式和它可以做什么。 您也可以使用 [mods.contenttweaker.items。ItemBuilder#withType](/mods/contenttweaker/API/item/ItemBuilder/#withtype) 以切换到更专业的生成器，如果存在的话。 <p> 要告诉Cot，你想要这个项目出现在新手中，你需要调用 [mods.contenttweaker.item。项目生成器#build(正在生成)](/mods/contenttweaker/API/item/ItemBuilder/#build) 并指定一个有效的资源位置路径。
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类是由模组添加的，有模组id `内容较弱`。 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-mods.contenttweaker.item.ItemBuilder
+mods.contenttweaker.item.项目生成器
 ```
 
 ## 已实现的接口
-ItemBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+ItemBuilder 实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
 ## Constructor #构造函数
-Creates a new ItemBuilder. Remember that this will _not_ create a new block in the game, you need to call [mods.contenttweaker.item.ItemBuilder#build(String)](/mods/contenttweaker/API/item/ItemBuilder/#build) for that.
+创建一个新的项目生成器。 请记住，这将 _不是_ 在游戏中创建一个新块，您需要调用 [mods.contenttweaker.items。项目生成器#build(正在生成)](/mods/contenttweaker/API/item/ItemBuilder/#build)。
 ```zenscript
-new mods.contenttweaker.item.ItemBuilder();
+新建mods.contenttweeper.items。项目制造商();
 ```
 
 ## 方法
-### build
+### 构建中
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+指示CoT实际建造任何这个建筑师的建筑物。
 
 ```zenscript
-new ItemBuilder().build(resourceLocation as String);
+新 ItemBuilder().build(resourceLocation as String);
 new ItemBuilder().build("my_awesome_block");
 ```
 
-| 参数               | 返回值类型       | 描述                                   |
-| ---------------- | ----------- | ------------------------------------ |
-| resourceLocation | 字符串[string] | The resource path to give this block |
+| 参数   | 返回值类型       | 描述        |
+| ---- | ----------- | --------- |
+| 资源位置 | 字符串[string] | 给此方块的资源路径 |
 
 
 ### withItemGroup
 
-Allows you to set the item group that this item will appear in. By default, items will land in `misc`
+允许您设置此项目将出现在的项目组。 默认情况下，项目将在 `misc` 中降落。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+返回类型： [mods.contenttweiner.items。项目生成器](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withItemGroup(itemGroup as mods.contenttweaker.item.MCItemGroup);
+新 ItemBuilder().withItemGroup(itemGroup as mods.contenttweeper.item.MCItemGroup);
 new ItemBuilder().withItemGroup(<itemgroup:misc>);
 ```
 
-| 参数        | 返回值类型                                                                             | 描述                                        |
-| --------- | --------------------------------------------------------------------------------- | ----------------------------------------- |
-| itemGroup | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | The item group this item should appear in |
+| 参数  | 返回值类型                                                                             | 描述         |
+| --- | --------------------------------------------------------------------------------- | ---------- |
+| 项目组 | [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup) | 项目应该显示在哪个组 |
 
 
-### withMaxDamage
+### 最大伤害
 
-Allows you to set the maximum damage for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)!
+允许您设置此项目的最大伤害。<br/> 请注意，此选项不能与 [mods.contenttweaker.items结合使用。项目生成器#withMaxStackSize](/mods/contenttweaker/API/item/ItemBuilder/#withmaxstacksize)！
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+返回类型： [mods.contenttweiner.items。项目生成器](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxDamage(maxDamage as int);
-new ItemBuilder().withMaxDamage(250);
+new ItemBuilder().withMaxDamage(maxdamage as int);
+new ItemBuilder().withMaxDamage(250)；
 ```
 
-| 参数        | 返回值类型 | 描述                     |
-| --------- | ----- | ---------------------- |
-| maxDamage | 整型    | The maximum stack size |
+| 参数        | 返回值类型 | 描述     |
+| --------- | ----- | ------ |
+| maxDamage | 整型    | 最大堆栈大小 |
 
 
-### withMaxStackSize
+### 与 MaxStackSize
 
-Allows you to set the maximum stack size for this item.<br/> Be warned that this cannot be used in combination with [mods.contenttweaker.item.ItemBuilder#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)!
+允许您为此项目设置最大堆栈大小。<br/> 请注意，此选项不能与 [mods.contenttweaker.items结合使用。物品生成器#withMaxDamage](/mods/contenttweaker/API/item/ItemBuilder/#withmaxdamage)！
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+返回类型： [mods.contenttweiner.items。项目生成器](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withMaxStackSize(maxStackSize as int);
-new ItemBuilder().withMaxStackSize(16);
+new ItemBuilder().withMaxStackSize(maxStackSize 等于原样)；
+new ItemBuilder().withMaxStackSize(16)；
 ```
 
-| 参数           | 返回值类型 | 描述                     |
-| ------------ | ----- | ---------------------- |
-| maxStackSize | 整型    | The maximum stack size |
+| 参数           | 返回值类型 | 描述     |
+| ------------ | ----- | ------ |
+| maxStackSize | 整型    | 最大堆栈大小 |
 
 
-### withNoRepair
+### 不修复
 
-Sets that this item may not be repaired in an anvil Returns: `This builder, used for method chaining`
+设置此项目可能无法在铁轨 返回时修复： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+返回类型： [mods.contenttweiner.items。项目生成器](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withNoRepair();
+新 ItemBuilder().withNoRepair();
 ```
 
-### withRarity
+### 与稀有度
 
-Allows you to set the item's rarity
+允许您设置项目的稀有度
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.item.ItemBuilder](/mods/contenttweaker/API/item/ItemBuilder)
+返回类型： [mods.contenttweiner.items。项目生成器](/mods/contenttweaker/API/item/ItemBuilder)
 
 ```zenscript
-new ItemBuilder().withRarity(rarity as String);
+新 ItemBuilder().withRarity(rarity as String);
 new ItemBuilder().withRarity("EPIC");
 ```
 
-| 参数     | 返回值类型  | 描述         |
-| ------ | ------ | ---------- |
-| rarity | String | The rarity |
+| 参数  | 返回值类型  | 描述  |
+| --- | ------ | --- |
+| 稀有度 | String | 稀有度 |
 
 
-### withType
+### 包含类型
 
-Sets the specific type of this item. After this method is called the builder's context will switch to the more provided type builder. That means that the methods of this builder will no longer be available, so any properties you wish to set should be set before you call this method. Returns: `A builder with the given item.`
+设置此项目的特定类型。 在这个方法被调用后，生成器的上下文将切换到更多提供的类型生成器。 这意味着这个建造者的方法将不再存在。 所以您想要设置的任何属性都应该在您调用此方法之前被设置。 返回： `是给定物品的生成器。`
 
-Return type: T
+返回类型：T
 
 ```zenscript
-new ItemBuilder().withType<T>();
-new ItemBuilder().withType<mods.contenttweaker.item.tool.ItemBuilderTool>();
+新 ItemBuilder().withType<T>();
+new ItemBuilder().withType<mods.contenttweeper.item.tool.ItemBuilderTool>();
 ```
 
-| ParameterName | Bounds                                                                                    |
-| ------------- | ----------------------------------------------------------------------------------------- |
-| T             | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
+| 参数名称 | 边框                                                                                        |
+| ---- | ----------------------------------------------------------------------------------------- |
+| T    | [mods.contenttweaker.item.ItemTypeBuilder](/mods/contenttweaker/API/item/ItemTypeBuilder) |
 
 

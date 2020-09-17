@@ -1,131 +1,131 @@
 # MCFood
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.food.MCFood
+craftminstrer.api.food.MCFood
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.food.MCFood(healing as int, saturation as float);
+新手工业.api.food.MCFood(治疗为内、饱和为浮点型)；
 ```
-| 参数         | 类型    | 描述                      |
-| ---------- | ----- | ----------------------- |
-| healing    | int   | No description provided |
-| saturation | float | No description provided |
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 治愈中 | int | No description provided |
+| 饱和度 | 浮点数 | No description provided |
 
 
 
-## Methods
-### addEffect
+## 方法
+### 添加效果
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.addEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance, probability as float);
+myMCFood.addEffect(效果为 craftweeper.api.potion.MCPotionEffectInstance, 概率为 float)；
 ```
 
-| Parameter   | 类型                                                                                            | 说明                      |
-| ----------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect      | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
-| probability | float                                                                                         | No description provided |
+| 参数 | 类型                                                                                            | 说明                      |
+| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| 效果 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 概率 | 浮点数                                                                                           | No description provided |
 
 
-### clearEffects
+### 清除特效
 
 ```zenscript
-myMCFood.clearEffects();
+myMCFood.cleareffects();
 ```
 
 ### removeEffect
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.removeEffect(effect as crafttweaker.api.potion.MCPotionEffectInstance);
+myMCFood.removeEffect(效果为 craftweeper.api.potion.MCPotionEffectInstance)；
 ```
 
-| Parameter | Type                                                                                          | Description             |
-| --------- | --------------------------------------------------------------------------------------------- | ----------------------- |
-| effect    | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
+| 参数 | 类型                                                                                            | 描述                      |
+| -- | --------------------------------------------------------------------------------------------- | ----------------------- |
+| 效果 | [crafttweaker.api.potion.MCPotionEffectInstance](/vanilla/api/potions/MCPotionEffectInstance) | No description provided |
 
 
 ### setCanEatWhenFull
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setCanEatWhenFull(canEatWhenFull as boolean);
 ```
 
-| Parameter      | Type    | Description             |
+| 参数             | 类型      | 描述                      |
 | -------------- | ------- | ----------------------- |
 | canEatWhenFull | boolean | No description provided |
 
 
-### setFastEating
+### 设置快速设置
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
 myMCFood.setFastEating(fastEating as boolean);
 ```
 
-| Parameter  | Type    | Description             |
-| ---------- | ------- | ----------------------- |
-| fastEating | boolean | No description provided |
+| 参数     | 类型      | 描述                      |
+| ------ | ------- | ----------------------- |
+| 正在快速入门 | boolean | No description provided |
 
 
-### setHealing
+### 设置恢复
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
-
-```zenscript
-myMCFood.setHealing(healing as int);
-```
-
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| healing   | int  | No description provided |
-
-
-### setMeat
-
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setMeat(meat as boolean);
+myMCFood.setHealing(正在治疗)；
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| meat      | boolean | No description provided |
+| 参数  | 类型 | 描述                      |
+| --- | -- | ----------------------- |
+| 治愈中 | 整数 | No description provided |
 
 
-### setSaturation
+### 采集肉
 
-Returns [crafttweaker.api.food.MCFood](/vanilla/api/food/MCFood)
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
 
 ```zenscript
-myMCFood.setSaturation(saturation as float);
+myMCFood.setMeat(肉作为布尔值)；
 ```
 
-| Parameter  | Type  | Description             |
-| ---------- | ----- | ----------------------- |
-| saturation | float | No description provided |
+| 参数 | 类型      | 描述                      |
+| -- | ------- | ----------------------- |
+| 肉  | boolean | No description provided |
+
+
+### 设置饱和度
+
+返回 [craftbinstruer.api.food.MCFood](/vanilla/api/food/MCFood)
+
+```zenscript
+myMCFood.setasteration(浮点饱和度)；
+```
+
+| 参数  | 类型  | 描述                      |
+| --- | --- | ----------------------- |
+| 饱和度 | 浮点数 | No description provided |
 
 
 
-## Properties
+## 参数
 
-| Name           | Type    | Has Getter | Has Setter |
-| -------------- | ------- | ---------- | ---------- |
-| canEatWhenFull | boolean | true       | false      |
-| healing        | int     | true       | false      |
-| isFastEating   | boolean | true       | false      |
-| meat           | boolean | true       | false      |
-| saturation     | float   | true       | false      |
+| 名称             | 类型      | 可获得  | 可设置   |
+| -------------- | ------- | ---- | ----- |
+| canEatWhenFull | boolean | true | false |
+| 治愈中            | 整数      | true | false |
+| isFastEing     | boolean | true | false |
+| 肉              | boolean | true | false |
+| 饱和度            | 浮点数     | true | false |
 

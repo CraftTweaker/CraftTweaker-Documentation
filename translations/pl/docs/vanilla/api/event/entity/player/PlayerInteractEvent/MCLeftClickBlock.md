@@ -1,27 +1,27 @@
 # MCLeftClickBlock
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Ta klasa została dodana przez moda z mod-id `crafttweaker`. Więc musisz zainstalować tę modyfikację, jeśli chcesz używać tej funkcji.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importowanie klasy
+Może być wymagane zaimportowanie pakietu, jeśli napotkasz jakiekolwiek problemy (np. rzucanie tablicy), tak aby były bezpieczne niż przepraszamy i dodaj import.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock
 ```
 
-## Constructors
+## Konstruktorzy
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
+nowy crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock(obsługa jako funkcja.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock>);
 ```
-| Parameter | Type                                                                                                                                                                  | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock)> | No description provided |
+| Parametr | Typ                                                                                                                                                                    | Opis             |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| handler  | Funkcja Konsumenta<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCLeftClickBlock](/vanilla/api/event/entity/player/PlayerInteractEvent/MCLeftClickBlock)> | Nie podano opisu |
 
 
 
-## Methods
+## Metody
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCLeftClickBlock.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCLeftClickBlock.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+Zwraca: `twarz zaangażowana w tę interakcję. Dla wszystkich interakcji nie będących blokowaniem to zwróci wartość null.`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Zwraca [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCLeftClickBlock.getFace();
@@ -39,9 +39,9 @@ myMCLeftClickBlock.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+Zwraca: `itemstack zaangażowany w tę interakcję, {` @code ItemStack.EMPTY} jeśli ręka była pusta.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Zwraca [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCLeftClickBlock.getItemStack();
@@ -49,9 +49,9 @@ myMCLeftClickBlock.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+Zwroty: `Gracz`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Zwraca [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCLeftClickBlock.getPlayer();
@@ -59,55 +59,55 @@ myMCLeftClickBlock.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+Jeśli interakcja dotyczyła jednostki, będzie BlockPos skupiony na danej jednostki. Jeśli interakcja była na bloku, będzie to pozycja tego bloku. W przeciwnym razie będzie BlockPos skupiony na graczu. Nigdy nie będzie puste. Zwraca: `Pozycja związana z tą interakcją.`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Zwraca [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCLeftClickBlock.getPos();
 ```
 
-### hasResult
+### wynik
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Określa, czy to zdarzenie oczekuje znaczącej wartości wyniku. Uwaga: Zdarzenia z adnotacją HasResult będą automatycznie dodane, aby zwrócić true.
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCLeftClickBlock.hasResult();
 ```
 
-### isCancelable
+### anulowalne
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Określ czy ta funkcja jest w ogóle anulowalna. Zwroty: `Jeśli dostęp do setCanceled powinien być dozwolony
+ Uwaga:
+ Zdarzenia z anulowaną adnotacją będą automatycznie dodawane do tej metody, aby zwrócić true.`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCLeftClickBlock.isCancelable();
 ```
 
-### isCanceled
+### Anulowane
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Określ czy to wydarzenie jest anulowane i powinno przestać wykonywać. Zwroty: `Aktualnie anulowany stan`
 
-Returns boolean
+Zwraca wartość logiczną
 
 ```zenscript
 myMCLeftClickBlock.isCanceled();
 ```
 
-### setCanceled
+### Anulowane
 
 ```zenscript
-myMCLeftClickBlock.setCanceled(canceled as boolean);
+myMCLeftClickBlock.setAnulowane (anulowane jako boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| canceled  | boolean | No description provided |
+| Parametr  | Typ     | Opis             |
+| --------- | ------- | ---------------- |
+| anulowane | boolean | Nie podano opisu |
 
 
 

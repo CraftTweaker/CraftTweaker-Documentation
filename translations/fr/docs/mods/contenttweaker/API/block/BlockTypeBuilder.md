@@ -1,32 +1,32 @@
-# BlockTypeBuilder
+# format@@0 BlockTypeBuilder
 
-Denotes a special builder that is used for building special block types. Used in [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
+Indique un constructeur spécial qui est utilisé pour la construction de blocs spéciaux. Utilisé dans [mods.contenttweaker.block.BlockTypeBuilder#withType](/mods/contenttweaker/API/block/BlockTypeBuilder/#withtype)
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `contenttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-mods.contenttweaker.block.BlockTypeBuilder
+mods.contenttweaker.block.format@@0 BlockTypeBuilder
 ```
 
-## Implemented Interfaces
-BlockTypeBuilder implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+BlockTypeBuilder implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
 
-## Methods
-### build
+## Méthodes
+### construire
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+Instructions de CoT pour construire ce que ce constructeur est censé construire.
 
 ```zenscript
 new BlockBuilder().withType<BlockBuilderBasic>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderBasic>().build("my_awesome_block");
 ```
 
-| Parameter        | Type   | Description                          |
-| ---------------- | ------ | ------------------------------------ |
-| resourceLocation | String | The resource path to give this block |
+| Paramètre                    | Type de texte        | Libellé                                       |
+| ---------------------------- | -------------------- | --------------------------------------------- |
+| Localisation de la ressource | Chaîne de caractères | Le chemin de la ressource pour donner ce bloc |
 
 
 

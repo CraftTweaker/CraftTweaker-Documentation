@@ -96,7 +96,7 @@ myMCBlockState.withProperty(name as String, value as String);
 | lightLevel #光照级别                  | 整数变量                                                          | true | false |
 | ticksRandomly #是否具有随机刻            | 布尔值                                                           | true | false |
 
-## Casters
+## 卡斯特尔
 
 | 结果类型                                                          | 是否隐藏  |
 | ------------------------------------------------------------- | ----- |

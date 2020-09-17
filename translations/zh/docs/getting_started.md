@@ -5,7 +5,7 @@ CraftTweaker 是由一个叫做 `ZenScript` 的自定义脚本语言编写的，
 ZenScript 是一种按“自上向下”顺序读取的脚本语言，这意味着`导入`应该位于文件的顶部，`变量声明`也应该出现在较靠近文件顶部的位置。当然这不是强制性的，`变量`虽能够在脚本的各处定义，但`变量`声明之前的所有行都无法访问这个变量。
 
 
-Script files have the `.zs` prefix, make sure that it isn't `.zs.txt`!
+脚本文件有 `.zs` 前缀，请确保它不是 `.zs.txt`！
 
 ## 什么是脚本
 
@@ -43,16 +43,16 @@ println("Hello, world!");
 ` crafttweaker.log ` 文件的输出会使用一种特殊的语法，基本的语法结构如下：
 
 ```
-[HH:MM:SS.ms][LOADERSTAGE][SIDE][TYPE] <message>
+[HH:MM:SSm][LOADERSTAGE][SIDE][TYPE] <message>
 ```
 
 在上面的示例中，输出将会是：
 
 ```
-[14:58:06.697][DONE][SERVER][INFO] Hello world!
+[14：58：06.697][DONE][SERVER][INFO] Hello world ！
 ```
 
-The syntax is used for debug purposes and the only time the syntax is not used, is for command dumps, in which case it just prints the message, this is done so copy pasting the dumped information is easier.
+语法用于调试，唯一没有使用语法的时间是用于命令转储， 在这种情况下，它只是打印消息，所以复制丢弃的信息就更容易了。
 
 ### 注释
 
@@ -71,4 +71,4 @@ ZenScript 支持三种不同的注释书写方法，它们分别是：
 多行注释！ */
 ```
 
-Just note, that `#` comments are also used for PreProcessors (TODO link to PreProcessors when they are documented), so while they are still valid comments, they could cause unwanted side effects. 
+请注意， `#` 评论也用于预处理器 (TODO link 到预处理器, 当它们被记录出来时), 因此，虽然它们仍然是有效的评论，但它们可能会造成不必要的副作用。 

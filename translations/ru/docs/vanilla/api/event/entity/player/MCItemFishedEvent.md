@@ -1,38 +1,38 @@
-# MCItemFishedEvent
+# Событие «Рыба-MCItemFished»
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.event.entity.player.MCItemFishedEvent
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.MCItemFishedEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
+новый crafttweaker.api.event.entity.player.MCItemFishedEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCItemFishedEvent>);
 ```
-| Parameter | Тип                                                                                                                             | Описание                |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCItemFishedEvent](/vanilla/api/event/entity/player/MCItemFishedEvent)> | No description provided |
+| Параметр | Тип                                                                                                                             | Описание             |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCItemFishedEvent](/vanilla/api/event/entity/player/MCItemFishedEvent)> | Описание отсутствует |
 
 
 
 ## Методы
-### damageRodBy
+### повреждения Гродби
 
 ```zenscript
-myMCItemFishedEvent.damageRodBy(arg0 as int);
+myMCItemFishedEvent.damageRodBy(arg0 как int);
 ```
 
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| arg0      | int  | No description provided |
+| Параметр | Тип | Описание             |
+| -------- | --- | -------------------- |
+| arg0     | int | Описание отсутствует |
 
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getEntityPlayer();
@@ -40,65 +40,65 @@ myMCItemFishedEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCItemFishedEvent.getPlayer();
 ```
 
-### getRodDamage
+### getРодный Урон
 
-Get the damage the rod will take. Returns: `The damage the rod will take`
+Получите урон, который будет нанесен стержень. Возвращение: `Урон, полученный от стержня`
 
-Returns int
+Возвращает int
 
 ```zenscript
 myMCItemFishedEvent.getRodDamage();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCItemFishedEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCItemFishedEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCItemFishedEvent.isCanceled();
 ```
 
-### setCanceled
+### установка отменена
 
 ```zenscript
-myMCItemFishedEvent.setCanceled(cancel as boolean);
+myMCItemFishedEvent.setCancel(отменить как boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| отменить | boolean | Описание отсутствует |
 
 
 

@@ -33,7 +33,7 @@ myMCBlock.getDefaultState();
 | lootTable      | 字符串[string] | true | false |
 | translationKey | 字符串[string] | true | false |
 
-## Casters
+## 卡斯特尔
 
 | 结果类型        | 是否隐藏  |
 | ----------- | ----- |

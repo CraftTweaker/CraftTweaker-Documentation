@@ -1,27 +1,27 @@
 # MCBonemealEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.event.entity.player.MCBonemealEvent
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
-new crafttweaker.api.event.entity.player.MCBonemealEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCBonemealEvent>);
+new crafttweaker.api.event.entity.player.MCBonemealEvent(обработчик функции.Consumer<crafttweaker.api.event.entity.player.MCBonemealEvent>);
 ```
-| Parameter | Тип                                                                                                                         | Описание                |
-| --------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCBonemealEvent](/vanilla/api/event/entity/player/MCBonemealEvent)> | No description provided |
+| Параметр | Тип                                                                                                                         | Описание             |
+| -------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| handler  | function.Consumer<[crafttweaker.api.event.entity.player.MCBonemealEvent](/vanilla/api/event/entity/player/MCBonemealEvent)> | Описание отсутствует |
 
 
 
 ## Методы
 ### getBlock
 
-Returns [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
+Возвращает [crafttweaker.api.block.MCBlockState](/vanilla/api/blocks/MCBlockState)
 
 ```zenscript
 myMCBonemealEvent.getBlock();
@@ -29,7 +29,7 @@ myMCBonemealEvent.getBlock();
 
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCBonemealEvent.getEntityPlayer();
@@ -37,9 +37,9 @@ myMCBonemealEvent.getEntityPlayer();
 
 ### getPlayer
 
-Returns: `Player`
+Возвращение: `Игрок`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Возвращает [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCBonemealEvent.getPlayer();
@@ -47,7 +47,7 @@ myMCBonemealEvent.getPlayer();
 
 ### getPos
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Возвращает [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCBonemealEvent.getPos();
@@ -55,53 +55,53 @@ myMCBonemealEvent.getPos();
 
 ### getStack
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Возвращает [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCBonemealEvent.getStack();
 ```
 
-### hasResult
+### имеет Результат
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Определяет, ожидает ли это событие значимое значение результата. Примечание: События с аннотацией HasResult будут автоматически добавлены для возврата true.
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCBonemealEvent.hasResult();
 ```
 
-### isCancelable
+### неотменяемый
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+Определите, если эта функция вообще недоступна. Возвращается: `Если доступ к установленной отмене должен быть разрешен
+ Примечание:
+ События с отменяемой аннотацией будут иметь этот метод автоматически добавлены для возврата истины.`
 
-Returns boolean
+Возвращает boolean
 
 ```zenscript
 myMCBonemealEvent.isCancelable();
 ```
 
-### isCanceled
+### отменено
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Определяет, отменено ли это событие и должно прекратить выполнение. Возвращение: `Текущее состояние отменено`
 
-Returns boolean
-
-```zenscript
-myMCBonemealEvent.isCanceled();
-```
-
-### setCanceled
+Возвращает boolean
 
 ```zenscript
-myMCBonemealEvent.setCanceled(cancel as boolean);
+myMCBonemealEvent.isCancel();
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+### установка отменена
+
+```zenscript
+myMCBonemealEvent.setCancel(отменить как boolean);
+```
+
+| Параметр | Тип     | Описание             |
+| -------- | ------- | -------------------- |
+| отменить | boolean | Описание отсутствует |
 
 
 

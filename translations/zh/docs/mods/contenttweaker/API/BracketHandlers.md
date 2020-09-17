@@ -1,27 +1,27 @@
-# BracketHandlers
+# 骨架处理程序
 
-I advise against using the static methods in this class directly as they may be merged into CrT's BEP at any point. If you need to access the Bracket Expression Parser methods dynamically, you can use
+我建议不要直接使用这个类中的静态方法，因为它们可以在任何时候并入CrT's BEP。 如果您需要动态访问Bracket 表达式解析方法，您可以使用
  ```zencode
  var myName = "misc";
  <itemgroup:${myName}>
  ```
 
-This class was added by a mod with mod-id `contenttweaker`. 因此，如果要使用此功能，则需要安装此mod。
+这个类是由模组添加的，有模组id `内容较弱`。 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
 如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-mods.contenttweaker.BracketHandlers
+mods.contenttweaker.骨架处理程序
 ```
 
 ## 使用方式
 ### getItemGroup
 
-Gets the itemGroup. Will throw an error if the group could not be found
+获取项目组。 如果找不到群组将出现错误
 
- Returns: `The found MCItemGroup`
+ 返回： `找到的 MCItemGroup`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+返回类型： [mods.contenttweiner.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>
@@ -30,18 +30,18 @@ mods.contenttweaker.BracketHandlers.getItemGroup(tokens as String);
 mods.contenttweaker.BracketHandlers.getItemGroup("misc");
 ```
 
-| 参数     | 返回值类型       | 描述                                          |
-| ------ | ----------- | ------------------------------------------- |
-| tokens | 字符串[string] | What you createDataCompound in the BEP call |
+| 参数 | 返回值类型       | 描述                  |
+| -- | ----------- | ------------------- |
+| 令牌 | 字符串[string] | 您在 BEP 调用中创建数据复合的内容 |
 
 
 ### getToolType
 
-Gets a [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType). Will create a new one if the given one does not exist.
+获取 [mods.contenttweeper.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)。 如果给定的不存在，将创建一个新的一个。
 
- Returns: `The [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType) if found, or a new MCToolType`
+ 返回： `如果找到 [mods.contenttweaker.item.MCToolType](/mods/contenttweiler/API/item/MCToolType)，或新的 MCToolType`
 
-Return type: [mods.contenttweaker.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
+返回类型： [mods.contenttweiner.item.MCToolType](/mods/contenttweaker/API/item/MCToolType)
 
 ```zenscript
 <tooltype:shovel>
@@ -50,9 +50,9 @@ mods.contenttweaker.BracketHandlers.getToolType(tokens as String);
 mods.contenttweaker.BracketHandlers.getToolType("shovel");
 ```
 
-| 参数     | 返回值类型  | 描述                                                |
-| ------ | ------ | ------------------------------------------------- |
-| tokens | String | What you would createDataCompound in the BEP call |
+| 参数 | 返回值类型  | 描述                    |
+| -- | ------ | --------------------- |
+| 令牌 | String | 您想要在 BEP 调用中创建数据复合的内容 |
 
 
 

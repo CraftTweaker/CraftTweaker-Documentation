@@ -1,52 +1,52 @@
 # MCItemGroup
 
-An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
+Eine Artikelgruppe (z.B. Creative Tab) ist eine Gruppierung von Artikeln basierend auf Kategorie.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `contenttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
 
-## Implemented Interfaces
-MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Implementierte Schnittstellen
+MCItemGroup implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
+- [crafttweaker.api.brackets.Befehlstempelanzeige](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methoden
-### getPath
+### getPfad
 
-Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
+Ruft den Pfad der Elementgruppe ab. Der Pfad ist das, was Sie nach dem `<Elementgruppe:` Teil im Klammerausdruck verwenden.
 
-Return type: String
+Rückgabetyp: String
 
 ```zenscript
 <itemgroup:misc>.getPath();
 ```
 
-### setBackgroundImageName
+### setHintergrundbildname
 
-Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
+Legt den Bildnamen des Hintergrunds fest, der für diesen Tab im kreativen Menü verwendet wird Gibt zurück: `Dieses Objekt zur Verkettung`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Rückgabetyp: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-<itemgroup:misc>.setBackgroundImageName(texture as String);
+<itemgroup:misc>.setBackgroundImageName(Textur als String);
 ```
 
-| Parameter | Type   | Beschreibung           |
-| --------- | ------ | ---------------------- |
-| texture   | String | The texture to be used |
+| Parameter | Type   | Beschreibung              |
+| --------- | ------ | ------------------------- |
+| textur    | String | Die zu verwendende Textur |
 
 
 ### setNoScrollbar
 
-Removes the scrollbar of the item Group in the creative inventory
+Entfernt die Scrollleiste der Gegenstandsgruppe im kreativen Inventar
 
- Returns: `This object for chaining`
+ Gibt zurück: `Dieses Objekt zur Verkettung`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Rückgabetyp: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,21 +54,21 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 
 ### setNoTitle
 
-Removes the title of the item Group in the creative inventory
+Entfernt den Titel der Gegenstandsgruppe im kreativen Inventar
 
- Returns: `This object for chaining`
+ Gibt zurück: `Dieses Objekt zur Verkettung`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Rückgabetyp: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
 ```
 
 
-## Properties
+## Eigenschaften
 
-| Name          | Type   | Has Getter | Has Setter |
+| Name          | Type   | Hat Getter | Hat Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| Kommandozeile | String | true       | false      |
+| pfad          | String | true       | false      |
 

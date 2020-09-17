@@ -1,103 +1,103 @@
 # IRecipeManager
 
-Default interface for Registry based handlers as they can all remove recipes by ResourceLocation.
+Standardschnittstelle für Registry-basierte Handler, da sie alle Rezepte von ResourceLocation entfernen können.
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.registries.IRecipeManager
 ```
 
-## Implemented Interfaces
-IRecipeManager implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+IRecipeManager implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
 ## Methoden
 ### addJSONRecipe
 
-Adds a recipe based on a provided IData. The provided IData should represent a DataPack JSON, this effectively allows you to register recipes for any DataPack supporting IRecipeType systems.
+Fügt ein Rezept basierend auf einer angegebenen IData. Die zur Verfügung gestellten IData sollte ein DataPack JSON darstellen, dies ermöglicht Ihnen effektiv Rezepte für jedes DataPack zu registrieren, das IRecipeType Systeme unterstützt.
 
 ```zenscript
 craftingTable.addJSONRecipe(name as String, data as crafttweaker.api.data.IData);
-craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience:0.35 as float, cookingtime:100});
+craftingTable.addJSONRecipe("recipe_name", {ingredient:{item:<item:minecraft:gold_ore>.registryName},result:<item:minecraft:cooked_porkchop>.registryName,experience :0.35 as float, cookingtime:100});
 ```
 
-| Parameter | Type                                                   | Beschreibung                    |
-| --------- | ------------------------------------------------------ | ------------------------------- |
-| name      | String                                                 | name of the recipe              |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data representing the json file |
+| Parameter | Type                                                   | Beschreibung                             |
+| --------- | ------------------------------------------------------ | ---------------------------------------- |
+| name      | String                                                 | Name des Rezepts                         |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Daten, die die json-Datei repräsentieren |
 
 
-### removeAll
+### alle entfernen
 
-Remove all recipes in this registry
+Alle Rezepte in dieser Registry entfernen
 
 ```zenscript
 craftingTable.removeAll();
 ```
 
-### removeByModid
+### entfernenByModid
 
-Remove recipe based on Registry name modid
+Entferne Rezept basierend auf Registry Name Modid
 
 ```zenscript
 craftingTable.removeByModid(modid as String);
 craftingTable.removeByModid("minecraft");
 ```
 
-| Parameter | Type   | Beschreibung                   |
-| --------- | ------ | ------------------------------ |
-| modid     | String | modid of the recipes to remove |
+| Parameter | Type   | Beschreibung                      |
+| --------- | ------ | --------------------------------- |
+| modo      | String | modid der zu entfernenden Rezepte |
 
 
 ### removeByName
 
-Remove recipe based on Registry name
+Rezept basierend auf Registry-Namen entfernen
 
 ```zenscript
 craftingTable.removeByName(name as String);
 craftingTable.removeByName("minecraft:furnace");
 ```
 
-| Parameter | Type   | Description                       |
-| --------- | ------ | --------------------------------- |
-| name      | String | registry name of recipe to remove |
+| Parameter | Type   | Beschreibung                            |
+| --------- | ------ | --------------------------------------- |
+| name      | String | Registry-Name des zu löschenden Rezepts |
 
 
 ### removeByRegex
 
-Remove recipe based on regex
+Rezept basierend auf Regex entfernen
 
 ```zenscript
-craftingTable.removeByRegex(regex as String);
+craftingTable.removeByRegex(regex als String);
 craftingTable.removeByRegex("\\d_\\d");
 ```
 
-| Parameter | Type   | Beschreibung           |
-| --------- | ------ | ---------------------- |
-| regex     | String | regex to match against |
+| Parameter | Type   | Beschreibung             |
+| --------- | ------ | ------------------------ |
+| regex     | String | regex zum übereinstimmen |
 
 
-### removeRecipe
+### Rezept entfernen
 
-Remove a recipe based on it's output.
+Entferne ein Rezept basierend auf seiner Ausgabe.
 
 ```zenscript
-craftingTable.removeRecipe(output as crafttweaker.api.item.IItemStack);
+craftingTable.removeRecipe(Ausgabe als crafttweaker.api.item.IItemStack);
 craftingTable.removeRecipe(<item:minecraft:glass>);
 ```
 
-| Parameter | Type                                                              | Beschreibung         |
-| --------- | ----------------------------------------------------------------- | -------------------- |
-| output    | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | output of the recipe |
+| Parameter | Type                                                              | Beschreibung        |
+| --------- | ----------------------------------------------------------------- | ------------------- |
+| ausgeben  | [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack) | Ausgabe des Rezepts |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name          | Type   | Has Getter | Has Setter |
+| Name          | Type   | Hat Getter | Hat Setter |
 | ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
+| Kommandozeile | String | true       | false      |
 

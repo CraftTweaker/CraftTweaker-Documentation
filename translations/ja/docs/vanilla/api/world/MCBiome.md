@@ -1,70 +1,70 @@
 # MCBiome
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+crafttweakerのmod-idを持つmodによって追加されているクラスです。 従って、この機能を利用する場合はこのmodをインストールする必要があります。
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## クラスのインポート
+問題が発生した場合には、インポートが必要になります。とはいえ、お手数ですが予めインポートしておくほうが安全です。
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
 
-## Methods
+## メソッド
 ### getSpawns
 
-Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+戻り値 List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parameter      | Type                                                                                           | Description             |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| パラメータ | タイプ                                                                                | 説明           |
+| ----- | ---------------------------------------------------------------------------------- | ------------ |
+| 分類    | [crafttweaker.api.entity.MCEntity分類](/vanilla/api/entities/MCEntityClassification) | 説明が提供されていません |
 
 
 ### getTempCategory
 
-Returns String
+戻り値の文字列
 
 ```zenscript
-myMCBiome.getTempCategory();
+myMCome.getTempCategory();
 ```
 
 ### getTemperature
 
-Returns float
+float を返します。
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+myMCBiome.getTemperature(crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Description             |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| パラメータ | タイプ                                                          | 説明           |
+| ----- | ------------------------------------------------------------ | ------------ |
+| pos   | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | 説明が提供されていません |
 
 
 
-## Properties
+## プロパティー
 
-| Name               | Type    | Has Getter | Has Setter |
-| ------------------ | ------- | ---------- | ---------- |
-| category           | String  | true       | false      |
-| defaultTemperature | float   | true       | false      |
-| depth              | float   | true       | false      |
-| doesRain           | boolean | true       | false      |
-| doesSnow           | boolean | true       | false      |
-| downfall           | float   | true       | false      |
-| isHighHumidity     | boolean | true       | false      |
-| isMutation         | boolean | true       | false      |
-| isTempCold         | boolean | true       | false      |
-| isTempMedium       | boolean | true       | false      |
-| isTempOcean        | boolean | true       | false      |
-| isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
-| rainType           | String  | true       | false      |
-| scale              | float   | true       | false      |
-| spawningChange     | float   | true       | false      |
-| translationKey     | String  | true       | false      |
-| waterColor         | int     | true       | false      |
-| waterFogColor      | int     | true       | false      |
+| 名称             | タイプ      | ゲッターあり | セッターあり |
+| -------------- | -------- | ------ | ------ |
+| カテゴリ           | 文字列型     | true   | false  |
+| デフォルト温度        | float型   | true   | false  |
+| 深さ             | float型   | true   | false  |
+| doesRain       | boolean型 | true   | false  |
+| doesSnow       | boolean型 | true   | false  |
+| <unk>          | float型   | true   | false  |
+| isHighHumidity | boolean型 | true   | false  |
+| isMutation     | boolean型 | true   | false  |
+| isTempCold     | boolean型 | true   | false  |
+| isTempMedium   | boolean型 | true   | false  |
+| isTempOcean    | boolean型 | true   | false  |
+| isTempWarm     | boolean型 | true   | false  |
+| 親              | 文字列型     | true   | false  |
+| rainType       | 文字列型     | true   | false  |
+| スケール           | float型   | true   | false  |
+| spawningChange | float型   | true   | false  |
+| translationKey | 文字列型     | true   | false  |
+| waterColor     | int      | true   | false  |
+| waterFogColor  | int      | true   | false  |
 

@@ -1,27 +1,27 @@
 # MCEntityInteract
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract
+craftminstrer.api.event.entity.player.PlayerInteractEvent.MCEntityInteract
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract>);
+新 craftminstrer.api.event.entity.player.PlayerInteractEvent.MCEntityInteract(处理程序作为函数。消费者<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract>);
 ```
-| 参数      | 类型                                                                                                                                                                    | 描述                      |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract](/vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract)> | No description provided |
+| 参数      | 类型                                                                                                                                                      | 描述                      |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| handler | 消费者<[craftmiliter.api.event.entity.player.PlayerInteractEvent.MCEntityInteract](/vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract)> | No description provided |
 
 
 
-## Methods
+## 方法
 ### getEntityPlayer
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityInteract.getEntityPlayer();
@@ -29,17 +29,17 @@ myMCEntityInteract.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+返回： `这种互动所涉及的脸。 对于所有非方块交互，这将返回 null。`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+返回 [craftbinstruer.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
-myMCEntityInteract.getFace();
+myMCEntityInteract.getFacebook();
 ```
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+返回： `这种互动涉及的物品堆栈，如果手是空的，则` @code ItemStack.EMPTY}
 
 Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
@@ -49,9 +49,9 @@ myMCEntityInteract.getItemStack();
 
 ### getPlayer
 
-Returns: `Player`
+返回： `玩家`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+返回 [craftbinstruer.api.entity.player.MCPlayerEnty](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityInteract.getPlayer();
@@ -59,55 +59,55 @@ myMCEntityInteract.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+如果这种互动是在一个实体上进行的，将是一个以该实体为中心的区块。 如果交互在一个块上，将是该块的位置。 否则，将成为一个以玩家为中心的BlockPos。 永远不会是空的。 返回： `此互动涉及的位置。`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+返回 [craftbinstruer.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCEntityInteract.getPos();
 ```
 
-### hasResult
+### 突然结果
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+确定此事件是否需要一个重要的结果值。 注意： HasResult 注解中的事件将会自动添加此方法以返回 true。
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
-myMCEntityInteract.hasResult();
+a. myMCEntityInteract.hasResult()；
 ```
 
-### isCancelable
+### 可取消
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
- Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+确定此函数是否可以取消。 返回： `如果应该允许访问 setcanced
+ 注意：
+ 取消批注事件将自动添加此方法以返回 true。`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCEntityInteract.isCancelable();
 ```
 
-### isCanceled
+### 已取消
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+确定此事件是否被取消并应停止执行。 返回： `当前取消的状态`
 
-Returns boolean
+返回为布尔值
 
 ```zenscript
 myMCEntityInteract.isCanceled();
 ```
 
-### setCanceled
+### 已取消
 
 ```zenscript
-myMCEntityInteract.setCanceled(cancel as boolean);
+myMCEntityInteract.setCanceled(作为布尔值)
 ```
 
-| Parameter | 类型      | 说明                      |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| 参数 | 类型      | 说明                      |
+| -- | ------- | ----------------------- |
+| 取消 | boolean | No description provided |
 
 
 

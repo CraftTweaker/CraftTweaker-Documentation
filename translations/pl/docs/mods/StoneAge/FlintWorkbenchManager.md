@@ -1,20 +1,20 @@
-# Flint Workbench
+# Krzemieślniczy stół warsztatowy
 
-## Package
-`import mods.stone_age.FlintWorkbenchManager;`
+## Pakiet
+`importuj mods.stone_age.FlintWorkbenchManager;`
 
-## Methods
-- **String name** Recipe name
+## Metody
+- **Nazwa ciągu** Nazwa przepisu
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] inputMatrix**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool** Crafting tool
-- **String group** Recipe group
+- **[Składnik](/Vanilla/Variable_Types/IIngredient/)[] inputMatrix**
+- **[Narzędzie](/Vanilla/Variable_Types/IIngredient/) Składnik** Narzędzie do wytwarzania
+- **Grupa ciągów** Grupa przepisów
 
-## Addition
+## Dodanie
 
 ```zenscript
-<recipetype:stone_age:flint_workbench>.addRecipe(String name, IItemStack output, IIngredient[][] inputMatrix, IIngredient tool, @OptionalString String group)
+<recipetype:stone_age:flint_workbench>.addRecipe(Nazwa ciągu, wyjście IItemStack, IIngredient[][] inputMatrix, IIngredient tool, @OptionalString String group)
 
-<recipetype:stone_age:flint_workbench>.addRecipe("cobblestone", <item:minecraft:cobblestone>, [[<item:minecraft:dirt>, <item:minecraft:dirt]], <item:minecraft:emerald>);
+<recipetype:stone_age:flint_workbench>. ddRecipe("cobblestone", <item:minecraft:cobblestone>, [[<item:minecraft:dirt>, <item:minecraft:dirt]], <item:minecraft:emerald>);
 FlintWorkbenchManager.INSTANCE.addRecipe("cobblestone", <item:minecraft:cobblestone>, [[<item:minecraft:dirt>, <item:minecraft:dirt]], <item:minecraft:emerald>);
 ```

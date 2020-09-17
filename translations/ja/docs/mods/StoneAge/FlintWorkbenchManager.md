@@ -1,16 +1,16 @@
 # Flint Workbench
 
-## Package
-`import mods.stone_age.FlintWorkbenchManager;`
+## パッケージ
+`import mods.stone_ageFlintWorkbenchManager;`
 
-## Methods
-- **String name** Recipe name
+## メソッド
+- **文字列名** レシピ名
 - **[IItemStack](/Vanilla/Items/IItemStack/) output**
 - **[IIngredient](/Vanilla/Variable_Types/IIngredient/)[] inputMatrix**
-- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) tool** Crafting tool
-- **String group** Recipe group
+- **[IIngredient](/Vanilla/Variable_Types/IIngredient/) ツール** 作成ツール
+- **文字列グループ** レシピグループ
 
-## Addition
+## 加算
 
 ```zenscript
 <recipetype:stone_age:flint_workbench>.addRecipe(String name, IItemStack output, IIngredient[][] inputMatrix, IIngredient tool, @OptionalString String group)

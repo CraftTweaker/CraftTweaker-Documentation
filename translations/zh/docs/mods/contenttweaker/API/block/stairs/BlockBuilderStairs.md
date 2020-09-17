@@ -1,135 +1,135 @@
 # BlockBuilderStairs
 
-A special Block Builder that allows you to create stairs. <p> Stairs will have not one but three textures that you will need to supply: One for the top, one for the bottom and one for the sides. By default these textures will use your blockname as name, suffixed by `_top`, `_bottom` or `_sides`. As with most things here, sample images are generated for you by default, though.
+一个特殊的块生成器，允许您创建楼梯。 <p> 楼梯只能有三个你需要提供的纹理： 顶部一个, 一个是底部，一个是双方。 默认情况下，这些纹理将使用您的方块名称作为名称，由 `_top`， `_底部` 或 `_边` 后缀。 与这里的大多数情况一样，样本图像是默认情况下为您生成的。
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类是由模组添加的，有模组id `内容较弱`。 因此，如果要使用此功能，则需要安装此mod。
 
 ## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-mods.contenttweaker.block.stairs.BlockBuilderStairs
+mods.contenttweeper.block.stairs.BlockBuilderStairs
 ```
 
 ## 已实现的接口
-BlockBuilderStairs implements the following interfaces. That means any method available to them can also be used on this class.
+BlockBuilderStairs 实现了以下接口。 这意味着对这个接口可用的任何方法也可以在此类上使用。
 - [mods.contenttweaker.api.IIsBuilder](/mods/contenttweaker/API/api/IIsBuilder)
-- [mods.contenttweaker.block.BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
+- [mods.contenttweeper.block。BlockTypeBuilder](/mods/contenttweaker/API/block/BlockTypeBuilder)
 
 ## 方法
-### build
+### 构建中
 
-Instructs CoT to actually build whatever this builder is supposed to be building.
+指示CoT实际建造任何这个建筑师的建筑物。
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().build(resourceLocation as String);
+新 BlockBuilder().withType<BlockBuilderStairs>().build(resourceLocation as String);
 new BlockBuilder().withType<BlockBuilderStairs>().build("my_awesome_block");
 ```
 
-| 参数               | 返回值类型       | 描述                                   |
-| ---------------- | ----------- | ------------------------------------ |
-| resourceLocation | 字符串[string] | The resource path to give this block |
+| 参数   | 返回值类型       | 描述        |
+| ---- | ----------- | --------- |
+| 资源位置 | 字符串[string] | 给此方块的资源路径 |
 
 
-### withBottomTexture
+### 与底部纹理
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+允许您覆盖底边应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as crafttweaker.api.util.MCResourceLocation);
+新 BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(底部纹理作为craftweer.api.util.MCResourceLocation);
 ```
 
-| 参数            | 返回值类型                                                                            | 描述                                         |
-| ------------- | -------------------------------------------------------------------------------- | ------------------------------------------ |
-| bottomTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the bottom side |
+| 参数   | 返回值类型                                                                             | 描述       |
+| ---- | --------------------------------------------------------------------------------- | -------- |
+| 底部纹理 | [craftminstrer.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 底部要使用的纹理 |
 
 
 
-Allows you to override the path of the texture that the bottom side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+允许您覆盖底边应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。 使用以方块名称作为输入的函数并返回其最终纹理。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(bottomTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
-new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_bottom"));
+新BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(底部纹理为函数)。函数<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+new BlockBuilder().withType<BlockBuilderStairs>().withBottomTexture(blockname as MCResourceLocation) => new MCResourceLocation(BblockName.namespace, blockName.path + "_bow");
 ```
 
-| 参数            | 返回值类型                                                                                                                                                                                                   | 描述                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| bottomTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| 参数   | 返回值类型                                                                                                                                                                                     | 描述     |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 底部纹理 | 函数。函数&lt;[craftmiliter.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 要使用的函数 |
 
 
-### withSidesTexture
+### 西德纹理
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+允许您覆盖双方应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as crafttweaker.api.util.MCResourceLocation);
+新 BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture (craftmile.api.util.MCResourceLocation);
 ```
 
-| 参数           | 返回值类型                                                                            | 描述                                   |
-| ------------ | -------------------------------------------------------------------------------- | ------------------------------------ |
-| sidesTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the sides |
+| 参数           | 返回值类型                                                                             | 描述       |
+| ------------ | --------------------------------------------------------------------------------- | -------- |
+| sidesTexture | [craftminstrer.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 双方要使用的纹理 |
 
 
 
-Allows you to override the path of the texture that the sides should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+允许您覆盖双方应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。 使用以方块名称作为输入的函数并返回其最终纹理。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(sidesTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
-new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture((blockName as MCResourceLocation) => new MCResourceLocation(blockName.namespace, blockName.path + "_sides"));
+新 BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture (sidesTexture as function).函数<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+new BlockBuilder().withType<BlockBuilderStairs>().withSidesTexture(blockname as MCResourceLocation) => new MCResourceLocation(BockName.namespace, blockName.path + "_sides");
 ```
 
-| 参数           | 返回值类型                                                                                                                                                                                                   | 描述                  |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| sidesTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| 参数           | 返回值类型                                                                                                                                                                                     | 描述     |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| sidesTexture | 函数。函数&lt;[craftmiliter.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 要使用的函数 |
 
 
-### withTopTexture
+### wittTop纹理
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default.
+允许您覆盖上方应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as crafttweaker.api.util.MCResourceLocation);
+新 BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as craftweer.api.util.MCResourceLocation);
 new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(<resource:contenttweaker:my_awesome_stairs_top>);
 ```
 
-| 参数         | 返回值类型                                                                            | 描述                                      |
-| ---------- | -------------------------------------------------------------------------------- | --------------------------------------- |
-| topTexture | [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | The texture to be used for the top side |
+| 参数   | 返回值类型                                                                             | 描述       |
+| ---- | --------------------------------------------------------------------------------- | -------- |
+| 顶部纹理 | [craftminstrer.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation) | 顶部要使用的纹理 |
 
 
 
-Allows you to override the path of the texture that the top side should use. If that texture's namespace is in the namespace of CoT or any of its addons (that support it) then the image will be created by default. Uses a function that takes the block's name as input and returns the end texture for it.
+允许您覆盖上方应该使用的纹理路径。 如果该文本的命名空间在 CoT 或其任一附加组件(支持它)的命名空间中，则默认情况下将创建图像。 使用以方块名称作为输入的函数并返回其最终纹理。
 
- Returns: `This builder, used for method chaining`
+ 返回： `此生成器，用于方法链`
 
-Return type: [mods.contenttweaker.block.stairs.BlockBuilderStairs](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
+返回类型： [mods.contenttweeper.block.stairs.BlockBuilder楼梯](/mods/contenttweaker/API/block/stairs/BlockBuilderStairs)
 
 ```zenscript
-new BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function.Function<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
+新BlockBuilder().withType<BlockBuilderStairs>().withTopTexture(topTexture as function).函数<crafttweaker.api.util.MCResourceLocation, crafttweaker.api.util.MCResourceLocation>);
 ```
 
-| 参数         | 返回值类型                                                                                                                                                                                                   | 描述                  |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
-| topTexture | function.Function&lt;[crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [crafttweaker.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | The function to use |
+| 参数   | 返回值类型                                                                                                                                                                                     | 描述     |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 顶部纹理 | 函数。函数&lt;[craftmiliter.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation), [craftbiner.api.util.MCResourceLocation](/vanilla/api/util/MCResourceLocation)&gt; | 要使用的函数 |
 
 
 

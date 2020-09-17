@@ -1,32 +1,32 @@
 # MCBiomeSpawnEntry
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.world.MCBiomeSpawnEntry
 ```
 
-## Constructors
+## Конструкторы
 ```zenscript
 new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, weight as int, minGroupCount as int, maxGroupCount as int);
 ```
-| Parameter     | Тип                                                                        | Описание                |
-| ------------- | -------------------------------------------------------------------------- | ----------------------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | No description provided |
-| weight        | int                                                                        | No description provided |
-| minGroupCount | int                                                                        | No description provided |
-| maxGroupCount | int                                                                        | No description provided |
+| Параметр       | Тип                                                                        | Описание             |
+| -------------- | -------------------------------------------------------------------------- | -------------------- |
+| entityType     | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | Описание отсутствует |
+| вес            | int                                                                        | Описание отсутствует |
+| минГруппировка | int                                                                        | Описание отсутствует |
+| maxGroupcount  | int                                                                        | Описание отсутствует |
 
 
 
-## Properties
+## Свойства
 
-| Name          | Type                                                                       | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
-| maxGroupCount | int                                                                        | true       | false      |
-| minGroupCount | int                                                                        | true       | false      |
-| weight        | int                                                                        | true       | false      |
+| Название       | Тип                                                                        | Имеет Getter | Имеет Setter |
+| -------------- | -------------------------------------------------------------------------- | ------------ | ------------ |
+| entityType     | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true         | false        |
+| maxGroupcount  | int                                                                        | true         | false        |
+| минГруппировка | int                                                                        | true         | false        |
+| вес            | int                                                                        | true         | false        |
 

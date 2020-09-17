@@ -1,70 +1,70 @@
 # ILogger
 
-Base class used to interface with the crafttweaker.log file and other loggers (such as the player logger).
+Базовый класс используется для интерфейса с файлом crafttweaker.log и другими логгерами (такими как плейер).
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Этот класс был добавлен модом с mod-id `crafttweaker`. Так что если вы хотите использовать эту функцию, вам нужно установить этот мод.
 
 ## Импорт класса
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Вам может потребоваться импортировать пакет, если вы столкнетесь с какими-либо проблемами (например, с заливкой массива), так что лучше быть в безопасности, чем извиняться и добавлять импорт.
 ```zenscript
 crafttweaker.api.ILogger
 ```
 
-## Methods
+## Методы
 ### debug
 
-Logs a debug message.
+Регистрирует отладочное сообщение.
 
 ```zenscript
-logger.debug(message as String);
+logger.debug(сообщение как String);
 logger.debug("message");
 ```
 
-| Parameter | Тип    | Описание              |
-| --------- | ------ | --------------------- |
-| message   | String | message to be logged. |
+| Параметр  | Тип    | Описание             |
+| --------- | ------ | -------------------- |
+| сообщение | String | сообщение для входа. |
 
 
-### error
+### ошибка
 
-Logs an error message.
+Регистрирует сообщение об ошибке.
 
 ```zenscript
-logger.error(message as String);
+logger.error(сообщение как строка);
 logger.error("message");
 ```
 
-| Parameter | Type   | Description           |
-| --------- | ------ | --------------------- |
-| message   | String | message to be logged. |
+| Параметр  | Тип    | Описание             |
+| --------- | ------ | -------------------- |
+| сообщение | String | сообщение для входа. |
 
 
-### info
+### инфо
 
-Logs an info message.
+Регистрирует информационное сообщение.
 
 ```zenscript
-logger.info(message as String);
+logger.info(сообщение как строка);
 logger.info("message");
 ```
 
-| Parameter | Type   | Description           |
-| --------- | ------ | --------------------- |
-| message   | String | message to be logged. |
+| Параметр  | Тип    | Описание             |
+| --------- | ------ | -------------------- |
+| сообщение | String | сообщение для входа. |
 
 
-### warning
+### предупреждение
 
-Logs a warning message.
+Регистрирует предупреждение.
 
 ```zenscript
-logger.warning(message as String);
+logger.warning(сообщение как String);
 logger.warning("message");
 ```
 
-| Parameter | Type   | Description           |
-| --------- | ------ | --------------------- |
-| message   | String | message to be logged. |
+| Параметр  | Тип    | Описание             |
+| --------- | ------ | -------------------- |
+| сообщение | String | сообщение для входа. |
 
 
 
