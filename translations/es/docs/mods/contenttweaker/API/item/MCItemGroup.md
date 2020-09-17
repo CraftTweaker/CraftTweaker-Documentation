@@ -1,52 +1,52 @@
 # MCItemGroup
 
-An item Group (a.k.a. Creative Tab) is a grouping of items based on category.
+Un grupo de artículos (a.k.a. Tabla creativa) es un grupo de elementos basados en la categoría.
 
-This class was added by a mod with mod-id `contenttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con mod-id `contenttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
 ## Importar la clase
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 mods.contenttweaker.item.MCItemGroup
 ```
 
-## Implemented Interfaces
-MCItemGroup implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
+## Interfaces implementadas
+MCItemGroup implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [crafttweaker.api.brackets.CommandStringMostrar](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Methods
+## Métodos
 ### getPath
 
-Gets the path of the item group. The path is what you use in the Bracket Expression after the `<itemgroup:` part.
+Obtiene la ruta del grupo de elementos. La ruta es lo que utiliza en la Expresión de corchetes después de la `<grupo de artículos:` parte.
 
-Return type: String
+Tipo de retorno: Cadena
 
 ```zenscript
 <itemgroup:misc>.getPath();
 ```
 
-### setBackgroundImageName
+### nombre de imagen de fondo
 
-Sets the image name of the Background that is used for this tab in the creative menu Returns: `This object for chaining`
+Establece el nombre de la imagen del Fondo que se utiliza para esta pestaña en el menú creativo Devuelve: `Este objeto para encadenar`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Tipo de retorno: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
-<itemgroup:misc>.setBackgroundImageName(texture as String);
+<itemgroup:misc>.setBackgroundImageName(textura como cadena);
 ```
 
-| Parameter | Type   | Description            |
-| --------- | ------ | ---------------------- |
-| texture   | String | The texture to be used |
+| Parámetro | Tipo   | Descripción       |
+| --------- | ------ | ----------------- |
+| textura   | Cadena | La textura a usar |
 
 
 ### setNoScrollbar
 
-Removes the scrollbar of the item Group in the creative inventory
+Elimina la barra de desplazamiento del grupo de objetos en el inventario creativo
 
- Returns: `This object for chaining`
+ Devuelve: `Este objeto para encadenar`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Tipo de retorno: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoScrollbar();
@@ -54,21 +54,21 @@ Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/ite
 
 ### setNoTitle
 
-Removes the title of the item Group in the creative inventory
+Elimina el título del grupo de objetos del inventario creativo
 
- Returns: `This object for chaining`
+ Devuelve: `Este objeto para encadenar`
 
-Return type: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
+Tipo de retorno: [mods.contenttweaker.item.MCItemGroup](/mods/contenttweaker/API/item/MCItemGroup)
 
 ```zenscript
 <itemgroup:misc>.setNoTitle();
 ```
 
 
-## Properties
+## Propiedades
 
-| Name          | Type   | Has Getter | Has Setter |
-| ------------- | ------ | ---------- | ---------- |
-| commandString | String | true       | false      |
-| path          | String | true       | false      |
+| Nombre        | Tipo   | Tiene Obtén | Tiene Setter |
+| ------------- | ------ | ----------- | ------------ |
+| commandString | Cadena | verdad      | falso        |
+| ruta          | Cadena | verdad      | falso        |
 
