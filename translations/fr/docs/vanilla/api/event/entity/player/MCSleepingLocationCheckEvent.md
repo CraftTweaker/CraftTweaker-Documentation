@@ -1,73 +1,73 @@
-# MCSleepingLocationCheckEvent
+# format@@0 MCSleepingLocationCheckEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent
+format@@0 crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent
 ```
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent>);
 ```
-| Parameter | Type                                                                                                                                                  | Description             |
-| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent](/vanilla/api/event/entity/player/MCSleepingLocationCheckEvent)> | No description provided |
+| Paramètre | Type de texte                                                                                                                                         | Libellé                    |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCSleepingLocationCheckEvent](/vanilla/api/event/entity/player/MCSleepingLocationCheckEvent)> | Aucune description fournie |
 
 
 
-## Methods
-### getSleepingLocation
+## Méthodes
+### format@@0 getSleepingLocation
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCSleepingLocationCheckEvent.getSleepingLocation();
 ```
 
-### hasResult
+### Il y a un résultat
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Détermine si cet événement attend une valeur de résultat significative. Remarque : Les événements avec l'annotation HasResult auront automatiquement ajouté cette méthode pour retourner true.
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCSleepingLocationCheckEvent.hasResult();
 ```
 
-### isCancelable
+### est annulable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+Détermine si cette fonction est annulable du tout. Renvoie : `Si l'accès à setAnnulled devrait être autorisé
  Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+ Les événements avec l'annotation annulable auront automatiquement ajouté cette méthode pour retourner true.`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCSleepingLocationCheckEvent.isCancelable();
 ```
 
-### isCanceled
+### est annulé
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Détermine si cet événement est annulé et doit arrêter d'exécuter. Renvoie : `L'état actuel annulé`
 
-Returns boolean
-
-```zenscript
-myMCSleepingLocationCheckEvent.isCanceled();
-```
-
-### setCanceled
+Retourne un booléen
 
 ```zenscript
-myMCSleepingLocationCheckEvent.setCanceled(cancel as boolean);
+myMCSleepingLocationCheckEvent.isCancled();
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+### setAnnulé
+
+```zenscript
+myMCSleepingLocationCheckEvent.setCancled(cancel as boolean);
+```
+
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| annuler   | boolean       | Aucune description fournie |
 
 
 
