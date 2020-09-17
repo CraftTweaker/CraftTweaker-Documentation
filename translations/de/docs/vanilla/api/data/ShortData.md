@@ -1,37 +1,37 @@
-# ShortData
+# Kurzdaten
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.data.ShortData
 ```
 
-## Implemented Interfaces
-ShortData implements the following interfaces. That means any method available to them can also be used on this class.
+## Implementierte Schnittstellen
+ShortData implementiert die folgenden Schnittstellen. Das bedeutet, dass jede ihnen zur Verfügung stehende Methode auch in dieser Klasse verwendet werden kann.
 - [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Konstrukteure
 ```zenscript
-new crafttweaker.api.data.ShortData(internal as short);
+neue crafttweaker.api.data.ShortData(intern als kurz);
 ```
-| Parameter | Type  | Beschreibung            |
-| --------- | ----- | ----------------------- |
-| internal  | short | No description provided |
+| Parameter | Type  | Beschreibung                 |
+| --------- | ----- | ---------------------------- |
+| intern    | short | Keine Beschreibung angegeben |
 
 
 
 ## Methoden
-### asList
+### asListe
 
-Gets a List<IData> representation of this IData, returns null on anything but [crafttweaker.api.data.ListData](/vanilla/api/data/ListData).
+Ruft eine Liste ab<IData> diese IData, liefert null auf alles außer [crafttweaker.api.data.ListData](/vanilla/api/data/ListData) zurück.
 
- Returns: `null if this IData is not a list.`
+ Gibt `null zurück, wenn diese IData keine Liste ist.`
 
-Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
+Gibt die Liste zurück<[craftweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ```zenscript
 1058.asList();
@@ -39,11 +39,11 @@ Returns List<[crafttweaker.api.data.IData](/vanilla/api/data/IData)>
 
 ### asMap
 
-Gets a Map<String, IData> representation of this IData, returns null on anything but [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
+Liefert eine Karte<String, IData> Darstellung dieser IData, liefert Null auf alles außer [crafttweaker.api.data.MapData](/vanilla/api/data/MapData).
 
- Returns: `null if this IData is not a map.`
+ Gibt `null zurück, wenn diese IData keine Karte ist.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
+Gibt [craftweaker.api.data.IData](/vanilla/api/data/IData)[String] zurück
 
 ```zenscript
 1058.asMap();
@@ -51,41 +51,41 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)[String]
 
 ### asString
 
-Gets the String representation of this IData
+Ruft die Zeichenkettenrepräsentation dieser IData ab
 
- Returns: `String that represents this IData (value and type).`
+ Gibt `-Zeichenkette, die diese IData (Wert und Typ) repräsentiert.`
 
-Returns String
+Gibt den String zurück
 
 ```zenscript
 1058.asString();
 ```
 
-### contains
+### enthält
 
-Checks if this IData contains another IData, mainly used in subclasses of [crafttweaker.api.data.ICollectionData](/vanilla/api/data/ICollectionData), is the same as an equals check on other IData types
+Prüft, ob diese IData eine andere IData enthält, die hauptsächlich in Unterklassen von [crafttweaker verwendet wird. pi.data.ICollectionData](/vanilla/api/data/ICollectionData), ist identisch mit einer Gleichheitsüberprüfung bei anderen IData Typen
 
-Returns boolean
+Rückgabewert boolesch
 
 ```zenscript
-1058.contains(data as crafttweaker.api.data.IData);
-1058.contains("Display");
+1058.Enthält (Daten als crafttweaker.api.data.IData);
+1058.contains("Anzeigen");
 ```
 
-| Parameter | Type                                                   | Beschreibung                     |
-| --------- | ------------------------------------------------------ | -------------------------------- |
-| data      | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | data to check if it is contained |
+| Parameter | Type                                                   | Beschreibung                               |
+| --------- | ------------------------------------------------------ | ------------------------------------------ |
+| daten     | [crafttweaker.api.data.IData](/vanilla/api/data/IData) | Daten zu überprüfen, ob sie enthalten sind |
 
 
-### copy
+### kopieren
 
-Makes a copy of this IData.
+Erzeugt eine Kopie dieser IData.
 
- IData is immutable by default, use this to create a proper copy of the object.
+ IData ist standardmäßig unveränderbar, verwenden Sie dies, um eine korrekte Kopie des Objekts zu erstellen.
 
- Returns: `a copy of this IData.`
+ Gibt `eine Kopie dieser IData zurück.`
 
-Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
+Gibt [craftweaker.api.data.IData](/vanilla/api/data/IData) zurück
 
 ```zenscript
 1058.copy();
@@ -93,13 +93,13 @@ Returns [crafttweaker.api.data.IData](/vanilla/api/data/IData)
 
 ### getId
 
-Gets the ID of the internal NBT tag.
+Liefert die ID des internen NBT-Tags.
 
- Used to determine what NBT type is stored (in a list for example)
+ Wird verwendet, um zu bestimmen, welcher NBT-Typ gespeichert wird (in einer Liste zum Beispiel)
 
- Returns: `ID of the NBT tag that this data represents.`
+ Gibt `ID des NBT-Tags, das diese Daten repräsentieren.`
 
-Returns byte
+Gibt Byte zurück
 
 ```zenscript
 1058.getId();
@@ -107,11 +107,11 @@ Returns byte
 
 ### getString
 
-Gets the String representation of the internal INBT tag
+Ruft die Zeichenkettenrepräsentation des internen INBT-Tags ab
 
- Returns: `String that represents the internal INBT of this IData.`
+ Gibt `zurück, der den internen INBT dieser IData repräsentiert.`
 
-Returns String
+Gibt den String zurück
 
 ```zenscript
 1058.getString();
