@@ -1,8 +1,8 @@
-# Commands
+# Comandos
 
-Here are the commands that matter:
+Aquí están los comandos que importan:
 ```
-/ct hand
+/ct mano
 ```
 ```
 /ct log
@@ -11,17 +11,17 @@ Here are the commands that matter:
 /ct scripts
 ```
 ```
-/ct issues
+/ct
 ```
 ```
 /ct discord
 ```
 ```
-/ct dump
+Volcado /ct
 ```
 ```
-/ct recipeTypes
+/ct recetas
 ```
 ```
-/ct help
+/ct ayuda
 ```
