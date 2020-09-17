@@ -1,29 +1,29 @@
-# MCEntityType
+# Type d'entité MC
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.entity.MCEntityType
 ```
 
-## Implemented Interfaces
-MCEntityType implements the following interfaces. That means any method available to them can also be used on this class.
+## Interfaces implémentées
+MCEntityType implémente les interfaces suivantes. Cela signifie que toutes les méthodes disponibles peuvent également être utilisées dans cette classe.
 - [crafttweaker.api.brackets.CommandStringDisplayable](/vanilla/api/brackets/CommandStringDisplayable)
 
-## Properties
+## Propriétés
 
-| Name           | Type                                                                                           | Has Getter | Has Setter |
-| -------------- | ---------------------------------------------------------------------------------------------- | ---------- | ---------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | true       | false      |
-| commandString  | String                                                                                         | true       | false      |
-| height         | float                                                                                          | true       | false      |
-| immuneToFire   | boolean                                                                                        | true       | false      |
-| lootTable      | String                                                                                         | true       | false      |
-| name           | String                                                                                         | true       | false      |
-| serializable   | boolean                                                                                        | true       | false      |
-| summonable     | boolean                                                                                        | true       | false      |
-| translationKey | String                                                                                         | true       | false      |
-| width          | float                                                                                          | true       | false      |
+| Nom                    | Type de texte                                                                                  | A un Getter | A un Setter |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | ----------- | ----------- |
+| classification         | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | vrai        | Faux        |
+| Chaîne de commande     | Chaîne de caractères                                                                           | vrai        | Faux        |
+| Hauteur                | flottant                                                                                       | vrai        | Faux        |
+| format@@0 immuneToFire | boolean                                                                                        | vrai        | Faux        |
+| table de butin         | Chaîne de caractères                                                                           | vrai        | Faux        |
+| Nom                    | Chaîne de caractères                                                                           | vrai        | Faux        |
+| serializable           | boolean                                                                                        | vrai        | Faux        |
+| invoquable             | boolean                                                                                        | vrai        | Faux        |
+| Clé de traduction      | Chaîne de caractères                                                                           | vrai        | Faux        |
+| width                  | flottant                                                                                       | vrai        | Faux        |
 
