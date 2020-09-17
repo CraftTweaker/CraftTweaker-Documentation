@@ -1,7 +1,7 @@
 # CraftTweaker
 
-CraftTweaker is a Minecraft mod that allows modpack authors to customize the game, allowing for new recipes to be added, old ones to be removed and just general modpack customization!
+CraftTweaker ist eine Minecraft-Modifikation, die es den Autoren ermöglicht, das Spiel anzupassen So können neue Rezepte hinzugefügt werden, alte zu entfernen und nur allgemeine Modpack-Anpassung!
 
-CraftTweaker uses a custom scripting language called ZenScript, which is a fairly easy to learn language that fits CraftTweaker's needs more than an already existing language would (such as JavaScript).
+CraftTweaker verwendet eine benutzerdefinierte Skriptsprache namens ZenScript, was eine relativ einfach zu erlernende Sprache ist, die den Bedürfnissen des CraftTweaker mehr entspricht als eine bereits existierende Sprache (wie JavaScript).
 
-This site will hopefully help guide you through everything that is possible with CraftTweaker, all that would be left is for you to use the knowledge and create something amazing!
+Diese Seite wird dich hoffentlich durch alles führen, was mit CraftTweaker möglich ist, Alles was Ihnen übrig bliebe, ist das Wissen zu nutzen und etwas Erstaunliches zu schaffen!
