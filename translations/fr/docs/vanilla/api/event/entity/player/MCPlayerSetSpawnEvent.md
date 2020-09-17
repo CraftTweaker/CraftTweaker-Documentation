@@ -1,101 +1,101 @@
 # MCPlayerSetSpawnEvent
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
-crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent
+format@@0 crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent
 ```
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent(handler as function.Consumer<crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent>);
 ```
-| Parameter | Type                                                                                                                                    | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | No description provided |
+| Paramètre | Type de texte                                                                                                                           | Libellé                    |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.MCPlayerSetSpawnEvent](/vanilla/api/event/entity/player/MCPlayerSetSpawnEvent)> | Aucune description fournie |
 
 
 
-## Methods
-### getEntityPlayer
+## Méthodes
+### Lecteur d'entité
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getEntityPlayer();
 ```
 
-### getNewSpawn
+### format@@0 getNewSpawn
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getNewSpawn();
 ```
 
-### getPlayer
+### Obtenir un joueur
 
-Returns: `Player`
+Renvoie : `Joueur`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCPlayerSetSpawnEvent.getPlayer();
 ```
 
-### hasResult
+### Il y a un résultat
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Détermine si cet événement attend une valeur de résultat significative. Remarque : Les événements avec l'annotation HasResult auront automatiquement ajouté cette méthode pour retourner true.
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCPlayerSetSpawnEvent.hasResult();
 ```
 
-### isCancelable
+### est annulable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+Détermine si cette fonction est annulable du tout. Renvoie : `Si l'accès à setAnnulled devrait être autorisé
  Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+ Les événements avec l'annotation annulable auront automatiquement ajouté cette méthode pour retourner true.`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCancelable();
 ```
 
-### isCanceled
+### est annulé
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Détermine si cet événement est annulé et doit arrêter d'exécuter. Renvoie : `L'état actuel annulé`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isCanceled();
 ```
 
-### isForced
+### isForcé
 
-This event is called before a player's spawn point is changed. The event can be canceled, and no further processing will be done.
+Cet événement est appelé avant que le point d'apparition d'un joueur ne soit changé. L'événement peut être annulé et aucun traitement ultérieur ne sera effectué.
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCPlayerSetSpawnEvent.isForced();
 ```
 
-### setCanceled
+### setAnnulé
 
 ```zenscript
-myMCPlayerSetSpawnEvent.setCanceled(cancel as boolean);
+myMCPlayerSetSpawnEvent.setCancled(cancel as boolean);
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| annuler   | boolean       | Aucune description fournie |
 
 
 
