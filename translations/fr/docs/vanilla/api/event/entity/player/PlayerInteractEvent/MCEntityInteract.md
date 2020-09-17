@@ -1,27 +1,27 @@
-# MCEntityInteract
+# Interaction de l'entité MC
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Cette classe a été ajoutée par un mod avec le mod-id `crafttweaker`. Vous devez donc avoir ce mod installé si vous voulez utiliser cette fonctionnalité.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importation de la classe
+Il pourrait vous être nécessaire d'importer le paquet si vous rencontrez des problèmes (comme lancer un tableau), alors mieux être sûr que désolé et ajouter l'importation.
 ```zenscript
 crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract
 ```
 
-## Constructors
+## Constructeurs
 ```zenscript
 new crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract(handler as function.Consumer<crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract>);
 ```
-| Parameter | Type                                                                                                                                                                  | Description             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract](/vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract)> | No description provided |
+| Paramètre | Type de texte                                                                                                                                                         | Libellé                    |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+| handler   | function.Consumer<[crafttweaker.api.event.entity.player.PlayerInteractEvent.MCEntityInteract](/vanilla/api/event/entity/player/PlayerInteractEvent/MCEntityInteract)> | Aucune description fournie |
 
 
 
-## Methods
-### getEntityPlayer
+## Méthodes
+### Lecteur d'entité
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityInteract.getEntityPlayer();
@@ -29,9 +29,9 @@ myMCEntityInteract.getEntityPlayer();
 
 ### getFace
 
-Returns: `The face involved in this interaction. For all non-block interactions, this will return null.`
+Renvoie : `Le visage impliqué dans cette interaction. Pour toutes les interactions avec les non-blocs, cela renverra nulle.`
 
-Returns [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
+Retourne [crafttweaker.api.util.Direction](/vanilla/api/util/Direction)
 
 ```zenscript
 myMCEntityInteract.getFace();
@@ -39,19 +39,19 @@ myMCEntityInteract.getFace();
 
 ### getItemStack
 
-Returns: `The itemstack involved in this interaction, {` @code ItemStack.EMPTY} if the hand was empty.
+Renvoie : `La pile de contenu impliquée dans cette interaction, {` @code ItemStack.EMPTY} si la main était vide.
 
-Returns [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
+Retourne [crafttweaker.api.item.IItemStack](/vanilla/api/items/IItemStack)
 
 ```zenscript
 myMCEntityInteract.getItemStack();
 ```
 
-### getPlayer
+### Obtenir un joueur
 
-Returns: `Player`
+Renvoie : `Joueur`
 
-Returns [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
+Retourne [crafttweaker.api.entity.player.MCPlayerEntity](/vanilla/api/entity/player/MCPlayerEntity)
 
 ```zenscript
 myMCEntityInteract.getPlayer();
@@ -59,55 +59,55 @@ myMCEntityInteract.getPlayer();
 
 ### getPos
 
-If the interaction was on an entity, will be a BlockPos centered on the entity. If the interaction was on a block, will be the position of that block. Otherwise, will be a BlockPos centered on the player. Will never be null. Returns: `The position involved in this interaction.`
+Si l'interaction était sur une entité, sera un BlockPos centré sur l'entité. Si l'interaction était sur un bloc, sera la position de ce bloc. Sinon, sera un BlockPos centré sur le joueur. Ne sera jamais nul. Renvoie : `La position impliquée dans cette interaction.`
 
-Returns [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
+Retourne [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos)
 
 ```zenscript
 myMCEntityInteract.getPos();
 ```
 
-### hasResult
+### Il y a un résultat
 
-Determines if this event expects a significant result value. Note: Events with the HasResult annotation will have this method automatically added to return true.
+Détermine si cet événement attend une valeur de résultat significative. Remarque : Les événements avec l'annotation HasResult auront automatiquement ajouté cette méthode pour retourner true.
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCEntityInteract.hasResult();
 ```
 
-### isCancelable
+### est annulable
 
-Determine if this function is cancelable at all. Returns: `If access to setCanceled should be allowed
+Détermine si cette fonction est annulable du tout. Renvoie : `Si l'accès à setAnnulled devrait être autorisé
  Note:
- Events with the Cancelable annotation will have this method automatically added to return true.`
+ Les événements avec l'annotation annulable auront automatiquement ajouté cette méthode pour retourner true.`
 
-Returns boolean
+Retourne un booléen
 
 ```zenscript
 myMCEntityInteract.isCancelable();
 ```
 
-### isCanceled
+### est annulé
 
-Determine if this event is canceled and should stop executing. Returns: `The current canceled state`
+Détermine si cet événement est annulé et doit arrêter d'exécuter. Renvoie : `L'état actuel annulé`
 
-Returns boolean
-
-```zenscript
-myMCEntityInteract.isCanceled();
-```
-
-### setCanceled
+Retourne un booléen
 
 ```zenscript
-myMCEntityInteract.setCanceled(cancel as boolean);
+monMCEntityInteract.est annulé();
 ```
 
-| Parameter | Type    | Description             |
-| --------- | ------- | ----------------------- |
-| cancel    | boolean | No description provided |
+### setAnnulé
+
+```zenscript
+myMCEntityInteract.setCancled(cancel as boolean);
+```
+
+| Paramètre | Type de texte | Libellé                    |
+| --------- | ------------- | -------------------------- |
+| annuler   | boolean       | Aucune description fournie |
 
 
 
