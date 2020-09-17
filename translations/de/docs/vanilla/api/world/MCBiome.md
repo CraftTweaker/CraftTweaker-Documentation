@@ -1,9 +1,9 @@
 # MCBiome
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Diese Klasse wurde von einer Mod mit mod-id `crafttweaker` hinzugefügt. Wenn Sie diese Funktion nutzen möchten, müssen Sie diese Mod installiert haben.
 
 ## Diese Klasse importieren
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+Es kann erforderlich sein, dass Sie das Paket importieren, wenn Sie irgendwelche Probleme haben (wie zum Beispiel ein Array zu bearbeiten), also besser sicher sein als bedauern und fügen Sie den Import.
 ```zenscript
 crafttweaker.api.world.MCBiome
 ```
@@ -11,60 +11,60 @@ crafttweaker.api.world.MCBiome
 ## Methoden
 ### getSpawns
 
-Returns List<[crafttweaker.api.world.MCBiomeSpawnEntry](/vanilla/api/world/MCBiomeSpawnEntry)>
+Gibt die Liste zurück<[crafttweaker.api.world.MCBiomeSpawnEintrag](/vanilla/api/world/MCBiomeSpawnEntry)>
 
 ```zenscript
-myMCBiome.getSpawns(classification as crafttweaker.api.entity.MCEntityClassification);
+myMCBiome.getSpawns(Klassifizierung als crafttweaker.api.entity.MCEntityClassification);
 ```
 
-| Parameter      | Type                                                                                           | Beschreibung            |
-| -------------- | ---------------------------------------------------------------------------------------------- | ----------------------- |
-| classification | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | No description provided |
+| Parameter       | Type                                                                                           | Beschreibung                 |
+| --------------- | ---------------------------------------------------------------------------------------------- | ---------------------------- |
+| klassifizierung | [crafttweaker.api.entity.MCEntityClassification](/vanilla/api/entities/MCEntityClassification) | Keine Beschreibung angegeben |
 
 
-### getTempCategory
+### getTempcategory
 
-Returns String
+Gibt den String zurück
 
 ```zenscript
 myMCBiome.getTempCategory();
 ```
 
-### getTemperature
+### gettemperatur
 
-Returns float
+Rückgabewerte schweben
 
 ```zenscript
-myMCBiome.getTemperature(pos as crafttweaker.api.util.BlockPos);
+myMCBiome.getTemperature(Pos als crafttweaker.api.util.BlockPos);
 ```
 
-| Parameter | Type                                                         | Beschreibung            |
-| --------- | ------------------------------------------------------------ | ----------------------- |
-| pos       | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | No description provided |
+| Parameter | Type                                                         | Beschreibung                 |
+| --------- | ------------------------------------------------------------ | ---------------------------- |
+| posten    | [crafttweaker.api.util.BlockPos](/vanilla/api/util/BlockPos) | Keine Beschreibung angegeben |
 
 
 
-## Properties
+## Eigenschaften
 
-| Name               | Type    | Has Getter | Has Setter |
+| Name               | Type    | Hat Getter | Hat Setter |
 | ------------------ | ------- | ---------- | ---------- |
-| category           | String  | true       | false      |
-| defaultTemperature | float   | true       | false      |
-| depth              | float   | true       | false      |
-| doesRain           | boolean | true       | false      |
-| doesSnow           | boolean | true       | false      |
-| downfall           | float   | true       | false      |
-| isHighHumidity     | boolean | true       | false      |
+| kategorie          | String  | true       | false      |
+| Standardtemperatur | float   | true       | false      |
+| tiefe              | float   | true       | false      |
+| regen              | boolean | true       | false      |
+| betreibt Schnee    | boolean | true       | false      |
+| fallen             | float   | true       | false      |
+| isHighfeuchtigkeit | boolean | true       | false      |
 | isMutation         | boolean | true       | false      |
 | isTempCold         | boolean | true       | false      |
 | isTempMedium       | boolean | true       | false      |
 | isTempOcean        | boolean | true       | false      |
 | isTempWarm         | boolean | true       | false      |
-| parent             | String  | true       | false      |
-| rainType           | String  | true       | false      |
-| scale              | float   | true       | false      |
+| übergeordnete      | String  | true       | false      |
+| regnertyp          | String  | true       | false      |
+| skalieren          | float   | true       | false      |
 | spawningChange     | float   | true       | false      |
-| translationKey     | String  | true       | false      |
-| waterColor         | int     | true       | false      |
+| translationkey     | String  | true       | false      |
+| wasserfarbe        | int     | true       | false      |
 | waterFogColor      | int     | true       | false      |
 
