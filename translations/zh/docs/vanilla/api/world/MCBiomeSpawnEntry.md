@@ -1,32 +1,32 @@
-# MCBiomeSpawnEntry
+# MCBiomeSpawnEnter
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+这个类由mod-id为`crafttweaker`的模组添加. 因此，如果要使用此功能，则需要安装此mod。
 
-## 导入类
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## 导入相关包
+如果遇到任何问题（例如强制转换数组），则可能需要导入软件包，因此，最好的方式就是导入包支持。
 ```zenscript
-crafttweaker.api.world.MCBiomeSpawnEntry
+craftminstrer.api.world.MCBiomeSpawnEnter
 ```
 
-## Constructors
+## Constructor #构造函数
 ```zenscript
-new crafttweaker.api.world.MCBiomeSpawnEntry(entityType as crafttweaker.api.entity.MCEntityType, weight as int, minGroupCount as int, maxGroupCount as int);
+新的 craftminstruer.api.world.MCBiomeSpawnEntry(entityType as craftbiner.api.entity.MCEntityType, 权重为 int, minGroupCount as int, maxGroupCount as int)；
 ```
-| 参数            | 类型                                                                         | 描述                      |
-| ------------- | -------------------------------------------------------------------------- | ----------------------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | No description provided |
-| weight        | int                                                                        | No description provided |
-| minGroupCount | int                                                                        | No description provided |
-| maxGroupCount | int                                                                        | No description provided |
+| 参数         | 类型                                                                         | 描述                      |
+| ---------- | -------------------------------------------------------------------------- | ----------------------- |
+| entityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | No description provided |
+| 权重         | 整数                                                                         | No description provided |
+| minGroup计数 | 整数                                                                         | No description provided |
+| 最大群组计数     | 整数                                                                         | No description provided |
 
 
 
-## Properties
+## 参数
 
-| 名称            | 类型                                                                         | Has Getter | Has Setter |
-| ------------- | -------------------------------------------------------------------------- | ---------- | ---------- |
-| entityType    | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true       | false      |
-| maxGroupCount | int                                                                        | true       | false      |
-| minGroupCount | int                                                                        | true       | false      |
-| weight        | int                                                                        | true       | false      |
+| 名称         | 类型                                                                         | 可获得  | 可设置   |
+| ---------- | -------------------------------------------------------------------------- | ---- | ----- |
+| entityType | [crafttweaker.api.entity.MCEntityType](/vanilla/api/entities/MCEntityType) | true | false |
+| 最大群组计数     | 整数                                                                         | true | false |
+| minGroup计数 | 整数                                                                         | true | false |
+| 权重         | 整数                                                                         | true | false |
 
