@@ -1,26 +1,26 @@
-# Recipe managers
+# Menadżery przepisów
 
 
-All recipe related globals extend from this class, and have all of these methods.
+Wszystkie globale związane z recepturami rozciągają się od tej klasy i mają wszystkie te metody.
 
 ```zenscript
 removeRecipe(IItemStack output);
 ```
 
 ```zenscript
-removeByName(String name);
+removeByName(nazwa ciągu);
 ```
 
 ```zenscript
-removeByModid(String modid);
+removeByModid(modid string);
 ```
 
 ```zenscript
-removeByRegex(String regex);
+removeByRegex(string regex);
 ```
 
 ```zenscript
-removeAll();
+usuńWszystkie();
 ```
 
 
