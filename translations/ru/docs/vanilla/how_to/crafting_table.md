@@ -1,320 +1,320 @@
 # Верстак
 
-## Recipe Types
+## Типы рецептов
 
-There are three recipe types for crafting tables:
+Есть три типа рецептов для столов для крафта:
 
-- **Shapeless:** A shapeless recipe is a recipe where the position of the input items in the crafting grid does not matter.
-- **Shaped:** A shaped recipe is a recipe where the position of the items must be exact.
-- **Shaped Mirrored:** A mirrored recipe is like shaped recipes but mirrors the recipe along the horizontal or vertical axes.
+- **Бесформенный:** Рецепт бесформенный - это рецепт, в котором исходные предметы не имеют значения.
+- **Форма:** Рецепт формы - это рецепт, в котором точное положение предметов должно быть определено.
+- **Форма зеркалированная:** зеркальный рецепт похож на рецепты формы, но зеркалирует рецепт вдоль горизонтальных или вертикальных топоров.
 
-## Adding a Recipe
+## Добавление рецепта
 
-_When adding a recipe, ensure that your recipe names are unique!_
+_При добавлении рецепта убедитесь, что имена рецептов уникальны!_
 
-### Adding Shapeless Recipes
+### Добавление рецептов Безграничных
 
-`craftingTable.addShapeless(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShapeless(имя, выход, ингредиенты, функции);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[]>
-- `recipeFunction` (Optional) <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+- `рецепт` &lt;строка>
+- `вывести` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ингредиентов` <[ингредиентов](/vanilla/api/items/IIngredient)[]>
+- `рецепт функции` (опционально) <[Рецепт FunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-Adds a [shapeless](#recipe-types) recipe to the crafting table. As [shapeless](#recipe-types) recipes ignore the position of the input items, the ordering of the items when creating the recipe does not matter either.
+Добавляет [бесформенный](#recipe-types) рецепт за стол крафта. Так как рецепты [без формы](#recipe-types) игнорируют позицию входных элементов, порядок элементов при создании рецепта также не имеет значения.
 
-[Shapeless](#recipe-types) recipes can have up to 9 inputs, but those with 4 or less inputs can also be crafted in the 2x2 inventory grid.
+[Неформальные](#recipe-types) рецепты могут иметь до 9 входов, но те, у которых 4 или меньше входов, также могут быть созданы в сетке инвентаря 2х2.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Рецепты столов также могут вывести более одного количества выводимого элемента. Это может быть достигнуто с помощью [IItemStack оператора умножения](/vanilla/api/items/IItemStack/#mul) на выходящем элементе.
 
 ```zenscript
-craftingTable.addShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
+raftingTable. ddShapeless("shapeless_example_1", <item:minecraft:grass>, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>]);
 
-// A shapeless recipe can have up to 9 inputs
-// This also demonstrates that more than one output can be used. In this example, 8 grass will be outputted.
+// Коктейль бесформенный рецепт может иметь до 9 входов
+// Это также показывает, что можно использовать более чем один выход. В этом примере будет выведено 8 трав.
 craftingTable.addShapeless("shapeless_example_2", <item:minecraft:grass> * 8, [<item:minecraft:wheat_seeds>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>, <item:minecraft:dirt>]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Смотрите [Использование функций рецепта](#using-recipe-functions) для примера использования функций рецепта._
 
-### Adding Shaped and Shaped Mirrored Recipes
+### Добавление Формы и Форма зеркальных Рецептов
 
-`craftingTable.addShaped(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShaped(рецепт, выход, ингредиенты, рецептная функция);`
 
-`craftingTable.addShapedMirrored(recipeName, output, ingredients, recipeFunction);`
+`craftingTable.addShapedMirrored(Рецепт, выход, ингредиенты, функция рецепта);`
 
-- `recipeName` &lt;string>
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `ingredients` <[IIngredient](/vanilla/api/items/IIngredient)[][]>
-- `recipeFunction` (Optional) <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+- `рецепт` &lt;строка>
+- `вывести` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `ингредиентов` <[Ингредиент](/vanilla/api/items/IIngredient)[][]>
+- `рецепт функции` (опционально) <[Рецепт FunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-Adds a [shaped](#recipe-types) (or [mirrored](#recipe-types), depending on the function) recipe to the crafting table. The ordering of the items when creating the recipe dictates the position of each item in the crafting grid.
+Добавляет [формы](#recipe-types) (или [зеркалируемых](#recipe-types), в зависимости от функции) рецепта к таблице создания. Порядок предметов при создании рецепта диктует положение каждого предмета в сетке крафта.
 
-Making the recipe a [shaped mirrored](#recipe-types) recipe instead allows for more flexibility to the player when adding the items to the crafting grid.
+Вместо этого приготовление рецепта [в форме зеркалируемого](#recipe-types) рецепта позволяет игроку больше гибкости при добавлении предметов в сетку крафта.
 
-Both [shaped](#recipe-types) and [shaped mirrored](#recipe-types) recipes can be made to work in a 2x2 (inventory) or 3x3 crafting grid.
+Оба рецепта [формы](#recipe-types) и [образцов зеркальных](#recipe-types) могут быть сделаны для работы в сетке создания 2x2 (инвентарь) или 3x3.
 
-Crafting Table Recipes can also output more than 1 amount of the output item. This can be achieved by using the [IItemStack multiplcation operator](/vanilla/api/items/IItemStack/#mul) on the output item.
+Рецепты столов также могут вывести более одного количества выводимого элемента. Это может быть достигнуто с помощью [IItemStack оператора умножения](/vanilla/api/items/IItemStack/#mul) на выходящем элементе.
 
 ```zenscript
-// Adding a shaped recipe
-craftingTable.addShaped("shaped_example_1", <item:minecraft:arrow>, [
+// Добавление рецепта в форме
+craftingTable. ddShaped("shaped_example_1", <item:minecraft:arrow>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 
-// Adding a shaped 2x2 recipe (this can also be done as mirrored)
-craftingTable.addShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
+// Добавление рецепта в форме 2x2 (это также можно сделать как зеркальный)
+верстака. ddShaped("shaped_example_2", <item:minecraft:diamond_axe>, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:diamond>, <item:minecraft:stick>]
 ]);
 
-// Adding a shaped mirrored recipe
-craftingTable.addShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
+// Добавление зеркального рецепта в форме
+craftingTable. ddShapedMirrored("shaped_mirror_example_1", <item:minecraft:arrow> * 2, [
     [<item:minecraft:diamond>, <item:minecraft:diamond>],
     [<item:minecraft:air>, <item:minecraft:flint>],
     [<item:minecraft:air>, <item:minecraft:flint>]
 ]);
 ```
 
-_See [Using Recipe Functions](#using-recipe-functions) for examples on how to use recipe functions._
+_Смотрите [Использование функций рецепта](#using-recipe-functions) для примера использования функций рецепта._
 
-## Using Recipe Functions
+## Использование функций рецепта
 
-A recipe function allows for a programatically determined output. This can be especially useful when you need some of the input item's information, like the item's damage or other NBT data.
+Функция рецепта позволяет программно определить выход. Это может быть особенно полезно, когда вам нужны некоторые данные о вводе предмета, такие как повреждение предмета или другие данные NBT.
 
-_As Shaped and Shaped Mirrored Recipes are similar, examples will only include Shaped Recipes. You may treat any example using `addShaped` as the same as using `addShapedMirrored`._
+_Поскольку в форме и в форме зеркалируемых рецептов похожи, примеры будут включать только Формированные Рецепты. Вы можете рассматривать любой пример, используя `addShaped` , так же, как и `addShapedMirrored`._
 
-### Using RecipeFunctionArray in a Shapeless Recipe
+### Использовать рецепт FunctionArray в рецепте без формы
 
-`recipeFunction` <[RecipeFunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
+`рецепт функции` <[Рецепт FunctionArray](/vanilla/api/recipe/RecipeFunctionArray)>
 
-`(usualOut as IItemStack, inputs as IItemStack[]) => {};`
+`(usualOut как IItemStack, inputs as IItemStack[]) =>{};`
 
 - `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[]> Array of inputs ordered the same as defined in the original recipe
+- `входов` <[IItemStack](/vanilla/api/items/IItemStack)[]> Массив входов заказал то же самое, что и в оригинальном рецепте
 
 ```zenscript
-import crafttweaker.api.item.IItemStack;
+Импортируйте crafttweaker.api.item.IItemStack;
 
-craftingTable.addShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (usualOut as IItemStack, inputs as IItemStack[]) => {
-    // Checks if <item:minecraft:dirt> has a display name of "totally real diamond block"
-    if (inputs[0].displayName == "totally real diamond block") {
-        // Returns <item:minecraft:diamond> * 9
+craftingTable. ddShapeless("shapeless_func_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], (обычно, как IItemStack, input as IItemStack[]) => {
+    // Проверяет, имеет ли <item:minecraft:dirt> имя "totally real diamond block"
+    if (input[0]. isplayName == "totally real diamond block") {
+        // Возвращает <item:minecraft:diamond> * 9
         return usualOut;
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond"
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    // Иначе, возвращать <item:minecraft:clay> с отображаемым именем "Алмаз"
+    возврат <item:minecraft:clay>. etDisplayName("Алмаз");
 });
 ```
 
-### Using RecipeFunctionMatrix in a Shaped/Mirrored Recipe
+### Использование рецепта FunctionMatrix в виде зеркального рецепта
 
-`recipeFunction` <[RecipeFunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
+`рецепт функции` <[Рецепт FunctionMatrix](/vanilla/api/recipe/RecipeFunctionMatrix)>
 
-`(usualOut as IItemStack, inputs as IItemStack[][]) => {};`
+`(usualOut как IItemStack, inputs as IItemStack[][]) =>{};`
 
 - `usualOut` <[IItemStack](/vanilla/api/items/IItemStack)>
-- `inputs` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Array of inputs ordered the same as defined in the original recipe. An input can be found by defining the row, then the column (`inputs[0][1]` to get the item in the first row, second column).
+- `входов` <[IItemStack](/vanilla/api/items/IItemStack)[][]> Массив вводов заказал то же самое, что указано в оригинальном рецепте. Вход может быть найден путем определения строки, затем столбец (`входов[0][1]` , чтобы получить предмет в первой строке, второй столбец).
 
 ```zenscript
-import crafttweaker.api.item.IItemStack;
+Импортируйте crafttweaker.api.item.IItemStack;
 
-craftingTable.addShaped("shapeed_func_example_1", <item:minecraft:diamond_block>, [
+craftingTable. ddShaped("shapeed_func_example_1", <item:minecraft:diamond_block>, [
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
         [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
-    ], (usualOut as IItemStack, inputs as IItemStack[][]) => {
+    ], (usualOut as IItemStack, inpuas IItemStack[][]) => {
         var counter = 0;
-        // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-        for row in inputs {
-            for recipeItem in row {
-                if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                    // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                    counter++;
+        // Проверяет if all <item:minecraft:clay_ball> имеет отображаемое имя "Алмаз"
+        для строки {
+            для рецепта в row {
+                if (<item:minecraft:clay_ball>. atches(рецепт) && рецепт Item. isplayName == "Алмазные") {
+                    // Если рецепт <item:minecraft:clay_ball> и имеет название "Алмаза" прибавить счетчик
+                    счётчика ++;
                 }
             }
         }
 
-        // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
+        // Если у нас 8 <item:minecraft:clay_ball> с именем "Алмаз"
         if (counter == 8) {
-            if (inputs[1][1].displayName == "Special Diamond") {
+            if (input[1][1]. isplayName == "Special Diamond") {
                 // If <item:minecraft:diamond> has a display name of "Special Diamond"
                 // Return 2 <item:minecraft:diamond_block>
                 return usualOut * 2;
             } else {
-                // Returns <item:minecraft:diamond_block>
+                // Возвращает <item:minecraft:diamond_block>
                 return usualOut;
             }
         }
 
-        // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-        return <item:minecraft:clay>.setDisplayName("Diamond Block");
-    });
+        // Иначе возвращать <item:minecraft:clay> с отображаемым именем "Diamond Block"
+        возвращает <item:minecraft:clay>. etDisplayName("Алмазный блок");
+});
 ```
 
-### Advanced Usage
+### Расширенное использование
 
-#### Functions as a Variable
+#### Функции как переменная
 
-Recipe functions can be assigned to a variable allowing you to ulitize the same function for multiple recipes easily.
+Функции рецепта могут быть назначены переменной, позволяющей легко вызывать одну и ту же функцию для нескольких рецептов.
 
-Shapeless:
+Безликость:
 
 ```zenscript
-import crafttweaker.api.item.IItemStack;
+импорт crafttweaker.api.item ItemStack;
 
-var exampleShapelessRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[]) as IItemStack = (usualOut, inputs) => {
-    if(inputs[0].displayName == "totally real diamond block" ){
+вар пример: ShapelessRecipeVarFunction как функция(обычно, как IItemStack, input as IItemStack[]) as IItemStack = (usualOut, inputs) => {
+    if(input[0]. isplayName == "totally real diamond block" ){
         return usualOut;
     }
 
-    return <item:minecraft:clay>.setDisplayName("Diamond");
+    возвращает <item:minecraft:clay>. etDisplayName("Алмазы");
 };
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:dirt>
-craftingTable.addShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
+// вводим[0] exampleShapelessRecipeVarFunction будет <item:minecraft:dirt>
+craftingTable. ddShapeless("shapeless_varfunc_example_1", <item:minecraft:diamond> * 9, [<item:minecraft:dirt>, <item:minecraft:stick>], exampleShapelessRecipeVarFunction);
 
-// inputs[0] in exampleShapelessRecipeVarFunction will be <item:minecraft:cobblestone>
-craftingTable.addShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
+// Входы[0] в примере ShapelessRecipeVarFunction будет <item:minecraft:cobblestone>
+craftingTable. ddShapeless("shapeless_varfunc_example_2", <item:minecraft:diamond> * 9, [<item:minecraft:cobblestone>, <item:minecraft:dirt>], exampleShapelessRecipeVarFunction);
 ```
 
-Shaped/Mirrored:
+В форме/Зеркале:
 
 ```zenscript
-import crafttweaker.api.item.IItemStack;
+импорт crafttweaker.api.item ItemStack;
 
-var exampleShapedRecipeVarFunction as function(usualOut as IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
+var exampleShapedRecipeVarFunction как функция(обычно, как IItemStack, inputs as IItemStack[][]) as IItemStack = (usualOut as IItemStack, inputs as IItemStack[][]) => {
     var counter = 0;
-    // Checks if all <item:minecraft:clay_ball> has a display name of "Diamond"
-    for row in inputs {
-        for recipeItem in row {
-            if (<item:minecraft:clay_ball>.matches(recipeItem) && recipeItem.displayName == "Diamond") {
-                // If the recipe item is <item:minecraft:clay_ball> and has a name of "Diamond" increment the counter
-                counter++;
+    // Проверяет, что все <item:minecraft:clay_ball> имеют отображаемое имя "Алмаз"
+    для строки в входах {
+        для recipeItem в row {
+            if (<item:minecraft:clay_ball>. atches(рецепт) && рецепт. isplayName == "Алмаз") {
+                // Если предмет рецепта <item:minecraft:clay_ball> и имеет название "Алмаз" прибавляет счетчик
+                счетчика +;
             }
         }
     }
 
-    // If we have 8 <item:minecraft:clay_ball> with a name of "Diamond"
+    // Если у нас есть 8 <item:minecraft:clay_ball> с именем "Алмаз"
     if (counter == 8) {
-        if (inputs[1][1].displayName == "Special Diamond") {
+        if (input[1][1]. isplayName == "Special Diamond") {
             // If <item:minecraft:diamond> has a display name of "Special Diamond"
             // Return 2 <item:minecraft:diamond_block>
             return usualOut * 2;
         } else {
-            // Returns <item:minecraft:diamond_block>
+            // Возвращает <item:minecraft:diamond_block>
             return usualOut;
         }
     }
 
-    // Otherwise, return <item:minecraft:clay> with a display name of "Diamond Block"
-    return <item:minecraft:clay>.setDisplayName("Diamond Block");
+    // Иначе, возвращает <item:minecraft:clay> с отображаемым именем "Diamond Block"
+    возвращает <item:minecraft:clay>. etDisplayName("Алмазный блок");
 };
 
-craftingTable.addShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
+craftingTable. ddShaped("shapeed_func_example_3", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
 ], exampleShapedRecipeVarFunction);
 
-craftingTable.addShaped("shapeed_func_example_4", <item:minecraft:diamond_block>, [
+верстальные. ddShaped("shapeed_func_example_4", <item:minecraft:diamond_block>, [
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:diamond>, <item:minecraft:clay_ball>],
     [<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
 ], exampleShapedRecipeVarFunction);
 ```
 
-## Removing a Recipe
+## Удаление рецепта
 
-### Remove a Recipe by Name
+### Удалить рецепт по имени
 
-`craftingTable.removeByName(recipeName);`
+`craftingTable.removeByName(рецепт);`
 
-- `recipeName` &lt;string>
+- `рецепт` &lt;строка>
 
-Removes the recipe that matches the name provided.
+Удаляет рецепт, соответствующий указанному имени.
 
 ```zenscript
 craftingTable.removeByName("minecraft:sugar_from_sugar_cane");
 ```
 
-### Remove Recipes by Output
+### Удалить рецепты по выходу
 
-`craftingTable.removeRecipe(output);`
+`craftingTable.removeRecipe(выход);`
 
-- `output` <[IItemStack](/vanilla/api/items/IItemStack)>
+- `вывести` <[IItemStack](/vanilla/api/items/IItemStack)>
 
-Removes all recipes where the output result is the provided [IItemStack](/vanilla/api/items/IItemStack).
+Удаляет все рецепты, в которых приведен результат, предоставленный [IItemStack](/vanilla/api/items/IItemStack).
 
 ```zenscript
 craftingTable.removeRecipe(<item:minecraft:stick>);
 ```
 
-### Remove Recipes by Mod ID
+### Удалить рецепты по ID мода
 
 `craftingTable.removeByModid(modId);`
 
-- `modId` &lt;string>
+- `modId` &lt;строка>
 
-Removes all recipes added by the provided mod.
+Удаляет все рецепты, добавленные указанным модом.
 
 ```zenscript
 craftingTable.removeByModid("minecraft");
 ```
 
-#### Exclude Recipes From Mod ID Removal
+#### Исключить рецепты из удаления идентификатора мода
 
 `craftingTable.removeByModid(modId, exclusionFilter);`
 
-- `modId` &lt;string>
-- `exclusionFilter` <[RecipeFilter](/vanilla/api/recipe/RecipeFilter)>
-  - `name` &lt;string> The name of the current recipe being checked. _The mod id will not be included_
+- `modId` &lt;строка>
+- `фильтр исключений` <<href="/vanilla/api/рецепт/RecipeFilter">Рецептный фильтр</a>>
+  - `имя` &lt;строка> Имя проверяемого рецепта. _идентификатор мода не будет включен_
 
-Removes all recipes added by the provided mod. Recipes are excluded if the result of the exclusionFilter returns true for the recipe name.
+Удаляет все рецепты, добавленные указанным модом. Рецепты исключаются, если в результате фильтра исключений возвращается истинное имя рецепта.
 
 ```zenscript
 craftingTable.removeByModid("minecraft", (name) => {
-    // Checks if the name of the recipe matches "minecraft:red_bed_from_white_bed"
+    // Проверяет, соответствует ли имя рецепта "minecraft:red_bed_from_white_bed"
     return name == "red_bed_from_white_bed";
 });
 ```
 
-Multiple recipes can also be excluded. One way this can be done is as follows:
+Можно также исключить несколько рецептов. В качестве одного из способов можно сделать следующее:
 
 ```zenscript
-// An array of recipe names as strings
-var minecraftExclusions as string[] = [
+// Массив имен рецептов как строк
+var minecraftExclusions как string[] = [
     "acacia_slab",
     "red_bed_from_white_bed",
     "sugar_from_sugar_cane"
 ];
 
-craftingTable.removeByModid("minecraft", (name) => {
-    return name in minecraftExclusions;
+таблица крафта. emoveByModid("minecraft", (name) => {
+    возврат имени в minecraftExclusions;
 });
 ```
 
-### Remove Recipes by Regex
+### Удалить рецепты по выражению
 
 `craftingTable.removeByRegex(regex);`
 
-- `regex` &lt;string>
+- `регулярные` &lt;строка>
 
-Removes all recipes that's name matches the regex string.
+Удаляет все рецепты, которые соответствуют строке регулярного выражения.
 
 ```zenscript
-// Removes recipes such as "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", and "minecraft:white_carpet"
+// Удаляет такие рецепты, как "minecraft:green_carpet", "minecraft:lime_carpet_from_white_carpet", и "minecraft:white_carpet"
 craftingTable.removeByRegex("minecraft:.*_carpet");
 ```
 
-### Remove All Recipes
+### Удалить все рецепты
 
 `craftingTable.removeAll();`
 
-Removes all crafting table recipes.
+Удаляет все рецепты таблиц крафта.
 
 ```zenscript
 craftingTable.removeAll();
