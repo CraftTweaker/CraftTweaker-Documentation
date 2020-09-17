@@ -2,25 +2,25 @@
 
 
 
-This class was added by a mod with mod-id `crafttweaker`. So you need to have this mod installed if you want to use this feature.
+Esta clase fue añadida por un mod con la ID  `crafttweaker`. Necesitas tener este mod instalado si quieres usar esta caracteristica.
 
-## Importing the class
-It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import.
+## Importar la clase
+Puede ser requerido que importes el paquete si encuentras algun problema (como crear un Array).
 ```zenscript
 crafttweaker.api.data.ByteData
 ```
 
-## Implemented Interfaces
-ByteData implements the following interfaces. That means any method available to them can also be used on this class.
-- [crafttweaker.api.data.INumberData](/vanilla/api/data/INumberData)
+## Interfaces implementadas
+ByteData implementa las siguientes interfaces. Esto significa que cualquier método disponible también puede ser usado en esta clase.
+- [datos de crafttweaker.api.infumberData](/vanilla/api/data/INumberData)
 
-## Constructors
+## Constructores
 ```zenscript
 new crafttweaker.api.data.ByteData(internal as byte);
 ```
-| Parameter | Type | Description             |
-| --------- | ---- | ----------------------- |
-| internal  | byte | No description provided |
+| Parámetro | Tipo | Descripción                   |
+| --------- | ---- | ----------------------------- |
+| interno   | byte | No se proporcionó descripción |
 
 
 
